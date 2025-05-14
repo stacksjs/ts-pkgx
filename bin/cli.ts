@@ -2,9 +2,9 @@ import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import { CAC } from 'cac'
-import { chromium } from 'playwright'
 import { version } from '../package.json'
 import { fetchAndSaveAllPackages, fetchPkgxPackage, PACKAGE_ALIASES } from '../src/packages/fetch'
+import { fetchPackageListFromGitHub } from '../src/utils'
 
 const cli = new CAC('pkgx-tools')
 
@@ -29,52 +29,6 @@ function ensureOutputDir(dir: string) {
 }
 
 /**
- * Fetches all package paths from pkgx.dev including nested paths
- */
-async function fetchAllPackagePaths(limit?: number): Promise<string[]> {
-  console.error('Scraping all package paths from pkgx.dev...')
-
-  const browser = await chromium.launch({ headless: true })
-  const context = await browser.newContext()
-  const page = await context.newPage()
-
-  try {
-    console.error('Navigating to pkgx.dev/pkgs...')
-
-    // Navigate to the packages page
-    await page.goto('https://pkgx.dev/pkgs', {
-      timeout: 60000,
-      waitUntil: 'networkidle',
-    })
-
-    // Wait a bit for client-side rendering
-    await page.waitForTimeout(2000)
-
-    console.error('Extracting package list...')
-
-    // Extract all package paths (including nested paths)
-    const packagePaths = await page.evaluate(() => {
-      const packageElements = Array.from(document.querySelectorAll('a[href^="/pkgs/"]'))
-      return packageElements
-        .map((link) => {
-          const href = (link as HTMLAnchorElement).href
-          const path = href.split('/pkgs/')[1]
-          return path ? path.replace(/\/$/, '') : null
-        })
-        .filter(Boolean) as string[]
-    })
-
-    console.error(`Found ${packagePaths.length} package paths on pkgx.dev`)
-
-    // Take only up to the limit if specified
-    return limit ? packagePaths.slice(0, limit) : packagePaths
-  }
-  finally {
-    await browser.close()
-  }
-}
-
-/**
  * Fetch and save a single package with aliases handling
  */
 async function fetchAndSavePackage(
@@ -94,54 +48,103 @@ async function fetchAndSavePackage(
 
     console.log(`Using timeout for ${packagePath} (attempt ${retryNumber}): ${actualTimeout}ms`)
 
-    // Fetch the package
-    const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage(packagePath, {
-      timeout: actualTimeout,
-    })
-
-    // Create a filename-safe version of the fullDomainName
-    const safeFilename = fullDomainName.replace(/\//g, '-')
-
-    // Add aliases information to the package info
-    const knownAliases: string[] = []
-
-    // Check if this is the target of an alias in PACKAGE_ALIASES
-    for (const [alias, target] of Object.entries(PACKAGE_ALIASES)) {
-      if (target === fullDomainName) {
-        knownAliases.push(alias)
-      }
-    }
-
-    // Add the original name or path components as aliases
-    if (originalName !== fullDomainName && !knownAliases.includes(originalName)) {
-      knownAliases.push(originalName)
-    }
-
-    // Add path components as aliases if it's a nested path
+    // Handle nested package paths
+    // Check if package has a path separator (like acorn.io/acorn-cli)
     if (packagePath.includes('/')) {
+      // For URLs like 'acorn.io/acorn-cli', we need to adjust the URL format
       const pathParts = packagePath.split('/')
-      const lastPart = pathParts[pathParts.length - 1]
-      if (!knownAliases.includes(lastPart)) {
-        knownAliases.push(lastPart)
+      const domain = pathParts[0]
+      const subPath = pathParts.slice(1).join('/')
+
+      console.log(`Processing nested package: domain=${domain}, subPath=${subPath}`)
+
+      // Fetch the package info from the nested URL
+      const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage(`${domain}/${subPath}`, {
+        timeout: actualTimeout,
+      })
+
+      // Create a filename-safe version of the fullDomainName
+      const safeFilename = fullDomainName.replace(/\//g, '-')
+
+      // Add aliases information to the package info
+      const knownAliases: string[] = []
+
+      // Check if this is the target of an alias in PACKAGE_ALIASES
+      for (const [alias, target] of Object.entries(PACKAGE_ALIASES)) {
+        if (target === fullDomainName) {
+          knownAliases.push(alias)
+        }
+      }
+
+      // Add the original name or path components as aliases
+      if (originalName !== fullDomainName && !knownAliases.includes(originalName)) {
+        knownAliases.push(originalName)
+      }
+
+      // Use the subpath component as an alias (e.g., 'acorn-cli' for 'acorn.io/acorn-cli')
+      if (!knownAliases.includes(subPath)) {
+        knownAliases.push(subPath)
+      }
+
+      // Add the aliases to the package info
+      const enhancedPackageInfo = {
+        ...packageInfo,
+        fullPath: packagePath, // Store the full path in the package info
+        aliases: knownAliases.length > 0 ? knownAliases : undefined,
+      }
+
+      // Save to file using the safe filename
+      const filePath = path.join(outputDir, `${safeFilename}.json`)
+      fs.writeFileSync(filePath, JSON.stringify(enhancedPackageInfo, null, 2))
+
+      console.log(`Successfully saved nested package ${packagePath} to ${filePath} with aliases: ${knownAliases.join(', ') || 'none'}`)
+      return {
+        success: true,
+        fullDomainName,
+        aliases: knownAliases,
       }
     }
+    else {
+      // Fetch the package (standard non-nested path)
+      const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage(packagePath, {
+        timeout: actualTimeout,
+      })
 
-    // Add the aliases to the package info
-    const enhancedPackageInfo = {
-      ...packageInfo,
-      fullPath: packagePath, // Store the full path in the package info
-      aliases: knownAliases.length > 0 ? knownAliases : undefined,
-    }
+      // Create a filename-safe version of the fullDomainName
+      const safeFilename = fullDomainName.replace(/\//g, '-')
 
-    // Save to file using the safe filename
-    const filePath = path.join(outputDir, `${safeFilename}.json`)
-    fs.writeFileSync(filePath, JSON.stringify(enhancedPackageInfo, null, 2))
+      // Add aliases information to the package info
+      const knownAliases: string[] = []
 
-    console.log(`Successfully saved ${packagePath} to ${filePath} with aliases: ${knownAliases.join(', ') || 'none'}`)
-    return {
-      success: true,
-      fullDomainName,
-      aliases: knownAliases,
+      // Check if this is the target of an alias in PACKAGE_ALIASES
+      for (const [alias, target] of Object.entries(PACKAGE_ALIASES)) {
+        if (target === fullDomainName) {
+          knownAliases.push(alias)
+        }
+      }
+
+      // Add the original name or path components as aliases
+      if (originalName !== fullDomainName && !knownAliases.includes(originalName)) {
+        knownAliases.push(originalName)
+      }
+
+      // Add the aliases to the package info
+      const enhancedPackageInfo = {
+        ...packageInfo,
+        fullPath: packagePath, // Store the full path in the package info
+        aliases: knownAliases.length > 0 ? knownAliases : undefined,
+      }
+
+      // Save to file using the safe filename
+      const filePath = path.join(outputDir, `${safeFilename}.json`)
+      fs.writeFileSync(filePath, JSON.stringify(enhancedPackageInfo, null, 2))
+
+      console.log(`Successfully saved ${packagePath} to ${filePath} with aliases: ${knownAliases.join(', ') || 'none'}`)
+      return {
+        success: true,
+        fullDomainName,
+        aliases: knownAliases,
+      }
     }
   }
   catch (error) {
@@ -233,8 +236,8 @@ cli
         console.log('Fetching all packages from pkgx.dev using complete mode...')
         console.log('Current package aliases:', options.verbose ? PACKAGE_ALIASES : `${Object.keys(PACKAGE_ALIASES).length} aliases`)
 
-        // Fetch all package paths including nested paths
-        const packagesToFetch = await fetchAllPackagePaths(limit)
+        // Fetch all package paths from GitHub API
+        const packagesToFetch = await fetchPackageListFromGitHub(limit || 0)
 
         console.log(`Will fetch ${packagesToFetch.length} packages`)
 

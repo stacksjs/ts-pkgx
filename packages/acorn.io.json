@@ -1,0 +1,14 @@
+{
+  "name": "acorn.io",
+  "domain": "acorn.io",
+  "description": "",
+  "packageYmlUrl": "",
+  "homepageUrl": "",
+  "githubUrl": "",
+  "installCommand": "pkgx acorn.io",
+  "programs": [],
+  "companions": [],
+  "dependencies": [],
+  "versions": [],
+  "fullPath": "acorn.io"
+}

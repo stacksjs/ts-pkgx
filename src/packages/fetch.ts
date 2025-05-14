@@ -3,6 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import { chromium } from 'playwright'
+import { saveRateLimitInfo, shouldProceedWithGitHubRequest } from '../utils'
 
 /**
  * Map of common package aliases to their full domain names
@@ -257,7 +258,35 @@ export async function fetchPkgxPackage(
  */
 async function fetchVersionsFromGitHub(packageName: string): Promise<string[]> {
   try {
-    const response = await fetch(`https://api.github.com/repos/pkgxdev/pantry/contents/projects/${packageName}`)
+    // Check if we're rate limited before making the request
+    if (!shouldProceedWithGitHubRequest()) {
+      console.error(`Skipping GitHub API request for versions due to rate limiting`)
+      return []
+    }
+
+    const response = await fetch(`https://api.github.com/repos/pkgxdev/pantry/contents/projects/${packageName}`, {
+      headers: {
+        'Accept': 'application/vnd.github.v3+json',
+        'User-Agent': 'pkgx-tools',
+      },
+      // Add a timeout to prevent hanging
+      signal: AbortSignal.timeout(15000),
+    })
+
+    // Save rate limit information to file
+    saveRateLimitInfo(response.headers)
+
+    // Handle rate limiting
+    if (response.status === 403) {
+      const rateLimitRemaining = response.headers.get('X-RateLimit-Remaining')
+      const rateLimitReset = response.headers.get('X-RateLimit-Reset')
+
+      const resetTime = rateLimitReset ? new Date(Number(rateLimitReset) * 1000).toLocaleString() : 'unknown'
+      console.error(`GitHub API rate limit exceeded. Remaining: ${rateLimitRemaining || 0}, Reset: ${resetTime}`)
+
+      // Return empty array instead of throwing to avoid breaking the flow
+      return []
+    }
 
     if (!response.ok) {
       throw new Error(`GitHub API responded with ${response.status}: ${response.statusText}`)

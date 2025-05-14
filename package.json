@@ -26,7 +26,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "bin-name": "./dist/bin/cli.js"
+    "pkgx-tools": "./dist/bin/cli.js"
   },
   "files": ["README.md", "dist"],
   "scripts": {
