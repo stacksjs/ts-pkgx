@@ -1,4 +1,4 @@
-import type { FetchProjectsOptions, GitHubContent, PkgxPackage, ProjectFolder } from './types'
+import type { FetchProjectsOptions, GitHubContent, ProjectFolder } from './types'
 
 export * from './packages'
 export * from './types'
