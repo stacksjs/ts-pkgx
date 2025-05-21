@@ -12,7 +12,7 @@ const analyticsHead: HeadConfig[] = [
     'script',
     {
       'src': 'https://cdn.usefathom.com/script.js',
-      'data-site': 'DCOEHMGA',
+      'data-site': 'CTECMRFY',
       'defer': '',
     },
   ],
@@ -22,7 +22,7 @@ const nav = [
   { text: 'News', link: 'https://stacksjs.org/news' },
   {
     text: 'Changelog',
-    link: 'https://github.com/stacksjs/ts-starter/blob/main/CHANGELOG.md',
+    link: 'https://github.com/stacksjs/ts-pkgx/blob/main/CHANGELOG.md',
   },
   // { text: 'Blog', link: 'https://updates.ow3.org' },
   {
@@ -53,21 +53,52 @@ const sidebar = [
   {
     text: 'Get Started',
     items: [
-      { text: 'Intro', link: '/intro' },
-      { text: 'Install', link: '/install' },
+      { text: 'Introduction', link: '/intro' },
+      { text: 'Installation', link: '/install' },
       { text: 'Usage', link: '/usage' },
-      { text: 'Config', link: '/config' },
+      { text: 'Configuration', link: '/config' },
     ],
   },
-  { text: 'Showcase', link: '/Showcase' },
+  {
+    text: 'Features',
+    items: [
+      { text: 'Overview', link: '/features' },
+      { text: 'Package Discovery', link: '/features#package-discovery' },
+      { text: 'TypeScript Integration', link: '/features#typescript-integration' },
+      { text: 'Package Management', link: '/features#package-management' },
+      { text: 'Domain Handling', link: '/features#domain-handling' },
+      { text: 'CLI Tools', link: '/features#cli-tools' },
+    ],
+  },
+  {
+    text: 'Advanced',
+    items: [
+      { text: 'Overview', link: '/advanced' },
+      { text: 'Custom Transformations', link: '/advanced#custom-package-transformation' },
+      { text: 'Custom Output Formats', link: '/advanced#custom-output-formats' },
+      { text: 'Extending Aliases', link: '/advanced#extending-the-aliases-system' },
+      { text: 'Error Handling', link: '/advanced#custom-error-handling' },
+    ],
+  },
+  {
+    text: 'API Reference',
+    items: [
+      { text: 'Overview', link: '/api-reference' },
+      { text: 'Core Types', link: '/api-reference#core-types' },
+      { text: 'Core Functions', link: '/api-reference#core-functions' },
+      { text: 'Domain Utilities', link: '/api-reference#domain-utilities' },
+      { text: 'Package Index', link: '/api-reference#package-index-utilities' },
+      { text: 'CLI Commands', link: '/api-reference#cli-commands' },
+    ],
+  },
 ]
-const description = 'A TypeScript Starter Kit. For a better Development Experience.'
-const title = 'ts-starter | A TypeScript Starter Kit. For a better Development Experience.'
+const description = 'TypeScript library for fetching and working with pkgx.dev package information'
+const title = 'ts-pkgx | Package info fetcher for pkgx.dev'
 
 export default withPwa(
   defineConfig({
     lang: 'en-US',
-    title: 'ts-starter',
+    title: 'ts-pkgx',
     description,
     metaChunk: true,
     cleanUrls: true,
@@ -82,7 +113,7 @@ export default withPwa(
       ['meta', { name: 'author', content: 'Stacks.js, Inc.' }],
       ['meta', {
         name: 'tags',
-        content: 'ts-starter, stacksjs, reverse proxy, modern, lightweight, zero-config, local development',
+        content: 'ts-pkgx, stacksjs, pkgx.dev, package manager, typescript, library',
       }],
 
       ['meta', { property: 'og:type', content: 'website' }],
@@ -90,9 +121,9 @@ export default withPwa(
       ['meta', { property: 'og:title', content: title }],
       ['meta', { property: 'og:description', content: description }],
 
-      ['meta', { property: 'og:site_name', content: 'ts-starter' }],
+      ['meta', { property: 'og:site_name', content: 'ts-pkgx' }],
       ['meta', { property: 'og:image', content: './images/og-image.jpg' }],
-      ['meta', { property: 'og:url', content: 'https://reverse-proxy.sh/' }],
+      ['meta', { property: 'og:url', content: 'https://ts-pkgx.stacksjs.org/' }],
       // ['script', { 'src': 'https://cdn.usefathom.com/script.js', 'data-site': '', 'data-spa': 'auto', 'defer': '' }],
       ...analyticsHead,
     ],
@@ -110,7 +141,7 @@ export default withPwa(
       sidebar,
 
       editLink: {
-        pattern: 'https://github.com/stacksjs/stacks/edit/main/docs/docs/:path',
+        pattern: 'https://github.com/stacksjs/ts-pkgx/edit/main/docs/docs/:path',
         text: 'Edit this page on GitHub',
       },
 
@@ -122,7 +153,7 @@ export default withPwa(
       socialLinks: [
         { icon: 'twitter', link: 'https://twitter.com/stacksjs' },
         { icon: 'bluesky', link: 'https://bsky.app/profile/chrisbreuer.dev' },
-        { icon: 'github', link: 'https://github.com/stacksjs/ts-starter' },
+        { icon: 'github', link: 'https://github.com/stacksjs/ts-pkgx' },
         { icon: 'discord', link: 'https://discord.gg/stacksjs' },
       ],
 
