@@ -23,7 +23,7 @@ export const dotenvlintergithubioPackage: dotenvlintergithubioPackage = {
   "fullPath": "dotenv-linter.github.io"
 }
 
-export interface dotenvlintergithubioPackage {
+export interface DotenvlintergithubioPackage {
   name: "dotenv-linter";
   domain: "dotenv-linter.github.io";
   description: "⚡️Lightning-fast linter for .env files. Written in Rust 🦀";

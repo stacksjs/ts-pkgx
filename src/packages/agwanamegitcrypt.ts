@@ -28,7 +28,7 @@ export const agwanamegitcryptPackage: agwanamegitcryptPackage = {
   ]
 }
 
-export interface agwanamegitcryptPackage {
+export interface AgwanamegitcryptPackage {
   name: "git-crypt";
   domain: "agwa.name/git-crypt";
   description: "Enable transparent encryption/decryption of files in a git repo";

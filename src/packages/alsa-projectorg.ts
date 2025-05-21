@@ -19,7 +19,7 @@ export const alsaprojectorgPackage: alsaprojectorgPackage = {
   "fullPath": "alsa-project.org"
 }
 
-export interface alsaprojectorgPackage {
+export interface AlsaprojectorgPackage {
   name: "alsa-project.org";
   domain: "alsa-project.org";
   description: "";

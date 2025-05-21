@@ -41,7 +41,7 @@ export const aomediagooglesourcecomaomPackage: aomediagooglesourcecomaomPackage 
   ]
 }
 
-export interface aomediagooglesourcecomaomPackage {
+export interface AomediagooglesourcecomaomPackage {
   name: "aom";
   domain: "aomedia.googlesource.com/aom";
   description: "Codec library for encoding and decoding AV1 video streams";

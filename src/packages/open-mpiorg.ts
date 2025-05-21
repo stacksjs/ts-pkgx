@@ -49,7 +49,7 @@ export const openmpiorgPackage: openmpiorgPackage = {
   "fullPath": "open-mpi.org"
 }
 
-export interface openmpiorgPackage {
+export interface OpenmpiorgPackage {
   name: "open-mpi.org";
   domain: "open-mpi.org";
   description: "Open MPI main development repository";

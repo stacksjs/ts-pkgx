@@ -57,7 +57,7 @@ export const groovylangorgPackage: groovylangorgPackage = {
   "fullPath": "groovy-lang.org"
 }
 
-export interface groovylangorgPackage {
+export interface GroovylangorgPackage {
   name: "groovy-lang.org";
   domain: "groovy-lang.org";
   description: "";

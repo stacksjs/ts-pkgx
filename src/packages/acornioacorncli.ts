@@ -28,7 +28,7 @@ export const acornioacorncliPackage: acornioacorncliPackage = {
   ]
 }
 
-export interface acornioacorncliPackage {
+export interface AcornioacorncliPackage {
   name: "acorn";
   domain: "acorn.io/acorn-cli";
   description: "A simple application deployment framework built on Kubernetes";

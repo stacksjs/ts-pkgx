@@ -60,7 +60,7 @@ export const apacheorgarrowPackage: apacheorgarrowPackage = {
   ]
 }
 
-export interface apacheorgarrowPackage {
+export interface ApacheorgarrowPackage {
   name: "apache.org/arrow";
   domain: "apache.org/arrow";
   description: "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics";

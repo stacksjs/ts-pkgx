@@ -21,7 +21,7 @@ export const opencoreamrsourceforgeioPackage: opencoreamrsourceforgeioPackage = 
   "fullPath": "opencore-amr.sourceforge.io"
 }
 
-export interface opencoreamrsourceforgeioPackage {
+export interface OpencoreamrsourceforgeioPackage {
   name: "opencore-amr.sourceforge.io";
   domain: "opencore-amr.sourceforge.io";
   description: "";

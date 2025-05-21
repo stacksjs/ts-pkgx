@@ -36,7 +36,7 @@ export const openapigeneratortechPackage: openapigeneratortechPackage = {
   "fullPath": "openapi-generator.tech"
 }
 
-export interface openapigeneratortechPackage {
+export interface OpenapigeneratortechPackage {
   name: "openapi-generator";
   domain: "openapi-generator.tech";
   description: "OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, documentation and configuration automatically given an OpenAPI Spec (v2, v3)";

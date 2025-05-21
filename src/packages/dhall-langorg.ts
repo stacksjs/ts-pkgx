@@ -27,7 +27,7 @@ export const dhalllangorgPackage: dhalllangorgPackage = {
   "fullPath": "dhall-lang.org"
 }
 
-export interface dhalllangorgPackage {
+export interface DhalllangorgPackage {
   name: "dhall";
   domain: "dhall-lang.org";
   description: "Interpreter for the Dhall language";

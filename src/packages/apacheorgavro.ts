@@ -35,7 +35,7 @@ export const apacheorgavroPackage: apacheorgavroPackage = {
   ]
 }
 
-export interface apacheorgavroPackage {
+export interface ApacheorgavroPackage {
   name: "avro";
   domain: "apache.org/avro";
   description: "Apache Avro is a data serialization system.";

@@ -183,7 +183,7 @@ export const awsamazoncomcdkPackage: awsamazoncomcdkPackage = {
   ]
 }
 
-export interface awsamazoncomcdkPackage {
+export interface AwsamazoncomcdkPackage {
   name: "aws/cdk";
   domain: "aws.amazon.com/cdk";
   description: "The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code";

@@ -34,7 +34,7 @@ export const linuxpamorgPackage: linuxpamorgPackage = {
   "fullPath": "linux-pam.org"
 }
 
-export interface linuxpamorgPackage {
+export interface LinuxpamorgPackage {
   name: "linux-pam.org";
   domain: "linux-pam.org";
   description: "Linux PAM (Pluggable Authentication Modules for Linux) project";

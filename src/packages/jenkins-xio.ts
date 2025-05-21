@@ -80,7 +80,7 @@ export const jenkinsxioPackage: jenkinsxioPackage = {
   ]
 }
 
-export interface jenkinsxioPackage {
+export interface JenkinsxioPackage {
   name: "Jenkins X";
   domain: "jenkins-x.io";
   description: "Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton";

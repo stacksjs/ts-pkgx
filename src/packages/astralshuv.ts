@@ -204,7 +204,7 @@ export const astralshuvPackage: astralshuvPackage = {
   ]
 }
 
-export interface astralshuvPackage {
+export interface AstralshuvPackage {
   name: "astral.sh/uv";
   domain: "astral.sh/uv";
   description: "An extremely fast Python package and project manager, written in Rust.";

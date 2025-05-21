@@ -26,7 +26,7 @@ export const ninjabuildorgPackage: ninjabuildorgPackage = {
   "fullPath": "ninja-build.org"
 }
 
-export interface ninjabuildorgPackage {
+export interface NinjabuildorgPackage {
   name: "ninja";
   domain: "ninja-build.org";
   description: "Small build system for use with gyp or CMake";

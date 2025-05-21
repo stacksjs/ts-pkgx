@@ -29,7 +29,7 @@ export const munlangorgPackage: munlangorgPackage = {
   "fullPath": "mun-lang.org"
 }
 
-export interface munlangorgPackage {
+export interface MunlangorgPackage {
   name: "mun";
   domain: "mun-lang.org";
   description: "Source code for the Mun language and runtime.";

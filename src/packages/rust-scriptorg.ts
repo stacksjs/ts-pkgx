@@ -27,7 +27,7 @@ export const rustscriptorgPackage: rustscriptorgPackage = {
   "fullPath": "rust-script.org"
 }
 
-export interface rustscriptorgPackage {
+export interface RustscriptorgPackage {
   name: "rust-script";
   domain: "rust-script.org";
   description: "Run Rust files and expressions as scripts without any setup or compilation step.";

@@ -32,7 +32,7 @@ export const apacheorgjmeterPackage: apacheorgjmeterPackage = {
   ]
 }
 
-export interface apacheorgjmeterPackage {
+export interface ApacheorgjmeterPackage {
   name: "apache.org/jmeter";
   domain: "apache.org/jmeter";
   description: "";

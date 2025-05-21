@@ -78,7 +78,7 @@ export const rubylangorgPackage: rubylangorgPackage = {
   ]
 }
 
-export interface rubylangorgPackage {
+export interface RubylangorgPackage {
   name: "ruby-lang.org";
   domain: "ruby-lang.org";
   description: "Powerful, clean, object-oriented scripting language";

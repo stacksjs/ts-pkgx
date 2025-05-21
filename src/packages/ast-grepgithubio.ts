@@ -102,7 +102,7 @@ export const astgrepgithubioPackage: astgrepgithubioPackage = {
   fullPath: 'ast-grep.github.io',
 }
 
-export interface astgrepgithubioPackage {
+export interface AstgrepgithubioPackage {
   name: 'ast-grep.github.io';
   domain: 'ast-grep.github.io';
   description: '⚡A CLI tool for code structural search, lint and rewriting. Written in Rust';

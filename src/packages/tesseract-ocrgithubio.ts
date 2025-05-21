@@ -36,7 +36,7 @@ export const tesseractocrgithubioPackage: tesseractocrgithubioPackage = {
   "fullPath": "tesseract-ocr.github.io"
 }
 
-export interface tesseractocrgithubioPackage {
+export interface TesseractocrgithubioPackage {
   name: "tesseract";
   domain: "tesseract-ocr.github.io";
   description: "Tesseract Open Source OCR Engine (main repository)";

@@ -28,7 +28,7 @@ export const apacheorgaprPackage: apacheorgaprPackage = {
   ]
 }
 
-export interface apacheorgaprPackage {
+export interface ApacheorgaprPackage {
   name: "apache.org/apr";
   domain: "apache.org/apr";
   description: "Mirror of Apache Portable Runtime";

@@ -57,7 +57,7 @@ export const argoprojgithubioworkflowsPackage: argoprojgithubioworkflowsPackage 
   ]
 }
 
-export interface argoprojgithubioworkflowsPackage {
+export interface ArgoprojgithubioworkflowsPackage {
   name: "argo-workflows";
   domain: "argoproj.github.io/workflows";
   description: "Get stuff done with container-native workflows for Kubernetes";

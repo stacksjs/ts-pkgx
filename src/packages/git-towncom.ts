@@ -75,7 +75,7 @@ export const gittowncomPackage: gittowncomPackage = {
   "fullPath": "git-town.com"
 }
 
-export interface gittowncomPackage {
+export interface GittowncomPackage {
   name: "git-town";
   domain: "git-town.com";
   description: "High-level command-line interface for Git";

@@ -23,7 +23,7 @@ export const clogtoolgithubioPackage: clogtoolgithubioPackage = {
   "fullPath": "clog-tool.github.io"
 }
 
-export interface clogtoolgithubioPackage {
+export interface ClogtoolgithubioPackage {
   name: "clog";
   domain: "clog-tool.github.io";
   description: "Colorized pattern-matching log tail utility";

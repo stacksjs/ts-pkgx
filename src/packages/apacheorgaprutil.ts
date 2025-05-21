@@ -27,7 +27,7 @@ export const apacheorgaprutilPackage: apacheorgaprutilPackage = {
   ]
 }
 
-export interface apacheorgaprutilPackage {
+export interface ApacheorgaprutilPackage {
   name: "apu-{{ version.major }}-config";
   domain: "apache.org/apr-util";
   description: "Mirror of Apache Portable Runtime util";

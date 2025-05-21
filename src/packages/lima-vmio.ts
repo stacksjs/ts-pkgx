@@ -53,7 +53,7 @@ export const limavmioPackage: limavmioPackage = {
   "fullPath": "lima-vm.io"
 }
 
-export interface limavmioPackage {
+export interface LimavmioPackage {
   name: "lima-vm.io";
   domain: "lima-vm.io";
   description: "Linux virtual machines, with a focus on running containers";

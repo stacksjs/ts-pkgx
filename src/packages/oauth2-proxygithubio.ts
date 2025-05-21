@@ -29,7 +29,7 @@ export const oauth2proxygithubioPackage: oauth2proxygithubioPackage = {
   "fullPath": "oauth2-proxy.github.io"
 }
 
-export interface oauth2proxygithubioPackage {
+export interface Oauth2proxygithubioPackage {
   name: "oauth2-proxy";
   domain: "oauth2-proxy.github.io";
   description: "A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.";

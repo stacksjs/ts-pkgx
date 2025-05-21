@@ -55,7 +55,7 @@ export const awsamazoncomsamPackage: awsamazoncomsamPackage = {
   ]
 }
 
-export interface awsamazoncomsamPackage {
+export interface AwsamazoncomsamPackage {
   name: "sam";
   domain: "aws.amazon.com/sam";
   description: "CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM";

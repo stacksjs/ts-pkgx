@@ -30,7 +30,7 @@ export const projectcopaceticgithubioPackage: projectcopaceticgithubioPackage = 
   ]
 }
 
-export interface projectcopaceticgithubioPackage {
+export interface ProjectcopaceticgithubioPackage {
   name: "copa";
   domain: "project-copacetic.github.io";
   description: "Tool to directly patch container images given the vulnerability scanning results";

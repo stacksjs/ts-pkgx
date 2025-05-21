@@ -48,7 +48,7 @@ export const pythonpoetryorgPackage: pythonpoetryorgPackage = {
   ]
 }
 
-export interface pythonpoetryorgPackage {
+export interface PythonpoetryorgPackage {
   name: "poetry";
   domain: "python-poetry.org";
   description: "Python packaging and dependency management made easy";

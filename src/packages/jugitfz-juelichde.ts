@@ -19,7 +19,7 @@ export const jugitfzjuelichdePackage: jugitfzjuelichdePackage = {
   "fullPath": "jugit.fz-juelich.de"
 }
 
-export interface jugitfzjuelichdePackage {
+export interface JugitfzjuelichdePackage {
   name: "jugit.fz-juelich.de";
   domain: "jugit.fz-juelich.de";
   description: "";

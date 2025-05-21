@@ -34,7 +34,7 @@ export const browserusecomPackage: browserusecomPackage = {
   "fullPath": "browser-use.com"
 }
 
-export interface browserusecomPackage {
+export interface BrowserusecomPackage {
   name: "browser-use.com";
   domain: "browser-use.com";
   description: "Make websites accessible for AI agents";

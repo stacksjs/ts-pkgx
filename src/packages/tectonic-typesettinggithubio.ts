@@ -35,7 +35,7 @@ export const tectonictypesettinggithubioPackage: tectonictypesettinggithubioPack
   "fullPath": "tectonic-typesetting.github.io"
 }
 
-export interface tectonictypesettinggithubioPackage {
+export interface TectonictypesettinggithubioPackage {
   name: "tectonic";
   domain: "tectonic-typesetting.github.io";
   description: "A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.";

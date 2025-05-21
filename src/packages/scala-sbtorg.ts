@@ -45,7 +45,7 @@ export const scalasbtorgPackage: scalasbtorgPackage = {
   ]
 }
 
-export interface scalasbtorgPackage {
+export interface ScalasbtorgPackage {
   name: "sbt";
   domain: "scala-sbt.org";
   description: "sbt, the interactive build tool";

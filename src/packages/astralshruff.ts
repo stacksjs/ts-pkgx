@@ -107,7 +107,7 @@ export const astralshruffPackage: astralshruffPackage = {
   ]
 }
 
-export interface astralshruffPackage {
+export interface AstralshruffPackage {
   name: "ruff";
   domain: "astral.sh/ruff";
   description: "An extremely fast Python linter and code formatter, written in Rust.";

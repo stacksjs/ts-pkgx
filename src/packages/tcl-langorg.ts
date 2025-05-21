@@ -37,7 +37,7 @@ export const tcllangorgPackage: tcllangorgPackage = {
   "fullPath": "tcl-lang.org"
 }
 
-export interface tcllangorgPackage {
+export interface TcllangorgPackage {
   name: "tcl-lang.org";
   domain: "tcl-lang.org";
   description: "Tool Command Language";

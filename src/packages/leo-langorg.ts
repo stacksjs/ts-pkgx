@@ -36,7 +36,7 @@ export const leolangorgPackage: leolangorgPackage = {
   "fullPath": "leo-lang.org"
 }
 
-export interface leolangorgPackage {
+export interface LeolangorgPackage {
   name: "leo";
   domain: "leo-lang.org";
   description: "🦁 The Leo Programming Language. A Programming Language for Formally Verified, Zero-Knowledge Applications";

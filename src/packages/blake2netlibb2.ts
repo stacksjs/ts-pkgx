@@ -24,7 +24,7 @@ export const blake2netlibb2Package: blake2netlibb2Package = {
   ]
 }
 
-export interface blake2netlibb2Package {
+export interface Blake2netlibb2Package {
   name: "blake2.net/libb2";
   domain: "blake2.net/libb2";
   description: "C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp";

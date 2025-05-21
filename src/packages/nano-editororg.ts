@@ -27,7 +27,7 @@ export const nanoeditororgPackage: nanoeditororgPackage = {
   "fullPath": "nano-editor.org"
 }
 
-export interface nanoeditororgPackage {
+export interface NanoeditororgPackage {
   name: "nano";
   domain: "nano-editor.org";
   description: "Free (GNU) replacement for the Pico text editor";

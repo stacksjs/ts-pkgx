@@ -57,7 +57,7 @@ export const gitscmorgPackage: gitscmorgPackage = {
   "fullPath": "git-scm.org"
 }
 
-export interface gitscmorgPackage {
+export interface GitscmorgPackage {
   name: "git";
   domain: "git-scm.org";
   description: "Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.";

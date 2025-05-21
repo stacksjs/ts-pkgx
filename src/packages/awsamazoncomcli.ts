@@ -918,7 +918,7 @@ export const awsamazoncomcliPackage: awsamazoncomcliPackage = {
   ]
 }
 
-export interface awsamazoncomcliPackage {
+export interface AwsamazoncomcliPackage {
   name: "aws/cli";
   domain: "aws.amazon.com/cli";
   description: "Universal Command Line Interface for Amazon Web Services";

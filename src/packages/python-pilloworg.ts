@@ -37,7 +37,7 @@ export const pythonpilloworgPackage: pythonpilloworgPackage = {
   "fullPath": "python-pillow.org"
 }
 
-export interface pythonpilloworgPackage {
+export interface PythonpilloworgPackage {
   name: "python-pillow.org";
   domain: "python-pillow.org";
   description: "Python Imaging Library (Fork)";

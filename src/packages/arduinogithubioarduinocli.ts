@@ -45,7 +45,7 @@ export const arduinogithubioarduinocliPackage: arduinogithubioarduinocliPackage 
   ]
 }
 
-export interface arduinogithubioarduinocliPackage {
+export interface ArduinogithubioarduinocliPackage {
   name: "arduino-cli";
   domain: "arduino.github.io/arduino-cli";
   description: "Arduino command-line interface";

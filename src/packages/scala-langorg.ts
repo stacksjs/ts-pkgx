@@ -36,7 +36,7 @@ export const scalalangorgPackage: scalalangorgPackage = {
   "fullPath": "scala-lang.org"
 }
 
-export interface scalalangorgPackage {
+export interface ScalalangorgPackage {
   name: "scala-lang.org";
   domain: "scala-lang.org";
   description: "The Scala 3 compiler, also known as Dotty.";

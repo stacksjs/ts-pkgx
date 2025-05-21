@@ -29,7 +29,7 @@ export const asciinemaorgaggPackage: asciinemaorgaggPackage = {
   ]
 }
 
-export interface asciinemaorgaggPackage {
+export interface AsciinemaorgaggPackage {
   name: "agg";
   domain: "asciinema.org/agg";
   description: "Asciicast to GIF converter";

@@ -62,7 +62,7 @@ export const akuityiokargoPackage: akuityiokargoPackage = {
   ]
 }
 
-export interface akuityiokargoPackage {
+export interface AkuityiokargoPackage {
   name: "kargo";
   domain: "akuity.io/kargo";
   description: "Application lifecycle orchestration";

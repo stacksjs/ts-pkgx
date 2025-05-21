@@ -45,7 +45,7 @@ export const gitclifforgPackage: gitclifforgPackage = {
   "fullPath": "git-cliff.org"
 }
 
-export interface gitclifforgPackage {
+export interface GitclifforgPackage {
   name: "git-cliff";
   domain: "git-cliff.org";
   description: "A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️";

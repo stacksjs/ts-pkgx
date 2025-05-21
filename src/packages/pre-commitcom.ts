@@ -46,7 +46,7 @@ export const precommitcomPackage: precommitcomPackage = {
   "fullPath": "pre-commit.com"
 }
 
-export interface precommitcomPackage {
+export interface PrecommitcomPackage {
   name: "pre-commit";
   domain: "pre-commit.com";
   description: "A framework for managing and maintaining multi-language pre-commit hooks.";

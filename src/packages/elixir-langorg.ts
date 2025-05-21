@@ -50,7 +50,7 @@ export const elixirlangorgPackage: elixirlangorgPackage = {
   "fullPath": "elixir-lang.org"
 }
 
-export interface elixirlangorgPackage {
+export interface ElixirlangorgPackage {
   name: "elixir-lang.org";
   domain: "elixir-lang.org";
   description: "Elixir is a dynamic, functional language for building scalable and maintainable applications";

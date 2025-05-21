@@ -49,7 +49,7 @@ export const mercurialscmorgPackage: mercurialscmorgPackage = {
   "fullPath": "mercurial-scm.org"
 }
 
-export interface mercurialscmorgPackage {
+export interface MercurialscmorgPackage {
   name: "mercurial-scm.org";
   domain: "mercurial-scm.org";
   description: "Scalable distributed version control system";

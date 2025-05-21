@@ -74,7 +74,7 @@ export const golangcilintrunPackage: golangcilintrunPackage = {
   "fullPath": "golangci-lint.run"
 }
 
-export interface golangcilintrunPackage {
+export interface GolangcilintrunPackage {
   name: "golangci-lint";
   domain: "golangci-lint.run";
   description: "Fast linters runner for Go";

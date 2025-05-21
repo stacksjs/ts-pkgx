@@ -49,7 +49,7 @@ export const mypylangorgPackage: mypylangorgPackage = {
   "fullPath": "mypy-lang.org"
 }
 
-export interface mypylangorgPackage {
+export interface MypylangorgPackage {
   name: "mypy-lang.org";
   domain: "mypy-lang.org";
   description: "Experimental optional static type checker for Python";

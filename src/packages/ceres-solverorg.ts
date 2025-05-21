@@ -30,7 +30,7 @@ export const ceressolverorgPackage: ceressolverorgPackage = {
   "fullPath": "ceres-solver.org"
 }
 
-export interface ceressolverorgPackage {
+export interface CeressolverorgPackage {
   name: "ceres-solver.org";
   domain: "ceres-solver.org";
   description: "";

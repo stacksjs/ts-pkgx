@@ -30,7 +30,7 @@ export const mcmcjagssourceforgeioPackage: mcmcjagssourceforgeioPackage = {
   ]
 }
 
-export interface mcmcjagssourceforgeioPackage {
+export interface McmcjagssourceforgeioPackage {
   name: "jags";
   domain: "mcmc-jags.sourceforge.io";
   description: "Just Another Gibbs Sampler for Bayesian MCMC simulation";

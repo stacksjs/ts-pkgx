@@ -51,7 +51,7 @@ export const apollographqlcomroverPackage: apollographqlcomroverPackage = {
   ]
 }
 
-export interface apollographqlcomroverPackage {
+export interface ApollographqlcomroverPackage {
   name: "rover";
   domain: "apollographql.com/rover";
   description: "CLI for managing and maintaining data graphs with Apollo Studio";

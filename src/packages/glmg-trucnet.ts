@@ -23,7 +23,7 @@ export const glmgtrucnetPackage: glmgtrucnetPackage = {
   "fullPath": "glm.g-truc.net"
 }
 
-export interface glmgtrucnetPackage {
+export interface GlmgtrucnetPackage {
   name: "glm.g-truc.net";
   domain: "glm.g-truc.net";
   description: "OpenGL Mathematics (GLM)";

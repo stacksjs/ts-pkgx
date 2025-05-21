@@ -39,7 +39,7 @@ export const fnaxnagithubioPackage: fnaxnagithubioPackage = {
   "fullPath": "fna-xna.github.io"
 }
 
-export interface fnaxnagithubioPackage {
+export interface FnaxnagithubioPackage {
   name: "fna-xna.github.io";
   domain: "fna-xna.github.io";
   description: "FAudio - Accuracy-focused XAudio reimplementation for open platforms";

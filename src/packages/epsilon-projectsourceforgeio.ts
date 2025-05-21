@@ -25,7 +25,7 @@ export const epsilonprojectsourceforgeioPackage: epsilonprojectsourceforgeioPack
   "fullPath": "epsilon-project.sourceforge.io"
 }
 
-export interface epsilonprojectsourceforgeioPackage {
+export interface EpsilonprojectsourceforgeioPackage {
   name: "epsilon";
   domain: "epsilon-project.sourceforge.io";
   description: "Powerful wavelet image compressor";

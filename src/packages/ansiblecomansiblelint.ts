@@ -47,7 +47,7 @@ export const ansiblecomansiblelintPackage: ansiblecomansiblelintPackage = {
   ]
 }
 
-export interface ansiblecomansiblelintPackage {
+export interface AnsiblecomansiblelintPackage {
   name: "ansible-lint";
   domain: "ansible.com/ansible-lint";
   description: "ansible-lint checks playbooks for practices and behavior that could potentially be improved and can fix some of the most common ones for you";

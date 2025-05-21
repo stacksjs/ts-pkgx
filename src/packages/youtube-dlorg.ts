@@ -26,7 +26,7 @@ export const youtubedlorgPackage: youtubedlorgPackage = {
   "fullPath": "youtube-dl.org"
 }
 
-export interface youtubedlorgPackage {
+export interface YoutubedlorgPackage {
   name: "youtube-dl";
   domain: "youtube-dl.org";
   description: "Command-line program to download videos from YouTube.com and other video sites";

@@ -62,7 +62,7 @@ export const aquasecuritygithubiotrivyPackage: aquasecuritygithubiotrivyPackage 
   ]
 }
 
-export interface aquasecuritygithubiotrivyPackage {
+export interface AquasecuritygithubiotrivyPackage {
   name: "trivy";
   domain: "aquasecurity.github.io/trivy";
   description: "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more";

@@ -54,7 +54,7 @@ export const apacheorghttpdPackage: apacheorghttpdPackage = {
   ]
 }
 
-export interface apacheorghttpdPackage {
+export interface ApacheorghttpdPackage {
   name: "apache.org/httpd";
   domain: "apache.org/httpd";
   description: "Apache HTTP server";

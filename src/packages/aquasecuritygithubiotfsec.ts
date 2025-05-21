@@ -34,7 +34,7 @@ export const aquasecuritygithubiotfsecPackage: aquasecuritygithubiotfsecPackage 
   ]
 }
 
-export interface aquasecuritygithubiotfsecPackage {
+export interface AquasecuritygithubiotfsecPackage {
   name: "tfsec";
   domain: "aquasecurity.github.io/tfsec";
   description: "Static analysis security scanner for your terraform code";

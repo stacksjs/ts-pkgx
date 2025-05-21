@@ -26,7 +26,7 @@ export const microeditorgithubioPackage: microeditorgithubioPackage = {
   "fullPath": "micro-editor.github.io"
 }
 
-export interface microeditorgithubioPackage {
+export interface MicroeditorgithubioPackage {
   name: "micro";
   domain: "micro-editor.github.io";
   description: "A modern and intuitive terminal-based text editor";

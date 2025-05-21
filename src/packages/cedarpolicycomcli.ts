@@ -58,7 +58,7 @@ export const cedarpolicycomcliPackage: cedarpolicycomcliPackage = {
   ]
 }
 
-export interface cedarpolicycomcliPackage {
+export interface CedarpolicycomcliPackage {
   name: "cedar";
   domain: "cedarpolicy.com/cli";
   description: "Implementation of the Cedar Policy Language";

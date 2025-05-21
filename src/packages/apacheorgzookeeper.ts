@@ -39,7 +39,7 @@ export const apacheorgzookeeperPackage: apacheorgzookeeperPackage = {
   ]
 }
 
-export interface apacheorgzookeeperPackage {
+export interface ApacheorgzookeeperPackage {
   name: "apache.org/zookeeper";
   domain: "apache.org/zookeeper";
   description: "";

@@ -142,7 +142,7 @@ export const argoprojgithubiocdPackage: argoprojgithubiocdPackage = {
   ]
 }
 
-export interface argoprojgithubiocdPackage {
+export interface ArgoprojgithubiocdPackage {
   name: "argo-cd";
   domain: "argoproj.github.io/cd";
   description: "GitOps Continuous Delivery for Kubernetes";

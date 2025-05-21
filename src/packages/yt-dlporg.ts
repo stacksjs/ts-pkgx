@@ -70,7 +70,7 @@ export const ytdlporgPackage: ytdlporgPackage = {
   "fullPath": "yt-dlp.org"
 }
 
-export interface ytdlporgPackage {
+export interface YtdlporgPackage {
   name: "yt-dlp";
   domain: "yt-dlp.org";
   description: "A feature-rich command-line audio/video downloader";

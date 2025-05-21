@@ -63,7 +63,7 @@ export const anchorecomsyftPackage: anchorecomsyftPackage = {
   ]
 }
 
-export interface anchorecomsyftPackage {
+export interface AnchorecomsyftPackage {
   name: "syft";
   domain: "anchore.com/syft";
   description: "CLI tool and library for generating a Software Bill of Materials from container images and filesystems";

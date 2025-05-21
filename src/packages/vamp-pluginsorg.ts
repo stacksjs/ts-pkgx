@@ -29,7 +29,7 @@ export const vamppluginsorgPackage: vamppluginsorgPackage = {
   "fullPath": "vamp-plugins.org"
 }
 
-export interface vamppluginsorgPackage {
+export interface VamppluginsorgPackage {
   name: "vamp";
   domain: "vamp-plugins.org";
   description: "Audio processing plugin system sdk";

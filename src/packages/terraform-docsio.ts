@@ -27,7 +27,7 @@ export const terraformdocsioPackage: terraformdocsioPackage = {
   "fullPath": "terraform-docs.io"
 }
 
-export interface terraformdocsioPackage {
+export interface TerraformdocsioPackage {
   name: "terraform-docs";
   domain: "terraform-docs.io";
   description: "Generate documentation from Terraform modules in various output formats";

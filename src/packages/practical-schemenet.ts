@@ -19,7 +19,7 @@ export const practicalschemenetPackage: practicalschemenetPackage = {
   "fullPath": "practical-scheme.net"
 }
 
-export interface practicalschemenetPackage {
+export interface PracticalschemenetPackage {
   name: "practical-scheme.net";
   domain: "practical-scheme.net";
   description: "";

@@ -48,7 +48,7 @@ export const caresorgPackage: caresorgPackage = {
   "fullPath": "c-ares.org"
 }
 
-export interface caresorgPackage {
+export interface CaresorgPackage {
   name: "c-ares.org";
   domain: "c-ares.org";
   description: "";

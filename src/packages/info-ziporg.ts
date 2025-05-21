@@ -19,7 +19,7 @@ export const infoziporgPackage: infoziporgPackage = {
   "fullPath": "info-zip.org"
 }
 
-export interface infoziporgPackage {
+export interface InfoziporgPackage {
   name: "info-zip.org";
   domain: "info-zip.org";
   description: "";

@@ -38,7 +38,7 @@ export const midnightcommanderorgPackage: midnightcommanderorgPackage = {
   ]
 }
 
-export interface midnightcommanderorgPackage {
+export interface MidnightcommanderorgPackage {
   name: "Midnight Commander";
   domain: "midnight-commander.org";
   description: "Terminal-based visual file manager";

@@ -32,7 +32,7 @@ export const alsaprojectorgalsalibPackage: alsaprojectorgalsalibPackage = {
   ]
 }
 
-export interface alsaprojectorgalsalibPackage {
+export interface AlsaprojectorgalsalibPackage {
   name: "aserver";
   domain: "alsa-project.org/alsa-lib";
   description: "Provides audio and MIDI functionality to the Linux operating system";

@@ -54,7 +54,7 @@ export const crystallangorgPackage: crystallangorgPackage = {
   "fullPath": "crystal-lang.org"
 }
 
-export interface crystallangorgPackage {
+export interface CrystallangorgPackage {
   name: "crystal";
   domain: "crystal-lang.org";
   description: "Fast and statically typed, compiled language with Ruby-like syntax";

@@ -32,7 +32,7 @@ export const apacheorgthriftPackage: apacheorgthriftPackage = {
   ]
 }
 
-export interface apacheorgthriftPackage {
+export interface ApacheorgthriftPackage {
   name: "thrift";
   domain: "apache.org/thrift";
   description: "Framework for scalable cross-language services development";

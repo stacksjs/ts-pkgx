@@ -30,7 +30,7 @@ export const gitlfscomPackage: gitlfscomPackage = {
   "fullPath": "git-lfs.com"
 }
 
-export interface gitlfscomPackage {
+export interface GitlfscomPackage {
   name: "git-lfs";
   domain: "git-lfs.com";
   description: "Git extension for versioning large files";

@@ -71,7 +71,7 @@ export const singboxappPackage: singboxappPackage = {
   "fullPath": "sing-box.app"
 }
 
-export interface singboxappPackage {
+export interface SingboxappPackage {
   name: "sing-box";
   domain: "sing-box.app";
   description: "The universal proxy platform";

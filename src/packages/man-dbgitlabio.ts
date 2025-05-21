@@ -19,7 +19,7 @@ export const mandbgitlabioPackage: mandbgitlabioPackage = {
   "fullPath": "man-db.gitlab.io"
 }
 
-export interface mandbgitlabioPackage {
+export interface MandbgitlabioPackage {
   name: "man-db.gitlab.io";
   domain: "man-db.gitlab.io";
   description: "";

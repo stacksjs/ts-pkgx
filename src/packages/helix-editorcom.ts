@@ -33,7 +33,7 @@ export const helixeditorcomPackage: helixeditorcomPackage = {
   ]
 }
 
-export interface helixeditorcomPackage {
+export interface HelixeditorcomPackage {
   name: "hx";
   domain: "helix-editor.com";
   description: "A post-modern modal text editor.";

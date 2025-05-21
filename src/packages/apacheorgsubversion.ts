@@ -51,7 +51,7 @@ export const apacheorgsubversionPackage: apacheorgsubversionPackage = {
   ]
 }
 
-export interface apacheorgsubversionPackage {
+export interface ApacheorgsubversionPackage {
   name: "svn";
   domain: "apache.org/subversion";
   description: "Version control system designed to be a better CVS";

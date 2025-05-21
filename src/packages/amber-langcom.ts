@@ -34,7 +34,7 @@ export const amberlangcomPackage: amberlangcomPackage = {
   "fullPath": "amber-lang.com"
 }
 
-export interface amberlangcomPackage {
+export interface AmberlangcomPackage {
   name: "amber";
   domain: "amber-lang.com";
   description: "Crystal web framework. Bare metal performance, productivity and happiness";

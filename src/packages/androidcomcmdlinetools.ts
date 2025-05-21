@@ -36,7 +36,7 @@ export const androidcomcmdlinetoolsPackage: androidcomcmdlinetoolsPackage = {
   ]
 }
 
-export interface androidcomcmdlinetoolsPackage {
+export interface AndroidcomcmdlinetoolsPackage {
   name: "android.com/cmdline-tools";
   domain: "android.com/cmdline-tools";
   description: "";

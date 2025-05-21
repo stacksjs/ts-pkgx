@@ -19,7 +19,7 @@ export const sasslangcomPackage: sasslangcomPackage = {
   "fullPath": "sass-lang.com"
 }
 
-export interface sasslangcomPackage {
+export interface SasslangcomPackage {
   name: "sass-lang.com";
   domain: "sass-lang.com";
   description: "";

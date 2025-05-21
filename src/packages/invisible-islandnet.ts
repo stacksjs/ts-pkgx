@@ -19,7 +19,7 @@ export const invisibleislandnetPackage: invisibleislandnetPackage = {
   "fullPath": "invisible-island.net"
 }
 
-export interface invisibleislandnetPackage {
+export interface InvisibleislandnetPackage {
   name: "invisible-island.net";
   domain: "invisible-island.net";
   description: "";

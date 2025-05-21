@@ -48,7 +48,7 @@ export const treesittergithubioPackage: treesittergithubioPackage = {
   "fullPath": "tree-sitter.github.io"
 }
 
-export interface treesittergithubioPackage {
+export interface TreesittergithubioPackage {
   name: "tree-sitter";
   domain: "tree-sitter.github.io";
   description: "Parser generator tool and incremental parsing library";

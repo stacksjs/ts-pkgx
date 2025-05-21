@@ -56,7 +56,7 @@ export const prqllangorgPackage: prqllangorgPackage = {
   "fullPath": "prql-lang.org"
 }
 
-export interface prqllangorgPackage {
+export interface PrqllangorgPackage {
   name: "prql";
   domain: "prql-lang.org";
   description: "PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement";

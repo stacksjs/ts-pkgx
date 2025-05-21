@@ -49,7 +49,7 @@ export const nimlangorgPackage: nimlangorgPackage = {
   "fullPath": "nim-lang.org"
 }
 
-export interface nimlangorgPackage {
+export interface NimlangorgPackage {
   name: "nim-lang.org";
   domain: "nim-lang.org";
   description: "Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).";

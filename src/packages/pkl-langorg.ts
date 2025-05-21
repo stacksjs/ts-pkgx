@@ -37,7 +37,7 @@ export const pkllangorgPackage: pkllangorgPackage = {
   "fullPath": "pkl-lang.org"
 }
 
-export interface pkllangorgPackage {
+export interface PkllangorgPackage {
   name: "pkl-lang.org";
   domain: "pkl-lang.org";
   description: "A configuration as code language with rich validation and tooling.";

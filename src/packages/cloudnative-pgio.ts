@@ -28,7 +28,7 @@ export const cloudnativepgioPackage: cloudnativepgioPackage = {
   ]
 }
 
-export interface cloudnativepgioPackage {
+export interface CloudnativepgioPackage {
   name: "kubectl-cnpg";
   domain: "cloudnative-pg.io";
   description: "CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases within Kubernetes environments, covering the entire operational lifecycle from initial deployment to ongoing maintenance";

@@ -19,7 +19,7 @@ export const rwosorgPackage: rwosorgPackage = {
   "fullPath": "r-wos.org"
 }
 
-export interface rwosorgPackage {
+export interface RwosorgPackage {
   name: "r-wos.org";
   domain: "r-wos.org";
   description: "";

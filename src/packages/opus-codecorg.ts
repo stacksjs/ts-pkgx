@@ -25,7 +25,7 @@ export const opuscodecorgPackage: opuscodecorgPackage = {
   "fullPath": "opus-codec.org"
 }
 
-export interface opuscodecorgPackage {
+export interface OpuscodecorgPackage {
   name: "opus-codec.org";
   domain: "opus-codec.org";
   description: "Modern audio compression for the internet.";

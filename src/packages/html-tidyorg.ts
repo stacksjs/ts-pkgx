@@ -26,7 +26,7 @@ export const htmltidyorgPackage: htmltidyorgPackage = {
   ]
 }
 
-export interface htmltidyorgPackage {
+export interface HtmltidyorgPackage {
   name: "tidy";
   domain: "html-tidy.org";
   description: "The granddaddy of HTML tools, with support for modern standards";

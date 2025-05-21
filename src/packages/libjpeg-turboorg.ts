@@ -34,7 +34,7 @@ export const libjpegturboorgPackage: libjpegturboorgPackage = {
   "fullPath": "libjpeg-turbo.org"
 }
 
-export interface libjpegturboorgPackage {
+export interface LibjpegturboorgPackage {
   name: "libjpeg-turbo.org";
   domain: "libjpeg-turbo.org";
   description: "Main libjpeg-turbo repository";

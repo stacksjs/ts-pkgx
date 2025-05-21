@@ -47,7 +47,7 @@ export const authzedcomspicedbPackage: authzedcomspicedbPackage = {
   ]
 }
 
-export interface authzedcomspicedbPackage {
+export interface AuthzedcomspicedbPackage {
   name: "spicedb";
   domain: "authzed.com/spicedb";
   description: "Open Source, Google Zanzibar-inspired database for scalably storing and querying fine-grained authorization data";

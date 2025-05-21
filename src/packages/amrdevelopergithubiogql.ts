@@ -59,7 +59,7 @@ export const amrdevelopergithubiogqlPackage: amrdevelopergithubiogqlPackage = {
   ]
 }
 
-export interface amrdevelopergithubiogqlPackage {
+export interface AmrdevelopergithubiogqlPackage {
   name: "gitql";
   domain: "amrdeveloper.github.io/GQL";
   description: "GitQL is a extensible SQL-like query language and SDK to perform queries on various data sources such .git files with supports of most of SQL features such as grouping, ordering and aggregation and window functions and allow customization like user-defined types and functions";

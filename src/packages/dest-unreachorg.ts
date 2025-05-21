@@ -19,7 +19,7 @@ export const destunreachorgPackage: destunreachorgPackage = {
   "fullPath": "dest-unreach.org"
 }
 
-export interface destunreachorgPackage {
+export interface DestunreachorgPackage {
   name: "dest-unreach.org";
   domain: "dest-unreach.org";
   description: "";

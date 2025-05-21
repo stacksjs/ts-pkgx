@@ -69,7 +69,7 @@ export const sphinxdocorgPackage: sphinxdocorgPackage = {
   "fullPath": "sphinx-doc.org"
 }
 
-export interface sphinxdocorgPackage {
+export interface SphinxdocorgPackage {
   name: "sphinx";
   domain: "sphinx-doc.org";
   description: "Tool to create intelligent and beautiful documentation";

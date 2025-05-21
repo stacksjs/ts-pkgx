@@ -26,7 +26,7 @@ export const brxken128githubiodexiosPackage: brxken128githubiodexiosPackage = {
   ]
 }
 
-export interface brxken128githubiodexiosPackage {
+export interface Brxken128githubiodexiosPackage {
   name: "dexios";
   domain: "brxken128.github.io/dexios";
   description: "A secure file encryption utility, written in Rust.";

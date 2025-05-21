@@ -19,7 +19,7 @@ export const gaiagisitPackage: gaiagisitPackage = {
   "fullPath": "gaia-gis.it"
 }
 
-export interface gaiagisitPackage {
+export interface GaiagisitPackage {
   name: "gaia-gis.it";
   domain: "gaia-gis.it";
   description: "";

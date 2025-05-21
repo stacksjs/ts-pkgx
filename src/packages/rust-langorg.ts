@@ -73,7 +73,7 @@ export const rustlangorgPackage: rustlangorgPackage = {
   ]
 }
 
-export interface rustlangorgPackage {
+export interface RustlangorgPackage {
   name: "rust";
   domain: "rust-lang.org";
   description: "Empowering everyone to build reliable and efficient software.";

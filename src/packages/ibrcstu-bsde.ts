@@ -19,7 +19,7 @@ export const ibrcstubsdePackage: ibrcstubsdePackage = {
   "fullPath": "ibr.cs.tu-bs.de"
 }
 
-export interface ibrcstubsdePackage {
+export interface IbrcstubsdePackage {
   name: "ibr.cs.tu-bs.de";
   domain: "ibr.cs.tu-bs.de";
   description: "";

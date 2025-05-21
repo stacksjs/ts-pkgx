@@ -19,7 +19,7 @@ export const rustlanggithubioPackage: rustlanggithubioPackage = {
   "fullPath": "rust-lang.github.io"
 }
 
-export interface rustlanggithubioPackage {
+export interface RustlanggithubioPackage {
   name: "rust-lang.github.io";
   domain: "rust-lang.github.io";
   description: "";
