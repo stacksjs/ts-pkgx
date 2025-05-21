@@ -694,12 +694,23 @@ export async function fetchAndSaveAllPackages(
  * Converts domain names to camelCase format suitable for TypeScript files
  */
 function getDomainAsTypescriptName(domain: string): string {
-  // Replace dots, dashes and slashes with nothing
-  // Convert domain.name to domainname for TypeScript files
+  // First handle the case where there are slashes (nested paths)
+  if (domain.includes('/')) {
+    // Split into parent domain and subpath
+    const [parentDomain, subPath] = domain.split('/')
+
+    // Clean both parts separately - IMPORTANT: remove dashes in both parts
+    const cleanParent = parentDomain.replace(/\./g, '').replace(/-/g, '')
+    const cleanSubPath = subPath.replace(/-/g, '')
+
+    // Join without any separators to make a valid identifier
+    return `${cleanParent}${cleanSubPath}`.toLowerCase()
+  }
+
+  // For regular domains (no slashes), just remove dots and dashes
   return domain
     .replace(/\./g, '')
     .replace(/-/g, '')
-    .replace(/\//g, '-')
     .toLowerCase()
 }
 

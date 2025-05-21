@@ -64,8 +64,10 @@
     "preview:docs": "bun --bun vitepress preview docs",
     "typecheck": "bun --bun tsc --noEmit",
     "pkgx:fetch": "bun bin/cli.ts fetch",
-    "pkgx:fetch-all": "bun bin/cli.ts fetch-all",
-    "pkgx:update": "bun run update:packages"
+    "pkgx:fetch-all": "bun bin/cli.ts fetch --all",
+    "pkgx:update": "bun run update:packages",
+    "pkgx:docs": "bun bin/cli.ts generate-docs",
+    "pkgx:cleanup": "bun bin/cli.ts cleanup"
   },
   "dependencies": {
     "playwright": "^1.52.0"

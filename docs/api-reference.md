@@ -354,18 +354,37 @@ const PACKAGE_ALIASES: Record<string, string> = {
 
 ### pkgx:fetch
 
-Fetches a single package from pkgx.dev.
+Fetches a single package or a list of packages from pkgx.dev.
 
 ```bash
 bun run pkgx:fetch <packageName> [options]
+# OR
+bun run pkgx:fetch --pkg <packageList> [options]
 ```
 
 #### Options
 
+- `--pkg <packageNames>`: Comma-separated list of package names to fetch
 - `--output <directory>`: Directory to save the package data
 - `--timeout <milliseconds>`: Timeout in milliseconds
 - `--debug`: Enable debug mode
 - `--json`: Save as JSON instead of TypeScript
+
+#### Examples
+
+```bash
+# Fetch a single package
+bun run pkgx:fetch node
+
+# Fetch multiple packages
+bun run pkgx:fetch --pkg node,bun,python
+
+# Fetch packages with JSON output
+bun run pkgx:fetch --pkg "go.dev,python.org" --json
+
+# Fetch with custom timeout and output directory
+bun run pkgx:fetch --pkg node,bun --timeout 60000 --output ./custom-packages
+```
 
 ### pkgx:fetch-all
 
@@ -382,3 +401,5 @@ bun run pkgx:fetch-all [options]
 - `--debug`: Enable debug mode
 - `--json`: Save as JSON instead of TypeScript
 - `--github-cache-duration <milliseconds>`: Duration to cache GitHub API responses
+- `--mode <mode>`: Fetch mode: "basic" (legacy), "complete" (improved), or "scrape" (web scraping)
+- `--limit <number>`: Limit the number of packages to fetch

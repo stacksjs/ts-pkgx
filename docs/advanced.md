@@ -298,3 +298,98 @@ function loadGitHubCache(cacheDuration: number, cacheFile: string): any | null {
   }
 }
 ```
+
+## Optimized Batch Processing
+
+ts-pkgx implements optimized batch processing to efficiently handle large numbers of packages. This is particularly useful when updating the entire pantry, which contains around 1,000 packages.
+
+```typescript
+import { fetchPackageListFromGitHub } from 'ts-pkgx/utils'
+import { updatePackage } from 'ts-pkgx/tools/updatePackages'
+
+async function updatePackagesInBatches() {
+  // Get the list of all packages from GitHub
+  const packages = await fetchPackageListFromGitHub()
+  console.log(`Found ${packages.length} packages to update`)
+
+  // Process packages in batches of 20 to prevent memory issues
+  const BATCH_SIZE = 20
+  let updatedCount = 0
+  const batches = Math.ceil(packages.length / BATCH_SIZE)
+
+  for (let i = 0; i < batches; i++) {
+    const start = i * BATCH_SIZE
+    const end = Math.min(start + BATCH_SIZE, packages.length)
+    const batch = packages.slice(start, end)
+
+    console.log(`Processing batch ${i + 1}/${batches} (packages ${start + 1}-${end})`)
+
+    // Update packages in the current batch in parallel
+    const results = await Promise.all(batch.map((pkg) => updatePackage(pkg)))
+
+    // Count updated packages
+    updatedCount += results.filter(Boolean).length
+  }
+
+  console.log(`Updated ${updatedCount} out of ${packages.length} packages`)
+}
+```
+
+### Batch Size Considerations
+
+The optimal batch size depends on several factors:
+
+- **Memory Usage**: Smaller batches reduce memory consumption but may increase total processing time.
+- **API Rate Limits**: If using external APIs, batch size affects how quickly you approach rate limits.
+- **Fetching Method**: Different batch sizes are optimal for different fetch methods:
+  - GitHub API: 30-40 packages per batch is usually efficient
+  - Web scraping: 10-20 packages per batch avoids IP blocks and timeouts
+
+### Skip Unchanged Packages
+
+For better performance, ts-pkgx can check if a package file has changed before writing to disk:
+
+```typescript
+async function updatePackageEfficiently(packageName: string): Promise<boolean> {
+  // Fetch the latest package information
+  const { packageInfo } = await fetchPkgxPackage(packageName)
+
+  // Determine file path
+  const filePath = path.join(PACKAGES_DIR, `${convertDomainToFileName(packageInfo.domain)}.ts`)
+
+  // Check if file exists
+  if (fs.existsSync(filePath)) {
+    // Read existing file
+    const existingContent = fs.readFileSync(filePath, 'utf-8')
+
+    // Generate new content
+    const newContent = generatePackageTypescript(packageInfo)
+
+    // Only write if content has changed
+    if (newContent !== existingContent) {
+      fs.writeFileSync(filePath, newContent)
+      return true // Package was updated
+    }
+    return false // No changes needed
+  }
+
+  // File doesn't exist, create it
+  fs.writeFileSync(filePath, generatePackageTypescript(packageInfo))
+  return true // New package was created
+}
+```
+
+### Command Line Usage
+
+You can leverage batch processing via the CLI with options to control batch size and limits:
+
+```bash
+# Process all packages with default batch size (20)
+bun run pkgx:fetch-all
+
+# Limit to first 50 packages (useful for testing)
+bun run pkgx:fetch-all --limit 50
+
+# Increase timeout for complex packages
+bun run pkgx:fetch-all --timeout 60000
+```

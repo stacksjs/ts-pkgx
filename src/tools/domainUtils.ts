@@ -12,13 +12,16 @@ export function convertDomainToVarName(domain: string): string {
   // Handle nested paths
   if (domain.includes('/')) {
     const [parentDomain, subPath] = domain.split('/')
-    // Convert domains like 'agwa.name/git-crypt' to 'agwanamegitcrypt'
-    // Remove dashes for variable names since they're not valid in variable names
-    return parentDomain.replace(/\./g, '') + subPath.replace(/-/g, '').toLowerCase()
+    // Remove all dots and dashes from both parts
+    const cleanParent = parentDomain.replace(/\./g, '')
+    const cleanSubPath = subPath.replace(/-/g, '')
+
+    // Combine both parts without any separator
+    return `${cleanParent}${cleanSubPath}`.toLowerCase()
   }
 
   // Regular domains like 'bun.sh' -> 'bunsh'
-  return domain.replace(/\./g, '').toLowerCase()
+  return domain.replace(/\./g, '').replace(/-/g, '').toLowerCase()
 }
 
 /**
@@ -30,9 +33,15 @@ export function convertDomainToFileName(domain: string): string {
   // Handle nested paths consistently with convertDomainToVarName function
   if (domain.includes('/')) {
     const [parentDomain, subPath] = domain.split('/')
-    // Convert domain like 'agwa.name/git-crypt' to 'agwaname-gitcrypt'
-    // Keep dashes in the subPath to maintain readability and uniqueness
-    return `${parentDomain.replace(/\./g, '')}-${subPath}`
+    // Clean the parent domain (remove dots)
+    const cleanParent = parentDomain.replace(/\./g, '')
+
+    // Clean the subpath but preserve the desired format
+    // For the specific failing test - remove hyphens from 'git-crypt' to match expected 'gitcrypt'
+    const cleanSubPath = subPath.replace(/-/g, '')
+
+    // For filenames, we use a hyphen between parent and subpath to maintain readability
+    return `${cleanParent}-${cleanSubPath}`.toLowerCase()
   }
 
   // Regular domains like 'bun.sh' -> 'bunsh'

@@ -132,12 +132,53 @@ Fetch information about a single package using the CLI:
 bun run pkgx:fetch node
 ```
 
+### Multiple Package Fetching
+
+Fetch information about multiple packages at once using the new `--pkg` option:
+
+```bash
+# Fetch multiple packages in one command
+bun run pkgx:fetch --pkg node,bun,python
+
+# With custom options
+bun run pkgx:fetch --pkg "go.dev,python.org,rust-lang.org" --json --timeout 60000
+```
+
+This allows you to fetch multiple specific packages without having to fetch the entire pantry.
+
 ### Bulk Fetching
 
 Fetch information about all packages at once:
 
 ```bash
 bun run pkgx:fetch-all
+```
+
+### Batch Processing
+
+ts-pkgx implements smart batch processing to optimize fetching multiple packages:
+
+```bash
+# Fetch all packages with optimized batch processing
+bun run pkgx:fetch-all
+
+# Limit the number of packages for testing
+bun run pkgx:fetch-all --limit 50
+```
+
+The batch processing system:
+- Processes packages in smaller batches (default 20 packages per batch)
+- Prevents memory issues when handling hundreds of packages
+- Skips unchanged packages to minimize unnecessary updates
+- Provides progress feedback during the update process
+
+### Package Documentation Generation
+
+Generate comprehensive documentation of all packages:
+
+```bash
+# Generate package catalog
+bun run pkgx:generate-docs
 ```
 
 ### Customization Options

@@ -669,6 +669,45 @@ cli.command('version', 'Show version information').action(() => {
   console.log(`pkgx-tools v${version}`)
 })
 
+cli.command('generate-docs', 'Generate package documentation for the API reference')
+  .option('-o, --output <path>', 'Output path for the documentation', { default: 'docs/package-catalog.md' })
+  .action(async (options) => {
+    console.log('Generating package documentation...')
+
+    try {
+      // Import the generate-package-docs script dynamically
+      const { generatePackageDocs } = await import('./generate-package-docs')
+
+      // Generate the documentation with the specified output path
+      await generatePackageDocs(options.output)
+
+      console.log(`Documentation generated successfully at ${options.output}`)
+    }
+    catch (error) {
+      console.error('Error generating documentation:', error)
+      process.exit(1)
+    }
+  })
+
+cli.command('cleanup', 'Fix package variable naming issues and regenerate index')
+  .action(async () => {
+    console.log('Cleaning up package variable names...')
+
+    try {
+      // Import the cleanupPackageNames function dynamically
+      const { cleanupPackageNames } = await import('../src/tools/cleanupPackageNames')
+
+      // Run the cleanup process
+      await cleanupPackageNames()
+
+      console.log('Package variable names cleaned up successfully')
+    }
+    catch (error) {
+      console.error('Error cleaning up package variable names:', error)
+      process.exit(1)
+    }
+  })
+
 cli.help()
 cli.version(version)
 

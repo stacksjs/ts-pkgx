@@ -10,17 +10,57 @@ When using the CLI tool, you can specify the following options:
 # Fetch a single package
 bun run pkgx:fetch node
 
+# Fetch multiple packages with a comma-separated list
+bun run pkgx:fetch --pkg node,bun,python
+
 # With custom output directory
 bun run pkgx:fetch node --output ./data/packages
 
 # Fetch all packages
 bun run pkgx:fetch-all
 
+# Fetch with a limit on the number of packages
+bun run pkgx:fetch-all --limit 50
+
 # Set a custom timeout (milliseconds)
 bun run pkgx:fetch-all --timeout 180000 --output ./data/pkgx-packages
 
 # Enable debug mode (saves screenshots and additional logs)
 bun run pkgx:fetch node --debug
+
+# Save as JSON instead of TypeScript
+bun run pkgx:fetch --pkg nodejs.org,bun.sh --json
+
+# Use a specific fetch mode
+bun run pkgx:fetch-all --mode scrape
+```
+
+## Fetch Modes
+
+ts-pkgx supports multiple methods for fetching package information:
+
+- **complete** (default): Uses the GitHub API for package discovery with optimized batch processing
+- **scrape**: Uses web scraping to discover packages on pkgx.dev
+- **basic**: Uses the legacy implementation (not recommended for general use)
+
+```bash
+# Use web scraping mode
+bun run pkgx:fetch-all --mode scrape
+```
+
+## Batch Processing Configuration
+
+For batch processing of large numbers of packages, you can configure:
+
+```bash
+# Limit the number of packages to process (useful for testing)
+bun run pkgx:fetch-all --limit 20
+
+# Adjust retry attempts for failed fetches
+bun run pkgx:fetch-all --retries 5
+
+# Set verbose output to see more details
+bun run pkgx:fetch-all --verbose
 ```
 
 ## Package Fetch Options
