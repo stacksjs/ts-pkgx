@@ -89,7 +89,10 @@ function loadGitHubCache(cacheDuration: number): any | null {
 async function fetchAllPackagePathsByWebScraping(timeout: number): Promise<string[]> {
   console.log('Scraping package paths from pkgx.dev...')
 
-  const browser = await chromium.launch({ headless: true })
+  const browser = await chromium.launch({
+    headless: true,
+    timeout: timeout / 2, // Shorter timeout for browser launch
+  })
   const context = await browser.newContext()
   const page = await context.newPage()
 
@@ -144,8 +147,10 @@ async function fetchAndSavePackage(
     const isComplexPackage = ['go', 'rust', 'postgresql.org', 'ruby', 'bun', 'agwa.name'].some(pkg =>
       packageName.includes(pkg),
     )
-    const baseTimeout = isComplexPackage ? timeout * 2 : timeout
-    const actualTimeout = baseTimeout * retryNumber
+    // Only increase timeout by 50% for complex packages (not doubling)
+    const baseTimeout = isComplexPackage ? timeout * 1.5 : timeout
+    // Add a smaller increment when retrying (20% more per retry)
+    const actualTimeout = Math.round(baseTimeout * (1 + (retryNumber - 1) * 0.2))
 
     console.log(`Using timeout for ${packageName} (attempt ${retryNumber}): ${actualTimeout}ms`)
 
@@ -235,9 +240,9 @@ async function fetchAndSavePackage(
           console.error(`Package ${packageName} timed out after ${retryNumber} attempts`)
           return await createPlaceholderPackage(packageName, outputDir, saveAsJson)
         }
-        // Retry with increased timeout
+        // Retry with a modestly increased timeout
         console.error(`Timeout fetching ${packageName}, retrying with increased timeout...`)
-        return await fetchAndSavePackage(packageName, outputDir, timeout * 1.5, saveAsJson, retryNumber + 1, maxRetries, debug)
+        return await fetchAndSavePackage(packageName, outputDir, timeout, saveAsJson, retryNumber + 1, maxRetries, debug)
       }
 
       throw error // Re-throw for other errors to allow retries
@@ -363,10 +368,10 @@ cli
   .command('fetch [packageName]', 'Fetch package(s) from pkgx.dev')
   .option('-a, --all', 'Fetch all packages')
   .option('-m, --mode <mode>', 'Fetch mode: "basic" (legacy), "complete" (improved), or "scrape" (web scraping)', { default: 'complete' })
-  .option('-t, --timeout <timeout>', 'Timeout in milliseconds', { default: 60000 })
-  .option('-o, --output <dir>', 'Output directory', { default: 'src/packages' })
-  .option('-l, --limit <limit>', 'Limit the number of packages to fetch (0 for unlimited)', { default: 0 })
-  .option('-r, --retries <retries>', 'Number of retry attempts', { default: 3 })
+  .option('-o, --output <directory>', 'Directory to save package data', { default: 'src/packages' })
+  .option('-t, --timeout <timeout>', 'Timeout in milliseconds (default is 30 seconds)', { default: 30000 })
+  .option('-l, --limit <limit>', 'Limit the number of packages to fetch', { default: undefined })
+  .option('-r, --retries <retries>', 'Number of retry attempts for failed fetches', { default: 3 })
   .option('-v, --verbose', 'Show more detailed output')
   .option('-c, --cache-duration <minutes>', 'GitHub API cache duration in minutes', { default: 60 })
   .option('-w, --web-scraping', 'Use web scraping to fetch package list instead of GitHub API')
@@ -376,6 +381,8 @@ cli
   .example('pkgx-tools fetch --all')
   .example('pkgx-tools fetch --all --limit 50')
   .example('pkgx-tools fetch --all --mode scrape')
+  .example('pkgx-tools fetch --all --timeout 15000') // 15 seconds example
+  .example('pkgx-tools fetch node --timeout 20000') // 20 seconds example
   .example('pkgx-tools fetch --all --cache-duration 120')
   .action(async (packageName: string | undefined, options: FetchOptions) => {
     // Ensure either packageName is provided or --all flag is set
@@ -472,51 +479,137 @@ cli
         // Start time for the entire process
         const startTime = Date.now()
 
-        // Process each package
-        for (const [index, packagePath] of limitedPackages.entries()) {
-          // Calculate and display progress
-          const percentComplete = Math.round((index / limitedPackages.length) * 100)
-          const elapsedSeconds = Math.round((Date.now() - startTime) / 1000)
-          const estimatedTotalSeconds = index > 0 ? Math.round(elapsedSeconds / index * limitedPackages.length) : 0
-          const remainingSeconds = Math.max(0, estimatedTotalSeconds - elapsedSeconds)
-          const remainingMinutes = Math.floor(remainingSeconds / 60)
-          const remainingHours = Math.floor(remainingMinutes / 60)
+        // Process each package with a queue system to manage concurrency and avoid timeouts
+        const concurrencyLimit = 2 // Lower concurrency to avoid overloading resources
+        const activePromises: Promise<void>[] = []
+        const queue = [...limitedPackages]
 
-          console.log(`[${index + 1}/${limitedPackages.length}] (${percentComplete}%) Fetching package ${packagePath}... ETA: ${remainingHours}h ${remainingMinutes % 60}m ${remainingSeconds % 60}s`)
+        // Track start time for each package processing
+        const startTimes = new Map<string, number>()
 
-          // Don't skip agwa.name - we now have special handling for it
-          // Fetch and save the package with retries
-          const result = await fetchAndSavePackage(
-            packagePath,
-            outputDir,
-            options.timeout,
-            options.json || false,
-            1,
-            maxRetries,
-            options.debug,
-          )
+        // Function to process a single package
+        const processPackage = async (packagePath: string, index: number): Promise<void> => {
+          try {
+            // Record start time for this package
+            startTimes.set(packagePath, Date.now())
 
-          if (result.success) {
-            successCount++
+            // Calculate and display progress
+            const percentComplete = Math.round((index / limitedPackages.length) * 100)
+            const elapsedSeconds = Math.round((Date.now() - startTime) / 1000)
+            const estimatedTotalSeconds = index > 0 ? Math.round(elapsedSeconds / index * limitedPackages.length) : 0
+            const remainingSeconds = Math.max(0, estimatedTotalSeconds - elapsedSeconds)
+            const remainingMinutes = Math.floor(remainingSeconds / 60)
+            const remainingHours = Math.floor(remainingMinutes / 60)
+
+            console.log(`[${index + 1}/${limitedPackages.length}] (${percentComplete}%) Fetching package ${packagePath}... ETA: ${remainingHours}h ${remainingMinutes % 60}m ${remainingSeconds % 60}s`)
+
+            // Create a promise that will time out
+            const fetchWithTimeout = async () => {
+              return Promise.race([
+                fetchAndSavePackage(packagePath, outputDir, options.timeout, options.json || false, 1, maxRetries, options.debug),
+                new Promise<{ success: false }>((_, reject) => {
+                  // Set a hard timeout of 3x the specified timeout
+                  setTimeout(() => reject(new Error(`Hard timeout exceeded for ${packagePath}`)), options.timeout * 3)
+                }),
+              ])
+            }
+
+            // Fetch and save the package with timeout protection
+            const result = await fetchWithTimeout()
+              .catch((error) => {
+                console.error(`Hard timeout or error processing ${packagePath}:`, error.message || error)
+                return { success: false }
+              })
+
+            if (result.success) {
+              successCount++
+            }
+            else {
+              failCount++
+              failedPackages.push(packagePath)
+            }
           }
-          else {
+          catch (error: unknown) {
+            console.error(`Error processing ${packagePath}:`, error)
             failCount++
             failedPackages.push(packagePath)
           }
+          finally {
+            // Remove this package from the tracking
+            startTimes.delete(packagePath)
 
-          // Write progress file after each package (for resumability)
-          const progressFile = path.join(outputDir, '_progress.json')
-          fs.writeFileSync(progressFile, JSON.stringify({
-            total: limitedPackages.length,
-            completed: index + 1,
-            successful: successCount,
-            failed: failCount,
-            failedPackages,
-            updatedAliases: PACKAGE_ALIASES,
-            lastUpdated: new Date().toISOString(),
-            fetchMode: 'web-scraping',
-            outputFormat: options.json ? 'json' : 'typescript',
-          }, null, 2))
+            // Write progress file after each package (for resumability)
+            const progressFile = path.join(outputDir, '_progress.json')
+            fs.writeFileSync(progressFile, JSON.stringify({
+              total: limitedPackages.length,
+              completed: index + 1,
+              successful: successCount,
+              failed: failCount,
+              failedPackages,
+              updatedAliases: PACKAGE_ALIASES,
+              lastUpdated: new Date().toISOString(),
+              fetchMode: 'web-scraping',
+              outputFormat: options.json ? 'json' : 'typescript',
+            }, null, 2))
+          }
+        }
+
+        // Watchdog system to break out of stuck packages
+        const watchdogInterval = 10000 // Check every 10 seconds
+        const watchdog = setInterval(() => {
+          // Check for packages that have been processing too long
+          const now = Date.now()
+          for (const [pkg, startTime] of startTimes.entries()) {
+            const processingTime = now - startTime
+            // If a package has been processing for longer than 2x the timeout
+            if (processingTime > options.timeout * 2) {
+              console.error(`Watchdog: Package ${pkg} has been processing for ${Math.round(processingTime / 1000)}s, which exceeds safe limits. It may be stuck.`)
+              // We'll let the Promise race timeout mechanism handle this
+            }
+          }
+        }, watchdogInterval)
+
+        try {
+          // Process packages in a queue with concurrency limit
+          let index = 0
+          while (queue.length > 0 || activePromises.length > 0) {
+            // Fill the queue up to the concurrency limit
+            while (activePromises.length < concurrencyLimit && queue.length > 0) {
+              const packagePath = queue.shift()!
+              const packageIndex = index++
+
+              // Process the package and manage the activePromises array
+              const promise = processPackage(packagePath, packageIndex)
+                .catch((error: unknown) => {
+                  console.error(`Error processing ${packagePath}:`, error)
+                  failCount++
+                  failedPackages.push(packagePath)
+                })
+                .finally(() => {
+                  // Remove this promise from the active list when done
+                  const promiseIndex = activePromises.indexOf(promise)
+                  if (promiseIndex !== -1) {
+                    activePromises.splice(promiseIndex, 1)
+                  }
+                })
+
+              activePromises.push(promise)
+
+              // Small delay between starting new processes to avoid overwhelming resources
+              await new Promise(resolve => setTimeout(resolve, 500))
+            }
+
+            // Wait for at least one promise to resolve before continuing the loop
+            if (activePromises.length > 0) {
+              await Promise.race(activePromises)
+              // Add a small delay to give other promises a chance to update their state
+              await new Promise(resolve => setTimeout(resolve, 100))
+            }
+          }
+        }
+        finally {
+          // Clean up the watchdog
+          clearInterval(watchdog)
         }
 
         // Calculate total time
@@ -589,97 +682,142 @@ cli
         // Count successful and failed packages
         let successCount = 0
         let failCount = 0
-
-        // List of packages that need retries
         const failedPackages: string[] = []
 
         // Start time for the entire process
         const startTime = Date.now()
 
         // Process each package with a queue system to manage concurrency and avoid timeouts
-        const concurrencyLimit = 3 // Process up to 3 packages at a time
+        const concurrencyLimit = 2 // Lower concurrency to avoid overloading resources
         const activePromises: Promise<void>[] = []
         const queue = [...limitedPackages]
 
+        // Track start time for each package processing
+        const startTimes = new Map<string, number>()
+
         // Function to process a single package
-        const processPackage = async (packagePath: string, index: number) => {
-          // Calculate and display progress
-          const percentComplete = Math.round((index / limitedPackages.length) * 100)
-          const elapsedSeconds = Math.round((Date.now() - startTime) / 1000)
-          const estimatedTotalSeconds = index > 0 ? Math.round(elapsedSeconds / index * limitedPackages.length) : 0
-          const remainingSeconds = Math.max(0, estimatedTotalSeconds - elapsedSeconds)
-          const remainingMinutes = Math.floor(remainingSeconds / 60)
-          const remainingHours = Math.floor(remainingMinutes / 60)
+        const processPackage = async (packagePath: string, index: number): Promise<void> => {
+          try {
+            // Record start time for this package
+            startTimes.set(packagePath, Date.now())
 
-          console.log(`[${index + 1}/${limitedPackages.length}] (${percentComplete}%) Fetching package ${packagePath}... ETA: ${remainingHours}h ${remainingMinutes % 60}m ${remainingSeconds % 60}s`)
+            // Calculate and display progress
+            const percentComplete = Math.round((index / limitedPackages.length) * 100)
+            const elapsedSeconds = Math.round((Date.now() - startTime) / 1000)
+            const estimatedTotalSeconds = index > 0 ? Math.round(elapsedSeconds / index * limitedPackages.length) : 0
+            const remainingSeconds = Math.max(0, estimatedTotalSeconds - elapsedSeconds)
+            const remainingMinutes = Math.floor(remainingSeconds / 60)
+            const remainingHours = Math.floor(remainingMinutes / 60)
 
-          // Fetch and save the package
-          const result = await fetchAndSavePackage(
-            packagePath,
-            outputDir,
-            options.timeout,
-            options.json || false,
-            1,
-            maxRetries,
-            options.debug,
-          )
+            console.log(`[${index + 1}/${limitedPackages.length}] (${percentComplete}%) Fetching package ${packagePath}... ETA: ${remainingHours}h ${remainingMinutes % 60}m ${remainingSeconds % 60}s`)
 
-          if (result.success) {
-            successCount++
+            // Create a promise that will time out
+            const fetchWithTimeout = async () => {
+              return Promise.race([
+                fetchAndSavePackage(packagePath, outputDir, options.timeout, options.json || false, 1, maxRetries, options.debug),
+                new Promise<{ success: false }>((_, reject) => {
+                  // Set a hard timeout of 3x the specified timeout
+                  setTimeout(() => reject(new Error(`Hard timeout exceeded for ${packagePath}`)), options.timeout * 3)
+                }),
+              ])
+            }
+
+            // Fetch and save the package with timeout protection
+            const result = await fetchWithTimeout()
+              .catch((error) => {
+                console.error(`Hard timeout or error processing ${packagePath}:`, error.message || error)
+                return { success: false }
+              })
+
+            if (result.success) {
+              successCount++
+            }
+            else {
+              failCount++
+              failedPackages.push(packagePath)
+            }
           }
-          else {
+          catch (error: unknown) {
+            console.error(`Error processing ${packagePath}:`, error)
             failCount++
             failedPackages.push(packagePath)
           }
+          finally {
+            // Remove this package from the tracking
+            startTimes.delete(packagePath)
 
-          // Write progress file after each package (for resumability)
-          const progressFile = path.join(outputDir, '_progress.json')
-          fs.writeFileSync(progressFile, JSON.stringify({
-            total: limitedPackages.length,
-            completed: index + 1,
-            successful: successCount,
-            failed: failCount,
-            failedPackages,
-            updatedAliases: PACKAGE_ALIASES,
-            lastUpdated: new Date().toISOString(),
-            fetchMode: 'github-api',
-            outputFormat: options.json ? 'json' : 'typescript',
-          }, null, 2))
+            // Write progress file after each package (for resumability)
+            const progressFile = path.join(outputDir, '_progress.json')
+            fs.writeFileSync(progressFile, JSON.stringify({
+              total: limitedPackages.length,
+              completed: index + 1,
+              successful: successCount,
+              failed: failCount,
+              failedPackages,
+              updatedAliases: PACKAGE_ALIASES,
+              lastUpdated: new Date().toISOString(),
+              fetchMode: 'github-api',
+              outputFormat: options.json ? 'json' : 'typescript',
+            }, null, 2))
+          }
         }
 
-        // Process packages in a limited concurrency queue
-        let index = 0
-        while (queue.length > 0 || activePromises.length > 0) {
-          // Fill the queue up to the concurrency limit
-          while (activePromises.length < concurrencyLimit && queue.length > 0) {
-            const packagePath = queue.shift()!
-            const packageIndex = index++
-
-            // Process the package and manage the activePromises array
-            const promise = processPackage(packagePath, packageIndex)
-              .catch((error) => {
-                console.error(`Error processing ${packagePath}:`, error)
-                failCount++
-                failedPackages.push(packagePath)
-              })
-              .finally(() => {
-                // Remove this promise from the active list when done
-                const promiseIndex = activePromises.indexOf(promise)
-                if (promiseIndex !== -1) {
-                  activePromises.splice(promiseIndex, 1)
-                }
-              })
-
-            activePromises.push(promise)
-
-            // Small delay between starting new processes to avoid overwhelming resources
-            await new Promise(resolve => setTimeout(resolve, 500))
+        // Watchdog system to break out of stuck packages
+        const watchdogInterval = 10000 // Check every 10 seconds
+        const watchdog = setInterval(() => {
+          // Check for packages that have been processing too long
+          const now = Date.now()
+          for (const [pkg, startTime] of startTimes.entries()) {
+            const processingTime = now - startTime
+            // If a package has been processing for longer than 2x the timeout
+            if (processingTime > options.timeout * 2) {
+              console.error(`Watchdog: Package ${pkg} has been processing for ${Math.round(processingTime / 1000)}s, which exceeds safe limits. It may be stuck.`)
+              // We'll let the Promise race timeout mechanism handle this
+            }
           }
+        }, watchdogInterval)
 
-          // Wait for at least one promise to resolve before continuing the loop
-          if (activePromises.length > 0) {
-            await Promise.race(activePromises)
+        try {
+          // Process packages in a queue with concurrency limit
+          let index = 0
+          while (queue.length > 0 || activePromises.length > 0) {
+            // Fill the queue up to the concurrency limit
+            while (activePromises.length < concurrencyLimit && queue.length > 0) {
+              const packagePath = queue.shift()!
+              const packageIndex = index++
+
+              // Process the package and manage the activePromises array
+              const promise = processPackage(packagePath, packageIndex)
+                .catch((error: unknown) => {
+                  console.error(`Error processing ${packagePath}:`, error)
+                  failCount++
+                  failedPackages.push(packagePath)
+                })
+                .finally(() => {
+                  // Remove this promise from the active list when done
+                  const promiseIndex = activePromises.indexOf(promise)
+                  if (promiseIndex !== -1) {
+                    activePromises.splice(promiseIndex, 1)
+                  }
+                })
+
+              activePromises.push(promise)
+
+              // Small delay between starting new processes to avoid overwhelming resources
+              await new Promise(resolve => setTimeout(resolve, 500))
+            }
+
+            // Wait for at least one promise to resolve before continuing the loop
+            if (activePromises.length > 0) {
+              await Promise.race(activePromises)
+              // Add a small delay to give other promises a chance to update their state
+              await new Promise(resolve => setTimeout(resolve, 100))
+            }
           }
+        }
+        finally {
+          // Clean up the watchdog
+          clearInterval(watchdog)
         }
 
         // Calculate total time

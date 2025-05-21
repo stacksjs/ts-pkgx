@@ -1,9 +1,32 @@
 {
   "total": 834,
-  "completed": 3,
-  "successful": 3,
-  "failed": 0,
-  "failedPackages": [],
+  "completed": 91,
+  "successful": 69,
+  "failed": 22,
+  "failedPackages": [
+    "akuity.io",
+    "alsa-project.org",
+    "android.com",
+    "aomedia.googlesource.com",
+    "apollographql.com",
+    "apple.com",
+    "aria2.github.io",
+    "arkade.dev",
+    "assimp.org",
+    "ast-grep.github.io",
+    "biomejs.dev",
+    "bitcoin.org",
+    "browser-use.com",
+    "brxken128.github.io",
+    "c-ares.org",
+    "caddyserver.com",
+    "ceph.com",
+    "ceres-solver.org",
+    "charm.sh",
+    "checkov.io",
+    "circleci.com",
+    "cli.github.com"
+  ],
   "updatedAliases": {
     "node": "nodejs.org",
     "python": "python.org",
@@ -14,8 +37,16 @@
     "perl": "perl.org",
     "deno": "deno.land",
     "bun": "bun.sh",
-    "auto-gpt": "agpt.co"
+    "auto-gpt": "agpt.co",
+    "ng": "angular.dev",
+    "ack": "beyondgrep.com",
+    "bw": "bitwarden.com",
+    "pack": "buildpacks.io",
+    "cairo-trace": "cairographics.org",
+    "cstool": "capstone-engine.org",
+    "kubectl-cnpg": "cloudnative-pg.io"
   },
-  "lastUpdated": "2025-05-20T23:50:13.997Z",
-  "fetchMode": "github-api"
+  "lastUpdated": "2025-05-21T01:41:07.844Z",
+  "fetchMode": "github-api",
+  "outputFormat": "typescript"
 }

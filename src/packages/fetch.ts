@@ -48,12 +48,18 @@ export async function fetchPkgxPackage(
     packageName = PACKAGE_ALIASES[packageName]
   }
 
-  const browser = await chromium.launch({ headless: true })
+  // Set a maximum time for browser operations
+  const browserTimeout = options.timeout || 30000
+  const debugMode = options.debug || false
+
+  const browser = await chromium.launch({
+    headless: true,
+    timeout: browserTimeout / 2, // Shorter timeout for browser launch
+  })
   const context = await browser.newContext()
   const page = await context.newPage()
 
-  const timeout = options.timeout || 60000 // Increase default timeout
-  const debugMode = options.debug || false
+  const timeout = browserTimeout
 
   try {
     // Use domain-style format for the URL - special handling for nested paths
@@ -370,11 +376,15 @@ async function fetchVersionsFromGitHub(packageName: string): Promise<string[]> {
 export async function fetchAndSaveAllPackages(
   options: PackageFetchOptions = {},
 ): Promise<string[]> {
-  const browser = await chromium.launch({ headless: true })
+  const timeout = options.timeout || 30000
+
+  // Set timeout for browser operations
+  const browser = await chromium.launch({
+    headless: true,
+    timeout: timeout / 2, // Shorter timeout for browser launch
+  })
   const context = await browser.newContext()
   const page = await context.newPage()
-
-  const timeout = options.timeout || 120000
 
   try {
     console.error('Navigating to pkgx.dev/pkgs...')
@@ -420,7 +430,7 @@ export async function fetchAndSaveAllPackages(
         console.error(`[${index + 1}/${packageNames.length}] Fetching package ${packageName}...`)
 
         const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage(packageName, {
-          timeout: options.timeout || 60000,
+          timeout: options.timeout || 30000,
         })
 
         // Save to file using the full domain name
@@ -564,15 +574,15 @@ export async function fetchAndSavePackage(
     if (packageName === 'agwa.name') {
       console.error(`Using specialized handling for agwa.name...`)
       // Handle agwa.name/git-crypt directly rather than the base domain
-      return await fetchAndSavePackage('agwa.name/git-crypt', outputDir, timeout * 2, saveAsJson, 1, maxRetries, debug)
+      return await fetchAndSavePackage('agwa.name/git-crypt', outputDir, timeout, saveAsJson, 1, maxRetries, debug)
     }
 
     // Adjust timeout based on the package difficulty or retry attempt
     const isComplexPackage = ['go', 'rust', 'postgresql.org', 'ruby', 'bun'].some(pkg =>
       packageName.includes(pkg),
     )
-    const baseTimeout = isComplexPackage ? timeout * 2 : timeout
-    const actualTimeout = baseTimeout * retryNumber
+    const baseTimeout = isComplexPackage ? timeout * 1.5 : timeout
+    const actualTimeout = Math.round(baseTimeout * (1 + (retryNumber - 1) * 0.2))
 
     console.error(`Using timeout for ${packageName} (attempt ${retryNumber}): ${actualTimeout}ms`)
 
@@ -648,7 +658,10 @@ export async function fetchAndSavePackage(
           if (packageName.startsWith('agwa.name')) {
             // Try fetching with a direct URL approach for agwa.name
             try {
-              const browser = await chromium.launch({ headless: true })
+              const browser = await chromium.launch({
+                headless: true,
+                timeout: actualTimeout / 2, // Shorter timeout for browser launch
+              })
               const context = await browser.newContext()
               const page = await context.newPage()
 
@@ -809,7 +822,7 @@ export async function fetchAndSavePackage(
     // Short pause before retrying
     await new Promise(resolve => setTimeout(resolve, 1000 * retryNumber)) // Increase wait time for each retry
 
-    // Retry with increased timeout
+    // Retry with same base timeout (actual timeout will still increase due to retry counter)
     return fetchAndSavePackage(packageName, outputDir, timeout, saveAsJson, retryNumber + 1, maxRetries, debug)
   }
 }
