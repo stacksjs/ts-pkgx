@@ -83,6 +83,36 @@ console.log(nodejsorgPackage.versions) // ['20.0.0', '18.0.0', ...]
 console.log(nodejsorgPackage.domain) // 'nodejs.org'
 ```
 
+### Understanding Package Variable Names
+
+Package variable names follow specific conventions to ensure JavaScript/TypeScript compatibility:
+
+1. Dots are removed from domain names:
+   ```typescript
+   // For domain 'bun.sh'
+   import { bunshPackage } from 'ts-pkgx'
+   ```
+
+2. Hyphens are removed from variable names (since hyphens aren't valid in JavaScript identifiers):
+   ```typescript
+   // For domain 'ast-grep.github.io'
+   import { astgrepgithubioPackage } from 'ts-pkgx'
+   ```
+
+3. Nested paths are concatenated:
+   ```typescript
+   // For path 'agwa.name/git-crypt'
+   import { agwanamegitcryptPackage } from 'ts-pkgx'
+   ```
+
+If you encounter type errors or issues with package names, you can run the cleanup command to ensure consistent naming:
+
+```bash
+bun run pkgx:cleanup
+```
+
+For a detailed explanation of the naming conventions and troubleshooting tips, see our [Maintenance & Troubleshooting Guide](./maintenance.md).
+
 ## Advanced Usage
 
 For advanced usage scenarios, see:
@@ -95,4 +125,4 @@ For advanced usage scenarios, see:
 - [Custom Output Formats](./advanced/output-formats.md)
 - [Error Handling](./advanced/error-handling.md)
 - [Optimized Batch Processing](./advanced/batch-processing.md)
-- [Maintenance & Troubleshooting](./advanced/maintenance.md)
+- [Maintenance & Troubleshooting](./maintenance.md)

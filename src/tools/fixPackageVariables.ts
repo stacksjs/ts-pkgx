@@ -9,7 +9,7 @@ import process from 'node:process'
 import { convertDomainToVarName } from './domainUtils'
 
 // The packages directory path
-const PACKAGES_DIR = path.join(process.cwd(), 'src', 'packages')
+export const PACKAGES_DIR: string = path.join(process.cwd(), 'src', 'packages')
 
 /**
  * Removes hyphens from package variable/interface names
@@ -42,13 +42,9 @@ async function fixPackageVariables(): Promise<void> {
     const exportConstPattern = /export\s+const\s+([\w-]+)Package/g
     const interfacePattern = /export\s+interface\s+([\w-]+)Package/g
 
-    // Track if changes were made
-    let hasChanges = false
-
     // Find and replace incorrect variable names in export statements
     let newContent = content.replace(exportConstPattern, (match, varName) => {
       if (varName.includes('-') || varName !== expectedVarName) {
-        hasChanges = true
         return `export const ${expectedPackageName}`
       }
       return match
@@ -57,7 +53,6 @@ async function fixPackageVariables(): Promise<void> {
     // Find and replace incorrect interface names
     newContent = newContent.replace(interfacePattern, (match, varName) => {
       if (varName.includes('-') || varName !== expectedVarName) {
-        hasChanges = true
         return `export interface ${expectedPackageName}`
       }
       return match

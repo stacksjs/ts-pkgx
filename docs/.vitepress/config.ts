@@ -80,7 +80,7 @@ const sidebar = [
       { text: 'Error Handling', link: '/advanced/error-handling' },
       { text: 'GitHub API Rate Limits', link: '/advanced/rate-limits' },
       { text: 'Optimized Batch Processing', link: '/advanced/batch-processing' },
-      { text: 'Maintenance & Troubleshooting', link: '/advanced/maintenance' },
+      { text: 'Maintenance & Troubleshooting', link: '/maintenance' },
     ],
   },
   {
