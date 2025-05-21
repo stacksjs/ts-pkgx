@@ -1,3 +1,4 @@
+import type { Browser } from 'playwright'
 import type { PackageFetchOptions, PkgxPackage } from '../types'
 import fs from 'node:fs'
 import path from 'node:path'
@@ -20,6 +21,25 @@ export const PACKAGE_ALIASES: Record<string, string> = {
   bun: 'bun.sh',
 }
 
+// Global browser instance to be shared across fetches
+let sharedBrowser: Browser | null = null
+
+/**
+ * Ensures all browser resources are properly closed
+ */
+export async function cleanupBrowserResources(): Promise<void> {
+  if (sharedBrowser) {
+    try {
+      console.error('Cleaning up browser resources...')
+      await sharedBrowser.close()
+      sharedBrowser = null
+    }
+    catch (error) {
+      console.error('Error closing browser:', error)
+    }
+  }
+}
+
 /**
  * Fetches package information from pkgx.dev using Playwright
  * @param packageName The name of the package to fetch
@@ -33,6 +53,7 @@ export async function fetchPkgxPackage(
   const originalName = packageName
   let fullDomainName = packageName
   let browser = null
+  let page = null
 
   // Special handling for known patterns
   // For paths like 'agwa.name/git-crypt', treat 'git-crypt' as the name
@@ -54,30 +75,30 @@ export async function fetchPkgxPackage(
     const browserTimeout = options.timeout || 30000
     const debugMode = options.debug || false
 
-    // Try to launch the browser with retries
-    let retryCount = 0
-    const maxLaunchRetries = 3
+    // Try to use shared browser instance if available
+    if (sharedBrowser) {
+      browser = sharedBrowser
+    }
+    else {
+      // Launch a new browser with retries
+      let retryCount = 0
+      const maxLaunchRetries = 3
 
-    while (retryCount < maxLaunchRetries) {
-      try {
-        browser = await chromium.launch({
-          headless: true,
-          timeout: browserTimeout / 2, // Shorter timeout for browser launch
-        })
-        break // Success, break out of retry loop
-      }
-      catch (launchError) {
-        retryCount++
-
-        if (retryCount >= maxLaunchRetries) {
-          console.error(`Failed to launch browser after ${maxLaunchRetries} attempts:`, launchError)
-          // Create a minimal placeholder instead of failing completely
-          return createMinimalPackageInfo(packageName, originalName, fullDomainName)
+      while (retryCount < maxLaunchRetries) {
+        try {
+          browser = await chromium.launch({ headless: true })
+          sharedBrowser = browser
+          break
         }
-
-        console.error(`Browser launch attempt ${retryCount} failed, retrying...`)
-        // Wait before retrying
-        await new Promise(resolve => setTimeout(resolve, 1000 * retryCount))
+        catch (error) {
+          retryCount++
+          console.error(`Browser launch attempt ${retryCount} failed:`, error)
+          if (retryCount >= maxLaunchRetries) {
+            throw new Error(`Failed to launch browser after ${maxLaunchRetries} attempts`)
+          }
+          // Wait before retrying
+          await new Promise(resolve => setTimeout(resolve, 1000))
+        }
       }
     }
 
@@ -88,7 +109,7 @@ export async function fetchPkgxPackage(
     }
 
     const context = await browser.newContext()
-    const page = await context.newPage()
+    page = await context.newPage()
 
     const timeout = browserTimeout
 
@@ -344,13 +365,13 @@ export async function fetchPkgxPackage(
       return { packageInfo, originalName, fullDomainName }
     }
     finally {
-      // Make sure to close the browser regardless of what happens
-      if (browser) {
+      // Close the page but keep the browser for reuse
+      if (page) {
         try {
-          await browser.close()
+          await page.close()
         }
-        catch (err) {
-          console.error(`Error closing browser for ${packageName}:`, err)
+        catch (pageError) {
+          console.error(`Error closing page for ${packageName}:`, pageError)
         }
       }
     }
@@ -590,6 +611,10 @@ export async function fetchAndSaveAllPackages(
     }
     throw error
   }
+  finally {
+    // Ensure browser resources are cleaned up
+    await cleanupBrowserResources()
+  }
 }
 
 /**
@@ -616,14 +641,17 @@ function generateTypeScriptContent(packageInfo: PkgxPackage, domainName: string)
   // Convert domain to camelCase for variable name
   const varName = `${getDomainAsTypescriptName(domainName)}Package`
 
+  // Ensure the variable name doesn't contain hyphens (which are invalid in JavaScript)
+  const safeVarName = varName.replace(/-/g, '')
+
   // Create the TypeScript content with proper imports and exports
   return `import type { PkgxPackage } from '../types'
 
 /**
- * ${varName} information from pkgx.dev
+ * ${safeVarName} information from pkgx.dev
  * Generated from pkgx.dev data
  */
-export const ${varName}: PkgxPackage = ${JSON.stringify(packageInfo, null, 2)}
+export const ${safeVarName}: PkgxPackage = ${JSON.stringify(packageInfo, null, 2)}
 `
 }
 

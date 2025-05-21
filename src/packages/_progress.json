@@ -16,7 +16,7 @@
     "bun": "bun.sh",
     "auto-gpt": "agpt.co"
   },
-  "lastUpdated": "2025-05-21T02:46:05.057Z",
+  "lastUpdated": "2025-05-21T03:42:43.404Z",
   "fetchMode": "github-api",
   "outputFormat": "typescript"
 }

@@ -160,13 +160,40 @@ export async function fetchPackageListFromGitHub(limit: number = 0): Promise<str
   // Check cache first
   const cachedPackages = getGitHubPackageCache()
   if (cachedPackages) {
+    console.error('Using cached package list, no GitHub API calls needed')
     return limit > 0 ? cachedPackages.slice(0, limit) : cachedPackages
   }
 
   try {
     if (!shouldProceedWithGitHubRequest()) {
-      throw new Error('GitHub API rate limit preventing request - please try again later')
+      console.error('GitHub API rate limit preventing request - using cached data or hardcoded list')
+
+      // If we hit rate limits, return a minimal hardcoded list rather than failing completely
+      const hardcodedFallbackPackages = [
+        'node',
+        'bun.sh',
+        'python.org',
+        'go.dev',
+        'rust-lang.org',
+        'deno.land',
+        'ruby-lang.org',
+        'php.net',
+        'dart.dev',
+        'postgresql.org',
+        'mozilla.org',
+        'mysql.com',
+        'nginx.org',
+        'redis.io',
+        'mongodb.com',
+      ]
+
+      // If we have to use the fallback, still cache it to avoid further API calls
+      saveGitHubPackageCache(hardcodedFallbackPackages)
+
+      return limit > 0 ? hardcodedFallbackPackages.slice(0, limit) : hardcodedFallbackPackages
     }
+
+    console.error('No valid cache found, making GitHub API requests')
 
     // Fetch base projects
     const response = await fetch('https://api.github.com/repos/pkgxdev/pantry/contents/projects', {
@@ -275,6 +302,7 @@ export async function fetchPackageListFromGitHub(limit: number = 0): Promise<str
 
     // Cache the results for future use
     saveGitHubPackageCache(projectPaths)
+    console.error(`Cached ${projectPaths.length} packages for future use (valid for ${CACHE_DURATION_MS / 60000} minutes)`)
 
     // Apply limit if specified
     const finalProjects = limit > 0 ? projectPaths.slice(0, limit) : projectPaths
