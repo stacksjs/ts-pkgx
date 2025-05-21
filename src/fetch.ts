@@ -1,10 +1,10 @@
 import type { Browser } from 'playwright'
-import type { PackageFetchOptions, PkgxPackage } from '../types'
+import type { FetchProjectsOptions, GitHubContent, PackageFetchOptions, PkgxPackage, ProjectFolder } from './types'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import { chromium } from 'playwright'
-import { saveRateLimitInfo, shouldProceedWithGitHubRequest } from '../utils'
+import { saveRateLimitInfo, shouldProceedWithGitHubRequest } from './utils'
 
 /**
  * Map of common package aliases to their full domain names
@@ -37,6 +37,48 @@ export async function cleanupBrowserResources(): Promise<void> {
     catch (error) {
       console.error('Error closing browser:', error)
     }
+  }
+}
+
+/**
+ * Fetches project folder names from the pkgxdev pantry repository using GitHub API
+ * @param options Optional configuration
+ * @returns Promise resolving to an array of project folders
+ */
+export async function fetchPkgxProjects(options: FetchProjectsOptions = {}): Promise<ProjectFolder[]> {
+  const apiUrl = options.apiUrl || 'https://api.github.com/repos/pkgxdev/pantry/contents/projects'
+
+  try {
+    // eslint-disable-next-line no-console
+    console.log(`Fetching projects from GitHub API: ${apiUrl}`)
+
+    const response = await fetch(apiUrl, {
+      headers: {
+        // Using GitHub API without authentication has a lower rate limit
+        // If you hit rate limits, you'll need to add an auth token
+        Accept: 'application/vnd.github.v3+json',
+      },
+    })
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch from GitHub API: ${response.statusText}`)
+    }
+
+    const contents = await response.json() as GitHubContent[]
+
+    // Filter to only include directories
+    const projects = contents
+      .filter(item => item.type === 'dir')
+      .map(item => ({
+        name: item.name,
+        url: item.html_url,
+      }))
+
+    return projects
+  }
+  catch (error) {
+    console.error('Error fetching projects from GitHub API:', error)
+    throw error
   }
 }
 

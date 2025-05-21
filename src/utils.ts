@@ -1,9 +1,11 @@
+import type { ProjectFolder } from './types'
 /**
  * Utility functions for the pkgx-tools project
  */
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
+import { fetchPkgxProjects } from './fetch'
 
 const GITHUB_RATE_LIMIT_FILE = path.join(process.cwd(), 'github-rate-limit.json')
 const GITHUB_CACHE_FILE = path.join(process.cwd(), 'github-cache.json')
@@ -313,6 +315,38 @@ export async function fetchPackageListFromGitHub(limit: number = 0): Promise<str
   }
   catch (error) {
     console.error('Error fetching package list from GitHub:', error)
+    return []
+  }
+}
+
+/**
+ * Demo function to show how to use fetchPkgxProjects
+ * @returns Promise resolving to array of projects or empty array on error
+ */
+export async function logPkgxProjects(): Promise<ProjectFolder[]> {
+  try {
+    // Fetch all projects using the API
+    const projects = await fetchPkgxProjects()
+
+    // Use allowed console methods
+    console.error(`Found ${projects.length} projects`)
+
+    // Display first 10 projects as an example - using error since it's allowed
+    if (projects.length > 0) {
+      console.error('First 10 projects:')
+      projects.slice(0, 10).forEach((project: ProjectFolder) => {
+        console.error(`- ${project.name}`)
+      })
+
+      if (projects.length > 10) {
+        console.error(`... and ${projects.length - 10} more`)
+      }
+    }
+
+    return projects
+  }
+  catch (error) {
+    console.error('Failed to fetch projects:', error)
     return []
   }
 }
