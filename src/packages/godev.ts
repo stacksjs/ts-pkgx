@@ -87,10 +87,6 @@ export const godevPackage: PkgxPackage = {
     "1.18.10",
     "1.17.13",
     "1.16.15"
-  ],
-  "fullPath": "go.dev",
-  "aliases": [
-    "go"
   ]
 }
 
@@ -177,9 +173,5 @@ export interface GodevPackage {
     "1.18.10",
     "1.17.13",
     "1.16.15"
-  ];
-  fullPath: "go.dev";
-  aliases: readonly [
-    "go"
   ];
 }

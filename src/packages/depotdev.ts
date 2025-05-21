@@ -54,8 +54,7 @@ export const depotdevPackage: PkgxPackage = {
     "2.71.0",
     "2.70.0",
     "2.68.1"
-  ],
-  "fullPath": "depot.dev"
+  ]
 }
 
 export interface DepotdevPackage {
@@ -109,5 +108,4 @@ export interface DepotdevPackage {
     "2.70.0",
     "2.68.1"
   ];
-  fullPath: "depot.dev";
 }

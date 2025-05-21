@@ -56,8 +56,7 @@ export const goreleasercomPackage: PkgxPackage = {
     "1.21.1",
     "1.21.0",
     "1.20.0"
-  ],
-  "fullPath": "goreleaser.com"
+  ]
 }
 
 export interface GoreleasercomPackage {
@@ -113,5 +112,4 @@ export interface GoreleasercomPackage {
     "1.21.0",
     "1.20.0"
   ];
-  fullPath: "goreleaser.com";
 }

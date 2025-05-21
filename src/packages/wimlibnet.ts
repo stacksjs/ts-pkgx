@@ -41,8 +41,7 @@ export const wimlibnetPackage: PkgxPackage = {
     "1.14.4",
     "1.14.3",
     "1.14.1"
-  ],
-  "fullPath": "wimlib.net"
+  ]
 }
 
 export interface WimlibnetPackage {
@@ -83,5 +82,4 @@ export interface WimlibnetPackage {
     "1.14.3",
     "1.14.1"
   ];
-  fullPath: "wimlib.net";
 }

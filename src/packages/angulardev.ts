@@ -28,6 +28,7 @@ export const angulardevPackage: PkgxPackage = {
     "19.2.4",
     "19.2.3",
     "19.2.2",
+    "19.2.13",
     "19.2.12",
     "19.2.11",
     "19.2.10",
@@ -121,10 +122,6 @@ export const angulardevPackage: PkgxPackage = {
     "16.2.15",
     "16.2.14",
     "15.2.11"
-  ],
-  "fullPath": "angular.dev",
-  "aliases": [
-    "ng"
   ]
 }
 
@@ -152,6 +149,7 @@ export interface AngulardevPackage {
     "19.2.4",
     "19.2.3",
     "19.2.2",
+    "19.2.13",
     "19.2.12",
     "19.2.11",
     "19.2.10",
@@ -245,9 +243,5 @@ export interface AngulardevPackage {
     "16.2.15",
     "16.2.14",
     "15.2.11"
-  ];
-  fullPath: "angular.dev";
-  aliases: readonly [
-    "ng"
   ];
 }

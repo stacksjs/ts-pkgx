@@ -24,8 +24,7 @@ export const ctagsioPackage: PkgxPackage = {
   ],
   "versions": [
     "6.1.0"
-  ],
-  "fullPath": "ctags.io"
+  ]
 }
 
 export interface CtagsioPackage {
@@ -49,5 +48,4 @@ export interface CtagsioPackage {
   versions: readonly [
     "6.1.0"
   ];
-  fullPath: "ctags.io";
 }

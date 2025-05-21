@@ -15,8 +15,7 @@ export const thrysoeedkPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "thrysoee.dk"
+  "versions": []
 }
 
 export interface ThrysoeedkPackage {
@@ -31,5 +30,4 @@ export interface ThrysoeedkPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "thrysoee.dk";
 }

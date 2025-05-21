@@ -61,10 +61,6 @@ export const protobufdevPackage: PkgxPackage = {
     "23.0.0",
     "22.5.0",
     "21.12.0"
-  ],
-  "fullPath": "protobuf.dev",
-  "aliases": [
-    "protocol buffers"
   ]
 }
 
@@ -125,9 +121,5 @@ export interface ProtobufdevPackage {
     "23.0.0",
     "22.5.0",
     "21.12.0"
-  ];
-  fullPath: "protobuf.dev";
-  aliases: readonly [
-    "protocol buffers"
   ];
 }

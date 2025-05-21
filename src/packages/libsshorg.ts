@@ -26,8 +26,7 @@ export const libsshorgPackage: PkgxPackage = {
     "0.10.6",
     "0.10.5",
     "0.10.4"
-  ],
-  "fullPath": "libssh.org"
+  ]
 }
 
 export interface LibsshorgPackage {
@@ -53,5 +52,4 @@ export interface LibsshorgPackage {
     "0.10.5",
     "0.10.4"
   ];
-  fullPath: "libssh.org";
 }

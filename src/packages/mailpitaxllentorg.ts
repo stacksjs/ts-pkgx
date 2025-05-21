@@ -82,8 +82,7 @@ export const mailpitaxllentorgPackage: PkgxPackage = {
     "1.10.2",
     "1.10.1",
     "1.10.0"
-  ],
-  "fullPath": "mailpit.axllent.org"
+  ]
 }
 
 export interface MailpitaxllentorgPackage {
@@ -165,5 +164,4 @@ export interface MailpitaxllentorgPackage {
     "1.10.1",
     "1.10.0"
   ];
-  fullPath: "mailpit.axllent.org";
 }

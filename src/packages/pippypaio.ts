@@ -51,8 +51,7 @@ export const pippypaioPackage: PkgxPackage = {
     "20.3.4",
     "19.3.1",
     "18.1.0"
-  ],
-  "fullPath": "pip.pypa.io"
+  ]
 }
 
 export interface PippypaioPackage {
@@ -103,5 +102,4 @@ export interface PippypaioPackage {
     "19.3.1",
     "18.1.0"
   ];
-  fullPath: "pip.pypa.io";
 }

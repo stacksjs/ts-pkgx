@@ -103,8 +103,7 @@ export const qtioPackage: PkgxPackage = {
   ],
   "versions": [
     "5.15.10"
-  ],
-  "fullPath": "qt.io"
+  ]
 }
 
 export interface QtioPackage {
@@ -207,5 +206,4 @@ export interface QtioPackage {
   versions: readonly [
     "5.15.10"
   ];
-  fullPath: "qt.io";
 }

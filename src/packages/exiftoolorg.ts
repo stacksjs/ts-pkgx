@@ -27,8 +27,7 @@ export const exiftoolorgPackage: PkgxPackage = {
     "12.75.0",
     "12.70.0",
     "12.60.0"
-  ],
-  "fullPath": "exiftool.org"
+  ]
 }
 
 export interface ExiftoolorgPackage {
@@ -55,5 +54,4 @@ export interface ExiftoolorgPackage {
     "12.70.0",
     "12.60.0"
   ];
-  fullPath: "exiftool.org";
 }

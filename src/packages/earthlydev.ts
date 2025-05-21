@@ -15,8 +15,7 @@ export const earthlydevPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "earthly.dev"
+  "versions": []
 }
 
 export interface EarthlydevPackage {
@@ -31,5 +30,4 @@ export interface EarthlydevPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "earthly.dev";
 }

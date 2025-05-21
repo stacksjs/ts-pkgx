@@ -15,8 +15,7 @@ export const bloomreachcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "bloomreach.com"
+  "versions": []
 }
 
 export interface BloomreachcomPackage {
@@ -31,5 +30,4 @@ export interface BloomreachcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "bloomreach.com";
 }

@@ -19,8 +19,7 @@ export const robotframeworkorgPackage: PkgxPackage = {
   ],
   "versions": [
     "7.2.2"
-  ],
-  "fullPath": "robotframework.org"
+  ]
 }
 
 export interface RobotframeworkorgPackage {
@@ -39,5 +38,4 @@ export interface RobotframeworkorgPackage {
   versions: readonly [
     "7.2.2"
   ];
-  fullPath: "robotframework.org";
 }

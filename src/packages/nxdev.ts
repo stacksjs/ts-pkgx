@@ -20,7 +20,9 @@ export const nxdevPackage: PkgxPackage = {
     "nodejs.org"
   ],
   "versions": [
+    "21.1.1",
     "21.1.0",
+    "21.0.4",
     "21.0.3",
     "21.0.2",
     "21.0.1",
@@ -167,8 +169,7 @@ export const nxdevPackage: PkgxPackage = {
     "17.0.6",
     "17.0.5",
     "17.0.4"
-  ],
-  "fullPath": "nx.dev"
+  ]
 }
 
 export interface NxdevPackage {
@@ -187,7 +188,9 @@ export interface NxdevPackage {
     "nodejs.org"
   ];
   versions: readonly [
+    "21.1.1",
     "21.1.0",
+    "21.0.4",
     "21.0.3",
     "21.0.2",
     "21.0.1",
@@ -335,5 +338,4 @@ export interface NxdevPackage {
     "17.0.5",
     "17.0.4"
   ];
-  fullPath: "nx.dev";
 }

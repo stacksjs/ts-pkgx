@@ -34,8 +34,7 @@ export const fxwtfPackage: PkgxPackage = {
     "30.0.1",
     "30.0.0",
     "24.1.0"
-  ],
-  "fullPath": "fx.wtf"
+  ]
 }
 
 export interface FxwtfPackage {
@@ -69,5 +68,4 @@ export interface FxwtfPackage {
     "30.0.0",
     "24.1.0"
   ];
-  fullPath: "fx.wtf";
 }

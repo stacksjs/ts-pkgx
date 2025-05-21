@@ -19,8 +19,7 @@ export const mpmathorgPackage: PkgxPackage = {
   ],
   "versions": [
     "1.3.0"
-  ],
-  "fullPath": "mpmath.org"
+  ]
 }
 
 export interface MpmathorgPackage {
@@ -39,5 +38,4 @@ export interface MpmathorgPackage {
   versions: readonly [
     "1.3.0"
   ];
-  fullPath: "mpmath.org";
 }

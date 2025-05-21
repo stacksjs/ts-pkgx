@@ -15,8 +15,7 @@ export const cyrusimaporgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "cyrusimap.org"
+  "versions": []
 }
 
 export interface CyrusimaporgPackage {
@@ -31,5 +30,4 @@ export interface CyrusimaporgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "cyrusimap.org";
 }

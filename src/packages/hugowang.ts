@@ -15,8 +15,7 @@ export const hugowangPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "hugo.wang"
+  "versions": []
 }
 
 export interface HugowangPackage {
@@ -31,5 +30,4 @@ export interface HugowangPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "hugo.wang";
 }

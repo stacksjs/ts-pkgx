@@ -15,8 +15,7 @@ export const dkrzdePackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "dkrz.de"
+  "versions": []
 }
 
 export interface DkrzdePackage {
@@ -31,5 +30,4 @@ export interface DkrzdePackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "dkrz.de";
 }

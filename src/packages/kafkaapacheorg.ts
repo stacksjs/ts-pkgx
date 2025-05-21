@@ -66,8 +66,7 @@ export const kafkaapacheorgPackage: PkgxPackage = {
     "3.8.1",
     "3.8.0",
     "3.7.2"
-  ],
-  "fullPath": "kafka.apache.org"
+  ]
 }
 
 export interface KafkaapacheorgPackage {
@@ -133,5 +132,4 @@ export interface KafkaapacheorgPackage {
     "3.8.0",
     "3.7.2"
   ];
-  fullPath: "kafka.apache.org";
 }

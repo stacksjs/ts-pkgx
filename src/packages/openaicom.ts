@@ -15,8 +15,7 @@ export const openaicomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "openai.com"
+  "versions": []
 }
 
 export interface OpenaicomPackage {
@@ -31,5 +30,4 @@ export interface OpenaicomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "openai.com";
 }

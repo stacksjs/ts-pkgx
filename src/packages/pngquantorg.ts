@@ -15,8 +15,7 @@ export const pngquantorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "pngquant.org"
+  "versions": []
 }
 
 export interface PngquantorgPackage {
@@ -31,5 +30,4 @@ export interface PngquantorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "pngquant.org";
 }

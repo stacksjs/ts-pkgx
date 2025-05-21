@@ -20,8 +20,7 @@ export const eigentuxfamilyorgPackage: PkgxPackage = {
   ],
   "versions": [
     "3.4.0"
-  ],
-  "fullPath": "eigen.tuxfamily.org"
+  ]
 }
 
 export interface EigentuxfamilyorgPackage {
@@ -41,5 +40,4 @@ export interface EigentuxfamilyorgPackage {
   versions: readonly [
     "3.4.0"
   ];
-  fullPath: "eigen.tuxfamily.org";
 }

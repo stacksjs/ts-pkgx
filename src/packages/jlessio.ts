@@ -22,8 +22,7 @@ export const jlessioPackage: PkgxPackage = {
   ],
   "versions": [
     "0.9.0"
-  ],
-  "fullPath": "jless.io"
+  ]
 }
 
 export interface JlessioPackage {
@@ -45,5 +44,4 @@ export interface JlessioPackage {
   versions: readonly [
     "0.9.0"
   ];
-  fullPath: "jless.io";
 }

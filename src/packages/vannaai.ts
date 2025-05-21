@@ -62,8 +62,7 @@ export const vannaaiPackage: PkgxPackage = {
     "0.0.34",
     "0.0.33",
     "0.0.32"
-  ],
-  "fullPath": "vanna.ai"
+  ]
 }
 
 export interface VannaaiPackage {
@@ -125,5 +124,4 @@ export interface VannaaiPackage {
     "0.0.33",
     "0.0.32"
   ];
-  fullPath: "vanna.ai";
 }

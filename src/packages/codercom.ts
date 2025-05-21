@@ -85,8 +85,7 @@ export const codercomPackage: PkgxPackage = {
     "2.10.2",
     "2.10.1",
     "2.10.0"
-  ],
-  "fullPath": "coder.com"
+  ]
 }
 
 export interface CodercomPackage {
@@ -171,5 +170,4 @@ export interface CodercomPackage {
     "2.10.1",
     "2.10.0"
   ];
-  fullPath: "coder.com";
 }

@@ -28,10 +28,6 @@ export const pygmentsorgPackage: PkgxPackage = {
     "2.17.0",
     "2.15.0",
     "2.14.0"
-  ],
-  "fullPath": "pygments.org",
-  "aliases": [
-    "pygmentize"
   ]
 }
 
@@ -59,9 +55,5 @@ export interface PygmentsorgPackage {
     "2.17.0",
     "2.15.0",
     "2.14.0"
-  ];
-  fullPath: "pygments.org";
-  aliases: readonly [
-    "pygmentize"
   ];
 }

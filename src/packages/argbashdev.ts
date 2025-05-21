@@ -24,8 +24,7 @@ export const argbashdevPackage: PkgxPackage = {
   ],
   "versions": [
     "2.10.0"
-  ],
-  "fullPath": "argbash.dev"
+  ]
 }
 
 export interface ArgbashdevPackage {
@@ -49,5 +48,4 @@ export interface ArgbashdevPackage {
   versions: readonly [
     "2.10.0"
   ];
-  fullPath: "argbash.dev";
 }

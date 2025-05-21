@@ -15,8 +15,7 @@ export const sourceforgenetPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "sourceforge.net"
+  "versions": []
 }
 
 export interface SourceforgenetPackage {
@@ -31,5 +30,4 @@ export interface SourceforgenetPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "sourceforge.net";
 }

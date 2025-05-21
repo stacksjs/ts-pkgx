@@ -15,8 +15,7 @@ export const hdfgrouporgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "hdfgroup.org"
+  "versions": []
 }
 
 export interface HdfgrouporgPackage {
@@ -31,5 +30,4 @@ export interface HdfgrouporgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "hdfgroup.org";
 }

@@ -21,8 +21,7 @@ export const kptdevPackage: PkgxPackage = {
   ],
   "versions": [
     "0.39.3"
-  ],
-  "fullPath": "kpt.dev"
+  ]
 }
 
 export interface KptdevPackage {
@@ -43,5 +42,4 @@ export interface KptdevPackage {
   versions: readonly [
     "0.39.3"
   ];
-  fullPath: "kpt.dev";
 }

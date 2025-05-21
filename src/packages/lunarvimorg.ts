@@ -29,8 +29,7 @@ export const lunarvimorgPackage: PkgxPackage = {
   "versions": [
     "1.4.0",
     "1.3.0"
-  ],
-  "fullPath": "lunarvim.org"
+  ]
 }
 
 export interface LunarvimorgPackage {
@@ -59,5 +58,4 @@ export interface LunarvimorgPackage {
     "1.4.0",
     "1.3.0"
   ];
-  fullPath: "lunarvim.org";
 }

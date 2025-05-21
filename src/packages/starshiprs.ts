@@ -39,8 +39,7 @@ export const starshiprsPackage: PkgxPackage = {
     "1.13.1",
     "1.13.0",
     "1.12.0"
-  ],
-  "fullPath": "starship.rs"
+  ]
 }
 
 export interface StarshiprsPackage {
@@ -79,5 +78,4 @@ export interface StarshiprsPackage {
     "1.13.0",
     "1.12.0"
   ];
-  fullPath: "starship.rs";
 }

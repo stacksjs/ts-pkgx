@@ -15,8 +15,7 @@ export const arduinogithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "arduino.github.io"
+  "versions": []
 }
 
 export interface ArduinogithubioPackage {
@@ -31,5 +30,4 @@ export interface ArduinogithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "arduino.github.io";
 }

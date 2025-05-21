@@ -26,8 +26,7 @@ export const flitpypaioPackage: PkgxPackage = {
     "3.11.0",
     "3.10.1",
     "3.10.0"
-  ],
-  "fullPath": "flit.pypa.io"
+  ]
 }
 
 export interface FlitpypaioPackage {
@@ -53,5 +52,4 @@ export interface FlitpypaioPackage {
     "3.10.1",
     "3.10.0"
   ];
-  fullPath: "flit.pypa.io";
 }

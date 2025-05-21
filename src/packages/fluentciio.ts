@@ -90,8 +90,7 @@ export const fluentciioPackage: PkgxPackage = {
     "0.10.2",
     "0.10.1",
     "0.10.0"
-  ],
-  "fullPath": "fluentci.io"
+  ]
 }
 
 export interface FluentciioPackage {
@@ -181,5 +180,4 @@ export interface FluentciioPackage {
     "0.10.1",
     "0.10.0"
   ];
-  fullPath: "fluentci.io";
 }

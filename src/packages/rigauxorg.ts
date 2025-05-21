@@ -15,8 +15,7 @@ export const rigauxorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "rigaux.org"
+  "versions": []
 }
 
 export interface RigauxorgPackage {
@@ -31,5 +30,4 @@ export interface RigauxorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "rigaux.org";
 }

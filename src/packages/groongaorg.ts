@@ -58,8 +58,7 @@ export const groongaorgPackage: PkgxPackage = {
     "13.0.8",
     "13.0.7",
     "13.0.6"
-  ],
-  "fullPath": "groonga.org"
+  ]
 }
 
 export interface GroongaorgPackage {
@@ -117,5 +116,4 @@ export interface GroongaorgPackage {
     "13.0.7",
     "13.0.6"
   ];
-  fullPath: "groonga.org";
 }

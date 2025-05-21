@@ -36,8 +36,7 @@ export const condaorgPackage: PkgxPackage = {
     "23.7.2",
     "23.11.0",
     "23.10.0"
-  ],
-  "fullPath": "conda.org"
+  ]
 }
 
 export interface CondaorgPackage {
@@ -73,5 +72,4 @@ export interface CondaorgPackage {
     "23.11.0",
     "23.10.0"
   ];
-  fullPath: "conda.org";
 }

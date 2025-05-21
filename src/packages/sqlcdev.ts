@@ -21,8 +21,7 @@ export const sqlcdevPackage: PkgxPackage = {
     "1.29.0",
     "1.28.0",
     "1.27.0"
-  ],
-  "fullPath": "sqlc.dev"
+  ]
 }
 
 export interface SqlcdevPackage {
@@ -43,5 +42,4 @@ export interface SqlcdevPackage {
     "1.28.0",
     "1.27.0"
   ];
-  fullPath: "sqlc.dev";
 }

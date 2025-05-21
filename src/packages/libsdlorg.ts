@@ -58,8 +58,7 @@ export const libsdlorgPackage: PkgxPackage = {
     "2.28.1",
     "2.28.0",
     "2.26.5"
-  ],
-  "fullPath": "libsdl.org"
+  ]
 }
 
 export interface LibsdlorgPackage {
@@ -117,5 +116,4 @@ export interface LibsdlorgPackage {
     "2.28.0",
     "2.26.5"
   ];
-  fullPath: "libsdl.org";
 }

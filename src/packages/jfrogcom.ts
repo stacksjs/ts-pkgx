@@ -15,8 +15,7 @@ export const jfrogcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "jfrog.com"
+  "versions": []
 }
 
 export interface JfrogcomPackage {
@@ -31,5 +30,4 @@ export interface JfrogcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "jfrog.com";
 }

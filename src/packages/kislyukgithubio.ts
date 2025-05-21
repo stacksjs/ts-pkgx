@@ -15,8 +15,7 @@ export const kislyukgithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "kislyuk.github.io"
+  "versions": []
 }
 
 export interface KislyukgithubioPackage {
@@ -31,5 +30,4 @@ export interface KislyukgithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "kislyuk.github.io";
 }

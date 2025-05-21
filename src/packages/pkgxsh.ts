@@ -53,8 +53,7 @@ export const pkgxshPackage: PkgxPackage = {
     "1.0.2",
     "1.0.1",
     "1.0.0"
-  ],
-  "fullPath": "pkgx.sh"
+  ]
 }
 
 export interface PkgxshPackage {
@@ -107,5 +106,4 @@ export interface PkgxshPackage {
     "1.0.1",
     "1.0.0"
   ];
-  fullPath: "pkgx.sh";
 }

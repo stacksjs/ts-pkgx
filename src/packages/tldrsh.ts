@@ -26,8 +26,7 @@ export const tldrshPackage: PkgxPackage = {
     "1.6.1",
     "1.6.0",
     "1.5.0"
-  ],
-  "fullPath": "tldr.sh"
+  ]
 }
 
 export interface TldrshPackage {
@@ -53,5 +52,4 @@ export interface TldrshPackage {
     "1.6.0",
     "1.5.0"
   ];
-  fullPath: "tldr.sh";
 }

@@ -45,8 +45,7 @@ export const mitmproxyorgPackage: PkgxPackage = {
     "10.1.2",
     "10.1.1",
     "10.1.0"
-  ],
-  "fullPath": "mitmproxy.org"
+  ]
 }
 
 export interface MitmproxyorgPackage {
@@ -91,5 +90,4 @@ export interface MitmproxyorgPackage {
     "10.1.1",
     "10.1.0"
   ];
-  fullPath: "mitmproxy.org";
 }

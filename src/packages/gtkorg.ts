@@ -15,8 +15,7 @@ export const gtkorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "gtk.org"
+  "versions": []
 }
 
 export interface GtkorgPackage {
@@ -31,5 +30,4 @@ export interface GtkorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "gtk.org";
 }

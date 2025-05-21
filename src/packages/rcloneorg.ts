@@ -33,8 +33,7 @@ export const rcloneorgPackage: PkgxPackage = {
     "1.64.1",
     "1.64.0",
     "1.63.1"
-  ],
-  "fullPath": "rclone.org"
+  ]
 }
 
 export interface RcloneorgPackage {
@@ -67,5 +66,4 @@ export interface RcloneorgPackage {
     "1.64.0",
     "1.63.1"
   ];
-  fullPath: "rclone.org";
 }

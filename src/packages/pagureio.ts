@@ -15,8 +15,7 @@ export const pagureioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "pagure.io"
+  "versions": []
 }
 
 export interface PagureioPackage {
@@ -31,5 +30,4 @@ export interface PagureioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "pagure.io";
 }

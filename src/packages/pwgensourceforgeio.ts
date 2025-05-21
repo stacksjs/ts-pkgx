@@ -19,8 +19,7 @@ export const pwgensourceforgeioPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "2.8.0"
-  ],
-  "fullPath": "pwgen.sourceforge.io"
+  ]
 }
 
 export interface PwgensourceforgeioPackage {
@@ -39,5 +38,4 @@ export interface PwgensourceforgeioPackage {
   versions: readonly [
     "2.8.0"
   ];
-  fullPath: "pwgen.sourceforge.io";
 }

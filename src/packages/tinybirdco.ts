@@ -19,8 +19,7 @@ export const tinybirdcoPackage: PkgxPackage = {
   ],
   "versions": [
     "5.20.0"
-  ],
-  "fullPath": "tinybird.co"
+  ]
 }
 
 export interface TinybirdcoPackage {
@@ -39,5 +38,4 @@ export interface TinybirdcoPackage {
   versions: readonly [
     "5.20.0"
   ];
-  fullPath: "tinybird.co";
 }

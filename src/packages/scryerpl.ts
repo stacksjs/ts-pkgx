@@ -21,10 +21,6 @@ export const scryerplPackage: PkgxPackage = {
   ],
   "versions": [
     "0.9.4"
-  ],
-  "fullPath": "scryer.pl",
-  "aliases": [
-    "scryer prolog"
   ]
 }
 
@@ -45,9 +41,5 @@ export interface ScryerplPackage {
   ];
   versions: readonly [
     "0.9.4"
-  ];
-  fullPath: "scryer.pl";
-  aliases: readonly [
-    "scryer prolog"
   ];
 }

@@ -15,8 +15,7 @@ export const cephcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "ceph.com"
+  "versions": []
 }
 
 export interface CephcomPackage {
@@ -31,5 +30,4 @@ export interface CephcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "ceph.com";
 }

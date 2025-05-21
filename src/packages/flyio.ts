@@ -106,6 +106,7 @@ export const flyioPackage: PkgxPackage = {
     "0.3.15",
     "0.3.14",
     "0.3.13",
+    "0.3.129",
     "0.3.128",
     "0.3.126",
     "0.3.125",
@@ -406,8 +407,7 @@ export const flyioPackage: PkgxPackage = {
     "0.0.551",
     "0.0.550",
     "0.0.548"
-  ],
-  "fullPath": "fly.io"
+  ]
 }
 
 export interface FlyioPackage {
@@ -512,6 +512,7 @@ export interface FlyioPackage {
     "0.3.15",
     "0.3.14",
     "0.3.13",
+    "0.3.129",
     "0.3.128",
     "0.3.126",
     "0.3.125",
@@ -813,5 +814,4 @@ export interface FlyioPackage {
     "0.0.550",
     "0.0.548"
   ];
-  fullPath: "fly.io";
 }

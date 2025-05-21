@@ -24,8 +24,7 @@ export const watchexecgithubioPackage: PkgxPackage = {
     "2.2.1",
     "2.2.0",
     "2.1.2"
-  ],
-  "fullPath": "watchexec.github.io"
+  ]
 }
 
 export interface WatchexecgithubioPackage {
@@ -49,5 +48,4 @@ export interface WatchexecgithubioPackage {
     "2.2.0",
     "2.1.2"
   ];
-  fullPath: "watchexec.github.io";
 }

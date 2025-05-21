@@ -15,8 +15,7 @@ export const priverdevPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "priver.dev"
+  "versions": []
 }
 
 export interface PriverdevPackage {
@@ -31,5 +30,4 @@ export interface PriverdevPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "priver.dev";
 }

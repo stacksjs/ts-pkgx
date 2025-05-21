@@ -25,8 +25,7 @@ export const plocatesessenetPackage: PkgxPackage = {
   "versions": [
     "1.1.23",
     "1.1.22"
-  ],
-  "fullPath": "plocate.sesse.net"
+  ]
 }
 
 export interface PlocatesessenetPackage {
@@ -51,5 +50,4 @@ export interface PlocatesessenetPackage {
     "1.1.23",
     "1.1.22"
   ];
-  fullPath: "plocate.sesse.net";
 }

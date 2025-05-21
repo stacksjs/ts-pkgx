@@ -15,8 +15,7 @@ export const vektragithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "vektra.github.io"
+  "versions": []
 }
 
 export interface VektragithubioPackage {
@@ -31,5 +30,4 @@ export interface VektragithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "vektra.github.io";
 }

@@ -15,8 +15,7 @@ export const reacheremailPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "reacher.email"
+  "versions": []
 }
 
 export interface ReacheremailPackage {
@@ -31,5 +30,4 @@ export interface ReacheremailPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "reacher.email";
 }

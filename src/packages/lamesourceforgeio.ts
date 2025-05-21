@@ -19,8 +19,7 @@ export const lamesourceforgeioPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "3.100.0"
-  ],
-  "fullPath": "lame.sourceforge.io"
+  ]
 }
 
 export interface LamesourceforgeioPackage {
@@ -39,5 +38,4 @@ export interface LamesourceforgeioPackage {
   versions: readonly [
     "3.100.0"
   ];
-  fullPath: "lame.sourceforge.io";
 }

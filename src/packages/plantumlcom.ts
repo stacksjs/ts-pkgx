@@ -37,8 +37,7 @@ export const plantumlcomPackage: PkgxPackage = {
     "1.2023.12",
     "1.2023.11",
     "1.2023.10"
-  ],
-  "fullPath": "plantuml.com"
+  ]
 }
 
 export interface PlantumlcomPackage {
@@ -75,5 +74,4 @@ export interface PlantumlcomPackage {
     "1.2023.11",
     "1.2023.10"
   ];
-  fullPath: "plantuml.com";
 }

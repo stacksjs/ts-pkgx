@@ -31,8 +31,7 @@ export const projorgPackage: PkgxPackage = {
     "9.3.0",
     "9.2.1",
     "9.2.0"
-  ],
-  "fullPath": "proj.org"
+  ]
 }
 
 export interface ProjorgPackage {
@@ -63,5 +62,4 @@ export interface ProjorgPackage {
     "9.2.1",
     "9.2.0"
   ];
-  fullPath: "proj.org";
 }

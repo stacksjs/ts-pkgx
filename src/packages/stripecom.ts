@@ -69,8 +69,7 @@ export const stripecomPackage: PkgxPackage = {
     "1.14.1",
     "1.14.0",
     "1.13.12"
-  ],
-  "fullPath": "stripe.com"
+  ]
 }
 
 export interface StripecomPackage {
@@ -139,5 +138,4 @@ export interface StripecomPackage {
     "1.14.0",
     "1.13.12"
   ];
-  fullPath: "stripe.com";
 }

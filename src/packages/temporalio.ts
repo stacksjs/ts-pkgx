@@ -32,8 +32,7 @@ export const temporalioPackage: PkgxPackage = {
     "0.10.7",
     "0.10.6",
     "0.10.5"
-  ],
-  "fullPath": "temporal.io"
+  ]
 }
 
 export interface TemporalioPackage {
@@ -65,5 +64,4 @@ export interface TemporalioPackage {
     "0.10.6",
     "0.10.5"
   ];
-  fullPath: "temporal.io";
 }

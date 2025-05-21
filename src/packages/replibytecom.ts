@@ -21,8 +21,7 @@ export const replibytecomPackage: PkgxPackage = {
   ],
   "versions": [
     "0.10.0"
-  ],
-  "fullPath": "replibyte.com"
+  ]
 }
 
 export interface ReplibytecomPackage {
@@ -43,5 +42,4 @@ export interface ReplibytecomPackage {
   versions: readonly [
     "0.10.0"
   ];
-  fullPath: "replibyte.com";
 }

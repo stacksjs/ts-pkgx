@@ -28,8 +28,7 @@ export const kubecmcloudPackage: PkgxPackage = {
     "0.29.1",
     "0.29.0",
     "0.28.0"
-  ],
-  "fullPath": "kubecm.cloud"
+  ]
 }
 
 export interface KubecmcloudPackage {
@@ -57,5 +56,4 @@ export interface KubecmcloudPackage {
     "0.29.0",
     "0.28.0"
   ];
-  fullPath: "kubecm.cloud";
 }

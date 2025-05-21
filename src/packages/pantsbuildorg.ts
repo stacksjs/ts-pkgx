@@ -15,8 +15,7 @@ export const pantsbuildorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "pantsbuild.org"
+  "versions": []
 }
 
 export interface PantsbuildorgPackage {
@@ -31,5 +30,4 @@ export interface PantsbuildorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "pantsbuild.org";
 }

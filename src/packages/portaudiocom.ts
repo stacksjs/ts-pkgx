@@ -17,8 +17,7 @@ export const portaudiocomPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "19.7.0"
-  ],
-  "fullPath": "portaudio.com"
+  ]
 }
 
 export interface PortaudiocomPackage {
@@ -35,5 +34,4 @@ export interface PortaudiocomPackage {
   versions: readonly [
     "19.7.0"
   ];
-  fullPath: "portaudio.com";
 }

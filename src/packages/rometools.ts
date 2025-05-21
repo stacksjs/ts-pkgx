@@ -19,8 +19,7 @@ export const rometoolsPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "0.4.2"
-  ],
-  "fullPath": "rome.tools"
+  ]
 }
 
 export interface RometoolsPackage {
@@ -39,5 +38,4 @@ export interface RometoolsPackage {
   versions: readonly [
     "0.4.2"
   ];
-  fullPath: "rome.tools";
 }

@@ -15,8 +15,7 @@ export const netliborgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "netlib.org"
+  "versions": []
 }
 
 export interface NetliborgPackage {
@@ -31,5 +30,4 @@ export interface NetliborgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "netlib.org";
 }

@@ -15,8 +15,7 @@ export const gphotoorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "gphoto.org"
+  "versions": []
 }
 
 export interface GphotoorgPackage {
@@ -31,5 +30,4 @@ export interface GphotoorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "gphoto.org";
 }

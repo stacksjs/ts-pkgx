@@ -65,8 +65,7 @@ export const podmanioPackage: PkgxPackage = {
     "4.6.0",
     "4.5.1",
     "4.5.0"
-  ],
-  "fullPath": "podman.io"
+  ]
 }
 
 export interface PodmanioPackage {
@@ -131,5 +130,4 @@ export interface PodmanioPackage {
     "4.5.1",
     "4.5.0"
   ];
-  fullPath: "podman.io";
 }

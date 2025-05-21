@@ -84,8 +84,7 @@ export const pdmfmingdevPackage: PkgxPackage = {
     "2.10.2",
     "2.10.1",
     "2.10.0"
-  ],
-  "fullPath": "pdm.fming.dev"
+  ]
 }
 
 export interface PdmfmingdevPackage {
@@ -169,5 +168,4 @@ export interface PdmfmingdevPackage {
     "2.10.1",
     "2.10.0"
   ];
-  fullPath: "pdm.fming.dev";
 }

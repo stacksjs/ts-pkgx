@@ -15,8 +15,7 @@ export const ivarchcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "ivarch.com"
+  "versions": []
 }
 
 export interface IvarchcomPackage {
@@ -31,5 +30,4 @@ export interface IvarchcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "ivarch.com";
 }

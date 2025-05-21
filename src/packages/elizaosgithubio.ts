@@ -31,10 +31,6 @@ export const elizaosgithubioPackage: PkgxPackage = {
     "0.1.9",
     "0.1.8.1",
     "0.1.7"
-  ],
-  "fullPath": "elizaOS.github.io",
-  "aliases": [
-    "elizaos"
   ]
 }
 
@@ -65,9 +61,5 @@ export interface ElizaosgithubioPackage {
     "0.1.9",
     "0.1.8.1",
     "0.1.7"
-  ];
-  fullPath: "elizaOS.github.io";
-  aliases: readonly [
-    "elizaos"
   ];
 }

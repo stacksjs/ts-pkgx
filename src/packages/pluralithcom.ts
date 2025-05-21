@@ -21,8 +21,7 @@ export const pluralithcomPackage: PkgxPackage = {
   ],
   "versions": [
     "0.2.2"
-  ],
-  "fullPath": "pluralith.com"
+  ]
 }
 
 export interface PluralithcomPackage {
@@ -43,5 +42,4 @@ export interface PluralithcomPackage {
   versions: readonly [
     "0.2.2"
   ];
-  fullPath: "pluralith.com";
 }

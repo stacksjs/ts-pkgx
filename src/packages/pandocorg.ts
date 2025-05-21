@@ -52,8 +52,7 @@ export const pandocorgPackage: PkgxPackage = {
     "3.1.11",
     "3.1.10",
     "2.19.2"
-  ],
-  "fullPath": "pandoc.org"
+  ]
 }
 
 export interface PandocorgPackage {
@@ -105,5 +104,4 @@ export interface PandocorgPackage {
     "3.1.10",
     "2.19.2"
   ];
-  fullPath: "pandoc.org";
 }

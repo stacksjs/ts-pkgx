@@ -15,8 +15,7 @@ export const linkerdioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "linkerd.io"
+  "versions": []
 }
 
 export interface LinkerdioPackage {
@@ -31,5 +30,4 @@ export interface LinkerdioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "linkerd.io";
 }

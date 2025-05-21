@@ -23,8 +23,7 @@ export const tcshorgPackage: PkgxPackage = {
   ],
   "versions": [
     "6.24.15"
-  ],
-  "fullPath": "tcsh.org"
+  ]
 }
 
 export interface TcshorgPackage {
@@ -47,5 +46,4 @@ export interface TcshorgPackage {
   versions: readonly [
     "6.24.15"
   ];
-  fullPath: "tcsh.org";
 }

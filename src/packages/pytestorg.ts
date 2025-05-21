@@ -45,8 +45,7 @@ export const pytestorgPackage: PkgxPackage = {
     "7.3.0",
     "7.2.2",
     "7.1.0"
-  ],
-  "fullPath": "pytest.org"
+  ]
 }
 
 export interface PytestorgPackage {
@@ -91,5 +90,4 @@ export interface PytestorgPackage {
     "7.2.2",
     "7.1.0"
   ];
-  fullPath: "pytest.org";
 }

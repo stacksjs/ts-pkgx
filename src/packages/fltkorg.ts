@@ -32,8 +32,7 @@ export const fltkorgPackage: PkgxPackage = {
     "1.3.9",
     "1.3.11",
     "1.3.10"
-  ],
-  "fullPath": "fltk.org"
+  ]
 }
 
 export interface FltkorgPackage {
@@ -65,5 +64,4 @@ export interface FltkorgPackage {
     "1.3.11",
     "1.3.10"
   ];
-  fullPath: "fltk.org";
 }

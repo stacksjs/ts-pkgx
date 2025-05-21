@@ -26,8 +26,7 @@ export const sftpgocomPackage: PkgxPackage = {
     "2.6.1",
     "2.6.0",
     "2.5.6"
-  ],
-  "fullPath": "sftpgo.com"
+  ]
 }
 
 export interface SftpgocomPackage {
@@ -53,5 +52,4 @@ export interface SftpgocomPackage {
     "2.6.0",
     "2.5.6"
   ];
-  fullPath: "sftpgo.com";
 }

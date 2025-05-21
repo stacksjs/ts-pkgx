@@ -84,8 +84,7 @@ export const cmakeorgPackage: PkgxPackage = {
     "3.25.1",
     "3.24.4",
     "3.24.2"
-  ],
-  "fullPath": "cmake.org"
+  ]
 }
 
 export interface CmakeorgPackage {
@@ -169,5 +168,4 @@ export interface CmakeorgPackage {
     "3.24.4",
     "3.24.2"
   ];
-  fullPath: "cmake.org";
 }

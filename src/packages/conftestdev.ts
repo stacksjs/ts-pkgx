@@ -34,8 +34,7 @@ export const conftestdevPackage: PkgxPackage = {
     "0.48.0",
     "0.47.0",
     "0.46.0"
-  ],
-  "fullPath": "conftest.dev"
+  ]
 }
 
 export interface ConftestdevPackage {
@@ -69,5 +68,4 @@ export interface ConftestdevPackage {
     "0.47.0",
     "0.46.0"
   ];
-  fullPath: "conftest.dev";
 }

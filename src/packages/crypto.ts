@@ -15,8 +15,7 @@ export const cryptoPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "cr.yp.to"
+  "versions": []
 }
 
 export interface CryptoPackage {
@@ -31,5 +30,4 @@ export interface CryptoPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "cr.yp.to";
 }

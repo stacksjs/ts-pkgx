@@ -20,8 +20,7 @@ export const libsodiumorgPackage: PkgxPackage = {
     "1.0.19",
     "1.0.18",
     "1.0.17"
-  ],
-  "fullPath": "libsodium.org"
+  ]
 }
 
 export interface LibsodiumorgPackage {
@@ -41,5 +40,4 @@ export interface LibsodiumorgPackage {
     "1.0.18",
     "1.0.17"
   ];
-  fullPath: "libsodium.org";
 }

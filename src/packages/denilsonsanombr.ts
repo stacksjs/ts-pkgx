@@ -15,8 +15,7 @@ export const denilsonsanombrPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "denilson.sa.nom.br"
+  "versions": []
 }
 
 export interface DenilsonsanombrPackage {
@@ -31,5 +30,4 @@ export interface DenilsonsanombrPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "denilson.sa.nom.br";
 }

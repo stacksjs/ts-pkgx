@@ -22,8 +22,7 @@ export const nasmusPackage: PkgxPackage = {
     "2.16.3",
     "2.16.2",
     "2.15.5"
-  ],
-  "fullPath": "nasm.us"
+  ]
 }
 
 export interface NasmusPackage {
@@ -45,5 +44,4 @@ export interface NasmusPackage {
     "2.16.2",
     "2.15.5"
   ];
-  fullPath: "nasm.us";
 }

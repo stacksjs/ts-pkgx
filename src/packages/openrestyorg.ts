@@ -28,8 +28,7 @@ export const openrestyorgPackage: PkgxPackage = {
   ],
   "versions": [
     "1.25.3.2"
-  ],
-  "fullPath": "openresty.org"
+  ]
 }
 
 export interface OpenrestyorgPackage {
@@ -57,5 +56,4 @@ export interface OpenrestyorgPackage {
   versions: readonly [
     "1.25.3.2"
   ];
-  fullPath: "openresty.org";
 }

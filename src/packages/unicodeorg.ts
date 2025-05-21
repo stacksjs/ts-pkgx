@@ -36,8 +36,7 @@ export const unicodeorgPackage: PkgxPackage = {
     "74.1.0",
     "73.2.0",
     "71.1.0"
-  ],
-  "fullPath": "unicode.org"
+  ]
 }
 
 export interface UnicodeorgPackage {
@@ -73,5 +72,4 @@ export interface UnicodeorgPackage {
     "73.2.0",
     "71.1.0"
   ];
-  fullPath: "unicode.org";
 }

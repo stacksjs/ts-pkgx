@@ -50,8 +50,7 @@ export const steampipeioPackage: PkgxPackage = {
     "0.20.12",
     "0.20.11",
     "0.20.10"
-  ],
-  "fullPath": "steampipe.io"
+  ]
 }
 
 export interface SteampipeioPackage {
@@ -101,5 +100,4 @@ export interface SteampipeioPackage {
     "0.20.11",
     "0.20.10"
   ];
-  fullPath: "steampipe.io";
 }

@@ -22,8 +22,7 @@ export const itstoolorgPackage: PkgxPackage = {
   ],
   "versions": [
     "2.0.7"
-  ],
-  "fullPath": "itstool.org"
+  ]
 }
 
 export interface ItstoolorgPackage {
@@ -45,5 +44,4 @@ export interface ItstoolorgPackage {
   versions: readonly [
     "2.0.7"
   ];
-  fullPath: "itstool.org";
 }

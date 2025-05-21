@@ -39,8 +39,7 @@ export const laravelcomPackage: PkgxPackage = {
     "5.11.1",
     "5.11.0",
     "5.10.0"
-  ],
-  "fullPath": "laravel.com"
+  ]
 }
 
 export interface LaravelcomPackage {
@@ -79,5 +78,4 @@ export interface LaravelcomPackage {
     "5.11.0",
     "5.10.0"
   ];
-  fullPath: "laravel.com";
 }

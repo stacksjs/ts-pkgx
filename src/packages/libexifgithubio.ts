@@ -20,8 +20,7 @@ export const libexifgithubioPackage: PkgxPackage = {
   "versions": [
     "0.6.25",
     "0.6.24"
-  ],
-  "fullPath": "libexif.github.io"
+  ]
 }
 
 export interface LibexifgithubioPackage {
@@ -41,5 +40,4 @@ export interface LibexifgithubioPackage {
     "0.6.25",
     "0.6.24"
   ];
-  fullPath: "libexif.github.io";
 }

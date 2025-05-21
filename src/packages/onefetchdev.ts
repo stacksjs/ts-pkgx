@@ -28,8 +28,7 @@ export const onefetchdevPackage: PkgxPackage = {
     "2.20.0",
     "2.19.0",
     "2.18.1"
-  ],
-  "fullPath": "onefetch.dev"
+  ]
 }
 
 export interface OnefetchdevPackage {
@@ -57,5 +56,4 @@ export interface OnefetchdevPackage {
     "2.19.0",
     "2.18.1"
   ];
-  fullPath: "onefetch.dev";
 }

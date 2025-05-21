@@ -15,8 +15,7 @@ export const sigstoredevPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "sigstore.dev"
+  "versions": []
 }
 
 export interface SigstoredevPackage {
@@ -31,5 +30,4 @@ export interface SigstoredevPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "sigstore.dev";
 }

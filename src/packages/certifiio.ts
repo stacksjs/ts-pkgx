@@ -15,8 +15,7 @@ export const certifiioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "certifi.io"
+  "versions": []
 }
 
 export interface CertifiioPackage {
@@ -31,5 +30,4 @@ export interface CertifiioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "certifi.io";
 }

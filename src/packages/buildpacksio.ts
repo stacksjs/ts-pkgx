@@ -30,10 +30,6 @@ export const buildpacksioPackage: PkgxPackage = {
     "0.34.1",
     "0.34.0",
     "0.33.2"
-  ],
-  "fullPath": "buildpacks.io",
-  "aliases": [
-    "pack"
   ]
 }
 
@@ -63,9 +59,5 @@ export interface BuildpacksioPackage {
     "0.34.1",
     "0.34.0",
     "0.33.2"
-  ];
-  fullPath: "buildpacks.io";
-  aliases: readonly [
-    "pack"
   ];
 }

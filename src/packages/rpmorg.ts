@@ -15,8 +15,7 @@ export const rpmorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "rpm.org"
+  "versions": []
 }
 
 export interface RpmorgPackage {
@@ -31,5 +30,4 @@ export interface RpmorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "rpm.org";
 }

@@ -15,8 +15,7 @@ export const viaductaiPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "viaduct.ai"
+  "versions": []
 }
 
 export interface ViaductaiPackage {
@@ -31,5 +30,4 @@ export interface ViaductaiPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "viaduct.ai";
 }

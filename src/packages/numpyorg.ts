@@ -40,10 +40,6 @@ export const numpyorgPackage: PkgxPackage = {
     "1.26.4",
     "1.26.3",
     "1.26.2"
-  ],
-  "fullPath": "numpy.org",
-  "aliases": [
-    "f2py"
   ]
 }
 
@@ -83,9 +79,5 @@ export interface NumpyorgPackage {
     "1.26.4",
     "1.26.3",
     "1.26.2"
-  ];
-  fullPath: "numpy.org";
-  aliases: readonly [
-    "f2py"
   ];
 }

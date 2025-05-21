@@ -22,8 +22,7 @@ export const ordinalscomPackage: PkgxPackage = {
     "0.6.0",
     "0.5.1",
     "0.5.0"
-  ],
-  "fullPath": "ordinals.com"
+  ]
 }
 
 export interface OrdinalscomPackage {
@@ -45,5 +44,4 @@ export interface OrdinalscomPackage {
     "0.5.1",
     "0.5.0"
   ];
-  fullPath: "ordinals.com";
 }

@@ -33,8 +33,7 @@ export const qpdfsourceforgeioPackage: PkgxPackage = {
     "11.6.4",
     "11.10.1",
     "11.10.0"
-  ],
-  "fullPath": "qpdf.sourceforge.io"
+  ]
 }
 
 export interface QpdfsourceforgeioPackage {
@@ -67,5 +66,4 @@ export interface QpdfsourceforgeioPackage {
     "11.10.1",
     "11.10.0"
   ];
-  fullPath: "qpdf.sourceforge.io";
 }

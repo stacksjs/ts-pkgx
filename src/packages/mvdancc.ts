@@ -15,8 +15,7 @@ export const mvdanccPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "mvdan.cc"
+  "versions": []
 }
 
 export interface MvdanccPackage {
@@ -31,5 +30,4 @@ export interface MvdanccPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "mvdan.cc";
 }

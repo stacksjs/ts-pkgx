@@ -15,8 +15,7 @@ export const trufflesecuritycomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "trufflesecurity.com"
+  "versions": []
 }
 
 export interface TrufflesecuritycomPackage {
@@ -31,5 +30,4 @@ export interface TrufflesecuritycomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "trufflesecurity.com";
 }

@@ -15,8 +15,7 @@ export const thekelleysorgukPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "thekelleys.org.uk"
+  "versions": []
 }
 
 export interface ThekelleysorgukPackage {
@@ -31,5 +30,4 @@ export interface ThekelleysorgukPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "thekelleys.org.uk";
 }

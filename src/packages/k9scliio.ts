@@ -70,8 +70,7 @@ export const k9scliioPackage: PkgxPackage = {
     "0.28.0",
     "0.27.4",
     "0.27.3"
-  ],
-  "fullPath": "k9scli.io"
+  ]
 }
 
 export interface K9scliioPackage {
@@ -141,5 +140,4 @@ export interface K9scliioPackage {
     "0.27.4",
     "0.27.3"
   ];
-  fullPath: "k9scli.io";
 }

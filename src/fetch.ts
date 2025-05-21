@@ -31,11 +31,41 @@ export async function cleanupBrowserResources(): Promise<void> {
   if (sharedBrowser) {
     try {
       console.error('Cleaning up browser resources...')
-      await sharedBrowser.close()
+
+      // Close any remaining contexts first
+      const contexts = await sharedBrowser.contexts()
+      for (const context of contexts) {
+        try {
+          // Close any pages in the context
+          const pages = context.pages()
+          for (const page of pages) {
+            try {
+              await page.close().catch(() => {})
+            }
+            catch {
+              // Ignore errors when closing pages
+            }
+          }
+          await context.close().catch(() => {})
+        }
+        catch {
+          // Ignore errors when closing contexts
+        }
+      }
+
+      // Close the browser with a timeout
+      await Promise.race([
+        sharedBrowser.close(),
+        new Promise(resolve => setTimeout(resolve, 3000)),
+      ])
+
       sharedBrowser = null
+      console.error('Browser resources cleaned up successfully')
     }
     catch (error) {
       console.error('Error closing browser:', error)
+      // Force set to null even if there was an error
+      sharedBrowser = null
     }
   }
 }

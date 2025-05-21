@@ -15,8 +15,7 @@ export const expodevPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "expo.dev"
+  "versions": []
 }
 
 export interface ExpodevPackage {
@@ -31,5 +30,4 @@ export interface ExpodevPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "expo.dev";
 }

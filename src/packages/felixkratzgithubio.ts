@@ -15,8 +15,7 @@ export const felixkratzgithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "felixkratz.github.io"
+  "versions": []
 }
 
 export interface FelixkratzgithubioPackage {
@@ -31,5 +30,4 @@ export interface FelixkratzgithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "felixkratz.github.io";
 }

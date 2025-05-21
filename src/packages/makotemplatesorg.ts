@@ -32,10 +32,6 @@ export const makotemplatesorgPackage: PkgxPackage = {
     "1.3.1",
     "1.3.0",
     "1.2.4"
-  ],
-  "fullPath": "makotemplates.org",
-  "aliases": [
-    "mako-render"
   ]
 }
 
@@ -67,9 +63,5 @@ export interface MakotemplatesorgPackage {
     "1.3.1",
     "1.3.0",
     "1.2.4"
-  ];
-  fullPath: "makotemplates.org";
-  aliases: readonly [
-    "mako-render"
   ];
 }

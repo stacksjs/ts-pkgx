@@ -15,8 +15,7 @@ export const riverbankcomputingcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "riverbankcomputing.com"
+  "versions": []
 }
 
 export interface RiverbankcomputingcomPackage {
@@ -31,5 +30,4 @@ export interface RiverbankcomputingcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "riverbankcomputing.com";
 }

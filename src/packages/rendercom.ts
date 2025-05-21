@@ -24,8 +24,7 @@ export const rendercomPackage: PkgxPackage = {
     "0.1.5",
     "0.1.11",
     "0.1.10"
-  ],
-  "fullPath": "render.com"
+  ]
 }
 
 export interface RendercomPackage {
@@ -49,5 +48,4 @@ export interface RendercomPackage {
     "0.1.11",
     "0.1.10"
   ];
-  fullPath: "render.com";
 }

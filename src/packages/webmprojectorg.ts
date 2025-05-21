@@ -15,8 +15,7 @@ export const webmprojectorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "webmproject.org"
+  "versions": []
 }
 
 export interface WebmprojectorgPackage {
@@ -31,5 +30,4 @@ export interface WebmprojectorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "webmproject.org";
 }

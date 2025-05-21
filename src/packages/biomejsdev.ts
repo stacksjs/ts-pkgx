@@ -46,8 +46,7 @@ export const biomejsdevPackage: PkgxPackage = {
     "1.3.1",
     "1.3.0",
     "1.2.2"
-  ],
-  "fullPath": "biomejs.dev"
+  ]
 }
 
 export interface BiomejsdevPackage {
@@ -93,5 +92,4 @@ export interface BiomejsdevPackage {
     "1.3.0",
     "1.2.2"
   ];
-  fullPath: "biomejs.dev";
 }

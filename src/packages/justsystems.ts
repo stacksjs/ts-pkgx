@@ -58,8 +58,7 @@ export const justsystemsPackage: PkgxPackage = {
     "1.12.0",
     "1.11.0",
     "1.10.0"
-  ],
-  "fullPath": "just.systems"
+  ]
 }
 
 export interface JustsystemsPackage {
@@ -117,5 +116,4 @@ export interface JustsystemsPackage {
     "1.11.0",
     "1.10.0"
   ];
-  fullPath: "just.systems";
 }

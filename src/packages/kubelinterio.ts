@@ -22,10 +22,6 @@ export const kubelinterioPackage: PkgxPackage = {
     "0.7.1",
     "0.7.0",
     "0.6.8"
-  ],
-  "fullPath": "kubelinter.io",
-  "aliases": [
-    "kube-linter"
   ]
 }
 
@@ -47,9 +43,5 @@ export interface KubelinterioPackage {
     "0.7.1",
     "0.7.0",
     "0.6.8"
-  ];
-  fullPath: "kubelinter.io";
-  aliases: readonly [
-    "kube-linter"
   ];
 }

@@ -35,8 +35,7 @@ export const kubebuilderioPackage: PkgxPackage = {
     "3.14.0",
     "3.13.0",
     "3.12.0"
-  ],
-  "fullPath": "kubebuilder.io"
+  ]
 }
 
 export interface KubebuilderioPackage {
@@ -71,5 +70,4 @@ export interface KubebuilderioPackage {
     "3.13.0",
     "3.12.0"
   ];
-  fullPath: "kubebuilder.io";
 }

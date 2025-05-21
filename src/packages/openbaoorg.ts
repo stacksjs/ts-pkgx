@@ -15,8 +15,7 @@ export const openbaoorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "openbao.org"
+  "versions": []
 }
 
 export interface OpenbaoorgPackage {
@@ -31,5 +30,4 @@ export interface OpenbaoorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "openbao.org";
 }

@@ -27,8 +27,7 @@ export const asciidoctororgPackage: PkgxPackage = {
     "2.0.20",
     "2.0.19",
     "2.0.18"
-  ],
-  "fullPath": "asciidoctor.org"
+  ]
 }
 
 export interface AsciidoctororgPackage {
@@ -55,5 +54,4 @@ export interface AsciidoctororgPackage {
     "2.0.19",
     "2.0.18"
   ];
-  fullPath: "asciidoctor.org";
 }

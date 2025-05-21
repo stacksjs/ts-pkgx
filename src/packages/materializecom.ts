@@ -65,10 +65,6 @@ export const materializecomPackage: PkgxPackage = {
     "0.102.2",
     "0.101.1",
     "0.100.1"
-  ],
-  "fullPath": "materialize.com",
-  "aliases": [
-    "mz"
   ]
 }
 
@@ -133,9 +129,5 @@ export interface MaterializecomPackage {
     "0.102.2",
     "0.101.1",
     "0.100.1"
-  ];
-  fullPath: "materialize.com";
-  aliases: readonly [
-    "mz"
   ];
 }

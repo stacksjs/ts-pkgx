@@ -37,8 +37,7 @@ export const soliditylangorgPackage: PkgxPackage = {
     "0.8.19",
     "0.8.18",
     "0.8.17"
-  ],
-  "fullPath": "soliditylang.org"
+  ]
 }
 
 export interface SoliditylangorgPackage {
@@ -75,5 +74,4 @@ export interface SoliditylangorgPackage {
     "0.8.18",
     "0.8.17"
   ];
-  fullPath: "soliditylang.org";
 }

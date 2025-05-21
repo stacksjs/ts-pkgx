@@ -37,8 +37,7 @@ export const bashlydannybcoPackage: PkgxPackage = {
     "1.2.1",
     "1.2.0",
     "1.1.10"
-  ],
-  "fullPath": "bashly.dannyb.co"
+  ]
 }
 
 export interface BashlydannybcoPackage {
@@ -75,5 +74,4 @@ export interface BashlydannybcoPackage {
     "1.2.0",
     "1.1.10"
   ];
-  fullPath: "bashly.dannyb.co";
 }

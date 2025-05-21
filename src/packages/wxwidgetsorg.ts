@@ -36,8 +36,7 @@ export const wxwidgetsorgPackage: PkgxPackage = {
     "3.2.5",
     "3.2.4",
     "3.2.3"
-  ],
-  "fullPath": "wxwidgets.org"
+  ]
 }
 
 export interface WxwidgetsorgPackage {
@@ -73,5 +72,4 @@ export interface WxwidgetsorgPackage {
     "3.2.4",
     "3.2.3"
   ];
-  fullPath: "wxwidgets.org";
 }

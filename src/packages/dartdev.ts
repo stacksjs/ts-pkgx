@@ -54,8 +54,7 @@ export const dartdevPackage: PkgxPackage = {
     "3.1.3",
     "3.1.2",
     "3.1.1"
-  ],
-  "fullPath": "dart.dev"
+  ]
 }
 
 export interface DartdevPackage {
@@ -109,5 +108,4 @@ export interface DartdevPackage {
     "3.1.2",
     "3.1.1"
   ];
-  fullPath: "dart.dev";
 }

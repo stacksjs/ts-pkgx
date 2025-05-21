@@ -15,8 +15,7 @@ export const jpegorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "jpeg.org"
+  "versions": []
 }
 
 export interface JpegorgPackage {
@@ -31,5 +30,4 @@ export interface JpegorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "jpeg.org";
 }

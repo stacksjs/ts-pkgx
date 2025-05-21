@@ -26,8 +26,7 @@ export const srtallianceorgPackage: PkgxPackage = {
     "1.5.4",
     "1.5.3",
     "1.5.2"
-  ],
-  "fullPath": "srtalliance.org"
+  ]
 }
 
 export interface SrtallianceorgPackage {
@@ -53,5 +52,4 @@ export interface SrtallianceorgPackage {
     "1.5.3",
     "1.5.2"
   ];
-  fullPath: "srtalliance.org";
 }

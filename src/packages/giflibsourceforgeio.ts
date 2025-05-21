@@ -25,8 +25,7 @@ export const giflibsourceforgeioPackage: PkgxPackage = {
   "versions": [
     "5.2.2",
     "5.2.1"
-  ],
-  "fullPath": "giflib.sourceforge.io"
+  ]
 }
 
 export interface GiflibsourceforgeioPackage {
@@ -51,5 +50,4 @@ export interface GiflibsourceforgeioPackage {
     "5.2.2",
     "5.2.1"
   ];
-  fullPath: "giflib.sourceforge.io";
 }

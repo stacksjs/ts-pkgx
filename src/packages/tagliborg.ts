@@ -25,10 +25,6 @@ export const tagliborgPackage: PkgxPackage = {
     "2.0.1",
     "2.0.0",
     "1.13.1"
-  ],
-  "fullPath": "taglib.org",
-  "aliases": [
-    "taglib-config"
   ]
 }
 
@@ -53,9 +49,5 @@ export interface TagliborgPackage {
     "2.0.1",
     "2.0.0",
     "1.13.1"
-  ];
-  fullPath: "taglib.org";
-  aliases: readonly [
-    "taglib-config"
   ];
 }

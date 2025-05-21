@@ -15,8 +15,7 @@ export const netflixcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "netflix.com"
+  "versions": []
 }
 
 export interface NetflixcomPackage {
@@ -31,5 +30,4 @@ export interface NetflixcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "netflix.com";
 }

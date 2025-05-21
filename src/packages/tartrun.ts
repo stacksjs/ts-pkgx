@@ -69,8 +69,7 @@ export const tartrunPackage: PkgxPackage = {
     "2.11.0",
     "2.10.0",
     "0.38.0"
-  ],
-  "fullPath": "tart.run"
+  ]
 }
 
 export interface TartrunPackage {
@@ -139,5 +138,4 @@ export interface TartrunPackage {
     "2.10.0",
     "0.38.0"
   ];
-  fullPath: "tart.run";
 }

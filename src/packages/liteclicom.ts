@@ -36,8 +36,7 @@ export const liteclicomPackage: PkgxPackage = {
     "1.11.0",
     "1.10.1",
     "1.10.0"
-  ],
-  "fullPath": "litecli.com"
+  ]
 }
 
 export interface LiteclicomPackage {
@@ -73,5 +72,4 @@ export interface LiteclicomPackage {
     "1.10.1",
     "1.10.0"
   ];
-  fullPath: "litecli.com";
 }

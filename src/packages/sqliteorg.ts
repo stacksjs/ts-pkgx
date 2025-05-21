@@ -45,10 +45,6 @@ export const sqliteorgPackage: PkgxPackage = {
     "3.42.0",
     "3.40.0",
     "3.39.4"
-  ],
-  "fullPath": "sqlite.org",
-  "aliases": [
-    "sqlite3"
   ]
 }
 
@@ -93,9 +89,5 @@ export interface SqliteorgPackage {
     "3.42.0",
     "3.40.0",
     "3.39.4"
-  ];
-  fullPath: "sqlite.org";
-  aliases: readonly [
-    "sqlite3"
   ];
 }

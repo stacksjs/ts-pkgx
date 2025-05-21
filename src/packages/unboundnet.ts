@@ -36,8 +36,7 @@ export const unboundnetPackage: PkgxPackage = {
     "1.19.0",
     "1.18.0",
     "1.17.1"
-  ],
-  "fullPath": "unbound.net"
+  ]
 }
 
 export interface UnboundnetPackage {
@@ -73,5 +72,4 @@ export interface UnboundnetPackage {
     "1.18.0",
     "1.17.1"
   ];
-  fullPath: "unbound.net";
 }

@@ -15,8 +15,7 @@ export const developer1passwordcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "developer.1password.com"
+  "versions": []
 }
 
 export interface Developer1passwordcomPackage {
@@ -31,5 +30,4 @@ export interface Developer1passwordcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "developer.1password.com";
 }

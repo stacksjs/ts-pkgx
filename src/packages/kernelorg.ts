@@ -15,8 +15,7 @@ export const kernelorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "kernel.org"
+  "versions": []
 }
 
 export interface KernelorgPackage {
@@ -31,5 +30,4 @@ export interface KernelorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "kernel.org";
 }

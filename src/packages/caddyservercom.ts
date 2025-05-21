@@ -28,8 +28,7 @@ export const caddyservercomPackage: PkgxPackage = {
     "2.7.5",
     "2.7.4",
     "2.10.0"
-  ],
-  "fullPath": "caddyserver.com"
+  ]
 }
 
 export interface CaddyservercomPackage {
@@ -57,5 +56,4 @@ export interface CaddyservercomPackage {
     "2.7.4",
     "2.10.0"
   ];
-  fullPath: "caddyserver.com";
 }

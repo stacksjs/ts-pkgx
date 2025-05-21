@@ -17,8 +17,7 @@ export const rapidjsonorgPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "1.1.0"
-  ],
-  "fullPath": "rapidjson.org"
+  ]
 }
 
 export interface RapidjsonorgPackage {
@@ -35,5 +34,4 @@ export interface RapidjsonorgPackage {
   versions: readonly [
     "1.1.0"
   ];
-  fullPath: "rapidjson.org";
 }

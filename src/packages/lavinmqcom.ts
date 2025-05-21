@@ -32,8 +32,7 @@ export const lavinmqcomPackage: PkgxPackage = {
     "2.0.1",
     "2.0.0",
     "1.3.1"
-  ],
-  "fullPath": "lavinmq.com"
+  ]
 }
 
 export interface LavinmqcomPackage {
@@ -65,5 +64,4 @@ export interface LavinmqcomPackage {
     "2.0.0",
     "1.3.1"
   ];
-  fullPath: "lavinmq.com";
 }

@@ -24,8 +24,7 @@ export const qhullorgPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "8.0.2"
-  ],
-  "fullPath": "qhull.org"
+  ]
 }
 
 export interface QhullorgPackage {
@@ -49,5 +48,4 @@ export interface QhullorgPackage {
   versions: readonly [
     "8.0.2"
   ];
-  fullPath: "qhull.org";
 }

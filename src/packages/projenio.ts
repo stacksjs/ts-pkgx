@@ -59,8 +59,7 @@ export const projenioPackage: PkgxPackage = {
     "0.91.12",
     "0.91.11",
     "0.91.10"
-  ],
-  "fullPath": "projen.io"
+  ]
 }
 
 export interface ProjenioPackage {
@@ -119,5 +118,4 @@ export interface ProjenioPackage {
     "0.91.11",
     "0.91.10"
   ];
-  fullPath: "projen.io";
 }

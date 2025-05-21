@@ -15,8 +15,7 @@ export const googlegithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "google.github.io"
+  "versions": []
 }
 
 export interface GooglegithubioPackage {
@@ -31,5 +30,4 @@ export interface GooglegithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "google.github.io";
 }

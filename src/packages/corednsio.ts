@@ -25,8 +25,7 @@ export const corednsioPackage: PkgxPackage = {
     "1.11.2",
     "1.11.1",
     "1.10.1"
-  ],
-  "fullPath": "coredns.io"
+  ]
 }
 
 export interface CorednsioPackage {
@@ -51,5 +50,4 @@ export interface CorednsioPackage {
     "1.11.1",
     "1.10.1"
   ];
-  fullPath: "coredns.io";
 }

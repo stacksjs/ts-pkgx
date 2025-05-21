@@ -15,8 +15,7 @@ export const xiphorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "xiph.org"
+  "versions": []
 }
 
 export interface XiphorgPackage {
@@ -31,5 +30,4 @@ export interface XiphorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "xiph.org";
 }

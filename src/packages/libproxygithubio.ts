@@ -15,8 +15,7 @@ export const libproxygithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "libproxy.github.io"
+  "versions": []
 }
 
 export interface LibproxygithubioPackage {
@@ -31,5 +30,4 @@ export interface LibproxygithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "libproxy.github.io";
 }

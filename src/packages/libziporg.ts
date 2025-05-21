@@ -34,10 +34,6 @@ export const libziporgPackage: PkgxPackage = {
     "1.11.1",
     "1.10.1",
     "1.10.0"
-  ],
-  "fullPath": "libzip.org",
-  "aliases": [
-    "zip"
   ]
 }
 
@@ -71,9 +67,5 @@ export interface LibziporgPackage {
     "1.11.1",
     "1.10.1",
     "1.10.0"
-  ];
-  fullPath: "libzip.org";
-  aliases: readonly [
-    "zip"
   ];
 }

@@ -31,10 +31,6 @@ export const agptcoPackage: PkgxPackage = {
     "0.4.0",
     "0.3.1",
     "0.3.0"
-  ],
-  "fullPath": "agpt.co",
-  "aliases": [
-    "auto-gpt"
   ]
 }
 
@@ -65,9 +61,5 @@ export interface AgptcoPackage {
     "0.4.0",
     "0.3.1",
     "0.3.0"
-  ];
-  fullPath: "agpt.co";
-  aliases: readonly [
-    "auto-gpt"
   ];
 }

@@ -15,8 +15,7 @@ export const oberhumercomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "oberhumer.com"
+  "versions": []
 }
 
 export interface OberhumercomPackage {
@@ -31,5 +30,4 @@ export interface OberhumercomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "oberhumer.com";
 }

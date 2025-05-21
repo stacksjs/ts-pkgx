@@ -15,8 +15,7 @@ export const nlnetlabsnlPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "nlnetlabs.nl"
+  "versions": []
 }
 
 export interface NlnetlabsnlPackage {
@@ -31,5 +30,4 @@ export interface NlnetlabsnlPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "nlnetlabs.nl";
 }

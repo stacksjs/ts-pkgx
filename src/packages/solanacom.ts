@@ -114,8 +114,7 @@ export const solanacomPackage: PkgxPackage = {
     "1.14.20",
     "1.14.19",
     "1.14.18"
-  ],
-  "fullPath": "solana.com"
+  ]
 }
 
 export interface SolanacomPackage {
@@ -229,5 +228,4 @@ export interface SolanacomPackage {
     "1.14.19",
     "1.14.18"
   ];
-  fullPath: "solana.com";
 }

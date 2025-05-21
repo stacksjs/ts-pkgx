@@ -33,8 +33,7 @@ export const dblabdanvergaracomPackage: PkgxPackage = {
     "0.23.0",
     "0.22.0",
     "0.21.0"
-  ],
-  "fullPath": "dblab.danvergara.com"
+  ]
 }
 
 export interface DblabdanvergaracomPackage {
@@ -67,5 +66,4 @@ export interface DblabdanvergaracomPackage {
     "0.22.0",
     "0.21.0"
   ];
-  fullPath: "dblab.danvergara.com";
 }

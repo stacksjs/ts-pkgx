@@ -1,0 +1,54 @@
+name: Update Packages
+
+on:
+  schedule:
+    # Run hourly at minute 15
+    - cron: '15 * * * *'
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  update-packages:
+    name: Update packages and index
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to push changes
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Install Playwright browsers
+        run: bunx playwright install chromium --with-deps
+
+      - name: Update packages
+        run: bun src/tools/updatePackages.ts
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+          if [[ -z $(git status --porcelain) ]]; then
+            echo "No changes detected"
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected"
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git add src/packages/
+          git commit -m "chore: Update packages with latest data" -m "Automated update via GitHub Actions workflow"
+          git push

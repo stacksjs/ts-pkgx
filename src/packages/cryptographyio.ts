@@ -39,8 +39,7 @@ export const cryptographyioPackage: PkgxPackage = {
     "42.0.3",
     "42.0.2",
     "42.0.1"
-  ],
-  "fullPath": "cryptography.io"
+  ]
 }
 
 export interface CryptographyioPackage {
@@ -79,5 +78,4 @@ export interface CryptographyioPackage {
     "42.0.2",
     "42.0.1"
   ];
-  fullPath: "cryptography.io";
 }

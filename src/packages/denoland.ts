@@ -149,10 +149,6 @@ export const denolandPackage: PkgxPackage = {
     "1.28.1",
     "1.28.0",
     "1.26.2"
-  ],
-  "fullPath": "deno.land",
-  "aliases": [
-    "deno"
   ]
 }
 
@@ -301,9 +297,5 @@ export interface DenolandPackage {
     "1.28.1",
     "1.28.0",
     "1.26.2"
-  ];
-  fullPath: "deno.land";
-  aliases: readonly [
-    "deno"
   ];
 }

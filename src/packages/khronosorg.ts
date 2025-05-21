@@ -15,8 +15,7 @@ export const khronosorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "khronos.org"
+  "versions": []
 }
 
 export interface KhronosorgPackage {
@@ -31,5 +30,4 @@ export interface KhronosorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "khronos.org";
 }

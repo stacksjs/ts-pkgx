@@ -22,8 +22,7 @@ export const rebar3orgPackage: PkgxPackage = {
   "versions": [
     "3.24.0",
     "3.23.0"
-  ],
-  "fullPath": "rebar3.org"
+  ]
 }
 
 export interface Rebar3orgPackage {
@@ -45,5 +44,4 @@ export interface Rebar3orgPackage {
     "3.24.0",
     "3.23.0"
   ];
-  fullPath: "rebar3.org";
 }

@@ -63,8 +63,7 @@ export const ipythonorgPackage: PkgxPackage = {
     "8.12.2",
     "8.12.1",
     "8.12.0"
-  ],
-  "fullPath": "ipython.org"
+  ]
 }
 
 export interface IpythonorgPackage {
@@ -127,5 +126,4 @@ export interface IpythonorgPackage {
     "8.12.1",
     "8.12.0"
   ];
-  fullPath: "ipython.org";
 }

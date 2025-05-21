@@ -26,8 +26,7 @@ export const mandocbsdlvPackage: PkgxPackage = {
   ],
   "versions": [
     "1.14.6"
-  ],
-  "fullPath": "mandoc.bsd.lv"
+  ]
 }
 
 export interface MandocbsdlvPackage {
@@ -53,5 +52,4 @@ export interface MandocbsdlvPackage {
   versions: readonly [
     "1.14.6"
   ];
-  fullPath: "mandoc.bsd.lv";
 }

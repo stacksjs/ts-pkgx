@@ -15,8 +15,7 @@ export const hardingmotdcaPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "harding.motd.ca"
+  "versions": []
 }
 
 export interface HardingmotdcaPackage {
@@ -31,5 +30,4 @@ export interface HardingmotdcaPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "harding.motd.ca";
 }

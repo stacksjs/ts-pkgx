@@ -28,8 +28,7 @@ export const carapaceshPackage: PkgxPackage = {
     "1.0.6",
     "1.0.5",
     "1.0.4"
-  ],
-  "fullPath": "carapace.sh"
+  ]
 }
 
 export interface CarapaceshPackage {
@@ -57,5 +56,4 @@ export interface CarapaceshPackage {
     "1.0.5",
     "1.0.4"
   ];
-  fullPath: "carapace.sh";
 }

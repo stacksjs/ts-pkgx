@@ -120,8 +120,7 @@ export const vitejsdevPackage: PkgxPackage = {
     "3.2.11",
     "3.2.10",
     "2.9.18"
-  ],
-  "fullPath": "vitejs.dev"
+  ]
 }
 
 export interface VitejsdevPackage {
@@ -241,5 +240,4 @@ export interface VitejsdevPackage {
     "3.2.10",
     "2.9.18"
   ];
-  fullPath: "vitejs.dev";
 }

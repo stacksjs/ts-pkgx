@@ -15,8 +15,7 @@ export const tukaaniorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "tukaani.org"
+  "versions": []
 }
 
 export interface TukaaniorgPackage {
@@ -31,5 +30,4 @@ export interface TukaaniorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "tukaani.org";
 }

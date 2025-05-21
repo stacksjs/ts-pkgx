@@ -21,8 +21,7 @@ export const cointopshPackage: PkgxPackage = {
   ],
   "versions": [
     "1.6.10"
-  ],
-  "fullPath": "cointop.sh"
+  ]
 }
 
 export interface CointopshPackage {
@@ -43,5 +42,4 @@ export interface CointopshPackage {
   versions: readonly [
     "1.6.10"
   ];
-  fullPath: "cointop.sh";
 }

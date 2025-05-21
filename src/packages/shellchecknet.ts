@@ -23,8 +23,7 @@ export const shellchecknetPackage: PkgxPackage = {
     "0.9.0",
     "0.8.0",
     "0.10.0"
-  ],
-  "fullPath": "shellcheck.net"
+  ]
 }
 
 export interface ShellchecknetPackage {
@@ -47,5 +46,4 @@ export interface ShellchecknetPackage {
     "0.8.0",
     "0.10.0"
   ];
-  fullPath: "shellcheck.net";
 }

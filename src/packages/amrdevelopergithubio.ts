@@ -15,8 +15,7 @@ export const amrdevelopergithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "amrdeveloper.github.io"
+  "versions": []
 }
 
 export interface AmrdevelopergithubioPackage {
@@ -31,5 +30,4 @@ export interface AmrdevelopergithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "amrdeveloper.github.io";
 }

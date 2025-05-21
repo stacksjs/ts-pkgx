@@ -110,8 +110,7 @@ export const qemuorgPackage: PkgxPackage = {
     "7.2.12",
     "7.2.11",
     "7.2.10"
-  ],
-  "fullPath": "qemu.org"
+  ]
 }
 
 export interface QemuorgPackage {
@@ -221,5 +220,4 @@ export interface QemuorgPackage {
     "7.2.11",
     "7.2.10"
   ];
-  fullPath: "qemu.org";
 }

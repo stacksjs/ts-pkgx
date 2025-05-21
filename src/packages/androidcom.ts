@@ -15,8 +15,7 @@ export const androidcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "android.com"
+  "versions": []
 }
 
 export interface AndroidcomPackage {
@@ -31,5 +30,4 @@ export interface AndroidcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "android.com";
 }

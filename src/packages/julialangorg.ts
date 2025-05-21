@@ -36,8 +36,7 @@ export const julialangorgPackage: PkgxPackage = {
     "1.10.2",
     "1.10.1",
     "1.10.0"
-  ],
-  "fullPath": "julialang.org"
+  ]
 }
 
 export interface JulialangorgPackage {
@@ -73,5 +72,4 @@ export interface JulialangorgPackage {
     "1.10.1",
     "1.10.0"
   ];
-  fullPath: "julialang.org";
 }

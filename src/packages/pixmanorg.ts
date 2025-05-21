@@ -17,8 +17,7 @@ export const pixmanorgPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "0.40.0"
-  ],
-  "fullPath": "pixman.org"
+  ]
 }
 
 export interface PixmanorgPackage {
@@ -35,5 +34,4 @@ export interface PixmanorgPackage {
   versions: readonly [
     "0.40.0"
   ];
-  fullPath: "pixman.org";
 }

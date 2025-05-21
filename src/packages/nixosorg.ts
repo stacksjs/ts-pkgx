@@ -15,8 +15,7 @@ export const nixosorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "nixos.org"
+  "versions": []
 }
 
 export interface NixosorgPackage {
@@ -31,5 +30,4 @@ export interface NixosorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "nixos.org";
 }

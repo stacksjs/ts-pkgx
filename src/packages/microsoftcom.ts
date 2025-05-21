@@ -15,8 +15,7 @@ export const microsoftcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "microsoft.com"
+  "versions": []
 }
 
 export interface MicrosoftcomPackage {
@@ -31,5 +30,4 @@ export interface MicrosoftcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "microsoft.com";
 }

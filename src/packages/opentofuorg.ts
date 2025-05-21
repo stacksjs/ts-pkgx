@@ -41,10 +41,6 @@ export const opentofuorgPackage: PkgxPackage = {
     "1.7.4",
     "1.7.3",
     "1.6.0.3"
-  ],
-  "fullPath": "opentofu.org",
-  "aliases": [
-    "tofu"
   ]
 }
 
@@ -85,9 +81,5 @@ export interface OpentofuorgPackage {
     "1.7.4",
     "1.7.3",
     "1.6.0.3"
-  ];
-  fullPath: "opentofu.org";
-  aliases: readonly [
-    "tofu"
   ];
 }

@@ -21,8 +21,7 @@ export const theoraorgPackage: PkgxPackage = {
   "versions": [
     "1.2.0",
     "1.1.1"
-  ],
-  "fullPath": "theora.org"
+  ]
 }
 
 export interface TheoraorgPackage {
@@ -43,5 +42,4 @@ export interface TheoraorgPackage {
     "1.2.0",
     "1.1.1"
   ];
-  fullPath: "theora.org";
 }

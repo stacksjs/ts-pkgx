@@ -34,8 +34,7 @@ export const lxmldePackage: PkgxPackage = {
     "5.0.0",
     "4.9.4",
     "4.9.3"
-  ],
-  "fullPath": "lxml.de"
+  ]
 }
 
 export interface LxmldePackage {
@@ -69,5 +68,4 @@ export interface LxmldePackage {
     "4.9.4",
     "4.9.3"
   ];
-  fullPath: "lxml.de";
 }

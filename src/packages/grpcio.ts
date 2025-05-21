@@ -76,8 +76,7 @@ export const grpcioPackage: PkgxPackage = {
     "1.56.4",
     "1.56.3",
     "1.55.4"
-  ],
-  "fullPath": "grpc.io"
+  ]
 }
 
 export interface GrpcioPackage {
@@ -153,5 +152,4 @@ export interface GrpcioPackage {
     "1.56.3",
     "1.55.4"
   ];
-  fullPath: "grpc.io";
 }

@@ -28,10 +28,6 @@ export const getclipboardappPackage: PkgxPackage = {
     "0.9.1",
     "0.9.0.1",
     "0.10.0"
-  ],
-  "fullPath": "getclipboard.app",
-  "aliases": [
-    "cb"
   ]
 }
 
@@ -59,9 +55,5 @@ export interface GetclipboardappPackage {
     "0.9.1",
     "0.9.0.1",
     "0.10.0"
-  ];
-  fullPath: "getclipboard.app";
-  aliases: readonly [
-    "cb"
   ];
 }

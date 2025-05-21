@@ -69,8 +69,7 @@ export const databrickscomPackage: PkgxPackage = {
     "0.217.0",
     "0.216.0",
     "0.215.0"
-  ],
-  "fullPath": "databricks.com"
+  ]
 }
 
 export interface DatabrickscomPackage {
@@ -139,5 +138,4 @@ export interface DatabrickscomPackage {
     "0.216.0",
     "0.215.0"
   ];
-  fullPath: "databricks.com";
 }

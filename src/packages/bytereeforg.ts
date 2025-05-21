@@ -15,8 +15,7 @@ export const bytereeforgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "bytereef.org"
+  "versions": []
 }
 
 export interface BytereeforgPackage {
@@ -31,5 +30,4 @@ export interface BytereeforgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "bytereef.org";
 }

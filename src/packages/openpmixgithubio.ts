@@ -39,8 +39,7 @@ export const openpmixgithubioPackage: PkgxPackage = {
     "5.0.3",
     "5.0.2",
     "5.0.1"
-  ],
-  "fullPath": "openpmix.github.io"
+  ]
 }
 
 export interface OpenpmixgithubioPackage {
@@ -79,5 +78,4 @@ export interface OpenpmixgithubioPackage {
     "5.0.2",
     "5.0.1"
   ];
-  fullPath: "openpmix.github.io";
 }

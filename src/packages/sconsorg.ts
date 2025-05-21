@@ -29,8 +29,7 @@ export const sconsorgPackage: PkgxPackage = {
     "4.7.0",
     "4.6.0",
     "4.5.2"
-  ],
-  "fullPath": "scons.org"
+  ]
 }
 
 export interface SconsorgPackage {
@@ -59,5 +58,4 @@ export interface SconsorgPackage {
     "4.6.0",
     "4.5.2"
   ];
-  fullPath: "scons.org";
 }

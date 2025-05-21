@@ -26,8 +26,7 @@ export const swigorgPackage: PkgxPackage = {
     "4.2.1",
     "4.2.0",
     "4.1.1"
-  ],
-  "fullPath": "swig.org"
+  ]
 }
 
 export interface SwigorgPackage {
@@ -53,5 +52,4 @@ export interface SwigorgPackage {
     "4.2.0",
     "4.1.1"
   ];
-  fullPath: "swig.org";
 }

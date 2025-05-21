@@ -15,8 +15,7 @@ export const dhruvkbdevPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "dhruvkb.dev"
+  "versions": []
 }
 
 export interface DhruvkbdevPackage {
@@ -31,5 +30,4 @@ export interface DhruvkbdevPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "dhruvkb.dev";
 }

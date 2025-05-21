@@ -23,8 +23,7 @@ export const ladspaorgPackage: PkgxPackage = {
   ],
   "versions": [
     "1.17.0"
-  ],
-  "fullPath": "ladspa.org"
+  ]
 }
 
 export interface LadspaorgPackage {
@@ -47,5 +46,4 @@ export interface LadspaorgPackage {
   versions: readonly [
     "1.17.0"
   ];
-  fullPath: "ladspa.org";
 }

@@ -19,8 +19,7 @@ export const jbig2deccomPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "0.19.0"
-  ],
-  "fullPath": "jbig2dec.com"
+  ]
 }
 
 export interface Jbig2deccomPackage {
@@ -39,5 +38,4 @@ export interface Jbig2deccomPackage {
   versions: readonly [
     "0.19.0"
   ];
-  fullPath: "jbig2dec.com";
 }

@@ -28,8 +28,7 @@ export const aspellnetPackage: PkgxPackage = {
   "versions": [
     "0.60.8.1",
     "0.60.8"
-  ],
-  "fullPath": "aspell.net"
+  ]
 }
 
 export interface AspellnetPackage {
@@ -57,5 +56,4 @@ export interface AspellnetPackage {
     "0.60.8.1",
     "0.60.8"
   ];
-  fullPath: "aspell.net";
 }

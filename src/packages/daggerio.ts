@@ -107,8 +107,7 @@ export const daggerioPackage: PkgxPackage = {
     "0.10.2",
     "0.10.1",
     "0.10.0"
-  ],
-  "fullPath": "dagger.io"
+  ]
 }
 
 export interface DaggerioPackage {
@@ -215,5 +214,4 @@ export interface DaggerioPackage {
     "0.10.1",
     "0.10.0"
   ];
-  fullPath: "dagger.io";
 }

@@ -21,8 +21,7 @@ export const asciinemaorgPackage: PkgxPackage = {
   ],
   "versions": [
     "2.4.0"
-  ],
-  "fullPath": "asciinema.org"
+  ]
 }
 
 export interface AsciinemaorgPackage {
@@ -43,5 +42,4 @@ export interface AsciinemaorgPackage {
   versions: readonly [
     "2.4.0"
   ];
-  fullPath: "asciinema.org";
 }

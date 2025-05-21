@@ -27,10 +27,6 @@ export const matiosourceforgeioPackage: PkgxPackage = {
     "1.5.25",
     "1.5.24",
     "1.5.23"
-  ],
-  "fullPath": "matio.sourceforge.io",
-  "aliases": [
-    "libmatio"
   ]
 }
 
@@ -57,9 +53,5 @@ export interface MatiosourceforgeioPackage {
     "1.5.25",
     "1.5.24",
     "1.5.23"
-  ];
-  fullPath: "matio.sourceforge.io";
-  aliases: readonly [
-    "libmatio"
   ];
 }

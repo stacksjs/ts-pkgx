@@ -72,8 +72,7 @@ export const kubesharkcoPackage: PkgxPackage = {
     "51.0.18",
     "51.0.14",
     "51.0.0"
-  ],
-  "fullPath": "kubeshark.co"
+  ]
 }
 
 export interface KubesharkcoPackage {
@@ -145,5 +144,4 @@ export interface KubesharkcoPackage {
     "51.0.14",
     "51.0.0"
   ];
-  fullPath: "kubeshark.co";
 }

@@ -15,8 +15,7 @@ export const libtomnetPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "libtom.net"
+  "versions": []
 }
 
 export interface LibtomnetPackage {
@@ -31,5 +30,4 @@ export interface LibtomnetPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "libtom.net";
 }

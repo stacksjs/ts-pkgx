@@ -15,8 +15,7 @@ export const githubcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "github.com"
+  "versions": []
 }
 
 export interface GithubcomPackage {
@@ -31,5 +30,4 @@ export interface GithubcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "github.com";
 }

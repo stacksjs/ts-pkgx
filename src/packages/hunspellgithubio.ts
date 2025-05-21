@@ -29,8 +29,7 @@ export const hunspellgithubioPackage: PkgxPackage = {
   ],
   "versions": [
     "1.7.2"
-  ],
-  "fullPath": "hunspell.github.io"
+  ]
 }
 
 export interface HunspellgithubioPackage {
@@ -59,5 +58,4 @@ export interface HunspellgithubioPackage {
   versions: readonly [
     "1.7.2"
   ];
-  fullPath: "hunspell.github.io";
 }

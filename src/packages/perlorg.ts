@@ -61,10 +61,6 @@ export const perlorgPackage: PkgxPackage = {
     "5.36.0",
     "5.34.3",
     "5.34.2"
-  ],
-  "fullPath": "perl.org",
-  "aliases": [
-    "perl"
   ]
 }
 
@@ -125,9 +121,5 @@ export interface PerlorgPackage {
     "5.36.0",
     "5.34.3",
     "5.34.2"
-  ];
-  fullPath: "perl.org";
-  aliases: readonly [
-    "perl"
   ];
 }

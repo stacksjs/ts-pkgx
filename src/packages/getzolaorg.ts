@@ -24,10 +24,6 @@ export const getzolaorgPackage: PkgxPackage = {
     "0.19.0",
     "0.18.0",
     "0.17.2"
-  ],
-  "fullPath": "getzola.org",
-  "aliases": [
-    "zola"
   ]
 }
 
@@ -51,9 +47,5 @@ export interface GetzolaorgPackage {
     "0.19.0",
     "0.18.0",
     "0.17.2"
-  ];
-  fullPath: "getzola.org";
-  aliases: readonly [
-    "zola"
   ];
 }

@@ -64,6 +64,7 @@ export const terraformioPackage: PkgxPackage = {
     "1.3.9",
     "1.3.10",
     "1.2.9",
+    "1.12.1",
     "1.12.0",
     "1.11.4",
     "1.11.3",
@@ -91,8 +92,7 @@ export const terraformioPackage: PkgxPackage = {
     "0.12.20",
     "0.12.0",
     "0.11.12"
-  ],
-  "fullPath": "terraform.io"
+  ]
 }
 
 export interface TerraformioPackage {
@@ -155,6 +155,7 @@ export interface TerraformioPackage {
     "1.3.9",
     "1.3.10",
     "1.2.9",
+    "1.12.1",
     "1.12.0",
     "1.11.4",
     "1.11.3",
@@ -183,5 +184,4 @@ export interface TerraformioPackage {
     "0.12.0",
     "0.11.12"
   ];
-  fullPath: "terraform.io";
 }

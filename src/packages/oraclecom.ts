@@ -15,8 +15,7 @@ export const oraclecomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "oracle.com"
+  "versions": []
 }
 
 export interface OraclecomPackage {
@@ -31,5 +30,4 @@ export interface OraclecomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "oracle.com";
 }

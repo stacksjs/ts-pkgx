@@ -22,10 +22,6 @@ export const s3toolsorgPackage: PkgxPackage = {
   "versions": [
     "2.4.0",
     "2.3.0"
-  ],
-  "fullPath": "s3tools.org",
-  "aliases": [
-    "s3cmd"
   ]
 }
 
@@ -47,9 +43,5 @@ export interface S3toolsorgPackage {
   versions: readonly [
     "2.4.0",
     "2.3.0"
-  ];
-  fullPath: "s3tools.org";
-  aliases: readonly [
-    "s3cmd"
   ];
 }

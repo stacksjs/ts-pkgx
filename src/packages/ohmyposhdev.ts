@@ -31,6 +31,7 @@ export const ohmyposhdevPackage: PkgxPackage = {
     "25.4.1",
     "25.4.0",
     "25.3.0",
+    "25.23.2",
     "25.23.1",
     "25.23.0",
     "25.22.0",
@@ -287,10 +288,6 @@ export const ohmyposhdevPackage: PkgxPackage = {
     "19.11.1",
     "19.11.0",
     "19.10.0"
-  ],
-  "fullPath": "ohmyposh.dev",
-  "aliases": [
-    "oh-my-posh"
   ]
 }
 
@@ -321,6 +318,7 @@ export interface OhmyposhdevPackage {
     "25.4.1",
     "25.4.0",
     "25.3.0",
+    "25.23.2",
     "25.23.1",
     "25.23.0",
     "25.22.0",
@@ -577,9 +575,5 @@ export interface OhmyposhdevPackage {
     "19.11.1",
     "19.11.0",
     "19.10.0"
-  ];
-  fullPath: "ohmyposh.dev";
-  aliases: readonly [
-    "oh-my-posh"
   ];
 }

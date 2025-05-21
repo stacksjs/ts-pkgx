@@ -49,8 +49,7 @@ export const helmshPackage: PkgxPackage = {
     "3.11.3",
     "3.11.2",
     "3.11.1"
-  ],
-  "fullPath": "helm.sh"
+  ]
 }
 
 export interface HelmshPackage {
@@ -99,5 +98,4 @@ export interface HelmshPackage {
     "3.11.2",
     "3.11.1"
   ];
-  fullPath: "helm.sh";
 }

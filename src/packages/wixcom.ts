@@ -15,8 +15,7 @@ export const wixcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "wix.com"
+  "versions": []
 }
 
 export interface WixcomPackage {
@@ -31,5 +30,4 @@ export interface WixcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "wix.com";
 }

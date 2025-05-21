@@ -20,10 +20,6 @@ export const sdkmanioPackage: PkgxPackage = {
   "versions": [
     "5.19.0",
     "5.18.2"
-  ],
-  "fullPath": "sdkman.io",
-  "aliases": [
-    "sdkman-init.sh"
   ]
 }
 
@@ -43,9 +39,5 @@ export interface SdkmanioPackage {
   versions: readonly [
     "5.19.0",
     "5.18.2"
-  ];
-  fullPath: "sdkman.io";
-  aliases: readonly [
-    "sdkman-init.sh"
   ];
 }

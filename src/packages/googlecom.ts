@@ -15,8 +15,7 @@ export const googlecomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "google.com"
+  "versions": []
 }
 
 export interface GooglecomPackage {
@@ -31,5 +30,4 @@ export interface GooglecomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "google.com";
 }

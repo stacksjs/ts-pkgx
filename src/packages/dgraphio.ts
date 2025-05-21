@@ -28,8 +28,7 @@ export const dgraphioPackage: PkgxPackage = {
     "24.0.0",
     "23.1.1",
     "23.1.0"
-  ],
-  "fullPath": "dgraph.io"
+  ]
 }
 
 export interface DgraphioPackage {
@@ -57,5 +56,4 @@ export interface DgraphioPackage {
     "23.1.1",
     "23.1.0"
   ];
-  fullPath: "dgraph.io";
 }

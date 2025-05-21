@@ -36,8 +36,7 @@ export const mpvioPackage: PkgxPackage = {
     "0.40.0",
     "0.39.0",
     "0.38.0"
-  ],
-  "fullPath": "mpv.io"
+  ]
 }
 
 export interface MpvioPackage {
@@ -73,5 +72,4 @@ export interface MpvioPackage {
     "0.39.0",
     "0.38.0"
   ];
-  fullPath: "mpv.io";
 }

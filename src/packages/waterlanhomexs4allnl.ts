@@ -15,8 +15,7 @@ export const waterlanhomexs4allnlPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "waterlan.home.xs4all.nl"
+  "versions": []
 }
 
 export interface Waterlanhomexs4allnlPackage {
@@ -31,5 +30,4 @@ export interface Waterlanhomexs4allnlPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "waterlan.home.xs4all.nl";
 }

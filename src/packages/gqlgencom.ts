@@ -55,8 +55,7 @@ export const gqlgencomPackage: PkgxPackage = {
     "0.17.39",
     "0.17.38",
     "0.17.37"
-  ],
-  "fullPath": "gqlgen.com"
+  ]
 }
 
 export interface GqlgencomPackage {
@@ -111,5 +110,4 @@ export interface GqlgencomPackage {
     "0.17.38",
     "0.17.37"
   ];
-  fullPath: "gqlgen.com";
 }

@@ -36,10 +36,6 @@ export const runatlantisioPackage: PkgxPackage = {
     "0.27.0",
     "0.26.0",
     "0.25.0"
-  ],
-  "fullPath": "runatlantis.io",
-  "aliases": [
-    "atlantis"
   ]
 }
 
@@ -75,9 +71,5 @@ export interface RunatlantisioPackage {
     "0.27.0",
     "0.26.0",
     "0.25.0"
-  ];
-  fullPath: "runatlantis.io";
-  aliases: readonly [
-    "atlantis"
   ];
 }

@@ -15,8 +15,7 @@ export const catborgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "catb.org"
+  "versions": []
 }
 
 export interface CatborgPackage {
@@ -31,5 +30,4 @@ export interface CatborgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "catb.org";
 }

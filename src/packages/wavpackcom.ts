@@ -24,8 +24,7 @@ export const wavpackcomPackage: PkgxPackage = {
     "5.8.1",
     "5.8.0",
     "5.7.0"
-  ],
-  "fullPath": "wavpack.com"
+  ]
 }
 
 export interface WavpackcomPackage {
@@ -49,5 +48,4 @@ export interface WavpackcomPackage {
     "5.8.0",
     "5.7.0"
   ];
-  fullPath: "wavpack.com";
 }

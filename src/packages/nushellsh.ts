@@ -65,8 +65,7 @@ export const nushellshPackage: PkgxPackage = {
     "0.102.0",
     "0.101.0",
     "0.100.0"
-  ],
-  "fullPath": "nushell.sh"
+  ]
 }
 
 export interface NushellshPackage {
@@ -131,5 +130,4 @@ export interface NushellshPackage {
     "0.101.0",
     "0.100.0"
   ];
-  fullPath: "nushell.sh";
 }

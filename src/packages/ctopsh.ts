@@ -19,8 +19,7 @@ export const ctopshPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "0.7.7"
-  ],
-  "fullPath": "ctop.sh"
+  ]
 }
 
 export interface CtopshPackage {
@@ -39,5 +38,4 @@ export interface CtopshPackage {
   versions: readonly [
     "0.7.7"
   ];
-  fullPath: "ctop.sh";
 }

@@ -15,8 +15,7 @@ export const logologicalorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "logological.org"
+  "versions": []
 }
 
 export interface LogologicalorgPackage {
@@ -31,5 +30,4 @@ export interface LogologicalorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "logological.org";
 }

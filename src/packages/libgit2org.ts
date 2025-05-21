@@ -31,10 +31,6 @@ export const libgit2orgPackage: PkgxPackage = {
     "1.7.0",
     "1.6.5",
     "1.6.4"
-  ],
-  "fullPath": "libgit2.org",
-  "aliases": [
-    "git2"
   ]
 }
 
@@ -65,9 +61,5 @@ export interface Libgit2orgPackage {
     "1.7.0",
     "1.6.5",
     "1.6.4"
-  ];
-  fullPath: "libgit2.org";
-  aliases: readonly [
-    "git2"
   ];
 }

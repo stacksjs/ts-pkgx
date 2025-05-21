@@ -47,10 +47,6 @@ export const openexrcomPackage: PkgxPackage = {
     "3.1.11",
     "3.1.10",
     "2.5.10"
-  ],
-  "fullPath": "openexr.com",
-  "aliases": [
-    "exr"
   ]
 }
 
@@ -97,9 +93,5 @@ export interface OpenexrcomPackage {
     "3.1.11",
     "3.1.10",
     "2.5.10"
-  ];
-  fullPath: "openexr.com";
-  aliases: readonly [
-    "exr"
   ];
 }

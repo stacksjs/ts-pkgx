@@ -18,6 +18,7 @@ export const ipfstechPackage: PkgxPackage = {
   "companions": [],
   "dependencies": [],
   "versions": [
+    "0.35.0",
     "0.34.1",
     "0.34.0",
     "0.33.2",
@@ -45,8 +46,7 @@ export const ipfstechPackage: PkgxPackage = {
     "0.18.0",
     "0.17.0",
     "0.16.0"
-  ],
-  "fullPath": "ipfs.tech"
+  ]
 }
 
 export interface IpfstechPackage {
@@ -63,6 +63,7 @@ export interface IpfstechPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [
+    "0.35.0",
     "0.34.1",
     "0.34.0",
     "0.33.2",
@@ -91,5 +92,4 @@ export interface IpfstechPackage {
     "0.17.0",
     "0.16.0"
   ];
-  fullPath: "ipfs.tech";
 }

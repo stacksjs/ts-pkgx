@@ -32,8 +32,7 @@ export const kluctlioPackage: PkgxPackage = {
     "2.22.1",
     "2.22.0",
     "2.21.2"
-  ],
-  "fullPath": "kluctl.io"
+  ]
 }
 
 export interface KluctlioPackage {
@@ -65,5 +64,4 @@ export interface KluctlioPackage {
     "2.22.0",
     "2.21.2"
   ];
-  fullPath: "kluctl.io";
 }

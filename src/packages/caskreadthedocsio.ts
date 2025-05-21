@@ -22,8 +22,7 @@ export const caskreadthedocsioPackage: PkgxPackage = {
   ],
   "versions": [
     "0.9.0"
-  ],
-  "fullPath": "cask.readthedocs.io"
+  ]
 }
 
 export interface CaskreadthedocsioPackage {
@@ -45,5 +44,4 @@ export interface CaskreadthedocsioPackage {
   versions: readonly [
     "0.9.0"
   ];
-  fullPath: "cask.readthedocs.io";
 }

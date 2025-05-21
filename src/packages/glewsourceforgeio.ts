@@ -20,8 +20,7 @@ export const glewsourceforgeioPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "2.2.0"
-  ],
-  "fullPath": "glew.sourceforge.io"
+  ]
 }
 
 export interface GlewsourceforgeioPackage {
@@ -41,5 +40,4 @@ export interface GlewsourceforgeioPackage {
   versions: readonly [
     "2.2.0"
   ];
-  fullPath: "glew.sourceforge.io";
 }

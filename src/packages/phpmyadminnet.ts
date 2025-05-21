@@ -20,8 +20,7 @@ export const phpmyadminnetPackage: PkgxPackage = {
   "versions": [
     "5.2.2",
     "5.2.1"
-  ],
-  "fullPath": "phpmyadmin.net"
+  ]
 }
 
 export interface PhpmyadminnetPackage {
@@ -41,5 +40,4 @@ export interface PhpmyadminnetPackage {
     "5.2.2",
     "5.2.1"
   ];
-  fullPath: "phpmyadmin.net";
 }

@@ -34,8 +34,7 @@ export const po4aorgPackage: PkgxPackage = {
     "0.71.0",
     "0.70.0",
     "0.69.0"
-  ],
-  "fullPath": "po4a.org"
+  ]
 }
 
 export interface Po4aorgPackage {
@@ -69,5 +68,4 @@ export interface Po4aorgPackage {
     "0.70.0",
     "0.69.0"
   ];
-  fullPath: "po4a.org";
 }

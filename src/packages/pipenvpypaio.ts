@@ -66,8 +66,7 @@ export const pipenvpypaioPackage: PkgxPackage = {
     "2023.11.14",
     "2023.10.3",
     "2023.10.24"
-  ],
-  "fullPath": "pipenv.pypa.io"
+  ]
 }
 
 export interface PipenvpypaioPackage {
@@ -133,5 +132,4 @@ export interface PipenvpypaioPackage {
     "2023.10.3",
     "2023.10.24"
   ];
-  fullPath: "pipenv.pypa.io";
 }

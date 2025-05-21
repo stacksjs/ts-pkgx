@@ -31,8 +31,7 @@ export const ccachedevPackage: PkgxPackage = {
     "4.10.2",
     "4.10.1",
     "4.10.0"
-  ],
-  "fullPath": "ccache.dev"
+  ]
 }
 
 export interface CcachedevPackage {
@@ -63,5 +62,4 @@ export interface CcachedevPackage {
     "4.10.1",
     "4.10.0"
   ];
-  fullPath: "ccache.dev";
 }

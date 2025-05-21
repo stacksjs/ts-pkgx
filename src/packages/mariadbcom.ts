@@ -15,8 +15,7 @@ export const mariadbcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "mariadb.com"
+  "versions": []
 }
 
 export interface MariadbcomPackage {
@@ -31,5 +30,4 @@ export interface MariadbcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "mariadb.com";
 }

@@ -29,8 +29,7 @@ export const spawnlinkPackage: PkgxPackage = {
     "2.37.0",
     "2.36.0",
     "2.35.1"
-  ],
-  "fullPath": "spawn.link"
+  ]
 }
 
 export interface SpawnlinkPackage {
@@ -59,5 +58,4 @@ export interface SpawnlinkPackage {
     "2.36.0",
     "2.35.1"
   ];
-  fullPath: "spawn.link";
 }

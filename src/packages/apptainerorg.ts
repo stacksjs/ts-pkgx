@@ -31,8 +31,7 @@ export const apptainerorgPackage: PkgxPackage = {
     "1.3.5",
     "1.3.4",
     "1.3.3"
-  ],
-  "fullPath": "apptainer.org"
+  ]
 }
 
 export interface ApptainerorgPackage {
@@ -63,5 +62,4 @@ export interface ApptainerorgPackage {
     "1.3.4",
     "1.3.3"
   ];
-  fullPath: "apptainer.org";
 }

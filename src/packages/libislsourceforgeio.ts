@@ -20,8 +20,7 @@ export const libislsourceforgeioPackage: PkgxPackage = {
   "versions": [
     "0.27.0",
     "0.26.0"
-  ],
-  "fullPath": "libisl.sourceforge.io"
+  ]
 }
 
 export interface LibislsourceforgeioPackage {
@@ -41,5 +40,4 @@ export interface LibislsourceforgeioPackage {
     "0.27.0",
     "0.26.0"
   ];
-  fullPath: "libisl.sourceforge.io";
 }

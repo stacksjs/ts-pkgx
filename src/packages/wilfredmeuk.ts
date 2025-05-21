@@ -15,8 +15,7 @@ export const wilfredmeukPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "wilfred.me.uk"
+  "versions": []
 }
 
 export interface WilfredmeukPackage {
@@ -31,5 +30,4 @@ export interface WilfredmeukPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "wilfred.me.uk";
 }

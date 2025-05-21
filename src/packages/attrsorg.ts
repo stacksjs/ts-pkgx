@@ -25,8 +25,7 @@ export const attrsorgPackage: PkgxPackage = {
     "24.2.0",
     "24.1.0",
     "23.2.0"
-  ],
-  "fullPath": "attrs.org"
+  ]
 }
 
 export interface AttrsorgPackage {
@@ -51,5 +50,4 @@ export interface AttrsorgPackage {
     "24.1.0",
     "23.2.0"
   ];
-  fullPath: "attrs.org";
 }

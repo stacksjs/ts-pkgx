@@ -34,8 +34,7 @@ export const typstappPackage: PkgxPackage = {
     "0.11.0",
     "0.10.0",
     "0.0.0"
-  ],
-  "fullPath": "typst.app"
+  ]
 }
 
 export interface TypstappPackage {
@@ -69,5 +68,4 @@ export interface TypstappPackage {
     "0.10.0",
     "0.0.0"
   ];
-  fullPath: "typst.app";
 }

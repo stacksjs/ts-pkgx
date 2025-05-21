@@ -15,8 +15,7 @@ export const savannahnongnuorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "savannah.nongnu.org"
+  "versions": []
 }
 
 export interface SavannahnongnuorgPackage {
@@ -31,5 +30,4 @@ export interface SavannahnongnuorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "savannah.nongnu.org";
 }

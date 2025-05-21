@@ -21,8 +21,7 @@ export const keephqdevPackage: PkgxPackage = {
   ],
   "versions": [
     "0.0.0"
-  ],
-  "fullPath": "keephq.dev"
+  ]
 }
 
 export interface KeephqdevPackage {
@@ -43,5 +42,4 @@ export interface KeephqdevPackage {
   versions: readonly [
     "0.0.0"
   ];
-  fullPath: "keephq.dev";
 }

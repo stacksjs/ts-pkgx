@@ -15,8 +15,7 @@ export const grafanacomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "grafana.com"
+  "versions": []
 }
 
 export interface GrafanacomPackage {
@@ -31,5 +30,4 @@ export interface GrafanacomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "grafana.com";
 }

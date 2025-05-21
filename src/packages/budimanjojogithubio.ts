@@ -15,8 +15,7 @@ export const budimanjojogithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "budimanjojo.github.io"
+  "versions": []
 }
 
 export interface BudimanjojogithubioPackage {
@@ -31,5 +30,4 @@ export interface BudimanjojogithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "budimanjojo.github.io";
 }

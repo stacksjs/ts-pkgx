@@ -25,8 +25,7 @@ export const classicyarnpkgcomPackage: PkgxPackage = {
     "1.22.21",
     "1.22.20",
     "1.22.19"
-  ],
-  "fullPath": "classic.yarnpkg.com"
+  ]
 }
 
 export interface ClassicyarnpkgcomPackage {
@@ -51,5 +50,4 @@ export interface ClassicyarnpkgcomPackage {
     "1.22.20",
     "1.22.19"
   ];
-  fullPath: "classic.yarnpkg.com";
 }

@@ -15,8 +15,7 @@ export const connectrpcorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "connectrpc.org"
+  "versions": []
 }
 
 export interface ConnectrpcorgPackage {
@@ -31,5 +30,4 @@ export interface ConnectrpcorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "connectrpc.org";
 }

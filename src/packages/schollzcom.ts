@@ -15,8 +15,7 @@ export const schollzcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "schollz.com"
+  "versions": []
 }
 
 export interface SchollzcomPackage {
@@ -31,5 +30,4 @@ export interface SchollzcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "schollz.com";
 }

@@ -35,8 +35,7 @@ export const opensearchorgPackage: PkgxPackage = {
     "2.13.0",
     "2.12.0",
     "2.11.1"
-  ],
-  "fullPath": "opensearch.org"
+  ]
 }
 
 export interface OpensearchorgPackage {
@@ -71,5 +70,4 @@ export interface OpensearchorgPackage {
     "2.12.0",
     "2.11.1"
   ];
-  fullPath: "opensearch.org";
 }

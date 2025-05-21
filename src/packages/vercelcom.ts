@@ -15,8 +15,7 @@ export const vercelcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "vercel.com"
+  "versions": []
 }
 
 export interface VercelcomPackage {
@@ -31,5 +30,4 @@ export interface VercelcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "vercel.com";
 }

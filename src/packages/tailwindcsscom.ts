@@ -59,8 +59,7 @@ export const tailwindcsscomPackage: PkgxPackage = {
     "3.4.12",
     "3.4.11",
     "3.4.10"
-  ],
-  "fullPath": "tailwindcss.com"
+  ]
 }
 
 export interface TailwindcsscomPackage {
@@ -119,5 +118,4 @@ export interface TailwindcsscomPackage {
     "3.4.11",
     "3.4.10"
   ];
-  fullPath: "tailwindcss.com";
 }

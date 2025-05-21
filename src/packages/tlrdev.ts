@@ -25,10 +25,6 @@ export const tlrdevPackage: PkgxPackage = {
     "2.0.5",
     "2.0.4",
     "1.5.6"
-  ],
-  "fullPath": "tlr.dev",
-  "aliases": [
-    "teller"
   ]
 }
 
@@ -53,9 +49,5 @@ export interface TlrdevPackage {
     "2.0.5",
     "2.0.4",
     "1.5.6"
-  ];
-  fullPath: "tlr.dev";
-  aliases: readonly [
-    "teller"
   ];
 }

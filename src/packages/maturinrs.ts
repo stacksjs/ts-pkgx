@@ -37,8 +37,7 @@ export const maturinrsPackage: PkgxPackage = {
     "1.5.1",
     "1.5.0",
     "1.4.0"
-  ],
-  "fullPath": "maturin.rs"
+  ]
 }
 
 export interface MaturinrsPackage {
@@ -75,5 +74,4 @@ export interface MaturinrsPackage {
     "1.5.0",
     "1.4.0"
   ];
-  fullPath: "maturin.rs";
 }

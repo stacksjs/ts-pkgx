@@ -45,8 +45,7 @@ export const xcfiledevPackage: PkgxPackage = {
     "0.0.142",
     "0.0.111",
     "0.0.110"
-  ],
-  "fullPath": "xcfile.dev"
+  ]
 }
 
 export interface XcfiledevPackage {
@@ -91,5 +90,4 @@ export interface XcfiledevPackage {
     "0.0.111",
     "0.0.110"
   ];
-  fullPath: "xcfile.dev";
 }

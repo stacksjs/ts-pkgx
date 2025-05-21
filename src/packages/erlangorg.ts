@@ -31,6 +31,7 @@ export const erlangorgPackage: PkgxPackage = {
     "gnu.org/gcc/libstdcxx"
   ],
   "versions": [
+    "28.0.0",
     "27.3.4",
     "27.3.3",
     "27.3.2",
@@ -102,8 +103,7 @@ export const erlangorgPackage: PkgxPackage = {
     "24.3.4.13",
     "24.3.4.12",
     "24.3.4.11"
-  ],
-  "fullPath": "erlang.org"
+  ]
 }
 
 export interface ErlangorgPackage {
@@ -133,6 +133,7 @@ export interface ErlangorgPackage {
     "gnu.org/gcc/libstdcxx"
   ];
   versions: readonly [
+    "28.0.0",
     "27.3.4",
     "27.3.3",
     "27.3.2",
@@ -205,5 +206,4 @@ export interface ErlangorgPackage {
     "24.3.4.12",
     "24.3.4.11"
   ];
-  fullPath: "erlang.org";
 }

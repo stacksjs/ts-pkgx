@@ -40,8 +40,7 @@ export const kotlinlangorgPackage: PkgxPackage = {
     "1.9.20",
     "1.9.10",
     "1.9.0"
-  ],
-  "fullPath": "kotlinlang.org"
+  ]
 }
 
 export interface KotlinlangorgPackage {
@@ -81,5 +80,4 @@ export interface KotlinlangorgPackage {
     "1.9.10",
     "1.9.0"
   ];
-  fullPath: "kotlinlang.org";
 }

@@ -15,8 +15,7 @@ export const wkentarogithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "wkentaro.github.io"
+  "versions": []
 }
 
 export interface WkentarogithubioPackage {
@@ -31,5 +30,4 @@ export interface WkentarogithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "wkentaro.github.io";
 }

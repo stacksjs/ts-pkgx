@@ -15,8 +15,7 @@ export const f1bonacc1githubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "f1bonacc1.github.io"
+  "versions": []
 }
 
 export interface F1bonacc1githubioPackage {
@@ -31,5 +30,4 @@ export interface F1bonacc1githubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "f1bonacc1.github.io";
 }

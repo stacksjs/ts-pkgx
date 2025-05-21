@@ -15,8 +15,7 @@ export const cloudflarecomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "cloudflare.com"
+  "versions": []
 }
 
 export interface CloudflarecomPackage {
@@ -31,5 +30,4 @@ export interface CloudflarecomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "cloudflare.com";
 }

@@ -42,8 +42,7 @@ export const k6ioPackage: PkgxPackage = {
     "0.43.1",
     "0.43.0",
     "0.42.0"
-  ],
-  "fullPath": "k6.io"
+  ]
 }
 
 export interface K6ioPackage {
@@ -85,5 +84,4 @@ export interface K6ioPackage {
     "0.43.0",
     "0.42.0"
   ];
-  fullPath: "k6.io";
 }

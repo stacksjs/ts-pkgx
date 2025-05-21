@@ -82,6 +82,8 @@ export const checkovioPackage: PkgxPackage = {
     "3.2.45",
     "3.2.44",
     "3.2.43",
+    "3.2.429",
+    "3.2.428",
     "3.2.427",
     "3.2.426",
     "3.2.425",
@@ -482,8 +484,7 @@ export const checkovioPackage: PkgxPackage = {
     "3.1.32",
     "3.1.31",
     "3.1.30"
-  ],
-  "fullPath": "checkov.io"
+  ]
 }
 
 export interface CheckovioPackage {
@@ -564,6 +565,8 @@ export interface CheckovioPackage {
     "3.2.45",
     "3.2.44",
     "3.2.43",
+    "3.2.429",
+    "3.2.428",
     "3.2.427",
     "3.2.426",
     "3.2.425",
@@ -965,5 +968,4 @@ export interface CheckovioPackage {
     "3.1.31",
     "3.1.30"
   ];
-  fullPath: "checkov.io";
 }

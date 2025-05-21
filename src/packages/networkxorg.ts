@@ -23,8 +23,7 @@ export const networkxorgPackage: PkgxPackage = {
     "3.4.0",
     "3.3.0",
     "3.2.1"
-  ],
-  "fullPath": "networkx.org"
+  ]
 }
 
 export interface NetworkxorgPackage {
@@ -47,5 +46,4 @@ export interface NetworkxorgPackage {
     "3.3.0",
     "3.2.1"
   ];
-  fullPath: "networkx.org";
 }

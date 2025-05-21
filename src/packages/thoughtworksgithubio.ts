@@ -15,8 +15,7 @@ export const thoughtworksgithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "thoughtworks.github.io"
+  "versions": []
 }
 
 export interface ThoughtworksgithubioPackage {
@@ -31,5 +30,4 @@ export interface ThoughtworksgithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "thoughtworks.github.io";
 }

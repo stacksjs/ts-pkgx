@@ -31,8 +31,7 @@ export const logdydevPackage: PkgxPackage = {
     "0.12.0",
     "0.11.0",
     "0.10.0"
-  ],
-  "fullPath": "logdy.dev"
+  ]
 }
 
 export interface LogdydevPackage {
@@ -63,5 +62,4 @@ export interface LogdydevPackage {
     "0.11.0",
     "0.10.0"
   ];
-  fullPath: "logdy.dev";
 }

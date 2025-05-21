@@ -39,10 +39,6 @@ export const jenkinsioPackage: PkgxPackage = {
     "2.440.1",
     "2.426.3",
     "2.426.2"
-  ],
-  "fullPath": "jenkins.io",
-  "aliases": [
-    "jenkins-lts"
   ]
 }
 
@@ -81,9 +77,5 @@ export interface JenkinsioPackage {
     "2.440.1",
     "2.426.3",
     "2.426.2"
-  ];
-  fullPath: "jenkins.io";
-  aliases: readonly [
-    "jenkins-lts"
   ];
 }

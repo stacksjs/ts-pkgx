@@ -137,10 +137,6 @@ export const gohugoioPackage: PkgxPackage = {
     "0.107.0",
     "0.105.0",
     "0.104.3"
-  ],
-  "fullPath": "gohugo.io",
-  "aliases": [
-    "hugo"
   ]
 }
 
@@ -277,9 +273,5 @@ export interface GohugoioPackage {
     "0.107.0",
     "0.105.0",
     "0.104.3"
-  ];
-  fullPath: "gohugo.io";
-  aliases: readonly [
-    "hugo"
   ];
 }

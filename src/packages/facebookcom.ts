@@ -15,8 +15,7 @@ export const facebookcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "facebook.com"
+  "versions": []
 }
 
 export interface FacebookcomPackage {
@@ -31,5 +30,4 @@ export interface FacebookcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "facebook.com";
 }

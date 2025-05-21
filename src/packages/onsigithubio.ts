@@ -15,8 +15,7 @@ export const onsigithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "onsi.github.io"
+  "versions": []
 }
 
 export interface OnsigithubioPackage {
@@ -31,5 +30,4 @@ export interface OnsigithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "onsi.github.io";
 }

@@ -15,8 +15,7 @@ export const fuellabsgithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "fuellabs.github.io"
+  "versions": []
 }
 
 export interface FuellabsgithubioPackage {
@@ -31,5 +30,4 @@ export interface FuellabsgithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "fuellabs.github.io";
 }

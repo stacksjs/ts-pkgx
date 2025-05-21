@@ -18,8 +18,7 @@ export const zeromqorgPackage: PkgxPackage = {
   "versions": [
     "4.3.5",
     "4.3.4"
-  ],
-  "fullPath": "zeromq.org"
+  ]
 }
 
 export interface ZeromqorgPackage {
@@ -37,5 +36,4 @@ export interface ZeromqorgPackage {
     "4.3.5",
     "4.3.4"
   ];
-  fullPath: "zeromq.org";
 }

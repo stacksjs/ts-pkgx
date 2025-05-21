@@ -15,8 +15,7 @@ export const leethomasongithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "leethomason.github.io"
+  "versions": []
 }
 
 export interface LeethomasongithubioPackage {
@@ -31,5 +30,4 @@ export interface LeethomasongithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "leethomason.github.io";
 }

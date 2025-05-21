@@ -15,8 +15,7 @@ export const swaggerioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "swagger.io"
+  "versions": []
 }
 
 export interface SwaggerioPackage {
@@ -31,5 +30,4 @@ export interface SwaggerioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "swagger.io";
 }

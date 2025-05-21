@@ -15,8 +15,7 @@ export const localstackcloudPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "localstack.cloud"
+  "versions": []
 }
 
 export interface LocalstackcloudPackage {
@@ -31,5 +30,4 @@ export interface LocalstackcloudPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "localstack.cloud";
 }

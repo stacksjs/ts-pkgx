@@ -56,8 +56,7 @@ export const langchaincomPackage: PkgxPackage = {
     "0.0.345",
     "0.0.344",
     "0.0.343"
-  ],
-  "fullPath": "langchain.com"
+  ]
 }
 
 export interface LangchaincomPackage {
@@ -113,5 +112,4 @@ export interface LangchaincomPackage {
     "0.0.344",
     "0.0.343"
   ];
-  fullPath: "langchain.com";
 }

@@ -15,8 +15,7 @@ export const eyrieorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "eyrie.org"
+  "versions": []
 }
 
 export interface EyrieorgPackage {
@@ -31,5 +30,4 @@ export interface EyrieorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "eyrie.org";
 }

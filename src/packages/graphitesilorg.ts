@@ -19,10 +19,6 @@ export const graphitesilorgPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "1.3.14"
-  ],
-  "fullPath": "graphite.sil.org",
-  "aliases": [
-    "gr2fonttest"
   ]
 }
 
@@ -41,9 +37,5 @@ export interface GraphitesilorgPackage {
   dependencies: readonly [];
   versions: readonly [
     "1.3.14"
-  ];
-  fullPath: "graphite.sil.org";
-  aliases: readonly [
-    "gr2fonttest"
   ];
 }

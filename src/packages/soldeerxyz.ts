@@ -21,8 +21,7 @@ export const soldeerxyzPackage: PkgxPackage = {
     "0.5.4",
     "0.5.3",
     "0.5.2"
-  ],
-  "fullPath": "soldeer.xyz"
+  ]
 }
 
 export interface SoldeerxyzPackage {
@@ -43,5 +42,4 @@ export interface SoldeerxyzPackage {
     "0.5.3",
     "0.5.2"
   ];
-  fullPath: "soldeer.xyz";
 }

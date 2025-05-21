@@ -15,8 +15,7 @@ export const hadronsorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "hadrons.org"
+  "versions": []
 }
 
 export interface HadronsorgPackage {
@@ -31,5 +30,4 @@ export interface HadronsorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "hadrons.org";
 }

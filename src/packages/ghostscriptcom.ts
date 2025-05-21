@@ -69,8 +69,7 @@ export const ghostscriptcomPackage: PkgxPackage = {
     "10.2.1",
     "10.2.0",
     "10.1.2"
-  ],
-  "fullPath": "ghostscript.com"
+  ]
 }
 
 export interface GhostscriptcomPackage {
@@ -139,5 +138,4 @@ export interface GhostscriptcomPackage {
     "10.2.0",
     "10.1.2"
   ];
-  fullPath: "ghostscript.com";
 }

@@ -15,8 +15,7 @@ export const fairwindscomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "fairwinds.com"
+  "versions": []
 }
 
 export interface FairwindscomPackage {
@@ -31,5 +30,4 @@ export interface FairwindscomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "fairwinds.com";
 }

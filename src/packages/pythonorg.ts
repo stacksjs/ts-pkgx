@@ -179,10 +179,6 @@ export const pythonorgPackage: PkgxPackage = {
     "3.10.1",
     "3.10.0",
     "2.7.18"
-  ],
-  "fullPath": "python.org",
-  "aliases": [
-    "python"
   ]
 }
 
@@ -361,9 +357,5 @@ export interface PythonorgPackage {
     "3.10.1",
     "3.10.0",
     "2.7.18"
-  ];
-  fullPath: "python.org";
-  aliases: readonly [
-    "python"
   ];
 }

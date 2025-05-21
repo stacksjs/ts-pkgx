@@ -24,8 +24,7 @@ export const freetypeorgPackage: PkgxPackage = {
     "2.13.2",
     "2.13.1",
     "2.12.1"
-  ],
-  "fullPath": "freetype.org"
+  ]
 }
 
 export interface FreetypeorgPackage {
@@ -49,5 +48,4 @@ export interface FreetypeorgPackage {
     "2.13.1",
     "2.12.1"
   ];
-  fullPath: "freetype.org";
 }

@@ -69,8 +69,7 @@ export const symfonycomPackage: PkgxPackage = {
     "5.10.2",
     "5.10.1",
     "5.10.0"
-  ],
-  "fullPath": "symfony.com"
+  ]
 }
 
 export interface SymfonycomPackage {
@@ -139,5 +138,4 @@ export interface SymfonycomPackage {
     "5.10.1",
     "5.10.0"
   ];
-  fullPath: "symfony.com";
 }

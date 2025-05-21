@@ -29,10 +29,6 @@ export const sfcgalorgPackage: PkgxPackage = {
     "1.5.1",
     "1.5.0",
     "1.4.1"
-  ],
-  "fullPath": "sfcgal.org",
-  "aliases": [
-    "sfcgal-config"
   ]
 }
 
@@ -61,9 +57,5 @@ export interface SfcgalorgPackage {
     "1.5.1",
     "1.5.0",
     "1.4.1"
-  ];
-  fullPath: "sfcgal.org";
-  aliases: readonly [
-    "sfcgal-config"
   ];
 }

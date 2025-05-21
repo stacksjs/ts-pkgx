@@ -20,8 +20,7 @@ export const liblqrwikidotcomPackage: PkgxPackage = {
   "versions": [
     "0.4.3",
     "0.4.2"
-  ],
-  "fullPath": "liblqr.wikidot.com"
+  ]
 }
 
 export interface LiblqrwikidotcomPackage {
@@ -41,5 +40,4 @@ export interface LiblqrwikidotcomPackage {
     "0.4.3",
     "0.4.2"
   ];
-  fullPath: "liblqr.wikidot.com";
 }

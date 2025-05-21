@@ -51,8 +51,7 @@ export const opensslorgPackage: PkgxPackage = {
     "1.1.1u",
     "1.1.1t",
     "1.1.1s"
-  ],
-  "fullPath": "openssl.org"
+  ]
 }
 
 export interface OpensslorgPackage {
@@ -103,5 +102,4 @@ export interface OpensslorgPackage {
     "1.1.1t",
     "1.1.1s"
   ];
-  fullPath: "openssl.org";
 }

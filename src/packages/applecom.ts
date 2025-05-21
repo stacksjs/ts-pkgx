@@ -15,8 +15,7 @@ export const applecomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "apple.com"
+  "versions": []
 }
 
 export interface ApplecomPackage {
@@ -31,5 +30,4 @@ export interface ApplecomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "apple.com";
 }

@@ -39,8 +39,7 @@ export const terratagioPackage: PkgxPackage = {
     "0.3.1",
     "0.3.0",
     "0.2.6"
-  ],
-  "fullPath": "terratag.io"
+  ]
 }
 
 export interface TerratagioPackage {
@@ -79,5 +78,4 @@ export interface TerratagioPackage {
     "0.3.0",
     "0.2.6"
   ];
-  fullPath: "terratag.io";
 }

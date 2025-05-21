@@ -15,8 +15,7 @@ export const jedisct1githubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "jedisct1.github.io"
+  "versions": []
 }
 
 export interface Jedisct1githubioPackage {
@@ -31,5 +30,4 @@ export interface Jedisct1githubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "jedisct1.github.io";
 }

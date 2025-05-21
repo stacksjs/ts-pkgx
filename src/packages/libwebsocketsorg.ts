@@ -23,8 +23,7 @@ export const libwebsocketsorgPackage: PkgxPackage = {
     "4.3.4",
     "4.3.3",
     "4.3.2"
-  ],
-  "fullPath": "libwebsockets.org"
+  ]
 }
 
 export interface LibwebsocketsorgPackage {
@@ -47,5 +46,4 @@ export interface LibwebsocketsorgPackage {
     "4.3.3",
     "4.3.2"
   ];
-  fullPath: "libwebsockets.org";
 }

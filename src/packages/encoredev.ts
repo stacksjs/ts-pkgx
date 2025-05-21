@@ -21,6 +21,7 @@ export const encoredevPackage: PkgxPackage = {
     "encore.dev/go^1.21"
   ],
   "versions": [
+    "1.47.0",
     "1.46.9",
     "1.46.8",
     "1.46.7",
@@ -71,8 +72,7 @@ export const encoredevPackage: PkgxPackage = {
     "1.27.0",
     "1.26.0",
     "1.25.0"
-  ],
-  "fullPath": "encore.dev"
+  ]
 }
 
 export interface EncoredevPackage {
@@ -92,6 +92,7 @@ export interface EncoredevPackage {
     "encore.dev/go^1.21"
   ];
   versions: readonly [
+    "1.47.0",
     "1.46.9",
     "1.46.8",
     "1.46.7",
@@ -143,5 +144,4 @@ export interface EncoredevPackage {
     "1.26.0",
     "1.25.0"
   ];
-  fullPath: "encore.dev";
 }

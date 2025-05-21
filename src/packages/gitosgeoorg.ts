@@ -15,8 +15,7 @@ export const gitosgeoorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "git.osgeo.org"
+  "versions": []
 }
 
 export interface GitosgeoorgPackage {
@@ -31,5 +30,4 @@ export interface GitosgeoorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "git.osgeo.org";
 }

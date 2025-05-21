@@ -15,8 +15,7 @@ export const crazymaxdevPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "crazymax.dev"
+  "versions": []
 }
 
 export interface CrazymaxdevPackage {
@@ -31,5 +30,4 @@ export interface CrazymaxdevPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "crazymax.dev";
 }

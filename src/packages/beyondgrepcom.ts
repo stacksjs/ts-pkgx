@@ -24,10 +24,6 @@ export const beyondgrepcomPackage: PkgxPackage = {
     "3.8.0",
     "3.7.0",
     "3.6.0"
-  ],
-  "fullPath": "beyondgrep.com",
-  "aliases": [
-    "ack"
   ]
 }
 
@@ -51,9 +47,5 @@ export interface BeyondgrepcomPackage {
     "3.8.0",
     "3.7.0",
     "3.6.0"
-  ];
-  fullPath: "beyondgrep.com";
-  aliases: readonly [
-    "ack"
   ];
 }

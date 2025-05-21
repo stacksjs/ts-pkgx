@@ -15,8 +15,7 @@ export const ciscocomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "cisco.com"
+  "versions": []
 }
 
 export interface CiscocomPackage {
@@ -31,5 +30,4 @@ export interface CiscocomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "cisco.com";
 }

@@ -20,8 +20,7 @@ export const zlibnetPackage: PkgxPackage = {
     "1.3.0",
     "1.2.13",
     "1.2.12"
-  ],
-  "fullPath": "zlib.net"
+  ]
 }
 
 export interface ZlibnetPackage {
@@ -41,5 +40,4 @@ export interface ZlibnetPackage {
     "1.2.13",
     "1.2.12"
   ];
-  fullPath: "zlib.net";
 }

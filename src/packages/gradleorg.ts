@@ -35,8 +35,7 @@ export const gradleorgPackage: PkgxPackage = {
     "8.10.2",
     "8.10.1",
     "8.10.0"
-  ],
-  "fullPath": "gradle.org"
+  ]
 }
 
 export interface GradleorgPackage {
@@ -71,5 +70,4 @@ export interface GradleorgPackage {
     "8.10.1",
     "8.10.0"
   ];
-  fullPath: "gradle.org";
 }

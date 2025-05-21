@@ -15,8 +15,7 @@ export const gnomeorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "gnome.org"
+  "versions": []
 }
 
 export interface GnomeorgPackage {
@@ -31,5 +30,4 @@ export interface GnomeorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "gnome.org";
 }

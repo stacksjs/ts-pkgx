@@ -45,8 +45,7 @@ export const fastlanetoolsPackage: PkgxPackage = {
     "2.213.0",
     "2.212.2",
     "2.212.1"
-  ],
-  "fullPath": "fastlane.tools"
+  ]
 }
 
 export interface FastlanetoolsPackage {
@@ -91,5 +90,4 @@ export interface FastlanetoolsPackage {
     "2.212.2",
     "2.212.1"
   ];
-  fullPath: "fastlane.tools";
 }

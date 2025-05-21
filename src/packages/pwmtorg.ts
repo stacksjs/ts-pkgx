@@ -15,8 +15,7 @@ export const pwmtorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "pwmt.org"
+  "versions": []
 }
 
 export interface PwmtorgPackage {
@@ -31,5 +30,4 @@ export interface PwmtorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "pwmt.org";
 }

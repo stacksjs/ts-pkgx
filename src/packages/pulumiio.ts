@@ -80,6 +80,7 @@ export const pulumiioPackage: PkgxPackage = {
     "3.67.1",
     "3.67.0",
     "3.66.0",
+    "3.171.0",
     "3.170.0",
     "3.169.0",
     "3.168.0",
@@ -165,8 +166,7 @@ export const pulumiioPackage: PkgxPackage = {
     "3.101.1",
     "3.101.0",
     "3.100.0"
-  ],
-  "fullPath": "pulumi.io"
+  ]
 }
 
 export interface PulumiioPackage {
@@ -245,6 +245,7 @@ export interface PulumiioPackage {
     "3.67.1",
     "3.67.0",
     "3.66.0",
+    "3.171.0",
     "3.170.0",
     "3.169.0",
     "3.168.0",
@@ -331,5 +332,4 @@ export interface PulumiioPackage {
     "3.101.0",
     "3.100.0"
   ];
-  fullPath: "pulumi.io";
 }

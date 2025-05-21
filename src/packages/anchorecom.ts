@@ -15,8 +15,7 @@ export const anchorecomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "anchore.com"
+  "versions": []
 }
 
 export interface AnchorecomPackage {
@@ -31,5 +30,4 @@ export interface AnchorecomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "anchore.com";
 }

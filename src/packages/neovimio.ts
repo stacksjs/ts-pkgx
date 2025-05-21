@@ -34,10 +34,6 @@ export const neovimioPackage: PkgxPackage = {
     "0.10.2",
     "0.10.1",
     "0.10.0"
-  ],
-  "fullPath": "neovim.io",
-  "aliases": [
-    "nvim"
   ]
 }
 
@@ -71,9 +67,5 @@ export interface NeovimioPackage {
     "0.10.2",
     "0.10.1",
     "0.10.0"
-  ];
-  fullPath: "neovim.io";
-  aliases: readonly [
-    "nvim"
   ];
 }

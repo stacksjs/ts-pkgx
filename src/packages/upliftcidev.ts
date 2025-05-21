@@ -23,8 +23,7 @@ export const upliftcidevPackage: PkgxPackage = {
     "2.24.0",
     "2.23.0",
     "2.22.0"
-  ],
-  "fullPath": "upliftci.dev"
+  ]
 }
 
 export interface UpliftcidevPackage {
@@ -47,5 +46,4 @@ export interface UpliftcidevPackage {
     "2.23.0",
     "2.22.0"
   ];
-  fullPath: "upliftci.dev";
 }

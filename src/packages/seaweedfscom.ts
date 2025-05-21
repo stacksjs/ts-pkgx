@@ -27,8 +27,7 @@ export const seaweedfscomPackage: PkgxPackage = {
     "3.81.0",
     "3.80.0",
     "3.79.0"
-  ],
-  "fullPath": "seaweedfs.com"
+  ]
 }
 
 export interface SeaweedfscomPackage {
@@ -55,5 +54,4 @@ export interface SeaweedfscomPackage {
     "3.80.0",
     "3.79.0"
   ];
-  fullPath: "seaweedfs.com";
 }

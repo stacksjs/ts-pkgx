@@ -46,8 +46,7 @@ export const radicleorgPackage: PkgxPackage = {
   ],
   "versions": [
     "0.6.1"
-  ],
-  "fullPath": "radicle.org"
+  ]
 }
 
 export interface RadicleorgPackage {
@@ -93,5 +92,4 @@ export interface RadicleorgPackage {
   versions: readonly [
     "0.6.1"
   ];
-  fullPath: "radicle.org";
 }

@@ -35,10 +35,6 @@ export const pcscliteapdufrPackage: PkgxPackage = {
     "2.0.2",
     "2.0.1",
     "2.0.0"
-  ],
-  "fullPath": "pcsclite.apdu.fr",
-  "aliases": [
-    "pcsc-lite"
   ]
 }
 
@@ -73,9 +69,5 @@ export interface PcscliteapdufrPackage {
     "2.0.2",
     "2.0.1",
     "2.0.0"
-  ];
-  fullPath: "pcsclite.apdu.fr";
-  aliases: readonly [
-    "pcsc-lite"
   ];
 }

@@ -15,8 +15,7 @@ export const hetznercomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "hetzner.com"
+  "versions": []
 }
 
 export interface HetznercomPackage {
@@ -31,5 +30,4 @@ export interface HetznercomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "hetzner.com";
 }

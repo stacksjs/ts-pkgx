@@ -27,8 +27,7 @@ export const unixodbcorgPackage: PkgxPackage = {
   "versions": [
     "2.3.12",
     "2.3.11"
-  ],
-  "fullPath": "unixodbc.org"
+  ]
 }
 
 export interface UnixodbcorgPackage {
@@ -55,5 +54,4 @@ export interface UnixodbcorgPackage {
     "2.3.12",
     "2.3.11"
   ];
-  fullPath: "unixodbc.org";
 }

@@ -33,8 +33,7 @@ export const nghttp2orgPackage: PkgxPackage = {
     "1.53.0",
     "1.52.0",
     "1.51.0"
-  ],
-  "fullPath": "nghttp2.org"
+  ]
 }
 
 export interface Nghttp2orgPackage {
@@ -67,5 +66,4 @@ export interface Nghttp2orgPackage {
     "1.52.0",
     "1.51.0"
   ];
-  fullPath: "nghttp2.org";
 }

@@ -28,8 +28,7 @@ export const numbatdevPackage: PkgxPackage = {
     "1.11.0",
     "1.10.1",
     "1.10.0"
-  ],
-  "fullPath": "numbat.dev"
+  ]
 }
 
 export interface NumbatdevPackage {
@@ -57,5 +56,4 @@ export interface NumbatdevPackage {
     "1.10.1",
     "1.10.0"
   ];
-  fullPath: "numbat.dev";
 }

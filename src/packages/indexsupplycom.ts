@@ -15,8 +15,7 @@ export const indexsupplycomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "indexsupply.com"
+  "versions": []
 }
 
 export interface IndexsupplycomPackage {
@@ -31,5 +30,4 @@ export interface IndexsupplycomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "indexsupply.com";
 }

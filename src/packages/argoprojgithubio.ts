@@ -15,8 +15,7 @@ export const argoprojgithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "argoproj.github.io"
+  "versions": []
 }
 
 export interface ArgoprojgithubioPackage {
@@ -31,5 +30,4 @@ export interface ArgoprojgithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "argoproj.github.io";
 }

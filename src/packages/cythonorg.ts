@@ -39,8 +39,7 @@ export const cythonorgPackage: PkgxPackage = {
     "0.29.37",
     "0.29.36",
     "0.29.35"
-  ],
-  "fullPath": "cython.org"
+  ]
 }
 
 export interface CythonorgPackage {
@@ -79,5 +78,4 @@ export interface CythonorgPackage {
     "0.29.36",
     "0.29.35"
   ];
-  fullPath: "cython.org";
 }

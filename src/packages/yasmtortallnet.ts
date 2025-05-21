@@ -19,8 +19,7 @@ export const yasmtortallnetPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "1.3.0"
-  ],
-  "fullPath": "yasm.tortall.net"
+  ]
 }
 
 export interface YasmtortallnetPackage {
@@ -39,5 +38,4 @@ export interface YasmtortallnetPackage {
   versions: readonly [
     "1.3.0"
   ];
-  fullPath: "yasm.tortall.net";
 }

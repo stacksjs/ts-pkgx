@@ -20,8 +20,7 @@ export const liburcuorgPackage: PkgxPackage = {
     "0.15.2",
     "0.15.1",
     "0.15.0"
-  ],
-  "fullPath": "liburcu.org"
+  ]
 }
 
 export interface LiburcuorgPackage {
@@ -41,5 +40,4 @@ export interface LiburcuorgPackage {
     "0.15.1",
     "0.15.0"
   ];
-  fullPath: "liburcu.org";
 }

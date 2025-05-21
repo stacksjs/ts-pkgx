@@ -15,8 +15,7 @@ export const apollographqlcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "apollographql.com"
+  "versions": []
 }
 
 export interface ApollographqlcomPackage {
@@ -31,5 +30,4 @@ export interface ApollographqlcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "apollographql.com";
 }

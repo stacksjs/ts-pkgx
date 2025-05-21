@@ -15,8 +15,7 @@ export const aomediagooglesourcecomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "aomedia.googlesource.com"
+  "versions": []
 }
 
 export interface AomediagooglesourcecomPackage {
@@ -31,5 +30,4 @@ export interface AomediagooglesourcecomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "aomedia.googlesource.com";
 }

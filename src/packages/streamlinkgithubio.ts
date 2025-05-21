@@ -41,8 +41,7 @@ export const streamlinkgithubioPackage: PkgxPackage = {
     "6.7.0",
     "6.11.0",
     "6.10.0"
-  ],
-  "fullPath": "streamlink.github.io"
+  ]
 }
 
 export interface StreamlinkgithubioPackage {
@@ -83,5 +82,4 @@ export interface StreamlinkgithubioPackage {
     "6.11.0",
     "6.10.0"
   ];
-  fullPath: "streamlink.github.io";
 }

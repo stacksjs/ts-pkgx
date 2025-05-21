@@ -28,8 +28,7 @@ export const nmaporgPackage: PkgxPackage = {
     "7.95.0",
     "7.94.0",
     "7.93.0"
-  ],
-  "fullPath": "nmap.org"
+  ]
 }
 
 export interface NmaporgPackage {
@@ -57,5 +56,4 @@ export interface NmaporgPackage {
     "7.94.0",
     "7.93.0"
   ];
-  fullPath: "nmap.org";
 }

@@ -15,8 +15,7 @@ export const jonasgithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "jonas.github.io"
+  "versions": []
 }
 
 export interface JonasgithubioPackage {
@@ -31,5 +30,4 @@ export interface JonasgithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "jonas.github.io";
 }

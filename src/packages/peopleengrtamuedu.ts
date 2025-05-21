@@ -15,8 +15,7 @@ export const peopleengrtamueduPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "people.engr.tamu.edu"
+  "versions": []
 }
 
 export interface PeopleengrtamueduPackage {
@@ -31,5 +30,4 @@ export interface PeopleengrtamueduPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "people.engr.tamu.edu";
 }

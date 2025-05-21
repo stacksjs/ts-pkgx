@@ -17,8 +17,7 @@ export const veleroioPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "1.16.1"
-  ],
-  "fullPath": "velero.io"
+  ]
 }
 
 export interface VeleroioPackage {
@@ -35,5 +34,4 @@ export interface VeleroioPackage {
   versions: readonly [
     "1.16.1"
   ];
-  fullPath: "velero.io";
 }

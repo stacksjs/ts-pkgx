@@ -17,8 +17,7 @@ export const cmockaorgPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "1.1.7"
-  ],
-  "fullPath": "cmocka.org"
+  ]
 }
 
 export interface CmockaorgPackage {
@@ -35,5 +34,4 @@ export interface CmockaorgPackage {
   versions: readonly [
     "1.1.7"
   ];
-  fullPath: "cmocka.org";
 }

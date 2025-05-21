@@ -53,8 +53,7 @@ export const fliptioPackage: PkgxPackage = {
     "1.45.0",
     "1.44.1",
     "1.44.0"
-  ],
-  "fullPath": "flipt.io"
+  ]
 }
 
 export interface FliptioPackage {
@@ -107,5 +106,4 @@ export interface FliptioPackage {
     "1.44.1",
     "1.44.0"
   ];
-  fullPath: "flipt.io";
 }

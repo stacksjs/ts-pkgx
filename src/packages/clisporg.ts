@@ -23,8 +23,7 @@ export const clisporgPackage: PkgxPackage = {
   ],
   "versions": [
     "2.49.92"
-  ],
-  "fullPath": "clisp.org"
+  ]
 }
 
 export interface ClisporgPackage {
@@ -47,5 +46,4 @@ export interface ClisporgPackage {
   versions: readonly [
     "2.49.92"
   ];
-  fullPath: "clisp.org";
 }

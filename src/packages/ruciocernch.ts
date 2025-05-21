@@ -15,8 +15,7 @@ export const ruciocernchPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "rucio.cern.ch"
+  "versions": []
 }
 
 export interface RuciocernchPackage {
@@ -31,5 +30,4 @@ export interface RuciocernchPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "rucio.cern.ch";
 }

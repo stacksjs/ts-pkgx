@@ -26,8 +26,7 @@ export const libuvorgPackage: PkgxPackage = {
     "1.46.0",
     "1.45.0",
     "1.44.2"
-  ],
-  "fullPath": "libuv.org"
+  ]
 }
 
 export interface LibuvorgPackage {
@@ -53,5 +52,4 @@ export interface LibuvorgPackage {
     "1.45.0",
     "1.44.2"
   ];
-  fullPath: "libuv.org";
 }

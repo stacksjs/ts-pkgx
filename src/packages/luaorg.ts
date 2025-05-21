@@ -26,8 +26,7 @@ export const luaorgPackage: PkgxPackage = {
     "5.4.7",
     "5.4.6",
     "5.4.4"
-  ],
-  "fullPath": "lua.org"
+  ]
 }
 
 export interface LuaorgPackage {
@@ -53,5 +52,4 @@ export interface LuaorgPackage {
     "5.4.6",
     "5.4.4"
   ];
-  fullPath: "lua.org";
 }

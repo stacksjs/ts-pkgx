@@ -22,10 +22,6 @@ export const krewsigsk8sioPackage: PkgxPackage = {
   "versions": [
     "0.4.5",
     "0.4.4"
-  ],
-  "fullPath": "krew.sigs.k8s.io",
-  "aliases": [
-    "kubectl-krew"
   ]
 }
 
@@ -47,9 +43,5 @@ export interface Krewsigsk8sioPackage {
   versions: readonly [
     "0.4.5",
     "0.4.4"
-  ];
-  fullPath: "krew.sigs.k8s.io";
-  aliases: readonly [
-    "kubectl-krew"
   ];
 }

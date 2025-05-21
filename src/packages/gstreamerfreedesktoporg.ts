@@ -15,8 +15,7 @@ export const gstreamerfreedesktoporgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "gstreamer.freedesktop.org"
+  "versions": []
 }
 
 export interface GstreamerfreedesktoporgPackage {
@@ -31,5 +30,4 @@ export interface GstreamerfreedesktoporgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "gstreamer.freedesktop.org";
 }

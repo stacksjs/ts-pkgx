@@ -31,8 +31,7 @@ export const fmtdevPackage: PkgxPackage = {
     "10.1.1",
     "10.1.0",
     "10.0.0"
-  ],
-  "fullPath": "fmt.dev"
+  ]
 }
 
 export interface FmtdevPackage {
@@ -63,5 +62,4 @@ export interface FmtdevPackage {
     "10.1.0",
     "10.0.0"
   ];
-  fullPath: "fmt.dev";
 }

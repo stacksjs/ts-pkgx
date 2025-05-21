@@ -31,8 +31,7 @@ export const hurldevPackage: PkgxPackage = {
     "4.2.0",
     "4.1.0",
     "4.0.0"
-  ],
-  "fullPath": "hurl.dev"
+  ]
 }
 
 export interface HurldevPackage {
@@ -63,5 +62,4 @@ export interface HurldevPackage {
     "4.1.0",
     "4.0.0"
   ];
-  fullPath: "hurl.dev";
 }

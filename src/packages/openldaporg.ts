@@ -42,10 +42,6 @@ export const openldaporgPackage: PkgxPackage = {
     "2.5.17",
     "2.5.16",
     "2.5.15"
-  ],
-  "fullPath": "openldap.org",
-  "aliases": [
-    "ldap"
   ]
 }
 
@@ -87,9 +83,5 @@ export interface OpenldaporgPackage {
     "2.5.17",
     "2.5.16",
     "2.5.15"
-  ];
-  fullPath: "openldap.org";
-  aliases: readonly [
-    "ldap"
   ];
 }

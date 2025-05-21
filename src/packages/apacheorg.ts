@@ -15,8 +15,7 @@ export const apacheorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "apache.org"
+  "versions": []
 }
 
 export interface ApacheorgPackage {
@@ -31,5 +30,4 @@ export interface ApacheorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "apache.org";
 }

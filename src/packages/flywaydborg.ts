@@ -61,8 +61,7 @@ export const flywaydborgPackage: PkgxPackage = {
     "10.11.1",
     "10.11.0",
     "10.10.0"
-  ],
-  "fullPath": "flywaydb.org"
+  ]
 }
 
 export interface FlywaydborgPackage {
@@ -123,5 +122,4 @@ export interface FlywaydborgPackage {
     "10.11.0",
     "10.10.0"
   ];
-  fullPath: "flywaydb.org";
 }

@@ -35,8 +35,7 @@ export const k3dioPackage: PkgxPackage = {
     "5.5.1",
     "5.5.0",
     "5.4.9"
-  ],
-  "fullPath": "k3d.io"
+  ]
 }
 
 export interface K3dioPackage {
@@ -71,5 +70,4 @@ export interface K3dioPackage {
     "5.5.0",
     "5.4.9"
   ];
-  fullPath: "k3d.io";
 }

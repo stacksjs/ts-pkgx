@@ -40,10 +40,6 @@ export const tidbytcomPackage: PkgxPackage = {
     "0.30.1",
     "0.30.0",
     "0.29.1"
-  ],
-  "fullPath": "tidbyt.com",
-  "aliases": [
-    "pixlet"
   ]
 }
 
@@ -83,9 +79,5 @@ export interface TidbytcomPackage {
     "0.30.1",
     "0.30.0",
     "0.29.1"
-  ];
-  fullPath: "tidbyt.com";
-  aliases: readonly [
-    "pixlet"
   ];
 }

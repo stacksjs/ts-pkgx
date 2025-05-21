@@ -23,8 +23,7 @@ export const cpanminusPackage: PkgxPackage = {
     "1.7048.0",
     "1.7047.0",
     "1.7046.0"
-  ],
-  "fullPath": "cpanmin.us"
+  ]
 }
 
 export interface CpanminusPackage {
@@ -47,5 +46,4 @@ export interface CpanminusPackage {
     "1.7047.0",
     "1.7046.0"
   ];
-  fullPath: "cpanmin.us";
 }

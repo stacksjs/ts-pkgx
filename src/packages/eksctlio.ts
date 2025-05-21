@@ -74,8 +74,7 @@ export const eksctlioPackage: PkgxPackage = {
     "0.156.0",
     "0.155.0",
     "0.154.0"
-  ],
-  "fullPath": "eksctl.io"
+  ]
 }
 
 export interface EksctlioPackage {
@@ -149,5 +148,4 @@ export interface EksctlioPackage {
     "0.155.0",
     "0.154.0"
   ];
-  fullPath: "eksctl.io";
 }

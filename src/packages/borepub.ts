@@ -22,8 +22,7 @@ export const borepubPackage: PkgxPackage = {
     "0.5.2",
     "0.5.1",
     "0.5.0"
-  ],
-  "fullPath": "bore.pub"
+  ]
 }
 
 export interface BorepubPackage {
@@ -45,5 +44,4 @@ export interface BorepubPackage {
     "0.5.1",
     "0.5.0"
   ];
-  fullPath: "bore.pub";
 }

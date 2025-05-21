@@ -92,8 +92,7 @@ export const jupyterorgPackage: PkgxPackage = {
     "3.6.5",
     "3.6.4",
     "3.6.3"
-  ],
-  "fullPath": "jupyter.org"
+  ]
 }
 
 export interface JupyterorgPackage {
@@ -185,5 +184,4 @@ export interface JupyterorgPackage {
     "3.6.4",
     "3.6.3"
   ];
-  fullPath: "jupyter.org";
 }

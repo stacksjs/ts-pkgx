@@ -15,8 +15,7 @@ export const charmshPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "charm.sh"
+  "versions": []
 }
 
 export interface CharmshPackage {
@@ -31,5 +30,4 @@ export interface CharmshPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "charm.sh";
 }

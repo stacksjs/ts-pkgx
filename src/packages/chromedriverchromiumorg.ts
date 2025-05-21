@@ -24,8 +24,7 @@ export const chromedriverchromiumorgPackage: PkgxPackage = {
   ],
   "versions": [
     "114.0.5735.90"
-  ],
-  "fullPath": "chromedriver.chromium.org"
+  ]
 }
 
 export interface ChromedriverchromiumorgPackage {
@@ -49,5 +48,4 @@ export interface ChromedriverchromiumorgPackage {
   versions: readonly [
     "114.0.5735.90"
   ];
-  fullPath: "chromedriver.chromium.org";
 }

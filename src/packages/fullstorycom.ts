@@ -15,8 +15,7 @@ export const fullstorycomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "fullstory.com"
+  "versions": []
 }
 
 export interface FullstorycomPackage {
@@ -31,5 +30,4 @@ export interface FullstorycomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "fullstory.com";
 }

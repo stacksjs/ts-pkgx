@@ -19,8 +19,7 @@ export const msgpackorgPackage: PkgxPackage = {
     "6.0.2",
     "6.0.1",
     "6.0.0"
-  ],
-  "fullPath": "msgpack.org"
+  ]
 }
 
 export interface MsgpackorgPackage {
@@ -39,5 +38,4 @@ export interface MsgpackorgPackage {
     "6.0.1",
     "6.0.0"
   ];
-  fullPath: "msgpack.org";
 }

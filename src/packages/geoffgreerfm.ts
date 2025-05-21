@@ -15,8 +15,7 @@ export const geoffgreerfmPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "geoff.greer.fm"
+  "versions": []
 }
 
 export interface GeoffgreerfmPackage {
@@ -31,5 +30,4 @@ export interface GeoffgreerfmPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "geoff.greer.fm";
 }

@@ -48,8 +48,7 @@ export const squawkhqcomPackage: PkgxPackage = {
     "0.24.2",
     "0.24.1",
     "0.24.0"
-  ],
-  "fullPath": "squawkhq.com"
+  ]
 }
 
 export interface SquawkhqcomPackage {
@@ -97,5 +96,4 @@ export interface SquawkhqcomPackage {
     "0.24.1",
     "0.24.0"
   ];
-  fullPath: "squawkhq.com";
 }

@@ -20,6 +20,9 @@ export const terragruntgruntworkioPackage: PkgxPackage = {
     "terraform.io"
   ],
   "versions": [
+    "0.79.3",
+    "0.79.2",
+    "0.79.1",
     "0.79.0",
     "0.78.4",
     "0.78.3",
@@ -356,8 +359,7 @@ export const terragruntgruntworkioPackage: PkgxPackage = {
     "0.45.10",
     "0.45.1",
     "0.45.0"
-  ],
-  "fullPath": "terragrunt.gruntwork.io"
+  ]
 }
 
 export interface TerragruntgruntworkioPackage {
@@ -376,6 +378,9 @@ export interface TerragruntgruntworkioPackage {
     "terraform.io"
   ];
   versions: readonly [
+    "0.79.3",
+    "0.79.2",
+    "0.79.1",
     "0.79.0",
     "0.78.4",
     "0.78.3",
@@ -713,5 +718,4 @@ export interface TerragruntgruntworkioPackage {
     "0.45.1",
     "0.45.0"
   ];
-  fullPath: "terragrunt.gruntwork.io";
 }

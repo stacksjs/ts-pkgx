@@ -56,8 +56,7 @@ export const granteddevPackage: PkgxPackage = {
     "0.23.0",
     "0.22.0",
     "0.21.1"
-  ],
-  "fullPath": "granted.dev"
+  ]
 }
 
 export interface GranteddevPackage {
@@ -113,5 +112,4 @@ export interface GranteddevPackage {
     "0.22.0",
     "0.21.1"
   ];
-  fullPath: "granted.dev";
 }

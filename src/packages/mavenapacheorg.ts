@@ -31,10 +31,6 @@ export const mavenapacheorgPackage: PkgxPackage = {
     "3.9.3",
     "3.8.7",
     "3.6.3"
-  ],
-  "fullPath": "maven.apache.org",
-  "aliases": [
-    "mvn"
   ]
 }
 
@@ -65,9 +61,5 @@ export interface MavenapacheorgPackage {
     "3.9.3",
     "3.8.7",
     "3.6.3"
-  ];
-  fullPath: "maven.apache.org";
-  aliases: readonly [
-    "mvn"
   ];
 }

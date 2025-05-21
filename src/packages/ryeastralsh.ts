@@ -29,8 +29,7 @@ export const ryeastralshPackage: PkgxPackage = {
     "0.38.0",
     "0.37.0",
     "0.36.0"
-  ],
-  "fullPath": "rye.astral.sh"
+  ]
 }
 
 export interface RyeastralshPackage {
@@ -59,5 +58,4 @@ export interface RyeastralshPackage {
     "0.37.0",
     "0.36.0"
   ];
-  fullPath: "rye.astral.sh";
 }

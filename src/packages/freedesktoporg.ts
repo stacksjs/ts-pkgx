@@ -15,8 +15,7 @@ export const freedesktoporgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "freedesktop.org"
+  "versions": []
 }
 
 export interface FreedesktoporgPackage {
@@ -31,5 +30,4 @@ export interface FreedesktoporgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "freedesktop.org";
 }

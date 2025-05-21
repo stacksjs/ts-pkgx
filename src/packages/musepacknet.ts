@@ -28,8 +28,7 @@ export const musepacknetPackage: PkgxPackage = {
   ],
   "versions": [
     "475.0.0"
-  ],
-  "fullPath": "musepack.net"
+  ]
 }
 
 export interface MusepacknetPackage {
@@ -57,5 +56,4 @@ export interface MusepacknetPackage {
   versions: readonly [
     "475.0.0"
   ];
-  fullPath: "musepack.net";
 }

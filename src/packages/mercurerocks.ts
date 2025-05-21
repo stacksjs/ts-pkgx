@@ -29,8 +29,7 @@ export const mercurerocksPackage: PkgxPackage = {
     "0.17.1",
     "0.17.0",
     "0.16.3"
-  ],
-  "fullPath": "mercure.rocks"
+  ]
 }
 
 export interface MercurerocksPackage {
@@ -59,5 +58,4 @@ export interface MercurerocksPackage {
     "0.17.0",
     "0.16.3"
   ];
-  fullPath: "mercure.rocks";
 }

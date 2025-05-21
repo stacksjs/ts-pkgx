@@ -30,8 +30,7 @@ export const mpg123dePackage: PkgxPackage = {
     "1.32.1",
     "1.32.0",
     "1.31.2"
-  ],
-  "fullPath": "mpg123.de"
+  ]
 }
 
 export interface Mpg123dePackage {
@@ -61,5 +60,4 @@ export interface Mpg123dePackage {
     "1.32.0",
     "1.31.2"
   ];
-  fullPath: "mpg123.de";
 }

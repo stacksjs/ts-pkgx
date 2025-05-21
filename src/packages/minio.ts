@@ -19,10 +19,6 @@ export const minioPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "2023.10.25.6.33.25"
-  ],
-  "fullPath": "min.io",
-  "aliases": [
-    "minio"
   ]
 }
 
@@ -41,9 +37,5 @@ export interface MinioPackage {
   dependencies: readonly [];
   versions: readonly [
     "2023.10.25.6.33.25"
-  ];
-  fullPath: "min.io";
-  aliases: readonly [
-    "minio"
   ];
 }

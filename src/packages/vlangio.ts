@@ -32,8 +32,7 @@ export const vlangioPackage: PkgxPackage = {
     "0.3.5",
     "0.3.4",
     "0.3.3"
-  ],
-  "fullPath": "vlang.io"
+  ]
 }
 
 export interface VlangioPackage {
@@ -65,5 +64,4 @@ export interface VlangioPackage {
     "0.3.4",
     "0.3.3"
   ];
-  fullPath: "vlang.io";
 }

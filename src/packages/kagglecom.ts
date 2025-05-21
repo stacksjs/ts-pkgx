@@ -25,8 +25,7 @@ export const kagglecomPackage: PkgxPackage = {
     "1.6.3",
     "1.6.1",
     "1.5.16"
-  ],
-  "fullPath": "kaggle.com"
+  ]
 }
 
 export interface KagglecomPackage {
@@ -51,5 +50,4 @@ export interface KagglecomPackage {
     "1.6.1",
     "1.5.16"
   ];
-  fullPath: "kaggle.com";
 }

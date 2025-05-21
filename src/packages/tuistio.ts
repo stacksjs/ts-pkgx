@@ -15,8 +15,7 @@ export const tuistioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "tuist.io"
+  "versions": []
 }
 
 export interface TuistioPackage {
@@ -31,5 +30,4 @@ export interface TuistioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "tuist.io";
 }

@@ -15,8 +15,7 @@ export const pimalayaorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "pimalaya.org"
+  "versions": []
 }
 
 export interface PimalayaorgPackage {
@@ -31,5 +30,4 @@ export interface PimalayaorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "pimalaya.org";
 }

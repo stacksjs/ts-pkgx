@@ -15,8 +15,7 @@ export const snapletdevPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "snaplet.dev"
+  "versions": []
 }
 
 export interface SnapletdevPackage {
@@ -31,5 +30,4 @@ export interface SnapletdevPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "snaplet.dev";
 }

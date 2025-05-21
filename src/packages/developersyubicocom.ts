@@ -15,8 +15,7 @@ export const developersyubicocomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "developers.yubico.com"
+  "versions": []
 }
 
 export interface DevelopersyubicocomPackage {
@@ -31,5 +30,4 @@ export interface DevelopersyubicocomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "developers.yubico.com";
 }

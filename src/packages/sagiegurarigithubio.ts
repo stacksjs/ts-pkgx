@@ -15,8 +15,7 @@ export const sagiegurarigithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "sagiegurari.github.io"
+  "versions": []
 }
 
 export interface SagiegurarigithubioPackage {
@@ -31,5 +30,4 @@ export interface SagiegurarigithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "sagiegurari.github.io";
 }

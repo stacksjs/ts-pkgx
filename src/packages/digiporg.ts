@@ -15,8 +15,7 @@ export const digiporgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "digip.org"
+  "versions": []
 }
 
 export interface DigiporgPackage {
@@ -31,5 +30,4 @@ export interface DigiporgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "digip.org";
 }

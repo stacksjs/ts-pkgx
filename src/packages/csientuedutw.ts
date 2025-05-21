@@ -15,8 +15,7 @@ export const csientuedutwPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "csie.ntu.edu.tw"
+  "versions": []
 }
 
 export interface CsientuedutwPackage {
@@ -31,5 +30,4 @@ export interface CsientuedutwPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "csie.ntu.edu.tw";
 }

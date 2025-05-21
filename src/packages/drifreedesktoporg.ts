@@ -28,10 +28,6 @@ export const drifreedesktoporgPackage: PkgxPackage = {
     "2.4.117",
     "2.4.116",
     "2.4.100"
-  ],
-  "fullPath": "dri.freedesktop.org",
-  "aliases": [
-    "libdrm"
   ]
 }
 
@@ -59,9 +55,5 @@ export interface DrifreedesktoporgPackage {
     "2.4.117",
     "2.4.116",
     "2.4.100"
-  ];
-  fullPath: "dri.freedesktop.org";
-  aliases: readonly [
-    "libdrm"
   ];
 }

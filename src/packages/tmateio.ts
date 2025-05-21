@@ -24,8 +24,7 @@ export const tmateioPackage: PkgxPackage = {
   ],
   "versions": [
     "2.4.0"
-  ],
-  "fullPath": "tmate.io"
+  ]
 }
 
 export interface TmateioPackage {
@@ -49,5 +48,4 @@ export interface TmateioPackage {
   versions: readonly [
     "2.4.0"
   ];
-  fullPath: "tmate.io";
 }

@@ -57,8 +57,7 @@ export const xpraorgPackage: PkgxPackage = {
     "6.2.0",
     "6.1.3",
     "6.1.2"
-  ],
-  "fullPath": "xpra.org"
+  ]
 }
 
 export interface XpraorgPackage {
@@ -115,5 +114,4 @@ export interface XpraorgPackage {
     "6.1.3",
     "6.1.2"
   ];
-  fullPath: "xpra.org";
 }

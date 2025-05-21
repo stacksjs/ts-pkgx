@@ -21,8 +21,7 @@ export const otssnipttcomPackage: PkgxPackage = {
     "0.3.1",
     "0.3.0",
     "0.2.0"
-  ],
-  "fullPath": "ots.sniptt.com"
+  ]
 }
 
 export interface OtssnipttcomPackage {
@@ -43,5 +42,4 @@ export interface OtssnipttcomPackage {
     "0.3.0",
     "0.2.0"
   ];
-  fullPath: "ots.sniptt.com";
 }

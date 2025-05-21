@@ -17,8 +17,7 @@ export const docbookorgPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "5.1.0"
-  ],
-  "fullPath": "docbook.org"
+  ]
 }
 
 export interface DocbookorgPackage {
@@ -35,5 +34,4 @@ export interface DocbookorgPackage {
   versions: readonly [
     "5.1.0"
   ];
-  fullPath: "docbook.org";
 }

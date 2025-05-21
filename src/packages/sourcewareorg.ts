@@ -15,8 +15,7 @@ export const sourcewareorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "sourceware.org"
+  "versions": []
 }
 
 export interface SourcewareorgPackage {
@@ -31,5 +30,4 @@ export interface SourcewareorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "sourceware.org";
 }

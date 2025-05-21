@@ -71,8 +71,7 @@ export const haskellorgPackage: PkgxPackage = {
     "9.10.1",
     "9.0.2",
     "8.10.7"
-  ],
-  "fullPath": "haskell.org"
+  ]
 }
 
 export interface HaskellorgPackage {
@@ -143,5 +142,4 @@ export interface HaskellorgPackage {
     "9.0.2",
     "8.10.7"
   ];
-  fullPath: "haskell.org";
 }

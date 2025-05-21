@@ -24,10 +24,6 @@ export const libimobiledeviceorgPackage: PkgxPackage = {
   ],
   "versions": [
     "1.3.0"
-  ],
-  "fullPath": "libimobiledevice.org",
-  "aliases": [
-    "idevicedate"
   ]
 }
 
@@ -51,9 +47,5 @@ export interface LibimobiledeviceorgPackage {
   ];
   versions: readonly [
     "1.3.0"
-  ];
-  fullPath: "libimobiledevice.org";
-  aliases: readonly [
-    "idevicedate"
   ];
 }

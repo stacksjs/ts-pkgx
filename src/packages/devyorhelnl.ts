@@ -15,8 +15,7 @@ export const devyorhelnlPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "dev.yorhel.nl"
+  "versions": []
 }
 
 export interface DevyorhelnlPackage {
@@ -31,5 +30,4 @@ export interface DevyorhelnlPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "dev.yorhel.nl";
 }

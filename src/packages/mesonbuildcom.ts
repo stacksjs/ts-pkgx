@@ -46,8 +46,7 @@ export const mesonbuildcomPackage: PkgxPackage = {
     "0.64.1",
     "0.64.0",
     "0.63.3"
-  ],
-  "fullPath": "mesonbuild.com"
+  ]
 }
 
 export interface MesonbuildcomPackage {
@@ -93,5 +92,4 @@ export interface MesonbuildcomPackage {
     "0.64.0",
     "0.63.3"
   ];
-  fullPath: "mesonbuild.com";
 }

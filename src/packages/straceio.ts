@@ -19,8 +19,7 @@ export const straceioPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "6.2.0"
-  ],
-  "fullPath": "strace.io"
+  ]
 }
 
 export interface StraceioPackage {
@@ -39,5 +38,4 @@ export interface StraceioPackage {
   versions: readonly [
     "6.2.0"
   ];
-  fullPath: "strace.io";
 }

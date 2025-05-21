@@ -29,10 +29,6 @@ export const endoflifedatePackage: PkgxPackage = {
     "0.16.0",
     "0.15.0",
     "0.14.0"
-  ],
-  "fullPath": "endoflife.date",
-  "aliases": [
-    "eol"
   ]
 }
 
@@ -61,9 +57,5 @@ export interface EndoflifedatePackage {
     "0.16.0",
     "0.15.0",
     "0.14.0"
-  ];
-  fullPath: "endoflife.date";
-  aliases: readonly [
-    "eol"
   ];
 }

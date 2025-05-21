@@ -17,8 +17,7 @@ export const soxrsourceforgenetPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "0.1.3"
-  ],
-  "fullPath": "soxr.sourceforge.net"
+  ]
 }
 
 export interface SoxrsourceforgenetPackage {
@@ -35,5 +34,4 @@ export interface SoxrsourceforgenetPackage {
   versions: readonly [
     "0.1.3"
   ];
-  fullPath: "soxr.sourceforge.net";
 }

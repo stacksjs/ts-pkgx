@@ -15,8 +15,7 @@ export const khanacademyorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "khanacademy.org"
+  "versions": []
 }
 
 export interface KhanacademyorgPackage {
@@ -31,5 +30,4 @@ export interface KhanacademyorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "khanacademy.org";
 }

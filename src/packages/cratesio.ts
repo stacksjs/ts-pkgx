@@ -15,8 +15,7 @@ export const cratesioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "crates.io"
+  "versions": []
 }
 
 export interface CratesioPackage {
@@ -31,5 +30,4 @@ export interface CratesioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "crates.io";
 }

@@ -15,8 +15,7 @@ export const libpipelinegitlabioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "libpipeline.gitlab.io"
+  "versions": []
 }
 
 export interface LibpipelinegitlabioPackage {
@@ -31,5 +30,4 @@ export interface LibpipelinegitlabioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "libpipeline.gitlab.io";
 }

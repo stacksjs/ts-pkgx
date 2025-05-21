@@ -19,8 +19,7 @@ export const doctavecomPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "0.4.2"
-  ],
-  "fullPath": "doctave.com"
+  ]
 }
 
 export interface DoctavecomPackage {
@@ -39,5 +38,4 @@ export interface DoctavecomPackage {
   versions: readonly [
     "0.4.2"
   ];
-  fullPath: "doctave.com";
 }

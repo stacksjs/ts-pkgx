@@ -22,8 +22,7 @@ export const cscopesourceforgeioPackage: PkgxPackage = {
   ],
   "versions": [
     "15.9.0"
-  ],
-  "fullPath": "cscope.sourceforge.io"
+  ]
 }
 
 export interface CscopesourceforgeioPackage {
@@ -45,5 +44,4 @@ export interface CscopesourceforgeioPackage {
   versions: readonly [
     "15.9.0"
   ];
-  fullPath: "cscope.sourceforge.io";
 }

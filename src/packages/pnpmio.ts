@@ -183,8 +183,7 @@ export const pnpmioPackage: PkgxPackage = {
     "10.10.0",
     "10.1.0",
     "10.0.0"
-  ],
-  "fullPath": "pnpm.io"
+  ]
 }
 
 export interface PnpmioPackage {
@@ -367,5 +366,4 @@ export interface PnpmioPackage {
     "10.1.0",
     "10.0.0"
   ];
-  fullPath: "pnpm.io";
 }

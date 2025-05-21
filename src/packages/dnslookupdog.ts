@@ -21,10 +21,6 @@ export const dnslookupdogPackage: PkgxPackage = {
   ],
   "versions": [
     "0.1.0"
-  ],
-  "fullPath": "dns.lookup.dog",
-  "aliases": [
-    "dog"
   ]
 }
 
@@ -45,9 +41,5 @@ export interface DnslookupdogPackage {
   ];
   versions: readonly [
     "0.1.0"
-  ];
-  fullPath: "dns.lookup.dog";
-  aliases: readonly [
-    "dog"
   ];
 }

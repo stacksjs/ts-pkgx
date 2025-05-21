@@ -109,8 +109,7 @@ export const gdalorgPackage: PkgxPackage = {
     "3.10.2",
     "3.10.1",
     "3.10.0"
-  ],
-  "fullPath": "gdal.org"
+  ]
 }
 
 export interface GdalorgPackage {
@@ -219,5 +218,4 @@ export interface GdalorgPackage {
     "3.10.1",
     "3.10.0"
   ];
-  fullPath: "gdal.org";
 }

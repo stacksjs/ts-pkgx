@@ -58,10 +58,6 @@ export const libvipsorgPackage: PkgxPackage = {
     "8.15.1",
     "8.15.0",
     "8.14.5"
-  ],
-  "fullPath": "libvips.org",
-  "aliases": [
-    "vips"
   ]
 }
 
@@ -119,9 +115,5 @@ export interface LibvipsorgPackage {
     "8.15.1",
     "8.15.0",
     "8.14.5"
-  ];
-  fullPath: "libvips.org";
-  aliases: readonly [
-    "vips"
   ];
 }

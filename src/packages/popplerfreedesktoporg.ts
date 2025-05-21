@@ -66,8 +66,7 @@ export const popplerfreedesktoporgPackage: PkgxPackage = {
     "24.11.0",
     "24.10.0",
     "22.12.0"
-  ],
-  "fullPath": "poppler.freedesktop.org"
+  ]
 }
 
 export interface PopplerfreedesktoporgPackage {
@@ -133,5 +132,4 @@ export interface PopplerfreedesktoporgPackage {
     "24.10.0",
     "22.12.0"
   ];
-  fullPath: "poppler.freedesktop.org";
 }

@@ -48,6 +48,7 @@
     "demo": "bun run src/demo.ts",
     "generate:package": "bun run src/tools/generatePackageData.ts",
     "generate:index": "bun run src/tools/generateIndex.ts",
+    "update:packages": "bun run src/tools/updatePackages.ts",
     "test:renderer": "bun run src/tools/testRenderer.ts",
     "test:yaml": "bun run src/tools/testYamlFetcher.ts",
     "test:packages": "bun run src/tools/runTests.ts",
@@ -63,7 +64,8 @@
     "preview:docs": "bun --bun vitepress preview docs",
     "typecheck": "bun --bun tsc --noEmit",
     "pkgx:fetch": "bun bin/cli.ts fetch",
-    "pkgx:fetch-all": "bun bin/cli.ts fetch-all"
+    "pkgx:fetch-all": "bun bin/cli.ts fetch-all",
+    "pkgx:update": "bun run update:packages"
   },
   "dependencies": {
     "playwright": "^1.52.0"

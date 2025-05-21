@@ -29,8 +29,7 @@ export const kindsigsk8sioPackage: PkgxPackage = {
     "0.21.0",
     "0.20.0",
     "0.19.0"
-  ],
-  "fullPath": "kind.sigs.k8s.io"
+  ]
 }
 
 export interface Kindsigsk8sioPackage {
@@ -59,5 +58,4 @@ export interface Kindsigsk8sioPackage {
     "0.20.0",
     "0.19.0"
   ];
-  fullPath: "kind.sigs.k8s.io";
 }

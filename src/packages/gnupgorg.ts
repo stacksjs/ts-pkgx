@@ -57,8 +57,7 @@ export const gnupgorgPackage: PkgxPackage = {
     "2.2.44",
     "2.2.43",
     "2.2.42"
-  ],
-  "fullPath": "gnupg.org"
+  ]
 }
 
 export interface GnupgorgPackage {
@@ -115,5 +114,4 @@ export interface GnupgorgPackage {
     "2.2.43",
     "2.2.42"
   ];
-  fullPath: "gnupg.org";
 }

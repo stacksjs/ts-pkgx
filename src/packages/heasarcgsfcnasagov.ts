@@ -15,8 +15,7 @@ export const heasarcgsfcnasagovPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "heasarc.gsfc.nasa.gov"
+  "versions": []
 }
 
 export interface HeasarcgsfcnasagovPackage {
@@ -31,5 +30,4 @@ export interface HeasarcgsfcnasagovPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "heasarc.gsfc.nasa.gov";
 }

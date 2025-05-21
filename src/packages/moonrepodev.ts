@@ -15,8 +15,7 @@ export const moonrepodevPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "moonrepo.dev"
+  "versions": []
 }
 
 export interface MoonrepodevPackage {
@@ -31,5 +30,4 @@ export interface MoonrepodevPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "moonrepo.dev";
 }

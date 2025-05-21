@@ -94,8 +94,7 @@ export const daytonaioPackage: PkgxPackage = {
     "0.11.0",
     "0.100.0",
     "0.10.0"
-  ],
-  "fullPath": "daytona.io"
+  ]
 }
 
 export interface DaytonaioPackage {
@@ -189,5 +188,4 @@ export interface DaytonaioPackage {
     "0.100.0",
     "0.10.0"
   ];
-  fullPath: "daytona.io";
 }

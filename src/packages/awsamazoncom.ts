@@ -15,8 +15,7 @@ export const awsamazoncomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "aws.amazon.com"
+  "versions": []
 }
 
 export interface AwsamazoncomPackage {
@@ -31,5 +30,4 @@ export interface AwsamazoncomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "aws.amazon.com";
 }

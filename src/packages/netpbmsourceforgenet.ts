@@ -349,8 +349,7 @@ export const netpbmsourceforgenetPackage: PkgxPackage = {
     "10.86.39",
     "10.86.38",
     "10.73.43"
-  ],
-  "fullPath": "netpbm.sourceforge.net"
+  ]
 }
 
 export interface NetpbmsourceforgenetPackage {
@@ -699,5 +698,4 @@ export interface NetpbmsourceforgenetPackage {
     "10.86.38",
     "10.73.43"
   ];
-  fullPath: "netpbm.sourceforge.net";
 }

@@ -24,8 +24,7 @@ export const pcreorgPackage: PkgxPackage = {
   ],
   "versions": [
     "8.45.0"
-  ],
-  "fullPath": "pcre.org"
+  ]
 }
 
 export interface PcreorgPackage {
@@ -49,5 +48,4 @@ export interface PcreorgPackage {
   versions: readonly [
     "8.45.0"
   ];
-  fullPath: "pcre.org";
 }

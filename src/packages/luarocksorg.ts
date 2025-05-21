@@ -26,8 +26,7 @@ export const luarocksorgPackage: PkgxPackage = {
     "3.11.1",
     "3.11.0",
     "3.10.0"
-  ],
-  "fullPath": "luarocks.org"
+  ]
 }
 
 export interface LuarocksorgPackage {
@@ -53,5 +52,4 @@ export interface LuarocksorgPackage {
     "3.11.0",
     "3.10.0"
   ];
-  fullPath: "luarocks.org";
 }

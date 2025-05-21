@@ -27,8 +27,7 @@ export const augeasnetPackage: PkgxPackage = {
   "versions": [
     "1.14.1",
     "1.14.0"
-  ],
-  "fullPath": "augeas.net"
+  ]
 }
 
 export interface AugeasnetPackage {
@@ -55,5 +54,4 @@ export interface AugeasnetPackage {
     "1.14.1",
     "1.14.0"
   ];
-  fullPath: "augeas.net";
 }

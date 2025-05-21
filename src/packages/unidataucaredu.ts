@@ -15,8 +15,7 @@ export const unidataucareduPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "unidata.ucar.edu"
+  "versions": []
 }
 
 export interface UnidataucareduPackage {
@@ -31,5 +30,4 @@ export interface UnidataucareduPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "unidata.ucar.edu";
 }

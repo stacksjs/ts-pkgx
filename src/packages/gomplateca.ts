@@ -29,8 +29,7 @@ export const gomplatecaPackage: PkgxPackage = {
     "3.11.7",
     "3.11.6",
     "3.11.4"
-  ],
-  "fullPath": "gomplate.ca"
+  ]
 }
 
 export interface GomplatecaPackage {
@@ -59,5 +58,4 @@ export interface GomplatecaPackage {
     "3.11.6",
     "3.11.4"
   ];
-  fullPath: "gomplate.ca";
 }

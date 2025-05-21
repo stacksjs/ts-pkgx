@@ -15,8 +15,7 @@ export const opendevorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "opendev.org"
+  "versions": []
 }
 
 export interface OpendevorgPackage {
@@ -31,5 +30,4 @@ export interface OpendevorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "opendev.org";
 }

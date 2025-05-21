@@ -25,8 +25,7 @@ export const changiedevPackage: PkgxPackage = {
     "1.19.1",
     "1.19.0",
     "1.18.0"
-  ],
-  "fullPath": "changie.dev"
+  ]
 }
 
 export interface ChangiedevPackage {
@@ -51,5 +50,4 @@ export interface ChangiedevPackage {
     "1.19.0",
     "1.18.0"
   ];
-  fullPath: "changie.dev";
 }

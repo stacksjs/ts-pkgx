@@ -19,10 +19,6 @@ export const getsynthcomPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "0.6.9"
-  ],
-  "fullPath": "getsynth.com",
-  "aliases": [
-    "synth"
   ]
 }
 
@@ -41,9 +37,5 @@ export interface GetsynthcomPackage {
   dependencies: readonly [];
   versions: readonly [
     "0.6.9"
-  ];
-  fullPath: "getsynth.com";
-  aliases: readonly [
-    "synth"
   ];
 }

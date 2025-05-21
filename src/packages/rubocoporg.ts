@@ -21,6 +21,7 @@ export const rubocoporgPackage: PkgxPackage = {
     "rubygems.org"
   ],
   "versions": [
+    "1.75.7",
     "1.75.6",
     "1.75.5",
     "1.75.4",
@@ -43,8 +44,7 @@ export const rubocoporgPackage: PkgxPackage = {
     "1.69.1",
     "1.69.0",
     "1.68.0"
-  ],
-  "fullPath": "rubocop.org"
+  ]
 }
 
 export interface RubocoporgPackage {
@@ -64,6 +64,7 @@ export interface RubocoporgPackage {
     "rubygems.org"
   ];
   versions: readonly [
+    "1.75.7",
     "1.75.6",
     "1.75.5",
     "1.75.4",
@@ -87,5 +88,4 @@ export interface RubocoporgPackage {
     "1.69.0",
     "1.68.0"
   ];
-  fullPath: "rubocop.org";
 }

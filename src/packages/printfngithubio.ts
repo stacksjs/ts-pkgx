@@ -15,8 +15,7 @@ export const printfngithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "printfn.github.io"
+  "versions": []
 }
 
 export interface PrintfngithubioPackage {
@@ -31,5 +30,4 @@ export interface PrintfngithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "printfn.github.io";
 }

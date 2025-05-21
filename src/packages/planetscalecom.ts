@@ -83,10 +83,6 @@ export const planetscalecomPackage: PkgxPackage = {
     "0.163.0",
     "0.162.0",
     "0.161.0"
-  ],
-  "fullPath": "planetscale.com",
-  "aliases": [
-    "pscale"
   ]
 }
 
@@ -169,9 +165,5 @@ export interface PlanetscalecomPackage {
     "0.163.0",
     "0.162.0",
     "0.161.0"
-  ];
-  fullPath: "planetscale.com";
-  aliases: readonly [
-    "pscale"
   ];
 }

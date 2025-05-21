@@ -29,8 +29,7 @@ export const tinygoorgPackage: PkgxPackage = {
     "0.33.0",
     "0.32.0",
     "0.31.2"
-  ],
-  "fullPath": "tinygo.org"
+  ]
 }
 
 export interface TinygoorgPackage {
@@ -59,5 +58,4 @@ export interface TinygoorgPackage {
     "0.32.0",
     "0.31.2"
   ];
-  fullPath: "tinygo.org";
 }

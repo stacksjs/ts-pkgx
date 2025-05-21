@@ -74,8 +74,7 @@ export const wiresharkorgPackage: PkgxPackage = {
     "3.6.22",
     "3.6.21",
     "3.6.20"
-  ],
-  "fullPath": "wireshark.org"
+  ]
 }
 
 export interface WiresharkorgPackage {
@@ -149,5 +148,4 @@ export interface WiresharkorgPackage {
     "3.6.21",
     "3.6.20"
   ];
-  fullPath: "wireshark.org";
 }

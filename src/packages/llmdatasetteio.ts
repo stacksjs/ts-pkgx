@@ -49,8 +49,7 @@ export const llmdatasetteioPackage: PkgxPackage = {
     "0.11.1",
     "0.11.0",
     "0.10.0"
-  ],
-  "fullPath": "llm.datasette.io"
+  ]
 }
 
 export interface LlmdatasetteioPackage {
@@ -99,5 +98,4 @@ export interface LlmdatasetteioPackage {
     "0.11.0",
     "0.10.0"
   ];
-  fullPath: "llm.datasette.io";
 }

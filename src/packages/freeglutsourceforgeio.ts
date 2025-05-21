@@ -27,8 +27,7 @@ export const freeglutsourceforgeioPackage: PkgxPackage = {
   "versions": [
     "3.6.0",
     "3.4.0"
-  ],
-  "fullPath": "freeglut.sourceforge.io"
+  ]
 }
 
 export interface FreeglutsourceforgeioPackage {
@@ -55,5 +54,4 @@ export interface FreeglutsourceforgeioPackage {
     "3.6.0",
     "3.4.0"
   ];
-  fullPath: "freeglut.sourceforge.io";
 }

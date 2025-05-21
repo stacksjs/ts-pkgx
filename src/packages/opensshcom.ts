@@ -42,8 +42,7 @@ export const opensshcomPackage: PkgxPackage = {
     "9.6.0",
     "9.5.0",
     "10.0.0"
-  ],
-  "fullPath": "openssh.com"
+  ]
 }
 
 export interface OpensshcomPackage {
@@ -85,5 +84,4 @@ export interface OpensshcomPackage {
     "9.5.0",
     "10.0.0"
   ];
-  fullPath: "openssh.com";
 }

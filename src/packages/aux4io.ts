@@ -24,8 +24,7 @@ export const aux4ioPackage: PkgxPackage = {
     "5.0.14",
     "5.0.11",
     "5.0.10"
-  ],
-  "fullPath": "aux4.io"
+  ]
 }
 
 export interface Aux4ioPackage {
@@ -49,5 +48,4 @@ export interface Aux4ioPackage {
     "5.0.11",
     "5.0.10"
   ];
-  fullPath: "aux4.io";
 }

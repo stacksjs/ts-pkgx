@@ -93,10 +93,6 @@ export const cligithubcomPackage: PkgxPackage = {
     "2.22.0",
     "2.21.2",
     "2.20.2"
-  ],
-  "fullPath": "cli.github.com",
-  "aliases": [
-    "gh"
   ]
 }
 
@@ -189,9 +185,5 @@ export interface CligithubcomPackage {
     "2.22.0",
     "2.21.2",
     "2.20.2"
-  ];
-  fullPath: "cli.github.com";
-  aliases: readonly [
-    "gh"
   ];
 }

@@ -30,11 +30,8 @@ export const xkbcommonorgPackage: PkgxPackage = {
     "1.8.0",
     "1.7.0",
     "1.6.0",
-    "1.5.0"
-  ],
-  "fullPath": "xkbcommon.org",
-  "aliases": [
-    "xkbcli"
+    "1.5.0",
+    "1.10.0"
   ]
 }
 
@@ -64,10 +61,7 @@ export interface XkbcommonorgPackage {
     "1.8.0",
     "1.7.0",
     "1.6.0",
-    "1.5.0"
-  ];
-  fullPath: "xkbcommon.org";
-  aliases: readonly [
-    "xkbcli"
+    "1.5.0",
+    "1.10.0"
   ];
 }

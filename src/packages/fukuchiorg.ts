@@ -15,8 +15,7 @@ export const fukuchiorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "fukuchi.org"
+  "versions": []
 }
 
 export interface FukuchiorgPackage {
@@ -31,5 +30,4 @@ export interface FukuchiorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "fukuchi.org";
 }

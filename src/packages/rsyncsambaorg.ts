@@ -27,8 +27,7 @@ export const rsyncsambaorgPackage: PkgxPackage = {
     "3.4.0",
     "3.3.0",
     "3.2.7"
-  ],
-  "fullPath": "rsync.samba.org"
+  ]
 }
 
 export interface RsyncsambaorgPackage {
@@ -55,5 +54,4 @@ export interface RsyncsambaorgPackage {
     "3.3.0",
     "3.2.7"
   ];
-  fullPath: "rsync.samba.org";
 }

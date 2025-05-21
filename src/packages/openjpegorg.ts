@@ -27,10 +27,6 @@ export const openjpegorgPackage: PkgxPackage = {
     "2.5.2",
     "2.5.1",
     "2.5.0"
-  ],
-  "fullPath": "openjpeg.org",
-  "aliases": [
-    "opj"
   ]
 }
 
@@ -57,9 +53,5 @@ export interface OpenjpegorgPackage {
     "2.5.2",
     "2.5.1",
     "2.5.0"
-  ];
-  fullPath: "openjpeg.org";
-  aliases: readonly [
-    "opj"
   ];
 }

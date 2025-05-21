@@ -26,10 +26,6 @@ export const poktnetworkPackage: PkgxPackage = {
     "0.10.4",
     "0.10.3",
     "0.10.0"
-  ],
-  "fullPath": "pokt.network",
-  "aliases": [
-    "pocket"
   ]
 }
 
@@ -55,9 +51,5 @@ export interface PoktnetworkPackage {
     "0.10.4",
     "0.10.3",
     "0.10.0"
-  ];
-  fullPath: "pokt.network";
-  aliases: readonly [
-    "pocket"
   ];
 }

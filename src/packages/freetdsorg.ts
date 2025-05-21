@@ -61,8 +61,7 @@ export const freetdsorgPackage: PkgxPackage = {
     "1.3.20",
     "1.3.19",
     "1.3.18"
-  ],
-  "fullPath": "freetds.org"
+  ]
 }
 
 export interface FreetdsorgPackage {
@@ -123,5 +122,4 @@ export interface FreetdsorgPackage {
     "1.3.19",
     "1.3.18"
   ];
-  fullPath: "freetds.org";
 }

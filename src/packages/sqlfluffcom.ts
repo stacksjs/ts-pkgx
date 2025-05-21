@@ -43,8 +43,7 @@ export const sqlfluffcomPackage: PkgxPackage = {
     "2.3.4",
     "2.3.3",
     "2.3.2"
-  ],
-  "fullPath": "sqlfluff.com"
+  ]
 }
 
 export interface SqlfluffcomPackage {
@@ -87,5 +86,4 @@ export interface SqlfluffcomPackage {
     "2.3.3",
     "2.3.2"
   ];
-  fullPath: "sqlfluff.com";
 }

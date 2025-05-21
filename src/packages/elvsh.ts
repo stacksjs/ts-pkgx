@@ -22,10 +22,6 @@ export const elvshPackage: PkgxPackage = {
     "0.20.1",
     "0.20.0",
     "0.19.2"
-  ],
-  "fullPath": "elv.sh",
-  "aliases": [
-    "elvish"
   ]
 }
 
@@ -47,9 +43,5 @@ export interface ElvshPackage {
     "0.20.1",
     "0.20.0",
     "0.19.2"
-  ];
-  fullPath: "elv.sh";
-  aliases: readonly [
-    "elvish"
   ];
 }

@@ -62,8 +62,7 @@ export const valeshPackage: PkgxPackage = {
     "2.29.1",
     "2.29.0",
     "2.28.3"
-  ],
-  "fullPath": "vale.sh"
+  ]
 }
 
 export interface ValeshPackage {
@@ -125,5 +124,4 @@ export interface ValeshPackage {
     "2.29.0",
     "2.28.3"
   ];
-  fullPath: "vale.sh";
 }

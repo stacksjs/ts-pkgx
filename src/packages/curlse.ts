@@ -46,8 +46,7 @@ export const curlsePackage: PkgxPackage = {
     "8.0.0",
     "7.86.0",
     "7.85.0"
-  ],
-  "fullPath": "curl.se"
+  ]
 }
 
 export interface CurlsePackage {
@@ -93,5 +92,4 @@ export interface CurlsePackage {
     "7.86.0",
     "7.85.0"
   ];
-  fullPath: "curl.se";
 }

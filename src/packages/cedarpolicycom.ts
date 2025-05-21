@@ -15,8 +15,7 @@ export const cedarpolicycomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "cedarpolicy.com"
+  "versions": []
 }
 
 export interface CedarpolicycomPackage {
@@ -31,5 +30,4 @@ export interface CedarpolicycomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "cedarpolicy.com";
 }

@@ -53,8 +53,7 @@ export const irohcomputerPackage: PkgxPackage = {
     "0.12.0",
     "0.11.0",
     "0.10.0"
-  ],
-  "fullPath": "iroh.computer"
+  ]
 }
 
 export interface IrohcomputerPackage {
@@ -107,5 +106,4 @@ export interface IrohcomputerPackage {
     "0.11.0",
     "0.10.0"
   ];
-  fullPath: "iroh.computer";
 }

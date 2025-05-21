@@ -15,8 +15,7 @@ export const operatorframeworkioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "operatorframework.io"
+  "versions": []
 }
 
 export interface OperatorframeworkioPackage {
@@ -31,5 +30,4 @@ export interface OperatorframeworkioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "operatorframework.io";
 }

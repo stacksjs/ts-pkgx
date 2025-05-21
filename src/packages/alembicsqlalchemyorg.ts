@@ -20,14 +20,14 @@ export const alembicsqlalchemyorgPackage: PkgxPackage = {
     "pkgx.sh^1"
   ],
   "versions": [
+    "1.16.0",
     "1.15.2",
     "1.15.1",
     "1.14.1",
     "1.14.0",
     "1.13.3",
     "1.13.2"
-  ],
-  "fullPath": "alembic.sqlalchemy.org"
+  ]
 }
 
 export interface AlembicsqlalchemyorgPackage {
@@ -53,5 +53,4 @@ export interface AlembicsqlalchemyorgPackage {
     "1.13.3",
     "1.13.2"
   ];
-  fullPath: "alembic.sqlalchemy.org";
 }

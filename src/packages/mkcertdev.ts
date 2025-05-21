@@ -19,8 +19,7 @@ export const mkcertdevPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "1.4.4"
-  ],
-  "fullPath": "mkcert.dev"
+  ]
 }
 
 export interface MkcertdevPackage {
@@ -39,5 +38,4 @@ export interface MkcertdevPackage {
   versions: readonly [
     "1.4.4"
   ];
-  fullPath: "mkcert.dev";
 }

@@ -27,8 +27,7 @@ export const assimporgPackage: PkgxPackage = {
     "5.3.1",
     "5.3.0",
     "5.2.5"
-  ],
-  "fullPath": "assimp.org"
+  ]
 }
 
 export interface AssimporgPackage {
@@ -55,5 +54,4 @@ export interface AssimporgPackage {
     "5.3.0",
     "5.2.5"
   ];
-  fullPath: "assimp.org";
 }

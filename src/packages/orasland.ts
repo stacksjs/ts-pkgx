@@ -22,8 +22,7 @@ export const oraslandPackage: PkgxPackage = {
     "1.2.2",
     "1.2.1",
     "1.2.0"
-  ],
-  "fullPath": "oras.land"
+  ]
 }
 
 export interface OraslandPackage {
@@ -45,5 +44,4 @@ export interface OraslandPackage {
     "1.2.1",
     "1.2.0"
   ];
-  fullPath: "oras.land";
 }

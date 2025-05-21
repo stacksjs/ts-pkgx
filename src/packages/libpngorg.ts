@@ -34,8 +34,7 @@ export const libpngorgPackage: PkgxPackage = {
     "1.6.40",
     "1.6.39",
     "1.6.35"
-  ],
-  "fullPath": "libpng.org"
+  ]
 }
 
 export interface LibpngorgPackage {
@@ -69,5 +68,4 @@ export interface LibpngorgPackage {
     "1.6.39",
     "1.6.35"
   ];
-  fullPath: "libpng.org";
 }

@@ -37,8 +37,7 @@ export const jumppaddevPackage: PkgxPackage = {
     "0.11.2",
     "0.11.1",
     "0.11.0"
-  ],
-  "fullPath": "jumppad.dev"
+  ]
 }
 
 export interface JumppaddevPackage {
@@ -75,5 +74,4 @@ export interface JumppaddevPackage {
     "0.11.1",
     "0.11.0"
   ];
-  fullPath: "jumppad.dev";
 }

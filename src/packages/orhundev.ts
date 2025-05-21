@@ -15,8 +15,7 @@ export const orhundevPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "orhun.dev"
+  "versions": []
 }
 
 export interface OrhundevPackage {
@@ -31,5 +30,4 @@ export interface OrhundevPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "orhun.dev";
 }

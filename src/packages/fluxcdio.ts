@@ -15,8 +15,7 @@ export const fluxcdioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "fluxcd.io"
+  "versions": []
 }
 
 export interface FluxcdioPackage {
@@ -31,5 +30,4 @@ export interface FluxcdioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "fluxcd.io";
 }

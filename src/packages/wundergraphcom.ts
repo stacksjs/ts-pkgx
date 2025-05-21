@@ -38,10 +38,6 @@ export const wundergraphcomPackage: PkgxPackage = {
     "0.170.0",
     "0.169.3",
     "0.169.2"
-  ],
-  "fullPath": "wundergraph.com",
-  "aliases": [
-    "wunderctl"
   ]
 }
 
@@ -79,9 +75,5 @@ export interface WundergraphcomPackage {
     "0.170.0",
     "0.169.3",
     "0.169.2"
-  ];
-  fullPath: "wundergraph.com";
-  aliases: readonly [
-    "wunderctl"
   ];
 }

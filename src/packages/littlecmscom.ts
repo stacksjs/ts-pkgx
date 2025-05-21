@@ -29,8 +29,7 @@ export const littlecmscomPackage: PkgxPackage = {
     "2.16.0",
     "2.15.0",
     "2.12.0"
-  ],
-  "fullPath": "littlecms.com"
+  ]
 }
 
 export interface LittlecmscomPackage {
@@ -59,5 +58,4 @@ export interface LittlecmscomPackage {
     "2.15.0",
     "2.12.0"
   ];
-  fullPath: "littlecms.com";
 }

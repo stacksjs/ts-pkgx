@@ -15,8 +15,7 @@ export const veracodecomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "veracode.com"
+  "versions": []
 }
 
 export interface VeracodecomPackage {
@@ -31,5 +30,4 @@ export interface VeracodecomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "veracode.com";
 }

@@ -25,8 +25,7 @@ export const sympyorgPackage: PkgxPackage = {
     "1.13.0",
     "1.12.1",
     "1.12.0"
-  ],
-  "fullPath": "sympy.org"
+  ]
 }
 
 export interface SympyorgPackage {
@@ -51,5 +50,4 @@ export interface SympyorgPackage {
     "1.12.1",
     "1.12.0"
   ];
-  fullPath: "sympy.org";
 }

@@ -26,8 +26,7 @@ export const rtmpdumpmplayerhqhuPackage: PkgxPackage = {
   "versions": [
     "2.3.0",
     "2.3.0"
-  ],
-  "fullPath": "rtmpdump.mplayerhq.hu"
+  ]
 }
 
 export interface RtmpdumpmplayerhqhuPackage {
@@ -53,5 +52,4 @@ export interface RtmpdumpmplayerhqhuPackage {
     "2.3.0",
     "2.3.0"
   ];
-  fullPath: "rtmpdump.mplayerhq.hu";
 }

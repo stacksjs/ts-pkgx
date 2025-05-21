@@ -21,8 +21,7 @@ export const furycoPackage: PkgxPackage = {
     "0.23.0",
     "0.22.0",
     "0.21.0"
-  ],
-  "fullPath": "fury.co"
+  ]
 }
 
 export interface FurycoPackage {
@@ -43,5 +42,4 @@ export interface FurycoPackage {
     "0.22.0",
     "0.21.0"
   ];
-  fullPath: "fury.co";
 }

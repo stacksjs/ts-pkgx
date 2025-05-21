@@ -26,10 +26,6 @@ export const microcksioPackage: PkgxPackage = {
     "0.5.6",
     "0.5.5",
     "0.5.4"
-  ],
-  "fullPath": "microcks.io",
-  "aliases": [
-    "microcks-cli"
   ]
 }
 
@@ -55,9 +51,5 @@ export interface MicrocksioPackage {
     "0.5.6",
     "0.5.5",
     "0.5.4"
-  ];
-  fullPath: "microcks.io";
-  aliases: readonly [
-    "microcks-cli"
   ];
 }

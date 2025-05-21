@@ -15,8 +15,7 @@ export const publichronopikdePackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "public.hronopik.de"
+  "versions": []
 }
 
 export interface PublichronopikdePackage {
@@ -31,5 +30,4 @@ export interface PublichronopikdePackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "public.hronopik.de";
 }

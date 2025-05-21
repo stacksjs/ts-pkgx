@@ -33,8 +33,7 @@ export const gnuplotinfoPackage: PkgxPackage = {
     "5.4.7",
     "5.4.6",
     "5.4.10"
-  ],
-  "fullPath": "gnuplot.info"
+  ]
 }
 
 export interface GnuplotinfoPackage {
@@ -67,5 +66,4 @@ export interface GnuplotinfoPackage {
     "5.4.6",
     "5.4.10"
   ];
-  fullPath: "gnuplot.info";
 }

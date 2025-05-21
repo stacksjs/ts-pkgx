@@ -15,8 +15,7 @@ export const cloudfoundryorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "cloudfoundry.org"
+  "versions": []
 }
 
 export interface CloudfoundryorgPackage {
@@ -31,5 +30,4 @@ export interface CloudfoundryorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "cloudfoundry.org";
 }

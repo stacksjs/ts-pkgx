@@ -33,8 +33,7 @@ export const rhashsourceforgenetPackage: PkgxPackage = {
     "1.4.5",
     "1.4.4",
     "1.4.3"
-  ],
-  "fullPath": "rhash.sourceforge.net"
+  ]
 }
 
 export interface RhashsourceforgenetPackage {
@@ -67,5 +66,4 @@ export interface RhashsourceforgenetPackage {
     "1.4.4",
     "1.4.3"
   ];
-  fullPath: "rhash.sourceforge.net";
 }

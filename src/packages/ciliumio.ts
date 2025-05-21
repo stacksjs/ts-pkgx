@@ -15,8 +15,7 @@ export const ciliumioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "cilium.io"
+  "versions": []
 }
 
 export interface CiliumioPackage {
@@ -31,5 +30,4 @@ export interface CiliumioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "cilium.io";
 }

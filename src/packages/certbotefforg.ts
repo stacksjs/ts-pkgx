@@ -37,8 +37,7 @@ export const certbotefforgPackage: PkgxPackage = {
     "2.11.1",
     "2.11.0",
     "2.10.0"
-  ],
-  "fullPath": "certbot.eff.org"
+  ]
 }
 
 export interface CertbotefforgPackage {
@@ -75,5 +74,4 @@ export interface CertbotefforgPackage {
     "2.11.0",
     "2.10.0"
   ];
-  fullPath: "certbot.eff.org";
 }

@@ -187,8 +187,7 @@ export const dotenvxcomPackage: PkgxPackage = {
     "0.12.0",
     "0.11.0",
     "0.10.6"
-  ],
-  "fullPath": "dotenvx.com"
+  ]
 }
 
 export interface DotenvxcomPackage {
@@ -375,5 +374,4 @@ export interface DotenvxcomPackage {
     "0.11.0",
     "0.10.6"
   ];
-  fullPath: "dotenvx.com";
 }

@@ -22,8 +22,7 @@ export const smartmontoolsorgPackage: PkgxPackage = {
     "7.5.0",
     "7.4.0",
     "7.3.0"
-  ],
-  "fullPath": "smartmontools.org"
+  ]
 }
 
 export interface SmartmontoolsorgPackage {
@@ -45,5 +44,4 @@ export interface SmartmontoolsorgPackage {
     "7.4.0",
     "7.3.0"
   ];
-  fullPath: "smartmontools.org";
 }

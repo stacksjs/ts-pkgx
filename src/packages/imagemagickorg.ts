@@ -62,8 +62,7 @@ export const imagemagickorgPackage: PkgxPackage = {
     "7.1.1.27",
     "7.1.1.12",
     "7.1.0.61"
-  ],
-  "fullPath": "imagemagick.org"
+  ]
 }
 
 export interface ImagemagickorgPackage {
@@ -125,5 +124,4 @@ export interface ImagemagickorgPackage {
     "7.1.1.12",
     "7.1.0.61"
   ];
-  fullPath: "imagemagick.org";
 }

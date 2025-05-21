@@ -15,8 +15,7 @@ export const hboehminfoPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "hboehm.info"
+  "versions": []
 }
 
 export interface HboehminfoPackage {
@@ -31,5 +30,4 @@ export interface HboehminfoPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "hboehm.info";
 }

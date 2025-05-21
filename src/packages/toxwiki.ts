@@ -35,8 +35,7 @@ export const toxwikiPackage: PkgxPackage = {
     "4.20.0",
     "4.19.0",
     "4.18.1"
-  ],
-  "fullPath": "tox.wiki"
+  ]
 }
 
 export interface ToxwikiPackage {
@@ -71,5 +70,4 @@ export interface ToxwikiPackage {
     "4.19.0",
     "4.18.1"
   ];
-  fullPath: "tox.wiki";
 }

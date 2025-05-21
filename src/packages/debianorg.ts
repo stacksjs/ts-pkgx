@@ -15,8 +15,7 @@ export const debianorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "debian.org"
+  "versions": []
 }
 
 export interface DebianorgPackage {
@@ -31,5 +30,4 @@ export interface DebianorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "debian.org";
 }

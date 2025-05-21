@@ -15,8 +15,7 @@ export const tsl0922githubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "tsl0922.github.io"
+  "versions": []
 }
 
 export interface Tsl0922githubioPackage {
@@ -31,5 +30,4 @@ export interface Tsl0922githubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "tsl0922.github.io";
 }

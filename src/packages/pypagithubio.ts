@@ -15,8 +15,7 @@ export const pypagithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "pypa.github.io"
+  "versions": []
 }
 
 export interface PypagithubioPackage {
@@ -31,5 +30,4 @@ export interface PypagithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "pypa.github.io";
 }

@@ -42,8 +42,7 @@ export const macvimorgPackage: PkgxPackage = {
     "179.0.0",
     "178.0.0",
     "177.0.0"
-  ],
-  "fullPath": "macvim.org"
+  ]
 }
 
 export interface MacvimorgPackage {
@@ -85,5 +84,4 @@ export interface MacvimorgPackage {
     "178.0.0",
     "177.0.0"
   ];
-  fullPath: "macvim.org";
 }

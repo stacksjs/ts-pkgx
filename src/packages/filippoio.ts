@@ -15,8 +15,7 @@ export const filippoioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "filippo.io"
+  "versions": []
 }
 
 export interface FilippoioPackage {
@@ -31,5 +30,4 @@ export interface FilippoioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "filippo.io";
 }

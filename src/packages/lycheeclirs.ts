@@ -25,8 +25,7 @@ export const lycheeclirsPackage: PkgxPackage = {
     "0.14.3",
     "0.14.2",
     "0.14.1"
-  ],
-  "fullPath": "lychee.cli.rs"
+  ]
 }
 
 export interface LycheeclirsPackage {
@@ -51,5 +50,4 @@ export interface LycheeclirsPackage {
     "0.14.2",
     "0.14.1"
   ];
-  fullPath: "lychee.cli.rs";
 }

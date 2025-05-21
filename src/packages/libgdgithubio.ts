@@ -32,8 +32,7 @@ export const libgdgithubioPackage: PkgxPackage = {
   ],
   "versions": [
     "2.3.3"
-  ],
-  "fullPath": "libgd.github.io"
+  ]
 }
 
 export interface LibgdgithubioPackage {
@@ -65,5 +64,4 @@ export interface LibgdgithubioPackage {
   versions: readonly [
     "2.3.3"
   ];
-  fullPath: "libgd.github.io";
 }

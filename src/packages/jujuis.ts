@@ -33,8 +33,7 @@ export const jujuisPackage: PkgxPackage = {
     "3.3.7",
     "3.1.10",
     "2.9.51"
-  ],
-  "fullPath": "juju.is"
+  ]
 }
 
 export interface JujuisPackage {
@@ -67,5 +66,4 @@ export interface JujuisPackage {
     "3.1.10",
     "2.9.51"
   ];
-  fullPath: "juju.is";
 }

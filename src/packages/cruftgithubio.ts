@@ -23,8 +23,7 @@ export const cruftgithubioPackage: PkgxPackage = {
   "versions": [
     "2.16.0",
     "2.15.0"
-  ],
-  "fullPath": "cruft.github.io"
+  ]
 }
 
 export interface CruftgithubioPackage {
@@ -47,5 +46,4 @@ export interface CruftgithubioPackage {
     "2.16.0",
     "2.15.0"
   ];
-  fullPath: "cruft.github.io";
 }

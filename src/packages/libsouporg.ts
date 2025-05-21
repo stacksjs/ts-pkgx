@@ -38,8 +38,7 @@ export const libsouporgPackage: PkgxPackage = {
     "3.4.5",
     "3.4.4",
     "3.2.3"
-  ],
-  "fullPath": "libsoup.org"
+  ]
 }
 
 export interface LibsouporgPackage {
@@ -77,5 +76,4 @@ export interface LibsouporgPackage {
     "3.4.4",
     "3.2.3"
   ];
-  fullPath: "libsoup.org";
 }

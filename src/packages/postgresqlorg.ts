@@ -65,8 +65,7 @@ export const postgresqlorgPackage: PkgxPackage = {
     "13.1.0",
     "12.14.0",
     "11.19.0"
-  ],
-  "fullPath": "postgresql.org"
+  ]
 }
 
 export interface PostgresqlorgPackage {
@@ -131,5 +130,4 @@ export interface PostgresqlorgPackage {
     "12.14.0",
     "11.19.0"
   ];
-  fullPath: "postgresql.org";
 }

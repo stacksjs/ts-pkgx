@@ -36,10 +36,6 @@ export const cocoapodsorgPackage: PkgxPackage = {
     "1.14.0",
     "1.13.0",
     "1.12.1"
-  ],
-  "fullPath": "cocoapods.org",
-  "aliases": [
-    "pod"
   ]
 }
 
@@ -75,9 +71,5 @@ export interface CocoapodsorgPackage {
     "1.14.0",
     "1.13.0",
     "1.12.1"
-  ];
-  fullPath: "cocoapods.org";
-  aliases: readonly [
-    "pod"
   ];
 }

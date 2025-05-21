@@ -55,8 +55,7 @@ export const libcxxllvmorgPackage: PkgxPackage = {
     "14.0.3",
     "13.0.1",
     "12.0.1"
-  ],
-  "fullPath": "libcxx.llvm.org"
+  ]
 }
 
 export interface LibcxxllvmorgPackage {
@@ -111,5 +110,4 @@ export interface LibcxxllvmorgPackage {
     "13.0.1",
     "12.0.1"
   ];
-  fullPath: "libcxx.llvm.org";
 }

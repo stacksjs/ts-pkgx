@@ -15,8 +15,7 @@ export const mergestatcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "mergestat.com"
+  "versions": []
 }
 
 export interface MergestatcomPackage {
@@ -31,5 +30,4 @@ export interface MergestatcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "mergestat.com";
 }

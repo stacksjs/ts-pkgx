@@ -108,8 +108,7 @@ export const systemdioPackage: PkgxPackage = {
     "256.0.0",
     "255.0.0",
     "254.0.0"
-  ],
-  "fullPath": "systemd.io"
+  ]
 }
 
 export interface SystemdioPackage {
@@ -217,5 +216,4 @@ export interface SystemdioPackage {
     "255.0.0",
     "254.0.0"
   ];
-  fullPath: "systemd.io";
 }

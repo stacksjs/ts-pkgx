@@ -15,8 +15,7 @@ export const jedsoftorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "jedsoft.org"
+  "versions": []
 }
 
 export interface JedsoftorgPackage {
@@ -31,5 +30,4 @@ export interface JedsoftorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "jedsoft.org";
 }

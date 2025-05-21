@@ -21,6 +21,7 @@ export const surrealdbcomPackage: PkgxPackage = {
   ],
   "versions": [
     "2023.9.1",
+    "2.3.3",
     "2.3.2",
     "2.3.1",
     "2.3.0",
@@ -60,8 +61,7 @@ export const surrealdbcomPackage: PkgxPackage = {
     "1.0.1",
     "1.0.0",
     "0.0.0"
-  ],
-  "fullPath": "surrealdb.com"
+  ]
 }
 
 export interface SurrealdbcomPackage {
@@ -81,6 +81,7 @@ export interface SurrealdbcomPackage {
   ];
   versions: readonly [
     "2023.9.1",
+    "2.3.3",
     "2.3.2",
     "2.3.1",
     "2.3.0",
@@ -121,5 +122,4 @@ export interface SurrealdbcomPackage {
     "1.0.0",
     "0.0.0"
   ];
-  fullPath: "surrealdb.com";
 }

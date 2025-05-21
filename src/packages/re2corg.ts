@@ -25,8 +25,7 @@ export const re2corgPackage: PkgxPackage = {
     "4.0.0",
     "3.1.0",
     "3.0.0"
-  ],
-  "fullPath": "re2c.org"
+  ]
 }
 
 export interface Re2corgPackage {
@@ -51,5 +50,4 @@ export interface Re2corgPackage {
     "3.1.0",
     "3.0.0"
   ];
-  fullPath: "re2c.org";
 }

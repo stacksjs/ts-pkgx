@@ -15,8 +15,7 @@ export const gitlabcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "gitlab.com"
+  "versions": []
 }
 
 export interface GitlabcomPackage {
@@ -31,5 +30,4 @@ export interface GitlabcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "gitlab.com";
 }

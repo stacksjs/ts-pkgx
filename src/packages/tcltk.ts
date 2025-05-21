@@ -15,8 +15,7 @@ export const tcltkPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "tcl.tk"
+  "versions": []
 }
 
 export interface TcltkPackage {
@@ -31,5 +30,4 @@ export interface TcltkPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "tcl.tk";
 }

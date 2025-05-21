@@ -15,8 +15,7 @@ export const kornelskiPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "kornel.ski"
+  "versions": []
 }
 
 export interface KornelskiPackage {
@@ -31,5 +30,4 @@ export interface KornelskiPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "kornel.ski";
 }

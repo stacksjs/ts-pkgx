@@ -60,8 +60,7 @@ export const zarfdevPackage: PkgxPackage = {
     "0.32.3",
     "0.32.2",
     "0.32.1"
-  ],
-  "fullPath": "zarf.dev"
+  ]
 }
 
 export interface ZarfdevPackage {
@@ -121,5 +120,4 @@ export interface ZarfdevPackage {
     "0.32.2",
     "0.32.1"
   ];
-  fullPath: "zarf.dev";
 }

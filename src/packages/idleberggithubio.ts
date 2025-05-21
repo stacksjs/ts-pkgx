@@ -15,8 +15,7 @@ export const idleberggithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "idleberg.github.io"
+  "versions": []
 }
 
 export interface IdleberggithubioPackage {
@@ -31,5 +30,4 @@ export interface IdleberggithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "idleberg.github.io";
 }

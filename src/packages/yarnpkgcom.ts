@@ -60,8 +60,7 @@ export const yarnpkgcomPackage: PkgxPackage = {
     "3.5.1",
     "3.5.0",
     "3.4.1"
-  ],
-  "fullPath": "yarnpkg.com"
+  ]
 }
 
 export interface YarnpkgcomPackage {
@@ -121,5 +120,4 @@ export interface YarnpkgcomPackage {
     "3.5.0",
     "3.4.1"
   ];
-  fullPath: "yarnpkg.com";
 }

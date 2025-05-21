@@ -28,8 +28,7 @@ export const infracostioPackage: PkgxPackage = {
     "0.10.34",
     "0.10.33",
     "0.10.32"
-  ],
-  "fullPath": "infracost.io"
+  ]
 }
 
 export interface InfracostioPackage {
@@ -57,5 +56,4 @@ export interface InfracostioPackage {
     "0.10.33",
     "0.10.32"
   ];
-  fullPath: "infracost.io";
 }

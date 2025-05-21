@@ -40,8 +40,7 @@ export const nginxorgPackage: PkgxPackage = {
     "1.25.0",
     "1.24.0",
     "1.23.3"
-  ],
-  "fullPath": "nginx.org"
+  ]
 }
 
 export interface NginxorgPackage {
@@ -81,5 +80,4 @@ export interface NginxorgPackage {
     "1.24.0",
     "1.23.3"
   ];
-  fullPath: "nginx.org";
 }

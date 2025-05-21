@@ -22,8 +22,7 @@ export const spacetimedbcomPackage: PkgxPackage = {
   "versions": [
     "2023.8.12",
     "2023.12.8"
-  ],
-  "fullPath": "spacetimedb.com"
+  ]
 }
 
 export interface SpacetimedbcomPackage {
@@ -45,5 +44,4 @@ export interface SpacetimedbcomPackage {
     "2023.8.12",
     "2023.12.8"
   ];
-  fullPath: "spacetimedb.com";
 }

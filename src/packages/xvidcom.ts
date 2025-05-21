@@ -17,8 +17,7 @@ export const xvidcomPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "1.3.7"
-  ],
-  "fullPath": "xvid.com"
+  ]
 }
 
 export interface XvidcomPackage {
@@ -35,5 +34,4 @@ export interface XvidcomPackage {
   versions: readonly [
     "1.3.7"
   ];
-  fullPath: "xvid.com";
 }

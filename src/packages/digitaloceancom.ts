@@ -15,8 +15,7 @@ export const digitaloceancomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "digitalocean.com"
+  "versions": []
 }
 
 export interface DigitaloceancomPackage {
@@ -31,5 +30,4 @@ export interface DigitaloceancomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "digitalocean.com";
 }

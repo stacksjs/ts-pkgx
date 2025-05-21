@@ -27,8 +27,7 @@ export const quickwitioPackage: PkgxPackage = {
     "0.7.0",
     "0.6.5",
     "0.6.4"
-  ],
-  "fullPath": "quickwit.io"
+  ]
 }
 
 export interface QuickwitioPackage {
@@ -55,5 +54,4 @@ export interface QuickwitioPackage {
     "0.6.5",
     "0.6.4"
   ];
-  fullPath: "quickwit.io";
 }

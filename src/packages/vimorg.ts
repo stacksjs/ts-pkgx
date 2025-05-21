@@ -944,8 +944,11 @@ export const vimorgPackage: PkgxPackage = {
     "9.1.143",
     "9.1.142",
     "9.1.141",
+    "9.1.1401",
+    "9.1.1400",
     "9.1.140",
     "9.1.14",
+    "9.1.1399",
     "9.1.1398",
     "9.1.1397",
     "9.1.1396",
@@ -2000,8 +2003,7 @@ export const vimorgPackage: PkgxPackage = {
     "9.0.1505",
     "9.0.1504",
     "9.0.1294"
-  ],
-  "fullPath": "vim.org"
+  ]
 }
 
 export interface VimorgPackage {
@@ -2944,8 +2946,11 @@ export interface VimorgPackage {
     "9.1.143",
     "9.1.142",
     "9.1.141",
+    "9.1.1401",
+    "9.1.1400",
     "9.1.140",
     "9.1.14",
+    "9.1.1399",
     "9.1.1398",
     "9.1.1397",
     "9.1.1396",
@@ -4001,5 +4006,4 @@ export interface VimorgPackage {
     "9.0.1504",
     "9.0.1294"
   ];
-  fullPath: "vim.org";
 }

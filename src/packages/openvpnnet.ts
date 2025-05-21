@@ -37,8 +37,7 @@ export const openvpnnetPackage: PkgxPackage = {
     "2.6.11",
     "2.6.10",
     "2.5.10"
-  ],
-  "fullPath": "openvpn.net"
+  ]
 }
 
 export interface OpenvpnnetPackage {
@@ -75,5 +74,4 @@ export interface OpenvpnnetPackage {
     "2.6.10",
     "2.5.10"
   ];
-  fullPath: "openvpn.net";
 }

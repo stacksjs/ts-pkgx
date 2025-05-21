@@ -26,10 +26,6 @@ export const scalewaycomPackage: PkgxPackage = {
     "2.34.0",
     "2.33.0",
     "2.32.1"
-  ],
-  "fullPath": "scaleway.com",
-  "aliases": [
-    "scw"
   ]
 }
 
@@ -55,9 +51,5 @@ export interface ScalewaycomPackage {
     "2.34.0",
     "2.33.0",
     "2.32.1"
-  ];
-  fullPath: "scaleway.com";
-  aliases: readonly [
-    "scw"
   ];
 }

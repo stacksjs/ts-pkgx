@@ -52,8 +52,7 @@ export const dotnetmicrosoftcomPackage: PkgxPackage = {
     "6.0.132",
     "6.0.131",
     "6.0.130"
-  ],
-  "fullPath": "dotnet.microsoft.com"
+  ]
 }
 
 export interface DotnetmicrosoftcomPackage {
@@ -105,5 +104,4 @@ export interface DotnetmicrosoftcomPackage {
     "6.0.131",
     "6.0.130"
   ];
-  fullPath: "dotnet.microsoft.com";
 }

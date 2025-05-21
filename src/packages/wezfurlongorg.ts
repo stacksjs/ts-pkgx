@@ -15,8 +15,7 @@ export const wezfurlongorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "wezfurlong.org"
+  "versions": []
 }
 
 export interface WezfurlongorgPackage {
@@ -31,5 +30,4 @@ export interface WezfurlongorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "wezfurlong.org";
 }

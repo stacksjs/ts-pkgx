@@ -807,8 +807,7 @@ export const modalcomPackage: PkgxPackage = {
     "0.64.101",
     "0.64.100",
     "0.64.10"
-  ],
-  "fullPath": "modal.com"
+  ]
 }
 
 export interface ModalcomPackage {
@@ -1615,5 +1614,4 @@ export interface ModalcomPackage {
     "0.64.100",
     "0.64.10"
   ];
-  fullPath: "modal.com";
 }

@@ -203,8 +203,7 @@ export const diggerdevPackage: PkgxPackage = {
     "0.1.33",
     "0.1.32",
     "0.1.31"
-  ],
-  "fullPath": "digger.dev"
+  ]
 }
 
 export interface DiggerdevPackage {
@@ -407,5 +406,4 @@ export interface DiggerdevPackage {
     "0.1.32",
     "0.1.31"
   ];
-  fullPath: "digger.dev";
 }

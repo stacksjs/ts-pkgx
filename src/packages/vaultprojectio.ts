@@ -73,8 +73,7 @@ export const vaultprojectioPackage: PkgxPackage = {
     "1.12.8",
     "1.12.11",
     "1.12.10"
-  ],
-  "fullPath": "vaultproject.io"
+  ]
 }
 
 export interface VaultprojectioPackage {
@@ -147,5 +146,4 @@ export interface VaultprojectioPackage {
     "1.12.11",
     "1.12.10"
   ];
-  fullPath: "vaultproject.io";
 }

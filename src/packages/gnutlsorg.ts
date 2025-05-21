@@ -45,8 +45,7 @@ export const gnutlsorgPackage: PkgxPackage = {
     "3.8.1",
     "3.7.10",
     "3.6.16"
-  ],
-  "fullPath": "gnutls.org"
+  ]
 }
 
 export interface GnutlsorgPackage {
@@ -91,5 +90,4 @@ export interface GnutlsorgPackage {
     "3.7.10",
     "3.6.16"
   ];
-  fullPath: "gnutls.org";
 }

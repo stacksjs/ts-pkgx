@@ -22,6 +22,7 @@ export const arkadedevPackage: PkgxPackage = {
     "0.11.6",
     "0.11.5",
     "0.11.4",
+    "0.11.39",
     "0.11.38",
     "0.11.37",
     "0.11.36",
@@ -54,8 +55,7 @@ export const arkadedevPackage: PkgxPackage = {
     "0.11.0",
     "0.10.23",
     "0.10.22"
-  ],
-  "fullPath": "arkade.dev"
+  ]
 }
 
 export interface ArkadedevPackage {
@@ -76,6 +76,7 @@ export interface ArkadedevPackage {
     "0.11.6",
     "0.11.5",
     "0.11.4",
+    "0.11.39",
     "0.11.38",
     "0.11.37",
     "0.11.36",
@@ -109,5 +110,4 @@ export interface ArkadedevPackage {
     "0.10.23",
     "0.10.22"
   ];
-  fullPath: "arkade.dev";
 }

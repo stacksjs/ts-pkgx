@@ -15,8 +15,7 @@ export const devpodshPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "devpod.sh"
+  "versions": []
 }
 
 export interface DevpodshPackage {
@@ -31,5 +30,4 @@ export interface DevpodshPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "devpod.sh";
 }

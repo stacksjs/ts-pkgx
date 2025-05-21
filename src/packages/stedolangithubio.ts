@@ -15,8 +15,7 @@ export const stedolangithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "stedolan.github.io"
+  "versions": []
 }
 
 export interface StedolangithubioPackage {
@@ -31,5 +30,4 @@ export interface StedolangithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "stedolan.github.io";
 }

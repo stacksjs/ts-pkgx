@@ -27,10 +27,6 @@ export const libexpatgithubioPackage: PkgxPackage = {
     "2.6.0",
     "2.5.0",
     "2.4.9"
-  ],
-  "fullPath": "libexpat.github.io",
-  "aliases": [
-    "xmlwf"
   ]
 }
 
@@ -57,9 +53,5 @@ export interface LibexpatgithubioPackage {
     "2.6.0",
     "2.5.0",
     "2.4.9"
-  ];
-  fullPath: "libexpat.github.io";
-  aliases: readonly [
-    "xmlwf"
   ];
 }

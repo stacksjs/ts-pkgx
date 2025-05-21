@@ -25,8 +25,7 @@ export const trippyclirsPackage: PkgxPackage = {
     "0.12.0",
     "0.11.0",
     "0.10.0"
-  ],
-  "fullPath": "trippy.cli.rs"
+  ]
 }
 
 export interface TrippyclirsPackage {
@@ -51,5 +50,4 @@ export interface TrippyclirsPackage {
     "0.11.0",
     "0.10.0"
   ];
-  fullPath: "trippy.cli.rs";
 }

@@ -62,8 +62,7 @@ export const virtualenvpypaioPackage: PkgxPackage = {
     "20.20.0",
     "20.19.0",
     "20.18.0"
-  ],
-  "fullPath": "virtualenv.pypa.io"
+  ]
 }
 
 export interface VirtualenvpypaioPackage {
@@ -125,5 +124,4 @@ export interface VirtualenvpypaioPackage {
     "20.19.0",
     "20.18.0"
   ];
-  fullPath: "virtualenv.pypa.io";
 }

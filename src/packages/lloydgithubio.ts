@@ -15,8 +15,7 @@ export const lloydgithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "lloyd.github.io"
+  "versions": []
 }
 
 export interface LloydgithubioPackage {
@@ -31,5 +30,4 @@ export interface LloydgithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "lloyd.github.io";
 }

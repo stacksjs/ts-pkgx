@@ -21,10 +21,6 @@ export const pyinvokeorgPackage: PkgxPackage = {
   ],
   "versions": [
     "2.2.0"
-  ],
-  "fullPath": "pyinvoke.org",
-  "aliases": [
-    "invoke"
   ]
 }
 
@@ -45,9 +41,5 @@ export interface PyinvokeorgPackage {
   ];
   versions: readonly [
     "2.2.0"
-  ];
-  fullPath: "pyinvoke.org";
-  aliases: readonly [
-    "invoke"
   ];
 }

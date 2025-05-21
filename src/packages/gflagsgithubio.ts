@@ -17,8 +17,7 @@ export const gflagsgithubioPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "2.2.2"
-  ],
-  "fullPath": "gflags.github.io"
+  ]
 }
 
 export interface GflagsgithubioPackage {
@@ -35,5 +34,4 @@ export interface GflagsgithubioPackage {
   versions: readonly [
     "2.2.2"
   ];
-  fullPath: "gflags.github.io";
 }

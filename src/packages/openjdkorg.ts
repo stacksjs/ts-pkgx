@@ -72,8 +72,7 @@ export const openjdkorgPackage: PkgxPackage = {
     "17.0.11.4",
     "17.0.10.6",
     "11.0.23.6"
-  ],
-  "fullPath": "openjdk.org"
+  ]
 }
 
 export interface OpenjdkorgPackage {
@@ -145,5 +144,4 @@ export interface OpenjdkorgPackage {
     "17.0.10.6",
     "11.0.23.6"
   ];
-  fullPath: "openjdk.org";
 }

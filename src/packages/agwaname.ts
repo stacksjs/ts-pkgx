@@ -15,8 +15,7 @@ export const agwanamePackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "agwa.name"
+  "versions": []
 }
 
 export interface AgwanamePackage {
@@ -31,5 +30,4 @@ export interface AgwanamePackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "agwa.name";
 }

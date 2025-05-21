@@ -20,8 +20,7 @@ export const lz4orgPackage: PkgxPackage = {
   "versions": [
     "1.9.4",
     "1.10.0"
-  ],
-  "fullPath": "lz4.org"
+  ]
 }
 
 export interface Lz4orgPackage {
@@ -41,5 +40,4 @@ export interface Lz4orgPackage {
     "1.9.4",
     "1.10.0"
   ];
-  fullPath: "lz4.org";
 }

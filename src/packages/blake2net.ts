@@ -15,8 +15,7 @@ export const blake2netPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "blake2.net"
+  "versions": []
 }
 
 export interface Blake2netPackage {
@@ -31,5 +30,4 @@ export interface Blake2netPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "blake2.net";
 }

@@ -36,8 +36,7 @@ export const syncthingnetPackage: PkgxPackage = {
     "1.27.12",
     "1.27.11",
     "1.27.10"
-  ],
-  "fullPath": "syncthing.net"
+  ]
 }
 
 export interface SyncthingnetPackage {
@@ -73,5 +72,4 @@ export interface SyncthingnetPackage {
     "1.27.11",
     "1.27.10"
   ];
-  fullPath: "syncthing.net";
 }

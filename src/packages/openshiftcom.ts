@@ -233,10 +233,6 @@ export const openshiftcomPackage: PkgxPackage = {
     "4.12.54",
     "4.12.53",
     "4.11.59"
-  ],
-  "fullPath": "openshift.com",
-  "aliases": [
-    "oc"
   ]
 }
 
@@ -469,9 +465,5 @@ export interface OpenshiftcomPackage {
     "4.12.54",
     "4.12.53",
     "4.11.59"
-  ];
-  fullPath: "openshift.com";
-  aliases: readonly [
-    "oc"
   ];
 }

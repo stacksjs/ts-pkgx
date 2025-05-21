@@ -38,8 +38,7 @@ export const atlasgoioPackage: PkgxPackage = {
     "0.16.0",
     "0.15.0",
     "0.14.0"
-  ],
-  "fullPath": "atlasgo.io"
+  ]
 }
 
 export interface AtlasgoioPackage {
@@ -77,5 +76,4 @@ export interface AtlasgoioPackage {
     "0.15.0",
     "0.14.0"
   ];
-  fullPath: "atlasgo.io";
 }

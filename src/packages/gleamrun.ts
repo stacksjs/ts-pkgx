@@ -60,8 +60,7 @@ export const gleamrunPackage: PkgxPackage = {
     "0.28.1",
     "0.28.0",
     "0.27.0"
-  ],
-  "fullPath": "gleam.run"
+  ]
 }
 
 export interface GleamrunPackage {
@@ -121,5 +120,4 @@ export interface GleamrunPackage {
     "0.28.0",
     "0.27.0"
   ];
-  fullPath: "gleam.run";
 }

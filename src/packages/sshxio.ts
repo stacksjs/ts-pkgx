@@ -21,8 +21,7 @@ export const sshxioPackage: PkgxPackage = {
   ],
   "versions": [
     "2023.11.14"
-  ],
-  "fullPath": "sshx.io"
+  ]
 }
 
 export interface SshxioPackage {
@@ -43,5 +42,4 @@ export interface SshxioPackage {
   versions: readonly [
     "2023.11.14"
   ];
-  fullPath: "sshx.io";
 }

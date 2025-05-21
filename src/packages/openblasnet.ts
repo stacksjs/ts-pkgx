@@ -23,8 +23,7 @@ export const openblasnetPackage: PkgxPackage = {
     "0.3.25",
     "0.3.24",
     "0.3.23"
-  ],
-  "fullPath": "openblas.net"
+  ]
 }
 
 export interface OpenblasnetPackage {
@@ -47,5 +46,4 @@ export interface OpenblasnetPackage {
     "0.3.24",
     "0.3.23"
   ];
-  fullPath: "openblas.net";
 }

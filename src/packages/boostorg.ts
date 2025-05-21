@@ -26,8 +26,7 @@ export const boostorgPackage: PkgxPackage = {
     "1.83.0",
     "1.82.0",
     "1.81.0"
-  ],
-  "fullPath": "boost.org"
+  ]
 }
 
 export interface BoostorgPackage {
@@ -53,5 +52,4 @@ export interface BoostorgPackage {
     "1.82.0",
     "1.81.0"
   ];
-  fullPath: "boost.org";
 }

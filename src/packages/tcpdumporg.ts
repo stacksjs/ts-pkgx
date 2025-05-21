@@ -20,10 +20,6 @@ export const tcpdumporgPackage: PkgxPackage = {
   "versions": [
     "1.10.5",
     "1.10.4"
-  ],
-  "fullPath": "tcpdump.org",
-  "aliases": [
-    "pcap-config"
   ]
 }
 
@@ -43,9 +39,5 @@ export interface TcpdumporgPackage {
   versions: readonly [
     "1.10.5",
     "1.10.4"
-  ];
-  fullPath: "tcpdump.org";
-  aliases: readonly [
-    "pcap-config"
   ];
 }

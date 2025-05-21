@@ -51,8 +51,7 @@ export const bytebasecomPackage: PkgxPackage = {
     "2.16.0",
     "2.15.0",
     "2.14.1"
-  ],
-  "fullPath": "bytebase.com"
+  ]
 }
 
 export interface BytebasecomPackage {
@@ -103,5 +102,4 @@ export interface BytebasecomPackage {
     "2.15.0",
     "2.14.1"
   ];
-  fullPath: "bytebase.com";
 }

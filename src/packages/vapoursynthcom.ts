@@ -31,10 +31,6 @@ export const vapoursynthcomPackage: PkgxPackage = {
     "66.0.0",
     "65.0.0",
     "64.0.0"
-  ],
-  "fullPath": "vapoursynth.com",
-  "aliases": [
-    "vspipe"
   ]
 }
 
@@ -65,9 +61,5 @@ export interface VapoursynthcomPackage {
     "66.0.0",
     "65.0.0",
     "64.0.0"
-  ];
-  fullPath: "vapoursynth.com";
-  aliases: readonly [
-    "vspipe"
   ];
 }

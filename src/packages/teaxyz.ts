@@ -15,8 +15,7 @@ export const teaxyzPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "tea.xyz"
+  "versions": []
 }
 
 export interface TeaxyzPackage {
@@ -31,5 +30,4 @@ export interface TeaxyzPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "tea.xyz";
 }

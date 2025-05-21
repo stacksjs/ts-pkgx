@@ -15,8 +15,7 @@ export const darwinsyscomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "darwinsys.com"
+  "versions": []
 }
 
 export interface DarwinsyscomPackage {
@@ -31,5 +30,4 @@ export interface DarwinsyscomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "darwinsys.com";
 }

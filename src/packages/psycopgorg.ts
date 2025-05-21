@@ -15,8 +15,7 @@ export const psycopgorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "psycopg.org"
+  "versions": []
 }
 
 export interface PsycopgorgPackage {
@@ -31,5 +30,4 @@ export interface PsycopgorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "psycopg.org";
 }

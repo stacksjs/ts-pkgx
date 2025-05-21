@@ -29,8 +29,7 @@ export const gtssourceforgenetPackage: PkgxPackage = {
   ],
   "versions": [
     "0.7.6"
-  ],
-  "fullPath": "gts.sourceforge.net"
+  ]
 }
 
 export interface GtssourceforgenetPackage {
@@ -59,5 +58,4 @@ export interface GtssourceforgenetPackage {
   versions: readonly [
     "0.7.6"
   ];
-  fullPath: "gts.sourceforge.net";
 }

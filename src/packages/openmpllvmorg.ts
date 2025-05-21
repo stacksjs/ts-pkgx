@@ -47,10 +47,6 @@ export const openmpllvmorgPackage: PkgxPackage = {
     "17.0.1",
     "17.0.0",
     "16.0.6"
-  ],
-  "fullPath": "openmp.llvm.org",
-  "aliases": [
-    "libomp"
   ]
 }
 
@@ -97,9 +93,5 @@ export interface OpenmpllvmorgPackage {
     "17.0.1",
     "17.0.0",
     "16.0.6"
-  ];
-  fullPath: "openmp.llvm.org";
-  aliases: readonly [
-    "libomp"
   ];
 }

@@ -15,8 +15,7 @@ export const nikecomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "nike.com"
+  "versions": []
 }
 
 export interface NikecomPackage {
@@ -31,5 +30,4 @@ export interface NikecomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "nike.com";
 }

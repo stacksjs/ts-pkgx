@@ -58,8 +58,7 @@ export const appiumioPackage: PkgxPackage = {
     "2.10.3",
     "2.10.2",
     "2.10.1"
-  ],
-  "fullPath": "appium.io"
+  ]
 }
 
 export interface AppiumioPackage {
@@ -117,5 +116,4 @@ export interface AppiumioPackage {
     "2.10.2",
     "2.10.1"
   ];
-  fullPath: "appium.io";
 }

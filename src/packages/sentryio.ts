@@ -64,10 +64,6 @@ export const sentryioPackage: PkgxPackage = {
     "2.30.1",
     "2.30.0",
     "2.29.1"
-  ],
-  "fullPath": "sentry.io",
-  "aliases": [
-    "sentry-cli"
   ]
 }
 
@@ -131,9 +127,5 @@ export interface SentryioPackage {
     "2.30.1",
     "2.30.0",
     "2.29.1"
-  ];
-  fullPath: "sentry.io";
-  aliases: readonly [
-    "sentry-cli"
   ];
 }

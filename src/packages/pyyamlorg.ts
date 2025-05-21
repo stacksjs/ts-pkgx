@@ -17,8 +17,7 @@ export const pyyamlorgPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "0.2.5"
-  ],
-  "fullPath": "pyyaml.org"
+  ]
 }
 
 export interface PyyamlorgPackage {
@@ -35,5 +34,4 @@ export interface PyyamlorgPackage {
   versions: readonly [
     "0.2.5"
   ];
-  fullPath: "pyyaml.org";
 }

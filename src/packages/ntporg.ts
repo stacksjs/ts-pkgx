@@ -30,8 +30,7 @@ export const ntporgPackage: PkgxPackage = {
   ],
   "versions": [
     "4.2.8.17"
-  ],
-  "fullPath": "ntp.org"
+  ]
 }
 
 export interface NtporgPackage {
@@ -61,5 +60,4 @@ export interface NtporgPackage {
   versions: readonly [
     "4.2.8.17"
   ];
-  fullPath: "ntp.org";
 }

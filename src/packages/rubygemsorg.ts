@@ -79,8 +79,7 @@ export const rubygemsorgPackage: PkgxPackage = {
     "3.3.26",
     "3.3.25",
     "3.2.34"
-  ],
-  "fullPath": "rubygems.org"
+  ]
 }
 
 export interface RubygemsorgPackage {
@@ -159,5 +158,4 @@ export interface RubygemsorgPackage {
     "3.3.25",
     "3.2.34"
   ];
-  fullPath: "rubygems.org";
 }

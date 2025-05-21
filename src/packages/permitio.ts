@@ -15,8 +15,7 @@ export const permitioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "permit.io"
+  "versions": []
 }
 
 export interface PermitioPackage {
@@ -31,5 +30,4 @@ export interface PermitioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "permit.io";
 }

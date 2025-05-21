@@ -22,8 +22,7 @@ export const kobuildPackage: PkgxPackage = {
     "0.17.1",
     "0.17.0",
     "0.16.0"
-  ],
-  "fullPath": "ko.build"
+  ]
 }
 
 export interface KobuildPackage {
@@ -45,5 +44,4 @@ export interface KobuildPackage {
     "0.17.0",
     "0.16.0"
   ];
-  fullPath: "ko.build";
 }

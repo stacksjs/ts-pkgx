@@ -68,8 +68,7 @@ export const hasuraioPackage: PkgxPackage = {
     "2.11.12",
     "2.11.11",
     "2.11.10"
-  ],
-  "fullPath": "hasura.io"
+  ]
 }
 
 export interface HasuraioPackage {
@@ -137,5 +136,4 @@ export interface HasuraioPackage {
     "2.11.11",
     "2.11.10"
   ];
-  fullPath: "hasura.io";
 }

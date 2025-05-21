@@ -15,8 +15,7 @@ export const gouberorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "go.uber.org"
+  "versions": []
 }
 
 export interface GouberorgPackage {
@@ -31,5 +30,4 @@ export interface GouberorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "go.uber.org";
 }

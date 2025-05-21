@@ -71,8 +71,7 @@ export const dozzledevPackage: PkgxPackage = {
     "8.10.2",
     "8.10.1",
     "8.10.0"
-  ],
-  "fullPath": "dozzle.dev"
+  ]
 }
 
 export interface DozzledevPackage {
@@ -143,5 +142,4 @@ export interface DozzledevPackage {
     "8.10.1",
     "8.10.0"
   ];
-  fullPath: "dozzle.dev";
 }

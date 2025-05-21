@@ -24,8 +24,7 @@ export const direnvnetPackage: PkgxPackage = {
     "2.33.0",
     "2.32.3",
     "2.32.2"
-  ],
-  "fullPath": "direnv.net"
+  ]
 }
 
 export interface DirenvnetPackage {
@@ -49,5 +48,4 @@ export interface DirenvnetPackage {
     "2.32.3",
     "2.32.2"
   ];
-  fullPath: "direnv.net";
 }

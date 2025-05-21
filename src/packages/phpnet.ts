@@ -128,10 +128,6 @@ export const phpnetPackage: PkgxPackage = {
     "8.0.30",
     "8.0.28",
     "7.4.33"
-  ],
-  "fullPath": "php.net",
-  "aliases": [
-    "php"
   ]
 }
 
@@ -259,9 +255,5 @@ export interface PhpnetPackage {
     "8.0.30",
     "8.0.28",
     "7.4.33"
-  ];
-  fullPath: "php.net";
-  aliases: readonly [
-    "php"
   ];
 }

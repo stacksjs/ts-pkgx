@@ -15,8 +15,7 @@ export const quarydevPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "quary.dev"
+  "versions": []
 }
 
 export interface QuarydevPackage {
@@ -31,5 +30,4 @@ export interface QuarydevPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "quary.dev";
 }

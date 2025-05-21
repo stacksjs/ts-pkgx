@@ -641,8 +641,7 @@ export const tailcallrunPackage: PkgxPackage = {
     "0.100.2",
     "0.100.1",
     "0.100.0"
-  ],
-  "fullPath": "tailcall.run"
+  ]
 }
 
 export interface TailcallrunPackage {
@@ -1283,5 +1282,4 @@ export interface TailcallrunPackage {
     "0.100.1",
     "0.100.0"
   ];
-  fullPath: "tailcall.run";
 }

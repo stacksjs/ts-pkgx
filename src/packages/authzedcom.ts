@@ -15,8 +15,7 @@ export const authzedcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "authzed.com"
+  "versions": []
 }
 
 export interface AuthzedcomPackage {
@@ -31,5 +30,4 @@ export interface AuthzedcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "authzed.com";
 }

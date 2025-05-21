@@ -15,8 +15,7 @@ export const yuigithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "yui.github.io"
+  "versions": []
 }
 
 export interface YuigithubioPackage {
@@ -31,5 +30,4 @@ export interface YuigithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "yui.github.io";
 }

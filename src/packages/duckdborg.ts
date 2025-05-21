@@ -18,6 +18,7 @@ export const duckdborgPackage: PkgxPackage = {
   "companions": [],
   "dependencies": [],
   "versions": [
+    "1.3.0",
     "1.2.2",
     "1.2.1",
     "1.2.0",
@@ -36,8 +37,7 @@ export const duckdborgPackage: PkgxPackage = {
     "0.10.2",
     "0.10.1",
     "0.10.0"
-  ],
-  "fullPath": "duckdb.org"
+  ]
 }
 
 export interface DuckdborgPackage {
@@ -54,6 +54,7 @@ export interface DuckdborgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [
+    "1.3.0",
     "1.2.2",
     "1.2.1",
     "1.2.0",
@@ -73,5 +74,4 @@ export interface DuckdborgPackage {
     "0.10.1",
     "0.10.0"
   ];
-  fullPath: "duckdb.org";
 }

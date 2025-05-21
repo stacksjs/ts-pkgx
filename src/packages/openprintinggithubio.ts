@@ -15,8 +15,7 @@ export const openprintinggithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "openprinting.github.io"
+  "versions": []
 }
 
 export interface OpenprintinggithubioPackage {
@@ -31,5 +30,4 @@ export interface OpenprintinggithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "openprinting.github.io";
 }

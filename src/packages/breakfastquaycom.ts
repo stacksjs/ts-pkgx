@@ -15,8 +15,7 @@ export const breakfastquaycomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "breakfastquay.com"
+  "versions": []
 }
 
 export interface BreakfastquaycomPackage {
@@ -31,5 +30,4 @@ export interface BreakfastquaycomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "breakfastquay.com";
 }

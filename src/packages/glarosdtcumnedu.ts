@@ -15,8 +15,7 @@ export const glarosdtcumneduPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "glaros.dtc.umn.edu"
+  "versions": []
 }
 
 export interface GlarosdtcumneduPackage {
@@ -31,5 +30,4 @@ export interface GlarosdtcumneduPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "glaros.dtc.umn.edu";
 }

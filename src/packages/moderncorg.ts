@@ -15,8 +15,7 @@ export const moderncorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "modernc.org"
+  "versions": []
 }
 
 export interface ModerncorgPackage {
@@ -31,5 +30,4 @@ export interface ModerncorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "modernc.org";
 }

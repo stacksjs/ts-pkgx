@@ -20,8 +20,7 @@ export const hjsongithubioPackage: PkgxPackage = {
   "versions": [
     "1.1.0",
     "1.0.0"
-  ],
-  "fullPath": "hjson.github.io"
+  ]
 }
 
 export interface HjsongithubioPackage {
@@ -41,5 +40,4 @@ export interface HjsongithubioPackage {
     "1.1.0",
     "1.0.0"
   ];
-  fullPath: "hjson.github.io";
 }

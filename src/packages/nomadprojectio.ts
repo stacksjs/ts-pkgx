@@ -31,8 +31,7 @@ export const nomadprojectioPackage: PkgxPackage = {
     "1.8.2",
     "1.10.1",
     "1.10.0"
-  ],
-  "fullPath": "nomadproject.io"
+  ]
 }
 
 export interface NomadprojectioPackage {
@@ -63,5 +62,4 @@ export interface NomadprojectioPackage {
     "1.10.1",
     "1.10.0"
   ];
-  fullPath: "nomadproject.io";
 }

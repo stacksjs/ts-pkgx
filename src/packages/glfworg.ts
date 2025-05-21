@@ -25,8 +25,7 @@ export const glfworgPackage: PkgxPackage = {
     "3.4.0",
     "3.3.9",
     "3.3.10"
-  ],
-  "fullPath": "glfw.org"
+  ]
 }
 
 export interface GlfworgPackage {
@@ -51,5 +50,4 @@ export interface GlfworgPackage {
     "3.3.9",
     "3.3.10"
   ];
-  fullPath: "glfw.org";
 }

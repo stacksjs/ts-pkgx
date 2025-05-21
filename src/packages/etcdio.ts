@@ -30,8 +30,7 @@ export const etcdioPackage: PkgxPackage = {
     "3.5.14",
     "3.4.37",
     "3.4.36"
-  ],
-  "fullPath": "etcd.io"
+  ]
 }
 
 export interface EtcdioPackage {
@@ -61,5 +60,4 @@ export interface EtcdioPackage {
     "3.4.37",
     "3.4.36"
   ];
-  fullPath: "etcd.io";
 }

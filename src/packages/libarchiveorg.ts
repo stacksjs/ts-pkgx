@@ -40,8 +40,7 @@ export const libarchiveorgPackage: PkgxPackage = {
     "3.7.1",
     "3.7.0",
     "3.6.2"
-  ],
-  "fullPath": "libarchive.org"
+  ]
 }
 
 export interface LibarchiveorgPackage {
@@ -81,5 +80,4 @@ export interface LibarchiveorgPackage {
     "3.7.0",
     "3.6.2"
   ];
-  fullPath: "libarchive.org";
 }

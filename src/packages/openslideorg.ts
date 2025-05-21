@@ -32,8 +32,7 @@ export const openslideorgPackage: PkgxPackage = {
   "versions": [
     "4.0.0",
     "3.4.1"
-  ],
-  "fullPath": "openslide.org"
+  ]
 }
 
 export interface OpenslideorgPackage {
@@ -65,5 +64,4 @@ export interface OpenslideorgPackage {
     "4.0.0",
     "3.4.1"
   ];
-  fullPath: "openslide.org";
 }

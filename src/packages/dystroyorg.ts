@@ -15,8 +15,7 @@ export const dystroyorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "dystroy.org"
+  "versions": []
 }
 
 export interface DystroyorgPackage {
@@ -31,5 +30,4 @@ export interface DystroyorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "dystroy.org";
 }

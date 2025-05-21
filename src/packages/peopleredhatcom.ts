@@ -15,8 +15,7 @@ export const peopleredhatcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "people.redhat.com"
+  "versions": []
 }
 
 export interface PeopleredhatcomPackage {
@@ -31,5 +30,4 @@ export interface PeopleredhatcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "people.redhat.com";
 }

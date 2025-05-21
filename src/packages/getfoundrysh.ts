@@ -30,8 +30,7 @@ export const getfoundryshPackage: PkgxPackage = {
     "1.1.0",
     "1.0.0",
     "0.3.0"
-  ],
-  "fullPath": "getfoundry.sh"
+  ]
 }
 
 export interface GetfoundryshPackage {
@@ -61,5 +60,4 @@ export interface GetfoundryshPackage {
     "1.0.0",
     "0.3.0"
   ];
-  fullPath: "getfoundry.sh";
 }

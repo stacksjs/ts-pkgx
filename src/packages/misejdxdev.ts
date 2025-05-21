@@ -295,8 +295,7 @@ export const misejdxdevPackage: PkgxPackage = {
     "2024.1.11",
     "2024.1.10",
     "2024.1.0"
-  ],
-  "fullPath": "mise.jdx.dev"
+  ]
 }
 
 export interface MisejdxdevPackage {
@@ -591,5 +590,4 @@ export interface MisejdxdevPackage {
     "2024.1.10",
     "2024.1.0"
   ];
-  fullPath: "mise.jdx.dev";
 }

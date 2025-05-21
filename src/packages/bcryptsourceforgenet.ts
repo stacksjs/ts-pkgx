@@ -21,8 +21,7 @@ export const bcryptsourceforgenetPackage: PkgxPackage = {
   ],
   "versions": [
     "1.1.0"
-  ],
-  "fullPath": "bcrypt.sourceforge.net"
+  ]
 }
 
 export interface BcryptsourceforgenetPackage {
@@ -43,5 +42,4 @@ export interface BcryptsourceforgenetPackage {
   versions: readonly [
     "1.1.0"
   ];
-  fullPath: "bcrypt.sourceforge.net";
 }

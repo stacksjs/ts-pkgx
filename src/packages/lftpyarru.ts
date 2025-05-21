@@ -32,8 +32,7 @@ export const lftpyarruPackage: PkgxPackage = {
     "4.9.3",
     "4.9.2",
     "4.9.1"
-  ],
-  "fullPath": "lftp.yar.ru"
+  ]
 }
 
 export interface LftpyarruPackage {
@@ -65,5 +64,4 @@ export interface LftpyarruPackage {
     "4.9.2",
     "4.9.1"
   ];
-  fullPath: "lftp.yar.ru";
 }

@@ -15,8 +15,7 @@ export const presslygithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "pressly.github.io"
+  "versions": []
 }
 
 export interface PresslygithubioPackage {
@@ -31,5 +30,4 @@ export interface PresslygithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "pressly.github.io";
 }

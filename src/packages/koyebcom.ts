@@ -53,8 +53,7 @@ export const koyebcomPackage: PkgxPackage = {
     "3.1.0",
     "3.0.2",
     "3.0.1"
-  ],
-  "fullPath": "koyeb.com"
+  ]
 }
 
 export interface KoyebcomPackage {
@@ -107,5 +106,4 @@ export interface KoyebcomPackage {
     "3.0.2",
     "3.0.1"
   ];
-  fullPath: "koyeb.com";
 }

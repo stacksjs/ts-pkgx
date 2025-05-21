@@ -19,8 +19,7 @@ export const libusbinfoPackage: PkgxPackage = {
     "1.0.28",
     "1.0.27",
     "1.0.26"
-  ],
-  "fullPath": "libusb.info"
+  ]
 }
 
 export interface LibusbinfoPackage {
@@ -39,5 +38,4 @@ export interface LibusbinfoPackage {
     "1.0.27",
     "1.0.26"
   ];
-  fullPath: "libusb.info";
 }

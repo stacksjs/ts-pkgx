@@ -15,8 +15,7 @@ export const versitycomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "versity.com"
+  "versions": []
 }
 
 export interface VersitycomPackage {
@@ -31,5 +30,4 @@ export interface VersitycomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "versity.com";
 }

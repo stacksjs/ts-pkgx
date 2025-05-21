@@ -71,8 +71,7 @@ export const flutterdevPackage: PkgxPackage = {
     "3.13.5",
     "3.13.4",
     "3.13.3"
-  ],
-  "fullPath": "flutter.dev"
+  ]
 }
 
 export interface FlutterdevPackage {
@@ -143,5 +142,4 @@ export interface FlutterdevPackage {
     "3.13.4",
     "3.13.3"
   ];
-  fullPath: "flutter.dev";
 }

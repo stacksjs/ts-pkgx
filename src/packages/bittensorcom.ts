@@ -80,8 +80,7 @@ export const bittensorcomPackage: PkgxPackage = {
     "6.10.2",
     "6.10.1",
     "6.10.0"
-  ],
-  "fullPath": "bittensor.com"
+  ]
 }
 
 export interface BittensorcomPackage {
@@ -161,5 +160,4 @@ export interface BittensorcomPackage {
     "6.10.1",
     "6.10.0"
   ];
-  fullPath: "bittensor.com";
 }

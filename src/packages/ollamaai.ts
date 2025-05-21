@@ -114,8 +114,7 @@ export const ollamaaiPackage: PkgxPackage = {
     "0.0.19",
     "0.0.18",
     "0.0.17"
-  ],
-  "fullPath": "ollama.ai"
+  ]
 }
 
 export interface OllamaaiPackage {
@@ -229,5 +228,4 @@ export interface OllamaaiPackage {
     "0.0.18",
     "0.0.17"
   ];
-  fullPath: "ollama.ai";
 }

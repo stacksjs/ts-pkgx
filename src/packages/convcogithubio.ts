@@ -27,8 +27,7 @@ export const convcogithubioPackage: PkgxPackage = {
     "0.4.3",
     "0.4.2",
     "0.4.1"
-  ],
-  "fullPath": "convco.github.io"
+  ]
 }
 
 export interface ConvcogithubioPackage {
@@ -55,5 +54,4 @@ export interface ConvcogithubioPackage {
     "0.4.2",
     "0.4.1"
   ];
-  fullPath: "convco.github.io";
 }

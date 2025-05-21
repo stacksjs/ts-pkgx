@@ -32,8 +32,7 @@ export const prettierioPackage: PkgxPackage = {
     "3.3.1",
     "3.3.0",
     "3.2.5"
-  ],
-  "fullPath": "prettier.io"
+  ]
 }
 
 export interface PrettierioPackage {
@@ -65,5 +64,4 @@ export interface PrettierioPackage {
     "3.3.0",
     "3.2.5"
   ];
-  fullPath: "prettier.io";
 }

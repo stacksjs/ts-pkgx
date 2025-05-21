@@ -38,8 +38,7 @@ export const leptonicaorgPackage: PkgxPackage = {
     "1.84.1",
     "1.84.0",
     "1.83.1"
-  ],
-  "fullPath": "leptonica.org"
+  ]
 }
 
 export interface LeptonicaorgPackage {
@@ -77,5 +76,4 @@ export interface LeptonicaorgPackage {
     "1.84.0",
     "1.83.1"
   ];
-  fullPath: "leptonica.org";
 }

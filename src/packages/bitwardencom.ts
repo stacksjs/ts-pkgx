@@ -44,10 +44,6 @@ export const bitwardencomPackage: PkgxPackage = {
     "2024.11.0",
     "2024.10.0",
     "1.22.1"
-  ],
-  "fullPath": "bitwarden.com",
-  "aliases": [
-    "bw"
   ]
 }
 
@@ -91,9 +87,5 @@ export interface BitwardencomPackage {
     "2024.11.0",
     "2024.10.0",
     "1.22.1"
-  ];
-  fullPath: "bitwarden.com";
-  aliases: readonly [
-    "bw"
   ];
 }

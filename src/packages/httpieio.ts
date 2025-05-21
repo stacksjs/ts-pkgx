@@ -26,8 +26,7 @@ export const httpieioPackage: PkgxPackage = {
     "3.2.3",
     "3.2.2",
     "3.2.1"
-  ],
-  "fullPath": "httpie.io"
+  ]
 }
 
 export interface HttpieioPackage {
@@ -53,5 +52,4 @@ export interface HttpieioPackage {
     "3.2.2",
     "3.2.1"
   ];
-  fullPath: "httpie.io";
 }

@@ -23,8 +23,7 @@ export const upxgithubioPackage: PkgxPackage = {
     "5.0.1",
     "5.0.0",
     "4.2.4"
-  ],
-  "fullPath": "upx.github.io"
+  ]
 }
 
 export interface UpxgithubioPackage {
@@ -47,5 +46,4 @@ export interface UpxgithubioPackage {
     "5.0.0",
     "4.2.4"
   ];
-  fullPath: "upx.github.io";
 }

@@ -48,8 +48,7 @@ export const taskfiledevPackage: PkgxPackage = {
     "3.28.0",
     "3.27.1",
     "3.27.0"
-  ],
-  "fullPath": "taskfile.dev"
+  ]
 }
 
 export interface TaskfiledevPackage {
@@ -97,5 +96,4 @@ export interface TaskfiledevPackage {
     "3.27.1",
     "3.27.0"
   ];
-  fullPath: "taskfile.dev";
 }

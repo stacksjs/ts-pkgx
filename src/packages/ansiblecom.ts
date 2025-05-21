@@ -99,8 +99,7 @@ export const ansiblecomPackage: PkgxPackage = {
     "2.13.12",
     "2.13.11",
     "2.13.10"
-  ],
-  "fullPath": "ansible.com"
+  ]
 }
 
 export interface AnsiblecomPackage {
@@ -199,5 +198,4 @@ export interface AnsiblecomPackage {
     "2.13.11",
     "2.13.10"
   ];
-  fullPath: "ansible.com";
 }

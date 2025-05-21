@@ -20,8 +20,7 @@ export const uriparsergithubioPackage: PkgxPackage = {
   "versions": [
     "0.9.8",
     "0.9.7"
-  ],
-  "fullPath": "uriparser.github.io"
+  ]
 }
 
 export interface UriparsergithubioPackage {
@@ -41,5 +40,4 @@ export interface UriparsergithubioPackage {
     "0.9.8",
     "0.9.7"
   ];
-  fullPath: "uriparser.github.io";
 }

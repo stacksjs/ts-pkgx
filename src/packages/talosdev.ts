@@ -44,10 +44,6 @@ export const talosdevPackage: PkgxPackage = {
     "1.10.2",
     "1.10.1",
     "1.10.0"
-  ],
-  "fullPath": "talos.dev",
-  "aliases": [
-    "talosctl"
   ]
 }
 
@@ -91,9 +87,5 @@ export interface TalosdevPackage {
     "1.10.2",
     "1.10.1",
     "1.10.0"
-  ];
-  fullPath: "talos.dev";
-  aliases: readonly [
-    "talosctl"
   ];
 }

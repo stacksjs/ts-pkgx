@@ -15,8 +15,7 @@ export const mozillaorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "mozilla.org"
+  "versions": []
 }
 
 export interface MozillaorgPackage {
@@ -31,5 +30,4 @@ export interface MozillaorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "mozilla.org";
 }

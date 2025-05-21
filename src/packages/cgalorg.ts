@@ -31,8 +31,7 @@ export const cgalorgPackage: PkgxPackage = {
     "5.6.2",
     "5.6.1",
     "5.6.0"
-  ],
-  "fullPath": "cgal.org"
+  ]
 }
 
 export interface CgalorgPackage {
@@ -63,5 +62,4 @@ export interface CgalorgPackage {
     "5.6.1",
     "5.6.0"
   ];
-  fullPath: "cgal.org";
 }

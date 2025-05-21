@@ -15,8 +15,7 @@ export const akuityioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "akuity.io"
+  "versions": []
 }
 
 export interface AkuityioPackage {
@@ -31,5 +30,4 @@ export interface AkuityioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "akuity.io";
 }

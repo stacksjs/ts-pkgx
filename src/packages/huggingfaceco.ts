@@ -68,10 +68,6 @@ export const huggingfacecoPackage: PkgxPackage = {
     "0.20.1",
     "0.20.0",
     "0.19.4"
-  ],
-  "fullPath": "huggingface.co",
-  "aliases": [
-    "huggingface/cli"
   ]
 }
 
@@ -139,9 +135,5 @@ export interface HuggingfacecoPackage {
     "0.20.1",
     "0.20.0",
     "0.19.4"
-  ];
-  fullPath: "huggingface.co";
-  aliases: readonly [
-    "huggingface/cli"
   ];
 }

@@ -33,10 +33,6 @@ export const libgeosorgPackage: PkgxPackage = {
     "3.11.2",
     "3.10.7",
     "3.10.6"
-  ],
-  "fullPath": "libgeos.org",
-  "aliases": [
-    "geos-config"
   ]
 }
 
@@ -69,9 +65,5 @@ export interface LibgeosorgPackage {
     "3.11.2",
     "3.10.7",
     "3.10.6"
-  ];
-  fullPath: "libgeos.org";
-  aliases: readonly [
-    "geos-config"
   ];
 }

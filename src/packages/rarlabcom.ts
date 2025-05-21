@@ -37,10 +37,6 @@ export const rarlabcomPackage: PkgxPackage = {
     "6.2.12",
     "6.2.11",
     "6.2.10"
-  ],
-  "fullPath": "rarlab.com",
-  "aliases": [
-    "unrar"
   ]
 }
 
@@ -77,9 +73,5 @@ export interface RarlabcomPackage {
     "6.2.12",
     "6.2.11",
     "6.2.10"
-  ];
-  fullPath: "rarlab.com";
-  aliases: readonly [
-    "unrar"
   ];
 }

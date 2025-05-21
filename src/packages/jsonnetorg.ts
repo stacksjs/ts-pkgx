@@ -21,8 +21,7 @@ export const jsonnetorgPackage: PkgxPackage = {
   "versions": [
     "0.21.0",
     "0.20.0"
-  ],
-  "fullPath": "jsonnet.org"
+  ]
 }
 
 export interface JsonnetorgPackage {
@@ -43,5 +42,4 @@ export interface JsonnetorgPackage {
     "0.21.0",
     "0.20.0"
   ];
-  fullPath: "jsonnet.org";
 }

@@ -52,8 +52,7 @@ export const kerberosorgPackage: PkgxPackage = {
     "1.21.0",
     "1.20.2",
     "1.20.1"
-  ],
-  "fullPath": "kerberos.org"
+  ]
 }
 
 export interface KerberosorgPackage {
@@ -105,5 +104,4 @@ export interface KerberosorgPackage {
     "1.20.2",
     "1.20.1"
   ];
-  fullPath: "kerberos.org";
 }

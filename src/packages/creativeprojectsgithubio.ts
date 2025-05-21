@@ -15,8 +15,7 @@ export const creativeprojectsgithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "creativeprojects.github.io"
+  "versions": []
 }
 
 export interface CreativeprojectsgithubioPackage {
@@ -31,5 +30,4 @@ export interface CreativeprojectsgithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "creativeprojects.github.io";
 }

@@ -27,8 +27,7 @@ export const wait4xdevPackage: PkgxPackage = {
     "3.0.0",
     "2.14.3",
     "2.14.2"
-  ],
-  "fullPath": "wait4x.dev"
+  ]
 }
 
 export interface Wait4xdevPackage {
@@ -55,5 +54,4 @@ export interface Wait4xdevPackage {
     "2.14.3",
     "2.14.2"
   ];
-  fullPath: "wait4x.dev";
 }

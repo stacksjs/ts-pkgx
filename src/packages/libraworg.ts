@@ -39,8 +39,7 @@ export const libraworgPackage: PkgxPackage = {
     "0.21.3",
     "0.21.2",
     "0.21.1"
-  ],
-  "fullPath": "libraw.org"
+  ]
 }
 
 export interface LibraworgPackage {
@@ -79,5 +78,4 @@ export interface LibraworgPackage {
     "0.21.2",
     "0.21.1"
   ];
-  fullPath: "libraw.org";
 }

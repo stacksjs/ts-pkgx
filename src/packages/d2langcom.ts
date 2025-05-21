@@ -29,8 +29,7 @@ export const d2langcomPackage: PkgxPackage = {
     "0.6.2",
     "0.6.1",
     "0.6.0"
-  ],
-  "fullPath": "d2lang.com"
+  ]
 }
 
 export interface D2langcomPackage {
@@ -59,5 +58,4 @@ export interface D2langcomPackage {
     "0.6.1",
     "0.6.0"
   ];
-  fullPath: "d2lang.com";
 }

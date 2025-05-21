@@ -28,8 +28,7 @@ export const consulioPackage: PkgxPackage = {
     "1.20.0",
     "1.19.2",
     "1.19.1"
-  ],
-  "fullPath": "consul.io"
+  ]
 }
 
 export interface ConsulioPackage {
@@ -57,5 +56,4 @@ export interface ConsulioPackage {
     "1.19.2",
     "1.19.1"
   ];
-  fullPath: "consul.io";
 }

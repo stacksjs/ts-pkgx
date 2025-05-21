@@ -15,8 +15,7 @@ export const plasmasturmorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "plasmasturm.org"
+  "versions": []
 }
 
 export interface PlasmasturmorgPackage {
@@ -31,5 +30,4 @@ export interface PlasmasturmorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "plasmasturm.org";
 }

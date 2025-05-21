@@ -23,8 +23,7 @@ export const raccoinorgPackage: PkgxPackage = {
   "versions": [
     "0.2.0",
     "0.1.0"
-  ],
-  "fullPath": "raccoin.org"
+  ]
 }
 
 export interface RaccoinorgPackage {
@@ -47,5 +46,4 @@ export interface RaccoinorgPackage {
     "0.2.0",
     "0.1.0"
   ];
-  fullPath: "raccoin.org";
 }

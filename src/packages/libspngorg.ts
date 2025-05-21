@@ -20,8 +20,7 @@ export const libspngorgPackage: PkgxPackage = {
   ],
   "versions": [
     "0.5.0"
-  ],
-  "fullPath": "libspng.org"
+  ]
 }
 
 export interface LibspngorgPackage {
@@ -41,5 +40,4 @@ export interface LibspngorgPackage {
   versions: readonly [
     "0.5.0"
   ];
-  fullPath: "libspng.org";
 }

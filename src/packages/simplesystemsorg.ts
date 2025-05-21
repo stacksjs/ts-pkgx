@@ -15,8 +15,7 @@ export const simplesystemsorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "simplesystems.org"
+  "versions": []
 }
 
 export interface SimplesystemsorgPackage {
@@ -31,5 +30,4 @@ export interface SimplesystemsorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "simplesystems.org";
 }

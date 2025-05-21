@@ -15,8 +15,7 @@ export const fabianlindforssePackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "fabianlindfors.se"
+  "versions": []
 }
 
 export interface FabianlindforssePackage {
@@ -31,5 +30,4 @@ export interface FabianlindforssePackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "fabianlindfors.se";
 }

@@ -37,10 +37,6 @@ export const deepwisdomaiPackage: PkgxPackage = {
     "0.6.2",
     "0.6.0",
     "0.5.2"
-  ],
-  "fullPath": "deepwisdom.ai",
-  "aliases": [
-    "metagpt"
   ]
 }
 
@@ -77,9 +73,5 @@ export interface DeepwisdomaiPackage {
     "0.6.2",
     "0.6.0",
     "0.5.2"
-  ];
-  fullPath: "deepwisdom.ai";
-  aliases: readonly [
-    "metagpt"
   ];
 }

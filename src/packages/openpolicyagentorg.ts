@@ -42,10 +42,6 @@ export const openpolicyagentorgPackage: PkgxPackage = {
     "0.60.0",
     "0.59.0",
     "0.58.0"
-  ],
-  "fullPath": "openpolicyagent.org",
-  "aliases": [
-    "opa"
   ]
 }
 
@@ -87,9 +83,5 @@ export interface OpenpolicyagentorgPackage {
     "0.60.0",
     "0.59.0",
     "0.58.0"
-  ];
-  fullPath: "openpolicyagent.org";
-  aliases: readonly [
-    "opa"
   ];
 }

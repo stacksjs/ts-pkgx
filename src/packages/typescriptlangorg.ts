@@ -33,10 +33,6 @@ export const typescriptlangorgPackage: PkgxPackage = {
     "5.4.4",
     "5.4.3",
     "5.4.2"
-  ],
-  "fullPath": "typescriptlang.org",
-  "aliases": [
-    "tsc"
   ]
 }
 
@@ -69,9 +65,5 @@ export interface TypescriptlangorgPackage {
     "5.4.4",
     "5.4.3",
     "5.4.2"
-  ];
-  fullPath: "typescriptlang.org";
-  aliases: readonly [
-    "tsc"
   ];
 }

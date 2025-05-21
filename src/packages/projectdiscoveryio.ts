@@ -15,8 +15,7 @@ export const projectdiscoveryioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "projectdiscovery.io"
+  "versions": []
 }
 
 export interface ProjectdiscoveryioPackage {
@@ -31,5 +30,4 @@ export interface ProjectdiscoveryioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "projectdiscovery.io";
 }

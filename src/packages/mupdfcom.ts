@@ -60,8 +60,7 @@ export const mupdfcomPackage: PkgxPackage = {
     "1.23.6",
     "1.23.11",
     "1.23.10"
-  ],
-  "fullPath": "mupdf.com"
+  ]
 }
 
 export interface MupdfcomPackage {
@@ -121,5 +120,4 @@ export interface MupdfcomPackage {
     "1.23.11",
     "1.23.10"
   ];
-  fullPath: "mupdf.com";
 }

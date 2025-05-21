@@ -27,8 +27,7 @@ export const doxygennlPackage: PkgxPackage = {
     "1.12.0",
     "1.11.0",
     "1.10.0"
-  ],
-  "fullPath": "doxygen.nl"
+  ]
 }
 
 export interface DoxygennlPackage {
@@ -55,5 +54,4 @@ export interface DoxygennlPackage {
     "1.11.0",
     "1.10.0"
   ];
-  fullPath: "doxygen.nl";
 }

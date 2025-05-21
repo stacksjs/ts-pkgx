@@ -74,8 +74,7 @@ export const traefikioPackage: PkgxPackage = {
     "2.10.7",
     "2.10.6",
     "2.10.5"
-  ],
-  "fullPath": "traefik.io"
+  ]
 }
 
 export interface TraefikioPackage {
@@ -149,5 +148,4 @@ export interface TraefikioPackage {
     "2.10.6",
     "2.10.5"
   ];
-  fullPath: "traefik.io";
 }

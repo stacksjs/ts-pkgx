@@ -30,8 +30,7 @@ export const ktlintgithubioPackage: PkgxPackage = {
     "1.2.0",
     "1.1.1",
     "0.49.1"
-  ],
-  "fullPath": "ktlint.github.io"
+  ]
 }
 
 export interface KtlintgithubioPackage {
@@ -61,5 +60,4 @@ export interface KtlintgithubioPackage {
     "1.1.1",
     "0.49.1"
   ];
-  fullPath: "ktlint.github.io";
 }

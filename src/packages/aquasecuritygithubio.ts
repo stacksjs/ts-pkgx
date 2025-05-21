@@ -15,8 +15,7 @@ export const aquasecuritygithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "aquasecurity.github.io"
+  "versions": []
 }
 
 export interface AquasecuritygithubioPackage {
@@ -31,5 +30,4 @@ export interface AquasecuritygithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "aquasecurity.github.io";
 }

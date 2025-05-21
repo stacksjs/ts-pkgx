@@ -40,8 +40,7 @@ export const jbangdevPackage: PkgxPackage = {
     "0.112.4",
     "0.111.0",
     "0.110.1"
-  ],
-  "fullPath": "jbang.dev"
+  ]
 }
 
 export interface JbangdevPackage {
@@ -81,5 +80,4 @@ export interface JbangdevPackage {
     "0.111.0",
     "0.110.1"
   ];
-  fullPath: "jbang.dev";
 }

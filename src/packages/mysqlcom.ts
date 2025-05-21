@@ -85,8 +85,7 @@ export const mysqlcomPackage: PkgxPackage = {
     "8.0.34",
     "8.0.33",
     "8.0.32"
-  ],
-  "fullPath": "mysql.com"
+  ]
 }
 
 export interface MysqlcomPackage {
@@ -171,5 +170,4 @@ export interface MysqlcomPackage {
     "8.0.33",
     "8.0.32"
   ];
-  fullPath: "mysql.com";
 }

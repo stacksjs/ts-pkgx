@@ -25,8 +25,7 @@ export const ijgorgPackage: PkgxPackage = {
     "9f",
     "9e",
     "9.5.0"
-  ],
-  "fullPath": "ijg.org"
+  ]
 }
 
 export interface IjgorgPackage {
@@ -51,5 +50,4 @@ export interface IjgorgPackage {
     "9e",
     "9.5.0"
   ];
-  fullPath: "ijg.org";
 }

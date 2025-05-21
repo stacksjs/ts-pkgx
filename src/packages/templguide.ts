@@ -42,8 +42,7 @@ export const templguidePackage: PkgxPackage = {
     "0.2.513",
     "0.2.501",
     "0.2.476"
-  ],
-  "fullPath": "templ.guide"
+  ]
 }
 
 export interface TemplguidePackage {
@@ -85,5 +84,4 @@ export interface TemplguidePackage {
     "0.2.501",
     "0.2.476"
   ];
-  fullPath: "templ.guide";
 }

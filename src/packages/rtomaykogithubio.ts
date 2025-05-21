@@ -15,8 +15,7 @@ export const rtomaykogithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "rtomayko.github.io"
+  "versions": []
 }
 
 export interface RtomaykogithubioPackage {
@@ -31,5 +30,4 @@ export interface RtomaykogithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "rtomayko.github.io";
 }

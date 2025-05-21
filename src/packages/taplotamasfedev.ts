@@ -21,8 +21,7 @@ export const taplotamasfedevPackage: PkgxPackage = {
     "0.9.3",
     "0.9.2",
     "0.8.1"
-  ],
-  "fullPath": "taplo.tamasfe.dev"
+  ]
 }
 
 export interface TaplotamasfedevPackage {
@@ -43,5 +42,4 @@ export interface TaplotamasfedevPackage {
     "0.9.2",
     "0.8.1"
   ];
-  fullPath: "taplo.tamasfe.dev";
 }

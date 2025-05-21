@@ -15,8 +15,7 @@ export const chiarkgreenendorgukPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "chiark.greenend.org.uk"
+  "versions": []
 }
 
 export interface ChiarkgreenendorgukPackage {
@@ -31,5 +30,4 @@ export interface ChiarkgreenendorgukPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "chiark.greenend.org.uk";
 }

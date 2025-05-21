@@ -56,8 +56,7 @@ export const zrokioPackage: PkgxPackage = {
     "0.4.18",
     "0.4.17",
     "0.4.16"
-  ],
-  "fullPath": "zrok.io"
+  ]
 }
 
 export interface ZrokioPackage {
@@ -113,5 +112,4 @@ export interface ZrokioPackage {
     "0.4.17",
     "0.4.16"
   ];
-  fullPath: "zrok.io";
 }

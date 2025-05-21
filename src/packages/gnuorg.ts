@@ -15,8 +15,7 @@ export const gnuorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "gnu.org"
+  "versions": []
 }
 
 export interface GnuorgPackage {
@@ -31,5 +30,4 @@ export interface GnuorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "gnu.org";
 }

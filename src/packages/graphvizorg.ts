@@ -74,8 +74,7 @@ export const graphvizorgPackage: PkgxPackage = {
     "12.0.0",
     "11.0.0",
     "10.0.1"
-  ],
-  "fullPath": "graphviz.org"
+  ]
 }
 
 export interface GraphvizorgPackage {
@@ -149,5 +148,4 @@ export interface GraphvizorgPackage {
     "11.0.0",
     "10.0.1"
   ];
-  fullPath: "graphviz.org";
 }

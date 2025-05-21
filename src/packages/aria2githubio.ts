@@ -25,10 +25,6 @@ export const aria2githubioPackage: PkgxPackage = {
   "versions": [
     "1.37.0",
     "1.36.0"
-  ],
-  "fullPath": "aria2.github.io",
-  "aliases": [
-    "aria2c"
   ]
 }
 
@@ -53,9 +49,5 @@ export interface Aria2githubioPackage {
   versions: readonly [
     "1.37.0",
     "1.36.0"
-  ];
-  fullPath: "aria2.github.io";
-  aliases: readonly [
-    "aria2c"
   ];
 }

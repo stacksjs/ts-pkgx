@@ -15,8 +15,7 @@ export const kubernetesioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "kubernetes.io"
+  "versions": []
 }
 
 export interface KubernetesioPackage {
@@ -31,5 +30,4 @@ export interface KubernetesioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "kubernetes.io";
 }

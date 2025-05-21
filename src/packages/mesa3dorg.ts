@@ -43,6 +43,7 @@ export const mesa3dorgPackage: PkgxPackage = {
     "wayland.freedesktop.org/protocols"
   ],
   "versions": [
+    "25.1.1",
     "25.1.0",
     "25.0.6",
     "25.0.5",
@@ -93,8 +94,7 @@ export const mesa3dorgPackage: PkgxPackage = {
     "23.2.1",
     "23.1.8",
     "23.1.7"
-  ],
-  "fullPath": "mesa3d.org"
+  ]
 }
 
 export interface Mesa3dorgPackage {
@@ -136,6 +136,7 @@ export interface Mesa3dorgPackage {
     "wayland.freedesktop.org/protocols"
   ];
   versions: readonly [
+    "25.1.1",
     "25.1.0",
     "25.0.6",
     "25.0.5",
@@ -187,5 +188,4 @@ export interface Mesa3dorgPackage {
     "23.1.8",
     "23.1.7"
   ];
-  fullPath: "mesa3d.org";
 }

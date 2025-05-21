@@ -22,8 +22,7 @@ export const musllibcorgPackage: PkgxPackage = {
   ],
   "versions": [
     "1.2.3"
-  ],
-  "fullPath": "musl.libc.org"
+  ]
 }
 
 export interface MusllibcorgPackage {
@@ -45,5 +44,4 @@ export interface MusllibcorgPackage {
   versions: readonly [
     "1.2.3"
   ];
-  fullPath: "musl.libc.org";
 }

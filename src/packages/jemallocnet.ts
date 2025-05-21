@@ -17,8 +17,7 @@ export const jemallocnetPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "5.3.0"
-  ],
-  "fullPath": "jemalloc.net"
+  ]
 }
 
 export interface JemallocnetPackage {
@@ -35,5 +34,4 @@ export interface JemallocnetPackage {
   versions: readonly [
     "5.3.0"
   ];
-  fullPath: "jemalloc.net";
 }

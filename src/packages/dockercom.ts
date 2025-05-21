@@ -15,8 +15,7 @@ export const dockercomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "docker.com"
+  "versions": []
 }
 
 export interface DockercomPackage {
@@ -31,5 +30,4 @@ export interface DockercomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "docker.com";
 }

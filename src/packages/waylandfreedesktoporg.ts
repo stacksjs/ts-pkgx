@@ -28,8 +28,7 @@ export const waylandfreedesktoporgPackage: PkgxPackage = {
     "1.22.92",
     "1.22.91",
     "1.22.0"
-  ],
-  "fullPath": "wayland.freedesktop.org"
+  ]
 }
 
 export interface WaylandfreedesktoporgPackage {
@@ -57,5 +56,4 @@ export interface WaylandfreedesktoporgPackage {
     "1.22.91",
     "1.22.0"
   ];
-  fullPath: "wayland.freedesktop.org";
 }

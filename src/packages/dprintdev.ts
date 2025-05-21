@@ -45,8 +45,7 @@ export const dprintdevPackage: PkgxPackage = {
     "0.42.0",
     "0.41.0",
     "0.40.2"
-  ],
-  "fullPath": "dprint.dev"
+  ]
 }
 
 export interface DprintdevPackage {
@@ -91,5 +90,4 @@ export interface DprintdevPackage {
     "0.41.0",
     "0.40.2"
   ];
-  fullPath: "dprint.dev";
 }

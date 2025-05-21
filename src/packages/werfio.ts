@@ -161,8 +161,7 @@ export const werfioPackage: PkgxPackage = {
     "1.2.294",
     "1.1.36",
     "1.1.35"
-  ],
-  "fullPath": "werf.io"
+  ]
 }
 
 export interface WerfioPackage {
@@ -323,5 +322,4 @@ export interface WerfioPackage {
     "1.1.36",
     "1.1.35"
   ];
-  fullPath: "werf.io";
 }

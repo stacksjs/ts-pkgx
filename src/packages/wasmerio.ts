@@ -41,8 +41,7 @@ export const wasmerioPackage: PkgxPackage = {
     "4.2.4",
     "4.2.3",
     "4.2.2"
-  ],
-  "fullPath": "wasmer.io"
+  ]
 }
 
 export interface WasmerioPackage {
@@ -83,5 +82,4 @@ export interface WasmerioPackage {
     "4.2.3",
     "4.2.2"
   ];
-  fullPath: "wasmer.io";
 }

@@ -34,10 +34,6 @@ export const cairographicsorgPackage: PkgxPackage = {
     "1.18.2",
     "1.18.0",
     "1.16.0"
-  ],
-  "fullPath": "cairographics.org",
-  "aliases": [
-    "cairo-trace"
   ]
 }
 
@@ -71,9 +67,5 @@ export interface CairographicsorgPackage {
     "1.18.2",
     "1.18.0",
     "1.16.0"
-  ];
-  fullPath: "cairographics.org";
-  aliases: readonly [
-    "cairo-trace"
   ];
 }

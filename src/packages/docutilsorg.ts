@@ -36,8 +36,7 @@ export const docutilsorgPackage: PkgxPackage = {
     "0.20.1",
     "0.20.0",
     "0.19.0"
-  ],
-  "fullPath": "docutils.org"
+  ]
 }
 
 export interface DocutilsorgPackage {
@@ -73,5 +72,4 @@ export interface DocutilsorgPackage {
     "0.20.0",
     "0.19.0"
   ];
-  fullPath: "docutils.org";
 }

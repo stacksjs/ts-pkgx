@@ -19,8 +19,7 @@ export const libeventorgPackage: PkgxPackage = {
   ],
   "versions": [
     "2.1.12"
-  ],
-  "fullPath": "libevent.org"
+  ]
 }
 
 export interface LibeventorgPackage {
@@ -39,5 +38,4 @@ export interface LibeventorgPackage {
   versions: readonly [
     "2.1.12"
   ];
-  fullPath: "libevent.org";
 }

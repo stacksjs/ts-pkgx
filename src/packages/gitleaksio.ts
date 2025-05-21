@@ -44,8 +44,7 @@ export const gitleaksioPackage: PkgxPackage = {
     "8.18.3",
     "8.18.2",
     "8.18.1"
-  ],
-  "fullPath": "gitleaks.io"
+  ]
 }
 
 export interface GitleaksioPackage {
@@ -89,5 +88,4 @@ export interface GitleaksioPackage {
     "8.18.2",
     "8.18.1"
   ];
-  fullPath: "gitleaks.io";
 }

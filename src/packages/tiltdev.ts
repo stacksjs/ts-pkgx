@@ -39,8 +39,7 @@ export const tiltdevPackage: PkgxPackage = {
     "0.33.12",
     "0.33.11",
     "0.33.10"
-  ],
-  "fullPath": "tilt.dev"
+  ]
 }
 
 export interface TiltdevPackage {
@@ -79,5 +78,4 @@ export interface TiltdevPackage {
     "0.33.11",
     "0.33.10"
   ];
-  fullPath: "tilt.dev";
 }

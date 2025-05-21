@@ -15,8 +15,7 @@ export const geuzorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "geuz.org"
+  "versions": []
 }
 
 export interface GeuzorgPackage {
@@ -31,5 +30,4 @@ export interface GeuzorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "geuz.org";
 }

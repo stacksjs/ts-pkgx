@@ -33,8 +33,7 @@ export const valkeyioPackage: PkgxPackage = {
     "7.2.7",
     "7.2.6",
     "7.2.5"
-  ],
-  "fullPath": "valkey.io"
+  ]
 }
 
 export interface ValkeyioPackage {
@@ -67,5 +66,4 @@ export interface ValkeyioPackage {
     "7.2.6",
     "7.2.5"
   ];
-  fullPath: "valkey.io";
 }

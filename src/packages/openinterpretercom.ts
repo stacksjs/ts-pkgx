@@ -43,10 +43,6 @@ export const openinterpretercomPackage: PkgxPackage = {
     "0.1.1",
     "0.1.0",
     "0.0.297"
-  ],
-  "fullPath": "openinterpreter.com",
-  "aliases": [
-    "open-interpreter"
   ]
 }
 
@@ -89,9 +85,5 @@ export interface OpeninterpretercomPackage {
     "0.1.1",
     "0.1.0",
     "0.0.297"
-  ];
-  fullPath: "openinterpreter.com";
-  aliases: readonly [
-    "open-interpreter"
   ];
 }

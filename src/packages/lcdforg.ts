@@ -15,8 +15,7 @@ export const lcdforgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "lcdf.org"
+  "versions": []
 }
 
 export interface LcdforgPackage {
@@ -31,5 +30,4 @@ export interface LcdforgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "lcdf.org";
 }

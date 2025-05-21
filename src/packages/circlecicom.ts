@@ -68,8 +68,7 @@ export const circlecicomPackage: PkgxPackage = {
     "0.1.24495",
     "0.1.24435",
     "0.1.23845"
-  ],
-  "fullPath": "circleci.com"
+  ]
 }
 
 export interface CirclecicomPackage {
@@ -137,5 +136,4 @@ export interface CirclecicomPackage {
     "0.1.24435",
     "0.1.23845"
   ];
-  fullPath: "circleci.com";
 }

@@ -55,8 +55,7 @@ export const harfbuzzorgPackage: PkgxPackage = {
     "10.1.0",
     "10.0.1",
     "10.0.0"
-  ],
-  "fullPath": "harfbuzz.org"
+  ]
 }
 
 export interface HarfbuzzorgPackage {
@@ -111,5 +110,4 @@ export interface HarfbuzzorgPackage {
     "10.0.1",
     "10.0.0"
   ];
-  fullPath: "harfbuzz.org";
 }

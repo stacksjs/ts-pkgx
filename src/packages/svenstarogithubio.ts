@@ -15,8 +15,7 @@ export const svenstarogithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "svenstaro.github.io"
+  "versions": []
 }
 
 export interface SvenstarogithubioPackage {
@@ -31,5 +30,4 @@ export interface SvenstarogithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "svenstaro.github.io";
 }

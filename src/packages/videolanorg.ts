@@ -15,8 +15,7 @@ export const videolanorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "videolan.org"
+  "versions": []
 }
 
 export interface VideolanorgPackage {
@@ -31,5 +30,4 @@ export interface VideolanorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "videolan.org";
 }

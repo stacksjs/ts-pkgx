@@ -61,8 +61,7 @@ export const rabbitmqcomPackage: PkgxPackage = {
     "3.11.26",
     "3.11.25",
     "3.11.24"
-  ],
-  "fullPath": "rabbitmq.com"
+  ]
 }
 
 export interface RabbitmqcomPackage {
@@ -123,5 +122,4 @@ export interface RabbitmqcomPackage {
     "3.11.25",
     "3.11.24"
   ];
-  fullPath: "rabbitmq.com";
 }

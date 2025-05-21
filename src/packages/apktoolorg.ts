@@ -24,8 +24,7 @@ export const apktoolorgPackage: PkgxPackage = {
     "2.11.1",
     "2.11.0",
     "2.10.0"
-  ],
-  "fullPath": "apktool.org"
+  ]
 }
 
 export interface ApktoolorgPackage {
@@ -49,5 +48,4 @@ export interface ApktoolorgPackage {
     "2.11.0",
     "2.10.0"
   ];
-  fullPath: "apktool.org";
 }

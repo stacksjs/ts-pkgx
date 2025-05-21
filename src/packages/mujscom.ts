@@ -27,8 +27,7 @@ export const mujscomPackage: PkgxPackage = {
     "1.3.5",
     "1.3.4",
     "1.3.3"
-  ],
-  "fullPath": "mujs.com"
+  ]
 }
 
 export interface MujscomPackage {
@@ -55,5 +54,4 @@ export interface MujscomPackage {
     "1.3.4",
     "1.3.3"
   ];
-  fullPath: "mujs.com";
 }

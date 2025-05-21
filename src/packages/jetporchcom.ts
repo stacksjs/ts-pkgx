@@ -19,8 +19,7 @@ export const jetporchcomPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "0.0.1"
-  ],
-  "fullPath": "jetporch.com"
+  ]
 }
 
 export interface JetporchcomPackage {
@@ -39,5 +38,4 @@ export interface JetporchcomPackage {
   versions: readonly [
     "0.0.1"
   ];
-  fullPath: "jetporch.com";
 }

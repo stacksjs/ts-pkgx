@@ -28,6 +28,7 @@ export const elementsprojectorgPackage: PkgxPackage = {
     "oracle.com/berkeley-db"
   ],
   "versions": [
+    "23.3.0",
     "23.2.7",
     "23.2.6",
     "23.2.5",
@@ -36,8 +37,7 @@ export const elementsprojectorgPackage: PkgxPackage = {
     "23.2.2",
     "23.2.1",
     "22.1.1"
-  ],
-  "fullPath": "elementsproject.org"
+  ]
 }
 
 export interface ElementsprojectorgPackage {
@@ -64,6 +64,7 @@ export interface ElementsprojectorgPackage {
     "oracle.com/berkeley-db"
   ];
   versions: readonly [
+    "23.3.0",
     "23.2.7",
     "23.2.6",
     "23.2.5",
@@ -73,5 +74,4 @@ export interface ElementsprojectorgPackage {
     "23.2.1",
     "22.1.1"
   ];
-  fullPath: "elementsproject.org";
 }

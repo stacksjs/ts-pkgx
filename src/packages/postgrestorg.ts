@@ -33,8 +33,7 @@ export const postgrestorgPackage: PkgxPackage = {
     "12.2.12",
     "12.2.11",
     "12.2.10"
-  ],
-  "fullPath": "postgrest.org"
+  ]
 }
 
 export interface PostgrestorgPackage {
@@ -67,5 +66,4 @@ export interface PostgrestorgPackage {
     "12.2.11",
     "12.2.10"
   ];
-  fullPath: "postgrest.org";
 }

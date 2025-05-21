@@ -15,8 +15,7 @@ export const astralshPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "astral.sh"
+  "versions": []
 }
 
 export interface AstralshPackage {
@@ -31,5 +30,4 @@ export interface AstralshPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "astral.sh";
 }

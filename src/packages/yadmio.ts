@@ -25,8 +25,7 @@ export const yadmioPackage: PkgxPackage = {
     "3.4.0",
     "3.3.0",
     "3.2.2"
-  ],
-  "fullPath": "yadm.io"
+  ]
 }
 
 export interface YadmioPackage {
@@ -51,5 +50,4 @@ export interface YadmioPackage {
     "3.3.0",
     "3.2.2"
   ];
-  fullPath: "yadm.io";
 }

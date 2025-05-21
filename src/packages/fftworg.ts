@@ -24,8 +24,7 @@ export const fftworgPackage: PkgxPackage = {
   ],
   "versions": [
     "3.3.10"
-  ],
-  "fullPath": "fftw.org"
+  ]
 }
 
 export interface FftworgPackage {
@@ -49,5 +48,4 @@ export interface FftworgPackage {
   versions: readonly [
     "3.3.10"
   ];
-  fullPath: "fftw.org";
 }

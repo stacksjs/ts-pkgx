@@ -19,8 +19,7 @@ export const duktapeorgPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "2.7.0"
-  ],
-  "fullPath": "duktape.org"
+  ]
 }
 
 export interface DuktapeorgPackage {
@@ -39,5 +38,4 @@ export interface DuktapeorgPackage {
   versions: readonly [
     "2.7.0"
   ];
-  fullPath: "duktape.org";
 }

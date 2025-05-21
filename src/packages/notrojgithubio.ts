@@ -15,8 +15,7 @@ export const notrojgithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "notroj.github.io"
+  "versions": []
 }
 
 export interface NotrojgithubioPackage {
@@ -31,5 +30,4 @@ export interface NotrojgithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "notroj.github.io";
 }

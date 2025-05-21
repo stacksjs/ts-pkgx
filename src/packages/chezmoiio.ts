@@ -92,8 +92,7 @@ export const chezmoiioPackage: PkgxPackage = {
     "2.30.0",
     "2.29.4",
     "2.29.3"
-  ],
-  "fullPath": "chezmoi.io"
+  ]
 }
 
 export interface ChezmoiioPackage {
@@ -185,5 +184,4 @@ export interface ChezmoiioPackage {
     "2.29.4",
     "2.29.3"
   ];
-  fullPath: "chezmoi.io";
 }

@@ -15,8 +15,7 @@ export const brxken128githubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "brxken128.github.io"
+  "versions": []
 }
 
 export interface Brxken128githubioPackage {
@@ -31,5 +30,4 @@ export interface Brxken128githubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "brxken128.github.io";
 }

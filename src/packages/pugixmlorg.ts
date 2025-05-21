@@ -19,8 +19,7 @@ export const pugixmlorgPackage: PkgxPackage = {
     "1.15.0",
     "1.14.0",
     "1.13.0"
-  ],
-  "fullPath": "pugixml.org"
+  ]
 }
 
 export interface PugixmlorgPackage {
@@ -39,5 +38,4 @@ export interface PugixmlorgPackage {
     "1.14.0",
     "1.13.0"
   ];
-  fullPath: "pugixml.org";
 }

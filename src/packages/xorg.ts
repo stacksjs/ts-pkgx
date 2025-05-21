@@ -15,8 +15,7 @@ export const xorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "x.org"
+  "versions": []
 }
 
 export interface XorgPackage {
@@ -31,5 +30,4 @@ export interface XorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "x.org";
 }

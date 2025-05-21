@@ -49,8 +49,7 @@ export const mongodbcomPackage: PkgxPackage = {
     "6.0.19",
     "6.0.18",
     "6.0.17"
-  ],
-  "fullPath": "mongodb.com"
+  ]
 }
 
 export interface MongodbcomPackage {
@@ -99,5 +98,4 @@ export interface MongodbcomPackage {
     "6.0.18",
     "6.0.17"
   ];
-  fullPath: "mongodb.com";
 }

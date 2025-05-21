@@ -17,8 +17,7 @@ export const frei0rdyneorgPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "1.8.0"
-  ],
-  "fullPath": "frei0r.dyne.org"
+  ]
 }
 
 export interface Frei0rdyneorgPackage {
@@ -35,5 +34,4 @@ export interface Frei0rdyneorgPackage {
   versions: readonly [
     "1.8.0"
   ];
-  fullPath: "frei0r.dyne.org";
 }

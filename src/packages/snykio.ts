@@ -61,8 +61,7 @@ export const snykioPackage: PkgxPackage = {
     "1.1282.0",
     "1.1281.0",
     "1.1280.1"
-  ],
-  "fullPath": "snyk.io"
+  ]
 }
 
 export interface SnykioPackage {
@@ -123,5 +122,4 @@ export interface SnykioPackage {
     "1.1281.0",
     "1.1280.1"
   ];
-  fullPath: "snyk.io";
 }

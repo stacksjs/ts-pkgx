@@ -54,8 +54,7 @@ export const ffmpegorgPackage: PkgxPackage = {
     "4.1.11",
     "3.4.14",
     "3.4.13"
-  ],
-  "fullPath": "ffmpeg.org"
+  ]
 }
 
 export interface FfmpegorgPackage {
@@ -109,5 +108,4 @@ export interface FfmpegorgPackage {
     "3.4.14",
     "3.4.13"
   ];
-  fullPath: "ffmpeg.org";
 }

@@ -15,8 +15,7 @@ export const xercesapacheorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "xerces.apache.org"
+  "versions": []
 }
 
 export interface XercesapacheorgPackage {
@@ -31,5 +30,4 @@ export interface XercesapacheorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "xerces.apache.org";
 }

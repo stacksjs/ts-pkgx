@@ -15,8 +15,7 @@ export const pypaioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "pypa.io"
+  "versions": []
 }
 
 export interface PypaioPackage {
@@ -31,5 +30,4 @@ export interface PypaioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "pypa.io";
 }

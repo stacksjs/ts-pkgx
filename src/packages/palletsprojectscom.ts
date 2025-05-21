@@ -15,8 +15,7 @@ export const palletsprojectscomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "palletsprojects.com"
+  "versions": []
 }
 
 export interface PalletsprojectscomPackage {
@@ -31,5 +30,4 @@ export interface PalletsprojectscomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "palletsprojects.com";
 }

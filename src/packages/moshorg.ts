@@ -26,8 +26,7 @@ export const moshorgPackage: PkgxPackage = {
   ],
   "versions": [
     "1.4.0"
-  ],
-  "fullPath": "mosh.org"
+  ]
 }
 
 export interface MoshorgPackage {
@@ -53,5 +52,4 @@ export interface MoshorgPackage {
   versions: readonly [
     "1.4.0"
   ];
-  fullPath: "mosh.org";
 }

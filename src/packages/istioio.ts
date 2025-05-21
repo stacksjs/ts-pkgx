@@ -58,10 +58,6 @@ export const istioioPackage: PkgxPackage = {
     "1.20.5",
     "1.19.9",
     "1.19.10"
-  ],
-  "fullPath": "istio.io",
-  "aliases": [
-    "istioctl"
   ]
 }
 
@@ -119,9 +115,5 @@ export interface IstioioPackage {
     "1.20.5",
     "1.19.9",
     "1.19.10"
-  ];
-  fullPath: "istio.io";
-  aliases: readonly [
-    "istioctl"
   ];
 }

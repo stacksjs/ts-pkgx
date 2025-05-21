@@ -30,8 +30,7 @@ export const htsliborgPackage: PkgxPackage = {
     "1.19.1",
     "1.19.0",
     "1.18.0"
-  ],
-  "fullPath": "htslib.org"
+  ]
 }
 
 export interface HtsliborgPackage {
@@ -61,5 +60,4 @@ export interface HtsliborgPackage {
     "1.19.0",
     "1.18.0"
   ];
-  fullPath: "htslib.org";
 }

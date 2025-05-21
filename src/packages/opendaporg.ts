@@ -30,8 +30,7 @@ export const opendaporgPackage: PkgxPackage = {
   "versions": [
     "3.21.1",
     "3.20.11"
-  ],
-  "fullPath": "opendap.org"
+  ]
 }
 
 export interface OpendaporgPackage {
@@ -61,5 +60,4 @@ export interface OpendaporgPackage {
     "3.21.1",
     "3.20.11"
   ];
-  fullPath: "opendap.org";
 }

@@ -15,8 +15,7 @@ export const rockdabootgithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "rockdaboot.github.io"
+  "versions": []
 }
 
 export interface RockdabootgithubioPackage {
@@ -31,5 +30,4 @@ export interface RockdabootgithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "rockdaboot.github.io";
 }

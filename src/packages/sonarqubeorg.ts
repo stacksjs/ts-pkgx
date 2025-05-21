@@ -15,8 +15,7 @@ export const sonarqubeorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "sonarqube.org"
+  "versions": []
 }
 
 export interface SonarqubeorgPackage {
@@ -31,5 +30,4 @@ export interface SonarqubeorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "sonarqube.org";
 }

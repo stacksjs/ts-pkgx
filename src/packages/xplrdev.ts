@@ -22,8 +22,7 @@ export const xplrdevPackage: PkgxPackage = {
     "0.21.9",
     "0.21.8",
     "0.21.10"
-  ],
-  "fullPath": "xplr.dev"
+  ]
 }
 
 export interface XplrdevPackage {
@@ -45,5 +44,4 @@ export interface XplrdevPackage {
     "0.21.8",
     "0.21.10"
   ];
-  fullPath: "xplr.dev";
 }

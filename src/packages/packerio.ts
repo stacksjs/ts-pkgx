@@ -29,8 +29,7 @@ export const packerioPackage: PkgxPackage = {
     "1.10.3",
     "1.10.2",
     "1.10.1"
-  ],
-  "fullPath": "packer.io"
+  ]
 }
 
 export interface PackerioPackage {
@@ -59,5 +58,4 @@ export interface PackerioPackage {
     "1.10.2",
     "1.10.1"
   ];
-  fullPath: "packer.io";
 }

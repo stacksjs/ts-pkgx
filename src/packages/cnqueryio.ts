@@ -160,8 +160,7 @@ export const cnqueryioPackage: PkgxPackage = {
     "10.0.2",
     "10.0.1",
     "10.0.0"
-  ],
-  "fullPath": "cnquery.io"
+  ]
 }
 
 export interface CnqueryioPackage {
@@ -321,5 +320,4 @@ export interface CnqueryioPackage {
     "10.0.1",
     "10.0.0"
   ];
-  fullPath: "cnquery.io";
 }

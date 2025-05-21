@@ -27,10 +27,6 @@ export const cocogittoioPackage: PkgxPackage = {
     "6.0.0",
     "5.6.0",
     "5.5.0"
-  ],
-  "fullPath": "cocogitto.io",
-  "aliases": [
-    "cog"
   ]
 }
 
@@ -57,9 +53,5 @@ export interface CocogittoioPackage {
     "6.0.0",
     "5.6.0",
     "5.5.0"
-  ];
-  fullPath: "cocogitto.io";
-  aliases: readonly [
-    "cog"
   ];
 }

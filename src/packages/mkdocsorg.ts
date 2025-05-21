@@ -23,8 +23,7 @@ export const mkdocsorgPackage: PkgxPackage = {
     "1.6.1",
     "1.6.0",
     "1.5.3"
-  ],
-  "fullPath": "mkdocs.org"
+  ]
 }
 
 export interface MkdocsorgPackage {
@@ -47,5 +46,4 @@ export interface MkdocsorgPackage {
     "1.6.0",
     "1.5.3"
   ];
-  fullPath: "mkdocs.org";
 }

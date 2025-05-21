@@ -26,6 +26,7 @@ export const nodejsorgPackage: PkgxPackage = {
     "gnu.org/gcc/libstdcxx"
   ],
   "versions": [
+    "24.1.0",
     "24.0.2",
     "24.0.1",
     "24.0.0",
@@ -53,6 +54,7 @@ export const nodejsorgPackage: PkgxPackage = {
     "22.4.0",
     "22.3.0",
     "22.2.0",
+    "22.16.0",
     "22.15.1",
     "22.15.0",
     "22.14.0",
@@ -161,10 +163,6 @@ export const nodejsorgPackage: PkgxPackage = {
     "14.21.0",
     "14.20.1",
     "12.22.12"
-  ],
-  "fullPath": "nodejs.org",
-  "aliases": [
-    "node"
   ]
 }
 
@@ -190,6 +188,7 @@ export interface NodejsorgPackage {
     "gnu.org/gcc/libstdcxx"
   ];
   versions: readonly [
+    "24.1.0",
     "24.0.2",
     "24.0.1",
     "24.0.0",
@@ -217,6 +216,7 @@ export interface NodejsorgPackage {
     "22.4.0",
     "22.3.0",
     "22.2.0",
+    "22.16.0",
     "22.15.1",
     "22.15.0",
     "22.14.0",
@@ -325,9 +325,5 @@ export interface NodejsorgPackage {
     "14.21.0",
     "14.20.1",
     "12.22.12"
-  ];
-  fullPath: "nodejs.org";
-  aliases: readonly [
-    "node"
   ];
 }

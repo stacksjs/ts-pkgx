@@ -15,8 +15,7 @@ export const intelcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "intel.com"
+  "versions": []
 }
 
 export interface IntelcomPackage {
@@ -31,5 +30,4 @@ export interface IntelcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "intel.com";
 }

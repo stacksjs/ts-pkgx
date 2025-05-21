@@ -15,8 +15,7 @@ export const ghostgumcomauPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "ghostgum.com.au"
+  "versions": []
 }
 
 export interface GhostgumcomauPackage {
@@ -31,5 +30,4 @@ export interface GhostgumcomauPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "ghostgum.com.au";
 }

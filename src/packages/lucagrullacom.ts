@@ -15,8 +15,7 @@ export const lucagrullacomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "lucagrulla.com"
+  "versions": []
 }
 
 export interface LucagrullacomPackage {
@@ -31,5 +30,4 @@ export interface LucagrullacomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "lucagrulla.com";
 }

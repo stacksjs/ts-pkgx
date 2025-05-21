@@ -45,8 +45,7 @@ export const elfutilsorgPackage: PkgxPackage = {
     "0.191.0",
     "0.190.0",
     "0.189.0"
-  ],
-  "fullPath": "elfutils.org"
+  ]
 }
 
 export interface ElfutilsorgPackage {
@@ -91,5 +90,4 @@ export interface ElfutilsorgPackage {
     "0.190.0",
     "0.189.0"
   ];
-  fullPath: "elfutils.org";
 }

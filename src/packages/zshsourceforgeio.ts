@@ -22,8 +22,7 @@ export const zshsourceforgeioPackage: PkgxPackage = {
   ],
   "versions": [
     "5.9.0"
-  ],
-  "fullPath": "zsh.sourceforge.io"
+  ]
 }
 
 export interface ZshsourceforgeioPackage {
@@ -45,5 +44,4 @@ export interface ZshsourceforgeioPackage {
   versions: readonly [
     "5.9.0"
   ];
-  fullPath: "zsh.sourceforge.io";
 }

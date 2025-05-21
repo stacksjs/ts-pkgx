@@ -15,8 +15,7 @@ export const nongnuorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "nongnu.org"
+  "versions": []
 }
 
 export interface NongnuorgPackage {
@@ -31,5 +30,4 @@ export interface NongnuorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "nongnu.org";
 }

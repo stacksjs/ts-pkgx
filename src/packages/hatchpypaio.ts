@@ -38,8 +38,7 @@ export const hatchpypaioPackage: PkgxPackage = {
     "1.11.1",
     "1.11.0",
     "1.10.0"
-  ],
-  "fullPath": "hatch.pypa.io"
+  ]
 }
 
 export interface HatchpypaioPackage {
@@ -77,5 +76,4 @@ export interface HatchpypaioPackage {
     "1.11.0",
     "1.10.0"
   ];
-  fullPath: "hatch.pypa.io";
 }

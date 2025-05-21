@@ -36,10 +36,6 @@ export const graphicsmagickorgPackage: PkgxPackage = {
     "1.3.43",
     "1.3.42",
     "1.3.40"
-  ],
-  "fullPath": "graphicsmagick.org",
-  "aliases": [
-    "gm"
   ]
 }
 
@@ -75,9 +71,5 @@ export interface GraphicsmagickorgPackage {
     "1.3.43",
     "1.3.42",
     "1.3.40"
-  ];
-  fullPath: "graphicsmagick.org";
-  aliases: readonly [
-    "gm"
   ];
 }

@@ -15,8 +15,7 @@ export const leonerdorgukPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "leonerd.org.uk"
+  "versions": []
 }
 
 export interface LeonerdorgukPackage {
@@ -31,5 +30,4 @@ export interface LeonerdorgukPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "leonerd.org.uk";
 }

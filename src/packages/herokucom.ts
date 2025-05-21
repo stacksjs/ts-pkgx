@@ -37,6 +37,7 @@ export const herokucomPackage: PkgxPackage = {
     "8.11.1",
     "8.11.0",
     "8.10.0",
+    "10.8.0",
     "10.7.0",
     "10.6.1",
     "10.6.0",
@@ -49,8 +50,7 @@ export const herokucomPackage: PkgxPackage = {
     "10.0.2",
     "10.0.1",
     "10.0.0"
-  ],
-  "fullPath": "heroku.com"
+  ]
 }
 
 export interface HerokucomPackage {
@@ -86,6 +86,7 @@ export interface HerokucomPackage {
     "8.11.1",
     "8.11.0",
     "8.10.0",
+    "10.8.0",
     "10.7.0",
     "10.6.1",
     "10.6.0",
@@ -99,5 +100,4 @@ export interface HerokucomPackage {
     "10.0.1",
     "10.0.0"
   ];
-  fullPath: "heroku.com";
 }

@@ -20,8 +20,7 @@ export const luajitorgPackage: PkgxPackage = {
   "dependencies": [],
   "versions": [
     "2.1.0"
-  ],
-  "fullPath": "luajit.org"
+  ]
 }
 
 export interface LuajitorgPackage {
@@ -41,5 +40,4 @@ export interface LuajitorgPackage {
   versions: readonly [
     "2.1.0"
   ];
-  fullPath: "luajit.org";
 }

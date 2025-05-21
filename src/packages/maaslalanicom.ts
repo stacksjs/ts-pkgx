@@ -15,8 +15,7 @@ export const maaslalanicomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "maaslalani.com"
+  "versions": []
 }
 
 export interface MaaslalanicomPackage {
@@ -31,5 +30,4 @@ export interface MaaslalanicomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "maaslalani.com";
 }

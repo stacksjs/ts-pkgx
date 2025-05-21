@@ -25,8 +25,7 @@ export const htopdevPackage: PkgxPackage = {
     "3.3.0",
     "3.2.2",
     "3.2.1"
-  ],
-  "fullPath": "htop.dev"
+  ]
 }
 
 export interface HtopdevPackage {
@@ -51,5 +50,4 @@ export interface HtopdevPackage {
     "3.2.2",
     "3.2.1"
   ];
-  fullPath: "htop.dev";
 }

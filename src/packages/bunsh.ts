@@ -136,10 +136,6 @@ export const bunshPackage: PkgxPackage = {
     "0.6.0",
     "0.5.9",
     "0.5.6"
-  ],
-  "fullPath": "bun.sh",
-  "aliases": [
-    "bun"
   ]
 }
 
@@ -275,9 +271,5 @@ export interface BunshPackage {
     "0.6.0",
     "0.5.9",
     "0.5.6"
-  ];
-  fullPath: "bun.sh";
-  aliases: readonly [
-    "bun"
   ];
 }

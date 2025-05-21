@@ -79,8 +79,7 @@ export const npmjscomPackage: PkgxPackage = {
     "10.2.0",
     "10.1.0",
     "10.0.0"
-  ],
-  "fullPath": "npmjs.com"
+  ]
 }
 
 export interface NpmjscomPackage {
@@ -159,5 +158,4 @@ export interface NpmjscomPackage {
     "10.1.0",
     "10.0.0"
   ];
-  fullPath: "npmjs.com";
 }

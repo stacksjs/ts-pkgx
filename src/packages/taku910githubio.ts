@@ -15,8 +15,7 @@ export const taku910githubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "taku910.github.io"
+  "versions": []
 }
 
 export interface Taku910githubioPackage {
@@ -31,5 +30,4 @@ export interface Taku910githubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "taku910.github.io";
 }

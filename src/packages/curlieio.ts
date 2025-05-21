@@ -20,8 +20,7 @@ export const curlieioPackage: PkgxPackage = {
   "versions": [
     "1.8.2",
     "1.7.2"
-  ],
-  "fullPath": "curlie.io"
+  ]
 }
 
 export interface CurlieioPackage {
@@ -41,5 +40,4 @@ export interface CurlieioPackage {
     "1.8.2",
     "1.7.2"
   ];
-  fullPath: "curlie.io";
 }

@@ -51,10 +51,6 @@ export const getcomposerorgPackage: PkgxPackage = {
     "2.5.8",
     "2.2.24",
     "2.2.23"
-  ],
-  "fullPath": "getcomposer.org",
-  "aliases": [
-    "composer"
   ]
 }
 
@@ -105,9 +101,5 @@ export interface GetcomposerorgPackage {
     "2.5.8",
     "2.2.24",
     "2.2.23"
-  ];
-  fullPath: "getcomposer.org";
-  aliases: readonly [
-    "composer"
   ];
 }

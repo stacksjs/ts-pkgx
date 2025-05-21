@@ -15,8 +15,7 @@ export const graphqleditorcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "graphqleditor.com"
+  "versions": []
 }
 
 export interface GraphqleditorcomPackage {
@@ -31,5 +30,4 @@ export interface GraphqleditorcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "graphqleditor.com";
 }

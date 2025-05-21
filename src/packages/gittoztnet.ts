@@ -15,8 +15,7 @@ export const gittoztnetPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "git.tozt.net"
+  "versions": []
 }
 
 export interface GittoztnetPackage {
@@ -31,5 +30,4 @@ export interface GittoztnetPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "git.tozt.net";
 }

@@ -21,10 +21,6 @@ export const speexorgPackage: PkgxPackage = {
   ],
   "versions": [
     "1.2.1"
-  ],
-  "fullPath": "speex.org",
-  "aliases": [
-    "speexdec"
   ]
 }
 
@@ -45,9 +41,5 @@ export interface SpeexorgPackage {
   ];
   versions: readonly [
     "1.2.1"
-  ];
-  fullPath: "speex.org";
-  aliases: readonly [
-    "speexdec"
   ];
 }

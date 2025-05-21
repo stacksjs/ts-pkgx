@@ -15,8 +15,7 @@ export const hashicorpcomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "hashicorp.com"
+  "versions": []
 }
 
 export interface HashicorpcomPackage {
@@ -31,5 +30,4 @@ export interface HashicorpcomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "hashicorp.com";
 }

@@ -15,8 +15,7 @@ export const microbreworgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "microbrew.org"
+  "versions": []
 }
 
 export interface MicrobreworgPackage {
@@ -31,5 +30,4 @@ export interface MicrobreworgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "microbrew.org";
 }

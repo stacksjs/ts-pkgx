@@ -192,8 +192,7 @@ export const odigosioPackage: PkgxPackage = {
     "1.0.100",
     "1.0.10",
     "1.0.1"
-  ],
-  "fullPath": "odigos.io"
+  ]
 }
 
 export interface OdigosioPackage {
@@ -385,5 +384,4 @@ export interface OdigosioPackage {
     "1.0.10",
     "1.0.1"
   ];
-  fullPath: "odigos.io";
 }

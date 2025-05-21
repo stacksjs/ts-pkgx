@@ -34,8 +34,7 @@ export const wailsioPackage: PkgxPackage = {
     "2.8.0",
     "2.10.1",
     "2.10.0"
-  ],
-  "fullPath": "wails.io"
+  ]
 }
 
 export interface WailsioPackage {
@@ -69,5 +68,4 @@ export interface WailsioPackage {
     "2.10.1",
     "2.10.0"
   ];
-  fullPath: "wails.io";
 }

@@ -46,8 +46,7 @@ export const bitcoinorgPackage: PkgxPackage = {
     "24.1.0",
     "24.0.1",
     "23.2.0"
-  ],
-  "fullPath": "bitcoin.org"
+  ]
 }
 
 export interface BitcoinorgPackage {
@@ -93,5 +92,4 @@ export interface BitcoinorgPackage {
     "24.0.1",
     "23.2.0"
   ];
-  fullPath: "bitcoin.org";
 }

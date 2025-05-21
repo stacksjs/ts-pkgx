@@ -60,8 +60,7 @@ export const localaiioPackage: PkgxPackage = {
     "2.11.0",
     "2.10.1",
     "2.10.0"
-  ],
-  "fullPath": "localai.io"
+  ]
 }
 
 export interface LocalaiioPackage {
@@ -121,5 +120,4 @@ export interface LocalaiioPackage {
     "2.10.1",
     "2.10.0"
   ];
-  fullPath: "localai.io";
 }

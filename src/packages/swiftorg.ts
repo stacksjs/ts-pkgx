@@ -60,8 +60,7 @@ export const swiftorgPackage: PkgxPackage = {
     "5.9.2",
     "5.10.1",
     "5.10.0"
-  ],
-  "fullPath": "swift.org"
+  ]
 }
 
 export interface SwiftorgPackage {
@@ -121,5 +120,4 @@ export interface SwiftorgPackage {
     "5.10.1",
     "5.10.0"
   ];
-  fullPath: "swift.org";
 }

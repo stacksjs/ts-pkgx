@@ -22,8 +22,7 @@ export const libssh2orgPackage: PkgxPackage = {
     "1.11.1",
     "1.11.0",
     "1.10.0"
-  ],
-  "fullPath": "libssh2.org"
+  ]
 }
 
 export interface Libssh2orgPackage {
@@ -45,5 +44,4 @@ export interface Libssh2orgPackage {
     "1.11.0",
     "1.10.0"
   ];
-  fullPath: "libssh2.org";
 }

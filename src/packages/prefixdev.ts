@@ -101,10 +101,6 @@ export const prefixdevPackage: PkgxPackage = {
     "0.11.0",
     "0.10.0",
     "0.1.0"
-  ],
-  "fullPath": "prefix.dev",
-  "aliases": [
-    "pixi"
   ]
 }
 
@@ -205,9 +201,5 @@ export interface PrefixdevPackage {
     "0.11.0",
     "0.10.0",
     "0.1.0"
-  ];
-  fullPath: "prefix.dev";
-  aliases: readonly [
-    "pixi"
   ];
 }

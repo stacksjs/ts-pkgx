@@ -15,8 +15,7 @@ export const supabasecomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "supabase.com"
+  "versions": []
 }
 
 export interface SupabasecomPackage {
@@ -31,5 +30,4 @@ export interface SupabasecomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "supabase.com";
 }

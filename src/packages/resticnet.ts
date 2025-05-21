@@ -15,8 +15,7 @@ export const resticnetPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "restic.net"
+  "versions": []
 }
 
 export interface ResticnetPackage {
@@ -31,5 +30,4 @@ export interface ResticnetPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "restic.net";
 }

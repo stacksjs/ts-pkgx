@@ -67,8 +67,7 @@ export const railwayappPackage: PkgxPackage = {
     "3.11.1",
     "3.11.0",
     "3.10.0"
-  ],
-  "fullPath": "railway.app"
+  ]
 }
 
 export interface RailwayappPackage {
@@ -135,5 +134,4 @@ export interface RailwayappPackage {
     "3.11.0",
     "3.10.0"
   ];
-  fullPath: "railway.app";
 }

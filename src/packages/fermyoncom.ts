@@ -15,8 +15,7 @@ export const fermyoncomPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "fermyon.com"
+  "versions": []
 }
 
 export interface FermyoncomPackage {
@@ -31,5 +30,4 @@ export interface FermyoncomPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "fermyon.com";
 }

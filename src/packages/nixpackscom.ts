@@ -51,8 +51,7 @@ export const nixpackscomPackage: PkgxPackage = {
     "1.21.2",
     "1.21.1",
     "1.21.0"
-  ],
-  "fullPath": "nixpacks.com"
+  ]
 }
 
 export interface NixpackscomPackage {
@@ -103,5 +102,4 @@ export interface NixpackscomPackage {
     "1.21.1",
     "1.21.0"
   ];
-  fullPath: "nixpacks.com";
 }

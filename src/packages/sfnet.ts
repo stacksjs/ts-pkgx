@@ -15,8 +15,7 @@ export const sfnetPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "sf.net"
+  "versions": []
 }
 
 export interface SfnetPackage {
@@ -31,5 +30,4 @@ export interface SfnetPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "sf.net";
 }

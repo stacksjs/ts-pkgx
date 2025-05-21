@@ -15,8 +15,7 @@ export const ebassigithubioPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "ebassi.github.io"
+  "versions": []
 }
 
 export interface EbassigithubioPackage {
@@ -31,5 +30,4 @@ export interface EbassigithubioPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "ebassi.github.io";
 }

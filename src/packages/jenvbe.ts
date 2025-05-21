@@ -20,8 +20,7 @@ export const jenvbePackage: PkgxPackage = {
   "versions": [
     "0.5.7",
     "0.5.6"
-  ],
-  "fullPath": "jenv.be"
+  ]
 }
 
 export interface JenvbePackage {
@@ -41,5 +40,4 @@ export interface JenvbePackage {
     "0.5.7",
     "0.5.6"
   ];
-  fullPath: "jenv.be";
 }

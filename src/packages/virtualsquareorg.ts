@@ -15,8 +15,7 @@ export const virtualsquareorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "virtualsquare.org"
+  "versions": []
 }
 
 export interface VirtualsquareorgPackage {
@@ -31,5 +30,4 @@ export interface VirtualsquareorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "virtualsquare.org";
 }

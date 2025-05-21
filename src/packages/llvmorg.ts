@@ -74,8 +74,7 @@ export const llvmorgPackage: PkgxPackage = {
     "14.0.3",
     "13.0.1",
     "12.0.1"
-  ],
-  "fullPath": "llvm.org"
+  ]
 }
 
 export interface LlvmorgPackage {
@@ -149,5 +148,4 @@ export interface LlvmorgPackage {
     "13.0.1",
     "12.0.1"
   ];
-  fullPath: "llvm.org";
 }

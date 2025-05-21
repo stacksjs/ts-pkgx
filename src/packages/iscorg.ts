@@ -15,8 +15,7 @@ export const iscorgPackage: PkgxPackage = {
   "programs": [],
   "companions": [],
   "dependencies": [],
-  "versions": [],
-  "fullPath": "isc.org"
+  "versions": []
 }
 
 export interface IscorgPackage {
@@ -31,5 +30,4 @@ export interface IscorgPackage {
   companions: readonly [];
   dependencies: readonly [];
   versions: readonly [];
-  fullPath: "isc.org";
 }

@@ -36,8 +36,7 @@ export const cuelangorgPackage: PkgxPackage = {
     "0.11.0",
     "0.10.1",
     "0.10.0"
-  ],
-  "fullPath": "cuelang.org"
+  ]
 }
 
 export interface CuelangorgPackage {
@@ -73,5 +72,4 @@ export interface CuelangorgPackage {
     "0.10.1",
     "0.10.0"
   ];
-  fullPath: "cuelang.org";
 }

@@ -59,8 +59,7 @@ export const bufbuildPackage: PkgxPackage = {
     "1.27.1",
     "1.27.0",
     "1.26.1"
-  ],
-  "fullPath": "buf.build"
+  ]
 }
 
 export interface BufbuildPackage {
@@ -119,5 +118,4 @@ export interface BufbuildPackage {
     "1.27.0",
     "1.26.1"
   ];
-  fullPath: "buf.build";
 }

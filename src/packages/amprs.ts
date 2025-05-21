@@ -24,8 +24,7 @@ export const amprsPackage: PkgxPackage = {
   ],
   "versions": [
     "0.7.1"
-  ],
-  "fullPath": "amp.rs"
+  ]
 }
 
 export interface AmprsPackage {
@@ -49,5 +48,4 @@ export interface AmprsPackage {
   versions: readonly [
     "0.7.1"
   ];
-  fullPath: "amp.rs";
 }

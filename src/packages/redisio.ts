@@ -56,8 +56,7 @@ export const redisioPackage: PkgxPackage = {
     "6.0.20",
     "6.0.19",
     "6.0.18"
-  ],
-  "fullPath": "redis.io"
+  ]
 }
 
 export interface RedisioPackage {
@@ -113,5 +112,4 @@ export interface RedisioPackage {
     "6.0.19",
     "6.0.18"
   ];
-  fullPath: "redis.io";
 }
