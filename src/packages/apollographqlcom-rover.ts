@@ -22,6 +22,7 @@ export const apollographqlcomroverPackage: PkgxPackage = {
     "libgit2.org~1.7"
   ],
   "versions": [
+    "0.31.1",
     "0.31.0",
     "0.30.0",
     "0.29.1",
@@ -65,6 +66,7 @@ export interface ApollographqlcomroverPackage {
     "libgit2.org~1.7"
   ];
   versions: readonly [
+    "0.31.1",
     "0.31.0",
     "0.30.0",
     "0.29.1",
