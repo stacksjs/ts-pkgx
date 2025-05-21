@@ -15,150 +15,130 @@ const PACKAGES_DIR = path.join(process.cwd(), 'src', 'packages')
 const INDEX_FILE = path.join(PACKAGES_DIR, 'index.ts')
 
 /**
- * Generate the index.ts file for the packages directory
+ * Safely convert a filename to a valid JavaScript identifier
+ * @param moduleName The module filename without extension
+ * @returns A valid JavaScript identifier
  */
-export async function generateIndex(): Promise<void> {
-  console.error('Generating src/packages/index.ts...')
+function safeVarName(moduleName: string): string {
+  // Replace hyphens with underscores to make valid JS identifiers
+  return moduleName.replace(/-/g, '_')
+}
 
-  // Get all .ts files in the packages directory
-  const files = fs.readdirSync(PACKAGES_DIR)
-    .filter(file => file.endsWith('.ts') && file !== 'index.ts' && file !== 'fetch.ts')
+/**
+ * Generate the exported package name based on the module name
+ * @param moduleName The module name (filename without extension)
+ * @returns The actual exported package variable name
+ */
+function getPackageExportName(moduleName: string): string {
+  // If the filename has hyphens, they're removed in the actual exported variable name
+  // e.g., ast-grepgithubio.ts exports astgrepgithubioPackage
+  return `${moduleName.replace(/-/g, '')}Package`
+}
 
-  console.error(`Found ${files.length} package files`)
+interface ImportInfo {
+  modulePath: string
+  varName: string
+  originalModule: string
+}
 
-  // Generate imports and exports
-  const imports: string[] = []
-  const exports: string[] = []
-  const mappings: string[] = []
-  const directDomains: Record<string, string> = {}
-  const fullPathMappings: Record<string, string> = {}
+/**
+ * Get all imports from package directory
+ */
+async function getImports(): Promise<ImportInfo[]> {
+  const allFiles = fs.readdirSync(PACKAGES_DIR)
 
-  // Add base imports and type import
-  imports.push('import type { PkgxPackage } from \'../types\'')
+  const imports: ImportInfo[] = []
 
-  // Add fetch.ts export
-  exports.push('// Export everything from fetch.ts')
-  exports.push('export * from \'./fetch\'')
-  exports.push('')
+  for (const file of allFiles) {
+    // Skip index.ts and non-typescript files
+    if (file === 'index.ts' || !file.endsWith('.ts'))
+      continue
 
-  exports.push('// Export specific packages')
+    const moduleName = path.basename(file, '.ts')
+    const modulePath = `./${moduleName}`
+    const varName = safeVarName(moduleName)
 
-  // Add pantry object
-  const pantryDefinition = 'export const pantry: Record<string, PkgxPackage> = {}'
-
-  // Add import and export for each package file
-  for (const file of files) {
-    // Get the module name (file name without extension)
-    const moduleName = file.replace(/\.ts$/, '')
-
-    // Generate variable name for package (assuming standard naming convention)
-    const packageVarName = `${moduleName}Package`
-
-    // Add import
-    imports.push(`import { ${packageVarName} } from './${moduleName}'`)
-
-    // Add export
-    exports.push(`export * from './${moduleName}'`)
-
-    try {
-      // Try to determine the domain name by looking at the file content
-      const fileContent = fs.readFileSync(path.join(PACKAGES_DIR, file), 'utf8')
-
-      // Look for domain property in the package definition
-      const domainMatch = fileContent.match(/domain:\s+['"](.*?)['"]/)
-
-      if (domainMatch && domainMatch[1]) {
-        const domain = domainMatch[1]
-        // Store for mapping
-        directDomains[domain] = packageVarName
-
-        // Also check if this is a nested path and extract the full path
-        const fullPathMatch = fileContent.match(/fullPath:\s+['"](.*?)['"]/)
-        if (fullPathMatch && fullPathMatch[1]) {
-          const fullPath = fullPathMatch[1]
-          fullPathMappings[fullPath] = packageVarName
-        }
-      }
-      else {
-        // If we can't find the domain, use our domain utils to guess the original domain
-        console.warn(`Could not determine domain for ${file}, using filename as fallback`)
-
-        // Use the utility to guess the original domain
-        const domainGuess = guessOriginalDomain(moduleName)
-        // Store for mapping
-        directDomains[domainGuess] = packageVarName
-      }
-    }
-    catch (error) {
-      console.error(`Error processing file ${file}:`, error)
-      // Skip this file for mappings
-    }
-  }
-
-  // Add mappings in a consistent way
-  mappings.push('// Add direct domain mappings')
-  Object.entries(directDomains).forEach(([domain, packageVarName]) => {
-    mappings.push(`pantry['${domain}'] = ${packageVarName}`)
-  })
-
-  if (Object.keys(fullPathMappings).length > 0) {
-    mappings.push('')
-    mappings.push('// Add full path mappings for nested packages')
-    Object.entries(fullPathMappings).forEach(([fullPath, packageVarName]) => {
-      // Only add if not already mapped as a direct domain
-      if (!directDomains[fullPath]) {
-        mappings.push(`pantry['${fullPath}'] = ${packageVarName} // Nested path mapping`)
-      }
+    imports.push({
+      modulePath,
+      varName,
+      originalModule: moduleName,
     })
   }
 
-  // Generate the getPackage function
-  const getPackageFunction = `
+  // Sort imports alphabetically by module path
+  imports.sort((a, b) => a.modulePath.localeCompare(b.modulePath))
+
+  return imports
+}
+
 /**
- * Get a package by name, supporting both full domain and aliases
+ * Generate the index.ts file content
  */
-export function getPackage(name: string): PkgxPackage | undefined {
-  // Direct lookup
-  if (pantry[name]) {
-    return pantry[name]
+async function generateIndexContent(): Promise<string> {
+  const imports = await getImports()
+
+  let content = ''
+
+  // Add import for PkgxPackage type from types.ts
+  content += 'import type { PkgxPackage } from \'../types\'\n\n'
+
+  // Generate imports
+  for (const imp of imports) {
+    content += `import * as ${imp.varName} from '${imp.modulePath}'\n`
   }
 
-  // Check aliases - loop through all packages
-  for (const pkg of Object.values(pantry)) {
-    // Check if this package has the name as an alias
-    if (pkg.aliases && pkg.aliases.includes(name)) {
-      return pkg
-    }
+  content += '\n'
+
+  // Export all imports
+  for (const imp of imports) {
+    content += `export * from '${imp.modulePath}'\n`
   }
 
-  return undefined
+  content += '\n'
+
+  // Generate Pantry interface
+  content += '// Define Pantry type\n'
+  content += 'export interface Pantry {\n'
+
+  // Add properties to the interface
+  for (const imp of imports) {
+    const domain = guessOriginalDomain(imp.originalModule)
+    const propName = convertDomainToVarName(domain)
+    content += `  ${propName}: PkgxPackage\n`
+  }
+
+  content += '}\n\n'
+
+  // Generate pantry object with type annotation
+  content += '// Export pantry object with package mappings\n'
+  content += 'export const pantry: Pantry = {\n'
+
+  // Sort the pantry entries alphabetically by domain
+  for (const imp of imports) {
+    const domain = guessOriginalDomain(imp.originalModule)
+    const propName = convertDomainToVarName(domain)
+    const packageVarName = getPackageExportName(imp.originalModule)
+
+    // Use the format propName: moduleName.packageVarName
+    content += `  ${propName}: ${imp.varName}.${packageVarName},\n`
+  }
+
+  content += '}\n'
+
+  return content
 }
-`.trim()
 
-  // Combine all parts
-  const content = [
-    ...imports,
-    '',
-    pantryDefinition,
-    '',
-    ...exports,
-    '',
-    '// Add package mappings to pantry',
-    ...mappings,
-    '',
-    getPackageFunction,
-  ].join('\n')
-
-  // Write the file
-  fs.writeFileSync(INDEX_FILE, content)
-
-  console.error(`Successfully generated ${INDEX_FILE} with ${files.length} packages`)
-}
-
-// Run the generator if this file is executed directly
-if (process.argv[1] === import.meta.url.substring(7)) {
-  generateIndex().catch((error) => {
-    console.error('Error generating index:', error)
+// Main function
+async function main() {
+  try {
+    const content = await generateIndexContent()
+    fs.writeFileSync(INDEX_FILE, content)
+    console.error(`Successfully generated ${INDEX_FILE}`)
+  }
+  catch (error) {
+    console.error('Error generating index file:', error)
     process.exit(1)
-  })
+  }
 }
+
+main()

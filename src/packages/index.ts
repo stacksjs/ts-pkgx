@@ -1,2533 +1,3347 @@
 import type { PkgxPackage } from '../types'
-import { tailcallrunPackage } from './tailcallrun'
-import { lloydgithubioPackage } from './lloydgithubio'
-import { aux4ioPackage } from './aux4io'
-import { atlasgoioPackage } from './atlasgoio'
-import { langchaincomPackage } from './langchaincom'
-import { condaorgPackage } from './condaorg'
-import { sourceforgenetPackage } from './sourceforgenet'
-import { yarnpkgcomPackage } from './yarnpkgcom'
-import { blake2netPackage } from './blake2net'
-import { eyrieorgPackage } from './eyrieorg'
-import { getzolaorgPackage } from './getzolaorg'
-import { mpmathorgPackage } from './mpmathorg'
-import { rebar3orgPackage } from './rebar3org'
-import { open-mpiorgPackage } from './open-mpiorg'
-import { gnupgorgPackage } from './gnupgorg'
-import { libziporgPackage } from './libziporg'
-import { jenkins-xioPackage } from './jenkins-xio'
-import { dprintdevPackage } from './dprintdev'
-import { helmshPackage } from './helmsh'
-import { sonarqubeorgPackage } from './sonarqubeorg'
-import { planetscalecomPackage } from './planetscalecom'
-import { fairwindscomPackage } from './fairwindscom'
-import { ghostscriptcomPackage } from './ghostscriptcom'
-import { kubectxdevPackage } from './kubectxdev'
-import { thoughtworksgithubioPackage } from './thoughtworksgithubio'
-import { rtmpdumpmplayerhqhuPackage } from './rtmpdumpmplayerhqhu'
-import { alembicsqlalchemyorgPackage } from './alembicsqlalchemyorg'
-import { openrestyorgPackage } from './openrestyorg'
-import { neovimioPackage } from './neovimio'
-import { operatorframeworkioPackage } from './operatorframeworkio'
-import { projectdiscoveryioPackage } from './projectdiscoveryio'
-import { sfcgalorgPackage } from './sfcgalorg'
-import { gnutlsorgPackage } from './gnutlsorg'
-import { deepwisdomaiPackage } from './deepwisdomai'
-import { arduinogithubioarduinocliPackage } from './arduinogithubioarduinocli'
-import { cryptographyioPackage } from './cryptographyio'
-import { systemdioPackage } from './systemdio'
-import { expodevPackage } from './expodev'
-import { dotenv-lintergithubioPackage } from './dotenv-lintergithubio'
-import { fabianlindforssePackage } from './fabianlindforsse'
-import { versitycomPackage } from './versitycom'
-import { streamlinkgithubioPackage } from './streamlinkgithubio'
-import { llvmorgPackage } from './llvmorg'
-import { nmaporgPackage } from './nmaporg'
-import { fltkorgPackage } from './fltkorg'
-import { kobuildPackage } from './kobuild'
-import { arduinogithubioPackage } from './arduinogithubio'
-import { soliditylangorgPackage } from './soliditylangorg'
-import { savannahnongnuorgPackage } from './savannahnongnuorg'
-import { minioPackage } from './minio'
-import { rbenvorgPackage } from './rbenvorg'
-import { applecomPackage } from './applecom'
-import { budimanjojogithubioPackage } from './budimanjojogithubio'
-import { unboundnetPackage } from './unboundnet'
-import { nixpackscomPackage } from './nixpackscom'
-import { pkl-langorgPackage } from './pkl-langorg'
-import { pimalayaorgPackage } from './pimalayaorg'
-import { projorgPackage } from './projorg'
-import { jujuisPackage } from './jujuis'
-import { hdfgrouporgPackage } from './hdfgrouporg'
-import { invisible-islandnetPackage } from './invisible-islandnet'
-import { nano-editororgPackage } from './nano-editororg'
-import { keephqdevPackage } from './keephqdev'
-import { aria2githubioPackage } from './aria2githubio'
-import { cscopesourceforgeioPackage } from './cscopesourceforgeio'
-import { logdydevPackage } from './logdydev'
-import { musllibcorgPackage } from './musllibcorg'
-import { cocogittoioPackage } from './cocogittoio'
-import { openaicomPackage } from './openaicom'
-import { musepacknetPackage } from './musepacknet'
-import { apacheorgarrowPackage } from './apacheorgarrow'
-import { aquasecuritygithubiotfsecPackage } from './aquasecuritygithubiotfsec'
-import { git-lfscomPackage } from './git-lfscom'
-import { libuvorgPackage } from './libuvorg'
-import { jlessioPackage } from './jlessio'
-import { openjpegorgPackage } from './openjpegorg'
-import { mvdanccPackage } from './mvdancc'
-import { awsamazoncomsamPackage } from './awsamazoncomsam'
-import { geoffgreerfmPackage } from './geoffgreerfm'
-import { opencore-amrsourceforgeioPackage } from './opencore-amrsourceforgeio'
-import { bufbuildPackage } from './bufbuild'
-import { indexsupplycomPackage } from './indexsupplycom'
-import { abseilioPackage } from './abseilio'
-import { leptonicaorgPackage } from './leptonicaorg'
-import { chezmoiioPackage } from './chezmoiio'
-import { caskreadthedocsioPackage } from './caskreadthedocsio'
-import { mun-langorgPackage } from './mun-langorg'
-import { iscorgPackage } from './iscorg'
-import { rabbitmqcomPackage } from './rabbitmqcom'
-import { astralshPackage } from './astralsh'
-import { elixir-langorgPackage } from './elixir-langorg'
-import { diggerdevPackage } from './diggerdev'
-import { sqlcdevPackage } from './sqlcdev'
-import { youtube-dlorgPackage } from './youtube-dlorg'
-import { bytereeforgPackage } from './bytereeforg'
-import { stedolangithubioPackage } from './stedolangithubio'
-import { imagemagickorgPackage } from './imagemagickorg'
-import { notrojgithubioPackage } from './notrojgithubio'
-import { itstoolorgPackage } from './itstoolorg'
-import { speexorgPackage } from './speexorg'
-import { gitosgeoorgPackage } from './gitosgeoorg'
-import { apacheorgaprPackage } from './apacheorgapr'
-import { googlecomPackage } from './googlecom'
-import { spawnlinkPackage } from './spawnlink'
-import { wavpackcomPackage } from './wavpackcom'
-import { lavinmqcomPackage } from './lavinmqcom'
-import { ipfstechPackage } from './ipfstech'
-import { plasmasturmorgPackage } from './plasmasturmorg'
-import { hjsongithubioPackage } from './hjsongithubio'
-import { dest-unreachorgPackage } from './dest-unreachorg'
-import { sass-langcomPackage } from './sass-langcom'
-import { getcomposerorgPackage } from './getcomposerorg'
-import { julialangorgPackage } from './julialangorg'
-import { erlangorgPackage } from './erlangorg'
-import { portaudiocomPackage } from './portaudiocom'
-import { libpipelinegitlabioPackage } from './libpipelinegitlabio'
-import { apacheorghttpdPackage } from './apacheorghttpd'
-import { mkcertdevPackage } from './mkcertdev'
-import { hadronsorgPackage } from './hadronsorg'
-import { voltashPackage } from './voltash'
-import { mercurerocksPackage } from './mercurerocks'
-import { kubelinterioPackage } from './kubelinterio'
-import { scalewaycomPackage } from './scalewaycom'
-import { beyondgrepcomPackage } from './beyondgrepcom'
-import { elizaosgithubioPackage } from './elizaosgithubio'
-import { elvshPackage } from './elvsh'
-import { gaia-gisitPackage } from './gaia-gisit'
-import { opensshcomPackage } from './opensshcom'
-import { tesseract-ocrgithubioPackage } from './tesseract-ocrgithubio'
-import { mypy-langorgPackage } from './mypy-langorg'
-import { sigstoredevPackage } from './sigstoredev'
-import { jetporchcomPackage } from './jetporchcom'
-import { teaxyzPackage } from './teaxyz'
-import { aquasecuritygithubioPackage } from './aquasecuritygithubio'
-import { kerberosorgPackage } from './kerberosorg'
-import { gourceioPackage } from './gourceio'
-import { rarlabcomPackage } from './rarlabcom'
-import { seaweedfscomPackage } from './seaweedfscom'
-import { k6ioPackage } from './k6io'
-import { hatchpypaioPackage } from './hatchpypaio'
-import { taku910githubioPackage } from './taku910githubio'
-import { apacheorgaprutilPackage } from './apacheorgaprutil'
-import { exiftoolorgPackage } from './exiftoolorg'
-import { graphicsmagickorgPackage } from './graphicsmagickorg'
-import { etcdioPackage } from './etcdio'
-import { zrokioPackage } from './zrokio'
-import { libgdgithubioPackage } from './libgdgithubio'
-import { jugitfz-juelichdePackage } from './jugitfz-juelichde'
-import { rometoolsPackage } from './rometools'
-import { vercelcomPackage } from './vercelcom'
-import { pandocorgPackage } from './pandocorg'
-import { glfworgPackage } from './glfworg'
-import { rtomaykogithubioPackage } from './rtomaykogithubio'
-import { pantsbuildorgPackage } from './pantsbuildorg'
-import { akuityioPackage } from './akuityio'
-import { carapaceshPackage } from './carapacesh'
-import { python-poetryorgPackage } from './python-poetryorg'
-import { acornioPackage } from './acornio'
-import { bittensorcomPackage } from './bittensorcom'
-import { ktlintgithubioPackage } from './ktlintgithubio'
-import { grafanacomPackage } from './grafanacom'
-import { fuellabsgithubioPackage } from './fuellabsgithubio'
-import { nasmusPackage } from './nasmus'
-import { nghttp2orgPackage } from './nghttp2org'
-import { railwayappPackage } from './railwayapp'
-import { dhruvkbdevPackage } from './dhruvkbdev'
-import { k9scliioPackage } from './k9scliio'
-import { boostorgPackage } from './boostorg'
-import { lftpyarruPackage } from './lftpyarru'
-import { tagliborgPackage } from './tagliborg'
-import { mpvioPackage } from './mpvio'
-import { astralshuvPackage } from './astralshuv'
-import { chiarkgreenendorgukPackage } from './chiarkgreenendorguk'
-import { rsyncsambaorgPackage } from './rsyncsambaorg'
-import { kubecmcloudPackage } from './kubecmcloud'
-import { bcryptsourceforgenetPackage } from './bcryptsourceforgenet'
-import { mavenapacheorgPackage } from './mavenapacheorg'
-import { micro-editorgithubioPackage } from './micro-editorgithubio'
-import { harfbuzzorgPackage } from './harfbuzzorg'
-import { llmdatasetteioPackage } from './llmdatasetteio'
-import { xercesapacheorgPackage } from './xercesapacheorg'
-import { jedisct1githubioPackage } from './jedisct1githubio'
-import { asciinemaorgaggPackage } from './asciinemaorgagg'
-import { imageflowioPackage } from './imageflowio'
-import { flywaydborgPackage } from './flywaydborg'
-import { libexpatgithubioPackage } from './libexpatgithubio'
-import { kubernetesioPackage } from './kubernetesio'
-import { jenvbePackage } from './jenvbe'
-import { elementsprojectorgPackage } from './elementsprojectorg'
-import { infracostioPackage } from './infracostio'
-import { khronosorgPackage } from './khronosorg'
-import { blake2netlibb2Package } from './blake2netlibb2'
-import { idleberggithubioPackage } from './idleberggithubio'
-import { libusbinfoPackage } from './libusbinfo'
-import { direnvnetPackage } from './direnvnet'
-import { luarocksorgPackage } from './luarocksorg'
-import { daytonaioPackage } from './daytonaio'
-import { fftworgPackage } from './fftworg'
-import { swaggerioPackage } from './swaggerio'
-import { charmshPackage } from './charmsh'
-import { apktoolorgPackage } from './apktoolorg'
-import { ollamaaiPackage } from './ollamaai'
-import { openblasnetPackage } from './openblasnet'
-import { libraworgPackage } from './libraworg'
-import { unixodbcorgPackage } from './unixodbcorg'
-import { tukaaniorgPackage } from './tukaaniorg'
-import { poktnetworkPackage } from './poktnetwork'
-import { leonerdorgukPackage } from './leonerdorguk'
-import { project-copaceticgithubioPackage } from './project-copaceticgithubio'
-import { openinterpretercomPackage } from './openinterpretercom'
-import { tectonic-typesettinggithubioPackage } from './tectonic-typesettinggithubio'
-import { pyinvokeorgPackage } from './pyinvokeorg'
-import { schollzcomPackage } from './schollzcom'
-import { arkadedevPackage } from './arkadedev'
-import { ctopshPackage } from './ctopsh'
-import { netliborgPackage } from './netliborg'
-import { xvidcomPackage } from './xvidcom'
-import { fliptioPackage } from './fliptio'
-import { netpbmsourceforgenetPackage } from './netpbmsourceforgenet'
-import { gphotoorgPackage } from './gphotoorg'
-import { jonasgithubioPackage } from './jonasgithubio'
-import { jumppaddevPackage } from './jumppaddev'
-import { digitaloceancomPackage } from './digitaloceancom'
-import { veleroioPackage } from './veleroio'
-import { leethomasongithubioPackage } from './leethomasongithubio'
-import { wezfurlongorgPackage } from './wezfurlongorg'
-import { localstackcloudPackage } from './localstackcloud'
-import { felixkratzgithubioPackage } from './felixkratzgithubio'
-import { plantumlcomPackage } from './plantumlcom'
-import { postgresqlorgPackage } from './postgresqlorg'
-import { ivarchcomPackage } from './ivarchcom'
-import { viaductaiPackage } from './viaductai'
-import { xorgPackage } from './xorg'
-import { s3toolsorgPackage } from './s3toolsorg'
-import { popplerfreedesktoporgPackage } from './popplerfreedesktoporg'
-import { appiumioPackage } from './appiumio'
-import { mesa3dorgPackage } from './mesa3dorg'
-import { cnqueryioPackage } from './cnqueryio'
-import { wpewebkitorgPackage } from './wpewebkitorg'
-import { agwanamePackage } from './agwaname'
-import { goreleasercomPackage } from './goreleasercom'
-import { heasarcgsfcnasagovPackage } from './heasarcgsfcnasagov'
-import { modalcomPackage } from './modalcom'
-import { taskfiledevPackage } from './taskfiledev'
-import { peopleredhatcomPackage } from './peopleredhatcom'
-import { git-clifforgPackage } from './git-clifforg'
-import { apacheorgzookeeperPackage } from './apacheorgzookeeper'
-import { qhullorgPackage } from './qhullorg'
-import { eigentuxfamilyorgPackage } from './eigentuxfamilyorg'
-import { capstone-engineorgPackage } from './capstone-engineorg'
-import { awsamazoncomcdkPackage } from './awsamazoncomcdk'
-import { pcscliteapdufrPackage } from './pcscliteapdufr'
-import { libsouporgPackage } from './libsouporg'
-import { odigosioPackage } from './odigosio'
-import { soxrsourceforgenetPackage } from './soxrsourceforgenet'
-import { gtssourceforgenetPackage } from './gtssourceforgenet'
-import { opus-codecorgPackage } from './opus-codecorg'
-import { simplesystemsorgPackage } from './simplesystemsorg'
-import { breakfastquaycomPackage } from './breakfastquaycom'
-import { packerioPackage } from './packerio'
-import { libislsourceforgeioPackage } from './libislsourceforgeio'
-import { asciidoctororgPackage } from './asciidoctororg'
-import { openbaoorgPackage } from './openbaoorg'
-import { cgalorgPackage } from './cgalorg'
-import { libwebsocketsorgPackage } from './libwebsocketsorg'
-import { aspellnetPackage } from './aspellnet'
-import { nim-langorgPackage } from './nim-langorg'
-import { tcltkPackage } from './tcltk'
-import { moonrepodevPackage } from './moonrepodev'
-import { git-scmorgPackage } from './git-scmorg'
-import { openslideorgPackage } from './openslideorg'
-import { shellchecknetPackage } from './shellchecknet'
-import { buildpacksioPackage } from './buildpacksio'
-import { clisporgPackage } from './clisporg'
-import { libspngorgPackage } from './libspngorg'
-import { libeventorgPackage } from './libeventorg'
-import { microcksioPackage } from './microcksio'
-import { quickwitioPackage } from './quickwitio'
-import { htsliborgPackage } from './htsliborg'
-import { awsamazoncomcliPackage } from './awsamazoncomcli'
-import { tailwindcsscomPackage } from './tailwindcsscom'
-import { opentofuorgPackage } from './opentofuorg'
-import { po4aorgPackage } from './po4aorg'
-import { solanacomPackage } from './solanacom'
-import { fluentciioPackage } from './fluentciio'
-import { scala-langorgPackage } from './scala-langorg'
-import { libgeosorgPackage } from './libgeosorg'
-import { f1bonacc1githubioPackage } from './f1bonacc1githubio'
-import { agwanamegitcryptPackage } from './agwanamegitcrypt'
-import { dystroyorgPackage } from './dystroyorg'
-import { ebassigithubioPackage } from './ebassigithubio'
-import { libarchiveorgPackage } from './libarchiveorg'
-import { getfoundryshPackage } from './getfoundrysh'
-import { ziglangorgPackage } from './ziglangorg'
-import { brxken128githubiodexiosPackage } from './brxken128githubiodexios'
-import { awsamazoncomPackage } from './awsamazoncom'
-import { npmjscomPackage } from './npmjscom'
-import { duckdborgPackage } from './duckdborg'
-import { postgrestorgPackage } from './postgrestorg'
-import { gnomeorgPackage } from './gnomeorg'
-import { tiltdevPackage } from './tiltdev'
-import { liburcuorgPackage } from './liburcuorg'
-import { geuzorgPackage } from './geuzorg'
-import { microbreworgPackage } from './microbreworg'
-import { dockercomPackage } from './dockercom'
-import { crystal-langorgPackage } from './crystal-langorg'
-import { acornioacorncliPackage } from './acornioacorncli'
-import { yt-dlporgPackage } from './yt-dlporg'
-import { starshiprsPackage } from './starshiprs'
-import { digiporgPackage } from './digiporg'
-import { rapidjsonorgPackage } from './rapidjsonorg'
-import { terraform-docsioPackage } from './terraform-docsio'
-import { clog-toolgithubioPackage } from './clog-toolgithubio'
-import { rhashsourceforgenetPackage } from './rhashsourceforgenet'
-import { augeasnetPackage } from './augeasnet'
-import { werfioPackage } from './werfio'
-import { chromedriverchromiumorgPackage } from './chromedriverchromiumorg'
-import { doctavecomPackage } from './doctavecom'
-import { hasuraioPackage } from './hasuraio'
-import { mkdocsorgPackage } from './mkdocsorg'
-import { devpodshPackage } from './devpodsh'
-import { mpg123dePackage } from './mpg123de'
-import { terragruntgruntworkioPackage } from './terragruntgruntworkio'
-import { gleamrunPackage } from './gleamrun'
-import { saerasoftcomPackage } from './saerasoftcom'
-import { jfrogcomPackage } from './jfrogcom'
-import { qtioPackage } from './qtio'
-import { sftpgocomPackage } from './sftpgocom'
-import { logologicalorgPackage } from './logologicalorg'
-import { conftestdevPackage } from './conftestdev'
-import { onefetchdevPackage } from './onefetchdev'
-import { opensearchorgPackage } from './opensearchorg'
-import { libsshorgPackage } from './libsshorg'
-import { steampipeioPackage } from './steampipeio'
-import { sconsorgPackage } from './sconsorg'
-import { cedarpolicycomcliPackage } from './cedarpolicycomcli'
-import { sympyorgPackage } from './sympyorg'
-import { classicyarnpkgcomPackage } from './classicyarnpkgcom'
-import { flyioPackage } from './flyio'
-import { pnpmioPackage } from './pnpmio'
-import { virtualenvpypaioPackage } from './virtualenvpypaio'
-import { htopdevPackage } from './htopdev'
-import { graphqleditorcomPackage } from './graphqleditorcom'
-import { endoflifedatePackage } from './endoflifedate'
-import { nginxorgPackage } from './nginxorg'
-import { pugixmlorgPackage } from './pugixmlorg'
-import { dnslookupdogPackage } from './dnslookupdog'
-import { dhall-langorgPackage } from './dhall-langorg'
-import { onsigithubioPackage } from './onsigithubio'
-import { jpegorgPackage } from './jpegorg'
-import { cligithubcomPackage } from './cligithubcom'
-import { mujscomPackage } from './mujscom'
-import { jedsoftorgPackage } from './jedsoftorg'
-import { cephcomPackage } from './cephcom'
-import { jsonnetorgPackage } from './jsonnetorg'
-import { apacheorgPackage } from './apacheorg'
-import { connectrpcorgPackage } from './connectrpcorg'
-import { granteddevPackage } from './granteddev'
-import { numbatdevPackage } from './numbatdev'
-import { linux-pamorgPackage } from './linux-pamorg'
-import { furycoPackage } from './furyco'
-import { webmprojectorgPackage } from './webmprojectorg'
-import { yadmioPackage } from './yadmio'
-import { eksctlioPackage } from './eksctlio'
-import { pygmentsorgPackage } from './pygmentsorg'
-import { mercurial-scmorgPackage } from './mercurial-scmorg'
-import { lcdforgPackage } from './lcdforg'
-import { wiresharkorgPackage } from './wiresharkorg'
-import { raccoinorgPackage } from './raccoinorg'
-import { cpanminusPackage } from './cpanminus'
-import { facebookcomPackage } from './facebookcom'
-import { zshsourceforgeioPackage } from './zshsourceforgeio'
-import { paulfitzgithubioPackage } from './paulfitzgithubio'
-import { pkgxshPackage } from './pkgxsh'
-import { kotlinlangorgPackage } from './kotlinlangorg'
-import { openapi-generatortechPackage } from './openapi-generatortech'
-import { git-quick-statsshPackage } from './git-quick-statssh'
-import { cryptoPackage } from './crypto'
-import { supabasecomPackage } from './supabasecom'
-import { tldrshPackage } from './tldrsh'
-import { ipythonorgPackage } from './ipythonorg'
-import { tcshorgPackage } from './tcshorg'
-import { vapoursynthcomPackage } from './vapoursynthcom'
-import { curlieioPackage } from './curlieio'
-import { borepubPackage } from './borepub'
-import { rust-langorgPackage } from './rust-langorg'
-import { publichronopikdePackage } from './publichronopikde'
-import { pytestorgPackage } from './pytestorg'
-import { libgit2orgPackage } from './libgit2org'
-import { skaffolddevPackage } from './skaffolddev'
-import { attrsorgPackage } from './attrsorg'
-import { nomadprojectioPackage } from './nomadprojectio'
-import { intelcomPackage } from './intelcom'
-import { nixosorgPackage } from './nixosorg'
-import { libsodiumorgPackage } from './libsodiumorg'
-import { tcl-langorgPackage } from './tcl-langorg'
-import { vitejsdevPackage } from './vitejsdev'
-import { littlecmscomPackage } from './littlecmscom'
-import { wimlibnetPackage } from './wimlibnet'
-import { googlegithubioPackage } from './googlegithubio'
-import { matiosourceforgeioPackage } from './matiosourceforgeio'
-import { trufflesecuritycomPackage } from './trufflesecuritycom'
-import { hunspellgithubioPackage } from './hunspellgithubio'
-import { amrdevelopergithubiogqlPackage } from './amrdevelopergithubiogql'
-import { fxwtfPackage } from './fxwtf'
-import { pngquantorgPackage } from './pngquantorg'
-import { nushellshPackage } from './nushellsh'
-import { encoredevPackage } from './encoredev'
-import { palletsprojectscomPackage } from './palletsprojectscom'
-import { trippyclirsPackage } from './trippyclirs'
-import { python-pilloworgPackage } from './python-pilloworg'
-import { kluctlioPackage } from './kluctlio'
-import { zarfdevPackage } from './zarfdev'
-import { gitlabcomPackage } from './gitlabcom'
-import { wailsioPackage } from './wailsio'
-import { rust-langgithubioPackage } from './rust-langgithubio'
-import { kafkaapacheorgPackage } from './kafkaapacheorg'
-import { k3dioPackage } from './k3dio'
-import { maturinrsPackage } from './maturinrs'
-import { libpngorgPackage } from './libpngorg'
-import { qemuorgPackage } from './qemuorg'
-import { jemallocnetPackage } from './jemallocnet'
-import { graphitesilorgPackage } from './graphitesilorg'
-import { gnuplotinfoPackage } from './gnuplotinfo'
-import { androidcomcmdlinetoolsPackage } from './androidcomcmdlinetools'
-import { cloudnative-pgioPackage } from './cloudnative-pgio'
-import { psycopgorgPackage } from './psycopgorg'
-import { bashlydannybcoPackage } from './bashlydannybco'
-import { changiedevPackage } from './changiedev'
-import { ninja-buildorgPackage } from './ninja-buildorg'
-import { nlnetlabsnlPackage } from './nlnetlabsnl'
-import { libssh2orgPackage } from './libssh2org'
-import { r-wosorgPackage } from './r-wosorg'
-import { rubygemsorgPackage } from './rubygemsorg'
-import { jenkinsioPackage } from './jenkinsio'
-import { ntporgPackage } from './ntporg'
-import { printfngithubioPackage } from './printfngithubio'
-import { cythonorgPackage } from './cythonorg'
-import { radicleorgPackage } from './radicleorg'
-import { wasmerioPackage } from './wasmerio'
-import { groongaorgPackage } from './groongaorg'
-import { sphinx-docorgPackage } from './sphinx-docorg'
-import { ciliumioPackage } from './ciliumio'
-import { consulioPackage } from './consulio'
-import { fullstorycomPackage } from './fullstorycom'
-import { ruciocernchPackage } from './ruciocernch'
-import { typstappPackage } from './typstapp'
-import { httpieioPackage } from './httpieio'
-import { otssnipttcomPackage } from './otssnipttcom'
-import { dotnetmicrosoftcomPackage } from './dotnetmicrosoftcom'
-import { vimorgPackage } from './vimorg'
-import { libimobiledeviceorgPackage } from './libimobiledeviceorg'
-import { vamp-pluginsorgPackage } from './vamp-pluginsorg'
-import { waylandfreedesktoporgPackage } from './waylandfreedesktoporg'
-import { apptainerorgPackage } from './apptainerorg'
-import { toxwikiPackage } from './toxwiki'
-import { upxgithubioPackage } from './upxgithubio'
-import { oraslandPackage } from './orasland'
-import { presslygithubioPackage } from './presslygithubio'
-import { libvipsorgPackage } from './libvipsorg'
-import { edgedbcomPackage } from './edgedbcom'
-import { theoraorgPackage } from './theoraorg'
-import { cmockaorgPackage } from './cmockaorg'
-import { fna-xnagithubioPackage } from './fna-xnagithubio'
-import { xkbcommonorgPackage } from './xkbcommonorg'
-import { khanacademyorgPackage } from './khanacademyorg'
-import { msgpackorgPackage } from './msgpackorg'
-import { frei0rdyneorgPackage } from './frei0rdyneorg'
-import { ffmpegorgPackage } from './ffmpegorg'
-import { midnight-commanderorgPackage } from './midnight-commanderorg'
-import { ruby-langorgPackage } from './ruby-langorg'
-import { sshxioPackage } from './sshxio'
-import { kubesharkcoPackage } from './kubesharkco'
-import { getsopsioPackage } from './getsopsio'
-import { lunarvimorgPackage } from './lunarvimorg'
-import { protobufdevPackage } from './protobufdev'
-import { pdmfmingdevPackage } from './pdmfmingdev'
-import { opendevorgPackage } from './opendevorg'
-import { lamesourceforgeioPackage } from './lamesourceforgeio'
-import { sourcewareorgPackage } from './sourcewareorg'
-import { catborgPackage } from './catborg'
-import { aomediagooglesourcecomPackage } from './aomediagooglesourcecom'
-import { tcpdumporgPackage } from './tcpdumporg'
-import { biomejsdevPackage } from './biomejsdev'
-import { c-aresorgPackage } from './c-aresorg'
-import { amrdevelopergithubioPackage } from './amrdevelopergithubio'
-import { valeshPackage } from './valesh'
-import { dozzledevPackage } from './dozzledev'
-import { pcreorgPackage } from './pcreorg'
-import { jbig2deccomPackage } from './jbig2deccom'
-import { rcloneorgPackage } from './rcloneorg'
-import { agptcoPackage } from './agptco'
-import { kernelorgPackage } from './kernelorg'
-import { redisioPackage } from './redisio'
-import { pippypaioPackage } from './pippypaio'
-import { gtkorgPackage } from './gtkorg'
-import { apacheorgjmeterPackage } from './apacheorgjmeter'
-import { drifreedesktoporgPackage } from './drifreedesktoporg'
-import { convcogithubioPackage } from './convcogithubio'
-import { openprintinggithubioPackage } from './openprintinggithubio'
-import { oauth2-proxygithubioPackage } from './oauth2-proxygithubio'
-import { pre-commitcomPackage } from './pre-commitcom'
-import { aomediagooglesourcecomaomPackage } from './aomediagooglesourcecomaom'
-import { authzedcomspicedbPackage } from './authzedcomspicedb'
-import { openvpnnetPackage } from './openvpnnet'
-import { quarydevPackage } from './quarydev'
-import { libjpeg-turboorgPackage } from './libjpeg-turboorg'
-import { codercomPackage } from './codercom'
-import { opensslorgPackage } from './opensslorg'
-import { yasmtortallnetPackage } from './yasmtortallnet'
-import { tinybirdcoPackage } from './tinybirdco'
-import { macvimorgPackage } from './macvimorg'
-import { pythonorgPackage } from './pythonorg'
-import { databrickscomPackage } from './databrickscom'
-import { apacheorgavroPackage } from './apacheorgavro'
-import { nongnuorgPackage } from './nongnuorg'
-import { maaslalanicomPackage } from './maaslalanicom'
-import { pulumiioPackage } from './pulumiio'
-import { cmakeorgPackage } from './cmakeorg'
-import { sagiegurarigithubioPackage } from './sagiegurarigithubio'
-import { cruftgithubioPackage } from './cruftgithubio'
-import { openpolicyagentorgPackage } from './openpolicyagentorg'
-import { bitcoinorgPackage } from './bitcoinorg'
-import { openmpllvmorgPackage } from './openmpllvmorg'
-import { tsl0922githubioPackage } from './tsl0922githubio'
-import { snapletdevPackage } from './snapletdev'
-import { vclustercomPackage } from './vclustercom'
-import { talosdevPackage } from './talosdev'
-import { xcfiledevPackage } from './xcfiledev'
-import { scryerplPackage } from './scryerpl'
-import { surrealdbcomPackage } from './surrealdbcom'
-import { anchorecomPackage } from './anchorecom'
-import { giflibsourceforgeioPackage } from './giflibsourceforgeio'
-import { netflixcomPackage } from './netflixcom'
-import { nodejsorgPackage } from './nodejsorg'
-import { ibrcstu-bsdePackage } from './ibrcstu-bsde'
-import { krewsigsk8sioPackage } from './krewsigsk8sio'
-import { valkeyioPackage } from './valkeyio'
-import { pinnipeddevPackage } from './pinnipeddev'
-import { markupsafepalletsprojectscomPackage } from './markupsafepalletsprojectscom'
-import { luaorgPackage } from './luaorg'
-import { xpraorgPackage } from './xpraorg'
-import { temporalioPackage } from './temporalio'
-import { ast-grepgithubioPackage } from './ast-grepgithubio'
-import { openjdkorgPackage } from './openjdkorg'
-import { waterlanhomexs4allnlPackage } from './waterlanhomexs4allnl'
-import { priverdevPackage } from './priverdev'
-import { qpdfsourceforgeioPackage } from './qpdfsourceforgeio'
-import { permitioPackage } from './permitio'
-import { thekelleysorgukPackage } from './thekelleysorguk'
-import { liblqrwikidotcomPackage } from './liblqrwikidotcom'
-import { alsa-projectorgalsalibPackage } from './alsa-projectorgalsalib'
-import { swigorgPackage } from './swigorg'
-import { sdkmanioPackage } from './sdkmanio'
-import { zlibnetPackage } from './zlibnet'
-import { spacetimedbcomPackage } from './spacetimedbcom'
-import { riverbankcomputingcomPackage } from './riverbankcomputingcom'
-import { unidataucareduPackage } from './unidataucaredu'
-import { rust-scriptorgPackage } from './rust-scriptorg'
-import { gomplatecaPackage } from './gomplateca'
-import { hugowangPackage } from './hugowang'
-import { perlorgPackage } from './perlorg'
-import { unicodeorgPackage } from './unicodeorg'
-import { gflagsgithubioPackage } from './gflagsgithubio'
-import { tuistioPackage } from './tuistio'
-import { resticnetPackage } from './resticnet'
-import { cedarpolicycomPackage } from './cedarpolicycom'
-import { amprsPackage } from './amprs'
-import { ansiblecomansiblelintPackage } from './ansiblecomansiblelint'
-import { aquasecuritygithubiotrivyPackage } from './aquasecuritygithubiotrivy'
-import { mergestatcomPackage } from './mergestatcom'
-import { squawkhqcomPackage } from './squawkhqcom'
-import { argoprojgithubiocdPackage } from './argoprojgithubiocd'
-import { pwmtorgPackage } from './pwmtorg'
-import { ctagsioPackage } from './ctagsio'
-import { laravelcomPackage } from './laravelcom'
-import { haskellorgPackage } from './haskellorg'
-import { cointopshPackage } from './cointopsh'
-import { kislyukgithubioPackage } from './kislyukgithubio'
-import { hboehminfoPackage } from './hboehminfo'
-import { irohcomputerPackage } from './irohcomputer'
-import { gohugoioPackage } from './gohugoio'
-import { crazymaxdevPackage } from './crazymaxdev'
-import { d2langcomPackage } from './d2langcom'
-import { libtomnetPackage } from './libtomnet'
-import { flitpypaioPackage } from './flitpypaio'
-import { mandocbsdlvPackage } from './mandocbsdlv'
-import { apacheorgsubversionPackage } from './apacheorgsubversion'
-import { creativeprojectsgithubioPackage } from './creativeprojectsgithubio'
-import { astralshruffPackage } from './astralshruff'
-import { hashicorpcomPackage } from './hashicorpcom'
-import { dblabdanvergaracomPackage } from './dblabdanvergaracom'
-import { elfutilsorgPackage } from './elfutilsorg'
-import { getsynthcomPackage } from './getsynthcom'
-import { mupdfcomPackage } from './mupdfcom'
-import { cratesioPackage } from './cratesio'
-import { ijgorgPackage } from './ijgorg'
-import { mariadbcomPackage } from './mariadbcom'
-import { kindsigsk8sioPackage } from './kindsigsk8sio'
-import { symfonycomPackage } from './symfonycom'
-import { tidbytcomPackage } from './tidbytcom'
-import { bitwardencomPackage } from './bitwardencom'
-import { gouberorgPackage } from './gouberorg'
-import { apacheorgthriftPackage } from './apacheorgthrift'
-import { fukuchiorgPackage } from './fukuchiorg'
-import { earthlydevPackage } from './earthlydev'
-import { traefikioPackage } from './traefikio'
-import { mongodbcomPackage } from './mongodbcom'
-import { grpcioPackage } from './grpcio'
-import { linkerdioPackage } from './linkerdio'
-import { sniffnetnetPackage } from './sniffnetnet'
-import { argbashdevPackage } from './argbashdev'
-import { zeromqorgPackage } from './zeromqorg'
-import { runatlantisioPackage } from './runatlantisio'
-import { docbookorgPackage } from './docbookorg'
-import { fishshellcomPackage } from './fishshellcom'
-import { angulardevPackage } from './angulardev'
-import { assimporgPackage } from './assimporg'
-import { githubcomPackage } from './githubcom'
-import { yuigithubioPackage } from './yuigithubio'
-import { veracodecomPackage } from './veracodecom'
-import { fluxcdioPackage } from './fluxcdio'
-import { developer1passwordcomPackage } from './developer1passwordcom'
-import { lucagrullacomPackage } from './lucagrullacom'
-import { ohmyposhdevPackage } from './ohmyposhdev'
-import { pwgensourceforgeioPackage } from './pwgensourceforgeio'
-import { amber-langcomPackage } from './amber-langcom'
-import { prql-langorgPackage } from './prql-langorg'
-import { dotenvxcomPackage } from './dotenvxcom'
-import { apollographqlcomroverPackage } from './apollographqlcomrover'
-import { localaiioPackage } from './localaiio'
-import { jupyterorgPackage } from './jupyterorg'
-import { sentryioPackage } from './sentryio'
-import { fermyoncomPackage } from './fermyoncom'
-import { mozillaorgPackage } from './mozillaorg'
-import { gnuorgPackage } from './gnuorg'
-import { mailpitaxllentorgPackage } from './mailpitaxllentorg'
-import { asciinemaorgPackage } from './asciinemaorg'
-import { cyrusimaporgPackage } from './cyrusimaporg'
-import { anchorecomsyftPackage } from './anchorecomsyft'
-import { oberhumercomPackage } from './oberhumercom'
-import { dkrzdePackage } from './dkrzde'
-import { koyebcomPackage } from './koyebcom'
-import { ordinalscomPackage } from './ordinalscom'
-import { rendercomPackage } from './rendercom'
-import { wilfredmeukPackage } from './wilfredmeuk'
-import { brxken128githubioPackage } from './brxken128githubio'
-import { ansiblecomPackage } from './ansiblecom'
-import { leo-langorgPackage } from './leo-langorg'
-import { sqliteorgPackage } from './sqliteorg'
-import { groovy-langorgPackage } from './groovy-langorg'
-import { moshorgPackage } from './moshorg'
-import { circlecicomPackage } from './circlecicom'
-import { pixmanorgPackage } from './pixmanorg'
-import { videolanorgPackage } from './videolanorg'
-import { podmanioPackage } from './podmanio'
-import { terraformioPackage } from './terraformio'
-import { argoprojgithubioworkflowsPackage } from './argoprojgithubioworkflows'
-import { justsystemsPackage } from './justsystems'
-import { projenioPackage } from './projenio'
-import { gdalorgPackage } from './gdalorg'
-import { libproxygithubioPackage } from './libproxygithubio'
-import { xtlsgithubioPackage } from './xtlsgithubio'
-import { gradleorgPackage } from './gradleorg'
-import { ladspaorgPackage } from './ladspaorg'
-import { terratagioPackage } from './terratagio'
-import { templguidePackage } from './templguide'
-import { epsilon-projectsourceforgeioPackage } from './epsilon-projectsourceforgeio'
-import { luajitorgPackage } from './luajitorg'
-import { vannaaiPackage } from './vannaai'
-import { daggerioPackage } from './daggerio'
-import { libcxxllvmorgPackage } from './libcxxllvmorg'
-import { libexifgithubioPackage } from './libexifgithubio'
-import { pluralithcomPackage } from './pluralithcom'
-import { applecomremote_cmdsPackage } from './applecomremote_cmds'
-import { jbangdevPackage } from './jbangdev'
-import { ghostgumcomauPackage } from './ghostgumcomau'
-import { cloudflarecomPackage } from './cloudflarecom'
-import { pypaioPackage } from './pypaio'
-import { phpnetPackage } from './phpnet'
-import { flutterdevPackage } from './flutterdev'
-import { syncthingnetPackage } from './syncthingnet'
-import { glmg-trucnetPackage } from './glmg-trucnet'
-import { soldeerxyzPackage } from './soldeerxyz'
-import { openldaporgPackage } from './openldaporg'
-import { smartmontoolsorgPackage } from './smartmontoolsorg'
-import { misejdxdevPackage } from './misejdxdev'
-import { graphvizorgPackage } from './graphvizorg'
-import { pocketbaseioPackage } from './pocketbaseio'
-import { lz4orgPackage } from './lz4org'
-import { androidcomPackage } from './androidcom'
-import { wixcomPackage } from './wixcom'
-import { pyyamlorgPackage } from './pyyamlorg'
-import { wxwidgetsorgPackage } from './wxwidgetsorg'
-import { ccachedevPackage } from './ccachedev'
-import { cuelangorgPackage } from './cuelangorg'
-import { freetdsorgPackage } from './freetdsorg'
-import { srtallianceorgPackage } from './srtallianceorg'
-import { docutilsorgPackage } from './docutilsorg'
-import { glewsourceforgeioPackage } from './glewsourceforgeio'
-import { getclipboardappPackage } from './getclipboardapp'
-import { devyorhelnlPackage } from './devyorhelnl'
-import { dartdevPackage } from './dartdev'
-import { straceioPackage } from './straceio'
-import { info-ziporgPackage } from './info-ziporg'
-import { git-towncomPackage } from './git-towncom'
-import { man-dbgitlabioPackage } from './man-dbgitlabio'
-import { watchexecgithubioPackage } from './watchexecgithubio'
-import { hetznercomPackage } from './hetznercom'
-import { huggingfacecoPackage } from './huggingfaceco'
-import { practical-schemenetPackage } from './practical-schemenet'
-import { rpmorgPackage } from './rpmorg'
-import { bytebasecomPackage } from './bytebasecom'
-import { opendaporgPackage } from './opendaporg'
-import { bunshPackage } from './bunsh'
-import { moderncorgPackage } from './moderncorg'
-import { debianorgPackage } from './debianorg'
-import { virtualsquareorgPackage } from './virtualsquareorg'
-import { taplotamasfedevPackage } from './taplotamasfedev'
-import { wkentarogithubioPackage } from './wkentarogithubio'
-import { gqlgencomPackage } from './gqlgencom'
-import { upliftcidevPackage } from './upliftcidev'
-import { hurldevPackage } from './hurldev'
-import { fmtdevPackage } from './fmtdev'
-import { mysqlcomPackage } from './mysqlcom'
-import { peopleengrtamueduPackage } from './peopleengrtamuedu'
-import { pypagithubioPackage } from './pypagithubio'
-import { alacrittyorgPackage } from './alacrittyorg'
-import { openpmixgithubioPackage } from './openpmixgithubio'
-import { plocatesessenetPackage } from './plocatesessenet'
-import { akuityiokargoPackage } from './akuityiokargo'
-import { herokucomPackage } from './herokucom'
-import { certifiioPackage } from './certifiio'
-import { re2corgPackage } from './re2corg'
-import { scala-sbtorgPackage } from './scala-sbtorg'
-import { xplrdevPackage } from './xplrdev'
-import { tursotechPackage } from './tursotech'
-import { lima-vmioPackage } from './lima-vmio'
-import { sqlfluffcomPackage } from './sqlfluffcom'
-import { rubocoporgPackage } from './rubocoporg'
-import { mitmproxyorgPackage } from './mitmproxyorg'
-import { prettierioPackage } from './prettierio'
-import { darwinsyscomPackage } from './darwinsyscom'
-import { sing-boxappPackage } from './sing-boxapp'
-import { ciscocomPackage } from './ciscocom'
-import { checkovioPackage } from './checkovio'
-import { wundergraphcomPackage } from './wundergraphcom'
-import { glarosdtcumneduPackage } from './glarosdtcumnedu'
-import { corednsioPackage } from './corednsio'
-import { openexrcomPackage } from './openexrcom'
-import { vlangioPackage } from './vlangio'
-import { browser-usecomPackage } from './browser-usecom'
-import { codevideolanorgPackage } from './codevideolanorg'
-import { cairographicsorgPackage } from './cairographicsorg'
-import { pipenvpypaioPackage } from './pipenvpypaio'
-import { microsoftcomPackage } from './microsoftcom'
-import { ryeastralshPackage } from './ryeastralsh'
-import { kubebuilderioPackage } from './kubebuilderio'
-import { kagglecomPackage } from './kagglecom'
-import { freeglutsourceforgeioPackage } from './freeglutsourceforgeio'
-import { networkxorgPackage } from './networkxorg'
-import { helix-editorcomPackage } from './helix-editorcom'
-import { xiphorgPackage } from './xiphorg'
-import { lxmldePackage } from './lxmlde'
-import { hardingmotdcaPackage } from './hardingmotdca'
-import { rockdabootgithubioPackage } from './rockdabootgithubio'
-import { uriparsergithubioPackage } from './uriparsergithubio'
-import { csientuedutwPackage } from './csientuedutw'
-import { duktapeorgPackage } from './duktapeorg'
-import { pagureioPackage } from './pagureio'
-import { gittoztnetPackage } from './gittoztnet'
-import { certbotefforgPackage } from './certbotefforg'
-import { bloomreachcomPackage } from './bloomreachcom'
-import { thrysoeedkPackage } from './thrysoeedk'
-import { kornelskiPackage } from './kornelski'
-import { mesonbuildcomPackage } from './mesonbuildcom'
-import { fastlanetoolsPackage } from './fastlanetools'
-import { authzedcomPackage } from './authzedcom'
-import { numpyorgPackage } from './numpyorg'
-import { orhundevPackage } from './orhundev'
-import { vektragithubioPackage } from './vektragithubio'
-import { oraclecomPackage } from './oraclecom'
-import { doxygennlPackage } from './doxygennl'
-import { snykioPackage } from './snykio'
-import { stripecomPackage } from './stripecom'
-import { cocoapodsorgPackage } from './cocoapodsorg'
-import { ceres-solverorgPackage } from './ceres-solverorg'
-import { wait4xdevPackage } from './wait4xdev'
-import { gitleaksioPackage } from './gitleaksio'
-import { liteclicomPackage } from './liteclicom'
-import { cloudfoundryorgPackage } from './cloudfoundryorg'
-import { sfnetPackage } from './sfnet'
-import { prefixdevPackage } from './prefixdev'
-import { argoprojgithubioPackage } from './argoprojgithubio'
-import { curlsePackage } from './curlse'
-import { tartrunPackage } from './tartrun'
-import { lycheeclirsPackage } from './lycheeclirs'
-import { filippoioPackage } from './filippoio'
-import { denolandPackage } from './denoland'
-import { freedesktoporgPackage } from './freedesktoporg'
-import { nxdevPackage } from './nxdev'
-import { svenstarogithubioPackage } from './svenstarogithubio'
-import { rigauxorgPackage } from './rigauxorg'
-import { typescriptlangorgPackage } from './typescriptlangorg'
-import { istioioPackage } from './istioio'
-import { materializecomPackage } from './materializecom'
-import { html-tidyorgPackage } from './html-tidyorg'
-import { openshiftcomPackage } from './openshiftcom'
-import { tree-sittergithubioPackage } from './tree-sittergithubio'
-import { caddyservercomPackage } from './caddyservercom'
-import { libsdlorgPackage } from './libsdlorg'
-import { godevPackage } from './godev'
-import { kptdevPackage } from './kptdev'
-import { replibytecomPackage } from './replibytecom'
-import { golangci-lintrunPackage } from './golangci-lintrun'
-import { apollographqlcomPackage } from './apollographqlcom'
-import { tlrdevPackage } from './tlrdev'
-import { vaultprojectioPackage } from './vaultprojectio'
-import { nikecomPackage } from './nikecom'
-import { tinygoorgPackage } from './tinygoorg'
-import { phpmyadminnetPackage } from './phpmyadminnet'
-import { developersyubicocomPackage } from './developersyubicocom'
-import { gstreamerfreedesktoporgPackage } from './gstreamerfreedesktoporg'
-import { robotframeworkorgPackage } from './robotframeworkorg'
-import { alsa-projectorgPackage } from './alsa-projectorg'
-import { reacheremailPackage } from './reacheremail'
-import { dgraphioPackage } from './dgraphio'
-import { denilsonsanombrPackage } from './denilsonsanombr'
-import { swiftorgPackage } from './swiftorg'
-import { makotemplatesorgPackage } from './makotemplatesorg'
-import { mcmc-jagssourceforgeioPackage } from './mcmc-jagssourceforgeio'
-import { freetypeorgPackage } from './freetypeorg'
-import { tmateioPackage } from './tmateio'
-import { depotdevPackage } from './depotdev'
 
-export const pantry: Record<string, PkgxPackage> = {}
+import * as abseilio from './abseilio'
+import * as acornio from './acornio'
+import * as acornioacorncli from './acornioacorncli'
+import * as agptco from './agptco'
+import * as agwaname from './agwaname'
+import * as agwanamegitcrypt from './agwanamegitcrypt'
+import * as akuityio from './akuityio'
+import * as akuityiokargo from './akuityiokargo'
+import * as alacrittyorg from './alacrittyorg'
+import * as alembicsqlalchemyorg from './alembicsqlalchemyorg'
+import * as alsa_projectorg from './alsa-projectorg'
+import * as alsa_projectorgalsalib from './alsa-projectorgalsalib'
+import * as amber_langcom from './amber-langcom'
+import * as amprs from './amprs'
+import * as amrdevelopergithubio from './amrdevelopergithubio'
+import * as amrdevelopergithubiogql from './amrdevelopergithubiogql'
+import * as anchorecom from './anchorecom'
+import * as anchorecomsyft from './anchorecomsyft'
+import * as androidcom from './androidcom'
+import * as androidcomcmdlinetools from './androidcomcmdlinetools'
+import * as angulardev from './angulardev'
+import * as ansiblecom from './ansiblecom'
+import * as ansiblecomansiblelint from './ansiblecomansiblelint'
+import * as aomediagooglesourcecom from './aomediagooglesourcecom'
+import * as aomediagooglesourcecomaom from './aomediagooglesourcecomaom'
+import * as apacheorg from './apacheorg'
+import * as apacheorgapr from './apacheorgapr'
+import * as apacheorgaprutil from './apacheorgaprutil'
+import * as apacheorgarrow from './apacheorgarrow'
+import * as apacheorgavro from './apacheorgavro'
+import * as apacheorghttpd from './apacheorghttpd'
+import * as apacheorgjmeter from './apacheorgjmeter'
+import * as apacheorgsubversion from './apacheorgsubversion'
+import * as apacheorgthrift from './apacheorgthrift'
+import * as apacheorgzookeeper from './apacheorgzookeeper'
+import * as apktoolorg from './apktoolorg'
+import * as apollographqlcom from './apollographqlcom'
+import * as apollographqlcomrover from './apollographqlcomrover'
+import * as appiumio from './appiumio'
+import * as applecom from './applecom'
+import * as applecomremote_cmds from './applecomremote_cmds'
+import * as apptainerorg from './apptainerorg'
+import * as aquasecuritygithubio from './aquasecuritygithubio'
+import * as aquasecuritygithubiotfsec from './aquasecuritygithubiotfsec'
+import * as aquasecuritygithubiotrivy from './aquasecuritygithubiotrivy'
+import * as arduinogithubio from './arduinogithubio'
+import * as arduinogithubioarduinocli from './arduinogithubioarduinocli'
+import * as argbashdev from './argbashdev'
+import * as argoprojgithubio from './argoprojgithubio'
+import * as argoprojgithubiocd from './argoprojgithubiocd'
+import * as argoprojgithubioworkflows from './argoprojgithubioworkflows'
+import * as aria2githubio from './aria2githubio'
+import * as arkadedev from './arkadedev'
+import * as asciidoctororg from './asciidoctororg'
+import * as asciinemaorg from './asciinemaorg'
+import * as asciinemaorgagg from './asciinemaorgagg'
+import * as aspellnet from './aspellnet'
+import * as assimporg from './assimporg'
+import * as ast_grepgithubio from './ast-grepgithubio'
+import * as astralsh from './astralsh'
+import * as astralshruff from './astralshruff'
+import * as astralshuv from './astralshuv'
+import * as atlasgoio from './atlasgoio'
+import * as attrsorg from './attrsorg'
+import * as augeasnet from './augeasnet'
+import * as authzedcom from './authzedcom'
+import * as authzedcomspicedb from './authzedcomspicedb'
+import * as aux4io from './aux4io'
+import * as awsamazoncom from './awsamazoncom'
+import * as awsamazoncomcdk from './awsamazoncomcdk'
+import * as awsamazoncomcli from './awsamazoncomcli'
+import * as awsamazoncomsam from './awsamazoncomsam'
+import * as bashlydannybco from './bashlydannybco'
+import * as bcryptsourceforgenet from './bcryptsourceforgenet'
+import * as beyondgrepcom from './beyondgrepcom'
+import * as biomejsdev from './biomejsdev'
+import * as bitcoinorg from './bitcoinorg'
+import * as bittensorcom from './bittensorcom'
+import * as bitwardencom from './bitwardencom'
+import * as blake2net from './blake2net'
+import * as blake2netlibb2 from './blake2netlibb2'
+import * as bloomreachcom from './bloomreachcom'
+import * as boostorg from './boostorg'
+import * as borepub from './borepub'
+import * as breakfastquaycom from './breakfastquaycom'
+import * as browser_usecom from './browser-usecom'
+import * as brxken128githubio from './brxken128githubio'
+import * as brxken128githubiodexios from './brxken128githubiodexios'
+import * as budimanjojogithubio from './budimanjojogithubio'
+import * as bufbuild from './bufbuild'
+import * as buildpacksio from './buildpacksio'
+import * as bunsh from './bunsh'
+import * as bytebasecom from './bytebasecom'
+import * as bytereeforg from './bytereeforg'
+import * as c_aresorg from './c-aresorg'
+import * as caddyservercom from './caddyservercom'
+import * as cairographicsorg from './cairographicsorg'
+import * as capstone_engineorg from './capstone-engineorg'
+import * as carapacesh from './carapacesh'
+import * as caskreadthedocsio from './caskreadthedocsio'
+import * as catborg from './catborg'
+import * as ccachedev from './ccachedev'
+import * as cedarpolicycom from './cedarpolicycom'
+import * as cedarpolicycomcli from './cedarpolicycomcli'
+import * as cephcom from './cephcom'
+import * as ceres_solverorg from './ceres-solverorg'
+import * as certbotefforg from './certbotefforg'
+import * as certifiio from './certifiio'
+import * as cgalorg from './cgalorg'
+import * as changiedev from './changiedev'
+import * as charmsh from './charmsh'
+import * as checkovio from './checkovio'
+import * as chezmoiio from './chezmoiio'
+import * as chiarkgreenendorguk from './chiarkgreenendorguk'
+import * as chromedriverchromiumorg from './chromedriverchromiumorg'
+import * as ciliumio from './ciliumio'
+import * as circlecicom from './circlecicom'
+import * as ciscocom from './ciscocom'
+import * as classicyarnpkgcom from './classicyarnpkgcom'
+import * as cligithubcom from './cligithubcom'
+import * as clisporg from './clisporg'
+import * as clog_toolgithubio from './clog-toolgithubio'
+import * as cloudflarecom from './cloudflarecom'
+import * as cloudfoundryorg from './cloudfoundryorg'
+import * as cloudnative_pgio from './cloudnative-pgio'
+import * as cmakeorg from './cmakeorg'
+import * as cmockaorg from './cmockaorg'
+import * as cnqueryio from './cnqueryio'
+import * as cocoapodsorg from './cocoapodsorg'
+import * as cocogittoio from './cocogittoio'
+import * as codercom from './codercom'
+import * as codevideolanorg from './codevideolanorg'
+import * as cointopsh from './cointopsh'
+import * as condaorg from './condaorg'
+import * as conftestdev from './conftestdev'
+import * as connectrpcorg from './connectrpcorg'
+import * as consulio from './consulio'
+import * as convcogithubio from './convcogithubio'
+import * as corednsio from './corednsio'
+import * as cpanminus from './cpanminus'
+import * as cratesio from './cratesio'
+import * as crazymaxdev from './crazymaxdev'
+import * as creativeprojectsgithubio from './creativeprojectsgithubio'
+import * as cruftgithubio from './cruftgithubio'
+import * as crypto from './crypto'
+import * as cryptographyio from './cryptographyio'
+import * as crystal_langorg from './crystal-langorg'
+import * as cscopesourceforgeio from './cscopesourceforgeio'
+import * as csientuedutw from './csientuedutw'
+import * as ctagsio from './ctagsio'
+import * as ctopsh from './ctopsh'
+import * as cuelangorg from './cuelangorg'
+import * as curlieio from './curlieio'
+import * as curlse from './curlse'
+import * as cyrusimaporg from './cyrusimaporg'
+import * as cythonorg from './cythonorg'
+import * as d2langcom from './d2langcom'
+import * as daggerio from './daggerio'
+import * as dartdev from './dartdev'
+import * as darwinsyscom from './darwinsyscom'
+import * as databrickscom from './databrickscom'
+import * as daytonaio from './daytonaio'
+import * as dblabdanvergaracom from './dblabdanvergaracom'
+import * as debianorg from './debianorg'
+import * as deepwisdomai from './deepwisdomai'
+import * as denilsonsanombr from './denilsonsanombr'
+import * as denoland from './denoland'
+import * as depotdev from './depotdev'
+import * as dest_unreachorg from './dest-unreachorg'
+import * as developer1passwordcom from './developer1passwordcom'
+import * as developersyubicocom from './developersyubicocom'
+import * as devpodsh from './devpodsh'
+import * as devyorhelnl from './devyorhelnl'
+import * as dgraphio from './dgraphio'
+import * as dhall_langorg from './dhall-langorg'
+import * as dhruvkbdev from './dhruvkbdev'
+import * as diggerdev from './diggerdev'
+import * as digiporg from './digiporg'
+import * as digitaloceancom from './digitaloceancom'
+import * as direnvnet from './direnvnet'
+import * as dkrzde from './dkrzde'
+import * as dnslookupdog from './dnslookupdog'
+import * as docbookorg from './docbookorg'
+import * as dockercom from './dockercom'
+import * as doctavecom from './doctavecom'
+import * as docutilsorg from './docutilsorg'
+import * as dotenv_lintergithubio from './dotenv-lintergithubio'
+import * as dotenvxcom from './dotenvxcom'
+import * as dotnetmicrosoftcom from './dotnetmicrosoftcom'
+import * as doxygennl from './doxygennl'
+import * as dozzledev from './dozzledev'
+import * as dprintdev from './dprintdev'
+import * as drifreedesktoporg from './drifreedesktoporg'
+import * as duckdborg from './duckdborg'
+import * as duktapeorg from './duktapeorg'
+import * as dystroyorg from './dystroyorg'
+import * as earthlydev from './earthlydev'
+import * as ebassigithubio from './ebassigithubio'
+import * as edgedbcom from './edgedbcom'
+import * as eigentuxfamilyorg from './eigentuxfamilyorg'
+import * as eksctlio from './eksctlio'
+import * as elementsprojectorg from './elementsprojectorg'
+import * as elfutilsorg from './elfutilsorg'
+import * as elixir_langorg from './elixir-langorg'
+import * as elizaosgithubio from './elizaosgithubio'
+import * as elvsh from './elvsh'
+import * as encoredev from './encoredev'
+import * as endoflifedate from './endoflifedate'
+import * as epsilon_projectsourceforgeio from './epsilon-projectsourceforgeio'
+import * as erlangorg from './erlangorg'
+import * as etcdio from './etcdio'
+import * as exiftoolorg from './exiftoolorg'
+import * as expodev from './expodev'
+import * as eyrieorg from './eyrieorg'
+import * as f1bonacc1githubio from './f1bonacc1githubio'
+import * as fabianlindforsse from './fabianlindforsse'
+import * as facebookcom from './facebookcom'
+import * as fairwindscom from './fairwindscom'
+import * as fastlanetools from './fastlanetools'
+import * as felixkratzgithubio from './felixkratzgithubio'
+import * as fermyoncom from './fermyoncom'
+import * as ffmpegorg from './ffmpegorg'
+import * as fftworg from './fftworg'
+import * as filippoio from './filippoio'
+import * as fishshellcom from './fishshellcom'
+import * as fliptio from './fliptio'
+import * as flitpypaio from './flitpypaio'
+import * as fltkorg from './fltkorg'
+import * as fluentciio from './fluentciio'
+import * as flutterdev from './flutterdev'
+import * as fluxcdio from './fluxcdio'
+import * as flyio from './flyio'
+import * as flywaydborg from './flywaydborg'
+import * as fmtdev from './fmtdev'
+import * as fna_xnagithubio from './fna-xnagithubio'
+import * as freedesktoporg from './freedesktoporg'
+import * as freeglutsourceforgeio from './freeglutsourceforgeio'
+import * as freetdsorg from './freetdsorg'
+import * as freetypeorg from './freetypeorg'
+import * as frei0rdyneorg from './frei0rdyneorg'
+import * as fuellabsgithubio from './fuellabsgithubio'
+import * as fukuchiorg from './fukuchiorg'
+import * as fullstorycom from './fullstorycom'
+import * as furyco from './furyco'
+import * as fxwtf from './fxwtf'
+import * as gaia_gisit from './gaia-gisit'
+import * as gdalorg from './gdalorg'
+import * as geoffgreerfm from './geoffgreerfm'
+import * as getclipboardapp from './getclipboardapp'
+import * as getcomposerorg from './getcomposerorg'
+import * as getfoundrysh from './getfoundrysh'
+import * as getsopsio from './getsopsio'
+import * as getsynthcom from './getsynthcom'
+import * as getzolaorg from './getzolaorg'
+import * as geuzorg from './geuzorg'
+import * as gflagsgithubio from './gflagsgithubio'
+import * as ghostgumcomau from './ghostgumcomau'
+import * as ghostscriptcom from './ghostscriptcom'
+import * as giflibsourceforgeio from './giflibsourceforgeio'
+import * as git_clifforg from './git-clifforg'
+import * as git_lfscom from './git-lfscom'
+import * as git_quick_statssh from './git-quick-statssh'
+import * as git_scmorg from './git-scmorg'
+import * as git_towncom from './git-towncom'
+import * as githubcom from './githubcom'
+import * as gitlabcom from './gitlabcom'
+import * as gitleaksio from './gitleaksio'
+import * as gitosgeoorg from './gitosgeoorg'
+import * as gittoztnet from './gittoztnet'
+import * as glarosdtcumnedu from './glarosdtcumnedu'
+import * as gleamrun from './gleamrun'
+import * as glewsourceforgeio from './glewsourceforgeio'
+import * as glfworg from './glfworg'
+import * as glmg_trucnet from './glmg-trucnet'
+import * as gnomeorg from './gnomeorg'
+import * as gnuorg from './gnuorg'
+import * as gnupgorg from './gnupgorg'
+import * as gnuplotinfo from './gnuplotinfo'
+import * as gnutlsorg from './gnutlsorg'
+import * as godev from './godev'
+import * as gohugoio from './gohugoio'
+import * as golangci_lintrun from './golangci-lintrun'
+import * as gomplateca from './gomplateca'
+import * as googlecom from './googlecom'
+import * as googlegithubio from './googlegithubio'
+import * as goreleasercom from './goreleasercom'
+import * as gouberorg from './gouberorg'
+import * as gourceio from './gourceio'
+import * as gphotoorg from './gphotoorg'
+import * as gqlgencom from './gqlgencom'
+import * as gradleorg from './gradleorg'
+import * as grafanacom from './grafanacom'
+import * as granteddev from './granteddev'
+import * as graphicsmagickorg from './graphicsmagickorg'
+import * as graphitesilorg from './graphitesilorg'
+import * as graphqleditorcom from './graphqleditorcom'
+import * as graphvizorg from './graphvizorg'
+import * as groongaorg from './groongaorg'
+import * as groovy_langorg from './groovy-langorg'
+import * as grpcio from './grpcio'
+import * as gstreamerfreedesktoporg from './gstreamerfreedesktoporg'
+import * as gtkorg from './gtkorg'
+import * as gtssourceforgenet from './gtssourceforgenet'
+import * as hadronsorg from './hadronsorg'
+import * as hardingmotdca from './hardingmotdca'
+import * as harfbuzzorg from './harfbuzzorg'
+import * as hashicorpcom from './hashicorpcom'
+import * as haskellorg from './haskellorg'
+import * as hasuraio from './hasuraio'
+import * as hatchpypaio from './hatchpypaio'
+import * as hboehminfo from './hboehminfo'
+import * as hdfgrouporg from './hdfgrouporg'
+import * as heasarcgsfcnasagov from './heasarcgsfcnasagov'
+import * as helix_editorcom from './helix-editorcom'
+import * as helmsh from './helmsh'
+import * as herokucom from './herokucom'
+import * as hetznercom from './hetznercom'
+import * as hjsongithubio from './hjsongithubio'
+import * as html_tidyorg from './html-tidyorg'
+import * as htopdev from './htopdev'
+import * as htsliborg from './htsliborg'
+import * as httpieio from './httpieio'
+import * as huggingfaceco from './huggingfaceco'
+import * as hugowang from './hugowang'
+import * as hunspellgithubio from './hunspellgithubio'
+import * as hurldev from './hurldev'
+import * as ibrcstu_bsde from './ibrcstu-bsde'
+import * as idleberggithubio from './idleberggithubio'
+import * as ijgorg from './ijgorg'
+import * as imageflowio from './imageflowio'
+import * as imagemagickorg from './imagemagickorg'
+import * as indexsupplycom from './indexsupplycom'
+import * as info_ziporg from './info-ziporg'
+import * as infracostio from './infracostio'
+import * as intelcom from './intelcom'
+import * as invisible_islandnet from './invisible-islandnet'
+import * as ipfstech from './ipfstech'
+import * as ipythonorg from './ipythonorg'
+import * as irohcomputer from './irohcomputer'
+import * as iscorg from './iscorg'
+import * as istioio from './istioio'
+import * as itstoolorg from './itstoolorg'
+import * as ivarchcom from './ivarchcom'
+import * as jbangdev from './jbangdev'
+import * as jbig2deccom from './jbig2deccom'
+import * as jedisct1githubio from './jedisct1githubio'
+import * as jedsoftorg from './jedsoftorg'
+import * as jemallocnet from './jemallocnet'
+import * as jenkins_xio from './jenkins-xio'
+import * as jenkinsio from './jenkinsio'
+import * as jenvbe from './jenvbe'
+import * as jetporchcom from './jetporchcom'
+import * as jfrogcom from './jfrogcom'
+import * as jlessio from './jlessio'
+import * as jonasgithubio from './jonasgithubio'
+import * as jpegorg from './jpegorg'
+import * as jsonnetorg from './jsonnetorg'
+import * as jugitfz_juelichde from './jugitfz-juelichde'
+import * as jujuis from './jujuis'
+import * as julialangorg from './julialangorg'
+import * as jumppaddev from './jumppaddev'
+import * as jupyterorg from './jupyterorg'
+import * as justsystems from './justsystems'
+import * as k3dio from './k3dio'
+import * as k6io from './k6io'
+import * as k9scliio from './k9scliio'
+import * as kafkaapacheorg from './kafkaapacheorg'
+import * as kagglecom from './kagglecom'
+import * as keephqdev from './keephqdev'
+import * as kerberosorg from './kerberosorg'
+import * as kernelorg from './kernelorg'
+import * as khanacademyorg from './khanacademyorg'
+import * as khronosorg from './khronosorg'
+import * as kindsigsk8sio from './kindsigsk8sio'
+import * as kislyukgithubio from './kislyukgithubio'
+import * as kluctlio from './kluctlio'
+import * as kobuild from './kobuild'
+import * as kornelski from './kornelski'
+import * as kotlinlangorg from './kotlinlangorg'
+import * as koyebcom from './koyebcom'
+import * as kptdev from './kptdev'
+import * as krewsigsk8sio from './krewsigsk8sio'
+import * as ktlintgithubio from './ktlintgithubio'
+import * as kubebuilderio from './kubebuilderio'
+import * as kubecmcloud from './kubecmcloud'
+import * as kubectxdev from './kubectxdev'
+import * as kubelinterio from './kubelinterio'
+import * as kubernetesio from './kubernetesio'
+import * as kubesharkco from './kubesharkco'
+import * as ladspaorg from './ladspaorg'
+import * as lamesourceforgeio from './lamesourceforgeio'
+import * as langchaincom from './langchaincom'
+import * as laravelcom from './laravelcom'
+import * as lavinmqcom from './lavinmqcom'
+import * as lcdforg from './lcdforg'
+import * as leethomasongithubio from './leethomasongithubio'
+import * as leo_langorg from './leo-langorg'
+import * as leonerdorguk from './leonerdorguk'
+import * as leptonicaorg from './leptonicaorg'
+import * as lftpyarru from './lftpyarru'
+import * as libarchiveorg from './libarchiveorg'
+import * as libcxxllvmorg from './libcxxllvmorg'
+import * as libeventorg from './libeventorg'
+import * as libexifgithubio from './libexifgithubio'
+import * as libexpatgithubio from './libexpatgithubio'
+import * as libgdgithubio from './libgdgithubio'
+import * as libgeosorg from './libgeosorg'
+import * as libgit2org from './libgit2org'
+import * as libimobiledeviceorg from './libimobiledeviceorg'
+import * as libislsourceforgeio from './libislsourceforgeio'
+import * as libjpeg_turboorg from './libjpeg-turboorg'
+import * as liblqrwikidotcom from './liblqrwikidotcom'
+import * as libpipelinegitlabio from './libpipelinegitlabio'
+import * as libpngorg from './libpngorg'
+import * as libproxygithubio from './libproxygithubio'
+import * as libraworg from './libraworg'
+import * as libsdlorg from './libsdlorg'
+import * as libsodiumorg from './libsodiumorg'
+import * as libsouporg from './libsouporg'
+import * as libspngorg from './libspngorg'
+import * as libssh2org from './libssh2org'
+import * as libsshorg from './libsshorg'
+import * as libtomnet from './libtomnet'
+import * as liburcuorg from './liburcuorg'
+import * as libusbinfo from './libusbinfo'
+import * as libuvorg from './libuvorg'
+import * as libvipsorg from './libvipsorg'
+import * as libwebsocketsorg from './libwebsocketsorg'
+import * as libziporg from './libziporg'
+import * as lima_vmio from './lima-vmio'
+import * as linkerdio from './linkerdio'
+import * as linux_pamorg from './linux-pamorg'
+import * as liteclicom from './liteclicom'
+import * as littlecmscom from './littlecmscom'
+import * as llmdatasetteio from './llmdatasetteio'
+import * as lloydgithubio from './lloydgithubio'
+import * as llvmorg from './llvmorg'
+import * as localaiio from './localaiio'
+import * as localstackcloud from './localstackcloud'
+import * as logdydev from './logdydev'
+import * as logologicalorg from './logologicalorg'
+import * as luajitorg from './luajitorg'
+import * as luaorg from './luaorg'
+import * as luarocksorg from './luarocksorg'
+import * as lucagrullacom from './lucagrullacom'
+import * as lunarvimorg from './lunarvimorg'
+import * as lxmlde from './lxmlde'
+import * as lycheeclirs from './lycheeclirs'
+import * as lz4org from './lz4org'
+import * as maaslalanicom from './maaslalanicom'
+import * as macvimorg from './macvimorg'
+import * as mailpitaxllentorg from './mailpitaxllentorg'
+import * as makotemplatesorg from './makotemplatesorg'
+import * as man_dbgitlabio from './man-dbgitlabio'
+import * as mandocbsdlv from './mandocbsdlv'
+import * as mariadbcom from './mariadbcom'
+import * as markupsafepalletsprojectscom from './markupsafepalletsprojectscom'
+import * as materializecom from './materializecom'
+import * as matiosourceforgeio from './matiosourceforgeio'
+import * as maturinrs from './maturinrs'
+import * as mavenapacheorg from './mavenapacheorg'
+import * as mcmc_jagssourceforgeio from './mcmc-jagssourceforgeio'
+import * as mercurerocks from './mercurerocks'
+import * as mercurial_scmorg from './mercurial-scmorg'
+import * as mergestatcom from './mergestatcom'
+import * as mesa3dorg from './mesa3dorg'
+import * as mesonbuildcom from './mesonbuildcom'
+import * as micro_editorgithubio from './micro-editorgithubio'
+import * as microbreworg from './microbreworg'
+import * as microcksio from './microcksio'
+import * as microsoftcom from './microsoftcom'
+import * as midnight_commanderorg from './midnight-commanderorg'
+import * as minio from './minio'
+import * as misejdxdev from './misejdxdev'
+import * as mitmproxyorg from './mitmproxyorg'
+import * as mkcertdev from './mkcertdev'
+import * as mkdocsorg from './mkdocsorg'
+import * as modalcom from './modalcom'
+import * as moderncorg from './moderncorg'
+import * as mongodbcom from './mongodbcom'
+import * as moonrepodev from './moonrepodev'
+import * as moshorg from './moshorg'
+import * as mozillaorg from './mozillaorg'
+import * as mpg123de from './mpg123de'
+import * as mpmathorg from './mpmathorg'
+import * as mpvio from './mpvio'
+import * as msgpackorg from './msgpackorg'
+import * as mujscom from './mujscom'
+import * as mun_langorg from './mun-langorg'
+import * as mupdfcom from './mupdfcom'
+import * as musepacknet from './musepacknet'
+import * as musllibcorg from './musllibcorg'
+import * as mvdancc from './mvdancc'
+import * as mypy_langorg from './mypy-langorg'
+import * as mysqlcom from './mysqlcom'
+import * as nano_editororg from './nano-editororg'
+import * as nasmus from './nasmus'
+import * as neovimio from './neovimio'
+import * as netflixcom from './netflixcom'
+import * as netliborg from './netliborg'
+import * as netpbmsourceforgenet from './netpbmsourceforgenet'
+import * as networkxorg from './networkxorg'
+import * as nghttp2org from './nghttp2org'
+import * as nginxorg from './nginxorg'
+import * as nikecom from './nikecom'
+import * as nim_langorg from './nim-langorg'
+import * as ninja_buildorg from './ninja-buildorg'
+import * as nixosorg from './nixosorg'
+import * as nixpackscom from './nixpackscom'
+import * as nlnetlabsnl from './nlnetlabsnl'
+import * as nmaporg from './nmaporg'
+import * as nodejsorg from './nodejsorg'
+import * as nomadprojectio from './nomadprojectio'
+import * as nongnuorg from './nongnuorg'
+import * as notrojgithubio from './notrojgithubio'
+import * as npmjscom from './npmjscom'
+import * as ntporg from './ntporg'
+import * as numbatdev from './numbatdev'
+import * as numpyorg from './numpyorg'
+import * as nushellsh from './nushellsh'
+import * as nxdev from './nxdev'
+import * as oauth2_proxygithubio from './oauth2-proxygithubio'
+import * as oberhumercom from './oberhumercom'
+import * as odigosio from './odigosio'
+import * as ohmyposhdev from './ohmyposhdev'
+import * as ollamaai from './ollamaai'
+import * as onefetchdev from './onefetchdev'
+import * as onsigithubio from './onsigithubio'
+import * as open_mpiorg from './open-mpiorg'
+import * as openaicom from './openaicom'
+import * as openapi_generatortech from './openapi-generatortech'
+import * as openbaoorg from './openbaoorg'
+import * as openblasnet from './openblasnet'
+import * as opencore_amrsourceforgeio from './opencore-amrsourceforgeio'
+import * as opendaporg from './opendaporg'
+import * as opendevorg from './opendevorg'
+import * as openexrcom from './openexrcom'
+import * as openinterpretercom from './openinterpretercom'
+import * as openjdkorg from './openjdkorg'
+import * as openjpegorg from './openjpegorg'
+import * as openldaporg from './openldaporg'
+import * as openmpllvmorg from './openmpllvmorg'
+import * as openpmixgithubio from './openpmixgithubio'
+import * as openpolicyagentorg from './openpolicyagentorg'
+import * as openprintinggithubio from './openprintinggithubio'
+import * as openrestyorg from './openrestyorg'
+import * as opensearchorg from './opensearchorg'
+import * as openshiftcom from './openshiftcom'
+import * as openslideorg from './openslideorg'
+import * as opensshcom from './opensshcom'
+import * as opensslorg from './opensslorg'
+import * as opentofuorg from './opentofuorg'
+import * as openvpnnet from './openvpnnet'
+import * as operatorframeworkio from './operatorframeworkio'
+import * as opus_codecorg from './opus-codecorg'
+import * as oraclecom from './oraclecom'
+import * as orasland from './orasland'
+import * as ordinalscom from './ordinalscom'
+import * as orhundev from './orhundev'
+import * as otssnipttcom from './otssnipttcom'
+import * as packerio from './packerio'
+import * as pagureio from './pagureio'
+import * as palletsprojectscom from './palletsprojectscom'
+import * as pandocorg from './pandocorg'
+import * as pantsbuildorg from './pantsbuildorg'
+import * as paulfitzgithubio from './paulfitzgithubio'
+import * as pcreorg from './pcreorg'
+import * as pcscliteapdufr from './pcscliteapdufr'
+import * as pdmfmingdev from './pdmfmingdev'
+import * as peopleengrtamuedu from './peopleengrtamuedu'
+import * as peopleredhatcom from './peopleredhatcom'
+import * as perlorg from './perlorg'
+import * as permitio from './permitio'
+import * as phpmyadminnet from './phpmyadminnet'
+import * as phpnet from './phpnet'
+import * as pimalayaorg from './pimalayaorg'
+import * as pinnipeddev from './pinnipeddev'
+import * as pipenvpypaio from './pipenvpypaio'
+import * as pippypaio from './pippypaio'
+import * as pixmanorg from './pixmanorg'
+import * as pkgxsh from './pkgxsh'
+import * as pkl_langorg from './pkl-langorg'
+import * as planetscalecom from './planetscalecom'
+import * as plantumlcom from './plantumlcom'
+import * as plasmasturmorg from './plasmasturmorg'
+import * as plocatesessenet from './plocatesessenet'
+import * as pluralithcom from './pluralithcom'
+import * as pngquantorg from './pngquantorg'
+import * as pnpmio from './pnpmio'
+import * as po4aorg from './po4aorg'
+import * as pocketbaseio from './pocketbaseio'
+import * as podmanio from './podmanio'
+import * as poktnetwork from './poktnetwork'
+import * as popplerfreedesktoporg from './popplerfreedesktoporg'
+import * as portaudiocom from './portaudiocom'
+import * as postgresqlorg from './postgresqlorg'
+import * as postgrestorg from './postgrestorg'
+import * as practical_schemenet from './practical-schemenet'
+import * as pre_commitcom from './pre-commitcom'
+import * as prefixdev from './prefixdev'
+import * as presslygithubio from './presslygithubio'
+import * as prettierio from './prettierio'
+import * as printfngithubio from './printfngithubio'
+import * as priverdev from './priverdev'
+import * as project_copaceticgithubio from './project-copaceticgithubio'
+import * as projectdiscoveryio from './projectdiscoveryio'
+import * as projenio from './projenio'
+import * as projorg from './projorg'
+import * as protobufdev from './protobufdev'
+import * as prql_langorg from './prql-langorg'
+import * as psycopgorg from './psycopgorg'
+import * as publichronopikde from './publichronopikde'
+import * as pugixmlorg from './pugixmlorg'
+import * as pulumiio from './pulumiio'
+import * as pwgensourceforgeio from './pwgensourceforgeio'
+import * as pwmtorg from './pwmtorg'
+import * as pygmentsorg from './pygmentsorg'
+import * as pyinvokeorg from './pyinvokeorg'
+import * as pypagithubio from './pypagithubio'
+import * as pypaio from './pypaio'
+import * as pytestorg from './pytestorg'
+import * as python_pilloworg from './python-pilloworg'
+import * as python_poetryorg from './python-poetryorg'
+import * as pythonorg from './pythonorg'
+import * as pyyamlorg from './pyyamlorg'
+import * as qemuorg from './qemuorg'
+import * as qhullorg from './qhullorg'
+import * as qpdfsourceforgeio from './qpdfsourceforgeio'
+import * as qtio from './qtio'
+import * as quarydev from './quarydev'
+import * as quickwitio from './quickwitio'
+import * as r_wosorg from './r-wosorg'
+import * as rabbitmqcom from './rabbitmqcom'
+import * as raccoinorg from './raccoinorg'
+import * as radicleorg from './radicleorg'
+import * as railwayapp from './railwayapp'
+import * as rapidjsonorg from './rapidjsonorg'
+import * as rarlabcom from './rarlabcom'
+import * as rbenvorg from './rbenvorg'
+import * as rcloneorg from './rcloneorg'
+import * as re2corg from './re2corg'
+import * as reacheremail from './reacheremail'
+import * as rebar3org from './rebar3org'
+import * as redisio from './redisio'
+import * as rendercom from './rendercom'
+import * as replibytecom from './replibytecom'
+import * as resticnet from './resticnet'
+import * as rhashsourceforgenet from './rhashsourceforgenet'
+import * as rigauxorg from './rigauxorg'
+import * as riverbankcomputingcom from './riverbankcomputingcom'
+import * as robotframeworkorg from './robotframeworkorg'
+import * as rockdabootgithubio from './rockdabootgithubio'
+import * as rometools from './rometools'
+import * as rpmorg from './rpmorg'
+import * as rsyncsambaorg from './rsyncsambaorg'
+import * as rtmpdumpmplayerhqhu from './rtmpdumpmplayerhqhu'
+import * as rtomaykogithubio from './rtomaykogithubio'
+import * as rubocoporg from './rubocoporg'
+import * as ruby_langorg from './ruby-langorg'
+import * as rubygemsorg from './rubygemsorg'
+import * as ruciocernch from './ruciocernch'
+import * as runatlantisio from './runatlantisio'
+import * as rust_langgithubio from './rust-langgithubio'
+import * as rust_langorg from './rust-langorg'
+import * as rust_scriptorg from './rust-scriptorg'
+import * as ryeastralsh from './ryeastralsh'
+import * as s3toolsorg from './s3toolsorg'
+import * as saerasoftcom from './saerasoftcom'
+import * as sagiegurarigithubio from './sagiegurarigithubio'
+import * as sass_langcom from './sass-langcom'
+import * as savannahnongnuorg from './savannahnongnuorg'
+import * as scala_langorg from './scala-langorg'
+import * as scala_sbtorg from './scala-sbtorg'
+import * as scalewaycom from './scalewaycom'
+import * as schollzcom from './schollzcom'
+import * as sconsorg from './sconsorg'
+import * as scryerpl from './scryerpl'
+import * as sdkmanio from './sdkmanio'
+import * as seaweedfscom from './seaweedfscom'
+import * as sentryio from './sentryio'
+import * as sfcgalorg from './sfcgalorg'
+import * as sfnet from './sfnet'
+import * as sftpgocom from './sftpgocom'
+import * as shellchecknet from './shellchecknet'
+import * as sigstoredev from './sigstoredev'
+import * as simplesystemsorg from './simplesystemsorg'
+import * as sing_boxapp from './sing-boxapp'
+import * as skaffolddev from './skaffolddev'
+import * as smartmontoolsorg from './smartmontoolsorg'
+import * as snapletdev from './snapletdev'
+import * as sniffnetnet from './sniffnetnet'
+import * as snykio from './snykio'
+import * as solanacom from './solanacom'
+import * as soldeerxyz from './soldeerxyz'
+import * as soliditylangorg from './soliditylangorg'
+import * as sonarqubeorg from './sonarqubeorg'
+import * as sourceforgenet from './sourceforgenet'
+import * as sourcewareorg from './sourcewareorg'
+import * as soxrsourceforgenet from './soxrsourceforgenet'
+import * as spacetimedbcom from './spacetimedbcom'
+import * as spawnlink from './spawnlink'
+import * as speexorg from './speexorg'
+import * as sphinx_docorg from './sphinx-docorg'
+import * as sqlcdev from './sqlcdev'
+import * as sqlfluffcom from './sqlfluffcom'
+import * as sqliteorg from './sqliteorg'
+import * as squawkhqcom from './squawkhqcom'
+import * as srtallianceorg from './srtallianceorg'
+import * as sshxio from './sshxio'
+import * as starshiprs from './starshiprs'
+import * as steampipeio from './steampipeio'
+import * as stedolangithubio from './stedolangithubio'
+import * as straceio from './straceio'
+import * as streamlinkgithubio from './streamlinkgithubio'
+import * as stripecom from './stripecom'
+import * as supabasecom from './supabasecom'
+import * as surrealdbcom from './surrealdbcom'
+import * as svenstarogithubio from './svenstarogithubio'
+import * as swaggerio from './swaggerio'
+import * as swiftorg from './swiftorg'
+import * as swigorg from './swigorg'
+import * as symfonycom from './symfonycom'
+import * as sympyorg from './sympyorg'
+import * as syncthingnet from './syncthingnet'
+import * as systemdio from './systemdio'
+import * as tagliborg from './tagliborg'
+import * as tailcallrun from './tailcallrun'
+import * as tailwindcsscom from './tailwindcsscom'
+import * as taku910githubio from './taku910githubio'
+import * as talosdev from './talosdev'
+import * as taplotamasfedev from './taplotamasfedev'
+import * as tartrun from './tartrun'
+import * as taskfiledev from './taskfiledev'
+import * as tcl_langorg from './tcl-langorg'
+import * as tcltk from './tcltk'
+import * as tcpdumporg from './tcpdumporg'
+import * as tcshorg from './tcshorg'
+import * as teaxyz from './teaxyz'
+import * as tectonic_typesettinggithubio from './tectonic-typesettinggithubio'
+import * as templguide from './templguide'
+import * as temporalio from './temporalio'
+import * as terraform_docsio from './terraform-docsio'
+import * as terraformio from './terraformio'
+import * as terragruntgruntworkio from './terragruntgruntworkio'
+import * as terratagio from './terratagio'
+import * as tesseract_ocrgithubio from './tesseract-ocrgithubio'
+import * as thekelleysorguk from './thekelleysorguk'
+import * as theoraorg from './theoraorg'
+import * as thoughtworksgithubio from './thoughtworksgithubio'
+import * as thrysoeedk from './thrysoeedk'
+import * as tidbytcom from './tidbytcom'
+import * as tiltdev from './tiltdev'
+import * as tinybirdco from './tinybirdco'
+import * as tinygoorg from './tinygoorg'
+import * as tldrsh from './tldrsh'
+import * as tlrdev from './tlrdev'
+import * as tmateio from './tmateio'
+import * as toxwiki from './toxwiki'
+import * as traefikio from './traefikio'
+import * as tree_sittergithubio from './tree-sittergithubio'
+import * as trippyclirs from './trippyclirs'
+import * as trufflesecuritycom from './trufflesecuritycom'
+import * as tsl0922githubio from './tsl0922githubio'
+import * as tuistio from './tuistio'
+import * as tukaaniorg from './tukaaniorg'
+import * as tursotech from './tursotech'
+import * as typescriptlangorg from './typescriptlangorg'
+import * as typstapp from './typstapp'
+import * as unboundnet from './unboundnet'
+import * as unicodeorg from './unicodeorg'
+import * as unidataucaredu from './unidataucaredu'
+import * as unixodbcorg from './unixodbcorg'
+import * as upliftcidev from './upliftcidev'
+import * as upxgithubio from './upxgithubio'
+import * as uriparsergithubio from './uriparsergithubio'
+import * as valesh from './valesh'
+import * as valkeyio from './valkeyio'
+import * as vamp_pluginsorg from './vamp-pluginsorg'
+import * as vannaai from './vannaai'
+import * as vapoursynthcom from './vapoursynthcom'
+import * as vaultprojectio from './vaultprojectio'
+import * as vclustercom from './vclustercom'
+import * as vektragithubio from './vektragithubio'
+import * as veleroio from './veleroio'
+import * as veracodecom from './veracodecom'
+import * as vercelcom from './vercelcom'
+import * as versitycom from './versitycom'
+import * as viaductai from './viaductai'
+import * as videolanorg from './videolanorg'
+import * as vimorg from './vimorg'
+import * as virtualenvpypaio from './virtualenvpypaio'
+import * as virtualsquareorg from './virtualsquareorg'
+import * as vitejsdev from './vitejsdev'
+import * as vlangio from './vlangio'
+import * as voltash from './voltash'
+import * as wailsio from './wailsio'
+import * as wait4xdev from './wait4xdev'
+import * as wasmerio from './wasmerio'
+import * as watchexecgithubio from './watchexecgithubio'
+import * as waterlanhomexs4allnl from './waterlanhomexs4allnl'
+import * as wavpackcom from './wavpackcom'
+import * as waylandfreedesktoporg from './waylandfreedesktoporg'
+import * as webmprojectorg from './webmprojectorg'
+import * as werfio from './werfio'
+import * as wezfurlongorg from './wezfurlongorg'
+import * as wilfredmeuk from './wilfredmeuk'
+import * as wimlibnet from './wimlibnet'
+import * as wiresharkorg from './wiresharkorg'
+import * as wixcom from './wixcom'
+import * as wkentarogithubio from './wkentarogithubio'
+import * as wpewebkitorg from './wpewebkitorg'
+import * as wundergraphcom from './wundergraphcom'
+import * as wxwidgetsorg from './wxwidgetsorg'
+import * as xcfiledev from './xcfiledev'
+import * as xercesapacheorg from './xercesapacheorg'
+import * as xiphorg from './xiphorg'
+import * as xkbcommonorg from './xkbcommonorg'
+import * as xorg from './xorg'
+import * as xplrdev from './xplrdev'
+import * as xpraorg from './xpraorg'
+import * as xtlsgithubio from './xtlsgithubio'
+import * as xvidcom from './xvidcom'
+import * as yadmio from './yadmio'
+import * as yarnpkgcom from './yarnpkgcom'
+import * as yasmtortallnet from './yasmtortallnet'
+import * as youtube_dlorg from './youtube-dlorg'
+import * as yt_dlporg from './yt-dlporg'
+import * as yuigithubio from './yuigithubio'
+import * as zarfdev from './zarfdev'
+import * as zeromqorg from './zeromqorg'
+import * as ziglangorg from './ziglangorg'
+import * as zlibnet from './zlibnet'
+import * as zrokio from './zrokio'
+import * as zshsourceforgeio from './zshsourceforgeio'
 
-// Export everything from fetch.ts
-export * from './fetch'
-
-// Export specific packages
-export * from './tailcallrun'
-export * from './lloydgithubio'
-export * from './aux4io'
-export * from './atlasgoio'
-export * from './langchaincom'
-export * from './condaorg'
-export * from './sourceforgenet'
-export * from './yarnpkgcom'
-export * from './blake2net'
-export * from './eyrieorg'
-export * from './getzolaorg'
-export * from './mpmathorg'
-export * from './rebar3org'
-export * from './open-mpiorg'
-export * from './gnupgorg'
-export * from './libziporg'
-export * from './jenkins-xio'
-export * from './dprintdev'
-export * from './helmsh'
-export * from './sonarqubeorg'
-export * from './planetscalecom'
-export * from './fairwindscom'
-export * from './ghostscriptcom'
-export * from './kubectxdev'
-export * from './thoughtworksgithubio'
-export * from './rtmpdumpmplayerhqhu'
-export * from './alembicsqlalchemyorg'
-export * from './openrestyorg'
-export * from './neovimio'
-export * from './operatorframeworkio'
-export * from './projectdiscoveryio'
-export * from './sfcgalorg'
-export * from './gnutlsorg'
-export * from './deepwisdomai'
-export * from './arduinogithubioarduinocli'
-export * from './cryptographyio'
-export * from './systemdio'
-export * from './expodev'
-export * from './dotenv-lintergithubio'
-export * from './fabianlindforsse'
-export * from './versitycom'
-export * from './streamlinkgithubio'
-export * from './llvmorg'
-export * from './nmaporg'
-export * from './fltkorg'
-export * from './kobuild'
-export * from './arduinogithubio'
-export * from './soliditylangorg'
-export * from './savannahnongnuorg'
-export * from './minio'
-export * from './rbenvorg'
-export * from './applecom'
-export * from './budimanjojogithubio'
-export * from './unboundnet'
-export * from './nixpackscom'
-export * from './pkl-langorg'
-export * from './pimalayaorg'
-export * from './projorg'
-export * from './jujuis'
-export * from './hdfgrouporg'
-export * from './invisible-islandnet'
-export * from './nano-editororg'
-export * from './keephqdev'
-export * from './aria2githubio'
-export * from './cscopesourceforgeio'
-export * from './logdydev'
-export * from './musllibcorg'
-export * from './cocogittoio'
-export * from './openaicom'
-export * from './musepacknet'
-export * from './apacheorgarrow'
-export * from './aquasecuritygithubiotfsec'
-export * from './git-lfscom'
-export * from './libuvorg'
-export * from './jlessio'
-export * from './openjpegorg'
-export * from './mvdancc'
-export * from './awsamazoncomsam'
-export * from './geoffgreerfm'
-export * from './opencore-amrsourceforgeio'
-export * from './bufbuild'
-export * from './indexsupplycom'
 export * from './abseilio'
-export * from './leptonicaorg'
-export * from './chezmoiio'
-export * from './caskreadthedocsio'
-export * from './mun-langorg'
-export * from './iscorg'
-export * from './rabbitmqcom'
-export * from './astralsh'
-export * from './elixir-langorg'
-export * from './diggerdev'
-export * from './sqlcdev'
-export * from './youtube-dlorg'
-export * from './bytereeforg'
-export * from './stedolangithubio'
-export * from './imagemagickorg'
-export * from './notrojgithubio'
-export * from './itstoolorg'
-export * from './speexorg'
-export * from './gitosgeoorg'
+export * from './acornio'
+export * from './acornioacorncli'
+export * from './agptco'
+export * from './agwaname'
+export * from './agwanamegitcrypt'
+export * from './akuityio'
+export * from './akuityiokargo'
+export * from './alacrittyorg'
+export * from './alembicsqlalchemyorg'
+export * from './alsa-projectorg'
+export * from './alsa-projectorgalsalib'
+export * from './amber-langcom'
+export * from './amprs'
+export * from './amrdevelopergithubio'
+export * from './amrdevelopergithubiogql'
+export * from './anchorecom'
+export * from './anchorecomsyft'
+export * from './androidcom'
+export * from './androidcomcmdlinetools'
+export * from './angulardev'
+export * from './ansiblecom'
+export * from './ansiblecomansiblelint'
+export * from './aomediagooglesourcecom'
+export * from './aomediagooglesourcecomaom'
+export * from './apacheorg'
 export * from './apacheorgapr'
-export * from './googlecom'
-export * from './spawnlink'
-export * from './wavpackcom'
-export * from './lavinmqcom'
-export * from './ipfstech'
-export * from './plasmasturmorg'
-export * from './hjsongithubio'
-export * from './dest-unreachorg'
-export * from './sass-langcom'
-export * from './getcomposerorg'
-export * from './julialangorg'
-export * from './erlangorg'
-export * from './portaudiocom'
-export * from './libpipelinegitlabio'
+export * from './apacheorgaprutil'
+export * from './apacheorgarrow'
+export * from './apacheorgavro'
 export * from './apacheorghttpd'
-export * from './mkcertdev'
-export * from './hadronsorg'
-export * from './voltash'
-export * from './mercurerocks'
-export * from './kubelinterio'
-export * from './scalewaycom'
+export * from './apacheorgjmeter'
+export * from './apacheorgsubversion'
+export * from './apacheorgthrift'
+export * from './apacheorgzookeeper'
+export * from './apktoolorg'
+export * from './apollographqlcom'
+export * from './apollographqlcomrover'
+export * from './appiumio'
+export * from './applecom'
+export * from './applecomremote_cmds'
+export * from './apptainerorg'
+export * from './aquasecuritygithubio'
+export * from './aquasecuritygithubiotfsec'
+export * from './aquasecuritygithubiotrivy'
+export * from './arduinogithubio'
+export * from './arduinogithubioarduinocli'
+export * from './argbashdev'
+export * from './argoprojgithubio'
+export * from './argoprojgithubiocd'
+export * from './argoprojgithubioworkflows'
+export * from './aria2githubio'
+export * from './arkadedev'
+export * from './asciidoctororg'
+export * from './asciinemaorg'
+export * from './asciinemaorgagg'
+export * from './aspellnet'
+export * from './assimporg'
+export * from './ast-grepgithubio'
+export * from './astralsh'
+export * from './astralshruff'
+export * from './astralshuv'
+export * from './atlasgoio'
+export * from './attrsorg'
+export * from './augeasnet'
+export * from './authzedcom'
+export * from './authzedcomspicedb'
+export * from './aux4io'
+export * from './awsamazoncom'
+export * from './awsamazoncomcdk'
+export * from './awsamazoncomcli'
+export * from './awsamazoncomsam'
+export * from './bashlydannybco'
+export * from './bcryptsourceforgenet'
 export * from './beyondgrepcom'
+export * from './biomejsdev'
+export * from './bitcoinorg'
+export * from './bittensorcom'
+export * from './bitwardencom'
+export * from './blake2net'
+export * from './blake2netlibb2'
+export * from './bloomreachcom'
+export * from './boostorg'
+export * from './borepub'
+export * from './breakfastquaycom'
+export * from './browser-usecom'
+export * from './brxken128githubio'
+export * from './brxken128githubiodexios'
+export * from './budimanjojogithubio'
+export * from './bufbuild'
+export * from './buildpacksio'
+export * from './bunsh'
+export * from './bytebasecom'
+export * from './bytereeforg'
+export * from './c-aresorg'
+export * from './caddyservercom'
+export * from './cairographicsorg'
+export * from './capstone-engineorg'
+export * from './carapacesh'
+export * from './caskreadthedocsio'
+export * from './catborg'
+export * from './ccachedev'
+export * from './cedarpolicycom'
+export * from './cedarpolicycomcli'
+export * from './cephcom'
+export * from './ceres-solverorg'
+export * from './certbotefforg'
+export * from './certifiio'
+export * from './cgalorg'
+export * from './changiedev'
+export * from './charmsh'
+export * from './checkovio'
+export * from './chezmoiio'
+export * from './chiarkgreenendorguk'
+export * from './chromedriverchromiumorg'
+export * from './ciliumio'
+export * from './circlecicom'
+export * from './ciscocom'
+export * from './classicyarnpkgcom'
+export * from './cligithubcom'
+export * from './clisporg'
+export * from './clog-toolgithubio'
+export * from './cloudflarecom'
+export * from './cloudfoundryorg'
+export * from './cloudnative-pgio'
+export * from './cmakeorg'
+export * from './cmockaorg'
+export * from './cnqueryio'
+export * from './cocoapodsorg'
+export * from './cocogittoio'
+export * from './codercom'
+export * from './codevideolanorg'
+export * from './cointopsh'
+export * from './condaorg'
+export * from './conftestdev'
+export * from './connectrpcorg'
+export * from './consulio'
+export * from './convcogithubio'
+export * from './corednsio'
+export * from './cpanminus'
+export * from './cratesio'
+export * from './crazymaxdev'
+export * from './creativeprojectsgithubio'
+export * from './cruftgithubio'
+export * from './crypto'
+export * from './cryptographyio'
+export * from './crystal-langorg'
+export * from './cscopesourceforgeio'
+export * from './csientuedutw'
+export * from './ctagsio'
+export * from './ctopsh'
+export * from './cuelangorg'
+export * from './curlieio'
+export * from './curlse'
+export * from './cyrusimaporg'
+export * from './cythonorg'
+export * from './d2langcom'
+export * from './daggerio'
+export * from './dartdev'
+export * from './darwinsyscom'
+export * from './databrickscom'
+export * from './daytonaio'
+export * from './dblabdanvergaracom'
+export * from './debianorg'
+export * from './deepwisdomai'
+export * from './denilsonsanombr'
+export * from './denoland'
+export * from './depotdev'
+export * from './dest-unreachorg'
+export * from './developer1passwordcom'
+export * from './developersyubicocom'
+export * from './devpodsh'
+export * from './devyorhelnl'
+export * from './dgraphio'
+export * from './dhall-langorg'
+export * from './dhruvkbdev'
+export * from './diggerdev'
+export * from './digiporg'
+export * from './digitaloceancom'
+export * from './direnvnet'
+export * from './dkrzde'
+export * from './dnslookupdog'
+export * from './docbookorg'
+export * from './dockercom'
+export * from './doctavecom'
+export * from './docutilsorg'
+export * from './dotenv-lintergithubio'
+export * from './dotenvxcom'
+export * from './dotnetmicrosoftcom'
+export * from './doxygennl'
+export * from './dozzledev'
+export * from './dprintdev'
+export * from './drifreedesktoporg'
+export * from './duckdborg'
+export * from './duktapeorg'
+export * from './dystroyorg'
+export * from './earthlydev'
+export * from './ebassigithubio'
+export * from './edgedbcom'
+export * from './eigentuxfamilyorg'
+export * from './eksctlio'
+export * from './elementsprojectorg'
+export * from './elfutilsorg'
+export * from './elixir-langorg'
 export * from './elizaosgithubio'
 export * from './elvsh'
-export * from './gaia-gisit'
-export * from './opensshcom'
-export * from './tesseract-ocrgithubio'
-export * from './mypy-langorg'
-export * from './sigstoredev'
-export * from './jetporchcom'
-export * from './teaxyz'
-export * from './aquasecuritygithubio'
-export * from './kerberosorg'
-export * from './gourceio'
-export * from './rarlabcom'
-export * from './seaweedfscom'
-export * from './k6io'
-export * from './hatchpypaio'
-export * from './taku910githubio'
-export * from './apacheorgaprutil'
-export * from './exiftoolorg'
-export * from './graphicsmagickorg'
-export * from './etcdio'
-export * from './zrokio'
-export * from './libgdgithubio'
-export * from './jugitfz-juelichde'
-export * from './rometools'
-export * from './vercelcom'
-export * from './pandocorg'
-export * from './glfworg'
-export * from './rtomaykogithubio'
-export * from './pantsbuildorg'
-export * from './akuityio'
-export * from './carapacesh'
-export * from './python-poetryorg'
-export * from './acornio'
-export * from './bittensorcom'
-export * from './ktlintgithubio'
-export * from './grafanacom'
-export * from './fuellabsgithubio'
-export * from './nasmus'
-export * from './nghttp2org'
-export * from './railwayapp'
-export * from './dhruvkbdev'
-export * from './k9scliio'
-export * from './boostorg'
-export * from './lftpyarru'
-export * from './tagliborg'
-export * from './mpvio'
-export * from './astralshuv'
-export * from './chiarkgreenendorguk'
-export * from './rsyncsambaorg'
-export * from './kubecmcloud'
-export * from './bcryptsourceforgenet'
-export * from './mavenapacheorg'
-export * from './micro-editorgithubio'
-export * from './harfbuzzorg'
-export * from './llmdatasetteio'
-export * from './xercesapacheorg'
-export * from './jedisct1githubio'
-export * from './asciinemaorgagg'
-export * from './imageflowio'
-export * from './flywaydborg'
-export * from './libexpatgithubio'
-export * from './kubernetesio'
-export * from './jenvbe'
-export * from './elementsprojectorg'
-export * from './infracostio'
-export * from './khronosorg'
-export * from './blake2netlibb2'
-export * from './idleberggithubio'
-export * from './libusbinfo'
-export * from './direnvnet'
-export * from './luarocksorg'
-export * from './daytonaio'
-export * from './fftworg'
-export * from './swaggerio'
-export * from './charmsh'
-export * from './apktoolorg'
-export * from './ollamaai'
-export * from './openblasnet'
-export * from './libraworg'
-export * from './unixodbcorg'
-export * from './tukaaniorg'
-export * from './poktnetwork'
-export * from './leonerdorguk'
-export * from './project-copaceticgithubio'
-export * from './openinterpretercom'
-export * from './tectonic-typesettinggithubio'
-export * from './pyinvokeorg'
-export * from './schollzcom'
-export * from './arkadedev'
-export * from './ctopsh'
-export * from './netliborg'
-export * from './xvidcom'
-export * from './fliptio'
-export * from './netpbmsourceforgenet'
-export * from './gphotoorg'
-export * from './jonasgithubio'
-export * from './jumppaddev'
-export * from './digitaloceancom'
-export * from './veleroio'
-export * from './leethomasongithubio'
-export * from './wezfurlongorg'
-export * from './localstackcloud'
-export * from './felixkratzgithubio'
-export * from './plantumlcom'
-export * from './postgresqlorg'
-export * from './ivarchcom'
-export * from './viaductai'
-export * from './xorg'
-export * from './s3toolsorg'
-export * from './popplerfreedesktoporg'
-export * from './appiumio'
-export * from './mesa3dorg'
-export * from './cnqueryio'
-export * from './wpewebkitorg'
-export * from './agwaname'
-export * from './goreleasercom'
-export * from './heasarcgsfcnasagov'
-export * from './modalcom'
-export * from './taskfiledev'
-export * from './peopleredhatcom'
-export * from './git-clifforg'
-export * from './apacheorgzookeeper'
-export * from './qhullorg'
-export * from './eigentuxfamilyorg'
-export * from './capstone-engineorg'
-export * from './awsamazoncomcdk'
-export * from './pcscliteapdufr'
-export * from './libsouporg'
-export * from './odigosio'
-export * from './soxrsourceforgenet'
-export * from './gtssourceforgenet'
-export * from './opus-codecorg'
-export * from './simplesystemsorg'
-export * from './breakfastquaycom'
-export * from './packerio'
-export * from './libislsourceforgeio'
-export * from './asciidoctororg'
-export * from './openbaoorg'
-export * from './cgalorg'
-export * from './libwebsocketsorg'
-export * from './aspellnet'
-export * from './nim-langorg'
-export * from './tcltk'
-export * from './moonrepodev'
-export * from './git-scmorg'
-export * from './openslideorg'
-export * from './shellchecknet'
-export * from './buildpacksio'
-export * from './clisporg'
-export * from './libspngorg'
-export * from './libeventorg'
-export * from './microcksio'
-export * from './quickwitio'
-export * from './htsliborg'
-export * from './awsamazoncomcli'
-export * from './tailwindcsscom'
-export * from './opentofuorg'
-export * from './po4aorg'
-export * from './solanacom'
-export * from './fluentciio'
-export * from './scala-langorg'
-export * from './libgeosorg'
-export * from './f1bonacc1githubio'
-export * from './agwanamegitcrypt'
-export * from './dystroyorg'
-export * from './ebassigithubio'
-export * from './libarchiveorg'
-export * from './getfoundrysh'
-export * from './ziglangorg'
-export * from './brxken128githubiodexios'
-export * from './awsamazoncom'
-export * from './npmjscom'
-export * from './duckdborg'
-export * from './postgrestorg'
-export * from './gnomeorg'
-export * from './tiltdev'
-export * from './liburcuorg'
-export * from './geuzorg'
-export * from './microbreworg'
-export * from './dockercom'
-export * from './crystal-langorg'
-export * from './acornioacorncli'
-export * from './yt-dlporg'
-export * from './starshiprs'
-export * from './digiporg'
-export * from './rapidjsonorg'
-export * from './terraform-docsio'
-export * from './clog-toolgithubio'
-export * from './rhashsourceforgenet'
-export * from './augeasnet'
-export * from './werfio'
-export * from './chromedriverchromiumorg'
-export * from './doctavecom'
-export * from './hasuraio'
-export * from './mkdocsorg'
-export * from './devpodsh'
-export * from './mpg123de'
-export * from './terragruntgruntworkio'
-export * from './gleamrun'
-export * from './saerasoftcom'
-export * from './jfrogcom'
-export * from './qtio'
-export * from './sftpgocom'
-export * from './logologicalorg'
-export * from './conftestdev'
-export * from './onefetchdev'
-export * from './opensearchorg'
-export * from './libsshorg'
-export * from './steampipeio'
-export * from './sconsorg'
-export * from './cedarpolicycomcli'
-export * from './sympyorg'
-export * from './classicyarnpkgcom'
-export * from './flyio'
-export * from './pnpmio'
-export * from './virtualenvpypaio'
-export * from './htopdev'
-export * from './graphqleditorcom'
-export * from './endoflifedate'
-export * from './nginxorg'
-export * from './pugixmlorg'
-export * from './dnslookupdog'
-export * from './dhall-langorg'
-export * from './onsigithubio'
-export * from './jpegorg'
-export * from './cligithubcom'
-export * from './mujscom'
-export * from './jedsoftorg'
-export * from './cephcom'
-export * from './jsonnetorg'
-export * from './apacheorg'
-export * from './connectrpcorg'
-export * from './granteddev'
-export * from './numbatdev'
-export * from './linux-pamorg'
-export * from './furyco'
-export * from './webmprojectorg'
-export * from './yadmio'
-export * from './eksctlio'
-export * from './pygmentsorg'
-export * from './mercurial-scmorg'
-export * from './lcdforg'
-export * from './wiresharkorg'
-export * from './raccoinorg'
-export * from './cpanminus'
-export * from './facebookcom'
-export * from './zshsourceforgeio'
-export * from './paulfitzgithubio'
-export * from './pkgxsh'
-export * from './kotlinlangorg'
-export * from './openapi-generatortech'
-export * from './git-quick-statssh'
-export * from './crypto'
-export * from './supabasecom'
-export * from './tldrsh'
-export * from './ipythonorg'
-export * from './tcshorg'
-export * from './vapoursynthcom'
-export * from './curlieio'
-export * from './borepub'
-export * from './rust-langorg'
-export * from './publichronopikde'
-export * from './pytestorg'
-export * from './libgit2org'
-export * from './skaffolddev'
-export * from './attrsorg'
-export * from './nomadprojectio'
-export * from './intelcom'
-export * from './nixosorg'
-export * from './libsodiumorg'
-export * from './tcl-langorg'
-export * from './vitejsdev'
-export * from './littlecmscom'
-export * from './wimlibnet'
-export * from './googlegithubio'
-export * from './matiosourceforgeio'
-export * from './trufflesecuritycom'
-export * from './hunspellgithubio'
-export * from './amrdevelopergithubiogql'
-export * from './fxwtf'
-export * from './pngquantorg'
-export * from './nushellsh'
 export * from './encoredev'
-export * from './palletsprojectscom'
-export * from './trippyclirs'
-export * from './python-pilloworg'
-export * from './kluctlio'
-export * from './zarfdev'
-export * from './gitlabcom'
-export * from './wailsio'
-export * from './rust-langgithubio'
-export * from './kafkaapacheorg'
-export * from './k3dio'
-export * from './maturinrs'
-export * from './libpngorg'
-export * from './qemuorg'
-export * from './jemallocnet'
-export * from './graphitesilorg'
-export * from './gnuplotinfo'
-export * from './androidcomcmdlinetools'
-export * from './cloudnative-pgio'
-export * from './psycopgorg'
-export * from './bashlydannybco'
-export * from './changiedev'
-export * from './ninja-buildorg'
-export * from './nlnetlabsnl'
-export * from './libssh2org'
-export * from './r-wosorg'
-export * from './rubygemsorg'
-export * from './jenkinsio'
-export * from './ntporg'
-export * from './printfngithubio'
-export * from './cythonorg'
-export * from './radicleorg'
-export * from './wasmerio'
-export * from './groongaorg'
-export * from './sphinx-docorg'
-export * from './ciliumio'
-export * from './consulio'
-export * from './fullstorycom'
-export * from './ruciocernch'
-export * from './typstapp'
-export * from './httpieio'
-export * from './otssnipttcom'
-export * from './dotnetmicrosoftcom'
-export * from './vimorg'
-export * from './libimobiledeviceorg'
-export * from './vamp-pluginsorg'
-export * from './waylandfreedesktoporg'
-export * from './apptainerorg'
-export * from './toxwiki'
-export * from './upxgithubio'
-export * from './orasland'
-export * from './presslygithubio'
-export * from './libvipsorg'
-export * from './edgedbcom'
-export * from './theoraorg'
-export * from './cmockaorg'
-export * from './fna-xnagithubio'
-export * from './xkbcommonorg'
-export * from './khanacademyorg'
-export * from './msgpackorg'
-export * from './frei0rdyneorg'
-export * from './ffmpegorg'
-export * from './midnight-commanderorg'
-export * from './ruby-langorg'
-export * from './sshxio'
-export * from './kubesharkco'
-export * from './getsopsio'
-export * from './lunarvimorg'
-export * from './protobufdev'
-export * from './pdmfmingdev'
-export * from './opendevorg'
-export * from './lamesourceforgeio'
-export * from './sourcewareorg'
-export * from './catborg'
-export * from './aomediagooglesourcecom'
-export * from './tcpdumporg'
-export * from './biomejsdev'
-export * from './c-aresorg'
-export * from './amrdevelopergithubio'
-export * from './valesh'
-export * from './dozzledev'
-export * from './pcreorg'
-export * from './jbig2deccom'
-export * from './rcloneorg'
-export * from './agptco'
-export * from './kernelorg'
-export * from './redisio'
-export * from './pippypaio'
-export * from './gtkorg'
-export * from './apacheorgjmeter'
-export * from './drifreedesktoporg'
-export * from './convcogithubio'
-export * from './openprintinggithubio'
-export * from './oauth2-proxygithubio'
-export * from './pre-commitcom'
-export * from './aomediagooglesourcecomaom'
-export * from './authzedcomspicedb'
-export * from './openvpnnet'
-export * from './quarydev'
-export * from './libjpeg-turboorg'
-export * from './codercom'
-export * from './opensslorg'
-export * from './yasmtortallnet'
-export * from './tinybirdco'
-export * from './macvimorg'
-export * from './pythonorg'
-export * from './databrickscom'
-export * from './apacheorgavro'
-export * from './nongnuorg'
-export * from './maaslalanicom'
-export * from './pulumiio'
-export * from './cmakeorg'
-export * from './sagiegurarigithubio'
-export * from './cruftgithubio'
-export * from './openpolicyagentorg'
-export * from './bitcoinorg'
-export * from './openmpllvmorg'
-export * from './tsl0922githubio'
-export * from './snapletdev'
-export * from './vclustercom'
-export * from './talosdev'
-export * from './xcfiledev'
-export * from './scryerpl'
-export * from './surrealdbcom'
-export * from './anchorecom'
-export * from './giflibsourceforgeio'
-export * from './netflixcom'
-export * from './nodejsorg'
-export * from './ibrcstu-bsde'
-export * from './krewsigsk8sio'
-export * from './valkeyio'
-export * from './pinnipeddev'
-export * from './markupsafepalletsprojectscom'
-export * from './luaorg'
-export * from './xpraorg'
-export * from './temporalio'
-export * from './ast-grepgithubio'
-export * from './openjdkorg'
-export * from './waterlanhomexs4allnl'
-export * from './priverdev'
-export * from './qpdfsourceforgeio'
-export * from './permitio'
-export * from './thekelleysorguk'
-export * from './liblqrwikidotcom'
-export * from './alsa-projectorgalsalib'
-export * from './swigorg'
-export * from './sdkmanio'
-export * from './zlibnet'
-export * from './spacetimedbcom'
-export * from './riverbankcomputingcom'
-export * from './unidataucaredu'
-export * from './rust-scriptorg'
-export * from './gomplateca'
-export * from './hugowang'
-export * from './perlorg'
-export * from './unicodeorg'
-export * from './gflagsgithubio'
-export * from './tuistio'
-export * from './resticnet'
-export * from './cedarpolicycom'
-export * from './amprs'
-export * from './ansiblecomansiblelint'
-export * from './aquasecuritygithubiotrivy'
-export * from './mergestatcom'
-export * from './squawkhqcom'
-export * from './argoprojgithubiocd'
-export * from './pwmtorg'
-export * from './ctagsio'
-export * from './laravelcom'
-export * from './haskellorg'
-export * from './cointopsh'
-export * from './kislyukgithubio'
-export * from './hboehminfo'
-export * from './irohcomputer'
-export * from './gohugoio'
-export * from './crazymaxdev'
-export * from './d2langcom'
-export * from './libtomnet'
-export * from './flitpypaio'
-export * from './mandocbsdlv'
-export * from './apacheorgsubversion'
-export * from './creativeprojectsgithubio'
-export * from './astralshruff'
-export * from './hashicorpcom'
-export * from './dblabdanvergaracom'
-export * from './elfutilsorg'
-export * from './getsynthcom'
-export * from './mupdfcom'
-export * from './cratesio'
-export * from './ijgorg'
-export * from './mariadbcom'
-export * from './kindsigsk8sio'
-export * from './symfonycom'
-export * from './tidbytcom'
-export * from './bitwardencom'
-export * from './gouberorg'
-export * from './apacheorgthrift'
-export * from './fukuchiorg'
-export * from './earthlydev'
-export * from './traefikio'
-export * from './mongodbcom'
-export * from './grpcio'
-export * from './linkerdio'
-export * from './sniffnetnet'
-export * from './argbashdev'
-export * from './zeromqorg'
-export * from './runatlantisio'
-export * from './docbookorg'
-export * from './fishshellcom'
-export * from './angulardev'
-export * from './assimporg'
-export * from './githubcom'
-export * from './yuigithubio'
-export * from './veracodecom'
-export * from './fluxcdio'
-export * from './developer1passwordcom'
-export * from './lucagrullacom'
-export * from './ohmyposhdev'
-export * from './pwgensourceforgeio'
-export * from './amber-langcom'
-export * from './prql-langorg'
-export * from './dotenvxcom'
-export * from './apollographqlcomrover'
-export * from './localaiio'
-export * from './jupyterorg'
-export * from './sentryio'
-export * from './fermyoncom'
-export * from './mozillaorg'
-export * from './gnuorg'
-export * from './mailpitaxllentorg'
-export * from './asciinemaorg'
-export * from './cyrusimaporg'
-export * from './anchorecomsyft'
-export * from './oberhumercom'
-export * from './dkrzde'
-export * from './koyebcom'
-export * from './ordinalscom'
-export * from './rendercom'
-export * from './wilfredmeuk'
-export * from './brxken128githubio'
-export * from './ansiblecom'
-export * from './leo-langorg'
-export * from './sqliteorg'
-export * from './groovy-langorg'
-export * from './moshorg'
-export * from './circlecicom'
-export * from './pixmanorg'
-export * from './videolanorg'
-export * from './podmanio'
-export * from './terraformio'
-export * from './argoprojgithubioworkflows'
-export * from './justsystems'
-export * from './projenio'
-export * from './gdalorg'
-export * from './libproxygithubio'
-export * from './xtlsgithubio'
-export * from './gradleorg'
-export * from './ladspaorg'
-export * from './terratagio'
-export * from './templguide'
+export * from './endoflifedate'
 export * from './epsilon-projectsourceforgeio'
-export * from './luajitorg'
-export * from './vannaai'
-export * from './daggerio'
-export * from './libcxxllvmorg'
-export * from './libexifgithubio'
-export * from './pluralithcom'
-export * from './applecomremote_cmds'
-export * from './jbangdev'
-export * from './ghostgumcomau'
-export * from './cloudflarecom'
-export * from './pypaio'
-export * from './phpnet'
-export * from './flutterdev'
-export * from './syncthingnet'
-export * from './glmg-trucnet'
-export * from './soldeerxyz'
-export * from './openldaporg'
-export * from './smartmontoolsorg'
-export * from './misejdxdev'
-export * from './graphvizorg'
-export * from './pocketbaseio'
-export * from './lz4org'
-export * from './androidcom'
-export * from './wixcom'
-export * from './pyyamlorg'
-export * from './wxwidgetsorg'
-export * from './ccachedev'
-export * from './cuelangorg'
-export * from './freetdsorg'
-export * from './srtallianceorg'
-export * from './docutilsorg'
-export * from './glewsourceforgeio'
-export * from './getclipboardapp'
-export * from './devyorhelnl'
-export * from './dartdev'
-export * from './straceio'
-export * from './info-ziporg'
-export * from './git-towncom'
-export * from './man-dbgitlabio'
-export * from './watchexecgithubio'
-export * from './hetznercom'
-export * from './huggingfaceco'
-export * from './practical-schemenet'
-export * from './rpmorg'
-export * from './bytebasecom'
-export * from './opendaporg'
-export * from './bunsh'
-export * from './moderncorg'
-export * from './debianorg'
-export * from './virtualsquareorg'
-export * from './taplotamasfedev'
-export * from './wkentarogithubio'
-export * from './gqlgencom'
-export * from './upliftcidev'
-export * from './hurldev'
-export * from './fmtdev'
-export * from './mysqlcom'
-export * from './peopleengrtamuedu'
-export * from './pypagithubio'
-export * from './alacrittyorg'
-export * from './openpmixgithubio'
-export * from './plocatesessenet'
-export * from './akuityiokargo'
-export * from './herokucom'
-export * from './certifiio'
-export * from './re2corg'
-export * from './scala-sbtorg'
-export * from './xplrdev'
-export * from './tursotech'
-export * from './lima-vmio'
-export * from './sqlfluffcom'
-export * from './rubocoporg'
-export * from './mitmproxyorg'
-export * from './prettierio'
-export * from './darwinsyscom'
-export * from './sing-boxapp'
-export * from './ciscocom'
-export * from './checkovio'
-export * from './wundergraphcom'
-export * from './glarosdtcumnedu'
-export * from './corednsio'
-export * from './openexrcom'
-export * from './vlangio'
-export * from './browser-usecom'
-export * from './codevideolanorg'
-export * from './cairographicsorg'
-export * from './pipenvpypaio'
-export * from './microsoftcom'
-export * from './ryeastralsh'
-export * from './kubebuilderio'
-export * from './kagglecom'
-export * from './freeglutsourceforgeio'
-export * from './networkxorg'
-export * from './helix-editorcom'
-export * from './xiphorg'
-export * from './lxmlde'
-export * from './hardingmotdca'
-export * from './rockdabootgithubio'
-export * from './uriparsergithubio'
-export * from './csientuedutw'
-export * from './duktapeorg'
-export * from './pagureio'
-export * from './gittoztnet'
-export * from './certbotefforg'
-export * from './bloomreachcom'
-export * from './thrysoeedk'
-export * from './kornelski'
-export * from './mesonbuildcom'
+export * from './erlangorg'
+export * from './etcdio'
+export * from './exiftoolorg'
+export * from './expodev'
+export * from './eyrieorg'
+export * from './f1bonacc1githubio'
+export * from './fabianlindforsse'
+export * from './facebookcom'
+export * from './fairwindscom'
 export * from './fastlanetools'
-export * from './authzedcom'
-export * from './numpyorg'
-export * from './orhundev'
-export * from './vektragithubio'
-export * from './oraclecom'
-export * from './doxygennl'
-export * from './snykio'
-export * from './stripecom'
-export * from './cocoapodsorg'
-export * from './ceres-solverorg'
-export * from './wait4xdev'
-export * from './gitleaksio'
-export * from './liteclicom'
-export * from './cloudfoundryorg'
-export * from './sfnet'
-export * from './prefixdev'
-export * from './argoprojgithubio'
-export * from './curlse'
-export * from './tartrun'
-export * from './lycheeclirs'
+export * from './felixkratzgithubio'
+export * from './fermyoncom'
+export * from './ffmpegorg'
+export * from './fftworg'
 export * from './filippoio'
-export * from './denoland'
+export * from './fishshellcom'
+export * from './fliptio'
+export * from './flitpypaio'
+export * from './fltkorg'
+export * from './fluentciio'
+export * from './flutterdev'
+export * from './fluxcdio'
+export * from './flyio'
+export * from './flywaydborg'
+export * from './fmtdev'
+export * from './fna-xnagithubio'
 export * from './freedesktoporg'
-export * from './nxdev'
-export * from './svenstarogithubio'
-export * from './rigauxorg'
-export * from './typescriptlangorg'
-export * from './istioio'
-export * from './materializecom'
-export * from './html-tidyorg'
-export * from './openshiftcom'
-export * from './tree-sittergithubio'
-export * from './caddyservercom'
-export * from './libsdlorg'
-export * from './godev'
-export * from './kptdev'
-export * from './replibytecom'
-export * from './golangci-lintrun'
-export * from './apollographqlcom'
-export * from './tlrdev'
-export * from './vaultprojectio'
-export * from './nikecom'
-export * from './tinygoorg'
-export * from './phpmyadminnet'
-export * from './developersyubicocom'
-export * from './gstreamerfreedesktoporg'
-export * from './robotframeworkorg'
-export * from './alsa-projectorg'
-export * from './reacheremail'
-export * from './dgraphio'
-export * from './denilsonsanombr'
-export * from './swiftorg'
-export * from './makotemplatesorg'
-export * from './mcmc-jagssourceforgeio'
+export * from './freeglutsourceforgeio'
+export * from './freetdsorg'
 export * from './freetypeorg'
+export * from './frei0rdyneorg'
+export * from './fuellabsgithubio'
+export * from './fukuchiorg'
+export * from './fullstorycom'
+export * from './furyco'
+export * from './fxwtf'
+export * from './gaia-gisit'
+export * from './gdalorg'
+export * from './geoffgreerfm'
+export * from './getclipboardapp'
+export * from './getcomposerorg'
+export * from './getfoundrysh'
+export * from './getsopsio'
+export * from './getsynthcom'
+export * from './getzolaorg'
+export * from './geuzorg'
+export * from './gflagsgithubio'
+export * from './ghostgumcomau'
+export * from './ghostscriptcom'
+export * from './giflibsourceforgeio'
+export * from './git-clifforg'
+export * from './git-lfscom'
+export * from './git-quick-statssh'
+export * from './git-scmorg'
+export * from './git-towncom'
+export * from './githubcom'
+export * from './gitlabcom'
+export * from './gitleaksio'
+export * from './gitosgeoorg'
+export * from './gittoztnet'
+export * from './glarosdtcumnedu'
+export * from './gleamrun'
+export * from './glewsourceforgeio'
+export * from './glfworg'
+export * from './glmg-trucnet'
+export * from './gnomeorg'
+export * from './gnuorg'
+export * from './gnupgorg'
+export * from './gnuplotinfo'
+export * from './gnutlsorg'
+export * from './godev'
+export * from './gohugoio'
+export * from './golangci-lintrun'
+export * from './gomplateca'
+export * from './googlecom'
+export * from './googlegithubio'
+export * from './goreleasercom'
+export * from './gouberorg'
+export * from './gourceio'
+export * from './gphotoorg'
+export * from './gqlgencom'
+export * from './gradleorg'
+export * from './grafanacom'
+export * from './granteddev'
+export * from './graphicsmagickorg'
+export * from './graphitesilorg'
+export * from './graphqleditorcom'
+export * from './graphvizorg'
+export * from './groongaorg'
+export * from './groovy-langorg'
+export * from './grpcio'
+export * from './gstreamerfreedesktoporg'
+export * from './gtkorg'
+export * from './gtssourceforgenet'
+export * from './hadronsorg'
+export * from './hardingmotdca'
+export * from './harfbuzzorg'
+export * from './hashicorpcom'
+export * from './haskellorg'
+export * from './hasuraio'
+export * from './hatchpypaio'
+export * from './hboehminfo'
+export * from './hdfgrouporg'
+export * from './heasarcgsfcnasagov'
+export * from './helix-editorcom'
+export * from './helmsh'
+export * from './herokucom'
+export * from './hetznercom'
+export * from './hjsongithubio'
+export * from './html-tidyorg'
+export * from './htopdev'
+export * from './htsliborg'
+export * from './httpieio'
+export * from './huggingfaceco'
+export * from './hugowang'
+export * from './hunspellgithubio'
+export * from './hurldev'
+export * from './ibrcstu-bsde'
+export * from './idleberggithubio'
+export * from './ijgorg'
+export * from './imageflowio'
+export * from './imagemagickorg'
+export * from './indexsupplycom'
+export * from './info-ziporg'
+export * from './infracostio'
+export * from './intelcom'
+export * from './invisible-islandnet'
+export * from './ipfstech'
+export * from './ipythonorg'
+export * from './irohcomputer'
+export * from './iscorg'
+export * from './istioio'
+export * from './itstoolorg'
+export * from './ivarchcom'
+export * from './jbangdev'
+export * from './jbig2deccom'
+export * from './jedisct1githubio'
+export * from './jedsoftorg'
+export * from './jemallocnet'
+export * from './jenkins-xio'
+export * from './jenkinsio'
+export * from './jenvbe'
+export * from './jetporchcom'
+export * from './jfrogcom'
+export * from './jlessio'
+export * from './jonasgithubio'
+export * from './jpegorg'
+export * from './jsonnetorg'
+export * from './jugitfz-juelichde'
+export * from './jujuis'
+export * from './julialangorg'
+export * from './jumppaddev'
+export * from './jupyterorg'
+export * from './justsystems'
+export * from './k3dio'
+export * from './k6io'
+export * from './k9scliio'
+export * from './kafkaapacheorg'
+export * from './kagglecom'
+export * from './keephqdev'
+export * from './kerberosorg'
+export * from './kernelorg'
+export * from './khanacademyorg'
+export * from './khronosorg'
+export * from './kindsigsk8sio'
+export * from './kislyukgithubio'
+export * from './kluctlio'
+export * from './kobuild'
+export * from './kornelski'
+export * from './kotlinlangorg'
+export * from './koyebcom'
+export * from './kptdev'
+export * from './krewsigsk8sio'
+export * from './ktlintgithubio'
+export * from './kubebuilderio'
+export * from './kubecmcloud'
+export * from './kubectxdev'
+export * from './kubelinterio'
+export * from './kubernetesio'
+export * from './kubesharkco'
+export * from './ladspaorg'
+export * from './lamesourceforgeio'
+export * from './langchaincom'
+export * from './laravelcom'
+export * from './lavinmqcom'
+export * from './lcdforg'
+export * from './leethomasongithubio'
+export * from './leo-langorg'
+export * from './leonerdorguk'
+export * from './leptonicaorg'
+export * from './lftpyarru'
+export * from './libarchiveorg'
+export * from './libcxxllvmorg'
+export * from './libeventorg'
+export * from './libexifgithubio'
+export * from './libexpatgithubio'
+export * from './libgdgithubio'
+export * from './libgeosorg'
+export * from './libgit2org'
+export * from './libimobiledeviceorg'
+export * from './libislsourceforgeio'
+export * from './libjpeg-turboorg'
+export * from './liblqrwikidotcom'
+export * from './libpipelinegitlabio'
+export * from './libpngorg'
+export * from './libproxygithubio'
+export * from './libraworg'
+export * from './libsdlorg'
+export * from './libsodiumorg'
+export * from './libsouporg'
+export * from './libspngorg'
+export * from './libssh2org'
+export * from './libsshorg'
+export * from './libtomnet'
+export * from './liburcuorg'
+export * from './libusbinfo'
+export * from './libuvorg'
+export * from './libvipsorg'
+export * from './libwebsocketsorg'
+export * from './libziporg'
+export * from './lima-vmio'
+export * from './linkerdio'
+export * from './linux-pamorg'
+export * from './liteclicom'
+export * from './littlecmscom'
+export * from './llmdatasetteio'
+export * from './lloydgithubio'
+export * from './llvmorg'
+export * from './localaiio'
+export * from './localstackcloud'
+export * from './logdydev'
+export * from './logologicalorg'
+export * from './luajitorg'
+export * from './luaorg'
+export * from './luarocksorg'
+export * from './lucagrullacom'
+export * from './lunarvimorg'
+export * from './lxmlde'
+export * from './lycheeclirs'
+export * from './lz4org'
+export * from './maaslalanicom'
+export * from './macvimorg'
+export * from './mailpitaxllentorg'
+export * from './makotemplatesorg'
+export * from './man-dbgitlabio'
+export * from './mandocbsdlv'
+export * from './mariadbcom'
+export * from './markupsafepalletsprojectscom'
+export * from './materializecom'
+export * from './matiosourceforgeio'
+export * from './maturinrs'
+export * from './mavenapacheorg'
+export * from './mcmc-jagssourceforgeio'
+export * from './mercurerocks'
+export * from './mercurial-scmorg'
+export * from './mergestatcom'
+export * from './mesa3dorg'
+export * from './mesonbuildcom'
+export * from './micro-editorgithubio'
+export * from './microbreworg'
+export * from './microcksio'
+export * from './microsoftcom'
+export * from './midnight-commanderorg'
+export * from './minio'
+export * from './misejdxdev'
+export * from './mitmproxyorg'
+export * from './mkcertdev'
+export * from './mkdocsorg'
+export * from './modalcom'
+export * from './moderncorg'
+export * from './mongodbcom'
+export * from './moonrepodev'
+export * from './moshorg'
+export * from './mozillaorg'
+export * from './mpg123de'
+export * from './mpmathorg'
+export * from './mpvio'
+export * from './msgpackorg'
+export * from './mujscom'
+export * from './mun-langorg'
+export * from './mupdfcom'
+export * from './musepacknet'
+export * from './musllibcorg'
+export * from './mvdancc'
+export * from './mypy-langorg'
+export * from './mysqlcom'
+export * from './nano-editororg'
+export * from './nasmus'
+export * from './neovimio'
+export * from './netflixcom'
+export * from './netliborg'
+export * from './netpbmsourceforgenet'
+export * from './networkxorg'
+export * from './nghttp2org'
+export * from './nginxorg'
+export * from './nikecom'
+export * from './nim-langorg'
+export * from './ninja-buildorg'
+export * from './nixosorg'
+export * from './nixpackscom'
+export * from './nlnetlabsnl'
+export * from './nmaporg'
+export * from './nodejsorg'
+export * from './nomadprojectio'
+export * from './nongnuorg'
+export * from './notrojgithubio'
+export * from './npmjscom'
+export * from './ntporg'
+export * from './numbatdev'
+export * from './numpyorg'
+export * from './nushellsh'
+export * from './nxdev'
+export * from './oauth2-proxygithubio'
+export * from './oberhumercom'
+export * from './odigosio'
+export * from './ohmyposhdev'
+export * from './ollamaai'
+export * from './onefetchdev'
+export * from './onsigithubio'
+export * from './open-mpiorg'
+export * from './openaicom'
+export * from './openapi-generatortech'
+export * from './openbaoorg'
+export * from './openblasnet'
+export * from './opencore-amrsourceforgeio'
+export * from './opendaporg'
+export * from './opendevorg'
+export * from './openexrcom'
+export * from './openinterpretercom'
+export * from './openjdkorg'
+export * from './openjpegorg'
+export * from './openldaporg'
+export * from './openmpllvmorg'
+export * from './openpmixgithubio'
+export * from './openpolicyagentorg'
+export * from './openprintinggithubio'
+export * from './openrestyorg'
+export * from './opensearchorg'
+export * from './openshiftcom'
+export * from './openslideorg'
+export * from './opensshcom'
+export * from './opensslorg'
+export * from './opentofuorg'
+export * from './openvpnnet'
+export * from './operatorframeworkio'
+export * from './opus-codecorg'
+export * from './oraclecom'
+export * from './orasland'
+export * from './ordinalscom'
+export * from './orhundev'
+export * from './otssnipttcom'
+export * from './packerio'
+export * from './pagureio'
+export * from './palletsprojectscom'
+export * from './pandocorg'
+export * from './pantsbuildorg'
+export * from './paulfitzgithubio'
+export * from './pcreorg'
+export * from './pcscliteapdufr'
+export * from './pdmfmingdev'
+export * from './peopleengrtamuedu'
+export * from './peopleredhatcom'
+export * from './perlorg'
+export * from './permitio'
+export * from './phpmyadminnet'
+export * from './phpnet'
+export * from './pimalayaorg'
+export * from './pinnipeddev'
+export * from './pipenvpypaio'
+export * from './pippypaio'
+export * from './pixmanorg'
+export * from './pkgxsh'
+export * from './pkl-langorg'
+export * from './planetscalecom'
+export * from './plantumlcom'
+export * from './plasmasturmorg'
+export * from './plocatesessenet'
+export * from './pluralithcom'
+export * from './pngquantorg'
+export * from './pnpmio'
+export * from './po4aorg'
+export * from './pocketbaseio'
+export * from './podmanio'
+export * from './poktnetwork'
+export * from './popplerfreedesktoporg'
+export * from './portaudiocom'
+export * from './postgresqlorg'
+export * from './postgrestorg'
+export * from './practical-schemenet'
+export * from './pre-commitcom'
+export * from './prefixdev'
+export * from './presslygithubio'
+export * from './prettierio'
+export * from './printfngithubio'
+export * from './priverdev'
+export * from './project-copaceticgithubio'
+export * from './projectdiscoveryio'
+export * from './projenio'
+export * from './projorg'
+export * from './protobufdev'
+export * from './prql-langorg'
+export * from './psycopgorg'
+export * from './publichronopikde'
+export * from './pugixmlorg'
+export * from './pulumiio'
+export * from './pwgensourceforgeio'
+export * from './pwmtorg'
+export * from './pygmentsorg'
+export * from './pyinvokeorg'
+export * from './pypagithubio'
+export * from './pypaio'
+export * from './pytestorg'
+export * from './python-pilloworg'
+export * from './python-poetryorg'
+export * from './pythonorg'
+export * from './pyyamlorg'
+export * from './qemuorg'
+export * from './qhullorg'
+export * from './qpdfsourceforgeio'
+export * from './qtio'
+export * from './quarydev'
+export * from './quickwitio'
+export * from './r-wosorg'
+export * from './rabbitmqcom'
+export * from './raccoinorg'
+export * from './radicleorg'
+export * from './railwayapp'
+export * from './rapidjsonorg'
+export * from './rarlabcom'
+export * from './rbenvorg'
+export * from './rcloneorg'
+export * from './re2corg'
+export * from './reacheremail'
+export * from './rebar3org'
+export * from './redisio'
+export * from './rendercom'
+export * from './replibytecom'
+export * from './resticnet'
+export * from './rhashsourceforgenet'
+export * from './rigauxorg'
+export * from './riverbankcomputingcom'
+export * from './robotframeworkorg'
+export * from './rockdabootgithubio'
+export * from './rometools'
+export * from './rpmorg'
+export * from './rsyncsambaorg'
+export * from './rtmpdumpmplayerhqhu'
+export * from './rtomaykogithubio'
+export * from './rubocoporg'
+export * from './ruby-langorg'
+export * from './rubygemsorg'
+export * from './ruciocernch'
+export * from './runatlantisio'
+export * from './rust-langgithubio'
+export * from './rust-langorg'
+export * from './rust-scriptorg'
+export * from './ryeastralsh'
+export * from './s3toolsorg'
+export * from './saerasoftcom'
+export * from './sagiegurarigithubio'
+export * from './sass-langcom'
+export * from './savannahnongnuorg'
+export * from './scala-langorg'
+export * from './scala-sbtorg'
+export * from './scalewaycom'
+export * from './schollzcom'
+export * from './sconsorg'
+export * from './scryerpl'
+export * from './sdkmanio'
+export * from './seaweedfscom'
+export * from './sentryio'
+export * from './sfcgalorg'
+export * from './sfnet'
+export * from './sftpgocom'
+export * from './shellchecknet'
+export * from './sigstoredev'
+export * from './simplesystemsorg'
+export * from './sing-boxapp'
+export * from './skaffolddev'
+export * from './smartmontoolsorg'
+export * from './snapletdev'
+export * from './sniffnetnet'
+export * from './snykio'
+export * from './solanacom'
+export * from './soldeerxyz'
+export * from './soliditylangorg'
+export * from './sonarqubeorg'
+export * from './sourceforgenet'
+export * from './sourcewareorg'
+export * from './soxrsourceforgenet'
+export * from './spacetimedbcom'
+export * from './spawnlink'
+export * from './speexorg'
+export * from './sphinx-docorg'
+export * from './sqlcdev'
+export * from './sqlfluffcom'
+export * from './sqliteorg'
+export * from './squawkhqcom'
+export * from './srtallianceorg'
+export * from './sshxio'
+export * from './starshiprs'
+export * from './steampipeio'
+export * from './stedolangithubio'
+export * from './straceio'
+export * from './streamlinkgithubio'
+export * from './stripecom'
+export * from './supabasecom'
+export * from './surrealdbcom'
+export * from './svenstarogithubio'
+export * from './swaggerio'
+export * from './swiftorg'
+export * from './swigorg'
+export * from './symfonycom'
+export * from './sympyorg'
+export * from './syncthingnet'
+export * from './systemdio'
+export * from './tagliborg'
+export * from './tailcallrun'
+export * from './tailwindcsscom'
+export * from './taku910githubio'
+export * from './talosdev'
+export * from './taplotamasfedev'
+export * from './tartrun'
+export * from './taskfiledev'
+export * from './tcl-langorg'
+export * from './tcltk'
+export * from './tcpdumporg'
+export * from './tcshorg'
+export * from './teaxyz'
+export * from './tectonic-typesettinggithubio'
+export * from './templguide'
+export * from './temporalio'
+export * from './terraform-docsio'
+export * from './terraformio'
+export * from './terragruntgruntworkio'
+export * from './terratagio'
+export * from './tesseract-ocrgithubio'
+export * from './thekelleysorguk'
+export * from './theoraorg'
+export * from './thoughtworksgithubio'
+export * from './thrysoeedk'
+export * from './tidbytcom'
+export * from './tiltdev'
+export * from './tinybirdco'
+export * from './tinygoorg'
+export * from './tldrsh'
+export * from './tlrdev'
 export * from './tmateio'
-export * from './depotdev'
+export * from './toxwiki'
+export * from './traefikio'
+export * from './tree-sittergithubio'
+export * from './trippyclirs'
+export * from './trufflesecuritycom'
+export * from './tsl0922githubio'
+export * from './tuistio'
+export * from './tukaaniorg'
+export * from './tursotech'
+export * from './typescriptlangorg'
+export * from './typstapp'
+export * from './unboundnet'
+export * from './unicodeorg'
+export * from './unidataucaredu'
+export * from './unixodbcorg'
+export * from './upliftcidev'
+export * from './upxgithubio'
+export * from './uriparsergithubio'
+export * from './valesh'
+export * from './valkeyio'
+export * from './vamp-pluginsorg'
+export * from './vannaai'
+export * from './vapoursynthcom'
+export * from './vaultprojectio'
+export * from './vclustercom'
+export * from './vektragithubio'
+export * from './veleroio'
+export * from './veracodecom'
+export * from './vercelcom'
+export * from './versitycom'
+export * from './viaductai'
+export * from './videolanorg'
+export * from './vimorg'
+export * from './virtualenvpypaio'
+export * from './virtualsquareorg'
+export * from './vitejsdev'
+export * from './vlangio'
+export * from './voltash'
+export * from './wailsio'
+export * from './wait4xdev'
+export * from './wasmerio'
+export * from './watchexecgithubio'
+export * from './waterlanhomexs4allnl'
+export * from './wavpackcom'
+export * from './waylandfreedesktoporg'
+export * from './webmprojectorg'
+export * from './werfio'
+export * from './wezfurlongorg'
+export * from './wilfredmeuk'
+export * from './wimlibnet'
+export * from './wiresharkorg'
+export * from './wixcom'
+export * from './wkentarogithubio'
+export * from './wpewebkitorg'
+export * from './wundergraphcom'
+export * from './wxwidgetsorg'
+export * from './xcfiledev'
+export * from './xercesapacheorg'
+export * from './xiphorg'
+export * from './xkbcommonorg'
+export * from './xorg'
+export * from './xplrdev'
+export * from './xpraorg'
+export * from './xtlsgithubio'
+export * from './xvidcom'
+export * from './yadmio'
+export * from './yarnpkgcom'
+export * from './yasmtortallnet'
+export * from './youtube-dlorg'
+export * from './yt-dlporg'
+export * from './yuigithubio'
+export * from './zarfdev'
+export * from './zeromqorg'
+export * from './ziglangorg'
+export * from './zlibnet'
+export * from './zrokio'
+export * from './zshsourceforgeio'
 
-// Add package mappings to pantry
-// Add direct domain mappings
-pantry['tailcallrun'] = tailcallrunPackage
-pantry['lloydgithub.io'] = lloydgithubioPackage
-pantry['aux4.io'] = aux4ioPackage
-pantry['atlasgo.io'] = atlasgoioPackage
-pantry['langchain.com'] = langchaincomPackage
-pantry['conda.org'] = condaorgPackage
-pantry['sourceforge.net'] = sourceforgenetPackage
-pantry['yarnpkg.com'] = yarnpkgcomPackage
-pantry['blake2.net'] = blake2netPackage
-pantry['eyrie.org'] = eyrieorgPackage
-pantry['getzola.org'] = getzolaorgPackage
-pantry['mpmath.org'] = mpmathorgPackage
-pantry['rebar3.org'] = rebar3orgPackage
-pantry['open/mpiorg'] = open-mpiorgPackage
-pantry['gnupg.org'] = gnupgorgPackage
-pantry['libzip.org'] = libziporgPackage
-pantry['jenkins/xio'] = jenkins-xioPackage
-pantry['dprint.dev'] = dprintdevPackage
-pantry['helm.sh'] = helmshPackage
-pantry['sonarqube.org'] = sonarqubeorgPackage
-pantry['planetscale.com'] = planetscalecomPackage
-pantry['fairwinds.com'] = fairwindscomPackage
-pantry['ghostscript.com'] = ghostscriptcomPackage
-pantry['kubectx.dev'] = kubectxdevPackage
-pantry['thoughtworksgithub.io'] = thoughtworksgithubioPackage
-pantry['rtmpdumpmplayerhqhu'] = rtmpdumpmplayerhqhuPackage
-pantry['alembicsqlalchemy.org'] = alembicsqlalchemyorgPackage
-pantry['openresty.org'] = openrestyorgPackage
-pantry['neovim.io'] = neovimioPackage
-pantry['operatorframework.io'] = operatorframeworkioPackage
-pantry['projectdiscovery.io'] = projectdiscoveryioPackage
-pantry['sfcgal.org'] = sfcgalorgPackage
-pantry['gnutls.org'] = gnutlsorgPackage
-pantry['deepwisdomai'] = deepwisdomaiPackage
-pantry['arduinogithubioarduinocli'] = arduinogithubioarduinocliPackage
-pantry['cryptography.io'] = cryptographyioPackage
-pantry['systemd.io'] = systemdioPackage
-pantry['expo.dev'] = expodevPackage
-pantry['dotenv/lintergithubio'] = dotenv-lintergithubioPackage
-pantry['fabianlindforsse'] = fabianlindforssePackage
-pantry['versity.com'] = versitycomPackage
-pantry['streamlinkgithub.io'] = streamlinkgithubioPackage
-pantry['llvm.org'] = llvmorgPackage
-pantry['nmap.org'] = nmaporgPackage
-pantry['fltk.org'] = fltkorgPackage
-pantry['kobuild'] = kobuildPackage
-pantry['arduinogithub.io'] = arduinogithubioPackage
-pantry['soliditylang.org'] = soliditylangorgPackage
-pantry['savannahnongnu.org'] = savannahnongnuorgPackage
-pantry['min.io'] = minioPackage
-pantry['rbenv.org'] = rbenvorgPackage
-pantry['apple.com'] = applecomPackage
-pantry['budimanjojogithub.io'] = budimanjojogithubioPackage
-pantry['unbound.net'] = unboundnetPackage
-pantry['nixpacks.com'] = nixpackscomPackage
-pantry['pkl/langorg'] = pkl-langorgPackage
-pantry['pimalaya.org'] = pimalayaorgPackage
-pantry['proj.org'] = projorgPackage
-pantry['jujuis'] = jujuisPackage
-pantry['hdfgroup.org'] = hdfgrouporgPackage
-pantry['invisible/islandnet'] = invisible-islandnetPackage
-pantry['nano/editororg'] = nano-editororgPackage
-pantry['keephq.dev'] = keephqdevPackage
-pantry['aria2github.io'] = aria2githubioPackage
-pantry['cscopesourceforge.io'] = cscopesourceforgeioPackage
-pantry['logdy.dev'] = logdydevPackage
-pantry['musllibc.org'] = musllibcorgPackage
-pantry['cocogitto.io'] = cocogittoioPackage
-pantry['openai.com'] = openaicomPackage
-pantry['musepack.net'] = musepacknetPackage
-pantry['apacheorgarrow'] = apacheorgarrowPackage
-pantry['aquasecuritygithubiotfsec'] = aquasecuritygithubiotfsecPackage
-pantry['git/lfscom'] = git-lfscomPackage
-pantry['libuv.org'] = libuvorgPackage
-pantry['jless.io'] = jlessioPackage
-pantry['openjpeg.org'] = openjpegorgPackage
-pantry['mvdancc'] = mvdanccPackage
-pantry['awsamazoncomsam'] = awsamazoncomsamPackage
-pantry['geoffgreerfm'] = geoffgreerfmPackage
-pantry['opencore/amrsourceforgeio'] = opencore-amrsourceforgeioPackage
-pantry['bufbuild'] = bufbuildPackage
-pantry['indexsupply.com'] = indexsupplycomPackage
-pantry['abseil.io'] = abseilioPackage
-pantry['leptonica.org'] = leptonicaorgPackage
-pantry['chezmoi.io'] = chezmoiioPackage
-pantry['caskreadthedocs.io'] = caskreadthedocsioPackage
-pantry['mun/langorg'] = mun-langorgPackage
-pantry['isc.org'] = iscorgPackage
-pantry['rabbitmq.com'] = rabbitmqcomPackage
-pantry['astral.sh'] = astralshPackage
-pantry['elixir/langorg'] = elixir-langorgPackage
-pantry['digger.dev'] = diggerdevPackage
-pantry['sqlc.dev'] = sqlcdevPackage
-pantry['youtube/dlorg'] = youtube-dlorgPackage
-pantry['bytereef.org'] = bytereeforgPackage
-pantry['stedolangithub.io'] = stedolangithubioPackage
-pantry['imagemagick.org'] = imagemagickorgPackage
-pantry['notrojgithub.io'] = notrojgithubioPackage
-pantry['itstool.org'] = itstoolorgPackage
-pantry['speex.org'] = speexorgPackage
-pantry['gitosgeo.org'] = gitosgeoorgPackage
-pantry['apacheorgapr'] = apacheorgaprPackage
-pantry['google.com'] = googlecomPackage
-pantry['spawnlink'] = spawnlinkPackage
-pantry['wavpack.com'] = wavpackcomPackage
-pantry['lavinmq.com'] = lavinmqcomPackage
-pantry['ipfstech'] = ipfstechPackage
-pantry['plasmasturm.org'] = plasmasturmorgPackage
-pantry['hjsongithub.io'] = hjsongithubioPackage
-pantry['dest/unreachorg'] = dest-unreachorgPackage
-pantry['sass/langcom'] = sass-langcomPackage
-pantry['getcomposer.org'] = getcomposerorgPackage
-pantry['julialang.org'] = julialangorgPackage
-pantry['erlang.org'] = erlangorgPackage
-pantry['portaudio.com'] = portaudiocomPackage
-pantry['libpipelinegitlab.io'] = libpipelinegitlabioPackage
-pantry['apacheorghttpd'] = apacheorghttpdPackage
-pantry['mkcert.dev'] = mkcertdevPackage
-pantry['hadrons.org'] = hadronsorgPackage
-pantry['volta.sh'] = voltashPackage
-pantry['mercurerocks'] = mercurerocksPackage
-pantry['kubelinter.io'] = kubelinterioPackage
-pantry['scaleway.com'] = scalewaycomPackage
-pantry['beyondgrep.com'] = beyondgrepcomPackage
-pantry['elizaosgithub.io'] = elizaosgithubioPackage
-pantry['elv.sh'] = elvshPackage
-pantry['gaia/gisit'] = gaia-gisitPackage
-pantry['openssh.com'] = opensshcomPackage
-pantry['tesseract/ocrgithubio'] = tesseract-ocrgithubioPackage
-pantry['mypy/langorg'] = mypy-langorgPackage
-pantry['sigstore.dev'] = sigstoredevPackage
-pantry['jetporch.com'] = jetporchcomPackage
-pantry['teaxyz'] = teaxyzPackage
-pantry['aquasecuritygithub.io'] = aquasecuritygithubioPackage
-pantry['kerberos.org'] = kerberosorgPackage
-pantry['gource.io'] = gourceioPackage
-pantry['rarlab.com'] = rarlabcomPackage
-pantry['seaweedfs.com'] = seaweedfscomPackage
-pantry['k6.io'] = k6ioPackage
-pantry['hatchpypa.io'] = hatchpypaioPackage
-pantry['taku910github.io'] = taku910githubioPackage
-pantry['apacheorgaprutil'] = apacheorgaprutilPackage
-pantry['exiftool.org'] = exiftoolorgPackage
-pantry['graphicsmagick.org'] = graphicsmagickorgPackage
-pantry['etcd.io'] = etcdioPackage
-pantry['zrok.io'] = zrokioPackage
-pantry['libgdgithub.io'] = libgdgithubioPackage
-pantry['jugitfz/juelichde'] = jugitfz-juelichdePackage
-pantry['rometools'] = rometoolsPackage
-pantry['vercel.com'] = vercelcomPackage
-pantry['pandoc.org'] = pandocorgPackage
-pantry['glfw.org'] = glfworgPackage
-pantry['rtomaykogithub.io'] = rtomaykogithubioPackage
-pantry['pantsbuild.org'] = pantsbuildorgPackage
-pantry['akuity.io'] = akuityioPackage
-pantry['carapace.sh'] = carapaceshPackage
-pantry['python/poetryorg'] = python-poetryorgPackage
-pantry['acorn.io'] = acornioPackage
-pantry['bittensor.com'] = bittensorcomPackage
-pantry['ktlintgithub.io'] = ktlintgithubioPackage
-pantry['grafana.com'] = grafanacomPackage
-pantry['fuellabsgithub.io'] = fuellabsgithubioPackage
-pantry['nasmus'] = nasmusPackage
-pantry['nghttp2.org'] = nghttp2orgPackage
-pantry['railwayapp'] = railwayappPackage
-pantry['dhruvkb.dev'] = dhruvkbdevPackage
-pantry['k9scli.io'] = k9scliioPackage
-pantry['boost.org'] = boostorgPackage
-pantry['lftpyarru'] = lftpyarruPackage
-pantry['taglib.org'] = tagliborgPackage
-pantry['mpv.io'] = mpvioPackage
-pantry['astralshuv'] = astralshuvPackage
-pantry['chiarkgreenendorguk'] = chiarkgreenendorgukPackage
-pantry['rsyncsamba.org'] = rsyncsambaorgPackage
-pantry['kubecmcloud'] = kubecmcloudPackage
-pantry['bcryptsourceforge.net'] = bcryptsourceforgenetPackage
-pantry['mavenapache.org'] = mavenapacheorgPackage
-pantry['micro/editorgithubio'] = micro-editorgithubioPackage
-pantry['harfbuzz.org'] = harfbuzzorgPackage
-pantry['llmdatasette.io'] = llmdatasetteioPackage
-pantry['xercesapache.org'] = xercesapacheorgPackage
-pantry['jedisct1github.io'] = jedisct1githubioPackage
-pantry['asciinemaorgagg'] = asciinemaorgaggPackage
-pantry['imageflow.io'] = imageflowioPackage
-pantry['flywaydb.org'] = flywaydborgPackage
-pantry['libexpatgithub.io'] = libexpatgithubioPackage
-pantry['kubernetes.io'] = kubernetesioPackage
-pantry['jenvbe'] = jenvbePackage
-pantry['elementsproject.org'] = elementsprojectorgPackage
-pantry['infracost.io'] = infracostioPackage
-pantry['khronos.org'] = khronosorgPackage
-pantry['blake2netlibb2'] = blake2netlibb2Package
-pantry['idleberggithub.io'] = idleberggithubioPackage
-pantry['libusbinfo'] = libusbinfoPackage
-pantry['direnv.net'] = direnvnetPackage
-pantry['luarocks.org'] = luarocksorgPackage
-pantry['daytona.io'] = daytonaioPackage
-pantry['fftw.org'] = fftworgPackage
-pantry['swagger.io'] = swaggerioPackage
-pantry['charm.sh'] = charmshPackage
-pantry['apktool.org'] = apktoolorgPackage
-pantry['ollamaai'] = ollamaaiPackage
-pantry['openblas.net'] = openblasnetPackage
-pantry['libraw.org'] = libraworgPackage
-pantry['unixodbc.org'] = unixodbcorgPackage
-pantry['tukaani.org'] = tukaaniorgPackage
-pantry['poktnetwork'] = poktnetworkPackage
-pantry['leonerdorguk'] = leonerdorgukPackage
-pantry['project/copaceticgithubio'] = project-copaceticgithubioPackage
-pantry['openinterpreter.com'] = openinterpretercomPackage
-pantry['tectonic/typesettinggithubio'] = tectonic-typesettinggithubioPackage
-pantry['pyinvoke.org'] = pyinvokeorgPackage
-pantry['schollz.com'] = schollzcomPackage
-pantry['arkade.dev'] = arkadedevPackage
-pantry['ctop.sh'] = ctopshPackage
-pantry['netlib.org'] = netliborgPackage
-pantry['xvid.com'] = xvidcomPackage
-pantry['flipt.io'] = fliptioPackage
-pantry['netpbmsourceforge.net'] = netpbmsourceforgenetPackage
-pantry['gphoto.org'] = gphotoorgPackage
-pantry['jonasgithub.io'] = jonasgithubioPackage
-pantry['jumppad.dev'] = jumppaddevPackage
-pantry['digitalocean.com'] = digitaloceancomPackage
-pantry['velero.io'] = veleroioPackage
-pantry['leethomasongithub.io'] = leethomasongithubioPackage
-pantry['wezfurlong.org'] = wezfurlongorgPackage
-pantry['localstackcloud'] = localstackcloudPackage
-pantry['felixkratzgithub.io'] = felixkratzgithubioPackage
-pantry['plantuml.com'] = plantumlcomPackage
-pantry['postgresql.org'] = postgresqlorgPackage
-pantry['ivarch.com'] = ivarchcomPackage
-pantry['viaductai'] = viaductaiPackage
-pantry['x.org'] = xorgPackage
-pantry['s3tools.org'] = s3toolsorgPackage
-pantry['popplerfreedesktop.org'] = popplerfreedesktoporgPackage
-pantry['appium.io'] = appiumioPackage
-pantry['mesa3d.org'] = mesa3dorgPackage
-pantry['cnquery.io'] = cnqueryioPackage
-pantry['wpewebkit.org'] = wpewebkitorgPackage
-pantry['agwaname'] = agwanamePackage
-pantry['goreleaser.com'] = goreleasercomPackage
-pantry['heasarcgsfcnasagov'] = heasarcgsfcnasagovPackage
-pantry['modal.com'] = modalcomPackage
-pantry['taskfile.dev'] = taskfiledevPackage
-pantry['peopleredhat.com'] = peopleredhatcomPackage
-pantry['git/clifforg'] = git-clifforgPackage
-pantry['apacheorgzookeeper'] = apacheorgzookeeperPackage
-pantry['qhull.org'] = qhullorgPackage
-pantry['eigentuxfamily.org'] = eigentuxfamilyorgPackage
-pantry['capstone/engineorg'] = capstone-engineorgPackage
-pantry['awsamazoncomcdk'] = awsamazoncomcdkPackage
-pantry['pcscliteapdufr'] = pcscliteapdufrPackage
-pantry['libsoup.org'] = libsouporgPackage
-pantry['odigos.io'] = odigosioPackage
-pantry['soxrsourceforge.net'] = soxrsourceforgenetPackage
-pantry['gtssourceforge.net'] = gtssourceforgenetPackage
-pantry['opus/codecorg'] = opus-codecorgPackage
-pantry['simplesystems.org'] = simplesystemsorgPackage
-pantry['breakfastquay.com'] = breakfastquaycomPackage
-pantry['packer.io'] = packerioPackage
-pantry['libislsourceforge.io'] = libislsourceforgeioPackage
-pantry['asciidoctor.org'] = asciidoctororgPackage
-pantry['openbao.org'] = openbaoorgPackage
-pantry['cgal.org'] = cgalorgPackage
-pantry['libwebsockets.org'] = libwebsocketsorgPackage
-pantry['aspell.net'] = aspellnetPackage
-pantry['nim/langorg'] = nim-langorgPackage
-pantry['tcltk'] = tcltkPackage
-pantry['moonrepo.dev'] = moonrepodevPackage
-pantry['git/scmorg'] = git-scmorgPackage
-pantry['openslide.org'] = openslideorgPackage
-pantry['shellcheck.net'] = shellchecknetPackage
-pantry['buildpacks.io'] = buildpacksioPackage
-pantry['clisp.org'] = clisporgPackage
-pantry['libspng.org'] = libspngorgPackage
-pantry['libevent.org'] = libeventorgPackage
-pantry['microcks.io'] = microcksioPackage
-pantry['quickwit.io'] = quickwitioPackage
-pantry['htslib.org'] = htsliborgPackage
-pantry['awsamazoncomcli'] = awsamazoncomcliPackage
-pantry['tailwindcss.com'] = tailwindcsscomPackage
-pantry['opentofu.org'] = opentofuorgPackage
-pantry['po4a.org'] = po4aorgPackage
-pantry['solana.com'] = solanacomPackage
-pantry['fluentci.io'] = fluentciioPackage
-pantry['scala/langorg'] = scala-langorgPackage
-pantry['libgeos.org'] = libgeosorgPackage
-pantry['f1bonacc1github.io'] = f1bonacc1githubioPackage
-pantry['agwanamegitcrypt'] = agwanamegitcryptPackage
-pantry['dystroy.org'] = dystroyorgPackage
-pantry['ebassigithub.io'] = ebassigithubioPackage
-pantry['libarchive.org'] = libarchiveorgPackage
-pantry['getfoundry.sh'] = getfoundryshPackage
-pantry['ziglang.org'] = ziglangorgPackage
-pantry['brxken128githubiodexios'] = brxken128githubiodexiosPackage
-pantry['awsamazon.com'] = awsamazoncomPackage
-pantry['npmjs.com'] = npmjscomPackage
-pantry['duckdb.org'] = duckdborgPackage
-pantry['postgrest.org'] = postgrestorgPackage
-pantry['gnome.org'] = gnomeorgPackage
-pantry['tilt.dev'] = tiltdevPackage
-pantry['liburcu.org'] = liburcuorgPackage
-pantry['geuz.org'] = geuzorgPackage
-pantry['microbrew.org'] = microbreworgPackage
-pantry['docker.com'] = dockercomPackage
-pantry['crystal/langorg'] = crystal-langorgPackage
-pantry['acornioacorncli'] = acornioacorncliPackage
-pantry['yt/dlporg'] = yt-dlporgPackage
-pantry['starshiprs'] = starshiprsPackage
-pantry['digip.org'] = digiporgPackage
-pantry['rapidjson.org'] = rapidjsonorgPackage
-pantry['terraform/docsio'] = terraform-docsioPackage
-pantry['clog/toolgithubio'] = clog-toolgithubioPackage
-pantry['rhashsourceforge.net'] = rhashsourceforgenetPackage
-pantry['augeas.net'] = augeasnetPackage
-pantry['werf.io'] = werfioPackage
-pantry['chromedriverchromium.org'] = chromedriverchromiumorgPackage
-pantry['doctave.com'] = doctavecomPackage
-pantry['hasura.io'] = hasuraioPackage
-pantry['mkdocs.org'] = mkdocsorgPackage
-pantry['devpod.sh'] = devpodshPackage
-pantry['mpg123de'] = mpg123dePackage
-pantry['terragruntgruntwork.io'] = terragruntgruntworkioPackage
-pantry['gleamrun'] = gleamrunPackage
-pantry['saerasoft.com'] = saerasoftcomPackage
-pantry['jfrog.com'] = jfrogcomPackage
-pantry['qt.io'] = qtioPackage
-pantry['sftpgo.com'] = sftpgocomPackage
-pantry['logological.org'] = logologicalorgPackage
-pantry['conftest.dev'] = conftestdevPackage
-pantry['onefetch.dev'] = onefetchdevPackage
-pantry['opensearch.org'] = opensearchorgPackage
-pantry['libssh.org'] = libsshorgPackage
-pantry['steampipe.io'] = steampipeioPackage
-pantry['scons.org'] = sconsorgPackage
-pantry['cedarpolicycomcli'] = cedarpolicycomcliPackage
-pantry['sympy.org'] = sympyorgPackage
-pantry['classicyarnpkg.com'] = classicyarnpkgcomPackage
-pantry['fly.io'] = flyioPackage
-pantry['pnpm.io'] = pnpmioPackage
-pantry['virtualenvpypa.io'] = virtualenvpypaioPackage
-pantry['htop.dev'] = htopdevPackage
-pantry['graphqleditor.com'] = graphqleditorcomPackage
-pantry['endoflifedate'] = endoflifedatePackage
-pantry['nginx.org'] = nginxorgPackage
-pantry['pugixml.org'] = pugixmlorgPackage
-pantry['dnslookupdog'] = dnslookupdogPackage
-pantry['dhall/langorg'] = dhall-langorgPackage
-pantry['onsigithub.io'] = onsigithubioPackage
-pantry['jpeg.org'] = jpegorgPackage
-pantry['cligithub.com'] = cligithubcomPackage
-pantry['mujs.com'] = mujscomPackage
-pantry['jedsoft.org'] = jedsoftorgPackage
-pantry['ceph.com'] = cephcomPackage
-pantry['jsonnet.org'] = jsonnetorgPackage
-pantry['apache.org'] = apacheorgPackage
-pantry['connectrpc.org'] = connectrpcorgPackage
-pantry['granted.dev'] = granteddevPackage
-pantry['numbat.dev'] = numbatdevPackage
-pantry['linux/pamorg'] = linux-pamorgPackage
-pantry['furyco'] = furycoPackage
-pantry['webmproject.org'] = webmprojectorgPackage
-pantry['yadm.io'] = yadmioPackage
-pantry['eksctl.io'] = eksctlioPackage
-pantry['pygments.org'] = pygmentsorgPackage
-pantry['mercurial/scmorg'] = mercurial-scmorgPackage
-pantry['lcdf.org'] = lcdforgPackage
-pantry['wireshark.org'] = wiresharkorgPackage
-pantry['raccoin.org'] = raccoinorgPackage
-pantry['cpanminus'] = cpanminusPackage
-pantry['facebook.com'] = facebookcomPackage
-pantry['zshsourceforge.io'] = zshsourceforgeioPackage
-pantry['paulfitzgithub.io'] = paulfitzgithubioPackage
-pantry['pkgx.sh'] = pkgxshPackage
-pantry['kotlinlang.org'] = kotlinlangorgPackage
-pantry['openapi/generatortech'] = openapi-generatortechPackage
-pantry['git/quick-statssh'] = git-quick-statsshPackage
-pantry['crypto'] = cryptoPackage
-pantry['supabase.com'] = supabasecomPackage
-pantry['tldr.sh'] = tldrshPackage
-pantry['ipython.org'] = ipythonorgPackage
-pantry['tcsh.org'] = tcshorgPackage
-pantry['vapoursynth.com'] = vapoursynthcomPackage
-pantry['curlie.io'] = curlieioPackage
-pantry['borepub'] = borepubPackage
-pantry['rust/langorg'] = rust-langorgPackage
-pantry['publichronopikde'] = publichronopikdePackage
-pantry['pytest.org'] = pytestorgPackage
-pantry['libgit2.org'] = libgit2orgPackage
-pantry['skaffold.dev'] = skaffolddevPackage
-pantry['attrs.org'] = attrsorgPackage
-pantry['nomadproject.io'] = nomadprojectioPackage
-pantry['intel.com'] = intelcomPackage
-pantry['nixos.org'] = nixosorgPackage
-pantry['libsodium.org'] = libsodiumorgPackage
-pantry['tcl/langorg'] = tcl-langorgPackage
-pantry['vitejs.dev'] = vitejsdevPackage
-pantry['littlecms.com'] = littlecmscomPackage
-pantry['wimlib.net'] = wimlibnetPackage
-pantry['googlegithub.io'] = googlegithubioPackage
-pantry['matiosourceforge.io'] = matiosourceforgeioPackage
-pantry['trufflesecurity.com'] = trufflesecuritycomPackage
-pantry['hunspellgithub.io'] = hunspellgithubioPackage
-pantry['amrdevelopergithubiogql'] = amrdevelopergithubiogqlPackage
-pantry['fxwtf'] = fxwtfPackage
-pantry['pngquant.org'] = pngquantorgPackage
-pantry['nushell.sh'] = nushellshPackage
-pantry['encore.dev'] = encoredevPackage
-pantry['palletsprojects.com'] = palletsprojectscomPackage
-pantry['trippyclirs'] = trippyclirsPackage
-pantry['python/pilloworg'] = python-pilloworgPackage
-pantry['kluctl.io'] = kluctlioPackage
-pantry['zarf.dev'] = zarfdevPackage
-pantry['gitlab.com'] = gitlabcomPackage
-pantry['wails.io'] = wailsioPackage
-pantry['rust/langgithubio'] = rust-langgithubioPackage
-pantry['kafkaapache.org'] = kafkaapacheorgPackage
-pantry['k3d.io'] = k3dioPackage
-pantry['maturinrs'] = maturinrsPackage
-pantry['libpng.org'] = libpngorgPackage
-pantry['qemu.org'] = qemuorgPackage
-pantry['jemalloc.net'] = jemallocnetPackage
-pantry['graphitesil.org'] = graphitesilorgPackage
-pantry['gnuplotinfo'] = gnuplotinfoPackage
-pantry['androidcomcmdlinetools'] = androidcomcmdlinetoolsPackage
-pantry['cloudnative/pgio'] = cloudnative-pgioPackage
-pantry['psycopg.org'] = psycopgorgPackage
-pantry['bashlydannybco'] = bashlydannybcoPackage
-pantry['changie.dev'] = changiedevPackage
-pantry['ninja/buildorg'] = ninja-buildorgPackage
-pantry['nlnetlabsnl'] = nlnetlabsnlPackage
-pantry['libssh2.org'] = libssh2orgPackage
-pantry['r/wosorg'] = r-wosorgPackage
-pantry['rubygems.org'] = rubygemsorgPackage
-pantry['jenkins.io'] = jenkinsioPackage
-pantry['ntp.org'] = ntporgPackage
-pantry['printfngithub.io'] = printfngithubioPackage
-pantry['cython.org'] = cythonorgPackage
-pantry['radicle.org'] = radicleorgPackage
-pantry['wasmer.io'] = wasmerioPackage
-pantry['groonga.org'] = groongaorgPackage
-pantry['sphinx/docorg'] = sphinx-docorgPackage
-pantry['cilium.io'] = ciliumioPackage
-pantry['consul.io'] = consulioPackage
-pantry['fullstory.com'] = fullstorycomPackage
-pantry['ruciocernch'] = ruciocernchPackage
-pantry['typstapp'] = typstappPackage
-pantry['httpie.io'] = httpieioPackage
-pantry['otssniptt.com'] = otssnipttcomPackage
-pantry['dotnetmicrosoft.com'] = dotnetmicrosoftcomPackage
-pantry['vim.org'] = vimorgPackage
-pantry['libimobiledevice.org'] = libimobiledeviceorgPackage
-pantry['vamp/pluginsorg'] = vamp-pluginsorgPackage
-pantry['waylandfreedesktop.org'] = waylandfreedesktoporgPackage
-pantry['apptainer.org'] = apptainerorgPackage
-pantry['toxwiki'] = toxwikiPackage
-pantry['upxgithub.io'] = upxgithubioPackage
-pantry['oras.land'] = oraslandPackage
-pantry['presslygithub.io'] = presslygithubioPackage
-pantry['libvips.org'] = libvipsorgPackage
-pantry['edgedb.com'] = edgedbcomPackage
-pantry['theora.org'] = theoraorgPackage
-pantry['cmocka.org'] = cmockaorgPackage
-pantry['fna/xnagithubio'] = fna-xnagithubioPackage
-pantry['xkbcommon.org'] = xkbcommonorgPackage
-pantry['khanacademy.org'] = khanacademyorgPackage
-pantry['msgpack.org'] = msgpackorgPackage
-pantry['frei0rdyne.org'] = frei0rdyneorgPackage
-pantry['ffmpeg.org'] = ffmpegorgPackage
-pantry['midnight/commanderorg'] = midnight-commanderorgPackage
-pantry['ruby/langorg'] = ruby-langorgPackage
-pantry['sshx.io'] = sshxioPackage
-pantry['kubesharkco'] = kubesharkcoPackage
-pantry['getsops.io'] = getsopsioPackage
-pantry['lunarvim.org'] = lunarvimorgPackage
-pantry['protobuf.dev'] = protobufdevPackage
-pantry['pdmfming.dev'] = pdmfmingdevPackage
-pantry['opendev.org'] = opendevorgPackage
-pantry['lamesourceforge.io'] = lamesourceforgeioPackage
-pantry['sourceware.org'] = sourcewareorgPackage
-pantry['catb.org'] = catborgPackage
-pantry['aomediagooglesource.com'] = aomediagooglesourcecomPackage
-pantry['tcpdump.org'] = tcpdumporgPackage
-pantry['biomejs.dev'] = biomejsdevPackage
-pantry['c/aresorg'] = c-aresorgPackage
-pantry['amrdevelopergithub.io'] = amrdevelopergithubioPackage
-pantry['vale.sh'] = valeshPackage
-pantry['dozzle.dev'] = dozzledevPackage
-pantry['pcre.org'] = pcreorgPackage
-pantry['jbig2dec.com'] = jbig2deccomPackage
-pantry['rclone.org'] = rcloneorgPackage
-pantry['agptco'] = agptcoPackage
-pantry['kernel.org'] = kernelorgPackage
-pantry['redis.io'] = redisioPackage
-pantry['pippypa.io'] = pippypaioPackage
-pantry['gtk.org'] = gtkorgPackage
-pantry['apacheorgjmeter'] = apacheorgjmeterPackage
-pantry['drifreedesktop.org'] = drifreedesktoporgPackage
-pantry['convcogithub.io'] = convcogithubioPackage
-pantry['openprintinggithub.io'] = openprintinggithubioPackage
-pantry['oauth2/proxygithubio'] = oauth2-proxygithubioPackage
-pantry['pre/commitcom'] = pre-commitcomPackage
-pantry['aomediagooglesourcecomaom'] = aomediagooglesourcecomaomPackage
-pantry['authzedcomspicedb'] = authzedcomspicedbPackage
-pantry['openvpn.net'] = openvpnnetPackage
-pantry['quary.dev'] = quarydevPackage
-pantry['libjpeg/turboorg'] = libjpeg-turboorgPackage
-pantry['coder.com'] = codercomPackage
-pantry['openssl.org'] = opensslorgPackage
-pantry['yasmtortall.net'] = yasmtortallnetPackage
-pantry['tinybirdco'] = tinybirdcoPackage
-pantry['macvim.org'] = macvimorgPackage
-pantry['python.org'] = pythonorgPackage
-pantry['databricks.com'] = databrickscomPackage
-pantry['apacheorgavro'] = apacheorgavroPackage
-pantry['nongnu.org'] = nongnuorgPackage
-pantry['maaslalani.com'] = maaslalanicomPackage
-pantry['pulumi.io'] = pulumiioPackage
-pantry['cmake.org'] = cmakeorgPackage
-pantry['sagiegurarigithub.io'] = sagiegurarigithubioPackage
-pantry['cruftgithub.io'] = cruftgithubioPackage
-pantry['openpolicyagent.org'] = openpolicyagentorgPackage
-pantry['bitcoin.org'] = bitcoinorgPackage
-pantry['openmpllvm.org'] = openmpllvmorgPackage
-pantry['tsl0922github.io'] = tsl0922githubioPackage
-pantry['snaplet.dev'] = snapletdevPackage
-pantry['vcluster.com'] = vclustercomPackage
-pantry['talos.dev'] = talosdevPackage
-pantry['xcfile.dev'] = xcfiledevPackage
-pantry['scryerpl'] = scryerplPackage
-pantry['surrealdb.com'] = surrealdbcomPackage
-pantry['anchore.com'] = anchorecomPackage
-pantry['giflibsourceforge.io'] = giflibsourceforgeioPackage
-pantry['netflix.com'] = netflixcomPackage
-pantry['nodejs.org'] = nodejsorgPackage
-pantry['ibrcstu/bsde'] = ibrcstu-bsdePackage
-pantry['krewsigsk8s.io'] = krewsigsk8sioPackage
-pantry['valkey.io'] = valkeyioPackage
-pantry['pinniped.dev'] = pinnipeddevPackage
-pantry['markupsafepalletsprojects.com'] = markupsafepalletsprojectscomPackage
-pantry['lua.org'] = luaorgPackage
-pantry['xpra.org'] = xpraorgPackage
-pantry['temporal.io'] = temporalioPackage
-pantry['ast/grepgithubio'] = ast-grepgithubioPackage
-pantry['openjdk.org'] = openjdkorgPackage
-pantry['waterlanhomexs4allnl'] = waterlanhomexs4allnlPackage
-pantry['priver.dev'] = priverdevPackage
-pantry['qpdfsourceforge.io'] = qpdfsourceforgeioPackage
-pantry['permit.io'] = permitioPackage
-pantry['thekelleysorguk'] = thekelleysorgukPackage
-pantry['liblqrwikidot.com'] = liblqrwikidotcomPackage
-pantry['alsa/projectorgalsalib'] = alsa-projectorgalsalibPackage
-pantry['swig.org'] = swigorgPackage
-pantry['sdkman.io'] = sdkmanioPackage
-pantry['zlib.net'] = zlibnetPackage
-pantry['spacetimedb.com'] = spacetimedbcomPackage
-pantry['riverbankcomputing.com'] = riverbankcomputingcomPackage
-pantry['unidataucaredu'] = unidataucareduPackage
-pantry['rust/scriptorg'] = rust-scriptorgPackage
-pantry['gomplateca'] = gomplatecaPackage
-pantry['hugowang'] = hugowangPackage
-pantry['perl.org'] = perlorgPackage
-pantry['unicode.org'] = unicodeorgPackage
-pantry['gflagsgithub.io'] = gflagsgithubioPackage
-pantry['tuist.io'] = tuistioPackage
-pantry['restic.net'] = resticnetPackage
-pantry['cedarpolicy.com'] = cedarpolicycomPackage
-pantry['amprs'] = amprsPackage
-pantry['ansiblecomansiblelint'] = ansiblecomansiblelintPackage
-pantry['aquasecuritygithubiotrivy'] = aquasecuritygithubiotrivyPackage
-pantry['mergestat.com'] = mergestatcomPackage
-pantry['squawkhq.com'] = squawkhqcomPackage
-pantry['argoprojgithubiocd'] = argoprojgithubiocdPackage
-pantry['pwmt.org'] = pwmtorgPackage
-pantry['ctags.io'] = ctagsioPackage
-pantry['laravel.com'] = laravelcomPackage
-pantry['haskell.org'] = haskellorgPackage
-pantry['cointop.sh'] = cointopshPackage
-pantry['kislyukgithub.io'] = kislyukgithubioPackage
-pantry['hboehminfo'] = hboehminfoPackage
-pantry['irohcomputer'] = irohcomputerPackage
-pantry['gohugo.io'] = gohugoioPackage
-pantry['crazymax.dev'] = crazymaxdevPackage
-pantry['d2lang.com'] = d2langcomPackage
-pantry['libtom.net'] = libtomnetPackage
-pantry['flitpypa.io'] = flitpypaioPackage
-pantry['mandocbsdlv'] = mandocbsdlvPackage
-pantry['apacheorgsubversion'] = apacheorgsubversionPackage
-pantry['creativeprojectsgithub.io'] = creativeprojectsgithubioPackage
-pantry['astralshruff'] = astralshruffPackage
-pantry['hashicorp.com'] = hashicorpcomPackage
-pantry['dblabdanvergara.com'] = dblabdanvergaracomPackage
-pantry['elfutils.org'] = elfutilsorgPackage
-pantry['getsynth.com'] = getsynthcomPackage
-pantry['mupdf.com'] = mupdfcomPackage
-pantry['crates.io'] = cratesioPackage
-pantry['ijg.org'] = ijgorgPackage
-pantry['mariadb.com'] = mariadbcomPackage
-pantry['kindsigsk8s.io'] = kindsigsk8sioPackage
-pantry['symfony.com'] = symfonycomPackage
-pantry['tidbyt.com'] = tidbytcomPackage
-pantry['bitwarden.com'] = bitwardencomPackage
-pantry['gouber.org'] = gouberorgPackage
-pantry['apacheorgthrift'] = apacheorgthriftPackage
-pantry['fukuchi.org'] = fukuchiorgPackage
-pantry['earthly.dev'] = earthlydevPackage
-pantry['traefik.io'] = traefikioPackage
-pantry['mongodb.com'] = mongodbcomPackage
-pantry['grpc.io'] = grpcioPackage
-pantry['linkerd.io'] = linkerdioPackage
-pantry['sniffnet.net'] = sniffnetnetPackage
-pantry['argbash.dev'] = argbashdevPackage
-pantry['zeromq.org'] = zeromqorgPackage
-pantry['runatlantis.io'] = runatlantisioPackage
-pantry['docbook.org'] = docbookorgPackage
-pantry['fishshell.com'] = fishshellcomPackage
-pantry['angular.dev'] = angulardevPackage
-pantry['assimp.org'] = assimporgPackage
-pantry['github.com'] = githubcomPackage
-pantry['yuigithub.io'] = yuigithubioPackage
-pantry['veracode.com'] = veracodecomPackage
-pantry['fluxcd.io'] = fluxcdioPackage
-pantry['developer1password.com'] = developer1passwordcomPackage
-pantry['lucagrulla.com'] = lucagrullacomPackage
-pantry['ohmyposh.dev'] = ohmyposhdevPackage
-pantry['pwgensourceforge.io'] = pwgensourceforgeioPackage
-pantry['amber/langcom'] = amber-langcomPackage
-pantry['prql/langorg'] = prql-langorgPackage
-pantry['dotenvx.com'] = dotenvxcomPackage
-pantry['apollographqlcomrover'] = apollographqlcomroverPackage
-pantry['localai.io'] = localaiioPackage
-pantry['jupyter.org'] = jupyterorgPackage
-pantry['sentry.io'] = sentryioPackage
-pantry['fermyon.com'] = fermyoncomPackage
-pantry['mozilla.org'] = mozillaorgPackage
-pantry['gnu.org'] = gnuorgPackage
-pantry['mailpitaxllent.org'] = mailpitaxllentorgPackage
-pantry['asciinema.org'] = asciinemaorgPackage
-pantry['cyrusimap.org'] = cyrusimaporgPackage
-pantry['anchorecomsyft'] = anchorecomsyftPackage
-pantry['oberhumer.com'] = oberhumercomPackage
-pantry['dkrzde'] = dkrzdePackage
-pantry['koyeb.com'] = koyebcomPackage
-pantry['ordinals.com'] = ordinalscomPackage
-pantry['render.com'] = rendercomPackage
-pantry['wilfredmeuk'] = wilfredmeukPackage
-pantry['brxken128github.io'] = brxken128githubioPackage
-pantry['ansible.com'] = ansiblecomPackage
-pantry['leo/langorg'] = leo-langorgPackage
-pantry['sqlite.org'] = sqliteorgPackage
-pantry['groovy/langorg'] = groovy-langorgPackage
-pantry['mosh.org'] = moshorgPackage
-pantry['circleci.com'] = circlecicomPackage
-pantry['pixman.org'] = pixmanorgPackage
-pantry['videolan.org'] = videolanorgPackage
-pantry['podman.io'] = podmanioPackage
-pantry['terraform.io'] = terraformioPackage
-pantry['argoprojgithubioworkflows'] = argoprojgithubioworkflowsPackage
-pantry['justsystems'] = justsystemsPackage
-pantry['projen.io'] = projenioPackage
-pantry['gdal.org'] = gdalorgPackage
-pantry['libproxygithub.io'] = libproxygithubioPackage
-pantry['xtlsgithub.io'] = xtlsgithubioPackage
-pantry['gradle.org'] = gradleorgPackage
-pantry['ladspa.org'] = ladspaorgPackage
-pantry['terratag.io'] = terratagioPackage
-pantry['templguide'] = templguidePackage
-pantry['epsilon/projectsourceforgeio'] = epsilon-projectsourceforgeioPackage
-pantry['luajit.org'] = luajitorgPackage
-pantry['vannaai'] = vannaaiPackage
-pantry['dagger.io'] = daggerioPackage
-pantry['libcxxllvm.org'] = libcxxllvmorgPackage
-pantry['libexifgithub.io'] = libexifgithubioPackage
-pantry['pluralith.com'] = pluralithcomPackage
-pantry['applecomremote_cmds'] = applecomremote_cmdsPackage
-pantry['jbang.dev'] = jbangdevPackage
-pantry['ghostgumcomau'] = ghostgumcomauPackage
-pantry['cloudflare.com'] = cloudflarecomPackage
-pantry['pypa.io'] = pypaioPackage
-pantry['php.net'] = phpnetPackage
-pantry['flutter.dev'] = flutterdevPackage
-pantry['syncthing.net'] = syncthingnetPackage
-pantry['glmg/trucnet'] = glmg-trucnetPackage
-pantry['soldeerxyz'] = soldeerxyzPackage
-pantry['openldap.org'] = openldaporgPackage
-pantry['smartmontools.org'] = smartmontoolsorgPackage
-pantry['misejdx.dev'] = misejdxdevPackage
-pantry['graphviz.org'] = graphvizorgPackage
-pantry['pocketbase.io'] = pocketbaseioPackage
-pantry['lz4.org'] = lz4orgPackage
-pantry['android.com'] = androidcomPackage
-pantry['wix.com'] = wixcomPackage
-pantry['pyyaml.org'] = pyyamlorgPackage
-pantry['wxwidgets.org'] = wxwidgetsorgPackage
-pantry['ccache.dev'] = ccachedevPackage
-pantry['cuelang.org'] = cuelangorgPackage
-pantry['freetds.org'] = freetdsorgPackage
-pantry['srtalliance.org'] = srtallianceorgPackage
-pantry['docutils.org'] = docutilsorgPackage
-pantry['glewsourceforge.io'] = glewsourceforgeioPackage
-pantry['getclipboardapp'] = getclipboardappPackage
-pantry['devyorhelnl'] = devyorhelnlPackage
-pantry['dart.dev'] = dartdevPackage
-pantry['strace.io'] = straceioPackage
-pantry['info/ziporg'] = info-ziporgPackage
-pantry['git/towncom'] = git-towncomPackage
-pantry['man/dbgitlabio'] = man-dbgitlabioPackage
-pantry['watchexecgithub.io'] = watchexecgithubioPackage
-pantry['hetzner.com'] = hetznercomPackage
-pantry['huggingfaceco'] = huggingfacecoPackage
-pantry['practical/schemenet'] = practical-schemenetPackage
-pantry['rpm.org'] = rpmorgPackage
-pantry['bytebase.com'] = bytebasecomPackage
-pantry['opendap.org'] = opendaporgPackage
-pantry['bun.sh'] = bunshPackage
-pantry['modernc.org'] = moderncorgPackage
-pantry['debian.org'] = debianorgPackage
-pantry['virtualsquare.org'] = virtualsquareorgPackage
-pantry['taplotamasfe.dev'] = taplotamasfedevPackage
-pantry['wkentarogithub.io'] = wkentarogithubioPackage
-pantry['gqlgen.com'] = gqlgencomPackage
-pantry['upliftci.dev'] = upliftcidevPackage
-pantry['hurl.dev'] = hurldevPackage
-pantry['fmt.dev'] = fmtdevPackage
-pantry['mysql.com'] = mysqlcomPackage
-pantry['peopleengrtamuedu'] = peopleengrtamueduPackage
-pantry['pypagithub.io'] = pypagithubioPackage
-pantry['alacritty.org'] = alacrittyorgPackage
-pantry['openpmixgithub.io'] = openpmixgithubioPackage
-pantry['plocatesesse.net'] = plocatesessenetPackage
-pantry['akuityiokargo'] = akuityiokargoPackage
-pantry['heroku.com'] = herokucomPackage
-pantry['certifi.io'] = certifiioPackage
-pantry['re2c.org'] = re2corgPackage
-pantry['scala/sbtorg'] = scala-sbtorgPackage
-pantry['xplr.dev'] = xplrdevPackage
-pantry['tursotech'] = tursotechPackage
-pantry['lima/vmio'] = lima-vmioPackage
-pantry['sqlfluff.com'] = sqlfluffcomPackage
-pantry['rubocop.org'] = rubocoporgPackage
-pantry['mitmproxy.org'] = mitmproxyorgPackage
-pantry['prettier.io'] = prettierioPackage
-pantry['darwinsys.com'] = darwinsyscomPackage
-pantry['sing/boxapp'] = sing-boxappPackage
-pantry['cisco.com'] = ciscocomPackage
-pantry['checkov.io'] = checkovioPackage
-pantry['wundergraph.com'] = wundergraphcomPackage
-pantry['glarosdtcumnedu'] = glarosdtcumneduPackage
-pantry['coredns.io'] = corednsioPackage
-pantry['openexr.com'] = openexrcomPackage
-pantry['vlang.io'] = vlangioPackage
-pantry['browser/usecom'] = browser-usecomPackage
-pantry['codevideolan.org'] = codevideolanorgPackage
-pantry['cairographics.org'] = cairographicsorgPackage
-pantry['pipenvpypa.io'] = pipenvpypaioPackage
-pantry['microsoft.com'] = microsoftcomPackage
-pantry['ryeastral.sh'] = ryeastralshPackage
-pantry['kubebuilder.io'] = kubebuilderioPackage
-pantry['kaggle.com'] = kagglecomPackage
-pantry['freeglutsourceforge.io'] = freeglutsourceforgeioPackage
-pantry['networkx.org'] = networkxorgPackage
-pantry['helix/editorcom'] = helix-editorcomPackage
-pantry['xiph.org'] = xiphorgPackage
-pantry['lxmlde'] = lxmldePackage
-pantry['hardingmotdca'] = hardingmotdcaPackage
-pantry['rockdabootgithub.io'] = rockdabootgithubioPackage
-pantry['uriparsergithub.io'] = uriparsergithubioPackage
-pantry['csientuedutw'] = csientuedutwPackage
-pantry['duktape.org'] = duktapeorgPackage
-pantry['pagure.io'] = pagureioPackage
-pantry['gittozt.net'] = gittoztnetPackage
-pantry['certboteff.org'] = certbotefforgPackage
-pantry['bloomreach.com'] = bloomreachcomPackage
-pantry['thrysoeedk'] = thrysoeedkPackage
-pantry['kornelski'] = kornelskiPackage
-pantry['mesonbuild.com'] = mesonbuildcomPackage
-pantry['fastlanetools'] = fastlanetoolsPackage
-pantry['authzed.com'] = authzedcomPackage
-pantry['numpy.org'] = numpyorgPackage
-pantry['orhun.dev'] = orhundevPackage
-pantry['vektragithub.io'] = vektragithubioPackage
-pantry['oracle.com'] = oraclecomPackage
-pantry['doxygennl'] = doxygennlPackage
-pantry['snyk.io'] = snykioPackage
-pantry['stripe.com'] = stripecomPackage
-pantry['cocoapods.org'] = cocoapodsorgPackage
-pantry['ceres/solverorg'] = ceres-solverorgPackage
-pantry['wait4x.dev'] = wait4xdevPackage
-pantry['gitleaks.io'] = gitleaksioPackage
-pantry['litecli.com'] = liteclicomPackage
-pantry['cloudfoundry.org'] = cloudfoundryorgPackage
-pantry['sf.net'] = sfnetPackage
-pantry['prefix.dev'] = prefixdevPackage
-pantry['argoprojgithub.io'] = argoprojgithubioPackage
-pantry['curlse'] = curlsePackage
-pantry['tartrun'] = tartrunPackage
-pantry['lycheeclirs'] = lycheeclirsPackage
-pantry['filippo.io'] = filippoioPackage
-pantry['deno.land'] = denolandPackage
-pantry['freedesktop.org'] = freedesktoporgPackage
-pantry['nx.dev'] = nxdevPackage
-pantry['svenstarogithub.io'] = svenstarogithubioPackage
-pantry['rigaux.org'] = rigauxorgPackage
-pantry['typescriptlang.org'] = typescriptlangorgPackage
-pantry['istio.io'] = istioioPackage
-pantry['materialize.com'] = materializecomPackage
-pantry['html/tidyorg'] = html-tidyorgPackage
-pantry['openshift.com'] = openshiftcomPackage
-pantry['tree/sittergithubio'] = tree-sittergithubioPackage
-pantry['caddyserver.com'] = caddyservercomPackage
-pantry['libsdl.org'] = libsdlorgPackage
-pantry['go.dev'] = godevPackage
-pantry['kpt.dev'] = kptdevPackage
-pantry['replibyte.com'] = replibytecomPackage
-pantry['golangci/lintrun'] = golangci-lintrunPackage
-pantry['apollographql.com'] = apollographqlcomPackage
-pantry['tlr.dev'] = tlrdevPackage
-pantry['vaultproject.io'] = vaultprojectioPackage
-pantry['nike.com'] = nikecomPackage
-pantry['tinygo.org'] = tinygoorgPackage
-pantry['phpmyadmin.net'] = phpmyadminnetPackage
-pantry['developersyubico.com'] = developersyubicocomPackage
-pantry['gstreamerfreedesktop.org'] = gstreamerfreedesktoporgPackage
-pantry['robotframework.org'] = robotframeworkorgPackage
-pantry['alsa/projectorg'] = alsa-projectorgPackage
-pantry['reacheremail'] = reacheremailPackage
-pantry['dgraph.io'] = dgraphioPackage
-pantry['denilsonsanombr'] = denilsonsanombrPackage
-pantry['swift.org'] = swiftorgPackage
-pantry['makotemplates.org'] = makotemplatesorgPackage
-pantry['mcmc/jagssourceforgeio'] = mcmc-jagssourceforgeioPackage
-pantry['freetype.org'] = freetypeorgPackage
-pantry['tmate.io'] = tmateioPackage
-pantry['depot.dev'] = depotdevPackage
+// Define Pantry type
+export interface Pantry {
+  abseilio: PkgxPackage
+  acornio: PkgxPackage
+  acornioacorncli: PkgxPackage
+  agptco: PkgxPackage
+  agwaname: PkgxPackage
+  agwanamegitcrypt: PkgxPackage
+  akuityio: PkgxPackage
+  akuityiokargo: PkgxPackage
+  alacrittyorg: PkgxPackage
+  alembicsqlalchemyorg: PkgxPackage
+  alsaprojectorg: PkgxPackage
+  alsaprojectorgalsalib: PkgxPackage
+  amberlangcom: PkgxPackage
+  amprs: PkgxPackage
+  amrdevelopergithubio: PkgxPackage
+  amrdevelopergithubiogql: PkgxPackage
+  anchorecom: PkgxPackage
+  anchorecomsyft: PkgxPackage
+  androidcom: PkgxPackage
+  androidcomcmdlinetools: PkgxPackage
+  angulardev: PkgxPackage
+  ansiblecom: PkgxPackage
+  ansiblecomansiblelint: PkgxPackage
+  aomediagooglesourcecom: PkgxPackage
+  aomediagooglesourcecomaom: PkgxPackage
+  apacheorg: PkgxPackage
+  apacheorgapr: PkgxPackage
+  apacheorgaprutil: PkgxPackage
+  apacheorgarrow: PkgxPackage
+  apacheorgavro: PkgxPackage
+  apacheorghttpd: PkgxPackage
+  apacheorgjmeter: PkgxPackage
+  apacheorgsubversion: PkgxPackage
+  apacheorgthrift: PkgxPackage
+  apacheorgzookeeper: PkgxPackage
+  apktoolorg: PkgxPackage
+  apollographqlcom: PkgxPackage
+  apollographqlcomrover: PkgxPackage
+  appiumio: PkgxPackage
+  applecom: PkgxPackage
+  applecomremote_cmds: PkgxPackage
+  apptainerorg: PkgxPackage
+  aquasecuritygithubio: PkgxPackage
+  aquasecuritygithubiotfsec: PkgxPackage
+  aquasecuritygithubiotrivy: PkgxPackage
+  arduinogithubio: PkgxPackage
+  arduinogithubioarduinocli: PkgxPackage
+  argbashdev: PkgxPackage
+  argoprojgithubio: PkgxPackage
+  argoprojgithubiocd: PkgxPackage
+  argoprojgithubioworkflows: PkgxPackage
+  aria2githubio: PkgxPackage
+  arkadedev: PkgxPackage
+  asciidoctororg: PkgxPackage
+  asciinemaorg: PkgxPackage
+  asciinemaorgagg: PkgxPackage
+  aspellnet: PkgxPackage
+  assimporg: PkgxPackage
+  astgrepgithubio: PkgxPackage
+  astralsh: PkgxPackage
+  astralshruff: PkgxPackage
+  astralshuv: PkgxPackage
+  atlasgoio: PkgxPackage
+  attrsorg: PkgxPackage
+  augeasnet: PkgxPackage
+  authzedcom: PkgxPackage
+  authzedcomspicedb: PkgxPackage
+  aux4io: PkgxPackage
+  awsamazoncom: PkgxPackage
+  awsamazoncomcdk: PkgxPackage
+  awsamazoncomcli: PkgxPackage
+  awsamazoncomsam: PkgxPackage
+  bashlydannybco: PkgxPackage
+  bcryptsourceforgenet: PkgxPackage
+  beyondgrepcom: PkgxPackage
+  biomejsdev: PkgxPackage
+  bitcoinorg: PkgxPackage
+  bittensorcom: PkgxPackage
+  bitwardencom: PkgxPackage
+  blake2net: PkgxPackage
+  blake2netlibb2: PkgxPackage
+  bloomreachcom: PkgxPackage
+  boostorg: PkgxPackage
+  borepub: PkgxPackage
+  breakfastquaycom: PkgxPackage
+  browserusecom: PkgxPackage
+  brxken128githubio: PkgxPackage
+  brxken128githubiodexios: PkgxPackage
+  budimanjojogithubio: PkgxPackage
+  bufbuild: PkgxPackage
+  buildpacksio: PkgxPackage
+  bunsh: PkgxPackage
+  bytebasecom: PkgxPackage
+  bytereeforg: PkgxPackage
+  caresorg: PkgxPackage
+  caddyservercom: PkgxPackage
+  cairographicsorg: PkgxPackage
+  capstoneengineorg: PkgxPackage
+  carapacesh: PkgxPackage
+  caskreadthedocsio: PkgxPackage
+  catborg: PkgxPackage
+  ccachedev: PkgxPackage
+  cedarpolicycom: PkgxPackage
+  cedarpolicycomcli: PkgxPackage
+  cephcom: PkgxPackage
+  ceressolverorg: PkgxPackage
+  certbotefforg: PkgxPackage
+  certifiio: PkgxPackage
+  cgalorg: PkgxPackage
+  changiedev: PkgxPackage
+  charmsh: PkgxPackage
+  checkovio: PkgxPackage
+  chezmoiio: PkgxPackage
+  chiarkgreenendorguk: PkgxPackage
+  chromedriverchromiumorg: PkgxPackage
+  ciliumio: PkgxPackage
+  circlecicom: PkgxPackage
+  ciscocom: PkgxPackage
+  classicyarnpkgcom: PkgxPackage
+  cligithubcom: PkgxPackage
+  clisporg: PkgxPackage
+  clogtoolgithubio: PkgxPackage
+  cloudflarecom: PkgxPackage
+  cloudfoundryorg: PkgxPackage
+  cloudnativepgio: PkgxPackage
+  cmakeorg: PkgxPackage
+  cmockaorg: PkgxPackage
+  cnqueryio: PkgxPackage
+  cocoapodsorg: PkgxPackage
+  cocogittoio: PkgxPackage
+  codercom: PkgxPackage
+  codevideolanorg: PkgxPackage
+  cointopsh: PkgxPackage
+  condaorg: PkgxPackage
+  conftestdev: PkgxPackage
+  connectrpcorg: PkgxPackage
+  consulio: PkgxPackage
+  convcogithubio: PkgxPackage
+  corednsio: PkgxPackage
+  cpanminus: PkgxPackage
+  cratesio: PkgxPackage
+  crazymaxdev: PkgxPackage
+  creativeprojectsgithubio: PkgxPackage
+  cruftgithubio: PkgxPackage
+  crypto: PkgxPackage
+  cryptographyio: PkgxPackage
+  crystallangorg: PkgxPackage
+  cscopesourceforgeio: PkgxPackage
+  csientuedutw: PkgxPackage
+  ctagsio: PkgxPackage
+  ctopsh: PkgxPackage
+  cuelangorg: PkgxPackage
+  curlieio: PkgxPackage
+  curlse: PkgxPackage
+  cyrusimaporg: PkgxPackage
+  cythonorg: PkgxPackage
+  d2langcom: PkgxPackage
+  daggerio: PkgxPackage
+  dartdev: PkgxPackage
+  darwinsyscom: PkgxPackage
+  databrickscom: PkgxPackage
+  daytonaio: PkgxPackage
+  dblabdanvergaracom: PkgxPackage
+  debianorg: PkgxPackage
+  deepwisdomai: PkgxPackage
+  denilsonsanombr: PkgxPackage
+  denoland: PkgxPackage
+  depotdev: PkgxPackage
+  destunreachorg: PkgxPackage
+  developer1passwordcom: PkgxPackage
+  developersyubicocom: PkgxPackage
+  devpodsh: PkgxPackage
+  devyorhelnl: PkgxPackage
+  dgraphio: PkgxPackage
+  dhalllangorg: PkgxPackage
+  dhruvkbdev: PkgxPackage
+  diggerdev: PkgxPackage
+  digiporg: PkgxPackage
+  digitaloceancom: PkgxPackage
+  direnvnet: PkgxPackage
+  dkrzde: PkgxPackage
+  dnslookupdog: PkgxPackage
+  docbookorg: PkgxPackage
+  dockercom: PkgxPackage
+  doctavecom: PkgxPackage
+  docutilsorg: PkgxPackage
+  dotenvlintergithubio: PkgxPackage
+  dotenvxcom: PkgxPackage
+  dotnetmicrosoftcom: PkgxPackage
+  doxygennl: PkgxPackage
+  dozzledev: PkgxPackage
+  dprintdev: PkgxPackage
+  drifreedesktoporg: PkgxPackage
+  duckdborg: PkgxPackage
+  duktapeorg: PkgxPackage
+  dystroyorg: PkgxPackage
+  earthlydev: PkgxPackage
+  ebassigithubio: PkgxPackage
+  edgedbcom: PkgxPackage
+  eigentuxfamilyorg: PkgxPackage
+  eksctlio: PkgxPackage
+  elementsprojectorg: PkgxPackage
+  elfutilsorg: PkgxPackage
+  elixirlangorg: PkgxPackage
+  elizaosgithubio: PkgxPackage
+  elvsh: PkgxPackage
+  encoredev: PkgxPackage
+  endoflifedate: PkgxPackage
+  epsilonprojectsourceforgeio: PkgxPackage
+  erlangorg: PkgxPackage
+  etcdio: PkgxPackage
+  exiftoolorg: PkgxPackage
+  expodev: PkgxPackage
+  eyrieorg: PkgxPackage
+  f1bonacc1githubio: PkgxPackage
+  fabianlindforsse: PkgxPackage
+  facebookcom: PkgxPackage
+  fairwindscom: PkgxPackage
+  fastlanetools: PkgxPackage
+  felixkratzgithubio: PkgxPackage
+  fermyoncom: PkgxPackage
+  ffmpegorg: PkgxPackage
+  fftworg: PkgxPackage
+  filippoio: PkgxPackage
+  fishshellcom: PkgxPackage
+  fliptio: PkgxPackage
+  flitpypaio: PkgxPackage
+  fltkorg: PkgxPackage
+  fluentciio: PkgxPackage
+  flutterdev: PkgxPackage
+  fluxcdio: PkgxPackage
+  flyio: PkgxPackage
+  flywaydborg: PkgxPackage
+  fmtdev: PkgxPackage
+  fnaxnagithubio: PkgxPackage
+  freedesktoporg: PkgxPackage
+  freeglutsourceforgeio: PkgxPackage
+  freetdsorg: PkgxPackage
+  freetypeorg: PkgxPackage
+  frei0rdyneorg: PkgxPackage
+  fuellabsgithubio: PkgxPackage
+  fukuchiorg: PkgxPackage
+  fullstorycom: PkgxPackage
+  furyco: PkgxPackage
+  fxwtf: PkgxPackage
+  gaiagisit: PkgxPackage
+  gdalorg: PkgxPackage
+  geoffgreerfm: PkgxPackage
+  getclipboardapp: PkgxPackage
+  getcomposerorg: PkgxPackage
+  getfoundrysh: PkgxPackage
+  getsopsio: PkgxPackage
+  getsynthcom: PkgxPackage
+  getzolaorg: PkgxPackage
+  geuzorg: PkgxPackage
+  gflagsgithubio: PkgxPackage
+  ghostgumcomau: PkgxPackage
+  ghostscriptcom: PkgxPackage
+  giflibsourceforgeio: PkgxPackage
+  gitclifforg: PkgxPackage
+  gitlfscom: PkgxPackage
+  gitquickstatssh: PkgxPackage
+  gitscmorg: PkgxPackage
+  gittowncom: PkgxPackage
+  githubcom: PkgxPackage
+  gitlabcom: PkgxPackage
+  gitleaksio: PkgxPackage
+  gitosgeoorg: PkgxPackage
+  gittoztnet: PkgxPackage
+  glarosdtcumnedu: PkgxPackage
+  gleamrun: PkgxPackage
+  glewsourceforgeio: PkgxPackage
+  glfworg: PkgxPackage
+  glmgtrucnet: PkgxPackage
+  gnomeorg: PkgxPackage
+  gnuorg: PkgxPackage
+  gnupgorg: PkgxPackage
+  gnuplotinfo: PkgxPackage
+  gnutlsorg: PkgxPackage
+  godev: PkgxPackage
+  gohugoio: PkgxPackage
+  golangcilintrun: PkgxPackage
+  gomplateca: PkgxPackage
+  googlecom: PkgxPackage
+  googlegithubio: PkgxPackage
+  goreleasercom: PkgxPackage
+  gouberorg: PkgxPackage
+  gourceio: PkgxPackage
+  gphotoorg: PkgxPackage
+  gqlgencom: PkgxPackage
+  gradleorg: PkgxPackage
+  grafanacom: PkgxPackage
+  granteddev: PkgxPackage
+  graphicsmagickorg: PkgxPackage
+  graphitesilorg: PkgxPackage
+  graphqleditorcom: PkgxPackage
+  graphvizorg: PkgxPackage
+  groongaorg: PkgxPackage
+  groovylangorg: PkgxPackage
+  grpcio: PkgxPackage
+  gstreamerfreedesktoporg: PkgxPackage
+  gtkorg: PkgxPackage
+  gtssourceforgenet: PkgxPackage
+  hadronsorg: PkgxPackage
+  hardingmotdca: PkgxPackage
+  harfbuzzorg: PkgxPackage
+  hashicorpcom: PkgxPackage
+  haskellorg: PkgxPackage
+  hasuraio: PkgxPackage
+  hatchpypaio: PkgxPackage
+  hboehminfo: PkgxPackage
+  hdfgrouporg: PkgxPackage
+  heasarcgsfcnasagov: PkgxPackage
+  helixeditorcom: PkgxPackage
+  helmsh: PkgxPackage
+  herokucom: PkgxPackage
+  hetznercom: PkgxPackage
+  hjsongithubio: PkgxPackage
+  htmltidyorg: PkgxPackage
+  htopdev: PkgxPackage
+  htsliborg: PkgxPackage
+  httpieio: PkgxPackage
+  huggingfaceco: PkgxPackage
+  hugowang: PkgxPackage
+  hunspellgithubio: PkgxPackage
+  hurldev: PkgxPackage
+  ibrcstubsde: PkgxPackage
+  idleberggithubio: PkgxPackage
+  ijgorg: PkgxPackage
+  imageflowio: PkgxPackage
+  imagemagickorg: PkgxPackage
+  indexsupplycom: PkgxPackage
+  infoziporg: PkgxPackage
+  infracostio: PkgxPackage
+  intelcom: PkgxPackage
+  invisibleislandnet: PkgxPackage
+  ipfstech: PkgxPackage
+  ipythonorg: PkgxPackage
+  irohcomputer: PkgxPackage
+  iscorg: PkgxPackage
+  istioio: PkgxPackage
+  itstoolorg: PkgxPackage
+  ivarchcom: PkgxPackage
+  jbangdev: PkgxPackage
+  jbig2deccom: PkgxPackage
+  jedisct1githubio: PkgxPackage
+  jedsoftorg: PkgxPackage
+  jemallocnet: PkgxPackage
+  jenkinsxio: PkgxPackage
+  jenkinsio: PkgxPackage
+  jenvbe: PkgxPackage
+  jetporchcom: PkgxPackage
+  jfrogcom: PkgxPackage
+  jlessio: PkgxPackage
+  jonasgithubio: PkgxPackage
+  jpegorg: PkgxPackage
+  jsonnetorg: PkgxPackage
+  jugitfzjuelichde: PkgxPackage
+  jujuis: PkgxPackage
+  julialangorg: PkgxPackage
+  jumppaddev: PkgxPackage
+  jupyterorg: PkgxPackage
+  justsystems: PkgxPackage
+  k3dio: PkgxPackage
+  k6io: PkgxPackage
+  k9scliio: PkgxPackage
+  kafkaapacheorg: PkgxPackage
+  kagglecom: PkgxPackage
+  keephqdev: PkgxPackage
+  kerberosorg: PkgxPackage
+  kernelorg: PkgxPackage
+  khanacademyorg: PkgxPackage
+  khronosorg: PkgxPackage
+  kindsigsk8sio: PkgxPackage
+  kislyukgithubio: PkgxPackage
+  kluctlio: PkgxPackage
+  kobuild: PkgxPackage
+  kornelski: PkgxPackage
+  kotlinlangorg: PkgxPackage
+  koyebcom: PkgxPackage
+  kptdev: PkgxPackage
+  krewsigsk8sio: PkgxPackage
+  ktlintgithubio: PkgxPackage
+  kubebuilderio: PkgxPackage
+  kubecmcloud: PkgxPackage
+  kubectxdev: PkgxPackage
+  kubelinterio: PkgxPackage
+  kubernetesio: PkgxPackage
+  kubesharkco: PkgxPackage
+  ladspaorg: PkgxPackage
+  lamesourceforgeio: PkgxPackage
+  langchaincom: PkgxPackage
+  laravelcom: PkgxPackage
+  lavinmqcom: PkgxPackage
+  lcdforg: PkgxPackage
+  leethomasongithubio: PkgxPackage
+  leolangorg: PkgxPackage
+  leonerdorguk: PkgxPackage
+  leptonicaorg: PkgxPackage
+  lftpyarru: PkgxPackage
+  libarchiveorg: PkgxPackage
+  libcxxllvmorg: PkgxPackage
+  libeventorg: PkgxPackage
+  libexifgithubio: PkgxPackage
+  libexpatgithubio: PkgxPackage
+  libgdgithubio: PkgxPackage
+  libgeosorg: PkgxPackage
+  libgit2org: PkgxPackage
+  libimobiledeviceorg: PkgxPackage
+  libislsourceforgeio: PkgxPackage
+  libjpegturboorg: PkgxPackage
+  liblqrwikidotcom: PkgxPackage
+  libpipelinegitlabio: PkgxPackage
+  libpngorg: PkgxPackage
+  libproxygithubio: PkgxPackage
+  libraworg: PkgxPackage
+  libsdlorg: PkgxPackage
+  libsodiumorg: PkgxPackage
+  libsouporg: PkgxPackage
+  libspngorg: PkgxPackage
+  libssh2org: PkgxPackage
+  libsshorg: PkgxPackage
+  libtomnet: PkgxPackage
+  liburcuorg: PkgxPackage
+  libusbinfo: PkgxPackage
+  libuvorg: PkgxPackage
+  libvipsorg: PkgxPackage
+  libwebsocketsorg: PkgxPackage
+  libziporg: PkgxPackage
+  limavmio: PkgxPackage
+  linkerdio: PkgxPackage
+  linuxpamorg: PkgxPackage
+  liteclicom: PkgxPackage
+  littlecmscom: PkgxPackage
+  llmdatasetteio: PkgxPackage
+  lloydgithubio: PkgxPackage
+  llvmorg: PkgxPackage
+  localaiio: PkgxPackage
+  localstackcloud: PkgxPackage
+  logdydev: PkgxPackage
+  logologicalorg: PkgxPackage
+  luajitorg: PkgxPackage
+  luaorg: PkgxPackage
+  luarocksorg: PkgxPackage
+  lucagrullacom: PkgxPackage
+  lunarvimorg: PkgxPackage
+  lxmlde: PkgxPackage
+  lycheeclirs: PkgxPackage
+  lz4org: PkgxPackage
+  maaslalanicom: PkgxPackage
+  macvimorg: PkgxPackage
+  mailpitaxllentorg: PkgxPackage
+  makotemplatesorg: PkgxPackage
+  mandbgitlabio: PkgxPackage
+  mandocbsdlv: PkgxPackage
+  mariadbcom: PkgxPackage
+  markupsafepalletsprojectscom: PkgxPackage
+  materializecom: PkgxPackage
+  matiosourceforgeio: PkgxPackage
+  maturinrs: PkgxPackage
+  mavenapacheorg: PkgxPackage
+  mcmcjagssourceforgeio: PkgxPackage
+  mercurerocks: PkgxPackage
+  mercurialscmorg: PkgxPackage
+  mergestatcom: PkgxPackage
+  mesa3dorg: PkgxPackage
+  mesonbuildcom: PkgxPackage
+  microeditorgithubio: PkgxPackage
+  microbreworg: PkgxPackage
+  microcksio: PkgxPackage
+  microsoftcom: PkgxPackage
+  midnightcommanderorg: PkgxPackage
+  minio: PkgxPackage
+  misejdxdev: PkgxPackage
+  mitmproxyorg: PkgxPackage
+  mkcertdev: PkgxPackage
+  mkdocsorg: PkgxPackage
+  modalcom: PkgxPackage
+  moderncorg: PkgxPackage
+  mongodbcom: PkgxPackage
+  moonrepodev: PkgxPackage
+  moshorg: PkgxPackage
+  mozillaorg: PkgxPackage
+  mpg123de: PkgxPackage
+  mpmathorg: PkgxPackage
+  mpvio: PkgxPackage
+  msgpackorg: PkgxPackage
+  mujscom: PkgxPackage
+  munlangorg: PkgxPackage
+  mupdfcom: PkgxPackage
+  musepacknet: PkgxPackage
+  musllibcorg: PkgxPackage
+  mvdancc: PkgxPackage
+  mypylangorg: PkgxPackage
+  mysqlcom: PkgxPackage
+  nanoeditororg: PkgxPackage
+  nasmus: PkgxPackage
+  neovimio: PkgxPackage
+  netflixcom: PkgxPackage
+  netliborg: PkgxPackage
+  netpbmsourceforgenet: PkgxPackage
+  networkxorg: PkgxPackage
+  nghttp2org: PkgxPackage
+  nginxorg: PkgxPackage
+  nikecom: PkgxPackage
+  nimlangorg: PkgxPackage
+  ninjabuildorg: PkgxPackage
+  nixosorg: PkgxPackage
+  nixpackscom: PkgxPackage
+  nlnetlabsnl: PkgxPackage
+  nmaporg: PkgxPackage
+  nodejsorg: PkgxPackage
+  nomadprojectio: PkgxPackage
+  nongnuorg: PkgxPackage
+  notrojgithubio: PkgxPackage
+  npmjscom: PkgxPackage
+  ntporg: PkgxPackage
+  numbatdev: PkgxPackage
+  numpyorg: PkgxPackage
+  nushellsh: PkgxPackage
+  nxdev: PkgxPackage
+  oauth2proxygithubio: PkgxPackage
+  oberhumercom: PkgxPackage
+  odigosio: PkgxPackage
+  ohmyposhdev: PkgxPackage
+  ollamaai: PkgxPackage
+  onefetchdev: PkgxPackage
+  onsigithubio: PkgxPackage
+  openmpiorg: PkgxPackage
+  openaicom: PkgxPackage
+  openapigeneratortech: PkgxPackage
+  openbaoorg: PkgxPackage
+  openblasnet: PkgxPackage
+  opencoreamrsourceforgeio: PkgxPackage
+  opendaporg: PkgxPackage
+  opendevorg: PkgxPackage
+  openexrcom: PkgxPackage
+  openinterpretercom: PkgxPackage
+  openjdkorg: PkgxPackage
+  openjpegorg: PkgxPackage
+  openldaporg: PkgxPackage
+  openmpllvmorg: PkgxPackage
+  openpmixgithubio: PkgxPackage
+  openpolicyagentorg: PkgxPackage
+  openprintinggithubio: PkgxPackage
+  openrestyorg: PkgxPackage
+  opensearchorg: PkgxPackage
+  openshiftcom: PkgxPackage
+  openslideorg: PkgxPackage
+  opensshcom: PkgxPackage
+  opensslorg: PkgxPackage
+  opentofuorg: PkgxPackage
+  openvpnnet: PkgxPackage
+  operatorframeworkio: PkgxPackage
+  opuscodecorg: PkgxPackage
+  oraclecom: PkgxPackage
+  orasland: PkgxPackage
+  ordinalscom: PkgxPackage
+  orhundev: PkgxPackage
+  otssnipttcom: PkgxPackage
+  packerio: PkgxPackage
+  pagureio: PkgxPackage
+  palletsprojectscom: PkgxPackage
+  pandocorg: PkgxPackage
+  pantsbuildorg: PkgxPackage
+  paulfitzgithubio: PkgxPackage
+  pcreorg: PkgxPackage
+  pcscliteapdufr: PkgxPackage
+  pdmfmingdev: PkgxPackage
+  peopleengrtamuedu: PkgxPackage
+  peopleredhatcom: PkgxPackage
+  perlorg: PkgxPackage
+  permitio: PkgxPackage
+  phpmyadminnet: PkgxPackage
+  phpnet: PkgxPackage
+  pimalayaorg: PkgxPackage
+  pinnipeddev: PkgxPackage
+  pipenvpypaio: PkgxPackage
+  pippypaio: PkgxPackage
+  pixmanorg: PkgxPackage
+  pkgxsh: PkgxPackage
+  pkllangorg: PkgxPackage
+  planetscalecom: PkgxPackage
+  plantumlcom: PkgxPackage
+  plasmasturmorg: PkgxPackage
+  plocatesessenet: PkgxPackage
+  pluralithcom: PkgxPackage
+  pngquantorg: PkgxPackage
+  pnpmio: PkgxPackage
+  po4aorg: PkgxPackage
+  pocketbaseio: PkgxPackage
+  podmanio: PkgxPackage
+  poktnetwork: PkgxPackage
+  popplerfreedesktoporg: PkgxPackage
+  portaudiocom: PkgxPackage
+  postgresqlorg: PkgxPackage
+  postgrestorg: PkgxPackage
+  practicalschemenet: PkgxPackage
+  precommitcom: PkgxPackage
+  prefixdev: PkgxPackage
+  presslygithubio: PkgxPackage
+  prettierio: PkgxPackage
+  printfngithubio: PkgxPackage
+  priverdev: PkgxPackage
+  projectcopaceticgithubio: PkgxPackage
+  projectdiscoveryio: PkgxPackage
+  projenio: PkgxPackage
+  projorg: PkgxPackage
+  protobufdev: PkgxPackage
+  prqllangorg: PkgxPackage
+  psycopgorg: PkgxPackage
+  publichronopikde: PkgxPackage
+  pugixmlorg: PkgxPackage
+  pulumiio: PkgxPackage
+  pwgensourceforgeio: PkgxPackage
+  pwmtorg: PkgxPackage
+  pygmentsorg: PkgxPackage
+  pyinvokeorg: PkgxPackage
+  pypagithubio: PkgxPackage
+  pypaio: PkgxPackage
+  pytestorg: PkgxPackage
+  pythonpilloworg: PkgxPackage
+  pythonpoetryorg: PkgxPackage
+  pythonorg: PkgxPackage
+  pyyamlorg: PkgxPackage
+  qemuorg: PkgxPackage
+  qhullorg: PkgxPackage
+  qpdfsourceforgeio: PkgxPackage
+  qtio: PkgxPackage
+  quarydev: PkgxPackage
+  quickwitio: PkgxPackage
+  rwosorg: PkgxPackage
+  rabbitmqcom: PkgxPackage
+  raccoinorg: PkgxPackage
+  radicleorg: PkgxPackage
+  railwayapp: PkgxPackage
+  rapidjsonorg: PkgxPackage
+  rarlabcom: PkgxPackage
+  rbenvorg: PkgxPackage
+  rcloneorg: PkgxPackage
+  re2corg: PkgxPackage
+  reacheremail: PkgxPackage
+  rebar3org: PkgxPackage
+  redisio: PkgxPackage
+  rendercom: PkgxPackage
+  replibytecom: PkgxPackage
+  resticnet: PkgxPackage
+  rhashsourceforgenet: PkgxPackage
+  rigauxorg: PkgxPackage
+  riverbankcomputingcom: PkgxPackage
+  robotframeworkorg: PkgxPackage
+  rockdabootgithubio: PkgxPackage
+  rometools: PkgxPackage
+  rpmorg: PkgxPackage
+  rsyncsambaorg: PkgxPackage
+  rtmpdumpmplayerhqhu: PkgxPackage
+  rtomaykogithubio: PkgxPackage
+  rubocoporg: PkgxPackage
+  rubylangorg: PkgxPackage
+  rubygemsorg: PkgxPackage
+  ruciocernch: PkgxPackage
+  runatlantisio: PkgxPackage
+  rustlanggithubio: PkgxPackage
+  rustlangorg: PkgxPackage
+  rustscriptorg: PkgxPackage
+  ryeastralsh: PkgxPackage
+  s3toolsorg: PkgxPackage
+  saerasoftcom: PkgxPackage
+  sagiegurarigithubio: PkgxPackage
+  sasslangcom: PkgxPackage
+  savannahnongnuorg: PkgxPackage
+  scalalangorg: PkgxPackage
+  scalasbtorg: PkgxPackage
+  scalewaycom: PkgxPackage
+  schollzcom: PkgxPackage
+  sconsorg: PkgxPackage
+  scryerpl: PkgxPackage
+  sdkmanio: PkgxPackage
+  seaweedfscom: PkgxPackage
+  sentryio: PkgxPackage
+  sfcgalorg: PkgxPackage
+  sfnet: PkgxPackage
+  sftpgocom: PkgxPackage
+  shellchecknet: PkgxPackage
+  sigstoredev: PkgxPackage
+  simplesystemsorg: PkgxPackage
+  singboxapp: PkgxPackage
+  skaffolddev: PkgxPackage
+  smartmontoolsorg: PkgxPackage
+  snapletdev: PkgxPackage
+  sniffnetnet: PkgxPackage
+  snykio: PkgxPackage
+  solanacom: PkgxPackage
+  soldeerxyz: PkgxPackage
+  soliditylangorg: PkgxPackage
+  sonarqubeorg: PkgxPackage
+  sourceforgenet: PkgxPackage
+  sourcewareorg: PkgxPackage
+  soxrsourceforgenet: PkgxPackage
+  spacetimedbcom: PkgxPackage
+  spawnlink: PkgxPackage
+  speexorg: PkgxPackage
+  sphinxdocorg: PkgxPackage
+  sqlcdev: PkgxPackage
+  sqlfluffcom: PkgxPackage
+  sqliteorg: PkgxPackage
+  squawkhqcom: PkgxPackage
+  srtallianceorg: PkgxPackage
+  sshxio: PkgxPackage
+  starshiprs: PkgxPackage
+  steampipeio: PkgxPackage
+  stedolangithubio: PkgxPackage
+  straceio: PkgxPackage
+  streamlinkgithubio: PkgxPackage
+  stripecom: PkgxPackage
+  supabasecom: PkgxPackage
+  surrealdbcom: PkgxPackage
+  svenstarogithubio: PkgxPackage
+  swaggerio: PkgxPackage
+  swiftorg: PkgxPackage
+  swigorg: PkgxPackage
+  symfonycom: PkgxPackage
+  sympyorg: PkgxPackage
+  syncthingnet: PkgxPackage
+  systemdio: PkgxPackage
+  tagliborg: PkgxPackage
+  tailcallrun: PkgxPackage
+  tailwindcsscom: PkgxPackage
+  taku910githubio: PkgxPackage
+  talosdev: PkgxPackage
+  taplotamasfedev: PkgxPackage
+  tartrun: PkgxPackage
+  taskfiledev: PkgxPackage
+  tcllangorg: PkgxPackage
+  tcltk: PkgxPackage
+  tcpdumporg: PkgxPackage
+  tcshorg: PkgxPackage
+  teaxyz: PkgxPackage
+  tectonictypesettinggithubio: PkgxPackage
+  templguide: PkgxPackage
+  temporalio: PkgxPackage
+  terraformdocsio: PkgxPackage
+  terraformio: PkgxPackage
+  terragruntgruntworkio: PkgxPackage
+  terratagio: PkgxPackage
+  tesseractocrgithubio: PkgxPackage
+  thekelleysorguk: PkgxPackage
+  theoraorg: PkgxPackage
+  thoughtworksgithubio: PkgxPackage
+  thrysoeedk: PkgxPackage
+  tidbytcom: PkgxPackage
+  tiltdev: PkgxPackage
+  tinybirdco: PkgxPackage
+  tinygoorg: PkgxPackage
+  tldrsh: PkgxPackage
+  tlrdev: PkgxPackage
+  tmateio: PkgxPackage
+  toxwiki: PkgxPackage
+  traefikio: PkgxPackage
+  treesittergithubio: PkgxPackage
+  trippyclirs: PkgxPackage
+  trufflesecuritycom: PkgxPackage
+  tsl0922githubio: PkgxPackage
+  tuistio: PkgxPackage
+  tukaaniorg: PkgxPackage
+  tursotech: PkgxPackage
+  typescriptlangorg: PkgxPackage
+  typstapp: PkgxPackage
+  unboundnet: PkgxPackage
+  unicodeorg: PkgxPackage
+  unidataucaredu: PkgxPackage
+  unixodbcorg: PkgxPackage
+  upliftcidev: PkgxPackage
+  upxgithubio: PkgxPackage
+  uriparsergithubio: PkgxPackage
+  valesh: PkgxPackage
+  valkeyio: PkgxPackage
+  vamppluginsorg: PkgxPackage
+  vannaai: PkgxPackage
+  vapoursynthcom: PkgxPackage
+  vaultprojectio: PkgxPackage
+  vclustercom: PkgxPackage
+  vektragithubio: PkgxPackage
+  veleroio: PkgxPackage
+  veracodecom: PkgxPackage
+  vercelcom: PkgxPackage
+  versitycom: PkgxPackage
+  viaductai: PkgxPackage
+  videolanorg: PkgxPackage
+  vimorg: PkgxPackage
+  virtualenvpypaio: PkgxPackage
+  virtualsquareorg: PkgxPackage
+  vitejsdev: PkgxPackage
+  vlangio: PkgxPackage
+  voltash: PkgxPackage
+  wailsio: PkgxPackage
+  wait4xdev: PkgxPackage
+  wasmerio: PkgxPackage
+  watchexecgithubio: PkgxPackage
+  waterlanhomexs4allnl: PkgxPackage
+  wavpackcom: PkgxPackage
+  waylandfreedesktoporg: PkgxPackage
+  webmprojectorg: PkgxPackage
+  werfio: PkgxPackage
+  wezfurlongorg: PkgxPackage
+  wilfredmeuk: PkgxPackage
+  wimlibnet: PkgxPackage
+  wiresharkorg: PkgxPackage
+  wixcom: PkgxPackage
+  wkentarogithubio: PkgxPackage
+  wpewebkitorg: PkgxPackage
+  wundergraphcom: PkgxPackage
+  wxwidgetsorg: PkgxPackage
+  xcfiledev: PkgxPackage
+  xercesapacheorg: PkgxPackage
+  xiphorg: PkgxPackage
+  xkbcommonorg: PkgxPackage
+  xorg: PkgxPackage
+  xplrdev: PkgxPackage
+  xpraorg: PkgxPackage
+  xtlsgithubio: PkgxPackage
+  xvidcom: PkgxPackage
+  yadmio: PkgxPackage
+  yarnpkgcom: PkgxPackage
+  yasmtortallnet: PkgxPackage
+  youtubedlorg: PkgxPackage
+  ytdlporg: PkgxPackage
+  yuigithubio: PkgxPackage
+  zarfdev: PkgxPackage
+  zeromqorg: PkgxPackage
+  ziglangorg: PkgxPackage
+  zlibnet: PkgxPackage
+  zrokio: PkgxPackage
+  zshsourceforgeio: PkgxPackage
+}
 
-/**
- * Get a package by name, supporting both full domain and aliases
- */
-export function getPackage(name: string): PkgxPackage | undefined {
-  // Direct lookup
-  if (pantry[name]) {
-    return pantry[name]
-  }
-
-  // Check aliases - loop through all packages
-  for (const pkg of Object.values(pantry)) {
-    // Check if this package has the name as an alias
-    if (pkg.aliases && pkg.aliases.includes(name)) {
-      return pkg
-    }
-  }
-
-  return undefined
+// Export pantry object with package mappings
+export const pantry: Pantry = {
+  abseilio: abseilio.abseilioPackage,
+  acornio: acornio.acornioPackage,
+  acornioacorncli: acornioacorncli.acornioacorncliPackage,
+  agptco: agptco.agptcoPackage,
+  agwaname: agwaname.agwanamePackage,
+  agwanamegitcrypt: agwanamegitcrypt.agwanamegitcryptPackage,
+  akuityio: akuityio.akuityioPackage,
+  akuityiokargo: akuityiokargo.akuityiokargoPackage,
+  alacrittyorg: alacrittyorg.alacrittyorgPackage,
+  alembicsqlalchemyorg: alembicsqlalchemyorg.alembicsqlalchemyorgPackage,
+  alsaprojectorg: alsa_projectorg.alsaprojectorgPackage,
+  alsaprojectorgalsalib: alsa_projectorgalsalib.alsaprojectorgalsalibPackage,
+  amberlangcom: amber_langcom.amberlangcomPackage,
+  amprs: amprs.amprsPackage,
+  amrdevelopergithubio: amrdevelopergithubio.amrdevelopergithubioPackage,
+  amrdevelopergithubiogql: amrdevelopergithubiogql.amrdevelopergithubiogqlPackage,
+  anchorecom: anchorecom.anchorecomPackage,
+  anchorecomsyft: anchorecomsyft.anchorecomsyftPackage,
+  androidcom: androidcom.androidcomPackage,
+  androidcomcmdlinetools: androidcomcmdlinetools.androidcomcmdlinetoolsPackage,
+  angulardev: angulardev.angulardevPackage,
+  ansiblecom: ansiblecom.ansiblecomPackage,
+  ansiblecomansiblelint: ansiblecomansiblelint.ansiblecomansiblelintPackage,
+  aomediagooglesourcecom: aomediagooglesourcecom.aomediagooglesourcecomPackage,
+  aomediagooglesourcecomaom: aomediagooglesourcecomaom.aomediagooglesourcecomaomPackage,
+  apacheorg: apacheorg.apacheorgPackage,
+  apacheorgapr: apacheorgapr.apacheorgaprPackage,
+  apacheorgaprutil: apacheorgaprutil.apacheorgaprutilPackage,
+  apacheorgarrow: apacheorgarrow.apacheorgarrowPackage,
+  apacheorgavro: apacheorgavro.apacheorgavroPackage,
+  apacheorghttpd: apacheorghttpd.apacheorghttpdPackage,
+  apacheorgjmeter: apacheorgjmeter.apacheorgjmeterPackage,
+  apacheorgsubversion: apacheorgsubversion.apacheorgsubversionPackage,
+  apacheorgthrift: apacheorgthrift.apacheorgthriftPackage,
+  apacheorgzookeeper: apacheorgzookeeper.apacheorgzookeeperPackage,
+  apktoolorg: apktoolorg.apktoolorgPackage,
+  apollographqlcom: apollographqlcom.apollographqlcomPackage,
+  apollographqlcomrover: apollographqlcomrover.apollographqlcomroverPackage,
+  appiumio: appiumio.appiumioPackage,
+  applecom: applecom.applecomPackage,
+  applecomremote_cmds: applecomremote_cmds.applecomremote_cmdsPackage,
+  apptainerorg: apptainerorg.apptainerorgPackage,
+  aquasecuritygithubio: aquasecuritygithubio.aquasecuritygithubioPackage,
+  aquasecuritygithubiotfsec: aquasecuritygithubiotfsec.aquasecuritygithubiotfsecPackage,
+  aquasecuritygithubiotrivy: aquasecuritygithubiotrivy.aquasecuritygithubiotrivyPackage,
+  arduinogithubio: arduinogithubio.arduinogithubioPackage,
+  arduinogithubioarduinocli: arduinogithubioarduinocli.arduinogithubioarduinocliPackage,
+  argbashdev: argbashdev.argbashdevPackage,
+  argoprojgithubio: argoprojgithubio.argoprojgithubioPackage,
+  argoprojgithubiocd: argoprojgithubiocd.argoprojgithubiocdPackage,
+  argoprojgithubioworkflows: argoprojgithubioworkflows.argoprojgithubioworkflowsPackage,
+  aria2githubio: aria2githubio.aria2githubioPackage,
+  arkadedev: arkadedev.arkadedevPackage,
+  asciidoctororg: asciidoctororg.asciidoctororgPackage,
+  asciinemaorg: asciinemaorg.asciinemaorgPackage,
+  asciinemaorgagg: asciinemaorgagg.asciinemaorgaggPackage,
+  aspellnet: aspellnet.aspellnetPackage,
+  assimporg: assimporg.assimporgPackage,
+  astgrepgithubio: ast_grepgithubio.astgrepgithubioPackage,
+  astralsh: astralsh.astralshPackage,
+  astralshruff: astralshruff.astralshruffPackage,
+  astralshuv: astralshuv.astralshuvPackage,
+  atlasgoio: atlasgoio.atlasgoioPackage,
+  attrsorg: attrsorg.attrsorgPackage,
+  augeasnet: augeasnet.augeasnetPackage,
+  authzedcom: authzedcom.authzedcomPackage,
+  authzedcomspicedb: authzedcomspicedb.authzedcomspicedbPackage,
+  aux4io: aux4io.aux4ioPackage,
+  awsamazoncom: awsamazoncom.awsamazoncomPackage,
+  awsamazoncomcdk: awsamazoncomcdk.awsamazoncomcdkPackage,
+  awsamazoncomcli: awsamazoncomcli.awsamazoncomcliPackage,
+  awsamazoncomsam: awsamazoncomsam.awsamazoncomsamPackage,
+  bashlydannybco: bashlydannybco.bashlydannybcoPackage,
+  bcryptsourceforgenet: bcryptsourceforgenet.bcryptsourceforgenetPackage,
+  beyondgrepcom: beyondgrepcom.beyondgrepcomPackage,
+  biomejsdev: biomejsdev.biomejsdevPackage,
+  bitcoinorg: bitcoinorg.bitcoinorgPackage,
+  bittensorcom: bittensorcom.bittensorcomPackage,
+  bitwardencom: bitwardencom.bitwardencomPackage,
+  blake2net: blake2net.blake2netPackage,
+  blake2netlibb2: blake2netlibb2.blake2netlibb2Package,
+  bloomreachcom: bloomreachcom.bloomreachcomPackage,
+  boostorg: boostorg.boostorgPackage,
+  borepub: borepub.borepubPackage,
+  breakfastquaycom: breakfastquaycom.breakfastquaycomPackage,
+  browserusecom: browser_usecom.browserusecomPackage,
+  brxken128githubio: brxken128githubio.brxken128githubioPackage,
+  brxken128githubiodexios: brxken128githubiodexios.brxken128githubiodexiosPackage,
+  budimanjojogithubio: budimanjojogithubio.budimanjojogithubioPackage,
+  bufbuild: bufbuild.bufbuildPackage,
+  buildpacksio: buildpacksio.buildpacksioPackage,
+  bunsh: bunsh.bunshPackage,
+  bytebasecom: bytebasecom.bytebasecomPackage,
+  bytereeforg: bytereeforg.bytereeforgPackage,
+  caresorg: c_aresorg.caresorgPackage,
+  caddyservercom: caddyservercom.caddyservercomPackage,
+  cairographicsorg: cairographicsorg.cairographicsorgPackage,
+  capstoneengineorg: capstone_engineorg.capstoneengineorgPackage,
+  carapacesh: carapacesh.carapaceshPackage,
+  caskreadthedocsio: caskreadthedocsio.caskreadthedocsioPackage,
+  catborg: catborg.catborgPackage,
+  ccachedev: ccachedev.ccachedevPackage,
+  cedarpolicycom: cedarpolicycom.cedarpolicycomPackage,
+  cedarpolicycomcli: cedarpolicycomcli.cedarpolicycomcliPackage,
+  cephcom: cephcom.cephcomPackage,
+  ceressolverorg: ceres_solverorg.ceressolverorgPackage,
+  certbotefforg: certbotefforg.certbotefforgPackage,
+  certifiio: certifiio.certifiioPackage,
+  cgalorg: cgalorg.cgalorgPackage,
+  changiedev: changiedev.changiedevPackage,
+  charmsh: charmsh.charmshPackage,
+  checkovio: checkovio.checkovioPackage,
+  chezmoiio: chezmoiio.chezmoiioPackage,
+  chiarkgreenendorguk: chiarkgreenendorguk.chiarkgreenendorgukPackage,
+  chromedriverchromiumorg: chromedriverchromiumorg.chromedriverchromiumorgPackage,
+  ciliumio: ciliumio.ciliumioPackage,
+  circlecicom: circlecicom.circlecicomPackage,
+  ciscocom: ciscocom.ciscocomPackage,
+  classicyarnpkgcom: classicyarnpkgcom.classicyarnpkgcomPackage,
+  cligithubcom: cligithubcom.cligithubcomPackage,
+  clisporg: clisporg.clisporgPackage,
+  clogtoolgithubio: clog_toolgithubio.clogtoolgithubioPackage,
+  cloudflarecom: cloudflarecom.cloudflarecomPackage,
+  cloudfoundryorg: cloudfoundryorg.cloudfoundryorgPackage,
+  cloudnativepgio: cloudnative_pgio.cloudnativepgioPackage,
+  cmakeorg: cmakeorg.cmakeorgPackage,
+  cmockaorg: cmockaorg.cmockaorgPackage,
+  cnqueryio: cnqueryio.cnqueryioPackage,
+  cocoapodsorg: cocoapodsorg.cocoapodsorgPackage,
+  cocogittoio: cocogittoio.cocogittoioPackage,
+  codercom: codercom.codercomPackage,
+  codevideolanorg: codevideolanorg.codevideolanorgPackage,
+  cointopsh: cointopsh.cointopshPackage,
+  condaorg: condaorg.condaorgPackage,
+  conftestdev: conftestdev.conftestdevPackage,
+  connectrpcorg: connectrpcorg.connectrpcorgPackage,
+  consulio: consulio.consulioPackage,
+  convcogithubio: convcogithubio.convcogithubioPackage,
+  corednsio: corednsio.corednsioPackage,
+  cpanminus: cpanminus.cpanminusPackage,
+  cratesio: cratesio.cratesioPackage,
+  crazymaxdev: crazymaxdev.crazymaxdevPackage,
+  creativeprojectsgithubio: creativeprojectsgithubio.creativeprojectsgithubioPackage,
+  cruftgithubio: cruftgithubio.cruftgithubioPackage,
+  crypto: crypto.cryptoPackage,
+  cryptographyio: cryptographyio.cryptographyioPackage,
+  crystallangorg: crystal_langorg.crystallangorgPackage,
+  cscopesourceforgeio: cscopesourceforgeio.cscopesourceforgeioPackage,
+  csientuedutw: csientuedutw.csientuedutwPackage,
+  ctagsio: ctagsio.ctagsioPackage,
+  ctopsh: ctopsh.ctopshPackage,
+  cuelangorg: cuelangorg.cuelangorgPackage,
+  curlieio: curlieio.curlieioPackage,
+  curlse: curlse.curlsePackage,
+  cyrusimaporg: cyrusimaporg.cyrusimaporgPackage,
+  cythonorg: cythonorg.cythonorgPackage,
+  d2langcom: d2langcom.d2langcomPackage,
+  daggerio: daggerio.daggerioPackage,
+  dartdev: dartdev.dartdevPackage,
+  darwinsyscom: darwinsyscom.darwinsyscomPackage,
+  databrickscom: databrickscom.databrickscomPackage,
+  daytonaio: daytonaio.daytonaioPackage,
+  dblabdanvergaracom: dblabdanvergaracom.dblabdanvergaracomPackage,
+  debianorg: debianorg.debianorgPackage,
+  deepwisdomai: deepwisdomai.deepwisdomaiPackage,
+  denilsonsanombr: denilsonsanombr.denilsonsanombrPackage,
+  denoland: denoland.denolandPackage,
+  depotdev: depotdev.depotdevPackage,
+  destunreachorg: dest_unreachorg.destunreachorgPackage,
+  developer1passwordcom: developer1passwordcom.developer1passwordcomPackage,
+  developersyubicocom: developersyubicocom.developersyubicocomPackage,
+  devpodsh: devpodsh.devpodshPackage,
+  devyorhelnl: devyorhelnl.devyorhelnlPackage,
+  dgraphio: dgraphio.dgraphioPackage,
+  dhalllangorg: dhall_langorg.dhalllangorgPackage,
+  dhruvkbdev: dhruvkbdev.dhruvkbdevPackage,
+  diggerdev: diggerdev.diggerdevPackage,
+  digiporg: digiporg.digiporgPackage,
+  digitaloceancom: digitaloceancom.digitaloceancomPackage,
+  direnvnet: direnvnet.direnvnetPackage,
+  dkrzde: dkrzde.dkrzdePackage,
+  dnslookupdog: dnslookupdog.dnslookupdogPackage,
+  docbookorg: docbookorg.docbookorgPackage,
+  dockercom: dockercom.dockercomPackage,
+  doctavecom: doctavecom.doctavecomPackage,
+  docutilsorg: docutilsorg.docutilsorgPackage,
+  dotenvlintergithubio: dotenv_lintergithubio.dotenvlintergithubioPackage,
+  dotenvxcom: dotenvxcom.dotenvxcomPackage,
+  dotnetmicrosoftcom: dotnetmicrosoftcom.dotnetmicrosoftcomPackage,
+  doxygennl: doxygennl.doxygennlPackage,
+  dozzledev: dozzledev.dozzledevPackage,
+  dprintdev: dprintdev.dprintdevPackage,
+  drifreedesktoporg: drifreedesktoporg.drifreedesktoporgPackage,
+  duckdborg: duckdborg.duckdborgPackage,
+  duktapeorg: duktapeorg.duktapeorgPackage,
+  dystroyorg: dystroyorg.dystroyorgPackage,
+  earthlydev: earthlydev.earthlydevPackage,
+  ebassigithubio: ebassigithubio.ebassigithubioPackage,
+  edgedbcom: edgedbcom.edgedbcomPackage,
+  eigentuxfamilyorg: eigentuxfamilyorg.eigentuxfamilyorgPackage,
+  eksctlio: eksctlio.eksctlioPackage,
+  elementsprojectorg: elementsprojectorg.elementsprojectorgPackage,
+  elfutilsorg: elfutilsorg.elfutilsorgPackage,
+  elixirlangorg: elixir_langorg.elixirlangorgPackage,
+  elizaosgithubio: elizaosgithubio.elizaosgithubioPackage,
+  elvsh: elvsh.elvshPackage,
+  encoredev: encoredev.encoredevPackage,
+  endoflifedate: endoflifedate.endoflifedatePackage,
+  epsilonprojectsourceforgeio: epsilon_projectsourceforgeio.epsilonprojectsourceforgeioPackage,
+  erlangorg: erlangorg.erlangorgPackage,
+  etcdio: etcdio.etcdioPackage,
+  exiftoolorg: exiftoolorg.exiftoolorgPackage,
+  expodev: expodev.expodevPackage,
+  eyrieorg: eyrieorg.eyrieorgPackage,
+  f1bonacc1githubio: f1bonacc1githubio.f1bonacc1githubioPackage,
+  fabianlindforsse: fabianlindforsse.fabianlindforssePackage,
+  facebookcom: facebookcom.facebookcomPackage,
+  fairwindscom: fairwindscom.fairwindscomPackage,
+  fastlanetools: fastlanetools.fastlanetoolsPackage,
+  felixkratzgithubio: felixkratzgithubio.felixkratzgithubioPackage,
+  fermyoncom: fermyoncom.fermyoncomPackage,
+  ffmpegorg: ffmpegorg.ffmpegorgPackage,
+  fftworg: fftworg.fftworgPackage,
+  filippoio: filippoio.filippoioPackage,
+  fishshellcom: fishshellcom.fishshellcomPackage,
+  fliptio: fliptio.fliptioPackage,
+  flitpypaio: flitpypaio.flitpypaioPackage,
+  fltkorg: fltkorg.fltkorgPackage,
+  fluentciio: fluentciio.fluentciioPackage,
+  flutterdev: flutterdev.flutterdevPackage,
+  fluxcdio: fluxcdio.fluxcdioPackage,
+  flyio: flyio.flyioPackage,
+  flywaydborg: flywaydborg.flywaydborgPackage,
+  fmtdev: fmtdev.fmtdevPackage,
+  fnaxnagithubio: fna_xnagithubio.fnaxnagithubioPackage,
+  freedesktoporg: freedesktoporg.freedesktoporgPackage,
+  freeglutsourceforgeio: freeglutsourceforgeio.freeglutsourceforgeioPackage,
+  freetdsorg: freetdsorg.freetdsorgPackage,
+  freetypeorg: freetypeorg.freetypeorgPackage,
+  frei0rdyneorg: frei0rdyneorg.frei0rdyneorgPackage,
+  fuellabsgithubio: fuellabsgithubio.fuellabsgithubioPackage,
+  fukuchiorg: fukuchiorg.fukuchiorgPackage,
+  fullstorycom: fullstorycom.fullstorycomPackage,
+  furyco: furyco.furycoPackage,
+  fxwtf: fxwtf.fxwtfPackage,
+  gaiagisit: gaia_gisit.gaiagisitPackage,
+  gdalorg: gdalorg.gdalorgPackage,
+  geoffgreerfm: geoffgreerfm.geoffgreerfmPackage,
+  getclipboardapp: getclipboardapp.getclipboardappPackage,
+  getcomposerorg: getcomposerorg.getcomposerorgPackage,
+  getfoundrysh: getfoundrysh.getfoundryshPackage,
+  getsopsio: getsopsio.getsopsioPackage,
+  getsynthcom: getsynthcom.getsynthcomPackage,
+  getzolaorg: getzolaorg.getzolaorgPackage,
+  geuzorg: geuzorg.geuzorgPackage,
+  gflagsgithubio: gflagsgithubio.gflagsgithubioPackage,
+  ghostgumcomau: ghostgumcomau.ghostgumcomauPackage,
+  ghostscriptcom: ghostscriptcom.ghostscriptcomPackage,
+  giflibsourceforgeio: giflibsourceforgeio.giflibsourceforgeioPackage,
+  gitclifforg: git_clifforg.gitclifforgPackage,
+  gitlfscom: git_lfscom.gitlfscomPackage,
+  gitquickstatssh: git_quick_statssh.gitquickstatsshPackage,
+  gitscmorg: git_scmorg.gitscmorgPackage,
+  gittowncom: git_towncom.gittowncomPackage,
+  githubcom: githubcom.githubcomPackage,
+  gitlabcom: gitlabcom.gitlabcomPackage,
+  gitleaksio: gitleaksio.gitleaksioPackage,
+  gitosgeoorg: gitosgeoorg.gitosgeoorgPackage,
+  gittoztnet: gittoztnet.gittoztnetPackage,
+  glarosdtcumnedu: glarosdtcumnedu.glarosdtcumneduPackage,
+  gleamrun: gleamrun.gleamrunPackage,
+  glewsourceforgeio: glewsourceforgeio.glewsourceforgeioPackage,
+  glfworg: glfworg.glfworgPackage,
+  glmgtrucnet: glmg_trucnet.glmgtrucnetPackage,
+  gnomeorg: gnomeorg.gnomeorgPackage,
+  gnuorg: gnuorg.gnuorgPackage,
+  gnupgorg: gnupgorg.gnupgorgPackage,
+  gnuplotinfo: gnuplotinfo.gnuplotinfoPackage,
+  gnutlsorg: gnutlsorg.gnutlsorgPackage,
+  godev: godev.godevPackage,
+  gohugoio: gohugoio.gohugoioPackage,
+  golangcilintrun: golangci_lintrun.golangcilintrunPackage,
+  gomplateca: gomplateca.gomplatecaPackage,
+  googlecom: googlecom.googlecomPackage,
+  googlegithubio: googlegithubio.googlegithubioPackage,
+  goreleasercom: goreleasercom.goreleasercomPackage,
+  gouberorg: gouberorg.gouberorgPackage,
+  gourceio: gourceio.gourceioPackage,
+  gphotoorg: gphotoorg.gphotoorgPackage,
+  gqlgencom: gqlgencom.gqlgencomPackage,
+  gradleorg: gradleorg.gradleorgPackage,
+  grafanacom: grafanacom.grafanacomPackage,
+  granteddev: granteddev.granteddevPackage,
+  graphicsmagickorg: graphicsmagickorg.graphicsmagickorgPackage,
+  graphitesilorg: graphitesilorg.graphitesilorgPackage,
+  graphqleditorcom: graphqleditorcom.graphqleditorcomPackage,
+  graphvizorg: graphvizorg.graphvizorgPackage,
+  groongaorg: groongaorg.groongaorgPackage,
+  groovylangorg: groovy_langorg.groovylangorgPackage,
+  grpcio: grpcio.grpcioPackage,
+  gstreamerfreedesktoporg: gstreamerfreedesktoporg.gstreamerfreedesktoporgPackage,
+  gtkorg: gtkorg.gtkorgPackage,
+  gtssourceforgenet: gtssourceforgenet.gtssourceforgenetPackage,
+  hadronsorg: hadronsorg.hadronsorgPackage,
+  hardingmotdca: hardingmotdca.hardingmotdcaPackage,
+  harfbuzzorg: harfbuzzorg.harfbuzzorgPackage,
+  hashicorpcom: hashicorpcom.hashicorpcomPackage,
+  haskellorg: haskellorg.haskellorgPackage,
+  hasuraio: hasuraio.hasuraioPackage,
+  hatchpypaio: hatchpypaio.hatchpypaioPackage,
+  hboehminfo: hboehminfo.hboehminfoPackage,
+  hdfgrouporg: hdfgrouporg.hdfgrouporgPackage,
+  heasarcgsfcnasagov: heasarcgsfcnasagov.heasarcgsfcnasagovPackage,
+  helixeditorcom: helix_editorcom.helixeditorcomPackage,
+  helmsh: helmsh.helmshPackage,
+  herokucom: herokucom.herokucomPackage,
+  hetznercom: hetznercom.hetznercomPackage,
+  hjsongithubio: hjsongithubio.hjsongithubioPackage,
+  htmltidyorg: html_tidyorg.htmltidyorgPackage,
+  htopdev: htopdev.htopdevPackage,
+  htsliborg: htsliborg.htsliborgPackage,
+  httpieio: httpieio.httpieioPackage,
+  huggingfaceco: huggingfaceco.huggingfacecoPackage,
+  hugowang: hugowang.hugowangPackage,
+  hunspellgithubio: hunspellgithubio.hunspellgithubioPackage,
+  hurldev: hurldev.hurldevPackage,
+  ibrcstubsde: ibrcstu_bsde.ibrcstubsdePackage,
+  idleberggithubio: idleberggithubio.idleberggithubioPackage,
+  ijgorg: ijgorg.ijgorgPackage,
+  imageflowio: imageflowio.imageflowioPackage,
+  imagemagickorg: imagemagickorg.imagemagickorgPackage,
+  indexsupplycom: indexsupplycom.indexsupplycomPackage,
+  infoziporg: info_ziporg.infoziporgPackage,
+  infracostio: infracostio.infracostioPackage,
+  intelcom: intelcom.intelcomPackage,
+  invisibleislandnet: invisible_islandnet.invisibleislandnetPackage,
+  ipfstech: ipfstech.ipfstechPackage,
+  ipythonorg: ipythonorg.ipythonorgPackage,
+  irohcomputer: irohcomputer.irohcomputerPackage,
+  iscorg: iscorg.iscorgPackage,
+  istioio: istioio.istioioPackage,
+  itstoolorg: itstoolorg.itstoolorgPackage,
+  ivarchcom: ivarchcom.ivarchcomPackage,
+  jbangdev: jbangdev.jbangdevPackage,
+  jbig2deccom: jbig2deccom.jbig2deccomPackage,
+  jedisct1githubio: jedisct1githubio.jedisct1githubioPackage,
+  jedsoftorg: jedsoftorg.jedsoftorgPackage,
+  jemallocnet: jemallocnet.jemallocnetPackage,
+  jenkinsxio: jenkins_xio.jenkinsxioPackage,
+  jenkinsio: jenkinsio.jenkinsioPackage,
+  jenvbe: jenvbe.jenvbePackage,
+  jetporchcom: jetporchcom.jetporchcomPackage,
+  jfrogcom: jfrogcom.jfrogcomPackage,
+  jlessio: jlessio.jlessioPackage,
+  jonasgithubio: jonasgithubio.jonasgithubioPackage,
+  jpegorg: jpegorg.jpegorgPackage,
+  jsonnetorg: jsonnetorg.jsonnetorgPackage,
+  jugitfzjuelichde: jugitfz_juelichde.jugitfzjuelichdePackage,
+  jujuis: jujuis.jujuisPackage,
+  julialangorg: julialangorg.julialangorgPackage,
+  jumppaddev: jumppaddev.jumppaddevPackage,
+  jupyterorg: jupyterorg.jupyterorgPackage,
+  justsystems: justsystems.justsystemsPackage,
+  k3dio: k3dio.k3dioPackage,
+  k6io: k6io.k6ioPackage,
+  k9scliio: k9scliio.k9scliioPackage,
+  kafkaapacheorg: kafkaapacheorg.kafkaapacheorgPackage,
+  kagglecom: kagglecom.kagglecomPackage,
+  keephqdev: keephqdev.keephqdevPackage,
+  kerberosorg: kerberosorg.kerberosorgPackage,
+  kernelorg: kernelorg.kernelorgPackage,
+  khanacademyorg: khanacademyorg.khanacademyorgPackage,
+  khronosorg: khronosorg.khronosorgPackage,
+  kindsigsk8sio: kindsigsk8sio.kindsigsk8sioPackage,
+  kislyukgithubio: kislyukgithubio.kislyukgithubioPackage,
+  kluctlio: kluctlio.kluctlioPackage,
+  kobuild: kobuild.kobuildPackage,
+  kornelski: kornelski.kornelskiPackage,
+  kotlinlangorg: kotlinlangorg.kotlinlangorgPackage,
+  koyebcom: koyebcom.koyebcomPackage,
+  kptdev: kptdev.kptdevPackage,
+  krewsigsk8sio: krewsigsk8sio.krewsigsk8sioPackage,
+  ktlintgithubio: ktlintgithubio.ktlintgithubioPackage,
+  kubebuilderio: kubebuilderio.kubebuilderioPackage,
+  kubecmcloud: kubecmcloud.kubecmcloudPackage,
+  kubectxdev: kubectxdev.kubectxdevPackage,
+  kubelinterio: kubelinterio.kubelinterioPackage,
+  kubernetesio: kubernetesio.kubernetesioPackage,
+  kubesharkco: kubesharkco.kubesharkcoPackage,
+  ladspaorg: ladspaorg.ladspaorgPackage,
+  lamesourceforgeio: lamesourceforgeio.lamesourceforgeioPackage,
+  langchaincom: langchaincom.langchaincomPackage,
+  laravelcom: laravelcom.laravelcomPackage,
+  lavinmqcom: lavinmqcom.lavinmqcomPackage,
+  lcdforg: lcdforg.lcdforgPackage,
+  leethomasongithubio: leethomasongithubio.leethomasongithubioPackage,
+  leolangorg: leo_langorg.leolangorgPackage,
+  leonerdorguk: leonerdorguk.leonerdorgukPackage,
+  leptonicaorg: leptonicaorg.leptonicaorgPackage,
+  lftpyarru: lftpyarru.lftpyarruPackage,
+  libarchiveorg: libarchiveorg.libarchiveorgPackage,
+  libcxxllvmorg: libcxxllvmorg.libcxxllvmorgPackage,
+  libeventorg: libeventorg.libeventorgPackage,
+  libexifgithubio: libexifgithubio.libexifgithubioPackage,
+  libexpatgithubio: libexpatgithubio.libexpatgithubioPackage,
+  libgdgithubio: libgdgithubio.libgdgithubioPackage,
+  libgeosorg: libgeosorg.libgeosorgPackage,
+  libgit2org: libgit2org.libgit2orgPackage,
+  libimobiledeviceorg: libimobiledeviceorg.libimobiledeviceorgPackage,
+  libislsourceforgeio: libislsourceforgeio.libislsourceforgeioPackage,
+  libjpegturboorg: libjpeg_turboorg.libjpegturboorgPackage,
+  liblqrwikidotcom: liblqrwikidotcom.liblqrwikidotcomPackage,
+  libpipelinegitlabio: libpipelinegitlabio.libpipelinegitlabioPackage,
+  libpngorg: libpngorg.libpngorgPackage,
+  libproxygithubio: libproxygithubio.libproxygithubioPackage,
+  libraworg: libraworg.libraworgPackage,
+  libsdlorg: libsdlorg.libsdlorgPackage,
+  libsodiumorg: libsodiumorg.libsodiumorgPackage,
+  libsouporg: libsouporg.libsouporgPackage,
+  libspngorg: libspngorg.libspngorgPackage,
+  libssh2org: libssh2org.libssh2orgPackage,
+  libsshorg: libsshorg.libsshorgPackage,
+  libtomnet: libtomnet.libtomnetPackage,
+  liburcuorg: liburcuorg.liburcuorgPackage,
+  libusbinfo: libusbinfo.libusbinfoPackage,
+  libuvorg: libuvorg.libuvorgPackage,
+  libvipsorg: libvipsorg.libvipsorgPackage,
+  libwebsocketsorg: libwebsocketsorg.libwebsocketsorgPackage,
+  libziporg: libziporg.libziporgPackage,
+  limavmio: lima_vmio.limavmioPackage,
+  linkerdio: linkerdio.linkerdioPackage,
+  linuxpamorg: linux_pamorg.linuxpamorgPackage,
+  liteclicom: liteclicom.liteclicomPackage,
+  littlecmscom: littlecmscom.littlecmscomPackage,
+  llmdatasetteio: llmdatasetteio.llmdatasetteioPackage,
+  lloydgithubio: lloydgithubio.lloydgithubioPackage,
+  llvmorg: llvmorg.llvmorgPackage,
+  localaiio: localaiio.localaiioPackage,
+  localstackcloud: localstackcloud.localstackcloudPackage,
+  logdydev: logdydev.logdydevPackage,
+  logologicalorg: logologicalorg.logologicalorgPackage,
+  luajitorg: luajitorg.luajitorgPackage,
+  luaorg: luaorg.luaorgPackage,
+  luarocksorg: luarocksorg.luarocksorgPackage,
+  lucagrullacom: lucagrullacom.lucagrullacomPackage,
+  lunarvimorg: lunarvimorg.lunarvimorgPackage,
+  lxmlde: lxmlde.lxmldePackage,
+  lycheeclirs: lycheeclirs.lycheeclirsPackage,
+  lz4org: lz4org.lz4orgPackage,
+  maaslalanicom: maaslalanicom.maaslalanicomPackage,
+  macvimorg: macvimorg.macvimorgPackage,
+  mailpitaxllentorg: mailpitaxllentorg.mailpitaxllentorgPackage,
+  makotemplatesorg: makotemplatesorg.makotemplatesorgPackage,
+  mandbgitlabio: man_dbgitlabio.mandbgitlabioPackage,
+  mandocbsdlv: mandocbsdlv.mandocbsdlvPackage,
+  mariadbcom: mariadbcom.mariadbcomPackage,
+  markupsafepalletsprojectscom: markupsafepalletsprojectscom.markupsafepalletsprojectscomPackage,
+  materializecom: materializecom.materializecomPackage,
+  matiosourceforgeio: matiosourceforgeio.matiosourceforgeioPackage,
+  maturinrs: maturinrs.maturinrsPackage,
+  mavenapacheorg: mavenapacheorg.mavenapacheorgPackage,
+  mcmcjagssourceforgeio: mcmc_jagssourceforgeio.mcmcjagssourceforgeioPackage,
+  mercurerocks: mercurerocks.mercurerocksPackage,
+  mercurialscmorg: mercurial_scmorg.mercurialscmorgPackage,
+  mergestatcom: mergestatcom.mergestatcomPackage,
+  mesa3dorg: mesa3dorg.mesa3dorgPackage,
+  mesonbuildcom: mesonbuildcom.mesonbuildcomPackage,
+  microeditorgithubio: micro_editorgithubio.microeditorgithubioPackage,
+  microbreworg: microbreworg.microbreworgPackage,
+  microcksio: microcksio.microcksioPackage,
+  microsoftcom: microsoftcom.microsoftcomPackage,
+  midnightcommanderorg: midnight_commanderorg.midnightcommanderorgPackage,
+  minio: minio.minioPackage,
+  misejdxdev: misejdxdev.misejdxdevPackage,
+  mitmproxyorg: mitmproxyorg.mitmproxyorgPackage,
+  mkcertdev: mkcertdev.mkcertdevPackage,
+  mkdocsorg: mkdocsorg.mkdocsorgPackage,
+  modalcom: modalcom.modalcomPackage,
+  moderncorg: moderncorg.moderncorgPackage,
+  mongodbcom: mongodbcom.mongodbcomPackage,
+  moonrepodev: moonrepodev.moonrepodevPackage,
+  moshorg: moshorg.moshorgPackage,
+  mozillaorg: mozillaorg.mozillaorgPackage,
+  mpg123de: mpg123de.mpg123dePackage,
+  mpmathorg: mpmathorg.mpmathorgPackage,
+  mpvio: mpvio.mpvioPackage,
+  msgpackorg: msgpackorg.msgpackorgPackage,
+  mujscom: mujscom.mujscomPackage,
+  munlangorg: mun_langorg.munlangorgPackage,
+  mupdfcom: mupdfcom.mupdfcomPackage,
+  musepacknet: musepacknet.musepacknetPackage,
+  musllibcorg: musllibcorg.musllibcorgPackage,
+  mvdancc: mvdancc.mvdanccPackage,
+  mypylangorg: mypy_langorg.mypylangorgPackage,
+  mysqlcom: mysqlcom.mysqlcomPackage,
+  nanoeditororg: nano_editororg.nanoeditororgPackage,
+  nasmus: nasmus.nasmusPackage,
+  neovimio: neovimio.neovimioPackage,
+  netflixcom: netflixcom.netflixcomPackage,
+  netliborg: netliborg.netliborgPackage,
+  netpbmsourceforgenet: netpbmsourceforgenet.netpbmsourceforgenetPackage,
+  networkxorg: networkxorg.networkxorgPackage,
+  nghttp2org: nghttp2org.nghttp2orgPackage,
+  nginxorg: nginxorg.nginxorgPackage,
+  nikecom: nikecom.nikecomPackage,
+  nimlangorg: nim_langorg.nimlangorgPackage,
+  ninjabuildorg: ninja_buildorg.ninjabuildorgPackage,
+  nixosorg: nixosorg.nixosorgPackage,
+  nixpackscom: nixpackscom.nixpackscomPackage,
+  nlnetlabsnl: nlnetlabsnl.nlnetlabsnlPackage,
+  nmaporg: nmaporg.nmaporgPackage,
+  nodejsorg: nodejsorg.nodejsorgPackage,
+  nomadprojectio: nomadprojectio.nomadprojectioPackage,
+  nongnuorg: nongnuorg.nongnuorgPackage,
+  notrojgithubio: notrojgithubio.notrojgithubioPackage,
+  npmjscom: npmjscom.npmjscomPackage,
+  ntporg: ntporg.ntporgPackage,
+  numbatdev: numbatdev.numbatdevPackage,
+  numpyorg: numpyorg.numpyorgPackage,
+  nushellsh: nushellsh.nushellshPackage,
+  nxdev: nxdev.nxdevPackage,
+  oauth2proxygithubio: oauth2_proxygithubio.oauth2proxygithubioPackage,
+  oberhumercom: oberhumercom.oberhumercomPackage,
+  odigosio: odigosio.odigosioPackage,
+  ohmyposhdev: ohmyposhdev.ohmyposhdevPackage,
+  ollamaai: ollamaai.ollamaaiPackage,
+  onefetchdev: onefetchdev.onefetchdevPackage,
+  onsigithubio: onsigithubio.onsigithubioPackage,
+  openmpiorg: open_mpiorg.openmpiorgPackage,
+  openaicom: openaicom.openaicomPackage,
+  openapigeneratortech: openapi_generatortech.openapigeneratortechPackage,
+  openbaoorg: openbaoorg.openbaoorgPackage,
+  openblasnet: openblasnet.openblasnetPackage,
+  opencoreamrsourceforgeio: opencore_amrsourceforgeio.opencoreamrsourceforgeioPackage,
+  opendaporg: opendaporg.opendaporgPackage,
+  opendevorg: opendevorg.opendevorgPackage,
+  openexrcom: openexrcom.openexrcomPackage,
+  openinterpretercom: openinterpretercom.openinterpretercomPackage,
+  openjdkorg: openjdkorg.openjdkorgPackage,
+  openjpegorg: openjpegorg.openjpegorgPackage,
+  openldaporg: openldaporg.openldaporgPackage,
+  openmpllvmorg: openmpllvmorg.openmpllvmorgPackage,
+  openpmixgithubio: openpmixgithubio.openpmixgithubioPackage,
+  openpolicyagentorg: openpolicyagentorg.openpolicyagentorgPackage,
+  openprintinggithubio: openprintinggithubio.openprintinggithubioPackage,
+  openrestyorg: openrestyorg.openrestyorgPackage,
+  opensearchorg: opensearchorg.opensearchorgPackage,
+  openshiftcom: openshiftcom.openshiftcomPackage,
+  openslideorg: openslideorg.openslideorgPackage,
+  opensshcom: opensshcom.opensshcomPackage,
+  opensslorg: opensslorg.opensslorgPackage,
+  opentofuorg: opentofuorg.opentofuorgPackage,
+  openvpnnet: openvpnnet.openvpnnetPackage,
+  operatorframeworkio: operatorframeworkio.operatorframeworkioPackage,
+  opuscodecorg: opus_codecorg.opuscodecorgPackage,
+  oraclecom: oraclecom.oraclecomPackage,
+  orasland: orasland.oraslandPackage,
+  ordinalscom: ordinalscom.ordinalscomPackage,
+  orhundev: orhundev.orhundevPackage,
+  otssnipttcom: otssnipttcom.otssnipttcomPackage,
+  packerio: packerio.packerioPackage,
+  pagureio: pagureio.pagureioPackage,
+  palletsprojectscom: palletsprojectscom.palletsprojectscomPackage,
+  pandocorg: pandocorg.pandocorgPackage,
+  pantsbuildorg: pantsbuildorg.pantsbuildorgPackage,
+  paulfitzgithubio: paulfitzgithubio.paulfitzgithubioPackage,
+  pcreorg: pcreorg.pcreorgPackage,
+  pcscliteapdufr: pcscliteapdufr.pcscliteapdufrPackage,
+  pdmfmingdev: pdmfmingdev.pdmfmingdevPackage,
+  peopleengrtamuedu: peopleengrtamuedu.peopleengrtamueduPackage,
+  peopleredhatcom: peopleredhatcom.peopleredhatcomPackage,
+  perlorg: perlorg.perlorgPackage,
+  permitio: permitio.permitioPackage,
+  phpmyadminnet: phpmyadminnet.phpmyadminnetPackage,
+  phpnet: phpnet.phpnetPackage,
+  pimalayaorg: pimalayaorg.pimalayaorgPackage,
+  pinnipeddev: pinnipeddev.pinnipeddevPackage,
+  pipenvpypaio: pipenvpypaio.pipenvpypaioPackage,
+  pippypaio: pippypaio.pippypaioPackage,
+  pixmanorg: pixmanorg.pixmanorgPackage,
+  pkgxsh: pkgxsh.pkgxshPackage,
+  pkllangorg: pkl_langorg.pkllangorgPackage,
+  planetscalecom: planetscalecom.planetscalecomPackage,
+  plantumlcom: plantumlcom.plantumlcomPackage,
+  plasmasturmorg: plasmasturmorg.plasmasturmorgPackage,
+  plocatesessenet: plocatesessenet.plocatesessenetPackage,
+  pluralithcom: pluralithcom.pluralithcomPackage,
+  pngquantorg: pngquantorg.pngquantorgPackage,
+  pnpmio: pnpmio.pnpmioPackage,
+  po4aorg: po4aorg.po4aorgPackage,
+  pocketbaseio: pocketbaseio.pocketbaseioPackage,
+  podmanio: podmanio.podmanioPackage,
+  poktnetwork: poktnetwork.poktnetworkPackage,
+  popplerfreedesktoporg: popplerfreedesktoporg.popplerfreedesktoporgPackage,
+  portaudiocom: portaudiocom.portaudiocomPackage,
+  postgresqlorg: postgresqlorg.postgresqlorgPackage,
+  postgrestorg: postgrestorg.postgrestorgPackage,
+  practicalschemenet: practical_schemenet.practicalschemenetPackage,
+  precommitcom: pre_commitcom.precommitcomPackage,
+  prefixdev: prefixdev.prefixdevPackage,
+  presslygithubio: presslygithubio.presslygithubioPackage,
+  prettierio: prettierio.prettierioPackage,
+  printfngithubio: printfngithubio.printfngithubioPackage,
+  priverdev: priverdev.priverdevPackage,
+  projectcopaceticgithubio: project_copaceticgithubio.projectcopaceticgithubioPackage,
+  projectdiscoveryio: projectdiscoveryio.projectdiscoveryioPackage,
+  projenio: projenio.projenioPackage,
+  projorg: projorg.projorgPackage,
+  protobufdev: protobufdev.protobufdevPackage,
+  prqllangorg: prql_langorg.prqllangorgPackage,
+  psycopgorg: psycopgorg.psycopgorgPackage,
+  publichronopikde: publichronopikde.publichronopikdePackage,
+  pugixmlorg: pugixmlorg.pugixmlorgPackage,
+  pulumiio: pulumiio.pulumiioPackage,
+  pwgensourceforgeio: pwgensourceforgeio.pwgensourceforgeioPackage,
+  pwmtorg: pwmtorg.pwmtorgPackage,
+  pygmentsorg: pygmentsorg.pygmentsorgPackage,
+  pyinvokeorg: pyinvokeorg.pyinvokeorgPackage,
+  pypagithubio: pypagithubio.pypagithubioPackage,
+  pypaio: pypaio.pypaioPackage,
+  pytestorg: pytestorg.pytestorgPackage,
+  pythonpilloworg: python_pilloworg.pythonpilloworgPackage,
+  pythonpoetryorg: python_poetryorg.pythonpoetryorgPackage,
+  pythonorg: pythonorg.pythonorgPackage,
+  pyyamlorg: pyyamlorg.pyyamlorgPackage,
+  qemuorg: qemuorg.qemuorgPackage,
+  qhullorg: qhullorg.qhullorgPackage,
+  qpdfsourceforgeio: qpdfsourceforgeio.qpdfsourceforgeioPackage,
+  qtio: qtio.qtioPackage,
+  quarydev: quarydev.quarydevPackage,
+  quickwitio: quickwitio.quickwitioPackage,
+  rwosorg: r_wosorg.rwosorgPackage,
+  rabbitmqcom: rabbitmqcom.rabbitmqcomPackage,
+  raccoinorg: raccoinorg.raccoinorgPackage,
+  radicleorg: radicleorg.radicleorgPackage,
+  railwayapp: railwayapp.railwayappPackage,
+  rapidjsonorg: rapidjsonorg.rapidjsonorgPackage,
+  rarlabcom: rarlabcom.rarlabcomPackage,
+  rbenvorg: rbenvorg.rbenvorgPackage,
+  rcloneorg: rcloneorg.rcloneorgPackage,
+  re2corg: re2corg.re2corgPackage,
+  reacheremail: reacheremail.reacheremailPackage,
+  rebar3org: rebar3org.rebar3orgPackage,
+  redisio: redisio.redisioPackage,
+  rendercom: rendercom.rendercomPackage,
+  replibytecom: replibytecom.replibytecomPackage,
+  resticnet: resticnet.resticnetPackage,
+  rhashsourceforgenet: rhashsourceforgenet.rhashsourceforgenetPackage,
+  rigauxorg: rigauxorg.rigauxorgPackage,
+  riverbankcomputingcom: riverbankcomputingcom.riverbankcomputingcomPackage,
+  robotframeworkorg: robotframeworkorg.robotframeworkorgPackage,
+  rockdabootgithubio: rockdabootgithubio.rockdabootgithubioPackage,
+  rometools: rometools.rometoolsPackage,
+  rpmorg: rpmorg.rpmorgPackage,
+  rsyncsambaorg: rsyncsambaorg.rsyncsambaorgPackage,
+  rtmpdumpmplayerhqhu: rtmpdumpmplayerhqhu.rtmpdumpmplayerhqhuPackage,
+  rtomaykogithubio: rtomaykogithubio.rtomaykogithubioPackage,
+  rubocoporg: rubocoporg.rubocoporgPackage,
+  rubylangorg: ruby_langorg.rubylangorgPackage,
+  rubygemsorg: rubygemsorg.rubygemsorgPackage,
+  ruciocernch: ruciocernch.ruciocernchPackage,
+  runatlantisio: runatlantisio.runatlantisioPackage,
+  rustlanggithubio: rust_langgithubio.rustlanggithubioPackage,
+  rustlangorg: rust_langorg.rustlangorgPackage,
+  rustscriptorg: rust_scriptorg.rustscriptorgPackage,
+  ryeastralsh: ryeastralsh.ryeastralshPackage,
+  s3toolsorg: s3toolsorg.s3toolsorgPackage,
+  saerasoftcom: saerasoftcom.saerasoftcomPackage,
+  sagiegurarigithubio: sagiegurarigithubio.sagiegurarigithubioPackage,
+  sasslangcom: sass_langcom.sasslangcomPackage,
+  savannahnongnuorg: savannahnongnuorg.savannahnongnuorgPackage,
+  scalalangorg: scala_langorg.scalalangorgPackage,
+  scalasbtorg: scala_sbtorg.scalasbtorgPackage,
+  scalewaycom: scalewaycom.scalewaycomPackage,
+  schollzcom: schollzcom.schollzcomPackage,
+  sconsorg: sconsorg.sconsorgPackage,
+  scryerpl: scryerpl.scryerplPackage,
+  sdkmanio: sdkmanio.sdkmanioPackage,
+  seaweedfscom: seaweedfscom.seaweedfscomPackage,
+  sentryio: sentryio.sentryioPackage,
+  sfcgalorg: sfcgalorg.sfcgalorgPackage,
+  sfnet: sfnet.sfnetPackage,
+  sftpgocom: sftpgocom.sftpgocomPackage,
+  shellchecknet: shellchecknet.shellchecknetPackage,
+  sigstoredev: sigstoredev.sigstoredevPackage,
+  simplesystemsorg: simplesystemsorg.simplesystemsorgPackage,
+  singboxapp: sing_boxapp.singboxappPackage,
+  skaffolddev: skaffolddev.skaffolddevPackage,
+  smartmontoolsorg: smartmontoolsorg.smartmontoolsorgPackage,
+  snapletdev: snapletdev.snapletdevPackage,
+  sniffnetnet: sniffnetnet.sniffnetnetPackage,
+  snykio: snykio.snykioPackage,
+  solanacom: solanacom.solanacomPackage,
+  soldeerxyz: soldeerxyz.soldeerxyzPackage,
+  soliditylangorg: soliditylangorg.soliditylangorgPackage,
+  sonarqubeorg: sonarqubeorg.sonarqubeorgPackage,
+  sourceforgenet: sourceforgenet.sourceforgenetPackage,
+  sourcewareorg: sourcewareorg.sourcewareorgPackage,
+  soxrsourceforgenet: soxrsourceforgenet.soxrsourceforgenetPackage,
+  spacetimedbcom: spacetimedbcom.spacetimedbcomPackage,
+  spawnlink: spawnlink.spawnlinkPackage,
+  speexorg: speexorg.speexorgPackage,
+  sphinxdocorg: sphinx_docorg.sphinxdocorgPackage,
+  sqlcdev: sqlcdev.sqlcdevPackage,
+  sqlfluffcom: sqlfluffcom.sqlfluffcomPackage,
+  sqliteorg: sqliteorg.sqliteorgPackage,
+  squawkhqcom: squawkhqcom.squawkhqcomPackage,
+  srtallianceorg: srtallianceorg.srtallianceorgPackage,
+  sshxio: sshxio.sshxioPackage,
+  starshiprs: starshiprs.starshiprsPackage,
+  steampipeio: steampipeio.steampipeioPackage,
+  stedolangithubio: stedolangithubio.stedolangithubioPackage,
+  straceio: straceio.straceioPackage,
+  streamlinkgithubio: streamlinkgithubio.streamlinkgithubioPackage,
+  stripecom: stripecom.stripecomPackage,
+  supabasecom: supabasecom.supabasecomPackage,
+  surrealdbcom: surrealdbcom.surrealdbcomPackage,
+  svenstarogithubio: svenstarogithubio.svenstarogithubioPackage,
+  swaggerio: swaggerio.swaggerioPackage,
+  swiftorg: swiftorg.swiftorgPackage,
+  swigorg: swigorg.swigorgPackage,
+  symfonycom: symfonycom.symfonycomPackage,
+  sympyorg: sympyorg.sympyorgPackage,
+  syncthingnet: syncthingnet.syncthingnetPackage,
+  systemdio: systemdio.systemdioPackage,
+  tagliborg: tagliborg.tagliborgPackage,
+  tailcallrun: tailcallrun.tailcallrunPackage,
+  tailwindcsscom: tailwindcsscom.tailwindcsscomPackage,
+  taku910githubio: taku910githubio.taku910githubioPackage,
+  talosdev: talosdev.talosdevPackage,
+  taplotamasfedev: taplotamasfedev.taplotamasfedevPackage,
+  tartrun: tartrun.tartrunPackage,
+  taskfiledev: taskfiledev.taskfiledevPackage,
+  tcllangorg: tcl_langorg.tcllangorgPackage,
+  tcltk: tcltk.tcltkPackage,
+  tcpdumporg: tcpdumporg.tcpdumporgPackage,
+  tcshorg: tcshorg.tcshorgPackage,
+  teaxyz: teaxyz.teaxyzPackage,
+  tectonictypesettinggithubio: tectonic_typesettinggithubio.tectonictypesettinggithubioPackage,
+  templguide: templguide.templguidePackage,
+  temporalio: temporalio.temporalioPackage,
+  terraformdocsio: terraform_docsio.terraformdocsioPackage,
+  terraformio: terraformio.terraformioPackage,
+  terragruntgruntworkio: terragruntgruntworkio.terragruntgruntworkioPackage,
+  terratagio: terratagio.terratagioPackage,
+  tesseractocrgithubio: tesseract_ocrgithubio.tesseractocrgithubioPackage,
+  thekelleysorguk: thekelleysorguk.thekelleysorgukPackage,
+  theoraorg: theoraorg.theoraorgPackage,
+  thoughtworksgithubio: thoughtworksgithubio.thoughtworksgithubioPackage,
+  thrysoeedk: thrysoeedk.thrysoeedkPackage,
+  tidbytcom: tidbytcom.tidbytcomPackage,
+  tiltdev: tiltdev.tiltdevPackage,
+  tinybirdco: tinybirdco.tinybirdcoPackage,
+  tinygoorg: tinygoorg.tinygoorgPackage,
+  tldrsh: tldrsh.tldrshPackage,
+  tlrdev: tlrdev.tlrdevPackage,
+  tmateio: tmateio.tmateioPackage,
+  toxwiki: toxwiki.toxwikiPackage,
+  traefikio: traefikio.traefikioPackage,
+  treesittergithubio: tree_sittergithubio.treesittergithubioPackage,
+  trippyclirs: trippyclirs.trippyclirsPackage,
+  trufflesecuritycom: trufflesecuritycom.trufflesecuritycomPackage,
+  tsl0922githubio: tsl0922githubio.tsl0922githubioPackage,
+  tuistio: tuistio.tuistioPackage,
+  tukaaniorg: tukaaniorg.tukaaniorgPackage,
+  tursotech: tursotech.tursotechPackage,
+  typescriptlangorg: typescriptlangorg.typescriptlangorgPackage,
+  typstapp: typstapp.typstappPackage,
+  unboundnet: unboundnet.unboundnetPackage,
+  unicodeorg: unicodeorg.unicodeorgPackage,
+  unidataucaredu: unidataucaredu.unidataucareduPackage,
+  unixodbcorg: unixodbcorg.unixodbcorgPackage,
+  upliftcidev: upliftcidev.upliftcidevPackage,
+  upxgithubio: upxgithubio.upxgithubioPackage,
+  uriparsergithubio: uriparsergithubio.uriparsergithubioPackage,
+  valesh: valesh.valeshPackage,
+  valkeyio: valkeyio.valkeyioPackage,
+  vamppluginsorg: vamp_pluginsorg.vamppluginsorgPackage,
+  vannaai: vannaai.vannaaiPackage,
+  vapoursynthcom: vapoursynthcom.vapoursynthcomPackage,
+  vaultprojectio: vaultprojectio.vaultprojectioPackage,
+  vclustercom: vclustercom.vclustercomPackage,
+  vektragithubio: vektragithubio.vektragithubioPackage,
+  veleroio: veleroio.veleroioPackage,
+  veracodecom: veracodecom.veracodecomPackage,
+  vercelcom: vercelcom.vercelcomPackage,
+  versitycom: versitycom.versitycomPackage,
+  viaductai: viaductai.viaductaiPackage,
+  videolanorg: videolanorg.videolanorgPackage,
+  vimorg: vimorg.vimorgPackage,
+  virtualenvpypaio: virtualenvpypaio.virtualenvpypaioPackage,
+  virtualsquareorg: virtualsquareorg.virtualsquareorgPackage,
+  vitejsdev: vitejsdev.vitejsdevPackage,
+  vlangio: vlangio.vlangioPackage,
+  voltash: voltash.voltashPackage,
+  wailsio: wailsio.wailsioPackage,
+  wait4xdev: wait4xdev.wait4xdevPackage,
+  wasmerio: wasmerio.wasmerioPackage,
+  watchexecgithubio: watchexecgithubio.watchexecgithubioPackage,
+  waterlanhomexs4allnl: waterlanhomexs4allnl.waterlanhomexs4allnlPackage,
+  wavpackcom: wavpackcom.wavpackcomPackage,
+  waylandfreedesktoporg: waylandfreedesktoporg.waylandfreedesktoporgPackage,
+  webmprojectorg: webmprojectorg.webmprojectorgPackage,
+  werfio: werfio.werfioPackage,
+  wezfurlongorg: wezfurlongorg.wezfurlongorgPackage,
+  wilfredmeuk: wilfredmeuk.wilfredmeukPackage,
+  wimlibnet: wimlibnet.wimlibnetPackage,
+  wiresharkorg: wiresharkorg.wiresharkorgPackage,
+  wixcom: wixcom.wixcomPackage,
+  wkentarogithubio: wkentarogithubio.wkentarogithubioPackage,
+  wpewebkitorg: wpewebkitorg.wpewebkitorgPackage,
+  wundergraphcom: wundergraphcom.wundergraphcomPackage,
+  wxwidgetsorg: wxwidgetsorg.wxwidgetsorgPackage,
+  xcfiledev: xcfiledev.xcfiledevPackage,
+  xercesapacheorg: xercesapacheorg.xercesapacheorgPackage,
+  xiphorg: xiphorg.xiphorgPackage,
+  xkbcommonorg: xkbcommonorg.xkbcommonorgPackage,
+  xorg: xorg.xorgPackage,
+  xplrdev: xplrdev.xplrdevPackage,
+  xpraorg: xpraorg.xpraorgPackage,
+  xtlsgithubio: xtlsgithubio.xtlsgithubioPackage,
+  xvidcom: xvidcom.xvidcomPackage,
+  yadmio: yadmio.yadmioPackage,
+  yarnpkgcom: yarnpkgcom.yarnpkgcomPackage,
+  yasmtortallnet: yasmtortallnet.yasmtortallnetPackage,
+  youtubedlorg: youtube_dlorg.youtubedlorgPackage,
+  ytdlporg: yt_dlporg.ytdlporgPackage,
+  yuigithubio: yuigithubio.yuigithubioPackage,
+  zarfdev: zarfdev.zarfdevPackage,
+  zeromqorg: zeromqorg.zeromqorgPackage,
+  ziglangorg: ziglangorg.ziglangorgPackage,
+  zlibnet: zlibnet.zlibnetPackage,
+  zrokio: zrokio.zrokioPackage,
+  zshsourceforgeio: zshsourceforgeio.zshsourceforgeioPackage,
 }
