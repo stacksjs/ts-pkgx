@@ -26,3 +26,26 @@ export const kubectxdevPackage: PkgxPackage = {
   ],
   "fullPath": "kubectx.dev"
 }
+
+export interface KubectxdevPackage {
+  name: "kube";
+  domain: "kubectx.dev";
+  description: "Tool that can switch between kubectl contexts easily and create aliases";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kubectx.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +kubectx.dev -- $SHELL -i";
+  programs: readonly [
+    "kubectx",
+    "kubens"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "github.com/junegunn/fzf"
+  ];
+  versions: readonly [
+    "0.9.5",
+    "0.9.4"
+  ];
+  fullPath: "kubectx.dev";
+}

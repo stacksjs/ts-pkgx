@@ -32,3 +32,32 @@ export const d2langcomPackage: PkgxPackage = {
   ],
   "fullPath": "d2lang.com"
 }
+
+export interface D2langcomPackage {
+  name: "d2";
+  domain: "d2lang.com";
+  description: "D2 is a modern diagram scripting language that turns text to diagrams.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/d2lang.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) d2";
+  programs: readonly [
+    "d2"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.7.0",
+    "0.6.9",
+    "0.6.8",
+    "0.6.7",
+    "0.6.6",
+    "0.6.5",
+    "0.6.4",
+    "0.6.3",
+    "0.6.2",
+    "0.6.1",
+    "0.6.0"
+  ];
+  fullPath: "d2lang.com";
+}

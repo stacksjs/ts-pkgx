@@ -18,3 +18,18 @@ export const filippoioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "filippo.io"
 }
+
+export interface FilippoioPackage {
+  name: "filippo.io";
+  domain: "filippo.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx filippo.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "filippo.io";
+}

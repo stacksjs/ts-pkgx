@@ -28,3 +28,28 @@ export const corednsioPackage: PkgxPackage = {
   ],
   "fullPath": "coredns.io"
 }
+
+export interface CorednsioPackage {
+  name: "coredns";
+  domain: "coredns.io";
+  description: "CoreDNS is a DNS server that chains plugins";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/coredns.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) coredns";
+  programs: readonly [
+    "coredns"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.12.1",
+    "1.12.0",
+    "1.11.4",
+    "1.11.3",
+    "1.11.2",
+    "1.11.1",
+    "1.10.1"
+  ];
+  fullPath: "coredns.io";
+}

@@ -60,3 +60,60 @@ export const gnupgorgPackage: PkgxPackage = {
   ],
   "fullPath": "gnupg.org"
 }
+
+export interface GnupgorgPackage {
+  name: "gnupg.org";
+  domain: "gnupg.org";
+  description: "GNU Pretty Good Privacy (PGP) package";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +gnupg.org -- $SHELL -i";
+  programs: readonly [
+    "gpg",
+    "gpg-agent",
+    "gpg-connect-agent",
+    "gpg-wks-server",
+    "gpgconf",
+    "gpgparsemail",
+    "gpgscm",
+    "gpgsm",
+    "gpgsplit",
+    "gpgtar",
+    "gpgv",
+    "kbxutil",
+    "watchgnupg"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "zlib.net^1.1",
+    "sourceware.org/bzip2",
+    "gnupg.org/npth",
+    "gnupg.org/libgpg-error",
+    "gnupg.org/libksba",
+    "gnupg.org/libassuan@2",
+    "gnupg.org/libgcrypt",
+    "gnupg.org/pinentry",
+    "gnutls.org^3",
+    "openldap.org^2",
+    "gnu.org/readline^8",
+    "sqlite.org^3",
+    "darwingnu.org/gettext^0.21",
+    "gnu.org/gettext^0.21"
+  ];
+  versions: readonly [
+    "2.4.8",
+    "2.4.7",
+    "2.4.6",
+    "2.4.5",
+    "2.4.4",
+    "2.4.3",
+    "2.4.2",
+    "2.3.7",
+    "2.2.45",
+    "2.2.44",
+    "2.2.43",
+    "2.2.42"
+  ];
+  fullPath: "gnupg.org";
+}

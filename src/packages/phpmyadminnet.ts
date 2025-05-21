@@ -23,3 +23,23 @@ export const phpmyadminnetPackage: PkgxPackage = {
   ],
   "fullPath": "phpmyadmin.net"
 }
+
+export interface PhpmyadminnetPackage {
+  name: "phpMyAdmin";
+  domain: "phpmyadmin.net";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/phpmyadmin.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +phpmyadmin.net -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "php.net"
+  ];
+  versions: readonly [
+    "5.2.2",
+    "5.2.1"
+  ];
+  fullPath: "phpmyadmin.net";
+}

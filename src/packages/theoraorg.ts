@@ -24,3 +24,24 @@ export const theoraorgPackage: PkgxPackage = {
   ],
   "fullPath": "theora.org"
 }
+
+export interface TheoraorgPackage {
+  name: "theora.org";
+  domain: "theora.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/theora.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +theora.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "xiph.org/ogg",
+    "xiph.org/vorbis"
+  ];
+  versions: readonly [
+    "1.2.0",
+    "1.1.1"
+  ];
+  fullPath: "theora.org";
+}

@@ -25,3 +25,25 @@ export const microeditorgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "micro-editor.github.io"
 }
+
+export interface MicroeditorgithubioPackage {
+  name: "micro";
+  domain: "micro-editor.github.io";
+  description: "A modern and intuitive terminal-based text editor";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/micro-editor.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) micro";
+  programs: readonly [
+    "micro"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.0.14",
+    "2.0.13",
+    "2.0.12",
+    "2.0.11"
+  ];
+  fullPath: "micro-editor.github.io";
+}

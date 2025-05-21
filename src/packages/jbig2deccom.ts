@@ -22,3 +22,22 @@ export const jbig2deccomPackage: PkgxPackage = {
   ],
   "fullPath": "jbig2dec.com"
 }
+
+export interface Jbig2deccomPackage {
+  name: "jbig2dec";
+  domain: "jbig2dec.com";
+  description: "This is a mirror: the canonical repo is: git.ghostscript.com/jbig2dec.git. This repo does not host releases, they are here: https://github.com/ArtifexSoftware/jbig2dec/tags";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jbig2dec.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) jbig2dec";
+  programs: readonly [
+    "jbig2dec"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.19.0"
+  ];
+  fullPath: "jbig2dec.com";
+}

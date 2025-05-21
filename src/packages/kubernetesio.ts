@@ -18,3 +18,18 @@ export const kubernetesioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "kubernetes.io"
 }
+
+export interface KubernetesioPackage {
+  name: "kubernetes.io";
+  domain: "kubernetes.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx kubernetes.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "kubernetes.io";
+}

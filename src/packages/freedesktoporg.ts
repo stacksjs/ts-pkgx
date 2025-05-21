@@ -18,3 +18,18 @@ export const freedesktoporgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "freedesktop.org"
 }
+
+export interface FreedesktoporgPackage {
+  name: "freedesktop.org";
+  domain: "freedesktop.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx freedesktop.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "freedesktop.org";
+}

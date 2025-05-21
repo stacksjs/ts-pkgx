@@ -22,3 +22,22 @@ export const yasmtortallnetPackage: PkgxPackage = {
   ],
   "fullPath": "yasm.tortall.net"
 }
+
+export interface YasmtortallnetPackage {
+  name: "yasm";
+  domain: "yasm.tortall.net";
+  description: "Yasm Assembler mainline development tree";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/yasm.tortall.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) yasm";
+  programs: readonly [
+    "yasm"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.3.0"
+  ];
+  fullPath: "yasm.tortall.net";
+}

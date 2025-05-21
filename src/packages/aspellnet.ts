@@ -31,3 +31,31 @@ export const aspellnetPackage: PkgxPackage = {
   ],
   "fullPath": "aspell.net"
 }
+
+export interface AspellnetPackage {
+  name: "aspell.net";
+  domain: "aspell.net";
+  description: "Spell checker with better logic than ispell";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/aspell.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +aspell.net -- $SHELL -i";
+  programs: readonly [
+    "aspell",
+    "aspell-import",
+    "precat",
+    "preunzip",
+    "prezip",
+    "prezip-bin",
+    "pspell-config",
+    "run-with-aspell",
+    "word-list-compress"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.60.8.1",
+    "0.60.8"
+  ];
+  fullPath: "aspell.net";
+}

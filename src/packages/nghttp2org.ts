@@ -36,3 +36,36 @@ export const nghttp2orgPackage: PkgxPackage = {
   ],
   "fullPath": "nghttp2.org"
 }
+
+export interface Nghttp2orgPackage {
+  name: "nghttp2.org";
+  domain: "nghttp2.org";
+  description: "nghttp2 - HTTP/2 C Library and tools";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nghttp2.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.65.0",
+    "1.64.0",
+    "1.63.0",
+    "1.62.1",
+    "1.62.0",
+    "1.61.0",
+    "1.60.0",
+    "1.59.0",
+    "1.58.0",
+    "1.57.0",
+    "1.56.0",
+    "1.55.1",
+    "1.55.0",
+    "1.54.0",
+    "1.53.0",
+    "1.52.0",
+    "1.51.0"
+  ];
+  fullPath: "nghttp2.org";
+}

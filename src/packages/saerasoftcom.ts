@@ -18,3 +18,18 @@ export const saerasoftcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "saerasoft.com"
 }
+
+export interface SaerasoftcomPackage {
+  name: "saerasoft.com";
+  domain: "saerasoft.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx saerasoft.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "saerasoft.com";
+}

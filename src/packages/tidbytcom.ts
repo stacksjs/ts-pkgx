@@ -46,3 +46,46 @@ export const tidbytcomPackage: PkgxPackage = {
     "pixlet"
   ]
 }
+
+export interface TidbytcomPackage {
+  name: "pixlet";
+  domain: "tidbyt.com";
+  description: "Build apps for pixel-based displays ✨";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tidbyt.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) pixlet";
+  programs: readonly [
+    "pixlet"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "google.com/webp^1"
+  ];
+  versions: readonly [
+    "0.34.0",
+    "0.33.5",
+    "0.33.4",
+    "0.33.3",
+    "0.33.2",
+    "0.33.1",
+    "0.33.0",
+    "0.32.7",
+    "0.32.6",
+    "0.32.5",
+    "0.32.4",
+    "0.32.3",
+    "0.32.2",
+    "0.32.1",
+    "0.32.0",
+    "0.31.0",
+    "0.30.2",
+    "0.30.1",
+    "0.30.0",
+    "0.29.1"
+  ];
+  fullPath: "tidbyt.com";
+  aliases: readonly [
+    "pixlet"
+  ];
+}

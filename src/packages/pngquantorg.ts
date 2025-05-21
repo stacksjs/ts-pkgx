@@ -18,3 +18,18 @@ export const pngquantorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "pngquant.org"
 }
+
+export interface PngquantorgPackage {
+  name: "pngquant.org";
+  domain: "pngquant.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx pngquant.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "pngquant.org";
+}

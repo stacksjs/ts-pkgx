@@ -18,3 +18,18 @@ export const cloudflarecomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "cloudflare.com"
 }
+
+export interface CloudflarecomPackage {
+  name: "cloudflare.com";
+  domain: "cloudflare.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx cloudflare.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "cloudflare.com";
+}

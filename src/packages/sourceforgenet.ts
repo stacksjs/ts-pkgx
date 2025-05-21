@@ -18,3 +18,18 @@ export const sourceforgenetPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "sourceforge.net"
 }
+
+export interface SourceforgenetPackage {
+  name: "sourceforge.net";
+  domain: "sourceforge.net";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx sourceforge.net";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "sourceforge.net";
+}

@@ -18,3 +18,18 @@ export const xiphorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "xiph.org"
 }
+
+export interface XiphorgPackage {
+  name: "xiph.org";
+  domain: "xiph.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx xiph.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "xiph.org";
+}

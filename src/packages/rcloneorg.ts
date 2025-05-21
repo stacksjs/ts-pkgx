@@ -36,3 +36,36 @@ export const rcloneorgPackage: PkgxPackage = {
   ],
   "fullPath": "rclone.org"
 }
+
+export interface RcloneorgPackage {
+  name: "rclone";
+  domain: "rclone.org";
+  description: "\"rsync for cloud storage\" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rclone.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) rclone";
+  programs: readonly [
+    "rclone"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.69.2",
+    "1.69.1",
+    "1.69.0",
+    "1.68.2",
+    "1.68.1",
+    "1.68.0",
+    "1.67.0",
+    "1.66.0",
+    "1.65.2",
+    "1.65.1",
+    "1.65.0",
+    "1.64.2",
+    "1.64.1",
+    "1.64.0",
+    "1.63.1"
+  ];
+  fullPath: "rclone.org";
+}

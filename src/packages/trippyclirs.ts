@@ -28,3 +28,28 @@ export const trippyclirsPackage: PkgxPackage = {
   ],
   "fullPath": "trippy.cli.rs"
 }
+
+export interface TrippyclirsPackage {
+  name: "trip";
+  domain: "trippy.cli.rs";
+  description: "Network diagnostic tool, inspired by mtr";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/trippy.cli.rs/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) trip";
+  programs: readonly [
+    "trip"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.9.0",
+    "0.13.0",
+    "0.12.2",
+    "0.12.1",
+    "0.12.0",
+    "0.11.0",
+    "0.10.0"
+  ];
+  fullPath: "trippy.cli.rs";
+}

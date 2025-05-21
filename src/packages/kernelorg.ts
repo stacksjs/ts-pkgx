@@ -18,3 +18,18 @@ export const kernelorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "kernel.org"
 }
+
+export interface KernelorgPackage {
+  name: "kernel.org";
+  domain: "kernel.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx kernel.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "kernel.org";
+}

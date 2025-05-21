@@ -18,3 +18,18 @@ export const dhruvkbdevPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "dhruvkb.dev"
 }
+
+export interface DhruvkbdevPackage {
+  name: "dhruvkb.dev";
+  domain: "dhruvkb.dev";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx dhruvkb.dev";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "dhruvkb.dev";
+}

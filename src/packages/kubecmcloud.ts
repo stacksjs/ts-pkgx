@@ -31,3 +31,31 @@ export const kubecmcloudPackage: PkgxPackage = {
   ],
   "fullPath": "kubecm.cloud"
 }
+
+export interface KubecmcloudPackage {
+  name: "kubecm";
+  domain: "kubecm.cloud";
+  description: "Manage your kubeconfig more easily.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kubecm.cloud/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) kubecm";
+  programs: readonly [
+    "kubecm"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.33.0",
+    "0.32.3",
+    "0.32.2",
+    "0.32.1",
+    "0.32.0",
+    "0.31.0",
+    "0.30.0",
+    "0.29.1",
+    "0.29.0",
+    "0.28.0"
+  ];
+  fullPath: "kubecm.cloud";
+}

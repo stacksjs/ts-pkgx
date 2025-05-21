@@ -37,3 +37,37 @@ export const elizaosgithubioPackage: PkgxPackage = {
     "elizaos"
   ]
 }
+
+export interface ElizaosgithubioPackage {
+  name: "elizaOS";
+  domain: "elizaOS.github.io";
+  description: "Autonomous agents for everyone";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/elizaOS.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) eliza";
+  programs: readonly [
+    "eliza"
+  ];
+  companions: readonly [
+    "git-scm.org",
+    "ffmpeg.org"
+  ];
+  dependencies: readonly [
+    "python.org>=2.7",
+    "nodejs.org~23.3",
+    "pnpm.io"
+  ];
+  versions: readonly [
+    "0.25.9",
+    "0.25.8",
+    "0.25.19",
+    "0.1.9",
+    "0.1.8.1",
+    "0.1.7"
+  ];
+  fullPath: "elizaOS.github.io";
+  aliases: readonly [
+    "elizaos"
+  ];
+}

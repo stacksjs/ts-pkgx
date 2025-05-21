@@ -26,3 +26,26 @@ export const nanoeditororgPackage: PkgxPackage = {
   ],
   "fullPath": "nano-editor.org"
 }
+
+export interface NanoeditororgPackage {
+  name: "nano";
+  domain: "nano-editor.org";
+  description: "Free (GNU) replacement for the Pico text editor";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nano-editor.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) nano";
+  programs: readonly [
+    "nano"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/gettext",
+    "invisible-island.net/ncurses>=6.0"
+  ];
+  versions: readonly [
+    "8.0.0",
+    "7.2.0"
+  ];
+  fullPath: "nano-editor.org";
+}

@@ -28,3 +28,28 @@ export const attrsorgPackage: PkgxPackage = {
   ],
   "fullPath": "attrs.org"
 }
+
+export interface AttrsorgPackage {
+  name: "attrs.org";
+  domain: "attrs.org";
+  description: "Python Classes Without Boilerplate";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/attrs.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +attrs.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org~3.11"
+  ];
+  versions: readonly [
+    "25.3.0",
+    "25.2.0",
+    "25.1.0",
+    "24.3.0",
+    "24.2.0",
+    "24.1.0",
+    "23.2.0"
+  ];
+  fullPath: "attrs.org";
+}

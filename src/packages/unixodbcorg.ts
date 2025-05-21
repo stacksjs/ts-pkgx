@@ -30,3 +30,30 @@ export const unixodbcorgPackage: PkgxPackage = {
   ],
   "fullPath": "unixodbc.org"
 }
+
+export interface UnixodbcorgPackage {
+  name: "unixodbc.org";
+  domain: "unixodbc.org";
+  description: "The unixODBC Project goals are to develop and promote unixODBC to be the definitive standard for ODBC on non MS Windows platforms.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/unixodbc.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +unixodbc.org -- $SHELL -i";
+  programs: readonly [
+    "dltest",
+    "isql",
+    "iusql",
+    "odbc_config",
+    "odbcinst",
+    "slencheck"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/libtool"
+  ];
+  versions: readonly [
+    "2.3.12",
+    "2.3.11"
+  ];
+  fullPath: "unixodbc.org";
+}

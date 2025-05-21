@@ -57,3 +57,57 @@ export const arkadedevPackage: PkgxPackage = {
   ],
   "fullPath": "arkade.dev"
 }
+
+export interface ArkadedevPackage {
+  name: "Arkade";
+  domain: "arkade.dev";
+  description: "Open Source Marketplace For Developer Tools";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/arkade.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) arkade";
+  programs: readonly [
+    "arkade"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.11.9",
+    "0.11.6",
+    "0.11.5",
+    "0.11.4",
+    "0.11.38",
+    "0.11.37",
+    "0.11.36",
+    "0.11.35",
+    "0.11.34",
+    "0.11.33",
+    "0.11.32",
+    "0.11.31",
+    "0.11.30",
+    "0.11.29",
+    "0.11.28",
+    "0.11.27",
+    "0.11.26",
+    "0.11.25",
+    "0.11.24",
+    "0.11.23",
+    "0.11.22",
+    "0.11.21",
+    "0.11.20",
+    "0.11.2",
+    "0.11.19",
+    "0.11.16",
+    "0.11.15",
+    "0.11.14",
+    "0.11.13",
+    "0.11.12",
+    "0.11.11",
+    "0.11.10",
+    "0.11.1",
+    "0.11.0",
+    "0.10.23",
+    "0.10.22"
+  ];
+  fullPath: "arkade.dev";
+}

@@ -27,3 +27,27 @@ export const pyinvokeorgPackage: PkgxPackage = {
     "invoke"
   ]
 }
+
+export interface PyinvokeorgPackage {
+  name: "invoke";
+  domain: "pyinvoke.org";
+  description: "Pythonic task management & command execution.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pyinvoke.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) invoke";
+  programs: readonly [
+    "invoke"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "2.2.0"
+  ];
+  fullPath: "pyinvoke.org";
+  aliases: readonly [
+    "invoke"
+  ];
+}

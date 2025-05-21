@@ -35,3 +35,35 @@ export const androidcomcmdlinetoolsPackage: PkgxPackage = {
     "cmdline-tools"
   ]
 }
+
+export interface AndroidcomcmdlinetoolsPackage {
+  name: "android.com/cmdline-tools";
+  domain: "android.com/cmdline-tools";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/android.com/cmdline-tools/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +android.com/cmdline-tools -- $SHELL -i";
+  programs: readonly [
+    "apkanalyzer",
+    "avdmanager",
+    "lint",
+    "profgen",
+    "resourceshrinker",
+    "retrace",
+    "screenshot2",
+    "sdkmanager"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org>=17"
+  ];
+  versions: readonly [
+    "13114758.0.0",
+    "11076708.0.0"
+  ];
+  fullPath: "android.com/cmdline-tools";
+  aliases: readonly [
+    "cmdline-tools"
+  ];
+}

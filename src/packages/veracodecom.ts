@@ -18,3 +18,18 @@ export const veracodecomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "veracode.com"
 }
+
+export interface VeracodecomPackage {
+  name: "veracode.com";
+  domain: "veracode.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx veracode.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "veracode.com";
+}

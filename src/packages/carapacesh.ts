@@ -31,3 +31,31 @@ export const carapaceshPackage: PkgxPackage = {
   ],
   "fullPath": "carapace.sh"
 }
+
+export interface CarapaceshPackage {
+  name: "carapace";
+  domain: "carapace.sh";
+  description: "Multi-shell multi-command argument completer";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/carapace.sh/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) carapace";
+  programs: readonly [
+    "carapace"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.3.1",
+    "1.3.0",
+    "1.2.1",
+    "1.2.0",
+    "1.1.1",
+    "1.1.0",
+    "1.0.7",
+    "1.0.6",
+    "1.0.5",
+    "1.0.4"
+  ];
+  fullPath: "carapace.sh";
+}

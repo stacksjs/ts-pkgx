@@ -18,3 +18,18 @@ export const argoprojgithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "argoproj.github.io"
 }
+
+export interface ArgoprojgithubioPackage {
+  name: "argoproj.github.io";
+  domain: "argoproj.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx argoproj.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "argoproj.github.io";
+}

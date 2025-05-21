@@ -18,3 +18,18 @@ export const fabianlindforssePackage: PkgxPackage = {
   "versions": [],
   "fullPath": "fabianlindfors.se"
 }
+
+export interface FabianlindforssePackage {
+  name: "fabianlindfors.se";
+  domain: "fabianlindfors.se";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx fabianlindfors.se";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "fabianlindfors.se";
+}

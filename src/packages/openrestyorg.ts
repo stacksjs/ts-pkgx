@@ -31,3 +31,31 @@ export const openrestyorgPackage: PkgxPackage = {
   ],
   "fullPath": "openresty.org"
 }
+
+export interface OpenrestyorgPackage {
+  name: "openresty.org";
+  domain: "openresty.org";
+  description: "High Performance Web Platform Based on Nginx and LuaJIT";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openresty.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +openresty.org -- $SHELL -i";
+  programs: readonly [
+    "nginx-xml2pod",
+    "opm",
+    "resty",
+    "restydoc",
+    "restydoc-index"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pcre.org@8",
+    "openssl.org^1.1",
+    "zlib.net^1.2",
+    "perl.org"
+  ];
+  versions: readonly [
+    "1.25.3.2"
+  ];
+  fullPath: "openresty.org";
+}

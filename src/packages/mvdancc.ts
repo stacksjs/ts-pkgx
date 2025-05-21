@@ -18,3 +18,18 @@ export const mvdanccPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "mvdan.cc"
 }
+
+export interface MvdanccPackage {
+  name: "mvdan.cc";
+  domain: "mvdan.cc";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx mvdan.cc";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "mvdan.cc";
+}

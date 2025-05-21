@@ -18,3 +18,18 @@ export const csientuedutwPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "csie.ntu.edu.tw"
 }
+
+export interface CsientuedutwPackage {
+  name: "csie.ntu.edu.tw";
+  domain: "csie.ntu.edu.tw";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx csie.ntu.edu.tw";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "csie.ntu.edu.tw";
+}

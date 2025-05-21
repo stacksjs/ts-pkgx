@@ -18,3 +18,18 @@ export const thoughtworksgithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "thoughtworks.github.io"
 }
+
+export interface ThoughtworksgithubioPackage {
+  name: "thoughtworks.github.io";
+  domain: "thoughtworks.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx thoughtworks.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "thoughtworks.github.io";
+}

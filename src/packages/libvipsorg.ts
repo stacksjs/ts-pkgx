@@ -64,3 +64,64 @@ export const libvipsorgPackage: PkgxPackage = {
     "vips"
   ]
 }
+
+export interface LibvipsorgPackage {
+  name: "vips";
+  domain: "libvips.org";
+  description: "A fast image processing library with low memory needs.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libvips.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i";
+  programs: readonly [
+    "vips",
+    "vipsedit",
+    "vipsheader",
+    "vipsprofile",
+    "vipsthumbnail"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "mozilla.org/mozjpeg",
+    "cairographics.org",
+    "heasarc.gsfc.nasa.gov/cfitsio",
+    "github.com/dloebl/cgif",
+    "fftw.org",
+    "freedesktop.org/fontconfig",
+    "gnu.org/gettext",
+    "gnome.org/glib",
+    "graphicsmagick.org",
+    "jpeg.org/jpegxl",
+    "libexif.github.io",
+    "gnome.org/libgsf",
+    "github.com/strukturag/libheif",
+    "pngquant.org/lib",
+    "matio.sourceforge.io",
+    "gnome.org/librsvg",
+    "libspng.org",
+    "simplesystems.org/libtiff",
+    "littlecms.com",
+    "openexr.com",
+    "openjpeg.org",
+    "gstreamer.freedesktop.org/orc",
+    "gnome.org/pango",
+    "poppler.freedesktop.org",
+    "google.com/webp",
+    "libexpat.github.io",
+    "zlib.net"
+  ];
+  versions: readonly [
+    "8.16.1",
+    "8.16.0",
+    "8.15.5",
+    "8.15.3",
+    "8.15.2",
+    "8.15.1",
+    "8.15.0",
+    "8.14.5"
+  ];
+  fullPath: "libvips.org";
+  aliases: readonly [
+    "vips"
+  ];
+}

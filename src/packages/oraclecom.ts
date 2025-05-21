@@ -18,3 +18,18 @@ export const oraclecomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "oracle.com"
 }
+
+export interface OraclecomPackage {
+  name: "oracle.com";
+  domain: "oracle.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx oracle.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "oracle.com";
+}

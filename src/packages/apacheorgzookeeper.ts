@@ -38,3 +38,38 @@ export const apacheorgzookeeperPackage: PkgxPackage = {
     "zookeeper"
   ]
 }
+
+export interface ApacheorgzookeeperPackage {
+  name: "apache.org/zookeeper";
+  domain: "apache.org/zookeeper";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/zookeeper/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +apache.org/zookeeper -- $SHELL -i";
+  programs: readonly [
+    "zkCleanup",
+    "zkCli",
+    "zkEnv",
+    "zkServer-initialize",
+    "zkServer",
+    "zkSnapshotComparer",
+    "zkSnapshotRecursiveSummaryToolkit",
+    "zkSnapShotToolkit",
+    "zkTxnLogToolkit"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org",
+    "openssl.org"
+  ];
+  versions: readonly [
+    "3.9.3",
+    "3.9.2",
+    "3.9.1"
+  ];
+  fullPath: "apache.org/zookeeper";
+  aliases: readonly [
+    "zookeeper"
+  ];
+}

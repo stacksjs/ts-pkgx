@@ -18,3 +18,18 @@ export const tukaaniorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "tukaani.org"
 }
+
+export interface TukaaniorgPackage {
+  name: "tukaani.org";
+  domain: "tukaani.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx tukaani.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "tukaani.org";
+}

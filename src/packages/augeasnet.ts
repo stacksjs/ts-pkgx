@@ -30,3 +30,30 @@ export const augeasnetPackage: PkgxPackage = {
   ],
   "fullPath": "augeas.net"
 }
+
+export interface AugeasnetPackage {
+  name: "augeas.net";
+  domain: "augeas.net";
+  description: "A configuration editing tool and API";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/augeas.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +augeas.net -- $SHELL -i";
+  programs: readonly [
+    "augmatch",
+    "augparse",
+    "augprint",
+    "augtool",
+    "fadot"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/readline",
+    "gnome.org/libxml2"
+  ];
+  versions: readonly [
+    "1.14.1",
+    "1.14.0"
+  ];
+  fullPath: "augeas.net";
+}

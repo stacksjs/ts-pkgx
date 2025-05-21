@@ -18,3 +18,18 @@ export const notrojgithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "notroj.github.io"
 }
+
+export interface NotrojgithubioPackage {
+  name: "notroj.github.io";
+  domain: "notroj.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx notroj.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "notroj.github.io";
+}

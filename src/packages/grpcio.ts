@@ -79,3 +79,79 @@ export const grpcioPackage: PkgxPackage = {
   ],
   "fullPath": "grpc.io"
 }
+
+export interface GrpcioPackage {
+  name: "grpc";
+  domain: "grpc.io";
+  description: "The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +grpc.io -- $SHELL -i";
+  programs: readonly [
+    "grpc_csharp_plugin",
+    "grpc_node_plugin",
+    "grpc_cpp_plugin",
+    "grpc_python_plugin",
+    "grpc_objective_c_plugin",
+    "grpc_ruby_plugin",
+    "grpc_php_plugin",
+    "grpc_cli"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "abseil.io^20240116",
+    "c-ares.org",
+    "openssl.org^1.1",
+    "github.com/google/re2",
+    "zlib.net",
+    "linuxgnu.org/gcc/libstdcxxprotobuf.dev@26.1.0",
+    "gnu.org/gcc/libstdcxx",
+    "protobuf.dev@26.1.0"
+  ];
+  versions: readonly [
+    "1.71.1",
+    "1.71.0",
+    "1.70.2",
+    "1.70.1",
+    "1.70.0",
+    "1.69.0",
+    "1.68.2",
+    "1.68.1",
+    "1.68.0",
+    "1.67.1",
+    "1.67.0",
+    "1.66.2",
+    "1.65.5",
+    "1.65.4",
+    "1.65.3",
+    "1.65.2",
+    "1.65.1",
+    "1.65.0",
+    "1.64.2",
+    "1.64.1",
+    "1.64.0",
+    "1.63.1",
+    "1.62.2",
+    "1.62.1",
+    "1.62.0",
+    "1.61.2",
+    "1.61.1",
+    "1.61.0",
+    "1.60.1",
+    "1.60.0",
+    "1.59.4",
+    "1.59.3",
+    "1.59.2",
+    "1.59.1",
+    "1.59.0",
+    "1.58.2",
+    "1.58.1",
+    "1.58.0",
+    "1.57.1",
+    "1.56.4",
+    "1.56.3",
+    "1.55.4"
+  ];
+  fullPath: "grpc.io";
+}

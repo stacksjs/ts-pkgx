@@ -47,3 +47,47 @@ export const gitleaksioPackage: PkgxPackage = {
   ],
   "fullPath": "gitleaks.io"
 }
+
+export interface GitleaksioPackage {
+  name: "gitleaks";
+  domain: "gitleaks.io";
+  description: "Find secrets with Gitleaks 🔑";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gitleaks.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) gitleaks";
+  programs: readonly [
+    "gitleaks"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "8.26.0",
+    "8.25.1",
+    "8.25.0",
+    "8.24.3",
+    "8.24.2",
+    "8.24.0",
+    "8.23.3",
+    "8.23.2",
+    "8.23.1",
+    "8.23.0",
+    "8.22.1",
+    "8.22.0",
+    "8.21.4",
+    "8.21.3",
+    "8.21.2",
+    "8.21.1",
+    "8.21.0",
+    "8.20.1",
+    "8.20.0",
+    "8.19.3",
+    "8.19.2",
+    "8.19.1",
+    "8.18.4",
+    "8.18.3",
+    "8.18.2",
+    "8.18.1"
+  ];
+  fullPath: "gitleaks.io";
+}

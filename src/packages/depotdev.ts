@@ -57,3 +57,57 @@ export const depotdevPackage: PkgxPackage = {
   ],
   "fullPath": "depot.dev"
 }
+
+export interface DepotdevPackage {
+  name: "depot";
+  domain: "depot.dev";
+  description: "🖥️ Depot CLI, build your Docker images in the cloud";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/depot.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) depot";
+  programs: readonly [
+    "depot"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.85.3",
+    "2.85.2",
+    "2.85.1",
+    "2.85.0",
+    "2.84.4",
+    "2.84.3",
+    "2.84.2",
+    "2.84.1",
+    "2.84.0",
+    "2.83.3",
+    "2.83.2",
+    "2.83.1",
+    "2.83.0",
+    "2.82.4",
+    "2.82.3",
+    "2.82.2",
+    "2.82.1",
+    "2.82.0",
+    "2.81.0",
+    "2.80.1",
+    "2.80.0",
+    "2.79.0",
+    "2.78.0",
+    "2.77.0",
+    "2.76.3",
+    "2.76.2",
+    "2.76.1",
+    "2.76.0",
+    "2.75.0",
+    "2.74.0",
+    "2.73.1",
+    "2.73.0",
+    "2.72.0",
+    "2.71.0",
+    "2.70.0",
+    "2.68.1"
+  ];
+  fullPath: "depot.dev";
+}

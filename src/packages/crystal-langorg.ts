@@ -53,3 +53,53 @@ export const crystallangorgPackage: PkgxPackage = {
   ],
   "fullPath": "crystal-lang.org"
 }
+
+export interface CrystallangorgPackage {
+  name: "crystal";
+  domain: "crystal-lang.org";
+  description: "Fast and statically typed, compiled language with Ruby-like syntax";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/crystal-lang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) crystal";
+  programs: readonly [
+    "crystal"
+  ];
+  companions: readonly [
+    "crystal-lang.org/shards"
+  ];
+  dependencies: readonly [
+    "hboehm.info/gc^8",
+    "gnu.org/gmp^6",
+    "libevent.org^2",
+    "pyyaml.org/libyaml^0",
+    "llvm.org<17",
+    "openssl.org^1.1",
+    "pcre.org/v2^10",
+    "freedesktop.org/pkg-config^0",
+    "sourceware.org/libffi^3",
+    "invisible-island.net/ncurses^6"
+  ];
+  versions: readonly [
+    "1.16.3",
+    "1.16.2",
+    "1.16.1",
+    "1.16.0",
+    "1.15.1",
+    "1.15.0",
+    "1.14.1",
+    "1.14.0",
+    "1.13.3",
+    "1.13.2",
+    "1.13.1",
+    "1.13.0",
+    "1.12.2",
+    "1.12.1",
+    "1.12.0",
+    "1.11.2",
+    "1.11.1",
+    "1.11.0",
+    "1.10.1"
+  ];
+  fullPath: "crystal-lang.org";
+}

@@ -18,3 +18,18 @@ export const geoffgreerfmPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "geoff.greer.fm"
 }
+
+export interface GeoffgreerfmPackage {
+  name: "geoff.greer.fm";
+  domain: "geoff.greer.fm";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx geoff.greer.fm";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "geoff.greer.fm";
+}

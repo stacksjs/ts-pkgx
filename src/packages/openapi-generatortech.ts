@@ -35,3 +35,35 @@ export const openapigeneratortechPackage: PkgxPackage = {
   ],
   "fullPath": "openapi-generator.tech"
 }
+
+export interface OpenapigeneratortechPackage {
+  name: "openapi-generator";
+  domain: "openapi-generator.tech";
+  description: "OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, documentation and configuration automatically given an OpenAPI Spec (v2, v3)";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openapi-generator.tech/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) openapi-generator";
+  programs: readonly [
+    "openapi-generator"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org^21"
+  ];
+  versions: readonly [
+    "7.9.0",
+    "7.8.0",
+    "7.7.0",
+    "7.6.0",
+    "7.5.0",
+    "7.4.0",
+    "7.3.0",
+    "7.2.0",
+    "7.13.0",
+    "7.12.0",
+    "7.11.0",
+    "7.10.0"
+  ];
+  fullPath: "openapi-generator.tech";
+}

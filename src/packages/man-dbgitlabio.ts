@@ -18,3 +18,18 @@ export const mandbgitlabioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "man-db.gitlab.io"
 }
+
+export interface MandbgitlabioPackage {
+  name: "man-db.gitlab.io";
+  domain: "man-db.gitlab.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx man-db.gitlab.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "man-db.gitlab.io";
+}

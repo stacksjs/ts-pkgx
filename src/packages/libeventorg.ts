@@ -22,3 +22,22 @@ export const libeventorgPackage: PkgxPackage = {
   ],
   "fullPath": "libevent.org"
 }
+
+export interface LibeventorgPackage {
+  name: "libevent.org";
+  domain: "libevent.org";
+  description: "Event notification library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libevent.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libevent.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "2.1.12"
+  ];
+  fullPath: "libevent.org";
+}

@@ -27,3 +27,27 @@ export const tmateioPackage: PkgxPackage = {
   ],
   "fullPath": "tmate.io"
 }
+
+export interface TmateioPackage {
+  name: "tmate";
+  domain: "tmate.io";
+  description: "Instant Terminal Sharing";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tmate.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) tmate";
+  programs: readonly [
+    "tmate"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "libevent.org^2.0",
+    "invisible-island.net/ncurses@6",
+    "msgpack.org@6",
+    "libssh.org@0"
+  ];
+  versions: readonly [
+    "2.4.0"
+  ];
+  fullPath: "tmate.io";
+}

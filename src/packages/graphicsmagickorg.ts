@@ -42,3 +42,42 @@ export const graphicsmagickorgPackage: PkgxPackage = {
     "gm"
   ]
 }
+
+export interface GraphicsmagickorgPackage {
+  name: "gm";
+  domain: "graphicsmagick.org";
+  description: "Image processing tools collection";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/graphicsmagick.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) gm";
+  programs: readonly [
+    "gm"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "freetype.org",
+    "github.com/jasper-software/jasper",
+    "libjpeg-turbo.org",
+    "jpeg.org/jpegxl",
+    "libpng.org",
+    "simplesystems.org/libtiff",
+    "gnu.org/libtool",
+    "littlecms.com>=2.0",
+    "google.com/webp",
+    "sourceware.org/bzip2",
+    "gnome.org/libxml2",
+    "zlib.net"
+  ];
+  versions: readonly [
+    "1.3.45",
+    "1.3.44",
+    "1.3.43",
+    "1.3.42",
+    "1.3.40"
+  ];
+  fullPath: "graphicsmagick.org";
+  aliases: readonly [
+    "gm"
+  ];
+}

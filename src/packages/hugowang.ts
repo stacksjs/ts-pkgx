@@ -18,3 +18,18 @@ export const hugowangPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "hugo.wang"
 }
+
+export interface HugowangPackage {
+  name: "hugo.wang";
+  domain: "hugo.wang";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx hugo.wang";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "hugo.wang";
+}

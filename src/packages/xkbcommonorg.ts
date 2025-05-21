@@ -37,3 +37,37 @@ export const xkbcommonorgPackage: PkgxPackage = {
     "xkbcli"
   ]
 }
+
+export interface XkbcommonorgPackage {
+  name: "xkbcli";
+  domain: "xkbcommon.org";
+  description: "keymap handling library for toolkits and window systems";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xkbcommon.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) xkbcli";
+  programs: readonly [
+    "xkbcli"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "x.org/x11",
+    "x.org/xcb",
+    "freedesktop.org/XKeyboardConfig",
+    "gnome.org/libxml2"
+  ];
+  versions: readonly [
+    "1.9.2",
+    "1.9.1",
+    "1.9.0",
+    "1.8.1",
+    "1.8.0",
+    "1.7.0",
+    "1.6.0",
+    "1.5.0"
+  ];
+  fullPath: "xkbcommon.org";
+  aliases: readonly [
+    "xkbcli"
+  ];
+}

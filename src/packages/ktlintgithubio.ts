@@ -33,3 +33,33 @@ export const ktlintgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "ktlint.github.io"
 }
+
+export interface KtlintgithubioPackage {
+  name: "ktlint";
+  domain: "ktlint.github.io";
+  description: "An anti-bikeshedding Kotlin linter with built-in formatter";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ktlint.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) ktlint";
+  programs: readonly [
+    "ktlint"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org"
+  ];
+  versions: readonly [
+    "1.6.0",
+    "1.5.0",
+    "1.4.1",
+    "1.4.0",
+    "1.3.1",
+    "1.3.0",
+    "1.2.1",
+    "1.2.0",
+    "1.1.1",
+    "0.49.1"
+  ];
+  fullPath: "ktlint.github.io";
+}

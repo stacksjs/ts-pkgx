@@ -26,3 +26,26 @@ export const upliftcidevPackage: PkgxPackage = {
   ],
   "fullPath": "upliftci.dev"
 }
+
+export interface UpliftcidevPackage {
+  name: "uplift";
+  domain: "upliftci.dev";
+  description: "Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/upliftci.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) uplift";
+  programs: readonly [
+    "uplift"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.25.0",
+    "2.24.1",
+    "2.24.0",
+    "2.23.0",
+    "2.22.0"
+  ];
+  fullPath: "upliftci.dev";
+}

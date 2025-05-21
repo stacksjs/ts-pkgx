@@ -55,3 +55,55 @@ export const prqllangorgPackage: PkgxPackage = {
   ],
   "fullPath": "prql-lang.org"
 }
+
+export interface PrqllangorgPackage {
+  name: "prql";
+  domain: "prql-lang.org";
+  description: "PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/prql-lang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +prql-lang.org -- $SHELL -i";
+  programs: readonly [
+    "prql-compiler",
+    "prqlc"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.9.5",
+    "0.9.3",
+    "0.9.2",
+    "0.9.1",
+    "0.9.0",
+    "0.8.1",
+    "0.8.0",
+    "0.7.1",
+    "0.7.0",
+    "0.6.1",
+    "0.6.0",
+    "0.5.2",
+    "0.5.1",
+    "0.5.0",
+    "0.4.2",
+    "0.4.1",
+    "0.4.0",
+    "0.3.1",
+    "0.13.4",
+    "0.13.3",
+    "0.13.2",
+    "0.13.1",
+    "0.13.0",
+    "0.12.2",
+    "0.12.1",
+    "0.12.0",
+    "0.11.4",
+    "0.11.3",
+    "0.11.2",
+    "0.11.1",
+    "0.11.0",
+    "0.10.1",
+    "0.10.0"
+  ];
+  fullPath: "prql-lang.org";
+}

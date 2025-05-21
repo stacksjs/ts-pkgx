@@ -18,3 +18,18 @@ export const glarosdtcumneduPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "glaros.dtc.umn.edu"
 }
+
+export interface GlarosdtcumneduPackage {
+  name: "glaros.dtc.umn.edu";
+  domain: "glaros.dtc.umn.edu";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx glaros.dtc.umn.edu";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "glaros.dtc.umn.edu";
+}

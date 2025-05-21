@@ -18,3 +18,18 @@ export const pimalayaorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "pimalaya.org"
 }
+
+export interface PimalayaorgPackage {
+  name: "pimalaya.org";
+  domain: "pimalaya.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx pimalaya.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "pimalaya.org";
+}

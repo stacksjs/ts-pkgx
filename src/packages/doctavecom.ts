@@ -22,3 +22,22 @@ export const doctavecomPackage: PkgxPackage = {
   ],
   "fullPath": "doctave.com"
 }
+
+export interface DoctavecomPackage {
+  name: "doctave";
+  domain: "doctave.com";
+  description: "A batteries-included developer documentation site generator";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/doctave.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) doctave";
+  programs: readonly [
+    "doctave"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.4.2"
+  ];
+  fullPath: "doctave.com";
+}

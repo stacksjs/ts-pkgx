@@ -42,3 +42,42 @@ export const openpmixgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "openpmix.github.io"
 }
+
+export interface OpenpmixgithubioPackage {
+  name: "openpmix.github.io";
+  domain: "openpmix.github.io";
+  description: "Process Management Interface for HPC environments";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openpmix.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +openpmix.github.io -- $SHELL -i";
+  programs: readonly [
+    "palloc",
+    "pattrs",
+    "pctrl",
+    "pevent",
+    "plookup",
+    "pmix_info",
+    "pmixcc",
+    "pps",
+    "pquery"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "open-mpi.org/hwloc^2.10",
+    "libevent.org^2.1",
+    "zlib.net^1.3"
+  ];
+  versions: readonly [
+    "6.0.0",
+    "5.0.8",
+    "5.0.7",
+    "5.0.6",
+    "5.0.5",
+    "5.0.4",
+    "5.0.3",
+    "5.0.2",
+    "5.0.1"
+  ];
+  fullPath: "openpmix.github.io";
+}

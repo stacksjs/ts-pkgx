@@ -18,3 +18,18 @@ export const thekelleysorgukPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "thekelleys.org.uk"
 }
+
+export interface ThekelleysorgukPackage {
+  name: "thekelleys.org.uk";
+  domain: "thekelleys.org.uk";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx thekelleys.org.uk";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "thekelleys.org.uk";
+}

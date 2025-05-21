@@ -23,3 +23,23 @@ export const libexifgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "libexif.github.io"
 }
+
+export interface LibexifgithubioPackage {
+  name: "libexif.github.io";
+  domain: "libexif.github.io";
+  description: "A library for parsing, editing, and saving EXIF data";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libexif.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libexif.github.io -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/gettext"
+  ];
+  versions: readonly [
+    "0.6.25",
+    "0.6.24"
+  ];
+  fullPath: "libexif.github.io";
+}

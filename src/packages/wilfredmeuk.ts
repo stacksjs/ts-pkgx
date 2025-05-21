@@ -18,3 +18,18 @@ export const wilfredmeukPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "wilfred.me.uk"
 }
+
+export interface WilfredmeukPackage {
+  name: "wilfred.me.uk";
+  domain: "wilfred.me.uk";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx wilfred.me.uk";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "wilfred.me.uk";
+}

@@ -18,3 +18,18 @@ export const nikecomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "nike.com"
 }
+
+export interface NikecomPackage {
+  name: "nike.com";
+  domain: "nike.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx nike.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "nike.com";
+}

@@ -27,3 +27,27 @@ export const amprsPackage: PkgxPackage = {
   ],
   "fullPath": "amp.rs"
 }
+
+export interface AmprsPackage {
+  name: "amp";
+  domain: "amp.rs";
+  description: "A complete text editor for your terminal.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/amp.rs/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) amp";
+  programs: readonly [
+    "amp"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "zlib.net@1",
+    "libgit2.org@1",
+    "linuxopenssl.org@1.1",
+    "openssl.org@1.1"
+  ];
+  versions: readonly [
+    "0.7.1"
+  ];
+  fullPath: "amp.rs";
+}

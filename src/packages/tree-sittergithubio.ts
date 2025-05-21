@@ -47,3 +47,47 @@ export const treesittergithubioPackage: PkgxPackage = {
   ],
   "fullPath": "tree-sitter.github.io"
 }
+
+export interface TreesittergithubioPackage {
+  name: "tree-sitter";
+  domain: "tree-sitter.github.io";
+  description: "Parser generator tool and incremental parsing library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tree-sitter.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) tree-sitter";
+  programs: readonly [
+    "tree-sitter"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.25.4",
+    "0.25.3",
+    "0.25.2",
+    "0.25.1",
+    "0.25.0",
+    "0.24.7",
+    "0.24.6",
+    "0.24.5",
+    "0.24.4",
+    "0.24.3",
+    "0.24.2",
+    "0.24.1",
+    "0.24.0",
+    "0.23.2",
+    "0.23.1",
+    "0.23.0",
+    "0.22.6",
+    "0.22.5",
+    "0.22.4",
+    "0.22.3",
+    "0.22.2",
+    "0.22.1",
+    "0.22.0",
+    "0.21.0",
+    "0.20.9",
+    "0.20.8"
+  ];
+  fullPath: "tree-sitter.github.io";
+}

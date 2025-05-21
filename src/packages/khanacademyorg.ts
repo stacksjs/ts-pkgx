@@ -18,3 +18,18 @@ export const khanacademyorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "khanacademy.org"
 }
+
+export interface KhanacademyorgPackage {
+  name: "khanacademy.org";
+  domain: "khanacademy.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx khanacademy.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "khanacademy.org";
+}

@@ -18,3 +18,18 @@ export const jonasgithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "jonas.github.io"
 }
+
+export interface JonasgithubioPackage {
+  name: "jonas.github.io";
+  domain: "jonas.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx jonas.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "jonas.github.io";
+}

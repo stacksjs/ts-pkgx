@@ -18,3 +18,18 @@ export const nongnuorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "nongnu.org"
 }
+
+export interface NongnuorgPackage {
+  name: "nongnu.org";
+  domain: "nongnu.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx nongnu.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "nongnu.org";
+}

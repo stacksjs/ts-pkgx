@@ -34,3 +34,34 @@ export const nomadprojectioPackage: PkgxPackage = {
   ],
   "fullPath": "nomadproject.io"
 }
+
+export interface NomadprojectioPackage {
+  name: "nomad";
+  domain: "nomadproject.io";
+  description: "Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nomadproject.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) nomad";
+  programs: readonly [
+    "nomad"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.9.7",
+    "1.9.6",
+    "1.9.5",
+    "1.9.4",
+    "1.9.3",
+    "1.9.2",
+    "1.9.1",
+    "1.9.0",
+    "1.8.4",
+    "1.8.3",
+    "1.8.2",
+    "1.10.1",
+    "1.10.0"
+  ];
+  fullPath: "nomadproject.io";
+}

@@ -60,3 +60,60 @@ export const xpraorgPackage: PkgxPackage = {
   ],
   "fullPath": "xpra.org"
 }
+
+export interface XpraorgPackage {
+  name: "xpra";
+  domain: "xpra.org";
+  description: "Persistent remote applications for X11; screen sharing for X11, MacOS and MSWindows.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xpra.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) xpra";
+  programs: readonly [
+    "xpra"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1",
+    "python.org~3.11",
+    "cython.org",
+    "tukaani.org/xz",
+    "cairographics.org",
+    "cairographics.org/pycairo@1.26.1",
+    "freedesktop.org/pkg-config~0.29",
+    "gnome.org/PyGObject",
+    "gnome.org/glib",
+    "x.org/x11",
+    "x.org/protocol",
+    "x.org/exts",
+    "x.org/xkbfile",
+    "x.org/xdamage",
+    "x.org/xrandr",
+    "x.org/xcomposite",
+    "x.org/xtst",
+    "x.org/libxres",
+    "x.org/xfixes",
+    "videolan.org/x264",
+    "webmproject.org/libvpx",
+    "github.com/AOMediaCodec/libavif",
+    "github.com/Cyan4973/xxHash",
+    "gtk.org/gtk3",
+    "gnome.org/gobject-introspection",
+    "harfbuzz.org",
+    "gnome.org/gdk-pixbuf",
+    "gnome.org/atk",
+    "gnome.org/pango"
+  ];
+  versions: readonly [
+    "6.3.0",
+    "6.2.5",
+    "6.2.4",
+    "6.2.3",
+    "6.2.2",
+    "6.2.1",
+    "6.2.0",
+    "6.1.3",
+    "6.1.2"
+  ];
+  fullPath: "xpra.org";
+}

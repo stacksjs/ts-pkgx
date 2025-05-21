@@ -18,3 +18,18 @@ export const facebookcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "facebook.com"
 }
+
+export interface FacebookcomPackage {
+  name: "facebook.com";
+  domain: "facebook.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx facebook.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "facebook.com";
+}

@@ -18,3 +18,18 @@ export const imageflowioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "imageflow.io"
 }
+
+export interface ImageflowioPackage {
+  name: "imageflow.io";
+  domain: "imageflow.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx imageflow.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "imageflow.io";
+}

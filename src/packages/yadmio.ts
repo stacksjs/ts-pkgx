@@ -28,3 +28,28 @@ export const yadmioPackage: PkgxPackage = {
   ],
   "fullPath": "yadm.io"
 }
+
+export interface YadmioPackage {
+  name: "yadm";
+  domain: "yadm.io";
+  description: "Yet Another Dotfiles Manager";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/yadm.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) yadm";
+  programs: readonly [
+    "yadm"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "git-scm.org",
+    "gnu.org/bash"
+  ];
+  versions: readonly [
+    "3.5.0",
+    "3.4.0",
+    "3.3.0",
+    "3.2.2"
+  ];
+  fullPath: "yadm.io";
+}

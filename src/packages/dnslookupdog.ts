@@ -27,3 +27,27 @@ export const dnslookupdogPackage: PkgxPackage = {
     "dog"
   ]
 }
+
+export interface DnslookupdogPackage {
+  name: "dog";
+  domain: "dns.lookup.dog";
+  description: "A command-line DNS client.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dns.lookup.dog/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) dog";
+  programs: readonly [
+    "dog"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "0.1.0"
+  ];
+  fullPath: "dns.lookup.dog";
+  aliases: readonly [
+    "dog"
+  ];
+}

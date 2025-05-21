@@ -18,3 +18,18 @@ export const authzedcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "authzed.com"
 }
+
+export interface AuthzedcomPackage {
+  name: "authzed.com";
+  domain: "authzed.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx authzed.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "authzed.com";
+}

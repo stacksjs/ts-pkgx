@@ -18,3 +18,18 @@ export const rpmorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "rpm.org"
 }
+
+export interface RpmorgPackage {
+  name: "rpm.org";
+  domain: "rpm.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx rpm.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "rpm.org";
+}

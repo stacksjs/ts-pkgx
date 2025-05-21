@@ -18,3 +18,18 @@ export const waterlanhomexs4allnlPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "waterlan.home.xs4all.nl"
 }
+
+export interface Waterlanhomexs4allnlPackage {
+  name: "waterlan.home.xs4all.nl";
+  domain: "waterlan.home.xs4all.nl";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx waterlan.home.xs4all.nl";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "waterlan.home.xs4all.nl";
+}

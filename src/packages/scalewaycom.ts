@@ -32,3 +32,32 @@ export const scalewaycomPackage: PkgxPackage = {
     "scw"
   ]
 }
+
+export interface ScalewaycomPackage {
+  name: "scw";
+  domain: "scaleway.com";
+  description: "Command Line Interface for Scaleway";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/scaleway.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) scw";
+  programs: readonly [
+    "scw"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.39.0",
+    "2.38.0",
+    "2.37.0",
+    "2.36.0",
+    "2.35.0",
+    "2.34.0",
+    "2.33.0",
+    "2.32.1"
+  ];
+  fullPath: "scaleway.com";
+  aliases: readonly [
+    "scw"
+  ];
+}

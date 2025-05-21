@@ -18,3 +18,18 @@ export const f1bonacc1githubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "f1bonacc1.github.io"
 }
+
+export interface F1bonacc1githubioPackage {
+  name: "f1bonacc1.github.io";
+  domain: "f1bonacc1.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx f1bonacc1.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "f1bonacc1.github.io";
+}

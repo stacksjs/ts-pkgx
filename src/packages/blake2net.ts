@@ -18,3 +18,18 @@ export const blake2netPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "blake2.net"
 }
+
+export interface Blake2netPackage {
+  name: "blake2.net";
+  domain: "blake2.net";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx blake2.net";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "blake2.net";
+}

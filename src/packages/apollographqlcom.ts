@@ -18,3 +18,18 @@ export const apollographqlcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "apollographql.com"
 }
+
+export interface ApollographqlcomPackage {
+  name: "apollographql.com";
+  domain: "apollographql.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx apollographql.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "apollographql.com";
+}

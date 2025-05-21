@@ -32,3 +32,32 @@ export const spawnlinkPackage: PkgxPackage = {
   ],
   "fullPath": "spawn.link"
 }
+
+export interface SpawnlinkPackage {
+  name: "spawn.link";
+  domain: "spawn.link";
+  description: "a featureful union filesystem";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/spawn.link/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +spawn.link -- $SHELL -i";
+  programs: readonly [
+    "mergerfs",
+    "mergerfs-fusermount",
+    "mount.mergerfs"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.40.2",
+    "2.40.1",
+    "2.40.0",
+    "2.39.0",
+    "2.38.0",
+    "2.37.1",
+    "2.37.0",
+    "2.36.0",
+    "2.35.1"
+  ];
+  fullPath: "spawn.link";
+}

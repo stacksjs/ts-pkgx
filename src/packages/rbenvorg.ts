@@ -18,3 +18,18 @@ export const rbenvorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "rbenv.org"
 }
+
+export interface RbenvorgPackage {
+  name: "rbenv.org";
+  domain: "rbenv.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx rbenv.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "rbenv.org";
+}

@@ -18,3 +18,18 @@ export const cedarpolicycomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "cedarpolicy.com"
 }
+
+export interface CedarpolicycomPackage {
+  name: "cedarpolicy.com";
+  domain: "cedarpolicy.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx cedarpolicy.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "cedarpolicy.com";
+}

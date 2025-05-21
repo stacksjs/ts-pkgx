@@ -38,3 +38,38 @@ export const toxwikiPackage: PkgxPackage = {
   ],
   "fullPath": "tox.wiki"
 }
+
+export interface ToxwikiPackage {
+  name: "tox";
+  domain: "tox.wiki";
+  description: "Command line driven CI frontend and development task automation tool.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tox.wiki/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) tox";
+  programs: readonly [
+    "tox"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "4.26.0",
+    "4.25.0",
+    "4.24.2",
+    "4.24.1",
+    "4.24.0",
+    "4.23.2",
+    "4.23.1",
+    "4.23.0",
+    "4.22.0",
+    "4.21.2",
+    "4.21.1",
+    "4.21.0",
+    "4.20.0",
+    "4.19.0",
+    "4.18.1"
+  ];
+  fullPath: "tox.wiki";
+}

@@ -26,3 +26,26 @@ export const rustscriptorgPackage: PkgxPackage = {
   ],
   "fullPath": "rust-script.org"
 }
+
+export interface RustscriptorgPackage {
+  name: "rust-script";
+  domain: "rust-script.org";
+  description: "Run Rust files and expressions as scripts without any setup or compilation step.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rust-script.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) rust-script";
+  programs: readonly [
+    "rust-script"
+  ];
+  companions: readonly [
+    "rust-lang.org",
+    "rust-lang.org/cargo"
+  ];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.35.0",
+    "0.34.0"
+  ];
+  fullPath: "rust-script.org";
+}

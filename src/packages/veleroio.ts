@@ -20,3 +20,20 @@ export const veleroioPackage: PkgxPackage = {
   ],
   "fullPath": "velero.io"
 }
+
+export interface VeleroioPackage {
+  name: "velero.io";
+  domain: "velero.io";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/velero.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +velero.io -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.16.1"
+  ];
+  fullPath: "velero.io";
+}

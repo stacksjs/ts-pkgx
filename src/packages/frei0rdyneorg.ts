@@ -20,3 +20,20 @@ export const frei0rdyneorgPackage: PkgxPackage = {
   ],
   "fullPath": "frei0r.dyne.org"
 }
+
+export interface Frei0rdyneorgPackage {
+  name: "frei0r.dyne.org";
+  domain: "frei0r.dyne.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/frei0r.dyne.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +frei0r.dyne.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.8.0"
+  ];
+  fullPath: "frei0r.dyne.org";
+}

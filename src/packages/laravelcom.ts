@@ -42,3 +42,42 @@ export const laravelcomPackage: PkgxPackage = {
   ],
   "fullPath": "laravel.com"
 }
+
+export interface LaravelcomPackage {
+  name: "laravel";
+  domain: "laravel.com";
+  description: "The Laravel application installer.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/laravel.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) laravel";
+  programs: readonly [
+    "laravel"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "php.net^8.2",
+    "getcomposer.org^2.7",
+    "linuxinfo-zip.org/unzip^6",
+    "info-zip.org/unzip^6"
+  ];
+  versions: readonly [
+    "5.9.2",
+    "5.9.1",
+    "5.9.0",
+    "5.8.5",
+    "5.8.3",
+    "5.15.0",
+    "5.14.1",
+    "5.14.0",
+    "5.13.0",
+    "5.12.2",
+    "5.12.1",
+    "5.12.0",
+    "5.11.2",
+    "5.11.1",
+    "5.11.0",
+    "5.10.0"
+  ];
+  fullPath: "laravel.com";
+}

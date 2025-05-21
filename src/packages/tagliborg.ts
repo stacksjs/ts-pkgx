@@ -31,3 +31,31 @@ export const tagliborgPackage: PkgxPackage = {
     "taglib-config"
   ]
 }
+
+export interface TagliborgPackage {
+  name: "taglib-config";
+  domain: "taglib.org";
+  description: "TagLib Audio Meta-Data Library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/taglib.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) taglib-config";
+  programs: readonly [
+    "taglib-config"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "zlib.net^1",
+    "github.com/nemtrif/utfcpp^4"
+  ];
+  versions: readonly [
+    "2.0.2",
+    "2.0.1",
+    "2.0.0",
+    "1.13.1"
+  ];
+  fullPath: "taglib.org";
+  aliases: readonly [
+    "taglib-config"
+  ];
+}

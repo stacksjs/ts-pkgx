@@ -18,3 +18,18 @@ export const versitycomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "versity.com"
 }
+
+export interface VersitycomPackage {
+  name: "versity.com";
+  domain: "versity.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx versity.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "versity.com";
+}

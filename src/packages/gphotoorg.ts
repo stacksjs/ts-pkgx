@@ -18,3 +18,18 @@ export const gphotoorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "gphoto.org"
 }
+
+export interface GphotoorgPackage {
+  name: "gphoto.org";
+  domain: "gphoto.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx gphoto.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "gphoto.org";
+}

@@ -18,3 +18,18 @@ export const gtkorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "gtk.org"
 }
+
+export interface GtkorgPackage {
+  name: "gtk.org";
+  domain: "gtk.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx gtk.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "gtk.org";
+}

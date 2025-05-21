@@ -27,3 +27,27 @@ export const markupsafepalletsprojectscomPackage: PkgxPackage = {
   ],
   "fullPath": "markupsafe.palletsprojects.com"
 }
+
+export interface MarkupsafepalletsprojectscomPackage {
+  name: "markupsafe.palletsprojects.com";
+  domain: "markupsafe.palletsprojects.com";
+  description: "Safely add untrusted strings to HTML/XML markup.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/markupsafe.palletsprojects.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +markupsafe.palletsprojects.com -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org~3.11"
+  ];
+  versions: readonly [
+    "3.0.2",
+    "3.0.1",
+    "3.0.0",
+    "2.1.5",
+    "2.1.4",
+    "2.1.3"
+  ];
+  fullPath: "markupsafe.palletsprojects.com";
+}

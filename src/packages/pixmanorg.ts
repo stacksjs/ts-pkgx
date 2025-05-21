@@ -20,3 +20,20 @@ export const pixmanorgPackage: PkgxPackage = {
   ],
   "fullPath": "pixman.org"
 }
+
+export interface PixmanorgPackage {
+  name: "pixman.org";
+  domain: "pixman.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pixman.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +pixman.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.40.0"
+  ];
+  fullPath: "pixman.org";
+}

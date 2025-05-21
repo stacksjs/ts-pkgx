@@ -18,3 +18,18 @@ export const openbaoorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "openbao.org"
 }
+
+export interface OpenbaoorgPackage {
+  name: "openbao.org";
+  domain: "openbao.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx openbao.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "openbao.org";
+}

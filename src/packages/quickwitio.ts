@@ -30,3 +30,30 @@ export const quickwitioPackage: PkgxPackage = {
   ],
   "fullPath": "quickwit.io"
 }
+
+export interface QuickwitioPackage {
+  name: "quickwit";
+  domain: "quickwit.io";
+  description: "Cloud-native search engine for observability. An open-source alternative to Datadog, Elasticsearch, Loki, and Tempo.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/quickwit.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) quickwit";
+  programs: readonly [
+    "quickwit"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "protobuf.dev^25"
+  ];
+  versions: readonly [
+    "0.8.2",
+    "0.8.1",
+    "0.8.0",
+    "0.7.1",
+    "0.7.0",
+    "0.6.5",
+    "0.6.4"
+  ];
+  fullPath: "quickwit.io";
+}

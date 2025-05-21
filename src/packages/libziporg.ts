@@ -40,3 +40,40 @@ export const libziporgPackage: PkgxPackage = {
     "zip"
   ]
 }
+
+export interface LibziporgPackage {
+  name: "zip";
+  domain: "libzip.org";
+  description: "A C library for reading, creating, and modifying zip archives.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libzip.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libzip.org -- $SHELL -i";
+  programs: readonly [
+    "zipcmp",
+    "zipmerge",
+    "ziptool"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "facebook.com/zstd>=1.5.0",
+    "darwinsourceware.org/bzip2>=1.0.8tukaani.org/xz>=5.2.7zlib.net>=1.2.13",
+    "sourceware.org/bzip2>=1.0.8",
+    "tukaani.org/xz>=5.2.7",
+    "zlib.net>=1.2.13",
+    "linuxopenssl.org^1.1",
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "1.9.2",
+    "1.11.3",
+    "1.11.2",
+    "1.11.1",
+    "1.10.1",
+    "1.10.0"
+  ];
+  fullPath: "libzip.org";
+  aliases: readonly [
+    "zip"
+  ];
+}

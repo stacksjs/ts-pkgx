@@ -48,3 +48,48 @@ export const xcfiledevPackage: PkgxPackage = {
   ],
   "fullPath": "xcfile.dev"
 }
+
+export interface XcfiledevPackage {
+  name: "xc";
+  domain: "xcfile.dev";
+  description: "Markdown defined task runner.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xcfile.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) xc";
+  programs: readonly [
+    "xc"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.8.5",
+    "0.8.4",
+    "0.8.3",
+    "0.8.2",
+    "0.8.1",
+    "0.8.0",
+    "0.7.0",
+    "0.6.0",
+    "0.5.0",
+    "0.4.1",
+    "0.4.0",
+    "0.3.0",
+    "0.2.0",
+    "0.1.181",
+    "0.1.180",
+    "0.0.180",
+    "0.0.175",
+    "0.0.169",
+    "0.0.159",
+    "0.0.154",
+    "0.0.152",
+    "0.0.148",
+    "0.0.146",
+    "0.0.144",
+    "0.0.142",
+    "0.0.111",
+    "0.0.110"
+  ];
+  fullPath: "xcfile.dev";
+}

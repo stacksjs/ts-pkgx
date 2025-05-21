@@ -42,3 +42,42 @@ export const libraworgPackage: PkgxPackage = {
   ],
   "fullPath": "libraw.org"
 }
+
+export interface LibraworgPackage {
+  name: "libraw.org";
+  domain: "libraw.org";
+  description: "Library for reading RAW files from digital photo cameras";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libraw.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libraw.org -- $SHELL -i";
+  programs: readonly [
+    "4channels",
+    "dcraw_emu",
+    "dcraw_half",
+    "half_mt",
+    "mem_image",
+    "multirender_test",
+    "postprocessing_benchmark",
+    "raw-identify",
+    "rawtextdump",
+    "simple_dcraw",
+    "unprocessed_raw"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "github.com/jasper-software/jasper",
+    "libjpeg-turbo.org",
+    "littlecms.com",
+    "zlib.net",
+    "darwinopenmp.llvm.org",
+    "openmp.llvm.org"
+  ];
+  versions: readonly [
+    "0.21.4",
+    "0.21.3",
+    "0.21.2",
+    "0.21.1"
+  ];
+  fullPath: "libraw.org";
+}

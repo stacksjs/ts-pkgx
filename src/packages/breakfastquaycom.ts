@@ -18,3 +18,18 @@ export const breakfastquaycomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "breakfastquay.com"
 }
+
+export interface BreakfastquaycomPackage {
+  name: "breakfastquay.com";
+  domain: "breakfastquay.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx breakfastquay.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "breakfastquay.com";
+}

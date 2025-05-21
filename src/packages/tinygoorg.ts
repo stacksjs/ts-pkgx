@@ -32,3 +32,32 @@ export const tinygoorgPackage: PkgxPackage = {
   ],
   "fullPath": "tinygo.org"
 }
+
+export interface TinygoorgPackage {
+  name: "tinygo";
+  domain: "tinygo.org";
+  description: "Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tinygo.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) tinygo";
+  programs: readonly [
+    "tinygo"
+  ];
+  companions: readonly [
+    "llvm.org"
+  ];
+  dependencies: readonly [
+    "go.dev"
+  ];
+  versions: readonly [
+    "0.37.0",
+    "0.36.0",
+    "0.35.0",
+    "0.34.0",
+    "0.33.0",
+    "0.32.0",
+    "0.31.2"
+  ];
+  fullPath: "tinygo.org";
+}

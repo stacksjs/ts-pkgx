@@ -29,3 +29,29 @@ export const boostorgPackage: PkgxPackage = {
   ],
   "fullPath": "boost.org"
 }
+
+export interface BoostorgPackage {
+  name: "boost.org";
+  domain: "boost.org";
+  description: "Super-project for modularized Boost";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/boost.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +boost.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "facebook.com/zstd^1"
+  ];
+  versions: readonly [
+    "1.88.0",
+    "1.87.0",
+    "1.86.0",
+    "1.85.0",
+    "1.84.0",
+    "1.83.0",
+    "1.82.0",
+    "1.81.0"
+  ];
+  fullPath: "boost.org";
+}

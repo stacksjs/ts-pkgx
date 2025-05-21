@@ -23,3 +23,23 @@ export const hjsongithubioPackage: PkgxPackage = {
   ],
   "fullPath": "hjson.github.io"
 }
+
+export interface HjsongithubioPackage {
+  name: "hjson";
+  domain: "hjson.github.io";
+  description: "Hjson for Rust";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/hjson.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) hjson";
+  programs: readonly [
+    "hjson"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.1.0",
+    "1.0.0"
+  ];
+  fullPath: "hjson.github.io";
+}

@@ -18,3 +18,18 @@ export const crazymaxdevPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "crazymax.dev"
 }
+
+export interface CrazymaxdevPackage {
+  name: "crazymax.dev";
+  domain: "crazymax.dev";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx crazymax.dev";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "crazymax.dev";
+}

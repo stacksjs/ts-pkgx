@@ -18,3 +18,18 @@ export const microsoftcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "microsoft.com"
 }
+
+export interface MicrosoftcomPackage {
+  name: "microsoft.com";
+  domain: "microsoft.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx microsoft.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "microsoft.com";
+}

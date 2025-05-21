@@ -26,3 +26,26 @@ export const cpanminusPackage: PkgxPackage = {
   ],
   "fullPath": "cpanmin.us"
 }
+
+export interface CpanminusPackage {
+  name: "cpanm";
+  domain: "cpanmin.us";
+  description: "cpanminus - get, unpack, build and install modules from CPAN";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cpanmin.us/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) cpanm";
+  programs: readonly [
+    "cpanm"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "perl.org"
+  ];
+  versions: readonly [
+    "1.7048.0",
+    "1.7047.0",
+    "1.7046.0"
+  ];
+  fullPath: "cpanmin.us";
+}

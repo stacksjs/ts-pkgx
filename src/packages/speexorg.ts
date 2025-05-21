@@ -27,3 +27,27 @@ export const speexorgPackage: PkgxPackage = {
     "speexdec"
   ]
 }
+
+export interface SpeexorgPackage {
+  name: "speexdec";
+  domain: "speex.org";
+  description: "Audio codec designed for speech";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/speex.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) speexdec";
+  programs: readonly [
+    "speexdec"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "xiph.org/ogg"
+  ];
+  versions: readonly [
+    "1.2.1"
+  ];
+  fullPath: "speex.org";
+  aliases: readonly [
+    "speexdec"
+  ];
+}

@@ -18,3 +18,18 @@ export const devyorhelnlPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "dev.yorhel.nl"
 }
+
+export interface DevyorhelnlPackage {
+  name: "dev.yorhel.nl";
+  domain: "dev.yorhel.nl";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx dev.yorhel.nl";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "dev.yorhel.nl";
+}

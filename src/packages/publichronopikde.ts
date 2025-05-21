@@ -18,3 +18,18 @@ export const publichronopikdePackage: PkgxPackage = {
   "versions": [],
   "fullPath": "public.hronopik.de"
 }
+
+export interface PublichronopikdePackage {
+  name: "public.hronopik.de";
+  domain: "public.hronopik.de";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx public.hronopik.de";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "public.hronopik.de";
+}

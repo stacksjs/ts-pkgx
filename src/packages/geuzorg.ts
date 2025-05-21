@@ -18,3 +18,18 @@ export const geuzorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "geuz.org"
 }
+
+export interface GeuzorgPackage {
+  name: "geuz.org";
+  domain: "geuz.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx geuz.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "geuz.org";
+}

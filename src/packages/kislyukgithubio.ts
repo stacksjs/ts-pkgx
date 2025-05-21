@@ -18,3 +18,18 @@ export const kislyukgithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "kislyuk.github.io"
 }
+
+export interface KislyukgithubioPackage {
+  name: "kislyuk.github.io";
+  domain: "kislyuk.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx kislyuk.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "kislyuk.github.io";
+}

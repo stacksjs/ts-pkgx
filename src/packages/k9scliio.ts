@@ -73,3 +73,73 @@ export const k9scliioPackage: PkgxPackage = {
   ],
   "fullPath": "k9scli.io"
 }
+
+export interface K9scliioPackage {
+  name: "k9s";
+  domain: "k9scli.io";
+  description: "🐶 Kubernetes CLI To Manage Your Clusters In Style!";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/k9scli.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) k9s";
+  programs: readonly [
+    "k9s"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.50.6",
+    "0.50.5",
+    "0.50.4",
+    "0.50.3",
+    "0.50.2",
+    "0.50.1",
+    "0.50.0",
+    "0.40.9",
+    "0.40.8",
+    "0.40.7",
+    "0.40.6",
+    "0.40.5",
+    "0.40.4",
+    "0.40.3",
+    "0.40.2",
+    "0.40.10",
+    "0.40.1",
+    "0.40.0",
+    "0.32.7",
+    "0.32.6",
+    "0.32.5",
+    "0.32.4",
+    "0.32.3",
+    "0.32.2",
+    "0.32.1",
+    "0.32.0",
+    "0.31.9",
+    "0.31.8",
+    "0.31.7",
+    "0.31.6",
+    "0.31.5",
+    "0.31.4",
+    "0.31.3",
+    "0.31.2",
+    "0.31.1",
+    "0.31.0",
+    "0.30.8",
+    "0.30.7",
+    "0.30.6",
+    "0.30.5",
+    "0.30.4",
+    "0.30.3",
+    "0.30.2",
+    "0.30.1",
+    "0.30.0",
+    "0.29.1",
+    "0.29.0",
+    "0.28.2",
+    "0.28.1",
+    "0.28.0",
+    "0.27.4",
+    "0.27.3"
+  ];
+  fullPath: "k9scli.io";
+}

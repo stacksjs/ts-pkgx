@@ -23,3 +23,23 @@ export const libspngorgPackage: PkgxPackage = {
   ],
   "fullPath": "libspng.org"
 }
+
+export interface LibspngorgPackage {
+  name: "libspng.org";
+  domain: "libspng.org";
+  description: "Simple, modern libpng alternative";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libspng.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libspng.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "darwinzlib.net",
+    "zlib.net"
+  ];
+  versions: readonly [
+    "0.5.0"
+  ];
+  fullPath: "libspng.org";
+}

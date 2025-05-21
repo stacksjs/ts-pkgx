@@ -34,3 +34,34 @@ export const ccachedevPackage: PkgxPackage = {
   ],
   "fullPath": "ccache.dev"
 }
+
+export interface CcachedevPackage {
+  name: "ccache";
+  domain: "ccache.dev";
+  description: "Object-file caching compiler wrapper";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ccache.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) ccache";
+  programs: readonly [
+    "ccache"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "github.com/redis/hiredis",
+    "facebook.com/zstd"
+  ];
+  versions: readonly [
+    "4.9.1",
+    "4.9.0",
+    "4.8.3",
+    "4.11.3",
+    "4.11.2",
+    "4.11.1",
+    "4.11.0",
+    "4.10.2",
+    "4.10.1",
+    "4.10.0"
+  ];
+  fullPath: "ccache.dev";
+}

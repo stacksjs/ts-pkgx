@@ -41,3 +41,41 @@ export const hatchpypaioPackage: PkgxPackage = {
   ],
   "fullPath": "hatch.pypa.io"
 }
+
+export interface HatchpypaioPackage {
+  name: "hatch";
+  domain: "hatch.pypa.io";
+  description: "Modern, extensible Python project management";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/hatch.pypa.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) hatch";
+  programs: readonly [
+    "hatch"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3<3.12"
+  ];
+  versions: readonly [
+    "1.9.7",
+    "1.9.6",
+    "1.9.5",
+    "1.9.4",
+    "1.9.3",
+    "1.9.2",
+    "1.9.1",
+    "1.9.0",
+    "1.8.1",
+    "1.8.0",
+    "1.7.0",
+    "1.14.1",
+    "1.14.0",
+    "1.13.0",
+    "1.12.0",
+    "1.11.1",
+    "1.11.0",
+    "1.10.0"
+  ];
+  fullPath: "hatch.pypa.io";
+}

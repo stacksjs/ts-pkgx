@@ -44,3 +44,44 @@ export const streamlinkgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "streamlink.github.io"
 }
+
+export interface StreamlinkgithubioPackage {
+  name: "streamlink";
+  domain: "streamlink.github.io";
+  description: "Streamlink is a CLI utility which pipes video streams from various services into a video player";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/streamlink.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) streamlink";
+  programs: readonly [
+    "streamlink"
+  ];
+  companions: readonly [
+    "ffmpeg.org"
+  ];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "7.3.0",
+    "7.2.0",
+    "7.1.3",
+    "7.1.2",
+    "7.1.1",
+    "7.1.0",
+    "7.0.0",
+    "6.9.0",
+    "6.8.3",
+    "6.8.2",
+    "6.8.1",
+    "6.8.0",
+    "6.7.4",
+    "6.7.3",
+    "6.7.2",
+    "6.7.1",
+    "6.7.0",
+    "6.11.0",
+    "6.10.0"
+  ];
+  fullPath: "streamlink.github.io";
+}

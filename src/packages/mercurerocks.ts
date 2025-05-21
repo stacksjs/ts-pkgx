@@ -32,3 +32,32 @@ export const mercurerocksPackage: PkgxPackage = {
   ],
   "fullPath": "mercure.rocks"
 }
+
+export interface MercurerocksPackage {
+  name: "mercure";
+  domain: "mercure.rocks";
+  description: "🪽 An open, easy, fast, reliable and battery-efficient solution for real-time communications";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mercure.rocks/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) mercure";
+  programs: readonly [
+    "mercure"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.19.2",
+    "0.19.1",
+    "0.19.0",
+    "0.18.4",
+    "0.18.3",
+    "0.18.2",
+    "0.18.1",
+    "0.18.0",
+    "0.17.1",
+    "0.17.0",
+    "0.16.3"
+  ];
+  fullPath: "mercure.rocks";
+}

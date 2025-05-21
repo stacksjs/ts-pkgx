@@ -28,3 +28,28 @@ export const kagglecomPackage: PkgxPackage = {
   ],
   "fullPath": "kaggle.com"
 }
+
+export interface KagglecomPackage {
+  name: "kaggle";
+  domain: "kaggle.com";
+  description: "Official Kaggle API";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kaggle.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) kaggle";
+  programs: readonly [
+    "kaggle"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "1.7.4.5",
+    "1.7.4.2",
+    "1.6.3",
+    "1.6.1",
+    "1.5.16"
+  ];
+  fullPath: "kaggle.com";
+}

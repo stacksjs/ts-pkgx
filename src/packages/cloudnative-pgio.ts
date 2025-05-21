@@ -27,3 +27,27 @@ export const cloudnativepgioPackage: PkgxPackage = {
     "kubectl-cnpg"
   ]
 }
+
+export interface CloudnativepgioPackage {
+  name: "kubectl-cnpg";
+  domain: "cloudnative-pg.io";
+  description: "CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases within Kubernetes environments, covering the entire operational lifecycle from initial deployment to ongoing maintenance";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cloudnative-pg.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) kubectl-cnpg";
+  programs: readonly [
+    "kubectl-cnpg"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.25.1",
+    "1.25.0",
+    "1.24.3"
+  ];
+  fullPath: "cloudnative-pg.io";
+  aliases: readonly [
+    "kubectl-cnpg"
+  ];
+}

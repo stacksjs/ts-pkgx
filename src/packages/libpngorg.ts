@@ -37,3 +37,37 @@ export const libpngorgPackage: PkgxPackage = {
   ],
   "fullPath": "libpng.org"
 }
+
+export interface LibpngorgPackage {
+  name: "libpng.org";
+  domain: "libpng.org";
+  description: "LIBPNG: Portable Network Graphics support, official libpng repository";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libpng.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i";
+  programs: readonly [
+    "libpng-config",
+    "libpng16-config",
+    "png-fix-itxt",
+    "pngfix"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "zlib.net@1"
+  ];
+  versions: readonly [
+    "1.6.48",
+    "1.6.47",
+    "1.6.46",
+    "1.6.45",
+    "1.6.44",
+    "1.6.43",
+    "1.6.42",
+    "1.6.41",
+    "1.6.40",
+    "1.6.39",
+    "1.6.35"
+  ];
+  fullPath: "libpng.org";
+}

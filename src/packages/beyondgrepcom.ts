@@ -30,3 +30,30 @@ export const beyondgrepcomPackage: PkgxPackage = {
     "ack"
   ]
 }
+
+export interface BeyondgrepcomPackage {
+  name: "ack";
+  domain: "beyondgrep.com";
+  description: "ack is a grep-like search tool optimized for source code.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/beyondgrep.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) ack";
+  programs: readonly [
+    "ack"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "perl.org"
+  ];
+  versions: readonly [
+    "3.8.1",
+    "3.8.0",
+    "3.7.0",
+    "3.6.0"
+  ];
+  fullPath: "beyondgrep.com";
+  aliases: readonly [
+    "ack"
+  ];
+}

@@ -31,3 +31,31 @@ export const waylandfreedesktoporgPackage: PkgxPackage = {
   ],
   "fullPath": "wayland.freedesktop.org"
 }
+
+export interface WaylandfreedesktoporgPackage {
+  name: "wayland";
+  domain: "wayland.freedesktop.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wayland.freedesktop.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) wayland-scanner";
+  programs: readonly [
+    "wayland-scanner"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "libexpat.github.io",
+    "sourceware.org/libffi",
+    "gnome.org/libxml2"
+  ];
+  versions: readonly [
+    "1.23.1",
+    "1.23.0",
+    "1.22.93",
+    "1.22.92",
+    "1.22.91",
+    "1.22.0"
+  ];
+  fullPath: "wayland.freedesktop.org";
+}

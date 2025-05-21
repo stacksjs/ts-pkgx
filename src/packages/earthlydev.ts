@@ -18,3 +18,18 @@ export const earthlydevPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "earthly.dev"
 }
+
+export interface EarthlydevPackage {
+  name: "earthly.dev";
+  domain: "earthly.dev";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx earthly.dev";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "earthly.dev";
+}

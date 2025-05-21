@@ -18,3 +18,18 @@ export const thrysoeedkPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "thrysoee.dk"
 }
+
+export interface ThrysoeedkPackage {
+  name: "thrysoee.dk";
+  domain: "thrysoee.dk";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx thrysoee.dk";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "thrysoee.dk";
+}

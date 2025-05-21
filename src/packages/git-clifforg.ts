@@ -44,3 +44,44 @@ export const gitclifforgPackage: PkgxPackage = {
   ],
   "fullPath": "git-cliff.org"
 }
+
+export interface GitclifforgPackage {
+  name: "git-cliff";
+  domain: "git-cliff.org";
+  description: "A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/git-cliff.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) git-cliff";
+  programs: readonly [
+    "git-cliff"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "libgit2.org~1.7"
+  ];
+  versions: readonly [
+    "2.8.0",
+    "2.7.0",
+    "2.6.1",
+    "2.6.0",
+    "2.5.0",
+    "2.4.0",
+    "2.3.0",
+    "2.2.2",
+    "2.2.1",
+    "2.2.0",
+    "2.1.2",
+    "2.1.1",
+    "2.0.4",
+    "2.0.3",
+    "2.0.2",
+    "2.0.1",
+    "2.0.0",
+    "1.4.0",
+    "1.3.1",
+    "1.3.0",
+    "1.2.0"
+  ];
+  fullPath: "git-cliff.org";
+}

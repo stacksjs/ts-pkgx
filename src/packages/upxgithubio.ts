@@ -26,3 +26,26 @@ export const upxgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "upx.github.io"
 }
+
+export interface UpxgithubioPackage {
+  name: "upx";
+  domain: "upx.github.io";
+  description: "UPX - the Ultimate Packer for eXecutables";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/upx.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) upx";
+  programs: readonly [
+    "upx"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "zlib.net"
+  ];
+  versions: readonly [
+    "5.0.1",
+    "5.0.0",
+    "4.2.4"
+  ];
+  fullPath: "upx.github.io";
+}

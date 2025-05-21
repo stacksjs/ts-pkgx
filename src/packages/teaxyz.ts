@@ -18,3 +18,18 @@ export const teaxyzPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "tea.xyz"
 }
+
+export interface TeaxyzPackage {
+  name: "tea.xyz";
+  domain: "tea.xyz";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx tea.xyz";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "tea.xyz";
+}

@@ -18,3 +18,18 @@ export const ibrcstubsdePackage: PkgxPackage = {
   "versions": [],
   "fullPath": "ibr.cs.tu-bs.de"
 }
+
+export interface IbrcstubsdePackage {
+  name: "ibr.cs.tu-bs.de";
+  domain: "ibr.cs.tu-bs.de";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx ibr.cs.tu-bs.de";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "ibr.cs.tu-bs.de";
+}

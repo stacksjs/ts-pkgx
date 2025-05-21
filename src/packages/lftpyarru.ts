@@ -35,3 +35,35 @@ export const lftpyarruPackage: PkgxPackage = {
   ],
   "fullPath": "lftp.yar.ru"
 }
+
+export interface LftpyarruPackage {
+  name: "lftp";
+  domain: "lftp.yar.ru";
+  description: "sophisticated command line file transfer program (ftp, http, sftp, fish, torrent)";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i";
+  programs: readonly [
+    "lftp",
+    "lftpget"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/libidn2",
+    "gnu.org/gettext",
+    "gnu.org/readline",
+    "openssl.org^1.1",
+    "zlib.net",
+    "invisible-island.net/ncurses",
+    "libexpat.github.io",
+    "linuxgnu.org/gcc/libstdcxx@14",
+    "gnu.org/gcc/libstdcxx@14"
+  ];
+  versions: readonly [
+    "4.9.3",
+    "4.9.2",
+    "4.9.1"
+  ];
+  fullPath: "lftp.yar.ru";
+}

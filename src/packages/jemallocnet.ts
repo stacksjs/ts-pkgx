@@ -20,3 +20,20 @@ export const jemallocnetPackage: PkgxPackage = {
   ],
   "fullPath": "jemalloc.net"
 }
+
+export interface JemallocnetPackage {
+  name: "jemalloc.net";
+  domain: "jemalloc.net";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jemalloc.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +jemalloc.net -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "5.3.0"
+  ];
+  fullPath: "jemalloc.net";
+}

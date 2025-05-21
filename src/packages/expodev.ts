@@ -18,3 +18,18 @@ export const expodevPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "expo.dev"
 }
+
+export interface ExpodevPackage {
+  name: "expo.dev";
+  domain: "expo.dev";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx expo.dev";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "expo.dev";
+}

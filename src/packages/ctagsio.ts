@@ -27,3 +27,27 @@ export const ctagsioPackage: PkgxPackage = {
   ],
   "fullPath": "ctags.io"
 }
+
+export interface CtagsioPackage {
+  name: "ctags";
+  domain: "ctags.io";
+  description: "A maintained ctags implementation";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ctags.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) ctags";
+  programs: readonly [
+    "ctags"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "digip.org/jansson^2",
+    "pyyaml.org/libyaml^0.2",
+    "pcre.org/v2^10",
+    "gnome.org/libxml2^2"
+  ];
+  versions: readonly [
+    "6.1.0"
+  ];
+  fullPath: "ctags.io";
+}

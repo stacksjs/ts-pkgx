@@ -27,3 +27,27 @@ export const freetypeorgPackage: PkgxPackage = {
   ],
   "fullPath": "freetype.org"
 }
+
+export interface FreetypeorgPackage {
+  name: "freetype.org";
+  domain: "freetype.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/freetype.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +freetype.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "libpng.org@1",
+    "zlib.net@1",
+    "sourceware.org/bzip2@1"
+  ];
+  versions: readonly [
+    "2.13.3",
+    "2.13.2",
+    "2.13.1",
+    "2.12.1"
+  ];
+  fullPath: "freetype.org";
+}

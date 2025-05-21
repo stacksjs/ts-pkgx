@@ -26,3 +26,26 @@ export const networkxorgPackage: PkgxPackage = {
   ],
   "fullPath": "networkx.org"
 }
+
+export interface NetworkxorgPackage {
+  name: "networkx.org";
+  domain: "networkx.org";
+  description: "Network Analysis in Python";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/networkx.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +networkx.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3.11"
+  ];
+  versions: readonly [
+    "3.4.2",
+    "3.4.1",
+    "3.4.0",
+    "3.3.0",
+    "3.2.1"
+  ];
+  fullPath: "networkx.org";
+}

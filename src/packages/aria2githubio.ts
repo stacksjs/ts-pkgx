@@ -31,3 +31,31 @@ export const aria2githubioPackage: PkgxPackage = {
     "aria2c"
   ]
 }
+
+export interface Aria2githubioPackage {
+  name: "aria2c";
+  domain: "aria2.github.io";
+  description: "aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/aria2.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) aria2c";
+  programs: readonly [
+    "aria2c"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "zlib.net^1",
+    "openssl.org^1",
+    "libexpat.github.io",
+    "sqlite.org^3"
+  ];
+  versions: readonly [
+    "1.37.0",
+    "1.36.0"
+  ];
+  fullPath: "aria2.github.io";
+  aliases: readonly [
+    "aria2c"
+  ];
+}

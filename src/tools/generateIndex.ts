@@ -72,6 +72,145 @@ async function getImports(): Promise<ImportInfo[]> {
 }
 
 /**
+ * Generate explicit type definition for a package
+ */
+async function generateExplicitTypeDefinition(packages: ImportInfo[]): Promise<Record<string, string>> {
+  const typeDefinitions: Record<string, string> = {}
+
+  for (const pkg of packages) {
+    try {
+      const filePath = path.join(PACKAGES_DIR, `${pkg.originalModule}.ts`)
+      const fileContent = fs.readFileSync(filePath, 'utf-8')
+
+      // Extract the package definition
+      const packageVarName = getPackageExportName(pkg.originalModule)
+      const packageMatch = fileContent.match(new RegExp(`export const ${packageVarName}[^{]+{([\\s\\S]+?)\\n\\}`, 'm'))
+
+      if (packageMatch && packageMatch[1]) {
+        const packageContent = packageMatch[1].trim()
+        const lines = packageContent.split('\n')
+
+        // Process the package content to generate TypeScript interface
+        const typeLines: string[] = []
+        let isInArray = false
+        let currentArrayProp = ''
+        let arrayItems: string[] = []
+
+        for (let i = 0; i < lines.length; i++) {
+          let line = lines[i].trim()
+
+          // Skip empty lines
+          if (!line)
+            continue
+
+          // Remove trailing commas and 'as const' annotations
+          line = line.replace(/ as const,?$/, '').replace(/,$/, '')
+
+          // Special case for empty arrays: "property": []
+          const emptyArrayMatch = line.match(/^"?(\w+)"?: \[\]$/)
+          if (emptyArrayMatch) {
+            const propName = emptyArrayMatch[1]
+            typeLines.push(`${propName}: readonly [];`)
+            continue
+          }
+
+          // Check if this is the start of an array property
+          const arrayStartMatch = line.match(/^"?(\w+)"?: \[$/)
+          if (arrayStartMatch) {
+            isInArray = true
+            // Convert to TypeScript property syntax with readonly
+            currentArrayProp = line.replace(/^"?(\w+)"?: \[$/, '$1: readonly [')
+            arrayItems = []
+            continue
+          }
+
+          // Handle array items
+          if (isInArray) {
+            // Check if this is the end of the array
+            if (line === ']') {
+              isInArray = false
+
+              // Handle empty arrays - always add readonly
+              if (arrayItems.length === 0) {
+                typeLines.push(`${currentArrayProp}];`)
+              }
+              else {
+                // Add the array opening with property name
+                typeLines.push(`${currentArrayProp}`)
+
+                // Add each array item with proper formatting
+                arrayItems.forEach((item, index) => {
+                  const itemLine = `  ${item}${index < arrayItems.length - 1 ? ',' : ''}`
+                  typeLines.push(itemLine)
+                })
+
+                // Close the array with semicolon
+                typeLines.push('];')
+              }
+            }
+            else {
+              // This is an array item, store it for later formatting
+              arrayItems.push(line)
+            }
+            continue
+          }
+
+          // Handle regular properties
+          // Convert from "property": value to property: value;
+          const propLine = `${line.replace(/^"(\w+)":\s*/, '$1: ').replace(/^(\w+):\s*/, '$1: ')};`
+          typeLines.push(propLine)
+        }
+
+        // Generate the interface name with proper casing
+        const typeName = packageVarName.charAt(0).toUpperCase() + packageVarName.slice(1).replace(/Package$/, 'Package')
+
+        // Create the complete interface definition
+        typeDefinitions[pkg.originalModule] = `export interface ${typeName} {\n  ${typeLines.join('\n  ')}\n}`
+      }
+    }
+    catch (error) {
+      console.error(`Error processing ${pkg.originalModule}.ts:`, error)
+    }
+  }
+
+  return typeDefinitions
+}
+
+/**
+ * Update individual package files with explicit type definitions
+ */
+async function updatePackageFiles(typeDefinitions: Record<string, string>): Promise<void> {
+  for (const [moduleName, typeDefinition] of Object.entries(typeDefinitions)) {
+    try {
+      const filePath = path.join(PACKAGES_DIR, `${moduleName}.ts`)
+      let fileContent = fs.readFileSync(filePath, 'utf-8')
+
+      // Extract the package export part
+      const packageVarName = getPackageExportName(moduleName)
+      const packageExportRegex = new RegExp(`export const ${packageVarName}[^{]+{[\\s\\S]+?\\n\\}`, 'm')
+      const packageExportMatch = fileContent.match(packageExportRegex)
+
+      if (packageExportMatch) {
+        // Remove any existing type/interface definitions
+        fileContent = fileContent.replace(/\n\n\/\/[^\n]*\nexport (type|interface) [A-Za-z0-9]+ \{[\s\S]+?\n\}/, '')
+        fileContent = fileContent.replace(/\n\nexport (type|interface) [A-Za-z0-9]+ \{[\s\S]+?\n\}/g, '')
+
+        // Add the new type definition after the package export
+        const newContent = `${packageExportMatch[0]}\n\n${typeDefinition}`
+        fileContent = fileContent.replace(packageExportRegex, newContent)
+
+        // Write the updated content back to the file
+        fs.writeFileSync(filePath, fileContent)
+        console.error(`Updated ${moduleName}.ts with explicit type definition`)
+      }
+    }
+    catch (error) {
+      console.error(`Error updating ${moduleName}.ts:`, error)
+    }
+  }
+}
+
+/**
  * Generate the index.ts file content
  */
 async function generateIndexContent(): Promise<string> {
@@ -131,8 +270,16 @@ async function generateIndexContent(): Promise<string> {
 // Main function
 async function main() {
   try {
+    const imports = await getImports()
+    const typeDefinitions = await generateExplicitTypeDefinition(imports)
+
+    // Update individual package files with type definitions
+    await updatePackageFiles(typeDefinitions)
+
+    // Generate the index.ts file
     const content = await generateIndexContent()
     fs.writeFileSync(INDEX_FILE, content)
+
     console.error(`Successfully generated ${INDEX_FILE}`)
   }
   catch (error) {

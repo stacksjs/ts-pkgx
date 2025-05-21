@@ -26,3 +26,26 @@ export const shellchecknetPackage: PkgxPackage = {
   ],
   "fullPath": "shellcheck.net"
 }
+
+export interface ShellchecknetPackage {
+  name: "shellcheck";
+  domain: "shellcheck.net";
+  description: "ShellCheck, a static analysis tool for shell scripts";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/shellcheck.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) shellcheck";
+  programs: readonly [
+    "shellcheck"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "sourceware.org/libffi@3"
+  ];
+  versions: readonly [
+    "0.9.0",
+    "0.8.0",
+    "0.10.0"
+  ];
+  fullPath: "shellcheck.net";
+}

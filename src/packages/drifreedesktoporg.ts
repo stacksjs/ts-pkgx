@@ -34,3 +34,34 @@ export const drifreedesktoporgPackage: PkgxPackage = {
     "libdrm"
   ]
 }
+
+export interface DrifreedesktoporgPackage {
+  name: "libdrm";
+  domain: "dri.freedesktop.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dri.freedesktop.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +dri.freedesktop.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "x.org/pciaccess"
+  ];
+  versions: readonly [
+    "2.4.124",
+    "2.4.123",
+    "2.4.122",
+    "2.4.121",
+    "2.4.120",
+    "2.4.119",
+    "2.4.118",
+    "2.4.117",
+    "2.4.116",
+    "2.4.100"
+  ];
+  fullPath: "dri.freedesktop.org";
+  aliases: readonly [
+    "libdrm"
+  ];
+}

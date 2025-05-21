@@ -22,3 +22,22 @@ export const dotenvlintergithubioPackage: PkgxPackage = {
   ],
   "fullPath": "dotenv-linter.github.io"
 }
+
+export interface DotenvlintergithubioPackage {
+  name: "dotenv-linter";
+  domain: "dotenv-linter.github.io";
+  description: "⚡️Lightning-fast linter for .env files. Written in Rust 🦀";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dotenv-linter.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) dotenv-linter";
+  programs: readonly [
+    "dotenv-linter"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "3.3.0"
+  ];
+  fullPath: "dotenv-linter.github.io";
+}

@@ -18,3 +18,18 @@ export const presslygithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "pressly.github.io"
 }
+
+export interface PresslygithubioPackage {
+  name: "pressly.github.io";
+  domain: "pressly.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx pressly.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "pressly.github.io";
+}

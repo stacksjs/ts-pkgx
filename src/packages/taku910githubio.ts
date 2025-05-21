@@ -18,3 +18,18 @@ export const taku910githubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "taku910.github.io"
 }
+
+export interface Taku910githubioPackage {
+  name: "taku910.github.io";
+  domain: "taku910.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx taku910.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "taku910.github.io";
+}

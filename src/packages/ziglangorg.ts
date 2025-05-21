@@ -27,3 +27,27 @@ export const ziglangorgPackage: PkgxPackage = {
   ],
   "fullPath": "ziglang.org"
 }
+
+export interface ZiglangorgPackage {
+  name: "zig";
+  domain: "ziglang.org";
+  description: "General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ziglang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) zig";
+  programs: readonly [
+    "zig"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.14.0",
+    "0.13.0",
+    "0.12.1",
+    "0.12.0",
+    "0.11.0",
+    "0.10.1"
+  ];
+  fullPath: "ziglang.org";
+}

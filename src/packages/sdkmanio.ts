@@ -26,3 +26,26 @@ export const sdkmanioPackage: PkgxPackage = {
     "sdkman-init.sh"
   ]
 }
+
+export interface SdkmanioPackage {
+  name: "sdkman-init.sh";
+  domain: "sdkman.io";
+  description: "The SDKMAN! Command Line Interface";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sdkman.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) sdkman-init.sh";
+  programs: readonly [
+    "sdkman-init.sh"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "5.19.0",
+    "5.18.2"
+  ];
+  fullPath: "sdkman.io";
+  aliases: readonly [
+    "sdkman-init.sh"
+  ];
+}

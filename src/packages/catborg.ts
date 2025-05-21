@@ -18,3 +18,18 @@ export const catborgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "catb.org"
 }
+
+export interface CatborgPackage {
+  name: "catb.org";
+  domain: "catb.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx catb.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "catb.org";
+}

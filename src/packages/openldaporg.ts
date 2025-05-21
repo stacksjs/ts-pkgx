@@ -48,3 +48,48 @@ export const openldaporgPackage: PkgxPackage = {
     "ldap"
   ]
 }
+
+export interface OpenldaporgPackage {
+  name: "ldap";
+  domain: "openldap.org";
+  description: "Open source suite of directory software";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +openldap.org -- $SHELL -i";
+  programs: readonly [
+    "ldapcompare",
+    "ldapdelete",
+    "ldapexop",
+    "ldapmodify",
+    "ldapmodrdn",
+    "ldappasswd",
+    "ldapsearch",
+    "ldapurl",
+    "ldapvc",
+    "ldapwhoami"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1",
+    "linuxgithub.com/util-linux/util-linux",
+    "github.com/util-linux/util-linux"
+  ];
+  versions: readonly [
+    "2.6.9",
+    "2.6.8",
+    "2.6.7",
+    "2.6.6",
+    "2.6.5",
+    "2.6.4",
+    "2.5.19",
+    "2.5.18",
+    "2.5.17",
+    "2.5.16",
+    "2.5.15"
+  ];
+  fullPath: "openldap.org";
+  aliases: readonly [
+    "ldap"
+  ];
+}

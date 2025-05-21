@@ -18,3 +18,18 @@ export const pantsbuildorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "pantsbuild.org"
 }
+
+export interface PantsbuildorgPackage {
+  name: "pantsbuild.org";
+  domain: "pantsbuild.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx pantsbuild.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "pantsbuild.org";
+}

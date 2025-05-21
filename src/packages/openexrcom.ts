@@ -53,3 +53,53 @@ export const openexrcomPackage: PkgxPackage = {
     "exr"
   ]
 }
+
+export interface OpenexrcomPackage {
+  name: "exr";
+  domain: "openexr.com";
+  description: "The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i";
+  programs: readonly [
+    "exr2aces",
+    "exrenvmap",
+    "exrheader",
+    "exrmakepreview",
+    "exrmaketiled",
+    "exrmultipart",
+    "exrmultiview",
+    "exrstdattr"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "zlib.net^1",
+    "openexr.com/imath"
+  ];
+  versions: readonly [
+    "3.3.3",
+    "3.3.2",
+    "3.3.1",
+    "3.3.0",
+    "3.2.4",
+    "3.2.3",
+    "3.2.2",
+    "3.2.126",
+    "3.2.1",
+    "3.2.0",
+    "3.1.9",
+    "3.1.8",
+    "3.1.7",
+    "3.1.6",
+    "3.1.13",
+    "3.1.12",
+    "3.1.11",
+    "3.1.10",
+    "2.5.10"
+  ];
+  fullPath: "openexr.com";
+  aliases: readonly [
+    "exr"
+  ];
+}

@@ -34,3 +34,34 @@ export const fmtdevPackage: PkgxPackage = {
   ],
   "fullPath": "fmt.dev"
 }
+
+export interface FmtdevPackage {
+  name: "fmt.dev";
+  domain: "fmt.dev";
+  description: "A modern formatting library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fmt.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +fmt.dev -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "9.1.0",
+    "11.2.0",
+    "11.1.4",
+    "11.1.3",
+    "11.1.2",
+    "11.1.1",
+    "11.1.0",
+    "11.0.2",
+    "11.0.1",
+    "11.0.0",
+    "10.2.1",
+    "10.2.0",
+    "10.1.1",
+    "10.1.0",
+    "10.0.0"
+  ];
+  fullPath: "fmt.dev";
+}

@@ -18,3 +18,18 @@ export const gnuorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "gnu.org"
 }
+
+export interface GnuorgPackage {
+  name: "gnu.org";
+  domain: "gnu.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx gnu.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "gnu.org";
+}

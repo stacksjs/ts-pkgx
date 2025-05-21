@@ -30,3 +30,30 @@ export const exiftoolorgPackage: PkgxPackage = {
   ],
   "fullPath": "exiftool.org"
 }
+
+export interface ExiftoolorgPackage {
+  name: "exiftool";
+  domain: "exiftool.org";
+  description: "Perl lib for reading and writing EXIF metadata";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/exiftool.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) exiftool";
+  programs: readonly [
+    "exiftool"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "perl.org"
+  ];
+  versions: readonly [
+    "13.25.0",
+    "13.10.0",
+    "13.0.0",
+    "12.76.0",
+    "12.75.0",
+    "12.70.0",
+    "12.60.0"
+  ];
+  fullPath: "exiftool.org";
+}

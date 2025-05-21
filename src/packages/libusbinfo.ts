@@ -22,3 +22,22 @@ export const libusbinfoPackage: PkgxPackage = {
   ],
   "fullPath": "libusb.info"
 }
+
+export interface LibusbinfoPackage {
+  name: "libusb.info";
+  domain: "libusb.info";
+  description: "A cross-platform library to access USB devices";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libusb.info/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.0.28",
+    "1.0.27",
+    "1.0.26"
+  ];
+  fullPath: "libusb.info";
+}

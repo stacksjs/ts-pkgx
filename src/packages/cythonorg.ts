@@ -42,3 +42,42 @@ export const cythonorgPackage: PkgxPackage = {
   ],
   "fullPath": "cython.org"
 }
+
+export interface CythonorgPackage {
+  name: "cython";
+  domain: "cython.org";
+  description: "Compiler for writing C extensions for the Python language";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) cython";
+  programs: readonly [
+    "cython"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org<3.12"
+  ];
+  versions: readonly [
+    "3.1.1",
+    "3.1.0",
+    "3.0.9",
+    "3.0.8",
+    "3.0.7",
+    "3.0.6",
+    "3.0.5",
+    "3.0.4",
+    "3.0.3",
+    "3.0.2",
+    "3.0.12",
+    "3.0.11",
+    "3.0.10",
+    "3.0.1",
+    "3.0.0",
+    "0.29.37.1",
+    "0.29.37",
+    "0.29.36",
+    "0.29.35"
+  ];
+  fullPath: "cython.org";
+}

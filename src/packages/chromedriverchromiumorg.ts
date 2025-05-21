@@ -27,3 +27,27 @@ export const chromedriverchromiumorgPackage: PkgxPackage = {
   ],
   "fullPath": "chromedriver.chromium.org"
 }
+
+export interface ChromedriverchromiumorgPackage {
+  name: "chromedriver";
+  domain: "chromedriver.chromium.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/chromedriver.chromium.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) chromedriver";
+  programs: readonly [
+    "chromedriver"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "linuxgnome.org/glib^2mozilla.org/nssx.org/xcb",
+    "gnome.org/glib^2",
+    "mozilla.org/nss",
+    "x.org/xcb"
+  ];
+  versions: readonly [
+    "114.0.5735.90"
+  ];
+  fullPath: "chromedriver.chromium.org";
+}

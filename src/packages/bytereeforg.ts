@@ -18,3 +18,18 @@ export const bytereeforgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "bytereef.org"
 }
+
+export interface BytereeforgPackage {
+  name: "bytereef.org";
+  domain: "bytereef.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx bytereef.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "bytereef.org";
+}

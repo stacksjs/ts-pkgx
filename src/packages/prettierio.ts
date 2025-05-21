@@ -35,3 +35,35 @@ export const prettierioPackage: PkgxPackage = {
   ],
   "fullPath": "prettier.io"
 }
+
+export interface PrettierioPackage {
+  name: "prettier";
+  domain: "prettier.io";
+  description: "Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/prettier.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) prettier";
+  programs: readonly [
+    "prettier"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "nodejs.org^20"
+  ];
+  versions: readonly [
+    "3.5.3",
+    "3.5.2",
+    "3.5.1",
+    "3.5.0",
+    "3.4.2",
+    "3.4.1",
+    "3.4.0",
+    "3.3.3",
+    "3.3.2",
+    "3.3.1",
+    "3.3.0",
+    "3.2.5"
+  ];
+  fullPath: "prettier.io";
+}

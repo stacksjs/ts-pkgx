@@ -20,3 +20,20 @@ export const soxrsourceforgenetPackage: PkgxPackage = {
   ],
   "fullPath": "soxr.sourceforge.net"
 }
+
+export interface SoxrsourceforgenetPackage {
+  name: "soxr.sourceforge.net";
+  domain: "soxr.sourceforge.net";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/soxr.sourceforge.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +soxr.sourceforge.net -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.1.3"
+  ];
+  fullPath: "soxr.sourceforge.net";
+}

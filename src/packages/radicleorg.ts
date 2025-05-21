@@ -49,3 +49,49 @@ export const radicleorgPackage: PkgxPackage = {
   ],
   "fullPath": "radicle.org"
 }
+
+export interface RadicleorgPackage {
+  name: "radicle.org";
+  domain: "radicle.org";
+  description: "Radicle CLI";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/radicle.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +radicle.org -- $SHELL -i";
+  programs: readonly [
+    "rad",
+    "git-remote-rad",
+    "rad-account",
+    "rad-auth",
+    "rad-checkout",
+    "rad-clone",
+    "rad-edit",
+    "rad-ens",
+    "rad-gov",
+    "rad-help",
+    "rad-init",
+    "rad-inspect",
+    "rad-issue",
+    "rad-ls",
+    "rad-merge",
+    "rad-patch",
+    "rad-path",
+    "rad-pull",
+    "rad-push",
+    "rad-remote",
+    "rad-reward",
+    "rad-rm",
+    "rad-self",
+    "rad-sync",
+    "rad-track",
+    "rad-untrack"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1.1"
+  ];
+  versions: readonly [
+    "0.6.1"
+  ];
+  fullPath: "radicle.org";
+}

@@ -44,3 +44,44 @@ export const wimlibnetPackage: PkgxPackage = {
   ],
   "fullPath": "wimlib.net"
 }
+
+export interface WimlibnetPackage {
+  name: "wimlib.net";
+  domain: "wimlib.net";
+  description: "Library to create, extract, and modify Windows Imaging files";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wimlib.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +wimlib.net -- $SHELL -i";
+  programs: readonly [
+    "mkwinpeimg",
+    "wimappend",
+    "wimapply",
+    "wimapply",
+    "wimdelete",
+    "wimdir",
+    "wimexport",
+    "wimextract",
+    "wiminfo",
+    "wimjoin",
+    "wimlib-imagex",
+    "wimmount",
+    "wimmountrw",
+    "wimoptimize",
+    "wimsplit",
+    "wimunmount",
+    "wimupdate",
+    "wimverify"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^3.1.0",
+    "gnome.org/libxml2"
+  ];
+  versions: readonly [
+    "1.14.4",
+    "1.14.3",
+    "1.14.1"
+  ];
+  fullPath: "wimlib.net";
+}

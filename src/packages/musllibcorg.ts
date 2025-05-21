@@ -25,3 +25,25 @@ export const musllibcorgPackage: PkgxPackage = {
   ],
   "fullPath": "musl.libc.org"
 }
+
+export interface MusllibcorgPackage {
+  name: "musl.libc.org";
+  domain: "musl.libc.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/musl.libc.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +musl.libc.org -- $SHELL -i";
+  programs: readonly [
+    "ld.musl-clang",
+    "musl-clang"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "llvm.org"
+  ];
+  versions: readonly [
+    "1.2.3"
+  ];
+  fullPath: "musl.libc.org";
+}

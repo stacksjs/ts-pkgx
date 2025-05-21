@@ -38,3 +38,38 @@ export const gitquickstatsshPackage: PkgxPackage = {
   ],
   "fullPath": "git-quick-stats.sh"
 }
+
+export interface GitquickstatsshPackage {
+  name: "git-quick-stats";
+  domain: "git-quick-stats.sh";
+  description: "▁▅▆▃▅ Git quick statistics is a simple and efficient way to access various statistics in git repository.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/git-quick-stats.sh/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) git-quick-stats";
+  programs: readonly [
+    "git-quick-stats"
+  ];
+  companions: readonly [
+    "gnu.org/coreutils"
+  ];
+  dependencies: readonly [
+    "git-scm.org",
+    "gnu.org/bash",
+    "linuxgithub.com/util-linux/util-linux",
+    "github.com/util-linux/util-linux"
+  ];
+  versions: readonly [
+    "2.5.8",
+    "2.5.7",
+    "2.5.6",
+    "2.5.5",
+    "2.5.4",
+    "2.5.3",
+    "2.5.2",
+    "2.5.1",
+    "2.5.0",
+    "2.4.1"
+  ];
+  fullPath: "git-quick-stats.sh";
+}

@@ -22,3 +22,22 @@ export const clogtoolgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "clog-tool.github.io"
 }
+
+export interface ClogtoolgithubioPackage {
+  name: "clog";
+  domain: "clog-tool.github.io";
+  description: "Colorized pattern-matching log tail utility";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/clog-tool.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) clog";
+  programs: readonly [
+    "clog"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.9.3"
+  ];
+  fullPath: "clog-tool.github.io";
+}

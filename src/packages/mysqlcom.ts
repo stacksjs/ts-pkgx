@@ -88,3 +88,88 @@ export const mysqlcomPackage: PkgxPackage = {
   ],
   "fullPath": "mysql.com"
 }
+
+export interface MysqlcomPackage {
+  name: "mysql.com";
+  domain: "mysql.com";
+  description: "MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mysql.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i";
+  programs: readonly [
+    "mysql_client_test",
+    "my_print_defaults",
+    "myisam_ftdump",
+    "myisamchk",
+    "myisamlog",
+    "myisampack",
+    "mysql",
+    "mysql_config",
+    "mysql_config_editor",
+    "mysql_keyring_encryption_test",
+    "mysql_migrate_keyring",
+    "mysql_secure_installation",
+    "mysql_tzinfo_to_sql",
+    "mysqladmin",
+    "mysqlbinlog",
+    "mysqlcheck",
+    "mysqld",
+    "mysqld_multi",
+    "mysqld_safe",
+    "mysqldump",
+    "mysqldumpslow",
+    "mysqlimport",
+    "mysqlrouter",
+    "mysqlrouter_keyring",
+    "mysqlrouter_passwd",
+    "mysqlrouter_plugin_info",
+    "mysqlshow",
+    "mysqlslap",
+    "mysqltest",
+    "mysqltest_safe_process",
+    "mysqlxtest"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "unicode.org^71",
+    "libevent.org^2",
+    "lz4.org^1",
+    "openssl.org^1.1",
+    "protobuf.dev^21",
+    "zlib.net^1.2",
+    "facebook.com/zstd^1",
+    "curl.se>=6.0",
+    "thrysoee.dk/editline^3",
+    "developers.yubico.com/libfido2^1",
+    "linuxgnu.org/gcc/libstdcxx@14",
+    "gnu.org/gcc/libstdcxx@14"
+  ];
+  versions: readonly [
+    "9.3.0",
+    "9.2.0",
+    "9.1.0",
+    "9.0.1",
+    "9.0.0",
+    "8.4.5",
+    "8.4.4",
+    "8.4.3",
+    "8.4.2",
+    "8.4.1",
+    "8.4.0",
+    "8.3.0",
+    "8.2.0",
+    "8.1.0",
+    "8.0.42",
+    "8.0.41",
+    "8.0.40",
+    "8.0.39",
+    "8.0.38",
+    "8.0.36",
+    "8.0.35",
+    "8.0.34",
+    "8.0.33",
+    "8.0.32"
+  ];
+  fullPath: "mysql.com";
+}

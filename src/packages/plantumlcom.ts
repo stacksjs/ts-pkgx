@@ -40,3 +40,40 @@ export const plantumlcomPackage: PkgxPackage = {
   ],
   "fullPath": "plantuml.com"
 }
+
+export interface PlantumlcomPackage {
+  name: "plantuml";
+  domain: "plantuml.com";
+  description: "Generate diagrams from textual description";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/plantuml.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) plantuml";
+  programs: readonly [
+    "plantuml"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "graphviz.org",
+    "openjdk.org"
+  ];
+  versions: readonly [
+    "1.2025.2",
+    "1.2025.1",
+    "1.2025.0",
+    "1.2024.8",
+    "1.2024.7",
+    "1.2024.6",
+    "1.2024.5",
+    "1.2024.4",
+    "1.2024.3",
+    "1.2024.2",
+    "1.2024.1",
+    "1.2024.0",
+    "1.2023.13",
+    "1.2023.12",
+    "1.2023.11",
+    "1.2023.10"
+  ];
+  fullPath: "plantuml.com";
+}

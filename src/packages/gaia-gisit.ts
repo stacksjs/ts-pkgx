@@ -18,3 +18,18 @@ export const gaiagisitPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "gaia-gis.it"
 }
+
+export interface GaiagisitPackage {
+  name: "gaia-gis.it";
+  domain: "gaia-gis.it";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx gaia-gis.it";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "gaia-gis.it";
+}

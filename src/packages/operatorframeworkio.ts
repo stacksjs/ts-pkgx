@@ -18,3 +18,18 @@ export const operatorframeworkioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "operatorframework.io"
 }
+
+export interface OperatorframeworkioPackage {
+  name: "operatorframework.io";
+  domain: "operatorframework.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx operatorframework.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "operatorframework.io";
+}

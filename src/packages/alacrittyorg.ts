@@ -29,3 +29,29 @@ export const alacrittyorgPackage: PkgxPackage = {
   ],
   "fullPath": "alacritty.org"
 }
+
+export interface AlacrittyorgPackage {
+  name: "alacritty";
+  domain: "alacritty.org";
+  description: "A cross-platform, OpenGL terminal emulator.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/alacritty.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) alacritty";
+  programs: readonly [
+    "alacritty"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "linuxfreetype.orgfreedesktop.org/fontconfig",
+    "freetype.org",
+    "freedesktop.org/fontconfig"
+  ];
+  versions: readonly [
+    "0.15.1",
+    "0.15.0",
+    "0.14.0",
+    "0.13.2"
+  ];
+  fullPath: "alacritty.org";
+}

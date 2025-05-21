@@ -32,3 +32,32 @@ export const microcksioPackage: PkgxPackage = {
     "microcks-cli"
   ]
 }
+
+export interface MicrocksioPackage {
+  name: "microcks-cli";
+  domain: "microcks.io";
+  description: "Simple CLI for interacting with Microcks test APIs";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/microcks.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) microcks-cli";
+  programs: readonly [
+    "microcks-cli"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "curl.se/ca-certs"
+  ];
+  versions: readonly [
+    "0.9.0",
+    "0.5.8",
+    "0.5.7",
+    "0.5.6",
+    "0.5.5",
+    "0.5.4"
+  ];
+  fullPath: "microcks.io";
+  aliases: readonly [
+    "microcks-cli"
+  ];
+}

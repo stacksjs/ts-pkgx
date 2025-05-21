@@ -43,3 +43,43 @@ export const jbangdevPackage: PkgxPackage = {
   ],
   "fullPath": "jbang.dev"
 }
+
+export interface JbangdevPackage {
+  name: "jbang";
+  domain: "jbang.dev";
+  description: "Unleash the power of Java - JBang Lets Students, Educators and Professional Developers create, edit and run self-contained source-only Java programs with unprecedented ease.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jbang.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) jbang";
+  programs: readonly [
+    "jbang"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org"
+  ];
+  versions: readonly [
+    "0.126.1",
+    "0.126.0",
+    "0.125.1",
+    "0.125.0",
+    "0.124.0",
+    "0.123.0",
+    "0.122.0",
+    "0.121.0",
+    "0.120.4",
+    "0.119.0",
+    "0.118.0",
+    "0.117.1",
+    "0.117.0",
+    "0.116.0",
+    "0.115.0",
+    "0.114.0",
+    "0.113.0",
+    "0.112.4",
+    "0.111.0",
+    "0.110.1"
+  ];
+  fullPath: "jbang.dev";
+}

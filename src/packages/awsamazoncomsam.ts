@@ -54,3 +54,54 @@ export const awsamazoncomsamPackage: PkgxPackage = {
     "sam"
   ]
 }
+
+export interface AwsamazoncomsamPackage {
+  name: "sam";
+  domain: "aws.amazon.com/sam";
+  description: "CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/sam/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) sam";
+  programs: readonly [
+    "sam"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "1.138.0",
+    "1.137.1",
+    "1.137.0",
+    "1.136.0",
+    "1.135.0",
+    "1.134.0",
+    "1.133.0",
+    "1.132.0",
+    "1.131.0",
+    "1.130.0",
+    "1.129.0",
+    "1.128.0",
+    "1.127.0",
+    "1.126.0",
+    "1.125.0",
+    "1.124.0",
+    "1.123.0",
+    "1.122.0",
+    "1.121.0",
+    "1.120.0",
+    "1.119.0",
+    "1.118.0",
+    "1.117.0",
+    "1.116.0",
+    "1.115.0",
+    "1.114.0",
+    "1.113.0",
+    "1.112.0"
+  ];
+  fullPath: "aws.amazon.com/sam";
+  aliases: readonly [
+    "sam"
+  ];
+}

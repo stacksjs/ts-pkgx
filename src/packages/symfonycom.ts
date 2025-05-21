@@ -72,3 +72,72 @@ export const symfonycomPackage: PkgxPackage = {
   ],
   "fullPath": "symfony.com"
 }
+
+export interface SymfonycomPackage {
+  name: "symfony";
+  domain: "symfony.com";
+  description: "The Symfony CLI tool";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) symfony";
+  programs: readonly [
+    "symfony"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "php.net"
+  ];
+  versions: readonly [
+    "5.9.1",
+    "5.9.0",
+    "5.8.9",
+    "5.8.8",
+    "5.8.7",
+    "5.8.6",
+    "5.8.5",
+    "5.8.4",
+    "5.8.3",
+    "5.8.2",
+    "5.8.19",
+    "5.8.18",
+    "5.8.17",
+    "5.8.16",
+    "5.8.15",
+    "5.8.14",
+    "5.8.13",
+    "5.8.12",
+    "5.8.11",
+    "5.8.10",
+    "5.8.1",
+    "5.8.0",
+    "5.7.8",
+    "5.7.7",
+    "5.7.6",
+    "5.7.5",
+    "5.7.4",
+    "5.7.3",
+    "5.7.2",
+    "5.7.1",
+    "5.7.0",
+    "5.6.2",
+    "5.6.1",
+    "5.6.0",
+    "5.5.9",
+    "5.5.8",
+    "5.5.7",
+    "5.5.10",
+    "5.11.0",
+    "5.10.9",
+    "5.10.8",
+    "5.10.7",
+    "5.10.6",
+    "5.10.5",
+    "5.10.4",
+    "5.10.3",
+    "5.10.2",
+    "5.10.1",
+    "5.10.0"
+  ];
+  fullPath: "symfony.com";
+}

@@ -18,3 +18,18 @@ export const certifiioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "certifi.io"
 }
+
+export interface CertifiioPackage {
+  name: "certifi.io";
+  domain: "certifi.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx certifi.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "certifi.io";
+}

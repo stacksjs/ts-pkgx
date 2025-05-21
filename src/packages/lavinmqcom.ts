@@ -35,3 +35,35 @@ export const lavinmqcomPackage: PkgxPackage = {
   ],
   "fullPath": "lavinmq.com"
 }
+
+export interface LavinmqcomPackage {
+  name: "lavinmq";
+  domain: "lavinmq.com";
+  description: "Lightweight and fast AMQP (0-9-1) server";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lavinmq.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +lavinmq.com -- $SHELL -i";
+  programs: readonly [
+    "lavinmq",
+    "lavinmqctl",
+    "lavinmqperf"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1",
+    "pcre.org/v2@10",
+    "libevent.org@2",
+    "hboehm.info/gc@8"
+  ];
+  versions: readonly [
+    "2.3.0",
+    "2.2.0",
+    "2.1.0",
+    "2.0.2",
+    "2.0.1",
+    "2.0.0",
+    "1.3.1"
+  ];
+  fullPath: "lavinmq.com";
+}

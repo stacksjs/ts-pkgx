@@ -18,3 +18,18 @@ export const anchorecomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "anchore.com"
 }
+
+export interface AnchorecomPackage {
+  name: "anchore.com";
+  domain: "anchore.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx anchore.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "anchore.com";
+}

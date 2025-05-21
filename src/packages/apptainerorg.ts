@@ -34,3 +34,34 @@ export const apptainerorgPackage: PkgxPackage = {
   ],
   "fullPath": "apptainer.org"
 }
+
+export interface ApptainerorgPackage {
+  name: "apptainer.org";
+  domain: "apptainer.org";
+  description: "Application container and unprivileged sandbox platform for Linux";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apptainer.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +apptainer.org -- $SHELL -i";
+  programs: readonly [
+    "apptainer",
+    "run-singularity",
+    "singularity"
+  ];
+  companions: readonly [
+    "github.com/plougher/squashfs-tools"
+  ];
+  dependencies: readonly [
+    "github.com/seccomp/libseccomp@2",
+    "curl.se/ca-certs"
+  ];
+  versions: readonly [
+    "1.4.1",
+    "1.4.0",
+    "1.3.6",
+    "1.3.5",
+    "1.3.4",
+    "1.3.3"
+  ];
+  fullPath: "apptainer.org";
+}

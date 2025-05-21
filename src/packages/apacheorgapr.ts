@@ -27,3 +27,27 @@ export const apacheorgaprPackage: PkgxPackage = {
     "apr"
   ]
 }
+
+export interface ApacheorgaprPackage {
+  name: "apache.org/apr";
+  domain: "apache.org/apr";
+  description: "Mirror of Apache Portable Runtime";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/apr/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +apache.org/apr -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.7.6",
+    "1.7.5",
+    "1.7.4",
+    "1.7.3",
+    "1.7.2"
+  ];
+  fullPath: "apache.org/apr";
+  aliases: readonly [
+    "apr"
+  ];
+}

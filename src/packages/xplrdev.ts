@@ -25,3 +25,25 @@ export const xplrdevPackage: PkgxPackage = {
   ],
   "fullPath": "xplr.dev"
 }
+
+export interface XplrdevPackage {
+  name: "xplr";
+  domain: "xplr.dev";
+  description: "A hackable, minimal, fast TUI file explorer";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xplr.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) xplr";
+  programs: readonly [
+    "xplr"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.0.0",
+    "0.21.9",
+    "0.21.8",
+    "0.21.10"
+  ];
+  fullPath: "xplr.dev";
+}

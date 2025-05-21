@@ -27,3 +27,27 @@ export const wavpackcomPackage: PkgxPackage = {
   ],
   "fullPath": "wavpack.com"
 }
+
+export interface WavpackcomPackage {
+  name: "wavpack.com";
+  domain: "wavpack.com";
+  description: "WavPack encode/decode library, command-line programs, and several plugins";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wavpack.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +wavpack.com -- $SHELL -i";
+  programs: readonly [
+    "wavpack",
+    "wvunpack",
+    "wvtag",
+    "wvgain"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "5.8.1",
+    "5.8.0",
+    "5.7.0"
+  ];
+  fullPath: "wavpack.com";
+}

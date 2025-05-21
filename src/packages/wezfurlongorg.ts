@@ -18,3 +18,18 @@ export const wezfurlongorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "wezfurlong.org"
 }
+
+export interface WezfurlongorgPackage {
+  name: "wezfurlong.org";
+  domain: "wezfurlong.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx wezfurlong.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "wezfurlong.org";
+}

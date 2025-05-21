@@ -39,3 +39,39 @@ export const unicodeorgPackage: PkgxPackage = {
   ],
   "fullPath": "unicode.org"
 }
+
+export interface UnicodeorgPackage {
+  name: "unicode.org";
+  domain: "unicode.org";
+  description: "The home of the ICU project source code.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/unicode.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +unicode.org -- $SHELL -i";
+  programs: readonly [
+    "derb",
+    "genbrk",
+    "gencfu",
+    "gencnval",
+    "gendict",
+    "genrb",
+    "icu-config",
+    "icuexportdata",
+    "icuinfo",
+    "makeconv",
+    "pkgdata",
+    "uconv"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "77.1.0",
+    "76.1.0",
+    "75.1.0",
+    "74.2.0",
+    "74.1.0",
+    "73.2.0",
+    "71.1.0"
+  ];
+  fullPath: "unicode.org";
+}

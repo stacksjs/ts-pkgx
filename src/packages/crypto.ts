@@ -18,3 +18,18 @@ export const cryptoPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "cr.yp.to"
 }
+
+export interface CryptoPackage {
+  name: "cr.yp.to";
+  domain: "cr.yp.to";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx cr.yp.to";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "cr.yp.to";
+}

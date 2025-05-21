@@ -23,3 +23,23 @@ export const eigentuxfamilyorgPackage: PkgxPackage = {
   ],
   "fullPath": "eigen.tuxfamily.org"
 }
+
+export interface EigentuxfamilyorgPackage {
+  name: "eigen.tuxfamily.org";
+  domain: "eigen.tuxfamily.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/eigen.tuxfamily.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "linuxgnu.org/gcc/libstdcxx@14",
+    "gnu.org/gcc/libstdcxx@14"
+  ];
+  versions: readonly [
+    "3.4.0"
+  ];
+  fullPath: "eigen.tuxfamily.org";
+}

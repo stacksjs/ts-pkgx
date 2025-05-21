@@ -37,3 +37,37 @@ export const fxwtfPackage: PkgxPackage = {
   ],
   "fullPath": "fx.wtf"
 }
+
+export interface FxwtfPackage {
+  name: "fx";
+  domain: "fx.wtf";
+  description: "Terminal JSON viewer & processor";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fx.wtf/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) fx";
+  programs: readonly [
+    "fx"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "36.0.2",
+    "36.0.1",
+    "36.0.0",
+    "35.0.0",
+    "34.0.0",
+    "33.0.0",
+    "32.0.0",
+    "31.0.0",
+    "30.2.0",
+    "30.1.1",
+    "30.1.0",
+    "30.0.3",
+    "30.0.2",
+    "30.0.1",
+    "30.0.0",
+    "24.1.0"
+  ];
+  fullPath: "fx.wtf";
+}

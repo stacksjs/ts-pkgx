@@ -30,3 +30,30 @@ export const doxygennlPackage: PkgxPackage = {
   ],
   "fullPath": "doxygen.nl"
 }
+
+export interface DoxygennlPackage {
+  name: "doxygen";
+  domain: "doxygen.nl";
+  description: "Generate documentation for several programming languages";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/doxygen.nl/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) doxygen";
+  programs: readonly [
+    "doxygen"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.9.8",
+    "1.9.7",
+    "1.9.6",
+    "1.13.2",
+    "1.13.1",
+    "1.13.0",
+    "1.12.0",
+    "1.11.0",
+    "1.10.0"
+  ];
+  fullPath: "doxygen.nl";
+}

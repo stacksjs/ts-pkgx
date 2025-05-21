@@ -24,3 +24,24 @@ export const cointopshPackage: PkgxPackage = {
   ],
   "fullPath": "cointop.sh"
 }
+
+export interface CointopshPackage {
+  name: "cointop";
+  domain: "cointop.sh";
+  description: "A fast and lightweight interactive terminal based UI application for tracking cryptocurrencies 🚀";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cointop.sh/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) cointop";
+  programs: readonly [
+    "cointop"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "curl.se/ca-certs"
+  ];
+  versions: readonly [
+    "1.6.10"
+  ];
+  fullPath: "cointop.sh";
+}

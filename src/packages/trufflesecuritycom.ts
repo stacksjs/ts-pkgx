@@ -18,3 +18,18 @@ export const trufflesecuritycomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "trufflesecurity.com"
 }
+
+export interface TrufflesecuritycomPackage {
+  name: "trufflesecurity.com";
+  domain: "trufflesecurity.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx trufflesecurity.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "trufflesecurity.com";
+}

@@ -31,3 +31,31 @@ export const tlrdevPackage: PkgxPackage = {
     "teller"
   ]
 }
+
+export interface TlrdevPackage {
+  name: "teller";
+  domain: "tlr.dev";
+  description: "Cloud native secrets management for developers - never leave your command line for secrets.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tlr.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) teller";
+  programs: readonly [
+    "teller"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "2.0.7",
+    "2.0.6",
+    "2.0.5",
+    "2.0.4",
+    "1.5.6"
+  ];
+  fullPath: "tlr.dev";
+  aliases: readonly [
+    "teller"
+  ];
+}

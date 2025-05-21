@@ -50,3 +50,50 @@ export const apollographqlcomroverPackage: PkgxPackage = {
     "rover"
   ]
 }
+
+export interface ApollographqlcomroverPackage {
+  name: "rover";
+  domain: "apollographql.com/rover";
+  description: "CLI for managing and maintaining data graphs with Apollo Studio";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apollographql.com/rover/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) rover";
+  programs: readonly [
+    "rover"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1",
+    "zlib.net^1",
+    "libgit2.org~1.7"
+  ];
+  versions: readonly [
+    "0.31.0",
+    "0.30.0",
+    "0.29.1",
+    "0.29.0",
+    "0.28.1",
+    "0.28.0",
+    "0.27.2",
+    "0.27.1",
+    "0.27.0",
+    "0.26.3",
+    "0.26.2",
+    "0.26.1",
+    "0.26.0",
+    "0.25.0",
+    "0.24.0",
+    "0.23.0",
+    "0.22.0",
+    "0.21.0",
+    "0.20.0",
+    "0.19.1",
+    "0.19.0",
+    "0.18.1"
+  ];
+  fullPath: "apollographql.com/rover";
+  aliases: readonly [
+    "rover"
+  ];
+}

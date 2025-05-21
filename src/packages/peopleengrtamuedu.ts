@@ -18,3 +18,18 @@ export const peopleengrtamueduPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "people.engr.tamu.edu"
 }
+
+export interface PeopleengrtamueduPackage {
+  name: "people.engr.tamu.edu";
+  domain: "people.engr.tamu.edu";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx people.engr.tamu.edu";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "people.engr.tamu.edu";
+}

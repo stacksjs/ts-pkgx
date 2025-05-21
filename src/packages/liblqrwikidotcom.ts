@@ -23,3 +23,23 @@ export const liblqrwikidotcomPackage: PkgxPackage = {
   ],
   "fullPath": "liblqr.wikidot.com"
 }
+
+export interface LiblqrwikidotcomPackage {
+  name: "liblqr.wikidot.com";
+  domain: "liblqr.wikidot.com";
+  description: "Liquid Rescale library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/liblqr.wikidot.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +liblqr.wikidot.com -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnome.org/glib"
+  ];
+  versions: readonly [
+    "0.4.3",
+    "0.4.2"
+  ];
+  fullPath: "liblqr.wikidot.com";
+}

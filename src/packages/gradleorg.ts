@@ -38,3 +38,38 @@ export const gradleorgPackage: PkgxPackage = {
   ],
   "fullPath": "gradle.org"
 }
+
+export interface GradleorgPackage {
+  name: "gradle";
+  domain: "gradle.org";
+  description: "Open-source build automation tool based on the Groovy and Kotlin DSL";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gradle.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) gradle";
+  programs: readonly [
+    "gradle"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org"
+  ];
+  versions: readonly [
+    "8.9.0",
+    "8.8.0",
+    "8.7.0",
+    "8.6.0",
+    "8.5.0",
+    "8.2.1",
+    "8.14.0",
+    "8.13.0",
+    "8.12.1",
+    "8.12.0",
+    "8.11.1",
+    "8.11.0",
+    "8.10.2",
+    "8.10.1",
+    "8.10.0"
+  ];
+  fullPath: "gradle.org";
+}

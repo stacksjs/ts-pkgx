@@ -18,3 +18,18 @@ export const cloudfoundryorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "cloudfoundry.org"
 }
+
+export interface CloudfoundryorgPackage {
+  name: "cloudfoundry.org";
+  domain: "cloudfoundry.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx cloudfoundry.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "cloudfoundry.org";
+}

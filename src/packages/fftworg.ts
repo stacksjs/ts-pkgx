@@ -27,3 +27,27 @@ export const fftworgPackage: PkgxPackage = {
   ],
   "fullPath": "fftw.org"
 }
+
+export interface FftworgPackage {
+  name: "fftw";
+  domain: "fftw.org";
+  description: "C routines to compute the Discrete Fourier Transform";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fftw.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +fftw.org -- $SHELL -i";
+  programs: readonly [
+    "fftw-wisdom",
+    "fftw-wisdom-to-conf",
+    "fftwf-wisdom",
+    "fftwl-wisdom"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "open-mpi.org"
+  ];
+  versions: readonly [
+    "3.3.10"
+  ];
+  fullPath: "fftw.org";
+}

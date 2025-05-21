@@ -34,3 +34,34 @@ export const cgalorgPackage: PkgxPackage = {
   ],
   "fullPath": "cgal.org"
 }
+
+export interface CgalorgPackage {
+  name: "cgal";
+  domain: "cgal.org";
+  description: "The public CGAL repository, see the README below";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cgal.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +cgal.org -- $SHELL -i";
+  programs: readonly [
+    "cgal_create_CMakeLists",
+    "cgal_create_cmake_script",
+    "cgal_make_macosx_app"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "boost.org",
+    "eigen.tuxfamily.org",
+    "gnu.org/gmp",
+    "gnu.org/mpfr",
+    "openssl.org"
+  ];
+  versions: readonly [
+    "6.0.1",
+    "6.0.0",
+    "5.6.2",
+    "5.6.1",
+    "5.6.0"
+  ];
+  fullPath: "cgal.org";
+}

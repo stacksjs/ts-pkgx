@@ -33,3 +33,33 @@ export const htsliborgPackage: PkgxPackage = {
   ],
   "fullPath": "htslib.org"
 }
+
+export interface HtsliborgPackage {
+  name: "htslib.org";
+  domain: "htslib.org";
+  description: "C library for high-throughput sequencing data formats";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/htslib.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +htslib.org -- $SHELL -i";
+  programs: readonly [
+    "bgzip",
+    "htsfile",
+    "tabix"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "sourceware.org/bzip2",
+    "tukaani.org/xz",
+    "zlib.net^1",
+    "curl.se>=5"
+  ];
+  versions: readonly [
+    "1.21.0",
+    "1.20.0",
+    "1.19.1",
+    "1.19.0",
+    "1.18.0"
+  ];
+  fullPath: "htslib.org";
+}

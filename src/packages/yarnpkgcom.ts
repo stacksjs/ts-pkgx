@@ -63,3 +63,63 @@ export const yarnpkgcomPackage: PkgxPackage = {
   ],
   "fullPath": "yarnpkg.com"
 }
+
+export interface YarnpkgcomPackage {
+  name: "yarn";
+  domain: "yarnpkg.com";
+  description: "📦🐈 Active development trunk for Yarn ⚒";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i";
+  programs: readonly [
+    "yarn",
+    "yarnpkg"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "nodejs.org"
+  ];
+  versions: readonly [
+    "4.9.1",
+    "4.9.0",
+    "4.8.1",
+    "4.8.0",
+    "4.7.0",
+    "4.6.0",
+    "4.5.3",
+    "4.5.2",
+    "4.5.1",
+    "4.5.0",
+    "4.4.1",
+    "4.4.0",
+    "4.3.1",
+    "4.3.0",
+    "4.2.2",
+    "4.2.1",
+    "4.2.0",
+    "4.1.1",
+    "4.1.0",
+    "4.0.2",
+    "4.0.1",
+    "4.0.0",
+    "3.8.7",
+    "3.8.6",
+    "3.8.5",
+    "3.8.4",
+    "3.8.3",
+    "3.8.2",
+    "3.8.1",
+    "3.8.0",
+    "3.7.0",
+    "3.6.4",
+    "3.6.3",
+    "3.6.2",
+    "3.6.1",
+    "3.6.0",
+    "3.5.1",
+    "3.5.0",
+    "3.4.1"
+  ];
+  fullPath: "yarnpkg.com";
+}

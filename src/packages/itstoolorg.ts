@@ -25,3 +25,25 @@ export const itstoolorgPackage: PkgxPackage = {
   ],
   "fullPath": "itstool.org"
 }
+
+export interface ItstoolorgPackage {
+  name: "itstool";
+  domain: "itstool.org";
+  description: "Translate XML with PO files using W3C Internationalization Tag Set rules";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/itstool.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) itstool";
+  programs: readonly [
+    "itstool"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnome.org/libxml2",
+    "python.org~3.11"
+  ];
+  versions: readonly [
+    "2.0.7"
+  ];
+  fullPath: "itstool.org";
+}

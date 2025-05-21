@@ -37,3 +37,37 @@ export const libgit2orgPackage: PkgxPackage = {
     "git2"
   ]
 }
+
+export interface Libgit2orgPackage {
+  name: "git2";
+  domain: "libgit2.org";
+  description: "A cross-platform, linkable library implementation of Git that you can use in your application.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libgit2.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) git2";
+  programs: readonly [
+    "git2"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "libssh2.org^1"
+  ];
+  versions: readonly [
+    "1.9.0",
+    "1.8.4",
+    "1.8.3",
+    "1.8.2",
+    "1.8.1",
+    "1.8.0",
+    "1.7.2",
+    "1.7.1",
+    "1.7.0",
+    "1.6.5",
+    "1.6.4"
+  ];
+  fullPath: "libgit2.org";
+  aliases: readonly [
+    "git2"
+  ];
+}

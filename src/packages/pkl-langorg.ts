@@ -36,3 +36,36 @@ export const pkllangorgPackage: PkgxPackage = {
   ],
   "fullPath": "pkl-lang.org"
 }
+
+export interface PkllangorgPackage {
+  name: "pkl-lang.org";
+  domain: "pkl-lang.org";
+  description: "A configuration as code language with rich validation and tooling.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pkl-lang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +pkl-lang.org -- $SHELL -i";
+  programs: readonly [
+    "jpkl",
+    "pkl"
+  ];
+  companions: readonly [
+    "openjdk.org"
+  ];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.28.2",
+    "0.28.1",
+    "0.28.0",
+    "0.27.2",
+    "0.27.1",
+    "0.27.0",
+    "0.26.3",
+    "0.26.2",
+    "0.26.1",
+    "0.26.0",
+    "0.25.3",
+    "0.25.2"
+  ];
+  fullPath: "pkl-lang.org";
+}

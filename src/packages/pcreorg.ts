@@ -27,3 +27,27 @@ export const pcreorgPackage: PkgxPackage = {
   ],
   "fullPath": "pcre.org"
 }
+
+export interface PcreorgPackage {
+  name: "pcre";
+  domain: "pcre.org";
+  description: "Perl compatible regular expressions library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +pcre.org -- $SHELL -i";
+  programs: readonly [
+    "pcre-config",
+    "pcregrep",
+    "pcretest"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "sourceware.org/bzip2@1",
+    "zlib.net@1"
+  ];
+  versions: readonly [
+    "8.45.0"
+  ];
+  fullPath: "pcre.org";
+}

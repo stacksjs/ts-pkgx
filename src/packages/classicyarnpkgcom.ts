@@ -28,3 +28,28 @@ export const classicyarnpkgcomPackage: PkgxPackage = {
   ],
   "fullPath": "classic.yarnpkg.com"
 }
+
+export interface ClassicyarnpkgcomPackage {
+  name: "classic.yarnpkg.com";
+  domain: "classic.yarnpkg.com";
+  description: "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/classic.yarnpkg.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i";
+  programs: readonly [
+    "yarn",
+    "yarnpkg"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "nodejs.org>=5"
+  ];
+  versions: readonly [
+    "1.22.22",
+    "1.22.21",
+    "1.22.20",
+    "1.22.19"
+  ];
+  fullPath: "classic.yarnpkg.com";
+}

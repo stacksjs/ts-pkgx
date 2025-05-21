@@ -22,3 +22,22 @@ export const lamesourceforgeioPackage: PkgxPackage = {
   ],
   "fullPath": "lame.sourceforge.io"
 }
+
+export interface LamesourceforgeioPackage {
+  name: "lame";
+  domain: "lame.sourceforge.io";
+  description: "High quality MPEG Audio Layer III (MP3) encoder";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lame.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) lame";
+  programs: readonly [
+    "lame"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "3.100.0"
+  ];
+  fullPath: "lame.sourceforge.io";
+}

@@ -18,3 +18,18 @@ export const peopleredhatcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "people.redhat.com"
 }
+
+export interface PeopleredhatcomPackage {
+  name: "people.redhat.com";
+  domain: "people.redhat.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx people.redhat.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "people.redhat.com";
+}

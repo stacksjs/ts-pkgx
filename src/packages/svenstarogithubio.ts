@@ -18,3 +18,18 @@ export const svenstarogithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "svenstaro.github.io"
 }
+
+export interface SvenstarogithubioPackage {
+  name: "svenstaro.github.io";
+  domain: "svenstaro.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx svenstaro.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "svenstaro.github.io";
+}

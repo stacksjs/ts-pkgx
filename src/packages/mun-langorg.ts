@@ -28,3 +28,28 @@ export const munlangorgPackage: PkgxPackage = {
   ],
   "fullPath": "mun-lang.org"
 }
+
+export interface MunlangorgPackage {
+  name: "mun";
+  domain: "mun-lang.org";
+  description: "Source code for the Mun language and runtime.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mun-lang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) mun";
+  programs: readonly [
+    "mun"
+  ];
+  companions: readonly [
+    "llvm.org"
+  ];
+  dependencies: readonly [
+    "invisible-island.net/ncurses@6",
+    "sourceware.org/libffi@3",
+    "gnome.org/libxml2@2"
+  ];
+  versions: readonly [
+    "0.5.0"
+  ];
+  fullPath: "mun-lang.org";
+}

@@ -32,3 +32,32 @@ export const poktnetworkPackage: PkgxPackage = {
     "pocket"
   ]
 }
+
+export interface PoktnetworkPackage {
+  name: "pocket";
+  domain: "pokt.network";
+  description: "Official implementation of the Pocket Network Protocol";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pokt.network/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) pocket";
+  programs: readonly [
+    "pocket"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.9.2",
+    "0.12.0",
+    "0.11.3",
+    "0.11.2",
+    "0.11.1",
+    "0.10.4",
+    "0.10.3",
+    "0.10.0"
+  ];
+  fullPath: "pokt.network";
+  aliases: readonly [
+    "pocket"
+  ];
+}

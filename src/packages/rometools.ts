@@ -22,3 +22,22 @@ export const rometoolsPackage: PkgxPackage = {
   ],
   "fullPath": "rome.tools"
 }
+
+export interface RometoolsPackage {
+  name: "rome";
+  domain: "rome.tools";
+  description: "Unified developer tools for JavaScript, TypeScript, and the web";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rome.tools/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) rome";
+  programs: readonly [
+    "rome"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.4.2"
+  ];
+  fullPath: "rome.tools";
+}

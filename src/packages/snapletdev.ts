@@ -18,3 +18,18 @@ export const snapletdevPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "snaplet.dev"
 }
+
+export interface SnapletdevPackage {
+  name: "snaplet.dev";
+  domain: "snaplet.dev";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx snaplet.dev";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "snaplet.dev";
+}

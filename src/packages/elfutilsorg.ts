@@ -48,3 +48,48 @@ export const elfutilsorgPackage: PkgxPackage = {
   ],
   "fullPath": "elfutils.org"
 }
+
+export interface ElfutilsorgPackage {
+  name: "elfutils.org";
+  domain: "elfutils.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/elfutils.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +elfutils.org -- $SHELL -i";
+  programs: readonly [
+    "eu-addr2line",
+    "eu-ar",
+    "eu-elfclassify",
+    "eu-elfcmp",
+    "eu-elfcompress",
+    "eu-elflint",
+    "eu-findtextrel",
+    "eu-nm",
+    "eu-objdump",
+    "eu-ranlib",
+    "eu-readelf",
+    "eu-size",
+    "eu-stack",
+    "eu-strings",
+    "eu-strip",
+    "eu-unstrip"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "sourceware.org/bzip2",
+    "tukaani.org/xz",
+    "zlib.net",
+    "facebook.com/zstd",
+    "linuxkernel.org/linux-headers",
+    "kernel.org/linux-headers"
+  ];
+  versions: readonly [
+    "0.193.0",
+    "0.192.0",
+    "0.191.0",
+    "0.190.0",
+    "0.189.0"
+  ];
+  fullPath: "elfutils.org";
+}

@@ -42,3 +42,42 @@ export const cocoapodsorgPackage: PkgxPackage = {
     "pod"
   ]
 }
+
+export interface CocoapodsorgPackage {
+  name: "pod";
+  domain: "cocoapods.org";
+  description: "Dependency manager for Cocoa projects";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cocoapods.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) pod";
+  programs: readonly [
+    "pod"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "ruby-lang.org~3.2",
+    "sourceware.org/libffi^3",
+    "rubygems.org^3",
+    "git-scm.org^2"
+  ];
+  versions: readonly [
+    "1.5.0",
+    "1.16.2",
+    "1.16.1",
+    "1.16.0",
+    "1.15.2",
+    "1.15.1",
+    "1.15.0",
+    "1.14.3",
+    "1.14.2",
+    "1.14.1",
+    "1.14.0",
+    "1.13.0",
+    "1.12.1"
+  ];
+  fullPath: "cocoapods.org";
+  aliases: readonly [
+    "pod"
+  ];
+}

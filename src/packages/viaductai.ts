@@ -18,3 +18,18 @@ export const viaductaiPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "viaduct.ai"
 }
+
+export interface ViaductaiPackage {
+  name: "viaduct.ai";
+  domain: "viaduct.ai";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx viaduct.ai";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "viaduct.ai";
+}

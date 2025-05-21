@@ -30,3 +30,30 @@ export const mujscomPackage: PkgxPackage = {
   ],
   "fullPath": "mujs.com"
 }
+
+export interface MujscomPackage {
+  name: "mujs";
+  domain: "mujs.com";
+  description: "An embeddable Javascript interpreter in C.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mujs.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +mujs.com -- $SHELL -i";
+  programs: readonly [
+    "mujs",
+    "mujs-pp"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "linuxgnu.org/readline~8.1invisible-island.net/ncurses",
+    "gnu.org/readline~8.1",
+    "invisible-island.net/ncurses"
+  ];
+  versions: readonly [
+    "1.3.6",
+    "1.3.5",
+    "1.3.4",
+    "1.3.3"
+  ];
+  fullPath: "mujs.com";
+}

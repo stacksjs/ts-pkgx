@@ -18,3 +18,18 @@ export const dystroyorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "dystroy.org"
 }
+
+export interface DystroyorgPackage {
+  name: "dystroy.org";
+  domain: "dystroy.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx dystroy.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "dystroy.org";
+}

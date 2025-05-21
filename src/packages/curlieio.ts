@@ -23,3 +23,23 @@ export const curlieioPackage: PkgxPackage = {
   ],
   "fullPath": "curlie.io"
 }
+
+export interface CurlieioPackage {
+  name: "curlie";
+  domain: "curlie.io";
+  description: "The power of curl, the ease of use of httpie.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/curlie.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) curlie";
+  programs: readonly [
+    "curlie"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.8.2",
+    "1.7.2"
+  ];
+  fullPath: "curlie.io";
+}

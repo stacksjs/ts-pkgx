@@ -18,3 +18,18 @@ export const developersyubicocomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "developers.yubico.com"
 }
+
+export interface DevelopersyubicocomPackage {
+  name: "developers.yubico.com";
+  domain: "developers.yubico.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx developers.yubico.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "developers.yubico.com";
+}

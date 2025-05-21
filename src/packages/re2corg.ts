@@ -28,3 +28,28 @@ export const re2corgPackage: PkgxPackage = {
   ],
   "fullPath": "re2c.org"
 }
+
+export interface Re2corgPackage {
+  name: "re2c";
+  domain: "re2c.org";
+  description: "Lexer generator for C, C++, D, Go, Haskell, Java, JS, OCaml, Python, Rust, V and Zig.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/re2c.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) re2c";
+  programs: readonly [
+    "re2c"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "4.2.0",
+    "4.1.0",
+    "4.0.2",
+    "4.0.1",
+    "4.0.0",
+    "3.1.0",
+    "3.0.0"
+  ];
+  fullPath: "re2c.org";
+}

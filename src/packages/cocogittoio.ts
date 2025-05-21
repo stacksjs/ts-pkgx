@@ -33,3 +33,33 @@ export const cocogittoioPackage: PkgxPackage = {
     "cog"
   ]
 }
+
+export interface CocogittoioPackage {
+  name: "cog";
+  domain: "cocogitto.io";
+  description: "The Conventional Commits toolbox";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cocogitto.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) cog";
+  programs: readonly [
+    "cog"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "libgit2.org~1.7"
+  ];
+  versions: readonly [
+    "6.3.0",
+    "6.2.0",
+    "6.1.0",
+    "6.0.1",
+    "6.0.0",
+    "5.6.0",
+    "5.5.0"
+  ];
+  fullPath: "cocogitto.io";
+  aliases: readonly [
+    "cog"
+  ];
+}

@@ -18,3 +18,18 @@ export const supabasecomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "supabase.com"
 }
+
+export interface SupabasecomPackage {
+  name: "supabase.com";
+  domain: "supabase.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx supabase.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "supabase.com";
+}

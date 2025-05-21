@@ -18,3 +18,18 @@ export const virtualsquareorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "virtualsquare.org"
 }
+
+export interface VirtualsquareorgPackage {
+  name: "virtualsquare.org";
+  domain: "virtualsquare.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx virtualsquare.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "virtualsquare.org";
+}

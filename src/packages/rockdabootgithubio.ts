@@ -18,3 +18,18 @@ export const rockdabootgithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "rockdaboot.github.io"
 }
+
+export interface RockdabootgithubioPackage {
+  name: "rockdaboot.github.io";
+  domain: "rockdaboot.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx rockdaboot.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "rockdaboot.github.io";
+}

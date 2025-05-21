@@ -18,3 +18,18 @@ export const leethomasongithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "leethomason.github.io"
 }
+
+export interface LeethomasongithubioPackage {
+  name: "leethomason.github.io";
+  domain: "leethomason.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx leethomason.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "leethomason.github.io";
+}

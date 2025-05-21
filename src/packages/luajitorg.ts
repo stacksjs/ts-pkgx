@@ -23,3 +23,23 @@ export const luajitorgPackage: PkgxPackage = {
   ],
   "fullPath": "luajit.org"
 }
+
+export interface LuajitorgPackage {
+  name: "luajit";
+  domain: "luajit.org";
+  description: "Mirror of the LuaJIT git repository";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/luajit.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +luajit.org -- $SHELL -i";
+  programs: readonly [
+    "luajit",
+    "luajit-{{version.marketing}}."
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.1.0"
+  ];
+  fullPath: "luajit.org";
+}

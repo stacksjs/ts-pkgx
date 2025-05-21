@@ -18,3 +18,18 @@ export const brxken128githubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "brxken128.github.io"
 }
+
+export interface Brxken128githubioPackage {
+  name: "brxken128.github.io";
+  domain: "brxken128.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx brxken128.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "brxken128.github.io";
+}

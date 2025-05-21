@@ -35,3 +35,35 @@ export const pinnipeddevPackage: PkgxPackage = {
   ],
   "fullPath": "pinniped.dev"
 }
+
+export interface PinnipeddevPackage {
+  name: "pinniped";
+  domain: "pinniped.dev";
+  description: "Pinniped is the easy, secure way to log in to your Kubernetes clusters.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pinniped.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) pinniped";
+  programs: readonly [
+    "pinniped"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.39.0",
+    "0.38.0",
+    "0.37.0",
+    "0.36.0",
+    "0.35.0",
+    "0.34.0",
+    "0.33.0",
+    "0.32.0",
+    "0.31.0",
+    "0.30.0",
+    "0.29.0",
+    "0.28.0",
+    "0.27.0",
+    "0.26.0"
+  ];
+  fullPath: "pinniped.dev";
+}

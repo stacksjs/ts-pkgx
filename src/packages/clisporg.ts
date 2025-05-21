@@ -26,3 +26,26 @@ export const clisporgPackage: PkgxPackage = {
   ],
   "fullPath": "clisp.org"
 }
+
+export interface ClisporgPackage {
+  name: "clisp";
+  domain: "clisp.org";
+  description: "GNU CLISP, a Common Lisp implementation";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/clisp.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) clisp";
+  programs: readonly [
+    "clisp"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/libsigsegv^2.14",
+    "gnu.org/readline^8.2",
+    "github.com/besser82/libxcrypt^4.4"
+  ];
+  versions: readonly [
+    "2.49.92"
+  ];
+  fullPath: "clisp.org";
+}

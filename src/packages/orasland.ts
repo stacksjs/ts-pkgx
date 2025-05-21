@@ -25,3 +25,25 @@ export const oraslandPackage: PkgxPackage = {
   ],
   "fullPath": "oras.land"
 }
+
+export interface OraslandPackage {
+  name: "oras";
+  domain: "oras.land";
+  description: "OCI registry client - managing content like artifacts, images, packages";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/oras.land/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) oras";
+  programs: readonly [
+    "oras"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.2.3",
+    "1.2.2",
+    "1.2.1",
+    "1.2.0"
+  ];
+  fullPath: "oras.land";
+}

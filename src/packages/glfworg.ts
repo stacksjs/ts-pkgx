@@ -28,3 +28,28 @@ export const glfworgPackage: PkgxPackage = {
   ],
   "fullPath": "glfw.org"
 }
+
+export interface GlfworgPackage {
+  name: "glfw.org";
+  domain: "glfw.org";
+  description: "A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/glfw.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "linuxfreeglut.sourceforge.io^3.4x.org/xcursor^1.2xkbcommon.org^1.0mesa3d.org^23.3",
+    "freeglut.sourceforge.io^3.4",
+    "x.org/xcursor^1.2",
+    "xkbcommon.org^1.0",
+    "mesa3d.org^23.3"
+  ];
+  versions: readonly [
+    "3.4.0",
+    "3.3.9",
+    "3.3.10"
+  ];
+  fullPath: "glfw.org";
+}

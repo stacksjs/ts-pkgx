@@ -18,3 +18,18 @@ export const intelcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "intel.com"
 }
+
+export interface IntelcomPackage {
+  name: "intel.com";
+  domain: "intel.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx intel.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "intel.com";
+}

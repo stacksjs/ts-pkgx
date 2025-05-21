@@ -29,3 +29,29 @@ export const ceressolverorgPackage: PkgxPackage = {
   ],
   "fullPath": "ceres-solver.org"
 }
+
+export interface CeressolverorgPackage {
+  name: "ceres-solver.org";
+  domain: "ceres-solver.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ceres-solver.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +ceres-solver.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "eigen.tuxfamily.org",
+    "gflags.github.io",
+    "google.com/glog",
+    "glaros.dtc.umn.edu/metis",
+    "netlib.org/lapack",
+    "people.engr.tamu.edu/davis/suitesparse",
+    "github.com/oneapi-src/oneTBB"
+  ];
+  versions: readonly [
+    "2.2.0",
+    "2.1.0"
+  ];
+  fullPath: "ceres-solver.org";
+}

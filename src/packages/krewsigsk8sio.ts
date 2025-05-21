@@ -28,3 +28,28 @@ export const krewsigsk8sioPackage: PkgxPackage = {
     "kubectl-krew"
   ]
 }
+
+export interface Krewsigsk8sioPackage {
+  name: "kubectl-krew";
+  domain: "krew.sigs.k8s.io";
+  description: "📦 Find and install kubectl plugins";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/krew.sigs.k8s.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) kubectl-krew";
+  programs: readonly [
+    "kubectl-krew"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "git-scm.org"
+  ];
+  versions: readonly [
+    "0.4.5",
+    "0.4.4"
+  ];
+  fullPath: "krew.sigs.k8s.io";
+  aliases: readonly [
+    "kubectl-krew"
+  ];
+}

@@ -18,3 +18,18 @@ export const permitioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "permit.io"
 }
+
+export interface PermitioPackage {
+  name: "permit.io";
+  domain: "permit.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx permit.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "permit.io";
+}

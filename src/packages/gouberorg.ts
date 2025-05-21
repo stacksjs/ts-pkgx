@@ -18,3 +18,18 @@ export const gouberorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "go.uber.org"
 }
+
+export interface GouberorgPackage {
+  name: "go.uber.org";
+  domain: "go.uber.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx go.uber.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "go.uber.org";
+}

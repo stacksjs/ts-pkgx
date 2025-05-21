@@ -37,3 +37,37 @@ export const typstappPackage: PkgxPackage = {
   ],
   "fullPath": "typst.app"
 }
+
+export interface TypstappPackage {
+  name: "typst";
+  domain: "typst.app";
+  description: "A new markup-based typesetting system that is powerful and easy to learn.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/typst.app/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) typst";
+  programs: readonly [
+    "typst"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "0.9.0",
+    "0.8.0",
+    "0.7.0",
+    "0.6.0",
+    "0.5.0",
+    "0.4.0",
+    "0.2.0",
+    "0.13.1",
+    "0.13.0",
+    "0.12.0",
+    "0.11.1",
+    "0.11.0",
+    "0.10.0",
+    "0.0.0"
+  ];
+  fullPath: "typst.app";
+}

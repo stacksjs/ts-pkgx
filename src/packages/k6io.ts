@@ -45,3 +45,45 @@ export const k6ioPackage: PkgxPackage = {
   ],
   "fullPath": "k6.io"
 }
+
+export interface K6ioPackage {
+  name: "k6";
+  domain: "k6.io";
+  description: "A modern load testing tool, using Go and JavaScript - https://k6.io";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/k6.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) k6";
+  programs: readonly [
+    "k6"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.0.0",
+    "0.59.0",
+    "0.58.0",
+    "0.57.0",
+    "0.56.0",
+    "0.55.2",
+    "0.55.1",
+    "0.55.0",
+    "0.54.0",
+    "0.53.0",
+    "0.52.0",
+    "0.51.0",
+    "0.50.0",
+    "0.49.0",
+    "0.48.0",
+    "0.47.0",
+    "0.46.0",
+    "0.45.1",
+    "0.45.0",
+    "0.44.1",
+    "0.44.0",
+    "0.43.1",
+    "0.43.0",
+    "0.42.0"
+  ];
+  fullPath: "k6.io";
+}

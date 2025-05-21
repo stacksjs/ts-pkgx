@@ -18,3 +18,18 @@ export const tuistioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "tuist.io"
 }
+
+export interface TuistioPackage {
+  name: "tuist.io";
+  domain: "tuist.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx tuist.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "tuist.io";
+}

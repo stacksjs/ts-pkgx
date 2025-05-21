@@ -18,3 +18,18 @@ export const nixosorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "nixos.org"
 }
+
+export interface NixosorgPackage {
+  name: "nixos.org";
+  domain: "nixos.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx nixos.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "nixos.org";
+}

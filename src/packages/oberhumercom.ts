@@ -18,3 +18,18 @@ export const oberhumercomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "oberhumer.com"
 }
+
+export interface OberhumercomPackage {
+  name: "oberhumer.com";
+  domain: "oberhumer.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx oberhumer.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "oberhumer.com";
+}

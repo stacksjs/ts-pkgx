@@ -18,3 +18,18 @@ export const opendevorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "opendev.org"
 }
+
+export interface OpendevorgPackage {
+  name: "opendev.org";
+  domain: "opendev.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx opendev.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "opendev.org";
+}

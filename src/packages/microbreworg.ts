@@ -18,3 +18,18 @@ export const microbreworgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "microbrew.org"
 }
+
+export interface MicrobreworgPackage {
+  name: "microbrew.org";
+  domain: "microbrew.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx microbrew.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "microbrew.org";
+}

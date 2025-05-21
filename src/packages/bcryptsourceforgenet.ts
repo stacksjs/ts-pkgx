@@ -24,3 +24,24 @@ export const bcryptsourceforgenetPackage: PkgxPackage = {
   ],
   "fullPath": "bcrypt.sourceforge.net"
 }
+
+export interface BcryptsourceforgenetPackage {
+  name: "bcrypt";
+  domain: "bcrypt.sourceforge.net";
+  description: "Cross platform file encryption utility using blowfish";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bcrypt.sourceforge.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) bcrypt";
+  programs: readonly [
+    "bcrypt"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "zlib.net"
+  ];
+  versions: readonly [
+    "1.1.0"
+  ];
+  fullPath: "bcrypt.sourceforge.net";
+}

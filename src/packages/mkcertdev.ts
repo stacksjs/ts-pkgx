@@ -22,3 +22,22 @@ export const mkcertdevPackage: PkgxPackage = {
   ],
   "fullPath": "mkcert.dev"
 }
+
+export interface MkcertdevPackage {
+  name: "mkcert";
+  domain: "mkcert.dev";
+  description: "A simple zero-config tool to make locally trusted development certificates with any names you'd like.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mkcert.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) mkcert";
+  programs: readonly [
+    "mkcert"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.4.4"
+  ];
+  fullPath: "mkcert.dev";
+}

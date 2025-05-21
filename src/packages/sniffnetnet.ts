@@ -29,3 +29,29 @@ export const sniffnetnetPackage: PkgxPackage = {
   ],
   "fullPath": "sniffnet.net"
 }
+
+export interface SniffnetnetPackage {
+  name: "sniffnet";
+  domain: "sniffnet.net";
+  description: "Cross-platform application to monitor your network traffic";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sniffnet.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) sniffnet";
+  programs: readonly [
+    "sniffnet"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org@1",
+    "tcpdump.org@1",
+    "linuxalsa-project.org/alsa-lib@1freedesktop.org/fontconfig@2",
+    "alsa-project.org/alsa-lib@1",
+    "freedesktop.org/fontconfig@2"
+  ];
+  versions: readonly [
+    "1.3.2",
+    "1.3.1"
+  ];
+  fullPath: "sniffnet.net";
+}

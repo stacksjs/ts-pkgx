@@ -18,3 +18,18 @@ export const libproxygithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "libproxy.github.io"
 }
+
+export interface LibproxygithubioPackage {
+  name: "libproxy.github.io";
+  domain: "libproxy.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx libproxy.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "libproxy.github.io";
+}

@@ -22,3 +22,22 @@ export const duktapeorgPackage: PkgxPackage = {
   ],
   "fullPath": "duktape.org"
 }
+
+export interface DuktapeorgPackage {
+  name: "duk";
+  domain: "duktape.org";
+  description: "Duktape - embeddable Javascript engine with a focus on portability and compact footprint";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/duktape.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) duk";
+  programs: readonly [
+    "duk"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.7.0"
+  ];
+  fullPath: "duktape.org";
+}

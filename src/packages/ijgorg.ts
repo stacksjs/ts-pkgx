@@ -28,3 +28,28 @@ export const ijgorgPackage: PkgxPackage = {
   ],
   "fullPath": "ijg.org"
 }
+
+export interface IjgorgPackage {
+  name: "ijg.org";
+  domain: "ijg.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ijg.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +ijg.org -- $SHELL -i";
+  programs: readonly [
+    "cjpeg",
+    "djpeg",
+    "jpegtran",
+    "rdjpgcom",
+    "wrjpgcom"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "9f",
+    "9e",
+    "9.5.0"
+  ];
+  fullPath: "ijg.org";
+}

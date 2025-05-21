@@ -70,3 +70,70 @@ export const singboxappPackage: PkgxPackage = {
   ],
   "fullPath": "sing-box.app"
 }
+
+export interface SingboxappPackage {
+  name: "sing-box";
+  domain: "sing-box.app";
+  description: "The universal proxy platform";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sing-box.app/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) sing-box";
+  programs: readonly [
+    "sing-box"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.9.7",
+    "1.9.6",
+    "1.9.5",
+    "1.9.4",
+    "1.9.3",
+    "1.9.2",
+    "1.9.1",
+    "1.9.0",
+    "1.8.9",
+    "1.8.8",
+    "1.8.7",
+    "1.8.6",
+    "1.8.5",
+    "1.8.4",
+    "1.8.2",
+    "1.8.14",
+    "1.8.13",
+    "1.8.12",
+    "1.8.11",
+    "1.8.10",
+    "1.8.1",
+    "1.8.0",
+    "1.7.8",
+    "1.7.7",
+    "1.7.6",
+    "1.7.5",
+    "1.7.4",
+    "1.7.3",
+    "1.7.2",
+    "1.11.9",
+    "1.11.8",
+    "1.11.7",
+    "1.11.6",
+    "1.11.5",
+    "1.11.4",
+    "1.11.3",
+    "1.11.2",
+    "1.11.11",
+    "1.11.10",
+    "1.11.1",
+    "1.11.0",
+    "1.10.7",
+    "1.10.6",
+    "1.10.5",
+    "1.10.4",
+    "1.10.3",
+    "1.10.2",
+    "1.10.1",
+    "1.10.0"
+  ];
+  fullPath: "sing-box.app";
+}

@@ -29,3 +29,29 @@ export const srtallianceorgPackage: PkgxPackage = {
   ],
   "fullPath": "srtalliance.org"
 }
+
+export interface SrtallianceorgPackage {
+  name: "srt";
+  domain: "srtalliance.org";
+  description: "Secure, Reliable, Transport";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/srtalliance.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +srtalliance.org -- $SHELL -i";
+  programs: readonly [
+    "srt-ffplay",
+    "srt-file-transmit",
+    "srt-live-transmit",
+    "srt-tunnel"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org"
+  ];
+  versions: readonly [
+    "1.5.4",
+    "1.5.3",
+    "1.5.2"
+  ];
+  fullPath: "srtalliance.org";
+}

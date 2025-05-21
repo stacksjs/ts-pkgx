@@ -47,3 +47,47 @@ export const pythonpoetryorgPackage: PkgxPackage = {
     "poetry"
   ]
 }
+
+export interface PythonpoetryorgPackage {
+  name: "poetry";
+  domain: "python-poetry.org";
+  description: "Python packaging and dependency management made easy";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/python-poetry.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) poetry";
+  programs: readonly [
+    "poetry"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "2.1.3",
+    "2.1.2",
+    "2.1.1",
+    "2.1.0",
+    "2.0.1",
+    "2.0.0",
+    "1.8.5",
+    "1.8.4",
+    "1.8.3",
+    "1.8.2",
+    "1.8.1",
+    "1.8.0",
+    "1.7.1",
+    "1.7.0",
+    "1.6.1",
+    "1.6.0",
+    "1.5.1",
+    "1.5.0",
+    "1.4.2",
+    "1.4.0",
+    "1.3.2"
+  ];
+  fullPath: "python-poetry.org";
+  aliases: readonly [
+    "poetry"
+  ];
+}

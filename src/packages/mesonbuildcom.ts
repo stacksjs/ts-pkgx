@@ -49,3 +49,49 @@ export const mesonbuildcomPackage: PkgxPackage = {
   ],
   "fullPath": "mesonbuild.com"
 }
+
+export interface MesonbuildcomPackage {
+  name: "meson";
+  domain: "mesonbuild.com";
+  description: "Fast and user friendly build system";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mesonbuild.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) meson";
+  programs: readonly [
+    "meson"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "1.8.0",
+    "1.7.2",
+    "1.7.1",
+    "1.7.0",
+    "1.6.1",
+    "1.6.0",
+    "1.5.2",
+    "1.5.1",
+    "1.5.0",
+    "1.4.2",
+    "1.4.1",
+    "1.4.0",
+    "1.3.2",
+    "1.3.1",
+    "1.3.0",
+    "1.2.3",
+    "1.2.2",
+    "1.2.0",
+    "1.1.1",
+    "1.1.0",
+    "1.0.2",
+    "1.0.1",
+    "1.0.0",
+    "0.64.1",
+    "0.64.0",
+    "0.63.3"
+  ];
+  fullPath: "mesonbuild.com";
+}

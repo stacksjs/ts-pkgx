@@ -30,3 +30,30 @@ export const getzolaorgPackage: PkgxPackage = {
     "zola"
   ]
 }
+
+export interface GetzolaorgPackage {
+  name: "zola";
+  domain: "getzola.org";
+  description: "A fast static site generator in a single binary with everything built-in. https://www.getzola.org";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getzola.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) zola";
+  programs: readonly [
+    "zola"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.20.0",
+    "0.19.2",
+    "0.19.1",
+    "0.19.0",
+    "0.18.0",
+    "0.17.2"
+  ];
+  fullPath: "getzola.org";
+  aliases: readonly [
+    "zola"
+  ];
+}

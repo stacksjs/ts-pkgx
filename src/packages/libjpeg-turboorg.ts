@@ -33,3 +33,33 @@ export const libjpegturboorgPackage: PkgxPackage = {
   ],
   "fullPath": "libjpeg-turbo.org"
 }
+
+export interface LibjpegturboorgPackage {
+  name: "libjpeg-turbo.org";
+  domain: "libjpeg-turbo.org";
+  description: "Main libjpeg-turbo repository";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libjpeg-turbo.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libjpeg-turbo.org -- $SHELL -i";
+  programs: readonly [
+    "cjpeg",
+    "djpeg",
+    "jpegtran",
+    "rdjpgcom",
+    "tjbench",
+    "wrjpgcom"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "3.1.0",
+    "3.0.4",
+    "3.0.3",
+    "3.0.2",
+    "3.0.1",
+    "3.0.0",
+    "2.1.5.1"
+  ];
+  fullPath: "libjpeg-turbo.org";
+}

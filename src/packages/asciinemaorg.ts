@@ -24,3 +24,24 @@ export const asciinemaorgPackage: PkgxPackage = {
   ],
   "fullPath": "asciinema.org"
 }
+
+export interface AsciinemaorgPackage {
+  name: "asciinema";
+  domain: "asciinema.org";
+  description: "Record and share terminal sessions";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) asciinema";
+  programs: readonly [
+    "asciinema"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org^3.12"
+  ];
+  versions: readonly [
+    "2.4.0"
+  ];
+  fullPath: "asciinema.org";
+}

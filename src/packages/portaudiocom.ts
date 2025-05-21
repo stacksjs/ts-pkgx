@@ -20,3 +20,20 @@ export const portaudiocomPackage: PkgxPackage = {
   ],
   "fullPath": "portaudio.com"
 }
+
+export interface PortaudiocomPackage {
+  name: "PortAudio";
+  domain: "portaudio.com";
+  description: "PortAudio is a cross-platform, open-source C language library for real-time audio input and output.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/portaudio.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +portaudio.com -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "19.7.0"
+  ];
+  fullPath: "portaudio.com";
+}

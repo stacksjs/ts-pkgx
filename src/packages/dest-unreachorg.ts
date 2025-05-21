@@ -18,3 +18,18 @@ export const destunreachorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "dest-unreach.org"
 }
+
+export interface DestunreachorgPackage {
+  name: "dest-unreach.org";
+  domain: "dest-unreach.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx dest-unreach.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "dest-unreach.org";
+}

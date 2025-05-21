@@ -18,3 +18,18 @@ export const sigstoredevPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "sigstore.dev"
 }
+
+export interface SigstoredevPackage {
+  name: "sigstore.dev";
+  domain: "sigstore.dev";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx sigstore.dev";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "sigstore.dev";
+}

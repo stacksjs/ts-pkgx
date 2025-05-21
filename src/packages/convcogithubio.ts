@@ -30,3 +30,30 @@ export const convcogithubioPackage: PkgxPackage = {
   ],
   "fullPath": "convco.github.io"
 }
+
+export interface ConvcogithubioPackage {
+  name: "convco";
+  domain: "convco.github.io";
+  description: "Conventional commits, changelog, versioning, validation";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/convco.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) convco";
+  programs: readonly [
+    "convco"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.6.2",
+    "0.6.1",
+    "0.6.0",
+    "0.5.2",
+    "0.5.1",
+    "0.5.0",
+    "0.4.3",
+    "0.4.2",
+    "0.4.1"
+  ];
+  fullPath: "convco.github.io";
+}

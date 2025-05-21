@@ -18,3 +18,18 @@ export const invisibleislandnetPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "invisible-island.net"
 }
+
+export interface InvisibleislandnetPackage {
+  name: "invisible-island.net";
+  domain: "invisible-island.net";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx invisible-island.net";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "invisible-island.net";
+}

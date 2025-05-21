@@ -18,3 +18,18 @@ export const fermyoncomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "fermyon.com"
 }
+
+export interface FermyoncomPackage {
+  name: "fermyon.com";
+  domain: "fermyon.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx fermyon.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "fermyon.com";
+}

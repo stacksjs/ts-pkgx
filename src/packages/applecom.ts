@@ -18,3 +18,18 @@ export const applecomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "apple.com"
 }
+
+export interface ApplecomPackage {
+  name: "apple.com";
+  domain: "apple.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx apple.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "apple.com";
+}

@@ -35,3 +35,35 @@ export const fltkorgPackage: PkgxPackage = {
   ],
   "fullPath": "fltk.org"
 }
+
+export interface FltkorgPackage {
+  name: "fltk.org";
+  domain: "fltk.org";
+  description: "FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fltk.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +fltk.org -- $SHELL -i";
+  programs: readonly [
+    "fluid",
+    "fltk-config"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "libjpeg-turbo.org^2",
+    "libpng.org^1",
+    "linuxx.org/xft^2x.org/xt^1freedesktop.org/mesa-glu^9",
+    "x.org/xft^2",
+    "x.org/xt^1",
+    "freedesktop.org/mesa-glu^9"
+  ];
+  versions: readonly [
+    "1.4.3",
+    "1.4.2",
+    "1.4.1",
+    "1.3.9",
+    "1.3.11",
+    "1.3.10"
+  ];
+  fullPath: "fltk.org";
+}

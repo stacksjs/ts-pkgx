@@ -18,3 +18,18 @@ export const fukuchiorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "fukuchi.org"
 }
+
+export interface FukuchiorgPackage {
+  name: "fukuchi.org";
+  domain: "fukuchi.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx fukuchi.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "fukuchi.org";
+}

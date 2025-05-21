@@ -65,3 +65,65 @@ export const imagemagickorgPackage: PkgxPackage = {
   ],
   "fullPath": "imagemagick.org"
 }
+
+export interface ImagemagickorgPackage {
+  name: "imagemagick.org";
+  domain: "imagemagick.org";
+  description: "ImageMagick is a powerful, open-source software suite for creating, editing, converting, and manipulating images in over 200 formats. Ideal for web developers, graphic designers, and researchers, it offers versatile tools for image processing, including batch processing, format conversion, and complex image transformations.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/imagemagick.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +imagemagick.org -- $SHELL -i";
+  programs: readonly [
+    "animate",
+    "compare",
+    "composite",
+    "conjure",
+    "convert",
+    "display",
+    "identify",
+    "import",
+    "magick",
+    "magick-script",
+    "Magick++-config",
+    "MagickCore-config",
+    "MagickWand-config",
+    "mogrify",
+    "montage",
+    "stream"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "libpng.org",
+    "ijg.org",
+    "freetype.org",
+    "libjpeg-turbo.org",
+    "liblqr.wikidot.com",
+    "simplesystems.org/libtiff",
+    "gnu.org/libtool",
+    "littlecms.com",
+    "openexr.com",
+    "openjpeg.org",
+    "google.com/webp",
+    "tukaani.org/xz",
+    "sourceware.org/bzip2",
+    "gnome.org/libxml2",
+    "zlib.net^1",
+    "jpeg.org/jpegxl",
+    "perl.org",
+    "libzip.org",
+    "darwinopenmp.llvm.orggithub.com/strukturag/libheif",
+    "openmp.llvm.org",
+    "github.com/strukturag/libheif",
+    "linux/x86-64github.com/strukturag/libheif",
+    "github.com/strukturag/libheif",
+    "linuxx.org/x11",
+    "x.org/x11"
+  ];
+  versions: readonly [
+    "7.1.1.27",
+    "7.1.1.12",
+    "7.1.0.61"
+  ];
+  fullPath: "imagemagick.org";
+}

@@ -18,3 +18,18 @@ export const openprintinggithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "openprinting.github.io"
 }
+
+export interface OpenprintinggithubioPackage {
+  name: "openprinting.github.io";
+  domain: "openprinting.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx openprinting.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "openprinting.github.io";
+}

@@ -23,3 +23,23 @@ export const liburcuorgPackage: PkgxPackage = {
   ],
   "fullPath": "liburcu.org"
 }
+
+export interface LiburcuorgPackage {
+  name: "liburcu";
+  domain: "liburcu.org";
+  description: "liburcu is a LGPLv2.1 userspace RCU (read-copy-update) library. This data synchronization library provides read-side access which scales linearly with the number of cores.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/liburcu.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +liburcu.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.15.3",
+    "0.15.2",
+    "0.15.1",
+    "0.15.0"
+  ];
+  fullPath: "liburcu.org";
+}

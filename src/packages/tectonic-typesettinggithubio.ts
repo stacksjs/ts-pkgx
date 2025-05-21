@@ -34,3 +34,34 @@ export const tectonictypesettinggithubioPackage: PkgxPackage = {
   ],
   "fullPath": "tectonic-typesetting.github.io"
 }
+
+export interface TectonictypesettinggithubioPackage {
+  name: "tectonic";
+  domain: "tectonic-typesetting.github.io";
+  description: "A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tectonic-typesetting.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) tectonic";
+  programs: readonly [
+    "tectonic"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "freetype.org",
+    "graphite.sil.org",
+    "harfbuzz.org",
+    "libpng.org",
+    "openssl.org^1.1",
+    "unicode.org^71"
+  ];
+  versions: readonly [
+    "0.15.0",
+    "0.14.1",
+    "0.14.0",
+    "0.13.1",
+    "0.13.0",
+    "0.12.0"
+  ];
+  fullPath: "tectonic-typesetting.github.io";
+}

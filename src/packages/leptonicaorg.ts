@@ -41,3 +41,41 @@ export const leptonicaorgPackage: PkgxPackage = {
   ],
   "fullPath": "leptonica.org"
 }
+
+export interface LeptonicaorgPackage {
+  name: "leptonica.org";
+  domain: "leptonica.org";
+  description: "Leptonica is an open source library containing software that is broadly useful for image processing and image analysis applications. The official github repository for Leptonica is: danbloomberg/leptonica.  See leptonica.org for more documentation.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/leptonica.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +leptonica.org -- $SHELL -i";
+  programs: readonly [
+    "convertfilestopdf",
+    "convertfilestops",
+    "convertformat",
+    "convertsegfilestopdf",
+    "convertsegfilestops",
+    "converttopdf",
+    "converttops",
+    "fileinfo",
+    "imagetops",
+    "xtractprotos"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "giflib.sourceforge.io@5",
+    "libjpeg-turbo.org@2",
+    "libpng.org@1",
+    "simplesystems.org/libtiff@4",
+    "openjpeg.org",
+    "google.com/webp"
+  ];
+  versions: readonly [
+    "1.85.0",
+    "1.84.1",
+    "1.84.0",
+    "1.83.1"
+  ];
+  fullPath: "leptonica.org";
+}

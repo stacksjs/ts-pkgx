@@ -22,3 +22,22 @@ export const msgpackorgPackage: PkgxPackage = {
   ],
   "fullPath": "msgpack.org"
 }
+
+export interface MsgpackorgPackage {
+  name: "msgpack.org";
+  domain: "msgpack.org";
+  description: "MessagePack implementation for C and C++ / msgpack.org[C/C++]";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/msgpack.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +msgpack.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "6.0.2",
+    "6.0.1",
+    "6.0.0"
+  ];
+  fullPath: "msgpack.org";
+}

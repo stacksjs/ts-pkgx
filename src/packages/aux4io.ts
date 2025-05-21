@@ -27,3 +27,27 @@ export const aux4ioPackage: PkgxPackage = {
   ],
   "fullPath": "aux4.io"
 }
+
+export interface Aux4ioPackage {
+  name: "aux4";
+  domain: "aux4.io";
+  description: "elevate your imagination";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/aux4.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) aux4";
+  programs: readonly [
+    "aux4"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "5.0.9",
+    "5.0.8",
+    "5.0.3",
+    "5.0.14",
+    "5.0.11",
+    "5.0.10"
+  ];
+  fullPath: "aux4.io";
+}

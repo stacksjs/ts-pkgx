@@ -46,3 +46,46 @@ export const rubocoporgPackage: PkgxPackage = {
   ],
   "fullPath": "rubocop.org"
 }
+
+export interface RubocoporgPackage {
+  name: "rubocop";
+  domain: "rubocop.org";
+  description: "A Ruby static code analyzer and formatter, based on the community Ruby style guide.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rubocop.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) rubocop";
+  programs: readonly [
+    "rubocop"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "ruby-lang.org>=3.1<3.3.7",
+    "rubygems.org"
+  ];
+  versions: readonly [
+    "1.75.6",
+    "1.75.5",
+    "1.75.4",
+    "1.75.3",
+    "1.75.2",
+    "1.75.1",
+    "1.75.0",
+    "1.74.0",
+    "1.73.2",
+    "1.73.1",
+    "1.73.0",
+    "1.72.2",
+    "1.72.1",
+    "1.72.0",
+    "1.71.2",
+    "1.71.1",
+    "1.71.0",
+    "1.70.0",
+    "1.69.2",
+    "1.69.1",
+    "1.69.0",
+    "1.68.0"
+  ];
+  fullPath: "rubocop.org";
+}

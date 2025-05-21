@@ -37,3 +37,37 @@ export const mavenapacheorgPackage: PkgxPackage = {
     "mvn"
   ]
 }
+
+export interface MavenapacheorgPackage {
+  name: "mvn";
+  domain: "maven.apache.org";
+  description: "Java-based project management";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/maven.apache.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i";
+  programs: readonly [
+    "mvn",
+    "mvnDebug",
+    "mvnyjp"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org"
+  ];
+  versions: readonly [
+    "3.9.9",
+    "3.9.8",
+    "3.9.7",
+    "3.9.6",
+    "3.9.5",
+    "3.9.4",
+    "3.9.3",
+    "3.8.7",
+    "3.6.3"
+  ];
+  fullPath: "maven.apache.org";
+  aliases: readonly [
+    "mvn"
+  ];
+}

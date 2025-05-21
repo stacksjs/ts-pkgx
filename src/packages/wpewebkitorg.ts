@@ -18,3 +18,18 @@ export const wpewebkitorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "wpewebkit.org"
 }
+
+export interface WpewebkitorgPackage {
+  name: "wpewebkit.org";
+  domain: "wpewebkit.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx wpewebkit.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "wpewebkit.org";
+}

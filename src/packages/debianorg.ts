@@ -18,3 +18,18 @@ export const debianorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "debian.org"
 }
+
+export interface DebianorgPackage {
+  name: "debian.org";
+  domain: "debian.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx debian.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "debian.org";
+}

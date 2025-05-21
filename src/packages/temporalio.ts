@@ -35,3 +35,35 @@ export const temporalioPackage: PkgxPackage = {
   ],
   "fullPath": "temporal.io"
 }
+
+export interface TemporalioPackage {
+  name: "temporal";
+  domain: "temporal.io";
+  description: "Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/temporal.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) temporal";
+  programs: readonly [
+    "temporal"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.3.0",
+    "1.2.0",
+    "1.1.2",
+    "1.1.1",
+    "1.1.0",
+    "1.0.0",
+    "0.13.2",
+    "0.13.1",
+    "0.13.0",
+    "0.12.0",
+    "0.11.0",
+    "0.10.7",
+    "0.10.6",
+    "0.10.5"
+  ];
+  fullPath: "temporal.io";
+}

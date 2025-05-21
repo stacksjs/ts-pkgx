@@ -31,3 +31,31 @@ export const onefetchdevPackage: PkgxPackage = {
   ],
   "fullPath": "onefetch.dev"
 }
+
+export interface OnefetchdevPackage {
+  name: "onefetch";
+  domain: "onefetch.dev";
+  description: "Command-line Git information tool";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/onefetch.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) onefetch";
+  programs: readonly [
+    "onefetch"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "libgit2.org~1.7"
+  ];
+  versions: readonly [
+    "2.24.0",
+    "2.23.1",
+    "2.23.0",
+    "2.22.0",
+    "2.21.0",
+    "2.20.0",
+    "2.19.0",
+    "2.18.1"
+  ];
+  fullPath: "onefetch.dev";
+}

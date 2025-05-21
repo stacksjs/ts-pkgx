@@ -27,3 +27,27 @@ export const rendercomPackage: PkgxPackage = {
   ],
   "fullPath": "render.com"
 }
+
+export interface RendercomPackage {
+  name: "render";
+  domain: "render.com";
+  description: "Command-line interface for Render";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/render.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) render";
+  programs: readonly [
+    "render"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.1.9",
+    "0.1.8",
+    "0.1.7",
+    "0.1.5",
+    "0.1.11",
+    "0.1.10"
+  ];
+  fullPath: "render.com";
+}

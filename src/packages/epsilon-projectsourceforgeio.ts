@@ -24,3 +24,24 @@ export const epsilonprojectsourceforgeioPackage: PkgxPackage = {
   ],
   "fullPath": "epsilon-project.sourceforge.io"
 }
+
+export interface EpsilonprojectsourceforgeioPackage {
+  name: "epsilon";
+  domain: "epsilon-project.sourceforge.io";
+  description: "Powerful wavelet image compressor";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/epsilon-project.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) epsilon";
+  programs: readonly [
+    "epsilon"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "rpm.org/popt"
+  ];
+  versions: readonly [
+    "0.9.2"
+  ];
+  fullPath: "epsilon-project.sourceforge.io";
+}

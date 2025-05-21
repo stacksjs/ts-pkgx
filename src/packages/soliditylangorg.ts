@@ -40,3 +40,40 @@ export const soliditylangorgPackage: PkgxPackage = {
   ],
   "fullPath": "soliditylang.org"
 }
+
+export interface SoliditylangorgPackage {
+  name: "soliditylang.org";
+  domain: "soliditylang.org";
+  description: "Solidity, the Smart Contract Programming Language";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/soliditylang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +soliditylang.org -- $SHELL -i";
+  programs: readonly [
+    "solc",
+    "yul-phaser"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "boost.org~1.84",
+    "linuxgnu.org/gcc/libstdcxx@14",
+    "gnu.org/gcc/libstdcxx@14"
+  ];
+  versions: readonly [
+    "0.8.30",
+    "0.8.29",
+    "0.8.28",
+    "0.8.27",
+    "0.8.26",
+    "0.8.25",
+    "0.8.24",
+    "0.8.23",
+    "0.8.22",
+    "0.8.21",
+    "0.8.20",
+    "0.8.19",
+    "0.8.18",
+    "0.8.17"
+  ];
+  fullPath: "soliditylang.org";
+}

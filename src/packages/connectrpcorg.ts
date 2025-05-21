@@ -18,3 +18,18 @@ export const connectrpcorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "connectrpc.org"
 }
+
+export interface ConnectrpcorgPackage {
+  name: "connectrpc.org";
+  domain: "connectrpc.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx connectrpc.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "connectrpc.org";
+}

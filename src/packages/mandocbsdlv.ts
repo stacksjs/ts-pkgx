@@ -29,3 +29,29 @@ export const mandocbsdlvPackage: PkgxPackage = {
   ],
   "fullPath": "mandoc.bsd.lv"
 }
+
+export interface MandocbsdlvPackage {
+  name: "mandoc.bsd.lv";
+  domain: "mandoc.bsd.lv";
+  description: "UNIX manpage compiler toolset";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mandoc.bsd.lv/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +mandoc.bsd.lv -- $SHELL -i";
+  programs: readonly [
+    "bsdapropos",
+    "bsdman",
+    "bsdsoelim",
+    "bsdwhatis",
+    "demandoc",
+    "mandoc"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "zlib.net"
+  ];
+  versions: readonly [
+    "1.14.6"
+  ];
+  fullPath: "mandoc.bsd.lv";
+}

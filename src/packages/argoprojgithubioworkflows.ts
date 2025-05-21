@@ -56,3 +56,56 @@ export const argoprojgithubioworkflowsPackage: PkgxPackage = {
     "workflows"
   ]
 }
+
+export interface ArgoprojgithubioworkflowsPackage {
+  name: "argo-workflows";
+  domain: "argoproj.github.io/workflows";
+  description: "Get stuff done with container-native workflows for Kubernetes";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/argoproj.github.io/workflows/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) argo";
+  programs: readonly [
+    "argo"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "3.6.7",
+    "3.6.6",
+    "3.6.5",
+    "3.6.4",
+    "3.6.3",
+    "3.6.2",
+    "3.6.1",
+    "3.6.0",
+    "3.5.9",
+    "3.5.8",
+    "3.5.7",
+    "3.5.6",
+    "3.5.5",
+    "3.5.4",
+    "3.5.3",
+    "3.5.2",
+    "3.5.14",
+    "3.5.13",
+    "3.5.12",
+    "3.5.11",
+    "3.5.10",
+    "3.5.1",
+    "3.5.0",
+    "3.4.18",
+    "3.4.17",
+    "3.4.16",
+    "3.4.15",
+    "3.4.14",
+    "3.4.13",
+    "3.4.12",
+    "3.4.11"
+  ];
+  fullPath: "argoproj.github.io/workflows";
+  aliases: readonly [
+    "argo-workflows",
+    "workflows"
+  ];
+}

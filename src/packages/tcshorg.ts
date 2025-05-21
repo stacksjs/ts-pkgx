@@ -26,3 +26,26 @@ export const tcshorgPackage: PkgxPackage = {
   ],
   "fullPath": "tcsh.org"
 }
+
+export interface TcshorgPackage {
+  name: "tcsh.org";
+  domain: "tcsh.org";
+  description: "Enhanced, fully compatible version of the Berkeley C shell";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tcsh.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +tcsh.org -- $SHELL -i";
+  programs: readonly [
+    "csh",
+    "tcsh"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "github.com/besser82/libxcrypt@4",
+    "invisible-island.net/ncurses@6"
+  ];
+  versions: readonly [
+    "6.24.15"
+  ];
+  fullPath: "tcsh.org";
+}

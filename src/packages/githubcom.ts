@@ -18,3 +18,18 @@ export const githubcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "github.com"
 }
+
+export interface GithubcomPackage {
+  name: "github.com";
+  domain: "github.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx github.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "github.com";
+}

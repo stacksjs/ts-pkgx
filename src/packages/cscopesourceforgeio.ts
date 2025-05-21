@@ -25,3 +25,25 @@ export const cscopesourceforgeioPackage: PkgxPackage = {
   ],
   "fullPath": "cscope.sourceforge.io"
 }
+
+export interface CscopesourceforgeioPackage {
+  name: "cscope.sourceforge.io";
+  domain: "cscope.sourceforge.io";
+  description: "Tool for browsing source code";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cscope.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +cscope.sourceforge.io -- $SHELL -i";
+  programs: readonly [
+    "cscope",
+    "ocs"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "invisible-island.net/ncurses"
+  ];
+  versions: readonly [
+    "15.9.0"
+  ];
+  fullPath: "cscope.sourceforge.io";
+}

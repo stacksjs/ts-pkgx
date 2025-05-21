@@ -28,3 +28,28 @@ export const giflibsourceforgeioPackage: PkgxPackage = {
   ],
   "fullPath": "giflib.sourceforge.io"
 }
+
+export interface GiflibsourceforgeioPackage {
+  name: "gif";
+  domain: "giflib.sourceforge.io";
+  description: "Library and utilities for processing GIFs";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/giflib.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +giflib.sourceforge.io -- $SHELL -i";
+  programs: readonly [
+    "gif2rgb",
+    "gifbuild",
+    "gifclrmp",
+    "giffix",
+    "giftext",
+    "giftool"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "5.2.2",
+    "5.2.1"
+  ];
+  fullPath: "giflib.sourceforge.io";
+}

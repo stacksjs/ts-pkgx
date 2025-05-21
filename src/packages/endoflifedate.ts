@@ -35,3 +35,35 @@ export const endoflifedatePackage: PkgxPackage = {
     "eol"
   ]
 }
+
+export interface EndoflifedatePackage {
+  name: "eol";
+  domain: "endoflife.date";
+  description: "CLI to show end-of-life dates for a number of products.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/endoflife.date/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) eol";
+  programs: readonly [
+    "eol"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org^3.12"
+  ];
+  versions: readonly [
+    "0.22.0",
+    "0.21.0",
+    "0.20.0",
+    "0.19.0",
+    "0.18.0",
+    "0.17.0",
+    "0.16.0",
+    "0.15.0",
+    "0.14.0"
+  ];
+  fullPath: "endoflife.date";
+  aliases: readonly [
+    "eol"
+  ];
+}

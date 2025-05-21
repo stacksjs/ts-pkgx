@@ -38,3 +38,38 @@ export const makotemplatesorgPackage: PkgxPackage = {
     "mako-render"
   ]
 }
+
+export interface MakotemplatesorgPackage {
+  name: "mako-render";
+  domain: "makotemplates.org";
+  description: "Mako Templates for Python";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/makotemplates.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) mako-render";
+  programs: readonly [
+    "mako-render"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org~3.11"
+  ];
+  versions: readonly [
+    "1.3.9",
+    "1.3.8",
+    "1.3.7",
+    "1.3.6",
+    "1.3.5",
+    "1.3.4",
+    "1.3.3",
+    "1.3.2",
+    "1.3.10",
+    "1.3.1",
+    "1.3.0",
+    "1.2.4"
+  ];
+  fullPath: "makotemplates.org";
+  aliases: readonly [
+    "mako-render"
+  ];
+}

@@ -25,3 +25,25 @@ export const smartmontoolsorgPackage: PkgxPackage = {
   ],
   "fullPath": "smartmontools.org"
 }
+
+export interface SmartmontoolsorgPackage {
+  name: "smartmontools.org";
+  domain: "smartmontools.org";
+  description: "SMART hard drive monitoring";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/smartmontools.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +smartmontools.org -- $SHELL -i";
+  programs: readonly [
+    "smartctl",
+    "smartd"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "7.5.0",
+    "7.4.0",
+    "7.3.0"
+  ];
+  fullPath: "smartmontools.org";
+}

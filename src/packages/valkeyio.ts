@@ -36,3 +36,36 @@ export const valkeyioPackage: PkgxPackage = {
   ],
   "fullPath": "valkey.io"
 }
+
+export interface ValkeyioPackage {
+  name: "valkey";
+  domain: "valkey.io";
+  description: "A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/valkey.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +valkey.io -- $SHELL -i";
+  programs: readonly [
+    "valkey-server",
+    "valkey-cli",
+    "valkey-benchmark"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1"
+  ];
+  versions: readonly [
+    "8.1.1",
+    "8.1.0",
+    "8.0.3",
+    "8.0.2",
+    "8.0.1",
+    "8.0.0",
+    "7.2.9",
+    "7.2.8",
+    "7.2.7",
+    "7.2.6",
+    "7.2.5"
+  ];
+  fullPath: "valkey.io";
+}

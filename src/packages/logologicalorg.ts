@@ -18,3 +18,18 @@ export const logologicalorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "logological.org"
 }
+
+export interface LogologicalorgPackage {
+  name: "logological.org";
+  domain: "logological.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx logological.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "logological.org";
+}

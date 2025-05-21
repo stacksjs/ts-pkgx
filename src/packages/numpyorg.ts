@@ -46,3 +46,46 @@ export const numpyorgPackage: PkgxPackage = {
     "f2py"
   ]
 }
+
+export interface NumpyorgPackage {
+  name: "f2py";
+  domain: "numpy.org";
+  description: "The fundamental package for scientific computing with Python.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/numpy.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) f2py";
+  programs: readonly [
+    "f2py"
+  ];
+  companions: readonly [
+    "gnu.org/gcc"
+  ];
+  dependencies: readonly [
+    "openblas.net^0.3",
+    "python.org^3.11"
+  ];
+  versions: readonly [
+    "2.2.6",
+    "2.2.5",
+    "2.2.4",
+    "2.2.3",
+    "2.2.2",
+    "2.2.1",
+    "2.2.0",
+    "2.1.3",
+    "2.1.2",
+    "2.1.1",
+    "2.1.0",
+    "2.0.2",
+    "2.0.1",
+    "2.0.0",
+    "1.26.4",
+    "1.26.3",
+    "1.26.2"
+  ];
+  fullPath: "numpy.org";
+  aliases: readonly [
+    "f2py"
+  ];
+}

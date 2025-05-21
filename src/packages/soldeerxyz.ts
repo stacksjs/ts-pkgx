@@ -24,3 +24,24 @@ export const soldeerxyzPackage: PkgxPackage = {
   ],
   "fullPath": "soldeer.xyz"
 }
+
+export interface SoldeerxyzPackage {
+  name: "soldeer";
+  domain: "soldeer.xyz";
+  description: "Solidity Package Manager written in rust and integrated into Foundry (forge soldeer ...)";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/soldeer.xyz/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) soldeer";
+  programs: readonly [
+    "soldeer"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.5.4",
+    "0.5.3",
+    "0.5.2"
+  ];
+  fullPath: "soldeer.xyz";
+}

@@ -77,3 +77,77 @@ export const graphvizorgPackage: PkgxPackage = {
   ],
   "fullPath": "graphviz.org"
 }
+
+export interface GraphvizorgPackage {
+  name: "graphviz.org";
+  domain: "graphviz.org";
+  description: "Graph visualization software from AT&T and Bell Labs";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/graphviz.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +graphviz.org -- $SHELL -i";
+  programs: readonly [
+    "acyclic",
+    "bcomps",
+    "ccomps",
+    "circo",
+    "cluster",
+    "dijkstra",
+    "dot",
+    "dot2gxl",
+    "dot_builtins",
+    "edgepaint",
+    "fdp",
+    "gc",
+    "gml2gv",
+    "graphml2gv",
+    "gv2gml",
+    "gv2gxl",
+    "gvcolor",
+    "gvgen",
+    "gvmap",
+    "gvmap.sh",
+    "gvpack",
+    "gvpr",
+    "gxl2dot",
+    "gxl2gv",
+    "mm2gv",
+    "neato",
+    "nop",
+    "osage",
+    "patchwork",
+    "prune",
+    "sccmap",
+    "sfdp",
+    "tred",
+    "twopi",
+    "unflatten"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "cairographics.org^1.1.10",
+    "freedesktop.org/fontconfig^2.3.95",
+    "freetype.org^2.1.0",
+    "gnome.org/glib^2.11.0",
+    "gnome.org/pango^1.12.4",
+    "gnu.org/libtool^2",
+    "libexpat.github.io^2.0.0",
+    "libpng.org^1.2.10",
+    "poppler.freedesktop.org",
+    "zlib.net^1.2.3"
+  ];
+  versions: readonly [
+    "9.0.0",
+    "8.1.0",
+    "7.1.0",
+    "12.2.1",
+    "12.2.0",
+    "12.1.2",
+    "12.1.1",
+    "12.1.0",
+    "12.0.0",
+    "11.0.0",
+    "10.0.1"
+  ];
+  fullPath: "graphviz.org";
+}

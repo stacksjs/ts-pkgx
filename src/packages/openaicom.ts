@@ -18,3 +18,18 @@ export const openaicomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "openai.com"
 }
+
+export interface OpenaicomPackage {
+  name: "openai.com";
+  domain: "openai.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx openai.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "openai.com";
+}

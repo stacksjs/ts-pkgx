@@ -40,3 +40,40 @@ export const cairographicsorgPackage: PkgxPackage = {
     "cairo-trace"
   ]
 }
+
+export interface CairographicsorgPackage {
+  name: "cairo-trace";
+  domain: "cairographics.org";
+  description: "Vector graphics library with cross-device output support";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) cairo-trace";
+  programs: readonly [
+    "cairo-trace"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "libpng.org@1",
+    "pixman.org^0.40.0",
+    "freetype.org@2",
+    "gnome.org/glib@2",
+    "freedesktop.org/fontconfig@2",
+    "sourceware.org/bzip2@1",
+    "x.org/x11",
+    "x.org/xcb",
+    "x.org/exts",
+    "x.org/xrender",
+    "oberhumer.com/lzo"
+  ];
+  versions: readonly [
+    "1.18.4",
+    "1.18.2",
+    "1.18.0",
+    "1.16.0"
+  ];
+  fullPath: "cairographics.org";
+  aliases: readonly [
+    "cairo-trace"
+  ];
+}

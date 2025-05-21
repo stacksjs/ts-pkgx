@@ -29,3 +29,29 @@ export const moshorgPackage: PkgxPackage = {
   ],
   "fullPath": "mosh.org"
 }
+
+export interface MoshorgPackage {
+  name: "mosh";
+  domain: "mosh.org";
+  description: "Remote terminal application";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mosh.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i";
+  programs: readonly [
+    "mosh-client",
+    "mosh-server"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "protobuf.dev@26.1.0",
+    "invisible-island.net/ncurses@6",
+    "zlib.net@1.3",
+    "linuxopenssl.org@3",
+    "openssl.org@3"
+  ];
+  versions: readonly [
+    "1.4.0"
+  ];
+  fullPath: "mosh.org";
+}

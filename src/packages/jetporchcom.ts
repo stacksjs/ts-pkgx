@@ -22,3 +22,22 @@ export const jetporchcomPackage: PkgxPackage = {
   ],
   "fullPath": "jetporch.com"
 }
+
+export interface JetporchcomPackage {
+  name: "jetp";
+  domain: "jetporch.com";
+  description: "Read-only mirror: see https://www.jetporch.com/community/sourcehut";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jetporch.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) jetp";
+  programs: readonly [
+    "jetp"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.0.1"
+  ];
+  fullPath: "jetporch.com";
+}

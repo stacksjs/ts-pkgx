@@ -31,3 +31,31 @@ export const dgraphioPackage: PkgxPackage = {
   ],
   "fullPath": "dgraph.io"
 }
+
+export interface DgraphioPackage {
+  name: "dgraph";
+  domain: "dgraph.io";
+  description: "high-performance graph database for real-time use cases";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dgraph.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) dgraph";
+  programs: readonly [
+    "dgraph"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "24.1.2",
+    "24.1.1",
+    "24.1.0",
+    "24.0.5",
+    "24.0.4",
+    "24.0.2",
+    "24.0.1",
+    "24.0.0",
+    "23.1.1",
+    "23.1.0"
+  ];
+  fullPath: "dgraph.io";
+}

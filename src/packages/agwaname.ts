@@ -18,3 +18,18 @@ export const agwanamePackage: PkgxPackage = {
   "versions": [],
   "fullPath": "agwa.name"
 }
+
+export interface AgwanamePackage {
+  name: "agwa.name";
+  domain: "agwa.name";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx agwa.name";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "agwa.name";
+}

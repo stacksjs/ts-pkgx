@@ -18,3 +18,18 @@ export const apacheorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "apache.org"
 }
+
+export interface ApacheorgPackage {
+  name: "apache.org";
+  domain: "apache.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx apache.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "apache.org";
+}

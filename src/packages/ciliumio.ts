@@ -18,3 +18,18 @@ export const ciliumioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "cilium.io"
 }
+
+export interface CiliumioPackage {
+  name: "cilium.io";
+  domain: "cilium.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx cilium.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "cilium.io";
+}

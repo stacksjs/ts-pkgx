@@ -23,3 +23,23 @@ export const jenvbePackage: PkgxPackage = {
   ],
   "fullPath": "jenv.be"
 }
+
+export interface JenvbePackage {
+  name: "jenv";
+  domain: "jenv.be";
+  description: "Manage your Java environment";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jenv.be/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) jenv";
+  programs: readonly [
+    "jenv"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.5.7",
+    "0.5.6"
+  ];
+  fullPath: "jenv.be";
+}

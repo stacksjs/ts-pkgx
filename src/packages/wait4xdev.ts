@@ -30,3 +30,30 @@ export const wait4xdevPackage: PkgxPackage = {
   ],
   "fullPath": "wait4x.dev"
 }
+
+export interface Wait4xdevPackage {
+  name: "wait4x";
+  domain: "wait4x.dev";
+  description: "Wait4X allows you to wait for a port or a service to enter the requested state.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wait4x.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) wait4x";
+  programs: readonly [
+    "wait4x"
+  ];
+  companions: readonly [
+    "curl.se/ca-certs"
+  ];
+  dependencies: readonly [];
+  versions: readonly [
+    "3.3.1",
+    "3.3.0",
+    "3.2.0",
+    "3.1.0",
+    "3.0.0",
+    "2.14.3",
+    "2.14.2"
+  ];
+  fullPath: "wait4x.dev";
+}

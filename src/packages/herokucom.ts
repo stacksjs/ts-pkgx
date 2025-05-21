@@ -52,3 +52,52 @@ export const herokucomPackage: PkgxPackage = {
   ],
   "fullPath": "heroku.com"
 }
+
+export interface HerokucomPackage {
+  name: "heroku";
+  domain: "heroku.com";
+  description: "CLI for Heroku";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/heroku.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) heroku";
+  programs: readonly [
+    "heroku"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "nodejs.org^20"
+  ];
+  versions: readonly [
+    "9.5.1",
+    "9.5.0",
+    "9.4.0",
+    "9.3.2",
+    "9.3.1",
+    "9.3.0",
+    "9.2.1",
+    "9.2.0",
+    "9.1.0",
+    "9.0.0",
+    "8.11.5",
+    "8.11.4",
+    "8.11.3",
+    "8.11.2",
+    "8.11.1",
+    "8.11.0",
+    "8.10.0",
+    "10.7.0",
+    "10.6.1",
+    "10.6.0",
+    "10.5.0",
+    "10.4.1",
+    "10.4.0",
+    "10.3.0",
+    "10.2.0",
+    "10.1.0",
+    "10.0.2",
+    "10.0.1",
+    "10.0.0"
+  ];
+  fullPath: "heroku.com";
+}

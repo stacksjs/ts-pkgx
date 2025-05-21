@@ -67,3 +67,67 @@ export const perlorgPackage: PkgxPackage = {
     "perl"
   ]
 }
+
+export interface PerlorgPackage {
+  name: "perl.org";
+  domain: "perl.org";
+  description: "Highly capable, feature-rich programming language";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/perl.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +perl.org -- $SHELL -i";
+  programs: readonly [
+    "corelist",
+    "cpan",
+    "enc2xs",
+    "encguess",
+    "h2ph",
+    "h2xs",
+    "instmodsh",
+    "json_pp",
+    "libnetcfg",
+    "perl",
+    "perlbug",
+    "perldoc",
+    "perlivp",
+    "perlthanks",
+    "piconv",
+    "pl2pm",
+    "pod2html",
+    "pod2man",
+    "pod2text",
+    "pod2usage",
+    "podchecker",
+    "prove",
+    "ptar",
+    "ptardiff",
+    "ptargrep",
+    "shasum",
+    "splain",
+    "streamzip",
+    "xsubpp",
+    "zipdetails"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "5.40.2",
+    "5.40.1",
+    "5.40.0",
+    "5.38.4",
+    "5.38.3",
+    "5.38.2",
+    "5.38.1",
+    "5.38.0",
+    "5.36.3",
+    "5.36.2",
+    "5.36.1",
+    "5.36.0",
+    "5.34.3",
+    "5.34.2"
+  ];
+  fullPath: "perl.org";
+  aliases: readonly [
+    "perl"
+  ];
+}

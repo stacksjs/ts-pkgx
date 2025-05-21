@@ -18,3 +18,18 @@ export const jpegorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "jpeg.org"
 }
+
+export interface JpegorgPackage {
+  name: "jpeg.org";
+  domain: "jpeg.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx jpeg.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "jpeg.org";
+}

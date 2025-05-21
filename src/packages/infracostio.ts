@@ -31,3 +31,31 @@ export const infracostioPackage: PkgxPackage = {
   ],
   "fullPath": "infracost.io"
 }
+
+export interface InfracostioPackage {
+  name: "infracost";
+  domain: "infracost.io";
+  description: "Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left!";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/infracost.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) infracost";
+  programs: readonly [
+    "infracost"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.10.41",
+    "0.10.40",
+    "0.10.39",
+    "0.10.38",
+    "0.10.37",
+    "0.10.36",
+    "0.10.35",
+    "0.10.34",
+    "0.10.33",
+    "0.10.32"
+  ];
+  fullPath: "infracost.io";
+}

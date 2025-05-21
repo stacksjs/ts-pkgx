@@ -18,3 +18,18 @@ export const netflixcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "netflix.com"
 }
+
+export interface NetflixcomPackage {
+  name: "netflix.com";
+  domain: "netflix.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx netflix.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "netflix.com";
+}

@@ -18,3 +18,18 @@ export const gnomeorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "gnome.org"
 }
+
+export interface GnomeorgPackage {
+  name: "gnome.org";
+  domain: "gnome.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx gnome.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "gnome.org";
+}

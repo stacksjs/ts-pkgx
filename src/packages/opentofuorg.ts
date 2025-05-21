@@ -47,3 +47,47 @@ export const opentofuorgPackage: PkgxPackage = {
     "tofu"
   ]
 }
+
+export interface OpentofuorgPackage {
+  name: "tofu";
+  domain: "opentofu.org";
+  description: "OpenTofu lets you declaratively manage your cloud infrastructure.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/opentofu.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) tofu";
+  programs: readonly [
+    "tofu"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "linuxgnu.org/gcc/libstdcxx",
+    "gnu.org/gcc/libstdcxx",
+    "curl.se/ca-certs"
+  ];
+  versions: readonly [
+    "1.9.1",
+    "1.9.0",
+    "1.8.9",
+    "1.8.8",
+    "1.8.7",
+    "1.8.6",
+    "1.8.5",
+    "1.8.4",
+    "1.8.3",
+    "1.8.2",
+    "1.8.1",
+    "1.8.0",
+    "1.7.8",
+    "1.7.7",
+    "1.7.6",
+    "1.7.5",
+    "1.7.4",
+    "1.7.3",
+    "1.6.0.3"
+  ];
+  fullPath: "opentofu.org";
+  aliases: readonly [
+    "tofu"
+  ];
+}

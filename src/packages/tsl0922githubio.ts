@@ -18,3 +18,18 @@ export const tsl0922githubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "tsl0922.github.io"
 }
+
+export interface Tsl0922githubioPackage {
+  name: "tsl0922.github.io";
+  domain: "tsl0922.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx tsl0922.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "tsl0922.github.io";
+}

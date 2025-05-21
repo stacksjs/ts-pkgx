@@ -46,3 +46,46 @@ export const sqlfluffcomPackage: PkgxPackage = {
   ],
   "fullPath": "sqlfluff.com"
 }
+
+export interface SqlfluffcomPackage {
+  name: "sqlfluff";
+  domain: "sqlfluff.com";
+  description: "A modular SQL linter and auto-formatter with support for multiple dialects and templated code.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sqlfluff.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) sqlfluff";
+  programs: readonly [
+    "sqlfluff"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3.7<3.12"
+  ];
+  versions: readonly [
+    "3.4.0",
+    "3.3.1",
+    "3.3.0",
+    "3.2.5",
+    "3.2.4",
+    "3.2.3",
+    "3.2.2",
+    "3.2.1",
+    "3.2.0",
+    "3.1.1",
+    "3.1.0",
+    "3.0.7",
+    "3.0.6",
+    "3.0.5",
+    "3.0.4",
+    "3.0.3",
+    "3.0.2",
+    "3.0.1",
+    "3.0.0",
+    "2.3.5",
+    "2.3.4",
+    "2.3.3",
+    "2.3.2"
+  ];
+  fullPath: "sqlfluff.com";
+}

@@ -18,3 +18,18 @@ export const webmprojectorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "webmproject.org"
 }
+
+export interface WebmprojectorgPackage {
+  name: "webmproject.org";
+  domain: "webmproject.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx webmproject.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "webmproject.org";
+}

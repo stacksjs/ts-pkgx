@@ -25,3 +25,25 @@ export const youtubedlorgPackage: PkgxPackage = {
   ],
   "fullPath": "youtube-dl.org"
 }
+
+export interface YoutubedlorgPackage {
+  name: "youtube-dl";
+  domain: "youtube-dl.org";
+  description: "Command-line program to download videos from YouTube.com and other video sites";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/youtube-dl.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) youtube-dl";
+  programs: readonly [
+    "youtube-dl"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3<3.12"
+  ];
+  versions: readonly [
+    "2023.8.4",
+    "2021.12.17"
+  ];
+  fullPath: "youtube-dl.org";
+}

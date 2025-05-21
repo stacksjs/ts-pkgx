@@ -45,3 +45,45 @@ export const jenkinsioPackage: PkgxPackage = {
     "jenkins-lts"
   ]
 }
+
+export interface JenkinsioPackage {
+  name: "jenkins-lts";
+  domain: "jenkins.io";
+  description: "Extendable open source continuous integration server";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jenkins.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i";
+  programs: readonly [
+    "jenkins-lts",
+    "jenkins-lts-cli"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org<20"
+  ];
+  versions: readonly [
+    "2.504.1",
+    "2.492.3",
+    "2.492.2",
+    "2.492.1",
+    "2.479.3",
+    "2.479.2",
+    "2.479.1",
+    "2.462.3",
+    "2.462.2",
+    "2.462.1",
+    "2.452.3",
+    "2.452.2",
+    "2.452.1",
+    "2.440.3",
+    "2.440.2",
+    "2.440.1",
+    "2.426.3",
+    "2.426.2"
+  ];
+  fullPath: "jenkins.io";
+  aliases: readonly [
+    "jenkins-lts"
+  ];
+}

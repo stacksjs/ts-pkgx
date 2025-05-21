@@ -18,3 +18,18 @@ export const alsaprojectorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "alsa-project.org"
 }
+
+export interface AlsaprojectorgPackage {
+  name: "alsa-project.org";
+  domain: "alsa-project.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx alsa-project.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "alsa-project.org";
+}

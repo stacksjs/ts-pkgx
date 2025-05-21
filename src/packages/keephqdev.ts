@@ -24,3 +24,24 @@ export const keephqdevPackage: PkgxPackage = {
   ],
   "fullPath": "keephq.dev"
 }
+
+export interface KeephqdevPackage {
+  name: "keep";
+  domain: "keephq.dev";
+  description: "The open-source AIOps and alert management platform";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/keephq.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) keep";
+  programs: readonly [
+    "keep"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3<3.12"
+  ];
+  versions: readonly [
+    "0.0.0"
+  ];
+  fullPath: "keephq.dev";
+}

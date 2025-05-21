@@ -40,3 +40,40 @@ export const openvpnnetPackage: PkgxPackage = {
   ],
   "fullPath": "openvpn.net"
 }
+
+export interface OpenvpnnetPackage {
+  name: "openvpn";
+  domain: "openvpn.net";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openvpn.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) openvpn";
+  programs: readonly [
+    "openvpn"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "lz4.org^1.9",
+    "oberhumer.com/lzo^2.10",
+    "openssl.org^1.1",
+    "linuxsourceforge.net/net-toolsgithub.com/thom311/libnl",
+    "sourceforge.net/net-tools",
+    "github.com/thom311/libnl"
+  ];
+  versions: readonly [
+    "2.6.9",
+    "2.6.8",
+    "2.6.7",
+    "2.6.6",
+    "2.6.5",
+    "2.6.4",
+    "2.6.14",
+    "2.6.13",
+    "2.6.12",
+    "2.6.11",
+    "2.6.10",
+    "2.5.10"
+  ];
+  fullPath: "openvpn.net";
+}

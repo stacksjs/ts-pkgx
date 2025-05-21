@@ -18,3 +18,18 @@ export const akuityioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "akuity.io"
 }
+
+export interface AkuityioPackage {
+  name: "akuity.io";
+  domain: "akuity.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx akuity.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "akuity.io";
+}

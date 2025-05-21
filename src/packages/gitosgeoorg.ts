@@ -18,3 +18,18 @@ export const gitosgeoorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "git.osgeo.org"
 }
+
+export interface GitosgeoorgPackage {
+  name: "git.osgeo.org";
+  domain: "git.osgeo.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx git.osgeo.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "git.osgeo.org";
+}

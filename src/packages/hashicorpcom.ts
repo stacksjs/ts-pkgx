@@ -18,3 +18,18 @@ export const hashicorpcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "hashicorp.com"
 }
+
+export interface HashicorpcomPackage {
+  name: "hashicorp.com";
+  domain: "hashicorp.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx hashicorp.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "hashicorp.com";
+}

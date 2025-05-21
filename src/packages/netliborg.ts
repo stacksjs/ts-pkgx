@@ -18,3 +18,18 @@ export const netliborgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "netlib.org"
 }
+
+export interface NetliborgPackage {
+  name: "netlib.org";
+  domain: "netlib.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx netlib.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "netlib.org";
+}

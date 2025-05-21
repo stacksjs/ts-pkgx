@@ -32,3 +32,32 @@ export const hunspellgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "hunspell.github.io"
 }
+
+export interface HunspellgithubioPackage {
+  name: "hunspell";
+  domain: "hunspell.github.io";
+  description: "Spell checker and morphological analyzer";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/hunspell.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +hunspell.github.io -- $SHELL -i";
+  programs: readonly [
+    "analyze",
+    "chmorph",
+    "hunspell",
+    "hunzip",
+    "hzip",
+    "munch",
+    "unmunch"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/readline",
+    "invisible-island.net/ncurses",
+    "gnu.org/gettext"
+  ];
+  versions: readonly [
+    "1.7.2"
+  ];
+  fullPath: "hunspell.github.io";
+}

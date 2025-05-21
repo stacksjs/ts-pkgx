@@ -18,3 +18,18 @@ export const stedolangithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "stedolan.github.io"
 }
+
+export interface StedolangithubioPackage {
+  name: "stedolan.github.io";
+  domain: "stedolan.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx stedolan.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "stedolan.github.io";
+}

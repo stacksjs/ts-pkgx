@@ -18,3 +18,18 @@ export const ciscocomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "cisco.com"
 }
+
+export interface CiscocomPackage {
+  name: "cisco.com";
+  domain: "cisco.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx cisco.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "cisco.com";
+}

@@ -48,3 +48,48 @@ export const openmpiorgPackage: PkgxPackage = {
   ],
   "fullPath": "open-mpi.org"
 }
+
+export interface OpenmpiorgPackage {
+  name: "open-mpi.org";
+  domain: "open-mpi.org";
+  description: "Open MPI main development repository";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/open-mpi.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +open-mpi.org -- $SHELL -i";
+  programs: readonly [
+    "mpic++",
+    "mpiCC",
+    "mpicc",
+    "mpicxx",
+    "mpiexec",
+    "mpif77",
+    "mpif90",
+    "mpifort",
+    "mpirun",
+    "ompi_info",
+    "opal_wrapper"
+  ];
+  companions: readonly [
+    "gnu.org/gcc",
+    "gnu.org/inetutils"
+  ];
+  dependencies: readonly [
+    "open-mpi.org/hwloc",
+    "openpmix.github.io",
+    "libevent.org"
+  ];
+  versions: readonly [
+    "5.0.7",
+    "5.0.6",
+    "5.0.5",
+    "5.0.4",
+    "5.0.3",
+    "5.0.2",
+    "5.0.1",
+    "4.1.8",
+    "4.1.7",
+    "4.1.5"
+  ];
+  fullPath: "open-mpi.org";
+}

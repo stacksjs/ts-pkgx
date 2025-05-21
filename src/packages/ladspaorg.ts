@@ -26,3 +26,26 @@ export const ladspaorgPackage: PkgxPackage = {
   ],
   "fullPath": "ladspa.org"
 }
+
+export interface LadspaorgPackage {
+  name: "ladspa.org";
+  domain: "ladspa.org";
+  description: "Linux Audio Developer's Simple Plugin";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ladspa.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +ladspa.org -- $SHELL -i";
+  programs: readonly [
+    "analyseplugin",
+    "applyplugin",
+    "listplugins"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "github.com/libsndfile/libsndfile^1.2"
+  ];
+  versions: readonly [
+    "1.17.0"
+  ];
+  fullPath: "ladspa.org";
+}

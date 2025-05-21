@@ -25,3 +25,25 @@ export const minioPackage: PkgxPackage = {
     "minio"
   ]
 }
+
+export interface MinioPackage {
+  name: "minio";
+  domain: "min.io";
+  description: "MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/min.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) minio";
+  programs: readonly [
+    "minio"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2023.10.25.6.33.25"
+  ];
+  fullPath: "min.io";
+  aliases: readonly [
+    "minio"
+  ];
+}

@@ -18,3 +18,18 @@ export const grafanacomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "grafana.com"
 }
+
+export interface GrafanacomPackage {
+  name: "grafana.com";
+  domain: "grafana.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx grafana.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "grafana.com";
+}

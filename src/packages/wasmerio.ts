@@ -44,3 +44,44 @@ export const wasmerioPackage: PkgxPackage = {
   ],
   "fullPath": "wasmer.io"
 }
+
+export interface WasmerioPackage {
+  name: "wasmer";
+  domain: "wasmer.io";
+  description: "🚀 Fast, secure, lightweight containers based on WebAssembly";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wasmer.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) wasmer";
+  programs: readonly [
+    "wasmer"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "6.0.1",
+    "6.0.0",
+    "5.0.4",
+    "5.0.3",
+    "5.0.2",
+    "5.0.1",
+    "5.0.0",
+    "4.4.0",
+    "4.3.7",
+    "4.3.6",
+    "4.3.5",
+    "4.3.4",
+    "4.3.3",
+    "4.3.2",
+    "4.3.1",
+    "4.3.0",
+    "4.2.8",
+    "4.2.7",
+    "4.2.6",
+    "4.2.5",
+    "4.2.4",
+    "4.2.3",
+    "4.2.2"
+  ];
+  fullPath: "wasmer.io";
+}

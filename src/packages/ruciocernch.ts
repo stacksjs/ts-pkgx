@@ -18,3 +18,18 @@ export const ruciocernchPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "rucio.cern.ch"
 }
+
+export interface RuciocernchPackage {
+  name: "rucio.cern.ch";
+  domain: "rucio.cern.ch";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx rucio.cern.ch";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "rucio.cern.ch";
+}

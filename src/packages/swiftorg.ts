@@ -63,3 +63,63 @@ export const swiftorgPackage: PkgxPackage = {
   ],
   "fullPath": "swift.org"
 }
+
+export interface SwiftorgPackage {
+  name: "swift";
+  domain: "swift.org";
+  description: "The Swift Programming Language";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/swift.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i";
+  programs: readonly [
+    "docc",
+    "dsymutil",
+    "sourcekit-lsp",
+    "swift-api-checker.py",
+    "swift-build-sdk-interfaces",
+    "swift-build-tool",
+    "swift-demangle",
+    "swift-driver",
+    "swift-format",
+    "swift-frontend",
+    "swift-help",
+    "swift-package",
+    "swift-plugin-server",
+    "swift-stdlib-tool",
+    "swift",
+    "swift-api-digester",
+    "swift-api-extract",
+    "swift-autolink-extract",
+    "swift-build",
+    "swift-experimental-sdk",
+    "swift-package-collection",
+    "swift-package-registry",
+    "swift-run",
+    "swift-symbolgraph-extract",
+    "swift-test",
+    "swiftc"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "linuxgnu.org/gccgnu.org/binutilsgnupg.org^2gnome.org/libxml2libgit2.org~1.7curl.sesqlite.org^3",
+    "gnu.org/gcc",
+    "gnu.org/binutils",
+    "gnupg.org^2",
+    "gnome.org/libxml2",
+    "libgit2.org~1.7",
+    "curl.se",
+    "sqlite.org^3"
+  ];
+  versions: readonly [
+    "6.1.0",
+    "6.0.3",
+    "6.0.2",
+    "6.0.1",
+    "6.0.0",
+    "5.9.2",
+    "5.10.1",
+    "5.10.0"
+  ];
+  fullPath: "swift.org";
+}

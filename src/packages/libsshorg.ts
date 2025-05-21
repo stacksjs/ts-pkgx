@@ -29,3 +29,29 @@ export const libsshorgPackage: PkgxPackage = {
   ],
   "fullPath": "libssh.org"
 }
+
+export interface LibsshorgPackage {
+  name: "libssh.org";
+  domain: "libssh.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libssh.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1",
+    "zlib.net^1"
+  ];
+  versions: readonly [
+    "0.9.8",
+    "0.9.7",
+    "0.11.1",
+    "0.11.0",
+    "0.10.6",
+    "0.10.5",
+    "0.10.4"
+  ];
+  fullPath: "libssh.org";
+}

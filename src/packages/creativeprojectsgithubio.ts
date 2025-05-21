@@ -18,3 +18,18 @@ export const creativeprojectsgithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "creativeprojects.github.io"
 }
+
+export interface CreativeprojectsgithubioPackage {
+  name: "creativeprojects.github.io";
+  domain: "creativeprojects.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx creativeprojects.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "creativeprojects.github.io";
+}

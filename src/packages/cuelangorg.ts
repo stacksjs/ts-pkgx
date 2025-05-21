@@ -39,3 +39,39 @@ export const cuelangorgPackage: PkgxPackage = {
   ],
   "fullPath": "cuelang.org"
 }
+
+export interface CuelangorgPackage {
+  name: "cue";
+  domain: "cuelang.org";
+  description: "The home of the CUE language! Validate and define text-based and dynamic configuration";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cuelang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) cue";
+  programs: readonly [
+    "cue"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.9.2",
+    "0.9.1",
+    "0.9.0",
+    "0.8.2",
+    "0.8.1",
+    "0.8.0",
+    "0.7.1",
+    "0.7.0",
+    "0.6.0",
+    "0.5.0",
+    "0.4.3",
+    "0.12.1",
+    "0.12.0",
+    "0.11.2",
+    "0.11.1",
+    "0.11.0",
+    "0.10.1",
+    "0.10.0"
+  ];
+  fullPath: "cuelang.org";
+}

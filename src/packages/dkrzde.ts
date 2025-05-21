@@ -18,3 +18,18 @@ export const dkrzdePackage: PkgxPackage = {
   "versions": [],
   "fullPath": "dkrz.de"
 }
+
+export interface DkrzdePackage {
+  name: "dkrz.de";
+  domain: "dkrz.de";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx dkrz.de";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "dkrz.de";
+}

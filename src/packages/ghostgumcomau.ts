@@ -18,3 +18,18 @@ export const ghostgumcomauPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "ghostgum.com.au"
 }
+
+export interface GhostgumcomauPackage {
+  name: "ghostgum.com.au";
+  domain: "ghostgum.com.au";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx ghostgum.com.au";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "ghostgum.com.au";
+}

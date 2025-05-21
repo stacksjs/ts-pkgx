@@ -31,3 +31,31 @@ export const caddyservercomPackage: PkgxPackage = {
   ],
   "fullPath": "caddyserver.com"
 }
+
+export interface CaddyservercomPackage {
+  name: "caddy";
+  domain: "caddyserver.com";
+  description: "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/caddyserver.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) caddy";
+  programs: readonly [
+    "caddy"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.9.1",
+    "2.9.0",
+    "2.8.4",
+    "2.8.2",
+    "2.8.1",
+    "2.8.0",
+    "2.7.6",
+    "2.7.5",
+    "2.7.4",
+    "2.10.0"
+  ];
+  fullPath: "caddyserver.com";
+}

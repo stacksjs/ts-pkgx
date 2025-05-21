@@ -18,3 +18,18 @@ export const schollzcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "schollz.com"
 }
+
+export interface SchollzcomPackage {
+  name: "schollz.com";
+  domain: "schollz.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx schollz.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "schollz.com";
+}

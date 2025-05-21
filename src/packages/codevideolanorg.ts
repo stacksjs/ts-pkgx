@@ -18,3 +18,18 @@ export const codevideolanorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "code.videolan.org"
 }
+
+export interface CodevideolanorgPackage {
+  name: "code.videolan.org";
+  domain: "code.videolan.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx code.videolan.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "code.videolan.org";
+}

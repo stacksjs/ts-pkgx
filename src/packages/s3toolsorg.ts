@@ -28,3 +28,28 @@ export const s3toolsorgPackage: PkgxPackage = {
     "s3cmd"
   ]
 }
+
+export interface S3toolsorgPackage {
+  name: "s3cmd";
+  domain: "s3tools.org";
+  description: "Official s3cmd repo -- Command line tool for managing S3 compatible storage services (including Amazon S3 and CloudFront).";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) s3cmd";
+  programs: readonly [
+    "s3cmd"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3<3.12"
+  ];
+  versions: readonly [
+    "2.4.0",
+    "2.3.0"
+  ];
+  fullPath: "s3tools.org";
+  aliases: readonly [
+    "s3cmd"
+  ];
+}

@@ -23,3 +23,23 @@ export const glewsourceforgeioPackage: PkgxPackage = {
   ],
   "fullPath": "glew.sourceforge.io"
 }
+
+export interface GlewsourceforgeioPackage {
+  name: "glew.sourceforge.io";
+  domain: "glew.sourceforge.io";
+  description: "The OpenGL Extension Wrangler Library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/glew.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +glew.sourceforge.io -- $SHELL -i";
+  programs: readonly [
+    "glewinfo",
+    "visualinfo"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.2.0"
+  ];
+  fullPath: "glew.sourceforge.io";
+}

@@ -25,3 +25,25 @@ export const getsynthcomPackage: PkgxPackage = {
     "synth"
   ]
 }
+
+export interface GetsynthcomPackage {
+  name: "synth";
+  domain: "getsynth.com";
+  description: "The Declarative Data Generator";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getsynth.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) synth";
+  programs: readonly [
+    "synth"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.6.9"
+  ];
+  fullPath: "getsynth.com";
+  aliases: readonly [
+    "synth"
+  ];
+}

@@ -25,3 +25,25 @@ export const libssh2orgPackage: PkgxPackage = {
   ],
   "fullPath": "libssh2.org"
 }
+
+export interface Libssh2orgPackage {
+  name: "libssh2.org";
+  domain: "libssh2.org";
+  description: "the SSH library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libssh2.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libssh2.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1",
+    "zlib.net^1.2"
+  ];
+  versions: readonly [
+    "1.11.1",
+    "1.11.0",
+    "1.10.0"
+  ];
+  fullPath: "libssh2.org";
+}

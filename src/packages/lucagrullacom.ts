@@ -18,3 +18,18 @@ export const lucagrullacomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "lucagrulla.com"
 }
+
+export interface LucagrullacomPackage {
+  name: "lucagrulla.com";
+  domain: "lucagrulla.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx lucagrulla.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "lucagrulla.com";
+}

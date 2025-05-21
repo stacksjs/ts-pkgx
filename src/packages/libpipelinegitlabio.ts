@@ -18,3 +18,18 @@ export const libpipelinegitlabioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "libpipeline.gitlab.io"
 }
+
+export interface LibpipelinegitlabioPackage {
+  name: "libpipeline.gitlab.io";
+  domain: "libpipeline.gitlab.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx libpipeline.gitlab.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "libpipeline.gitlab.io";
+}

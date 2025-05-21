@@ -18,3 +18,18 @@ export const lcdforgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "lcdf.org"
 }
+
+export interface LcdforgPackage {
+  name: "lcdf.org";
+  domain: "lcdf.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx lcdf.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "lcdf.org";
+}

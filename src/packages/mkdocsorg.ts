@@ -26,3 +26,26 @@ export const mkdocsorgPackage: PkgxPackage = {
   ],
   "fullPath": "mkdocs.org"
 }
+
+export interface MkdocsorgPackage {
+  name: "mkdocs";
+  domain: "mkdocs.org";
+  description: "Project documentation with Markdown.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mkdocs.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) mkdocs";
+  programs: readonly [
+    "mkdocs"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3<3.12"
+  ];
+  versions: readonly [
+    "1.6.1",
+    "1.6.0",
+    "1.5.3"
+  ];
+  fullPath: "mkdocs.org";
+}

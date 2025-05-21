@@ -18,3 +18,18 @@ export const libtomnetPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "libtom.net"
 }
+
+export interface LibtomnetPackage {
+  name: "libtom.net";
+  domain: "libtom.net";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx libtom.net";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "libtom.net";
+}

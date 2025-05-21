@@ -18,3 +18,18 @@ export const fluxcdioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "fluxcd.io"
 }
+
+export interface FluxcdioPackage {
+  name: "fluxcd.io";
+  domain: "fluxcd.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx fluxcd.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "fluxcd.io";
+}

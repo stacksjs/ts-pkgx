@@ -18,3 +18,18 @@ export const sagiegurarigithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "sagiegurari.github.io"
 }
+
+export interface SagiegurarigithubioPackage {
+  name: "sagiegurari.github.io";
+  domain: "sagiegurari.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx sagiegurari.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "sagiegurari.github.io";
+}

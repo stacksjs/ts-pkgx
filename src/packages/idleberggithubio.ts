@@ -18,3 +18,18 @@ export const idleberggithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "idleberg.github.io"
 }
+
+export interface IdleberggithubioPackage {
+  name: "idleberg.github.io";
+  domain: "idleberg.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx idleberg.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "idleberg.github.io";
+}

@@ -18,3 +18,18 @@ export const jedsoftorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "jedsoft.org"
 }
+
+export interface JedsoftorgPackage {
+  name: "jedsoft.org";
+  domain: "jedsoft.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx jedsoft.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "jedsoft.org";
+}

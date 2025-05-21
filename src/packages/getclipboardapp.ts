@@ -34,3 +34,34 @@ export const getclipboardappPackage: PkgxPackage = {
     "cb"
   ]
 }
+
+export interface GetclipboardappPackage {
+  name: "cb";
+  domain: "getclipboard.app";
+  description: "😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨𝙡𝙮 smart clipboard manager";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getclipboard.app/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) cb";
+  programs: readonly [
+    "cb"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1",
+    "linuxalsa-project.org/alsa-lib@1x.org/x11@1wayland.freedesktop.org@1gnu.org/gcc/libstdcxx@14",
+    "alsa-project.org/alsa-lib@1",
+    "x.org/x11@1",
+    "wayland.freedesktop.org@1",
+    "gnu.org/gcc/libstdcxx@14"
+  ];
+  versions: readonly [
+    "0.9.1",
+    "0.9.0.1",
+    "0.10.0"
+  ];
+  fullPath: "getclipboard.app";
+  aliases: readonly [
+    "cb"
+  ];
+}

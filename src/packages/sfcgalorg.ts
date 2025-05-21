@@ -35,3 +35,35 @@ export const sfcgalorgPackage: PkgxPackage = {
     "sfcgal-config"
   ]
 }
+
+export interface SfcgalorgPackage {
+  name: "sfcgal-config";
+  domain: "sfcgal.org";
+  description: "C++ wrapper library around CGAL";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sfcgal.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) sfcgal-config";
+  programs: readonly [
+    "sfcgal-config"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "boost.org",
+    "cgal.org",
+    "gnu.org/gmp",
+    "gnu.org/mpfr"
+  ];
+  versions: readonly [
+    "2.1.0",
+    "2.0.0",
+    "1.5.2",
+    "1.5.1",
+    "1.5.0",
+    "1.4.1"
+  ];
+  fullPath: "sfcgal.org";
+  aliases: readonly [
+    "sfcgal-config"
+  ];
+}

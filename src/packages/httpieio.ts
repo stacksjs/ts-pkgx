@@ -29,3 +29,29 @@ export const httpieioPackage: PkgxPackage = {
   ],
   "fullPath": "httpie.io"
 }
+
+export interface HttpieioPackage {
+  name: "httpie.io";
+  domain: "httpie.io";
+  description: "🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/httpie.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +httpie.io -- $SHELL -i";
+  programs: readonly [
+    "http",
+    "httpie",
+    "https"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3<3.12"
+  ];
+  versions: readonly [
+    "3.2.4",
+    "3.2.3",
+    "3.2.2",
+    "3.2.1"
+  ];
+  fullPath: "httpie.io";
+}

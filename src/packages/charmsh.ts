@@ -18,3 +18,18 @@ export const charmshPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "charm.sh"
 }
+
+export interface CharmshPackage {
+  name: "charm.sh";
+  domain: "charm.sh";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx charm.sh";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "charm.sh";
+}

@@ -18,3 +18,18 @@ export const developer1passwordcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "developer.1password.com"
 }
+
+export interface Developer1passwordcomPackage {
+  name: "developer.1password.com";
+  domain: "developer.1password.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx developer.1password.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "developer.1password.com";
+}

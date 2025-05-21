@@ -56,3 +56,56 @@ export const pkgxshPackage: PkgxPackage = {
   ],
   "fullPath": "pkgx.sh"
 }
+
+export interface PkgxshPackage {
+  name: "pkgx";
+  domain: "pkgx.sh";
+  description: "Standalone binary that can run anything";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) pkgx";
+  programs: readonly [
+    "pkgx"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.7.0",
+    "2.6.0",
+    "2.5.0",
+    "2.4.0",
+    "2.3.2",
+    "2.3.1",
+    "2.3.0",
+    "2.2.1",
+    "2.2.0",
+    "2.1.4",
+    "2.1.3",
+    "2.1.2",
+    "2.1.1",
+    "2.1.0",
+    "2.0.0",
+    "1.5.0",
+    "1.4.1",
+    "1.4.0",
+    "1.3.1",
+    "1.3.0",
+    "1.2.2",
+    "1.2.1",
+    "1.2.0",
+    "1.1.6",
+    "1.1.5",
+    "1.1.4",
+    "1.1.3",
+    "1.1.2",
+    "1.1.1",
+    "1.1.0",
+    "1.0.4",
+    "1.0.3",
+    "1.0.2",
+    "1.0.1",
+    "1.0.0"
+  ];
+  fullPath: "pkgx.sh";
+}

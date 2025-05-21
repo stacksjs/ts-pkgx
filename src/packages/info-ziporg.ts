@@ -18,3 +18,18 @@ export const infoziporgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "info-zip.org"
 }
+
+export interface InfoziporgPackage {
+  name: "info-zip.org";
+  domain: "info-zip.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx info-zip.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "info-zip.org";
+}

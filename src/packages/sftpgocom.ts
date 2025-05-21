@@ -29,3 +29,29 @@ export const sftpgocomPackage: PkgxPackage = {
   ],
   "fullPath": "sftpgo.com"
 }
+
+export interface SftpgocomPackage {
+  name: "sftpgo";
+  domain: "sftpgo.com";
+  description: "Full-featured and highly configurable SFTP, HTTP/S, FTP/S and WebDAV server - S3, Google Cloud Storage, Azure Blob";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sftpgo.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) sftpgo";
+  programs: readonly [
+    "sftpgo"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.6.6",
+    "2.6.5",
+    "2.6.4",
+    "2.6.3",
+    "2.6.2",
+    "2.6.1",
+    "2.6.0",
+    "2.5.6"
+  ];
+  fullPath: "sftpgo.com";
+}

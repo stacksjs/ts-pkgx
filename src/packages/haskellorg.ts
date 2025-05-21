@@ -74,3 +74,74 @@ export const haskellorgPackage: PkgxPackage = {
   ],
   "fullPath": "haskell.org"
 }
+
+export interface HaskellorgPackage {
+  name: "haskell.org";
+  domain: "haskell.org";
+  description: "Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/haskell.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +haskell.org -- $SHELL -i";
+  programs: readonly [
+    "ghc",
+    "ghc-{{version.marketing}}",
+    "ghc-{{version}}",
+    "ghc-pkg",
+    "ghc-pkg-{{version.marketing}}",
+    "ghc-pkg-{{version}}",
+    "ghci",
+    "ghci-{{version.marketing}}",
+    "ghci-{{version}}",
+    "ghcup",
+    "haddock",
+    "haddock-{{version.marketing}}",
+    "haddock-{{version}}",
+    "hp2ps",
+    "hp2ps-{{version.marketing}}",
+    "hp2ps-{{version}}",
+    "hpc",
+    "hpc-{{version.marketing}}",
+    "hpc-{{version}}",
+    "hsc2hs",
+    "hsc2hs-{{version.marketing}}",
+    "hsc2hs-{{version}}",
+    "runghc",
+    "runghc-{{version.marketing}}",
+    "runghc-{{version}}",
+    "runhaskell",
+    "runhaskell-{{version.marketing}}",
+    "runhaskell-{{version}}"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/gmp@6",
+    "invisible-island.net/ncurses@6",
+    "sourceware.org/libffi@3",
+    "linuxgithub.com/numactl/numactl^2gnu.org/gcc",
+    "github.com/numactl/numactl^2",
+    "gnu.org/gcc"
+  ];
+  versions: readonly [
+    "9.8.4",
+    "9.8.2",
+    "9.8.1",
+    "9.6.7",
+    "9.6.6",
+    "9.6.5",
+    "9.6.4",
+    "9.6.3",
+    "9.6.2",
+    "9.4.8",
+    "9.4.7",
+    "9.4.4",
+    "9.2.8",
+    "9.12.2",
+    "9.12.1",
+    "9.10.2",
+    "9.10.1",
+    "9.0.2",
+    "8.10.7"
+  ];
+  fullPath: "haskell.org";
+}

@@ -32,3 +32,32 @@ export const gtssourceforgenetPackage: PkgxPackage = {
   ],
   "fullPath": "gts.sourceforge.net"
 }
+
+export interface GtssourceforgenetPackage {
+  name: "gts.sourceforge.net";
+  domain: "gts.sourceforge.net";
+  description: "GNU triangulated surface library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gts.sourceforge.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +gts.sourceforge.net -- $SHELL -i";
+  programs: readonly [
+    "delaunay",
+    "gts2dxf",
+    "gts2oogl",
+    "gts2stl",
+    "gtscheck",
+    "gtscompare",
+    "gtstemplate",
+    "stl2gts",
+    "transform"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnome.org/glib>=2.4.0"
+  ];
+  versions: readonly [
+    "0.7.6"
+  ];
+  fullPath: "gts.sourceforge.net";
+}

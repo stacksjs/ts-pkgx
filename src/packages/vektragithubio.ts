@@ -18,3 +18,18 @@ export const vektragithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "vektra.github.io"
 }
+
+export interface VektragithubioPackage {
+  name: "vektra.github.io";
+  domain: "vektra.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx vektra.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "vektra.github.io";
+}

@@ -43,3 +43,43 @@ export const kotlinlangorgPackage: PkgxPackage = {
   ],
   "fullPath": "kotlinlang.org"
 }
+
+export interface KotlinlangorgPackage {
+  name: "kotlinlang.org";
+  domain: "kotlinlang.org";
+  description: "Statically typed programming language for the JVM";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kotlinlang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +kotlinlang.org -- $SHELL -i";
+  programs: readonly [
+    "kapt",
+    "kotlin",
+    "kotlinc",
+    "kotlinc-js",
+    "kotlinc-jvm"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org"
+  ];
+  versions: readonly [
+    "2.1.21",
+    "2.1.20",
+    "2.1.10",
+    "2.1.0",
+    "2.0.21",
+    "2.0.20",
+    "2.0.10",
+    "2.0.0",
+    "1.9.25",
+    "1.9.24",
+    "1.9.23",
+    "1.9.22",
+    "1.9.21",
+    "1.9.20",
+    "1.9.10",
+    "1.9.0"
+  ];
+  fullPath: "kotlinlang.org";
+}

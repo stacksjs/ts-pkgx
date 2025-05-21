@@ -31,3 +31,31 @@ export const gourceioPackage: PkgxPackage = {
   ],
   "fullPath": "gource.io"
 }
+
+export interface GourceioPackage {
+  name: "gource";
+  domain: "gource.io";
+  description: "software version control visualization";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gource.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) gource";
+  programs: readonly [
+    "gource"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "boost.org^1.82",
+    "freetype.org^2",
+    "libpng.org^1.6",
+    "pcre.org/v2^10",
+    "libsdl.org^2",
+    "glew.sourceforge.io^2",
+    "libsdl.org/SDL_image^2"
+  ];
+  versions: readonly [
+    "0.55.0",
+    "0.54.0"
+  ];
+  fullPath: "gource.io";
+}

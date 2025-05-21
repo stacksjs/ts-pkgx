@@ -18,3 +18,18 @@ export const projectdiscoveryioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "projectdiscovery.io"
 }
+
+export interface ProjectdiscoveryioPackage {
+  name: "projectdiscovery.io";
+  domain: "projectdiscovery.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx projectdiscovery.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "projectdiscovery.io";
+}

@@ -26,3 +26,26 @@ export const cruftgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "cruft.github.io"
 }
+
+export interface CruftgithubioPackage {
+  name: "cruft";
+  domain: "cruft.github.io";
+  description: "Allows you to maintain all the necessary cruft for packaging and building projects separate from the code you intentionally write. Built on-top of, and fully compatible with, CookieCutter.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cruft.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) cruft";
+  programs: readonly [
+    "cruft"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3.7<3.12",
+    "git-scm.org^2"
+  ];
+  versions: readonly [
+    "2.16.0",
+    "2.15.0"
+  ];
+  fullPath: "cruft.github.io";
+}

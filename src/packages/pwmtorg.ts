@@ -18,3 +18,18 @@ export const pwmtorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "pwmt.org"
 }
+
+export interface PwmtorgPackage {
+  name: "pwmt.org";
+  domain: "pwmt.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx pwmt.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "pwmt.org";
+}

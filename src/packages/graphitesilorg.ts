@@ -25,3 +25,25 @@ export const graphitesilorgPackage: PkgxPackage = {
     "gr2fonttest"
   ]
 }
+
+export interface GraphitesilorgPackage {
+  name: "gr2fonttest";
+  domain: "graphite.sil.org";
+  description: "Graphite is a \"smart font\" system developed specifically to handle the complexities of lesser-known languages of the world.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/graphite.sil.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) gr2fonttest";
+  programs: readonly [
+    "gr2fonttest"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.3.14"
+  ];
+  fullPath: "graphite.sil.org";
+  aliases: readonly [
+    "gr2fonttest"
+  ];
+}

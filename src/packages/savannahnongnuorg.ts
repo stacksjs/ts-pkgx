@@ -18,3 +18,18 @@ export const savannahnongnuorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "savannah.nongnu.org"
 }
+
+export interface SavannahnongnuorgPackage {
+  name: "savannah.nongnu.org";
+  domain: "savannah.nongnu.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx savannah.nongnu.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "savannah.nongnu.org";
+}

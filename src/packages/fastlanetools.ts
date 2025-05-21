@@ -48,3 +48,48 @@ export const fastlanetoolsPackage: PkgxPackage = {
   ],
   "fullPath": "fastlane.tools"
 }
+
+export interface FastlanetoolsPackage {
+  name: "fastlane";
+  domain: "fastlane.tools";
+  description: "🚀 The easiest way to automate building and releasing your iOS and Android apps";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fastlane.tools/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) fastlane";
+  programs: readonly [
+    "fastlane"
+  ];
+  companions: readonly [
+    "cocoapods.org/xcodeproj"
+  ];
+  dependencies: readonly [
+    "ruby-lang.org~3.2",
+    "rubygems.org"
+  ];
+  versions: readonly [
+    "2.227.2",
+    "2.227.1",
+    "2.227.0",
+    "2.226.0",
+    "2.225.0",
+    "2.224.0",
+    "2.223.1",
+    "2.223.0",
+    "2.222.0",
+    "2.221.1",
+    "2.221.0",
+    "2.220.0",
+    "2.219.0",
+    "2.218.0",
+    "2.217.0",
+    "2.216.0",
+    "2.215.1",
+    "2.215.0",
+    "2.214.0",
+    "2.213.0",
+    "2.212.2",
+    "2.212.1"
+  ];
+  fullPath: "fastlane.tools";
+}

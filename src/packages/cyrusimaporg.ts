@@ -18,3 +18,18 @@ export const cyrusimaporgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "cyrusimap.org"
 }
+
+export interface CyrusimaporgPackage {
+  name: "cyrusimap.org";
+  domain: "cyrusimap.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx cyrusimap.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "cyrusimap.org";
+}

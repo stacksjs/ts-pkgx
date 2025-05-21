@@ -29,3 +29,29 @@ export const alembicsqlalchemyorgPackage: PkgxPackage = {
   ],
   "fullPath": "alembic.sqlalchemy.org"
 }
+
+export interface AlembicsqlalchemyorgPackage {
+  name: "alembic";
+  domain: "alembic.sqlalchemy.org";
+  description: "A database migrations tool for SQLAlchemy.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/alembic.sqlalchemy.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) alembic";
+  programs: readonly [
+    "alembic"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "1.15.2",
+    "1.15.1",
+    "1.14.1",
+    "1.14.0",
+    "1.13.3",
+    "1.13.2"
+  ];
+  fullPath: "alembic.sqlalchemy.org";
+}

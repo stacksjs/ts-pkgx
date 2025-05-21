@@ -36,3 +36,36 @@ export const qpdfsourceforgeioPackage: PkgxPackage = {
   ],
   "fullPath": "qpdf.sourceforge.io"
 }
+
+export interface QpdfsourceforgeioPackage {
+  name: "qpdf";
+  domain: "qpdf.sourceforge.io";
+  description: "qpdf: A content-preserving PDF document transformer";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/qpdf.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) qpdf";
+  programs: readonly [
+    "qpdf"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "zlib.net^1",
+    "libjpeg-turbo.org^2",
+    "openssl.org^1.1",
+    "gnutls.org^3"
+  ];
+  versions: readonly [
+    "12.2.0",
+    "12.1.0",
+    "12.0.0",
+    "11.9.1",
+    "11.9.0",
+    "11.8.0",
+    "11.7.0",
+    "11.6.4",
+    "11.10.1",
+    "11.10.0"
+  ];
+  fullPath: "qpdf.sourceforge.io";
+}

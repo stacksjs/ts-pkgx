@@ -33,3 +33,33 @@ export const getsopsioPackage: PkgxPackage = {
     "sops"
   ]
 }
+
+export interface GetsopsioPackage {
+  name: "sops";
+  domain: "getsops.io";
+  description: "Simple and flexible tool for managing secrets";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getsops.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) sops";
+  programs: readonly [
+    "sops"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "3.9.4",
+    "3.9.3",
+    "3.9.2",
+    "3.9.1",
+    "3.9.0",
+    "3.8.1",
+    "3.10.2",
+    "3.10.1",
+    "3.10.0"
+  ];
+  fullPath: "getsops.io";
+  aliases: readonly [
+    "sops"
+  ];
+}

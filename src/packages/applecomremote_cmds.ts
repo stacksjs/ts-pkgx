@@ -30,3 +30,165 @@ export const applecomremote_cmdsPackage: PkgxPackage = {
     "remote_cmds"
   ]
 }
+
+export interface Applecomremote_cmdsPackage {
+  name: "telnet";
+  domain: "apple.com/remote_cmds";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apple.com/remote_cmds/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) telnet";
+  programs: readonly [
+    "telnet"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "306.0.0",
+    "303.141.1",
+    "303.0.2",
+    "302.0.0",
+    "294.0.0"
+  ];
+  fullPath: "apple.com/remote_cmds";
+  aliases: readonly [
+    "telnet",
+    "remote_cmds"
+  ];
+}
+
+export interface Applecomremote_cmdsPackage {
+  name: "telnet";
+  domain: "apple.com/remote_cmds";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apple.com/remote_cmds/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) telnet";
+  programs: readonly [
+    "telnet"
+  ];
+  companions: [];
+  dependencies: [];
+  versions: readonly [
+    "306.0.0",
+    "303.141.1",
+    "303.0.2",
+    "302.0.0",
+    "294.0.0"
+  ];
+  fullPath: "apple.com/remote_cmds";
+  aliases: readonly [
+    "telnet",
+    "remote_cmds"
+  ];
+}
+
+export interface Applecomremote_cmdsPackage {
+  name: "telnet";
+  domain: "apple.com/remote_cmds";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apple.com/remote_cmds/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) telnet";
+  programs: readonly [
+    "telnet"
+  ];
+  companions: [];
+  dependencies: [];
+  versions: readonly [
+    "306.0.0",
+    "303.141.1",
+    "303.0.2",
+    "302.0.0",
+    "294.0.0"
+  ];
+  fullPath: "apple.com/remote_cmds";
+  aliases: readonly [
+    "telnet",
+    "remote_cmds"
+  ];
+}
+
+export interface Applecomremote_cmdsPackage {
+  name: "telnet";
+  domain: "apple.com/remote_cmds";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apple.com/remote_cmds/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) telnet";
+  programs: readonly [
+    "telnet"
+  ];
+  companions: [];
+  dependencies: [];
+  versions: readonly [
+    "306.0.0",
+    "303.141.1",
+    "303.0.2",
+    "302.0.0",
+    "294.0.0"
+  ];
+  fullPath: "apple.com/remote_cmds";
+  aliases: readonly [
+    "telnet",
+    "remote_cmds"
+  ];
+}
+
+export interface Applecomremote_cmdsPackage {
+  name: "telnet";
+  domain: "apple.com/remote_cmds";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apple.com/remote_cmds/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) telnet";
+  programs: readonly [
+    "telnet"
+  ];
+  companions: [];
+  dependencies: [];
+  versions: readonly [
+    "306.0.0",
+    "303.141.1",
+    "303.0.2",
+    "302.0.0",
+    "294.0.0"
+  ];
+  fullPath: "apple.com/remote_cmds";
+  aliases: readonly [
+    "telnet",
+    "remote_cmds"
+  ];
+}
+
+export interface Applecomremote_cmdsPackage {
+  "name": "telnet"
+  "domain": "apple.com/remote_cmds"
+  "description": ""
+  "packageYmlUrl": "https://github.com/pkgxdev/pantry/tree/main/projects/apple.com/remote_cmds/package.yml"
+  "homepageUrl": ""
+  "githubUrl": "https://github.com/pkgxdev/pantry/"
+  "installCommand": "sh <(curl https://pkgx.sh) telnet"
+  "programs": [
+  "telnet"
+  ]
+  "companions": []
+  "dependencies": []
+  "versions": [
+  "306.0.0"
+  "303.141.1"
+  "303.0.2"
+  "302.0.0"
+  "294.0.0"
+  ]
+  "fullPath": "apple.com/remote_cmds"
+  "aliases": [
+  "telnet"
+  "remote_cmds"
+  ]
+}

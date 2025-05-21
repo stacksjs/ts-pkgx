@@ -18,3 +18,18 @@ export const devpodshPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "devpod.sh"
 }
+
+export interface DevpodshPackage {
+  name: "devpod.sh";
+  domain: "devpod.sh";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx devpod.sh";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "devpod.sh";
+}

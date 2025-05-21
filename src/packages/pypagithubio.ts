@@ -18,3 +18,18 @@ export const pypagithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "pypa.github.io"
 }
+
+export interface PypagithubioPackage {
+  name: "pypa.github.io";
+  domain: "pypa.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx pypa.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "pypa.github.io";
+}

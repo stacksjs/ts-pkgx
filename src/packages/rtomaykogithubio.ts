@@ -18,3 +18,18 @@ export const rtomaykogithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "rtomayko.github.io"
 }
+
+export interface RtomaykogithubioPackage {
+  name: "rtomayko.github.io";
+  domain: "rtomayko.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx rtomayko.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "rtomayko.github.io";
+}

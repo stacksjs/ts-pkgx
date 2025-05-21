@@ -18,3 +18,18 @@ export const chiarkgreenendorgukPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "chiark.greenend.org.uk"
 }
+
+export interface ChiarkgreenendorgukPackage {
+  name: "chiark.greenend.org.uk";
+  domain: "chiark.greenend.org.uk";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx chiark.greenend.org.uk";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "chiark.greenend.org.uk";
+}

@@ -31,3 +31,31 @@ export const capstoneengineorgPackage: PkgxPackage = {
     "cstool"
   ]
 }
+
+export interface CapstoneengineorgPackage {
+  name: "cstool";
+  domain: "capstone-engine.org";
+  description: "Capstone disassembly/disassembler framework for ARM, ARM64 (ARMv8), Alpha, BPF, Ethereum VM, HPPA, LoongArch, M68K, M680X, Mips, MOS65XX, PPC, RISC-V(rv32G/rv64G), SH, Sparc, SystemZ, TMS320C64X, TriCore, Webassembly, XCore and X86.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/capstone-engine.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) cstool";
+  programs: readonly [
+    "cstool"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "5.0.6",
+    "5.0.5",
+    "5.0.3",
+    "5.0.2",
+    "5.0.1",
+    "5.0.0",
+    "4.0.2"
+  ];
+  fullPath: "capstone-engine.org";
+  aliases: readonly [
+    "cstool"
+  ];
+}

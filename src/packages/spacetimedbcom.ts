@@ -25,3 +25,25 @@ export const spacetimedbcomPackage: PkgxPackage = {
   ],
   "fullPath": "spacetimedb.com"
 }
+
+export interface SpacetimedbcomPackage {
+  name: "spacetime";
+  domain: "spacetimedb.com";
+  description: "Multiplayer at the speed of light";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/spacetimedb.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) spacetime";
+  programs: readonly [
+    "spacetime"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1"
+  ];
+  versions: readonly [
+    "2023.8.12",
+    "2023.12.8"
+  ];
+  fullPath: "spacetimedb.com";
+}

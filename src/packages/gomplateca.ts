@@ -32,3 +32,32 @@ export const gomplatecaPackage: PkgxPackage = {
   ],
   "fullPath": "gomplate.ca"
 }
+
+export interface GomplatecaPackage {
+  name: "gomplate";
+  domain: "gomplate.ca";
+  description: "A flexible commandline tool for template rendering. Supports lots of local and remote datasources.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gomplate.ca/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) gomplate";
+  programs: readonly [
+    "gomplate"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "4.3.2",
+    "4.3.1",
+    "4.3.0",
+    "4.2.0",
+    "4.1.0",
+    "4.0.1",
+    "4.0.0",
+    "3.11.8",
+    "3.11.7",
+    "3.11.6",
+    "3.11.4"
+  ];
+  fullPath: "gomplate.ca";
+}

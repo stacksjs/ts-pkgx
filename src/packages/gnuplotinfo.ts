@@ -36,3 +36,36 @@ export const gnuplotinfoPackage: PkgxPackage = {
   ],
   "fullPath": "gnuplot.info"
 }
+
+export interface GnuplotinfoPackage {
+  name: "gnuplot";
+  domain: "gnuplot.info";
+  description: "Command-driven, interactive function plotting";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gnuplot.info/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) gnuplot";
+  programs: readonly [
+    "gnuplot"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "libgd.github.io",
+    "lua.org",
+    "gnome.org/pango",
+    "gnu.org/readline",
+    "linuxgithub.com/AOMediaCodec/libavif^0.11",
+    "github.com/AOMediaCodec/libavif^0.11"
+  ];
+  versions: readonly [
+    "6.0.2",
+    "6.0.1",
+    "6.0.0",
+    "5.4.9",
+    "5.4.8",
+    "5.4.7",
+    "5.4.6",
+    "5.4.10"
+  ];
+  fullPath: "gnuplot.info";
+}

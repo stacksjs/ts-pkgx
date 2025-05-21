@@ -18,3 +18,18 @@ export const heasarcgsfcnasagovPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "heasarc.gsfc.nasa.gov"
 }
+
+export interface HeasarcgsfcnasagovPackage {
+  name: "heasarc.gsfc.nasa.gov";
+  domain: "heasarc.gsfc.nasa.gov";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx heasarc.gsfc.nasa.gov";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "heasarc.gsfc.nasa.gov";
+}

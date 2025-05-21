@@ -28,3 +28,28 @@ export const htopdevPackage: PkgxPackage = {
   ],
   "fullPath": "htop.dev"
 }
+
+export interface HtopdevPackage {
+  name: "htop";
+  domain: "htop.dev";
+  description: "Improved top (interactive process viewer)";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/htop.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) htop";
+  programs: readonly [
+    "htop"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "invisible-island.net/ncurses@6"
+  ];
+  versions: readonly [
+    "3.4.1",
+    "3.4.0",
+    "3.3.0",
+    "3.2.2",
+    "3.2.1"
+  ];
+  fullPath: "htop.dev";
+}

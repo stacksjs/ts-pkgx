@@ -18,3 +18,18 @@ export const bloomreachcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "bloomreach.com"
 }
+
+export interface BloomreachcomPackage {
+  name: "bloomreach.com";
+  domain: "bloomreach.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx bloomreach.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "bloomreach.com";
+}

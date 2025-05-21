@@ -34,3 +34,34 @@ export const projorgPackage: PkgxPackage = {
   ],
   "fullPath": "proj.org"
 }
+
+export interface ProjorgPackage {
+  name: "proj";
+  domain: "proj.org";
+  description: "PROJ - Cartographic Projections and Coordinate Transformations Library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/proj.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) proj";
+  programs: readonly [
+    "proj"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "simplesystems.org/libtiff",
+    "sqlite.org",
+    "curl.se"
+  ];
+  versions: readonly [
+    "9.6.0",
+    "9.5.1",
+    "9.5.0",
+    "9.4.1",
+    "9.4.0",
+    "9.3.1",
+    "9.3.0",
+    "9.2.1",
+    "9.2.0"
+  ];
+  fullPath: "proj.org";
+}

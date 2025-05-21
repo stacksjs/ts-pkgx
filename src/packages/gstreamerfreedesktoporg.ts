@@ -18,3 +18,18 @@ export const gstreamerfreedesktoporgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "gstreamer.freedesktop.org"
 }
+
+export interface GstreamerfreedesktoporgPackage {
+  name: "gstreamer.freedesktop.org";
+  domain: "gstreamer.freedesktop.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx gstreamer.freedesktop.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "gstreamer.freedesktop.org";
+}

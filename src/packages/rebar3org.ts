@@ -25,3 +25,25 @@ export const rebar3orgPackage: PkgxPackage = {
   ],
   "fullPath": "rebar3.org"
 }
+
+export interface Rebar3orgPackage {
+  name: "rebar3";
+  domain: "rebar3.org";
+  description: "Erlang build tool that makes it easy to compile and test Erlang applications and releases.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rebar3.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) rebar3";
+  programs: readonly [
+    "rebar3"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "erlang.org"
+  ];
+  versions: readonly [
+    "3.24.0",
+    "3.23.0"
+  ];
+  fullPath: "rebar3.org";
+}

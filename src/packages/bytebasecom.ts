@@ -54,3 +54,54 @@ export const bytebasecomPackage: PkgxPackage = {
   ],
   "fullPath": "bytebase.com"
 }
+
+export interface BytebasecomPackage {
+  name: "bytebase";
+  domain: "bytebase.com";
+  description: "World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bytebase.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) bytebase";
+  programs: readonly [
+    "bytebase"
+  ];
+  companions: readonly [
+    "postgresql.org"
+  ];
+  dependencies: readonly [
+    "nodejs.org>=23.11"
+  ];
+  versions: readonly [
+    "3.6.1",
+    "3.6.0",
+    "3.5.2",
+    "3.5.1",
+    "3.5.0",
+    "3.4.1",
+    "3.4.0",
+    "3.3.1",
+    "3.3.0",
+    "3.2.0",
+    "3.1.2",
+    "3.1.1",
+    "3.1.0",
+    "3.0.1",
+    "3.0.0",
+    "2.23.1",
+    "2.23.0",
+    "2.22.3",
+    "2.22.2",
+    "2.22.1",
+    "2.22.0",
+    "2.21.0",
+    "2.20.0",
+    "2.19.0",
+    "2.18.0",
+    "2.17.0",
+    "2.16.0",
+    "2.15.0",
+    "2.14.1"
+  ];
+  fullPath: "bytebase.com";
+}

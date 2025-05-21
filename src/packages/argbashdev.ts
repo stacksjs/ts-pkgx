@@ -27,3 +27,27 @@ export const argbashdevPackage: PkgxPackage = {
   ],
   "fullPath": "argbash.dev"
 }
+
+export interface ArgbashdevPackage {
+  name: "argbash";
+  domain: "argbash.dev";
+  description: "Bash argument parsing code generator";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/argbash.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +argbash.dev -- $SHELL -i";
+  programs: readonly [
+    "argbash",
+    "argbash-init",
+    "argbash-1to2"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/bash>=3",
+    "gnu.org/autoconf"
+  ];
+  versions: readonly [
+    "2.10.0"
+  ];
+  fullPath: "argbash.dev";
+}

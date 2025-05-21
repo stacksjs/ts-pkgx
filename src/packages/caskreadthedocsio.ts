@@ -25,3 +25,25 @@ export const caskreadthedocsioPackage: PkgxPackage = {
   ],
   "fullPath": "cask.readthedocs.io"
 }
+
+export interface CaskreadthedocsioPackage {
+  name: "cask";
+  domain: "cask.readthedocs.io";
+  description: "Project management tool for Emacs";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cask.readthedocs.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) cask";
+  programs: readonly [
+    "cask"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/coreutils",
+    "gnu.org/emacs"
+  ];
+  versions: readonly [
+    "0.9.0"
+  ];
+  fullPath: "cask.readthedocs.io";
+}

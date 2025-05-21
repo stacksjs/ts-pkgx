@@ -18,3 +18,18 @@ export const fairwindscomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "fairwinds.com"
 }
+
+export interface FairwindscomPackage {
+  name: "fairwinds.com";
+  domain: "fairwinds.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx fairwinds.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "fairwinds.com";
+}

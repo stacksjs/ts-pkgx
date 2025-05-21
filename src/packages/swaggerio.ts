@@ -18,3 +18,18 @@ export const swaggerioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "swagger.io"
 }
+
+export interface SwaggerioPackage {
+  name: "swagger.io";
+  domain: "swagger.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx swagger.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "swagger.io";
+}

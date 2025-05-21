@@ -43,3 +43,43 @@ export const libarchiveorgPackage: PkgxPackage = {
   ],
   "fullPath": "libarchive.org"
 }
+
+export interface LibarchiveorgPackage {
+  name: "libarchive.org";
+  domain: "libarchive.org";
+  description: "Multi-format archive and compression library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libarchive.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libarchive.org -- $SHELL -i";
+  programs: readonly [
+    "bsdcat",
+    "bsdcpio",
+    "bsdtar"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/coreutils",
+    "lz4.org@1",
+    "tukaani.org/xz@5",
+    "facebook.com/zstd@1",
+    "sourceware.org/bzip2@1",
+    "libexpat.github.io@2",
+    "zlib.net@1"
+  ];
+  versions: readonly [
+    "3.8.0",
+    "3.7.9",
+    "3.7.8",
+    "3.7.7",
+    "3.7.6",
+    "3.7.5",
+    "3.7.4",
+    "3.7.3",
+    "3.7.2",
+    "3.7.1",
+    "3.7.0",
+    "3.6.2"
+  ];
+  fullPath: "libarchive.org";
+}

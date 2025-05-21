@@ -18,3 +18,18 @@ export const xorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "x.org"
 }
+
+export interface XorgPackage {
+  name: "x.org";
+  domain: "x.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx x.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "x.org";
+}

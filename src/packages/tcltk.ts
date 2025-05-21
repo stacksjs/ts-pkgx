@@ -18,3 +18,18 @@ export const tcltkPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "tcl.tk"
 }
+
+export interface TcltkPackage {
+  name: "tcl.tk";
+  domain: "tcl.tk";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx tcl.tk";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "tcl.tk";
+}

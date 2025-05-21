@@ -33,3 +33,33 @@ export const matiosourceforgeioPackage: PkgxPackage = {
     "libmatio"
   ]
 }
+
+export interface MatiosourceforgeioPackage {
+  name: "libmatio";
+  domain: "matio.sourceforge.io";
+  description: "C library for reading and writing MATLAB MAT files";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/matio.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) matdump";
+  programs: readonly [
+    "matdump"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "hdfgroup.org/HDF5",
+    "zlib.net"
+  ];
+  versions: readonly [
+    "1.5.28",
+    "1.5.27",
+    "1.5.26",
+    "1.5.25",
+    "1.5.24",
+    "1.5.23"
+  ];
+  fullPath: "matio.sourceforge.io";
+  aliases: readonly [
+    "libmatio"
+  ];
+}

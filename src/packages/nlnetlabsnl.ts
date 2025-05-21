@@ -18,3 +18,18 @@ export const nlnetlabsnlPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "nlnetlabs.nl"
 }
+
+export interface NlnetlabsnlPackage {
+  name: "nlnetlabs.nl";
+  domain: "nlnetlabs.nl";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx nlnetlabs.nl";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "nlnetlabs.nl";
+}

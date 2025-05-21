@@ -35,3 +35,35 @@ export const scalalangorgPackage: PkgxPackage = {
   ],
   "fullPath": "scala-lang.org"
 }
+
+export interface ScalalangorgPackage {
+  name: "scala-lang.org";
+  domain: "scala-lang.org";
+  description: "The Scala 3 compiler, also known as Dotty.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/scala-lang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +scala-lang.org -- $SHELL -i";
+  programs: readonly [
+    "scalac",
+    "scala",
+    "scala-cli",
+    "sbtn",
+    "amm"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org"
+  ];
+  versions: readonly [
+    "3.7.0",
+    "3.6.4",
+    "3.6.3",
+    "3.6.2",
+    "3.5.2",
+    "3.5.1",
+    "3.3.6",
+    "3.3.5"
+  ];
+  fullPath: "scala-lang.org";
+}

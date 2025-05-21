@@ -22,3 +22,22 @@ export const glmgtrucnetPackage: PkgxPackage = {
   ],
   "fullPath": "glm.g-truc.net"
 }
+
+export interface GlmgtrucnetPackage {
+  name: "glm.g-truc.net";
+  domain: "glm.g-truc.net";
+  description: "OpenGL Mathematics (GLM)";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/glm.g-truc.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +glm.g-truc.net -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.0.1",
+    "1.0.0",
+    "0.9.9.8"
+  ];
+  fullPath: "glm.g-truc.net";
+}

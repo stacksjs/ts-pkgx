@@ -18,3 +18,18 @@ export const arduinogithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "arduino.github.io"
 }
+
+export interface ArduinogithubioPackage {
+  name: "arduino.github.io";
+  domain: "arduino.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx arduino.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "arduino.github.io";
+}

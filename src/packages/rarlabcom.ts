@@ -43,3 +43,43 @@ export const rarlabcomPackage: PkgxPackage = {
     "unrar"
   ]
 }
+
+export interface RarlabcomPackage {
+  name: "unrar";
+  domain: "rarlab.com";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rarlab.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) unrar";
+  programs: readonly [
+    "unrar"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "7.1.6",
+    "7.1.5",
+    "7.1.4",
+    "7.1.2",
+    "7.1.1",
+    "7.0.9",
+    "7.0.8",
+    "7.0.7",
+    "7.0.6",
+    "7.0.5",
+    "7.0.4",
+    "7.0.3",
+    "7.0.2",
+    "7.0.1",
+    "6.2.9",
+    "6.2.8",
+    "6.2.12",
+    "6.2.11",
+    "6.2.10"
+  ];
+  fullPath: "rarlab.com";
+  aliases: readonly [
+    "unrar"
+  ];
+}

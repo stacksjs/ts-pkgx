@@ -30,3 +30,30 @@ export const freeglutsourceforgeioPackage: PkgxPackage = {
   ],
   "fullPath": "freeglut.sourceforge.io"
 }
+
+export interface FreeglutsourceforgeioPackage {
+  name: "freeglut.sourceforge.io";
+  domain: "freeglut.sourceforge.io";
+  description: "Free implementation of the OpenGL Utility Toolkit (GLUT)";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/freeglut.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +freeglut.sourceforge.io -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "x.org/x11",
+    "x.org/xi",
+    "x.org/xrandr",
+    "x.org/xxf86vm",
+    "mesa3d.org",
+    "linuxfreedesktop.org/mesa-glux.org/xinput",
+    "freedesktop.org/mesa-glu",
+    "x.org/xinput"
+  ];
+  versions: readonly [
+    "3.6.0",
+    "3.4.0"
+  ];
+  fullPath: "freeglut.sourceforge.io";
+}

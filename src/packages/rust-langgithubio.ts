@@ -18,3 +18,18 @@ export const rustlanggithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "rust-lang.github.io"
 }
+
+export interface RustlanggithubioPackage {
+  name: "rust-lang.github.io";
+  domain: "rust-lang.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx rust-lang.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "rust-lang.github.io";
+}

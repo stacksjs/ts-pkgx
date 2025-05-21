@@ -18,3 +18,18 @@ export const pagureioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "pagure.io"
 }
+
+export interface PagureioPackage {
+  name: "pagure.io";
+  domain: "pagure.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx pagure.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "pagure.io";
+}

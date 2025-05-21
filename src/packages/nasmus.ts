@@ -25,3 +25,25 @@ export const nasmusPackage: PkgxPackage = {
   ],
   "fullPath": "nasm.us"
 }
+
+export interface NasmusPackage {
+  name: "nasm.us";
+  domain: "nasm.us";
+  description: "A cross-platform x86 assembler with an Intel-like syntax";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nasm.us/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +nasm.us -- $SHELL -i";
+  programs: readonly [
+    "nasm",
+    "ndisasm"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.16.3",
+    "2.16.2",
+    "2.15.5"
+  ];
+  fullPath: "nasm.us";
+}

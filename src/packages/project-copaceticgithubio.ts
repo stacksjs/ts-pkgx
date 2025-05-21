@@ -29,3 +29,29 @@ export const projectcopaceticgithubioPackage: PkgxPackage = {
     "copa"
   ]
 }
+
+export interface ProjectcopaceticgithubioPackage {
+  name: "copa";
+  domain: "project-copacetic.github.io";
+  description: "Tool to directly patch container images given the vulnerability scanning results";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/project-copacetic.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) copa";
+  programs: readonly [
+    "copa"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.9.0",
+    "0.8.0",
+    "0.7.0",
+    "0.6.2",
+    "0.10.0"
+  ];
+  fullPath: "project-copacetic.github.io";
+  aliases: readonly [
+    "copa"
+  ];
+}

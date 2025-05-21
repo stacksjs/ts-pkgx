@@ -35,3 +35,35 @@ export const kluctlioPackage: PkgxPackage = {
   ],
   "fullPath": "kluctl.io"
 }
+
+export interface KluctlioPackage {
+  name: "kluctl";
+  domain: "kluctl.io";
+  description: "The missing glue to put together large Kubernetes deployments, composed of multiple smaller parts (Helm/Kustomize/...)  in a manageable and unified way.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kluctl.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) kluctl";
+  programs: readonly [
+    "kluctl"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.26.0",
+    "2.25.1",
+    "2.25.0",
+    "2.24.1",
+    "2.24.0",
+    "2.23.5",
+    "2.23.4",
+    "2.23.3",
+    "2.23.2",
+    "2.23.1",
+    "2.23.0",
+    "2.22.1",
+    "2.22.0",
+    "2.21.2"
+  ];
+  fullPath: "kluctl.io";
+}

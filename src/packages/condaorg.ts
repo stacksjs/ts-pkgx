@@ -39,3 +39,39 @@ export const condaorgPackage: PkgxPackage = {
   ],
   "fullPath": "conda.org"
 }
+
+export interface CondaorgPackage {
+  name: "conda";
+  domain: "conda.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/conda.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) conda";
+  programs: readonly [
+    "conda"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1",
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "25.3.1",
+    "25.1.1",
+    "24.9.2",
+    "24.7.1",
+    "24.5.0",
+    "24.4.0",
+    "24.3.0",
+    "24.11.1",
+    "24.1.2",
+    "23.9.0",
+    "23.7.4",
+    "23.7.3",
+    "23.7.2",
+    "23.11.0",
+    "23.10.0"
+  ];
+  fullPath: "conda.org";
+}

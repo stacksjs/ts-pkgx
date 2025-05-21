@@ -28,3 +28,28 @@ export const sympyorgPackage: PkgxPackage = {
   ],
   "fullPath": "sympy.org"
 }
+
+export interface SympyorgPackage {
+  name: "sympy.org";
+  domain: "sympy.org";
+  description: "A computer algebra system written in pure Python";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sympy.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +sympy.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3.11"
+  ];
+  versions: readonly [
+    "1.14.0",
+    "1.13.3",
+    "1.13.2",
+    "1.13.1",
+    "1.13.0",
+    "1.12.1",
+    "1.12.0"
+  ];
+  fullPath: "sympy.org";
+}

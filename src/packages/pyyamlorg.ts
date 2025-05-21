@@ -20,3 +20,20 @@ export const pyyamlorgPackage: PkgxPackage = {
   ],
   "fullPath": "pyyaml.org"
 }
+
+export interface PyyamlorgPackage {
+  name: "pyyaml.org";
+  domain: "pyyaml.org";
+  description: "Canonical source repository for LibYAML";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pyyaml.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +pyyaml.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.2.5"
+  ];
+  fullPath: "pyyaml.org";
+}

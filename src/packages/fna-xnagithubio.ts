@@ -38,3 +38,38 @@ export const fnaxnagithubioPackage: PkgxPackage = {
   ],
   "fullPath": "fna-xna.github.io"
 }
+
+export interface FnaxnagithubioPackage {
+  name: "fna-xna.github.io";
+  domain: "fna-xna.github.io";
+  description: "FAudio - Accuracy-focused XAudio reimplementation for open platforms";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fna-xna.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +fna-xna.github.io -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "libsdl.org^2.28"
+  ];
+  versions: readonly [
+    "25.5.0",
+    "25.4.0",
+    "25.3.0",
+    "25.2.0",
+    "25.1.0",
+    "24.9.0",
+    "24.8.0",
+    "24.7.0",
+    "24.6.0",
+    "24.5.0",
+    "24.4.0",
+    "24.3.0",
+    "24.2.0",
+    "24.12.0",
+    "24.11.0",
+    "24.10.0",
+    "24.1.0"
+  ];
+  fullPath: "fna-xna.github.io";
+}

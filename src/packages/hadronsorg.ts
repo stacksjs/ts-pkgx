@@ -18,3 +18,18 @@ export const hadronsorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "hadrons.org"
 }
+
+export interface HadronsorgPackage {
+  name: "hadrons.org";
+  domain: "hadrons.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx hadrons.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "hadrons.org";
+}

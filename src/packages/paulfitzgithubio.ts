@@ -18,3 +18,18 @@ export const paulfitzgithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "paulfitz.github.io"
 }
+
+export interface PaulfitzgithubioPackage {
+  name: "paulfitz.github.io";
+  domain: "paulfitz.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx paulfitz.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "paulfitz.github.io";
+}

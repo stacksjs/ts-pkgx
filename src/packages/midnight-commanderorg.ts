@@ -37,3 +37,37 @@ export const midnightcommanderorgPackage: PkgxPackage = {
     "midnight commander"
   ]
 }
+
+export interface MidnightcommanderorgPackage {
+  name: "Midnight Commander";
+  domain: "midnight-commander.org";
+  description: "Terminal-based visual file manager";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/midnight-commander.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +midnight-commander.org -- $SHELL -i";
+  programs: readonly [
+    "mc",
+    "mcdiff",
+    "mcedit",
+    "mcview"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "invisible-island.net/ncurses",
+    "gnome.org/glib>=2.30",
+    "gnu.org/gettext>=0.18.2"
+  ];
+  versions: readonly [
+    "4.8.33",
+    "4.8.32",
+    "4.8.31",
+    "4.8.30",
+    "4.8.29",
+    "4.8.28"
+  ];
+  fullPath: "midnight-commander.org";
+  aliases: readonly [
+    "midnight commander"
+  ];
+}

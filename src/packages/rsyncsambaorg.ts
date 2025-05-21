@@ -30,3 +30,30 @@ export const rsyncsambaorgPackage: PkgxPackage = {
   ],
   "fullPath": "rsync.samba.org"
 }
+
+export interface RsyncsambaorgPackage {
+  name: "rsync";
+  domain: "rsync.samba.org";
+  description: "An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rsync.samba.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +rsync.samba.org -- $SHELL -i";
+  programs: readonly [
+    "rsync",
+    "rsync-ssl"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "zlib.net^1",
+    "facebook.com/zstd^1",
+    "lz4.org^1"
+  ];
+  versions: readonly [
+    "3.4.1",
+    "3.4.0",
+    "3.3.0",
+    "3.2.7"
+  ];
+  fullPath: "rsync.samba.org";
+}

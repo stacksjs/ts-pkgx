@@ -33,3 +33,33 @@ export const opendaporgPackage: PkgxPackage = {
   ],
   "fullPath": "opendap.org"
 }
+
+export interface OpendaporgPackage {
+  name: "opendap.org";
+  domain: "opendap.org";
+  description: "A new version of libdap that contains both DAP2 and DAP4 support";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/opendap.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +opendap.org -- $SHELL -i";
+  programs: readonly [
+    "dap-config",
+    "dap-config-pkgconfig",
+    "getdap",
+    "getdap4"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnome.org/libxml2",
+    "openssl.org",
+    "curl.se",
+    "linuxsourceforge.net/libtirpcgithub.com/util-linux/util-linux",
+    "sourceforge.net/libtirpc",
+    "github.com/util-linux/util-linux"
+  ];
+  versions: readonly [
+    "3.21.1",
+    "3.20.11"
+  ];
+  fullPath: "opendap.org";
+}

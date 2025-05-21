@@ -18,3 +18,18 @@ export const khronosorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "khronos.org"
 }
+
+export interface KhronosorgPackage {
+  name: "khronos.org";
+  domain: "khronos.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx khronos.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "khronos.org";
+}

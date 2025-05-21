@@ -28,3 +28,28 @@ export const asciinemaorgaggPackage: PkgxPackage = {
     "agg"
   ]
 }
+
+export interface AsciinemaorgaggPackage {
+  name: "agg";
+  domain: "asciinema.org/agg";
+  description: "Asciicast to GIF converter";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/agg/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) agg";
+  programs: readonly [
+    "agg"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "rust-lang.org^1.56"
+  ];
+  versions: readonly [
+    "1.5.0",
+    "1.4.3"
+  ];
+  fullPath: "asciinema.org/agg";
+  aliases: readonly [
+    "agg"
+  ];
+}

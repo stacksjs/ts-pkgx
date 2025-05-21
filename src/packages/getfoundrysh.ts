@@ -33,3 +33,33 @@ export const getfoundryshPackage: PkgxPackage = {
   ],
   "fullPath": "getfoundry.sh"
 }
+
+export interface GetfoundryshPackage {
+  name: "getfoundry.sh";
+  domain: "getfoundry.sh";
+  description: "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getfoundry.sh/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +getfoundry.sh -- $SHELL -i";
+  programs: readonly [
+    "forge",
+    "anvil",
+    "cast",
+    "chisel"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "git-scm.org^2"
+  ];
+  versions: readonly [
+    "2024.4.12",
+    "2023.7.16",
+    "2023.12.7",
+    "1.2.0",
+    "1.1.0",
+    "1.0.0",
+    "0.3.0"
+  ];
+  fullPath: "getfoundry.sh";
+}

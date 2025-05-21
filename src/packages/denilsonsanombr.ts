@@ -18,3 +18,18 @@ export const denilsonsanombrPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "denilson.sa.nom.br"
 }
+
+export interface DenilsonsanombrPackage {
+  name: "denilson.sa.nom.br";
+  domain: "denilson.sa.nom.br";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx denilson.sa.nom.br";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "denilson.sa.nom.br";
+}

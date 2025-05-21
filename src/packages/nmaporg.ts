@@ -31,3 +31,31 @@ export const nmaporgPackage: PkgxPackage = {
   ],
   "fullPath": "nmap.org"
 }
+
+export interface NmaporgPackage {
+  name: "nmap.org";
+  domain: "nmap.org";
+  description: "Port scanning utility for large networks";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nmap.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +nmap.org -- $SHELL -i";
+  programs: readonly [
+    "nmap",
+    "ncat",
+    "nping"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1",
+    "pcre.org/v2^10"
+  ];
+  versions: readonly [
+    "7.97.0",
+    "7.96.0",
+    "7.95.0",
+    "7.94.0",
+    "7.93.0"
+  ];
+  fullPath: "nmap.org";
+}

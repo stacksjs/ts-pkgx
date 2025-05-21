@@ -18,3 +18,18 @@ export const moderncorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "modernc.org"
 }
+
+export interface ModerncorgPackage {
+  name: "modernc.org";
+  domain: "modernc.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx modernc.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "modernc.org";
+}

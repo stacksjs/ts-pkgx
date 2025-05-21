@@ -18,3 +18,18 @@ export const kornelskiPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "kornel.ski"
 }
+
+export interface KornelskiPackage {
+  name: "kornel.ski";
+  domain: "kornel.ski";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx kornel.ski";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "kornel.ski";
+}

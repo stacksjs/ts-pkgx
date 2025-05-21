@@ -62,3 +62,62 @@ export const anchorecomsyftPackage: PkgxPackage = {
     "syft"
   ]
 }
+
+export interface AnchorecomsyftPackage {
+  name: "syft";
+  domain: "anchore.com/syft";
+  description: "CLI tool and library for generating a Software Bill of Materials from container images and filesystems";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/anchore.com/syft/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) syft";
+  programs: readonly [
+    "syft"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.9.0",
+    "1.8.0",
+    "1.7.0",
+    "1.6.0",
+    "1.5.0",
+    "1.4.1",
+    "1.4.0",
+    "1.3.0",
+    "1.26.0",
+    "1.25.1",
+    "1.25.0",
+    "1.24.0",
+    "1.23.1",
+    "1.23.0",
+    "1.22.0",
+    "1.21.0",
+    "1.20.0",
+    "1.2.0",
+    "1.19.0",
+    "1.18.1",
+    "1.18.0",
+    "1.17.0",
+    "1.16.0",
+    "1.15.0",
+    "1.14.2",
+    "1.14.1",
+    "1.14.0",
+    "1.13.0",
+    "1.12.2",
+    "1.11.1",
+    "1.11.0",
+    "1.10.0",
+    "1.1.1",
+    "1.1.0",
+    "1.0.1",
+    "1.0.0",
+    "0.105.1",
+    "0.105.0"
+  ];
+  fullPath: "anchore.com/syft";
+  aliases: readonly [
+    "syft"
+  ];
+}

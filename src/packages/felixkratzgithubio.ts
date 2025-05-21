@@ -18,3 +18,18 @@ export const felixkratzgithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "felixkratz.github.io"
 }
+
+export interface FelixkratzgithubioPackage {
+  name: "felixkratz.github.io";
+  domain: "felixkratz.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx felixkratz.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "felixkratz.github.io";
+}

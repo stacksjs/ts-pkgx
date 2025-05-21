@@ -18,3 +18,18 @@ export const sfnetPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "sf.net"
 }
+
+export interface SfnetPackage {
+  name: "sf.net";
+  domain: "sf.net";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx sf.net";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "sf.net";
+}

@@ -36,3 +36,36 @@ export const postgrestorgPackage: PkgxPackage = {
   ],
   "fullPath": "postgrest.org"
 }
+
+export interface PostgrestorgPackage {
+  name: "postgrest";
+  domain: "postgrest.org";
+  description: "Serves a fully RESTful API from any existing PostgreSQL database";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/postgrest.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) postgrest";
+  programs: readonly [
+    "postgrest"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "postgresql.org/libpq@17",
+    "zlib.net~1.3",
+    "gnu.org/gcc/libstdcxx@14"
+  ];
+  versions: readonly [
+    "13.0.0",
+    "12.2.9",
+    "12.2.8",
+    "12.2.7",
+    "12.2.6",
+    "12.2.5",
+    "12.2.4",
+    "12.2.3",
+    "12.2.12",
+    "12.2.11",
+    "12.2.10"
+  ];
+  fullPath: "postgrest.org";
+}

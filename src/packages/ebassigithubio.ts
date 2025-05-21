@@ -18,3 +18,18 @@ export const ebassigithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "ebassi.github.io"
 }
+
+export interface EbassigithubioPackage {
+  name: "ebassi.github.io";
+  domain: "ebassi.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx ebassi.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "ebassi.github.io";
+}

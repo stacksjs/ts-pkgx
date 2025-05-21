@@ -40,3 +40,40 @@ export const jumppaddevPackage: PkgxPackage = {
   ],
   "fullPath": "jumppad.dev"
 }
+
+export interface JumppaddevPackage {
+  name: "jumppad";
+  domain: "jumppad.dev";
+  description: "Modern cloud native development environments";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jumppad.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) jumppad";
+  programs: readonly [
+    "jumppad"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.20.0",
+    "0.19.0",
+    "0.18.1",
+    "0.18.0",
+    "0.17.1",
+    "0.17.0",
+    "0.16.1",
+    "0.16.0",
+    "0.15.0",
+    "0.14.0",
+    "0.13.3",
+    "0.13.2",
+    "0.13.1",
+    "0.13.0",
+    "0.12.1",
+    "0.12.0",
+    "0.11.2",
+    "0.11.1",
+    "0.11.0"
+  ];
+  fullPath: "jumppad.dev";
+}

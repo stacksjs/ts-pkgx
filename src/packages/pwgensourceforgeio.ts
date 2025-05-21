@@ -22,3 +22,22 @@ export const pwgensourceforgeioPackage: PkgxPackage = {
   ],
   "fullPath": "pwgen.sourceforge.io"
 }
+
+export interface PwgensourceforgeioPackage {
+  name: "pwgen";
+  domain: "pwgen.sourceforge.io";
+  description: "Password generator";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pwgen.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) pwgen";
+  programs: readonly [
+    "pwgen"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.8.0"
+  ];
+  fullPath: "pwgen.sourceforge.io";
+}

@@ -18,3 +18,18 @@ export const riverbankcomputingcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "riverbankcomputing.com"
 }
+
+export interface RiverbankcomputingcomPackage {
+  name: "riverbankcomputing.com";
+  domain: "riverbankcomputing.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx riverbankcomputing.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "riverbankcomputing.com";
+}

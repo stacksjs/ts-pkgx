@@ -74,3 +74,74 @@ export const huggingfacecoPackage: PkgxPackage = {
     "huggingface/cli"
   ]
 }
+
+export interface HuggingfacecoPackage {
+  name: "huggingface/cli";
+  domain: "huggingface.co";
+  description: "The official Python client for the Huggingface Hub.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/huggingface.co/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) huggingface-cli";
+  programs: readonly [
+    "huggingface-cli"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "0.31.4",
+    "0.31.2",
+    "0.31.0",
+    "0.30.2",
+    "0.30.1",
+    "0.30.0",
+    "0.29.3",
+    "0.29.2",
+    "0.29.1",
+    "0.29.0",
+    "0.28.1",
+    "0.28.0",
+    "0.27.1",
+    "0.27.0",
+    "0.26.5",
+    "0.26.3",
+    "0.26.2",
+    "0.26.1",
+    "0.26.0",
+    "0.25.2",
+    "0.25.1",
+    "0.25.0",
+    "0.24.7",
+    "0.24.6",
+    "0.24.5",
+    "0.24.4",
+    "0.24.3",
+    "0.24.2",
+    "0.24.1",
+    "0.24.0",
+    "0.23.5",
+    "0.23.4",
+    "0.23.3",
+    "0.23.2",
+    "0.23.1",
+    "0.23.0",
+    "0.22.2",
+    "0.22.1",
+    "0.22.0",
+    "0.21.4",
+    "0.21.3",
+    "0.21.2",
+    "0.21.0",
+    "0.20.3",
+    "0.20.2",
+    "0.20.1",
+    "0.20.0",
+    "0.19.4"
+  ];
+  fullPath: "huggingface.co";
+  aliases: readonly [
+    "huggingface/cli"
+  ];
+}

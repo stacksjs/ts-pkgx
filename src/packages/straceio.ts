@@ -22,3 +22,22 @@ export const straceioPackage: PkgxPackage = {
   ],
   "fullPath": "strace.io"
 }
+
+export interface StraceioPackage {
+  name: "strace";
+  domain: "strace.io";
+  description: "strace is a diagnostic, debugging and instructional userspace utility for Linux";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/strace.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) strace";
+  programs: readonly [
+    "strace"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "6.2.0"
+  ];
+  fullPath: "strace.io";
+}

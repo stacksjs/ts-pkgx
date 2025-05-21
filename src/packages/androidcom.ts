@@ -18,3 +18,18 @@ export const androidcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "android.com"
 }
+
+export interface AndroidcomPackage {
+  name: "android.com";
+  domain: "android.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx android.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "android.com";
+}

@@ -18,3 +18,18 @@ export const awsamazoncomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "aws.amazon.com"
 }
+
+export interface AwsamazoncomPackage {
+  name: "aws.amazon.com";
+  domain: "aws.amazon.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx aws.amazon.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "aws.amazon.com";
+}

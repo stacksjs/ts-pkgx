@@ -32,3 +32,32 @@ export const lunarvimorgPackage: PkgxPackage = {
   ],
   "fullPath": "lunarvim.org"
 }
+
+export interface LunarvimorgPackage {
+  name: "lunarvim.org";
+  domain: "lunarvim.org";
+  description: "🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lunarvim.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +lunarvim.org -- $SHELL -i";
+  programs: readonly [
+    "lvim",
+    "nvim"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/bash",
+    "crates.io/fd-find",
+    "pip.pypa.io",
+    "python.org^3",
+    "nodejs.org",
+    "rust-lang.org/cargo",
+    "neovim.io"
+  ];
+  versions: readonly [
+    "1.4.0",
+    "1.3.0"
+  ];
+  fullPath: "lunarvim.org";
+}

@@ -18,3 +18,18 @@ export const palletsprojectscomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "palletsprojects.com"
 }
+
+export interface PalletsprojectscomPackage {
+  name: "palletsprojects.com";
+  domain: "palletsprojects.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx palletsprojects.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "palletsprojects.com";
+}

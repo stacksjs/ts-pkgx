@@ -26,3 +26,26 @@ export const dhalllangorgPackage: PkgxPackage = {
   ],
   "fullPath": "dhall-lang.org"
 }
+
+export interface DhalllangorgPackage {
+  name: "dhall";
+  domain: "dhall-lang.org";
+  description: "Interpreter for the Dhall language";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dhall-lang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) dhall";
+  programs: readonly [
+    "dhall"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "invisible-island.net/ncurses^6.4",
+    "zlib.net^1.3"
+  ];
+  versions: readonly [
+    "1.42.2",
+    "1.42.1"
+  ];
+  fullPath: "dhall-lang.org";
+}

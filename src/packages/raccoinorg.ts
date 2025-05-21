@@ -26,3 +26,26 @@ export const raccoinorgPackage: PkgxPackage = {
   ],
   "fullPath": "raccoin.org"
 }
+
+export interface RaccoinorgPackage {
+  name: "raccoin";
+  domain: "raccoin.org";
+  description: "Crypto Portfolio and Tax Reporting Tool";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/raccoin.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) raccoin";
+  programs: readonly [
+    "raccoin"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/libiconv^1",
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "0.2.0",
+    "0.1.0"
+  ];
+  fullPath: "raccoin.org";
+}

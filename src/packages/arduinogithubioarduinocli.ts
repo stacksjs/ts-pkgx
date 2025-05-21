@@ -44,3 +44,44 @@ export const arduinogithubioarduinocliPackage: PkgxPackage = {
     "arduino-cli"
   ]
 }
+
+export interface ArduinogithubioarduinocliPackage {
+  name: "arduino-cli";
+  domain: "arduino.github.io/arduino-cli";
+  description: "Arduino command-line interface";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/arduino.github.io/arduino-cli/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) arduino-cli";
+  programs: readonly [
+    "arduino-cli"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.2.2",
+    "1.2.0",
+    "1.1.1",
+    "1.1.0",
+    "1.0.4",
+    "1.0.3",
+    "1.0.2",
+    "1.0.1",
+    "1.0.0",
+    "0.35.3",
+    "0.35.2",
+    "0.35.1",
+    "0.35.0",
+    "0.34.2",
+    "0.34.1",
+    "0.34.0",
+    "0.33.1",
+    "0.33.0",
+    "0.32.3",
+    "0.32.2"
+  ];
+  fullPath: "arduino.github.io/arduino-cli";
+  aliases: readonly [
+    "arduino-cli"
+  ];
+}

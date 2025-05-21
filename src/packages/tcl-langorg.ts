@@ -36,3 +36,36 @@ export const tcllangorgPackage: PkgxPackage = {
   ],
   "fullPath": "tcl-lang.org"
 }
+
+export interface TcllangorgPackage {
+  name: "tcl-lang.org";
+  domain: "tcl-lang.org";
+  description: "Tool Command Language";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +tcl-lang.org -- $SHELL -i";
+  programs: readonly [
+    "tclsh",
+    "wish",
+    "critcl"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1",
+    "zlib.net^1.3",
+    "freetype.org^2",
+    "freedesktop.org/pkg-config^0.29",
+    "x.org/x11=1.8.11",
+    "x.org/exts^1"
+  ];
+  versions: readonly [
+    "9.0.1",
+    "9.0.0",
+    "8.6.16",
+    "8.6.15",
+    "8.6.14",
+    "8.6.13"
+  ];
+  fullPath: "tcl-lang.org";
+}

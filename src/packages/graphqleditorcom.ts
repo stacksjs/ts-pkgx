@@ -18,3 +18,18 @@ export const graphqleditorcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "graphqleditor.com"
 }
+
+export interface GraphqleditorcomPackage {
+  name: "graphqleditor.com";
+  domain: "graphqleditor.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx graphqleditor.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "graphqleditor.com";
+}

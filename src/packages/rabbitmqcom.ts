@@ -64,3 +64,64 @@ export const rabbitmqcomPackage: PkgxPackage = {
   ],
   "fullPath": "rabbitmq.com"
 }
+
+export interface RabbitmqcomPackage {
+  name: "rabbitmq.com";
+  domain: "rabbitmq.com";
+  description: "Open source RabbitMQ: core server and tier 1 (built-in) plugins";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rabbitmq.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +rabbitmq.com -- $SHELL -i";
+  programs: readonly [
+    "rabbitmqctl",
+    "rabbitmq-defaults",
+    "rabbitmq-diagnostics",
+    "rabbitmq-env",
+    "rabbitmq-plugins",
+    "rabbitmq-queues",
+    "rabbitmq-server",
+    "rabbitmq-streams",
+    "rabbitmq-upgrade",
+    "vmware-rabbitmq"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "erlang.org"
+  ];
+  versions: readonly [
+    "4.1.0",
+    "4.0.9",
+    "4.0.8",
+    "4.0.7",
+    "4.0.6",
+    "4.0.5",
+    "4.0.4",
+    "4.0.3",
+    "4.0.2",
+    "4.0.1",
+    "4.0.0",
+    "3.13.7",
+    "3.13.6",
+    "3.13.5",
+    "3.13.4",
+    "3.13.3",
+    "3.13.2",
+    "3.13.1",
+    "3.13.0",
+    "3.12.9",
+    "3.12.8",
+    "3.12.7",
+    "3.12.6",
+    "3.12.14",
+    "3.12.13",
+    "3.12.12",
+    "3.12.11",
+    "3.12.10",
+    "3.11.28",
+    "3.11.26",
+    "3.11.25",
+    "3.11.24"
+  ];
+  fullPath: "rabbitmq.com";
+}

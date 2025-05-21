@@ -18,3 +18,18 @@ export const sasslangcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "sass-lang.com"
 }
+
+export interface SasslangcomPackage {
+  name: "sass-lang.com";
+  domain: "sass-lang.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx sass-lang.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "sass-lang.com";
+}

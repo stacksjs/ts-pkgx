@@ -20,3 +20,20 @@ export const opencoreamrsourceforgeioPackage: PkgxPackage = {
   ],
   "fullPath": "opencore-amr.sourceforge.io"
 }
+
+export interface OpencoreamrsourceforgeioPackage {
+  name: "opencore-amr.sourceforge.io";
+  domain: "opencore-amr.sourceforge.io";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/opencore-amr.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +opencore-amr.sourceforge.io -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.1.6"
+  ];
+  fullPath: "opencore-amr.sourceforge.io";
+}

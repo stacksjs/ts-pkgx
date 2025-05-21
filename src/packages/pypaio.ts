@@ -18,3 +18,18 @@ export const pypaioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "pypa.io"
 }
+
+export interface PypaioPackage {
+  name: "pypa.io";
+  domain: "pypa.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx pypa.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "pypa.io";
+}

@@ -28,3 +28,28 @@ export const voltashPackage: PkgxPackage = {
   ],
   "fullPath": "volta.sh"
 }
+
+export interface VoltashPackage {
+  name: "volta";
+  domain: "volta.sh";
+  description: "JavaScript toolchain manager for reproducible environments";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/volta.sh/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) volta";
+  programs: readonly [
+    "volta"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "linuxcurl.se/ca-certs",
+    "curl.se/ca-certs"
+  ];
+  versions: readonly [
+    "2.0.2",
+    "2.0.1",
+    "2.0.0",
+    "1.1.1"
+  ];
+  fullPath: "volta.sh";
+}

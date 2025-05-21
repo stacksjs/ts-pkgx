@@ -18,3 +18,18 @@ export const jedisct1githubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "jedisct1.github.io"
 }
+
+export interface Jedisct1githubioPackage {
+  name: "jedisct1.github.io";
+  domain: "jedisct1.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx jedisct1.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "jedisct1.github.io";
+}

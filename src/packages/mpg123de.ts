@@ -33,3 +33,33 @@ export const mpg123dePackage: PkgxPackage = {
   ],
   "fullPath": "mpg123.de"
 }
+
+export interface Mpg123dePackage {
+  name: "mpg123";
+  domain: "mpg123.de";
+  description: "MP3 player for Linux and UNIX";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mpg123.de/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) mpg123";
+  programs: readonly [
+    "mpg123"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.32.9",
+    "1.32.8",
+    "1.32.7",
+    "1.32.6",
+    "1.32.5",
+    "1.32.4",
+    "1.32.3",
+    "1.32.2",
+    "1.32.10",
+    "1.32.1",
+    "1.32.0",
+    "1.31.2"
+  ];
+  fullPath: "mpg123.de";
+}

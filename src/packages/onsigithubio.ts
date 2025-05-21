@@ -18,3 +18,18 @@ export const onsigithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "onsi.github.io"
 }
+
+export interface OnsigithubioPackage {
+  name: "onsi.github.io";
+  domain: "onsi.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx onsi.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "onsi.github.io";
+}

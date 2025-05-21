@@ -33,3 +33,33 @@ export const amberlangcomPackage: PkgxPackage = {
   ],
   "fullPath": "amber-lang.com"
 }
+
+export interface AmberlangcomPackage {
+  name: "amber";
+  domain: "amber-lang.com";
+  description: "Crystal web framework. Bare metal performance, productivity and happiness";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/amber-lang.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) amber";
+  programs: readonly [
+    "amber"
+  ];
+  companions: readonly [
+    "gnu.org/bc",
+    "gnu.org/sed",
+    "gnu.org/coreutils",
+    "gnu.org/gawk",
+    "gnu.org/bash"
+  ];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.4.0",
+    "0.3.5",
+    "0.3.4",
+    "0.3.3",
+    "0.3.2",
+    "0.3.1"
+  ];
+  fullPath: "amber-lang.com";
+}

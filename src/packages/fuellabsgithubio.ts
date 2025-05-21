@@ -18,3 +18,18 @@ export const fuellabsgithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "fuellabs.github.io"
 }
+
+export interface FuellabsgithubioPackage {
+  name: "fuellabs.github.io";
+  domain: "fuellabs.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx fuellabs.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "fuellabs.github.io";
+}

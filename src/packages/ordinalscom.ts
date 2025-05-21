@@ -25,3 +25,25 @@ export const ordinalscomPackage: PkgxPackage = {
   ],
   "fullPath": "ordinals.com"
 }
+
+export interface OrdinalscomPackage {
+  name: "ord";
+  domain: "ordinals.com";
+  description: "Index, block explorer, and command-line wallet";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ordinals.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) ord";
+  programs: readonly [
+    "ord"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.6.1",
+    "0.6.0",
+    "0.5.1",
+    "0.5.0"
+  ];
+  fullPath: "ordinals.com";
+}

@@ -36,3 +36,36 @@ export const pythonpilloworgPackage: PkgxPackage = {
   ],
   "fullPath": "python-pillow.org"
 }
+
+export interface PythonpilloworgPackage {
+  name: "python-pillow.org";
+  domain: "python-pillow.org";
+  description: "Python Imaging Library (Fork)";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/python-pillow.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +python-pillow.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "libjpeg-turbo.org^2",
+    "pngquant.org/lib^4",
+    "simplesystems.org/libtiff^4",
+    "x.org/xcb^1",
+    "littlecms.com^2",
+    "openjpeg.org^2",
+    "tcl.tk/tcl^8",
+    "google.com/webp^1",
+    "zlib.net^1",
+    "python.org~3.12"
+  ];
+  versions: readonly [
+    "11.2.1",
+    "11.1.0",
+    "11.0.0",
+    "10.4.0",
+    "10.3.0",
+    "10.2.0"
+  ];
+  fullPath: "python-pillow.org";
+}

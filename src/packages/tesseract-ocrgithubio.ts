@@ -35,3 +35,35 @@ export const tesseractocrgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "tesseract-ocr.github.io"
 }
+
+export interface TesseractocrgithubioPackage {
+  name: "tesseract";
+  domain: "tesseract-ocr.github.io";
+  description: "Tesseract Open Source OCR Engine (main repository)";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tesseract-ocr.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) tesseract";
+  programs: readonly [
+    "tesseract"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "cairographics.org@1",
+    "unicode.org@71",
+    "leptonica.org",
+    "libarchive.org",
+    "gnome.org/pango@1"
+  ];
+  versions: readonly [
+    "5.5.0",
+    "5.4.1",
+    "5.4.0",
+    "5.3.4",
+    "5.3.3",
+    "5.3.2",
+    "5.3.1",
+    "5.3.0"
+  ];
+  fullPath: "tesseract-ocr.github.io";
+}

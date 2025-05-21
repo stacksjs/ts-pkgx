@@ -37,3 +37,37 @@ export const lxmldePackage: PkgxPackage = {
   ],
   "fullPath": "lxml.de"
 }
+
+export interface LxmldePackage {
+  name: "lxml.de";
+  domain: "lxml.de";
+  description: "The lxml XML toolkit for Python";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lxml.de/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +lxml.de -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org^3.10",
+    "gnome.org/libxml2~2.12",
+    "gnome.org/libxslt^1"
+  ];
+  versions: readonly [
+    "5.4.0",
+    "5.3.2",
+    "5.3.1",
+    "5.3.0",
+    "5.2.2",
+    "5.2.1",
+    "5.2.0",
+    "5.1.1",
+    "5.1.0",
+    "5.0.2",
+    "5.0.1",
+    "5.0.0",
+    "4.9.4",
+    "4.9.3"
+  ];
+  fullPath: "lxml.de";
+}

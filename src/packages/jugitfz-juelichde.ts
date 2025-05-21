@@ -18,3 +18,18 @@ export const jugitfzjuelichdePackage: PkgxPackage = {
   "versions": [],
   "fullPath": "jugit.fz-juelich.de"
 }
+
+export interface JugitfzjuelichdePackage {
+  name: "jugit.fz-juelich.de";
+  domain: "jugit.fz-juelich.de";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx jugit.fz-juelich.de";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "jugit.fz-juelich.de";
+}

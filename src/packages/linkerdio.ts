@@ -18,3 +18,18 @@ export const linkerdioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "linkerd.io"
 }
+
+export interface LinkerdioPackage {
+  name: "linkerd.io";
+  domain: "linkerd.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx linkerd.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "linkerd.io";
+}

@@ -34,3 +34,34 @@ export const apacheorgavroPackage: PkgxPackage = {
     "avro"
   ]
 }
+
+export interface ApacheorgavroPackage {
+  name: "avro";
+  domain: "apache.org/avro";
+  description: "Apache Avro is a data serialization system.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/avro/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +apache.org/avro -- $SHELL -i";
+  programs: readonly [
+    "avroappend",
+    "avrocat",
+    "avromod",
+    "avropipe"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "digip.org/jansson",
+    "google.github.io/snappy",
+    "tukaani.org/xz",
+    "zlib.net"
+  ];
+  versions: readonly [
+    "1.12.0",
+    "1.11.3"
+  ];
+  fullPath: "apache.org/avro";
+  aliases: readonly [
+    "avro"
+  ];
+}

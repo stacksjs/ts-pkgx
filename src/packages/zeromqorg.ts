@@ -21,3 +21,21 @@ export const zeromqorgPackage: PkgxPackage = {
   ],
   "fullPath": "zeromq.org"
 }
+
+export interface ZeromqorgPackage {
+  name: "zeromq.org";
+  domain: "zeromq.org";
+  description: "ZeroMQ core engine in C++, implements ZMTP/3.1";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/zeromq.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +zeromq.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "4.3.5",
+    "4.3.4"
+  ];
+  fullPath: "zeromq.org";
+}

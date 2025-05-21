@@ -30,3 +30,30 @@ export const asciidoctororgPackage: PkgxPackage = {
   ],
   "fullPath": "asciidoctor.org"
 }
+
+export interface AsciidoctororgPackage {
+  name: "asciidoctor";
+  domain: "asciidoctor.org";
+  description: ":gem: A fast, open source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/asciidoctor.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) asciidoctor";
+  programs: readonly [
+    "asciidoctor"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "ruby-lang.org^3.1",
+    "rubygems.org"
+  ];
+  versions: readonly [
+    "2.0.23",
+    "2.0.22",
+    "2.0.21",
+    "2.0.20",
+    "2.0.19",
+    "2.0.18"
+  ];
+  fullPath: "asciidoctor.org";
+}

@@ -18,3 +18,18 @@ export const cratesioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "crates.io"
 }
+
+export interface CratesioPackage {
+  name: "crates.io";
+  domain: "crates.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx crates.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "crates.io";
+}

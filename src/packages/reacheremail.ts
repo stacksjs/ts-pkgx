@@ -18,3 +18,18 @@ export const reacheremailPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "reacher.email"
 }
+
+export interface ReacheremailPackage {
+  name: "reacher.email";
+  domain: "reacher.email";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx reacher.email";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "reacher.email";
+}

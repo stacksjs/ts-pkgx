@@ -24,3 +24,24 @@ export const replibytecomPackage: PkgxPackage = {
   ],
   "fullPath": "replibyte.com"
 }
+
+export interface ReplibytecomPackage {
+  name: "replibyte";
+  domain: "replibyte.com";
+  description: "Seed your development database with real data ⚡️";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/replibyte.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) replibyte";
+  programs: readonly [
+    "replibyte"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "0.10.0"
+  ];
+  fullPath: "replibyte.com";
+}

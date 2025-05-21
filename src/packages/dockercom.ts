@@ -18,3 +18,18 @@ export const dockercomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "docker.com"
 }
+
+export interface DockercomPackage {
+  name: "docker.com";
+  domain: "docker.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx docker.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "docker.com";
+}

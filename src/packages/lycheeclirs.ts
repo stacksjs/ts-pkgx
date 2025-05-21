@@ -28,3 +28,28 @@ export const lycheeclirsPackage: PkgxPackage = {
   ],
   "fullPath": "lychee.cli.rs"
 }
+
+export interface LycheeclirsPackage {
+  name: "lychee";
+  domain: "lychee.cli.rs";
+  description: "⚡ Fast, async, stream-based link checker written in Rust. Finds broken URLs and mail addresses inside Markdown, HTML, reStructuredText, websites and more!";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lychee.cli.rs/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) lychee";
+  programs: readonly [
+    "lychee"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org>=1.1"
+  ];
+  versions: readonly [
+    "0.15.1",
+    "0.15.0",
+    "0.14.3",
+    "0.14.2",
+    "0.14.1"
+  ];
+  fullPath: "lychee.cli.rs";
+}

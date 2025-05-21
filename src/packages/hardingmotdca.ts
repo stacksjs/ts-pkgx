@@ -18,3 +18,18 @@ export const hardingmotdcaPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "harding.motd.ca"
 }
+
+export interface HardingmotdcaPackage {
+  name: "harding.motd.ca";
+  domain: "harding.motd.ca";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx harding.motd.ca";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "harding.motd.ca";
+}

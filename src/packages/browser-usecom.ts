@@ -33,3 +33,33 @@ export const browserusecomPackage: PkgxPackage = {
   ],
   "fullPath": "browser-use.com"
 }
+
+export interface BrowserusecomPackage {
+  name: "browser-use.com";
+  domain: "browser-use.com";
+  description: "Make websites accessible for AI agents";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/browser-use.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +browser-use.com -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org~3.12"
+  ];
+  versions: readonly [
+    "0.1.48",
+    "0.1.47",
+    "0.1.46",
+    "0.1.45",
+    "0.1.44",
+    "0.1.43",
+    "0.1.42",
+    "0.1.41",
+    "0.1.40",
+    "0.1.39",
+    "0.1.38",
+    "0.1.37"
+  ];
+  fullPath: "browser-use.com";
+}

@@ -18,3 +18,18 @@ export const orhundevPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "orhun.dev"
 }
+
+export interface OrhundevPackage {
+  name: "orhun.dev";
+  domain: "orhun.dev";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx orhun.dev";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "orhun.dev";
+}

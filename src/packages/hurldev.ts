@@ -34,3 +34,34 @@ export const hurldevPackage: PkgxPackage = {
   ],
   "fullPath": "hurl.dev"
 }
+
+export interface HurldevPackage {
+  name: "hurl";
+  domain: "hurl.dev";
+  description: "Run and Test HTTP Requests with plain text and curl";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/hurl.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +hurl.dev -- $SHELL -i";
+  programs: readonly [
+    "hurl",
+    "hurlfmt"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnome.org/libxml2",
+    "curl.se"
+  ];
+  versions: readonly [
+    "6.1.1",
+    "6.1.0",
+    "6.0.0",
+    "5.0.1",
+    "5.0.0",
+    "4.3.0",
+    "4.2.0",
+    "4.1.0",
+    "4.0.0"
+  ];
+  fullPath: "hurl.dev";
+}

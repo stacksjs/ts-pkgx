@@ -18,3 +18,18 @@ export const rwosorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "r-wos.org"
 }
+
+export interface RwosorgPackage {
+  name: "r-wos.org";
+  domain: "r-wos.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx r-wos.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "r-wos.org";
+}

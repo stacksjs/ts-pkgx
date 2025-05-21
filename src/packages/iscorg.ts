@@ -18,3 +18,18 @@ export const iscorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "isc.org"
 }
+
+export interface IscorgPackage {
+  name: "isc.org";
+  domain: "isc.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx isc.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "isc.org";
+}

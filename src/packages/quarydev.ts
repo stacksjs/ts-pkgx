@@ -18,3 +18,18 @@ export const quarydevPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "quary.dev"
 }
+
+export interface QuarydevPackage {
+  name: "quary.dev";
+  domain: "quary.dev";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx quary.dev";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "quary.dev";
+}

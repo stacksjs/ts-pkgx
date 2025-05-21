@@ -32,3 +32,32 @@ export const littlecmscomPackage: PkgxPackage = {
   ],
   "fullPath": "littlecms.com"
 }
+
+export interface LittlecmscomPackage {
+  name: "littlecms.com";
+  domain: "littlecms.com";
+  description: "A free, open source, CMM engine. It provides fast transforms between ICC profiles.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/littlecms.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +littlecms.com -- $SHELL -i";
+  programs: readonly [
+    "jpgicc",
+    "linkicc",
+    "psicc",
+    "tificc",
+    "transicc"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "simplesystems.org/libtiff^4",
+    "libjpeg-turbo.org^2"
+  ];
+  versions: readonly [
+    "2.17.0",
+    "2.16.0",
+    "2.15.0",
+    "2.12.0"
+  ];
+  fullPath: "littlecms.com";
+}

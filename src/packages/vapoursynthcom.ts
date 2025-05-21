@@ -37,3 +37,37 @@ export const vapoursynthcomPackage: PkgxPackage = {
     "vspipe"
   ]
 }
+
+export interface VapoursynthcomPackage {
+  name: "vspipe";
+  domain: "vapoursynth.com";
+  description: "A video processing framework with simplicity in mind";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vapoursynth.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) vspipe";
+  programs: readonly [
+    "vspipe"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org~3.11",
+    "github.com/sekrit-twc/zimg",
+    "linuxgnu.org/gcc/libstdcxx",
+    "gnu.org/gcc/libstdcxx"
+  ];
+  versions: readonly [
+    "71.0.0",
+    "70.0.0",
+    "69.0.0",
+    "68.0.0",
+    "67.0.0",
+    "66.0.0",
+    "65.0.0",
+    "64.0.0"
+  ];
+  fullPath: "vapoursynth.com";
+  aliases: readonly [
+    "vspipe"
+  ];
+}

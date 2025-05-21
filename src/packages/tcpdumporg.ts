@@ -26,3 +26,26 @@ export const tcpdumporgPackage: PkgxPackage = {
     "pcap-config"
   ]
 }
+
+export interface TcpdumporgPackage {
+  name: "pcap-config";
+  domain: "tcpdump.org";
+  description: "the LIBpcap interface to various kernel packet capture mechanism";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tcpdump.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) pcap-config";
+  programs: readonly [
+    "pcap-config"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.10.5",
+    "1.10.4"
+  ];
+  fullPath: "tcpdump.org";
+  aliases: readonly [
+    "pcap-config"
+  ];
+}

@@ -24,3 +24,24 @@ export const opuscodecorgPackage: PkgxPackage = {
   ],
   "fullPath": "opus-codec.org"
 }
+
+export interface OpuscodecorgPackage {
+  name: "opus-codec.org";
+  domain: "opus-codec.org";
+  description: "Modern audio compression for the internet.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/opus-codec.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +opus-codec.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.5.2",
+    "1.5.1",
+    "1.5.0",
+    "1.4.0",
+    "1.3.1"
+  ];
+  fullPath: "opus-codec.org";
+}

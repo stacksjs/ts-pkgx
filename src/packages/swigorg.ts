@@ -29,3 +29,29 @@ export const swigorgPackage: PkgxPackage = {
   ],
   "fullPath": "swig.org"
 }
+
+export interface SwigorgPackage {
+  name: "swig.org";
+  domain: "swig.org";
+  description: "SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/swig.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +swig.org -- $SHELL -i";
+  programs: readonly [
+    "swig",
+    "ccache-swig"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pcre.org/v2"
+  ];
+  versions: readonly [
+    "4.3.1",
+    "4.3.0",
+    "4.2.1",
+    "4.2.0",
+    "4.1.1"
+  ];
+  fullPath: "swig.org";
+}

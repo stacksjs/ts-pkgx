@@ -31,3 +31,31 @@ export const numbatdevPackage: PkgxPackage = {
   ],
   "fullPath": "numbat.dev"
 }
+
+export interface NumbatdevPackage {
+  name: "numbat";
+  domain: "numbat.dev";
+  description: "A statically typed programming language for scientific computations with first class support for physical dimensions and units";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/numbat.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) numbat";
+  programs: readonly [
+    "numbat"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.9.0",
+    "1.8.0",
+    "1.16.0",
+    "1.15.0",
+    "1.14.0",
+    "1.13.0",
+    "1.12.0",
+    "1.11.0",
+    "1.10.1",
+    "1.10.0"
+  ];
+  fullPath: "numbat.dev";
+}

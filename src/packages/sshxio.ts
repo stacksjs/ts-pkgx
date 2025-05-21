@@ -24,3 +24,24 @@ export const sshxioPackage: PkgxPackage = {
   ],
   "fullPath": "sshx.io"
 }
+
+export interface SshxioPackage {
+  name: "sshx";
+  domain: "sshx.io";
+  description: "Fast, collaborative live terminal sharing over the web";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sshx.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) sshx";
+  programs: readonly [
+    "sshx"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "protobuf.dev"
+  ];
+  versions: readonly [
+    "2023.11.14"
+  ];
+  fullPath: "sshx.io";
+}

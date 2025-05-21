@@ -37,3 +37,37 @@ export const agptcoPackage: PkgxPackage = {
     "auto-gpt"
   ]
 }
+
+export interface AgptcoPackage {
+  name: "Auto-GPT";
+  domain: "agpt.co";
+  description: "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/agpt.co/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) auto-gpt";
+  programs: readonly [
+    "auto-gpt"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3.10<3.12",
+    "redis.io^7",
+    "tea.xyz^0"
+  ];
+  versions: readonly [
+    "0.4.7",
+    "0.4.6",
+    "0.4.5",
+    "0.4.4",
+    "0.4.3",
+    "0.4.2",
+    "0.4.0",
+    "0.3.1",
+    "0.3.0"
+  ];
+  fullPath: "agpt.co";
+  aliases: readonly [
+    "auto-gpt"
+  ];
+}

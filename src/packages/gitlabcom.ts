@@ -18,3 +18,18 @@ export const gitlabcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "gitlab.com"
 }
+
+export interface GitlabcomPackage {
+  name: "gitlab.com";
+  domain: "gitlab.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx gitlab.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "gitlab.com";
+}

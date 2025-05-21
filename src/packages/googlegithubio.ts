@@ -18,3 +18,18 @@ export const googlegithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "google.github.io"
 }
+
+export interface GooglegithubioPackage {
+  name: "google.github.io";
+  domain: "google.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx google.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "google.github.io";
+}

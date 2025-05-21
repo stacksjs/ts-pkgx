@@ -29,3 +29,29 @@ export const mcmcjagssourceforgeioPackage: PkgxPackage = {
     "jags"
   ]
 }
+
+export interface McmcjagssourceforgeioPackage {
+  name: "jags";
+  domain: "mcmc-jags.sourceforge.io";
+  description: "Just Another Gibbs Sampler for Bayesian MCMC simulation";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mcmc-jags.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) jags";
+  programs: readonly [
+    "jags"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/gcc",
+    "linuxnetlib.org/lapack^3",
+    "netlib.org/lapack^3"
+  ];
+  versions: readonly [
+    "4.3.2"
+  ];
+  fullPath: "mcmc-jags.sourceforge.io";
+  aliases: readonly [
+    "jags"
+  ];
+}

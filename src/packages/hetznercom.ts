@@ -18,3 +18,18 @@ export const hetznercomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "hetzner.com"
 }
+
+export interface HetznercomPackage {
+  name: "hetzner.com";
+  domain: "hetzner.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx hetzner.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "hetzner.com";
+}

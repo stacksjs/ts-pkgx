@@ -35,3 +35,35 @@ export const openslideorgPackage: PkgxPackage = {
   ],
   "fullPath": "openslide.org"
 }
+
+export interface OpenslideorgPackage {
+  name: "openslide";
+  domain: "openslide.org";
+  description: "C library to read whole-slide images (a.k.a. virtual slides)";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openslide.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +openslide.org -- $SHELL -i";
+  programs: readonly [
+    "openslide-quickhash1sum",
+    "openslide-show-properties",
+    "openslide-write-png"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "cairographics.org",
+    "gnome.org/gdk-pixbuf",
+    "gnome.org/glib",
+    "libjpeg-turbo.org",
+    "libpng.org",
+    "simplesystems.org/libtiff",
+    "gnome.org/libxml2",
+    "openjpeg.org",
+    "sqlite.org"
+  ];
+  versions: readonly [
+    "4.0.0",
+    "3.4.1"
+  ];
+  fullPath: "openslide.org";
+}

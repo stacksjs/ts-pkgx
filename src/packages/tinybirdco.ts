@@ -22,3 +22,22 @@ export const tinybirdcoPackage: PkgxPackage = {
   ],
   "fullPath": "tinybird.co"
 }
+
+export interface TinybirdcoPackage {
+  name: "tinybird.co";
+  domain: "tinybird.co";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tinybird.co/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +tinybird.co -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "5.20.0"
+  ];
+  fullPath: "tinybird.co";
+}

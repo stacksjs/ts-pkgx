@@ -18,3 +18,18 @@ export const ivarchcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "ivarch.com"
 }
+
+export interface IvarchcomPackage {
+  name: "ivarch.com";
+  domain: "ivarch.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx ivarch.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "ivarch.com";
+}

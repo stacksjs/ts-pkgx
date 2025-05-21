@@ -32,3 +32,32 @@ export const ryeastralshPackage: PkgxPackage = {
   ],
   "fullPath": "rye.astral.sh"
 }
+
+export interface RyeastralshPackage {
+  name: "rye";
+  domain: "rye.astral.sh";
+  description: "Experimental Package Management Solution for Python";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rye.astral.sh/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) rye";
+  programs: readonly [
+    "rye"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "curl.se/ca-certs"
+  ];
+  versions: readonly [
+    "0.44.0",
+    "0.43.0",
+    "0.42.0",
+    "0.41.0",
+    "0.40.0",
+    "0.39.0",
+    "0.38.0",
+    "0.37.0",
+    "0.36.0"
+  ];
+  fullPath: "rye.astral.sh";
+}

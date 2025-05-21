@@ -41,3 +41,41 @@ export const libsouporgPackage: PkgxPackage = {
   ],
   "fullPath": "libsoup.org"
 }
+
+export interface LibsouporgPackage {
+  name: "libsoup.org";
+  domain: "libsoup.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libsoup.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libsoup.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnome.org/glib-networking",
+    "gnutls.org",
+    "rockdaboot.github.io/libpsl",
+    "kerberos.org",
+    "gnome.org/libxml2",
+    "sqlite.org",
+    "nghttp2.org",
+    "linuxgnu.org/gettextgnome.org/glibgithub.com/google/brotli",
+    "gnu.org/gettext",
+    "gnome.org/glib",
+    "github.com/google/brotli"
+  ];
+  versions: readonly [
+    "3.6.5",
+    "3.6.4",
+    "3.6.3",
+    "3.6.1",
+    "3.6.0",
+    "3.5.2",
+    "3.5.1",
+    "3.4.5",
+    "3.4.4",
+    "3.2.3"
+  ];
+  fullPath: "libsoup.org";
+}

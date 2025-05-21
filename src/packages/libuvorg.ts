@@ -29,3 +29,29 @@ export const libuvorgPackage: PkgxPackage = {
   ],
   "fullPath": "libuv.org"
 }
+
+export interface LibuvorgPackage {
+  name: "libuv.org";
+  domain: "libuv.org";
+  description: "Cross-platform asynchronous I/O";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libuv.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libuv.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.51.0",
+    "1.50.0",
+    "1.49.2",
+    "1.49.1",
+    "1.49.0",
+    "1.48.0",
+    "1.47.0",
+    "1.46.0",
+    "1.45.0",
+    "1.44.2"
+  ];
+  fullPath: "libuv.org";
+}

@@ -28,3 +28,28 @@ export const plocatesessenetPackage: PkgxPackage = {
   ],
   "fullPath": "plocate.sesse.net"
 }
+
+export interface PlocatesessenetPackage {
+  name: "plocate.sesse.net";
+  domain: "plocate.sesse.net";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/plocate.sesse.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +plocate.sesse.net -- $SHELL -i";
+  programs: readonly [
+    "plocate",
+    "plocate-build",
+    "updatedb"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "facebook.com/zstd@1",
+    "gnu.org/gcc/libstdcxx@14"
+  ];
+  versions: readonly [
+    "1.1.23",
+    "1.1.22"
+  ];
+  fullPath: "plocate.sesse.net";
+}

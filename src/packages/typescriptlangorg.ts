@@ -39,3 +39,39 @@ export const typescriptlangorgPackage: PkgxPackage = {
     "tsc"
   ]
 }
+
+export interface TypescriptlangorgPackage {
+  name: "tsc";
+  domain: "typescriptlang.org";
+  description: "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/typescriptlang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) tsc";
+  programs: readonly [
+    "tsc"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "nodejs.org^20"
+  ];
+  versions: readonly [
+    "5.8.3",
+    "5.8.2",
+    "5.7.3",
+    "5.7.2",
+    "5.6.3",
+    "5.6.2",
+    "5.5.4",
+    "5.5.3",
+    "5.5.2",
+    "5.4.5",
+    "5.4.4",
+    "5.4.3",
+    "5.4.2"
+  ];
+  fullPath: "typescriptlang.org";
+  aliases: readonly [
+    "tsc"
+  ];
+}

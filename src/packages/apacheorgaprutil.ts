@@ -26,3 +26,26 @@ export const apacheorgaprutilPackage: PkgxPackage = {
     "apr-util"
   ]
 }
+
+export interface ApacheorgaprutilPackage {
+  name: "apu-{{ version.major }}-config";
+  domain: "apache.org/apr-util";
+  description: "Mirror of Apache Portable Runtime util";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/apr-util/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) apu-{{ version.major }}-config";
+  programs: readonly [
+    "apu-{{ version.major }}-config"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.6.3"
+  ];
+  fullPath: "apache.org/apr-util";
+  aliases: readonly [
+    "apu-{{ version.major }}-config",
+    "apr-util"
+  ];
+}

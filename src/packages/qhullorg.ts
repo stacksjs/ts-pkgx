@@ -27,3 +27,27 @@ export const qhullorgPackage: PkgxPackage = {
   ],
   "fullPath": "qhull.org"
 }
+
+export interface QhullorgPackage {
+  name: "qhull.org";
+  domain: "qhull.org";
+  description: "Qhull development for www.qhull.org -- Qhull 2020.2 (8.1-alpha1) at https://github.com/qhull/qhull/wiki";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/qhull.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +qhull.org -- $SHELL -i";
+  programs: readonly [
+    "qconvex",
+    "qdelaunay",
+    "qhalf",
+    "qhull",
+    "qvoronoi",
+    "rbox"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "8.0.2"
+  ];
+  fullPath: "qhull.org";
+}

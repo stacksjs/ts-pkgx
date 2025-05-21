@@ -29,3 +29,29 @@ export const tldrshPackage: PkgxPackage = {
   ],
   "fullPath": "tldr.sh"
 }
+
+export interface TldrshPackage {
+  name: "tldr";
+  domain: "tldr.sh";
+  description: "C command-line client for tldr pages 📚";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tldr.sh/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) tldr";
+  programs: readonly [
+    "tldr"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "linuxsourceware.org/bzip2^1",
+    "sourceware.org/bzip2^1",
+    "libzip.org^1.9.2",
+    "curl.se"
+  ];
+  versions: readonly [
+    "1.6.1",
+    "1.6.0",
+    "1.5.0"
+  ];
+  fullPath: "tldr.sh";
+}

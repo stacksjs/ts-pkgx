@@ -18,3 +18,18 @@ export const mozillaorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "mozilla.org"
 }
+
+export interface MozillaorgPackage {
+  name: "mozilla.org";
+  domain: "mozilla.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx mozilla.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "mozilla.org";
+}

@@ -18,3 +18,18 @@ export const digiporgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "digip.org"
 }
+
+export interface DigiporgPackage {
+  name: "digip.org";
+  domain: "digip.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx digip.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "digip.org";
+}

@@ -20,3 +20,20 @@ export const xvidcomPackage: PkgxPackage = {
   ],
   "fullPath": "xvid.com"
 }
+
+export interface XvidcomPackage {
+  name: "xvid.com";
+  domain: "xvid.com";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xvid.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +xvid.com -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.3.7"
+  ];
+  fullPath: "xvid.com";
+}

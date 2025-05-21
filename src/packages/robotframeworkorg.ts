@@ -22,3 +22,22 @@ export const robotframeworkorgPackage: PkgxPackage = {
   ],
   "fullPath": "robotframework.org"
 }
+
+export interface RobotframeworkorgPackage {
+  name: "robotframework.org";
+  domain: "robotframework.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/robotframework.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +robotframework.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "7.2.2"
+  ];
+  fullPath: "robotframework.org";
+}

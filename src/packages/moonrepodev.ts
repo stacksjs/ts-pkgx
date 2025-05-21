@@ -18,3 +18,18 @@ export const moonrepodevPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "moonrepo.dev"
 }
+
+export interface MoonrepodevPackage {
+  name: "moonrepo.dev";
+  domain: "moonrepo.dev";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx moonrepo.dev";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "moonrepo.dev";
+}

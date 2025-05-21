@@ -36,3 +36,36 @@ export const rhashsourceforgenetPackage: PkgxPackage = {
   ],
   "fullPath": "rhash.sourceforge.net"
 }
+
+export interface RhashsourceforgenetPackage {
+  name: "rhash.sourceforge.net";
+  domain: "rhash.sourceforge.net";
+  description: "Utility for computing and verifying hash sums of files";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rhash.sourceforge.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +rhash.sourceforge.net -- $SHELL -i";
+  programs: readonly [
+    "whirlpool-hash",
+    "tiger-hash",
+    "tth-hash",
+    "rhash",
+    "sfv-hash",
+    "magnet-link",
+    "has160-hash",
+    "gost12-256-hash",
+    "gost12-512-hash",
+    "edonr512-hash",
+    "edonr256-hash",
+    "ed2k-link"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.4.6",
+    "1.4.5",
+    "1.4.4",
+    "1.4.3"
+  ];
+  fullPath: "rhash.sourceforge.net";
+}

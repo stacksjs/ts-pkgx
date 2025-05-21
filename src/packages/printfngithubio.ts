@@ -18,3 +18,18 @@ export const printfngithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "printfn.github.io"
 }
+
+export interface PrintfngithubioPackage {
+  name: "printfn.github.io";
+  domain: "printfn.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx printfn.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "printfn.github.io";
+}

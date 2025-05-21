@@ -25,3 +25,25 @@ export const zshsourceforgeioPackage: PkgxPackage = {
   ],
   "fullPath": "zsh.sourceforge.io"
 }
+
+export interface ZshsourceforgeioPackage {
+  name: "zsh";
+  domain: "zsh.sourceforge.io";
+  description: "UNIX shell (command interpreter)";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/zsh.sourceforge.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) zsh";
+  programs: readonly [
+    "zsh"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "invisible-island.net/ncurses",
+    "pcre.org"
+  ];
+  versions: readonly [
+    "5.9.0"
+  ];
+  fullPath: "zsh.sourceforge.io";
+}

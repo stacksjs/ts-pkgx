@@ -18,3 +18,18 @@ export const wixcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "wix.com"
 }
+
+export interface WixcomPackage {
+  name: "wix.com";
+  domain: "wix.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx wix.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "wix.com";
+}

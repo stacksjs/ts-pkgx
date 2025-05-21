@@ -18,3 +18,18 @@ export const sourcewareorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "sourceware.org"
 }
+
+export interface SourcewareorgPackage {
+  name: "sourceware.org";
+  domain: "sourceware.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx sourceware.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "sourceware.org";
+}

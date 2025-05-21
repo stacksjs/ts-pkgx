@@ -18,3 +18,18 @@ export const resticnetPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "restic.net"
 }
+
+export interface ResticnetPackage {
+  name: "restic.net";
+  domain: "restic.net";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx restic.net";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "restic.net";
+}

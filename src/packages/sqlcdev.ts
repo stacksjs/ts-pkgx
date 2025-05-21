@@ -24,3 +24,24 @@ export const sqlcdevPackage: PkgxPackage = {
   ],
   "fullPath": "sqlc.dev"
 }
+
+export interface SqlcdevPackage {
+  name: "sqlc";
+  domain: "sqlc.dev";
+  description: "Generate type-safe code from SQL";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sqlc.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) sqlc";
+  programs: readonly [
+    "sqlc"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.29.0",
+    "1.28.0",
+    "1.27.0"
+  ];
+  fullPath: "sqlc.dev";
+}

@@ -32,3 +32,32 @@ export const packerioPackage: PkgxPackage = {
   ],
   "fullPath": "packer.io"
 }
+
+export interface PackerioPackage {
+  name: "packer";
+  domain: "packer.io";
+  description: "Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/packer.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) packer";
+  programs: readonly [
+    "packer"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.9.5",
+    "1.9.4",
+    "1.9.3",
+    "1.9.2",
+    "1.12.0",
+    "1.11.2",
+    "1.11.1",
+    "1.11.0",
+    "1.10.3",
+    "1.10.2",
+    "1.10.1"
+  ];
+  fullPath: "packer.io";
+}

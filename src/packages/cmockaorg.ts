@@ -20,3 +20,20 @@ export const cmockaorgPackage: PkgxPackage = {
   ],
   "fullPath": "cmocka.org"
 }
+
+export interface CmockaorgPackage {
+  name: "cmocka.org";
+  domain: "cmocka.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cmocka.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +cmocka.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.1.7"
+  ];
+  fullPath: "cmocka.org";
+}

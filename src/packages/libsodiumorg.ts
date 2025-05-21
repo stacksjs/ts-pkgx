@@ -23,3 +23,23 @@ export const libsodiumorgPackage: PkgxPackage = {
   ],
   "fullPath": "libsodium.org"
 }
+
+export interface LibsodiumorgPackage {
+  name: "libsodium.org";
+  domain: "libsodium.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libsodium.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libsodium.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.0.20",
+    "1.0.19",
+    "1.0.18",
+    "1.0.17"
+  ];
+  fullPath: "libsodium.org";
+}

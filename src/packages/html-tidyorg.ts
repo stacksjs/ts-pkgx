@@ -25,3 +25,25 @@ export const htmltidyorgPackage: PkgxPackage = {
     "tidy"
   ]
 }
+
+export interface HtmltidyorgPackage {
+  name: "tidy";
+  domain: "html-tidy.org";
+  description: "The granddaddy of HTML tools, with support for modern standards";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/html-tidy.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) tidy";
+  programs: readonly [
+    "tidy"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "5.8.0"
+  ];
+  fullPath: "html-tidy.org";
+  aliases: readonly [
+    "tidy"
+  ];
+}

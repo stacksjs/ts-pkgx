@@ -23,3 +23,23 @@ export const blake2netlibb2Package: PkgxPackage = {
     "libb2"
   ]
 }
+
+export interface Blake2netlibb2Package {
+  name: "blake2.net/libb2";
+  domain: "blake2.net/libb2";
+  description: "C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/blake2.net/libb2/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +blake2.net/libb2 -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.98.1"
+  ];
+  fullPath: "blake2.net/libb2";
+  aliases: readonly [
+    "libb2"
+  ];
+}

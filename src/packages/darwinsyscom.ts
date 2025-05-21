@@ -18,3 +18,18 @@ export const darwinsyscomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "darwinsys.com"
 }
+
+export interface DarwinsyscomPackage {
+  name: "darwinsys.com";
+  domain: "darwinsys.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx darwinsys.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "darwinsys.com";
+}

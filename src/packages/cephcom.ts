@@ -18,3 +18,18 @@ export const cephcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "ceph.com"
 }
+
+export interface CephcomPackage {
+  name: "ceph.com";
+  domain: "ceph.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx ceph.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "ceph.com";
+}

@@ -39,3 +39,39 @@ export const elementsprojectorgPackage: PkgxPackage = {
   ],
   "fullPath": "elementsproject.org"
 }
+
+export interface ElementsprojectorgPackage {
+  name: "elementsproject.org";
+  domain: "elementsproject.org";
+  description: "Open Source implementation of advanced blockchain features extending the Bitcoin protocol";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/elementsproject.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +elementsproject.org -- $SHELL -i";
+  programs: readonly [
+    "bench_bitcoin",
+    "elements-cli",
+    "elements-tx",
+    "elements-util",
+    "elements-wallet",
+    "elementsd",
+    "test_bitcoin"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "boost.org^1.64",
+    "libevent.org",
+    "oracle.com/berkeley-db"
+  ];
+  versions: readonly [
+    "23.2.7",
+    "23.2.6",
+    "23.2.5",
+    "23.2.4",
+    "23.2.3",
+    "23.2.2",
+    "23.2.1",
+    "22.1.1"
+  ];
+  fullPath: "elementsproject.org";
+}

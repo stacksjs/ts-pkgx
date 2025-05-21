@@ -22,3 +22,22 @@ export const ctopshPackage: PkgxPackage = {
   ],
   "fullPath": "ctop.sh"
 }
+
+export interface CtopshPackage {
+  name: "ctop";
+  domain: "ctop.sh";
+  description: "Top-like interface for container metrics";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ctop.sh/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) ctop";
+  programs: readonly [
+    "ctop"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.7.7"
+  ];
+  fullPath: "ctop.sh";
+}

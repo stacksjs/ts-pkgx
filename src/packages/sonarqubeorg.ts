@@ -18,3 +18,18 @@ export const sonarqubeorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "sonarqube.org"
 }
+
+export interface SonarqubeorgPackage {
+  name: "sonarqube.org";
+  domain: "sonarqube.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx sonarqube.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "sonarqube.org";
+}

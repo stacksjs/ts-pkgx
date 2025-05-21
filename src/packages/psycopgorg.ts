@@ -18,3 +18,18 @@ export const psycopgorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "psycopg.org"
 }
+
+export interface PsycopgorgPackage {
+  name: "psycopg.org";
+  domain: "psycopg.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx psycopg.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "psycopg.org";
+}

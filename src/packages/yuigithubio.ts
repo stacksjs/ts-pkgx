@@ -18,3 +18,18 @@ export const yuigithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "yui.github.io"
 }
+
+export interface YuigithubioPackage {
+  name: "yui.github.io";
+  domain: "yui.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx yui.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "yui.github.io";
+}

@@ -31,3 +31,31 @@ export const musepacknetPackage: PkgxPackage = {
   ],
   "fullPath": "musepack.net"
 }
+
+export interface MusepacknetPackage {
+  name: "musepack.net";
+  domain: "musepack.net";
+  description: "Audio compression format and tools";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/musepack.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i";
+  programs: readonly [
+    "mpc2sv8",
+    "mpcchap",
+    "mpccut",
+    "mpcdec",
+    "mpcenc",
+    "mpcgain",
+    "wavcmp"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "musepack.net/libreplaygain",
+    "musepack.net/libcuefile"
+  ];
+  versions: readonly [
+    "475.0.0"
+  ];
+  fullPath: "musepack.net";
+}

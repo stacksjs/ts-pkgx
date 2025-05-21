@@ -40,3 +40,40 @@ export const bashlydannybcoPackage: PkgxPackage = {
   ],
   "fullPath": "bashly.dannyb.co"
 }
+
+export interface BashlydannybcoPackage {
+  name: "bashly";
+  domain: "bashly.dannyb.co";
+  description: "Bash command line framework and CLI generator";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bashly.dannyb.co/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) bashly";
+  programs: readonly [
+    "bashly"
+  ];
+  companions: readonly [
+    "gnu.org/bash"
+  ];
+  dependencies: readonly [
+    "ruby-lang.org^3.1",
+    "rubygems.org"
+  ];
+  versions: readonly [
+    "1.2.9",
+    "1.2.8",
+    "1.2.7",
+    "1.2.6",
+    "1.2.5",
+    "1.2.4",
+    "1.2.3",
+    "1.2.2",
+    "1.2.12",
+    "1.2.11",
+    "1.2.10",
+    "1.2.1",
+    "1.2.0",
+    "1.1.10"
+  ];
+  fullPath: "bashly.dannyb.co";
+}

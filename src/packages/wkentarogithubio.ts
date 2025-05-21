@@ -18,3 +18,18 @@ export const wkentarogithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "wkentaro.github.io"
 }
+
+export interface WkentarogithubioPackage {
+  name: "wkentaro.github.io";
+  domain: "wkentaro.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx wkentaro.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "wkentaro.github.io";
+}

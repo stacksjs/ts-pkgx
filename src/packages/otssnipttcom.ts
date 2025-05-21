@@ -24,3 +24,24 @@ export const otssnipttcomPackage: PkgxPackage = {
   ],
   "fullPath": "ots.sniptt.com"
 }
+
+export interface OtssnipttcomPackage {
+  name: "ots";
+  domain: "ots.sniptt.com";
+  description: "🔐 Share end-to-end encrypted secrets with others via a one-time URL";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ots.sniptt.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) ots";
+  programs: readonly [
+    "ots"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.3.1",
+    "0.3.0",
+    "0.2.0"
+  ];
+  fullPath: "ots.sniptt.com";
+}

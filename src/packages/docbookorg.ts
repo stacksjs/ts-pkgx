@@ -20,3 +20,20 @@ export const docbookorgPackage: PkgxPackage = {
   ],
   "fullPath": "docbook.org"
 }
+
+export interface DocbookorgPackage {
+  name: "docbook.org";
+  domain: "docbook.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/docbook.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +docbook.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "5.1.0"
+  ];
+  fullPath: "docbook.org";
+}

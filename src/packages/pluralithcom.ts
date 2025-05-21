@@ -24,3 +24,24 @@ export const pluralithcomPackage: PkgxPackage = {
   ],
   "fullPath": "pluralith.com"
 }
+
+export interface PluralithcomPackage {
+  name: "pluralith";
+  domain: "pluralith.com";
+  description: "A tool for Terraform state visualisation and automated generation of infrastructure documentation";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pluralith.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) pluralith";
+  programs: readonly [
+    "pluralith"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "curl.se/ca-certs"
+  ];
+  versions: readonly [
+    "0.2.2"
+  ];
+  fullPath: "pluralith.com";
+}

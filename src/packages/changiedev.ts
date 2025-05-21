@@ -28,3 +28,28 @@ export const changiedevPackage: PkgxPackage = {
   ],
   "fullPath": "changie.dev"
 }
+
+export interface ChangiedevPackage {
+  name: "changie";
+  domain: "changie.dev";
+  description: "Automated changelog tool for preparing releases with lots of customization options";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/changie.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) changie";
+  programs: readonly [
+    "changie"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.21.1",
+    "1.21.0",
+    "1.20.1",
+    "1.20.0",
+    "1.19.1",
+    "1.19.0",
+    "1.18.0"
+  ];
+  fullPath: "changie.dev";
+}

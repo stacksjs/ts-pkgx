@@ -37,3 +37,37 @@ export const fishshellcomPackage: PkgxPackage = {
   ],
   "fullPath": "fishshell.com"
 }
+
+export interface FishshellcomPackage {
+  name: "fish";
+  domain: "fishshell.com";
+  description: "User-friendly command-line shell for UNIX-like operating systems";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fishshell.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +fishshell.com -- $SHELL -i";
+  programs: readonly [
+    "fish",
+    "fish_indent",
+    "fish_key_reader"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/gettext",
+    "invisible-island.net/ncurses>=6.0"
+  ];
+  versions: readonly [
+    "4.0.2",
+    "4.0.1",
+    "4.0.0",
+    "3.7.1",
+    "3.7.0",
+    "3.6.4",
+    "3.6.3",
+    "3.6.2",
+    "3.6.1",
+    "3.6.0",
+    "3.5.1"
+  ];
+  fullPath: "fishshell.com";
+}

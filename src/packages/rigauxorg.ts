@@ -18,3 +18,18 @@ export const rigauxorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "rigaux.org"
 }
+
+export interface RigauxorgPackage {
+  name: "rigaux.org";
+  domain: "rigaux.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx rigaux.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "rigaux.org";
+}

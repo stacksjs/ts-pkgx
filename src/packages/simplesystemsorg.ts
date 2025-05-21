@@ -18,3 +18,18 @@ export const simplesystemsorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "simplesystems.org"
 }
+
+export interface SimplesystemsorgPackage {
+  name: "simplesystems.org";
+  domain: "simplesystems.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx simplesystems.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "simplesystems.org";
+}

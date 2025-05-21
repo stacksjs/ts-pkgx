@@ -18,3 +18,18 @@ export const unidataucareduPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "unidata.ucar.edu"
 }
+
+export interface UnidataucareduPackage {
+  name: "unidata.ucar.edu";
+  domain: "unidata.ucar.edu";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx unidata.ucar.edu";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "unidata.ucar.edu";
+}

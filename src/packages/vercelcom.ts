@@ -18,3 +18,18 @@ export const vercelcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "vercel.com"
 }
+
+export interface VercelcomPackage {
+  name: "vercel.com";
+  domain: "vercel.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx vercel.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "vercel.com";
+}

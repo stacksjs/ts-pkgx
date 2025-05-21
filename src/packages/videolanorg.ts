@@ -18,3 +18,18 @@ export const videolanorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "videolan.org"
 }
+
+export interface VideolanorgPackage {
+  name: "videolan.org";
+  domain: "videolan.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx videolan.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "videolan.org";
+}

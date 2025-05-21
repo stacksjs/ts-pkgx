@@ -28,3 +28,28 @@ export const elvshPackage: PkgxPackage = {
     "elvish"
   ]
 }
+
+export interface ElvshPackage {
+  name: "elvish";
+  domain: "elv.sh";
+  description: "Powerful scripting language & versatile interactive shell";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/elv.sh/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) elvish";
+  programs: readonly [
+    "elvish"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.21.0",
+    "0.20.1",
+    "0.20.0",
+    "0.19.2"
+  ];
+  fullPath: "elv.sh";
+  aliases: readonly [
+    "elvish"
+  ];
+}

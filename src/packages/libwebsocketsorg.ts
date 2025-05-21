@@ -26,3 +26,26 @@ export const libwebsocketsorgPackage: PkgxPackage = {
   ],
   "fullPath": "libwebsockets.org"
 }
+
+export interface LibwebsocketsorgPackage {
+  name: "libwebsockets.org";
+  domain: "libwebsockets.org";
+  description: "canonical libwebsockets.org networking library";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libwebsockets.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libwebsockets.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "libuv.org@1",
+    "libevent.org@2"
+  ];
+  versions: readonly [
+    "4.3.5",
+    "4.3.4",
+    "4.3.3",
+    "4.3.2"
+  ];
+  fullPath: "libwebsockets.org";
+}

@@ -27,3 +27,27 @@ export const apktoolorgPackage: PkgxPackage = {
   ],
   "fullPath": "apktool.org"
 }
+
+export interface ApktoolorgPackage {
+  name: "apktool";
+  domain: "apktool.org";
+  description: "Tool for reverse engineering 3rd party, closed, binary Android apps";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apktool.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) apktool";
+  programs: readonly [
+    "apktool"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org^21"
+  ];
+  versions: readonly [
+    "2.9.3",
+    "2.11.1",
+    "2.11.0",
+    "2.10.0"
+  ];
+  fullPath: "apktool.org";
+}

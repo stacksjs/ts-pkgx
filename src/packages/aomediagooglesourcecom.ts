@@ -18,3 +18,18 @@ export const aomediagooglesourcecomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "aomedia.googlesource.com"
 }
+
+export interface AomediagooglesourcecomPackage {
+  name: "aomedia.googlesource.com";
+  domain: "aomedia.googlesource.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx aomedia.googlesource.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "aomedia.googlesource.com";
+}

@@ -37,3 +37,37 @@ export const conftestdevPackage: PkgxPackage = {
   ],
   "fullPath": "conftest.dev"
 }
+
+export interface ConftestdevPackage {
+  name: "conftest";
+  domain: "conftest.dev";
+  description: "Write tests against structured configuration data using the Open Policy Agent Rego query language";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/conftest.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) conftest";
+  programs: readonly [
+    "conftest"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.60.0",
+    "0.59.0",
+    "0.58.0",
+    "0.57.0",
+    "0.56.0",
+    "0.55.0",
+    "0.54.0",
+    "0.53.0",
+    "0.52.0",
+    "0.51.0",
+    "0.50.0",
+    "0.49.1",
+    "0.49.0",
+    "0.48.0",
+    "0.47.0",
+    "0.46.0"
+  ];
+  fullPath: "conftest.dev";
+}

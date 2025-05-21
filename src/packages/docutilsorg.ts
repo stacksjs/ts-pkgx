@@ -39,3 +39,39 @@ export const docutilsorgPackage: PkgxPackage = {
   ],
   "fullPath": "docutils.org"
 }
+
+export interface DocutilsorgPackage {
+  name: "docutils.org";
+  domain: "docutils.org";
+  description: "Text processing system for reStructuredText";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/docutils.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i";
+  programs: readonly [
+    "docutils",
+    "rst2html",
+    "rst2html4",
+    "rst2html5",
+    "rst2latex",
+    "rst2man",
+    "rst2odt",
+    "rst2pseudoxml",
+    "rst2s5",
+    "rst2xetex",
+    "rst2xml"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "pkgx.sh^1"
+  ];
+  versions: readonly [
+    "0.21.2",
+    "0.21.1",
+    "0.21.0",
+    "0.20.1",
+    "0.20.0",
+    "0.19.0"
+  ];
+  fullPath: "docutils.org";
+}

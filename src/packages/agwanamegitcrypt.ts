@@ -27,3 +27,27 @@ export const agwanamegitcryptPackage: PkgxPackage = {
     "git-crypt"
   ]
 }
+
+export interface AgwanamegitcryptPackage {
+  name: "git-crypt";
+  domain: "agwa.name/git-crypt";
+  description: "Enable transparent encryption/decryption of files in a git repo";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/agwa.name/git-crypt/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) git-crypt";
+  programs: readonly [
+    "git-crypt"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "0.7.0"
+  ];
+  fullPath: "agwa.name/git-crypt";
+  aliases: readonly [
+    "git-crypt"
+  ];
+}

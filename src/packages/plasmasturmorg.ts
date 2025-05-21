@@ -18,3 +18,18 @@ export const plasmasturmorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "plasmasturm.org"
 }
+
+export interface PlasmasturmorgPackage {
+  name: "plasmasturm.org";
+  domain: "plasmasturm.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx plasmasturm.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "plasmasturm.org";
+}

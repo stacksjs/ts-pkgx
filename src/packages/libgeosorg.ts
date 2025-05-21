@@ -39,3 +39,39 @@ export const libgeosorgPackage: PkgxPackage = {
     "geos-config"
   ]
 }
+
+export interface LibgeosorgPackage {
+  name: "geos-config";
+  domain: "libgeos.org";
+  description: "Geometry Engine, Open Source";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libgeos.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) geos-config";
+  programs: readonly [
+    "geos-config"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "3.9.6",
+    "3.9.5",
+    "3.8.4",
+    "3.13.1",
+    "3.13.0",
+    "3.12.3",
+    "3.12.2",
+    "3.12.1",
+    "3.12.0",
+    "3.11.5",
+    "3.11.4",
+    "3.11.3",
+    "3.11.2",
+    "3.10.7",
+    "3.10.6"
+  ];
+  fullPath: "libgeos.org";
+  aliases: readonly [
+    "geos-config"
+  ];
+}

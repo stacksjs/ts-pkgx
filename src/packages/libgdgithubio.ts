@@ -35,3 +35,35 @@ export const libgdgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "libgd.github.io"
 }
+
+export interface LibgdgithubioPackage {
+  name: "libgd.github.io";
+  domain: "libgd.github.io";
+  description: "Graphics library to dynamically manipulate images";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libgd.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +libgd.github.io -- $SHELL -i";
+  programs: readonly [
+    "bdftogd",
+    "gd2copypal",
+    "gd2togif",
+    "gdcmpgif",
+    "giftogd2"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "freedesktop.org/fontconfig",
+    "freetype.org",
+    "libjpeg-turbo.org",
+    "github.com/AOMediaCodec/libavif",
+    "libpng.org",
+    "simplesystems.org/libtiff",
+    "google.com/webp",
+    "zlib.net"
+  ];
+  versions: readonly [
+    "2.3.3"
+  ];
+  fullPath: "libgd.github.io";
+}

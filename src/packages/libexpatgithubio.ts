@@ -33,3 +33,33 @@ export const libexpatgithubioPackage: PkgxPackage = {
     "xmlwf"
   ]
 }
+
+export interface LibexpatgithubioPackage {
+  name: "xmlwf";
+  domain: "libexpat.github.io";
+  description: ":herb: Fast streaming XML parser written in C99 with >90% test coverage; moved from SourceForge to GitHub";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libexpat.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) xmlwf";
+  programs: readonly [
+    "xmlwf"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.7.1",
+    "2.7.0",
+    "2.6.4",
+    "2.6.3",
+    "2.6.2",
+    "2.6.1",
+    "2.6.0",
+    "2.5.0",
+    "2.4.9"
+  ];
+  fullPath: "libexpat.github.io";
+  aliases: readonly [
+    "xmlwf"
+  ];
+}

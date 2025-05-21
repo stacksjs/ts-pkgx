@@ -31,3 +31,31 @@ export const apacheorgthriftPackage: PkgxPackage = {
     "thrift"
   ]
 }
+
+export interface ApacheorgthriftPackage {
+  name: "thrift";
+  domain: "apache.org/thrift";
+  description: "Framework for scalable cross-language services development";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/thrift/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) thrift";
+  programs: readonly [
+    "thrift"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org@1.1",
+    "zlib.net"
+  ];
+  versions: readonly [
+    "0.21.0",
+    "0.20.0",
+    "0.19.0",
+    "0.18.1"
+  ];
+  fullPath: "apache.org/thrift";
+  aliases: readonly [
+    "thrift"
+  ];
+}

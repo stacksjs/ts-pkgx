@@ -23,3 +23,23 @@ export const zlibnetPackage: PkgxPackage = {
   ],
   "fullPath": "zlib.net"
 }
+
+export interface ZlibnetPackage {
+  name: "zlib.net";
+  domain: "zlib.net";
+  description: "A massively spiffy yet delicately unobtrusive compression library.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/zlib.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +zlib.net -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.3.1",
+    "1.3.0",
+    "1.2.13",
+    "1.2.12"
+  ];
+  fullPath: "zlib.net";
+}

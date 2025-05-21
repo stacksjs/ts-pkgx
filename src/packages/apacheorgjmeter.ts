@@ -31,3 +31,31 @@ export const apacheorgjmeterPackage: PkgxPackage = {
     "jmeter"
   ]
 }
+
+export interface ApacheorgjmeterPackage {
+  name: "apache.org/jmeter";
+  domain: "apache.org/jmeter";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/jmeter/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +apache.org/jmeter -- $SHELL -i";
+  programs: readonly [
+    "jmeter",
+    "jmeter-server",
+    "mirror-server"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org"
+  ];
+  versions: readonly [
+    "5.6.3",
+    "5.6.2",
+    "5.6.1"
+  ];
+  fullPath: "apache.org/jmeter";
+  aliases: readonly [
+    "jmeter"
+  ];
+}

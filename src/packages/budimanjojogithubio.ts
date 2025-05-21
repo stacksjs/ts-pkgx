@@ -18,3 +18,18 @@ export const budimanjojogithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "budimanjojo.github.io"
 }
+
+export interface BudimanjojogithubioPackage {
+  name: "budimanjojo.github.io";
+  domain: "budimanjojo.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx budimanjojo.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "budimanjojo.github.io";
+}

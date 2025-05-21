@@ -29,3 +29,29 @@ export const luaorgPackage: PkgxPackage = {
   ],
   "fullPath": "lua.org"
 }
+
+export interface LuaorgPackage {
+  name: "lua";
+  domain: "lua.org";
+  description: "Powerful, lightweight programming language";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lua.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +lua.org -- $SHELL -i";
+  programs: readonly [
+    "lua",
+    "luac"
+  ];
+  companions: readonly [
+    "luarocks.org"
+  ];
+  dependencies: readonly [
+    "gnu.org/readline"
+  ];
+  versions: readonly [
+    "5.4.7",
+    "5.4.6",
+    "5.4.4"
+  ];
+  fullPath: "lua.org";
+}

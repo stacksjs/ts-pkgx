@@ -55,3 +55,55 @@ export const kerberosorgPackage: PkgxPackage = {
   ],
   "fullPath": "kerberos.org"
 }
+
+export interface KerberosorgPackage {
+  name: "kerberos.org";
+  domain: "kerberos.org";
+  description: "mirror of MIT krb5 repository";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kerberos.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +kerberos.org -- $SHELL -i";
+  programs: readonly [
+    "compile_et",
+    "gss-client",
+    "k5srvutil",
+    "kadmin",
+    "kdestroy",
+    "kinit",
+    "klist",
+    "kpasswd",
+    "krb5-config",
+    "kswitch",
+    "ktutil",
+    "kvno",
+    "sclient",
+    "sim_client",
+    "uuclient",
+    "gss-server",
+    "kadmin.local",
+    "kadmind",
+    "kdb5_util",
+    "kprop",
+    "kpropd",
+    "kproplog",
+    "krb5-send-pr",
+    "krb5kdc",
+    "sim_server",
+    "sserver",
+    "uuserver"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "1.21.3",
+    "1.21.2",
+    "1.21.1",
+    "1.21.0",
+    "1.20.2",
+    "1.20.1"
+  ];
+  fullPath: "kerberos.org";
+}

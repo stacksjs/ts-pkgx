@@ -33,3 +33,33 @@ export const ntporgPackage: PkgxPackage = {
   ],
   "fullPath": "ntp.org"
 }
+
+export interface NtporgPackage {
+  name: "ntp.org";
+  domain: "ntp.org";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ntp.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +ntp.org -- $SHELL -i";
+  programs: readonly [
+    "ntpq",
+    "sntp",
+    "ntp-keygen",
+    "ntp-wait",
+    "ntpd",
+    "ntpdate",
+    "ntpdc",
+    "ntptime",
+    "ntptrace",
+    "update-leap"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^3"
+  ];
+  versions: readonly [
+    "4.2.8.17"
+  ];
+  fullPath: "ntp.org";
+}

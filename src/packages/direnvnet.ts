@@ -27,3 +27,27 @@ export const direnvnetPackage: PkgxPackage = {
   ],
   "fullPath": "direnv.net"
 }
+
+export interface DirenvnetPackage {
+  name: "direnv";
+  domain: "direnv.net";
+  description: "Load/unload environment variables based on $PWD";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/direnv.net/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) direnv";
+  programs: readonly [
+    "direnv"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.36.0",
+    "2.35.0",
+    "2.34.0",
+    "2.33.0",
+    "2.32.3",
+    "2.32.2"
+  ];
+  fullPath: "direnv.net";
+}

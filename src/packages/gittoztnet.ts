@@ -18,3 +18,18 @@ export const gittoztnetPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "git.tozt.net"
 }
+
+export interface GittoztnetPackage {
+  name: "git.tozt.net";
+  domain: "git.tozt.net";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx git.tozt.net";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "git.tozt.net";
+}

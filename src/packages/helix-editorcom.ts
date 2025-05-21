@@ -32,3 +32,32 @@ export const helixeditorcomPackage: PkgxPackage = {
     "hx"
   ]
 }
+
+export interface HelixeditorcomPackage {
+  name: "hx";
+  domain: "helix-editor.com";
+  description: "A post-modern modal text editor.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/helix-editor.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) hx";
+  programs: readonly [
+    "hx"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "25.1.1",
+    "25.1.0",
+    "24.7.0",
+    "24.3.0",
+    "23.5.0",
+    "23.3.0",
+    "23.10.0",
+    "22.12.0"
+  ];
+  fullPath: "helix-editor.com";
+  aliases: readonly [
+    "hx"
+  ];
+}

@@ -30,3 +30,30 @@ export const libimobiledeviceorgPackage: PkgxPackage = {
     "idevicedate"
   ]
 }
+
+export interface LibimobiledeviceorgPackage {
+  name: "idevicedate";
+  domain: "libimobiledevice.org";
+  description: "A cross-platform protocol library to communicate with iOS devices";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) idevicedate";
+  programs: readonly [
+    "idevicedate"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "libimobiledevice.org/libplist^2.4",
+    "gnu.org/libtasn1^4.19",
+    "libimobiledevice.org/libusbmuxd^2",
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "1.3.0"
+  ];
+  fullPath: "libimobiledevice.org";
+  aliases: readonly [
+    "idevicedate"
+  ];
+}

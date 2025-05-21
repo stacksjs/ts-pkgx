@@ -20,3 +20,20 @@ export const rapidjsonorgPackage: PkgxPackage = {
   ],
   "fullPath": "rapidjson.org"
 }
+
+export interface RapidjsonorgPackage {
+  name: "rapidjson.org";
+  domain: "rapidjson.org";
+  description: "A fast JSON parser/generator for C++ with both SAX/DOM style API";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rapidjson.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +rapidjson.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.1.0"
+  ];
+  fullPath: "rapidjson.org";
+}

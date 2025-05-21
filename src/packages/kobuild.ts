@@ -25,3 +25,25 @@ export const kobuildPackage: PkgxPackage = {
   ],
   "fullPath": "ko.build"
 }
+
+export interface KobuildPackage {
+  name: "ko";
+  domain: "ko.build";
+  description: "Build and deploy Go applications on Kubernetes";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ko.build/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) ko";
+  programs: readonly [
+    "ko"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.18.0",
+    "0.17.1",
+    "0.17.0",
+    "0.16.0"
+  ];
+  fullPath: "ko.build";
+}

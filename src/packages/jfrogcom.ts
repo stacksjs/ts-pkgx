@@ -18,3 +18,18 @@ export const jfrogcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "jfrog.com"
 }
+
+export interface JfrogcomPackage {
+  name: "jfrog.com";
+  domain: "jfrog.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx jfrog.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "jfrog.com";
+}

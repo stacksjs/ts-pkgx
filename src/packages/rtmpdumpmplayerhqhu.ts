@@ -29,3 +29,29 @@ export const rtmpdumpmplayerhqhuPackage: PkgxPackage = {
   ],
   "fullPath": "rtmpdump.mplayerhq.hu"
 }
+
+export interface RtmpdumpmplayerhqhuPackage {
+  name: "rtmpdump";
+  domain: "rtmpdump.mplayerhq.hu";
+  description: "Tool for downloading RTMP streaming media";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rtmpdump.mplayerhq.hu/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu -- $SHELL -i";
+  programs: readonly [
+    "rtmpdump",
+    "rtmpgw",
+    "rtmpsrv",
+    "rtmpsuck"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1",
+    "zlib.net"
+  ];
+  versions: readonly [
+    "2.3.0",
+    "2.3.0"
+  ];
+  fullPath: "rtmpdump.mplayerhq.hu";
+}

@@ -18,3 +18,18 @@ export const mergestatcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "mergestat.com"
 }
+
+export interface MergestatcomPackage {
+  name: "mergestat.com";
+  domain: "mergestat.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx mergestat.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "mergestat.com";
+}

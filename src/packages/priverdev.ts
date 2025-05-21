@@ -18,3 +18,18 @@ export const priverdevPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "priver.dev"
 }
+
+export interface PriverdevPackage {
+  name: "priver.dev";
+  domain: "priver.dev";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx priver.dev";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "priver.dev";
+}

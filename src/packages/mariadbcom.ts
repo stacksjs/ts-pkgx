@@ -18,3 +18,18 @@ export const mariadbcomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "mariadb.com"
 }
+
+export interface MariadbcomPackage {
+  name: "mariadb.com";
+  domain: "mariadb.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx mariadb.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "mariadb.com";
+}

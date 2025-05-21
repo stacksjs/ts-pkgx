@@ -18,3 +18,18 @@ export const xercesapacheorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "xerces.apache.org"
 }
+
+export interface XercesapacheorgPackage {
+  name: "xerces.apache.org";
+  domain: "xerces.apache.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx xerces.apache.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "xerces.apache.org";
+}

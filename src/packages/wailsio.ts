@@ -37,3 +37,37 @@ export const wailsioPackage: PkgxPackage = {
   ],
   "fullPath": "wails.io"
 }
+
+export interface WailsioPackage {
+  name: "wails";
+  domain: "wails.io";
+  description: "Create beautiful applications using Go";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wails.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) wails";
+  programs: readonly [
+    "wails"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "go.dev^1.18",
+    "npmjs.com",
+    "linuxgnu.org/gccgtk.org/gtk3freedesktop.org/pkg-config",
+    "gnu.org/gcc",
+    "gtk.org/gtk3",
+    "freedesktop.org/pkg-config"
+  ];
+  versions: readonly [
+    "2.9.3",
+    "2.9.2",
+    "2.9.1",
+    "2.9.0",
+    "2.8.2",
+    "2.8.1",
+    "2.8.0",
+    "2.10.1",
+    "2.10.0"
+  ];
+  fullPath: "wails.io";
+}

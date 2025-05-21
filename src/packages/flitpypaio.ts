@@ -29,3 +29,29 @@ export const flitpypaioPackage: PkgxPackage = {
   ],
   "fullPath": "flit.pypa.io"
 }
+
+export interface FlitpypaioPackage {
+  name: "flit";
+  domain: "flit.pypa.io";
+  description: "Simplified packaging of Python modules";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/flit.pypa.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) flit";
+  programs: readonly [
+    "flit"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3<3.12"
+  ];
+  versions: readonly [
+    "3.9.0",
+    "3.8.0",
+    "3.12.0",
+    "3.11.0",
+    "3.10.1",
+    "3.10.0"
+  ];
+  fullPath: "flit.pypa.io";
+}

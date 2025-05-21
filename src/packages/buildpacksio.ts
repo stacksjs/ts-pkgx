@@ -36,3 +36,36 @@ export const buildpacksioPackage: PkgxPackage = {
     "pack"
   ]
 }
+
+export interface BuildpacksioPackage {
+  name: "pack";
+  domain: "buildpacks.io";
+  description: "CLI for building apps using Cloud Native Buildpacks";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/buildpacks.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) pack";
+  programs: readonly [
+    "pack"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.37.0",
+    "0.36.4",
+    "0.36.3",
+    "0.36.2",
+    "0.36.1",
+    "0.36.0",
+    "0.35.1",
+    "0.35.0",
+    "0.34.2",
+    "0.34.1",
+    "0.34.0",
+    "0.33.2"
+  ];
+  fullPath: "buildpacks.io";
+  aliases: readonly [
+    "pack"
+  ];
+}

@@ -24,3 +24,24 @@ export const taplotamasfedevPackage: PkgxPackage = {
   ],
   "fullPath": "taplo.tamasfe.dev"
 }
+
+export interface TaplotamasfedevPackage {
+  name: "taplo";
+  domain: "taplo.tamasfe.dev";
+  description: "A TOML toolkit written in Rust";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/taplo.tamasfe.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) taplo";
+  programs: readonly [
+    "taplo"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.9.3",
+    "0.9.2",
+    "0.8.1"
+  ];
+  fullPath: "taplo.tamasfe.dev";
+}

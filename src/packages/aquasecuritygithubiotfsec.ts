@@ -33,3 +33,33 @@ export const aquasecuritygithubiotfsecPackage: PkgxPackage = {
     "tfsec"
   ]
 }
+
+export interface AquasecuritygithubiotfsecPackage {
+  name: "tfsec";
+  domain: "aquasecurity.github.io/tfsec";
+  description: "Static analysis security scanner for your terraform code";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/aquasecurity.github.io/tfsec/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) tfsec";
+  programs: readonly [
+    "tfsec"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.28.9",
+    "1.28.7",
+    "1.28.6",
+    "1.28.5",
+    "1.28.14",
+    "1.28.13",
+    "1.28.12",
+    "1.28.11",
+    "1.28.10"
+  ];
+  fullPath: "aquasecurity.github.io/tfsec";
+  aliases: readonly [
+    "tfsec"
+  ];
+}

@@ -25,3 +25,25 @@ export const borepubPackage: PkgxPackage = {
   ],
   "fullPath": "bore.pub"
 }
+
+export interface BorepubPackage {
+  name: "bore";
+  domain: "bore.pub";
+  description: "Modern, simple TCP tunnel in Rust that exposes local ports to a remote server";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bore.pub/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) bore";
+  programs: readonly [
+    "bore"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.5.3",
+    "0.5.2",
+    "0.5.1",
+    "0.5.0"
+  ];
+  fullPath: "bore.pub";
+}

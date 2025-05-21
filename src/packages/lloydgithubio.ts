@@ -18,3 +18,18 @@ export const lloydgithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "lloyd.github.io"
 }
+
+export interface LloydgithubioPackage {
+  name: "lloyd.github.io";
+  domain: "lloyd.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx lloyd.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "lloyd.github.io";
+}

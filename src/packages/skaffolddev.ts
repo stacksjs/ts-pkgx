@@ -35,3 +35,35 @@ export const skaffolddevPackage: PkgxPackage = {
   ],
   "fullPath": "skaffold.dev"
 }
+
+export interface SkaffolddevPackage {
+  name: "skaffold";
+  domain: "skaffold.dev";
+  description: "Easy and Repeatable Kubernetes Development";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/skaffold.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) skaffold";
+  programs: readonly [
+    "skaffold"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.9.0",
+    "2.8.0",
+    "2.16.0",
+    "2.15.0",
+    "2.14.2",
+    "2.14.1",
+    "2.14.0",
+    "2.13.2",
+    "2.13.0",
+    "2.12.0",
+    "2.11.1",
+    "2.11.0",
+    "2.10.1",
+    "2.10.0"
+  ];
+  fullPath: "skaffold.dev";
+}

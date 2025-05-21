@@ -39,3 +39,39 @@ export const julialangorgPackage: PkgxPackage = {
   ],
   "fullPath": "julialang.org"
 }
+
+export interface JulialangorgPackage {
+  name: "julia";
+  domain: "julialang.org";
+  description: "The Julia Programming Language";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/julialang.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) julia";
+  programs: readonly [
+    "julia"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.9.4",
+    "1.9.3",
+    "1.11.5",
+    "1.11.4",
+    "1.11.3",
+    "1.11.2",
+    "1.11.1",
+    "1.11.0",
+    "1.10.9",
+    "1.10.8",
+    "1.10.7",
+    "1.10.6",
+    "1.10.5",
+    "1.10.4",
+    "1.10.3",
+    "1.10.2",
+    "1.10.1",
+    "1.10.0"
+  ];
+  fullPath: "julialang.org";
+}

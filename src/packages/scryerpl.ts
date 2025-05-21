@@ -27,3 +27,27 @@ export const scryerplPackage: PkgxPackage = {
     "scryer prolog"
   ]
 }
+
+export interface ScryerplPackage {
+  name: "Scryer Prolog";
+  domain: "scryer.pl";
+  description: "Modern ISO Prolog implementation written mostly in Rust";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/scryer.pl/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) scryer-prolog";
+  programs: readonly [
+    "scryer-prolog"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1.1"
+  ];
+  versions: readonly [
+    "0.9.4"
+  ];
+  fullPath: "scryer.pl";
+  aliases: readonly [
+    "scryer prolog"
+  ];
+}

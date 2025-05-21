@@ -68,3 +68,68 @@ export const podmanioPackage: PkgxPackage = {
   ],
   "fullPath": "podman.io"
 }
+
+export interface PodmanioPackage {
+  name: "podman";
+  domain: "podman.io";
+  description: "Podman: A tool for managing OCI containers and pods.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/podman.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +podman.io -- $SHELL -i";
+  programs: readonly [
+    "podman",
+    "podman-remote",
+    "podman-mac-helper"
+  ];
+  companions: readonly [
+    "openssh.com"
+  ];
+  dependencies: readonly [
+    "qemu.org",
+    "github.com/containers/gvisor-tap-vsock",
+    "darwingithub.com/crc-org/vfkit",
+    "github.com/crc-org/vfkit"
+  ];
+  versions: readonly [
+    "5.5.0",
+    "5.4.2",
+    "5.4.1",
+    "5.4.0",
+    "5.3.2",
+    "5.3.1",
+    "5.3.0",
+    "5.2.5",
+    "5.2.4",
+    "5.2.3",
+    "5.2.2",
+    "5.2.1",
+    "5.2.0",
+    "5.1.2",
+    "5.1.1",
+    "5.1.0",
+    "5.0.3",
+    "5.0.2",
+    "5.0.1",
+    "5.0.0",
+    "4.9.5",
+    "4.9.4",
+    "4.9.3",
+    "4.9.2",
+    "4.9.1",
+    "4.9.0",
+    "4.8.3",
+    "4.8.2",
+    "4.8.1",
+    "4.8.0",
+    "4.7.2",
+    "4.7.1",
+    "4.7.0",
+    "4.6.2",
+    "4.6.1",
+    "4.6.0",
+    "4.5.1",
+    "4.5.0"
+  ];
+  fullPath: "podman.io";
+}

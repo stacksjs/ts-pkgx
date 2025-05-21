@@ -28,3 +28,28 @@ export const kubelinterioPackage: PkgxPackage = {
     "kube-linter"
   ]
 }
+
+export interface KubelinterioPackage {
+  name: "kube-linter";
+  domain: "kubelinter.io";
+  description: "KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kubelinter.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) kube-linter";
+  programs: readonly [
+    "kube-linter"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.7.2",
+    "0.7.1",
+    "0.7.0",
+    "0.6.8"
+  ];
+  fullPath: "kubelinter.io";
+  aliases: readonly [
+    "kube-linter"
+  ];
+}

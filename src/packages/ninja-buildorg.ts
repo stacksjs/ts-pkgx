@@ -25,3 +25,25 @@ export const ninjabuildorgPackage: PkgxPackage = {
   ],
   "fullPath": "ninja-build.org"
 }
+
+export interface NinjabuildorgPackage {
+  name: "ninja";
+  domain: "ninja-build.org";
+  description: "Small build system for use with gyp or CMake";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ninja-build.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) ninja";
+  programs: readonly [
+    "ninja"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.12.1",
+    "1.12.0",
+    "1.11.1",
+    "1.11.0"
+  ];
+  fullPath: "ninja-build.org";
+}

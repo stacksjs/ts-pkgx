@@ -18,3 +18,18 @@ export const eyrieorgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "eyrie.org"
 }
+
+export interface EyrieorgPackage {
+  name: "eyrie.org";
+  domain: "eyrie.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx eyrie.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "eyrie.org";
+}

@@ -18,3 +18,18 @@ export const practicalschemenetPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "practical-scheme.net"
 }
+
+export interface PracticalschemenetPackage {
+  name: "practical-scheme.net";
+  domain: "practical-scheme.net";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx practical-scheme.net";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "practical-scheme.net";
+}

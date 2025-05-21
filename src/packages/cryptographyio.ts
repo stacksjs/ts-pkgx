@@ -42,3 +42,42 @@ export const cryptographyioPackage: PkgxPackage = {
   ],
   "fullPath": "cryptography.io"
 }
+
+export interface CryptographyioPackage {
+  name: "cryptography.io";
+  domain: "cryptography.io";
+  description: "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cryptography.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3.11",
+    "github.com/python-cffi/cffi^1.16",
+    "openssl.org>=1.1"
+  ];
+  versions: readonly [
+    "45.0.2",
+    "45.0.1",
+    "45.0.0",
+    "44.0.3",
+    "44.0.2",
+    "44.0.1",
+    "44.0.0",
+    "43.0.3",
+    "43.0.2",
+    "43.0.1",
+    "43.0.0",
+    "42.0.8",
+    "42.0.7",
+    "42.0.6",
+    "42.0.5",
+    "42.0.4",
+    "42.0.3",
+    "42.0.2",
+    "42.0.1"
+  ];
+  fullPath: "cryptography.io";
+}

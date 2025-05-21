@@ -18,3 +18,18 @@ export const hboehminfoPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "hboehm.info"
 }
+
+export interface HboehminfoPackage {
+  name: "hboehm.info";
+  domain: "hboehm.info";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx hboehm.info";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "hboehm.info";
+}

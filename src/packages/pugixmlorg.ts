@@ -22,3 +22,22 @@ export const pugixmlorgPackage: PkgxPackage = {
   ],
   "fullPath": "pugixml.org"
 }
+
+export interface PugixmlorgPackage {
+  name: "pugixml.org";
+  domain: "pugixml.org";
+  description: "Light-weight, simple and fast XML parser for C++ with XPath support";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pugixml.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +pugixml.org -- $SHELL -i";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.15.0",
+    "1.14.0",
+    "1.13.0"
+  ];
+  fullPath: "pugixml.org";
+}

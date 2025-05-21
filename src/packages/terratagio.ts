@@ -42,3 +42,42 @@ export const terratagioPackage: PkgxPackage = {
   ],
   "fullPath": "terratag.io"
 }
+
+export interface TerratagioPackage {
+  name: "terratag";
+  domain: "terratag.io";
+  description: "Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/terratag.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) terratag";
+  programs: readonly [
+    "terratag"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "terraform.io>=0.12",
+    "curl.se/ca-certs"
+  ];
+  versions: readonly [
+    "0.7.2",
+    "0.7.1",
+    "0.7.0",
+    "0.6.1",
+    "0.6.0",
+    "0.5.3",
+    "0.5.2",
+    "0.5.1",
+    "0.5.0",
+    "0.4.1",
+    "0.4.0",
+    "0.3.5",
+    "0.3.4",
+    "0.3.3",
+    "0.3.2",
+    "0.3.1",
+    "0.3.0",
+    "0.2.6"
+  ];
+  fullPath: "terratag.io";
+}

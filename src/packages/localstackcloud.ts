@@ -18,3 +18,18 @@ export const localstackcloudPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "localstack.cloud"
 }
+
+export interface LocalstackcloudPackage {
+  name: "localstack.cloud";
+  domain: "localstack.cloud";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx localstack.cloud";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "localstack.cloud";
+}

@@ -24,3 +24,24 @@ export const kptdevPackage: PkgxPackage = {
   ],
   "fullPath": "kpt.dev"
 }
+
+export interface KptdevPackage {
+  name: "kpt";
+  domain: "kpt.dev";
+  description: "Automate Kubernetes Configuration Editing";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kpt.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) kpt";
+  programs: readonly [
+    "kpt"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "git-scm.org"
+  ];
+  versions: readonly [
+    "0.39.3"
+  ];
+  fullPath: "kpt.dev";
+}

@@ -68,3 +68,68 @@ export const sphinxdocorgPackage: PkgxPackage = {
   ],
   "fullPath": "sphinx-doc.org"
 }
+
+export interface SphinxdocorgPackage {
+  name: "sphinx";
+  domain: "sphinx-doc.org";
+  description: "Tool to create intelligent and beautiful documentation";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sphinx-doc.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +sphinx-doc.org -- $SHELL -i";
+  programs: readonly [
+    "sphinx-apidoc",
+    "sphinx-autogen",
+    "sphinx-build",
+    "sphinx-quickstart"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "python.org>=3.8<3.12"
+  ];
+  versions: readonly [
+    "8.2.3",
+    "8.2.2",
+    "8.2.1",
+    "8.2.0",
+    "8.1.3",
+    "8.1.2",
+    "8.1.1",
+    "8.1.0",
+    "8.0.2",
+    "8.0.1",
+    "8.0.0",
+    "7.4.7",
+    "7.4.6",
+    "7.4.5",
+    "7.4.4",
+    "7.4.3",
+    "7.4.2",
+    "7.4.1",
+    "7.4.0",
+    "7.3.7",
+    "7.3.6",
+    "7.3.5",
+    "7.3.4",
+    "7.3.3",
+    "7.3.2",
+    "7.3.1",
+    "7.3.0",
+    "7.2.6",
+    "7.2.5",
+    "7.2.4",
+    "7.2.3",
+    "7.2.2",
+    "7.2.1",
+    "7.2.0",
+    "7.1.2",
+    "7.1.1",
+    "7.1.0",
+    "7.0.1",
+    "7.0.0",
+    "6.2.1",
+    "6.2.0",
+    "6.1.3"
+  ];
+  fullPath: "sphinx-doc.org";
+}

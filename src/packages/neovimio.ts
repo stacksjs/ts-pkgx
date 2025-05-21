@@ -40,3 +40,40 @@ export const neovimioPackage: PkgxPackage = {
     "nvim"
   ]
 }
+
+export interface NeovimioPackage {
+  name: "nvim";
+  domain: "neovim.io";
+  description: "Ambitious Vim-fork focused on extensibility and agility";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/neovim.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) nvim";
+  programs: readonly [
+    "nvim"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "gnu.org/gettext^0"
+  ];
+  versions: readonly [
+    "0.9.5",
+    "0.9.4",
+    "0.9.2",
+    "0.9.1",
+    "0.9.0",
+    "0.8.2",
+    "0.8.1",
+    "0.11.1",
+    "0.11.0",
+    "0.10.4",
+    "0.10.3",
+    "0.10.2",
+    "0.10.1",
+    "0.10.0"
+  ];
+  fullPath: "neovim.io";
+  aliases: readonly [
+    "nvim"
+  ];
+}

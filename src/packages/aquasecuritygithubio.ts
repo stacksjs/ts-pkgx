@@ -18,3 +18,18 @@ export const aquasecuritygithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "aquasecurity.github.io"
 }
+
+export interface AquasecuritygithubioPackage {
+  name: "aquasecurity.github.io";
+  domain: "aquasecurity.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx aquasecurity.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "aquasecurity.github.io";
+}

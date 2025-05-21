@@ -45,3 +45,45 @@ export const macvimorgPackage: PkgxPackage = {
   ],
   "fullPath": "macvim.org"
 }
+
+export interface MacvimorgPackage {
+  name: "macvim.org";
+  domain: "macvim.org";
+  description: "Vim - the text editor - for macOS";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/macvim.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +macvim.org -- $SHELL -i";
+  programs: readonly [
+    "gview",
+    "gvim",
+    "gvimdiff",
+    "gvimtutor",
+    "mview",
+    "mvim",
+    "mvimdiff",
+    "mvimtutor",
+    "view",
+    "vim",
+    "vimdiff",
+    "vimtutor"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "cscope.sourceforge.io",
+    "invisible-island.net/ncurses",
+    "lua.org",
+    "python.org~3.11",
+    "ruby-lang.org",
+    "libsodium.org",
+    "gnu.org/gettext"
+  ];
+  versions: readonly [
+    "181.0.0",
+    "180.0.0",
+    "179.0.0",
+    "178.0.0",
+    "177.0.0"
+  ];
+  fullPath: "macvim.org";
+}

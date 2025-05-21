@@ -23,3 +23,23 @@ export const uriparsergithubioPackage: PkgxPackage = {
   ],
   "fullPath": "uriparser.github.io"
 }
+
+export interface UriparsergithubioPackage {
+  name: "uriparse";
+  domain: "uriparser.github.io";
+  description: ":hocho: Strictly RFC 3986 compliant URI parsing and handling library written in C89; moved from SourceForge to GitHub";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/uriparser.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) uriparse";
+  programs: readonly [
+    "uriparse"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.9.8",
+    "0.9.7"
+  ];
+  fullPath: "uriparser.github.io";
+}

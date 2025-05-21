@@ -18,3 +18,18 @@ export const amrdevelopergithubioPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "amrdeveloper.github.io"
 }
+
+export interface AmrdevelopergithubioPackage {
+  name: "amrdeveloper.github.io";
+  domain: "amrdeveloper.github.io";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx amrdeveloper.github.io";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "amrdeveloper.github.io";
+}

@@ -18,3 +18,18 @@ export const hdfgrouporgPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "hdfgroup.org"
 }
+
+export interface HdfgrouporgPackage {
+  name: "hdfgroup.org";
+  domain: "hdfgroup.org";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx hdfgroup.org";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "hdfgroup.org";
+}

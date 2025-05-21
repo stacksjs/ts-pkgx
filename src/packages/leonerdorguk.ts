@@ -18,3 +18,18 @@ export const leonerdorgukPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "leonerd.org.uk"
 }
+
+export interface LeonerdorgukPackage {
+  name: "leonerd.org.uk";
+  domain: "leonerd.org.uk";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx leonerd.org.uk";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "leonerd.org.uk";
+}

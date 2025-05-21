@@ -29,3 +29,29 @@ export const luarocksorgPackage: PkgxPackage = {
   ],
   "fullPath": "luarocks.org"
 }
+
+export interface LuarocksorgPackage {
+  name: "luarocks";
+  domain: "luarocks.org";
+  description: "LuaRocks is the package manager for the Lua programming language.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/luarocks.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +luarocks.org -- $SHELL -i";
+  programs: readonly [
+    "luarocks",
+    "luarocks-admin"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "lua.org",
+    "info-zip.org/unzip"
+  ];
+  versions: readonly [
+    "3.9.2",
+    "3.11.1",
+    "3.11.0",
+    "3.10.0"
+  ];
+  fullPath: "luarocks.org";
+}

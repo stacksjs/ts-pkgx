@@ -63,3 +63,63 @@ export const surrealdbcomPackage: PkgxPackage = {
   ],
   "fullPath": "surrealdb.com"
 }
+
+export interface SurrealdbcomPackage {
+  name: "surreal";
+  domain: "surrealdb.com";
+  description: "A scalable, distributed, collaborative, document-graph database, for the realtime web";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/surrealdb.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) surreal";
+  programs: readonly [
+    "surreal"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openssl.org^1"
+  ];
+  versions: readonly [
+    "2023.9.1",
+    "2.3.2",
+    "2.3.1",
+    "2.3.0",
+    "2.2.3",
+    "2.2.2",
+    "2.2.1",
+    "2.2.0",
+    "2.1.5",
+    "2.1.4",
+    "2.1.3",
+    "2.1.2",
+    "2.1.1",
+    "2.1.0",
+    "2.0.5",
+    "2.0.4",
+    "2.0.3",
+    "2.0.2",
+    "2.0.1",
+    "2.0.0",
+    "1.5.6",
+    "1.5.5",
+    "1.5.4",
+    "1.5.3",
+    "1.5.2",
+    "1.5.1",
+    "1.5.0",
+    "1.4.2",
+    "1.4.0",
+    "1.3.1",
+    "1.3.0",
+    "1.2.2",
+    "1.2.1",
+    "1.2.0",
+    "1.1.1",
+    "1.1.0",
+    "1.0.2",
+    "1.0.1",
+    "1.0.0",
+    "0.0.0"
+  ];
+  fullPath: "surrealdb.com";
+}

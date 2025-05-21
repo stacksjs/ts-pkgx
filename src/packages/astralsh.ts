@@ -18,3 +18,18 @@ export const astralshPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "astral.sh"
 }
+
+export interface AstralshPackage {
+  name: "astral.sh";
+  domain: "astral.sh";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx astral.sh";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "astral.sh";
+}

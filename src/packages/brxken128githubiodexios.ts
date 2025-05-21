@@ -25,3 +25,25 @@ export const brxken128githubiodexiosPackage: PkgxPackage = {
     "dexios"
   ]
 }
+
+export interface Brxken128githubiodexiosPackage {
+  name: "dexios";
+  domain: "brxken128.github.io/dexios";
+  description: "A secure file encryption utility, written in Rust.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/brxken128.github.io/dexios/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) dexios";
+  programs: readonly [
+    "dexios"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "8.8.1"
+  ];
+  fullPath: "brxken128.github.io/dexios";
+  aliases: readonly [
+    "dexios"
+  ];
+}

@@ -18,3 +18,18 @@ export const maaslalanicomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "maaslalani.com"
 }
+
+export interface MaaslalanicomPackage {
+  name: "maaslalani.com";
+  domain: "maaslalani.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx maaslalani.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "maaslalani.com";
+}

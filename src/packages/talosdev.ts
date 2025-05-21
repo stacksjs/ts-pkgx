@@ -50,3 +50,50 @@ export const talosdevPackage: PkgxPackage = {
     "talosctl"
   ]
 }
+
+export interface TalosdevPackage {
+  name: "talosctl";
+  domain: "talos.dev";
+  description: "CLI for out-of-band management of Kubernetes nodes created by Talos";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/talos.dev/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) talosctl";
+  programs: readonly [
+    "talosctl"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "1.9.6",
+    "1.9.5",
+    "1.9.4",
+    "1.9.3",
+    "1.9.2",
+    "1.9.1",
+    "1.9.0",
+    "1.8.4",
+    "1.8.3",
+    "1.8.2",
+    "1.8.1",
+    "1.8.0",
+    "1.7.7",
+    "1.7.6",
+    "1.7.5",
+    "1.7.4",
+    "1.7.3",
+    "1.7.2",
+    "1.7.1",
+    "1.7.0",
+    "1.6.8",
+    "1.6.7",
+    "1.6.6",
+    "1.10.2",
+    "1.10.1",
+    "1.10.0"
+  ];
+  fullPath: "talos.dev";
+  aliases: readonly [
+    "talosctl"
+  ];
+}

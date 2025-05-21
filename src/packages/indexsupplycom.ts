@@ -18,3 +18,18 @@ export const indexsupplycomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "indexsupply.com"
 }
+
+export interface IndexsupplycomPackage {
+  name: "indexsupply.com";
+  domain: "indexsupply.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx indexsupply.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "indexsupply.com";
+}

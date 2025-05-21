@@ -18,3 +18,18 @@ export const digitaloceancomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "digitalocean.com"
 }
+
+export interface DigitaloceancomPackage {
+  name: "digitalocean.com";
+  domain: "digitalocean.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx digitalocean.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "digitalocean.com";
+}

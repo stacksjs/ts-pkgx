@@ -45,3 +45,45 @@ export const opensshcomPackage: PkgxPackage = {
   ],
   "fullPath": "openssh.com"
 }
+
+export interface OpensshcomPackage {
+  name: "openssh.com";
+  domain: "openssh.com";
+  description: "";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openssh.com/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +openssh.com -- $SHELL -i";
+  programs: readonly [
+    "scp",
+    "sftp",
+    "slogin",
+    "ssh",
+    "ssh-add",
+    "ssh-agent",
+    "ssh-keygen",
+    "ssh-keyscan",
+    "sshd"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "nlnetlabs.nl/ldns",
+    "developers.yubico.com/libfido2",
+    "openssl.org",
+    "kerberos.org",
+    "thrysoee.dk/editline",
+    "github.com/besser82/libxcrypt",
+    "zlib.net",
+    "linuxlinux-pam.org",
+    "linux-pam.org"
+  ];
+  versions: readonly [
+    "9.9.0",
+    "9.8.0",
+    "9.7.0",
+    "9.6.0",
+    "9.5.0",
+    "10.0.0"
+  ];
+  fullPath: "openssh.com";
+}

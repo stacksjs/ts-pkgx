@@ -24,3 +24,24 @@ export const furycoPackage: PkgxPackage = {
   ],
   "fullPath": "fury.co"
 }
+
+export interface FurycoPackage {
+  name: "fury";
+  domain: "fury.co";
+  description: "Gemfury CLI";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fury.co/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) fury";
+  programs: readonly [
+    "fury"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.23.0",
+    "0.22.0",
+    "0.21.0"
+  ];
+  fullPath: "fury.co";
+}

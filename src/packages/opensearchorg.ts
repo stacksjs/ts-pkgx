@@ -38,3 +38,38 @@ export const opensearchorgPackage: PkgxPackage = {
   ],
   "fullPath": "opensearch.org"
 }
+
+export interface OpensearchorgPackage {
+  name: "opensearch";
+  domain: "opensearch.org";
+  description: "🔎 Open source distributed and RESTful search engine.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/opensearch.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +opensearch.org -- $SHELL -i";
+  programs: readonly [
+    "opensearch",
+    "opensearch-keystore",
+    "opensearch-plugin",
+    "opensearch-shard"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "openjdk.org^21",
+    "openmp.llvm.org^17"
+  ];
+  versions: readonly [
+    "3.0.0",
+    "2.19.1",
+    "2.18.0",
+    "2.17.1",
+    "2.17.0",
+    "2.16.0",
+    "2.15.0",
+    "2.14.0",
+    "2.13.0",
+    "2.12.0",
+    "2.11.1"
+  ];
+  fullPath: "opensearch.org";
+}

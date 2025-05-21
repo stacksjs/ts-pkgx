@@ -18,3 +18,18 @@ export const googlecomPackage: PkgxPackage = {
   "versions": [],
   "fullPath": "google.com"
 }
+
+export interface GooglecomPackage {
+  name: "google.com";
+  domain: "google.com";
+  description: "";
+  packageYmlUrl: "";
+  homepageUrl: "";
+  githubUrl: "";
+  installCommand: "pkgx google.com";
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  fullPath: "google.com";
+}

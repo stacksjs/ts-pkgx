@@ -25,3 +25,25 @@ export const jlessioPackage: PkgxPackage = {
   ],
   "fullPath": "jless.io"
 }
+
+export interface JlessioPackage {
+  name: "jless";
+  domain: "jless.io";
+  description: "jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data.";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jless.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) jless";
+  programs: readonly [
+    "jless"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "linuxx.org/xcb@1",
+    "x.org/xcb@1"
+  ];
+  versions: readonly [
+    "0.9.0"
+  ];
+  fullPath: "jless.io";
+}

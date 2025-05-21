@@ -27,3 +27,27 @@ export const watchexecgithubioPackage: PkgxPackage = {
   ],
   "fullPath": "watchexec.github.io"
 }
+
+export interface WatchexecgithubioPackage {
+  name: "watchexec";
+  domain: "watchexec.github.io";
+  description: "Executes commands in response to file modifications";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/watchexec.github.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) watchexec";
+  programs: readonly [
+    "watchexec"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "2.3.2",
+    "2.3.1",
+    "2.3.0",
+    "2.2.1",
+    "2.2.0",
+    "2.1.2"
+  ];
+  fullPath: "watchexec.github.io";
+}

@@ -24,3 +24,24 @@ export const jsonnetorgPackage: PkgxPackage = {
   ],
   "fullPath": "jsonnet.org"
 }
+
+export interface JsonnetorgPackage {
+  name: "jsonnet";
+  domain: "jsonnet.org";
+  description: "Jsonnet - The data templating language";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jsonnet.org/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) +jsonnet.org -- $SHELL -i";
+  programs: readonly [
+    "jsonnet",
+    "jsonnetfmt"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.21.0",
+    "0.20.0"
+  ];
+  fullPath: "jsonnet.org";
+}

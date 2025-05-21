@@ -27,3 +27,27 @@ export const acornioacorncliPackage: PkgxPackage = {
     "acorn-cli"
   ]
 }
+
+export interface AcornioacorncliPackage {
+  name: "acorn";
+  domain: "acorn.io/acorn-cli";
+  description: "A simple application deployment framework built on Kubernetes";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/acorn.io/acorn-cli/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) acorn";
+  programs: readonly [
+    "acorn"
+  ];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [
+    "0.9.2",
+    "0.10.1",
+    "0.10.0"
+  ];
+  fullPath: "acorn.io/acorn-cli";
+  aliases: readonly [
+    "acorn-cli"
+  ];
+}

@@ -39,3 +39,39 @@ export const mpvioPackage: PkgxPackage = {
   ],
   "fullPath": "mpv.io"
 }
+
+export interface MpvioPackage {
+  name: "mpv";
+  domain: "mpv.io";
+  description: "Media player based on MPlayer and mplayer2";
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mpv.io/package.yml";
+  homepageUrl: "";
+  githubUrl: "https://github.com/pkgxdev/pantry/";
+  installCommand: "sh <(curl https://pkgx.sh) mpv";
+  programs: readonly [
+    "mpv"
+  ];
+  companions: readonly [];
+  dependencies: readonly [
+    "ffmpeg.org",
+    "libjpeg-turbo.org@2",
+    "libarchive.org@3",
+    "github.com/libass/libass^0.17",
+    "videolan.org/libplacebo@6",
+    "littlecms.com@2",
+    "luajit.org@2",
+    "mujs.com@1",
+    "freedesktop.org/uchardet@0",
+    "vapoursynth.com@66",
+    "yt-dlp.org",
+    "linuxalsa-project.org/alsa-lib@1github.com/adah1972/libunibreak@6",
+    "alsa-project.org/alsa-lib@1",
+    "github.com/adah1972/libunibreak@6"
+  ];
+  versions: readonly [
+    "0.40.0",
+    "0.39.0",
+    "0.38.0"
+  ];
+  fullPath: "mpv.io";
+}
