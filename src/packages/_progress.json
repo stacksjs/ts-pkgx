@@ -1,0 +1,21 @@
+{
+  "total": 834,
+  "completed": 3,
+  "successful": 3,
+  "failed": 0,
+  "failedPackages": [],
+  "updatedAliases": {
+    "node": "nodejs.org",
+    "python": "python.org",
+    "go": "go.dev",
+    "rust": "rust-lang.org",
+    "ruby": "ruby-lang.org",
+    "php": "php.net",
+    "perl": "perl.org",
+    "deno": "deno.land",
+    "bun": "bun.sh",
+    "auto-gpt": "agpt.co"
+  },
+  "lastUpdated": "2025-05-20T23:50:13.997Z",
+  "fetchMode": "github-api"
+}

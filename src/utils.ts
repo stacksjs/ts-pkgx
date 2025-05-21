@@ -78,7 +78,7 @@ export function shouldProceedWithGitHubRequest(): boolean {
 }
 
 /**
- * Fetches project list from the GitHub API
+ * Fetches project list from the GitHub API, including nested projects
  * @param limit - Optional limit on the number of projects to return (0 for unlimited)
  * @returns Array of project names from pkgxdev/pantry repository
  */
@@ -134,6 +134,28 @@ export async function fetchPackageListFromGitHub(limit = 0): Promise<string[]> {
     // Add all base projects first
     allProjects.push(...baseProjects)
 
+    // Process known nested projects
+    const nestedProjectPromises: Promise<string[]>[] = []
+
+    // Check for nested projects in domains that commonly have them
+    // We'll check a small number of domains to avoid hitting rate limits
+    const domainsToCheck = ['agwa.name', 'acorn.io', 'apache.org', 'aquasecurity.github.io', 'aws.amazon.com'].filter(
+      domain => baseProjects.includes(domain),
+    )
+
+    for (const domain of domainsToCheck) {
+      // Check for nested projects in this domain
+      nestedProjectPromises.push(fetchNestedProjects(domain))
+    }
+
+    // Wait for all nested project checks to complete
+    const nestedProjectsList = await Promise.all(nestedProjectPromises)
+
+    // Add all nested projects
+    for (const nestedProjects of nestedProjectsList) {
+      allProjects.push(...nestedProjects)
+    }
+
     // Add known nested projects directly from a hardcoded list to avoid GitHub API rate limiting
     const knownNestedProjects = [
       'acorn.io/acorn-cli',
@@ -173,7 +195,7 @@ export async function fetchPackageListFromGitHub(limit = 0): Promise<string[]> {
       'blake2.net/libb2',
     ]
 
-    // Add the known nested projects
+    // Add the known nested projects if they don't already exist
     for (const nestedProject of knownNestedProjects) {
       if (!allProjects.includes(nestedProject)) {
         console.error(`Adding known nested project: ${nestedProject}`)
@@ -181,7 +203,7 @@ export async function fetchPackageListFromGitHub(limit = 0): Promise<string[]> {
       }
     }
 
-    console.error(`Total of ${allProjects.length} projects found (including known nested paths)`)
+    console.error(`Total of ${allProjects.length} projects found (including nested paths)`)
 
     // Apply limit if specified (0 means no limit)
     return limit > 0 ? allProjects.slice(0, limit) : allProjects
@@ -249,5 +271,68 @@ export async function fetchPackageListFromGitHub(limit = 0): Promise<string[]> {
 
     // Apply limit if specified (0 means no limit)
     return limit > 0 ? fallbackList.slice(0, limit) : fallbackList
+  }
+}
+
+/**
+ * Fetches nested projects for a given domain from GitHub API
+ * @param domain Domain to check for nested projects
+ * @returns Promise resolving to array of nested project paths
+ */
+async function fetchNestedProjects(domain: string): Promise<string[]> {
+  try {
+    // Check if we should proceed based on rate limits
+    if (!shouldProceedWithGitHubRequest()) {
+      console.error(`Skipping nested project check for ${domain} due to rate limits`)
+      return []
+    }
+
+    console.error(`Checking for nested projects in ${domain}...`)
+
+    // API URL for the domain directory
+    const apiUrl = `https://api.github.com/repos/pkgxdev/pantry/contents/projects/${domain}`
+
+    const response = await fetch(apiUrl, {
+      headers: {
+        'Accept': 'application/vnd.github.v3+json',
+        'User-Agent': 'pkgx-tools',
+      },
+      // Add a short timeout
+      signal: AbortSignal.timeout(10000),
+    })
+
+    // Save rate limit information
+    saveRateLimitInfo(response.headers)
+
+    // Handle errors
+    if (!response.ok) {
+      if (response.status === 404) {
+        console.error(`No nested projects found for ${domain} (404)`)
+      }
+      else {
+        console.error(`GitHub API error for ${domain}: ${response.status} ${response.statusText}`)
+      }
+      return []
+    }
+
+    const data = await response.json() as any[]
+
+    // Extract nested project paths
+    const nestedProjects = data
+      .filter(item => item.type === 'dir')
+      .map(item => `${domain}/${item.name}`)
+
+    if (nestedProjects.length > 0) {
+      console.error(`Found ${nestedProjects.length} nested projects for ${domain}: ${nestedProjects.join(', ')}`)
+    }
+    else {
+      console.error(`No nested projects found for ${domain}`)
+    }
+
+    return nestedProjects
+  }
+  catch (error) {
+    console.error(`Error checking nested projects for ${domain}:`, error)
+    return []
   }
 }

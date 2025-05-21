@@ -1,67 +1,97 @@
 # Configuration
 
-_This is just an example of the ts-starter docs._
+ts-pkgx provides various configuration options for both the CLI and the library API.
 
-The Reverse Proxy can be configured using a `reverse-proxy.config.ts` _(or `reverse-proxy.config.js`)_ file and it will be automatically loaded when running the `reverse-proxy` command.
+## CLI Configuration
 
-```ts
-// reverse-proxy.config.{ts,js}
-import type { ReverseProxyOptions } from '@stacksjs/rpx'
-import os from 'node:os'
-import path from 'node:path'
-
-const config: ReverseProxyOptions = {
-  /**
-   * The from URL to proxy from.
-   * Default: localhost:5173
-   */
-  from: 'localhost:5173',
-
-  /**
-   * The to URL to proxy to.
-   * Default: stacks.localhost
-   */
-  to: 'stacks.localhost',
-
-  /**
-   * The HTTPS settings.
-   * Default: true
-   * If set to false, the proxy will use HTTP.
-   * If set to true, the proxy will use HTTPS.
-   * If set to an object, the proxy will use HTTPS with the provided settings.
-   */
-  https: {
-    domain: 'stacks.localhost',
-    hostCertCN: 'stacks.localhost',
-    caCertPath: path.join(os.homedir(), '.stacks', 'ssl', `stacks.localhost.ca.crt`),
-    certPath: path.join(os.homedir(), '.stacks', 'ssl', `stacks.localhost.crt`),
-    keyPath: path.join(os.homedir(), '.stacks', 'ssl', `stacks.localhost.crt.key`),
-    altNameIPs: ['127.0.0.1'],
-    altNameURIs: ['localhost'],
-    organizationName: 'stacksjs.org',
-    countryName: 'US',
-    stateName: 'California',
-    localityName: 'Playa Vista',
-    commonName: 'stacks.localhost',
-    validityDays: 180,
-    verbose: false,
-  },
-
-  /**
-   * The verbose setting.
-   * Default: false
-   * If set to true, the proxy will log more information.
-   */
-  verbose: false,
-}
-
-export default config
-```
-
-_Then run:_
+When using the CLI tool, you can specify the following options:
 
 ```bash
-./rpx start
+# Fetch a single package
+bun run pkgx:fetch node
+
+# With custom output directory
+bun run pkgx:fetch node --output ./data/packages
+
+# Fetch all packages
+bun run pkgx:fetch-all
+
+# Set a custom timeout (milliseconds)
+bun run pkgx:fetch-all --timeout 180000 --output ./data/pkgx-packages
+
+# Enable debug mode (saves screenshots and additional logs)
+bun run pkgx:fetch node --debug
 ```
 
-To learn more, head over to the [documentation](https://reverse-proxy.sh/).
+## Package Fetch Options
+
+The `fetchPkgxPackage` and `fetchAndSaveAllPackages` functions accept an options object with the following properties:
+
+```typescript
+interface PackageFetchOptions {
+  /**
+   * Timeout in milliseconds for fetching operations
+   * @default 30000
+   */
+  timeout?: number
+
+  /**
+   * Directory to save package data
+   * @default 'packages'
+   */
+  outputDir?: string
+
+  /**
+   * Enable debug mode to save screenshots and additional info
+   * @default false
+   */
+  debug?: boolean
+}
+```
+
+## GitHub API Cache
+
+For better performance and to avoid hitting GitHub API rate limits, ts-pkgx implements a caching mechanism for GitHub API requests. The cache is stored in the `github-cache.json` file in the project root.
+
+You can configure the cache duration when using the API:
+
+```typescript
+// In milliseconds, default is 1 hour
+const cacheDuration = 3600000;
+
+// When using the CLI
+bun run pkgx:fetch-all --github-cache-duration 7200000 // 2 hours
+```
+
+## Package Aliases
+
+ts-pkgx maintains a map of common package aliases in the `PACKAGE_ALIASES` object. This is used to resolve package names to their full domain names.
+
+```typescript
+// Example aliases
+const PACKAGE_ALIASES: Record<string, string> = {
+  node: 'nodejs.org',
+  python: 'python.org',
+  go: 'go.dev',
+  rust: 'rust-lang.org',
+  // ...
+}
+```
+
+You can extend this map with your own aliases or use it to resolve package names in your code.
+
+## Output Format
+
+By default, ts-pkgx generates TypeScript files for each package. You can also configure it to output JSON files instead:
+
+```bash
+# CLI option
+bun run pkgx:fetch node --json
+
+# API option
+const result = await fetchAndSavePackage('node', outputDir, timeout, true); // true = save as JSON
+```
+
+## Advanced Configuration
+
+For more advanced configuration options and examples, see the [Advanced](./advanced.md) section.

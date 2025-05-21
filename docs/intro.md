@@ -1,49 +1,54 @@
-<p align="center"><img src="https://github.com/stacksjs/rpx/blob/main/.github/art/cover.jpg?raw=true" alt="Social Card of this repo"></p>
+<p align="center"><img src="https://github.com/stacksjs/ts-pkgx/blob/main/.github/art/cover.jpg?raw=true" alt="Social Card of ts-pkgx"></p>
 
-# A Better Developer Experience
+# Introduction to ts-pkgx
 
-> A TypeScript Starter Kit that will help you bootstrap your next project without minimal opinion.
+> A TypeScript library for fetching and working with pkgx.dev package information
 
-# ts-pkgx
+ts-pkgx is a specialized library that provides tools for fetching, storing, and accessing package data from [pkgx.dev](https://pkgx.dev). It offers both programmatic APIs and CLI tools for developers who want to work with pkgx packages in their TypeScript applications.
 
-This is an opinionated TypeScript Starter kit to help kick-start development of your next Bun package.
+## What is pkgx?
+
+[pkgx.dev](https://pkgx.dev) is a package manager that simplifies the installation of development tools and dependencies. It provides a central repository of packages that can be easily installed and managed.
+
+## Core Features
+
+- **Package Fetching**: Retrieve detailed package information from pkgx.dev
+- **TypeScript Integration**: Fully typed interfaces for all package data
+- **CLI Tools**: Command line utilities for fetching and managing packages
+- **Alias Support**: Handle package aliases (e.g., "node" for "nodejs.org")
+- **Nested Paths**: Support for packages with nested paths (e.g., "agwa.name/git-crypt")
+- **Automatic Parsing**: Convert package data into TypeScript files for easy use
+
+## Why ts-pkgx?
+
+ts-pkgx simplifies the process of working with pkgx.dev package data in TypeScript projects. Instead of manually scraping the pkgx.dev website or trying to parse package information yourself, ts-pkgx provides a clean, type-safe interface for accessing this data.
 
 ## Get Started
 
-It's rather simple to get your package development started:
+To start using ts-pkgx in your project, check out the [Installation](./install.md) guide.
 
 ```bash
-# you may use this GitHub template or the following command:
-bunx degit stacksjs/ts-starter my-pkg
-cd my-pkg
+# Install with bun
+bun install ts-pkgx
 
- # if you don't have pnpm installed, run `npm i -g pnpm`
-bun i # install all deps
-bun run build # builds the library for production-ready use
-
-# after you have successfully committed, you may create a "release"
-bun run release # automates git commits, versioning, and changelog generations
+# Quick example: fetch package info
+bun run pkgx:fetch node
 ```
 
-_Check out the package.json scripts for more commands._
+## Project Structure
 
-### Developer Experience (DX)
+The project follows a clean and maintainable structure:
 
-This Starter Kit comes pre-configured with the following:
-
-- [Powerful Build Process](https://github.com/oven-sh/bun) - via Bun
-- [Fully Typed APIs](https://www.typescriptlang.org/) - via TypeScript
-- [Documentation-ready](https://vitepress.dev/) - via VitePress
-- [CLI & Binary](https://www.npmjs.com/package/bunx) - via Bun & CAC
-- [Be a Good Commitizen](https://www.npmjs.com/package/git-cz) - pre-configured Commitizen & git-cz setup to simplify semantic git commits, versioning, and changelog generations
-- [Built With Testing In Mind](https://bun.sh/docs/cli/test) - pre-configured unit-testing powered by [Bun](https://bun.sh/docs/cli/test)
-- [Renovate](https://renovatebot.com/) - optimized & automated PR dependency updates
-- [ESLint](https://eslint.org/) - for code linting _(and formatting)_
-- [GitHub Actions](https://github.com/features/actions) - runs your CI _(fixes code style issues, tags releases & creates its changelogs, runs the test suite, etc.)_
+- `src/`: Source code for the library
+  - `packages/`: Package definitions and utilities
+  - `tools/`: Utility scripts for package handling
+  - `types.ts`: TypeScript interfaces
+- `bin/`: CLI tools
+- `test/`: Comprehensive test suite
 
 ## Changelog
 
-Please see our [releases](https://github.com/stacksjs/stacks/releases) page for more information on what has changed recently.
+Please see our [releases](https://github.com/stacksjs/ts-pkgx/releases) page for more information on what has changed recently.
 
 ## Contributing
 
@@ -75,13 +80,13 @@ We would like to extend our thanks to the following sponsors for funding Stacks 
 ## Credits
 
 - [Chris Breuer](https://github.com/chrisbbreuer)
-- [All Contributors](https://github.com/stacksjs/rpx/graphs/contributors)
+- [All Contributors](https://github.com/stacksjs/ts-pkgx/graphs/contributors)
 
 ## License
 
-The MIT License (MIT). Please see [LICENSE](https://github.com/stacksjs/ts-starter/tree/main/LICENSE.md) for more information.
+The MIT License (MIT). Please see [LICENSE](https://github.com/stacksjs/ts-pkgx/tree/main/LICENSE.md) for more information.
 
-Made with 💙
+Made with 💙 by the Stacks community.
 
 <!-- Badges -->
 

@@ -39,6 +39,14 @@ export interface PkgxPackage {
   companions: string[]
   dependencies: string[]
   versions: string[]
+  /**
+   * List of alternative names or aliases for this package
+   */
+  aliases?: string[]
+  /**
+   * The full path to the package, including any nested paths (e.g. 'agwa.name/git-crypt')
+   */
+  fullPath?: string
 }
 
 /**
@@ -56,6 +64,12 @@ export interface PackageFetchOptions {
    * @default 'packages'
    */
   outputDir?: string
+
+  /**
+   * Enable debug mode to save screenshots and additional info
+   * @default false
+   */
+  debug?: boolean
 }
 
 export interface FetchPkgxPackageOptions {
