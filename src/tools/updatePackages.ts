@@ -8,7 +8,6 @@ import path from 'node:path'
 import process from 'node:process'
 import { cleanupBrowserResources, fetchPkgxPackage } from '../fetch'
 import { fetchPackageListFromGitHub } from '../utils'
-import { convertDomainToVarName, guessOriginalDomain } from './domainUtils'
 
 // The packages directory path
 const PACKAGES_DIR = path.join(process.cwd(), 'src', 'packages')
