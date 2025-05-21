@@ -2,7 +2,7 @@
   "name": "ts-pkgx",
   "type": "module",
   "version": "0.0.0",
-  "description": "A simple TypeScript starter kit using Bun.",
+  "description": "A library & CLI for managing packages",
   "author": "Chris Breuer <chris@stacksjs.org>",
   "license": "MIT",
   "homepage": "https://github.com/stacksjs/ts-starter#readme",
@@ -13,17 +13,17 @@
   "bugs": {
     "url": "https://github.com/stacksjs/ts-starter/issues"
   },
-  "keywords": ["typescript", "starter", "kit", "bun", "package"],
+  "keywords": ["pkgx", "pantry", "homebrew", "typescript", "bun", "package", "cli", "library"],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/src/index.js"
     },
     "./*": {
       "import": "./dist/*"
     }
   },
-  "module": "./dist/index.js",
+  "module": "./dist/src/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
     "pkgx-tools": "./dist/bin/cli.js"
