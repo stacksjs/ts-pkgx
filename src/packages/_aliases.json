@@ -1,0 +1,12 @@
+{
+  "node": "nodejs.org",
+  "python": "python.org",
+  "go": "go.dev",
+  "rust": "rust-lang.org",
+  "ruby": "ruby-lang.org",
+  "php": "php.net",
+  "perl": "perl.org",
+  "deno": "deno.land",
+  "bun": "bun.sh",
+  "auto-gpt": "agpt.co"
+}

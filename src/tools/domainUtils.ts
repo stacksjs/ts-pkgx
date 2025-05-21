@@ -13,6 +13,7 @@ export function convertDomainToVarName(domain: string): string {
   if (domain.includes('/')) {
     const [parentDomain, subPath] = domain.split('/')
     // Convert domains like 'agwa.name/git-crypt' to 'agwanamegitcrypt'
+    // Remove dashes for variable names since they're not valid in variable names
     return parentDomain.replace(/\./g, '') + subPath.replace(/-/g, '').toLowerCase()
   }
 
@@ -30,7 +31,8 @@ export function convertDomainToFileName(domain: string): string {
   if (domain.includes('/')) {
     const [parentDomain, subPath] = domain.split('/')
     // Convert domain like 'agwa.name/git-crypt' to 'agwaname-gitcrypt'
-    return `${parentDomain.replace(/\./g, '')}-${subPath.replace(/-/g, '').toLowerCase()}`
+    // Keep dashes in the subPath to maintain readability and uniqueness
+    return `${parentDomain.replace(/\./g, '')}-${subPath}`
   }
 
   // Regular domains like 'bun.sh' -> 'bunsh'
@@ -45,10 +47,14 @@ export function convertDomainToFileName(domain: string): string {
 export function guessOriginalDomain(fileName: string): string {
   // First check if it's a nested path (has a dash)
   if (fileName.includes('-')) {
-    // Could be a nested path like 'agwaname-gitcrypt'
-    const parts = fileName.split('-')
+    // Could be a nested path like 'agwaname-git-crypt'
+    // We'll use the first dash to identify parent domain vs subpath
+    const firstDashIndex = fileName.indexOf('-')
+    const parentDomainFileName = fileName.substring(0, firstDashIndex)
+    const subPath = fileName.substring(firstDashIndex + 1)
+
     // Try to reconstruct domain parts
-    let domain = parts[0]
+    let domain = parentDomainFileName
     // Add dots for common domain extensions
     if (domain.endsWith('org'))
       domain = domain.replace(/org$/, '.org')
@@ -65,8 +71,8 @@ export function guessOriginalDomain(fileName: string): string {
     if (domain.endsWith('name'))
       domain = domain.replace(/name$/, '.name')
 
-    // Reconstruct the nested path
-    return `${domain}/${parts.slice(1).join('-')}`
+    // Reconstruct the nested path, preserving dashes in the subpath
+    return `${domain}/${subPath}`
   }
 
   // Not a nested path, just add dots for common domains

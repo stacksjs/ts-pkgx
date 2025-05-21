@@ -25,7 +25,7 @@ describe('Domain Utilities', () => {
   describe('convertDomainToFileName', () => {
     test('should convert domains to filename-safe strings', () => {
       expect(convertDomainToFileName('example.com')).toBe('examplecom')
-      expect(convertDomainToFileName('agwa.name/git-crypt')).toBe('agwaname-gitcrypt')
+      expect(convertDomainToFileName('agwa.name/git-crypt')).toBe('agwaname-git-crypt')
       expect(convertDomainToFileName('aws.amazon.com/cli')).toBe('awsamazoncom-cli')
     })
   })
@@ -39,7 +39,7 @@ describe('Domain Utilities', () => {
     })
 
     test('should guess nested paths from filenames with dashes', () => {
-      expect(guessOriginalDomain('agwaname-gitcrypt')).toBe('agwa.name/gitcrypt')
+      expect(guessOriginalDomain('agwaname-git-crypt')).toBe('agwa.name/git-crypt')
       expect(guessOriginalDomain('apacheorg-httpd')).toBe('apache.org/httpd')
     })
   })

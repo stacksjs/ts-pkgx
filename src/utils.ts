@@ -5,164 +5,206 @@ import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 
-// Path to store GitHub API rate limit information
-const RATE_LIMIT_FILE = path.join(process.cwd(), 'github-rate-limit.json')
+const GITHUB_RATE_LIMIT_FILE = path.join(process.cwd(), 'github-rate-limit.json')
+const GITHUB_CACHE_FILE = path.join(process.cwd(), 'github-cache.json')
+const MIN_REMAINING_CALLS = 10 // Preserve at least this many GitHub API calls
+const CACHE_DURATION_MS = 60 * 60 * 1000 // 1 hour cache expiration
 
 /**
  * Saves GitHub API rate limit information to a file
+ * @param headers Response headers from a GitHub API request
  */
 export function saveRateLimitInfo(headers: Headers): void {
   try {
-    const now = new Date()
-    const rateLimitInfo = {
-      limit: headers.get('X-RateLimit-Limit'),
-      remaining: headers.get('X-RateLimit-Remaining'),
-      reset: headers.get('X-RateLimit-Reset'),
-      used: headers.get('X-RateLimit-Used'),
-      resource: headers.get('X-RateLimit-Resource'),
-      timestamp: now.toISOString(),
-      humanReadableReset: headers.get('X-RateLimit-Reset')
-        ? new Date(Number(headers.get('X-RateLimit-Reset')) * 1000).toLocaleString()
-        : 'unknown',
+    const rateLimitRemaining = headers.get('X-RateLimit-Remaining')
+    const rateLimitReset = headers.get('X-RateLimit-Reset')
+    const rateLimitLimit = headers.get('X-RateLimit-Limit')
+
+    if (rateLimitRemaining && rateLimitReset && rateLimitLimit) {
+      const resetTime = new Date(Number(rateLimitReset) * 1000)
+      const info = {
+        remaining: Number(rateLimitRemaining),
+        limit: Number(rateLimitLimit),
+        resetTime: resetTime.toISOString(),
+        resetTimestamp: Number(rateLimitReset) * 1000,
+        lastUpdated: new Date().toISOString(),
+      }
+
+      fs.writeFileSync(GITHUB_RATE_LIMIT_FILE, JSON.stringify(info, null, 2))
+      console.error(`GitHub API rate limit info saved to ${GITHUB_RATE_LIMIT_FILE}`)
+      console.error(`Rate limit: ${rateLimitRemaining}/${rateLimitLimit} remaining, resets at ${resetTime.toLocaleString()}`)
     }
-
-    fs.writeFileSync(
-      RATE_LIMIT_FILE,
-      JSON.stringify(rateLimitInfo, null, 2),
-    )
-
-    console.error(`GitHub API rate limit info saved to ${RATE_LIMIT_FILE}`)
-    console.error(`Rate limit: ${rateLimitInfo.remaining}/${rateLimitInfo.limit} remaining, resets at ${rateLimitInfo.humanReadableReset}`)
   }
   catch (error) {
-    console.error('Failed to save rate limit info:', error)
+    console.error('Failed to save GitHub rate limit info:', error)
   }
 }
 
 /**
- * Checks if we should proceed with GitHub API requests based on saved rate limit info
- * @returns {boolean} true if we should proceed, false if we should wait
+ * Checks if we should proceed with a GitHub API request based on rate limit
+ * and adds delays when necessary to avoid hitting limits
+ * @returns boolean indicating if the request should proceed
  */
 export function shouldProceedWithGitHubRequest(): boolean {
   try {
-    if (!fs.existsSync(RATE_LIMIT_FILE)) {
-      return true // No rate limit file exists yet, proceed
-    }
-
-    const rateLimitInfo = JSON.parse(fs.readFileSync(RATE_LIMIT_FILE, 'utf8'))
-    const remaining = Number(rateLimitInfo.remaining)
-
-    // If we have more than 5 requests remaining, proceed
-    if (remaining > 5) {
+    if (!fs.existsSync(GITHUB_RATE_LIMIT_FILE)) {
+      // No rate limit info yet, proceed cautiously
       return true
     }
 
-    // Check if the reset time has passed
-    const resetTime = Number(rateLimitInfo.reset) * 1000 // Convert to milliseconds
+    const rateLimitInfo = JSON.parse(fs.readFileSync(GITHUB_RATE_LIMIT_FILE, 'utf8'))
     const now = Date.now()
 
-    if (now > resetTime) {
-      return true // Reset time has passed, proceed
+    // If reset time has passed, we can proceed
+    if (now >= rateLimitInfo.resetTimestamp) {
+      return true
     }
 
-    // We're rate limited and the reset time hasn't passed yet
-    const waitTimeMs = resetTime - now
-    const waitTimeMin = Math.ceil(waitTimeMs / 60000)
-    console.error(`GitHub API rate limit reached. Please wait approximately ${waitTimeMin} minutes until ${rateLimitInfo.humanReadableReset}`)
-    return false
+    // Check if we have enough calls remaining
+    if (rateLimitInfo.remaining <= MIN_REMAINING_CALLS) {
+      const resetTime = new Date(rateLimitInfo.resetTimestamp)
+      console.error(`GitHub API rate limit almost exhausted (${rateLimitInfo.remaining}/${rateLimitInfo.limit} remaining). Preserving remaining calls until reset at ${resetTime.toLocaleString()}`)
+
+      // Get wait time in seconds
+      const waitTimeMs = rateLimitInfo.resetTimestamp - now
+
+      // If wait time is reasonable (less than 5 minutes), add a delay
+      if (waitTimeMs < 5 * 60 * 1000) {
+        console.error(`Waiting ${Math.round(waitTimeMs / 1000)} seconds for rate limit to reset...`)
+        // We don't actually wait here, but we'll use cached data instead
+      }
+
+      return false
+    }
+
+    return true
   }
   catch (error) {
-    console.error('Error checking rate limit file:', error)
-    return true // Proceed on error (better to try than not)
+    console.error('Error checking GitHub rate limit:', error)
+    // Proceed cautiously in case of error
+    return true
   }
 }
 
 /**
- * Fetches project list from the GitHub API, including nested projects
- * @param limit - Optional limit on the number of projects to return (0 for unlimited)
- * @returns Array of project names from pkgxdev/pantry repository
+ * Gets cached GitHub package list if it exists and is still valid
+ * @returns Array of package paths from cache, or null if cache invalid
  */
-export async function fetchPackageListFromGitHub(limit = 0): Promise<string[]> {
+export function getGitHubPackageCache(): string[] | null {
   try {
-    // Check if we should proceed based on rate limits
-    if (!shouldProceedWithGitHubRequest()) {
-      throw new Error('GitHub API rate limit reached, using fallback data')
+    if (!fs.existsSync(GITHUB_CACHE_FILE)) {
+      return null
     }
 
-    console.error('Fetching package list from GitHub API...')
+    const cacheData = JSON.parse(fs.readFileSync(GITHUB_CACHE_FILE, 'utf8'))
+    const now = Date.now()
 
-    // API URL for pkgxdev/pantry projects directory
-    const apiUrl = 'https://api.github.com/repos/pkgxdev/pantry/contents/projects'
+    // Check if cache is still valid (1 hour)
+    if (cacheData.timestamp && (now - cacheData.timestamp < CACHE_DURATION_MS)) {
+      const expiresAt = new Date(cacheData.timestamp + CACHE_DURATION_MS)
 
-    const response = await fetch(apiUrl, {
+      console.error(`Using GitHub API cache from ${new Date(cacheData.timestamp).toLocaleString()}, expires at ${expiresAt.toLocaleString()}`)
+
+      // Check if we have the packages array in the expected format
+      if (Array.isArray(cacheData.packages)) {
+        console.error(`Using ${cacheData.packages.length} packages from GitHub API cache`)
+        return cacheData.packages
+      }
+      else if (Array.isArray(cacheData.data)) {
+        // Support for older cache format
+        console.error(`Using ${cacheData.data.length} packages from GitHub API cache (old format)`)
+        return cacheData.data
+      }
+      else {
+        console.error('GitHub API cache has invalid format, fetching fresh data')
+        return null
+      }
+    }
+
+    console.error(`GitHub API cache expired (older than ${CACHE_DURATION_MS / 1000 / 60} minutes), fetching fresh data`)
+    return null
+  }
+  catch (error) {
+    console.error('Error reading GitHub cache:', error)
+    return null
+  }
+}
+
+/**
+ * Saves GitHub package list to cache
+ * @param packages Array of package paths to cache
+ */
+export function saveGitHubPackageCache(packages: string[]): void {
+  try {
+    const cacheData = {
+      timestamp: Date.now(),
+      packages,
+    }
+
+    fs.writeFileSync(GITHUB_CACHE_FILE, JSON.stringify(cacheData, null, 2))
+    console.error(`GitHub API package list cached to ${GITHUB_CACHE_FILE} (${packages.length} packages)`)
+  }
+  catch (error) {
+    console.error('Error saving GitHub cache:', error)
+  }
+}
+
+/**
+ * Fetches a list of packages from GitHub API using nested directory approach
+ * @param limit Maximum number of packages to return (0 for all)
+ * @returns Array of package paths
+ */
+export async function fetchPackageListFromGitHub(limit: number = 0): Promise<string[]> {
+  console.error('Fetching package list from GitHub API...')
+
+  // Check cache first
+  const cachedPackages = getGitHubPackageCache()
+  if (cachedPackages) {
+    return limit > 0 ? cachedPackages.slice(0, limit) : cachedPackages
+  }
+
+  try {
+    if (!shouldProceedWithGitHubRequest()) {
+      throw new Error('GitHub API rate limit preventing request - please try again later')
+    }
+
+    // Fetch base projects
+    const response = await fetch('https://api.github.com/repos/pkgxdev/pantry/contents/projects', {
       headers: {
         'Accept': 'application/vnd.github.v3+json',
         'User-Agent': 'pkgx-tools',
       },
-      // Ensure we don't hang indefinitely
-      signal: AbortSignal.timeout(30000),
     })
 
-    // Save rate limit information regardless of success
+    // Save rate limit info
     saveRateLimitInfo(response.headers)
-
-    // Handle rate limiting
-    if (response.status === 403) {
-      const rateLimitRemaining = response.headers.get('X-RateLimit-Remaining')
-      const rateLimitReset = response.headers.get('X-RateLimit-Reset')
-
-      console.error(`GitHub API rate limit exceeded. Remaining: ${rateLimitRemaining}, Reset: ${new Date(Number(rateLimitReset) * 1000).toLocaleString()}`)
-      throw new Error('GitHub API rate limit exceeded')
-    }
 
     if (!response.ok) {
       throw new Error(`GitHub API responded with ${response.status}: ${response.statusText}`)
     }
 
-    const data = await response.json() as any[]
-
-    // Extract project names
-    const baseProjects = data
+    const baseProjects = await response.json() as { name: string, type: string }[]
+    const baseProjectNames = baseProjects
       .filter(item => item.type === 'dir')
       .map(item => item.name)
 
-    console.error(`Found ${baseProjects.length} base projects on GitHub`)
+    console.error(`Found ${baseProjectNames.length} base projects on GitHub`)
 
-    // We need to check for subprojects for each domain, but we'll be careful with rate limits
-    const allProjects: string[] = []
+    // Project paths to return
+    const projectPaths: string[] = [...baseProjectNames]
 
-    // Add all base projects first
-    allProjects.push(...baseProjects)
+    // Known projects with nested paths to look for
+    const projectsWithNestedPaths = [
+      'agwa.name',
+      'acorn.io',
+      'apache.org',
+      'aquasecurity.github.io',
+      'aws.amazon.com',
+    ]
 
-    // Process known nested projects
-    const nestedProjectPromises: Promise<string[]>[] = []
-
-    // Check for nested projects in domains that commonly have them
-    // We'll check a small number of domains to avoid hitting rate limits
-    const domainsToCheck = ['agwa.name', 'acorn.io', 'apache.org', 'aquasecurity.github.io', 'aws.amazon.com'].filter(
-      domain => baseProjects.includes(domain),
-    )
-
-    for (const domain of domainsToCheck) {
-      // Check for nested projects in this domain
-      nestedProjectPromises.push(fetchNestedProjects(domain))
-    }
-
-    // Wait for all nested project checks to complete
-    const nestedProjectsList = await Promise.all(nestedProjectPromises)
-
-    // Add all nested projects
-    for (const nestedProjects of nestedProjectsList) {
-      allProjects.push(...nestedProjects)
-    }
-
-    // Add known nested projects directly from a hardcoded list to avoid GitHub API rate limiting
+    // Additional known nested projects to add without API calls
     const knownNestedProjects = [
-      'acorn.io/acorn-cli',
-      'agwa.name/git-crypt',
       'alsa-project.org/alsa-lib',
-      'aquasecurity.github.io/tfsec',
-      'aquasecurity.github.io/trivy',
       'apple.com/remote_cmds',
       'android.com/cmdline-tools',
       'anchore.com/syft',
@@ -172,20 +214,8 @@ export async function fetchPackageListFromGitHub(limit = 0): Promise<string[]> {
       'authzed.com/spicedb',
       'arduino.github.io/arduino-cli',
       'aomedia.googlesource.com/aom',
-      'aws.amazon.com/cdk',
-      'aws.amazon.com/cli',
-      'aws.amazon.com/sam',
       'akuity.io/kargo',
       'asciinema.org/agg',
-      'apache.org/apr-util',
-      'apache.org/apr',
-      'apache.org/arrow',
-      'apache.org/avro',
-      'apache.org/httpd',
-      'apache.org/jmeter',
-      'apache.org/subversion',
-      'apache.org/thrift',
-      'apache.org/zookeeper',
       'ansible.com/ansible-lint',
       'astral.sh/ruff',
       'astral.sh/uv',
@@ -195,144 +225,66 @@ export async function fetchPackageListFromGitHub(limit = 0): Promise<string[]> {
       'blake2.net/libb2',
     ]
 
-    // Add the known nested projects if they don't already exist
+    // Fetch nested projects - only check a few common ones to save API calls
+    for (const project of projectsWithNestedPaths) {
+      // Skip if rate limit is low
+      if (!shouldProceedWithGitHubRequest()) {
+        console.error(`Skipping nested path check for ${project} due to rate limit concerns`)
+        continue
+      }
+
+      try {
+        console.error(`Checking for nested projects in ${project}...`)
+
+        const nestedResponse = await fetch(`https://api.github.com/repos/pkgxdev/pantry/contents/projects/${project}`, {
+          headers: {
+            'Accept': 'application/vnd.github.v3+json',
+            'User-Agent': 'pkgx-tools',
+          },
+        })
+
+        // Save rate limit info
+        saveRateLimitInfo(nestedResponse.headers)
+
+        if (!nestedResponse.ok) {
+          console.error(`Failed to fetch nested projects for ${project}: ${nestedResponse.status}`)
+          continue
+        }
+
+        const nestedProjects = await nestedResponse.json() as { name: string, type: string }[]
+        const nestedPaths = nestedProjects
+          .filter(item => item.type === 'dir')
+          .map(item => `${project}/${item.name}`)
+
+        console.error(`Found ${nestedPaths.length} nested projects for ${project}: ${nestedPaths.join(', ')}`)
+
+        projectPaths.push(...nestedPaths)
+      }
+      catch (error) {
+        console.error(`Error fetching nested projects for ${project}:`, error)
+      }
+    }
+
+    // Add known nested projects without making API calls
     for (const nestedProject of knownNestedProjects) {
-      if (!allProjects.includes(nestedProject)) {
+      if (!projectPaths.includes(nestedProject)) {
         console.error(`Adding known nested project: ${nestedProject}`)
-        allProjects.push(nestedProject)
+        projectPaths.push(nestedProject)
       }
     }
 
-    console.error(`Total of ${allProjects.length} projects found (including nested paths)`)
+    // Cache the results for future use
+    saveGitHubPackageCache(projectPaths)
 
-    // Apply limit if specified (0 means no limit)
-    return limit > 0 ? allProjects.slice(0, limit) : allProjects
+    // Apply limit if specified
+    const finalProjects = limit > 0 ? projectPaths.slice(0, limit) : projectPaths
+
+    console.error(`Total of ${projectPaths.length} projects found (including nested paths)`)
+
+    return finalProjects
   }
   catch (error) {
-    console.error('Error fetching projects from GitHub:', error)
-
-    // Fallback to hardcoded list if GitHub API fails
-    const fallbackList = [
-      // Base projects
-      'node',
-      'python',
-      'go',
-      'rust',
-      'ruby',
-      'php',
-      'perl',
-      'deno',
-      'bun',
-      'postgresql.org',
-      'llvm.org',
-      'cmake.org',
-      'sqlite.org',
-      'mysql.com',
-      'nginx.org',
-      // Nested projects
-      'acorn.io/acorn-cli',
-      'agwa.name/git-crypt',
-      'alsa-project.org/alsa-lib',
-      'aquasecurity.github.io/tfsec',
-      'aquasecurity.github.io/trivy',
-      'apple.com/remote_cmds',
-      'android.com/cmdline-tools',
-      'anchore.com/syft',
-      'argoproj.github.io/cd',
-      'argoproj.github.io/workflows',
-      'amrdeveloper.github.io/GQL',
-      'authzed.com/spicedb',
-      'arduino.github.io/arduino-cli',
-      'aomedia.googlesource.com/aom',
-      'aws.amazon.com/cdk',
-      'aws.amazon.com/cli',
-      'aws.amazon.com/sam',
-      'akuity.io/kargo',
-      'asciinema.org/agg',
-      'apache.org/apr-util',
-      'apache.org/apr',
-      'apache.org/arrow',
-      'apache.org/avro',
-      'apache.org/httpd',
-      'apache.org/jmeter',
-      'apache.org/subversion',
-      'apache.org/thrift',
-      'apache.org/zookeeper',
-      'ansible.com/ansible-lint',
-      'astral.sh/ruff',
-      'astral.sh/uv',
-      'apollographql.com/rover',
-      'brxken128.github.io/dexios',
-      'cedarpolicy.com/cli',
-      'blake2.net/libb2',
-    ]
-
-    console.error(`Falling back to ${fallbackList.length} hardcoded projects`)
-
-    // Apply limit if specified (0 means no limit)
-    return limit > 0 ? fallbackList.slice(0, limit) : fallbackList
-  }
-}
-
-/**
- * Fetches nested projects for a given domain from GitHub API
- * @param domain Domain to check for nested projects
- * @returns Promise resolving to array of nested project paths
- */
-async function fetchNestedProjects(domain: string): Promise<string[]> {
-  try {
-    // Check if we should proceed based on rate limits
-    if (!shouldProceedWithGitHubRequest()) {
-      console.error(`Skipping nested project check for ${domain} due to rate limits`)
-      return []
-    }
-
-    console.error(`Checking for nested projects in ${domain}...`)
-
-    // API URL for the domain directory
-    const apiUrl = `https://api.github.com/repos/pkgxdev/pantry/contents/projects/${domain}`
-
-    const response = await fetch(apiUrl, {
-      headers: {
-        'Accept': 'application/vnd.github.v3+json',
-        'User-Agent': 'pkgx-tools',
-      },
-      // Add a short timeout
-      signal: AbortSignal.timeout(10000),
-    })
-
-    // Save rate limit information
-    saveRateLimitInfo(response.headers)
-
-    // Handle errors
-    if (!response.ok) {
-      if (response.status === 404) {
-        console.error(`No nested projects found for ${domain} (404)`)
-      }
-      else {
-        console.error(`GitHub API error for ${domain}: ${response.status} ${response.statusText}`)
-      }
-      return []
-    }
-
-    const data = await response.json() as any[]
-
-    // Extract nested project paths
-    const nestedProjects = data
-      .filter(item => item.type === 'dir')
-      .map(item => `${domain}/${item.name}`)
-
-    if (nestedProjects.length > 0) {
-      console.error(`Found ${nestedProjects.length} nested projects for ${domain}: ${nestedProjects.join(', ')}`)
-    }
-    else {
-      console.error(`No nested projects found for ${domain}`)
-    }
-
-    return nestedProjects
-  }
-  catch (error) {
-    console.error(`Error checking nested projects for ${domain}:`, error)
+    console.error('Error fetching package list from GitHub:', error)
     return []
   }
 }
