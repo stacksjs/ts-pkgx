@@ -1,17 +1,16 @@
-import type { Browser, Page } from 'playwright'
-import type { PkgxPackage } from '../src/types'
 /**
  * Command-line interface for pkgx-tools
  */
+
+import type { PkgxPackage } from '../src/types'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-import readline from 'node:readline'
-import { CAC, cac } from 'cac'
+import { CAC } from 'cac'
 import { chromium } from 'playwright'
 import { version } from '../package.json'
-import { cleanupBrowserResources, fetchAndSaveAllPackages, fetchPkgxPackage, PACKAGE_ALIASES } from '../src/packages/fetch'
-import { fetchPackageListFromGitHub, getGitHubPackageCache, saveGitHubPackageCache } from '../src/utils'
+import { cleanupBrowserResources, fetchAndSaveAllPackages, fetchPkgxPackage, PACKAGE_ALIASES } from '../src/fetch'
+import { fetchPackageListFromGitHub, getGitHubPackageCache } from '../src/utils'
 
 const cli = new CAC('pkgx-tools')
 
