@@ -268,7 +268,7 @@ async function generateIndexContent(): Promise<string> {
 }
 
 // Main function
-async function main() {
+export async function generateIndex(): Promise<void> {
   try {
     const imports = await getImports()
     const typeDefinitions = await generateExplicitTypeDefinition(imports)
@@ -288,4 +288,7 @@ async function main() {
   }
 }
 
-main()
+// Call the function directly when run as a script
+if (import.meta.url.endsWith('generateIndex.ts')) {
+  generateIndex()
+}

@@ -31,7 +31,7 @@ function getPackageExportName(moduleName: string): string {
  * @param packageName The name of the package to update
  * @returns Promise resolving to boolean indicating success
  */
-async function updatePackage(packageName: string): Promise<boolean> {
+export async function updatePackage(packageName: string): Promise<boolean> {
   try {
     console.error(`Updating package ${packageName}...`)
 

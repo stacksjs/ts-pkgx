@@ -10,6 +10,8 @@ import { CAC } from 'cac'
 import { chromium } from 'playwright'
 import { version } from '../package.json'
 import { cleanupBrowserResources, fetchAndSaveAllPackages, fetchPkgxPackage, PACKAGE_ALIASES } from '../src/fetch'
+import { generateIndex } from '../src/tools/generateIndex'
+import { updatePackage } from '../src/tools/updatePackages'
 import { fetchPackageListFromGitHub, getGitHubPackageCache } from '../src/utils'
 
 const cli = new CAC('pkgx-tools')
@@ -27,6 +29,7 @@ interface FetchOptions {
   githubCacheDuration?: number
   debug?: boolean
   json?: boolean
+  pkg?: string
 }
 
 // Ensure the output directory exists
@@ -346,193 +349,6 @@ export const ${safeVarName}Package: PkgxPackage = ${JSON.stringify(packageInfo, 
 `
 }
 
-/**
- * Process a list of packages using concurrency control and watchdog
- */
-async function processPackageList(
-  packageList: string[],
-  outputDir: string,
-  options: FetchOptions,
-  maxRetries: number,
-  fetchMode: string,
-): Promise<{ successCount: number, failCount: number, failedPackages: string[] }> {
-  // Count successful and failed packages
-  let successCount = 0
-  let failCount = 0
-  const failedPackages: string[] = []
-
-  // Start time for the entire process
-  const startTime = Date.now()
-
-  // Process each package with a queue system to manage concurrency and avoid timeouts
-  const concurrencyLimit = 2 // Lower concurrency to avoid overloading resources
-  const activePromises: Promise<void>[] = []
-  const queue = [...packageList]
-
-  // Track start time for each package processing
-  const startTimes = new Map<string, number>()
-
-  // Function to process a single package
-  const processPackage = async (packagePath: string, index: number): Promise<void> => {
-    try {
-      // Record start time for this package
-      startTimes.set(packagePath, Date.now())
-
-      // Calculate and display progress
-      const percentComplete = Math.round((index / packageList.length) * 100)
-      const elapsedSeconds = Math.round((Date.now() - startTime) / 1000)
-      const estimatedTotalSeconds = index > 0 ? Math.round(elapsedSeconds / index * packageList.length) : 0
-      const remainingSeconds = Math.max(0, estimatedTotalSeconds - elapsedSeconds)
-      const remainingMinutes = Math.floor(remainingSeconds / 60)
-      const remainingHours = Math.floor(remainingMinutes / 60)
-
-      console.log(`[${index + 1}/${packageList.length}] (${percentComplete}%) Fetching package ${packagePath}... ETA: ${remainingHours}h ${remainingMinutes % 60}m ${remainingSeconds % 60}s`)
-
-      // Create a promise that will time out
-      const fetchWithTimeout = async () => {
-        return Promise.race([
-          fetchAndSavePackage(packagePath, outputDir, options.timeout, options.json || false, 1, maxRetries, options.debug),
-          new Promise<{ success: false }>((_, reject) => {
-            // Set a hard timeout of 3x the specified timeout
-            setTimeout(() => reject(new Error(`Hard timeout exceeded for ${packagePath}`)), options.timeout * 3)
-          }),
-        ])
-      }
-
-      // Fetch and save the package with timeout protection
-      const result = await fetchWithTimeout()
-        .catch((error) => {
-          console.error(`Hard timeout or error processing ${packagePath}:`, error.message || error)
-          return { success: false }
-        })
-
-      if (result.success) {
-        successCount++
-      }
-      else {
-        failCount++
-        failedPackages.push(packagePath)
-      }
-    }
-    catch (error: unknown) {
-      console.error(`Error processing ${packagePath}:`, error)
-      failCount++
-      failedPackages.push(packagePath)
-    }
-    finally {
-      // Remove this package from the tracking
-      startTimes.delete(packagePath)
-
-      // Write progress file after each package (for resumability)
-      const progressFile = path.join(outputDir, '_progress.json')
-      fs.writeFileSync(progressFile, JSON.stringify({
-        total: packageList.length,
-        completed: index + 1,
-        successful: successCount,
-        failed: failCount,
-        failedPackages,
-        updatedAliases: PACKAGE_ALIASES,
-        lastUpdated: new Date().toISOString(),
-        fetchMode,
-        outputFormat: options.json ? 'json' : 'typescript',
-      }, null, 2))
-    }
-  }
-
-  // Watchdog system to break out of stuck packages
-  const watchdogInterval = 10000 // Check every 10 seconds
-  const watchdog = setInterval(() => {
-    // Check for packages that have been processing too long
-    const now = Date.now()
-    for (const [pkg, startTime] of startTimes.entries()) {
-      const processingTime = now - startTime
-      // If a package has been processing for longer than 2x the timeout
-      if (processingTime > options.timeout * 2) {
-        console.error(`Watchdog: Package ${pkg} has been processing for ${Math.round(processingTime / 1000)}s, which exceeds safe limits. It may be stuck.`)
-        // We'll let the Promise race timeout mechanism handle this
-      }
-    }
-  }, watchdogInterval)
-
-  try {
-    // Process packages in a queue with concurrency limit
-    let index = 0
-    while (queue.length > 0 || activePromises.length > 0) {
-      // Fill the queue up to the concurrency limit
-      while (activePromises.length < concurrencyLimit && queue.length > 0) {
-        const packagePath = queue.shift()!
-        const packageIndex = index++
-
-        // Process the package and manage the activePromises array
-        const promise = processPackage(packagePath, packageIndex)
-          .catch((error: unknown) => {
-            console.error(`Error processing ${packagePath}:`, error)
-            failCount++
-            failedPackages.push(packagePath)
-          })
-          .finally(() => {
-            // Remove this promise from the active list when done
-            const promiseIndex = activePromises.indexOf(promise)
-            if (promiseIndex !== -1) {
-              activePromises.splice(promiseIndex, 1)
-            }
-          })
-
-        activePromises.push(promise)
-
-        // Small delay between starting new processes to avoid overwhelming resources
-        await new Promise(resolve => setTimeout(resolve, 500))
-      }
-
-      // Wait for at least one promise to resolve before continuing the loop
-      if (activePromises.length > 0) {
-        await Promise.race(activePromises)
-        // Add a small delay to give other promises a chance to update their state
-        await new Promise(resolve => setTimeout(resolve, 100))
-      }
-    }
-  }
-  finally {
-    // Clean up the watchdog
-    clearInterval(watchdog)
-  }
-
-  // Calculate total time
-  const totalSeconds = Math.round((Date.now() - startTime) / 1000)
-  const minutes = Math.floor(totalSeconds / 60)
-  const hours = Math.floor(minutes / 60)
-  const seconds = totalSeconds % 60
-
-  // Display the updated aliases
-  if (options.verbose) {
-    console.log('Updated package aliases:', PACKAGE_ALIASES)
-  }
-  else {
-    console.log(`Updated package aliases: ${Object.keys(PACKAGE_ALIASES).length} aliases`)
-  }
-
-  console.log(`Fetch completed in ${hours}h ${minutes % 60}m ${seconds}s. Files saved to ${outputDir}`)
-  console.log(`Results: ${successCount} successful, ${failCount} failed`)
-
-  if (failedPackages.length > 0) {
-    console.log(`Failed packages: ${options.verbose ? failedPackages.join(', ') : failedPackages.length}`)
-    // Save failed packages to file for possible retry later
-    const failedFile = path.join(outputDir, '_failed.json')
-    fs.writeFileSync(failedFile, JSON.stringify(failedPackages, null, 2))
-  }
-
-  // Save final aliases to a file
-  const aliasesFile = path.join(outputDir, '_aliases.json')
-  fs.writeFileSync(aliasesFile, JSON.stringify(PACKAGE_ALIASES, null, 2))
-
-  console.log(`All done! Aliases saved to ${aliasesFile}`)
-
-  // Ensure browser resources are cleaned up
-  await cleanupBrowserResources()
-
-  return { successCount, failCount, failedPackages }
-}
-
 // Process interrupt handling to ensure clean exit
 process.on('SIGINT', async () => {
   console.log('\nReceived interrupt signal. Cleaning up resources...')
@@ -545,6 +361,7 @@ process.on('SIGINT', async () => {
 cli
   .command('fetch [packageName]', 'Fetch package(s) from pkgx.dev')
   .option('-a, --all', 'Fetch all packages')
+  .option('-p, --pkg <packageNames>', 'Comma-separated list of package names to fetch')
   .option('-m, --mode <mode>', 'Fetch mode: "basic" (legacy), "complete" (improved), or "scrape" (web scraping)', { default: 'complete' })
   .option('-o, --output <directory>', 'Directory to save package data', { default: 'src/packages' })
   .option('-t, --timeout <timeout>', 'Timeout in milliseconds (default is 30 seconds)', { default: 30000 })
@@ -562,10 +379,12 @@ cli
   .example('pkgx-tools fetch --all --timeout 15000') // 15 seconds example
   .example('pkgx-tools fetch node --timeout 20000') // 20 seconds example
   .example('pkgx-tools fetch --all --cache-duration 120')
+  .example('pkgx-tools fetch --pkg node,bun,python') // Fetch multiple packages
+  .example('pkgx-tools fetch --pkg "go.dev,python.org,rust-lang.org" --json') // Fetch multiple packages as JSON
   .action(async (packageName: string | undefined, options: FetchOptions) => {
-    // Ensure either packageName is provided or --all flag is set
-    if (!packageName && !options.all) {
-      console.error('Error: You must either specify a package name or use the --all flag')
+    // Ensure either packageName is provided, --all flag is set, or --pkg is provided
+    if (!packageName && !options.all && !options.pkg) {
+      console.error('Error: You must either specify a package name, use the --all flag, or provide a comma-separated list with --pkg')
       process.exit(1)
     }
 
@@ -591,8 +410,65 @@ cli
     }
 
     try {
-      // Case 1: Fetch a specific package
-      if (packageName) {
+      // Case 1a: Fetch a specific comma-separated list of packages
+      if (options.pkg) {
+        const packageList = options.pkg.split(',').map(pkg => pkg.trim()).filter(Boolean)
+        console.log(`Fetching ${packageList.length} packages: ${packageList.join(', ')}`)
+
+        let successCount = 0
+        const failedPackages: string[] = []
+
+        // Process each package sequentially
+        for (const pkg of packageList) {
+          console.log(`\nFetching package '${pkg}' from pkgx.dev...`)
+
+          const result = await fetchAndSavePackage(
+            pkg,
+            outputDir,
+            options.timeout,
+            options.json || false,
+            1,
+            maxRetries,
+            options.debug,
+          )
+
+          if (result.success) {
+            console.log(`Successfully fetched package '${pkg}' to ${result.filePath}`)
+            successCount++
+          }
+          else {
+            console.error(`Failed to fetch package '${pkg}'`)
+            failedPackages.push(pkg)
+          }
+        }
+
+        // Regenerate the index.ts file if we're using TypeScript output
+        if (!options.json) {
+          try {
+            console.log('Regenerating package index...')
+            await generateIndex()
+            console.log('Package index updated successfully!')
+          }
+          catch (error) {
+            console.error('Failed to regenerate package index:', error)
+          }
+        }
+
+        // Summary
+        console.log(`\nFetch summary: ${successCount} successful, ${failedPackages.length} failed`)
+        if (failedPackages.length > 0) {
+          console.log(`Failed packages: ${failedPackages.join(', ')}`)
+        }
+
+        // Ensure browser resources are cleaned up
+        await cleanupBrowserResources()
+
+        // Ensure process exits cleanly
+        console.log('All tasks completed, exiting...')
+        process.exit(failedPackages.length > 0 ? 1 : 0)
+      }
+      // Case 1b: Fetch a specific package
+      else if (packageName) {
         console.log(`Fetching package '${packageName}' from pkgx.dev...`)
 
         const result = await fetchAndSavePackage(
@@ -616,7 +492,6 @@ cli
         if (!options.json) {
           try {
             console.log('Regenerating package index...')
-            const { generateIndex } = await import('../src/tools/generateIndex')
             await generateIndex()
             console.log('Package index updated successfully!')
           }
@@ -660,25 +535,46 @@ cli
 
         console.log(`Will fetch ${limitedPackages.length} packages`)
 
-        // Process the packages with our shared function
-        await processPackageList(
-          limitedPackages,
-          outputDir,
-          options,
-          maxRetries,
-          'web-scraping',
-        )
+        // Use the same approach as updatePackages.ts
+        // Check if the packages directory exists
+        if (!fs.existsSync(outputDir)) {
+          fs.mkdirSync(outputDir, { recursive: true })
+        }
+
+        // Use a smaller batch size to prevent memory issues
+        const BATCH_SIZE = 20
+        let updatedCount = 0
+        const batches = Math.ceil(limitedPackages.length / BATCH_SIZE)
+
+        // Process packages in batches to prevent memory issues
+        for (let i = 0; i < batches; i++) {
+          const start = i * BATCH_SIZE
+          const end = Math.min(start + BATCH_SIZE, limitedPackages.length)
+          const batch = limitedPackages.slice(start, end)
+
+          console.log(`Processing batch ${i + 1}/${batches} (packages ${start + 1}-${end})`)
+
+          // Update packages in the current batch
+          const results = await Promise.all(batch.map((pkg: string) => updatePackage(pkg)))
+
+          // Count updated packages
+          updatedCount += results.filter(Boolean).length
+        }
+
+        console.log(`Updated ${updatedCount} out of ${limitedPackages.length} packages`)
 
         // Regenerate the index.ts file
         try {
           console.log('Regenerating package index...')
-          const { generateIndex } = await import('../src/tools/generateIndex')
           await generateIndex()
           console.log('Package index updated successfully!')
         }
         catch (error) {
           console.error('Failed to regenerate package index:', error)
         }
+
+        // Clean up resources
+        await cleanupBrowserResources()
 
         // Ensure process exits cleanly
         console.log('All tasks completed, exiting...')
@@ -717,25 +613,46 @@ cli
 
         console.log(`Will fetch ${limitedPackages.length} packages`)
 
-        // Process the packages with our shared function
-        await processPackageList(
-          limitedPackages,
-          outputDir,
-          options,
-          maxRetries,
-          'github-api',
-        )
+        // Use the same approach as updatePackages.ts
+        // Check if the packages directory exists
+        if (!fs.existsSync(outputDir)) {
+          fs.mkdirSync(outputDir, { recursive: true })
+        }
+
+        // Use a smaller batch size to prevent memory issues
+        const BATCH_SIZE = 20
+        let updatedCount = 0
+        const batches = Math.ceil(limitedPackages.length / BATCH_SIZE)
+
+        // Process packages in batches to prevent memory issues
+        for (let i = 0; i < batches; i++) {
+          const start = i * BATCH_SIZE
+          const end = Math.min(start + BATCH_SIZE, limitedPackages.length)
+          const batch = limitedPackages.slice(start, end)
+
+          console.log(`Processing batch ${i + 1}/${batches} (packages ${start + 1}-${end})`)
+
+          // Update packages in the current batch
+          const results = await Promise.all(batch.map((pkg: string) => updatePackage(pkg)))
+
+          // Count updated packages
+          updatedCount += results.filter(Boolean).length
+        }
+
+        console.log(`Updated ${updatedCount} out of ${limitedPackages.length} packages`)
 
         // Regenerate the index.ts file
         try {
           console.log('Regenerating package index...')
-          const { generateIndex } = await import('../src/tools/generateIndex')
           await generateIndex()
           console.log('Package index updated successfully!')
         }
         catch (error) {
           console.error('Failed to regenerate package index:', error)
         }
+
+        // Clean up resources
+        await cleanupBrowserResources()
 
         // Ensure process exits cleanly
         console.log('All tasks completed, exiting...')
