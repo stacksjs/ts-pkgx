@@ -20,6 +20,7 @@ export const alembicsqlalchemyorgPackage: PkgxPackage = {
     "pkgx.sh^1"
   ],
   "versions": [
+    "1.16.1",
     "1.16.0",
     "1.15.2",
     "1.15.1",
@@ -46,6 +47,7 @@ export interface AlembicsqlalchemyorgPackage {
     "pkgx.sh^1"
   ];
   versions: readonly [
+    "1.16.1",
     "1.16.0",
     "1.15.2",
     "1.15.1",
