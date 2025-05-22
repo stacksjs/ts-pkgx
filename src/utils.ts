@@ -33,8 +33,8 @@ export function saveRateLimitInfo(headers: Headers): void {
       }
 
       fs.writeFileSync(GITHUB_RATE_LIMIT_FILE, JSON.stringify(info, null, 2))
-      console.error(`GitHub API rate limit info saved to ${GITHUB_RATE_LIMIT_FILE}`)
-      console.error(`Rate limit: ${rateLimitRemaining}/${rateLimitLimit} remaining, resets at ${resetTime.toLocaleString()}`)
+      console.warn(`GitHub API rate limit info saved to ${GITHUB_RATE_LIMIT_FILE}`)
+      console.warn(`Rate limit: ${rateLimitRemaining}/${rateLimitLimit} remaining, resets at ${resetTime.toLocaleString()}`)
     }
   }
   catch (error) {
@@ -65,7 +65,7 @@ export function shouldProceedWithGitHubRequest(): boolean {
     // Check if we have enough calls remaining
     if (rateLimitInfo.remaining <= MIN_REMAINING_CALLS) {
       const resetTime = new Date(rateLimitInfo.resetTimestamp)
-      console.error(`GitHub API rate limit almost exhausted (${rateLimitInfo.remaining}/${rateLimitInfo.limit} remaining). Preserving remaining calls until reset at ${resetTime.toLocaleString()}`)
+      console.warn(`GitHub API rate limit almost exhausted (${rateLimitInfo.remaining}/${rateLimitInfo.limit} remaining). Preserving remaining calls until reset at ${resetTime.toLocaleString()}`)
 
       // Get wait time in seconds
       const waitTimeMs = rateLimitInfo.resetTimestamp - now
@@ -182,7 +182,7 @@ export async function fetchPackageListFromGitHub(limit: number = 0, singlePackag
 
   try {
     if (!shouldProceedWithGitHubRequest()) {
-      console.error('GitHub API rate limit preventing request - using cached data or hardcoded list')
+      console.warn('GitHub API rate limit preventing request - using cached data or hardcoded list')
 
       // If we hit rate limits, return a minimal hardcoded list rather than failing completely
       const hardcodedFallbackPackages = [

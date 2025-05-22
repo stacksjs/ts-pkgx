@@ -221,7 +221,7 @@ export async function fetchPkgxPackage(
         console.error(`Saved debug screenshot to ${screenshotPath}`)
       }
 
-      console.error('Extracting package information...')
+      console.log('Extracting package information...')
 
       // Extract package information and possible alias
       const result = await page.evaluate(() => {
@@ -482,7 +482,7 @@ async function fetchVersionsFromGitHub(packageName: string): Promise<string[]> {
   try {
     // Check if we're rate limited before making the request
     if (!shouldProceedWithGitHubRequest()) {
-      console.error(`Skipping GitHub API request for versions due to rate limiting`)
+      console.warn(`Skipping GitHub API request for versions due to rate limiting`)
       return []
     }
 
@@ -504,7 +504,7 @@ async function fetchVersionsFromGitHub(packageName: string): Promise<string[]> {
       const rateLimitReset = response.headers.get('X-RateLimit-Reset')
 
       const resetTime = rateLimitReset ? new Date(Number(rateLimitReset) * 1000).toLocaleString() : 'unknown'
-      console.error(`GitHub API rate limit exceeded. Remaining: ${rateLimitRemaining || 0}, Reset: ${resetTime}`)
+      console.warn(`GitHub API rate limit exceeded. Remaining: ${rateLimitRemaining || 0}, Reset: ${resetTime}`)
 
       // Return empty array instead of throwing to avoid breaking the flow
       return []

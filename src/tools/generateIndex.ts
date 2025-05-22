@@ -306,7 +306,7 @@ export async function updateSinglePackageInterface(moduleName: string): Promise<
 
       // Write the updated content back to the file
       fs.writeFileSync(filePath, updatedContent)
-      console.error(`Updated ${moduleName}.ts with explicit type definition`)
+      console.log(`Updated ${moduleName}.ts with explicit type definition`)
 
       // Now generate a minimal index.ts file to ensure things work properly
       await generateMinimalIndex()
@@ -377,7 +377,7 @@ async function updatePackageFiles(typeDefinitions: Record<string, string>, packa
 
         // Write the updated content back to the file
         fs.writeFileSync(filePath, fileContent)
-        console.error(`Updated ${moduleName}.ts with explicit type definition`)
+        console.log(`Updated ${moduleName}.ts with explicit type definition`)
       }
     }
     catch (error) {

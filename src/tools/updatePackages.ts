@@ -103,7 +103,7 @@ export async function updatePackage(packageName: string): Promise<boolean> {
 
     // If file doesn't exist, create a new one
     if (!fileExists) {
-      console.error(`Creating new package file for ${packageName} at ${filePath}`)
+      console.log(`Creating new package file for ${packageName} at ${filePath}`)
 
       // Create package variable name - ensure it's a valid JavaScript identifier
       const varName = `${tsName.replace(/-/g, '')}Package`
@@ -245,7 +245,7 @@ export async function updateSinglePackage(packageName: string): Promise<boolean>
 
     // If file doesn't exist, create a new one
     if (!fileExists) {
-      console.error(`Creating new package file for ${packageName} at ${filePath}`)
+      console.log(`Creating new package file for ${packageName} at ${filePath}`)
 
       // Create package variable name - ensure it's a valid JavaScript identifier
       const varName = `${tsName.replace(/-/g, '')}Package`

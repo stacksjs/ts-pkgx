@@ -92,7 +92,7 @@ async function fetchFromGitHub(url: string, token?: string): Promise<any> {
   const rateLimitReset = response.headers.get('x-ratelimit-reset')
 
   if (rateLimitRemaining) {
-    console.log(`GitHub API rate limit remaining: ${rateLimitRemaining}`)
+    console.warn(`GitHub API rate limit remaining: ${rateLimitRemaining}`)
   }
 
   if (Number.parseInt(rateLimitRemaining || '1') < 5) {

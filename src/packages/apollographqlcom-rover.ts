@@ -19,11 +19,7 @@ export const apollographqlcomroverPackage: PkgxPackage = {
     "zlib.net^1",
     "libgit2.org~1.7"
   ],
-<<<<<<< Updated upstream
-  "versions": [
-=======
   versions: [
->>>>>>> Stashed changes
     "0.31.1",
     "0.31.0",
     "0.30.0",
@@ -53,43 +49,9 @@ export const apollographqlcomroverPackage: PkgxPackage = {
 export interface ApollographqlcomroverPackage {
   programs: readonly [];
   companions: readonly [];
-<<<<<<< Updated upstream
-  dependencies: readonly [
-    "openssl.org^1.1",
-    "zlib.net^1",
-    "libgit2.org~1.7"
-  ];
-  versions: readonly [
-    "0.31.1",
-    "0.31.0",
-    "0.30.0",
-    "0.29.1",
-    "0.29.0",
-    "0.28.1",
-    "0.28.0",
-    "0.27.2",
-    "0.27.1",
-    "0.27.0",
-    "0.26.3",
-    "0.26.2",
-    "0.26.1",
-    "0.26.0",
-    "0.25.0",
-    "0.24.0",
-    "0.23.0",
-    "0.22.0",
-    "0.21.0",
-    "0.20.0",
-    "0.19.1",
-    "0.19.0",
-    "0.18.1"
-  ];
-}
-=======
   dependencies: readonly [];
   versions: readonly [];
   name: "apollographql.com/rover";
   domain: "apollographql.com/rover";
   description: "Package information for apollographql.com/rover";
 }
->>>>>>> Stashed changes
