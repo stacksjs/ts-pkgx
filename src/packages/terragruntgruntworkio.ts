@@ -16,6 +16,7 @@ export const terragruntgruntworkioPackage: PkgxPackage = {
   companions: [],
   dependencies: ["terraform.io"],
   versions: [
+    "0.80.1",
     "0.80.0",
     "0.79.3",
     "0.79.2",
