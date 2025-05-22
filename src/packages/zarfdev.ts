@@ -16,6 +16,7 @@ export const zarfdevPackage: PkgxPackage = {
   companions: [],
   dependencies: [],
   versions: [
+    "0.55.5",
     "0.55.4",
     "0.55.2",
     "0.55.1",

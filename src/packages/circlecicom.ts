@@ -16,6 +16,7 @@ export const circlecicomPackage: PkgxPackage = {
   companions: [],
   dependencies: [],
   versions: [
+    "0.1.31983",
     "0.1.31879",
     "0.1.31792",
     "0.1.31687",

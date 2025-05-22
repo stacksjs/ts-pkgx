@@ -61,6 +61,7 @@ export const openshiftcomPackage: PkgxPackage = {
     "4.17.2",
     "4.17.1",
     "4.17.0",
+    "4.16.41",
     "4.16.40",
     "4.16.39",
     "4.16.38",
