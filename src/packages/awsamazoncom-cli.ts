@@ -19,6 +19,7 @@ export const awsamazoncomcliPackage: PkgxPackage = {
     "pkgx.sh^1"
   ],
   versions: [
+    "2.27.21",
     "2.27.20",
     "2.27.19",
     "2.27.18",

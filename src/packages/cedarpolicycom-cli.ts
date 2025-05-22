@@ -16,6 +16,7 @@ export const cedarpolicycomcliPackage: PkgxPackage = {
   companions: [],
   dependencies: [],
   versions: [
+    "4.4.1",
     "4.4.0",
     "4.3.3",
     "4.3.2",

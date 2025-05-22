@@ -17,6 +17,9 @@ export const pipenvpypaioPackage: PkgxPackage = {
   dependencies: ["pkgx.sh^1"],
   versions: [
     "3000.0.0",
+    "2025.0.2",
+    "2025.0.1",
+    "2025.0.0",
     "2024.4.1",
     "2024.4.0",
     "2024.3.1",
