@@ -22,6 +22,7 @@ export const projenioPackage: PkgxPackage = {
   ],
   dependencies: ["nodejs.org^22 || ^20 || ^18"],
   versions: [
+    "0.92.7",
     "0.92.6",
     "0.92.5",
     "0.92.4",
