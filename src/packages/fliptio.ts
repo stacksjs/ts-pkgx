@@ -16,6 +16,7 @@ export const fliptioPackage: PkgxPackage = {
   companions: [],
   dependencies: [],
   versions: [
+    "1.58.2",
     "1.58.1",
     "1.58.0",
     "1.57.0",

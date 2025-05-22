@@ -16,6 +16,7 @@ export const anchorecomsyftPackage: PkgxPackage = {
   companions: [],
   dependencies: [],
   versions: [
+    "1.26.1",
     "1.26.0",
     "1.25.1",
     "1.25.0",

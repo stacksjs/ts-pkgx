@@ -16,6 +16,8 @@ export const checkovioPackage: PkgxPackage = {
   companions: [],
   dependencies: ["pkgx.sh^1"],
   versions: [
+    "3.2.431",
+    "3.2.430",
     "3.2.429",
     "3.2.428",
     "3.2.427",
