@@ -167,16 +167,16 @@ export async function fetchPackageListFromGitHub(limit: number = 0, singlePackag
       return []
     }
 
-    console.error(`Single package mode: only fetching '${singlePackage}'`)
+    console.log(`Single package mode: only fetching '${singlePackage}'`)
     return [singlePackage]
   }
 
-  console.error('Fetching package list from GitHub API...')
+  console.log('Fetching package list from GitHub API...')
 
   // Check cache first
   const cachedPackages = getGitHubPackageCache()
   if (cachedPackages) {
-    console.error('Using cached package list, no GitHub API calls needed')
+    console.log('Using cached package list, no GitHub API calls needed')
     return limit > 0 ? cachedPackages.slice(0, limit) : cachedPackages
   }
 
