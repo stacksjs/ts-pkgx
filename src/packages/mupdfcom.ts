@@ -43,6 +43,8 @@ export const mupdfcomPackage: PkgxPackage = {
     "x.org/xtrans^1"
   ],
   versions: [
+    "1.26.1",
+    "1.26.0",
     "1.25.6",
     "1.25.5",
     "1.25.4",
