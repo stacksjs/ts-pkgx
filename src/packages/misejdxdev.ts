@@ -22,6 +22,7 @@ export const misejdxdevPackage: PkgxPackage = {
     "libgit2.org^1"
   ],
   versions: [
+    "2025.5.10",
     "2025.5.9",
     "2025.5.8",
     "2025.5.6",
