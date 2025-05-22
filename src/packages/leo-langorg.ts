@@ -19,6 +19,7 @@ export const leolangorgPackage: PkgxPackage = {
     "curl.se^8.4"
   ],
   versions: [
+    "2.6.0",
     "2.5.0",
     "2.4.1",
     "2.4.0",
