@@ -24,6 +24,7 @@ export const limavmioPackage: PkgxPackage = {
   companions: [],
   dependencies: ["qemu.org"],
   versions: [
+    "1.1.1",
     "1.1.0",
     "1.0.7",
     "1.0.6",
