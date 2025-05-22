@@ -19,6 +19,7 @@ export const ytdlporgPackage: PkgxPackage = {
     "ffmpeg.org"
   ],
   versions: [
+    "2025.5.22",
     "2025.4.30",
     "2025.3.31",
     "2025.3.27",
