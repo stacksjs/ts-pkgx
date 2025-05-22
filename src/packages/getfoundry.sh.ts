@@ -1,0 +1,33 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const getfoundryshPackage = {
+  programs: [
+    "forge",
+    "anvil",
+    "cast",
+    "chisel",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "git-scm.org^2",
+  ] as const,
+  versions: [
+    "2024.4.12",
+    "2023.12.7",
+    "2023.7.16",
+    "1.2.0",
+    "1.1.0",
+    "1.0.0",
+    "0.3.0",
+  ] as const,
+  name: "getfoundry.sh" as const,
+  domain: "getfoundry.sh" as const,
+  description: "Package information for getfoundry.sh" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getfoundry.sh/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +getfoundry.sh -- $SHELL -i" as const,
+}
+
+export type GetfoundryshPackage = typeof getfoundryshPackage

@@ -1,0 +1,48 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const elfutilsorgPackage = {
+  programs: [
+    "eu-addr2line",
+    "eu-ar",
+    "eu-elfclassify",
+    "eu-elfcmp",
+    "eu-elfcompress",
+    "eu-elflint",
+    "eu-findtextrel",
+    "eu-nm",
+    "eu-objdump",
+    "eu-ranlib",
+    "eu-readelf",
+    "eu-size",
+    "eu-stack",
+    "eu-strings",
+    "eu-strip",
+    "eu-unstrip",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "sourceware.org/bzip2",
+    "tukaani.org/xz",
+    "zlib.net",
+    "facebook.com/zstd",
+    "linuxkernel.org/linux-headers",
+    "kernel.org/linux-headers",
+  ] as const,
+  versions: [
+    "0.193.0",
+    "0.192.0",
+    "0.191.0",
+    "0.190.0",
+    "0.189.0",
+  ] as const,
+  name: "elfutils.org" as const,
+  domain: "elfutils.org" as const,
+  description: "Package information for elfutils.org" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/elfutils.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +elfutils.org -- $SHELL -i" as const,
+}
+
+export type ElfutilsorgPackage = typeof elfutilsorgPackage

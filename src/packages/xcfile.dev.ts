@@ -1,0 +1,48 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const xcfiledevPackage = {
+  programs: [
+    "xc",
+  ] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: [
+    "0.8.5",
+    "0.8.4",
+    "0.8.3",
+    "0.8.2",
+    "0.8.1",
+    "0.8.0",
+    "0.7.0",
+    "0.6.0",
+    "0.5.0",
+    "0.4.1",
+    "0.4.0",
+    "0.3.0",
+    "0.2.0",
+    "0.1.181",
+    "0.1.180",
+    "0.0.180",
+    "0.0.175",
+    "0.0.169",
+    "0.0.159",
+    "0.0.154",
+    "0.0.152",
+    "0.0.148",
+    "0.0.146",
+    "0.0.144",
+    "0.0.142",
+    "0.0.111",
+    "0.0.110",
+  ] as const,
+  name: "xcfile.dev" as const,
+  domain: "xcfile.dev" as const,
+  description: "Package information for xcfile.dev" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xcfile.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +xcfile.dev -- $SHELL -i" as const,
+}
+
+export type XcfiledevPackage = typeof xcfiledevPackage

@@ -1,0 +1,42 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const githubcomfiatjafnakPackage = {
+  programs: [
+    "nak",
+  ] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: [
+    "0.14.2",
+    "0.14.1",
+    "0.14.0",
+    "0.13.2",
+    "0.13.1",
+    "0.13.0",
+    "0.12.6",
+    "0.12.0",
+    "0.11.4",
+    "0.11.3",
+    "0.11.2",
+    "0.11.0",
+    "0.10.1",
+    "0.10.0",
+    "0.9.1",
+    "0.9.0",
+    "0.8.0",
+  ] as const,
+  aliases: [
+    "nak",
+    "fiatjaf/nak",
+  ] as const,
+  name: "github.com/fiatjaf-nak" as const,
+  domain: "github.com/fiatjaf-nak" as const,
+  description: "Package information for github.com/fiatjaf-nak" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fiatjaf-nak/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +github.com/fiatjaf-nak -- $SHELL -i" as const,
+}
+
+export type GithubcomfiatjafnakPackage = typeof githubcomfiatjafnakPackage

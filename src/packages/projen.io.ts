@@ -1,0 +1,63 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const projenioPackage = {
+  programs: [
+    "projen",
+  ] as const,
+  companions: [
+    "git-scm.org",
+    "classic.yarnpkg.com",
+    "maven.apache.org",
+    "python.org",
+    "go.dev",
+  ] as const,
+  dependencies: [
+    "nodejs.org^22 || ^20 || ^18",
+  ] as const,
+  versions: [
+    "0.92.7",
+    "0.92.6",
+    "0.92.5",
+    "0.92.4",
+    "0.92.3",
+    "0.92.2",
+    "0.92.1",
+    "0.92.0",
+    "0.91.31",
+    "0.91.30",
+    "0.91.29",
+    "0.91.28",
+    "0.91.27",
+    "0.91.26",
+    "0.91.25",
+    "0.91.24",
+    "0.91.23",
+    "0.91.22",
+    "0.91.21",
+    "0.91.20",
+    "0.91.19",
+    "0.91.18",
+    "0.91.17",
+    "0.91.16",
+    "0.91.15",
+    "0.91.14",
+    "0.91.13",
+    "0.91.12",
+    "0.91.11",
+    "0.91.10",
+    "0.91.9",
+    "0.91.8",
+    "0.91.7",
+    "0.91.6",
+  ] as const,
+  name: "projen.io" as const,
+  domain: "projen.io" as const,
+  description: "Package information for projen.io" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/projen.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +projen.io -- $SHELL -i" as const,
+}
+
+export type ProjenioPackage = typeof projenioPackage

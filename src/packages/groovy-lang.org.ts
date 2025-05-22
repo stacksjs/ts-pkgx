@@ -1,0 +1,56 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const groovylangorgPackage = {
+  programs: [
+    "grape",
+    "grape_completion",
+    "groovy",
+    "groovyc",
+    "groovyc_completion",
+    "groovy_completion",
+    "groovyConsole",
+    "groovyConsole_completion",
+    "groovydoc",
+    "groovydoc_completion",
+    "groovysh",
+    "groovysh_completion",
+    "java2groovy",
+    "startGroovy",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "openjdk.org@17",
+  ] as const,
+  versions: [
+    "4.0.26",
+    "4.0.25",
+    "4.0.24",
+    "4.0.23",
+    "4.0.22",
+    "4.0.21",
+    "4.0.20",
+    "4.0.18",
+    "4.0.17",
+    "4.0.16",
+    "4.0.15",
+    "4.0.14",
+    "4.0.13",
+    "3.0.24",
+    "3.0.23",
+    "3.0.22",
+    "3.0.21",
+    "3.0.20",
+    "3.0.19",
+    "2.5.23",
+  ] as const,
+  name: "groovy/lang.org" as const,
+  domain: "groovy/lang.org" as const,
+  description: "Package information for groovy/lang.org" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/groovy/lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +groovy/lang.org -- $SHELL -i" as const,
+}
+
+export type GroovylangorgPackage = typeof groovylangorgPackage

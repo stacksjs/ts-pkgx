@@ -1,0 +1,50 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const bitwardencomPackage = {
+  programs: [
+    "bw",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "nodejs.org^20",
+  ] as const,
+  versions: [
+    "2025.4.0",
+    "2025.3.0",
+    "2025.2.0",
+    "2025.1.3",
+    "2025.1.2",
+    "2025.1.1",
+    "2025.1.0",
+    "2024.12.0",
+    "2024.11.1",
+    "2024.11.0",
+    "2024.10.0",
+    "2024.9.0",
+    "2024.8.2",
+    "2024.8.1",
+    "2024.7.2",
+    "2024.7.1",
+    "2024.6.1",
+    "2024.6.0",
+    "2024.4.1",
+    "2024.4.0",
+    "2024.3.1",
+    "2024.2.1",
+    "2024.2.0",
+    "1.22.1",
+  ] as const,
+  aliases: [
+    "bw",
+  ] as const,
+  name: "bitwarden.com" as const,
+  domain: "bitwarden.com" as const,
+  description: "Package information for bitwarden.com" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bitwarden.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +bitwarden.com -- $SHELL -i" as const,
+}
+
+export type BitwardencomPackage = typeof bitwardencomPackage

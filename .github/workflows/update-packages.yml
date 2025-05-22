@@ -32,6 +32,12 @@ jobs:
       - name: Update packages
         run: bun src/tools/updatePackages.ts
 
+      - name: Generate index
+        run: bun bin/cli.ts generate-index
+
+      - name: Generate aliases
+        run: bun bin/cli.ts generate-aliases
+
       - name: Check for changes
         id: git-check
         run: |
@@ -50,5 +56,5 @@ jobs:
         if: steps.git-check.outputs.changes == 'true'
         run: |
           git add src/packages/
-          git commit -m "chore: update packages" -m "Automated update via GitHub Actions workflow"
+          git commit -m "chore: update package files" -m "Automated update via GitHub Actions workflow"
           git push

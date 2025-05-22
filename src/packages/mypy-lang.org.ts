@@ -1,0 +1,48 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const mypylangorgPackage = {
+  programs: [
+    "mypy",
+    "mypyc",
+    "dmypy",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "pkgx.sh^1",
+  ] as const,
+  versions: [
+    "1.15.0",
+    "1.14.1",
+    "1.14.0",
+    "1.13.0",
+    "1.12.1",
+    "1.12.0",
+    "1.11.2",
+    "1.11.1",
+    "1.11.0",
+    "1.10.1",
+    "1.10.0",
+    "1.9.0",
+    "1.8.0",
+    "1.7.1",
+    "1.7.0",
+    "1.6.1",
+    "1.6.0",
+    "1.5.1",
+    "1.5.0",
+    "1.4.1",
+    "1.4.0",
+    "1.3.0",
+    "1.2.0",
+  ] as const,
+  name: "mypy/lang.org" as const,
+  domain: "mypy/lang.org" as const,
+  description: "Package information for mypy/lang.org" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mypy/lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +mypy/lang.org -- $SHELL -i" as const,
+}
+
+export type MypylangorgPackage = typeof mypylangorgPackage

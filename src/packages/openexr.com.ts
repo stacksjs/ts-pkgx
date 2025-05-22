@@ -1,0 +1,53 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const openexrcomPackage = {
+  programs: [
+    "exr2aces",
+    "exrenvmap",
+    "exrheader",
+    "exrmakepreview",
+    "exrmaketiled",
+    "exrmultipart",
+    "exrmultiview",
+    "exrstdattr",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "zlib.net^1",
+    "openexr.com/imath",
+  ] as const,
+  versions: [
+    "3.3.3",
+    "3.3.2",
+    "3.3.1",
+    "3.3.0",
+    "3.2.126",
+    "3.2.4",
+    "3.2.3",
+    "3.2.2",
+    "3.2.1",
+    "3.2.0",
+    "3.1.13",
+    "3.1.12",
+    "3.1.11",
+    "3.1.10",
+    "3.1.9",
+    "3.1.8",
+    "3.1.7",
+    "3.1.6",
+    "2.5.10",
+  ] as const,
+  aliases: [
+    "exr",
+  ] as const,
+  name: "openexr.com" as const,
+  domain: "openexr.com" as const,
+  description: "Package information for openexr.com" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i" as const,
+}
+
+export type OpenexrcomPackage = typeof openexrcomPackage

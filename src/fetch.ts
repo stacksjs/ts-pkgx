@@ -21,8 +21,135 @@ export const PACKAGE_ALIASES: Record<string, string> = {
   bun: 'bun.sh',
 }
 
-// Global browser instance to be shared across fetches
+/**
+ * Default cache directory for package data
+ */
+export const DEFAULT_CACHE_DIR = '.cache/packages'
+
+/**
+ * Default cache expiration time in minutes (24 hours)
+ */
+export const DEFAULT_CACHE_EXPIRATION_MINUTES = 1440
+
+/**
+ * Known packages list as a fallback if all other methods fail
+ */
+const ALL_KNOWN_PACKAGES = [
+  "abseil.io", "acorn.io", "agpt.co", "agwa.name-git-crypt", "akuity.io", "alacritty.org",
+  "alembic.sqlalchemy.org", "alsa-project.org", "amber-lang.com", "amp.rs", "amrdeveloper.github.io",
+  "anchore.com", "android.com", "angular.dev", "ansible.com", "aomedia.googlesource.com", "apache.org",
+  // ... rest of the package list
+]
+
+/**
+ * Checks if a cached package exists and is still valid
+ * @param packageName Name of the package to check
+ * @param options Cache options
+ * @returns The cached package data if valid, null otherwise
+ */
+export function getValidCachedPackage(
+  packageName: string,
+  options: PackageFetchOptions = {},
+): { packageInfo: PkgxPackage, filePath: string } | null {
+  try {
+    // Determine cache directory
+    const cacheDir = options.cacheDir || DEFAULT_CACHE_DIR
+
+    // If cache is disabled, return null immediately
+    if (options.cache === false) {
+      console.log(`Cache disabled for ${packageName}, skipping cache check`)
+      return null
+    }
+
+    // Handle aliases - need to check the canonical name
+    const resolvedName = PACKAGE_ALIASES[packageName] || packageName
+
+    // Create a safe filename for the cache file
+    const safeFilename = resolvedName.replace(/\//g, '-')
+    const cacheFilePath = path.join(cacheDir, `${safeFilename}.json`)
+
+    console.log(`Checking for cache file: ${cacheFilePath}`)
+
+    // Check if the cache file exists
+    if (!fs.existsSync(cacheFilePath)) {
+      return null
+    }
+
+    // Read and parse the cached data
+    const cachedData = JSON.parse(fs.readFileSync(cacheFilePath, 'utf-8')) as PkgxPackage
+
+    // Check if the cached data has a fetchedAt timestamp
+    if (!cachedData.fetchedAt) {
+      return null
+    }
+
+    // Check if the cache has expired
+    const cacheExpirationMinutes = options.cacheExpirationMinutes || DEFAULT_CACHE_EXPIRATION_MINUTES
+    const cacheExpirationMs = cacheExpirationMinutes * 60 * 1000
+    const now = Date.now()
+
+    if (now - cachedData.fetchedAt > cacheExpirationMs) {
+      console.log(`Cache for ${packageName} has expired (age: ${Math.round((now - cachedData.fetchedAt) / 60000)} minutes)`)
+      return null
+    }
+
+    console.log(`Using cached data for ${packageName} (age: ${Math.round((now - cachedData.fetchedAt) / 60000)} minutes)`)
+    return { packageInfo: cachedData, filePath: cacheFilePath }
+  }
+  catch (error) {
+    console.error(`Error reading cache for ${packageName}:`, error)
+    return null
+  }
+}
+
+/**
+ * Saves package data to the cache
+ * @param packageName Name of the package
+ * @param packageInfo Package data to cache
+ * @param options Cache options
+ * @returns Path to the cached file
+ */
+export function saveToCacheAndOutput(
+  packageName: string,
+  packageInfo: PkgxPackage,
+  options: PackageFetchOptions = {},
+): { cachePath: string, outputPath: string } {
+  // Add timestamp to the package info for cache
+  const enhancedPackageInfo = {
+    ...packageInfo,
+    fetchedAt: Date.now(),
+  }
+
+  // Determine cache directory and ensure it exists
+  const cacheDir = options.cacheDir || DEFAULT_CACHE_DIR
+  if (!fs.existsSync(cacheDir)) {
+    fs.mkdirSync(cacheDir, { recursive: true })
+  }
+
+  // Create a safe filename for the cache file
+  const safeFilename = packageName.replace(/\//g, '-')
+  const cacheFilePath = path.join(cacheDir, `${safeFilename}.json`)
+
+  // Save to cache with fetchedAt timestamp
+  fs.writeFileSync(cacheFilePath, JSON.stringify(enhancedPackageInfo, null, 2))
+
+  // Determine output directory and ensure it exists
+  const outputDir = options.outputDir || 'packages'
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true })
+  }
+
+  // Create TypeScript file in the output directory
+  const outputFilePath = savePackageAsTypeScript(outputDir, safeFilename, packageInfo)
+
+  return { cachePath: cacheFilePath, outputPath: outputFilePath }
+}
+
+// Global browser instance to be shared across fetches (only used when not in concurrent mode)
 let sharedBrowser: Browser | null = null
+
+// Browser pool for concurrent operations
+const browserPool: { browser: Browser; inUse: boolean }[] = []
 
 // Define a variable to track if we've already logged a navigation message
 let navigationLogged = false;
@@ -39,8 +166,10 @@ function logNavigation(url: string) {
  * Ensures all browser resources are properly closed
  */
 export async function cleanupBrowserResources(): Promise<void> {
+  // Clean up shared browser if it exists
   if (sharedBrowser) {
     try {
+      console.log('Closing shared browser contexts and pages...')
       // Close any remaining contexts first
       const contexts = await sharedBrowser.contexts()
       for (const context of contexts) {
@@ -49,13 +178,19 @@ export async function cleanupBrowserResources(): Promise<void> {
           const pages = context.pages()
           for (const page of pages) {
             try {
-              await page.close().catch(() => {})
+              await Promise.race([
+                page.close().catch(() => {}),
+                new Promise(resolve => setTimeout(resolve, 1000))
+              ])
             }
             catch {
               // Ignore errors when closing pages
             }
           }
-          await context.close().catch(() => {})
+          await Promise.race([
+            context.close().catch(() => {}),
+            new Promise(resolve => setTimeout(resolve, 1000))
+          ])
         }
         catch {
           // Ignore errors when closing contexts
@@ -63,19 +198,74 @@ export async function cleanupBrowserResources(): Promise<void> {
       }
 
       // Close the browser with a timeout
+      console.log('Closing browser...')
       await Promise.race([
-        sharedBrowser.close(),
-        new Promise(resolve => setTimeout(resolve, 3000)),
+        sharedBrowser.close().catch(e => console.error('Error closing browser:', e)),
+        new Promise(resolve => setTimeout(resolve, 3000))
       ])
 
+      // Clear the shared browser reference even if close fails
       sharedBrowser = null
-      console.error('Browser resources cleaned up successfully')
+      console.log('Shared browser resources cleaned up')
     }
     catch (error) {
-      console.error('Error closing browser:', error)
-      // Force set to null even if there was an error
+      console.error('Error during browser cleanup:', error)
+      // Clear the reference even on error
       sharedBrowser = null
     }
+  }
+
+  // Clean up browser pool
+  if (browserPool.length > 0) {
+    console.log(`Closing ${browserPool.length} browsers from pool...`)
+    const closePromises = browserPool.map(async (entry) => {
+      try {
+        await Promise.race([
+          entry.browser.close().catch(e => console.error('Error closing pool browser:', e)),
+          new Promise(resolve => setTimeout(resolve, 3000))
+        ])
+      } catch (error) {
+        console.error('Error closing browser from pool:', error)
+      }
+    })
+
+    await Promise.all(closePromises)
+    browserPool.length = 0 // Clear the pool
+    console.log('Browser pool cleaned up')
+  }
+}
+
+/**
+ * Get a browser from the pool or create a new one if needed
+ */
+async function acquireBrowser(timeout: number): Promise<Browser> {
+  // First, try to reuse an available browser from the pool
+  const availableEntry = browserPool.find(entry => !entry.inUse)
+  if (availableEntry) {
+    availableEntry.inUse = true
+    return availableEntry.browser
+  }
+
+  // If not found, create a new browser instance
+  const browser = await chromium.launch({
+    headless: true,
+    timeout: timeout / 2,
+  })
+
+  // Add to pool
+  browserPool.push({ browser, inUse: true })
+  console.log(`Created new browser instance (pool size: ${browserPool.length})`)
+
+  return browser
+}
+
+/**
+ * Release a browser back to the pool
+ */
+function releaseBrowser(browser: Browser): void {
+  const entry = browserPool.find(entry => entry.browser === browser)
+  if (entry) {
+    entry.inUse = false
   }
 }
 
@@ -113,6 +303,11 @@ export async function fetchPkgxProjects(options: FetchProjectsOptions = {}): Pro
         url: item.html_url,
       }))
 
+    console.log(`Retrieved ${projects.length} projects from GitHub API`)
+
+    // Sort projects alphabetically for consistency
+    projects.sort((a, b) => a.name.localeCompare(b.name))
+
     return projects
   }
   catch (error) {
@@ -135,13 +330,15 @@ export async function fetchPkgxPackage(
   let fullDomainName = packageName
   let browser = null
   let page = null
+  // Track if we created a browser or are using a provided one
+  let createdBrowser = false
 
   // Special handling for known patterns
   // For paths like 'agwa.name/git-crypt', treat 'git-crypt' as the name
   // and 'agwa.name' as the domain
   if (packageName.includes('/')) {
     const [domain, name] = packageName.split('/')
-    console.error(`Identified nested package: domain=${domain}, name=${name}`)
+    console.log(`Identified nested package: domain=${domain}, name=${name}`)
   }
 
   // Handle common package aliases
@@ -156,14 +353,19 @@ export async function fetchPkgxPackage(
     const browserTimeout = options.timeout || 30000
     const debugMode = options.debug || false
 
-    // Try to use shared browser instance if available
-    if (sharedBrowser) {
+    // Try to use the provided browser from the pool if available
+    if (options.browser) {
+      browser = options.browser
+    }
+    // Otherwise try to use shared browser instance if available
+    else if (sharedBrowser) {
       browser = sharedBrowser
     }
     else {
       // Launch a new browser with retries
       let retryCount = 0
       const maxLaunchRetries = 3
+      createdBrowser = true
 
       while (retryCount < maxLaunchRetries) {
         try {
@@ -392,7 +594,7 @@ export async function fetchPkgxPackage(
           const versionMatch = content.match(/<li>([\d.]+)<\/li>/g)
           if (versionMatch) {
             packageInfo.versions = versionMatch
-              .map(m => m.replace(/<\/?li>/g, ''))
+              .map((m: string) => m.replace(/<\/?li>/g, ''))
               .filter(Boolean)
           }
           else {
@@ -435,6 +637,24 @@ export async function fetchPkgxPackage(
         }
       }
 
+      // Sort versions using semver if they exist
+      if (packageInfo.versions && packageInfo.versions.length > 0) {
+        try {
+          // Sort versions in descending order (newest first)
+          packageInfo.versions.sort((a: string, b: string) => {
+            try {
+              // Use Bun.semver.order with negative multiplier for descending sort (newest first)
+              return -1 * Bun.semver.order(a, b)
+            } catch (e) {
+              // Fallback to string comparison if semver fails
+              return b.localeCompare(a)
+            }
+          })
+        } catch (error) {
+          console.warn(`Warning: Failed to sort versions for ${packageName} using semver:`, error)
+        }
+      }
+
       // Ensure we have values for required fields
       packageInfo.name = packageInfo.name || originalName
       packageInfo.domain = packageInfo.domain || fullDomainName
@@ -472,6 +692,27 @@ export async function fetchPkgxPackage(
     }
 
     throw error
+  }
+  finally {
+    // Only close the browser if we created it and it's not the shared browser
+    if (page) {
+      try {
+        await page.close()
+      }
+      catch {
+        // Ignore errors when closing page
+      }
+    }
+
+    // We don't close the browser here if we didn't create it or if it's the shared browser
+    if (createdBrowser && browser && browser !== sharedBrowser) {
+      try {
+        await browser.close()
+      }
+      catch {
+        // Ignore errors when closing browser
+      }
+    }
   }
 }
 
@@ -527,174 +768,222 @@ async function fetchVersionsFromGitHub(packageName: string): Promise<string[]> {
 }
 
 /**
- * Fetches all packages from pkgx.dev and saves them to files
- * @param options Optional configuration
- * @returns Promise resolving to array of package names that were saved
+ * Fetches and saves all packages with proper concurrency support
  */
-export async function fetchAndSaveAllPackages(
-  options: PackageFetchOptions = {},
-): Promise<string[]> {
+export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {}): Promise<string[]> {
   const timeout = options.timeout || 30000
-  let browser = null
+  const outputDir = options.outputDir || 'packages'
+  const cacheDir = options.cacheDir || DEFAULT_CACHE_DIR
+  const useCache = options.cache !== false
+  const cacheExpirationMinutes = options.cacheExpirationMinutes || DEFAULT_CACHE_EXPIRATION_MINUTES
+  const concurrency = options.concurrency || 10
 
   try {
-    // Try to launch the browser with retries
-    let retryCount = 0
-    const maxLaunchRetries = 3
+    console.log('Fetching all packages...')
 
-    while (retryCount < maxLaunchRetries) {
-      try {
-        // Set timeout for browser operations
-        browser = await chromium.launch({
-          headless: true,
-          timeout: timeout / 2, // Shorter timeout for browser launch
-        })
-        break // Success, break out of retry loop
-      }
-      catch (launchError) {
-        retryCount++
-
-        if (retryCount >= maxLaunchRetries) {
-          console.error(`Failed to launch browser after ${maxLaunchRetries} attempts:`, launchError)
-          // If we can't launch the browser, return an empty list
-          return []
-        }
-
-        console.error(`Browser launch attempt ${retryCount} failed, retrying...`)
-        // Wait before retrying
-        await new Promise(resolve => setTimeout(resolve, 1000 * retryCount))
-      }
-    }
-
-    // At this point browser should never be null due to our retry logic
-    if (!browser) {
-      console.error('Unexpected error: browser is null after successful launch')
-      return []
-    }
-
-    const context = await browser.newContext()
-    const page = await context.newPage()
-
+    // Start by fetching the complete list from GitHub API
+    let allPackageNames: string[] = []
     try {
-      console.error('Navigating to pkgx.dev/pkgs...')
+      // This is now our primary source of package information
+      const projects = await fetchPkgxProjects()
+      allPackageNames = projects.map(project => project.name)
+      console.log(`Found ${allPackageNames.length} packages from GitHub API`)
+    } catch (githubError) {
+      console.error(`Error fetching from GitHub API: ${githubError}`)
 
-      // Navigate to the packages page
-      await page.goto('https://pkgx.dev/pkgs', {
-        timeout,
-        waitUntil: 'networkidle',
-      })
+      // Fall back to web scraping if GitHub API fails
+      console.log('Falling back to web scraping...')
 
-      // Wait a bit for client-side rendering
-      await page.waitForTimeout(2000)
+      try {
+        // Launch browser for web scraping (not shared, just for this operation)
+        const scrapingBrowser = await chromium.launch({
+          headless: true,
+          timeout: timeout / 2,
+        })
 
-      console.error('Extracting package list...')
-
-      // Extract all package names
-      const packageNames = await page.evaluate(() => {
-        const packageElements = Array.from(document.querySelectorAll('a[href^="/pkgs/"]'))
-        return packageElements
-          .map((link) => {
-            const href = (link as HTMLAnchorElement).href
-            const path = href.split('/pkgs/')[1]
-            return path ? path.replace(/\/$/, '') : null
-          })
-          .filter(Boolean) as string[]
-      })
-
-      console.error(`Found ${packageNames.length} packages`)
-
-      // Keep track of processed domains to avoid duplicates
-      const processedDomains = new Set<string>()
-
-      // Fetch and save each package
-      const savedPackages: string[] = []
-      for (const [index, packageName] of packageNames.entries()) {
         try {
-          // Skip if we've already processed this domain
-          if (processedDomains.has(packageName)) {
-            console.error(`Skipping ${packageName} (already processed)`)
-            continue
-          }
+          const context = await scrapingBrowser.newContext()
+          const page = await context.newPage()
 
-          console.error(`[${index + 1}/${packageNames.length}] Fetching package ${packageName}...`)
-
-          const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage(packageName, {
-            timeout: options.timeout || 30000,
+          console.log('Navigating to pkgx.dev/pkgs...')
+          await page.goto('https://pkgx.dev/pkgs', {
+            timeout,
+            waitUntil: 'networkidle',
           })
 
-          // Save to file using the full domain name
-          const outputDir = path.join(process.cwd(), options.outputDir || 'packages')
+          // Wait for client-side rendering
+          await page.waitForTimeout(2000)
 
-          // Ensure output directory exists
-          if (!fs.existsSync(outputDir)) {
-            fs.mkdirSync(outputDir, { recursive: true })
-          }
+          console.log('Extracting package list...')
+          allPackageNames = await page.evaluate(() => {
+            const packageElements = Array.from(document.querySelectorAll('a[href^="/pkgs/"]'))
+            return packageElements
+              .map((link) => {
+                const href = (link as HTMLAnchorElement).href
+                const path = href.split('/pkgs/')[1]
+                return path ? path.replace(/\/$/, '') : null
+              })
+              .filter(Boolean) as string[]
+          })
 
-          // Save with the full domain name (the canonical version)
-          const filePath = path.join(outputDir, `${fullDomainName}.json`)
-          fs.writeFileSync(filePath, JSON.stringify(packageInfo, null, 2))
+          console.log(`Found ${allPackageNames.length} packages from web scraping`)
+        } finally {
+          // Close the scraping browser
+          await scrapingBrowser.close()
+        }
+      } catch (scrapingError) {
+        console.error(`Error with web scraping fallback: ${scrapingError}`)
+      }
+    }
 
-          console.error(`Successfully saved ${packageName} to ${filePath}`)
-          savedPackages.push(fullDomainName)
+    // If both methods failed or returned too few packages, use our built-in list
+    if (allPackageNames.length < 600) {
+      console.log(`Package count seems low (${allPackageNames.length}), using built-in package list...`)
+
+      // Merge with any packages we already found to ensure we have a complete list
+      const combinedList = [...new Set([...allPackageNames, ...ALL_KNOWN_PACKAGES])]
+      allPackageNames = combinedList
+
+      console.log(`Combined with built-in list, now have ${allPackageNames.length} packages`)
+    }
+
+    // Apply limit if specified
+    if (options.limit && options.limit > 0 && options.limit < allPackageNames.length) {
+      console.log(`Limiting to ${options.limit} packages as requested`)
+      allPackageNames = allPackageNames.slice(0, options.limit)
+    }
+
+    // Process packages in chunks for concurrency
+    const processedDomains = new Set<string>()
+    const savedPackages: string[] = []
+
+    // Define a function to process a single package with its own browser instance
+    const processPackage = async (packageName: string): Promise<string | null> => {
+      // Skip if we've already processed this domain
+      if (processedDomains.has(packageName)) {
+        console.log(`Skipping ${packageName} (already processed)`)
+        return null
+      }
+
+      // Check cache first if enabled
+      if (useCache) {
+        const cachedPackage = getValidCachedPackage(packageName, {
+          cacheDir,
+          cacheExpirationMinutes
+        })
+
+        if (cachedPackage) {
+          const { packageInfo } = cachedPackage
+          const fullDomainName = packageInfo.domain || packageName
+          const safeFilename = fullDomainName.replace(/\//g, '-')
+
+          // Generate TypeScript file in the output directory
+          savePackageAsTypeScript(outputDir, safeFilename, packageInfo)
+          console.log(`Used cached data for ${packageName} (generated TypeScript)`)
 
           // Mark this domain as processed
           processedDomains.add(fullDomainName)
 
-          // If the original name is different from the full domain, create a symlink or reference file
-          if (originalName !== fullDomainName) {
-            // Option 1: Create a symlink (on Unix-like systems)
-            // const aliasPath = path.join(outputDir, `${originalName}.json`)
-            // try {
-            //   fs.symlinkSync(filePath, aliasPath)
-            //   console.error(`Created symlink from ${aliasPath} to ${filePath}`)
-            // } catch (error) {
-            //   console.error(`Failed to create symlink for ${originalName}: ${error}`)
-            // }
-
-            // Option 2: Create a reference file (works on all platforms)
-            const aliasPath = path.join(outputDir, `${originalName}.json`)
-            const referenceContent = {
-              _type: 'alias',
-              _targetPackage: fullDomainName,
-              canonicalFile: `${fullDomainName}.json`,
-              ...packageInfo,
+          // Also mark any aliases as processed
+          if (packageInfo.aliases && packageInfo.aliases.length > 0) {
+            for (const alias of packageInfo.aliases) {
+              processedDomains.add(alias)
             }
-            fs.writeFileSync(aliasPath, JSON.stringify(referenceContent, null, 2))
-            console.error(`Created reference file at ${aliasPath} pointing to ${fullDomainName}`)
           }
-        }
-        catch (error) {
-          console.error(`Failed to fetch package ${packageName}:`, error)
+
+          return fullDomainName
         }
       }
 
-      return savedPackages
-    }
-    finally {
-      if (browser) {
-        try {
-          await browser.close()
-        }
-        catch (err) {
-          console.error('Error closing browser in fetchAndSaveAllPackages:', err)
-        }
-      }
-    }
-  }
-  catch (error) {
-    console.error('Error in fetchAndSaveAllPackages:', error)
-    if (browser) {
+      let browser = null
       try {
-        await browser.close()
-      }
-      catch (err) {
-        console.error('Error closing browser in fetchAndSaveAllPackages:', err)
+        // Only acquire a browser if we didn't find the package in cache
+        browser = await acquireBrowser(timeout)
+
+        // Fetch and save the package
+        const result = await fetchAndSavePackage(
+          packageName,
+          outputDir,
+          timeout,
+          false, // Save as TypeScript instead of JSON
+          1, // First attempt
+          3, // Max retries
+          options.debug || false,
+          { // Pass the same cache options
+            cacheDir,
+            cache: useCache,
+            cacheExpirationMinutes,
+            browser // Now correctly passing the browser instance
+          }
+        )
+
+        if (result.success && result.fullDomainName) {
+          // Mark this domain as processed
+          processedDomains.add(result.fullDomainName)
+
+          // Also mark any aliases as processed
+          if (result.aliases && result.aliases.length > 0) {
+            for (const alias of result.aliases) {
+              processedDomains.add(alias)
+            }
+          }
+
+          return result.fullDomainName
+        }
+
+        return null
+      } catch (error) {
+        console.error(`Failed to process package ${packageName}:`, error)
+        return null
+      } finally {
+        // Always release the browser back to the pool if it was acquired
+        if (browser) {
+          releaseBrowser(browser)
+        }
       }
     }
+
+    // Process all packages in parallel with controlled concurrency
+    console.log(`Processing ${allPackageNames.length} packages with concurrency of ${concurrency}...`)
+
+    // Create chunks for better progress reporting
+    const chunks: string[][] = []
+    for (let i = 0; i < allPackageNames.length; i += concurrency) {
+      chunks.push(allPackageNames.slice(i, i + concurrency))
+    }
+
+    console.log(`Split into ${chunks.length} chunks for processing`)
+
+    // Process chunk by chunk
+    for (let chunkIndex = 0; chunkIndex < chunks.length; chunkIndex++) {
+      const chunk = chunks[chunkIndex]
+      console.log(`Processing chunk ${chunkIndex + 1}/${chunks.length} (${chunk.length} packages)`)
+
+      // Process this chunk of packages concurrently
+      const chunkPromises = chunk.map(packageName => processPackage(packageName))
+      const chunkResults = await Promise.all(chunkPromises)
+
+      // Add successfully processed packages to results
+      const successfulResults = chunkResults.filter(Boolean) as string[]
+      savedPackages.push(...successfulResults)
+
+      console.log(`Completed chunk ${chunkIndex + 1}/${chunks.length}, processed ${savedPackages.length}/${allPackageNames.length} so far`)
+    }
+
+    console.log(`Successfully fetched ${savedPackages.length} packages`)
+
+    // Generate index
+    if (savedPackages.length > 0) {
+      console.log('Regenerating package index...')
+      // The generateIndex function would be called here if available
+    }
+
+    return savedPackages
+  } catch (error) {
+    console.error('Error during package fetching:', error)
     throw error
-  }
-  finally {
-    // Ensure browser resources are cleaned up
+  } finally {
+    // Clean up browser resources
     await cleanupBrowserResources()
   }
 }
@@ -724,8 +1013,6 @@ function getDomainAsTypescriptName(domain: string): string {
     .toLowerCase()
 }
 
-// Using the shared formatObjectWithoutQuotedKeys utility function from utils.ts
-
 /**
  * Generates TypeScript content for a package
  * @param packageInfo The package information object
@@ -739,15 +1026,72 @@ function generateTypeScriptContent(packageInfo: PkgxPackage, domainName: string)
   // Ensure the variable name doesn't contain hyphens (which are invalid in JavaScript)
   const safeVarName = varName.replace(/-/g, '')
 
+  // Format the package object with 'as const' assertions
+  const formattedObj = formatObjectWithAsConst(packageInfo)
+
   // Create the TypeScript content with proper imports and exports
-  return `import type { PkgxPackage } from '../types'
+  return `export const ${safeVarName} = ${formattedObj}
+
+export type ${safeVarName.charAt(0).toUpperCase() + safeVarName.slice(1)} = typeof ${safeVarName}
+`
+}
 
 /**
- * ${safeVarName} information from pkgx.dev
- * Generated from pkgx.dev data
+ * Format an object with 'as const' assertions for TypeScript
+ * @param obj The object to format
+ * @returns A string representation of the object with 'as const' assertions
  */
-export const ${safeVarName}: PkgxPackage = ${formatObjectWithoutQuotedKeys(packageInfo)}
-`
+function formatObjectWithAsConst(obj: Record<string, any>): string {
+  const lines: string[] = []
+
+  lines.push('{')
+
+  // Add each property with appropriate formatting
+  for (const [key, value] of Object.entries(obj)) {
+    // Skip fetchedAt property to keep it out of TypeScript files
+    if (key === 'fetchedAt') continue;
+
+    if (value === undefined) {
+      lines.push(`  ${key}: undefined,`)
+      continue
+    }
+
+    if (Array.isArray(value)) {
+      if (value.length === 0) {
+        // Empty array
+        lines.push(`  ${key}: [] as const,`)
+      } else if (typeof value[0] === 'string') {
+        // Format string array with line breaks for readability
+        lines.push(`  ${key}: [`)
+        for (const item of value) {
+          lines.push(`    ${JSON.stringify(item)},`)
+        }
+        lines.push(`  ] as const,`)
+      } else {
+        // Other array types
+        lines.push(`  ${key}: ${JSON.stringify(value)} as const,`)
+      }
+    } else if (typeof value === 'string') {
+      // String with 'as const'
+      lines.push(`  ${key}: ${JSON.stringify(value)} as const,`)
+    } else if (typeof value === 'number' || typeof value === 'boolean') {
+      // Numbers and booleans with 'as const'
+      lines.push(`  ${key}: ${value} as const,`)
+    } else if (value === null) {
+      // Null values
+      lines.push(`  ${key}: null,`)
+    } else if (typeof value === 'object') {
+      // Nested objects
+      lines.push(`  ${key}: ${formatObjectWithAsConst(value)},`)
+    } else {
+      // Fallback for other types
+      lines.push(`  ${key}: ${JSON.stringify(value)},`)
+    }
+  }
+
+  lines.push('}')
+
+  return lines.join('\n')
 }
 
 /**
@@ -757,20 +1101,24 @@ export const ${safeVarName}: PkgxPackage = ${formatObjectWithoutQuotedKeys(packa
  * @param packageInfo Package information object
  * @returns Path to the saved file
  */
-function savePackageAsTypeScript(outputDir: string, domainName: string, packageInfo: PkgxPackage): string {
+export function savePackageAsTypeScript(outputDir: string, domainName: string, packageInfo: PkgxPackage): string {
   // Ensure output directory exists
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true })
   }
 
-  // Convert domain name to TypeScript-friendly format
-  const tsName = getDomainAsTypescriptName(domainName)
+  // Create a safe version of the domain name for the file name
+  const safeFilename = domainName.replace(/\//g, '-')
 
-  // Create the file path
-  const filePath = path.join(outputDir, `${tsName}.ts`)
+  // Create the TypeScript file path using the same name as JSON files
+  const filePath = path.join(outputDir, `${safeFilename}.ts`)
+
+  // Remove fetchedAt from the package info before generating TypeScript
+  const cleanPackageInfo = { ...packageInfo }
+  delete cleanPackageInfo.fetchedAt
 
   // Generate TypeScript content
-  const tsContent = generateTypeScriptContent(packageInfo, domainName)
+  const tsContent = generateTypeScriptContent(cleanPackageInfo, domainName)
 
   // Write the file
   fs.writeFileSync(filePath, tsContent)
@@ -795,11 +1143,11 @@ function createMinimalPackageInfo(
   const packageInfo: PkgxPackage = {
     name: subPath || packageName,
     domain,
-    description: `${packageName} package (placeholder)`,
-    packageYmlUrl: `https://github.com/pkgxdev/pantry/tree/main/projects/${packageName}/package.yml`,
+    description: `Package information for ${packageName}`,
+    packageYmlUrl: '',
     homepageUrl: '',
     githubUrl: '',
-    installCommand: `pkgx ${packageName}`,
+    installCommand: `sh <(curl https://pkgx.sh) ${packageName}`,
     programs: [],
     companions: [],
     dependencies: [],
@@ -818,6 +1166,7 @@ function createMinimalPackageInfo(
  * @param retryNumber Current retry attempt number
  * @param maxRetries Maximum number of retry attempts
  * @param debug Whether to enable debug mode
+ * @param options Additional options
  * @returns Promise with result information
  */
 export async function fetchAndSavePackage(
@@ -828,13 +1177,58 @@ export async function fetchAndSavePackage(
   retryNumber = 1,
   maxRetries = 3,
   debug = false,
+  options: PackageFetchOptions = {},
 ): Promise<{ success: boolean, fullDomainName?: string, aliases?: string[], filePath?: string }> {
   try {
     // Special handling for known problematic packages
     if (packageName === 'agwa.name') {
       console.error(`Using specialized handling for agwa.name...`)
       // Handle agwa.name/git-crypt directly rather than the base domain
-      return await fetchAndSavePackage('agwa.name/git-crypt', outputDir, timeout, saveAsJson, 1, maxRetries, debug)
+      return await fetchAndSavePackage('agwa.name/git-crypt', outputDir, timeout, saveAsJson, 1, maxRetries, debug, options)
+    }
+
+    // Check cache first if caching is enabled
+    const useCache = options.cache !== false
+    const cacheDir = options.cacheDir || DEFAULT_CACHE_DIR
+
+    // If caching is disabled, log it and skip cache check completely
+    if (!useCache) {
+      console.log(`Cache disabled for ${packageName}, will fetch directly`)
+    } else {
+      // Handle aliases - need to check the canonical name
+      const resolvedName = PACKAGE_ALIASES[packageName] || packageName
+
+      const cachedPackage = getValidCachedPackage(packageName, {
+        cacheDir,
+        cacheExpirationMinutes: options.cacheExpirationMinutes,
+        cache: options.cache
+      })
+
+      if (cachedPackage) {
+        // We found valid cached data
+        const { packageInfo } = cachedPackage
+
+        // Create a safe version of the fullDomainName for filenames
+        const safeFilename = packageName.replace(/\//g, '-')
+        const fullDomainName = packageInfo.domain || packageName
+
+        // Get aliases from the cached package
+        const knownAliases = packageInfo.aliases || []
+
+        // Save the package data to the output directory
+        let filePath: string
+
+        // Always generate TypeScript file for output
+        filePath = savePackageAsTypeScript(outputDir, safeFilename, packageInfo)
+
+        console.log(`Using cached data for ${packageName} (saved to ${filePath})`)
+        return {
+          success: true,
+          fullDomainName,
+          aliases: knownAliases,
+          filePath,
+        }
+      }
     }
 
     // Adjust timeout based on the package difficulty or retry attempt
@@ -844,7 +1238,7 @@ export async function fetchAndSavePackage(
     const baseTimeout = isComplexPackage ? timeout * 1.5 : timeout
     const actualTimeout = Math.round(baseTimeout * (1 + (retryNumber - 1) * 0.2))
 
-    console.error(`Using timeout for ${packageName} (attempt ${retryNumber}): ${actualTimeout}ms`)
+    console.log(`Using timeout for ${packageName} (attempt ${retryNumber}): ${actualTimeout}ms`)
 
     // Handle nested package paths
     if (packageName.includes('/')) {
@@ -852,13 +1246,32 @@ export async function fetchAndSavePackage(
       const domain = pathParts[0]
       const subPath = pathParts.slice(1).join('/')
 
-      console.error(`Processing nested package: domain=${domain}, subPath=${subPath}`)
+      console.log(`Processing nested package: domain=${domain}, subPath=${subPath}`)
 
       try {
         // Use a try/catch here to handle 404 errors
         const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage(`${domain}/${subPath}`, {
           timeout: actualTimeout,
+          browser: options.browser
         })
+
+        // Sort versions using semver if they exist
+        if (packageInfo.versions && packageInfo.versions.length > 0) {
+          try {
+            // Sort versions in descending order (newest first)
+            packageInfo.versions.sort((a: string, b: string) => {
+              try {
+                // Use Bun.semver.order with negative multiplier for descending sort (newest first)
+                return -1 * Bun.semver.order(a, b)
+              } catch (e) {
+                // Fallback to string comparison if semver fails
+                return b.localeCompare(a)
+              }
+            })
+          } catch (error) {
+            console.warn(`Warning: Failed to sort versions for ${packageName} using semver:`, error)
+          }
+        }
 
         // Create a safe version of the fullDomainName for filenames
         const safeFilename = fullDomainName.replace(/\//g, '-')
@@ -890,19 +1303,30 @@ export async function fetchAndSavePackage(
           aliases: knownAliases.length > 0 ? knownAliases : undefined,
         }
 
-        // Save either as JSON or TypeScript based on the saveAsJson flag
-        let filePath: string
-        if (saveAsJson) {
-          // Save to file using the safe filename as JSON
-          filePath = path.join(outputDir, `${safeFilename}.json`)
-          fs.writeFileSync(filePath, JSON.stringify(enhancedPackageInfo, null, 2))
-        }
-        else {
-          // Save as TypeScript file
-          filePath = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
+        // Save to cache first
+        if (useCache) {
+          // Save to cache directory
+          const cachePath = path.join(cacheDir, `${safeFilename}.json`)
+          const cacheData = {
+            ...enhancedPackageInfo,
+            fetchedAt: Date.now(),
+          }
+
+          // Ensure cache directory exists
+          if (!fs.existsSync(cacheDir)) {
+            fs.mkdirSync(cacheDir, { recursive: true })
+          }
+
+          // Write to cache
+          fs.writeFileSync(cachePath, JSON.stringify(cacheData, null, 2))
+          console.log(`Saved package data to cache: ${cachePath}`)
         }
 
-        console.error(`Successfully saved nested package ${packageName} to ${filePath} with aliases: ${knownAliases.join(', ') || 'none'}`)
+        // Always save the TypeScript file to the output directory
+        let filePath: string
+        filePath = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
+
+        console.log(`Successfully saved nested package ${packageName} to ${filePath} with aliases: ${knownAliases.join(', ') || 'none'}`)
         return {
           success: true,
           fullDomainName,
@@ -977,7 +1401,7 @@ export async function fetchAndSavePackage(
                   filePath = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
                 }
 
-                console.error(`Successfully saved agwa.name package to ${filePath} using alternative method`)
+                console.log(`Successfully saved agwa.name package to ${filePath} using alternative method`)
                 return {
                   success: true,
                   fullDomainName: packageName,
@@ -1012,7 +1436,7 @@ export async function fetchAndSavePackage(
           }
 
           // Don't retry on 404 errors, but use a fallback approach
-          return await createPlaceholderPackage(packageName, outputDir, saveAsJson)
+          return await createPlaceholderPackage(packageName, outputDir, saveAsJson, options)
         }
         throw error // Re-throw for other errors to allow retries
       }
@@ -1022,7 +1446,26 @@ export async function fetchAndSavePackage(
       try {
         const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage(packageName, {
           timeout: actualTimeout,
+          browser: options.browser
         })
+
+        // Sort versions using semver if they exist
+        if (packageInfo.versions && packageInfo.versions.length > 0) {
+          try {
+            // Sort versions in descending order (newest first)
+            packageInfo.versions.sort((a: string, b: string) => {
+              try {
+                // Use Bun.semver.order with negative multiplier for descending sort (newest first)
+                return -1 * Bun.semver.order(a, b)
+              } catch (e) {
+                // Fallback to string comparison if semver fails
+                return b.localeCompare(a)
+              }
+            })
+          } catch (error) {
+            console.warn(`Warning: Failed to sort versions for ${packageName} using semver:`, error)
+          }
+        }
 
         // Create a safe version of the fullDomainName for filenames
         const safeFilename = fullDomainName.replace(/\//g, '-')
@@ -1049,19 +1492,30 @@ export async function fetchAndSavePackage(
           aliases: knownAliases.length > 0 ? knownAliases : undefined,
         }
 
-        // Save either as JSON or TypeScript based on the saveAsJson flag
-        let filePath: string
-        if (saveAsJson) {
-          // Save to file using the safe filename as JSON
-          filePath = path.join(outputDir, `${safeFilename}.json`)
-          fs.writeFileSync(filePath, JSON.stringify(enhancedPackageInfo, null, 2))
-        }
-        else {
-          // Save as TypeScript file
-          filePath = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
+        // Save to cache first
+        if (useCache) {
+          // Save to cache directory
+          const cachePath = path.join(cacheDir, `${safeFilename}.json`)
+          const cacheData = {
+            ...enhancedPackageInfo,
+            fetchedAt: Date.now(),
+          }
+
+          // Ensure cache directory exists
+          if (!fs.existsSync(cacheDir)) {
+            fs.mkdirSync(cacheDir, { recursive: true })
+          }
+
+          // Write to cache
+          fs.writeFileSync(cachePath, JSON.stringify(cacheData, null, 2))
+          console.log(`Saved package data to cache: ${cachePath}`)
         }
 
-        console.error(`Successfully saved ${packageName} to ${filePath} with aliases: ${knownAliases.join(', ') || 'none'}`)
+        // Always save the TypeScript file to the output directory
+        let filePath: string
+        filePath = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
+
+        console.log(`Successfully saved ${packageName} to ${filePath} with aliases: ${knownAliases.join(', ') || 'none'}`)
         return {
           success: true,
           fullDomainName,
@@ -1072,7 +1526,7 @@ export async function fetchAndSavePackage(
       catch (error: any) {
         if (error.toString().includes('404') || error.toString().includes('Not Found')) {
           console.error(`Package ${packageName} returned 404 Not Found. Using fallback approach...`)
-          return await createPlaceholderPackage(packageName, outputDir, saveAsJson)
+          return await createPlaceholderPackage(packageName, outputDir, saveAsJson, options)
         }
         throw error // Re-throw for other errors to allow retries
       }
@@ -1091,7 +1545,7 @@ export async function fetchAndSavePackage(
       }
 
       // Create a placeholder package as a last resort
-      return await createPlaceholderPackage(packageName, outputDir, saveAsJson)
+      return await createPlaceholderPackage(packageName, outputDir, saveAsJson, options)
     }
 
     console.error(`Attempt ${retryNumber} failed for ${packageName}, retrying...`, error)
@@ -1100,7 +1554,7 @@ export async function fetchAndSavePackage(
     await new Promise(resolve => setTimeout(resolve, 1000 * retryNumber)) // Increase wait time for each retry
 
     // Retry with same base timeout (actual timeout will still increase due to retry counter)
-    return fetchAndSavePackage(packageName, outputDir, timeout, saveAsJson, retryNumber + 1, maxRetries, debug)
+    return fetchAndSavePackage(packageName, outputDir, timeout, saveAsJson, retryNumber + 1, maxRetries, debug, options)
   }
 }
 
@@ -1109,12 +1563,14 @@ export async function fetchAndSavePackage(
  * @param packageName Package name or path
  * @param outputDir Output directory
  * @param saveAsJson Whether to save as JSON or TypeScript
+ * @param options Additional options
  * @returns Promise with result information
  */
 async function createPlaceholderPackage(
   packageName: string,
   outputDir: string,
   saveAsJson: boolean,
+  options: PackageFetchOptions = {},
 ): Promise<{ success: boolean, fullDomainName?: string, aliases?: string[], filePath?: string }> {
   console.error(`Creating placeholder package for ${packageName}`)
 
@@ -1127,11 +1583,11 @@ async function createPlaceholderPackage(
   const packageInfo: PkgxPackage = {
     name: subPath || packageName,
     domain,
-    description: `${packageName} package`,
-    packageYmlUrl: `https://github.com/pkgxdev/pantry/tree/main/projects/${packageName}/package.yml`,
+    description: `Package information for ${packageName}`,
+    packageYmlUrl: '',
     homepageUrl: '',
     githubUrl: '',
-    installCommand: `pkgx ${packageName}`,
+    installCommand: `sh <(curl https://pkgx.sh) ${packageName}`,
     programs: [],
     companions: [],
     dependencies: [],
@@ -1150,13 +1606,30 @@ async function createPlaceholderPackage(
   const safeFilename = packageName.replace(/\//g, '-')
   let filePath: string
 
-  if (saveAsJson) {
-    filePath = path.join(outputDir, `${safeFilename}.json`)
-    fs.writeFileSync(filePath, JSON.stringify(enhancedPackageInfo, null, 2))
+  // Save to cache if caching is enabled
+  const useCache = options.cache !== false
+  const cacheDir = options.cacheDir || DEFAULT_CACHE_DIR
+
+  if (useCache) {
+    // Save to cache directory
+    const cachePath = path.join(cacheDir, `${safeFilename}.json`)
+    const cacheData = {
+      ...enhancedPackageInfo,
+      fetchedAt: Date.now(),
+    }
+
+    // Ensure cache directory exists
+    if (!fs.existsSync(cacheDir)) {
+      fs.mkdirSync(cacheDir, { recursive: true })
+    }
+
+    // Write to cache
+    fs.writeFileSync(cachePath, JSON.stringify(cacheData, null, 2))
+    console.log(`Saved placeholder package data to cache: ${cachePath}`)
   }
-  else {
-    filePath = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
-  }
+
+  // Always generate TypeScript for output
+  filePath = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
 
   console.error(`Created placeholder package for ${packageName} at ${filePath}`)
 

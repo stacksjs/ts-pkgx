@@ -1,0 +1,50 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const elixirlangorgPackage = {
+  programs: [
+    "elixir",
+    "elixirc",
+    "iex",
+    "mix",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "erlang.org",
+  ] as const,
+  versions: [
+    "1.18.4",
+    "1.18.3",
+    "1.18.2",
+    "1.18.1",
+    "1.18.0",
+    "1.17.3",
+    "1.17.2",
+    "1.17.1",
+    "1.17.0",
+    "1.16.3",
+    "1.16.2",
+    "1.16.1",
+    "1.16.0",
+    "1.15.8",
+    "1.15.7",
+    "1.15.6",
+    "1.15.5",
+    "1.15.4",
+    "1.15.3",
+    "1.15.2",
+    "1.15.1",
+    "1.15.0",
+    "1.14.5",
+    "1.14.4",
+  ] as const,
+  name: "elixir/lang.org" as const,
+  domain: "elixir/lang.org" as const,
+  description: "Package information for elixir/lang.org" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/elixir/lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +elixir/lang.org -- $SHELL -i" as const,
+}
+
+export type ElixirlangorgPackage = typeof elixirlangorgPackage

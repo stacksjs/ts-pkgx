@@ -1,0 +1,49 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const curlsePackage = {
+  programs: [
+    "curl",
+    "curl-config",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "openssl.org^1.1",
+    "curl.se/ca-certs",
+    "zlib.net^1.2.11",
+  ] as const,
+  versions: [
+    "8.13.0",
+    "8.12.1",
+    "8.12.0",
+    "8.11.1",
+    "8.11.0",
+    "8.10.1",
+    "8.10.0",
+    "8.9.1",
+    "8.9.0",
+    "8.8.0",
+    "8.7.1",
+    "8.6.0",
+    "8.5.0",
+    "8.4.0",
+    "8.3.0",
+    "8.2.1",
+    "8.2.0",
+    "8.1.2",
+    "8.1.0",
+    "8.0.1",
+    "8.0.0",
+    "7.86.0",
+    "7.85.0",
+  ] as const,
+  name: "curl.se" as const,
+  domain: "curl.se" as const,
+  description: "Package information for curl.se" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/curl.se/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +curl.se -- $SHELL -i" as const,
+}
+
+export type CurlsePackage = typeof curlsePackage

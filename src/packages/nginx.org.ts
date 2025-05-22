@@ -1,0 +1,43 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const nginxorgPackage = {
+  programs: [
+    "nginx",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "pcre.org@8.45",
+    "zlib.net^1.2.13",
+    "openssl.org^1.1.1k",
+  ] as const,
+  versions: [
+    "1.28.0",
+    "1.27.5",
+    "1.27.4",
+    "1.27.3",
+    "1.27.2",
+    "1.27.1",
+    "1.27.0",
+    "1.26.2",
+    "1.26.1",
+    "1.26.0",
+    "1.25.5",
+    "1.25.4",
+    "1.25.3",
+    "1.25.2",
+    "1.25.1",
+    "1.25.0",
+    "1.24.0",
+    "1.23.3",
+  ] as const,
+  name: "nginx.org" as const,
+  domain: "nginx.org" as const,
+  description: "Package information for nginx.org" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nginx.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +nginx.org -- $SHELL -i" as const,
+}
+
+export type NginxorgPackage = typeof nginxorgPackage

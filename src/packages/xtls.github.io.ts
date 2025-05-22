@@ -1,0 +1,54 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const xtlsgithubioPackage = {
+  programs: [
+    "xray",
+  ] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: [
+    "25.5.16",
+    "25.4.30",
+    "25.3.6",
+    "25.2.21",
+    "25.1.30",
+    "24.12.31",
+    "24.12.18",
+    "24.11.30",
+    "24.11.21",
+    "24.11.11",
+    "24.11.5",
+    "24.10.31",
+    "24.9.30",
+    "1.8.24",
+    "1.8.23",
+    "1.8.21",
+    "1.8.20",
+    "1.8.19",
+    "1.8.18",
+    "1.8.17",
+    "1.8.16",
+    "1.8.15",
+    "1.8.13",
+    "1.8.12",
+    "1.8.11",
+    "1.8.10",
+    "1.8.9",
+    "1.8.8",
+    "1.8.7",
+    "1.8.6",
+  ] as const,
+  aliases: [
+    "xray-core",
+  ] as const,
+  name: "xtls.github.io" as const,
+  domain: "xtls.github.io" as const,
+  description: "Package information for xtls.github.io" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xtls.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +xtls.github.io -- $SHELL -i" as const,
+}
+
+export type XtlsgithubioPackage = typeof xtlsgithubioPackage

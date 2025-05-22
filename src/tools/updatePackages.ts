@@ -15,12 +15,17 @@ const PACKAGES_DIR = path.join(process.cwd(), 'src', 'packages')
 // Number of packages to update per batch to prevent memory issues
 const BATCH_SIZE = 20
 
+// Command line flags
+const FLAGS = {
+  force: process.argv.includes('--force') || process.argv.includes('-f')
+}
+
 /**
  * Generate the exported package name based on the module name
  * @param moduleName The module name (filename without extension)
  * @returns The actual exported package variable name
  */
-function getPackageExportName(moduleName: string): string {
+export function getPackageExportName(moduleName: string): string {
   // Remove hyphens to create a valid JavaScript identifier
   // e.g., ast-grepgithubio.ts exports astgrepgithubioPackage
   return `${moduleName.replace(/-/g, '')}Package`
@@ -51,37 +56,35 @@ function getDomainAsTypescriptFileName(domainName: string): string {
 }
 
 /**
- * Check if a file is corrupted with duplicate interfaces
- * @param filePath Path to the file to check
- * @param interfaceName Name of the interface to check for duplicates
- * @returns boolean indicating if the file contains duplicate interfaces
- */
-function fileHasDuplicateInterfaces(filePath: string, interfaceName: string): boolean {
-  try {
-    const content = fs.readFileSync(filePath, 'utf-8')
-    // Count occurrences of the interface declaration
-    const interfaceMatches = content.match(new RegExp(`export interface ${interfaceName}`, 'g'))
-    return interfaceMatches ? interfaceMatches.length > 1 : false
-  } catch (error) {
-    // If there's an error reading the file, assume it's not corrupted
-    return false
-  }
-}
-
-/**
- * Regenerate a package file from scratch to fix corruption
- * @param filePath Path to the file to regenerate
- * @param packageInfo Package information to use for regeneration
+ * Generate a complete package file with consistent formatting
+ * @param packageInfo Package information to use for generation
  * @param tsName TypeScript-friendly name for the file
- * @returns boolean indicating success
+ * @returns String containing the entire file content
  */
-function regeneratePackageFile(filePath: string, packageInfo: Record<string, any>, tsName: string): boolean {
-  try {
-    // Create package variable name
-    const varName = getPackageExportName(tsName)
+export function generatePackageFile(packageInfo: Record<string, any>, tsName: string): string {
+  // Create package variable name
+  const varName = getPackageExportName(tsName)
 
-    // Create TypeScript content
-    const tsContent = `import type { PkgxPackage } from '../types'
+  // Create interface name
+  const interfaceName = `${varName.charAt(0).toUpperCase() + varName.slice(1).replace(/Package$/, '').replace(/-/g, '')}Package`
+
+  // Generate array formats with proper indentation
+  const formatArray = (arr: any[]) => {
+    if (!arr || arr.length === 0) return '[]'
+
+    // For single item arrays, keep them on one line
+    if (arr.length === 1) {
+      return `[${JSON.stringify(arr[0])}]`
+    }
+
+    // For multi-item arrays, format with line breaks and indentation
+    return `[
+    ${arr.map(item => JSON.stringify(item)).join(',\n    ')}
+  ]`
+  }
+
+  // Create the full file content
+  return `import type { PkgxPackage } from '../types'
 
 /**
  * ${varName} information from pkgx.dev
@@ -89,7 +92,7 @@ function regeneratePackageFile(filePath: string, packageInfo: Record<string, any
  */
 export const ${varName}: PkgxPackage = ${formatObjectWithoutQuotedKeys(packageInfo)}
 
-export interface ${varName.charAt(0).toUpperCase() + varName.slice(1).replace(/Package$/, '').replace(/-/g, '')}Package {
+export interface ${interfaceName} {
   name: ${JSON.stringify(packageInfo.name)};
   domain: ${JSON.stringify(packageInfo.domain)};
   description: ${JSON.stringify(packageInfo.description)};
@@ -98,157 +101,20 @@ export interface ${varName.charAt(0).toUpperCase() + varName.slice(1).replace(/P
   githubUrl: ${JSON.stringify(packageInfo.githubUrl || '')};
   installCommand: ${JSON.stringify(packageInfo.installCommand)};
   programs: readonly ${Array.isArray(packageInfo.programs) && packageInfo.programs.length > 0
-    ? `[${packageInfo.programs.map((p: string) => JSON.stringify(p)).join(', ')}]`
+    ? JSON.stringify(packageInfo.programs).replace(/^\[/, '[').replace(/\]$/, ']')
     : '[]'};
   companions: readonly ${Array.isArray(packageInfo.companions) && packageInfo.companions.length > 0
-    ? `[${packageInfo.companions.map((c: string) => JSON.stringify(c)).join(', ')}]`
+    ? JSON.stringify(packageInfo.companions).replace(/^\[/, '[').replace(/\]$/, ']')
     : '[]'};
   dependencies: readonly ${Array.isArray(packageInfo.dependencies) && packageInfo.dependencies.length > 0
-    ? `[${packageInfo.dependencies.map((d: string) => JSON.stringify(d)).join(', ')}]`
+    ? JSON.stringify(packageInfo.dependencies).replace(/^\[/, '[').replace(/\]$/, ']')
     : '[]'};
   versions: readonly ${Array.isArray(packageInfo.versions) && packageInfo.versions.length > 0
-    ? `[${packageInfo.versions.map((v: string) => JSON.stringify(v)).join(', ')}]`
+    ? JSON.stringify(packageInfo.versions).replace(/^\[/, '[').replace(/\]$/, ']')
     : '[]'}${packageInfo.fullPath ? `;
   fullPath: ${JSON.stringify(packageInfo.fullPath || packageInfo.name)}` : ''};
-}`
-
-    // Write the file
-    fs.writeFileSync(filePath, tsContent)
-    console.error(`Regenerated corrupted package file: ${filePath}`)
-    return true
-  } catch (error) {
-    console.error(`Error regenerating package file: ${error}`)
-    return false
-  }
 }
-
-/**
- * Update a single package file with latest information
- * @param packageName The name of the package to update
- * @returns Promise resolving to boolean indicating success
- */
-export async function updatePackage(packageName: string): Promise<boolean> {
-  try {
-    console.log(`Updating package ${packageName}...`)
-
-    // Fetch the latest package information
-    const { packageInfo, fullDomainName } = await fetchPkgxPackage(packageName, {
-      timeout: 60000, // 60 second timeout
-    })
-
-    // Sort versions if they exist, using Bun.semver if available
-    if (Array.isArray(packageInfo.versions) && packageInfo.versions.length > 0) {
-      try {
-        // Use Bun.semver to sort versions if available (descending order - newest first)
-        if (typeof Bun !== 'undefined' && Bun.semver) {
-          packageInfo.versions.sort((a, b) => -1 * Bun.semver.order(a, b))
-        } else {
-          // Fallback manual sorting when Bun.semver is not available
-          packageInfo.versions.sort((a, b) => {
-            const aParts = a.split('.').map(Number)
-            const bParts = b.split('.').map(Number)
-
-            for (let i = 0; i < Math.max(aParts.length, bParts.length); i++) {
-              const aVal = aParts[i] || 0
-              const bVal = bParts[i] || 0
-              if (aVal !== bVal) {
-                return bVal - aVal // Descending order
-              }
-            }
-            return 0
-          })
-        }
-      } catch (err) {
-        console.error(`Error sorting versions: ${err}`)
-        // Continue with unsorted versions if sorting fails
-      }
-    }
-
-    // Convert domain name to TypeScript-friendly format
-    const tsName = getDomainAsTypescriptFileName(fullDomainName)
-
-    // Create the file path
-    const filePath = path.join(PACKAGES_DIR, `${tsName}.ts`)
-
-    // Check if file exists
-    const fileExists = fs.existsSync(filePath)
-
-    // If file doesn't exist, create a new one
-    if (!fileExists) {
-      console.log(`Creating new package file for ${packageName} at ${filePath}`)
-      return regeneratePackageFile(filePath, packageInfo, tsName)
-    }
-
-    // Check if the file has duplicate interfaces, which indicates corruption
-    const interfaceName = `${getPackageExportName(tsName).charAt(0).toUpperCase() + getPackageExportName(tsName).slice(1).replace(/Package$/, '').replace(/-/g, '')}Package`
-    if (fileHasDuplicateInterfaces(filePath, interfaceName)) {
-      console.log(`Detected duplicate interfaces in ${filePath}, regenerating file...`)
-      return regeneratePackageFile(filePath, packageInfo, tsName)
-    }
-
-    // File exists and isn't corrupted, update it
-    console.log(`Updating existing package file for ${packageName}`)
-
-    // Read existing file
-    const existingContent = fs.readFileSync(filePath, 'utf-8')
-
-    // Get package variable name
-    const varName = getPackageExportName(tsName)
-
-    // Create new package object content using our formatter
-    const newPackageContent = formatObjectWithoutQuotedKeys(packageInfo)
-
-    // Create the new interface content
-    const newInterfaceContent = `export interface ${interfaceName} {
-  name: ${JSON.stringify(packageInfo.name)};
-  domain: ${JSON.stringify(packageInfo.domain)};
-  description: ${JSON.stringify(packageInfo.description)};
-  packageYmlUrl: ${JSON.stringify(packageInfo.packageYmlUrl || '')};
-  homepageUrl: ${JSON.stringify(packageInfo.homepageUrl || '')};
-  githubUrl: ${JSON.stringify(packageInfo.githubUrl || '')};
-  installCommand: ${JSON.stringify(packageInfo.installCommand)};
-  programs: readonly ${Array.isArray(packageInfo.programs) && packageInfo.programs.length > 0
-    ? `[${packageInfo.programs.map(p => JSON.stringify(p)).join(', ')}]`
-    : '[]'};
-  companions: readonly ${Array.isArray(packageInfo.companions) && packageInfo.companions.length > 0
-    ? `[${packageInfo.companions.map(c => JSON.stringify(c)).join(', ')}]`
-    : '[]'};
-  dependencies: readonly ${Array.isArray(packageInfo.dependencies) && packageInfo.dependencies.length > 0
-    ? `[${packageInfo.dependencies.map(d => JSON.stringify(d)).join(', ')}]`
-    : '[]'};
-  versions: readonly ${Array.isArray(packageInfo.versions) && packageInfo.versions.length > 0
-    ? `[${packageInfo.versions.map(v => JSON.stringify(v)).join(', ')}]`
-    : '[]'}${packageInfo.fullPath ? `;
-  fullPath: ${JSON.stringify(packageInfo.fullPath || packageName)}` : ''};
-}`
-
-    // Generate completely new file content based on the template
-    const completelyNewContent = `import type { PkgxPackage } from '../types'
-
-/**
- * ${varName} information from pkgx.dev
- * Generated by pkgx-tools
- */
-export const ${varName}: PkgxPackage = ${newPackageContent}
-
-${newInterfaceContent}
 `
-
-    // Check if content actually changed
-    if (completelyNewContent !== existingContent) {
-      // Write the updated file
-      fs.writeFileSync(filePath, completelyNewContent)
-      console.error(`Updated package ${packageName} with new content`)
-      return true
-    }
-
-    console.log(`No changes needed for ${packageName}`)
-    return false
-  }
-  catch (error) {
-    console.error(`Error updating package ${packageName}:`, error)
-    return false
-  }
 }
 
 /**
@@ -257,7 +123,7 @@ ${newInterfaceContent}
  * @param packageName The name of the package to update
  * @returns Promise resolving to boolean indicating success
  */
-export async function updateSinglePackage(packageName: string): Promise<boolean> {
+export async function updatePackage(packageName: string): Promise<boolean> {
   try {
     console.log(`Updating package ${packageName}...`)
 
@@ -305,87 +171,8 @@ export async function updateSinglePackage(packageName: string): Promise<boolean>
       }
     }
 
-    // Convert domain name to TypeScript-friendly format
-    const tsName = getDomainAsTypescriptFileName(fullDomainName)
-
-    // Create the file path
-    const filePath = path.join(PACKAGES_DIR, `${tsName}.ts`)
-
-    // Check if file exists
-    const fileExists = fs.existsSync(filePath)
-
-    // If file doesn't exist, create a new one
-    if (!fileExists) {
-      console.log(`Creating new package file for ${packageName} at ${filePath}`)
-      return regeneratePackageFile(filePath, packageInfo, tsName)
-    }
-
-    // Check if the file has duplicate interfaces, which indicates corruption
-    const interfaceName = `${getPackageExportName(tsName).charAt(0).toUpperCase() + getPackageExportName(tsName).slice(1).replace(/Package$/, '').replace(/-/g, '')}Package`
-    if (fileHasDuplicateInterfaces(filePath, interfaceName)) {
-      console.log(`Detected duplicate interfaces in ${filePath}, regenerating file...`)
-      return regeneratePackageFile(filePath, packageInfo, tsName)
-    }
-
-    // File exists and isn't corrupted, update it
-    console.log(`Updating existing package file for ${packageName}`)
-
-    // Read existing file
-    const existingContent = fs.readFileSync(filePath, 'utf-8')
-
-    // Get package variable name
-    const varName = getPackageExportName(tsName)
-
-    // Create new package object content using our formatter
-    const newPackageContent = formatObjectWithoutQuotedKeys(packageInfo)
-
-    // Create the new interface content
-    const newInterfaceContent = `export interface ${interfaceName} {
-  name: ${JSON.stringify(packageInfo.name)};
-  domain: ${JSON.stringify(packageInfo.domain)};
-  description: ${JSON.stringify(packageInfo.description)};
-  packageYmlUrl: ${JSON.stringify(packageInfo.packageYmlUrl || '')};
-  homepageUrl: ${JSON.stringify(packageInfo.homepageUrl || '')};
-  githubUrl: ${JSON.stringify(packageInfo.githubUrl || '')};
-  installCommand: ${JSON.stringify(packageInfo.installCommand)};
-  programs: readonly ${Array.isArray(packageInfo.programs) && packageInfo.programs.length > 0
-    ? `[${packageInfo.programs.map(p => JSON.stringify(p)).join(', ')}]`
-    : '[]'};
-  companions: readonly ${Array.isArray(packageInfo.companions) && packageInfo.companions.length > 0
-    ? `[${packageInfo.companions.map(c => JSON.stringify(c)).join(', ')}]`
-    : '[]'};
-  dependencies: readonly ${Array.isArray(packageInfo.dependencies) && packageInfo.dependencies.length > 0
-    ? `[${packageInfo.dependencies.map(d => JSON.stringify(d)).join(', ')}]`
-    : '[]'};
-  versions: readonly ${Array.isArray(packageInfo.versions) && packageInfo.versions.length > 0
-    ? `[${packageInfo.versions.map(v => JSON.stringify(v)).join(', ')}]`
-    : '[]'}${packageInfo.fullPath ? `;
-  fullPath: ${JSON.stringify(packageInfo.fullPath || packageName)}` : ''};
-}`
-
-    // Generate completely new file content based on the template
-    const completelyNewContent = `import type { PkgxPackage } from '../types'
-
-/**
- * ${varName} information from pkgx.dev
- * Generated by pkgx-tools
- */
-export const ${varName}: PkgxPackage = ${newPackageContent}
-
-${newInterfaceContent}
-`
-
-    // Check if content actually changed
-    if (completelyNewContent !== existingContent) {
-      // Write the updated file
-      fs.writeFileSync(filePath, completelyNewContent)
-      console.error(`Updated package ${packageName} with new content`)
-      return true
-    }
-
-    // Even though no changes were needed, this is still a success case
-    console.log(`No changes needed for ${packageName}`)
-    return true
+    // Now use our updateSinglePackage helper function
+    return await updateSinglePackage(packageInfo)
   }
   catch (error) {
     console.error(`Error updating package ${packageName}:`, error)
@@ -394,131 +181,195 @@ ${newInterfaceContent}
 }
 
 /**
- * Main function to update packages
- * @param singlePackage Optional name of a single package to update (skips fetching all packages)
+ * Extract basic package information from a file to regenerate it with proper formatting
+ * @param filePath Path to the package file
+ * @returns Package data object or null if extraction fails
  */
-async function main(singlePackage?: string) {
+export function extractPackageDataFromFile(filePath: string): Record<string, any> | null {
   try {
-    // Check if the packages directory exists
-    if (!fs.existsSync(PACKAGES_DIR)) {
-      fs.mkdirSync(PACKAGES_DIR, { recursive: true })
+    if (!fs.existsSync(filePath)) {
+      console.error(`File not found: ${filePath}`);
+      return null;
     }
 
-    // If a single package is specified, just update that one
-    if (singlePackage) {
-      console.error(`Single package mode: only updating '${singlePackage}'`)
-      const success = await updateSinglePackage(singlePackage)
+    // Read the file content
+    const content = fs.readFileSync(filePath, 'utf-8');
 
-      if (success) {
-        console.error(`Successfully updated package '${singlePackage}'`)
-      } else {
-        console.error(`Failed to update package '${singlePackage}'`)
+    // Extract essential fields
+    const domain = extractValueFromContent(content, 'domain');
+    if (!domain) {
+      console.error(`Could not extract domain from ${filePath}`);
+      return null;
+    }
+
+    const name = extractValueFromContent(content, 'name') || domain;
+
+    // Create a package data object with all possible fields
+    return {
+      name,
+      domain,
+      description: extractValueFromContent(content, 'description') || '',
+      packageYmlUrl: extractValueFromContent(content, 'packageYmlUrl') || '',
+      homepageUrl: extractValueFromContent(content, 'homepageUrl') || '',
+      githubUrl: extractValueFromContent(content, 'githubUrl') || '',
+      installCommand: extractValueFromContent(content, 'installCommand') || '',
+      programs: extractArrayFromContent(content, 'programs'),
+      companions: extractArrayFromContent(content, 'companions'),
+      dependencies: extractArrayFromContent(content, 'dependencies'),
+      versions: extractArrayFromContent(content, 'versions'),
+      fullPath: extractValueFromContent(content, 'fullPath') || domain
+    };
+  } catch (error) {
+    console.error(`Error extracting package data from ${filePath}:`, error);
+    return null;
+  }
+}
+
+/**
+ * Helper function to extract a string value from file content
+ */
+function extractValueFromContent(content: string, key: string): string {
+  const regex = new RegExp(`${key}\\s*:\\s*"([^"]*)"`, 'i');
+  const match = content.match(regex);
+  return match && match[1] ? match[1] : '';
+}
+
+/**
+ * Helper function to extract an array from file content
+ */
+function extractArrayFromContent(content: string, key: string): string[] {
+  // Look for the array pattern in the content
+  const regex = new RegExp(`${key}\\s*:\\s*\\[([^\\]]*)]`, 'i');
+  const match = content.match(regex);
+
+  if (!match || !match[1]) {
+    return [];
+  }
+
+  // Parse the array items
+  const itemsString = match[1].trim();
+  if (!itemsString) {
+    return [];
+  }
+
+  // Extract string items from the array
+  const itemRegex = /"([^"]*)"/g;
+  const items: string[] = [];
+  let itemMatch;
+
+  while ((itemMatch = itemRegex.exec(itemsString)) !== null) {
+    items.push(itemMatch[1]);
+  }
+
+  return items;
+}
+
+/**
+ * Update a single package's file
+ * @param packageInfo Package information to write
+ * @param aliasInfo Additional information about reverse aliases
+ * @returns Promise resolving to a boolean indicating success
+ */
+async function updateSinglePackage(
+  packageInfo: Record<string, any>,
+  aliasInfo: { alias?: string; targetDomain?: string } = {}
+): Promise<boolean> {
+  try {
+    const fullDomainName = packageInfo.domain;
+    const tsName = getDomainAsTypescriptFileName(fullDomainName);
+    const filePath = path.join(PACKAGES_DIR, `${tsName}.ts`);
+
+    // Generate clean file content
+    const fileContent = generatePackageFile(packageInfo, tsName);
+
+    // If a file already exists, delete it first to ensure a completely clean state
+    if (fs.existsSync(filePath)) {
+      try {
+        fs.unlinkSync(filePath);
+        console.log(`Deleted existing file to ensure clean generation: ${filePath}`);
+      } catch (err) {
+        console.error(`Warning: Error deleting file: ${err}`);
+        // Continue anyway - we'll overwrite it
       }
-
-      // Regenerate the index file
-      console.error(`Regenerating index.ts file...`)
-      await import('./generateIndex')
-      await cleanupBrowserResources()
-      return
+    } else {
+      console.log(`Creating new package file for ${packageInfo.domain}`);
     }
 
-    // Otherwise, get the list of all packages to update
-    const packages = await fetchPackageListFromGitHub()
-    console.error(`Found ${packages.length} packages to update`)
+    // Write the file with fresh content
+    fs.writeFileSync(filePath, fileContent);
+    console.log(`Successfully wrote ${tsName}.ts with clean content`);
 
-    let updatedCount = 0
-    const batches = Math.ceil(packages.length / BATCH_SIZE)
-
-    // Process packages in batches to prevent memory issues
-    for (let i = 0; i < batches; i++) {
-      const start = i * BATCH_SIZE
-      const end = Math.min(start + BATCH_SIZE, packages.length)
-      const batch = packages.slice(start, end)
-
-      console.error(`Processing batch ${i + 1}/${batches} (packages ${start + 1}-${end})`)
-
-      // Update packages in the current batch
-      const results = await Promise.all(batch.map((pkg: string) => updatePackage(pkg)))
-
-      // Count updated packages
-      updatedCount += results.filter(Boolean).length
-    }
-
-    console.error(`Updated ${updatedCount} out of ${packages.length} packages`)
-
-    // Regenerate the index.ts file
-    console.error(`Regenerating index.ts file...`)
-
-    // Run the generateIndex script directly
-    await import('./generateIndex')
-
-    // Clean up resources
-    await cleanupBrowserResources()
-
-    console.error(`Package update completed successfully`)
-
-    // Force exit after a small delay to ensure all resources are freed
-    setTimeout(() => {
-      process.exit(0)
-    }, 1000)
+    return true;
   }
   catch (error) {
-    console.error('Error updating packages:', error)
-
-    // Make sure to clean up resources
-    try {
-      await cleanupBrowserResources()
-    }
-    catch (cleanupError) {
-      console.error('Error during cleanup:', cleanupError)
-    }
-
-    process.exit(1)
-  }
-  finally {
-    // Make sure to clean up browser resources
-    try {
-      await cleanupBrowserResources()
-
-      // Force exit after resources are cleaned up
-      setTimeout(() => {
-        process.exit(0)
-      }, 1000)
-    }
-    catch (error) {
-      console.error('Error during final cleanup:', error)
-      process.exit(1)
-    }
+    console.error(`Error updating package ${packageInfo.domain}:`, error);
+    return false;
   }
 }
 
-// Run the main function
-// This function identifies valid package names, not executable paths
-function isValidPackageName(arg: string): boolean {
-  // Ignore executable paths
-  if (arg.startsWith('/') || arg.includes('/bin/')) {
-    return false
+/**
+ * Force regenerates a package file with minimal data
+ * This is a simpler version that always generates a clean file
+ * @param packageName Name of the package to force fix
+ */
+export function forceFixProblematicFile(packageName: string): boolean {
+  // Determine the filename
+  let filename: string;
+  if (packageName.includes('/')) {
+    // Handle nested path like apple.com/remote_cmds
+    const [domain, subPath] = packageName.split('/');
+    filename = domain.replace(/\./g, '') + '-' + subPath.replace(/-/g, '_');
+    filename = filename.toLowerCase();
+  } else {
+    // Regular domain
+    filename = packageName.replace(/\./g, '').toLowerCase();
   }
 
-  // Package names often have a domain structure or specific format
-  return (
-    // Check for domain-like format with dots
-    /\w+\.\w+/.test(arg) ||
-    // Check for path-like format with slashes, but not system paths
-    (arg.includes('/') && !arg.startsWith('/')) ||
-    // Check for common package names without domains
-    ['node', 'bun', 'python', 'go', 'rust', 'ruby', 'php', 'perl', 'deno'].includes(arg)
-  )
-}
+  const filePath = path.join(PACKAGES_DIR, `${filename}.ts`);
+  console.log(`Forcefully fixing file: ${filePath}`);
 
-// Look for valid package names in command line args
-const packageArg = process.argv.find(isValidPackageName)
+  // If the file exists, try to extract its data first
+  let packageData;
+  if (fs.existsSync(filePath)) {
+    packageData = extractPackageDataFromFile(filePath);
 
-if (packageArg) {
-  // If a specific package name is provided, update only that package
-  console.error(`Package name detected: ${packageArg}`)
-  main(packageArg)
-} else {
-  // Otherwise update all packages
-  main()
+    // Delete the existing file to ensure a clean state
+    try {
+      fs.unlinkSync(filePath);
+      console.log(`Deleted existing file: ${filePath}`);
+    } catch (error) {
+      console.error(`Error deleting file: ${error}`);
+      // Continue anyway
+    }
+  }
+
+  // If we couldn't extract data, create minimal package data
+  if (!packageData) {
+    packageData = {
+      name: packageName,
+      domain: packageName,
+      description: `Package information for ${packageName}`,
+      packageYmlUrl: "",
+      homepageUrl: "",
+      githubUrl: "",
+      installCommand: `pkgx ${packageName}`,
+      programs: [],
+      companions: [],
+      dependencies: [],
+      versions: []
+    };
+  }
+
+  // Generate a clean file with a single interface
+  const fileContent = generatePackageFile(packageData, filename);
+
+  // Write the new file
+  try {
+    fs.writeFileSync(filePath, fileContent);
+    console.log(`Created clean file: ${filePath}`);
+    return true;
+  } catch (error) {
+    console.error(`Error writing file: ${error}`);
+    return false;
+  }
 }

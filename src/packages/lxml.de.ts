@@ -1,0 +1,37 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const lxmldePackage = {
+  programs: [] as const,
+  companions: [] as const,
+  dependencies: [
+    "python.org^3.10",
+    "gnome.org/libxml2~2.12",
+    "gnome.org/libxslt^1",
+  ] as const,
+  versions: [
+    "5.4.0",
+    "5.3.2",
+    "5.3.1",
+    "5.3.0",
+    "5.2.2",
+    "5.2.1",
+    "5.2.0",
+    "5.1.1",
+    "5.1.0",
+    "5.0.2",
+    "5.0.1",
+    "5.0.0",
+    "4.9.4",
+    "4.9.3",
+  ] as const,
+  name: "lxml.de" as const,
+  domain: "lxml.de" as const,
+  description: "Package information for lxml.de" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lxml.de/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +lxml.de -- $SHELL -i" as const,
+}
+
+export type LxmldePackage = typeof lxmldePackage

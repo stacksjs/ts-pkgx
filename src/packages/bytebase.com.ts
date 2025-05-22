@@ -1,0 +1,54 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const bytebasecomPackage = {
+  programs: [
+    "bytebase",
+  ] as const,
+  companions: [
+    "postgresql.org",
+  ] as const,
+  dependencies: [
+    "nodejs.org>=23.11",
+  ] as const,
+  versions: [
+    "3.6.1",
+    "3.6.0",
+    "3.5.2",
+    "3.5.1",
+    "3.5.0",
+    "3.4.1",
+    "3.4.0",
+    "3.3.1",
+    "3.3.0",
+    "3.2.0",
+    "3.1.2",
+    "3.1.1",
+    "3.1.0",
+    "3.0.1",
+    "3.0.0",
+    "2.23.1",
+    "2.23.0",
+    "2.22.3",
+    "2.22.2",
+    "2.22.1",
+    "2.22.0",
+    "2.21.0",
+    "2.20.0",
+    "2.19.0",
+    "2.18.0",
+    "2.17.0",
+    "2.16.0",
+    "2.15.0",
+    "2.14.1",
+  ] as const,
+  name: "bytebase.com" as const,
+  domain: "bytebase.com" as const,
+  description: "Package information for bytebase.com" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bytebase.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +bytebase.com -- $SHELL -i" as const,
+}
+
+export type BytebasecomPackage = typeof bytebasecomPackage

@@ -1,0 +1,58 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const vclustercomPackage = {
+  programs: [
+    "vcluster",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "kubernetes.io/kubectl^1",
+    "linuxcurl.se/ca-certs",
+    "curl.se/ca-certs",
+  ] as const,
+  versions: [
+    "0.25.0",
+    "0.24.1",
+    "0.24.0",
+    "0.23.2",
+    "0.23.1",
+    "0.23.0",
+    "0.22.6",
+    "0.22.5",
+    "0.22.4",
+    "0.22.3",
+    "0.22.2",
+    "0.22.1",
+    "0.22.0",
+    "0.21.6",
+    "0.21.5",
+    "0.21.4",
+    "0.21.3",
+    "0.21.2",
+    "0.21.1",
+    "0.21.0",
+    "0.20.6",
+    "0.20.5",
+    "0.20.4",
+    "0.20.3",
+    "0.20.2",
+    "0.20.1",
+    "0.20.0",
+    "0.19.9",
+    "0.19.8",
+    "0.19.7",
+    "0.19.6",
+    "0.19.5",
+    "0.19.4",
+  ] as const,
+  name: "vcluster.com" as const,
+  domain: "vcluster.com" as const,
+  description: "Package information for vcluster.com" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vcluster.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +vcluster.com -- $SHELL -i" as const,
+}
+
+export type VclustercomPackage = typeof vclustercomPackage

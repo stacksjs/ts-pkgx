@@ -1,0 +1,43 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const rarlabcomPackage = {
+  programs: [
+    "unrar",
+  ] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: [
+    "7.1.6",
+    "7.1.5",
+    "7.1.4",
+    "7.1.2",
+    "7.1.1",
+    "7.0.9",
+    "7.0.8",
+    "7.0.7",
+    "7.0.6",
+    "7.0.5",
+    "7.0.4",
+    "7.0.3",
+    "7.0.2",
+    "7.0.1",
+    "6.2.12",
+    "6.2.11",
+    "6.2.10",
+    "6.2.9",
+    "6.2.8",
+  ] as const,
+  aliases: [
+    "unrar",
+  ] as const,
+  name: "rarlab.com" as const,
+  domain: "rarlab.com" as const,
+  description: "Package information for rarlab.com" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rarlab.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +rarlab.com -- $SHELL -i" as const,
+}
+
+export type RarlabcomPackage = typeof rarlabcomPackage

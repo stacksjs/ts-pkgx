@@ -1,0 +1,45 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const opensshcomPackage = {
+  programs: [
+    "scp",
+    "sftp",
+    "slogin",
+    "ssh",
+    "ssh-add",
+    "ssh-agent",
+    "ssh-keygen",
+    "ssh-keyscan",
+    "sshd",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "nlnetlabs.nl/ldns",
+    "developers.yubico.com/libfido2",
+    "openssl.org",
+    "kerberos.org",
+    "thrysoee.dk/editline",
+    "github.com/besser82/libxcrypt",
+    "zlib.net",
+    "linuxlinux-pam.org",
+    "linux-pam.org",
+  ] as const,
+  versions: [
+    "10.0.0",
+    "9.9.0",
+    "9.8.0",
+    "9.7.0",
+    "9.6.0",
+    "9.5.0",
+  ] as const,
+  name: "openssh.com" as const,
+  domain: "openssh.com" as const,
+  description: "Package information for openssh.com" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openssh.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +openssh.com -- $SHELL -i" as const,
+}
+
+export type OpensshcomPackage = typeof opensshcomPackage

@@ -1,0 +1,56 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const gitscmorgPackage = {
+  programs: [
+    "git",
+    "git-cvsserver",
+    "git-receive-pack",
+    "git-shell",
+    "git-upload-archive",
+    "git-upload-pack",
+    "scalar",
+    "git-credential-osxkeychain",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "zlib.net@1",
+    "gnu.org/gettext^0.21",
+    "curl.se>=5",
+    "curl.se/ca-certs",
+    "perl.org",
+    "libexpat.github.io~2",
+  ] as const,
+  versions: [
+    "2.49.0",
+    "2.48.0",
+    "2.47.1",
+    "2.47.0",
+    "2.46.2",
+    "2.46.1",
+    "2.46.0",
+    "2.45.2",
+    "2.45.0",
+    "2.44.0",
+    "2.43.3",
+    "2.43.2",
+    "2.43.1",
+    "2.43.0",
+    "2.42.1",
+    "2.42.0",
+    "2.41.0",
+    "2.40.0",
+    "2.39.1",
+    "2.39.0",
+    "2.38.1",
+  ] as const,
+  name: "git/scm.org" as const,
+  domain: "git/scm.org" as const,
+  description: "Package information for git/scm.org" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/git/scm.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +git/scm.org -- $SHELL -i" as const,
+}
+
+export type GitscmorgPackage = typeof gitscmorgPackage

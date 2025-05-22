@@ -1,0 +1,43 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const libarchiveorgPackage = {
+  programs: [
+    "bsdcat",
+    "bsdcpio",
+    "bsdtar",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "gnu.org/coreutils",
+    "lz4.org@1",
+    "tukaani.org/xz@5",
+    "facebook.com/zstd@1",
+    "sourceware.org/bzip2@1",
+    "libexpat.github.io@2",
+    "zlib.net@1",
+  ] as const,
+  versions: [
+    "3.8.0",
+    "3.7.9",
+    "3.7.8",
+    "3.7.7",
+    "3.7.6",
+    "3.7.5",
+    "3.7.4",
+    "3.7.3",
+    "3.7.2",
+    "3.7.1",
+    "3.7.0",
+    "3.6.2",
+  ] as const,
+  name: "libarchive.org" as const,
+  domain: "libarchive.org" as const,
+  description: "Package information for libarchive.org" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libarchive.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +libarchive.org -- $SHELL -i" as const,
+}
+
+export type LibarchiveorgPackage = typeof libarchiveorgPackage

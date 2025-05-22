@@ -47,6 +47,10 @@ export interface PkgxPackage {
    * The full path to the package, including any nested paths (e.g. 'agwa.name/git-crypt')
    */
   fullPath?: string
+  /**
+   * Timestamp when the package data was last fetched
+   */
+  fetchedAt?: number
 }
 
 /**
@@ -66,10 +70,45 @@ export interface PackageFetchOptions {
   outputDir?: string
 
   /**
+   * Directory to store cached package data
+   * @default '.cache/packages'
+   */
+  cacheDir?: string
+
+  /**
    * Enable debug mode to save screenshots and additional info
    * @default false
    */
   debug?: boolean
+
+  /**
+   * Limit the number of packages to fetch
+   */
+  limit?: number
+
+  /**
+   * Whether to use cached data if available and not expired
+   * @default true
+   */
+  cache?: boolean
+
+  /**
+   * Cache expiration time in minutes
+   * @default 1440 (24 hours)
+   */
+  cacheExpirationMinutes?: number
+
+  /**
+   * Number of packages to fetch concurrently
+   * @default 10
+   */
+  concurrency?: number
+
+  /**
+   * Browser instance to use for fetching (for concurrency)
+   * @internal Used internally for browser pooling
+   */
+  browser?: any
 }
 
 export interface FetchPkgxPackageOptions {

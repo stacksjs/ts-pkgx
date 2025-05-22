@@ -13,15 +13,15 @@ export function convertDomainToVarName(domain: string): string {
   if (domain.includes('/')) {
     const [parentDomain, subPath] = domain.split('/')
     // Remove all dots and dashes from both parts
-    const cleanParent = parentDomain.replace(/\./g, '')
-    const cleanSubPath = subPath.replace(/-/g, '')
+    const cleanParent = parentDomain.replace(/[.-]/g, '')
+    const cleanSubPath = subPath.replace(/[.-]/g, '')
 
     // Combine both parts without any separator
     return `${cleanParent}${cleanSubPath}`.toLowerCase()
   }
 
   // Regular domains like 'bun.sh' -> 'bunsh'
-  return domain.replace(/\./g, '').replace(/-/g, '').toLowerCase()
+  return domain.replace(/[.-]/g, '').toLowerCase()
 }
 
 /**
@@ -64,20 +64,20 @@ export function guessOriginalDomain(fileName: string): string {
 
     // Try to reconstruct domain parts
     let domain = parentDomainFileName
-    // Add dots for common domain extensions
-    if (domain.endsWith('org'))
+    // Add dots for common domain extensions - only do this if there isn't already a dot
+    if (domain.endsWith('org') && !domain.endsWith('.org'))
       domain = domain.replace(/org$/, '.org')
-    if (domain.endsWith('io'))
+    if (domain.endsWith('io') && !domain.endsWith('.io'))
       domain = domain.replace(/io$/, '.io')
-    if (domain.endsWith('com'))
+    if (domain.endsWith('com') && !domain.endsWith('.com'))
       domain = domain.replace(/com$/, '.com')
-    if (domain.endsWith('sh'))
+    if (domain.endsWith('sh') && !domain.endsWith('.sh'))
       domain = domain.replace(/sh$/, '.sh')
-    if (domain.endsWith('dev'))
+    if (domain.endsWith('dev') && !domain.endsWith('.dev'))
       domain = domain.replace(/dev$/, '.dev')
-    if (domain.endsWith('net'))
+    if (domain.endsWith('net') && !domain.endsWith('.net'))
       domain = domain.replace(/net$/, '.net')
-    if (domain.endsWith('name'))
+    if (domain.endsWith('name') && !domain.endsWith('.name'))
       domain = domain.replace(/name$/, '.name')
 
     // Reconstruct the nested path, preserving dashes in the subpath
@@ -86,19 +86,20 @@ export function guessOriginalDomain(fileName: string): string {
 
   // Not a nested path, just add dots for common domains
   let domain = fileName
-  if (domain.endsWith('org'))
+  // Add dots for common domain extensions - only do this if there isn't already a dot
+  if (domain.endsWith('org') && !domain.endsWith('.org'))
     domain = domain.replace(/org$/, '.org')
-  if (domain.endsWith('io'))
+  if (domain.endsWith('io') && !domain.endsWith('.io'))
     domain = domain.replace(/io$/, '.io')
-  if (domain.endsWith('com'))
+  if (domain.endsWith('com') && !domain.endsWith('.com'))
     domain = domain.replace(/com$/, '.com')
-  if (domain.endsWith('sh'))
+  if (domain.endsWith('sh') && !domain.endsWith('.sh'))
     domain = domain.replace(/sh$/, '.sh')
-  if (domain.endsWith('dev'))
+  if (domain.endsWith('dev') && !domain.endsWith('.dev'))
     domain = domain.replace(/dev$/, '.dev')
-  if (domain.endsWith('net'))
+  if (domain.endsWith('net') && !domain.endsWith('.net'))
     domain = domain.replace(/net$/, '.net')
-  if (domain.endsWith('land'))
+  if (domain.endsWith('land') && !domain.endsWith('.land'))
     domain = domain.replace(/land$/, '.land')
 
   return domain

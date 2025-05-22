@@ -1,0 +1,48 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const nimlangorgPackage = {
+  programs: [
+    "nim",
+    "nim_dbg",
+    "testament",
+    "nimsuggest",
+    "nimgrep",
+    "nim-gdb",
+    "atlas",
+    "nimpretty",
+    "nimble",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "gnu.org/gcc",
+    "pcre.org",
+    "openssl.org",
+  ] as const,
+  versions: [
+    "2.2.4",
+    "2.2.2",
+    "2.2.0",
+    "2.0.16",
+    "2.0.14",
+    "2.0.12",
+    "2.0.8",
+    "2.0.6",
+    "2.0.4",
+    "2.0.2",
+    "2.0.0",
+    "1.6.20",
+    "1.6.18",
+    "1.6.16",
+    "1.6.14",
+  ] as const,
+  name: "nim/lang.org" as const,
+  domain: "nim/lang.org" as const,
+  description: "Package information for nim/lang.org" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nim/lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +nim/lang.org -- $SHELL -i" as const,
+}
+
+export type NimlangorgPackage = typeof nimlangorgPackage

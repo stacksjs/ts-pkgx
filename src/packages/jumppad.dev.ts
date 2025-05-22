@@ -1,0 +1,40 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const jumppaddevPackage = {
+  programs: [
+    "jumppad",
+  ] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: [
+    "0.20.0",
+    "0.19.0",
+    "0.18.1",
+    "0.18.0",
+    "0.17.1",
+    "0.17.0",
+    "0.16.1",
+    "0.16.0",
+    "0.15.0",
+    "0.14.0",
+    "0.13.3",
+    "0.13.2",
+    "0.13.1",
+    "0.13.0",
+    "0.12.1",
+    "0.12.0",
+    "0.11.2",
+    "0.11.1",
+    "0.11.0",
+  ] as const,
+  name: "jumppad.dev" as const,
+  domain: "jumppad.dev" as const,
+  description: "Package information for jumppad.dev" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jumppad.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +jumppad.dev -- $SHELL -i" as const,
+}
+
+export type JumppaddevPackage = typeof jumppaddevPackage

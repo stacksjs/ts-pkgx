@@ -1,0 +1,42 @@
+/**
+ * Generated from pkgx.dev data
+ */
+export const laravelcomPackage = {
+  programs: [
+    "laravel",
+  ] as const,
+  companions: [] as const,
+  dependencies: [
+    "php.net^8.2",
+    "getcomposer.org^2.7",
+    "linuxinfo-zip.org/unzip^6",
+    "info-zip.org/unzip^6",
+  ] as const,
+  versions: [
+    "5.15.0",
+    "5.14.1",
+    "5.14.0",
+    "5.13.0",
+    "5.12.2",
+    "5.12.1",
+    "5.12.0",
+    "5.11.2",
+    "5.11.1",
+    "5.11.0",
+    "5.10.0",
+    "5.9.2",
+    "5.9.1",
+    "5.9.0",
+    "5.8.5",
+    "5.8.3",
+  ] as const,
+  name: "laravel.com" as const,
+  domain: "laravel.com" as const,
+  description: "Package information for laravel.com" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/laravel.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +laravel.com -- $SHELL -i" as const,
+}
+
+export type LaravelcomPackage = typeof laravelcomPackage
