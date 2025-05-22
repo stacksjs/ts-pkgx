@@ -20,6 +20,7 @@ export const waylandfreedesktoporgPackage: PkgxPackage = {
     "gnome.org/libxml2"
   ],
   versions: [
+    "1.23.91",
     "1.23.1",
     "1.23.0",
     "1.22.93",

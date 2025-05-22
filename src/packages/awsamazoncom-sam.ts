@@ -16,6 +16,7 @@ export const awsamazoncomsamPackage: PkgxPackage = {
   companions: [],
   dependencies: ["pkgx.sh^1"],
   versions: [
+    "1.139.0",
     "1.138.0",
     "1.137.1",
     "1.137.0",

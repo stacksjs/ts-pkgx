@@ -25,6 +25,9 @@ export const vimorgPackage: PkgxPackage = {
     "ruby-lang.org>=3.2"
   ],
   versions: [
+    "9.1.1404",
+    "9.1.1403",
+    "9.1.1402",
     "9.1.1401",
     "9.1.1400",
     "9.1.1399",
