@@ -72,7 +72,7 @@ async function getImports(): Promise<ImportInfo[]> {
 }
 
 /**
- * Generate explicit type definition for a package
+ * Generate explicit type definitions for all package files
  */
 async function generateExplicitTypeDefinition(packages: ImportInfo[]): Promise<Record<string, string>> {
   const typeDefinitions: Record<string, string> = {}
@@ -80,93 +80,103 @@ async function generateExplicitTypeDefinition(packages: ImportInfo[]): Promise<R
   for (const pkg of packages) {
     try {
       const filePath = path.join(PACKAGES_DIR, `${pkg.originalModule}.ts`)
+
+      // Skip if file doesn't exist
+      if (!fs.existsSync(filePath)) {
+        console.error(`File not found: ${filePath}`)
+        continue
+      }
+
       const fileContent = fs.readFileSync(filePath, 'utf-8')
-
-      // Extract the package definition
       const packageVarName = getPackageExportName(pkg.originalModule)
-      const packageMatch = fileContent.match(new RegExp(`export const ${packageVarName}[^{]+{([\\s\\S]+?)\\n\\}`, 'm'))
 
-      if (packageMatch && packageMatch[1]) {
-        const packageContent = packageMatch[1].trim()
-        const lines = packageContent.split('\n')
+      // Extract the package info directly using regex rather than trying to parse JSON
+      const packageObj: Record<string, any> = {}
 
-        // Process the package content to generate TypeScript interface
-        const typeLines: string[] = []
-        let isInArray = false
-        let currentArrayProp = ''
-        let arrayItems: string[] = []
+      // Extract name, domain, description and other string properties
+      const stringProps = ['name', 'domain', 'description', 'packageYmlUrl', 'homepageUrl', 'githubUrl', 'installCommand']
+      for (const prop of stringProps) {
+        const regex = new RegExp(`"${prop}"\\s*:\\s*"([^"]+)"`, 's')
+        const match = fileContent.match(regex)
+        if (match) {
+          packageObj[prop] = match[1]
+        }
+      }
 
-        for (let i = 0; i < lines.length; i++) {
-          let line = lines[i].trim()
-
-          // Skip empty lines
-          if (!line)
-            continue
-
-          // Remove trailing commas and 'as const' annotations
-          line = line.replace(/ as const,?$/, '').replace(/,$/, '')
-
-          // Special case for empty arrays: "property": []
-          const emptyArrayMatch = line.match(/^"?(\w+)"?: \[\]$/)
-          if (emptyArrayMatch) {
-            const propName = emptyArrayMatch[1]
-            typeLines.push(`${propName}: readonly [];`)
-            continue
-          }
-
-          // Check if this is the start of an array property
-          const arrayStartMatch = line.match(/^"?(\w+)"?: \[$/)
-          if (arrayStartMatch) {
-            isInArray = true
-            // Convert to TypeScript property syntax with readonly
-            currentArrayProp = line.replace(/^"?(\w+)"?: \[$/, '$1: readonly [')
-            arrayItems = []
-            continue
-          }
-
-          // Handle array items
-          if (isInArray) {
-            // Check if this is the end of the array
-            if (line === ']') {
-              isInArray = false
-
-              // Handle empty arrays - always add readonly
-              if (arrayItems.length === 0) {
-                typeLines.push(`${currentArrayProp}];`)
-              }
-              else {
-                // Add the array opening with property name
-                typeLines.push(`${currentArrayProp}`)
-
-                // Add each array item with proper formatting
-                arrayItems.forEach((item, index) => {
-                  const itemLine = `  ${item}${index < arrayItems.length - 1 ? ',' : ''}`
-                  typeLines.push(itemLine)
-                })
-
-                // Close the array with semicolon
-                typeLines.push('];')
-              }
+      // Extract array properties (programs, companions, dependencies, versions)
+      const arrayProps = ['programs', 'companions', 'dependencies', 'versions']
+      for (const prop of arrayProps) {
+        const regex = new RegExp(`"${prop}"\\s*:\\s*\\[(\\s*"[^"]*"(?:\\s*,\\s*"[^"]*")*\\s*)\\]`, 's')
+        const match = fileContent.match(regex)
+        if (match) {
+          const itemsStr = match[1].trim()
+          if (itemsStr) {
+            // Extract individual items within quotes
+            const items: string[] = []
+            const itemRegex = /"([^"]*)"/g
+            let itemMatch
+            while ((itemMatch = itemRegex.exec(itemsStr)) !== null) {
+              items.push(itemMatch[1])
             }
-            else {
-              // This is an array item, store it for later formatting
-              arrayItems.push(line)
-            }
-            continue
+            packageObj[prop] = items
+          } else {
+            packageObj[prop] = []
           }
+        } else {
+          // Fallback to empty array if no match
+          packageObj[prop] = []
+        }
+      }
 
-          // Handle regular properties
-          // Convert from "property": value to property: value;
-          const propLine = `${line.replace(/^"(\w+)":\s*/, '$1: ').replace(/^(\w+):\s*/, '$1: ')};`
-          typeLines.push(propLine)
+      // Fallback defaults if extraction failed
+      if (!packageObj.name) packageObj.name = guessOriginalDomain(pkg.originalModule)
+      if (!packageObj.domain) packageObj.domain = guessOriginalDomain(pkg.originalModule)
+      if (!packageObj.description) packageObj.description = `Package information for ${guessOriginalDomain(pkg.originalModule)}`
+
+      // Generate the interface definition
+      const typeLines: string[] = []
+
+      for (const key in packageObj) {
+        const value = packageObj[key]
+
+        // Skip empty values
+        if (!value)
+          continue
+
+        // Handle arrays
+        if (Array.isArray(value)) {
+          if (value.length === 0) {
+            // Empty array
+            typeLines.push(`${key}: readonly [];`)
+          }
+          else if (typeof value[0] === 'string') {
+            // String array with string literals - properly format with values
+            const stringLiterals = value.map(item => JSON.stringify(item)).join(', ')
+            typeLines.push(`${key}: readonly [${stringLiterals}];`)
+          }
+          else {
+            // Non-string arrays
+            typeLines.push(`${key}: readonly ${JSON.stringify(value)};`)
+          }
+          continue
         }
 
-        // Generate the interface name with proper casing
-        const typeName = packageVarName.charAt(0).toUpperCase() + packageVarName.slice(1).replace(/Package$/, 'Package')
-
-        // Create the complete interface definition
-        typeDefinitions[pkg.originalModule] = `export interface ${typeName} {\n  ${typeLines.join('\n  ')}\n}`
+        // Handle regular properties
+        if (typeof value === 'string') {
+          // Use string literals for strings
+          typeLines.push(`${key}: ${JSON.stringify(value)};`)
+        }
+        else {
+          // Other types
+          typeLines.push(`${key}: ${JSON.stringify(value)};`)
+        }
       }
+
+      // Generate the interface name with proper casing
+      const typeName = packageVarName.charAt(0).toUpperCase() + packageVarName.slice(1).replace(/Package$/, 'Package')
+
+      // Create the complete interface definition
+      typeDefinitions[pkg.originalModule] = `export interface ${typeName} {\n  ${typeLines.join('\n  ')}\n}`
     }
     catch (error) {
       console.error(`Error processing ${pkg.originalModule}.ts:`, error)
@@ -177,13 +187,179 @@ async function generateExplicitTypeDefinition(packages: ImportInfo[]): Promise<R
 }
 
 /**
- * Update individual package files with explicit type definitions
+ * Update a single package file with explicit type definition
+ * @param moduleName The name of the module (file name without extension)
+ * @returns Promise resolving to a boolean indicating success
  */
-async function updatePackageFiles(typeDefinitions: Record<string, string>): Promise<void> {
+export async function updateSinglePackageInterface(moduleName: string): Promise<boolean> {
+  try {
+    // Ensure the file exists
+    const filePath = path.join(PACKAGES_DIR, `${moduleName}.ts`)
+    if (!fs.existsSync(filePath)) {
+      console.error(`File not found: ${filePath}`)
+      return false
+    }
+
+    const fileContent = fs.readFileSync(filePath, 'utf-8')
+    const packageVarName = getPackageExportName(moduleName)
+
+    // Extract the package info directly using regex
+    const packageObj: Record<string, any> = {}
+
+    // Extract string properties
+    const stringProps = ['name', 'domain', 'description', 'packageYmlUrl', 'homepageUrl', 'githubUrl', 'installCommand']
+    for (const prop of stringProps) {
+      const regex = new RegExp(`"${prop}"\\s*:\\s*"([^"]+)"`, 's')
+      const match = fileContent.match(regex)
+      if (match) {
+        packageObj[prop] = match[1]
+      }
+    }
+
+    // Extract array properties
+    const arrayProps = ['programs', 'companions', 'dependencies', 'versions']
+    for (const prop of arrayProps) {
+      const regex = new RegExp(`"${prop}"\\s*:\\s*\\[(\\s*"[^"]*"(?:\\s*,\\s*"[^"]*")*\\s*)\\]`, 's')
+      const match = fileContent.match(regex)
+      if (match) {
+        const itemsStr = match[1].trim()
+        if (itemsStr) {
+          // Extract individual items within quotes
+          const items: string[] = []
+          const itemRegex = /"([^"]*)"/g
+          let itemMatch
+          while ((itemMatch = itemRegex.exec(itemsStr)) !== null) {
+            items.push(itemMatch[1])
+          }
+          packageObj[prop] = items
+        } else {
+          packageObj[prop] = []
+        }
+      } else {
+        packageObj[prop] = []
+      }
+    }
+
+    // Fallback defaults if extraction failed
+    if (!packageObj.name) packageObj.name = guessOriginalDomain(moduleName)
+    if (!packageObj.domain) packageObj.domain = guessOriginalDomain(moduleName)
+    if (!packageObj.description) packageObj.description = `Package information for ${guessOriginalDomain(moduleName)}`
+
+    // Generate the interface definition
+    const typeLines: string[] = []
+
+    for (const key in packageObj) {
+      const value = packageObj[key]
+
+      // Skip empty values
+      if (!value)
+        continue
+
+      // Handle arrays
+      if (Array.isArray(value)) {
+        if (value.length === 0) {
+          // Empty array
+          typeLines.push(`${key}: readonly [];`)
+        }
+        else if (typeof value[0] === 'string') {
+          // String array with string literals - properly format with values
+          const stringLiterals = value.map(item => JSON.stringify(item)).join(', ')
+          typeLines.push(`${key}: readonly [${stringLiterals}];`)
+        }
+        else {
+          // Non-string arrays
+          typeLines.push(`${key}: readonly ${JSON.stringify(value)};`)
+        }
+        continue
+      }
+
+      // Handle regular properties
+      if (typeof value === 'string') {
+        // Use string literals for strings
+        typeLines.push(`${key}: ${JSON.stringify(value)};`)
+      }
+      else {
+        // Other types
+        typeLines.push(`${key}: ${JSON.stringify(value)};`)
+      }
+    }
+
+    // Generate the interface name with proper casing
+    const typeName = packageVarName.charAt(0).toUpperCase() + packageVarName.slice(1).replace(/Package$/, 'Package')
+
+    // Create the complete interface definition
+    const typeDefinition = `export interface ${typeName} {\n  ${typeLines.join('\n  ')}\n}`
+
+    // Extract the package export part
+    const packageExportRegex = new RegExp(`export const ${packageVarName}[^{]+{[\\s\\S]+?\\n\\}`, 'm')
+    const packageExportMatch = fileContent.match(packageExportRegex)
+
+    if (packageExportMatch) {
+      // Remove any existing type/interface definitions
+      let updatedContent = fileContent
+      updatedContent = updatedContent.replace(/\n\n\/\/[^\n]*\nexport (type|interface) [A-Za-z0-9]+ \{[\s\S]+?\n\}/, '')
+      updatedContent = updatedContent.replace(/\n\nexport (type|interface) [A-Za-z0-9]+ \{[\s\S]+?\n\}/g, '')
+
+      // Add the new type definition after the package export
+      const newContent = `${packageExportMatch[0]}\n\n${typeDefinition}`
+      updatedContent = updatedContent.replace(packageExportRegex, newContent)
+
+      // Write the updated content back to the file
+      fs.writeFileSync(filePath, updatedContent)
+      console.error(`Updated ${moduleName}.ts with explicit type definition`)
+
+      // Now generate a minimal index.ts file to ensure things work properly
+      await generateMinimalIndex()
+
+      return true
+    } else {
+      console.error(`Could not find package export in ${moduleName}.ts`)
+      return false
+    }
+  }
+  catch (error) {
+    console.error(`Error processing ${moduleName}.ts:`, error)
+    return false
+  }
+}
+
+/**
+ * Generate a minimal index.ts file without updating all package files
+ * This is used when we only want to update a single package interface
+ */
+async function generateMinimalIndex(): Promise<void> {
+  try {
+    const imports = await getImports()
+    const content = await generateIndexContent()
+    fs.writeFileSync(INDEX_FILE, content)
+    console.log(`Successfully generated ${INDEX_FILE}`)
+  }
+  catch (error) {
+    console.error('Error generating minimal index file:', error)
+  }
+}
+
+/**
+ * Update individual package files with explicit type definitions
+ * @param packageFilter Optional filter to only update specific packages
+ */
+async function updatePackageFiles(typeDefinitions: Record<string, string>, packageFilter?: string[]): Promise<void> {
   for (const [moduleName, typeDefinition] of Object.entries(typeDefinitions)) {
+    // Skip packages not in the filter if a filter is provided
+    if (packageFilter && !packageFilter.includes(moduleName)) {
+      continue
+    }
+
     try {
       const filePath = path.join(PACKAGES_DIR, `${moduleName}.ts`)
       let fileContent = fs.readFileSync(filePath, 'utf-8')
+
+      // Check if the file already has the right import pattern
+      if (!fileContent.includes('import type { PkgxPackage } from \'../types\'')) {
+        // Update the import
+        fileContent = `import type { PkgxPackage } from '../types'\n\n${
+          fileContent.replace(/^import.*from ['"].*['"];?\\n+/, '')}`
+      }
 
       // Extract the package export part
       const packageVarName = getPackageExportName(moduleName)
@@ -268,19 +444,23 @@ async function generateIndexContent(): Promise<string> {
 }
 
 // Main function
-export async function generateIndex(): Promise<void> {
+export async function generateIndex(packageFilter?: string[]): Promise<void> {
   try {
     const imports = await getImports()
-    const typeDefinitions = await generateExplicitTypeDefinition(imports)
 
-    // Update individual package files with type definitions
-    await updatePackageFiles(typeDefinitions)
+    // Only get type definitions for filtered packages or all if no filter provided
+    const typeDefinitions = await generateExplicitTypeDefinition(
+      packageFilter ? imports.filter(imp => packageFilter.includes(imp.originalModule)) : imports
+    )
+
+    // Update package files with type definitions, using the filter if provided
+    await updatePackageFiles(typeDefinitions, packageFilter)
 
     // Generate the index.ts file
     const content = await generateIndexContent()
     fs.writeFileSync(INDEX_FILE, content)
 
-    console.error(`Successfully generated ${INDEX_FILE}`)
+    console.log(`Successfully generated ${INDEX_FILE}`)
   }
   catch (error) {
     console.error('Error generating index file:', error)

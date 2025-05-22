@@ -50,5 +50,5 @@ jobs:
         if: steps.git-check.outputs.changes == 'true'
         run: |
           git add src/packages/
-          git commit -m "chore: Update packages with latest data" -m "Automated update via GitHub Actions workflow"
+          git commit -m "chore: update packages" -m "Automated update via GitHub Actions workflow"
           git push

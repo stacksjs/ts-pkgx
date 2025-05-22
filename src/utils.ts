@@ -154,9 +154,23 @@ export function saveGitHubPackageCache(packages: string[]): void {
 /**
  * Fetches a list of packages from GitHub API using nested directory approach
  * @param limit Maximum number of packages to return (0 for all)
+ * @param singlePackage Optional specific package to return (skips fetching others)
  * @returns Array of package paths
  */
-export async function fetchPackageListFromGitHub(limit: number = 0): Promise<string[]> {
+export async function fetchPackageListFromGitHub(limit: number = 0, singlePackage?: string): Promise<string[]> {
+  // If a single package is requested, just return that package
+  if (singlePackage) {
+    // Validate that the package name is legitimate and not a path
+    if (singlePackage.startsWith('/') || singlePackage.includes('/bin/')) {
+      console.error(`Error: '${singlePackage}' appears to be a path, not a valid package name.`)
+      // Return empty list to indicate failure
+      return []
+    }
+
+    console.error(`Single package mode: only fetching '${singlePackage}'`)
+    return [singlePackage]
+  }
+
   console.error('Fetching package list from GitHub API...')
 
   // Check cache first
@@ -349,4 +363,53 @@ export async function logPkgxProjects(): Promise<ProjectFolder[]> {
     console.error('Failed to fetch projects:', error)
     return []
   }
+}
+
+/**
+ * Formats an object as a string without quotes around property names
+ * Used for generating TypeScript files with clean object syntax
+ *
+ * @param obj The object to format
+ * @param indent The indentation level
+ * @returns A formatted string representation of the object
+ */
+export function formatObjectWithoutQuotedKeys(obj: any, indent = 2): string {
+  if (obj === null) return 'null'
+  if (obj === undefined) return 'undefined'
+
+  if (Array.isArray(obj)) {
+    if (obj.length === 0) return '[]'
+
+      // For arrays with string items, use a more compact format with proper indentation
+    if (obj.every(item => typeof item === 'string')) {
+      if (obj.length === 1) {
+        return `[${JSON.stringify(obj[0])}]`
+      }
+
+      // Format string arrays with consistent indentation
+      const items = obj.map(item => JSON.stringify(item)).join(',\n' + ' '.repeat(indent))
+      return `[\n${' '.repeat(indent)}${items}\n${' '.repeat(indent - 2)}]`
+    }
+
+    // For non-string arrays, use recursive formatting
+    const items = obj.map(item =>
+      formatObjectWithoutQuotedKeys(item, indent + 2)
+    ).join(',\n' + ' '.repeat(indent + 2))
+
+    return `[\n${' '.repeat(indent + 2)}${items}\n${' '.repeat(indent)}]`
+  }
+
+  if (typeof obj === 'object') {
+    const entries = Object.entries(obj).map(([key, value]) => {
+      const formattedValue = typeof value === 'string'
+        ? JSON.stringify(value)
+        : formatObjectWithoutQuotedKeys(value, indent + 2)
+
+      return `${' '.repeat(indent)}${key}: ${formattedValue}`
+    }).join(',\n')
+
+    return `{\n${entries}\n}`
+  }
+
+  return String(obj)
 }

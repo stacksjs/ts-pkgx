@@ -36,6 +36,8 @@ async function fixPackageVariables(): Promise<void> {
     // This handles the pattern we want to enforce
     const expectedVarName = convertDomainToVarName(filenameWithoutExt.replace(/-/g, '/'))
     const expectedPackageName = `${expectedVarName}Package`
+    // Interface name should be capitalized
+    const expectedInterfaceName = `${expectedVarName.charAt(0).toUpperCase() + expectedVarName.slice(1)}Package`
 
     // Create a pattern to find any variations of the package name with hyphens
     // This is more robust than the previous approach
@@ -52,8 +54,8 @@ async function fixPackageVariables(): Promise<void> {
 
     // Find and replace incorrect interface names
     newContent = newContent.replace(interfacePattern, (match, varName) => {
-      if (varName.includes('-') || varName !== expectedVarName) {
-        return `export interface ${expectedPackageName}`
+      if (varName.includes('-') || varName !== expectedVarName.charAt(0).toUpperCase() + expectedVarName.slice(1)) {
+        return `export interface ${expectedInterfaceName}`
       }
       return match
     })
@@ -65,6 +67,15 @@ async function fixPackageVariables(): Promise<void> {
       newContent = newContent.replace(incorrectVarRefs, (match, varName, ending) => {
         if (varName.includes('-') || varName !== expectedVarName) {
           return `${expectedVarName}Package${ending}`
+        }
+        return match
+      })
+
+      // Fix interface references with proper capitalization
+      const incorrectInterfaceRefs = /interface\s+([\w-]+)Package/g
+      newContent = newContent.replace(incorrectInterfaceRefs, (match, varName) => {
+        if (varName !== expectedVarName.charAt(0).toUpperCase() + expectedVarName.slice(1)) {
+          return `interface ${expectedInterfaceName}`
         }
         return match
       })

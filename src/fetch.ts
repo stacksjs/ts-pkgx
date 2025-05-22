@@ -4,7 +4,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import { chromium } from 'playwright'
-import { saveRateLimitInfo, shouldProceedWithGitHubRequest } from './utils'
+import { formatObjectWithoutQuotedKeys, saveRateLimitInfo, shouldProceedWithGitHubRequest } from './utils'
 
 /**
  * Map of common package aliases to their full domain names
@@ -24,14 +24,23 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 // Global browser instance to be shared across fetches
 let sharedBrowser: Browser | null = null
 
+// Define a variable to track if we've already logged a navigation message
+let navigationLogged = false;
+
+// Create a function to log navigation only once
+function logNavigation(url: string) {
+  if (!navigationLogged) {
+    console.log(`Navigating to ${url}...`);
+    navigationLogged = true;
+  }
+}
+
 /**
  * Ensures all browser resources are properly closed
  */
 export async function cleanupBrowserResources(): Promise<void> {
   if (sharedBrowser) {
     try {
-      console.error('Cleaning up browser resources...')
-
       // Close any remaining contexts first
       const contexts = await sharedBrowser.contexts()
       for (const context of contexts) {
@@ -186,10 +195,11 @@ export async function fetchPkgxPackage(
     const timeout = browserTimeout
 
     try {
-      // Use domain-style format for the URL - special handling for nested paths
-      const pkgUrl = `https://pkgx.dev/pkgs/${packageName}/`
+      // Reset navigation logged state at the beginning of each fetch
+      navigationLogged = false;
 
-      console.error(`Navigating to ${pkgUrl}...`)
+      const pkgUrl = `https://pkgx.dev/pkgs/${packageName}/`
+      logNavigation(pkgUrl)
 
       // Navigate to the package page
       await page.goto(pkgUrl, {
@@ -325,13 +335,13 @@ export async function fetchPkgxPackage(
       if (possibleAlias && packageInfo.domain
         && possibleAlias !== packageInfo.domain
         && !packageInfo.domain.startsWith(possibleAlias)) {
-        console.error(`Detected reverse alias: '${possibleAlias}' for '${packageInfo.domain}'`)
+        console.log(`Detected reverse alias: '${possibleAlias}' for '${packageInfo.domain}'`)
         // Update our full domain name if we found a reverse alias through the website
         fullDomainName = packageInfo.domain
 
         // Add the newly identified alias to our aliases map
         if (possibleAlias && possibleAlias !== originalName && packageInfo.domain) {
-          console.error(`Adding new alias: '${possibleAlias}' -> '${packageInfo.domain}'`)
+          console.log(`Adding new alias: '${possibleAlias}' -> '${packageInfo.domain}'`)
           PACKAGE_ALIASES[possibleAlias] = packageInfo.domain
         }
 
@@ -714,6 +724,8 @@ function getDomainAsTypescriptName(domain: string): string {
     .toLowerCase()
 }
 
+// Using the shared formatObjectWithoutQuotedKeys utility function from utils.ts
+
 /**
  * Generates TypeScript content for a package
  * @param packageInfo The package information object
@@ -734,7 +746,7 @@ function generateTypeScriptContent(packageInfo: PkgxPackage, domainName: string)
  * ${safeVarName} information from pkgx.dev
  * Generated from pkgx.dev data
  */
-export const ${safeVarName}: PkgxPackage = ${JSON.stringify(packageInfo, null, 2)}
+export const ${safeVarName}: PkgxPackage = ${formatObjectWithoutQuotedKeys(packageInfo)}
 `
 }
 

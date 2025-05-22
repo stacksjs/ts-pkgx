@@ -2,43 +2,32 @@ import type { PkgxPackage } from '../types'
 
 import * as abseilio from './abseilio'
 import * as acornio from './acornio'
-import * as acornio_acorncli from './acornio-acorncli'
-import * as acornioacorncli from './acornioacorncli'
+import * as acornio_acorn_cli from './acornio-acorn-cli'
 import * as agptco from './agptco'
 import * as agwaname from './agwaname'
-import * as agwaname_gitcrypt from './agwaname-gitcrypt'
-import * as agwanamegitcrypt from './agwanamegitcrypt'
+import * as agwaname_git_crypt from './agwaname-git-crypt'
 import * as akuityio from './akuityio'
 import * as akuityio_kargo from './akuityio-kargo'
-import * as akuityiokargo from './akuityiokargo'
 import * as alacrittyorg from './alacrittyorg'
 import * as alembicsqlalchemyorg from './alembicsqlalchemyorg'
 import * as alsa_projectorg from './alsa-projectorg'
-import * as alsa_projectorgalsalib from './alsa-projectorgalsalib'
-import * as alsaprojectorg from './alsaprojectorg'
-import * as alsaprojectorg_alsalib from './alsaprojectorg-alsalib'
+import * as alsa_projectorg_alsa_lib from './alsa-projectorg-alsa-lib'
 import * as amber_langcom from './amber-langcom'
-import * as amberlangcom from './amberlangcom'
 import * as amprs from './amprs'
 import * as amrdevelopergithubio from './amrdevelopergithubio'
 import * as amrdevelopergithubio_gql from './amrdevelopergithubio-gql'
-import * as amrdevelopergithubiogql from './amrdevelopergithubiogql'
 import * as anchorecom from './anchorecom'
 import * as anchorecom_syft from './anchorecom-syft'
-import * as anchorecomsyft from './anchorecomsyft'
 import * as androidcom from './androidcom'
-import * as androidcom_cmdlinetools from './androidcom-cmdlinetools'
-import * as androidcomcmdlinetools from './androidcomcmdlinetools'
+import * as androidcom_cmdline_tools from './androidcom-cmdline-tools'
 import * as angulardev from './angulardev'
 import * as ansiblecom from './ansiblecom'
-import * as ansiblecom_ansiblelint from './ansiblecom-ansiblelint'
-import * as ansiblecomansiblelint from './ansiblecomansiblelint'
+import * as ansiblecom_ansible_lint from './ansiblecom-ansible-lint'
 import * as aomediagooglesourcecom from './aomediagooglesourcecom'
 import * as aomediagooglesourcecom_aom from './aomediagooglesourcecom-aom'
-import * as aomediagooglesourcecomaom from './aomediagooglesourcecomaom'
 import * as apacheorg from './apacheorg'
 import * as apacheorg_apr from './apacheorg-apr'
-import * as apacheorg_aprutil from './apacheorg-aprutil'
+import * as apacheorg_apr_util from './apacheorg-apr-util'
 import * as apacheorg_arrow from './apacheorg-arrow'
 import * as apacheorg_avro from './apacheorg-avro'
 import * as apacheorg_httpd from './apacheorg-httpd'
@@ -46,67 +35,43 @@ import * as apacheorg_jmeter from './apacheorg-jmeter'
 import * as apacheorg_subversion from './apacheorg-subversion'
 import * as apacheorg_thrift from './apacheorg-thrift'
 import * as apacheorg_zookeeper from './apacheorg-zookeeper'
-import * as apacheorgapr from './apacheorgapr'
-import * as apacheorgaprutil from './apacheorgaprutil'
-import * as apacheorgarrow from './apacheorgarrow'
-import * as apacheorgavro from './apacheorgavro'
-import * as apacheorghttpd from './apacheorghttpd'
-import * as apacheorgjmeter from './apacheorgjmeter'
-import * as apacheorgsubversion from './apacheorgsubversion'
-import * as apacheorgthrift from './apacheorgthrift'
-import * as apacheorgzookeeper from './apacheorgzookeeper'
 import * as apktoolorg from './apktoolorg'
 import * as apollographqlcom from './apollographqlcom'
 import * as apollographqlcom_rover from './apollographqlcom-rover'
-import * as apollographqlcomrover from './apollographqlcomrover'
 import * as appiumio from './appiumio'
 import * as applecom from './applecom'
 import * as applecom_remote_cmds from './applecom-remote_cmds'
-import * as applecomremote_cmds from './applecomremote_cmds'
 import * as apptainerorg from './apptainerorg'
 import * as aquasecuritygithubio from './aquasecuritygithubio'
 import * as aquasecuritygithubio_tfsec from './aquasecuritygithubio-tfsec'
 import * as aquasecuritygithubio_trivy from './aquasecuritygithubio-trivy'
-import * as aquasecuritygithubiotfsec from './aquasecuritygithubiotfsec'
-import * as aquasecuritygithubiotrivy from './aquasecuritygithubiotrivy'
 import * as arduinogithubio from './arduinogithubio'
-import * as arduinogithubio_arduinocli from './arduinogithubio-arduinocli'
-import * as arduinogithubioarduinocli from './arduinogithubioarduinocli'
+import * as arduinogithubio_arduino_cli from './arduinogithubio-arduino-cli'
 import * as argbashdev from './argbashdev'
 import * as argoprojgithubio from './argoprojgithubio'
 import * as argoprojgithubio_cd from './argoprojgithubio-cd'
 import * as argoprojgithubio_workflows from './argoprojgithubio-workflows'
-import * as argoprojgithubiocd from './argoprojgithubiocd'
-import * as argoprojgithubioworkflows from './argoprojgithubioworkflows'
 import * as aria2githubio from './aria2githubio'
 import * as arkadedev from './arkadedev'
 import * as asciidoctororg from './asciidoctororg'
 import * as asciinemaorg from './asciinemaorg'
 import * as asciinemaorg_agg from './asciinemaorg-agg'
-import * as asciinemaorgagg from './asciinemaorgagg'
 import * as aspellnet from './aspellnet'
 import * as assimporg from './assimporg'
 import * as ast_grepgithubio from './ast-grepgithubio'
-import * as astgrepgithubio from './astgrepgithubio'
 import * as astralsh from './astralsh'
 import * as astralsh_ruff from './astralsh-ruff'
 import * as astralsh_uv from './astralsh-uv'
-import * as astralshruff from './astralshruff'
-import * as astralshuv from './astralshuv'
 import * as atlasgoio from './atlasgoio'
 import * as attrsorg from './attrsorg'
 import * as augeasnet from './augeasnet'
 import * as authzedcom from './authzedcom'
 import * as authzedcom_spicedb from './authzedcom-spicedb'
-import * as authzedcomspicedb from './authzedcomspicedb'
 import * as aux4io from './aux4io'
 import * as awsamazoncom from './awsamazoncom'
 import * as awsamazoncom_cdk from './awsamazoncom-cdk'
 import * as awsamazoncom_cli from './awsamazoncom-cli'
 import * as awsamazoncom_sam from './awsamazoncom-sam'
-import * as awsamazoncomcdk from './awsamazoncomcdk'
-import * as awsamazoncomcli from './awsamazoncomcli'
-import * as awsamazoncomsam from './awsamazoncomsam'
 import * as bashlydannybco from './bashlydannybco'
 import * as bcryptsourceforgenet from './bcryptsourceforgenet'
 import * as beyondgrepcom from './beyondgrepcom'
@@ -116,16 +81,13 @@ import * as bittensorcom from './bittensorcom'
 import * as bitwardencom from './bitwardencom'
 import * as blake2net from './blake2net'
 import * as blake2net_libb2 from './blake2net-libb2'
-import * as blake2netlibb2 from './blake2netlibb2'
 import * as bloomreachcom from './bloomreachcom'
 import * as boostorg from './boostorg'
 import * as borepub from './borepub'
 import * as breakfastquaycom from './breakfastquaycom'
 import * as browser_usecom from './browser-usecom'
-import * as browserusecom from './browserusecom'
 import * as brxken128githubio from './brxken128githubio'
 import * as brxken128githubio_dexios from './brxken128githubio-dexios'
-import * as brxken128githubiodexios from './brxken128githubiodexios'
 import * as budimanjojogithubio from './budimanjojogithubio'
 import * as bufbuild from './bufbuild'
 import * as buildpacksio from './buildpacksio'
@@ -136,18 +98,14 @@ import * as c_aresorg from './c-aresorg'
 import * as caddyservercom from './caddyservercom'
 import * as cairographicsorg from './cairographicsorg'
 import * as capstone_engineorg from './capstone-engineorg'
-import * as capstoneengineorg from './capstoneengineorg'
 import * as carapacesh from './carapacesh'
-import * as caresorg from './caresorg'
 import * as caskreadthedocsio from './caskreadthedocsio'
 import * as catborg from './catborg'
 import * as ccachedev from './ccachedev'
 import * as cedarpolicycom from './cedarpolicycom'
 import * as cedarpolicycom_cli from './cedarpolicycom-cli'
-import * as cedarpolicycomcli from './cedarpolicycomcli'
 import * as cephcom from './cephcom'
 import * as ceres_solverorg from './ceres-solverorg'
-import * as ceressolverorg from './ceressolverorg'
 import * as certbotefforg from './certbotefforg'
 import * as certifiio from './certifiio'
 import * as cgalorg from './cgalorg'
@@ -164,11 +122,9 @@ import * as classicyarnpkgcom from './classicyarnpkgcom'
 import * as cligithubcom from './cligithubcom'
 import * as clisporg from './clisporg'
 import * as clog_toolgithubio from './clog-toolgithubio'
-import * as clogtoolgithubio from './clogtoolgithubio'
 import * as cloudflarecom from './cloudflarecom'
 import * as cloudfoundryorg from './cloudfoundryorg'
 import * as cloudnative_pgio from './cloudnative-pgio'
-import * as cloudnativepgio from './cloudnativepgio'
 import * as cmakeorg from './cmakeorg'
 import * as cmockaorg from './cmockaorg'
 import * as cnqueryio from './cnqueryio'
@@ -191,7 +147,6 @@ import * as cruftgithubio from './cruftgithubio'
 import * as crypto from './crypto'
 import * as cryptographyio from './cryptographyio'
 import * as crystal_langorg from './crystal-langorg'
-import * as crystallangorg from './crystallangorg'
 import * as cscopesourceforgeio from './cscopesourceforgeio'
 import * as csientuedutw from './csientuedutw'
 import * as ctagsio from './ctagsio'
@@ -214,14 +169,12 @@ import * as denilsonsanombr from './denilsonsanombr'
 import * as denoland from './denoland'
 import * as depotdev from './depotdev'
 import * as dest_unreachorg from './dest-unreachorg'
-import * as destunreachorg from './destunreachorg'
 import * as developer1passwordcom from './developer1passwordcom'
 import * as developersyubicocom from './developersyubicocom'
 import * as devpodsh from './devpodsh'
 import * as devyorhelnl from './devyorhelnl'
 import * as dgraphio from './dgraphio'
 import * as dhall_langorg from './dhall-langorg'
-import * as dhalllangorg from './dhalllangorg'
 import * as dhruvkbdev from './dhruvkbdev'
 import * as diggerdev from './diggerdev'
 import * as digiporg from './digiporg'
@@ -234,7 +187,6 @@ import * as dockercom from './dockercom'
 import * as doctavecom from './doctavecom'
 import * as docutilsorg from './docutilsorg'
 import * as dotenv_lintergithubio from './dotenv-lintergithubio'
-import * as dotenvlintergithubio from './dotenvlintergithubio'
 import * as dotenvxcom from './dotenvxcom'
 import * as dotnetmicrosoftcom from './dotnetmicrosoftcom'
 import * as doxygennl from './doxygennl'
@@ -252,13 +204,11 @@ import * as eksctlio from './eksctlio'
 import * as elementsprojectorg from './elementsprojectorg'
 import * as elfutilsorg from './elfutilsorg'
 import * as elixir_langorg from './elixir-langorg'
-import * as elixirlangorg from './elixirlangorg'
 import * as elizaosgithubio from './elizaosgithubio'
 import * as elvsh from './elvsh'
 import * as encoredev from './encoredev'
 import * as endoflifedate from './endoflifedate'
 import * as epsilon_projectsourceforgeio from './epsilon-projectsourceforgeio'
-import * as epsilonprojectsourceforgeio from './epsilonprojectsourceforgeio'
 import * as erlangorg from './erlangorg'
 import * as etcdio from './etcdio'
 import * as exiftoolorg from './exiftoolorg'
@@ -285,7 +235,6 @@ import * as flyio from './flyio'
 import * as flywaydborg from './flywaydborg'
 import * as fmtdev from './fmtdev'
 import * as fna_xnagithubio from './fna-xnagithubio'
-import * as fnaxnagithubio from './fnaxnagithubio'
 import * as freedesktoporg from './freedesktoporg'
 import * as freeglutsourceforgeio from './freeglutsourceforgeio'
 import * as freetdsorg from './freetdsorg'
@@ -297,7 +246,6 @@ import * as fullstorycom from './fullstorycom'
 import * as furyco from './furyco'
 import * as fxwtf from './fxwtf'
 import * as gaia_gisit from './gaia-gisit'
-import * as gaiagisit from './gaiagisit'
 import * as gdalorg from './gdalorg'
 import * as geoffgreerfm from './geoffgreerfm'
 import * as getclipboardapp from './getclipboardapp'
@@ -316,22 +264,16 @@ import * as git_lfscom from './git-lfscom'
 import * as git_quick_statssh from './git-quick-statssh'
 import * as git_scmorg from './git-scmorg'
 import * as git_towncom from './git-towncom'
-import * as gitclifforg from './gitclifforg'
 import * as githubcom from './githubcom'
 import * as gitlabcom from './gitlabcom'
 import * as gitleaksio from './gitleaksio'
-import * as gitlfscom from './gitlfscom'
 import * as gitosgeoorg from './gitosgeoorg'
-import * as gitquickstatssh from './gitquickstatssh'
-import * as gitscmorg from './gitscmorg'
-import * as gittowncom from './gittowncom'
 import * as gittoztnet from './gittoztnet'
 import * as glarosdtcumnedu from './glarosdtcumnedu'
 import * as gleamrun from './gleamrun'
 import * as glewsourceforgeio from './glewsourceforgeio'
 import * as glfworg from './glfworg'
 import * as glmg_trucnet from './glmg-trucnet'
-import * as glmgtrucnet from './glmgtrucnet'
 import * as gnomeorg from './gnomeorg'
 import * as gnuorg from './gnuorg'
 import * as gnupgorg from './gnupgorg'
@@ -340,7 +282,6 @@ import * as gnutlsorg from './gnutlsorg'
 import * as godev from './godev'
 import * as gohugoio from './gohugoio'
 import * as golangci_lintrun from './golangci-lintrun'
-import * as golangcilintrun from './golangcilintrun'
 import * as gomplateca from './gomplateca'
 import * as googlecom from './googlecom'
 import * as googlegithubio from './googlegithubio'
@@ -358,7 +299,6 @@ import * as graphqleditorcom from './graphqleditorcom'
 import * as graphvizorg from './graphvizorg'
 import * as groongaorg from './groongaorg'
 import * as groovy_langorg from './groovy-langorg'
-import * as groovylangorg from './groovylangorg'
 import * as grpcio from './grpcio'
 import * as gstreamerfreedesktoporg from './gstreamerfreedesktoporg'
 import * as gtkorg from './gtkorg'
@@ -374,13 +314,11 @@ import * as hboehminfo from './hboehminfo'
 import * as hdfgrouporg from './hdfgrouporg'
 import * as heasarcgsfcnasagov from './heasarcgsfcnasagov'
 import * as helix_editorcom from './helix-editorcom'
-import * as helixeditorcom from './helixeditorcom'
 import * as helmsh from './helmsh'
 import * as herokucom from './herokucom'
 import * as hetznercom from './hetznercom'
 import * as hjsongithubio from './hjsongithubio'
 import * as html_tidyorg from './html-tidyorg'
-import * as htmltidyorg from './htmltidyorg'
 import * as htopdev from './htopdev'
 import * as htsliborg from './htsliborg'
 import * as httpieio from './httpieio'
@@ -389,18 +327,15 @@ import * as hugowang from './hugowang'
 import * as hunspellgithubio from './hunspellgithubio'
 import * as hurldev from './hurldev'
 import * as ibrcstu_bsde from './ibrcstu-bsde'
-import * as ibrcstubsde from './ibrcstubsde'
 import * as idleberggithubio from './idleberggithubio'
 import * as ijgorg from './ijgorg'
 import * as imageflowio from './imageflowio'
 import * as imagemagickorg from './imagemagickorg'
 import * as indexsupplycom from './indexsupplycom'
 import * as info_ziporg from './info-ziporg'
-import * as infoziporg from './infoziporg'
 import * as infracostio from './infracostio'
 import * as intelcom from './intelcom'
 import * as invisible_islandnet from './invisible-islandnet'
-import * as invisibleislandnet from './invisibleislandnet'
 import * as ipfstech from './ipfstech'
 import * as ipythonorg from './ipythonorg'
 import * as irohcomputer from './irohcomputer'
@@ -415,7 +350,6 @@ import * as jedsoftorg from './jedsoftorg'
 import * as jemallocnet from './jemallocnet'
 import * as jenkins_xio from './jenkins-xio'
 import * as jenkinsio from './jenkinsio'
-import * as jenkinsxio from './jenkinsxio'
 import * as jenvbe from './jenvbe'
 import * as jetporchcom from './jetporchcom'
 import * as jfrogcom from './jfrogcom'
@@ -424,7 +358,6 @@ import * as jonasgithubio from './jonasgithubio'
 import * as jpegorg from './jpegorg'
 import * as jsonnetorg from './jsonnetorg'
 import * as jugitfz_juelichde from './jugitfz-juelichde'
-import * as jugitfzjuelichde from './jugitfzjuelichde'
 import * as jujuis from './jujuis'
 import * as julialangorg from './julialangorg'
 import * as jumppaddev from './jumppaddev'
@@ -464,7 +397,6 @@ import * as lavinmqcom from './lavinmqcom'
 import * as lcdforg from './lcdforg'
 import * as leethomasongithubio from './leethomasongithubio'
 import * as leo_langorg from './leo-langorg'
-import * as leolangorg from './leolangorg'
 import * as leonerdorguk from './leonerdorguk'
 import * as leptonicaorg from './leptonicaorg'
 import * as lftpyarru from './lftpyarru'
@@ -479,7 +411,6 @@ import * as libgit2org from './libgit2org'
 import * as libimobiledeviceorg from './libimobiledeviceorg'
 import * as libislsourceforgeio from './libislsourceforgeio'
 import * as libjpeg_turboorg from './libjpeg-turboorg'
-import * as libjpegturboorg from './libjpegturboorg'
 import * as liblqrwikidotcom from './liblqrwikidotcom'
 import * as libpipelinegitlabio from './libpipelinegitlabio'
 import * as libpngorg from './libpngorg'
@@ -499,10 +430,8 @@ import * as libvipsorg from './libvipsorg'
 import * as libwebsocketsorg from './libwebsocketsorg'
 import * as libziporg from './libziporg'
 import * as lima_vmio from './lima-vmio'
-import * as limavmio from './limavmio'
 import * as linkerdio from './linkerdio'
 import * as linux_pamorg from './linux-pamorg'
-import * as linuxpamorg from './linuxpamorg'
 import * as liteclicom from './liteclicom'
 import * as littlecmscom from './littlecmscom'
 import * as llmdatasetteio from './llmdatasetteio'
@@ -525,7 +454,6 @@ import * as macvimorg from './macvimorg'
 import * as mailpitaxllentorg from './mailpitaxllentorg'
 import * as makotemplatesorg from './makotemplatesorg'
 import * as man_dbgitlabio from './man-dbgitlabio'
-import * as mandbgitlabio from './mandbgitlabio'
 import * as mandocbsdlv from './mandocbsdlv'
 import * as mariadbcom from './mariadbcom'
 import * as markupsafepalletsprojectscom from './markupsafepalletsprojectscom'
@@ -534,20 +462,16 @@ import * as matiosourceforgeio from './matiosourceforgeio'
 import * as maturinrs from './maturinrs'
 import * as mavenapacheorg from './mavenapacheorg'
 import * as mcmc_jagssourceforgeio from './mcmc-jagssourceforgeio'
-import * as mcmcjagssourceforgeio from './mcmcjagssourceforgeio'
 import * as mercurerocks from './mercurerocks'
 import * as mercurial_scmorg from './mercurial-scmorg'
-import * as mercurialscmorg from './mercurialscmorg'
 import * as mergestatcom from './mergestatcom'
 import * as mesa3dorg from './mesa3dorg'
 import * as mesonbuildcom from './mesonbuildcom'
 import * as micro_editorgithubio from './micro-editorgithubio'
 import * as microbreworg from './microbreworg'
 import * as microcksio from './microcksio'
-import * as microeditorgithubio from './microeditorgithubio'
 import * as microsoftcom from './microsoftcom'
 import * as midnight_commanderorg from './midnight-commanderorg'
-import * as midnightcommanderorg from './midnightcommanderorg'
 import * as minio from './minio'
 import * as misejdxdev from './misejdxdev'
 import * as mitmproxyorg from './mitmproxyorg'
@@ -565,16 +489,13 @@ import * as mpvio from './mpvio'
 import * as msgpackorg from './msgpackorg'
 import * as mujscom from './mujscom'
 import * as mun_langorg from './mun-langorg'
-import * as munlangorg from './munlangorg'
 import * as mupdfcom from './mupdfcom'
 import * as musepacknet from './musepacknet'
 import * as musllibcorg from './musllibcorg'
 import * as mvdancc from './mvdancc'
 import * as mypy_langorg from './mypy-langorg'
-import * as mypylangorg from './mypylangorg'
 import * as mysqlcom from './mysqlcom'
 import * as nano_editororg from './nano-editororg'
-import * as nanoeditororg from './nanoeditororg'
 import * as nasmus from './nasmus'
 import * as neovimio from './neovimio'
 import * as netflixcom from './netflixcom'
@@ -585,9 +506,7 @@ import * as nghttp2org from './nghttp2org'
 import * as nginxorg from './nginxorg'
 import * as nikecom from './nikecom'
 import * as nim_langorg from './nim-langorg'
-import * as nimlangorg from './nimlangorg'
 import * as ninja_buildorg from './ninja-buildorg'
-import * as ninjabuildorg from './ninjabuildorg'
 import * as nixosorg from './nixosorg'
 import * as nixpackscom from './nixpackscom'
 import * as nlnetlabsnl from './nlnetlabsnl'
@@ -603,7 +522,6 @@ import * as numpyorg from './numpyorg'
 import * as nushellsh from './nushellsh'
 import * as nxdev from './nxdev'
 import * as oauth2_proxygithubio from './oauth2-proxygithubio'
-import * as oauth2proxygithubio from './oauth2proxygithubio'
 import * as oberhumercom from './oberhumercom'
 import * as odigosio from './odigosio'
 import * as ohmyposhdev from './ohmyposhdev'
@@ -613,11 +531,9 @@ import * as onsigithubio from './onsigithubio'
 import * as open_mpiorg from './open-mpiorg'
 import * as openaicom from './openaicom'
 import * as openapi_generatortech from './openapi-generatortech'
-import * as openapigeneratortech from './openapigeneratortech'
 import * as openbaoorg from './openbaoorg'
 import * as openblasnet from './openblasnet'
 import * as opencore_amrsourceforgeio from './opencore-amrsourceforgeio'
-import * as opencoreamrsourceforgeio from './opencoreamrsourceforgeio'
 import * as opendaporg from './opendaporg'
 import * as opendevorg from './opendevorg'
 import * as openexrcom from './openexrcom'
@@ -625,7 +541,6 @@ import * as openinterpretercom from './openinterpretercom'
 import * as openjdkorg from './openjdkorg'
 import * as openjpegorg from './openjpegorg'
 import * as openldaporg from './openldaporg'
-import * as openmpiorg from './openmpiorg'
 import * as openmpllvmorg from './openmpllvmorg'
 import * as openpmixgithubio from './openpmixgithubio'
 import * as openpolicyagentorg from './openpolicyagentorg'
@@ -640,7 +555,6 @@ import * as opentofuorg from './opentofuorg'
 import * as openvpnnet from './openvpnnet'
 import * as operatorframeworkio from './operatorframeworkio'
 import * as opus_codecorg from './opus-codecorg'
-import * as opuscodecorg from './opuscodecorg'
 import * as oraclecom from './oraclecom'
 import * as orasland from './orasland'
 import * as ordinalscom from './ordinalscom'
@@ -668,7 +582,6 @@ import * as pippypaio from './pippypaio'
 import * as pixmanorg from './pixmanorg'
 import * as pkgxsh from './pkgxsh'
 import * as pkl_langorg from './pkl-langorg'
-import * as pkllangorg from './pkllangorg'
 import * as planetscalecom from './planetscalecom'
 import * as plantumlcom from './plantumlcom'
 import * as plasmasturmorg from './plasmasturmorg'
@@ -685,22 +598,18 @@ import * as portaudiocom from './portaudiocom'
 import * as postgresqlorg from './postgresqlorg'
 import * as postgrestorg from './postgrestorg'
 import * as practical_schemenet from './practical-schemenet'
-import * as practicalschemenet from './practicalschemenet'
 import * as pre_commitcom from './pre-commitcom'
-import * as precommitcom from './precommitcom'
 import * as prefixdev from './prefixdev'
 import * as presslygithubio from './presslygithubio'
 import * as prettierio from './prettierio'
 import * as printfngithubio from './printfngithubio'
 import * as priverdev from './priverdev'
 import * as project_copaceticgithubio from './project-copaceticgithubio'
-import * as projectcopaceticgithubio from './projectcopaceticgithubio'
 import * as projectdiscoveryio from './projectdiscoveryio'
 import * as projenio from './projenio'
 import * as projorg from './projorg'
 import * as protobufdev from './protobufdev'
 import * as prql_langorg from './prql-langorg'
-import * as prqllangorg from './prqllangorg'
 import * as psycopgorg from './psycopgorg'
 import * as publichronopikde from './publichronopikde'
 import * as pugixmlorg from './pugixmlorg'
@@ -715,8 +624,6 @@ import * as pytestorg from './pytestorg'
 import * as python_pilloworg from './python-pilloworg'
 import * as python_poetryorg from './python-poetryorg'
 import * as pythonorg from './pythonorg'
-import * as pythonpilloworg from './pythonpilloworg'
-import * as pythonpoetryorg from './pythonpoetryorg'
 import * as pyyamlorg from './pyyamlorg'
 import * as qemuorg from './qemuorg'
 import * as qhullorg from './qhullorg'
@@ -753,27 +660,19 @@ import * as rtomaykogithubio from './rtomaykogithubio'
 import * as rubocoporg from './rubocoporg'
 import * as ruby_langorg from './ruby-langorg'
 import * as rubygemsorg from './rubygemsorg'
-import * as rubylangorg from './rubylangorg'
 import * as ruciocernch from './ruciocernch'
 import * as runatlantisio from './runatlantisio'
 import * as rust_langgithubio from './rust-langgithubio'
 import * as rust_langorg from './rust-langorg'
 import * as rust_scriptorg from './rust-scriptorg'
-import * as rustlanggithubio from './rustlanggithubio'
-import * as rustlangorg from './rustlangorg'
-import * as rustscriptorg from './rustscriptorg'
-import * as rwosorg from './rwosorg'
 import * as ryeastralsh from './ryeastralsh'
 import * as s3toolsorg from './s3toolsorg'
 import * as saerasoftcom from './saerasoftcom'
 import * as sagiegurarigithubio from './sagiegurarigithubio'
 import * as sass_langcom from './sass-langcom'
-import * as sasslangcom from './sasslangcom'
 import * as savannahnongnuorg from './savannahnongnuorg'
 import * as scala_langorg from './scala-langorg'
 import * as scala_sbtorg from './scala-sbtorg'
-import * as scalalangorg from './scalalangorg'
-import * as scalasbtorg from './scalasbtorg'
 import * as scalewaycom from './scalewaycom'
 import * as schollzcom from './schollzcom'
 import * as sconsorg from './sconsorg'
@@ -788,7 +687,6 @@ import * as shellchecknet from './shellchecknet'
 import * as sigstoredev from './sigstoredev'
 import * as simplesystemsorg from './simplesystemsorg'
 import * as sing_boxapp from './sing-boxapp'
-import * as singboxapp from './singboxapp'
 import * as skaffolddev from './skaffolddev'
 import * as smartmontoolsorg from './smartmontoolsorg'
 import * as snapletdev from './snapletdev'
@@ -805,7 +703,6 @@ import * as spacetimedbcom from './spacetimedbcom'
 import * as spawnlink from './spawnlink'
 import * as speexorg from './speexorg'
 import * as sphinx_docorg from './sphinx-docorg'
-import * as sphinxdocorg from './sphinxdocorg'
 import * as sqlcdev from './sqlcdev'
 import * as sqlfluffcom from './sqlfluffcom'
 import * as sqliteorg from './sqliteorg'
@@ -837,22 +734,18 @@ import * as taplotamasfedev from './taplotamasfedev'
 import * as tartrun from './tartrun'
 import * as taskfiledev from './taskfiledev'
 import * as tcl_langorg from './tcl-langorg'
-import * as tcllangorg from './tcllangorg'
 import * as tcltk from './tcltk'
 import * as tcpdumporg from './tcpdumporg'
 import * as tcshorg from './tcshorg'
 import * as teaxyz from './teaxyz'
 import * as tectonic_typesettinggithubio from './tectonic-typesettinggithubio'
-import * as tectonictypesettinggithubio from './tectonictypesettinggithubio'
 import * as templguide from './templguide'
 import * as temporalio from './temporalio'
 import * as terraform_docsio from './terraform-docsio'
-import * as terraformdocsio from './terraformdocsio'
 import * as terraformio from './terraformio'
 import * as terragruntgruntworkio from './terragruntgruntworkio'
 import * as terratagio from './terratagio'
 import * as tesseract_ocrgithubio from './tesseract-ocrgithubio'
-import * as tesseractocrgithubio from './tesseractocrgithubio'
 import * as thekelleysorguk from './thekelleysorguk'
 import * as theoraorg from './theoraorg'
 import * as thoughtworksgithubio from './thoughtworksgithubio'
@@ -867,7 +760,6 @@ import * as tmateio from './tmateio'
 import * as toxwiki from './toxwiki'
 import * as traefikio from './traefikio'
 import * as tree_sittergithubio from './tree-sittergithubio'
-import * as treesittergithubio from './treesittergithubio'
 import * as trippyclirs from './trippyclirs'
 import * as trufflesecuritycom from './trufflesecuritycom'
 import * as tsl0922githubio from './tsl0922githubio'
@@ -886,7 +778,6 @@ import * as uriparsergithubio from './uriparsergithubio'
 import * as valesh from './valesh'
 import * as valkeyio from './valkeyio'
 import * as vamp_pluginsorg from './vamp-pluginsorg'
-import * as vamppluginsorg from './vamppluginsorg'
 import * as vannaai from './vannaai'
 import * as vapoursynthcom from './vapoursynthcom'
 import * as vaultprojectio from './vaultprojectio'
@@ -935,9 +826,7 @@ import * as yadmio from './yadmio'
 import * as yarnpkgcom from './yarnpkgcom'
 import * as yasmtortallnet from './yasmtortallnet'
 import * as youtube_dlorg from './youtube-dlorg'
-import * as youtubedlorg from './youtubedlorg'
 import * as yt_dlporg from './yt-dlporg'
-import * as ytdlporg from './ytdlporg'
 import * as yuigithubio from './yuigithubio'
 import * as zarfdev from './zarfdev'
 import * as zeromqorg from './zeromqorg'
@@ -948,43 +837,32 @@ import * as zshsourceforgeio from './zshsourceforgeio'
 
 export * from './abseilio'
 export * from './acornio'
-export * from './acornio-acorncli'
-export * from './acornioacorncli'
+export * from './acornio-acorn-cli'
 export * from './agptco'
 export * from './agwaname'
-export * from './agwaname-gitcrypt'
-export * from './agwanamegitcrypt'
+export * from './agwaname-git-crypt'
 export * from './akuityio'
 export * from './akuityio-kargo'
-export * from './akuityiokargo'
 export * from './alacrittyorg'
 export * from './alembicsqlalchemyorg'
 export * from './alsa-projectorg'
-export * from './alsa-projectorgalsalib'
-export * from './alsaprojectorg'
-export * from './alsaprojectorg-alsalib'
+export * from './alsa-projectorg-alsa-lib'
 export * from './amber-langcom'
-export * from './amberlangcom'
 export * from './amprs'
 export * from './amrdevelopergithubio'
 export * from './amrdevelopergithubio-gql'
-export * from './amrdevelopergithubiogql'
 export * from './anchorecom'
 export * from './anchorecom-syft'
-export * from './anchorecomsyft'
 export * from './androidcom'
-export * from './androidcom-cmdlinetools'
-export * from './androidcomcmdlinetools'
+export * from './androidcom-cmdline-tools'
 export * from './angulardev'
 export * from './ansiblecom'
-export * from './ansiblecom-ansiblelint'
-export * from './ansiblecomansiblelint'
+export * from './ansiblecom-ansible-lint'
 export * from './aomediagooglesourcecom'
 export * from './aomediagooglesourcecom-aom'
-export * from './aomediagooglesourcecomaom'
 export * from './apacheorg'
 export * from './apacheorg-apr'
-export * from './apacheorg-aprutil'
+export * from './apacheorg-apr-util'
 export * from './apacheorg-arrow'
 export * from './apacheorg-avro'
 export * from './apacheorg-httpd'
@@ -992,67 +870,43 @@ export * from './apacheorg-jmeter'
 export * from './apacheorg-subversion'
 export * from './apacheorg-thrift'
 export * from './apacheorg-zookeeper'
-export * from './apacheorgapr'
-export * from './apacheorgaprutil'
-export * from './apacheorgarrow'
-export * from './apacheorgavro'
-export * from './apacheorghttpd'
-export * from './apacheorgjmeter'
-export * from './apacheorgsubversion'
-export * from './apacheorgthrift'
-export * from './apacheorgzookeeper'
 export * from './apktoolorg'
 export * from './apollographqlcom'
 export * from './apollographqlcom-rover'
-export * from './apollographqlcomrover'
 export * from './appiumio'
 export * from './applecom'
 export * from './applecom-remote_cmds'
-export * from './applecomremote_cmds'
 export * from './apptainerorg'
 export * from './aquasecuritygithubio'
 export * from './aquasecuritygithubio-tfsec'
 export * from './aquasecuritygithubio-trivy'
-export * from './aquasecuritygithubiotfsec'
-export * from './aquasecuritygithubiotrivy'
 export * from './arduinogithubio'
-export * from './arduinogithubio-arduinocli'
-export * from './arduinogithubioarduinocli'
+export * from './arduinogithubio-arduino-cli'
 export * from './argbashdev'
 export * from './argoprojgithubio'
 export * from './argoprojgithubio-cd'
 export * from './argoprojgithubio-workflows'
-export * from './argoprojgithubiocd'
-export * from './argoprojgithubioworkflows'
 export * from './aria2githubio'
 export * from './arkadedev'
 export * from './asciidoctororg'
 export * from './asciinemaorg'
 export * from './asciinemaorg-agg'
-export * from './asciinemaorgagg'
 export * from './aspellnet'
 export * from './assimporg'
 export * from './ast-grepgithubio'
-export * from './astgrepgithubio'
 export * from './astralsh'
 export * from './astralsh-ruff'
 export * from './astralsh-uv'
-export * from './astralshruff'
-export * from './astralshuv'
 export * from './atlasgoio'
 export * from './attrsorg'
 export * from './augeasnet'
 export * from './authzedcom'
 export * from './authzedcom-spicedb'
-export * from './authzedcomspicedb'
 export * from './aux4io'
 export * from './awsamazoncom'
 export * from './awsamazoncom-cdk'
 export * from './awsamazoncom-cli'
 export * from './awsamazoncom-sam'
-export * from './awsamazoncomcdk'
-export * from './awsamazoncomcli'
-export * from './awsamazoncomsam'
 export * from './bashlydannybco'
 export * from './bcryptsourceforgenet'
 export * from './beyondgrepcom'
@@ -1062,16 +916,13 @@ export * from './bittensorcom'
 export * from './bitwardencom'
 export * from './blake2net'
 export * from './blake2net-libb2'
-export * from './blake2netlibb2'
 export * from './bloomreachcom'
 export * from './boostorg'
 export * from './borepub'
 export * from './breakfastquaycom'
 export * from './browser-usecom'
-export * from './browserusecom'
 export * from './brxken128githubio'
 export * from './brxken128githubio-dexios'
-export * from './brxken128githubiodexios'
 export * from './budimanjojogithubio'
 export * from './bufbuild'
 export * from './buildpacksio'
@@ -1082,18 +933,14 @@ export * from './c-aresorg'
 export * from './caddyservercom'
 export * from './cairographicsorg'
 export * from './capstone-engineorg'
-export * from './capstoneengineorg'
 export * from './carapacesh'
-export * from './caresorg'
 export * from './caskreadthedocsio'
 export * from './catborg'
 export * from './ccachedev'
 export * from './cedarpolicycom'
 export * from './cedarpolicycom-cli'
-export * from './cedarpolicycomcli'
 export * from './cephcom'
 export * from './ceres-solverorg'
-export * from './ceressolverorg'
 export * from './certbotefforg'
 export * from './certifiio'
 export * from './cgalorg'
@@ -1110,11 +957,9 @@ export * from './classicyarnpkgcom'
 export * from './cligithubcom'
 export * from './clisporg'
 export * from './clog-toolgithubio'
-export * from './clogtoolgithubio'
 export * from './cloudflarecom'
 export * from './cloudfoundryorg'
 export * from './cloudnative-pgio'
-export * from './cloudnativepgio'
 export * from './cmakeorg'
 export * from './cmockaorg'
 export * from './cnqueryio'
@@ -1137,7 +982,6 @@ export * from './cruftgithubio'
 export * from './crypto'
 export * from './cryptographyio'
 export * from './crystal-langorg'
-export * from './crystallangorg'
 export * from './cscopesourceforgeio'
 export * from './csientuedutw'
 export * from './ctagsio'
@@ -1160,14 +1004,12 @@ export * from './denilsonsanombr'
 export * from './denoland'
 export * from './depotdev'
 export * from './dest-unreachorg'
-export * from './destunreachorg'
 export * from './developer1passwordcom'
 export * from './developersyubicocom'
 export * from './devpodsh'
 export * from './devyorhelnl'
 export * from './dgraphio'
 export * from './dhall-langorg'
-export * from './dhalllangorg'
 export * from './dhruvkbdev'
 export * from './diggerdev'
 export * from './digiporg'
@@ -1180,7 +1022,6 @@ export * from './dockercom'
 export * from './doctavecom'
 export * from './docutilsorg'
 export * from './dotenv-lintergithubio'
-export * from './dotenvlintergithubio'
 export * from './dotenvxcom'
 export * from './dotnetmicrosoftcom'
 export * from './doxygennl'
@@ -1198,13 +1039,11 @@ export * from './eksctlio'
 export * from './elementsprojectorg'
 export * from './elfutilsorg'
 export * from './elixir-langorg'
-export * from './elixirlangorg'
 export * from './elizaosgithubio'
 export * from './elvsh'
 export * from './encoredev'
 export * from './endoflifedate'
 export * from './epsilon-projectsourceforgeio'
-export * from './epsilonprojectsourceforgeio'
 export * from './erlangorg'
 export * from './etcdio'
 export * from './exiftoolorg'
@@ -1231,7 +1070,6 @@ export * from './flyio'
 export * from './flywaydborg'
 export * from './fmtdev'
 export * from './fna-xnagithubio'
-export * from './fnaxnagithubio'
 export * from './freedesktoporg'
 export * from './freeglutsourceforgeio'
 export * from './freetdsorg'
@@ -1243,7 +1081,6 @@ export * from './fullstorycom'
 export * from './furyco'
 export * from './fxwtf'
 export * from './gaia-gisit'
-export * from './gaiagisit'
 export * from './gdalorg'
 export * from './geoffgreerfm'
 export * from './getclipboardapp'
@@ -1262,22 +1099,16 @@ export * from './git-lfscom'
 export * from './git-quick-statssh'
 export * from './git-scmorg'
 export * from './git-towncom'
-export * from './gitclifforg'
 export * from './githubcom'
 export * from './gitlabcom'
 export * from './gitleaksio'
-export * from './gitlfscom'
 export * from './gitosgeoorg'
-export * from './gitquickstatssh'
-export * from './gitscmorg'
-export * from './gittowncom'
 export * from './gittoztnet'
 export * from './glarosdtcumnedu'
 export * from './gleamrun'
 export * from './glewsourceforgeio'
 export * from './glfworg'
 export * from './glmg-trucnet'
-export * from './glmgtrucnet'
 export * from './gnomeorg'
 export * from './gnuorg'
 export * from './gnupgorg'
@@ -1286,7 +1117,6 @@ export * from './gnutlsorg'
 export * from './godev'
 export * from './gohugoio'
 export * from './golangci-lintrun'
-export * from './golangcilintrun'
 export * from './gomplateca'
 export * from './googlecom'
 export * from './googlegithubio'
@@ -1304,7 +1134,6 @@ export * from './graphqleditorcom'
 export * from './graphvizorg'
 export * from './groongaorg'
 export * from './groovy-langorg'
-export * from './groovylangorg'
 export * from './grpcio'
 export * from './gstreamerfreedesktoporg'
 export * from './gtkorg'
@@ -1320,13 +1149,11 @@ export * from './hboehminfo'
 export * from './hdfgrouporg'
 export * from './heasarcgsfcnasagov'
 export * from './helix-editorcom'
-export * from './helixeditorcom'
 export * from './helmsh'
 export * from './herokucom'
 export * from './hetznercom'
 export * from './hjsongithubio'
 export * from './html-tidyorg'
-export * from './htmltidyorg'
 export * from './htopdev'
 export * from './htsliborg'
 export * from './httpieio'
@@ -1335,18 +1162,15 @@ export * from './hugowang'
 export * from './hunspellgithubio'
 export * from './hurldev'
 export * from './ibrcstu-bsde'
-export * from './ibrcstubsde'
 export * from './idleberggithubio'
 export * from './ijgorg'
 export * from './imageflowio'
 export * from './imagemagickorg'
 export * from './indexsupplycom'
 export * from './info-ziporg'
-export * from './infoziporg'
 export * from './infracostio'
 export * from './intelcom'
 export * from './invisible-islandnet'
-export * from './invisibleislandnet'
 export * from './ipfstech'
 export * from './ipythonorg'
 export * from './irohcomputer'
@@ -1361,7 +1185,6 @@ export * from './jedsoftorg'
 export * from './jemallocnet'
 export * from './jenkins-xio'
 export * from './jenkinsio'
-export * from './jenkinsxio'
 export * from './jenvbe'
 export * from './jetporchcom'
 export * from './jfrogcom'
@@ -1370,7 +1193,6 @@ export * from './jonasgithubio'
 export * from './jpegorg'
 export * from './jsonnetorg'
 export * from './jugitfz-juelichde'
-export * from './jugitfzjuelichde'
 export * from './jujuis'
 export * from './julialangorg'
 export * from './jumppaddev'
@@ -1410,7 +1232,6 @@ export * from './lavinmqcom'
 export * from './lcdforg'
 export * from './leethomasongithubio'
 export * from './leo-langorg'
-export * from './leolangorg'
 export * from './leonerdorguk'
 export * from './leptonicaorg'
 export * from './lftpyarru'
@@ -1425,7 +1246,6 @@ export * from './libgit2org'
 export * from './libimobiledeviceorg'
 export * from './libislsourceforgeio'
 export * from './libjpeg-turboorg'
-export * from './libjpegturboorg'
 export * from './liblqrwikidotcom'
 export * from './libpipelinegitlabio'
 export * from './libpngorg'
@@ -1445,10 +1265,8 @@ export * from './libvipsorg'
 export * from './libwebsocketsorg'
 export * from './libziporg'
 export * from './lima-vmio'
-export * from './limavmio'
 export * from './linkerdio'
 export * from './linux-pamorg'
-export * from './linuxpamorg'
 export * from './liteclicom'
 export * from './littlecmscom'
 export * from './llmdatasetteio'
@@ -1471,7 +1289,6 @@ export * from './macvimorg'
 export * from './mailpitaxllentorg'
 export * from './makotemplatesorg'
 export * from './man-dbgitlabio'
-export * from './mandbgitlabio'
 export * from './mandocbsdlv'
 export * from './mariadbcom'
 export * from './markupsafepalletsprojectscom'
@@ -1480,20 +1297,16 @@ export * from './matiosourceforgeio'
 export * from './maturinrs'
 export * from './mavenapacheorg'
 export * from './mcmc-jagssourceforgeio'
-export * from './mcmcjagssourceforgeio'
 export * from './mercurerocks'
 export * from './mercurial-scmorg'
-export * from './mercurialscmorg'
 export * from './mergestatcom'
 export * from './mesa3dorg'
 export * from './mesonbuildcom'
 export * from './micro-editorgithubio'
 export * from './microbreworg'
 export * from './microcksio'
-export * from './microeditorgithubio'
 export * from './microsoftcom'
 export * from './midnight-commanderorg'
-export * from './midnightcommanderorg'
 export * from './minio'
 export * from './misejdxdev'
 export * from './mitmproxyorg'
@@ -1511,16 +1324,13 @@ export * from './mpvio'
 export * from './msgpackorg'
 export * from './mujscom'
 export * from './mun-langorg'
-export * from './munlangorg'
 export * from './mupdfcom'
 export * from './musepacknet'
 export * from './musllibcorg'
 export * from './mvdancc'
 export * from './mypy-langorg'
-export * from './mypylangorg'
 export * from './mysqlcom'
 export * from './nano-editororg'
-export * from './nanoeditororg'
 export * from './nasmus'
 export * from './neovimio'
 export * from './netflixcom'
@@ -1531,9 +1341,7 @@ export * from './nghttp2org'
 export * from './nginxorg'
 export * from './nikecom'
 export * from './nim-langorg'
-export * from './nimlangorg'
 export * from './ninja-buildorg'
-export * from './ninjabuildorg'
 export * from './nixosorg'
 export * from './nixpackscom'
 export * from './nlnetlabsnl'
@@ -1549,7 +1357,6 @@ export * from './numpyorg'
 export * from './nushellsh'
 export * from './nxdev'
 export * from './oauth2-proxygithubio'
-export * from './oauth2proxygithubio'
 export * from './oberhumercom'
 export * from './odigosio'
 export * from './ohmyposhdev'
@@ -1559,11 +1366,9 @@ export * from './onsigithubio'
 export * from './open-mpiorg'
 export * from './openaicom'
 export * from './openapi-generatortech'
-export * from './openapigeneratortech'
 export * from './openbaoorg'
 export * from './openblasnet'
 export * from './opencore-amrsourceforgeio'
-export * from './opencoreamrsourceforgeio'
 export * from './opendaporg'
 export * from './opendevorg'
 export * from './openexrcom'
@@ -1571,7 +1376,6 @@ export * from './openinterpretercom'
 export * from './openjdkorg'
 export * from './openjpegorg'
 export * from './openldaporg'
-export * from './openmpiorg'
 export * from './openmpllvmorg'
 export * from './openpmixgithubio'
 export * from './openpolicyagentorg'
@@ -1586,7 +1390,6 @@ export * from './opentofuorg'
 export * from './openvpnnet'
 export * from './operatorframeworkio'
 export * from './opus-codecorg'
-export * from './opuscodecorg'
 export * from './oraclecom'
 export * from './orasland'
 export * from './ordinalscom'
@@ -1614,7 +1417,6 @@ export * from './pippypaio'
 export * from './pixmanorg'
 export * from './pkgxsh'
 export * from './pkl-langorg'
-export * from './pkllangorg'
 export * from './planetscalecom'
 export * from './plantumlcom'
 export * from './plasmasturmorg'
@@ -1631,22 +1433,18 @@ export * from './portaudiocom'
 export * from './postgresqlorg'
 export * from './postgrestorg'
 export * from './practical-schemenet'
-export * from './practicalschemenet'
 export * from './pre-commitcom'
-export * from './precommitcom'
 export * from './prefixdev'
 export * from './presslygithubio'
 export * from './prettierio'
 export * from './printfngithubio'
 export * from './priverdev'
 export * from './project-copaceticgithubio'
-export * from './projectcopaceticgithubio'
 export * from './projectdiscoveryio'
 export * from './projenio'
 export * from './projorg'
 export * from './protobufdev'
 export * from './prql-langorg'
-export * from './prqllangorg'
 export * from './psycopgorg'
 export * from './publichronopikde'
 export * from './pugixmlorg'
@@ -1661,8 +1459,6 @@ export * from './pytestorg'
 export * from './python-pilloworg'
 export * from './python-poetryorg'
 export * from './pythonorg'
-export * from './pythonpilloworg'
-export * from './pythonpoetryorg'
 export * from './pyyamlorg'
 export * from './qemuorg'
 export * from './qhullorg'
@@ -1699,27 +1495,19 @@ export * from './rtomaykogithubio'
 export * from './rubocoporg'
 export * from './ruby-langorg'
 export * from './rubygemsorg'
-export * from './rubylangorg'
 export * from './ruciocernch'
 export * from './runatlantisio'
 export * from './rust-langgithubio'
 export * from './rust-langorg'
 export * from './rust-scriptorg'
-export * from './rustlanggithubio'
-export * from './rustlangorg'
-export * from './rustscriptorg'
-export * from './rwosorg'
 export * from './ryeastralsh'
 export * from './s3toolsorg'
 export * from './saerasoftcom'
 export * from './sagiegurarigithubio'
 export * from './sass-langcom'
-export * from './sasslangcom'
 export * from './savannahnongnuorg'
 export * from './scala-langorg'
 export * from './scala-sbtorg'
-export * from './scalalangorg'
-export * from './scalasbtorg'
 export * from './scalewaycom'
 export * from './schollzcom'
 export * from './sconsorg'
@@ -1734,7 +1522,6 @@ export * from './shellchecknet'
 export * from './sigstoredev'
 export * from './simplesystemsorg'
 export * from './sing-boxapp'
-export * from './singboxapp'
 export * from './skaffolddev'
 export * from './smartmontoolsorg'
 export * from './snapletdev'
@@ -1751,7 +1538,6 @@ export * from './spacetimedbcom'
 export * from './spawnlink'
 export * from './speexorg'
 export * from './sphinx-docorg'
-export * from './sphinxdocorg'
 export * from './sqlcdev'
 export * from './sqlfluffcom'
 export * from './sqliteorg'
@@ -1783,22 +1569,18 @@ export * from './taplotamasfedev'
 export * from './tartrun'
 export * from './taskfiledev'
 export * from './tcl-langorg'
-export * from './tcllangorg'
 export * from './tcltk'
 export * from './tcpdumporg'
 export * from './tcshorg'
 export * from './teaxyz'
 export * from './tectonic-typesettinggithubio'
-export * from './tectonictypesettinggithubio'
 export * from './templguide'
 export * from './temporalio'
 export * from './terraform-docsio'
-export * from './terraformdocsio'
 export * from './terraformio'
 export * from './terragruntgruntworkio'
 export * from './terratagio'
 export * from './tesseract-ocrgithubio'
-export * from './tesseractocrgithubio'
 export * from './thekelleysorguk'
 export * from './theoraorg'
 export * from './thoughtworksgithubio'
@@ -1813,7 +1595,6 @@ export * from './tmateio'
 export * from './toxwiki'
 export * from './traefikio'
 export * from './tree-sittergithubio'
-export * from './treesittergithubio'
 export * from './trippyclirs'
 export * from './trufflesecuritycom'
 export * from './tsl0922githubio'
@@ -1832,7 +1613,6 @@ export * from './uriparsergithubio'
 export * from './valesh'
 export * from './valkeyio'
 export * from './vamp-pluginsorg'
-export * from './vamppluginsorg'
 export * from './vannaai'
 export * from './vapoursynthcom'
 export * from './vaultprojectio'
@@ -1881,9 +1661,7 @@ export * from './yadmio'
 export * from './yarnpkgcom'
 export * from './yasmtortallnet'
 export * from './youtube-dlorg'
-export * from './youtubedlorg'
 export * from './yt-dlporg'
-export * from './ytdlporg'
 export * from './yuigithubio'
 export * from './zarfdev'
 export * from './zeromqorg'
@@ -1897,49 +1675,29 @@ export interface Pantry {
   abseilio: PkgxPackage
   acornio: PkgxPackage
   acornioacorncli: PkgxPackage
-  acornioacorncli: PkgxPackage
   agptco: PkgxPackage
   agwaname: PkgxPackage
   agwanamegitcrypt: PkgxPackage
-  agwanamegitcrypt: PkgxPackage
   akuityio: PkgxPackage
-  akuityiokargo: PkgxPackage
   akuityiokargo: PkgxPackage
   alacrittyorg: PkgxPackage
   alembicsqlalchemyorg: PkgxPackage
   alsaprojectorg: PkgxPackage
   alsaprojectorgalsalib: PkgxPackage
-  alsaprojectorg: PkgxPackage
-  alsaprojectorgalsalib: PkgxPackage
-  amberlangcom: PkgxPackage
   amberlangcom: PkgxPackage
   amprs: PkgxPackage
   amrdevelopergithubio: PkgxPackage
   amrdevelopergithubiogql: PkgxPackage
-  amrdevelopergithubiogql: PkgxPackage
   anchorecom: PkgxPackage
   anchorecomsyft: PkgxPackage
-  anchorecomsyft: PkgxPackage
   androidcom: PkgxPackage
-  androidcomcmdlinetools: PkgxPackage
   androidcomcmdlinetools: PkgxPackage
   angulardev: PkgxPackage
   ansiblecom: PkgxPackage
   ansiblecomansiblelint: PkgxPackage
-  ansiblecomansiblelint: PkgxPackage
   aomediagooglesourcecom: PkgxPackage
   aomediagooglesourcecomaom: PkgxPackage
-  aomediagooglesourcecomaom: PkgxPackage
   apacheorg: PkgxPackage
-  apacheorgapr: PkgxPackage
-  apacheorgaprutil: PkgxPackage
-  apacheorgarrow: PkgxPackage
-  apacheorgavro: PkgxPackage
-  apacheorghttpd: PkgxPackage
-  apacheorgjmeter: PkgxPackage
-  apacheorgsubversion: PkgxPackage
-  apacheorgthrift: PkgxPackage
-  apacheorgzookeeper: PkgxPackage
   apacheorgapr: PkgxPackage
   apacheorgaprutil: PkgxPackage
   apacheorgarrow: PkgxPackage
@@ -1952,24 +1710,17 @@ export interface Pantry {
   apktoolorg: PkgxPackage
   apollographqlcom: PkgxPackage
   apollographqlcomrover: PkgxPackage
-  apollographqlcomrover: PkgxPackage
   appiumio: PkgxPackage
   applecom: PkgxPackage
-  applecomremote_cmds: PkgxPackage
   applecomremote_cmds: PkgxPackage
   apptainerorg: PkgxPackage
   aquasecuritygithubio: PkgxPackage
   aquasecuritygithubiotfsec: PkgxPackage
   aquasecuritygithubiotrivy: PkgxPackage
-  aquasecuritygithubiotfsec: PkgxPackage
-  aquasecuritygithubiotrivy: PkgxPackage
   arduinogithubio: PkgxPackage
-  arduinogithubioarduinocli: PkgxPackage
   arduinogithubioarduinocli: PkgxPackage
   argbashdev: PkgxPackage
   argoprojgithubio: PkgxPackage
-  argoprojgithubiocd: PkgxPackage
-  argoprojgithubioworkflows: PkgxPackage
   argoprojgithubiocd: PkgxPackage
   argoprojgithubioworkflows: PkgxPackage
   aria2githubio: PkgxPackage
@@ -1977,14 +1728,10 @@ export interface Pantry {
   asciidoctororg: PkgxPackage
   asciinemaorg: PkgxPackage
   asciinemaorgagg: PkgxPackage
-  asciinemaorgagg: PkgxPackage
   aspellnet: PkgxPackage
   assimporg: PkgxPackage
   astgrepgithubio: PkgxPackage
-  astgrepgithubio: PkgxPackage
   astralsh: PkgxPackage
-  astralshruff: PkgxPackage
-  astralshuv: PkgxPackage
   astralshruff: PkgxPackage
   astralshuv: PkgxPackage
   atlasgoio: PkgxPackage
@@ -1992,12 +1739,8 @@ export interface Pantry {
   augeasnet: PkgxPackage
   authzedcom: PkgxPackage
   authzedcomspicedb: PkgxPackage
-  authzedcomspicedb: PkgxPackage
   aux4io: PkgxPackage
   awsamazoncom: PkgxPackage
-  awsamazoncomcdk: PkgxPackage
-  awsamazoncomcli: PkgxPackage
-  awsamazoncomsam: PkgxPackage
   awsamazoncomcdk: PkgxPackage
   awsamazoncomcli: PkgxPackage
   awsamazoncomsam: PkgxPackage
@@ -2010,15 +1753,12 @@ export interface Pantry {
   bitwardencom: PkgxPackage
   blake2net: PkgxPackage
   blake2netlibb2: PkgxPackage
-  blake2netlibb2: PkgxPackage
   bloomreachcom: PkgxPackage
   boostorg: PkgxPackage
   borepub: PkgxPackage
   breakfastquaycom: PkgxPackage
   browserusecom: PkgxPackage
-  browserusecom: PkgxPackage
   brxken128githubio: PkgxPackage
-  brxken128githubiodexios: PkgxPackage
   brxken128githubiodexios: PkgxPackage
   budimanjojogithubio: PkgxPackage
   bufbuild: PkgxPackage
@@ -2030,17 +1770,13 @@ export interface Pantry {
   caddyservercom: PkgxPackage
   cairographicsorg: PkgxPackage
   capstoneengineorg: PkgxPackage
-  capstoneengineorg: PkgxPackage
   carapacesh: PkgxPackage
-  caresorg: PkgxPackage
   caskreadthedocsio: PkgxPackage
   catborg: PkgxPackage
   ccachedev: PkgxPackage
   cedarpolicycom: PkgxPackage
   cedarpolicycomcli: PkgxPackage
-  cedarpolicycomcli: PkgxPackage
   cephcom: PkgxPackage
-  ceressolverorg: PkgxPackage
   ceressolverorg: PkgxPackage
   certbotefforg: PkgxPackage
   certifiio: PkgxPackage
@@ -2058,10 +1794,8 @@ export interface Pantry {
   cligithubcom: PkgxPackage
   clisporg: PkgxPackage
   clogtoolgithubio: PkgxPackage
-  clogtoolgithubio: PkgxPackage
   cloudflarecom: PkgxPackage
   cloudfoundryorg: PkgxPackage
-  cloudnativepgio: PkgxPackage
   cloudnativepgio: PkgxPackage
   cmakeorg: PkgxPackage
   cmockaorg: PkgxPackage
@@ -2085,7 +1819,6 @@ export interface Pantry {
   crypto: PkgxPackage
   cryptographyio: PkgxPackage
   crystallangorg: PkgxPackage
-  crystallangorg: PkgxPackage
   cscopesourceforgeio: PkgxPackage
   csientuedutw: PkgxPackage
   ctagsio: PkgxPackage
@@ -2108,13 +1841,11 @@ export interface Pantry {
   denoland: PkgxPackage
   depotdev: PkgxPackage
   destunreachorg: PkgxPackage
-  destunreachorg: PkgxPackage
   developer1passwordcom: PkgxPackage
   developersyubicocom: PkgxPackage
   devpodsh: PkgxPackage
   devyorhelnl: PkgxPackage
   dgraphio: PkgxPackage
-  dhalllangorg: PkgxPackage
   dhalllangorg: PkgxPackage
   dhruvkbdev: PkgxPackage
   diggerdev: PkgxPackage
@@ -2127,7 +1858,6 @@ export interface Pantry {
   dockercom: PkgxPackage
   doctavecom: PkgxPackage
   docutilsorg: PkgxPackage
-  dotenvlintergithubio: PkgxPackage
   dotenvlintergithubio: PkgxPackage
   dotenvxcom: PkgxPackage
   dotnetmicrosoftcom: PkgxPackage
@@ -2146,12 +1876,10 @@ export interface Pantry {
   elementsprojectorg: PkgxPackage
   elfutilsorg: PkgxPackage
   elixirlangorg: PkgxPackage
-  elixirlangorg: PkgxPackage
   elizaosgithubio: PkgxPackage
   elvsh: PkgxPackage
   encoredev: PkgxPackage
   endoflifedate: PkgxPackage
-  epsilonprojectsourceforgeio: PkgxPackage
   epsilonprojectsourceforgeio: PkgxPackage
   erlangorg: PkgxPackage
   etcdio: PkgxPackage
@@ -2179,7 +1907,6 @@ export interface Pantry {
   flywaydborg: PkgxPackage
   fmtdev: PkgxPackage
   fnaxnagithubio: PkgxPackage
-  fnaxnagithubio: PkgxPackage
   freedesktoporg: PkgxPackage
   freeglutsourceforgeio: PkgxPackage
   freetdsorg: PkgxPackage
@@ -2190,7 +1917,6 @@ export interface Pantry {
   fullstorycom: PkgxPackage
   furyco: PkgxPackage
   fxwtf: PkgxPackage
-  gaiagisit: PkgxPackage
   gaiagisit: PkgxPackage
   gdalorg: PkgxPackage
   geoffgreerfm: PkgxPackage
@@ -2210,21 +1936,15 @@ export interface Pantry {
   gitquickstatssh: PkgxPackage
   gitscmorg: PkgxPackage
   gittowncom: PkgxPackage
-  gitclifforg: PkgxPackage
   githubcom: PkgxPackage
   gitlabcom: PkgxPackage
   gitleaksio: PkgxPackage
-  gitlfscom: PkgxPackage
   gitosgeoorg: PkgxPackage
-  gitquickstatssh: PkgxPackage
-  gitscmorg: PkgxPackage
-  gittowncom: PkgxPackage
   gittoztnet: PkgxPackage
   glarosdtcumnedu: PkgxPackage
   gleamrun: PkgxPackage
   glewsourceforgeio: PkgxPackage
   glfworg: PkgxPackage
-  glmgtrucnet: PkgxPackage
   glmgtrucnet: PkgxPackage
   gnomeorg: PkgxPackage
   gnuorg: PkgxPackage
@@ -2233,7 +1953,6 @@ export interface Pantry {
   gnutlsorg: PkgxPackage
   godev: PkgxPackage
   gohugoio: PkgxPackage
-  golangcilintrun: PkgxPackage
   golangcilintrun: PkgxPackage
   gomplateca: PkgxPackage
   googlecom: PkgxPackage
@@ -2252,7 +1971,6 @@ export interface Pantry {
   graphvizorg: PkgxPackage
   groongaorg: PkgxPackage
   groovylangorg: PkgxPackage
-  groovylangorg: PkgxPackage
   grpcio: PkgxPackage
   gstreamerfreedesktoporg: PkgxPackage
   gtkorg: PkgxPackage
@@ -2268,12 +1986,10 @@ export interface Pantry {
   hdfgrouporg: PkgxPackage
   heasarcgsfcnasagov: PkgxPackage
   helixeditorcom: PkgxPackage
-  helixeditorcom: PkgxPackage
   helmsh: PkgxPackage
   herokucom: PkgxPackage
   hetznercom: PkgxPackage
   hjsongithubio: PkgxPackage
-  htmltidyorg: PkgxPackage
   htmltidyorg: PkgxPackage
   htopdev: PkgxPackage
   htsliborg: PkgxPackage
@@ -2283,17 +1999,14 @@ export interface Pantry {
   hunspellgithubio: PkgxPackage
   hurldev: PkgxPackage
   ibrcstubsde: PkgxPackage
-  ibrcstubsde: PkgxPackage
   idleberggithubio: PkgxPackage
   ijgorg: PkgxPackage
   imageflowio: PkgxPackage
   imagemagickorg: PkgxPackage
   indexsupplycom: PkgxPackage
   infoziporg: PkgxPackage
-  infoziporg: PkgxPackage
   infracostio: PkgxPackage
   intelcom: PkgxPackage
-  invisibleislandnet: PkgxPackage
   invisibleislandnet: PkgxPackage
   ipfstech: PkgxPackage
   ipythonorg: PkgxPackage
@@ -2309,7 +2022,6 @@ export interface Pantry {
   jemallocnet: PkgxPackage
   jenkinsxio: PkgxPackage
   jenkinsio: PkgxPackage
-  jenkinsxio: PkgxPackage
   jenvbe: PkgxPackage
   jetporchcom: PkgxPackage
   jfrogcom: PkgxPackage
@@ -2317,7 +2029,6 @@ export interface Pantry {
   jonasgithubio: PkgxPackage
   jpegorg: PkgxPackage
   jsonnetorg: PkgxPackage
-  jugitfzjuelichde: PkgxPackage
   jugitfzjuelichde: PkgxPackage
   jujuis: PkgxPackage
   julialangorg: PkgxPackage
@@ -2358,7 +2069,6 @@ export interface Pantry {
   lcdforg: PkgxPackage
   leethomasongithubio: PkgxPackage
   leolangorg: PkgxPackage
-  leolangorg: PkgxPackage
   leonerdorguk: PkgxPackage
   leptonicaorg: PkgxPackage
   lftpyarru: PkgxPackage
@@ -2372,7 +2082,6 @@ export interface Pantry {
   libgit2org: PkgxPackage
   libimobiledeviceorg: PkgxPackage
   libislsourceforgeio: PkgxPackage
-  libjpegturboorg: PkgxPackage
   libjpegturboorg: PkgxPackage
   liblqrwikidotcom: PkgxPackage
   libpipelinegitlabio: PkgxPackage
@@ -2393,9 +2102,7 @@ export interface Pantry {
   libwebsocketsorg: PkgxPackage
   libziporg: PkgxPackage
   limavmio: PkgxPackage
-  limavmio: PkgxPackage
   linkerdio: PkgxPackage
-  linuxpamorg: PkgxPackage
   linuxpamorg: PkgxPackage
   liteclicom: PkgxPackage
   littlecmscom: PkgxPackage
@@ -2419,7 +2126,6 @@ export interface Pantry {
   mailpitaxllentorg: PkgxPackage
   makotemplatesorg: PkgxPackage
   mandbgitlabio: PkgxPackage
-  mandbgitlabio: PkgxPackage
   mandocbsdlv: PkgxPackage
   mariadbcom: PkgxPackage
   markupsafepalletsprojectscom: PkgxPackage
@@ -2428,9 +2134,7 @@ export interface Pantry {
   maturinrs: PkgxPackage
   mavenapacheorg: PkgxPackage
   mcmcjagssourceforgeio: PkgxPackage
-  mcmcjagssourceforgeio: PkgxPackage
   mercurerocks: PkgxPackage
-  mercurialscmorg: PkgxPackage
   mercurialscmorg: PkgxPackage
   mergestatcom: PkgxPackage
   mesa3dorg: PkgxPackage
@@ -2438,9 +2142,7 @@ export interface Pantry {
   microeditorgithubio: PkgxPackage
   microbreworg: PkgxPackage
   microcksio: PkgxPackage
-  microeditorgithubio: PkgxPackage
   microsoftcom: PkgxPackage
-  midnightcommanderorg: PkgxPackage
   midnightcommanderorg: PkgxPackage
   minio: PkgxPackage
   misejdxdev: PkgxPackage
@@ -2459,15 +2161,12 @@ export interface Pantry {
   msgpackorg: PkgxPackage
   mujscom: PkgxPackage
   munlangorg: PkgxPackage
-  munlangorg: PkgxPackage
   mupdfcom: PkgxPackage
   musepacknet: PkgxPackage
   musllibcorg: PkgxPackage
   mvdancc: PkgxPackage
   mypylangorg: PkgxPackage
-  mypylangorg: PkgxPackage
   mysqlcom: PkgxPackage
-  nanoeditororg: PkgxPackage
   nanoeditororg: PkgxPackage
   nasmus: PkgxPackage
   neovimio: PkgxPackage
@@ -2479,8 +2178,6 @@ export interface Pantry {
   nginxorg: PkgxPackage
   nikecom: PkgxPackage
   nimlangorg: PkgxPackage
-  nimlangorg: PkgxPackage
-  ninjabuildorg: PkgxPackage
   ninjabuildorg: PkgxPackage
   nixosorg: PkgxPackage
   nixpackscom: PkgxPackage
@@ -2497,7 +2194,6 @@ export interface Pantry {
   nushellsh: PkgxPackage
   nxdev: PkgxPackage
   oauth2proxygithubio: PkgxPackage
-  oauth2proxygithubio: PkgxPackage
   oberhumercom: PkgxPackage
   odigosio: PkgxPackage
   ohmyposhdev: PkgxPackage
@@ -2507,10 +2203,8 @@ export interface Pantry {
   openmpiorg: PkgxPackage
   openaicom: PkgxPackage
   openapigeneratortech: PkgxPackage
-  openapigeneratortech: PkgxPackage
   openbaoorg: PkgxPackage
   openblasnet: PkgxPackage
-  opencoreamrsourceforgeio: PkgxPackage
   opencoreamrsourceforgeio: PkgxPackage
   opendaporg: PkgxPackage
   opendevorg: PkgxPackage
@@ -2519,7 +2213,6 @@ export interface Pantry {
   openjdkorg: PkgxPackage
   openjpegorg: PkgxPackage
   openldaporg: PkgxPackage
-  openmpiorg: PkgxPackage
   openmpllvmorg: PkgxPackage
   openpmixgithubio: PkgxPackage
   openpolicyagentorg: PkgxPackage
@@ -2533,7 +2226,6 @@ export interface Pantry {
   opentofuorg: PkgxPackage
   openvpnnet: PkgxPackage
   operatorframeworkio: PkgxPackage
-  opuscodecorg: PkgxPackage
   opuscodecorg: PkgxPackage
   oraclecom: PkgxPackage
   orasland: PkgxPackage
@@ -2562,7 +2254,6 @@ export interface Pantry {
   pixmanorg: PkgxPackage
   pkgxsh: PkgxPackage
   pkllangorg: PkgxPackage
-  pkllangorg: PkgxPackage
   planetscalecom: PkgxPackage
   plantumlcom: PkgxPackage
   plasmasturmorg: PkgxPackage
@@ -2579,8 +2270,6 @@ export interface Pantry {
   postgresqlorg: PkgxPackage
   postgrestorg: PkgxPackage
   practicalschemenet: PkgxPackage
-  practicalschemenet: PkgxPackage
-  precommitcom: PkgxPackage
   precommitcom: PkgxPackage
   prefixdev: PkgxPackage
   presslygithubio: PkgxPackage
@@ -2588,12 +2277,10 @@ export interface Pantry {
   printfngithubio: PkgxPackage
   priverdev: PkgxPackage
   projectcopaceticgithubio: PkgxPackage
-  projectcopaceticgithubio: PkgxPackage
   projectdiscoveryio: PkgxPackage
   projenio: PkgxPackage
   projorg: PkgxPackage
   protobufdev: PkgxPackage
-  prqllangorg: PkgxPackage
   prqllangorg: PkgxPackage
   psycopgorg: PkgxPackage
   publichronopikde: PkgxPackage
@@ -2609,8 +2296,6 @@ export interface Pantry {
   pythonpilloworg: PkgxPackage
   pythonpoetryorg: PkgxPackage
   pythonorg: PkgxPackage
-  pythonpilloworg: PkgxPackage
-  pythonpoetryorg: PkgxPackage
   pyyamlorg: PkgxPackage
   qemuorg: PkgxPackage
   qhullorg: PkgxPackage
@@ -2647,25 +2332,17 @@ export interface Pantry {
   rubocoporg: PkgxPackage
   rubylangorg: PkgxPackage
   rubygemsorg: PkgxPackage
-  rubylangorg: PkgxPackage
   ruciocernch: PkgxPackage
   runatlantisio: PkgxPackage
   rustlanggithubio: PkgxPackage
   rustlangorg: PkgxPackage
   rustscriptorg: PkgxPackage
-  rustlanggithubio: PkgxPackage
-  rustlangorg: PkgxPackage
-  rustscriptorg: PkgxPackage
-  rwosorg: PkgxPackage
   ryeastralsh: PkgxPackage
   s3toolsorg: PkgxPackage
   saerasoftcom: PkgxPackage
   sagiegurarigithubio: PkgxPackage
   sasslangcom: PkgxPackage
-  sasslangcom: PkgxPackage
   savannahnongnuorg: PkgxPackage
-  scalalangorg: PkgxPackage
-  scalasbtorg: PkgxPackage
   scalalangorg: PkgxPackage
   scalasbtorg: PkgxPackage
   scalewaycom: PkgxPackage
@@ -2682,7 +2359,6 @@ export interface Pantry {
   sigstoredev: PkgxPackage
   simplesystemsorg: PkgxPackage
   singboxapp: PkgxPackage
-  singboxapp: PkgxPackage
   skaffolddev: PkgxPackage
   smartmontoolsorg: PkgxPackage
   snapletdev: PkgxPackage
@@ -2698,7 +2374,6 @@ export interface Pantry {
   spacetimedbcom: PkgxPackage
   spawnlink: PkgxPackage
   speexorg: PkgxPackage
-  sphinxdocorg: PkgxPackage
   sphinxdocorg: PkgxPackage
   sqlcdev: PkgxPackage
   sqlfluffcom: PkgxPackage
@@ -2731,21 +2406,17 @@ export interface Pantry {
   tartrun: PkgxPackage
   taskfiledev: PkgxPackage
   tcllangorg: PkgxPackage
-  tcllangorg: PkgxPackage
   tcltk: PkgxPackage
   tcpdumporg: PkgxPackage
   tcshorg: PkgxPackage
   teaxyz: PkgxPackage
   tectonictypesettinggithubio: PkgxPackage
-  tectonictypesettinggithubio: PkgxPackage
   templguide: PkgxPackage
   temporalio: PkgxPackage
-  terraformdocsio: PkgxPackage
   terraformdocsio: PkgxPackage
   terraformio: PkgxPackage
   terragruntgruntworkio: PkgxPackage
   terratagio: PkgxPackage
-  tesseractocrgithubio: PkgxPackage
   tesseractocrgithubio: PkgxPackage
   thekelleysorguk: PkgxPackage
   theoraorg: PkgxPackage
@@ -2760,7 +2431,6 @@ export interface Pantry {
   tmateio: PkgxPackage
   toxwiki: PkgxPackage
   traefikio: PkgxPackage
-  treesittergithubio: PkgxPackage
   treesittergithubio: PkgxPackage
   trippyclirs: PkgxPackage
   trufflesecuritycom: PkgxPackage
@@ -2779,7 +2449,6 @@ export interface Pantry {
   uriparsergithubio: PkgxPackage
   valesh: PkgxPackage
   valkeyio: PkgxPackage
-  vamppluginsorg: PkgxPackage
   vamppluginsorg: PkgxPackage
   vannaai: PkgxPackage
   vapoursynthcom: PkgxPackage
@@ -2829,8 +2498,6 @@ export interface Pantry {
   yarnpkgcom: PkgxPackage
   yasmtortallnet: PkgxPackage
   youtubedlorg: PkgxPackage
-  youtubedlorg: PkgxPackage
-  ytdlporg: PkgxPackage
   ytdlporg: PkgxPackage
   yuigithubio: PkgxPackage
   zarfdev: PkgxPackage
@@ -2845,43 +2512,32 @@ export interface Pantry {
 export const pantry: Pantry = {
   abseilio: abseilio.abseilioPackage,
   acornio: acornio.acornioPackage,
-  acornioacorncli: acornio_acorncli.acornioacorncliPackage,
-  acornioacorncli: acornioacorncli.acornioacorncliPackage,
+  acornioacorncli: acornio_acorn_cli.acornioacorncliPackage,
   agptco: agptco.agptcoPackage,
   agwaname: agwaname.agwanamePackage,
-  agwanamegitcrypt: agwaname_gitcrypt.agwanamegitcryptPackage,
-  agwanamegitcrypt: agwanamegitcrypt.agwanamegitcryptPackage,
+  agwanamegitcrypt: agwaname_git_crypt.agwanamegitcryptPackage,
   akuityio: akuityio.akuityioPackage,
   akuityiokargo: akuityio_kargo.akuityiokargoPackage,
-  akuityiokargo: akuityiokargo.akuityiokargoPackage,
   alacrittyorg: alacrittyorg.alacrittyorgPackage,
   alembicsqlalchemyorg: alembicsqlalchemyorg.alembicsqlalchemyorgPackage,
   alsaprojectorg: alsa_projectorg.alsaprojectorgPackage,
-  alsaprojectorgalsalib: alsa_projectorgalsalib.alsaprojectorgalsalibPackage,
-  alsaprojectorg: alsaprojectorg.alsaprojectorgPackage,
-  alsaprojectorgalsalib: alsaprojectorg_alsalib.alsaprojectorgalsalibPackage,
+  alsaprojectorgalsalib: alsa_projectorg_alsa_lib.alsaprojectorgalsalibPackage,
   amberlangcom: amber_langcom.amberlangcomPackage,
-  amberlangcom: amberlangcom.amberlangcomPackage,
   amprs: amprs.amprsPackage,
   amrdevelopergithubio: amrdevelopergithubio.amrdevelopergithubioPackage,
   amrdevelopergithubiogql: amrdevelopergithubio_gql.amrdevelopergithubiogqlPackage,
-  amrdevelopergithubiogql: amrdevelopergithubiogql.amrdevelopergithubiogqlPackage,
   anchorecom: anchorecom.anchorecomPackage,
   anchorecomsyft: anchorecom_syft.anchorecomsyftPackage,
-  anchorecomsyft: anchorecomsyft.anchorecomsyftPackage,
   androidcom: androidcom.androidcomPackage,
-  androidcomcmdlinetools: androidcom_cmdlinetools.androidcomcmdlinetoolsPackage,
-  androidcomcmdlinetools: androidcomcmdlinetools.androidcomcmdlinetoolsPackage,
+  androidcomcmdlinetools: androidcom_cmdline_tools.androidcomcmdlinetoolsPackage,
   angulardev: angulardev.angulardevPackage,
   ansiblecom: ansiblecom.ansiblecomPackage,
-  ansiblecomansiblelint: ansiblecom_ansiblelint.ansiblecomansiblelintPackage,
-  ansiblecomansiblelint: ansiblecomansiblelint.ansiblecomansiblelintPackage,
+  ansiblecomansiblelint: ansiblecom_ansible_lint.ansiblecomansiblelintPackage,
   aomediagooglesourcecom: aomediagooglesourcecom.aomediagooglesourcecomPackage,
   aomediagooglesourcecomaom: aomediagooglesourcecom_aom.aomediagooglesourcecomaomPackage,
-  aomediagooglesourcecomaom: aomediagooglesourcecomaom.aomediagooglesourcecomaomPackage,
   apacheorg: apacheorg.apacheorgPackage,
   apacheorgapr: apacheorg_apr.apacheorgaprPackage,
-  apacheorgaprutil: apacheorg_aprutil.apacheorgaprutilPackage,
+  apacheorgaprutil: apacheorg_apr_util.apacheorgaprutilPackage,
   apacheorgarrow: apacheorg_arrow.apacheorgarrowPackage,
   apacheorgavro: apacheorg_avro.apacheorgavroPackage,
   apacheorghttpd: apacheorg_httpd.apacheorghttpdPackage,
@@ -2889,67 +2545,43 @@ export const pantry: Pantry = {
   apacheorgsubversion: apacheorg_subversion.apacheorgsubversionPackage,
   apacheorgthrift: apacheorg_thrift.apacheorgthriftPackage,
   apacheorgzookeeper: apacheorg_zookeeper.apacheorgzookeeperPackage,
-  apacheorgapr: apacheorgapr.apacheorgaprPackage,
-  apacheorgaprutil: apacheorgaprutil.apacheorgaprutilPackage,
-  apacheorgarrow: apacheorgarrow.apacheorgarrowPackage,
-  apacheorgavro: apacheorgavro.apacheorgavroPackage,
-  apacheorghttpd: apacheorghttpd.apacheorghttpdPackage,
-  apacheorgjmeter: apacheorgjmeter.apacheorgjmeterPackage,
-  apacheorgsubversion: apacheorgsubversion.apacheorgsubversionPackage,
-  apacheorgthrift: apacheorgthrift.apacheorgthriftPackage,
-  apacheorgzookeeper: apacheorgzookeeper.apacheorgzookeeperPackage,
   apktoolorg: apktoolorg.apktoolorgPackage,
   apollographqlcom: apollographqlcom.apollographqlcomPackage,
   apollographqlcomrover: apollographqlcom_rover.apollographqlcomroverPackage,
-  apollographqlcomrover: apollographqlcomrover.apollographqlcomroverPackage,
   appiumio: appiumio.appiumioPackage,
   applecom: applecom.applecomPackage,
   applecomremote_cmds: applecom_remote_cmds.applecomremote_cmdsPackage,
-  applecomremote_cmds: applecomremote_cmds.applecomremote_cmdsPackage,
   apptainerorg: apptainerorg.apptainerorgPackage,
   aquasecuritygithubio: aquasecuritygithubio.aquasecuritygithubioPackage,
   aquasecuritygithubiotfsec: aquasecuritygithubio_tfsec.aquasecuritygithubiotfsecPackage,
   aquasecuritygithubiotrivy: aquasecuritygithubio_trivy.aquasecuritygithubiotrivyPackage,
-  aquasecuritygithubiotfsec: aquasecuritygithubiotfsec.aquasecuritygithubiotfsecPackage,
-  aquasecuritygithubiotrivy: aquasecuritygithubiotrivy.aquasecuritygithubiotrivyPackage,
   arduinogithubio: arduinogithubio.arduinogithubioPackage,
-  arduinogithubioarduinocli: arduinogithubio_arduinocli.arduinogithubioarduinocliPackage,
-  arduinogithubioarduinocli: arduinogithubioarduinocli.arduinogithubioarduinocliPackage,
+  arduinogithubioarduinocli: arduinogithubio_arduino_cli.arduinogithubioarduinocliPackage,
   argbashdev: argbashdev.argbashdevPackage,
   argoprojgithubio: argoprojgithubio.argoprojgithubioPackage,
   argoprojgithubiocd: argoprojgithubio_cd.argoprojgithubiocdPackage,
   argoprojgithubioworkflows: argoprojgithubio_workflows.argoprojgithubioworkflowsPackage,
-  argoprojgithubiocd: argoprojgithubiocd.argoprojgithubiocdPackage,
-  argoprojgithubioworkflows: argoprojgithubioworkflows.argoprojgithubioworkflowsPackage,
   aria2githubio: aria2githubio.aria2githubioPackage,
   arkadedev: arkadedev.arkadedevPackage,
   asciidoctororg: asciidoctororg.asciidoctororgPackage,
   asciinemaorg: asciinemaorg.asciinemaorgPackage,
   asciinemaorgagg: asciinemaorg_agg.asciinemaorgaggPackage,
-  asciinemaorgagg: asciinemaorgagg.asciinemaorgaggPackage,
   aspellnet: aspellnet.aspellnetPackage,
   assimporg: assimporg.assimporgPackage,
   astgrepgithubio: ast_grepgithubio.astgrepgithubioPackage,
-  astgrepgithubio: astgrepgithubio.astgrepgithubioPackage,
   astralsh: astralsh.astralshPackage,
   astralshruff: astralsh_ruff.astralshruffPackage,
   astralshuv: astralsh_uv.astralshuvPackage,
-  astralshruff: astralshruff.astralshruffPackage,
-  astralshuv: astralshuv.astralshuvPackage,
   atlasgoio: atlasgoio.atlasgoioPackage,
   attrsorg: attrsorg.attrsorgPackage,
   augeasnet: augeasnet.augeasnetPackage,
   authzedcom: authzedcom.authzedcomPackage,
   authzedcomspicedb: authzedcom_spicedb.authzedcomspicedbPackage,
-  authzedcomspicedb: authzedcomspicedb.authzedcomspicedbPackage,
   aux4io: aux4io.aux4ioPackage,
   awsamazoncom: awsamazoncom.awsamazoncomPackage,
   awsamazoncomcdk: awsamazoncom_cdk.awsamazoncomcdkPackage,
   awsamazoncomcli: awsamazoncom_cli.awsamazoncomcliPackage,
   awsamazoncomsam: awsamazoncom_sam.awsamazoncomsamPackage,
-  awsamazoncomcdk: awsamazoncomcdk.awsamazoncomcdkPackage,
-  awsamazoncomcli: awsamazoncomcli.awsamazoncomcliPackage,
-  awsamazoncomsam: awsamazoncomsam.awsamazoncomsamPackage,
   bashlydannybco: bashlydannybco.bashlydannybcoPackage,
   bcryptsourceforgenet: bcryptsourceforgenet.bcryptsourceforgenetPackage,
   beyondgrepcom: beyondgrepcom.beyondgrepcomPackage,
@@ -2959,16 +2591,13 @@ export const pantry: Pantry = {
   bitwardencom: bitwardencom.bitwardencomPackage,
   blake2net: blake2net.blake2netPackage,
   blake2netlibb2: blake2net_libb2.blake2netlibb2Package,
-  blake2netlibb2: blake2netlibb2.blake2netlibb2Package,
   bloomreachcom: bloomreachcom.bloomreachcomPackage,
   boostorg: boostorg.boostorgPackage,
   borepub: borepub.borepubPackage,
   breakfastquaycom: breakfastquaycom.breakfastquaycomPackage,
   browserusecom: browser_usecom.browserusecomPackage,
-  browserusecom: browserusecom.browserusecomPackage,
   brxken128githubio: brxken128githubio.brxken128githubioPackage,
   brxken128githubiodexios: brxken128githubio_dexios.brxken128githubiodexiosPackage,
-  brxken128githubiodexios: brxken128githubiodexios.brxken128githubiodexiosPackage,
   budimanjojogithubio: budimanjojogithubio.budimanjojogithubioPackage,
   bufbuild: bufbuild.bufbuildPackage,
   buildpacksio: buildpacksio.buildpacksioPackage,
@@ -2979,18 +2608,14 @@ export const pantry: Pantry = {
   caddyservercom: caddyservercom.caddyservercomPackage,
   cairographicsorg: cairographicsorg.cairographicsorgPackage,
   capstoneengineorg: capstone_engineorg.capstoneengineorgPackage,
-  capstoneengineorg: capstoneengineorg.capstoneengineorgPackage,
   carapacesh: carapacesh.carapaceshPackage,
-  caresorg: caresorg.caresorgPackage,
   caskreadthedocsio: caskreadthedocsio.caskreadthedocsioPackage,
   catborg: catborg.catborgPackage,
   ccachedev: ccachedev.ccachedevPackage,
   cedarpolicycom: cedarpolicycom.cedarpolicycomPackage,
   cedarpolicycomcli: cedarpolicycom_cli.cedarpolicycomcliPackage,
-  cedarpolicycomcli: cedarpolicycomcli.cedarpolicycomcliPackage,
   cephcom: cephcom.cephcomPackage,
   ceressolverorg: ceres_solverorg.ceressolverorgPackage,
-  ceressolverorg: ceressolverorg.ceressolverorgPackage,
   certbotefforg: certbotefforg.certbotefforgPackage,
   certifiio: certifiio.certifiioPackage,
   cgalorg: cgalorg.cgalorgPackage,
@@ -3007,11 +2632,9 @@ export const pantry: Pantry = {
   cligithubcom: cligithubcom.cligithubcomPackage,
   clisporg: clisporg.clisporgPackage,
   clogtoolgithubio: clog_toolgithubio.clogtoolgithubioPackage,
-  clogtoolgithubio: clogtoolgithubio.clogtoolgithubioPackage,
   cloudflarecom: cloudflarecom.cloudflarecomPackage,
   cloudfoundryorg: cloudfoundryorg.cloudfoundryorgPackage,
   cloudnativepgio: cloudnative_pgio.cloudnativepgioPackage,
-  cloudnativepgio: cloudnativepgio.cloudnativepgioPackage,
   cmakeorg: cmakeorg.cmakeorgPackage,
   cmockaorg: cmockaorg.cmockaorgPackage,
   cnqueryio: cnqueryio.cnqueryioPackage,
@@ -3034,7 +2657,6 @@ export const pantry: Pantry = {
   crypto: crypto.cryptoPackage,
   cryptographyio: cryptographyio.cryptographyioPackage,
   crystallangorg: crystal_langorg.crystallangorgPackage,
-  crystallangorg: crystallangorg.crystallangorgPackage,
   cscopesourceforgeio: cscopesourceforgeio.cscopesourceforgeioPackage,
   csientuedutw: csientuedutw.csientuedutwPackage,
   ctagsio: ctagsio.ctagsioPackage,
@@ -3057,14 +2679,12 @@ export const pantry: Pantry = {
   denoland: denoland.denolandPackage,
   depotdev: depotdev.depotdevPackage,
   destunreachorg: dest_unreachorg.destunreachorgPackage,
-  destunreachorg: destunreachorg.destunreachorgPackage,
   developer1passwordcom: developer1passwordcom.developer1passwordcomPackage,
   developersyubicocom: developersyubicocom.developersyubicocomPackage,
   devpodsh: devpodsh.devpodshPackage,
   devyorhelnl: devyorhelnl.devyorhelnlPackage,
   dgraphio: dgraphio.dgraphioPackage,
   dhalllangorg: dhall_langorg.dhalllangorgPackage,
-  dhalllangorg: dhalllangorg.dhalllangorgPackage,
   dhruvkbdev: dhruvkbdev.dhruvkbdevPackage,
   diggerdev: diggerdev.diggerdevPackage,
   digiporg: digiporg.digiporgPackage,
@@ -3077,7 +2697,6 @@ export const pantry: Pantry = {
   doctavecom: doctavecom.doctavecomPackage,
   docutilsorg: docutilsorg.docutilsorgPackage,
   dotenvlintergithubio: dotenv_lintergithubio.dotenvlintergithubioPackage,
-  dotenvlintergithubio: dotenvlintergithubio.dotenvlintergithubioPackage,
   dotenvxcom: dotenvxcom.dotenvxcomPackage,
   dotnetmicrosoftcom: dotnetmicrosoftcom.dotnetmicrosoftcomPackage,
   doxygennl: doxygennl.doxygennlPackage,
@@ -3095,13 +2714,11 @@ export const pantry: Pantry = {
   elementsprojectorg: elementsprojectorg.elementsprojectorgPackage,
   elfutilsorg: elfutilsorg.elfutilsorgPackage,
   elixirlangorg: elixir_langorg.elixirlangorgPackage,
-  elixirlangorg: elixirlangorg.elixirlangorgPackage,
   elizaosgithubio: elizaosgithubio.elizaosgithubioPackage,
   elvsh: elvsh.elvshPackage,
   encoredev: encoredev.encoredevPackage,
   endoflifedate: endoflifedate.endoflifedatePackage,
   epsilonprojectsourceforgeio: epsilon_projectsourceforgeio.epsilonprojectsourceforgeioPackage,
-  epsilonprojectsourceforgeio: epsilonprojectsourceforgeio.epsilonprojectsourceforgeioPackage,
   erlangorg: erlangorg.erlangorgPackage,
   etcdio: etcdio.etcdioPackage,
   exiftoolorg: exiftoolorg.exiftoolorgPackage,
@@ -3128,7 +2745,6 @@ export const pantry: Pantry = {
   flywaydborg: flywaydborg.flywaydborgPackage,
   fmtdev: fmtdev.fmtdevPackage,
   fnaxnagithubio: fna_xnagithubio.fnaxnagithubioPackage,
-  fnaxnagithubio: fnaxnagithubio.fnaxnagithubioPackage,
   freedesktoporg: freedesktoporg.freedesktoporgPackage,
   freeglutsourceforgeio: freeglutsourceforgeio.freeglutsourceforgeioPackage,
   freetdsorg: freetdsorg.freetdsorgPackage,
@@ -3140,7 +2756,6 @@ export const pantry: Pantry = {
   furyco: furyco.furycoPackage,
   fxwtf: fxwtf.fxwtfPackage,
   gaiagisit: gaia_gisit.gaiagisitPackage,
-  gaiagisit: gaiagisit.gaiagisitPackage,
   gdalorg: gdalorg.gdalorgPackage,
   geoffgreerfm: geoffgreerfm.geoffgreerfmPackage,
   getclipboardapp: getclipboardapp.getclipboardappPackage,
@@ -3159,22 +2774,16 @@ export const pantry: Pantry = {
   gitquickstatssh: git_quick_statssh.gitquickstatsshPackage,
   gitscmorg: git_scmorg.gitscmorgPackage,
   gittowncom: git_towncom.gittowncomPackage,
-  gitclifforg: gitclifforg.gitclifforgPackage,
   githubcom: githubcom.githubcomPackage,
   gitlabcom: gitlabcom.gitlabcomPackage,
   gitleaksio: gitleaksio.gitleaksioPackage,
-  gitlfscom: gitlfscom.gitlfscomPackage,
   gitosgeoorg: gitosgeoorg.gitosgeoorgPackage,
-  gitquickstatssh: gitquickstatssh.gitquickstatsshPackage,
-  gitscmorg: gitscmorg.gitscmorgPackage,
-  gittowncom: gittowncom.gittowncomPackage,
   gittoztnet: gittoztnet.gittoztnetPackage,
   glarosdtcumnedu: glarosdtcumnedu.glarosdtcumneduPackage,
   gleamrun: gleamrun.gleamrunPackage,
   glewsourceforgeio: glewsourceforgeio.glewsourceforgeioPackage,
   glfworg: glfworg.glfworgPackage,
   glmgtrucnet: glmg_trucnet.glmgtrucnetPackage,
-  glmgtrucnet: glmgtrucnet.glmgtrucnetPackage,
   gnomeorg: gnomeorg.gnomeorgPackage,
   gnuorg: gnuorg.gnuorgPackage,
   gnupgorg: gnupgorg.gnupgorgPackage,
@@ -3183,7 +2792,6 @@ export const pantry: Pantry = {
   godev: godev.godevPackage,
   gohugoio: gohugoio.gohugoioPackage,
   golangcilintrun: golangci_lintrun.golangcilintrunPackage,
-  golangcilintrun: golangcilintrun.golangcilintrunPackage,
   gomplateca: gomplateca.gomplatecaPackage,
   googlecom: googlecom.googlecomPackage,
   googlegithubio: googlegithubio.googlegithubioPackage,
@@ -3201,7 +2809,6 @@ export const pantry: Pantry = {
   graphvizorg: graphvizorg.graphvizorgPackage,
   groongaorg: groongaorg.groongaorgPackage,
   groovylangorg: groovy_langorg.groovylangorgPackage,
-  groovylangorg: groovylangorg.groovylangorgPackage,
   grpcio: grpcio.grpcioPackage,
   gstreamerfreedesktoporg: gstreamerfreedesktoporg.gstreamerfreedesktoporgPackage,
   gtkorg: gtkorg.gtkorgPackage,
@@ -3217,13 +2824,11 @@ export const pantry: Pantry = {
   hdfgrouporg: hdfgrouporg.hdfgrouporgPackage,
   heasarcgsfcnasagov: heasarcgsfcnasagov.heasarcgsfcnasagovPackage,
   helixeditorcom: helix_editorcom.helixeditorcomPackage,
-  helixeditorcom: helixeditorcom.helixeditorcomPackage,
   helmsh: helmsh.helmshPackage,
   herokucom: herokucom.herokucomPackage,
   hetznercom: hetznercom.hetznercomPackage,
   hjsongithubio: hjsongithubio.hjsongithubioPackage,
   htmltidyorg: html_tidyorg.htmltidyorgPackage,
-  htmltidyorg: htmltidyorg.htmltidyorgPackage,
   htopdev: htopdev.htopdevPackage,
   htsliborg: htsliborg.htsliborgPackage,
   httpieio: httpieio.httpieioPackage,
@@ -3232,18 +2837,15 @@ export const pantry: Pantry = {
   hunspellgithubio: hunspellgithubio.hunspellgithubioPackage,
   hurldev: hurldev.hurldevPackage,
   ibrcstubsde: ibrcstu_bsde.ibrcstubsdePackage,
-  ibrcstubsde: ibrcstubsde.ibrcstubsdePackage,
   idleberggithubio: idleberggithubio.idleberggithubioPackage,
   ijgorg: ijgorg.ijgorgPackage,
   imageflowio: imageflowio.imageflowioPackage,
   imagemagickorg: imagemagickorg.imagemagickorgPackage,
   indexsupplycom: indexsupplycom.indexsupplycomPackage,
   infoziporg: info_ziporg.infoziporgPackage,
-  infoziporg: infoziporg.infoziporgPackage,
   infracostio: infracostio.infracostioPackage,
   intelcom: intelcom.intelcomPackage,
   invisibleislandnet: invisible_islandnet.invisibleislandnetPackage,
-  invisibleislandnet: invisibleislandnet.invisibleislandnetPackage,
   ipfstech: ipfstech.ipfstechPackage,
   ipythonorg: ipythonorg.ipythonorgPackage,
   irohcomputer: irohcomputer.irohcomputerPackage,
@@ -3258,7 +2860,6 @@ export const pantry: Pantry = {
   jemallocnet: jemallocnet.jemallocnetPackage,
   jenkinsxio: jenkins_xio.jenkinsxioPackage,
   jenkinsio: jenkinsio.jenkinsioPackage,
-  jenkinsxio: jenkinsxio.jenkinsxioPackage,
   jenvbe: jenvbe.jenvbePackage,
   jetporchcom: jetporchcom.jetporchcomPackage,
   jfrogcom: jfrogcom.jfrogcomPackage,
@@ -3267,7 +2868,6 @@ export const pantry: Pantry = {
   jpegorg: jpegorg.jpegorgPackage,
   jsonnetorg: jsonnetorg.jsonnetorgPackage,
   jugitfzjuelichde: jugitfz_juelichde.jugitfzjuelichdePackage,
-  jugitfzjuelichde: jugitfzjuelichde.jugitfzjuelichdePackage,
   jujuis: jujuis.jujuisPackage,
   julialangorg: julialangorg.julialangorgPackage,
   jumppaddev: jumppaddev.jumppaddevPackage,
@@ -3307,7 +2907,6 @@ export const pantry: Pantry = {
   lcdforg: lcdforg.lcdforgPackage,
   leethomasongithubio: leethomasongithubio.leethomasongithubioPackage,
   leolangorg: leo_langorg.leolangorgPackage,
-  leolangorg: leolangorg.leolangorgPackage,
   leonerdorguk: leonerdorguk.leonerdorgukPackage,
   leptonicaorg: leptonicaorg.leptonicaorgPackage,
   lftpyarru: lftpyarru.lftpyarruPackage,
@@ -3322,7 +2921,6 @@ export const pantry: Pantry = {
   libimobiledeviceorg: libimobiledeviceorg.libimobiledeviceorgPackage,
   libislsourceforgeio: libislsourceforgeio.libislsourceforgeioPackage,
   libjpegturboorg: libjpeg_turboorg.libjpegturboorgPackage,
-  libjpegturboorg: libjpegturboorg.libjpegturboorgPackage,
   liblqrwikidotcom: liblqrwikidotcom.liblqrwikidotcomPackage,
   libpipelinegitlabio: libpipelinegitlabio.libpipelinegitlabioPackage,
   libpngorg: libpngorg.libpngorgPackage,
@@ -3342,10 +2940,8 @@ export const pantry: Pantry = {
   libwebsocketsorg: libwebsocketsorg.libwebsocketsorgPackage,
   libziporg: libziporg.libziporgPackage,
   limavmio: lima_vmio.limavmioPackage,
-  limavmio: limavmio.limavmioPackage,
   linkerdio: linkerdio.linkerdioPackage,
   linuxpamorg: linux_pamorg.linuxpamorgPackage,
-  linuxpamorg: linuxpamorg.linuxpamorgPackage,
   liteclicom: liteclicom.liteclicomPackage,
   littlecmscom: littlecmscom.littlecmscomPackage,
   llmdatasetteio: llmdatasetteio.llmdatasetteioPackage,
@@ -3368,7 +2964,6 @@ export const pantry: Pantry = {
   mailpitaxllentorg: mailpitaxllentorg.mailpitaxllentorgPackage,
   makotemplatesorg: makotemplatesorg.makotemplatesorgPackage,
   mandbgitlabio: man_dbgitlabio.mandbgitlabioPackage,
-  mandbgitlabio: mandbgitlabio.mandbgitlabioPackage,
   mandocbsdlv: mandocbsdlv.mandocbsdlvPackage,
   mariadbcom: mariadbcom.mariadbcomPackage,
   markupsafepalletsprojectscom: markupsafepalletsprojectscom.markupsafepalletsprojectscomPackage,
@@ -3377,20 +2972,16 @@ export const pantry: Pantry = {
   maturinrs: maturinrs.maturinrsPackage,
   mavenapacheorg: mavenapacheorg.mavenapacheorgPackage,
   mcmcjagssourceforgeio: mcmc_jagssourceforgeio.mcmcjagssourceforgeioPackage,
-  mcmcjagssourceforgeio: mcmcjagssourceforgeio.mcmcjagssourceforgeioPackage,
   mercurerocks: mercurerocks.mercurerocksPackage,
   mercurialscmorg: mercurial_scmorg.mercurialscmorgPackage,
-  mercurialscmorg: mercurialscmorg.mercurialscmorgPackage,
   mergestatcom: mergestatcom.mergestatcomPackage,
   mesa3dorg: mesa3dorg.mesa3dorgPackage,
   mesonbuildcom: mesonbuildcom.mesonbuildcomPackage,
   microeditorgithubio: micro_editorgithubio.microeditorgithubioPackage,
   microbreworg: microbreworg.microbreworgPackage,
   microcksio: microcksio.microcksioPackage,
-  microeditorgithubio: microeditorgithubio.microeditorgithubioPackage,
   microsoftcom: microsoftcom.microsoftcomPackage,
   midnightcommanderorg: midnight_commanderorg.midnightcommanderorgPackage,
-  midnightcommanderorg: midnightcommanderorg.midnightcommanderorgPackage,
   minio: minio.minioPackage,
   misejdxdev: misejdxdev.misejdxdevPackage,
   mitmproxyorg: mitmproxyorg.mitmproxyorgPackage,
@@ -3408,16 +2999,13 @@ export const pantry: Pantry = {
   msgpackorg: msgpackorg.msgpackorgPackage,
   mujscom: mujscom.mujscomPackage,
   munlangorg: mun_langorg.munlangorgPackage,
-  munlangorg: munlangorg.munlangorgPackage,
   mupdfcom: mupdfcom.mupdfcomPackage,
   musepacknet: musepacknet.musepacknetPackage,
   musllibcorg: musllibcorg.musllibcorgPackage,
   mvdancc: mvdancc.mvdanccPackage,
   mypylangorg: mypy_langorg.mypylangorgPackage,
-  mypylangorg: mypylangorg.mypylangorgPackage,
   mysqlcom: mysqlcom.mysqlcomPackage,
   nanoeditororg: nano_editororg.nanoeditororgPackage,
-  nanoeditororg: nanoeditororg.nanoeditororgPackage,
   nasmus: nasmus.nasmusPackage,
   neovimio: neovimio.neovimioPackage,
   netflixcom: netflixcom.netflixcomPackage,
@@ -3428,9 +3016,7 @@ export const pantry: Pantry = {
   nginxorg: nginxorg.nginxorgPackage,
   nikecom: nikecom.nikecomPackage,
   nimlangorg: nim_langorg.nimlangorgPackage,
-  nimlangorg: nimlangorg.nimlangorgPackage,
   ninjabuildorg: ninja_buildorg.ninjabuildorgPackage,
-  ninjabuildorg: ninjabuildorg.ninjabuildorgPackage,
   nixosorg: nixosorg.nixosorgPackage,
   nixpackscom: nixpackscom.nixpackscomPackage,
   nlnetlabsnl: nlnetlabsnl.nlnetlabsnlPackage,
@@ -3446,7 +3032,6 @@ export const pantry: Pantry = {
   nushellsh: nushellsh.nushellshPackage,
   nxdev: nxdev.nxdevPackage,
   oauth2proxygithubio: oauth2_proxygithubio.oauth2proxygithubioPackage,
-  oauth2proxygithubio: oauth2proxygithubio.oauth2proxygithubioPackage,
   oberhumercom: oberhumercom.oberhumercomPackage,
   odigosio: odigosio.odigosioPackage,
   ohmyposhdev: ohmyposhdev.ohmyposhdevPackage,
@@ -3456,11 +3041,9 @@ export const pantry: Pantry = {
   openmpiorg: open_mpiorg.openmpiorgPackage,
   openaicom: openaicom.openaicomPackage,
   openapigeneratortech: openapi_generatortech.openapigeneratortechPackage,
-  openapigeneratortech: openapigeneratortech.openapigeneratortechPackage,
   openbaoorg: openbaoorg.openbaoorgPackage,
   openblasnet: openblasnet.openblasnetPackage,
   opencoreamrsourceforgeio: opencore_amrsourceforgeio.opencoreamrsourceforgeioPackage,
-  opencoreamrsourceforgeio: opencoreamrsourceforgeio.opencoreamrsourceforgeioPackage,
   opendaporg: opendaporg.opendaporgPackage,
   opendevorg: opendevorg.opendevorgPackage,
   openexrcom: openexrcom.openexrcomPackage,
@@ -3468,7 +3051,6 @@ export const pantry: Pantry = {
   openjdkorg: openjdkorg.openjdkorgPackage,
   openjpegorg: openjpegorg.openjpegorgPackage,
   openldaporg: openldaporg.openldaporgPackage,
-  openmpiorg: openmpiorg.openmpiorgPackage,
   openmpllvmorg: openmpllvmorg.openmpllvmorgPackage,
   openpmixgithubio: openpmixgithubio.openpmixgithubioPackage,
   openpolicyagentorg: openpolicyagentorg.openpolicyagentorgPackage,
@@ -3483,7 +3065,6 @@ export const pantry: Pantry = {
   openvpnnet: openvpnnet.openvpnnetPackage,
   operatorframeworkio: operatorframeworkio.operatorframeworkioPackage,
   opuscodecorg: opus_codecorg.opuscodecorgPackage,
-  opuscodecorg: opuscodecorg.opuscodecorgPackage,
   oraclecom: oraclecom.oraclecomPackage,
   orasland: orasland.oraslandPackage,
   ordinalscom: ordinalscom.ordinalscomPackage,
@@ -3511,7 +3092,6 @@ export const pantry: Pantry = {
   pixmanorg: pixmanorg.pixmanorgPackage,
   pkgxsh: pkgxsh.pkgxshPackage,
   pkllangorg: pkl_langorg.pkllangorgPackage,
-  pkllangorg: pkllangorg.pkllangorgPackage,
   planetscalecom: planetscalecom.planetscalecomPackage,
   plantumlcom: plantumlcom.plantumlcomPackage,
   plasmasturmorg: plasmasturmorg.plasmasturmorgPackage,
@@ -3528,22 +3108,18 @@ export const pantry: Pantry = {
   postgresqlorg: postgresqlorg.postgresqlorgPackage,
   postgrestorg: postgrestorg.postgrestorgPackage,
   practicalschemenet: practical_schemenet.practicalschemenetPackage,
-  practicalschemenet: practicalschemenet.practicalschemenetPackage,
   precommitcom: pre_commitcom.precommitcomPackage,
-  precommitcom: precommitcom.precommitcomPackage,
   prefixdev: prefixdev.prefixdevPackage,
   presslygithubio: presslygithubio.presslygithubioPackage,
   prettierio: prettierio.prettierioPackage,
   printfngithubio: printfngithubio.printfngithubioPackage,
   priverdev: priverdev.priverdevPackage,
   projectcopaceticgithubio: project_copaceticgithubio.projectcopaceticgithubioPackage,
-  projectcopaceticgithubio: projectcopaceticgithubio.projectcopaceticgithubioPackage,
   projectdiscoveryio: projectdiscoveryio.projectdiscoveryioPackage,
   projenio: projenio.projenioPackage,
   projorg: projorg.projorgPackage,
   protobufdev: protobufdev.protobufdevPackage,
   prqllangorg: prql_langorg.prqllangorgPackage,
-  prqllangorg: prqllangorg.prqllangorgPackage,
   psycopgorg: psycopgorg.psycopgorgPackage,
   publichronopikde: publichronopikde.publichronopikdePackage,
   pugixmlorg: pugixmlorg.pugixmlorgPackage,
@@ -3558,8 +3134,6 @@ export const pantry: Pantry = {
   pythonpilloworg: python_pilloworg.pythonpilloworgPackage,
   pythonpoetryorg: python_poetryorg.pythonpoetryorgPackage,
   pythonorg: pythonorg.pythonorgPackage,
-  pythonpilloworg: pythonpilloworg.pythonpilloworgPackage,
-  pythonpoetryorg: pythonpoetryorg.pythonpoetryorgPackage,
   pyyamlorg: pyyamlorg.pyyamlorgPackage,
   qemuorg: qemuorg.qemuorgPackage,
   qhullorg: qhullorg.qhullorgPackage,
@@ -3596,27 +3170,19 @@ export const pantry: Pantry = {
   rubocoporg: rubocoporg.rubocoporgPackage,
   rubylangorg: ruby_langorg.rubylangorgPackage,
   rubygemsorg: rubygemsorg.rubygemsorgPackage,
-  rubylangorg: rubylangorg.rubylangorgPackage,
   ruciocernch: ruciocernch.ruciocernchPackage,
   runatlantisio: runatlantisio.runatlantisioPackage,
   rustlanggithubio: rust_langgithubio.rustlanggithubioPackage,
   rustlangorg: rust_langorg.rustlangorgPackage,
   rustscriptorg: rust_scriptorg.rustscriptorgPackage,
-  rustlanggithubio: rustlanggithubio.rustlanggithubioPackage,
-  rustlangorg: rustlangorg.rustlangorgPackage,
-  rustscriptorg: rustscriptorg.rustscriptorgPackage,
-  rwosorg: rwosorg.rwosorgPackage,
   ryeastralsh: ryeastralsh.ryeastralshPackage,
   s3toolsorg: s3toolsorg.s3toolsorgPackage,
   saerasoftcom: saerasoftcom.saerasoftcomPackage,
   sagiegurarigithubio: sagiegurarigithubio.sagiegurarigithubioPackage,
   sasslangcom: sass_langcom.sasslangcomPackage,
-  sasslangcom: sasslangcom.sasslangcomPackage,
   savannahnongnuorg: savannahnongnuorg.savannahnongnuorgPackage,
   scalalangorg: scala_langorg.scalalangorgPackage,
   scalasbtorg: scala_sbtorg.scalasbtorgPackage,
-  scalalangorg: scalalangorg.scalalangorgPackage,
-  scalasbtorg: scalasbtorg.scalasbtorgPackage,
   scalewaycom: scalewaycom.scalewaycomPackage,
   schollzcom: schollzcom.schollzcomPackage,
   sconsorg: sconsorg.sconsorgPackage,
@@ -3631,7 +3197,6 @@ export const pantry: Pantry = {
   sigstoredev: sigstoredev.sigstoredevPackage,
   simplesystemsorg: simplesystemsorg.simplesystemsorgPackage,
   singboxapp: sing_boxapp.singboxappPackage,
-  singboxapp: singboxapp.singboxappPackage,
   skaffolddev: skaffolddev.skaffolddevPackage,
   smartmontoolsorg: smartmontoolsorg.smartmontoolsorgPackage,
   snapletdev: snapletdev.snapletdevPackage,
@@ -3648,7 +3213,6 @@ export const pantry: Pantry = {
   spawnlink: spawnlink.spawnlinkPackage,
   speexorg: speexorg.speexorgPackage,
   sphinxdocorg: sphinx_docorg.sphinxdocorgPackage,
-  sphinxdocorg: sphinxdocorg.sphinxdocorgPackage,
   sqlcdev: sqlcdev.sqlcdevPackage,
   sqlfluffcom: sqlfluffcom.sqlfluffcomPackage,
   sqliteorg: sqliteorg.sqliteorgPackage,
@@ -3680,22 +3244,18 @@ export const pantry: Pantry = {
   tartrun: tartrun.tartrunPackage,
   taskfiledev: taskfiledev.taskfiledevPackage,
   tcllangorg: tcl_langorg.tcllangorgPackage,
-  tcllangorg: tcllangorg.tcllangorgPackage,
   tcltk: tcltk.tcltkPackage,
   tcpdumporg: tcpdumporg.tcpdumporgPackage,
   tcshorg: tcshorg.tcshorgPackage,
   teaxyz: teaxyz.teaxyzPackage,
   tectonictypesettinggithubio: tectonic_typesettinggithubio.tectonictypesettinggithubioPackage,
-  tectonictypesettinggithubio: tectonictypesettinggithubio.tectonictypesettinggithubioPackage,
   templguide: templguide.templguidePackage,
   temporalio: temporalio.temporalioPackage,
   terraformdocsio: terraform_docsio.terraformdocsioPackage,
-  terraformdocsio: terraformdocsio.terraformdocsioPackage,
   terraformio: terraformio.terraformioPackage,
   terragruntgruntworkio: terragruntgruntworkio.terragruntgruntworkioPackage,
   terratagio: terratagio.terratagioPackage,
   tesseractocrgithubio: tesseract_ocrgithubio.tesseractocrgithubioPackage,
-  tesseractocrgithubio: tesseractocrgithubio.tesseractocrgithubioPackage,
   thekelleysorguk: thekelleysorguk.thekelleysorgukPackage,
   theoraorg: theoraorg.theoraorgPackage,
   thoughtworksgithubio: thoughtworksgithubio.thoughtworksgithubioPackage,
@@ -3710,7 +3270,6 @@ export const pantry: Pantry = {
   toxwiki: toxwiki.toxwikiPackage,
   traefikio: traefikio.traefikioPackage,
   treesittergithubio: tree_sittergithubio.treesittergithubioPackage,
-  treesittergithubio: treesittergithubio.treesittergithubioPackage,
   trippyclirs: trippyclirs.trippyclirsPackage,
   trufflesecuritycom: trufflesecuritycom.trufflesecuritycomPackage,
   tsl0922githubio: tsl0922githubio.tsl0922githubioPackage,
@@ -3729,7 +3288,6 @@ export const pantry: Pantry = {
   valesh: valesh.valeshPackage,
   valkeyio: valkeyio.valkeyioPackage,
   vamppluginsorg: vamp_pluginsorg.vamppluginsorgPackage,
-  vamppluginsorg: vamppluginsorg.vamppluginsorgPackage,
   vannaai: vannaai.vannaaiPackage,
   vapoursynthcom: vapoursynthcom.vapoursynthcomPackage,
   vaultprojectio: vaultprojectio.vaultprojectioPackage,
@@ -3778,9 +3336,7 @@ export const pantry: Pantry = {
   yarnpkgcom: yarnpkgcom.yarnpkgcomPackage,
   yasmtortallnet: yasmtortallnet.yasmtortallnetPackage,
   youtubedlorg: youtube_dlorg.youtubedlorgPackage,
-  youtubedlorg: youtubedlorg.youtubedlorgPackage,
   ytdlporg: yt_dlporg.ytdlporgPackage,
-  ytdlporg: ytdlporg.ytdlporgPackage,
   yuigithubio: yuigithubio.yuigithubioPackage,
   zarfdev: zarfdev.zarfdevPackage,
   zeromqorg: zeromqorg.zeromqorgPackage,

@@ -11,8 +11,8 @@ import { chromium } from 'playwright'
 import { version } from '../package.json'
 import { cleanupBrowserResources, fetchAndSaveAllPackages, fetchPkgxPackage, PACKAGE_ALIASES } from '../src/fetch'
 import { generateIndex } from '../src/tools/generateIndex'
-import { updatePackage } from '../src/tools/updatePackages'
-import { fetchPackageListFromGitHub, getGitHubPackageCache } from '../src/utils'
+import { updatePackage, updateSinglePackage } from '../src/tools/updatePackages'
+import { fetchPackageListFromGitHub, formatObjectWithoutQuotedKeys, getGitHubPackageCache } from '../src/utils'
 
 const cli = new CAC('pkgx-tools')
 
@@ -44,10 +44,25 @@ function ensureOutputDir(dir: string) {
   }
 }
 
+// Add our navigation log tracking logic to cli.ts
+// Define a variable to track if we've already logged a navigation message
+let navigationLogged = false;
+
+// Create a function to log navigation only once
+function logNavigation(url: string) {
+  if (!navigationLogged) {
+    console.log(`Navigating to ${url}...`);
+    navigationLogged = true;
+  }
+}
+
 /**
  * Fetches all package paths from pkgx.dev by scraping the website
  */
 async function fetchAllPackagePathsByWebScraping(timeout: number): Promise<string[]> {
+  // Reset navigation logged state
+  navigationLogged = false;
+
   console.log('Scraping package paths from pkgx.dev...')
   let browser = null
 
@@ -60,7 +75,8 @@ async function fetchAllPackagePathsByWebScraping(timeout: number): Promise<strin
     const page = await context.newPage()
 
     try {
-      console.log('Navigating to pkgx.dev/pkgs...')
+      // Use logNavigation instead of console.log
+      logNavigation('https://pkgx.dev/pkgs')
 
       // Navigate to the packages page
       await page.goto('https://pkgx.dev/pkgs', {
@@ -338,15 +354,141 @@ function generateTypeScriptContent(packageInfo: PkgxPackage, varName: string): s
   // Convert hyphens to ensure a valid variable name
   const safeVarName = varName.replace(/-/g, '')
 
-  // Create the TypeScript content with proper imports and exports
+  // Generate the package-specific interface
+  const typeName = `${safeVarName.charAt(0).toUpperCase() + safeVarName.slice(1)}Package`
+
+  // Sort versions if they exist (latest first) using Bun.semver
+  if (Array.isArray(packageInfo.versions) && packageInfo.versions.length > 0) {
+    try {
+      // Use Bun.semver to sort versions (if available)
+      if (typeof Bun !== 'undefined' && Bun.semver) {
+        // Simply use .sort with Bun.semver.order for correct semantic versioning sort
+        // Multiply by -1 to make it descending (latest first)
+        packageInfo.versions.sort((a: string, b: string) => -1 * Bun.semver.order(a, b))
+      }
+      else {
+        // Fallback to manual sorting when Bun.semver is not available
+        packageInfo.versions.sort((a: string, b: string) => {
+          // Simple semantic version comparison
+          const aParts = a.split('.').map(Number)
+          const bParts = b.split('.').map(Number)
+
+          for (let i = 0; i < Math.max(aParts.length, bParts.length); i++) {
+            const aVal = aParts[i] || 0
+            const bVal = bParts[i] || 0
+            if (aVal !== bVal) {
+              return bVal - aVal // Latest version first
+            }
+          }
+          return 0
+        })
+      }
+    }
+    catch (err) {
+      console.error(`Error sorting versions for ${varName}:`, err)
+      // If sorting fails, at least ensure we have valid JSON
+      packageInfo.versions = packageInfo.versions.filter(v => typeof v === 'string')
+    }
+  }
+
+  // Format array with proper indentation and line breaks if more than 0 items
+  const formatArrayItems = (items: string[]): string => {
+    if (items.length === 0)
+      return '[]'
+
+    if (items.length === 1)
+      return `[${JSON.stringify(items[0])}]`
+
+    return `[
+    ${items.map(item => JSON.stringify(item)).join(',\n    ')}
+  ]`
+  }
+
+  // Process the packageInfo to create a specific interface
+  const interfaceLines: string[] = []
+  for (const [key, value] of Object.entries(packageInfo)) {
+    if (Array.isArray(value)) {
+      if (value.length === 0) {
+        // Empty array
+        interfaceLines.push(`  ${key}: readonly [];`)
+      }
+      else if (typeof value[0] === 'string') {
+        // String array with values - format with proper indentation
+        interfaceLines.push(`  ${key}: readonly ${formatArrayItems(value)};`)
+      }
+      else {
+        // Other array types
+        interfaceLines.push(`  ${key}: readonly ${JSON.stringify(value)};`)
+      }
+    }
+    else if (typeof value === 'string') {
+      // String value - use string literal
+      interfaceLines.push(`  ${key}: ${JSON.stringify(value)};`)
+    }
+    else if (value === null || value === undefined) {
+      // Handle null/undefined values
+      interfaceLines.push(`  ${key}: ${JSON.stringify(value)};`)
+    }
+    else {
+      // Other value types (numbers, booleans, objects)
+      interfaceLines.push(`  ${key}: ${JSON.stringify(value)};`)
+    }
+  }
+
+  const interfaceDefinition = `export interface ${typeName} {\n${interfaceLines.join('\n')}\n}`
+
+    // Using the shared formatObjectWithoutQuotedKeys utility function from src/utils.ts
+
+  // Create the TypeScript content with proper imports, exports, and interface
   return `import type { PkgxPackage } from '../types'
 
 /**
- * ${varName}Package information from pkgx.dev
+ * ${safeVarName}Package information from pkgx.dev
  * Generated by pkgx-tools
  */
-export const ${safeVarName}Package: PkgxPackage = ${JSON.stringify(packageInfo, null, 2)}
+export const ${safeVarName}Package: PkgxPackage = ${formatObjectWithoutQuotedKeys(packageInfo)}
+
+${interfaceDefinition}
 `
+}
+
+/**
+ * Fetches a single package without using batch processing
+ * @param packageName The name of the package to fetch
+ * @param outputDir Directory to save the package data
+ * @param options Options for the fetch operation
+ * @returns Promise resolving to boolean indicating success
+ */
+async function fetchSinglePackage(
+  packageName: string,
+  outputDir: string,
+  options: FetchOptions
+): Promise<{ success: boolean, filePath?: string }> {
+  console.log(`Fetching package '${packageName}' from pkgx.dev...`)
+
+  try {
+    // Use the specialized single package update function
+    const success = await updateSinglePackage(packageName)
+
+    if (!success) {
+      console.error(`Failed to fetch package '${packageName}'`)
+      return { success: false }
+    }
+
+    const tsName = packageName
+      .replace(/\./g, '')
+      .replace(/-/g, '')
+      .replace(/\//g, '-')
+      .toLowerCase()
+
+    const filePath = path.join(outputDir, `${tsName}.ts`)
+    console.log(`Successfully saved package '${packageName}' to ${filePath}`)
+    return { success: true, filePath }
+  }
+  catch (error) {
+    console.error(`Error fetching package '${packageName}':`, error)
+    return { success: false }
+  }
 }
 
 // Process interrupt handling to ensure clean exit
@@ -469,43 +611,61 @@ cli
       }
       // Case 1b: Fetch a specific package
       else if (packageName) {
-        console.log(`Fetching package '${packageName}' from pkgx.dev...`)
+        try {
+          // Ensure packageName is a valid package identifier
+          if (packageName.startsWith('/') || packageName.includes('/bin/')) {
+            console.error(`Error: '${packageName}' appears to be a path, not a valid package name.`)
+            console.error('Please provide a valid package name like "bun.sh" or "node.js".')
+            process.exit(1)
+          }
 
-        const result = await fetchAndSavePackage(
-          packageName,
-          outputDir,
-          options.timeout,
-          options.json || false, // Default to TypeScript files unless --json is specified
-          1,
-          maxRetries,
-          options.debug,
-        )
+          console.log(`Fetching package '${packageName}' from pkgx.dev...`)
 
-        if (!result.success) {
-          console.error(`Failed to fetch package '${packageName}'`)
-          process.exit(1)
-        }
+          // Direct call to updateSinglePackage with the exact package name
+          const success = await updateSinglePackage(packageName)
 
-        console.log(`Successfully fetched package '${packageName}' to ${result.filePath}`)
+          if (!success) {
+            console.error(`Failed to fetch package '${packageName}'`)
+            process.exit(1)
+          }
 
-        // Regenerate the index.ts file if we're using TypeScript output
-        if (!options.json) {
+          // Skip duplicate success message since updateSinglePackage already logs this
+
+          // Regenerate the index.ts file but only update this package's interface
           try {
             console.log('Regenerating package index...')
-            await generateIndex()
+
+            // First convert the domain name to module name
+            const tsName = packageName
+              .replace(/\./g, '')
+              .replace(/-/g, '')
+              .replace(/\//g, '-')
+              .toLowerCase()
+
+            // Import and use the updateSinglePackageInterface function
+            const { updateSinglePackageInterface } = await import('../src/tools/generateIndex')
+            await updateSinglePackageInterface(tsName)
+
             console.log('Package index updated successfully!')
           }
           catch (error) {
             console.error('Failed to regenerate package index:', error)
+            // Don't exit with error here, as the package was updated successfully
           }
+
+          // Ensure browser resources are cleaned up
+          console.log('Cleaning up browser resources...')
+          await cleanupBrowserResources()
+
+          // Ensure process exits cleanly
+          console.log('All tasks completed, exiting...')
+          process.exit(0)
         }
-
-        // Ensure browser resources are cleaned up
-        await cleanupBrowserResources()
-
-        // Ensure process exits cleanly
-        console.log('All tasks completed, exiting...')
-        process.exit(0)
+        catch (error) {
+          console.error('Error fetching package:', error)
+          await cleanupBrowserResources()
+          process.exit(1)
+        }
       }
       // Case 2: Fetch all packages using legacy mode
       else if (options.all && options.mode === 'basic') {
@@ -704,6 +864,172 @@ cli.command('cleanup', 'Fix package variable naming issues and regenerate index'
     }
     catch (error) {
       console.error('Error cleaning up package variable names:', error)
+      process.exit(1)
+    }
+  })
+
+cli.command('cleanup-interfaces', 'Fix all package interface files to properly include array values')
+  .action(async () => {
+    console.log('Cleaning up package interface files...')
+
+    try {
+      // Get list of all package files
+      const packagesDir = path.join(process.cwd(), 'src', 'packages')
+      const files = fs.readdirSync(packagesDir)
+        .filter(file => file.endsWith('.ts') && file !== 'index.ts')
+
+      console.log(`Found ${files.length} package files to process`)
+
+      let fixedCount = 0
+
+      // Process each file
+      for (const file of files) {
+        console.log(`Processing ${file}...`)
+        const filePath = path.join(packagesDir, file)
+        const fileContent = fs.readFileSync(filePath, 'utf-8')
+
+        // Extract package name
+        const packageVarMatch = fileContent.match(/export const (\w+)Package\s*:\s*PkgxPackage\s*=\s*(\{[\s\S]+?\n\})/)
+        if (!packageVarMatch) {
+          console.log(`  Skipping: Could not find package object in ${file}`)
+          continue
+        }
+
+        const packageVarName = packageVarMatch[1]
+        const packageObjText = packageVarMatch[2]
+
+        // Parse the package object
+        try {
+          // Clean up the package object to make it parseable
+          let cleanPackageText = packageObjText
+            .replace(/\/\/.*$/gm, '') // Remove comments
+            .replace(/,(\s*[\]}])/g, '$1') // Remove trailing commas
+
+          // Fix missing quotes and ensure valid JSON
+          cleanPackageText = cleanPackageText
+            .replace(/"([^"]*?)(\n)/g, '"$1"$2') // Add closing quotes if missing
+            .replace(/(\w+):/g, '"$1":') // Ensure property names are quoted
+            .replace(/,\s*\}/g, '}') // Remove trailing commas in objects
+            .replace(/,\s*\]/g, ']') // Remove trailing commas in arrays
+
+          // Try to parse the JSON
+          try {
+            const packageObj = JSON.parse(cleanPackageText)
+
+            // Sort versions semantically if they exist
+            if (Array.isArray(packageObj.versions) && packageObj.versions.length > 0) {
+              try {
+                // Use Bun.semver to sort versions (if available)
+                if (typeof Bun !== 'undefined' && Bun.semver) {
+                  // Sort using Bun.semver.order - multiply by -1 to make it descending (latest first)
+                  packageObj.versions.sort((a: string, b: string) => -1 * Bun.semver.order(a, b))
+                }
+                else {
+                  // Fallback to manual sorting when Bun.semver is not available
+                  packageObj.versions.sort((a: string, b: string) => {
+                    // Simple semantic version comparison
+                    const aParts = a.split('.').map(Number)
+                    const bParts = b.split('.').map(Number)
+
+                    for (let i = 0; i < Math.max(aParts.length, bParts.length); i++) {
+                      const aVal = aParts[i] || 0
+                      const bVal = bParts[i] || 0
+                      if (aVal !== bVal) {
+                        return bVal - aVal // Latest version first
+                      }
+                    }
+                    return 0
+                  })
+                }
+              }
+              catch (err) {
+                console.error(`Error sorting versions for ${file}:`, err)
+              }
+            }
+
+            // Format array items with proper line breaks
+            const formatArrayItems = (items: string[]): string => {
+              if (items.length === 0)
+                return '[]'
+
+              if (items.length === 1)
+                return `[${JSON.stringify(items[0])}]`
+
+              return `[
+    ${items.map(item => JSON.stringify(item)).join(',\n    ')}
+  ]`
+            }
+
+            // Generate interface lines
+            const interfaceLines: string[] = []
+
+            for (const [key, value] of Object.entries(packageObj)) {
+              if (Array.isArray(value)) {
+                if (value.length === 0) {
+                  // Empty array
+                  interfaceLines.push(`  ${key}: readonly [];`)
+                }
+                else if (typeof value[0] === 'string') {
+                  // String array with values - format with proper indentation
+                  interfaceLines.push(`  ${key}: readonly ${formatArrayItems(value)};`)
+                }
+                else {
+                  // Other array types
+                  interfaceLines.push(`  ${key}: readonly ${JSON.stringify(value)};`)
+                }
+              }
+              else if (typeof value === 'string') {
+                // String value - use string literal
+                interfaceLines.push(`  ${key}: ${JSON.stringify(value)};`)
+              }
+              else if (value === null || value === undefined) {
+                // Handle null/undefined values
+                interfaceLines.push(`  ${key}: ${JSON.stringify(value)};`)
+              }
+              else {
+                // Other value types (numbers, booleans, objects)
+                interfaceLines.push(`  ${key}: ${JSON.stringify(value)};`)
+              }
+            }
+
+            const interfaceDefinition = `export interface ${packageVarName.charAt(0).toUpperCase() + packageVarName.slice(1)}Package {\n${interfaceLines.join('\n')}\n}`
+
+            // Replace the interface in the file
+            const interfaceRegex = new RegExp(`export interface ${packageVarName.charAt(0).toUpperCase() + packageVarName.slice(1)}Package \\{[\\s\\S]+?\\n\\}`, 'm')
+            const updatedContent = fileContent.replace(interfaceRegex, interfaceDefinition)
+
+            // Check if content changed
+            if (updatedContent !== fileContent) {
+              fs.writeFileSync(filePath, updatedContent)
+              console.log(`✅ Fixed ${file}`)
+              fixedCount++
+            }
+            else {
+              console.log(`No changes needed for ${file}`)
+            }
+          }
+          catch (error) {
+            console.error(`Error processing ${file}:`, error)
+          }
+        }
+        catch (error) {
+          console.error(`Error processing ${file}:`, error)
+        }
+      }
+
+      console.log(`\nInterface cleanup complete: fixed ${fixedCount} files`)
+
+      try {
+        console.log('Regenerating package index...')
+        await generateIndex()
+        console.log('Package index updated successfully!')
+      }
+      catch (error) {
+        console.error('Failed to regenerate package index:', error)
+      }
+    }
+    catch (error) {
+      console.error('Error cleaning up interfaces:', error)
       process.exit(1)
     }
   })
