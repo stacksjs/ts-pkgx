@@ -19,6 +19,7 @@ export const astralshuvPackage: PkgxPackage = {
   companions: ["python.org"],
   dependencies: ["libgit2.org~1.7"],
   versions: [
+    "0.7.7",
     "0.7.6",
     "0.7.5",
     "0.7.4",

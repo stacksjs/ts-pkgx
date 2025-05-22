@@ -16,6 +16,7 @@ export const astralshruffPackage: PkgxPackage = {
   companions: [],
   dependencies: [],
   versions: [
+    "0.11.11",
     "0.11.10",
     "0.11.9",
     "0.11.8",

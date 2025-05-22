@@ -392,6 +392,7 @@ export const awsamazoncomcliPackage: PkgxPackage = {
     "2.11.7",
     "2.10.4",
     "2.10.3",
+    "1.40.21",
     "1.40.20",
     "1.40.19",
     "1.40.18",
