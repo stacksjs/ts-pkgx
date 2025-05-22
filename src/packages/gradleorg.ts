@@ -16,6 +16,7 @@ export const gradleorgPackage: PkgxPackage = {
   companions: [],
   dependencies: ["openjdk.org"],
   versions: [
+    "8.14.1",
     "8.14.0",
     "8.13.0",
     "8.12.1",

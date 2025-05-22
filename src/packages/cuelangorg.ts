@@ -16,6 +16,7 @@ export const cuelangorgPackage: PkgxPackage = {
   companions: [],
   dependencies: [],
   versions: [
+    "0.13.0",
     "0.12.1",
     "0.12.0",
     "0.11.2",
