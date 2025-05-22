@@ -154,14 +154,53 @@ export interface ${varName.charAt(0).toUpperCase() + varName.slice(1).replace(/P
     // Get package variable name
     const varName = getPackageExportName(tsName)
 
+    // Create the interface name - should match the existing format
+    const interfaceName = `${varName.charAt(0).toUpperCase() + varName.slice(1).replace(/Package$/, '').replace(/-/g, '')}Package`
+
     // Create new package object content using our formatter
     const newPackageContent = formatObjectWithoutQuotedKeys(packageInfo)
 
-    // Replace the package object in the file
-    const updatedContent = existingContent.replace(
+    // Create the new interface content
+    const newInterfaceContent = `export interface ${interfaceName} {
+  name: ${JSON.stringify(packageInfo.name)};
+  domain: ${JSON.stringify(packageInfo.domain)};
+  description: ${JSON.stringify(packageInfo.description)};
+  packageYmlUrl: ${JSON.stringify(packageInfo.packageYmlUrl || '')};
+  homepageUrl: ${JSON.stringify(packageInfo.homepageUrl || '')};
+  githubUrl: ${JSON.stringify(packageInfo.githubUrl || '')};
+  installCommand: ${JSON.stringify(packageInfo.installCommand)};
+  programs: readonly ${Array.isArray(packageInfo.programs) && packageInfo.programs.length > 0
+    ? `[${packageInfo.programs.map(p => JSON.stringify(p)).join(', ')}]`
+    : '[]'};
+  companions: readonly ${Array.isArray(packageInfo.companions) && packageInfo.companions.length > 0
+    ? `[${packageInfo.companions.map(c => JSON.stringify(c)).join(', ')}]`
+    : '[]'};
+  dependencies: readonly ${Array.isArray(packageInfo.dependencies) && packageInfo.dependencies.length > 0
+    ? `[${packageInfo.dependencies.map(d => JSON.stringify(d)).join(', ')}]`
+    : '[]'};
+  versions: readonly ${Array.isArray(packageInfo.versions) && packageInfo.versions.length > 0
+    ? `[${packageInfo.versions.map(v => JSON.stringify(v)).join(', ')}]`
+    : '[]'}${packageInfo.fullPath ? `;
+  fullPath: ${JSON.stringify(packageInfo.fullPath || packageName)}` : ''}
+}`
+
+    // First, remove all duplicated interface declarations from the file
+    let cleanedContent = existingContent.replace(
+      new RegExp(`export interface ${interfaceName} {[\\s\\S]+?\\n\\}`, 'gm'),
+      ''
+    );
+
+    // Replace the package object in the cleaned file
+    let updatedContent = cleanedContent.replace(
       new RegExp(`export const ${varName}[^{]+{[\\s\\S]+?\\n\\}`, 'm'),
-      `export const ${varName}: PkgxPackage = ${newPackageContent}`,
-    )
+      `export const ${varName}: PkgxPackage = ${newPackageContent}`
+    );
+
+    // Add the interface definition after the constant
+    updatedContent = updatedContent.replace(
+      new RegExp(`export const ${varName}[^{]+{[\\s\\S]+?\\n\\}`, 'm'),
+      `export const ${varName}: PkgxPackage = ${newPackageContent}\n\n${newInterfaceContent}`
+    );
 
     // Check if content actually changed
     if (updatedContent !== existingContent) {
@@ -297,14 +336,53 @@ export interface ${varName.charAt(0).toUpperCase() + varName.slice(1).replace(/P
     // Get package variable name
     const varName = getPackageExportName(tsName)
 
+    // Create the interface name - should match the existing format
+    const interfaceName = `${varName.charAt(0).toUpperCase() + varName.slice(1).replace(/Package$/, '').replace(/-/g, '')}Package`
+
     // Create new package object content using our formatter
     const newPackageContent = formatObjectWithoutQuotedKeys(packageInfo)
 
-    // Replace the package object in the file
-    const updatedContent = existingContent.replace(
+    // Create the new interface content
+    const newInterfaceContent = `export interface ${interfaceName} {
+  name: ${JSON.stringify(packageInfo.name)};
+  domain: ${JSON.stringify(packageInfo.domain)};
+  description: ${JSON.stringify(packageInfo.description)};
+  packageYmlUrl: ${JSON.stringify(packageInfo.packageYmlUrl || '')};
+  homepageUrl: ${JSON.stringify(packageInfo.homepageUrl || '')};
+  githubUrl: ${JSON.stringify(packageInfo.githubUrl || '')};
+  installCommand: ${JSON.stringify(packageInfo.installCommand)};
+  programs: readonly ${Array.isArray(packageInfo.programs) && packageInfo.programs.length > 0
+    ? `[${packageInfo.programs.map(p => JSON.stringify(p)).join(', ')}]`
+    : '[]'};
+  companions: readonly ${Array.isArray(packageInfo.companions) && packageInfo.companions.length > 0
+    ? `[${packageInfo.companions.map(c => JSON.stringify(c)).join(', ')}]`
+    : '[]'};
+  dependencies: readonly ${Array.isArray(packageInfo.dependencies) && packageInfo.dependencies.length > 0
+    ? `[${packageInfo.dependencies.map(d => JSON.stringify(d)).join(', ')}]`
+    : '[]'};
+  versions: readonly ${Array.isArray(packageInfo.versions) && packageInfo.versions.length > 0
+    ? `[${packageInfo.versions.map(v => JSON.stringify(v)).join(', ')}]`
+    : '[]'}${packageInfo.fullPath ? `;
+  fullPath: ${JSON.stringify(packageInfo.fullPath || packageName)}` : ''}
+}`
+
+    // First, remove all duplicated interface declarations from the file
+    let cleanedContent = existingContent.replace(
+      new RegExp(`export interface ${interfaceName} {[\\s\\S]+?\\n\\}`, 'gm'),
+      ''
+    );
+
+    // Replace the package object in the cleaned file
+    let updatedContent = cleanedContent.replace(
       new RegExp(`export const ${varName}[^{]+{[\\s\\S]+?\\n\\}`, 'm'),
-      `export const ${varName}: PkgxPackage = ${newPackageContent}`,
-    )
+      `export const ${varName}: PkgxPackage = ${newPackageContent}`
+    );
+
+    // Add the interface definition after the constant
+    updatedContent = updatedContent.replace(
+      new RegExp(`export const ${varName}[^{]+{[\\s\\S]+?\\n\\}`, 'm'),
+      `export const ${varName}: PkgxPackage = ${newPackageContent}\n\n${newInterfaceContent}`
+    );
 
     // Check if content actually changed
     if (updatedContent !== existingContent) {
