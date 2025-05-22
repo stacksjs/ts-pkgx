@@ -16,6 +16,7 @@ export const tartrunPackage: PkgxPackage = {
   companions: [],
   dependencies: [],
   versions: [
+    "2.27.0",
     "2.26.1",
     "2.26.0",
     "2.25.0",

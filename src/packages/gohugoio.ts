@@ -16,6 +16,7 @@ export const gohugoioPackage: PkgxPackage = {
   companions: [],
   dependencies: [],
   versions: [
+    "0.147.5",
     "0.147.4",
     "0.147.3",
     "0.147.2",
