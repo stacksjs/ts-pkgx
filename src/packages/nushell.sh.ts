@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const nushellshPackage = {
+  name: "nu" as const,
+  domain: "nushell.sh" as const,
+  description: "Modern shell for the GitHub era" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nushell.sh/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) nu" as const,
   programs: [
     "nu",
   ] as const,
@@ -56,13 +60,7 @@ export const nushellshPackage = {
     "0.73.0",
     "0.72.1",
   ] as const,
-  name: "nushell.sh" as const,
-  domain: "nushell.sh" as const,
-  description: "Package information for nushell.sh" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nushell.sh/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +nushell.sh -- $SHELL -i" as const,
+  fullPath: "nushell.sh" as const,
 }
 
 export type NushellshPackage = typeof nushellshPackage

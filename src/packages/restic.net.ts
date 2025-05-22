@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const resticnetPackage = {
+  name: "restic.net" as const,
+  domain: "restic.net" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx restic.net" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "restic.net" as const,
-  domain: "restic.net" as const,
-  description: "Package information for restic.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/restic.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +restic.net -- $SHELL -i" as const,
+  fullPath: "restic.net" as const,
 }
 
 export type ResticnetPackage = typeof resticnetPackage

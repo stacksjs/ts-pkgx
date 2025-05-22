@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const rarlabcomPackage = {
+  name: "unrar" as const,
+  domain: "rarlab.com" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rarlab.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) unrar" as const,
   programs: [
     "unrar",
   ] as const,
@@ -28,16 +32,10 @@ export const rarlabcomPackage = {
     "6.2.9",
     "6.2.8",
   ] as const,
+  fullPath: "rarlab.com" as const,
   aliases: [
     "unrar",
   ] as const,
-  name: "rarlab.com" as const,
-  domain: "rarlab.com" as const,
-  description: "Package information for rarlab.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rarlab.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +rarlab.com -- $SHELL -i" as const,
 }
 
 export type RarlabcomPackage = typeof rarlabcomPackage

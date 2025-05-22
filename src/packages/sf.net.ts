@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const sfnetPackage = {
+  name: "sf.net" as const,
+  domain: "sf.net" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx sf.net" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "sf.net" as const,
-  domain: "sf.net" as const,
-  description: "Package information for sf.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sf.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +sf.net -- $SHELL -i" as const,
+  fullPath: "sf.net" as const,
 }
 
 export type SfnetPackage = typeof sfnetPackage

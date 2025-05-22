@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const condaorgPackage = {
+  name: "conda" as const,
+  domain: "conda.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/conda.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) conda" as const,
   programs: [
     "conda",
   ] as const,
@@ -27,13 +31,7 @@ export const condaorgPackage = {
     "23.7.3",
     "23.7.2",
   ] as const,
-  name: "conda.org" as const,
-  domain: "conda.org" as const,
-  description: "Package information for conda.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/conda.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +conda.org -- $SHELL -i" as const,
+  fullPath: "conda.org" as const,
 }
 
 export type CondaorgPackage = typeof condaorgPackage

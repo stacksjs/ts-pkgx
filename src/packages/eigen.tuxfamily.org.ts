@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const eigentuxfamilyorgPackage = {
+  name: "eigen.tuxfamily.org" as const,
+  domain: "eigen.tuxfamily.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/eigen.tuxfamily.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -11,13 +15,7 @@ export const eigentuxfamilyorgPackage = {
   versions: [
     "3.4.0",
   ] as const,
-  name: "eigen.tuxfamily.org" as const,
-  domain: "eigen.tuxfamily.org" as const,
-  description: "Package information for eigen.tuxfamily.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/eigen.tuxfamily.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i" as const,
+  fullPath: "eigen.tuxfamily.org" as const,
 }
 
 export type EigentuxfamilyorgPackage = typeof eigentuxfamilyorgPackage

@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ghostgumcomauPackage = {
+  name: "ghostgum.com.au" as const,
+  domain: "ghostgum.com.au" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx ghostgum.com.au" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "ghostgum.com.au" as const,
-  domain: "ghostgum.com.au" as const,
-  description: "Package information for ghostgum.com.au" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ghostgum.com.au/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ghostgum.com.au -- $SHELL -i" as const,
+  fullPath: "ghostgum.com.au" as const,
 }
 
 export type GhostgumcomauPackage = typeof ghostgumcomauPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const depotdevPackage = {
+  name: "depot" as const,
+  domain: "depot.dev" as const,
+  description: "🖥️ Depot CLI, build your Docker images in the cloud" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/depot.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) depot" as const,
   programs: [
     "depot",
   ] as const,
@@ -45,13 +49,7 @@ export const depotdevPackage = {
     "2.70.0",
     "2.68.1",
   ] as const,
-  name: "depot.dev" as const,
-  domain: "depot.dev" as const,
-  description: "Package information for depot.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/depot.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +depot.dev -- $SHELL -i" as const,
+  fullPath: "depot.dev" as const,
 }
 
 export type DepotdevPackage = typeof depotdevPackage

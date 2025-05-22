@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const dozzledevPackage = {
+  name: "dozzle" as const,
+  domain: "dozzle.dev" as const,
+  description: "Realtime log viewer for docker containers." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dozzle.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) dozzle" as const,
   programs: [
     "dozzle",
   ] as const,
@@ -62,13 +66,7 @@ export const dozzledevPackage = {
     "8.5.3",
     "8.5.2",
   ] as const,
-  name: "dozzle.dev" as const,
-  domain: "dozzle.dev" as const,
-  description: "Package information for dozzle.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dozzle.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +dozzle.dev -- $SHELL -i" as const,
+  fullPath: "dozzle.dev" as const,
 }
 
 export type DozzledevPackage = typeof dozzledevPackage

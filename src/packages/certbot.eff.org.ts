@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const certbotefforgPackage = {
+  name: "certbot" as const,
+  domain: "certbot.eff.org" as const,
+  description: "Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/certbot.eff.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) certbot" as const,
   programs: [
     "certbot",
   ] as const,
@@ -28,13 +32,7 @@ export const certbotefforgPackage = {
     "2.7.0",
     "2.6.0",
   ] as const,
-  name: "certbot.eff.org" as const,
-  domain: "certbot.eff.org" as const,
-  description: "Package information for certbot.eff.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/certbot.eff.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +certbot.eff.org -- $SHELL -i" as const,
+  fullPath: "certbot.eff.org" as const,
 }
 
 export type CertbotefforgPackage = typeof certbotefforgPackage

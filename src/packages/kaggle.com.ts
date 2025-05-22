@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const kagglecomPackage = {
+  name: "kaggle" as const,
+  domain: "kaggle.com" as const,
+  description: "Official Kaggle API" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kaggle.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) kaggle" as const,
   programs: [
     "kaggle",
   ] as const,
@@ -16,13 +20,7 @@ export const kagglecomPackage = {
     "1.6.1",
     "1.5.16",
   ] as const,
-  name: "kaggle.com" as const,
-  domain: "kaggle.com" as const,
-  description: "Package information for kaggle.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kaggle.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +kaggle.com -- $SHELL -i" as const,
+  fullPath: "kaggle.com" as const,
 }
 
 export type KagglecomPackage = typeof kagglecomPackage

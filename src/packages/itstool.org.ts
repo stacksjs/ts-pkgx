@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const itstoolorgPackage = {
+  name: "itstool" as const,
+  domain: "itstool.org" as const,
+  description: "Translate XML with PO files using W3C Internationalization Tag Set rules" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/itstool.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) itstool" as const,
   programs: [
     "itstool",
   ] as const,
@@ -13,13 +17,7 @@ export const itstoolorgPackage = {
   versions: [
     "2.0.7",
   ] as const,
-  name: "itstool.org" as const,
-  domain: "itstool.org" as const,
-  description: "Package information for itstool.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/itstool.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +itstool.org -- $SHELL -i" as const,
+  fullPath: "itstool.org" as const,
 }
 
 export type ItstoolorgPackage = typeof itstoolorgPackage

@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mergestatcomPackage = {
+  name: "mergestat.com" as const,
+  domain: "mergestat.com" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx mergestat.com" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "mergestat.com" as const,
-  domain: "mergestat.com" as const,
-  description: "Package information for mergestat.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mergestat.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mergestat.com -- $SHELL -i" as const,
+  fullPath: "mergestat.com" as const,
 }
 
 export type MergestatcomPackage = typeof mergestatcomPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const getsopsioPackage = {
+  name: "sops" as const,
+  domain: "getsops.io" as const,
+  description: "Simple and flexible tool for managing secrets" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getsops.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) sops" as const,
   programs: [
     "sops",
   ] as const,
@@ -18,16 +22,10 @@ export const getsopsioPackage = {
     "3.9.0",
     "3.8.1",
   ] as const,
+  fullPath: "getsops.io" as const,
   aliases: [
     "sops",
   ] as const,
-  name: "getsops.io" as const,
-  domain: "getsops.io" as const,
-  description: "Package information for getsops.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getsops.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +getsops.io -- $SHELL -i" as const,
 }
 
 export type GetsopsioPackage = typeof getsopsioPackage

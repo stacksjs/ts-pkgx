@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const vercelcomPackage = {
+  name: "vercel.com" as const,
+  domain: "vercel.com" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx vercel.com" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "vercel.com" as const,
-  domain: "vercel.com" as const,
-  description: "Package information for vercel.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vercel.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +vercel.com -- $SHELL -i" as const,
+  fullPath: "vercel.com" as const,
 }
 
 export type VercelcomPackage = typeof vercelcomPackage

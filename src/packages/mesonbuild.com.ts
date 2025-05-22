@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mesonbuildcomPackage = {
+  name: "meson" as const,
+  domain: "mesonbuild.com" as const,
+  description: "Fast and user friendly build system" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mesonbuild.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) meson" as const,
   programs: [
     "meson",
   ] as const,
@@ -37,13 +41,7 @@ export const mesonbuildcomPackage = {
     "0.64.0",
     "0.63.3",
   ] as const,
-  name: "mesonbuild.com" as const,
-  domain: "mesonbuild.com" as const,
-  description: "Package information for mesonbuild.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mesonbuild.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mesonbuild.com -- $SHELL -i" as const,
+  fullPath: "mesonbuild.com" as const,
 }
 
 export type MesonbuildcomPackage = typeof mesonbuildcomPackage

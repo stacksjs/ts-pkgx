@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const bunshPackage = {
+  name: "bun" as const,
+  domain: "bun.sh" as const,
+  description: "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bun.sh/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i" as const,
   programs: [
     "bun",
     "bunx",
@@ -128,16 +132,10 @@ export const bunshPackage = {
     "0.5.9",
     "0.5.6",
   ] as const,
+  fullPath: "bun.sh" as const,
   aliases: [
     "bun",
   ] as const,
-  name: "bun.sh" as const,
-  domain: "bun.sh" as const,
-  description: "Package information for bun.sh" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bun.sh/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i" as const,
 }
 
 export type BunshPackage = typeof bunshPackage

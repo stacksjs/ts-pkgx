@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const nghttp2orgPackage = {
+  name: "nghttp2.org" as const,
+  domain: "nghttp2.org" as const,
+  description: "nghttp2 - HTTP/2 C Library and tools" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nghttp2.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -24,13 +28,7 @@ export const nghttp2orgPackage = {
     "1.52.0",
     "1.51.0",
   ] as const,
-  name: "nghttp2.org" as const,
-  domain: "nghttp2.org" as const,
-  description: "Package information for nghttp2.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nghttp2.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i" as const,
+  fullPath: "nghttp2.org" as const,
 }
 
 export type Nghttp2orgPackage = typeof nghttp2orgPackage

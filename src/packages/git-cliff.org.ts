@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gitclifforgPackage = {
+  name: "git-cliff" as const,
+  domain: "git-cliff.org" as const,
+  description: "A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/git-cliff.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) git-cliff" as const,
   programs: [
     "git-cliff",
   ] as const,
@@ -32,13 +36,7 @@ export const gitclifforgPackage = {
     "1.3.0",
     "1.2.0",
   ] as const,
-  name: "git/cliff.org" as const,
-  domain: "git/cliff.org" as const,
-  description: "Package information for git/cliff.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/git/cliff.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +git/cliff.org -- $SHELL -i" as const,
+  fullPath: "git-cliff.org" as const,
 }
 
 export type GitclifforgPackage = typeof gitclifforgPackage

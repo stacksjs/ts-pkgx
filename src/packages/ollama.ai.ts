@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ollamaaiPackage = {
+  name: "ollama" as const,
+  domain: "ollama.ai" as const,
+  description: "Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ollama.ai/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) ollama" as const,
   programs: [
     "ollama",
   ] as const,
@@ -105,13 +109,7 @@ export const ollamaaiPackage = {
     "0.0.18",
     "0.0.17",
   ] as const,
-  name: "ollama.ai" as const,
-  domain: "ollama.ai" as const,
-  description: "Package information for ollama.ai" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ollama.ai/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ollama.ai -- $SHELL -i" as const,
+  fullPath: "ollama.ai" as const,
 }
 
 export type OllamaaiPackage = typeof ollamaaiPackage

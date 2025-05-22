@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libsouporgPackage = {
+  name: "libsoup.org" as const,
+  domain: "libsoup.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libsoup.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +libsoup.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -29,13 +33,7 @@ export const libsouporgPackage = {
     "3.4.4",
     "3.2.3",
   ] as const,
-  name: "libsoup.org" as const,
-  domain: "libsoup.org" as const,
-  description: "Package information for libsoup.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libsoup.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libsoup.org -- $SHELL -i" as const,
+  fullPath: "libsoup.org" as const,
 }
 
 export type LibsouporgPackage = typeof libsouporgPackage

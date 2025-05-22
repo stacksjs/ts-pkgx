@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pytestorgPackage = {
+  name: "pytest" as const,
+  domain: "pytest.org" as const,
+  description: "The pytest framework makes it easy to write small tests, yet scales to support complex functional testing" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pytest.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pytest" as const,
   programs: [
     "pytest",
   ] as const,
@@ -36,13 +40,7 @@ export const pytestorgPackage = {
     "7.2.2",
     "7.1.0",
   ] as const,
-  name: "pytest.org" as const,
-  domain: "pytest.org" as const,
-  description: "Package information for pytest.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pytest.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pytest.org -- $SHELL -i" as const,
+  fullPath: "pytest.org" as const,
 }
 
 export type PytestorgPackage = typeof pytestorgPackage

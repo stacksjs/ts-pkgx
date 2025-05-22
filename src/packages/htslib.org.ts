@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const htsliborgPackage = {
+  name: "htslib.org" as const,
+  domain: "htslib.org" as const,
+  description: "C library for high-throughput sequencing data formats" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/htslib.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +htslib.org -- $SHELL -i" as const,
   programs: [
     "bgzip",
     "htsfile",
@@ -21,13 +25,7 @@ export const htsliborgPackage = {
     "1.19.0",
     "1.18.0",
   ] as const,
-  name: "htslib.org" as const,
-  domain: "htslib.org" as const,
-  description: "Package information for htslib.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/htslib.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +htslib.org -- $SHELL -i" as const,
+  fullPath: "htslib.org" as const,
 }
 
 export type HtsliborgPackage = typeof htsliborgPackage

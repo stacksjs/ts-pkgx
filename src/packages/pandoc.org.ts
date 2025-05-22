@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pandocorgPackage = {
+  name: "pandoc" as const,
+  domain: "pandoc.org" as const,
+  description: "Swiss-army knife of markup format conversion" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pandoc" as const,
   programs: [
     "pandoc",
   ] as const,
@@ -43,13 +47,7 @@ export const pandocorgPackage = {
     "3.1.10",
     "2.19.2",
   ] as const,
-  name: "pandoc.org" as const,
-  domain: "pandoc.org" as const,
-  description: "Package information for pandoc.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pandoc.org -- $SHELL -i" as const,
+  fullPath: "pandoc.org" as const,
 }
 
 export type PandocorgPackage = typeof pandocorgPackage

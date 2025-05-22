@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const wundergraphcomPackage = {
+  name: "wunderctl" as const,
+  domain: "wundergraph.com" as const,
+  description: "WunderGraph is a Backend for Frontend Framework to optimize frontend, fullstack and backend developer workflows through API Composition." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wundergraph.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) wunderctl" as const,
   programs: [
     "wunderctl",
   ] as const,
@@ -29,16 +33,10 @@ export const wundergraphcomPackage = {
     "0.169.3",
     "0.169.2",
   ] as const,
+  fullPath: "wundergraph.com" as const,
   aliases: [
     "wunderctl",
   ] as const,
-  name: "wundergraph.com" as const,
-  domain: "wundergraph.com" as const,
-  description: "Package information for wundergraph.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wundergraph.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +wundergraph.com -- $SHELL -i" as const,
 }
 
 export type WundergraphcomPackage = typeof wundergraphcomPackage

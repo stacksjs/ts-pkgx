@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const phpnetPackage = {
+  name: "php.net" as const,
+  domain: "php.net" as const,
+  description: "General-purpose scripting language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/php.net/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +php.net -- $SHELL -i" as const,
   programs: [
     "pear",
     "pecl",
@@ -119,16 +123,10 @@ export const phpnetPackage = {
     "8.0.28",
     "7.4.33",
   ] as const,
+  fullPath: "php.net" as const,
   aliases: [
     "php",
   ] as const,
-  name: "php.net" as const,
-  domain: "php.net" as const,
-  description: "Package information for php.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/php.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +php.net -- $SHELL -i" as const,
 }
 
 export type PhpnetPackage = typeof phpnetPackage

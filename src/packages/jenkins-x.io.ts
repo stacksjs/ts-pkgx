@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const jenkinsxioPackage = {
+  name: "Jenkins X" as const,
+  domain: "jenkins-x.io" as const,
+  description: "Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jenkins-x.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) jx" as const,
   programs: [
     "jx",
   ] as const,
@@ -64,16 +68,10 @@ export const jenkinsxioPackage = {
     "3.10.155",
     "3.10.154",
   ] as const,
+  fullPath: "jenkins-x.io" as const,
   aliases: [
     "jenkins x",
   ] as const,
-  name: "jenkins/x.io" as const,
-  domain: "jenkins/x.io" as const,
-  description: "Package information for jenkins/x.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jenkins/x.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +jenkins/x.io -- $SHELL -i" as const,
 }
 
 export type JenkinsxioPackage = typeof jenkinsxioPackage

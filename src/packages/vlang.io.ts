@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const vlangioPackage = {
+  name: "v" as const,
+  domain: "vlang.io" as const,
+  description: "Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vlang.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) v" as const,
   programs: [
     "v",
   ] as const,
@@ -23,13 +27,7 @@ export const vlangioPackage = {
     "0.3.4",
     "0.3.3",
   ] as const,
-  name: "vlang.io" as const,
-  domain: "vlang.io" as const,
-  description: "Package information for vlang.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vlang.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +vlang.io -- $SHELL -i" as const,
+  fullPath: "vlang.io" as const,
 }
 
 export type VlangioPackage = typeof vlangioPackage

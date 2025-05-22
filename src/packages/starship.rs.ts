@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const starshiprsPackage = {
+  name: "starship" as const,
+  domain: "starship.rs" as const,
+  description: "☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/starship.rs/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) starship" as const,
   programs: [
     "starship",
   ] as const,
@@ -30,13 +34,7 @@ export const starshiprsPackage = {
     "1.13.0",
     "1.12.0",
   ] as const,
-  name: "starship.rs" as const,
-  domain: "starship.rs" as const,
-  description: "Package information for starship.rs" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/starship.rs/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +starship.rs -- $SHELL -i" as const,
+  fullPath: "starship.rs" as const,
 }
 
 export type StarshiprsPackage = typeof starshiprsPackage

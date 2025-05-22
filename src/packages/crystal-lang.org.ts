@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const crystallangorgPackage = {
+  name: "crystal" as const,
+  domain: "crystal-lang.org" as const,
+  description: "Fast and statically typed, compiled language with Ruby-like syntax" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/crystal-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) crystal" as const,
   programs: [
     "crystal",
   ] as const,
@@ -41,13 +45,7 @@ export const crystallangorgPackage = {
     "1.11.0",
     "1.10.1",
   ] as const,
-  name: "crystal/lang.org" as const,
-  domain: "crystal/lang.org" as const,
-  description: "Package information for crystal/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/crystal/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +crystal/lang.org -- $SHELL -i" as const,
+  fullPath: "crystal-lang.org" as const,
 }
 
 export type CrystallangorgPackage = typeof crystallangorgPackage

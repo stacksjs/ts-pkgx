@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const kubecmcloudPackage = {
+  name: "kubecm" as const,
+  domain: "kubecm.cloud" as const,
+  description: "Manage your kubeconfig more easily." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kubecm.cloud/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) kubecm" as const,
   programs: [
     "kubecm",
   ] as const,
@@ -19,13 +23,7 @@ export const kubecmcloudPackage = {
     "0.29.0",
     "0.28.0",
   ] as const,
-  name: "kubecm.cloud" as const,
-  domain: "kubecm.cloud" as const,
-  description: "Package information for kubecm.cloud" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kubecm.cloud/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +kubecm.cloud -- $SHELL -i" as const,
+  fullPath: "kubecm.cloud" as const,
 }
 
 export type KubecmcloudPackage = typeof kubecmcloudPackage

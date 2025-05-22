@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const golangcilintrunPackage = {
+  name: "golangci-lint" as const,
+  domain: "golangci-lint.run" as const,
+  description: "Fast linters runner for Go" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/golangci-lint.run/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) golangci-lint" as const,
   programs: [
     "golangci-lint",
   ] as const,
@@ -61,13 +65,7 @@ export const golangcilintrunPackage = {
     "1.52.0",
     "1.51.2",
   ] as const,
-  name: "golangci/lint.run" as const,
-  domain: "golangci/lint.run" as const,
-  description: "Package information for golangci/lint.run" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/golangci/lint.run/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +golangci/lint.run -- $SHELL -i" as const,
+  fullPath: "golangci-lint.run" as const,
 }
 
 export type GolangcilintrunPackage = typeof golangcilintrunPackage

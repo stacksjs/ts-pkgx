@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const denolandPackage = {
+  name: "deno" as const,
+  domain: "deno.land" as const,
+  description: "A modern runtime for JavaScript and TypeScript." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/deno.land/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) deno" as const,
   programs: [
     "deno",
   ] as const,
@@ -140,16 +144,10 @@ export const denolandPackage = {
     "1.28.0",
     "1.26.2",
   ] as const,
+  fullPath: "deno.land" as const,
   aliases: [
     "deno",
   ] as const,
-  name: "deno.land" as const,
-  domain: "deno.land" as const,
-  description: "Package information for deno.land" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/deno.land/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +deno.land -- $SHELL -i" as const,
 }
 
 export type DenolandPackage = typeof denolandPackage

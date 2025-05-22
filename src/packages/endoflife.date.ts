@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const endoflifedatePackage = {
+  name: "eol" as const,
+  domain: "endoflife.date" as const,
+  description: "CLI to show end-of-life dates for a number of products." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/endoflife.date/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) eol" as const,
   programs: [
     "eol",
   ] as const,
@@ -20,16 +24,10 @@ export const endoflifedatePackage = {
     "0.15.0",
     "0.14.0",
   ] as const,
+  fullPath: "endoflife.date" as const,
   aliases: [
     "eol",
   ] as const,
-  name: "endoflife.date" as const,
-  domain: "endoflife.date" as const,
-  description: "Package information for endoflife.date" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/endoflife.date/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +endoflife.date -- $SHELL -i" as const,
 }
 
 export type EndoflifedatePackage = typeof endoflifedatePackage

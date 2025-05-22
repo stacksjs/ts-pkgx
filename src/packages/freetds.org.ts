@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const freetdsorgPackage = {
+  name: "freetds.org" as const,
+  domain: "freetds.org" as const,
+  description: "Libraries to talk to Microsoft SQL Server and Sybase databases" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/freetds.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +freetds.org -- $SHELL -i" as const,
   programs: [
     "bsqldb",
     "bsqlodbc",
@@ -52,13 +56,7 @@ export const freetdsorgPackage = {
     "1.3.19",
     "1.3.18",
   ] as const,
-  name: "freetds.org" as const,
-  domain: "freetds.org" as const,
-  description: "Package information for freetds.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/freetds.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +freetds.org -- $SHELL -i" as const,
+  fullPath: "freetds.org" as const,
 }
 
 export type FreetdsorgPackage = typeof freetdsorgPackage

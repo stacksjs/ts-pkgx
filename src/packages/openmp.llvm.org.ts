@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openmpllvmorgPackage = {
+  name: "libomp" as const,
+  domain: "openmp.llvm.org" as const,
+  description: "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openmp.llvm.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +openmp.llvm.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -38,16 +42,10 @@ export const openmpllvmorgPackage = {
     "17.0.0",
     "16.0.6",
   ] as const,
+  fullPath: "openmp.llvm.org" as const,
   aliases: [
     "libomp",
   ] as const,
-  name: "openmp.llvm.org" as const,
-  domain: "openmp.llvm.org" as const,
-  description: "Package information for openmp.llvm.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openmp.llvm.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openmp.llvm.org -- $SHELL -i" as const,
 }
 
 export type OpenmpllvmorgPackage = typeof openmpllvmorgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ipythonorgPackage = {
+  name: "ipython" as const,
+  domain: "ipython.org" as const,
+  description: "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ipython.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i" as const,
   programs: [
     "ipython",
     "ipython3",
@@ -54,13 +58,7 @@ export const ipythonorgPackage = {
     "8.12.1",
     "8.12.0",
   ] as const,
-  name: "ipython.org" as const,
-  domain: "ipython.org" as const,
-  description: "Package information for ipython.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ipython.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i" as const,
+  fullPath: "ipython.org" as const,
 }
 
 export type IpythonorgPackage = typeof ipythonorgPackage

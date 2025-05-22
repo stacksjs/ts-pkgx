@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const exiftoolorgPackage = {
+  name: "exiftool" as const,
+  domain: "exiftool.org" as const,
+  description: "Perl lib for reading and writing EXIF metadata" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/exiftool.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) exiftool" as const,
   programs: [
     "exiftool",
   ] as const,
@@ -18,13 +22,7 @@ export const exiftoolorgPackage = {
     "12.70.0",
     "12.60.0",
   ] as const,
-  name: "exiftool.org" as const,
-  domain: "exiftool.org" as const,
-  description: "Package information for exiftool.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/exiftool.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +exiftool.org -- $SHELL -i" as const,
+  fullPath: "exiftool.org" as const,
 }
 
 export type ExiftoolorgPackage = typeof exiftoolorgPackage

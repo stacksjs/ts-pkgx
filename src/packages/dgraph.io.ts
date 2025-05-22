@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const dgraphioPackage = {
+  name: "dgraph" as const,
+  domain: "dgraph.io" as const,
+  description: "high-performance graph database for real-time use cases" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dgraph.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) dgraph" as const,
   programs: [
     "dgraph",
   ] as const,
@@ -19,13 +23,7 @@ export const dgraphioPackage = {
     "23.1.1",
     "23.1.0",
   ] as const,
-  name: "dgraph.io" as const,
-  domain: "dgraph.io" as const,
-  description: "Package information for dgraph.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dgraph.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +dgraph.io -- $SHELL -i" as const,
+  fullPath: "dgraph.io" as const,
 }
 
 export type DgraphioPackage = typeof dgraphioPackage

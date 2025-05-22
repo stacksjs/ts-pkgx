@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const boostorgPackage = {
+  name: "boost.org" as const,
+  domain: "boost.org" as const,
+  description: "Super-project for modularized Boost" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/boost.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +boost.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -17,13 +21,7 @@ export const boostorgPackage = {
     "1.82.0",
     "1.81.0",
   ] as const,
-  name: "boost.org" as const,
-  domain: "boost.org" as const,
-  description: "Package information for boost.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/boost.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +boost.org -- $SHELL -i" as const,
+  fullPath: "boost.org" as const,
 }
 
 export type BoostorgPackage = typeof boostorgPackage

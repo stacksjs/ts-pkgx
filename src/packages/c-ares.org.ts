@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const caresorgPackage = {
+  name: "c-ares.org" as const,
+  domain: "c-ares.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/c-ares.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +c-ares.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -35,13 +39,7 @@ export const caresorgPackage = {
     "1.19.1",
     "1.19.0",
   ] as const,
-  name: "c/ares.org" as const,
-  domain: "c/ares.org" as const,
-  description: "Package information for c/ares.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/c/ares.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +c/ares.org -- $SHELL -i" as const,
+  fullPath: "c-ares.org" as const,
 }
 
 export type CaresorgPackage = typeof caresorgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cythonorgPackage = {
+  name: "cython" as const,
+  domain: "cython.org" as const,
+  description: "Compiler for writing C extensions for the Python language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) cython" as const,
   programs: [
     "cython",
   ] as const,
@@ -30,13 +34,7 @@ export const cythonorgPackage = {
     "0.29.36",
     "0.29.35",
   ] as const,
-  name: "cython.org" as const,
-  domain: "cython.org" as const,
-  description: "Package information for cython.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cython.org -- $SHELL -i" as const,
+  fullPath: "cython.org" as const,
 }
 
 export type CythonorgPackage = typeof cythonorgPackage

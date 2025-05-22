@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const soliditylangorgPackage = {
+  name: "soliditylang.org" as const,
+  domain: "soliditylang.org" as const,
+  description: "Solidity, the Smart Contract Programming Language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/soliditylang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +soliditylang.org -- $SHELL -i" as const,
   programs: [
     "solc",
     "yul-phaser",
@@ -28,13 +32,7 @@ export const soliditylangorgPackage = {
     "0.8.18",
     "0.8.17",
   ] as const,
-  name: "soliditylang.org" as const,
-  domain: "soliditylang.org" as const,
-  description: "Package information for soliditylang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/soliditylang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +soliditylang.org -- $SHELL -i" as const,
+  fullPath: "soliditylang.org" as const,
 }
 
 export type SoliditylangorgPackage = typeof soliditylangorgPackage

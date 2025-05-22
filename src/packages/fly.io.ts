@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const flyioPackage = {
+  name: "fly" as const,
+  domain: "fly.io" as const,
+  description: "Command line tools for fly.io services" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fly.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +fly.io -- $SHELL -i" as const,
   programs: [
     "fly",
     "flyctl",
@@ -398,13 +402,7 @@ export const flyioPackage = {
     "0.0.550",
     "0.0.548",
   ] as const,
-  name: "fly.io" as const,
-  domain: "fly.io" as const,
-  description: "Package information for fly.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fly.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +fly.io -- $SHELL -i" as const,
+  fullPath: "fly.io" as const,
 }
 
 export type FlyioPackage = typeof flyioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const planetscalecomPackage = {
+  name: "pscale" as const,
+  domain: "planetscale.com" as const,
+  description: "The CLI for PlanetScale Database" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/planetscale.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pscale" as const,
   programs: [
     "pscale",
   ] as const,
@@ -74,16 +78,10 @@ export const planetscalecomPackage = {
     "0.162.0",
     "0.161.0",
   ] as const,
+  fullPath: "planetscale.com" as const,
   aliases: [
     "pscale",
   ] as const,
-  name: "planetscale.com" as const,
-  domain: "planetscale.com" as const,
-  description: "Package information for planetscale.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/planetscale.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +planetscale.com -- $SHELL -i" as const,
 }
 
 export type PlanetscalecomPackage = typeof planetscalecomPackage

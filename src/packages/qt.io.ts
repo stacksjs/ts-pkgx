@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const qtioPackage = {
+  name: "qt.io" as const,
+  domain: "qt.io" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/qt.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +qt.io -- $SHELL -i" as const,
   programs: [
     "balsam",
     "canbusutil",
@@ -94,13 +98,7 @@ export const qtioPackage = {
   versions: [
     "5.15.10",
   ] as const,
-  name: "qt.io" as const,
-  domain: "qt.io" as const,
-  description: "Package information for qt.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/qt.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +qt.io -- $SHELL -i" as const,
+  fullPath: "qt.io" as const,
 }
 
 export type QtioPackage = typeof qtioPackage

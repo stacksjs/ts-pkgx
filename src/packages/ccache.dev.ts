@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ccachedevPackage = {
+  name: "ccache" as const,
+  domain: "ccache.dev" as const,
+  description: "Object-file caching compiler wrapper" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ccache.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) ccache" as const,
   programs: [
     "ccache",
   ] as const,
@@ -22,13 +26,7 @@ export const ccachedevPackage = {
     "4.9.0",
     "4.8.3",
   ] as const,
-  name: "ccache.dev" as const,
-  domain: "ccache.dev" as const,
-  description: "Package information for ccache.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ccache.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ccache.dev -- $SHELL -i" as const,
+  fullPath: "ccache.dev" as const,
 }
 
 export type CcachedevPackage = typeof ccachedevPackage

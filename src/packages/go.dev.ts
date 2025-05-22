@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const godevPackage = {
+  name: "go.dev" as const,
+  domain: "go.dev" as const,
+  description: "The Go programming language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/go.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +go.dev -- $SHELL -i" as const,
   programs: [
     "go",
     "gofmt",
@@ -78,16 +82,10 @@ export const godevPackage = {
     "1.17.13",
     "1.16.15",
   ] as const,
+  fullPath: "go.dev" as const,
   aliases: [
     "go",
   ] as const,
-  name: "go.dev" as const,
-  domain: "go.dev" as const,
-  description: "Package information for go.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/go.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +go.dev -- $SHELL -i" as const,
 }
 
 export type GodevPackage = typeof godevPackage

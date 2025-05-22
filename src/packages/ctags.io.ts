@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ctagsioPackage = {
+  name: "ctags" as const,
+  domain: "ctags.io" as const,
+  description: "A maintained ctags implementation" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ctags.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) ctags" as const,
   programs: [
     "ctags",
   ] as const,
@@ -15,13 +19,7 @@ export const ctagsioPackage = {
   versions: [
     "6.1.0",
   ] as const,
-  name: "ctags.io" as const,
-  domain: "ctags.io" as const,
-  description: "Package information for ctags.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ctags.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ctags.io -- $SHELL -i" as const,
+  fullPath: "ctags.io" as const,
 }
 
 export type CtagsioPackage = typeof ctagsioPackage

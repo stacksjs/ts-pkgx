@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const solanacomPackage = {
+  name: "solana" as const,
+  domain: "solana.com" as const,
+  description: "Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/solana.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +solana.com -- $SHELL -i" as const,
   programs: [
     "solana",
     "solana-keygen",
@@ -105,13 +109,7 @@ export const solanacomPackage = {
     "1.14.19",
     "1.14.18",
   ] as const,
-  name: "solana.com" as const,
-  domain: "solana.com" as const,
-  description: "Package information for solana.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/solana.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +solana.com -- $SHELL -i" as const,
+  fullPath: "solana.com" as const,
 }
 
 export type SolanacomPackage = typeof solanacomPackage

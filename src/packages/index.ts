@@ -22,6 +22,7 @@ import * as apktoolorg from './apktool.org'
 import * as apollographqlcom from './apollographql.com'
 import * as appiumio from './appium.io'
 import * as applecom from './apple.com'
+import * as applecom_remote_cmds from './applecom-remote_cmds'
 import * as apptainerorg from './apptainer.org'
 import * as aquasecuritygithubio from './aquasecurity.github.io'
 import * as arduinogithubio from './arduino.github.io'
@@ -36,12 +37,16 @@ import * as assimporg from './assimp.org'
 import * as ast_grepgithubio from './ast-grep.github.io'
 import * as astralsh from './astral.sh'
 import * as astralsh_ty from './astral.sh-ty'
+import * as astralsh_ruff from './astralsh-ruff'
+import * as astralsh_uv from './astralsh-uv'
 import * as atlasgoio from './atlasgo.io'
 import * as attrsorg from './attrs.org'
 import * as augeasnet from './augeas.net'
 import * as authzedcom from './authzed.com'
 import * as aux4io from './aux4.io'
 import * as awsamazoncom from './aws.amazon.com'
+import * as awsamazoncom_cli from './awsamazoncom-cli'
+import * as awsamazoncom_sam from './awsamazoncom-sam'
 import * as bashlydannybco from './bashly.dannyb.co'
 import * as bcryptsourceforgenet from './bcrypt.sourceforge.net'
 import * as beyondgrepcom from './beyondgrep.com'
@@ -71,6 +76,7 @@ import * as caskreadthedocsio from './cask.readthedocs.io'
 import * as catborg from './catb.org'
 import * as ccachedev from './ccache.dev'
 import * as cedarpolicycom from './cedarpolicy.com'
+import * as cedarpolicycom_cli from './cedarpolicycom-cli'
 import * as cephcom from './ceph.com'
 import * as cephcom_cephadm from './ceph.com-cephadm'
 import * as ceres_solverorg from './ceres-solver.org'
@@ -170,6 +176,7 @@ import * as docutilsorg from './docutils.org'
 import * as dotenv_lintergithubio from './dotenv-linter.github.io'
 import * as dotenvxcom from './dotenvx.com'
 import * as dotnetmicrosoftcom from './dotnet.microsoft.com'
+import * as dotnetmicrosoftcom from './dotnetmicrosoftcom'
 import * as doxygennl from './doxygen.nl'
 import * as dozzledev from './dozzle.dev'
 import * as dprintdev from './dprint.dev'
@@ -824,6 +831,7 @@ import * as watchexecgithubio from './watchexec.github.io'
 import * as waterlanhomexs4allnl from './waterlan.home.xs4all.nl'
 import * as wavpackcom from './wavpack.com'
 import * as waylandfreedesktoporg from './wayland.freedesktop.org'
+import * as waylandfreedesktoporg from './waylandfreedesktoporg'
 import * as webmprojectorg from './webmproject.org'
 import * as werfio from './werf.io'
 import * as wezfurlongorg from './wezfurlong.org'
@@ -880,6 +888,7 @@ export * from './apktool.org'
 export * from './apollographql.com'
 export * from './appium.io'
 export * from './apple.com'
+export * from './applecom-remote_cmds'
 export * from './apptainer.org'
 export * from './aquasecurity.github.io'
 export * from './arduino.github.io'
@@ -894,12 +903,16 @@ export * from './assimp.org'
 export * from './ast-grep.github.io'
 export * from './astral.sh'
 export * from './astral.sh-ty'
+export * from './astralsh-ruff'
+export * from './astralsh-uv'
 export * from './atlasgo.io'
 export * from './attrs.org'
 export * from './augeas.net'
 export * from './authzed.com'
 export * from './aux4.io'
 export * from './aws.amazon.com'
+export * from './awsamazoncom-cli'
+export * from './awsamazoncom-sam'
 export * from './bashly.dannyb.co'
 export * from './bcrypt.sourceforge.net'
 export * from './beyondgrep.com'
@@ -929,6 +942,7 @@ export * from './cask.readthedocs.io'
 export * from './catb.org'
 export * from './ccache.dev'
 export * from './cedarpolicy.com'
+export * from './cedarpolicycom-cli'
 export * from './ceph.com'
 export * from './ceph.com-cephadm'
 export * from './ceres-solver.org'
@@ -1028,6 +1042,7 @@ export * from './docutils.org'
 export * from './dotenv-linter.github.io'
 export * from './dotenvx.com'
 export * from './dotnet.microsoft.com'
+export * from './dotnetmicrosoftcom'
 export * from './doxygen.nl'
 export * from './dozzle.dev'
 export * from './dprint.dev'
@@ -1682,6 +1697,7 @@ export * from './watchexec.github.io'
 export * from './waterlan.home.xs4all.nl'
 export * from './wavpack.com'
 export * from './wayland.freedesktop.org'
+export * from './waylandfreedesktoporg'
 export * from './webmproject.org'
 export * from './werf.io'
 export * from './wezfurlong.org'
@@ -1740,6 +1756,7 @@ export interface Pantry {
   apollographqlcom: apollographqlcom.ApollographqlcomPackage
   appiumio: appiumio.AppiumioPackage
   applecom: applecom.ApplecomPackage
+  applecomremote_cmds: applecom_remote_cmds.Applecomremote_cmdsPackage
   apptainerorg: apptainerorg.ApptainerorgPackage
   aquasecuritygithubio: aquasecuritygithubio.AquasecuritygithubioPackage
   arduinogithubio: arduinogithubio.ArduinogithubioPackage
@@ -1754,12 +1771,16 @@ export interface Pantry {
   astgrepgithubio: ast_grepgithubio.AstgrepgithubioPackage
   astralsh: astralsh.AstralshPackage
   astralshty: astralsh_ty.AstralshtyPackage
+  astralshruff: astralsh_ruff.AstralshruffPackage
+  astralshuv: astralsh_uv.AstralshuvPackage
   atlasgoio: atlasgoio.AtlasgoioPackage
   attrsorg: attrsorg.AttrsorgPackage
   augeasnet: augeasnet.AugeasnetPackage
   authzedcom: authzedcom.AuthzedcomPackage
   aux4io: aux4io.Aux4ioPackage
   awsamazoncom: awsamazoncom.AwsamazoncomPackage
+  awsamazoncomcli: awsamazoncom_cli.AwsamazoncomcliPackage
+  awsamazoncomsam: awsamazoncom_sam.AwsamazoncomsamPackage
   bashlydannybco: bashlydannybco.BashlydannybcoPackage
   bcryptsourceforgenet: bcryptsourceforgenet.BcryptsourceforgenetPackage
   beyondgrepcom: beyondgrepcom.BeyondgrepcomPackage
@@ -1789,6 +1810,7 @@ export interface Pantry {
   catborg: catborg.CatborgPackage
   ccachedev: ccachedev.CcachedevPackage
   cedarpolicycom: cedarpolicycom.CedarpolicycomPackage
+  cedarpolicycomcli: cedarpolicycom_cli.CedarpolicycomcliPackage
   cephcom: cephcom.CephcomPackage
   cephcomcephadm: cephcom_cephadm.CephcomcephadmPackage
   ceressolverorg: ceres_solverorg.CeressolverorgPackage
@@ -1887,6 +1909,7 @@ export interface Pantry {
   docutilsorg: docutilsorg.DocutilsorgPackage
   dotenvlintergithubio: dotenv_lintergithubio.DotenvlintergithubioPackage
   dotenvxcom: dotenvxcom.DotenvxcomPackage
+  dotnetmicrosoftcom: dotnetmicrosoftcom.DotnetmicrosoftcomPackage
   dotnetmicrosoftcom: dotnetmicrosoftcom.DotnetmicrosoftcomPackage
   doxygennl: doxygennl.DoxygennlPackage
   dozzledev: dozzledev.DozzledevPackage
@@ -2542,6 +2565,7 @@ export interface Pantry {
   waterlanhomexs4allnl: waterlanhomexs4allnl.Waterlanhomexs4allnlPackage
   wavpackcom: wavpackcom.WavpackcomPackage
   waylandfreedesktoporg: waylandfreedesktoporg.WaylandfreedesktoporgPackage
+  waylandfreedesktoporg: waylandfreedesktoporg.WaylandfreedesktoporgPackage
   webmprojectorg: webmprojectorg.WebmprojectorgPackage
   werfio: werfio.WerfioPackage
   wezfurlongorg: wezfurlongorg.WezfurlongorgPackage
@@ -2601,6 +2625,7 @@ export const pantry: Pantry = {
   apollographqlcom: apollographqlcom.apollographqlcomPackage,
   appiumio: appiumio.appiumioPackage,
   applecom: applecom.applecomPackage,
+  applecomremote_cmds: applecom_remote_cmds.applecomremote_cmdsPackage,
   apptainerorg: apptainerorg.apptainerorgPackage,
   aquasecuritygithubio: aquasecuritygithubio.aquasecuritygithubioPackage,
   arduinogithubio: arduinogithubio.arduinogithubioPackage,
@@ -2615,12 +2640,16 @@ export const pantry: Pantry = {
   astgrepgithubio: ast_grepgithubio.astgrepgithubioPackage,
   astralsh: astralsh.astralshPackage,
   astralshty: astralsh_ty.astralshtyPackage,
+  astralshruff: astralsh_ruff.astralshruffPackage,
+  astralshuv: astralsh_uv.astralshuvPackage,
   atlasgoio: atlasgoio.atlasgoioPackage,
   attrsorg: attrsorg.attrsorgPackage,
   augeasnet: augeasnet.augeasnetPackage,
   authzedcom: authzedcom.authzedcomPackage,
   aux4io: aux4io.aux4ioPackage,
   awsamazoncom: awsamazoncom.awsamazoncomPackage,
+  awsamazoncomcli: awsamazoncom_cli.awsamazoncomcliPackage,
+  awsamazoncomsam: awsamazoncom_sam.awsamazoncomsamPackage,
   bashlydannybco: bashlydannybco.bashlydannybcoPackage,
   bcryptsourceforgenet: bcryptsourceforgenet.bcryptsourceforgenetPackage,
   beyondgrepcom: beyondgrepcom.beyondgrepcomPackage,
@@ -2650,6 +2679,7 @@ export const pantry: Pantry = {
   catborg: catborg.catborgPackage,
   ccachedev: ccachedev.ccachedevPackage,
   cedarpolicycom: cedarpolicycom.cedarpolicycomPackage,
+  cedarpolicycomcli: cedarpolicycom_cli.cedarpolicycomcliPackage,
   cephcom: cephcom.cephcomPackage,
   cephcomcephadm: cephcom_cephadm.cephcomcephadmPackage,
   ceressolverorg: ceres_solverorg.ceressolverorgPackage,
@@ -2748,6 +2778,7 @@ export const pantry: Pantry = {
   docutilsorg: docutilsorg.docutilsorgPackage,
   dotenvlintergithubio: dotenv_lintergithubio.dotenvlintergithubioPackage,
   dotenvxcom: dotenvxcom.dotenvxcomPackage,
+  dotnetmicrosoftcom: dotnetmicrosoftcom.dotnetmicrosoftcomPackage,
   dotnetmicrosoftcom: dotnetmicrosoftcom.dotnetmicrosoftcomPackage,
   doxygennl: doxygennl.doxygennlPackage,
   dozzledev: dozzledev.dozzledevPackage,
@@ -3402,6 +3433,7 @@ export const pantry: Pantry = {
   watchexecgithubio: watchexecgithubio.watchexecgithubioPackage,
   waterlanhomexs4allnl: waterlanhomexs4allnl.waterlanhomexs4allnlPackage,
   wavpackcom: wavpackcom.wavpackcomPackage,
+  waylandfreedesktoporg: waylandfreedesktoporg.waylandfreedesktoporgPackage,
   waylandfreedesktoporg: waylandfreedesktoporg.waylandfreedesktoporgPackage,
   webmprojectorg: webmprojectorg.webmprojectorgPackage,
   werfio: werfio.werfioPackage,

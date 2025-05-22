@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ytdlporgPackage = {
+  name: "yt-dlp" as const,
+  domain: "yt-dlp.org" as const,
+  description: "A feature-rich command-line audio/video downloader" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/yt-dlp.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) yt-dlp" as const,
   programs: [
     "yt-dlp",
   ] as const,
@@ -58,13 +62,7 @@ export const ytdlporgPackage = {
     "2023.2.17",
     "2023.1.6",
   ] as const,
-  name: "yt/dlp.org" as const,
-  domain: "yt/dlp.org" as const,
-  description: "Package information for yt/dlp.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/yt/dlp.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +yt/dlp.org -- $SHELL -i" as const,
+  fullPath: "yt-dlp.org" as const,
 }
 
 export type YtdlporgPackage = typeof ytdlporgPackage

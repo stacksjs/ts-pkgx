@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const d2langcomPackage = {
+  name: "d2" as const,
+  domain: "d2lang.com" as const,
+  description: "D2 is a modern diagram scripting language that turns text to diagrams." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/d2lang.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) d2" as const,
   programs: [
     "d2",
   ] as const,
@@ -20,13 +24,7 @@ export const d2langcomPackage = {
     "0.6.1",
     "0.6.0",
   ] as const,
-  name: "d2lang.com" as const,
-  domain: "d2lang.com" as const,
-  description: "Package information for d2lang.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/d2lang.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +d2lang.com -- $SHELL -i" as const,
+  fullPath: "d2lang.com" as const,
 }
 
 export type D2langcomPackage = typeof d2langcomPackage

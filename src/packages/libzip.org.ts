@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libziporgPackage = {
+  name: "zip" as const,
+  domain: "libzip.org" as const,
+  description: "A C library for reading, creating, and modifying zip archives." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libzip.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +libzip.org -- $SHELL -i" as const,
   programs: [
     "zipcmp",
     "zipmerge",
@@ -25,16 +29,10 @@ export const libziporgPackage = {
     "1.10.0",
     "1.9.2",
   ] as const,
+  fullPath: "libzip.org" as const,
   aliases: [
     "zip",
   ] as const,
-  name: "libzip.org" as const,
-  domain: "libzip.org" as const,
-  description: "Package information for libzip.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libzip.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libzip.org -- $SHELL -i" as const,
 }
 
 export type LibziporgPackage = typeof libziporgPackage

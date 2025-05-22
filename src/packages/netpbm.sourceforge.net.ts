@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const netpbmsourceforgenetPackage = {
+  name: "netpbm.sourceforge.net" as const,
+  domain: "netpbm.sourceforge.net" as const,
+  description: "Image manipulation" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/netpbm.sourceforge.net/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +netpbm.sourceforge.net -- $SHELL -i" as const,
   programs: [
     "411toppm",
     "asciitopgm",
@@ -340,13 +344,7 @@ export const netpbmsourceforgenetPackage = {
     "10.86.38",
     "10.73.43",
   ] as const,
-  name: "netpbm.sourceforge.net" as const,
-  domain: "netpbm.sourceforge.net" as const,
-  description: "Package information for netpbm.sourceforge.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/netpbm.sourceforge.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +netpbm.sourceforge.net -- $SHELL -i" as const,
+  fullPath: "netpbm.sourceforge.net" as const,
 }
 
 export type NetpbmsourceforgenetPackage = typeof netpbmsourceforgenetPackage

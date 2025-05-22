@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const curlsePackage = {
+  name: "cURL" as const,
+  domain: "curl.se" as const,
+  description: "A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/curl.se/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +curl.se -- $SHELL -i" as const,
   programs: [
     "curl",
     "curl-config",
@@ -37,13 +41,7 @@ export const curlsePackage = {
     "7.86.0",
     "7.85.0",
   ] as const,
-  name: "curl.se" as const,
-  domain: "curl.se" as const,
-  description: "Package information for curl.se" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/curl.se/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +curl.se -- $SHELL -i" as const,
+  fullPath: "curl.se" as const,
 }
 
 export type CurlsePackage = typeof curlsePackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const daggerioPackage = {
+  name: "dagger" as const,
+  domain: "dagger.io" as const,
+  description: "An engine to run your pipelines in containers" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dagger.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) dagger" as const,
   programs: [
     "dagger",
   ] as const,
@@ -98,13 +102,7 @@ export const daggerioPackage = {
     "0.3.10",
     "0.3.9",
   ] as const,
-  name: "dagger.io" as const,
-  domain: "dagger.io" as const,
-  description: "Package information for dagger.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dagger.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +dagger.io -- $SHELL -i" as const,
+  fullPath: "dagger.io" as const,
 }
 
 export type DaggerioPackage = typeof daggerioPackage

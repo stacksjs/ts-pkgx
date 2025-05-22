@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openjdkorgPackage = {
+  name: "openjdk.org" as const,
+  domain: "openjdk.org" as const,
+  description: "Development kit for the Java programming language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openjdk.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +openjdk.org -- $SHELL -i" as const,
   programs: [
     "jar",
     "jarsigner",
@@ -63,13 +67,7 @@ export const openjdkorgPackage = {
     "17.0.10.6",
     "11.0.23.6",
   ] as const,
-  name: "openjdk.org" as const,
-  domain: "openjdk.org" as const,
-  description: "Package information for openjdk.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openjdk.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openjdk.org -- $SHELL -i" as const,
+  fullPath: "openjdk.org" as const,
 }
 
 export type OpenjdkorgPackage = typeof openjdkorgPackage

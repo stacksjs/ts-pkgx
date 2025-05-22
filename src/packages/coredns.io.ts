@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const corednsioPackage = {
+  name: "coredns" as const,
+  domain: "coredns.io" as const,
+  description: "CoreDNS is a DNS server that chains plugins" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/coredns.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) coredns" as const,
   programs: [
     "coredns",
   ] as const,
@@ -16,13 +20,7 @@ export const corednsioPackage = {
     "1.11.1",
     "1.10.1",
   ] as const,
-  name: "coredns.io" as const,
-  domain: "coredns.io" as const,
-  description: "Package information for coredns.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/coredns.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +coredns.io -- $SHELL -i" as const,
+  fullPath: "coredns.io" as const,
 }
 
 export type CorednsioPackage = typeof corednsioPackage

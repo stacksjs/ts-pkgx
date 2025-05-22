@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const daytonaioPackage = {
+  name: "daytona" as const,
+  domain: "daytona.io" as const,
+  description: "The Open Source Dev Environment Manager." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/daytona.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) daytona" as const,
   programs: [
     "daytona",
   ] as const,
@@ -85,13 +89,7 @@ export const daytonaioPackage = {
     "0.3.0",
     "0.2.0",
   ] as const,
-  name: "daytona.io" as const,
-  domain: "daytona.io" as const,
-  description: "Package information for daytona.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/daytona.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +daytona.io -- $SHELL -i" as const,
+  fullPath: "daytona.io" as const,
 }
 
 export type DaytonaioPackage = typeof daytonaioPackage

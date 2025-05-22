@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const upliftcidevPackage = {
+  name: "uplift" as const,
+  domain: "upliftci.dev" as const,
+  description: "Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/upliftci.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) uplift" as const,
   programs: [
     "uplift",
   ] as const,
@@ -14,13 +18,7 @@ export const upliftcidevPackage = {
     "2.23.0",
     "2.22.0",
   ] as const,
-  name: "upliftci.dev" as const,
-  domain: "upliftci.dev" as const,
-  description: "Package information for upliftci.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/upliftci.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +upliftci.dev -- $SHELL -i" as const,
+  fullPath: "upliftci.dev" as const,
 }
 
 export type UpliftcidevPackage = typeof upliftcidevPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pdmfmingdevPackage = {
+  name: "pdm" as const,
+  domain: "pdm.fming.dev" as const,
+  description: "A modern Python package and dependency manager supporting the latest PEP standards" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pdm.fming.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pdm" as const,
   programs: [
     "pdm",
   ] as const,
@@ -75,13 +79,7 @@ export const pdmfmingdevPackage = {
     "2.5.6",
     "2.5.3",
   ] as const,
-  name: "pdm.fming.dev" as const,
-  domain: "pdm.fming.dev" as const,
-  description: "Package information for pdm.fming.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pdm.fming.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pdm.fming.dev -- $SHELL -i" as const,
+  fullPath: "pdm.fming.dev" as const,
 }
 
 export type PdmfmingdevPackage = typeof pdmfmingdevPackage

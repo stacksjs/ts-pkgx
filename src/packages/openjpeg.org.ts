@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openjpegorgPackage = {
+  name: "opj" as const,
+  domain: "openjpeg.org" as const,
+  description: "Official repository of the OpenJPEG project" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openjpeg.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +openjpeg.org -- $SHELL -i" as const,
   programs: [
     "opj_compress",
     "opj_decompress",
@@ -18,16 +22,10 @@ export const openjpegorgPackage = {
     "2.5.1",
     "2.5.0",
   ] as const,
+  fullPath: "openjpeg.org" as const,
   aliases: [
     "opj",
   ] as const,
-  name: "openjpeg.org" as const,
-  domain: "openjpeg.org" as const,
-  description: "Package information for openjpeg.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openjpeg.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openjpeg.org -- $SHELL -i" as const,
 }
 
 export type OpenjpegorgPackage = typeof openjpegorgPackage

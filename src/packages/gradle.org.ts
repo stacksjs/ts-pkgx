@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gradleorgPackage = {
+  name: "gradle" as const,
+  domain: "gradle.org" as const,
+  description: "Open-source build automation tool based on the Groovy and Kotlin DSL" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gradle.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) gradle" as const,
   programs: [
     "gradle",
   ] as const,
@@ -27,13 +31,7 @@ export const gradleorgPackage = {
     "8.5.0",
     "8.2.1",
   ] as const,
-  name: "gradle.org" as const,
-  domain: "gradle.org" as const,
-  description: "Package information for gradle.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gradle.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +gradle.org -- $SHELL -i" as const,
+  fullPath: "gradle.org" as const,
 }
 
 export type GradleorgPackage = typeof gradleorgPackage

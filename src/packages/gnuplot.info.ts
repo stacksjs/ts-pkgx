@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gnuplotinfoPackage = {
+  name: "gnuplot" as const,
+  domain: "gnuplot.info" as const,
+  description: "Command-driven, interactive function plotting" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gnuplot.info/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) gnuplot" as const,
   programs: [
     "gnuplot",
   ] as const,
@@ -24,13 +28,7 @@ export const gnuplotinfoPackage = {
     "5.4.7",
     "5.4.6",
   ] as const,
-  name: "gnuplot.info" as const,
-  domain: "gnuplot.info" as const,
-  description: "Package information for gnuplot.info" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gnuplot.info/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +gnuplot.info -- $SHELL -i" as const,
+  fullPath: "gnuplot.info" as const,
 }
 
 export type GnuplotinfoPackage = typeof gnuplotinfoPackage

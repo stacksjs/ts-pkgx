@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const databrickscomPackage = {
+  name: "databricks" as const,
+  domain: "databricks.com" as const,
+  description: "Databricks CLI" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/databricks.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) databricks" as const,
   programs: [
     "databricks",
   ] as const,
@@ -60,13 +64,7 @@ export const databrickscomPackage = {
     "0.216.0",
     "0.215.0",
   ] as const,
-  name: "databricks.com" as const,
-  domain: "databricks.com" as const,
-  description: "Package information for databricks.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/databricks.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +databricks.com -- $SHELL -i" as const,
+  fullPath: "databricks.com" as const,
 }
 
 export type DatabrickscomPackage = typeof databrickscomPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const julialangorgPackage = {
+  name: "julia" as const,
+  domain: "julialang.org" as const,
+  description: "The Julia Programming Language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/julialang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) julia" as const,
   programs: [
     "julia",
   ] as const,
@@ -27,13 +31,7 @@ export const julialangorgPackage = {
     "1.9.4",
     "1.9.3",
   ] as const,
-  name: "julialang.org" as const,
-  domain: "julialang.org" as const,
-  description: "Package information for julialang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/julialang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +julialang.org -- $SHELL -i" as const,
+  fullPath: "julialang.org" as const,
 }
 
 export type JulialangorgPackage = typeof julialangorgPackage

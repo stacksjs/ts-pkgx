@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tcshorgPackage = {
+  name: "tcsh.org" as const,
+  domain: "tcsh.org" as const,
+  description: "Enhanced, fully compatible version of the Berkeley C shell" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tcsh.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +tcsh.org -- $SHELL -i" as const,
   programs: [
     "csh",
     "tcsh",
@@ -14,13 +18,7 @@ export const tcshorgPackage = {
   versions: [
     "6.24.15",
   ] as const,
-  name: "tcsh.org" as const,
-  domain: "tcsh.org" as const,
-  description: "Package information for tcsh.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tcsh.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tcsh.org -- $SHELL -i" as const,
+  fullPath: "tcsh.org" as const,
 }
 
 export type TcshorgPackage = typeof tcshorgPackage

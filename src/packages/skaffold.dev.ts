@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const skaffolddevPackage = {
+  name: "skaffold" as const,
+  domain: "skaffold.dev" as const,
+  description: "Easy and Repeatable Kubernetes Development" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/skaffold.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) skaffold" as const,
   programs: [
     "skaffold",
   ] as const,
@@ -23,13 +27,7 @@ export const skaffolddevPackage = {
     "2.9.0",
     "2.8.0",
   ] as const,
-  name: "skaffold.dev" as const,
-  domain: "skaffold.dev" as const,
-  description: "Package information for skaffold.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/skaffold.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +skaffold.dev -- $SHELL -i" as const,
+  fullPath: "skaffold.dev" as const,
 }
 
 export type SkaffolddevPackage = typeof skaffolddevPackage

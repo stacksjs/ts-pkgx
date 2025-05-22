@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const chromedriverchromiumorgPackage = {
+  name: "chromedriver" as const,
+  domain: "chromedriver.chromium.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/chromedriver.chromium.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) chromedriver" as const,
   programs: [
     "chromedriver",
   ] as const,
@@ -15,13 +19,7 @@ export const chromedriverchromiumorgPackage = {
   versions: [
     "114.0.5735.90",
   ] as const,
-  name: "chromedriver.chromium.org" as const,
-  domain: "chromedriver.chromium.org" as const,
-  description: "Package information for chromedriver.chromium.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/chromedriver.chromium.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +chromedriver.chromium.org -- $SHELL -i" as const,
+  fullPath: "chromedriver.chromium.org" as const,
 }
 
 export type ChromedriverchromiumorgPackage = typeof chromedriverchromiumorgPackage

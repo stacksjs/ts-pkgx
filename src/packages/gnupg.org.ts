@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gnupgorgPackage = {
+  name: "gnupg.org" as const,
+  domain: "gnupg.org" as const,
+  description: "GNU Pretty Good Privacy (PGP) package" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +gnupg.org -- $SHELL -i" as const,
   programs: [
     "gpg",
     "gpg-agent",
@@ -48,13 +52,7 @@ export const gnupgorgPackage = {
     "2.2.43",
     "2.2.42",
   ] as const,
-  name: "gnupg.org" as const,
-  domain: "gnupg.org" as const,
-  description: "Package information for gnupg.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +gnupg.org -- $SHELL -i" as const,
+  fullPath: "gnupg.org" as const,
 }
 
 export type GnupgorgPackage = typeof gnupgorgPackage

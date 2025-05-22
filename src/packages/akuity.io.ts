@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const akuityioPackage = {
+  name: "akuity.io" as const,
+  domain: "akuity.io" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx akuity.io" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "akuity.io" as const,
-  domain: "akuity.io" as const,
-  description: "Package information for akuity.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/akuity.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +akuity.io -- $SHELL -i" as const,
+  fullPath: "akuity.io" as const,
 }
 
 export type AkuityioPackage = typeof akuityioPackage

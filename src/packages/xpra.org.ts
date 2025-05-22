@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const xpraorgPackage = {
+  name: "xpra" as const,
+  domain: "xpra.org" as const,
+  description: "Persistent remote applications for X11; screen sharing for X11, MacOS and MSWindows." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xpra.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) xpra" as const,
   programs: [
     "xpra",
   ] as const,
@@ -48,13 +52,7 @@ export const xpraorgPackage = {
     "6.1.3",
     "6.1.2",
   ] as const,
-  name: "xpra.org" as const,
-  domain: "xpra.org" as const,
-  description: "Package information for xpra.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xpra.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +xpra.org -- $SHELL -i" as const,
+  fullPath: "xpra.org" as const,
 }
 
 export type XpraorgPackage = typeof xpraorgPackage

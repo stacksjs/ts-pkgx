@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const iscorgbind9Package = {
+  name: "bind9" as const,
+  domain: "isc.org/bind9" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/isc.org/bind9/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +isc.org/bind9 -- $SHELL -i" as const,
   programs: [
     "arpaname",
     "delv",
@@ -62,16 +66,10 @@ export const iscorgbind9Package = {
     "9.18.36",
     "9.18.35",
   ] as const,
+  fullPath: "isc.org/bind9" as const,
   aliases: [
     "bind9",
   ] as const,
-  name: "isc.org/bind9" as const,
-  domain: "isc.org/bind9" as const,
-  description: "Package information for isc.org/bind9" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/isc.org/bind9/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +isc.org/bind9 -- $SHELL -i" as const,
 }
 
 export type Iscorgbind9Package = typeof iscorgbind9Package

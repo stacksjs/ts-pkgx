@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const istioioPackage = {
+  name: "istioctl" as const,
+  domain: "istio.io" as const,
+  description: "Connect, secure, control, and observe services." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/istio.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) istioctl" as const,
   programs: [
     "istioctl",
   ] as const,
@@ -49,16 +53,10 @@ export const istioioPackage = {
     "1.19.10",
     "1.19.9",
   ] as const,
+  fullPath: "istio.io" as const,
   aliases: [
     "istioctl",
   ] as const,
-  name: "istio.io" as const,
-  domain: "istio.io" as const,
-  description: "Package information for istio.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/istio.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +istio.io -- $SHELL -i" as const,
 }
 
 export type IstioioPackage = typeof istioioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const prefixdevPackage = {
+  name: "pixi" as const,
+  domain: "prefix.dev" as const,
+  description: "Package management made easy" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/prefix.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pixi" as const,
   programs: [
     "pixi",
   ] as const,
@@ -92,16 +96,10 @@ export const prefixdevPackage = {
     "0.2.0",
     "0.1.0",
   ] as const,
+  fullPath: "prefix.dev" as const,
   aliases: [
     "pixi",
   ] as const,
-  name: "prefix.dev" as const,
-  domain: "prefix.dev" as const,
-  description: "Package information for prefix.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/prefix.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +prefix.dev -- $SHELL -i" as const,
 }
 
 export type PrefixdevPackage = typeof prefixdevPackage

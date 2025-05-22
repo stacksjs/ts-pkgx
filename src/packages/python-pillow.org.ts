@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pythonpilloworgPackage = {
+  name: "python-pillow.org" as const,
+  domain: "python-pillow.org" as const,
+  description: "Python Imaging Library (Fork)" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/python-pillow.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +python-pillow.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -24,13 +28,7 @@ export const pythonpilloworgPackage = {
     "10.3.0",
     "10.2.0",
   ] as const,
-  name: "python/pillow.org" as const,
-  domain: "python/pillow.org" as const,
-  description: "Package information for python/pillow.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/python/pillow.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +python/pillow.org -- $SHELL -i" as const,
+  fullPath: "python-pillow.org" as const,
 }
 
 export type PythonpilloworgPackage = typeof pythonpilloworgPackage

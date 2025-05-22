@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const graphicsmagickorgPackage = {
+  name: "gm" as const,
+  domain: "graphicsmagick.org" as const,
+  description: "Image processing tools collection" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/graphicsmagick.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) gm" as const,
   programs: [
     "gm",
   ] as const,
@@ -27,16 +31,10 @@ export const graphicsmagickorgPackage = {
     "1.3.42",
     "1.3.40",
   ] as const,
+  fullPath: "graphicsmagick.org" as const,
   aliases: [
     "gm",
   ] as const,
-  name: "graphicsmagick.org" as const,
-  domain: "graphicsmagick.org" as const,
-  description: "Package information for graphicsmagick.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/graphicsmagick.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +graphicsmagick.org -- $SHELL -i" as const,
 }
 
 export type GraphicsmagickorgPackage = typeof graphicsmagickorgPackage

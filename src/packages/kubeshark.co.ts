@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const kubesharkcoPackage = {
+  name: "kubeshark" as const,
+  domain: "kubeshark.co" as const,
+  description: "The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, capturing and monitoring all traffic and payloads going in, out and across containers, pods, nodes and clusters. Inspired by Wireshark, purposely built for Kubernetes" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kubeshark.co/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) kubeshark" as const,
   programs: [
     "kubeshark",
   ] as const,
@@ -63,13 +67,7 @@ export const kubesharkcoPackage = {
     "51.0.14",
     "51.0.0",
   ] as const,
-  name: "kubeshark.co" as const,
-  domain: "kubeshark.co" as const,
-  description: "Package information for kubeshark.co" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kubeshark.co/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +kubeshark.co -- $SHELL -i" as const,
+  fullPath: "kubeshark.co" as const,
 }
 
 export type KubesharkcoPackage = typeof kubesharkcoPackage

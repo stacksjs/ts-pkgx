@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const laravelcomPackage = {
+  name: "laravel" as const,
+  domain: "laravel.com" as const,
+  description: "The Laravel application installer." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/laravel.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) laravel" as const,
   programs: [
     "laravel",
   ] as const,
@@ -30,13 +34,7 @@ export const laravelcomPackage = {
     "5.8.5",
     "5.8.3",
   ] as const,
-  name: "laravel.com" as const,
-  domain: "laravel.com" as const,
-  description: "Package information for laravel.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/laravel.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +laravel.com -- $SHELL -i" as const,
+  fullPath: "laravel.com" as const,
 }
 
 export type LaravelcomPackage = typeof laravelcomPackage

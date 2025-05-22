@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const eksctlioPackage = {
+  name: "eksctl" as const,
+  domain: "eksctl.io" as const,
+  description: "Simple command-line tool for creating clusters on Amazon EKS" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/eksctl.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) eksctl" as const,
   programs: [
     "eksctl",
   ] as const,
@@ -66,13 +70,7 @@ export const eksctlioPackage = {
     "0.155.0",
     "0.154.0",
   ] as const,
-  name: "eksctl.io" as const,
-  domain: "eksctl.io" as const,
-  description: "Package information for eksctl.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/eksctl.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +eksctl.io -- $SHELL -i" as const,
+  fullPath: "eksctl.io" as const,
 }
 
 export type EksctlioPackage = typeof eksctlioPackage

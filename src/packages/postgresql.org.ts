@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const postgresqlorgPackage = {
+  name: "postgresql.org" as const,
+  domain: "postgresql.org" as const,
+  description: "Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/postgresql.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +postgresql.org -- $SHELL -i" as const,
   programs: [
     "clusterdb",
     "createdb",
@@ -56,13 +60,7 @@ export const postgresqlorgPackage = {
     "12.14.0",
     "11.19.0",
   ] as const,
-  name: "postgresql.org" as const,
-  domain: "postgresql.org" as const,
-  description: "Package information for postgresql.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/postgresql.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +postgresql.org -- $SHELL -i" as const,
+  fullPath: "postgresql.org" as const,
 }
 
 export type PostgresqlorgPackage = typeof postgresqlorgPackage

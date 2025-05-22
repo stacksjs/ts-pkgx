@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const goreleasercomPackage = {
+  name: "goreleaser" as const,
+  domain: "goreleaser.com" as const,
+  description: "Deliver Go binaries as fast and easily as possible" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/goreleaser.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) goreleaser" as const,
   programs: [
     "goreleaser",
   ] as const,
@@ -47,13 +51,7 @@ export const goreleasercomPackage = {
     "1.21.0",
     "1.20.0",
   ] as const,
-  name: "goreleaser.com" as const,
-  domain: "goreleaser.com" as const,
-  description: "Package information for goreleaser.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/goreleaser.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +goreleaser.com -- $SHELL -i" as const,
+  fullPath: "goreleaser.com" as const,
 }
 
 export type GoreleasercomPackage = typeof goreleasercomPackage

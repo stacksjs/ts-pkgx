@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mkcertdevPackage = {
+  name: "mkcert" as const,
+  domain: "mkcert.dev" as const,
+  description: "A simple zero-config tool to make locally trusted development certificates with any names you'd like." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mkcert.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) mkcert" as const,
   programs: [
     "mkcert",
   ] as const,
@@ -10,13 +14,7 @@ export const mkcertdevPackage = {
   versions: [
     "1.4.4",
   ] as const,
-  name: "mkcert.dev" as const,
-  domain: "mkcert.dev" as const,
-  description: "Package information for mkcert.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mkcert.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mkcert.dev -- $SHELL -i" as const,
+  fullPath: "mkcert.dev" as const,
 }
 
 export type MkcertdevPackage = typeof mkcertdevPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const getfoundryshPackage = {
+  name: "getfoundry.sh" as const,
+  domain: "getfoundry.sh" as const,
+  description: "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getfoundry.sh/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +getfoundry.sh -- $SHELL -i" as const,
   programs: [
     "forge",
     "anvil",
@@ -21,13 +25,7 @@ export const getfoundryshPackage = {
     "1.0.0",
     "0.3.0",
   ] as const,
-  name: "getfoundry.sh" as const,
-  domain: "getfoundry.sh" as const,
-  description: "Package information for getfoundry.sh" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getfoundry.sh/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +getfoundry.sh -- $SHELL -i" as const,
+  fullPath: "getfoundry.sh" as const,
 }
 
 export type GetfoundryshPackage = typeof getfoundryshPackage

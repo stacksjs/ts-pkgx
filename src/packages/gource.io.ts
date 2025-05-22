@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gourceioPackage = {
+  name: "gource" as const,
+  domain: "gource.io" as const,
+  description: "software version control visualization" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gource.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) gource" as const,
   programs: [
     "gource",
   ] as const,
@@ -19,13 +23,7 @@ export const gourceioPackage = {
     "0.55.0",
     "0.54.0",
   ] as const,
-  name: "gource.io" as const,
-  domain: "gource.io" as const,
-  description: "Package information for gource.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gource.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +gource.io -- $SHELL -i" as const,
+  fullPath: "gource.io" as const,
 }
 
 export type GourceioPackage = typeof gourceioPackage

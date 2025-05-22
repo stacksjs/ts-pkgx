@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const hatchpypaioPackage = {
+  name: "hatch" as const,
+  domain: "hatch.pypa.io" as const,
+  description: "Modern, extensible Python project management" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/hatch.pypa.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) hatch" as const,
   programs: [
     "hatch",
   ] as const,
@@ -29,13 +33,7 @@ export const hatchpypaioPackage = {
     "1.8.0",
     "1.7.0",
   ] as const,
-  name: "hatch.pypa.io" as const,
-  domain: "hatch.pypa.io" as const,
-  description: "Package information for hatch.pypa.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/hatch.pypa.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +hatch.pypa.io -- $SHELL -i" as const,
+  fullPath: "hatch.pypa.io" as const,
 }
 
 export type HatchpypaioPackage = typeof hatchpypaioPackage

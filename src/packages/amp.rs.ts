@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const amprsPackage = {
+  name: "amp" as const,
+  domain: "amp.rs" as const,
+  description: "A complete text editor for your terminal." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/amp.rs/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) amp" as const,
   programs: [
     "amp",
   ] as const,
@@ -15,13 +19,7 @@ export const amprsPackage = {
   versions: [
     "0.7.1",
   ] as const,
-  name: "amp.rs" as const,
-  domain: "amp.rs" as const,
-  description: "Package information for amp.rs" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/amp.rs/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +amp.rs -- $SHELL -i" as const,
+  fullPath: "amp.rs" as const,
 }
 
 export type AmprsPackage = typeof amprsPackage

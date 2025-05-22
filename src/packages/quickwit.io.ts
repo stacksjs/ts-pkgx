@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const quickwitioPackage = {
+  name: "quickwit" as const,
+  domain: "quickwit.io" as const,
+  description: "Cloud-native search engine for observability. An open-source alternative to Datadog, Elasticsearch, Loki, and Tempo." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/quickwit.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) quickwit" as const,
   programs: [
     "quickwit",
   ] as const,
@@ -18,13 +22,7 @@ export const quickwitioPackage = {
     "0.6.5",
     "0.6.4",
   ] as const,
-  name: "quickwit.io" as const,
-  domain: "quickwit.io" as const,
-  description: "Package information for quickwit.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/quickwit.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +quickwit.io -- $SHELL -i" as const,
+  fullPath: "quickwit.io" as const,
 }
 
 export type QuickwitioPackage = typeof quickwitioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const singboxappPackage = {
+  name: "sing-box" as const,
+  domain: "sing-box.app" as const,
+  description: "The universal proxy platform" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sing-box.app/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) sing-box" as const,
   programs: [
     "sing-box",
   ] as const,
@@ -58,13 +62,7 @@ export const singboxappPackage = {
     "1.7.3",
     "1.7.2",
   ] as const,
-  name: "sing/box.app" as const,
-  domain: "sing/box.app" as const,
-  description: "Package information for sing/box.app" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sing/box.app/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +sing/box.app -- $SHELL -i" as const,
+  fullPath: "sing-box.app" as const,
 }
 
 export type SingboxappPackage = typeof singboxappPackage

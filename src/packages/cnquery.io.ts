@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cnqueryioPackage = {
+  name: "cnquery" as const,
+  domain: "cnquery.io" as const,
+  description: "open source, cloud-native, graph-based asset inventory" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cnquery.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) cnquery" as const,
   programs: [
     "cnquery",
   ] as const,
@@ -151,13 +155,7 @@ export const cnqueryioPackage = {
     "9.14.0",
     "9.13.0",
   ] as const,
-  name: "cnquery.io" as const,
-  domain: "cnquery.io" as const,
-  description: "Package information for cnquery.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cnquery.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cnquery.io -- $SHELL -i" as const,
+  fullPath: "cnquery.io" as const,
 }
 
 export type CnqueryioPackage = typeof cnqueryioPackage

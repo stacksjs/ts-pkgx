@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cyrusimaporgPackage = {
+  name: "cyrusimap.org" as const,
+  domain: "cyrusimap.org" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx cyrusimap.org" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "cyrusimap.org" as const,
-  domain: "cyrusimap.org" as const,
-  description: "Package information for cyrusimap.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cyrusimap.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cyrusimap.org -- $SHELL -i" as const,
+  fullPath: "cyrusimap.org" as const,
 }
 
 export type CyrusimaporgPackage = typeof cyrusimaporgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const opendaporgPackage = {
+  name: "opendap.org" as const,
+  domain: "opendap.org" as const,
+  description: "A new version of libdap that contains both DAP2 and DAP4 support" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/opendap.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +opendap.org -- $SHELL -i" as const,
   programs: [
     "dap-config",
     "dap-config-pkgconfig",
@@ -21,13 +25,7 @@ export const opendaporgPackage = {
     "3.21.1",
     "3.20.11",
   ] as const,
-  name: "opendap.org" as const,
-  domain: "opendap.org" as const,
-  description: "Package information for opendap.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/opendap.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +opendap.org -- $SHELL -i" as const,
+  fullPath: "opendap.org" as const,
 }
 
 export type OpendaporgPackage = typeof opendaporgPackage

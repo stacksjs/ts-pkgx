@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const terraformioPackage = {
+  name: "terraform" as const,
+  domain: "terraform.io" as const,
+  description: "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/terraform.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) terraform" as const,
   programs: [
     "terraform",
   ] as const,
@@ -83,13 +87,7 @@ export const terraformioPackage = {
     "0.12.0",
     "0.11.12",
   ] as const,
-  name: "terraform.io" as const,
-  domain: "terraform.io" as const,
-  description: "Package information for terraform.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/terraform.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +terraform.io -- $SHELL -i" as const,
+  fullPath: "terraform.io" as const,
 }
 
 export type TerraformioPackage = typeof terraformioPackage

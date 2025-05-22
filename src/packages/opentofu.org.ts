@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const opentofuorgPackage = {
+  name: "tofu" as const,
+  domain: "opentofu.org" as const,
+  description: "OpenTofu lets you declaratively manage your cloud infrastructure." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/opentofu.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) tofu" as const,
   programs: [
     "tofu",
   ] as const,
@@ -32,16 +36,10 @@ export const opentofuorgPackage = {
     "1.7.3",
     "1.6.0.3",
   ] as const,
+  fullPath: "opentofu.org" as const,
   aliases: [
     "tofu",
   ] as const,
-  name: "opentofu.org" as const,
-  domain: "opentofu.org" as const,
-  description: "Package information for opentofu.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/opentofu.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +opentofu.org -- $SHELL -i" as const,
 }
 
 export type OpentofuorgPackage = typeof opentofuorgPackage

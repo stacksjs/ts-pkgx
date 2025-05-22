@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const doxygennlPackage = {
+  name: "doxygen" as const,
+  domain: "doxygen.nl" as const,
+  description: "Generate documentation for several programming languages" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/doxygen.nl/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) doxygen" as const,
   programs: [
     "doxygen",
   ] as const,
@@ -18,13 +22,7 @@ export const doxygennlPackage = {
     "1.9.7",
     "1.9.6",
   ] as const,
-  name: "doxygen.nl" as const,
-  domain: "doxygen.nl" as const,
-  description: "Package information for doxygen.nl" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/doxygen.nl/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +doxygen.nl -- $SHELL -i" as const,
+  fullPath: "doxygen.nl" as const,
 }
 
 export type DoxygennlPackage = typeof doxygennlPackage

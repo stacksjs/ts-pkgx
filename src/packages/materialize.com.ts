@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const materializecomPackage = {
+  name: "mz" as const,
+  domain: "materialize.com" as const,
+  description: "Real-time Data Integration and Transformation: use SQL to transform, deliver, and act on fast-changing data." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/materialize.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) mz" as const,
   programs: [
     "mz",
   ] as const,
@@ -56,16 +60,10 @@ export const materializecomPackage = {
     "0.68.1",
     "0.67.3",
   ] as const,
+  fullPath: "materialize.com" as const,
   aliases: [
     "mz",
   ] as const,
-  name: "materialize.com" as const,
-  domain: "materialize.com" as const,
-  description: "Package information for materialize.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/materialize.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +materialize.com -- $SHELL -i" as const,
 }
 
 export type MaterializecomPackage = typeof materializecomPackage

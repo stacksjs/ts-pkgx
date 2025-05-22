@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const surrealdbcomPackage = {
+  name: "surreal" as const,
+  domain: "surrealdb.com" as const,
+  description: "A scalable, distributed, collaborative, document-graph database, for the realtime web" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/surrealdb.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) surreal" as const,
   programs: [
     "surreal",
   ] as const,
@@ -52,13 +56,7 @@ export const surrealdbcomPackage = {
     "1.0.0",
     "0.0.0",
   ] as const,
-  name: "surrealdb.com" as const,
-  domain: "surrealdb.com" as const,
-  description: "Package information for surrealdb.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/surrealdb.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +surrealdb.com -- $SHELL -i" as const,
+  fullPath: "surrealdb.com" as const,
 }
 
 export type SurrealdbcomPackage = typeof surrealdbcomPackage

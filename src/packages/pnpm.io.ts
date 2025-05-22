@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pnpmioPackage = {
+  name: "pnp" as const,
+  domain: "pnpm.io" as const,
+  description: "Fast, disk space efficient package manager" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pnpm.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i" as const,
   programs: [
     "pnpm",
     "pnpx",
@@ -174,13 +178,7 @@ export const pnpmioPackage = {
     "7.19.0",
     "7.18.2",
   ] as const,
-  name: "pnpm.io" as const,
-  domain: "pnpm.io" as const,
-  description: "Package information for pnpm.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pnpm.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i" as const,
+  fullPath: "pnpm.io" as const,
 }
 
 export type PnpmioPackage = typeof pnpmioPackage

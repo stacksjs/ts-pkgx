@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const bitwardencomPackage = {
+  name: "bw" as const,
+  domain: "bitwarden.com" as const,
+  description: "Secure and free password manager for all of your devices" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bitwarden.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) bw" as const,
   programs: [
     "bw",
   ] as const,
@@ -35,16 +39,10 @@ export const bitwardencomPackage = {
     "2024.2.0",
     "1.22.1",
   ] as const,
+  fullPath: "bitwarden.com" as const,
   aliases: [
     "bw",
   ] as const,
-  name: "bitwarden.com" as const,
-  domain: "bitwarden.com" as const,
-  description: "Package information for bitwarden.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bitwarden.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +bitwarden.com -- $SHELL -i" as const,
 }
 
 export type BitwardencomPackage = typeof bitwardencomPackage

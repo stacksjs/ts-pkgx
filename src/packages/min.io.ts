@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const minioPackage = {
+  name: "minio" as const,
+  domain: "min.io" as const,
+  description: "MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/min.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) minio" as const,
   programs: [
     "minio",
   ] as const,
@@ -10,16 +14,10 @@ export const minioPackage = {
   versions: [
     "2023.10.25.6.33.25",
   ] as const,
+  fullPath: "min.io" as const,
   aliases: [
     "minio",
   ] as const,
-  name: "min.io" as const,
-  domain: "min.io" as const,
-  description: "Package information for min.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/min.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +min.io -- $SHELL -i" as const,
 }
 
 export type MinioPackage = typeof minioPackage

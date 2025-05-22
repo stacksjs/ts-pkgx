@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const helixeditorcomPackage = {
+  name: "hx" as const,
+  domain: "helix-editor.com" as const,
+  description: "A post-modern modal text editor." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/helix-editor.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) hx" as const,
   programs: [
     "hx",
   ] as const,
@@ -17,16 +21,10 @@ export const helixeditorcomPackage = {
     "23.3.0",
     "22.12.0",
   ] as const,
+  fullPath: "helix-editor.com" as const,
   aliases: [
     "hx",
   ] as const,
-  name: "helix/editor.com" as const,
-  domain: "helix/editor.com" as const,
-  description: "Package information for helix/editor.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/helix/editor.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +helix/editor.com -- $SHELL -i" as const,
 }
 
 export type HelixeditorcomPackage = typeof helixeditorcomPackage

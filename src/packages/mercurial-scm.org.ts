@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mercurialscmorgPackage = {
+  name: "mercurial-scm.org" as const,
+  domain: "mercurial-scm.org" as const,
+  description: "Scalable distributed version control system" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mercurial-scm.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +mercurial-scm.org -- $SHELL -i" as const,
   programs: [
     "hg",
     "chg",
@@ -36,13 +40,7 @@ export const mercurialscmorgPackage = {
     "6.5.2",
     "6.5.0",
   ] as const,
-  name: "mercurial/scm.org" as const,
-  domain: "mercurial/scm.org" as const,
-  description: "Package information for mercurial/scm.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mercurial/scm.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mercurial/scm.org -- $SHELL -i" as const,
+  fullPath: "mercurial-scm.org" as const,
 }
 
 export type MercurialscmorgPackage = typeof mercurialscmorgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const kluctlioPackage = {
+  name: "kluctl" as const,
+  domain: "kluctl.io" as const,
+  description: "The missing glue to put together large Kubernetes deployments, composed of multiple smaller parts (Helm/Kustomize/...)  in a manageable and unified way." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kluctl.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) kluctl" as const,
   programs: [
     "kluctl",
   ] as const,
@@ -23,13 +27,7 @@ export const kluctlioPackage = {
     "2.22.0",
     "2.21.2",
   ] as const,
-  name: "kluctl.io" as const,
-  domain: "kluctl.io" as const,
-  description: "Package information for kluctl.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kluctl.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +kluctl.io -- $SHELL -i" as const,
+  fullPath: "kluctl.io" as const,
 }
 
 export type KluctlioPackage = typeof kluctlioPackage

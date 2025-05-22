@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const harfbuzzorgPackage = {
+  name: "harfbuzz.org" as const,
+  domain: "harfbuzz.org" as const,
+  description: "HarfBuzz text shaping engine" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/harfbuzz.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +harfbuzz.org -- $SHELL -i" as const,
   programs: [
     "hb-ot-shape-closure",
     "hb-shape",
@@ -46,13 +50,7 @@ export const harfbuzzorgPackage = {
     "7.0.0",
     "5.3.1",
   ] as const,
-  name: "harfbuzz.org" as const,
-  domain: "harfbuzz.org" as const,
-  description: "Package information for harfbuzz.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/harfbuzz.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +harfbuzz.org -- $SHELL -i" as const,
+  fullPath: "harfbuzz.org" as const,
 }
 
 export type HarfbuzzorgPackage = typeof harfbuzzorgPackage

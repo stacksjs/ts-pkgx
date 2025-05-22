@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gitscmorgPackage = {
+  name: "git" as const,
+  domain: "git-scm.org" as const,
+  description: "Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/git-scm.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +git-scm.org -- $SHELL -i" as const,
   programs: [
     "git",
     "git-cvsserver",
@@ -44,13 +48,7 @@ export const gitscmorgPackage = {
     "2.39.0",
     "2.38.1",
   ] as const,
-  name: "git/scm.org" as const,
-  domain: "git/scm.org" as const,
-  description: "Package information for git/scm.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/git/scm.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +git/scm.org -- $SHELL -i" as const,
+  fullPath: "git-scm.org" as const,
 }
 
 export type GitscmorgPackage = typeof gitscmorgPackage

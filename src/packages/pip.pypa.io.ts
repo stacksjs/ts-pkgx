@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pippypaioPackage = {
+  name: "pip" as const,
+  domain: "pip.pypa.io" as const,
+  description: "The Python package installer" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pip.pypa.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i" as const,
   programs: [
     "pip",
     "pip3.8",
@@ -42,13 +46,7 @@ export const pippypaioPackage = {
     "19.3.1",
     "18.1.0",
   ] as const,
-  name: "pip.pypa.io" as const,
-  domain: "pip.pypa.io" as const,
-  description: "Package information for pip.pypa.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pip.pypa.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i" as const,
+  fullPath: "pip.pypa.io" as const,
 }
 
 export type PippypaioPackage = typeof pippypaioPackage

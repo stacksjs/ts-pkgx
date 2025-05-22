@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const wasmerioPackage = {
+  name: "wasmer" as const,
+  domain: "wasmer.io" as const,
+  description: "🚀 Fast, secure, lightweight containers based on WebAssembly" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wasmer.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) wasmer" as const,
   programs: [
     "wasmer",
   ] as const,
@@ -32,13 +36,7 @@ export const wasmerioPackage = {
     "4.2.3",
     "4.2.2",
   ] as const,
-  name: "wasmer.io" as const,
-  domain: "wasmer.io" as const,
-  description: "Package information for wasmer.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wasmer.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +wasmer.io -- $SHELL -i" as const,
+  fullPath: "wasmer.io" as const,
 }
 
 export type WasmerioPackage = typeof wasmerioPackage

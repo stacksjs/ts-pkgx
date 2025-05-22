@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const midnightcommanderorgPackage = {
+  name: "Midnight Commander" as const,
+  domain: "midnight-commander.org" as const,
+  description: "Terminal-based visual file manager" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/midnight-commander.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +midnight-commander.org -- $SHELL -i" as const,
   programs: [
     "mc",
     "mcdiff",
@@ -22,16 +26,10 @@ export const midnightcommanderorgPackage = {
     "4.8.29",
     "4.8.28",
   ] as const,
+  fullPath: "midnight-commander.org" as const,
   aliases: [
     "midnight commander",
   ] as const,
-  name: "midnight/commander.org" as const,
-  domain: "midnight/commander.org" as const,
-  description: "Package information for midnight/commander.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/midnight/commander.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +midnight/commander.org -- $SHELL -i" as const,
 }
 
 export type MidnightcommanderorgPackage = typeof midnightcommanderorgPackage

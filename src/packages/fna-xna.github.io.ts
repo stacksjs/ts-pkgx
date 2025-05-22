@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const fnaxnagithubioPackage = {
+  name: "fna-xna.github.io" as const,
+  domain: "fna-xna.github.io" as const,
+  description: "FAudio - Accuracy-focused XAudio reimplementation for open platforms" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fna-xna.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +fna-xna.github.io -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -26,13 +30,7 @@ export const fnaxnagithubioPackage = {
     "24.2.0",
     "24.1.0",
   ] as const,
-  name: "fna/xna.github.io" as const,
-  domain: "fna/xna.github.io" as const,
-  description: "Package information for fna/xna.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fna/xna.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +fna/xna.github.io -- $SHELL -i" as const,
+  fullPath: "fna-xna.github.io" as const,
 }
 
 export type FnaxnagithubioPackage = typeof fnaxnagithubioPackage

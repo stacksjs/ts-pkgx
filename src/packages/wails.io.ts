@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const wailsioPackage = {
+  name: "wails" as const,
+  domain: "wails.io" as const,
+  description: "Create beautiful applications using Go" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wails.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) wails" as const,
   programs: [
     "wails",
   ] as const,
@@ -25,13 +29,7 @@ export const wailsioPackage = {
     "2.8.1",
     "2.8.0",
   ] as const,
-  name: "wails.io" as const,
-  domain: "wails.io" as const,
-  description: "Package information for wails.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wails.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +wails.io -- $SHELL -i" as const,
+  fullPath: "wails.io" as const,
 }
 
 export type WailsioPackage = typeof wailsioPackage

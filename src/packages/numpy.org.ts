@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const numpyorgPackage = {
+  name: "f2py" as const,
+  domain: "numpy.org" as const,
+  description: "The fundamental package for scientific computing with Python." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/numpy.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) f2py" as const,
   programs: [
     "f2py",
   ] as const,
@@ -31,16 +35,10 @@ export const numpyorgPackage = {
     "1.26.3",
     "1.26.2",
   ] as const,
+  fullPath: "numpy.org" as const,
   aliases: [
     "f2py",
   ] as const,
-  name: "numpy.org" as const,
-  domain: "numpy.org" as const,
-  description: "Package information for numpy.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/numpy.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +numpy.org -- $SHELL -i" as const,
 }
 
 export type NumpyorgPackage = typeof numpyorgPackage

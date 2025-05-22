@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gitquickstatsshPackage = {
+  name: "git-quick-stats" as const,
+  domain: "git-quick-stats.sh" as const,
+  description: "▁▅▆▃▅ Git quick statistics is a simple and efficient way to access various statistics in git repository." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/git-quick-stats.sh/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) git-quick-stats" as const,
   programs: [
     "git-quick-stats",
   ] as const,
@@ -26,13 +30,7 @@ export const gitquickstatsshPackage = {
     "2.5.0",
     "2.4.1",
   ] as const,
-  name: "git/quick-stats.sh" as const,
-  domain: "git/quick-stats.sh" as const,
-  description: "Package information for git/quick-stats.sh" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/git/quick-stats.sh/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +git/quick-stats.sh -- $SHELL -i" as const,
+  fullPath: "git-quick-stats.sh" as const,
 }
 
 export type GitquickstatsshPackage = typeof gitquickstatsshPackage

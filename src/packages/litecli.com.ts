@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const liteclicomPackage = {
+  name: "litecli" as const,
+  domain: "litecli.com" as const,
+  description: "CLI for SQLite Databases with auto-completion and syntax highlighting" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/litecli.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) litecli" as const,
   programs: [
     "litecli",
   ] as const,
@@ -27,13 +31,7 @@ export const liteclicomPackage = {
     "1.10.1",
     "1.10.0",
   ] as const,
-  name: "litecli.com" as const,
-  domain: "litecli.com" as const,
-  description: "Package information for litecli.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/litecli.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +litecli.com -- $SHELL -i" as const,
+  fullPath: "litecli.com" as const,
 }
 
 export type LiteclicomPackage = typeof liteclicomPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const jumppaddevPackage = {
+  name: "jumppad" as const,
+  domain: "jumppad.dev" as const,
+  description: "Modern cloud native development environments" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jumppad.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) jumppad" as const,
   programs: [
     "jumppad",
   ] as const,
@@ -28,13 +32,7 @@ export const jumppaddevPackage = {
     "0.11.1",
     "0.11.0",
   ] as const,
-  name: "jumppad.dev" as const,
-  domain: "jumppad.dev" as const,
-  description: "Package information for jumppad.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jumppad.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +jumppad.dev -- $SHELL -i" as const,
+  fullPath: "jumppad.dev" as const,
 }
 
 export type JumppaddevPackage = typeof jumppaddevPackage

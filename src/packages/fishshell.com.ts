@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const fishshellcomPackage = {
+  name: "fish" as const,
+  domain: "fishshell.com" as const,
+  description: "User-friendly command-line shell for UNIX-like operating systems" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fishshell.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +fishshell.com -- $SHELL -i" as const,
   programs: [
     "fish",
     "fish_indent",
@@ -25,13 +29,7 @@ export const fishshellcomPackage = {
     "3.6.0",
     "3.5.1",
   ] as const,
-  name: "fishshell.com" as const,
-  domain: "fishshell.com" as const,
-  description: "Package information for fishshell.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fishshell.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +fishshell.com -- $SHELL -i" as const,
+  fullPath: "fishshell.com" as const,
 }
 
 export type FishshellcomPackage = typeof fishshellcomPackage

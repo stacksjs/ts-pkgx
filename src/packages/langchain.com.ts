@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const langchaincomPackage = {
+  name: "langchain.com" as const,
+  domain: "langchain.com" as const,
+  description: "🦜🔗 Build context-aware reasoning applications" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/langchain.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +langchain.com -- $SHELL -i" as const,
   programs: [
     "f2py",
     "jsondiff",
@@ -47,13 +51,7 @@ export const langchaincomPackage = {
     "0.0.344",
     "0.0.343",
   ] as const,
-  name: "langchain.com" as const,
-  domain: "langchain.com" as const,
-  description: "Package information for langchain.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/langchain.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +langchain.com -- $SHELL -i" as const,
+  fullPath: "langchain.com" as const,
 }
 
 export type LangchaincomPackage = typeof langchaincomPackage

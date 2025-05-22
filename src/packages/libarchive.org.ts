@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libarchiveorgPackage = {
+  name: "libarchive.org" as const,
+  domain: "libarchive.org" as const,
+  description: "Multi-format archive and compression library" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libarchive.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +libarchive.org -- $SHELL -i" as const,
   programs: [
     "bsdcat",
     "bsdcpio",
@@ -31,13 +35,7 @@ export const libarchiveorgPackage = {
     "3.7.0",
     "3.6.2",
   ] as const,
-  name: "libarchive.org" as const,
-  domain: "libarchive.org" as const,
-  description: "Package information for libarchive.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libarchive.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libarchive.org -- $SHELL -i" as const,
+  fullPath: "libarchive.org" as const,
 }
 
 export type LibarchiveorgPackage = typeof libarchiveorgPackage

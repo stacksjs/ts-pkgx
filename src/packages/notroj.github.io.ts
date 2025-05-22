@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const notrojgithubioPackage = {
+  name: "notroj.github.io" as const,
+  domain: "notroj.github.io" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx notroj.github.io" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "notroj.github.io" as const,
-  domain: "notroj.github.io" as const,
-  description: "Package information for notroj.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/notroj.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +notroj.github.io -- $SHELL -i" as const,
+  fullPath: "notroj.github.io" as const,
 }
 
 export type NotrojgithubioPackage = typeof notrojgithubioPackage

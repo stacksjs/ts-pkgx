@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const swiftorgPackage = {
+  name: "swift" as const,
+  domain: "swift.org" as const,
+  description: "The Swift Programming Language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/swift.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i" as const,
   programs: [
     "docc",
     "dsymutil",
@@ -51,13 +55,7 @@ export const swiftorgPackage = {
     "5.10.0",
     "5.9.2",
   ] as const,
-  name: "swift.org" as const,
-  domain: "swift.org" as const,
-  description: "Package information for swift.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/swift.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i" as const,
+  fullPath: "swift.org" as const,
 }
 
 export type SwiftorgPackage = typeof swiftorgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const jenkinsioPackage = {
+  name: "jenkins-lts" as const,
+  domain: "jenkins.io" as const,
+  description: "Extendable open source continuous integration server" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jenkins.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i" as const,
   programs: [
     "jenkins-lts",
     "jenkins-lts-cli",
@@ -30,16 +34,10 @@ export const jenkinsioPackage = {
     "2.426.3",
     "2.426.2",
   ] as const,
+  fullPath: "jenkins.io" as const,
   aliases: [
     "jenkins-lts",
   ] as const,
-  name: "jenkins.io" as const,
-  domain: "jenkins.io" as const,
-  description: "Package information for jenkins.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jenkins.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i" as const,
 }
 
 export type JenkinsioPackage = typeof jenkinsioPackage

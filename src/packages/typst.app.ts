@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const typstappPackage = {
+  name: "typst" as const,
+  domain: "typst.app" as const,
+  description: "A new markup-based typesetting system that is powerful and easy to learn." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/typst.app/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) typst" as const,
   programs: [
     "typst",
   ] as const,
@@ -25,13 +29,7 @@ export const typstappPackage = {
     "0.2.0",
     "0.0.0",
   ] as const,
-  name: "typst.app" as const,
-  domain: "typst.app" as const,
-  description: "Package information for typst.app" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/typst.app/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +typst.app -- $SHELL -i" as const,
+  fullPath: "typst.app" as const,
 }
 
 export type TypstappPackage = typeof typstappPackage

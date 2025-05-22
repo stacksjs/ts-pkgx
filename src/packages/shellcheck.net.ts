@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const shellchecknetPackage = {
+  name: "shellcheck" as const,
+  domain: "shellcheck.net" as const,
+  description: "ShellCheck, a static analysis tool for shell scripts" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/shellcheck.net/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) shellcheck" as const,
   programs: [
     "shellcheck",
   ] as const,
@@ -14,13 +18,7 @@ export const shellchecknetPackage = {
     "0.9.0",
     "0.8.0",
   ] as const,
-  name: "shellcheck.net" as const,
-  domain: "shellcheck.net" as const,
-  description: "Package information for shellcheck.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/shellcheck.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +shellcheck.net -- $SHELL -i" as const,
+  fullPath: "shellcheck.net" as const,
 }
 
 export type ShellchecknetPackage = typeof shellchecknetPackage

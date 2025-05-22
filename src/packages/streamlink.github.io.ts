@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const streamlinkgithubioPackage = {
+  name: "streamlink" as const,
+  domain: "streamlink.github.io" as const,
+  description: "Streamlink is a CLI utility which pipes video streams from various services into a video player" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/streamlink.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) streamlink" as const,
   programs: [
     "streamlink",
   ] as const,
@@ -32,13 +36,7 @@ export const streamlinkgithubioPackage = {
     "6.7.1",
     "6.7.0",
   ] as const,
-  name: "streamlink.github.io" as const,
-  domain: "streamlink.github.io" as const,
-  description: "Package information for streamlink.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/streamlink.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +streamlink.github.io -- $SHELL -i" as const,
+  fullPath: "streamlink.github.io" as const,
 }
 
 export type StreamlinkgithubioPackage = typeof streamlinkgithubioPackage

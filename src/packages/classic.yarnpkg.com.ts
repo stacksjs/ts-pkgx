@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const classicyarnpkgcomPackage = {
+  name: "classic.yarnpkg.com" as const,
+  domain: "classic.yarnpkg.com" as const,
+  description: "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/classic.yarnpkg.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i" as const,
   programs: [
     "yarn",
     "yarnpkg",
@@ -16,13 +20,7 @@ export const classicyarnpkgcomPackage = {
     "1.22.20",
     "1.22.19",
   ] as const,
-  name: "classic.yarnpkg.com" as const,
-  domain: "classic.yarnpkg.com" as const,
-  description: "Package information for classic.yarnpkg.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/classic.yarnpkg.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i" as const,
+  fullPath: "classic.yarnpkg.com" as const,
 }
 
 export type ClassicyarnpkgcomPackage = typeof classicyarnpkgcomPackage

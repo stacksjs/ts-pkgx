@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const astralshPackage = {
+  name: "astral.sh" as const,
+  domain: "astral.sh" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx astral.sh" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "astral.sh" as const,
-  domain: "astral.sh" as const,
-  description: "Package information for astral.sh" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +astral.sh -- $SHELL -i" as const,
+  fullPath: "astral.sh" as const,
 }
 
 export type AstralshPackage = typeof astralshPackage

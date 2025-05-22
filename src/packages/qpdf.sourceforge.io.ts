@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const qpdfsourceforgeioPackage = {
+  name: "qpdf" as const,
+  domain: "qpdf.sourceforge.io" as const,
+  description: "qpdf: A content-preserving PDF document transformer" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/qpdf.sourceforge.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) qpdf" as const,
   programs: [
     "qpdf",
   ] as const,
@@ -24,13 +28,7 @@ export const qpdfsourceforgeioPackage = {
     "11.7.0",
     "11.6.4",
   ] as const,
-  name: "qpdf.sourceforge.io" as const,
-  domain: "qpdf.sourceforge.io" as const,
-  description: "Package information for qpdf.sourceforge.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/qpdf.sourceforge.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +qpdf.sourceforge.io -- $SHELL -i" as const,
+  fullPath: "qpdf.sourceforge.io" as const,
 }
 
 export type QpdfsourceforgeioPackage = typeof qpdfsourceforgeioPackage

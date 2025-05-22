@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cligithubcomPackage = {
+  name: "gh" as const,
+  domain: "cli.github.com" as const,
+  description: "GitHub’s official command line tool" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cli.github.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) gh" as const,
   programs: [
     "gh",
   ] as const,
@@ -84,16 +88,10 @@ export const cligithubcomPackage = {
     "2.21.2",
     "2.20.2",
   ] as const,
+  fullPath: "cli.github.com" as const,
   aliases: [
     "gh",
   ] as const,
-  name: "cli.github.com" as const,
-  domain: "cli.github.com" as const,
-  description: "Package information for cli.github.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cli.github.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cli.github.com -- $SHELL -i" as const,
 }
 
 export type CligithubcomPackage = typeof cligithubcomPackage

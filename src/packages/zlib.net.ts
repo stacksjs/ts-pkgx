@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const zlibnetPackage = {
+  name: "zlib.net" as const,
+  domain: "zlib.net" as const,
+  description: "A massively spiffy yet delicately unobtrusive compression library." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/zlib.net/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +zlib.net -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -11,13 +15,7 @@ export const zlibnetPackage = {
     "1.2.13",
     "1.2.12",
   ] as const,
-  name: "zlib.net" as const,
-  domain: "zlib.net" as const,
-  description: "Package information for zlib.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/zlib.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +zlib.net -- $SHELL -i" as const,
+  fullPath: "zlib.net" as const,
 }
 
 export type ZlibnetPackage = typeof zlibnetPackage

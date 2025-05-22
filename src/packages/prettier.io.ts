@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const prettierioPackage = {
+  name: "prettier" as const,
+  domain: "prettier.io" as const,
+  description: "Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/prettier.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) prettier" as const,
   programs: [
     "prettier",
   ] as const,
@@ -23,13 +27,7 @@ export const prettierioPackage = {
     "3.3.0",
     "3.2.5",
   ] as const,
-  name: "prettier.io" as const,
-  domain: "prettier.io" as const,
-  description: "Package information for prettier.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/prettier.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +prettier.io -- $SHELL -i" as const,
+  fullPath: "prettier.io" as const,
 }
 
 export type PrettierioPackage = typeof prettierioPackage

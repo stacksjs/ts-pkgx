@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openvpnnetPackage = {
+  name: "openvpn" as const,
+  domain: "openvpn.net" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openvpn.net/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) openvpn" as const,
   programs: [
     "openvpn",
   ] as const,
@@ -28,13 +32,7 @@ export const openvpnnetPackage = {
     "2.6.4",
     "2.5.10",
   ] as const,
-  name: "openvpn.net" as const,
-  domain: "openvpn.net" as const,
-  description: "Package information for openvpn.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openvpn.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openvpn.net -- $SHELL -i" as const,
+  fullPath: "openvpn.net" as const,
 }
 
 export type OpenvpnnetPackage = typeof openvpnnetPackage

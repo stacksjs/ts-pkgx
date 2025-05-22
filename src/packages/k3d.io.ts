@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const k3dioPackage = {
+  name: "k3d" as const,
+  domain: "k3d.io" as const,
+  description: "Little helper to run CNCF's k3s in Docker" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/k3d.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) k3d" as const,
   programs: [
     "k3d",
   ] as const,
@@ -26,13 +30,7 @@ export const k3dioPackage = {
     "5.5.0",
     "5.4.9",
   ] as const,
-  name: "k3d.io" as const,
-  domain: "k3d.io" as const,
-  description: "Package information for k3d.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/k3d.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +k3d.io -- $SHELL -i" as const,
+  fullPath: "k3d.io" as const,
 }
 
 export type K3dioPackage = typeof k3dioPackage

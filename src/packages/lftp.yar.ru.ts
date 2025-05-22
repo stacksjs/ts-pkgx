@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const lftpyarruPackage = {
+  name: "lftp" as const,
+  domain: "lftp.yar.ru" as const,
+  description: "sophisticated command line file transfer program (ftp, http, sftp, fish, torrent)" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i" as const,
   programs: [
     "lftp",
     "lftpget",
@@ -23,13 +27,7 @@ export const lftpyarruPackage = {
     "4.9.2",
     "4.9.1",
   ] as const,
-  name: "lftp.yar.ru" as const,
-  domain: "lftp.yar.ru" as const,
-  description: "Package information for lftp.yar.ru" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i" as const,
+  fullPath: "lftp.yar.ru" as const,
 }
 
 export type LftpyarruPackage = typeof lftpyarruPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const snykioPackage = {
+  name: "snyk" as const,
+  domain: "snyk.io" as const,
+  description: "Scans and monitors projects for security vulnerabilities" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/snyk.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) snyk" as const,
   programs: [
     "snyk",
   ] as const,
@@ -52,13 +56,7 @@ export const snykioPackage = {
     "1.1281.0",
     "1.1280.1",
   ] as const,
-  name: "snyk.io" as const,
-  domain: "snyk.io" as const,
-  description: "Package information for snyk.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/snyk.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +snyk.io -- $SHELL -i" as const,
+  fullPath: "snyk.io" as const,
 }
 
 export type SnykioPackage = typeof snykioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const sentryioPackage = {
+  name: "sentry-cli" as const,
+  domain: "sentry.io" as const,
+  description: "Command-line utility to interact with Sentry" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sentry.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) sentry-cli" as const,
   programs: [
     "sentry-cli",
   ] as const,
@@ -55,16 +59,10 @@ export const sentryioPackage = {
     "2.30.0",
     "2.29.1",
   ] as const,
+  fullPath: "sentry.io" as const,
   aliases: [
     "sentry-cli",
   ] as const,
-  name: "sentry.io" as const,
-  domain: "sentry.io" as const,
-  description: "Package information for sentry.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sentry.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +sentry.io -- $SHELL -i" as const,
 }
 
 export type SentryioPackage = typeof sentryioPackage

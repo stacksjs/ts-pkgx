@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const circlecicomPackage = {
+  name: "circleci" as const,
+  domain: "circleci.com" as const,
+  description: "Enables you to reproduce the CircleCI environment locally" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/circleci.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) circleci" as const,
   programs: [
     "circleci",
   ] as const,
@@ -60,13 +64,7 @@ export const circlecicomPackage = {
     "0.1.24435",
     "0.1.23845",
   ] as const,
-  name: "circleci.com" as const,
-  domain: "circleci.com" as const,
-  description: "Package information for circleci.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/circleci.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +circleci.com -- $SHELL -i" as const,
+  fullPath: "circleci.com" as const,
 }
 
 export type CirclecicomPackage = typeof circlecicomPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const abseilioPackage = {
+  name: "abseil.io" as const,
+  domain: "abseil.io" as const,
+  description: "Abseil Common Libraries (C++)" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/abseil.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -24,13 +28,7 @@ export const abseilioPackage = {
     "20230125.2.0",
     "20220623.2.0",
   ] as const,
-  name: "abseil.io" as const,
-  domain: "abseil.io" as const,
-  description: "Package information for abseil.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/abseil.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i" as const,
+  fullPath: "abseil.io" as const,
 }
 
 export type AbseilioPackage = typeof abseilioPackage

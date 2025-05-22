@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const duckdborgPackage = {
+  name: "duckdb" as const,
+  domain: "duckdb.org" as const,
+  description: "DuckDB is an analytical in-process SQL database management system" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/duckdb.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) duckdb" as const,
   programs: [
     "duckdb",
   ] as const,
@@ -28,13 +32,7 @@ export const duckdborgPackage = {
     "0.8.0",
     "0.7.1",
   ] as const,
-  name: "duckdb.org" as const,
-  domain: "duckdb.org" as const,
-  description: "Package information for duckdb.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/duckdb.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +duckdb.org -- $SHELL -i" as const,
+  fullPath: "duckdb.org" as const,
 }
 
 export type DuckdborgPackage = typeof duckdborgPackage

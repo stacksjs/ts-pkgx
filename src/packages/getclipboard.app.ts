@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const getclipboardappPackage = {
+  name: "cb" as const,
+  domain: "getclipboard.app" as const,
+  description: "😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨𝙡𝙮 smart clipboard manager" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getclipboard.app/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) cb" as const,
   programs: [
     "cb",
   ] as const,
@@ -19,16 +23,10 @@ export const getclipboardappPackage = {
     "0.9.0.1",
     "0.10.0",
   ] as const,
+  fullPath: "getclipboard.app" as const,
   aliases: [
     "cb",
   ] as const,
-  name: "getclipboard.app" as const,
-  domain: "getclipboard.app" as const,
-  description: "Package information for getclipboard.app" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getclipboard.app/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +getclipboard.app -- $SHELL -i" as const,
 }
 
 export type GetclipboardappPackage = typeof getclipboardappPackage

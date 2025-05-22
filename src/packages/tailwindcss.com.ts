@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tailwindcsscomPackage = {
+  name: "tailwindcss" as const,
+  domain: "tailwindcss.com" as const,
+  description: "A utility-first CSS framework for rapid UI development." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tailwindcss.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) tailwindcss" as const,
   programs: [
     "tailwindcss",
   ] as const,
@@ -50,13 +54,7 @@ export const tailwindcsscomPackage = {
     "3.4.4",
     "3.4.3",
   ] as const,
-  name: "tailwindcss.com" as const,
-  domain: "tailwindcss.com" as const,
-  description: "Package information for tailwindcss.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tailwindcss.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tailwindcss.com -- $SHELL -i" as const,
+  fullPath: "tailwindcss.com" as const,
 }
 
 export type TailwindcsscomPackage = typeof tailwindcsscomPackage

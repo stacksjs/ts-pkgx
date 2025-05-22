@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const sfcgalorgPackage = {
+  name: "sfcgal-config" as const,
+  domain: "sfcgal.org" as const,
+  description: "C++ wrapper library around CGAL" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sfcgal.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) sfcgal-config" as const,
   programs: [
     "sfcgal-config",
   ] as const,
@@ -20,16 +24,10 @@ export const sfcgalorgPackage = {
     "1.5.0",
     "1.4.1",
   ] as const,
+  fullPath: "sfcgal.org" as const,
   aliases: [
     "sfcgal-config",
   ] as const,
-  name: "sfcgal.org" as const,
-  domain: "sfcgal.org" as const,
-  description: "Package information for sfcgal.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sfcgal.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +sfcgal.org -- $SHELL -i" as const,
 }
 
 export type SfcgalorgPackage = typeof sfcgalorgPackage

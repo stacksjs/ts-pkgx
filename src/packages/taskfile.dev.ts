@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const taskfiledevPackage = {
+  name: "task" as const,
+  domain: "taskfile.dev" as const,
+  description: "A task runner / simpler Make alternative written in Go" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/taskfile.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) task" as const,
   programs: [
     "task",
   ] as const,
@@ -39,13 +43,7 @@ export const taskfiledevPackage = {
     "3.27.1",
     "3.27.0",
   ] as const,
-  name: "taskfile.dev" as const,
-  domain: "taskfile.dev" as const,
-  description: "Package information for taskfile.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/taskfile.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +taskfile.dev -- $SHELL -i" as const,
+  fullPath: "taskfile.dev" as const,
 }
 
 export type TaskfiledevPackage = typeof taskfiledevPackage

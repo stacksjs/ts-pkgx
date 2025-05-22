@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const unboundnetPackage = {
+  name: "unbound" as const,
+  domain: "unbound.net" as const,
+  description: "Unbound is a validating, recursive, and caching DNS resolver." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/unbound.net/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +unbound.net -- $SHELL -i" as const,
   programs: [
     "unbound",
     "unbound-anchor",
@@ -27,13 +31,7 @@ export const unboundnetPackage = {
     "1.18.0",
     "1.17.1",
   ] as const,
-  name: "unbound.net" as const,
-  domain: "unbound.net" as const,
-  description: "Package information for unbound.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/unbound.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +unbound.net -- $SHELL -i" as const,
+  fullPath: "unbound.net" as const,
 }
 
 export type UnboundnetPackage = typeof unboundnetPackage

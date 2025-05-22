@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openmpiorgPackage = {
+  name: "open-mpi.org" as const,
+  domain: "open-mpi.org" as const,
+  description: "Open MPI main development repository" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/open-mpi.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +open-mpi.org -- $SHELL -i" as const,
   programs: [
     "mpic++",
     "mpiCC",
@@ -36,13 +40,7 @@ export const openmpiorgPackage = {
     "4.1.7",
     "4.1.5",
   ] as const,
-  name: "open/mpi.org" as const,
-  domain: "open/mpi.org" as const,
-  description: "Package information for open/mpi.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/open/mpi.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +open/mpi.org -- $SHELL -i" as const,
+  fullPath: "open-mpi.org" as const,
 }
 
 export type OpenmpiorgPackage = typeof openmpiorgPackage

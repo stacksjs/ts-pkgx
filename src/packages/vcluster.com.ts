@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const vclustercomPackage = {
+  name: "vcluster" as const,
+  domain: "vcluster.com" as const,
+  description: "vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a namespace of the underlying k8s cluster. It's cheaper than creating separate full-blown clusters and it offers better multi-tenancy and isolation than regular namespaces." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vcluster.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) vcluster" as const,
   programs: [
     "vcluster",
   ] as const,
@@ -46,13 +50,7 @@ export const vclustercomPackage = {
     "0.19.5",
     "0.19.4",
   ] as const,
-  name: "vcluster.com" as const,
-  domain: "vcluster.com" as const,
-  description: "Package information for vcluster.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vcluster.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +vcluster.com -- $SHELL -i" as const,
+  fullPath: "vcluster.com" as const,
 }
 
 export type VclustercomPackage = typeof vclustercomPackage

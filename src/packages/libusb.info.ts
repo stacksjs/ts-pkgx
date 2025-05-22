@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libusbinfoPackage = {
+  name: "libusb.info" as const,
+  domain: "libusb.info" as const,
+  description: "A cross-platform library to access USB devices" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libusb.info/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -10,13 +14,7 @@ export const libusbinfoPackage = {
     "1.0.27",
     "1.0.26",
   ] as const,
-  name: "libusb.info" as const,
-  domain: "libusb.info" as const,
-  description: "Package information for libusb.info" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libusb.info/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i" as const,
+  fullPath: "libusb.info" as const,
 }
 
 export type LibusbinfoPackage = typeof libusbinfoPackage

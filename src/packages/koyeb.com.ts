@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const koyebcomPackage = {
+  name: "koyeb" as const,
+  domain: "koyeb.com" as const,
+  description: "Koyeb cli" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/koyeb.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) koyeb" as const,
   programs: [
     "koyeb",
   ] as const,
@@ -44,13 +48,7 @@ export const koyebcomPackage = {
     "3.0.2",
     "3.0.1",
   ] as const,
-  name: "koyeb.com" as const,
-  domain: "koyeb.com" as const,
-  description: "Package information for koyeb.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/koyeb.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +koyeb.com -- $SHELL -i" as const,
+  fullPath: "koyeb.com" as const,
 }
 
 export type KoyebcomPackage = typeof koyebcomPackage

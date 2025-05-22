@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const terragruntgruntworkioPackage = {
+  name: "terragrunt" as const,
+  domain: "terragrunt.gruntwork.io" as const,
+  description: "Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/terragrunt.gruntwork.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) terragrunt" as const,
   programs: [
     "terragrunt",
   ] as const,
@@ -353,13 +357,7 @@ export const terragruntgruntworkioPackage = {
     "0.45.1",
     "0.45.0",
   ] as const,
-  name: "terragrunt.gruntwork.io" as const,
-  domain: "terragrunt.gruntwork.io" as const,
-  description: "Package information for terragrunt.gruntwork.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/terragrunt.gruntwork.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +terragrunt.gruntwork.io -- $SHELL -i" as const,
+  fullPath: "terragrunt.gruntwork.io" as const,
 }
 
 export type TerragruntgruntworkioPackage = typeof terragruntgruntworkioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tesseractocrgithubioPackage = {
+  name: "tesseract" as const,
+  domain: "tesseract-ocr.github.io" as const,
+  description: "Tesseract Open Source OCR Engine (main repository)" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tesseract-ocr.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) tesseract" as const,
   programs: [
     "tesseract",
   ] as const,
@@ -23,13 +27,7 @@ export const tesseractocrgithubioPackage = {
     "5.3.1",
     "5.3.0",
   ] as const,
-  name: "tesseract/ocr.github.io" as const,
-  domain: "tesseract/ocr.github.io" as const,
-  description: "Package information for tesseract/ocr.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tesseract/ocr.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tesseract/ocr.github.io -- $SHELL -i" as const,
+  fullPath: "tesseract-ocr.github.io" as const,
 }
 
 export type TesseractocrgithubioPackage = typeof tesseractocrgithubioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const rubocoporgPackage = {
+  name: "rubocop" as const,
+  domain: "rubocop.org" as const,
+  description: "A Ruby static code analyzer and formatter, based on the community Ruby style guide." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rubocop.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) rubocop" as const,
   programs: [
     "rubocop",
   ] as const,
@@ -35,13 +39,7 @@ export const rubocoporgPackage = {
     "1.69.0",
     "1.68.0",
   ] as const,
-  name: "rubocop.org" as const,
-  domain: "rubocop.org" as const,
-  description: "Package information for rubocop.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rubocop.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +rubocop.org -- $SHELL -i" as const,
+  fullPath: "rubocop.org" as const,
 }
 
 export type RubocoporgPackage = typeof rubocoporgPackage

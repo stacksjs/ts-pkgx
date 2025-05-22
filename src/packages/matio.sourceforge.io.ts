@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const matiosourceforgeioPackage = {
+  name: "libmatio" as const,
+  domain: "matio.sourceforge.io" as const,
+  description: "C library for reading and writing MATLAB MAT files" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/matio.sourceforge.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) matdump" as const,
   programs: [
     "matdump",
   ] as const,
@@ -18,16 +22,10 @@ export const matiosourceforgeioPackage = {
     "1.5.24",
     "1.5.23",
   ] as const,
+  fullPath: "matio.sourceforge.io" as const,
   aliases: [
     "libmatio",
   ] as const,
-  name: "matio.sourceforge.io" as const,
-  domain: "matio.sourceforge.io" as const,
-  description: "Package information for matio.sourceforge.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/matio.sourceforge.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +matio.sourceforge.io -- $SHELL -i" as const,
 }
 
 export type MatiosourceforgeioPackage = typeof matiosourceforgeioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const nxdevPackage = {
+  name: "nx.dev" as const,
+  domain: "nx.dev" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nx.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) nx" as const,
   programs: [
     "nx",
   ] as const,
@@ -160,13 +164,7 @@ export const nxdevPackage = {
     "17.0.5",
     "17.0.4",
   ] as const,
-  name: "nx.dev" as const,
-  domain: "nx.dev" as const,
-  description: "Package information for nx.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nx.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +nx.dev -- $SHELL -i" as const,
+  fullPath: "nx.dev" as const,
 }
 
 export type NxdevPackage = typeof nxdevPackage

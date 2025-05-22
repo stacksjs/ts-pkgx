@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const argbashdevPackage = {
+  name: "argbash" as const,
+  domain: "argbash.dev" as const,
+  description: "Bash argument parsing code generator" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/argbash.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +argbash.dev -- $SHELL -i" as const,
   programs: [
     "argbash",
     "argbash-init",
@@ -15,13 +19,7 @@ export const argbashdevPackage = {
   versions: [
     "2.10.0",
   ] as const,
-  name: "argbash.dev" as const,
-  domain: "argbash.dev" as const,
-  description: "Package information for argbash.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/argbash.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +argbash.dev -- $SHELL -i" as const,
+  fullPath: "argbash.dev" as const,
 }
 
 export type ArgbashdevPackage = typeof argbashdevPackage

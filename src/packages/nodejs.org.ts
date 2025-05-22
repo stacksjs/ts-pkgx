@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const nodejsorgPackage = {
+  name: "node" as const,
+  domain: "nodejs.org" as const,
+  description: "Platform built on V8 to build network applications" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nodejs.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) node" as const,
   programs: [
     "node",
   ] as const,
@@ -154,16 +158,10 @@ export const nodejsorgPackage = {
     "14.20.1",
     "12.22.12",
   ] as const,
+  fullPath: "node" as const,
   aliases: [
     "node",
   ] as const,
-  name: "nodejs.org" as const,
-  domain: "nodejs.org" as const,
-  description: "Package information for nodejs.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nodejs.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +nodejs.org -- $SHELL -i" as const,
 }
 
 export type NodejsorgPackage = typeof nodejsorgPackage

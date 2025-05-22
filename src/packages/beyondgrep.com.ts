@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const beyondgrepcomPackage = {
+  name: "ack" as const,
+  domain: "beyondgrep.com" as const,
+  description: "ack is a grep-like search tool optimized for source code." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/beyondgrep.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) ack" as const,
   programs: [
     "ack",
   ] as const,
@@ -15,16 +19,10 @@ export const beyondgrepcomPackage = {
     "3.7.0",
     "3.6.0",
   ] as const,
+  fullPath: "beyondgrep.com" as const,
   aliases: [
     "ack",
   ] as const,
-  name: "beyondgrep.com" as const,
-  domain: "beyondgrep.com" as const,
-  description: "Package information for beyondgrep.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/beyondgrep.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +beyondgrep.com -- $SHELL -i" as const,
 }
 
 export type BeyondgrepcomPackage = typeof beyondgrepcomPackage

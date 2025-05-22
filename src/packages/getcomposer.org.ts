@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const getcomposerorgPackage = {
+  name: "composer" as const,
+  domain: "getcomposer.org" as const,
+  description: "Dependency Manager for PHP" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getcomposer.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +getcomposer.org -- $SHELL -i" as const,
   programs: [
     "composer",
     "composer.phar",
@@ -42,16 +46,10 @@ export const getcomposerorgPackage = {
     "2.2.24",
     "2.2.23",
   ] as const,
+  fullPath: "getcomposer.org" as const,
   aliases: [
     "composer",
   ] as const,
-  name: "getcomposer.org" as const,
-  domain: "getcomposer.org" as const,
-  description: "Package information for getcomposer.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/getcomposer.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +getcomposer.org -- $SHELL -i" as const,
 }
 
 export type GetcomposerorgPackage = typeof getcomposerorgPackage

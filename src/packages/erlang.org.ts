@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const erlangorgPackage = {
+  name: "erlang.org" as const,
+  domain: "erlang.org" as const,
+  description: "Programming language for highly scalable real-time systems" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/erlang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +erlang.org -- $SHELL -i" as const,
   programs: [
     "ct_run",
     "dialyzer",
@@ -94,13 +98,7 @@ export const erlangorgPackage = {
     "24.3.4.12",
     "24.3.4.11",
   ] as const,
-  name: "erlang.org" as const,
-  domain: "erlang.org" as const,
-  description: "Package information for erlang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/erlang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +erlang.org -- $SHELL -i" as const,
+  fullPath: "erlang.org" as const,
 }
 
 export type ErlangorgPackage = typeof erlangorgPackage

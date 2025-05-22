@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const githubcomfiatjafnakPackage = {
+  name: "nak" as const,
+  domain: "github.com/fiatjaf/nak" as const,
+  description: "a command line tool for doing all things nostr" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fiatjaf/nak/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) nak" as const,
   programs: [
     "nak",
   ] as const,
@@ -26,17 +30,11 @@ export const githubcomfiatjafnakPackage = {
     "0.9.0",
     "0.8.0",
   ] as const,
+  fullPath: "github.com/fiatjaf/nak" as const,
   aliases: [
     "nak",
     "fiatjaf/nak",
   ] as const,
-  name: "github.com/fiatjaf-nak" as const,
-  domain: "github.com/fiatjaf-nak" as const,
-  description: "Package information for github.com/fiatjaf-nak" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fiatjaf-nak/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +github.com/fiatjaf-nak -- $SHELL -i" as const,
 }
 
 export type GithubcomfiatjafnakPackage = typeof githubcomfiatjafnakPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const appiumioPackage = {
+  name: "appium" as const,
+  domain: "appium.io" as const,
+  description: "Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/appium.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) appium" as const,
   programs: [
     "appium",
   ] as const,
@@ -49,13 +53,7 @@ export const appiumioPackage = {
     "2.3.0",
     "2.2.3",
   ] as const,
-  name: "appium.io" as const,
-  domain: "appium.io" as const,
-  description: "Package information for appium.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/appium.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +appium.io -- $SHELL -i" as const,
+  fullPath: "appium.io" as const,
 }
 
 export type AppiumioPackage = typeof appiumioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const irohcomputerPackage = {
+  name: "iroh" as const,
+  domain: "iroh.computer" as const,
+  description: "peer-2-peer that just works" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/iroh.computer/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) iroh" as const,
   programs: [
     "iroh",
   ] as const,
@@ -44,13 +48,7 @@ export const irohcomputerPackage = {
     "0.6.0",
     "0.4.1",
   ] as const,
-  name: "iroh.computer" as const,
-  domain: "iroh.computer" as const,
-  description: "Package information for iroh.computer" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/iroh.computer/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +iroh.computer -- $SHELL -i" as const,
+  fullPath: "iroh.computer" as const,
 }
 
 export type IrohcomputerPackage = typeof irohcomputerPackage

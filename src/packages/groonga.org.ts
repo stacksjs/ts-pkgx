@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const groongaorgPackage = {
+  name: "groonga" as const,
+  domain: "groonga.org" as const,
+  description: "An embeddable fulltext search engine. Groonga is the successor project to Senna." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/groonga.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +groonga.org -- $SHELL -i" as const,
   programs: [
     "groonga",
     "groonga-suggest-create-dataset",
@@ -49,13 +53,7 @@ export const groongaorgPackage = {
     "13.0.7",
     "13.0.6",
   ] as const,
-  name: "groonga.org" as const,
-  domain: "groonga.org" as const,
-  description: "Package information for groonga.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/groonga.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +groonga.org -- $SHELL -i" as const,
+  fullPath: "groonga.org" as const,
 }
 
 export type GroongaorgPackage = typeof groongaorgPackage

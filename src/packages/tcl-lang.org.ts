@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tcllangorgPackage = {
+  name: "tcl-lang.org" as const,
+  domain: "tcl-lang.org" as const,
+  description: "Tool Command Language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +tcl-lang.org -- $SHELL -i" as const,
   programs: [
     "tclsh",
     "wish",
@@ -24,13 +28,7 @@ export const tcllangorgPackage = {
     "8.6.14",
     "8.6.13",
   ] as const,
-  name: "tcl/lang.org" as const,
-  domain: "tcl/lang.org" as const,
-  description: "Package information for tcl/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tcl/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tcl/lang.org -- $SHELL -i" as const,
+  fullPath: "tcl-lang.org" as const,
 }
 
 export type TcllangorgPackage = typeof tcllangorgPackage

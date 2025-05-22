@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const systemdioPackage = {
+  name: "systemd.io" as const,
+  domain: "systemd.io" as const,
+  description: "The systemd System and Service Manager" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/systemd.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +systemd.io -- $SHELL -i" as const,
   programs: [
     "busctl",
     "coredumpctl",
@@ -99,13 +103,7 @@ export const systemdioPackage = {
     "255.0.0",
     "254.0.0",
   ] as const,
-  name: "systemd.io" as const,
-  domain: "systemd.io" as const,
-  description: "Package information for systemd.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/systemd.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +systemd.io -- $SHELL -i" as const,
+  fullPath: "systemd.io" as const,
 }
 
 export type SystemdioPackage = typeof systemdioPackage

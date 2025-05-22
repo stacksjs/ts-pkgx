@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const leolangorgPackage = {
+  name: "leo" as const,
+  domain: "leo-lang.org" as const,
+  description: "🦁 The Leo Programming Language. A Programming Language for Formally Verified, Zero-Knowledge Applications" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/leo-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) leo" as const,
   programs: [
     "leo",
   ] as const,
@@ -24,13 +28,7 @@ export const leolangorgPackage = {
     "1.11.0",
     "1.10.0",
   ] as const,
-  name: "leo/lang.org" as const,
-  domain: "leo/lang.org" as const,
-  description: "Package information for leo/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/leo/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +leo/lang.org -- $SHELL -i" as const,
+  fullPath: "leo-lang.org" as const,
 }
 
 export type LeolangorgPackage = typeof leolangorgPackage

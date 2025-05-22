@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const bitcoinorgPackage = {
+  name: "bitcoin" as const,
+  domain: "bitcoin.org" as const,
+  description: "Decentralized, peer to peer payment network" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bitcoin.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i" as const,
   programs: [
     "bitcoin-cli",
     "bitcoin-tx",
@@ -37,13 +41,7 @@ export const bitcoinorgPackage = {
     "24.0.1",
     "23.2.0",
   ] as const,
-  name: "bitcoin.org" as const,
-  domain: "bitcoin.org" as const,
-  description: "Package information for bitcoin.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bitcoin.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i" as const,
+  fullPath: "bitcoin.org" as const,
 }
 
 export type BitcoinorgPackage = typeof bitcoinorgPackage

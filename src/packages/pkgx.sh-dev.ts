@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pkgxshdevPackage = {
+  name: "dev" as const,
+  domain: "pkgx.sh/dev" as const,
+  description: "isolated `dev` environments" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) dev" as const,
   programs: [
     "dev",
   ] as const,
@@ -23,16 +27,10 @@ export const pkgxshdevPackage = {
     "1.0.1",
     "1.0.0",
   ] as const,
+  fullPath: "pkgx.sh/dev" as const,
   aliases: [
     "dev",
   ] as const,
-  name: "pkgx.sh/dev" as const,
-  domain: "pkgx.sh/dev" as const,
-  description: "Package information for pkgx.sh/dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pkgx.sh/dev -- $SHELL -i" as const,
 }
 
 export type PkgxshdevPackage = typeof pkgxshdevPackage

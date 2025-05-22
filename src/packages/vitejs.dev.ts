@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const vitejsdevPackage = {
+  name: "vite" as const,
+  domain: "vitejs.dev" as const,
+  description: "Next generation frontend tooling. It's fast!" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vitejs.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) vite" as const,
   programs: [
     "vite",
   ] as const,
@@ -111,13 +115,7 @@ export const vitejsdevPackage = {
     "3.2.10",
     "2.9.18",
   ] as const,
-  name: "vitejs.dev" as const,
-  domain: "vitejs.dev" as const,
-  description: "Package information for vitejs.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vitejs.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +vitejs.dev -- $SHELL -i" as const,
+  fullPath: "vitejs.dev" as const,
 }
 
 export type VitejsdevPackage = typeof vitejsdevPackage

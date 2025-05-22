@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const elixirlangorgPackage = {
+  name: "elixir-lang.org" as const,
+  domain: "elixir-lang.org" as const,
+  description: "Elixir is a dynamic, functional language for building scalable and maintainable applications" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/elixir-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +elixir-lang.org -- $SHELL -i" as const,
   programs: [
     "elixir",
     "elixirc",
@@ -38,13 +42,7 @@ export const elixirlangorgPackage = {
     "1.14.5",
     "1.14.4",
   ] as const,
-  name: "elixir/lang.org" as const,
-  domain: "elixir/lang.org" as const,
-  description: "Package information for elixir/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/elixir/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +elixir/lang.org -- $SHELL -i" as const,
+  fullPath: "elixir-lang.org" as const,
 }
 
 export type ElixirlangorgPackage = typeof elixirlangorgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const toxwikiPackage = {
+  name: "tox" as const,
+  domain: "tox.wiki" as const,
+  description: "Command line driven CI frontend and development task automation tool." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tox.wiki/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) tox" as const,
   programs: [
     "tox",
   ] as const,
@@ -26,13 +30,7 @@ export const toxwikiPackage = {
     "4.19.0",
     "4.18.1",
   ] as const,
-  name: "tox.wiki" as const,
-  domain: "tox.wiki" as const,
-  description: "Package information for tox.wiki" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tox.wiki/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tox.wiki -- $SHELL -i" as const,
+  fullPath: "tox.wiki" as const,
 }
 
 export type ToxwikiPackage = typeof toxwikiPackage

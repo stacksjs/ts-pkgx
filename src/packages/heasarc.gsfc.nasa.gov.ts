@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const heasarcgsfcnasagovPackage = {
+  name: "heasarc.gsfc.nasa.gov" as const,
+  domain: "heasarc.gsfc.nasa.gov" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx heasarc.gsfc.nasa.gov" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "heasarc.gsfc.nasa.gov" as const,
-  domain: "heasarc.gsfc.nasa.gov" as const,
-  description: "Package information for heasarc.gsfc.nasa.gov" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/heasarc.gsfc.nasa.gov/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +heasarc.gsfc.nasa.gov -- $SHELL -i" as const,
+  fullPath: "heasarc.gsfc.nasa.gov" as const,
 }
 
 export type HeasarcgsfcnasagovPackage = typeof heasarcgsfcnasagovPackage

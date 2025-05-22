@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const sqliteorgPackage = {
+  name: "sqlite3" as const,
+  domain: "sqlite.org" as const,
+  description: "Official Git mirror of the SQLite source tree" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sqlite.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) sqlite3" as const,
   programs: [
     "sqlite3",
   ] as const,
@@ -36,16 +40,10 @@ export const sqliteorgPackage = {
     "3.40.0",
     "3.39.4",
   ] as const,
+  fullPath: "sqlite.org" as const,
   aliases: [
     "sqlite3",
   ] as const,
-  name: "sqlite.org" as const,
-  domain: "sqlite.org" as const,
-  description: "Package information for sqlite.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sqlite.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +sqlite.org -- $SHELL -i" as const,
 }
 
 export type SqliteorgPackage = typeof sqliteorgPackage

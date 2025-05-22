@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const lavinmqcomPackage = {
+  name: "lavinmq" as const,
+  domain: "lavinmq.com" as const,
+  description: "Lightweight and fast AMQP (0-9-1) server" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lavinmq.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +lavinmq.com -- $SHELL -i" as const,
   programs: [
     "lavinmq",
     "lavinmqctl",
@@ -23,13 +27,7 @@ export const lavinmqcomPackage = {
     "2.0.0",
     "1.3.1",
   ] as const,
-  name: "lavinmq.com" as const,
-  domain: "lavinmq.com" as const,
-  description: "Package information for lavinmq.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lavinmq.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +lavinmq.com -- $SHELL -i" as const,
+  fullPath: "lavinmq.com" as const,
 }
 
 export type LavinmqcomPackage = typeof lavinmqcomPackage

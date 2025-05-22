@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pipenvpypaioPackage = {
+  name: "pipenv" as const,
+  domain: "pipenv.pypa.io" as const,
+  description: "Python Development Workflow for Humans." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pipenv.pypa.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pipenv" as const,
   programs: [
     "pipenv",
   ] as const,
@@ -60,13 +64,7 @@ export const pipenvpypaioPackage = {
     "2023.2.18",
     "2023.2.4",
   ] as const,
-  name: "pipenv.pypa.io" as const,
-  domain: "pipenv.pypa.io" as const,
-  description: "Package information for pipenv.pypa.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pipenv.pypa.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pipenv.pypa.io -- $SHELL -i" as const,
+  fullPath: "pipenv.pypa.io" as const,
 }
 
 export type PipenvpypaioPackage = typeof pipenvpypaioPackage

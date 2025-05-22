@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const wimlibnetPackage = {
+  name: "wimlib.net" as const,
+  domain: "wimlib.net" as const,
+  description: "Library to create, extract, and modify Windows Imaging files" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wimlib.net/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +wimlib.net -- $SHELL -i" as const,
   programs: [
     "mkwinpeimg",
     "wimappend",
@@ -32,13 +36,7 @@ export const wimlibnetPackage = {
     "1.14.3",
     "1.14.1",
   ] as const,
-  name: "wimlib.net" as const,
-  domain: "wimlib.net" as const,
-  description: "Package information for wimlib.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wimlib.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +wimlib.net -- $SHELL -i" as const,
+  fullPath: "wimlib.net" as const,
 }
 
 export type WimlibnetPackage = typeof wimlibnetPackage

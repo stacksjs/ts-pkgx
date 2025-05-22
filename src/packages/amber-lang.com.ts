@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const amberlangcomPackage = {
+  name: "amber" as const,
+  domain: "amber-lang.com" as const,
+  description: "Crystal web framework. Bare metal performance, productivity and happiness" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/amber-lang.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) amber" as const,
   programs: [
     "amber",
   ] as const,
@@ -21,13 +25,7 @@ export const amberlangcomPackage = {
     "0.3.2",
     "0.3.1",
   ] as const,
-  name: "amber/lang.com" as const,
-  domain: "amber/lang.com" as const,
-  description: "Package information for amber/lang.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/amber/lang.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +amber/lang.com -- $SHELL -i" as const,
+  fullPath: "amber-lang.com" as const,
 }
 
 export type AmberlangcomPackage = typeof amberlangcomPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const llvmorgPackage = {
+  name: "llvm.org" as const,
+  domain: "llvm.org" as const,
+  description: "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/llvm.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +llvm.org -- $SHELL -i" as const,
   programs: [
     "lld",
     "clang",
@@ -65,13 +69,7 @@ export const llvmorgPackage = {
     "13.0.1",
     "12.0.1",
   ] as const,
-  name: "llvm.org" as const,
-  domain: "llvm.org" as const,
-  description: "Package information for llvm.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/llvm.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +llvm.org -- $SHELL -i" as const,
+  fullPath: "llvm.org" as const,
 }
 
 export type LlvmorgPackage = typeof llvmorgPackage

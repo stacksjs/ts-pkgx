@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const bashlydannybcoPackage = {
+  name: "bashly" as const,
+  domain: "bashly.dannyb.co" as const,
+  description: "Bash command line framework and CLI generator" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bashly.dannyb.co/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) bashly" as const,
   programs: [
     "bashly",
   ] as const,
@@ -28,13 +32,7 @@ export const bashlydannybcoPackage = {
     "1.2.0",
     "1.1.10",
   ] as const,
-  name: "bashly.dannyb.co" as const,
-  domain: "bashly.dannyb.co" as const,
-  description: "Package information for bashly.dannyb.co" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bashly.dannyb.co/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +bashly.dannyb.co -- $SHELL -i" as const,
+  fullPath: "bashly.dannyb.co" as const,
 }
 
 export type BashlydannybcoPackage = typeof bashlydannybcoPackage

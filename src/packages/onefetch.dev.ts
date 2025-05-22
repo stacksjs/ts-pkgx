@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const onefetchdevPackage = {
+  name: "onefetch" as const,
+  domain: "onefetch.dev" as const,
+  description: "Command-line Git information tool" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/onefetch.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) onefetch" as const,
   programs: [
     "onefetch",
   ] as const,
@@ -19,13 +23,7 @@ export const onefetchdevPackage = {
     "2.19.0",
     "2.18.1",
   ] as const,
-  name: "onefetch.dev" as const,
-  domain: "onefetch.dev" as const,
-  description: "Package information for onefetch.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/onefetch.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +onefetch.dev -- $SHELL -i" as const,
+  fullPath: "onefetch.dev" as const,
 }
 
 export type OnefetchdevPackage = typeof onefetchdevPackage

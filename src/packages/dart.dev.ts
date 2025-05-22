@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const dartdevPackage = {
+  name: "dart" as const,
+  domain: "dart.dev" as const,
+  description: "The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dart.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +dart.dev -- $SHELL -i" as const,
   programs: [
     "dart",
     "dartaotruntime",
@@ -45,13 +49,7 @@ export const dartdevPackage = {
     "3.1.2",
     "3.1.1",
   ] as const,
-  name: "dart.dev" as const,
-  domain: "dart.dev" as const,
-  description: "Package information for dart.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dart.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +dart.dev -- $SHELL -i" as const,
+  fullPath: "dart.dev" as const,
 }
 
 export type DartdevPackage = typeof dartdevPackage

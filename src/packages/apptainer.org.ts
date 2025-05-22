@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const apptainerorgPackage = {
+  name: "apptainer.org" as const,
+  domain: "apptainer.org" as const,
+  description: "Application container and unprivileged sandbox platform for Linux" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apptainer.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +apptainer.org -- $SHELL -i" as const,
   programs: [
     "apptainer",
     "run-singularity",
@@ -22,13 +26,7 @@ export const apptainerorgPackage = {
     "1.3.4",
     "1.3.3",
   ] as const,
-  name: "apptainer.org" as const,
-  domain: "apptainer.org" as const,
-  description: "Package information for apptainer.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apptainer.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +apptainer.org -- $SHELL -i" as const,
+  fullPath: "apptainer.org" as const,
 }
 
 export type ApptainerorgPackage = typeof apptainerorgPackage

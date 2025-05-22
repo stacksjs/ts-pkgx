@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const htopdevPackage = {
+  name: "htop" as const,
+  domain: "htop.dev" as const,
+  description: "Improved top (interactive process viewer)" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/htop.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) htop" as const,
   programs: [
     "htop",
   ] as const,
@@ -16,13 +20,7 @@ export const htopdevPackage = {
     "3.2.2",
     "3.2.1",
   ] as const,
-  name: "htop.dev" as const,
-  domain: "htop.dev" as const,
-  description: "Package information for htop.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/htop.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +htop.dev -- $SHELL -i" as const,
+  fullPath: "htop.dev" as const,
 }
 
 export type HtopdevPackage = typeof htopdevPackage

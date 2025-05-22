@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tursotechPackage = {
+  name: "turso" as const,
+  domain: "turso.tech" as const,
+  description: "Command line interface to Turso." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/turso.tech/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) turso" as const,
   programs: [
     "turso",
   ] as const,
@@ -98,13 +102,7 @@ export const tursotechPackage = {
     "0.80.1",
     "0.80.0",
   ] as const,
-  name: "turso.tech" as const,
-  domain: "turso.tech" as const,
-  description: "Package information for turso.tech" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/turso.tech/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +turso.tech -- $SHELL -i" as const,
+  fullPath: "turso.tech" as const,
 }
 
 export type TursotechPackage = typeof tursotechPackage

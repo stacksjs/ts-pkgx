@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const dblabdanvergaracomPackage = {
+  name: "dblab" as const,
+  domain: "dblab.danvergara.com" as const,
+  description: "The database client every command line junkie deserves." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dblab.danvergara.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) dblab" as const,
   programs: [
     "dblab",
   ] as const,
@@ -24,13 +28,7 @@ export const dblabdanvergaracomPackage = {
     "0.22.0",
     "0.21.0",
   ] as const,
-  name: "dblab.danvergara.com" as const,
-  domain: "dblab.danvergara.com" as const,
-  description: "Package information for dblab.danvergara.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dblab.danvergara.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +dblab.danvergara.com -- $SHELL -i" as const,
+  fullPath: "dblab.danvergara.com" as const,
 }
 
 export type DblabdanvergaracomPackage = typeof dblabdanvergaracomPackage

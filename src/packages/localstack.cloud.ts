@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const localstackcloudPackage = {
+  name: "localstack.cloud" as const,
+  domain: "localstack.cloud" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx localstack.cloud" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "localstack.cloud" as const,
-  domain: "localstack.cloud" as const,
-  description: "Package information for localstack.cloud" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/localstack.cloud/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +localstack.cloud -- $SHELL -i" as const,
+  fullPath: "localstack.cloud" as const,
 }
 
 export type LocalstackcloudPackage = typeof localstackcloudPackage

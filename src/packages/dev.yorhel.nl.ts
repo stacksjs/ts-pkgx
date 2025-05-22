@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const devyorhelnlPackage = {
+  name: "dev.yorhel.nl" as const,
+  domain: "dev.yorhel.nl" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx dev.yorhel.nl" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "dev.yorhel.nl" as const,
-  domain: "dev.yorhel.nl" as const,
-  description: "Package information for dev.yorhel.nl" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dev.yorhel.nl/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +dev.yorhel.nl -- $SHELL -i" as const,
+  fullPath: "dev.yorhel.nl" as const,
 }
 
 export type DevyorhelnlPackage = typeof devyorhelnlPackage

@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const thrysoeedkPackage = {
+  name: "thrysoee.dk" as const,
+  domain: "thrysoee.dk" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx thrysoee.dk" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "thrysoee.dk" as const,
-  domain: "thrysoee.dk" as const,
-  description: "Package information for thrysoee.dk" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/thrysoee.dk/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +thrysoee.dk -- $SHELL -i" as const,
+  fullPath: "thrysoee.dk" as const,
 }
 
 export type ThrysoeedkPackage = typeof thrysoeedkPackage

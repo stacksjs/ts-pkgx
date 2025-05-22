@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libexpatgithubioPackage = {
+  name: "xmlwf" as const,
+  domain: "libexpat.github.io" as const,
+  description: ":herb: Fast streaming XML parser written in C99 with >90% test coverage; moved from SourceForge to GitHub" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libexpat.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) xmlwf" as const,
   programs: [
     "xmlwf",
   ] as const,
@@ -18,16 +22,10 @@ export const libexpatgithubioPackage = {
     "2.5.0",
     "2.4.9",
   ] as const,
+  fullPath: "libexpat.github.io" as const,
   aliases: [
     "xmlwf",
   ] as const,
-  name: "libexpat.github.io" as const,
-  domain: "libexpat.github.io" as const,
-  description: "Package information for libexpat.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libexpat.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libexpat.github.io -- $SHELL -i" as const,
 }
 
 export type LibexpatgithubioPackage = typeof libexpatgithubioPackage

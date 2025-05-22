@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gittowncomPackage = {
+  name: "git-town" as const,
+  domain: "git-town.com" as const,
+  description: "High-level command-line interface for Git" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/git-town.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) git-town" as const,
   programs: [
     "git-town",
   ] as const,
@@ -62,13 +66,7 @@ export const gittowncomPackage = {
     "10.0.0",
     "9.0.1",
   ] as const,
-  name: "git/town.com" as const,
-  domain: "git/town.com" as const,
-  description: "Package information for git/town.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/git/town.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +git/town.com -- $SHELL -i" as const,
+  fullPath: "git-town.com" as const,
 }
 
 export type GittowncomPackage = typeof gittowncomPackage

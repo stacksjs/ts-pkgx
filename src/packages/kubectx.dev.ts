@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const kubectxdevPackage = {
+  name: "kube" as const,
+  domain: "kubectx.dev" as const,
+  description: "Tool that can switch between kubectl contexts easily and create aliases" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kubectx.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +kubectx.dev -- $SHELL -i" as const,
   programs: [
     "kubectx",
     "kubens",
@@ -14,13 +18,7 @@ export const kubectxdevPackage = {
     "0.9.5",
     "0.9.4",
   ] as const,
-  name: "kubectx.dev" as const,
-  domain: "kubectx.dev" as const,
-  description: "Package information for kubectx.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kubectx.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +kubectx.dev -- $SHELL -i" as const,
+  fullPath: "kubectx.dev" as const,
 }
 
 export type KubectxdevPackage = typeof kubectxdevPackage

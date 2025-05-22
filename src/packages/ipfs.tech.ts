@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ipfstechPackage = {
+  name: "ipfs" as const,
+  domain: "ipfs.tech" as const,
+  description: "Peer-to-peer hypermedia protocol" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ipfs.tech/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) ipfs" as const,
   programs: [
     "ipfs",
   ] as const,
@@ -37,13 +41,7 @@ export const ipfstechPackage = {
     "0.17.0",
     "0.16.0",
   ] as const,
-  name: "ipfs.tech" as const,
-  domain: "ipfs.tech" as const,
-  description: "Package information for ipfs.tech" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ipfs.tech/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ipfs.tech -- $SHELL -i" as const,
+  fullPath: "ipfs.tech" as const,
 }
 
 export type IpfstechPackage = typeof ipfstechPackage

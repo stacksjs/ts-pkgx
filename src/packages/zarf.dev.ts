@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const zarfdevPackage = {
+  name: "zarf" as const,
+  domain: "zarf.dev" as const,
+  description: "DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/zarf.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) zarf" as const,
   programs: [
     "zarf",
   ] as const,
@@ -53,13 +57,7 @@ export const zarfdevPackage = {
     "0.32.2",
     "0.32.1",
   ] as const,
-  name: "zarf.dev" as const,
-  domain: "zarf.dev" as const,
-  description: "Package information for zarf.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/zarf.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +zarf.dev -- $SHELL -i" as const,
+  fullPath: "zarf.dev" as const,
 }
 
 export type ZarfdevPackage = typeof zarfdevPackage

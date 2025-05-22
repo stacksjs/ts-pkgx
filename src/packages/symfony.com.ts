@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const symfonycomPackage = {
+  name: "symfony" as const,
+  domain: "symfony.com" as const,
+  description: "The Symfony CLI tool" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) symfony" as const,
   programs: [
     "symfony",
   ] as const,
@@ -60,13 +64,7 @@ export const symfonycomPackage = {
     "5.5.8",
     "5.5.7",
   ] as const,
-  name: "symfony.com" as const,
-  domain: "symfony.com" as const,
-  description: "Package information for symfony.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +symfony.com -- $SHELL -i" as const,
+  fullPath: "symfony.com" as const,
 }
 
 export type SymfonycomPackage = typeof symfonycomPackage

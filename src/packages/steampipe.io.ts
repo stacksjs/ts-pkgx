@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const steampipeioPackage = {
+  name: "steampipe" as const,
+  domain: "steampipe.io" as const,
+  description: "Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/steampipe.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) steampipe" as const,
   programs: [
     "steampipe",
   ] as const,
@@ -41,13 +45,7 @@ export const steampipeioPackage = {
     "0.20.11",
     "0.20.10",
   ] as const,
-  name: "steampipe.io" as const,
-  domain: "steampipe.io" as const,
-  description: "Package information for steampipe.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/steampipe.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +steampipe.io -- $SHELL -i" as const,
+  fullPath: "steampipe.io" as const,
 }
 
 export type SteampipeioPackage = typeof steampipeioPackage

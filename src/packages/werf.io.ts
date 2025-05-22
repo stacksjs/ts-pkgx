@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const werfioPackage = {
+  name: "werf" as const,
+  domain: "werf.io" as const,
+  description: "A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/werf.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) werf" as const,
   programs: [
     "werf",
   ] as const,
@@ -153,13 +157,7 @@ export const werfioPackage = {
     "1.1.36",
     "1.1.35",
   ] as const,
-  name: "werf.io" as const,
-  domain: "werf.io" as const,
-  description: "Package information for werf.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/werf.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +werf.io -- $SHELL -i" as const,
+  fullPath: "werf.io" as const,
 }
 
 export type WerfioPackage = typeof werfioPackage

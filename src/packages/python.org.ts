@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pythonorgPackage = {
+  name: "python" as const,
+  domain: "python.org" as const,
+  description: "The Python programming language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/python.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +python.org -- $SHELL -i" as const,
   programs: [
     "python",
     "python{{ version.major }}",
@@ -170,16 +174,10 @@ export const pythonorgPackage = {
     "3.3.0",
     "2.7.18",
   ] as const,
+  fullPath: "python.org" as const,
   aliases: [
     "python",
   ] as const,
-  name: "python.org" as const,
-  domain: "python.org" as const,
-  description: "Package information for python.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/python.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +python.org -- $SHELL -i" as const,
 }
 
 export type PythonorgPackage = typeof pythonorgPackage

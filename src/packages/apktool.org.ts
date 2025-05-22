@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const apktoolorgPackage = {
+  name: "apktool" as const,
+  domain: "apktool.org" as const,
+  description: "Tool for reverse engineering 3rd party, closed, binary Android apps" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apktool.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) apktool" as const,
   programs: [
     "apktool",
   ] as const,
@@ -15,13 +19,7 @@ export const apktoolorgPackage = {
     "2.10.0",
     "2.9.3",
   ] as const,
-  name: "apktool.org" as const,
-  domain: "apktool.org" as const,
-  description: "Package information for apktool.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/apktool.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +apktool.org -- $SHELL -i" as const,
+  fullPath: "apktool.org" as const,
 }
 
 export type ApktoolorgPackage = typeof apktoolorgPackage

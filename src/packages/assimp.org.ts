@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const assimporgPackage = {
+  name: "assimp" as const,
+  domain: "assimp.org" as const,
+  description: "The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/assimp.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) assimp" as const,
   programs: [
     "assimp",
   ] as const,
@@ -18,13 +22,7 @@ export const assimporgPackage = {
     "5.3.0",
     "5.2.5",
   ] as const,
-  name: "assimp.org" as const,
-  domain: "assimp.org" as const,
-  description: "Package information for assimp.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/assimp.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +assimp.org -- $SHELL -i" as const,
+  fullPath: "assimp.org" as const,
 }
 
 export type AssimporgPackage = typeof assimporgPackage

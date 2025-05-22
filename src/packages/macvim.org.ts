@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const macvimorgPackage = {
+  name: "macvim.org" as const,
+  domain: "macvim.org" as const,
+  description: "Vim - the text editor - for macOS" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/macvim.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +macvim.org -- $SHELL -i" as const,
   programs: [
     "gview",
     "gvim",
@@ -33,13 +37,7 @@ export const macvimorgPackage = {
     "178.0.0",
     "177.0.0",
   ] as const,
-  name: "macvim.org" as const,
-  domain: "macvim.org" as const,
-  description: "Package information for macvim.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/macvim.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +macvim.org -- $SHELL -i" as const,
+  fullPath: "macvim.org" as const,
 }
 
 export type MacvimorgPackage = typeof macvimorgPackage

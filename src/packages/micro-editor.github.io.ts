@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const microeditorgithubioPackage = {
+  name: "micro" as const,
+  domain: "micro-editor.github.io" as const,
+  description: "A modern and intuitive terminal-based text editor" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/micro-editor.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) micro" as const,
   programs: [
     "micro",
   ] as const,
@@ -13,13 +17,7 @@ export const microeditorgithubioPackage = {
     "2.0.12",
     "2.0.11",
   ] as const,
-  name: "micro/editor.github.io" as const,
-  domain: "micro/editor.github.io" as const,
-  description: "Package information for micro/editor.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/micro/editor.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +micro/editor.github.io -- $SHELL -i" as const,
+  fullPath: "micro-editor.github.io" as const,
 }
 
 export type MicroeditorgithubioPackage = typeof microeditorgithubioPackage

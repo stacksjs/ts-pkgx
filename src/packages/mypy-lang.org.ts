@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mypylangorgPackage = {
+  name: "mypy-lang.org" as const,
+  domain: "mypy-lang.org" as const,
+  description: "Experimental optional static type checker for Python" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mypy-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +mypy-lang.org -- $SHELL -i" as const,
   programs: [
     "mypy",
     "mypyc",
@@ -36,13 +40,7 @@ export const mypylangorgPackage = {
     "1.3.0",
     "1.2.0",
   ] as const,
-  name: "mypy/lang.org" as const,
-  domain: "mypy/lang.org" as const,
-  description: "Package information for mypy/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mypy/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mypy/lang.org -- $SHELL -i" as const,
+  fullPath: "mypy-lang.org" as const,
 }
 
 export type MypylangorgPackage = typeof mypylangorgPackage

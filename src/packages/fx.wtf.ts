@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const fxwtfPackage = {
+  name: "fx" as const,
+  domain: "fx.wtf" as const,
+  description: "Terminal JSON viewer & processor" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fx.wtf/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) fx" as const,
   programs: [
     "fx",
   ] as const,
@@ -25,13 +29,7 @@ export const fxwtfPackage = {
     "30.0.0",
     "24.1.0",
   ] as const,
-  name: "fx.wtf" as const,
-  domain: "fx.wtf" as const,
-  description: "Package information for fx.wtf" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fx.wtf/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +fx.wtf -- $SHELL -i" as const,
+  fullPath: "fx.wtf" as const,
 }
 
 export type FxwtfPackage = typeof fxwtfPackage

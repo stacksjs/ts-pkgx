@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const kotlinlangorgPackage = {
+  name: "kotlinlang.org" as const,
+  domain: "kotlinlang.org" as const,
+  description: "Statically typed programming language for the JVM" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kotlinlang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +kotlinlang.org -- $SHELL -i" as const,
   programs: [
     "kapt",
     "kotlin",
@@ -31,13 +35,7 @@ export const kotlinlangorgPackage = {
     "1.9.10",
     "1.9.0",
   ] as const,
-  name: "kotlinlang.org" as const,
-  domain: "kotlinlang.org" as const,
-  description: "Package information for kotlinlang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kotlinlang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +kotlinlang.org -- $SHELL -i" as const,
+  fullPath: "kotlinlang.org" as const,
 }
 
 export type KotlinlangorgPackage = typeof kotlinlangorgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cuelangorgPackage = {
+  name: "cue" as const,
+  domain: "cuelang.org" as const,
+  description: "The home of the CUE language! Validate and define text-based and dynamic configuration" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cuelang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) cue" as const,
   programs: [
     "cue",
   ] as const,
@@ -28,13 +32,7 @@ export const cuelangorgPackage = {
     "0.5.0",
     "0.4.3",
   ] as const,
-  name: "cuelang.org" as const,
-  domain: "cuelang.org" as const,
-  description: "Package information for cuelang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cuelang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cuelang.org -- $SHELL -i" as const,
+  fullPath: "cuelang.org" as const,
 }
 
 export type CuelangorgPackage = typeof cuelangorgPackage

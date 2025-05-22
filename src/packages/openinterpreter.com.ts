@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openinterpretercomPackage = {
+  name: "open-interpreter" as const,
+  domain: "openinterpreter.com" as const,
+  description: "A natural language interface for computers" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openinterpreter.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) interpreter" as const,
   programs: [
     "interpreter",
   ] as const,
@@ -34,16 +38,10 @@ export const openinterpretercomPackage = {
     "0.1.0",
     "0.0.297",
   ] as const,
+  fullPath: "openinterpreter.com" as const,
   aliases: [
     "open-interpreter",
   ] as const,
-  name: "openinterpreter.com" as const,
-  domain: "openinterpreter.com" as const,
-  description: "Package information for openinterpreter.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openinterpreter.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openinterpreter.com -- $SHELL -i" as const,
 }
 
 export type OpeninterpretercomPackage = typeof openinterpretercomPackage

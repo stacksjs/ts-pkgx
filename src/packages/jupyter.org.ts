@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const jupyterorgPackage = {
+  name: "jupyter.org" as const,
+  domain: "jupyter.org" as const,
+  description: "JupyterLab computational environment." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jupyter.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +jupyter.org -- $SHELL -i" as const,
   programs: [
     "jlpm",
     "jupyter",
@@ -83,13 +87,7 @@ export const jupyterorgPackage = {
     "3.6.4",
     "3.6.3",
   ] as const,
-  name: "jupyter.org" as const,
-  domain: "jupyter.org" as const,
-  description: "Package information for jupyter.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jupyter.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +jupyter.org -- $SHELL -i" as const,
+  fullPath: "jupyter.org" as const,
 }
 
 export type JupyterorgPackage = typeof jupyterorgPackage

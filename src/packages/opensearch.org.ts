@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const opensearchorgPackage = {
+  name: "opensearch" as const,
+  domain: "opensearch.org" as const,
+  description: "🔎 Open source distributed and RESTful search engine." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/opensearch.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +opensearch.org -- $SHELL -i" as const,
   programs: [
     "opensearch",
     "opensearch-keystore",
@@ -26,13 +30,7 @@ export const opensearchorgPackage = {
     "2.12.0",
     "2.11.1",
   ] as const,
-  name: "opensearch.org" as const,
-  domain: "opensearch.org" as const,
-  description: "Package information for opensearch.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/opensearch.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +opensearch.org -- $SHELL -i" as const,
+  fullPath: "opensearch.org" as const,
 }
 
 export type OpensearchorgPackage = typeof opensearchorgPackage

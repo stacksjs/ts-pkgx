@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const graphvizorgPackage = {
+  name: "graphviz.org" as const,
+  domain: "graphviz.org" as const,
+  description: "Graph visualization software from AT&T and Bell Labs" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/graphviz.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +graphviz.org -- $SHELL -i" as const,
   programs: [
     "acyclic",
     "bcomps",
@@ -65,13 +69,7 @@ export const graphvizorgPackage = {
     "8.1.0",
     "7.1.0",
   ] as const,
-  name: "graphviz.org" as const,
-  domain: "graphviz.org" as const,
-  description: "Package information for graphviz.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/graphviz.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +graphviz.org -- $SHELL -i" as const,
+  fullPath: "graphviz.org" as const,
 }
 
 export type GraphvizorgPackage = typeof graphvizorgPackage

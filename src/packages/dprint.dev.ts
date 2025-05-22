@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const dprintdevPackage = {
+  name: "dprint" as const,
+  domain: "dprint.dev" as const,
+  description: "Pluggable and configurable code formatting platform written in Rust." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dprint.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) dprint" as const,
   programs: [
     "dprint",
   ] as const,
@@ -36,13 +40,7 @@ export const dprintdevPackage = {
     "0.41.0",
     "0.40.2",
   ] as const,
-  name: "dprint.dev" as const,
-  domain: "dprint.dev" as const,
-  description: "Package information for dprint.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dprint.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +dprint.dev -- $SHELL -i" as const,
+  fullPath: "dprint.dev" as const,
 }
 
 export type DprintdevPackage = typeof dprintdevPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const qemuorgPackage = {
+  name: "qemu" as const,
+  domain: "qemu.org" as const,
+  description: "Generic machine emulator and virtualizer" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/qemu.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +qemu.org -- $SHELL -i" as const,
   programs: [
     "qemu-img",
     "qemu-edid",
@@ -101,13 +105,7 @@ export const qemuorgPackage = {
     "7.2.4",
     "7.2.3",
   ] as const,
-  name: "qemu.org" as const,
-  domain: "qemu.org" as const,
-  description: "Package information for qemu.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/qemu.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +qemu.org -- $SHELL -i" as const,
+  fullPath: "qemu.org" as const,
 }
 
 export type QemuorgPackage = typeof qemuorgPackage

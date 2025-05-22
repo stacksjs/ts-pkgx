@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pygmentsorgPackage = {
+  name: "pygmentize" as const,
+  domain: "pygments.org" as const,
+  description: "Pygments is a generic syntax highlighter written in Python" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pygments.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pygmentize" as const,
   programs: [
     "pygmentize",
   ] as const,
@@ -19,16 +23,10 @@ export const pygmentsorgPackage = {
     "2.15.0",
     "2.14.0",
   ] as const,
+  fullPath: "pygments.org" as const,
   aliases: [
     "pygmentize",
   ] as const,
-  name: "pygments.org" as const,
-  domain: "pygments.org" as const,
-  description: "Package information for pygments.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pygments.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pygments.org -- $SHELL -i" as const,
 }
 
 export type PygmentsorgPackage = typeof pygmentsorgPackage

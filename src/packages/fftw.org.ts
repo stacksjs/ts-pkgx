@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const fftworgPackage = {
+  name: "fftw" as const,
+  domain: "fftw.org" as const,
+  description: "C routines to compute the Discrete Fourier Transform" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fftw.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +fftw.org -- $SHELL -i" as const,
   programs: [
     "fftw-wisdom",
     "fftw-wisdom-to-conf",
@@ -15,13 +19,7 @@ export const fftworgPackage = {
   versions: [
     "3.3.10",
   ] as const,
-  name: "fftw.org" as const,
-  domain: "fftw.org" as const,
-  description: "Package information for fftw.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fftw.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +fftw.org -- $SHELL -i" as const,
+  fullPath: "fftw.org" as const,
 }
 
 export type FftworgPackage = typeof fftworgPackage

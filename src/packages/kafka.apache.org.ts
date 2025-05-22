@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const kafkaapacheorgPackage = {
+  name: "kafka.apache.org" as const,
+  domain: "kafka.apache.org" as const,
+  description: "Mirror of Apache Kafka" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kafka.apache.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +kafka.apache.org -- $SHELL -i" as const,
   programs: [
     "connect-distributed.sh",
     "connect-mirror-maker.sh",
@@ -57,13 +61,7 @@ export const kafkaapacheorgPackage = {
     "3.8.0",
     "3.7.2",
   ] as const,
-  name: "kafka.apache.org" as const,
-  domain: "kafka.apache.org" as const,
-  description: "Package information for kafka.apache.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kafka.apache.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +kafka.apache.org -- $SHELL -i" as const,
+  fullPath: "kafka.apache.org" as const,
 }
 
 export type KafkaapacheorgPackage = typeof kafkaapacheorgPackage

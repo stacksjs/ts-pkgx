@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pcscliteapdufrPackage = {
+  name: "pcsc-lite" as const,
+  domain: "pcsclite.apdu.fr" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pcsclite.apdu.fr/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pcscd" as const,
   programs: [
     "pcscd",
   ] as const,
@@ -26,16 +30,10 @@ export const pcscliteapdufrPackage = {
     "2.0.1",
     "2.0.0",
   ] as const,
+  fullPath: "pcsclite.apdu.fr" as const,
   aliases: [
     "pcsc-lite",
   ] as const,
-  name: "pcsclite.apdu.fr" as const,
-  domain: "pcsclite.apdu.fr" as const,
-  description: "Package information for pcsclite.apdu.fr" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pcsclite.apdu.fr/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pcsclite.apdu.fr -- $SHELL -i" as const,
 }
 
 export type PcscliteapdufrPackage = typeof pcscliteapdufrPackage

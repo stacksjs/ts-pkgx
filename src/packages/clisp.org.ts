@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const clisporgPackage = {
+  name: "clisp" as const,
+  domain: "clisp.org" as const,
+  description: "GNU CLISP, a Common Lisp implementation" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/clisp.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) clisp" as const,
   programs: [
     "clisp",
   ] as const,
@@ -14,13 +18,7 @@ export const clisporgPackage = {
   versions: [
     "2.49.92",
   ] as const,
-  name: "clisp.org" as const,
-  domain: "clisp.org" as const,
-  description: "Package information for clisp.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/clisp.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +clisp.org -- $SHELL -i" as const,
+  fullPath: "clisp.org" as const,
 }
 
 export type ClisporgPackage = typeof clisporgPackage

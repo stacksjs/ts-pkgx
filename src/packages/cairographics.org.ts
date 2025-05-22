@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cairographicsorgPackage = {
+  name: "cairo-trace" as const,
+  domain: "cairographics.org" as const,
+  description: "Vector graphics library with cross-device output support" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) cairo-trace" as const,
   programs: [
     "cairo-trace",
   ] as const,
@@ -25,16 +29,10 @@ export const cairographicsorgPackage = {
     "1.18.0",
     "1.16.0",
   ] as const,
+  fullPath: "cairographics.org" as const,
   aliases: [
     "cairo-trace",
   ] as const,
-  name: "cairographics.org" as const,
-  domain: "cairographics.org" as const,
-  description: "Package information for cairographics.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cairographics.org -- $SHELL -i" as const,
 }
 
 export type CairographicsorgPackage = typeof cairographicsorgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const flutterdevPackage = {
+  name: "flutter.dev" as const,
+  domain: "flutter.dev" as const,
+  description: "Flutter makes it easy and fast to build beautiful apps for mobile and beyond" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/flutter.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i" as const,
   programs: [
     "flutter",
     "dart",
@@ -62,13 +66,7 @@ export const flutterdevPackage = {
     "3.13.4",
     "3.13.3",
   ] as const,
-  name: "flutter.dev" as const,
-  domain: "flutter.dev" as const,
-  description: "Package information for flutter.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/flutter.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i" as const,
+  fullPath: "flutter.dev" as const,
 }
 
 export type FlutterdevPackage = typeof flutterdevPackage

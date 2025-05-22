@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tectonictypesettinggithubioPackage = {
+  name: "tectonic" as const,
+  domain: "tectonic-typesetting.github.io" as const,
+  description: "A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tectonic-typesetting.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) tectonic" as const,
   programs: [
     "tectonic",
   ] as const,
@@ -22,13 +26,7 @@ export const tectonictypesettinggithubioPackage = {
     "0.13.0",
     "0.12.0",
   ] as const,
-  name: "tectonic/typesetting.github.io" as const,
-  domain: "tectonic/typesetting.github.io" as const,
-  description: "Package information for tectonic/typesetting.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tectonic/typesetting.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tectonic/typesetting.github.io -- $SHELL -i" as const,
+  fullPath: "tectonic-typesetting.github.io" as const,
 }
 
 export type TectonictypesettinggithubioPackage = typeof tectonictypesettinggithubioPackage

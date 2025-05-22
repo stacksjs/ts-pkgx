@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ffmpegorgPackage = {
+  name: "ffmpeg.org" as const,
+  domain: "ffmpeg.org" as const,
+  description: "Play, record, convert, and stream audio and video" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ffmpeg.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +ffmpeg.org -- $SHELL -i" as const,
   programs: [
     "ffmpeg",
     "ffplay",
@@ -45,13 +49,7 @@ export const ffmpegorgPackage = {
     "3.4.14",
     "3.4.13",
   ] as const,
-  name: "ffmpeg.org" as const,
-  domain: "ffmpeg.org" as const,
-  description: "Package information for ffmpeg.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ffmpeg.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ffmpeg.org -- $SHELL -i" as const,
+  fullPath: "ffmpeg.org" as const,
 }
 
 export type FfmpegorgPackage = typeof ffmpegorgPackage

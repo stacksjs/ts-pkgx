@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libvipsorgPackage = {
+  name: "vips" as const,
+  domain: "libvips.org" as const,
+  description: "A fast image processing library with low memory needs." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libvips.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i" as const,
   programs: [
     "vips",
     "vipsedit",
@@ -49,16 +53,10 @@ export const libvipsorgPackage = {
     "8.15.0",
     "8.14.5",
   ] as const,
+  fullPath: "libvips.org" as const,
   aliases: [
     "vips",
   ] as const,
-  name: "libvips.org" as const,
-  domain: "libvips.org" as const,
-  description: "Package information for libvips.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libvips.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i" as const,
 }
 
 export type LibvipsorgPackage = typeof libvipsorgPackage

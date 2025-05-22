@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const diggerdevPackage = {
+  name: "digger" as const,
+  domain: "digger.dev" as const,
+  description: "Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI pipeline ⚡️" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/digger.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) digger" as const,
   programs: [
     "digger",
   ] as const,
@@ -194,13 +198,7 @@ export const diggerdevPackage = {
     "0.1.32",
     "0.1.31",
   ] as const,
-  name: "digger.dev" as const,
-  domain: "digger.dev" as const,
-  description: "Package information for digger.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/digger.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +digger.dev -- $SHELL -i" as const,
+  fullPath: "digger.dev" as const,
 }
 
 export type DiggerdevPackage = typeof diggerdevPackage

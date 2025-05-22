@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mupdfcomPackage = {
+  name: "mupdf.com" as const,
+  domain: "mupdf.com" as const,
+  description: "Lightweight PDF and XPS viewer" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mupdf.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +mupdf.com -- $SHELL -i" as const,
   programs: [
     "mupdf-gl",
     "muraster",
@@ -61,13 +65,7 @@ export const mupdfcomPackage = {
     "1.23.7",
     "1.23.6",
   ] as const,
-  name: "mupdf.com" as const,
-  domain: "mupdf.com" as const,
-  description: "Package information for mupdf.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mupdf.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mupdf.com -- $SHELL -i" as const,
+  fullPath: "mupdf.com" as const,
 }
 
 export type MupdfcomPackage = typeof mupdfcomPackage

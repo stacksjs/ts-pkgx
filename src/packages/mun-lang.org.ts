@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const munlangorgPackage = {
+  name: "mun" as const,
+  domain: "mun-lang.org" as const,
+  description: "Source code for the Mun language and runtime." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mun-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) mun" as const,
   programs: [
     "mun",
   ] as const,
@@ -16,13 +20,7 @@ export const munlangorgPackage = {
   versions: [
     "0.5.0",
   ] as const,
-  name: "mun/lang.org" as const,
-  domain: "mun/lang.org" as const,
-  description: "Package information for mun/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mun/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mun/lang.org -- $SHELL -i" as const,
+  fullPath: "mun-lang.org" as const,
 }
 
 export type MunlangorgPackage = typeof munlangorgPackage

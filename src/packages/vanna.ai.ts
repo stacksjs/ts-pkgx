@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const vannaaiPackage = {
+  name: "Vanna" as const,
+  domain: "vanna.ai" as const,
+  description: "🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using RAG 🔄." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vanna.ai/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +vanna.ai -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -53,13 +57,7 @@ export const vannaaiPackage = {
     "0.0.33",
     "0.0.32",
   ] as const,
-  name: "vanna.ai" as const,
-  domain: "vanna.ai" as const,
-  description: "Package information for vanna.ai" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vanna.ai/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +vanna.ai -- $SHELL -i" as const,
+  fullPath: "vanna.ai" as const,
 }
 
 export type VannaaiPackage = typeof vannaaiPackage

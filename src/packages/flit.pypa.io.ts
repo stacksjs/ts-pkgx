@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const flitpypaioPackage = {
+  name: "flit" as const,
+  domain: "flit.pypa.io" as const,
+  description: "Simplified packaging of Python modules" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/flit.pypa.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) flit" as const,
   programs: [
     "flit",
   ] as const,
@@ -17,13 +21,7 @@ export const flitpypaioPackage = {
     "3.9.0",
     "3.8.0",
   ] as const,
-  name: "flit.pypa.io" as const,
-  domain: "flit.pypa.io" as const,
-  description: "Package information for flit.pypa.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/flit.pypa.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +flit.pypa.io -- $SHELL -i" as const,
+  fullPath: "flit.pypa.io" as const,
 }
 
 export type FlitpypaioPackage = typeof flitpypaioPackage

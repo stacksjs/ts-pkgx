@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const vamppluginsorgPackage = {
+  name: "vamp" as const,
+  domain: "vamp-plugins.org" as const,
+  description: "Audio processing plugin system sdk" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vamp-plugins.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +vamp-plugins.org -- $SHELL -i" as const,
   programs: [
     "vamp-simple-host",
     "vamp-rdf-template-generator",
@@ -16,13 +20,7 @@ export const vamppluginsorgPackage = {
     "2.10.0",
     "2.9.0",
   ] as const,
-  name: "vamp/plugins.org" as const,
-  domain: "vamp/plugins.org" as const,
-  description: "Package information for vamp/plugins.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vamp/plugins.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +vamp/plugins.org -- $SHELL -i" as const,
+  fullPath: "vamp-plugins.org" as const,
 }
 
 export type VamppluginsorgPackage = typeof vamppluginsorgPackage

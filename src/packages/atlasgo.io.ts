@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const atlasgoioPackage = {
+  name: "atlas" as const,
+  domain: "atlasgo.io" as const,
+  description: "Manage your database schema as code" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/atlasgo.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) atlas" as const,
   programs: [
     "atlas",
   ] as const,
@@ -29,13 +33,7 @@ export const atlasgoioPackage = {
     "0.15.0",
     "0.14.0",
   ] as const,
-  name: "atlasgo.io" as const,
-  domain: "atlasgo.io" as const,
-  description: "Package information for atlasgo.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/atlasgo.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +atlasgo.io -- $SHELL -i" as const,
+  fullPath: "atlasgo.io" as const,
 }
 
 export type AtlasgoioPackage = typeof atlasgoioPackage

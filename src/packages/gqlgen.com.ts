@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gqlgencomPackage = {
+  name: "gqlgen" as const,
+  domain: "gqlgen.com" as const,
+  description: "go generate based graphql server library" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gqlgen.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) gqlgen" as const,
   programs: [
     "gqlgen",
   ] as const,
@@ -46,13 +50,7 @@ export const gqlgencomPackage = {
     "0.17.38",
     "0.17.37",
   ] as const,
-  name: "gqlgen.com" as const,
-  domain: "gqlgen.com" as const,
-  description: "Package information for gqlgen.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gqlgen.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +gqlgen.com -- $SHELL -i" as const,
+  fullPath: "gqlgen.com" as const,
 }
 
 export type GqlgencomPackage = typeof gqlgencomPackage

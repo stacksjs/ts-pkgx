@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const granteddevPackage = {
+  name: "granted" as const,
+  domain: "granted.dev" as const,
+  description: "The easiest way to access your cloud." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/granted.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) granted" as const,
   programs: [
     "granted",
   ] as const,
@@ -47,13 +51,7 @@ export const granteddevPackage = {
     "0.22.0",
     "0.21.1",
   ] as const,
-  name: "granted.dev" as const,
-  domain: "granted.dev" as const,
-  description: "Package information for granted.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/granted.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +granted.dev -- $SHELL -i" as const,
+  fullPath: "granted.dev" as const,
 }
 
 export type GranteddevPackage = typeof granteddevPackage

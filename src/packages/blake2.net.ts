@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const blake2netPackage = {
+  name: "blake2.net" as const,
+  domain: "blake2.net" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx blake2.net" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "blake2.net" as const,
-  domain: "blake2.net" as const,
-  description: "Package information for blake2.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/blake2.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +blake2.net -- $SHELL -i" as const,
+  fullPath: "blake2.net" as const,
 }
 
 export type Blake2netPackage = typeof blake2netPackage

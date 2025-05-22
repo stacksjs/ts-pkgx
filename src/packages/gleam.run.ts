@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gleamrunPackage = {
+  name: "gleam" as const,
+  domain: "gleam.run" as const,
+  description: "⭐️ A friendly language for building type-safe, scalable systems!" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gleam.run/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) gleam" as const,
   programs: [
     "gleam",
   ] as const,
@@ -51,13 +55,7 @@ export const gleamrunPackage = {
     "0.28.0",
     "0.27.0",
   ] as const,
-  name: "gleam.run" as const,
-  domain: "gleam.run" as const,
-  description: "Package information for gleam.run" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gleam.run/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +gleam.run -- $SHELL -i" as const,
+  fullPath: "gleam.run" as const,
 }
 
 export type GleamrunPackage = typeof gleamrunPackage

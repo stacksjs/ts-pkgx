@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
-export const githubcomParchivepar2cmdlinePackage = {
+export const githubcomparchivepar2cmdlinePackage = {
+  name: "par2" as const,
+  domain: "github.com/Parchive/par2cmdline" as const,
+  description: "Parchive: Parity Archive Volume Set for data recovery" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Parchive/par2cmdline/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +github.com/Parchive/par2cmdline -- $SHELL -i" as const,
   programs: [
     "par2",
     "par2create",
@@ -14,17 +18,11 @@ export const githubcomParchivepar2cmdlinePackage = {
     "1.0.0",
     "0.8.1",
   ] as const,
+  fullPath: "github.com/Parchive/par2cmdline" as const,
   aliases: [
     "par2",
     "Parchive/par2cmdline",
   ] as const,
-  name: "github.com/Parchive-par2cmdline" as const,
-  domain: "github.com/Parchive-par2cmdline" as const,
-  description: "Package information for github.com/Parchive-par2cmdline" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Parchive-par2cmdline/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +github.com/Parchive-par2cmdline -- $SHELL -i" as const,
 }
 
-export type GithubcomParchivepar2cmdlinePackage = typeof githubcomParchivepar2cmdlinePackage
+export type Githubcomparchivepar2cmdlinePackage = typeof githubcomparchivepar2cmdlinePackage

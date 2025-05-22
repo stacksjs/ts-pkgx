@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gohugoioPackage = {
+  name: "hugo" as const,
+  domain: "gohugo.io" as const,
+  description: "The world’s fastest framework for building websites." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gohugo.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) hugo" as const,
   programs: [
     "hugo",
   ] as const,
@@ -129,16 +133,10 @@ export const gohugoioPackage = {
     "0.105.0",
     "0.104.3",
   ] as const,
+  fullPath: "gohugo.io" as const,
   aliases: [
     "hugo",
   ] as const,
-  name: "gohugo.io" as const,
-  domain: "gohugo.io" as const,
-  description: "Package information for gohugo.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gohugo.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +gohugo.io -- $SHELL -i" as const,
 }
 
 export type GohugoioPackage = typeof gohugoioPackage

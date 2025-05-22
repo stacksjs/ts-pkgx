@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ciliumioPackage = {
+  name: "cilium.io" as const,
+  domain: "cilium.io" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx cilium.io" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "cilium.io" as const,
-  domain: "cilium.io" as const,
-  description: "Package information for cilium.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cilium.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cilium.io -- $SHELL -i" as const,
+  fullPath: "cilium.io" as const,
 }
 
 export type CiliumioPackage = typeof ciliumioPackage

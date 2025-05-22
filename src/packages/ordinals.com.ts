@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ordinalscomPackage = {
+  name: "ord" as const,
+  domain: "ordinals.com" as const,
+  description: "Index, block explorer, and command-line wallet" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ordinals.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) ord" as const,
   programs: [
     "ord",
   ] as const,
@@ -13,13 +17,7 @@ export const ordinalscomPackage = {
     "0.5.1",
     "0.5.0",
   ] as const,
-  name: "ordinals.com" as const,
-  domain: "ordinals.com" as const,
-  description: "Package information for ordinals.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ordinals.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ordinals.com -- $SHELL -i" as const,
+  fullPath: "ordinals.com" as const,
 }
 
 export type OrdinalscomPackage = typeof ordinalscomPackage

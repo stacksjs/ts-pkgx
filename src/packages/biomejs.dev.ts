@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const biomejsdevPackage = {
+  name: "biome" as const,
+  domain: "biomejs.dev" as const,
+  description: "A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers formatter and linter, usable via CLI and LSP." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/biomejs.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) biome" as const,
   programs: [
     "biome",
   ] as const,
@@ -37,13 +41,7 @@ export const biomejsdevPackage = {
     "1.3.0",
     "1.2.2",
   ] as const,
-  name: "biomejs.dev" as const,
-  domain: "biomejs.dev" as const,
-  description: "Package information for biomejs.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/biomejs.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +biomejs.dev -- $SHELL -i" as const,
+  fullPath: "biomejs.dev" as const,
 }
 
 export type BiomejsdevPackage = typeof biomejsdevPackage

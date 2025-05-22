@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ziglangorgPackage = {
+  name: "zig" as const,
+  domain: "ziglang.org" as const,
+  description: "General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ziglang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) zig" as const,
   programs: [
     "zig",
   ] as const,
@@ -15,13 +19,7 @@ export const ziglangorgPackage = {
     "0.11.0",
     "0.10.1",
   ] as const,
-  name: "ziglang.org" as const,
-  domain: "ziglang.org" as const,
-  description: "Package information for ziglang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ziglang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ziglang.org -- $SHELL -i" as const,
+  fullPath: "ziglang.org" as const,
 }
 
 export type ZiglangorgPackage = typeof ziglangorgPackage

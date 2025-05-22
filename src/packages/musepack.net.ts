@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const musepacknetPackage = {
+  name: "musepack.net" as const,
+  domain: "musepack.net" as const,
+  description: "Audio compression format and tools" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/musepack.net/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i" as const,
   programs: [
     "mpc2sv8",
     "mpcchap",
@@ -19,13 +23,7 @@ export const musepacknetPackage = {
   versions: [
     "475.0.0",
   ] as const,
-  name: "musepack.net" as const,
-  domain: "musepack.net" as const,
-  description: "Package information for musepack.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/musepack.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i" as const,
+  fullPath: "musepack.net" as const,
 }
 
 export type MusepacknetPackage = typeof musepacknetPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const githubcommasclimasPackage = {
+  name: "mas" as const,
+  domain: "github.com/mas-cli/mas" as const,
+  description: ":package: Mac App Store command line interface" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mas-cli/mas/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) mas" as const,
   programs: [
     "mas",
   ] as const,
@@ -17,17 +21,11 @@ export const githubcommasclimasPackage = {
     "1.8.8",
     "1.8.7",
   ] as const,
+  fullPath: "github.com/mas-cli/mas" as const,
   aliases: [
     "mas",
     "mas-cli/mas",
   ] as const,
-  name: "github.com/mas-cli-mas" as const,
-  domain: "github.com/mas-cli-mas" as const,
-  description: "Package information for github.com/mas-cli-mas" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mas-cli-mas/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +github.com/mas-cli-mas -- $SHELL -i" as const,
 }
 
 export type GithubcommasclimasPackage = typeof githubcommasclimasPackage

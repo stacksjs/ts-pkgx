@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const traefikioPackage = {
+  name: "traefik" as const,
+  domain: "traefik.io" as const,
+  description: "The Cloud Native Application Proxy" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/traefik.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) traefik" as const,
   programs: [
     "traefik",
   ] as const,
@@ -65,13 +69,7 @@ export const traefikioPackage = {
     "2.10.6",
     "2.10.5",
   ] as const,
-  name: "traefik.io" as const,
-  domain: "traefik.io" as const,
-  description: "Package information for traefik.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/traefik.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +traefik.io -- $SHELL -i" as const,
+  fullPath: "traefik.io" as const,
 }
 
 export type TraefikioPackage = typeof traefikioPackage

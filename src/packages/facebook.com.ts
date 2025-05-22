@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const facebookcomPackage = {
+  name: "facebook.com" as const,
+  domain: "facebook.com" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx facebook.com" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "facebook.com" as const,
-  domain: "facebook.com" as const,
-  description: "Package information for facebook.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +facebook.com -- $SHELL -i" as const,
+  fullPath: "facebook.com" as const,
 }
 
 export type FacebookcomPackage = typeof facebookcomPackage

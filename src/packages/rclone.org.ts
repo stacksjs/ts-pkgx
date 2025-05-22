@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const rcloneorgPackage = {
+  name: "rclone" as const,
+  domain: "rclone.org" as const,
+  description: "\"rsync for cloud storage\" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rclone.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) rclone" as const,
   programs: [
     "rclone",
   ] as const,
@@ -25,13 +29,7 @@ export const rcloneorgPackage = {
     "1.64.0",
     "1.63.1",
   ] as const,
-  name: "rclone.org" as const,
-  domain: "rclone.org" as const,
-  description: "Package information for rclone.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rclone.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +rclone.org -- $SHELL -i" as const,
+  fullPath: "rclone.org" as const,
 }
 
 export type RcloneorgPackage = typeof rcloneorgPackage

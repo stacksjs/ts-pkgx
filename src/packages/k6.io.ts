@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const k6ioPackage = {
+  name: "k6" as const,
+  domain: "k6.io" as const,
+  description: "A modern load testing tool, using Go and JavaScript - https://k6.io" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/k6.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) k6" as const,
   programs: [
     "k6",
   ] as const,
@@ -33,13 +37,7 @@ export const k6ioPackage = {
     "0.43.0",
     "0.42.0",
   ] as const,
-  name: "k6.io" as const,
-  domain: "k6.io" as const,
-  description: "Package information for k6.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/k6.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +k6.io -- $SHELL -i" as const,
+  fullPath: "k6.io" as const,
 }
 
 export type K6ioPackage = typeof k6ioPackage

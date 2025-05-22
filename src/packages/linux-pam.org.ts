@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const linuxpamorgPackage = {
+  name: "linux-pam.org" as const,
+  domain: "linux-pam.org" as const,
+  description: "Linux PAM (Pluggable Authentication Modules for Linux) project" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/linux-pam.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +linux-pam.org -- $SHELL -i" as const,
   programs: [
     "faillock",
     "mkhomedir_helper",
@@ -21,13 +25,7 @@ export const linuxpamorgPackage = {
     "1.6.0",
     "1.5.3",
   ] as const,
-  name: "linux/pam.org" as const,
-  domain: "linux/pam.org" as const,
-  description: "Package information for linux/pam.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/linux/pam.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +linux/pam.org -- $SHELL -i" as const,
+  fullPath: "linux-pam.org" as const,
 }
 
 export type LinuxpamorgPackage = typeof linuxpamorgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const rhashsourceforgenetPackage = {
+  name: "rhash.sourceforge.net" as const,
+  domain: "rhash.sourceforge.net" as const,
+  description: "Utility for computing and verifying hash sums of files" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rhash.sourceforge.net/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +rhash.sourceforge.net -- $SHELL -i" as const,
   programs: [
     "whirlpool-hash",
     "tiger-hash",
@@ -24,13 +28,7 @@ export const rhashsourceforgenetPackage = {
     "1.4.4",
     "1.4.3",
   ] as const,
-  name: "rhash.sourceforge.net" as const,
-  domain: "rhash.sourceforge.net" as const,
-  description: "Package information for rhash.sourceforge.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rhash.sourceforge.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +rhash.sourceforge.net -- $SHELL -i" as const,
+  fullPath: "rhash.sourceforge.net" as const,
 }
 
 export type RhashsourceforgenetPackage = typeof rhashsourceforgenetPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const sqlfluffcomPackage = {
+  name: "sqlfluff" as const,
+  domain: "sqlfluff.com" as const,
+  description: "A modular SQL linter and auto-formatter with support for multiple dialects and templated code." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sqlfluff.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) sqlfluff" as const,
   programs: [
     "sqlfluff",
   ] as const,
@@ -34,13 +38,7 @@ export const sqlfluffcomPackage = {
     "2.3.3",
     "2.3.2",
   ] as const,
-  name: "sqlfluff.com" as const,
-  domain: "sqlfluff.com" as const,
-  description: "Package information for sqlfluff.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sqlfluff.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +sqlfluff.com -- $SHELL -i" as const,
+  fullPath: "sqlfluff.com" as const,
 }
 
 export type SqlfluffcomPackage = typeof sqlfluffcomPackage

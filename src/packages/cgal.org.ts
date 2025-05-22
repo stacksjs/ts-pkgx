@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cgalorgPackage = {
+  name: "cgal" as const,
+  domain: "cgal.org" as const,
+  description: "The public CGAL repository, see the README below" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cgal.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +cgal.org -- $SHELL -i" as const,
   programs: [
     "cgal_create_CMakeLists",
     "cgal_create_cmake_script",
@@ -22,13 +26,7 @@ export const cgalorgPackage = {
     "5.6.1",
     "5.6.0",
   ] as const,
-  name: "cgal.org" as const,
-  domain: "cgal.org" as const,
-  description: "Package information for cgal.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cgal.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cgal.org -- $SHELL -i" as const,
+  fullPath: "cgal.org" as const,
 }
 
 export type CgalorgPackage = typeof cgalorgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const astgrepgithubioPackage = {
+  name: "ast-grep.github.io" as const,
+  domain: "ast-grep.github.io" as const,
+  description: "⚡A CLI tool for code structural search, lint and rewriting. Written in Rust" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ast-grep.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +ast-grep.github.io -- $SHELL -i" as const,
   programs: [
     "sg",
     "ast-grep",
@@ -89,13 +93,7 @@ export const astgrepgithubioPackage = {
     "0.14.4",
     "0.14.3",
   ] as const,
-  name: "ast/grep.github.io" as const,
-  domain: "ast/grep.github.io" as const,
-  description: "Package information for ast/grep.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ast/grep.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ast/grep.github.io -- $SHELL -i" as const,
+  fullPath: "ast-grep.github.io" as const,
 }
 
 export type AstgrepgithubioPackage = typeof astgrepgithubioPackage

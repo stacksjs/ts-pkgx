@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tiltdevPackage = {
+  name: "tilt" as const,
+  domain: "tilt.dev" as const,
+  description: "Define your dev environment as code. For microservice apps on Kubernetes." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tilt.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) tilt" as const,
   programs: [
     "tilt",
   ] as const,
@@ -30,13 +34,7 @@ export const tiltdevPackage = {
     "0.33.7",
     "0.33.6",
   ] as const,
-  name: "tilt.dev" as const,
-  domain: "tilt.dev" as const,
-  description: "Package information for tilt.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tilt.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tilt.dev -- $SHELL -i" as const,
+  fullPath: "tilt.dev" as const,
 }
 
 export type TiltdevPackage = typeof tiltdevPackage

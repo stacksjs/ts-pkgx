@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const herokucomPackage = {
+  name: "heroku" as const,
+  domain: "heroku.com" as const,
+  description: "CLI for Heroku" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/heroku.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) heroku" as const,
   programs: [
     "heroku",
   ] as const,
@@ -41,13 +45,7 @@ export const herokucomPackage = {
     "8.11.0",
     "8.10.0",
   ] as const,
-  name: "heroku.com" as const,
-  domain: "heroku.com" as const,
-  description: "Package information for heroku.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/heroku.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +heroku.com -- $SHELL -i" as const,
+  fullPath: "heroku.com" as const,
 }
 
 export type HerokucomPackage = typeof herokucomPackage

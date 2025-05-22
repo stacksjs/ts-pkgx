@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mercurerocksPackage = {
+  name: "mercure" as const,
+  domain: "mercure.rocks" as const,
+  description: "🪽 An open, easy, fast, reliable and battery-efficient solution for real-time communications" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mercure.rocks/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) mercure" as const,
   programs: [
     "mercure",
   ] as const,
@@ -20,13 +24,7 @@ export const mercurerocksPackage = {
     "0.17.0",
     "0.16.3",
   ] as const,
-  name: "mercure.rocks" as const,
-  domain: "mercure.rocks" as const,
-  description: "Package information for mercure.rocks" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mercure.rocks/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mercure.rocks -- $SHELL -i" as const,
+  fullPath: "mercure.rocks" as const,
 }
 
 export type MercurerocksPackage = typeof mercurerocksPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const yarnpkgcomPackage = {
+  name: "yarn" as const,
+  domain: "yarnpkg.com" as const,
+  description: "📦🐈 Active development trunk for Yarn ⚒" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i" as const,
   programs: [
     "yarn",
     "yarnpkg",
@@ -51,13 +55,7 @@ export const yarnpkgcomPackage = {
     "3.5.0",
     "3.4.1",
   ] as const,
-  name: "yarnpkg.com" as const,
-  domain: "yarnpkg.com" as const,
-  description: "Package information for yarnpkg.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i" as const,
+  fullPath: "yarnpkg.com" as const,
 }
 
 export type YarnpkgcomPackage = typeof yarnpkgcomPackage

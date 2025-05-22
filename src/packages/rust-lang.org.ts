@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const rustlangorgPackage = {
+  name: "rust" as const,
+  domain: "rust-lang.org" as const,
+  description: "Empowering everyone to build reliable and efficient software." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +rust-lang.org -- $SHELL -i" as const,
   programs: [
     "cargo-clippy",
     "cargo-fmt",
@@ -57,16 +61,10 @@ export const rustlangorgPackage = {
     "1.65.0",
     "1.64.0",
   ] as const,
+  fullPath: "rust-lang.org" as const,
   aliases: [
     "rust",
   ] as const,
-  name: "rust/lang.org" as const,
-  domain: "rust/lang.org" as const,
-  description: "Package information for rust/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rust/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +rust/lang.org -- $SHELL -i" as const,
 }
 
 export type RustlangorgPackage = typeof rustlangorgPackage

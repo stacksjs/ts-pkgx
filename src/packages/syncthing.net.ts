@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const syncthingnetPackage = {
+  name: "syncthing" as const,
+  domain: "syncthing.net" as const,
+  description: "Open source continuous file synchronization application" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/syncthing.net/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) syncthing" as const,
   programs: [
     "syncthing",
   ] as const,
@@ -27,13 +31,7 @@ export const syncthingnetPackage = {
     "1.27.5",
     "1.27.4",
   ] as const,
-  name: "syncthing.net" as const,
-  domain: "syncthing.net" as const,
-  description: "Package information for syncthing.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/syncthing.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +syncthing.net -- $SHELL -i" as const,
+  fullPath: "syncthing.net" as const,
 }
 
 export type SyncthingnetPackage = typeof syncthingnetPackage

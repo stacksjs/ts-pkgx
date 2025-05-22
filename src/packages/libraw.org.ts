@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libraworgPackage = {
+  name: "libraw.org" as const,
+  domain: "libraw.org" as const,
+  description: "Library for reading RAW files from digital photo cameras" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libraw.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +libraw.org -- $SHELL -i" as const,
   programs: [
     "4channels",
     "dcraw_emu",
@@ -30,13 +34,7 @@ export const libraworgPackage = {
     "0.21.2",
     "0.21.1",
   ] as const,
-  name: "libraw.org" as const,
-  domain: "libraw.org" as const,
-  description: "Package information for libraw.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libraw.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libraw.org -- $SHELL -i" as const,
+  fullPath: "libraw.org" as const,
 }
 
 export type LibraworgPackage = typeof libraworgPackage

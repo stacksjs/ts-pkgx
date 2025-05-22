@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const numbatdevPackage = {
+  name: "numbat" as const,
+  domain: "numbat.dev" as const,
+  description: "A statically typed programming language for scientific computations with first class support for physical dimensions and units" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/numbat.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) numbat" as const,
   programs: [
     "numbat",
   ] as const,
@@ -19,13 +23,7 @@ export const numbatdevPackage = {
     "1.9.0",
     "1.8.0",
   ] as const,
-  name: "numbat.dev" as const,
-  domain: "numbat.dev" as const,
-  description: "Package information for numbat.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/numbat.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +numbat.dev -- $SHELL -i" as const,
+  fullPath: "numbat.dev" as const,
 }
 
 export type NumbatdevPackage = typeof numbatdevPackage

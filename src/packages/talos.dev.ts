@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const talosdevPackage = {
+  name: "talosctl" as const,
+  domain: "talos.dev" as const,
+  description: "CLI for out-of-band management of Kubernetes nodes created by Talos" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/talos.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) talosctl" as const,
   programs: [
     "talosctl",
   ] as const,
@@ -35,16 +39,10 @@ export const talosdevPackage = {
     "1.6.7",
     "1.6.6",
   ] as const,
+  fullPath: "talos.dev" as const,
   aliases: [
     "talosctl",
   ] as const,
-  name: "talos.dev" as const,
-  domain: "talos.dev" as const,
-  description: "Package information for talos.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/talos.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +talos.dev -- $SHELL -i" as const,
 }
 
 export type TalosdevPackage = typeof talosdevPackage

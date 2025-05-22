@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const wiresharkorgPackage = {
+  name: "wireshark.org" as const,
+  domain: "wireshark.org" as const,
+  description: "Network analyzer and capture tool - without graphical user interface" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wireshark.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +wireshark.org -- $SHELL -i" as const,
   programs: [
     "capinfos",
     "captype",
@@ -65,13 +69,7 @@ export const wiresharkorgPackage = {
     "3.6.21",
     "3.6.20",
   ] as const,
-  name: "wireshark.org" as const,
-  domain: "wireshark.org" as const,
-  description: "Package information for wireshark.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wireshark.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +wireshark.org -- $SHELL -i" as const,
+  fullPath: "wireshark.org" as const,
 }
 
 export type WiresharkorgPackage = typeof wiresharkorgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const browserusecomPackage = {
+  name: "browser-use.com" as const,
+  domain: "browser-use.com" as const,
+  description: "Make websites accessible for AI agents" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/browser-use.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +browser-use.com -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -21,13 +25,7 @@ export const browserusecomPackage = {
     "0.1.38",
     "0.1.37",
   ] as const,
-  name: "browser/use.com" as const,
-  domain: "browser/use.com" as const,
-  description: "Package information for browser/use.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/browser/use.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +browser/use.com -- $SHELL -i" as const,
+  fullPath: "browser-use.com" as const,
 }
 
 export type BrowserusecomPackage = typeof browserusecomPackage

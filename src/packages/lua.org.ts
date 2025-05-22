@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const luaorgPackage = {
+  name: "lua" as const,
+  domain: "lua.org" as const,
+  description: "Powerful, lightweight programming language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lua.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +lua.org -- $SHELL -i" as const,
   programs: [
     "lua",
     "luac",
@@ -17,13 +21,7 @@ export const luaorgPackage = {
     "5.4.6",
     "5.4.4",
   ] as const,
-  name: "lua.org" as const,
-  domain: "lua.org" as const,
-  description: "Package information for lua.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lua.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +lua.org -- $SHELL -i" as const,
+  fullPath: "lua.org" as const,
 }
 
 export type LuaorgPackage = typeof luaorgPackage

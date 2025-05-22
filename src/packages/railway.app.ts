@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const railwayappPackage = {
+  name: "railway" as const,
+  domain: "railway.app" as const,
+  description: "Develop and deploy code with zero configuration" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/railway.app/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) railway" as const,
   programs: [
     "railway",
   ] as const,
@@ -58,13 +62,7 @@ export const railwayappPackage = {
     "3.6.0",
     "3.5.2",
   ] as const,
-  name: "railway.app" as const,
-  domain: "railway.app" as const,
-  description: "Package information for railway.app" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/railway.app/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +railway.app -- $SHELL -i" as const,
+  fullPath: "railway.app" as const,
 }
 
 export type RailwayappPackage = typeof railwayappPackage

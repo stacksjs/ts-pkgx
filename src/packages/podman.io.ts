@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const podmanioPackage = {
+  name: "podman" as const,
+  domain: "podman.io" as const,
+  description: "Podman: A tool for managing OCI containers and pods." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/podman.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +podman.io -- $SHELL -i" as const,
   programs: [
     "podman",
     "podman-remote",
@@ -56,13 +60,7 @@ export const podmanioPackage = {
     "4.5.1",
     "4.5.0",
   ] as const,
-  name: "podman.io" as const,
-  domain: "podman.io" as const,
-  description: "Package information for podman.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/podman.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +podman.io -- $SHELL -i" as const,
+  fullPath: "podman.io" as const,
 }
 
 export type PodmanioPackage = typeof podmanioPackage

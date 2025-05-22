@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const codercomPackage = {
+  name: "coder" as const,
+  domain: "coder.com" as const,
+  description: "Tool for provisioning self-hosted development environments with Terraform" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) coder" as const,
   programs: [
     "coder",
   ] as const,
@@ -76,13 +80,7 @@ export const codercomPackage = {
     "2.7.2",
     "2.6.1",
   ] as const,
-  name: "coder.com" as const,
-  domain: "coder.com" as const,
-  description: "Package information for coder.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +coder.com -- $SHELL -i" as const,
+  fullPath: "coder.com" as const,
 }
 
 export type CodercomPackage = typeof codercomPackage

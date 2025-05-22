@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const hardingmotdcaPackage = {
+  name: "harding.motd.ca" as const,
+  domain: "harding.motd.ca" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx harding.motd.ca" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "harding.motd.ca" as const,
-  domain: "harding.motd.ca" as const,
-  description: "Package information for harding.motd.ca" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/harding.motd.ca/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +harding.motd.ca -- $SHELL -i" as const,
+  fullPath: "harding.motd.ca" as const,
 }
 
 export type HardingmotdcaPackage = typeof hardingmotdcaPackage

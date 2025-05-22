@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const valkeyioPackage = {
+  name: "valkey" as const,
+  domain: "valkey.io" as const,
+  description: "A flexible distributed key-value datastore that is optimized for caching and other realtime workloads." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/valkey.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +valkey.io -- $SHELL -i" as const,
   programs: [
     "valkey-server",
     "valkey-cli",
@@ -24,13 +28,7 @@ export const valkeyioPackage = {
     "7.2.6",
     "7.2.5",
   ] as const,
-  name: "valkey.io" as const,
-  domain: "valkey.io" as const,
-  description: "Package information for valkey.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/valkey.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +valkey.io -- $SHELL -i" as const,
+  fullPath: "valkey.io" as const,
 }
 
 export type ValkeyioPackage = typeof valkeyioPackage

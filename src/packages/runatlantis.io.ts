@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const runatlantisioPackage = {
+  name: "atlantis" as const,
+  domain: "runatlantis.io" as const,
+  description: "Terraform Pull Request Automation tool" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/runatlantis.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) atlantis" as const,
   programs: [
     "atlantis",
   ] as const,
@@ -27,16 +31,10 @@ export const runatlantisioPackage = {
     "0.26.0",
     "0.25.0",
   ] as const,
+  fullPath: "runatlantis.io" as const,
   aliases: [
     "atlantis",
   ] as const,
-  name: "runatlantis.io" as const,
-  domain: "runatlantis.io" as const,
-  description: "Package information for runatlantis.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/runatlantis.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +runatlantis.io -- $SHELL -i" as const,
 }
 
 export type RunatlantisioPackage = typeof runatlantisioPackage

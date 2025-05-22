@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const dystroyorgbaconPackage = {
+  name: "bacon" as const,
+  domain: "dystroy.org/bacon" as const,
+  description: "Background rust code check" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dystroy.org/bacon/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) bacon" as const,
   programs: [
     "bacon",
   ] as const,
@@ -20,16 +24,10 @@ export const dystroyorgbaconPackage = {
     "3.9.0",
     "3.8.0",
   ] as const,
+  fullPath: "dystroy.org/bacon" as const,
   aliases: [
     "bacon",
   ] as const,
-  name: "dystroy.org/bacon" as const,
-  domain: "dystroy.org/bacon" as const,
-  description: "Package information for dystroy.org/bacon" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dystroy.org/bacon/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +dystroy.org/bacon -- $SHELL -i" as const,
 }
 
 export type DystroyorgbaconPackage = typeof dystroyorgbaconPackage

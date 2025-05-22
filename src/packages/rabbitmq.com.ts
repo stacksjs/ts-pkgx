@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const rabbitmqcomPackage = {
+  name: "rabbitmq.com" as const,
+  domain: "rabbitmq.com" as const,
+  description: "Open source RabbitMQ: core server and tier 1 (built-in) plugins" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rabbitmq.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +rabbitmq.com -- $SHELL -i" as const,
   programs: [
     "rabbitmqctl",
     "rabbitmq-defaults",
@@ -52,13 +56,7 @@ export const rabbitmqcomPackage = {
     "3.11.25",
     "3.11.24",
   ] as const,
-  name: "rabbitmq.com" as const,
-  domain: "rabbitmq.com" as const,
-  description: "Package information for rabbitmq.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rabbitmq.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +rabbitmq.com -- $SHELL -i" as const,
+  fullPath: "rabbitmq.com" as const,
 }
 
 export type RabbitmqcomPackage = typeof rabbitmqcomPackage

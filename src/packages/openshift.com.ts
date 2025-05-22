@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openshiftcomPackage = {
+  name: "oc" as const,
+  domain: "openshift.com" as const,
+  description: "The OpenShift Command Line, part of OKD" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openshift.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) oc" as const,
   programs: [
     "oc",
   ] as const,
@@ -225,16 +229,10 @@ export const openshiftcomPackage = {
     "4.12.53",
     "4.11.59",
   ] as const,
+  fullPath: "openshift.com" as const,
   aliases: [
     "oc",
   ] as const,
-  name: "openshift.com" as const,
-  domain: "openshift.com" as const,
-  description: "Package information for openshift.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openshift.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openshift.com -- $SHELL -i" as const,
 }
 
 export type OpenshiftcomPackage = typeof openshiftcomPackage

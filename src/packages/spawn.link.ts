@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const spawnlinkPackage = {
+  name: "spawn.link" as const,
+  domain: "spawn.link" as const,
+  description: "a featureful union filesystem" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/spawn.link/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +spawn.link -- $SHELL -i" as const,
   programs: [
     "mergerfs",
     "mergerfs-fusermount",
@@ -20,13 +24,7 @@ export const spawnlinkPackage = {
     "2.36.0",
     "2.35.1",
   ] as const,
-  name: "spawn.link" as const,
-  domain: "spawn.link" as const,
-  description: "Package information for spawn.link" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/spawn.link/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +spawn.link -- $SHELL -i" as const,
+  fullPath: "spawn.link" as const,
 }
 
 export type SpawnlinkPackage = typeof spawnlinkPackage

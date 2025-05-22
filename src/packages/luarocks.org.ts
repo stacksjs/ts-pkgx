@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const luarocksorgPackage = {
+  name: "luarocks" as const,
+  domain: "luarocks.org" as const,
+  description: "LuaRocks is the package manager for the Lua programming language." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/luarocks.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +luarocks.org -- $SHELL -i" as const,
   programs: [
     "luarocks",
     "luarocks-admin",
@@ -17,13 +21,7 @@ export const luarocksorgPackage = {
     "3.10.0",
     "3.9.2",
   ] as const,
-  name: "luarocks.org" as const,
-  domain: "luarocks.org" as const,
-  description: "Package information for luarocks.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/luarocks.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +luarocks.org -- $SHELL -i" as const,
+  fullPath: "luarocks.org" as const,
 }
 
 export type LuarocksorgPackage = typeof luarocksorgPackage

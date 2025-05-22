@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pocketbaseioPackage = {
+  name: "pocketbase" as const,
+  domain: "pocketbase.io" as const,
+  description: "Open source backend for your next project in 1 file" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pocketbase.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pocketbase" as const,
   programs: [
     "pocketbase",
   ] as const,
@@ -88,13 +92,7 @@ export const pocketbaseioPackage = {
     "0.21.0",
     "0.20.7",
   ] as const,
-  name: "pocketbase.io" as const,
-  domain: "pocketbase.io" as const,
-  description: "Package information for pocketbase.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pocketbase.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pocketbase.io -- $SHELL -i" as const,
+  fullPath: "pocketbase.io" as const,
 }
 
 export type PocketbaseioPackage = typeof pocketbaseioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const githubcomgitecosystemgitcredentialmanagerPackage = {
+  name: "git-credential-manager" as const,
+  domain: "github.com/git-ecosystem/git-credential-manager" as const,
+  description: "Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/git-ecosystem/git-credential-manager/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) git-credential-manager" as const,
   programs: [
     "git-credential-manager",
   ] as const,
@@ -17,17 +21,11 @@ export const githubcomgitecosystemgitcredentialmanagerPackage = {
   versions: [
     "2.6.1",
   ] as const,
+  fullPath: "github.com/git-ecosystem/git-credential-manager" as const,
   aliases: [
     "git-credential-manager",
     "git-ecosystem/git-credential-manager",
   ] as const,
-  name: "github.com/git-ecosystem-git-credential-manager" as const,
-  domain: "github.com/git-ecosystem-git-credential-manager" as const,
-  description: "Package information for github.com/git-ecosystem-git-credential-manager" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/git-ecosystem-git-credential-manager/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +github.com/git-ecosystem-git-credential-manager -- $SHELL -i" as const,
 }
 
 export type GithubcomgitecosystemgitcredentialmanagerPackage = typeof githubcomgitecosystemgitcredentialmanagerPackage

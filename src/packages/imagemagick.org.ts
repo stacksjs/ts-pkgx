@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const imagemagickorgPackage = {
+  name: "imagemagick.org" as const,
+  domain: "imagemagick.org" as const,
+  description: "ImageMagick is a powerful, open-source software suite for creating, editing, converting, and manipulating images in over 200 formats. Ideal for web developers, graphic designers, and researchers, it offers versatile tools for image processing, including batch processing, format conversion, and complex image transformations." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/imagemagick.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +imagemagick.org -- $SHELL -i" as const,
   programs: [
     "animate",
     "compare",
@@ -53,13 +57,7 @@ export const imagemagickorgPackage = {
     "7.1.1.12",
     "7.1.0.61",
   ] as const,
-  name: "imagemagick.org" as const,
-  domain: "imagemagick.org" as const,
-  description: "Package information for imagemagick.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/imagemagick.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +imagemagick.org -- $SHELL -i" as const,
+  fullPath: "imagemagick.org" as const,
 }
 
 export type ImagemagickorgPackage = typeof imagemagickorgPackage

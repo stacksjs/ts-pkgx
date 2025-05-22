@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gitleaksioPackage = {
+  name: "gitleaks" as const,
+  domain: "gitleaks.io" as const,
+  description: "Find secrets with Gitleaks 🔑" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gitleaks.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) gitleaks" as const,
   programs: [
     "gitleaks",
   ] as const,
@@ -35,13 +39,7 @@ export const gitleaksioPackage = {
     "8.18.2",
     "8.18.1",
   ] as const,
-  name: "gitleaks.io" as const,
-  domain: "gitleaks.io" as const,
-  description: "Package information for gitleaks.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gitleaks.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +gitleaks.io -- $SHELL -i" as const,
+  fullPath: "gitleaks.io" as const,
 }
 
 export type GitleaksioPackage = typeof gitleaksioPackage

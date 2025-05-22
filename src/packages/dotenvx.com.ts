@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const dotenvxcomPackage = {
+  name: "dotenvx" as const,
+  domain: "dotenvx.com" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dotenvx.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) dotenvx" as const,
   programs: [
     "dotenvx",
   ] as const,
@@ -178,13 +182,7 @@ export const dotenvxcomPackage = {
     "0.10.6",
     "0.8.4",
   ] as const,
-  name: "dotenvx.com" as const,
-  domain: "dotenvx.com" as const,
-  description: "Package information for dotenvx.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dotenvx.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +dotenvx.com -- $SHELL -i" as const,
+  fullPath: "dotenvx.com" as const,
 }
 
 export type DotenvxcomPackage = typeof dotenvxcomPackage

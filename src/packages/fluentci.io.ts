@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const fluentciioPackage = {
+  name: "fluentci" as const,
+  domain: "fluentci.io" as const,
+  description: "Set up and run your CI locally or in any CI Provider in a consistent way https://backdropbuild.com/builds/v4/fluentci" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fluentci.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) fluentci" as const,
   programs: [
     "fluentci",
   ] as const,
@@ -81,13 +85,7 @@ export const fluentciioPackage = {
     "0.6.8",
     "0.6.7",
   ] as const,
-  name: "fluentci.io" as const,
-  domain: "fluentci.io" as const,
-  description: "Package information for fluentci.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fluentci.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +fluentci.io -- $SHELL -i" as const,
+  fullPath: "fluentci.io" as const,
 }
 
 export type FluentciioPackage = typeof fluentciioPackage

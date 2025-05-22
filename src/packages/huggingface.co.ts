@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const huggingfacecoPackage = {
+  name: "huggingface/cli" as const,
+  domain: "huggingface.co" as const,
+  description: "The official Python client for the Huggingface Hub." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/huggingface.co/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) huggingface-cli" as const,
   programs: [
     "huggingface-cli",
   ] as const,
@@ -59,16 +63,10 @@ export const huggingfacecoPackage = {
     "0.20.0",
     "0.19.4",
   ] as const,
+  fullPath: "huggingface.co" as const,
   aliases: [
     "huggingface/cli",
   ] as const,
-  name: "huggingface.co" as const,
-  domain: "huggingface.co" as const,
-  description: "Package information for huggingface.co" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/huggingface.co/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +huggingface.co -- $SHELL -i" as const,
 }
 
 export type HuggingfacecoPackage = typeof huggingfacecoPackage

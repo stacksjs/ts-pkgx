@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pulumiioPackage = {
+  name: "pulumi" as const,
+  domain: "pulumi.io" as const,
+  description: "Pulumi - Infrastructure as Code in any programming language 🚀" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pulumi.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i" as const,
   programs: [
     "pulumi",
     "pulumi-analyzer-policy",
@@ -157,13 +161,7 @@ export const pulumiioPackage = {
     "3.67.0",
     "3.66.0",
   ] as const,
-  name: "pulumi.io" as const,
-  domain: "pulumi.io" as const,
-  description: "Package information for pulumi.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pulumi.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i" as const,
+  fullPath: "pulumi.io" as const,
 }
 
 export type PulumiioPackage = typeof pulumiioPackage

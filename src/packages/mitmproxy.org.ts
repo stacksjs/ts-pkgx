@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mitmproxyorgPackage = {
+  name: "mitmproxy" as const,
+  domain: "mitmproxy.org" as const,
+  description: "An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mitmproxy.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) mitmproxy" as const,
   programs: [
     "mitmproxy",
   ] as const,
@@ -36,13 +40,7 @@ export const mitmproxyorgPackage = {
     "10.1.1",
     "10.1.0",
   ] as const,
-  name: "mitmproxy.org" as const,
-  domain: "mitmproxy.org" as const,
-  description: "Package information for mitmproxy.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mitmproxy.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mitmproxy.org -- $SHELL -i" as const,
+  fullPath: "mitmproxy.org" as const,
 }
 
 export type MitmproxyorgPackage = typeof mitmproxyorgPackage

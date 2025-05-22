@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const sconsorgPackage = {
+  name: "scons" as const,
+  domain: "scons.org" as const,
+  description: "Substitute for classic 'make' tool with autoconf/automake functionality" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/scons.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) scons" as const,
   programs: [
     "scons",
   ] as const,
@@ -20,13 +24,7 @@ export const sconsorgPackage = {
     "4.6.0",
     "4.5.2",
   ] as const,
-  name: "scons.org" as const,
-  domain: "scons.org" as const,
-  description: "Package information for scons.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/scons.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +scons.org -- $SHELL -i" as const,
+  fullPath: "scons.org" as const,
 }
 
 export type SconsorgPackage = typeof sconsorgPackage

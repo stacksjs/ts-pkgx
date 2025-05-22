@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const leptonicaorgPackage = {
+  name: "leptonica.org" as const,
+  domain: "leptonica.org" as const,
+  description: "Leptonica is an open source library containing software that is broadly useful for image processing and image analysis applications. The official github repository for Leptonica is: danbloomberg/leptonica.  See leptonica.org for more documentation." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/leptonica.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +leptonica.org -- $SHELL -i" as const,
   programs: [
     "convertfilestopdf",
     "convertfilestops",
@@ -29,13 +33,7 @@ export const leptonicaorgPackage = {
     "1.84.0",
     "1.83.1",
   ] as const,
-  name: "leptonica.org" as const,
-  domain: "leptonica.org" as const,
-  description: "Package information for leptonica.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/leptonica.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +leptonica.org -- $SHELL -i" as const,
+  fullPath: "leptonica.org" as const,
 }
 
 export type LeptonicaorgPackage = typeof leptonicaorgPackage

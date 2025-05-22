@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mpvioPackage = {
+  name: "mpv" as const,
+  domain: "mpv.io" as const,
+  description: "Media player based on MPlayer and mplayer2" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mpv.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) mpv" as const,
   programs: [
     "mpv",
   ] as const,
@@ -27,13 +31,7 @@ export const mpvioPackage = {
     "0.39.0",
     "0.38.0",
   ] as const,
-  name: "mpv.io" as const,
-  domain: "mpv.io" as const,
-  description: "Package information for mpv.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mpv.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mpv.io -- $SHELL -i" as const,
+  fullPath: "mpv.io" as const,
 }
 
 export type MpvioPackage = typeof mpvioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const glfworgPackage = {
+  name: "glfw.org" as const,
+  domain: "glfw.org" as const,
+  description: "A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/glfw.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -16,13 +20,7 @@ export const glfworgPackage = {
     "3.3.10",
     "3.3.9",
   ] as const,
-  name: "glfw.org" as const,
-  domain: "glfw.org" as const,
-  description: "Package information for glfw.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/glfw.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i" as const,
+  fullPath: "glfw.org" as const,
 }
 
 export type GlfworgPackage = typeof glfworgPackage

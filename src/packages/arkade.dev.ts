@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const arkadedevPackage = {
+  name: "Arkade" as const,
+  domain: "arkade.dev" as const,
+  description: "Open Source Marketplace For Developer Tools" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/arkade.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) arkade" as const,
   programs: [
     "arkade",
   ] as const,
@@ -46,13 +50,7 @@ export const arkadedevPackage = {
     "0.10.23",
     "0.10.22",
   ] as const,
-  name: "arkade.dev" as const,
-  domain: "arkade.dev" as const,
-  description: "Package information for arkade.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/arkade.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +arkade.dev -- $SHELL -i" as const,
+  fullPath: "arkade.dev" as const,
 }
 
 export type ArkadedevPackage = typeof arkadedevPackage

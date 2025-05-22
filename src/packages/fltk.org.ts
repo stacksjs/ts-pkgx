@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const fltkorgPackage = {
+  name: "fltk.org" as const,
+  domain: "fltk.org" as const,
+  description: "FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fltk.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +fltk.org -- $SHELL -i" as const,
   programs: [
     "fluid",
     "fltk-config",
@@ -23,13 +27,7 @@ export const fltkorgPackage = {
     "1.3.10",
     "1.3.9",
   ] as const,
-  name: "fltk.org" as const,
-  domain: "fltk.org" as const,
-  description: "Package information for fltk.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fltk.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +fltk.org -- $SHELL -i" as const,
+  fullPath: "fltk.org" as const,
 }
 
 export type FltkorgPackage = typeof fltkorgPackage

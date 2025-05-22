@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const docutilsorgPackage = {
+  name: "docutils.org" as const,
+  domain: "docutils.org" as const,
+  description: "Text processing system for reStructuredText" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/docutils.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i" as const,
   programs: [
     "docutils",
     "rst2html",
@@ -27,13 +31,7 @@ export const docutilsorgPackage = {
     "0.20.0",
     "0.19.0",
   ] as const,
-  name: "docutils.org" as const,
-  domain: "docutils.org" as const,
-  description: "Package information for docutils.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/docutils.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i" as const,
+  fullPath: "docutils.org" as const,
 }
 
 export type DocutilsorgPackage = typeof docutilsorgPackage

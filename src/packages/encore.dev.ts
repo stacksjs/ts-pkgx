@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const encoredevPackage = {
+  name: "encore.dev" as const,
+  domain: "encore.dev" as const,
+  description: "Open Source Development Platform for building robust type-safe distributed systems with declarative infrastructure" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/encore.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +encore.dev -- $SHELL -i" as const,
   programs: [
     "encore",
     "git-remote-encore",
@@ -63,13 +67,7 @@ export const encoredevPackage = {
     "1.26.0",
     "1.25.0",
   ] as const,
-  name: "encore.dev" as const,
-  domain: "encore.dev" as const,
-  description: "Package information for encore.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/encore.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +encore.dev -- $SHELL -i" as const,
+  fullPath: "encore.dev" as const,
 }
 
 export type EncoredevPackage = typeof encoredevPackage

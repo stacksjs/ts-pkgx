@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const moshorgPackage = {
+  name: "mosh" as const,
+  domain: "mosh.org" as const,
+  description: "Remote terminal application" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mosh.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i" as const,
   programs: [
     "mosh-client",
     "mosh-server",
@@ -17,13 +21,7 @@ export const moshorgPackage = {
   versions: [
     "1.4.0",
   ] as const,
-  name: "mosh.org" as const,
-  domain: "mosh.org" as const,
-  description: "Package information for mosh.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mosh.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i" as const,
+  fullPath: "mosh.org" as const,
 }
 
 export type MoshorgPackage = typeof moshorgPackage

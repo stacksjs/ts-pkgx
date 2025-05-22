@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const elementsprojectorgPackage = {
+  name: "elementsproject.org" as const,
+  domain: "elementsproject.org" as const,
+  description: "Open Source implementation of advanced blockchain features extending the Bitcoin protocol" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/elementsproject.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +elementsproject.org -- $SHELL -i" as const,
   programs: [
     "bench_bitcoin",
     "elements-cli",
@@ -28,13 +32,7 @@ export const elementsprojectorgPackage = {
     "23.2.1",
     "22.1.1",
   ] as const,
-  name: "elementsproject.org" as const,
-  domain: "elementsproject.org" as const,
-  description: "Package information for elementsproject.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/elementsproject.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +elementsproject.org -- $SHELL -i" as const,
+  fullPath: "elementsproject.org" as const,
 }
 
 export type ElementsprojectorgPackage = typeof elementsprojectorgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const dotnetmicrosoftcomPackage = {
+  name: "dotnet" as const,
+  domain: "dotnet.microsoft.com" as const,
+  description: "Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET SDK from source" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dotnet.microsoft.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) dotnet" as const,
   programs: [
     "dotnet",
   ] as const,
@@ -45,13 +49,7 @@ export const dotnetmicrosoftcomPackage = {
     "6.0.131",
     "6.0.130",
   ] as const,
-  name: "dotnet.microsoft.com" as const,
-  domain: "dotnet.microsoft.com" as const,
-  description: "Package information for dotnet.microsoft.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dotnet.microsoft.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +dotnet.microsoft.com -- $SHELL -i" as const,
+  fullPath: "dotnet.microsoft.com" as const,
 }
 
 export type DotnetmicrosoftcomPackage = typeof dotnetmicrosoftcomPackage

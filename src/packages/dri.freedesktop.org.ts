@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const drifreedesktoporgPackage = {
+  name: "libdrm" as const,
+  domain: "dri.freedesktop.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dri.freedesktop.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +dri.freedesktop.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -19,16 +23,10 @@ export const drifreedesktoporgPackage = {
     "2.4.116",
     "2.4.100",
   ] as const,
+  fullPath: "dri.freedesktop.org" as const,
   aliases: [
     "libdrm",
   ] as const,
-  name: "dri.freedesktop.org" as const,
-  domain: "dri.freedesktop.org" as const,
-  description: "Package information for dri.freedesktop.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/dri.freedesktop.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +dri.freedesktop.org -- $SHELL -i" as const,
 }
 
 export type DrifreedesktoporgPackage = typeof drifreedesktoporgPackage

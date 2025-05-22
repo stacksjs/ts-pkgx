@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const rtmpdumpmplayerhqhuPackage = {
+  name: "rtmpdump" as const,
+  domain: "rtmpdump.mplayerhq.hu" as const,
+  description: "Tool for downloading RTMP streaming media" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rtmpdump.mplayerhq.hu/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu -- $SHELL -i" as const,
   programs: [
     "rtmpdump",
     "rtmpgw",
@@ -17,13 +21,7 @@ export const rtmpdumpmplayerhqhuPackage = {
     "2.3.0",
     "2.3.0",
   ] as const,
-  name: "rtmpdump.mplayerhq.hu" as const,
-  domain: "rtmpdump.mplayerhq.hu" as const,
-  description: "Package information for rtmpdump.mplayerhq.hu" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rtmpdump.mplayerhq.hu/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu -- $SHELL -i" as const,
+  fullPath: "rtmpdump.mplayerhq.hu" as const,
 }
 
 export type RtmpdumpmplayerhqhuPackage = typeof rtmpdumpmplayerhqhuPackage

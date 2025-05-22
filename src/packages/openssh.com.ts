@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const opensshcomPackage = {
+  name: "openssh.com" as const,
+  domain: "openssh.com" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openssh.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +openssh.com -- $SHELL -i" as const,
   programs: [
     "scp",
     "sftp",
@@ -33,13 +37,7 @@ export const opensshcomPackage = {
     "9.6.0",
     "9.5.0",
   ] as const,
-  name: "openssh.com" as const,
-  domain: "openssh.com" as const,
-  description: "Package information for openssh.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openssh.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openssh.com -- $SHELL -i" as const,
+  fullPath: "openssh.com" as const,
 }
 
 export type OpensshcomPackage = typeof opensshcomPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const vimorgPackage = {
+  name: "vim.org" as const,
+  domain: "vim.org" as const,
+  description: "The official Vim repository" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vim.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i" as const,
   programs: [
     "vim",
     "vi",
@@ -1997,13 +2001,7 @@ export const vimorgPackage = {
     "9.0.1504",
     "9.0.1294",
   ] as const,
-  name: "vim.org" as const,
-  domain: "vim.org" as const,
-  description: "Package information for vim.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vim.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i" as const,
+  fullPath: "vim.org" as const,
 }
 
 export type VimorgPackage = typeof vimorgPackage

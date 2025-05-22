@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tldrshPackage = {
+  name: "tldr" as const,
+  domain: "tldr.sh" as const,
+  description: "C command-line client for tldr pages 📚" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tldr.sh/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) tldr" as const,
   programs: [
     "tldr",
   ] as const,
@@ -17,13 +21,7 @@ export const tldrshPackage = {
     "1.6.0",
     "1.5.0",
   ] as const,
-  name: "tldr.sh" as const,
-  domain: "tldr.sh" as const,
-  description: "Package information for tldr.sh" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tldr.sh/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tldr.sh -- $SHELL -i" as const,
+  fullPath: "tldr.sh" as const,
 }
 
 export type TldrshPackage = typeof tldrshPackage

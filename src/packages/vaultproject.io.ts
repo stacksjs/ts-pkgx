@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const vaultprojectioPackage = {
+  name: "vault" as const,
+  domain: "vaultproject.io" as const,
+  description: "A tool for secrets management, encryption as a service, and privileged access management" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vaultproject.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) vault" as const,
   programs: [
     "vault",
   ] as const,
@@ -64,13 +68,7 @@ export const vaultprojectioPackage = {
     "1.12.9",
     "1.12.8",
   ] as const,
-  name: "vaultproject.io" as const,
-  domain: "vaultproject.io" as const,
-  description: "Package information for vaultproject.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vaultproject.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +vaultproject.io -- $SHELL -i" as const,
+  fullPath: "vaultproject.io" as const,
 }
 
 export type VaultprojectioPackage = typeof vaultprojectioPackage

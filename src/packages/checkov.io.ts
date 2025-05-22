@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const checkovioPackage = {
+  name: "checkov" as const,
+  domain: "checkov.io" as const,
+  description: "Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages with Checkov by Bridgecrew." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/checkov.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) checkov" as const,
   programs: [
     "checkov",
   ] as const,
@@ -478,13 +482,7 @@ export const checkovioPackage = {
     "3.1.31",
     "3.1.30",
   ] as const,
-  name: "checkov.io" as const,
-  domain: "checkov.io" as const,
-  description: "Package information for checkov.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/checkov.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +checkov.io -- $SHELL -i" as const,
+  fullPath: "checkov.io" as const,
 }
 
 export type CheckovioPackage = typeof checkovioPackage

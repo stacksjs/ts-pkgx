@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const limavmioPackage = {
+  name: "lima-vm.io" as const,
+  domain: "lima-vm.io" as const,
+  description: "Linux virtual machines, with a focus on running containers" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lima-vm.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +lima-vm.io -- $SHELL -i" as const,
   programs: [
     "apptainer.lima",
     "docker.lima",
@@ -42,13 +46,7 @@ export const limavmioPackage = {
     "0.17.0",
     "0.16.0",
   ] as const,
-  name: "lima/vm.io" as const,
-  domain: "lima/vm.io" as const,
-  description: "Package information for lima/vm.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lima/vm.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +lima/vm.io -- $SHELL -i" as const,
+  fullPath: "lima-vm.io" as const,
 }
 
 export type LimavmioPackage = typeof limavmioPackage

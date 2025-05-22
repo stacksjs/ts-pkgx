@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const k9scliioPackage = {
+  name: "k9s" as const,
+  domain: "k9scli.io" as const,
+  description: "🐶 Kubernetes CLI To Manage Your Clusters In Style!" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/k9scli.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) k9s" as const,
   programs: [
     "k9s",
   ] as const,
@@ -61,13 +65,7 @@ export const k9scliioPackage = {
     "0.27.4",
     "0.27.3",
   ] as const,
-  name: "k9scli.io" as const,
-  domain: "k9scli.io" as const,
-  description: "Package information for k9scli.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/k9scli.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +k9scli.io -- $SHELL -i" as const,
+  fullPath: "k9scli.io" as const,
 }
 
 export type K9scliioPackage = typeof k9scliioPackage

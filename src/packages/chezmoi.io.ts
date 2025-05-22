@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const chezmoiioPackage = {
+  name: "chezmoi" as const,
+  domain: "chezmoi.io" as const,
+  description: "Manage your dotfiles across multiple diverse machines, securely." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/chezmoi.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) chezmoi" as const,
   programs: [
     "chezmoi",
   ] as const,
@@ -83,13 +87,7 @@ export const chezmoiioPackage = {
     "2.29.4",
     "2.29.3",
   ] as const,
-  name: "chezmoi.io" as const,
-  domain: "chezmoi.io" as const,
-  description: "Package information for chezmoi.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/chezmoi.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +chezmoi.io -- $SHELL -i" as const,
+  fullPath: "chezmoi.io" as const,
 }
 
 export type ChezmoiioPackage = typeof chezmoiioPackage

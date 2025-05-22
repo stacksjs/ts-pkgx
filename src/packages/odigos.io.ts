@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const odigosioPackage = {
+  name: "odigos" as const,
+  domain: "odigos.io" as const,
+  description: "Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetry and eBPF" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/odigos.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) odigos" as const,
   programs: [
     "odigos",
   ] as const,
@@ -183,13 +187,7 @@ export const odigosioPackage = {
     "1.0.2",
     "1.0.1",
   ] as const,
-  name: "odigos.io" as const,
-  domain: "odigos.io" as const,
-  description: "Package information for odigos.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/odigos.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +odigos.io -- $SHELL -i" as const,
+  fullPath: "odigos.io" as const,
 }
 
 export type OdigosioPackage = typeof odigosioPackage

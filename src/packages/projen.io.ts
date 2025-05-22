@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const projenioPackage = {
+  name: "projen" as const,
+  domain: "projen.io" as const,
+  description: "Rapidly build modern applications with advanced configuration management" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/projen.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) projen" as const,
   programs: [
     "projen",
   ] as const,
@@ -51,13 +55,7 @@ export const projenioPackage = {
     "0.91.7",
     "0.91.6",
   ] as const,
-  name: "projen.io" as const,
-  domain: "projen.io" as const,
-  description: "Package information for projen.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/projen.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +projen.io -- $SHELL -i" as const,
+  fullPath: "projen.io" as const,
 }
 
 export type ProjenioPackage = typeof projenioPackage

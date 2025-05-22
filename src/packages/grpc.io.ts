@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const grpcioPackage = {
+  name: "grpc" as const,
+  domain: "grpc.io" as const,
+  description: "The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +grpc.io -- $SHELL -i" as const,
   programs: [
     "grpc_csharp_plugin",
     "grpc_node_plugin",
@@ -67,13 +71,7 @@ export const grpcioPackage = {
     "1.56.3",
     "1.55.4",
   ] as const,
-  name: "grpc.io" as const,
-  domain: "grpc.io" as const,
-  description: "Package information for grpc.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +grpc.io -- $SHELL -i" as const,
+  fullPath: "grpc.io" as const,
 }
 
 export type GrpcioPackage = typeof grpcioPackage

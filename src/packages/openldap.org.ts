@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openldaporgPackage = {
+  name: "ldap" as const,
+  domain: "openldap.org" as const,
+  description: "Open source suite of directory software" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +openldap.org -- $SHELL -i" as const,
   programs: [
     "ldapcompare",
     "ldapdelete",
@@ -33,16 +37,10 @@ export const openldaporgPackage = {
     "2.5.16",
     "2.5.15",
   ] as const,
+  fullPath: "openldap.org" as const,
   aliases: [
     "ldap",
   ] as const,
-  name: "openldap.org" as const,
-  domain: "openldap.org" as const,
-  description: "Package information for openldap.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openldap.org -- $SHELL -i" as const,
 }
 
 export type OpenldaporgPackage = typeof openldaporgPackage

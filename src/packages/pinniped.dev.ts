@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pinnipeddevPackage = {
+  name: "pinniped" as const,
+  domain: "pinniped.dev" as const,
+  description: "Pinniped is the easy, secure way to log in to your Kubernetes clusters." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pinniped.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pinniped" as const,
   programs: [
     "pinniped",
   ] as const,
@@ -23,13 +27,7 @@ export const pinnipeddevPackage = {
     "0.27.0",
     "0.26.0",
   ] as const,
-  name: "pinniped.dev" as const,
-  domain: "pinniped.dev" as const,
-  description: "Package information for pinniped.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pinniped.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pinniped.dev -- $SHELL -i" as const,
+  fullPath: "pinniped.dev" as const,
 }
 
 export type PinnipeddevPackage = typeof pinnipeddevPackage

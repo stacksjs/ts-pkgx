@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const keephqdevPackage = {
+  name: "keep" as const,
+  domain: "keephq.dev" as const,
+  description: "The open-source AIOps and alert management platform" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/keephq.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) keep" as const,
   programs: [
     "keep",
   ] as const,
@@ -12,13 +16,7 @@ export const keephqdevPackage = {
   versions: [
     "0.0.0",
   ] as const,
-  name: "keephq.dev" as const,
-  domain: "keephq.dev" as const,
-  description: "Package information for keephq.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/keephq.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +keephq.dev -- $SHELL -i" as const,
+  fullPath: "keephq.dev" as const,
 }
 
 export type KeephqdevPackage = typeof keephqdevPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const infracostioPackage = {
+  name: "infracost" as const,
+  domain: "infracost.io" as const,
+  description: "Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left!" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/infracost.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) infracost" as const,
   programs: [
     "infracost",
   ] as const,
@@ -19,13 +23,7 @@ export const infracostioPackage = {
     "0.10.33",
     "0.10.32",
   ] as const,
-  name: "infracost.io" as const,
-  domain: "infracost.io" as const,
-  description: "Package information for infracost.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/infracost.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +infracost.io -- $SHELL -i" as const,
+  fullPath: "infracost.io" as const,
 }
 
 export type InfracostioPackage = typeof infracostioPackage

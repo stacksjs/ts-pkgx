@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const buildpacksioPackage = {
+  name: "pack" as const,
+  domain: "buildpacks.io" as const,
+  description: "CLI for building apps using Cloud Native Buildpacks" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/buildpacks.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pack" as const,
   programs: [
     "pack",
   ] as const,
@@ -21,16 +25,10 @@ export const buildpacksioPackage = {
     "0.34.0",
     "0.33.2",
   ] as const,
+  fullPath: "buildpacks.io" as const,
   aliases: [
     "pack",
   ] as const,
-  name: "buildpacks.io" as const,
-  domain: "buildpacks.io" as const,
-  description: "Package information for buildpacks.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/buildpacks.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +buildpacks.io -- $SHELL -i" as const,
 }
 
 export type BuildpacksioPackage = typeof buildpacksioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const sphinxdocorgPackage = {
+  name: "sphinx" as const,
+  domain: "sphinx-doc.org" as const,
+  description: "Tool to create intelligent and beautiful documentation" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sphinx-doc.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +sphinx-doc.org -- $SHELL -i" as const,
   programs: [
     "sphinx-apidoc",
     "sphinx-autogen",
@@ -56,13 +60,7 @@ export const sphinxdocorgPackage = {
     "6.2.0",
     "6.1.3",
   ] as const,
-  name: "sphinx/doc.org" as const,
-  domain: "sphinx/doc.org" as const,
-  description: "Package information for sphinx/doc.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/sphinx/doc.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +sphinx/doc.org -- $SHELL -i" as const,
+  fullPath: "sphinx-doc.org" as const,
 }
 
 export type SphinxdocorgPackage = typeof sphinxdocorgPackage

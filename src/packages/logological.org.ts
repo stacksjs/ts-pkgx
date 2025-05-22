@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const logologicalorgPackage = {
+  name: "logological.org" as const,
+  domain: "logological.org" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx logological.org" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "logological.org" as const,
-  domain: "logological.org" as const,
-  description: "Package information for logological.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/logological.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +logological.org -- $SHELL -i" as const,
+  fullPath: "logological.org" as const,
 }
 
 export type LogologicalorgPackage = typeof logologicalorgPackage

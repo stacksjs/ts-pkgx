@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const wixcomPackage = {
+  name: "wix.com" as const,
+  domain: "wix.com" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx wix.com" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "wix.com" as const,
-  domain: "wix.com" as const,
-  description: "Package information for wix.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wix.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +wix.com -- $SHELL -i" as const,
+  fullPath: "wix.com" as const,
 }
 
 export type WixcomPackage = typeof wixcomPackage

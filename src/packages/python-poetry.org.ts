@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pythonpoetryorgPackage = {
+  name: "poetry" as const,
+  domain: "python-poetry.org" as const,
+  description: "Python packaging and dependency management made easy" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/python-poetry.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) poetry" as const,
   programs: [
     "poetry",
   ] as const,
@@ -32,16 +36,10 @@ export const pythonpoetryorgPackage = {
     "1.4.0",
     "1.3.2",
   ] as const,
+  fullPath: "python-poetry.org" as const,
   aliases: [
     "poetry",
   ] as const,
-  name: "python/poetry.org" as const,
-  domain: "python/poetry.org" as const,
-  description: "Package information for python/poetry.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/python/poetry.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +python/poetry.org -- $SHELL -i" as const,
 }
 
 export type PythonpoetryorgPackage = typeof pythonpoetryorgPackage

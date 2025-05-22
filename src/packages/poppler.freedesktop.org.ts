@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const popplerfreedesktoporgPackage = {
+  name: "poppler.freedesktop.org" as const,
+  domain: "poppler.freedesktop.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/poppler.freedesktop.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +poppler.freedesktop.org -- $SHELL -i" as const,
   programs: [
     "pdfattach",
     "pdfdetach",
@@ -57,13 +61,7 @@ export const popplerfreedesktoporgPackage = {
     "24.4.0",
     "22.12.0",
   ] as const,
-  name: "poppler.freedesktop.org" as const,
-  domain: "poppler.freedesktop.org" as const,
-  description: "Package information for poppler.freedesktop.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/poppler.freedesktop.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +poppler.freedesktop.org -- $SHELL -i" as const,
+  fullPath: "poppler.freedesktop.org" as const,
 }
 
 export type PopplerfreedesktoporgPackage = typeof popplerfreedesktoporgPackage

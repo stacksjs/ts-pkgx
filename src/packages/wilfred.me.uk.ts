@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const wilfredmeukPackage = {
+  name: "wilfred.me.uk" as const,
+  domain: "wilfred.me.uk" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx wilfred.me.uk" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "wilfred.me.uk" as const,
-  domain: "wilfred.me.uk" as const,
-  description: "Package information for wilfred.me.uk" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wilfred.me.uk/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +wilfred.me.uk -- $SHELL -i" as const,
+  fullPath: "wilfred.me.uk" as const,
 }
 
 export type WilfredmeukPackage = typeof wilfredmeukPackage

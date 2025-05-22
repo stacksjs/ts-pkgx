@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const hugowangPackage = {
+  name: "hugo.wang" as const,
+  domain: "hugo.wang" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx hugo.wang" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "hugo.wang" as const,
-  domain: "hugo.wang" as const,
-  description: "Package information for hugo.wang" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/hugo.wang/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +hugo.wang -- $SHELL -i" as const,
+  fullPath: "hugo.wang" as const,
 }
 
 export type HugowangPackage = typeof hugowangPackage

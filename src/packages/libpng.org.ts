@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libpngorgPackage = {
+  name: "libpng.org" as const,
+  domain: "libpng.org" as const,
+  description: "LIBPNG: Portable Network Graphics support, official libpng repository" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libpng.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i" as const,
   programs: [
     "libpng-config",
     "libpng16-config",
@@ -25,13 +29,7 @@ export const libpngorgPackage = {
     "1.6.39",
     "1.6.35",
   ] as const,
-  name: "libpng.org" as const,
-  domain: "libpng.org" as const,
-  description: "Package information for libpng.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libpng.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i" as const,
+  fullPath: "libpng.org" as const,
 }
 
 export type LibpngorgPackage = typeof libpngorgPackage

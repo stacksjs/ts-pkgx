@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const templguidePackage = {
+  name: "templ" as const,
+  domain: "templ.guide" as const,
+  description: "A language for writing HTML user interfaces in Go." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/templ.guide/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) templ" as const,
   programs: [
     "templ",
   ] as const,
@@ -33,13 +37,7 @@ export const templguidePackage = {
     "0.2.501",
     "0.2.476",
   ] as const,
-  name: "templ.guide" as const,
-  domain: "templ.guide" as const,
-  description: "Package information for templ.guide" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/templ.guide/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +templ.guide -- $SHELL -i" as const,
+  fullPath: "templ.guide" as const,
 }
 
 export type TemplguidePackage = typeof templguidePackage

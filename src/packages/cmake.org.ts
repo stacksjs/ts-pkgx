@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cmakeorgPackage = {
+  name: "cmake.org" as const,
+  domain: "cmake.org" as const,
+  description: "Mirror of CMake upstream repository" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cmake.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i" as const,
   programs: [
     "cmake",
     "ccmake",
@@ -75,13 +79,7 @@ export const cmakeorgPackage = {
     "3.24.4",
     "3.24.2",
   ] as const,
-  name: "cmake.org" as const,
-  domain: "cmake.org" as const,
-  description: "Package information for cmake.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cmake.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i" as const,
+  fullPath: "cmake.org" as const,
 }
 
 export type CmakeorgPackage = typeof cmakeorgPackage

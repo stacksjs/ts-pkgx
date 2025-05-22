@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const hasuraioPackage = {
+  name: "hasura" as const,
+  domain: "hasura.io" as const,
+  description: "Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/hasura.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) hasura" as const,
   programs: [
     "hasura",
   ] as const,
@@ -59,13 +63,7 @@ export const hasuraioPackage = {
     "2.11.11",
     "2.11.10",
   ] as const,
-  name: "hasura.io" as const,
-  domain: "hasura.io" as const,
-  description: "Package information for hasura.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/hasura.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +hasura.io -- $SHELL -i" as const,
+  fullPath: "hasura.io" as const,
 }
 
 export type HasuraioPackage = typeof hasuraioPackage

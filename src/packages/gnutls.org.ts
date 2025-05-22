@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gnutlsorgPackage = {
+  name: "gnutls.org" as const,
+  domain: "gnutls.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gnutls.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +gnutls.org -- $SHELL -i" as const,
   programs: [
     "certtool",
     "danetool",
@@ -36,13 +40,7 @@ export const gnutlsorgPackage = {
     "3.7.10",
     "3.6.16",
   ] as const,
-  name: "gnutls.org" as const,
-  domain: "gnutls.org" as const,
-  description: "Package information for gnutls.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gnutls.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +gnutls.org -- $SHELL -i" as const,
+  fullPath: "gnutls.org" as const,
 }
 
 export type GnutlsorgPackage = typeof gnutlsorgPackage

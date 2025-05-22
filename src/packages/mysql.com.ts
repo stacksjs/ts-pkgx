@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mysqlcomPackage = {
+  name: "mysql.com" as const,
+  domain: "mysql.com" as const,
+  description: "MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mysql.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i" as const,
   programs: [
     "mysql_client_test",
     "my_print_defaults",
@@ -76,13 +80,7 @@ export const mysqlcomPackage = {
     "8.0.33",
     "8.0.32",
   ] as const,
-  name: "mysql.com" as const,
-  domain: "mysql.com" as const,
-  description: "Package information for mysql.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mysql.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i" as const,
+  fullPath: "mysql.com" as const,
 }
 
 export type MysqlcomPackage = typeof mysqlcomPackage

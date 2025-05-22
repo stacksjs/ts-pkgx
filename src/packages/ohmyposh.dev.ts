@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ohmyposhdevPackage = {
+  name: "oh-my-posh" as const,
+  domain: "ohmyposh.dev" as const,
+  description: "The most customisable and low-latency cross platform/shell prompt renderer" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ohmyposh.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) oh-my-posh" as const,
   programs: [
     "oh-my-posh",
   ] as const,
@@ -279,16 +283,10 @@ export const ohmyposhdevPackage = {
     "19.8.1",
     "19.8.0",
   ] as const,
+  fullPath: "ohmyposh.dev" as const,
   aliases: [
     "oh-my-posh",
   ] as const,
-  name: "ohmyposh.dev" as const,
-  domain: "ohmyposh.dev" as const,
-  description: "Package information for ohmyposh.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ohmyposh.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ohmyposh.dev -- $SHELL -i" as const,
 }
 
 export type OhmyposhdevPackage = typeof ohmyposhdevPackage

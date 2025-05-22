@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cryptographyioPackage = {
+  name: "cryptography.io" as const,
+  domain: "cryptography.io" as const,
+  description: "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cryptography.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -30,13 +34,7 @@ export const cryptographyioPackage = {
     "42.0.2",
     "42.0.1",
   ] as const,
-  name: "cryptography.io" as const,
-  domain: "cryptography.io" as const,
-  description: "Package information for cryptography.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cryptography.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i" as const,
+  fullPath: "cryptography.io" as const,
 }
 
 export type CryptographyioPackage = typeof cryptographyioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const scalalangorgPackage = {
+  name: "scala-lang.org" as const,
+  domain: "scala-lang.org" as const,
+  description: "The Scala 3 compiler, also known as Dotty." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/scala-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +scala-lang.org -- $SHELL -i" as const,
   programs: [
     "scalac",
     "scala",
@@ -23,13 +27,7 @@ export const scalalangorgPackage = {
     "3.3.6",
     "3.3.5",
   ] as const,
-  name: "scala/lang.org" as const,
-  domain: "scala/lang.org" as const,
-  description: "Package information for scala/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/scala/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +scala/lang.org -- $SHELL -i" as const,
+  fullPath: "scala-lang.org" as const,
 }
 
 export type ScalalangorgPackage = typeof scalalangorgPackage

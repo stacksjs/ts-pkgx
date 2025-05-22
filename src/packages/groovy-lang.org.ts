@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const groovylangorgPackage = {
+  name: "groovy-lang.org" as const,
+  domain: "groovy-lang.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/groovy-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +groovy-lang.org -- $SHELL -i" as const,
   programs: [
     "grape",
     "grape_completion",
@@ -44,13 +48,7 @@ export const groovylangorgPackage = {
     "3.0.19",
     "2.5.23",
   ] as const,
-  name: "groovy/lang.org" as const,
-  domain: "groovy/lang.org" as const,
-  description: "Package information for groovy/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/groovy/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +groovy/lang.org -- $SHELL -i" as const,
+  fullPath: "groovy-lang.org" as const,
 }
 
 export type GroovylangorgPackage = typeof groovylangorgPackage

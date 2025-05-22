@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const hunspellgithubioPackage = {
+  name: "hunspell" as const,
+  domain: "hunspell.github.io" as const,
+  description: "Spell checker and morphological analyzer" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/hunspell.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +hunspell.github.io -- $SHELL -i" as const,
   programs: [
     "analyze",
     "chmorph",
@@ -20,13 +24,7 @@ export const hunspellgithubioPackage = {
   versions: [
     "1.7.2",
   ] as const,
-  name: "hunspell.github.io" as const,
-  domain: "hunspell.github.io" as const,
-  description: "Package information for hunspell.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/hunspell.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +hunspell.github.io -- $SHELL -i" as const,
+  fullPath: "hunspell.github.io" as const,
 }
 
 export type HunspellgithubioPackage = typeof hunspellgithubioPackage

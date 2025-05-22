@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const unicodeorgPackage = {
+  name: "unicode.org" as const,
+  domain: "unicode.org" as const,
+  description: "The home of the ICU project source code." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/unicode.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +unicode.org -- $SHELL -i" as const,
   programs: [
     "derb",
     "genbrk",
@@ -27,13 +31,7 @@ export const unicodeorgPackage = {
     "73.2.0",
     "71.1.0",
   ] as const,
-  name: "unicode.org" as const,
-  domain: "unicode.org" as const,
-  description: "Package information for unicode.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/unicode.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +unicode.org -- $SHELL -i" as const,
+  fullPath: "unicode.org" as const,
 }
 
 export type UnicodeorgPackage = typeof unicodeorgPackage

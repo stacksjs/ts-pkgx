@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const githubcomperipheryappperipheryPackage = {
+  name: "periphery" as const,
+  domain: "github.com/peripheryapp/periphery" as const,
+  description: "A tool to identify unused code in Swift projects." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peripheryapp/periphery/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) periphery" as const,
   programs: [
     "periphery",
   ] as const,
@@ -18,17 +22,11 @@ export const githubcomperipheryappperipheryPackage = {
     "3.0.0",
     "2.21.2",
   ] as const,
+  fullPath: "github.com/peripheryapp/periphery" as const,
   aliases: [
     "periphery",
     "peripheryapp/periphery",
   ] as const,
-  name: "github.com/peripheryapp-periphery" as const,
-  domain: "github.com/peripheryapp-periphery" as const,
-  description: "Package information for github.com/peripheryapp-periphery" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peripheryapp-periphery/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +github.com/peripheryapp-periphery -- $SHELL -i" as const,
 }
 
 export type GithubcomperipheryappperipheryPackage = typeof githubcomperipheryappperipheryPackage

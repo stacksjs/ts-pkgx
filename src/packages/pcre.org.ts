@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const pcreorgPackage = {
+  name: "pcre" as const,
+  domain: "pcre.org" as const,
+  description: "Perl compatible regular expressions library" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +pcre.org -- $SHELL -i" as const,
   programs: [
     "pcre-config",
     "pcregrep",
@@ -15,13 +19,7 @@ export const pcreorgPackage = {
   versions: [
     "8.45.0",
   ] as const,
-  name: "pcre.org" as const,
-  domain: "pcre.org" as const,
-  description: "Package information for pcre.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pcre.org -- $SHELL -i" as const,
+  fullPath: "pcre.org" as const,
 }
 
 export type PcreorgPackage = typeof pcreorgPackage

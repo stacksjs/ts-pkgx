@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mpg123dePackage = {
+  name: "mpg123" as const,
+  domain: "mpg123.de" as const,
+  description: "MP3 player for Linux and UNIX" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mpg123.de/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) mpg123" as const,
   programs: [
     "mpg123",
   ] as const,
@@ -21,13 +25,7 @@ export const mpg123dePackage = {
     "1.32.0",
     "1.31.2",
   ] as const,
-  name: "mpg123.de" as const,
-  domain: "mpg123.de" as const,
-  description: "Package information for mpg123.de" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mpg123.de/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mpg123.de -- $SHELL -i" as const,
+  fullPath: "mpg123.de" as const,
 }
 
 export type Mpg123dePackage = typeof mpg123dePackage

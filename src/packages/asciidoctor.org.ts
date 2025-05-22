@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const asciidoctororgPackage = {
+  name: "asciidoctor" as const,
+  domain: "asciidoctor.org" as const,
+  description: ":gem: A fast, open source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/asciidoctor.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) asciidoctor" as const,
   programs: [
     "asciidoctor",
   ] as const,
@@ -18,13 +22,7 @@ export const asciidoctororgPackage = {
     "2.0.19",
     "2.0.18",
   ] as const,
-  name: "asciidoctor.org" as const,
-  domain: "asciidoctor.org" as const,
-  description: "Package information for asciidoctor.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/asciidoctor.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +asciidoctor.org -- $SHELL -i" as const,
+  fullPath: "asciidoctor.org" as const,
 }
 
 export type AsciidoctororgPackage = typeof asciidoctororgPackage

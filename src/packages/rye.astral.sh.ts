@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ryeastralshPackage = {
+  name: "rye" as const,
+  domain: "rye.astral.sh" as const,
+  description: "Experimental Package Management Solution for Python" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rye.astral.sh/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) rye" as const,
   programs: [
     "rye",
   ] as const,
@@ -20,13 +24,7 @@ export const ryeastralshPackage = {
     "0.37.0",
     "0.36.0",
   ] as const,
-  name: "rye.astral.sh" as const,
-  domain: "rye.astral.sh" as const,
-  description: "Package information for rye.astral.sh" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rye.astral.sh/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +rye.astral.sh -- $SHELL -i" as const,
+  fullPath: "rye.astral.sh" as const,
 }
 
 export type RyeastralshPackage = typeof ryeastralshPackage

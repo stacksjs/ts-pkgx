@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const npmjscomPackage = {
+  name: "npmjs.com" as const,
+  domain: "npmjs.com" as const,
+  description: "the package manager for JavaScript" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/npmjs.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i" as const,
   programs: [
     "npm",
     "npx",
@@ -71,13 +75,7 @@ export const npmjscomPackage = {
     "8.19.4",
     "8.19.3",
   ] as const,
-  name: "npmjs.com" as const,
-  domain: "npmjs.com" as const,
-  description: "Package information for npmjs.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/npmjs.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i" as const,
+  fullPath: "npmjs.com" as const,
 }
 
 export type NpmjscomPackage = typeof npmjscomPackage

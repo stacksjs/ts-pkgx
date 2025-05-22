@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const terratagioPackage = {
+  name: "terratag" as const,
+  domain: "terratag.io" as const,
+  description: "Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/terratag.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) terratag" as const,
   programs: [
     "terratag",
   ] as const,
@@ -30,13 +34,7 @@ export const terratagioPackage = {
     "0.3.0",
     "0.2.6",
   ] as const,
-  name: "terratag.io" as const,
-  domain: "terratag.io" as const,
-  description: "Package information for terratag.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/terratag.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +terratag.io -- $SHELL -i" as const,
+  fullPath: "terratag.io" as const,
 }
 
 export type TerratagioPackage = typeof terratagioPackage

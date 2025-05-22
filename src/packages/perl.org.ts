@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const perlorgPackage = {
+  name: "perl.org" as const,
+  domain: "perl.org" as const,
+  description: "Highly capable, feature-rich programming language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/perl.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +perl.org -- $SHELL -i" as const,
   programs: [
     "corelist",
     "cpan",
@@ -52,16 +56,10 @@ export const perlorgPackage = {
     "5.34.3",
     "5.34.2",
   ] as const,
+  fullPath: "perl.org" as const,
   aliases: [
     "perl",
   ] as const,
-  name: "perl.org" as const,
-  domain: "perl.org" as const,
-  description: "Package information for perl.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/perl.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +perl.org -- $SHELL -i" as const,
 }
 
 export type PerlorgPackage = typeof perlorgPackage

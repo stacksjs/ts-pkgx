@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const robotframeworkorgPackage = {
+  name: "robot" as const,
+  domain: "robotframework.org" as const,
+  description: "Generic automation framework for acceptance testing and RPA" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/robotframework.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) robot" as const,
   programs: [
     "robot",
   ] as const,
@@ -12,13 +16,7 @@ export const robotframeworkorgPackage = {
   versions: [
     "7.2.2",
   ] as const,
-  name: "robotframework.org" as const,
-  domain: "robotframework.org" as const,
-  description: "Package information for robotframework.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/robotframework.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +robotframework.org -- $SHELL -i" as const,
+  fullPath: "robotframework.org" as const,
 }
 
 export type RobotframeworkorgPackage = typeof robotframeworkorgPackage

@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const kernelorgPackage = {
+  name: "kernel.org" as const,
+  domain: "kernel.org" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx kernel.org" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "kernel.org" as const,
-  domain: "kernel.org" as const,
-  description: "Package information for kernel.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kernel.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +kernel.org -- $SHELL -i" as const,
+  fullPath: "kernel.org" as const,
 }
 
 export type KernelorgPackage = typeof kernelorgPackage

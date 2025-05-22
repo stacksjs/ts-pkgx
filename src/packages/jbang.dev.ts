@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const jbangdevPackage = {
+  name: "jbang" as const,
+  domain: "jbang.dev" as const,
+  description: "Unleash the power of Java - JBang Lets Students, Educators and Professional Developers create, edit and run self-contained source-only Java programs with unprecedented ease." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jbang.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) jbang" as const,
   programs: [
     "jbang",
   ] as const,
@@ -31,13 +35,7 @@ export const jbangdevPackage = {
     "0.111.0",
     "0.110.1",
   ] as const,
-  name: "jbang.dev" as const,
-  domain: "jbang.dev" as const,
-  description: "Package information for jbang.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/jbang.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +jbang.dev -- $SHELL -i" as const,
+  fullPath: "jbang.dev" as const,
 }
 
 export type JbangdevPackage = typeof jbangdevPackage

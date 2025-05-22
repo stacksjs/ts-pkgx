@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openpmixgithubioPackage = {
+  name: "openpmix.github.io" as const,
+  domain: "openpmix.github.io" as const,
+  description: "Process Management Interface for HPC environments" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openpmix.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +openpmix.github.io -- $SHELL -i" as const,
   programs: [
     "palloc",
     "pattrs",
@@ -30,13 +34,7 @@ export const openpmixgithubioPackage = {
     "5.0.2",
     "5.0.1",
   ] as const,
-  name: "openpmix.github.io" as const,
-  domain: "openpmix.github.io" as const,
-  description: "Package information for openpmix.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openpmix.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openpmix.github.io -- $SHELL -i" as const,
+  fullPath: "openpmix.github.io" as const,
 }
 
 export type OpenpmixgithubioPackage = typeof openpmixgithubioPackage

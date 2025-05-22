@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const virtualenvpypaioPackage = {
+  name: "virtualenv" as const,
+  domain: "virtualenv.pypa.io" as const,
+  description: "Tool for creating isolated virtual python environments" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/virtualenv.pypa.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) virtualenv" as const,
   programs: [
     "virtualenv",
   ] as const,
@@ -53,13 +57,7 @@ export const virtualenvpypaioPackage = {
     "20.19.0",
     "20.18.0",
   ] as const,
-  name: "virtualenv.pypa.io" as const,
-  domain: "virtualenv.pypa.io" as const,
-  description: "Package information for virtualenv.pypa.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/virtualenv.pypa.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +virtualenv.pypa.io -- $SHELL -i" as const,
+  fullPath: "virtualenv.pypa.io" as const,
 }
 
 export type VirtualenvpypaioPackage = typeof virtualenvpypaioPackage

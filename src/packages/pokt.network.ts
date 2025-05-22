@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const poktnetworkPackage = {
+  name: "pocket" as const,
+  domain: "pokt.network" as const,
+  description: "Official implementation of the Pocket Network Protocol" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pokt.network/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pocket" as const,
   programs: [
     "pocket",
   ] as const,
@@ -17,16 +21,10 @@ export const poktnetworkPackage = {
     "0.10.0",
     "0.9.2",
   ] as const,
+  fullPath: "pokt.network" as const,
   aliases: [
     "pocket",
   ] as const,
-  name: "pokt.network" as const,
-  domain: "pokt.network" as const,
-  description: "Package information for pokt.network" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pokt.network/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pokt.network -- $SHELL -i" as const,
 }
 
 export type PoktnetworkPackage = typeof poktnetworkPackage

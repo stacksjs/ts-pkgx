@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const wxwidgetsorgPackage = {
+  name: "wxwidgets.org" as const,
+  domain: "wxwidgets.org" as const,
+  description: "Cross-Platform C++ GUI Library" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wxwidgets.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +wxwidgets.org -- $SHELL -i" as const,
   programs: [
     "wx-config",
     "wxrc",
@@ -27,13 +31,7 @@ export const wxwidgetsorgPackage = {
     "3.2.4",
     "3.2.3",
   ] as const,
-  name: "wxwidgets.org" as const,
-  domain: "wxwidgets.org" as const,
-  description: "Package information for wxwidgets.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/wxwidgets.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +wxwidgets.org -- $SHELL -i" as const,
+  fullPath: "wxwidgets.org" as const,
 }
 
 export type WxwidgetsorgPackage = typeof wxwidgetsorgPackage

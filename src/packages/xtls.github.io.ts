@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const xtlsgithubioPackage = {
+  name: "xray-core" as const,
+  domain: "xtls.github.io" as const,
+  description: "Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xtls.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) xray" as const,
   programs: [
     "xray",
   ] as const,
@@ -39,16 +43,10 @@ export const xtlsgithubioPackage = {
     "1.8.7",
     "1.8.6",
   ] as const,
+  fullPath: "xtls.github.io" as const,
   aliases: [
     "xray-core",
   ] as const,
-  name: "xtls.github.io" as const,
-  domain: "xtls.github.io" as const,
-  description: "Package information for xtls.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xtls.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +xtls.github.io -- $SHELL -i" as const,
 }
 
 export type XtlsgithubioPackage = typeof xtlsgithubioPackage

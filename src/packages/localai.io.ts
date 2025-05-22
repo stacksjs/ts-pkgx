@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const localaiioPackage = {
+  name: "LocalAI" as const,
+  domain: "localai.io" as const,
+  description: ":robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI,  running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/localai.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) local-ai" as const,
   programs: [
     "local-ai",
   ] as const,
@@ -51,13 +55,7 @@ export const localaiioPackage = {
     "2.7.0",
     "2.6.1",
   ] as const,
-  name: "localai.io" as const,
-  domain: "localai.io" as const,
-  description: "Package information for localai.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/localai.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +localai.io -- $SHELL -i" as const,
+  fullPath: "localai.io" as const,
 }
 
 export type LocalaiioPackage = typeof localaiioPackage

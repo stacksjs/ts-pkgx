@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const nixpackscomPackage = {
+  name: "nixpacks" as const,
+  domain: "nixpacks.com" as const,
+  description: "App source + Nix packages + Docker = Image" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nixpacks.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) nixpacks" as const,
   programs: [
     "nixpacks",
   ] as const,
@@ -42,13 +46,7 @@ export const nixpackscomPackage = {
     "1.21.1",
     "1.21.0",
   ] as const,
-  name: "nixpacks.com" as const,
-  domain: "nixpacks.com" as const,
-  description: "Package information for nixpacks.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nixpacks.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +nixpacks.com -- $SHELL -i" as const,
+  fullPath: "nixpacks.com" as const,
 }
 
 export type NixpackscomPackage = typeof nixpackscomPackage

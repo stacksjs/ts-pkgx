@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const plasmasturmorgPackage = {
+  name: "plasmasturm.org" as const,
+  domain: "plasmasturm.org" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx plasmasturm.org" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "plasmasturm.org" as const,
-  domain: "plasmasturm.org" as const,
-  description: "Package information for plasmasturm.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/plasmasturm.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +plasmasturm.org -- $SHELL -i" as const,
+  fullPath: "plasmasturm.org" as const,
 }
 
 export type PlasmasturmorgPackage = typeof plasmasturmorgPackage

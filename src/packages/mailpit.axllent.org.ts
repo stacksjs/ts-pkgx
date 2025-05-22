@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mailpitaxllentorgPackage = {
+  name: "mailpit" as const,
+  domain: "mailpit.axllent.org" as const,
+  description: "An email and SMTP testing tool with API for developers" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mailpit.axllent.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) mailpit" as const,
   programs: [
     "mailpit",
   ] as const,
@@ -73,13 +77,7 @@ export const mailpitaxllentorgPackage = {
     "1.10.0",
     "1.9.10",
   ] as const,
-  name: "mailpit.axllent.org" as const,
-  domain: "mailpit.axllent.org" as const,
-  description: "Package information for mailpit.axllent.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mailpit.axllent.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mailpit.axllent.org -- $SHELL -i" as const,
+  fullPath: "mailpit.axllent.org" as const,
 }
 
 export type MailpitaxllentorgPackage = typeof mailpitaxllentorgPackage

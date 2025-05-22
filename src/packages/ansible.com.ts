@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ansiblecomPackage = {
+  name: "ansible" as const,
+  domain: "ansible.com" as const,
+  description: "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ansible.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i" as const,
   programs: [
     "ansible",
     "ansible-config",
@@ -90,13 +94,7 @@ export const ansiblecomPackage = {
     "2.13.10",
     "2.13.9",
   ] as const,
-  name: "ansible.com" as const,
-  domain: "ansible.com" as const,
-  description: "Package information for ansible.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ansible.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i" as const,
+  fullPath: "ansible.com" as const,
 }
 
 export type AnsiblecomPackage = typeof ansiblecomPackage

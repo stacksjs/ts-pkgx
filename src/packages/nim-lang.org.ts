@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const nimlangorgPackage = {
+  name: "nim-lang.org" as const,
+  domain: "nim-lang.org" as const,
+  description: "Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority)." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nim-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +nim-lang.org -- $SHELL -i" as const,
   programs: [
     "nim",
     "nim_dbg",
@@ -36,13 +40,7 @@ export const nimlangorgPackage = {
     "1.6.16",
     "1.6.14",
   ] as const,
-  name: "nim/lang.org" as const,
-  domain: "nim/lang.org" as const,
-  description: "Package information for nim/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nim/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +nim/lang.org -- $SHELL -i" as const,
+  fullPath: "nim-lang.org" as const,
 }
 
 export type NimlangorgPackage = typeof nimlangorgPackage

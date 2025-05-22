@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openapigeneratortechPackage = {
+  name: "openapi-generator" as const,
+  domain: "openapi-generator.tech" as const,
+  description: "OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, documentation and configuration automatically given an OpenAPI Spec (v2, v3)" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openapi-generator.tech/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) openapi-generator" as const,
   programs: [
     "openapi-generator",
   ] as const,
@@ -23,13 +27,7 @@ export const openapigeneratortechPackage = {
     "7.3.0",
     "7.2.0",
   ] as const,
-  name: "openapi/generator.tech" as const,
-  domain: "openapi/generator.tech" as const,
-  description: "Package information for openapi/generator.tech" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openapi/generator.tech/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openapi/generator.tech -- $SHELL -i" as const,
+  fullPath: "openapi-generator.tech" as const,
 }
 
 export type OpenapigeneratortechPackage = typeof openapigeneratortechPackage

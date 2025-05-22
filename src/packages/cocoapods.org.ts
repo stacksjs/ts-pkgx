@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cocoapodsorgPackage = {
+  name: "pod" as const,
+  domain: "cocoapods.org" as const,
+  description: "Dependency manager for Cocoa projects" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cocoapods.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pod" as const,
   programs: [
     "pod",
   ] as const,
@@ -27,16 +31,10 @@ export const cocoapodsorgPackage = {
     "1.12.1",
     "1.5.0",
   ] as const,
+  fullPath: "cocoapods.org" as const,
   aliases: [
     "pod",
   ] as const,
-  name: "cocoapods.org" as const,
-  domain: "cocoapods.org" as const,
-  description: "Package information for cocoapods.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cocoapods.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cocoapods.org -- $SHELL -i" as const,
 }
 
 export type CocoapodsorgPackage = typeof cocoapodsorgPackage

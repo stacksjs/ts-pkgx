@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const videolanorgPackage = {
+  name: "videolan.org" as const,
+  domain: "videolan.org" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx videolan.org" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "videolan.org" as const,
-  domain: "videolan.org" as const,
-  description: "Package information for videolan.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/videolan.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +videolan.org -- $SHELL -i" as const,
+  fullPath: "videolan.org" as const,
 }
 
 export type VideolanorgPackage = typeof videolanorgPackage

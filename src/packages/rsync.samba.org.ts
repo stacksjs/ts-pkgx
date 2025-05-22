@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const rsyncsambaorgPackage = {
+  name: "rsync" as const,
+  domain: "rsync.samba.org" as const,
+  description: "An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rsync.samba.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +rsync.samba.org -- $SHELL -i" as const,
   programs: [
     "rsync",
     "rsync-ssl",
@@ -18,13 +22,7 @@ export const rsyncsambaorgPackage = {
     "3.3.0",
     "3.2.7",
   ] as const,
-  name: "rsync.samba.org" as const,
-  domain: "rsync.samba.org" as const,
-  description: "Package information for rsync.samba.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rsync.samba.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +rsync.samba.org -- $SHELL -i" as const,
+  fullPath: "rsync.samba.org" as const,
 }
 
 export type RsyncsambaorgPackage = typeof rsyncsambaorgPackage

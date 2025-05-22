@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const conftestdevPackage = {
+  name: "conftest" as const,
+  domain: "conftest.dev" as const,
+  description: "Write tests against structured configuration data using the Open Policy Agent Rego query language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/conftest.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) conftest" as const,
   programs: [
     "conftest",
   ] as const,
@@ -25,13 +29,7 @@ export const conftestdevPackage = {
     "0.47.0",
     "0.46.0",
   ] as const,
-  name: "conftest.dev" as const,
-  domain: "conftest.dev" as const,
-  description: "Package information for conftest.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/conftest.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +conftest.dev -- $SHELL -i" as const,
+  fullPath: "conftest.dev" as const,
 }
 
 export type ConftestdevPackage = typeof conftestdevPackage

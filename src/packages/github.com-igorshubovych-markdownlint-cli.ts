@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const githubcomigorshubovychmarkdownlintcliPackage = {
+  name: "markdownlint" as const,
+  domain: "github.com/igorshubovych/markdownlint-cli" as const,
+  description: "CLI for Node.js style checker and lint tool for Markdown files" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/igorshubovych/markdownlint-cli/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) markdownlint" as const,
   programs: [
     "markdownlint",
   ] as const,
@@ -15,17 +19,11 @@ export const githubcomigorshubovychmarkdownlintcliPackage = {
     "0.43.0",
     "0.42.0",
   ] as const,
+  fullPath: "github.com/igorshubovych/markdownlint-cli" as const,
   aliases: [
     "markdownlint",
     "igorshubovych/markdownlint-cli",
   ] as const,
-  name: "github.com/igorshubovych-markdownlint-cli" as const,
-  domain: "github.com/igorshubovych-markdownlint-cli" as const,
-  description: "Package information for github.com/igorshubovych-markdownlint-cli" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/igorshubovych-markdownlint-cli/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +github.com/igorshubovych-markdownlint-cli -- $SHELL -i" as const,
 }
 
 export type GithubcomigorshubovychmarkdownlintcliPackage = typeof githubcomigorshubovychmarkdownlintcliPackage

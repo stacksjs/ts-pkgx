@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const valeshPackage = {
+  name: "vale" as const,
+  domain: "vale.sh" as const,
+  description: ":pencil: A markup-aware linter for prose built with speed and extensibility in mind." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vale.sh/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) vale" as const,
   programs: [
     "vale",
   ] as const,
@@ -53,13 +57,7 @@ export const valeshPackage = {
     "2.29.0",
     "2.28.3",
   ] as const,
-  name: "vale.sh" as const,
-  domain: "vale.sh" as const,
-  description: "Package information for vale.sh" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vale.sh/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +vale.sh -- $SHELL -i" as const,
+  fullPath: "vale.sh" as const,
 }
 
 export type ValeshPackage = typeof valeshPackage

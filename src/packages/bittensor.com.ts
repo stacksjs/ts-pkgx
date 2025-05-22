@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const bittensorcomPackage = {
+  name: "Bittensor" as const,
+  domain: "bittensor.com" as const,
+  description: "Internet-scale Neural Networks" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bittensor.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -72,13 +76,7 @@ export const bittensorcomPackage = {
     "6.7.0",
     "6.5.0",
   ] as const,
-  name: "bittensor.com" as const,
-  domain: "bittensor.com" as const,
-  description: "Package information for bittensor.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bittensor.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i" as const,
+  fullPath: "bittensor.com" as const,
 }
 
 export type BittensorcomPackage = typeof bittensorcomPackage

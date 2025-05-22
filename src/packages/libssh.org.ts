@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libsshorgPackage = {
+  name: "libssh.org" as const,
+  domain: "libssh.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libssh.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -17,13 +21,7 @@ export const libsshorgPackage = {
     "0.9.8",
     "0.9.7",
   ] as const,
-  name: "libssh.org" as const,
-  domain: "libssh.org" as const,
-  description: "Package information for libssh.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libssh.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i" as const,
+  fullPath: "libssh.org" as const,
 }
 
 export type LibsshorgPackage = typeof libsshorgPackage

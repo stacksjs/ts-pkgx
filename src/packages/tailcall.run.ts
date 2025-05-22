@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tailcallrunPackage = {
+  name: "tailcall" as const,
+  domain: "tailcall.run" as const,
+  description: "High Performance GraphQL Runtime" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tailcall.run/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) tailcall" as const,
   programs: [
     "tailcall",
   ] as const,
@@ -632,13 +636,7 @@ export const tailcallrunPackage = {
     "0.18.1",
     "0.18.0",
   ] as const,
-  name: "tailcall.run" as const,
-  domain: "tailcall.run" as const,
-  description: "Package information for tailcall.run" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tailcall.run/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tailcall.run -- $SHELL -i" as const,
+  fullPath: "tailcall.run" as const,
 }
 
 export type TailcallrunPackage = typeof tailcallrunPackage

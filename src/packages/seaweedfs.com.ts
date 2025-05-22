@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const seaweedfscomPackage = {
+  name: "SeaweedFS" as const,
+  domain: "seaweedfs.com" as const,
+  description: "SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering. Filer supports Cloud Drive, cross-DC active-active replication, Kubernetes, POSIX FUSE mount, S3 API, S3 Gateway, Hadoop, WebDAV, encryption, Erasure Coding." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/seaweedfs.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) weed" as const,
   programs: [
     "weed",
   ] as const,
@@ -18,13 +22,7 @@ export const seaweedfscomPackage = {
     "3.80.0",
     "3.79.0",
   ] as const,
-  name: "seaweedfs.com" as const,
-  domain: "seaweedfs.com" as const,
-  description: "Package information for seaweedfs.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/seaweedfs.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +seaweedfs.com -- $SHELL -i" as const,
+  fullPath: "seaweedfs.com" as const,
 }
 
 export type SeaweedfscomPackage = typeof seaweedfscomPackage

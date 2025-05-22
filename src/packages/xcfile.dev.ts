@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const xcfiledevPackage = {
+  name: "xc" as const,
+  domain: "xcfile.dev" as const,
+  description: "Markdown defined task runner." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xcfile.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) xc" as const,
   programs: [
     "xc",
   ] as const,
@@ -36,13 +40,7 @@ export const xcfiledevPackage = {
     "0.0.111",
     "0.0.110",
   ] as const,
-  name: "xcfile.dev" as const,
-  domain: "xcfile.dev" as const,
-  description: "Package information for xcfile.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/xcfile.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +xcfile.dev -- $SHELL -i" as const,
+  fullPath: "xcfile.dev" as const,
 }
 
 export type XcfiledevPackage = typeof xcfiledevPackage

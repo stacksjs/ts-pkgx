@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mesa3dorgPackage = {
+  name: "mesa3d.org" as const,
+  domain: "mesa3d.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mesa3d.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +mesa3d.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -85,13 +89,7 @@ export const mesa3dorgPackage = {
     "23.1.8",
     "23.1.7",
   ] as const,
-  name: "mesa3d.org" as const,
-  domain: "mesa3d.org" as const,
-  description: "Package information for mesa3d.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mesa3d.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mesa3d.org -- $SHELL -i" as const,
+  fullPath: "mesa3d.org" as const,
 }
 
 export type Mesa3dorgPackage = typeof mesa3dorgPackage

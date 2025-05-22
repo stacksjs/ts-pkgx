@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libuvorgPackage = {
+  name: "libuv.org" as const,
+  domain: "libuv.org" as const,
+  description: "Cross-platform asynchronous I/O" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libuv.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +libuv.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -17,13 +21,7 @@ export const libuvorgPackage = {
     "1.45.0",
     "1.44.2",
   ] as const,
-  name: "libuv.org" as const,
-  domain: "libuv.org" as const,
-  description: "Package information for libuv.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libuv.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libuv.org -- $SHELL -i" as const,
+  fullPath: "libuv.org" as const,
 }
 
 export type LibuvorgPackage = typeof libuvorgPackage

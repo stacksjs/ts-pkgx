@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const convcogithubioPackage = {
+  name: "convco" as const,
+  domain: "convco.github.io" as const,
+  description: "Conventional commits, changelog, versioning, validation" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/convco.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) convco" as const,
   programs: [
     "convco",
   ] as const,
@@ -18,13 +22,7 @@ export const convcogithubioPackage = {
     "0.4.2",
     "0.4.1",
   ] as const,
-  name: "convco.github.io" as const,
-  domain: "convco.github.io" as const,
-  description: "Package information for convco.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/convco.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +convco.github.io -- $SHELL -i" as const,
+  fullPath: "convco.github.io" as const,
 }
 
 export type ConvcogithubioPackage = typeof convcogithubioPackage

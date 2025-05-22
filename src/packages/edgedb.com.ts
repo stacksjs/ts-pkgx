@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const edgedbcomPackage = {
+  name: "edgedb" as const,
+  domain: "edgedb.com" as const,
+  description: "The EdgeDB CLI" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/edgedb.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) edgedb" as const,
   programs: [
     "edgedb",
   ] as const,
@@ -43,13 +47,7 @@ export const edgedbcomPackage = {
     "4.0.0",
     "3.5.0",
   ] as const,
-  name: "edgedb.com" as const,
-  domain: "edgedb.com" as const,
-  description: "Package information for edgedb.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/edgedb.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +edgedb.com -- $SHELL -i" as const,
+  fullPath: "edgedb.com" as const,
 }
 
 export type EdgedbcomPackage = typeof edgedbcomPackage

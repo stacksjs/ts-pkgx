@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libgeosorgPackage = {
+  name: "geos-config" as const,
+  domain: "libgeos.org" as const,
+  description: "Geometry Engine, Open Source" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libgeos.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) geos-config" as const,
   programs: [
     "geos-config",
   ] as const,
@@ -24,16 +28,10 @@ export const libgeosorgPackage = {
     "3.9.5",
     "3.8.4",
   ] as const,
+  fullPath: "libgeos.org" as const,
   aliases: [
     "geos-config",
   ] as const,
-  name: "libgeos.org" as const,
-  domain: "libgeos.org" as const,
-  description: "Package information for libgeos.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libgeos.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libgeos.org -- $SHELL -i" as const,
 }
 
 export type LibgeosorgPackage = typeof libgeosorgPackage

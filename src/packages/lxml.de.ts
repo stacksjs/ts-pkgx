@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const lxmldePackage = {
+  name: "lxml.de" as const,
+  domain: "lxml.de" as const,
+  description: "The lxml XML toolkit for Python" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lxml.de/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +lxml.de -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -25,13 +29,7 @@ export const lxmldePackage = {
     "4.9.4",
     "4.9.3",
   ] as const,
-  name: "lxml.de" as const,
-  domain: "lxml.de" as const,
-  description: "Package information for lxml.de" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lxml.de/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +lxml.de -- $SHELL -i" as const,
+  fullPath: "lxml.de" as const,
 }
 
 export type LxmldePackage = typeof lxmldePackage

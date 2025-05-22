@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tmateioPackage = {
+  name: "tmate" as const,
+  domain: "tmate.io" as const,
+  description: "Instant Terminal Sharing" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tmate.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) tmate" as const,
   programs: [
     "tmate",
   ] as const,
@@ -15,13 +19,7 @@ export const tmateioPackage = {
   versions: [
     "2.4.0",
   ] as const,
-  name: "tmate.io" as const,
-  domain: "tmate.io" as const,
-  description: "Package information for tmate.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tmate.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tmate.io -- $SHELL -i" as const,
+  fullPath: "tmate.io" as const,
 }
 
 export type TmateioPackage = typeof tmateioPackage

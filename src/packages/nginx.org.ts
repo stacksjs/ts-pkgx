@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const nginxorgPackage = {
+  name: "nginx" as const,
+  domain: "nginx.org" as const,
+  description: "HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nginx.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) nginx" as const,
   programs: [
     "nginx",
   ] as const,
@@ -31,13 +35,7 @@ export const nginxorgPackage = {
     "1.24.0",
     "1.23.3",
   ] as const,
-  name: "nginx.org" as const,
-  domain: "nginx.org" as const,
-  description: "Package information for nginx.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nginx.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +nginx.org -- $SHELL -i" as const,
+  fullPath: "nginx.org" as const,
 }
 
 export type NginxorgPackage = typeof nginxorgPackage

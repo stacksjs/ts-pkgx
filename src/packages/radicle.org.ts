@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const radicleorgPackage = {
+  name: "radicle.org" as const,
+  domain: "radicle.org" as const,
+  description: "Radicle CLI" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/radicle.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +radicle.org -- $SHELL -i" as const,
   programs: [
     "rad",
     "git-remote-rad",
@@ -37,13 +41,7 @@ export const radicleorgPackage = {
   versions: [
     "0.6.1",
   ] as const,
-  name: "radicle.org" as const,
-  domain: "radicle.org" as const,
-  description: "Package information for radicle.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/radicle.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +radicle.org -- $SHELL -i" as const,
+  fullPath: "radicle.org" as const,
 }
 
 export type RadicleorgPackage = typeof radicleorgPackage

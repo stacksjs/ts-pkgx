@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const lycheeclirsPackage = {
+  name: "lychee" as const,
+  domain: "lychee.cli.rs" as const,
+  description: "⚡ Fast, async, stream-based link checker written in Rust. Finds broken URLs and mail addresses inside Markdown, HTML, reStructuredText, websites and more!" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lychee.cli.rs/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) lychee" as const,
   programs: [
     "lychee",
   ] as const,
@@ -16,13 +20,7 @@ export const lycheeclirsPackage = {
     "0.14.2",
     "0.14.1",
   ] as const,
-  name: "lychee.cli.rs" as const,
-  domain: "lychee.cli.rs" as const,
-  description: "Package information for lychee.cli.rs" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lychee.cli.rs/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +lychee.cli.rs -- $SHELL -i" as const,
+  fullPath: "lychee.cli.rs" as const,
 }
 
 export type LycheeclirsPackage = typeof lycheeclirsPackage

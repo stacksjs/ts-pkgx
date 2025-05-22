@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const justsystemsPackage = {
+  name: "just" as const,
+  domain: "just.systems" as const,
+  description: "Handy way to save and run project-specific commands" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/just.systems/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) just" as const,
   programs: [
     "just",
   ] as const,
@@ -49,13 +53,7 @@ export const justsystemsPackage = {
     "1.8.0",
     "1.6.0",
   ] as const,
-  name: "just.systems" as const,
-  domain: "just.systems" as const,
-  description: "Package information for just.systems" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/just.systems/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +just.systems -- $SHELL -i" as const,
+  fullPath: "just.systems" as const,
 }
 
 export type JustsystemsPackage = typeof justsystemsPackage

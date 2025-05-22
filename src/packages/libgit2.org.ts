@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libgit2orgPackage = {
+  name: "git2" as const,
+  domain: "libgit2.org" as const,
+  description: "A cross-platform, linkable library implementation of Git that you can use in your application." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libgit2.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) git2" as const,
   programs: [
     "git2",
   ] as const,
@@ -22,16 +26,10 @@ export const libgit2orgPackage = {
     "1.6.5",
     "1.6.4",
   ] as const,
+  fullPath: "libgit2.org" as const,
   aliases: [
     "git2",
   ] as const,
-  name: "libgit2.org" as const,
-  domain: "libgit2.org" as const,
-  description: "Package information for libgit2.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libgit2.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libgit2.org -- $SHELL -i" as const,
 }
 
 export type Libgit2orgPackage = typeof libgit2orgPackage

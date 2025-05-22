@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gtssourceforgenetPackage = {
+  name: "gts.sourceforge.net" as const,
+  domain: "gts.sourceforge.net" as const,
+  description: "GNU triangulated surface library" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gts.sourceforge.net/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +gts.sourceforge.net -- $SHELL -i" as const,
   programs: [
     "delaunay",
     "gts2dxf",
@@ -20,13 +24,7 @@ export const gtssourceforgenetPackage = {
   versions: [
     "0.7.6",
   ] as const,
-  name: "gts.sourceforge.net" as const,
-  domain: "gts.sourceforge.net" as const,
-  description: "Package information for gts.sourceforge.net" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gts.sourceforge.net/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +gts.sourceforge.net -- $SHELL -i" as const,
+  fullPath: "gts.sourceforge.net" as const,
 }
 
 export type GtssourceforgenetPackage = typeof gtssourceforgenetPackage

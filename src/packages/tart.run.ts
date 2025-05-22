@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tartrunPackage = {
+  name: "tart" as const,
+  domain: "tart.run" as const,
+  description: "macOS and Linux VMs on Apple Silicon to use in CI and other automations" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tart.run/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) tart" as const,
   programs: [
     "tart",
   ] as const,
@@ -61,13 +65,7 @@ export const tartrunPackage = {
     "2.2.0",
     "0.38.0",
   ] as const,
-  name: "tart.run" as const,
-  domain: "tart.run" as const,
-  description: "Package information for tart.run" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tart.run/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tart.run -- $SHELL -i" as const,
+  fullPath: "tart.run" as const,
 }
 
 export type TartrunPackage = typeof tartrunPackage

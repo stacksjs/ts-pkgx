@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const deepwisdomaiPackage = {
+  name: "MetaGPT" as const,
+  domain: "deepwisdom.ai" as const,
+  description: "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/deepwisdom.ai/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) metagpt" as const,
   programs: [
     "metagpt",
   ] as const,
@@ -28,16 +32,10 @@ export const deepwisdomaiPackage = {
     "0.6.0",
     "0.5.2",
   ] as const,
+  fullPath: "deepwisdom.ai" as const,
   aliases: [
     "metagpt",
   ] as const,
-  name: "deepwisdom.ai" as const,
-  domain: "deepwisdom.ai" as const,
-  description: "Package information for deepwisdom.ai" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/deepwisdom.ai/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +deepwisdom.ai -- $SHELL -i" as const,
 }
 
 export type DeepwisdomaiPackage = typeof deepwisdomaiPackage

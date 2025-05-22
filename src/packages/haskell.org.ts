@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const haskellorgPackage = {
+  name: "haskell.org" as const,
+  domain: "haskell.org" as const,
+  description: "Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing)." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/haskell.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +haskell.org -- $SHELL -i" as const,
   programs: [
     "ghc",
     "ghc-{{version.marketing}}",
@@ -62,13 +66,7 @@ export const haskellorgPackage = {
     "9.0.2",
     "8.10.7",
   ] as const,
-  name: "haskell.org" as const,
-  domain: "haskell.org" as const,
-  description: "Package information for haskell.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/haskell.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +haskell.org -- $SHELL -i" as const,
+  fullPath: "haskell.org" as const,
 }
 
 export type HaskellorgPackage = typeof haskellorgPackage

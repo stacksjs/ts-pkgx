@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const nomadprojectioPackage = {
+  name: "nomad" as const,
+  domain: "nomadproject.io" as const,
+  description: "Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nomadproject.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) nomad" as const,
   programs: [
     "nomad",
   ] as const,
@@ -22,13 +26,7 @@ export const nomadprojectioPackage = {
     "1.8.3",
     "1.8.2",
   ] as const,
-  name: "nomadproject.io" as const,
-  domain: "nomadproject.io" as const,
-  description: "Package information for nomadproject.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/nomadproject.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +nomadproject.io -- $SHELL -i" as const,
+  fullPath: "nomadproject.io" as const,
 }
 
 export type NomadprojectioPackage = typeof nomadprojectioPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const projorgPackage = {
+  name: "proj" as const,
+  domain: "proj.org" as const,
+  description: "PROJ - Cartographic Projections and Coordinate Transformations Library" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/proj.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) proj" as const,
   programs: [
     "proj",
   ] as const,
@@ -22,13 +26,7 @@ export const projorgPackage = {
     "9.2.1",
     "9.2.0",
   ] as const,
-  name: "proj.org" as const,
-  domain: "proj.org" as const,
-  description: "Package information for proj.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/proj.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +proj.org -- $SHELL -i" as const,
+  fullPath: "proj.org" as const,
 }
 
 export type ProjorgPackage = typeof projorgPackage

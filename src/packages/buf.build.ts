@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const bufbuildPackage = {
+  name: "buf" as const,
+  domain: "buf.build" as const,
+  description: "The best way of working with Protocol Buffers." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/buf.build/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) buf" as const,
   programs: [
     "buf",
   ] as const,
@@ -50,13 +54,7 @@ export const bufbuildPackage = {
     "1.27.0",
     "1.26.1",
   ] as const,
-  name: "buf.build" as const,
-  domain: "buf.build" as const,
-  description: "Package information for buf.build" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/buf.build/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +buf.build -- $SHELL -i" as const,
+  fullPath: "buf.build" as const,
 }
 
 export type BufbuildPackage = typeof bufbuildPackage

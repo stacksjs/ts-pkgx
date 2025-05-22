@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const yadmioPackage = {
+  name: "yadm" as const,
+  domain: "yadm.io" as const,
+  description: "Yet Another Dotfiles Manager" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/yadm.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) yadm" as const,
   programs: [
     "yadm",
   ] as const,
@@ -16,13 +20,7 @@ export const yadmioPackage = {
     "3.3.0",
     "3.2.2",
   ] as const,
-  name: "yadm.io" as const,
-  domain: "yadm.io" as const,
-  description: "Package information for yadm.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/yadm.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +yadm.io -- $SHELL -i" as const,
+  fullPath: "yadm.io" as const,
 }
 
 export type YadmioPackage = typeof yadmioPackage

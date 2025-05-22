@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const redisioPackage = {
+  name: "redis" as const,
+  domain: "redis.io" as const,
+  description: "Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/redis.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +redis.io -- $SHELL -i" as const,
   programs: [
     "redis-server",
     "redis-cli",
@@ -47,13 +51,7 @@ export const redisioPackage = {
     "6.0.19",
     "6.0.18",
   ] as const,
-  name: "redis.io" as const,
-  domain: "redis.io" as const,
-  description: "Package information for redis.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/redis.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +redis.io -- $SHELL -i" as const,
+  fullPath: "redis.io" as const,
 }
 
 export type RedisioPackage = typeof redisioPackage

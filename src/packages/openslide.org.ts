@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openslideorgPackage = {
+  name: "openslide" as const,
+  domain: "openslide.org" as const,
+  description: "C library to read whole-slide images (a.k.a. virtual slides)" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openslide.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +openslide.org -- $SHELL -i" as const,
   programs: [
     "openslide-quickhash1sum",
     "openslide-show-properties",
@@ -23,13 +27,7 @@ export const openslideorgPackage = {
     "4.0.0",
     "3.4.1",
   ] as const,
-  name: "openslide.org" as const,
-  domain: "openslide.org" as const,
-  description: "Package information for openslide.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openslide.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openslide.org -- $SHELL -i" as const,
+  fullPath: "openslide.org" as const,
 }
 
 export type OpenslideorgPackage = typeof openslideorgPackage

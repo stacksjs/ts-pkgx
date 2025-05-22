@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const zrokioPackage = {
+  name: "zrok" as const,
+  domain: "zrok.io" as const,
+  description: "Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/zrok.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +zrok.io -- $SHELL -i" as const,
   programs: [
     "zrok",
     "copyto",
@@ -47,13 +51,7 @@ export const zrokioPackage = {
     "0.4.17",
     "0.4.16",
   ] as const,
-  name: "zrok.io" as const,
-  domain: "zrok.io" as const,
-  description: "Package information for zrok.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/zrok.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +zrok.io -- $SHELL -i" as const,
+  fullPath: "zrok.io" as const,
 }
 
 export type ZrokioPackage = typeof zrokioPackage

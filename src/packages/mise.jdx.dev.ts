@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const misejdxdevPackage = {
+  name: "mise" as const,
+  domain: "mise.jdx.dev" as const,
+  description: "dev tools, env vars, task runner" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mise.jdx.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i" as const,
   programs: [
     "rtx",
     "mise",
@@ -288,13 +292,7 @@ export const misejdxdevPackage = {
     "2024.1.2",
     "2024.1.0",
   ] as const,
-  name: "mise.jdx.dev" as const,
-  domain: "mise.jdx.dev" as const,
-  description: "Package information for mise.jdx.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mise.jdx.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i" as const,
+  fullPath: "mise.jdx.dev" as const,
 }
 
 export type MisejdxdevPackage = typeof misejdxdevPackage

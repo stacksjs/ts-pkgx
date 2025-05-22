@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const doctavecomPackage = {
+  name: "doctave" as const,
+  domain: "doctave.com" as const,
+  description: "A batteries-included developer documentation site generator" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/doctave.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) doctave" as const,
   programs: [
     "doctave",
   ] as const,
@@ -10,13 +14,7 @@ export const doctavecomPackage = {
   versions: [
     "0.4.2",
   ] as const,
-  name: "doctave.com" as const,
-  domain: "doctave.com" as const,
-  description: "Package information for doctave.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/doctave.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +doctave.com -- $SHELL -i" as const,
+  fullPath: "doctave.com" as const,
 }
 
 export type DoctavecomPackage = typeof doctavecomPackage

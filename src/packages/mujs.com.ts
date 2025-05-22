@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mujscomPackage = {
+  name: "mujs" as const,
+  domain: "mujs.com" as const,
+  description: "An embeddable Javascript interpreter in C." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mujs.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +mujs.com -- $SHELL -i" as const,
   programs: [
     "mujs",
     "mujs-pp",
@@ -18,13 +22,7 @@ export const mujscomPackage = {
     "1.3.4",
     "1.3.3",
   ] as const,
-  name: "mujs.com" as const,
-  domain: "mujs.com" as const,
-  description: "Package information for mujs.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mujs.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mujs.com -- $SHELL -i" as const,
+  fullPath: "mujs.com" as const,
 }
 
 export type MujscomPackage = typeof mujscomPackage

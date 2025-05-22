@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ktlintgithubioPackage = {
+  name: "ktlint" as const,
+  domain: "ktlint.github.io" as const,
+  description: "An anti-bikeshedding Kotlin linter with built-in formatter" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ktlint.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) ktlint" as const,
   programs: [
     "ktlint",
   ] as const,
@@ -21,13 +25,7 @@ export const ktlintgithubioPackage = {
     "1.1.1",
     "0.49.1",
   ] as const,
-  name: "ktlint.github.io" as const,
-  domain: "ktlint.github.io" as const,
-  description: "Package information for ktlint.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ktlint.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ktlint.github.io -- $SHELL -i" as const,
+  fullPath: "ktlint.github.io" as const,
 }
 
 export type KtlintgithubioPackage = typeof ktlintgithubioPackage

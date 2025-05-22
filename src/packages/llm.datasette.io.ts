@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const llmdatasetteioPackage = {
+  name: "llm" as const,
+  domain: "llm.datasette.io" as const,
+  description: "Access large language models from the command-line" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/llm.datasette.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) llm" as const,
   programs: [
     "llm",
   ] as const,
@@ -40,13 +44,7 @@ export const llmdatasetteioPackage = {
     "0.7.0",
     "0.6.1",
   ] as const,
-  name: "llm.datasette.io" as const,
-  domain: "llm.datasette.io" as const,
-  description: "Package information for llm.datasette.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/llm.datasette.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +llm.datasette.io -- $SHELL -i" as const,
+  fullPath: "llm.datasette.io" as const,
 }
 
 export type LlmdatasetteioPackage = typeof llmdatasetteioPackage

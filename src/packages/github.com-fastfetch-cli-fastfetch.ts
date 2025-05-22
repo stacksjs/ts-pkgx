@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const githubcomfastfetchclifastfetchPackage = {
+  name: "github.com/fastfetch-cli/fastfetch" as const,
+  domain: "github.com/fastfetch-cli/fastfetch" as const,
+  description: "A maintained, feature-rich and performance oriented, neofetch like system information tool." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fastfetch-cli/fastfetch/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +github.com/fastfetch-cli/fastfetch -- $SHELL -i" as const,
   programs: [
     "fastfetch",
     "flashfetch",
@@ -28,16 +32,10 @@ export const githubcomfastfetchclifastfetchPackage = {
     "2.34.0",
     "2.33.0",
   ] as const,
+  fullPath: "github.com/fastfetch-cli/fastfetch" as const,
   aliases: [
     "fastfetch-cli/fastfetch",
   ] as const,
-  name: "github.com/fastfetch-cli-fastfetch" as const,
-  domain: "github.com/fastfetch-cli-fastfetch" as const,
-  description: "Package information for github.com/fastfetch-cli-fastfetch" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fastfetch-cli-fastfetch/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +github.com/fastfetch-cli-fastfetch -- $SHELL -i" as const,
 }
 
 export type GithubcomfastfetchclifastfetchPackage = typeof githubcomfastfetchclifastfetchPackage

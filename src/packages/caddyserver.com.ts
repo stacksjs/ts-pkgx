@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const caddyservercomPackage = {
+  name: "caddy" as const,
+  domain: "caddyserver.com" as const,
+  description: "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/caddyserver.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) caddy" as const,
   programs: [
     "caddy",
   ] as const,
@@ -19,13 +23,7 @@ export const caddyservercomPackage = {
     "2.7.5",
     "2.7.4",
   ] as const,
-  name: "caddyserver.com" as const,
-  domain: "caddyserver.com" as const,
-  description: "Package information for caddyserver.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/caddyserver.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +caddyserver.com -- $SHELL -i" as const,
+  fullPath: "caddyserver.com" as const,
 }
 
 export type CaddyservercomPackage = typeof caddyservercomPackage

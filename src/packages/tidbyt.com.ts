@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const tidbytcomPackage = {
+  name: "pixlet" as const,
+  domain: "tidbyt.com" as const,
+  description: "Build apps for pixel-based displays ✨" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tidbyt.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pixlet" as const,
   programs: [
     "pixlet",
   ] as const,
@@ -31,16 +35,10 @@ export const tidbytcomPackage = {
     "0.30.0",
     "0.29.1",
   ] as const,
+  fullPath: "tidbyt.com" as const,
   aliases: [
     "pixlet",
   ] as const,
-  name: "tidbyt.com" as const,
-  domain: "tidbyt.com" as const,
-  description: "Package information for tidbyt.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tidbyt.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tidbyt.com -- $SHELL -i" as const,
 }
 
 export type TidbytcomPackage = typeof tidbytcomPackage

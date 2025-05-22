@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const protobufdevPackage = {
+  name: "Protocol Buffers" as const,
+  domain: "protobuf.dev" as const,
+  description: "Protocol Buffers - Google's data interchange format" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/protobuf.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) protoc" as const,
   programs: [
     "protoc",
   ] as const,
@@ -52,16 +56,10 @@ export const protobufdevPackage = {
     "22.5.0",
     "21.12.0",
   ] as const,
+  fullPath: "protobuf.dev" as const,
   aliases: [
     "protocol buffers",
   ] as const,
-  name: "protobuf.dev" as const,
-  domain: "protobuf.dev" as const,
-  description: "Package information for protobuf.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/protobuf.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +protobuf.dev -- $SHELL -i" as const,
 }
 
 export type ProtobufdevPackage = typeof protobufdevPackage

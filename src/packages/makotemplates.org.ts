@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const makotemplatesorgPackage = {
+  name: "mako-render" as const,
+  domain: "makotemplates.org" as const,
+  description: "Mako Templates for Python" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/makotemplates.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) mako-render" as const,
   programs: [
     "mako-render",
   ] as const,
@@ -23,16 +27,10 @@ export const makotemplatesorgPackage = {
     "1.3.0",
     "1.2.4",
   ] as const,
+  fullPath: "makotemplates.org" as const,
   aliases: [
     "mako-render",
   ] as const,
-  name: "makotemplates.org" as const,
-  domain: "makotemplates.org" as const,
-  description: "Package information for makotemplates.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/makotemplates.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +makotemplates.org -- $SHELL -i" as const,
 }
 
 export type MakotemplatesorgPackage = typeof makotemplatesorgPackage

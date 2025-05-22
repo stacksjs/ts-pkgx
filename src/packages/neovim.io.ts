@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const neovimioPackage = {
+  name: "nvim" as const,
+  domain: "neovim.io" as const,
+  description: "Ambitious Vim-fork focused on extensibility and agility" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/neovim.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) nvim" as const,
   programs: [
     "nvim",
   ] as const,
@@ -25,16 +29,10 @@ export const neovimioPackage = {
     "0.8.2",
     "0.8.1",
   ] as const,
+  fullPath: "neovim.io" as const,
   aliases: [
     "nvim",
   ] as const,
-  name: "neovim.io" as const,
-  domain: "neovim.io" as const,
-  description: "Package information for neovim.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/neovim.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +neovim.io -- $SHELL -i" as const,
 }
 
 export type NeovimioPackage = typeof neovimioPackage

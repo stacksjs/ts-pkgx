@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const vapoursynthcomPackage = {
+  name: "vspipe" as const,
+  domain: "vapoursynth.com" as const,
+  description: "A video processing framework with simplicity in mind" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vapoursynth.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) vspipe" as const,
   programs: [
     "vspipe",
   ] as const,
@@ -22,16 +26,10 @@ export const vapoursynthcomPackage = {
     "65.0.0",
     "64.0.0",
   ] as const,
+  fullPath: "vapoursynth.com" as const,
   aliases: [
     "vspipe",
   ] as const,
-  name: "vapoursynth.com" as const,
-  domain: "vapoursynth.com" as const,
-  description: "Package information for vapoursynth.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/vapoursynth.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +vapoursynth.com -- $SHELL -i" as const,
 }
 
 export type VapoursynthcomPackage = typeof vapoursynthcomPackage

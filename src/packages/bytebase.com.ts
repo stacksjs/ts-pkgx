@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const bytebasecomPackage = {
+  name: "bytebase" as const,
+  domain: "bytebase.com" as const,
+  description: "World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bytebase.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) bytebase" as const,
   programs: [
     "bytebase",
   ] as const,
@@ -42,13 +46,7 @@ export const bytebasecomPackage = {
     "2.15.0",
     "2.14.1",
   ] as const,
-  name: "bytebase.com" as const,
-  domain: "bytebase.com" as const,
-  description: "Package information for bytebase.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/bytebase.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +bytebase.com -- $SHELL -i" as const,
+  fullPath: "bytebase.com" as const,
 }
 
 export type BytebasecomPackage = typeof bytebasecomPackage

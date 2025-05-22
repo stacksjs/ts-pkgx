@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const plantumlcomPackage = {
+  name: "plantuml" as const,
+  domain: "plantuml.com" as const,
+  description: "Generate diagrams from textual description" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/plantuml.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) plantuml" as const,
   programs: [
     "plantuml",
   ] as const,
@@ -28,13 +32,7 @@ export const plantumlcomPackage = {
     "1.2023.11",
     "1.2023.10",
   ] as const,
-  name: "plantuml.com" as const,
-  domain: "plantuml.com" as const,
-  description: "Package information for plantuml.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/plantuml.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +plantuml.com -- $SHELL -i" as const,
+  fullPath: "plantuml.com" as const,
 }
 
 export type PlantumlcomPackage = typeof plantumlcomPackage

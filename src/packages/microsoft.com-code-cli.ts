@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const microsoftcomcodecliPackage = {
+  name: "vscode cli" as const,
+  domain: "microsoft.com/code-cli" as const,
+  description: "Command-line interface built-in Visual Studio Code" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/code-cli/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) code" as const,
   programs: [
     "code",
   ] as const,
@@ -23,17 +27,11 @@ export const microsoftcomcodecliPackage = {
     "1.98.0",
     "1.97.2",
   ] as const,
+  fullPath: "microsoft.com/code-cli" as const,
   aliases: [
     "vscode cli",
     "code-cli",
   ] as const,
-  name: "microsoft.com/code-cli" as const,
-  domain: "microsoft.com/code-cli" as const,
-  description: "Package information for microsoft.com/code-cli" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/code-cli/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +microsoft.com/code-cli -- $SHELL -i" as const,
 }
 
 export type MicrosoftcomcodecliPackage = typeof microsoftcomcodecliPackage

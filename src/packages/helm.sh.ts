@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const helmshPackage = {
+  name: "helm" as const,
+  domain: "helm.sh" as const,
+  description: "The Kubernetes Package Manager" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/helm.sh/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) helm" as const,
   programs: [
     "helm",
   ] as const,
@@ -40,13 +44,7 @@ export const helmshPackage = {
     "3.11.2",
     "3.11.1",
   ] as const,
-  name: "helm.sh" as const,
-  domain: "helm.sh" as const,
-  description: "Package information for helm.sh" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/helm.sh/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +helm.sh -- $SHELL -i" as const,
+  fullPath: "helm.sh" as const,
 }
 
 export type HelmshPackage = typeof helmshPackage

@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cedarpolicycomPackage = {
+  name: "cedarpolicy.com" as const,
+  domain: "cedarpolicy.com" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx cedarpolicy.com" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "cedarpolicy.com" as const,
-  domain: "cedarpolicy.com" as const,
-  description: "Package information for cedarpolicy.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/cedarpolicy.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +cedarpolicy.com -- $SHELL -i" as const,
+  fullPath: "cedarpolicy.com" as const,
 }
 
 export type CedarpolicycomPackage = typeof cedarpolicycomPackage

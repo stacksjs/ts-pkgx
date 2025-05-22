@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const flywaydborgPackage = {
+  name: "flyway" as const,
+  domain: "flywaydb.org" as const,
+  description: "Database version control to control migrations" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/flywaydb.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) flyway" as const,
   programs: [
     "flyway",
   ] as const,
@@ -52,13 +56,7 @@ export const flywaydborgPackage = {
     "10.11.0",
     "10.10.0",
   ] as const,
-  name: "flywaydb.org" as const,
-  domain: "flywaydb.org" as const,
-  description: "Package information for flywaydb.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/flywaydb.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +flywaydb.org -- $SHELL -i" as const,
+  fullPath: "flywaydb.org" as const,
 }
 
 export type FlywaydborgPackage = typeof flywaydborgPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const stripecomPackage = {
+  name: "stripe" as const,
+  domain: "stripe.com" as const,
+  description: "A command-line tool for Stripe" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/stripe.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) stripe" as const,
   programs: [
     "stripe",
   ] as const,
@@ -60,13 +64,7 @@ export const stripecomPackage = {
     "1.14.0",
     "1.13.12",
   ] as const,
-  name: "stripe.com" as const,
-  domain: "stripe.com" as const,
-  description: "Package information for stripe.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/stripe.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +stripe.com -- $SHELL -i" as const,
+  fullPath: "stripe.com" as const,
 }
 
 export type StripecomPackage = typeof stripecomPackage

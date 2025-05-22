@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const prqllangorgPackage = {
+  name: "prql" as const,
+  domain: "prql-lang.org" as const,
+  description: "PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/prql-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +prql-lang.org -- $SHELL -i" as const,
   programs: [
     "prql-compiler",
     "prqlc",
@@ -43,13 +47,7 @@ export const prqllangorgPackage = {
     "0.4.0",
     "0.3.1",
   ] as const,
-  name: "prql/lang.org" as const,
-  domain: "prql/lang.org" as const,
-  description: "Package information for prql/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/prql/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +prql/lang.org -- $SHELL -i" as const,
+  fullPath: "prql-lang.org" as const,
 }
 
 export type PrqllangorgPackage = typeof prqllangorgPackage

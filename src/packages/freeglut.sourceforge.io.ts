@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const freeglutsourceforgeioPackage = {
+  name: "freeglut.sourceforge.io" as const,
+  domain: "freeglut.sourceforge.io" as const,
+  description: "Free implementation of the OpenGL Utility Toolkit (GLUT)" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/freeglut.sourceforge.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +freeglut.sourceforge.io -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -18,13 +22,7 @@ export const freeglutsourceforgeioPackage = {
     "3.6.0",
     "3.4.0",
   ] as const,
-  name: "freeglut.sourceforge.io" as const,
-  domain: "freeglut.sourceforge.io" as const,
-  description: "Package information for freeglut.sourceforge.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/freeglut.sourceforge.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +freeglut.sourceforge.io -- $SHELL -i" as const,
+  fullPath: "freeglut.sourceforge.io" as const,
 }
 
 export type FreeglutsourceforgeioPackage = typeof freeglutsourceforgeioPackage

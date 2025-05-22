@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ghostscriptcomPackage = {
+  name: "ghostscript.com" as const,
+  domain: "ghostscript.com" as const,
+  description: "This is purely for downloads, please check the website for full information" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ghostscript.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +ghostscript.com -- $SHELL -i" as const,
   programs: [
     "dvipdf",
     "eps2eps",
@@ -60,13 +64,7 @@ export const ghostscriptcomPackage = {
     "10.2.0",
     "10.1.2",
   ] as const,
-  name: "ghostscript.com" as const,
-  domain: "ghostscript.com" as const,
-  description: "Package information for ghostscript.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ghostscript.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ghostscript.com -- $SHELL -i" as const,
+  fullPath: "ghostscript.com" as const,
 }
 
 export type GhostscriptcomPackage = typeof ghostscriptcomPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const kerberosorgPackage = {
+  name: "kerberos.org" as const,
+  domain: "kerberos.org" as const,
+  description: "mirror of MIT krb5 repository" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kerberos.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +kerberos.org -- $SHELL -i" as const,
   programs: [
     "compile_et",
     "gss-client",
@@ -43,13 +47,7 @@ export const kerberosorgPackage = {
     "1.20.2",
     "1.20.1",
   ] as const,
-  name: "kerberos.org" as const,
-  domain: "kerberos.org" as const,
-  description: "Package information for kerberos.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/kerberos.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +kerberos.org -- $SHELL -i" as const,
+  fullPath: "kerberos.org" as const,
 }
 
 export type KerberosorgPackage = typeof kerberosorgPackage

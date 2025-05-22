@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const musllibcorgPackage = {
+  name: "musl.libc.org" as const,
+  domain: "musl.libc.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/musl.libc.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +musl.libc.org -- $SHELL -i" as const,
   programs: [
     "ld.musl-clang",
     "musl-clang",
@@ -13,13 +17,7 @@ export const musllibcorgPackage = {
   versions: [
     "1.2.3",
   ] as const,
-  name: "musl.libc.org" as const,
-  domain: "musl.libc.org" as const,
-  description: "Package information for musl.libc.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/musl.libc.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +musl.libc.org -- $SHELL -i" as const,
+  fullPath: "musl.libc.org" as const,
 }
 
 export type MusllibcorgPackage = typeof musllibcorgPackage

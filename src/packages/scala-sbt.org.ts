@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const scalasbtorgPackage = {
+  name: "sbt" as const,
+  domain: "scala-sbt.org" as const,
+  description: "sbt, the interactive build tool" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/scala-sbt.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) sbt" as const,
   programs: [
     "sbt",
   ] as const,
@@ -29,16 +33,10 @@ export const scalasbtorgPackage = {
     "1.9.4",
     "1.9.3",
   ] as const,
+  fullPath: "scala-sbt.org" as const,
   aliases: [
     "sbt",
   ] as const,
-  name: "scala/sbt.org" as const,
-  domain: "scala/sbt.org" as const,
-  description: "Package information for scala/sbt.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/scala/sbt.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +scala/sbt.org -- $SHELL -i" as const,
 }
 
 export type ScalasbtorgPackage = typeof scalasbtorgPackage

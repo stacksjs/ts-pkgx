@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const rubylangorgPackage = {
+  name: "ruby-lang.org" as const,
+  domain: "ruby-lang.org" as const,
+  description: "Powerful, clean, object-oriented scripting language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ruby-lang.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +ruby-lang.org -- $SHELL -i" as const,
   programs: [
     "erb",
     "irb",
@@ -62,16 +66,10 @@ export const rubylangorgPackage = {
     "2.6.10",
     "2.5.9",
   ] as const,
+  fullPath: "ruby-lang.org" as const,
   aliases: [
     "ruby",
   ] as const,
-  name: "ruby/lang.org" as const,
-  domain: "ruby/lang.org" as const,
-  description: "Package information for ruby/lang.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ruby/lang.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ruby/lang.org -- $SHELL -i" as const,
 }
 
 export type RubylangorgPackage = typeof rubylangorgPackage

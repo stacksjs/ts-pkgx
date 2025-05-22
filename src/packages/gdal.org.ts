@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const gdalorgPackage = {
+  name: "gdal.org" as const,
+  domain: "gdal.org" as const,
+  description: "GDAL is an open source MIT licensed translator library for raster and vector geospatial data formats." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gdal.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +gdal.org -- $SHELL -i" as const,
   programs: [
     "gdaladdo",
     "gdalbuildvrt",
@@ -100,13 +104,7 @@ export const gdalorgPackage = {
     "3.7.3",
     "3.7.2",
   ] as const,
-  name: "gdal.org" as const,
-  domain: "gdal.org" as const,
-  description: "Package information for gdal.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/gdal.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +gdal.org -- $SHELL -i" as const,
+  fullPath: "gdal.org" as const,
 }
 
 export type GdalorgPackage = typeof gdalorgPackage

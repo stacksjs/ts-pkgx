@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const libsdlorgPackage = {
+  name: "libsdl.org" as const,
+  domain: "libsdl.org" as const,
+  description: "Simple Directmedia Layer" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libsdl.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +libsdl.org -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -49,13 +53,7 @@ export const libsdlorgPackage = {
     "2.28.0",
     "2.26.5",
   ] as const,
-  name: "libsdl.org" as const,
-  domain: "libsdl.org" as const,
-  description: "Package information for libsdl.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/libsdl.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +libsdl.org -- $SHELL -i" as const,
+  fullPath: "libsdl.org" as const,
 }
 
 export type LibsdlorgPackage = typeof libsdlorgPackage

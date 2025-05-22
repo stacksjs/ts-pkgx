@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const fastlanetoolsPackage = {
+  name: "fastlane" as const,
+  domain: "fastlane.tools" as const,
+  description: "🚀 The easiest way to automate building and releasing your iOS and Android apps" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fastlane.tools/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) fastlane" as const,
   programs: [
     "fastlane",
   ] as const,
@@ -36,13 +40,7 @@ export const fastlanetoolsPackage = {
     "2.212.2",
     "2.212.1",
   ] as const,
-  name: "fastlane.tools" as const,
-  domain: "fastlane.tools" as const,
-  description: "Package information for fastlane.tools" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/fastlane.tools/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +fastlane.tools -- $SHELL -i" as const,
+  fullPath: "fastlane.tools" as const,
 }
 
 export type FastlanetoolsPackage = typeof fastlanetoolsPackage

@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const angulardevPackage = {
+  name: "ng" as const,
+  domain: "angular.dev" as const,
+  description: "CLI tool for Angular" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/angular.dev/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) ng" as const,
   programs: [
     "ng",
   ] as const,
@@ -113,16 +117,10 @@ export const angulardevPackage = {
     "16.2.14",
     "15.2.11",
   ] as const,
+  fullPath: "angular.dev" as const,
   aliases: [
     "ng",
   ] as const,
-  name: "angular.dev" as const,
-  domain: "angular.dev" as const,
-  description: "Package information for angular.dev" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/angular.dev/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +angular.dev -- $SHELL -i" as const,
 }
 
 export type AngulardevPackage = typeof angulardevPackage

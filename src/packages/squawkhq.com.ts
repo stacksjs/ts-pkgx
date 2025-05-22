@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const squawkhqcomPackage = {
+  name: "squawk" as const,
+  domain: "squawkhq.com" as const,
+  description: "🐘 linter for PostgreSQL, focused on migrations" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/squawkhq.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) squawk" as const,
   programs: [
     "squawk",
   ] as const,
@@ -39,13 +43,7 @@ export const squawkhqcomPackage = {
     "0.24.1",
     "0.24.0",
   ] as const,
-  name: "squawkhq.com" as const,
-  domain: "squawkhq.com" as const,
-  description: "Package information for squawkhq.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/squawkhq.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +squawkhq.com -- $SHELL -i" as const,
+  fullPath: "squawkhq.com" as const,
 }
 
 export type SquawkhqcomPackage = typeof squawkhqcomPackage

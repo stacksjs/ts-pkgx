@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const fliptioPackage = {
+  name: "flipt" as const,
+  domain: "flipt.io" as const,
+  description: "Enterprise-ready, GitOps enabled, CloudNative feature management solution" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/flipt.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) flipt" as const,
   programs: [
     "flipt",
   ] as const,
@@ -45,13 +49,7 @@ export const fliptioPackage = {
     "1.44.1",
     "1.44.0",
   ] as const,
-  name: "flipt.io" as const,
-  domain: "flipt.io" as const,
-  description: "Package information for flipt.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/flipt.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +flipt.io -- $SHELL -i" as const,
+  fullPath: "flipt.io" as const,
 }
 
 export type FliptioPackage = typeof fliptioPackage

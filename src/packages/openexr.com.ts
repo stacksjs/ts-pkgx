@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const openexrcomPackage = {
+  name: "exr" as const,
+  domain: "openexr.com" as const,
+  description: "The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i" as const,
   programs: [
     "exr2aces",
     "exrenvmap",
@@ -38,16 +42,10 @@ export const openexrcomPackage = {
     "3.1.6",
     "2.5.10",
   ] as const,
+  fullPath: "openexr.com" as const,
   aliases: [
     "exr",
   ] as const,
-  name: "openexr.com" as const,
-  domain: "openexr.com" as const,
-  description: "Package information for openexr.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i" as const,
 }
 
 export type OpenexrcomPackage = typeof openexrcomPackage

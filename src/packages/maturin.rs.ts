@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const maturinrsPackage = {
+  name: "maturin" as const,
+  domain: "maturin.rs" as const,
+  description: "Build and publish crates with pyo3, cffi and uniffi bindings as well as rust binaries as python packages" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/maturin.rs/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) maturin" as const,
   programs: [
     "maturin",
   ] as const,
@@ -28,13 +32,7 @@ export const maturinrsPackage = {
     "1.5.0",
     "1.4.0",
   ] as const,
-  name: "maturin.rs" as const,
-  domain: "maturin.rs" as const,
-  description: "Package information for maturin.rs" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/maturin.rs/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +maturin.rs -- $SHELL -i" as const,
+  fullPath: "maturin.rs" as const,
 }
 
 export type MaturinrsPackage = typeof maturinrsPackage

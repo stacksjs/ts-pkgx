@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const netliborgPackage = {
+  name: "netlib.org" as const,
+  domain: "netlib.org" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx netlib.org" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "netlib.org" as const,
-  domain: "netlib.org" as const,
-  description: "Package information for netlib.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/netlib.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +netlib.org -- $SHELL -i" as const,
+  fullPath: "netlib.org" as const,
 }
 
 export type NetliborgPackage = typeof netliborgPackage

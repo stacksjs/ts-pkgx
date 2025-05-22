@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const carapaceshPackage = {
+  name: "carapace" as const,
+  domain: "carapace.sh" as const,
+  description: "Multi-shell multi-command argument completer" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/carapace.sh/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) carapace" as const,
   programs: [
     "carapace",
   ] as const,
@@ -20,13 +24,7 @@ export const carapaceshPackage = {
     "1.0.5",
     "1.0.4",
   ] as const,
-  name: "carapace.sh" as const,
-  domain: "carapace.sh" as const,
-  description: "Package information for carapace.sh" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/carapace.sh/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +carapace.sh -- $SHELL -i" as const,
+  fullPath: "carapace.sh" as const,
 }
 
 export type CarapaceshPackage = typeof carapaceshPackage

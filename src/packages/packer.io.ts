@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const packerioPackage = {
+  name: "packer" as const,
+  domain: "packer.io" as const,
+  description: "Packer is a tool for creating identical machine images for multiple platforms from a single source configuration." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/packer.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) packer" as const,
   programs: [
     "packer",
   ] as const,
@@ -20,13 +24,7 @@ export const packerioPackage = {
     "1.9.3",
     "1.9.2",
   ] as const,
-  name: "packer.io" as const,
-  domain: "packer.io" as const,
-  description: "Package information for packer.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/packer.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +packer.io -- $SHELL -i" as const,
+  fullPath: "packer.io" as const,
 }
 
 export type PackerioPackage = typeof packerioPackage

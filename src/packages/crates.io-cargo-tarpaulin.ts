@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const cratesiocargotarpaulinPackage = {
+  name: "cargo-tarpaulin" as const,
+  domain: "crates.io/cargo-tarpaulin" as const,
+  description: "A code coverage tool for Rust projects" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/cargo-tarpaulin/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) cargo-tarpaulin" as const,
   programs: [
     "cargo-tarpaulin",
   ] as const,
@@ -21,16 +25,10 @@ export const cratesiocargotarpaulinPackage = {
     "0.31.5",
     "0.31.4",
   ] as const,
+  fullPath: "crates.io/cargo-tarpaulin" as const,
   aliases: [
     "cargo-tarpaulin",
   ] as const,
-  name: "crates.io/cargo-tarpaulin" as const,
-  domain: "crates.io/cargo-tarpaulin" as const,
-  description: "Package information for crates.io/cargo-tarpaulin" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/cargo-tarpaulin/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +crates.io/cargo-tarpaulin -- $SHELL -i" as const,
 }
 
 export type CratesiocargotarpaulinPackage = typeof cratesiocargotarpaulinPackage

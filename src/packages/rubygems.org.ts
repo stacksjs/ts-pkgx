@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const rubygemsorgPackage = {
+  name: "rubygems.org" as const,
+  domain: "rubygems.org" as const,
+  description: "Powerful, clean, object-oriented scripting language" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rubygems.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +rubygems.org -- $SHELL -i" as const,
   programs: [
     "bundle",
     "bundler",
@@ -70,13 +74,7 @@ export const rubygemsorgPackage = {
     "3.3.25",
     "3.2.34",
   ] as const,
-  name: "rubygems.org" as const,
-  domain: "rubygems.org" as const,
-  description: "Package information for rubygems.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/rubygems.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +rubygems.org -- $SHELL -i" as const,
+  fullPath: "rubygems.org" as const,
 }
 
 export type RubygemsorgPackage = typeof rubygemsorgPackage

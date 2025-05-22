@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const treesittergithubioPackage = {
+  name: "tree-sitter" as const,
+  domain: "tree-sitter.github.io" as const,
+  description: "Parser generator tool and incremental parsing library" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tree-sitter.github.io/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) tree-sitter" as const,
   programs: [
     "tree-sitter",
   ] as const,
@@ -35,13 +39,7 @@ export const treesittergithubioPackage = {
     "0.20.9",
     "0.20.8",
   ] as const,
-  name: "tree/sitter.github.io" as const,
-  domain: "tree/sitter.github.io" as const,
-  description: "Package information for tree/sitter.github.io" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/tree/sitter.github.io/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +tree/sitter.github.io -- $SHELL -i" as const,
+  fullPath: "tree-sitter.github.io" as const,
 }
 
 export type TreesittergithubioPackage = typeof treesittergithubioPackage

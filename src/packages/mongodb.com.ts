@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const mongodbcomPackage = {
+  name: "mongodb.com" as const,
+  domain: "mongodb.com" as const,
+  description: "The MongoDB Database" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mongodb.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +mongodb.com -- $SHELL -i" as const,
   programs: [
     "install_compass",
     "mongod",
@@ -40,13 +44,7 @@ export const mongodbcomPackage = {
     "6.0.18",
     "6.0.17",
   ] as const,
-  name: "mongodb.com" as const,
-  domain: "mongodb.com" as const,
-  description: "Package information for mongodb.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/mongodb.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +mongodb.com -- $SHELL -i" as const,
+  fullPath: "mongodb.com" as const,
 }
 
 export type MongodbcomPackage = typeof mongodbcomPackage

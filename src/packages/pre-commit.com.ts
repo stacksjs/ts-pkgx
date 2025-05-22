@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const precommitcomPackage = {
+  name: "pre-commit" as const,
+  domain: "pre-commit.com" as const,
+  description: "A framework for managing and maintaining multi-language pre-commit hooks." as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pre-commit.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) pre-commit" as const,
   programs: [
     "pre-commit",
   ] as const,
@@ -33,13 +37,7 @@ export const precommitcomPackage = {
     "3.1.0",
     "3.0.4",
   ] as const,
-  name: "pre/commit.com" as const,
-  domain: "pre/commit.com" as const,
-  description: "Package information for pre/commit.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/pre/commit.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +pre/commit.com -- $SHELL -i" as const,
+  fullPath: "pre-commit.com" as const,
 }
 
 export type PrecommitcomPackage = typeof precommitcomPackage

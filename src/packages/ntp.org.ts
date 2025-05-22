@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const ntporgPackage = {
+  name: "ntp.org" as const,
+  domain: "ntp.org" as const,
+  description: "" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ntp.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +ntp.org -- $SHELL -i" as const,
   programs: [
     "ntpq",
     "sntp",
@@ -21,13 +25,7 @@ export const ntporgPackage = {
   versions: [
     "4.2.8.17",
   ] as const,
-  name: "ntp.org" as const,
-  domain: "ntp.org" as const,
-  description: "Package information for ntp.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/ntp.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +ntp.org -- $SHELL -i" as const,
+  fullPath: "ntp.org" as const,
 }
 
 export type NtporgPackage = typeof ntporgPackage

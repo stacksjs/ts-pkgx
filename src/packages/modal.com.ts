@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const modalcomPackage = {
+  name: "modal.com" as const,
+  domain: "modal.com" as const,
+  description: "Python client library for Modal" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/modal.com/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) +modal.com -- $SHELL -i" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [
@@ -798,13 +802,7 @@ export const modalcomPackage = {
     "0.64.8",
     "0.64.7",
   ] as const,
-  name: "modal.com" as const,
-  domain: "modal.com" as const,
-  description: "Package information for modal.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/modal.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +modal.com -- $SHELL -i" as const,
+  fullPath: "modal.com" as const,
 }
 
 export type ModalcomPackage = typeof modalcomPackage

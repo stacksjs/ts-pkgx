@@ -1,7 +1,11 @@
-/**
- * Generated from pkgx.dev data
- */
 export const postgrestorgPackage = {
+  name: "postgrest" as const,
+  domain: "postgrest.org" as const,
+  description: "Serves a fully RESTful API from any existing PostgreSQL database" as const,
+  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/postgrest.org/package.yml" as const,
+  homepageUrl: "" as const,
+  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
+  installCommand: "sh <(curl https://pkgx.sh) postgrest" as const,
   programs: [
     "postgrest",
   ] as const,
@@ -24,13 +28,7 @@ export const postgrestorgPackage = {
     "12.2.4",
     "12.2.3",
   ] as const,
-  name: "postgrest.org" as const,
-  domain: "postgrest.org" as const,
-  description: "Package information for postgrest.org" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/postgrest.org/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +postgrest.org -- $SHELL -i" as const,
+  fullPath: "postgrest.org" as const,
 }
 
 export type PostgrestorgPackage = typeof postgrestorgPackage

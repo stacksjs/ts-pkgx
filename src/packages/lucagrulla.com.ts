@@ -1,18 +1,16 @@
-/**
- * Generated from pkgx.dev data
- */
 export const lucagrullacomPackage = {
+  name: "lucagrulla.com" as const,
+  domain: "lucagrulla.com" as const,
+  description: "" as const,
+  packageYmlUrl: "" as const,
+  homepageUrl: "" as const,
+  githubUrl: "" as const,
+  installCommand: "pkgx lucagrulla.com" as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  name: "lucagrulla.com" as const,
-  domain: "lucagrulla.com" as const,
-  description: "Package information for lucagrulla.com" as const,
-  packageYmlUrl: "https://github.com/pkgxdev/pantry/tree/main/projects/lucagrulla.com/package.yml" as const,
-  homepageUrl: "" as const,
-  githubUrl: "https://github.com/pkgxdev/pantry/" as const,
-  installCommand: "sh <(curl https://pkgx.sh) +lucagrulla.com -- $SHELL -i" as const,
+  fullPath: "lucagrulla.com" as const,
 }
 
 export type LucagrullacomPackage = typeof lucagrullacomPackage
