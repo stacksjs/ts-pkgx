@@ -25,6 +25,16 @@ export const applecomremote_cmdsPackage: PkgxPackage = {
 }
 
 export interface Applecomremote_cmdsPackage {
+  programs: readonly [];
+  companions: readonly [];
+  dependencies: readonly [];
+  versions: readonly [];
+  name: "apple.com/remote_cmds";
+  domain: "apple.com/remote_cmds";
+  description: "Package information for apple.com/remote_cmds";
+}
+
+export interface Applecomremote_cmdsPackage {
   name: "telnet";
   domain: "apple.com/remote_cmds";
   description: "";

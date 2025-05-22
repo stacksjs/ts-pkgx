@@ -20,6 +20,7 @@ export const werfioPackage: PkgxPackage = {
     "sourceware.org/dm^2.3"
   ],
   versions: [
+    "2.36.2",
     "2.36.1",
     "2.36.0",
     "2.35.10",
