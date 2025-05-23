@@ -21,7 +21,6 @@ export const yadmioPackage = {
     '3.2.2',
   ] as const,
   fullPath: 'yadm.io' as const,
-  aliases: undefined,
 }
 
 export type YadmioPackage = typeof yadmioPackage

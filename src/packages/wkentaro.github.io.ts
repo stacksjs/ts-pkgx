@@ -11,7 +11,6 @@ export const wkentarogithubioPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'wkentaro.github.io' as const,
-  aliases: undefined,
 }
 
 export type WkentarogithubioPackage = typeof wkentarogithubioPackage

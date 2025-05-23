@@ -11,7 +11,6 @@ export const vercelcomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'vercel.com' as const,
-  aliases: undefined,
 }
 
 export type VercelcomPackage = typeof vercelcomPackage

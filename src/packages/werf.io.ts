@@ -158,6 +158,7 @@ export const werfioPackage = {
     '1.1.35',
   ] as const,
   fullPath: 'werf.io' as const,
+  aliases: undefined,
 }
 
 export type WerfioPackage = typeof werfioPackage

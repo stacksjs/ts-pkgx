@@ -11,7 +11,6 @@ export const wilfredmeukPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'wilfred.me.uk' as const,
-  aliases: undefined,
 }
 
 export type WilfredmeukPackage = typeof wilfredmeukPackage

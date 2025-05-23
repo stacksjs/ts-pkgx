@@ -15,6 +15,7 @@ export const yasmtortallnetPackage = {
     '1.3.0',
   ] as const,
   fullPath: 'yasm.tortall.net' as const,
+  aliases: undefined,
 }
 
 export type YasmtortallnetPackage = typeof yasmtortallnetPackage

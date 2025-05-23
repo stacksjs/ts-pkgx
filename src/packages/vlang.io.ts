@@ -28,7 +28,6 @@ export const vlangioPackage = {
     '0.3.3',
   ] as const,
   fullPath: 'vlang.io' as const,
-  aliases: undefined,
 }
 
 export type VlangioPackage = typeof vlangioPackage

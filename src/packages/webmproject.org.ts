@@ -11,6 +11,7 @@ export const webmprojectorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'webmproject.org' as const,
+  aliases: undefined,
 }
 
 export type WebmprojectorgPackage = typeof webmprojectorgPackage

@@ -11,7 +11,6 @@ export const wpewebkitorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'wpewebkit.org' as const,
-  aliases: undefined,
 }
 
 export type WpewebkitorgPackage = typeof wpewebkitorgPackage

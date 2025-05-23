@@ -32,7 +32,6 @@ export const wxwidgetsorgPackage = {
     '3.2.3',
   ] as const,
   fullPath: 'wxwidgets.org' as const,
-  aliases: undefined,
 }
 
 export type WxwidgetsorgPackage = typeof wxwidgetsorgPackage

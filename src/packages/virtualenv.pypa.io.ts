@@ -58,7 +58,6 @@ export const virtualenvpypaioPackage = {
     '20.18.0',
   ] as const,
   fullPath: 'virtualenv.pypa.io' as const,
-  aliases: undefined,
 }
 
 export type VirtualenvpypaioPackage = typeof virtualenvpypaioPackage

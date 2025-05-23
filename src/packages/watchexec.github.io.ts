@@ -20,6 +20,7 @@ export const watchexecgithubioPackage = {
     '2.1.2',
   ] as const,
   fullPath: 'watchexec.github.io' as const,
+  aliases: undefined,
 }
 
 export type WatchexecgithubioPackage = typeof watchexecgithubioPackage

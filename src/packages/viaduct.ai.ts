@@ -11,7 +11,6 @@ export const viaductaiPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'viaduct.ai' as const,
-  aliases: undefined,
 }
 
 export type ViaductaiPackage = typeof viaductaiPackage

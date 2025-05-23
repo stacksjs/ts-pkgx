@@ -14,7 +14,6 @@ export const zeromqorgPackage = {
     '4.3.4',
   ] as const,
   fullPath: 'zeromq.org' as const,
-  aliases: undefined,
 }
 
 export type ZeromqorgPackage = typeof zeromqorgPackage

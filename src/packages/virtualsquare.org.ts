@@ -11,7 +11,6 @@ export const virtualsquareorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'virtualsquare.org' as const,
-  aliases: undefined,
 }
 
 export type VirtualsquareorgPackage = typeof virtualsquareorgPackage

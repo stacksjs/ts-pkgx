@@ -18,7 +18,6 @@ export const youtubedlorgPackage = {
     '2021.12.17',
   ] as const,
   fullPath: 'youtube-dl.org' as const,
-  aliases: undefined,
 }
 
 export type YoutubedlorgPackage = typeof youtubedlorgPackage

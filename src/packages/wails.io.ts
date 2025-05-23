@@ -30,6 +30,7 @@ export const wailsioPackage = {
     '2.8.0',
   ] as const,
   fullPath: 'wails.io' as const,
+  aliases: undefined,
 }
 
 export type WailsioPackage = typeof wailsioPackage

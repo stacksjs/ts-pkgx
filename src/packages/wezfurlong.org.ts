@@ -11,7 +11,6 @@ export const wezfurlongorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'wezfurlong.org' as const,
-  aliases: undefined,
 }
 
 export type WezfurlongorgPackage = typeof wezfurlongorgPackage

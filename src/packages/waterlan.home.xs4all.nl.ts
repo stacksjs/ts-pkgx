@@ -11,6 +11,7 @@ export const waterlanhomexs4allnlPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'waterlan.home.xs4all.nl' as const,
+  aliases: undefined,
 }
 
 export type Waterlanhomexs4allnlPackage = typeof waterlanhomexs4allnlPackage

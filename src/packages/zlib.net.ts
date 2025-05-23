@@ -16,7 +16,6 @@ export const zlibnetPackage = {
     '1.2.12',
   ] as const,
   fullPath: 'zlib.net' as const,
-  aliases: undefined,
 }
 
 export type ZlibnetPackage = typeof zlibnetPackage

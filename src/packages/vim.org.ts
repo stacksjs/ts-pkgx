@@ -2002,7 +2002,6 @@ export const vimorgPackage = {
     '9.0.1294',
   ] as const,
   fullPath: 'vim.org' as const,
-  aliases: undefined,
 }
 
 export type VimorgPackage = typeof vimorgPackage

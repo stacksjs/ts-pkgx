@@ -116,7 +116,6 @@ export const vitejsdevPackage = {
     '2.9.18',
   ] as const,
   fullPath: 'vitejs.dev' as const,
-  aliases: undefined,
 }
 
 export type VitejsdevPackage = typeof vitejsdevPackage

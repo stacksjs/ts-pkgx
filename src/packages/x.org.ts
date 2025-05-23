@@ -11,7 +11,6 @@ export const xorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'x.org' as const,
-  aliases: undefined,
 }
 
 export type XorgPackage = typeof xorgPackage

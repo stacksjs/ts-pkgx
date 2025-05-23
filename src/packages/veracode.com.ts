@@ -11,7 +11,6 @@ export const veracodecomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'veracode.com' as const,
-  aliases: undefined,
 }
 
 export type VeracodecomPackage = typeof veracodecomPackage

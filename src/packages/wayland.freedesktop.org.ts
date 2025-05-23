@@ -25,6 +25,7 @@ export const waylandfreedesktoporgPackage = {
     '1.22.0',
   ] as const,
   fullPath: 'wayland.freedesktop.org' as const,
+  aliases: undefined,
 }
 
 export type WaylandfreedesktoporgPackage = typeof waylandfreedesktoporgPackage
