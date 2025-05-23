@@ -35,9 +35,23 @@ export const DEFAULT_CACHE_EXPIRATION_MINUTES = 1440
  * Known packages list as a fallback if all other methods fail
  */
 const ALL_KNOWN_PACKAGES = [
-  "abseil.io", "acorn.io", "agpt.co", "agwa.name-git-crypt", "akuity.io", "alacritty.org",
-  "alembic.sqlalchemy.org", "alsa-project.org", "amber-lang.com", "amp.rs", "amrdeveloper.github.io",
-  "anchore.com", "android.com", "angular.dev", "ansible.com", "aomedia.googlesource.com", "apache.org",
+  'abseil.io',
+  'acorn.io',
+  'agpt.co',
+  'agwa.name-git-crypt',
+  'akuity.io',
+  'alacritty.org',
+  'alembic.sqlalchemy.org',
+  'alsa-project.org',
+  'amber-lang.com',
+  'amp.rs',
+  'amrdeveloper.github.io',
+  'anchore.com',
+  'android.com',
+  'angular.dev',
+  'ansible.com',
+  'aomedia.googlesource.com',
+  'apache.org',
   // ... rest of the package list
 ]
 
@@ -64,7 +78,7 @@ export function getValidCachedPackage(
     // Handle aliases - need to check the canonical name
     const resolvedName = PACKAGE_ALIASES[packageName] || packageName
 
-    // Create a safe filename for the cache file
+    // Create a safe filename for the cache file - preserve dots, only replace slashes
     const safeFilename = resolvedName.replace(/\//g, '-')
     const cacheFilePath = path.join(cacheDir, `${safeFilename}.json`)
 
@@ -126,7 +140,7 @@ export function saveToCacheAndOutput(
     fs.mkdirSync(cacheDir, { recursive: true })
   }
 
-  // Create a safe filename for the cache file
+  // Create a safe filename for the cache file - preserve dots, only replace slashes
   const safeFilename = packageName.replace(/\//g, '-')
   const cacheFilePath = path.join(cacheDir, `${safeFilename}.json`)
 
@@ -149,16 +163,16 @@ export function saveToCacheAndOutput(
 let sharedBrowser: Browser | null = null
 
 // Browser pool for concurrent operations
-const browserPool: { browser: Browser; inUse: boolean }[] = []
+const browserPool: { browser: Browser, inUse: boolean }[] = []
 
 // Define a variable to track if we've already logged a navigation message
-let navigationLogged = false;
+let navigationLogged = false
 
 // Create a function to log navigation only once
 function logNavigation(url: string) {
   if (!navigationLogged) {
-    console.log(`Navigating to ${url}...`);
-    navigationLogged = true;
+    console.log(`Navigating to ${url}...`)
+    navigationLogged = true
   }
 }
 
@@ -180,7 +194,7 @@ export async function cleanupBrowserResources(): Promise<void> {
             try {
               await Promise.race([
                 page.close().catch(() => {}),
-                new Promise(resolve => setTimeout(resolve, 1000))
+                new Promise(resolve => setTimeout(resolve, 1000)),
               ])
             }
             catch {
@@ -189,7 +203,7 @@ export async function cleanupBrowserResources(): Promise<void> {
           }
           await Promise.race([
             context.close().catch(() => {}),
-            new Promise(resolve => setTimeout(resolve, 1000))
+            new Promise(resolve => setTimeout(resolve, 1000)),
           ])
         }
         catch {
@@ -201,7 +215,7 @@ export async function cleanupBrowserResources(): Promise<void> {
       console.log('Closing browser...')
       await Promise.race([
         sharedBrowser.close().catch(e => console.error('Error closing browser:', e)),
-        new Promise(resolve => setTimeout(resolve, 3000))
+        new Promise(resolve => setTimeout(resolve, 3000)),
       ])
 
       // Clear the shared browser reference even if close fails
@@ -222,9 +236,10 @@ export async function cleanupBrowserResources(): Promise<void> {
       try {
         await Promise.race([
           entry.browser.close().catch(e => console.error('Error closing pool browser:', e)),
-          new Promise(resolve => setTimeout(resolve, 3000))
+          new Promise(resolve => setTimeout(resolve, 3000)),
         ])
-      } catch (error) {
+      }
+      catch (error) {
         console.error('Error closing browser from pool:', error)
       }
     })
@@ -398,7 +413,7 @@ export async function fetchPkgxPackage(
 
     try {
       // Reset navigation logged state at the beginning of each fetch
-      navigationLogged = false;
+      navigationLogged = false
 
       const pkgUrl = `https://pkgx.dev/pkgs/${packageName}/`
       logNavigation(pkgUrl)
@@ -645,12 +660,14 @@ export async function fetchPkgxPackage(
             try {
               // Use Bun.semver.order with negative multiplier for descending sort (newest first)
               return -1 * Bun.semver.order(a, b)
-            } catch (e) {
+            }
+            catch (e) {
               // Fallback to string comparison if semver fails
               return b.localeCompare(a)
             }
           })
-        } catch (error) {
+        }
+        catch (error) {
           console.warn(`Warning: Failed to sort versions for ${packageName} using semver:`, error)
         }
       }
@@ -788,7 +805,8 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       const projects = await fetchPkgxProjects()
       allPackageNames = projects.map(project => project.name)
       console.log(`Found ${allPackageNames.length} packages from GitHub API`)
-    } catch (githubError) {
+    }
+    catch (githubError) {
       console.error(`Error fetching from GitHub API: ${githubError}`)
 
       // Fall back to web scraping if GitHub API fails
@@ -827,11 +845,13 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
           })
 
           console.log(`Found ${allPackageNames.length} packages from web scraping`)
-        } finally {
+        }
+        finally {
           // Close the scraping browser
           await scrapingBrowser.close()
         }
-      } catch (scrapingError) {
+      }
+      catch (scrapingError) {
         console.error(`Error with web scraping fallback: ${scrapingError}`)
       }
     }
@@ -869,7 +889,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       if (useCache) {
         const cachedPackage = getValidCachedPackage(packageName, {
           cacheDir,
-          cacheExpirationMinutes
+          cacheExpirationMinutes,
         })
 
         if (cachedPackage) {
@@ -913,8 +933,8 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
             cacheDir,
             cache: useCache,
             cacheExpirationMinutes,
-            browser // Now correctly passing the browser instance
-          }
+            browser, // Now correctly passing the browser instance
+          },
         )
 
         if (result.success && result.fullDomainName) {
@@ -932,10 +952,12 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
         }
 
         return null
-      } catch (error) {
+      }
+      catch (error) {
         console.error(`Failed to process package ${packageName}:`, error)
         return null
-      } finally {
+      }
+      finally {
         // Always release the browser back to the pool if it was acquired
         if (browser) {
           releaseBrowser(browser)
@@ -979,10 +1001,12 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
     }
 
     return savedPackages
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Error during package fetching:', error)
     throw error
-  } finally {
+  }
+  finally {
     // Clean up browser resources
     await cleanupBrowserResources()
   }
@@ -996,21 +1020,30 @@ function getDomainAsTypescriptName(domain: string): string {
   // First handle the case where there are slashes (nested paths)
   if (domain.includes('/')) {
     // Split into parent domain and subpath
-    const [parentDomain, subPath] = domain.split('/')
+    const [parentDomain, ...subPathParts] = domain.split('/')
+    const subPath = subPathParts.join('/')
 
-    // Clean both parts separately - IMPORTANT: remove dashes in both parts
-    const cleanParent = parentDomain.replace(/\./g, '').replace(/-/g, '')
-    const cleanSubPath = subPath.replace(/-/g, '')
+    // Clean parent domain part (remove dots)
+    const cleanParent = parentDomain.replace(/\./g, '')
 
-    // Join without any separators to make a valid identifier
+    // For GitHub projects, include the full subpath in the variable name
+    if (parentDomain.includes('github.com')) {
+      // For GitHub repos, we need to keep all parts of the path
+      // and transform them into a valid variable name
+      // Replace all special characters and join everything into a single string
+      const fullPath = subPath.replace(/[/.-]/g, '')
+      return `${cleanParent}${fullPath}`.toLowerCase()
+    }
+
+    // For variable names, we need to remove special characters in the subpath
+    const cleanSubPath = subPath.replace(/[.-]/g, '')
+
+    // Join without a separator to make a valid variable name
     return `${cleanParent}${cleanSubPath}`.toLowerCase()
   }
 
-  // For regular domains (no slashes), just remove dots and dashes
-  return domain
-    .replace(/\./g, '')
-    .replace(/-/g, '')
-    .toLowerCase()
+  // For regular domains (no slashes), just remove dots
+  return domain.replace(/\./g, '').toLowerCase()
 }
 
 /**
@@ -1049,7 +1082,8 @@ function formatObjectWithAsConst(obj: Record<string, any>): string {
   // Add each property with appropriate formatting
   for (const [key, value] of Object.entries(obj)) {
     // Skip fetchedAt property to keep it out of TypeScript files
-    if (key === 'fetchedAt') continue;
+    if (key === 'fetchedAt')
+      continue
 
     if (value === undefined) {
       lines.push(`  ${key}: undefined,`)
@@ -1060,30 +1094,37 @@ function formatObjectWithAsConst(obj: Record<string, any>): string {
       if (value.length === 0) {
         // Empty array
         lines.push(`  ${key}: [] as const,`)
-      } else if (typeof value[0] === 'string') {
+      }
+      else if (typeof value[0] === 'string') {
         // Format string array with line breaks for readability
         lines.push(`  ${key}: [`)
         for (const item of value) {
           lines.push(`    ${JSON.stringify(item)},`)
         }
         lines.push(`  ] as const,`)
-      } else {
+      }
+      else {
         // Other array types
         lines.push(`  ${key}: ${JSON.stringify(value)} as const,`)
       }
-    } else if (typeof value === 'string') {
+    }
+    else if (typeof value === 'string') {
       // String with 'as const'
       lines.push(`  ${key}: ${JSON.stringify(value)} as const,`)
-    } else if (typeof value === 'number' || typeof value === 'boolean') {
+    }
+    else if (typeof value === 'number' || typeof value === 'boolean') {
       // Numbers and booleans with 'as const'
       lines.push(`  ${key}: ${value} as const,`)
-    } else if (value === null) {
+    }
+    else if (value === null) {
       // Null values
       lines.push(`  ${key}: null,`)
-    } else if (typeof value === 'object') {
+    }
+    else if (typeof value === 'object') {
       // Nested objects
       lines.push(`  ${key}: ${formatObjectWithAsConst(value)},`)
-    } else {
+    }
+    else {
       // Fallback for other types
       lines.push(`  ${key}: ${JSON.stringify(value)},`)
     }
@@ -1108,6 +1149,8 @@ export function savePackageAsTypeScript(outputDir: string, domainName: string, p
   }
 
   // Create a safe version of the domain name for the file name
+  // For paths like 'apple.com/remote_cmds', replace the slash with hyphen
+  // but preserve dots for better readability
   const safeFilename = domainName.replace(/\//g, '-')
 
   // Create the TypeScript file path using the same name as JSON files
@@ -1194,14 +1237,15 @@ export async function fetchAndSavePackage(
     // If caching is disabled, log it and skip cache check completely
     if (!useCache) {
       console.log(`Cache disabled for ${packageName}, will fetch directly`)
-    } else {
+    }
+    else {
       // Handle aliases - need to check the canonical name
       const resolvedName = PACKAGE_ALIASES[packageName] || packageName
 
       const cachedPackage = getValidCachedPackage(packageName, {
         cacheDir,
         cacheExpirationMinutes: options.cacheExpirationMinutes,
-        cache: options.cache
+        cache: options.cache,
       })
 
       if (cachedPackage) {
@@ -1252,7 +1296,7 @@ export async function fetchAndSavePackage(
         // Use a try/catch here to handle 404 errors
         const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage(`${domain}/${subPath}`, {
           timeout: actualTimeout,
-          browser: options.browser
+          browser: options.browser,
         })
 
         // Sort versions using semver if they exist
@@ -1263,12 +1307,14 @@ export async function fetchAndSavePackage(
               try {
                 // Use Bun.semver.order with negative multiplier for descending sort (newest first)
                 return -1 * Bun.semver.order(a, b)
-              } catch (e) {
+              }
+              catch (e) {
                 // Fallback to string comparison if semver fails
                 return b.localeCompare(a)
               }
             })
-          } catch (error) {
+          }
+          catch (error) {
             console.warn(`Warning: Failed to sort versions for ${packageName} using semver:`, error)
           }
         }
@@ -1446,7 +1492,7 @@ export async function fetchAndSavePackage(
       try {
         const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage(packageName, {
           timeout: actualTimeout,
-          browser: options.browser
+          browser: options.browser,
         })
 
         // Sort versions using semver if they exist
@@ -1457,12 +1503,14 @@ export async function fetchAndSavePackage(
               try {
                 // Use Bun.semver.order with negative multiplier for descending sort (newest first)
                 return -1 * Bun.semver.order(a, b)
-              } catch (e) {
+              }
+              catch (e) {
                 // Fallback to string comparison if semver fails
                 return b.localeCompare(a)
               }
             })
-          } catch (error) {
+          }
+          catch (error) {
             console.warn(`Warning: Failed to sort versions for ${packageName} using semver:`, error)
           }
         }

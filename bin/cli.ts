@@ -2,6 +2,7 @@
  * Command-line interface for pkgx-tools
  */
 
+import type { PackageFetchOptions } from '../src/types'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
@@ -9,16 +10,15 @@ import { CAC } from 'cac'
 import { version } from '../package.json'
 import {
   cleanupBrowserResources,
+  DEFAULT_CACHE_DIR,
+  DEFAULT_CACHE_EXPIRATION_MINUTES,
   fetchAndSaveAllPackages,
   fetchAndSavePackage,
   fetchPkgxProjects,
-  DEFAULT_CACHE_DIR,
-  DEFAULT_CACHE_EXPIRATION_MINUTES,
-  savePackageAsTypeScript
+  savePackageAsTypeScript,
 } from '../src/fetch'
-import type { PackageFetchOptions } from '../src/types'
-import { generateIndex } from '../src/tools/generateIndex'
 import { generateAliases } from '../src/tools/generateAliases'
+import { generateIndex } from '../src/tools/generateIndex'
 
 // Define interface for CLI options
 interface FetchOptions {
@@ -34,7 +34,6 @@ interface FetchOptions {
   json?: boolean
   debug?: boolean
   verbose?: boolean
-  webScraping?: boolean
   concurrency?: number
 }
 
@@ -54,14 +53,15 @@ process.on('exit', () => {
 })
 
 // Clean exit handler for SIGINT and SIGTERM
-const exitHandler = async (signal: string) => {
+async function exitHandler(signal: string) {
   console.log(`\nReceived ${signal} signal. Cleaning up resources...`)
   clearTimeout(forceExitTimeout)
 
   try {
     await cleanupBrowserResources()
     console.log('Resources cleaned up. Exiting.')
-  } catch (err) {
+  }
+  catch (err) {
     console.error('Error during cleanup:', err)
   }
 
@@ -91,7 +91,6 @@ cli
   .option('-j, --json', 'Save as JSON instead of TypeScript')
   .option('-d, --debug', 'Enable debug mode (save screenshots)')
   .option('-v, --verbose', 'Enable verbose output')
-  .option('-w, --web-scraping', 'Use web scraping to fetch package information')
   .option('-y, --concurrency <count>', 'Number of packages to fetch concurrently', { default: 10 })
   .action(async (packageName: string | undefined, options: FetchOptions) => {
     // Extract options with appropriate types
@@ -107,9 +106,8 @@ cli
       json: saveAsJson = false,
       debug = false,
       verbose = false,
-      webScraping = false,
       concurrency = 10,
-      pkg
+      pkg,
     } = options
 
     // Ensure output directory exists
@@ -137,14 +135,15 @@ cli
           cacheDir,
           cache,
           cacheExpirationMinutes: cacheExpiration,
-          timeout: parseInt(String(timeout), 10),
+          timeout: Number.parseInt(String(timeout), 10),
           debug,
-          limit: limit ? parseInt(String(limit), 10) : undefined,
-          concurrency: parseInt(String(concurrency), 10)
+          limit: limit ? Number.parseInt(String(limit), 10) : undefined,
+          concurrency: Number.parseInt(String(concurrency), 10),
         }
 
         savedPackages = await fetchAndSaveAllPackages(fetchOptions)
-      } else if (pkg) {
+      }
+      else if (pkg) {
         // Fetch specific packages
         const packageNames = pkg.split(',').map((p: string) => p.trim())
         console.log(`Fetching ${packageNames.length} packages: ${packageNames.join(', ')}`)
@@ -154,16 +153,16 @@ cli
           const result = await fetchAndSavePackage(
             name,
             outputDir,
-            parseInt(String(timeout), 10),
+            Number.parseInt(String(timeout), 10),
             saveAsJson,
             1, // retryNumber
-            parseInt(String(maxRetries), 10),
+            Number.parseInt(String(maxRetries), 10),
             debug,
             {
               cacheDir,
               cache,
-              cacheExpirationMinutes: cacheExpiration
-            }
+              cacheExpirationMinutes: cacheExpiration,
+            },
           )
 
           if (result && result.success) {
@@ -173,22 +172,23 @@ cli
             }
           }
         }
-      } else if (packageName) {
+      }
+      else if (packageName) {
         // Fetch a single package
         console.log(`Fetching package: ${packageName}`)
         const result = await fetchAndSavePackage(
           packageName,
           outputDir,
-          parseInt(String(timeout), 10),
+          Number.parseInt(String(timeout), 10),
           saveAsJson,
           1, // retryNumber
-          parseInt(String(maxRetries), 10),
+          Number.parseInt(String(maxRetries), 10),
           debug,
           {
             cacheDir,
             cache,
-            cacheExpirationMinutes: cacheExpiration
-          }
+            cacheExpirationMinutes: cacheExpiration,
+          },
         )
 
         if (result && result.success) {
@@ -197,7 +197,8 @@ cli
             console.log(`Successfully saved ${packageName} to ${result.filePath}`)
           }
         }
-      } else {
+      }
+      else {
         console.error('Error: Please specify a package name, use --pkg, or use --all')
         process.exit(1)
       }
@@ -292,18 +293,25 @@ cli
           // Get domain name from filename (remove .json extension)
           const domainName = file.replace(/\.json$/, '')
 
-          // Generate TypeScript file
-          const tsFilePath = savePackageAsTypeScript(outputDir, domainName, packageInfo)
+          // Generate TypeScript file - use original domain from package info if available,
+          // otherwise fallback to filename
+          const tsFilePath = savePackageAsTypeScript(
+            outputDir,
+            packageInfo.fullPath || packageInfo.domain || domainName,
+            packageInfo,
+          )
 
           console.log(`Generated ${tsFilePath}`)
           count++
-        } catch (error) {
+        }
+        catch (error) {
           console.error(`Error processing ${file}:`, error)
         }
       }
 
       console.log(`Successfully generated ${count} TypeScript files from JSON cache`)
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Error generating TypeScript files:', error)
       process.exit(1)
     }

@@ -1,4 +1,4 @@
-export const nodejsorgPackage = {
+export const nodePackage = {
   name: "node" as const,
   domain: "nodejs.org" as const,
   description: "Platform built on V8 to build network applications" as const,
@@ -164,4 +164,4 @@ export const nodejsorgPackage = {
   ] as const,
 }
 
-export type NodejsorgPackage = typeof nodejsorgPackage
+export type NodePackage = typeof nodePackage

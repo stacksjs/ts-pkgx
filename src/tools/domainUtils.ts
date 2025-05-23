@@ -36,12 +36,12 @@ export function convertDomainToFileName(domain: string): string {
     // Clean the parent domain (remove dots)
     const cleanParent = parentDomain.replace(/\./g, '')
 
-    // Clean the subpath but preserve the desired format
-    // For the specific failing test - remove hyphens from 'git-crypt' to match expected 'gitcrypt'
-    const cleanSubPath = subPath.replace(/-/g, '')
+    // For filenames, preserve special characters in the subpath to ensure uniqueness
+    // This ensures paths like 'apple.com/remote_cmds' become 'applecom-remote_cmds'
+    const safeSubPath = subPath.replace(/\//g, '-')
 
     // For filenames, we use a hyphen between parent and subpath to maintain readability
-    return `${cleanParent}-${cleanSubPath}`.toLowerCase()
+    return `${cleanParent}-${safeSubPath}`.toLowerCase()
   }
 
   // Regular domains like 'bun.sh' -> 'bunsh'
@@ -80,7 +80,7 @@ export function guessOriginalDomain(fileName: string): string {
     if (domain.endsWith('name') && !domain.endsWith('.name'))
       domain = domain.replace(/name$/, '.name')
 
-    // Reconstruct the nested path, preserving dashes in the subpath
+    // Reconstruct the nested path, preserving the original subpath (including special characters)
     return `${domain}/${subPath}`
   }
 
