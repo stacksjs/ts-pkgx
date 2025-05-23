@@ -1,7 +1,8 @@
-import type { ProjectFolder } from './types'
 /**
  * Utility functions for the pkgx-tools project
  */
+
+import type { ProjectFolder } from './types'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
@@ -167,15 +168,18 @@ export async function fetchPackageListFromGitHub(limit: number = 0, singlePackag
       return []
     }
 
+    // eslint-disable-next-line no-console
     console.log(`Single package mode: only fetching '${singlePackage}'`)
     return [singlePackage]
   }
 
+  // eslint-disable-next-line no-console
   console.log('Fetching package list from GitHub API...')
 
   // Check cache first
   const cachedPackages = getGitHubPackageCache()
   if (cachedPackages) {
+    // eslint-disable-next-line no-console
     console.log('Using cached package list, no GitHub API calls needed')
     return limit > 0 ? cachedPackages.slice(0, limit) : cachedPackages
   }
@@ -374,27 +378,30 @@ export async function logPkgxProjects(): Promise<ProjectFolder[]> {
  * @returns A formatted string representation of the object
  */
 export function formatObjectWithoutQuotedKeys(obj: any, indent = 2): string {
-  if (obj === null) return 'null'
-  if (obj === undefined) return 'undefined'
+  if (obj === null)
+    return 'null'
+  if (obj === undefined)
+    return 'undefined'
 
   if (Array.isArray(obj)) {
-    if (obj.length === 0) return '[]'
+    if (obj.length === 0)
+      return '[]'
 
-      // For arrays with string items, use a more compact format with proper indentation
+    // For arrays with string items, use a more compact format with proper indentation
     if (obj.every(item => typeof item === 'string')) {
       if (obj.length === 1) {
         return `[${JSON.stringify(obj[0])}]`
       }
 
       // Format string arrays with consistent indentation
-      const items = obj.map(item => JSON.stringify(item)).join(',\n' + ' '.repeat(indent))
+      const items = obj.map(item => JSON.stringify(item)).join(`,\n${' '.repeat(indent)}`)
       return `[\n${' '.repeat(indent)}${items}\n${' '.repeat(indent - 2)}]`
     }
 
     // For non-string arrays, use recursive formatting
     const items = obj.map(item =>
-      formatObjectWithoutQuotedKeys(item, indent + 2)
-    ).join(',\n' + ' '.repeat(indent + 2))
+      formatObjectWithoutQuotedKeys(item, indent + 2),
+    ).join(`,\n${' '.repeat(indent + 2)}`)
 
     return `[\n${' '.repeat(indent + 2)}${items}\n${' '.repeat(indent)}]`
   }

@@ -35,31 +35,6 @@ bun run pkgx:fetch-all
 
 # Set a custom timeout (milliseconds)
 bun run pkgx:fetch-all --timeout 180000 --output ./data/pkgx-packages
-
-# Update all packages with latest information
-bun src/tools/updatePackages.ts
-
-# Or use the convenience script
-./scripts/update-packages.sh
-```
-
-### Package Updates
-
-This project includes an automated package update system:
-
-1. The `updatePackages.ts` script fetches the latest package information from pkgx.dev
-2. Updates are processed in batches to prevent memory issues
-3. The script automatically regenerates the index.ts file after updates
-4. A GitHub Action runs hourly to keep all packages up-to-date
-
-You can manually trigger the update workflow through GitHub Actions or run the script locally:
-
-```bash
-# Run the update script directly
-bun src/tools/updatePackages.ts
-
-# Or use the convenience script
-./scripts/update-packages.sh
 ```
 
 ### Programmatic Usage

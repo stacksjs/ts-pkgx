@@ -29,9 +29,6 @@ jobs:
       - name: Install Playwright browsers
         run: bunx playwright install chromium --with-deps
 
-      - name: Update packages
-        run: bun src/tools/updatePackages.ts
-
       - name: Generate index
         run: bun bin/cli.ts generate-index
 

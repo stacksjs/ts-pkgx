@@ -64,10 +64,6 @@ ts-pkgx provides tools for automatically updating package information:
 ```bash
 # Update all packages
 bun run pkgx:update
-
-# Or via the API
-import { updatePackage } from 'ts-pkgx/tools/updatePackages'
-await updatePackage('nodejs.org')
 ```
 
 This ensures your package information stays up to date without requiring manual intervention.

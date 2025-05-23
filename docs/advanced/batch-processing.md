@@ -66,7 +66,6 @@ Use this command after adding new packages or when experiencing issues with vari
 
 The batch processing logic is implemented in:
 
-- `src/tools/updatePackages.ts` - Core batch processing implementation
 - `bin/cli.ts` - CLI interface for batch operations
 
 See the source code for implementation details.
@@ -86,7 +85,6 @@ Implement dynamic batch size adjustment based on system performance:
 
 ```typescript
 import { performance } from 'node:perf_hooks'
-import { updatePackage } from 'ts-pkgx/tools/updatePackages'
 import { fetchPackageListFromGitHub } from 'ts-pkgx/utils'
 
 async function updatePackagesWithDynamicBatching() {

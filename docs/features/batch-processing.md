@@ -128,7 +128,6 @@ Actual performance depends on your network connection, system specs, and the spe
 You can implement the same batch processing approach in your own code:
 
 ```typescript
-import { updatePackage } from 'ts-pkgx/tools/updatePackages'
 import { fetchPackageListFromGitHub } from 'ts-pkgx/utils'
 
 async function updatePackagesInBatches() {

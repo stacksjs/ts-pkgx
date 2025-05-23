@@ -48,7 +48,6 @@
     "demo": "bun run src/demo.ts",
     "generate:package": "bun run src/tools/generatePackageData.ts",
     "generate:index": "bun run src/tools/generateIndex.ts",
-    "update:packages": "bun run src/tools/updatePackages.ts",
     "test:renderer": "bun run src/tools/testRenderer.ts",
     "test:yaml": "bun run src/tools/testYamlFetcher.ts",
     "test:packages": "bun run src/tools/runTests.ts",
