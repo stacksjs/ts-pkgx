@@ -17,364 +17,163 @@ const INDEX_FILE = path.join(PACKAGES_DIR, 'index.ts')
 // The aliases file path
 const ALIASES_FILE = path.join(PACKAGES_DIR, 'aliases.ts')
 
+// Files to exclude from the index
+const EXCLUDED_FILES = ['index.ts', 'aliases.ts']
+
+// Special module names that need custom handling
+const SPECIAL_MODULES: Record<string, string> = {
+  undefined: 'undefinedpkg', // Rename to avoid conflict with JavaScript undefined
+}
+
 /**
  * Safely convert a filename to a valid JavaScript identifier
  * @param moduleName The module filename without extension
  * @returns A valid JavaScript identifier
  */
-function safeVarName(moduleName: string): string {
-  // Replace hyphens with underscores and dots with nothing to make valid JS identifiers
-  return moduleName.replace(/-/g, '_').replace(/\./g, '')
+function toSafeVarName(moduleName: string): string {
+  if (SPECIAL_MODULES[moduleName]) {
+    return SPECIAL_MODULES[moduleName]
+  }
+  // Replace special characters with underscores
+  return moduleName.replace(/\W/g, '_')
 }
 
 /**
- * Generate the exported package name based on the module name
- * @param moduleName The module name (filename without extension)
- * @returns The actual exported package variable name
+ * Normalize a module name by converting to lowercase
+ * This helps with files that have capital letters in their names
+ * @param moduleName The module filename without extension
+ * @returns A normalized module name
  */
-function getPackageExportName(moduleName: string): string {
-  // Remove dots and hyphens to create a valid JavaScript identifier
-  return `${moduleName.replace(/[.-]/g, '')}Package`
-}
-
-interface ImportInfo {
-  modulePath: string
-  varName: string
-  originalModule: string
+function normalizeModuleName(moduleName: string): string {
+  return moduleName.toLowerCase()
 }
 
 /**
- * Get all imports from package directory
+ * Convert a filename to the expected type name in the file
+ * @param moduleName The module filename without extension
+ * @returns The expected type name
  */
-async function getImports(): Promise<ImportInfo[]> {
-  const allFiles = fs.readdirSync(PACKAGES_DIR)
-
-  const imports: ImportInfo[] = []
-
-  for (const file of allFiles) {
-    // Skip index.ts and non-typescript files
-    if (file === 'index.ts' || !file.endsWith('.ts'))
-      continue
-
-    const moduleName = path.basename(file, '.ts')
-    const modulePath = `./${moduleName}`
-    const varName = safeVarName(moduleName)
-
-    imports.push({
-      modulePath,
-      varName,
-      originalModule: moduleName,
-    })
+function toTypeName(moduleName: string): string {
+  // If it's a special module, use the special name with first letter capitalized
+  if (SPECIAL_MODULES[moduleName]) {
+    const special = SPECIAL_MODULES[moduleName]
+    return `${special.charAt(0).toUpperCase()}${special.slice(1)}Package`
   }
 
-  // Sort imports alphabetically by module path
-  imports.sort((a, b) => a.modulePath.localeCompare(b.modulePath))
+  // Normalize the module name to lowercase to handle case sensitivity
+  const normalized = normalizeModuleName(moduleName)
 
-  return imports
+  // The pattern in the actual files is that a filename like "foo.bar" becomes FoobarPackage
+  // rather than FooBarPackage, so we need to replace dots and other special characters
+
+  // Remove special characters
+  const safe = normalized.replace(/\W/g, '')
+
+  // Then capitalize the first letter
+  return `${safe.charAt(0).toUpperCase()}${safe.slice(1)}Package`
 }
 
 /**
- * Update a single package file with explicit type definition
- * @param moduleName The name of the module (file name without extension)
- * @returns Promise resolving to a boolean indicating success
+ * Convert a filename to the expected package variable name in the file
+ * @param moduleName The module filename without extension
+ * @returns The expected package variable name
  */
-export async function updateSinglePackageInterface(moduleName: string): Promise<boolean> {
+function toPackageVarName(moduleName: string): string {
+  // Special handling for special modules
+  if (SPECIAL_MODULES[moduleName]) {
+    return `${SPECIAL_MODULES[moduleName]}Package`
+  }
+
+  // Normalize the module name to lowercase to handle case sensitivity
+  const normalized = normalizeModuleName(moduleName)
+
+  // For package variable names, follow the same pattern as type names
+  // but without capitalizing the first letter
+  const safe = normalized.replace(/\W/g, '')
+  return `${safe}Package`
+}
+
+/**
+ * Generate the index.ts file for the packages directory
+ * @returns The path to the generated index file
+ */
+export async function generateIndex(): Promise<string | null> {
   try {
-    // Ensure the file exists
-    const filePath = path.join(PACKAGES_DIR, `${moduleName}.ts`)
-    if (!fs.existsSync(filePath)) {
-      console.error(`File not found: ${filePath}`)
-      return false
+    // Get all TS files in the packages directory
+    const files = await fs.promises.readdir(PACKAGES_DIR)
+    const packageFiles = files.filter(file =>
+      file.endsWith('.ts')
+      && !EXCLUDED_FILES.includes(file),
+    )
+
+    // Sort the package files alphabetically
+    packageFiles.sort()
+
+    // Create the imports section
+    let imports = ''
+
+    // Create the interface declaration
+    let interfaceDecl = 'export interface Pantry {\n'
+
+    // Create the pantry object
+    let pantry = 'export const pantry = {\n'
+
+    // Process each package file
+    for (const file of packageFiles) {
+      const moduleName = path.basename(file, '.ts')
+      const moduleVarName = toSafeVarName(moduleName)
+      const packageVarName = toPackageVarName(moduleName)
+      const typeName = toTypeName(moduleName)
+
+      // Domain is used as the key in the types and pantry objects
+      const domain = guessOriginalDomain(moduleName)
+      const domainVarName = convertDomainToVarName(domain)
+
+      // Add the import
+      imports += `import * as ${moduleVarName} from './${moduleName}'\n`
+
+      // Add the interface property
+      interfaceDecl += `  ${domainVarName}: ${moduleVarName}.${typeName}\n`
+
+      // Add to pantry
+      pantry += `  ${domainVarName}: ${moduleVarName}.${packageVarName},\n`
     }
 
-    // First, try to find a corresponding JSON file with the original domain name
-    const originalDomain = guessOriginalDomain(moduleName)
-    const jsonFilePath = path.join(PACKAGES_DIR, `${originalDomain}.json`)
-    let packageObj: Record<string, any> = {}
-    let usingJsonSource = false
+    // Close the interface and pantry
+    interfaceDecl += '}\n\n'
+    pantry += '}\n\n'
 
-    if (fs.existsSync(jsonFilePath)) {
-      // If we have a JSON file, use that as the source of truth
-      try {
-        console.log(`Found JSON file for ${moduleName}: ${jsonFilePath}`)
-        const jsonContent = fs.readFileSync(jsonFilePath, 'utf-8')
-        packageObj = JSON.parse(jsonContent)
-        usingJsonSource = true
-        console.log(`Using JSON file as source for ${moduleName}`)
-      }
-      catch {
-        console.warn(`Failed to parse JSON file for ${moduleName}, falling back to TS extraction`)
-      }
-    }
-    else {
-      console.log(`No JSON file found for ${moduleName} at ${jsonFilePath}`)
-    }
+    // Add the Packages type alias and packages const
+    const packagesType = 'export type Packages = Pantry\n\n'
+    const packagesConst = 'export const packages: Packages = pantry\n'
 
-    // If we couldn't get data from JSON, extract from the TS file
-    if (!usingJsonSource) {
-      const fileContent = fs.readFileSync(filePath, 'utf-8')
-      const _packageVarName = getPackageExportName(moduleName)
+    // Combine all sections
+    const content = `${imports}\n${interfaceDecl}${packagesType}${pantry}${packagesConst}`
 
-      // Extract the package object directly from the file content
-      const packageObjMatch = fileContent.match(/export const \w+ = (\{[\s\S]+?\})\n\n/)
-      if (!packageObjMatch || !packageObjMatch[1]) {
-        console.error(`Could not extract package object from ${moduleName}.ts`)
-        return false
-      }
-
-      // Extract string properties directly from the file content
-      const stringProps = ['name', 'domain', 'description', 'packageYmlUrl', 'homepageUrl', 'githubUrl', 'installCommand']
-      for (const prop of stringProps) {
-        const regex = new RegExp(`"${prop}":\\s*"([^"]*)"`, 's')
-        const match = fileContent.match(regex)
-        if (match) {
-          packageObj[prop] = match[1]
-        }
-      }
-
-      // Extract array properties using a more robust approach
-      // For programs array
-      const programsMatch = fileContent.match(/programs:\s*\[([\s\S]*?)\]/)
-      if (programsMatch && programsMatch[1]) {
-        const programs = programsMatch[1].match(/"([^"]*)"/g)
-        packageObj.programs = programs ? programs.map(p => p.replace(/"/g, '')) : []
-      }
-      else {
-        packageObj.programs = []
-      }
-
-      // For companions array
-      const companionsMatch = fileContent.match(/companions:\s*\[([\s\S]*?)\]/)
-      if (companionsMatch && companionsMatch[1]) {
-        const companions = companionsMatch[1].match(/"([^"]*)"/g)
-        packageObj.companions = companions ? companions.map(c => c.replace(/"/g, '')) : []
-      }
-      else {
-        packageObj.companions = []
-      }
-
-      // For dependencies array
-      const dependenciesMatch = fileContent.match(/dependencies:\s*\[([\s\S]*?)\]/)
-      if (dependenciesMatch && dependenciesMatch[1]) {
-        const dependencies = dependenciesMatch[1].match(/"([^"]*)"/g)
-        packageObj.dependencies = dependencies ? dependencies.map(d => d.replace(/"/g, '')) : []
-      }
-      else {
-        packageObj.dependencies = []
-      }
-
-      // For versions array
-      const versionsMatch = fileContent.match(/versions:\s*\[([\s\S]*?)\]/)
-      if (versionsMatch && versionsMatch[1]) {
-        const versions = versionsMatch[1].match(/"([^"]*)"/g)
-        packageObj.versions = versions ? versions.map(v => v.replace(/"/g, '')) : []
-      }
-      else {
-        packageObj.versions = []
-      }
-
-      // Extract fullPath and aliases
-      const fullPathMatch = fileContent.match(/fullPath:\s*"([^"]+)"/)
-      if (fullPathMatch) {
-        packageObj.fullPath = fullPathMatch[1]
-      }
-
-      const aliasesMatch = fileContent.match(/aliases:\s*(\[[^\]]*\]|undefined)/)
-      if (aliasesMatch) {
-        if (aliasesMatch[1] === 'undefined') {
-          packageObj.aliases = undefined
-        }
-        else {
-          const aliases = aliasesMatch[1].match(/"([^"]*)"/g)
-          packageObj.aliases = aliases ? aliases.map(a => a.replace(/"/g, '')) : []
-        }
-      }
-    }
-
-    // Fallback defaults if extraction failed
-    if (!packageObj.name)
-      packageObj.name = guessOriginalDomain(moduleName)
-    if (!packageObj.domain)
-      packageObj.domain = guessOriginalDomain(moduleName)
-    if (!packageObj.description)
-      packageObj.description = `Package information for ${guessOriginalDomain(moduleName)}`
-    if (!packageObj.packageYmlUrl)
-      packageObj.packageYmlUrl = `https://github.com/pkgxdev/pantry/tree/main/projects/${packageObj.domain}/package.yml`
-    if (!packageObj.homepageUrl)
-      packageObj.homepageUrl = ''
-    if (!packageObj.githubUrl)
-      packageObj.githubUrl = 'https://github.com/pkgxdev/pantry/'
-    if (!packageObj.installCommand)
-      packageObj.installCommand = `sh <(curl https://pkgx.sh) +${packageObj.domain} -- $SHELL -i`
-
-    const packageVarName = getPackageExportName(moduleName)
-
-    // Format the object with 'as const' assertions
-    const formattedObj = formatObjectWithAsConst(packageObj)
-
-    // Generate the type name with proper casing
-    const typeName = packageVarName.charAt(0).toUpperCase() + packageVarName.slice(1).replace(/Package$/, 'Package')
-
-    // Create a completely new file with the correct format
-    const newFileContent = `/**
- * ${packageVarName} information from pkgx.dev
- * Generated from pkgx.dev data
- */
-export const ${packageVarName} = ${formattedObj}
-
-export type ${typeName} = typeof ${packageVarName}
-`
-
-    // Write the new content to the file
-    fs.writeFileSync(filePath, newFileContent)
-    console.log(`Updated ${moduleName}.ts with explicit type definition`)
-
-    return true
-  }
-  catch (error) {
-    console.error(`Error updating interface for ${moduleName}.ts:`, error)
-    return false
-  }
-}
-
-/**
- * Format an object with 'as const' assertions for TypeScript
- * @param obj The object to format
- * @returns A string representation of the object with 'as const' assertions
- */
-function formatObjectWithAsConst(obj: Record<string, any>): string {
-  const lines: string[] = []
-
-  lines.push('{')
-
-  // Add each property with appropriate formatting
-  for (const [key, value] of Object.entries(obj)) {
-    if (value === undefined) {
-      lines.push(`  ${key}: undefined,`)
-      continue
-    }
-
-    if (Array.isArray(value)) {
-      if (value.length === 0) {
-        // Empty array
-        lines.push(`  ${key}: [] as const,`)
-      }
-      else if (typeof value[0] === 'string') {
-        // Format string array with line breaks for readability
-        lines.push(`  ${key}: [`)
-        for (const item of value) {
-          lines.push(`    ${JSON.stringify(item)},`)
-        }
-        lines.push(`  ] as const,`)
-      }
-      else {
-        // Other array types
-        lines.push(`  ${key}: ${JSON.stringify(value)} as const,`)
-      }
-    }
-    else if (typeof value === 'string') {
-      // String with 'as const'
-      lines.push(`  ${key}: ${JSON.stringify(value)} as const,`)
-    }
-    else if (typeof value === 'number' || typeof value === 'boolean') {
-      // Numbers and booleans with 'as const'
-      lines.push(`  ${key}: ${value} as const,`)
-    }
-    else if (value === null) {
-      // Null values
-      lines.push(`  ${key}: null,`)
-    }
-    else if (typeof value === 'object') {
-      // Nested objects
-      lines.push(`  ${key}: ${formatObjectWithAsConst(value)},`)
-    }
-    else {
-      // Fallback for other types
-      lines.push(`  ${key}: ${JSON.stringify(value)},`)
-    }
-  }
-
-  lines.push('}')
-
-  return lines.join('\n')
-}
-
-async function generateIndexContent(): Promise<string> {
-  const imports = await getImports()
-
-  let content = ''
-
-  // Add import for PkgxPackage type from types.ts - needed only in the index file
-  content += 'import type { PkgxPackage } from \'../types\'\n\n'
-
-  // Generate imports
-  for (const imp of imports) {
-    // Use safeVarName for import identifier to avoid dots and other invalid characters
-    const safeImportName = safeVarName(imp.originalModule)
-    content += `import * as ${safeImportName} from '${imp.modulePath}'\n`
-  }
-
-  content += '\n'
-
-  // Export all imports
-  for (const imp of imports) {
-    content += `export * from '${imp.modulePath}'\n`
-  }
-
-  content += '\n'
-
-  // Generate Pantry interface
-  content += '// Define Pantry type\n'
-  content += 'export interface Pantry {\n'
-
-  // Add properties to the interface with specific type names
-  for (const imp of imports) {
-    const domain = guessOriginalDomain(imp.originalModule)
-    const propName = convertDomainToVarName(domain)
-    const safeImportName = safeVarName(imp.originalModule)
-    const packageTypeName = getPackageExportName(imp.originalModule)
-      .charAt(0)
-      .toUpperCase() + getPackageExportName(imp.originalModule).slice(1)
-
-    // Use specific type like: acornio: acornio.AcornioPackage
-    content += `  ${propName}: ${safeImportName}.${packageTypeName}\n`
-  }
-
-  content += '}\n\n'
-
-  // Generate pantry object with type annotation
-  content += '// Export pantry object with package mappings\n'
-  content += 'export const pantry: Pantry = {\n'
-
-  // Sort the pantry entries alphabetically by domain
-  for (const imp of imports) {
-    const domain = guessOriginalDomain(imp.originalModule)
-    const propName = convertDomainToVarName(domain)
-    const packageVarName = getPackageExportName(imp.originalModule)
-    const safeImportName = safeVarName(imp.originalModule)
-
-    // Use the format propName: moduleName.packageVarName
-    content += `  ${propName}: ${safeImportName}.${packageVarName},\n`
-  }
-
-  content += '}\n'
-
-  return content
-}
-
-export async function generateIndex(_packageFilter?: string[]): Promise<string> {
-  try {
-    // Generate the index.ts file without modifying package files
-    const content = await generateIndexContent()
-    fs.writeFileSync(INDEX_FILE, content)
-
+    // Write to the index file
+    await fs.promises.writeFile(INDEX_FILE, content)
     console.log(`Successfully generated ${INDEX_FILE}`)
+
     return INDEX_FILE
   }
   catch (error) {
     console.error('Error generating index file:', error)
-    return '' // Return empty string on error but don't exit process
+    return null
   }
+}
+
+// If script is run directly, generate the index
+if (require.main === module) {
+  generateIndex()
+    .then((result) => {
+      if (!result) {
+        process.exit(1)
+      }
+    })
+    .catch((error) => {
+      console.error('Unhandled error:', error)
+      process.exit(1)
+    })
 }
 
 /**

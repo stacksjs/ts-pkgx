@@ -1,3461 +1,2596 @@
-import * as abseilio from './abseil.io'
-import * as acornio from './acorn.io'
-import * as agptco from './agpt.co'
-import * as agwaname_git_crypt from './agwa.name-git-crypt'
-import * as akuityio from './akuity.io'
-import * as alacrittyorg from './alacritty.org'
-import * as alembicsqlalchemyorg from './alembic.sqlalchemy.org'
-import * as aliases from './aliases'
-import * as alsa_projectorg from './alsa-project.org'
-import * as amber_langcom from './amber-lang.com'
-import * as amprs from './amp.rs'
-import * as amrdevelopergithubio from './amrdeveloper.github.io'
-import * as anchorecom from './anchore.com'
-import * as androidcom from './android.com'
-import * as angulardev from './angular.dev'
-import * as ansiblecom from './ansible.com'
-import * as aomediagooglesourcecom from './aomedia.googlesource.com'
-import * as apacheorg from './apache.org'
-import * as apktoolorg from './apktool.org'
-import * as apollographqlcom from './apollographql.com'
-import * as appiumio from './appium.io'
-import * as applecom from './apple.com'
-import * as applecom_remote_cmds from './apple.com-remote_cmds'
-import * as apptainerorg from './apptainer.org'
-import * as aquasecuritygithubio from './aquasecurity.github.io'
-import * as arduinogithubio from './arduino.github.io'
-import * as argbashdev from './argbash.dev'
-import * as argoprojgithubio from './argoproj.github.io'
-import * as aria2githubio from './aria2.github.io'
-import * as arkadedev from './arkade.dev'
-import * as asciidoctororg from './asciidoctor.org'
-import * as asciinemaorg from './asciinema.org'
-import * as aspellnet from './aspell.net'
-import * as assimporg from './assimp.org'
-import * as ast_grepgithubio from './ast-grep.github.io'
-import * as astralsh from './astral.sh'
-import * as astralsh_ruff from './astral.sh-ruff'
-import * as astralsh_ty from './astral.sh-ty'
-import * as astralsh_uv from './astral.sh-uv'
-import * as atlasgoio from './atlasgo.io'
-import * as attrsorg from './attrs.org'
-import * as augeasnet from './augeas.net'
-import * as authzedcom from './authzed.com'
-import * as aux4io from './aux4.io'
-import * as awsamazoncom from './aws.amazon.com'
-import * as awsamazoncom_cli from './aws.amazon.com-cli'
-import * as awsamazoncom_sam from './aws.amazon.com-sam'
-import * as bashlydannybco from './bashly.dannyb.co'
-import * as bcryptsourceforgenet from './bcrypt.sourceforge.net'
-import * as beyondgrepcom from './beyondgrep.com'
-import * as biomejsdev from './biomejs.dev'
-import * as bitcoinorg from './bitcoin.org'
-import * as bittensorcom from './bittensor.com'
-import * as bitwardencom from './bitwarden.com'
-import * as blake2net from './blake2.net'
-import * as bloomreachcom from './bloomreach.com'
-import * as boostorg from './boost.org'
-import * as borepub from './bore.pub'
-import * as breakfastquaycom from './breakfastquay.com'
-import * as browser_usecom from './browser-use.com'
-import * as brxken128githubio from './brxken128.github.io'
-import * as budimanjojogithubio from './budimanjojo.github.io'
-import * as bufbuild from './buf.build'
-import * as buildpacksio from './buildpacks.io'
-import * as bunsh from './bun.sh'
-import * as bytebasecom from './bytebase.com'
-import * as bytereeforg from './bytereef.org'
-import * as c_aresorg from './c-ares.org'
-import * as caddyservercom from './caddyserver.com'
-import * as cairographicsorg from './cairographics.org'
-import * as capstone_engineorg from './capstone-engine.org'
-import * as carapacesh from './carapace.sh'
-import * as caskreadthedocsio from './cask.readthedocs.io'
-import * as catborg from './catb.org'
-import * as ccachedev from './ccache.dev'
-import * as cedarpolicycom from './cedarpolicy.com'
-import * as cedarpolicycom_cli from './cedarpolicy.com-cli'
-import * as cephcom from './ceph.com'
-import * as cephcom_cephadm from './ceph.com-cephadm'
-import * as ceres_solverorg from './ceres-solver.org'
-import * as certbotefforg from './certbot.eff.org'
-import * as certifiio from './certifi.io'
-import * as cgalorg from './cgal.org'
-import * as changiedev from './changie.dev'
-import * as charmsh from './charm.sh'
-import * as checkovio from './checkov.io'
-import * as chezmoiio from './chezmoi.io'
-import * as chiarkgreenendorguk from './chiark.greenend.org.uk'
-import * as chromedriverchromiumorg from './chromedriver.chromium.org'
-import * as ciliumio from './cilium.io'
-import * as circlecicom from './circleci.com'
-import * as ciscocom from './cisco.com'
-import * as classicyarnpkgcom from './classic.yarnpkg.com'
-import * as cligithubcom from './cli.github.com'
-import * as clisporg from './clisp.org'
-import * as clog_toolgithubio from './clog-tool.github.io'
-import * as cloudflarecom from './cloudflare.com'
-import * as cloudfoundryorg from './cloudfoundry.org'
-import * as cloudnative_pgio from './cloudnative-pg.io'
-import * as cmakeorg from './cmake.org'
-import * as cmockaorg from './cmocka.org'
-import * as cnqueryio from './cnquery.io'
-import * as cocoapodsorg from './cocoapods.org'
-import * as cocoapodsorg_xcodeproj from './cocoapods.org-xcodeproj'
-import * as cocogittoio from './cocogitto.io'
-import * as codevideolanorg from './code.videolan.org'
-import * as codercom from './coder.com'
-import * as cointopsh from './cointop.sh'
-import * as condaorg from './conda.org'
-import * as conftestdev from './conftest.dev'
-import * as connectrpcorg from './connectrpc.org'
-import * as consulio from './consul.io'
-import * as convcogithubio from './convco.github.io'
-import * as corednsio from './coredns.io'
-import * as cpanminus from './cpanmin.us'
-import * as crypto from './cr.yp.to'
-import * as cratesio from './crates.io'
-import * as cratesio_aichat from './crates.io-aichat'
-import * as cratesio_bake_rs from './crates.io-bake-rs'
-import * as cratesio_cargo_tarpaulin from './crates.io-cargo-tarpaulin'
-import * as cratesio_ducker from './crates.io-ducker'
-import * as cratesio_flamegraph from './crates.io-flamegraph'
-import * as cratesio_ox from './crates.io-ox'
-import * as cratesio_pik from './crates.io-pik'
-import * as cratesio_qsv from './crates.io-qsv'
-import * as cratesio_ripgrep_all from './crates.io-ripgrep-all'
-import * as cratesio_rucola_notes from './crates.io-rucola-notes'
-import * as cratesio_samply from './crates.io-samply'
-import * as crazymaxdev from './crazymax.dev'
-import * as creativeprojectsgithubio from './creativeprojects.github.io'
-import * as cruftgithubio from './cruft.github.io'
-import * as cryptographyio from './cryptography.io'
-import * as crystal_langorg from './crystal-lang.org'
-import * as cscopesourceforgeio from './cscope.sourceforge.io'
-import * as csientuedutw from './csie.ntu.edu.tw'
-import * as ctagsio from './ctags.io'
-import * as ctopsh from './ctop.sh'
-import * as cuelangorg from './cuelang.org'
-import * as curlse from './curl.se'
-import * as curlieio from './curlie.io'
-import * as cyrusimaporg from './cyrusimap.org'
-import * as cythonorg from './cython.org'
-import * as d2langcom from './d2lang.com'
-import * as daggerio from './dagger.io'
-import * as dartdev from './dart.dev'
-import * as darwinsyscom from './darwinsys.com'
-import * as databrickscom from './databricks.com'
-import * as daytonaio from './daytona.io'
-import * as dblabdanvergaracom from './dblab.danvergara.com'
-import * as debianorg from './debian.org'
-import * as deepwisdomai from './deepwisdom.ai'
-import * as denilsonsanombr from './denilson.sa.nom.br'
-import * as denoland from './deno.land'
-import * as depotdev from './depot.dev'
-import * as dest_unreachorg from './dest-unreach.org'
-import * as devyorhelnl from './dev.yorhel.nl'
-import * as developer1passwordcom from './developer.1password.com'
-import * as developer1passwordcom_1password_cli from './developer.1password.com-1password-cli'
-import * as developersyubicocom from './developers.yubico.com'
-import * as devpodsh from './devpod.sh'
-import * as dgraphio from './dgraph.io'
-import * as dhall_langorg from './dhall-lang.org'
-import * as dhruvkbdev from './dhruvkb.dev'
-import * as diggerdev from './digger.dev'
-import * as digiporg from './digip.org'
-import * as digitaloceancom from './digitalocean.com'
-import * as direnvnet from './direnv.net'
-import * as dkrzde from './dkrz.de'
-import * as dnslookupdog from './dns.lookup.dog'
-import * as docbookorg from './docbook.org'
-import * as dockercom from './docker.com'
-import * as doctavecom from './doctave.com'
-import * as docutilsorg from './docutils.org'
-import * as dotenv_lintergithubio from './dotenv-linter.github.io'
-import * as dotenvxcom from './dotenvx.com'
-import * as dotnetmicrosoftcom from './dotnet.microsoft.com'
-import * as doxygennl from './doxygen.nl'
-import * as dozzledev from './dozzle.dev'
-import * as dprintdev from './dprint.dev'
-import * as drifreedesktoporg from './dri.freedesktop.org'
-import * as duckdborg from './duckdb.org'
-import * as duktapeorg from './duktape.org'
-import * as dystroyorg from './dystroy.org'
-import * as dystroyorg_bacon from './dystroy.org-bacon'
-import * as earthlydev from './earthly.dev'
-import * as ebassigithubio from './ebassi.github.io'
-import * as edgedbcom from './edgedb.com'
-import * as eigentuxfamilyorg from './eigen.tuxfamily.org'
-import * as eksctlio from './eksctl.io'
-import * as elementsprojectorg from './elementsproject.org'
-import * as elfutilsorg from './elfutils.org'
-import * as elixir_langorg from './elixir-lang.org'
-import * as elizaOSgithubio from './elizaOS.github.io'
-import * as elvsh from './elv.sh'
-import * as encoredev from './encore.dev'
-import * as endoflifedate from './endoflife.date'
-import * as epsilon_projectsourceforgeio from './epsilon-project.sourceforge.io'
-import * as erlangorg from './erlang.org'
-import * as etcdio from './etcd.io'
-import * as exiftoolorg from './exiftool.org'
-import * as expodev from './expo.dev'
-import * as eyrieorg from './eyrie.org'
-import * as f1bonacc1githubio from './f1bonacc1.github.io'
-import * as fabianlindforsse from './fabianlindfors.se'
-import * as facebookcom from './facebook.com'
-import * as fairwindscom from './fairwinds.com'
-import * as fastlanetools from './fastlane.tools'
-import * as felixkratzgithubio from './felixkratz.github.io'
-import * as fermyoncom from './fermyon.com'
-import * as ffmpegorg from './ffmpeg.org'
-import * as fftworg from './fftw.org'
-import * as filippoio from './filippo.io'
-import * as fishshellcom from './fishshell.com'
-import * as fliptio from './flipt.io'
-import * as flitpypaio from './flit.pypa.io'
-import * as fltkorg from './fltk.org'
-import * as fluentciio from './fluentci.io'
-import * as flutterdev from './flutter.dev'
-import * as fluxcdio from './fluxcd.io'
-import * as flyio from './fly.io'
-import * as flywaydborg from './flywaydb.org'
-import * as fmtdev from './fmt.dev'
-import * as fna_xnagithubio from './fna-xna.github.io'
-import * as freedesktoporg from './freedesktop.org'
-import * as freeglutsourceforgeio from './freeglut.sourceforge.io'
-import * as freetdsorg from './freetds.org'
-import * as freetypeorg from './freetype.org'
-import * as frei0rdyneorg from './frei0r.dyne.org'
-import * as fuellabsgithubio from './fuellabs.github.io'
-import * as fukuchiorg from './fukuchi.org'
-import * as fullstorycom from './fullstory.com'
-import * as furyco from './fury.co'
-import * as fxwtf from './fx.wtf'
-import * as gaia_gisit from './gaia-gis.it'
-import * as gdalorg from './gdal.org'
-import * as geoffgreerfm from './geoff.greer.fm'
-import * as getclipboardapp from './getclipboard.app'
-import * as getcomposerorg from './getcomposer.org'
-import * as getfoundrysh from './getfoundry.sh'
-import * as getsopsio from './getsops.io'
-import * as getsynthcom from './getsynth.com'
-import * as getzolaorg from './getzola.org'
-import * as geuzorg from './geuz.org'
-import * as gflagsgithubio from './gflags.github.io'
-import * as ghostgumcomau from './ghostgum.com.au'
-import * as ghostscriptcom from './ghostscript.com'
-import * as giflibsourceforgeio from './giflib.sourceforge.io'
-import * as git_clifforg from './git-cliff.org'
-import * as git_lfscom from './git-lfs.com'
-import * as git_quick_statssh from './git-quick-stats.sh'
-import * as git_scmorg from './git-scm.org'
-import * as git_towncom from './git-town.com'
-import * as gitosgeoorg from './git.osgeo.org'
-import * as gittoztnet from './git.tozt.net'
-import * as githubcom from './github.com'
-import * as githubcom_0age_create2crunch from './github.com-0age-create2crunch'
-import * as githubcom_blacktop_lporg from './github.com-blacktop-lporg'
-import * as githubcom_blynn_nex from './github.com-blynn-nex'
-import * as githubcom_Cyfrin_safe_tx_hashes_util from './github.com-Cyfrin-safe-tx-hashes-util'
-import * as githubcom_Diniboy1123_usque from './github.com-Diniboy1123-usque'
-import * as githubcom_fastfetch_cli_fastfetch from './github.com-fastfetch-cli-fastfetch'
-import * as githubcom_fiatjaf_nak from './github.com-fiatjaf-nak'
-import * as githubcom_git_ecosystem_git_credential_manager from './github.com-git-ecosystem-git-credential-manager'
-import * as githubcom_glauth_glauth from './github.com-glauth-glauth'
-import * as githubcom_igorshubovych_markdownlint_cli from './github.com-igorshubovych-markdownlint-cli'
-import * as githubcom_jarun_nnn from './github.com-jarun-nnn'
-import * as githubcom_koekeishiya_skhd from './github.com-koekeishiya-skhd'
-import * as githubcom_lucianosrp_rye_uv from './github.com-lucianosrp-rye-uv'
-import * as githubcom_mas_cli_mas from './github.com-mas-cli-mas'
-import * as githubcom_MilesCranmer_rip2 from './github.com-MilesCranmer-rip2'
-import * as githubcom_MinseokOh_toml_cli from './github.com-MinseokOh-toml-cli'
-import * as githubcom_mycreepy_pakku from './github.com-mycreepy-pakku'
-import * as githubcom_Parchive_par2cmdline from './github.com-Parchive-par2cmdline'
-import * as githubcom_peak_s5cmd from './github.com-peak-s5cmd'
-import * as githubcom_peripheryapp_periphery from './github.com-peripheryapp-periphery'
-import * as githubcom_shaka_project_shaka_packager from './github.com-shaka-project-shaka-packager'
-import * as githubcom_sorah_envchain from './github.com-sorah-envchain'
-import * as githubcom_spencerkimball_stargazers from './github.com-spencerkimball-stargazers'
-import * as githubcom_withered_magic_starpls from './github.com-withered-magic-starpls'
-import * as gitlabcom from './gitlab.com'
-import * as gitleaksio from './gitleaks.io'
-import * as glarosdtcumnedu from './glaros.dtc.umn.edu'
-import * as gleamrun from './gleam.run'
-import * as glewsourceforgeio from './glew.sourceforge.io'
-import * as glfworg from './glfw.org'
-import * as glmg_trucnet from './glm.g-truc.net'
-import * as gnomeorg from './gnome.org'
-import * as gnuorg from './gnu.org'
-import * as gnupgorg from './gnupg.org'
-import * as gnuplotinfo from './gnuplot.info'
-import * as gnutlsorg from './gnutls.org'
-import * as godev from './go.dev'
-import * as gouberorg from './go.uber.org'
-import * as gohugoio from './gohugo.io'
-import * as golangci_lintrun from './golangci-lint.run'
-import * as gomplateca from './gomplate.ca'
-import * as googlecom from './google.com'
-import * as googlegithubio from './google.github.io'
-import * as goreleasercom from './goreleaser.com'
-import * as gourceio from './gource.io'
-import * as gphotoorg from './gphoto.org'
-import * as gqlgencom from './gqlgen.com'
-import * as gradleorg from './gradle.org'
-import * as grafanacom from './grafana.com'
-import * as granteddev from './granted.dev'
-import * as graphicsmagickorg from './graphicsmagick.org'
-import * as graphitesilorg from './graphite.sil.org'
-import * as graphqleditorcom from './graphqleditor.com'
-import * as graphvizorg from './graphviz.org'
-import * as groongaorg from './groonga.org'
-import * as groovy_langorg from './groovy-lang.org'
-import * as grpcio from './grpc.io'
-import * as gstreamerfreedesktoporg from './gstreamer.freedesktop.org'
-import * as gtkorg from './gtk.org'
-import * as gtssourceforgenet from './gts.sourceforge.net'
-import * as hadronsorg from './hadrons.org'
-import * as hardingmotdca from './harding.motd.ca'
-import * as harfbuzzorg from './harfbuzz.org'
-import * as hashicorpcom from './hashicorp.com'
-import * as haskellorg from './haskell.org'
-import * as hasuraio from './hasura.io'
-import * as hatchpypaio from './hatch.pypa.io'
-import * as hboehminfo from './hboehm.info'
-import * as hdfgrouporg from './hdfgroup.org'
-import * as heasarcgsfcnasagov from './heasarc.gsfc.nasa.gov'
-import * as helix_editorcom from './helix-editor.com'
-import * as helmsh from './helm.sh'
-import * as herokucom from './heroku.com'
-import * as hetznercom from './hetzner.com'
-import * as hjsongithubio from './hjson.github.io'
-import * as html_tidyorg from './html-tidy.org'
-import * as htopdev from './htop.dev'
-import * as htsliborg from './htslib.org'
-import * as httpieio from './httpie.io'
-import * as huggingfaceco from './huggingface.co'
-import * as hugowang from './hugo.wang'
-import * as hunspellgithubio from './hunspell.github.io'
-import * as hurldev from './hurl.dev'
-import * as ibrcstu_bsde from './ibr.cs.tu-bs.de'
-import * as idleberggithubio from './idleberg.github.io'
-import * as ijgorg from './ijg.org'
-import * as imageflowio from './imageflow.io'
-import * as imagemagickorg from './imagemagick.org'
-import * as indexsupplycom from './indexsupply.com'
-import * as info_ziporg from './info-zip.org'
-import * as infracostio from './infracost.io'
-import * as intelcom from './intel.com'
-import * as invisible_islandnet from './invisible-island.net'
-import * as invisible_islandnet_lynx from './invisible-island.net-lynx'
-import * as ipfstech from './ipfs.tech'
-import * as ipythonorg from './ipython.org'
-import * as irohcomputer from './iroh.computer'
-import * as iscorg from './isc.org'
-import * as iscorg_bind9 from './isc.org-bind9'
-import * as istioio from './istio.io'
-import * as itstoolorg from './itstool.org'
-import * as ivarchcom from './ivarch.com'
-import * as jbangdev from './jbang.dev'
-import * as jbig2deccom from './jbig2dec.com'
-import * as jedisct1githubio from './jedisct1.github.io'
-import * as jedsoftorg from './jedsoft.org'
-import * as jemallocnet from './jemalloc.net'
-import * as jenkins_xio from './jenkins-x.io'
-import * as jenkinsio from './jenkins.io'
-import * as jenvbe from './jenv.be'
-import * as jetporchcom from './jetporch.com'
-import * as jfrogcom from './jfrog.com'
-import * as jlessio from './jless.io'
-import * as jonasgithubio from './jonas.github.io'
-import * as jpegorg from './jpeg.org'
-import * as jsonnetorg from './jsonnet.org'
-import * as jugitfz_juelichde from './jugit.fz-juelich.de'
-import * as jujuis from './juju.is'
-import * as julialangorg from './julialang.org'
-import * as jumppaddev from './jumppad.dev'
-import * as jupyterorg from './jupyter.org'
-import * as justsystems from './just.systems'
-import * as k3dio from './k3d.io'
-import * as k6io from './k6.io'
-import * as k9scliio from './k9scli.io'
-import * as kafkaapacheorg from './kafka.apache.org'
-import * as kagglecom from './kaggle.com'
-import * as keephqdev from './keephq.dev'
-import * as kerberosorg from './kerberos.org'
-import * as kernelorg from './kernel.org'
-import * as kernelorg_libcap from './kernel.org-libcap'
-import * as khanacademyorg from './khanacademy.org'
-import * as khronosorg from './khronos.org'
-import * as kindsigsk8sio from './kind.sigs.k8s.io'
-import * as kislyukgithubio from './kislyuk.github.io'
-import * as kluctlio from './kluctl.io'
-import * as kobuild from './ko.build'
-import * as kornelski from './kornel.ski'
-import * as kotlinlangorg from './kotlinlang.org'
-import * as koyebcom from './koyeb.com'
-import * as kptdev from './kpt.dev'
-import * as krewsigsk8sio from './krew.sigs.k8s.io'
-import * as ktlintgithubio from './ktlint.github.io'
-import * as kubebuilderio from './kubebuilder.io'
-import * as kubecmcloud from './kubecm.cloud'
-import * as kubectxdev from './kubectx.dev'
-import * as kubelinterio from './kubelinter.io'
-import * as kubernetesio from './kubernetes.io'
-import * as kubesharkco from './kubeshark.co'
-import * as ladspaorg from './ladspa.org'
-import * as lamesourceforgeio from './lame.sourceforge.io'
-import * as langchaincom from './langchain.com'
-import * as laravelcom from './laravel.com'
-import * as lavinmqcom from './lavinmq.com'
-import * as lcdforg from './lcdf.org'
-import * as leethomasongithubio from './leethomason.github.io'
-import * as leo_langorg from './leo-lang.org'
-import * as leonerdorguk from './leonerd.org.uk'
-import * as leptonicaorg from './leptonica.org'
-import * as lftpyarru from './lftp.yar.ru'
-import * as libarchiveorg from './libarchive.org'
-import * as libcxxllvmorg from './libcxx.llvm.org'
-import * as libeventorg from './libevent.org'
-import * as libexifgithubio from './libexif.github.io'
-import * as libexpatgithubio from './libexpat.github.io'
-import * as libgdgithubio from './libgd.github.io'
-import * as libgeosorg from './libgeos.org'
-import * as libgit2org from './libgit2.org'
-import * as libimobiledeviceorg from './libimobiledevice.org'
-import * as libislsourceforgeio from './libisl.sourceforge.io'
-import * as libjpeg_turboorg from './libjpeg-turbo.org'
-import * as liblqrwikidotcom from './liblqr.wikidot.com'
-import * as libpipelinegitlabio from './libpipeline.gitlab.io'
-import * as libpngorg from './libpng.org'
-import * as libproxygithubio from './libproxy.github.io'
-import * as libraworg from './libraw.org'
-import * as libsdlorg from './libsdl.org'
-import * as libsodiumorg from './libsodium.org'
-import * as libsouporg from './libsoup.org'
-import * as libspngorg from './libspng.org'
-import * as libssh2org from './libssh2.org'
-import * as libsshorg from './libssh.org'
-import * as libtomnet from './libtom.net'
-import * as liburcuorg from './liburcu.org'
-import * as libusbinfo from './libusb.info'
-import * as libuvorg from './libuv.org'
-import * as libvipsorg from './libvips.org'
-import * as libwebsocketsorg from './libwebsockets.org'
-import * as libziporg from './libzip.org'
-import * as lima_vmio from './lima-vm.io'
-import * as linkerdio from './linkerd.io'
-import * as linux_pamorg from './linux-pam.org'
-import * as liteclicom from './litecli.com'
-import * as littlecmscom from './littlecms.com'
-import * as llmdatasetteio from './llm.datasette.io'
-import * as lloydgithubio from './lloyd.github.io'
-import * as llvmorg from './llvm.org'
-import * as localaiio from './localai.io'
-import * as localstackcloud from './localstack.cloud'
-import * as logdydev from './logdy.dev'
-import * as logologicalorg from './logological.org'
-import * as luaorg from './lua.org'
-import * as luajitorg from './luajit.org'
-import * as luarocksorg from './luarocks.org'
-import * as lucagrullacom from './lucagrulla.com'
-import * as lunarvimorg from './lunarvim.org'
-import * as lxmlde from './lxml.de'
-import * as lycheeclirs from './lychee.cli.rs'
-import * as lz4org from './lz4.org'
-import * as maaslalanicom from './maaslalani.com'
-import * as macvimorg from './macvim.org'
-import * as mailpitaxllentorg from './mailpit.axllent.org'
-import * as makotemplatesorg from './makotemplates.org'
-import * as man_dbgitlabio from './man-db.gitlab.io'
-import * as mandocbsdlv from './mandoc.bsd.lv'
-import * as mariadbcom from './mariadb.com'
-import * as markupsafepalletsprojectscom from './markupsafe.palletsprojects.com'
-import * as materializecom from './materialize.com'
-import * as matiosourceforgeio from './matio.sourceforge.io'
-import * as maturinrs from './maturin.rs'
-import * as mavenapacheorg from './maven.apache.org'
-import * as mcmc_jagssourceforgeio from './mcmc-jags.sourceforge.io'
-import * as mercurerocks from './mercure.rocks'
-import * as mercurial_scmorg from './mercurial-scm.org'
-import * as mergestatcom from './mergestat.com'
-import * as mesa3dorg from './mesa3d.org'
-import * as mesonbuildcom from './mesonbuild.com'
-import * as micro_editorgithubio from './micro-editor.github.io'
-import * as microbreworg from './microbrew.org'
-import * as microcksio from './microcks.io'
-import * as microsoftcom from './microsoft.com'
-import * as microsoftcom_code_cli from './microsoft.com-code-cli'
-import * as microsoftcom_markitdown from './microsoft.com-markitdown'
-import * as midnight_commanderorg from './midnight-commander.org'
-import * as minio from './min.io'
-import * as misejdxdev from './mise.jdx.dev'
-import * as mitmproxyorg from './mitmproxy.org'
-import * as mkcertdev from './mkcert.dev'
-import * as mkdocsorg from './mkdocs.org'
-import * as modalcom from './modal.com'
-import * as moderncorg from './modernc.org'
-import * as moderncorg_goyacc from './modernc.org-goyacc'
-import * as mongodbcom from './mongodb.com'
-import * as moonrepodev from './moonrepo.dev'
-import * as moshorg from './mosh.org'
-import * as mozillaorg from './mozilla.org'
-import * as mozillaorg_cbindgen from './mozilla.org-cbindgen'
-import * as mpg123de from './mpg123.de'
-import * as mpmathorg from './mpmath.org'
-import * as mpvio from './mpv.io'
-import * as msgpackorg from './msgpack.org'
-import * as mujscom from './mujs.com'
-import * as mun_langorg from './mun-lang.org'
-import * as mupdfcom from './mupdf.com'
-import * as musepacknet from './musepack.net'
-import * as musllibcorg from './musl.libc.org'
-import * as mvdancc from './mvdan.cc'
-import * as mvdancc_gofumpt from './mvdan.cc-gofumpt'
-import * as mypy_langorg from './mypy-lang.org'
-import * as mysqlcom from './mysql.com'
-import * as nano_editororg from './nano-editor.org'
-import * as nasmus from './nasm.us'
-import * as neovimio from './neovim.io'
-import * as netflixcom from './netflix.com'
-import * as netliborg from './netlib.org'
-import * as netpbmsourceforgenet from './netpbm.sourceforge.net'
-import * as networkxorg from './networkx.org'
-import * as nghttp2org from './nghttp2.org'
-import * as nginxorg from './nginx.org'
-import * as nikecom from './nike.com'
-import * as nim_langorg from './nim-lang.org'
-import * as ninja_buildorg from './ninja-build.org'
-import * as nixosorg from './nixos.org'
-import * as nixpackscom from './nixpacks.com'
-import * as nlnetlabsnl from './nlnetlabs.nl'
-import * as nmaporg from './nmap.org'
+import * as abseil_io from './abseil.io'
+import * as acorn_io from './acorn.io'
+import * as agpt_co from './agpt.co'
+import * as agwa_name_git_crypt from './agwa.name-git-crypt'
+import * as akuity_io from './akuity.io'
+import * as alacritty_org from './alacritty.org'
+import * as alembic_sqlalchemy_org from './alembic.sqlalchemy.org'
+import * as alsa_project_org from './alsa-project.org'
+import * as amber_lang_com from './amber-lang.com'
+import * as amp_rs from './amp.rs'
+import * as amrdeveloper_github_io from './amrdeveloper.github.io'
+import * as anchore_com from './anchore.com'
+import * as android_com from './android.com'
+import * as angular_dev from './angular.dev'
+import * as ansible_com from './ansible.com'
+import * as aomedia_googlesource_com from './aomedia.googlesource.com'
+import * as apache_org from './apache.org'
+import * as apktool_org from './apktool.org'
+import * as apollographql_com from './apollographql.com'
+import * as appium_io from './appium.io'
+import * as apple_com_remote_cmds from './apple.com-remote_cmds'
+import * as apple_com from './apple.com'
+import * as apptainer_org from './apptainer.org'
+import * as aquasecurity_github_io from './aquasecurity.github.io'
+import * as arduino_github_io from './arduino.github.io'
+import * as argbash_dev from './argbash.dev'
+import * as argoproj_github_io from './argoproj.github.io'
+import * as aria2_github_io from './aria2.github.io'
+import * as arkade_dev from './arkade.dev'
+import * as asciidoctor_org from './asciidoctor.org'
+import * as asciinema_org from './asciinema.org'
+import * as aspell_net from './aspell.net'
+import * as assimp_org from './assimp.org'
+import * as ast_grep_github_io from './ast-grep.github.io'
+import * as astral_sh_ruff from './astral.sh-ruff'
+import * as astral_sh_ty from './astral.sh-ty'
+import * as astral_sh_uv from './astral.sh-uv'
+import * as astral_sh from './astral.sh'
+import * as atlasgo_io from './atlasgo.io'
+import * as attrs_org from './attrs.org'
+import * as augeas_net from './augeas.net'
+import * as authzed_com from './authzed.com'
+import * as aux4_io from './aux4.io'
+import * as aws_amazon_com_cli from './aws.amazon.com-cli'
+import * as aws_amazon_com_sam from './aws.amazon.com-sam'
+import * as aws_amazon_com from './aws.amazon.com'
+import * as bashly_dannyb_co from './bashly.dannyb.co'
+import * as bcrypt_sourceforge_net from './bcrypt.sourceforge.net'
+import * as beyondgrep_com from './beyondgrep.com'
+import * as biomejs_dev from './biomejs.dev'
+import * as bitcoin_org from './bitcoin.org'
+import * as bittensor_com from './bittensor.com'
+import * as bitwarden_com from './bitwarden.com'
+import * as blake2_net from './blake2.net'
+import * as bloomreach_com from './bloomreach.com'
+import * as boost_org from './boost.org'
+import * as bore_pub from './bore.pub'
+import * as breakfastquay_com from './breakfastquay.com'
+import * as browser_use_com from './browser-use.com'
+import * as brxken128_github_io from './brxken128.github.io'
+import * as budimanjojo_github_io from './budimanjojo.github.io'
+import * as buf_build from './buf.build'
+import * as buildpacks_io from './buildpacks.io'
+import * as bun_sh from './bun.sh'
+import * as bytebase_com from './bytebase.com'
+import * as bytereef_org from './bytereef.org'
+import * as c_ares_org from './c-ares.org'
+import * as caddyserver_com from './caddyserver.com'
+import * as cairographics_org from './cairographics.org'
+import * as capstone_engine_org from './capstone-engine.org'
+import * as carapace_sh from './carapace.sh'
+import * as cask_readthedocs_io from './cask.readthedocs.io'
+import * as catb_org from './catb.org'
+import * as ccache_dev from './ccache.dev'
+import * as cedarpolicy_com_cli from './cedarpolicy.com-cli'
+import * as cedarpolicy_com from './cedarpolicy.com'
+import * as ceph_com_cephadm from './ceph.com-cephadm'
+import * as ceph_com from './ceph.com'
+import * as ceres_solver_org from './ceres-solver.org'
+import * as certbot_eff_org from './certbot.eff.org'
+import * as certifi_io from './certifi.io'
+import * as cgal_org from './cgal.org'
+import * as changie_dev from './changie.dev'
+import * as charm_sh from './charm.sh'
+import * as checkov_io from './checkov.io'
+import * as chezmoi_io from './chezmoi.io'
+import * as chiark_greenend_org_uk from './chiark.greenend.org.uk'
+import * as chromedriver_chromium_org from './chromedriver.chromium.org'
+import * as cilium_io from './cilium.io'
+import * as circleci_com from './circleci.com'
+import * as cisco_com from './cisco.com'
+import * as classic_yarnpkg_com from './classic.yarnpkg.com'
+import * as cli_github_com from './cli.github.com'
+import * as clisp_org from './clisp.org'
+import * as clog_tool_github_io from './clog-tool.github.io'
+import * as cloudflare_com from './cloudflare.com'
+import * as cloudfoundry_org from './cloudfoundry.org'
+import * as cloudnative_pg_io from './cloudnative-pg.io'
+import * as cmake_org from './cmake.org'
+import * as cmocka_org from './cmocka.org'
+import * as cnquery_io from './cnquery.io'
+import * as cocoapods_org_xcodeproj from './cocoapods.org-xcodeproj'
+import * as cocoapods_org from './cocoapods.org'
+import * as cocogitto_io from './cocogitto.io'
+import * as code_videolan_org from './code.videolan.org'
+import * as coder_com from './coder.com'
+import * as cointop_sh from './cointop.sh'
+import * as conda_org from './conda.org'
+import * as conftest_dev from './conftest.dev'
+import * as connectrpc_org from './connectrpc.org'
+import * as consul_io from './consul.io'
+import * as convco_github_io from './convco.github.io'
+import * as coredns_io from './coredns.io'
+import * as cpanmin_us from './cpanmin.us'
+import * as cr_yp_to from './cr.yp.to'
+import * as crates_io_aichat from './crates.io-aichat'
+import * as crates_io_bake_rs from './crates.io-bake-rs'
+import * as crates_io_cargo_tarpaulin from './crates.io-cargo-tarpaulin'
+import * as crates_io_ducker from './crates.io-ducker'
+import * as crates_io_flamegraph from './crates.io-flamegraph'
+import * as crates_io_ox from './crates.io-ox'
+import * as crates_io_pik from './crates.io-pik'
+import * as crates_io_qsv from './crates.io-qsv'
+import * as crates_io_ripgrep_all from './crates.io-ripgrep-all'
+import * as crates_io_rucola_notes from './crates.io-rucola-notes'
+import * as crates_io_samply from './crates.io-samply'
+import * as crates_io from './crates.io'
+import * as crazymax_dev from './crazymax.dev'
+import * as creativeprojects_github_io from './creativeprojects.github.io'
+import * as cruft_github_io from './cruft.github.io'
+import * as cryptography_io from './cryptography.io'
+import * as crystal_lang_org from './crystal-lang.org'
+import * as cscope_sourceforge_io from './cscope.sourceforge.io'
+import * as csie_ntu_edu_tw from './csie.ntu.edu.tw'
+import * as ctags_io from './ctags.io'
+import * as ctop_sh from './ctop.sh'
+import * as cuelang_org from './cuelang.org'
+import * as curl_se from './curl.se'
+import * as curlie_io from './curlie.io'
+import * as cyrusimap_org from './cyrusimap.org'
+import * as cython_org from './cython.org'
+import * as d2lang_com from './d2lang.com'
+import * as dagger_io from './dagger.io'
+import * as dart_dev from './dart.dev'
+import * as darwinsys_com from './darwinsys.com'
+import * as databricks_com from './databricks.com'
+import * as daytona_io from './daytona.io'
+import * as dblab_danvergara_com from './dblab.danvergara.com'
+import * as debian_org from './debian.org'
+import * as deepwisdom_ai from './deepwisdom.ai'
+import * as denilson_sa_nom_br from './denilson.sa.nom.br'
+import * as deno_land from './deno.land'
+import * as depot_dev from './depot.dev'
+import * as dest_unreach_org from './dest-unreach.org'
+import * as dev_yorhel_nl from './dev.yorhel.nl'
+import * as developer_1password_com_1password_cli from './developer.1password.com-1password-cli'
+import * as developer_1password_com from './developer.1password.com'
+import * as developers_yubico_com from './developers.yubico.com'
+import * as devpod_sh from './devpod.sh'
+import * as dgraph_io from './dgraph.io'
+import * as dhall_lang_org from './dhall-lang.org'
+import * as dhruvkb_dev from './dhruvkb.dev'
+import * as digger_dev from './digger.dev'
+import * as digip_org from './digip.org'
+import * as digitalocean_com from './digitalocean.com'
+import * as direnv_net from './direnv.net'
+import * as dkrz_de from './dkrz.de'
+import * as dns_lookup_dog from './dns.lookup.dog'
+import * as docbook_org from './docbook.org'
+import * as docker_com from './docker.com'
+import * as doctave_com from './doctave.com'
+import * as docutils_org from './docutils.org'
+import * as dotenv_linter_github_io from './dotenv-linter.github.io'
+import * as dotenvx_com from './dotenvx.com'
+import * as dotnet_microsoft_com from './dotnet.microsoft.com'
+import * as doxygen_nl from './doxygen.nl'
+import * as dozzle_dev from './dozzle.dev'
+import * as dprint_dev from './dprint.dev'
+import * as dri_freedesktop_org from './dri.freedesktop.org'
+import * as duckdb_org from './duckdb.org'
+import * as duktape_org from './duktape.org'
+import * as dystroy_org_bacon from './dystroy.org-bacon'
+import * as dystroy_org from './dystroy.org'
+import * as earthly_dev from './earthly.dev'
+import * as ebassi_github_io from './ebassi.github.io'
+import * as edgedb_com from './edgedb.com'
+import * as eigen_tuxfamily_org from './eigen.tuxfamily.org'
+import * as eksctl_io from './eksctl.io'
+import * as elementsproject_org from './elementsproject.org'
+import * as elfutils_org from './elfutils.org'
+import * as elixir_lang_org from './elixir-lang.org'
+import * as elizaOS_github_io from './elizaOS.github.io'
+import * as elv_sh from './elv.sh'
+import * as encore_dev from './encore.dev'
+import * as endoflife_date from './endoflife.date'
+import * as epsilon_project_sourceforge_io from './epsilon-project.sourceforge.io'
+import * as erlang_org from './erlang.org'
+import * as etcd_io from './etcd.io'
+import * as exiftool_org from './exiftool.org'
+import * as expo_dev from './expo.dev'
+import * as eyrie_org from './eyrie.org'
+import * as f1bonacc1_github_io from './f1bonacc1.github.io'
+import * as fabianlindfors_se from './fabianlindfors.se'
+import * as facebook_com from './facebook.com'
+import * as fairwinds_com from './fairwinds.com'
+import * as fastlane_tools from './fastlane.tools'
+import * as felixkratz_github_io from './felixkratz.github.io'
+import * as fermyon_com from './fermyon.com'
+import * as ffmpeg_org from './ffmpeg.org'
+import * as fftw_org from './fftw.org'
+import * as filippo_io from './filippo.io'
+import * as fishshell_com from './fishshell.com'
+import * as flipt_io from './flipt.io'
+import * as flit_pypa_io from './flit.pypa.io'
+import * as fltk_org from './fltk.org'
+import * as fluentci_io from './fluentci.io'
+import * as flutter_dev from './flutter.dev'
+import * as fluxcd_io from './fluxcd.io'
+import * as fly_io from './fly.io'
+import * as flywaydb_org from './flywaydb.org'
+import * as fmt_dev from './fmt.dev'
+import * as fna_xna_github_io from './fna-xna.github.io'
+import * as freedesktop_org from './freedesktop.org'
+import * as freeglut_sourceforge_io from './freeglut.sourceforge.io'
+import * as freetds_org from './freetds.org'
+import * as freetype_org from './freetype.org'
+import * as frei0r_dyne_org from './frei0r.dyne.org'
+import * as fuellabs_github_io from './fuellabs.github.io'
+import * as fukuchi_org from './fukuchi.org'
+import * as fullstory_com from './fullstory.com'
+import * as fury_co from './fury.co'
+import * as fx_wtf from './fx.wtf'
+import * as gaia_gis_it from './gaia-gis.it'
+import * as gdal_org from './gdal.org'
+import * as geoff_greer_fm from './geoff.greer.fm'
+import * as getclipboard_app from './getclipboard.app'
+import * as getcomposer_org from './getcomposer.org'
+import * as getfoundry_sh from './getfoundry.sh'
+import * as getsops_io from './getsops.io'
+import * as getsynth_com from './getsynth.com'
+import * as getzola_org from './getzola.org'
+import * as geuz_org from './geuz.org'
+import * as gflags_github_io from './gflags.github.io'
+import * as ghostgum_com_au from './ghostgum.com.au'
+import * as ghostscript_com from './ghostscript.com'
+import * as giflib_sourceforge_io from './giflib.sourceforge.io'
+import * as git_cliff_org from './git-cliff.org'
+import * as git_lfs_com from './git-lfs.com'
+import * as git_quick_stats_sh from './git-quick-stats.sh'
+import * as git_scm_org from './git-scm.org'
+import * as git_town_com from './git-town.com'
+import * as git_osgeo_org from './git.osgeo.org'
+import * as git_tozt_net from './git.tozt.net'
+import * as github_com_0age_create2crunch from './github.com-0age-create2crunch'
+import * as github_com_Cyfrin_safe_tx_hashes_util from './github.com-Cyfrin-safe-tx-hashes-util'
+import * as github_com_Diniboy1123_usque from './github.com-Diniboy1123-usque'
+import * as github_com_MilesCranmer_rip2 from './github.com-MilesCranmer-rip2'
+import * as github_com_MinseokOh_toml_cli from './github.com-MinseokOh-toml-cli'
+import * as github_com_Parchive_par2cmdline from './github.com-Parchive-par2cmdline'
+import * as github_com_blacktop_lporg from './github.com-blacktop-lporg'
+import * as github_com_blynn_nex from './github.com-blynn-nex'
+import * as github_com_fastfetch_cli_fastfetch from './github.com-fastfetch-cli-fastfetch'
+import * as github_com_fiatjaf_nak from './github.com-fiatjaf-nak'
+import * as github_com_git_ecosystem_git_credential_manager from './github.com-git-ecosystem-git-credential-manager'
+import * as github_com_glauth_glauth from './github.com-glauth-glauth'
+import * as github_com_igorshubovych_markdownlint_cli from './github.com-igorshubovych-markdownlint-cli'
+import * as github_com_jarun_nnn from './github.com-jarun-nnn'
+import * as github_com_koekeishiya_skhd from './github.com-koekeishiya-skhd'
+import * as github_com_lucianosrp_rye_uv from './github.com-lucianosrp-rye-uv'
+import * as github_com_mas_cli_mas from './github.com-mas-cli-mas'
+import * as github_com_mycreepy_pakku from './github.com-mycreepy-pakku'
+import * as github_com_peak_s5cmd from './github.com-peak-s5cmd'
+import * as github_com_peripheryapp_periphery from './github.com-peripheryapp-periphery'
+import * as github_com_shaka_project_shaka_packager from './github.com-shaka-project-shaka-packager'
+import * as github_com_sorah_envchain from './github.com-sorah-envchain'
+import * as github_com_spencerkimball_stargazers from './github.com-spencerkimball-stargazers'
+import * as github_com_withered_magic_starpls from './github.com-withered-magic-starpls'
+import * as github_com from './github.com'
+import * as gitlab_com from './gitlab.com'
+import * as gitleaks_io from './gitleaks.io'
+import * as glaros_dtc_umn_edu from './glaros.dtc.umn.edu'
+import * as gleam_run from './gleam.run'
+import * as glew_sourceforge_io from './glew.sourceforge.io'
+import * as glfw_org from './glfw.org'
+import * as glm_g_truc_net from './glm.g-truc.net'
+import * as gnome_org from './gnome.org'
+import * as gnu_org from './gnu.org'
+import * as gnupg_org from './gnupg.org'
+import * as gnuplot_info from './gnuplot.info'
+import * as gnutls_org from './gnutls.org'
+import * as go_dev from './go.dev'
+import * as go_uber_org from './go.uber.org'
+import * as gohugo_io from './gohugo.io'
+import * as golangci_lint_run from './golangci-lint.run'
+import * as gomplate_ca from './gomplate.ca'
+import * as google_com from './google.com'
+import * as google_github_io from './google.github.io'
+import * as goreleaser_com from './goreleaser.com'
+import * as gource_io from './gource.io'
+import * as gphoto_org from './gphoto.org'
+import * as gqlgen_com from './gqlgen.com'
+import * as gradle_org from './gradle.org'
+import * as grafana_com from './grafana.com'
+import * as granted_dev from './granted.dev'
+import * as graphicsmagick_org from './graphicsmagick.org'
+import * as graphite_sil_org from './graphite.sil.org'
+import * as graphqleditor_com from './graphqleditor.com'
+import * as graphviz_org from './graphviz.org'
+import * as groonga_org from './groonga.org'
+import * as groovy_lang_org from './groovy-lang.org'
+import * as grpc_io from './grpc.io'
+import * as gstreamer_freedesktop_org from './gstreamer.freedesktop.org'
+import * as gtk_org from './gtk.org'
+import * as gts_sourceforge_net from './gts.sourceforge.net'
+import * as hadrons_org from './hadrons.org'
+import * as harding_motd_ca from './harding.motd.ca'
+import * as harfbuzz_org from './harfbuzz.org'
+import * as hashicorp_com from './hashicorp.com'
+import * as haskell_org from './haskell.org'
+import * as hasura_io from './hasura.io'
+import * as hatch_pypa_io from './hatch.pypa.io'
+import * as hboehm_info from './hboehm.info'
+import * as hdfgroup_org from './hdfgroup.org'
+import * as heasarc_gsfc_nasa_gov from './heasarc.gsfc.nasa.gov'
+import * as helix_editor_com from './helix-editor.com'
+import * as helm_sh from './helm.sh'
+import * as heroku_com from './heroku.com'
+import * as hetzner_com from './hetzner.com'
+import * as hjson_github_io from './hjson.github.io'
+import * as html_tidy_org from './html-tidy.org'
+import * as htop_dev from './htop.dev'
+import * as htslib_org from './htslib.org'
+import * as httpie_io from './httpie.io'
+import * as huggingface_co from './huggingface.co'
+import * as hugo_wang from './hugo.wang'
+import * as hunspell_github_io from './hunspell.github.io'
+import * as hurl_dev from './hurl.dev'
+import * as ibr_cs_tu_bs_de from './ibr.cs.tu-bs.de'
+import * as idleberg_github_io from './idleberg.github.io'
+import * as ijg_org from './ijg.org'
+import * as imageflow_io from './imageflow.io'
+import * as imagemagick_org from './imagemagick.org'
+import * as indexsupply_com from './indexsupply.com'
+import * as info_zip_org from './info-zip.org'
+import * as infracost_io from './infracost.io'
+import * as intel_com from './intel.com'
+import * as invisible_island_net_lynx from './invisible-island.net-lynx'
+import * as invisible_island_net from './invisible-island.net'
+import * as ipfs_tech from './ipfs.tech'
+import * as ipython_org from './ipython.org'
+import * as iroh_computer from './iroh.computer'
+import * as isc_org_bind9 from './isc.org-bind9'
+import * as isc_org from './isc.org'
+import * as istio_io from './istio.io'
+import * as itstool_org from './itstool.org'
+import * as ivarch_com from './ivarch.com'
+import * as jbang_dev from './jbang.dev'
+import * as jbig2dec_com from './jbig2dec.com'
+import * as jedisct1_github_io from './jedisct1.github.io'
+import * as jedsoft_org from './jedsoft.org'
+import * as jemalloc_net from './jemalloc.net'
+import * as jenkins_x_io from './jenkins-x.io'
+import * as jenkins_io from './jenkins.io'
+import * as jenv_be from './jenv.be'
+import * as jetporch_com from './jetporch.com'
+import * as jfrog_com from './jfrog.com'
+import * as jless_io from './jless.io'
+import * as jonas_github_io from './jonas.github.io'
+import * as jpeg_org from './jpeg.org'
+import * as jsonnet_org from './jsonnet.org'
+import * as jugit_fz_juelich_de from './jugit.fz-juelich.de'
+import * as juju_is from './juju.is'
+import * as julialang_org from './julialang.org'
+import * as jumppad_dev from './jumppad.dev'
+import * as jupyter_org from './jupyter.org'
+import * as just_systems from './just.systems'
+import * as k3d_io from './k3d.io'
+import * as k6_io from './k6.io'
+import * as k9scli_io from './k9scli.io'
+import * as kafka_apache_org from './kafka.apache.org'
+import * as kaggle_com from './kaggle.com'
+import * as keephq_dev from './keephq.dev'
+import * as kerberos_org from './kerberos.org'
+import * as kernel_org_libcap from './kernel.org-libcap'
+import * as kernel_org from './kernel.org'
+import * as khanacademy_org from './khanacademy.org'
+import * as khronos_org from './khronos.org'
+import * as kind_sigs_k8s_io from './kind.sigs.k8s.io'
+import * as kislyuk_github_io from './kislyuk.github.io'
+import * as kluctl_io from './kluctl.io'
+import * as ko_build from './ko.build'
+import * as kornel_ski from './kornel.ski'
+import * as kotlinlang_org from './kotlinlang.org'
+import * as koyeb_com from './koyeb.com'
+import * as kpt_dev from './kpt.dev'
+import * as krew_sigs_k8s_io from './krew.sigs.k8s.io'
+import * as ktlint_github_io from './ktlint.github.io'
+import * as kubebuilder_io from './kubebuilder.io'
+import * as kubecm_cloud from './kubecm.cloud'
+import * as kubectx_dev from './kubectx.dev'
+import * as kubelinter_io from './kubelinter.io'
+import * as kubernetes_io from './kubernetes.io'
+import * as kubeshark_co from './kubeshark.co'
+import * as ladspa_org from './ladspa.org'
+import * as lame_sourceforge_io from './lame.sourceforge.io'
+import * as langchain_com from './langchain.com'
+import * as laravel_com from './laravel.com'
+import * as lavinmq_com from './lavinmq.com'
+import * as lcdf_org from './lcdf.org'
+import * as leethomason_github_io from './leethomason.github.io'
+import * as leo_lang_org from './leo-lang.org'
+import * as leonerd_org_uk from './leonerd.org.uk'
+import * as leptonica_org from './leptonica.org'
+import * as lftp_yar_ru from './lftp.yar.ru'
+import * as libarchive_org from './libarchive.org'
+import * as libcxx_llvm_org from './libcxx.llvm.org'
+import * as libevent_org from './libevent.org'
+import * as libexif_github_io from './libexif.github.io'
+import * as libexpat_github_io from './libexpat.github.io'
+import * as libgd_github_io from './libgd.github.io'
+import * as libgeos_org from './libgeos.org'
+import * as libgit2_org from './libgit2.org'
+import * as libimobiledevice_org from './libimobiledevice.org'
+import * as libisl_sourceforge_io from './libisl.sourceforge.io'
+import * as libjpeg_turbo_org from './libjpeg-turbo.org'
+import * as liblqr_wikidot_com from './liblqr.wikidot.com'
+import * as libpipeline_gitlab_io from './libpipeline.gitlab.io'
+import * as libpng_org from './libpng.org'
+import * as libproxy_github_io from './libproxy.github.io'
+import * as libraw_org from './libraw.org'
+import * as libsdl_org from './libsdl.org'
+import * as libsodium_org from './libsodium.org'
+import * as libsoup_org from './libsoup.org'
+import * as libspng_org from './libspng.org'
+import * as libssh_org from './libssh.org'
+import * as libssh2_org from './libssh2.org'
+import * as libtom_net from './libtom.net'
+import * as liburcu_org from './liburcu.org'
+import * as libusb_info from './libusb.info'
+import * as libuv_org from './libuv.org'
+import * as libvips_org from './libvips.org'
+import * as libwebsockets_org from './libwebsockets.org'
+import * as libzip_org from './libzip.org'
+import * as lima_vm_io from './lima-vm.io'
+import * as linkerd_io from './linkerd.io'
+import * as linux_pam_org from './linux-pam.org'
+import * as litecli_com from './litecli.com'
+import * as littlecms_com from './littlecms.com'
+import * as llm_datasette_io from './llm.datasette.io'
+import * as lloyd_github_io from './lloyd.github.io'
+import * as llvm_org from './llvm.org'
+import * as localai_io from './localai.io'
+import * as localstack_cloud from './localstack.cloud'
+import * as logdy_dev from './logdy.dev'
+import * as logological_org from './logological.org'
+import * as lua_org from './lua.org'
+import * as luajit_org from './luajit.org'
+import * as luarocks_org from './luarocks.org'
+import * as lucagrulla_com from './lucagrulla.com'
+import * as lunarvim_org from './lunarvim.org'
+import * as lxml_de from './lxml.de'
+import * as lychee_cli_rs from './lychee.cli.rs'
+import * as lz4_org from './lz4.org'
+import * as maaslalani_com from './maaslalani.com'
+import * as macvim_org from './macvim.org'
+import * as mailpit_axllent_org from './mailpit.axllent.org'
+import * as makotemplates_org from './makotemplates.org'
+import * as man_db_gitlab_io from './man-db.gitlab.io'
+import * as mandoc_bsd_lv from './mandoc.bsd.lv'
+import * as mariadb_com from './mariadb.com'
+import * as markupsafe_palletsprojects_com from './markupsafe.palletsprojects.com'
+import * as materialize_com from './materialize.com'
+import * as matio_sourceforge_io from './matio.sourceforge.io'
+import * as maturin_rs from './maturin.rs'
+import * as maven_apache_org from './maven.apache.org'
+import * as mcmc_jags_sourceforge_io from './mcmc-jags.sourceforge.io'
+import * as mercure_rocks from './mercure.rocks'
+import * as mercurial_scm_org from './mercurial-scm.org'
+import * as mergestat_com from './mergestat.com'
+import * as mesa3d_org from './mesa3d.org'
+import * as mesonbuild_com from './mesonbuild.com'
+import * as micro_editor_github_io from './micro-editor.github.io'
+import * as microbrew_org from './microbrew.org'
+import * as microcks_io from './microcks.io'
+import * as microsoft_com_code_cli from './microsoft.com-code-cli'
+import * as microsoft_com_markitdown from './microsoft.com-markitdown'
+import * as microsoft_com from './microsoft.com'
+import * as midnight_commander_org from './midnight-commander.org'
+import * as min_io from './min.io'
+import * as mise_jdx_dev from './mise.jdx.dev'
+import * as mitmproxy_org from './mitmproxy.org'
+import * as mkcert_dev from './mkcert.dev'
+import * as mkdocs_org from './mkdocs.org'
+import * as modal_com from './modal.com'
+import * as modernc_org_goyacc from './modernc.org-goyacc'
+import * as modernc_org from './modernc.org'
+import * as mongodb_com from './mongodb.com'
+import * as moonrepo_dev from './moonrepo.dev'
+import * as mosh_org from './mosh.org'
+import * as mozilla_org_cbindgen from './mozilla.org-cbindgen'
+import * as mozilla_org from './mozilla.org'
+import * as mpg123_de from './mpg123.de'
+import * as mpmath_org from './mpmath.org'
+import * as mpv_io from './mpv.io'
+import * as msgpack_org from './msgpack.org'
+import * as mujs_com from './mujs.com'
+import * as mun_lang_org from './mun-lang.org'
+import * as mupdf_com from './mupdf.com'
+import * as musepack_net from './musepack.net'
+import * as musl_libc_org from './musl.libc.org'
+import * as mvdan_cc_gofumpt from './mvdan.cc-gofumpt'
+import * as mvdan_cc from './mvdan.cc'
+import * as mypy_lang_org from './mypy-lang.org'
+import * as mysql_com from './mysql.com'
+import * as nano_editor_org from './nano-editor.org'
+import * as nasm_us from './nasm.us'
+import * as neovim_io from './neovim.io'
+import * as netflix_com from './netflix.com'
+import * as netlib_org from './netlib.org'
+import * as netpbm_sourceforge_net from './netpbm.sourceforge.net'
+import * as networkx_org from './networkx.org'
+import * as nghttp2_org from './nghttp2.org'
+import * as nginx_org from './nginx.org'
+import * as nike_com from './nike.com'
+import * as nim_lang_org from './nim-lang.org'
+import * as ninja_build_org from './ninja-build.org'
+import * as nixos_org from './nixos.org'
+import * as nixpacks_com from './nixpacks.com'
+import * as nlnetlabs_nl from './nlnetlabs.nl'
+import * as nmap_org from './nmap.org'
 import * as node from './node'
-import * as nomadprojectio from './nomadproject.io'
-import * as nongnuorg from './nongnu.org'
-import * as notrojgithubio from './notroj.github.io'
-import * as npmjscom from './npmjs.com'
-import * as ntporg from './ntp.org'
-import * as numbatdev from './numbat.dev'
-import * as numpyorg from './numpy.org'
-import * as nushellsh from './nushell.sh'
-import * as nxdev from './nx.dev'
-import * as oauth2_proxygithubio from './oauth2-proxy.github.io'
-import * as oberhumercom from './oberhumer.com'
-import * as oberhumercom_ucl from './oberhumer.com-ucl'
-import * as odigosio from './odigos.io'
-import * as ohmyposhdev from './ohmyposh.dev'
-import * as ollamaai from './ollama.ai'
-import * as onefetchdev from './onefetch.dev'
-import * as onsigithubio from './onsi.github.io'
-import * as open_mpiorg from './open-mpi.org'
-import * as openaicom from './openai.com'
-import * as openapi_generatortech from './openapi-generator.tech'
-import * as openbaoorg from './openbao.org'
-import * as openblasnet from './openblas.net'
-import * as opencore_amrsourceforgeio from './opencore-amr.sourceforge.io'
-import * as opendaporg from './opendap.org'
-import * as opendevorg from './opendev.org'
-import * as openexrcom from './openexr.com'
-import * as openinterpretercom from './openinterpreter.com'
-import * as openjdkorg from './openjdk.org'
-import * as openjpegorg from './openjpeg.org'
-import * as openldaporg from './openldap.org'
-import * as openldaporg_liblmdb from './openldap.org-liblmdb'
-import * as openmpllvmorg from './openmp.llvm.org'
-import * as openpmixgithubio from './openpmix.github.io'
-import * as openpolicyagentorg from './openpolicyagent.org'
-import * as openprintinggithubio from './openprinting.github.io'
-import * as openrestyorg from './openresty.org'
-import * as opensearchorg from './opensearch.org'
-import * as openshiftcom from './openshift.com'
-import * as openslideorg from './openslide.org'
-import * as opensshcom from './openssh.com'
-import * as opensslorg from './openssl.org'
-import * as opentofuorg from './opentofu.org'
-import * as openvpnnet from './openvpn.net'
-import * as operatorframeworkio from './operatorframework.io'
-import * as opus_codecorg from './opus-codec.org'
-import * as oraclecom from './oracle.com'
-import * as orasland from './oras.land'
-import * as ordinalscom from './ordinals.com'
-import * as orhundev from './orhun.dev'
-import * as otssnipttcom from './ots.sniptt.com'
-import * as packerio from './packer.io'
-import * as pagureio from './pagure.io'
-import * as palletsprojectscom from './palletsprojects.com'
-import * as pandocorg from './pandoc.org'
-import * as pantsbuildorg from './pantsbuild.org'
-import * as paulfitzgithubio from './paulfitz.github.io'
-import * as pcreorg from './pcre.org'
-import * as pcscliteapdufr from './pcsclite.apdu.fr'
-import * as pdmfmingdev from './pdm.fming.dev'
-import * as peopleengrtamuedu from './people.engr.tamu.edu'
-import * as peopleredhatcom from './people.redhat.com'
-import * as perlorg from './perl.org'
-import * as permitio from './permit.io'
-import * as phpnet from './php.net'
-import * as phpmyadminnet from './phpmyadmin.net'
-import * as pimalayaorg from './pimalaya.org'
-import * as pinnipeddev from './pinniped.dev'
-import * as pippypaio from './pip.pypa.io'
-import * as pipenvpypaio from './pipenv.pypa.io'
-import * as pixmanorg from './pixman.org'
-import * as pkgxsh from './pkgx.sh'
-import * as pkgxsh_dev from './pkgx.sh-dev'
-import * as pkgxsh_pkgm from './pkgx.sh-pkgm'
-import * as pkl_langorg from './pkl-lang.org'
-import * as planetscalecom from './planetscale.com'
-import * as plantumlcom from './plantuml.com'
-import * as plasmasturmorg from './plasmasturm.org'
-import * as plocatesessenet from './plocate.sesse.net'
-import * as pluralithcom from './pluralith.com'
-import * as pngquantorg from './pngquant.org'
-import * as pnpmio from './pnpm.io'
-import * as po4aorg from './po4a.org'
-import * as pocketbaseio from './pocketbase.io'
-import * as podmanio from './podman.io'
-import * as poktnetwork from './pokt.network'
-import * as popplerfreedesktoporg from './poppler.freedesktop.org'
-import * as portaudiocom from './portaudio.com'
-import * as postgresqlorg from './postgresql.org'
-import * as postgrestorg from './postgrest.org'
-import * as practical_schemenet from './practical-scheme.net'
-import * as pre_commitcom from './pre-commit.com'
-import * as prefixdev from './prefix.dev'
-import * as presslygithubio from './pressly.github.io'
-import * as prettierio from './prettier.io'
-import * as printfngithubio from './printfn.github.io'
-import * as priverdev from './priver.dev'
-import * as projorg from './proj.org'
-import * as project_copaceticgithubio from './project-copacetic.github.io'
-import * as projectdiscoveryio from './projectdiscovery.io'
-import * as projectdiscoveryio_nuclei from './projectdiscovery.io-nuclei'
-import * as projenio from './projen.io'
-import * as protobufdev from './protobuf.dev'
-import * as prql_langorg from './prql-lang.org'
-import * as psycopgorg from './psycopg.org'
-import * as publichronopikde from './public.hronopik.de'
-import * as pugixmlorg from './pugixml.org'
-import * as pulumiio from './pulumi.io'
-import * as pwgensourceforgeio from './pwgen.sourceforge.io'
-import * as pwmtorg from './pwmt.org'
-import * as pygmentsorg from './pygments.org'
-import * as pyinvokeorg from './pyinvoke.org'
-import * as pypagithubio from './pypa.github.io'
-import * as pypaio from './pypa.io'
-import * as pytestorg from './pytest.org'
-import * as python_pilloworg from './python-pillow.org'
-import * as python_poetryorg from './python-poetry.org'
-import * as pythonorg from './python.org'
-import * as pyyamlorg from './pyyaml.org'
-import * as qemuorg from './qemu.org'
-import * as qhullorg from './qhull.org'
-import * as qpdfsourceforgeio from './qpdf.sourceforge.io'
-import * as qtio from './qt.io'
-import * as quarydev from './quary.dev'
-import * as quickwitio from './quickwit.io'
-import * as r_wosorg from './r-wos.org'
-import * as rabbitmqcom from './rabbitmq.com'
-import * as raccoinorg from './raccoin.org'
-import * as radicleorg from './radicle.org'
-import * as railwayapp from './railway.app'
-import * as rapidjsonorg from './rapidjson.org'
-import * as rarlabcom from './rarlab.com'
-import * as rbenvorg from './rbenv.org'
-import * as rcloneorg from './rclone.org'
-import * as re2corg from './re2c.org'
-import * as reacheremail from './reacher.email'
-import * as rebar3org from './rebar3.org'
-import * as redisio from './redis.io'
-import * as rendercom from './render.com'
-import * as replibytecom from './replibyte.com'
-import * as resticnet from './restic.net'
-import * as rhashsourceforgenet from './rhash.sourceforge.net'
-import * as rigauxorg from './rigaux.org'
-import * as riverbankcomputingcom from './riverbankcomputing.com'
-import * as robotframeworkorg from './robotframework.org'
-import * as rockdabootgithubio from './rockdaboot.github.io'
-import * as rometools from './rome.tools'
-import * as rpmorg from './rpm.org'
-import * as rsyncsambaorg from './rsync.samba.org'
-import * as rtmpdumpmplayerhqhu from './rtmpdump.mplayerhq.hu'
-import * as rtomaykogithubio from './rtomayko.github.io'
-import * as rubocoporg from './rubocop.org'
-import * as ruby_langorg from './ruby-lang.org'
-import * as rubygemsorg from './rubygems.org'
-import * as ruciocernch from './rucio.cern.ch'
-import * as runatlantisio from './runatlantis.io'
-import * as rust_langgithubio from './rust-lang.github.io'
-import * as rust_langorg from './rust-lang.org'
-import * as rust_langorg_rust_bindgen from './rust-lang.org-rust-bindgen'
-import * as rust_scriptorg from './rust-script.org'
-import * as ryeastralsh from './rye.astral.sh'
-import * as s3toolsorg from './s3tools.org'
-import * as saerasoftcom from './saerasoft.com'
-import * as sagiegurarigithubio from './sagiegurari.github.io'
-import * as sass_langcom from './sass-lang.com'
-import * as savannahnongnuorg from './savannah.nongnu.org'
-import * as scala_langorg from './scala-lang.org'
-import * as scala_sbtorg from './scala-sbt.org'
-import * as scalewaycom from './scaleway.com'
-import * as schollzcom from './schollz.com'
-import * as sconsorg from './scons.org'
-import * as scryerpl from './scryer.pl'
-import * as sdkmanio from './sdkman.io'
-import * as seaweedfscom from './seaweedfs.com'
-import * as sentryio from './sentry.io'
-import * as sfnet from './sf.net'
-import * as sfcgalorg from './sfcgal.org'
-import * as sftpgocom from './sftpgo.com'
-import * as shellchecknet from './shellcheck.net'
-import * as sigstoredev from './sigstore.dev'
-import * as simplesystemsorg from './simplesystems.org'
-import * as sing_boxapp from './sing-box.app'
-import * as skaffolddev from './skaffold.dev'
-import * as smartmontoolsorg from './smartmontools.org'
-import * as snapletdev from './snaplet.dev'
-import * as sniffnetnet from './sniffnet.net'
-import * as snykio from './snyk.io'
-import * as solanacom from './solana.com'
-import * as soldeerxyz from './soldeer.xyz'
-import * as soliditylangorg from './soliditylang.org'
-import * as sonarqubeorg from './sonarqube.org'
-import * as sourceforgenet from './sourceforge.net'
-import * as sourcewareorg from './sourceware.org'
-import * as soxrsourceforgenet from './soxr.sourceforge.net'
-import * as spacetimedbcom from './spacetimedb.com'
-import * as spawnlink from './spawn.link'
-import * as speexorg from './speex.org'
-import * as sphinx_docorg from './sphinx-doc.org'
-import * as sqlcdev from './sqlc.dev'
-import * as sqlfluffcom from './sqlfluff.com'
-import * as sqliteorg from './sqlite.org'
-import * as squawkhqcom from './squawkhq.com'
-import * as srtallianceorg from './srtalliance.org'
-import * as sshxio from './sshx.io'
-import * as starshiprs from './starship.rs'
-import * as steampipeio from './steampipe.io'
-import * as stedolangithubio from './stedolan.github.io'
-import * as straceio from './strace.io'
-import * as streamlinkgithubio from './streamlink.github.io'
-import * as stripecom from './stripe.com'
-import * as supabasecom from './supabase.com'
-import * as surrealdbcom from './surrealdb.com'
-import * as svenstarogithubio from './svenstaro.github.io'
-import * as swaggerio from './swagger.io'
-import * as swiftorg from './swift.org'
-import * as swigorg from './swig.org'
-import * as symfonycom from './symfony.com'
-import * as sympyorg from './sympy.org'
-import * as syncthingnet from './syncthing.net'
-import * as systemdio from './systemd.io'
-import * as tagliborg from './taglib.org'
-import * as tailcallrun from './tailcall.run'
-import * as tailwindcsscom from './tailwindcss.com'
-import * as taku910githubio from './taku910.github.io'
-import * as talosdev from './talos.dev'
-import * as taplotamasfedev from './taplo.tamasfe.dev'
-import * as tartrun from './tart.run'
-import * as taskfiledev from './taskfile.dev'
-import * as tcl_langorg from './tcl-lang.org'
-import * as tcltk from './tcl.tk'
-import * as tcpdumporg from './tcpdump.org'
-import * as tcshorg from './tcsh.org'
-import * as teaxyz from './tea.xyz'
-import * as tectonic_typesettinggithubio from './tectonic-typesetting.github.io'
-import * as templguide from './templ.guide'
-import * as temporalio from './temporal.io'
-import * as terraform_docsio from './terraform-docs.io'
-import * as terraformio from './terraform.io'
-import * as terragruntgruntworkio from './terragrunt.gruntwork.io'
-import * as terratagio from './terratag.io'
-import * as tesseract_ocrgithubio from './tesseract-ocr.github.io'
-import * as thekelleysorguk from './thekelleys.org.uk'
-import * as theoraorg from './theora.org'
-import * as thoughtworksgithubio from './thoughtworks.github.io'
-import * as thrysoeedk from './thrysoee.dk'
-import * as tidbytcom from './tidbyt.com'
-import * as tiltdev from './tilt.dev'
-import * as tinybirdco from './tinybird.co'
-import * as tinygoorg from './tinygo.org'
-import * as tldrsh from './tldr.sh'
-import * as tlrdev from './tlr.dev'
-import * as tmateio from './tmate.io'
-import * as toxwiki from './tox.wiki'
-import * as traefikio from './traefik.io'
-import * as tree_sittergithubio from './tree-sitter.github.io'
-import * as trippyclirs from './trippy.cli.rs'
-import * as trufflesecuritycom from './trufflesecurity.com'
-import * as tsl0922githubio from './tsl0922.github.io'
-import * as tuistio from './tuist.io'
-import * as tukaaniorg from './tukaani.org'
-import * as tursotech from './turso.tech'
-import * as typescriptlangorg from './typescriptlang.org'
-import * as typstapp from './typst.app'
-import * as unboundnet from './unbound.net'
-import * as undefined from './undefined'
-import * as unicodeorg from './unicode.org'
-import * as unidataucaredu from './unidata.ucar.edu'
-import * as unixodbcorg from './unixodbc.org'
-import * as upliftcidev from './upliftci.dev'
-import * as upxgithubio from './upx.github.io'
-import * as uriparsergithubio from './uriparser.github.io'
-import * as valesh from './vale.sh'
-import * as valkeyio from './valkey.io'
-import * as vamp_pluginsorg from './vamp-plugins.org'
-import * as vannaai from './vanna.ai'
-import * as vapoursynthcom from './vapoursynth.com'
-import * as vaultprojectio from './vaultproject.io'
-import * as vclustercom from './vcluster.com'
-import * as vektragithubio from './vektra.github.io'
-import * as veleroio from './velero.io'
-import * as veracodecom from './veracode.com'
-import * as vercelcom from './vercel.com'
-import * as versitycom from './versity.com'
-import * as viaductai from './viaduct.ai'
-import * as viaductai_ksops from './viaduct.ai-ksops'
-import * as videolanorg from './videolan.org'
-import * as vimorg from './vim.org'
-import * as virtualenvpypaio from './virtualenv.pypa.io'
-import * as virtualsquareorg from './virtualsquare.org'
-import * as vitejsdev from './vitejs.dev'
-import * as vlangio from './vlang.io'
-import * as voltash from './volta.sh'
-import * as wailsio from './wails.io'
-import * as wait4xdev from './wait4x.dev'
-import * as wasmerio from './wasmer.io'
-import * as watchexecgithubio from './watchexec.github.io'
-import * as waterlanhomexs4allnl from './waterlan.home.xs4all.nl'
-import * as wavpackcom from './wavpack.com'
-import * as waylandfreedesktoporg from './wayland.freedesktop.org'
-import * as webmprojectorg from './webmproject.org'
-import * as werfio from './werf.io'
-import * as wezfurlongorg from './wezfurlong.org'
-import * as wilfredmeuk from './wilfred.me.uk'
-import * as wimlibnet from './wimlib.net'
-import * as wiresharkorg from './wireshark.org'
-import * as wixcom from './wix.com'
-import * as wkentarogithubio from './wkentaro.github.io'
-import * as wpewebkitorg from './wpewebkit.org'
-import * as wundergraphcom from './wundergraph.com'
-import * as wxwidgetsorg from './wxwidgets.org'
-import * as xorg from './x.org'
-import * as xorg_xscrnsaver from './x.org-xscrnsaver'
-import * as xcfiledev from './xcfile.dev'
-import * as xercesapacheorg from './xerces.apache.org'
-import * as xiphorg from './xiph.org'
-import * as xkbcommonorg from './xkbcommon.org'
-import * as xplrdev from './xplr.dev'
-import * as xpraorg from './xpra.org'
-import * as xtlsgithubio from './xtls.github.io'
-import * as xvidcom from './xvid.com'
-import * as yadmio from './yadm.io'
-import * as yarnpkgcom from './yarnpkg.com'
-import * as yasmtortallnet from './yasm.tortall.net'
-import * as youtube_dlorg from './youtube-dl.org'
-import * as yt_dlporg from './yt-dlp.org'
-import * as yuigithubio from './yui.github.io'
-import * as zarfdev from './zarf.dev'
-import * as zeromqorg from './zeromq.org'
-import * as ziglangorg from './ziglang.org'
-import * as zlibnet from './zlib.net'
-import * as zrokio from './zrok.io'
-import * as zshsourceforgeio from './zsh.sourceforge.io'
+import * as nomadproject_io from './nomadproject.io'
+import * as nongnu_org from './nongnu.org'
+import * as notroj_github_io from './notroj.github.io'
+import * as npmjs_com from './npmjs.com'
+import * as ntp_org from './ntp.org'
+import * as numbat_dev from './numbat.dev'
+import * as numpy_org from './numpy.org'
+import * as nushell_sh from './nushell.sh'
+import * as nx_dev from './nx.dev'
+import * as oauth2_proxy_github_io from './oauth2-proxy.github.io'
+import * as oberhumer_com_ucl from './oberhumer.com-ucl'
+import * as oberhumer_com from './oberhumer.com'
+import * as odigos_io from './odigos.io'
+import * as ohmyposh_dev from './ohmyposh.dev'
+import * as ollama_ai from './ollama.ai'
+import * as onefetch_dev from './onefetch.dev'
+import * as onsi_github_io from './onsi.github.io'
+import * as open_mpi_org from './open-mpi.org'
+import * as openai_com from './openai.com'
+import * as openapi_generator_tech from './openapi-generator.tech'
+import * as openbao_org from './openbao.org'
+import * as openblas_net from './openblas.net'
+import * as opencore_amr_sourceforge_io from './opencore-amr.sourceforge.io'
+import * as opendap_org from './opendap.org'
+import * as opendev_org from './opendev.org'
+import * as openexr_com from './openexr.com'
+import * as openinterpreter_com from './openinterpreter.com'
+import * as openjdk_org from './openjdk.org'
+import * as openjpeg_org from './openjpeg.org'
+import * as openldap_org_liblmdb from './openldap.org-liblmdb'
+import * as openldap_org from './openldap.org'
+import * as openmp_llvm_org from './openmp.llvm.org'
+import * as openpmix_github_io from './openpmix.github.io'
+import * as openpolicyagent_org from './openpolicyagent.org'
+import * as openprinting_github_io from './openprinting.github.io'
+import * as openresty_org from './openresty.org'
+import * as opensearch_org from './opensearch.org'
+import * as openshift_com from './openshift.com'
+import * as openslide_org from './openslide.org'
+import * as openssh_com from './openssh.com'
+import * as openssl_org from './openssl.org'
+import * as opentofu_org from './opentofu.org'
+import * as openvpn_net from './openvpn.net'
+import * as operatorframework_io from './operatorframework.io'
+import * as opus_codec_org from './opus-codec.org'
+import * as oracle_com from './oracle.com'
+import * as oras_land from './oras.land'
+import * as ordinals_com from './ordinals.com'
+import * as orhun_dev from './orhun.dev'
+import * as ots_sniptt_com from './ots.sniptt.com'
+import * as packer_io from './packer.io'
+import * as pagure_io from './pagure.io'
+import * as palletsprojects_com from './palletsprojects.com'
+import * as pandoc_org from './pandoc.org'
+import * as pantsbuild_org from './pantsbuild.org'
+import * as paulfitz_github_io from './paulfitz.github.io'
+import * as pcre_org from './pcre.org'
+import * as pcsclite_apdu_fr from './pcsclite.apdu.fr'
+import * as pdm_fming_dev from './pdm.fming.dev'
+import * as people_engr_tamu_edu from './people.engr.tamu.edu'
+import * as people_redhat_com from './people.redhat.com'
+import * as perl_org from './perl.org'
+import * as permit_io from './permit.io'
+import * as php_net from './php.net'
+import * as phpmyadmin_net from './phpmyadmin.net'
+import * as pimalaya_org from './pimalaya.org'
+import * as pinniped_dev from './pinniped.dev'
+import * as pip_pypa_io from './pip.pypa.io'
+import * as pipenv_pypa_io from './pipenv.pypa.io'
+import * as pixman_org from './pixman.org'
+import * as pkgx_sh_dev from './pkgx.sh-dev'
+import * as pkgx_sh_pkgm from './pkgx.sh-pkgm'
+import * as pkgx_sh from './pkgx.sh'
+import * as pkl_lang_org from './pkl-lang.org'
+import * as planetscale_com from './planetscale.com'
+import * as plantuml_com from './plantuml.com'
+import * as plasmasturm_org from './plasmasturm.org'
+import * as plocate_sesse_net from './plocate.sesse.net'
+import * as pluralith_com from './pluralith.com'
+import * as pngquant_org from './pngquant.org'
+import * as pnpm_io from './pnpm.io'
+import * as po4a_org from './po4a.org'
+import * as pocketbase_io from './pocketbase.io'
+import * as podman_io from './podman.io'
+import * as pokt_network from './pokt.network'
+import * as poppler_freedesktop_org from './poppler.freedesktop.org'
+import * as portaudio_com from './portaudio.com'
+import * as postgresql_org from './postgresql.org'
+import * as postgrest_org from './postgrest.org'
+import * as practical_scheme_net from './practical-scheme.net'
+import * as pre_commit_com from './pre-commit.com'
+import * as prefix_dev from './prefix.dev'
+import * as pressly_github_io from './pressly.github.io'
+import * as prettier_io from './prettier.io'
+import * as printfn_github_io from './printfn.github.io'
+import * as priver_dev from './priver.dev'
+import * as proj_org from './proj.org'
+import * as project_copacetic_github_io from './project-copacetic.github.io'
+import * as projectdiscovery_io_nuclei from './projectdiscovery.io-nuclei'
+import * as projectdiscovery_io from './projectdiscovery.io'
+import * as projen_io from './projen.io'
+import * as protobuf_dev from './protobuf.dev'
+import * as prql_lang_org from './prql-lang.org'
+import * as psycopg_org from './psycopg.org'
+import * as public_hronopik_de from './public.hronopik.de'
+import * as pugixml_org from './pugixml.org'
+import * as pulumi_io from './pulumi.io'
+import * as pwgen_sourceforge_io from './pwgen.sourceforge.io'
+import * as pwmt_org from './pwmt.org'
+import * as pygments_org from './pygments.org'
+import * as pyinvoke_org from './pyinvoke.org'
+import * as pypa_github_io from './pypa.github.io'
+import * as pypa_io from './pypa.io'
+import * as pytest_org from './pytest.org'
+import * as python_pillow_org from './python-pillow.org'
+import * as python_poetry_org from './python-poetry.org'
+import * as python_org from './python.org'
+import * as pyyaml_org from './pyyaml.org'
+import * as qemu_org from './qemu.org'
+import * as qhull_org from './qhull.org'
+import * as qpdf_sourceforge_io from './qpdf.sourceforge.io'
+import * as qt_io from './qt.io'
+import * as quary_dev from './quary.dev'
+import * as quickwit_io from './quickwit.io'
+import * as r_wos_org from './r-wos.org'
+import * as rabbitmq_com from './rabbitmq.com'
+import * as raccoin_org from './raccoin.org'
+import * as radicle_org from './radicle.org'
+import * as railway_app from './railway.app'
+import * as rapidjson_org from './rapidjson.org'
+import * as rarlab_com from './rarlab.com'
+import * as rbenv_org from './rbenv.org'
+import * as rclone_org from './rclone.org'
+import * as re2c_org from './re2c.org'
+import * as reacher_email from './reacher.email'
+import * as rebar3_org from './rebar3.org'
+import * as redis_io from './redis.io'
+import * as render_com from './render.com'
+import * as replibyte_com from './replibyte.com'
+import * as restic_net from './restic.net'
+import * as rhash_sourceforge_net from './rhash.sourceforge.net'
+import * as rigaux_org from './rigaux.org'
+import * as riverbankcomputing_com from './riverbankcomputing.com'
+import * as robotframework_org from './robotframework.org'
+import * as rockdaboot_github_io from './rockdaboot.github.io'
+import * as rome_tools from './rome.tools'
+import * as rpm_org from './rpm.org'
+import * as rsync_samba_org from './rsync.samba.org'
+import * as rtmpdump_mplayerhq_hu from './rtmpdump.mplayerhq.hu'
+import * as rtomayko_github_io from './rtomayko.github.io'
+import * as rubocop_org from './rubocop.org'
+import * as ruby_lang_org from './ruby-lang.org'
+import * as rubygems_org from './rubygems.org'
+import * as rucio_cern_ch from './rucio.cern.ch'
+import * as runatlantis_io from './runatlantis.io'
+import * as rust_lang_github_io from './rust-lang.github.io'
+import * as rust_lang_org_rust_bindgen from './rust-lang.org-rust-bindgen'
+import * as rust_lang_org from './rust-lang.org'
+import * as rust_script_org from './rust-script.org'
+import * as rye_astral_sh from './rye.astral.sh'
+import * as s3tools_org from './s3tools.org'
+import * as saerasoft_com from './saerasoft.com'
+import * as sagiegurari_github_io from './sagiegurari.github.io'
+import * as sass_lang_com from './sass-lang.com'
+import * as savannah_nongnu_org from './savannah.nongnu.org'
+import * as scala_lang_org from './scala-lang.org'
+import * as scala_sbt_org from './scala-sbt.org'
+import * as scaleway_com from './scaleway.com'
+import * as schollz_com from './schollz.com'
+import * as scons_org from './scons.org'
+import * as scryer_pl from './scryer.pl'
+import * as sdkman_io from './sdkman.io'
+import * as seaweedfs_com from './seaweedfs.com'
+import * as sentry_io from './sentry.io'
+import * as sf_net from './sf.net'
+import * as sfcgal_org from './sfcgal.org'
+import * as sftpgo_com from './sftpgo.com'
+import * as shellcheck_net from './shellcheck.net'
+import * as sigstore_dev from './sigstore.dev'
+import * as simplesystems_org from './simplesystems.org'
+import * as sing_box_app from './sing-box.app'
+import * as skaffold_dev from './skaffold.dev'
+import * as smartmontools_org from './smartmontools.org'
+import * as snaplet_dev from './snaplet.dev'
+import * as sniffnet_net from './sniffnet.net'
+import * as snyk_io from './snyk.io'
+import * as solana_com from './solana.com'
+import * as soldeer_xyz from './soldeer.xyz'
+import * as soliditylang_org from './soliditylang.org'
+import * as sonarqube_org from './sonarqube.org'
+import * as sourceforge_net from './sourceforge.net'
+import * as sourceware_org from './sourceware.org'
+import * as soxr_sourceforge_net from './soxr.sourceforge.net'
+import * as spacetimedb_com from './spacetimedb.com'
+import * as spawn_link from './spawn.link'
+import * as speex_org from './speex.org'
+import * as sphinx_doc_org from './sphinx-doc.org'
+import * as sqlc_dev from './sqlc.dev'
+import * as sqlfluff_com from './sqlfluff.com'
+import * as sqlite_org from './sqlite.org'
+import * as squawkhq_com from './squawkhq.com'
+import * as srtalliance_org from './srtalliance.org'
+import * as sshx_io from './sshx.io'
+import * as starship_rs from './starship.rs'
+import * as steampipe_io from './steampipe.io'
+import * as stedolan_github_io from './stedolan.github.io'
+import * as strace_io from './strace.io'
+import * as streamlink_github_io from './streamlink.github.io'
+import * as stripe_com from './stripe.com'
+import * as supabase_com from './supabase.com'
+import * as surrealdb_com from './surrealdb.com'
+import * as svenstaro_github_io from './svenstaro.github.io'
+import * as swagger_io from './swagger.io'
+import * as swift_org from './swift.org'
+import * as swig_org from './swig.org'
+import * as symfony_com from './symfony.com'
+import * as sympy_org from './sympy.org'
+import * as syncthing_net from './syncthing.net'
+import * as systemd_io from './systemd.io'
+import * as taglib_org from './taglib.org'
+import * as tailcall_run from './tailcall.run'
+import * as tailwindcss_com from './tailwindcss.com'
+import * as taku910_github_io from './taku910.github.io'
+import * as talos_dev from './talos.dev'
+import * as taplo_tamasfe_dev from './taplo.tamasfe.dev'
+import * as tart_run from './tart.run'
+import * as taskfile_dev from './taskfile.dev'
+import * as tcl_lang_org from './tcl-lang.org'
+import * as tcl_tk from './tcl.tk'
+import * as tcpdump_org from './tcpdump.org'
+import * as tcsh_org from './tcsh.org'
+import * as tea_xyz from './tea.xyz'
+import * as tectonic_typesetting_github_io from './tectonic-typesetting.github.io'
+import * as templ_guide from './templ.guide'
+import * as temporal_io from './temporal.io'
+import * as terraform_docs_io from './terraform-docs.io'
+import * as terraform_io from './terraform.io'
+import * as terragrunt_gruntwork_io from './terragrunt.gruntwork.io'
+import * as terratag_io from './terratag.io'
+import * as tesseract_ocr_github_io from './tesseract-ocr.github.io'
+import * as thekelleys_org_uk from './thekelleys.org.uk'
+import * as theora_org from './theora.org'
+import * as thoughtworks_github_io from './thoughtworks.github.io'
+import * as thrysoee_dk from './thrysoee.dk'
+import * as tidbyt_com from './tidbyt.com'
+import * as tilt_dev from './tilt.dev'
+import * as tinybird_co from './tinybird.co'
+import * as tinygo_org from './tinygo.org'
+import * as tldr_sh from './tldr.sh'
+import * as tlr_dev from './tlr.dev'
+import * as tmate_io from './tmate.io'
+import * as tox_wiki from './tox.wiki'
+import * as traefik_io from './traefik.io'
+import * as tree_sitter_github_io from './tree-sitter.github.io'
+import * as trippy_cli_rs from './trippy.cli.rs'
+import * as trufflesecurity_com from './trufflesecurity.com'
+import * as tsl0922_github_io from './tsl0922.github.io'
+import * as tuist_io from './tuist.io'
+import * as tukaani_org from './tukaani.org'
+import * as turso_tech from './turso.tech'
+import * as typescriptlang_org from './typescriptlang.org'
+import * as typst_app from './typst.app'
+import * as unbound_net from './unbound.net'
+import * as undefinedpkg from './undefined'
+import * as unicode_org from './unicode.org'
+import * as unidata_ucar_edu from './unidata.ucar.edu'
+import * as unixodbc_org from './unixodbc.org'
+import * as upliftci_dev from './upliftci.dev'
+import * as upx_github_io from './upx.github.io'
+import * as uriparser_github_io from './uriparser.github.io'
+import * as vale_sh from './vale.sh'
+import * as valkey_io from './valkey.io'
+import * as vamp_plugins_org from './vamp-plugins.org'
+import * as vanna_ai from './vanna.ai'
+import * as vapoursynth_com from './vapoursynth.com'
+import * as vaultproject_io from './vaultproject.io'
+import * as vcluster_com from './vcluster.com'
+import * as vektra_github_io from './vektra.github.io'
+import * as velero_io from './velero.io'
+import * as veracode_com from './veracode.com'
+import * as vercel_com from './vercel.com'
+import * as versity_com from './versity.com'
+import * as viaduct_ai_ksops from './viaduct.ai-ksops'
+import * as viaduct_ai from './viaduct.ai'
+import * as videolan_org from './videolan.org'
+import * as vim_org from './vim.org'
+import * as virtualenv_pypa_io from './virtualenv.pypa.io'
+import * as virtualsquare_org from './virtualsquare.org'
+import * as vitejs_dev from './vitejs.dev'
+import * as vlang_io from './vlang.io'
+import * as volta_sh from './volta.sh'
+import * as wails_io from './wails.io'
+import * as wait4x_dev from './wait4x.dev'
+import * as wasmer_io from './wasmer.io'
+import * as watchexec_github_io from './watchexec.github.io'
+import * as waterlan_home_xs4all_nl from './waterlan.home.xs4all.nl'
+import * as wavpack_com from './wavpack.com'
+import * as wayland_freedesktop_org from './wayland.freedesktop.org'
+import * as webmproject_org from './webmproject.org'
+import * as werf_io from './werf.io'
+import * as wezfurlong_org from './wezfurlong.org'
+import * as wilfred_me_uk from './wilfred.me.uk'
+import * as wimlib_net from './wimlib.net'
+import * as wireshark_org from './wireshark.org'
+import * as wix_com from './wix.com'
+import * as wkentaro_github_io from './wkentaro.github.io'
+import * as wpewebkit_org from './wpewebkit.org'
+import * as wundergraph_com from './wundergraph.com'
+import * as wxwidgets_org from './wxwidgets.org'
+import * as x_org_xscrnsaver from './x.org-xscrnsaver'
+import * as x_org from './x.org'
+import * as xcfile_dev from './xcfile.dev'
+import * as xerces_apache_org from './xerces.apache.org'
+import * as xiph_org from './xiph.org'
+import * as xkbcommon_org from './xkbcommon.org'
+import * as xplr_dev from './xplr.dev'
+import * as xpra_org from './xpra.org'
+import * as xtls_github_io from './xtls.github.io'
+import * as xvid_com from './xvid.com'
+import * as yadm_io from './yadm.io'
+import * as yarnpkg_com from './yarnpkg.com'
+import * as yasm_tortall_net from './yasm.tortall.net'
+import * as youtube_dl_org from './youtube-dl.org'
+import * as yt_dlp_org from './yt-dlp.org'
+import * as yui_github_io from './yui.github.io'
+import * as zarf_dev from './zarf.dev'
+import * as zeromq_org from './zeromq.org'
+import * as ziglang_org from './ziglang.org'
+import * as zlib_net from './zlib.net'
+import * as zrok_io from './zrok.io'
+import * as zsh_sourceforge_io from './zsh.sourceforge.io'
 
-export * from './abseil.io'
-export * from './acorn.io'
-export * from './agpt.co'
-export * from './agwa.name-git-crypt'
-export * from './akuity.io'
-export * from './alacritty.org'
-export * from './alembic.sqlalchemy.org'
-export * from './aliases'
-export * from './alsa-project.org'
-export * from './amber-lang.com'
-export * from './amp.rs'
-export * from './amrdeveloper.github.io'
-export * from './anchore.com'
-export * from './android.com'
-export * from './angular.dev'
-export * from './ansible.com'
-export * from './aomedia.googlesource.com'
-export * from './apache.org'
-export * from './apktool.org'
-export * from './apollographql.com'
-export * from './appium.io'
-export * from './apple.com'
-export * from './apple.com-remote_cmds'
-export * from './apptainer.org'
-export * from './aquasecurity.github.io'
-export * from './arduino.github.io'
-export * from './argbash.dev'
-export * from './argoproj.github.io'
-export * from './aria2.github.io'
-export * from './arkade.dev'
-export * from './asciidoctor.org'
-export * from './asciinema.org'
-export * from './aspell.net'
-export * from './assimp.org'
-export * from './ast-grep.github.io'
-export * from './astral.sh'
-export * from './astral.sh-ruff'
-export * from './astral.sh-ty'
-export * from './astral.sh-uv'
-export * from './atlasgo.io'
-export * from './attrs.org'
-export * from './augeas.net'
-export * from './authzed.com'
-export * from './aux4.io'
-export * from './aws.amazon.com'
-export * from './aws.amazon.com-cli'
-export * from './aws.amazon.com-sam'
-export * from './bashly.dannyb.co'
-export * from './bcrypt.sourceforge.net'
-export * from './beyondgrep.com'
-export * from './biomejs.dev'
-export * from './bitcoin.org'
-export * from './bittensor.com'
-export * from './bitwarden.com'
-export * from './blake2.net'
-export * from './bloomreach.com'
-export * from './boost.org'
-export * from './bore.pub'
-export * from './breakfastquay.com'
-export * from './browser-use.com'
-export * from './brxken128.github.io'
-export * from './budimanjojo.github.io'
-export * from './buf.build'
-export * from './buildpacks.io'
-export * from './bun.sh'
-export * from './bytebase.com'
-export * from './bytereef.org'
-export * from './c-ares.org'
-export * from './caddyserver.com'
-export * from './cairographics.org'
-export * from './capstone-engine.org'
-export * from './carapace.sh'
-export * from './cask.readthedocs.io'
-export * from './catb.org'
-export * from './ccache.dev'
-export * from './cedarpolicy.com'
-export * from './cedarpolicy.com-cli'
-export * from './ceph.com'
-export * from './ceph.com-cephadm'
-export * from './ceres-solver.org'
-export * from './certbot.eff.org'
-export * from './certifi.io'
-export * from './cgal.org'
-export * from './changie.dev'
-export * from './charm.sh'
-export * from './checkov.io'
-export * from './chezmoi.io'
-export * from './chiark.greenend.org.uk'
-export * from './chromedriver.chromium.org'
-export * from './cilium.io'
-export * from './circleci.com'
-export * from './cisco.com'
-export * from './classic.yarnpkg.com'
-export * from './cli.github.com'
-export * from './clisp.org'
-export * from './clog-tool.github.io'
-export * from './cloudflare.com'
-export * from './cloudfoundry.org'
-export * from './cloudnative-pg.io'
-export * from './cmake.org'
-export * from './cmocka.org'
-export * from './cnquery.io'
-export * from './cocoapods.org'
-export * from './cocoapods.org-xcodeproj'
-export * from './cocogitto.io'
-export * from './code.videolan.org'
-export * from './coder.com'
-export * from './cointop.sh'
-export * from './conda.org'
-export * from './conftest.dev'
-export * from './connectrpc.org'
-export * from './consul.io'
-export * from './convco.github.io'
-export * from './coredns.io'
-export * from './cpanmin.us'
-export * from './cr.yp.to'
-export * from './crates.io'
-export * from './crates.io-aichat'
-export * from './crates.io-bake-rs'
-export * from './crates.io-cargo-tarpaulin'
-export * from './crates.io-ducker'
-export * from './crates.io-flamegraph'
-export * from './crates.io-ox'
-export * from './crates.io-pik'
-export * from './crates.io-qsv'
-export * from './crates.io-ripgrep-all'
-export * from './crates.io-rucola-notes'
-export * from './crates.io-samply'
-export * from './crazymax.dev'
-export * from './creativeprojects.github.io'
-export * from './cruft.github.io'
-export * from './cryptography.io'
-export * from './crystal-lang.org'
-export * from './cscope.sourceforge.io'
-export * from './csie.ntu.edu.tw'
-export * from './ctags.io'
-export * from './ctop.sh'
-export * from './cuelang.org'
-export * from './curl.se'
-export * from './curlie.io'
-export * from './cyrusimap.org'
-export * from './cython.org'
-export * from './d2lang.com'
-export * from './dagger.io'
-export * from './dart.dev'
-export * from './darwinsys.com'
-export * from './databricks.com'
-export * from './daytona.io'
-export * from './dblab.danvergara.com'
-export * from './debian.org'
-export * from './deepwisdom.ai'
-export * from './denilson.sa.nom.br'
-export * from './deno.land'
-export * from './depot.dev'
-export * from './dest-unreach.org'
-export * from './dev.yorhel.nl'
-export * from './developer.1password.com'
-export * from './developer.1password.com-1password-cli'
-export * from './developers.yubico.com'
-export * from './devpod.sh'
-export * from './dgraph.io'
-export * from './dhall-lang.org'
-export * from './dhruvkb.dev'
-export * from './digger.dev'
-export * from './digip.org'
-export * from './digitalocean.com'
-export * from './direnv.net'
-export * from './dkrz.de'
-export * from './dns.lookup.dog'
-export * from './docbook.org'
-export * from './docker.com'
-export * from './doctave.com'
-export * from './docutils.org'
-export * from './dotenv-linter.github.io'
-export * from './dotenvx.com'
-export * from './dotnet.microsoft.com'
-export * from './doxygen.nl'
-export * from './dozzle.dev'
-export * from './dprint.dev'
-export * from './dri.freedesktop.org'
-export * from './duckdb.org'
-export * from './duktape.org'
-export * from './dystroy.org'
-export * from './dystroy.org-bacon'
-export * from './earthly.dev'
-export * from './ebassi.github.io'
-export * from './edgedb.com'
-export * from './eigen.tuxfamily.org'
-export * from './eksctl.io'
-export * from './elementsproject.org'
-export * from './elfutils.org'
-export * from './elixir-lang.org'
-export * from './elizaOS.github.io'
-export * from './elv.sh'
-export * from './encore.dev'
-export * from './endoflife.date'
-export * from './epsilon-project.sourceforge.io'
-export * from './erlang.org'
-export * from './etcd.io'
-export * from './exiftool.org'
-export * from './expo.dev'
-export * from './eyrie.org'
-export * from './f1bonacc1.github.io'
-export * from './fabianlindfors.se'
-export * from './facebook.com'
-export * from './fairwinds.com'
-export * from './fastlane.tools'
-export * from './felixkratz.github.io'
-export * from './fermyon.com'
-export * from './ffmpeg.org'
-export * from './fftw.org'
-export * from './filippo.io'
-export * from './fishshell.com'
-export * from './flipt.io'
-export * from './flit.pypa.io'
-export * from './fltk.org'
-export * from './fluentci.io'
-export * from './flutter.dev'
-export * from './fluxcd.io'
-export * from './fly.io'
-export * from './flywaydb.org'
-export * from './fmt.dev'
-export * from './fna-xna.github.io'
-export * from './freedesktop.org'
-export * from './freeglut.sourceforge.io'
-export * from './freetds.org'
-export * from './freetype.org'
-export * from './frei0r.dyne.org'
-export * from './fuellabs.github.io'
-export * from './fukuchi.org'
-export * from './fullstory.com'
-export * from './fury.co'
-export * from './fx.wtf'
-export * from './gaia-gis.it'
-export * from './gdal.org'
-export * from './geoff.greer.fm'
-export * from './getclipboard.app'
-export * from './getcomposer.org'
-export * from './getfoundry.sh'
-export * from './getsops.io'
-export * from './getsynth.com'
-export * from './getzola.org'
-export * from './geuz.org'
-export * from './gflags.github.io'
-export * from './ghostgum.com.au'
-export * from './ghostscript.com'
-export * from './giflib.sourceforge.io'
-export * from './git-cliff.org'
-export * from './git-lfs.com'
-export * from './git-quick-stats.sh'
-export * from './git-scm.org'
-export * from './git-town.com'
-export * from './git.osgeo.org'
-export * from './git.tozt.net'
-export * from './github.com'
-export * from './github.com-0age-create2crunch'
-export * from './github.com-blacktop-lporg'
-export * from './github.com-blynn-nex'
-export * from './github.com-Cyfrin-safe-tx-hashes-util'
-export * from './github.com-Diniboy1123-usque'
-export * from './github.com-fastfetch-cli-fastfetch'
-export * from './github.com-fiatjaf-nak'
-export * from './github.com-git-ecosystem-git-credential-manager'
-export * from './github.com-glauth-glauth'
-export * from './github.com-igorshubovych-markdownlint-cli'
-export * from './github.com-jarun-nnn'
-export * from './github.com-koekeishiya-skhd'
-export * from './github.com-lucianosrp-rye-uv'
-export * from './github.com-mas-cli-mas'
-export * from './github.com-MilesCranmer-rip2'
-export * from './github.com-MinseokOh-toml-cli'
-export * from './github.com-mycreepy-pakku'
-export * from './github.com-Parchive-par2cmdline'
-export * from './github.com-peak-s5cmd'
-export * from './github.com-peripheryapp-periphery'
-export * from './github.com-shaka-project-shaka-packager'
-export * from './github.com-sorah-envchain'
-export * from './github.com-spencerkimball-stargazers'
-export * from './github.com-withered-magic-starpls'
-export * from './gitlab.com'
-export * from './gitleaks.io'
-export * from './glaros.dtc.umn.edu'
-export * from './gleam.run'
-export * from './glew.sourceforge.io'
-export * from './glfw.org'
-export * from './glm.g-truc.net'
-export * from './gnome.org'
-export * from './gnu.org'
-export * from './gnupg.org'
-export * from './gnuplot.info'
-export * from './gnutls.org'
-export * from './go.dev'
-export * from './go.uber.org'
-export * from './gohugo.io'
-export * from './golangci-lint.run'
-export * from './gomplate.ca'
-export * from './google.com'
-export * from './google.github.io'
-export * from './goreleaser.com'
-export * from './gource.io'
-export * from './gphoto.org'
-export * from './gqlgen.com'
-export * from './gradle.org'
-export * from './grafana.com'
-export * from './granted.dev'
-export * from './graphicsmagick.org'
-export * from './graphite.sil.org'
-export * from './graphqleditor.com'
-export * from './graphviz.org'
-export * from './groonga.org'
-export * from './groovy-lang.org'
-export * from './grpc.io'
-export * from './gstreamer.freedesktop.org'
-export * from './gtk.org'
-export * from './gts.sourceforge.net'
-export * from './hadrons.org'
-export * from './harding.motd.ca'
-export * from './harfbuzz.org'
-export * from './hashicorp.com'
-export * from './haskell.org'
-export * from './hasura.io'
-export * from './hatch.pypa.io'
-export * from './hboehm.info'
-export * from './hdfgroup.org'
-export * from './heasarc.gsfc.nasa.gov'
-export * from './helix-editor.com'
-export * from './helm.sh'
-export * from './heroku.com'
-export * from './hetzner.com'
-export * from './hjson.github.io'
-export * from './html-tidy.org'
-export * from './htop.dev'
-export * from './htslib.org'
-export * from './httpie.io'
-export * from './huggingface.co'
-export * from './hugo.wang'
-export * from './hunspell.github.io'
-export * from './hurl.dev'
-export * from './ibr.cs.tu-bs.de'
-export * from './idleberg.github.io'
-export * from './ijg.org'
-export * from './imageflow.io'
-export * from './imagemagick.org'
-export * from './indexsupply.com'
-export * from './info-zip.org'
-export * from './infracost.io'
-export * from './intel.com'
-export * from './invisible-island.net'
-export * from './invisible-island.net-lynx'
-export * from './ipfs.tech'
-export * from './ipython.org'
-export * from './iroh.computer'
-export * from './isc.org'
-export * from './isc.org-bind9'
-export * from './istio.io'
-export * from './itstool.org'
-export * from './ivarch.com'
-export * from './jbang.dev'
-export * from './jbig2dec.com'
-export * from './jedisct1.github.io'
-export * from './jedsoft.org'
-export * from './jemalloc.net'
-export * from './jenkins-x.io'
-export * from './jenkins.io'
-export * from './jenv.be'
-export * from './jetporch.com'
-export * from './jfrog.com'
-export * from './jless.io'
-export * from './jonas.github.io'
-export * from './jpeg.org'
-export * from './jsonnet.org'
-export * from './jugit.fz-juelich.de'
-export * from './juju.is'
-export * from './julialang.org'
-export * from './jumppad.dev'
-export * from './jupyter.org'
-export * from './just.systems'
-export * from './k3d.io'
-export * from './k6.io'
-export * from './k9scli.io'
-export * from './kafka.apache.org'
-export * from './kaggle.com'
-export * from './keephq.dev'
-export * from './kerberos.org'
-export * from './kernel.org'
-export * from './kernel.org-libcap'
-export * from './khanacademy.org'
-export * from './khronos.org'
-export * from './kind.sigs.k8s.io'
-export * from './kislyuk.github.io'
-export * from './kluctl.io'
-export * from './ko.build'
-export * from './kornel.ski'
-export * from './kotlinlang.org'
-export * from './koyeb.com'
-export * from './kpt.dev'
-export * from './krew.sigs.k8s.io'
-export * from './ktlint.github.io'
-export * from './kubebuilder.io'
-export * from './kubecm.cloud'
-export * from './kubectx.dev'
-export * from './kubelinter.io'
-export * from './kubernetes.io'
-export * from './kubeshark.co'
-export * from './ladspa.org'
-export * from './lame.sourceforge.io'
-export * from './langchain.com'
-export * from './laravel.com'
-export * from './lavinmq.com'
-export * from './lcdf.org'
-export * from './leethomason.github.io'
-export * from './leo-lang.org'
-export * from './leonerd.org.uk'
-export * from './leptonica.org'
-export * from './lftp.yar.ru'
-export * from './libarchive.org'
-export * from './libcxx.llvm.org'
-export * from './libevent.org'
-export * from './libexif.github.io'
-export * from './libexpat.github.io'
-export * from './libgd.github.io'
-export * from './libgeos.org'
-export * from './libgit2.org'
-export * from './libimobiledevice.org'
-export * from './libisl.sourceforge.io'
-export * from './libjpeg-turbo.org'
-export * from './liblqr.wikidot.com'
-export * from './libpipeline.gitlab.io'
-export * from './libpng.org'
-export * from './libproxy.github.io'
-export * from './libraw.org'
-export * from './libsdl.org'
-export * from './libsodium.org'
-export * from './libsoup.org'
-export * from './libspng.org'
-export * from './libssh2.org'
-export * from './libssh.org'
-export * from './libtom.net'
-export * from './liburcu.org'
-export * from './libusb.info'
-export * from './libuv.org'
-export * from './libvips.org'
-export * from './libwebsockets.org'
-export * from './libzip.org'
-export * from './lima-vm.io'
-export * from './linkerd.io'
-export * from './linux-pam.org'
-export * from './litecli.com'
-export * from './littlecms.com'
-export * from './llm.datasette.io'
-export * from './lloyd.github.io'
-export * from './llvm.org'
-export * from './localai.io'
-export * from './localstack.cloud'
-export * from './logdy.dev'
-export * from './logological.org'
-export * from './lua.org'
-export * from './luajit.org'
-export * from './luarocks.org'
-export * from './lucagrulla.com'
-export * from './lunarvim.org'
-export * from './lxml.de'
-export * from './lychee.cli.rs'
-export * from './lz4.org'
-export * from './maaslalani.com'
-export * from './macvim.org'
-export * from './mailpit.axllent.org'
-export * from './makotemplates.org'
-export * from './man-db.gitlab.io'
-export * from './mandoc.bsd.lv'
-export * from './mariadb.com'
-export * from './markupsafe.palletsprojects.com'
-export * from './materialize.com'
-export * from './matio.sourceforge.io'
-export * from './maturin.rs'
-export * from './maven.apache.org'
-export * from './mcmc-jags.sourceforge.io'
-export * from './mercure.rocks'
-export * from './mercurial-scm.org'
-export * from './mergestat.com'
-export * from './mesa3d.org'
-export * from './mesonbuild.com'
-export * from './micro-editor.github.io'
-export * from './microbrew.org'
-export * from './microcks.io'
-export * from './microsoft.com'
-export * from './microsoft.com-code-cli'
-export * from './microsoft.com-markitdown'
-export * from './midnight-commander.org'
-export * from './min.io'
-export * from './mise.jdx.dev'
-export * from './mitmproxy.org'
-export * from './mkcert.dev'
-export * from './mkdocs.org'
-export * from './modal.com'
-export * from './modernc.org'
-export * from './modernc.org-goyacc'
-export * from './mongodb.com'
-export * from './moonrepo.dev'
-export * from './mosh.org'
-export * from './mozilla.org'
-export * from './mozilla.org-cbindgen'
-export * from './mpg123.de'
-export * from './mpmath.org'
-export * from './mpv.io'
-export * from './msgpack.org'
-export * from './mujs.com'
-export * from './mun-lang.org'
-export * from './mupdf.com'
-export * from './musepack.net'
-export * from './musl.libc.org'
-export * from './mvdan.cc'
-export * from './mvdan.cc-gofumpt'
-export * from './mypy-lang.org'
-export * from './mysql.com'
-export * from './nano-editor.org'
-export * from './nasm.us'
-export * from './neovim.io'
-export * from './netflix.com'
-export * from './netlib.org'
-export * from './netpbm.sourceforge.net'
-export * from './networkx.org'
-export * from './nghttp2.org'
-export * from './nginx.org'
-export * from './nike.com'
-export * from './nim-lang.org'
-export * from './ninja-build.org'
-export * from './nixos.org'
-export * from './nixpacks.com'
-export * from './nlnetlabs.nl'
-export * from './nmap.org'
-export * from './node'
-export * from './nomadproject.io'
-export * from './nongnu.org'
-export * from './notroj.github.io'
-export * from './npmjs.com'
-export * from './ntp.org'
-export * from './numbat.dev'
-export * from './numpy.org'
-export * from './nushell.sh'
-export * from './nx.dev'
-export * from './oauth2-proxy.github.io'
-export * from './oberhumer.com'
-export * from './oberhumer.com-ucl'
-export * from './odigos.io'
-export * from './ohmyposh.dev'
-export * from './ollama.ai'
-export * from './onefetch.dev'
-export * from './onsi.github.io'
-export * from './open-mpi.org'
-export * from './openai.com'
-export * from './openapi-generator.tech'
-export * from './openbao.org'
-export * from './openblas.net'
-export * from './opencore-amr.sourceforge.io'
-export * from './opendap.org'
-export * from './opendev.org'
-export * from './openexr.com'
-export * from './openinterpreter.com'
-export * from './openjdk.org'
-export * from './openjpeg.org'
-export * from './openldap.org'
-export * from './openldap.org-liblmdb'
-export * from './openmp.llvm.org'
-export * from './openpmix.github.io'
-export * from './openpolicyagent.org'
-export * from './openprinting.github.io'
-export * from './openresty.org'
-export * from './opensearch.org'
-export * from './openshift.com'
-export * from './openslide.org'
-export * from './openssh.com'
-export * from './openssl.org'
-export * from './opentofu.org'
-export * from './openvpn.net'
-export * from './operatorframework.io'
-export * from './opus-codec.org'
-export * from './oracle.com'
-export * from './oras.land'
-export * from './ordinals.com'
-export * from './orhun.dev'
-export * from './ots.sniptt.com'
-export * from './packer.io'
-export * from './pagure.io'
-export * from './palletsprojects.com'
-export * from './pandoc.org'
-export * from './pantsbuild.org'
-export * from './paulfitz.github.io'
-export * from './pcre.org'
-export * from './pcsclite.apdu.fr'
-export * from './pdm.fming.dev'
-export * from './people.engr.tamu.edu'
-export * from './people.redhat.com'
-export * from './perl.org'
-export * from './permit.io'
-export * from './php.net'
-export * from './phpmyadmin.net'
-export * from './pimalaya.org'
-export * from './pinniped.dev'
-export * from './pip.pypa.io'
-export * from './pipenv.pypa.io'
-export * from './pixman.org'
-export * from './pkgx.sh'
-export * from './pkgx.sh-dev'
-export * from './pkgx.sh-pkgm'
-export * from './pkl-lang.org'
-export * from './planetscale.com'
-export * from './plantuml.com'
-export * from './plasmasturm.org'
-export * from './plocate.sesse.net'
-export * from './pluralith.com'
-export * from './pngquant.org'
-export * from './pnpm.io'
-export * from './po4a.org'
-export * from './pocketbase.io'
-export * from './podman.io'
-export * from './pokt.network'
-export * from './poppler.freedesktop.org'
-export * from './portaudio.com'
-export * from './postgresql.org'
-export * from './postgrest.org'
-export * from './practical-scheme.net'
-export * from './pre-commit.com'
-export * from './prefix.dev'
-export * from './pressly.github.io'
-export * from './prettier.io'
-export * from './printfn.github.io'
-export * from './priver.dev'
-export * from './proj.org'
-export * from './project-copacetic.github.io'
-export * from './projectdiscovery.io'
-export * from './projectdiscovery.io-nuclei'
-export * from './projen.io'
-export * from './protobuf.dev'
-export * from './prql-lang.org'
-export * from './psycopg.org'
-export * from './public.hronopik.de'
-export * from './pugixml.org'
-export * from './pulumi.io'
-export * from './pwgen.sourceforge.io'
-export * from './pwmt.org'
-export * from './pygments.org'
-export * from './pyinvoke.org'
-export * from './pypa.github.io'
-export * from './pypa.io'
-export * from './pytest.org'
-export * from './python-pillow.org'
-export * from './python-poetry.org'
-export * from './python.org'
-export * from './pyyaml.org'
-export * from './qemu.org'
-export * from './qhull.org'
-export * from './qpdf.sourceforge.io'
-export * from './qt.io'
-export * from './quary.dev'
-export * from './quickwit.io'
-export * from './r-wos.org'
-export * from './rabbitmq.com'
-export * from './raccoin.org'
-export * from './radicle.org'
-export * from './railway.app'
-export * from './rapidjson.org'
-export * from './rarlab.com'
-export * from './rbenv.org'
-export * from './rclone.org'
-export * from './re2c.org'
-export * from './reacher.email'
-export * from './rebar3.org'
-export * from './redis.io'
-export * from './render.com'
-export * from './replibyte.com'
-export * from './restic.net'
-export * from './rhash.sourceforge.net'
-export * from './rigaux.org'
-export * from './riverbankcomputing.com'
-export * from './robotframework.org'
-export * from './rockdaboot.github.io'
-export * from './rome.tools'
-export * from './rpm.org'
-export * from './rsync.samba.org'
-export * from './rtmpdump.mplayerhq.hu'
-export * from './rtomayko.github.io'
-export * from './rubocop.org'
-export * from './ruby-lang.org'
-export * from './rubygems.org'
-export * from './rucio.cern.ch'
-export * from './runatlantis.io'
-export * from './rust-lang.github.io'
-export * from './rust-lang.org'
-export * from './rust-lang.org-rust-bindgen'
-export * from './rust-script.org'
-export * from './rye.astral.sh'
-export * from './s3tools.org'
-export * from './saerasoft.com'
-export * from './sagiegurari.github.io'
-export * from './sass-lang.com'
-export * from './savannah.nongnu.org'
-export * from './scala-lang.org'
-export * from './scala-sbt.org'
-export * from './scaleway.com'
-export * from './schollz.com'
-export * from './scons.org'
-export * from './scryer.pl'
-export * from './sdkman.io'
-export * from './seaweedfs.com'
-export * from './sentry.io'
-export * from './sf.net'
-export * from './sfcgal.org'
-export * from './sftpgo.com'
-export * from './shellcheck.net'
-export * from './sigstore.dev'
-export * from './simplesystems.org'
-export * from './sing-box.app'
-export * from './skaffold.dev'
-export * from './smartmontools.org'
-export * from './snaplet.dev'
-export * from './sniffnet.net'
-export * from './snyk.io'
-export * from './solana.com'
-export * from './soldeer.xyz'
-export * from './soliditylang.org'
-export * from './sonarqube.org'
-export * from './sourceforge.net'
-export * from './sourceware.org'
-export * from './soxr.sourceforge.net'
-export * from './spacetimedb.com'
-export * from './spawn.link'
-export * from './speex.org'
-export * from './sphinx-doc.org'
-export * from './sqlc.dev'
-export * from './sqlfluff.com'
-export * from './sqlite.org'
-export * from './squawkhq.com'
-export * from './srtalliance.org'
-export * from './sshx.io'
-export * from './starship.rs'
-export * from './steampipe.io'
-export * from './stedolan.github.io'
-export * from './strace.io'
-export * from './streamlink.github.io'
-export * from './stripe.com'
-export * from './supabase.com'
-export * from './surrealdb.com'
-export * from './svenstaro.github.io'
-export * from './swagger.io'
-export * from './swift.org'
-export * from './swig.org'
-export * from './symfony.com'
-export * from './sympy.org'
-export * from './syncthing.net'
-export * from './systemd.io'
-export * from './taglib.org'
-export * from './tailcall.run'
-export * from './tailwindcss.com'
-export * from './taku910.github.io'
-export * from './talos.dev'
-export * from './taplo.tamasfe.dev'
-export * from './tart.run'
-export * from './taskfile.dev'
-export * from './tcl-lang.org'
-export * from './tcl.tk'
-export * from './tcpdump.org'
-export * from './tcsh.org'
-export * from './tea.xyz'
-export * from './tectonic-typesetting.github.io'
-export * from './templ.guide'
-export * from './temporal.io'
-export * from './terraform-docs.io'
-export * from './terraform.io'
-export * from './terragrunt.gruntwork.io'
-export * from './terratag.io'
-export * from './tesseract-ocr.github.io'
-export * from './thekelleys.org.uk'
-export * from './theora.org'
-export * from './thoughtworks.github.io'
-export * from './thrysoee.dk'
-export * from './tidbyt.com'
-export * from './tilt.dev'
-export * from './tinybird.co'
-export * from './tinygo.org'
-export * from './tldr.sh'
-export * from './tlr.dev'
-export * from './tmate.io'
-export * from './tox.wiki'
-export * from './traefik.io'
-export * from './tree-sitter.github.io'
-export * from './trippy.cli.rs'
-export * from './trufflesecurity.com'
-export * from './tsl0922.github.io'
-export * from './tuist.io'
-export * from './tukaani.org'
-export * from './turso.tech'
-export * from './typescriptlang.org'
-export * from './typst.app'
-export * from './unbound.net'
-export * from './undefined'
-export * from './unicode.org'
-export * from './unidata.ucar.edu'
-export * from './unixodbc.org'
-export * from './upliftci.dev'
-export * from './upx.github.io'
-export * from './uriparser.github.io'
-export * from './vale.sh'
-export * from './valkey.io'
-export * from './vamp-plugins.org'
-export * from './vanna.ai'
-export * from './vapoursynth.com'
-export * from './vaultproject.io'
-export * from './vcluster.com'
-export * from './vektra.github.io'
-export * from './velero.io'
-export * from './veracode.com'
-export * from './vercel.com'
-export * from './versity.com'
-export * from './viaduct.ai'
-export * from './viaduct.ai-ksops'
-export * from './videolan.org'
-export * from './vim.org'
-export * from './virtualenv.pypa.io'
-export * from './virtualsquare.org'
-export * from './vitejs.dev'
-export * from './vlang.io'
-export * from './volta.sh'
-export * from './wails.io'
-export * from './wait4x.dev'
-export * from './wasmer.io'
-export * from './watchexec.github.io'
-export * from './waterlan.home.xs4all.nl'
-export * from './wavpack.com'
-export * from './wayland.freedesktop.org'
-export * from './webmproject.org'
-export * from './werf.io'
-export * from './wezfurlong.org'
-export * from './wilfred.me.uk'
-export * from './wimlib.net'
-export * from './wireshark.org'
-export * from './wix.com'
-export * from './wkentaro.github.io'
-export * from './wpewebkit.org'
-export * from './wundergraph.com'
-export * from './wxwidgets.org'
-export * from './x.org'
-export * from './x.org-xscrnsaver'
-export * from './xcfile.dev'
-export * from './xerces.apache.org'
-export * from './xiph.org'
-export * from './xkbcommon.org'
-export * from './xplr.dev'
-export * from './xpra.org'
-export * from './xtls.github.io'
-export * from './xvid.com'
-export * from './yadm.io'
-export * from './yarnpkg.com'
-export * from './yasm.tortall.net'
-export * from './youtube-dl.org'
-export * from './yt-dlp.org'
-export * from './yui.github.io'
-export * from './zarf.dev'
-export * from './zeromq.org'
-export * from './ziglang.org'
-export * from './zlib.net'
-export * from './zrok.io'
-export * from './zsh.sourceforge.io'
-
-// Define Pantry type
 export interface Pantry {
-  abseilio: abseilio.AbseilioPackage
-  acornio: acornio.AcornioPackage
-  agptco: agptco.AgptcoPackage
-  agwanamegitcrypt: agwaname_git_crypt.AgwanamegitcryptPackage
-  akuityio: akuityio.AkuityioPackage
-  alacrittyorg: alacrittyorg.AlacrittyorgPackage
-  alembicsqlalchemyorg: alembicsqlalchemyorg.AlembicsqlalchemyorgPackage
-  aliases: aliases.AliasesPackage
-  alsaprojectorg: alsa_projectorg.AlsaprojectorgPackage
-  amberlangcom: amber_langcom.AmberlangcomPackage
-  amprs: amprs.AmprsPackage
-  amrdevelopergithubio: amrdevelopergithubio.AmrdevelopergithubioPackage
-  anchorecom: anchorecom.AnchorecomPackage
-  androidcom: androidcom.AndroidcomPackage
-  angulardev: angulardev.AngulardevPackage
-  ansiblecom: ansiblecom.AnsiblecomPackage
-  aomediagooglesourcecom: aomediagooglesourcecom.AomediagooglesourcecomPackage
-  apacheorg: apacheorg.ApacheorgPackage
-  apktoolorg: apktoolorg.ApktoolorgPackage
-  apollographqlcom: apollographqlcom.ApollographqlcomPackage
-  appiumio: appiumio.AppiumioPackage
-  applecom: applecom.ApplecomPackage
-  applecomremote_cmds: applecom_remote_cmds.Applecomremote_cmdsPackage
-  apptainerorg: apptainerorg.ApptainerorgPackage
-  aquasecuritygithubio: aquasecuritygithubio.AquasecuritygithubioPackage
-  arduinogithubio: arduinogithubio.ArduinogithubioPackage
-  argbashdev: argbashdev.ArgbashdevPackage
-  argoprojgithubio: argoprojgithubio.ArgoprojgithubioPackage
-  aria2githubio: aria2githubio.Aria2githubioPackage
-  arkadedev: arkadedev.ArkadedevPackage
-  asciidoctororg: asciidoctororg.AsciidoctororgPackage
-  asciinemaorg: asciinemaorg.AsciinemaorgPackage
-  aspellnet: aspellnet.AspellnetPackage
-  assimporg: assimporg.AssimporgPackage
-  astgrepgithubio: ast_grepgithubio.AstgrepgithubioPackage
-  astralsh: astralsh.AstralshPackage
-  astralshruff: astralsh_ruff.AstralshruffPackage
-  astralshty: astralsh_ty.AstralshtyPackage
-  astralshuv: astralsh_uv.AstralshuvPackage
-  atlasgoio: atlasgoio.AtlasgoioPackage
-  attrsorg: attrsorg.AttrsorgPackage
-  augeasnet: augeasnet.AugeasnetPackage
-  authzedcom: authzedcom.AuthzedcomPackage
-  aux4io: aux4io.Aux4ioPackage
-  awsamazoncom: awsamazoncom.AwsamazoncomPackage
-  awsamazoncomcli: awsamazoncom_cli.AwsamazoncomcliPackage
-  awsamazoncomsam: awsamazoncom_sam.AwsamazoncomsamPackage
-  bashlydannybco: bashlydannybco.BashlydannybcoPackage
-  bcryptsourceforgenet: bcryptsourceforgenet.BcryptsourceforgenetPackage
-  beyondgrepcom: beyondgrepcom.BeyondgrepcomPackage
-  biomejsdev: biomejsdev.BiomejsdevPackage
-  bitcoinorg: bitcoinorg.BitcoinorgPackage
-  bittensorcom: bittensorcom.BittensorcomPackage
-  bitwardencom: bitwardencom.BitwardencomPackage
-  blake2net: blake2net.Blake2netPackage
-  bloomreachcom: bloomreachcom.BloomreachcomPackage
-  boostorg: boostorg.BoostorgPackage
-  borepub: borepub.BorepubPackage
-  breakfastquaycom: breakfastquaycom.BreakfastquaycomPackage
-  browserusecom: browser_usecom.BrowserusecomPackage
-  brxken128githubio: brxken128githubio.Brxken128githubioPackage
-  budimanjojogithubio: budimanjojogithubio.BudimanjojogithubioPackage
-  bufbuild: bufbuild.BufbuildPackage
-  buildpacksio: buildpacksio.BuildpacksioPackage
-  bunsh: bunsh.BunshPackage
-  bytebasecom: bytebasecom.BytebasecomPackage
-  bytereeforg: bytereeforg.BytereeforgPackage
-  caresorg: c_aresorg.CaresorgPackage
-  caddyservercom: caddyservercom.CaddyservercomPackage
-  cairographicsorg: cairographicsorg.CairographicsorgPackage
-  capstoneengineorg: capstone_engineorg.CapstoneengineorgPackage
-  carapacesh: carapacesh.CarapaceshPackage
-  caskreadthedocsio: caskreadthedocsio.CaskreadthedocsioPackage
-  catborg: catborg.CatborgPackage
-  ccachedev: ccachedev.CcachedevPackage
-  cedarpolicycom: cedarpolicycom.CedarpolicycomPackage
-  cedarpolicycomcli: cedarpolicycom_cli.CedarpolicycomcliPackage
-  cephcom: cephcom.CephcomPackage
-  cephcomcephadm: cephcom_cephadm.CephcomcephadmPackage
-  ceressolverorg: ceres_solverorg.CeressolverorgPackage
-  certbotefforg: certbotefforg.CertbotefforgPackage
-  certifiio: certifiio.CertifiioPackage
-  cgalorg: cgalorg.CgalorgPackage
-  changiedev: changiedev.ChangiedevPackage
-  charmsh: charmsh.CharmshPackage
-  checkovio: checkovio.CheckovioPackage
-  chezmoiio: chezmoiio.ChezmoiioPackage
-  chiarkgreenendorguk: chiarkgreenendorguk.ChiarkgreenendorgukPackage
-  chromedriverchromiumorg: chromedriverchromiumorg.ChromedriverchromiumorgPackage
-  ciliumio: ciliumio.CiliumioPackage
-  circlecicom: circlecicom.CirclecicomPackage
-  ciscocom: ciscocom.CiscocomPackage
-  classicyarnpkgcom: classicyarnpkgcom.ClassicyarnpkgcomPackage
-  cligithubcom: cligithubcom.CligithubcomPackage
-  clisporg: clisporg.ClisporgPackage
-  clogtoolgithubio: clog_toolgithubio.ClogtoolgithubioPackage
-  cloudflarecom: cloudflarecom.CloudflarecomPackage
-  cloudfoundryorg: cloudfoundryorg.CloudfoundryorgPackage
-  cloudnativepgio: cloudnative_pgio.CloudnativepgioPackage
-  cmakeorg: cmakeorg.CmakeorgPackage
-  cmockaorg: cmockaorg.CmockaorgPackage
-  cnqueryio: cnqueryio.CnqueryioPackage
-  cocoapodsorg: cocoapodsorg.CocoapodsorgPackage
-  cocoapodsorgxcodeproj: cocoapodsorg_xcodeproj.CocoapodsorgxcodeprojPackage
-  cocogittoio: cocogittoio.CocogittoioPackage
-  codevideolanorg: codevideolanorg.CodevideolanorgPackage
-  codercom: codercom.CodercomPackage
-  cointopsh: cointopsh.CointopshPackage
-  condaorg: condaorg.CondaorgPackage
-  conftestdev: conftestdev.ConftestdevPackage
-  connectrpcorg: connectrpcorg.ConnectrpcorgPackage
-  consulio: consulio.ConsulioPackage
-  convcogithubio: convcogithubio.ConvcogithubioPackage
-  corednsio: corednsio.CorednsioPackage
-  cpanminus: cpanminus.CpanminusPackage
-  crypto: crypto.CryptoPackage
-  cratesio: cratesio.CratesioPackage
-  cratesioaichat: cratesio_aichat.CratesioaichatPackage
-  cratesiobakers: cratesio_bake_rs.CratesiobakersPackage
-  cratesiocargotarpaulin: cratesio_cargo_tarpaulin.CratesiocargotarpaulinPackage
-  cratesioducker: cratesio_ducker.CratesioduckerPackage
-  cratesioflamegraph: cratesio_flamegraph.CratesioflamegraphPackage
-  cratesioox: cratesio_ox.CratesiooxPackage
-  cratesiopik: cratesio_pik.CratesiopikPackage
-  cratesioqsv: cratesio_qsv.CratesioqsvPackage
-  cratesioripgrepall: cratesio_ripgrep_all.CratesioripgrepallPackage
-  cratesiorucolanotes: cratesio_rucola_notes.CratesiorucolanotesPackage
-  cratesiosamply: cratesio_samply.CratesiosamplyPackage
-  crazymaxdev: crazymaxdev.CrazymaxdevPackage
-  creativeprojectsgithubio: creativeprojectsgithubio.CreativeprojectsgithubioPackage
-  cruftgithubio: cruftgithubio.CruftgithubioPackage
-  cryptographyio: cryptographyio.CryptographyioPackage
-  crystallangorg: crystal_langorg.CrystallangorgPackage
-  cscopesourceforgeio: cscopesourceforgeio.CscopesourceforgeioPackage
-  csientuedutw: csientuedutw.CsientuedutwPackage
-  ctagsio: ctagsio.CtagsioPackage
-  ctopsh: ctopsh.CtopshPackage
-  cuelangorg: cuelangorg.CuelangorgPackage
-  curlse: curlse.CurlsePackage
-  curlieio: curlieio.CurlieioPackage
-  cyrusimaporg: cyrusimaporg.CyrusimaporgPackage
-  cythonorg: cythonorg.CythonorgPackage
-  d2langcom: d2langcom.D2langcomPackage
-  daggerio: daggerio.DaggerioPackage
-  dartdev: dartdev.DartdevPackage
-  darwinsyscom: darwinsyscom.DarwinsyscomPackage
-  databrickscom: databrickscom.DatabrickscomPackage
-  daytonaio: daytonaio.DaytonaioPackage
-  dblabdanvergaracom: dblabdanvergaracom.DblabdanvergaracomPackage
-  debianorg: debianorg.DebianorgPackage
-  deepwisdomai: deepwisdomai.DeepwisdomaiPackage
-  denilsonsanombr: denilsonsanombr.DenilsonsanombrPackage
-  denoland: denoland.DenolandPackage
-  depotdev: depotdev.DepotdevPackage
-  destunreachorg: dest_unreachorg.DestunreachorgPackage
-  devyorhelnl: devyorhelnl.DevyorhelnlPackage
-  developer1passwordcom: developer1passwordcom.Developer1passwordcomPackage
-  developer1passwordcom1passwordcli: developer1passwordcom_1password_cli.Developer1passwordcom1passwordcliPackage
-  developersyubicocom: developersyubicocom.DevelopersyubicocomPackage
-  devpodsh: devpodsh.DevpodshPackage
-  dgraphio: dgraphio.DgraphioPackage
-  dhalllangorg: dhall_langorg.DhalllangorgPackage
-  dhruvkbdev: dhruvkbdev.DhruvkbdevPackage
-  diggerdev: diggerdev.DiggerdevPackage
-  digiporg: digiporg.DigiporgPackage
-  digitaloceancom: digitaloceancom.DigitaloceancomPackage
-  direnvnet: direnvnet.DirenvnetPackage
-  dkrzde: dkrzde.DkrzdePackage
-  dnslookupdog: dnslookupdog.DnslookupdogPackage
-  docbookorg: docbookorg.DocbookorgPackage
-  dockercom: dockercom.DockercomPackage
-  doctavecom: doctavecom.DoctavecomPackage
-  docutilsorg: docutilsorg.DocutilsorgPackage
-  dotenvlintergithubio: dotenv_lintergithubio.DotenvlintergithubioPackage
-  dotenvxcom: dotenvxcom.DotenvxcomPackage
-  dotnetmicrosoftcom: dotnetmicrosoftcom.DotnetmicrosoftcomPackage
-  doxygennl: doxygennl.DoxygennlPackage
-  dozzledev: dozzledev.DozzledevPackage
-  dprintdev: dprintdev.DprintdevPackage
-  drifreedesktoporg: drifreedesktoporg.DrifreedesktoporgPackage
-  duckdborg: duckdborg.DuckdborgPackage
-  duktapeorg: duktapeorg.DuktapeorgPackage
-  dystroyorg: dystroyorg.DystroyorgPackage
-  dystroyorgbacon: dystroyorg_bacon.DystroyorgbaconPackage
-  earthlydev: earthlydev.EarthlydevPackage
-  ebassigithubio: ebassigithubio.EbassigithubioPackage
-  edgedbcom: edgedbcom.EdgedbcomPackage
-  eigentuxfamilyorg: eigentuxfamilyorg.EigentuxfamilyorgPackage
-  eksctlio: eksctlio.EksctlioPackage
-  elementsprojectorg: elementsprojectorg.ElementsprojectorgPackage
-  elfutilsorg: elfutilsorg.ElfutilsorgPackage
-  elixirlangorg: elixir_langorg.ElixirlangorgPackage
-  elizaosgithubio: elizaOSgithubio.ElizaOSgithubioPackage
-  elvsh: elvsh.ElvshPackage
-  encoredev: encoredev.EncoredevPackage
-  endoflifedate: endoflifedate.EndoflifedatePackage
-  epsilonprojectsourceforgeio: epsilon_projectsourceforgeio.EpsilonprojectsourceforgeioPackage
-  erlangorg: erlangorg.ErlangorgPackage
-  etcdio: etcdio.EtcdioPackage
-  exiftoolorg: exiftoolorg.ExiftoolorgPackage
-  expodev: expodev.ExpodevPackage
-  eyrieorg: eyrieorg.EyrieorgPackage
-  f1bonacc1githubio: f1bonacc1githubio.F1bonacc1githubioPackage
-  fabianlindforsse: fabianlindforsse.FabianlindforssePackage
-  facebookcom: facebookcom.FacebookcomPackage
-  fairwindscom: fairwindscom.FairwindscomPackage
-  fastlanetools: fastlanetools.FastlanetoolsPackage
-  felixkratzgithubio: felixkratzgithubio.FelixkratzgithubioPackage
-  fermyoncom: fermyoncom.FermyoncomPackage
-  ffmpegorg: ffmpegorg.FfmpegorgPackage
-  fftworg: fftworg.FftworgPackage
-  filippoio: filippoio.FilippoioPackage
-  fishshellcom: fishshellcom.FishshellcomPackage
-  fliptio: fliptio.FliptioPackage
-  flitpypaio: flitpypaio.FlitpypaioPackage
-  fltkorg: fltkorg.FltkorgPackage
-  fluentciio: fluentciio.FluentciioPackage
-  flutterdev: flutterdev.FlutterdevPackage
-  fluxcdio: fluxcdio.FluxcdioPackage
-  flyio: flyio.FlyioPackage
-  flywaydborg: flywaydborg.FlywaydborgPackage
-  fmtdev: fmtdev.FmtdevPackage
-  fnaxnagithubio: fna_xnagithubio.FnaxnagithubioPackage
-  freedesktoporg: freedesktoporg.FreedesktoporgPackage
-  freeglutsourceforgeio: freeglutsourceforgeio.FreeglutsourceforgeioPackage
-  freetdsorg: freetdsorg.FreetdsorgPackage
-  freetypeorg: freetypeorg.FreetypeorgPackage
-  frei0rdyneorg: frei0rdyneorg.Frei0rdyneorgPackage
-  fuellabsgithubio: fuellabsgithubio.FuellabsgithubioPackage
-  fukuchiorg: fukuchiorg.FukuchiorgPackage
-  fullstorycom: fullstorycom.FullstorycomPackage
-  furyco: furyco.FurycoPackage
-  fxwtf: fxwtf.FxwtfPackage
-  gaiagisit: gaia_gisit.GaiagisitPackage
-  gdalorg: gdalorg.GdalorgPackage
-  geoffgreerfm: geoffgreerfm.GeoffgreerfmPackage
-  getclipboardapp: getclipboardapp.GetclipboardappPackage
-  getcomposerorg: getcomposerorg.GetcomposerorgPackage
-  getfoundrysh: getfoundrysh.GetfoundryshPackage
-  getsopsio: getsopsio.GetsopsioPackage
-  getsynthcom: getsynthcom.GetsynthcomPackage
-  getzolaorg: getzolaorg.GetzolaorgPackage
-  geuzorg: geuzorg.GeuzorgPackage
-  gflagsgithubio: gflagsgithubio.GflagsgithubioPackage
-  ghostgumcomau: ghostgumcomau.GhostgumcomauPackage
-  ghostscriptcom: ghostscriptcom.GhostscriptcomPackage
-  giflibsourceforgeio: giflibsourceforgeio.GiflibsourceforgeioPackage
-  gitclifforg: git_clifforg.GitclifforgPackage
-  gitlfscom: git_lfscom.GitlfscomPackage
-  gitquickstatssh: git_quick_statssh.GitquickstatsshPackage
-  gitscmorg: git_scmorg.GitscmorgPackage
-  gittowncom: git_towncom.GittowncomPackage
-  gitosgeoorg: gitosgeoorg.GitosgeoorgPackage
-  gittoztnet: gittoztnet.GittoztnetPackage
-  githubcom: githubcom.GithubcomPackage
-  githubcom0agecreate2crunch: githubcom_0age_create2crunch.Githubcom0agecreate2crunchPackage
-  githubcomblacktoplporg: githubcom_blacktop_lporg.GithubcomblacktoplporgPackage
-  githubcomblynnnex: githubcom_blynn_nex.GithubcomblynnnexPackage
-  githubcomcyfrinsafetxhashesutil: githubcom_Cyfrin_safe_tx_hashes_util.GithubcomCyfrinsafetxhashesutilPackage
-  githubcomdiniboy1123usque: githubcom_Diniboy1123_usque.GithubcomDiniboy1123usquePackage
-  githubcomfastfetchclifastfetch: githubcom_fastfetch_cli_fastfetch.GithubcomfastfetchclifastfetchPackage
-  githubcomfiatjafnak: githubcom_fiatjaf_nak.GithubcomfiatjafnakPackage
-  githubcomgitecosystemgitcredentialmanager: githubcom_git_ecosystem_git_credential_manager.GithubcomgitecosystemgitcredentialmanagerPackage
-  githubcomglauthglauth: githubcom_glauth_glauth.GithubcomglauthglauthPackage
-  githubcomigorshubovychmarkdownlintcli: githubcom_igorshubovych_markdownlint_cli.GithubcomigorshubovychmarkdownlintcliPackage
-  githubcomjarunnnn: githubcom_jarun_nnn.GithubcomjarunnnnPackage
-  githubcomkoekeishiyaskhd: githubcom_koekeishiya_skhd.GithubcomkoekeishiyaskhdPackage
-  githubcomlucianosrpryeuv: githubcom_lucianosrp_rye_uv.GithubcomlucianosrpryeuvPackage
-  githubcommasclimas: githubcom_mas_cli_mas.GithubcommasclimasPackage
-  githubcommilescranmerrip2: githubcom_MilesCranmer_rip2.GithubcomMilesCranmerrip2Package
-  githubcomminseokohtomlcli: githubcom_MinseokOh_toml_cli.GithubcomMinseokOhtomlcliPackage
-  githubcommycreepypakku: githubcom_mycreepy_pakku.GithubcommycreepypakkuPackage
-  githubcomparchivepar2cmdline: githubcom_Parchive_par2cmdline.GithubcomParchivepar2cmdlinePackage
-  githubcompeaks5cmd: githubcom_peak_s5cmd.Githubcompeaks5cmdPackage
-  githubcomperipheryappperiphery: githubcom_peripheryapp_periphery.GithubcomperipheryappperipheryPackage
-  githubcomshakaprojectshakapackager: githubcom_shaka_project_shaka_packager.GithubcomshakaprojectshakapackagerPackage
-  githubcomsorahenvchain: githubcom_sorah_envchain.GithubcomsorahenvchainPackage
-  githubcomspencerkimballstargazers: githubcom_spencerkimball_stargazers.GithubcomspencerkimballstargazersPackage
-  githubcomwitheredmagicstarpls: githubcom_withered_magic_starpls.GithubcomwitheredmagicstarplsPackage
-  gitlabcom: gitlabcom.GitlabcomPackage
-  gitleaksio: gitleaksio.GitleaksioPackage
-  glarosdtcumnedu: glarosdtcumnedu.GlarosdtcumneduPackage
-  gleamrun: gleamrun.GleamrunPackage
-  glewsourceforgeio: glewsourceforgeio.GlewsourceforgeioPackage
-  glfworg: glfworg.GlfworgPackage
-  glmgtrucnet: glmg_trucnet.GlmgtrucnetPackage
-  gnomeorg: gnomeorg.GnomeorgPackage
-  gnuorg: gnuorg.GnuorgPackage
-  gnupgorg: gnupgorg.GnupgorgPackage
-  gnuplotinfo: gnuplotinfo.GnuplotinfoPackage
-  gnutlsorg: gnutlsorg.GnutlsorgPackage
-  godev: godev.GodevPackage
-  gouberorg: gouberorg.GouberorgPackage
-  gohugoio: gohugoio.GohugoioPackage
-  golangcilintrun: golangci_lintrun.GolangcilintrunPackage
-  gomplateca: gomplateca.GomplatecaPackage
-  googlecom: googlecom.GooglecomPackage
-  googlegithubio: googlegithubio.GooglegithubioPackage
-  goreleasercom: goreleasercom.GoreleasercomPackage
-  gourceio: gourceio.GourceioPackage
-  gphotoorg: gphotoorg.GphotoorgPackage
-  gqlgencom: gqlgencom.GqlgencomPackage
-  gradleorg: gradleorg.GradleorgPackage
-  grafanacom: grafanacom.GrafanacomPackage
-  granteddev: granteddev.GranteddevPackage
-  graphicsmagickorg: graphicsmagickorg.GraphicsmagickorgPackage
-  graphitesilorg: graphitesilorg.GraphitesilorgPackage
-  graphqleditorcom: graphqleditorcom.GraphqleditorcomPackage
-  graphvizorg: graphvizorg.GraphvizorgPackage
-  groongaorg: groongaorg.GroongaorgPackage
-  groovylangorg: groovy_langorg.GroovylangorgPackage
-  grpcio: grpcio.GrpcioPackage
-  gstreamerfreedesktoporg: gstreamerfreedesktoporg.GstreamerfreedesktoporgPackage
-  gtkorg: gtkorg.GtkorgPackage
-  gtssourceforgenet: gtssourceforgenet.GtssourceforgenetPackage
-  hadronsorg: hadronsorg.HadronsorgPackage
-  hardingmotdca: hardingmotdca.HardingmotdcaPackage
-  harfbuzzorg: harfbuzzorg.HarfbuzzorgPackage
-  hashicorpcom: hashicorpcom.HashicorpcomPackage
-  haskellorg: haskellorg.HaskellorgPackage
-  hasuraio: hasuraio.HasuraioPackage
-  hatchpypaio: hatchpypaio.HatchpypaioPackage
-  hboehminfo: hboehminfo.HboehminfoPackage
-  hdfgrouporg: hdfgrouporg.HdfgrouporgPackage
-  heasarcgsfcnasagov: heasarcgsfcnasagov.HeasarcgsfcnasagovPackage
-  helixeditorcom: helix_editorcom.HelixeditorcomPackage
-  helmsh: helmsh.HelmshPackage
-  herokucom: herokucom.HerokucomPackage
-  hetznercom: hetznercom.HetznercomPackage
-  hjsongithubio: hjsongithubio.HjsongithubioPackage
-  htmltidyorg: html_tidyorg.HtmltidyorgPackage
-  htopdev: htopdev.HtopdevPackage
-  htsliborg: htsliborg.HtsliborgPackage
-  httpieio: httpieio.HttpieioPackage
-  huggingfaceco: huggingfaceco.HuggingfacecoPackage
-  hugowang: hugowang.HugowangPackage
-  hunspellgithubio: hunspellgithubio.HunspellgithubioPackage
-  hurldev: hurldev.HurldevPackage
-  ibrcstubsde: ibrcstu_bsde.IbrcstubsdePackage
-  idleberggithubio: idleberggithubio.IdleberggithubioPackage
-  ijgorg: ijgorg.IjgorgPackage
-  imageflowio: imageflowio.ImageflowioPackage
-  imagemagickorg: imagemagickorg.ImagemagickorgPackage
-  indexsupplycom: indexsupplycom.IndexsupplycomPackage
-  infoziporg: info_ziporg.InfoziporgPackage
-  infracostio: infracostio.InfracostioPackage
-  intelcom: intelcom.IntelcomPackage
-  invisibleislandnet: invisible_islandnet.InvisibleislandnetPackage
-  invisibleislandnetlynx: invisible_islandnet_lynx.InvisibleislandnetlynxPackage
-  ipfstech: ipfstech.IpfstechPackage
-  ipythonorg: ipythonorg.IpythonorgPackage
-  irohcomputer: irohcomputer.IrohcomputerPackage
-  iscorg: iscorg.IscorgPackage
-  iscorgbind9: iscorg_bind9.Iscorgbind9Package
-  istioio: istioio.IstioioPackage
-  itstoolorg: itstoolorg.ItstoolorgPackage
-  ivarchcom: ivarchcom.IvarchcomPackage
-  jbangdev: jbangdev.JbangdevPackage
-  jbig2deccom: jbig2deccom.Jbig2deccomPackage
-  jedisct1githubio: jedisct1githubio.Jedisct1githubioPackage
-  jedsoftorg: jedsoftorg.JedsoftorgPackage
-  jemallocnet: jemallocnet.JemallocnetPackage
-  jenkinsxio: jenkins_xio.JenkinsxioPackage
-  jenkinsio: jenkinsio.JenkinsioPackage
-  jenvbe: jenvbe.JenvbePackage
-  jetporchcom: jetporchcom.JetporchcomPackage
-  jfrogcom: jfrogcom.JfrogcomPackage
-  jlessio: jlessio.JlessioPackage
-  jonasgithubio: jonasgithubio.JonasgithubioPackage
-  jpegorg: jpegorg.JpegorgPackage
-  jsonnetorg: jsonnetorg.JsonnetorgPackage
-  jugitfzjuelichde: jugitfz_juelichde.JugitfzjuelichdePackage
-  jujuis: jujuis.JujuisPackage
-  julialangorg: julialangorg.JulialangorgPackage
-  jumppaddev: jumppaddev.JumppaddevPackage
-  jupyterorg: jupyterorg.JupyterorgPackage
-  justsystems: justsystems.JustsystemsPackage
-  k3dio: k3dio.K3dioPackage
-  k6io: k6io.K6ioPackage
-  k9scliio: k9scliio.K9scliioPackage
-  kafkaapacheorg: kafkaapacheorg.KafkaapacheorgPackage
-  kagglecom: kagglecom.KagglecomPackage
-  keephqdev: keephqdev.KeephqdevPackage
-  kerberosorg: kerberosorg.KerberosorgPackage
-  kernelorg: kernelorg.KernelorgPackage
-  kernelorglibcap: kernelorg_libcap.KernelorglibcapPackage
-  khanacademyorg: khanacademyorg.KhanacademyorgPackage
-  khronosorg: khronosorg.KhronosorgPackage
-  kindsigsk8sio: kindsigsk8sio.Kindsigsk8sioPackage
-  kislyukgithubio: kislyukgithubio.KislyukgithubioPackage
-  kluctlio: kluctlio.KluctlioPackage
-  kobuild: kobuild.KobuildPackage
-  kornelski: kornelski.KornelskiPackage
-  kotlinlangorg: kotlinlangorg.KotlinlangorgPackage
-  koyebcom: koyebcom.KoyebcomPackage
-  kptdev: kptdev.KptdevPackage
-  krewsigsk8sio: krewsigsk8sio.Krewsigsk8sioPackage
-  ktlintgithubio: ktlintgithubio.KtlintgithubioPackage
-  kubebuilderio: kubebuilderio.KubebuilderioPackage
-  kubecmcloud: kubecmcloud.KubecmcloudPackage
-  kubectxdev: kubectxdev.KubectxdevPackage
-  kubelinterio: kubelinterio.KubelinterioPackage
-  kubernetesio: kubernetesio.KubernetesioPackage
-  kubesharkco: kubesharkco.KubesharkcoPackage
-  ladspaorg: ladspaorg.LadspaorgPackage
-  lamesourceforgeio: lamesourceforgeio.LamesourceforgeioPackage
-  langchaincom: langchaincom.LangchaincomPackage
-  laravelcom: laravelcom.LaravelcomPackage
-  lavinmqcom: lavinmqcom.LavinmqcomPackage
-  lcdforg: lcdforg.LcdforgPackage
-  leethomasongithubio: leethomasongithubio.LeethomasongithubioPackage
-  leolangorg: leo_langorg.LeolangorgPackage
-  leonerdorguk: leonerdorguk.LeonerdorgukPackage
-  leptonicaorg: leptonicaorg.LeptonicaorgPackage
-  lftpyarru: lftpyarru.LftpyarruPackage
-  libarchiveorg: libarchiveorg.LibarchiveorgPackage
-  libcxxllvmorg: libcxxllvmorg.LibcxxllvmorgPackage
-  libeventorg: libeventorg.LibeventorgPackage
-  libexifgithubio: libexifgithubio.LibexifgithubioPackage
-  libexpatgithubio: libexpatgithubio.LibexpatgithubioPackage
-  libgdgithubio: libgdgithubio.LibgdgithubioPackage
-  libgeosorg: libgeosorg.LibgeosorgPackage
-  libgit2org: libgit2org.Libgit2orgPackage
-  libimobiledeviceorg: libimobiledeviceorg.LibimobiledeviceorgPackage
-  libislsourceforgeio: libislsourceforgeio.LibislsourceforgeioPackage
-  libjpegturboorg: libjpeg_turboorg.LibjpegturboorgPackage
-  liblqrwikidotcom: liblqrwikidotcom.LiblqrwikidotcomPackage
-  libpipelinegitlabio: libpipelinegitlabio.LibpipelinegitlabioPackage
-  libpngorg: libpngorg.LibpngorgPackage
-  libproxygithubio: libproxygithubio.LibproxygithubioPackage
-  libraworg: libraworg.LibraworgPackage
-  libsdlorg: libsdlorg.LibsdlorgPackage
-  libsodiumorg: libsodiumorg.LibsodiumorgPackage
-  libsouporg: libsouporg.LibsouporgPackage
-  libspngorg: libspngorg.LibspngorgPackage
-  libsshorg: libsshorg.LibsshorgPackage
-  libssh2org: libssh2org.Libssh2orgPackage
-  libtomnet: libtomnet.LibtomnetPackage
-  liburcuorg: liburcuorg.LiburcuorgPackage
-  libusbinfo: libusbinfo.LibusbinfoPackage
-  libuvorg: libuvorg.LibuvorgPackage
-  libvipsorg: libvipsorg.LibvipsorgPackage
-  libwebsocketsorg: libwebsocketsorg.LibwebsocketsorgPackage
-  libziporg: libziporg.LibziporgPackage
-  limavmio: lima_vmio.LimavmioPackage
-  linkerdio: linkerdio.LinkerdioPackage
-  linuxpamorg: linux_pamorg.LinuxpamorgPackage
-  liteclicom: liteclicom.LiteclicomPackage
-  littlecmscom: littlecmscom.LittlecmscomPackage
-  llmdatasetteio: llmdatasetteio.LlmdatasetteioPackage
-  lloydgithubio: lloydgithubio.LloydgithubioPackage
-  llvmorg: llvmorg.LlvmorgPackage
-  localaiio: localaiio.LocalaiioPackage
-  localstackcloud: localstackcloud.LocalstackcloudPackage
-  logdydev: logdydev.LogdydevPackage
-  logologicalorg: logologicalorg.LogologicalorgPackage
-  luaorg: luaorg.LuaorgPackage
-  luajitorg: luajitorg.LuajitorgPackage
-  luarocksorg: luarocksorg.LuarocksorgPackage
-  lucagrullacom: lucagrullacom.LucagrullacomPackage
-  lunarvimorg: lunarvimorg.LunarvimorgPackage
-  lxmlde: lxmlde.LxmldePackage
-  lycheeclirs: lycheeclirs.LycheeclirsPackage
-  lz4org: lz4org.Lz4orgPackage
-  maaslalanicom: maaslalanicom.MaaslalanicomPackage
-  macvimorg: macvimorg.MacvimorgPackage
-  mailpitaxllentorg: mailpitaxllentorg.MailpitaxllentorgPackage
-  makotemplatesorg: makotemplatesorg.MakotemplatesorgPackage
-  mandbgitlabio: man_dbgitlabio.MandbgitlabioPackage
-  mandocbsdlv: mandocbsdlv.MandocbsdlvPackage
-  mariadbcom: mariadbcom.MariadbcomPackage
-  markupsafepalletsprojectscom: markupsafepalletsprojectscom.MarkupsafepalletsprojectscomPackage
-  materializecom: materializecom.MaterializecomPackage
-  matiosourceforgeio: matiosourceforgeio.MatiosourceforgeioPackage
-  maturinrs: maturinrs.MaturinrsPackage
-  mavenapacheorg: mavenapacheorg.MavenapacheorgPackage
-  mcmcjagssourceforgeio: mcmc_jagssourceforgeio.McmcjagssourceforgeioPackage
-  mercurerocks: mercurerocks.MercurerocksPackage
-  mercurialscmorg: mercurial_scmorg.MercurialscmorgPackage
-  mergestatcom: mergestatcom.MergestatcomPackage
-  mesa3dorg: mesa3dorg.Mesa3dorgPackage
-  mesonbuildcom: mesonbuildcom.MesonbuildcomPackage
-  microeditorgithubio: micro_editorgithubio.MicroeditorgithubioPackage
-  microbreworg: microbreworg.MicrobreworgPackage
-  microcksio: microcksio.MicrocksioPackage
-  microsoftcom: microsoftcom.MicrosoftcomPackage
-  microsoftcomcodecli: microsoftcom_code_cli.MicrosoftcomcodecliPackage
-  microsoftcommarkitdown: microsoftcom_markitdown.MicrosoftcommarkitdownPackage
-  midnightcommanderorg: midnight_commanderorg.MidnightcommanderorgPackage
-  minio: minio.MinioPackage
-  misejdxdev: misejdxdev.MisejdxdevPackage
-  mitmproxyorg: mitmproxyorg.MitmproxyorgPackage
-  mkcertdev: mkcertdev.MkcertdevPackage
-  mkdocsorg: mkdocsorg.MkdocsorgPackage
-  modalcom: modalcom.ModalcomPackage
-  moderncorg: moderncorg.ModerncorgPackage
-  moderncorggoyacc: moderncorg_goyacc.ModerncorggoyaccPackage
-  mongodbcom: mongodbcom.MongodbcomPackage
-  moonrepodev: moonrepodev.MoonrepodevPackage
-  moshorg: moshorg.MoshorgPackage
-  mozillaorg: mozillaorg.MozillaorgPackage
-  mozillaorgcbindgen: mozillaorg_cbindgen.MozillaorgcbindgenPackage
-  mpg123de: mpg123de.Mpg123dePackage
-  mpmathorg: mpmathorg.MpmathorgPackage
-  mpvio: mpvio.MpvioPackage
-  msgpackorg: msgpackorg.MsgpackorgPackage
-  mujscom: mujscom.MujscomPackage
-  munlangorg: mun_langorg.MunlangorgPackage
-  mupdfcom: mupdfcom.MupdfcomPackage
-  musepacknet: musepacknet.MusepacknetPackage
-  musllibcorg: musllibcorg.MusllibcorgPackage
-  mvdancc: mvdancc.MvdanccPackage
-  mvdanccgofumpt: mvdancc_gofumpt.MvdanccgofumptPackage
-  mypylangorg: mypy_langorg.MypylangorgPackage
-  mysqlcom: mysqlcom.MysqlcomPackage
-  nanoeditororg: nano_editororg.NanoeditororgPackage
-  nasmus: nasmus.NasmusPackage
-  neovimio: neovimio.NeovimioPackage
-  netflixcom: netflixcom.NetflixcomPackage
-  netliborg: netliborg.NetliborgPackage
-  netpbmsourceforgenet: netpbmsourceforgenet.NetpbmsourceforgenetPackage
-  networkxorg: networkxorg.NetworkxorgPackage
-  nghttp2org: nghttp2org.Nghttp2orgPackage
-  nginxorg: nginxorg.NginxorgPackage
-  nikecom: nikecom.NikecomPackage
-  nimlangorg: nim_langorg.NimlangorgPackage
-  ninjabuildorg: ninja_buildorg.NinjabuildorgPackage
-  nixosorg: nixosorg.NixosorgPackage
-  nixpackscom: nixpackscom.NixpackscomPackage
-  nlnetlabsnl: nlnetlabsnl.NlnetlabsnlPackage
-  nmaporg: nmaporg.NmaporgPackage
+  abseilio: abseil_io.AbseilioPackage
+  acornio: acorn_io.AcornioPackage
+  agptco: agpt_co.AgptcoPackage
+  agwanamegitcrypt: agwa_name_git_crypt.AgwanamegitcryptPackage
+  akuityio: akuity_io.AkuityioPackage
+  alacrittyorg: alacritty_org.AlacrittyorgPackage
+  alembicsqlalchemyorg: alembic_sqlalchemy_org.AlembicsqlalchemyorgPackage
+  alsaprojectorg: alsa_project_org.AlsaprojectorgPackage
+  amberlangcom: amber_lang_com.AmberlangcomPackage
+  amprs: amp_rs.AmprsPackage
+  amrdevelopergithubio: amrdeveloper_github_io.AmrdevelopergithubioPackage
+  anchorecom: anchore_com.AnchorecomPackage
+  androidcom: android_com.AndroidcomPackage
+  angulardev: angular_dev.AngulardevPackage
+  ansiblecom: ansible_com.AnsiblecomPackage
+  aomediagooglesourcecom: aomedia_googlesource_com.AomediagooglesourcecomPackage
+  apacheorg: apache_org.ApacheorgPackage
+  apktoolorg: apktool_org.ApktoolorgPackage
+  apollographqlcom: apollographql_com.ApollographqlcomPackage
+  appiumio: appium_io.AppiumioPackage
+  applecomremote_cmds: apple_com_remote_cmds.Applecomremote_cmdsPackage
+  applecom: apple_com.ApplecomPackage
+  apptainerorg: apptainer_org.ApptainerorgPackage
+  aquasecuritygithubio: aquasecurity_github_io.AquasecuritygithubioPackage
+  arduinogithubio: arduino_github_io.ArduinogithubioPackage
+  argbashdev: argbash_dev.ArgbashdevPackage
+  argoprojgithubio: argoproj_github_io.ArgoprojgithubioPackage
+  aria2githubio: aria2_github_io.Aria2githubioPackage
+  arkadedev: arkade_dev.ArkadedevPackage
+  asciidoctororg: asciidoctor_org.AsciidoctororgPackage
+  asciinemaorg: asciinema_org.AsciinemaorgPackage
+  aspellnet: aspell_net.AspellnetPackage
+  assimporg: assimp_org.AssimporgPackage
+  astgrepgithubio: ast_grep_github_io.AstgrepgithubioPackage
+  astralshruff: astral_sh_ruff.AstralshruffPackage
+  astralshty: astral_sh_ty.AstralshtyPackage
+  astralshuv: astral_sh_uv.AstralshuvPackage
+  astralsh: astral_sh.AstralshPackage
+  atlasgoio: atlasgo_io.AtlasgoioPackage
+  attrsorg: attrs_org.AttrsorgPackage
+  augeasnet: augeas_net.AugeasnetPackage
+  authzedcom: authzed_com.AuthzedcomPackage
+  aux4io: aux4_io.Aux4ioPackage
+  awsamazoncomcli: aws_amazon_com_cli.AwsamazoncomcliPackage
+  awsamazoncomsam: aws_amazon_com_sam.AwsamazoncomsamPackage
+  awsamazoncom: aws_amazon_com.AwsamazoncomPackage
+  bashlydannybco: bashly_dannyb_co.BashlydannybcoPackage
+  bcryptsourceforgenet: bcrypt_sourceforge_net.BcryptsourceforgenetPackage
+  beyondgrepcom: beyondgrep_com.BeyondgrepcomPackage
+  biomejsdev: biomejs_dev.BiomejsdevPackage
+  bitcoinorg: bitcoin_org.BitcoinorgPackage
+  bittensorcom: bittensor_com.BittensorcomPackage
+  bitwardencom: bitwarden_com.BitwardencomPackage
+  blake2net: blake2_net.Blake2netPackage
+  bloomreachcom: bloomreach_com.BloomreachcomPackage
+  boostorg: boost_org.BoostorgPackage
+  borepub: bore_pub.BorepubPackage
+  breakfastquaycom: breakfastquay_com.BreakfastquaycomPackage
+  browserusecom: browser_use_com.BrowserusecomPackage
+  brxken128githubio: brxken128_github_io.Brxken128githubioPackage
+  budimanjojogithubio: budimanjojo_github_io.BudimanjojogithubioPackage
+  bufbuild: buf_build.BufbuildPackage
+  buildpacksio: buildpacks_io.BuildpacksioPackage
+  bunsh: bun_sh.BunshPackage
+  bytebasecom: bytebase_com.BytebasecomPackage
+  bytereeforg: bytereef_org.BytereeforgPackage
+  caresorg: c_ares_org.CaresorgPackage
+  caddyservercom: caddyserver_com.CaddyservercomPackage
+  cairographicsorg: cairographics_org.CairographicsorgPackage
+  capstoneengineorg: capstone_engine_org.CapstoneengineorgPackage
+  carapacesh: carapace_sh.CarapaceshPackage
+  caskreadthedocsio: cask_readthedocs_io.CaskreadthedocsioPackage
+  catborg: catb_org.CatborgPackage
+  ccachedev: ccache_dev.CcachedevPackage
+  cedarpolicycomcli: cedarpolicy_com_cli.CedarpolicycomcliPackage
+  cedarpolicycom: cedarpolicy_com.CedarpolicycomPackage
+  cephcomcephadm: ceph_com_cephadm.CephcomcephadmPackage
+  cephcom: ceph_com.CephcomPackage
+  ceressolverorg: ceres_solver_org.CeressolverorgPackage
+  certbotefforg: certbot_eff_org.CertbotefforgPackage
+  certifiio: certifi_io.CertifiioPackage
+  cgalorg: cgal_org.CgalorgPackage
+  changiedev: changie_dev.ChangiedevPackage
+  charmsh: charm_sh.CharmshPackage
+  checkovio: checkov_io.CheckovioPackage
+  chezmoiio: chezmoi_io.ChezmoiioPackage
+  chiarkgreenendorguk: chiark_greenend_org_uk.ChiarkgreenendorgukPackage
+  chromedriverchromiumorg: chromedriver_chromium_org.ChromedriverchromiumorgPackage
+  ciliumio: cilium_io.CiliumioPackage
+  circlecicom: circleci_com.CirclecicomPackage
+  ciscocom: cisco_com.CiscocomPackage
+  classicyarnpkgcom: classic_yarnpkg_com.ClassicyarnpkgcomPackage
+  cligithubcom: cli_github_com.CligithubcomPackage
+  clisporg: clisp_org.ClisporgPackage
+  clogtoolgithubio: clog_tool_github_io.ClogtoolgithubioPackage
+  cloudflarecom: cloudflare_com.CloudflarecomPackage
+  cloudfoundryorg: cloudfoundry_org.CloudfoundryorgPackage
+  cloudnativepgio: cloudnative_pg_io.CloudnativepgioPackage
+  cmakeorg: cmake_org.CmakeorgPackage
+  cmockaorg: cmocka_org.CmockaorgPackage
+  cnqueryio: cnquery_io.CnqueryioPackage
+  cocoapodsorgxcodeproj: cocoapods_org_xcodeproj.CocoapodsorgxcodeprojPackage
+  cocoapodsorg: cocoapods_org.CocoapodsorgPackage
+  cocogittoio: cocogitto_io.CocogittoioPackage
+  codevideolanorg: code_videolan_org.CodevideolanorgPackage
+  codercom: coder_com.CodercomPackage
+  cointopsh: cointop_sh.CointopshPackage
+  condaorg: conda_org.CondaorgPackage
+  conftestdev: conftest_dev.ConftestdevPackage
+  connectrpcorg: connectrpc_org.ConnectrpcorgPackage
+  consulio: consul_io.ConsulioPackage
+  convcogithubio: convco_github_io.ConvcogithubioPackage
+  corednsio: coredns_io.CorednsioPackage
+  cpanminus: cpanmin_us.CpanminusPackage
+  crypto: cr_yp_to.CryptoPackage
+  cratesioaichat: crates_io_aichat.CratesioaichatPackage
+  cratesiobakers: crates_io_bake_rs.CratesiobakersPackage
+  cratesiocargotarpaulin: crates_io_cargo_tarpaulin.CratesiocargotarpaulinPackage
+  cratesioducker: crates_io_ducker.CratesioduckerPackage
+  cratesioflamegraph: crates_io_flamegraph.CratesioflamegraphPackage
+  cratesioox: crates_io_ox.CratesiooxPackage
+  cratesiopik: crates_io_pik.CratesiopikPackage
+  cratesioqsv: crates_io_qsv.CratesioqsvPackage
+  cratesioripgrepall: crates_io_ripgrep_all.CratesioripgrepallPackage
+  cratesiorucolanotes: crates_io_rucola_notes.CratesiorucolanotesPackage
+  cratesiosamply: crates_io_samply.CratesiosamplyPackage
+  cratesio: crates_io.CratesioPackage
+  crazymaxdev: crazymax_dev.CrazymaxdevPackage
+  creativeprojectsgithubio: creativeprojects_github_io.CreativeprojectsgithubioPackage
+  cruftgithubio: cruft_github_io.CruftgithubioPackage
+  cryptographyio: cryptography_io.CryptographyioPackage
+  crystallangorg: crystal_lang_org.CrystallangorgPackage
+  cscopesourceforgeio: cscope_sourceforge_io.CscopesourceforgeioPackage
+  csientuedutw: csie_ntu_edu_tw.CsientuedutwPackage
+  ctagsio: ctags_io.CtagsioPackage
+  ctopsh: ctop_sh.CtopshPackage
+  cuelangorg: cuelang_org.CuelangorgPackage
+  curlse: curl_se.CurlsePackage
+  curlieio: curlie_io.CurlieioPackage
+  cyrusimaporg: cyrusimap_org.CyrusimaporgPackage
+  cythonorg: cython_org.CythonorgPackage
+  d2langcom: d2lang_com.D2langcomPackage
+  daggerio: dagger_io.DaggerioPackage
+  dartdev: dart_dev.DartdevPackage
+  darwinsyscom: darwinsys_com.DarwinsyscomPackage
+  databrickscom: databricks_com.DatabrickscomPackage
+  daytonaio: daytona_io.DaytonaioPackage
+  dblabdanvergaracom: dblab_danvergara_com.DblabdanvergaracomPackage
+  debianorg: debian_org.DebianorgPackage
+  deepwisdomai: deepwisdom_ai.DeepwisdomaiPackage
+  denilsonsanombr: denilson_sa_nom_br.DenilsonsanombrPackage
+  denoland: deno_land.DenolandPackage
+  depotdev: depot_dev.DepotdevPackage
+  destunreachorg: dest_unreach_org.DestunreachorgPackage
+  devyorhelnl: dev_yorhel_nl.DevyorhelnlPackage
+  developer1passwordcom1passwordcli: developer_1password_com_1password_cli.Developer1passwordcom1passwordcliPackage
+  developer1passwordcom: developer_1password_com.Developer1passwordcomPackage
+  developersyubicocom: developers_yubico_com.DevelopersyubicocomPackage
+  devpodsh: devpod_sh.DevpodshPackage
+  dgraphio: dgraph_io.DgraphioPackage
+  dhalllangorg: dhall_lang_org.DhalllangorgPackage
+  dhruvkbdev: dhruvkb_dev.DhruvkbdevPackage
+  diggerdev: digger_dev.DiggerdevPackage
+  digiporg: digip_org.DigiporgPackage
+  digitaloceancom: digitalocean_com.DigitaloceancomPackage
+  direnvnet: direnv_net.DirenvnetPackage
+  dkrzde: dkrz_de.DkrzdePackage
+  dnslookupdog: dns_lookup_dog.DnslookupdogPackage
+  docbookorg: docbook_org.DocbookorgPackage
+  dockercom: docker_com.DockercomPackage
+  doctavecom: doctave_com.DoctavecomPackage
+  docutilsorg: docutils_org.DocutilsorgPackage
+  dotenvlintergithubio: dotenv_linter_github_io.DotenvlintergithubioPackage
+  dotenvxcom: dotenvx_com.DotenvxcomPackage
+  dotnetmicrosoftcom: dotnet_microsoft_com.DotnetmicrosoftcomPackage
+  doxygennl: doxygen_nl.DoxygennlPackage
+  dozzledev: dozzle_dev.DozzledevPackage
+  dprintdev: dprint_dev.DprintdevPackage
+  drifreedesktoporg: dri_freedesktop_org.DrifreedesktoporgPackage
+  duckdborg: duckdb_org.DuckdborgPackage
+  duktapeorg: duktape_org.DuktapeorgPackage
+  dystroyorgbacon: dystroy_org_bacon.DystroyorgbaconPackage
+  dystroyorg: dystroy_org.DystroyorgPackage
+  earthlydev: earthly_dev.EarthlydevPackage
+  ebassigithubio: ebassi_github_io.EbassigithubioPackage
+  edgedbcom: edgedb_com.EdgedbcomPackage
+  eigentuxfamilyorg: eigen_tuxfamily_org.EigentuxfamilyorgPackage
+  eksctlio: eksctl_io.EksctlioPackage
+  elementsprojectorg: elementsproject_org.ElementsprojectorgPackage
+  elfutilsorg: elfutils_org.ElfutilsorgPackage
+  elixirlangorg: elixir_lang_org.ElixirlangorgPackage
+  elizaosgithubio: elizaOS_github_io.ElizaosgithubioPackage
+  elvsh: elv_sh.ElvshPackage
+  encoredev: encore_dev.EncoredevPackage
+  endoflifedate: endoflife_date.EndoflifedatePackage
+  epsilonprojectsourceforgeio: epsilon_project_sourceforge_io.EpsilonprojectsourceforgeioPackage
+  erlangorg: erlang_org.ErlangorgPackage
+  etcdio: etcd_io.EtcdioPackage
+  exiftoolorg: exiftool_org.ExiftoolorgPackage
+  expodev: expo_dev.ExpodevPackage
+  eyrieorg: eyrie_org.EyrieorgPackage
+  f1bonacc1githubio: f1bonacc1_github_io.F1bonacc1githubioPackage
+  fabianlindforsse: fabianlindfors_se.FabianlindforssePackage
+  facebookcom: facebook_com.FacebookcomPackage
+  fairwindscom: fairwinds_com.FairwindscomPackage
+  fastlanetools: fastlane_tools.FastlanetoolsPackage
+  felixkratzgithubio: felixkratz_github_io.FelixkratzgithubioPackage
+  fermyoncom: fermyon_com.FermyoncomPackage
+  ffmpegorg: ffmpeg_org.FfmpegorgPackage
+  fftworg: fftw_org.FftworgPackage
+  filippoio: filippo_io.FilippoioPackage
+  fishshellcom: fishshell_com.FishshellcomPackage
+  fliptio: flipt_io.FliptioPackage
+  flitpypaio: flit_pypa_io.FlitpypaioPackage
+  fltkorg: fltk_org.FltkorgPackage
+  fluentciio: fluentci_io.FluentciioPackage
+  flutterdev: flutter_dev.FlutterdevPackage
+  fluxcdio: fluxcd_io.FluxcdioPackage
+  flyio: fly_io.FlyioPackage
+  flywaydborg: flywaydb_org.FlywaydborgPackage
+  fmtdev: fmt_dev.FmtdevPackage
+  fnaxnagithubio: fna_xna_github_io.FnaxnagithubioPackage
+  freedesktoporg: freedesktop_org.FreedesktoporgPackage
+  freeglutsourceforgeio: freeglut_sourceforge_io.FreeglutsourceforgeioPackage
+  freetdsorg: freetds_org.FreetdsorgPackage
+  freetypeorg: freetype_org.FreetypeorgPackage
+  frei0rdyneorg: frei0r_dyne_org.Frei0rdyneorgPackage
+  fuellabsgithubio: fuellabs_github_io.FuellabsgithubioPackage
+  fukuchiorg: fukuchi_org.FukuchiorgPackage
+  fullstorycom: fullstory_com.FullstorycomPackage
+  furyco: fury_co.FurycoPackage
+  fxwtf: fx_wtf.FxwtfPackage
+  gaiagisit: gaia_gis_it.GaiagisitPackage
+  gdalorg: gdal_org.GdalorgPackage
+  geoffgreerfm: geoff_greer_fm.GeoffgreerfmPackage
+  getclipboardapp: getclipboard_app.GetclipboardappPackage
+  getcomposerorg: getcomposer_org.GetcomposerorgPackage
+  getfoundrysh: getfoundry_sh.GetfoundryshPackage
+  getsopsio: getsops_io.GetsopsioPackage
+  getsynthcom: getsynth_com.GetsynthcomPackage
+  getzolaorg: getzola_org.GetzolaorgPackage
+  geuzorg: geuz_org.GeuzorgPackage
+  gflagsgithubio: gflags_github_io.GflagsgithubioPackage
+  ghostgumcomau: ghostgum_com_au.GhostgumcomauPackage
+  ghostscriptcom: ghostscript_com.GhostscriptcomPackage
+  giflibsourceforgeio: giflib_sourceforge_io.GiflibsourceforgeioPackage
+  gitclifforg: git_cliff_org.GitclifforgPackage
+  gitlfscom: git_lfs_com.GitlfscomPackage
+  gitquickstatssh: git_quick_stats_sh.GitquickstatsshPackage
+  gitscmorg: git_scm_org.GitscmorgPackage
+  gittowncom: git_town_com.GittowncomPackage
+  gitosgeoorg: git_osgeo_org.GitosgeoorgPackage
+  gittoztnet: git_tozt_net.GittoztnetPackage
+  githubcom0agecreate2crunch: github_com_0age_create2crunch.Githubcom0agecreate2crunchPackage
+  githubcomcyfrinsafetxhashesutil: github_com_Cyfrin_safe_tx_hashes_util.GithubcomcyfrinsafetxhashesutilPackage
+  githubcomdiniboy1123usque: github_com_Diniboy1123_usque.Githubcomdiniboy1123usquePackage
+  githubcommilescranmerrip2: github_com_MilesCranmer_rip2.Githubcommilescranmerrip2Package
+  githubcomminseokohtomlcli: github_com_MinseokOh_toml_cli.GithubcomminseokohtomlcliPackage
+  githubcomparchivepar2cmdline: github_com_Parchive_par2cmdline.Githubcomparchivepar2cmdlinePackage
+  githubcomblacktoplporg: github_com_blacktop_lporg.GithubcomblacktoplporgPackage
+  githubcomblynnnex: github_com_blynn_nex.GithubcomblynnnexPackage
+  githubcomfastfetchclifastfetch: github_com_fastfetch_cli_fastfetch.GithubcomfastfetchclifastfetchPackage
+  githubcomfiatjafnak: github_com_fiatjaf_nak.GithubcomfiatjafnakPackage
+  githubcomgitecosystemgitcredentialmanager: github_com_git_ecosystem_git_credential_manager.GithubcomgitecosystemgitcredentialmanagerPackage
+  githubcomglauthglauth: github_com_glauth_glauth.GithubcomglauthglauthPackage
+  githubcomigorshubovychmarkdownlintcli: github_com_igorshubovych_markdownlint_cli.GithubcomigorshubovychmarkdownlintcliPackage
+  githubcomjarunnnn: github_com_jarun_nnn.GithubcomjarunnnnPackage
+  githubcomkoekeishiyaskhd: github_com_koekeishiya_skhd.GithubcomkoekeishiyaskhdPackage
+  githubcomlucianosrpryeuv: github_com_lucianosrp_rye_uv.GithubcomlucianosrpryeuvPackage
+  githubcommasclimas: github_com_mas_cli_mas.GithubcommasclimasPackage
+  githubcommycreepypakku: github_com_mycreepy_pakku.GithubcommycreepypakkuPackage
+  githubcompeaks5cmd: github_com_peak_s5cmd.Githubcompeaks5cmdPackage
+  githubcomperipheryappperiphery: github_com_peripheryapp_periphery.GithubcomperipheryappperipheryPackage
+  githubcomshakaprojectshakapackager: github_com_shaka_project_shaka_packager.GithubcomshakaprojectshakapackagerPackage
+  githubcomsorahenvchain: github_com_sorah_envchain.GithubcomsorahenvchainPackage
+  githubcomspencerkimballstargazers: github_com_spencerkimball_stargazers.GithubcomspencerkimballstargazersPackage
+  githubcomwitheredmagicstarpls: github_com_withered_magic_starpls.GithubcomwitheredmagicstarplsPackage
+  githubcom: github_com.GithubcomPackage
+  gitlabcom: gitlab_com.GitlabcomPackage
+  gitleaksio: gitleaks_io.GitleaksioPackage
+  glarosdtcumnedu: glaros_dtc_umn_edu.GlarosdtcumneduPackage
+  gleamrun: gleam_run.GleamrunPackage
+  glewsourceforgeio: glew_sourceforge_io.GlewsourceforgeioPackage
+  glfworg: glfw_org.GlfworgPackage
+  glmgtrucnet: glm_g_truc_net.GlmgtrucnetPackage
+  gnomeorg: gnome_org.GnomeorgPackage
+  gnuorg: gnu_org.GnuorgPackage
+  gnupgorg: gnupg_org.GnupgorgPackage
+  gnuplotinfo: gnuplot_info.GnuplotinfoPackage
+  gnutlsorg: gnutls_org.GnutlsorgPackage
+  godev: go_dev.GodevPackage
+  gouberorg: go_uber_org.GouberorgPackage
+  gohugoio: gohugo_io.GohugoioPackage
+  golangcilintrun: golangci_lint_run.GolangcilintrunPackage
+  gomplateca: gomplate_ca.GomplatecaPackage
+  googlecom: google_com.GooglecomPackage
+  googlegithubio: google_github_io.GooglegithubioPackage
+  goreleasercom: goreleaser_com.GoreleasercomPackage
+  gourceio: gource_io.GourceioPackage
+  gphotoorg: gphoto_org.GphotoorgPackage
+  gqlgencom: gqlgen_com.GqlgencomPackage
+  gradleorg: gradle_org.GradleorgPackage
+  grafanacom: grafana_com.GrafanacomPackage
+  granteddev: granted_dev.GranteddevPackage
+  graphicsmagickorg: graphicsmagick_org.GraphicsmagickorgPackage
+  graphitesilorg: graphite_sil_org.GraphitesilorgPackage
+  graphqleditorcom: graphqleditor_com.GraphqleditorcomPackage
+  graphvizorg: graphviz_org.GraphvizorgPackage
+  groongaorg: groonga_org.GroongaorgPackage
+  groovylangorg: groovy_lang_org.GroovylangorgPackage
+  grpcio: grpc_io.GrpcioPackage
+  gstreamerfreedesktoporg: gstreamer_freedesktop_org.GstreamerfreedesktoporgPackage
+  gtkorg: gtk_org.GtkorgPackage
+  gtssourceforgenet: gts_sourceforge_net.GtssourceforgenetPackage
+  hadronsorg: hadrons_org.HadronsorgPackage
+  hardingmotdca: harding_motd_ca.HardingmotdcaPackage
+  harfbuzzorg: harfbuzz_org.HarfbuzzorgPackage
+  hashicorpcom: hashicorp_com.HashicorpcomPackage
+  haskellorg: haskell_org.HaskellorgPackage
+  hasuraio: hasura_io.HasuraioPackage
+  hatchpypaio: hatch_pypa_io.HatchpypaioPackage
+  hboehminfo: hboehm_info.HboehminfoPackage
+  hdfgrouporg: hdfgroup_org.HdfgrouporgPackage
+  heasarcgsfcnasagov: heasarc_gsfc_nasa_gov.HeasarcgsfcnasagovPackage
+  helixeditorcom: helix_editor_com.HelixeditorcomPackage
+  helmsh: helm_sh.HelmshPackage
+  herokucom: heroku_com.HerokucomPackage
+  hetznercom: hetzner_com.HetznercomPackage
+  hjsongithubio: hjson_github_io.HjsongithubioPackage
+  htmltidyorg: html_tidy_org.HtmltidyorgPackage
+  htopdev: htop_dev.HtopdevPackage
+  htsliborg: htslib_org.HtsliborgPackage
+  httpieio: httpie_io.HttpieioPackage
+  huggingfaceco: huggingface_co.HuggingfacecoPackage
+  hugowang: hugo_wang.HugowangPackage
+  hunspellgithubio: hunspell_github_io.HunspellgithubioPackage
+  hurldev: hurl_dev.HurldevPackage
+  ibrcstubsde: ibr_cs_tu_bs_de.IbrcstubsdePackage
+  idleberggithubio: idleberg_github_io.IdleberggithubioPackage
+  ijgorg: ijg_org.IjgorgPackage
+  imageflowio: imageflow_io.ImageflowioPackage
+  imagemagickorg: imagemagick_org.ImagemagickorgPackage
+  indexsupplycom: indexsupply_com.IndexsupplycomPackage
+  infoziporg: info_zip_org.InfoziporgPackage
+  infracostio: infracost_io.InfracostioPackage
+  intelcom: intel_com.IntelcomPackage
+  invisibleislandnetlynx: invisible_island_net_lynx.InvisibleislandnetlynxPackage
+  invisibleislandnet: invisible_island_net.InvisibleislandnetPackage
+  ipfstech: ipfs_tech.IpfstechPackage
+  ipythonorg: ipython_org.IpythonorgPackage
+  irohcomputer: iroh_computer.IrohcomputerPackage
+  iscorgbind9: isc_org_bind9.Iscorgbind9Package
+  iscorg: isc_org.IscorgPackage
+  istioio: istio_io.IstioioPackage
+  itstoolorg: itstool_org.ItstoolorgPackage
+  ivarchcom: ivarch_com.IvarchcomPackage
+  jbangdev: jbang_dev.JbangdevPackage
+  jbig2deccom: jbig2dec_com.Jbig2deccomPackage
+  jedisct1githubio: jedisct1_github_io.Jedisct1githubioPackage
+  jedsoftorg: jedsoft_org.JedsoftorgPackage
+  jemallocnet: jemalloc_net.JemallocnetPackage
+  jenkinsxio: jenkins_x_io.JenkinsxioPackage
+  jenkinsio: jenkins_io.JenkinsioPackage
+  jenvbe: jenv_be.JenvbePackage
+  jetporchcom: jetporch_com.JetporchcomPackage
+  jfrogcom: jfrog_com.JfrogcomPackage
+  jlessio: jless_io.JlessioPackage
+  jonasgithubio: jonas_github_io.JonasgithubioPackage
+  jpegorg: jpeg_org.JpegorgPackage
+  jsonnetorg: jsonnet_org.JsonnetorgPackage
+  jugitfzjuelichde: jugit_fz_juelich_de.JugitfzjuelichdePackage
+  jujuis: juju_is.JujuisPackage
+  julialangorg: julialang_org.JulialangorgPackage
+  jumppaddev: jumppad_dev.JumppaddevPackage
+  jupyterorg: jupyter_org.JupyterorgPackage
+  justsystems: just_systems.JustsystemsPackage
+  k3dio: k3d_io.K3dioPackage
+  k6io: k6_io.K6ioPackage
+  k9scliio: k9scli_io.K9scliioPackage
+  kafkaapacheorg: kafka_apache_org.KafkaapacheorgPackage
+  kagglecom: kaggle_com.KagglecomPackage
+  keephqdev: keephq_dev.KeephqdevPackage
+  kerberosorg: kerberos_org.KerberosorgPackage
+  kernelorglibcap: kernel_org_libcap.KernelorglibcapPackage
+  kernelorg: kernel_org.KernelorgPackage
+  khanacademyorg: khanacademy_org.KhanacademyorgPackage
+  khronosorg: khronos_org.KhronosorgPackage
+  kindsigsk8sio: kind_sigs_k8s_io.Kindsigsk8sioPackage
+  kislyukgithubio: kislyuk_github_io.KislyukgithubioPackage
+  kluctlio: kluctl_io.KluctlioPackage
+  kobuild: ko_build.KobuildPackage
+  kornelski: kornel_ski.KornelskiPackage
+  kotlinlangorg: kotlinlang_org.KotlinlangorgPackage
+  koyebcom: koyeb_com.KoyebcomPackage
+  kptdev: kpt_dev.KptdevPackage
+  krewsigsk8sio: krew_sigs_k8s_io.Krewsigsk8sioPackage
+  ktlintgithubio: ktlint_github_io.KtlintgithubioPackage
+  kubebuilderio: kubebuilder_io.KubebuilderioPackage
+  kubecmcloud: kubecm_cloud.KubecmcloudPackage
+  kubectxdev: kubectx_dev.KubectxdevPackage
+  kubelinterio: kubelinter_io.KubelinterioPackage
+  kubernetesio: kubernetes_io.KubernetesioPackage
+  kubesharkco: kubeshark_co.KubesharkcoPackage
+  ladspaorg: ladspa_org.LadspaorgPackage
+  lamesourceforgeio: lame_sourceforge_io.LamesourceforgeioPackage
+  langchaincom: langchain_com.LangchaincomPackage
+  laravelcom: laravel_com.LaravelcomPackage
+  lavinmqcom: lavinmq_com.LavinmqcomPackage
+  lcdforg: lcdf_org.LcdforgPackage
+  leethomasongithubio: leethomason_github_io.LeethomasongithubioPackage
+  leolangorg: leo_lang_org.LeolangorgPackage
+  leonerdorguk: leonerd_org_uk.LeonerdorgukPackage
+  leptonicaorg: leptonica_org.LeptonicaorgPackage
+  lftpyarru: lftp_yar_ru.LftpyarruPackage
+  libarchiveorg: libarchive_org.LibarchiveorgPackage
+  libcxxllvmorg: libcxx_llvm_org.LibcxxllvmorgPackage
+  libeventorg: libevent_org.LibeventorgPackage
+  libexifgithubio: libexif_github_io.LibexifgithubioPackage
+  libexpatgithubio: libexpat_github_io.LibexpatgithubioPackage
+  libgdgithubio: libgd_github_io.LibgdgithubioPackage
+  libgeosorg: libgeos_org.LibgeosorgPackage
+  libgit2org: libgit2_org.Libgit2orgPackage
+  libimobiledeviceorg: libimobiledevice_org.LibimobiledeviceorgPackage
+  libislsourceforgeio: libisl_sourceforge_io.LibislsourceforgeioPackage
+  libjpegturboorg: libjpeg_turbo_org.LibjpegturboorgPackage
+  liblqrwikidotcom: liblqr_wikidot_com.LiblqrwikidotcomPackage
+  libpipelinegitlabio: libpipeline_gitlab_io.LibpipelinegitlabioPackage
+  libpngorg: libpng_org.LibpngorgPackage
+  libproxygithubio: libproxy_github_io.LibproxygithubioPackage
+  libraworg: libraw_org.LibraworgPackage
+  libsdlorg: libsdl_org.LibsdlorgPackage
+  libsodiumorg: libsodium_org.LibsodiumorgPackage
+  libsouporg: libsoup_org.LibsouporgPackage
+  libspngorg: libspng_org.LibspngorgPackage
+  libsshorg: libssh_org.LibsshorgPackage
+  libssh2org: libssh2_org.Libssh2orgPackage
+  libtomnet: libtom_net.LibtomnetPackage
+  liburcuorg: liburcu_org.LiburcuorgPackage
+  libusbinfo: libusb_info.LibusbinfoPackage
+  libuvorg: libuv_org.LibuvorgPackage
+  libvipsorg: libvips_org.LibvipsorgPackage
+  libwebsocketsorg: libwebsockets_org.LibwebsocketsorgPackage
+  libziporg: libzip_org.LibziporgPackage
+  limavmio: lima_vm_io.LimavmioPackage
+  linkerdio: linkerd_io.LinkerdioPackage
+  linuxpamorg: linux_pam_org.LinuxpamorgPackage
+  liteclicom: litecli_com.LiteclicomPackage
+  littlecmscom: littlecms_com.LittlecmscomPackage
+  llmdatasetteio: llm_datasette_io.LlmdatasetteioPackage
+  lloydgithubio: lloyd_github_io.LloydgithubioPackage
+  llvmorg: llvm_org.LlvmorgPackage
+  localaiio: localai_io.LocalaiioPackage
+  localstackcloud: localstack_cloud.LocalstackcloudPackage
+  logdydev: logdy_dev.LogdydevPackage
+  logologicalorg: logological_org.LogologicalorgPackage
+  luaorg: lua_org.LuaorgPackage
+  luajitorg: luajit_org.LuajitorgPackage
+  luarocksorg: luarocks_org.LuarocksorgPackage
+  lucagrullacom: lucagrulla_com.LucagrullacomPackage
+  lunarvimorg: lunarvim_org.LunarvimorgPackage
+  lxmlde: lxml_de.LxmldePackage
+  lycheeclirs: lychee_cli_rs.LycheeclirsPackage
+  lz4org: lz4_org.Lz4orgPackage
+  maaslalanicom: maaslalani_com.MaaslalanicomPackage
+  macvimorg: macvim_org.MacvimorgPackage
+  mailpitaxllentorg: mailpit_axllent_org.MailpitaxllentorgPackage
+  makotemplatesorg: makotemplates_org.MakotemplatesorgPackage
+  mandbgitlabio: man_db_gitlab_io.MandbgitlabioPackage
+  mandocbsdlv: mandoc_bsd_lv.MandocbsdlvPackage
+  mariadbcom: mariadb_com.MariadbcomPackage
+  markupsafepalletsprojectscom: markupsafe_palletsprojects_com.MarkupsafepalletsprojectscomPackage
+  materializecom: materialize_com.MaterializecomPackage
+  matiosourceforgeio: matio_sourceforge_io.MatiosourceforgeioPackage
+  maturinrs: maturin_rs.MaturinrsPackage
+  mavenapacheorg: maven_apache_org.MavenapacheorgPackage
+  mcmcjagssourceforgeio: mcmc_jags_sourceforge_io.McmcjagssourceforgeioPackage
+  mercurerocks: mercure_rocks.MercurerocksPackage
+  mercurialscmorg: mercurial_scm_org.MercurialscmorgPackage
+  mergestatcom: mergestat_com.MergestatcomPackage
+  mesa3dorg: mesa3d_org.Mesa3dorgPackage
+  mesonbuildcom: mesonbuild_com.MesonbuildcomPackage
+  microeditorgithubio: micro_editor_github_io.MicroeditorgithubioPackage
+  microbreworg: microbrew_org.MicrobreworgPackage
+  microcksio: microcks_io.MicrocksioPackage
+  microsoftcomcodecli: microsoft_com_code_cli.MicrosoftcomcodecliPackage
+  microsoftcommarkitdown: microsoft_com_markitdown.MicrosoftcommarkitdownPackage
+  microsoftcom: microsoft_com.MicrosoftcomPackage
+  midnightcommanderorg: midnight_commander_org.MidnightcommanderorgPackage
+  minio: min_io.MinioPackage
+  misejdxdev: mise_jdx_dev.MisejdxdevPackage
+  mitmproxyorg: mitmproxy_org.MitmproxyorgPackage
+  mkcertdev: mkcert_dev.MkcertdevPackage
+  mkdocsorg: mkdocs_org.MkdocsorgPackage
+  modalcom: modal_com.ModalcomPackage
+  moderncorggoyacc: modernc_org_goyacc.ModerncorggoyaccPackage
+  moderncorg: modernc_org.ModerncorgPackage
+  mongodbcom: mongodb_com.MongodbcomPackage
+  moonrepodev: moonrepo_dev.MoonrepodevPackage
+  moshorg: mosh_org.MoshorgPackage
+  mozillaorgcbindgen: mozilla_org_cbindgen.MozillaorgcbindgenPackage
+  mozillaorg: mozilla_org.MozillaorgPackage
+  mpg123de: mpg123_de.Mpg123dePackage
+  mpmathorg: mpmath_org.MpmathorgPackage
+  mpvio: mpv_io.MpvioPackage
+  msgpackorg: msgpack_org.MsgpackorgPackage
+  mujscom: mujs_com.MujscomPackage
+  munlangorg: mun_lang_org.MunlangorgPackage
+  mupdfcom: mupdf_com.MupdfcomPackage
+  musepacknet: musepack_net.MusepacknetPackage
+  musllibcorg: musl_libc_org.MusllibcorgPackage
+  mvdanccgofumpt: mvdan_cc_gofumpt.MvdanccgofumptPackage
+  mvdancc: mvdan_cc.MvdanccPackage
+  mypylangorg: mypy_lang_org.MypylangorgPackage
+  mysqlcom: mysql_com.MysqlcomPackage
+  nanoeditororg: nano_editor_org.NanoeditororgPackage
+  nasmus: nasm_us.NasmusPackage
+  neovimio: neovim_io.NeovimioPackage
+  netflixcom: netflix_com.NetflixcomPackage
+  netliborg: netlib_org.NetliborgPackage
+  netpbmsourceforgenet: netpbm_sourceforge_net.NetpbmsourceforgenetPackage
+  networkxorg: networkx_org.NetworkxorgPackage
+  nghttp2org: nghttp2_org.Nghttp2orgPackage
+  nginxorg: nginx_org.NginxorgPackage
+  nikecom: nike_com.NikecomPackage
+  nimlangorg: nim_lang_org.NimlangorgPackage
+  ninjabuildorg: ninja_build_org.NinjabuildorgPackage
+  nixosorg: nixos_org.NixosorgPackage
+  nixpackscom: nixpacks_com.NixpackscomPackage
+  nlnetlabsnl: nlnetlabs_nl.NlnetlabsnlPackage
+  nmaporg: nmap_org.NmaporgPackage
   node: node.NodePackage
-  nomadprojectio: nomadprojectio.NomadprojectioPackage
-  nongnuorg: nongnuorg.NongnuorgPackage
-  notrojgithubio: notrojgithubio.NotrojgithubioPackage
-  npmjscom: npmjscom.NpmjscomPackage
-  ntporg: ntporg.NtporgPackage
-  numbatdev: numbatdev.NumbatdevPackage
-  numpyorg: numpyorg.NumpyorgPackage
-  nushellsh: nushellsh.NushellshPackage
-  nxdev: nxdev.NxdevPackage
-  oauth2proxygithubio: oauth2_proxygithubio.Oauth2proxygithubioPackage
-  oberhumercom: oberhumercom.OberhumercomPackage
-  oberhumercomucl: oberhumercom_ucl.OberhumercomuclPackage
-  odigosio: odigosio.OdigosioPackage
-  ohmyposhdev: ohmyposhdev.OhmyposhdevPackage
-  ollamaai: ollamaai.OllamaaiPackage
-  onefetchdev: onefetchdev.OnefetchdevPackage
-  onsigithubio: onsigithubio.OnsigithubioPackage
-  openmpiorg: open_mpiorg.OpenmpiorgPackage
-  openaicom: openaicom.OpenaicomPackage
-  openapigeneratortech: openapi_generatortech.OpenapigeneratortechPackage
-  openbaoorg: openbaoorg.OpenbaoorgPackage
-  openblasnet: openblasnet.OpenblasnetPackage
-  opencoreamrsourceforgeio: opencore_amrsourceforgeio.OpencoreamrsourceforgeioPackage
-  opendaporg: opendaporg.OpendaporgPackage
-  opendevorg: opendevorg.OpendevorgPackage
-  openexrcom: openexrcom.OpenexrcomPackage
-  openinterpretercom: openinterpretercom.OpeninterpretercomPackage
-  openjdkorg: openjdkorg.OpenjdkorgPackage
-  openjpegorg: openjpegorg.OpenjpegorgPackage
-  openldaporg: openldaporg.OpenldaporgPackage
-  openldaporgliblmdb: openldaporg_liblmdb.OpenldaporgliblmdbPackage
-  openmpllvmorg: openmpllvmorg.OpenmpllvmorgPackage
-  openpmixgithubio: openpmixgithubio.OpenpmixgithubioPackage
-  openpolicyagentorg: openpolicyagentorg.OpenpolicyagentorgPackage
-  openprintinggithubio: openprintinggithubio.OpenprintinggithubioPackage
-  openrestyorg: openrestyorg.OpenrestyorgPackage
-  opensearchorg: opensearchorg.OpensearchorgPackage
-  openshiftcom: openshiftcom.OpenshiftcomPackage
-  openslideorg: openslideorg.OpenslideorgPackage
-  opensshcom: opensshcom.OpensshcomPackage
-  opensslorg: opensslorg.OpensslorgPackage
-  opentofuorg: opentofuorg.OpentofuorgPackage
-  openvpnnet: openvpnnet.OpenvpnnetPackage
-  operatorframeworkio: operatorframeworkio.OperatorframeworkioPackage
-  opuscodecorg: opus_codecorg.OpuscodecorgPackage
-  oraclecom: oraclecom.OraclecomPackage
-  orasland: orasland.OraslandPackage
-  ordinalscom: ordinalscom.OrdinalscomPackage
-  orhundev: orhundev.OrhundevPackage
-  otssnipttcom: otssnipttcom.OtssnipttcomPackage
-  packerio: packerio.PackerioPackage
-  pagureio: pagureio.PagureioPackage
-  palletsprojectscom: palletsprojectscom.PalletsprojectscomPackage
-  pandocorg: pandocorg.PandocorgPackage
-  pantsbuildorg: pantsbuildorg.PantsbuildorgPackage
-  paulfitzgithubio: paulfitzgithubio.PaulfitzgithubioPackage
-  pcreorg: pcreorg.PcreorgPackage
-  pcscliteapdufr: pcscliteapdufr.PcscliteapdufrPackage
-  pdmfmingdev: pdmfmingdev.PdmfmingdevPackage
-  peopleengrtamuedu: peopleengrtamuedu.PeopleengrtamueduPackage
-  peopleredhatcom: peopleredhatcom.PeopleredhatcomPackage
-  perlorg: perlorg.PerlorgPackage
-  permitio: permitio.PermitioPackage
-  phpnet: phpnet.PhpnetPackage
-  phpmyadminnet: phpmyadminnet.PhpmyadminnetPackage
-  pimalayaorg: pimalayaorg.PimalayaorgPackage
-  pinnipeddev: pinnipeddev.PinnipeddevPackage
-  pippypaio: pippypaio.PippypaioPackage
-  pipenvpypaio: pipenvpypaio.PipenvpypaioPackage
-  pixmanorg: pixmanorg.PixmanorgPackage
-  pkgxsh: pkgxsh.PkgxshPackage
-  pkgxshdev: pkgxsh_dev.PkgxshdevPackage
-  pkgxshpkgm: pkgxsh_pkgm.PkgxshpkgmPackage
-  pkllangorg: pkl_langorg.PkllangorgPackage
-  planetscalecom: planetscalecom.PlanetscalecomPackage
-  plantumlcom: plantumlcom.PlantumlcomPackage
-  plasmasturmorg: plasmasturmorg.PlasmasturmorgPackage
-  plocatesessenet: plocatesessenet.PlocatesessenetPackage
-  pluralithcom: pluralithcom.PluralithcomPackage
-  pngquantorg: pngquantorg.PngquantorgPackage
-  pnpmio: pnpmio.PnpmioPackage
-  po4aorg: po4aorg.Po4aorgPackage
-  pocketbaseio: pocketbaseio.PocketbaseioPackage
-  podmanio: podmanio.PodmanioPackage
-  poktnetwork: poktnetwork.PoktnetworkPackage
-  popplerfreedesktoporg: popplerfreedesktoporg.PopplerfreedesktoporgPackage
-  portaudiocom: portaudiocom.PortaudiocomPackage
-  postgresqlorg: postgresqlorg.PostgresqlorgPackage
-  postgrestorg: postgrestorg.PostgrestorgPackage
-  practicalschemenet: practical_schemenet.PracticalschemenetPackage
-  precommitcom: pre_commitcom.PrecommitcomPackage
-  prefixdev: prefixdev.PrefixdevPackage
-  presslygithubio: presslygithubio.PresslygithubioPackage
-  prettierio: prettierio.PrettierioPackage
-  printfngithubio: printfngithubio.PrintfngithubioPackage
-  priverdev: priverdev.PriverdevPackage
-  projorg: projorg.ProjorgPackage
-  projectcopaceticgithubio: project_copaceticgithubio.ProjectcopaceticgithubioPackage
-  projectdiscoveryio: projectdiscoveryio.ProjectdiscoveryioPackage
-  projectdiscoveryionuclei: projectdiscoveryio_nuclei.ProjectdiscoveryionucleiPackage
-  projenio: projenio.ProjenioPackage
-  protobufdev: protobufdev.ProtobufdevPackage
-  prqllangorg: prql_langorg.PrqllangorgPackage
-  psycopgorg: psycopgorg.PsycopgorgPackage
-  publichronopikde: publichronopikde.PublichronopikdePackage
-  pugixmlorg: pugixmlorg.PugixmlorgPackage
-  pulumiio: pulumiio.PulumiioPackage
-  pwgensourceforgeio: pwgensourceforgeio.PwgensourceforgeioPackage
-  pwmtorg: pwmtorg.PwmtorgPackage
-  pygmentsorg: pygmentsorg.PygmentsorgPackage
-  pyinvokeorg: pyinvokeorg.PyinvokeorgPackage
-  pypagithubio: pypagithubio.PypagithubioPackage
-  pypaio: pypaio.PypaioPackage
-  pytestorg: pytestorg.PytestorgPackage
-  pythonpilloworg: python_pilloworg.PythonpilloworgPackage
-  pythonpoetryorg: python_poetryorg.PythonpoetryorgPackage
-  pythonorg: pythonorg.PythonorgPackage
-  pyyamlorg: pyyamlorg.PyyamlorgPackage
-  qemuorg: qemuorg.QemuorgPackage
-  qhullorg: qhullorg.QhullorgPackage
-  qpdfsourceforgeio: qpdfsourceforgeio.QpdfsourceforgeioPackage
-  qtio: qtio.QtioPackage
-  quarydev: quarydev.QuarydevPackage
-  quickwitio: quickwitio.QuickwitioPackage
-  rwosorg: r_wosorg.RwosorgPackage
-  rabbitmqcom: rabbitmqcom.RabbitmqcomPackage
-  raccoinorg: raccoinorg.RaccoinorgPackage
-  radicleorg: radicleorg.RadicleorgPackage
-  railwayapp: railwayapp.RailwayappPackage
-  rapidjsonorg: rapidjsonorg.RapidjsonorgPackage
-  rarlabcom: rarlabcom.RarlabcomPackage
-  rbenvorg: rbenvorg.RbenvorgPackage
-  rcloneorg: rcloneorg.RcloneorgPackage
-  re2corg: re2corg.Re2corgPackage
-  reacheremail: reacheremail.ReacheremailPackage
-  rebar3org: rebar3org.Rebar3orgPackage
-  redisio: redisio.RedisioPackage
-  rendercom: rendercom.RendercomPackage
-  replibytecom: replibytecom.ReplibytecomPackage
-  resticnet: resticnet.ResticnetPackage
-  rhashsourceforgenet: rhashsourceforgenet.RhashsourceforgenetPackage
-  rigauxorg: rigauxorg.RigauxorgPackage
-  riverbankcomputingcom: riverbankcomputingcom.RiverbankcomputingcomPackage
-  robotframeworkorg: robotframeworkorg.RobotframeworkorgPackage
-  rockdabootgithubio: rockdabootgithubio.RockdabootgithubioPackage
-  rometools: rometools.RometoolsPackage
-  rpmorg: rpmorg.RpmorgPackage
-  rsyncsambaorg: rsyncsambaorg.RsyncsambaorgPackage
-  rtmpdumpmplayerhqhu: rtmpdumpmplayerhqhu.RtmpdumpmplayerhqhuPackage
-  rtomaykogithubio: rtomaykogithubio.RtomaykogithubioPackage
-  rubocoporg: rubocoporg.RubocoporgPackage
-  rubylangorg: ruby_langorg.RubylangorgPackage
-  rubygemsorg: rubygemsorg.RubygemsorgPackage
-  ruciocernch: ruciocernch.RuciocernchPackage
-  runatlantisio: runatlantisio.RunatlantisioPackage
-  rustlanggithubio: rust_langgithubio.RustlanggithubioPackage
-  rustlangorg: rust_langorg.RustlangorgPackage
-  rustlangorgrustbindgen: rust_langorg_rust_bindgen.RustlangorgrustbindgenPackage
-  rustscriptorg: rust_scriptorg.RustscriptorgPackage
-  ryeastralsh: ryeastralsh.RyeastralshPackage
-  s3toolsorg: s3toolsorg.S3toolsorgPackage
-  saerasoftcom: saerasoftcom.SaerasoftcomPackage
-  sagiegurarigithubio: sagiegurarigithubio.SagiegurarigithubioPackage
-  sasslangcom: sass_langcom.SasslangcomPackage
-  savannahnongnuorg: savannahnongnuorg.SavannahnongnuorgPackage
-  scalalangorg: scala_langorg.ScalalangorgPackage
-  scalasbtorg: scala_sbtorg.ScalasbtorgPackage
-  scalewaycom: scalewaycom.ScalewaycomPackage
-  schollzcom: schollzcom.SchollzcomPackage
-  sconsorg: sconsorg.SconsorgPackage
-  scryerpl: scryerpl.ScryerplPackage
-  sdkmanio: sdkmanio.SdkmanioPackage
-  seaweedfscom: seaweedfscom.SeaweedfscomPackage
-  sentryio: sentryio.SentryioPackage
-  sfnet: sfnet.SfnetPackage
-  sfcgalorg: sfcgalorg.SfcgalorgPackage
-  sftpgocom: sftpgocom.SftpgocomPackage
-  shellchecknet: shellchecknet.ShellchecknetPackage
-  sigstoredev: sigstoredev.SigstoredevPackage
-  simplesystemsorg: simplesystemsorg.SimplesystemsorgPackage
-  singboxapp: sing_boxapp.SingboxappPackage
-  skaffolddev: skaffolddev.SkaffolddevPackage
-  smartmontoolsorg: smartmontoolsorg.SmartmontoolsorgPackage
-  snapletdev: snapletdev.SnapletdevPackage
-  sniffnetnet: sniffnetnet.SniffnetnetPackage
-  snykio: snykio.SnykioPackage
-  solanacom: solanacom.SolanacomPackage
-  soldeerxyz: soldeerxyz.SoldeerxyzPackage
-  soliditylangorg: soliditylangorg.SoliditylangorgPackage
-  sonarqubeorg: sonarqubeorg.SonarqubeorgPackage
-  sourceforgenet: sourceforgenet.SourceforgenetPackage
-  sourcewareorg: sourcewareorg.SourcewareorgPackage
-  soxrsourceforgenet: soxrsourceforgenet.SoxrsourceforgenetPackage
-  spacetimedbcom: spacetimedbcom.SpacetimedbcomPackage
-  spawnlink: spawnlink.SpawnlinkPackage
-  speexorg: speexorg.SpeexorgPackage
-  sphinxdocorg: sphinx_docorg.SphinxdocorgPackage
-  sqlcdev: sqlcdev.SqlcdevPackage
-  sqlfluffcom: sqlfluffcom.SqlfluffcomPackage
-  sqliteorg: sqliteorg.SqliteorgPackage
-  squawkhqcom: squawkhqcom.SquawkhqcomPackage
-  srtallianceorg: srtallianceorg.SrtallianceorgPackage
-  sshxio: sshxio.SshxioPackage
-  starshiprs: starshiprs.StarshiprsPackage
-  steampipeio: steampipeio.SteampipeioPackage
-  stedolangithubio: stedolangithubio.StedolangithubioPackage
-  straceio: straceio.StraceioPackage
-  streamlinkgithubio: streamlinkgithubio.StreamlinkgithubioPackage
-  stripecom: stripecom.StripecomPackage
-  supabasecom: supabasecom.SupabasecomPackage
-  surrealdbcom: surrealdbcom.SurrealdbcomPackage
-  svenstarogithubio: svenstarogithubio.SvenstarogithubioPackage
-  swaggerio: swaggerio.SwaggerioPackage
-  swiftorg: swiftorg.SwiftorgPackage
-  swigorg: swigorg.SwigorgPackage
-  symfonycom: symfonycom.SymfonycomPackage
-  sympyorg: sympyorg.SympyorgPackage
-  syncthingnet: syncthingnet.SyncthingnetPackage
-  systemdio: systemdio.SystemdioPackage
-  tagliborg: tagliborg.TagliborgPackage
-  tailcallrun: tailcallrun.TailcallrunPackage
-  tailwindcsscom: tailwindcsscom.TailwindcsscomPackage
-  taku910githubio: taku910githubio.Taku910githubioPackage
-  talosdev: talosdev.TalosdevPackage
-  taplotamasfedev: taplotamasfedev.TaplotamasfedevPackage
-  tartrun: tartrun.TartrunPackage
-  taskfiledev: taskfiledev.TaskfiledevPackage
-  tcllangorg: tcl_langorg.TcllangorgPackage
-  tcltk: tcltk.TcltkPackage
-  tcpdumporg: tcpdumporg.TcpdumporgPackage
-  tcshorg: tcshorg.TcshorgPackage
-  teaxyz: teaxyz.TeaxyzPackage
-  tectonictypesettinggithubio: tectonic_typesettinggithubio.TectonictypesettinggithubioPackage
-  templguide: templguide.TemplguidePackage
-  temporalio: temporalio.TemporalioPackage
-  terraformdocsio: terraform_docsio.TerraformdocsioPackage
-  terraformio: terraformio.TerraformioPackage
-  terragruntgruntworkio: terragruntgruntworkio.TerragruntgruntworkioPackage
-  terratagio: terratagio.TerratagioPackage
-  tesseractocrgithubio: tesseract_ocrgithubio.TesseractocrgithubioPackage
-  thekelleysorguk: thekelleysorguk.ThekelleysorgukPackage
-  theoraorg: theoraorg.TheoraorgPackage
-  thoughtworksgithubio: thoughtworksgithubio.ThoughtworksgithubioPackage
-  thrysoeedk: thrysoeedk.ThrysoeedkPackage
-  tidbytcom: tidbytcom.TidbytcomPackage
-  tiltdev: tiltdev.TiltdevPackage
-  tinybirdco: tinybirdco.TinybirdcoPackage
-  tinygoorg: tinygoorg.TinygoorgPackage
-  tldrsh: tldrsh.TldrshPackage
-  tlrdev: tlrdev.TlrdevPackage
-  tmateio: tmateio.TmateioPackage
-  toxwiki: toxwiki.ToxwikiPackage
-  traefikio: traefikio.TraefikioPackage
-  treesittergithubio: tree_sittergithubio.TreesittergithubioPackage
-  trippyclirs: trippyclirs.TrippyclirsPackage
-  trufflesecuritycom: trufflesecuritycom.TrufflesecuritycomPackage
-  tsl0922githubio: tsl0922githubio.Tsl0922githubioPackage
-  tuistio: tuistio.TuistioPackage
-  tukaaniorg: tukaaniorg.TukaaniorgPackage
-  tursotech: tursotech.TursotechPackage
-  typescriptlangorg: typescriptlangorg.TypescriptlangorgPackage
-  typstapp: typstapp.TypstappPackage
-  unboundnet: unboundnet.UnboundnetPackage
-  undefined: undefined.UndefinedPackage
-  unicodeorg: unicodeorg.UnicodeorgPackage
-  unidataucaredu: unidataucaredu.UnidataucareduPackage
-  unixodbcorg: unixodbcorg.UnixodbcorgPackage
-  upliftcidev: upliftcidev.UpliftcidevPackage
-  upxgithubio: upxgithubio.UpxgithubioPackage
-  uriparsergithubio: uriparsergithubio.UriparsergithubioPackage
-  valesh: valesh.ValeshPackage
-  valkeyio: valkeyio.ValkeyioPackage
-  vamppluginsorg: vamp_pluginsorg.VamppluginsorgPackage
-  vannaai: vannaai.VannaaiPackage
-  vapoursynthcom: vapoursynthcom.VapoursynthcomPackage
-  vaultprojectio: vaultprojectio.VaultprojectioPackage
-  vclustercom: vclustercom.VclustercomPackage
-  vektragithubio: vektragithubio.VektragithubioPackage
-  veleroio: veleroio.VeleroioPackage
-  veracodecom: veracodecom.VeracodecomPackage
-  vercelcom: vercelcom.VercelcomPackage
-  versitycom: versitycom.VersitycomPackage
-  viaductai: viaductai.ViaductaiPackage
-  viaductaiksops: viaductai_ksops.ViaductaiksopsPackage
-  videolanorg: videolanorg.VideolanorgPackage
-  vimorg: vimorg.VimorgPackage
-  virtualenvpypaio: virtualenvpypaio.VirtualenvpypaioPackage
-  virtualsquareorg: virtualsquareorg.VirtualsquareorgPackage
-  vitejsdev: vitejsdev.VitejsdevPackage
-  vlangio: vlangio.VlangioPackage
-  voltash: voltash.VoltashPackage
-  wailsio: wailsio.WailsioPackage
-  wait4xdev: wait4xdev.Wait4xdevPackage
-  wasmerio: wasmerio.WasmerioPackage
-  watchexecgithubio: watchexecgithubio.WatchexecgithubioPackage
-  waterlanhomexs4allnl: waterlanhomexs4allnl.Waterlanhomexs4allnlPackage
-  wavpackcom: wavpackcom.WavpackcomPackage
-  waylandfreedesktoporg: waylandfreedesktoporg.WaylandfreedesktoporgPackage
-  webmprojectorg: webmprojectorg.WebmprojectorgPackage
-  werfio: werfio.WerfioPackage
-  wezfurlongorg: wezfurlongorg.WezfurlongorgPackage
-  wilfredmeuk: wilfredmeuk.WilfredmeukPackage
-  wimlibnet: wimlibnet.WimlibnetPackage
-  wiresharkorg: wiresharkorg.WiresharkorgPackage
-  wixcom: wixcom.WixcomPackage
-  wkentarogithubio: wkentarogithubio.WkentarogithubioPackage
-  wpewebkitorg: wpewebkitorg.WpewebkitorgPackage
-  wundergraphcom: wundergraphcom.WundergraphcomPackage
-  wxwidgetsorg: wxwidgetsorg.WxwidgetsorgPackage
-  xorg: xorg.XorgPackage
-  xorgxscrnsaver: xorg_xscrnsaver.XorgxscrnsaverPackage
-  xcfiledev: xcfiledev.XcfiledevPackage
-  xercesapacheorg: xercesapacheorg.XercesapacheorgPackage
-  xiphorg: xiphorg.XiphorgPackage
-  xkbcommonorg: xkbcommonorg.XkbcommonorgPackage
-  xplrdev: xplrdev.XplrdevPackage
-  xpraorg: xpraorg.XpraorgPackage
-  xtlsgithubio: xtlsgithubio.XtlsgithubioPackage
-  xvidcom: xvidcom.XvidcomPackage
-  yadmio: yadmio.YadmioPackage
-  yarnpkgcom: yarnpkgcom.YarnpkgcomPackage
-  yasmtortallnet: yasmtortallnet.YasmtortallnetPackage
-  youtubedlorg: youtube_dlorg.YoutubedlorgPackage
-  ytdlporg: yt_dlporg.YtdlporgPackage
-  yuigithubio: yuigithubio.YuigithubioPackage
-  zarfdev: zarfdev.ZarfdevPackage
-  zeromqorg: zeromqorg.ZeromqorgPackage
-  ziglangorg: ziglangorg.ZiglangorgPackage
-  zlibnet: zlibnet.ZlibnetPackage
-  zrokio: zrokio.ZrokioPackage
-  zshsourceforgeio: zshsourceforgeio.ZshsourceforgeioPackage
+  nomadprojectio: nomadproject_io.NomadprojectioPackage
+  nongnuorg: nongnu_org.NongnuorgPackage
+  notrojgithubio: notroj_github_io.NotrojgithubioPackage
+  npmjscom: npmjs_com.NpmjscomPackage
+  ntporg: ntp_org.NtporgPackage
+  numbatdev: numbat_dev.NumbatdevPackage
+  numpyorg: numpy_org.NumpyorgPackage
+  nushellsh: nushell_sh.NushellshPackage
+  nxdev: nx_dev.NxdevPackage
+  oauth2proxygithubio: oauth2_proxy_github_io.Oauth2proxygithubioPackage
+  oberhumercomucl: oberhumer_com_ucl.OberhumercomuclPackage
+  oberhumercom: oberhumer_com.OberhumercomPackage
+  odigosio: odigos_io.OdigosioPackage
+  ohmyposhdev: ohmyposh_dev.OhmyposhdevPackage
+  ollamaai: ollama_ai.OllamaaiPackage
+  onefetchdev: onefetch_dev.OnefetchdevPackage
+  onsigithubio: onsi_github_io.OnsigithubioPackage
+  openmpiorg: open_mpi_org.OpenmpiorgPackage
+  openaicom: openai_com.OpenaicomPackage
+  openapigeneratortech: openapi_generator_tech.OpenapigeneratortechPackage
+  openbaoorg: openbao_org.OpenbaoorgPackage
+  openblasnet: openblas_net.OpenblasnetPackage
+  opencoreamrsourceforgeio: opencore_amr_sourceforge_io.OpencoreamrsourceforgeioPackage
+  opendaporg: opendap_org.OpendaporgPackage
+  opendevorg: opendev_org.OpendevorgPackage
+  openexrcom: openexr_com.OpenexrcomPackage
+  openinterpretercom: openinterpreter_com.OpeninterpretercomPackage
+  openjdkorg: openjdk_org.OpenjdkorgPackage
+  openjpegorg: openjpeg_org.OpenjpegorgPackage
+  openldaporgliblmdb: openldap_org_liblmdb.OpenldaporgliblmdbPackage
+  openldaporg: openldap_org.OpenldaporgPackage
+  openmpllvmorg: openmp_llvm_org.OpenmpllvmorgPackage
+  openpmixgithubio: openpmix_github_io.OpenpmixgithubioPackage
+  openpolicyagentorg: openpolicyagent_org.OpenpolicyagentorgPackage
+  openprintinggithubio: openprinting_github_io.OpenprintinggithubioPackage
+  openrestyorg: openresty_org.OpenrestyorgPackage
+  opensearchorg: opensearch_org.OpensearchorgPackage
+  openshiftcom: openshift_com.OpenshiftcomPackage
+  openslideorg: openslide_org.OpenslideorgPackage
+  opensshcom: openssh_com.OpensshcomPackage
+  opensslorg: openssl_org.OpensslorgPackage
+  opentofuorg: opentofu_org.OpentofuorgPackage
+  openvpnnet: openvpn_net.OpenvpnnetPackage
+  operatorframeworkio: operatorframework_io.OperatorframeworkioPackage
+  opuscodecorg: opus_codec_org.OpuscodecorgPackage
+  oraclecom: oracle_com.OraclecomPackage
+  orasland: oras_land.OraslandPackage
+  ordinalscom: ordinals_com.OrdinalscomPackage
+  orhundev: orhun_dev.OrhundevPackage
+  otssnipttcom: ots_sniptt_com.OtssnipttcomPackage
+  packerio: packer_io.PackerioPackage
+  pagureio: pagure_io.PagureioPackage
+  palletsprojectscom: palletsprojects_com.PalletsprojectscomPackage
+  pandocorg: pandoc_org.PandocorgPackage
+  pantsbuildorg: pantsbuild_org.PantsbuildorgPackage
+  paulfitzgithubio: paulfitz_github_io.PaulfitzgithubioPackage
+  pcreorg: pcre_org.PcreorgPackage
+  pcscliteapdufr: pcsclite_apdu_fr.PcscliteapdufrPackage
+  pdmfmingdev: pdm_fming_dev.PdmfmingdevPackage
+  peopleengrtamuedu: people_engr_tamu_edu.PeopleengrtamueduPackage
+  peopleredhatcom: people_redhat_com.PeopleredhatcomPackage
+  perlorg: perl_org.PerlorgPackage
+  permitio: permit_io.PermitioPackage
+  phpnet: php_net.PhpnetPackage
+  phpmyadminnet: phpmyadmin_net.PhpmyadminnetPackage
+  pimalayaorg: pimalaya_org.PimalayaorgPackage
+  pinnipeddev: pinniped_dev.PinnipeddevPackage
+  pippypaio: pip_pypa_io.PippypaioPackage
+  pipenvpypaio: pipenv_pypa_io.PipenvpypaioPackage
+  pixmanorg: pixman_org.PixmanorgPackage
+  pkgxshdev: pkgx_sh_dev.PkgxshdevPackage
+  pkgxshpkgm: pkgx_sh_pkgm.PkgxshpkgmPackage
+  pkgxsh: pkgx_sh.PkgxshPackage
+  pkllangorg: pkl_lang_org.PkllangorgPackage
+  planetscalecom: planetscale_com.PlanetscalecomPackage
+  plantumlcom: plantuml_com.PlantumlcomPackage
+  plasmasturmorg: plasmasturm_org.PlasmasturmorgPackage
+  plocatesessenet: plocate_sesse_net.PlocatesessenetPackage
+  pluralithcom: pluralith_com.PluralithcomPackage
+  pngquantorg: pngquant_org.PngquantorgPackage
+  pnpmio: pnpm_io.PnpmioPackage
+  po4aorg: po4a_org.Po4aorgPackage
+  pocketbaseio: pocketbase_io.PocketbaseioPackage
+  podmanio: podman_io.PodmanioPackage
+  poktnetwork: pokt_network.PoktnetworkPackage
+  popplerfreedesktoporg: poppler_freedesktop_org.PopplerfreedesktoporgPackage
+  portaudiocom: portaudio_com.PortaudiocomPackage
+  postgresqlorg: postgresql_org.PostgresqlorgPackage
+  postgrestorg: postgrest_org.PostgrestorgPackage
+  practicalschemenet: practical_scheme_net.PracticalschemenetPackage
+  precommitcom: pre_commit_com.PrecommitcomPackage
+  prefixdev: prefix_dev.PrefixdevPackage
+  presslygithubio: pressly_github_io.PresslygithubioPackage
+  prettierio: prettier_io.PrettierioPackage
+  printfngithubio: printfn_github_io.PrintfngithubioPackage
+  priverdev: priver_dev.PriverdevPackage
+  projorg: proj_org.ProjorgPackage
+  projectcopaceticgithubio: project_copacetic_github_io.ProjectcopaceticgithubioPackage
+  projectdiscoveryionuclei: projectdiscovery_io_nuclei.ProjectdiscoveryionucleiPackage
+  projectdiscoveryio: projectdiscovery_io.ProjectdiscoveryioPackage
+  projenio: projen_io.ProjenioPackage
+  protobufdev: protobuf_dev.ProtobufdevPackage
+  prqllangorg: prql_lang_org.PrqllangorgPackage
+  psycopgorg: psycopg_org.PsycopgorgPackage
+  publichronopikde: public_hronopik_de.PublichronopikdePackage
+  pugixmlorg: pugixml_org.PugixmlorgPackage
+  pulumiio: pulumi_io.PulumiioPackage
+  pwgensourceforgeio: pwgen_sourceforge_io.PwgensourceforgeioPackage
+  pwmtorg: pwmt_org.PwmtorgPackage
+  pygmentsorg: pygments_org.PygmentsorgPackage
+  pyinvokeorg: pyinvoke_org.PyinvokeorgPackage
+  pypagithubio: pypa_github_io.PypagithubioPackage
+  pypaio: pypa_io.PypaioPackage
+  pytestorg: pytest_org.PytestorgPackage
+  pythonpilloworg: python_pillow_org.PythonpilloworgPackage
+  pythonpoetryorg: python_poetry_org.PythonpoetryorgPackage
+  pythonorg: python_org.PythonorgPackage
+  pyyamlorg: pyyaml_org.PyyamlorgPackage
+  qemuorg: qemu_org.QemuorgPackage
+  qhullorg: qhull_org.QhullorgPackage
+  qpdfsourceforgeio: qpdf_sourceforge_io.QpdfsourceforgeioPackage
+  qtio: qt_io.QtioPackage
+  quarydev: quary_dev.QuarydevPackage
+  quickwitio: quickwit_io.QuickwitioPackage
+  rwosorg: r_wos_org.RwosorgPackage
+  rabbitmqcom: rabbitmq_com.RabbitmqcomPackage
+  raccoinorg: raccoin_org.RaccoinorgPackage
+  radicleorg: radicle_org.RadicleorgPackage
+  railwayapp: railway_app.RailwayappPackage
+  rapidjsonorg: rapidjson_org.RapidjsonorgPackage
+  rarlabcom: rarlab_com.RarlabcomPackage
+  rbenvorg: rbenv_org.RbenvorgPackage
+  rcloneorg: rclone_org.RcloneorgPackage
+  re2corg: re2c_org.Re2corgPackage
+  reacheremail: reacher_email.ReacheremailPackage
+  rebar3org: rebar3_org.Rebar3orgPackage
+  redisio: redis_io.RedisioPackage
+  rendercom: render_com.RendercomPackage
+  replibytecom: replibyte_com.ReplibytecomPackage
+  resticnet: restic_net.ResticnetPackage
+  rhashsourceforgenet: rhash_sourceforge_net.RhashsourceforgenetPackage
+  rigauxorg: rigaux_org.RigauxorgPackage
+  riverbankcomputingcom: riverbankcomputing_com.RiverbankcomputingcomPackage
+  robotframeworkorg: robotframework_org.RobotframeworkorgPackage
+  rockdabootgithubio: rockdaboot_github_io.RockdabootgithubioPackage
+  rometools: rome_tools.RometoolsPackage
+  rpmorg: rpm_org.RpmorgPackage
+  rsyncsambaorg: rsync_samba_org.RsyncsambaorgPackage
+  rtmpdumpmplayerhqhu: rtmpdump_mplayerhq_hu.RtmpdumpmplayerhqhuPackage
+  rtomaykogithubio: rtomayko_github_io.RtomaykogithubioPackage
+  rubocoporg: rubocop_org.RubocoporgPackage
+  rubylangorg: ruby_lang_org.RubylangorgPackage
+  rubygemsorg: rubygems_org.RubygemsorgPackage
+  ruciocernch: rucio_cern_ch.RuciocernchPackage
+  runatlantisio: runatlantis_io.RunatlantisioPackage
+  rustlanggithubio: rust_lang_github_io.RustlanggithubioPackage
+  rustlangorgrustbindgen: rust_lang_org_rust_bindgen.RustlangorgrustbindgenPackage
+  rustlangorg: rust_lang_org.RustlangorgPackage
+  rustscriptorg: rust_script_org.RustscriptorgPackage
+  ryeastralsh: rye_astral_sh.RyeastralshPackage
+  s3toolsorg: s3tools_org.S3toolsorgPackage
+  saerasoftcom: saerasoft_com.SaerasoftcomPackage
+  sagiegurarigithubio: sagiegurari_github_io.SagiegurarigithubioPackage
+  sasslangcom: sass_lang_com.SasslangcomPackage
+  savannahnongnuorg: savannah_nongnu_org.SavannahnongnuorgPackage
+  scalalangorg: scala_lang_org.ScalalangorgPackage
+  scalasbtorg: scala_sbt_org.ScalasbtorgPackage
+  scalewaycom: scaleway_com.ScalewaycomPackage
+  schollzcom: schollz_com.SchollzcomPackage
+  sconsorg: scons_org.SconsorgPackage
+  scryerpl: scryer_pl.ScryerplPackage
+  sdkmanio: sdkman_io.SdkmanioPackage
+  seaweedfscom: seaweedfs_com.SeaweedfscomPackage
+  sentryio: sentry_io.SentryioPackage
+  sfnet: sf_net.SfnetPackage
+  sfcgalorg: sfcgal_org.SfcgalorgPackage
+  sftpgocom: sftpgo_com.SftpgocomPackage
+  shellchecknet: shellcheck_net.ShellchecknetPackage
+  sigstoredev: sigstore_dev.SigstoredevPackage
+  simplesystemsorg: simplesystems_org.SimplesystemsorgPackage
+  singboxapp: sing_box_app.SingboxappPackage
+  skaffolddev: skaffold_dev.SkaffolddevPackage
+  smartmontoolsorg: smartmontools_org.SmartmontoolsorgPackage
+  snapletdev: snaplet_dev.SnapletdevPackage
+  sniffnetnet: sniffnet_net.SniffnetnetPackage
+  snykio: snyk_io.SnykioPackage
+  solanacom: solana_com.SolanacomPackage
+  soldeerxyz: soldeer_xyz.SoldeerxyzPackage
+  soliditylangorg: soliditylang_org.SoliditylangorgPackage
+  sonarqubeorg: sonarqube_org.SonarqubeorgPackage
+  sourceforgenet: sourceforge_net.SourceforgenetPackage
+  sourcewareorg: sourceware_org.SourcewareorgPackage
+  soxrsourceforgenet: soxr_sourceforge_net.SoxrsourceforgenetPackage
+  spacetimedbcom: spacetimedb_com.SpacetimedbcomPackage
+  spawnlink: spawn_link.SpawnlinkPackage
+  speexorg: speex_org.SpeexorgPackage
+  sphinxdocorg: sphinx_doc_org.SphinxdocorgPackage
+  sqlcdev: sqlc_dev.SqlcdevPackage
+  sqlfluffcom: sqlfluff_com.SqlfluffcomPackage
+  sqliteorg: sqlite_org.SqliteorgPackage
+  squawkhqcom: squawkhq_com.SquawkhqcomPackage
+  srtallianceorg: srtalliance_org.SrtallianceorgPackage
+  sshxio: sshx_io.SshxioPackage
+  starshiprs: starship_rs.StarshiprsPackage
+  steampipeio: steampipe_io.SteampipeioPackage
+  stedolangithubio: stedolan_github_io.StedolangithubioPackage
+  straceio: strace_io.StraceioPackage
+  streamlinkgithubio: streamlink_github_io.StreamlinkgithubioPackage
+  stripecom: stripe_com.StripecomPackage
+  supabasecom: supabase_com.SupabasecomPackage
+  surrealdbcom: surrealdb_com.SurrealdbcomPackage
+  svenstarogithubio: svenstaro_github_io.SvenstarogithubioPackage
+  swaggerio: swagger_io.SwaggerioPackage
+  swiftorg: swift_org.SwiftorgPackage
+  swigorg: swig_org.SwigorgPackage
+  symfonycom: symfony_com.SymfonycomPackage
+  sympyorg: sympy_org.SympyorgPackage
+  syncthingnet: syncthing_net.SyncthingnetPackage
+  systemdio: systemd_io.SystemdioPackage
+  tagliborg: taglib_org.TagliborgPackage
+  tailcallrun: tailcall_run.TailcallrunPackage
+  tailwindcsscom: tailwindcss_com.TailwindcsscomPackage
+  taku910githubio: taku910_github_io.Taku910githubioPackage
+  talosdev: talos_dev.TalosdevPackage
+  taplotamasfedev: taplo_tamasfe_dev.TaplotamasfedevPackage
+  tartrun: tart_run.TartrunPackage
+  taskfiledev: taskfile_dev.TaskfiledevPackage
+  tcllangorg: tcl_lang_org.TcllangorgPackage
+  tcltk: tcl_tk.TcltkPackage
+  tcpdumporg: tcpdump_org.TcpdumporgPackage
+  tcshorg: tcsh_org.TcshorgPackage
+  teaxyz: tea_xyz.TeaxyzPackage
+  tectonictypesettinggithubio: tectonic_typesetting_github_io.TectonictypesettinggithubioPackage
+  templguide: templ_guide.TemplguidePackage
+  temporalio: temporal_io.TemporalioPackage
+  terraformdocsio: terraform_docs_io.TerraformdocsioPackage
+  terraformio: terraform_io.TerraformioPackage
+  terragruntgruntworkio: terragrunt_gruntwork_io.TerragruntgruntworkioPackage
+  terratagio: terratag_io.TerratagioPackage
+  tesseractocrgithubio: tesseract_ocr_github_io.TesseractocrgithubioPackage
+  thekelleysorguk: thekelleys_org_uk.ThekelleysorgukPackage
+  theoraorg: theora_org.TheoraorgPackage
+  thoughtworksgithubio: thoughtworks_github_io.ThoughtworksgithubioPackage
+  thrysoeedk: thrysoee_dk.ThrysoeedkPackage
+  tidbytcom: tidbyt_com.TidbytcomPackage
+  tiltdev: tilt_dev.TiltdevPackage
+  tinybirdco: tinybird_co.TinybirdcoPackage
+  tinygoorg: tinygo_org.TinygoorgPackage
+  tldrsh: tldr_sh.TldrshPackage
+  tlrdev: tlr_dev.TlrdevPackage
+  tmateio: tmate_io.TmateioPackage
+  toxwiki: tox_wiki.ToxwikiPackage
+  traefikio: traefik_io.TraefikioPackage
+  treesittergithubio: tree_sitter_github_io.TreesittergithubioPackage
+  trippyclirs: trippy_cli_rs.TrippyclirsPackage
+  trufflesecuritycom: trufflesecurity_com.TrufflesecuritycomPackage
+  tsl0922githubio: tsl0922_github_io.Tsl0922githubioPackage
+  tuistio: tuist_io.TuistioPackage
+  tukaaniorg: tukaani_org.TukaaniorgPackage
+  tursotech: turso_tech.TursotechPackage
+  typescriptlangorg: typescriptlang_org.TypescriptlangorgPackage
+  typstapp: typst_app.TypstappPackage
+  unboundnet: unbound_net.UnboundnetPackage
+  undefined: undefinedpkg.UndefinedpkgPackage
+  unicodeorg: unicode_org.UnicodeorgPackage
+  unidataucaredu: unidata_ucar_edu.UnidataucareduPackage
+  unixodbcorg: unixodbc_org.UnixodbcorgPackage
+  upliftcidev: upliftci_dev.UpliftcidevPackage
+  upxgithubio: upx_github_io.UpxgithubioPackage
+  uriparsergithubio: uriparser_github_io.UriparsergithubioPackage
+  valesh: vale_sh.ValeshPackage
+  valkeyio: valkey_io.ValkeyioPackage
+  vamppluginsorg: vamp_plugins_org.VamppluginsorgPackage
+  vannaai: vanna_ai.VannaaiPackage
+  vapoursynthcom: vapoursynth_com.VapoursynthcomPackage
+  vaultprojectio: vaultproject_io.VaultprojectioPackage
+  vclustercom: vcluster_com.VclustercomPackage
+  vektragithubio: vektra_github_io.VektragithubioPackage
+  veleroio: velero_io.VeleroioPackage
+  veracodecom: veracode_com.VeracodecomPackage
+  vercelcom: vercel_com.VercelcomPackage
+  versitycom: versity_com.VersitycomPackage
+  viaductaiksops: viaduct_ai_ksops.ViaductaiksopsPackage
+  viaductai: viaduct_ai.ViaductaiPackage
+  videolanorg: videolan_org.VideolanorgPackage
+  vimorg: vim_org.VimorgPackage
+  virtualenvpypaio: virtualenv_pypa_io.VirtualenvpypaioPackage
+  virtualsquareorg: virtualsquare_org.VirtualsquareorgPackage
+  vitejsdev: vitejs_dev.VitejsdevPackage
+  vlangio: vlang_io.VlangioPackage
+  voltash: volta_sh.VoltashPackage
+  wailsio: wails_io.WailsioPackage
+  wait4xdev: wait4x_dev.Wait4xdevPackage
+  wasmerio: wasmer_io.WasmerioPackage
+  watchexecgithubio: watchexec_github_io.WatchexecgithubioPackage
+  waterlanhomexs4allnl: waterlan_home_xs4all_nl.Waterlanhomexs4allnlPackage
+  wavpackcom: wavpack_com.WavpackcomPackage
+  waylandfreedesktoporg: wayland_freedesktop_org.WaylandfreedesktoporgPackage
+  webmprojectorg: webmproject_org.WebmprojectorgPackage
+  werfio: werf_io.WerfioPackage
+  wezfurlongorg: wezfurlong_org.WezfurlongorgPackage
+  wilfredmeuk: wilfred_me_uk.WilfredmeukPackage
+  wimlibnet: wimlib_net.WimlibnetPackage
+  wiresharkorg: wireshark_org.WiresharkorgPackage
+  wixcom: wix_com.WixcomPackage
+  wkentarogithubio: wkentaro_github_io.WkentarogithubioPackage
+  wpewebkitorg: wpewebkit_org.WpewebkitorgPackage
+  wundergraphcom: wundergraph_com.WundergraphcomPackage
+  wxwidgetsorg: wxwidgets_org.WxwidgetsorgPackage
+  xorgxscrnsaver: x_org_xscrnsaver.XorgxscrnsaverPackage
+  xorg: x_org.XorgPackage
+  xcfiledev: xcfile_dev.XcfiledevPackage
+  xercesapacheorg: xerces_apache_org.XercesapacheorgPackage
+  xiphorg: xiph_org.XiphorgPackage
+  xkbcommonorg: xkbcommon_org.XkbcommonorgPackage
+  xplrdev: xplr_dev.XplrdevPackage
+  xpraorg: xpra_org.XpraorgPackage
+  xtlsgithubio: xtls_github_io.XtlsgithubioPackage
+  xvidcom: xvid_com.XvidcomPackage
+  yadmio: yadm_io.YadmioPackage
+  yarnpkgcom: yarnpkg_com.YarnpkgcomPackage
+  yasmtortallnet: yasm_tortall_net.YasmtortallnetPackage
+  youtubedlorg: youtube_dl_org.YoutubedlorgPackage
+  ytdlporg: yt_dlp_org.YtdlporgPackage
+  yuigithubio: yui_github_io.YuigithubioPackage
+  zarfdev: zarf_dev.ZarfdevPackage
+  zeromqorg: zeromq_org.ZeromqorgPackage
+  ziglangorg: ziglang_org.ZiglangorgPackage
+  zlibnet: zlib_net.ZlibnetPackage
+  zrokio: zrok_io.ZrokioPackage
+  zshsourceforgeio: zsh_sourceforge_io.ZshsourceforgeioPackage
 }
 
-// Export pantry object with package mappings
-export const pantry: Pantry = {
-  abseilio: abseilio.abseilioPackage,
-  acornio: acornio.acornioPackage,
-  agptco: agptco.agptcoPackage,
-  agwanamegitcrypt: agwaname_git_crypt.agwanamegitcryptPackage,
-  akuityio: akuityio.akuityioPackage,
-  alacrittyorg: alacrittyorg.alacrittyorgPackage,
-  alembicsqlalchemyorg: alembicsqlalchemyorg.alembicsqlalchemyorgPackage,
-  aliases: aliases.aliasesPackage,
-  alsaprojectorg: alsa_projectorg.alsaprojectorgPackage,
-  amberlangcom: amber_langcom.amberlangcomPackage,
-  amprs: amprs.amprsPackage,
-  amrdevelopergithubio: amrdevelopergithubio.amrdevelopergithubioPackage,
-  anchorecom: anchorecom.anchorecomPackage,
-  androidcom: androidcom.androidcomPackage,
-  angulardev: angulardev.angulardevPackage,
-  ansiblecom: ansiblecom.ansiblecomPackage,
-  aomediagooglesourcecom: aomediagooglesourcecom.aomediagooglesourcecomPackage,
-  apacheorg: apacheorg.apacheorgPackage,
-  apktoolorg: apktoolorg.apktoolorgPackage,
-  apollographqlcom: apollographqlcom.apollographqlcomPackage,
-  appiumio: appiumio.appiumioPackage,
-  applecom: applecom.applecomPackage,
-  applecomremote_cmds: applecom_remote_cmds.applecomremote_cmdsPackage,
-  apptainerorg: apptainerorg.apptainerorgPackage,
-  aquasecuritygithubio: aquasecuritygithubio.aquasecuritygithubioPackage,
-  arduinogithubio: arduinogithubio.arduinogithubioPackage,
-  argbashdev: argbashdev.argbashdevPackage,
-  argoprojgithubio: argoprojgithubio.argoprojgithubioPackage,
-  aria2githubio: aria2githubio.aria2githubioPackage,
-  arkadedev: arkadedev.arkadedevPackage,
-  asciidoctororg: asciidoctororg.asciidoctororgPackage,
-  asciinemaorg: asciinemaorg.asciinemaorgPackage,
-  aspellnet: aspellnet.aspellnetPackage,
-  assimporg: assimporg.assimporgPackage,
-  astgrepgithubio: ast_grepgithubio.astgrepgithubioPackage,
-  astralsh: astralsh.astralshPackage,
-  astralshruff: astralsh_ruff.astralshruffPackage,
-  astralshty: astralsh_ty.astralshtyPackage,
-  astralshuv: astralsh_uv.astralshuvPackage,
-  atlasgoio: atlasgoio.atlasgoioPackage,
-  attrsorg: attrsorg.attrsorgPackage,
-  augeasnet: augeasnet.augeasnetPackage,
-  authzedcom: authzedcom.authzedcomPackage,
-  aux4io: aux4io.aux4ioPackage,
-  awsamazoncom: awsamazoncom.awsamazoncomPackage,
-  awsamazoncomcli: awsamazoncom_cli.awsamazoncomcliPackage,
-  awsamazoncomsam: awsamazoncom_sam.awsamazoncomsamPackage,
-  bashlydannybco: bashlydannybco.bashlydannybcoPackage,
-  bcryptsourceforgenet: bcryptsourceforgenet.bcryptsourceforgenetPackage,
-  beyondgrepcom: beyondgrepcom.beyondgrepcomPackage,
-  biomejsdev: biomejsdev.biomejsdevPackage,
-  bitcoinorg: bitcoinorg.bitcoinorgPackage,
-  bittensorcom: bittensorcom.bittensorcomPackage,
-  bitwardencom: bitwardencom.bitwardencomPackage,
-  blake2net: blake2net.blake2netPackage,
-  bloomreachcom: bloomreachcom.bloomreachcomPackage,
-  boostorg: boostorg.boostorgPackage,
-  borepub: borepub.borepubPackage,
-  breakfastquaycom: breakfastquaycom.breakfastquaycomPackage,
-  browserusecom: browser_usecom.browserusecomPackage,
-  brxken128githubio: brxken128githubio.brxken128githubioPackage,
-  budimanjojogithubio: budimanjojogithubio.budimanjojogithubioPackage,
-  bufbuild: bufbuild.bufbuildPackage,
-  buildpacksio: buildpacksio.buildpacksioPackage,
-  bunsh: bunsh.bunshPackage,
-  bytebasecom: bytebasecom.bytebasecomPackage,
-  bytereeforg: bytereeforg.bytereeforgPackage,
-  caresorg: c_aresorg.caresorgPackage,
-  caddyservercom: caddyservercom.caddyservercomPackage,
-  cairographicsorg: cairographicsorg.cairographicsorgPackage,
-  capstoneengineorg: capstone_engineorg.capstoneengineorgPackage,
-  carapacesh: carapacesh.carapaceshPackage,
-  caskreadthedocsio: caskreadthedocsio.caskreadthedocsioPackage,
-  catborg: catborg.catborgPackage,
-  ccachedev: ccachedev.ccachedevPackage,
-  cedarpolicycom: cedarpolicycom.cedarpolicycomPackage,
-  cedarpolicycomcli: cedarpolicycom_cli.cedarpolicycomcliPackage,
-  cephcom: cephcom.cephcomPackage,
-  cephcomcephadm: cephcom_cephadm.cephcomcephadmPackage,
-  ceressolverorg: ceres_solverorg.ceressolverorgPackage,
-  certbotefforg: certbotefforg.certbotefforgPackage,
-  certifiio: certifiio.certifiioPackage,
-  cgalorg: cgalorg.cgalorgPackage,
-  changiedev: changiedev.changiedevPackage,
-  charmsh: charmsh.charmshPackage,
-  checkovio: checkovio.checkovioPackage,
-  chezmoiio: chezmoiio.chezmoiioPackage,
-  chiarkgreenendorguk: chiarkgreenendorguk.chiarkgreenendorgukPackage,
-  chromedriverchromiumorg: chromedriverchromiumorg.chromedriverchromiumorgPackage,
-  ciliumio: ciliumio.ciliumioPackage,
-  circlecicom: circlecicom.circlecicomPackage,
-  ciscocom: ciscocom.ciscocomPackage,
-  classicyarnpkgcom: classicyarnpkgcom.classicyarnpkgcomPackage,
-  cligithubcom: cligithubcom.cligithubcomPackage,
-  clisporg: clisporg.clisporgPackage,
-  clogtoolgithubio: clog_toolgithubio.clogtoolgithubioPackage,
-  cloudflarecom: cloudflarecom.cloudflarecomPackage,
-  cloudfoundryorg: cloudfoundryorg.cloudfoundryorgPackage,
-  cloudnativepgio: cloudnative_pgio.cloudnativepgioPackage,
-  cmakeorg: cmakeorg.cmakeorgPackage,
-  cmockaorg: cmockaorg.cmockaorgPackage,
-  cnqueryio: cnqueryio.cnqueryioPackage,
-  cocoapodsorg: cocoapodsorg.cocoapodsorgPackage,
-  cocoapodsorgxcodeproj: cocoapodsorg_xcodeproj.cocoapodsorgxcodeprojPackage,
-  cocogittoio: cocogittoio.cocogittoioPackage,
-  codevideolanorg: codevideolanorg.codevideolanorgPackage,
-  codercom: codercom.codercomPackage,
-  cointopsh: cointopsh.cointopshPackage,
-  condaorg: condaorg.condaorgPackage,
-  conftestdev: conftestdev.conftestdevPackage,
-  connectrpcorg: connectrpcorg.connectrpcorgPackage,
-  consulio: consulio.consulioPackage,
-  convcogithubio: convcogithubio.convcogithubioPackage,
-  corednsio: corednsio.corednsioPackage,
-  cpanminus: cpanminus.cpanminusPackage,
-  crypto: crypto.cryptoPackage,
-  cratesio: cratesio.cratesioPackage,
-  cratesioaichat: cratesio_aichat.cratesioaichatPackage,
-  cratesiobakers: cratesio_bake_rs.cratesiobakersPackage,
-  cratesiocargotarpaulin: cratesio_cargo_tarpaulin.cratesiocargotarpaulinPackage,
-  cratesioducker: cratesio_ducker.cratesioduckerPackage,
-  cratesioflamegraph: cratesio_flamegraph.cratesioflamegraphPackage,
-  cratesioox: cratesio_ox.cratesiooxPackage,
-  cratesiopik: cratesio_pik.cratesiopikPackage,
-  cratesioqsv: cratesio_qsv.cratesioqsvPackage,
-  cratesioripgrepall: cratesio_ripgrep_all.cratesioripgrepallPackage,
-  cratesiorucolanotes: cratesio_rucola_notes.cratesiorucolanotesPackage,
-  cratesiosamply: cratesio_samply.cratesiosamplyPackage,
-  crazymaxdev: crazymaxdev.crazymaxdevPackage,
-  creativeprojectsgithubio: creativeprojectsgithubio.creativeprojectsgithubioPackage,
-  cruftgithubio: cruftgithubio.cruftgithubioPackage,
-  cryptographyio: cryptographyio.cryptographyioPackage,
-  crystallangorg: crystal_langorg.crystallangorgPackage,
-  cscopesourceforgeio: cscopesourceforgeio.cscopesourceforgeioPackage,
-  csientuedutw: csientuedutw.csientuedutwPackage,
-  ctagsio: ctagsio.ctagsioPackage,
-  ctopsh: ctopsh.ctopshPackage,
-  cuelangorg: cuelangorg.cuelangorgPackage,
-  curlse: curlse.curlsePackage,
-  curlieio: curlieio.curlieioPackage,
-  cyrusimaporg: cyrusimaporg.cyrusimaporgPackage,
-  cythonorg: cythonorg.cythonorgPackage,
-  d2langcom: d2langcom.d2langcomPackage,
-  daggerio: daggerio.daggerioPackage,
-  dartdev: dartdev.dartdevPackage,
-  darwinsyscom: darwinsyscom.darwinsyscomPackage,
-  databrickscom: databrickscom.databrickscomPackage,
-  daytonaio: daytonaio.daytonaioPackage,
-  dblabdanvergaracom: dblabdanvergaracom.dblabdanvergaracomPackage,
-  debianorg: debianorg.debianorgPackage,
-  deepwisdomai: deepwisdomai.deepwisdomaiPackage,
-  denilsonsanombr: denilsonsanombr.denilsonsanombrPackage,
-  denoland: denoland.denolandPackage,
-  depotdev: depotdev.depotdevPackage,
-  destunreachorg: dest_unreachorg.destunreachorgPackage,
-  devyorhelnl: devyorhelnl.devyorhelnlPackage,
-  developer1passwordcom: developer1passwordcom.developer1passwordcomPackage,
-  developer1passwordcom1passwordcli: developer1passwordcom_1password_cli.developer1passwordcom1passwordcliPackage,
-  developersyubicocom: developersyubicocom.developersyubicocomPackage,
-  devpodsh: devpodsh.devpodshPackage,
-  dgraphio: dgraphio.dgraphioPackage,
-  dhalllangorg: dhall_langorg.dhalllangorgPackage,
-  dhruvkbdev: dhruvkbdev.dhruvkbdevPackage,
-  diggerdev: diggerdev.diggerdevPackage,
-  digiporg: digiporg.digiporgPackage,
-  digitaloceancom: digitaloceancom.digitaloceancomPackage,
-  direnvnet: direnvnet.direnvnetPackage,
-  dkrzde: dkrzde.dkrzdePackage,
-  dnslookupdog: dnslookupdog.dnslookupdogPackage,
-  docbookorg: docbookorg.docbookorgPackage,
-  dockercom: dockercom.dockercomPackage,
-  doctavecom: doctavecom.doctavecomPackage,
-  docutilsorg: docutilsorg.docutilsorgPackage,
-  dotenvlintergithubio: dotenv_lintergithubio.dotenvlintergithubioPackage,
-  dotenvxcom: dotenvxcom.dotenvxcomPackage,
-  dotnetmicrosoftcom: dotnetmicrosoftcom.dotnetmicrosoftcomPackage,
-  doxygennl: doxygennl.doxygennlPackage,
-  dozzledev: dozzledev.dozzledevPackage,
-  dprintdev: dprintdev.dprintdevPackage,
-  drifreedesktoporg: drifreedesktoporg.drifreedesktoporgPackage,
-  duckdborg: duckdborg.duckdborgPackage,
-  duktapeorg: duktapeorg.duktapeorgPackage,
-  dystroyorg: dystroyorg.dystroyorgPackage,
-  dystroyorgbacon: dystroyorg_bacon.dystroyorgbaconPackage,
-  earthlydev: earthlydev.earthlydevPackage,
-  ebassigithubio: ebassigithubio.ebassigithubioPackage,
-  edgedbcom: edgedbcom.edgedbcomPackage,
-  eigentuxfamilyorg: eigentuxfamilyorg.eigentuxfamilyorgPackage,
-  eksctlio: eksctlio.eksctlioPackage,
-  elementsprojectorg: elementsprojectorg.elementsprojectorgPackage,
-  elfutilsorg: elfutilsorg.elfutilsorgPackage,
-  elixirlangorg: elixir_langorg.elixirlangorgPackage,
-  elizaosgithubio: elizaOSgithubio.elizaOSgithubioPackage,
-  elvsh: elvsh.elvshPackage,
-  encoredev: encoredev.encoredevPackage,
-  endoflifedate: endoflifedate.endoflifedatePackage,
-  epsilonprojectsourceforgeio: epsilon_projectsourceforgeio.epsilonprojectsourceforgeioPackage,
-  erlangorg: erlangorg.erlangorgPackage,
-  etcdio: etcdio.etcdioPackage,
-  exiftoolorg: exiftoolorg.exiftoolorgPackage,
-  expodev: expodev.expodevPackage,
-  eyrieorg: eyrieorg.eyrieorgPackage,
-  f1bonacc1githubio: f1bonacc1githubio.f1bonacc1githubioPackage,
-  fabianlindforsse: fabianlindforsse.fabianlindforssePackage,
-  facebookcom: facebookcom.facebookcomPackage,
-  fairwindscom: fairwindscom.fairwindscomPackage,
-  fastlanetools: fastlanetools.fastlanetoolsPackage,
-  felixkratzgithubio: felixkratzgithubio.felixkratzgithubioPackage,
-  fermyoncom: fermyoncom.fermyoncomPackage,
-  ffmpegorg: ffmpegorg.ffmpegorgPackage,
-  fftworg: fftworg.fftworgPackage,
-  filippoio: filippoio.filippoioPackage,
-  fishshellcom: fishshellcom.fishshellcomPackage,
-  fliptio: fliptio.fliptioPackage,
-  flitpypaio: flitpypaio.flitpypaioPackage,
-  fltkorg: fltkorg.fltkorgPackage,
-  fluentciio: fluentciio.fluentciioPackage,
-  flutterdev: flutterdev.flutterdevPackage,
-  fluxcdio: fluxcdio.fluxcdioPackage,
-  flyio: flyio.flyioPackage,
-  flywaydborg: flywaydborg.flywaydborgPackage,
-  fmtdev: fmtdev.fmtdevPackage,
-  fnaxnagithubio: fna_xnagithubio.fnaxnagithubioPackage,
-  freedesktoporg: freedesktoporg.freedesktoporgPackage,
-  freeglutsourceforgeio: freeglutsourceforgeio.freeglutsourceforgeioPackage,
-  freetdsorg: freetdsorg.freetdsorgPackage,
-  freetypeorg: freetypeorg.freetypeorgPackage,
-  frei0rdyneorg: frei0rdyneorg.frei0rdyneorgPackage,
-  fuellabsgithubio: fuellabsgithubio.fuellabsgithubioPackage,
-  fukuchiorg: fukuchiorg.fukuchiorgPackage,
-  fullstorycom: fullstorycom.fullstorycomPackage,
-  furyco: furyco.furycoPackage,
-  fxwtf: fxwtf.fxwtfPackage,
-  gaiagisit: gaia_gisit.gaiagisitPackage,
-  gdalorg: gdalorg.gdalorgPackage,
-  geoffgreerfm: geoffgreerfm.geoffgreerfmPackage,
-  getclipboardapp: getclipboardapp.getclipboardappPackage,
-  getcomposerorg: getcomposerorg.getcomposerorgPackage,
-  getfoundrysh: getfoundrysh.getfoundryshPackage,
-  getsopsio: getsopsio.getsopsioPackage,
-  getsynthcom: getsynthcom.getsynthcomPackage,
-  getzolaorg: getzolaorg.getzolaorgPackage,
-  geuzorg: geuzorg.geuzorgPackage,
-  gflagsgithubio: gflagsgithubio.gflagsgithubioPackage,
-  ghostgumcomau: ghostgumcomau.ghostgumcomauPackage,
-  ghostscriptcom: ghostscriptcom.ghostscriptcomPackage,
-  giflibsourceforgeio: giflibsourceforgeio.giflibsourceforgeioPackage,
-  gitclifforg: git_clifforg.gitclifforgPackage,
-  gitlfscom: git_lfscom.gitlfscomPackage,
-  gitquickstatssh: git_quick_statssh.gitquickstatsshPackage,
-  gitscmorg: git_scmorg.gitscmorgPackage,
-  gittowncom: git_towncom.gittowncomPackage,
-  gitosgeoorg: gitosgeoorg.gitosgeoorgPackage,
-  gittoztnet: gittoztnet.gittoztnetPackage,
-  githubcom: githubcom.githubcomPackage,
-  githubcom0agecreate2crunch: githubcom_0age_create2crunch.githubcom0agecreate2crunchPackage,
-  githubcomblacktoplporg: githubcom_blacktop_lporg.githubcomblacktoplporgPackage,
-  githubcomblynnnex: githubcom_blynn_nex.githubcomblynnnexPackage,
-  githubcomcyfrinsafetxhashesutil: githubcom_Cyfrin_safe_tx_hashes_util.githubcomCyfrinsafetxhashesutilPackage,
-  githubcomdiniboy1123usque: githubcom_Diniboy1123_usque.githubcomDiniboy1123usquePackage,
-  githubcomfastfetchclifastfetch: githubcom_fastfetch_cli_fastfetch.githubcomfastfetchclifastfetchPackage,
-  githubcomfiatjafnak: githubcom_fiatjaf_nak.githubcomfiatjafnakPackage,
-  githubcomgitecosystemgitcredentialmanager: githubcom_git_ecosystem_git_credential_manager.githubcomgitecosystemgitcredentialmanagerPackage,
-  githubcomglauthglauth: githubcom_glauth_glauth.githubcomglauthglauthPackage,
-  githubcomigorshubovychmarkdownlintcli: githubcom_igorshubovych_markdownlint_cli.githubcomigorshubovychmarkdownlintcliPackage,
-  githubcomjarunnnn: githubcom_jarun_nnn.githubcomjarunnnnPackage,
-  githubcomkoekeishiyaskhd: githubcom_koekeishiya_skhd.githubcomkoekeishiyaskhdPackage,
-  githubcomlucianosrpryeuv: githubcom_lucianosrp_rye_uv.githubcomlucianosrpryeuvPackage,
-  githubcommasclimas: githubcom_mas_cli_mas.githubcommasclimasPackage,
-  githubcommilescranmerrip2: githubcom_MilesCranmer_rip2.githubcomMilesCranmerrip2Package,
-  githubcomminseokohtomlcli: githubcom_MinseokOh_toml_cli.githubcomMinseokOhtomlcliPackage,
-  githubcommycreepypakku: githubcom_mycreepy_pakku.githubcommycreepypakkuPackage,
-  githubcomparchivepar2cmdline: githubcom_Parchive_par2cmdline.githubcomParchivepar2cmdlinePackage,
-  githubcompeaks5cmd: githubcom_peak_s5cmd.githubcompeaks5cmdPackage,
-  githubcomperipheryappperiphery: githubcom_peripheryapp_periphery.githubcomperipheryappperipheryPackage,
-  githubcomshakaprojectshakapackager: githubcom_shaka_project_shaka_packager.githubcomshakaprojectshakapackagerPackage,
-  githubcomsorahenvchain: githubcom_sorah_envchain.githubcomsorahenvchainPackage,
-  githubcomspencerkimballstargazers: githubcom_spencerkimball_stargazers.githubcomspencerkimballstargazersPackage,
-  githubcomwitheredmagicstarpls: githubcom_withered_magic_starpls.githubcomwitheredmagicstarplsPackage,
-  gitlabcom: gitlabcom.gitlabcomPackage,
-  gitleaksio: gitleaksio.gitleaksioPackage,
-  glarosdtcumnedu: glarosdtcumnedu.glarosdtcumneduPackage,
-  gleamrun: gleamrun.gleamrunPackage,
-  glewsourceforgeio: glewsourceforgeio.glewsourceforgeioPackage,
-  glfworg: glfworg.glfworgPackage,
-  glmgtrucnet: glmg_trucnet.glmgtrucnetPackage,
-  gnomeorg: gnomeorg.gnomeorgPackage,
-  gnuorg: gnuorg.gnuorgPackage,
-  gnupgorg: gnupgorg.gnupgorgPackage,
-  gnuplotinfo: gnuplotinfo.gnuplotinfoPackage,
-  gnutlsorg: gnutlsorg.gnutlsorgPackage,
-  godev: godev.godevPackage,
-  gouberorg: gouberorg.gouberorgPackage,
-  gohugoio: gohugoio.gohugoioPackage,
-  golangcilintrun: golangci_lintrun.golangcilintrunPackage,
-  gomplateca: gomplateca.gomplatecaPackage,
-  googlecom: googlecom.googlecomPackage,
-  googlegithubio: googlegithubio.googlegithubioPackage,
-  goreleasercom: goreleasercom.goreleasercomPackage,
-  gourceio: gourceio.gourceioPackage,
-  gphotoorg: gphotoorg.gphotoorgPackage,
-  gqlgencom: gqlgencom.gqlgencomPackage,
-  gradleorg: gradleorg.gradleorgPackage,
-  grafanacom: grafanacom.grafanacomPackage,
-  granteddev: granteddev.granteddevPackage,
-  graphicsmagickorg: graphicsmagickorg.graphicsmagickorgPackage,
-  graphitesilorg: graphitesilorg.graphitesilorgPackage,
-  graphqleditorcom: graphqleditorcom.graphqleditorcomPackage,
-  graphvizorg: graphvizorg.graphvizorgPackage,
-  groongaorg: groongaorg.groongaorgPackage,
-  groovylangorg: groovy_langorg.groovylangorgPackage,
-  grpcio: grpcio.grpcioPackage,
-  gstreamerfreedesktoporg: gstreamerfreedesktoporg.gstreamerfreedesktoporgPackage,
-  gtkorg: gtkorg.gtkorgPackage,
-  gtssourceforgenet: gtssourceforgenet.gtssourceforgenetPackage,
-  hadronsorg: hadronsorg.hadronsorgPackage,
-  hardingmotdca: hardingmotdca.hardingmotdcaPackage,
-  harfbuzzorg: harfbuzzorg.harfbuzzorgPackage,
-  hashicorpcom: hashicorpcom.hashicorpcomPackage,
-  haskellorg: haskellorg.haskellorgPackage,
-  hasuraio: hasuraio.hasuraioPackage,
-  hatchpypaio: hatchpypaio.hatchpypaioPackage,
-  hboehminfo: hboehminfo.hboehminfoPackage,
-  hdfgrouporg: hdfgrouporg.hdfgrouporgPackage,
-  heasarcgsfcnasagov: heasarcgsfcnasagov.heasarcgsfcnasagovPackage,
-  helixeditorcom: helix_editorcom.helixeditorcomPackage,
-  helmsh: helmsh.helmshPackage,
-  herokucom: herokucom.herokucomPackage,
-  hetznercom: hetznercom.hetznercomPackage,
-  hjsongithubio: hjsongithubio.hjsongithubioPackage,
-  htmltidyorg: html_tidyorg.htmltidyorgPackage,
-  htopdev: htopdev.htopdevPackage,
-  htsliborg: htsliborg.htsliborgPackage,
-  httpieio: httpieio.httpieioPackage,
-  huggingfaceco: huggingfaceco.huggingfacecoPackage,
-  hugowang: hugowang.hugowangPackage,
-  hunspellgithubio: hunspellgithubio.hunspellgithubioPackage,
-  hurldev: hurldev.hurldevPackage,
-  ibrcstubsde: ibrcstu_bsde.ibrcstubsdePackage,
-  idleberggithubio: idleberggithubio.idleberggithubioPackage,
-  ijgorg: ijgorg.ijgorgPackage,
-  imageflowio: imageflowio.imageflowioPackage,
-  imagemagickorg: imagemagickorg.imagemagickorgPackage,
-  indexsupplycom: indexsupplycom.indexsupplycomPackage,
-  infoziporg: info_ziporg.infoziporgPackage,
-  infracostio: infracostio.infracostioPackage,
-  intelcom: intelcom.intelcomPackage,
-  invisibleislandnet: invisible_islandnet.invisibleislandnetPackage,
-  invisibleislandnetlynx: invisible_islandnet_lynx.invisibleislandnetlynxPackage,
-  ipfstech: ipfstech.ipfstechPackage,
-  ipythonorg: ipythonorg.ipythonorgPackage,
-  irohcomputer: irohcomputer.irohcomputerPackage,
-  iscorg: iscorg.iscorgPackage,
-  iscorgbind9: iscorg_bind9.iscorgbind9Package,
-  istioio: istioio.istioioPackage,
-  itstoolorg: itstoolorg.itstoolorgPackage,
-  ivarchcom: ivarchcom.ivarchcomPackage,
-  jbangdev: jbangdev.jbangdevPackage,
-  jbig2deccom: jbig2deccom.jbig2deccomPackage,
-  jedisct1githubio: jedisct1githubio.jedisct1githubioPackage,
-  jedsoftorg: jedsoftorg.jedsoftorgPackage,
-  jemallocnet: jemallocnet.jemallocnetPackage,
-  jenkinsxio: jenkins_xio.jenkinsxioPackage,
-  jenkinsio: jenkinsio.jenkinsioPackage,
-  jenvbe: jenvbe.jenvbePackage,
-  jetporchcom: jetporchcom.jetporchcomPackage,
-  jfrogcom: jfrogcom.jfrogcomPackage,
-  jlessio: jlessio.jlessioPackage,
-  jonasgithubio: jonasgithubio.jonasgithubioPackage,
-  jpegorg: jpegorg.jpegorgPackage,
-  jsonnetorg: jsonnetorg.jsonnetorgPackage,
-  jugitfzjuelichde: jugitfz_juelichde.jugitfzjuelichdePackage,
-  jujuis: jujuis.jujuisPackage,
-  julialangorg: julialangorg.julialangorgPackage,
-  jumppaddev: jumppaddev.jumppaddevPackage,
-  jupyterorg: jupyterorg.jupyterorgPackage,
-  justsystems: justsystems.justsystemsPackage,
-  k3dio: k3dio.k3dioPackage,
-  k6io: k6io.k6ioPackage,
-  k9scliio: k9scliio.k9scliioPackage,
-  kafkaapacheorg: kafkaapacheorg.kafkaapacheorgPackage,
-  kagglecom: kagglecom.kagglecomPackage,
-  keephqdev: keephqdev.keephqdevPackage,
-  kerberosorg: kerberosorg.kerberosorgPackage,
-  kernelorg: kernelorg.kernelorgPackage,
-  kernelorglibcap: kernelorg_libcap.kernelorglibcapPackage,
-  khanacademyorg: khanacademyorg.khanacademyorgPackage,
-  khronosorg: khronosorg.khronosorgPackage,
-  kindsigsk8sio: kindsigsk8sio.kindsigsk8sioPackage,
-  kislyukgithubio: kislyukgithubio.kislyukgithubioPackage,
-  kluctlio: kluctlio.kluctlioPackage,
-  kobuild: kobuild.kobuildPackage,
-  kornelski: kornelski.kornelskiPackage,
-  kotlinlangorg: kotlinlangorg.kotlinlangorgPackage,
-  koyebcom: koyebcom.koyebcomPackage,
-  kptdev: kptdev.kptdevPackage,
-  krewsigsk8sio: krewsigsk8sio.krewsigsk8sioPackage,
-  ktlintgithubio: ktlintgithubio.ktlintgithubioPackage,
-  kubebuilderio: kubebuilderio.kubebuilderioPackage,
-  kubecmcloud: kubecmcloud.kubecmcloudPackage,
-  kubectxdev: kubectxdev.kubectxdevPackage,
-  kubelinterio: kubelinterio.kubelinterioPackage,
-  kubernetesio: kubernetesio.kubernetesioPackage,
-  kubesharkco: kubesharkco.kubesharkcoPackage,
-  ladspaorg: ladspaorg.ladspaorgPackage,
-  lamesourceforgeio: lamesourceforgeio.lamesourceforgeioPackage,
-  langchaincom: langchaincom.langchaincomPackage,
-  laravelcom: laravelcom.laravelcomPackage,
-  lavinmqcom: lavinmqcom.lavinmqcomPackage,
-  lcdforg: lcdforg.lcdforgPackage,
-  leethomasongithubio: leethomasongithubio.leethomasongithubioPackage,
-  leolangorg: leo_langorg.leolangorgPackage,
-  leonerdorguk: leonerdorguk.leonerdorgukPackage,
-  leptonicaorg: leptonicaorg.leptonicaorgPackage,
-  lftpyarru: lftpyarru.lftpyarruPackage,
-  libarchiveorg: libarchiveorg.libarchiveorgPackage,
-  libcxxllvmorg: libcxxllvmorg.libcxxllvmorgPackage,
-  libeventorg: libeventorg.libeventorgPackage,
-  libexifgithubio: libexifgithubio.libexifgithubioPackage,
-  libexpatgithubio: libexpatgithubio.libexpatgithubioPackage,
-  libgdgithubio: libgdgithubio.libgdgithubioPackage,
-  libgeosorg: libgeosorg.libgeosorgPackage,
-  libgit2org: libgit2org.libgit2orgPackage,
-  libimobiledeviceorg: libimobiledeviceorg.libimobiledeviceorgPackage,
-  libislsourceforgeio: libislsourceforgeio.libislsourceforgeioPackage,
-  libjpegturboorg: libjpeg_turboorg.libjpegturboorgPackage,
-  liblqrwikidotcom: liblqrwikidotcom.liblqrwikidotcomPackage,
-  libpipelinegitlabio: libpipelinegitlabio.libpipelinegitlabioPackage,
-  libpngorg: libpngorg.libpngorgPackage,
-  libproxygithubio: libproxygithubio.libproxygithubioPackage,
-  libraworg: libraworg.libraworgPackage,
-  libsdlorg: libsdlorg.libsdlorgPackage,
-  libsodiumorg: libsodiumorg.libsodiumorgPackage,
-  libsouporg: libsouporg.libsouporgPackage,
-  libspngorg: libspngorg.libspngorgPackage,
-  libsshorg: libsshorg.libsshorgPackage,
-  libssh2org: libssh2org.libssh2orgPackage,
-  libtomnet: libtomnet.libtomnetPackage,
-  liburcuorg: liburcuorg.liburcuorgPackage,
-  libusbinfo: libusbinfo.libusbinfoPackage,
-  libuvorg: libuvorg.libuvorgPackage,
-  libvipsorg: libvipsorg.libvipsorgPackage,
-  libwebsocketsorg: libwebsocketsorg.libwebsocketsorgPackage,
-  libziporg: libziporg.libziporgPackage,
-  limavmio: lima_vmio.limavmioPackage,
-  linkerdio: linkerdio.linkerdioPackage,
-  linuxpamorg: linux_pamorg.linuxpamorgPackage,
-  liteclicom: liteclicom.liteclicomPackage,
-  littlecmscom: littlecmscom.littlecmscomPackage,
-  llmdatasetteio: llmdatasetteio.llmdatasetteioPackage,
-  lloydgithubio: lloydgithubio.lloydgithubioPackage,
-  llvmorg: llvmorg.llvmorgPackage,
-  localaiio: localaiio.localaiioPackage,
-  localstackcloud: localstackcloud.localstackcloudPackage,
-  logdydev: logdydev.logdydevPackage,
-  logologicalorg: logologicalorg.logologicalorgPackage,
-  luaorg: luaorg.luaorgPackage,
-  luajitorg: luajitorg.luajitorgPackage,
-  luarocksorg: luarocksorg.luarocksorgPackage,
-  lucagrullacom: lucagrullacom.lucagrullacomPackage,
-  lunarvimorg: lunarvimorg.lunarvimorgPackage,
-  lxmlde: lxmlde.lxmldePackage,
-  lycheeclirs: lycheeclirs.lycheeclirsPackage,
-  lz4org: lz4org.lz4orgPackage,
-  maaslalanicom: maaslalanicom.maaslalanicomPackage,
-  macvimorg: macvimorg.macvimorgPackage,
-  mailpitaxllentorg: mailpitaxllentorg.mailpitaxllentorgPackage,
-  makotemplatesorg: makotemplatesorg.makotemplatesorgPackage,
-  mandbgitlabio: man_dbgitlabio.mandbgitlabioPackage,
-  mandocbsdlv: mandocbsdlv.mandocbsdlvPackage,
-  mariadbcom: mariadbcom.mariadbcomPackage,
-  markupsafepalletsprojectscom: markupsafepalletsprojectscom.markupsafepalletsprojectscomPackage,
-  materializecom: materializecom.materializecomPackage,
-  matiosourceforgeio: matiosourceforgeio.matiosourceforgeioPackage,
-  maturinrs: maturinrs.maturinrsPackage,
-  mavenapacheorg: mavenapacheorg.mavenapacheorgPackage,
-  mcmcjagssourceforgeio: mcmc_jagssourceforgeio.mcmcjagssourceforgeioPackage,
-  mercurerocks: mercurerocks.mercurerocksPackage,
-  mercurialscmorg: mercurial_scmorg.mercurialscmorgPackage,
-  mergestatcom: mergestatcom.mergestatcomPackage,
-  mesa3dorg: mesa3dorg.mesa3dorgPackage,
-  mesonbuildcom: mesonbuildcom.mesonbuildcomPackage,
-  microeditorgithubio: micro_editorgithubio.microeditorgithubioPackage,
-  microbreworg: microbreworg.microbreworgPackage,
-  microcksio: microcksio.microcksioPackage,
-  microsoftcom: microsoftcom.microsoftcomPackage,
-  microsoftcomcodecli: microsoftcom_code_cli.microsoftcomcodecliPackage,
-  microsoftcommarkitdown: microsoftcom_markitdown.microsoftcommarkitdownPackage,
-  midnightcommanderorg: midnight_commanderorg.midnightcommanderorgPackage,
-  minio: minio.minioPackage,
-  misejdxdev: misejdxdev.misejdxdevPackage,
-  mitmproxyorg: mitmproxyorg.mitmproxyorgPackage,
-  mkcertdev: mkcertdev.mkcertdevPackage,
-  mkdocsorg: mkdocsorg.mkdocsorgPackage,
-  modalcom: modalcom.modalcomPackage,
-  moderncorg: moderncorg.moderncorgPackage,
-  moderncorggoyacc: moderncorg_goyacc.moderncorggoyaccPackage,
-  mongodbcom: mongodbcom.mongodbcomPackage,
-  moonrepodev: moonrepodev.moonrepodevPackage,
-  moshorg: moshorg.moshorgPackage,
-  mozillaorg: mozillaorg.mozillaorgPackage,
-  mozillaorgcbindgen: mozillaorg_cbindgen.mozillaorgcbindgenPackage,
-  mpg123de: mpg123de.mpg123dePackage,
-  mpmathorg: mpmathorg.mpmathorgPackage,
-  mpvio: mpvio.mpvioPackage,
-  msgpackorg: msgpackorg.msgpackorgPackage,
-  mujscom: mujscom.mujscomPackage,
-  munlangorg: mun_langorg.munlangorgPackage,
-  mupdfcom: mupdfcom.mupdfcomPackage,
-  musepacknet: musepacknet.musepacknetPackage,
-  musllibcorg: musllibcorg.musllibcorgPackage,
-  mvdancc: mvdancc.mvdanccPackage,
-  mvdanccgofumpt: mvdancc_gofumpt.mvdanccgofumptPackage,
-  mypylangorg: mypy_langorg.mypylangorgPackage,
-  mysqlcom: mysqlcom.mysqlcomPackage,
-  nanoeditororg: nano_editororg.nanoeditororgPackage,
-  nasmus: nasmus.nasmusPackage,
-  neovimio: neovimio.neovimioPackage,
-  netflixcom: netflixcom.netflixcomPackage,
-  netliborg: netliborg.netliborgPackage,
-  netpbmsourceforgenet: netpbmsourceforgenet.netpbmsourceforgenetPackage,
-  networkxorg: networkxorg.networkxorgPackage,
-  nghttp2org: nghttp2org.nghttp2orgPackage,
-  nginxorg: nginxorg.nginxorgPackage,
-  nikecom: nikecom.nikecomPackage,
-  nimlangorg: nim_langorg.nimlangorgPackage,
-  ninjabuildorg: ninja_buildorg.ninjabuildorgPackage,
-  nixosorg: nixosorg.nixosorgPackage,
-  nixpackscom: nixpackscom.nixpackscomPackage,
-  nlnetlabsnl: nlnetlabsnl.nlnetlabsnlPackage,
-  nmaporg: nmaporg.nmaporgPackage,
+export type Packages = Pantry
+
+export const pantry = {
+  abseilio: abseil_io.abseilioPackage,
+  acornio: acorn_io.acornioPackage,
+  agptco: agpt_co.agptcoPackage,
+  agwanamegitcrypt: agwa_name_git_crypt.agwanamegitcryptPackage,
+  akuityio: akuity_io.akuityioPackage,
+  alacrittyorg: alacritty_org.alacrittyorgPackage,
+  alembicsqlalchemyorg: alembic_sqlalchemy_org.alembicsqlalchemyorgPackage,
+  alsaprojectorg: alsa_project_org.alsaprojectorgPackage,
+  amberlangcom: amber_lang_com.amberlangcomPackage,
+  amprs: amp_rs.amprsPackage,
+  amrdevelopergithubio: amrdeveloper_github_io.amrdevelopergithubioPackage,
+  anchorecom: anchore_com.anchorecomPackage,
+  androidcom: android_com.androidcomPackage,
+  angulardev: angular_dev.angulardevPackage,
+  ansiblecom: ansible_com.ansiblecomPackage,
+  aomediagooglesourcecom: aomedia_googlesource_com.aomediagooglesourcecomPackage,
+  apacheorg: apache_org.apacheorgPackage,
+  apktoolorg: apktool_org.apktoolorgPackage,
+  apollographqlcom: apollographql_com.apollographqlcomPackage,
+  appiumio: appium_io.appiumioPackage,
+  applecomremote_cmds: apple_com_remote_cmds.applecomremote_cmdsPackage,
+  applecom: apple_com.applecomPackage,
+  apptainerorg: apptainer_org.apptainerorgPackage,
+  aquasecuritygithubio: aquasecurity_github_io.aquasecuritygithubioPackage,
+  arduinogithubio: arduino_github_io.arduinogithubioPackage,
+  argbashdev: argbash_dev.argbashdevPackage,
+  argoprojgithubio: argoproj_github_io.argoprojgithubioPackage,
+  aria2githubio: aria2_github_io.aria2githubioPackage,
+  arkadedev: arkade_dev.arkadedevPackage,
+  asciidoctororg: asciidoctor_org.asciidoctororgPackage,
+  asciinemaorg: asciinema_org.asciinemaorgPackage,
+  aspellnet: aspell_net.aspellnetPackage,
+  assimporg: assimp_org.assimporgPackage,
+  astgrepgithubio: ast_grep_github_io.astgrepgithubioPackage,
+  astralshruff: astral_sh_ruff.astralshruffPackage,
+  astralshty: astral_sh_ty.astralshtyPackage,
+  astralshuv: astral_sh_uv.astralshuvPackage,
+  astralsh: astral_sh.astralshPackage,
+  atlasgoio: atlasgo_io.atlasgoioPackage,
+  attrsorg: attrs_org.attrsorgPackage,
+  augeasnet: augeas_net.augeasnetPackage,
+  authzedcom: authzed_com.authzedcomPackage,
+  aux4io: aux4_io.aux4ioPackage,
+  awsamazoncomcli: aws_amazon_com_cli.awsamazoncomcliPackage,
+  awsamazoncomsam: aws_amazon_com_sam.awsamazoncomsamPackage,
+  awsamazoncom: aws_amazon_com.awsamazoncomPackage,
+  bashlydannybco: bashly_dannyb_co.bashlydannybcoPackage,
+  bcryptsourceforgenet: bcrypt_sourceforge_net.bcryptsourceforgenetPackage,
+  beyondgrepcom: beyondgrep_com.beyondgrepcomPackage,
+  biomejsdev: biomejs_dev.biomejsdevPackage,
+  bitcoinorg: bitcoin_org.bitcoinorgPackage,
+  bittensorcom: bittensor_com.bittensorcomPackage,
+  bitwardencom: bitwarden_com.bitwardencomPackage,
+  blake2net: blake2_net.blake2netPackage,
+  bloomreachcom: bloomreach_com.bloomreachcomPackage,
+  boostorg: boost_org.boostorgPackage,
+  borepub: bore_pub.borepubPackage,
+  breakfastquaycom: breakfastquay_com.breakfastquaycomPackage,
+  browserusecom: browser_use_com.browserusecomPackage,
+  brxken128githubio: brxken128_github_io.brxken128githubioPackage,
+  budimanjojogithubio: budimanjojo_github_io.budimanjojogithubioPackage,
+  bufbuild: buf_build.bufbuildPackage,
+  buildpacksio: buildpacks_io.buildpacksioPackage,
+  bunsh: bun_sh.bunshPackage,
+  bytebasecom: bytebase_com.bytebasecomPackage,
+  bytereeforg: bytereef_org.bytereeforgPackage,
+  caresorg: c_ares_org.caresorgPackage,
+  caddyservercom: caddyserver_com.caddyservercomPackage,
+  cairographicsorg: cairographics_org.cairographicsorgPackage,
+  capstoneengineorg: capstone_engine_org.capstoneengineorgPackage,
+  carapacesh: carapace_sh.carapaceshPackage,
+  caskreadthedocsio: cask_readthedocs_io.caskreadthedocsioPackage,
+  catborg: catb_org.catborgPackage,
+  ccachedev: ccache_dev.ccachedevPackage,
+  cedarpolicycomcli: cedarpolicy_com_cli.cedarpolicycomcliPackage,
+  cedarpolicycom: cedarpolicy_com.cedarpolicycomPackage,
+  cephcomcephadm: ceph_com_cephadm.cephcomcephadmPackage,
+  cephcom: ceph_com.cephcomPackage,
+  ceressolverorg: ceres_solver_org.ceressolverorgPackage,
+  certbotefforg: certbot_eff_org.certbotefforgPackage,
+  certifiio: certifi_io.certifiioPackage,
+  cgalorg: cgal_org.cgalorgPackage,
+  changiedev: changie_dev.changiedevPackage,
+  charmsh: charm_sh.charmshPackage,
+  checkovio: checkov_io.checkovioPackage,
+  chezmoiio: chezmoi_io.chezmoiioPackage,
+  chiarkgreenendorguk: chiark_greenend_org_uk.chiarkgreenendorgukPackage,
+  chromedriverchromiumorg: chromedriver_chromium_org.chromedriverchromiumorgPackage,
+  ciliumio: cilium_io.ciliumioPackage,
+  circlecicom: circleci_com.circlecicomPackage,
+  ciscocom: cisco_com.ciscocomPackage,
+  classicyarnpkgcom: classic_yarnpkg_com.classicyarnpkgcomPackage,
+  cligithubcom: cli_github_com.cligithubcomPackage,
+  clisporg: clisp_org.clisporgPackage,
+  clogtoolgithubio: clog_tool_github_io.clogtoolgithubioPackage,
+  cloudflarecom: cloudflare_com.cloudflarecomPackage,
+  cloudfoundryorg: cloudfoundry_org.cloudfoundryorgPackage,
+  cloudnativepgio: cloudnative_pg_io.cloudnativepgioPackage,
+  cmakeorg: cmake_org.cmakeorgPackage,
+  cmockaorg: cmocka_org.cmockaorgPackage,
+  cnqueryio: cnquery_io.cnqueryioPackage,
+  cocoapodsorgxcodeproj: cocoapods_org_xcodeproj.cocoapodsorgxcodeprojPackage,
+  cocoapodsorg: cocoapods_org.cocoapodsorgPackage,
+  cocogittoio: cocogitto_io.cocogittoioPackage,
+  codevideolanorg: code_videolan_org.codevideolanorgPackage,
+  codercom: coder_com.codercomPackage,
+  cointopsh: cointop_sh.cointopshPackage,
+  condaorg: conda_org.condaorgPackage,
+  conftestdev: conftest_dev.conftestdevPackage,
+  connectrpcorg: connectrpc_org.connectrpcorgPackage,
+  consulio: consul_io.consulioPackage,
+  convcogithubio: convco_github_io.convcogithubioPackage,
+  corednsio: coredns_io.corednsioPackage,
+  cpanminus: cpanmin_us.cpanminusPackage,
+  crypto: cr_yp_to.cryptoPackage,
+  cratesioaichat: crates_io_aichat.cratesioaichatPackage,
+  cratesiobakers: crates_io_bake_rs.cratesiobakersPackage,
+  cratesiocargotarpaulin: crates_io_cargo_tarpaulin.cratesiocargotarpaulinPackage,
+  cratesioducker: crates_io_ducker.cratesioduckerPackage,
+  cratesioflamegraph: crates_io_flamegraph.cratesioflamegraphPackage,
+  cratesioox: crates_io_ox.cratesiooxPackage,
+  cratesiopik: crates_io_pik.cratesiopikPackage,
+  cratesioqsv: crates_io_qsv.cratesioqsvPackage,
+  cratesioripgrepall: crates_io_ripgrep_all.cratesioripgrepallPackage,
+  cratesiorucolanotes: crates_io_rucola_notes.cratesiorucolanotesPackage,
+  cratesiosamply: crates_io_samply.cratesiosamplyPackage,
+  cratesio: crates_io.cratesioPackage,
+  crazymaxdev: crazymax_dev.crazymaxdevPackage,
+  creativeprojectsgithubio: creativeprojects_github_io.creativeprojectsgithubioPackage,
+  cruftgithubio: cruft_github_io.cruftgithubioPackage,
+  cryptographyio: cryptography_io.cryptographyioPackage,
+  crystallangorg: crystal_lang_org.crystallangorgPackage,
+  cscopesourceforgeio: cscope_sourceforge_io.cscopesourceforgeioPackage,
+  csientuedutw: csie_ntu_edu_tw.csientuedutwPackage,
+  ctagsio: ctags_io.ctagsioPackage,
+  ctopsh: ctop_sh.ctopshPackage,
+  cuelangorg: cuelang_org.cuelangorgPackage,
+  curlse: curl_se.curlsePackage,
+  curlieio: curlie_io.curlieioPackage,
+  cyrusimaporg: cyrusimap_org.cyrusimaporgPackage,
+  cythonorg: cython_org.cythonorgPackage,
+  d2langcom: d2lang_com.d2langcomPackage,
+  daggerio: dagger_io.daggerioPackage,
+  dartdev: dart_dev.dartdevPackage,
+  darwinsyscom: darwinsys_com.darwinsyscomPackage,
+  databrickscom: databricks_com.databrickscomPackage,
+  daytonaio: daytona_io.daytonaioPackage,
+  dblabdanvergaracom: dblab_danvergara_com.dblabdanvergaracomPackage,
+  debianorg: debian_org.debianorgPackage,
+  deepwisdomai: deepwisdom_ai.deepwisdomaiPackage,
+  denilsonsanombr: denilson_sa_nom_br.denilsonsanombrPackage,
+  denoland: deno_land.denolandPackage,
+  depotdev: depot_dev.depotdevPackage,
+  destunreachorg: dest_unreach_org.destunreachorgPackage,
+  devyorhelnl: dev_yorhel_nl.devyorhelnlPackage,
+  developer1passwordcom1passwordcli: developer_1password_com_1password_cli.developer1passwordcom1passwordcliPackage,
+  developer1passwordcom: developer_1password_com.developer1passwordcomPackage,
+  developersyubicocom: developers_yubico_com.developersyubicocomPackage,
+  devpodsh: devpod_sh.devpodshPackage,
+  dgraphio: dgraph_io.dgraphioPackage,
+  dhalllangorg: dhall_lang_org.dhalllangorgPackage,
+  dhruvkbdev: dhruvkb_dev.dhruvkbdevPackage,
+  diggerdev: digger_dev.diggerdevPackage,
+  digiporg: digip_org.digiporgPackage,
+  digitaloceancom: digitalocean_com.digitaloceancomPackage,
+  direnvnet: direnv_net.direnvnetPackage,
+  dkrzde: dkrz_de.dkrzdePackage,
+  dnslookupdog: dns_lookup_dog.dnslookupdogPackage,
+  docbookorg: docbook_org.docbookorgPackage,
+  dockercom: docker_com.dockercomPackage,
+  doctavecom: doctave_com.doctavecomPackage,
+  docutilsorg: docutils_org.docutilsorgPackage,
+  dotenvlintergithubio: dotenv_linter_github_io.dotenvlintergithubioPackage,
+  dotenvxcom: dotenvx_com.dotenvxcomPackage,
+  dotnetmicrosoftcom: dotnet_microsoft_com.dotnetmicrosoftcomPackage,
+  doxygennl: doxygen_nl.doxygennlPackage,
+  dozzledev: dozzle_dev.dozzledevPackage,
+  dprintdev: dprint_dev.dprintdevPackage,
+  drifreedesktoporg: dri_freedesktop_org.drifreedesktoporgPackage,
+  duckdborg: duckdb_org.duckdborgPackage,
+  duktapeorg: duktape_org.duktapeorgPackage,
+  dystroyorgbacon: dystroy_org_bacon.dystroyorgbaconPackage,
+  dystroyorg: dystroy_org.dystroyorgPackage,
+  earthlydev: earthly_dev.earthlydevPackage,
+  ebassigithubio: ebassi_github_io.ebassigithubioPackage,
+  edgedbcom: edgedb_com.edgedbcomPackage,
+  eigentuxfamilyorg: eigen_tuxfamily_org.eigentuxfamilyorgPackage,
+  eksctlio: eksctl_io.eksctlioPackage,
+  elementsprojectorg: elementsproject_org.elementsprojectorgPackage,
+  elfutilsorg: elfutils_org.elfutilsorgPackage,
+  elixirlangorg: elixir_lang_org.elixirlangorgPackage,
+  elizaosgithubio: elizaOS_github_io.elizaosgithubioPackage,
+  elvsh: elv_sh.elvshPackage,
+  encoredev: encore_dev.encoredevPackage,
+  endoflifedate: endoflife_date.endoflifedatePackage,
+  epsilonprojectsourceforgeio: epsilon_project_sourceforge_io.epsilonprojectsourceforgeioPackage,
+  erlangorg: erlang_org.erlangorgPackage,
+  etcdio: etcd_io.etcdioPackage,
+  exiftoolorg: exiftool_org.exiftoolorgPackage,
+  expodev: expo_dev.expodevPackage,
+  eyrieorg: eyrie_org.eyrieorgPackage,
+  f1bonacc1githubio: f1bonacc1_github_io.f1bonacc1githubioPackage,
+  fabianlindforsse: fabianlindfors_se.fabianlindforssePackage,
+  facebookcom: facebook_com.facebookcomPackage,
+  fairwindscom: fairwinds_com.fairwindscomPackage,
+  fastlanetools: fastlane_tools.fastlanetoolsPackage,
+  felixkratzgithubio: felixkratz_github_io.felixkratzgithubioPackage,
+  fermyoncom: fermyon_com.fermyoncomPackage,
+  ffmpegorg: ffmpeg_org.ffmpegorgPackage,
+  fftworg: fftw_org.fftworgPackage,
+  filippoio: filippo_io.filippoioPackage,
+  fishshellcom: fishshell_com.fishshellcomPackage,
+  fliptio: flipt_io.fliptioPackage,
+  flitpypaio: flit_pypa_io.flitpypaioPackage,
+  fltkorg: fltk_org.fltkorgPackage,
+  fluentciio: fluentci_io.fluentciioPackage,
+  flutterdev: flutter_dev.flutterdevPackage,
+  fluxcdio: fluxcd_io.fluxcdioPackage,
+  flyio: fly_io.flyioPackage,
+  flywaydborg: flywaydb_org.flywaydborgPackage,
+  fmtdev: fmt_dev.fmtdevPackage,
+  fnaxnagithubio: fna_xna_github_io.fnaxnagithubioPackage,
+  freedesktoporg: freedesktop_org.freedesktoporgPackage,
+  freeglutsourceforgeio: freeglut_sourceforge_io.freeglutsourceforgeioPackage,
+  freetdsorg: freetds_org.freetdsorgPackage,
+  freetypeorg: freetype_org.freetypeorgPackage,
+  frei0rdyneorg: frei0r_dyne_org.frei0rdyneorgPackage,
+  fuellabsgithubio: fuellabs_github_io.fuellabsgithubioPackage,
+  fukuchiorg: fukuchi_org.fukuchiorgPackage,
+  fullstorycom: fullstory_com.fullstorycomPackage,
+  furyco: fury_co.furycoPackage,
+  fxwtf: fx_wtf.fxwtfPackage,
+  gaiagisit: gaia_gis_it.gaiagisitPackage,
+  gdalorg: gdal_org.gdalorgPackage,
+  geoffgreerfm: geoff_greer_fm.geoffgreerfmPackage,
+  getclipboardapp: getclipboard_app.getclipboardappPackage,
+  getcomposerorg: getcomposer_org.getcomposerorgPackage,
+  getfoundrysh: getfoundry_sh.getfoundryshPackage,
+  getsopsio: getsops_io.getsopsioPackage,
+  getsynthcom: getsynth_com.getsynthcomPackage,
+  getzolaorg: getzola_org.getzolaorgPackage,
+  geuzorg: geuz_org.geuzorgPackage,
+  gflagsgithubio: gflags_github_io.gflagsgithubioPackage,
+  ghostgumcomau: ghostgum_com_au.ghostgumcomauPackage,
+  ghostscriptcom: ghostscript_com.ghostscriptcomPackage,
+  giflibsourceforgeio: giflib_sourceforge_io.giflibsourceforgeioPackage,
+  gitclifforg: git_cliff_org.gitclifforgPackage,
+  gitlfscom: git_lfs_com.gitlfscomPackage,
+  gitquickstatssh: git_quick_stats_sh.gitquickstatsshPackage,
+  gitscmorg: git_scm_org.gitscmorgPackage,
+  gittowncom: git_town_com.gittowncomPackage,
+  gitosgeoorg: git_osgeo_org.gitosgeoorgPackage,
+  gittoztnet: git_tozt_net.gittoztnetPackage,
+  githubcom0agecreate2crunch: github_com_0age_create2crunch.githubcom0agecreate2crunchPackage,
+  githubcomcyfrinsafetxhashesutil: github_com_Cyfrin_safe_tx_hashes_util.githubcomcyfrinsafetxhashesutilPackage,
+  githubcomdiniboy1123usque: github_com_Diniboy1123_usque.githubcomdiniboy1123usquePackage,
+  githubcommilescranmerrip2: github_com_MilesCranmer_rip2.githubcommilescranmerrip2Package,
+  githubcomminseokohtomlcli: github_com_MinseokOh_toml_cli.githubcomminseokohtomlcliPackage,
+  githubcomparchivepar2cmdline: github_com_Parchive_par2cmdline.githubcomparchivepar2cmdlinePackage,
+  githubcomblacktoplporg: github_com_blacktop_lporg.githubcomblacktoplporgPackage,
+  githubcomblynnnex: github_com_blynn_nex.githubcomblynnnexPackage,
+  githubcomfastfetchclifastfetch: github_com_fastfetch_cli_fastfetch.githubcomfastfetchclifastfetchPackage,
+  githubcomfiatjafnak: github_com_fiatjaf_nak.githubcomfiatjafnakPackage,
+  githubcomgitecosystemgitcredentialmanager: github_com_git_ecosystem_git_credential_manager.githubcomgitecosystemgitcredentialmanagerPackage,
+  githubcomglauthglauth: github_com_glauth_glauth.githubcomglauthglauthPackage,
+  githubcomigorshubovychmarkdownlintcli: github_com_igorshubovych_markdownlint_cli.githubcomigorshubovychmarkdownlintcliPackage,
+  githubcomjarunnnn: github_com_jarun_nnn.githubcomjarunnnnPackage,
+  githubcomkoekeishiyaskhd: github_com_koekeishiya_skhd.githubcomkoekeishiyaskhdPackage,
+  githubcomlucianosrpryeuv: github_com_lucianosrp_rye_uv.githubcomlucianosrpryeuvPackage,
+  githubcommasclimas: github_com_mas_cli_mas.githubcommasclimasPackage,
+  githubcommycreepypakku: github_com_mycreepy_pakku.githubcommycreepypakkuPackage,
+  githubcompeaks5cmd: github_com_peak_s5cmd.githubcompeaks5cmdPackage,
+  githubcomperipheryappperiphery: github_com_peripheryapp_periphery.githubcomperipheryappperipheryPackage,
+  githubcomshakaprojectshakapackager: github_com_shaka_project_shaka_packager.githubcomshakaprojectshakapackagerPackage,
+  githubcomsorahenvchain: github_com_sorah_envchain.githubcomsorahenvchainPackage,
+  githubcomspencerkimballstargazers: github_com_spencerkimball_stargazers.githubcomspencerkimballstargazersPackage,
+  githubcomwitheredmagicstarpls: github_com_withered_magic_starpls.githubcomwitheredmagicstarplsPackage,
+  githubcom: github_com.githubcomPackage,
+  gitlabcom: gitlab_com.gitlabcomPackage,
+  gitleaksio: gitleaks_io.gitleaksioPackage,
+  glarosdtcumnedu: glaros_dtc_umn_edu.glarosdtcumneduPackage,
+  gleamrun: gleam_run.gleamrunPackage,
+  glewsourceforgeio: glew_sourceforge_io.glewsourceforgeioPackage,
+  glfworg: glfw_org.glfworgPackage,
+  glmgtrucnet: glm_g_truc_net.glmgtrucnetPackage,
+  gnomeorg: gnome_org.gnomeorgPackage,
+  gnuorg: gnu_org.gnuorgPackage,
+  gnupgorg: gnupg_org.gnupgorgPackage,
+  gnuplotinfo: gnuplot_info.gnuplotinfoPackage,
+  gnutlsorg: gnutls_org.gnutlsorgPackage,
+  godev: go_dev.godevPackage,
+  gouberorg: go_uber_org.gouberorgPackage,
+  gohugoio: gohugo_io.gohugoioPackage,
+  golangcilintrun: golangci_lint_run.golangcilintrunPackage,
+  gomplateca: gomplate_ca.gomplatecaPackage,
+  googlecom: google_com.googlecomPackage,
+  googlegithubio: google_github_io.googlegithubioPackage,
+  goreleasercom: goreleaser_com.goreleasercomPackage,
+  gourceio: gource_io.gourceioPackage,
+  gphotoorg: gphoto_org.gphotoorgPackage,
+  gqlgencom: gqlgen_com.gqlgencomPackage,
+  gradleorg: gradle_org.gradleorgPackage,
+  grafanacom: grafana_com.grafanacomPackage,
+  granteddev: granted_dev.granteddevPackage,
+  graphicsmagickorg: graphicsmagick_org.graphicsmagickorgPackage,
+  graphitesilorg: graphite_sil_org.graphitesilorgPackage,
+  graphqleditorcom: graphqleditor_com.graphqleditorcomPackage,
+  graphvizorg: graphviz_org.graphvizorgPackage,
+  groongaorg: groonga_org.groongaorgPackage,
+  groovylangorg: groovy_lang_org.groovylangorgPackage,
+  grpcio: grpc_io.grpcioPackage,
+  gstreamerfreedesktoporg: gstreamer_freedesktop_org.gstreamerfreedesktoporgPackage,
+  gtkorg: gtk_org.gtkorgPackage,
+  gtssourceforgenet: gts_sourceforge_net.gtssourceforgenetPackage,
+  hadronsorg: hadrons_org.hadronsorgPackage,
+  hardingmotdca: harding_motd_ca.hardingmotdcaPackage,
+  harfbuzzorg: harfbuzz_org.harfbuzzorgPackage,
+  hashicorpcom: hashicorp_com.hashicorpcomPackage,
+  haskellorg: haskell_org.haskellorgPackage,
+  hasuraio: hasura_io.hasuraioPackage,
+  hatchpypaio: hatch_pypa_io.hatchpypaioPackage,
+  hboehminfo: hboehm_info.hboehminfoPackage,
+  hdfgrouporg: hdfgroup_org.hdfgrouporgPackage,
+  heasarcgsfcnasagov: heasarc_gsfc_nasa_gov.heasarcgsfcnasagovPackage,
+  helixeditorcom: helix_editor_com.helixeditorcomPackage,
+  helmsh: helm_sh.helmshPackage,
+  herokucom: heroku_com.herokucomPackage,
+  hetznercom: hetzner_com.hetznercomPackage,
+  hjsongithubio: hjson_github_io.hjsongithubioPackage,
+  htmltidyorg: html_tidy_org.htmltidyorgPackage,
+  htopdev: htop_dev.htopdevPackage,
+  htsliborg: htslib_org.htsliborgPackage,
+  httpieio: httpie_io.httpieioPackage,
+  huggingfaceco: huggingface_co.huggingfacecoPackage,
+  hugowang: hugo_wang.hugowangPackage,
+  hunspellgithubio: hunspell_github_io.hunspellgithubioPackage,
+  hurldev: hurl_dev.hurldevPackage,
+  ibrcstubsde: ibr_cs_tu_bs_de.ibrcstubsdePackage,
+  idleberggithubio: idleberg_github_io.idleberggithubioPackage,
+  ijgorg: ijg_org.ijgorgPackage,
+  imageflowio: imageflow_io.imageflowioPackage,
+  imagemagickorg: imagemagick_org.imagemagickorgPackage,
+  indexsupplycom: indexsupply_com.indexsupplycomPackage,
+  infoziporg: info_zip_org.infoziporgPackage,
+  infracostio: infracost_io.infracostioPackage,
+  intelcom: intel_com.intelcomPackage,
+  invisibleislandnetlynx: invisible_island_net_lynx.invisibleislandnetlynxPackage,
+  invisibleislandnet: invisible_island_net.invisibleislandnetPackage,
+  ipfstech: ipfs_tech.ipfstechPackage,
+  ipythonorg: ipython_org.ipythonorgPackage,
+  irohcomputer: iroh_computer.irohcomputerPackage,
+  iscorgbind9: isc_org_bind9.iscorgbind9Package,
+  iscorg: isc_org.iscorgPackage,
+  istioio: istio_io.istioioPackage,
+  itstoolorg: itstool_org.itstoolorgPackage,
+  ivarchcom: ivarch_com.ivarchcomPackage,
+  jbangdev: jbang_dev.jbangdevPackage,
+  jbig2deccom: jbig2dec_com.jbig2deccomPackage,
+  jedisct1githubio: jedisct1_github_io.jedisct1githubioPackage,
+  jedsoftorg: jedsoft_org.jedsoftorgPackage,
+  jemallocnet: jemalloc_net.jemallocnetPackage,
+  jenkinsxio: jenkins_x_io.jenkinsxioPackage,
+  jenkinsio: jenkins_io.jenkinsioPackage,
+  jenvbe: jenv_be.jenvbePackage,
+  jetporchcom: jetporch_com.jetporchcomPackage,
+  jfrogcom: jfrog_com.jfrogcomPackage,
+  jlessio: jless_io.jlessioPackage,
+  jonasgithubio: jonas_github_io.jonasgithubioPackage,
+  jpegorg: jpeg_org.jpegorgPackage,
+  jsonnetorg: jsonnet_org.jsonnetorgPackage,
+  jugitfzjuelichde: jugit_fz_juelich_de.jugitfzjuelichdePackage,
+  jujuis: juju_is.jujuisPackage,
+  julialangorg: julialang_org.julialangorgPackage,
+  jumppaddev: jumppad_dev.jumppaddevPackage,
+  jupyterorg: jupyter_org.jupyterorgPackage,
+  justsystems: just_systems.justsystemsPackage,
+  k3dio: k3d_io.k3dioPackage,
+  k6io: k6_io.k6ioPackage,
+  k9scliio: k9scli_io.k9scliioPackage,
+  kafkaapacheorg: kafka_apache_org.kafkaapacheorgPackage,
+  kagglecom: kaggle_com.kagglecomPackage,
+  keephqdev: keephq_dev.keephqdevPackage,
+  kerberosorg: kerberos_org.kerberosorgPackage,
+  kernelorglibcap: kernel_org_libcap.kernelorglibcapPackage,
+  kernelorg: kernel_org.kernelorgPackage,
+  khanacademyorg: khanacademy_org.khanacademyorgPackage,
+  khronosorg: khronos_org.khronosorgPackage,
+  kindsigsk8sio: kind_sigs_k8s_io.kindsigsk8sioPackage,
+  kislyukgithubio: kislyuk_github_io.kislyukgithubioPackage,
+  kluctlio: kluctl_io.kluctlioPackage,
+  kobuild: ko_build.kobuildPackage,
+  kornelski: kornel_ski.kornelskiPackage,
+  kotlinlangorg: kotlinlang_org.kotlinlangorgPackage,
+  koyebcom: koyeb_com.koyebcomPackage,
+  kptdev: kpt_dev.kptdevPackage,
+  krewsigsk8sio: krew_sigs_k8s_io.krewsigsk8sioPackage,
+  ktlintgithubio: ktlint_github_io.ktlintgithubioPackage,
+  kubebuilderio: kubebuilder_io.kubebuilderioPackage,
+  kubecmcloud: kubecm_cloud.kubecmcloudPackage,
+  kubectxdev: kubectx_dev.kubectxdevPackage,
+  kubelinterio: kubelinter_io.kubelinterioPackage,
+  kubernetesio: kubernetes_io.kubernetesioPackage,
+  kubesharkco: kubeshark_co.kubesharkcoPackage,
+  ladspaorg: ladspa_org.ladspaorgPackage,
+  lamesourceforgeio: lame_sourceforge_io.lamesourceforgeioPackage,
+  langchaincom: langchain_com.langchaincomPackage,
+  laravelcom: laravel_com.laravelcomPackage,
+  lavinmqcom: lavinmq_com.lavinmqcomPackage,
+  lcdforg: lcdf_org.lcdforgPackage,
+  leethomasongithubio: leethomason_github_io.leethomasongithubioPackage,
+  leolangorg: leo_lang_org.leolangorgPackage,
+  leonerdorguk: leonerd_org_uk.leonerdorgukPackage,
+  leptonicaorg: leptonica_org.leptonicaorgPackage,
+  lftpyarru: lftp_yar_ru.lftpyarruPackage,
+  libarchiveorg: libarchive_org.libarchiveorgPackage,
+  libcxxllvmorg: libcxx_llvm_org.libcxxllvmorgPackage,
+  libeventorg: libevent_org.libeventorgPackage,
+  libexifgithubio: libexif_github_io.libexifgithubioPackage,
+  libexpatgithubio: libexpat_github_io.libexpatgithubioPackage,
+  libgdgithubio: libgd_github_io.libgdgithubioPackage,
+  libgeosorg: libgeos_org.libgeosorgPackage,
+  libgit2org: libgit2_org.libgit2orgPackage,
+  libimobiledeviceorg: libimobiledevice_org.libimobiledeviceorgPackage,
+  libislsourceforgeio: libisl_sourceforge_io.libislsourceforgeioPackage,
+  libjpegturboorg: libjpeg_turbo_org.libjpegturboorgPackage,
+  liblqrwikidotcom: liblqr_wikidot_com.liblqrwikidotcomPackage,
+  libpipelinegitlabio: libpipeline_gitlab_io.libpipelinegitlabioPackage,
+  libpngorg: libpng_org.libpngorgPackage,
+  libproxygithubio: libproxy_github_io.libproxygithubioPackage,
+  libraworg: libraw_org.libraworgPackage,
+  libsdlorg: libsdl_org.libsdlorgPackage,
+  libsodiumorg: libsodium_org.libsodiumorgPackage,
+  libsouporg: libsoup_org.libsouporgPackage,
+  libspngorg: libspng_org.libspngorgPackage,
+  libsshorg: libssh_org.libsshorgPackage,
+  libssh2org: libssh2_org.libssh2orgPackage,
+  libtomnet: libtom_net.libtomnetPackage,
+  liburcuorg: liburcu_org.liburcuorgPackage,
+  libusbinfo: libusb_info.libusbinfoPackage,
+  libuvorg: libuv_org.libuvorgPackage,
+  libvipsorg: libvips_org.libvipsorgPackage,
+  libwebsocketsorg: libwebsockets_org.libwebsocketsorgPackage,
+  libziporg: libzip_org.libziporgPackage,
+  limavmio: lima_vm_io.limavmioPackage,
+  linkerdio: linkerd_io.linkerdioPackage,
+  linuxpamorg: linux_pam_org.linuxpamorgPackage,
+  liteclicom: litecli_com.liteclicomPackage,
+  littlecmscom: littlecms_com.littlecmscomPackage,
+  llmdatasetteio: llm_datasette_io.llmdatasetteioPackage,
+  lloydgithubio: lloyd_github_io.lloydgithubioPackage,
+  llvmorg: llvm_org.llvmorgPackage,
+  localaiio: localai_io.localaiioPackage,
+  localstackcloud: localstack_cloud.localstackcloudPackage,
+  logdydev: logdy_dev.logdydevPackage,
+  logologicalorg: logological_org.logologicalorgPackage,
+  luaorg: lua_org.luaorgPackage,
+  luajitorg: luajit_org.luajitorgPackage,
+  luarocksorg: luarocks_org.luarocksorgPackage,
+  lucagrullacom: lucagrulla_com.lucagrullacomPackage,
+  lunarvimorg: lunarvim_org.lunarvimorgPackage,
+  lxmlde: lxml_de.lxmldePackage,
+  lycheeclirs: lychee_cli_rs.lycheeclirsPackage,
+  lz4org: lz4_org.lz4orgPackage,
+  maaslalanicom: maaslalani_com.maaslalanicomPackage,
+  macvimorg: macvim_org.macvimorgPackage,
+  mailpitaxllentorg: mailpit_axllent_org.mailpitaxllentorgPackage,
+  makotemplatesorg: makotemplates_org.makotemplatesorgPackage,
+  mandbgitlabio: man_db_gitlab_io.mandbgitlabioPackage,
+  mandocbsdlv: mandoc_bsd_lv.mandocbsdlvPackage,
+  mariadbcom: mariadb_com.mariadbcomPackage,
+  markupsafepalletsprojectscom: markupsafe_palletsprojects_com.markupsafepalletsprojectscomPackage,
+  materializecom: materialize_com.materializecomPackage,
+  matiosourceforgeio: matio_sourceforge_io.matiosourceforgeioPackage,
+  maturinrs: maturin_rs.maturinrsPackage,
+  mavenapacheorg: maven_apache_org.mavenapacheorgPackage,
+  mcmcjagssourceforgeio: mcmc_jags_sourceforge_io.mcmcjagssourceforgeioPackage,
+  mercurerocks: mercure_rocks.mercurerocksPackage,
+  mercurialscmorg: mercurial_scm_org.mercurialscmorgPackage,
+  mergestatcom: mergestat_com.mergestatcomPackage,
+  mesa3dorg: mesa3d_org.mesa3dorgPackage,
+  mesonbuildcom: mesonbuild_com.mesonbuildcomPackage,
+  microeditorgithubio: micro_editor_github_io.microeditorgithubioPackage,
+  microbreworg: microbrew_org.microbreworgPackage,
+  microcksio: microcks_io.microcksioPackage,
+  microsoftcomcodecli: microsoft_com_code_cli.microsoftcomcodecliPackage,
+  microsoftcommarkitdown: microsoft_com_markitdown.microsoftcommarkitdownPackage,
+  microsoftcom: microsoft_com.microsoftcomPackage,
+  midnightcommanderorg: midnight_commander_org.midnightcommanderorgPackage,
+  minio: min_io.minioPackage,
+  misejdxdev: mise_jdx_dev.misejdxdevPackage,
+  mitmproxyorg: mitmproxy_org.mitmproxyorgPackage,
+  mkcertdev: mkcert_dev.mkcertdevPackage,
+  mkdocsorg: mkdocs_org.mkdocsorgPackage,
+  modalcom: modal_com.modalcomPackage,
+  moderncorggoyacc: modernc_org_goyacc.moderncorggoyaccPackage,
+  moderncorg: modernc_org.moderncorgPackage,
+  mongodbcom: mongodb_com.mongodbcomPackage,
+  moonrepodev: moonrepo_dev.moonrepodevPackage,
+  moshorg: mosh_org.moshorgPackage,
+  mozillaorgcbindgen: mozilla_org_cbindgen.mozillaorgcbindgenPackage,
+  mozillaorg: mozilla_org.mozillaorgPackage,
+  mpg123de: mpg123_de.mpg123dePackage,
+  mpmathorg: mpmath_org.mpmathorgPackage,
+  mpvio: mpv_io.mpvioPackage,
+  msgpackorg: msgpack_org.msgpackorgPackage,
+  mujscom: mujs_com.mujscomPackage,
+  munlangorg: mun_lang_org.munlangorgPackage,
+  mupdfcom: mupdf_com.mupdfcomPackage,
+  musepacknet: musepack_net.musepacknetPackage,
+  musllibcorg: musl_libc_org.musllibcorgPackage,
+  mvdanccgofumpt: mvdan_cc_gofumpt.mvdanccgofumptPackage,
+  mvdancc: mvdan_cc.mvdanccPackage,
+  mypylangorg: mypy_lang_org.mypylangorgPackage,
+  mysqlcom: mysql_com.mysqlcomPackage,
+  nanoeditororg: nano_editor_org.nanoeditororgPackage,
+  nasmus: nasm_us.nasmusPackage,
+  neovimio: neovim_io.neovimioPackage,
+  netflixcom: netflix_com.netflixcomPackage,
+  netliborg: netlib_org.netliborgPackage,
+  netpbmsourceforgenet: netpbm_sourceforge_net.netpbmsourceforgenetPackage,
+  networkxorg: networkx_org.networkxorgPackage,
+  nghttp2org: nghttp2_org.nghttp2orgPackage,
+  nginxorg: nginx_org.nginxorgPackage,
+  nikecom: nike_com.nikecomPackage,
+  nimlangorg: nim_lang_org.nimlangorgPackage,
+  ninjabuildorg: ninja_build_org.ninjabuildorgPackage,
+  nixosorg: nixos_org.nixosorgPackage,
+  nixpackscom: nixpacks_com.nixpackscomPackage,
+  nlnetlabsnl: nlnetlabs_nl.nlnetlabsnlPackage,
+  nmaporg: nmap_org.nmaporgPackage,
   node: node.nodePackage,
-  nomadprojectio: nomadprojectio.nomadprojectioPackage,
-  nongnuorg: nongnuorg.nongnuorgPackage,
-  notrojgithubio: notrojgithubio.notrojgithubioPackage,
-  npmjscom: npmjscom.npmjscomPackage,
-  ntporg: ntporg.ntporgPackage,
-  numbatdev: numbatdev.numbatdevPackage,
-  numpyorg: numpyorg.numpyorgPackage,
-  nushellsh: nushellsh.nushellshPackage,
-  nxdev: nxdev.nxdevPackage,
-  oauth2proxygithubio: oauth2_proxygithubio.oauth2proxygithubioPackage,
-  oberhumercom: oberhumercom.oberhumercomPackage,
-  oberhumercomucl: oberhumercom_ucl.oberhumercomuclPackage,
-  odigosio: odigosio.odigosioPackage,
-  ohmyposhdev: ohmyposhdev.ohmyposhdevPackage,
-  ollamaai: ollamaai.ollamaaiPackage,
-  onefetchdev: onefetchdev.onefetchdevPackage,
-  onsigithubio: onsigithubio.onsigithubioPackage,
-  openmpiorg: open_mpiorg.openmpiorgPackage,
-  openaicom: openaicom.openaicomPackage,
-  openapigeneratortech: openapi_generatortech.openapigeneratortechPackage,
-  openbaoorg: openbaoorg.openbaoorgPackage,
-  openblasnet: openblasnet.openblasnetPackage,
-  opencoreamrsourceforgeio: opencore_amrsourceforgeio.opencoreamrsourceforgeioPackage,
-  opendaporg: opendaporg.opendaporgPackage,
-  opendevorg: opendevorg.opendevorgPackage,
-  openexrcom: openexrcom.openexrcomPackage,
-  openinterpretercom: openinterpretercom.openinterpretercomPackage,
-  openjdkorg: openjdkorg.openjdkorgPackage,
-  openjpegorg: openjpegorg.openjpegorgPackage,
-  openldaporg: openldaporg.openldaporgPackage,
-  openldaporgliblmdb: openldaporg_liblmdb.openldaporgliblmdbPackage,
-  openmpllvmorg: openmpllvmorg.openmpllvmorgPackage,
-  openpmixgithubio: openpmixgithubio.openpmixgithubioPackage,
-  openpolicyagentorg: openpolicyagentorg.openpolicyagentorgPackage,
-  openprintinggithubio: openprintinggithubio.openprintinggithubioPackage,
-  openrestyorg: openrestyorg.openrestyorgPackage,
-  opensearchorg: opensearchorg.opensearchorgPackage,
-  openshiftcom: openshiftcom.openshiftcomPackage,
-  openslideorg: openslideorg.openslideorgPackage,
-  opensshcom: opensshcom.opensshcomPackage,
-  opensslorg: opensslorg.opensslorgPackage,
-  opentofuorg: opentofuorg.opentofuorgPackage,
-  openvpnnet: openvpnnet.openvpnnetPackage,
-  operatorframeworkio: operatorframeworkio.operatorframeworkioPackage,
-  opuscodecorg: opus_codecorg.opuscodecorgPackage,
-  oraclecom: oraclecom.oraclecomPackage,
-  orasland: orasland.oraslandPackage,
-  ordinalscom: ordinalscom.ordinalscomPackage,
-  orhundev: orhundev.orhundevPackage,
-  otssnipttcom: otssnipttcom.otssnipttcomPackage,
-  packerio: packerio.packerioPackage,
-  pagureio: pagureio.pagureioPackage,
-  palletsprojectscom: palletsprojectscom.palletsprojectscomPackage,
-  pandocorg: pandocorg.pandocorgPackage,
-  pantsbuildorg: pantsbuildorg.pantsbuildorgPackage,
-  paulfitzgithubio: paulfitzgithubio.paulfitzgithubioPackage,
-  pcreorg: pcreorg.pcreorgPackage,
-  pcscliteapdufr: pcscliteapdufr.pcscliteapdufrPackage,
-  pdmfmingdev: pdmfmingdev.pdmfmingdevPackage,
-  peopleengrtamuedu: peopleengrtamuedu.peopleengrtamueduPackage,
-  peopleredhatcom: peopleredhatcom.peopleredhatcomPackage,
-  perlorg: perlorg.perlorgPackage,
-  permitio: permitio.permitioPackage,
-  phpnet: phpnet.phpnetPackage,
-  phpmyadminnet: phpmyadminnet.phpmyadminnetPackage,
-  pimalayaorg: pimalayaorg.pimalayaorgPackage,
-  pinnipeddev: pinnipeddev.pinnipeddevPackage,
-  pippypaio: pippypaio.pippypaioPackage,
-  pipenvpypaio: pipenvpypaio.pipenvpypaioPackage,
-  pixmanorg: pixmanorg.pixmanorgPackage,
-  pkgxsh: pkgxsh.pkgxshPackage,
-  pkgxshdev: pkgxsh_dev.pkgxshdevPackage,
-  pkgxshpkgm: pkgxsh_pkgm.pkgxshpkgmPackage,
-  pkllangorg: pkl_langorg.pkllangorgPackage,
-  planetscalecom: planetscalecom.planetscalecomPackage,
-  plantumlcom: plantumlcom.plantumlcomPackage,
-  plasmasturmorg: plasmasturmorg.plasmasturmorgPackage,
-  plocatesessenet: plocatesessenet.plocatesessenetPackage,
-  pluralithcom: pluralithcom.pluralithcomPackage,
-  pngquantorg: pngquantorg.pngquantorgPackage,
-  pnpmio: pnpmio.pnpmioPackage,
-  po4aorg: po4aorg.po4aorgPackage,
-  pocketbaseio: pocketbaseio.pocketbaseioPackage,
-  podmanio: podmanio.podmanioPackage,
-  poktnetwork: poktnetwork.poktnetworkPackage,
-  popplerfreedesktoporg: popplerfreedesktoporg.popplerfreedesktoporgPackage,
-  portaudiocom: portaudiocom.portaudiocomPackage,
-  postgresqlorg: postgresqlorg.postgresqlorgPackage,
-  postgrestorg: postgrestorg.postgrestorgPackage,
-  practicalschemenet: practical_schemenet.practicalschemenetPackage,
-  precommitcom: pre_commitcom.precommitcomPackage,
-  prefixdev: prefixdev.prefixdevPackage,
-  presslygithubio: presslygithubio.presslygithubioPackage,
-  prettierio: prettierio.prettierioPackage,
-  printfngithubio: printfngithubio.printfngithubioPackage,
-  priverdev: priverdev.priverdevPackage,
-  projorg: projorg.projorgPackage,
-  projectcopaceticgithubio: project_copaceticgithubio.projectcopaceticgithubioPackage,
-  projectdiscoveryio: projectdiscoveryio.projectdiscoveryioPackage,
-  projectdiscoveryionuclei: projectdiscoveryio_nuclei.projectdiscoveryionucleiPackage,
-  projenio: projenio.projenioPackage,
-  protobufdev: protobufdev.protobufdevPackage,
-  prqllangorg: prql_langorg.prqllangorgPackage,
-  psycopgorg: psycopgorg.psycopgorgPackage,
-  publichronopikde: publichronopikde.publichronopikdePackage,
-  pugixmlorg: pugixmlorg.pugixmlorgPackage,
-  pulumiio: pulumiio.pulumiioPackage,
-  pwgensourceforgeio: pwgensourceforgeio.pwgensourceforgeioPackage,
-  pwmtorg: pwmtorg.pwmtorgPackage,
-  pygmentsorg: pygmentsorg.pygmentsorgPackage,
-  pyinvokeorg: pyinvokeorg.pyinvokeorgPackage,
-  pypagithubio: pypagithubio.pypagithubioPackage,
-  pypaio: pypaio.pypaioPackage,
-  pytestorg: pytestorg.pytestorgPackage,
-  pythonpilloworg: python_pilloworg.pythonpilloworgPackage,
-  pythonpoetryorg: python_poetryorg.pythonpoetryorgPackage,
-  pythonorg: pythonorg.pythonorgPackage,
-  pyyamlorg: pyyamlorg.pyyamlorgPackage,
-  qemuorg: qemuorg.qemuorgPackage,
-  qhullorg: qhullorg.qhullorgPackage,
-  qpdfsourceforgeio: qpdfsourceforgeio.qpdfsourceforgeioPackage,
-  qtio: qtio.qtioPackage,
-  quarydev: quarydev.quarydevPackage,
-  quickwitio: quickwitio.quickwitioPackage,
-  rwosorg: r_wosorg.rwosorgPackage,
-  rabbitmqcom: rabbitmqcom.rabbitmqcomPackage,
-  raccoinorg: raccoinorg.raccoinorgPackage,
-  radicleorg: radicleorg.radicleorgPackage,
-  railwayapp: railwayapp.railwayappPackage,
-  rapidjsonorg: rapidjsonorg.rapidjsonorgPackage,
-  rarlabcom: rarlabcom.rarlabcomPackage,
-  rbenvorg: rbenvorg.rbenvorgPackage,
-  rcloneorg: rcloneorg.rcloneorgPackage,
-  re2corg: re2corg.re2corgPackage,
-  reacheremail: reacheremail.reacheremailPackage,
-  rebar3org: rebar3org.rebar3orgPackage,
-  redisio: redisio.redisioPackage,
-  rendercom: rendercom.rendercomPackage,
-  replibytecom: replibytecom.replibytecomPackage,
-  resticnet: resticnet.resticnetPackage,
-  rhashsourceforgenet: rhashsourceforgenet.rhashsourceforgenetPackage,
-  rigauxorg: rigauxorg.rigauxorgPackage,
-  riverbankcomputingcom: riverbankcomputingcom.riverbankcomputingcomPackage,
-  robotframeworkorg: robotframeworkorg.robotframeworkorgPackage,
-  rockdabootgithubio: rockdabootgithubio.rockdabootgithubioPackage,
-  rometools: rometools.rometoolsPackage,
-  rpmorg: rpmorg.rpmorgPackage,
-  rsyncsambaorg: rsyncsambaorg.rsyncsambaorgPackage,
-  rtmpdumpmplayerhqhu: rtmpdumpmplayerhqhu.rtmpdumpmplayerhqhuPackage,
-  rtomaykogithubio: rtomaykogithubio.rtomaykogithubioPackage,
-  rubocoporg: rubocoporg.rubocoporgPackage,
-  rubylangorg: ruby_langorg.rubylangorgPackage,
-  rubygemsorg: rubygemsorg.rubygemsorgPackage,
-  ruciocernch: ruciocernch.ruciocernchPackage,
-  runatlantisio: runatlantisio.runatlantisioPackage,
-  rustlanggithubio: rust_langgithubio.rustlanggithubioPackage,
-  rustlangorg: rust_langorg.rustlangorgPackage,
-  rustlangorgrustbindgen: rust_langorg_rust_bindgen.rustlangorgrustbindgenPackage,
-  rustscriptorg: rust_scriptorg.rustscriptorgPackage,
-  ryeastralsh: ryeastralsh.ryeastralshPackage,
-  s3toolsorg: s3toolsorg.s3toolsorgPackage,
-  saerasoftcom: saerasoftcom.saerasoftcomPackage,
-  sagiegurarigithubio: sagiegurarigithubio.sagiegurarigithubioPackage,
-  sasslangcom: sass_langcom.sasslangcomPackage,
-  savannahnongnuorg: savannahnongnuorg.savannahnongnuorgPackage,
-  scalalangorg: scala_langorg.scalalangorgPackage,
-  scalasbtorg: scala_sbtorg.scalasbtorgPackage,
-  scalewaycom: scalewaycom.scalewaycomPackage,
-  schollzcom: schollzcom.schollzcomPackage,
-  sconsorg: sconsorg.sconsorgPackage,
-  scryerpl: scryerpl.scryerplPackage,
-  sdkmanio: sdkmanio.sdkmanioPackage,
-  seaweedfscom: seaweedfscom.seaweedfscomPackage,
-  sentryio: sentryio.sentryioPackage,
-  sfnet: sfnet.sfnetPackage,
-  sfcgalorg: sfcgalorg.sfcgalorgPackage,
-  sftpgocom: sftpgocom.sftpgocomPackage,
-  shellchecknet: shellchecknet.shellchecknetPackage,
-  sigstoredev: sigstoredev.sigstoredevPackage,
-  simplesystemsorg: simplesystemsorg.simplesystemsorgPackage,
-  singboxapp: sing_boxapp.singboxappPackage,
-  skaffolddev: skaffolddev.skaffolddevPackage,
-  smartmontoolsorg: smartmontoolsorg.smartmontoolsorgPackage,
-  snapletdev: snapletdev.snapletdevPackage,
-  sniffnetnet: sniffnetnet.sniffnetnetPackage,
-  snykio: snykio.snykioPackage,
-  solanacom: solanacom.solanacomPackage,
-  soldeerxyz: soldeerxyz.soldeerxyzPackage,
-  soliditylangorg: soliditylangorg.soliditylangorgPackage,
-  sonarqubeorg: sonarqubeorg.sonarqubeorgPackage,
-  sourceforgenet: sourceforgenet.sourceforgenetPackage,
-  sourcewareorg: sourcewareorg.sourcewareorgPackage,
-  soxrsourceforgenet: soxrsourceforgenet.soxrsourceforgenetPackage,
-  spacetimedbcom: spacetimedbcom.spacetimedbcomPackage,
-  spawnlink: spawnlink.spawnlinkPackage,
-  speexorg: speexorg.speexorgPackage,
-  sphinxdocorg: sphinx_docorg.sphinxdocorgPackage,
-  sqlcdev: sqlcdev.sqlcdevPackage,
-  sqlfluffcom: sqlfluffcom.sqlfluffcomPackage,
-  sqliteorg: sqliteorg.sqliteorgPackage,
-  squawkhqcom: squawkhqcom.squawkhqcomPackage,
-  srtallianceorg: srtallianceorg.srtallianceorgPackage,
-  sshxio: sshxio.sshxioPackage,
-  starshiprs: starshiprs.starshiprsPackage,
-  steampipeio: steampipeio.steampipeioPackage,
-  stedolangithubio: stedolangithubio.stedolangithubioPackage,
-  straceio: straceio.straceioPackage,
-  streamlinkgithubio: streamlinkgithubio.streamlinkgithubioPackage,
-  stripecom: stripecom.stripecomPackage,
-  supabasecom: supabasecom.supabasecomPackage,
-  surrealdbcom: surrealdbcom.surrealdbcomPackage,
-  svenstarogithubio: svenstarogithubio.svenstarogithubioPackage,
-  swaggerio: swaggerio.swaggerioPackage,
-  swiftorg: swiftorg.swiftorgPackage,
-  swigorg: swigorg.swigorgPackage,
-  symfonycom: symfonycom.symfonycomPackage,
-  sympyorg: sympyorg.sympyorgPackage,
-  syncthingnet: syncthingnet.syncthingnetPackage,
-  systemdio: systemdio.systemdioPackage,
-  tagliborg: tagliborg.tagliborgPackage,
-  tailcallrun: tailcallrun.tailcallrunPackage,
-  tailwindcsscom: tailwindcsscom.tailwindcsscomPackage,
-  taku910githubio: taku910githubio.taku910githubioPackage,
-  talosdev: talosdev.talosdevPackage,
-  taplotamasfedev: taplotamasfedev.taplotamasfedevPackage,
-  tartrun: tartrun.tartrunPackage,
-  taskfiledev: taskfiledev.taskfiledevPackage,
-  tcllangorg: tcl_langorg.tcllangorgPackage,
-  tcltk: tcltk.tcltkPackage,
-  tcpdumporg: tcpdumporg.tcpdumporgPackage,
-  tcshorg: tcshorg.tcshorgPackage,
-  teaxyz: teaxyz.teaxyzPackage,
-  tectonictypesettinggithubio: tectonic_typesettinggithubio.tectonictypesettinggithubioPackage,
-  templguide: templguide.templguidePackage,
-  temporalio: temporalio.temporalioPackage,
-  terraformdocsio: terraform_docsio.terraformdocsioPackage,
-  terraformio: terraformio.terraformioPackage,
-  terragruntgruntworkio: terragruntgruntworkio.terragruntgruntworkioPackage,
-  terratagio: terratagio.terratagioPackage,
-  tesseractocrgithubio: tesseract_ocrgithubio.tesseractocrgithubioPackage,
-  thekelleysorguk: thekelleysorguk.thekelleysorgukPackage,
-  theoraorg: theoraorg.theoraorgPackage,
-  thoughtworksgithubio: thoughtworksgithubio.thoughtworksgithubioPackage,
-  thrysoeedk: thrysoeedk.thrysoeedkPackage,
-  tidbytcom: tidbytcom.tidbytcomPackage,
-  tiltdev: tiltdev.tiltdevPackage,
-  tinybirdco: tinybirdco.tinybirdcoPackage,
-  tinygoorg: tinygoorg.tinygoorgPackage,
-  tldrsh: tldrsh.tldrshPackage,
-  tlrdev: tlrdev.tlrdevPackage,
-  tmateio: tmateio.tmateioPackage,
-  toxwiki: toxwiki.toxwikiPackage,
-  traefikio: traefikio.traefikioPackage,
-  treesittergithubio: tree_sittergithubio.treesittergithubioPackage,
-  trippyclirs: trippyclirs.trippyclirsPackage,
-  trufflesecuritycom: trufflesecuritycom.trufflesecuritycomPackage,
-  tsl0922githubio: tsl0922githubio.tsl0922githubioPackage,
-  tuistio: tuistio.tuistioPackage,
-  tukaaniorg: tukaaniorg.tukaaniorgPackage,
-  tursotech: tursotech.tursotechPackage,
-  typescriptlangorg: typescriptlangorg.typescriptlangorgPackage,
-  typstapp: typstapp.typstappPackage,
-  unboundnet: unboundnet.unboundnetPackage,
-  undefined: undefined.undefinedPackage,
-  unicodeorg: unicodeorg.unicodeorgPackage,
-  unidataucaredu: unidataucaredu.unidataucareduPackage,
-  unixodbcorg: unixodbcorg.unixodbcorgPackage,
-  upliftcidev: upliftcidev.upliftcidevPackage,
-  upxgithubio: upxgithubio.upxgithubioPackage,
-  uriparsergithubio: uriparsergithubio.uriparsergithubioPackage,
-  valesh: valesh.valeshPackage,
-  valkeyio: valkeyio.valkeyioPackage,
-  vamppluginsorg: vamp_pluginsorg.vamppluginsorgPackage,
-  vannaai: vannaai.vannaaiPackage,
-  vapoursynthcom: vapoursynthcom.vapoursynthcomPackage,
-  vaultprojectio: vaultprojectio.vaultprojectioPackage,
-  vclustercom: vclustercom.vclustercomPackage,
-  vektragithubio: vektragithubio.vektragithubioPackage,
-  veleroio: veleroio.veleroioPackage,
-  veracodecom: veracodecom.veracodecomPackage,
-  vercelcom: vercelcom.vercelcomPackage,
-  versitycom: versitycom.versitycomPackage,
-  viaductai: viaductai.viaductaiPackage,
-  viaductaiksops: viaductai_ksops.viaductaiksopsPackage,
-  videolanorg: videolanorg.videolanorgPackage,
-  vimorg: vimorg.vimorgPackage,
-  virtualenvpypaio: virtualenvpypaio.virtualenvpypaioPackage,
-  virtualsquareorg: virtualsquareorg.virtualsquareorgPackage,
-  vitejsdev: vitejsdev.vitejsdevPackage,
-  vlangio: vlangio.vlangioPackage,
-  voltash: voltash.voltashPackage,
-  wailsio: wailsio.wailsioPackage,
-  wait4xdev: wait4xdev.wait4xdevPackage,
-  wasmerio: wasmerio.wasmerioPackage,
-  watchexecgithubio: watchexecgithubio.watchexecgithubioPackage,
-  waterlanhomexs4allnl: waterlanhomexs4allnl.waterlanhomexs4allnlPackage,
-  wavpackcom: wavpackcom.wavpackcomPackage,
-  waylandfreedesktoporg: waylandfreedesktoporg.waylandfreedesktoporgPackage,
-  webmprojectorg: webmprojectorg.webmprojectorgPackage,
-  werfio: werfio.werfioPackage,
-  wezfurlongorg: wezfurlongorg.wezfurlongorgPackage,
-  wilfredmeuk: wilfredmeuk.wilfredmeukPackage,
-  wimlibnet: wimlibnet.wimlibnetPackage,
-  wiresharkorg: wiresharkorg.wiresharkorgPackage,
-  wixcom: wixcom.wixcomPackage,
-  wkentarogithubio: wkentarogithubio.wkentarogithubioPackage,
-  wpewebkitorg: wpewebkitorg.wpewebkitorgPackage,
-  wundergraphcom: wundergraphcom.wundergraphcomPackage,
-  wxwidgetsorg: wxwidgetsorg.wxwidgetsorgPackage,
-  xorg: xorg.xorgPackage,
-  xorgxscrnsaver: xorg_xscrnsaver.xorgxscrnsaverPackage,
-  xcfiledev: xcfiledev.xcfiledevPackage,
-  xercesapacheorg: xercesapacheorg.xercesapacheorgPackage,
-  xiphorg: xiphorg.xiphorgPackage,
-  xkbcommonorg: xkbcommonorg.xkbcommonorgPackage,
-  xplrdev: xplrdev.xplrdevPackage,
-  xpraorg: xpraorg.xpraorgPackage,
-  xtlsgithubio: xtlsgithubio.xtlsgithubioPackage,
-  xvidcom: xvidcom.xvidcomPackage,
-  yadmio: yadmio.yadmioPackage,
-  yarnpkgcom: yarnpkgcom.yarnpkgcomPackage,
-  yasmtortallnet: yasmtortallnet.yasmtortallnetPackage,
-  youtubedlorg: youtube_dlorg.youtubedlorgPackage,
-  ytdlporg: yt_dlporg.ytdlporgPackage,
-  yuigithubio: yuigithubio.yuigithubioPackage,
-  zarfdev: zarfdev.zarfdevPackage,
-  zeromqorg: zeromqorg.zeromqorgPackage,
-  ziglangorg: ziglangorg.ziglangorgPackage,
-  zlibnet: zlibnet.zlibnetPackage,
-  zrokio: zrokio.zrokioPackage,
-  zshsourceforgeio: zshsourceforgeio.zshsourceforgeioPackage,
+  nomadprojectio: nomadproject_io.nomadprojectioPackage,
+  nongnuorg: nongnu_org.nongnuorgPackage,
+  notrojgithubio: notroj_github_io.notrojgithubioPackage,
+  npmjscom: npmjs_com.npmjscomPackage,
+  ntporg: ntp_org.ntporgPackage,
+  numbatdev: numbat_dev.numbatdevPackage,
+  numpyorg: numpy_org.numpyorgPackage,
+  nushellsh: nushell_sh.nushellshPackage,
+  nxdev: nx_dev.nxdevPackage,
+  oauth2proxygithubio: oauth2_proxy_github_io.oauth2proxygithubioPackage,
+  oberhumercomucl: oberhumer_com_ucl.oberhumercomuclPackage,
+  oberhumercom: oberhumer_com.oberhumercomPackage,
+  odigosio: odigos_io.odigosioPackage,
+  ohmyposhdev: ohmyposh_dev.ohmyposhdevPackage,
+  ollamaai: ollama_ai.ollamaaiPackage,
+  onefetchdev: onefetch_dev.onefetchdevPackage,
+  onsigithubio: onsi_github_io.onsigithubioPackage,
+  openmpiorg: open_mpi_org.openmpiorgPackage,
+  openaicom: openai_com.openaicomPackage,
+  openapigeneratortech: openapi_generator_tech.openapigeneratortechPackage,
+  openbaoorg: openbao_org.openbaoorgPackage,
+  openblasnet: openblas_net.openblasnetPackage,
+  opencoreamrsourceforgeio: opencore_amr_sourceforge_io.opencoreamrsourceforgeioPackage,
+  opendaporg: opendap_org.opendaporgPackage,
+  opendevorg: opendev_org.opendevorgPackage,
+  openexrcom: openexr_com.openexrcomPackage,
+  openinterpretercom: openinterpreter_com.openinterpretercomPackage,
+  openjdkorg: openjdk_org.openjdkorgPackage,
+  openjpegorg: openjpeg_org.openjpegorgPackage,
+  openldaporgliblmdb: openldap_org_liblmdb.openldaporgliblmdbPackage,
+  openldaporg: openldap_org.openldaporgPackage,
+  openmpllvmorg: openmp_llvm_org.openmpllvmorgPackage,
+  openpmixgithubio: openpmix_github_io.openpmixgithubioPackage,
+  openpolicyagentorg: openpolicyagent_org.openpolicyagentorgPackage,
+  openprintinggithubio: openprinting_github_io.openprintinggithubioPackage,
+  openrestyorg: openresty_org.openrestyorgPackage,
+  opensearchorg: opensearch_org.opensearchorgPackage,
+  openshiftcom: openshift_com.openshiftcomPackage,
+  openslideorg: openslide_org.openslideorgPackage,
+  opensshcom: openssh_com.opensshcomPackage,
+  opensslorg: openssl_org.opensslorgPackage,
+  opentofuorg: opentofu_org.opentofuorgPackage,
+  openvpnnet: openvpn_net.openvpnnetPackage,
+  operatorframeworkio: operatorframework_io.operatorframeworkioPackage,
+  opuscodecorg: opus_codec_org.opuscodecorgPackage,
+  oraclecom: oracle_com.oraclecomPackage,
+  orasland: oras_land.oraslandPackage,
+  ordinalscom: ordinals_com.ordinalscomPackage,
+  orhundev: orhun_dev.orhundevPackage,
+  otssnipttcom: ots_sniptt_com.otssnipttcomPackage,
+  packerio: packer_io.packerioPackage,
+  pagureio: pagure_io.pagureioPackage,
+  palletsprojectscom: palletsprojects_com.palletsprojectscomPackage,
+  pandocorg: pandoc_org.pandocorgPackage,
+  pantsbuildorg: pantsbuild_org.pantsbuildorgPackage,
+  paulfitzgithubio: paulfitz_github_io.paulfitzgithubioPackage,
+  pcreorg: pcre_org.pcreorgPackage,
+  pcscliteapdufr: pcsclite_apdu_fr.pcscliteapdufrPackage,
+  pdmfmingdev: pdm_fming_dev.pdmfmingdevPackage,
+  peopleengrtamuedu: people_engr_tamu_edu.peopleengrtamueduPackage,
+  peopleredhatcom: people_redhat_com.peopleredhatcomPackage,
+  perlorg: perl_org.perlorgPackage,
+  permitio: permit_io.permitioPackage,
+  phpnet: php_net.phpnetPackage,
+  phpmyadminnet: phpmyadmin_net.phpmyadminnetPackage,
+  pimalayaorg: pimalaya_org.pimalayaorgPackage,
+  pinnipeddev: pinniped_dev.pinnipeddevPackage,
+  pippypaio: pip_pypa_io.pippypaioPackage,
+  pipenvpypaio: pipenv_pypa_io.pipenvpypaioPackage,
+  pixmanorg: pixman_org.pixmanorgPackage,
+  pkgxshdev: pkgx_sh_dev.pkgxshdevPackage,
+  pkgxshpkgm: pkgx_sh_pkgm.pkgxshpkgmPackage,
+  pkgxsh: pkgx_sh.pkgxshPackage,
+  pkllangorg: pkl_lang_org.pkllangorgPackage,
+  planetscalecom: planetscale_com.planetscalecomPackage,
+  plantumlcom: plantuml_com.plantumlcomPackage,
+  plasmasturmorg: plasmasturm_org.plasmasturmorgPackage,
+  plocatesessenet: plocate_sesse_net.plocatesessenetPackage,
+  pluralithcom: pluralith_com.pluralithcomPackage,
+  pngquantorg: pngquant_org.pngquantorgPackage,
+  pnpmio: pnpm_io.pnpmioPackage,
+  po4aorg: po4a_org.po4aorgPackage,
+  pocketbaseio: pocketbase_io.pocketbaseioPackage,
+  podmanio: podman_io.podmanioPackage,
+  poktnetwork: pokt_network.poktnetworkPackage,
+  popplerfreedesktoporg: poppler_freedesktop_org.popplerfreedesktoporgPackage,
+  portaudiocom: portaudio_com.portaudiocomPackage,
+  postgresqlorg: postgresql_org.postgresqlorgPackage,
+  postgrestorg: postgrest_org.postgrestorgPackage,
+  practicalschemenet: practical_scheme_net.practicalschemenetPackage,
+  precommitcom: pre_commit_com.precommitcomPackage,
+  prefixdev: prefix_dev.prefixdevPackage,
+  presslygithubio: pressly_github_io.presslygithubioPackage,
+  prettierio: prettier_io.prettierioPackage,
+  printfngithubio: printfn_github_io.printfngithubioPackage,
+  priverdev: priver_dev.priverdevPackage,
+  projorg: proj_org.projorgPackage,
+  projectcopaceticgithubio: project_copacetic_github_io.projectcopaceticgithubioPackage,
+  projectdiscoveryionuclei: projectdiscovery_io_nuclei.projectdiscoveryionucleiPackage,
+  projectdiscoveryio: projectdiscovery_io.projectdiscoveryioPackage,
+  projenio: projen_io.projenioPackage,
+  protobufdev: protobuf_dev.protobufdevPackage,
+  prqllangorg: prql_lang_org.prqllangorgPackage,
+  psycopgorg: psycopg_org.psycopgorgPackage,
+  publichronopikde: public_hronopik_de.publichronopikdePackage,
+  pugixmlorg: pugixml_org.pugixmlorgPackage,
+  pulumiio: pulumi_io.pulumiioPackage,
+  pwgensourceforgeio: pwgen_sourceforge_io.pwgensourceforgeioPackage,
+  pwmtorg: pwmt_org.pwmtorgPackage,
+  pygmentsorg: pygments_org.pygmentsorgPackage,
+  pyinvokeorg: pyinvoke_org.pyinvokeorgPackage,
+  pypagithubio: pypa_github_io.pypagithubioPackage,
+  pypaio: pypa_io.pypaioPackage,
+  pytestorg: pytest_org.pytestorgPackage,
+  pythonpilloworg: python_pillow_org.pythonpilloworgPackage,
+  pythonpoetryorg: python_poetry_org.pythonpoetryorgPackage,
+  pythonorg: python_org.pythonorgPackage,
+  pyyamlorg: pyyaml_org.pyyamlorgPackage,
+  qemuorg: qemu_org.qemuorgPackage,
+  qhullorg: qhull_org.qhullorgPackage,
+  qpdfsourceforgeio: qpdf_sourceforge_io.qpdfsourceforgeioPackage,
+  qtio: qt_io.qtioPackage,
+  quarydev: quary_dev.quarydevPackage,
+  quickwitio: quickwit_io.quickwitioPackage,
+  rwosorg: r_wos_org.rwosorgPackage,
+  rabbitmqcom: rabbitmq_com.rabbitmqcomPackage,
+  raccoinorg: raccoin_org.raccoinorgPackage,
+  radicleorg: radicle_org.radicleorgPackage,
+  railwayapp: railway_app.railwayappPackage,
+  rapidjsonorg: rapidjson_org.rapidjsonorgPackage,
+  rarlabcom: rarlab_com.rarlabcomPackage,
+  rbenvorg: rbenv_org.rbenvorgPackage,
+  rcloneorg: rclone_org.rcloneorgPackage,
+  re2corg: re2c_org.re2corgPackage,
+  reacheremail: reacher_email.reacheremailPackage,
+  rebar3org: rebar3_org.rebar3orgPackage,
+  redisio: redis_io.redisioPackage,
+  rendercom: render_com.rendercomPackage,
+  replibytecom: replibyte_com.replibytecomPackage,
+  resticnet: restic_net.resticnetPackage,
+  rhashsourceforgenet: rhash_sourceforge_net.rhashsourceforgenetPackage,
+  rigauxorg: rigaux_org.rigauxorgPackage,
+  riverbankcomputingcom: riverbankcomputing_com.riverbankcomputingcomPackage,
+  robotframeworkorg: robotframework_org.robotframeworkorgPackage,
+  rockdabootgithubio: rockdaboot_github_io.rockdabootgithubioPackage,
+  rometools: rome_tools.rometoolsPackage,
+  rpmorg: rpm_org.rpmorgPackage,
+  rsyncsambaorg: rsync_samba_org.rsyncsambaorgPackage,
+  rtmpdumpmplayerhqhu: rtmpdump_mplayerhq_hu.rtmpdumpmplayerhqhuPackage,
+  rtomaykogithubio: rtomayko_github_io.rtomaykogithubioPackage,
+  rubocoporg: rubocop_org.rubocoporgPackage,
+  rubylangorg: ruby_lang_org.rubylangorgPackage,
+  rubygemsorg: rubygems_org.rubygemsorgPackage,
+  ruciocernch: rucio_cern_ch.ruciocernchPackage,
+  runatlantisio: runatlantis_io.runatlantisioPackage,
+  rustlanggithubio: rust_lang_github_io.rustlanggithubioPackage,
+  rustlangorgrustbindgen: rust_lang_org_rust_bindgen.rustlangorgrustbindgenPackage,
+  rustlangorg: rust_lang_org.rustlangorgPackage,
+  rustscriptorg: rust_script_org.rustscriptorgPackage,
+  ryeastralsh: rye_astral_sh.ryeastralshPackage,
+  s3toolsorg: s3tools_org.s3toolsorgPackage,
+  saerasoftcom: saerasoft_com.saerasoftcomPackage,
+  sagiegurarigithubio: sagiegurari_github_io.sagiegurarigithubioPackage,
+  sasslangcom: sass_lang_com.sasslangcomPackage,
+  savannahnongnuorg: savannah_nongnu_org.savannahnongnuorgPackage,
+  scalalangorg: scala_lang_org.scalalangorgPackage,
+  scalasbtorg: scala_sbt_org.scalasbtorgPackage,
+  scalewaycom: scaleway_com.scalewaycomPackage,
+  schollzcom: schollz_com.schollzcomPackage,
+  sconsorg: scons_org.sconsorgPackage,
+  scryerpl: scryer_pl.scryerplPackage,
+  sdkmanio: sdkman_io.sdkmanioPackage,
+  seaweedfscom: seaweedfs_com.seaweedfscomPackage,
+  sentryio: sentry_io.sentryioPackage,
+  sfnet: sf_net.sfnetPackage,
+  sfcgalorg: sfcgal_org.sfcgalorgPackage,
+  sftpgocom: sftpgo_com.sftpgocomPackage,
+  shellchecknet: shellcheck_net.shellchecknetPackage,
+  sigstoredev: sigstore_dev.sigstoredevPackage,
+  simplesystemsorg: simplesystems_org.simplesystemsorgPackage,
+  singboxapp: sing_box_app.singboxappPackage,
+  skaffolddev: skaffold_dev.skaffolddevPackage,
+  smartmontoolsorg: smartmontools_org.smartmontoolsorgPackage,
+  snapletdev: snaplet_dev.snapletdevPackage,
+  sniffnetnet: sniffnet_net.sniffnetnetPackage,
+  snykio: snyk_io.snykioPackage,
+  solanacom: solana_com.solanacomPackage,
+  soldeerxyz: soldeer_xyz.soldeerxyzPackage,
+  soliditylangorg: soliditylang_org.soliditylangorgPackage,
+  sonarqubeorg: sonarqube_org.sonarqubeorgPackage,
+  sourceforgenet: sourceforge_net.sourceforgenetPackage,
+  sourcewareorg: sourceware_org.sourcewareorgPackage,
+  soxrsourceforgenet: soxr_sourceforge_net.soxrsourceforgenetPackage,
+  spacetimedbcom: spacetimedb_com.spacetimedbcomPackage,
+  spawnlink: spawn_link.spawnlinkPackage,
+  speexorg: speex_org.speexorgPackage,
+  sphinxdocorg: sphinx_doc_org.sphinxdocorgPackage,
+  sqlcdev: sqlc_dev.sqlcdevPackage,
+  sqlfluffcom: sqlfluff_com.sqlfluffcomPackage,
+  sqliteorg: sqlite_org.sqliteorgPackage,
+  squawkhqcom: squawkhq_com.squawkhqcomPackage,
+  srtallianceorg: srtalliance_org.srtallianceorgPackage,
+  sshxio: sshx_io.sshxioPackage,
+  starshiprs: starship_rs.starshiprsPackage,
+  steampipeio: steampipe_io.steampipeioPackage,
+  stedolangithubio: stedolan_github_io.stedolangithubioPackage,
+  straceio: strace_io.straceioPackage,
+  streamlinkgithubio: streamlink_github_io.streamlinkgithubioPackage,
+  stripecom: stripe_com.stripecomPackage,
+  supabasecom: supabase_com.supabasecomPackage,
+  surrealdbcom: surrealdb_com.surrealdbcomPackage,
+  svenstarogithubio: svenstaro_github_io.svenstarogithubioPackage,
+  swaggerio: swagger_io.swaggerioPackage,
+  swiftorg: swift_org.swiftorgPackage,
+  swigorg: swig_org.swigorgPackage,
+  symfonycom: symfony_com.symfonycomPackage,
+  sympyorg: sympy_org.sympyorgPackage,
+  syncthingnet: syncthing_net.syncthingnetPackage,
+  systemdio: systemd_io.systemdioPackage,
+  tagliborg: taglib_org.tagliborgPackage,
+  tailcallrun: tailcall_run.tailcallrunPackage,
+  tailwindcsscom: tailwindcss_com.tailwindcsscomPackage,
+  taku910githubio: taku910_github_io.taku910githubioPackage,
+  talosdev: talos_dev.talosdevPackage,
+  taplotamasfedev: taplo_tamasfe_dev.taplotamasfedevPackage,
+  tartrun: tart_run.tartrunPackage,
+  taskfiledev: taskfile_dev.taskfiledevPackage,
+  tcllangorg: tcl_lang_org.tcllangorgPackage,
+  tcltk: tcl_tk.tcltkPackage,
+  tcpdumporg: tcpdump_org.tcpdumporgPackage,
+  tcshorg: tcsh_org.tcshorgPackage,
+  teaxyz: tea_xyz.teaxyzPackage,
+  tectonictypesettinggithubio: tectonic_typesetting_github_io.tectonictypesettinggithubioPackage,
+  templguide: templ_guide.templguidePackage,
+  temporalio: temporal_io.temporalioPackage,
+  terraformdocsio: terraform_docs_io.terraformdocsioPackage,
+  terraformio: terraform_io.terraformioPackage,
+  terragruntgruntworkio: terragrunt_gruntwork_io.terragruntgruntworkioPackage,
+  terratagio: terratag_io.terratagioPackage,
+  tesseractocrgithubio: tesseract_ocr_github_io.tesseractocrgithubioPackage,
+  thekelleysorguk: thekelleys_org_uk.thekelleysorgukPackage,
+  theoraorg: theora_org.theoraorgPackage,
+  thoughtworksgithubio: thoughtworks_github_io.thoughtworksgithubioPackage,
+  thrysoeedk: thrysoee_dk.thrysoeedkPackage,
+  tidbytcom: tidbyt_com.tidbytcomPackage,
+  tiltdev: tilt_dev.tiltdevPackage,
+  tinybirdco: tinybird_co.tinybirdcoPackage,
+  tinygoorg: tinygo_org.tinygoorgPackage,
+  tldrsh: tldr_sh.tldrshPackage,
+  tlrdev: tlr_dev.tlrdevPackage,
+  tmateio: tmate_io.tmateioPackage,
+  toxwiki: tox_wiki.toxwikiPackage,
+  traefikio: traefik_io.traefikioPackage,
+  treesittergithubio: tree_sitter_github_io.treesittergithubioPackage,
+  trippyclirs: trippy_cli_rs.trippyclirsPackage,
+  trufflesecuritycom: trufflesecurity_com.trufflesecuritycomPackage,
+  tsl0922githubio: tsl0922_github_io.tsl0922githubioPackage,
+  tuistio: tuist_io.tuistioPackage,
+  tukaaniorg: tukaani_org.tukaaniorgPackage,
+  tursotech: turso_tech.tursotechPackage,
+  typescriptlangorg: typescriptlang_org.typescriptlangorgPackage,
+  typstapp: typst_app.typstappPackage,
+  unboundnet: unbound_net.unboundnetPackage,
+  undefined: undefinedpkg.undefinedpkgPackage,
+  unicodeorg: unicode_org.unicodeorgPackage,
+  unidataucaredu: unidata_ucar_edu.unidataucareduPackage,
+  unixodbcorg: unixodbc_org.unixodbcorgPackage,
+  upliftcidev: upliftci_dev.upliftcidevPackage,
+  upxgithubio: upx_github_io.upxgithubioPackage,
+  uriparsergithubio: uriparser_github_io.uriparsergithubioPackage,
+  valesh: vale_sh.valeshPackage,
+  valkeyio: valkey_io.valkeyioPackage,
+  vamppluginsorg: vamp_plugins_org.vamppluginsorgPackage,
+  vannaai: vanna_ai.vannaaiPackage,
+  vapoursynthcom: vapoursynth_com.vapoursynthcomPackage,
+  vaultprojectio: vaultproject_io.vaultprojectioPackage,
+  vclustercom: vcluster_com.vclustercomPackage,
+  vektragithubio: vektra_github_io.vektragithubioPackage,
+  veleroio: velero_io.veleroioPackage,
+  veracodecom: veracode_com.veracodecomPackage,
+  vercelcom: vercel_com.vercelcomPackage,
+  versitycom: versity_com.versitycomPackage,
+  viaductaiksops: viaduct_ai_ksops.viaductaiksopsPackage,
+  viaductai: viaduct_ai.viaductaiPackage,
+  videolanorg: videolan_org.videolanorgPackage,
+  vimorg: vim_org.vimorgPackage,
+  virtualenvpypaio: virtualenv_pypa_io.virtualenvpypaioPackage,
+  virtualsquareorg: virtualsquare_org.virtualsquareorgPackage,
+  vitejsdev: vitejs_dev.vitejsdevPackage,
+  vlangio: vlang_io.vlangioPackage,
+  voltash: volta_sh.voltashPackage,
+  wailsio: wails_io.wailsioPackage,
+  wait4xdev: wait4x_dev.wait4xdevPackage,
+  wasmerio: wasmer_io.wasmerioPackage,
+  watchexecgithubio: watchexec_github_io.watchexecgithubioPackage,
+  waterlanhomexs4allnl: waterlan_home_xs4all_nl.waterlanhomexs4allnlPackage,
+  wavpackcom: wavpack_com.wavpackcomPackage,
+  waylandfreedesktoporg: wayland_freedesktop_org.waylandfreedesktoporgPackage,
+  webmprojectorg: webmproject_org.webmprojectorgPackage,
+  werfio: werf_io.werfioPackage,
+  wezfurlongorg: wezfurlong_org.wezfurlongorgPackage,
+  wilfredmeuk: wilfred_me_uk.wilfredmeukPackage,
+  wimlibnet: wimlib_net.wimlibnetPackage,
+  wiresharkorg: wireshark_org.wiresharkorgPackage,
+  wixcom: wix_com.wixcomPackage,
+  wkentarogithubio: wkentaro_github_io.wkentarogithubioPackage,
+  wpewebkitorg: wpewebkit_org.wpewebkitorgPackage,
+  wundergraphcom: wundergraph_com.wundergraphcomPackage,
+  wxwidgetsorg: wxwidgets_org.wxwidgetsorgPackage,
+  xorgxscrnsaver: x_org_xscrnsaver.xorgxscrnsaverPackage,
+  xorg: x_org.xorgPackage,
+  xcfiledev: xcfile_dev.xcfiledevPackage,
+  xercesapacheorg: xerces_apache_org.xercesapacheorgPackage,
+  xiphorg: xiph_org.xiphorgPackage,
+  xkbcommonorg: xkbcommon_org.xkbcommonorgPackage,
+  xplrdev: xplr_dev.xplrdevPackage,
+  xpraorg: xpra_org.xpraorgPackage,
+  xtlsgithubio: xtls_github_io.xtlsgithubioPackage,
+  xvidcom: xvid_com.xvidcomPackage,
+  yadmio: yadm_io.yadmioPackage,
+  yarnpkgcom: yarnpkg_com.yarnpkgcomPackage,
+  yasmtortallnet: yasm_tortall_net.yasmtortallnetPackage,
+  youtubedlorg: youtube_dl_org.youtubedlorgPackage,
+  ytdlporg: yt_dlp_org.ytdlporgPackage,
+  yuigithubio: yui_github_io.yuigithubioPackage,
+  zarfdev: zarf_dev.zarfdevPackage,
+  zeromqorg: zeromq_org.zeromqorgPackage,
+  ziglangorg: ziglang_org.ziglangorgPackage,
+  zlibnet: zlib_net.zlibnetPackage,
+  zrokio: zrok_io.zrokioPackage,
+  zshsourceforgeio: zsh_sourceforge_io.zshsourceforgeioPackage,
 }
+
+export const packages: Packages = pantry

@@ -1,4 +1,4 @@
-export const undefinedPackage = {
+export const undefinedpkgPackage = {
   name: 'undefined' as const,
   domain: 'undefined' as const,
   description: '' as const,
@@ -13,4 +13,4 @@ export const undefinedPackage = {
   fullPath: 'undefined' as const,
 }
 
-export type UndefinedPackage = typeof undefinedPackage
+export type UndefinedpkgPackage = typeof undefinedpkgPackage
