@@ -97,7 +97,7 @@ You can configure the cache duration when using the API:
 
 ```typescript
 // In milliseconds, default is 1 hour
-const cacheDuration = 3600000;
+const cacheDuration = 3600000
 
 // When using the CLI
 // bun run pkgx:fetch-all --github-cache-duration 7200000 // 2 hours
