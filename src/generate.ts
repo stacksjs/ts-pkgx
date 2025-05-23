@@ -230,11 +230,11 @@ async function extractAllAliases(): Promise<Record<string, string>> {
       // Extract aliases array from the file content
       const aliasesMatch = content.match(/aliases:\s*\[([\s\S]*?)\]/)
       if (aliasesMatch && aliasesMatch[1]) {
-        const aliases = aliasesMatch[1].match(/"([^"]*)"/g)
+        const aliases = aliasesMatch[1].match(/["']([^"']*)["']/g)
         if (aliases) {
           // Add each alias to the map
           for (const alias of aliases) {
-            const cleanAlias = alias.replace(/"/g, '')
+            const cleanAlias = alias.replace(/["']/g, '')
             if (cleanAlias) {
               allAliases[cleanAlias] = domain
               console.log(`Found alias ${cleanAlias} -> ${domain}`)
@@ -272,7 +272,7 @@ export async function generateAliases(): Promise<string> {
 
     // Add each alias entry
     for (const [alias, domain] of sortedAliases) {
-      content += `  "${alias}": "${domain}",\n`
+      content += `  '${alias}': '${domain}',\n`
     }
 
     content += '}\n'
