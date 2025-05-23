@@ -37,6 +37,7 @@ export const wimlibnetPackage = {
     '1.14.1',
   ] as const,
   fullPath: 'wimlib.net' as const,
+  aliases: undefined,
 }
 
 export type WimlibnetPackage = typeof wimlibnetPackage

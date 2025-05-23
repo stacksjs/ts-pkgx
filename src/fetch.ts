@@ -1008,7 +1008,9 @@ export function saveToCacheAndOutput(
 let sharedBrowser: Browser | null = null
 
 // Browser pool for concurrent operations
-const browserPool: { browser: Browser, inUse: boolean }[] = []
+const browserPool: { browser: Browser, inUse: boolean, createdAt: number }[] = []
+// Maximum number of browsers to keep in the pool
+const MAX_BROWSER_POOL_SIZE = 4 // Reduced from 5 to avoid resource issues
 
 // Define a variable to track if we've already logged a navigation message
 let navigationLogged = false
@@ -1077,20 +1079,28 @@ export async function cleanupBrowserResources(): Promise<void> {
   // Clean up browser pool
   if (browserPool.length > 0) {
     console.log(`Closing ${browserPool.length} browsers from pool...`)
-    const closePromises = browserPool.map(async (entry) => {
+    const closePromises = browserPool.map(async (entry, index) => {
       try {
+        console.log(`Closing browser ${index + 1}/${browserPool.length}...`)
         await Promise.race([
-          entry.browser.close().catch(e => console.error('Error closing pool browser:', e)),
+          entry.browser.close().catch(e => console.error(`Error closing pool browser ${index + 1}:`, e)),
           new Promise(resolve => setTimeout(resolve, 3000)),
         ])
       }
       catch (error) {
-        console.error('Error closing browser from pool:', error)
+        console.error(`Error closing browser ${index + 1} from pool:`, error)
       }
     })
 
-    await Promise.all(closePromises)
-    browserPool.length = 0 // Clear the pool
+    try {
+      await Promise.all(closePromises)
+    }
+    catch (error) {
+      console.error('Error during pool cleanup:', error)
+    }
+
+    // Clear the pool regardless of errors
+    browserPool.length = 0
     console.log('Browser pool cleaned up')
   }
 }
@@ -1099,22 +1109,86 @@ export async function cleanupBrowserResources(): Promise<void> {
  * Get a browser from the pool or create a new one if needed
  */
 async function acquireBrowser(timeout: number): Promise<Browser> {
-  // First, try to reuse an available browser from the pool
+  // First, check for and remove any dead browsers from the pool
+  for (let i = browserPool.length - 1; i >= 0; i--) {
+    try {
+      // Try a simple operation to check if browser is still responsive
+      try {
+        await browserPool[i].browser.contexts()
+      }
+      catch (_) {
+        // If this fails, the browser is dead and should be removed
+        console.log(`Removing dead browser from pool (index: ${i})`)
+        browserPool.splice(i, 1)
+      }
+    }
+    catch {
+      // Remove from pool if any error occurs
+      console.log(`Removing errored browser from pool (index: ${i})`)
+      browserPool.splice(i, 1)
+    }
+  }
+
+  // Try to reuse an available browser from the pool
   const availableEntry = browserPool.find(entry => !entry.inUse)
   if (availableEntry) {
     availableEntry.inUse = true
     return availableEntry.browser
   }
 
-  // If not found, create a new browser instance
-  const browser = await chromium.launch({
-    headless: true,
-    timeout: timeout / 2,
-  })
+  // If pool is at max capacity, force close the oldest browser
+  if (browserPool.length >= MAX_BROWSER_POOL_SIZE) {
+    try {
+      console.log(`Browser pool at max capacity (${MAX_BROWSER_POOL_SIZE}), closing oldest browser...`)
+      // Sort by creation time and take the oldest
+      browserPool.sort((a, b) => a.createdAt - b.createdAt)
+      const oldestEntry = browserPool.shift() // Remove the oldest browser
+      if (oldestEntry) {
+        await Promise.race([
+          oldestEntry.browser.close().catch(e => console.error('Error closing oldest browser:', e)),
+          new Promise(resolve => setTimeout(resolve, 3000)),
+        ])
+      }
+    }
+    catch (error) {
+      console.error('Error closing oldest browser:', error)
+    }
+  }
 
-  // Add to pool
-  browserPool.push({ browser, inUse: true })
-  console.log(`Created new browser instance (pool size: ${browserPool.length})`)
+  // If not found, create a new browser instance with retry logic
+  let browser: Browser | null = null
+  let retryCount = 0
+  const maxRetries = 3
+
+  while (!browser && retryCount < maxRetries) {
+    try {
+      browser = await chromium.launch({
+        headless: true,
+        timeout: timeout / 2,
+      })
+    }
+    catch (error) {
+      retryCount++
+      console.error(`Browser launch attempt ${retryCount} failed:`, error)
+      if (retryCount >= maxRetries) {
+        throw new Error(`Failed to launch browser after ${maxRetries} attempts`)
+      }
+      // Wait before retrying
+      await new Promise(resolve => setTimeout(resolve, 1000))
+    }
+  }
+
+  if (!browser) {
+    throw new Error('Failed to create browser instance')
+  }
+
+  // Add to pool with current timestamp
+  browserPool.push({
+    browser,
+    inUse: true,
+    createdAt: Date.now(),
+  })
+  console.log(`Created new browser instance (pool size: ${browserPool.length}/${MAX_BROWSER_POOL_SIZE})`)
 
   return browser
 }
@@ -1126,6 +1200,7 @@ function releaseBrowser(browser: Browser): void {
   const entry = browserPool.find(entry => entry.browser === browser)
   if (entry) {
     entry.inUse = false
+    console.log(`Released browser back to pool (available: ${browserPool.filter(e => !e.inUse).length}/${browserPool.length})`)
   }
 }
 
@@ -1628,16 +1703,94 @@ async function fetchVersionsFromGitHub(packageName: string): Promise<string[]> {
   }
 }
 
+function generateProgressBar(completed: number, total: number, width = 30): string {
+  const percentage = Math.min(100, Math.round((completed / total) * 100))
+  const filledWidth = Math.round((width * completed) / total)
+  const emptyWidth = width - filledWidth
+
+  const filledBar = '='.repeat(filledWidth)
+  const emptyBar = ' '.repeat(emptyWidth)
+
+  return `[${filledBar}${emptyBar}] ${percentage}%`
+}
+
+// Add periodic cleanup function for browser resources
+const CLEANUP_INTERVAL = 300000 // 5 minutes
+let cleanupInterval: NodeJS.Timeout | null = null
+
+/**
+ * Sets up process exit handlers to ensure proper cleanup
+ */
+export function setupCleanupHandlers(): void {
+  // Add graceful shutdown handlers
+  const exitHandler = async (signal: string) => {
+    console.log(`\nReceived ${signal} signal. Cleaning up resources...`)
+
+    // Clear any intervals
+    if (cleanupInterval) {
+      clearInterval(cleanupInterval)
+    }
+
+    // Perform cleanup of browser resources
+    await cleanupBrowserResources()
+
+    console.log('Resources cleaned up. Exiting.')
+
+    // Force exit after 5 seconds if process is hanging
+    setTimeout(() => {
+      console.log('Forcing process exit...')
+      process.exit(0)
+    }, 5000)
+  }
+
+  // Handle various termination signals
+  process.on('SIGINT', () => exitHandler('SIGINT'))
+  process.on('SIGTERM', () => exitHandler('SIGTERM'))
+  process.on('uncaughtException', (error) => {
+    console.error('Uncaught exception:', error)
+    exitHandler('uncaughtException')
+  })
+}
+
+// Initialize handlers
+setupCleanupHandlers()
+
+// Start a periodic cleanup task
+export function startPeriodicCleanup(): void {
+  // Clear any existing interval
+  if (cleanupInterval) {
+    clearInterval(cleanupInterval)
+  }
+
+  // Set a new interval to periodically clean up resources
+  cleanupInterval = setInterval(() => {
+    console.log('Running periodic browser resource cleanup...')
+    cleanupBrowserResources()
+      .then(() => console.log('Periodic cleanup completed'))
+      .catch(err => console.error('Error during periodic cleanup:', err))
+  }, CLEANUP_INTERVAL)
+}
+
 /**
  * Fetches and saves all packages with proper concurrency support
  */
 export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {}): Promise<string[]> {
+  // Start the periodic cleanup task
+  startPeriodicCleanup()
+
   const timeout = options.timeout || 30000
   const outputDir = options.outputDir || 'packages'
   const cacheDir = options.cacheDir || DEFAULT_CACHE_DIR
   const useCache = options.cache !== false
   const cacheExpirationMinutes = options.cacheExpirationMinutes || DEFAULT_CACHE_EXPIRATION_MINUTES
   const concurrency = options.concurrency || 10
+
+  // Limit concurrency to prevent overload
+  const actualConcurrency = Math.min(concurrency, 10)
+
+  // Track progress and timing
+  const startTime = Date.now()
+  let lastCleanupTime = startTime
 
   try {
     console.log('Fetching all packages...')
@@ -1720,6 +1873,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
     // Process packages in chunks for concurrency
     const processedDomains = new Set<string>()
     const savedPackages: string[] = []
+    const failedPackages: string[] = []
 
     // Define a function to process a single package with its own browser instance
     const processPackage = async (packageName: string): Promise<string | null> => {
@@ -1764,8 +1918,8 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
         // Only acquire a browser if we didn't find the package in cache
         browser = await acquireBrowser(timeout)
 
-        // Fetch and save the package
-        const result = await fetchAndSavePackage(
+        // Fetch and save the package with a timeout to prevent hanging
+        const fetchPromise = fetchAndSavePackage(
           packageName,
           outputDir,
           timeout,
@@ -1781,6 +1935,25 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
           },
         )
 
+        // Set a package-specific timeout as a safety measure
+        const packageTimeout = timeout * 3 // 3x the normal timeout
+        const result = await Promise.race([
+          fetchPromise,
+          new Promise<null>((resolve) => {
+            setTimeout(() => {
+              console.error(`Package ${packageName} processing timed out after ${packageTimeout}ms`)
+              resolve(null)
+            }, packageTimeout)
+          }),
+        ])
+
+        if (!result) {
+          // Timeout occurred
+          failedPackages.push(packageName)
+          console.error(`Skipping ${packageName} due to timeout`)
+          return null
+        }
+
         if (result.success && result.fullDomainName) {
           // Mark this domain as processed
           processedDomains.add(result.fullDomainName)
@@ -1794,28 +1967,45 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
 
           return result.fullDomainName
         }
-
-        return null
+        else {
+          // Failed to fetch
+          failedPackages.push(packageName)
+          return null
+        }
       }
       catch (error) {
-        console.error(`Failed to process package ${packageName}:`, error)
+        console.error(`Error processing package ${packageName}:`, error)
+        failedPackages.push(packageName)
         return null
       }
       finally {
-        // Always release the browser back to the pool if it was acquired
+        // Always release the browser back to the pool if we acquired one
         if (browser) {
-          releaseBrowser(browser)
+          try {
+            releaseBrowser(browser)
+          }
+          catch (error) {
+            console.error(`Error releasing browser for ${packageName}:`, error)
+            // If we can't release the browser, try to close it to prevent leaks
+            try {
+              await browser.close().catch(() => {})
+            }
+            catch {
+              // Ignore any close errors
+            }
+          }
         }
       }
     }
 
     // Process all packages in parallel with controlled concurrency
-    console.log(`Processing ${allPackageNames.length} packages with concurrency of ${concurrency}...`)
+    console.log(`Processing ${allPackageNames.length} packages with concurrency of ${actualConcurrency}...`)
 
     // Create chunks for better progress reporting
+    const chunkSize = Math.min(actualConcurrency, 10) // Use smaller chunks for better progress reporting
     const chunks: string[][] = []
-    for (let i = 0; i < allPackageNames.length; i += concurrency) {
-      chunks.push(allPackageNames.slice(i, i + concurrency))
+    for (let i = 0; i < allPackageNames.length; i += chunkSize) {
+      chunks.push(allPackageNames.slice(i, i + chunkSize))
     }
 
     console.log(`Split into ${chunks.length} chunks for processing`)
@@ -1833,10 +2023,34 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       const successfulResults = chunkResults.filter(Boolean) as string[]
       savedPackages.push(...successfulResults)
 
-      console.log(`Completed chunk ${chunkIndex + 1}/${chunks.length}, processed ${savedPackages.length}/${allPackageNames.length} so far`)
+      // Report progress
+      const now = Date.now()
+      const elapsedSeconds = Math.round((now - startTime) / 1000)
+      const processedCount = savedPackages.length + failedPackages.length
+      const remainingCount = allPackageNames.length - processedCount
+      const completedPercent = Math.round((processedCount / allPackageNames.length) * 100)
+      const progressBar = generateProgressBar(processedCount, allPackageNames.length)
+
+      console.log(`${progressBar} Completed chunk ${chunkIndex + 1}/${chunks.length}, processed ${processedCount}/${allPackageNames.length} (${completedPercent}%), ${failedPackages.length} failed, ${remainingCount} remaining, elapsed time: ${elapsedSeconds}s`)
+
+      // Periodic cleanup of browser resources to prevent memory issues
+      // Do cleanup every 10 chunks or if there are more than MAX_BROWSER_POOL_SIZE*2 browsers
+      if (browserPool.length > MAX_BROWSER_POOL_SIZE * 2
+        || (now - lastCleanupTime > 5 * 60 * 1000)) { // 5 minutes
+        console.log('Performing periodic browser resource cleanup...')
+        await cleanupBrowserResources()
+        lastCleanupTime = now
+
+        // Small delay to let system recover after cleanup
+        await new Promise(resolve => setTimeout(resolve, 1000))
+      }
     }
 
-    console.log(`Successfully fetched ${savedPackages.length} packages`)
+    console.log(`Successfully fetched ${savedPackages.length} packages, ${failedPackages.length} failed`)
+
+    if (failedPackages.length > 0) {
+      console.log(`Failed packages: ${failedPackages.slice(0, 10).join(', ')}${failedPackages.length > 10 ? '...' : ''}`)
+    }
 
     // Generate index
     if (savedPackages.length > 0) {
@@ -1853,6 +2067,11 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
   finally {
     // Clean up browser resources
     await cleanupBrowserResources()
+    // Clean up the interval when finished
+    if (cleanupInterval) {
+      clearInterval(cleanupInterval)
+      cleanupInterval = null
+    }
   }
 }
 
@@ -2127,6 +2346,16 @@ export async function fetchAndSavePackage(
 
     console.log(`Using timeout for ${packageName} (attempt ${retryNumber}): ${actualTimeout}ms`)
 
+    // Set an overall operation timeout to prevent hanging the entire process
+    // This is different from the browser navigation timeout
+    const operationTimeout = actualTimeout * 2 // Double the browser timeout
+    const operationTimeoutPromise = new Promise<{ success: boolean }>((resolve) => {
+      setTimeout(() => {
+        console.error(`Operation timeout for ${packageName} after ${operationTimeout}ms`)
+        resolve({ success: false })
+      }, operationTimeout)
+    })
+
     // Handle nested package paths
     if (packageName.includes('/')) {
       const pathParts = packageName.split('/')
@@ -2137,10 +2366,21 @@ export async function fetchAndSavePackage(
 
       try {
         // Use a try/catch here to handle 404 errors
-        const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage(`${domain}/${subPath}`, {
+        // Race the fetch operation against the timeout
+        const fetchPromise = fetchPkgxPackage(`${domain}/${subPath}`, {
           timeout: actualTimeout,
           browser: options.browser,
         })
+
+        const fetchResult = await Promise.race([fetchPromise, operationTimeoutPromise])
+
+        // If timeout occurred, throw a specialized error
+        if ('success' in fetchResult && !fetchResult.success) {
+          throw new Error(`Operation timed out after ${operationTimeout}ms`)
+        }
+
+        // Unwrap the proper result
+        const { packageInfo, originalName, fullDomainName } = fetchResult as any
 
         // Sort versions using semver if they exist
         if (packageInfo.versions && packageInfo.versions.length > 0) {
@@ -2332,10 +2572,21 @@ export async function fetchAndSavePackage(
     else {
       // Handle standard (non-nested) packages
       try {
-        const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage(packageName, {
+        // Race the fetch operation against the timeout
+        const fetchPromise = fetchPkgxPackage(packageName, {
           timeout: actualTimeout,
           browser: options.browser,
         })
+
+        const fetchResult = await Promise.race([fetchPromise, operationTimeoutPromise])
+
+        // If timeout occurred, throw a specialized error
+        if ('success' in fetchResult && !fetchResult.success) {
+          throw new Error(`Operation timed out after ${operationTimeout}ms`)
+        }
+
+        // Unwrap the proper result
+        const { packageInfo, originalName, fullDomainName } = fetchResult as any
 
         // Sort versions using semver if they exist
         if (packageInfo.versions && packageInfo.versions.length > 0) {

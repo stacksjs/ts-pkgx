@@ -11,6 +11,7 @@ export const versitycomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'versity.com' as const,
+  aliases: undefined,
 }
 
 export type VersitycomPackage = typeof versitycomPackage

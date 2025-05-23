@@ -63,6 +63,7 @@ export const ytdlporgPackage = {
     '2023.1.6',
   ] as const,
   fullPath: 'yt-dlp.org' as const,
+  aliases: undefined,
 }
 
 export type YtdlporgPackage = typeof ytdlporgPackage

@@ -20,6 +20,7 @@ export const ziglangorgPackage = {
     '0.10.1',
   ] as const,
   fullPath: 'ziglang.org' as const,
+  aliases: undefined,
 }
 
 export type ZiglangorgPackage = typeof ziglangorgPackage

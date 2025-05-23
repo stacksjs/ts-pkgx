@@ -41,6 +41,7 @@ export const xcfiledevPackage = {
     '0.0.110',
   ] as const,
   fullPath: 'xcfile.dev' as const,
+  aliases: undefined,
 }
 
 export type XcfiledevPackage = typeof xcfiledevPackage

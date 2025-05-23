@@ -14,6 +14,7 @@ export const pdmfmingdevPackage = {
     'python.org~3.11',
   ] as const,
   versions: [
+    '2.24.2',
     '2.24.1',
     '2.24.0',
     '2.23.1',

@@ -11,6 +11,7 @@ export const wixcomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'wix.com' as const,
+  aliases: undefined,
 }
 
 export type WixcomPackage = typeof wixcomPackage

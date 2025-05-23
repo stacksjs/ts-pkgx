@@ -35,7 +35,7 @@ const cli = new CAC('pkgx-tools')
 
 // Force exit after a maximum timeout to prevent hung processes
 // This is a safety mechanism in case Playwright doesn't close properly
-const EXIT_TIMEOUT = 120000 // 2 minutes
+const EXIT_TIMEOUT = 300000 // 5 minutes
 const forceExitTimeout = setTimeout(() => {
   console.error('Force exiting after timeout - process may have hung')
   process.exit(1)

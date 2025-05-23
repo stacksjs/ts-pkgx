@@ -14,6 +14,7 @@ export const openshiftcomPackage = {
     'kerberos.org^1.21',
   ] as const,
   versions: [
+    '4.18.15',
     '4.18.14',
     '4.18.13',
     '4.18.12',
@@ -28,6 +29,7 @@ export const openshiftcomPackage = {
     '4.18.3',
     '4.18.2',
     '4.18.1',
+    '4.17.31',
     '4.17.30',
     '4.17.29',
     '4.17.28',

@@ -11,6 +11,7 @@ export const yuigithubioPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'yui.github.io' as const,
+  aliases: undefined,
 }
 
 export type YuigithubioPackage = typeof yuigithubioPackage
