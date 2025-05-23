@@ -12,6 +12,7 @@ export const chezmoiioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '2.62.5',
     '2.62.4',
     '2.62.3',
     '2.62.2',

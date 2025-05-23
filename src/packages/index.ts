@@ -529,6 +529,7 @@ import * as nixpacks_com from './nixpacks.com'
 import * as nlnetlabs_nl from './nlnetlabs.nl'
 import * as nmap_org from './nmap.org'
 import * as node from './node'
+import * as nodejs_org from './nodejs.org'
 import * as nomadproject_io from './nomadproject.io'
 import * as nongnu_org from './nongnu.org'
 import * as notroj_github_io from './notroj.github.io'
@@ -1393,6 +1394,7 @@ export interface Pantry {
   nlnetlabsnl: nlnetlabs_nl.NlnetlabsnlPackage
   nmaporg: nmap_org.NmaporgPackage
   node: node.NodePackage
+  nodejsorg: nodejs_org.NodejsorgPackage
   nomadprojectio: nomadproject_io.NomadprojectioPackage
   nongnuorg: nongnu_org.NongnuorgPackage
   notrojgithubio: notroj_github_io.NotrojgithubioPackage
@@ -2260,6 +2262,7 @@ export const pantry: Pantry = {
   nlnetlabsnl: nlnetlabs_nl.nlnetlabsnlPackage,
   nmaporg: nmap_org.nmaporgPackage,
   node: node.nodePackage,
+  nodejsorg: nodejs_org.nodejsorgPackage,
   nomadprojectio: nomadproject_io.nomadprojectioPackage,
   nongnuorg: nongnu_org.nongnuorgPackage,
   notrojgithubio: notroj_github_io.notrojgithubioPackage,

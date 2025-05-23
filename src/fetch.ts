@@ -1943,18 +1943,19 @@ function formatObjectWithAsConst(obj: Record<string, any>): string {
         // Format string array with line breaks for readability
         lines.push(`  ${key}: [`)
         for (const item of value) {
-          lines.push(`    ${JSON.stringify(item)},`)
+          lines.push(`    '${String(item).replace(/'/g, '\\\'')}',`)
         }
         lines.push(`  ] as const,`)
       }
       else {
-        // Other array types
-        lines.push(`  ${key}: ${JSON.stringify(value)} as const,`)
+        // Other array types - convert JSON.stringify output to use single quotes
+        const jsonStr = JSON.stringify(value).replace(/"/g, '\'')
+        lines.push(`  ${key}: ${jsonStr} as const,`)
       }
     }
     else if (typeof value === 'string') {
-      // String with 'as const'
-      lines.push(`  ${key}: ${JSON.stringify(value)} as const,`)
+      // String with 'as const' using single quotes
+      lines.push(`  ${key}: '${String(value).replace(/'/g, '\\\'')}' as const,`)
     }
     else if (typeof value === 'number' || typeof value === 'boolean') {
       // Numbers and booleans with 'as const'
@@ -1969,8 +1970,9 @@ function formatObjectWithAsConst(obj: Record<string, any>): string {
       lines.push(`  ${key}: ${formatObjectWithAsConst(value)},`)
     }
     else {
-      // Fallback for other types
-      lines.push(`  ${key}: ${JSON.stringify(value)},`)
+      // Fallback for other types - convert JSON.stringify output to use single quotes
+      const jsonStr = JSON.stringify(value).replace(/"/g, '\'')
+      lines.push(`  ${key}: ${jsonStr},`)
     }
   }
 

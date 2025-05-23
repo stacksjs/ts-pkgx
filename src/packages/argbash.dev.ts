@@ -17,6 +17,7 @@ export const argbashdevPackage = {
     'gnu.org/autoconf',
   ] as const,
   versions: [
+    '2.11.0',
     '2.10.0',
   ] as const,
   fullPath: 'argbash.dev' as const,
