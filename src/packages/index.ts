@@ -18,8 +18,8 @@ import * as apache_org from './apache.org'
 import * as apktool_org from './apktool.org'
 import * as apollographql_com from './apollographql.com'
 import * as appium_io from './appium.io'
-import * as apple_com_remote_cmds from './apple.com-remote_cmds'
 import * as apple_com from './apple.com'
+import * as apple_com_remote_cmds from './apple.com-remote_cmds'
 import * as apptainer_org from './apptainer.org'
 import * as aquasecurity_github_io from './aquasecurity.github.io'
 import * as arduino_github_io from './arduino.github.io'
@@ -32,18 +32,18 @@ import * as asciinema_org from './asciinema.org'
 import * as aspell_net from './aspell.net'
 import * as assimp_org from './assimp.org'
 import * as ast_grep_github_io from './ast-grep.github.io'
+import * as astral_sh from './astral.sh'
 import * as astral_sh_ruff from './astral.sh-ruff'
 import * as astral_sh_ty from './astral.sh-ty'
 import * as astral_sh_uv from './astral.sh-uv'
-import * as astral_sh from './astral.sh'
 import * as atlasgo_io from './atlasgo.io'
 import * as attrs_org from './attrs.org'
 import * as augeas_net from './augeas.net'
 import * as authzed_com from './authzed.com'
 import * as aux4_io from './aux4.io'
+import * as aws_amazon_com from './aws.amazon.com'
 import * as aws_amazon_com_cli from './aws.amazon.com-cli'
 import * as aws_amazon_com_sam from './aws.amazon.com-sam'
-import * as aws_amazon_com from './aws.amazon.com'
 import * as bashly_dannyb_co from './bashly.dannyb.co'
 import * as bcrypt_sourceforge_net from './bcrypt.sourceforge.net'
 import * as beyondgrep_com from './beyondgrep.com'
@@ -72,10 +72,10 @@ import * as carapace_sh from './carapace.sh'
 import * as cask_readthedocs_io from './cask.readthedocs.io'
 import * as catb_org from './catb.org'
 import * as ccache_dev from './ccache.dev'
-import * as cedarpolicy_com_cli from './cedarpolicy.com-cli'
 import * as cedarpolicy_com from './cedarpolicy.com'
-import * as ceph_com_cephadm from './ceph.com-cephadm'
+import * as cedarpolicy_com_cli from './cedarpolicy.com-cli'
 import * as ceph_com from './ceph.com'
+import * as ceph_com_cephadm from './ceph.com-cephadm'
 import * as ceres_solver_org from './ceres-solver.org'
 import * as certbot_eff_org from './certbot.eff.org'
 import * as certifi_io from './certifi.io'
@@ -99,8 +99,8 @@ import * as cloudnative_pg_io from './cloudnative-pg.io'
 import * as cmake_org from './cmake.org'
 import * as cmocka_org from './cmocka.org'
 import * as cnquery_io from './cnquery.io'
-import * as cocoapods_org_xcodeproj from './cocoapods.org-xcodeproj'
 import * as cocoapods_org from './cocoapods.org'
+import * as cocoapods_org_xcodeproj from './cocoapods.org-xcodeproj'
 import * as cocogitto_io from './cocogitto.io'
 import * as code_videolan_org from './code.videolan.org'
 import * as coder_com from './coder.com'
@@ -113,6 +113,7 @@ import * as convco_github_io from './convco.github.io'
 import * as coredns_io from './coredns.io'
 import * as cpanmin_us from './cpanmin.us'
 import * as cr_yp_to from './cr.yp.to'
+import * as crates_io from './crates.io'
 import * as crates_io_aichat from './crates.io-aichat'
 import * as crates_io_bake_rs from './crates.io-bake-rs'
 import * as crates_io_cargo_tarpaulin from './crates.io-cargo-tarpaulin'
@@ -124,7 +125,6 @@ import * as crates_io_qsv from './crates.io-qsv'
 import * as crates_io_ripgrep_all from './crates.io-ripgrep-all'
 import * as crates_io_rucola_notes from './crates.io-rucola-notes'
 import * as crates_io_samply from './crates.io-samply'
-import * as crates_io from './crates.io'
 import * as crazymax_dev from './crazymax.dev'
 import * as creativeprojects_github_io from './creativeprojects.github.io'
 import * as cruft_github_io from './cruft.github.io'
@@ -153,8 +153,8 @@ import * as deno_land from './deno.land'
 import * as depot_dev from './depot.dev'
 import * as dest_unreach_org from './dest-unreach.org'
 import * as dev_yorhel_nl from './dev.yorhel.nl'
-import * as developer_1password_com_1password_cli from './developer.1password.com-1password-cli'
 import * as developer_1password_com from './developer.1password.com'
+import * as developer_1password_com_1password_cli from './developer.1password.com-1password-cli'
 import * as developers_yubico_com from './developers.yubico.com'
 import * as devpod_sh from './devpod.sh'
 import * as dgraph_io from './dgraph.io'
@@ -179,8 +179,8 @@ import * as dprint_dev from './dprint.dev'
 import * as dri_freedesktop_org from './dri.freedesktop.org'
 import * as duckdb_org from './duckdb.org'
 import * as duktape_org from './duktape.org'
-import * as dystroy_org_bacon from './dystroy.org-bacon'
 import * as dystroy_org from './dystroy.org'
+import * as dystroy_org_bacon from './dystroy.org-bacon'
 import * as earthly_dev from './earthly.dev'
 import * as ebassi_github_io from './ebassi.github.io'
 import * as edgedb_com from './edgedb.com'
@@ -251,14 +251,12 @@ import * as git_scm_org from './git-scm.org'
 import * as git_town_com from './git-town.com'
 import * as git_osgeo_org from './git.osgeo.org'
 import * as git_tozt_net from './git.tozt.net'
+import * as github_com from './github.com'
 import * as github_com_0age_create2crunch from './github.com-0age-create2crunch'
-import * as github_com_Cyfrin_safe_tx_hashes_util from './github.com-Cyfrin-safe-tx-hashes-util'
-import * as github_com_Diniboy1123_usque from './github.com-Diniboy1123-usque'
-import * as github_com_MilesCranmer_rip2 from './github.com-MilesCranmer-rip2'
-import * as github_com_MinseokOh_toml_cli from './github.com-MinseokOh-toml-cli'
-import * as github_com_Parchive_par2cmdline from './github.com-Parchive-par2cmdline'
 import * as github_com_blacktop_lporg from './github.com-blacktop-lporg'
 import * as github_com_blynn_nex from './github.com-blynn-nex'
+import * as github_com_Cyfrin_safe_tx_hashes_util from './github.com-Cyfrin-safe-tx-hashes-util'
+import * as github_com_Diniboy1123_usque from './github.com-Diniboy1123-usque'
 import * as github_com_fastfetch_cli_fastfetch from './github.com-fastfetch-cli-fastfetch'
 import * as github_com_fiatjaf_nak from './github.com-fiatjaf-nak'
 import * as github_com_git_ecosystem_git_credential_manager from './github.com-git-ecosystem-git-credential-manager'
@@ -268,14 +266,16 @@ import * as github_com_jarun_nnn from './github.com-jarun-nnn'
 import * as github_com_koekeishiya_skhd from './github.com-koekeishiya-skhd'
 import * as github_com_lucianosrp_rye_uv from './github.com-lucianosrp-rye-uv'
 import * as github_com_mas_cli_mas from './github.com-mas-cli-mas'
+import * as github_com_MilesCranmer_rip2 from './github.com-MilesCranmer-rip2'
+import * as github_com_MinseokOh_toml_cli from './github.com-MinseokOh-toml-cli'
 import * as github_com_mycreepy_pakku from './github.com-mycreepy-pakku'
+import * as github_com_Parchive_par2cmdline from './github.com-Parchive-par2cmdline'
 import * as github_com_peak_s5cmd from './github.com-peak-s5cmd'
 import * as github_com_peripheryapp_periphery from './github.com-peripheryapp-periphery'
 import * as github_com_shaka_project_shaka_packager from './github.com-shaka-project-shaka-packager'
 import * as github_com_sorah_envchain from './github.com-sorah-envchain'
 import * as github_com_spencerkimball_stargazers from './github.com-spencerkimball-stargazers'
 import * as github_com_withered_magic_starpls from './github.com-withered-magic-starpls'
-import * as github_com from './github.com'
 import * as gitlab_com from './gitlab.com'
 import * as gitleaks_io from './gitleaks.io'
 import * as glaros_dtc_umn_edu from './glaros.dtc.umn.edu'
@@ -344,13 +344,13 @@ import * as indexsupply_com from './indexsupply.com'
 import * as info_zip_org from './info-zip.org'
 import * as infracost_io from './infracost.io'
 import * as intel_com from './intel.com'
-import * as invisible_island_net_lynx from './invisible-island.net-lynx'
 import * as invisible_island_net from './invisible-island.net'
+import * as invisible_island_net_lynx from './invisible-island.net-lynx'
 import * as ipfs_tech from './ipfs.tech'
 import * as ipython_org from './ipython.org'
 import * as iroh_computer from './iroh.computer'
-import * as isc_org_bind9 from './isc.org-bind9'
 import * as isc_org from './isc.org'
+import * as isc_org_bind9 from './isc.org-bind9'
 import * as istio_io from './istio.io'
 import * as itstool_org from './itstool.org'
 import * as ivarch_com from './ivarch.com'
@@ -381,8 +381,8 @@ import * as kafka_apache_org from './kafka.apache.org'
 import * as kaggle_com from './kaggle.com'
 import * as keephq_dev from './keephq.dev'
 import * as kerberos_org from './kerberos.org'
-import * as kernel_org_libcap from './kernel.org-libcap'
 import * as kernel_org from './kernel.org'
+import * as kernel_org_libcap from './kernel.org-libcap'
 import * as khanacademy_org from './khanacademy.org'
 import * as khronos_org from './khronos.org'
 import * as kind_sigs_k8s_io from './kind.sigs.k8s.io'
@@ -432,8 +432,8 @@ import * as libsdl_org from './libsdl.org'
 import * as libsodium_org from './libsodium.org'
 import * as libsoup_org from './libsoup.org'
 import * as libspng_org from './libspng.org'
-import * as libssh_org from './libssh.org'
 import * as libssh2_org from './libssh2.org'
+import * as libssh_org from './libssh.org'
 import * as libtom_net from './libtom.net'
 import * as liburcu_org from './liburcu.org'
 import * as libusb_info from './libusb.info'
@@ -482,9 +482,9 @@ import * as mesonbuild_com from './mesonbuild.com'
 import * as micro_editor_github_io from './micro-editor.github.io'
 import * as microbrew_org from './microbrew.org'
 import * as microcks_io from './microcks.io'
+import * as microsoft_com from './microsoft.com'
 import * as microsoft_com_code_cli from './microsoft.com-code-cli'
 import * as microsoft_com_markitdown from './microsoft.com-markitdown'
-import * as microsoft_com from './microsoft.com'
 import * as midnight_commander_org from './midnight-commander.org'
 import * as min_io from './min.io'
 import * as mise_jdx_dev from './mise.jdx.dev'
@@ -492,13 +492,13 @@ import * as mitmproxy_org from './mitmproxy.org'
 import * as mkcert_dev from './mkcert.dev'
 import * as mkdocs_org from './mkdocs.org'
 import * as modal_com from './modal.com'
-import * as modernc_org_goyacc from './modernc.org-goyacc'
 import * as modernc_org from './modernc.org'
+import * as modernc_org_goyacc from './modernc.org-goyacc'
 import * as mongodb_com from './mongodb.com'
 import * as moonrepo_dev from './moonrepo.dev'
 import * as mosh_org from './mosh.org'
-import * as mozilla_org_cbindgen from './mozilla.org-cbindgen'
 import * as mozilla_org from './mozilla.org'
+import * as mozilla_org_cbindgen from './mozilla.org-cbindgen'
 import * as mpg123_de from './mpg123.de'
 import * as mpmath_org from './mpmath.org'
 import * as mpv_io from './mpv.io'
@@ -508,8 +508,8 @@ import * as mun_lang_org from './mun-lang.org'
 import * as mupdf_com from './mupdf.com'
 import * as musepack_net from './musepack.net'
 import * as musl_libc_org from './musl.libc.org'
-import * as mvdan_cc_gofumpt from './mvdan.cc-gofumpt'
 import * as mvdan_cc from './mvdan.cc'
+import * as mvdan_cc_gofumpt from './mvdan.cc-gofumpt'
 import * as mypy_lang_org from './mypy-lang.org'
 import * as mysql_com from './mysql.com'
 import * as nano_editor_org from './nano-editor.org'
@@ -539,8 +539,8 @@ import * as numpy_org from './numpy.org'
 import * as nushell_sh from './nushell.sh'
 import * as nx_dev from './nx.dev'
 import * as oauth2_proxy_github_io from './oauth2-proxy.github.io'
-import * as oberhumer_com_ucl from './oberhumer.com-ucl'
 import * as oberhumer_com from './oberhumer.com'
+import * as oberhumer_com_ucl from './oberhumer.com-ucl'
 import * as odigos_io from './odigos.io'
 import * as ohmyposh_dev from './ohmyposh.dev'
 import * as ollama_ai from './ollama.ai'
@@ -558,8 +558,8 @@ import * as openexr_com from './openexr.com'
 import * as openinterpreter_com from './openinterpreter.com'
 import * as openjdk_org from './openjdk.org'
 import * as openjpeg_org from './openjpeg.org'
-import * as openldap_org_liblmdb from './openldap.org-liblmdb'
 import * as openldap_org from './openldap.org'
+import * as openldap_org_liblmdb from './openldap.org-liblmdb'
 import * as openmp_llvm_org from './openmp.llvm.org'
 import * as openpmix_github_io from './openpmix.github.io'
 import * as openpolicyagent_org from './openpolicyagent.org'
@@ -599,9 +599,9 @@ import * as pinniped_dev from './pinniped.dev'
 import * as pip_pypa_io from './pip.pypa.io'
 import * as pipenv_pypa_io from './pipenv.pypa.io'
 import * as pixman_org from './pixman.org'
+import * as pkgx_sh from './pkgx.sh'
 import * as pkgx_sh_dev from './pkgx.sh-dev'
 import * as pkgx_sh_pkgm from './pkgx.sh-pkgm'
-import * as pkgx_sh from './pkgx.sh'
 import * as pkl_lang_org from './pkl-lang.org'
 import * as planetscale_com from './planetscale.com'
 import * as plantuml_com from './plantuml.com'
@@ -627,8 +627,8 @@ import * as printfn_github_io from './printfn.github.io'
 import * as priver_dev from './priver.dev'
 import * as proj_org from './proj.org'
 import * as project_copacetic_github_io from './project-copacetic.github.io'
-import * as projectdiscovery_io_nuclei from './projectdiscovery.io-nuclei'
 import * as projectdiscovery_io from './projectdiscovery.io'
+import * as projectdiscovery_io_nuclei from './projectdiscovery.io-nuclei'
 import * as projen_io from './projen.io'
 import * as protobuf_dev from './protobuf.dev'
 import * as prql_lang_org from './prql-lang.org'
@@ -685,8 +685,8 @@ import * as rubygems_org from './rubygems.org'
 import * as rucio_cern_ch from './rucio.cern.ch'
 import * as runatlantis_io from './runatlantis.io'
 import * as rust_lang_github_io from './rust-lang.github.io'
-import * as rust_lang_org_rust_bindgen from './rust-lang.org-rust-bindgen'
 import * as rust_lang_org from './rust-lang.org'
+import * as rust_lang_org_rust_bindgen from './rust-lang.org-rust-bindgen'
 import * as rust_script_org from './rust-script.org'
 import * as rye_astral_sh from './rye.astral.sh'
 import * as s3tools_org from './s3tools.org'
@@ -811,8 +811,8 @@ import * as velero_io from './velero.io'
 import * as veracode_com from './veracode.com'
 import * as vercel_com from './vercel.com'
 import * as versity_com from './versity.com'
-import * as viaduct_ai_ksops from './viaduct.ai-ksops'
 import * as viaduct_ai from './viaduct.ai'
+import * as viaduct_ai_ksops from './viaduct.ai-ksops'
 import * as videolan_org from './videolan.org'
 import * as vim_org from './vim.org'
 import * as virtualenv_pypa_io from './virtualenv.pypa.io'
@@ -838,8 +838,8 @@ import * as wkentaro_github_io from './wkentaro.github.io'
 import * as wpewebkit_org from './wpewebkit.org'
 import * as wundergraph_com from './wundergraph.com'
 import * as wxwidgets_org from './wxwidgets.org'
-import * as x_org_xscrnsaver from './x.org-xscrnsaver'
 import * as x_org from './x.org'
+import * as x_org_xscrnsaver from './x.org-xscrnsaver'
 import * as xcfile_dev from './xcfile.dev'
 import * as xerces_apache_org from './xerces.apache.org'
 import * as xiph_org from './xiph.org'
@@ -882,8 +882,8 @@ export interface Pantry {
   apktoolorg: apktool_org.ApktoolorgPackage
   apollographqlcom: apollographql_com.ApollographqlcomPackage
   appiumio: appium_io.AppiumioPackage
-  applecomremote_cmds: apple_com_remote_cmds.Applecomremote_cmdsPackage
   applecom: apple_com.ApplecomPackage
+  applecomremote_cmds: apple_com_remote_cmds.Applecomremote_cmdsPackage
   apptainerorg: apptainer_org.ApptainerorgPackage
   aquasecuritygithubio: aquasecurity_github_io.AquasecuritygithubioPackage
   arduinogithubio: arduino_github_io.ArduinogithubioPackage
@@ -896,18 +896,18 @@ export interface Pantry {
   aspellnet: aspell_net.AspellnetPackage
   assimporg: assimp_org.AssimporgPackage
   astgrepgithubio: ast_grep_github_io.AstgrepgithubioPackage
+  astralsh: astral_sh.AstralshPackage
   astralshruff: astral_sh_ruff.AstralshruffPackage
   astralshty: astral_sh_ty.AstralshtyPackage
   astralshuv: astral_sh_uv.AstralshuvPackage
-  astralsh: astral_sh.AstralshPackage
   atlasgoio: atlasgo_io.AtlasgoioPackage
   attrsorg: attrs_org.AttrsorgPackage
   augeasnet: augeas_net.AugeasnetPackage
   authzedcom: authzed_com.AuthzedcomPackage
   aux4io: aux4_io.Aux4ioPackage
+  awsamazoncom: aws_amazon_com.AwsamazoncomPackage
   awsamazoncomcli: aws_amazon_com_cli.AwsamazoncomcliPackage
   awsamazoncomsam: aws_amazon_com_sam.AwsamazoncomsamPackage
-  awsamazoncom: aws_amazon_com.AwsamazoncomPackage
   bashlydannybco: bashly_dannyb_co.BashlydannybcoPackage
   bcryptsourceforgenet: bcrypt_sourceforge_net.BcryptsourceforgenetPackage
   beyondgrepcom: beyondgrep_com.BeyondgrepcomPackage
@@ -936,10 +936,10 @@ export interface Pantry {
   caskreadthedocsio: cask_readthedocs_io.CaskreadthedocsioPackage
   catborg: catb_org.CatborgPackage
   ccachedev: ccache_dev.CcachedevPackage
-  cedarpolicycomcli: cedarpolicy_com_cli.CedarpolicycomcliPackage
   cedarpolicycom: cedarpolicy_com.CedarpolicycomPackage
-  cephcomcephadm: ceph_com_cephadm.CephcomcephadmPackage
+  cedarpolicycomcli: cedarpolicy_com_cli.CedarpolicycomcliPackage
   cephcom: ceph_com.CephcomPackage
+  cephcomcephadm: ceph_com_cephadm.CephcomcephadmPackage
   ceressolverorg: ceres_solver_org.CeressolverorgPackage
   certbotefforg: certbot_eff_org.CertbotefforgPackage
   certifiio: certifi_io.CertifiioPackage
@@ -963,8 +963,8 @@ export interface Pantry {
   cmakeorg: cmake_org.CmakeorgPackage
   cmockaorg: cmocka_org.CmockaorgPackage
   cnqueryio: cnquery_io.CnqueryioPackage
-  cocoapodsorgxcodeproj: cocoapods_org_xcodeproj.CocoapodsorgxcodeprojPackage
   cocoapodsorg: cocoapods_org.CocoapodsorgPackage
+  cocoapodsorgxcodeproj: cocoapods_org_xcodeproj.CocoapodsorgxcodeprojPackage
   cocogittoio: cocogitto_io.CocogittoioPackage
   codevideolanorg: code_videolan_org.CodevideolanorgPackage
   codercom: coder_com.CodercomPackage
@@ -977,6 +977,7 @@ export interface Pantry {
   corednsio: coredns_io.CorednsioPackage
   cpanminus: cpanmin_us.CpanminusPackage
   crypto: cr_yp_to.CryptoPackage
+  cratesio: crates_io.CratesioPackage
   cratesioaichat: crates_io_aichat.CratesioaichatPackage
   cratesiobakers: crates_io_bake_rs.CratesiobakersPackage
   cratesiocargotarpaulin: crates_io_cargo_tarpaulin.CratesiocargotarpaulinPackage
@@ -988,7 +989,6 @@ export interface Pantry {
   cratesioripgrepall: crates_io_ripgrep_all.CratesioripgrepallPackage
   cratesiorucolanotes: crates_io_rucola_notes.CratesiorucolanotesPackage
   cratesiosamply: crates_io_samply.CratesiosamplyPackage
-  cratesio: crates_io.CratesioPackage
   crazymaxdev: crazymax_dev.CrazymaxdevPackage
   creativeprojectsgithubio: creativeprojects_github_io.CreativeprojectsgithubioPackage
   cruftgithubio: cruft_github_io.CruftgithubioPackage
@@ -1017,8 +1017,8 @@ export interface Pantry {
   depotdev: depot_dev.DepotdevPackage
   destunreachorg: dest_unreach_org.DestunreachorgPackage
   devyorhelnl: dev_yorhel_nl.DevyorhelnlPackage
-  developer1passwordcom1passwordcli: developer_1password_com_1password_cli.Developer1passwordcom1passwordcliPackage
   developer1passwordcom: developer_1password_com.Developer1passwordcomPackage
+  developer1passwordcom1passwordcli: developer_1password_com_1password_cli.Developer1passwordcom1passwordcliPackage
   developersyubicocom: developers_yubico_com.DevelopersyubicocomPackage
   devpodsh: devpod_sh.DevpodshPackage
   dgraphio: dgraph_io.DgraphioPackage
@@ -1043,8 +1043,8 @@ export interface Pantry {
   drifreedesktoporg: dri_freedesktop_org.DrifreedesktoporgPackage
   duckdborg: duckdb_org.DuckdborgPackage
   duktapeorg: duktape_org.DuktapeorgPackage
-  dystroyorgbacon: dystroy_org_bacon.DystroyorgbaconPackage
   dystroyorg: dystroy_org.DystroyorgPackage
+  dystroyorgbacon: dystroy_org_bacon.DystroyorgbaconPackage
   earthlydev: earthly_dev.EarthlydevPackage
   ebassigithubio: ebassi_github_io.EbassigithubioPackage
   edgedbcom: edgedb_com.EdgedbcomPackage
@@ -1115,14 +1115,12 @@ export interface Pantry {
   gittowncom: git_town_com.GittowncomPackage
   gitosgeoorg: git_osgeo_org.GitosgeoorgPackage
   gittoztnet: git_tozt_net.GittoztnetPackage
+  githubcom: github_com.GithubcomPackage
   githubcom0agecreate2crunch: github_com_0age_create2crunch.Githubcom0agecreate2crunchPackage
-  githubcomcyfrinsafetxhashesutil: github_com_Cyfrin_safe_tx_hashes_util.GithubcomcyfrinsafetxhashesutilPackage
-  githubcomdiniboy1123usque: github_com_Diniboy1123_usque.Githubcomdiniboy1123usquePackage
-  githubcommilescranmerrip2: github_com_MilesCranmer_rip2.Githubcommilescranmerrip2Package
-  githubcomminseokohtomlcli: github_com_MinseokOh_toml_cli.GithubcomminseokohtomlcliPackage
-  githubcomparchivepar2cmdline: github_com_Parchive_par2cmdline.Githubcomparchivepar2cmdlinePackage
   githubcomblacktoplporg: github_com_blacktop_lporg.GithubcomblacktoplporgPackage
   githubcomblynnnex: github_com_blynn_nex.GithubcomblynnnexPackage
+  githubcomcyfrinsafetxhashesutil: github_com_Cyfrin_safe_tx_hashes_util.GithubcomcyfrinsafetxhashesutilPackage
+  githubcomdiniboy1123usque: github_com_Diniboy1123_usque.Githubcomdiniboy1123usquePackage
   githubcomfastfetchclifastfetch: github_com_fastfetch_cli_fastfetch.GithubcomfastfetchclifastfetchPackage
   githubcomfiatjafnak: github_com_fiatjaf_nak.GithubcomfiatjafnakPackage
   githubcomgitecosystemgitcredentialmanager: github_com_git_ecosystem_git_credential_manager.GithubcomgitecosystemgitcredentialmanagerPackage
@@ -1132,14 +1130,16 @@ export interface Pantry {
   githubcomkoekeishiyaskhd: github_com_koekeishiya_skhd.GithubcomkoekeishiyaskhdPackage
   githubcomlucianosrpryeuv: github_com_lucianosrp_rye_uv.GithubcomlucianosrpryeuvPackage
   githubcommasclimas: github_com_mas_cli_mas.GithubcommasclimasPackage
+  githubcommilescranmerrip2: github_com_MilesCranmer_rip2.Githubcommilescranmerrip2Package
+  githubcomminseokohtomlcli: github_com_MinseokOh_toml_cli.GithubcomminseokohtomlcliPackage
   githubcommycreepypakku: github_com_mycreepy_pakku.GithubcommycreepypakkuPackage
+  githubcomparchivepar2cmdline: github_com_Parchive_par2cmdline.Githubcomparchivepar2cmdlinePackage
   githubcompeaks5cmd: github_com_peak_s5cmd.Githubcompeaks5cmdPackage
   githubcomperipheryappperiphery: github_com_peripheryapp_periphery.GithubcomperipheryappperipheryPackage
   githubcomshakaprojectshakapackager: github_com_shaka_project_shaka_packager.GithubcomshakaprojectshakapackagerPackage
   githubcomsorahenvchain: github_com_sorah_envchain.GithubcomsorahenvchainPackage
   githubcomspencerkimballstargazers: github_com_spencerkimball_stargazers.GithubcomspencerkimballstargazersPackage
   githubcomwitheredmagicstarpls: github_com_withered_magic_starpls.GithubcomwitheredmagicstarplsPackage
-  githubcom: github_com.GithubcomPackage
   gitlabcom: gitlab_com.GitlabcomPackage
   gitleaksio: gitleaks_io.GitleaksioPackage
   glarosdtcumnedu: glaros_dtc_umn_edu.GlarosdtcumneduPackage
@@ -1208,13 +1208,13 @@ export interface Pantry {
   infoziporg: info_zip_org.InfoziporgPackage
   infracostio: infracost_io.InfracostioPackage
   intelcom: intel_com.IntelcomPackage
-  invisibleislandnetlynx: invisible_island_net_lynx.InvisibleislandnetlynxPackage
   invisibleislandnet: invisible_island_net.InvisibleislandnetPackage
+  invisibleislandnetlynx: invisible_island_net_lynx.InvisibleislandnetlynxPackage
   ipfstech: ipfs_tech.IpfstechPackage
   ipythonorg: ipython_org.IpythonorgPackage
   irohcomputer: iroh_computer.IrohcomputerPackage
-  iscorgbind9: isc_org_bind9.Iscorgbind9Package
   iscorg: isc_org.IscorgPackage
+  iscorgbind9: isc_org_bind9.Iscorgbind9Package
   istioio: istio_io.IstioioPackage
   itstoolorg: itstool_org.ItstoolorgPackage
   ivarchcom: ivarch_com.IvarchcomPackage
@@ -1245,8 +1245,8 @@ export interface Pantry {
   kagglecom: kaggle_com.KagglecomPackage
   keephqdev: keephq_dev.KeephqdevPackage
   kerberosorg: kerberos_org.KerberosorgPackage
-  kernelorglibcap: kernel_org_libcap.KernelorglibcapPackage
   kernelorg: kernel_org.KernelorgPackage
+  kernelorglibcap: kernel_org_libcap.KernelorglibcapPackage
   khanacademyorg: khanacademy_org.KhanacademyorgPackage
   khronosorg: khronos_org.KhronosorgPackage
   kindsigsk8sio: kind_sigs_k8s_io.Kindsigsk8sioPackage
@@ -1296,8 +1296,8 @@ export interface Pantry {
   libsodiumorg: libsodium_org.LibsodiumorgPackage
   libsouporg: libsoup_org.LibsouporgPackage
   libspngorg: libspng_org.LibspngorgPackage
-  libsshorg: libssh_org.LibsshorgPackage
   libssh2org: libssh2_org.Libssh2orgPackage
+  libsshorg: libssh_org.LibsshorgPackage
   libtomnet: libtom_net.LibtomnetPackage
   liburcuorg: liburcu_org.LiburcuorgPackage
   libusbinfo: libusb_info.LibusbinfoPackage
@@ -1346,9 +1346,9 @@ export interface Pantry {
   microeditorgithubio: micro_editor_github_io.MicroeditorgithubioPackage
   microbreworg: microbrew_org.MicrobreworgPackage
   microcksio: microcks_io.MicrocksioPackage
+  microsoftcom: microsoft_com.MicrosoftcomPackage
   microsoftcomcodecli: microsoft_com_code_cli.MicrosoftcomcodecliPackage
   microsoftcommarkitdown: microsoft_com_markitdown.MicrosoftcommarkitdownPackage
-  microsoftcom: microsoft_com.MicrosoftcomPackage
   midnightcommanderorg: midnight_commander_org.MidnightcommanderorgPackage
   minio: min_io.MinioPackage
   misejdxdev: mise_jdx_dev.MisejdxdevPackage
@@ -1356,13 +1356,13 @@ export interface Pantry {
   mkcertdev: mkcert_dev.MkcertdevPackage
   mkdocsorg: mkdocs_org.MkdocsorgPackage
   modalcom: modal_com.ModalcomPackage
-  moderncorggoyacc: modernc_org_goyacc.ModerncorggoyaccPackage
   moderncorg: modernc_org.ModerncorgPackage
+  moderncorggoyacc: modernc_org_goyacc.ModerncorggoyaccPackage
   mongodbcom: mongodb_com.MongodbcomPackage
   moonrepodev: moonrepo_dev.MoonrepodevPackage
   moshorg: mosh_org.MoshorgPackage
-  mozillaorgcbindgen: mozilla_org_cbindgen.MozillaorgcbindgenPackage
   mozillaorg: mozilla_org.MozillaorgPackage
+  mozillaorgcbindgen: mozilla_org_cbindgen.MozillaorgcbindgenPackage
   mpg123de: mpg123_de.Mpg123dePackage
   mpmathorg: mpmath_org.MpmathorgPackage
   mpvio: mpv_io.MpvioPackage
@@ -1372,8 +1372,8 @@ export interface Pantry {
   mupdfcom: mupdf_com.MupdfcomPackage
   musepacknet: musepack_net.MusepacknetPackage
   musllibcorg: musl_libc_org.MusllibcorgPackage
-  mvdanccgofumpt: mvdan_cc_gofumpt.MvdanccgofumptPackage
   mvdancc: mvdan_cc.MvdanccPackage
+  mvdanccgofumpt: mvdan_cc_gofumpt.MvdanccgofumptPackage
   mypylangorg: mypy_lang_org.MypylangorgPackage
   mysqlcom: mysql_com.MysqlcomPackage
   nanoeditororg: nano_editor_org.NanoeditororgPackage
@@ -1403,8 +1403,8 @@ export interface Pantry {
   nushellsh: nushell_sh.NushellshPackage
   nxdev: nx_dev.NxdevPackage
   oauth2proxygithubio: oauth2_proxy_github_io.Oauth2proxygithubioPackage
-  oberhumercomucl: oberhumer_com_ucl.OberhumercomuclPackage
   oberhumercom: oberhumer_com.OberhumercomPackage
+  oberhumercomucl: oberhumer_com_ucl.OberhumercomuclPackage
   odigosio: odigos_io.OdigosioPackage
   ohmyposhdev: ohmyposh_dev.OhmyposhdevPackage
   ollamaai: ollama_ai.OllamaaiPackage
@@ -1422,8 +1422,8 @@ export interface Pantry {
   openinterpretercom: openinterpreter_com.OpeninterpretercomPackage
   openjdkorg: openjdk_org.OpenjdkorgPackage
   openjpegorg: openjpeg_org.OpenjpegorgPackage
-  openldaporgliblmdb: openldap_org_liblmdb.OpenldaporgliblmdbPackage
   openldaporg: openldap_org.OpenldaporgPackage
+  openldaporgliblmdb: openldap_org_liblmdb.OpenldaporgliblmdbPackage
   openmpllvmorg: openmp_llvm_org.OpenmpllvmorgPackage
   openpmixgithubio: openpmix_github_io.OpenpmixgithubioPackage
   openpolicyagentorg: openpolicyagent_org.OpenpolicyagentorgPackage
@@ -1463,9 +1463,9 @@ export interface Pantry {
   pippypaio: pip_pypa_io.PippypaioPackage
   pipenvpypaio: pipenv_pypa_io.PipenvpypaioPackage
   pixmanorg: pixman_org.PixmanorgPackage
+  pkgxsh: pkgx_sh.PkgxshPackage
   pkgxshdev: pkgx_sh_dev.PkgxshdevPackage
   pkgxshpkgm: pkgx_sh_pkgm.PkgxshpkgmPackage
-  pkgxsh: pkgx_sh.PkgxshPackage
   pkllangorg: pkl_lang_org.PkllangorgPackage
   planetscalecom: planetscale_com.PlanetscalecomPackage
   plantumlcom: plantuml_com.PlantumlcomPackage
@@ -1491,8 +1491,8 @@ export interface Pantry {
   priverdev: priver_dev.PriverdevPackage
   projorg: proj_org.ProjorgPackage
   projectcopaceticgithubio: project_copacetic_github_io.ProjectcopaceticgithubioPackage
-  projectdiscoveryionuclei: projectdiscovery_io_nuclei.ProjectdiscoveryionucleiPackage
   projectdiscoveryio: projectdiscovery_io.ProjectdiscoveryioPackage
+  projectdiscoveryionuclei: projectdiscovery_io_nuclei.ProjectdiscoveryionucleiPackage
   projenio: projen_io.ProjenioPackage
   protobufdev: protobuf_dev.ProtobufdevPackage
   prqllangorg: prql_lang_org.PrqllangorgPackage
@@ -1549,8 +1549,8 @@ export interface Pantry {
   ruciocernch: rucio_cern_ch.RuciocernchPackage
   runatlantisio: runatlantis_io.RunatlantisioPackage
   rustlanggithubio: rust_lang_github_io.RustlanggithubioPackage
-  rustlangorgrustbindgen: rust_lang_org_rust_bindgen.RustlangorgrustbindgenPackage
   rustlangorg: rust_lang_org.RustlangorgPackage
+  rustlangorgrustbindgen: rust_lang_org_rust_bindgen.RustlangorgrustbindgenPackage
   rustscriptorg: rust_script_org.RustscriptorgPackage
   ryeastralsh: rye_astral_sh.RyeastralshPackage
   s3toolsorg: s3tools_org.S3toolsorgPackage
@@ -1675,8 +1675,8 @@ export interface Pantry {
   veracodecom: veracode_com.VeracodecomPackage
   vercelcom: vercel_com.VercelcomPackage
   versitycom: versity_com.VersitycomPackage
-  viaductaiksops: viaduct_ai_ksops.ViaductaiksopsPackage
   viaductai: viaduct_ai.ViaductaiPackage
+  viaductaiksops: viaduct_ai_ksops.ViaductaiksopsPackage
   videolanorg: videolan_org.VideolanorgPackage
   vimorg: vim_org.VimorgPackage
   virtualenvpypaio: virtualenv_pypa_io.VirtualenvpypaioPackage
@@ -1702,8 +1702,8 @@ export interface Pantry {
   wpewebkitorg: wpewebkit_org.WpewebkitorgPackage
   wundergraphcom: wundergraph_com.WundergraphcomPackage
   wxwidgetsorg: wxwidgets_org.WxwidgetsorgPackage
-  xorgxscrnsaver: x_org_xscrnsaver.XorgxscrnsaverPackage
   xorg: x_org.XorgPackage
+  xorgxscrnsaver: x_org_xscrnsaver.XorgxscrnsaverPackage
   xcfiledev: xcfile_dev.XcfiledevPackage
   xercesapacheorg: xerces_apache_org.XercesapacheorgPackage
   xiphorg: xiph_org.XiphorgPackage
@@ -1728,7 +1728,7 @@ export interface Pantry {
 
 export type Packages = Pantry
 
-export const pantry = {
+export const pantry: Pantry = {
   abseilio: abseil_io.abseilioPackage,
   acornio: acorn_io.acornioPackage,
   agptco: agpt_co.agptcoPackage,
@@ -1749,8 +1749,8 @@ export const pantry = {
   apktoolorg: apktool_org.apktoolorgPackage,
   apollographqlcom: apollographql_com.apollographqlcomPackage,
   appiumio: appium_io.appiumioPackage,
-  applecomremote_cmds: apple_com_remote_cmds.applecomremote_cmdsPackage,
   applecom: apple_com.applecomPackage,
+  applecomremote_cmds: apple_com_remote_cmds.applecomremote_cmdsPackage,
   apptainerorg: apptainer_org.apptainerorgPackage,
   aquasecuritygithubio: aquasecurity_github_io.aquasecuritygithubioPackage,
   arduinogithubio: arduino_github_io.arduinogithubioPackage,
@@ -1763,18 +1763,18 @@ export const pantry = {
   aspellnet: aspell_net.aspellnetPackage,
   assimporg: assimp_org.assimporgPackage,
   astgrepgithubio: ast_grep_github_io.astgrepgithubioPackage,
+  astralsh: astral_sh.astralshPackage,
   astralshruff: astral_sh_ruff.astralshruffPackage,
   astralshty: astral_sh_ty.astralshtyPackage,
   astralshuv: astral_sh_uv.astralshuvPackage,
-  astralsh: astral_sh.astralshPackage,
   atlasgoio: atlasgo_io.atlasgoioPackage,
   attrsorg: attrs_org.attrsorgPackage,
   augeasnet: augeas_net.augeasnetPackage,
   authzedcom: authzed_com.authzedcomPackage,
   aux4io: aux4_io.aux4ioPackage,
+  awsamazoncom: aws_amazon_com.awsamazoncomPackage,
   awsamazoncomcli: aws_amazon_com_cli.awsamazoncomcliPackage,
   awsamazoncomsam: aws_amazon_com_sam.awsamazoncomsamPackage,
-  awsamazoncom: aws_amazon_com.awsamazoncomPackage,
   bashlydannybco: bashly_dannyb_co.bashlydannybcoPackage,
   bcryptsourceforgenet: bcrypt_sourceforge_net.bcryptsourceforgenetPackage,
   beyondgrepcom: beyondgrep_com.beyondgrepcomPackage,
@@ -1803,10 +1803,10 @@ export const pantry = {
   caskreadthedocsio: cask_readthedocs_io.caskreadthedocsioPackage,
   catborg: catb_org.catborgPackage,
   ccachedev: ccache_dev.ccachedevPackage,
-  cedarpolicycomcli: cedarpolicy_com_cli.cedarpolicycomcliPackage,
   cedarpolicycom: cedarpolicy_com.cedarpolicycomPackage,
-  cephcomcephadm: ceph_com_cephadm.cephcomcephadmPackage,
+  cedarpolicycomcli: cedarpolicy_com_cli.cedarpolicycomcliPackage,
   cephcom: ceph_com.cephcomPackage,
+  cephcomcephadm: ceph_com_cephadm.cephcomcephadmPackage,
   ceressolverorg: ceres_solver_org.ceressolverorgPackage,
   certbotefforg: certbot_eff_org.certbotefforgPackage,
   certifiio: certifi_io.certifiioPackage,
@@ -1830,8 +1830,8 @@ export const pantry = {
   cmakeorg: cmake_org.cmakeorgPackage,
   cmockaorg: cmocka_org.cmockaorgPackage,
   cnqueryio: cnquery_io.cnqueryioPackage,
-  cocoapodsorgxcodeproj: cocoapods_org_xcodeproj.cocoapodsorgxcodeprojPackage,
   cocoapodsorg: cocoapods_org.cocoapodsorgPackage,
+  cocoapodsorgxcodeproj: cocoapods_org_xcodeproj.cocoapodsorgxcodeprojPackage,
   cocogittoio: cocogitto_io.cocogittoioPackage,
   codevideolanorg: code_videolan_org.codevideolanorgPackage,
   codercom: coder_com.codercomPackage,
@@ -1844,6 +1844,7 @@ export const pantry = {
   corednsio: coredns_io.corednsioPackage,
   cpanminus: cpanmin_us.cpanminusPackage,
   crypto: cr_yp_to.cryptoPackage,
+  cratesio: crates_io.cratesioPackage,
   cratesioaichat: crates_io_aichat.cratesioaichatPackage,
   cratesiobakers: crates_io_bake_rs.cratesiobakersPackage,
   cratesiocargotarpaulin: crates_io_cargo_tarpaulin.cratesiocargotarpaulinPackage,
@@ -1855,7 +1856,6 @@ export const pantry = {
   cratesioripgrepall: crates_io_ripgrep_all.cratesioripgrepallPackage,
   cratesiorucolanotes: crates_io_rucola_notes.cratesiorucolanotesPackage,
   cratesiosamply: crates_io_samply.cratesiosamplyPackage,
-  cratesio: crates_io.cratesioPackage,
   crazymaxdev: crazymax_dev.crazymaxdevPackage,
   creativeprojectsgithubio: creativeprojects_github_io.creativeprojectsgithubioPackage,
   cruftgithubio: cruft_github_io.cruftgithubioPackage,
@@ -1884,8 +1884,8 @@ export const pantry = {
   depotdev: depot_dev.depotdevPackage,
   destunreachorg: dest_unreach_org.destunreachorgPackage,
   devyorhelnl: dev_yorhel_nl.devyorhelnlPackage,
-  developer1passwordcom1passwordcli: developer_1password_com_1password_cli.developer1passwordcom1passwordcliPackage,
   developer1passwordcom: developer_1password_com.developer1passwordcomPackage,
+  developer1passwordcom1passwordcli: developer_1password_com_1password_cli.developer1passwordcom1passwordcliPackage,
   developersyubicocom: developers_yubico_com.developersyubicocomPackage,
   devpodsh: devpod_sh.devpodshPackage,
   dgraphio: dgraph_io.dgraphioPackage,
@@ -1910,8 +1910,8 @@ export const pantry = {
   drifreedesktoporg: dri_freedesktop_org.drifreedesktoporgPackage,
   duckdborg: duckdb_org.duckdborgPackage,
   duktapeorg: duktape_org.duktapeorgPackage,
-  dystroyorgbacon: dystroy_org_bacon.dystroyorgbaconPackage,
   dystroyorg: dystroy_org.dystroyorgPackage,
+  dystroyorgbacon: dystroy_org_bacon.dystroyorgbaconPackage,
   earthlydev: earthly_dev.earthlydevPackage,
   ebassigithubio: ebassi_github_io.ebassigithubioPackage,
   edgedbcom: edgedb_com.edgedbcomPackage,
@@ -1982,14 +1982,12 @@ export const pantry = {
   gittowncom: git_town_com.gittowncomPackage,
   gitosgeoorg: git_osgeo_org.gitosgeoorgPackage,
   gittoztnet: git_tozt_net.gittoztnetPackage,
+  githubcom: github_com.githubcomPackage,
   githubcom0agecreate2crunch: github_com_0age_create2crunch.githubcom0agecreate2crunchPackage,
-  githubcomcyfrinsafetxhashesutil: github_com_Cyfrin_safe_tx_hashes_util.githubcomcyfrinsafetxhashesutilPackage,
-  githubcomdiniboy1123usque: github_com_Diniboy1123_usque.githubcomdiniboy1123usquePackage,
-  githubcommilescranmerrip2: github_com_MilesCranmer_rip2.githubcommilescranmerrip2Package,
-  githubcomminseokohtomlcli: github_com_MinseokOh_toml_cli.githubcomminseokohtomlcliPackage,
-  githubcomparchivepar2cmdline: github_com_Parchive_par2cmdline.githubcomparchivepar2cmdlinePackage,
   githubcomblacktoplporg: github_com_blacktop_lporg.githubcomblacktoplporgPackage,
   githubcomblynnnex: github_com_blynn_nex.githubcomblynnnexPackage,
+  githubcomcyfrinsafetxhashesutil: github_com_Cyfrin_safe_tx_hashes_util.githubcomcyfrinsafetxhashesutilPackage,
+  githubcomdiniboy1123usque: github_com_Diniboy1123_usque.githubcomdiniboy1123usquePackage,
   githubcomfastfetchclifastfetch: github_com_fastfetch_cli_fastfetch.githubcomfastfetchclifastfetchPackage,
   githubcomfiatjafnak: github_com_fiatjaf_nak.githubcomfiatjafnakPackage,
   githubcomgitecosystemgitcredentialmanager: github_com_git_ecosystem_git_credential_manager.githubcomgitecosystemgitcredentialmanagerPackage,
@@ -1999,14 +1997,16 @@ export const pantry = {
   githubcomkoekeishiyaskhd: github_com_koekeishiya_skhd.githubcomkoekeishiyaskhdPackage,
   githubcomlucianosrpryeuv: github_com_lucianosrp_rye_uv.githubcomlucianosrpryeuvPackage,
   githubcommasclimas: github_com_mas_cli_mas.githubcommasclimasPackage,
+  githubcommilescranmerrip2: github_com_MilesCranmer_rip2.githubcommilescranmerrip2Package,
+  githubcomminseokohtomlcli: github_com_MinseokOh_toml_cli.githubcomminseokohtomlcliPackage,
   githubcommycreepypakku: github_com_mycreepy_pakku.githubcommycreepypakkuPackage,
+  githubcomparchivepar2cmdline: github_com_Parchive_par2cmdline.githubcomparchivepar2cmdlinePackage,
   githubcompeaks5cmd: github_com_peak_s5cmd.githubcompeaks5cmdPackage,
   githubcomperipheryappperiphery: github_com_peripheryapp_periphery.githubcomperipheryappperipheryPackage,
   githubcomshakaprojectshakapackager: github_com_shaka_project_shaka_packager.githubcomshakaprojectshakapackagerPackage,
   githubcomsorahenvchain: github_com_sorah_envchain.githubcomsorahenvchainPackage,
   githubcomspencerkimballstargazers: github_com_spencerkimball_stargazers.githubcomspencerkimballstargazersPackage,
   githubcomwitheredmagicstarpls: github_com_withered_magic_starpls.githubcomwitheredmagicstarplsPackage,
-  githubcom: github_com.githubcomPackage,
   gitlabcom: gitlab_com.gitlabcomPackage,
   gitleaksio: gitleaks_io.gitleaksioPackage,
   glarosdtcumnedu: glaros_dtc_umn_edu.glarosdtcumneduPackage,
@@ -2075,13 +2075,13 @@ export const pantry = {
   infoziporg: info_zip_org.infoziporgPackage,
   infracostio: infracost_io.infracostioPackage,
   intelcom: intel_com.intelcomPackage,
-  invisibleislandnetlynx: invisible_island_net_lynx.invisibleislandnetlynxPackage,
   invisibleislandnet: invisible_island_net.invisibleislandnetPackage,
+  invisibleislandnetlynx: invisible_island_net_lynx.invisibleislandnetlynxPackage,
   ipfstech: ipfs_tech.ipfstechPackage,
   ipythonorg: ipython_org.ipythonorgPackage,
   irohcomputer: iroh_computer.irohcomputerPackage,
-  iscorgbind9: isc_org_bind9.iscorgbind9Package,
   iscorg: isc_org.iscorgPackage,
+  iscorgbind9: isc_org_bind9.iscorgbind9Package,
   istioio: istio_io.istioioPackage,
   itstoolorg: itstool_org.itstoolorgPackage,
   ivarchcom: ivarch_com.ivarchcomPackage,
@@ -2112,8 +2112,8 @@ export const pantry = {
   kagglecom: kaggle_com.kagglecomPackage,
   keephqdev: keephq_dev.keephqdevPackage,
   kerberosorg: kerberos_org.kerberosorgPackage,
-  kernelorglibcap: kernel_org_libcap.kernelorglibcapPackage,
   kernelorg: kernel_org.kernelorgPackage,
+  kernelorglibcap: kernel_org_libcap.kernelorglibcapPackage,
   khanacademyorg: khanacademy_org.khanacademyorgPackage,
   khronosorg: khronos_org.khronosorgPackage,
   kindsigsk8sio: kind_sigs_k8s_io.kindsigsk8sioPackage,
@@ -2163,8 +2163,8 @@ export const pantry = {
   libsodiumorg: libsodium_org.libsodiumorgPackage,
   libsouporg: libsoup_org.libsouporgPackage,
   libspngorg: libspng_org.libspngorgPackage,
-  libsshorg: libssh_org.libsshorgPackage,
   libssh2org: libssh2_org.libssh2orgPackage,
+  libsshorg: libssh_org.libsshorgPackage,
   libtomnet: libtom_net.libtomnetPackage,
   liburcuorg: liburcu_org.liburcuorgPackage,
   libusbinfo: libusb_info.libusbinfoPackage,
@@ -2213,9 +2213,9 @@ export const pantry = {
   microeditorgithubio: micro_editor_github_io.microeditorgithubioPackage,
   microbreworg: microbrew_org.microbreworgPackage,
   microcksio: microcks_io.microcksioPackage,
+  microsoftcom: microsoft_com.microsoftcomPackage,
   microsoftcomcodecli: microsoft_com_code_cli.microsoftcomcodecliPackage,
   microsoftcommarkitdown: microsoft_com_markitdown.microsoftcommarkitdownPackage,
-  microsoftcom: microsoft_com.microsoftcomPackage,
   midnightcommanderorg: midnight_commander_org.midnightcommanderorgPackage,
   minio: min_io.minioPackage,
   misejdxdev: mise_jdx_dev.misejdxdevPackage,
@@ -2223,13 +2223,13 @@ export const pantry = {
   mkcertdev: mkcert_dev.mkcertdevPackage,
   mkdocsorg: mkdocs_org.mkdocsorgPackage,
   modalcom: modal_com.modalcomPackage,
-  moderncorggoyacc: modernc_org_goyacc.moderncorggoyaccPackage,
   moderncorg: modernc_org.moderncorgPackage,
+  moderncorggoyacc: modernc_org_goyacc.moderncorggoyaccPackage,
   mongodbcom: mongodb_com.mongodbcomPackage,
   moonrepodev: moonrepo_dev.moonrepodevPackage,
   moshorg: mosh_org.moshorgPackage,
-  mozillaorgcbindgen: mozilla_org_cbindgen.mozillaorgcbindgenPackage,
   mozillaorg: mozilla_org.mozillaorgPackage,
+  mozillaorgcbindgen: mozilla_org_cbindgen.mozillaorgcbindgenPackage,
   mpg123de: mpg123_de.mpg123dePackage,
   mpmathorg: mpmath_org.mpmathorgPackage,
   mpvio: mpv_io.mpvioPackage,
@@ -2239,8 +2239,8 @@ export const pantry = {
   mupdfcom: mupdf_com.mupdfcomPackage,
   musepacknet: musepack_net.musepacknetPackage,
   musllibcorg: musl_libc_org.musllibcorgPackage,
-  mvdanccgofumpt: mvdan_cc_gofumpt.mvdanccgofumptPackage,
   mvdancc: mvdan_cc.mvdanccPackage,
+  mvdanccgofumpt: mvdan_cc_gofumpt.mvdanccgofumptPackage,
   mypylangorg: mypy_lang_org.mypylangorgPackage,
   mysqlcom: mysql_com.mysqlcomPackage,
   nanoeditororg: nano_editor_org.nanoeditororgPackage,
@@ -2270,8 +2270,8 @@ export const pantry = {
   nushellsh: nushell_sh.nushellshPackage,
   nxdev: nx_dev.nxdevPackage,
   oauth2proxygithubio: oauth2_proxy_github_io.oauth2proxygithubioPackage,
-  oberhumercomucl: oberhumer_com_ucl.oberhumercomuclPackage,
   oberhumercom: oberhumer_com.oberhumercomPackage,
+  oberhumercomucl: oberhumer_com_ucl.oberhumercomuclPackage,
   odigosio: odigos_io.odigosioPackage,
   ohmyposhdev: ohmyposh_dev.ohmyposhdevPackage,
   ollamaai: ollama_ai.ollamaaiPackage,
@@ -2289,8 +2289,8 @@ export const pantry = {
   openinterpretercom: openinterpreter_com.openinterpretercomPackage,
   openjdkorg: openjdk_org.openjdkorgPackage,
   openjpegorg: openjpeg_org.openjpegorgPackage,
-  openldaporgliblmdb: openldap_org_liblmdb.openldaporgliblmdbPackage,
   openldaporg: openldap_org.openldaporgPackage,
+  openldaporgliblmdb: openldap_org_liblmdb.openldaporgliblmdbPackage,
   openmpllvmorg: openmp_llvm_org.openmpllvmorgPackage,
   openpmixgithubio: openpmix_github_io.openpmixgithubioPackage,
   openpolicyagentorg: openpolicyagent_org.openpolicyagentorgPackage,
@@ -2330,9 +2330,9 @@ export const pantry = {
   pippypaio: pip_pypa_io.pippypaioPackage,
   pipenvpypaio: pipenv_pypa_io.pipenvpypaioPackage,
   pixmanorg: pixman_org.pixmanorgPackage,
+  pkgxsh: pkgx_sh.pkgxshPackage,
   pkgxshdev: pkgx_sh_dev.pkgxshdevPackage,
   pkgxshpkgm: pkgx_sh_pkgm.pkgxshpkgmPackage,
-  pkgxsh: pkgx_sh.pkgxshPackage,
   pkllangorg: pkl_lang_org.pkllangorgPackage,
   planetscalecom: planetscale_com.planetscalecomPackage,
   plantumlcom: plantuml_com.plantumlcomPackage,
@@ -2358,8 +2358,8 @@ export const pantry = {
   priverdev: priver_dev.priverdevPackage,
   projorg: proj_org.projorgPackage,
   projectcopaceticgithubio: project_copacetic_github_io.projectcopaceticgithubioPackage,
-  projectdiscoveryionuclei: projectdiscovery_io_nuclei.projectdiscoveryionucleiPackage,
   projectdiscoveryio: projectdiscovery_io.projectdiscoveryioPackage,
+  projectdiscoveryionuclei: projectdiscovery_io_nuclei.projectdiscoveryionucleiPackage,
   projenio: projen_io.projenioPackage,
   protobufdev: protobuf_dev.protobufdevPackage,
   prqllangorg: prql_lang_org.prqllangorgPackage,
@@ -2416,8 +2416,8 @@ export const pantry = {
   ruciocernch: rucio_cern_ch.ruciocernchPackage,
   runatlantisio: runatlantis_io.runatlantisioPackage,
   rustlanggithubio: rust_lang_github_io.rustlanggithubioPackage,
-  rustlangorgrustbindgen: rust_lang_org_rust_bindgen.rustlangorgrustbindgenPackage,
   rustlangorg: rust_lang_org.rustlangorgPackage,
+  rustlangorgrustbindgen: rust_lang_org_rust_bindgen.rustlangorgrustbindgenPackage,
   rustscriptorg: rust_script_org.rustscriptorgPackage,
   ryeastralsh: rye_astral_sh.ryeastralshPackage,
   s3toolsorg: s3tools_org.s3toolsorgPackage,
@@ -2542,8 +2542,8 @@ export const pantry = {
   veracodecom: veracode_com.veracodecomPackage,
   vercelcom: vercel_com.vercelcomPackage,
   versitycom: versity_com.versitycomPackage,
-  viaductaiksops: viaduct_ai_ksops.viaductaiksopsPackage,
   viaductai: viaduct_ai.viaductaiPackage,
+  viaductaiksops: viaduct_ai_ksops.viaductaiksopsPackage,
   videolanorg: videolan_org.videolanorgPackage,
   vimorg: vim_org.vimorgPackage,
   virtualenvpypaio: virtualenv_pypa_io.virtualenvpypaioPackage,
@@ -2569,8 +2569,8 @@ export const pantry = {
   wpewebkitorg: wpewebkit_org.wpewebkitorgPackage,
   wundergraphcom: wundergraph_com.wundergraphcomPackage,
   wxwidgetsorg: wxwidgets_org.wxwidgetsorgPackage,
-  xorgxscrnsaver: x_org_xscrnsaver.xorgxscrnsaverPackage,
   xorg: x_org.xorgPackage,
+  xorgxscrnsaver: x_org_xscrnsaver.xorgxscrnsaverPackage,
   xcfiledev: xcfile_dev.xcfiledevPackage,
   xercesapacheorg: xerces_apache_org.xercesapacheorgPackage,
   xiphorg: xiph_org.xiphorgPackage,

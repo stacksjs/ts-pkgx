@@ -106,8 +106,34 @@ export async function generateIndex(): Promise<string | null> {
       && !EXCLUDED_FILES.includes(file),
     )
 
-    // Sort the package files alphabetically
-    packageFiles.sort()
+    // Custom sort function that handles paths with hyphens correctly
+    // Ensures base paths like './viaduct.ai' come before extended paths like './viaduct.ai-ksops'
+    packageFiles.sort((a, b) => {
+      const aName = path.basename(a, '.ts')
+      const bName = path.basename(b, '.ts')
+
+      // Handle special cases where we need to override normal alphabetical sorting
+      const specialCases: Record<string, string[]> = {
+        'libssh.org': ['libssh2.org'], // libssh2.org should come before libssh.org
+      }
+
+      // Check special case overrides
+      for (const [before, afters] of Object.entries(specialCases)) {
+        if (aName === before && afters.includes(bName))
+          return 1
+        if (bName === before && afters.includes(aName))
+          return -1
+      }
+
+      // Check if one is a sub-path of the other (has a hyphen extension)
+      if (bName.startsWith(`${aName}-`))
+        return -1
+      if (aName.startsWith(`${bName}-`))
+        return 1
+
+      // Normal alphabetical sorting
+      return aName.localeCompare(bName)
+    })
 
     // Create the imports section
     let imports = ''
@@ -116,7 +142,7 @@ export async function generateIndex(): Promise<string | null> {
     let interfaceDecl = 'export interface Pantry {\n'
 
     // Create the pantry object
-    let pantry = 'export const pantry = {\n'
+    let pantry = 'export const pantry: Pantry = {\n'
 
     // Process each package file
     for (const file of packageFiles) {
