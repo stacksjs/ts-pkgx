@@ -1116,7 +1116,7 @@ async function acquireBrowser(timeout: number): Promise<Browser> {
       try {
         await browserPool[i].browser.contexts()
       }
-      catch (_) {
+      catch {
         // If this fails, the browser is dead and should be removed
         console.log(`Removing dead browser from pool (index: ${i})`)
         browserPool.splice(i, 1)

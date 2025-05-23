@@ -80,10 +80,8 @@ After packages are fetched, you can easily search and look them up:
 
 ```typescript
 // Using the pantry object (indexed by domain)
-import { pantry } from 'ts-pkgx/packages'
+import { getPackage, pantry } from 'ts-pkgx/packages'
 
-// Using the getPackage helper (supports domains and aliases)
-import { getPackage } from 'ts-pkgx/packages'
 const nodePackage = pantry['nodejs.org']
 const nodeByAlias = getPackage('node')
 ```
