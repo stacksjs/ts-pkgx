@@ -14,10 +14,19 @@ bun run pkgx:fetch node
 bun run pkgx:fetch --pkg node,bun,python
 
 # Fetch all packages
-bun run pkgx:fetch-all
+bun run pkgx:fetch --all
+
+# Generate package index
+bun run pkgx:generate-index
+
+# Generate TypeScript from cached JSON
+bun run pkgx:generate-ts
+
+# Generate aliases file
+bun run pkgx:generate-aliases
 
 # Generate package documentation
-bun run pkgx:docs
+bun run pkgx:generate-docs
 
 # Show version information
 bun run pkgx:version
@@ -32,7 +41,7 @@ Fetch information about a single package:
 bun run pkgx:fetch node
 
 # With custom options
-bun run pkgx:fetch nodejs.org --output ./custom-dir --timeout 60000
+bun run pkgx:fetch nodejs.org --output-dir ./custom-dir --timeout 60000
 
 # Save as JSON instead of TypeScript
 bun run pkgx:fetch bun --json
@@ -60,28 +69,64 @@ Fetch all available packages:
 
 ```bash
 # Default settings
-bun run pkgx:fetch-all
+bun run pkgx:fetch --all
 
 # With custom options
-bun run pkgx:fetch-all --output ./data/packages --timeout 180000
+bun run pkgx:fetch --all --output-dir ./data/packages --timeout 180000
 
 # Limit the number of packages (for testing)
-bun run pkgx:fetch-all --limit 50
+bun run pkgx:fetch --all --limit 50
+
+# Control concurrency
+bun run pkgx:fetch --all --concurrency 15
 ```
 
-## Fetch Modes
+## Caching Options
 
-ts-pkgx supports multiple methods for fetching package information:
+ts-pkgx provides caching capabilities to avoid unnecessary network requests:
 
 ```bash
-# Default mode (GitHub API with optimized batch processing)
-bun run pkgx:fetch-all
+# Use custom cache directory
+bun run pkgx:fetch --all --cache-dir ./my-cache
 
-# Web scraping mode
-bun run pkgx:fetch-all --mode scrape
+# Disable caching
+bun run pkgx:fetch --all --no-cache
 
-# Legacy mode (not recommended)
-bun run pkgx:fetch-all --mode basic
+# Set custom cache expiration time (in minutes)
+bun run pkgx:fetch --all --cache-expiration 60
+```
+
+## Index Generation
+
+Generate the TypeScript index file for all packages:
+
+```bash
+# Generate index with default settings
+bun run pkgx:generate-index
+
+# With custom output directory
+bun run pkgx:generate-index --output-dir ./custom/packages
+```
+
+## TypeScript Generation
+
+Convert cached JSON files to TypeScript:
+
+```bash
+# Convert cached JSON to TypeScript
+bun run pkgx:generate-ts
+
+# With custom directories
+bun run pkgx:generate-ts --cache-dir ./custom-cache --output-dir ./ts-packages
+```
+
+## Aliases Generation
+
+Generate a TypeScript file with package aliases:
+
+```bash
+# Generate aliases file
+bun run pkgx:generate-aliases
 ```
 
 ## Documentation Generation
@@ -90,10 +135,10 @@ Generate comprehensive documentation of all packages:
 
 ```bash
 # Generate package catalog with default settings
-bun run pkgx:docs
+bun run pkgx:generate-docs
 
 # Custom output path
-bun run pkgx:docs --output ./custom-docs.md
+bun run pkgx:generate-docs --output ./custom-docs.md
 ```
 
 This creates a well-organized markdown document with all packages grouped by category.
@@ -104,16 +149,16 @@ The CLI commands support various options:
 
 ```bash
 # Custom output directory
-bun run pkgx:fetch node --output ./data/packages
+bun run pkgx:fetch node --output-dir ./data/packages
 
 # Custom timeout
-bun run pkgx:fetch-all --timeout 180000
+bun run pkgx:fetch --all --timeout 180000
 
 # Debug mode
 bun run pkgx:fetch node --debug
 
-# GitHub API cache duration
-bun run pkgx:fetch-all --github-cache-duration 120
+# Enable verbose output
+bun run pkgx:fetch --all --verbose
 ```
 
 ## Shell Script Usage
@@ -126,7 +171,7 @@ chmod +x ./pkgx-tools
 
 # Use directly
 ./pkgx-tools fetch node
-./pkgx-tools fetch-all --limit 10
+./pkgx-tools fetch --all --limit 10
 ```
 
 ## Compiled Binaries
@@ -151,9 +196,9 @@ The CLI commands can be integrated into build systems:
 // package.json
 {
   "scripts": {
-    "build": "bun build && bun run pkgx:fetch-all",
-    "update-packages": "bun run pkgx:update",
-    "generate-docs": "bun run pkgx:docs"
+    "build": "bun build && bun run pkgx:fetch --all",
+    "update-packages": "bun run pkgx:fetch --all",
+    "generate-docs": "bun run pkgx:generate-docs"
   }
 }
 ```

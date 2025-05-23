@@ -3,7 +3,7 @@ import {
   convertDomainToFileName,
   convertDomainToVarName,
   guessOriginalDomain,
-} from '../src/tools/domainUtils'
+} from '../src/utils'
 
 describe('Domain Utilities', () => {
   // Test convertDomainToVarName

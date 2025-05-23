@@ -15,9 +15,11 @@ bun install ts-pkgx
 | Command | Description |
 |---------|-------------|
 | `pkgx-tools fetch` | Fetch a single package or multiple packages |
-| `pkgx-tools fetch-all` | Fetch all packages from pkgx.dev |
+| `pkgx-tools fetch --all` | Fetch all packages from pkgx.dev |
+| `pkgx-tools generate-index` | Generate TypeScript index file for packages |
+| `pkgx-tools generate-ts` | Generate TypeScript files from cached JSON |
+| `pkgx-tools generate-aliases` | Generate TypeScript aliases file for packages |
 | `pkgx-tools generate-docs` | Generate package documentation for API reference |
-| `pkgx-tools cleanup` | Fix package variable naming issues and regenerate index |
 | `pkgx-tools version` | Display version information |
 
 ## fetch Command
@@ -30,6 +32,8 @@ The `fetch` command retrieves package information from pkgx.dev for one or more 
 bun run pkgx:fetch [packageName] [options]
 # OR
 bun run pkgx:fetch --pkg <packageNames> [options]
+# OR
+bun run pkgx:fetch --all [options]
 ```
 
 ### Arguments
@@ -40,13 +44,19 @@ bun run pkgx:fetch --pkg <packageNames> [options]
 
 | Option | Description | Default |
 |--------|-------------|---------|
+| `-a, --all` | Fetch all packages | `false` |
 | `-p, --pkg <packageNames>` | Comma-separated list of package names to fetch | - |
-| `-o, --output <directory>` | Directory to save package data | `src/packages` |
-| `-t, --timeout <milliseconds>` | Timeout in milliseconds | `30000` (30 seconds) |
-| `-r, --retries <number>` | Number of retry attempts for failed fetches | `3` |
-| `-v, --verbose` | Show more detailed output | `false` |
-| `-d, --debug` | Enable debug mode to save error information | `false` |
-| `-j, --json` | Save files as JSON instead of TypeScript | `false` |
+| `-o, --output-dir <dir>` | Directory to save package data | `src/packages` |
+| `-c, --cache-dir <dir>` | Directory to cache package data | `.cache/packages` |
+| `-n, --no-cache` | Disable caching | `false` |
+| `-e, --cache-expiration <minutes>` | Cache expiration time in minutes | `1440` (24 hours) |
+| `-l, --limit <count>` | Limit the number of packages to fetch (use with --all) | - |
+| `-t, --timeout <ms>` | Timeout for network requests in milliseconds | `30000` |
+| `-r, --max-retries <count>` | Maximum retry attempts for failed requests | `3` |
+| `-j, --json` | Save as JSON instead of TypeScript | `false` |
+| `-d, --debug` | Enable debug mode (save screenshots) | `false` |
+| `-v, --verbose` | Enable verbose output | `false` |
+| `-y, --concurrency <count>` | Number of packages to fetch concurrently | `10` |
 
 ### Examples
 
@@ -61,65 +71,91 @@ bun run pkgx:fetch agwa.name/git-crypt
 bun run pkgx:fetch --pkg node,bun,python
 
 # Fetch packages with custom output directory and timeout
-bun run pkgx:fetch --pkg "nodejs.org,python.org" --output ./custom-packages --timeout 60000
+bun run pkgx:fetch --pkg "nodejs.org,python.org" --output-dir ./custom-packages --timeout 60000
 
 # Save as JSON instead of TypeScript
 bun run pkgx:fetch --pkg "go.dev,rust-lang.org" --json
+
+# Fetch all packages with a limit
+bun run pkgx:fetch --all --limit 50
+
+# Fetch with increased concurrency
+bun run pkgx:fetch --all --concurrency 20
 ```
 
-## fetch-all Command
+## generate-index Command
 
-The `fetch-all` command retrieves information for all packages available on pkgx.dev.
+Generate a TypeScript index file for packages.
 
 ### Usage
 
 ```bash
-bun run pkgx:fetch-all [options]
+bun run pkgx:generate-index [options]
 ```
 
 ### Options
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `-o, --output <directory>` | Directory to save package data | `src/packages` |
-| `-t, --timeout <milliseconds>` | Timeout in milliseconds | `30000` (30 seconds) |
-| `-l, --limit <number>` | Limit the number of packages to fetch | `undefined` (all packages) |
-| `-r, --retries <number>` | Number of retry attempts for failed fetches | `3` |
-| `-m, --mode <mode>` | Fetch mode: "basic", "complete", or "scrape" | `complete` |
-| `-v, --verbose` | Show more detailed output | `false` |
-| `-c, --cache-duration <minutes>` | GitHub API cache duration in minutes | `60` |
-| `-w, --web-scraping` | Use web scraping to fetch package list instead of GitHub API | `false` |
-| `-d, --debug` | Enable debug mode to save error information | `false` |
-| `-j, --json` | Save files as JSON instead of TypeScript | `false` |
-
-### Fetch Modes
-
-- **complete** (default): Uses GitHub API with improved batch processing
-- **scrape**: Uses web scraping for package discovery
-- **basic**: Uses the legacy implementation (not recommended)
+| `-o, --output-dir <dir>` | Directory containing package files | `src/packages` |
 
 ### Examples
 
 ```bash
-# Fetch all packages with default settings
-bun run pkgx:fetch-all
+# Generate index with default settings
+bun run pkgx:generate-index
 
-# Fetch all packages with increased timeout
-bun run pkgx:fetch-all --timeout 60000
+# With custom output directory
+bun run pkgx:generate-index --output-dir ./custom/packages
+```
 
-# Fetch limited number of packages
-bun run pkgx:fetch-all --limit 50
+## generate-ts Command
 
-# Use web scraping mode
-bun run pkgx:fetch-all --mode scrape
+Generate TypeScript files from cached JSON files.
 
-# Change GitHub API cache duration to 2 hours
-bun run pkgx:fetch-all --cache-duration 120
+### Usage
+
+```bash
+bun run pkgx:generate-ts [options]
+```
+
+### Options
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `--cache-dir <dir>` | Directory with cached JSON files | `.cache/packages` |
+| `--output-dir <dir>` | Output directory for TypeScript files | `packages` |
+
+### Examples
+
+```bash
+# Generate TypeScript from cached JSON
+bun run pkgx:generate-ts
+
+# With custom directories
+bun run pkgx:generate-ts --cache-dir ./custom-cache --output-dir ./custom-output
+```
+
+## generate-aliases Command
+
+Generate a TypeScript aliases file for packages.
+
+### Usage
+
+```bash
+bun run pkgx:generate-aliases
+```
+
+### Examples
+
+```bash
+# Generate aliases file
+bun run pkgx:generate-aliases
 ```
 
 ## generate-docs Command
 
-The `generate-docs` command creates comprehensive documentation for all packages in the pantry, organized by category.
+Generate comprehensive documentation for all packages.
 
 ### Usage
 
@@ -143,32 +179,6 @@ bun run pkgx:generate-docs
 bun run pkgx:generate-docs --output ./docs/custom-package-list.md
 ```
 
-## cleanup Command
-
-The `cleanup` command fixes package variable naming issues and regenerates the index file. This is useful when you have added new packages or encountered issues with variable names containing hyphens or other invalid characters.
-
-### Usage
-
-```bash
-bun run pkgx:cleanup
-```
-
-### What it does
-
-1. Scans all package files for variable names with hyphens or other invalid JavaScript identifiers
-2. Fixes the variable and interface names to be valid JavaScript identifiers
-3. Regenerates the index.ts file to reflect the changes
-
-### Examples
-
-```bash
-# Run the cleanup process
-bun run pkgx:cleanup
-
-# Using the CLI directly
-bun bin/cli.ts cleanup
-```
-
 ## version Command
 
 Displays the current version of pkgx-tools.
@@ -189,8 +199,22 @@ chmod +x ./pkgx-tools
 
 # Run commands directly
 ./pkgx-tools fetch node
-./pkgx-tools fetch-all --limit 10
-./pkgx-tools cleanup
+./pkgx-tools fetch --all --limit 10
+./pkgx-tools generate-index
+./pkgx-tools generate-aliases
+```
+
+## Using Compiled Binaries
+
+For faster execution, you can use the compiled binaries that are distributed with the package:
+
+```bash
+# Run directly from bin directory
+./bin/pkgx-tools fetch node
+
+# Create a symlink in your path
+ln -s $(pwd)/bin/pkgx-tools /usr/local/bin/pkgx-tools
+pkgx-tools fetch node
 ```
 
 ## Environment Variables
@@ -198,4 +222,4 @@ chmod +x ./pkgx-tools
 ts-pkgx respects the following environment variables:
 
 - `DEBUG`: Set to `true` to enable debug mode
-- `GITHUB_TOKEN`: GitHub token for API requests (optional)
+- `GITHUB_TOKEN`: GitHub token for API requests (increases rate limits)

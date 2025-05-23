@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, test } from 'bun:test'
 import fs from 'node:fs'
 import path from 'node:path'
-import { convertDomainToVarName } from '../src/tools/domainUtils'
+import { convertDomainToVarName } from '../src/utils'
 
 // Setup test directory
 const TEST_DIR = path.join(process.cwd(), 'src', 'test-output', 'packages')

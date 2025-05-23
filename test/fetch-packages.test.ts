@@ -1,7 +1,7 @@
 import type { PkgxPackage } from '../src/types'
 import { describe, expect, mock, test } from 'bun:test'
 import { PACKAGE_ALIASES } from '../src/fetch'
-import { convertDomainToFileName } from '../src/tools/domainUtils'
+import { convertDomainToFileName } from '../src/utils'
 
 // Mock data for fetch tests
 const mockPackageInfo: PkgxPackage = {
