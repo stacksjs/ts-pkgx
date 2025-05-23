@@ -173,8 +173,11 @@ export async function generateIndex(): Promise<string | null> {
     const packagesType = 'export type Packages = Pantry\n\n'
     const packagesConst = 'export const packages: Packages = pantry\n'
 
+    // Add export for aliases
+    const aliasesExport = 'export * from \'./aliases\'\n'
+
     // Combine all sections
-    const content = `${imports}\n${interfaceDecl}${packagesType}${pantry}${packagesConst}`
+    const content = `${imports}\n${interfaceDecl}${packagesType}${pantry}${packagesConst}${aliasesExport}`
 
     // Write to the index file
     await fs.promises.writeFile(INDEX_FILE, content)

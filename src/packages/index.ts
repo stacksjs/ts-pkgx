@@ -2594,3 +2594,4 @@ export const pantry: Pantry = {
 }
 
 export const packages: Packages = pantry
+export * from './aliases'
