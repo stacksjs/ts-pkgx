@@ -14,15 +14,17 @@ ts-pkgx is a specialized library that provides tools for fetching, storing, and 
 
 - **Package Fetching**: Retrieve detailed package information from pkgx.dev
 - **TypeScript Integration**: Fully typed interfaces for all package data
-- **Multiple Package Fetching**: Fetch multiple specific packages at once with the new `--pkg` option
-- **Optimized Batch Processing**: Efficiently process hundreds of packages with intelligent batching
-- **CLI Tools**: Command line utilities for fetching and managing packages
+- **Multiple Package Fetching**: Fetch multiple specific packages at once with the `--pkg` option
+- **Optimized Batch Processing**: Efficiently process hundreds of packages with configurable concurrency
+- **CLI Tools**: Comprehensive command line utilities for fetching and managing packages
 - **Alias Support**: Handle package aliases (e.g., "node" for "nodejs.org")
 - **Nested Paths**: Support for packages with nested paths (e.g., "agwa.name/git-crypt")
-- **Automatic Parsing**: Convert package data into TypeScript files for easy use
-- **Custom Output Formats**: Generate documentation in various formats (Markdown, HTML, CSV, etc.)
-- **Auto-Generated Package Catalog**: Browse comprehensive information for ~1,000 packages
-- **Advanced Error Handling**: Robust error handling and recovery mechanisms
+- **Smart Caching**: Configurable caching system to improve performance and avoid hitting rate limits
+- **TypeScript Code Generation**: Convert package data into TypeScript files for easy use
+- **Index Generation**: Automatically create indexes for easy access to all packages
+- **JSON Output**: Option to output as JSON instead of TypeScript
+- **Compiled Binaries**: Use pre-compiled binaries for various platforms
+- **Advanced Error Handling**: Robust error handling with automatic retries
 
 ## Why ts-pkgx?
 

@@ -14,16 +14,16 @@ bun run pkgx:fetch node
 bun run pkgx:fetch --pkg node,bun,python
 
 # With custom output directory
-bun run pkgx:fetch node --output ./data/packages
+bun run pkgx:fetch node --output-dir ./data/packages
 
 # Fetch all packages
-bun run pkgx:fetch-all
+bun run pkgx:fetch --all
 
 # Fetch with a limit on the number of packages
-bun run pkgx:fetch-all --limit 50
+bun run pkgx:fetch --all --limit 50
 
 # Set a custom timeout (milliseconds)
-bun run pkgx:fetch-all --timeout 180000 --output ./data/pkgx-packages
+bun run pkgx:fetch --all --timeout 180000 --output-dir ./data/pkgx-packages
 
 # Enable debug mode (saves screenshots and additional logs)
 bun run pkgx:fetch node --debug
@@ -31,22 +31,58 @@ bun run pkgx:fetch node --debug
 # Save as JSON instead of TypeScript
 bun run pkgx:fetch --pkg nodejs.org,bun.sh --json
 
-# Use a specific fetch mode
-bun run pkgx:fetch-all --mode scrape
+# Control concurrency level
+bun run pkgx:fetch --all --concurrency 20
+
+# Use or disable caching
+bun run pkgx:fetch --all --cache-dir ./custom-cache
+bun run pkgx:fetch --all --no-cache
 ```
 
-## Fetch Modes
+## Cache Configuration
 
-ts-pkgx supports multiple methods for fetching package information:
-
-- **complete** (default): Uses the GitHub API for package discovery with optimized batch processing
-- **scrape**: Uses web scraping to discover packages on pkgx.dev
-- **basic**: Uses the legacy implementation (not recommended for general use)
+ts-pkgx implements caching to improve performance and avoid unnecessary network requests:
 
 ```bash
-# Use web scraping mode
-bun run pkgx:fetch-all --mode scrape
+# Specify a custom cache directory
+bun run pkgx:fetch --all --cache-dir ./my-cache-dir
+
+# Disable caching completely
+bun run pkgx:fetch node --no-cache
+
+# Set a custom cache expiration time (in minutes)
+bun run pkgx:fetch --all --cache-expiration 60
 ```
+
+The default cache expiration is 24 hours (1440 minutes).
+
+## Concurrency Options
+
+Control how many packages are processed in parallel:
+
+```bash
+# Higher concurrency for faster processing (if your system can handle it)
+bun run pkgx:fetch --all --concurrency 20
+
+# Lower concurrency for more stability or on systems with limited resources
+bun run pkgx:fetch --all --concurrency 5
+```
+
+The default concurrency is 10 packages at a time.
+
+## Retry and Timeout Settings
+
+Configure how ts-pkgx handles network issues and timeouts:
+
+```bash
+# Set a longer timeout for each package (in milliseconds)
+bun run pkgx:fetch node --timeout 60000
+
+# Configure the maximum number of retry attempts
+bun run pkgx:fetch --all --max-retries 5
+```
+
+By default, each package has a 30-second timeout and will retry up to 3 times.
 
 ## Batch Processing Configuration
 
@@ -54,13 +90,10 @@ For batch processing of large numbers of packages, you can configure:
 
 ```bash
 # Limit the number of packages to process (useful for testing)
-bun run pkgx:fetch-all --limit 20
-
-# Adjust retry attempts for failed fetches
-bun run pkgx:fetch-all --retries 5
+bun run pkgx:fetch --all --limit 20
 
 # Set verbose output to see more details
-bun run pkgx:fetch-all --verbose
+bun run pkgx:fetch --all --verbose
 ```
 
 ## Package Fetch Options
@@ -82,25 +115,40 @@ interface PackageFetchOptions {
   outputDir?: string
 
   /**
+   * Directory to cache package data
+   * @default '.cache/packages'
+   */
+  cacheDir?: string
+
+  /**
    * Enable debug mode to save screenshots and additional info
    * @default false
    */
   debug?: boolean
+
+  /**
+   * Whether to use cached data if available and not expired
+   * @default true
+   */
+  cache?: boolean
+
+  /**
+   * Cache expiration time in minutes
+   * @default 1440 (24 hours)
+   */
+  cacheExpirationMinutes?: number
+
+  /**
+   * Limit the number of packages to fetch
+   */
+  limit?: number
+
+  /**
+   * Number of packages to fetch concurrently
+   * @default 10
+   */
+  concurrency?: number
 }
-```
-
-## GitHub API Cache
-
-For better performance and to avoid hitting GitHub API rate limits, ts-pkgx implements a caching mechanism for GitHub API requests. The cache is stored in the `github-cache.json` file in the project root.
-
-You can configure the cache duration when using the API:
-
-```typescript
-// In milliseconds, default is 1 hour
-const cacheDuration = 3600000
-
-// When using the CLI
-// bun run pkgx:fetch-all --github-cache-duration 7200000 // 2 hours
 ```
 
 ## Package Aliases
@@ -131,6 +179,18 @@ bun run pkgx:fetch node --json
 # API option
 const result = await fetchAndSavePackage('node', outputDir, timeout, true); // true = save as JSON
 ```
+
+## GitHub Authentication
+
+When using GitHub API for fetching package information, you can use authentication to get higher rate limits:
+
+```bash
+# Set environment variable before running commands
+export GITHUB_TOKEN=your_github_personal_access_token
+bun run pkgx:fetch --all
+```
+
+This increases your GitHub API rate limit from 60 requests/hour to 5,000 requests/hour.
 
 ## Advanced Configuration
 

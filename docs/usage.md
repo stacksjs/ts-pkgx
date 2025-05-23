@@ -10,14 +10,26 @@ After installing the package, you can use the CLI tools to fetch and manage pack
 # Fetch a single package
 bun run pkgx:fetch nodejs.org
 
+# Fetch multiple packages at once
+bun run pkgx:fetch --pkg nodejs.org,bun.sh,deno.land
+
 # Fetch all available packages
-bun run pkgx:fetch-all
+bun run pkgx:fetch --all
+
+# Generate index file
+bun run pkgx:generate-index
+
+# Generate TypeScript from cached JSON
+bun run pkgx:generate-ts
+
+# Generate aliases file
+bun run pkgx:generate-aliases
 
 # Generate documentation
-bun run pkgx:docs
+bun run pkgx:generate-docs
 
-# Fix package variable names
-bun run pkgx:cleanup
+# Show version information
+bun run pkgx:version
 ```
 
 You can also use the CLI directly:
@@ -32,11 +44,20 @@ bun bin/cli.ts fetch --all
 # Fetch multiple specific packages
 bun bin/cli.ts fetch --pkg="nodejs.org,bun.sh,deno.land"
 
+# Generate index file
+bun bin/cli.ts generate-index
+
+# Generate TypeScript from cached JSON
+bun bin/cli.ts generate-ts
+
+# Generate aliases file
+bun bin/cli.ts generate-aliases
+
 # Generate documentation
 bun bin/cli.ts generate-docs
 
-# Fix package variable names
-bun bin/cli.ts cleanup
+# Display version information
+bun bin/cli.ts version
 ```
 
 ### Options
@@ -45,42 +66,54 @@ The fetch command supports several options:
 
 - `--all`: Fetch all available packages
 - `--pkg="pkg1,pkg2"`: Fetch multiple specific packages
+- `--output-dir=<dir>`: Set custom output directory
+- `--cache-dir=<dir>`: Set custom cache directory
+- `--no-cache`: Disable caching
+- `--cache-expiration=<minutes>`: Set cache expiration time
 - `--timeout=<ms>`: Set timeout in milliseconds
-- `--output=<dir>`: Set custom output directory
-- `--mode=<mode>`: Set fetch mode (github, scrape, basic)
+- `--max-retries=<n>`: Number of retries for failed fetches
+- `--limit=<n>`: Limit the number of packages to fetch
+- `--concurrency=<n>`: Number of packages to fetch concurrently
 - `--json`: Output as JSON instead of TypeScript
 - `--verbose`: Enable verbose logging
 - `--debug`: Enable debug mode
-- `--retries=<n>`: Number of retries for failed fetches
 
 ## Library Usage
 
 You can also use ts-pkgx as a library in your TypeScript/JavaScript projects:
 
 ```typescript
-import { fetchPkgxPackage, getAllPkgxPackages } from 'ts-pkgx'
-
-// Access all available packages
-import * as pkgx from 'ts-pkgx'
+import { fetchAndSaveAllPackages, fetchPkgxPackage } from 'ts-pkgx'
 
 // Fetch a single package
 const { packageInfo } = await fetchPkgxPackage('nodejs.org')
 console.log(packageInfo)
-console.log(pkgx.nodejsorgPackage)
+
+// Fetch all packages
+const savedPackages = await fetchAndSaveAllPackages({
+  outputDir: './packages',
+  timeout: 60000,
+  concurrency: 15,
+})
 ```
 
 ### Accessing Package Information
 
-Each package exports a typed interface and a constant:
+After fetching packages, you can import them from your packages directory:
 
 ```typescript
-import type { NodejsorgPackage } from 'ts-pkgx'
-import { nodejsorgPackage } from 'ts-pkgx'
+import { getPackage, pantry } from 'ts-pkgx/packages'
 
-// Get package info
-console.log(nodejsorgPackage.name) // 'node'
-console.log(nodejsorgPackage.versions) // ['20.0.0', '18.0.0', ...]
-console.log(nodejsorgPackage.domain) // 'nodejs.org'
+// Get a package by domain name
+const nodePackage = pantry['nodejs.org']
+
+// Get a package by alias
+const nodeByAlias = getPackage('node')
+
+// Access package properties
+console.log(nodePackage.name) // 'node'
+console.log(nodePackage.versions) // ['20.0.0', '18.0.0', ...]
+console.log(nodePackage.domain) // 'nodejs.org'
 ```
 
 ### Understanding Package Variable Names
@@ -90,28 +123,44 @@ Package variable names follow specific conventions to ensure JavaScript/TypeScri
 1. Dots are removed from domain names:
    ```typescript
    // For domain 'bun.sh'
-   import { bunshPackage } from 'ts-pkgx'
+   import { bunshPackage } from 'ts-pkgx/packages/bunsh'
    ```
 
 2. Hyphens are removed from variable names (since hyphens aren't valid in JavaScript identifiers):
    ```typescript
    // For domain 'ast-grep.github.io'
-   import { astgrepgithubioPackage } from 'ts-pkgx'
+   import { astgrepgithubioPackage } from 'ts-pkgx/packages/astgrepgithubio'
    ```
 
 3. Nested paths are concatenated:
    ```typescript
    // For path 'agwa.name/git-crypt'
-   import { agwanamegitcryptPackage } from 'ts-pkgx'
+   import { agwanamegitcryptPackage } from 'ts-pkgx/packages/agwaname-gitcrypt'
    ```
 
-If you encounter type errors or issues with package names, you can run the cleanup command to ensure consistent naming:
+### Using the API with Custom Options
 
-```bash
-bun run pkgx:cleanup
+You can customize how packages are fetched using the options object:
+
+```typescript
+// Fetch with custom options
+const result = await fetchPkgxPackage('nodejs.org', {
+  timeout: 60000,
+  debug: true,
+})
+
+// Fetch all packages with custom options
+const packages = await fetchAndSaveAllPackages({
+  outputDir: './custom/packages',
+  cacheDir: './custom/cache',
+  cache: true,
+  cacheExpirationMinutes: 60,
+  timeout: 60000,
+  limit: 50,
+  concurrency: 15,
+  debug: false,
+})
 ```
-
-For a detailed explanation of the naming conventions and troubleshooting tips, see our [Maintenance & Troubleshooting Guide](./maintenance.md).
 
 ## Advanced Usage
 
@@ -125,4 +174,5 @@ For advanced usage scenarios, see:
 - [Custom Output Formats](./advanced/output-formats.md)
 - [Error Handling](./advanced/error-handling.md)
 - [Optimized Batch Processing](./advanced/batch-processing.md)
-- [Maintenance & Troubleshooting](./maintenance.md)
+- [Rate Limits](./advanced/rate-limits.md)
+- [Aliases System](./advanced/aliases.md)

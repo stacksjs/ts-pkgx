@@ -15,11 +15,11 @@ This approach is particularly valuable when working with the pkgx.dev pantry, wh
 
 ## Automatic Batching
 
-When using the `fetch-all` command, ts-pkgx automatically implements batch processing:
+When using the `--all` flag, ts-pkgx automatically implements batch processing:
 
 ```bash
 # Fetch all packages with optimized batch processing
-bun run pkgx:fetch-all
+bun run pkgx:fetch --all
 ```
 
 You can customize the batch size through the CLI or API for optimal performance on your system.
@@ -41,13 +41,27 @@ Batch processing helps manage memory usage efficiently:
 
 ```bash
 # Process all packages with default batch size (20)
-bun run pkgx:fetch-all
+bun run pkgx:fetch --all
 
 # Limit to first 50 packages (useful for testing)
-bun run pkgx:fetch-all --limit 50
+bun run pkgx:fetch --all --limit 50
 ```
 
 By processing packages in batches, memory usage is kept under control even when dealing with hundreds or thousands of packages.
+
+## Concurrency Control
+
+You can control the level of parallelism using the `--concurrency` option:
+
+```bash
+# Process with higher concurrency (faster but more resource-intensive)
+bun run pkgx:fetch --all --concurrency 20
+
+# Process with lower concurrency (slower but more stable)
+bun run pkgx:fetch --all --concurrency 5
+```
+
+The default concurrency is 10, which works well for most systems.
 
 ## Progress Feedback
 
@@ -61,18 +75,6 @@ Updated 762 out of 1000 packages
 ```
 
 This keeps you informed about the progress of long-running operations.
-
-## Configurable Batch Size
-
-The batch size is configurable based on the processing method:
-
-- GitHub API mode: 30-40 packages per batch works well
-- Web scraping mode: 10-20 packages per batch to avoid overloading
-
-```typescript
-// Configure batch size based on mode
-const BATCH_SIZE = mode === 'web-scraping' ? 20 : 40
-```
 
 ## Skip Unchanged Packages
 
@@ -110,6 +112,18 @@ if (error.toString().includes('Timeout')) {
 ```
 
 This ensures that temporary issues don't cause the entire batch to fail.
+
+## Retry Options
+
+You can customize retry behavior through the command line:
+
+```bash
+# Set the maximum number of retry attempts
+bun run pkgx:fetch --all --max-retries 5
+
+# Increase timeout for each package
+bun run pkgx:fetch --all --timeout 60000
+```
 
 ## Benchmarks
 

@@ -4,7 +4,7 @@ ts-pkgx provides flexible options for fetching multiple packages at once, giving
 
 ## Using the `--pkg` Option
 
-The new `--pkg` option allows you to fetch multiple specific packages in a single command:
+The `--pkg` option allows you to fetch multiple specific packages in a single command:
 
 ```bash
 # Fetch multiple packages with one command
@@ -39,13 +39,19 @@ The multiple package fetching feature can be combined with other CLI options:
 bun run pkgx:fetch --pkg node,bun --json
 
 # Custom output directory
-bun run pkgx:fetch --pkg node,bun --output ./custom-packages
+bun run pkgx:fetch --pkg node,bun --output-dir ./custom-packages
 
 # Increased timeout for complex packages
 bun run pkgx:fetch --pkg "rust-lang.org,go.dev" --timeout 60000
 
 # Debug mode for troubleshooting
 bun run pkgx:fetch --pkg "rust-lang.org,go.dev" --debug
+
+# Custom cache directory
+bun run pkgx:fetch --pkg node,bun --cache-dir ./my-cache
+
+# Disable caching
+bun run pkgx:fetch --pkg node,bun --no-cache
 ```
 
 ## Benefits Over Individual Fetching

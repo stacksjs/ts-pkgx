@@ -66,6 +66,24 @@ yarn global add ts-pkgx
 
 :::
 
+## Using Pre-compiled Binaries
+
+ts-pkgx also provides pre-compiled binaries for various platforms. These allow you to use the CLI without needing to install Node.js or Bun:
+
+```sh
+# Download the binary for your platform
+curl -fsSL https://github.com/stacksjs/ts-pkgx/releases/latest/download/pkgx-tools-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m).zip -o pkgx-tools.zip
+
+# Unzip the binary
+unzip pkgx-tools.zip
+
+# Make it executable
+chmod +x pkgx-tools
+
+# Move to a directory in your PATH (optional)
+sudo mv pkgx-tools /usr/local/bin/
+```
+
 ## Verification
 
 To verify the installation, you can run:
@@ -74,15 +92,19 @@ To verify the installation, you can run:
 bun run pkgx:fetch node
 ```
 
+Or if you installed globally or are using the binary:
+
+```sh
+pkgx-tools fetch node
+```
+
 This should fetch information about the Node.js package from pkgx.dev.
 
 ## Requirements
 
 ts-pkgx requires:
 
-- Node.js >= 16 (or Bun)
-- TypeScript >= 5.0 (for type definitions)
-- Playwright (for web scraping functionality)
+- Bun runtime
 
 ## Next Steps
 
