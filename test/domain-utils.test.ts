@@ -25,7 +25,7 @@ describe('Domain Utilities', () => {
   describe('convertDomainToFileName', () => {
     test('should convert domains to filename-safe strings', () => {
       expect(convertDomainToFileName('example.com')).toBe('examplecom')
-      expect(convertDomainToFileName('agwa.name/git-crypt')).toBe('agwaname-gitcrypt')
+      expect(convertDomainToFileName('agwa.name/git-crypt')).toBe('agwaname-git-crypt')
       expect(convertDomainToFileName('aws.amazon.com/cli')).toBe('awsamazoncom-cli')
     })
   })

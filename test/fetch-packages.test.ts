@@ -107,7 +107,7 @@ describe('Package Fetching', () => {
       // Nested path
       const nestedPath = 'agwa.name/git-crypt'
       const nestedFileName = convertDomainToFileName(nestedPath)
-      expect(nestedFileName).toBe('agwaname-gitcrypt')
+      expect(nestedFileName).toBe('agwaname-git-crypt')
     })
   })
 })
