@@ -66,5 +66,5 @@ const nodeByAlias = getPackage('node')
 // Access package properties
 console.log(`Package: ${nodePackage.name} - ${nodePackage.description}`)
 console.log(`Install: ${nodePackage.installCommand}`)
-console.log(`Programs: ${nodePackage.programs.join(", ")}`)
+console.log(`Programs: ${nodePackage.programs.join(', ')}`)
 ```

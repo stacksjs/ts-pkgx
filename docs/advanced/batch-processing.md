@@ -190,9 +190,9 @@ async function updatePackagesWithMemoryMonitoring() {
       console.log(`High memory usage detected, reducing batch size to ${BATCH_SIZE}`)
 
       // Force garbage collection if available
-      if (global.gc) {
+      if (globalThis.gc) {
         console.log('Forcing garbage collection')
-        global.gc()
+        globalThis.gc()
       }
     }
     else if (memAfter.percent < 50 && BATCH_SIZE < 40) {

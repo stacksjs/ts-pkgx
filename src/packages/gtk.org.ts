@@ -1,16 +1,16 @@
 export const gtkorgPackage = {
-  name: "gtk.org" as const,
-  domain: "gtk.org" as const,
-  description: "" as const,
-  packageYmlUrl: "" as const,
-  homepageUrl: "" as const,
-  githubUrl: "" as const,
-  installCommand: "pkgx gtk.org" as const,
+  name: 'gtk.org' as const,
+  domain: 'gtk.org' as const,
+  description: '' as const,
+  packageYmlUrl: '' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
+  installCommand: 'pkgx gtk.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  fullPath: "gtk.org" as const,
+  fullPath: 'gtk.org' as const,
 }
 
 export type GtkorgPackage = typeof gtkorgPackage

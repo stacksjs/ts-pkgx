@@ -304,8 +304,8 @@ function loadGitHubCache(cacheDuration: number, cacheFile: string): any | null {
 ts-pkgx implements optimized batch processing to efficiently handle large numbers of packages. This is particularly useful when updating the entire pantry, which contains around 1,000 packages.
 
 ```typescript
-import { fetchPackageListFromGitHub } from 'ts-pkgx/utils'
 import { updatePackage } from 'ts-pkgx/tools/updatePackages'
+import { fetchPackageListFromGitHub } from 'ts-pkgx/utils'
 
 async function updatePackagesInBatches() {
   // Get the list of all packages from GitHub
@@ -325,7 +325,7 @@ async function updatePackagesInBatches() {
     console.log(`Processing batch ${i + 1}/${batches} (packages ${start + 1}-${end})`)
 
     // Update packages in the current batch in parallel
-    const results = await Promise.all(batch.map((pkg) => updatePackage(pkg)))
+    const results = await Promise.all(batch.map(pkg => updatePackage(pkg)))
 
     // Count updated packages
     updatedCount += results.filter(Boolean).length

@@ -17,7 +17,7 @@ async function importPantry() {
   try {
     // Dynamic import to load the pantry at runtime
     const packages = await import('../src/packages')
-    return packages.pantry as Record<string, PkgxPackage>
+    return packages.pantry as unknown as Record<string, PkgxPackage>
   }
   catch (error) {
     console.error('Error importing pantry:', error)
@@ -128,7 +128,7 @@ async function groupPackagesByCategory() {
 /**
  * Generate markdown documentation for packages
  */
-export async function generatePackageDocs(outputPath = DEFAULT_OUTPUT_FILE): Promise<void> {
+export async function generatePackageDocs(outputPath: string = DEFAULT_OUTPUT_FILE): Promise<void> {
   console.error(`Generating package documentation...`)
 
   const { categories, pantry } = await groupPackagesByCategory()
@@ -197,8 +197,11 @@ export async function generatePackageDocs(outputPath = DEFAULT_OUTPUT_FILE): Pro
   content += '// Get a package by alias\n'
   content += 'const nodeByAlias = getPackage(\'node\')\n\n'
   content += '// Access package properties\n'
+  // eslint-disable-next-line no-template-curly-in-string
   content += 'console.log(`Package: ${nodePackage.name} - ${nodePackage.description}`)\n'
+  // eslint-disable-next-line no-template-curly-in-string
   content += 'console.log(`Install: ${nodePackage.installCommand}`)\n'
+  // eslint-disable-next-line no-template-curly-in-string
   content += 'console.log(`Programs: ${nodePackage.programs.join(", ")}`)\n'
   content += '```\n'
 

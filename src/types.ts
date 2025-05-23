@@ -106,7 +106,7 @@ export interface PackageFetchOptions {
 
   /**
    * Browser instance to use for fetching (for concurrency)
-   * @internal Used internally for browser pooling
+   * @internal
    */
   browser?: any
 }

@@ -5,7 +5,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import { chromium } from 'playwright'
-import { formatObjectWithoutQuotedKeys, saveRateLimitInfo, shouldProceedWithGitHubRequest } from './utils'
+import { saveRateLimitInfo, shouldProceedWithGitHubRequest } from './utils'
 
 /**
  * Map of common package aliases to their full domain names

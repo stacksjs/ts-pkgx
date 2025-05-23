@@ -288,7 +288,10 @@ async function batchFetchWithGracefulDegradation(
         catch (error) {
           // Log the error but don't fail the entire batch
           errorLogger.log(packageName, error)
-          throw { name: packageName, error }
+          const packageError = new Error(`Failed to fetch package: ${packageName}`)
+          packageError.cause = error
+          packageError.packageName = packageName
+          throw packageError
         }
       })
     )
