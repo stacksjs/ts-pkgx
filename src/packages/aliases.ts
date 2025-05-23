@@ -634,6 +634,7 @@ export const aliases: Record<string, string> = {
   'nmap.org': 'nmap.org',
   'nnn': 'github.com/jarun-nnn',
   'node': 'node',
+  'nodejs.org': 'nodejs.org',
   'nomadproject.io': 'nomadproject.io',
   'nongnu.org': 'nongnu.org',
   'notroj.github.io': 'notroj.github.io',
