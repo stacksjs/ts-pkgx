@@ -1,4 +1,5 @@
-#!/usr/bin/env bun
+/* eslint-disable no-console */
+
 /**
  * Script to generate the index.ts file for packages directory
  * This will scan the packages directory and automatically create imports and exports
@@ -7,12 +8,14 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-import { convertDomainToVarName, guessOriginalDomain } from './domainUtils'
+import { convertDomainToVarName, guessOriginalDomain } from './utils'
 
 // The packages directory path
 const PACKAGES_DIR = path.join(process.cwd(), 'src', 'packages')
 // The index file path
 const INDEX_FILE = path.join(PACKAGES_DIR, 'index.ts')
+// The aliases file path
+const ALIASES_FILE = path.join(PACKAGES_DIR, 'aliases.ts')
 
 /**
  * Safely convert a filename to a valid JavaScript identifier
@@ -71,132 +74,6 @@ async function getImports(): Promise<ImportInfo[]> {
 }
 
 /**
- * Generate explicit type definitions for all package files
- */
-async function generateExplicitTypeDefinition(packages: ImportInfo[]): Promise<Record<string, string>> {
-  const typeDefinitions: Record<string, string> = {}
-
-  for (const pkg of packages) {
-    try {
-      const filePath = path.join(PACKAGES_DIR, `${pkg.originalModule}.ts`)
-
-      // Skip if file doesn't exist
-      if (!fs.existsSync(filePath)) {
-        console.error(`File not found: ${filePath}`)
-        continue
-      }
-
-      // First, try to find a corresponding JSON file with the original domain name
-      const originalDomain = guessOriginalDomain(pkg.originalModule)
-      const jsonFilePath = path.join(PACKAGES_DIR, `${originalDomain}.json`)
-      let packageObj: Record<string, any> = {}
-
-      if (fs.existsSync(jsonFilePath)) {
-        // If we have a JSON file, use that as the source of truth
-        try {
-          console.log(`Found JSON file for ${pkg.originalModule}: ${jsonFilePath}`)
-          const jsonContent = fs.readFileSync(jsonFilePath, 'utf-8')
-          packageObj = JSON.parse(jsonContent)
-          console.log(`Using JSON file as source for ${pkg.originalModule}`)
-        } catch (e) {
-          console.warn(`Failed to parse JSON file for ${pkg.originalModule}, falling back to TS extraction`)
-        }
-      } else {
-        console.log(`No JSON file found for ${pkg.originalModule} at ${jsonFilePath}`)
-      }
-
-      // If we couldn't get data from JSON, extract from the TS file
-      if (Object.keys(packageObj).length === 0) {
-        const fileContent = fs.readFileSync(filePath, 'utf-8')
-        const packageVarName = getPackageExportName(pkg.originalModule)
-
-        // Extract string properties
-        const stringProps = ['name', 'domain', 'description', 'packageYmlUrl', 'homepageUrl', 'githubUrl', 'installCommand', 'fullPath']
-        for (const prop of stringProps) {
-          const regex = new RegExp(`"${prop}":\\s*"([^"]*)"`, 's')
-          const match = fileContent.match(regex)
-          if (match) {
-            packageObj[prop] = match[1]
-          }
-        }
-
-        // Extract array properties using a more robust approach
-        // For programs array
-        const programsMatch = fileContent.match(/programs:\s*\[([\s\S]*?)\]/m)
-        if (programsMatch && programsMatch[1]) {
-          const programs = programsMatch[1].match(/"([^"]*)"/g)
-          packageObj.programs = programs ? programs.map(p => p.replace(/"/g, '')) : []
-        } else {
-          packageObj.programs = []
-        }
-
-        // For companions array
-        const companionsMatch = fileContent.match(/companions:\s*\[([\s\S]*?)\]/m)
-        if (companionsMatch && companionsMatch[1]) {
-          const companions = companionsMatch[1].match(/"([^"]*)"/g)
-          packageObj.companions = companions ? companions.map(c => c.replace(/"/g, '')) : []
-        } else {
-          packageObj.companions = []
-        }
-
-        // For dependencies array
-        const dependenciesMatch = fileContent.match(/dependencies:\s*\[([\s\S]*?)\]/m)
-        if (dependenciesMatch && dependenciesMatch[1]) {
-          const dependencies = dependenciesMatch[1].match(/"([^"]*)"/g)
-          packageObj.dependencies = dependencies ? dependencies.map(d => d.replace(/"/g, '')) : []
-        } else {
-          packageObj.dependencies = []
-        }
-
-        // For versions array
-        const versionsMatch = fileContent.match(/versions:\s*\[([\s\S]*?)\]/m)
-        if (versionsMatch && versionsMatch[1]) {
-          const versions = versionsMatch[1].match(/"([^"]*)"/g)
-          packageObj.versions = versions ? versions.map(v => v.replace(/"/g, '')) : []
-        } else {
-          packageObj.versions = []
-        }
-
-        // Extract aliases
-        const aliasesMatch = fileContent.match(/aliases:\s*(\[[^\]]*\]|undefined)/s)
-        if (aliasesMatch) {
-          if (aliasesMatch[1] === 'undefined') {
-            packageObj.aliases = undefined
-          } else {
-            const aliases = aliasesMatch[1].match(/"([^"]*)"/g)
-            packageObj.aliases = aliases ? aliases.map(a => a.replace(/"/g, '')) : []
-          }
-        }
-      }
-
-      // Fallback defaults if extraction failed
-      if (!packageObj.name) packageObj.name = guessOriginalDomain(pkg.originalModule)
-      if (!packageObj.domain) packageObj.domain = guessOriginalDomain(pkg.originalModule)
-      if (!packageObj.description) packageObj.description = `Package information for ${guessOriginalDomain(pkg.originalModule)}`
-      if (!packageObj.packageYmlUrl) packageObj.packageYmlUrl = `https://github.com/pkgxdev/pantry/tree/main/projects/${packageObj.domain}/package.yml`
-      if (!packageObj.homepageUrl) packageObj.homepageUrl = ""
-      if (!packageObj.githubUrl) packageObj.githubUrl = "https://github.com/pkgxdev/pantry/"
-      if (!packageObj.installCommand) packageObj.installCommand = `sh <(curl https://pkgx.sh) +${packageObj.domain} -- $SHELL -i`
-
-      // Format the object with 'as const' assertions
-      const formattedObj = formatObjectWithAsConst(packageObj)
-
-      // Generate the type name with proper casing
-      const packageVarName = getPackageExportName(pkg.originalModule)
-      const typeName = packageVarName.charAt(0).toUpperCase() + packageVarName.slice(1).replace(/Package$/, 'Package')
-
-      // Create the complete package definition
-      typeDefinitions[pkg.originalModule] = `export const ${packageVarName} = ${formattedObj}\n\nexport type ${typeName} = typeof ${packageVarName}`
-    }
-    catch (error) {
-      console.error(`Error processing ${pkg.originalModule}.ts:`, error)
-    }
-  }
-
-  return typeDefinitions
-}
-
-/**
  * Update a single package file with explicit type definition
  * @param moduleName The name of the module (file name without extension)
  * @returns Promise resolving to a boolean indicating success
@@ -224,20 +101,22 @@ export async function updateSinglePackageInterface(moduleName: string): Promise<
         packageObj = JSON.parse(jsonContent)
         usingJsonSource = true
         console.log(`Using JSON file as source for ${moduleName}`)
-      } catch (e) {
+      }
+      catch {
         console.warn(`Failed to parse JSON file for ${moduleName}, falling back to TS extraction`)
       }
-    } else {
+    }
+    else {
       console.log(`No JSON file found for ${moduleName} at ${jsonFilePath}`)
     }
 
     // If we couldn't get data from JSON, extract from the TS file
     if (!usingJsonSource) {
       const fileContent = fs.readFileSync(filePath, 'utf-8')
-      const packageVarName = getPackageExportName(moduleName)
+      const _packageVarName = getPackageExportName(moduleName)
 
       // Extract the package object directly from the file content
-      const packageObjMatch = fileContent.match(/export const [a-zA-Z0-9_]+ = ({[\s\S]+?})\n\n/m)
+      const packageObjMatch = fileContent.match(/export const \w+ = (\{[\s\S]+?\})\n\n/)
       if (!packageObjMatch || !packageObjMatch[1]) {
         console.error(`Could not extract package object from ${moduleName}.ts`)
         return false
@@ -255,52 +134,57 @@ export async function updateSinglePackageInterface(moduleName: string): Promise<
 
       // Extract array properties using a more robust approach
       // For programs array
-      const programsMatch = fileContent.match(/programs:\s*\[([\s\S]*?)\]/m)
+      const programsMatch = fileContent.match(/programs:\s*\[([\s\S]*?)\]/)
       if (programsMatch && programsMatch[1]) {
         const programs = programsMatch[1].match(/"([^"]*)"/g)
         packageObj.programs = programs ? programs.map(p => p.replace(/"/g, '')) : []
-      } else {
+      }
+      else {
         packageObj.programs = []
       }
 
       // For companions array
-      const companionsMatch = fileContent.match(/companions:\s*\[([\s\S]*?)\]/m)
+      const companionsMatch = fileContent.match(/companions:\s*\[([\s\S]*?)\]/)
       if (companionsMatch && companionsMatch[1]) {
         const companions = companionsMatch[1].match(/"([^"]*)"/g)
         packageObj.companions = companions ? companions.map(c => c.replace(/"/g, '')) : []
-      } else {
+      }
+      else {
         packageObj.companions = []
       }
 
       // For dependencies array
-      const dependenciesMatch = fileContent.match(/dependencies:\s*\[([\s\S]*?)\]/m)
+      const dependenciesMatch = fileContent.match(/dependencies:\s*\[([\s\S]*?)\]/)
       if (dependenciesMatch && dependenciesMatch[1]) {
         const dependencies = dependenciesMatch[1].match(/"([^"]*)"/g)
         packageObj.dependencies = dependencies ? dependencies.map(d => d.replace(/"/g, '')) : []
-      } else {
+      }
+      else {
         packageObj.dependencies = []
       }
 
       // For versions array
-      const versionsMatch = fileContent.match(/versions:\s*\[([\s\S]*?)\]/m)
+      const versionsMatch = fileContent.match(/versions:\s*\[([\s\S]*?)\]/)
       if (versionsMatch && versionsMatch[1]) {
         const versions = versionsMatch[1].match(/"([^"]*)"/g)
         packageObj.versions = versions ? versions.map(v => v.replace(/"/g, '')) : []
-      } else {
+      }
+      else {
         packageObj.versions = []
       }
 
       // Extract fullPath and aliases
-      const fullPathMatch = fileContent.match(/fullPath:\s*"([^"]+)"/s)
+      const fullPathMatch = fileContent.match(/fullPath:\s*"([^"]+)"/)
       if (fullPathMatch) {
         packageObj.fullPath = fullPathMatch[1]
       }
 
-      const aliasesMatch = fileContent.match(/aliases:\s*(\[[^\]]*\]|undefined)/s)
+      const aliasesMatch = fileContent.match(/aliases:\s*(\[[^\]]*\]|undefined)/)
       if (aliasesMatch) {
         if (aliasesMatch[1] === 'undefined') {
           packageObj.aliases = undefined
-        } else {
+        }
+        else {
           const aliases = aliasesMatch[1].match(/"([^"]*)"/g)
           packageObj.aliases = aliases ? aliases.map(a => a.replace(/"/g, '')) : []
         }
@@ -308,13 +192,20 @@ export async function updateSinglePackageInterface(moduleName: string): Promise<
     }
 
     // Fallback defaults if extraction failed
-    if (!packageObj.name) packageObj.name = guessOriginalDomain(moduleName)
-    if (!packageObj.domain) packageObj.domain = guessOriginalDomain(moduleName)
-    if (!packageObj.description) packageObj.description = `Package information for ${guessOriginalDomain(moduleName)}`
-    if (!packageObj.packageYmlUrl) packageObj.packageYmlUrl = `https://github.com/pkgxdev/pantry/tree/main/projects/${packageObj.domain}/package.yml`
-    if (!packageObj.homepageUrl) packageObj.homepageUrl = ""
-    if (!packageObj.githubUrl) packageObj.githubUrl = "https://github.com/pkgxdev/pantry/"
-    if (!packageObj.installCommand) packageObj.installCommand = `sh <(curl https://pkgx.sh) +${packageObj.domain} -- $SHELL -i`
+    if (!packageObj.name)
+      packageObj.name = guessOriginalDomain(moduleName)
+    if (!packageObj.domain)
+      packageObj.domain = guessOriginalDomain(moduleName)
+    if (!packageObj.description)
+      packageObj.description = `Package information for ${guessOriginalDomain(moduleName)}`
+    if (!packageObj.packageYmlUrl)
+      packageObj.packageYmlUrl = `https://github.com/pkgxdev/pantry/tree/main/projects/${packageObj.domain}/package.yml`
+    if (!packageObj.homepageUrl)
+      packageObj.homepageUrl = ''
+    if (!packageObj.githubUrl)
+      packageObj.githubUrl = 'https://github.com/pkgxdev/pantry/'
+    if (!packageObj.installCommand)
+      packageObj.installCommand = `sh <(curl https://pkgx.sh) +${packageObj.domain} -- $SHELL -i`
 
     const packageVarName = getPackageExportName(moduleName)
 
@@ -339,7 +230,8 @@ export type ${typeName} = typeof ${packageVarName}
     console.log(`Updated ${moduleName}.ts with explicit type definition`)
 
     return true
-  } catch (error) {
+  }
+  catch (error) {
     console.error(`Error updating interface for ${moduleName}.ts:`, error)
     return false
   }
@@ -366,30 +258,37 @@ function formatObjectWithAsConst(obj: Record<string, any>): string {
       if (value.length === 0) {
         // Empty array
         lines.push(`  ${key}: [] as const,`)
-      } else if (typeof value[0] === 'string') {
+      }
+      else if (typeof value[0] === 'string') {
         // Format string array with line breaks for readability
         lines.push(`  ${key}: [`)
         for (const item of value) {
           lines.push(`    ${JSON.stringify(item)},`)
         }
         lines.push(`  ] as const,`)
-      } else {
+      }
+      else {
         // Other array types
         lines.push(`  ${key}: ${JSON.stringify(value)} as const,`)
       }
-    } else if (typeof value === 'string') {
+    }
+    else if (typeof value === 'string') {
       // String with 'as const'
       lines.push(`  ${key}: ${JSON.stringify(value)} as const,`)
-    } else if (typeof value === 'number' || typeof value === 'boolean') {
+    }
+    else if (typeof value === 'number' || typeof value === 'boolean') {
       // Numbers and booleans with 'as const'
       lines.push(`  ${key}: ${value} as const,`)
-    } else if (value === null) {
+    }
+    else if (value === null) {
       // Null values
       lines.push(`  ${key}: null,`)
-    } else if (typeof value === 'object') {
+    }
+    else if (typeof value === 'object') {
       // Nested objects
       lines.push(`  ${key}: ${formatObjectWithAsConst(value)},`)
-    } else {
+    }
+    else {
       // Fallback for other types
       lines.push(`  ${key}: ${JSON.stringify(value)},`)
     }
@@ -400,52 +299,6 @@ function formatObjectWithAsConst(obj: Record<string, any>): string {
   return lines.join('\n')
 }
 
-/**
- * Update package files with explicit type definitions
- */
-async function updatePackageFiles(typeDefinitions: Record<string, string>, packageFilter?: string[]): Promise<void> {
-  // Get list of all package files
-  const files = fs.readdirSync(PACKAGES_DIR)
-    .filter(file => file.endsWith('.ts') && file !== 'index.ts')
-    .map(file => path.basename(file, '.ts'))
-
-  // If packageFilter is provided, only process those packages
-  const packagesToProcess = packageFilter ? files.filter(file => packageFilter.includes(file)) : files
-
-  for (const moduleName of packagesToProcess) {
-    try {
-      // Get the type definition for this package
-      const typeDefinition = typeDefinitions[moduleName]
-      if (!typeDefinition) {
-        console.error(`No type definition found for ${moduleName}`)
-        continue
-      }
-
-      const filePath = path.join(PACKAGES_DIR, `${moduleName}.ts`)
-
-      // Delete the file if it exists
-      if (fs.existsSync(filePath)) {
-        try {
-          fs.unlinkSync(filePath)
-          console.log(`Deleted existing file: ${filePath}`)
-        } catch (error) {
-          console.error(`Error deleting file: ${error}`)
-          // Continue anyway
-        }
-      }
-
-      // Write the new content to the file without the PkgxPackage import
-      fs.writeFileSync(filePath, `/**\n * Generated from pkgx.dev data\n */\n${typeDefinition}\n`)
-      console.log(`Updated ${moduleName}.ts with explicit type definition`)
-    } catch (error) {
-      console.error(`Error updating ${moduleName}.ts:`, error)
-    }
-  }
-}
-
-/**
- * Generate the index.ts file content
- */
 async function generateIndexContent(): Promise<string> {
   const imports = await getImports()
 
@@ -480,7 +333,8 @@ async function generateIndexContent(): Promise<string> {
     const propName = convertDomainToVarName(domain)
     const safeImportName = safeVarName(imp.originalModule)
     const packageTypeName = getPackageExportName(imp.originalModule)
-      .charAt(0).toUpperCase() + getPackageExportName(imp.originalModule).slice(1)
+      .charAt(0)
+      .toUpperCase() + getPackageExportName(imp.originalModule).slice(1)
 
     // Use specific type like: acornio: acornio.AcornioPackage
     content += `  ${propName}: ${safeImportName}.${packageTypeName}\n`
@@ -508,11 +362,8 @@ async function generateIndexContent(): Promise<string> {
   return content
 }
 
-// Main function
-export async function generateIndex(packageFilter?: string[]): Promise<string> {
+export async function generateIndex(_packageFilter?: string[]): Promise<string> {
   try {
-    const imports = await getImports()
-
     // Generate the index.ts file without modifying package files
     const content = await generateIndexContent()
     fs.writeFileSync(INDEX_FILE, content)
@@ -526,7 +377,86 @@ export async function generateIndex(packageFilter?: string[]): Promise<string> {
   }
 }
 
-// Call the function directly when run as a script
-if (import.meta.url.endsWith('generateIndex.ts')) {
-  generateIndex()
+/**
+ * Extracts aliases from all package files
+ * @returns A map of alias to domain name
+ */
+async function extractAllAliases(): Promise<Record<string, string>> {
+  const allAliases: Record<string, string> = {}
+
+  // Get all TypeScript files in the packages directory
+  const files = fs.readdirSync(PACKAGES_DIR)
+    .filter(file => file.endsWith('.ts') && file !== 'index.ts' && file !== 'aliases.ts')
+
+  console.log(`Found ${files.length} package files`)
+
+  // Process each file to extract aliases
+  for (const file of files) {
+    try {
+      const filePath = path.join(PACKAGES_DIR, file)
+      const content = fs.readFileSync(filePath, 'utf-8')
+
+      const moduleName = path.basename(file, '.ts')
+      const domain = guessOriginalDomain(moduleName)
+
+      // Extract aliases array from the file content
+      const aliasesMatch = content.match(/aliases:\s*\[([\s\S]*?)\]/)
+      if (aliasesMatch && aliasesMatch[1]) {
+        const aliases = aliasesMatch[1].match(/"([^"]*)"/g)
+        if (aliases) {
+          // Add each alias to the map
+          for (const alias of aliases) {
+            const cleanAlias = alias.replace(/"/g, '')
+            if (cleanAlias) {
+              allAliases[cleanAlias] = domain
+              console.log(`Found alias ${cleanAlias} -> ${domain}`)
+            }
+          }
+        }
+      }
+
+      // Also add the domain itself as an alias
+      allAliases[domain] = domain
+    }
+    catch (error) {
+      console.error(`Error extracting aliases from ${file}:`, error)
+    }
+  }
+
+  return allAliases
+}
+
+/**
+ * Generates the aliases.ts file
+ * @returns Path to the generated file
+ */
+export async function generateAliases(): Promise<string> {
+  try {
+    // Extract all aliases
+    const aliases = await extractAllAliases()
+
+    // Generate the file content
+    let content = '/**\n * Auto-generated aliases for pkgx packages\n */\n\n'
+    content += 'export const aliases: Record<string, string> = {\n'
+
+    // Sort aliases alphabetically
+    const sortedAliases = Object.entries(aliases).sort((a, b) => a[0].localeCompare(b[0]))
+
+    // Add each alias entry
+    for (const [alias, domain] of sortedAliases) {
+      content += `  "${alias}": "${domain}",\n`
+    }
+
+    content += '}\n'
+
+    // Write the file
+    fs.writeFileSync(ALIASES_FILE, content)
+    console.log(`Successfully generated ${ALIASES_FILE} with ${sortedAliases.length} aliases`)
+
+    return ALIASES_FILE
+  }
+  catch (error) {
+    console.error('Error generating aliases file:', error)
+    return ''
+  }
 }

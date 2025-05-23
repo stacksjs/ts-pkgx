@@ -1,7 +1,3 @@
-/**
- * Command-line interface for pkgx-tools
- */
-
 import type { PackageFetchOptions } from '../src/types'
 import fs from 'node:fs'
 import path from 'node:path'
@@ -14,11 +10,9 @@ import {
   DEFAULT_CACHE_EXPIRATION_MINUTES,
   fetchAndSaveAllPackages,
   fetchAndSavePackage,
-  fetchPkgxProjects,
   savePackageAsTypeScript,
 } from '../src/fetch'
-import { generateAliases } from '../src/tools/generateAliases'
-import { generateIndex } from '../src/tools/generateIndex'
+import { generateAliases, generateIndex } from '../src/generate'
 
 // Define interface for CLI options
 interface FetchOptions {

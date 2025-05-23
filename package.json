@@ -45,12 +45,7 @@
     "zip:windows-x64": "zip -j bin/pkgx-tools-windows-x64.zip bin/pkgx-tools-windows-x64.exe",
     "zip:darwin-x64": "zip -j bin/pkgx-tools-darwin-x64.zip bin/pkgx-tools-darwin-x64",
     "zip:darwin-arm64": "zip -j bin/pkgx-tools-darwin-arm64.zip bin/pkgx-tools-darwin-arm64",
-    "demo": "bun run src/demo.ts",
-    "generate:package": "bun run src/tools/generatePackageData.ts",
-    "generate:index": "bun run src/tools/generateIndex.ts",
-    "test:renderer": "bun run src/tools/testRenderer.ts",
     "test:yaml": "bun run src/tools/testYamlFetcher.ts",
-    "test:packages": "bun run src/tools/runTests.ts",
     "lint": "bunx --bun eslint .",
     "lint:fix": "bunx --bun eslint . --fix",
     "fresh": "bunx rimraf node_modules/ bun.lock && bun i",
@@ -65,8 +60,7 @@
     "pkgx:fetch": "bun bin/cli.ts fetch",
     "pkgx:fetch-all": "bun bin/cli.ts fetch --all",
     "pkgx:update": "bun run update:packages",
-    "pkgx:docs": "bun bin/cli.ts generate-docs",
-    "pkgx:cleanup": "bun bin/cli.ts cleanup"
+    "pkgx:docs": "bun bin/cli.ts generate-docs"
   },
   "dependencies": {
     "playwright": "^1.52.0"
