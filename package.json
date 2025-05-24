@@ -5,13 +5,13 @@
   "description": "A library & CLI for managing packages",
   "author": "Chris Breuer <chris@stacksjs.org>",
   "license": "MIT",
-  "homepage": "https://github.com/stacksjs/ts-starter#readme",
+  "homepage": "https://github.com/stacksjs/ts-pkgx#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stacksjs/ts-starter.git"
+    "url": "git+https://github.com/stacksjs/ts-pkgx.git"
   },
   "bugs": {
-    "url": "https://github.com/stacksjs/ts-starter/issues"
+    "url": "https://github.com/stacksjs/ts-pkgx/issues"
   },
   "keywords": ["pkgx", "pantry", "homebrew", "typescript", "bun", "package", "cli", "library"],
   "exports": {
@@ -30,7 +30,8 @@
   },
   "files": ["README.md", "dist"],
   "scripts": {
-    "build": "bun build.ts && bun run compile",
+    "build": "bun build.ts",
+    "build:soon": "bun build.ts && bun run compile",
     "compile": "bun build ./bin/cli.ts --compile --minify --outfile bin/pkgx-tools",
     "compile:all": "bun run compile:linux-x64 && bun run compile:linux-arm64 && bun run compile:windows-x64 && bun run compile:darwin-x64 && bun run compile:darwin-arm64",
     "compile:linux-x64": "bun build ./bin/cli.ts --compile --minify --target=bun-linux-x64 --outfile bin/pkgx-tools-linux-x64",
@@ -70,11 +71,14 @@
     "@stacksjs/eslint-config": "^4.14.0-beta.3",
     "@types/bun": "^1.2.14",
     "bumpp": "^10.1.1",
-    "bun-plugin-dtsx": "^0.21.12",
+    "bun-plugin-dtsx": "0.9.4",
     "changelogen": "^0.6.1",
     "lint-staged": "^16.0.0",
     "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3"
+  },
+  "overrides": {
+    "@stacksjs/dtsx": "0.9.4"
   },
   "lint-staged": {
     "*.{js,ts}": "bunx --bun eslint . --fix"
