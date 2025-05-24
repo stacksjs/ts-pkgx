@@ -33,6 +33,16 @@ export const DEFAULT_CACHE_DIR = '.cache/packages'
 export const DEFAULT_CACHE_EXPIRATION_MINUTES = 1440
 
 /**
+ * Default timeout for all operations in milliseconds (10 seconds)
+ * This applies to:
+ * - Browser navigation
+ * - Package fetching operations
+ * - Individual package processing
+ * Can be overridden via CLI --timeout option
+ */
+export const DEFAULT_TIMEOUT_MS = 10000
+
+/**
  * Known packages list as a fallback if all other methods fail
  */
 const ALL_KNOWN_PACKAGES = [
@@ -1164,7 +1174,7 @@ async function acquireBrowser(timeout: number): Promise<Browser> {
     try {
       browser = await chromium.launch({
         headless: true,
-        timeout: timeout / 2,
+        timeout,
       })
     }
     catch (error) {
@@ -1284,7 +1294,7 @@ export async function fetchPkgxPackage(
 
   try {
     // Set a maximum time for browser operations
-    const browserTimeout = options.timeout || 30000
+    const browserTimeout = options.timeout || DEFAULT_TIMEOUT_MS
     const debugMode = options.debug || false
 
     // Try to use the provided browser from the pool if available
@@ -1344,7 +1354,7 @@ export async function fetchPkgxPackage(
       })
 
       // Wait a bit for client-side rendering to finish
-      await page.waitForTimeout(3000)
+      await page.waitForTimeout(2000)
 
       // Take a screenshot if debug mode is enabled
       if (debugMode) {
@@ -1778,7 +1788,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
   // Start the periodic cleanup task
   startPeriodicCleanup()
 
-  const timeout = options.timeout || 30000
+  const timeout = options.timeout || DEFAULT_TIMEOUT_MS
   const outputDir = options.outputDir || 'packages'
   const cacheDir = options.cacheDir || DEFAULT_CACHE_DIR
   const useCache = options.cache !== false
@@ -1787,6 +1797,8 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
 
   // Limit concurrency to prevent overload
   const actualConcurrency = Math.min(concurrency, 5)
+
+  console.log(`Using timeout: ${timeout}ms for all operations`)
 
   // Track progress and timing
   const startTime = Date.now()
@@ -1936,7 +1948,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
         )
 
         // Set a package-specific timeout as a safety measure
-        const packageTimeout = timeout * 3 // 3x the normal timeout
+        const packageTimeout = timeout // Use the same flat timeout
         const result = await Promise.race([
           fetchPromise,
           new Promise<null>((resolve) => {
@@ -2013,7 +2025,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
     console.log(`Processing ${allPackageNames.length} packages with concurrency of ${actualConcurrency}...`)
 
     // Create chunks for better progress reporting
-    const chunkSize = Math.min(actualConcurrency, 10) // Use smaller chunks for better progress reporting
+    const chunkSize = Math.min(actualConcurrency, 3) // Use smaller chunks for better progress reporting
     const chunks: string[][] = []
     for (let i = 0; i < allPackageNames.length; i += chunkSize) {
       chunks.push(allPackageNames.slice(i, i + chunkSize))
@@ -2045,10 +2057,10 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       console.log(`${progressBar} Completed chunk ${chunkIndex + 1}/${chunks.length}, processed ${processedCount}/${allPackageNames.length} (${completedPercent}%), ${failedPackages.length} failed, ${remainingCount} remaining, elapsed time: ${elapsedSeconds}s`)
 
       // Periodic cleanup of browser resources to prevent memory issues
-      // Do cleanup every 5 chunks or if there are more than MAX_BROWSER_POOL_SIZE browsers
+      // Do cleanup every 3 chunks or if there are more than MAX_BROWSER_POOL_SIZE browsers
       if (browserPool.length > MAX_BROWSER_POOL_SIZE
-        || (chunkIndex + 1) % 5 === 0
-        || (now - lastCleanupTime > 2 * 60 * 1000)) { // 2 minutes
+        || (chunkIndex + 1) % 3 === 0
+        || (now - lastCleanupTime > 1 * 60 * 1000)) { // 1 minute
         console.log('Performing periodic browser resource cleanup...')
         await cleanupBrowserResources()
         lastCleanupTime = now
@@ -2349,18 +2361,14 @@ export async function fetchAndSavePackage(
       }
     }
 
-    // Adjust timeout based on the package difficulty or retry attempt
-    const isComplexPackage = ['go', 'rust', 'postgresql.org', 'ruby', 'bun'].some(pkg =>
-      packageName.includes(pkg),
-    )
-    const baseTimeout = isComplexPackage ? timeout * 1.5 : timeout
-    const actualTimeout = Math.round(baseTimeout * (1 + (retryNumber - 1) * 0.2))
+    // Use flat timeout for all packages - no special handling
+    const actualTimeout = timeout
 
     console.log(`Using timeout for ${packageName} (attempt ${retryNumber}): ${actualTimeout}ms`)
 
     // Set an overall operation timeout to prevent hanging the entire process
     // This is different from the browser navigation timeout
-    const operationTimeout = actualTimeout * 2 // Double the browser timeout
+    const operationTimeout = actualTimeout // Use the same timeout
     const operationTimeoutPromise = new Promise<{ success: boolean }>((resolve) => {
       setTimeout(() => {
         console.error(`Operation timeout for ${packageName} after ${operationTimeout}ms`)
@@ -2485,7 +2493,7 @@ export async function fetchAndSavePackage(
             try {
               altBrowser = await chromium.launch({
                 headless: true,
-                timeout: actualTimeout / 2, // Shorter timeout for browser launch
+                timeout: actualTimeout, // Use the same timeout
               })
               const context = await altBrowser.newContext()
               const page = await context.newPage()
@@ -2496,12 +2504,12 @@ export async function fetchAndSavePackage(
                 console.error(`Trying direct URL: ${directUrl}`)
 
                 await page.goto(directUrl, {
-                  timeout: actualTimeout * 1.5, // Use a longer timeout
+                  timeout: actualTimeout, // Use the same timeout
                   waitUntil: 'networkidle',
                 })
 
-                // Wait longer for client-side rendering
-                await page.waitForTimeout(5000)
+                // Wait for client-side rendering
+                await page.waitForTimeout(2000)
 
                 // Create a minimal package info object based on what we know
                 const packageInfo: PkgxPackage = {
@@ -2715,7 +2723,7 @@ export async function fetchAndSavePackage(
     console.error(`Attempt ${retryNumber} failed for ${packageName}, retrying...`, error)
 
     // Short pause before retrying
-    await new Promise(resolve => setTimeout(resolve, 1000 * retryNumber)) // Increase wait time for each retry
+    await new Promise(resolve => setTimeout(resolve, 500 * retryNumber)) // Shorter wait time for each retry
 
     // Retry with same base timeout (actual timeout will still increase due to retry counter)
     return fetchAndSavePackage(packageName, outputDir, timeout, saveAsJson, retryNumber + 1, maxRetries, debug, options)

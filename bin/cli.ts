@@ -8,6 +8,7 @@ import {
   cleanupBrowserResources,
   DEFAULT_CACHE_DIR,
   DEFAULT_CACHE_EXPIRATION_MINUTES,
+  DEFAULT_TIMEOUT_MS,
   fetchAndSaveAllPackages,
   fetchAndSavePackage,
   savePackageAsTypeScript,
@@ -80,7 +81,7 @@ cli
   .option('-n, --no-cache', 'Disable caching')
   .option('-e, --cache-expiration <minutes>', 'Cache expiration time in minutes', { default: DEFAULT_CACHE_EXPIRATION_MINUTES })
   .option('-l, --limit <count>', 'Limit the number of packages to fetch (use with --all)')
-  .option('-t, --timeout <ms>', 'Timeout for network requests in milliseconds', { default: 30000 })
+  .option('-t, --timeout <ms>', 'Timeout for network requests in milliseconds', { default: DEFAULT_TIMEOUT_MS })
   .option('-r, --max-retries <count>', 'Maximum number of retry attempts for failed requests', { default: 3 })
   .option('-j, --json', 'Save as JSON instead of TypeScript')
   .option('-d, --debug', 'Enable debug mode (save screenshots)')
@@ -95,7 +96,7 @@ cli
       cache = true,
       cacheExpiration = DEFAULT_CACHE_EXPIRATION_MINUTES,
       limit,
-      timeout = 30000,
+      timeout = DEFAULT_TIMEOUT_MS,
       maxRetries = 3,
       json: saveAsJson = false,
       debug = false,
