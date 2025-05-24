@@ -12,6 +12,7 @@ export const githubcomdiniboy1123usquePackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '1.1.1',
     '1.1.0',
     '1.0.4',
   ] as const,

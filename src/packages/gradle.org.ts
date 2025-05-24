@@ -32,6 +32,7 @@ export const gradleorgPackage = {
     '8.2.1',
   ] as const,
   fullPath: 'gradle.org' as const,
+  aliases: [] as const,
 }
 
 export type GradleorgPackage = typeof gradleorgPackage

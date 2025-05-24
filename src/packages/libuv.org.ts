@@ -22,6 +22,7 @@ export const libuvorgPackage = {
     '1.44.2',
   ] as const,
   fullPath: 'libuv.org' as const,
+  aliases: [] as const,
 }
 
 export type LibuvorgPackage = typeof libuvorgPackage

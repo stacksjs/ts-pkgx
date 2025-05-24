@@ -32,6 +32,7 @@ export const julialangorgPackage = {
     '1.9.3',
   ] as const,
   fullPath: 'julialang.org' as const,
+  aliases: [] as const,
 }
 
 export type JulialangorgPackage = typeof julialangorgPackage

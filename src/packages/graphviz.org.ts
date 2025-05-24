@@ -70,6 +70,7 @@ export const graphvizorgPackage = {
     '7.1.0',
   ] as const,
   fullPath: 'graphviz.org' as const,
+  aliases: [] as const,
 }
 
 export type GraphvizorgPackage = typeof graphvizorgPackage

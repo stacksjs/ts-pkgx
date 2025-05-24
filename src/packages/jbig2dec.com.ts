@@ -15,6 +15,7 @@ export const jbig2deccomPackage = {
     '0.19.0',
   ] as const,
   fullPath: 'jbig2dec.com' as const,
+  aliases: [] as const,
 }
 
 export type Jbig2deccomPackage = typeof jbig2deccomPackage

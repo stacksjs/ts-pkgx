@@ -38,6 +38,7 @@ export const k6ioPackage = {
     '0.42.0',
   ] as const,
   fullPath: 'k6.io' as const,
+  aliases: [] as const,
 }
 
 export type K6ioPackage = typeof k6ioPackage

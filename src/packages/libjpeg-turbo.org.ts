@@ -26,6 +26,7 @@ export const libjpegturboorgPackage = {
     '2.1.5.1',
   ] as const,
   fullPath: 'libjpeg-turbo.org' as const,
+  aliases: [] as const,
 }
 
 export type LibjpegturboorgPackage = typeof libjpegturboorgPackage

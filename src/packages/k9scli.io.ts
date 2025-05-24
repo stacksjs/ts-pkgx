@@ -66,6 +66,7 @@ export const k9scliioPackage = {
     '0.27.3',
   ] as const,
   fullPath: 'k9scli.io' as const,
+  aliases: [] as const,
 }
 
 export type K9scliioPackage = typeof k9scliioPackage

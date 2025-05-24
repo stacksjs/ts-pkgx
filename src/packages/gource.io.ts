@@ -24,6 +24,7 @@ export const gourceioPackage = {
     '0.54.0',
   ] as const,
   fullPath: 'gource.io' as const,
+  aliases: [] as const,
 }
 
 export type GourceioPackage = typeof gourceioPackage

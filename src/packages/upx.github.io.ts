@@ -19,6 +19,7 @@ export const upxgithubioPackage = {
     '4.2.4',
   ] as const,
   fullPath: 'upx.github.io' as const,
+  aliases: [] as const,
 }
 
 export type UpxgithubioPackage = typeof upxgithubioPackage

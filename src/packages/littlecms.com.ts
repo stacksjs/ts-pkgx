@@ -25,6 +25,7 @@ export const littlecmscomPackage = {
     '2.12.0',
   ] as const,
   fullPath: 'littlecms.com' as const,
+  aliases: [] as const,
 }
 
 export type LittlecmscomPackage = typeof littlecmscomPackage

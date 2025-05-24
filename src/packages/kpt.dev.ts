@@ -17,6 +17,7 @@ export const kptdevPackage = {
     '0.39.3',
   ] as const,
   fullPath: 'kpt.dev' as const,
+  aliases: [] as const,
 }
 
 export type KptdevPackage = typeof kptdevPackage

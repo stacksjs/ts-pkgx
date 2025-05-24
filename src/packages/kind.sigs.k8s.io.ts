@@ -25,6 +25,7 @@ export const kindsigsk8sioPackage = {
     '0.19.0',
   ] as const,
   fullPath: 'kind.sigs.k8s.io' as const,
+  aliases: [] as const,
 }
 
 export type Kindsigsk8sioPackage = typeof kindsigsk8sioPackage

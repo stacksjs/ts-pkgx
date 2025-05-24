@@ -26,6 +26,7 @@ export const ktlintgithubioPackage = {
     '0.49.1',
   ] as const,
   fullPath: 'ktlint.github.io' as const,
+  aliases: [] as const,
 }
 
 export type KtlintgithubioPackage = typeof ktlintgithubioPackage

@@ -35,6 +35,7 @@ export const laravelcomPackage = {
     '5.8.3',
   ] as const,
   fullPath: 'laravel.com' as const,
+  aliases: [] as const,
 }
 
 export type LaravelcomPackage = typeof laravelcomPackage

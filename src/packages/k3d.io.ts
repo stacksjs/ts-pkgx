@@ -31,6 +31,7 @@ export const k3dioPackage = {
     '5.4.9',
   ] as const,
   fullPath: 'k3d.io' as const,
+  aliases: [] as const,
 }
 
 export type K3dioPackage = typeof k3dioPackage

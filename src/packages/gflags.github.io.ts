@@ -13,6 +13,7 @@ export const gflagsgithubioPackage = {
     '2.2.2',
   ] as const,
   fullPath: 'gflags.github.io' as const,
+  aliases: [] as const,
 }
 
 export type GflagsgithubioPackage = typeof gflagsgithubioPackage

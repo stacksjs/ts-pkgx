@@ -24,6 +24,7 @@ export const kubecmcloudPackage = {
     '0.28.0',
   ] as const,
   fullPath: 'kubecm.cloud' as const,
+  aliases: [] as const,
 }
 
 export type KubecmcloudPackage = typeof kubecmcloudPackage

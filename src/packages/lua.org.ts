@@ -22,6 +22,7 @@ export const luaorgPackage = {
     '5.4.4',
   ] as const,
   fullPath: 'lua.org' as const,
+  aliases: [] as const,
 }
 
 export type LuaorgPackage = typeof luaorgPackage

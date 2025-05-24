@@ -32,6 +32,7 @@ export const liteclicomPackage = {
     '1.10.0',
   ] as const,
   fullPath: 'litecli.com' as const,
+  aliases: [] as const,
 }
 
 export type LiteclicomPackage = typeof liteclicomPackage

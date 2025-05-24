@@ -26,6 +26,7 @@ export const linuxpamorgPackage = {
     '1.5.3',
   ] as const,
   fullPath: 'linux-pam.org' as const,
+  aliases: [] as const,
 }
 
 export type LinuxpamorgPackage = typeof linuxpamorgPackage

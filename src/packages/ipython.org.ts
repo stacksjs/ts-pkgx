@@ -59,6 +59,7 @@ export const ipythonorgPackage = {
     '8.12.0',
   ] as const,
   fullPath: 'ipython.org' as const,
+  aliases: [] as const,
 }
 
 export type IpythonorgPackage = typeof ipythonorgPackage

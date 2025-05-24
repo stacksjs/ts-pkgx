@@ -16,6 +16,7 @@ export const libexifgithubioPackage = {
     '0.6.24',
   ] as const,
   fullPath: 'libexif.github.io' as const,
+  aliases: [] as const,
 }
 
 export type LibexifgithubioPackage = typeof libexifgithubioPackage

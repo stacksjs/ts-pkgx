@@ -30,6 +30,7 @@ export const fxwtfPackage = {
     '24.1.0',
   ] as const,
   fullPath: 'fx.wtf' as const,
+  aliases: [] as const,
 }
 
 export type FxwtfPackage = typeof fxwtfPackage

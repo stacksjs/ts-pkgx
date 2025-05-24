@@ -36,6 +36,7 @@ export const libarchiveorgPackage = {
     '3.6.2',
   ] as const,
   fullPath: 'libarchive.org' as const,
+  aliases: [] as const,
 }
 
 export type LibarchiveorgPackage = typeof libarchiveorgPackage

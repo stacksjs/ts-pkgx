@@ -28,6 +28,7 @@ export const lftpyarruPackage = {
     '4.9.1',
   ] as const,
   fullPath: 'lftp.yar.ru' as const,
+  aliases: [] as const,
 }
 
 export type LftpyarruPackage = typeof lftpyarruPackage

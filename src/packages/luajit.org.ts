@@ -16,6 +16,7 @@ export const luajitorgPackage = {
     '2.1.0',
   ] as const,
   fullPath: 'luajit.org' as const,
+  aliases: [] as const,
 }
 
 export type LuajitorgPackage = typeof luajitorgPackage

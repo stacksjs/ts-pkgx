@@ -33,6 +33,7 @@ export const jumppaddevPackage = {
     '0.11.0',
   ] as const,
   fullPath: 'jumppad.dev' as const,
+  aliases: [] as const,
 }
 
 export type JumppaddevPackage = typeof jumppaddevPackage

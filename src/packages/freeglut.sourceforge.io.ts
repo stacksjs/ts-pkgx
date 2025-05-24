@@ -23,6 +23,7 @@ export const freeglutsourceforgeioPackage = {
     '3.4.0',
   ] as const,
   fullPath: 'freeglut.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
 export type FreeglutsourceforgeioPackage = typeof freeglutsourceforgeioPackage

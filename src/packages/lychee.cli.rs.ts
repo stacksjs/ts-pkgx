@@ -21,6 +21,7 @@ export const lycheeclirsPackage = {
     '0.14.1',
   ] as const,
   fullPath: 'lychee.cli.rs' as const,
+  aliases: [] as const,
 }
 
 export type LycheeclirsPackage = typeof lycheeclirsPackage

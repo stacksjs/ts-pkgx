@@ -36,6 +36,7 @@ export const jbangdevPackage = {
     '0.110.1',
   ] as const,
   fullPath: 'jbang.dev' as const,
+  aliases: [] as const,
 }
 
 export type JbangdevPackage = typeof jbangdevPackage

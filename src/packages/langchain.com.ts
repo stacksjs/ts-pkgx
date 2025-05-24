@@ -52,6 +52,7 @@ export const langchaincomPackage = {
     '0.0.343',
   ] as const,
   fullPath: 'langchain.com' as const,
+  aliases: [] as const,
 }
 
 export type LangchaincomPackage = typeof langchaincomPackage

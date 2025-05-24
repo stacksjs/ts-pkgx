@@ -40,6 +40,7 @@ export const rubocoporgPackage = {
     '1.68.0',
   ] as const,
   fullPath: 'rubocop.org' as const,
+  aliases: [] as const,
 }
 
 export type RubocoporgPackage = typeof rubocoporgPackage

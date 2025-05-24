@@ -16,6 +16,7 @@ export const lz4orgPackage = {
     '1.9.4',
   ] as const,
   fullPath: 'lz4.org' as const,
+  aliases: [] as const,
 }
 
 export type Lz4orgPackage = typeof lz4orgPackage

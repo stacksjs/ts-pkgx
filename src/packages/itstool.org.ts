@@ -18,6 +18,7 @@ export const itstoolorgPackage = {
     '2.0.7',
   ] as const,
   fullPath: 'itstool.org' as const,
+  aliases: [] as const,
 }
 
 export type ItstoolorgPackage = typeof itstoolorgPackage

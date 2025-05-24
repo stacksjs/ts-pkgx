@@ -21,6 +21,7 @@ export const htopdevPackage = {
     '3.2.1',
   ] as const,
   fullPath: 'htop.dev' as const,
+  aliases: [] as const,
 }
 
 export type HtopdevPackage = typeof htopdevPackage

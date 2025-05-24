@@ -45,6 +45,7 @@ export const llmdatasetteioPackage = {
     '0.6.1',
   ] as const,
   fullPath: 'llm.datasette.io' as const,
+  aliases: [] as const,
 }
 
 export type LlmdatasetteioPackage = typeof llmdatasetteioPackage

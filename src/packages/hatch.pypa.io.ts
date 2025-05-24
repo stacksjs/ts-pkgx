@@ -34,6 +34,7 @@ export const hatchpypaioPackage = {
     '1.7.0',
   ] as const,
   fullPath: 'hatch.pypa.io' as const,
+  aliases: [] as const,
 }
 
 export type HatchpypaioPackage = typeof hatchpypaioPackage

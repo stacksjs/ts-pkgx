@@ -54,6 +54,7 @@ export const justsystemsPackage = {
     '1.6.0',
   ] as const,
   fullPath: 'just.systems' as const,
+  aliases: [] as const,
 }
 
 export type JustsystemsPackage = typeof justsystemsPackage

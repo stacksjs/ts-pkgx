@@ -56,6 +56,7 @@ export const localaiioPackage = {
     '2.6.1',
   ] as const,
   fullPath: 'localai.io' as const,
+  aliases: [] as const,
 }
 
 export type LocalaiioPackage = typeof localaiioPackage

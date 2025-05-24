@@ -54,6 +54,7 @@ export const libsdlorgPackage = {
     '2.26.5',
   ] as const,
   fullPath: 'libsdl.org' as const,
+  aliases: [] as const,
 }
 
 export type LibsdlorgPackage = typeof libsdlorgPackage

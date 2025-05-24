@@ -68,6 +68,7 @@ export const kubesharkcoPackage = {
     '51.0.0',
   ] as const,
   fullPath: 'kubeshark.co' as const,
+  aliases: [] as const,
 }
 
 export type KubesharkcoPackage = typeof kubesharkcoPackage

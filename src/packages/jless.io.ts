@@ -18,6 +18,7 @@ export const jlessioPackage = {
     '0.9.0',
   ] as const,
   fullPath: 'jless.io' as const,
+  aliases: [] as const,
 }
 
 export type JlessioPackage = typeof jlessioPackage

@@ -22,6 +22,7 @@ export const httpieioPackage = {
     '3.2.1',
   ] as const,
   fullPath: 'httpie.io' as const,
+  aliases: [] as const,
 }
 
 export type HttpieioPackage = typeof httpieioPackage

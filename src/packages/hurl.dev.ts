@@ -27,6 +27,7 @@ export const hurldevPackage = {
     '4.0.0',
   ] as const,
   fullPath: 'hurl.dev' as const,
+  aliases: [] as const,
 }
 
 export type HurldevPackage = typeof hurldevPackage

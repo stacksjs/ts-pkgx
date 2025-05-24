@@ -21,6 +21,7 @@ export const kagglecomPackage = {
     '1.5.16',
   ] as const,
   fullPath: 'kaggle.com' as const,
+  aliases: [] as const,
 }
 
 export type KagglecomPackage = typeof kagglecomPackage

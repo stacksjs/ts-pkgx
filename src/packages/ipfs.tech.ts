@@ -42,6 +42,7 @@ export const ipfstechPackage = {
     '0.16.0',
   ] as const,
   fullPath: 'ipfs.tech' as const,
+  aliases: [] as const,
 }
 
 export type IpfstechPackage = typeof ipfstechPackage

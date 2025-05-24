@@ -67,6 +67,7 @@ export const gittowncomPackage = {
     '9.0.1',
   ] as const,
   fullPath: 'git-town.com' as const,
+  aliases: [] as const,
 }
 
 export type GittowncomPackage = typeof gittowncomPackage

@@ -25,6 +25,7 @@ export const lunarvimorgPackage = {
     '1.3.0',
   ] as const,
   fullPath: 'lunarvim.org' as const,
+  aliases: [] as const,
 }
 
 export type LunarvimorgPackage = typeof lunarvimorgPackage

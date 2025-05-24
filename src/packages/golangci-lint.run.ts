@@ -66,6 +66,7 @@ export const golangcilintrunPackage = {
     '1.51.2',
   ] as const,
   fullPath: 'golangci-lint.run' as const,
+  aliases: [] as const,
 }
 
 export type GolangcilintrunPackage = typeof golangcilintrunPackage

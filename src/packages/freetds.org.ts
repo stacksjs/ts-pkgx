@@ -57,6 +57,7 @@ export const freetdsorgPackage = {
     '1.3.18',
   ] as const,
   fullPath: 'freetds.org' as const,
+  aliases: [] as const,
 }
 
 export type FreetdsorgPackage = typeof freetdsorgPackage

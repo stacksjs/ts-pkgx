@@ -78,6 +78,7 @@ export const mailpitaxllentorgPackage = {
     '1.9.10',
   ] as const,
   fullPath: 'mailpit.axllent.org' as const,
+  aliases: [] as const,
 }
 
 export type MailpitaxllentorgPackage = typeof mailpitaxllentorgPackage

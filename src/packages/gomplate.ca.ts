@@ -25,6 +25,7 @@ export const gomplatecaPackage = {
     '3.11.4',
   ] as const,
   fullPath: 'gomplate.ca' as const,
+  aliases: [] as const,
 }
 
 export type GomplatecaPackage = typeof gomplatecaPackage

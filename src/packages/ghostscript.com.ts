@@ -65,6 +65,7 @@ export const ghostscriptcomPackage = {
     '10.1.2',
   ] as const,
   fullPath: 'ghostscript.com' as const,
+  aliases: [] as const,
 }
 
 export type GhostscriptcomPackage = typeof ghostscriptcomPackage

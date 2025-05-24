@@ -47,6 +47,7 @@ export const limavmioPackage = {
     '0.16.0',
   ] as const,
   fullPath: 'lima-vm.io' as const,
+  aliases: [] as const,
 }
 
 export type LimavmioPackage = typeof limavmioPackage

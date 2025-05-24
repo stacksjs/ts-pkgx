@@ -17,6 +17,7 @@ export const robotframeworkorgPackage = {
     '7.2.2',
   ] as const,
   fullPath: 'robotframework.org' as const,
+  aliases: [] as const,
 }
 
 export type RobotframeworkorgPackage = typeof robotframeworkorgPackage

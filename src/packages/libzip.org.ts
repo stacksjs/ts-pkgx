@@ -22,6 +22,7 @@ export const libziporgPackage = {
     'openssl.org^1.1',
   ] as const,
   versions: [
+    '1.11.4',
     '1.11.3',
     '1.11.2',
     '1.11.1',

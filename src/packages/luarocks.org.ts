@@ -22,6 +22,7 @@ export const luarocksorgPackage = {
     '3.9.2',
   ] as const,
   fullPath: 'luarocks.org' as const,
+  aliases: [] as const,
 }
 
 export type LuarocksorgPackage = typeof luarocksorgPackage

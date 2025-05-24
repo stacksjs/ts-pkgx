@@ -16,6 +16,7 @@ export const liburcuorgPackage = {
     '0.15.0',
   ] as const,
   fullPath: 'liburcu.org' as const,
+  aliases: [] as const,
 }
 
 export type LiburcuorgPackage = typeof liburcuorgPackage

@@ -28,6 +28,7 @@ export const lavinmqcomPackage = {
     '1.3.1',
   ] as const,
   fullPath: 'lavinmq.com' as const,
+  aliases: [] as const,
 }
 
 export type LavinmqcomPackage = typeof lavinmqcomPackage

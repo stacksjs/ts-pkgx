@@ -29,6 +29,7 @@ export const leolangorgPackage = {
     '1.10.0',
   ] as const,
   fullPath: 'leo-lang.org' as const,
+  aliases: [] as const,
 }
 
 export type LeolangorgPackage = typeof leolangorgPackage

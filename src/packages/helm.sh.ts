@@ -45,6 +45,7 @@ export const helmshPackage = {
     '3.11.1',
   ] as const,
   fullPath: 'helm.sh' as const,
+  aliases: [] as const,
 }
 
 export type HelmshPackage = typeof helmshPackage

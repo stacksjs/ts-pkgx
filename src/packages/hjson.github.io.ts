@@ -16,6 +16,7 @@ export const hjsongithubioPackage = {
     '1.0.0',
   ] as const,
   fullPath: 'hjson.github.io' as const,
+  aliases: [] as const,
 }
 
 export type HjsongithubioPackage = typeof hjsongithubioPackage

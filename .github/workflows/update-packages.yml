@@ -30,13 +30,16 @@ jobs:
         run: bunx playwright install chromium --with-deps
 
       - name: Fetch all packages
-        run: bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 15000
+        run: bun bin/cli.ts fetch --all --verbose --concurrency 6 --timeout 10000
+        timeout-minutes: 45
 
       - name: Generate index
         run: bun bin/cli.ts generate-index
+        timeout-minutes: 5
 
       - name: Generate aliases
         run: bun bin/cli.ts generate-aliases
+        timeout-minutes: 5
 
       - name: Check for changes
         id: git-check

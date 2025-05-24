@@ -31,6 +31,7 @@ export const kubebuilderioPackage = {
     '3.12.0',
   ] as const,
   fullPath: 'kubebuilder.io' as const,
+  aliases: [] as const,
 }
 
 export type KubebuilderioPackage = typeof kubebuilderioPackage

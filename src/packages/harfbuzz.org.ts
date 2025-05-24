@@ -51,6 +51,7 @@ export const harfbuzzorgPackage = {
     '5.3.1',
   ] as const,
   fullPath: 'harfbuzz.org' as const,
+  aliases: [] as const,
 }
 
 export type HarfbuzzorgPackage = typeof harfbuzzorgPackage

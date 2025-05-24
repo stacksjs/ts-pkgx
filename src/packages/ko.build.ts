@@ -18,6 +18,7 @@ export const kobuildPackage = {
     '0.16.0',
   ] as const,
   fullPath: 'ko.build' as const,
+  aliases: [] as const,
 }
 
 export type KobuildPackage = typeof kobuildPackage

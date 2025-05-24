@@ -21,6 +21,7 @@ export const giflibsourceforgeioPackage = {
     '5.2.1',
   ] as const,
   fullPath: 'giflib.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
 export type GiflibsourceforgeioPackage = typeof giflibsourceforgeioPackage

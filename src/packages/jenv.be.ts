@@ -16,6 +16,7 @@ export const jenvbePackage = {
     '0.5.6',
   ] as const,
   fullPath: 'jenv.be' as const,
+  aliases: [] as const,
 }
 
 export type JenvbePackage = typeof jenvbePackage

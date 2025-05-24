@@ -52,6 +52,7 @@ export const goreleasercomPackage = {
     '1.20.0',
   ] as const,
   fullPath: 'goreleaser.com' as const,
+  aliases: [] as const,
 }
 
 export type GoreleasercomPackage = typeof goreleasercomPackage

@@ -17,6 +17,7 @@ export const soldeerxyzPackage = {
     '0.5.2',
   ] as const,
   fullPath: 'soldeer.xyz' as const,
+  aliases: [] as const,
 }
 
 export type SoldeerxyzPackage = typeof soldeerxyzPackage

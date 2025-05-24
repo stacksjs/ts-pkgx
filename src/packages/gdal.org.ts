@@ -105,6 +105,7 @@ export const gdalorgPackage = {
     '3.7.2',
   ] as const,
   fullPath: 'gdal.org' as const,
+  aliases: [] as const,
 }
 
 export type GdalorgPackage = typeof gdalorgPackage

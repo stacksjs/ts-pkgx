@@ -15,6 +15,7 @@ export const jetporchcomPackage = {
     '0.0.1',
   ] as const,
   fullPath: 'jetporch.com' as const,
+  aliases: [] as const,
 }
 
 export type JetporchcomPackage = typeof jetporchcomPackage

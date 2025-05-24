@@ -12,6 +12,7 @@ export const hasuraioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '2.48.1',
     '2.48.0',
     '2.47.0',
     '2.46.0',
@@ -64,6 +65,7 @@ export const hasuraioPackage = {
     '2.11.10',
   ] as const,
   fullPath: 'hasura.io' as const,
+  aliases: [] as const,
 }
 
 export type HasuraioPackage = typeof hasuraioPackage

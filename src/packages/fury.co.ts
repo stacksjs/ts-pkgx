@@ -17,6 +17,7 @@ export const furycoPackage = {
     '0.21.0',
   ] as const,
   fullPath: 'fury.co' as const,
+  aliases: [] as const,
 }
 
 export type FurycoPackage = typeof furycoPackage

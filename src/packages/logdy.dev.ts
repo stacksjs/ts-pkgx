@@ -27,6 +27,7 @@ export const logdydevPackage = {
     '0.9.0',
   ] as const,
   fullPath: 'logdy.dev' as const,
+  aliases: [] as const,
 }
 
 export type LogdydevPackage = typeof logdydevPackage

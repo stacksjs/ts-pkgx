@@ -25,6 +25,7 @@ export const gtssourceforgenetPackage = {
     '0.7.6',
   ] as const,
   fullPath: 'gts.sourceforge.net' as const,
+  aliases: [] as const,
 }
 
 export type GtssourceforgenetPackage = typeof gtssourceforgenetPackage

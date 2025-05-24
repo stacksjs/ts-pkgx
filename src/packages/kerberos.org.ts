@@ -48,6 +48,7 @@ export const kerberosorgPackage = {
     '1.20.1',
   ] as const,
   fullPath: 'kerberos.org' as const,
+  aliases: [] as const,
 }
 
 export type KerberosorgPackage = typeof kerberosorgPackage

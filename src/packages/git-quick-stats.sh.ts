@@ -31,6 +31,7 @@ export const gitquickstatsshPackage = {
     '2.4.1',
   ] as const,
   fullPath: 'git-quick-stats.sh' as const,
+  aliases: [] as const,
 }
 
 export type GitquickstatsshPackage = typeof gitquickstatsshPackage

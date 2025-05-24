@@ -17,6 +17,7 @@ export const keephqdevPackage = {
     '0.0.0',
   ] as const,
   fullPath: 'keephq.dev' as const,
+  aliases: [] as const,
 }
 
 export type KeephqdevPackage = typeof keephqdevPackage

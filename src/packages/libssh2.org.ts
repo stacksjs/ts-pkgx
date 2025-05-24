@@ -18,6 +18,7 @@ export const libssh2orgPackage = {
     '1.10.0',
   ] as const,
   fullPath: 'libssh2.org' as const,
+  aliases: [] as const,
 }
 
 export type Libssh2orgPackage = typeof libssh2orgPackage

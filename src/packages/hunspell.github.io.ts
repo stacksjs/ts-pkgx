@@ -25,6 +25,7 @@ export const hunspellgithubioPackage = {
     '1.7.2',
   ] as const,
   fullPath: 'hunspell.github.io' as const,
+  aliases: [] as const,
 }
 
 export type HunspellgithubioPackage = typeof hunspellgithubioPackage

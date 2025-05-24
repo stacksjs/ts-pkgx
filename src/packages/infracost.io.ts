@@ -24,6 +24,7 @@ export const infracostioPackage = {
     '0.10.32',
   ] as const,
   fullPath: 'infracost.io' as const,
+  aliases: [] as const,
 }
 
 export type InfracostioPackage = typeof infracostioPackage

@@ -26,6 +26,7 @@ export const htsliborgPackage = {
     '1.18.0',
   ] as const,
   fullPath: 'htslib.org' as const,
+  aliases: [] as const,
 }
 
 export type HtsliborgPackage = typeof htsliborgPackage

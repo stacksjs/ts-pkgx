@@ -52,6 +52,7 @@ export const granteddevPackage = {
     '0.21.1',
   ] as const,
   fullPath: 'granted.dev' as const,
+  aliases: [] as const,
 }
 
 export type GranteddevPackage = typeof granteddevPackage

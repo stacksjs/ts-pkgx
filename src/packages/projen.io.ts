@@ -56,6 +56,7 @@ export const projenioPackage = {
     '0.91.6',
   ] as const,
   fullPath: 'projen.io' as const,
+  aliases: [] as const,
 }
 
 export type ProjenioPackage = typeof projenioPackage

@@ -29,6 +29,7 @@ export const jujuisPackage = {
     '2.9.51',
   ] as const,
   fullPath: 'juju.is' as const,
+  aliases: [] as const,
 }
 
 export type JujuisPackage = typeof jujuisPackage

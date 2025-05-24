@@ -19,6 +19,7 @@ export const tcshorgPackage = {
     '6.24.15',
   ] as const,
   fullPath: 'tcsh.org' as const,
+  aliases: [] as const,
 }
 
 export type TcshorgPackage = typeof tcshorgPackage

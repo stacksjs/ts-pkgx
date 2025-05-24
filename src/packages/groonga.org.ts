@@ -54,6 +54,7 @@ export const groongaorgPackage = {
     '13.0.6',
   ] as const,
   fullPath: 'groonga.org' as const,
+  aliases: [] as const,
 }
 
 export type GroongaorgPackage = typeof groongaorgPackage

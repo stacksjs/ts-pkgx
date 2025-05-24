@@ -264,6 +264,7 @@ import * as github_com_glauth_glauth from './github.com-glauth-glauth'
 import * as github_com_igorshubovych_markdownlint_cli from './github.com-igorshubovych-markdownlint-cli'
 import * as github_com_jarun_nnn from './github.com-jarun-nnn'
 import * as github_com_koekeishiya_skhd from './github.com-koekeishiya-skhd'
+import * as github_com_licensee_licensed from './github.com-licensee-licensed'
 import * as github_com_lucianosrp_rye_uv from './github.com-lucianosrp-rye-uv'
 import * as github_com_mas_cli_mas from './github.com-mas-cli-mas'
 import * as github_com_MilesCranmer_rip2 from './github.com-MilesCranmer-rip2'
@@ -1129,6 +1130,7 @@ export interface Pantry {
   githubcomigorshubovychmarkdownlintcli: github_com_igorshubovych_markdownlint_cli.GithubcomigorshubovychmarkdownlintcliPackage
   githubcomjarunnnn: github_com_jarun_nnn.GithubcomjarunnnnPackage
   githubcomkoekeishiyaskhd: github_com_koekeishiya_skhd.GithubcomkoekeishiyaskhdPackage
+  githubcomlicenseelicensed: github_com_licensee_licensed.GithubcomlicenseelicensedPackage
   githubcomlucianosrpryeuv: github_com_lucianosrp_rye_uv.GithubcomlucianosrpryeuvPackage
   githubcommasclimas: github_com_mas_cli_mas.GithubcommasclimasPackage
   githubcommilescranmerrip2: github_com_MilesCranmer_rip2.Githubcommilescranmerrip2Package
@@ -1997,6 +1999,7 @@ export const pantry: Pantry = {
   githubcomigorshubovychmarkdownlintcli: github_com_igorshubovych_markdownlint_cli.githubcomigorshubovychmarkdownlintcliPackage,
   githubcomjarunnnn: github_com_jarun_nnn.githubcomjarunnnnPackage,
   githubcomkoekeishiyaskhd: github_com_koekeishiya_skhd.githubcomkoekeishiyaskhdPackage,
+  githubcomlicenseelicensed: github_com_licensee_licensed.githubcomlicenseelicensedPackage,
   githubcomlucianosrpryeuv: github_com_lucianosrp_rye_uv.githubcomlucianosrpryeuvPackage,
   githubcommasclimas: github_com_mas_cli_mas.githubcommasclimasPackage,
   githubcommilescranmerrip2: github_com_MilesCranmer_rip2.githubcommilescranmerrip2Package,

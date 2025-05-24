@@ -17,6 +17,7 @@ export const jsonnetorgPackage = {
     '0.20.0',
   ] as const,
   fullPath: 'jsonnet.org' as const,
+  aliases: [] as const,
 }
 
 export type JsonnetorgPackage = typeof jsonnetorgPackage

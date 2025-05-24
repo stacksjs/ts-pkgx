@@ -29,6 +29,7 @@ export const gnuplotinfoPackage = {
     '5.4.6',
   ] as const,
   fullPath: 'gnuplot.info' as const,
+  aliases: [] as const,
 }
 
 export type GnuplotinfoPackage = typeof gnuplotinfoPackage

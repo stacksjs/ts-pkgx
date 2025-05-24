@@ -19,6 +19,7 @@ export const ladspaorgPackage = {
     '1.17.0',
   ] as const,
   fullPath: 'ladspa.org' as const,
+  aliases: [] as const,
 }
 
 export type LadspaorgPackage = typeof ladspaorgPackage

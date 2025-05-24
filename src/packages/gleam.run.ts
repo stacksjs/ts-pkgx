@@ -56,6 +56,7 @@ export const gleamrunPackage = {
     '0.27.0',
   ] as const,
   fullPath: 'gleam.run' as const,
+  aliases: [] as const,
 }
 
 export type GleamrunPackage = typeof gleamrunPackage

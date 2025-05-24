@@ -22,6 +22,7 @@ export const gitlfscomPackage = {
     '3.3.0',
   ] as const,
   fullPath: 'git-lfs.com' as const,
+  aliases: [] as const,
 }
 
 export type GitlfscomPackage = typeof gitlfscomPackage

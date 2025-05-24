@@ -28,6 +28,7 @@ export const kluctlioPackage = {
     '2.21.2',
   ] as const,
   fullPath: 'kluctl.io' as const,
+  aliases: [] as const,
 }
 
 export type KluctlioPackage = typeof kluctlioPackage

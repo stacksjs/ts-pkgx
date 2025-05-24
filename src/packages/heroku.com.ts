@@ -46,6 +46,7 @@ export const herokucomPackage = {
     '8.10.0',
   ] as const,
   fullPath: 'heroku.com' as const,
+  aliases: [] as const,
 }
 
 export type HerokucomPackage = typeof herokucomPackage

@@ -72,6 +72,7 @@ export const grpcioPackage = {
     '1.55.4',
   ] as const,
   fullPath: 'grpc.io' as const,
+  aliases: [] as const,
 }
 
 export type GrpcioPackage = typeof grpcioPackage

@@ -37,6 +37,7 @@ export const gitclifforgPackage = {
     '1.2.0',
   ] as const,
   fullPath: 'git-cliff.org' as const,
+  aliases: [] as const,
 }
 
 export type GitclifforgPackage = typeof gitclifforgPackage

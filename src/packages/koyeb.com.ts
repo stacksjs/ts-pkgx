@@ -49,6 +49,7 @@ export const koyebcomPackage = {
     '3.0.1',
   ] as const,
   fullPath: 'koyeb.com' as const,
+  aliases: [] as const,
 }
 
 export type KoyebcomPackage = typeof koyebcomPackage

@@ -38,6 +38,7 @@ export const macvimorgPackage = {
     '177.0.0',
   ] as const,
   fullPath: 'macvim.org' as const,
+  aliases: [] as const,
 }
 
 export type MacvimorgPackage = typeof macvimorgPackage

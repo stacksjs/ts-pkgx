@@ -49,6 +49,7 @@ export const gitscmorgPackage = {
     '2.38.1',
   ] as const,
   fullPath: 'git-scm.org' as const,
+  aliases: [] as const,
 }
 
 export type GitscmorgPackage = typeof gitscmorgPackage

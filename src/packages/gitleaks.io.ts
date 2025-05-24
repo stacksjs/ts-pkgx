@@ -40,6 +40,7 @@ export const gitleaksioPackage = {
     '8.18.1',
   ] as const,
   fullPath: 'gitleaks.io' as const,
+  aliases: [] as const,
 }
 
 export type GitleaksioPackage = typeof gitleaksioPackage

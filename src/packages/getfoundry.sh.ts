@@ -26,6 +26,7 @@ export const getfoundryshPackage = {
     '0.3.0',
   ] as const,
   fullPath: 'getfoundry.sh' as const,
+  aliases: [] as const,
 }
 
 export type GetfoundryshPackage = typeof getfoundryshPackage

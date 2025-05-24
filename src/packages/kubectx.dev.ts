@@ -19,6 +19,7 @@ export const kubectxdevPackage = {
     '0.9.4',
   ] as const,
   fullPath: 'kubectx.dev' as const,
+  aliases: [] as const,
 }
 
 export type KubectxdevPackage = typeof kubectxdevPackage

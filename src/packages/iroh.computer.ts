@@ -49,6 +49,7 @@ export const irohcomputerPackage = {
     '0.4.1',
   ] as const,
   fullPath: 'iroh.computer' as const,
+  aliases: [] as const,
 }
 
 export type IrohcomputerPackage = typeof irohcomputerPackage

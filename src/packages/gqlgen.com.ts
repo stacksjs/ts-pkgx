@@ -51,6 +51,7 @@ export const gqlgencomPackage = {
     '0.17.37',
   ] as const,
   fullPath: 'gqlgen.com' as const,
+  aliases: [] as const,
 }
 
 export type GqlgencomPackage = typeof gqlgencomPackage

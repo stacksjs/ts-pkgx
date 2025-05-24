@@ -30,6 +30,7 @@ export const lxmldePackage = {
     '4.9.3',
   ] as const,
   fullPath: 'lxml.de' as const,
+  aliases: [] as const,
 }
 
 export type LxmldePackage = typeof lxmldePackage

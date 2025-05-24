@@ -1020,7 +1020,7 @@ let sharedBrowser: Browser | null = null
 // Browser pool for concurrent operations
 const browserPool: { browser: Browser, inUse: boolean, createdAt: number }[] = []
 // Maximum number of browsers to keep in the pool
-const MAX_BROWSER_POOL_SIZE = 5 // Reduced to prevent resource exhaustion
+const MAX_BROWSER_POOL_SIZE = 10 // Reasonable limit to prevent system overload
 
 // Define a variable to track if we've already logged a navigation message
 let navigationLogged = false
@@ -1118,7 +1118,7 @@ export async function cleanupBrowserResources(): Promise<void> {
 /**
  * Get a browser from the pool or create a new one if needed
  */
-async function acquireBrowser(timeout: number): Promise<Browser> {
+async function acquireBrowser(timeout: number): Promise<Browser | null> {
   // First, check for and remove any dead browsers from the pool
   for (let i = browserPool.length - 1; i >= 0; i--) {
     try {
@@ -1146,22 +1146,38 @@ async function acquireBrowser(timeout: number): Promise<Browser> {
     return availableEntry.browser
   }
 
-  // If pool is at max capacity, force close the oldest browser
+  // If pool is at max capacity, wait for an available browser instead of creating new ones
   if (browserPool.length >= MAX_BROWSER_POOL_SIZE) {
-    try {
-      console.log(`Browser pool at max capacity (${MAX_BROWSER_POOL_SIZE}), closing oldest browser...`)
-      // Sort by creation time and take the oldest
-      browserPool.sort((a, b) => a.createdAt - b.createdAt)
-      const oldestEntry = browserPool.shift() // Remove the oldest browser
-      if (oldestEntry) {
+    console.log(`Browser pool at max capacity (${MAX_BROWSER_POOL_SIZE}), waiting for available browser...`)
+
+    // Wait for a browser to become available (with timeout)
+    const maxWaitTime = 30000 // 30 seconds
+    const startWait = Date.now()
+
+    while (Date.now() - startWait < maxWaitTime) {
+      const availableEntry = browserPool.find(entry => !entry.inUse)
+      if (availableEntry) {
+        availableEntry.inUse = true
+        return availableEntry.browser
+      }
+      // Wait a bit before checking again
+      await new Promise(resolve => setTimeout(resolve, 100))
+    }
+
+    // If we still can't get a browser, force close the oldest one
+    console.log('Timeout waiting for available browser, forcing cleanup...')
+    browserPool.sort((a, b) => a.createdAt - b.createdAt)
+    const oldestEntry = browserPool.shift()
+    if (oldestEntry) {
+      try {
         await Promise.race([
           oldestEntry.browser.close().catch(e => console.error('Error closing oldest browser:', e)),
           new Promise(resolve => setTimeout(resolve, 3000)),
         ])
       }
-    }
-    catch (error) {
-      console.error('Error closing oldest browser:', error)
+      catch (error) {
+        console.error('Error closing oldest browser:', error)
+      }
     }
   }
 
@@ -1170,21 +1186,25 @@ async function acquireBrowser(timeout: number): Promise<Browser> {
   let retryCount = 0
   const maxRetries = 3
 
+  // Add a small delay to prevent overwhelming the system with concurrent launches
+  await new Promise(resolve => setTimeout(resolve, Math.random() * 1000))
+
   while (!browser && retryCount < maxRetries) {
     try {
       browser = await chromium.launch({
         headless: true,
-        timeout,
+        timeout: Math.min(timeout, 8000), // Cap browser launch timeout at 8 seconds
       })
     }
     catch (error) {
       retryCount++
       console.error(`Browser launch attempt ${retryCount} failed:`, error)
       if (retryCount >= maxRetries) {
-        throw new Error(`Failed to launch browser after ${maxRetries} attempts`)
+        console.error(`Failed to launch browser after ${maxRetries} attempts, skipping this operation`)
+        return null // Return null instead of throwing to allow graceful degradation
       }
-      // Wait before retrying
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      // Wait before retrying with exponential backoff
+      await new Promise(resolve => setTimeout(resolve, 1000 * retryCount))
     }
   }
 
@@ -1313,7 +1333,10 @@ export async function fetchPkgxPackage(
 
       while (retryCount < maxLaunchRetries) {
         try {
-          browser = await chromium.launch({ headless: true })
+          browser = await chromium.launch({
+            headless: true,
+            timeout: 8000, // 8 second timeout for browser launch
+          })
           sharedBrowser = browser
           break
         }
@@ -1795,8 +1818,8 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
   const cacheExpirationMinutes = options.cacheExpirationMinutes || DEFAULT_CACHE_EXPIRATION_MINUTES
   const concurrency = options.concurrency || 10
 
-  // Limit concurrency to prevent overload
-  const actualConcurrency = Math.min(concurrency, 5)
+  // Use the requested concurrency (no artificial limit)
+  const actualConcurrency = concurrency
 
   console.log(`Using timeout: ${timeout}ms for all operations`)
 
@@ -1930,6 +1953,13 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
         // Only acquire a browser if we didn't find the package in cache
         browser = await acquireBrowser(timeout)
 
+        // If browser acquisition failed, skip this package
+        if (!browser) {
+          console.error(`Failed to acquire browser for ${packageName}, skipping`)
+          failedPackages.push(packageName)
+          return null
+        }
+
         // Fetch and save the package with a timeout to prevent hanging
         const fetchPromise = fetchAndSavePackage(
           packageName,
@@ -2024,8 +2054,13 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
     // Process all packages in parallel with controlled concurrency
     console.log(`Processing ${allPackageNames.length} packages with concurrency of ${actualConcurrency}...`)
 
+    // Set a maximum time for the entire operation (30 minutes)
+    const maxOperationTime = 30 * 60 * 1000 // 30 minutes
+    const operationStartTime = Date.now()
+
     // Create chunks for better progress reporting
-    const chunkSize = Math.min(actualConcurrency, 3) // Use smaller chunks for better progress reporting
+    // Limit chunk size to prevent system overload
+    const chunkSize = Math.min(actualConcurrency, MAX_BROWSER_POOL_SIZE)
     const chunks: string[][] = []
     for (let i = 0; i < allPackageNames.length; i += chunkSize) {
       chunks.push(allPackageNames.slice(i, i + chunkSize))
@@ -2035,12 +2070,23 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
 
     // Process chunk by chunk
     for (let chunkIndex = 0; chunkIndex < chunks.length; chunkIndex++) {
+      // Check if we've exceeded the maximum operation time
+      if (Date.now() - operationStartTime > maxOperationTime) {
+        console.log(`Maximum operation time (${maxOperationTime / 60000} minutes) exceeded, stopping processing`)
+        break
+      }
+
       const chunk = chunks[chunkIndex]
       console.log(`Processing chunk ${chunkIndex + 1}/${chunks.length} (${chunk.length} packages)`)
 
       // Process this chunk of packages concurrently
       const chunkPromises = chunk.map(packageName => processPackage(packageName))
       const chunkResults = await Promise.all(chunkPromises)
+
+      // Add a small delay between chunks to prevent system overload
+      if (chunkIndex < chunks.length - 1) { // Don't delay after the last chunk
+        await new Promise(resolve => setTimeout(resolve, 500))
+      }
 
       // Add successfully processed packages to results
       const successfulResults = chunkResults.filter(Boolean) as string[]
@@ -2057,10 +2103,10 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       console.log(`${progressBar} Completed chunk ${chunkIndex + 1}/${chunks.length}, processed ${processedCount}/${allPackageNames.length} (${completedPercent}%), ${failedPackages.length} failed, ${remainingCount} remaining, elapsed time: ${elapsedSeconds}s`)
 
       // Periodic cleanup of browser resources to prevent memory issues
-      // Do cleanup every 3 chunks or if there are more than MAX_BROWSER_POOL_SIZE browsers
-      if (browserPool.length > MAX_BROWSER_POOL_SIZE
-        || (chunkIndex + 1) % 3 === 0
-        || (now - lastCleanupTime > 1 * 60 * 1000)) { // 1 minute
+      // Do cleanup every 5 chunks or if there are more than MAX_BROWSER_POOL_SIZE browsers
+      if (browserPool.length >= MAX_BROWSER_POOL_SIZE
+        || (chunkIndex + 1) % 5 === 0
+        || (now - lastCleanupTime > 2 * 60 * 1000)) { // 2 minutes
         console.log('Performing periodic browser resource cleanup...')
         await cleanupBrowserResources()
         lastCleanupTime = now

@@ -15,6 +15,7 @@ export const lamesourceforgeioPackage = {
     '3.100.0',
   ] as const,
   fullPath: 'lame.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
 export type LamesourceforgeioPackage = typeof lamesourceforgeioPackage

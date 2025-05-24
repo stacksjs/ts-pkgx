@@ -58,6 +58,7 @@ export const imagemagickorgPackage = {
     '7.1.0.61',
   ] as const,
   fullPath: 'imagemagick.org' as const,
+  aliases: [] as const,
 }
 
 export type ImagemagickorgPackage = typeof imagemagickorgPackage
