@@ -1020,7 +1020,26 @@ let sharedBrowser: Browser | null = null
 // Browser pool for concurrent operations
 const browserPool: { browser: Browser, inUse: boolean, createdAt: number }[] = []
 // Maximum number of browsers to keep in the pool
-const MAX_BROWSER_POOL_SIZE = 10 // Reasonable limit to prevent system overload
+const MAX_BROWSER_POOL_SIZE = 6 // Conservative limit to prevent system overload
+
+// Function to check system resources and adjust behavior
+function getSystemResourceStatus() {
+  const memUsage = process.memoryUsage()
+  const heapUsedMB = Math.round(memUsage.heapUsed / 1024 / 1024)
+  const heapTotalMB = Math.round(memUsage.heapTotal / 1024 / 1024)
+  const rssUsedMB = Math.round(memUsage.rss / 1024 / 1024)
+
+  // Consider system under stress if heap usage is high or RSS is very high
+  const isUnderStress = heapUsedMB > 500 || rssUsedMB > 1000 || browserPool.length >= MAX_BROWSER_POOL_SIZE
+
+  return {
+    heapUsedMB,
+    heapTotalMB,
+    rssUsedMB,
+    browserCount: browserPool.length,
+    isUnderStress,
+  }
+}
 
 // Define a variable to track if we've already logged a navigation message
 let navigationLogged = false
@@ -1119,6 +1138,14 @@ export async function cleanupBrowserResources(): Promise<void> {
  * Get a browser from the pool or create a new one if needed
  */
 async function acquireBrowser(timeout: number): Promise<Browser | null> {
+  // Check system resources before proceeding
+  const resourceStatus = getSystemResourceStatus()
+  if (resourceStatus.isUnderStress) {
+    console.log(`System under stress (Heap: ${resourceStatus.heapUsedMB}MB, RSS: ${resourceStatus.rssUsedMB}MB, Browsers: ${resourceStatus.browserCount}), forcing cleanup...`)
+    await cleanupBrowserResources()
+    await new Promise(resolve => setTimeout(resolve, 2000)) // Wait 2 seconds after cleanup
+  }
+
   // First, check for and remove any dead browsers from the pool
   for (let i = browserPool.length - 1; i >= 0; i--) {
     try {
@@ -1199,12 +1226,23 @@ async function acquireBrowser(timeout: number): Promise<Browser | null> {
     catch (error) {
       retryCount++
       console.error(`Browser launch attempt ${retryCount} failed:`, error)
+
+      // If we get ENOENT or connection errors, the system is likely overwhelmed
+      const errorString = String(error)
+      if (errorString.includes('ENOENT') || errorString.includes('Failed to connect')) {
+        console.error('System appears overwhelmed, forcing cleanup and waiting longer...')
+        // Force cleanup of all browsers
+        await cleanupBrowserResources()
+        // Wait longer before retrying
+        await new Promise(resolve => setTimeout(resolve, 5000 * retryCount))
+      }
+
       if (retryCount >= maxRetries) {
         console.error(`Failed to launch browser after ${maxRetries} attempts, skipping this operation`)
         return null // Return null instead of throwing to allow graceful degradation
       }
       // Wait before retrying with exponential backoff
-      await new Promise(resolve => setTimeout(resolve, 1000 * retryCount))
+      await new Promise(resolve => setTimeout(resolve, 2000 * retryCount))
     }
   }
 
@@ -2103,10 +2141,10 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       console.log(`${progressBar} Completed chunk ${chunkIndex + 1}/${chunks.length}, processed ${processedCount}/${allPackageNames.length} (${completedPercent}%), ${failedPackages.length} failed, ${remainingCount} remaining, elapsed time: ${elapsedSeconds}s`)
 
       // Periodic cleanup of browser resources to prevent memory issues
-      // Do cleanup every 5 chunks or if there are more than MAX_BROWSER_POOL_SIZE browsers
+      // Do cleanup every 3 chunks or if there are more than MAX_BROWSER_POOL_SIZE browsers
       if (browserPool.length >= MAX_BROWSER_POOL_SIZE
-        || (chunkIndex + 1) % 5 === 0
-        || (now - lastCleanupTime > 2 * 60 * 1000)) { // 2 minutes
+        || (chunkIndex + 1) % 3 === 0
+        || (now - lastCleanupTime > 90 * 1000)) { // 90 seconds
         console.log('Performing periodic browser resource cleanup...')
         await cleanupBrowserResources()
         lastCleanupTime = now
