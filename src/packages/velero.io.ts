@@ -15,6 +15,7 @@ export const veleroioPackage = {
     '1.16.1',
   ] as const,
   fullPath: 'velero.io' as const,
+  aliases: [] as const,
 }
 
 export type VeleroioPackage = typeof veleroioPackage

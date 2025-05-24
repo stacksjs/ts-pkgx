@@ -1020,7 +1020,7 @@ let sharedBrowser: Browser | null = null
 // Browser pool for concurrent operations
 const browserPool: { browser: Browser, inUse: boolean, createdAt: number }[] = []
 // Maximum number of browsers to keep in the pool
-const MAX_BROWSER_POOL_SIZE = 6 // Conservative limit to prevent system overload
+const MAX_BROWSER_POOL_SIZE = 2 // Ultra conservative limit to prevent system overload
 
 // Function to check system resources and adjust behavior
 function getSystemResourceStatus() {
@@ -1030,7 +1030,7 @@ function getSystemResourceStatus() {
   const rssUsedMB = Math.round(memUsage.rss / 1024 / 1024)
 
   // Consider system under stress if heap usage is high or RSS is very high
-  const isUnderStress = heapUsedMB > 500 || rssUsedMB > 1000 || browserPool.length >= MAX_BROWSER_POOL_SIZE
+  const isUnderStress = heapUsedMB > 200 || rssUsedMB > 600 || browserPool.length >= MAX_BROWSER_POOL_SIZE
 
   return {
     heapUsedMB,
@@ -1220,21 +1220,31 @@ async function acquireBrowser(timeout: number): Promise<Browser | null> {
     try {
       browser = await chromium.launch({
         headless: true,
-        timeout: Math.min(timeout, 8000), // Cap browser launch timeout at 8 seconds
+        timeout: Math.min(timeout, 5000), // Cap browser launch timeout at 5 seconds
+        args: [
+          '--no-sandbox',
+          '--disable-dev-shm-usage',
+          '--disable-gpu',
+          '--disable-web-security',
+          '--disable-features=VizDisplayCompositor',
+          '--memory-pressure-off',
+          '--max_old_space_size=512',
+        ],
       })
     }
     catch (error) {
       retryCount++
       console.error(`Browser launch attempt ${retryCount} failed:`, error)
 
-      // If we get ENOENT or connection errors, the system is likely overwhelmed
+      // If we get ENOENT, connection errors, or timeout errors, the system is likely overwhelmed
       const errorString = String(error)
-      if (errorString.includes('ENOENT') || errorString.includes('Failed to connect')) {
-        console.error('System appears overwhelmed, forcing cleanup and waiting longer...')
+      if (errorString.includes('ENOENT') || errorString.includes('Failed to connect')
+        || errorString.includes('Timeout') || errorString.includes('No target found')) {
+        console.error('System appears overwhelmed, forcing aggressive cleanup and waiting longer...')
         // Force cleanup of all browsers
         await cleanupBrowserResources()
-        // Wait longer before retrying
-        await new Promise(resolve => setTimeout(resolve, 5000 * retryCount))
+        // Wait much longer before retrying when system is overwhelmed
+        await new Promise(resolve => setTimeout(resolve, 15000 * retryCount))
       }
 
       if (retryCount >= maxRetries) {
@@ -2121,9 +2131,9 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       const chunkPromises = chunk.map(packageName => processPackage(packageName))
       const chunkResults = await Promise.all(chunkPromises)
 
-      // Add a small delay between chunks to prevent system overload
+      // Add a much longer delay between chunks to prevent system overload
       if (chunkIndex < chunks.length - 1) { // Don't delay after the last chunk
-        await new Promise(resolve => setTimeout(resolve, 500))
+        await new Promise(resolve => setTimeout(resolve, 5000)) // Increased to 5s for ultra conservative approach
       }
 
       // Add successfully processed packages to results
@@ -2141,16 +2151,16 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       console.log(`${progressBar} Completed chunk ${chunkIndex + 1}/${chunks.length}, processed ${processedCount}/${allPackageNames.length} (${completedPercent}%), ${failedPackages.length} failed, ${remainingCount} remaining, elapsed time: ${elapsedSeconds}s`)
 
       // Periodic cleanup of browser resources to prevent memory issues
-      // Do cleanup every 3 chunks or if there are more than MAX_BROWSER_POOL_SIZE browsers
+      // Do cleanup every chunk or if there are more than MAX_BROWSER_POOL_SIZE browsers
       if (browserPool.length >= MAX_BROWSER_POOL_SIZE
-        || (chunkIndex + 1) % 3 === 0
-        || (now - lastCleanupTime > 90 * 1000)) { // 90 seconds
+        || (chunkIndex + 1) % 1 === 0 // Every chunk
+        || (now - lastCleanupTime > 30 * 1000)) { // 30 seconds
         console.log('Performing periodic browser resource cleanup...')
         await cleanupBrowserResources()
         lastCleanupTime = now
 
-        // Small delay to let system recover after cleanup
-        await new Promise(resolve => setTimeout(resolve, 500))
+        // Much longer delay to let system recover after cleanup
+        await new Promise(resolve => setTimeout(resolve, 5000))
       }
     }
 

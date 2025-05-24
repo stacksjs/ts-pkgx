@@ -36,7 +36,7 @@ const cli = new CAC('pkgx-tools')
 
 // Force exit after a maximum timeout to prevent hung processes
 // This is a safety mechanism in case Playwright doesn't close properly
-const EXIT_TIMEOUT = 900000 // 15 minutes
+const EXIT_TIMEOUT = 1500000 // 25 minutes
 const forceExitTimeout = setTimeout(() => {
   console.error('Force exiting after timeout - process may have hung')
   process.exit(1)
@@ -86,7 +86,7 @@ cli
   .option('-j, --json', 'Save as JSON instead of TypeScript')
   .option('-d, --debug', 'Enable debug mode (save screenshots)')
   .option('-v, --verbose', 'Enable verbose output')
-  .option('-y, --concurrency <count>', 'Number of packages to fetch concurrently', { default: 6 })
+  .option('-y, --concurrency <count>', 'Number of packages to fetch concurrently', { default: 2 })
   .action(async (packageName: string | undefined, options: FetchOptions) => {
     // Extract options with appropriate types
     const {
@@ -101,7 +101,7 @@ cli
       json: saveAsJson = false,
       debug = false,
       verbose = false,
-      concurrency = 6,
+      concurrency = 2,
       pkg,
     } = options
 
