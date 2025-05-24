@@ -50,6 +50,7 @@ export const ffmpegorgPackage = {
     '3.4.13',
   ] as const,
   fullPath: 'ffmpeg.org' as const,
+  aliases: [] as const,
 }
 
 export type FfmpegorgPackage = typeof ffmpegorgPackage

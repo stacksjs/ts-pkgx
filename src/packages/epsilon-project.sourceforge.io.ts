@@ -17,6 +17,7 @@ export const epsilonprojectsourceforgeioPackage = {
     '0.9.2',
   ] as const,
   fullPath: 'epsilon-project.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
 export type EpsilonprojectsourceforgeioPackage = typeof epsilonprojectsourceforgeioPackage

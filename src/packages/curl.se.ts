@@ -42,6 +42,7 @@ export const curlsePackage = {
     '7.85.0',
   ] as const,
   fullPath: 'curl.se' as const,
+  aliases: [] as const,
 }
 
 export type CurlsePackage = typeof curlsePackage

@@ -17,6 +17,7 @@ export const cointopshPackage = {
     '1.6.10',
   ] as const,
   fullPath: 'cointop.sh' as const,
+  aliases: [] as const,
 }
 
 export type CointopshPackage = typeof cointopshPackage

@@ -20,6 +20,7 @@ export const direnvnetPackage = {
     '2.32.2',
   ] as const,
   fullPath: 'direnv.net' as const,
+  aliases: [] as const,
 }
 
 export type DirenvnetPackage = typeof direnvnetPackage

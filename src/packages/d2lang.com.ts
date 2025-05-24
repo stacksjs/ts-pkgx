@@ -25,6 +25,7 @@ export const d2langcomPackage = {
     '0.6.0',
   ] as const,
   fullPath: 'd2lang.com' as const,
+  aliases: [] as const,
 }
 
 export type D2langcomPackage = typeof d2langcomPackage

@@ -71,6 +71,7 @@ export const eksctlioPackage = {
     '0.154.0',
   ] as const,
   fullPath: 'eksctl.io' as const,
+  aliases: [] as const,
 }
 
 export type EksctlioPackage = typeof eksctlioPackage

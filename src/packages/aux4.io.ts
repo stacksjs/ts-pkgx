@@ -20,6 +20,7 @@ export const aux4ioPackage = {
     '5.0.3',
   ] as const,
   fullPath: 'aux4.io' as const,
+  aliases: [] as const,
 }
 
 export type Aux4ioPackage = typeof aux4ioPackage

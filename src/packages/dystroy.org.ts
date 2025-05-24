@@ -11,6 +11,7 @@ export const dystroyorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'dystroy.org' as const,
+  aliases: [] as const,
 }
 
 export type DystroyorgPackage = typeof dystroyorgPackage

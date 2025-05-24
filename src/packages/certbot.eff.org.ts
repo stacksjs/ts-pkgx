@@ -33,6 +33,7 @@ export const certbotefforgPackage = {
     '2.6.0',
   ] as const,
   fullPath: 'certbot.eff.org' as const,
+  aliases: [] as const,
 }
 
 export type CertbotefforgPackage = typeof certbotefforgPackage

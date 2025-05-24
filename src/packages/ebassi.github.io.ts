@@ -11,6 +11,7 @@ export const ebassigithubioPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'ebassi.github.io' as const,
+  aliases: [] as const,
 }
 
 export type EbassigithubioPackage = typeof ebassigithubioPackage

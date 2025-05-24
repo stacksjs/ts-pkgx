@@ -35,6 +35,7 @@ export const cythonorgPackage = {
     '0.29.35',
   ] as const,
   fullPath: 'cython.org' as const,
+  aliases: [] as const,
 }
 
 export type CythonorgPackage = typeof cythonorgPackage

@@ -19,6 +19,7 @@ export const cpanminusPackage = {
     '1.7046.0',
   ] as const,
   fullPath: 'cpanmin.us' as const,
+  aliases: [] as const,
 }
 
 export type CpanminusPackage = typeof cpanminusPackage

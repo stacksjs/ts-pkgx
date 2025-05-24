@@ -41,6 +41,7 @@ export const fastlanetoolsPackage = {
     '2.212.1',
   ] as const,
   fullPath: 'fastlane.tools' as const,
+  aliases: [] as const,
 }
 
 export type FastlanetoolsPackage = typeof fastlanetoolsPackage

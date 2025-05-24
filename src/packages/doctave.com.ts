@@ -15,6 +15,7 @@ export const doctavecomPackage = {
     '0.4.2',
   ] as const,
   fullPath: 'doctave.com' as const,
+  aliases: [] as const,
 }
 
 export type DoctavecomPackage = typeof doctavecomPackage

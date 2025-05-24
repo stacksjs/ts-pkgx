@@ -17,6 +17,7 @@ export const asciinemaorgPackage = {
     '2.4.0',
   ] as const,
   fullPath: 'asciinema.org' as const,
+  aliases: [] as const,
 }
 
 export type AsciinemaorgPackage = typeof asciinemaorgPackage

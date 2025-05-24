@@ -33,6 +33,7 @@ export const duckdborgPackage = {
     '0.7.1',
   ] as const,
   fullPath: 'duckdb.org' as const,
+  aliases: [] as const,
 }
 
 export type DuckdborgPackage = typeof duckdborgPackage

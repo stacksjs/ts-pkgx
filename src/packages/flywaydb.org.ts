@@ -57,6 +57,7 @@ export const flywaydborgPackage = {
     '10.10.0',
   ] as const,
   fullPath: 'flywaydb.org' as const,
+  aliases: [] as const,
 }
 
 export type FlywaydborgPackage = typeof flywaydborgPackage

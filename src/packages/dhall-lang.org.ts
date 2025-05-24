@@ -19,6 +19,7 @@ export const dhalllangorgPackage = {
     '1.42.1',
   ] as const,
   fullPath: 'dhall-lang.org' as const,
+  aliases: [] as const,
 }
 
 export type DhalllangorgPackage = typeof dhalllangorgPackage

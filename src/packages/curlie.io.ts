@@ -16,6 +16,7 @@ export const curlieioPackage = {
     '1.7.2',
   ] as const,
   fullPath: 'curlie.io' as const,
+  aliases: [] as const,
 }
 
 export type CurlieioPackage = typeof curlieioPackage

@@ -21,6 +21,7 @@ export const attrsorgPackage = {
     '23.2.0',
   ] as const,
   fullPath: 'attrs.org' as const,
+  aliases: [] as const,
 }
 
 export type AttrsorgPackage = typeof attrsorgPackage

@@ -22,6 +22,7 @@ export const flitpypaioPackage = {
     '3.8.0',
   ] as const,
   fullPath: 'flit.pypa.io' as const,
+  aliases: [] as const,
 }
 
 export type FlitpypaioPackage = typeof flitpypaioPackage

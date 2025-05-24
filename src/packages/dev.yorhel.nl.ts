@@ -11,6 +11,7 @@ export const devyorhelnlPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'dev.yorhel.nl' as const,
+  aliases: [] as const,
 }
 
 export type DevyorhelnlPackage = typeof devyorhelnlPackage

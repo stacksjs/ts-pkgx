@@ -15,6 +15,7 @@ export const clogtoolgithubioPackage = {
     '0.9.3',
   ] as const,
   fullPath: 'clog-tool.github.io' as const,
+  aliases: [] as const,
 }
 
 export type ClogtoolgithubioPackage = typeof clogtoolgithubioPackage

@@ -11,6 +11,7 @@ export const authzedcomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'authzed.com' as const,
+  aliases: [] as const,
 }
 
 export type AuthzedcomPackage = typeof authzedcomPackage

@@ -11,6 +11,7 @@ export const cedarpolicycomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'cedarpolicy.com' as const,
+  aliases: [] as const,
 }
 
 export type CedarpolicycomPackage = typeof cedarpolicycomPackage

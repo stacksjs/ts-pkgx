@@ -11,6 +11,7 @@ export const cloudfoundryorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'cloudfoundry.org' as const,
+  aliases: [] as const,
 }
 
 export type CloudfoundryorgPackage = typeof cloudfoundryorgPackage

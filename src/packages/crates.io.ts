@@ -11,6 +11,7 @@ export const cratesioPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'crates.io' as const,
+  aliases: [] as const,
 }
 
 export type CratesioPackage = typeof cratesioPackage

@@ -11,6 +11,7 @@ export const developer1passwordcomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'developer.1password.com' as const,
+  aliases: [] as const,
 }
 
 export type Developer1passwordcomPackage = typeof developer1passwordcomPackage

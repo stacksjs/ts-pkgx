@@ -22,6 +22,7 @@ export const ceressolverorgPackage = {
     '2.1.0',
   ] as const,
   fullPath: 'ceres-solver.org' as const,
+  aliases: [] as const,
 }
 
 export type CeressolverorgPackage = typeof ceressolverorgPackage

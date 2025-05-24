@@ -11,6 +11,7 @@ export const charmshPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'charm.sh' as const,
+  aliases: [] as const,
 }
 
 export type CharmshPackage = typeof charmshPackage

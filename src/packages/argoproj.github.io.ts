@@ -11,6 +11,7 @@ export const argoprojgithubioPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'argoproj.github.io' as const,
+  aliases: [] as const,
 }
 
 export type ArgoprojgithubioPackage = typeof argoprojgithubioPackage

@@ -27,6 +27,7 @@ export const ccachedevPackage = {
     '4.8.3',
   ] as const,
   fullPath: 'ccache.dev' as const,
+  aliases: [] as const,
 }
 
 export type CcachedevPackage = typeof ccachedevPackage

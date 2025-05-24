@@ -27,6 +27,7 @@ export const cgalorgPackage = {
     '5.6.0',
   ] as const,
   fullPath: 'cgal.org' as const,
+  aliases: [] as const,
 }
 
 export type CgalorgPackage = typeof cgalorgPackage

@@ -43,6 +43,7 @@ export const elixirlangorgPackage = {
     '1.14.4',
   ] as const,
   fullPath: 'elixir-lang.org' as const,
+  aliases: [] as const,
 }
 
 export type ElixirlangorgPackage = typeof elixirlangorgPackage

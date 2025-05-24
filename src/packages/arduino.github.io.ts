@@ -11,6 +11,7 @@ export const arduinogithubioPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'arduino.github.io' as const,
+  aliases: [] as const,
 }
 
 export type ArduinogithubioPackage = typeof arduinogithubioPackage

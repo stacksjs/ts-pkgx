@@ -94,6 +94,7 @@ export const astgrepgithubioPackage = {
     '0.14.3',
   ] as const,
   fullPath: 'ast-grep.github.io' as const,
+  aliases: [] as const,
 }
 
 export type AstgrepgithubioPackage = typeof astgrepgithubioPackage

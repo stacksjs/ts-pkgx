@@ -18,6 +18,7 @@ export const caskreadthedocsioPackage = {
     '0.9.0',
   ] as const,
   fullPath: 'cask.readthedocs.io' as const,
+  aliases: [] as const,
 }
 
 export type CaskreadthedocsioPackage = typeof caskreadthedocsioPackage

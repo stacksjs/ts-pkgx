@@ -21,6 +21,7 @@ export const argbashdevPackage = {
     '2.10.0',
   ] as const,
   fullPath: 'argbash.dev' as const,
+  aliases: [] as const,
 }
 
 export type ArgbashdevPackage = typeof argbashdevPackage

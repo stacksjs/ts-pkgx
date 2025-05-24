@@ -11,6 +11,7 @@ export const anchorecomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'anchore.com' as const,
+  aliases: [] as const,
 }
 
 export type AnchorecomPackage = typeof anchorecomPackage

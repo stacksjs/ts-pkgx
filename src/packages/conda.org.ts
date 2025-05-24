@@ -32,6 +32,7 @@ export const condaorgPackage = {
     '23.7.2',
   ] as const,
   fullPath: 'conda.org' as const,
+  aliases: [] as const,
 }
 
 export type CondaorgPackage = typeof condaorgPackage

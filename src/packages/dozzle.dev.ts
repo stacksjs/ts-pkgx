@@ -12,6 +12,7 @@ export const dozzledevPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '8.12.17',
     '8.12.16',
     '8.12.15',
     '8.12.14',
@@ -67,6 +68,7 @@ export const dozzledevPackage = {
     '8.5.2',
   ] as const,
   fullPath: 'dozzle.dev' as const,
+  aliases: [] as const,
 }
 
 export type DozzledevPackage = typeof dozzledevPackage

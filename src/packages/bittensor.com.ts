@@ -77,6 +77,7 @@ export const bittensorcomPackage = {
     '6.5.0',
   ] as const,
   fullPath: 'bittensor.com' as const,
+  aliases: [] as const,
 }
 
 export type BittensorcomPackage = typeof bittensorcomPackage

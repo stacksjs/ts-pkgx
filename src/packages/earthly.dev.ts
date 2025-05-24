@@ -11,6 +11,7 @@ export const earthlydevPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'earthly.dev' as const,
+  aliases: [] as const,
 }
 
 export type EarthlydevPackage = typeof earthlydevPackage

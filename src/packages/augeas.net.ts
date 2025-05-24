@@ -23,6 +23,7 @@ export const augeasnetPackage = {
     '1.14.0',
   ] as const,
   fullPath: 'augeas.net' as const,
+  aliases: [] as const,
 }
 
 export type AugeasnetPackage = typeof augeasnetPackage

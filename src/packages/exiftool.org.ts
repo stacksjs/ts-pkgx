@@ -23,6 +23,7 @@ export const exiftoolorgPackage = {
     '12.60.0',
   ] as const,
   fullPath: 'exiftool.org' as const,
+  aliases: [] as const,
 }
 
 export type ExiftoolorgPackage = typeof exiftoolorgPackage

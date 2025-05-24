@@ -20,6 +20,7 @@ export const ctagsioPackage = {
     '6.1.0',
   ] as const,
   fullPath: 'ctags.io' as const,
+  aliases: [] as const,
 }
 
 export type CtagsioPackage = typeof ctagsioPackage

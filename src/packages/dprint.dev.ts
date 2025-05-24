@@ -41,6 +41,7 @@ export const dprintdevPackage = {
     '0.40.2',
   ] as const,
   fullPath: 'dprint.dev' as const,
+  aliases: [] as const,
 }
 
 export type DprintdevPackage = typeof dprintdevPackage

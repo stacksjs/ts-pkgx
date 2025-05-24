@@ -11,6 +11,7 @@ export const developersyubicocomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'developers.yubico.com' as const,
+  aliases: [] as const,
 }
 
 export type DevelopersyubicocomPackage = typeof developersyubicocomPackage

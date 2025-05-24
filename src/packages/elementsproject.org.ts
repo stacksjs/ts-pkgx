@@ -33,6 +33,7 @@ export const elementsprojectorgPackage = {
     '22.1.1',
   ] as const,
   fullPath: 'elementsproject.org' as const,
+  aliases: [] as const,
 }
 
 export type ElementsprojectorgPackage = typeof elementsprojectorgPackage

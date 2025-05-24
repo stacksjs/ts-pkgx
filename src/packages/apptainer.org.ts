@@ -27,6 +27,7 @@ export const apptainerorgPackage = {
     '1.3.3',
   ] as const,
   fullPath: 'apptainer.org' as const,
+  aliases: [] as const,
 }
 
 export type ApptainerorgPackage = typeof apptainerorgPackage

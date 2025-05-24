@@ -11,6 +11,7 @@ export const connectrpcorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'connectrpc.org' as const,
+  aliases: [] as const,
 }
 
 export type ConnectrpcorgPackage = typeof connectrpcorgPackage

@@ -11,6 +11,7 @@ export const ciliumioPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'cilium.io' as const,
+  aliases: [] as const,
 }
 
 export type CiliumioPackage = typeof ciliumioPackage

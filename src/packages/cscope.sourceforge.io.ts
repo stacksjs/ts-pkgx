@@ -18,6 +18,7 @@ export const cscopesourceforgeioPackage = {
     '15.9.0',
   ] as const,
   fullPath: 'cscope.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
 export type CscopesourceforgeioPackage = typeof cscopesourceforgeioPackage

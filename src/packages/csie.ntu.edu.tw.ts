@@ -11,6 +11,7 @@ export const csientuedutwPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'csie.ntu.edu.tw' as const,
+  aliases: [] as const,
 }
 
 export type CsientuedutwPackage = typeof csientuedutwPackage

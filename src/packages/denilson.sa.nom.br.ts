@@ -11,6 +11,7 @@ export const denilsonsanombrPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'denilson.sa.nom.br' as const,
+  aliases: [] as const,
 }
 
 export type DenilsonsanombrPackage = typeof denilsonsanombrPackage

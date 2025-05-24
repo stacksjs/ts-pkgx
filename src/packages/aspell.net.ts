@@ -24,6 +24,7 @@ export const aspellnetPackage = {
     '0.60.8',
   ] as const,
   fullPath: 'aspell.net' as const,
+  aliases: [] as const,
 }
 
 export type AspellnetPackage = typeof aspellnetPackage

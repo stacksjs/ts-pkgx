@@ -20,6 +20,7 @@ export const fftworgPackage = {
     '3.3.10',
   ] as const,
   fullPath: 'fftw.org' as const,
+  aliases: [] as const,
 }
 
 export type FftworgPackage = typeof fftworgPackage

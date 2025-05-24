@@ -11,6 +11,7 @@ export const chiarkgreenendorgukPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'chiark.greenend.org.uk' as const,
+  aliases: [] as const,
 }
 
 export type ChiarkgreenendorgukPackage = typeof chiarkgreenendorgukPackage

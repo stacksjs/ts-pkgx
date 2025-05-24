@@ -20,6 +20,7 @@ export const amprsPackage = {
     '0.7.1',
   ] as const,
   fullPath: 'amp.rs' as const,
+  aliases: [] as const,
 }
 
 export type AmprsPackage = typeof amprsPackage

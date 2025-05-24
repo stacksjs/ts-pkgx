@@ -15,6 +15,7 @@ export const duktapeorgPackage = {
     '2.7.0',
   ] as const,
   fullPath: 'duktape.org' as const,
+  aliases: [] as const,
 }
 
 export type DuktapeorgPackage = typeof duktapeorgPackage

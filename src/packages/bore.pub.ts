@@ -18,6 +18,7 @@ export const borepubPackage = {
     '0.5.0',
   ] as const,
   fullPath: 'bore.pub' as const,
+  aliases: [] as const,
 }
 
 export type BorepubPackage = typeof borepubPackage

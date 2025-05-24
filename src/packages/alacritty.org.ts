@@ -22,6 +22,7 @@ export const alacrittyorgPackage = {
     '0.13.2',
   ] as const,
   fullPath: 'alacritty.org' as const,
+  aliases: [] as const,
 }
 
 export type AlacrittyorgPackage = typeof alacrittyorgPackage

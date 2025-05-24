@@ -51,6 +51,7 @@ export const arkadedevPackage = {
     '0.10.22',
   ] as const,
   fullPath: 'arkade.dev' as const,
+  aliases: [] as const,
 }
 
 export type ArkadedevPackage = typeof arkadedevPackage

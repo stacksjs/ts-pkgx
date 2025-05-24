@@ -11,6 +11,7 @@ export const bloomreachcomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'bloomreach.com' as const,
+  aliases: [] as const,
 }
 
 export type BloomreachcomPackage = typeof bloomreachcomPackage

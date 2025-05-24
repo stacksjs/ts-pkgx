@@ -50,6 +50,7 @@ export const depotdevPackage = {
     '2.68.1',
   ] as const,
   fullPath: 'depot.dev' as const,
+  aliases: [] as const,
 }
 
 export type DepotdevPackage = typeof depotdevPackage

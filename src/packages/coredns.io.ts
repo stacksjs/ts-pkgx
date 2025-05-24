@@ -21,6 +21,7 @@ export const corednsioPackage = {
     '1.10.1',
   ] as const,
   fullPath: 'coredns.io' as const,
+  aliases: [] as const,
 }
 
 export type CorednsioPackage = typeof corednsioPackage

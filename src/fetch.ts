@@ -1010,7 +1010,7 @@ let sharedBrowser: Browser | null = null
 // Browser pool for concurrent operations
 const browserPool: { browser: Browser, inUse: boolean, createdAt: number }[] = []
 // Maximum number of browsers to keep in the pool
-const MAX_BROWSER_POOL_SIZE = 4 // Reduced from 5 to avoid resource issues
+const MAX_BROWSER_POOL_SIZE = 5 // Reduced to prevent resource exhaustion
 
 // Define a variable to track if we've already logged a navigation message
 let navigationLogged = false
@@ -1786,7 +1786,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
   const concurrency = options.concurrency || 10
 
   // Limit concurrency to prevent overload
-  const actualConcurrency = Math.min(concurrency, 10)
+  const actualConcurrency = Math.min(concurrency, 5)
 
   // Track progress and timing
   const startTime = Date.now()
@@ -1968,7 +1968,18 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
           return result.fullDomainName
         }
         else {
-          // Failed to fetch
+          // Failed to fetch - check if we have an existing file to preserve
+          const safeFilename = packageName.replace(/\//g, '-')
+          const existingFilePath = path.join(outputDir, `${safeFilename}.ts`)
+
+          if (fs.existsSync(existingFilePath)) {
+            console.log(`Preserving existing file for ${packageName} at ${existingFilePath}`)
+            // Mark as processed to avoid overwriting
+            processedDomains.add(packageName)
+            return packageName
+          }
+
+          // No existing file, mark as failed
           failedPackages.push(packageName)
           return null
         }
@@ -2034,15 +2045,16 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       console.log(`${progressBar} Completed chunk ${chunkIndex + 1}/${chunks.length}, processed ${processedCount}/${allPackageNames.length} (${completedPercent}%), ${failedPackages.length} failed, ${remainingCount} remaining, elapsed time: ${elapsedSeconds}s`)
 
       // Periodic cleanup of browser resources to prevent memory issues
-      // Do cleanup every 10 chunks or if there are more than MAX_BROWSER_POOL_SIZE*2 browsers
-      if (browserPool.length > MAX_BROWSER_POOL_SIZE * 2
-        || (now - lastCleanupTime > 5 * 60 * 1000)) { // 5 minutes
+      // Do cleanup every 5 chunks or if there are more than MAX_BROWSER_POOL_SIZE browsers
+      if (browserPool.length > MAX_BROWSER_POOL_SIZE
+        || (chunkIndex + 1) % 5 === 0
+        || (now - lastCleanupTime > 2 * 60 * 1000)) { // 2 minutes
         console.log('Performing periodic browser resource cleanup...')
         await cleanupBrowserResources()
         lastCleanupTime = now
 
         // Small delay to let system recover after cleanup
-        await new Promise(resolve => setTimeout(resolve, 1000))
+        await new Promise(resolve => setTimeout(resolve, 500))
       }
     }
 
@@ -2290,7 +2302,7 @@ export async function fetchAndSavePackage(
   try {
     // Special handling for known problematic packages
     if (packageName === 'agwa.name') {
-      console.error(`Using specialized handling for agwa.name...`)
+      console.log(`Using specialized handling for agwa.name...`)
       // Handle agwa.name/git-crypt directly rather than the base domain
       return await fetchAndSavePackage('agwa.name/git-crypt', outputDir, timeout, saveAsJson, 1, maxRetries, debug, options)
     }
@@ -2429,7 +2441,7 @@ export async function fetchAndSavePackage(
         const enhancedPackageInfo = {
           ...packageInfo,
           fullPath: packageName, // Store the full path in the package info
-          aliases: knownAliases.length > 0 ? knownAliases : undefined,
+          aliases: knownAliases.length > 0 ? knownAliases : [],
         }
 
         // Save to cache first
@@ -2516,7 +2528,7 @@ export async function fetchAndSavePackage(
                 const enhancedPackageInfo = {
                   ...packageInfo,
                   fullPath: packageName,
-                  aliases: knownAliases.length > 0 ? knownAliases : undefined,
+                  aliases: knownAliases.length > 0 ? knownAliases : [],
                 }
 
                 // Save the package data
@@ -2563,8 +2575,9 @@ export async function fetchAndSavePackage(
             }
           }
 
-          // Don't retry on 404 errors, but use a fallback approach
-          return await createPlaceholderPackage(packageName, outputDir, saveAsJson, options)
+          // Don't retry on 404 errors, skip to avoid overwriting existing files
+          console.error(`Package ${packageName} returned 404 Not Found. Skipping to avoid overwriting existing files.`)
+          return { success: false, fullDomainName: packageName }
         }
         throw error // Re-throw for other errors to allow retries
       }
@@ -2587,6 +2600,16 @@ export async function fetchAndSavePackage(
 
         // Unwrap the proper result
         const { packageInfo, originalName, fullDomainName } = fetchResult as any
+
+        // Validate that we have meaningful package data before proceeding
+        const hasValidData = packageInfo.description && packageInfo.description.trim() !== ''
+          && packageInfo.description !== `Package information for ${packageName}`
+          && (packageInfo.versions.length > 0 || packageInfo.programs.length > 0 || packageInfo.packageYmlUrl)
+
+        if (!hasValidData) {
+          console.error(`Package ${packageName} appears to have no meaningful data. Skipping to avoid creating empty files.`)
+          return { success: false, fullDomainName: packageName }
+        }
 
         // Sort versions using semver if they exist
         if (packageInfo.versions && packageInfo.versions.length > 0) {
@@ -2630,7 +2653,7 @@ export async function fetchAndSavePackage(
         const enhancedPackageInfo = {
           ...packageInfo,
           fullPath: packageName, // Store the full path in the package info
-          aliases: knownAliases.length > 0 ? knownAliases : undefined,
+          aliases: knownAliases.length > 0 ? knownAliases : [],
         }
 
         // Save to cache first
@@ -2665,8 +2688,8 @@ export async function fetchAndSavePackage(
       }
       catch (error: any) {
         if (error.toString().includes('404') || error.toString().includes('Not Found')) {
-          console.error(`Package ${packageName} returned 404 Not Found. Using fallback approach...`)
-          return await createPlaceholderPackage(packageName, outputDir, saveAsJson, options)
+          console.error(`Package ${packageName} returned 404 Not Found. Skipping to avoid overwriting existing files.`)
+          return { success: false, fullDomainName: packageName }
         }
         throw error // Re-throw for other errors to allow retries
       }
@@ -2684,8 +2707,9 @@ export async function fetchAndSavePackage(
         console.error(`Saved error details to ${debugPath}`)
       }
 
-      // Create a placeholder package as a last resort
-      return await createPlaceholderPackage(packageName, outputDir, saveAsJson, options)
+      // Don't create placeholder packages to avoid overwriting existing good files
+      console.error(`Skipping ${packageName} after ${retryNumber} failed attempts to avoid overwriting existing files.`)
+      return { success: false, fullDomainName: packageName }
     }
 
     console.error(`Attempt ${retryNumber} failed for ${packageName}, retrying...`, error)
@@ -2695,87 +2719,5 @@ export async function fetchAndSavePackage(
 
     // Retry with same base timeout (actual timeout will still increase due to retry counter)
     return fetchAndSavePackage(packageName, outputDir, timeout, saveAsJson, retryNumber + 1, maxRetries, debug, options)
-  }
-}
-
-/**
- * Creates a minimal placeholder package when fetching fails
- * @param packageName Package name or path
- * @param outputDir Output directory
- * @param saveAsJson Whether to save as JSON or TypeScript
- * @param options Additional options
- * @returns Promise with result information
- */
-async function createPlaceholderPackage(
-  packageName: string,
-  outputDir: string,
-  saveAsJson: boolean,
-  options: PackageFetchOptions = {},
-): Promise<{ success: boolean, fullDomainName?: string, aliases?: string[], filePath?: string }> {
-  console.error(`Creating placeholder package for ${packageName}`)
-
-  // If it's a nested path like 'agwa.name/git-crypt', extract parts
-  const parts = packageName.split('/')
-  const domain = parts[0]
-  const subPath = parts.length > 1 ? parts.slice(1).join('/') : null
-
-  // Create a minimal package info object
-  const packageInfo: PkgxPackage = {
-    name: subPath || packageName,
-    domain,
-    description: `Package information for ${packageName}`,
-    packageYmlUrl: '',
-    homepageUrl: '',
-    githubUrl: '',
-    installCommand: `sh <(curl https://pkgx.sh) ${packageName}`,
-    programs: [],
-    companions: [],
-    dependencies: [],
-    versions: [],
-  }
-
-  // Add aliases if this is a nested path
-  const aliases = subPath ? [subPath] : []
-  const enhancedPackageInfo = {
-    ...packageInfo,
-    fullPath: packageName,
-    aliases: aliases.length > 0 ? aliases : undefined,
-  }
-
-  // Save in the appropriate format
-  const safeFilename = packageName.replace(/\//g, '-')
-
-  // Save to cache if caching is enabled
-  const useCache = options.cache !== false
-  const cacheDir = options.cacheDir || DEFAULT_CACHE_DIR
-
-  if (useCache) {
-    // Save to cache directory
-    const cachePath = path.join(cacheDir, `${safeFilename}.json`)
-    const cacheData = {
-      ...enhancedPackageInfo,
-      fetchedAt: Date.now(),
-    }
-
-    // Ensure cache directory exists
-    if (!fs.existsSync(cacheDir)) {
-      fs.mkdirSync(cacheDir, { recursive: true })
-    }
-
-    // Write to cache
-    fs.writeFileSync(cachePath, JSON.stringify(cacheData, null, 2))
-    console.log(`Saved placeholder package data to cache: ${cachePath}`)
-  }
-
-  // Always generate TypeScript for output
-  const filePath: string = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
-
-  console.error(`Created placeholder package for ${packageName} at ${filePath}`)
-
-  return {
-    success: true, // We consider this a "success" since we created a placeholder
-    fullDomainName: packageName,
-    aliases,
-    filePath,
   }
 }

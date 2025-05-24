@@ -11,6 +11,7 @@ export const devpodshPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'devpod.sh' as const,
+  aliases: [] as const,
 }
 
 export type DevpodshPackage = typeof devpodshPackage

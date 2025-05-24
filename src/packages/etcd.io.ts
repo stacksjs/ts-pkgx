@@ -26,6 +26,7 @@ export const etcdioPackage = {
     '3.4.36',
   ] as const,
   fullPath: 'etcd.io' as const,
+  aliases: [] as const,
 }
 
 export type EtcdioPackage = typeof etcdioPackage

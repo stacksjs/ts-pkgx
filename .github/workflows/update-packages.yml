@@ -30,7 +30,7 @@ jobs:
         run: bunx playwright install chromium --with-deps
 
       - name: Fetch all packages
-        run: bun bin/cli.ts fetch --all --verbose
+        run: bun bin/cli.ts fetch --all --concurrency 20
 
       - name: Generate index
         run: bun bin/cli.ts generate-index

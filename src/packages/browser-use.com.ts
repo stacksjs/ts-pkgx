@@ -12,6 +12,8 @@ export const browserusecomPackage = {
     'python.org~3.12',
   ] as const,
   versions: [
+    '0.2.2',
+    '0.2.1',
     '0.1.48',
     '0.1.47',
     '0.1.46',
@@ -26,6 +28,7 @@ export const browserusecomPackage = {
     '0.1.37',
   ] as const,
   fullPath: 'browser-use.com' as const,
+  aliases: [] as const,
 }
 
 export type BrowserusecomPackage = typeof browserusecomPackage

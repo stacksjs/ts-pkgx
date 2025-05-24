@@ -12,6 +12,7 @@ export const doxygennlPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '1.14.0',
     '1.13.2',
     '1.13.1',
     '1.13.0',
@@ -23,6 +24,7 @@ export const doxygennlPackage = {
     '1.9.6',
   ] as const,
   fullPath: 'doxygen.nl' as const,
+  aliases: [] as const,
 }
 
 export type DoxygennlPackage = typeof doxygennlPackage

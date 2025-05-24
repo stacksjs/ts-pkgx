@@ -29,6 +29,7 @@ export const dblabdanvergaracomPackage = {
     '0.21.0',
   ] as const,
   fullPath: 'dblab.danvergara.com' as const,
+  aliases: [] as const,
 }
 
 export type DblabdanvergaracomPackage = typeof dblabdanvergaracomPackage

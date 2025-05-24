@@ -483,6 +483,7 @@ export const checkovioPackage = {
     '3.1.30',
   ] as const,
   fullPath: 'checkov.io' as const,
+  aliases: [] as const,
 }
 
 export type CheckovioPackage = typeof checkovioPackage

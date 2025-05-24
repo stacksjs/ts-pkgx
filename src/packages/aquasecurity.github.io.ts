@@ -11,6 +11,7 @@ export const aquasecuritygithubioPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'aquasecurity.github.io' as const,
+  aliases: [] as const,
 }
 
 export type AquasecuritygithubioPackage = typeof aquasecuritygithubioPackage

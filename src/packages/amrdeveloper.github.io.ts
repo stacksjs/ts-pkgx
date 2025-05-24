@@ -11,6 +11,7 @@ export const amrdevelopergithubioPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'amrdeveloper.github.io' as const,
+  aliases: [] as const,
 }
 
 export type AmrdevelopergithubioPackage = typeof amrdevelopergithubioPackage

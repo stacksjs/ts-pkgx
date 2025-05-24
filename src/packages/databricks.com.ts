@@ -65,6 +65,7 @@ export const databrickscomPackage = {
     '0.215.0',
   ] as const,
   fullPath: 'databricks.com' as const,
+  aliases: [] as const,
 }
 
 export type DatabrickscomPackage = typeof databrickscomPackage

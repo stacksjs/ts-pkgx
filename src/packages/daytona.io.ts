@@ -90,6 +90,7 @@ export const daytonaioPackage = {
     '0.2.0',
   ] as const,
   fullPath: 'daytona.io' as const,
+  aliases: [] as const,
 }
 
 export type DaytonaioPackage = typeof daytonaioPackage

@@ -42,6 +42,7 @@ export const biomejsdevPackage = {
     '1.2.2',
   ] as const,
   fullPath: 'biomejs.dev' as const,
+  aliases: [] as const,
 }
 
 export type BiomejsdevPackage = typeof biomejsdevPackage

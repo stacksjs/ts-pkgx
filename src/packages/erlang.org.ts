@@ -99,6 +99,7 @@ export const erlangorgPackage = {
     '24.3.4.11',
   ] as const,
   fullPath: 'erlang.org' as const,
+  aliases: [] as const,
 }
 
 export type ErlangorgPackage = typeof erlangorgPackage

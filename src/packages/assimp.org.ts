@@ -23,6 +23,7 @@ export const assimporgPackage = {
     '5.2.5',
   ] as const,
   fullPath: 'assimp.org' as const,
+  aliases: [] as const,
 }
 
 export type AssimporgPackage = typeof assimporgPackage

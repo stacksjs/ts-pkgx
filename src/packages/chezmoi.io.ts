@@ -89,6 +89,7 @@ export const chezmoiioPackage = {
     '2.29.3',
   ] as const,
   fullPath: 'chezmoi.io' as const,
+  aliases: [] as const,
 }
 
 export type ChezmoiioPackage = typeof chezmoiioPackage

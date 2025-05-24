@@ -55,6 +55,7 @@ export const bufbuildPackage = {
     '1.26.1',
   ] as const,
   fullPath: 'buf.build' as const,
+  aliases: [] as const,
 }
 
 export type BufbuildPackage = typeof bufbuildPackage

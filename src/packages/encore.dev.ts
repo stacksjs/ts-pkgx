@@ -68,6 +68,7 @@ export const encoredevPackage = {
     '1.25.0',
   ] as const,
   fullPath: 'encore.dev' as const,
+  aliases: [] as const,
 }
 
 export type EncoredevPackage = typeof encoredevPackage

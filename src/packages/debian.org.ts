@@ -11,6 +11,7 @@ export const debianorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'debian.org' as const,
+  aliases: [] as const,
 }
 
 export type DebianorgPackage = typeof debianorgPackage

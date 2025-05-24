@@ -11,6 +11,7 @@ export const digitaloceancomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'digitalocean.com' as const,
+  aliases: [] as const,
 }
 
 export type DigitaloceancomPackage = typeof digitaloceancomPackage

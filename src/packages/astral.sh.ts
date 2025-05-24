@@ -11,6 +11,7 @@ export const astralshPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'astral.sh' as const,
+  aliases: [] as const,
 }
 
 export type AstralshPackage = typeof astralshPackage

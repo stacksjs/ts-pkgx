@@ -21,6 +21,7 @@ export const changiedevPackage = {
     '1.18.0',
   ] as const,
   fullPath: 'changie.dev' as const,
+  aliases: [] as const,
 }
 
 export type ChangiedevPackage = typeof changiedevPackage

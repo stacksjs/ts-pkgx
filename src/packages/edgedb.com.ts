@@ -48,6 +48,7 @@ export const edgedbcomPackage = {
     '3.5.0',
   ] as const,
   fullPath: 'edgedb.com' as const,
+  aliases: [] as const,
 }
 
 export type EdgedbcomPackage = typeof edgedbcomPackage

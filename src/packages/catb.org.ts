@@ -11,6 +11,7 @@ export const catborgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'catb.org' as const,
+  aliases: [] as const,
 }
 
 export type CatborgPackage = typeof catborgPackage

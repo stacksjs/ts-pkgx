@@ -11,6 +11,7 @@ export const apacheorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'apache.org' as const,
+  aliases: [] as const,
 }
 
 export type ApacheorgPackage = typeof apacheorgPackage

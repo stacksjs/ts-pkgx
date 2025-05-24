@@ -11,6 +11,7 @@ export const aomediagooglesourcecomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'aomedia.googlesource.com' as const,
+  aliases: [] as const,
 }
 
 export type AomediagooglesourcecomPackage = typeof aomediagooglesourcecomPackage

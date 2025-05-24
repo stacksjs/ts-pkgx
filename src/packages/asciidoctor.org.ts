@@ -23,6 +23,7 @@ export const asciidoctororgPackage = {
     '2.0.18',
   ] as const,
   fullPath: 'asciidoctor.org' as const,
+  aliases: [] as const,
 }
 
 export type AsciidoctororgPackage = typeof asciidoctororgPackage

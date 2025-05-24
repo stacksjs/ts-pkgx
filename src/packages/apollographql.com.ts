@@ -11,6 +11,7 @@ export const apollographqlcomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'apollographql.com' as const,
+  aliases: [] as const,
 }
 
 export type ApollographqlcomPackage = typeof apollographqlcomPackage

@@ -16,6 +16,7 @@ export const bytebasecomPackage = {
     'nodejs.org>=23.11',
   ] as const,
   versions: [
+    '3.6.2',
     '3.6.1',
     '3.6.0',
     '3.5.2',
@@ -47,6 +48,7 @@ export const bytebasecomPackage = {
     '2.14.1',
   ] as const,
   fullPath: 'bytebase.com' as const,
+  aliases: [] as const,
 }
 
 export type BytebasecomPackage = typeof bytebasecomPackage

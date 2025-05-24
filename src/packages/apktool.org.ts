@@ -20,6 +20,7 @@ export const apktoolorgPackage = {
     '2.9.3',
   ] as const,
   fullPath: 'apktool.org' as const,
+  aliases: [] as const,
 }
 
 export type ApktoolorgPackage = typeof apktoolorgPackage

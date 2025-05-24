@@ -11,6 +11,7 @@ export const ciscocomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'cisco.com' as const,
+  aliases: [] as const,
 }
 
 export type CiscocomPackage = typeof ciscocomPackage

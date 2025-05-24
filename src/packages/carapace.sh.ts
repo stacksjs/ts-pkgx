@@ -25,6 +25,7 @@ export const carapaceshPackage = {
     '1.0.4',
   ] as const,
   fullPath: 'carapace.sh' as const,
+  aliases: [] as const,
 }
 
 export type CarapaceshPackage = typeof carapaceshPackage

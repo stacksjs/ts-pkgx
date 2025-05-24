@@ -11,6 +11,7 @@ export const awsamazoncomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'aws.amazon.com' as const,
+  aliases: [] as const,
 }
 
 export type AwsamazoncomPackage = typeof awsamazoncomPackage

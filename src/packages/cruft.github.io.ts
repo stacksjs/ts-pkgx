@@ -19,6 +19,7 @@ export const cruftgithubioPackage = {
     '2.15.0',
   ] as const,
   fullPath: 'cruft.github.io' as const,
+  aliases: [] as const,
 }
 
 export type CruftgithubioPackage = typeof cruftgithubioPackage

@@ -11,6 +11,7 @@ export const crazymaxdevPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'crazymax.dev' as const,
+  aliases: [] as const,
 }
 
 export type CrazymaxdevPackage = typeof crazymaxdevPackage

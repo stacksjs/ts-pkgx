@@ -33,6 +33,7 @@ export const cuelangorgPackage = {
     '0.4.3',
   ] as const,
   fullPath: 'cuelang.org' as const,
+  aliases: [] as const,
 }
 
 export type CuelangorgPackage = typeof cuelangorgPackage

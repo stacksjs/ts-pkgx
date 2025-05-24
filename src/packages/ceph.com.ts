@@ -11,6 +11,7 @@ export const cephcomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'ceph.com' as const,
+  aliases: [] as const,
 }
 
 export type CephcomPackage = typeof cephcomPackage

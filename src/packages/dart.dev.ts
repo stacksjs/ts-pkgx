@@ -50,6 +50,7 @@ export const dartdevPackage = {
     '3.1.1',
   ] as const,
   fullPath: 'dart.dev' as const,
+  aliases: [] as const,
 }
 
 export type DartdevPackage = typeof dartdevPackage

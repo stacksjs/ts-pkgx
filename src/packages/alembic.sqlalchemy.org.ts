@@ -24,6 +24,7 @@ export const alembicsqlalchemyorgPackage = {
     '1.13.2',
   ] as const,
   fullPath: 'alembic.sqlalchemy.org' as const,
+  aliases: [] as const,
 }
 
 export type AlembicsqlalchemyorgPackage = typeof alembicsqlalchemyorgPackage

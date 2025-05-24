@@ -31,6 +31,7 @@ export const fnaxnagithubioPackage = {
     '24.1.0',
   ] as const,
   fullPath: 'fna-xna.github.io' as const,
+  aliases: [] as const,
 }
 
 export type FnaxnagithubioPackage = typeof fnaxnagithubioPackage

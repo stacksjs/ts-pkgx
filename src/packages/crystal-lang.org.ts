@@ -46,6 +46,7 @@ export const crystallangorgPackage = {
     '1.10.1',
   ] as const,
   fullPath: 'crystal-lang.org' as const,
+  aliases: [] as const,
 }
 
 export type CrystallangorgPackage = typeof crystallangorgPackage

@@ -50,6 +50,7 @@ export const fliptioPackage = {
     '1.44.0',
   ] as const,
   fullPath: 'flipt.io' as const,
+  aliases: [] as const,
 }
 
 export type FliptioPackage = typeof fliptioPackage

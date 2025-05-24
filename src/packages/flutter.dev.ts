@@ -67,6 +67,7 @@ export const flutterdevPackage = {
     '3.13.3',
   ] as const,
   fullPath: 'flutter.dev' as const,
+  aliases: [] as const,
 }
 
 export type FlutterdevPackage = typeof flutterdevPackage

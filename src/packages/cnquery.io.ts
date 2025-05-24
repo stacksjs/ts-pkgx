@@ -156,6 +156,7 @@ export const cnqueryioPackage = {
     '9.13.0',
   ] as const,
   fullPath: 'cnquery.io' as const,
+  aliases: [] as const,
 }
 
 export type CnqueryioPackage = typeof cnqueryioPackage

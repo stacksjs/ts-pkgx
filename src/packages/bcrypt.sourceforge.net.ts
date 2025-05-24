@@ -17,6 +17,7 @@ export const bcryptsourceforgenetPackage = {
     '1.1.0',
   ] as const,
   fullPath: 'bcrypt.sourceforge.net' as const,
+  aliases: [] as const,
 }
 
 export type BcryptsourceforgenetPackage = typeof bcryptsourceforgenetPackage

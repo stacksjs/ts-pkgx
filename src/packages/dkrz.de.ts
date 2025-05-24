@@ -11,6 +11,7 @@ export const dkrzdePackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'dkrz.de' as const,
+  aliases: [] as const,
 }
 
 export type DkrzdePackage = typeof dkrzdePackage

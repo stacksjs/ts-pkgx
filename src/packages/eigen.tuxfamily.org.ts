@@ -16,6 +16,7 @@ export const eigentuxfamilyorgPackage = {
     '3.4.0',
   ] as const,
   fullPath: 'eigen.tuxfamily.org' as const,
+  aliases: [] as const,
 }
 
 export type EigentuxfamilyorgPackage = typeof eigentuxfamilyorgPackage

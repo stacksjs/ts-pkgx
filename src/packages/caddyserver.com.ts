@@ -24,6 +24,7 @@ export const caddyservercomPackage = {
     '2.7.4',
   ] as const,
   fullPath: 'caddyserver.com' as const,
+  aliases: [] as const,
 }
 
 export type CaddyservercomPackage = typeof caddyservercomPackage

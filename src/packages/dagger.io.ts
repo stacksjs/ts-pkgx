@@ -103,6 +103,7 @@ export const daggerioPackage = {
     '0.3.9',
   ] as const,
   fullPath: 'dagger.io' as const,
+  aliases: [] as const,
 }
 
 export type DaggerioPackage = typeof daggerioPackage

@@ -11,6 +11,7 @@ export const creativeprojectsgithubioPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'creativeprojects.github.io' as const,
+  aliases: [] as const,
 }
 
 export type CreativeprojectsgithubioPackage = typeof creativeprojectsgithubioPackage

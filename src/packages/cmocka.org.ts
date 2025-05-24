@@ -13,6 +13,7 @@ export const cmockaorgPackage = {
     '1.1.7',
   ] as const,
   fullPath: 'cmocka.org' as const,
+  aliases: [] as const,
 }
 
 export type CmockaorgPackage = typeof cmockaorgPackage

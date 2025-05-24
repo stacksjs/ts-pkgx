@@ -15,6 +15,7 @@ export const dotenvlintergithubioPackage = {
     '3.3.0',
   ] as const,
   fullPath: 'dotenv-linter.github.io' as const,
+  aliases: [] as const,
 }
 
 export type DotenvlintergithubioPackage = typeof dotenvlintergithubioPackage

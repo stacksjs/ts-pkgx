@@ -15,6 +15,7 @@ export const ctopshPackage = {
     '0.7.7',
   ] as const,
   fullPath: 'ctop.sh' as const,
+  aliases: [] as const,
 }
 
 export type CtopshPackage = typeof ctopshPackage

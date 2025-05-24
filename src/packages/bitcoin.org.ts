@@ -42,6 +42,7 @@ export const bitcoinorgPackage = {
     '23.2.0',
   ] as const,
   fullPath: 'bitcoin.org' as const,
+  aliases: [] as const,
 }
 
 export type BitcoinorgPackage = typeof bitcoinorgPackage

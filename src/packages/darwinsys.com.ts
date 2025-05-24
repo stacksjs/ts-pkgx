@@ -11,6 +11,7 @@ export const darwinsyscomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'darwinsys.com' as const,
+  aliases: [] as const,
 }
 
 export type DarwinsyscomPackage = typeof darwinsyscomPackage

@@ -11,6 +11,7 @@ export const cyrusimaporgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'cyrusimap.org' as const,
+  aliases: [] as const,
 }
 
 export type CyrusimaporgPackage = typeof cyrusimaporgPackage

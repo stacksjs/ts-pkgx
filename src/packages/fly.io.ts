@@ -13,6 +13,7 @@ export const flyioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.3.130',
     '0.3.129',
     '0.3.128',
     '0.3.126',
@@ -403,6 +404,7 @@ export const flyioPackage = {
     '0.0.548',
   ] as const,
   fullPath: 'fly.io' as const,
+  aliases: [] as const,
 }
 
 export type FlyioPackage = typeof flyioPackage

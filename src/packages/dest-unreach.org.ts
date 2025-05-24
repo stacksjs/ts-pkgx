@@ -11,6 +11,7 @@ export const destunreachorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'dest-unreach.org' as const,
+  aliases: [] as const,
 }
 
 export type DestunreachorgPackage = typeof destunreachorgPackage

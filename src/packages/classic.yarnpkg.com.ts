@@ -21,6 +21,7 @@ export const classicyarnpkgcomPackage = {
     '1.22.19',
   ] as const,
   fullPath: 'classic.yarnpkg.com' as const,
+  aliases: [] as const,
 }
 
 export type ClassicyarnpkgcomPackage = typeof classicyarnpkgcomPackage

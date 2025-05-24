@@ -11,6 +11,7 @@ export const blake2netPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'blake2.net' as const,
+  aliases: [] as const,
 }
 
 export type Blake2netPackage = typeof blake2netPackage

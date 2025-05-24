@@ -11,6 +11,7 @@ export const dhruvkbdevPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'dhruvkb.dev' as const,
+  aliases: [] as const,
 }
 
 export type DhruvkbdevPackage = typeof dhruvkbdevPackage

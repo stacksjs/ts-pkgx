@@ -11,6 +11,7 @@ export const certifiioPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'certifi.io' as const,
+  aliases: [] as const,
 }
 
 export type CertifiioPackage = typeof certifiioPackage

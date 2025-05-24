@@ -199,6 +199,7 @@ export const diggerdevPackage = {
     '0.1.31',
   ] as const,
   fullPath: 'digger.dev' as const,
+  aliases: [] as const,
 }
 
 export type DiggerdevPackage = typeof diggerdevPackage

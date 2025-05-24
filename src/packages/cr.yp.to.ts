@@ -11,6 +11,7 @@ export const cryptoPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'cr.yp.to' as const,
+  aliases: [] as const,
 }
 
 export type CryptoPackage = typeof cryptoPackage

@@ -26,6 +26,7 @@ export const amberlangcomPackage = {
     '0.3.1',
   ] as const,
   fullPath: 'amber-lang.com' as const,
+  aliases: [] as const,
 }
 
 export type AmberlangcomPackage = typeof amberlangcomPackage

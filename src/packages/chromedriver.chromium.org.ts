@@ -20,6 +20,7 @@ export const chromedriverchromiumorgPackage = {
     '114.0.5735.90',
   ] as const,
   fullPath: 'chromedriver.chromium.org' as const,
+  aliases: [] as const,
 }
 
 export type ChromedriverchromiumorgPackage = typeof chromedriverchromiumorgPackage

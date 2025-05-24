@@ -11,6 +11,7 @@ export const dockercomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'docker.com' as const,
+  aliases: [] as const,
 }
 
 export type DockercomPackage = typeof dockercomPackage

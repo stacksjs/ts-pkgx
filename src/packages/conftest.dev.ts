@@ -30,6 +30,7 @@ export const conftestdevPackage = {
     '0.46.0',
   ] as const,
   fullPath: 'conftest.dev' as const,
+  aliases: [] as const,
 }
 
 export type ConftestdevPackage = typeof conftestdevPackage

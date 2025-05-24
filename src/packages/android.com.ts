@@ -11,6 +11,7 @@ export const androidcomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'android.com' as const,
+  aliases: [] as const,
 }
 
 export type AndroidcomPackage = typeof androidcomPackage

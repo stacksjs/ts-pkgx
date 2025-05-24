@@ -27,6 +27,7 @@ export const fmtdevPackage = {
     '9.1.0',
   ] as const,
   fullPath: 'fmt.dev' as const,
+  aliases: [] as const,
 }
 
 export type FmtdevPackage = typeof fmtdevPackage

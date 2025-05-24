@@ -33,6 +33,7 @@ export const bashlydannybcoPackage = {
     '1.1.10',
   ] as const,
   fullPath: 'bashly.dannyb.co' as const,
+  aliases: [] as const,
 }
 
 export type BashlydannybcoPackage = typeof bashlydannybcoPackage

@@ -11,6 +11,7 @@ export const codevideolanorgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'code.videolan.org' as const,
+  aliases: [] as const,
 }
 
 export type CodevideolanorgPackage = typeof codevideolanorgPackage

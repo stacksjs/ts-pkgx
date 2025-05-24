@@ -13,6 +13,7 @@ export const docbookorgPackage = {
     '5.1.0',
   ] as const,
   fullPath: 'docbook.org' as const,
+  aliases: [] as const,
 }
 
 export type DocbookorgPackage = typeof docbookorgPackage

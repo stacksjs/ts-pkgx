@@ -12,6 +12,7 @@ export const consulioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '1.21.1',
     '1.21.0',
     '1.20.6',
     '1.20.5',
@@ -24,6 +25,7 @@ export const consulioPackage = {
     '1.19.1',
   ] as const,
   fullPath: 'consul.io' as const,
+  aliases: [] as const,
 }
 
 export type ConsulioPackage = typeof consulioPackage

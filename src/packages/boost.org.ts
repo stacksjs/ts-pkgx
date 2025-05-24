@@ -22,6 +22,7 @@ export const boostorgPackage = {
     '1.81.0',
   ] as const,
   fullPath: 'boost.org' as const,
+  aliases: [] as const,
 }
 
 export type BoostorgPackage = typeof boostorgPackage

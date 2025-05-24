@@ -12,6 +12,7 @@ export const circlecicomPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.1.32067',
     '0.1.31983',
     '0.1.31879',
     '0.1.31792',
@@ -65,6 +66,7 @@ export const circlecicomPackage = {
     '0.1.23845',
   ] as const,
   fullPath: 'circleci.com' as const,
+  aliases: [] as const,
 }
 
 export type CirclecicomPackage = typeof circlecicomPackage

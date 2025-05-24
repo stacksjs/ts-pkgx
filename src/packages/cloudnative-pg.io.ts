@@ -12,8 +12,11 @@ export const cloudnativepgioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '1.26.0',
+    '1.25.2',
     '1.25.1',
     '1.25.0',
+    '1.24.4',
     '1.24.3',
   ] as const,
   fullPath: 'cloudnative-pg.io' as const,

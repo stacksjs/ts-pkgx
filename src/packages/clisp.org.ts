@@ -19,6 +19,7 @@ export const clisporgPackage = {
     '2.49.92',
   ] as const,
   fullPath: 'clisp.org' as const,
+  aliases: [] as const,
 }
 
 export type ClisporgPackage = typeof clisporgPackage

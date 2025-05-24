@@ -86,6 +86,7 @@ export const fluentciioPackage = {
     '0.6.7',
   ] as const,
   fullPath: 'fluentci.io' as const,
+  aliases: [] as const,
 }
 
 export type FluentciioPackage = typeof fluentciioPackage

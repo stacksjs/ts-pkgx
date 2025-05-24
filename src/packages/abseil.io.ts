@@ -29,6 +29,7 @@ export const abseilioPackage = {
     '20220623.2.0',
   ] as const,
   fullPath: 'abseil.io' as const,
+  aliases: [] as const,
 }
 
 export type AbseilioPackage = typeof abseilioPackage

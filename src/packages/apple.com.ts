@@ -11,6 +11,7 @@ export const applecomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'apple.com' as const,
+  aliases: [] as const,
 }
 
 export type ApplecomPackage = typeof applecomPackage

@@ -11,6 +11,7 @@ export const digiporgPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'digip.org' as const,
+  aliases: [] as const,
 }
 
 export type DigiporgPackage = typeof digiporgPackage

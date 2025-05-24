@@ -34,6 +34,7 @@ export const atlasgoioPackage = {
     '0.14.0',
   ] as const,
   fullPath: 'atlasgo.io' as const,
+  aliases: [] as const,
 }
 
 export type AtlasgoioPackage = typeof atlasgoioPackage

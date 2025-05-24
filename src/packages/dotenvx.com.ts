@@ -183,6 +183,7 @@ export const dotenvxcomPackage = {
     '0.8.4',
   ] as const,
   fullPath: 'dotenvx.com' as const,
+  aliases: [] as const,
 }
 
 export type DotenvxcomPackage = typeof dotenvxcomPackage

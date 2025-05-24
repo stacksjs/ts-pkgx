@@ -95,6 +95,7 @@ export const ansiblecomPackage = {
     '2.13.9',
   ] as const,
   fullPath: 'ansible.com' as const,
+  aliases: [] as const,
 }
 
 export type AnsiblecomPackage = typeof ansiblecomPackage

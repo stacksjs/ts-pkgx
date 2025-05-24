@@ -30,6 +30,7 @@ export const fishshellcomPackage = {
     '3.5.1',
   ] as const,
   fullPath: 'fishshell.com' as const,
+  aliases: [] as const,
 }
 
 export type FishshellcomPackage = typeof fishshellcomPackage

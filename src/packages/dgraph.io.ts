@@ -24,6 +24,7 @@ export const dgraphioPackage = {
     '23.1.0',
   ] as const,
   fullPath: 'dgraph.io' as const,
+  aliases: [] as const,
 }
 
 export type DgraphioPackage = typeof dgraphioPackage

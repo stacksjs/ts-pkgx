@@ -81,6 +81,7 @@ export const codercomPackage = {
     '2.6.1',
   ] as const,
   fullPath: 'coder.com' as const,
+  aliases: [] as const,
 }
 
 export type CodercomPackage = typeof codercomPackage

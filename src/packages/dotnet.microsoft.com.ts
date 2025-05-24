@@ -50,6 +50,7 @@ export const dotnetmicrosoftcomPackage = {
     '6.0.130',
   ] as const,
   fullPath: 'dotnet.microsoft.com' as const,
+  aliases: [] as const,
 }
 
 export type DotnetmicrosoftcomPackage = typeof dotnetmicrosoftcomPackage

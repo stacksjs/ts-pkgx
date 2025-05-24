@@ -23,6 +23,7 @@ export const convcogithubioPackage = {
     '0.4.1',
   ] as const,
   fullPath: 'convco.github.io' as const,
+  aliases: [] as const,
 }
 
 export type ConvcogithubioPackage = typeof convcogithubioPackage

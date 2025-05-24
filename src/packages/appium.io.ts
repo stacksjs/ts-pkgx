@@ -54,6 +54,7 @@ export const appiumioPackage = {
     '2.2.3',
   ] as const,
   fullPath: 'appium.io' as const,
+  aliases: [] as const,
 }
 
 export type AppiumioPackage = typeof appiumioPackage

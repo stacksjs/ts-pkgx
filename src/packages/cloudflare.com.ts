@@ -11,6 +11,7 @@ export const cloudflarecomPackage = {
   dependencies: [] as const,
   versions: [] as const,
   fullPath: 'cloudflare.com' as const,
+  aliases: [] as const,
 }
 
 export type CloudflarecomPackage = typeof cloudflarecomPackage
