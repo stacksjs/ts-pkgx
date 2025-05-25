@@ -1062,4 +1062,4 @@ Each package includes:
 
 ## Contributing
 
-To add or update packages, see our [contribution guide](./contributing.md).
+To add or update packages, see the pkgx [contribution guide](https://docs.pkgx.sh/appendix/packaging/pantry).

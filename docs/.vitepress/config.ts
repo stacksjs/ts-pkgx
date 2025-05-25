@@ -169,6 +169,10 @@ export default withPwa(
       manifest: {
         theme_color: '#0A0ABC',
       },
+      workbox: {
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB limit instead of default 2MB
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+      },
     },
 
     markdown: {
