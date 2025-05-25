@@ -35,9 +35,6 @@ jobs:
       - name: Install Dependencies
         run: bun install
 
-      - name: Install Playwright browsers
-        run: bunx playwright install chromium --with-deps
-
       - name: Extract tag version
         id: get_version
         run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
