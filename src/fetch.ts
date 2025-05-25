@@ -1243,7 +1243,8 @@ async function acquireBrowser(timeout: number): Promise<Browser | null> {
       const errorString = String(error)
       if (errorString.includes('ENOENT') || errorString.includes('Failed to connect')
         || errorString.includes('Timeout') || errorString.includes('No target found')
-        || errorString.includes('spawn')) {
+        || errorString.includes('spawn') || errorString.includes('targetId')
+        || errorString.includes('Target page, context or browser has been closed')) {
         console.error('System appears overwhelmed, forcing aggressive cleanup and waiting longer...')
         // Force cleanup of all browsers
         await cleanupBrowserResources()
@@ -1870,9 +1871,13 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
   const cacheExpirationMinutes = options.cacheExpirationMinutes || DEFAULT_CACHE_EXPIRATION_MINUTES
   const concurrency = options.concurrency || 10
 
-  // Set the browser pool size based on concurrency setting, but cap it for system stability
-  // High concurrency doesn't necessarily need that many browsers - we can reuse them efficiently
-  MAX_BROWSER_POOL_SIZE = Math.min(Math.max(concurrency, 2), 8) // Cap at 8 browsers for system stability
+  // Set the browser pool size to match concurrency for 1:1 ratio, but cap it for system stability
+  // This gives each concurrent request its own browser for better performance
+  let maxBrowsers = 10 // Allow up to 10 browsers
+  if (concurrency > 15) {
+    maxBrowsers = 10 // Cap at 10 even for very high concurrency
+  }
+  MAX_BROWSER_POOL_SIZE = Math.min(concurrency, maxBrowsers)
 
   // Use the requested concurrency
   const actualConcurrency = concurrency
@@ -2084,7 +2089,25 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
         }
       }
       catch (error) {
-        console.error(`Error processing package ${packageName}:`, error)
+        const errorString = String(error)
+
+        // Check for specific Playwright errors that indicate browser disconnection
+        if (errorString.includes('No target found for targetId')
+          || errorString.includes('Target page, context or browser has been closed')
+          || errorString.includes('Protocol error')) {
+          console.error(`Browser disconnection error for ${packageName}: ${errorString.substring(0, 100)}...`)
+
+          // Force cleanup of all browsers when we get these errors
+          console.log('Forcing browser cleanup due to connection errors...')
+          await cleanupBrowserResources()
+
+          // Wait longer before continuing
+          await new Promise(resolve => setTimeout(resolve, 5000))
+        }
+        else {
+          console.error(`Error processing package ${packageName}:`, error)
+        }
+
         failedPackages.push(packageName)
         return null
       }
@@ -2140,10 +2163,18 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       const chunkPromises = chunk.map(packageName => processPackage(packageName))
       const chunkResults = await Promise.all(chunkPromises)
 
-      // Add a delay between chunks to prevent system overload, scaled by concurrency
+      // Add a delay between chunks to prevent system overload
       if (chunkIndex < chunks.length - 1) { // Don't delay after the last chunk
-        const delayMs = Math.max(3000, Math.min(actualConcurrency * 500, 10000)) // 3-10s delay based on concurrency
-        await new Promise(resolve => setTimeout(resolve, delayMs))
+        // With 1:1 browser ratio, we can use more predictable delays
+        let baseDelay = 2000 // Base 2 second delay
+        if (actualConcurrency > 10) {
+          baseDelay = 4000 // 4 seconds for high concurrency
+        } else if (actualConcurrency > 6) {
+          baseDelay = 3000 // 3 seconds for medium concurrency
+        }
+
+        console.log(`Waiting ${Math.round(baseDelay / 1000)}s between chunks (concurrency: ${actualConcurrency}, browsers: ${MAX_BROWSER_POOL_SIZE})`)
+        await new Promise(resolve => setTimeout(resolve, baseDelay))
       }
 
       // Add successfully processed packages to results
@@ -2161,11 +2192,11 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       console.log(`${progressBar} Completed chunk ${chunkIndex + 1}/${chunks.length}, processed ${processedCount}/${allPackageNames.length} (${completedPercent}%), ${failedPackages.length} failed, ${remainingCount} remaining, elapsed time: ${elapsedSeconds}s`)
 
       // Periodic cleanup of browser resources to prevent memory issues
-      // More frequent cleanup for higher concurrency
-      const cleanupFrequency = Math.max(1, Math.floor(8 / actualConcurrency)) // More frequent cleanup for higher concurrency
+      // With 1:1 browser to concurrency ratio, we can be less aggressive with cleanup
+      const cleanupFrequency = Math.max(2, Math.floor(10 / Math.max(actualConcurrency / 5, 1))) // Less frequent cleanup
       if (browserPool.length >= MAX_BROWSER_POOL_SIZE
         || (chunkIndex + 1) % cleanupFrequency === 0 // Every N chunks based on concurrency
-        || (now - lastCleanupTime > 20 * 1000)) { // 20 seconds
+        || (now - lastCleanupTime > 30 * 1000)) { // 30 seconds
         console.log('Performing periodic browser resource cleanup...')
         await cleanupBrowserResources()
         lastCleanupTime = now
@@ -2810,6 +2841,33 @@ export async function fetchAndSavePackage(
     }
   }
   catch (error: any) {
+    const errorString = String(error)
+
+    // Check for Playwright connection errors that indicate browser issues
+    const isBrowserError = errorString.includes('No target found')
+      || errorString.includes('targetId')
+      || errorString.includes('Target page, context or browser has been closed')
+      || errorString.includes('Protocol error')
+      || errorString.includes('Connection closed')
+
+    if (isBrowserError) {
+      console.error(`Browser connection error for ${packageName}:`, errorString.substring(0, 200))
+
+      // Force cleanup and wait longer for browser errors
+      if (options.browser) {
+        try {
+          // Try to close the problematic browser
+          await options.browser.close().catch(() => {})
+        }
+        catch {
+          // Ignore errors when closing
+        }
+      }
+
+      // Wait longer before retrying browser errors
+      await new Promise(resolve => setTimeout(resolve, 3000 * retryNumber))
+    }
+
     // If we've exceeded retry attempts, create a minimal placeholder package
     if (retryNumber >= maxRetries) {
       console.error(`Failed to fetch package ${packageName} after ${retryNumber} attempts:`, error)
@@ -2828,8 +2886,9 @@ export async function fetchAndSavePackage(
 
     console.error(`Attempt ${retryNumber} failed for ${packageName}, retrying...`, error)
 
-    // Short pause before retrying
-    await new Promise(resolve => setTimeout(resolve, 500 * retryNumber)) // Shorter wait time for each retry
+    // Longer pause for browser errors, shorter for other errors
+    const waitTime = isBrowserError ? 2000 * retryNumber : 500 * retryNumber
+    await new Promise(resolve => setTimeout(resolve, waitTime))
 
     // Retry with same base timeout (actual timeout will still increase due to retry counter)
     return fetchAndSavePackage(packageName, outputDir, timeout, saveAsJson, retryNumber + 1, maxRetries, debug, options)
