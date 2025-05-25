@@ -19,6 +19,7 @@ export const openblasnetPackage = {
     '0.3.23',
   ] as const,
   fullPath: 'openblas.net' as const,
+  aliases: [] as const,
 }
 
 export type OpenblasnetPackage = typeof openblasnetPackage

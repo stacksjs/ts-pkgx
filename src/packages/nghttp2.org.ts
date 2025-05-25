@@ -29,6 +29,7 @@ export const nghttp2orgPackage = {
     '1.51.0',
   ] as const,
   fullPath: 'nghttp2.org' as const,
+  aliases: [] as const,
 }
 
 export type Nghttp2orgPackage = typeof nghttp2orgPackage

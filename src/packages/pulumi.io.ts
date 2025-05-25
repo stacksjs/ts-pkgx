@@ -162,6 +162,7 @@ export const pulumiioPackage = {
     '3.66.0',
   ] as const,
   fullPath: 'pulumi.io' as const,
+  aliases: [] as const,
 }
 
 export type PulumiioPackage = typeof pulumiioPackage

@@ -18,6 +18,7 @@ export const ordinalscomPackage = {
     '0.5.0',
   ] as const,
   fullPath: 'ordinals.com' as const,
+  aliases: [] as const,
 }
 
 export type OrdinalscomPackage = typeof ordinalscomPackage

@@ -33,6 +33,7 @@ export const plantumlcomPackage = {
     '1.2023.10',
   ] as const,
   fullPath: 'plantuml.com' as const,
+  aliases: [] as const,
 }
 
 export type PlantumlcomPackage = typeof plantumlcomPackage

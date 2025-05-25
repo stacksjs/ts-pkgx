@@ -69,6 +69,7 @@ export const vaultprojectioPackage = {
     '1.12.8',
   ] as const,
   fullPath: 'vaultproject.io' as const,
+  aliases: [] as const,
 }
 
 export type VaultprojectioPackage = typeof vaultprojectioPackage

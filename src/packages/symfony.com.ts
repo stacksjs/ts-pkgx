@@ -65,6 +65,7 @@ export const symfonycomPackage = {
     '5.5.7',
   ] as const,
   fullPath: 'symfony.com' as const,
+  aliases: [] as const,
 }
 
 export type SymfonycomPackage = typeof symfonycomPackage

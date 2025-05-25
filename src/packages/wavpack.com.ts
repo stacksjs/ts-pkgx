@@ -20,7 +20,7 @@ export const wavpackcomPackage = {
     '5.7.0',
   ] as const,
   fullPath: 'wavpack.com' as const,
-  aliases: undefined,
+  aliases: [] as const,
 }
 
 export type WavpackcomPackage = typeof wavpackcomPackage

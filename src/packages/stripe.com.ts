@@ -65,6 +65,7 @@ export const stripecomPackage = {
     '1.13.12',
   ] as const,
   fullPath: 'stripe.com' as const,
+  aliases: [] as const,
 }
 
 export type StripecomPackage = typeof stripecomPackage

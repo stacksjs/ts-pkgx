@@ -40,6 +40,7 @@ export const treesittergithubioPackage = {
     '0.20.8',
   ] as const,
   fullPath: 'tree-sitter.github.io' as const,
+  aliases: [] as const,
 }
 
 export type TreesittergithubioPackage = typeof treesittergithubioPackage

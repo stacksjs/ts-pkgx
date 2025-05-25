@@ -32,6 +32,7 @@ export const syncthingnetPackage = {
     '1.27.4',
   ] as const,
   fullPath: 'syncthing.net' as const,
+  aliases: [] as const,
 }
 
 export type SyncthingnetPackage = typeof syncthingnetPackage

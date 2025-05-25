@@ -47,6 +47,7 @@ export const nixpackscomPackage = {
     '1.21.0',
   ] as const,
   fullPath: 'nixpacks.com' as const,
+  aliases: [] as const,
 }
 
 export type NixpackscomPackage = typeof nixpackscomPackage

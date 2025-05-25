@@ -15,6 +15,7 @@ export const rometoolsPackage = {
     '0.4.2',
   ] as const,
   fullPath: 'rome.tools' as const,
+  aliases: [] as const,
 }
 
 export type RometoolsPackage = typeof rometoolsPackage

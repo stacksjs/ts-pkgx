@@ -44,6 +44,7 @@ export const taskfiledevPackage = {
     '3.27.0',
   ] as const,
   fullPath: 'taskfile.dev' as const,
+  aliases: [] as const,
 }
 
 export type TaskfiledevPackage = typeof taskfiledevPackage

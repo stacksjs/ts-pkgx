@@ -32,6 +32,7 @@ export const mpvioPackage = {
     '0.38.0',
   ] as const,
   fullPath: 'mpv.io' as const,
+  aliases: [] as const,
 }
 
 export type MpvioPackage = typeof mpvioPackage

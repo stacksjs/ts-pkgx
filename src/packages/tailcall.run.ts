@@ -637,6 +637,7 @@ export const tailcallrunPackage = {
     '0.18.0',
   ] as const,
   fullPath: 'tailcall.run' as const,
+  aliases: [] as const,
 }
 
 export type TailcallrunPackage = typeof tailcallrunPackage

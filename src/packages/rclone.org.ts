@@ -30,6 +30,7 @@ export const rcloneorgPackage = {
     '1.63.1',
   ] as const,
   fullPath: 'rclone.org' as const,
+  aliases: [] as const,
 }
 
 export type RcloneorgPackage = typeof rcloneorgPackage

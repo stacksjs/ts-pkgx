@@ -19,6 +19,7 @@ export const mkdocsorgPackage = {
     '1.5.3',
   ] as const,
   fullPath: 'mkdocs.org' as const,
+  aliases: [] as const,
 }
 
 export type MkdocsorgPackage = typeof mkdocsorgPackage

@@ -23,6 +23,7 @@ export const seaweedfscomPackage = {
     '3.79.0',
   ] as const,
   fullPath: 'seaweedfs.com' as const,
+  aliases: [] as const,
 }
 
 export type SeaweedfscomPackage = typeof seaweedfscomPackage

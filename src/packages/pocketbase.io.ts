@@ -12,6 +12,7 @@ export const pocketbaseioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.28.2',
     '0.28.1',
     '0.28.0',
     '0.27.2',
@@ -93,6 +94,7 @@ export const pocketbaseioPackage = {
     '0.20.7',
   ] as const,
   fullPath: 'pocketbase.io' as const,
+  aliases: [] as const,
 }
 
 export type PocketbaseioPackage = typeof pocketbaseioPackage

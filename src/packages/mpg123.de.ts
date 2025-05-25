@@ -26,6 +26,7 @@ export const mpg123dePackage = {
     '1.31.2',
   ] as const,
   fullPath: 'mpg123.de' as const,
+  aliases: [] as const,
 }
 
 export type Mpg123dePackage = typeof mpg123dePackage

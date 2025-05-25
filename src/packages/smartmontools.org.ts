@@ -18,6 +18,7 @@ export const smartmontoolsorgPackage = {
     '7.3.0',
   ] as const,
   fullPath: 'smartmontools.org' as const,
+  aliases: [] as const,
 }
 
 export type SmartmontoolsorgPackage = typeof smartmontoolsorgPackage

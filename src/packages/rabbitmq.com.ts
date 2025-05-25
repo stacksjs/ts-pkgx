@@ -57,6 +57,7 @@ export const rabbitmqcomPackage = {
     '3.11.24',
   ] as const,
   fullPath: 'rabbitmq.com' as const,
+  aliases: [] as const,
 }
 
 export type RabbitmqcomPackage = typeof rabbitmqcomPackage

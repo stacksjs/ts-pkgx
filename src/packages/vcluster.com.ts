@@ -51,6 +51,7 @@ export const vclustercomPackage = {
     '0.19.4',
   ] as const,
   fullPath: 'vcluster.com' as const,
+  aliases: [] as const,
 }
 
 export type VclustercomPackage = typeof vclustercomPackage

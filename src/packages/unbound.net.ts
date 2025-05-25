@@ -32,6 +32,7 @@ export const unboundnetPackage = {
     '1.17.1',
   ] as const,
   fullPath: 'unbound.net' as const,
+  aliases: [] as const,
 }
 
 export type UnboundnetPackage = typeof unboundnetPackage

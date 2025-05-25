@@ -47,6 +47,7 @@ export const opensslorgPackage = {
     '1.1.1s',
   ] as const,
   fullPath: 'openssl.org' as const,
+  aliases: [] as const,
 }
 
 export type OpensslorgPackage = typeof opensslorgPackage

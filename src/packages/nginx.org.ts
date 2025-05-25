@@ -36,6 +36,7 @@ export const nginxorgPackage = {
     '1.23.3',
   ] as const,
   fullPath: 'nginx.org' as const,
+  aliases: [] as const,
 }
 
 export type NginxorgPackage = typeof nginxorgPackage

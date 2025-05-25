@@ -24,6 +24,7 @@ export const onefetchdevPackage = {
     '2.18.1',
   ] as const,
   fullPath: 'onefetch.dev' as const,
+  aliases: [] as const,
 }
 
 export type OnefetchdevPackage = typeof onefetchdevPackage

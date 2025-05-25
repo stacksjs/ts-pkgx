@@ -16,6 +16,7 @@ export const uriparsergithubioPackage = {
     '0.9.7',
   ] as const,
   fullPath: 'uriparser.github.io' as const,
+  aliases: [] as const,
 }
 
 export type UriparsergithubioPackage = typeof uriparsergithubioPackage

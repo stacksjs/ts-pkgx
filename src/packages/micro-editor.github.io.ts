@@ -18,6 +18,7 @@ export const microeditorgithubioPackage = {
     '2.0.11',
   ] as const,
   fullPath: 'micro-editor.github.io' as const,
+  aliases: [] as const,
 }
 
 export type MicroeditorgithubioPackage = typeof microeditorgithubioPackage

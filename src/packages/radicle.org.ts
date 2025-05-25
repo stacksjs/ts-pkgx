@@ -42,6 +42,7 @@ export const radicleorgPackage = {
     '0.6.1',
   ] as const,
   fullPath: 'radicle.org' as const,
+  aliases: [] as const,
 }
 
 export type RadicleorgPackage = typeof radicleorgPackage

@@ -12,6 +12,7 @@ export const railwayappPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '4.5.2',
     '4.5.1',
     '4.5.0',
     '4.4.1',
@@ -63,6 +64,7 @@ export const railwayappPackage = {
     '3.5.2',
   ] as const,
   fullPath: 'railway.app' as const,
+  aliases: [] as const,
 }
 
 export type RailwayappPackage = typeof railwayappPackage

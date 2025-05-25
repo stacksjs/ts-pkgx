@@ -104,6 +104,7 @@ export const systemdioPackage = {
     '254.0.0',
   ] as const,
   fullPath: 'systemd.io' as const,
+  aliases: [] as const,
 }
 
 export type SystemdioPackage = typeof systemdioPackage

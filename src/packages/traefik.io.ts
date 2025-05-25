@@ -70,6 +70,7 @@ export const traefikioPackage = {
     '2.10.5',
   ] as const,
   fullPath: 'traefik.io' as const,
+  aliases: [] as const,
 }
 
 export type TraefikioPackage = typeof traefikioPackage

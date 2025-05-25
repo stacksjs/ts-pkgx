@@ -15,6 +15,7 @@ export const msgpackorgPackage = {
     '6.0.0',
   ] as const,
   fullPath: 'msgpack.org' as const,
+  aliases: [] as const,
 }
 
 export type MsgpackorgPackage = typeof msgpackorgPackage

@@ -17,6 +17,7 @@ export const sqlcdevPackage = {
     '1.27.0',
   ] as const,
   fullPath: 'sqlc.dev' as const,
+  aliases: [] as const,
 }
 
 export type SqlcdevPackage = typeof sqlcdevPackage

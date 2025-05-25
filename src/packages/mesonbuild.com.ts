@@ -14,6 +14,7 @@ export const mesonbuildcomPackage = {
     'pkgx.sh^1',
   ] as const,
   versions: [
+    '1.8.1',
     '1.8.0',
     '1.7.2',
     '1.7.1',
@@ -42,6 +43,7 @@ export const mesonbuildcomPackage = {
     '0.63.3',
   ] as const,
   fullPath: 'mesonbuild.com' as const,
+  aliases: [] as const,
 }
 
 export type MesonbuildcomPackage = typeof mesonbuildcomPackage

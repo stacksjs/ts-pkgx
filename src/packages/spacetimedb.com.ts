@@ -18,6 +18,7 @@ export const spacetimedbcomPackage = {
     '2023.8.12',
   ] as const,
   fullPath: 'spacetimedb.com' as const,
+  aliases: [] as const,
 }
 
 export type SpacetimedbcomPackage = typeof spacetimedbcomPackage

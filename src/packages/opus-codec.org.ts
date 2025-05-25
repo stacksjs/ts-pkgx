@@ -17,6 +17,7 @@ export const opuscodecorgPackage = {
     '1.3.1',
   ] as const,
   fullPath: 'opus-codec.org' as const,
+  aliases: [] as const,
 }
 
 export type OpuscodecorgPackage = typeof opuscodecorgPackage

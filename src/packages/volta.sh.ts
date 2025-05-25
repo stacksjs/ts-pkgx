@@ -21,6 +21,7 @@ export const voltashPackage = {
     '1.1.1',
   ] as const,
   fullPath: 'volta.sh' as const,
+  aliases: [] as const,
 }
 
 export type VoltashPackage = typeof voltashPackage

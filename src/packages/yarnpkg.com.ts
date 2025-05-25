@@ -56,6 +56,7 @@ export const yarnpkgcomPackage = {
     '3.4.1',
   ] as const,
   fullPath: 'yarnpkg.com' as const,
+  aliases: [] as const,
 }
 
 export type YarnpkgcomPackage = typeof yarnpkgcomPackage

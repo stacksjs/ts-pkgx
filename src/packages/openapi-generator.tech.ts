@@ -28,6 +28,7 @@ export const openapigeneratortechPackage = {
     '7.2.0',
   ] as const,
   fullPath: 'openapi-generator.tech' as const,
+  aliases: [] as const,
 }
 
 export type OpenapigeneratortechPackage = typeof openapigeneratortechPackage

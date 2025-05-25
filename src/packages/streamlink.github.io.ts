@@ -37,6 +37,7 @@ export const streamlinkgithubioPackage = {
     '6.7.0',
   ] as const,
   fullPath: 'streamlink.github.io' as const,
+  aliases: [] as const,
 }
 
 export type StreamlinkgithubioPackage = typeof streamlinkgithubioPackage

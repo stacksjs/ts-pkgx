@@ -14,10 +14,12 @@ export const rebar3orgPackage = {
     'erlang.org',
   ] as const,
   versions: [
+    '3.25.0',
     '3.24.0',
     '3.23.0',
   ] as const,
   fullPath: 'rebar3.org' as const,
+  aliases: [] as const,
 }
 
 export type Rebar3orgPackage = typeof rebar3orgPackage

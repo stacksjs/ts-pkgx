@@ -106,6 +106,7 @@ export const qemuorgPackage = {
     '7.2.3',
   ] as const,
   fullPath: 'qemu.org' as const,
+  aliases: [] as const,
 }
 
 export type QemuorgPackage = typeof qemuorgPackage

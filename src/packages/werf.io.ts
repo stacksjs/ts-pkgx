@@ -16,6 +16,7 @@ export const werfioPackage = {
     'sourceware.org/dm^2.3',
   ] as const,
   versions: [
+    '2.36.3',
     '2.36.2',
     '2.36.1',
     '2.36.0',
@@ -158,7 +159,7 @@ export const werfioPackage = {
     '1.1.35',
   ] as const,
   fullPath: 'werf.io' as const,
-  aliases: undefined,
+  aliases: [] as const,
 }
 
 export type WerfioPackage = typeof werfioPackage

@@ -35,6 +35,7 @@ export const starshiprsPackage = {
     '1.12.0',
   ] as const,
   fullPath: 'starship.rs' as const,
+  aliases: [] as const,
 }
 
 export type StarshiprsPackage = typeof starshiprsPackage

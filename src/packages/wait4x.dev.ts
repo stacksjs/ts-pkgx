@@ -23,7 +23,7 @@ export const wait4xdevPackage = {
     '2.14.2',
   ] as const,
   fullPath: 'wait4x.dev' as const,
-  aliases: undefined,
+  aliases: [] as const,
 }
 
 export type Wait4xdevPackage = typeof wait4xdevPackage

@@ -18,6 +18,7 @@ export const zshsourceforgeioPackage = {
     '5.9.0',
   ] as const,
   fullPath: 'zsh.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
 export type ZshsourceforgeioPackage = typeof zshsourceforgeioPackage

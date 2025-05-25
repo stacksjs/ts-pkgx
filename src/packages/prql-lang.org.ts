@@ -48,6 +48,7 @@ export const prqllangorgPackage = {
     '0.3.1',
   ] as const,
   fullPath: 'prql-lang.org' as const,
+  aliases: [] as const,
 }
 
 export type PrqllangorgPackage = typeof prqllangorgPackage

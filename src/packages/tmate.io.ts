@@ -20,6 +20,7 @@ export const tmateioPackage = {
     '2.4.0',
   ] as const,
   fullPath: 'tmate.io' as const,
+  aliases: [] as const,
 }
 
 export type TmateioPackage = typeof tmateioPackage

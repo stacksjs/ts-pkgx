@@ -31,6 +31,7 @@ export const opensearchorgPackage = {
     '2.11.1',
   ] as const,
   fullPath: 'opensearch.org' as const,
+  aliases: [] as const,
 }
 
 export type OpensearchorgPackage = typeof opensearchorgPackage

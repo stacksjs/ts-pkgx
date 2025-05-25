@@ -24,6 +24,7 @@ export const numbatdevPackage = {
     '1.8.0',
   ] as const,
   fullPath: 'numbat.dev' as const,
+  aliases: [] as const,
 }
 
 export type NumbatdevPackage = typeof numbatdevPackage

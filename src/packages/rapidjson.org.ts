@@ -13,6 +13,7 @@ export const rapidjsonorgPackage = {
     '1.1.0',
   ] as const,
   fullPath: 'rapidjson.org' as const,
+  aliases: [] as const,
 }
 
 export type RapidjsonorgPackage = typeof rapidjsonorgPackage

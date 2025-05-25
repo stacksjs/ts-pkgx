@@ -14,6 +14,7 @@ export const mitmproxyorgPackage = {
     'pkgx.sh^1',
   ] as const,
   versions: [
+    '12.1.0',
     '12.0.1',
     '12.0.0',
     '11.1.3',
@@ -41,6 +42,7 @@ export const mitmproxyorgPackage = {
     '10.1.0',
   ] as const,
   fullPath: 'mitmproxy.org' as const,
+  aliases: [] as const,
 }
 
 export type MitmproxyorgPackage = typeof mitmproxyorgPackage

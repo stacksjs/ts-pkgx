@@ -23,6 +23,7 @@ export const mujscomPackage = {
     '1.3.3',
   ] as const,
   fullPath: 'mujs.com' as const,
+  aliases: [] as const,
 }
 
 export type MujscomPackage = typeof mujscomPackage

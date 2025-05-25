@@ -110,6 +110,7 @@ export const solanacomPackage = {
     '1.14.18',
   ] as const,
   fullPath: 'solana.com' as const,
+  aliases: [] as const,
 }
 
 export type SolanacomPackage = typeof solanacomPackage

@@ -25,6 +25,7 @@ export const packerioPackage = {
     '1.9.2',
   ] as const,
   fullPath: 'packer.io' as const,
+  aliases: [] as const,
 }
 
 export type PackerioPackage = typeof packerioPackage

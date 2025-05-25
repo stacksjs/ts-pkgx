@@ -21,6 +21,7 @@ export const munlangorgPackage = {
     '0.5.0',
   ] as const,
   fullPath: 'mun-lang.org' as const,
+  aliases: [] as const,
 }
 
 export type MunlangorgPackage = typeof munlangorgPackage

@@ -27,6 +27,7 @@ export const nomadprojectioPackage = {
     '1.8.2',
   ] as const,
   fullPath: 'nomadproject.io' as const,
+  aliases: [] as const,
 }
 
 export type NomadprojectioPackage = typeof nomadprojectioPackage

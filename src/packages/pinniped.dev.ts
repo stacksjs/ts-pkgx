@@ -28,6 +28,7 @@ export const pinnipeddevPackage = {
     '0.26.0',
   ] as const,
   fullPath: 'pinniped.dev' as const,
+  aliases: [] as const,
 }
 
 export type PinnipeddevPackage = typeof pinnipeddevPackage

@@ -29,6 +29,7 @@ export const postgrestorgPackage = {
     '12.2.3',
   ] as const,
   fullPath: 'postgrest.org' as const,
+  aliases: [] as const,
 }
 
 export type PostgrestorgPackage = typeof postgrestorgPackage

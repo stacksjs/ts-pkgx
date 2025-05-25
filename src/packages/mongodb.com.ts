@@ -45,6 +45,7 @@ export const mongodbcomPackage = {
     '6.0.17',
   ] as const,
   fullPath: 'mongodb.com' as const,
+  aliases: [] as const,
 }
 
 export type MongodbcomPackage = typeof mongodbcomPackage

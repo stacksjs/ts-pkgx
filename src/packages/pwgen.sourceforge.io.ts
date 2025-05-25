@@ -15,6 +15,7 @@ export const pwgensourceforgeioPackage = {
     '2.8.0',
   ] as const,
   fullPath: 'pwgen.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
 export type PwgensourceforgeioPackage = typeof pwgensourceforgeioPackage

@@ -29,6 +29,7 @@ export const pythonpilloworgPackage = {
     '10.2.0',
   ] as const,
   fullPath: 'python-pillow.org' as const,
+  aliases: [] as const,
 }
 
 export type PythonpilloworgPackage = typeof pythonpilloworgPackage

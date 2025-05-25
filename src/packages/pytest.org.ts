@@ -41,6 +41,7 @@ export const pytestorgPackage = {
     '7.1.0',
   ] as const,
   fullPath: 'pytest.org' as const,
+  aliases: [] as const,
 }
 
 export type PytestorgPackage = typeof pytestorgPackage

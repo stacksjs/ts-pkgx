@@ -16,6 +16,8 @@ export const misejdxdevPackage = {
     'libgit2.org^1',
   ] as const,
   versions: [
+    '2025.5.12',
+    '2025.5.11',
     '2025.5.10',
     '2025.5.9',
     '2025.5.8',
@@ -293,6 +295,7 @@ export const misejdxdevPackage = {
     '2024.1.0',
   ] as const,
   fullPath: 'mise.jdx.dev' as const,
+  aliases: [] as const,
 }
 
 export type MisejdxdevPackage = typeof misejdxdevPackage

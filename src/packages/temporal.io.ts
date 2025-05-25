@@ -28,6 +28,7 @@ export const temporalioPackage = {
     '0.10.5',
   ] as const,
   fullPath: 'temporal.io' as const,
+  aliases: [] as const,
 }
 
 export type TemporalioPackage = typeof temporalioPackage

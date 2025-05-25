@@ -81,6 +81,7 @@ export const mysqlcomPackage = {
     '8.0.32',
   ] as const,
   fullPath: 'mysql.com' as const,
+  aliases: [] as const,
 }
 
 export type MysqlcomPackage = typeof mysqlcomPackage

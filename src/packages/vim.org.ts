@@ -19,6 +19,8 @@ export const vimorgPackage = {
     'ruby-lang.org>=3.2',
   ] as const,
   versions: [
+    '9.1.1406',
+    '9.1.1405',
     '9.1.1404',
     '9.1.1403',
     '9.1.1402',
@@ -2002,6 +2004,7 @@ export const vimorgPackage = {
     '9.0.1294',
   ] as const,
   fullPath: 'vim.org' as const,
+  aliases: [] as const,
 }
 
 export type VimorgPackage = typeof vimorgPackage

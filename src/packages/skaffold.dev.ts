@@ -28,6 +28,7 @@ export const skaffolddevPackage = {
     '2.8.0',
   ] as const,
   fullPath: 'skaffold.dev' as const,
+  aliases: [] as const,
 }
 
 export type SkaffolddevPackage = typeof skaffolddevPackage

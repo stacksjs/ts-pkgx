@@ -44,6 +44,7 @@ export const squawkhqcomPackage = {
     '0.24.0',
   ] as const,
   fullPath: 'squawkhq.com' as const,
+  aliases: [] as const,
 }
 
 export type SquawkhqcomPackage = typeof squawkhqcomPackage

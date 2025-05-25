@@ -19,6 +19,7 @@ export const networkxorgPackage = {
     '3.2.1',
   ] as const,
   fullPath: 'networkx.org' as const,
+  aliases: [] as const,
 }
 
 export type NetworkxorgPackage = typeof networkxorgPackage

@@ -35,6 +35,7 @@ export const openpmixgithubioPackage = {
     '5.0.1',
   ] as const,
   fullPath: 'openpmix.github.io' as const,
+  aliases: [] as const,
 }
 
 export type OpenpmixgithubioPackage = typeof openpmixgithubioPackage

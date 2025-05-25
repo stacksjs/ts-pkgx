@@ -46,6 +46,7 @@ export const swiftorgPackage = {
     'sqlite.org^3',
   ] as const,
   versions: [
+    '6.1.1',
     '6.1.0',
     '6.0.3',
     '6.0.2',
@@ -56,6 +57,7 @@ export const swiftorgPackage = {
     '5.9.2',
   ] as const,
   fullPath: 'swift.org' as const,
+  aliases: [] as const,
 }
 
 export type SwiftorgPackage = typeof swiftorgPackage

@@ -70,6 +70,7 @@ export const llvmorgPackage = {
     '12.0.1',
   ] as const,
   fullPath: 'llvm.org' as const,
+  aliases: [] as const,
 }
 
 export type LlvmorgPackage = typeof llvmorgPackage

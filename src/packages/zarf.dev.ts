@@ -58,6 +58,7 @@ export const zarfdevPackage = {
     '0.32.1',
   ] as const,
   fullPath: 'zarf.dev' as const,
+  aliases: [] as const,
 }
 
 export type ZarfdevPackage = typeof zarfdevPackage

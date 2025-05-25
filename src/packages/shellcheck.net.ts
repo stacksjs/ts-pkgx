@@ -19,6 +19,7 @@ export const shellchecknetPackage = {
     '0.8.0',
   ] as const,
   fullPath: 'shellcheck.net' as const,
+  aliases: [] as const,
 }
 
 export type ShellchecknetPackage = typeof shellchecknetPackage

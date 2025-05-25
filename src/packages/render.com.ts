@@ -20,6 +20,7 @@ export const rendercomPackage = {
     '0.1.5',
   ] as const,
   fullPath: 'render.com' as const,
+  aliases: [] as const,
 }
 
 export type RendercomPackage = typeof rendercomPackage

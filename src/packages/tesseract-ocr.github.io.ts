@@ -28,6 +28,7 @@ export const tesseractocrgithubioPackage = {
     '5.3.0',
   ] as const,
   fullPath: 'tesseract-ocr.github.io' as const,
+  aliases: [] as const,
 }
 
 export type TesseractocrgithubioPackage = typeof tesseractocrgithubioPackage

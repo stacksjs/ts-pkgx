@@ -46,6 +46,7 @@ export const steampipeioPackage = {
     '0.20.10',
   ] as const,
   fullPath: 'steampipe.io' as const,
+  aliases: [] as const,
 }
 
 export type SteampipeioPackage = typeof steampipeioPackage

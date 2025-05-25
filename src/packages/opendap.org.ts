@@ -26,6 +26,7 @@ export const opendaporgPackage = {
     '3.20.11',
   ] as const,
   fullPath: 'opendap.org' as const,
+  aliases: [] as const,
 }
 
 export type OpendaporgPackage = typeof opendaporgPackage

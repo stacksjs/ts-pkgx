@@ -29,6 +29,7 @@ export const tcllangorgPackage = {
     '8.6.13',
   ] as const,
   fullPath: 'tcl-lang.org' as const,
+  aliases: [] as const,
 }
 
 export type TcllangorgPackage = typeof tcllangorgPackage

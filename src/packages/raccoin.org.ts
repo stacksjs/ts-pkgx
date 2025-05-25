@@ -19,6 +19,7 @@ export const raccoinorgPackage = {
     '0.1.0',
   ] as const,
   fullPath: 'raccoin.org' as const,
+  aliases: [] as const,
 }
 
 export type RaccoinorgPackage = typeof raccoinorgPackage

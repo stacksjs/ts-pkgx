@@ -75,6 +75,7 @@ export const rubygemsorgPackage = {
     '3.2.34',
   ] as const,
   fullPath: 'rubygems.org' as const,
+  aliases: [] as const,
 }
 
 export type RubygemsorgPackage = typeof rubygemsorgPackage

@@ -37,7 +37,7 @@ export const wasmerioPackage = {
     '4.2.2',
   ] as const,
   fullPath: 'wasmer.io' as const,
-  aliases: undefined,
+  aliases: [] as const,
 }
 
 export type WasmerioPackage = typeof wasmerioPackage

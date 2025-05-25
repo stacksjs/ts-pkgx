@@ -57,6 +57,7 @@ export const snykioPackage = {
     '1.1280.1',
   ] as const,
   fullPath: 'snyk.io' as const,
+  aliases: [] as const,
 }
 
 export type SnykioPackage = typeof snykioPackage

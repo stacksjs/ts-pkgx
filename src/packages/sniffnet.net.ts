@@ -22,6 +22,7 @@ export const sniffnetnetPackage = {
     '1.3.1',
   ] as const,
   fullPath: 'sniffnet.net' as const,
+  aliases: [] as const,
 }
 
 export type SniffnetnetPackage = typeof sniffnetnetPackage

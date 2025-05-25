@@ -358,6 +358,7 @@ export const terragruntgruntworkioPackage = {
     '0.45.0',
   ] as const,
   fullPath: 'terragrunt.gruntwork.io' as const,
+  aliases: [] as const,
 }
 
 export type TerragruntgruntworkioPackage = typeof terragruntgruntworkioPackage

@@ -41,6 +41,7 @@ export const openmpiorgPackage = {
     '4.1.5',
   ] as const,
   fullPath: 'open-mpi.org' as const,
+  aliases: [] as const,
 }
 
 export type OpenmpiorgPackage = typeof openmpiorgPackage

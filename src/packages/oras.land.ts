@@ -18,6 +18,7 @@ export const oraslandPackage = {
     '1.2.0',
   ] as const,
   fullPath: 'oras.land' as const,
+  aliases: [] as const,
 }
 
 export type OraslandPackage = typeof oraslandPackage

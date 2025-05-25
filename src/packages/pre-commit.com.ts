@@ -38,6 +38,7 @@ export const precommitcomPackage = {
     '3.0.4',
   ] as const,
   fullPath: 'pre-commit.com' as const,
+  aliases: [] as const,
 }
 
 export type PrecommitcomPackage = typeof precommitcomPackage

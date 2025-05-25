@@ -18,6 +18,7 @@ export const ninjabuildorgPackage = {
     '1.11.0',
   ] as const,
   fullPath: 'ninja-build.org' as const,
+  aliases: [] as const,
 }
 
 export type NinjabuildorgPackage = typeof ninjabuildorgPackage

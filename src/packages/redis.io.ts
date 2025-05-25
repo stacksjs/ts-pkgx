@@ -52,6 +52,7 @@ export const redisioPackage = {
     '6.0.18',
   ] as const,
   fullPath: 'redis.io' as const,
+  aliases: [] as const,
 }
 
 export type RedisioPackage = typeof redisioPackage

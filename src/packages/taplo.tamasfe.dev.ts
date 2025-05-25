@@ -12,11 +12,14 @@ export const taplotamasfedevPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.10.0',
     '0.9.3',
     '0.9.2',
     '0.8.1',
+    '0.7.2',
   ] as const,
   fullPath: 'taplo.tamasfe.dev' as const,
+  aliases: [] as const,
 }
 
 export type TaplotamasfedevPackage = typeof taplotamasfedevPackage

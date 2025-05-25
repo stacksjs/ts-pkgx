@@ -39,6 +39,7 @@ export const sqlfluffcomPackage = {
     '2.3.2',
   ] as const,
   fullPath: 'sqlfluff.com' as const,
+  aliases: [] as const,
 }
 
 export type SqlfluffcomPackage = typeof sqlfluffcomPackage

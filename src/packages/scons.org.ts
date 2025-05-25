@@ -25,6 +25,7 @@ export const sconsorgPackage = {
     '4.5.2',
   ] as const,
   fullPath: 'scons.org' as const,
+  aliases: [] as const,
 }
 
 export type SconsorgPackage = typeof sconsorgPackage

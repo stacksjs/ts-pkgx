@@ -21,6 +21,7 @@ export const oauth2proxygithubioPackage = {
     '7.6.0',
   ] as const,
   fullPath: 'oauth2-proxy.github.io' as const,
+  aliases: [] as const,
 }
 
 export type Oauth2proxygithubioPackage = typeof oauth2proxygithubioPackage

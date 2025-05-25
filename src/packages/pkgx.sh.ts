@@ -49,6 +49,7 @@ export const pkgxshPackage = {
     '1.0.0',
   ] as const,
   fullPath: 'pkgx.sh' as const,
+  aliases: [] as const,
 }
 
 export type PkgxshPackage = typeof pkgxshPackage

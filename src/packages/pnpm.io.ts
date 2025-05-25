@@ -179,6 +179,7 @@ export const pnpmioPackage = {
     '7.18.2',
   ] as const,
   fullPath: 'pnpm.io' as const,
+  aliases: [] as const,
 }
 
 export type PnpmioPackage = typeof pnpmioPackage

@@ -22,6 +22,7 @@ export const swigorgPackage = {
     '4.1.1',
   ] as const,
   fullPath: 'swig.org' as const,
+  aliases: [] as const,
 }
 
 export type SwigorgPackage = typeof swigorgPackage

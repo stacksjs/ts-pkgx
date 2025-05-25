@@ -24,6 +24,7 @@ export const nmaporgPackage = {
     '7.93.0',
   ] as const,
   fullPath: 'nmap.org' as const,
+  aliases: [] as const,
 }
 
 export type NmaporgPackage = typeof nmaporgPackage

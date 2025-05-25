@@ -28,6 +28,7 @@ export const prettierioPackage = {
     '3.2.5',
   ] as const,
   fullPath: 'prettier.io' as const,
+  aliases: [] as const,
 }
 
 export type PrettierioPackage = typeof prettierioPackage

@@ -19,6 +19,7 @@ export const nanoeditororgPackage = {
     '7.2.0',
   ] as const,
   fullPath: 'nano-editor.org' as const,
+  aliases: [] as const,
 }
 
 export type NanoeditororgPackage = typeof nanoeditororgPackage

@@ -47,6 +47,7 @@ export const pippypaioPackage = {
     '18.1.0',
   ] as const,
   fullPath: 'pip.pypa.io' as const,
+  aliases: [] as const,
 }
 
 export type PippypaioPackage = typeof pippypaioPackage

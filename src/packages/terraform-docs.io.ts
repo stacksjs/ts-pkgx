@@ -19,6 +19,7 @@ export const terraformdocsioPackage = {
     '0.16.0',
   ] as const,
   fullPath: 'terraform-docs.io' as const,
+  aliases: [] as const,
 }
 
 export type TerraformdocsioPackage = typeof terraformdocsioPackage

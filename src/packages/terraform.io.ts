@@ -88,6 +88,7 @@ export const terraformioPackage = {
     '0.11.12',
   ] as const,
   fullPath: 'terraform.io' as const,
+  aliases: [] as const,
 }
 
 export type TerraformioPackage = typeof terraformioPackage

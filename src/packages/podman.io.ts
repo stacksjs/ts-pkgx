@@ -61,6 +61,7 @@ export const podmanioPackage = {
     '4.5.0',
   ] as const,
   fullPath: 'podman.io' as const,
+  aliases: [] as const,
 }
 
 export type PodmanioPackage = typeof podmanioPackage

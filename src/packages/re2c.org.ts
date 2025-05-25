@@ -21,6 +21,7 @@ export const re2corgPackage = {
     '3.0.0',
   ] as const,
   fullPath: 're2c.org' as const,
+  aliases: [] as const,
 }
 
 export type Re2corgPackage = typeof re2corgPackage

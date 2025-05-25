@@ -27,6 +27,7 @@ export const projorgPackage = {
     '9.2.0',
   ] as const,
   fullPath: 'proj.org' as const,
+  aliases: [] as const,
 }
 
 export type ProjorgPackage = typeof projorgPackage

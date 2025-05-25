@@ -188,6 +188,7 @@ export const odigosioPackage = {
     '1.0.1',
   ] as const,
   fullPath: 'odigos.io' as const,
+  aliases: [] as const,
 }
 
 export type OdigosioPackage = typeof odigosioPackage

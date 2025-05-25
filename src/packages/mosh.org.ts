@@ -22,6 +22,7 @@ export const moshorgPackage = {
     '1.4.0',
   ] as const,
   fullPath: 'mosh.org' as const,
+  aliases: [] as const,
 }
 
 export type MoshorgPackage = typeof moshorgPackage

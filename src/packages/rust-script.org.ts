@@ -19,6 +19,7 @@ export const rustscriptorgPackage = {
     '0.34.0',
   ] as const,
   fullPath: 'rust-script.org' as const,
+  aliases: [] as const,
 }
 
 export type RustscriptorgPackage = typeof rustscriptorgPackage

@@ -31,6 +31,7 @@ export const toxwikiPackage = {
     '4.18.1',
   ] as const,
   fullPath: 'tox.wiki' as const,
+  aliases: [] as const,
 }
 
 export type ToxwikiPackage = typeof toxwikiPackage

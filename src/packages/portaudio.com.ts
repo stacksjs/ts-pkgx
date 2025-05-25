@@ -13,6 +13,7 @@ export const portaudiocomPackage = {
     '19.7.0',
   ] as const,
   fullPath: 'portaudio.com' as const,
+  aliases: [] as const,
 }
 
 export type PortaudiocomPackage = typeof portaudiocomPackage

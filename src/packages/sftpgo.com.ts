@@ -22,6 +22,7 @@ export const sftpgocomPackage = {
     '2.5.6',
   ] as const,
   fullPath: 'sftpgo.com' as const,
+  aliases: [] as const,
 }
 
 export type SftpgocomPackage = typeof sftpgocomPackage

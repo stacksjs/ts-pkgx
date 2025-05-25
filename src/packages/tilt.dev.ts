@@ -35,6 +35,7 @@ export const tiltdevPackage = {
     '0.33.6',
   ] as const,
   fullPath: 'tilt.dev' as const,
+  aliases: [] as const,
 }
 
 export type TiltdevPackage = typeof tiltdevPackage

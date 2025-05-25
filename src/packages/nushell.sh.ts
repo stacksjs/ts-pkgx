@@ -14,6 +14,7 @@ export const nushellshPackage = {
     'openssl.org^1',
   ] as const,
   versions: [
+    '0.104.1',
     '0.104.0',
     '0.103.0',
     '0.102.0',
@@ -61,6 +62,7 @@ export const nushellshPackage = {
     '0.72.1',
   ] as const,
   fullPath: 'nushell.sh' as const,
+  aliases: [] as const,
 }
 
 export type NushellshPackage = typeof nushellshPackage

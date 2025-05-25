@@ -25,6 +25,7 @@ export const ryeastralshPackage = {
     '0.36.0',
   ] as const,
   fullPath: 'rye.astral.sh' as const,
+  aliases: [] as const,
 }
 
 export type RyeastralshPackage = typeof ryeastralshPackage

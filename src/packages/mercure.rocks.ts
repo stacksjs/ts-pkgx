@@ -25,6 +25,7 @@ export const mercurerocksPackage = {
     '0.16.3',
   ] as const,
   fullPath: 'mercure.rocks' as const,
+  aliases: [] as const,
 }
 
 export type MercurerocksPackage = typeof mercurerocksPackage

@@ -24,6 +24,7 @@ export const musepacknetPackage = {
     '475.0.0',
   ] as const,
   fullPath: 'musepack.net' as const,
+  aliases: [] as const,
 }
 
 export type MusepacknetPackage = typeof musepacknetPackage

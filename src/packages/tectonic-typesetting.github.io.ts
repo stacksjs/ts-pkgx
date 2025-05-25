@@ -27,6 +27,7 @@ export const tectonictypesettinggithubioPackage = {
     '0.12.0',
   ] as const,
   fullPath: 'tectonic-typesetting.github.io' as const,
+  aliases: [] as const,
 }
 
 export type TectonictypesettinggithubioPackage = typeof tectonictypesettinggithubioPackage

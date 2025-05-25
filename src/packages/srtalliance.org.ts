@@ -22,6 +22,7 @@ export const srtallianceorgPackage = {
     '1.5.2',
   ] as const,
   fullPath: 'srtalliance.org' as const,
+  aliases: [] as const,
 }
 
 export type SrtallianceorgPackage = typeof srtallianceorgPackage

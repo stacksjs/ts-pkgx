@@ -58,6 +58,7 @@ export const vannaaiPackage = {
     '0.0.32',
   ] as const,
   fullPath: 'vanna.ai' as const,
+  aliases: [] as const,
 }
 
 export type VannaaiPackage = typeof vannaaiPackage

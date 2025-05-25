@@ -30,6 +30,7 @@ export const po4aorgPackage = {
     '0.69.0',
   ] as const,
   fullPath: 'po4a.org' as const,
+  aliases: [] as const,
 }
 
 export type Po4aorgPackage = typeof po4aorgPackage

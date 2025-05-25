@@ -17,6 +17,7 @@ export const replibytecomPackage = {
     '0.10.0',
   ] as const,
   fullPath: 'replibyte.com' as const,
+  aliases: [] as const,
 }
 
 export type ReplibytecomPackage = typeof replibytecomPackage

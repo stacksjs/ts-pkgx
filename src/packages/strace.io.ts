@@ -15,6 +15,7 @@ export const straceioPackage = {
     '6.2.0',
   ] as const,
   fullPath: 'strace.io' as const,
+  aliases: [] as const,
 }
 
 export type StraceioPackage = typeof straceioPackage

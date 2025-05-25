@@ -103,6 +103,7 @@ export const tursotechPackage = {
     '0.80.0',
   ] as const,
   fullPath: 'turso.tech' as const,
+  aliases: [] as const,
 }
 
 export type TursotechPackage = typeof tursotechPackage

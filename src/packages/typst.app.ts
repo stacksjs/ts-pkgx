@@ -30,6 +30,7 @@ export const typstappPackage = {
     '0.0.0',
   ] as const,
   fullPath: 'typst.app' as const,
+  aliases: [] as const,
 }
 
 export type TypstappPackage = typeof typstappPackage

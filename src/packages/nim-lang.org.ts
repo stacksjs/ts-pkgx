@@ -41,6 +41,7 @@ export const nimlangorgPackage = {
     '1.6.14',
   ] as const,
   fullPath: 'nim-lang.org' as const,
+  aliases: [] as const,
 }
 
 export type NimlangorgPackage = typeof nimlangorgPackage

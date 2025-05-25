@@ -29,6 +29,7 @@ export const qpdfsourceforgeioPackage = {
     '11.6.4',
   ] as const,
   fullPath: 'qpdf.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
 export type QpdfsourceforgeioPackage = typeof qpdfsourceforgeioPackage

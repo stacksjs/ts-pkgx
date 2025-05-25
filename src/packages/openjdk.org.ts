@@ -68,6 +68,7 @@ export const openjdkorgPackage = {
     '11.0.23.6',
   ] as const,
   fullPath: 'openjdk.org' as const,
+  aliases: [] as const,
 }
 
 export type OpenjdkorgPackage = typeof openjdkorgPackage

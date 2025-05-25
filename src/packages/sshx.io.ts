@@ -17,6 +17,7 @@ export const sshxioPackage = {
     '2023.11.14',
   ] as const,
   fullPath: 'sshx.io' as const,
+  aliases: [] as const,
 }
 
 export type SshxioPackage = typeof sshxioPackage

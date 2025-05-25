@@ -29,6 +29,7 @@ export const rhashsourceforgenetPackage = {
     '1.4.3',
   ] as const,
   fullPath: 'rhash.sourceforge.net' as const,
+  aliases: [] as const,
 }
 
 export type RhashsourceforgenetPackage = typeof rhashsourceforgenetPackage

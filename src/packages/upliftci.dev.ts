@@ -19,6 +19,7 @@ export const upliftcidevPackage = {
     '2.22.0',
   ] as const,
   fullPath: 'upliftci.dev' as const,
+  aliases: [] as const,
 }
 
 export type UpliftcidevPackage = typeof upliftcidevPackage

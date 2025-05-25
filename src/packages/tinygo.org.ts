@@ -25,6 +25,7 @@ export const tinygoorgPackage = {
     '0.31.2',
   ] as const,
   fullPath: 'tinygo.org' as const,
+  aliases: [] as const,
 }
 
 export type TinygoorgPackage = typeof tinygoorgPackage

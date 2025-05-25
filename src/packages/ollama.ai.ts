@@ -14,6 +14,7 @@ export const ollamaaiPackage = {
     'curl.se/ca-certs',
   ] as const,
   versions: [
+    '0.7.1',
     '0.7.0',
     '0.6.8',
     '0.6.7',
@@ -110,6 +111,7 @@ export const ollamaaiPackage = {
     '0.0.17',
   ] as const,
   fullPath: 'ollama.ai' as const,
+  aliases: [] as const,
 }
 
 export type OllamaaiPackage = typeof ollamaaiPackage

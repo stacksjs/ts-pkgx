@@ -61,6 +61,7 @@ export const sphinxdocorgPackage = {
     '6.1.3',
   ] as const,
   fullPath: 'sphinx-doc.org' as const,
+  aliases: [] as const,
 }
 
 export type SphinxdocorgPackage = typeof sphinxdocorgPackage

@@ -28,6 +28,7 @@ export const openslideorgPackage = {
     '3.4.1',
   ] as const,
   fullPath: 'openslide.org' as const,
+  aliases: [] as const,
 }
 
 export type OpenslideorgPackage = typeof openslideorgPackage

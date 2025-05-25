@@ -48,6 +48,7 @@ export const pandocorgPackage = {
     '2.19.2',
   ] as const,
   fullPath: 'pandoc.org' as const,
+  aliases: [] as const,
 }
 
 export type PandocorgPackage = typeof pandocorgPackage

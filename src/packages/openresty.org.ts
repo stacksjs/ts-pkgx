@@ -24,6 +24,7 @@ export const openrestyorgPackage = {
     '1.25.3.2',
   ] as const,
   fullPath: 'openresty.org' as const,
+  aliases: [] as const,
 }
 
 export type OpenrestyorgPackage = typeof openrestyorgPackage

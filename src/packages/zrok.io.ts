@@ -52,6 +52,7 @@ export const zrokioPackage = {
     '0.4.16',
   ] as const,
   fullPath: 'zrok.io' as const,
+  aliases: [] as const,
 }
 
 export type ZrokioPackage = typeof zrokioPackage

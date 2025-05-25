@@ -17,6 +17,7 @@ export const pluralithcomPackage = {
     '0.2.2',
   ] as const,
   fullPath: 'pluralith.com' as const,
+  aliases: [] as const,
 }
 
 export type PluralithcomPackage = typeof pluralithcomPackage

@@ -21,6 +21,7 @@ export const trippyclirsPackage = {
     '0.9.0',
   ] as const,
   fullPath: 'trippy.cli.rs' as const,
+  aliases: [] as const,
 }
 
 export type TrippyclirsPackage = typeof trippyclirsPackage

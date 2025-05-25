@@ -57,6 +57,7 @@ export const surrealdbcomPackage = {
     '0.0.0',
   ] as const,
   fullPath: 'surrealdb.com' as const,
+  aliases: [] as const,
 }
 
 export type SurrealdbcomPackage = typeof surrealdbcomPackage

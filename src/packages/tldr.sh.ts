@@ -22,6 +22,7 @@ export const tldrshPackage = {
     '1.5.0',
   ] as const,
   fullPath: 'tldr.sh' as const,
+  aliases: [] as const,
 }
 
 export type TldrshPackage = typeof tldrshPackage

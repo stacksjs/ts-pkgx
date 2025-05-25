@@ -23,6 +23,7 @@ export const quickwitioPackage = {
     '0.6.4',
   ] as const,
   fullPath: 'quickwit.io' as const,
+  aliases: [] as const,
 }
 
 export type QuickwitioPackage = typeof quickwitioPackage

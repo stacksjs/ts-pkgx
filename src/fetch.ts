@@ -1841,6 +1841,46 @@ export function setupCleanupHandlers(): void {
 // Initialize handlers
 setupCleanupHandlers()
 
+// Add global error handlers to prevent crashes
+process.on('uncaughtException', (error) => {
+  console.error('Uncaught exception caught:', error.message)
+  if (error.message.includes('No target found for targetId')
+      || error.message.includes('Assertion error')
+      || error.message.includes('Target page, context or browser has been closed')
+      || error.message.includes('Failed to connect')
+      || error.message.includes('Connection closed')
+      || error.message.includes('Protocol error')
+      || error.message.includes('WebSocket connection closed')
+      || error.message.includes('Browser has been closed')) {
+    console.error('Browser/network connection error detected, continuing execution...')
+    // Don't exit the process for browser/network errors
+    return
+  }
+  // For other uncaught exceptions, still exit
+  console.error('Non-browser error, exiting...')
+  process.exit(1)
+})
+
+process.on('unhandledRejection', (reason, _promise) => {
+  const errorString = String(reason)
+  console.error('Unhandled rejection caught:', errorString)
+  if (errorString.includes('No target found for targetId')
+      || errorString.includes('Assertion error')
+      || errorString.includes('Target page, context or browser has been closed')
+      || errorString.includes('Failed to connect')
+      || errorString.includes('Connection closed')
+      || errorString.includes('Protocol error')
+      || errorString.includes('WebSocket connection closed')
+      || errorString.includes('Browser has been closed')) {
+    console.error('Browser/network connection error in promise, continuing execution...')
+    // Don't exit the process for browser/network errors
+    return
+  }
+  // For other unhandled rejections, still exit
+  console.error('Non-browser promise rejection, exiting...')
+  process.exit(1)
+})
+
 // Start a periodic cleanup task
 export function startPeriodicCleanup(): void {
   // Clear any existing interval
@@ -2157,43 +2197,67 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
 
     // Process chunk by chunk
     for (let chunkIndex = 0; chunkIndex < chunks.length; chunkIndex++) {
-      // Check if we've exceeded the maximum operation time
-      if (Date.now() - operationStartTime > maxOperationTime) {
-        console.log(`Maximum operation time (${maxOperationTime / 60000} minutes) exceeded, stopping processing`)
-        break
-      }
-
-      const chunk = chunks[chunkIndex]
-      console.log(`Processing chunk ${chunkIndex + 1}/${chunks.length} (${chunk.length} packages)`)
-
-      // Process this chunk of packages concurrently with error isolation
-      const chunkPromises = chunk.map(packageName =>
-        processPackage(packageName).catch(error => {
-          console.error(`Critical error processing ${packageName}:`, error)
-          failedPackages.push(packageName)
-          return null
-        })
-      )
-      const chunkResults = await Promise.all(chunkPromises)
-
-      // Add a delay between chunks to prevent system overload
-      if (chunkIndex < chunks.length - 1) { // Don't delay after the last chunk
-        // With 1:1 browser ratio, we can use more predictable delays
-        let baseDelay = 2000 // Base 2 second delay
-        if (actualConcurrency > 10) {
-          baseDelay = 4000 // 4 seconds for high concurrency
-        }
-        else if (actualConcurrency > 6) {
-          baseDelay = 3000 // 3 seconds for medium concurrency
+      try {
+        // Check if we've exceeded the maximum operation time
+        if (Date.now() - operationStartTime > maxOperationTime) {
+          console.log(`Maximum operation time (${maxOperationTime / 60000} minutes) exceeded, stopping processing`)
+          break
         }
 
-        console.log(`Waiting ${Math.round(baseDelay / 1000)}s between chunks (concurrency: ${actualConcurrency}, browsers: ${MAX_BROWSER_POOL_SIZE})`)
-        await new Promise(resolve => setTimeout(resolve, baseDelay))
-      }
+        const chunk = chunks[chunkIndex]
+        console.log(`Processing chunk ${chunkIndex + 1}/${chunks.length} (${chunk.length} packages)`)
 
-      // Add successfully processed packages to results
-      const successfulResults = chunkResults.filter(Boolean) as string[]
-      savedPackages.push(...successfulResults)
+        // Process this chunk of packages concurrently with error isolation
+        const chunkPromises = chunk.map(packageName =>
+          processPackage(packageName).catch((error) => {
+            const errorString = String(error)
+            console.error(`Critical error processing ${packageName}:`, errorString.substring(0, 200))
+
+            // Check for browser errors and trigger cleanup
+            if (errorString.includes('No target found for targetId')
+                || errorString.includes('Assertion error')
+                || errorString.includes('Target page, context or browser has been closed')
+                || errorString.includes('Protocol error')) {
+              console.error('Browser error detected, triggering cleanup...')
+              // Trigger cleanup asynchronously without blocking
+              cleanupBrowserResources().catch(() => {})
+            }
+
+            failedPackages.push(packageName)
+            return null
+          }),
+        )
+
+        const chunkResults = await Promise.allSettled(chunkPromises)
+
+        // Extract successful results from settled promises
+        const successfulResults = chunkResults
+          .filter(result => result.status === 'fulfilled' && result.value !== null)
+          .map(result => (result as PromiseFulfilledResult<string>).value)
+
+        // Add successfully processed packages to results
+        savedPackages.push(...successfulResults)
+
+        // Add a delay between chunks to prevent system overload
+        if (chunkIndex < chunks.length - 1) { // Don't delay after the last chunk
+          // With 1:1 browser ratio, we can use more predictable delays
+          let baseDelay = 2000 // Base 2 second delay
+          if (actualConcurrency > 10) {
+            baseDelay = 4000 // 4 seconds for high concurrency
+          }
+          else if (actualConcurrency > 6) {
+            baseDelay = 3000 // 3 seconds for medium concurrency
+          }
+
+          console.log(`Waiting ${Math.round(baseDelay / 1000)}s between chunks (concurrency: ${actualConcurrency}, browsers: ${MAX_BROWSER_POOL_SIZE})`)
+          await new Promise(resolve => setTimeout(resolve, baseDelay))
+        }
+      }
+      catch (chunkError) {
+        console.error(`Error processing chunk ${chunkIndex + 1}:`, chunkError)
+        // Continue with next chunk even if this one fails completely
+        continue
+      }
 
       // Report progress
       const now = Date.now()

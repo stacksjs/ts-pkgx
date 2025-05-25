@@ -21,6 +21,7 @@ export const vamppluginsorgPackage = {
     '2.9.0',
   ] as const,
   fullPath: 'vamp-plugins.org' as const,
+  aliases: [] as const,
 }
 
 export type VamppluginsorgPackage = typeof vamppluginsorgPackage

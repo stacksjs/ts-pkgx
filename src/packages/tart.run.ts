@@ -66,6 +66,7 @@ export const tartrunPackage = {
     '0.38.0',
   ] as const,
   fullPath: 'tart.run' as const,
+  aliases: [] as const,
 }
 
 export type TartrunPackage = typeof tartrunPackage

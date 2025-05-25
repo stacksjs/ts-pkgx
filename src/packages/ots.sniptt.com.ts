@@ -17,6 +17,7 @@ export const otssnipttcomPackage = {
     '0.2.0',
   ] as const,
   fullPath: 'ots.sniptt.com' as const,
+  aliases: [] as const,
 }
 
 export type OtssnipttcomPackage = typeof otssnipttcomPackage

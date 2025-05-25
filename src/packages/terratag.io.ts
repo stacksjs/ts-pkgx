@@ -35,6 +35,7 @@ export const terratagioPackage = {
     '0.2.6',
   ] as const,
   fullPath: 'terratag.io' as const,
+  aliases: [] as const,
 }
 
 export type TerratagioPackage = typeof terratagioPackage

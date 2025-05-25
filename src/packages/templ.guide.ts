@@ -38,6 +38,7 @@ export const templguidePackage = {
     '0.2.476',
   ] as const,
   fullPath: 'templ.guide' as const,
+  aliases: [] as const,
 }
 
 export type TemplguidePackage = typeof templguidePackage

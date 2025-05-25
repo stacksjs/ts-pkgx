@@ -22,6 +22,7 @@ export const rtmpdumpmplayerhqhuPackage = {
     '2.3.0',
   ] as const,
   fullPath: 'rtmpdump.mplayerhq.hu' as const,
+  aliases: [] as const,
 }
 
 export type RtmpdumpmplayerhqhuPackage = typeof rtmpdumpmplayerhqhuPackage

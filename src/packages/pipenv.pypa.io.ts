@@ -65,6 +65,7 @@ export const pipenvpypaioPackage = {
     '2023.2.4',
   ] as const,
   fullPath: 'pipenv.pypa.io' as const,
+  aliases: [] as const,
 }
 
 export type PipenvpypaioPackage = typeof pipenvpypaioPackage

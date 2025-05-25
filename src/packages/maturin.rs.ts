@@ -33,6 +33,7 @@ export const maturinrsPackage = {
     '1.4.0',
   ] as const,
   fullPath: 'maturin.rs' as const,
+  aliases: [] as const,
 }
 
 export type MaturinrsPackage = typeof maturinrsPackage

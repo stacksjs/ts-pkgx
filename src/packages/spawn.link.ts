@@ -25,6 +25,7 @@ export const spawnlinkPackage = {
     '2.35.1',
   ] as const,
   fullPath: 'spawn.link' as const,
+  aliases: [] as const,
 }
 
 export type SpawnlinkPackage = typeof spawnlinkPackage

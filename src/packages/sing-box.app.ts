@@ -63,6 +63,7 @@ export const singboxappPackage = {
     '1.7.2',
   ] as const,
   fullPath: 'sing-box.app' as const,
+  aliases: [] as const,
 }
 
 export type SingboxappPackage = typeof singboxappPackage

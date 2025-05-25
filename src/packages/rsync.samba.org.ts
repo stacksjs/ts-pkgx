@@ -23,6 +23,7 @@ export const rsyncsambaorgPackage = {
     '3.2.7',
   ] as const,
   fullPath: 'rsync.samba.org' as const,
+  aliases: [] as const,
 }
 
 export type RsyncsambaorgPackage = typeof rsyncsambaorgPackage

@@ -55,6 +55,7 @@ export const tailwindcsscomPackage = {
     '3.4.3',
   ] as const,
   fullPath: 'tailwindcss.com' as const,
+  aliases: [] as const,
 }
 
 export type TailwindcsscomPackage = typeof tailwindcsscomPackage

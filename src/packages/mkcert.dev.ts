@@ -15,6 +15,7 @@ export const mkcertdevPackage = {
     '1.4.4',
   ] as const,
   fullPath: 'mkcert.dev' as const,
+  aliases: [] as const,
 }
 
 export type MkcertdevPackage = typeof mkcertdevPackage
