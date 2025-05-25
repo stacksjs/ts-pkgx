@@ -55,7 +55,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry[do
 ## Usage Examples
 
 ```typescript
-import { getPackage, pantry } from 'ts-pkgx/packages'
+import { getPackage, pantry } from 'ts-pkgx'
 
 // Get a package by domain
 const nodePackage = pantry['nodejs.org']

@@ -180,7 +180,7 @@ process.on('exit', saveAliases)
 You can generate aliases automatically based on domain patterns:
 
 ```typescript
-import { pantry } from 'ts-pkgx/packages'
+import { pantry } from 'ts-pkgx'
 
 // Generate aliases for all packages
 function generateAliases(): Record<string, string> {

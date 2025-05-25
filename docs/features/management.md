@@ -7,7 +7,7 @@ ts-pkgx provides robust features for managing and accessing package information 
 ts-pkgx can automatically generate an index file that exports all packages and provides utility functions for working with them:
 
 ```typescript
-import { getPackage, pantry } from 'ts-pkgx/packages'
+import { getPackage, pantry } from 'ts-pkgx'
 
 // Access a package by domain
 const bunPackage = pantry['bun.sh']
@@ -84,7 +84,7 @@ This creates a well-organized document with all packages grouped by category, ma
 After fetching packages, you can easily search through them:
 
 ```typescript
-import { pantry } from 'ts-pkgx/packages'
+import { pantry } from 'ts-pkgx'
 
 // Find all packages related to JavaScript
 const jsPackages = Object.values(pantry).filter(pkg =>
@@ -103,7 +103,7 @@ const rustPackages = Object.entries(pantry)
 ts-pkgx makes it easy to compare packages:
 
 ```typescript
-import { getPackage } from 'ts-pkgx/packages'
+import { getPackage } from 'ts-pkgx'
 
 // Compare Node.js and Deno
 const node = getPackage('node')

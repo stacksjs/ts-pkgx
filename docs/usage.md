@@ -102,7 +102,7 @@ const savedPackages = await fetchAndSaveAllPackages({
 After fetching packages, you can import them from your packages directory:
 
 ```typescript
-import { getPackage, pantry } from 'ts-pkgx/packages'
+import { getPackage, pantry } from 'ts-pkgx'
 
 // Get a package by domain name
 const nodePackage = pantry['nodejs.org']
@@ -123,19 +123,19 @@ Package variable names follow specific conventions to ensure JavaScript/TypeScri
 1. Dots are removed from domain names:
    ```typescript
    // For domain 'bun.sh'
-   import { bunshPackage } from 'ts-pkgx/packages/bunsh'
+   import { bunshPackage } from 'ts-pkgx'
    ```
 
 2. Hyphens are removed from variable names (since hyphens aren't valid in JavaScript identifiers):
    ```typescript
    // For domain 'ast-grep.github.io'
-   import { astgrepgithubioPackage } from 'ts-pkgx/packages/astgrepgithubio'
+   import { astgrepgithubioPackage } from 'ts-pkgx'
    ```
 
 3. Nested paths are concatenated:
    ```typescript
    // For path 'agwa.name/git-crypt'
-   import { agwanamegitcryptPackage } from 'ts-pkgx/packages/agwaname-gitcrypt'
+   import { agwanamegitcryptPackage } from 'ts-pkgx'
    ```
 
 ### Using the API with Custom Options

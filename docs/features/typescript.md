@@ -57,8 +57,7 @@ These generated files provide both the data and the types, allowing for a great 
 When using ts-pkgx in your TypeScript projects, you get full type safety and IntelliSense support:
 
 ```typescript
-import { pantry } from 'ts-pkgx/packages'
-import { bunshPackage } from 'ts-pkgx/packages/bunsh'
+import { bunshPackage, pantry } from 'ts-pkgx'
 
 // Full IntelliSense support
 console.log(bunshPackage.description)

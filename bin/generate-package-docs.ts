@@ -191,7 +191,7 @@ export async function generatePackageDocs(outputPath: string = DEFAULT_OUTPUT_FI
   // Add usage example
   content += '## Usage Examples\n\n'
   content += '```typescript\n'
-  content += 'import { getPackage, pantry } from \'ts-pkgx/packages\'\n\n'
+  content += 'import { getPackage, pantry } from \'ts-pkgx\'\n\n'
   content += '// Get a package by domain\n'
   content += 'const nodePackage = pantry[\'nodejs.org\']\n\n'
   content += '// Get a package by alias\n'

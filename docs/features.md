@@ -72,7 +72,7 @@ export const bunshPackage: PkgxPackage = {
 ts-pkgx can automatically generate an index file that exports all packages and provides utility functions for working with them:
 
 ```typescript
-import { getPackage, pantry } from 'ts-pkgx/packages'
+import { getPackage, pantry } from 'ts-pkgx'
 
 // Access a package by domain
 const bunPackage = pantry['bun.sh']

@@ -79,7 +79,8 @@
     "typescript": "^5.8.3"
   },
   "overrides": {
-    "@stacksjs/dtsx": "0.9.4"
+    "@stacksjs/dtsx": "0.9.4",
+    "unconfig": "0.3.10"
   },
   "lint-staged": {
     "*.{js,ts}": "bunx --bun eslint . --fix"
