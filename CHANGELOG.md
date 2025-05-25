@@ -1,4 +1,16 @@
 
+## v0.1.2...main
+
+[compare changes](https://github.com/stacksjs/ts-pkgx/compare/v0.1.2...main)
+
+### 🏡 Chore
+
+- Wip ([6a7ea9d](https://github.com/stacksjs/ts-pkgx/commit/6a7ea9d))
+
+### ❤️ Contributors
+
+- Chris ([@chrisbbreuer](https://github.com/chrisbbreuer))
+
 ## v0.1.1...main
 
 [compare changes](https://github.com/stacksjs/ts-pkgx/compare/v0.1.1...main)
