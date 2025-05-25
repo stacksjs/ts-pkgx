@@ -1845,13 +1845,13 @@ setupCleanupHandlers()
 process.on('uncaughtException', (error) => {
   console.error('Uncaught exception caught:', error.message)
   if (error.message.includes('No target found for targetId')
-      || error.message.includes('Assertion error')
-      || error.message.includes('Target page, context or browser has been closed')
-      || error.message.includes('Failed to connect')
-      || error.message.includes('Connection closed')
-      || error.message.includes('Protocol error')
-      || error.message.includes('WebSocket connection closed')
-      || error.message.includes('Browser has been closed')) {
+    || error.message.includes('Assertion error')
+    || error.message.includes('Target page, context or browser has been closed')
+    || error.message.includes('Failed to connect')
+    || error.message.includes('Connection closed')
+    || error.message.includes('Protocol error')
+    || error.message.includes('WebSocket connection closed')
+    || error.message.includes('Browser has been closed')) {
     console.error('Browser/network connection error detected, continuing execution...')
     // Don't exit the process for browser/network errors
     return
@@ -1865,13 +1865,13 @@ process.on('unhandledRejection', (reason, _promise) => {
   const errorString = String(reason)
   console.error('Unhandled rejection caught:', errorString)
   if (errorString.includes('No target found for targetId')
-      || errorString.includes('Assertion error')
-      || errorString.includes('Target page, context or browser has been closed')
-      || errorString.includes('Failed to connect')
-      || errorString.includes('Connection closed')
-      || errorString.includes('Protocol error')
-      || errorString.includes('WebSocket connection closed')
-      || errorString.includes('Browser has been closed')) {
+    || errorString.includes('Assertion error')
+    || errorString.includes('Target page, context or browser has been closed')
+    || errorString.includes('Failed to connect')
+    || errorString.includes('Connection closed')
+    || errorString.includes('Protocol error')
+    || errorString.includes('WebSocket connection closed')
+    || errorString.includes('Browser has been closed')) {
     console.error('Browser/network connection error in promise, continuing execution...')
     // Don't exit the process for browser/network errors
     return
@@ -2215,9 +2215,9 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
 
             // Check for browser errors and trigger cleanup
             if (errorString.includes('No target found for targetId')
-                || errorString.includes('Assertion error')
-                || errorString.includes('Target page, context or browser has been closed')
-                || errorString.includes('Protocol error')) {
+              || errorString.includes('Assertion error')
+              || errorString.includes('Target page, context or browser has been closed')
+              || errorString.includes('Protocol error')) {
               console.error('Browser error detected, triggering cleanup...')
               // Trigger cleanup asynchronously without blocking
               cleanupBrowserResources().catch(() => {})
