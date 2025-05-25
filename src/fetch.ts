@@ -1019,8 +1019,8 @@ let sharedBrowser: Browser | null = null
 
 // Browser pool for concurrent operations
 const browserPool: { browser: Browser, inUse: boolean, createdAt: number }[] = []
-// Maximum number of browsers to keep in the pool
-const MAX_BROWSER_POOL_SIZE = 2 // Ultra conservative limit to prevent system overload
+// Maximum number of browsers to keep in the pool (will be set based on concurrency)
+let MAX_BROWSER_POOL_SIZE = 10 // Default limit, can be adjusted based on concurrency setting
 
 // Function to check system resources and adjust behavior
 function getSystemResourceStatus() {
@@ -1029,8 +1029,8 @@ function getSystemResourceStatus() {
   const heapTotalMB = Math.round(memUsage.heapTotal / 1024 / 1024)
   const rssUsedMB = Math.round(memUsage.rss / 1024 / 1024)
 
-  // Consider system under stress if heap usage is high or RSS is very high
-  const isUnderStress = heapUsedMB > 200 || rssUsedMB > 600 || browserPool.length >= MAX_BROWSER_POOL_SIZE
+  // Consider system under stress if heap usage is high, RSS is very high, or we have many browsers
+  const isUnderStress = heapUsedMB > 300 || rssUsedMB > 800 || browserPool.length >= MAX_BROWSER_POOL_SIZE
 
   return {
     heapUsedMB,
@@ -1213,14 +1213,14 @@ async function acquireBrowser(timeout: number): Promise<Browser | null> {
   let retryCount = 0
   const maxRetries = 3
 
-  // Add a small delay to prevent overwhelming the system with concurrent launches
-  await new Promise(resolve => setTimeout(resolve, Math.random() * 1000))
+  // Add a longer delay to prevent overwhelming the system with concurrent launches
+  await new Promise(resolve => setTimeout(resolve, Math.random() * 2000 + 1000)) // 1-3 second delay
 
   while (!browser && retryCount < maxRetries) {
     try {
       browser = await chromium.launch({
         headless: true,
-        timeout: Math.min(timeout, 5000), // Cap browser launch timeout at 5 seconds
+        timeout: Math.min(timeout, 8000), // Increase browser launch timeout to 8 seconds
         args: [
           '--no-sandbox',
           '--disable-dev-shm-usage',
@@ -1228,7 +1228,10 @@ async function acquireBrowser(timeout: number): Promise<Browser | null> {
           '--disable-web-security',
           '--disable-features=VizDisplayCompositor',
           '--memory-pressure-off',
-          '--max_old_space_size=512',
+          '--max_old_space_size=256', // Reduce memory allocation per browser
+          '--disable-background-timer-throttling',
+          '--disable-backgrounding-occluded-windows',
+          '--disable-renderer-backgrounding',
         ],
       })
     }
@@ -1239,12 +1242,13 @@ async function acquireBrowser(timeout: number): Promise<Browser | null> {
       // If we get ENOENT, connection errors, or timeout errors, the system is likely overwhelmed
       const errorString = String(error)
       if (errorString.includes('ENOENT') || errorString.includes('Failed to connect')
-        || errorString.includes('Timeout') || errorString.includes('No target found')) {
+        || errorString.includes('Timeout') || errorString.includes('No target found')
+        || errorString.includes('spawn')) {
         console.error('System appears overwhelmed, forcing aggressive cleanup and waiting longer...')
         // Force cleanup of all browsers
         await cleanupBrowserResources()
         // Wait much longer before retrying when system is overwhelmed
-        await new Promise(resolve => setTimeout(resolve, 15000 * retryCount))
+        await new Promise(resolve => setTimeout(resolve, 20000 * retryCount)) // Increased wait time
       }
 
       if (retryCount >= maxRetries) {
@@ -1252,7 +1256,7 @@ async function acquireBrowser(timeout: number): Promise<Browser | null> {
         return null // Return null instead of throwing to allow graceful degradation
       }
       // Wait before retrying with exponential backoff
-      await new Promise(resolve => setTimeout(resolve, 2000 * retryCount))
+      await new Promise(resolve => setTimeout(resolve, 5000 * retryCount)) // Increased retry delay
     }
   }
 
@@ -1866,10 +1870,15 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
   const cacheExpirationMinutes = options.cacheExpirationMinutes || DEFAULT_CACHE_EXPIRATION_MINUTES
   const concurrency = options.concurrency || 10
 
-  // Use the requested concurrency (no artificial limit)
+  // Set the browser pool size based on concurrency setting, but cap it for system stability
+  // High concurrency doesn't necessarily need that many browsers - we can reuse them efficiently
+  MAX_BROWSER_POOL_SIZE = Math.min(Math.max(concurrency, 2), 8) // Cap at 8 browsers for system stability
+
+  // Use the requested concurrency
   const actualConcurrency = concurrency
 
   console.log(`Using timeout: ${timeout}ms for all operations`)
+  console.log(`Using concurrency: ${actualConcurrency} concurrent requests (browser pool size: ${MAX_BROWSER_POOL_SIZE})`)
 
   // Track progress and timing
   const startTime = Date.now()
@@ -2107,8 +2116,8 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
     const operationStartTime = Date.now()
 
     // Create chunks for better progress reporting
-    // Limit chunk size to prevent system overload
-    const chunkSize = Math.min(actualConcurrency, MAX_BROWSER_POOL_SIZE)
+    // Use the full concurrency setting for chunk size
+    const chunkSize = actualConcurrency
     const chunks: string[][] = []
     for (let i = 0; i < allPackageNames.length; i += chunkSize) {
       chunks.push(allPackageNames.slice(i, i + chunkSize))
@@ -2131,9 +2140,10 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       const chunkPromises = chunk.map(packageName => processPackage(packageName))
       const chunkResults = await Promise.all(chunkPromises)
 
-      // Add a much longer delay between chunks to prevent system overload
+      // Add a delay between chunks to prevent system overload, scaled by concurrency
       if (chunkIndex < chunks.length - 1) { // Don't delay after the last chunk
-        await new Promise(resolve => setTimeout(resolve, 5000)) // Increased to 5s for ultra conservative approach
+        const delayMs = Math.max(3000, Math.min(actualConcurrency * 500, 10000)) // 3-10s delay based on concurrency
+        await new Promise(resolve => setTimeout(resolve, delayMs))
       }
 
       // Add successfully processed packages to results
@@ -2151,16 +2161,18 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       console.log(`${progressBar} Completed chunk ${chunkIndex + 1}/${chunks.length}, processed ${processedCount}/${allPackageNames.length} (${completedPercent}%), ${failedPackages.length} failed, ${remainingCount} remaining, elapsed time: ${elapsedSeconds}s`)
 
       // Periodic cleanup of browser resources to prevent memory issues
-      // Do cleanup every chunk or if there are more than MAX_BROWSER_POOL_SIZE browsers
+      // More frequent cleanup for higher concurrency
+      const cleanupFrequency = Math.max(1, Math.floor(8 / actualConcurrency)) // More frequent cleanup for higher concurrency
       if (browserPool.length >= MAX_BROWSER_POOL_SIZE
-        || (chunkIndex + 1) % 1 === 0 // Every chunk
-        || (now - lastCleanupTime > 30 * 1000)) { // 30 seconds
+        || (chunkIndex + 1) % cleanupFrequency === 0 // Every N chunks based on concurrency
+        || (now - lastCleanupTime > 20 * 1000)) { // 20 seconds
         console.log('Performing periodic browser resource cleanup...')
         await cleanupBrowserResources()
         lastCleanupTime = now
 
-        // Much longer delay to let system recover after cleanup
-        await new Promise(resolve => setTimeout(resolve, 5000))
+        // Longer delay to let system recover after cleanup, scaled by concurrency
+        const recoveryDelayMs = Math.max(3000, Math.min(actualConcurrency * 300, 8000)) // 3-8s recovery time
+        await new Promise(resolve => setTimeout(resolve, recoveryDelayMs))
       }
     }
 

@@ -158,7 +158,7 @@ export const nodePackage = {
     '14.20.1',
     '12.22.12',
   ] as const,
-  fullPath: 'node' as const,
+  fullPath: 'nodejs.org' as const,
   aliases: [
     'node',
   ] as const,

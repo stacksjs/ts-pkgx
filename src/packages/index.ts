@@ -289,6 +289,7 @@ import * as gnu_org from './gnu.org'
 import * as gnupg_org from './gnupg.org'
 import * as gnuplot_info from './gnuplot.info'
 import * as gnutls_org from './gnutls.org'
+import * as go from './go'
 import * as go_dev from './go.dev'
 import * as go_uber_org from './go.uber.org'
 import * as gohugo_io from './gohugo.io'
@@ -645,6 +646,7 @@ import * as pyinvoke_org from './pyinvoke.org'
 import * as pypa_github_io from './pypa.github.io'
 import * as pypa_io from './pypa.io'
 import * as pytest_org from './pytest.org'
+import * as python from './python'
 import * as python_pillow_org from './python-pillow.org'
 import * as python_poetry_org from './python-poetry.org'
 import * as python_org from './python.org'
@@ -1155,6 +1157,7 @@ export interface Pantry {
   gnupgorg: gnupg_org.GnupgorgPackage
   gnuplotinfo: gnuplot_info.GnuplotinfoPackage
   gnutlsorg: gnutls_org.GnutlsorgPackage
+  go: go.GoPackage
   godev: go_dev.GodevPackage
   gouberorg: go_uber_org.GouberorgPackage
   gohugoio: gohugo_io.GohugoioPackage
@@ -1511,6 +1514,7 @@ export interface Pantry {
   pypagithubio: pypa_github_io.PypagithubioPackage
   pypaio: pypa_io.PypaioPackage
   pytestorg: pytest_org.PytestorgPackage
+  python: python.PythonPackage
   pythonpilloworg: python_pillow_org.PythonpilloworgPackage
   pythonpoetryorg: python_poetry_org.PythonpoetryorgPackage
   pythonorg: python_org.PythonorgPackage
@@ -2024,6 +2028,7 @@ export const pantry: Pantry = {
   gnupgorg: gnupg_org.gnupgorgPackage,
   gnuplotinfo: gnuplot_info.gnuplotinfoPackage,
   gnutlsorg: gnutls_org.gnutlsorgPackage,
+  go: go.goPackage,
   godev: go_dev.godevPackage,
   gouberorg: go_uber_org.gouberorgPackage,
   gohugoio: gohugo_io.gohugoioPackage,
@@ -2380,6 +2385,7 @@ export const pantry: Pantry = {
   pypagithubio: pypa_github_io.pypagithubioPackage,
   pypaio: pypa_io.pypaioPackage,
   pytestorg: pytest_org.pytestorgPackage,
+  python: python.pythonPackage,
   pythonpilloworg: python_pillow_org.pythonpilloworgPackage,
   pythonpoetryorg: python_poetry_org.pythonpoetryorgPackage,
   pythonorg: python_org.pythonorgPackage,

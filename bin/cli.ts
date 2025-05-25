@@ -38,7 +38,7 @@ const cli = new CAC('pkgx-tools')
 // This is a safety mechanism in case Playwright doesn't close properly
 const EXIT_TIMEOUT = 1500000 // 25 minutes
 const forceExitTimeout = setTimeout(() => {
-  console.error('Force exiting after timeout - process may have hung')
+  console.error('Force exiting after timeout - process may have hung') // so GitHub Actions doesn't run forever
   process.exit(1)
 }, EXIT_TIMEOUT)
 
@@ -86,7 +86,7 @@ cli
   .option('-j, --json', 'Save as JSON instead of TypeScript')
   .option('-d, --debug', 'Enable debug mode (save screenshots)')
   .option('-v, --verbose', 'Enable verbose output')
-  .option('-y, --concurrency <count>', 'Number of packages to fetch concurrently', { default: 2 })
+  .option('-y, --concurrency <count>', 'Number of packages to fetch concurrently (default: 10)', { default: 10 })
   .action(async (packageName: string | undefined, options: FetchOptions) => {
     // Extract options with appropriate types
     const {
@@ -101,7 +101,7 @@ cli
       json: saveAsJson = false,
       debug = false,
       verbose = false,
-      concurrency = 2,
+      concurrency = 10,
       pkg,
     } = options
 
@@ -334,4 +334,9 @@ cli.help()
 cli.version(version)
 
 // Parse command line arguments
-cli.parse()
+const _parsed = cli.parse()
+
+// If no command was provided or help was shown, exit cleanly
+if (process.argv.length <= 2 || process.argv.includes('--help') || process.argv.includes('-h')) {
+  process.exit(0)
+}
