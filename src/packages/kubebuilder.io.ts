@@ -12,6 +12,7 @@ export const kubebuilderioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '4.6.0',
     '4.5.2',
     '4.5.1',
     '4.5.0',

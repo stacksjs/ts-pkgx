@@ -81,6 +81,7 @@ export const pdmfmingdevPackage = {
     '2.5.3',
   ] as const,
   fullPath: 'pdm.fming.dev' as const,
+  aliases: [] as const,
 }
 
 export type PdmfmingdevPackage = typeof pdmfmingdevPackage

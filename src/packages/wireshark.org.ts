@@ -70,6 +70,7 @@ export const wiresharkorgPackage = {
     '3.6.20',
   ] as const,
   fullPath: 'wireshark.org' as const,
+  aliases: [] as const,
 }
 
 export type WiresharkorgPackage = typeof wiresharkorgPackage

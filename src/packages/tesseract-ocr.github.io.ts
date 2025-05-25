@@ -18,6 +18,7 @@ export const tesseractocrgithubioPackage = {
     'gnome.org/pango@1',
   ] as const,
   versions: [
+    '5.5.1',
     '5.5.0',
     '5.4.1',
     '5.4.0',

@@ -12,6 +12,7 @@ export const mailpitaxllentorgPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '1.25.1',
     '1.25.0',
     '1.24.2',
     '1.24.1',

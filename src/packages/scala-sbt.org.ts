@@ -14,6 +14,7 @@ export const scalasbtorgPackage = {
     'openjdk.org',
   ] as const,
   versions: [
+    '1.11.0',
     '1.10.11',
     '1.10.10',
     '1.10.9',

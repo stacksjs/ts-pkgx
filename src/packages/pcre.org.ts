@@ -20,6 +20,7 @@ export const pcreorgPackage = {
     '8.45.0',
   ] as const,
   fullPath: 'pcre.org' as const,
+  aliases: [] as const,
 }
 
 export type PcreorgPackage = typeof pcreorgPackage
