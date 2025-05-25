@@ -2094,7 +2094,12 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
         // Check for specific Playwright errors that indicate browser disconnection
         if (errorString.includes('No target found for targetId')
           || errorString.includes('Target page, context or browser has been closed')
-          || errorString.includes('Protocol error')) {
+          || errorString.includes('Protocol error')
+          || errorString.includes('Assertion error')
+          || errorString.includes('Connection closed')
+          || errorString.includes('Browser has been closed')
+          || errorString.includes('Target closed')
+          || errorString.includes('Session closed')) {
           console.error(`Browser disconnection error for ${packageName}: ${errorString.substring(0, 100)}...`)
 
           // Force cleanup of all browsers when we get these errors
@@ -2102,13 +2107,15 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
           await cleanupBrowserResources()
 
           // Wait longer before continuing
-          await new Promise(resolve => setTimeout(resolve, 5000))
+          await new Promise(resolve => setTimeout(resolve, 3000))
         }
         else {
           console.error(`Error processing package ${packageName}:`, error)
         }
 
+        // Always add to failed packages and continue processing
         failedPackages.push(packageName)
+        console.log(`Added ${packageName} to failed packages list, continuing with remaining packages...`)
         return null
       }
       finally {
@@ -2159,8 +2166,14 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       const chunk = chunks[chunkIndex]
       console.log(`Processing chunk ${chunkIndex + 1}/${chunks.length} (${chunk.length} packages)`)
 
-      // Process this chunk of packages concurrently
-      const chunkPromises = chunk.map(packageName => processPackage(packageName))
+      // Process this chunk of packages concurrently with error isolation
+      const chunkPromises = chunk.map(packageName =>
+        processPackage(packageName).catch(error => {
+          console.error(`Critical error processing ${packageName}:`, error)
+          failedPackages.push(packageName)
+          return null
+        })
+      )
       const chunkResults = await Promise.all(chunkPromises)
 
       // Add a delay between chunks to prevent system overload
@@ -2169,7 +2182,8 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
         let baseDelay = 2000 // Base 2 second delay
         if (actualConcurrency > 10) {
           baseDelay = 4000 // 4 seconds for high concurrency
-        } else if (actualConcurrency > 6) {
+        }
+        else if (actualConcurrency > 6) {
           baseDelay = 3000 // 3 seconds for medium concurrency
         }
 
@@ -2849,6 +2863,11 @@ export async function fetchAndSavePackage(
       || errorString.includes('Target page, context or browser has been closed')
       || errorString.includes('Protocol error')
       || errorString.includes('Connection closed')
+      || errorString.includes('Assertion error')
+      || errorString.includes('Browser has been closed')
+      || errorString.includes('Target closed')
+      || errorString.includes('Session closed')
+      || errorString.includes('WebSocket connection closed')
 
     if (isBrowserError) {
       console.error(`Browser connection error for ${packageName}:`, errorString.substring(0, 200))
