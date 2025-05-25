@@ -44,12 +44,12 @@ jobs:
         env:
           BUN_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
-      - name: Create GitHub release
+      - name: Create GitHub Release
         run: bunx changelogithub
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Create GitHub Release
+      - name: Attach Release Assets
         id: create_release
         uses: stacksjs/action-releaser@v1.1.0
         with:
