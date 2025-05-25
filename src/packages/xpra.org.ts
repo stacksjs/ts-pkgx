@@ -53,6 +53,7 @@ export const xpraorgPackage = {
     '6.1.2',
   ] as const,
   fullPath: 'xpra.org' as const,
+  aliases: [] as const,
 }
 
 export type XpraorgPackage = typeof xpraorgPackage

@@ -18,6 +18,7 @@ export const xplrdevPackage = {
     '0.21.8',
   ] as const,
   fullPath: 'xplr.dev' as const,
+  aliases: [] as const,
 }
 
 export type XplrdevPackage = typeof xplrdevPackage
