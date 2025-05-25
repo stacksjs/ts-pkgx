@@ -1,0 +1,64 @@
+# velero
+
+> Backup and migrate Kubernetes applications and their persistent volumes
+
+## Package Information
+
+- **Domain**: `veleroio`
+- **Name**: `velero`
+- **Homepage**: Not specified
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/velero.io/package.yml)
+
+## Installation
+
+```bash
+# Install with pkgx
+sh <(curl https://pkgx.sh) velero
+```
+
+## Programs
+
+This package provides the following executable programs:
+
+- `velero`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.16.1`
+
+</details>
+
+**Latest Version**: `1.16.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+pkgx velero@1.16.1
+```
+
+## Usage Examples
+
+```typescript
+import { pantry } from 'ts-pkgx'
+
+// Access this package
+const pkg = pantry['veleroio']
+
+console.log(`Package: ${pkg.name}`)
+console.log(`Description: ${pkg.description}`)
+console.log(`Programs: ${pkg.programs.join(', ')}`)
+```
+
+## Links
+
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/velero.io/package.yml)
+- [Homepage](#)
+- [Back to Package Catalog](../package-catalog.md)
+
+---
+
+*This documentation was auto-generated from package data.*

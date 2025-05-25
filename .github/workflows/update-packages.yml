@@ -41,6 +41,10 @@ jobs:
         run: bun bin/cli.ts generate-aliases
         timeout-minutes: 5
 
+      - name: Generate documentation
+        run: bun bin/cli.ts generate-docs
+        timeout-minutes: 5
+
       - name: Check for changes
         id: git-check
         run: |
@@ -58,6 +62,6 @@ jobs:
       - name: Commit and push changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
-          git add src/packages/
-          git commit -m "chore: update package files" -m "Automated update via GitHub Actions workflow"
+          git add src/packages/ docs/
+          git commit -m "chore: update packages" -m "Automated update via GitHub Actions workflow"
           git push

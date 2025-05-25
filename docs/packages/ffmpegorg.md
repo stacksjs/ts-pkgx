@@ -1,0 +1,84 @@
+# ffmpeg.org
+
+> Play, record, convert, and stream audio and video
+
+## Package Information
+
+- **Domain**: `ffmpegorg`
+- **Name**: `ffmpeg.org`
+- **Homepage**: Not specified
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ffmpeg.org/package.yml)
+
+## Installation
+
+```bash
+# Install with pkgx
+sh <(curl https://pkgx.sh) +ffmpeg.org -- $SHELL -i
+```
+
+## Programs
+
+This package provides the following executable programs:
+
+- `ffmpeg`
+- `ffplay`
+- `ffprobe`
+
+## Available Versions
+
+<details>
+<summary>Show all 24 versions</summary>
+
+- `7.1.1`, `7.1.0`, `7.0.2`, `7.0.1`, `7.0.0`
+- `6.1.2`, `6.1.1`, `6.1.0`, `6.0.1`, `6.0.0`
+- `5.1.6`, `5.1.5`, `5.1.4`, `5.1.2`, `4.4.6`
+- `4.4.5`, `4.3.9`, `4.3.8`, `4.3.7`, `4.2.11`
+- `4.2.10`, `4.1.11`, `3.4.14`, `3.4.13`
+
+</details>
+
+**Latest Version**: `7.1.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+pkgx ffmpeg.org@7.1.1
+```
+
+## Dependencies
+
+This package depends on:
+
+- `lame.sourceforge.io>=3.98.3`
+- `libsdl.org^2`
+- `freetype.org^2`
+- `harfbuzz.org^8`
+- `videolan.org/x264^0.164`
+- `videolan.org/x265^3`
+- `webmproject.org/libvpx^1`
+- `opus-codec.org^1`
+- `google.com/webp^1`
+
+## Usage Examples
+
+```typescript
+import { pantry } from 'ts-pkgx'
+
+// Access this package
+const pkg = pantry['ffmpegorg']
+
+console.log(`Package: ${pkg.name}`)
+console.log(`Description: ${pkg.description}`)
+console.log(`Programs: ${pkg.programs.join(', ')}`)
+```
+
+## Links
+
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ffmpeg.org/package.yml)
+- [Homepage](#)
+- [Back to Package Catalog](../package-catalog.md)
+
+---
+
+*This documentation was auto-generated from package data.*

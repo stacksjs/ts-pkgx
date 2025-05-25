@@ -1,71 +1,103 @@
 # ts-pkgx Documentation
 
-This directory contains the documentation for the ts-pkgx project. The documentation is built using [VitePress](https://vitepress.dev/).
+Welcome to the ts-pkgx documentation! This directory contains comprehensive documentation for all packages available in the ts-pkgx ecosystem.
 
-## Structure
+## 📚 Documentation Structure
 
-The documentation is organized into the following sections:
+- **[Package Catalog](./package-catalog.md)** - Complete catalog of all 866+ packages organized by category
+- **[Individual Package Pages](./packages/)** - Detailed documentation for each package
+- **[Category Pages](./categories/)** - Packages grouped by functionality
+- **[API Reference](./api-reference.md)** - TypeScript API documentation
+- **[CLI Reference](./cli-reference.md)** - Command-line interface documentation
 
-### Get Started
-- [Introduction](/intro.md): Overview of ts-pkgx and its purpose
-- [Installation](/install.md): How to install ts-pkgx
-- [Usage](/usage.md): Basic usage of ts-pkgx
-- [Configuration](/config.md): Configuration options for ts-pkgx
+## 🚀 Auto-Generated Documentation
 
-### Features
-- [Package Discovery](/features/discovery.md): How to discover and fetch packages
-- [TypeScript Integration](/features/typescript.md): Integration with TypeScript
-- [Package Management](/features/management.md): Managing packages and package files
-- [Domain Handling](/features/domains.md): Working with domain paths and aliases
-- [CLI Tools](/features/cli.md): Command-line tools provided by ts-pkgx
-- [Batch Processing](/features/batch-processing.md): Efficient batch processing of packages
-- [Multiple Package Fetching](/features/multiple-fetching.md): Fetching multiple packages at once
+The package documentation is automatically generated from the latest package data using our comprehensive documentation generation system.
 
-### Advanced
-- [Custom Transformations](/advanced/transformations.md): Advanced package data transformation
-- [Custom Output Formats](/advanced/output-formats.md): Generating custom output formats
-- [Extending Aliases](/advanced/aliases.md): Customizing the alias system
-- [Error Handling](/advanced/error-handling.md): Advanced error handling techniques
-- [GitHub API Rate Limits](/advanced/rate-limits.md): Managing GitHub API rate limits
-- [Optimized Batch Processing](/advanced/batch-processing.md): Advanced batch processing techniques
+### Generated Content Includes:
 
-### Reference
-- [CLI Reference](/cli-reference.md): Comprehensive CLI command reference
-- [API Reference](/api-reference.md): API function and type reference
-- [Package Catalog](/package-catalog.md): Auto-generated catalog of all packages
+- **Package Catalog**: Organized by categories with quick stats and search functionality
+- **Individual Package Pages**: Detailed information for each package including:
+  - Installation instructions
+  - Available programs and commands
+  - Version history and compatibility
+  - Dependencies and related packages
+  - Usage examples and TypeScript integration
+- **Category Pages**: Packages grouped by functionality (Programming Languages, Databases, DevOps, etc.)
 
-## Building the Documentation
+### Regenerating Documentation
 
-To build the documentation locally:
+To update the documentation with the latest package information:
 
 ```bash
-# Navigate to the project root
-cd ts-pkgx
-
-# Install dependencies
-bun install
-
-# Start the development server
-bun docs:dev
-
-# Build the static site
-bun docs:build
-```
-
-## Contributing
-
-When adding new documentation:
-
-1. Create the appropriate Markdown file in the relevant directory
-2. Update the sidebar in `.vitepress/config.ts` to include the new page
-3. Ensure the page is properly linked from other related pages
-
-## Generating the Package Catalog
-
-The Package Catalog is automatically generated from the current package data. To update it:
-
-```bash
+# Using npm/bun scripts
 bun run pkgx:docs
+
+# Using the CLI directly
+bun bin/cli.ts generate-docs
+
+# Using the convenience script
+./scripts/generate-docs.sh
 ```
 
-This will scan all package files in the `src/packages` directory and generate a comprehensive catalog.
+### Documentation Features
+
+- **📊 Quick Stats**: Total package count, categories, and last updated date
+- **🔍 Searchable**: Easy navigation with table of contents and category organization
+- **📱 VitePress Compatible**: Optimized for VitePress static site generation
+- **🔗 Cross-Referenced**: Links between related packages and categories
+- **💻 Code Examples**: TypeScript usage examples for each package
+- **📦 Installation Commands**: Ready-to-use pkgx installation commands
+
+## 🌐 Viewing Documentation
+
+### Local Development
+
+```bash
+# Start the development server
+bun run dev:docs
+
+# Build for production
+bun run build:docs
+
+# Preview production build
+bun run preview:docs
+```
+
+### Online
+
+Visit the live documentation at [your-docs-url.com](https://your-docs-url.com)
+
+## 📝 Contributing
+
+The documentation is automatically generated from package data. To contribute:
+
+1. **Package Updates**: Modify package files in `src/packages/`
+2. **Documentation Generator**: Improve the generator in `bin/generate-docs.ts`
+3. **Manual Pages**: Edit static documentation files directly
+
+## 🔄 Automation
+
+The documentation generation is integrated into the build process and can be automated in CI/CD pipelines:
+
+```yaml
+# Example GitHub Actions workflow
+- name: Generate Documentation
+  run: bun run pkgx:docs
+
+- name: Deploy to GitHub Pages
+  run: bun run build:docs
+```
+
+## 📊 Package Statistics
+
+- **Total Packages**: 866+
+- **Categories**: 13
+- **Programming Languages**: 20+
+- **Databases**: 15+
+- **DevOps Tools**: 25+
+- **CLI Utilities**: 100+
+
+---
+
+*This documentation is automatically updated when packages are modified.*

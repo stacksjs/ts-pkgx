@@ -14,6 +14,7 @@ import {
   savePackageAsTypeScript,
 } from '../src/fetch'
 import { generateAliases, generateIndex } from '../src/generate'
+import { generateDocs } from './generate-docs'
 
 // Define interface for CLI options
 interface FetchOptions {
@@ -325,6 +326,24 @@ cli
     }
     catch (error) {
       console.error('Error generating aliases:', error)
+      process.exit(1)
+    }
+  })
+
+// Generate comprehensive documentation command
+cli
+  .command('generate-docs', 'Generate comprehensive VitePress documentation for all packages')
+  .option('-o, --output-dir <dir>', 'Output directory for documentation', { default: 'docs' })
+  .action(async (options) => {
+    try {
+      const { outputDir = 'docs' } = options
+      await generateDocs(outputDir)
+
+      // Force exit after successful completion to prevent hanging
+      setTimeout(() => process.exit(0), 500)
+    }
+    catch (error) {
+      console.error('Error generating documentation:', error)
       process.exit(1)
     }
   })

@@ -1,26 +1,24 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
-# Generate package documentation from the entire pantry
-# Usage: ./scripts/generate-docs.sh [output-path]
+# Generate comprehensive documentation for ts-pkgx packages
+# This script creates VitePress-compatible markdown files
 
-# Default output path
-OUTPUT_PATH="docs/package-catalog.md"
+echo "🚀 Generating ts-pkgx package documentation..."
 
-# If argument is provided, use it as the output path
-if [ "$1" != "" ]; then
-  OUTPUT_PATH="$1"
-fi
+# Change to the project root directory
+cd "$(dirname "$0")/.."
 
-# Run the generate-docs command
-echo "Generating package documentation to $OUTPUT_PATH..."
-bun run bin/cli.ts generate-docs --output "$OUTPUT_PATH"
+# Run the documentation generation command
+bun run pkgx:docs
 
-# Make the output file executable if successful
-if [ $? -eq 0 ]; then
-  chmod +x "$OUTPUT_PATH"
-  echo "Documentation generated successfully!"
-  exit 0
-else
-  echo "Error generating documentation."
-  exit 1
-fi
+echo "✅ Documentation generation complete!"
+echo "📍 Generated files:"
+echo "   - docs/package-catalog.md (main catalog)"
+echo "   - docs/packages/*.md (individual package pages)"
+echo "   - docs/categories/*.md (category pages)"
+echo ""
+echo "🌐 To preview the docs locally:"
+echo "   bun run dev:docs"
+echo ""
+echo "🚀 To build for production:"
+echo "   bun run build:docs"
