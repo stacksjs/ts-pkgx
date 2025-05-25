@@ -12,6 +12,7 @@ export const fxwtfPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '36.0.3',
     '36.0.2',
     '36.0.1',
     '36.0.0',

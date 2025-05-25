@@ -14,6 +14,7 @@ export const cryptographyioPackage = {
     'openssl.org>=1.1',
   ] as const,
   versions: [
+    '45.0.3',
     '45.0.2',
     '45.0.1',
     '45.0.0',

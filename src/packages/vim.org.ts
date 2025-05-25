@@ -19,6 +19,7 @@ export const vimorgPackage = {
     'ruby-lang.org>=3.2',
   ] as const,
   versions: [
+    '9.1.1407',
     '9.1.1406',
     '9.1.1405',
     '9.1.1404',
