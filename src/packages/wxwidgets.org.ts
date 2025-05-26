@@ -24,6 +24,7 @@ export const wxwidgetsorgPackage = {
     'gtk.org/gtk3',
   ] as const,
   versions: [
+    '3.2.8.1',
     '3.2.8',
     '3.2.7',
     '3.2.6',

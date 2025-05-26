@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `0.14.0`, `0.13.0`, `0.12.1`, `0.12.0`, `0.11.0`
-- `0.10.1`
+- `0.14.1`, `0.14.0`, `0.13.0`, `0.12.1`, `0.12.0`
+- `0.11.0`, `0.10.1`
 
 </details>
 
-**Latest Version**: `0.14.0`
+**Latest Version**: `0.14.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx zig@0.14.0
+pkgx zig@0.14.1
 ```
 
 ## Usage Examples

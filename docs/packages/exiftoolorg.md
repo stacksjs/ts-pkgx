@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `13.25.0`, `13.10.0`, `13.0.0`, `12.76.0`, `12.75.0`
-- `12.70.0`, `12.60.0`
+- `13.30.0`, `13.25.0`, `13.10.0`, `13.0.0`, `12.76.0`
+- `12.75.0`, `12.70.0`, `12.60.0`
 
 </details>
 
-**Latest Version**: `13.25.0`
+**Latest Version**: `13.30.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx exiftool@13.25.0
+pkgx exiftool@13.30.0
 ```
 
 ## Dependencies

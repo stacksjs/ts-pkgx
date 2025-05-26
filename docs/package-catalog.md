@@ -55,7 +55,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry[do
 | **[swiftorg](./packages/swiftorg.md)** () | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.1.1 (+8) | `pkgx swift` |
 | **[typescriptlangorg](./packages/typescriptlangorg.md)** (tsc) | TypeScript is a superset of JavaScript that compiles to clean JavaScript output. | tsc | 5.8.3 (+12) | `pkgx tsc` |
 | **[vlangio](./packages/vlangio.md)** () | Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1... | v | 0.4.10 (+13) | `pkgx v` |
-| **[ziglangorg](./packages/ziglangorg.md)** () | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable ... | zig | 0.14.0 (+5) | `pkgx zig` |
+| **[ziglangorg](./packages/ziglangorg.md)** () | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable ... | zig | 0.14.1 (+6) | `pkgx zig` |
 
 ## JavaScript & Node.js Ecosystem
 
@@ -387,7 +387,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry[do
 | **[endoflifedate](./packages/endoflifedate.md)** (eol) | CLI to show end-of-life dates for a number of products. | eol | 0.22.0 (+8) | `pkgx eol` |
 | **[epsilonprojectsourceforgeio](./packages/epsilonprojectsourceforgeio.md)** () | Powerful wavelet image compressor | epsilon | 0.9.2 (+0) | `pkgx epsilon` |
 | **[etcdio](./packages/etcdio.md)** () | Distributed reliable key-value store for the most critical data of a distributed system | etcd, etcdctl | 3.6.0 (+10) | `pkgx etcd` |
-| **[exiftoolorg](./packages/exiftoolorg.md)** () | Perl lib for reading and writing EXIF metadata | exiftool | 13.25.0 (+6) | `pkgx exiftool` |
+| **[exiftoolorg](./packages/exiftoolorg.md)** () | Perl lib for reading and writing EXIF metadata | exiftool | 13.30.0 (+7) | `pkgx exiftool` |
 | **[eyrieorg](./packages/eyrieorg.md)** |  | - | latest | `pkgx eyrie.org` |
 | **[f1bonacc1githubio](./packages/f1bonacc1githubio.md)** |  | - | latest | `pkgx f1bonacc1.github.io` |
 | **[fabianlindforsse](./packages/fabianlindforsse.md)** |  | - | latest | `pkgx fabianlindfors.se` |
@@ -970,7 +970,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry[do
 | **[wkentarogithubio](./packages/wkentarogithubio.md)** |  | - | latest | `pkgx wkentaro.github.io` |
 | **[wpewebkitorg](./packages/wpewebkitorg.md)** |  | - | latest | `pkgx wpewebkit.org` |
 | **[wundergraphcom](./packages/wundergraphcom.md)** (wunderctl) | WunderGraph is a Backend for Frontend Framework to optimize frontend, fullstack and backend devel... | wunderctl | 0.181.0 (+19) | `pkgx wunderctl` |
-| **[wxwidgetsorg](./packages/wxwidgetsorg.md)** () | Cross-Platform C++ GUI Library | wx-config, wxrc | 3.2.8 (+5) | `pkgx wxwidgets.org` |
+| **[wxwidgetsorg](./packages/wxwidgetsorg.md)** () | Cross-Platform C++ GUI Library | wx-config, wxrc | 3.2.8.1 (+6) | `pkgx wxwidgets.org` |
 | **[xcfiledev](./packages/xcfiledev.md)** () | Markdown defined task runner. | xc | 0.8.5 (+26) | `pkgx xc` |
 | **[xercesapacheorg](./packages/xercesapacheorg.md)** |  | - | latest | `pkgx xerces.apache.org` |
 | **[xiphorg](./packages/xiphorg.md)** |  | - | latest | `pkgx xiph.org` |

@@ -14,6 +14,7 @@ export const exiftoolorgPackage = {
     'perl.org',
   ] as const,
   versions: [
+    '13.30.0',
     '13.25.0',
     '13.10.0',
     '13.0.0',

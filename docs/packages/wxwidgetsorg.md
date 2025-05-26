@@ -26,20 +26,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `3.2.8`, `3.2.7`, `3.2.6`, `3.2.5`, `3.2.4`
-- `3.2.3`
+- `3.2.8.1`, `3.2.8`, `3.2.7`, `3.2.6`, `3.2.5`
+- `3.2.4`, `3.2.3`
 
 </details>
 
-**Latest Version**: `3.2.8`
+**Latest Version**: `3.2.8.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx wxwidgets.org@3.2.8
+pkgx wxwidgets.org@3.2.8.1
 ```
 
 ## Dependencies
