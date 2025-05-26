@@ -496,7 +496,7 @@ async function generatePackageCatalog(outputDir: string): Promise<string> {
 
 This comprehensive catalog lists all ${Object.keys(pantry).length}+ packages available in ts-pkgx, organized by category.
 
-Each package can be accessed using \`getPackage(name)\` or directly via \`pantry[domain]\`.
+Each package can be accessed using \`getPackage(name)\` or directly via \`pantry.domain\`.
 
 ## Quick Stats
 
@@ -581,7 +581,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
 import { getPackage, pantry } from 'ts-pkgx'
 
 // Get a package by domain
-const nodePackage = pantry['nodejs.org']
+const nodePackage = pantry.nodejsorg
 
 // Get a package by alias
 const nodeByAlias = getPackage('node')
@@ -597,18 +597,18 @@ console.log(\`Programs: \${nodePackage.programs.join(', ')}\`)
 \`\`\`typescript
 // Find packages by category
 const databases = [
-  pantry['postgresql.org'],
-  pantry['mysql.com'],
-  pantry['redis.io'],
-  pantry['mongodb.com']
+  pantry.postgresqlorg,
+  pantry.mysqlcom,
+  pantry.redisio,
+  pantry.mongodbcom
 ]
 
 // Get all available versions
-const nodeVersions = pantry['nodejs.org'].versions
+const nodeVersions = pantry.nodejsorg.versions
 console.log(\`Node.js versions: \${nodeVersions.slice(0, 5).join(', ')}...\`)
 
 // Check dependencies
-const nodeDeps = pantry['nodejs.org'].dependencies
+const nodeDeps = pantry.nodejsorg.dependencies
 console.log(\`Node.js dependencies: \${nodeDeps.join(', ')}\`)
 \`\`\`
 
@@ -671,7 +671,7 @@ async function generatePackagePages(outputDir: string): Promise<string[]> {
 
       let content = `# ${pkg.name || domain}
 
-> ${pkg.description}
+>${pkg.description ? ` ${pkg.description}` : ''}
 
 ## Package Information
 
@@ -784,7 +784,7 @@ These packages work well with ${pkg.name || domain}:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['${domain}']
+const pkg = pantry.${convertDomainToVarName(domain)}
 
 console.log(\`Package: \${pkg.name}\`)
 console.log(\`Description: \${pkg.description}\`)

@@ -2,13 +2,13 @@
 
 This comprehensive catalog lists all 866+ packages available in ts-pkgx, organized by category.
 
-Each package can be accessed using `getPackage(name)` or directly via `pantry[domain]`.
+Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-26T03:57:20.201Z
+- **Last Updated**: 2025-05-26T05:21:59.443Z
 
 ## Table of Contents
 
@@ -1000,7 +1000,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry[do
 import { getPackage, pantry } from 'ts-pkgx'
 
 // Get a package by domain
-const nodePackage = pantry['nodejs.org']
+const nodePackage = pantry.nodejsorg
 
 // Get a package by alias
 const nodeByAlias = getPackage('node')
@@ -1016,18 +1016,18 @@ console.log(`Programs: ${nodePackage.programs.join(', ')}`)
 ```typescript
 // Find packages by category
 const databases = [
-  pantry['postgresql.org'],
-  pantry['mysql.com'],
-  pantry['redis.io'],
-  pantry['mongodb.com']
+  pantry.postgresqlorg,
+  pantry.mysqlcom,
+  pantry.redisio,
+  pantry.mongodbcom
 ]
 
 // Get all available versions
-const nodeVersions = pantry['nodejs.org'].versions
+const nodeVersions = pantry.nodejsorg.versions
 console.log(`Node.js versions: ${nodeVersions.slice(0, 5).join(', ')}...`)
 
 // Check dependencies
-const nodeDeps = pantry['nodejs.org'].dependencies
+const nodeDeps = pantry.nodejsorg.dependencies
 console.log(`Node.js dependencies: ${nodeDeps.join(', ')}`)
 ```
 
