@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-26T05:21:59.443Z
+- **Last Updated**: 2025-05-26T06:48:12.469Z
 
 ## Table of Contents
 
@@ -422,7 +422,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[geoffgreerfm](./packages/geoffgreerfm.md)** |  | - | latest | `pkgx geoff.greer.fm` |
 | **[getclipboardapp](./packages/getclipboardapp.md)** (cb) | 😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨𝙡𝙮 smart clipboard manager | cb | 0.9.1 (+2) | `pkgx cb` |
 | **[getcomposerorg](./packages/getcomposerorg.md)** (composer) | Dependency Manager for PHP | composer, composer.phar | 2.8.9 (+29) | `pkgx composer` |
-| **[getfoundrysh](./packages/getfoundrysh.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+6) | `pkgx getfoundry.sh` |
+| **[getfoundrysh](./packages/getfoundrysh.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+7) | `pkgx getfoundry.sh` |
 | **[getsopsio](./packages/getsopsio.md)** (sops) | Simple and flexible tool for managing secrets | sops | 3.10.2 (+8) | `pkgx sops` |
 | **[getsynthcom](./packages/getsynthcom.md)** (synth) | The Declarative Data Generator | synth | 0.6.9 (+0) | `pkgx synth` |
 | **[getzolaorg](./packages/getzolaorg.md)** (zola) | A fast static site generator in a single binary with everything built-in. https://www.getzola.org | zola | 0.20.0 (+5) | `pkgx zola` |
@@ -658,7 +658,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoftcommarkitdown](./packages/microsoftcommarkitdown.md)** (markitdown) | Python tool for converting files and office documents to Markdown. | markitdown | 0.0.1.3 (+0) | `pkgx markitdown` |
 | **[midnightcommanderorg](./packages/midnightcommanderorg.md)** (midnight commander) | Terminal-based visual file manager | mc, mcdiff, mcedit, ... (+1) | 4.8.33 (+5) | `pkgx Midnight Commander` |
 | **[minio](./packages/minio.md)** (minio) | MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license. | minio | 2023.10.25.6.33.25 (+0) | `pkgx minio` |
-| **[misejdxdev](./packages/misejdxdev.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.5.12 (+276) | `pkgx mise` |
+| **[misejdxdev](./packages/misejdxdev.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.5.13 (+277) | `pkgx mise` |
 | **[mitmproxyorg](./packages/mitmproxyorg.md)** () | An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers. | mitmproxy | 12.1.1 (+26) | `pkgx mitmproxy` |
 | **[mkcertdev](./packages/mkcertdev.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you'd l... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
 | **[mkdocsorg](./packages/mkdocsorg.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
@@ -872,7 +872,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[sphinxdocorg](./packages/sphinxdocorg.md)** () | Tool to create intelligent and beautiful documentation | sphinx-apidoc, sphinx-autogen, sphinx-build, ... (+1) | 8.2.3 (+41) | `pkgx sphinx` |
 | **[sqlcdev](./packages/sqlcdev.md)** () | Generate type-safe code from SQL | sqlc | 1.29.0 (+2) | `pkgx sqlc` |
 | **[sqlfluffcom](./packages/sqlfluffcom.md)** () | A modular SQL linter and auto-formatter with support for multiple dialects and templated code. | sqlfluff | 3.4.0 (+22) | `pkgx sqlfluff` |
-| **[squawkhqcom](./packages/squawkhqcom.md)** () | 🐘 linter for PostgreSQL, focused on migrations | squawk | 2.8.0 (+30) | `pkgx squawk` |
+| **[squawkhqcom](./packages/squawkhqcom.md)** () | 🐘 linter for PostgreSQL, focused on migrations | squawk | 2.9.0 (+31) | `pkgx squawk` |
 | **[srtallianceorg](./packages/srtallianceorg.md)** () | Secure, Reliable, Transport | srt-ffplay, srt-file-transmit, srt-live-transmit, ... (+1) | 1.5.4 (+2) | `pkgx srt` |
 | **[sshxio](./packages/sshxio.md)** () | Fast, collaborative live terminal sharing over the web | sshx | 2023.11.14 (+0) | `pkgx sshx` |
 | **[starshiprs](./packages/starshiprs.md)** () | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |
