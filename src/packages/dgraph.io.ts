@@ -12,6 +12,7 @@ export const dgraphioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '24.1.3',
     '24.1.2',
     '24.1.1',
     '24.1.0',

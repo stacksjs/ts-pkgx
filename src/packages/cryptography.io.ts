@@ -8,11 +8,7 @@ export const cryptographyioPackage = {
   installCommand: 'sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [
-    'python.org>=3.11',
-    'github.com/python-cffi/cffi^1.16',
-    'openssl.org>=1.1',
-  ] as const,
+  dependencies: [] as const,
   versions: [
     '45.0.3',
     '45.0.2',

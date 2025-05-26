@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-26T06:48:12.469Z
+- **Last Updated**: 2025-05-26T08:48:54.835Z
 
 ## Table of Contents
 
@@ -264,7 +264,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[boostorg](./packages/boostorg.md)** () | Super-project for modularized Boost | - | 1.88.0 (+7) | `pkgx boost.org` |
 | **[borepub](./packages/borepub.md)** () | Modern, simple TCP tunnel in Rust that exposes local ports to a remote server | bore | 0.5.3 (+3) | `pkgx bore` |
 | **[breakfastquaycom](./packages/breakfastquaycom.md)** |  | - | latest | `pkgx breakfastquay.com` |
-| **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.3 (+14) | `pkgx browser-use.com` |
+| **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.4 (+15) | `pkgx browser-use.com` |
 | **[brxken128githubio](./packages/brxken128githubio.md)** |  | - | latest | `pkgx brxken128.github.io` |
 | **[budimanjojogithubio](./packages/budimanjojogithubio.md)** |  | - | latest | `pkgx budimanjojo.github.io` |
 | **[bufbuild](./packages/bufbuild.md)** () | The best way of working with Protocol Buffers. | buf | 1.54.0 (+40) | `pkgx buf` |
@@ -353,7 +353,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[developersyubicocom](./packages/developersyubicocom.md)** () |  | - | latest | `pkgx developers.yubico.com` |
 | **[devpodsh](./packages/devpodsh.md)** () |  | - | latest | `pkgx devpod.sh` |
 | **[devyorhelnl](./packages/devyorhelnl.md)** () |  | - | latest | `pkgx dev.yorhel.nl` |
-| **[dgraphio](./packages/dgraphio.md)** () | high-performance graph database for real-time use cases | dgraph | 24.1.2 (+9) | `pkgx dgraph` |
+| **[dgraphio](./packages/dgraphio.md)** () | high-performance graph database for real-time use cases | dgraph | 24.1.3 (+10) | `pkgx dgraph` |
 | **[dhalllangorg](./packages/dhalllangorg.md)** () | Interpreter for the Dhall language | dhall | 1.42.2 (+1) | `pkgx dhall` |
 | **[dhruvkbdev](./packages/dhruvkbdev.md)** () |  | - | latest | `pkgx dhruvkb.dev` |
 | **[diggerdev](./packages/diggerdev.md)** () | Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI... | digger | 0.6.101 (+184) | `pkgx digger` |

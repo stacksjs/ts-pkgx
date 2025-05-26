@@ -25,20 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `24.1.2`, `24.1.1`, `24.1.0`, `24.0.5`, `24.0.4`
-- `24.0.2`, `24.0.1`, `24.0.0`, `23.1.1`, `23.1.0`
+- `24.1.3`, `24.1.2`, `24.1.1`, `24.1.0`, `24.0.5`
+- `24.0.4`, `24.0.2`, `24.0.1`, `24.0.0`, `23.1.1`
+- `23.1.0`
 
 </details>
 
-**Latest Version**: `24.1.2`
+**Latest Version**: `24.1.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx dgraph@24.1.2
+pkgx dgraph@24.1.3
 ```
 
 ## Usage Examples
