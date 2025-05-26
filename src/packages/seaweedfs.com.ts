@@ -12,6 +12,7 @@ export const seaweedfscomPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '3.88.0',
     '3.87.0',
     '3.86.0',
     '3.85.0',

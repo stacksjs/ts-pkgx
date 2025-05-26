@@ -12,6 +12,7 @@ export const modalcomPackage = {
     'pkgx.sh@1',
   ] as const,
   versions: [
+    '1.0.2',
     '1.0.1',
     '1.0.0',
     '0.77.0',

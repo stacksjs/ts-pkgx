@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `3.87.0`, `3.86.0`, `3.85.0`, `3.84.0`, `3.83.0`
-- `3.82.0`, `3.81.0`, `3.80.0`, `3.79.0`
+- `3.88.0`, `3.87.0`, `3.86.0`, `3.85.0`, `3.84.0`
+- `3.83.0`, `3.82.0`, `3.81.0`, `3.80.0`, `3.79.0`
 
 </details>
 
-**Latest Version**: `3.87.0`
+**Latest Version**: `3.88.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx SeaweedFS@3.87.0
+pkgx SeaweedFS@3.88.0
 ```
 
 ## Usage Examples

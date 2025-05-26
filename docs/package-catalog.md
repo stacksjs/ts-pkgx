@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-26T19:46:19.758Z
+- **Last Updated**: 2025-05-26T22:46:00.374Z
 
 ## Table of Contents
 
@@ -662,7 +662,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mitmproxyorg](./packages/mitmproxyorg.md)** () | An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers. | mitmproxy | 12.1.1 (+26) | `pkgx mitmproxy` |
 | **[mkcertdev](./packages/mkcertdev.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you'd l... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
 | **[mkdocsorg](./packages/mkdocsorg.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
-| **[modalcom](./packages/modalcom.md)** () | Python client library for Modal | - | 1.0.1 (+788) | `pkgx modal.com` |
+| **[modalcom](./packages/modalcom.md)** () | Python client library for Modal | - | 1.0.2 (+789) | `pkgx modal.com` |
 | **[moderncorg](./packages/moderncorg.md)** |  | - | latest | `pkgx modernc.org` |
 | **[moderncorggoyacc](./packages/moderncorggoyacc.md)** (goyacc) | Parser Generator for Go | goyacc | 1.0.3 (+0) | `pkgx modernc.org/goyacc` |
 | **[moonrepodev](./packages/moonrepodev.md)** |  | - | latest | `pkgx moonrepo.dev` |
@@ -846,7 +846,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[sconsorg](./packages/sconsorg.md)** () | Substitute for classic 'make' tool with autoconf/automake functionality | scons | 4.9.1 (+6) | `pkgx scons` |
 | **[scryerpl](./packages/scryerpl.md)** (scryer prolog) | Modern ISO Prolog implementation written mostly in Rust | scryer-prolog | 0.9.4 (+0) | `pkgx Scryer Prolog` |
 | **[sdkmanio](./packages/sdkmanio.md)** (sdkman-init.sh) | The SDKMAN! Command Line Interface | sdkman-init.sh | 5.19.0 (+1) | `pkgx sdkman-init.sh` |
-| **[seaweedfscom](./packages/seaweedfscom.md)** () | SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for bill... | weed | 3.87.0 (+8) | `pkgx SeaweedFS` |
+| **[seaweedfscom](./packages/seaweedfscom.md)** () | SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for bill... | weed | 3.88.0 (+9) | `pkgx SeaweedFS` |
 | **[sfcgalorg](./packages/sfcgalorg.md)** (sfcgal-config) | C++ wrapper library around CGAL | sfcgal-config | 2.1.0 (+5) | `pkgx sfcgal-config` |
 | **[sfnet](./packages/sfnet.md)** |  | - | latest | `pkgx sf.net` |
 | **[sftpgocom](./packages/sftpgocom.md)** () | Full-featured and highly configurable SFTP, HTTP/S, FTP/S and WebDAV server - S3, Google Cloud St... | sftpgo | 2.6.6 (+7) | `pkgx sftpgo` |
