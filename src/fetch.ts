@@ -1961,19 +1961,19 @@ export async function fetchAndSavePackage(
           const existingContent = fs.readFileSync(existingFilePath, 'utf-8')
 
           // Check if existing file has dependencies but new fetch doesn't
-          const existingHasDependencies = existingContent.includes('dependencies: [') &&
-                                         !existingContent.includes('dependencies: [] as const')
+          const existingHasDependencies = existingContent.includes('dependencies: [')
+            && !existingContent.includes('dependencies: [] as const')
           const newHasNoDependencies = packageInfo.dependencies.length === 0
 
           // Check if existing file has a real description but new fetch has generic one
-          const existingHasRealDescription = !existingContent.includes("description: 'Package information for") &&
-                                           !existingContent.includes("description: '' as const")
-          const newHasGenericDescription = packageInfo.description.includes('Package information for') ||
-                                          packageInfo.description.trim() === ''
+          const existingHasRealDescription = !existingContent.includes('description: \'Package information for')
+            && !existingContent.includes('description: \'\' as const')
+          const newHasGenericDescription = packageInfo.description.includes('Package information for')
+            || packageInfo.description.trim() === ''
 
           // If existing file is better, skip to avoid data degradation
-          if ((existingHasDependencies && newHasNoDependencies) ||
-              (existingHasRealDescription && newHasGenericDescription)) {
+          if ((existingHasDependencies && newHasNoDependencies)
+            || (existingHasRealDescription && newHasGenericDescription)) {
             console.warn(`⚠️  Existing file ${existingFilePath} has better data than new fetch. Skipping to prevent data loss.`)
             console.warn(`   Existing deps: ${existingHasDependencies}, New deps: ${!newHasNoDependencies}`)
             console.warn(`   Existing desc: ${existingHasRealDescription}, New desc: ${!newHasGenericDescription}`)
