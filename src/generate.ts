@@ -502,7 +502,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
 
 - **Total Packages**: ${Object.keys(pantry).length}
 - **Categories**: ${Object.keys(categories).length}
-- **Last Updated**: ${new Date().toISOString().split('T')[0]}
+- **Last Updated**: ${new Date().toISOString()}
 
 ## Table of Contents
 
