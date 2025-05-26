@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "ts-pkgx"
-  text: "Package info fetcher for pkgx.dev"
-  tagline: "Fetch and access package data from pkgx.dev with ease"
+  text: "pkgx Package Information"
+  tagline: "Fetch & access package data from pkgx with ease"
   image: /images/logo-white.png
   actions:
     - theme: brand
