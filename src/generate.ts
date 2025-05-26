@@ -858,9 +858,11 @@ ${categoryName === 'Programming Languages'
       if (pkg) {
         const aliases = pkg.aliases ? ` (${pkg.aliases.join(', ')})` : ''
         content += `### [${domain}](../packages/${domain.replace(/\./g, '-')}.md)${aliases}
-
+${pkg.description
+  ? `
 ${pkg.description}
-
+`
+  : ''}
 **Programs**: ${pkg.programs.length > 0 ? pkg.programs.map(p => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ') : 'None specified'}
 
 **Install**: \`${pkg.installCommand || `pkgx ${pkg.name || domain}`}\`
@@ -871,7 +873,7 @@ ${pkg.description}
       }
     })
 
-    content += `\n[← Back to Package Catalog](../package-catalog.md)
+    content += `[← Back to Package Catalog](../package-catalog.md)
 `
 
     fs.writeFileSync(filepath, content)

@@ -48,8 +48,6 @@ A modern runtime for JavaScript and TypeScript.
 
 ### [expodev](../packages/expodev.md)
 
-
-
 **Programs**: None specified
 
 **Install**: `pkgx expo.dev`
@@ -125,6 +123,5 @@ Next generation frontend tooling. It's fast!
 **Install**: `sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i`
 
 ---
-
 
 [← Back to Package Catalog](../package-catalog.md)

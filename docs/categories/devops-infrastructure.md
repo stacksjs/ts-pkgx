@@ -18,8 +18,6 @@ Ansible is a radically simple IT automation platform that makes your application
 
 ### [argoprojgithubio](../packages/argoprojgithubio.md) ()
 
-
-
 **Programs**: None specified
 
 **Install**: `pkgx argoproj.github.io`
@@ -27,8 +25,6 @@ Ansible is a radically simple IT automation platform that makes your application
 ---
 
 ### [ciliumio](../packages/ciliumio.md) ()
-
-
 
 **Programs**: None specified
 
@@ -48,8 +44,6 @@ Consul is a distributed, highly available, and data center aware solution to con
 
 ### [dockercom](../packages/dockercom.md) ()
 
-
-
 **Programs**: None specified
 
 **Install**: `pkgx docker.com`
@@ -57,8 +51,6 @@ Consul is a distributed, highly available, and data center aware solution to con
 ---
 
 ### [fluxcdio](../packages/fluxcdio.md)
-
-
 
 **Programs**: None specified
 
@@ -87,8 +79,6 @@ Connect, secure, control, and observe services.
 ---
 
 ### [kubernetesio](../packages/kubernetesio.md)
-
-
 
 **Programs**: None specified
 
@@ -135,6 +125,5 @@ The Cloud Native Application Proxy
 **Install**: `sh <(curl https://pkgx.sh) traefik`
 
 ---
-
 
 [← Back to Package Catalog](../package-catalog.md)

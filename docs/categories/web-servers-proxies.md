@@ -8,8 +8,6 @@ Packages related to web servers & proxies.
 
 ### [apacheorg](../packages/apacheorg.md) ()
 
-
-
 **Programs**: None specified
 
 **Install**: `pkgx apache.org`
@@ -35,6 +33,5 @@ The Cloud Native Application Proxy
 **Install**: `sh <(curl https://pkgx.sh) traefik`
 
 ---
-
 
 [← Back to Package Catalog](../package-catalog.md)

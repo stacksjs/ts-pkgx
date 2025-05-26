@@ -26,5 +26,4 @@ Improved top (interactive process viewer)
 
 ---
 
-
 [← Back to Package Catalog](../package-catalog.md)

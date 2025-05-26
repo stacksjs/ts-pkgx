@@ -8,8 +8,6 @@ Packages related to cloud platforms & services.
 
 ### [awsamazoncom](../packages/awsamazoncom.md) ()
 
-
-
 **Programs**: None specified
 
 **Install**: `pkgx aws.amazon.com`
@@ -18,8 +16,6 @@ Packages related to cloud platforms & services.
 
 ### [cloudflarecom](../packages/cloudflarecom.md) ()
 
-
-
 **Programs**: None specified
 
 **Install**: `pkgx cloudflare.com`
@@ -27,8 +23,6 @@ Packages related to cloud platforms & services.
 ---
 
 ### [digitaloceancom](../packages/digitaloceancom.md) ()
-
-
 
 **Programs**: None specified
 
@@ -48,8 +42,6 @@ Command line tools for fly.io services
 
 ### [githubcom](../packages/githubcom.md)
 
-
-
 **Programs**: None specified
 
 **Install**: `pkgx github.com`
@@ -57,8 +49,6 @@ Command line tools for fly.io services
 ---
 
 ### [gitlabcom](../packages/gitlabcom.md)
-
-
 
 **Programs**: None specified
 
@@ -88,13 +78,10 @@ Develop and deploy code with zero configuration
 
 ### [vercelcom](../packages/vercelcom.md)
 
-
-
 **Programs**: None specified
 
 **Install**: `pkgx vercel.com`
 
 ---
-
 
 [← Back to Package Catalog](../package-catalog.md)

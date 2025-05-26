@@ -8,8 +8,6 @@ Packages related to development tools.
 
 ### [githubcom](../packages/githubcom.md)
 
-
-
 **Programs**: None specified
 
 **Install**: `pkgx github.com`
@@ -17,8 +15,6 @@ Packages related to development tools.
 ---
 
 ### [gitlabcom](../packages/gitlabcom.md)
-
-
 
 **Programs**: None specified
 
@@ -65,6 +61,5 @@ The official Vim repository
 **Install**: `sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i`
 
 ---
-
 
 [← Back to Package Catalog](../package-catalog.md)

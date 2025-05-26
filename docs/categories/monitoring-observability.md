@@ -8,8 +8,6 @@ Packages related to monitoring & observability.
 
 ### [grafanacom](../packages/grafanacom.md)
 
-
-
 **Programs**: None specified
 
 **Install**: `pkgx grafana.com`
@@ -25,6 +23,5 @@ Command-line utility to interact with Sentry
 **Install**: `sh <(curl https://pkgx.sh) sentry-cli`
 
 ---
-
 
 [← Back to Package Catalog](../package-catalog.md)
