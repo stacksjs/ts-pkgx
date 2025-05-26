@@ -43,6 +43,14 @@ This package provides the following executable programs:
 pkgx cryptography.io@45.0.3
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `python.org>=3.11`
+- `github.com/python-cffi/cffi^1.16`
+- `openssl.org>=1.1`
+
 ## Usage Examples
 
 ```typescript

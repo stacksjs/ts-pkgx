@@ -40,6 +40,13 @@ This package provides the following executable programs:
 pkgx dhall@1.42.2
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `invisible-island.net/ncurses^6.4`
+- `zlib.net^1.3`
+
 ## Usage Examples
 
 ```typescript

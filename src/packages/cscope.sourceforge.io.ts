@@ -11,7 +11,9 @@ export const cscopesourceforgeioPackage = {
     'ocs',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  dependencies: [
+    'invisible-island.net/ncurses',
+  ] as const,
   versions: [
     '15.9.0',
   ] as const,

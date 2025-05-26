@@ -10,7 +10,10 @@ export const dhalllangorgPackage = {
     'dhall',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  dependencies: [
+    'invisible-island.net/ncurses^6.4',
+    'zlib.net^1.3',
+  ] as const,
   versions: [
     '1.42.2',
     '1.42.1',

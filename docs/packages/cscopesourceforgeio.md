@@ -41,6 +41,12 @@ This package provides the following executable programs:
 pkgx cscope.sourceforge.io@15.9.0
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `invisible-island.net/ncurses`
+
 ## Usage Examples
 
 ```typescript
