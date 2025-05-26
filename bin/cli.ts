@@ -4,17 +4,14 @@ import path from 'node:path'
 import process from 'node:process'
 import { CAC } from 'cac'
 import { version } from '../package.json'
+import { DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS } from '../src/consts'
 import {
   cleanupBrowserResources,
-  DEFAULT_CACHE_DIR,
-  DEFAULT_CACHE_EXPIRATION_MINUTES,
-  DEFAULT_TIMEOUT_MS,
   fetchAndSaveAllPackages,
   fetchAndSavePackage,
   savePackageAsTypeScript,
 } from '../src/fetch'
-import { generateAliases, generateIndex } from '../src/generate'
-import { generateDocs } from './generate-docs'
+import { generateAliases, generateDocs, generateIndex } from '../src/generate'
 
 // Define interface for CLI options
 interface FetchOptions {
