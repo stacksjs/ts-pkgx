@@ -46,7 +46,7 @@ pkgx jenv@0.5.7
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jenvbe']
+const pkg = pantry.jenvbe
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -53,7 +53,7 @@ pkgx depot@2.85.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['depotdev']
+const pkg = pantry.depotdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

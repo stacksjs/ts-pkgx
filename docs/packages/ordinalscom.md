@@ -46,7 +46,7 @@ pkgx ord@0.6.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ordinalscom']
+const pkg = pantry.ordinalscom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -48,7 +48,7 @@ pkgx dblab@0.32.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['dblabdanvergaracom']
+const pkg = pantry.dblabdanvergaracom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

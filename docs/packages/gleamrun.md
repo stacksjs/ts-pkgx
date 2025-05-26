@@ -54,7 +54,7 @@ pkgx gleam@1.10.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gleamrun']
+const pkg = pantry.gleamrun
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

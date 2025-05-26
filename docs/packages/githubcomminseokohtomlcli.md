@@ -53,7 +53,7 @@ pkgx toml-cli@0.1.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomminseokohtomlcli']
+const pkg = pantry.githubcomminseokohtomlcli
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

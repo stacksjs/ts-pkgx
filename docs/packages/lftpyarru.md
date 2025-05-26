@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['lftpyarru']
+const pkg = pantry.lftpyarru
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

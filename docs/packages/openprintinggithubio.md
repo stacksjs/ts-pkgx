@@ -1,6 +1,6 @@
 # openprinting.github.io
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openprintinggithubio']
+const pkg = pantry.openprintinggithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

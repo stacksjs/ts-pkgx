@@ -52,7 +52,7 @@ pkgx pcap-config@1.10.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tcpdumporg']
+const pkg = pantry.tcpdumporg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

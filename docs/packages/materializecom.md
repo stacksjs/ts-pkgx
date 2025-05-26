@@ -66,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['materializecom']
+const pkg = pantry.materializecom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

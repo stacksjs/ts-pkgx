@@ -1,6 +1,6 @@
 # r-wos.org
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rwosorg']
+const pkg = pantry.rwosorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

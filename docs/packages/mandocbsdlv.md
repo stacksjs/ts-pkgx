@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mandocbsdlv']
+const pkg = pantry.mandocbsdlv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

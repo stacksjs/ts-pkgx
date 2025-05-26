@@ -1,6 +1,6 @@
 # oberhumer.com/ucl
 
-> 
+>
 
 ## Package Information
 
@@ -52,7 +52,7 @@ pkgx oberhumer.com/ucl@1.3.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['oberhumercomucl']
+const pkg = pantry.oberhumercomucl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

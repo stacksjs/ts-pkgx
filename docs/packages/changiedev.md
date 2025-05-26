@@ -47,7 +47,7 @@ pkgx changie@1.21.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['changiedev']
+const pkg = pantry.changiedev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

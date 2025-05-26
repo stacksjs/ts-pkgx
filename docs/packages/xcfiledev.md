@@ -51,7 +51,7 @@ pkgx xc@0.8.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xcfiledev']
+const pkg = pantry.xcfiledev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

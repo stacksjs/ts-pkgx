@@ -47,7 +47,7 @@ pkgx kubecm@0.33.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kubecmcloud']
+const pkg = pantry.kubecmcloud
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

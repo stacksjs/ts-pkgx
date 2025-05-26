@@ -49,7 +49,7 @@ pkgx cue@0.13.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cuelangorg']
+const pkg = pantry.cuelangorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

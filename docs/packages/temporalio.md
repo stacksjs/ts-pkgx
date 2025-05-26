@@ -48,7 +48,7 @@ pkgx temporal@1.3.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['temporalio']
+const pkg = pantry.temporalio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

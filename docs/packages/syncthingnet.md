@@ -49,7 +49,7 @@ pkgx syncthing@1.29.6
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['syncthingnet']
+const pkg = pantry.syncthingnet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

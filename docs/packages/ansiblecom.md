@@ -75,7 +75,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ansiblecom']
+const pkg = pantry.ansiblecom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

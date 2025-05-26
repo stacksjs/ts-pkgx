@@ -53,7 +53,7 @@ pkgx dart@3.8.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['dartdev']
+const pkg = pantry.dartdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

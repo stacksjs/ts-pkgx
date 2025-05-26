@@ -1,6 +1,6 @@
 # brxken128.github.io
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['brxken128githubio']
+const pkg = pantry.brxken128githubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

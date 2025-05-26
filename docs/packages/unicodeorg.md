@@ -58,7 +58,7 @@ pkgx unicode.org@77.1.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['unicodeorg']
+const pkg = pantry.unicodeorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

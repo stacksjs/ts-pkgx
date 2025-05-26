@@ -55,7 +55,7 @@ pkgx zrok@1.0.4
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['zrokio']
+const pkg = pantry.zrokio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

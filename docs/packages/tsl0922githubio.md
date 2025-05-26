@@ -1,6 +1,6 @@
 # tsl0922.github.io
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tsl0922githubio']
+const pkg = pantry.tsl0922githubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

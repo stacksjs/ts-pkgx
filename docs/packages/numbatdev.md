@@ -47,7 +47,7 @@ pkgx numbat@1.16.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['numbatdev']
+const pkg = pantry.numbatdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -57,7 +57,7 @@ pkgx traefik@3.4.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['traefikio']
+const pkg = pantry.traefikio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

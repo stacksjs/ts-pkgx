@@ -46,7 +46,7 @@ pkgx jetp@0.0.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jetporchcom']
+const pkg = pantry.jetporchcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

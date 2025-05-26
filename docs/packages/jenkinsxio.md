@@ -62,7 +62,7 @@ pkgx Jenkins X@3.11.81
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jenkinsxio']
+const pkg = pantry.jenkinsxio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

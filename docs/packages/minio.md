@@ -52,7 +52,7 @@ pkgx minio@2023.10.25.6.33.25
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['minio']
+const pkg = pantry.minio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

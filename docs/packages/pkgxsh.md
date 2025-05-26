@@ -52,7 +52,7 @@ pkgx pkgx@2.7.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pkgxsh']
+const pkg = pantry.pkgxsh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

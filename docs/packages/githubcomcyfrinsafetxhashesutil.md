@@ -1,6 +1,6 @@
 # safe_hashes
 
-> 
+>
 
 ## Package Information
 
@@ -68,7 +68,7 @@ These packages work well with safe_hashes:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomcyfrinsafetxhashesutil']
+const pkg = pantry.githubcomcyfrinsafetxhashesutil
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

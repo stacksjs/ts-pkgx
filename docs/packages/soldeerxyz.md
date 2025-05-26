@@ -46,7 +46,7 @@ pkgx soldeer@0.5.4
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['soldeerxyz']
+const pkg = pantry.soldeerxyz
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

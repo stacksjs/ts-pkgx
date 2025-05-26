@@ -46,7 +46,7 @@ pkgx terraform-docs@0.20.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['terraformdocsio']
+const pkg = pantry.terraformdocsio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

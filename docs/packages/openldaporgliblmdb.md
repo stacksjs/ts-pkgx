@@ -55,7 +55,7 @@ pkgx liblmdb@0.9.33
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openldaporgliblmdb']
+const pkg = pantry.openldaporgliblmdb
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

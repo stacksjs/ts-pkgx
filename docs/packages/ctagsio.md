@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ctagsio']
+const pkg = pantry.ctagsio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

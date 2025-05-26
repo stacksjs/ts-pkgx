@@ -1,6 +1,6 @@
 # pcsc-lite
 
-> 
+>
 
 ## Package Information
 
@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pcscliteapdufr']
+const pkg = pantry.pcscliteapdufr
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -53,7 +53,7 @@ pkgx lporg@20.4.32
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomblacktoplporg']
+const pkg = pantry.githubcomblacktoplporg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

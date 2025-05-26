@@ -47,7 +47,7 @@ pkgx watchexec@2.3.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['watchexecgithubio']
+const pkg = pantry.watchexecgithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

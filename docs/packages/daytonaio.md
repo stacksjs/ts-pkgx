@@ -61,7 +61,7 @@ pkgx daytona@0.100.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['daytonaio']
+const pkg = pantry.daytonaio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

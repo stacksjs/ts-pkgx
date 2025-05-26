@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['moshorg']
+const pkg = pantry.moshorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

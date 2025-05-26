@@ -56,7 +56,7 @@ pkgx github.com/fastfetch-cli/fastfetch@2.44.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomfastfetchclifastfetch']
+const pkg = pantry.githubcomfastfetchclifastfetch
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

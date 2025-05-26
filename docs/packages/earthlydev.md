@@ -1,6 +1,6 @@
 # earthly.dev
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['earthlydev']
+const pkg = pantry.earthlydev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

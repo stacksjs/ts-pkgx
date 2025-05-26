@@ -53,7 +53,7 @@ pkgx bake@1.2.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cratesiobakers']
+const pkg = pantry.cratesiobakers
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

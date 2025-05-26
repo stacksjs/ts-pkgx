@@ -51,7 +51,7 @@ pkgx dprint@0.50.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['dprintdev']
+const pkg = pantry.dprintdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

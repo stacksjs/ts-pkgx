@@ -52,7 +52,7 @@ pkgx ksops@4.3.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['viaductaiksops']
+const pkg = pantry.viaductaiksops
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

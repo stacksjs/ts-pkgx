@@ -49,7 +49,7 @@ pkgx nghttp2.org@1.65.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['nghttp2org']
+const pkg = pantry.nghttp2org
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # isc.org
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['iscorg']
+const pkg = pantry.iscorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

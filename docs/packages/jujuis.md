@@ -48,7 +48,7 @@ pkgx juju@3.6.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jujuis']
+const pkg = pantry.jujuis
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

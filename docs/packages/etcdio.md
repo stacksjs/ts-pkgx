@@ -49,7 +49,7 @@ pkgx etcd@3.6.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['etcdio']
+const pkg = pantry.etcdio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

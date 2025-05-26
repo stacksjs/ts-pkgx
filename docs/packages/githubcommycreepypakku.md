@@ -54,7 +54,7 @@ pkgx pakku@0.5.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcommycreepypakku']
+const pkg = pantry.githubcommycreepypakku
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

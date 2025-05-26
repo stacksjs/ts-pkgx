@@ -49,7 +49,7 @@ pkgx wavpack.com@5.8.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['wavpackcom']
+const pkg = pantry.wavpackcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

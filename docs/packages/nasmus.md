@@ -47,7 +47,7 @@ pkgx nasm.us@2.16.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['nasmus']
+const pkg = pantry.nasmus
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

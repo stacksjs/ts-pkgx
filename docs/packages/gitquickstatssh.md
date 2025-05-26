@@ -62,7 +62,7 @@ These packages work well with git-quick-stats:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gitquickstatssh']
+const pkg = pantry.gitquickstatssh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

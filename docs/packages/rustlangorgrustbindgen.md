@@ -59,7 +59,7 @@ These packages work well with bindgen:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rustlangorgrustbindgen']
+const pkg = pantry.rustlangorgrustbindgen
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

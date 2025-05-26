@@ -56,7 +56,7 @@ pkgx opa@1.4.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openpolicyagentorg']
+const pkg = pantry.openpolicyagentorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

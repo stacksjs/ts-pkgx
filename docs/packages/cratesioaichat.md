@@ -52,7 +52,7 @@ pkgx aichat@0.29.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cratesioaichat']
+const pkg = pantry.cratesioaichat
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

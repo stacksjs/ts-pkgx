@@ -54,7 +54,7 @@ pkgx aspell.net@0.60.8.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['aspellnet']
+const pkg = pantry.aspellnet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

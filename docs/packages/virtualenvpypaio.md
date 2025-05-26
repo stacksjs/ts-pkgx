@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['virtualenvpypaio']
+const pkg = pantry.virtualenvpypaio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -47,7 +47,7 @@ pkgx oauth2-proxy@7.9.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['oauth2proxygithubio']
+const pkg = pantry.oauth2proxygithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -47,7 +47,7 @@ pkgx re2c@4.2.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['re2corg']
+const pkg = pantry.re2corg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

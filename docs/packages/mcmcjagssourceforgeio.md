@@ -60,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mcmcjagssourceforgeio']
+const pkg = pantry.mcmcjagssourceforgeio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

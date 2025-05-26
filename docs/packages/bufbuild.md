@@ -54,7 +54,7 @@ pkgx buf@1.54.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['bufbuild']
+const pkg = pantry.bufbuild
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

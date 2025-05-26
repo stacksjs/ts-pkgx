@@ -51,7 +51,7 @@ pkgx tree-sitter@0.25.4
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['treesittergithubio']
+const pkg = pantry.treesittergithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

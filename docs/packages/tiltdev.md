@@ -50,7 +50,7 @@ pkgx tilt@0.34.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tiltdev']
+const pkg = pantry.tiltdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

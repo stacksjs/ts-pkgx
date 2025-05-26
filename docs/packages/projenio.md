@@ -68,7 +68,7 @@ These packages work well with projen:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['projenio']
+const pkg = pantry.projenio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -54,7 +54,7 @@ pkgx mas@2.2.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcommasclimas']
+const pkg = pantry.githubcommasclimas
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

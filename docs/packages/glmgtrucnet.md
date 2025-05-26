@@ -46,7 +46,7 @@ pkgx glm.g-truc.net@1.0.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['glmgtrucnet']
+const pkg = pantry.glmgtrucnet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

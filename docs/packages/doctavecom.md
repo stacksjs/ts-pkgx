@@ -46,7 +46,7 @@ pkgx doctave@0.4.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['doctavecom']
+const pkg = pantry.doctavecom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # tb
 
-> 
+>
 
 ## Package Information
 
@@ -58,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tinybirdco']
+const pkg = pantry.tinybirdco
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ pkgx hjson@1.1.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['hjsongithubio']
+const pkg = pantry.hjsongithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

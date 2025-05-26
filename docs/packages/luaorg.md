@@ -59,7 +59,7 @@ These packages work well with lua:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['luaorg']
+const pkg = pantry.luaorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

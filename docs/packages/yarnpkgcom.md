@@ -60,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['yarnpkgcom']
+const pkg = pantry.yarnpkgcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

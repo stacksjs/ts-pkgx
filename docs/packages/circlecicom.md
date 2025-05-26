@@ -56,7 +56,7 @@ pkgx circleci@0.1.32067
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['circlecicom']
+const pkg = pantry.circlecicom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

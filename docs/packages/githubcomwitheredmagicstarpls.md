@@ -53,7 +53,7 @@ pkgx starpls@0.1.21
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomwitheredmagicstarpls']
+const pkg = pantry.githubcomwitheredmagicstarpls
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -56,7 +56,7 @@ pkgx dozzle@8.12.17
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['dozzledev']
+const pkg = pantry.dozzledev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

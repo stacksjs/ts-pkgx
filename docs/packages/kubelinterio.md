@@ -52,7 +52,7 @@ pkgx kube-linter@0.7.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kubelinterio']
+const pkg = pantry.kubelinterio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

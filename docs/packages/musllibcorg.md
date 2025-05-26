@@ -1,6 +1,6 @@
 # musl.libc.org
 
-> 
+>
 
 ## Package Information
 
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['musllibcorg']
+const pkg = pantry.musllibcorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

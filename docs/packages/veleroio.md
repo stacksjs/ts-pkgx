@@ -46,7 +46,7 @@ pkgx velero@1.16.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['veleroio']
+const pkg = pantry.veleroio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

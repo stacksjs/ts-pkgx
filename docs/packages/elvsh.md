@@ -52,7 +52,7 @@ pkgx elvish@0.21.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['elvsh']
+const pkg = pantry.elvsh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

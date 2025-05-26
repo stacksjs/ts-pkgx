@@ -46,7 +46,7 @@ pkgx liburcu@0.15.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['liburcuorg']
+const pkg = pantry.liburcuorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

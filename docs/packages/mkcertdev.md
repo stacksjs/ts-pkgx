@@ -46,7 +46,7 @@ pkgx mkcert@1.4.4
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mkcertdev']
+const pkg = pantry.mkcertdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

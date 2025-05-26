@@ -1,6 +1,6 @@
 # mpmath.org
 
-> 
+>
 
 ## Package Information
 
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mpmathorg']
+const pkg = pantry.mpmathorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

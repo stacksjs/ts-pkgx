@@ -49,7 +49,7 @@ pkgx abseil.io@20250512.0.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['abseilio']
+const pkg = pantry.abseilio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

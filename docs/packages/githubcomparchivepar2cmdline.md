@@ -56,7 +56,7 @@ pkgx par2@1.0.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomparchivepar2cmdline']
+const pkg = pantry.githubcomparchivepar2cmdline
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

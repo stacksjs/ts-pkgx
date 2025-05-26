@@ -68,7 +68,7 @@ These packages work well with f2py:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['numpyorg']
+const pkg = pantry.numpyorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

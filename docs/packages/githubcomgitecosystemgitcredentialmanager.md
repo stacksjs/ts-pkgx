@@ -68,7 +68,7 @@ These packages work well with git-credential-manager:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomgitecosystemgitcredentialmanager']
+const pkg = pantry.githubcomgitecosystemgitcredentialmanager
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

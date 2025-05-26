@@ -52,7 +52,7 @@ pkgx helm@3.18.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['helmsh']
+const pkg = pantry.helmsh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

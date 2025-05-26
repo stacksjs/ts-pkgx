@@ -1,6 +1,6 @@
 # libcap
 
-> 
+>
 
 ## Package Information
 
@@ -55,7 +55,7 @@ pkgx libcap@1.2.76
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kernelorglibcap']
+const pkg = pantry.kernelorglibcap
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

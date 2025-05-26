@@ -67,7 +67,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libraworg']
+const pkg = pantry.libraworg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

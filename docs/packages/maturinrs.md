@@ -49,7 +49,7 @@ pkgx maturin@1.8.6
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['maturinrs']
+const pkg = pantry.maturinrs
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

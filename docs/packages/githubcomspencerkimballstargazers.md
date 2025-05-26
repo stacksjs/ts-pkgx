@@ -53,7 +53,7 @@ pkgx stargazers@0.0.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomspencerkimballstargazers']
+const pkg = pantry.githubcomspencerkimballstargazers
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

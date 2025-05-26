@@ -48,7 +48,7 @@ pkgx fmt.dev@11.2.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['fmtdev']
+const pkg = pantry.fmtdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

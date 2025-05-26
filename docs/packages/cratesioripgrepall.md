@@ -63,7 +63,7 @@ These packages work well with rga:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cratesioripgrepall']
+const pkg = pantry.cratesioripgrepall
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

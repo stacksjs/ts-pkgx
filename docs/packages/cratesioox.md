@@ -52,7 +52,7 @@ pkgx ox@0.7.7
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cratesioox']
+const pkg = pantry.cratesioox
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

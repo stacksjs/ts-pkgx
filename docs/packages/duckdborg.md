@@ -49,7 +49,7 @@ pkgx duckdb@1.3.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['duckdborg']
+const pkg = pantry.duckdborg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -56,7 +56,7 @@ pkgx k9s@0.50.6
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['k9scliio']
+const pkg = pantry.k9scliio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

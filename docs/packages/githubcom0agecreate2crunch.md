@@ -53,7 +53,7 @@ pkgx create2crunch@2024.12.23
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcom0agecreate2crunch']
+const pkg = pantry.githubcom0agecreate2crunch
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

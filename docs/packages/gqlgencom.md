@@ -53,7 +53,7 @@ pkgx gqlgen@0.17.73
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gqlgencom']
+const pkg = pantry.gqlgencom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

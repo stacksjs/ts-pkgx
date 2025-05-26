@@ -74,7 +74,7 @@ pkgx cnquery@11.55.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cnqueryio']
+const pkg = pantry.cnqueryio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

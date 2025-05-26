@@ -59,7 +59,7 @@ These packages work well with cargo-tarpaulin:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cratesiocargotarpaulin']
+const pkg = pantry.cratesiocargotarpaulin
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

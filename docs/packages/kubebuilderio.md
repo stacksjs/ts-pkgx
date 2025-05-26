@@ -49,7 +49,7 @@ pkgx kubebuilder@4.6.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kubebuilderio']
+const pkg = pantry.kubebuilderio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

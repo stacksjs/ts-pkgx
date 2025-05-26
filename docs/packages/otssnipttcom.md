@@ -46,7 +46,7 @@ pkgx ots@0.3.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['otssnipttcom']
+const pkg = pantry.otssnipttcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

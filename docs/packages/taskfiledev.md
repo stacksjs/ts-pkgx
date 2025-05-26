@@ -51,7 +51,7 @@ pkgx task@3.43.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['taskfiledev']
+const pkg = pantry.taskfiledev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

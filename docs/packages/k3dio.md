@@ -49,7 +49,7 @@ pkgx k3d@5.8.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['k3dio']
+const pkg = pantry.k3dio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

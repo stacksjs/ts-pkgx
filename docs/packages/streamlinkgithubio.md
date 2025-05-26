@@ -61,7 +61,7 @@ These packages work well with streamlink:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['streamlinkgithubio']
+const pkg = pantry.streamlinkgithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

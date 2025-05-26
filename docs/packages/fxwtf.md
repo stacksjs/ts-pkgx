@@ -49,7 +49,7 @@ pkgx fx@36.0.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['fxwtf']
+const pkg = pantry.fxwtf
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # f1bonacc1.github.io
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['f1bonacc1githubio']
+const pkg = pantry.f1bonacc1githubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

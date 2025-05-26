@@ -50,7 +50,7 @@ pkgx templ@0.3.865
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['templguide']
+const pkg = pantry.templguide
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

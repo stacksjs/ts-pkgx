@@ -49,7 +49,7 @@ pkgx rclone@1.69.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rcloneorg']
+const pkg = pantry.rcloneorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

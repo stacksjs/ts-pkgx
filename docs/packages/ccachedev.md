@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ccachedev']
+const pkg = pantry.ccachedev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

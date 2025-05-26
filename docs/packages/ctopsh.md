@@ -46,7 +46,7 @@ pkgx ctop@0.7.7
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ctopsh']
+const pkg = pantry.ctopsh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

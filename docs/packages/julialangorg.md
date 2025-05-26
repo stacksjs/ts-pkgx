@@ -49,7 +49,7 @@ pkgx julia@1.11.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['julialangorg']
+const pkg = pantry.julialangorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

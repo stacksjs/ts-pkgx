@@ -57,7 +57,7 @@ pkgx xray-core@25.5.16
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xtlsgithubio']
+const pkg = pantry.xtlsgithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

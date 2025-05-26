@@ -53,7 +53,7 @@ pkgx pik@0.23.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cratesiopik']
+const pkg = pantry.cratesiopik
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -51,7 +51,7 @@ pkgx ipfs@0.35.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ipfstech']
+const pkg = pantry.ipfstech
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

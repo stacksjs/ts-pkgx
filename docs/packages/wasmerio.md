@@ -50,7 +50,7 @@ pkgx wasmer@6.0.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['wasmerio']
+const pkg = pantry.wasmerio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

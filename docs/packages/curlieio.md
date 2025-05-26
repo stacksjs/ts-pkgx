@@ -46,7 +46,7 @@ pkgx curlie@1.8.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['curlieio']
+const pkg = pantry.curlieio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # mesa3d.org
 
-> 
+>
 
 ## Package Information
 
@@ -87,7 +87,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mesa3dorg']
+const pkg = pantry.mesa3dorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

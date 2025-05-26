@@ -47,7 +47,7 @@ pkgx libuv.org@1.51.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libuvorg']
+const pkg = pantry.libuvorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

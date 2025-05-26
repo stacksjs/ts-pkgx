@@ -46,7 +46,7 @@ pkgx zeromq.org@4.3.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['zeromqorg']
+const pkg = pantry.zeromqorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

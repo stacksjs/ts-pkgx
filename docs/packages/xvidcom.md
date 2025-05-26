@@ -1,6 +1,6 @@
 # xvid.com
 
-> 
+>
 
 ## Package Information
 
@@ -46,7 +46,7 @@ pkgx xvid.com@1.3.7
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xvidcom']
+const pkg = pantry.xvidcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # elfutils.org
 
-> 
+>
 
 ## Package Information
 
@@ -72,7 +72,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['elfutilsorg']
+const pkg = pantry.elfutilsorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

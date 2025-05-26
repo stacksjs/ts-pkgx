@@ -59,7 +59,7 @@ These packages work well with rye-uv:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomlucianosrpryeuv']
+const pkg = pantry.githubcomlucianosrpryeuv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

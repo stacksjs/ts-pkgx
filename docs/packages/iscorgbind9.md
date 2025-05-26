@@ -1,6 +1,6 @@
 # bind9
 
-> 
+>
 
 ## Package Information
 
@@ -99,7 +99,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['iscorgbind9']
+const pkg = pantry.iscorgbind9
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

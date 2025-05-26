@@ -46,7 +46,7 @@ pkgx yasm@1.3.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['yasmtortallnet']
+const pkg = pantry.yasmtortallnet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

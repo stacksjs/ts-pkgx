@@ -53,7 +53,7 @@ pkgx flipt@1.58.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['fliptio']
+const pkg = pantry.fliptio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

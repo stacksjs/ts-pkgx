@@ -53,7 +53,7 @@ pkgx just@1.40.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['justsystems']
+const pkg = pantry.justsystems
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

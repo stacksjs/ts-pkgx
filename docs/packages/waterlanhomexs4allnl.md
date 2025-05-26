@@ -1,6 +1,6 @@
 # waterlan.home.xs4all.nl
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['waterlanhomexs4allnl']
+const pkg = pantry.waterlanhomexs4allnl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

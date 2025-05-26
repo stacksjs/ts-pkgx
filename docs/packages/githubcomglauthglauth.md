@@ -1,6 +1,6 @@
 # github.com/glauth/glauth
 
-> 
+>
 
 ## Package Information
 
@@ -52,7 +52,7 @@ pkgx github.com/glauth/glauth@2.4.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomglauthglauth']
+const pkg = pantry.githubcomglauthglauth
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

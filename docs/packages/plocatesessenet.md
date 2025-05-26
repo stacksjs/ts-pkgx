@@ -1,6 +1,6 @@
 # plocate.sesse.net
 
-> 
+>
 
 ## Package Information
 
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['plocatesessenet']
+const pkg = pantry.plocatesessenet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

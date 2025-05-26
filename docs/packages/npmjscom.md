@@ -64,7 +64,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['npmjscom']
+const pkg = pantry.npmjscom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

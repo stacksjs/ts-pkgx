@@ -52,7 +52,7 @@ pkgx copa@0.10.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['projectcopaceticgithubio']
+const pkg = pantry.projectcopaceticgithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

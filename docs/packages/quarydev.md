@@ -1,6 +1,6 @@
 # quary.dev
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['quarydev']
+const pkg = pantry.quarydev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

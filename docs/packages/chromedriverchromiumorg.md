@@ -1,6 +1,6 @@
 # chromedriver
 
-> 
+>
 
 ## Package Information
 
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['chromedriverchromiumorg']
+const pkg = pantry.chromedriverchromiumorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

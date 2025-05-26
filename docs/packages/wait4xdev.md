@@ -53,7 +53,7 @@ These packages work well with wait4x:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['wait4xdev']
+const pkg = pantry.wait4xdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

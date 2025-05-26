@@ -53,7 +53,7 @@ pkgx s5cmd@2.3.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcompeaks5cmd']
+const pkg = pantry.githubcompeaks5cmd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

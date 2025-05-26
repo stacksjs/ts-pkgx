@@ -79,7 +79,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['solanacom']
+const pkg = pantry.solanacom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

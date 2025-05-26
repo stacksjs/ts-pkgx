@@ -54,7 +54,7 @@ pkgx tailwindcss@4.1.7
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tailwindcsscom']
+const pkg = pantry.tailwindcsscom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

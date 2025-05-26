@@ -48,7 +48,7 @@ pkgx pinniped@0.39.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pinnipeddev']
+const pkg = pantry.pinnipeddev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

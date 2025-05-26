@@ -51,7 +51,7 @@ pkgx biome@1.9.4
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['biomejsdev']
+const pkg = pantry.biomejsdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

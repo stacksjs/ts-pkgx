@@ -46,7 +46,7 @@ pkgx lz4@1.10.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['lz4org']
+const pkg = pantry.lz4org
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

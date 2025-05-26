@@ -82,7 +82,7 @@ pkgx digger@0.6.101
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['diggerdev']
+const pkg = pantry.diggerdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

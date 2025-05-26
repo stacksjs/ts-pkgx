@@ -120,7 +120,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['terragruntgruntworkio']
+const pkg = pantry.terragruntgruntworkio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

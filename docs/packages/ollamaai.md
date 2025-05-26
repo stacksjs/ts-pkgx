@@ -70,7 +70,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ollamaai']
+const pkg = pantry.ollamaai
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

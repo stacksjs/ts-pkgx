@@ -55,7 +55,7 @@ pkgx sing-box@1.11.11
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['singboxapp']
+const pkg = pantry.singboxapp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

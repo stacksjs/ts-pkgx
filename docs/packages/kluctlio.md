@@ -48,7 +48,7 @@ pkgx kluctl@2.26.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kluctlio']
+const pkg = pantry.kluctlio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ pkgx rome@0.4.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rometools']
+const pkg = pantry.rometools
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

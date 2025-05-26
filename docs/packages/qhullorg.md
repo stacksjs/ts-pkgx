@@ -51,7 +51,7 @@ pkgx qhull.org@8.0.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['qhullorg']
+const pkg = pantry.qhullorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

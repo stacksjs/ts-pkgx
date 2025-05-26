@@ -58,7 +58,7 @@ pkgx cedar@4.4.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cedarpolicycomcli']
+const pkg = pantry.cedarpolicycomcli
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

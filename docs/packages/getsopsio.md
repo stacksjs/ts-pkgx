@@ -53,7 +53,7 @@ pkgx sops@3.10.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['getsopsio']
+const pkg = pantry.getsopsio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

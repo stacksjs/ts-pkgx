@@ -47,7 +47,7 @@ pkgx SeaweedFS@3.87.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['seaweedfscom']
+const pkg = pantry.seaweedfscom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -48,7 +48,7 @@ pkgx skaffold@2.16.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['skaffolddev']
+const pkg = pantry.skaffolddev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

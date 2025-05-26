@@ -55,7 +55,7 @@ pkgx railway@4.5.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['railwayapp']
+const pkg = pantry.railwayapp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # libdrm
 
-> 
+>
 
 ## Package Information
 
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['drifreedesktoporg']
+const pkg = pantry.drifreedesktoporg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

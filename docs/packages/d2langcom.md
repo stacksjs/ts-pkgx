@@ -48,7 +48,7 @@ pkgx d2@0.7.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['d2langcom']
+const pkg = pantry.d2langcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

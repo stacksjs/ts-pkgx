@@ -51,7 +51,7 @@ pkgx gif@5.2.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['giflibsourceforgeio']
+const pkg = pantry.giflibsourceforgeio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

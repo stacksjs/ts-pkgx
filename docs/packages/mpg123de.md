@@ -48,7 +48,7 @@ pkgx mpg123@1.32.10
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mpg123de']
+const pkg = pantry.mpg123de
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

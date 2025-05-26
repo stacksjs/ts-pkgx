@@ -56,7 +56,7 @@ pkgx nak@0.14.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomfiatjafnak']
+const pkg = pantry.githubcomfiatjafnak
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

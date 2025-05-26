@@ -58,7 +58,7 @@ pkgx mailpit@1.25.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mailpitaxllentorg']
+const pkg = pantry.mailpitaxllentorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

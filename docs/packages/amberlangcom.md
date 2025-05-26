@@ -57,7 +57,7 @@ These packages work well with amber:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['amberlangcom']
+const pkg = pantry.amberlangcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

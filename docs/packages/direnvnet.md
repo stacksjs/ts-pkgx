@@ -47,7 +47,7 @@ pkgx direnv@2.36.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['direnvnet']
+const pkg = pantry.direnvnet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

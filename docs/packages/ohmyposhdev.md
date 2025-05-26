@@ -106,7 +106,7 @@ pkgx oh-my-posh@25.23.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ohmyposhdev']
+const pkg = pantry.ohmyposhdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

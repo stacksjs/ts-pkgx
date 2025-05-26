@@ -1,6 +1,6 @@
 # dotenvx
 
-> 
+>
 
 ## Package Information
 
@@ -85,7 +85,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['dotenvxcom']
+const pkg = pantry.dotenvxcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

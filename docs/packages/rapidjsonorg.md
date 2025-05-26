@@ -46,7 +46,7 @@ pkgx rapidjson.org@1.1.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rapidjsonorg']
+const pkg = pantry.rapidjsonorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

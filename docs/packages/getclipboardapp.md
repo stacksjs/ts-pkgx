@@ -63,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['getclipboardapp']
+const pkg = pantry.getclipboardapp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -55,7 +55,7 @@ pkgx wunderctl@0.181.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['wundergraphcom']
+const pkg = pantry.wundergraphcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

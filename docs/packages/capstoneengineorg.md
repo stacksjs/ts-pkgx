@@ -53,7 +53,7 @@ pkgx cstool@5.0.6
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['capstoneengineorg']
+const pkg = pantry.capstoneengineorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

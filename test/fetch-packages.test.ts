@@ -1,6 +1,6 @@
 import type { PkgxPackage } from '../src/types'
 import { describe, expect, mock, test } from 'bun:test'
-import { PACKAGE_ALIASES } from '../src/fetch'
+import { PACKAGE_ALIASES } from '../src/consts'
 import { convertDomainToFileName } from '../src/utils'
 
 // Mock data for fetch tests

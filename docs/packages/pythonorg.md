@@ -104,7 +104,7 @@ These packages work well with python:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pythonorg']
+const pkg = pantry.pythonorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

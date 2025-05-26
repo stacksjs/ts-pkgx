@@ -85,7 +85,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pnpmio']
+const pkg = pantry.pnpmio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -49,7 +49,7 @@ pkgx jumppad@0.20.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jumppaddev']
+const pkg = pantry.jumppaddev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

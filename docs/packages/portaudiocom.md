@@ -46,7 +46,7 @@ pkgx PortAudio@19.7.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['portaudiocom']
+const pkg = pantry.portaudiocom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

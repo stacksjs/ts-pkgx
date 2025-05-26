@@ -1,6 +1,6 @@
 # harding.motd.ca
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['hardingmotdca']
+const pkg = pantry.hardingmotdca
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

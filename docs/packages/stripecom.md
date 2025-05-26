@@ -56,7 +56,7 @@ pkgx stripe@1.27.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['stripecom']
+const pkg = pantry.stripecom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

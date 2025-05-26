@@ -52,7 +52,7 @@ pkgx koyeb@5.5.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['koyebcom']
+const pkg = pantry.koyebcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

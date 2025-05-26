@@ -52,7 +52,7 @@ pkgx ducker@0.3.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cratesioducker']
+const pkg = pantry.cratesioducker
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

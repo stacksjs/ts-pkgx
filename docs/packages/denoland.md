@@ -83,7 +83,7 @@ These packages work well with deno:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['denoland']
+const pkg = pantry.denoland
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

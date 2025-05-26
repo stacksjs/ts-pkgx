@@ -1,6 +1,6 @@
 # ijg.org
 
-> 
+>
 
 ## Package Information
 
@@ -50,7 +50,7 @@ pkgx ijg.org@9f
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ijgorg']
+const pkg = pantry.ijgorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

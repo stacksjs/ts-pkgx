@@ -80,7 +80,7 @@ pkgx odigos@1.0.189
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['odigosio']
+const pkg = pantry.odigosio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

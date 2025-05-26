@@ -46,7 +46,7 @@ pkgx taplo@0.10.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['taplotamasfedev']
+const pkg = pantry.taplotamasfedev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

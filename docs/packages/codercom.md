@@ -59,7 +59,7 @@ pkgx coder@2.22.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['codercom']
+const pkg = pantry.codercom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # telnet
 
-> 
+>
 
 ## Package Information
 
@@ -53,7 +53,7 @@ pkgx telnet@306.0.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['applecomremote_cmds']
+const pkg = pantry.applecomremote_cmds
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -67,7 +67,7 @@ These packages work well with pipenv:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pipenvpypaio']
+const pkg = pantry.pipenvpypaio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

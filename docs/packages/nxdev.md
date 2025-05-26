@@ -1,6 +1,6 @@
 # nx.dev
 
-> 
+>
 
 ## Package Information
 
@@ -81,7 +81,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['nxdev']
+const pkg = pantry.nxdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

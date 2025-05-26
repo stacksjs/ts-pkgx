@@ -50,7 +50,7 @@ pkgx starship@1.23.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['starshiprs']
+const pkg = pantry.starshiprs
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

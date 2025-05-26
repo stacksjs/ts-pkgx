@@ -1,6 +1,6 @@
 # jugit.fz-juelich.de
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jugitfzjuelichde']
+const pkg = pantry.jugitfzjuelichde
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

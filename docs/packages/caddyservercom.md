@@ -47,7 +47,7 @@ pkgx caddy@2.10.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['caddyservercom']
+const pkg = pantry.caddyservercom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

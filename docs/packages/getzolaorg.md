@@ -53,7 +53,7 @@ pkgx zola@0.20.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['getzolaorg']
+const pkg = pantry.getzolaorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

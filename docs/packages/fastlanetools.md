@@ -63,7 +63,7 @@ These packages work well with fastlane:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['fastlanetools']
+const pkg = pantry.fastlanetools
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

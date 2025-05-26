@@ -1,6 +1,6 @@
 # reacher.email
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['reacheremail']
+const pkg = pantry.reacheremail
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

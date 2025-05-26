@@ -53,7 +53,7 @@ pkgx xmlwf@2.7.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libexpatgithubio']
+const pkg = pantry.libexpatgithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

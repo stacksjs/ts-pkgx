@@ -68,7 +68,7 @@ pkgx ruff@0.11.11
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['astralshruff']
+const pkg = pantry.astralshruff
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

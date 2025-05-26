@@ -52,7 +52,7 @@ pkgx squawk@2.8.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['squawkhqcom']
+const pkg = pantry.squawkhqcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

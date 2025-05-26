@@ -53,7 +53,7 @@ pkgx goreleaser@2.9.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['goreleasercom']
+const pkg = pantry.goreleasercom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

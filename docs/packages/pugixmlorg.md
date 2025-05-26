@@ -46,7 +46,7 @@ pkgx pugixml.org@1.15.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pugixmlorg']
+const pkg = pantry.pugixmlorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

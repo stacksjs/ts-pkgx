@@ -76,7 +76,7 @@ pkgx bun@1.2.14
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['bunsh']
+const pkg = pantry.bunsh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

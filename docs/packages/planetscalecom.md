@@ -64,7 +64,7 @@ pkgx pscale@0.241.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['planetscalecom']
+const pkg = pantry.planetscalecom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

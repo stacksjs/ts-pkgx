@@ -47,7 +47,7 @@ pkgx trip@0.13.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['trippyclirs']
+const pkg = pantry.trippyclirs
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

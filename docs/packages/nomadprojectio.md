@@ -48,7 +48,7 @@ pkgx nomad@1.10.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['nomadprojectio']
+const pkg = pantry.nomadprojectio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

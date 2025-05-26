@@ -47,7 +47,7 @@ pkgx aux4@5.0.14
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['aux4io']
+const pkg = pantry.aux4io
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

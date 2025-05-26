@@ -53,7 +53,7 @@ pkgx scw@2.39.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['scalewaycom']
+const pkg = pantry.scalewaycom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

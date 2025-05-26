@@ -48,7 +48,7 @@ pkgx carapace@1.3.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['carapacesh']
+const pkg = pantry.carapacesh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -52,7 +52,7 @@ pkgx edgedb@7.4.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['edgedbcom']
+const pkg = pantry.edgedbcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

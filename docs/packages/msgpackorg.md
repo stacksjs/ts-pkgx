@@ -46,7 +46,7 @@ pkgx msgpack.org@6.0.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['msgpackorg']
+const pkg = pantry.msgpackorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

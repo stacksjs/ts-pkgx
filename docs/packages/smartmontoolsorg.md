@@ -47,7 +47,7 @@ pkgx smartmontools.org@7.5.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['smartmontoolsorg']
+const pkg = pantry.smartmontoolsorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

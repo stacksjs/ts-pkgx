@@ -60,7 +60,7 @@ pkgx chezmoi@2.62.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['chezmoiio']
+const pkg = pantry.chezmoiio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

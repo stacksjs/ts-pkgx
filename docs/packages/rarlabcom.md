@@ -1,6 +1,6 @@
 # unrar
 
-> 
+>
 
 ## Package Information
 
@@ -55,7 +55,7 @@ pkgx unrar@7.1.6
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rarlabcom']
+const pkg = pantry.rarlabcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

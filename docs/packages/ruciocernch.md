@@ -1,6 +1,6 @@
 # rucio.cern.ch
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ruciocernch']
+const pkg = pantry.ruciocernch
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

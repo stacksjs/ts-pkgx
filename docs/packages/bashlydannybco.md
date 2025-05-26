@@ -61,7 +61,7 @@ These packages work well with bashly:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['bashlydannybco']
+const pkg = pantry.bashlydannybco
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

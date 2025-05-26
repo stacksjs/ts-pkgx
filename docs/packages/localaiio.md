@@ -66,7 +66,7 @@ These packages work well with LocalAI:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['localaiio']
+const pkg = pantry.localaiio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

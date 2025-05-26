@@ -1,6 +1,6 @@
 # cmocka.org
 
-> 
+>
 
 ## Package Information
 
@@ -46,7 +46,7 @@ pkgx cmocka.org@1.1.7
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cmockaorg']
+const pkg = pantry.cmockaorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

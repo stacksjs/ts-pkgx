@@ -72,7 +72,7 @@ These packages work well with open-mpi.org:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openmpiorg']
+const pkg = pantry.openmpiorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

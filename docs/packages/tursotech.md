@@ -63,7 +63,7 @@ pkgx turso@1.0.10
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tursotech']
+const pkg = pantry.tursotech
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

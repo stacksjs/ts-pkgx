@@ -1,6 +1,6 @@
 # geoff.greer.fm
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['geoffgreerfm']
+const pkg = pantry.geoffgreerfm
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

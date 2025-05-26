@@ -170,7 +170,7 @@ pkgx tailcall@1.6.11
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tailcallrun']
+const pkg = pantry.tailcallrun
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

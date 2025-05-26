@@ -53,7 +53,7 @@ pkgx usque@1.1.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomdiniboy1123usque']
+const pkg = pantry.githubcomdiniboy1123usque
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

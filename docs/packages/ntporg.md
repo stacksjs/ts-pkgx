@@ -1,6 +1,6 @@
 # ntp.org
 
-> 
+>
 
 ## Package Information
 
@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ntporg']
+const pkg = pantry.ntporg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

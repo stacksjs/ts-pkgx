@@ -53,7 +53,7 @@ pkgx nex@2021.3.30
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomblynnnex']
+const pkg = pantry.githubcomblynnnex
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

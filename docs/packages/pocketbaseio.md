@@ -61,7 +61,7 @@ pkgx pocketbase@0.28.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pocketbaseio']
+const pkg = pantry.pocketbaseio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

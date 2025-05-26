@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['fftworg']
+const pkg = pantry.fftworg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

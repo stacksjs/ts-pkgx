@@ -1,6 +1,6 @@
 # soxr.sourceforge.net
 
-> 
+>
 
 ## Package Information
 
@@ -46,7 +46,7 @@ pkgx soxr.sourceforge.net@0.1.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['soxrsourceforgenet']
+const pkg = pantry.soxrsourceforgenet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

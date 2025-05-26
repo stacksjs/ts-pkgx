@@ -79,7 +79,7 @@ These packages work well with ruby-lang.org:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rubylangorg']
+const pkg = pantry.rubylangorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

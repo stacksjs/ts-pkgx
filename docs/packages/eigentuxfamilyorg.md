@@ -1,6 +1,6 @@
 # eigen.tuxfamily.org
 
-> 
+>
 
 ## Package Information
 
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['eigentuxfamilyorg']
+const pkg = pantry.eigentuxfamilyorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

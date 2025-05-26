@@ -49,7 +49,7 @@ pkgx spawn.link@2.40.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['spawnlink']
+const pkg = pantry.spawnlink
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

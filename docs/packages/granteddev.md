@@ -53,7 +53,7 @@ pkgx granted@0.38.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['granteddev']
+const pkg = pantry.granteddev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

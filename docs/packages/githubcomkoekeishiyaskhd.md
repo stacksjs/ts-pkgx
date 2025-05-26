@@ -53,7 +53,7 @@ pkgx skhd@0.3.9
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomkoekeishiyaskhd']
+const pkg = pantry.githubcomkoekeishiyaskhd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

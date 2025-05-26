@@ -47,7 +47,7 @@ pkgx glew.sourceforge.io@2.2.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['glewsourceforgeio']
+const pkg = pantry.glewsourceforgeio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -53,7 +53,7 @@ pkgx kubectl-cnpg@1.26.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cloudnativepgio']
+const pkg = pantry.cloudnativepgio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

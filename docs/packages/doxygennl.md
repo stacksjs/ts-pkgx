@@ -47,7 +47,7 @@ pkgx doxygen@1.14.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['doxygennl']
+const pkg = pantry.doxygennl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

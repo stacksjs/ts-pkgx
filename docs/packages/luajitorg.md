@@ -47,7 +47,7 @@ pkgx luajit@2.1.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['luajitorg']
+const pkg = pantry.luajitorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

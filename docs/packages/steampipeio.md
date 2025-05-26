@@ -52,7 +52,7 @@ pkgx steampipe@1.1.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['steampipeio']
+const pkg = pantry.steampipeio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

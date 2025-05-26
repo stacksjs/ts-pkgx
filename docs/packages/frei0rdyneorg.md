@@ -1,6 +1,6 @@
 # frei0r.dyne.org
 
-> 
+>
 
 ## Package Information
 
@@ -46,7 +46,7 @@ pkgx frei0r.dyne.org@1.8.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['frei0rdyneorg']
+const pkg = pantry.frei0rdyneorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -52,7 +52,7 @@ pkgx gr2fonttest@1.3.14
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['graphitesilorg']
+const pkg = pantry.graphitesilorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

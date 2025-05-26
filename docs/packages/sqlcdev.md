@@ -46,7 +46,7 @@ pkgx sqlc@1.29.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sqlcdev']
+const pkg = pantry.sqlcdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

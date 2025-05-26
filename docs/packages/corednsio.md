@@ -47,7 +47,7 @@ pkgx coredns@1.12.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['corednsio']
+const pkg = pantry.corednsio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

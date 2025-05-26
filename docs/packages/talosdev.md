@@ -57,7 +57,7 @@ pkgx talosctl@1.10.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['talosdev']
+const pkg = pantry.talosdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

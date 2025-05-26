@@ -46,7 +46,7 @@ pkgx libusb.info@1.0.28
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libusbinfo']
+const pkg = pantry.libusbinfo
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

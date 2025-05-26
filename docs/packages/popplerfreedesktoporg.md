@@ -1,6 +1,6 @@
 # poppler.freedesktop.org
 
-> 
+>
 
 ## Package Information
 
@@ -85,7 +85,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['popplerfreedesktoporg']
+const pkg = pantry.popplerfreedesktoporg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

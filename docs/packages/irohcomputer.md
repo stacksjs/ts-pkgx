@@ -52,7 +52,7 @@ pkgx iroh@0.35.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['irohcomputer']
+const pkg = pantry.irohcomputer
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

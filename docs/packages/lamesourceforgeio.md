@@ -46,7 +46,7 @@ pkgx lame@3.100.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['lamesourceforgeio']
+const pkg = pantry.lamesourceforgeio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

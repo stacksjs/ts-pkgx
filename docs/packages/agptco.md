@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['agptco']
+const pkg = pantry.agptco
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

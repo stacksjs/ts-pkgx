@@ -1,6 +1,6 @@
 # opencore-amr.sourceforge.io
 
-> 
+>
 
 ## Package Information
 
@@ -46,7 +46,7 @@ pkgx opencore-amr.sourceforge.io@0.1.6
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['opencoreamrsourceforgeio']
+const pkg = pantry.opencoreamrsourceforgeio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

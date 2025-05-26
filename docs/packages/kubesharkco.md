@@ -56,7 +56,7 @@ pkgx kubeshark@72.3.83
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kubesharkco']
+const pkg = pantry.kubesharkco
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

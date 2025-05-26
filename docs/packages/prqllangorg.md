@@ -53,7 +53,7 @@ pkgx prql@0.13.4
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['prqllangorg']
+const pkg = pantry.prqllangorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

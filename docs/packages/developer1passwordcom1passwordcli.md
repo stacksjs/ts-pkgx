@@ -1,6 +1,6 @@
 # 1Password CLI
 
-> 
+>
 
 ## Package Information
 
@@ -53,7 +53,7 @@ pkgx 1Password CLI@2.31.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['developer1passwordcom1passwordcli']
+const pkg = pantry.developer1passwordcom1passwordcli
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -75,7 +75,7 @@ pkgx hugo@0.147.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gohugoio']
+const pkg = pantry.gohugoio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ pkgx strace@6.2.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['straceio']
+const pkg = pantry.straceio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

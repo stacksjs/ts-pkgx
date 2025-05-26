@@ -48,7 +48,7 @@ pkgx packer@1.12.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['packerio']
+const pkg = pantry.packerio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

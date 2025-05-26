@@ -46,7 +46,7 @@ pkgx micro@2.0.14
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['microeditorgithubio']
+const pkg = pantry.microeditorgithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

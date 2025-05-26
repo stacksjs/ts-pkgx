@@ -52,7 +52,7 @@ pkgx sdkman-init.sh@5.19.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sdkmanio']
+const pkg = pantry.sdkmanio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

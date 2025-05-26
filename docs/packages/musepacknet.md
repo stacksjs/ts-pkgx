@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['musepacknet']
+const pkg = pantry.musepacknet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -53,7 +53,7 @@ pkgx crates.io/flamegraph@0.6.8
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cratesioflamegraph']
+const pkg = pantry.cratesioflamegraph
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

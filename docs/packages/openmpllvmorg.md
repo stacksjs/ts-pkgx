@@ -58,7 +58,7 @@ pkgx libomp@20.1.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openmpllvmorg']
+const pkg = pantry.openmpllvmorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -63,7 +63,7 @@ pkgx dagger@0.18.8
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['daggerio']
+const pkg = pantry.daggerio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

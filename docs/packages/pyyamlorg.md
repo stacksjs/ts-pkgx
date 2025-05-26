@@ -46,7 +46,7 @@ pkgx pyyaml.org@0.2.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pyyamlorg']
+const pkg = pantry.pyyamlorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

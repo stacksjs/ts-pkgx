@@ -63,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openinterpretercom']
+const pkg = pantry.openinterpretercom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

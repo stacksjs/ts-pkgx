@@ -46,7 +46,7 @@ pkgx gflags.github.io@2.2.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gflagsgithubio']
+const pkg = pantry.gflagsgithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

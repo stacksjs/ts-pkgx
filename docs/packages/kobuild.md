@@ -46,7 +46,7 @@ pkgx ko@0.18.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kobuild']
+const pkg = pantry.kobuild
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

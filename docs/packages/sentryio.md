@@ -66,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sentryio']
+const pkg = pantry.sentryio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

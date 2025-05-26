@@ -46,7 +46,7 @@ pkgx fury@0.23.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['furyco']
+const pkg = pantry.furyco
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

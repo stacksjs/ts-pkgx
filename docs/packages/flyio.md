@@ -124,7 +124,7 @@ pkgx fly@0.3.130
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['flyio']
+const pkg = pantry.flyio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

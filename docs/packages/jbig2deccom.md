@@ -46,7 +46,7 @@ pkgx jbig2dec@0.19.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jbig2deccom']
+const pkg = pantry.jbig2deccom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

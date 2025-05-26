@@ -1,6 +1,6 @@
 # github.com/licensee/licensed
 
-> 
+>
 
 ## Package Information
 
@@ -69,7 +69,7 @@ These packages work well with github.com/licensee/licensed:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcomlicenseelicensed']
+const pkg = pantry.githubcomlicenseelicensed
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

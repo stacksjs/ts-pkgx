@@ -47,7 +47,7 @@ pkgx convco@0.6.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['convcogithubio']
+const pkg = pantry.convcogithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

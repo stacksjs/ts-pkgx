@@ -70,7 +70,7 @@ These packages work well with crystal:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['crystallangorg']
+const pkg = pantry.crystallangorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

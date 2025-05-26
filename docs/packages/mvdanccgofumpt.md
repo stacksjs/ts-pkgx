@@ -52,7 +52,7 @@ pkgx gofumpt@0.8.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mvdanccgofumpt']
+const pkg = pantry.mvdanccgofumpt
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

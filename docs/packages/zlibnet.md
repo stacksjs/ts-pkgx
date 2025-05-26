@@ -46,7 +46,7 @@ pkgx zlib.net@1.3.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['zlibnet']
+const pkg = pantry.zlibnet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

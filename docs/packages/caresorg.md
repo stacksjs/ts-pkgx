@@ -1,6 +1,6 @@
 # c-ares.org
 
-> 
+>
 
 ## Package Information
 
@@ -51,7 +51,7 @@ pkgx c-ares.org@1.34.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['caresorg']
+const pkg = pantry.caresorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

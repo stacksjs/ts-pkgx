@@ -47,7 +47,7 @@ pkgx jsonnet@0.21.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jsonnetorg']
+const pkg = pantry.jsonnetorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

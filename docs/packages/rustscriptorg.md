@@ -53,7 +53,7 @@ These packages work well with rust-script:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rustscriptorg']
+const pkg = pantry.rustscriptorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

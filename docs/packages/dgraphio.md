@@ -47,7 +47,7 @@ pkgx dgraph@24.1.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['dgraphio']
+const pkg = pantry.dgraphio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

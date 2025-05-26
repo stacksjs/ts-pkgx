@@ -56,7 +56,7 @@ pkgx hasura@2.48.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['hasuraio']
+const pkg = pantry.hasuraio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['microcksio']
+const pkg = pantry.microcksio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

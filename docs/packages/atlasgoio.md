@@ -49,7 +49,7 @@ pkgx atlas@0.33.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['atlasgoio']
+const pkg = pantry.atlasgoio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

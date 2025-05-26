@@ -62,7 +62,7 @@ pkgx ast-grep.github.io@0.38.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['astgrepgithubio']
+const pkg = pantry.astgrepgithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

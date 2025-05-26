@@ -64,7 +64,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['langchaincom']
+const pkg = pantry.langchaincom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

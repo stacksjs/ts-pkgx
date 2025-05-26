@@ -54,7 +54,7 @@ pkgx geos-config@3.13.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libgeosorg']
+const pkg = pantry.libgeosorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

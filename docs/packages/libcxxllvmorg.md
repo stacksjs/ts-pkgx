@@ -53,7 +53,7 @@ pkgx libcxx.llvm.org@20.1.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libcxxllvmorg']
+const pkg = pantry.libcxxllvmorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -52,7 +52,7 @@ pkgx samply@0.13.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cratesiosamply']
+const pkg = pantry.cratesiosamply
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ pkgx xplr@1.0.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xplrdev']
+const pkg = pantry.xplrdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

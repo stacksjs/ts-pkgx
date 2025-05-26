@@ -99,7 +99,7 @@ These packages work well with astral.sh/uv:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['astralshuv']
+const pkg = pantry.astralshuv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

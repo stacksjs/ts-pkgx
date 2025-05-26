@@ -63,7 +63,7 @@ These packages work well with bytebase:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['bytebasecom']
+const pkg = pantry.bytebasecom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

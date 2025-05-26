@@ -74,7 +74,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['grpcio']
+const pkg = pantry.grpcio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

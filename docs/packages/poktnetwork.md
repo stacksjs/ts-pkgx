@@ -53,7 +53,7 @@ pkgx pocket@0.12.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['poktnetwork']
+const pkg = pantry.poktnetwork
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

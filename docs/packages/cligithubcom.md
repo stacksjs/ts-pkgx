@@ -66,7 +66,7 @@ pkgx gh@2.73.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cligithubcom']
+const pkg = pantry.cligithubcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

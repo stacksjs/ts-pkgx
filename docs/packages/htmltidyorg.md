@@ -52,7 +52,7 @@ pkgx tidy@5.8.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['htmltidyorg']
+const pkg = pantry.htmltidyorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

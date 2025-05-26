@@ -80,7 +80,7 @@ These packages work well with rust:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rustlangorg']
+const pkg = pantry.rustlangorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

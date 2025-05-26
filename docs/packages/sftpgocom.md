@@ -47,7 +47,7 @@ pkgx sftpgo@2.6.6
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sftpgocom']
+const pkg = pantry.sftpgocom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

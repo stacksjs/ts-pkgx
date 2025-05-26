@@ -1,6 +1,6 @@
 # wayland
 
-> 
+>
 
 ## Package Information
 
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['waylandfreedesktoporg']
+const pkg = pantry.waylandfreedesktoporg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

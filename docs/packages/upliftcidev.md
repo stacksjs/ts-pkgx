@@ -46,7 +46,7 @@ pkgx uplift@2.25.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['upliftcidev']
+const pkg = pantry.upliftcidev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

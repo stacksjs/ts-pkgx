@@ -48,7 +48,7 @@ pkgx logdy@0.16.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['logdydev']
+const pkg = pantry.logdydev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

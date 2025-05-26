@@ -1,6 +1,6 @@
 # docbook.org
 
-> 
+>
 
 ## Package Information
 
@@ -46,7 +46,7 @@ pkgx docbook.org@5.1.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['docbookorg']
+const pkg = pantry.docbookorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

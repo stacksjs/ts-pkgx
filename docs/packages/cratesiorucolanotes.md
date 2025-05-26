@@ -53,7 +53,7 @@ pkgx rucola@0.5.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cratesiorucolanotes']
+const pkg = pantry.cratesiorucolanotes
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

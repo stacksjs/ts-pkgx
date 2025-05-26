@@ -56,7 +56,7 @@ pkgx tart@2.27.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tartrun']
+const pkg = pantry.tartrun
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

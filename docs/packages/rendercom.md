@@ -47,7 +47,7 @@ pkgx render@0.1.11
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rendercom']
+const pkg = pantry.rendercom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

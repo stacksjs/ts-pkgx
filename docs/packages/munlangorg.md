@@ -60,7 +60,7 @@ These packages work well with mun:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['munlangorg']
+const pkg = pantry.munlangorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

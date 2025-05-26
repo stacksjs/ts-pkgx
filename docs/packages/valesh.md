@@ -54,7 +54,7 @@ pkgx vale@3.11.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['valesh']
+const pkg = pantry.valesh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

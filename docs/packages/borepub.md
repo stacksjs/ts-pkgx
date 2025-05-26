@@ -46,7 +46,7 @@ pkgx bore@0.5.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['borepub']
+const pkg = pantry.borepub
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

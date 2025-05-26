@@ -68,7 +68,7 @@ These packages work well with elizaOS:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['elizaosgithubio']
+const pkg = pantry.elizaosgithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -47,7 +47,7 @@ pkgx zig@0.14.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ziglangorg']
+const pkg = pantry.ziglangorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

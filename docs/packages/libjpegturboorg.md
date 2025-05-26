@@ -52,7 +52,7 @@ pkgx libjpeg-turbo.org@3.1.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libjpegturboorg']
+const pkg = pantry.libjpegturboorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

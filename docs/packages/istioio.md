@@ -59,7 +59,7 @@ pkgx istioctl@1.26.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['istioio']
+const pkg = pantry.istioio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

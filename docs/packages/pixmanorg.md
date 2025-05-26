@@ -1,6 +1,6 @@
 # pixman.org
 
-> 
+>
 
 ## Package Information
 
@@ -46,7 +46,7 @@ pkgx pixman.org@0.40.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pixmanorg']
+const pkg = pantry.pixmanorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

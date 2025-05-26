@@ -53,7 +53,7 @@ pkgx hx@25.1.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['helixeditorcom']
+const pkg = pantry.helixeditorcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # groovy-lang.org
 
-> 
+>
 
 ## Package Information
 
@@ -68,7 +68,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['groovylangorg']
+const pkg = pantry.groovylangorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

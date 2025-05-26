@@ -83,7 +83,7 @@ pkgx perl.org@5.40.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['perlorg']
+const pkg = pantry.perlorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

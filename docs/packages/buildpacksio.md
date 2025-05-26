@@ -54,7 +54,7 @@ pkgx pack@0.37.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['buildpacksio']
+const pkg = pantry.buildpacksio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

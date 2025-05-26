@@ -65,7 +65,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mpvio']
+const pkg = pantry.mpvio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

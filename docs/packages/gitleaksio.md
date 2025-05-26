@@ -51,7 +51,7 @@ pkgx gitleaks@8.26.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gitleaksio']
+const pkg = pantry.gitleaksio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

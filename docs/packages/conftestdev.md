@@ -49,7 +49,7 @@ pkgx conftest@0.60.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['conftestdev']
+const pkg = pantry.conftestdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

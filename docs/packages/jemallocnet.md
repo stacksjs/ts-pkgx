@@ -1,6 +1,6 @@
 # jemalloc.net
 
-> 
+>
 
 ## Package Information
 
@@ -46,7 +46,7 @@ pkgx jemalloc.net@5.3.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jemallocnet']
+const pkg = pantry.jemallocnet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

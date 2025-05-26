@@ -55,7 +55,7 @@ pkgx atlantis@0.34.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['runatlantisio']
+const pkg = pantry.runatlantisio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

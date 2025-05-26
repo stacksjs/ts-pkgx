@@ -1,6 +1,6 @@
 # hboehm.info
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['hboehminfo']
+const pkg = pantry.hboehminfo
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

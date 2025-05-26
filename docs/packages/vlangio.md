@@ -48,7 +48,7 @@ pkgx v@0.4.10
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['vlangio']
+const pkg = pantry.vlangio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

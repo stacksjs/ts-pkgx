@@ -46,7 +46,7 @@ pkgx duk@2.7.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['duktapeorg']
+const pkg = pantry.duktapeorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

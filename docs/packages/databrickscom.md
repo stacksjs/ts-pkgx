@@ -56,7 +56,7 @@ pkgx databricks@0.252.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['databrickscom']
+const pkg = pantry.databrickscom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ pkgx ninja@1.12.1
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ninjabuildorg']
+const pkg = pantry.ninjabuildorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

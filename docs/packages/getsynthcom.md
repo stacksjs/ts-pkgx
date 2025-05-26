@@ -52,7 +52,7 @@ pkgx synth@0.6.9
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['getsynthcom']
+const pkg = pantry.getsynthcom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

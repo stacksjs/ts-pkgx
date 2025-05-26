@@ -46,7 +46,7 @@ pkgx opus-codec.org@1.5.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['opuscodecorg']
+const pkg = pantry.opuscodecorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

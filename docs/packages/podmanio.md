@@ -70,7 +70,7 @@ These packages work well with podman:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['podmanio']
+const pkg = pantry.podmanio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

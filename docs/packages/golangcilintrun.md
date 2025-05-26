@@ -56,7 +56,7 @@ pkgx golangci-lint@2.1.6
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['golangcilintrun']
+const pkg = pantry.golangcilintrun
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

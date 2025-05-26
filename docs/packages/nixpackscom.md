@@ -52,7 +52,7 @@ pkgx nixpacks@1.39.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['nixpackscom']
+const pkg = pantry.nixpackscom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

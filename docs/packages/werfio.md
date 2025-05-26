@@ -82,7 +82,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['werfio']
+const pkg = pantry.werfio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

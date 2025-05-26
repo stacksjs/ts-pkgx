@@ -54,7 +54,7 @@ pkgx zarf@0.55.5
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['zarfdev']
+const pkg = pantry.zarfdev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

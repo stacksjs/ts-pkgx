@@ -56,7 +56,7 @@ pkgx git-town@20.2.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gittowncom']
+const pkg = pantry.gittowncom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

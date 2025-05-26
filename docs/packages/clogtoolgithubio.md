@@ -46,7 +46,7 @@ pkgx clog@0.9.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['clogtoolgithubio']
+const pkg = pantry.clogtoolgithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

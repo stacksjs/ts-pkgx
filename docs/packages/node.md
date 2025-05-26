@@ -95,7 +95,7 @@ These packages work well with node:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['node']
+const pkg = pantry.node
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

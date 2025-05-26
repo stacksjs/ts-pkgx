@@ -52,7 +52,7 @@ pkgx modernc.org/goyacc@1.0.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['moderncorggoyacc']
+const pkg = pantry.moderncorggoyacc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

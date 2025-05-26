@@ -46,7 +46,7 @@ pkgx oras@1.2.3
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['orasland']
+const pkg = pantry.orasland
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -50,7 +50,7 @@ pkgx k6@1.0.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['k6io']
+const pkg = pantry.k6io
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

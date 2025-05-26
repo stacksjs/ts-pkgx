@@ -1,6 +1,6 @@
 # denilson.sa.nom.br
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['denilsonsanombr']
+const pkg = pantry.denilsonsanombr
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

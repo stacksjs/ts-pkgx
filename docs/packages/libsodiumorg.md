@@ -1,6 +1,6 @@
 # libsodium.org
 
-> 
+>
 
 ## Package Information
 
@@ -46,7 +46,7 @@ pkgx libsodium.org@1.0.20
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libsodiumorg']
+const pkg = pantry.libsodiumorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -59,7 +59,7 @@ These packages work well with tinygo:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tinygoorg']
+const pkg = pantry.tinygoorg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -48,7 +48,7 @@ pkgx mercure@0.19.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mercurerocks']
+const pkg = pantry.mercurerocks
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -47,7 +47,7 @@ pkgx openblas.net@0.3.29
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openblasnet']
+const pkg = pantry.openblasnet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -52,7 +52,7 @@ pkgx nuclei@3.4.4
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['projectdiscoveryionuclei']
+const pkg = pantry.projectdiscoveryionuclei
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

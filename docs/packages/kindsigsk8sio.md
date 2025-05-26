@@ -48,7 +48,7 @@ pkgx kind@0.29.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kindsigsk8sio']
+const pkg = pantry.kindsigsk8sio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

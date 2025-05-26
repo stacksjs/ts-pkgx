@@ -57,7 +57,7 @@ pkgx rhash.sourceforge.net@1.4.6
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rhashsourceforgenet']
+const pkg = pantry.rhashsourceforgenet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ pkgx dotenv-linter@3.3.0
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['dotenvlintergithubio']
+const pkg = pantry.dotenvlintergithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

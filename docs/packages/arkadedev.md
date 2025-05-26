@@ -53,7 +53,7 @@ pkgx Arkade@0.11.39
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['arkadedev']
+const pkg = pantry.arkadedev
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

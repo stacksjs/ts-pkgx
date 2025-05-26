@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['flitpypaio']
+const pkg = pantry.flitpypaio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

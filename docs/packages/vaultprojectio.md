@@ -56,7 +56,7 @@ pkgx vault@1.19.4
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['vaultprojectio']
+const pkg = pantry.vaultprojectio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

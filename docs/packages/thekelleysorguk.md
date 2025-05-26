@@ -1,6 +1,6 @@
 # thekelleys.org.uk
 
-> 
+>
 
 ## Package Information
 
@@ -28,7 +28,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['thekelleysorguk']
+const pkg = pantry.thekelleysorguk
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

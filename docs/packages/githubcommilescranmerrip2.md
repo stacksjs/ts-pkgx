@@ -53,7 +53,7 @@ pkgx rip2@0.9.4
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['githubcommilescranmerrip2']
+const pkg = pantry.githubcommilescranmerrip2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

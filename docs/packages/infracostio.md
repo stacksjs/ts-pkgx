@@ -47,7 +47,7 @@ pkgx infracost@0.10.41
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['infracostio']
+const pkg = pantry.infracostio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

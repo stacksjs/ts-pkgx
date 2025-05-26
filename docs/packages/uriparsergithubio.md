@@ -46,7 +46,7 @@ pkgx uriparse@0.9.8
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['uriparsergithubio']
+const pkg = pantry.uriparsergithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
