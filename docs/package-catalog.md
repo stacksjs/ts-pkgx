@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry[do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-25
+- **Last Updated**: 2025-05-26
 
 ## Table of Contents
 
@@ -264,7 +264,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry[do
 | **[boostorg](./packages/boostorg.md)** () | Super-project for modularized Boost | - | 1.88.0 (+7) | `pkgx boost.org` |
 | **[borepub](./packages/borepub.md)** () | Modern, simple TCP tunnel in Rust that exposes local ports to a remote server | bore | 0.5.3 (+3) | `pkgx bore` |
 | **[breakfastquaycom](./packages/breakfastquaycom.md)** |  | - | latest | `pkgx breakfastquay.com` |
-| **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.2 (+13) | `pkgx browser-use.com` |
+| **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.3 (+14) | `pkgx browser-use.com` |
 | **[brxken128githubio](./packages/brxken128githubio.md)** |  | - | latest | `pkgx brxken128.github.io` |
 | **[budimanjojogithubio](./packages/budimanjojogithubio.md)** |  | - | latest | `pkgx budimanjojo.github.io` |
 | **[bufbuild](./packages/bufbuild.md)** () | The best way of working with Protocol Buffers. | buf | 1.54.0 (+40) | `pkgx buf` |
@@ -659,7 +659,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry[do
 | **[midnightcommanderorg](./packages/midnightcommanderorg.md)** (midnight commander) | Terminal-based visual file manager | mc, mcdiff, mcedit, ... (+1) | 4.8.33 (+5) | `pkgx Midnight Commander` |
 | **[minio](./packages/minio.md)** (minio) | MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license. | minio | 2023.10.25.6.33.25 (+0) | `pkgx minio` |
 | **[misejdxdev](./packages/misejdxdev.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.5.12 (+276) | `pkgx mise` |
-| **[mitmproxyorg](./packages/mitmproxyorg.md)** () | An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers. | mitmproxy | 12.1.0 (+25) | `pkgx mitmproxy` |
+| **[mitmproxyorg](./packages/mitmproxyorg.md)** () | An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers. | mitmproxy | 12.1.1 (+26) | `pkgx mitmproxy` |
 | **[mkcertdev](./packages/mkcertdev.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you'd l... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
 | **[mkdocsorg](./packages/mkdocsorg.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
 | **[modalcom](./packages/modalcom.md)** () | Python client library for Modal | - | 1.0.1 (+788) | `pkgx modal.com` |
@@ -872,7 +872,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry[do
 | **[sphinxdocorg](./packages/sphinxdocorg.md)** () | Tool to create intelligent and beautiful documentation | sphinx-apidoc, sphinx-autogen, sphinx-build, ... (+1) | 8.2.3 (+41) | `pkgx sphinx` |
 | **[sqlcdev](./packages/sqlcdev.md)** () | Generate type-safe code from SQL | sqlc | 1.29.0 (+2) | `pkgx sqlc` |
 | **[sqlfluffcom](./packages/sqlfluffcom.md)** () | A modular SQL linter and auto-formatter with support for multiple dialects and templated code. | sqlfluff | 3.4.0 (+22) | `pkgx sqlfluff` |
-| **[squawkhqcom](./packages/squawkhqcom.md)** () | 🐘 linter for PostgreSQL, focused on migrations | squawk | 2.7.0 (+29) | `pkgx squawk` |
+| **[squawkhqcom](./packages/squawkhqcom.md)** () | 🐘 linter for PostgreSQL, focused on migrations | squawk | 2.8.0 (+30) | `pkgx squawk` |
 | **[srtallianceorg](./packages/srtallianceorg.md)** () | Secure, Reliable, Transport | srt-ffplay, srt-file-transmit, srt-live-transmit, ... (+1) | 1.5.4 (+2) | `pkgx srt` |
 | **[sshxio](./packages/sshxio.md)** () | Fast, collaborative live terminal sharing over the web | sshx | 2023.11.14 (+0) | `pkgx sshx` |
 | **[starshiprs](./packages/starshiprs.md)** () | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |

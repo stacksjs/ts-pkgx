@@ -14,6 +14,7 @@ export const mitmproxyorgPackage = {
     'pkgx.sh^1',
   ] as const,
   versions: [
+    '12.1.1',
     '12.1.0',
     '12.0.1',
     '12.0.0',

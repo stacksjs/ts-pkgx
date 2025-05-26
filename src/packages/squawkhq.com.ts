@@ -12,6 +12,7 @@ export const squawkhqcomPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '2.8.0',
     '2.7.0',
     '2.6.0',
     '2.5.0',
