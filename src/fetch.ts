@@ -784,6 +784,27 @@ export async function fetchPkgxPackage(
       packageInfo.dependencies = packageInfo.dependencies || []
       packageInfo.versions = packageInfo.versions || []
 
+      // Validate data quality to prevent writing incomplete packages
+      const hasAnyContent = packageInfo.versions.length > 0 || packageInfo.programs.length > 0 || packageInfo.dependencies.length > 0
+
+      // Check if this looks like a package that should have dependencies
+      // Most real packages have either programs, versions, or dependencies
+      const looksLikeRealPackage = packageInfo.programs.length > 0 || packageInfo.versions.length > 0
+
+      // Additional validation: if description is generic, it might be a failed fetch
+      const hasGenericDescription = packageInfo.description.includes('Package information for')
+        || packageInfo.description.trim() === ''
+        || packageInfo.description === `${packageName} package`
+
+      // If it looks like a real package but has suspicious data quality, log a warning
+      if (looksLikeRealPackage && packageInfo.dependencies.length === 0 && !hasAnyContent) {
+        console.warn(`⚠️  Package ${packageName} appears to have incomplete data (no dependencies, versions, or programs). This might be a fetch error.`)
+      }
+
+      if (hasGenericDescription && !hasAnyContent) {
+        console.warn(`⚠️  Package ${packageName} has generic description and no substantial data. This might be a fetch error.`)
+      }
+
       return { packageInfo, originalName, fullDomainName }
     }
     finally {
@@ -1930,6 +1951,34 @@ export async function fetchAndSavePackage(
         if (!hasValidData) {
           console.error(`Package ${packageName} appears to have no meaningful data. Skipping to avoid creating empty files.`)
           return { success: false, fullDomainName: packageName }
+        }
+
+        // Additional validation: Check if we're about to overwrite a file with better data
+        const checkSafeFilename = fullDomainName.replace(/\//g, '-')
+        const existingFilePath = path.join(outputDir, `${checkSafeFilename}.ts`)
+
+        if (fs.existsSync(existingFilePath)) {
+          const existingContent = fs.readFileSync(existingFilePath, 'utf-8')
+
+          // Check if existing file has dependencies but new fetch doesn't
+          const existingHasDependencies = existingContent.includes('dependencies: [') &&
+                                         !existingContent.includes('dependencies: [] as const')
+          const newHasNoDependencies = packageInfo.dependencies.length === 0
+
+          // Check if existing file has a real description but new fetch has generic one
+          const existingHasRealDescription = !existingContent.includes("description: 'Package information for") &&
+                                           !existingContent.includes("description: '' as const")
+          const newHasGenericDescription = packageInfo.description.includes('Package information for') ||
+                                          packageInfo.description.trim() === ''
+
+          // If existing file is better, skip to avoid data degradation
+          if ((existingHasDependencies && newHasNoDependencies) ||
+              (existingHasRealDescription && newHasGenericDescription)) {
+            console.warn(`⚠️  Existing file ${existingFilePath} has better data than new fetch. Skipping to prevent data loss.`)
+            console.warn(`   Existing deps: ${existingHasDependencies}, New deps: ${!newHasNoDependencies}`)
+            console.warn(`   Existing desc: ${existingHasRealDescription}, New desc: ${!newHasGenericDescription}`)
+            return { success: false, fullDomainName: packageName }
+          }
         }
 
         // Sort versions using semver if they exist
