@@ -38,6 +38,7 @@ export const jupyterorgPackage = {
     'gnu.org/which@2',
   ] as const,
   versions: [
+    '4.4.3',
     '4.4.2',
     '4.4.1',
     '4.4.0',

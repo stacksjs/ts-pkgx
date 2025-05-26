@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-26T09:57:59.506Z
+- **Last Updated**: 2025-05-26T19:46:19.758Z
 
 ## Table of Contents
 
@@ -140,7 +140,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[awsamazoncom](./packages/awsamazoncom.md)** () |  | - | latest | `pkgx aws.amazon.com` |
 | **[cloudflarecom](./packages/cloudflarecom.md)** () |  | - | latest | `pkgx cloudflare.com` |
 | **[digitaloceancom](./packages/digitaloceancom.md)** () |  | - | latest | `pkgx digitalocean.com` |
-| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.130 (+388) | `pkgx fly` |
+| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.131 (+389) | `pkgx fly` |
 | **[githubcom](./packages/githubcom.md)** |  | - | latest | `pkgx github.com` |
 | **[gitlabcom](./packages/gitlabcom.md)** |  | - | latest | `pkgx gitlab.com` |
 | **[herokucom](./packages/herokucom.md)** () | CLI for Heroku | heroku | 10.8.0 (+29) | `pkgx heroku` |
@@ -177,7 +177,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.49.0 (+20) | `pkgx git` |
 | **[neovimio](./packages/neovimio.md)** (nvim) | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.1 (+13) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** () | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
-| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1407 (+1983) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1413 (+1989) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
@@ -289,7 +289,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cgalorg](./packages/cgalorg.md)** () | The public CGAL repository, see the README below | cgal_create_CMakeLists, cgal_create_cmake_script, cgal_make_macosx_app | 6.0.1 (+4) | `pkgx cgal` |
 | **[changiedev](./packages/changiedev.md)** () | Automated changelog tool for preparing releases with lots of customization options | changie | 1.21.1 (+6) | `pkgx changie` |
 | **[charmsh](./packages/charmsh.md)** () |  | - | latest | `pkgx charm.sh` |
-| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.432 (+466) | `pkgx checkov` |
+| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.433 (+467) | `pkgx checkov` |
 | **[chezmoiio](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.5 (+74) | `pkgx chezmoi` |
 | **[chiarkgreenendorguk](./packages/chiarkgreenendorguk.md)** () |  | - | latest | `pkgx chiark.greenend.org.uk` |
 | **[chromedriverchromiumorg](./packages/chromedriverchromiumorg.md)** () |  | chromedriver | 114.0.5735.90 (+0) | `pkgx chromedriver` |
@@ -508,7 +508,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[htmltidyorg](./packages/htmltidyorg.md)** (tidy) | The granddaddy of HTML tools, with support for modern standards | tidy | 5.8.0 (+0) | `pkgx tidy` |
 | **[htsliborg](./packages/htsliborg.md)** () | C library for high-throughput sequencing data formats | bgzip, htsfile, tabix | 1.21.0 (+4) | `pkgx htslib.org` |
 | **[httpieio](./packages/httpieio.md)** () | 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, co... | http, httpie, https | 3.2.4 (+3) | `pkgx httpie.io` |
-| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface/cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.32.0 (+48) | `pkgx huggingface/cli` |
+| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface/cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.32.1 (+49) | `pkgx huggingface/cli` |
 | **[hugowang](./packages/hugowang.md)** |  | - | latest | `pkgx hugo.wang` |
 | **[hunspellgithubio](./packages/hunspellgithubio.md)** () | Spell checker and morphological analyzer | analyze, chmorph, hunspell, ... (+4) | 1.7.2 (+0) | `pkgx hunspell` |
 | **[hurldev](./packages/hurldev.md)** () | Run and Test HTTP Requests with plain text and curl | hurl, hurlfmt | 6.1.1 (+8) | `pkgx hurl` |
@@ -547,7 +547,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[jugitfzjuelichde](./packages/jugitfzjuelichde.md)** |  | - | latest | `pkgx jugit.fz-juelich.de` |
 | **[jujuis](./packages/jujuis.md)** () | Orchestration engine that enables the deployment, integration and lifecycle management of applica... | juju | 3.6.5 (+14) | `pkgx juju` |
 | **[jumppaddev](./packages/jumppaddev.md)** () | Modern cloud native development environments | jumppad | 0.20.0 (+18) | `pkgx jumppad` |
-| **[jupyterorg](./packages/jupyterorg.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.2 (+47) | `pkgx jupyter.org` |
+| **[jupyterorg](./packages/jupyterorg.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.3 (+48) | `pkgx jupyter.org` |
 | **[justsystems](./packages/justsystems.md)** () | Handy way to save and run project-specific commands | just | 1.40.0 (+39) | `pkgx just` |
 | **[k3dio](./packages/k3dio.md)** () | Little helper to run CNCF's k3s in Docker | k3d | 5.8.3 (+16) | `pkgx k3d` |
 | **[k6io](./packages/k6io.md)** () | A modern load testing tool, using Go and JavaScript - https://k6.io | k6 | 1.0.0 (+23) | `pkgx k6` |
