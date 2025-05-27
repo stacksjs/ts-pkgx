@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-27T04:48:29.485Z
+- **Last Updated**: 2025-05-27T10:47:58.891Z
 
 ## Table of Contents
 
@@ -289,7 +289,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cgalorg](./packages/cgalorg.md)** () | The public CGAL repository, see the README below | cgal_create_CMakeLists, cgal_create_cmake_script, cgal_make_macosx_app | 6.0.1 (+4) | `pkgx cgal` |
 | **[changiedev](./packages/changiedev.md)** () | Automated changelog tool for preparing releases with lots of customization options | changie | 1.21.1 (+6) | `pkgx changie` |
 | **[charmsh](./packages/charmsh.md)** () |  | - | latest | `pkgx charm.sh` |
-| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.433 (+467) | `pkgx checkov` |
+| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.434 (+468) | `pkgx checkov` |
 | **[chezmoiio](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.5 (+74) | `pkgx chezmoi` |
 | **[chiarkgreenendorguk](./packages/chiarkgreenendorguk.md)** () |  | - | latest | `pkgx chiark.greenend.org.uk` |
 | **[chromedriverchromiumorg](./packages/chromedriverchromiumorg.md)** () |  | chromedriver | 114.0.5735.90 (+0) | `pkgx chromedriver` |
@@ -508,7 +508,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[htmltidyorg](./packages/htmltidyorg.md)** (tidy) | The granddaddy of HTML tools, with support for modern standards | tidy | 5.8.0 (+0) | `pkgx tidy` |
 | **[htsliborg](./packages/htsliborg.md)** () | C library for high-throughput sequencing data formats | bgzip, htsfile, tabix | 1.21.0 (+4) | `pkgx htslib.org` |
 | **[httpieio](./packages/httpieio.md)** () | 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, co... | http, httpie, https | 3.2.4 (+3) | `pkgx httpie.io` |
-| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface/cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.32.1 (+49) | `pkgx huggingface/cli` |
+| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface/cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.32.2 (+50) | `pkgx huggingface/cli` |
 | **[hugowang](./packages/hugowang.md)** |  | - | latest | `pkgx hugo.wang` |
 | **[hunspellgithubio](./packages/hunspellgithubio.md)** () | Spell checker and morphological analyzer | analyze, chmorph, hunspell, ... (+4) | 1.7.2 (+0) | `pkgx hunspell` |
 | **[hurldev](./packages/hurldev.md)** () | Run and Test HTTP Requests with plain text and curl | hurl, hurlfmt | 6.1.1 (+8) | `pkgx hurl` |
