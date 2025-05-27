@@ -12,6 +12,7 @@ export const gohugoioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.147.6',
     '0.147.5',
     '0.147.4',
     '0.147.3',

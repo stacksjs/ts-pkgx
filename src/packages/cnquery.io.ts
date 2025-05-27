@@ -12,6 +12,7 @@ export const cnqueryioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '11.56.0',
     '11.55.0',
     '11.54.0',
     '11.53.2',
