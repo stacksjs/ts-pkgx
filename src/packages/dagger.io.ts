@@ -12,6 +12,7 @@ export const daggerioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.18.9',
     '0.18.8',
     '0.18.7',
     '0.18.6',

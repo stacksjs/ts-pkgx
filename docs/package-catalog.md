@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-27T15:48:24.617Z
+- **Last Updated**: 2025-05-27T20:46:48.736Z
 
 ## Table of Contents
 
@@ -144,7 +144,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[githubcom](./packages/githubcom.md)** |  | - | latest | `pkgx github.com` |
 | **[gitlabcom](./packages/gitlabcom.md)** |  | - | latest | `pkgx gitlab.com` |
 | **[herokucom](./packages/herokucom.md)** () | CLI for Heroku | heroku | 10.8.0 (+29) | `pkgx heroku` |
-| **[railwayapp](./packages/railwayapp.md)** () | Develop and deploy code with zero configuration | railway | 4.5.2 (+49) | `pkgx railway` |
+| **[railwayapp](./packages/railwayapp.md)** () | Develop and deploy code with zero configuration | railway | 4.5.3 (+50) | `pkgx railway` |
 | **[vercelcom](./packages/vercelcom.md)** |  | - | latest | `pkgx vercel.com` |
 
 ## Monitoring & Observability
@@ -177,7 +177,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.49.0 (+20) | `pkgx git` |
 | **[neovimio](./packages/neovimio.md)** (nvim) | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.1 (+13) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** () | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
-| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1413 (+1989) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1415 (+1990) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
@@ -255,7 +255,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[awsamazoncomsam](./packages/awsamazoncomsam.md)** (sam) | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.139.0 (+28) | `pkgx sam` |
 | **[bashlydannybco](./packages/bashlydannybco.md)** () | Bash command line framework and CLI generator | bashly | 1.2.12 (+13) | `pkgx bashly` |
 | **[bcryptsourceforgenet](./packages/bcryptsourceforgenet.md)** () | Cross platform file encryption utility using blowfish | bcrypt | 1.1.0 (+0) | `pkgx bcrypt` |
-| **[beyondgrepcom](./packages/beyondgrepcom.md)** (ack) | ack is a grep-like search tool optimized for source code. | ack | 3.8.1 (+3) | `pkgx ack` |
+| **[beyondgrepcom](./packages/beyondgrepcom.md)** (ack) | ack is a grep-like search tool optimized for source code. | ack | 3.9.0 (+5) | `pkgx ack` |
 | **[biomejsdev](./packages/biomejsdev.md)** () | A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers for... | biome | 1.9.4 (+27) | `pkgx biome` |
 | **[bitcoinorg](./packages/bitcoinorg.md)** () | Decentralized, peer to peer payment network | bitcoin-cli, bitcoin-tx, bitcoin-util, ... (+2) | 29.0.0 (+15) | `pkgx bitcoin` |
 | **[bittensorcom](./packages/bittensorcom.md)** () | Internet-scale Neural Networks | - | 9.6.1 (+61) | `pkgx Bittensor` |
@@ -339,7 +339,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cyrusimaporg](./packages/cyrusimaporg.md)** () |  | - | latest | `pkgx cyrusimap.org` |
 | **[cythonorg](./packages/cythonorg.md)** () | Compiler for writing C extensions for the Python language | cython | 3.1.1 (+18) | `pkgx cython` |
 | **[d2langcom](./packages/d2langcom.md)** () | D2 is a modern diagram scripting language that turns text to diagrams. | d2 | 0.7.0 (+10) | `pkgx d2` |
-| **[daggerio](./packages/daggerio.md)** () | An engine to run your pipelines in containers | dagger | 0.18.8 (+88) | `pkgx dagger` |
+| **[daggerio](./packages/daggerio.md)** () | An engine to run your pipelines in containers | dagger | 0.18.9 (+89) | `pkgx dagger` |
 | **[darwinsyscom](./packages/darwinsyscom.md)** () |  | - | latest | `pkgx darwinsys.com` |
 | **[databrickscom](./packages/databrickscom.md)** () | Databricks CLI | databricks | 0.253.0 (+51) | `pkgx databricks` |
 | **[daytonaio](./packages/daytonaio.md)** () | The Open Source Dev Environment Manager. | daytona | 0.100.0 (+75) | `pkgx daytona` |
@@ -383,7 +383,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[elfutilsorg](./packages/elfutilsorg.md)** |  | eu-addr2line, eu-ar, eu-elfclassify, ... (+13) | 0.193.0 (+4) | `pkgx elfutils.org` |
 | **[elizaosgithubio](./packages/elizaosgithubio.md)** (elizaos) | Autonomous agents for everyone | eliza | 0.25.19 (+5) | `pkgx elizaOS` |
 | **[elvsh](./packages/elvsh.md)** (elvish) | Powerful scripting language & versatile interactive shell | elvish | 0.21.0 (+3) | `pkgx elvish` |
-| **[encoredev](./packages/encoredev.md)** () | Open Source Development Platform for building robust type-safe distributed systems with declarati... | encore, git-remote-encore | 1.47.0 (+50) | `pkgx encore.dev` |
+| **[encoredev](./packages/encoredev.md)** () | Open Source Development Platform for building robust type-safe distributed systems with declarati... | encore, git-remote-encore | 1.48.0 (+51) | `pkgx encore.dev` |
 | **[endoflifedate](./packages/endoflifedate.md)** (eol) | CLI to show end-of-life dates for a number of products. | eol | 0.22.0 (+8) | `pkgx eol` |
 | **[epsilonprojectsourceforgeio](./packages/epsilonprojectsourceforgeio.md)** () | Powerful wavelet image compressor | epsilon | 0.9.2 (+0) | `pkgx epsilon` |
 | **[etcdio](./packages/etcdio.md)** () | Distributed reliable key-value store for the most critical data of a distributed system | etcd, etcdctl | 3.6.0 (+10) | `pkgx etcd` |
@@ -490,7 +490,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[graphvizorg](./packages/graphvizorg.md)** () | Graph visualization software from AT&T and Bell Labs | acyclic, bcomps, ccomps, ... (+32) | 12.2.1 (+10) | `pkgx graphviz.org` |
 | **[groongaorg](./packages/groongaorg.md)** () | An embeddable fulltext search engine. Groonga is the successor project to Senna. | groonga, groonga-suggest-create-dataset | 15.0.9 (+25) | `pkgx groonga` |
 | **[groovylangorg](./packages/groovylangorg.md)** |  | grape, grape_completion, groovy, ... (+11) | 4.0.26 (+19) | `pkgx groovy-lang.org` |
-| **[grpcio](./packages/grpcio.md)** () | The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#) | grpc_csharp_plugin, grpc_node_plugin, grpc_cpp_plugin, ... (+5) | 1.71.1 (+41) | `pkgx grpc` |
+| **[grpcio](./packages/grpcio.md)** () | The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#) | grpc_csharp_plugin, grpc_node_plugin, grpc_cpp_plugin, ... (+5) | 1.72.0 (+42) | `pkgx grpc` |
 | **[gstreamerfreedesktoporg](./packages/gstreamerfreedesktoporg.md)** |  | - | latest | `pkgx gstreamer.freedesktop.org` |
 | **[gtkorg](./packages/gtkorg.md)** |  | - | latest | `pkgx gtk.org` |
 | **[gtssourceforgenet](./packages/gtssourceforgenet.md)** () | GNU triangulated surface library | delaunay, gts2dxf, gts2oogl, ... (+6) | 0.7.6 (+0) | `pkgx gts.sourceforge.net` |
@@ -906,7 +906,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[templguide](./packages/templguide.md)** () | A language for writing HTML user interfaces in Go. | templ | 0.3.865 (+23) | `pkgx templ` |
 | **[temporalio](./packages/temporalio.md)** () | Command-line interface for running Temporal Server and interacting with Workflows, Activities, Na... | temporal | 1.3.0 (+13) | `pkgx temporal` |
 | **[terraformdocsio](./packages/terraformdocsio.md)** () | Generate documentation from Terraform modules in various output formats | terraform-docs | 0.20.0 (+4) | `pkgx terraform-docs` |
-| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.80.2 (+341) | `pkgx terragrunt` |
+| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.80.3 (+342) | `pkgx terragrunt` |
 | **[terratagio](./packages/terratagio.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag` |
 | **[tesseractocrgithubio](./packages/tesseractocrgithubio.md)** () | Tesseract Open Source OCR Engine (main repository) | tesseract | 5.5.1 (+8) | `pkgx tesseract` |
 | **[thekelleysorguk](./packages/thekelleysorguk.md)** |  | - | latest | `pkgx thekelleys.org.uk` |
@@ -914,7 +914,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[thoughtworksgithubio](./packages/thoughtworksgithubio.md)** |  | - | latest | `pkgx thoughtworks.github.io` |
 | **[thrysoeedk](./packages/thrysoeedk.md)** |  | - | latest | `pkgx thrysoee.dk` |
 | **[tidbytcom](./packages/tidbytcom.md)** (pixlet) | Build apps for pixel-based displays ✨ | pixlet | 0.34.0 (+19) | `pkgx pixlet` |
-| **[tiltdev](./packages/tiltdev.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.34.3 (+20) | `pkgx tilt` |
+| **[tiltdev](./packages/tiltdev.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.34.4 (+21) | `pkgx tilt` |
 | **[tinybirdco](./packages/tinybirdco.md)** (tb) |  | tb | 5.20.0 (+0) | `pkgx tb` |
 | **[tinygoorg](./packages/tinygoorg.md)** () | Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. ... | tinygo | 0.37.0 (+6) | `pkgx tinygo` |
 | **[tldrsh](./packages/tldrsh.md)** () | C command-line client for tldr pages 📚 | tldr | 1.6.1 (+2) | `pkgx tldr` |

@@ -15,6 +15,7 @@ export const encoredevPackage = {
     'encore.dev/go^1.21',
   ] as const,
   versions: [
+    '1.48.0',
     '1.47.0',
     '1.46.22',
     '1.46.21',

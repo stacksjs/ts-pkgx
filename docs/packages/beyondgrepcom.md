@@ -31,19 +31,20 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `3.8.1`, `3.8.0`, `3.7.0`, `3.6.0`
+- `3.9.0`, `3.8.2`, `3.8.1`, `3.8.0`, `3.7.0`
+- `3.6.0`
 
 </details>
 
-**Latest Version**: `3.8.1`
+**Latest Version**: `3.9.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx ack@3.8.1
+pkgx ack@3.9.0
 ```
 
 ## Dependencies

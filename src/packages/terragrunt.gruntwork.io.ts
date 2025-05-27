@@ -14,6 +14,7 @@ export const terragruntgruntworkioPackage = {
     'terraform.io',
   ] as const,
   versions: [
+    '0.80.3',
     '0.80.2',
     '0.80.1',
     '0.80.0',
