@@ -12,6 +12,7 @@ export const fliptioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '1.58.3',
     '1.58.2',
     '1.58.1',
     '1.58.0',

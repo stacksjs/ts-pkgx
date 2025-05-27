@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-27T03:55:49.030Z
+- **Last Updated**: 2025-05-27T04:48:29.485Z
 
 ## Table of Contents
 
@@ -400,7 +400,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[fftworg](./packages/fftworg.md)** () | C routines to compute the Discrete Fourier Transform | fftw-wisdom, fftw-wisdom-to-conf, fftwf-wisdom, ... (+1) | 3.3.10 (+0) | `pkgx fftw` |
 | **[filippoio](./packages/filippoio.md)** |  | - | latest | `pkgx filippo.io` |
 | **[fishshellcom](./packages/fishshellcom.md)** () | User-friendly command-line shell for UNIX-like operating systems | fish, fish_indent, fish_key_reader | 4.0.2 (+10) | `pkgx fish` |
-| **[fliptio](./packages/fliptio.md)** () | Enterprise-ready, GitOps enabled, CloudNative feature management solution | flipt | 1.58.2 (+35) | `pkgx flipt` |
+| **[fliptio](./packages/fliptio.md)** () | Enterprise-ready, GitOps enabled, CloudNative feature management solution | flipt | 1.58.3 (+36) | `pkgx flipt` |
 | **[flitpypaio](./packages/flitpypaio.md)** () | Simplified packaging of Python modules | flit | 3.12.0 (+5) | `pkgx flit` |
 | **[fltkorg](./packages/fltkorg.md)** () | FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development | fluid, fltk-config | 1.4.3 (+5) | `pkgx fltk.org` |
 | **[fluentciio](./packages/fluentciio.md)** () | Set up and run your CI locally or in any CI Provider in a consistent way https://backdropbuild.co... | fluentci | 0.16.5 (+67) | `pkgx fluentci` |
