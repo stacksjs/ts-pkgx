@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-26T22:46:00.374Z
+- **Last Updated**: 2025-05-27T03:55:49.030Z
 
 ## Table of Contents
 
@@ -658,7 +658,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoftcommarkitdown](./packages/microsoftcommarkitdown.md)** (markitdown) | Python tool for converting files and office documents to Markdown. | markitdown | 0.0.1.3 (+0) | `pkgx markitdown` |
 | **[midnightcommanderorg](./packages/midnightcommanderorg.md)** (midnight commander) | Terminal-based visual file manager | mc, mcdiff, mcedit, ... (+1) | 4.8.33 (+5) | `pkgx Midnight Commander` |
 | **[minio](./packages/minio.md)** (minio) | MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license. | minio | 2023.10.25.6.33.25 (+0) | `pkgx minio` |
-| **[misejdxdev](./packages/misejdxdev.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.5.13 (+277) | `pkgx mise` |
+| **[misejdxdev](./packages/misejdxdev.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.5.14 (+278) | `pkgx mise` |
 | **[mitmproxyorg](./packages/mitmproxyorg.md)** () | An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers. | mitmproxy | 12.1.1 (+26) | `pkgx mitmproxy` |
 | **[mkcertdev](./packages/mkcertdev.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you'd l... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
 | **[mkdocsorg](./packages/mkdocsorg.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
