@@ -12,6 +12,7 @@ export const databrickscomPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.253.0',
     '0.252.0',
     '0.251.0',
     '0.250.0',

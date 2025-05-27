@@ -18,7 +18,7 @@ export const grpcioPackage = {
   ] as const,
   companions: [] as const,
   dependencies: [
-    'abseil.io^20240116',
+    'abseil.io^20250127',
     'c-ares.org',
     'openssl.org^1.1',
     'github.com/google/re2',

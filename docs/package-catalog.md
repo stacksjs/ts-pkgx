@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-27T12:51:15.095Z
+- **Last Updated**: 2025-05-27T15:48:24.617Z
 
 ## Table of Contents
 
@@ -106,7 +106,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mongodbcom](./packages/mongodbcom.md)** () | The MongoDB Database | install_compass, mongod, mongos | 8.0.9 (+25) | `pkgx mongodb.com` |
 | **[mysqlcom](./packages/mysqlcom.md)** () | MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open... | mysql_client_test, my_print_defaults, myisam_ftdump, ... (+28) | 9.3.0 (+23) | `pkgx mysql.com` |
 | **[postgresqlorg](./packages/postgresqlorg.md)** () | Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't wo... | clusterdb, createdb, dropdb, ... (+25) | 17.2.0 (+11) | `pkgx postgresql.org` |
-| **[redisio](./packages/redisio.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.1 (+33) | `pkgx redis` |
+| **[redisio](./packages/redisio.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.2 (+36) | `pkgx redis` |
 | **[sqliteorg](./packages/sqliteorg.md)** (sqlite3) | Official Git mirror of the SQLite source tree | sqlite3 | 3.49.2 (+23) | `pkgx sqlite3` |
 | **[surrealdbcom](./packages/surrealdbcom.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+40) | `pkgx surreal` |
 | **[valkeyio](./packages/valkeyio.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 8.1.1 (+10) | `pkgx valkey` |
@@ -129,7 +129,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[nomadprojectio](./packages/nomadprojectio.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.10.1 (+12) | `pkgx nomad` |
 | **[podmanio](./packages/podmanio.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.0 (+37) | `pkgx podman` |
 | **[terraformio](./packages/terraformio.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.12.1 (+73) | `pkgx terraform` |
-| **[traefikio](./packages/traefikio.md)** () | The Cloud Native Application Proxy | traefik | 3.4.0 (+55) | `pkgx traefik` |
+| **[traefikio](./packages/traefikio.md)** () | The Cloud Native Application Proxy | traefik | 3.4.1 (+57) | `pkgx traefik` |
 
 ## Cloud Platforms & Services
 
@@ -154,7 +154,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[grafanacom](./packages/grafanacom.md)** |  | - | latest | `pkgx grafana.com` |
-| **[sentryio](./packages/sentryio.md)** (sentry-cli) | Command-line utility to interact with Sentry | sentry-cli | 2.45.0 (+43) | `pkgx sentry-cli` |
+| **[sentryio](./packages/sentryio.md)** (sentry-cli) | Command-line utility to interact with Sentry | sentry-cli | 2.46.0 (+44) | `pkgx sentry-cli` |
 
 ## Security & Authentication
 
@@ -196,7 +196,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[apacheorg](./packages/apacheorg.md)** () |  | - | latest | `pkgx apache.org` |
 | **[nginxorg](./packages/nginxorg.md)** () | HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server | nginx | 1.28.0 (+17) | `pkgx nginx` |
-| **[traefikio](./packages/traefikio.md)** () | The Cloud Native Application Proxy | traefik | 3.4.0 (+55) | `pkgx traefik` |
+| **[traefikio](./packages/traefikio.md)** () | The Cloud Native Application Proxy | traefik | 3.4.1 (+57) | `pkgx traefik` |
 
 ## Testing & Quality Assurance
 
@@ -289,7 +289,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cgalorg](./packages/cgalorg.md)** () | The public CGAL repository, see the README below | cgal_create_CMakeLists, cgal_create_cmake_script, cgal_make_macosx_app | 6.0.1 (+4) | `pkgx cgal` |
 | **[changiedev](./packages/changiedev.md)** () | Automated changelog tool for preparing releases with lots of customization options | changie | 1.21.1 (+6) | `pkgx changie` |
 | **[charmsh](./packages/charmsh.md)** () |  | - | latest | `pkgx charm.sh` |
-| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.434 (+468) | `pkgx checkov` |
+| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.435 (+469) | `pkgx checkov` |
 | **[chezmoiio](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.5 (+74) | `pkgx chezmoi` |
 | **[chiarkgreenendorguk](./packages/chiarkgreenendorguk.md)** () |  | - | latest | `pkgx chiark.greenend.org.uk` |
 | **[chromedriverchromiumorg](./packages/chromedriverchromiumorg.md)** () |  | chromedriver | 114.0.5735.90 (+0) | `pkgx chromedriver` |
@@ -341,7 +341,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[d2langcom](./packages/d2langcom.md)** () | D2 is a modern diagram scripting language that turns text to diagrams. | d2 | 0.7.0 (+10) | `pkgx d2` |
 | **[daggerio](./packages/daggerio.md)** () | An engine to run your pipelines in containers | dagger | 0.18.8 (+88) | `pkgx dagger` |
 | **[darwinsyscom](./packages/darwinsyscom.md)** () |  | - | latest | `pkgx darwinsys.com` |
-| **[databrickscom](./packages/databrickscom.md)** () | Databricks CLI | databricks | 0.252.0 (+50) | `pkgx databricks` |
+| **[databrickscom](./packages/databrickscom.md)** () | Databricks CLI | databricks | 0.253.0 (+51) | `pkgx databricks` |
 | **[daytonaio](./packages/daytonaio.md)** () | The Open Source Dev Environment Manager. | daytona | 0.100.0 (+75) | `pkgx daytona` |
 | **[dblabdanvergaracom](./packages/dblabdanvergaracom.md)** () | The database client every command line junkie deserves. | dblab | 0.32.0 (+14) | `pkgx dblab` |
 | **[debianorg](./packages/debianorg.md)** () |  | - | latest | `pkgx debian.org` |
@@ -565,7 +565,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kluctlio](./packages/kluctlio.md)** () | The missing glue to put together large Kubernetes deployments, composed of multiple smaller parts... | kluctl | 2.26.0 (+13) | `pkgx kluctl` |
 | **[kobuild](./packages/kobuild.md)** () | Build and deploy Go applications on Kubernetes | ko | 0.18.0 (+3) | `pkgx ko` |
 | **[kornelski](./packages/kornelski.md)** |  | - | latest | `pkgx kornel.ski` |
-| **[koyebcom](./packages/koyebcom.md)** () | Koyeb cli | koyeb | 5.5.0 (+34) | `pkgx koyeb` |
+| **[koyebcom](./packages/koyebcom.md)** () | Koyeb cli | koyeb | 5.5.1 (+35) | `pkgx koyeb` |
 | **[kptdev](./packages/kptdev.md)** () | Automate Kubernetes Configuration Editing | kpt | 0.39.3 (+0) | `pkgx kpt` |
 | **[krewsigsk8sio](./packages/krewsigsk8sio.md)** (kubectl-krew) | 📦 Find and install kubectl plugins | kubectl-krew | 0.4.5 (+1) | `pkgx kubectl-krew` |
 | **[ktlintgithubio](./packages/ktlintgithubio.md)** () | An anti-bikeshedding Kotlin linter with built-in formatter | ktlint | 1.6.0 (+9) | `pkgx ktlint` |

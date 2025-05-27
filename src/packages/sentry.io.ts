@@ -14,6 +14,7 @@ export const sentryioPackage = {
     'libgit2.org~1.7',
   ] as const,
   versions: [
+    '2.46.0',
     '2.45.0',
     '2.44.0',
     '2.43.1',

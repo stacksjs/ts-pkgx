@@ -12,6 +12,7 @@ export const traefikioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '3.4.1',
     '3.4.0',
     '3.3.7',
     '3.3.6',
@@ -40,6 +41,7 @@ export const traefikioPackage = {
     '3.0.2',
     '3.0.1',
     '3.0.0',
+    '2.11.25',
     '2.11.24',
     '2.11.23',
     '2.11.22',

@@ -12,6 +12,7 @@ export const koyebcomPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '5.5.1',
     '5.5.0',
     '5.4.3',
     '5.4.2',
