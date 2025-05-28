@@ -15,10 +15,12 @@ export const protobufdevPackage = {
     'abseil.io',
   ] as const,
   versions: [
+    '31.1.0',
     '31.0.0',
     '30.2.0',
     '30.1.0',
     '30.0.0',
+    '29.5.0',
     '29.4.0',
     '29.3.0',
     '29.2.0',

@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-28T16:49:25.380Z
+- **Last Updated**: 2025-05-28T22:46:47.773Z
 
 ## Table of Contents
 
@@ -52,7 +52,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[rubylangorg](./packages/rubylangorg.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.4 (+41) | `pkgx ruby-lang.org` |
 | **[rustlangorg](./packages/rustlangorg.md)** (rust) | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.87.0 (+33) | `pkgx rust` |
 | **[scalalangorg](./packages/scalalangorg.md)** () | The Scala 3 compiler, also known as Dotty. | scalac, scala, scala-cli, ... (+2) | 3.7.0 (+7) | `pkgx scala-lang.org` |
-| **[swiftorg](./packages/swiftorg.md)** () | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.1.1 (+8) | `pkgx swift` |
+| **[swiftorg](./packages/swiftorg.md)** () | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.1.2 (+9) | `pkgx swift` |
 | **[typescriptlangorg](./packages/typescriptlangorg.md)** (tsc) | TypeScript is a superset of JavaScript that compiles to clean JavaScript output. | tsc | 5.8.3 (+12) | `pkgx tsc` |
 | **[vlangio](./packages/vlangio.md)** () | Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1... | v | 0.4.10 (+13) | `pkgx v` |
 | **[ziglangorg](./packages/ziglangorg.md)** () | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable ... | zig | 0.14.1 (+6) | `pkgx zig` |
@@ -64,7 +64,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[angulardev](./packages/angulardev.md)** (ng) | CLI tool for Angular | ng | 19.2.13 (+101) | `pkgx ng` |
-| **[bunsh](./packages/bunsh.md)** (bun) | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.14 (+117) | `pkgx bun` |
+| **[bunsh](./packages/bunsh.md)** (bun) | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.15 (+118) | `pkgx bun` |
 | **[classicyarnpkgcom](./packages/classicyarnpkgcom.md)** () | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx classic.yarnpkg.com` |
 | **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.3 (+128) | `pkgx deno` |
 | **[expodev](./packages/expodev.md)** |  | - | latest | `pkgx expo.dev` |
@@ -123,7 +123,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[consulio](./packages/consulio.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.21.1 (+10) | `pkgx consul` |
 | **[dockercom](./packages/dockercom.md)** () |  | - | latest | `pkgx docker.com` |
 | **[fluxcdio](./packages/fluxcdio.md)** |  | - | latest | `pkgx fluxcd.io` |
-| **[helmsh](./packages/helmsh.md)** () | The Kubernetes Package Manager | helm | 3.18.0 (+30) | `pkgx helm` |
+| **[helmsh](./packages/helmsh.md)** () | The Kubernetes Package Manager | helm | 3.18.1 (+31) | `pkgx helm` |
 | **[istioio](./packages/istioio.md)** (istioctl) | Connect, secure, control, and observe services. | istioctl | 1.26.0 (+39) | `pkgx istioctl` |
 | **[kubernetesio](./packages/kubernetesio.md)** |  | - | latest | `pkgx kubernetes.io` |
 | **[nomadprojectio](./packages/nomadprojectio.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.10.1 (+12) | `pkgx nomad` |
@@ -140,7 +140,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[awsamazoncom](./packages/awsamazoncom.md)** () |  | - | latest | `pkgx aws.amazon.com` |
 | **[cloudflarecom](./packages/cloudflarecom.md)** () |  | - | latest | `pkgx cloudflare.com` |
 | **[digitaloceancom](./packages/digitaloceancom.md)** () |  | - | latest | `pkgx digitalocean.com` |
-| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.132 (+390) | `pkgx fly` |
+| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.134 (+391) | `pkgx fly` |
 | **[githubcom](./packages/githubcom.md)** |  | - | latest | `pkgx github.com` |
 | **[gitlabcom](./packages/gitlabcom.md)** |  | - | latest | `pkgx gitlab.com` |
 | **[herokucom](./packages/herokucom.md)** () | CLI for Heroku | heroku | 10.8.0 (+29) | `pkgx heroku` |
@@ -368,7 +368,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dotenvxcom](./packages/dotenvxcom.md)** () |  | dotenvx | 1.44.1 (+166) | `pkgx dotenvx` |
 | **[dotnetmicrosoftcom](./packages/dotnetmicrosoftcom.md)** () | Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET... | dotnet | 9.0.202 (+31) | `pkgx dotnet` |
 | **[doxygennl](./packages/doxygennl.md)** () | Generate documentation for several programming languages | doxygen | 1.14.0 (+9) | `pkgx doxygen` |
-| **[dozzledev](./packages/dozzledev.md)** () | Realtime log viewer for docker containers. | dozzle | 8.12.17 (+53) | `pkgx dozzle` |
+| **[dozzledev](./packages/dozzledev.md)** () | Realtime log viewer for docker containers. | dozzle | 8.12.18 (+54) | `pkgx dozzle` |
 | **[dprintdev](./packages/dprintdev.md)** () | Pluggable and configurable code formatting platform written in Rust. | dprint | 0.50.0 (+26) | `pkgx dprint` |
 | **[drifreedesktoporg](./packages/drifreedesktoporg.md)** (libdrm) |  | - | 2.4.124 (+9) | `pkgx libdrm` |
 | **[duktapeorg](./packages/duktapeorg.md)** () | Duktape - embeddable Javascript engine with a focus on portability and compact footprint | duk | 2.7.0 (+0) | `pkgx duk` |
@@ -761,7 +761,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[pkgxshdev](./packages/pkgxshdev.md)** (dev) | isolated `dev` environments | dev | 1.8.1 (+11) | `pkgx dev` |
 | **[pkgxshpkgm](./packages/pkgxshpkgm.md)** (pkgm) | Install `pkgx` packages to `/usr/local` | pkgm | 0.11.1 (+9) | `pkgx pkgm` |
 | **[pkllangorg](./packages/pkllangorg.md)** () | A configuration as code language with rich validation and tooling. | jpkl, pkl | 0.28.2 (+11) | `pkgx pkl-lang.org` |
-| **[planetscalecom](./packages/planetscalecom.md)** (pscale) | The CLI for PlanetScale Database | pscale | 0.242.0 (+65) | `pkgx pscale` |
+| **[planetscalecom](./packages/planetscalecom.md)** (pscale) | The CLI for PlanetScale Database | pscale | 0.243.0 (+66) | `pkgx pscale` |
 | **[plantumlcom](./packages/plantumlcom.md)** () | Generate diagrams from textual description | plantuml | 1.2025.2 (+15) | `pkgx plantuml` |
 | **[plasmasturmorg](./packages/plasmasturmorg.md)** |  | - | latest | `pkgx plasmasturm.org` |
 | **[plocatesessenet](./packages/plocatesessenet.md)** |  | plocate, plocate-build, updatedb | 1.1.23 (+1) | `pkgx plocate.sesse.net` |
@@ -784,7 +784,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[projectdiscoveryionuclei](./packages/projectdiscoveryionuclei.md)** (nuclei) | Nuclei is a fast, customizable vulnerability scanner powered by the global security community and... | nuclei | 3.4.4 (+2) | `pkgx nuclei` |
 | **[projenio](./packages/projenio.md)** () | Rapidly build modern applications with advanced configuration management | projen | 0.92.8 (+34) | `pkgx projen` |
 | **[projorg](./packages/projorg.md)** () | PROJ - Cartographic Projections and Coordinate Transformations Library | proj | 9.6.0 (+8) | `pkgx proj` |
-| **[protobufdev](./packages/protobufdev.md)** (protocol buffers) | Protocol Buffers - Google's data interchange format | protoc | 31.0.0 (+40) | `pkgx Protocol Buffers` |
+| **[protobufdev](./packages/protobufdev.md)** (protocol buffers) | Protocol Buffers - Google's data interchange format | protoc | 31.1.0 (+42) | `pkgx Protocol Buffers` |
 | **[prqllangorg](./packages/prqllangorg.md)** () | PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement | prql-compiler, prqlc | 0.13.4 (+32) | `pkgx prql` |
 | **[psycopgorg](./packages/psycopgorg.md)** |  | - | latest | `pkgx psycopg.org` |
 | **[publichronopikde](./packages/publichronopikde.md)** |  | - | latest | `pkgx public.hronopik.de` |

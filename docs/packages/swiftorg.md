@@ -50,20 +50,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `6.1.1`, `6.1.0`, `6.0.3`, `6.0.2`, `6.0.1`
-- `6.0.0`, `5.10.1`, `5.10.0`, `5.9.2`
+- `6.1.2`, `6.1.1`, `6.1.0`, `6.0.3`, `6.0.2`
+- `6.0.1`, `6.0.0`, `5.10.1`, `5.10.0`, `5.9.2`
 
 </details>
 
-**Latest Version**: `6.1.1`
+**Latest Version**: `6.1.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx swift@6.1.1
+pkgx swift@6.1.2
 ```
 
 ## Dependencies

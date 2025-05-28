@@ -12,6 +12,7 @@ export const helmshPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '3.18.1',
     '3.18.0',
     '3.17.3',
     '3.17.2',

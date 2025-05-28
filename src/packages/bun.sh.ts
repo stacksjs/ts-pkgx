@@ -13,6 +13,7 @@ export const bunshPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '1.2.15',
     '1.2.14',
     '1.2.13',
     '1.2.12',
