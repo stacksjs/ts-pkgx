@@ -20,6 +20,7 @@ export const projenioPackage = {
     'nodejs.org^22 || ^20 || ^18',
   ] as const,
   versions: [
+    '0.92.8',
     '0.92.7',
     '0.92.6',
     '0.92.5',

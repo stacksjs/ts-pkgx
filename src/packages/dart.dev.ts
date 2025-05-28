@@ -13,6 +13,7 @@ export const dartdevPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '3.8.1',
     '3.8.0',
     '3.7.3',
     '3.7.2',

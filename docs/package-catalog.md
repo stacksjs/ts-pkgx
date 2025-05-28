@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-28T10:48:51.473Z
+- **Last Updated**: 2025-05-28T16:49:25.380Z
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[crystallangorg](./packages/crystallangorg.md)** () | Fast and statically typed, compiled language with Ruby-like syntax | crystal | 1.16.3 (+18) | `pkgx crystal` |
-| **[dartdev](./packages/dartdev.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.8.0 (+34) | `pkgx dart` |
+| **[dartdev](./packages/dartdev.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.8.1 (+35) | `pkgx dart` |
 | **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.3 (+128) | `pkgx deno` |
 | **[elixirlangorg](./packages/elixirlangorg.md)** () | Elixir is a dynamic, functional language for building scalable and maintainable applications | elixir, elixirc, iex, ... (+1) | 1.18.4 (+23) | `pkgx elixir-lang.org` |
 | **[erlangorg](./packages/erlangorg.md)** () | Programming language for highly scalable real-time systems | ct_run, dialyzer, epmd, ... (+6) | 28.0.0 (+71) | `pkgx erlang.org` |
@@ -241,7 +241,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[asciinemaorg](./packages/asciinemaorg.md)** () | Record and share terminal sessions | asciinema | 2.4.0 (+0) | `pkgx asciinema` |
 | **[aspellnet](./packages/aspellnet.md)** () | Spell checker with better logic than ispell | aspell, aspell-import, precat, ... (+6) | 0.60.8.1 (+1) | `pkgx aspell.net` |
 | **[assimporg](./packages/assimporg.md)** () | The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified a... | assimp | 5.4.3 (+6) | `pkgx assimp` |
-| **[astgrepgithubio](./packages/astgrepgithubio.md)** () | ⚡A CLI tool for code structural search, lint and rewriting. Written in Rust | sg, ast-grep | 0.38.2 (+78) | `pkgx ast-grep.github.io` |
+| **[astgrepgithubio](./packages/astgrepgithubio.md)** () | ⚡A CLI tool for code structural search, lint and rewriting. Written in Rust | sg, ast-grep | 0.38.3 (+79) | `pkgx ast-grep.github.io` |
 | **[astralsh](./packages/astralsh.md)** () |  | - | latest | `pkgx astral.sh` |
 | **[astralshruff](./packages/astralshruff.md)** (ruff) | An extremely fast Python linter and code formatter, written in Rust. | ruff | 0.11.11 (+82) | `pkgx ruff` |
 | **[astralshty](./packages/astralshty.md)** (ty) | An extremely fast Python type checker and language server, written in Rust. | ty | 0.0.0.8 (+0) | `pkgx ty` |
@@ -264,7 +264,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[boostorg](./packages/boostorg.md)** () | Super-project for modularized Boost | - | 1.88.0 (+7) | `pkgx boost.org` |
 | **[borepub](./packages/borepub.md)** () | Modern, simple TCP tunnel in Rust that exposes local ports to a remote server | bore | 0.5.3 (+3) | `pkgx bore` |
 | **[breakfastquaycom](./packages/breakfastquaycom.md)** |  | - | latest | `pkgx breakfastquay.com` |
-| **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.4 (+15) | `pkgx browser-use.com` |
+| **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.5 (+16) | `pkgx browser-use.com` |
 | **[brxken128githubio](./packages/brxken128githubio.md)** |  | - | latest | `pkgx brxken128.github.io` |
 | **[budimanjojogithubio](./packages/budimanjojogithubio.md)** |  | - | latest | `pkgx budimanjojo.github.io` |
 | **[bufbuild](./packages/bufbuild.md)** () | The best way of working with Protocol Buffers. | buf | 1.54.0 (+40) | `pkgx buf` |
@@ -347,7 +347,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[debianorg](./packages/debianorg.md)** () |  | - | latest | `pkgx debian.org` |
 | **[deepwisdomai](./packages/deepwisdomai.md)** (metagpt) | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx MetaGPT` |
 | **[denilsonsanombr](./packages/denilsonsanombr.md)** () |  | - | latest | `pkgx denilson.sa.nom.br` |
-| **[depotdev](./packages/depotdev.md)** () | 🖥️ Depot CLI, build your Docker images in the cloud | depot | 2.85.3 (+35) | `pkgx depot` |
+| **[depotdev](./packages/depotdev.md)** () | 🖥️ Depot CLI, build your Docker images in the cloud | depot | 2.85.4 (+36) | `pkgx depot` |
 | **[destunreachorg](./packages/destunreachorg.md)** () |  | - | latest | `pkgx dest-unreach.org` |
 | **[developer1passwordcom1passwordcli](./packages/developer1passwordcom1passwordcli.md)** (1password cli, 1password-cli) |  | op | 2.31.0 (+1) | `pkgx 1Password CLI` |
 | **[developersyubicocom](./packages/developersyubicocom.md)** () |  | - | latest | `pkgx developers.yubico.com` |
@@ -535,7 +535,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[jedisct1githubio](./packages/jedisct1githubio.md)** |  | - | latest | `pkgx jedisct1.github.io` |
 | **[jedsoftorg](./packages/jedsoftorg.md)** |  | - | latest | `pkgx jedsoft.org` |
 | **[jemallocnet](./packages/jemallocnet.md)** |  | - | 5.3.0 (+0) | `pkgx jemalloc.net` |
-| **[jenkinsio](./packages/jenkinsio.md)** (jenkins-lts) | Extendable open source continuous integration server | jenkins-lts, jenkins-lts-cli | 2.504.1 (+17) | `pkgx jenkins-lts` |
+| **[jenkinsio](./packages/jenkinsio.md)** (jenkins-lts) | Extendable open source continuous integration server | jenkins-lts, jenkins-lts-cli | 2.504.2 (+18) | `pkgx jenkins-lts` |
 | **[jenkinsxio](./packages/jenkinsxio.md)** (jenkins x) | Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests usin... | jx | 3.11.81 (+54) | `pkgx Jenkins X` |
 | **[jenvbe](./packages/jenvbe.md)** () | Manage your Java environment | jenv | 0.5.7 (+1) | `pkgx jenv` |
 | **[jetporchcom](./packages/jetporchcom.md)** () | Read-only mirror: see https://www.jetporch.com/community/sourcehut | jetp | 0.0.1 (+0) | `pkgx jetp` |
@@ -658,7 +658,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoftcommarkitdown](./packages/microsoftcommarkitdown.md)** (markitdown) | Python tool for converting files and office documents to Markdown. | markitdown | 0.0.1.3 (+0) | `pkgx markitdown` |
 | **[midnightcommanderorg](./packages/midnightcommanderorg.md)** (midnight commander) | Terminal-based visual file manager | mc, mcdiff, mcedit, ... (+1) | 4.8.33 (+5) | `pkgx Midnight Commander` |
 | **[minio](./packages/minio.md)** (minio) | MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license. | minio | 2023.10.25.6.33.25 (+0) | `pkgx minio` |
-| **[misejdxdev](./packages/misejdxdev.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.5.14 (+278) | `pkgx mise` |
+| **[misejdxdev](./packages/misejdxdev.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.5.15 (+279) | `pkgx mise` |
 | **[mitmproxyorg](./packages/mitmproxyorg.md)** () | An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers. | mitmproxy | 12.1.1 (+26) | `pkgx mitmproxy` |
 | **[mkcertdev](./packages/mkcertdev.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you'd l... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
 | **[mkdocsorg](./packages/mkdocsorg.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
@@ -761,7 +761,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[pkgxshdev](./packages/pkgxshdev.md)** (dev) | isolated `dev` environments | dev | 1.8.1 (+11) | `pkgx dev` |
 | **[pkgxshpkgm](./packages/pkgxshpkgm.md)** (pkgm) | Install `pkgx` packages to `/usr/local` | pkgm | 0.11.1 (+9) | `pkgx pkgm` |
 | **[pkllangorg](./packages/pkllangorg.md)** () | A configuration as code language with rich validation and tooling. | jpkl, pkl | 0.28.2 (+11) | `pkgx pkl-lang.org` |
-| **[planetscalecom](./packages/planetscalecom.md)** (pscale) | The CLI for PlanetScale Database | pscale | 0.241.0 (+64) | `pkgx pscale` |
+| **[planetscalecom](./packages/planetscalecom.md)** (pscale) | The CLI for PlanetScale Database | pscale | 0.242.0 (+65) | `pkgx pscale` |
 | **[plantumlcom](./packages/plantumlcom.md)** () | Generate diagrams from textual description | plantuml | 1.2025.2 (+15) | `pkgx plantuml` |
 | **[plasmasturmorg](./packages/plasmasturmorg.md)** |  | - | latest | `pkgx plasmasturm.org` |
 | **[plocatesessenet](./packages/plocatesessenet.md)** |  | plocate, plocate-build, updatedb | 1.1.23 (+1) | `pkgx plocate.sesse.net` |
@@ -782,9 +782,9 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[projectcopaceticgithubio](./packages/projectcopaceticgithubio.md)** (copa) | Tool to directly patch container images given the vulnerability scanning results | copa | 0.10.0 (+4) | `pkgx copa` |
 | **[projectdiscoveryio](./packages/projectdiscoveryio.md)** |  | - | latest | `pkgx projectdiscovery.io` |
 | **[projectdiscoveryionuclei](./packages/projectdiscoveryionuclei.md)** (nuclei) | Nuclei is a fast, customizable vulnerability scanner powered by the global security community and... | nuclei | 3.4.4 (+2) | `pkgx nuclei` |
-| **[projenio](./packages/projenio.md)** () | Rapidly build modern applications with advanced configuration management | projen | 0.92.7 (+33) | `pkgx projen` |
+| **[projenio](./packages/projenio.md)** () | Rapidly build modern applications with advanced configuration management | projen | 0.92.8 (+34) | `pkgx projen` |
 | **[projorg](./packages/projorg.md)** () | PROJ - Cartographic Projections and Coordinate Transformations Library | proj | 9.6.0 (+8) | `pkgx proj` |
-| **[protobufdev](./packages/protobufdev.md)** (protocol buffers) | Protocol Buffers - Google's data interchange format | protoc | 31.0.0 (+39) | `pkgx Protocol Buffers` |
+| **[protobufdev](./packages/protobufdev.md)** (protocol buffers) | Protocol Buffers - Google's data interchange format | protoc | 31.0.0 (+40) | `pkgx Protocol Buffers` |
 | **[prqllangorg](./packages/prqllangorg.md)** () | PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement | prql-compiler, prqlc | 0.13.4 (+32) | `pkgx prql` |
 | **[psycopgorg](./packages/psycopgorg.md)** |  | - | latest | `pkgx psycopg.org` |
 | **[publichronopikde](./packages/publichronopikde.md)** |  | - | latest | `pkgx public.hronopik.de` |
@@ -827,7 +827,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[rsyncsambaorg](./packages/rsyncsambaorg.md)** () | An open source utility that provides fast incremental file transfer. It also has useful features ... | rsync, rsync-ssl | 3.4.1 (+3) | `pkgx rsync` |
 | **[rtmpdumpmplayerhqhu](./packages/rtmpdumpmplayerhqhu.md)** () | Tool for downloading RTMP streaming media | rtmpdump, rtmpgw, rtmpsrv, ... (+1) | 2.3.0 (+1) | `pkgx rtmpdump` |
 | **[rtomaykogithubio](./packages/rtomaykogithubio.md)** |  | - | latest | `pkgx rtomayko.github.io` |
-| **[rubocoporg](./packages/rubocoporg.md)** () | A Ruby static code analyzer and formatter, based on the community Ruby style guide. | rubocop | 1.75.7 (+22) | `pkgx rubocop` |
+| **[rubocoporg](./packages/rubocoporg.md)** () | A Ruby static code analyzer and formatter, based on the community Ruby style guide. | rubocop | 1.75.8 (+23) | `pkgx rubocop` |
 | **[ruciocernch](./packages/ruciocernch.md)** |  | - | latest | `pkgx rucio.cern.ch` |
 | **[runatlantisio](./packages/runatlantisio.md)** (atlantis) | Terraform Pull Request Automation tool | atlantis | 0.34.0 (+17) | `pkgx atlantis` |
 | **[rustlanggithubio](./packages/rustlanggithubio.md)** |  | - | latest | `pkgx rust-lang.github.io` |
@@ -891,7 +891,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[systemdio](./packages/systemdio.md)** () | The systemd System and Service Manager | busctl, coredumpctl, hostnamectl, ... (+52) | 257.5.0 (+21) | `pkgx systemd.io` |
 | **[tagliborg](./packages/tagliborg.md)** (taglib-config) | TagLib Audio Meta-Data Library | taglib-config | 2.0.2 (+3) | `pkgx taglib-config` |
 | **[tailcallrun](./packages/tailcallrun.md)** () | High Performance GraphQL Runtime | tailcall | 1.6.11 (+622) | `pkgx tailcall` |
-| **[tailwindcsscom](./packages/tailwindcsscom.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.7 (+40) | `pkgx tailwindcss` |
+| **[tailwindcsscom](./packages/tailwindcsscom.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.8 (+41) | `pkgx tailwindcss` |
 | **[taku910githubio](./packages/taku910githubio.md)** |  | - | latest | `pkgx taku910.github.io` |
 | **[talosdev](./packages/talosdev.md)** (talosctl) | CLI for out-of-band management of Kubernetes nodes created by Talos | talosctl | 1.10.2 (+25) | `pkgx talosctl` |
 | **[taplotamasfedev](./packages/taplotamasfedev.md)** () | A TOML toolkit written in Rust | taplo | 0.10.0 (+4) | `pkgx taplo` |
@@ -906,7 +906,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[templguide](./packages/templguide.md)** () | A language for writing HTML user interfaces in Go. | templ | 0.3.865 (+23) | `pkgx templ` |
 | **[temporalio](./packages/temporalio.md)** () | Command-line interface for running Temporal Server and interacting with Workflows, Activities, Na... | temporal | 1.3.0 (+13) | `pkgx temporal` |
 | **[terraformdocsio](./packages/terraformdocsio.md)** () | Generate documentation from Terraform modules in various output formats | terraform-docs | 0.20.0 (+4) | `pkgx terraform-docs` |
-| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.80.3 (+342) | `pkgx terragrunt` |
+| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.80.4 (+343) | `pkgx terragrunt` |
 | **[terratagio](./packages/terratagio.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag` |
 | **[tesseractocrgithubio](./packages/tesseractocrgithubio.md)** () | Tesseract Open Source OCR Engine (main repository) | tesseract | 5.5.1 (+8) | `pkgx tesseract` |
 | **[thekelleysorguk](./packages/thekelleysorguk.md)** |  | - | latest | `pkgx thekelleys.org.uk` |

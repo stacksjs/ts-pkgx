@@ -25,23 +25,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 23 versions</summary>
+<summary>Show all 24 versions</summary>
 
-- `1.75.7`, `1.75.6`, `1.75.5`, `1.75.4`, `1.75.3`
-- `1.75.2`, `1.75.1`, `1.75.0`, `1.74.0`, `1.73.2`
-- `1.73.1`, `1.73.0`, `1.72.2`, `1.72.1`, `1.72.0`
-- `1.71.2`, `1.71.1`, `1.71.0`, `1.70.0`, `1.69.2`
-- `1.69.1`, `1.69.0`, `1.68.0`
+- `1.75.8`, `1.75.7`, `1.75.6`, `1.75.5`, `1.75.4`
+- `1.75.3`, `1.75.2`, `1.75.1`, `1.75.0`, `1.74.0`
+- `1.73.2`, `1.73.1`, `1.73.0`, `1.72.2`, `1.72.1`
+- `1.72.0`, `1.71.2`, `1.71.1`, `1.71.0`, `1.70.0`
+- `1.69.2`, `1.69.1`, `1.69.0`, `1.68.0`
 
 </details>
 
-**Latest Version**: `1.75.7`
+**Latest Version**: `1.75.8`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx rubocop@1.75.7
+pkgx rubocop@1.75.8
 ```
 
 ## Dependencies

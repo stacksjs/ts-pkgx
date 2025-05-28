@@ -12,6 +12,7 @@ export const planetscalecomPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.242.0',
     '0.241.0',
     '0.240.0',
     '0.239.0',

@@ -15,6 +15,7 @@ export const rubocoporgPackage = {
     'rubygems.org',
   ] as const,
   versions: [
+    '1.75.8',
     '1.75.7',
     '1.75.6',
     '1.75.5',

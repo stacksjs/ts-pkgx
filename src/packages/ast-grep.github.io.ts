@@ -13,6 +13,7 @@ export const astgrepgithubioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.38.3',
     '0.38.2',
     '0.38.1',
     '0.38.0',

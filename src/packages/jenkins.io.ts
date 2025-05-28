@@ -15,6 +15,7 @@ export const jenkinsioPackage = {
     'openjdk.org<20',
   ] as const,
   versions: [
+    '2.504.2',
     '2.504.1',
     '2.492.3',
     '2.492.2',
