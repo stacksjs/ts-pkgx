@@ -26,23 +26,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 23 versions</summary>
+<summary>Show all 24 versions</summary>
 
-- `8.13.0`, `8.12.1`, `8.12.0`, `8.11.1`, `8.11.0`
-- `8.10.1`, `8.10.0`, `8.9.1`, `8.9.0`, `8.8.0`
-- `8.7.1`, `8.6.0`, `8.5.0`, `8.4.0`, `8.3.0`
-- `8.2.1`, `8.2.0`, `8.1.2`, `8.1.0`, `8.0.1`
-- `8.0.0`, `7.86.0`, `7.85.0`
+- `8.14.0`, `8.13.0`, `8.12.1`, `8.12.0`, `8.11.1`
+- `8.11.0`, `8.10.1`, `8.10.0`, `8.9.1`, `8.9.0`
+- `8.8.0`, `8.7.1`, `8.6.0`, `8.5.0`, `8.4.0`
+- `8.3.0`, `8.2.1`, `8.2.0`, `8.1.2`, `8.1.0`
+- `8.0.1`, `8.0.0`, `7.86.0`, `7.85.0`
 
 </details>
 
-**Latest Version**: `8.13.0`
+**Latest Version**: `8.14.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx cURL@8.13.0
+pkgx cURL@8.14.0
 ```
 
 ## Dependencies

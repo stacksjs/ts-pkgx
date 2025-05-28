@@ -25,22 +25,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 19 versions</summary>
+<summary>Show all 20 versions</summary>
 
-- `0.20.0`, `0.19.0`, `0.18.1`, `0.18.0`, `0.17.1`
-- `0.17.0`, `0.16.1`, `0.16.0`, `0.15.0`, `0.14.0`
-- `0.13.3`, `0.13.2`, `0.13.1`, `0.13.0`, `0.12.1`
-- `0.12.0`, `0.11.2`, `0.11.1`, `0.11.0`
+- `0.20.1`, `0.20.0`, `0.19.0`, `0.18.1`, `0.18.0`
+- `0.17.1`, `0.17.0`, `0.16.1`, `0.16.0`, `0.15.0`
+- `0.14.0`, `0.13.3`, `0.13.2`, `0.13.1`, `0.13.0`
+- `0.12.1`, `0.12.0`, `0.11.2`, `0.11.1`, `0.11.0`
 
 </details>
 
-**Latest Version**: `0.20.0`
+**Latest Version**: `0.20.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx jumppad@0.20.0
+pkgx jumppad@0.20.1
 ```
 
 ## Usage Examples

@@ -12,6 +12,7 @@ export const treesittergithubioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.25.5',
     '0.25.4',
     '0.25.3',
     '0.25.2',

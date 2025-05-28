@@ -12,6 +12,7 @@ export const diggerdevPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.6.102',
     '0.6.101',
     '0.6.100',
     '0.6.99',

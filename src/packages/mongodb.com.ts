@@ -17,6 +17,8 @@ export const mongodbcomPackage = {
     'openssl.org@1.1',
   ] as const,
   versions: [
+    '8.1.1',
+    '8.1.0',
     '8.0.9',
     '8.0.8',
     '8.0.7',

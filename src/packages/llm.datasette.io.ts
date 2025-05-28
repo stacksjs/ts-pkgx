@@ -14,6 +14,7 @@ export const llmdatasetteioPackage = {
     'python.org~3.11',
   ] as const,
   versions: [
+    '0.26.0',
     '0.25.0',
     '0.24.2',
     '0.24.1',

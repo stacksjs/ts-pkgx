@@ -17,6 +17,7 @@ export const curlsePackage = {
     'zlib.net^1.2.11',
   ] as const,
   versions: [
+    '8.14.0',
     '8.13.0',
     '8.12.1',
     '8.12.0',

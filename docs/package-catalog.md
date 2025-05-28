@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-27T20:46:48.736Z
+- **Last Updated**: 2025-05-28T10:48:51.473Z
 
 ## Table of Contents
 
@@ -103,7 +103,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[duckdborg](./packages/duckdborg.md)** () | DuckDB is an analytical in-process SQL database management system | duckdb | 1.3.0 (+18) | `pkgx duckdb` |
-| **[mongodbcom](./packages/mongodbcom.md)** () | The MongoDB Database | install_compass, mongod, mongos | 8.0.9 (+25) | `pkgx mongodb.com` |
+| **[mongodbcom](./packages/mongodbcom.md)** () | The MongoDB Database | install_compass, mongod, mongos | 8.1.1 (+27) | `pkgx mongodb.com` |
 | **[mysqlcom](./packages/mysqlcom.md)** () | MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open... | mysql_client_test, my_print_defaults, myisam_ftdump, ... (+28) | 9.3.0 (+23) | `pkgx mysql.com` |
 | **[postgresqlorg](./packages/postgresqlorg.md)** () | Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't wo... | clusterdb, createdb, dropdb, ... (+25) | 17.2.0 (+11) | `pkgx postgresql.org` |
 | **[redisio](./packages/redisio.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.2 (+36) | `pkgx redis` |
@@ -140,7 +140,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[awsamazoncom](./packages/awsamazoncom.md)** () |  | - | latest | `pkgx aws.amazon.com` |
 | **[cloudflarecom](./packages/cloudflarecom.md)** () |  | - | latest | `pkgx cloudflare.com` |
 | **[digitaloceancom](./packages/digitaloceancom.md)** () |  | - | latest | `pkgx digitalocean.com` |
-| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.131 (+389) | `pkgx fly` |
+| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.132 (+390) | `pkgx fly` |
 | **[githubcom](./packages/githubcom.md)** |  | - | latest | `pkgx github.com` |
 | **[gitlabcom](./packages/gitlabcom.md)** |  | - | latest | `pkgx gitlab.com` |
 | **[herokucom](./packages/herokucom.md)** () | CLI for Heroku | heroku | 10.8.0 (+29) | `pkgx heroku` |
@@ -185,7 +185,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[curlse](./packages/curlse.md)** () | A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP... | curl, curl-config | 8.13.0 (+22) | `pkgx cURL` |
+| **[curlse](./packages/curlse.md)** () | A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP... | curl, curl-config | 8.14.0 (+23) | `pkgx cURL` |
 | **[htopdev](./packages/htopdev.md)** () | Improved top (interactive process viewer) | htop | 3.4.1 (+4) | `pkgx htop` |
 
 ## Web Servers & Proxies
@@ -356,7 +356,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dgraphio](./packages/dgraphio.md)** () | high-performance graph database for real-time use cases | dgraph | 24.1.3 (+10) | `pkgx dgraph` |
 | **[dhalllangorg](./packages/dhalllangorg.md)** () | Interpreter for the Dhall language | dhall | 1.42.2 (+1) | `pkgx dhall` |
 | **[dhruvkbdev](./packages/dhruvkbdev.md)** () |  | - | latest | `pkgx dhruvkb.dev` |
-| **[diggerdev](./packages/diggerdev.md)** () | Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI... | digger | 0.6.101 (+184) | `pkgx digger` |
+| **[diggerdev](./packages/diggerdev.md)** () | Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI... | digger | 0.6.102 (+185) | `pkgx digger` |
 | **[digiporg](./packages/digiporg.md)** () |  | - | latest | `pkgx digip.org` |
 | **[direnvnet](./packages/direnvnet.md)** () | Load/unload environment variables based on $PWD | direnv | 2.36.0 (+5) | `pkgx direnv` |
 | **[dkrzde](./packages/dkrzde.md)** () |  | - | latest | `pkgx dkrz.de` |
@@ -461,7 +461,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitlfscom](./packages/gitlfscom.md)** () | Git extension for versioning large files | git-lfs | 3.6.1 (+5) | `pkgx git-lfs` |
 | **[gitosgeoorg](./packages/gitosgeoorg.md)** |  | - | latest | `pkgx git.osgeo.org` |
 | **[gitquickstatssh](./packages/gitquickstatssh.md)** () | ▁▅▆▃▅ Git quick statistics is a simple and efficient way to access various statistics in git repo... | git-quick-stats | 2.5.8 (+9) | `pkgx git-quick-stats` |
-| **[gittowncom](./packages/gittowncom.md)** () | High-level command-line interface for Git | git-town | 20.2.0 (+52) | `pkgx git-town` |
+| **[gittowncom](./packages/gittowncom.md)** () | High-level command-line interface for Git | git-town | 21.0.0 (+53) | `pkgx git-town` |
 | **[gittoztnet](./packages/gittoztnet.md)** |  | - | latest | `pkgx git.tozt.net` |
 | **[glarosdtcumnedu](./packages/glarosdtcumnedu.md)** |  | - | latest | `pkgx glaros.dtc.umn.edu` |
 | **[glewsourceforgeio](./packages/glewsourceforgeio.md)** () | The OpenGL Extension Wrangler Library | glewinfo, visualinfo | 2.2.0 (+0) | `pkgx glew.sourceforge.io` |
@@ -546,7 +546,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[jsonnetorg](./packages/jsonnetorg.md)** () | Jsonnet - The data templating language | jsonnet, jsonnetfmt | 0.21.0 (+1) | `pkgx jsonnet` |
 | **[jugitfzjuelichde](./packages/jugitfzjuelichde.md)** |  | - | latest | `pkgx jugit.fz-juelich.de` |
 | **[jujuis](./packages/jujuis.md)** () | Orchestration engine that enables the deployment, integration and lifecycle management of applica... | juju | 3.6.5 (+14) | `pkgx juju` |
-| **[jumppaddev](./packages/jumppaddev.md)** () | Modern cloud native development environments | jumppad | 0.20.0 (+18) | `pkgx jumppad` |
+| **[jumppaddev](./packages/jumppaddev.md)** () | Modern cloud native development environments | jumppad | 0.20.1 (+19) | `pkgx jumppad` |
 | **[jupyterorg](./packages/jupyterorg.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.3 (+48) | `pkgx jupyter.org` |
 | **[justsystems](./packages/justsystems.md)** () | Handy way to save and run project-specific commands | just | 1.40.0 (+39) | `pkgx just` |
 | **[k3dio](./packages/k3dio.md)** () | Little helper to run CNCF's k3s in Docker | k3d | 5.8.3 (+16) | `pkgx k3d` |
@@ -581,7 +581,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[lavinmqcom](./packages/lavinmqcom.md)** () | Lightweight and fast AMQP (0-9-1) server | lavinmq, lavinmqctl, lavinmqperf | 2.3.0 (+6) | `pkgx lavinmq` |
 | **[lcdforg](./packages/lcdforg.md)** |  | - | latest | `pkgx lcdf.org` |
 | **[leethomasongithubio](./packages/leethomasongithubio.md)** |  | - | latest | `pkgx leethomason.github.io` |
-| **[leolangorg](./packages/leolangorg.md)** () | 🦁 The Leo Programming Language. A Programming Language for Formally Verified, Zero-Knowledge App... | leo | 2.6.0 (+11) | `pkgx leo` |
+| **[leolangorg](./packages/leolangorg.md)** () | 🦁 The Leo Programming Language. A Programming Language for Formally Verified, Zero-Knowledge App... | leo | 2.6.1 (+12) | `pkgx leo` |
 | **[leonerdorguk](./packages/leonerdorguk.md)** |  | - | latest | `pkgx leonerd.org.uk` |
 | **[leptonicaorg](./packages/leptonicaorg.md)** () | Leptonica is an open source library containing software that is broadly useful for image processi... | convertfilestopdf, convertfilestops, convertformat, ... (+7) | 1.85.0 (+3) | `pkgx leptonica.org` |
 | **[lftpyarru](./packages/lftpyarru.md)** () | sophisticated command line file transfer program (ftp, http, sftp, fish, torrent) | lftp, lftpget | 4.9.3 (+2) | `pkgx lftp` |
@@ -619,7 +619,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[linuxpamorg](./packages/linuxpamorg.md)** () | Linux PAM (Pluggable Authentication Modules for Linux) project | faillock, mkhomedir_helper, pam_namespace_helper, ... (+2) | 1.7.0 (+3) | `pkgx linux-pam.org` |
 | **[liteclicom](./packages/liteclicom.md)** () | CLI for SQLite Databases with auto-completion and syntax highlighting | litecli | 1.15.0 (+14) | `pkgx litecli` |
 | **[littlecmscom](./packages/littlecmscom.md)** () | A free, open source, CMM engine. It provides fast transforms between ICC profiles. | jpgicc, linkicc, psicc, ... (+2) | 2.17.0 (+3) | `pkgx littlecms.com` |
-| **[llmdatasetteio](./packages/llmdatasetteio.md)** () | Access large language models from the command-line | llm | 0.25.0 (+28) | `pkgx llm` |
+| **[llmdatasetteio](./packages/llmdatasetteio.md)** () | Access large language models from the command-line | llm | 0.26.0 (+29) | `pkgx llm` |
 | **[lloydgithubio](./packages/lloydgithubio.md)** |  | - | latest | `pkgx lloyd.github.io` |
 | **[llvmorg](./packages/llvmorg.md)** () | The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. | lld, clang, clang++, ... (+11) | 20.1.5 (+40) | `pkgx llvm.org` |
 | **[localaiio](./packages/localaiio.md)** () | :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-fir... | local-ai | 2.26.0 (+36) | `pkgx LocalAI` |
@@ -872,7 +872,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[sphinxdocorg](./packages/sphinxdocorg.md)** () | Tool to create intelligent and beautiful documentation | sphinx-apidoc, sphinx-autogen, sphinx-build, ... (+1) | 8.2.3 (+41) | `pkgx sphinx` |
 | **[sqlcdev](./packages/sqlcdev.md)** () | Generate type-safe code from SQL | sqlc | 1.29.0 (+2) | `pkgx sqlc` |
 | **[sqlfluffcom](./packages/sqlfluffcom.md)** () | A modular SQL linter and auto-formatter with support for multiple dialects and templated code. | sqlfluff | 3.4.0 (+22) | `pkgx sqlfluff` |
-| **[squawkhqcom](./packages/squawkhqcom.md)** () | 🐘 linter for PostgreSQL, focused on migrations | squawk | 2.9.0 (+31) | `pkgx squawk` |
+| **[squawkhqcom](./packages/squawkhqcom.md)** () | 🐘 linter for PostgreSQL, focused on migrations | squawk | 2.10.0 (+32) | `pkgx squawk` |
 | **[srtallianceorg](./packages/srtallianceorg.md)** () | Secure, Reliable, Transport | srt-ffplay, srt-file-transmit, srt-live-transmit, ... (+1) | 1.5.4 (+2) | `pkgx srt` |
 | **[sshxio](./packages/sshxio.md)** () | Fast, collaborative live terminal sharing over the web | sshx | 2023.11.14 (+0) | `pkgx sshx` |
 | **[starshiprs](./packages/starshiprs.md)** () | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |
@@ -921,7 +921,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[tlrdev](./packages/tlrdev.md)** (teller) | Cloud native secrets management for developers - never leave your command line for secrets. | teller | 2.0.7 (+4) | `pkgx teller` |
 | **[tmateio](./packages/tmateio.md)** () | Instant Terminal Sharing | tmate | 2.4.0 (+0) | `pkgx tmate` |
 | **[toxwiki](./packages/toxwiki.md)** () | Command line driven CI frontend and development task automation tool. | tox | 4.26.0 (+14) | `pkgx tox` |
-| **[treesittergithubio](./packages/treesittergithubio.md)** () | Parser generator tool and incremental parsing library | tree-sitter | 0.25.4 (+25) | `pkgx tree-sitter` |
+| **[treesittergithubio](./packages/treesittergithubio.md)** () | Parser generator tool and incremental parsing library | tree-sitter | 0.25.5 (+26) | `pkgx tree-sitter` |
 | **[trippyclirs](./packages/trippyclirs.md)** () | Network diagnostic tool, inspired by mtr | trip | 0.13.0 (+6) | `pkgx trip` |
 | **[trufflesecuritycom](./packages/trufflesecuritycom.md)** |  | - | latest | `pkgx trufflesecurity.com` |
 | **[tsl0922githubio](./packages/tsl0922githubio.md)** |  | - | latest | `pkgx tsl0922.github.io` |

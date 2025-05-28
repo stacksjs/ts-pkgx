@@ -15,6 +15,7 @@ export const leolangorgPackage = {
     'curl.se^8.4',
   ] as const,
   versions: [
+    '2.6.1',
     '2.6.0',
     '2.5.0',
     '2.4.1',
