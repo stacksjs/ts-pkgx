@@ -16,6 +16,7 @@ export const pandocorgPackage = {
     'sourceware.org/libffi@3',
   ] as const,
   versions: [
+    '3.7.0.2',
     '3.7.0.1',
     '3.7.0',
     '3.6.4',

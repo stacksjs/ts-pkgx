@@ -16,6 +16,7 @@ export const misejdxdevPackage = {
     'libgit2.org^1',
   ] as const,
   versions: [
+    '2025.5.16',
     '2025.5.15',
     '2025.5.14',
     '2025.5.13',

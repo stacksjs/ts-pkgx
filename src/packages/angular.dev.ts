@@ -14,6 +14,8 @@ export const angulardevPackage = {
     'nodejs.org^20',
   ] as const,
   versions: [
+    '20.0.0',
+    '19.2.14',
     '19.2.13',
     '19.2.12',
     '19.2.11',

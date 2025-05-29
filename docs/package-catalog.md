@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-29T03:59:37.098Z
+- **Last Updated**: 2025-05-29T08:47:37.795Z
 
 ## Table of Contents
 
@@ -63,7 +63,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[angulardev](./packages/angulardev.md)** (ng) | CLI tool for Angular | ng | 19.2.13 (+101) | `pkgx ng` |
+| **[angulardev](./packages/angulardev.md)** (ng) | CLI tool for Angular | ng | 20.0.0 (+103) | `pkgx ng` |
 | **[bunsh](./packages/bunsh.md)** (bun) | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.15 (+118) | `pkgx bun` |
 | **[classicyarnpkgcom](./packages/classicyarnpkgcom.md)** () | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx classic.yarnpkg.com` |
 | **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.3 (+128) | `pkgx deno` |
@@ -545,7 +545,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[jpegorg](./packages/jpegorg.md)** |  | - | latest | `pkgx jpeg.org` |
 | **[jsonnetorg](./packages/jsonnetorg.md)** () | Jsonnet - The data templating language | jsonnet, jsonnetfmt | 0.21.0 (+1) | `pkgx jsonnet` |
 | **[jugitfzjuelichde](./packages/jugitfzjuelichde.md)** |  | - | latest | `pkgx jugit.fz-juelich.de` |
-| **[jujuis](./packages/jujuis.md)** () | Orchestration engine that enables the deployment, integration and lifecycle management of applica... | juju | 3.6.5 (+14) | `pkgx juju` |
+| **[jujuis](./packages/jujuis.md)** () | Orchestration engine that enables the deployment, integration and lifecycle management of applica... | juju | 3.6.6 (+15) | `pkgx juju` |
 | **[jumppaddev](./packages/jumppaddev.md)** () | Modern cloud native development environments | jumppad | 0.20.1 (+19) | `pkgx jumppad` |
 | **[jupyterorg](./packages/jupyterorg.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.3 (+48) | `pkgx jupyter.org` |
 | **[justsystems](./packages/justsystems.md)** () | Handy way to save and run project-specific commands | just | 1.40.0 (+39) | `pkgx just` |
@@ -658,7 +658,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoftcommarkitdown](./packages/microsoftcommarkitdown.md)** (markitdown) | Python tool for converting files and office documents to Markdown. | markitdown | 0.0.1.3 (+0) | `pkgx markitdown` |
 | **[midnightcommanderorg](./packages/midnightcommanderorg.md)** (midnight commander) | Terminal-based visual file manager | mc, mcdiff, mcedit, ... (+1) | 4.8.33 (+5) | `pkgx Midnight Commander` |
 | **[minio](./packages/minio.md)** (minio) | MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license. | minio | 2023.10.25.6.33.25 (+0) | `pkgx minio` |
-| **[misejdxdev](./packages/misejdxdev.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.5.15 (+279) | `pkgx mise` |
+| **[misejdxdev](./packages/misejdxdev.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.5.16 (+280) | `pkgx mise` |
 | **[mitmproxyorg](./packages/mitmproxyorg.md)** () | An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers. | mitmproxy | 12.1.1 (+26) | `pkgx mitmproxy` |
 | **[mkcertdev](./packages/mkcertdev.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you'd l... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
 | **[mkdocsorg](./packages/mkdocsorg.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
@@ -744,7 +744,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[packerio](./packages/packerio.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.12.0 (+10) | `pkgx packer` |
 | **[pagureio](./packages/pagureio.md)** |  | - | latest | `pkgx pagure.io` |
 | **[palletsprojectscom](./packages/palletsprojectscom.md)** |  | - | latest | `pkgx palletsprojects.com` |
-| **[pandocorg](./packages/pandocorg.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.7.0.1 (+29) | `pkgx pandoc` |
+| **[pandocorg](./packages/pandocorg.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.7.0.2 (+30) | `pkgx pandoc` |
 | **[pantsbuildorg](./packages/pantsbuildorg.md)** |  | - | latest | `pkgx pantsbuild.org` |
 | **[paulfitzgithubio](./packages/paulfitzgithubio.md)** |  | - | latest | `pkgx paulfitz.github.io` |
 | **[pcreorg](./packages/pcreorg.md)** () | Perl compatible regular expressions library | pcre-config, pcregrep, pcretest | 8.45.0 (+0) | `pkgx pcre` |

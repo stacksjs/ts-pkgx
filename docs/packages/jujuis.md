@@ -25,21 +25,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 15 versions</summary>
+<summary>Show all 16 versions</summary>
 
-- `3.6.5`, `3.6.4`, `3.6.3`, `3.6.2`, `3.6.1`
-- `3.6.0`, `3.5.7`, `3.5.6`, `3.5.5`, `3.5.4`
-- `3.5.3`, `3.4.6`, `3.3.7`, `3.1.10`, `2.9.51`
+- `3.6.6`, `3.6.5`, `3.6.4`, `3.6.3`, `3.6.2`
+- `3.6.1`, `3.6.0`, `3.5.7`, `3.5.6`, `3.5.5`
+- `3.5.4`, `3.5.3`, `3.4.6`, `3.3.7`, `3.1.10`
+- `2.9.51`
 
 </details>
 
-**Latest Version**: `3.6.5`
+**Latest Version**: `3.6.6`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx juju@3.6.5
+pkgx juju@3.6.6
 ```
 
 ## Usage Examples

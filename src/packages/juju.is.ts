@@ -12,6 +12,7 @@ export const jujuisPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '3.6.6',
     '3.6.5',
     '3.6.4',
     '3.6.3',
