@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-28T22:46:47.773Z
+- **Last Updated**: 2025-05-29T03:59:37.098Z
 
 ## Table of Contents
 
@@ -177,7 +177,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.49.0 (+20) | `pkgx git` |
 | **[neovimio](./packages/neovimio.md)** (nvim) | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.1 (+13) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** () | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
-| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1415 (+1990) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1418 (+1992) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
@@ -293,7 +293,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[chezmoiio](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.5 (+74) | `pkgx chezmoi` |
 | **[chiarkgreenendorguk](./packages/chiarkgreenendorguk.md)** () |  | - | latest | `pkgx chiark.greenend.org.uk` |
 | **[chromedriverchromiumorg](./packages/chromedriverchromiumorg.md)** () |  | chromedriver | 114.0.5735.90 (+0) | `pkgx chromedriver` |
-| **[circlecicom](./packages/circlecicom.md)** () | Enables you to reproduce the CircleCI environment locally | circleci | 0.1.32067 (+51) | `pkgx circleci` |
+| **[circlecicom](./packages/circlecicom.md)** () | Enables you to reproduce the CircleCI environment locally | circleci | 0.1.32111 (+52) | `pkgx circleci` |
 | **[ciscocom](./packages/ciscocom.md)** () |  | - | latest | `pkgx cisco.com` |
 | **[cligithubcom](./packages/cligithubcom.md)** (gh) | GitHub’s official command line tool | gh | 2.73.0 (+74) | `pkgx gh` |
 | **[clisporg](./packages/clisporg.md)** () | GNU CLISP, a Common Lisp implementation | clisp | 2.49.92 (+0) | `pkgx clisp` |
@@ -356,7 +356,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dgraphio](./packages/dgraphio.md)** () | high-performance graph database for real-time use cases | dgraph | 24.1.3 (+10) | `pkgx dgraph` |
 | **[dhalllangorg](./packages/dhalllangorg.md)** () | Interpreter for the Dhall language | dhall | 1.42.2 (+1) | `pkgx dhall` |
 | **[dhruvkbdev](./packages/dhruvkbdev.md)** () |  | - | latest | `pkgx dhruvkb.dev` |
-| **[diggerdev](./packages/diggerdev.md)** () | Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI... | digger | 0.6.102 (+185) | `pkgx digger` |
+| **[diggerdev](./packages/diggerdev.md)** () | Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI... | digger | 0.6.103 (+186) | `pkgx digger` |
 | **[digiporg](./packages/digiporg.md)** () |  | - | latest | `pkgx digip.org` |
 | **[direnvnet](./packages/direnvnet.md)** () | Load/unload environment variables based on $PWD | direnv | 2.36.0 (+5) | `pkgx direnv` |
 | **[dkrzde](./packages/dkrzde.md)** () |  | - | latest | `pkgx dkrz.de` |
@@ -376,7 +376,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dystroyorgbacon](./packages/dystroyorgbacon.md)** (bacon) | Background rust code check | bacon | 3.14.0 (+7) | `pkgx bacon` |
 | **[earthlydev](./packages/earthlydev.md)** () |  | - | latest | `pkgx earthly.dev` |
 | **[ebassigithubio](./packages/ebassigithubio.md)** () |  | - | latest | `pkgx ebassi.github.io` |
-| **[edgedbcom](./packages/edgedbcom.md)** () | The EdgeDB CLI | edgedb | 7.4.0 (+33) | `pkgx edgedb` |
+| **[edgedbcom](./packages/edgedbcom.md)** () | The EdgeDB CLI | edgedb | 7.5.0 (+34) | `pkgx edgedb` |
 | **[eigentuxfamilyorg](./packages/eigentuxfamilyorg.md)** () |  | - | 3.4.0 (+0) | `pkgx eigen.tuxfamily.org` |
 | **[eksctlio](./packages/eksctlio.md)** () | Simple command-line tool for creating clusters on Amazon EKS | eksctl | 0.208.0 (+54) | `pkgx eksctl` |
 | **[elementsprojectorg](./packages/elementsprojectorg.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.0 (+8) | `pkgx elementsproject.org` |
@@ -705,7 +705,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[oberhumercomucl](./packages/oberhumercomucl.md)** (ucl) |  | - | 1.3.0 (+0) | `pkgx oberhumer.com/ucl` |
 | **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.189 (+173) | `pkgx odigos` |
 | **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 25.23.3 (+270) | `pkgx oh-my-posh` |
-| **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.7.1 (+94) | `pkgx ollama` |
+| **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.8.0 (+95) | `pkgx ollama` |
 | **[onefetchdev](./packages/onefetchdev.md)** () | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch` |
 | **[onsigithubio](./packages/onsigithubio.md)** |  | - | latest | `pkgx onsi.github.io` |
 | **[openaicom](./packages/openaicom.md)** |  | - | latest | `pkgx openai.com` |
@@ -798,7 +798,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[pypaio](./packages/pypaio.md)** |  | - | latest | `pkgx pypa.io` |
 | **[pythonpilloworg](./packages/pythonpilloworg.md)** () | Python Imaging Library (Fork) | - | 11.2.1 (+5) | `pkgx python-pillow.org` |
 | **[pyyamlorg](./packages/pyyamlorg.md)** () | Canonical source repository for LibYAML | - | 0.2.5 (+0) | `pkgx pyyaml.org` |
-| **[qemuorg](./packages/qemuorg.md)** () | Generic machine emulator and virtualizer | qemu-img, qemu-edid, qemu-io, ... (+31) | 9.2.3 (+47) | `pkgx qemu` |
+| **[qemuorg](./packages/qemuorg.md)** () | Generic machine emulator and virtualizer | qemu-img, qemu-edid, qemu-io, ... (+31) | 10.0.2 (+50) | `pkgx qemu` |
 | **[qhullorg](./packages/qhullorg.md)** () | Qhull development for www.qhull.org -- Qhull 2020.2 (8.1-alpha1) at https://github.com/qhull/qhul... | qconvex, qdelaunay, qhalf, ... (+3) | 8.0.2 (+0) | `pkgx qhull.org` |
 | **[qpdfsourceforgeio](./packages/qpdfsourceforgeio.md)** () | qpdf: A content-preserving PDF document transformer | qpdf | 12.2.0 (+9) | `pkgx qpdf` |
 | **[qtio](./packages/qtio.md)** |  | balsam, canbusutil, lconvert, ... (+40) | 5.15.10 (+0) | `pkgx qt.io` |

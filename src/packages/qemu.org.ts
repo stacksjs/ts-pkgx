@@ -56,6 +56,8 @@ export const qemuorgPackage = {
     'libpng.org^1',
   ] as const,
   versions: [
+    '10.0.2',
+    '9.2.4',
     '9.2.3',
     '9.2.2',
     '9.2.1',
@@ -90,6 +92,7 @@ export const qemuorgPackage = {
     '8.0.3',
     '8.0.2',
     '8.0.0',
+    '7.2.18',
     '7.2.17',
     '7.2.16',
     '7.2.15',

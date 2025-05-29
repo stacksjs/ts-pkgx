@@ -14,6 +14,7 @@ export const ollamaaiPackage = {
     'curl.se/ca-certs',
   ] as const,
   versions: [
+    '0.8.0',
     '0.7.1',
     '0.7.0',
     '0.6.8',
