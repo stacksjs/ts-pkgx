@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-29T08:47:37.795Z
+- **Last Updated**: 2025-05-29T09:48:40.141Z
 
 ## Table of Contents
 
@@ -704,7 +704,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[oberhumercom](./packages/oberhumercom.md)** |  | - | latest | `pkgx oberhumer.com` |
 | **[oberhumercomucl](./packages/oberhumercomucl.md)** (ucl) |  | - | 1.3.0 (+0) | `pkgx oberhumer.com/ucl` |
 | **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.189 (+173) | `pkgx odigos` |
-| **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 25.23.3 (+270) | `pkgx oh-my-posh` |
+| **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.0.0 (+271) | `pkgx oh-my-posh` |
 | **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.8.0 (+95) | `pkgx ollama` |
 | **[onefetchdev](./packages/onefetchdev.md)** () | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch` |
 | **[onsigithubio](./packages/onsigithubio.md)** |  | - | latest | `pkgx onsi.github.io` |
