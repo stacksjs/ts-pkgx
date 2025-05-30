@@ -14,6 +14,7 @@ export const neovimioPackage = {
     'gnu.org/gettext^0',
   ] as const,
   versions: [
+    '0.11.2',
     '0.11.1',
     '0.11.0',
     '0.10.4',

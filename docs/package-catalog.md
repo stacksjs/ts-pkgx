@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-30T05:48:20.896Z
+- **Last Updated**: 2025-05-30T13:48:39.691Z
 
 ## Table of Contents
 
@@ -34,7 +34,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[crystallangorg](./packages/crystallangorg.md)** () | Fast and statically typed, compiled language with Ruby-like syntax | crystal | 1.16.3 (+18) | `pkgx crystal` |
 | **[dartdev](./packages/dartdev.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.8.1 (+35) | `pkgx dart` |
-| **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.4 (+129) | `pkgx deno` |
+| **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.5 (+130) | `pkgx deno` |
 | **[elixirlangorg](./packages/elixirlangorg.md)** () | Elixir is a dynamic, functional language for building scalable and maintainable applications | elixir, elixirc, iex, ... (+1) | 1.18.4 (+23) | `pkgx elixir-lang.org` |
 | **[erlangorg](./packages/erlangorg.md)** () | Programming language for highly scalable real-time systems | ct_run, dialyzer, epmd, ... (+6) | 28.0.0 (+71) | `pkgx erlang.org` |
 | **[gleamrun](./packages/gleamrun.md)** () | ⭐️ A friendly language for building type-safe, scalable systems! | gleam | 1.10.0 (+41) | `pkgx gleam` |
@@ -66,7 +66,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[angulardev](./packages/angulardev.md)** (ng) | CLI tool for Angular | ng | 20.0.0 (+103) | `pkgx ng` |
 | **[bunsh](./packages/bunsh.md)** (bun) | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.15 (+118) | `pkgx bun` |
 | **[classicyarnpkgcom](./packages/classicyarnpkgcom.md)** () | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx classic.yarnpkg.com` |
-| **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.4 (+129) | `pkgx deno` |
+| **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.5 (+130) | `pkgx deno` |
 | **[expodev](./packages/expodev.md)** |  | - | latest | `pkgx expo.dev` |
 | **[flutterdev](./packages/flutterdev.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.1 (+44) | `pkgx flutter.dev` |
 | **[node](./packages/node.md)** (node) | Platform built on V8 to build network applications | node | 24.1.0 (+136) | `pkgx node` |
@@ -175,7 +175,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[githubcom](./packages/githubcom.md)** |  | - | latest | `pkgx github.com` |
 | **[gitlabcom](./packages/gitlabcom.md)** |  | - | latest | `pkgx gitlab.com` |
 | **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.49.0 (+20) | `pkgx git` |
-| **[neovimio](./packages/neovimio.md)** (nvim) | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.1 (+13) | `pkgx nvim` |
+| **[neovimio](./packages/neovimio.md)** (nvim) | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** () | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
 | **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1418 (+1992) | `pkgx vim.org` |
 
@@ -422,7 +422,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[geoffgreerfm](./packages/geoffgreerfm.md)** |  | - | latest | `pkgx geoff.greer.fm` |
 | **[getclipboardapp](./packages/getclipboardapp.md)** (cb) | 😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨𝙡𝙮 smart clipboard manager | cb | 0.9.1 (+2) | `pkgx cb` |
 | **[getcomposerorg](./packages/getcomposerorg.md)** (composer) | Dependency Manager for PHP | composer, composer.phar | 2.8.9 (+29) | `pkgx composer` |
-| **[getfoundrysh](./packages/getfoundrysh.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+7) | `pkgx getfoundry.sh` |
+| **[getfoundrysh](./packages/getfoundrysh.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+8) | `pkgx getfoundry.sh` |
 | **[getsopsio](./packages/getsopsio.md)** (sops) | Simple and flexible tool for managing secrets | sops | 3.10.2 (+8) | `pkgx sops` |
 | **[getsynthcom](./packages/getsynthcom.md)** (synth) | The Declarative Data Generator | synth | 0.6.9 (+0) | `pkgx synth` |
 | **[getzolaorg](./packages/getzolaorg.md)** (zola) | A fast static site generator in a single binary with everything built-in. https://www.getzola.org | zola | 0.20.0 (+5) | `pkgx zola` |
@@ -704,7 +704,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[oberhumercom](./packages/oberhumercom.md)** |  | - | latest | `pkgx oberhumer.com` |
 | **[oberhumercomucl](./packages/oberhumercomucl.md)** (ucl) |  | - | 1.3.0 (+0) | `pkgx oberhumer.com/ucl` |
 | **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.189 (+173) | `pkgx odigos` |
-| **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.0.2 (+273) | `pkgx oh-my-posh` |
+| **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.0.4 (+275) | `pkgx oh-my-posh` |
 | **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.0 (+96) | `pkgx ollama` |
 | **[onefetchdev](./packages/onefetchdev.md)** () | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch` |
 | **[onsigithubio](./packages/onsigithubio.md)** |  | - | latest | `pkgx onsi.github.io` |
@@ -728,7 +728,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[openprintinggithubio](./packages/openprintinggithubio.md)** |  | - | latest | `pkgx openprinting.github.io` |
 | **[openrestyorg](./packages/openrestyorg.md)** () | High Performance Web Platform Based on Nginx and LuaJIT | nginx-xml2pod, opm, resty, ... (+2) | 1.25.3.2 (+0) | `pkgx openresty.org` |
 | **[opensearchorg](./packages/opensearchorg.md)** () | 🔎 Open source distributed and RESTful search engine. | opensearch, opensearch-keystore, opensearch-plugin, ... (+1) | 3.0.0 (+10) | `pkgx opensearch` |
-| **[openshiftcom](./packages/openshiftcom.md)** (oc) | The OpenShift Command Line, part of OKD | oc | 4.18.15 (+215) | `pkgx oc` |
+| **[openshiftcom](./packages/openshiftcom.md)** (oc) | The OpenShift Command Line, part of OKD | oc | 4.18.16 (+219) | `pkgx oc` |
 | **[openslideorg](./packages/openslideorg.md)** () | C library to read whole-slide images (a.k.a. virtual slides) | openslide-quickhash1sum, openslide-show-properties, openslide-write-png | 4.0.0 (+1) | `pkgx openslide` |
 | **[opensshcom](./packages/opensshcom.md)** |  | scp, sftp, slogin, ... (+6) | 10.0.0 (+5) | `pkgx openssh.com` |
 | **[opensslorg](./packages/opensslorg.md)** () | TLS/SSL and crypto library with QUIC APIs | openssl, c_rehash | 3.5.0 (+29) | `pkgx OpenSSL` |
@@ -961,7 +961,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[wavpackcom](./packages/wavpackcom.md)** () | WavPack encode/decode library, command-line programs, and several plugins | wavpack, wvunpack, wvtag, ... (+1) | 5.8.1 (+2) | `pkgx wavpack.com` |
 | **[waylandfreedesktoporg](./packages/waylandfreedesktoporg.md)** |  | wayland-scanner | 1.23.91 (+6) | `pkgx wayland` |
 | **[webmprojectorg](./packages/webmprojectorg.md)** |  | - | latest | `pkgx webmproject.org` |
-| **[werfio](./packages/werfio.md)** () | A solution for implementing efficient and consistent software delivery to Kubernetes facilitating... | werf | 2.36.3 (+140) | `pkgx werf` |
+| **[werfio](./packages/werfio.md)** () | A solution for implementing efficient and consistent software delivery to Kubernetes facilitating... | werf | 2.36.4 (+141) | `pkgx werf` |
 | **[wezfurlongorg](./packages/wezfurlongorg.md)** |  | - | latest | `pkgx wezfurlong.org` |
 | **[wilfredmeuk](./packages/wilfredmeuk.md)** |  | - | latest | `pkgx wilfred.me.uk` |
 | **[wimlibnet](./packages/wimlibnet.md)** () | Library to create, extract, and modify Windows Imaging files | mkwinpeimg, wimappend, wimapply, ... (+15) | 1.14.4 (+2) | `pkgx wimlib.net` |
