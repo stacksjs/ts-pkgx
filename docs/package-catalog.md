@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-30T04:49:58.978Z
+- **Last Updated**: 2025-05-30T05:48:20.896Z
 
 ## Table of Contents
 
@@ -107,7 +107,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mysqlcom](./packages/mysqlcom.md)** () | MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open... | mysql_client_test, my_print_defaults, myisam_ftdump, ... (+28) | 9.3.0 (+23) | `pkgx mysql.com` |
 | **[postgresqlorg](./packages/postgresqlorg.md)** () | Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't wo... | clusterdb, createdb, dropdb, ... (+25) | 17.2.0 (+11) | `pkgx postgresql.org` |
 | **[redisio](./packages/redisio.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.2 (+36) | `pkgx redis` |
-| **[sqliteorg](./packages/sqliteorg.md)** (sqlite3) | Official Git mirror of the SQLite source tree | sqlite3 | 3.49.2 (+23) | `pkgx sqlite3` |
+| **[sqliteorg](./packages/sqliteorg.md)** (sqlite3) | Official Git mirror of the SQLite source tree | sqlite3 | 3.50.0 (+24) | `pkgx sqlite3` |
 | **[surrealdbcom](./packages/surrealdbcom.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+40) | `pkgx surreal` |
 | **[valkeyio](./packages/valkeyio.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 8.1.1 (+10) | `pkgx valkey` |
 
@@ -789,7 +789,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[psycopgorg](./packages/psycopgorg.md)** |  | - | latest | `pkgx psycopg.org` |
 | **[publichronopikde](./packages/publichronopikde.md)** |  | - | latest | `pkgx public.hronopik.de` |
 | **[pugixmlorg](./packages/pugixmlorg.md)** () | Light-weight, simple and fast XML parser for C++ with XPath support | - | 1.15.0 (+2) | `pkgx pugixml.org` |
-| **[pulumiio](./packages/pulumiio.md)** () | Pulumi - Infrastructure as Code in any programming language 🚀 | pulumi, pulumi-analyzer-policy, pulumi-analyzer-policy-python, ... (+10) | 3.171.0 (+133) | `pkgx pulumi` |
+| **[pulumiio](./packages/pulumiio.md)** () | Pulumi - Infrastructure as Code in any programming language 🚀 | pulumi, pulumi-analyzer-policy, pulumi-analyzer-policy-python, ... (+10) | 3.173.0 (+135) | `pkgx pulumi` |
 | **[pwgensourceforgeio](./packages/pwgensourceforgeio.md)** () | Password generator | pwgen | 2.8.0 (+0) | `pkgx pwgen` |
 | **[pwmtorg](./packages/pwmtorg.md)** |  | - | latest | `pkgx pwmt.org` |
 | **[pygmentsorg](./packages/pygmentsorg.md)** (pygmentize) | Pygments is a generic syntax highlighter written in Python | pygmentize | 2.19.1 (+7) | `pkgx pygmentize` |

@@ -26,6 +26,8 @@ export const pulumiioPackage = {
     'curl.se/ca-certs',
   ] as const,
   versions: [
+    '3.173.0',
+    '3.172.0',
     '3.171.0',
     '3.170.0',
     '3.169.0',
