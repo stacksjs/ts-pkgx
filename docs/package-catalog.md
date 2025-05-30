@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-30T13:48:39.691Z
+- **Last Updated**: 2025-05-30T16:47:50.683Z
 
 ## Table of Contents
 
@@ -506,9 +506,9 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[hetznercom](./packages/hetznercom.md)** |  | - | latest | `pkgx hetzner.com` |
 | **[hjsongithubio](./packages/hjsongithubio.md)** () | Hjson for Rust | hjson | 1.1.0 (+1) | `pkgx hjson` |
 | **[htmltidyorg](./packages/htmltidyorg.md)** (tidy) | The granddaddy of HTML tools, with support for modern standards | tidy | 5.8.0 (+0) | `pkgx tidy` |
-| **[htsliborg](./packages/htsliborg.md)** () | C library for high-throughput sequencing data formats | bgzip, htsfile, tabix | 1.21.0 (+4) | `pkgx htslib.org` |
+| **[htsliborg](./packages/htsliborg.md)** () | C library for high-throughput sequencing data formats | bgzip, htsfile, tabix | 1.22.0 (+5) | `pkgx htslib.org` |
 | **[httpieio](./packages/httpieio.md)** () | 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, co... | http, httpie, https | 3.2.4 (+3) | `pkgx httpie.io` |
-| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface/cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.32.2 (+50) | `pkgx huggingface/cli` |
+| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface/cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.32.3 (+51) | `pkgx huggingface/cli` |
 | **[hugowang](./packages/hugowang.md)** |  | - | latest | `pkgx hugo.wang` |
 | **[hunspellgithubio](./packages/hunspellgithubio.md)** () | Spell checker and morphological analyzer | analyze, chmorph, hunspell, ... (+4) | 1.7.2 (+0) | `pkgx hunspell` |
 | **[hurldev](./packages/hurldev.md)** () | Run and Test HTTP Requests with plain text and curl | hurl, hurlfmt | 6.1.1 (+8) | `pkgx hurl` |
@@ -820,7 +820,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[rhashsourceforgenet](./packages/rhashsourceforgenet.md)** () | Utility for computing and verifying hash sums of files | whirlpool-hash, tiger-hash, tth-hash, ... (+9) | 1.4.6 (+3) | `pkgx rhash.sourceforge.net` |
 | **[rigauxorg](./packages/rigauxorg.md)** |  | - | latest | `pkgx rigaux.org` |
 | **[riverbankcomputingcom](./packages/riverbankcomputingcom.md)** |  | - | latest | `pkgx riverbankcomputing.com` |
-| **[robotframeworkorg](./packages/robotframeworkorg.md)** () | Generic automation framework for acceptance testing and RPA | robot | 7.2.2 (+0) | `pkgx robot` |
+| **[robotframeworkorg](./packages/robotframeworkorg.md)** () | Generic automation framework for acceptance testing and RPA | robot | 7.3.0 (+1) | `pkgx robot` |
 | **[rockdabootgithubio](./packages/rockdabootgithubio.md)** |  | - | latest | `pkgx rockdaboot.github.io` |
 | **[rometools](./packages/rometools.md)** () | Unified developer tools for JavaScript, TypeScript, and the web | rome | 0.4.2 (+0) | `pkgx rome` |
 | **[rpmorg](./packages/rpmorg.md)** |  | - | latest | `pkgx rpm.org` |
@@ -895,7 +895,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[taku910githubio](./packages/taku910githubio.md)** |  | - | latest | `pkgx taku910.github.io` |
 | **[talosdev](./packages/talosdev.md)** (talosctl) | CLI for out-of-band management of Kubernetes nodes created by Talos | talosctl | 1.10.3 (+26) | `pkgx talosctl` |
 | **[taplotamasfedev](./packages/taplotamasfedev.md)** () | A TOML toolkit written in Rust | taplo | 0.10.0 (+4) | `pkgx taplo` |
-| **[tartrun](./packages/tartrun.md)** () | macOS and Linux VMs on Apple Silicon to use in CI and other automations | tart | 2.27.1 (+52) | `pkgx tart` |
+| **[tartrun](./packages/tartrun.md)** () | macOS and Linux VMs on Apple Silicon to use in CI and other automations | tart | 2.27.2 (+53) | `pkgx tart` |
 | **[taskfiledev](./packages/taskfiledev.md)** () | A task runner / simpler Make alternative written in Go | task | 3.43.3 (+29) | `pkgx task` |
 | **[tcllangorg](./packages/tcllangorg.md)** () | Tool Command Language | tclsh, wish, critcl | 9.0.1 (+5) | `pkgx tcl-lang.org` |
 | **[tcltk](./packages/tcltk.md)** |  | - | latest | `pkgx tcl.tk` |

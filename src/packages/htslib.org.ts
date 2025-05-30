@@ -19,6 +19,7 @@ export const htsliborgPackage = {
     'curl.se>=5',
   ] as const,
   versions: [
+    '1.22.0',
     '1.21.0',
     '1.20.0',
     '1.19.1',

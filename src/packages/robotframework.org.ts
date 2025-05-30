@@ -14,6 +14,7 @@ export const robotframeworkorgPackage = {
     'pkgx.sh^1',
   ] as const,
   versions: [
+    '7.3.0',
     '7.2.2',
   ] as const,
   fullPath: 'robotframework.org' as const,

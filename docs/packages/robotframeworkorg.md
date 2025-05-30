@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 1 versions</summary>
+<summary>Show all 2 versions</summary>
 
-- `7.2.2`
+- `7.3.0`, `7.2.2`
 
 </details>
 
-**Latest Version**: `7.2.2`
+**Latest Version**: `7.3.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx robot@7.2.2
+pkgx robot@7.3.0
 ```
 
 ## Dependencies
