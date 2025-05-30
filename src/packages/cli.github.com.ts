@@ -12,6 +12,7 @@ export const cligithubcomPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '2.74.0',
     '2.73.0',
     '2.72.0',
     '2.71.2',

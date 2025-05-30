@@ -12,6 +12,7 @@ export const tartrunPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '2.27.1',
     '2.27.0',
     '2.26.1',
     '2.26.0',

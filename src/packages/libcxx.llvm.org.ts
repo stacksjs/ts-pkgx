@@ -10,6 +10,7 @@ export const libcxxllvmorgPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '20.1.6',
     '20.1.5',
     '20.1.4',
     '20.1.3',

@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-29T09:48:40.141Z
+- **Last Updated**: 2025-05-30T04:49:58.978Z
 
 ## Table of Contents
 
@@ -34,7 +34,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[crystallangorg](./packages/crystallangorg.md)** () | Fast and statically typed, compiled language with Ruby-like syntax | crystal | 1.16.3 (+18) | `pkgx crystal` |
 | **[dartdev](./packages/dartdev.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.8.1 (+35) | `pkgx dart` |
-| **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.3 (+128) | `pkgx deno` |
+| **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.4 (+129) | `pkgx deno` |
 | **[elixirlangorg](./packages/elixirlangorg.md)** () | Elixir is a dynamic, functional language for building scalable and maintainable applications | elixir, elixirc, iex, ... (+1) | 1.18.4 (+23) | `pkgx elixir-lang.org` |
 | **[erlangorg](./packages/erlangorg.md)** () | Programming language for highly scalable real-time systems | ct_run, dialyzer, epmd, ... (+6) | 28.0.0 (+71) | `pkgx erlang.org` |
 | **[gleamrun](./packages/gleamrun.md)** () | ⭐️ A friendly language for building type-safe, scalable systems! | gleam | 1.10.0 (+41) | `pkgx gleam` |
@@ -66,9 +66,9 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[angulardev](./packages/angulardev.md)** (ng) | CLI tool for Angular | ng | 20.0.0 (+103) | `pkgx ng` |
 | **[bunsh](./packages/bunsh.md)** (bun) | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.15 (+118) | `pkgx bun` |
 | **[classicyarnpkgcom](./packages/classicyarnpkgcom.md)** () | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx classic.yarnpkg.com` |
-| **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.3 (+128) | `pkgx deno` |
+| **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.4 (+129) | `pkgx deno` |
 | **[expodev](./packages/expodev.md)** |  | - | latest | `pkgx expo.dev` |
-| **[flutterdev](./packages/flutterdev.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.0 (+43) | `pkgx flutter.dev` |
+| **[flutterdev](./packages/flutterdev.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.1 (+44) | `pkgx flutter.dev` |
 | **[node](./packages/node.md)** (node) | Platform built on V8 to build network applications | node | 24.1.0 (+136) | `pkgx node` |
 | **[nodejsorg](./packages/nodejsorg.md)** (node) | Platform built on V8 to build network applications | node | 24.1.0 (+136) | `pkgx node` |
 | **[npmjscom](./packages/npmjscom.md)** () | the package manager for JavaScript | npm, npx | 11.4.1 (+58) | `pkgx npmjs.com` |
@@ -89,7 +89,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mesonbuildcom](./packages/mesonbuildcom.md)** () | Fast and user friendly build system | meson | 1.8.1 (+26) | `pkgx meson` |
 | **[ninjabuildorg](./packages/ninjabuildorg.md)** () | Small build system for use with gyp or CMake | ninja | 1.12.1 (+3) | `pkgx ninja` |
 | **[npmjscom](./packages/npmjscom.md)** () | the package manager for JavaScript | npm, npx | 11.4.1 (+58) | `pkgx npmjs.com` |
-| **[pipenvpypaio](./packages/pipenvpypaio.md)** () | Python Development Workflow for Humans. | pipenv | 3000.0.0 (+46) | `pkgx pipenv` |
+| **[pipenvpypaio](./packages/pipenvpypaio.md)** () | Python Development Workflow for Humans. | pipenv | 3000.0.0 (+47) | `pkgx pipenv` |
 | **[pippypaio](./packages/pippypaio.md)** () | The Python package installer | pip, pip3.8, pip3.9, ... (+2) | 25.1.1 (+26) | `pkgx pip` |
 | **[pnpmio](./packages/pnpmio.md)** () | Fast, disk space efficient package manager | pnpm, pnpx | 10.11.0 (+161) | `pkgx pnp` |
 | **[pythonpoetryorg](./packages/pythonpoetryorg.md)** (poetry) | Python packaging and dependency management made easy | poetry | 2.1.3 (+20) | `pkgx poetry` |
@@ -103,7 +103,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[duckdborg](./packages/duckdborg.md)** () | DuckDB is an analytical in-process SQL database management system | duckdb | 1.3.0 (+18) | `pkgx duckdb` |
-| **[mongodbcom](./packages/mongodbcom.md)** () | The MongoDB Database | install_compass, mongod, mongos | 8.1.1 (+27) | `pkgx mongodb.com` |
+| **[mongodbcom](./packages/mongodbcom.md)** () | The MongoDB Database | install_compass, mongod, mongos | 8.1.1 (+30) | `pkgx mongodb.com` |
 | **[mysqlcom](./packages/mysqlcom.md)** () | MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open... | mysql_client_test, my_print_defaults, myisam_ftdump, ... (+28) | 9.3.0 (+23) | `pkgx mysql.com` |
 | **[postgresqlorg](./packages/postgresqlorg.md)** () | Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't wo... | clusterdb, createdb, dropdb, ... (+25) | 17.2.0 (+11) | `pkgx postgresql.org` |
 | **[redisio](./packages/redisio.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.2 (+36) | `pkgx redis` |
@@ -124,7 +124,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dockercom](./packages/dockercom.md)** () |  | - | latest | `pkgx docker.com` |
 | **[fluxcdio](./packages/fluxcdio.md)** |  | - | latest | `pkgx fluxcd.io` |
 | **[helmsh](./packages/helmsh.md)** () | The Kubernetes Package Manager | helm | 3.18.1 (+31) | `pkgx helm` |
-| **[istioio](./packages/istioio.md)** (istioctl) | Connect, secure, control, and observe services. | istioctl | 1.26.0 (+39) | `pkgx istioctl` |
+| **[istioio](./packages/istioio.md)** (istioctl) | Connect, secure, control, and observe services. | istioctl | 1.26.1 (+40) | `pkgx istioctl` |
 | **[kubernetesio](./packages/kubernetesio.md)** |  | - | latest | `pkgx kubernetes.io` |
 | **[nomadprojectio](./packages/nomadprojectio.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.10.1 (+12) | `pkgx nomad` |
 | **[podmanio](./packages/podmanio.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.0 (+37) | `pkgx podman` |
@@ -140,7 +140,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[awsamazoncom](./packages/awsamazoncom.md)** () |  | - | latest | `pkgx aws.amazon.com` |
 | **[cloudflarecom](./packages/cloudflarecom.md)** () |  | - | latest | `pkgx cloudflare.com` |
 | **[digitaloceancom](./packages/digitaloceancom.md)** () |  | - | latest | `pkgx digitalocean.com` |
-| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.134 (+391) | `pkgx fly` |
+| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.135 (+392) | `pkgx fly` |
 | **[githubcom](./packages/githubcom.md)** |  | - | latest | `pkgx github.com` |
 | **[gitlabcom](./packages/gitlabcom.md)** |  | - | latest | `pkgx gitlab.com` |
 | **[herokucom](./packages/herokucom.md)** () | CLI for Heroku | heroku | 10.8.0 (+29) | `pkgx heroku` |
@@ -246,7 +246,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[astralshruff](./packages/astralshruff.md)** (ruff) | An extremely fast Python linter and code formatter, written in Rust. | ruff | 0.11.11 (+82) | `pkgx ruff` |
 | **[astralshty](./packages/astralshty.md)** (ty) | An extremely fast Python type checker and language server, written in Rust. | ty | 0.0.0.8 (+0) | `pkgx ty` |
 | **[astralshuv](./packages/astralshuv.md)** (uv) | An extremely fast Python package and project manager, written in Rust. | uv, uvx | 0.7.7 (+174) | `pkgx astral.sh/uv` |
-| **[atlasgoio](./packages/atlasgoio.md)** () | Manage your database schema as code | atlas | 0.33.0 (+19) | `pkgx atlas` |
+| **[atlasgoio](./packages/atlasgoio.md)** () | Manage your database schema as code | atlas | 0.34.0 (+20) | `pkgx atlas` |
 | **[attrsorg](./packages/attrsorg.md)** () | Python Classes Without Boilerplate | - | 25.3.0 (+6) | `pkgx attrs.org` |
 | **[augeasnet](./packages/augeasnet.md)** () | A configuration editing tool and API | augmatch, augparse, augprint, ... (+2) | 1.14.1 (+1) | `pkgx augeas.net` |
 | **[authzedcom](./packages/authzedcom.md)** () |  | - | latest | `pkgx authzed.com` |
@@ -258,7 +258,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[beyondgrepcom](./packages/beyondgrepcom.md)** (ack) | ack is a grep-like search tool optimized for source code. | ack | 3.9.0 (+5) | `pkgx ack` |
 | **[biomejsdev](./packages/biomejsdev.md)** () | A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers for... | biome | 1.9.4 (+27) | `pkgx biome` |
 | **[bitcoinorg](./packages/bitcoinorg.md)** () | Decentralized, peer to peer payment network | bitcoin-cli, bitcoin-tx, bitcoin-util, ... (+2) | 29.0.0 (+15) | `pkgx bitcoin` |
-| **[bittensorcom](./packages/bittensorcom.md)** () | Internet-scale Neural Networks | - | 9.6.1 (+61) | `pkgx Bittensor` |
+| **[bittensorcom](./packages/bittensorcom.md)** () | Internet-scale Neural Networks | - | 9.7.0 (+62) | `pkgx Bittensor` |
 | **[blake2net](./packages/blake2net.md)** () |  | - | latest | `pkgx blake2.net` |
 | **[bloomreachcom](./packages/bloomreachcom.md)** () |  | - | latest | `pkgx bloomreach.com` |
 | **[boostorg](./packages/boostorg.md)** () | Super-project for modularized Boost | - | 1.88.0 (+7) | `pkgx boost.org` |
@@ -293,9 +293,9 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[chezmoiio](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.5 (+74) | `pkgx chezmoi` |
 | **[chiarkgreenendorguk](./packages/chiarkgreenendorguk.md)** () |  | - | latest | `pkgx chiark.greenend.org.uk` |
 | **[chromedriverchromiumorg](./packages/chromedriverchromiumorg.md)** () |  | chromedriver | 114.0.5735.90 (+0) | `pkgx chromedriver` |
-| **[circlecicom](./packages/circlecicom.md)** () | Enables you to reproduce the CircleCI environment locally | circleci | 0.1.32111 (+52) | `pkgx circleci` |
+| **[circlecicom](./packages/circlecicom.md)** () | Enables you to reproduce the CircleCI environment locally | circleci | 0.1.32145 (+53) | `pkgx circleci` |
 | **[ciscocom](./packages/ciscocom.md)** () |  | - | latest | `pkgx cisco.com` |
-| **[cligithubcom](./packages/cligithubcom.md)** (gh) | GitHub’s official command line tool | gh | 2.73.0 (+74) | `pkgx gh` |
+| **[cligithubcom](./packages/cligithubcom.md)** (gh) | GitHub’s official command line tool | gh | 2.74.0 (+75) | `pkgx gh` |
 | **[clisporg](./packages/clisporg.md)** () | GNU CLISP, a Common Lisp implementation | clisp | 2.49.92 (+0) | `pkgx clisp` |
 | **[clogtoolgithubio](./packages/clogtoolgithubio.md)** () | Colorized pattern-matching log tail utility | clog | 0.9.3 (+0) | `pkgx clog` |
 | **[cloudfoundryorg](./packages/cloudfoundryorg.md)** () |  | - | latest | `pkgx cloudfoundry.org` |
@@ -309,7 +309,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[codevideolanorg](./packages/codevideolanorg.md)** () |  | - | latest | `pkgx code.videolan.org` |
 | **[cointopsh](./packages/cointopsh.md)** () | A fast and lightweight interactive terminal based UI application for tracking cryptocurrencies 🚀 | cointop | 1.6.10 (+0) | `pkgx cointop` |
 | **[condaorg](./packages/condaorg.md)** () |  | conda | 25.3.1 (+14) | `pkgx conda` |
-| **[conftestdev](./packages/conftestdev.md)** () | Write tests against structured configuration data using the Open Policy Agent Rego query language | conftest | 0.60.0 (+15) | `pkgx conftest` |
+| **[conftestdev](./packages/conftestdev.md)** () | Write tests against structured configuration data using the Open Policy Agent Rego query language | conftest | 0.61.0 (+16) | `pkgx conftest` |
 | **[connectrpcorg](./packages/connectrpcorg.md)** () |  | - | latest | `pkgx connectrpc.org` |
 | **[convcogithubio](./packages/convcogithubio.md)** () | Conventional commits, changelog, versioning, validation | convco | 0.6.2 (+8) | `pkgx convco` |
 | **[corednsio](./packages/corednsio.md)** () | CoreDNS is a DNS server that chains plugins | coredns | 1.12.1 (+6) | `pkgx coredns` |
@@ -347,7 +347,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[debianorg](./packages/debianorg.md)** () |  | - | latest | `pkgx debian.org` |
 | **[deepwisdomai](./packages/deepwisdomai.md)** (metagpt) | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx MetaGPT` |
 | **[denilsonsanombr](./packages/denilsonsanombr.md)** () |  | - | latest | `pkgx denilson.sa.nom.br` |
-| **[depotdev](./packages/depotdev.md)** () | 🖥️ Depot CLI, build your Docker images in the cloud | depot | 2.85.4 (+36) | `pkgx depot` |
+| **[depotdev](./packages/depotdev.md)** () | 🖥️ Depot CLI, build your Docker images in the cloud | depot | 2.85.6 (+38) | `pkgx depot` |
 | **[destunreachorg](./packages/destunreachorg.md)** () |  | - | latest | `pkgx dest-unreach.org` |
 | **[developer1passwordcom1passwordcli](./packages/developer1passwordcom1passwordcli.md)** (1password cli, 1password-cli) |  | op | 2.31.0 (+1) | `pkgx 1Password CLI` |
 | **[developersyubicocom](./packages/developersyubicocom.md)** () |  | - | latest | `pkgx developers.yubico.com` |
@@ -376,7 +376,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dystroyorgbacon](./packages/dystroyorgbacon.md)** (bacon) | Background rust code check | bacon | 3.14.0 (+7) | `pkgx bacon` |
 | **[earthlydev](./packages/earthlydev.md)** () |  | - | latest | `pkgx earthly.dev` |
 | **[ebassigithubio](./packages/ebassigithubio.md)** () |  | - | latest | `pkgx ebassi.github.io` |
-| **[edgedbcom](./packages/edgedbcom.md)** () | The EdgeDB CLI | edgedb | 7.5.0 (+34) | `pkgx edgedb` |
+| **[edgedbcom](./packages/edgedbcom.md)** () | The EdgeDB CLI | edgedb | 7.5.1 (+35) | `pkgx edgedb` |
 | **[eigentuxfamilyorg](./packages/eigentuxfamilyorg.md)** () |  | - | 3.4.0 (+0) | `pkgx eigen.tuxfamily.org` |
 | **[eksctlio](./packages/eksctlio.md)** () | Simple command-line tool for creating clusters on Amazon EKS | eksctl | 0.208.0 (+54) | `pkgx eksctl` |
 | **[elementsprojectorg](./packages/elementsprojectorg.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.0 (+8) | `pkgx elementsproject.org` |
@@ -586,7 +586,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[leptonicaorg](./packages/leptonicaorg.md)** () | Leptonica is an open source library containing software that is broadly useful for image processi... | convertfilestopdf, convertfilestops, convertformat, ... (+7) | 1.85.0 (+3) | `pkgx leptonica.org` |
 | **[lftpyarru](./packages/lftpyarru.md)** () | sophisticated command line file transfer program (ftp, http, sftp, fish, torrent) | lftp, lftpget | 4.9.3 (+2) | `pkgx lftp` |
 | **[libarchiveorg](./packages/libarchiveorg.md)** () | Multi-format archive and compression library | bsdcat, bsdcpio, bsdtar | 3.8.0 (+11) | `pkgx libarchive.org` |
-| **[libcxxllvmorg](./packages/libcxxllvmorg.md)** () | The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. | - | 20.1.5 (+38) | `pkgx libcxx.llvm.org` |
+| **[libcxxllvmorg](./packages/libcxxllvmorg.md)** () | The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. | - | 20.1.6 (+39) | `pkgx libcxx.llvm.org` |
 | **[libeventorg](./packages/libeventorg.md)** () | Event notification library | - | 2.1.12 (+0) | `pkgx libevent.org` |
 | **[libexifgithubio](./packages/libexifgithubio.md)** () | A library for parsing, editing, and saving EXIF data | - | 0.6.25 (+1) | `pkgx libexif.github.io` |
 | **[libexpatgithubio](./packages/libexpatgithubio.md)** (xmlwf) | :herb: Fast streaming XML parser written in C99 with >90% test coverage; moved from SourceForge t... | xmlwf | 2.7.1 (+8) | `pkgx xmlwf` |
@@ -621,7 +621,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[littlecmscom](./packages/littlecmscom.md)** () | A free, open source, CMM engine. It provides fast transforms between ICC profiles. | jpgicc, linkicc, psicc, ... (+2) | 2.17.0 (+3) | `pkgx littlecms.com` |
 | **[llmdatasetteio](./packages/llmdatasetteio.md)** () | Access large language models from the command-line | llm | 0.26.0 (+29) | `pkgx llm` |
 | **[lloydgithubio](./packages/lloydgithubio.md)** |  | - | latest | `pkgx lloyd.github.io` |
-| **[llvmorg](./packages/llvmorg.md)** () | The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. | lld, clang, clang++, ... (+11) | 20.1.5 (+40) | `pkgx llvm.org` |
+| **[llvmorg](./packages/llvmorg.md)** () | The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. | lld, clang, clang++, ... (+11) | 20.1.6 (+41) | `pkgx llvm.org` |
 | **[localaiio](./packages/localaiio.md)** () | :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-fir... | local-ai | 2.26.0 (+36) | `pkgx LocalAI` |
 | **[localstackcloud](./packages/localstackcloud.md)** |  | - | latest | `pkgx localstack.cloud` |
 | **[logdydev](./packages/logdydev.md)** () | Web based real-time log viewer. Stream ANY content to a web UI with autogenerated filters. Parse ... | logdy | 0.16.0 (+12) | `pkgx logdy` |
@@ -680,13 +680,13 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[musllibcorg](./packages/musllibcorg.md)** |  | ld.musl-clang, musl-clang | 1.2.3 (+0) | `pkgx musl.libc.org` |
 | **[mvdancc](./packages/mvdancc.md)** |  | - | latest | `pkgx mvdan.cc` |
 | **[mvdanccgofumpt](./packages/mvdanccgofumpt.md)** (gofumpt) | A stricter gofmt | gofumpt | 0.8.0 (+1) | `pkgx gofumpt` |
-| **[mypylangorg](./packages/mypylangorg.md)** () | Experimental optional static type checker for Python | mypy, mypyc, dmypy | 1.15.0 (+22) | `pkgx mypy-lang.org` |
+| **[mypylangorg](./packages/mypylangorg.md)** () | Experimental optional static type checker for Python | mypy, mypyc, dmypy | 1.16.0 (+23) | `pkgx mypy-lang.org` |
 | **[nanoeditororg](./packages/nanoeditororg.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[nasmus](./packages/nasmus.md)** () | A cross-platform x86 assembler with an Intel-like syntax | nasm, ndisasm | 2.16.3 (+2) | `pkgx nasm.us` |
 | **[netflixcom](./packages/netflixcom.md)** |  | - | latest | `pkgx netflix.com` |
 | **[netliborg](./packages/netliborg.md)** |  | - | latest | `pkgx netlib.org` |
 | **[netpbmsourceforgenet](./packages/netpbmsourceforgenet.md)** () | Image manipulation | 411toppm, asciitopgm, atktopbm, ... (+312) | 10.86.46 (+9) | `pkgx netpbm.sourceforge.net` |
-| **[networkxorg](./packages/networkxorg.md)** () | Network Analysis in Python | - | 3.4.2 (+4) | `pkgx networkx.org` |
+| **[networkxorg](./packages/networkxorg.md)** () | Network Analysis in Python | - | 3.5.0 (+5) | `pkgx networkx.org` |
 | **[nghttp2org](./packages/nghttp2org.md)** () | nghttp2 - HTTP/2 C Library and tools | - | 1.65.0 (+16) | `pkgx nghttp2.org` |
 | **[nikecom](./packages/nikecom.md)** |  | - | latest | `pkgx nike.com` |
 | **[nixosorg](./packages/nixosorg.md)** |  | - | latest | `pkgx nixos.org` |
@@ -704,8 +704,8 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[oberhumercom](./packages/oberhumercom.md)** |  | - | latest | `pkgx oberhumer.com` |
 | **[oberhumercomucl](./packages/oberhumercomucl.md)** (ucl) |  | - | 1.3.0 (+0) | `pkgx oberhumer.com/ucl` |
 | **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.189 (+173) | `pkgx odigos` |
-| **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.0.0 (+271) | `pkgx oh-my-posh` |
-| **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.8.0 (+95) | `pkgx ollama` |
+| **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.0.2 (+273) | `pkgx oh-my-posh` |
+| **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.0 (+96) | `pkgx ollama` |
 | **[onefetchdev](./packages/onefetchdev.md)** () | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch` |
 | **[onsigithubio](./packages/onsigithubio.md)** |  | - | latest | `pkgx onsi.github.io` |
 | **[openaicom](./packages/openaicom.md)** |  | - | latest | `pkgx openai.com` |
@@ -722,9 +722,9 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[openldaporg](./packages/openldaporg.md)** (ldap) | Open source suite of directory software | ldapcompare, ldapdelete, ldapexop, ... (+7) | 2.6.10 (+12) | `pkgx ldap` |
 | **[openldaporgliblmdb](./packages/openldaporgliblmdb.md)** (liblmdb) | Lightning memory-mapped database: key-value data store | mdb_copy, mdb_dump, mdb_load, ... (+1) | 0.9.33 (+0) | `pkgx liblmdb` |
 | **[openmpiorg](./packages/openmpiorg.md)** () | Open MPI main development repository | mpic++, mpiCC, mpicc, ... (+8) | 5.0.7 (+9) | `pkgx open-mpi.org` |
-| **[openmpllvmorg](./packages/openmpllvmorg.md)** (libomp) | The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. | - | 20.1.5 (+30) | `pkgx libomp` |
+| **[openmpllvmorg](./packages/openmpllvmorg.md)** (libomp) | The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. | - | 20.1.6 (+31) | `pkgx libomp` |
 | **[openpmixgithubio](./packages/openpmixgithubio.md)** () | Process Management Interface for HPC environments | palloc, pattrs, pctrl, ... (+6) | 6.0.0 (+8) | `pkgx openpmix.github.io` |
-| **[openpolicyagentorg](./packages/openpolicyagentorg.md)** (opa) | Open Policy Agent (OPA) is an open source, general-purpose policy engine. | opa | 1.4.2 (+23) | `pkgx opa` |
+| **[openpolicyagentorg](./packages/openpolicyagentorg.md)** (opa) | Open Policy Agent (OPA) is an open source, general-purpose policy engine. | opa | 1.5.0 (+24) | `pkgx opa` |
 | **[openprintinggithubio](./packages/openprintinggithubio.md)** |  | - | latest | `pkgx openprinting.github.io` |
 | **[openrestyorg](./packages/openrestyorg.md)** () | High Performance Web Platform Based on Nginx and LuaJIT | nginx-xml2pod, opm, resty, ... (+2) | 1.25.3.2 (+0) | `pkgx openresty.org` |
 | **[opensearchorg](./packages/opensearchorg.md)** () | 🔎 Open source distributed and RESTful search engine. | opensearch, opensearch-keystore, opensearch-plugin, ... (+1) | 3.0.0 (+10) | `pkgx opensearch` |
@@ -888,14 +888,14 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[symfonycom](./packages/symfonycom.md)** () | The Symfony CLI tool | symfony | 5.11.0 (+48) | `pkgx symfony` |
 | **[sympyorg](./packages/sympyorg.md)** () | A computer algebra system written in pure Python | - | 1.14.0 (+6) | `pkgx sympy.org` |
 | **[syncthingnet](./packages/syncthingnet.md)** () | Open source continuous file synchronization application | syncthing | 1.29.6 (+17) | `pkgx syncthing` |
-| **[systemdio](./packages/systemdio.md)** () | The systemd System and Service Manager | busctl, coredumpctl, hostnamectl, ... (+52) | 257.5.0 (+21) | `pkgx systemd.io` |
+| **[systemdio](./packages/systemdio.md)** () | The systemd System and Service Manager | busctl, coredumpctl, hostnamectl, ... (+52) | 257.6.0 (+25) | `pkgx systemd.io` |
 | **[tagliborg](./packages/tagliborg.md)** (taglib-config) | TagLib Audio Meta-Data Library | taglib-config | 2.0.2 (+3) | `pkgx taglib-config` |
 | **[tailcallrun](./packages/tailcallrun.md)** () | High Performance GraphQL Runtime | tailcall | 1.6.11 (+622) | `pkgx tailcall` |
 | **[tailwindcsscom](./packages/tailwindcsscom.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.8 (+41) | `pkgx tailwindcss` |
 | **[taku910githubio](./packages/taku910githubio.md)** |  | - | latest | `pkgx taku910.github.io` |
-| **[talosdev](./packages/talosdev.md)** (talosctl) | CLI for out-of-band management of Kubernetes nodes created by Talos | talosctl | 1.10.2 (+25) | `pkgx talosctl` |
+| **[talosdev](./packages/talosdev.md)** (talosctl) | CLI for out-of-band management of Kubernetes nodes created by Talos | talosctl | 1.10.3 (+26) | `pkgx talosctl` |
 | **[taplotamasfedev](./packages/taplotamasfedev.md)** () | A TOML toolkit written in Rust | taplo | 0.10.0 (+4) | `pkgx taplo` |
-| **[tartrun](./packages/tartrun.md)** () | macOS and Linux VMs on Apple Silicon to use in CI and other automations | tart | 2.27.0 (+51) | `pkgx tart` |
+| **[tartrun](./packages/tartrun.md)** () | macOS and Linux VMs on Apple Silicon to use in CI and other automations | tart | 2.27.1 (+52) | `pkgx tart` |
 | **[taskfiledev](./packages/taskfiledev.md)** () | A task runner / simpler Make alternative written in Go | task | 3.43.3 (+29) | `pkgx task` |
 | **[tcllangorg](./packages/tcllangorg.md)** () | Tool Command Language | tclsh, wish, critcl | 9.0.1 (+5) | `pkgx tcl-lang.org` |
 | **[tcltk](./packages/tcltk.md)** |  | - | latest | `pkgx tcl.tk` |
@@ -914,7 +914,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[thoughtworksgithubio](./packages/thoughtworksgithubio.md)** |  | - | latest | `pkgx thoughtworks.github.io` |
 | **[thrysoeedk](./packages/thrysoeedk.md)** |  | - | latest | `pkgx thrysoee.dk` |
 | **[tidbytcom](./packages/tidbytcom.md)** (pixlet) | Build apps for pixel-based displays ✨ | pixlet | 0.34.0 (+19) | `pkgx pixlet` |
-| **[tiltdev](./packages/tiltdev.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.34.4 (+21) | `pkgx tilt` |
+| **[tiltdev](./packages/tiltdev.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.34.5 (+22) | `pkgx tilt` |
 | **[tinybirdco](./packages/tinybirdco.md)** (tb) |  | tb | 5.20.0 (+0) | `pkgx tb` |
 | **[tinygoorg](./packages/tinygoorg.md)** () | Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. ... | tinygo | 0.37.0 (+6) | `pkgx tinygo` |
 | **[tldrsh](./packages/tldrsh.md)** () | C command-line client for tldr pages 📚 | tldr | 1.6.1 (+2) | `pkgx tldr` |
@@ -941,7 +941,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[vamppluginsorg](./packages/vamppluginsorg.md)** () | Audio processing plugin system sdk | vamp-simple-host, vamp-rdf-template-generator | 2.10.0 (+1) | `pkgx vamp` |
 | **[vannaai](./packages/vannaai.md)** () | 🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using RAG 🔄. | - | 0.7.9 (+41) | `pkgx Vanna` |
 | **[vapoursynthcom](./packages/vapoursynthcom.md)** (vspipe) | A video processing framework with simplicity in mind | vspipe | 71.0.0 (+7) | `pkgx vspipe` |
-| **[vaultprojectio](./packages/vaultprojectio.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.19.4 (+54) | `pkgx vault` |
+| **[vaultprojectio](./packages/vaultprojectio.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.19.5 (+55) | `pkgx vault` |
 | **[vclustercom](./packages/vclustercom.md)** () | vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a name... | vcluster | 0.25.0 (+32) | `pkgx vcluster` |
 | **[vektragithubio](./packages/vektragithubio.md)** |  | - | latest | `pkgx vektra.github.io` |
 | **[veleroio](./packages/veleroio.md)** () | Backup and migrate Kubernetes applications and their persistent volumes | velero | 1.16.1 (+0) | `pkgx velero` |
@@ -986,7 +986,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[youtubedlorg](./packages/youtubedlorg.md)** () | Command-line program to download videos from YouTube.com and other video sites | youtube-dl | 2023.8.4 (+1) | `pkgx youtube-dl` |
 | **[ytdlporg](./packages/ytdlporg.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.5.22 (+45) | `pkgx yt-dlp` |
 | **[yuigithubio](./packages/yuigithubio.md)** |  | - | latest | `pkgx yui.github.io` |
-| **[zarfdev](./packages/zarfdev.md)** () | DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/ | zarf | 0.55.5 (+43) | `pkgx zarf` |
+| **[zarfdev](./packages/zarfdev.md)** () | DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/ | zarf | 0.55.6 (+44) | `pkgx zarf` |
 | **[zeromqorg](./packages/zeromqorg.md)** () | ZeroMQ core engine in C++, implements ZMTP/3.1 | - | 4.3.5 (+1) | `pkgx zeromq.org` |
 | **[zlibnet](./packages/zlibnet.md)** () | A massively spiffy yet delicately unobtrusive compression library. | - | 1.3.1 (+3) | `pkgx zlib.net` |
 | **[zrokio](./packages/zrokio.md)** () | Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti. | zrok, copyto, pastefrom | 1.0.4 (+35) | `pkgx zrok` |

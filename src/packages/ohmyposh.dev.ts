@@ -12,6 +12,8 @@ export const ohmyposhdevPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '26.0.2',
+    '26.0.1',
     '26.0.0',
     '25.23.3',
     '25.23.2',

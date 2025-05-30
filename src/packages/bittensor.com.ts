@@ -13,6 +13,7 @@ export const bittensorcomPackage = {
     'openssl.org^1.1',
   ] as const,
   versions: [
+    '9.7.0',
     '9.6.1',
     '9.6.0',
     '9.5.0',

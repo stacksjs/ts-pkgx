@@ -21,6 +21,7 @@ export const flutterdevPackage = {
     'info-zip.org/unzip',
   ] as const,
   versions: [
+    '3.32.1',
     '3.32.0',
     '3.29.3',
     '3.29.2',

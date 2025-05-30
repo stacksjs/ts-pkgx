@@ -31,24 +31,24 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 26 versions</summary>
+<summary>Show all 27 versions</summary>
 
-- `1.10.2`, `1.10.1`, `1.10.0`, `1.9.6`, `1.9.5`
-- `1.9.4`, `1.9.3`, `1.9.2`, `1.9.1`, `1.9.0`
-- `1.8.4`, `1.8.3`, `1.8.2`, `1.8.1`, `1.8.0`
-- `1.7.7`, `1.7.6`, `1.7.5`, `1.7.4`, `1.7.3`
-- `1.7.2`, `1.7.1`, `1.7.0`, `1.6.8`, `1.6.7`
-- `1.6.6`
+- `1.10.3`, `1.10.2`, `1.10.1`, `1.10.0`, `1.9.6`
+- `1.9.5`, `1.9.4`, `1.9.3`, `1.9.2`, `1.9.1`
+- `1.9.0`, `1.8.4`, `1.8.3`, `1.8.2`, `1.8.1`
+- `1.8.0`, `1.7.7`, `1.7.6`, `1.7.5`, `1.7.4`
+- `1.7.3`, `1.7.2`, `1.7.1`, `1.7.0`, `1.6.8`
+- `1.6.7`, `1.6.6`
 
 </details>
 
-**Latest Version**: `1.10.2`
+**Latest Version**: `1.10.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx talosctl@1.10.2
+pkgx talosctl@1.10.3
 ```
 
 ## Usage Examples

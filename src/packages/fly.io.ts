@@ -13,6 +13,7 @@ export const flyioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.3.135',
     '0.3.134',
     '0.3.132',
     '0.3.131',

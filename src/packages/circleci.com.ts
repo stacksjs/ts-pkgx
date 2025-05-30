@@ -12,6 +12,7 @@ export const circlecicomPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.1.32145',
     '0.1.32111',
     '0.1.32067',
     '0.1.31983',

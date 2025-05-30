@@ -25,22 +25,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 16 versions</summary>
+<summary>Show all 17 versions</summary>
 
-- `0.60.0`, `0.59.0`, `0.58.0`, `0.57.0`, `0.56.0`
-- `0.55.0`, `0.54.0`, `0.53.0`, `0.52.0`, `0.51.0`
-- `0.50.0`, `0.49.1`, `0.49.0`, `0.48.0`, `0.47.0`
-- `0.46.0`
+- `0.61.0`, `0.60.0`, `0.59.0`, `0.58.0`, `0.57.0`
+- `0.56.0`, `0.55.0`, `0.54.0`, `0.53.0`, `0.52.0`
+- `0.51.0`, `0.50.0`, `0.49.1`, `0.49.0`, `0.48.0`
+- `0.47.0`, `0.46.0`
 
 </details>
 
-**Latest Version**: `0.60.0`
+**Latest Version**: `0.61.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx conftest@0.60.0
+pkgx conftest@0.61.0
 ```
 
 ## Usage Examples

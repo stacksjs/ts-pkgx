@@ -12,6 +12,7 @@ export const tiltdevPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.34.5',
     '0.34.4',
     '0.34.3',
     '0.34.2',

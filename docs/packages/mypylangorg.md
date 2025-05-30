@@ -27,23 +27,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 23 versions</summary>
+<summary>Show all 24 versions</summary>
 
-- `1.15.0`, `1.14.1`, `1.14.0`, `1.13.0`, `1.12.1`
-- `1.12.0`, `1.11.2`, `1.11.1`, `1.11.0`, `1.10.1`
-- `1.10.0`, `1.9.0`, `1.8.0`, `1.7.1`, `1.7.0`
-- `1.6.1`, `1.6.0`, `1.5.1`, `1.5.0`, `1.4.1`
-- `1.4.0`, `1.3.0`, `1.2.0`
+- `1.16.0`, `1.15.0`, `1.14.1`, `1.14.0`, `1.13.0`
+- `1.12.1`, `1.12.0`, `1.11.2`, `1.11.1`, `1.11.0`
+- `1.10.1`, `1.10.0`, `1.9.0`, `1.8.0`, `1.7.1`
+- `1.7.0`, `1.6.1`, `1.6.0`, `1.5.1`, `1.5.0`
+- `1.4.1`, `1.4.0`, `1.3.0`, `1.2.0`
 
 </details>
 
-**Latest Version**: `1.15.0`
+**Latest Version**: `1.16.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx mypy-lang.org@1.15.0
+pkgx mypy-lang.org@1.16.0
 ```
 
 ## Dependencies

@@ -12,6 +12,8 @@ export const depotdevPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '2.85.6',
+    '2.85.5',
     '2.85.4',
     '2.85.3',
     '2.85.2',

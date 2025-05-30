@@ -25,23 +25,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 22 versions</summary>
+<summary>Show all 23 versions</summary>
 
-- `0.34.4`, `0.34.3`, `0.34.2`, `0.34.1`, `0.34.0`
-- `0.33.22`, `0.33.21`, `0.33.20`, `0.33.19`, `0.33.18`
-- `0.33.17`, `0.33.16`, `0.33.15`, `0.33.14`, `0.33.13`
-- `0.33.12`, `0.33.11`, `0.33.10`, `0.33.9`, `0.33.8`
-- `0.33.7`, `0.33.6`
+- `0.34.5`, `0.34.4`, `0.34.3`, `0.34.2`, `0.34.1`
+- `0.34.0`, `0.33.22`, `0.33.21`, `0.33.20`, `0.33.19`
+- `0.33.18`, `0.33.17`, `0.33.16`, `0.33.15`, `0.33.14`
+- `0.33.13`, `0.33.12`, `0.33.11`, `0.33.10`, `0.33.9`
+- `0.33.8`, `0.33.7`, `0.33.6`
 
 </details>
 
-**Latest Version**: `0.34.4`
+**Latest Version**: `0.34.5`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx tilt@0.34.4
+pkgx tilt@0.34.5
 ```
 
 ## Usage Examples

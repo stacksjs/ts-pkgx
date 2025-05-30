@@ -12,6 +12,7 @@ export const talosdevPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '1.10.3',
     '1.10.2',
     '1.10.1',
     '1.10.0',

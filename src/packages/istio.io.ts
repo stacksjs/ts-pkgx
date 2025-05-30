@@ -12,6 +12,7 @@ export const istioioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '1.26.1',
     '1.26.0',
     '1.25.3',
     '1.25.2',

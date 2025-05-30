@@ -16,6 +16,7 @@ export const mypylangorgPackage = {
     'pkgx.sh^1',
   ] as const,
   versions: [
+    '1.16.0',
     '1.15.0',
     '1.14.1',
     '1.14.0',

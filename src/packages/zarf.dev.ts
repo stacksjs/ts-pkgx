@@ -12,6 +12,7 @@ export const zarfdevPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '0.55.6',
     '0.55.5',
     '0.55.4',
     '0.55.2',

@@ -12,6 +12,7 @@ export const vaultprojectioPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '1.19.5',
     '1.19.4',
     '1.19.3',
     '1.19.2',
