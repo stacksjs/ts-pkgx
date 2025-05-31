@@ -68,13 +68,13 @@
   "devDependencies": {
     "@stacksjs/docs": "^0.70.23",
     "@stacksjs/eslint-config": "^4.14.0-beta.3",
-    "@types/bun": "^1.2.14",
+    "@types/bun": "^1.2.15",
     "bumpp": "^10.1.1",
     "bun-plugin-dtsx": "0.9.4",
     "changelogen": "^0.6.1",
     "chromium-bidi": "^5.3.1",
-    "electron": "^36.3.1",
-    "lint-staged": "^16.0.0",
+    "electron": "^36.3.2",
+    "lint-staged": "^16.1.0",
     "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3"
   },
