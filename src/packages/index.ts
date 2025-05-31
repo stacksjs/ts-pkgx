@@ -15671,7 +15671,7 @@ export interface Pantry {
    *
    * @domain `squawkhq.com`
    * @programs `squawk`
-   * @version `2.10.0` (33 versions available)
+   * @version `2.11.0` (34 versions available)
    * @install `sh <(curl https://pkgx.sh) squawk`
    *
    * @example
@@ -15682,7 +15682,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "squawk"
    * console.log(pkg.description) // "🐘 linter for PostgreSQL, focused on migrations"
    * console.log(pkg.programs)    // ["squawk"]
-   * console.log(pkg.versions[0]) // "2.10.0"
+   * console.log(pkg.versions[0]) // "2.11.0"
    * ```
    */
   squawkhqcom: squawkhq_com.SquawkhqcomPackage

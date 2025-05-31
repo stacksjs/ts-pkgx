@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-31T03:55:40.793Z
+- **Last Updated**: 2025-05-31T09:46:18.482Z
 
 ## Table of Contents
 
@@ -872,7 +872,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[sphinxdocorg](./packages/sphinxdocorg.md)** () | Tool to create intelligent and beautiful documentation | sphinx-apidoc, sphinx-autogen, sphinx-build, ... (+1) | 8.2.3 (+41) | `pkgx sphinx` |
 | **[sqlcdev](./packages/sqlcdev.md)** () | Generate type-safe code from SQL | sqlc | 1.29.0 (+2) | `pkgx sqlc` |
 | **[sqlfluffcom](./packages/sqlfluffcom.md)** () | A modular SQL linter and auto-formatter with support for multiple dialects and templated code. | sqlfluff | 3.4.0 (+22) | `pkgx sqlfluff` |
-| **[squawkhqcom](./packages/squawkhqcom.md)** () | 🐘 linter for PostgreSQL, focused on migrations | squawk | 2.10.0 (+32) | `pkgx squawk` |
+| **[squawkhqcom](./packages/squawkhqcom.md)** () | 🐘 linter for PostgreSQL, focused on migrations | squawk | 2.11.0 (+33) | `pkgx squawk` |
 | **[srtallianceorg](./packages/srtallianceorg.md)** () | Secure, Reliable, Transport | srt-ffplay, srt-file-transmit, srt-live-transmit, ... (+1) | 1.5.4 (+2) | `pkgx srt` |
 | **[sshxio](./packages/sshxio.md)** () | Fast, collaborative live terminal sharing over the web | sshx | 2023.11.14 (+0) | `pkgx sshx` |
 | **[starshiprs](./packages/starshiprs.md)** () | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |
