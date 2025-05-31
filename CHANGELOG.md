@@ -1,4 +1,16 @@
 
+## v0.2.0...main
+
+[compare changes](https://github.com/stacksjs/ts-pkgx/compare/v0.2.0...main)
+
+### 🏡 Chore
+
+- Improve types ([3e0eed0](https://github.com/stacksjs/ts-pkgx/commit/3e0eed0))
+
+### ❤️ Contributors
+
+- Chris ([@chrisbbreuer](https://github.com/chrisbbreuer))
+
 ## v0.1.4...main
 
 [compare changes](https://github.com/stacksjs/ts-pkgx/compare/v0.1.4...main)
