@@ -25,6 +25,7 @@ export const freetdsorgPackage = {
     'gnu.org/readline',
   ] as const,
   versions: [
+    '1.5.2',
     '1.5.1',
     '1.4.27',
     '1.4.26',

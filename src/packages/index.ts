@@ -5358,7 +5358,7 @@ export interface Pantry {
    *
    * @domain `freetds.org`
    * @programs `bsqldb`, `bsqlodbc`, `datacopy`, `defncopy`, `fisql`, ... (+4 more)
-   * @version `1.5.1` (30 versions available)
+   * @version `1.5.2` (31 versions available)
    * @install `sh <(curl https://pkgx.sh) +freetds.org -- $SHELL -i`
    * @dependencies `openssl.org^1.1`, `unixodbc.org`, `kerberos.org`, ... (+1 more)
    *
@@ -5370,7 +5370,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "freetds.org"
    * console.log(pkg.description) // "Libraries to talk to Microsoft SQL Server and S..."
    * console.log(pkg.programs)    // ["bsqldb", "bsqlodbc", ...]
-   * console.log(pkg.versions[0]) // "1.5.1"
+   * console.log(pkg.versions[0]) // "1.5.2"
    * ```
    */
   freetdsorg: freetds_org.FreetdsorgPackage
@@ -7907,7 +7907,7 @@ export interface Pantry {
    *
    * @domain `ipython.org`
    * @programs `ipython`, `ipython3`
-   * @version `9.2.0` (42 versions available)
+   * @version `9.3.0` (44 versions available)
    * @install `sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i`
    * @dependencies `pkgx.sh^1`
    *
@@ -7919,7 +7919,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "ipython"
    * console.log(pkg.description) // "Official repository for IPython itself. Other r..."
    * console.log(pkg.programs)    // ["ipython", "ipython3"]
-   * console.log(pkg.versions[0]) // "9.2.0"
+   * console.log(pkg.versions[0]) // "9.3.0"
    * ```
    */
   ipythonorg: ipython_org.IpythonorgPackage
@@ -10739,7 +10739,7 @@ export interface Pantry {
    *
    * @domain `mise.jdx.dev`
    * @programs `rtx`, `mise`
-   * @version `2025.5.16` (281 versions available)
+   * @version `2025.5.17` (282 versions available)
    * @install `sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i`
    * @dependencies `openssl.org^1.1`, `libgit2.org^1`
    *
@@ -10751,7 +10751,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "mise"
    * console.log(pkg.description) // "dev tools, env vars, task runner"
    * console.log(pkg.programs)    // ["rtx", "mise"]
-   * console.log(pkg.versions[0]) // "2025.5.16"
+   * console.log(pkg.versions[0]) // "2025.5.17"
    * ```
    */
   misejdxdev: mise_jdx_dev.MisejdxdevPackage

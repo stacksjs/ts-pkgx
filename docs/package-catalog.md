@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-31T16:47:09.818Z
+- **Last Updated**: 2025-05-31T21:47:01.060Z
 
 ## Table of Contents
 
@@ -409,7 +409,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[fnaxnagithubio](./packages/fnaxnagithubio.md)** () | FAudio - Accuracy-focused XAudio reimplementation for open platforms | - | 25.5.0 (+16) | `pkgx fna-xna.github.io` |
 | **[freedesktoporg](./packages/freedesktoporg.md)** |  | - | latest | `pkgx freedesktop.org` |
 | **[freeglutsourceforgeio](./packages/freeglutsourceforgeio.md)** () | Free implementation of the OpenGL Utility Toolkit (GLUT) | - | 3.6.0 (+1) | `pkgx freeglut.sourceforge.io` |
-| **[freetdsorg](./packages/freetdsorg.md)** () | Libraries to talk to Microsoft SQL Server and Sybase databases | bsqldb, bsqlodbc, datacopy, ... (+6) | 1.5.1 (+29) | `pkgx freetds.org` |
+| **[freetdsorg](./packages/freetdsorg.md)** () | Libraries to talk to Microsoft SQL Server and Sybase databases | bsqldb, bsqlodbc, datacopy, ... (+6) | 1.5.2 (+30) | `pkgx freetds.org` |
 | **[freetypeorg](./packages/freetypeorg.md)** |  | - | 2.13.3 (+3) | `pkgx freetype.org` |
 | **[frei0rdyneorg](./packages/frei0rdyneorg.md)** |  | - | 1.8.0 (+0) | `pkgx frei0r.dyne.org` |
 | **[fuellabsgithubio](./packages/fuellabsgithubio.md)** |  | - | latest | `pkgx fuellabs.github.io` |
@@ -524,7 +524,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[invisibleislandnet](./packages/invisibleislandnet.md)** |  | - | latest | `pkgx invisible-island.net` |
 | **[invisibleislandnetlynx](./packages/invisibleislandnetlynx.md)** (lynx) | Text-based web browser | lynx | 2.9.2 (+0) | `pkgx lynx` |
 | **[ipfstech](./packages/ipfstech.md)** () | Peer-to-peer hypermedia protocol | ipfs | 0.35.0 (+27) | `pkgx ipfs` |
-| **[ipythonorg](./packages/ipythonorg.md)** () | Official repository for IPython itself. Other repos in the IPython organization contain things li... | ipython, ipython3 | 9.2.0 (+41) | `pkgx ipython` |
+| **[ipythonorg](./packages/ipythonorg.md)** () | Official repository for IPython itself. Other repos in the IPython organization contain things li... | ipython, ipython3 | 9.3.0 (+43) | `pkgx ipython` |
 | **[irohcomputer](./packages/irohcomputer.md)** () | peer-2-peer that just works | iroh | 0.35.0 (+34) | `pkgx iroh` |
 | **[iscorg](./packages/iscorg.md)** |  | - | latest | `pkgx isc.org` |
 | **[iscorgbind9](./packages/iscorgbind9.md)** (bind9) |  | arpaname, delv, dig, ... (+26) | 9.21.8 (+11) | `pkgx bind9` |
@@ -658,7 +658,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoftcommarkitdown](./packages/microsoftcommarkitdown.md)** (markitdown) | Python tool for converting files and office documents to Markdown. | markitdown | 0.0.1.3 (+0) | `pkgx markitdown` |
 | **[midnightcommanderorg](./packages/midnightcommanderorg.md)** (midnight commander) | Terminal-based visual file manager | mc, mcdiff, mcedit, ... (+1) | 4.8.33 (+5) | `pkgx Midnight Commander` |
 | **[minio](./packages/minio.md)** (minio) | MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license. | minio | 2023.10.25.6.33.25 (+0) | `pkgx minio` |
-| **[misejdxdev](./packages/misejdxdev.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.5.16 (+280) | `pkgx mise` |
+| **[misejdxdev](./packages/misejdxdev.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.5.17 (+281) | `pkgx mise` |
 | **[mitmproxyorg](./packages/mitmproxyorg.md)** () | An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers. | mitmproxy | 12.1.1 (+26) | `pkgx mitmproxy` |
 | **[mkcertdev](./packages/mkcertdev.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you'd l... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
 | **[mkdocsorg](./packages/mkdocsorg.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
