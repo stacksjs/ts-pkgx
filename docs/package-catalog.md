@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-31T09:46:18.482Z
+- **Last Updated**: 2025-05-31T14:46:20.781Z
 
 ## Table of Contents
 
@@ -177,7 +177,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.49.0 (+20) | `pkgx git` |
 | **[neovimio](./packages/neovimio.md)** (nvim) | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** () | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
-| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1418 (+1992) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1420 (+1994) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
@@ -704,7 +704,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[oberhumercom](./packages/oberhumercom.md)** |  | - | latest | `pkgx oberhumer.com` |
 | **[oberhumercomucl](./packages/oberhumercomucl.md)** (ucl) |  | - | 1.3.0 (+0) | `pkgx oberhumer.com/ucl` |
 | **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.189 (+173) | `pkgx odigos` |
-| **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.0.4 (+275) | `pkgx oh-my-posh` |
+| **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.0.5 (+276) | `pkgx oh-my-posh` |
 | **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.0 (+96) | `pkgx ollama` |
 | **[onefetchdev](./packages/onefetchdev.md)** () | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch` |
 | **[onsigithubio](./packages/onsigithubio.md)** |  | - | latest | `pkgx onsi.github.io` |

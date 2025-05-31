@@ -11880,7 +11880,7 @@ export interface Pantry {
    *
    * @domain `ohmyposh.dev`
    * @programs `oh-my-posh`
-   * @version `26.0.4` (276 versions available)
+   * @version `26.0.5` (277 versions available)
    * @install `sh <(curl https://pkgx.sh) oh-my-posh`
    * @aliases `oh-my-posh`
    *
@@ -11892,7 +11892,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "oh-my-posh"
    * console.log(pkg.description) // "The most customisable and low-latency cross pla..."
    * console.log(pkg.programs)    // ["oh-my-posh"]
-   * console.log(pkg.versions[0]) // "26.0.4"
+   * console.log(pkg.versions[0]) // "26.0.5"
    * ```
    */
   ohmyposhdev: ohmyposh_dev.OhmyposhdevPackage
@@ -17383,7 +17383,7 @@ export interface Pantry {
    *
    * @domain `vim.org`
    * @programs `vim`, `vi`
-   * @version `9.1.1418` (1993 versions available)
+   * @version `9.1.1420` (1995 versions available)
    * @install `sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i`
    * @dependencies `python.org~3.11`, `lua.org>=5.4`, `invisible-island.net/ncurses>=6.3`, ... (+2 more)
    *
@@ -17395,7 +17395,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "vim.org"
    * console.log(pkg.description) // "The official Vim repository"
    * console.log(pkg.programs)    // ["vim", "vi"]
-   * console.log(pkg.versions[0]) // "9.1.1418"
+   * console.log(pkg.versions[0]) // "9.1.1420"
    * ```
    */
   vimorg: vim_org.VimorgPackage
