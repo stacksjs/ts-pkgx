@@ -1,18 +1,61 @@
+/**
+ * **cryptography.io** - cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.
+ *
+ * @domain `cryptography.io`
+ * @version `45.0.3` (20 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cryptography-io.md
+ * @install `sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i`
+ * @dependencies `python.org>=3.11`, `github.com/python-cffi/cffi^1.16`, `openssl.org>=1.1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.cryptographyio
+ * console.log(pkg.name)        // "cryptography.io"
+ * console.log(pkg.description) // "cryptography is a package designed to expose cr..."
+ * console.log(pkg.versions[0]) // "45.0.3" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/cryptography-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const cryptographyioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'cryptography.io' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'cryptography.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cryptography.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'python.org>=3.11',
     'github.com/python-cffi/cffi^1.16',
     'openssl.org>=1.1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '45.0.3',
     '45.0.2',

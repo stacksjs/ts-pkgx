@@ -1,18 +1,72 @@
-export const materializecomPackage = {
+/**
+ * **mz** - Real-time Data Integration and Transformation: use SQL to transform, deliver, and act on fast-changing data.
+ *
+ * @domain `materialize.com`
+ * @programs `mz`
+ * @version `0.112.2` (45 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/materialize-com.md
+ * @install `sh <(curl https://pkgx.sh) mz`
+ * @aliases `mz`
+ * @dependencies `openssl.org^1.1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.mz
+ * // Or access via domain
+ * const samePkg = pantry.materializecom
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "mz"
+ * console.log(pkg.description) // "Real-time Data Integration and Transformation: ..."
+ * console.log(pkg.programs)    // ["mz"]
+ * console.log(pkg.versions[0]) // "0.112.2" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/materialize-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const mzPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'mz' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'materialize.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Real-time Data Integration and Transformation: use SQL to transform, deliver, and act on fast-changing data.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/materialize.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) mz' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'mz',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'openssl.org^1.1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.112.2',
     '0.111.3',
@@ -61,9 +115,13 @@ export const materializecomPackage = {
     '0.67.3',
   ] as const,
   fullPath: 'materialize.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'mz',
   ] as const,
 }
 
-export type MaterializecomPackage = typeof materializecomPackage
+export type MzPackage = typeof mzPackage

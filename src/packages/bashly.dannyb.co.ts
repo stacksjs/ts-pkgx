@@ -1,21 +1,75 @@
+/**
+ * **bashly** - Bash command line framework and CLI generator
+ *
+ * @domain `bashly.dannyb.co`
+ * @programs `bashly`
+ * @version `1.2.12` (14 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bashly-dannyb-co.md
+ * @install `sh <(curl https://pkgx.sh) bashly`
+ * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
+ * @companions `gnu.org/bash`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.bashlydannybco
+ * console.log(pkg.name)        // "bashly"
+ * console.log(pkg.description) // "Bash command line framework and CLI generator"
+ * console.log(pkg.programs)    // ["bashly"]
+ * console.log(pkg.versions[0]) // "1.2.12" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/bashly-dannyb-co.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const bashlydannybcoPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'bashly' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'bashly.dannyb.co' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Bash command line framework and CLI generator' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bashly.dannyb.co/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) bashly' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'bashly',
   ] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
   companions: [
     'gnu.org/bash',
   ] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'ruby-lang.org^3.1',
     'rubygems.org',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.2.12',
     '1.2.11',

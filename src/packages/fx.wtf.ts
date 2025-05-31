@@ -1,16 +1,60 @@
+/**
+ * **fx** - Terminal JSON viewer & processor
+ *
+ * @domain `fx.wtf`
+ * @programs `fx`
+ * @version `36.0.3` (17 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fx-wtf.md
+ * @install `sh <(curl https://pkgx.sh) fx`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.fxwtf
+ * console.log(pkg.name)        // "fx"
+ * console.log(pkg.description) // "Terminal JSON viewer & processor"
+ * console.log(pkg.programs)    // ["fx"]
+ * console.log(pkg.versions[0]) // "36.0.3" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/fx-wtf.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const fxwtfPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'fx' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'fx.wtf' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Terminal JSON viewer & processor' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fx.wtf/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) fx' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'fx',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '36.0.3',
     '36.0.2',

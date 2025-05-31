@@ -1,16 +1,60 @@
+/**
+ * **traefik** - The Cloud Native Application Proxy
+ *
+ * @domain `traefik.io`
+ * @programs `traefik`
+ * @version `3.4.1` (58 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/traefik-io.md
+ * @install `sh <(curl https://pkgx.sh) traefik`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.traefikio
+ * console.log(pkg.name)        // "traefik"
+ * console.log(pkg.description) // "The Cloud Native Application Proxy"
+ * console.log(pkg.programs)    // ["traefik"]
+ * console.log(pkg.versions[0]) // "3.4.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/traefik-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const traefikioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'traefik' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'traefik.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The Cloud Native Application Proxy' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/traefik.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) traefik' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'traefik',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '3.4.1',
     '3.4.0',

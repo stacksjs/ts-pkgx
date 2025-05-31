@@ -1,16 +1,60 @@
+/**
+ * **iroh** - peer-2-peer that just works
+ *
+ * @domain `iroh.computer`
+ * @programs `iroh`
+ * @version `0.35.0` (35 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/iroh-computer.md
+ * @install `sh <(curl https://pkgx.sh) iroh`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.irohcomputer
+ * console.log(pkg.name)        // "iroh"
+ * console.log(pkg.description) // "peer-2-peer that just works"
+ * console.log(pkg.programs)    // ["iroh"]
+ * console.log(pkg.versions[0]) // "0.35.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/iroh-computer.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const irohcomputerPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'iroh' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'iroh.computer' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'peer-2-peer that just works' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/iroh.computer/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) iroh' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'iroh',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.35.0',
     '0.34.1',

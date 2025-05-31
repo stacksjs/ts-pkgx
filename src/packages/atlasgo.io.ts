@@ -1,16 +1,60 @@
+/**
+ * **atlas** - Manage your database schema as code
+ *
+ * @domain `atlasgo.io`
+ * @programs `atlas`
+ * @version `0.34.0` (21 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/atlasgo-io.md
+ * @install `sh <(curl https://pkgx.sh) atlas`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.atlasgoio
+ * console.log(pkg.name)        // "atlas"
+ * console.log(pkg.description) // "Manage your database schema as code"
+ * console.log(pkg.programs)    // ["atlas"]
+ * console.log(pkg.versions[0]) // "0.34.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/atlasgo-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const atlasgoioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'atlas' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'atlasgo.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Manage your database schema as code' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/atlasgo.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) atlas' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'atlas',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.34.0',
     '0.33.0',

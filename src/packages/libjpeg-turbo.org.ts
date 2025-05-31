@@ -1,11 +1,51 @@
+/**
+ * **libjpeg-turbo.org** - Main libjpeg-turbo repository
+ *
+ * @domain `libjpeg-turbo.org`
+ * @programs `cjpeg`, `djpeg`, `jpegtran`, `rdjpgcom`, `tjbench`, ... (+1 more)
+ * @version `3.1.0` (7 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libjpeg-turbo-org.md
+ * @install `sh <(curl https://pkgx.sh) +libjpeg-turbo.org -- $SHELL -i`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.libjpeg-turboorg
+ * console.log(pkg.name)        // "libjpeg-turbo.org"
+ * console.log(pkg.description) // "Main libjpeg-turbo repository"
+ * console.log(pkg.programs)    // ["cjpeg", "djpeg", ...]
+ * console.log(pkg.versions[0]) // "3.1.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/libjpeg-turbo-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const libjpegturboorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'libjpeg-turbo.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'libjpeg-turbo.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Main libjpeg-turbo repository' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libjpeg-turbo.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +libjpeg-turbo.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'cjpeg',
     'djpeg',
@@ -16,6 +56,10 @@ export const libjpegturboorgPackage = {
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '3.1.0',
     '3.0.4',

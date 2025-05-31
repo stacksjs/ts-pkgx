@@ -1,11 +1,52 @@
+/**
+ * **pulumi** - Pulumi - Infrastructure as Code in any programming language 🚀
+ *
+ * @domain `pulumi.io`
+ * @programs `pulumi`, `pulumi-analyzer-policy`, `pulumi-analyzer-policy-python`, `pulumi-language-dotnet`, `pulumi-language-go`, ... (+8 more)
+ * @version `3.173.0` (136 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pulumi-io.md
+ * @install `sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i`
+ * @dependencies `curl.se/ca-certs`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.pulumiio
+ * console.log(pkg.name)        // "pulumi"
+ * console.log(pkg.description) // "Pulumi - Infrastructure as Code in any programm..."
+ * console.log(pkg.programs)    // ["pulumi", "pulumi-analyzer-policy", ...]
+ * console.log(pkg.versions[0]) // "3.173.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/pulumi-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const pulumiioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'pulumi' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'pulumi.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Pulumi - Infrastructure as Code in any programming language 🚀' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pulumi.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'pulumi',
     'pulumi-analyzer-policy',
@@ -22,9 +63,17 @@ export const pulumiioPackage = {
     'pulumi-watch',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'curl.se/ca-certs',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '3.173.0',
     '3.172.0',

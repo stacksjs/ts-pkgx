@@ -1,16 +1,60 @@
+/**
+ * **gleam** - ⭐️ A friendly language for building type-safe, scalable systems!
+ *
+ * @domain `gleam.run`
+ * @programs `gleam`
+ * @version `1.10.0` (42 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gleam-run.md
+ * @install `sh <(curl https://pkgx.sh) gleam`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.gleamrun
+ * console.log(pkg.name)        // "gleam"
+ * console.log(pkg.description) // "⭐️ A friendly language for building type-safe, ..."
+ * console.log(pkg.programs)    // ["gleam"]
+ * console.log(pkg.versions[0]) // "1.10.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/gleam-run.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const gleamrunPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'gleam' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'gleam.run' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: '⭐️ A friendly language for building type-safe, scalable systems!' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gleam.run/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) gleam' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'gleam',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.10.0',
     '1.9.1',

@@ -1,15 +1,60 @@
+/**
+ * **xpra** - Persistent remote applications for X11; screen sharing for X11, MacOS and MSWindows.
+ *
+ * @domain `xpra.org`
+ * @programs `xpra`
+ * @version `6.3.0` (9 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xpra-org.md
+ * @install `sh <(curl https://pkgx.sh) xpra`
+ * @dependencies `pkgx.sh^1`, `python.org~3.11`, `cython.org`, ... (+26 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.xpraorg
+ * console.log(pkg.name)        // "xpra"
+ * console.log(pkg.description) // "Persistent remote applications for X11; screen ..."
+ * console.log(pkg.programs)    // ["xpra"]
+ * console.log(pkg.versions[0]) // "6.3.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/xpra-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const xpraorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'xpra' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'xpra.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Persistent remote applications for X11; screen sharing for X11, MacOS and MSWindows.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/xpra.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) xpra' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'xpra',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'pkgx.sh^1',
     'python.org~3.11',
@@ -41,6 +86,10 @@ export const xpraorgPackage = {
     'gnome.org/atk',
     'gnome.org/pango',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '6.3.0',
     '6.2.5',

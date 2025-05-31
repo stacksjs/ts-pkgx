@@ -1,19 +1,68 @@
+/**
+ * **encore.dev** - Open Source Development Platform for building robust type-safe distributed systems with declarative infrastructure
+ *
+ * @domain `encore.dev`
+ * @programs `encore`, `git-remote-encore`
+ * @version `1.48.0` (52 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/encore-dev.md
+ * @install `sh <(curl https://pkgx.sh) +encore.dev -- $SHELL -i`
+ * @dependencies `encore.dev/go^1.21`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.encoredev
+ * console.log(pkg.name)        // "encore.dev"
+ * console.log(pkg.description) // "Open Source Development Platform for building r..."
+ * console.log(pkg.programs)    // ["encore", "git-remote-encore"]
+ * console.log(pkg.versions[0]) // "1.48.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/encore-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const encoredevPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'encore.dev' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'encore.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Open Source Development Platform for building robust type-safe distributed systems with declarative infrastructure' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/encore.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +encore.dev -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'encore',
     'git-remote-encore',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'encore.dev/go^1.21',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.48.0',
     '1.47.0',

@@ -1,11 +1,51 @@
+/**
+ * **zrok** - Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti.
+ *
+ * @domain `zrok.io`
+ * @programs `zrok`, `copyto`, `pastefrom`
+ * @version `1.0.4` (36 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zrok-io.md
+ * @install `sh <(curl https://pkgx.sh) +zrok.io -- $SHELL -i`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.zrokio
+ * console.log(pkg.name)        // "zrok"
+ * console.log(pkg.description) // "Geo-scale, next-generation peer-to-peer sharing..."
+ * console.log(pkg.programs)    // ["zrok", "copyto", ...]
+ * console.log(pkg.versions[0]) // "1.0.4" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/zrok-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const zrokioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'zrok' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'zrok.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/zrok.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +zrok.io -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'zrok',
     'copyto',
@@ -13,6 +53,10 @@ export const zrokioPackage = {
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.0.4',
     '1.0.3',

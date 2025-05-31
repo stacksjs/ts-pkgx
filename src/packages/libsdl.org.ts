@@ -1,13 +1,52 @@
+/**
+ * **libsdl.org** - Simple Directmedia Layer
+ *
+ * @domain `libsdl.org`
+ * @version `3.2.14` (32 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libsdl-org.md
+ * @install `sh <(curl https://pkgx.sh) +libsdl.org -- $SHELL -i`
+ * @dependencies `linuxx.org/x11x.org/xcursorx.org/xix.org/xrandrx.org/xfixesx.org/xrenderx.org/xscrnsaverx.org/exts`, `x.org/x11`, `x.org/xcursor`, ... (+6 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.libsdlorg
+ * console.log(pkg.name)        // "libsdl.org"
+ * console.log(pkg.description) // "Simple Directmedia Layer"
+ * console.log(pkg.versions[0]) // "3.2.14" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/libsdl-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const libsdlorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'libsdl.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'libsdl.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Simple Directmedia Layer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libsdl.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +libsdl.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'linuxx.org/x11x.org/xcursorx.org/xix.org/xrandrx.org/xfixesx.org/xrenderx.org/xscrnsaverx.org/exts',
     'x.org/x11',
@@ -19,6 +58,10 @@ export const libsdlorgPackage = {
     'x.org/xscrnsaver',
     'x.org/exts',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '3.2.14',
     '3.2.12',

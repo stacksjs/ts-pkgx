@@ -1,11 +1,52 @@
+/**
+ * **grpc** - The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
+ *
+ * @domain `grpc.io`
+ * @programs `grpc_csharp_plugin`, `grpc_node_plugin`, `grpc_cpp_plugin`, `grpc_python_plugin`, `grpc_objective_c_plugin`, ... (+3 more)
+ * @version `1.72.0` (43 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/grpc-io.md
+ * @install `sh <(curl https://pkgx.sh) +grpc.io -- $SHELL -i`
+ * @dependencies `abseil.io^20250127`, `c-ares.org`, `openssl.org^1.1`, ... (+5 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.grpcio
+ * console.log(pkg.name)        // "grpc"
+ * console.log(pkg.description) // "The C based gRPC (C++, Python, Ruby, Objective-..."
+ * console.log(pkg.programs)    // ["grpc_csharp_plugin", "grpc_node_plugin", ...]
+ * console.log(pkg.versions[0]) // "1.72.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/grpc-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const grpcioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'grpc' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'grpc.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +grpc.io -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'grpc_csharp_plugin',
     'grpc_node_plugin',
@@ -17,6 +58,10 @@ export const grpcioPackage = {
     'grpc_cli',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'abseil.io^20250127',
     'c-ares.org',
@@ -27,6 +72,10 @@ export const grpcioPackage = {
     'gnu.org/gcc/libstdcxx',
     'protobuf.dev@30.0.0',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.72.0',
     '1.71.1',

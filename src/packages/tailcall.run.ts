@@ -1,16 +1,60 @@
+/**
+ * **tailcall** - High Performance GraphQL Runtime
+ *
+ * @domain `tailcall.run`
+ * @programs `tailcall`
+ * @version `1.6.11` (623 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tailcall-run.md
+ * @install `sh <(curl https://pkgx.sh) tailcall`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.tailcallrun
+ * console.log(pkg.name)        // "tailcall"
+ * console.log(pkg.description) // "High Performance GraphQL Runtime"
+ * console.log(pkg.programs)    // ["tailcall"]
+ * console.log(pkg.versions[0]) // "1.6.11" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/tailcall-run.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const tailcallrunPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'tailcall' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'tailcall.run' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'High Performance GraphQL Runtime' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tailcall.run/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) tailcall' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'tailcall',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.6.11',
     '1.6.10',

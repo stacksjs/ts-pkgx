@@ -1,16 +1,60 @@
+/**
+ * **maturin** - Build and publish crates with pyo3, cffi and uniffi bindings as well as rust binaries as python packages
+ *
+ * @domain `maturin.rs`
+ * @programs `maturin`
+ * @version `1.8.6` (19 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/maturin-rs.md
+ * @install `sh <(curl https://pkgx.sh) maturin`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.maturinrs
+ * console.log(pkg.name)        // "maturin"
+ * console.log(pkg.description) // "Build and publish crates with pyo3, cffi and un..."
+ * console.log(pkg.programs)    // ["maturin"]
+ * console.log(pkg.versions[0]) // "1.8.6" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/maturin-rs.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const maturinrsPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'maturin' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'maturin.rs' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Build and publish crates with pyo3, cffi and uniffi bindings as well as rust binaries as python packages' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/maturin.rs/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) maturin' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'maturin',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.8.6',
     '1.8.5',

@@ -1,21 +1,70 @@
+/**
+ * **mongodb.com** - The MongoDB Database
+ *
+ * @domain `mongodb.com`
+ * @programs `install_compass`, `mongod`, `mongos`
+ * @version `8.1.1` (31 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mongodb-com.md
+ * @install `sh <(curl https://pkgx.sh) +mongodb.com -- $SHELL -i`
+ * @dependencies `curl.se@8`, `openssl.org@1.1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.mongodbcom
+ * console.log(pkg.name)        // "mongodb.com"
+ * console.log(pkg.description) // "The MongoDB Database"
+ * console.log(pkg.programs)    // ["install_compass", "mongod", ...]
+ * console.log(pkg.versions[0]) // "8.1.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/mongodb-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const mongodbcomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'mongodb.com' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'mongodb.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The MongoDB Database' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mongodb.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +mongodb.com -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'install_compass',
     'mongod',
     'mongos',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'curl.se@8',
     'openssl.org@1.1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '8.1.1',
     '8.1.0',

@@ -1,21 +1,70 @@
+/**
+ * **laravel** - The Laravel application installer.
+ *
+ * @domain `laravel.com`
+ * @programs `laravel`
+ * @version `5.15.0` (16 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/laravel-com.md
+ * @install `sh <(curl https://pkgx.sh) laravel`
+ * @dependencies `php.net^8.2`, `getcomposer.org^2.7`, `linuxinfo-zip.org/unzip^6`, ... (+1 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.laravelcom
+ * console.log(pkg.name)        // "laravel"
+ * console.log(pkg.description) // "The Laravel application installer."
+ * console.log(pkg.programs)    // ["laravel"]
+ * console.log(pkg.versions[0]) // "5.15.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/laravel-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const laravelcomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'laravel' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'laravel.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The Laravel application installer.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/laravel.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) laravel' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'laravel',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'php.net^8.2',
     'getcomposer.org^2.7',
     'linuxinfo-zip.org/unzip^6',
     'info-zip.org/unzip^6',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '5.15.0',
     '5.14.1',

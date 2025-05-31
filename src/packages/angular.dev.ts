@@ -1,18 +1,72 @@
-export const angulardevPackage = {
+/**
+ * **ng** - CLI tool for Angular
+ *
+ * @domain `angular.dev`
+ * @programs `ng`
+ * @version `20.0.0` (104 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/angular-dev.md
+ * @install `sh <(curl https://pkgx.sh) ng`
+ * @aliases `ng`
+ * @dependencies `nodejs.org^20`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.ng
+ * // Or access via domain
+ * const samePkg = pantry.angulardev
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "ng"
+ * console.log(pkg.description) // "CLI tool for Angular"
+ * console.log(pkg.programs)    // ["ng"]
+ * console.log(pkg.versions[0]) // "20.0.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/angular-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const ngPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'ng' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'angular.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'CLI tool for Angular' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/angular.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) ng' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'ng',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'nodejs.org^20',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '20.0.0',
     '19.2.14',
@@ -120,9 +174,13 @@ export const angulardevPackage = {
     '15.2.11',
   ] as const,
   fullPath: 'angular.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'ng',
   ] as const,
 }
 
-export type AngulardevPackage = typeof angulardevPackage
+export type NgPackage = typeof ngPackage

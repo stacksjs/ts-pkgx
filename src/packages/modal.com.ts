@@ -1,16 +1,59 @@
+/**
+ * **modal.com** - Python client library for Modal
+ *
+ * @domain `modal.com`
+ * @version `1.0.2` (790 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/modal-com.md
+ * @install `sh <(curl https://pkgx.sh) +modal.com -- $SHELL -i`
+ * @dependencies `pkgx.sh@1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.modalcom
+ * console.log(pkg.name)        // "modal.com"
+ * console.log(pkg.description) // "Python client library for Modal"
+ * console.log(pkg.versions[0]) // "1.0.2" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/modal-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const modalcomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'modal.com' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'modal.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Python client library for Modal' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/modal.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +modal.com -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'pkgx.sh@1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.0.2',
     '1.0.1',

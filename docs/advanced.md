@@ -30,6 +30,53 @@ const result = await fetchPkgxPackage('rust-lang.org', { debug: true })
 
 Screenshots are saved in the `debug` directory.
 
+## Enhanced Package Generation
+
+ts-pkgx generates packages with comprehensive JSDoc documentation and intelligent naming conventions. Each package includes rich type hints and documentation links.
+
+### JSDoc Documentation Features
+
+Every generated package includes detailed JSDoc comments:
+
+```typescript
+/**
+ * Bun - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+ *
+ * **Programs:** bun
+ *
+ * **Install:** `pkgx bun.sh`
+ *
+ * **Homepage:** https://bun.sh
+ *
+ * **GitHub:** https://github.com/oven-sh/bun
+ *
+ * @see https://ts-pkgx.netlify.app/packages/bunsh
+ */
+export const bunPackage = {
+  /**
+   * List of available versions of this package
+   * From newest version to oldest.
+   * @see https://ts-pkgx.netlify.app/usage
+   */
+  versions: ['1.2.15', '1.2.14',] as const,
+  // ... other properties with comprehensive JSDoc
+}
+```
+
+### Alias-Based Variable Naming
+
+Packages with aliases use the primary alias for variable naming:
+
+```typescript
+// Packages with aliases use alias-based naming
+export const bunPackage = { ... }      // For bun.sh (alias: 'bun')
+export const nodePackage = { ... }     // For nodejs.org (alias: 'node')
+export const pythonPackage = { ... }   // For python.org (alias: 'python')
+
+// Packages without aliases use domain-based naming
+export const examplecomPackage = { ... } // For example.com (no alias)
+```
+
 ## Custom Package Transformation
 
 You can implement custom transformation logic when processing packages:

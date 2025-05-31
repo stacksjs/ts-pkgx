@@ -1,11 +1,52 @@
+/**
+ * **haskell.org** - Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
+ *
+ * @domain `haskell.org`
+ * @programs `ghc`, `ghc-{{version.marketing}}`, `ghc-{{version}}`, `ghc-pkg`, `ghc-pkg-{{version.marketing}}`, ... (+23 more)
+ * @version `9.12.2` (19 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/haskell-org.md
+ * @install `sh <(curl https://pkgx.sh) +haskell.org -- $SHELL -i`
+ * @dependencies `gnu.org/gmp@6`, `invisible-island.net/ncurses@6`, `sourceware.org/libffi@3`, ... (+3 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.haskellorg
+ * console.log(pkg.name)        // "haskell.org"
+ * console.log(pkg.description) // "Mirror of the Glasgow Haskell Compiler. Please ..."
+ * console.log(pkg.programs)    // ["ghc", "ghc-{{version.marketing}}", ...]
+ * console.log(pkg.versions[0]) // "9.12.2" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/haskell-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const haskellorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'haskell.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'haskell.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC\'s Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/haskell.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +haskell.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'ghc',
     'ghc-{{version.marketing}}',
@@ -37,6 +78,10 @@ export const haskellorgPackage = {
     'runhaskell-{{version}}',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'gnu.org/gmp@6',
     'invisible-island.net/ncurses@6',
@@ -45,6 +90,10 @@ export const haskellorgPackage = {
     'github.com/numactl/numactl^2',
     'gnu.org/gcc',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '9.12.2',
     '9.12.1',

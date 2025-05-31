@@ -1,16 +1,60 @@
+/**
+ * **carapace** - Multi-shell multi-command argument completer
+ *
+ * @domain `carapace.sh`
+ * @programs `carapace`
+ * @version `1.3.2` (11 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/carapace-sh.md
+ * @install `sh <(curl https://pkgx.sh) carapace`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.carapacesh
+ * console.log(pkg.name)        // "carapace"
+ * console.log(pkg.description) // "Multi-shell multi-command argument completer"
+ * console.log(pkg.programs)    // ["carapace"]
+ * console.log(pkg.versions[0]) // "1.3.2" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/carapace-sh.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const carapaceshPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'carapace' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'carapace.sh' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Multi-shell multi-command argument completer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/carapace.sh/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) carapace' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'carapace',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.3.2',
     '1.3.1',

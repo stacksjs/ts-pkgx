@@ -1,19 +1,73 @@
-export const protobufdevPackage = {
+/**
+ * **protocol buffers** - Protocol Buffers - Google's data interchange format
+ *
+ * @domain `protobuf.dev`
+ * @programs `protoc`
+ * @version `31.1.0` (43 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/protobuf-dev.md
+ * @install `sh <(curl https://pkgx.sh) protoc`
+ * @aliases `protocol buffers`
+ * @dependencies `zlib.net^1`, `abseil.io`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.protocolbuffers
+ * // Or access via domain
+ * const samePkg = pantry.protobufdev
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "Protocol Buffers"
+ * console.log(pkg.description) // "Protocol Buffers - Google's data interchange fo..."
+ * console.log(pkg.programs)    // ["protoc"]
+ * console.log(pkg.versions[0]) // "31.1.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/protobuf-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const protocolbuffersPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'Protocol Buffers' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'protobuf.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Protocol Buffers - Google\'s data interchange format' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/protobuf.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) protoc' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'protoc',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'zlib.net^1',
     'abseil.io',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '31.1.0',
     '31.0.0',
@@ -60,9 +114,13 @@ export const protobufdevPackage = {
     '21.12.0',
   ] as const,
   fullPath: 'protobuf.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'protocol buffers',
   ] as const,
 }
 
-export type ProtobufdevPackage = typeof protobufdevPackage
+export type ProtocolbuffersPackage = typeof protocolbuffersPackage

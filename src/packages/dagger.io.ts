@@ -1,16 +1,60 @@
+/**
+ * **dagger** - An engine to run your pipelines in containers
+ *
+ * @domain `dagger.io`
+ * @programs `dagger`
+ * @version `0.18.9` (90 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dagger-io.md
+ * @install `sh <(curl https://pkgx.sh) dagger`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.daggerio
+ * console.log(pkg.name)        // "dagger"
+ * console.log(pkg.description) // "An engine to run your pipelines in containers"
+ * console.log(pkg.programs)    // ["dagger"]
+ * console.log(pkg.versions[0]) // "0.18.9" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/dagger-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const daggerioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'dagger' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'dagger.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'An engine to run your pipelines in containers' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dagger.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) dagger' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'dagger',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.18.9',
     '0.18.8',

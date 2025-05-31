@@ -1,20 +1,69 @@
+/**
+ * **mise** - dev tools, env vars, task runner
+ *
+ * @domain `mise.jdx.dev`
+ * @programs `rtx`, `mise`
+ * @version `2025.5.17` (282 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mise-jdx-dev.md
+ * @install `sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i`
+ * @dependencies `openssl.org^1.1`, `libgit2.org^1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.misejdxdev
+ * console.log(pkg.name)        // "mise"
+ * console.log(pkg.description) // "dev tools, env vars, task runner"
+ * console.log(pkg.programs)    // ["rtx", "mise"]
+ * console.log(pkg.versions[0]) // "2025.5.17" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/mise-jdx-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const misejdxdevPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'mise' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'mise.jdx.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'dev tools, env vars, task runner' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mise.jdx.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'rtx',
     'mise',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'openssl.org^1.1',
     'libgit2.org^1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2025.5.17',
     '2025.5.16',

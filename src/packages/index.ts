@@ -529,7 +529,6 @@ import * as nixos_org from './nixos.org'
 import * as nixpacks_com from './nixpacks.com'
 import * as nlnetlabs_nl from './nlnetlabs.nl'
 import * as nmap_org from './nmap.org'
-import * as node from './node'
 import * as nodejs_org from './nodejs.org'
 import * as nomadproject_io from './nomadproject.io'
 import * as nongnu_org from './nongnu.org'
@@ -645,7 +644,6 @@ import * as pyinvoke_org from './pyinvoke.org'
 import * as pypa_github_io from './pypa.github.io'
 import * as pypa_io from './pypa.io'
 import * as pytest_org from './pytest.org'
-import * as python from './python'
 import * as python_pillow_org from './python-pillow.org'
 import * as python_poetry_org from './python-poetry.org'
 import * as python_org from './python.org'
@@ -945,7 +943,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "0.4.7"
    * ```
    */
-  agptco: agpt_co.AgptcoPackage
+  agptco: agpt_co.AutogptPackage
 
   /**
    * **git-crypt** - Enable transparent encryption/decryption of files in a git repo
@@ -968,7 +966,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "0.7.0"
    * ```
    */
-  agwanamegitcrypt: agwa_name_git_crypt.AgwanamegitcryptPackage
+  agwanamegitcrypt: agwa_name_git_crypt.GitcryptPackage
 
   /**
    * **akuity.io**
@@ -1159,7 +1157,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "20.0.0"
    * ```
    */
-  angulardev: angular_dev.AngulardevPackage
+  angulardev: angular_dev.NgPackage
 
   /**
    * **ansible** - Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
@@ -1426,7 +1424,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "1.37.0"
    * ```
    */
-  aria2githubio: aria2_github_io.Aria2githubioPackage
+  aria2githubio: aria2_github_io.Aria2cPackage
 
   /**
    * **Arkade** - Open Source Marketplace For Developer Tools
@@ -1870,7 +1868,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "3.9.0"
    * ```
    */
-  beyondgrepcom: beyondgrep_com.BeyondgrepcomPackage
+  beyondgrepcom: beyondgrep_com.AckPackage
 
   /**
    * **biome** - A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers formatter and linter, usable via CLI and LSP.
@@ -1956,7 +1954,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "2025.4.0"
    * ```
    */
-  bitwardencom: bitwarden_com.BitwardencomPackage
+  bitwardencom: bitwarden_com.BwPackage
 
   /**
    * **blake2.net**
@@ -2140,7 +2138,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "0.37.0"
    * ```
    */
-  buildpacksio: buildpacks_io.BuildpacksioPackage
+  buildpacksio: buildpacks_io.PackPackage
 
   /**
    * **bun** - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
@@ -2263,7 +2261,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "1.18.4"
    * ```
    */
-  cairographicsorg: cairographics_org.CairographicsorgPackage
+  cairographicsorg: cairographics_org.CairotracePackage
 
   /**
    * **cstool** - Capstone disassembly/disassembler framework for ARM, ARM64 (ARMv8), Alpha, BPF, Ethereum VM, HPPA, LoongArch, M68K, M680X, Mips, MOS65XX, PPC, RISC-V(rv32G/rv64G), SH, Sparc, SystemZ, TMS320C64X, TriCore, Webassembly, XCore and X86.
@@ -2285,7 +2283,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "5.0.6"
    * ```
    */
-  capstoneengineorg: capstone_engine_org.CapstoneengineorgPackage
+  capstoneengineorg: capstone_engine_org.CstoolPackage
 
   /**
    * **carapace** - Multi-shell multi-command argument completer
@@ -2833,7 +2831,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "1.26.0"
    * ```
    */
-  cloudnativepgio: cloudnative_pg_io.CloudnativepgioPackage
+  cloudnativepgio: cloudnative_pg_io.KubectlcnpgPackage
 
   /**
    * **cmake.org** - Mirror of CMake upstream repository
@@ -2917,7 +2915,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "1.16.2"
    * ```
    */
-  cocoapodsorg: cocoapods_org.CocoapodsorgPackage
+  cocoapodsorg: cocoapods_org.PodPackage
 
   /**
    * **xcodeproj** - Create and modify Xcode projects from Ruby.
@@ -2963,7 +2961,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "6.3.0"
    * ```
    */
-  cocogittoio: cocogitto_io.CocogittoioPackage
+  cocogittoio: cocogitto_io.CogPackage
 
   /**
    * **code.videolan.org**
@@ -3903,7 +3901,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "0.8.2"
    * ```
    */
-  deepwisdomai: deepwisdom_ai.DeepwisdomaiPackage
+  deepwisdomai: deepwisdom_ai.MetagptPackage
 
   /**
    * **denilson.sa.nom.br**
@@ -3942,7 +3940,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "2.3.5"
    * ```
    */
-  denoland: deno_land.DenolandPackage
+  denoland: deno_land.DenoPackage
 
   /**
    * **depot** - 🖥️ Depot CLI, build your Docker images in the cloud
@@ -4216,27 +4214,17 @@ export interface Pantry {
   dkrzde: dkrz_de.DkrzdePackage
 
   /**
-   * **dog** - A command-line DNS client.
+   * **dns.lookup.dog** - pkgx package
    *
    * @domain `dns.lookup.dog`
-   * @programs `dog`
-   * @version `0.1.0` (1 versions available)
-   * @install `sh <(curl https://pkgx.sh) dog`
-   * @aliases `dog`
-   * @dependencies `openssl.org^1.1`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.dnslookupdog
-   * console.log(pkg.name)        // "dog"
-   * console.log(pkg.description) // "A command-line DNS client."
-   * console.log(pkg.programs)    // ["dog"]
-   * console.log(pkg.versions[0]) // "0.1.0"
    * ```
    */
-  dnslookupdog: dns_lookup_dog.DnslookupdogPackage
+  dnslookupdog: dns_lookup_dog.DogPackage
 
   /**
    * **docbook.org**
@@ -4727,26 +4715,17 @@ export interface Pantry {
   elizaosgithubio: elizaOS_github_io.ElizaosgithubioPackage
 
   /**
-   * **elvish** - Powerful scripting language & versatile interactive shell
+   * **elv.sh** - pkgx package
    *
    * @domain `elv.sh`
-   * @programs `elvish`
-   * @version `0.21.0` (4 versions available)
-   * @install `sh <(curl https://pkgx.sh) elvish`
-   * @aliases `elvish`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.elvsh
-   * console.log(pkg.name)        // "elvish"
-   * console.log(pkg.description) // "Powerful scripting language & versatile interac..."
-   * console.log(pkg.programs)    // ["elvish"]
-   * console.log(pkg.versions[0]) // "0.21.0"
    * ```
    */
-  elvsh: elv_sh.ElvshPackage
+  elvsh: elv_sh.ElvishPackage
 
   /**
    * **encore.dev** - Open Source Development Platform for building robust type-safe distributed systems with declarative infrastructure
@@ -5560,50 +5539,30 @@ export interface Pantry {
   geoffgreerfm: geoff_greer_fm.GeoffgreerfmPackage
 
   /**
-   * **cb** - 😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨𝙡𝙮 smart clipboard manager
+   * **getclipboard.app** - pkgx package
    *
    * @domain `getclipboard.app`
-   * @programs `cb`
-   * @version `0.9.1` (3 versions available)
-   * @install `sh <(curl https://pkgx.sh) cb`
-   * @aliases `cb`
-   * @dependencies `openssl.org^1.1`, `linuxalsa-project.org/alsa-lib@1x.org/x11@1wayland.freedesktop.org@1gnu.org/gcc/libstdcxx@14`, `alsa-project.org/alsa-lib@1`, ... (+3 more)
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.getclipboardapp
-   * console.log(pkg.name)        // "cb"
-   * console.log(pkg.description) // "😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨�..."
-   * console.log(pkg.programs)    // ["cb"]
-   * console.log(pkg.versions[0]) // "0.9.1"
    * ```
    */
-  getclipboardapp: getclipboard_app.GetclipboardappPackage
+  getclipboardapp: getclipboard_app.CbPackage
 
   /**
-   * **composer** - Dependency Manager for PHP
+   * **getcomposer.org** - pkgx package
    *
    * @domain `getcomposer.org`
-   * @programs `composer`, `composer.phar`
-   * @version `2.8.9` (30 versions available)
-   * @install `sh <(curl https://pkgx.sh) +getcomposer.org -- $SHELL -i`
-   * @aliases `composer`
-   * @dependencies `php.net`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.getcomposerorg
-   * console.log(pkg.name)        // "composer"
-   * console.log(pkg.description) // "Dependency Manager for PHP"
-   * console.log(pkg.programs)    // ["composer", "composer.phar"]
-   * console.log(pkg.versions[0]) // "2.8.9"
    * ```
    */
-  getcomposerorg: getcomposer_org.GetcomposerorgPackage
+  getcomposerorg: getcomposer_org.ComposerPackage
 
   /**
    * **getfoundry.sh** - Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.
@@ -5628,70 +5587,43 @@ export interface Pantry {
   getfoundrysh: getfoundry_sh.GetfoundryshPackage
 
   /**
-   * **sops** - Simple and flexible tool for managing secrets
+   * **getsops.io** - pkgx package
    *
    * @domain `getsops.io`
-   * @programs `sops`
-   * @version `3.10.2` (9 versions available)
-   * @install `sh <(curl https://pkgx.sh) sops`
-   * @aliases `sops`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.getsopsio
-   * console.log(pkg.name)        // "sops"
-   * console.log(pkg.description) // "Simple and flexible tool for managing secrets"
-   * console.log(pkg.programs)    // ["sops"]
-   * console.log(pkg.versions[0]) // "3.10.2"
    * ```
    */
-  getsopsio: getsops_io.GetsopsioPackage
+  getsopsio: getsops_io.SopsPackage
 
   /**
-   * **synth** - The Declarative Data Generator
+   * **getsynth.com** - pkgx package
    *
    * @domain `getsynth.com`
-   * @programs `synth`
-   * @version `0.6.9` (1 versions available)
-   * @install `sh <(curl https://pkgx.sh) synth`
-   * @aliases `synth`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.getsynthcom
-   * console.log(pkg.name)        // "synth"
-   * console.log(pkg.description) // "The Declarative Data Generator"
-   * console.log(pkg.programs)    // ["synth"]
-   * console.log(pkg.versions[0]) // "0.6.9"
    * ```
    */
-  getsynthcom: getsynth_com.GetsynthcomPackage
+  getsynthcom: getsynth_com.SynthPackage
 
   /**
-   * **zola** - A fast static site generator in a single binary with everything built-in. https://www.getzola.org
+   * **getzola.org** - pkgx package
    *
    * @domain `getzola.org`
-   * @programs `zola`
-   * @version `0.20.0` (6 versions available)
-   * @install `sh <(curl https://pkgx.sh) zola`
-   * @aliases `zola`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.getzolaorg
-   * console.log(pkg.name)        // "zola"
-   * console.log(pkg.description) // "A fast static site generator in a single binary..."
-   * console.log(pkg.programs)    // ["zola"]
-   * console.log(pkg.versions[0]) // "0.20.0"
    * ```
    */
-  getzolaorg: getzola_org.GetzolaorgPackage
+  getzolaorg: getzola_org.ZolaPackage
 
   /**
    * **geuz.org**
@@ -6752,7 +6684,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "1.24.3"
    * ```
    */
-  godev: go_dev.GodevPackage
+  godev: go_dev.GoPackage
 
   /**
    * **go.uber.org**
@@ -6771,26 +6703,17 @@ export interface Pantry {
   gouberorg: go_uber_org.GouberorgPackage
 
   /**
-   * **hugo** - The world’s fastest framework for building websites.
+   * **gohugo.io** - pkgx package
    *
    * @domain `gohugo.io`
-   * @programs `hugo`
-   * @version `0.147.7` (122 versions available)
-   * @install `sh <(curl https://pkgx.sh) hugo`
-   * @aliases `hugo`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.gohugoio
-   * console.log(pkg.name)        // "hugo"
-   * console.log(pkg.description) // "The world’s fastest framework for building webs..."
-   * console.log(pkg.programs)    // ["hugo"]
-   * console.log(pkg.versions[0]) // "0.147.7"
    * ```
    */
-  gohugoio: gohugo_io.GohugoioPackage
+  gohugoio: gohugo_io.HugoPackage
 
   /**
    * **golangci-lint** - Fast linters runner for Go
@@ -7391,26 +7314,17 @@ export interface Pantry {
   heasarcgsfcnasagov: heasarc_gsfc_nasa_gov.HeasarcgsfcnasagovPackage
 
   /**
-   * **hx** - A post-modern modal text editor.
+   * **helix/editor.com** - pkgx package
    *
    * @domain `helix/editor.com`
-   * @programs `hx`
-   * @version `25.1.1` (8 versions available)
-   * @install `sh <(curl https://pkgx.sh) hx`
-   * @aliases `hx`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.helixeditorcom
-   * console.log(pkg.name)        // "hx"
-   * console.log(pkg.description) // "A post-modern modal text editor."
-   * console.log(pkg.programs)    // ["hx"]
-   * console.log(pkg.versions[0]) // "25.1.1"
    * ```
    */
-  helixeditorcom: helix_editor_com.HelixeditorcomPackage
+  helixeditorcom: helix_editor_com.HxPackage
 
   /**
    * **helm** - The Kubernetes Package Manager
@@ -7964,26 +7878,17 @@ export interface Pantry {
   iscorgbind9: isc_org_bind9.Iscorgbind9Package
 
   /**
-   * **istioctl** - Connect, secure, control, and observe services.
+   * **istio.io** - pkgx package
    *
    * @domain `istio.io`
-   * @programs `istioctl`
-   * @version `1.26.1` (41 versions available)
-   * @install `sh <(curl https://pkgx.sh) istioctl`
-   * @aliases `istioctl`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.istioio
-   * console.log(pkg.name)        // "istioctl"
-   * console.log(pkg.description) // "Connect, secure, control, and observe services."
-   * console.log(pkg.programs)    // ["istioctl"]
-   * console.log(pkg.versions[0]) // "1.26.1"
    * ```
    */
-  istioio: istio_io.IstioioPackage
+  istioio: istio_io.IstioctlPackage
 
   /**
    * **itstool** - Translate XML with PO files using W3C Internationalization Tag Set rules
@@ -8117,49 +8022,30 @@ export interface Pantry {
   jemallocnet: jemalloc_net.JemallocnetPackage
 
   /**
-   * **Jenkins X** - Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton
+   * **jenkins/x.io** - pkgx package
    *
    * @domain `jenkins/x.io`
-   * @programs `jx`
-   * @version `3.11.81` (55 versions available)
-   * @install `sh <(curl https://pkgx.sh) jx`
-   * @aliases `jenkins x`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.jenkinsxio
-   * console.log(pkg.name)        // "Jenkins X"
-   * console.log(pkg.description) // "Jenkins X provides automated CI+CD for Kubernet..."
-   * console.log(pkg.programs)    // ["jx"]
-   * console.log(pkg.versions[0]) // "3.11.81"
    * ```
    */
-  jenkinsxio: jenkins_x_io.JenkinsxioPackage
+  jenkinsxio: jenkins_x_io.JenkinsxPackage
 
   /**
-   * **jenkins-lts** - Extendable open source continuous integration server
+   * **jenkins.io** - pkgx package
    *
    * @domain `jenkins.io`
-   * @programs `jenkins-lts`, `jenkins-lts-cli`
-   * @version `2.504.2` (19 versions available)
-   * @install `sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i`
-   * @aliases `jenkins-lts`
-   * @dependencies `openjdk.org<20`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.jenkinsio
-   * console.log(pkg.name)        // "jenkins-lts"
-   * console.log(pkg.description) // "Extendable open source continuous integration s..."
-   * console.log(pkg.programs)    // ["jenkins-lts", "jenkins-lts-cli"]
-   * console.log(pkg.versions[0]) // "2.504.2"
    * ```
    */
-  jenkinsio: jenkins_io.JenkinsioPackage
+  jenkinsio: jenkins_io.JenkinsltsPackage
 
   /**
    * **jenv** - Manage your Java environment
@@ -8797,27 +8683,17 @@ export interface Pantry {
   kptdev: kpt_dev.KptdevPackage
 
   /**
-   * **kubectl-krew** - 📦 Find and install kubectl plugins
+   * **krew.sigs.k8s.io** - pkgx package
    *
    * @domain `krew.sigs.k8s.io`
-   * @programs `kubectl-krew`
-   * @version `0.4.5` (2 versions available)
-   * @install `sh <(curl https://pkgx.sh) kubectl-krew`
-   * @aliases `kubectl-krew`
-   * @dependencies `git-scm.org`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.krewsigsk8sio
-   * console.log(pkg.name)        // "kubectl-krew"
-   * console.log(pkg.description) // "📦 Find and install kubectl plugins"
-   * console.log(pkg.programs)    // ["kubectl-krew"]
-   * console.log(pkg.versions[0]) // "0.4.5"
    * ```
    */
-  krewsigsk8sio: krew_sigs_k8s_io.Krewsigsk8sioPackage
+  krewsigsk8sio: krew_sigs_k8s_io.KubectlkrewPackage
 
   /**
    * **ktlint** - An anti-bikeshedding Kotlin linter with built-in formatter
@@ -8906,26 +8782,17 @@ export interface Pantry {
   kubectxdev: kubectx_dev.KubectxdevPackage
 
   /**
-   * **kube-linter** - KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices.
+   * **kubelinter.io** - pkgx package
    *
    * @domain `kubelinter.io`
-   * @programs `kube-linter`
-   * @version `0.7.2` (4 versions available)
-   * @install `sh <(curl https://pkgx.sh) kube-linter`
-   * @aliases `kube-linter`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.kubelinterio
-   * console.log(pkg.name)        // "kube-linter"
-   * console.log(pkg.description) // "KubeLinter is a static analysis tool that check..."
-   * console.log(pkg.programs)    // ["kube-linter"]
-   * console.log(pkg.versions[0]) // "0.7.2"
    * ```
    */
-  kubelinterio: kubelinter_io.KubelinterioPackage
+  kubelinterio: kubelinter_io.KubelinterPackage
 
   /**
    * **kubernetes.io**
@@ -9269,26 +9136,17 @@ export interface Pantry {
   libexifgithubio: libexif_github_io.LibexifgithubioPackage
 
   /**
-   * **xmlwf** - :herb: Fast streaming XML parser written in C99 with >90% test coverage; moved from SourceForge to GitHub
+   * **libexpat.github.io** - pkgx package
    *
    * @domain `libexpat.github.io`
-   * @programs `xmlwf`
-   * @version `2.7.1` (9 versions available)
-   * @install `sh <(curl https://pkgx.sh) xmlwf`
-   * @aliases `xmlwf`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.libexpatgithubio
-   * console.log(pkg.name)        // "xmlwf"
-   * console.log(pkg.description) // ":herb: Fast streaming XML parser written in C99..."
-   * console.log(pkg.programs)    // ["xmlwf"]
-   * console.log(pkg.versions[0]) // "2.7.1"
    * ```
    */
-  libexpatgithubio: libexpat_github_io.LibexpatgithubioPackage
+  libexpatgithubio: libexpat_github_io.XmlwfPackage
 
   /**
    * **libgd.github.io** - Graphics library to dynamically manipulate images
@@ -9313,72 +9171,43 @@ export interface Pantry {
   libgdgithubio: libgd_github_io.LibgdgithubioPackage
 
   /**
-   * **geos-config** - Geometry Engine, Open Source
+   * **libgeos.org** - pkgx package
    *
    * @domain `libgeos.org`
-   * @programs `geos-config`
-   * @version `3.13.1` (15 versions available)
-   * @install `sh <(curl https://pkgx.sh) geos-config`
-   * @aliases `geos-config`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.libgeosorg
-   * console.log(pkg.name)        // "geos-config"
-   * console.log(pkg.description) // "Geometry Engine, Open Source"
-   * console.log(pkg.programs)    // ["geos-config"]
-   * console.log(pkg.versions[0]) // "3.13.1"
    * ```
    */
-  libgeosorg: libgeos_org.LibgeosorgPackage
+  libgeosorg: libgeos_org.GeosconfigPackage
 
   /**
-   * **git2** - A cross-platform, linkable library implementation of Git that you can use in your application.
+   * **libgit2.org** - pkgx package
    *
    * @domain `libgit2.org`
-   * @programs `git2`
-   * @version `1.9.0` (11 versions available)
-   * @install `sh <(curl https://pkgx.sh) git2`
-   * @aliases `git2`
-   * @dependencies `libssh2.org^1`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.libgit2org
-   * console.log(pkg.name)        // "git2"
-   * console.log(pkg.description) // "A cross-platform, linkable library implementati..."
-   * console.log(pkg.programs)    // ["git2"]
-   * console.log(pkg.versions[0]) // "1.9.0"
    * ```
    */
-  libgit2org: libgit2_org.Libgit2orgPackage
+  libgit2org: libgit2_org.Git2Package
 
   /**
-   * **idevicedate** - A cross-platform protocol library to communicate with iOS devices
+   * **libimobiledevice.org** - pkgx package
    *
    * @domain `libimobiledevice.org`
-   * @programs `idevicedate`
-   * @version `1.3.0` (1 versions available)
-   * @install `sh <(curl https://pkgx.sh) idevicedate`
-   * @aliases `idevicedate`
-   * @dependencies `libimobiledevice.org/libplist^2.4`, `gnu.org/libtasn1^4.19`, `libimobiledevice.org/libusbmuxd^2`, ... (+1 more)
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.libimobiledeviceorg
-   * console.log(pkg.name)        // "idevicedate"
-   * console.log(pkg.description) // "A cross-platform protocol library to communicat..."
-   * console.log(pkg.programs)    // ["idevicedate"]
-   * console.log(pkg.versions[0]) // "1.3.0"
    * ```
    */
-  libimobiledeviceorg: libimobiledevice_org.LibimobiledeviceorgPackage
+  libimobiledeviceorg: libimobiledevice_org.IdevicedatePackage
 
   /**
    * **libisl.sourceforge.io**
@@ -9706,27 +9535,17 @@ export interface Pantry {
   libuvorg: libuv_org.LibuvorgPackage
 
   /**
-   * **vips** - A fast image processing library with low memory needs.
+   * **libvips.org** - pkgx package
    *
    * @domain `libvips.org`
-   * @programs `vips`, `vipsedit`, `vipsheader`, `vipsprofile`, `vipsthumbnail`
-   * @version `8.16.1` (8 versions available)
-   * @install `sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i`
-   * @aliases `vips`
-   * @dependencies `mozilla.org/mozjpeg`, `cairographics.org`, `heasarc.gsfc.nasa.gov/cfitsio`, ... (+24 more)
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.libvipsorg
-   * console.log(pkg.name)        // "vips"
-   * console.log(pkg.description) // "A fast image processing library with low memory..."
-   * console.log(pkg.programs)    // ["vips", "vipsedit", ...]
-   * console.log(pkg.versions[0]) // "8.16.1"
    * ```
    */
-  libvipsorg: libvips_org.LibvipsorgPackage
+  libvipsorg: libvips_org.VipsPackage
 
   /**
    * **libwebsockets.org** - canonical libwebsockets.org networking library
@@ -9749,27 +9568,17 @@ export interface Pantry {
   libwebsocketsorg: libwebsockets_org.LibwebsocketsorgPackage
 
   /**
-   * **zip** - A C library for reading, creating, and modifying zip archives.
+   * **libzip.org** - pkgx package
    *
    * @domain `libzip.org`
-   * @programs `zipcmp`, `zipmerge`, `ziptool`
-   * @version `1.11.4` (7 versions available)
-   * @install `sh <(curl https://pkgx.sh) +libzip.org -- $SHELL -i`
-   * @aliases `zip`
-   * @dependencies `facebook.com/zstd>=1.5.0`, `darwinsourceware.org/bzip2>=1.0.8tukaani.org/xz>=5.2.7zlib.net>=1.2.13`, `sourceware.org/bzip2>=1.0.8`, ... (+4 more)
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.libziporg
-   * console.log(pkg.name)        // "zip"
-   * console.log(pkg.description) // "A C library for reading, creating, and modifyin..."
-   * console.log(pkg.programs)    // ["zipcmp", "zipmerge", ...]
-   * console.log(pkg.versions[0]) // "1.11.4"
    * ```
    */
-  libziporg: libzip_org.LibziporgPackage
+  libziporg: libzip_org.ZipPackage
 
   /**
    * **lima-vm.io** - Linux virtual machines, with a focus on running containers
@@ -10238,27 +10047,17 @@ export interface Pantry {
   mailpitaxllentorg: mailpit_axllent_org.MailpitaxllentorgPackage
 
   /**
-   * **mako-render** - Mako Templates for Python
+   * **makotemplates.org** - pkgx package
    *
    * @domain `makotemplates.org`
-   * @programs `mako-render`
-   * @version `1.3.10` (12 versions available)
-   * @install `sh <(curl https://pkgx.sh) mako-render`
-   * @aliases `mako-render`
-   * @dependencies `python.org~3.11`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.makotemplatesorg
-   * console.log(pkg.name)        // "mako-render"
-   * console.log(pkg.description) // "Mako Templates for Python"
-   * console.log(pkg.programs)    // ["mako-render"]
-   * console.log(pkg.versions[0]) // "1.3.10"
    * ```
    */
-  makotemplatesorg: makotemplates_org.MakotemplatesorgPackage
+  makotemplatesorg: makotemplates_org.MakorenderPackage
 
   /**
    * **man-db.gitlab.io**
@@ -10335,50 +10134,30 @@ export interface Pantry {
   markupsafepalletsprojectscom: markupsafe_palletsprojects_com.MarkupsafepalletsprojectscomPackage
 
   /**
-   * **mz** - Real-time Data Integration and Transformation: use SQL to transform, deliver, and act on fast-changing data.
+   * **materialize.com** - pkgx package
    *
    * @domain `materialize.com`
-   * @programs `mz`
-   * @version `0.112.2` (45 versions available)
-   * @install `sh <(curl https://pkgx.sh) mz`
-   * @aliases `mz`
-   * @dependencies `openssl.org^1.1`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.materializecom
-   * console.log(pkg.name)        // "mz"
-   * console.log(pkg.description) // "Real-time Data Integration and Transformation: ..."
-   * console.log(pkg.programs)    // ["mz"]
-   * console.log(pkg.versions[0]) // "0.112.2"
    * ```
    */
-  materializecom: materialize_com.MaterializecomPackage
+  materializecom: materialize_com.MzPackage
 
   /**
-   * **libmatio** - C library for reading and writing MATLAB MAT files
+   * **matio.sourceforge.io** - pkgx package
    *
    * @domain `matio.sourceforge.io`
-   * @programs `matdump`
-   * @version `1.5.28` (6 versions available)
-   * @install `sh <(curl https://pkgx.sh) matdump`
-   * @aliases `libmatio`
-   * @dependencies `hdfgroup.org/HDF5`, `zlib.net`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.matiosourceforgeio
-   * console.log(pkg.name)        // "libmatio"
-   * console.log(pkg.description) // "C library for reading and writing MATLAB MAT files"
-   * console.log(pkg.programs)    // ["matdump"]
-   * console.log(pkg.versions[0]) // "1.5.28"
    * ```
    */
-  matiosourceforgeio: matio_sourceforge_io.MatiosourceforgeioPackage
+  matiosourceforgeio: matio_sourceforge_io.LibmatioPackage
 
   /**
    * **maturin** - Build and publish crates with pyo3, cffi and uniffi bindings as well as rust binaries as python packages
@@ -10402,50 +10181,30 @@ export interface Pantry {
   maturinrs: maturin_rs.MaturinrsPackage
 
   /**
-   * **mvn** - Java-based project management
+   * **maven.apache.org** - pkgx package
    *
    * @domain `maven.apache.org`
-   * @programs `mvn`, `mvnDebug`, `mvnyjp`
-   * @version `3.9.9` (9 versions available)
-   * @install `sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i`
-   * @aliases `mvn`
-   * @dependencies `openjdk.org`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.mavenapacheorg
-   * console.log(pkg.name)        // "mvn"
-   * console.log(pkg.description) // "Java-based project management"
-   * console.log(pkg.programs)    // ["mvn", "mvnDebug", ...]
-   * console.log(pkg.versions[0]) // "3.9.9"
    * ```
    */
-  mavenapacheorg: maven_apache_org.MavenapacheorgPackage
+  mavenapacheorg: maven_apache_org.MvnPackage
 
   /**
-   * **jags** - Just Another Gibbs Sampler for Bayesian MCMC simulation
+   * **mcmc/jags.sourceforge.io** - pkgx package
    *
    * @domain `mcmc/jags.sourceforge.io`
-   * @programs `jags`
-   * @version `4.3.2` (1 versions available)
-   * @install `sh <(curl https://pkgx.sh) jags`
-   * @aliases `jags`
-   * @dependencies `gnu.org/gcc`, `linuxnetlib.org/lapack^3`, `netlib.org/lapack^3`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.mcmcjagssourceforgeio
-   * console.log(pkg.name)        // "jags"
-   * console.log(pkg.description) // "Just Another Gibbs Sampler for Bayesian MCMC si..."
-   * console.log(pkg.programs)    // ["jags"]
-   * console.log(pkg.versions[0]) // "4.3.2"
    * ```
    */
-  mcmcjagssourceforgeio: mcmc_jags_sourceforge_io.McmcjagssourceforgeioPackage
+  mcmcjagssourceforgeio: mcmc_jags_sourceforge_io.JagsPackage
 
   /**
    * **mercure** - 🪽 An open, easy, fast, reliable and battery-efficient solution for real-time communications
@@ -10585,27 +10344,17 @@ export interface Pantry {
   microbreworg: microbrew_org.MicrobreworgPackage
 
   /**
-   * **microcks-cli** - Simple CLI for interacting with Microcks test APIs
+   * **microcks.io** - pkgx package
    *
    * @domain `microcks.io`
-   * @programs `microcks-cli`
-   * @version `0.9.0` (6 versions available)
-   * @install `sh <(curl https://pkgx.sh) microcks-cli`
-   * @aliases `microcks-cli`
-   * @dependencies `curl.se/ca-certs`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.microcksio
-   * console.log(pkg.name)        // "microcks-cli"
-   * console.log(pkg.description) // "Simple CLI for interacting with Microcks test APIs"
-   * console.log(pkg.programs)    // ["microcks-cli"]
-   * console.log(pkg.versions[0]) // "0.9.0"
    * ```
    */
-  microcksio: microcks_io.MicrocksioPackage
+  microcksio: microcks_io.MicrockscliPackage
 
   /**
    * **microsoft.com**
@@ -10670,27 +10419,17 @@ export interface Pantry {
   microsoftcommarkitdown: microsoft_com_markitdown.MicrosoftcommarkitdownPackage
 
   /**
-   * **Midnight Commander** - Terminal-based visual file manager
+   * **midnight/commander.org** - pkgx package
    *
    * @domain `midnight/commander.org`
-   * @programs `mc`, `mcdiff`, `mcedit`, `mcview`
-   * @version `4.8.33` (6 versions available)
-   * @install `sh <(curl https://pkgx.sh) +midnight-commander.org -- $SHELL -i`
-   * @aliases `midnight commander`
-   * @dependencies `invisible-island.net/ncurses`, `gnome.org/glib>=2.30`, `gnu.org/gettext>=0.18.2`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.midnightcommanderorg
-   * console.log(pkg.name)        // "Midnight Commander"
-   * console.log(pkg.description) // "Terminal-based visual file manager"
-   * console.log(pkg.programs)    // ["mc", "mcdiff", ...]
-   * console.log(pkg.versions[0]) // "4.8.33"
    * ```
    */
-  midnightcommanderorg: midnight_commander_org.MidnightcommanderorgPackage
+  midnightcommanderorg: midnight_commander_org.MidnightcommanderPackage
 
   /**
    * **minio** - MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.
@@ -11275,27 +11014,17 @@ export interface Pantry {
   nasmus: nasm_us.NasmusPackage
 
   /**
-   * **nvim** - Ambitious Vim-fork focused on extensibility and agility
+   * **neovim.io** - pkgx package
    *
    * @domain `neovim.io`
-   * @programs `nvim`
-   * @version `0.11.2` (15 versions available)
-   * @install `sh <(curl https://pkgx.sh) nvim`
-   * @aliases `nvim`
-   * @dependencies `gnu.org/gettext^0`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.neovimio
-   * console.log(pkg.name)        // "nvim"
-   * console.log(pkg.description) // "Ambitious Vim-fork focused on extensibility and..."
-   * console.log(pkg.programs)    // ["nvim"]
-   * console.log(pkg.versions[0]) // "0.11.2"
    * ```
    */
-  neovimio: neovim_io.NeovimioPackage
+  neovimio: neovim_io.NvimPackage
 
   /**
    * **netflix.com**
@@ -11549,30 +11278,6 @@ export interface Pantry {
   /**
    * **node** - Platform built on V8 to build network applications
    *
-   * @domain `node`
-   * @programs `node`
-   * @version `24.1.0` (137 versions available)
-   * @install `sh <(curl https://pkgx.sh) node`
-   * @aliases `node`
-   * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+2 more)
-   * @companions `npmjs.com`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * const pkg = pantry.node
-   * console.log(pkg.name)        // "node"
-   * console.log(pkg.description) // "Platform built on V8 to build network applications"
-   * console.log(pkg.programs)    // ["node"]
-   * console.log(pkg.versions[0]) // "24.1.0"
-   * ```
-   */
-  node: node.NodePackage
-
-  /**
-   * **node** - Platform built on V8 to build network applications
-   *
    * @domain `nodejs.org`
    * @programs `node`
    * @version `24.1.0` (137 versions available)
@@ -11712,28 +11417,17 @@ export interface Pantry {
   numbatdev: numbat_dev.NumbatdevPackage
 
   /**
-   * **f2py** - The fundamental package for scientific computing with Python.
+   * **numpy.org** - pkgx package
    *
    * @domain `numpy.org`
-   * @programs `f2py`
-   * @version `2.2.6` (17 versions available)
-   * @install `sh <(curl https://pkgx.sh) f2py`
-   * @aliases `f2py`
-   * @dependencies `openblas.net^0.3`, `python.org^3.11`
-   * @companions `gnu.org/gcc`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.numpyorg
-   * console.log(pkg.name)        // "f2py"
-   * console.log(pkg.description) // "The fundamental package for scientific computin..."
-   * console.log(pkg.programs)    // ["f2py"]
-   * console.log(pkg.versions[0]) // "2.2.6"
    * ```
    */
-  numpyorg: numpy_org.NumpyorgPackage
+  numpyorg: numpy_org.F2pyPackage
 
   /**
    * **nu** - Modern shell for the GitHub era
@@ -12113,27 +11807,17 @@ export interface Pantry {
   openexrcom: openexr_com.OpenexrcomPackage
 
   /**
-   * **open-interpreter** - A natural language interface for computers
+   * **openinterpreter.com** - pkgx package
    *
    * @domain `openinterpreter.com`
-   * @programs `interpreter`
-   * @version `0.4.0` (22 versions available)
-   * @install `sh <(curl https://pkgx.sh) interpreter`
-   * @aliases `open-interpreter`
-   * @dependencies `python.org>=3.10<3.12`, `github.com/mattrobenolt/jinja2-cli`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.openinterpretercom
-   * console.log(pkg.name)        // "open-interpreter"
-   * console.log(pkg.description) // "A natural language interface for computers"
-   * console.log(pkg.programs)    // ["interpreter"]
-   * console.log(pkg.versions[0]) // "0.4.0"
    * ```
    */
-  openinterpretercom: openinterpreter_com.OpeninterpretercomPackage
+  openinterpretercom: openinterpreter_com.OpeninterpreterPackage
 
   /**
    * **openjdk.org** - Development kit for the Java programming language
@@ -12268,26 +11952,17 @@ export interface Pantry {
   openpmixgithubio: openpmix_github_io.OpenpmixgithubioPackage
 
   /**
-   * **opa** - Open Policy Agent (OPA) is an open source, general-purpose policy engine.
+   * **openpolicyagent.org** - pkgx package
    *
    * @domain `openpolicyagent.org`
-   * @programs `opa`
-   * @version `1.5.0` (25 versions available)
-   * @install `sh <(curl https://pkgx.sh) opa`
-   * @aliases `opa`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.openpolicyagentorg
-   * console.log(pkg.name)        // "opa"
-   * console.log(pkg.description) // "Open Policy Agent (OPA) is an open source, gene..."
-   * console.log(pkg.programs)    // ["opa"]
-   * console.log(pkg.versions[0]) // "1.5.0"
    * ```
    */
-  openpolicyagentorg: openpolicyagent_org.OpenpolicyagentorgPackage
+  openpolicyagentorg: openpolicyagent_org.OpaPackage
 
   /**
    * **openprinting.github.io**
@@ -12350,27 +12025,17 @@ export interface Pantry {
   opensearchorg: opensearch_org.OpensearchorgPackage
 
   /**
-   * **oc** - The OpenShift Command Line, part of OKD
+   * **openshift.com** - pkgx package
    *
    * @domain `openshift.com`
-   * @programs `oc`
-   * @version `4.18.16` (220 versions available)
-   * @install `sh <(curl https://pkgx.sh) oc`
-   * @aliases `oc`
-   * @dependencies `kerberos.org^1.21`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.openshiftcom
-   * console.log(pkg.name)        // "oc"
-   * console.log(pkg.description) // "The OpenShift Command Line, part of OKD"
-   * console.log(pkg.programs)    // ["oc"]
-   * console.log(pkg.versions[0]) // "4.18.16"
    * ```
    */
-  openshiftcom: openshift_com.OpenshiftcomPackage
+  openshiftcom: openshift_com.OcPackage
 
   /**
    * **openslide** - C library to read whole-slide images (a.k.a. virtual slides)
@@ -12438,27 +12103,17 @@ export interface Pantry {
   opensslorg: openssl_org.OpensslorgPackage
 
   /**
-   * **tofu** - OpenTofu lets you declaratively manage your cloud infrastructure.
+   * **opentofu.org** - pkgx package
    *
    * @domain `opentofu.org`
-   * @programs `tofu`
-   * @version `1.9.1` (19 versions available)
-   * @install `sh <(curl https://pkgx.sh) tofu`
-   * @aliases `tofu`
-   * @dependencies `linuxgnu.org/gcc/libstdcxx`, `gnu.org/gcc/libstdcxx`, `curl.se/ca-certs`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.opentofuorg
-   * console.log(pkg.name)        // "tofu"
-   * console.log(pkg.description) // "OpenTofu lets you declaratively manage your clo..."
-   * console.log(pkg.programs)    // ["tofu"]
-   * console.log(pkg.versions[0]) // "1.9.1"
    * ```
    */
-  opentofuorg: opentofu_org.OpentofuorgPackage
+  opentofuorg: opentofu_org.TofuPackage
 
   /**
    * **openvpn**
@@ -12836,7 +12491,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "5.40.2"
    * ```
    */
-  perlorg: perl_org.PerlorgPackage
+  perlorg: perl_org.PerlPackage
 
   /**
    * **permit.io**
@@ -12875,7 +12530,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "8.4.7"
    * ```
    */
-  phpnet: php_net.PhpnetPackage
+  phpnet: php_net.PhpPackage
 
   /**
    * **phpMyAdmin**
@@ -13086,26 +12741,17 @@ export interface Pantry {
   pkllangorg: pkl_lang_org.PkllangorgPackage
 
   /**
-   * **pscale** - The CLI for PlanetScale Database
+   * **planetscale.com** - pkgx package
    *
    * @domain `planetscale.com`
-   * @programs `pscale`
-   * @version `0.243.0` (67 versions available)
-   * @install `sh <(curl https://pkgx.sh) pscale`
-   * @aliases `pscale`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.planetscalecom
-   * console.log(pkg.name)        // "pscale"
-   * console.log(pkg.description) // "The CLI for PlanetScale Database"
-   * console.log(pkg.programs)    // ["pscale"]
-   * console.log(pkg.versions[0]) // "0.243.0"
    * ```
    */
-  planetscalecom: planetscale_com.PlanetscalecomPackage
+  planetscalecom: planetscale_com.PscalePackage
 
   /**
    * **plantuml** - Generate diagrams from textual description
@@ -13437,27 +13083,17 @@ export interface Pantry {
   precommitcom: pre_commit_com.PrecommitcomPackage
 
   /**
-   * **pixi** - Package management made easy
+   * **prefix.dev** - pkgx package
    *
    * @domain `prefix.dev`
-   * @programs `pixi`
-   * @version `0.47.0` (80 versions available)
-   * @install `sh <(curl https://pkgx.sh) pixi`
-   * @aliases `pixi`
-   * @dependencies `openssl.org^1.1`, `libgit2.org~1.7`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.prefixdev
-   * console.log(pkg.name)        // "pixi"
-   * console.log(pkg.description) // "Package management made easy"
-   * console.log(pkg.programs)    // ["pixi"]
-   * console.log(pkg.versions[0]) // "0.47.0"
    * ```
    */
-  prefixdev: prefix_dev.PrefixdevPackage
+  prefixdev: prefix_dev.PixiPackage
 
   /**
    * **pressly.github.io**
@@ -13552,26 +13188,17 @@ export interface Pantry {
   projorg: proj_org.ProjorgPackage
 
   /**
-   * **copa** - Tool to directly patch container images given the vulnerability scanning results
+   * **project/copacetic.github.io** - pkgx package
    *
    * @domain `project/copacetic.github.io`
-   * @programs `copa`
-   * @version `0.10.0` (5 versions available)
-   * @install `sh <(curl https://pkgx.sh) copa`
-   * @aliases `copa`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.projectcopaceticgithubio
-   * console.log(pkg.name)        // "copa"
-   * console.log(pkg.description) // "Tool to directly patch container images given t..."
-   * console.log(pkg.programs)    // ["copa"]
-   * console.log(pkg.versions[0]) // "0.10.0"
    * ```
    */
-  projectcopaceticgithubio: project_copacetic_github_io.ProjectcopaceticgithubioPackage
+  projectcopaceticgithubio: project_copacetic_github_io.CopaPackage
 
   /**
    * **projectdiscovery.io**
@@ -13635,27 +13262,17 @@ export interface Pantry {
   projenio: projen_io.ProjenioPackage
 
   /**
-   * **Protocol Buffers** - Protocol Buffers - Google's data interchange format
+   * **protobuf.dev** - pkgx package
    *
    * @domain `protobuf.dev`
-   * @programs `protoc`
-   * @version `31.1.0` (43 versions available)
-   * @install `sh <(curl https://pkgx.sh) protoc`
-   * @aliases `protocol buffers`
-   * @dependencies `zlib.net^1`, `abseil.io`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.protobufdev
-   * console.log(pkg.name)        // "Protocol Buffers"
-   * console.log(pkg.description) // "Protocol Buffers - Google's data interchange fo..."
-   * console.log(pkg.programs)    // ["protoc"]
-   * console.log(pkg.versions[0]) // "31.1.0"
    * ```
    */
-  protobufdev: protobuf_dev.ProtobufdevPackage
+  protobufdev: protobuf_dev.ProtocolbuffersPackage
 
   /**
    * **prql** - PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
@@ -13789,50 +13406,30 @@ export interface Pantry {
   pwmtorg: pwmt_org.PwmtorgPackage
 
   /**
-   * **pygmentize** - Pygments is a generic syntax highlighter written in Python
+   * **pygments.org** - pkgx package
    *
    * @domain `pygments.org`
-   * @programs `pygmentize`
-   * @version `2.19.1` (8 versions available)
-   * @install `sh <(curl https://pkgx.sh) pygmentize`
-   * @aliases `pygmentize`
-   * @dependencies `python.org~3.11`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.pygmentsorg
-   * console.log(pkg.name)        // "pygmentize"
-   * console.log(pkg.description) // "Pygments is a generic syntax highlighter writte..."
-   * console.log(pkg.programs)    // ["pygmentize"]
-   * console.log(pkg.versions[0]) // "2.19.1"
    * ```
    */
-  pygmentsorg: pygments_org.PygmentsorgPackage
+  pygmentsorg: pygments_org.PygmentizePackage
 
   /**
-   * **invoke** - Pythonic task management & command execution.
+   * **pyinvoke.org** - pkgx package
    *
    * @domain `pyinvoke.org`
-   * @programs `invoke`
-   * @version `2.2.0` (1 versions available)
-   * @install `sh <(curl https://pkgx.sh) invoke`
-   * @aliases `invoke`
-   * @dependencies `pkgx.sh^1`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.pyinvokeorg
-   * console.log(pkg.name)        // "invoke"
-   * console.log(pkg.description) // "Pythonic task management & command execution."
-   * console.log(pkg.programs)    // ["invoke"]
-   * console.log(pkg.versions[0]) // "2.2.0"
    * ```
    */
-  pyinvokeorg: pyinvoke_org.PyinvokeorgPackage
+  pyinvokeorg: pyinvoke_org.InvokePackage
 
   /**
    * **pypa.github.io**
@@ -13889,30 +13486,6 @@ export interface Pantry {
   pytestorg: pytest_org.PytestorgPackage
 
   /**
-   * **python** - The Python programming language
-   *
-   * @domain `python`
-   * @programs `python`, `python{{ version.major }}`, `python{{ version.marketing }}`
-   * @version `3.13.3` (145 versions available)
-   * @install `sh <(curl https://pkgx.sh) +python.org -- $SHELL -i`
-   * @aliases `python`
-   * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+8 more)
-   * @companions `pip.pypa.io`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * const pkg = pantry.python
-   * console.log(pkg.name)        // "python"
-   * console.log(pkg.description) // "The Python programming language"
-   * console.log(pkg.programs)    // ["python", "python{{ version.major }}", ...]
-   * console.log(pkg.versions[0]) // "3.13.3"
-   * ```
-   */
-  python: python.PythonPackage
-
-  /**
    * **python-pillow.org** - Python Imaging Library (Fork)
    *
    * @domain `python/pillow.org`
@@ -13933,27 +13506,17 @@ export interface Pantry {
   pythonpilloworg: python_pillow_org.PythonpilloworgPackage
 
   /**
-   * **poetry** - Python packaging and dependency management made easy
+   * **python/poetry.org** - pkgx package
    *
    * @domain `python/poetry.org`
-   * @programs `poetry`
-   * @version `2.1.3` (21 versions available)
-   * @install `sh <(curl https://pkgx.sh) poetry`
-   * @aliases `poetry`
-   * @dependencies `pkgx.sh^1`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.pythonpoetryorg
-   * console.log(pkg.name)        // "poetry"
-   * console.log(pkg.description) // "Python packaging and dependency management made..."
-   * console.log(pkg.programs)    // ["poetry"]
-   * console.log(pkg.versions[0]) // "2.1.3"
    * ```
    */
-  pythonpoetryorg: python_poetry_org.PythonpoetryorgPackage
+  pythonpoetryorg: python_poetry_org.PoetryPackage
 
   /**
    * **python** - The Python programming language
@@ -14674,7 +14237,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "3.4.4"
    * ```
    */
-  rubylangorg: ruby_lang_org.RubylangorgPackage
+  rubylangorg: ruby_lang_org.RubyPackage
 
   /**
    * **rubygems.org** - Powerful, clean, object-oriented scripting language
@@ -14715,26 +14278,17 @@ export interface Pantry {
   ruciocernch: rucio_cern_ch.RuciocernchPackage
 
   /**
-   * **atlantis** - Terraform Pull Request Automation tool
+   * **runatlantis.io** - pkgx package
    *
    * @domain `runatlantis.io`
-   * @programs `atlantis`
-   * @version `0.34.0` (18 versions available)
-   * @install `sh <(curl https://pkgx.sh) atlantis`
-   * @aliases `atlantis`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.runatlantisio
-   * console.log(pkg.name)        // "atlantis"
-   * console.log(pkg.description) // "Terraform Pull Request Automation tool"
-   * console.log(pkg.programs)    // ["atlantis"]
-   * console.log(pkg.versions[0]) // "0.34.0"
    * ```
    */
-  runatlantisio: runatlantis_io.RunatlantisioPackage
+  runatlantisio: runatlantis_io.AtlantisPackage
 
   /**
    * **rust-lang.github.io**
@@ -14774,7 +14328,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "1.87.0"
    * ```
    */
-  rustlangorg: rust_lang_org.RustlangorgPackage
+  rustlangorg: rust_lang_org.RustPackage
 
   /**
    * **bindgen** - Automatically generates Rust FFI bindings to C (and some C++) libraries.
@@ -14844,27 +14398,17 @@ export interface Pantry {
   ryeastralsh: rye_astral_sh.RyeastralshPackage
 
   /**
-   * **s3cmd** - Official s3cmd repo -- Command line tool for managing S3 compatible storage services (including Amazon S3 and CloudFront).
+   * **s3tools.org** - pkgx package
    *
    * @domain `s3tools.org`
-   * @programs `s3cmd`
-   * @version `2.4.0` (2 versions available)
-   * @install `sh <(curl https://pkgx.sh) s3cmd`
-   * @aliases `s3cmd`
-   * @dependencies `python.org>=3<3.12`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.s3toolsorg
-   * console.log(pkg.name)        // "s3cmd"
-   * console.log(pkg.description) // "Official s3cmd repo -- Command line tool for ma..."
-   * console.log(pkg.programs)    // ["s3cmd"]
-   * console.log(pkg.versions[0]) // "2.4.0"
    * ```
    */
-  s3toolsorg: s3tools_org.S3toolsorgPackage
+  s3toolsorg: s3tools_org.S3cmdPackage
 
   /**
    * **saerasoft.com**
@@ -14953,49 +14497,30 @@ export interface Pantry {
   scalalangorg: scala_lang_org.ScalalangorgPackage
 
   /**
-   * **sbt** - sbt, the interactive build tool
+   * **scala/sbt.org** - pkgx package
    *
    * @domain `scala/sbt.org`
-   * @programs `sbt`
-   * @version `1.11.0` (19 versions available)
-   * @install `sh <(curl https://pkgx.sh) sbt`
-   * @aliases `sbt`
-   * @dependencies `openjdk.org`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.scalasbtorg
-   * console.log(pkg.name)        // "sbt"
-   * console.log(pkg.description) // "sbt, the interactive build tool"
-   * console.log(pkg.programs)    // ["sbt"]
-   * console.log(pkg.versions[0]) // "1.11.0"
    * ```
    */
-  scalasbtorg: scala_sbt_org.ScalasbtorgPackage
+  scalasbtorg: scala_sbt_org.SbtPackage
 
   /**
-   * **scw** - Command Line Interface for Scaleway
+   * **scaleway.com** - pkgx package
    *
    * @domain `scaleway.com`
-   * @programs `scw`
-   * @version `2.39.0` (8 versions available)
-   * @install `sh <(curl https://pkgx.sh) scw`
-   * @aliases `scw`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.scalewaycom
-   * console.log(pkg.name)        // "scw"
-   * console.log(pkg.description) // "Command Line Interface for Scaleway"
-   * console.log(pkg.programs)    // ["scw"]
-   * console.log(pkg.versions[0]) // "2.39.0"
    * ```
    */
-  scalewaycom: scaleway_com.ScalewaycomPackage
+  scalewaycom: scaleway_com.ScwPackage
 
   /**
    * **schollz.com**
@@ -15536,27 +15061,17 @@ export interface Pantry {
   spawnlink: spawn_link.SpawnlinkPackage
 
   /**
-   * **speexdec** - Audio codec designed for speech
+   * **speex.org** - pkgx package
    *
    * @domain `speex.org`
-   * @programs `speexdec`
-   * @version `1.2.1` (1 versions available)
-   * @install `sh <(curl https://pkgx.sh) speexdec`
-   * @aliases `speexdec`
-   * @dependencies `xiph.org/ogg`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.speexorg
-   * console.log(pkg.name)        // "speexdec"
-   * console.log(pkg.description) // "Audio codec designed for speech"
-   * console.log(pkg.programs)    // ["speexdec"]
-   * console.log(pkg.versions[0]) // "1.2.1"
    * ```
    */
-  speexorg: speex_org.SpeexorgPackage
+  speexorg: speex_org.SpeexdecPackage
 
   /**
    * **sphinx** - Tool to create intelligent and beautiful documentation
@@ -15624,27 +15139,17 @@ export interface Pantry {
   sqlfluffcom: sqlfluff_com.SqlfluffcomPackage
 
   /**
-   * **sqlite3** - Official Git mirror of the SQLite source tree
+   * **sqlite.org** - pkgx package
    *
    * @domain `sqlite.org`
-   * @programs `sqlite3`
-   * @version `3.50.0` (25 versions available)
-   * @install `sh <(curl https://pkgx.sh) sqlite3`
-   * @aliases `sqlite3`
-   * @dependencies `zlib.net@1`, `gnu.org/readline@8`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.sqliteorg
-   * console.log(pkg.name)        // "sqlite3"
-   * console.log(pkg.description) // "Official Git mirror of the SQLite source tree"
-   * console.log(pkg.programs)    // ["sqlite3"]
-   * console.log(pkg.versions[0]) // "3.50.0"
    * ```
    */
-  sqliteorg: sqlite_org.SqliteorgPackage
+  sqliteorg: sqlite_org.Sqlite3Package
 
   /**
    * **squawk** - 🐘 linter for PostgreSQL, focused on migrations
@@ -16034,27 +15539,17 @@ export interface Pantry {
   systemdio: systemd_io.SystemdioPackage
 
   /**
-   * **taglib-config** - TagLib Audio Meta-Data Library
+   * **taglib.org** - pkgx package
    *
    * @domain `taglib.org`
-   * @programs `taglib-config`
-   * @version `2.1.0` (5 versions available)
-   * @install `sh <(curl https://pkgx.sh) taglib-config`
-   * @aliases `taglib-config`
-   * @dependencies `zlib.net^1`, `github.com/nemtrif/utfcpp^4`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.tagliborg
-   * console.log(pkg.name)        // "taglib-config"
-   * console.log(pkg.description) // "TagLib Audio Meta-Data Library"
-   * console.log(pkg.programs)    // ["taglib-config"]
-   * console.log(pkg.versions[0]) // "2.1.0"
    * ```
    */
-  tagliborg: taglib_org.TagliborgPackage
+  tagliborg: taglib_org.TaglibconfigPackage
 
   /**
    * **tailcall** - High Performance GraphQL Runtime
@@ -16115,26 +15610,17 @@ export interface Pantry {
   taku910githubio: taku910_github_io.Taku910githubioPackage
 
   /**
-   * **talosctl** - CLI for out-of-band management of Kubernetes nodes created by Talos
+   * **talos.dev** - pkgx package
    *
    * @domain `talos.dev`
-   * @programs `talosctl`
-   * @version `1.10.3` (27 versions available)
-   * @install `sh <(curl https://pkgx.sh) talosctl`
-   * @aliases `talosctl`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.talosdev
-   * console.log(pkg.name)        // "talosctl"
-   * console.log(pkg.description) // "CLI for out-of-band management of Kubernetes no..."
-   * console.log(pkg.programs)    // ["talosctl"]
-   * console.log(pkg.versions[0]) // "1.10.3"
    * ```
    */
-  talosdev: talos_dev.TalosdevPackage
+  talosdev: talos_dev.TalosctlPackage
 
   /**
    * **taplo** - A TOML toolkit written in Rust
@@ -16238,26 +15724,17 @@ export interface Pantry {
   tcltk: tcl_tk.TcltkPackage
 
   /**
-   * **pcap-config** - the LIBpcap interface to various kernel packet capture mechanism
+   * **tcpdump.org** - pkgx package
    *
    * @domain `tcpdump.org`
-   * @programs `pcap-config`
-   * @version `1.10.5` (2 versions available)
-   * @install `sh <(curl https://pkgx.sh) pcap-config`
-   * @aliases `pcap-config`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.tcpdumporg
-   * console.log(pkg.name)        // "pcap-config"
-   * console.log(pkg.description) // "the LIBpcap interface to various kernel packet ..."
-   * console.log(pkg.programs)    // ["pcap-config"]
-   * console.log(pkg.versions[0]) // "1.10.5"
    * ```
    */
-  tcpdumporg: tcpdump_org.TcpdumporgPackage
+  tcpdumporg: tcpdump_org.PcapconfigPackage
 
   /**
    * **tcsh.org** - Enhanced, fully compatible version of the Berkeley C shell
@@ -16324,7 +15801,7 @@ export interface Pantry {
    *
    * @domain `templ.guide`
    * @programs `templ`
-   * @version `0.3.865` (24 versions available)
+   * @version `0.3.887` (25 versions available)
    * @install `sh <(curl https://pkgx.sh) templ`
    *
    * @example
@@ -16335,7 +15812,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "templ"
    * console.log(pkg.description) // "A language for writing HTML user interfaces in Go."
    * console.log(pkg.programs)    // ["templ"]
-   * console.log(pkg.versions[0]) // "0.3.865"
+   * console.log(pkg.versions[0]) // "0.3.887"
    * ```
    */
   templguide: templ_guide.TemplguidePackage
@@ -16537,27 +16014,17 @@ export interface Pantry {
   thrysoeedk: thrysoee_dk.ThrysoeedkPackage
 
   /**
-   * **pixlet** - Build apps for pixel-based displays ✨
+   * **tidbyt.com** - pkgx package
    *
    * @domain `tidbyt.com`
-   * @programs `pixlet`
-   * @version `0.34.0` (20 versions available)
-   * @install `sh <(curl https://pkgx.sh) pixlet`
-   * @aliases `pixlet`
-   * @dependencies `google.com/webp^1`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.tidbytcom
-   * console.log(pkg.name)        // "pixlet"
-   * console.log(pkg.description) // "Build apps for pixel-based displays ✨"
-   * console.log(pkg.programs)    // ["pixlet"]
-   * console.log(pkg.versions[0]) // "0.34.0"
    * ```
    */
-  tidbytcom: tidbyt_com.TidbytcomPackage
+  tidbytcom: tidbyt_com.PixletPackage
 
   /**
    * **tilt** - Define your dev environment as code. For microservice apps on Kubernetes.
@@ -16648,27 +16115,17 @@ export interface Pantry {
   tldrsh: tldr_sh.TldrshPackage
 
   /**
-   * **teller** - Cloud native secrets management for developers - never leave your command line for secrets.
+   * **tlr.dev** - pkgx package
    *
    * @domain `tlr.dev`
-   * @programs `teller`
-   * @version `2.0.7` (5 versions available)
-   * @install `sh <(curl https://pkgx.sh) teller`
-   * @aliases `teller`
-   * @dependencies `openssl.org^1.1`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.tlrdev
-   * console.log(pkg.name)        // "teller"
-   * console.log(pkg.description) // "Cloud native secrets management for developers ..."
-   * console.log(pkg.programs)    // ["teller"]
-   * console.log(pkg.versions[0]) // "2.0.7"
    * ```
    */
-  tlrdev: tlr_dev.TlrdevPackage
+  tlrdev: tlr_dev.TellerPackage
 
   /**
    * **tmate** - Instant Terminal Sharing
@@ -16863,27 +16320,17 @@ export interface Pantry {
   tursotech: turso_tech.TursotechPackage
 
   /**
-   * **tsc** - TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
+   * **typescriptlang.org** - pkgx package
    *
    * @domain `typescriptlang.org`
-   * @programs `tsc`
-   * @version `5.8.3` (13 versions available)
-   * @install `sh <(curl https://pkgx.sh) tsc`
-   * @aliases `tsc`
-   * @dependencies `nodejs.org^20`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.typescriptlangorg
-   * console.log(pkg.name)        // "tsc"
-   * console.log(pkg.description) // "TypeScript is a superset of JavaScript that com..."
-   * console.log(pkg.programs)    // ["tsc"]
-   * console.log(pkg.versions[0]) // "5.8.3"
    * ```
    */
-  typescriptlangorg: typescriptlang_org.TypescriptlangorgPackage
+  typescriptlangorg: typescriptlang_org.TscPackage
 
   /**
    * **typst** - A new markup-based typesetting system that is powerful and easy to learn.
@@ -17154,27 +16601,17 @@ export interface Pantry {
   vannaai: vanna_ai.VannaaiPackage
 
   /**
-   * **vspipe** - A video processing framework with simplicity in mind
+   * **vapoursynth.com** - pkgx package
    *
    * @domain `vapoursynth.com`
-   * @programs `vspipe`
-   * @version `71.0.0` (8 versions available)
-   * @install `sh <(curl https://pkgx.sh) vspipe`
-   * @aliases `vspipe`
-   * @dependencies `python.org~3.11`, `github.com/sekrit-twc/zimg`, `linuxgnu.org/gcc/libstdcxx`, ... (+1 more)
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.vapoursynthcom
-   * console.log(pkg.name)        // "vspipe"
-   * console.log(pkg.description) // "A video processing framework with simplicity in..."
-   * console.log(pkg.programs)    // ["vspipe"]
-   * console.log(pkg.versions[0]) // "71.0.0"
    * ```
    */
-  vapoursynthcom: vapoursynth_com.VapoursynthcomPackage
+  vapoursynthcom: vapoursynth_com.VspipePackage
 
   /**
    * **vault** - A tool for secrets management, encryption as a service, and privileged access management
@@ -17790,26 +17227,17 @@ export interface Pantry {
   wpewebkitorg: wpewebkit_org.WpewebkitorgPackage
 
   /**
-   * **wunderctl** - WunderGraph is a Backend for Frontend Framework to optimize frontend, fullstack and backend developer workflows through API Composition.
+   * **wundergraph.com** - pkgx package
    *
    * @domain `wundergraph.com`
-   * @programs `wunderctl`
-   * @version `0.181.0` (20 versions available)
-   * @install `sh <(curl https://pkgx.sh) wunderctl`
-   * @aliases `wunderctl`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.wundergraphcom
-   * console.log(pkg.name)        // "wunderctl"
-   * console.log(pkg.description) // "WunderGraph is a Backend for Frontend Framework..."
-   * console.log(pkg.programs)    // ["wunderctl"]
-   * console.log(pkg.versions[0]) // "0.181.0"
    * ```
    */
-  wundergraphcom: wundergraph_com.WundergraphcomPackage
+  wundergraphcom: wundergraph_com.WunderctlPackage
 
   /**
    * **wxwidgets.org** - Cross-Platform C++ GUI Library
@@ -17923,27 +17351,17 @@ export interface Pantry {
   xiphorg: xiph_org.XiphorgPackage
 
   /**
-   * **xkbcli** - keymap handling library for toolkits and window systems
+   * **xkbcommon.org** - pkgx package
    *
    * @domain `xkbcommon.org`
-   * @programs `xkbcli`
-   * @version `1.10.0` (9 versions available)
-   * @install `sh <(curl https://pkgx.sh) xkbcli`
-   * @aliases `xkbcli`
-   * @dependencies `x.org/x11`, `x.org/xcb`, `freedesktop.org/XKeyboardConfig`, ... (+1 more)
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.xkbcommonorg
-   * console.log(pkg.name)        // "xkbcli"
-   * console.log(pkg.description) // "keymap handling library for toolkits and window..."
-   * console.log(pkg.programs)    // ["xkbcli"]
-   * console.log(pkg.versions[0]) // "1.10.0"
    * ```
    */
-  xkbcommonorg: xkbcommon_org.XkbcommonorgPackage
+  xkbcommonorg: xkbcommon_org.XkbcliPackage
 
   /**
    * **xplr** - A hackable, minimal, fast TUI file explorer
@@ -17989,26 +17407,17 @@ export interface Pantry {
   xpraorg: xpra_org.XpraorgPackage
 
   /**
-   * **xray-core** - Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
+   * **xtls.github.io** - pkgx package
    *
    * @domain `xtls.github.io`
-   * @programs `xray`
-   * @version `25.5.16` (30 versions available)
-   * @install `sh <(curl https://pkgx.sh) xray`
-   * @aliases `xray-core`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
-   *
    * const pkg = pantry.xtlsgithubio
-   * console.log(pkg.name)        // "xray-core"
-   * console.log(pkg.description) // "Xray, Penetrates Everything. Also the best v2ra..."
-   * console.log(pkg.programs)    // ["xray"]
-   * console.log(pkg.versions[0]) // "25.5.16"
    * ```
    */
-  xtlsgithubio: xtls_github_io.XtlsgithubioPackage
+  xtlsgithubio: xtls_github_io.XraycorePackage
 
   /**
    * **xvid.com**
@@ -18355,7 +17764,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  ack: beyondgrep_com.BeyondgrepcomPackage
+  ack: beyondgrep_com.AckPackage
 
   /**
    * **aichat** - Alias for `crates.io/aichat`
@@ -18397,28 +17806,14 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  aria2c: aria2_github_io.Aria2githubioPackage
+  aria2c: aria2_github_io.Aria2cPackage
 
   /**
-   * **atlantis** - Alias for `runatlantis.io`
-   *
-   * Terraform Pull Request Automation tool
+   * **atlantis** - Alias for `runatlantisio`
    *
    * @alias_for `pantry.runatlantisio`
-   * @domain `runatlantis.io`
-   * @programs `atlantis`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.atlantis  // via alias
-   * const pkg2 = pantry.runatlantisio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  atlantis: runatlantis_io.RunatlantisioPackage
+  atlantis: runatlantis_io.AtlantisPackage
 
   /**
    * **auto-gpt** - Alias for `agpt.co`
@@ -18439,7 +17834,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  autogpt: agpt_co.AgptcoPackage
+  autogpt: agpt_co.AutogptPackage
 
   /**
    * **aws/cli** - Alias for `aws.amazon.com/cli`
@@ -18647,7 +18042,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  bw: bitwarden_com.BitwardencomPackage
+  bw: bitwarden_com.BwPackage
 
   /**
    * **cairo-trace** - Alias for `cairographics.org`
@@ -18668,7 +18063,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  cairotrace: cairographics_org.CairographicsorgPackage
+  cairotrace: cairographics_org.CairotracePackage
 
   /**
    * **cargo-tarpaulin** - Alias for `crates.io/cargo-tarpaulin`
@@ -18692,25 +18087,11 @@ export interface Pantry {
   cargotarpaulin: crates_io_cargo_tarpaulin.CratesiocargotarpaulinPackage
 
   /**
-   * **cb** - Alias for `getclipboard.app`
-   *
-   * 😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨𝙡𝙮 smart clipboard manager
+   * **cb** - Alias for `getclipboardapp`
    *
    * @alias_for `pantry.getclipboardapp`
-   * @domain `getclipboard.app`
-   * @programs `cb`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.cb  // via alias
-   * const pkg2 = pantry.getclipboardapp  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  cb: getclipboard_app.GetclipboardappPackage
+  cb: getclipboard_app.CbPackage
 
   /**
    * **cbindgen** - Alias for `mozilla.org/cbindgen`
@@ -18815,49 +18196,21 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  cog: cocogitto_io.CocogittoioPackage
+  cog: cocogitto_io.CogPackage
 
   /**
-   * **composer** - Alias for `getcomposer.org`
-   *
-   * Dependency Manager for PHP
+   * **composer** - Alias for `getcomposerorg`
    *
    * @alias_for `pantry.getcomposerorg`
-   * @domain `getcomposer.org`
-   * @programs `composer`, `composer.phar`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.composer  // via alias
-   * const pkg2 = pantry.getcomposerorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  composer: getcomposer_org.GetcomposerorgPackage
+  composer: getcomposer_org.ComposerPackage
 
   /**
-   * **copa** - Alias for `project/copacetic.github.io`
-   *
-   * Tool to directly patch container images given the vulnerability scanning results
+   * **copa** - Alias for `projectcopaceticgithubio`
    *
    * @alias_for `pantry.projectcopaceticgithubio`
-   * @domain `project/copacetic.github.io`
-   * @programs `copa`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.copa  // via alias
-   * const pkg2 = pantry.projectcopaceticgithubio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  copa: project_copacetic_github_io.ProjectcopaceticgithubioPackage
+  copa: project_copacetic_github_io.CopaPackage
 
   /**
    * **create2crunch** - Alias for `github.com/0age-create2crunch`
@@ -18899,7 +18252,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  cstool: capstone_engine_org.CapstoneengineorgPackage
+  cstool: capstone_engine_org.CstoolPackage
 
   /**
    * **Cyfrin/safe-tx-hashes-util** - Alias for `github.com/Cyfrin-safe-tx-hashes-util`
@@ -18939,7 +18292,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  deno: deno_land.DenolandPackage
+  deno: deno_land.DenoPackage
 
   /**
    * **dev** - Alias for `pkgx.sh/dev`
@@ -18984,25 +18337,11 @@ export interface Pantry {
   diniboy1123usque: github_com_Diniboy1123_usque.Githubcomdiniboy1123usquePackage
 
   /**
-   * **dog** - Alias for `dns.lookup.dog`
-   *
-   * A command-line DNS client.
+   * **dog** - Alias for `dnslookupdog`
    *
    * @alias_for `pantry.dnslookupdog`
-   * @domain `dns.lookup.dog`
-   * @programs `dog`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.dog  // via alias
-   * const pkg2 = pantry.dnslookupdog  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  dog: dns_lookup_dog.DnslookupdogPackage
+  dog: dns_lookup_dog.DogPackage
 
   /**
    * **ducker** - Alias for `crates.io/ducker`
@@ -19047,25 +18386,11 @@ export interface Pantry {
   elizaos: elizaOS_github_io.ElizaosgithubioPackage
 
   /**
-   * **elvish** - Alias for `elv.sh`
-   *
-   * Powerful scripting language & versatile interactive shell
+   * **elvish** - Alias for `elvsh`
    *
    * @alias_for `pantry.elvsh`
-   * @domain `elv.sh`
-   * @programs `elvish`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.elvish  // via alias
-   * const pkg2 = pantry.elvsh  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  elvish: elv_sh.ElvshPackage
+  elvish: elv_sh.ElvishPackage
 
   /**
    * **envchain** - Alias for `github.com/sorah-envchain`
@@ -19131,25 +18456,11 @@ export interface Pantry {
   exr: openexr_com.OpenexrcomPackage
 
   /**
-   * **f2py** - Alias for `numpy.org`
-   *
-   * The fundamental package for scientific computing with Python.
+   * **f2py** - Alias for `numpyorg`
    *
    * @alias_for `pantry.numpyorg`
-   * @domain `numpy.org`
-   * @programs `f2py`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.f2py  // via alias
-   * const pkg2 = pantry.numpyorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  f2py: numpy_org.NumpyorgPackage
+  f2py: numpy_org.F2pyPackage
 
   /**
    * **fastfetch-cli/fastfetch** - Alias for `github.com/fastfetch-cli-fastfetch`
@@ -19215,25 +18526,11 @@ export interface Pantry {
   flamegraph: crates_io_flamegraph.CratesioflamegraphPackage
 
   /**
-   * **geos-config** - Alias for `libgeos.org`
-   *
-   * Geometry Engine, Open Source
+   * **geos-config** - Alias for `libgeosorg`
    *
    * @alias_for `pantry.libgeosorg`
-   * @domain `libgeos.org`
-   * @programs `geos-config`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.geosconfig  // via alias
-   * const pkg2 = pantry.libgeosorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  geosconfig: libgeos_org.LibgeosorgPackage
+  geosconfig: libgeos_org.GeosconfigPackage
 
   /**
    * **gh** - Alias for `cli.github.com`
@@ -19257,25 +18554,11 @@ export interface Pantry {
   gh: cli_github_com.CligithubcomPackage
 
   /**
-   * **git2** - Alias for `libgit2.org`
-   *
-   * A cross-platform, linkable library implementation of Git that you can use in your application.
+   * **git2** - Alias for `libgit2org`
    *
    * @alias_for `pantry.libgit2org`
-   * @domain `libgit2.org`
-   * @programs `git2`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.git2  // via alias
-   * const pkg2 = pantry.libgit2org  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  git2: libgit2_org.Libgit2orgPackage
+  git2: libgit2_org.Git2Package
 
   /**
    * **git-credential-manager** - Alias for `github.com/git-ecosystem-git-credential-manager`
@@ -19317,7 +18600,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  gitcrypt: agwa_name_git_crypt.AgwanamegitcryptPackage
+  gitcrypt: agwa_name_git_crypt.GitcryptPackage
 
   /**
    * **git-ecosystem/git-credential-manager** - Alias for `github.com/git-ecosystem-git-credential-manager`
@@ -19398,7 +18681,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  go: go_dev.GodevPackage
+  go: go_dev.GoPackage
 
   /**
    * **gofumpt** - Alias for `mvdan.cc/gofumpt`
@@ -19485,67 +18768,25 @@ export interface Pantry {
   huggingfacecli: huggingface_co.HuggingfacecoPackage
 
   /**
-   * **hugo** - Alias for `gohugo.io`
-   *
-   * The world’s fastest framework for building websites.
+   * **hugo** - Alias for `gohugoio`
    *
    * @alias_for `pantry.gohugoio`
-   * @domain `gohugo.io`
-   * @programs `hugo`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.hugo  // via alias
-   * const pkg2 = pantry.gohugoio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  hugo: gohugo_io.GohugoioPackage
+  hugo: gohugo_io.HugoPackage
 
   /**
-   * **hx** - Alias for `helix/editor.com`
-   *
-   * A post-modern modal text editor.
+   * **hx** - Alias for `helixeditorcom`
    *
    * @alias_for `pantry.helixeditorcom`
-   * @domain `helix/editor.com`
-   * @programs `hx`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.hx  // via alias
-   * const pkg2 = pantry.helixeditorcom  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  hx: helix_editor_com.HelixeditorcomPackage
+  hx: helix_editor_com.HxPackage
 
   /**
-   * **idevicedate** - Alias for `libimobiledevice.org`
-   *
-   * A cross-platform protocol library to communicate with iOS devices
+   * **idevicedate** - Alias for `libimobiledeviceorg`
    *
    * @alias_for `pantry.libimobiledeviceorg`
-   * @domain `libimobiledevice.org`
-   * @programs `idevicedate`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.idevicedate  // via alias
-   * const pkg2 = pantry.libimobiledeviceorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  idevicedate: libimobiledevice_org.LibimobiledeviceorgPackage
+  idevicedate: libimobiledevice_org.IdevicedatePackage
 
   /**
    * **igorshubovych/markdownlint-cli** - Alias for `github.com/igorshubovych-markdownlint-cli`
@@ -19569,67 +18810,25 @@ export interface Pantry {
   igorshubovychmarkdownlintcli: github_com_igorshubovych_markdownlint_cli.GithubcomigorshubovychmarkdownlintcliPackage
 
   /**
-   * **invoke** - Alias for `pyinvoke.org`
-   *
-   * Pythonic task management & command execution.
+   * **invoke** - Alias for `pyinvokeorg`
    *
    * @alias_for `pantry.pyinvokeorg`
-   * @domain `pyinvoke.org`
-   * @programs `invoke`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.invoke  // via alias
-   * const pkg2 = pantry.pyinvokeorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  invoke: pyinvoke_org.PyinvokeorgPackage
+  invoke: pyinvoke_org.InvokePackage
 
   /**
-   * **istioctl** - Alias for `istio.io`
-   *
-   * Connect, secure, control, and observe services.
+   * **istioctl** - Alias for `istioio`
    *
    * @alias_for `pantry.istioio`
-   * @domain `istio.io`
-   * @programs `istioctl`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.istioctl  // via alias
-   * const pkg2 = pantry.istioio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  istioctl: istio_io.IstioioPackage
+  istioctl: istio_io.IstioctlPackage
 
   /**
-   * **jags** - Alias for `mcmc/jags.sourceforge.io`
-   *
-   * Just Another Gibbs Sampler for Bayesian MCMC simulation
+   * **jags** - Alias for `mcmcjagssourceforgeio`
    *
    * @alias_for `pantry.mcmcjagssourceforgeio`
-   * @domain `mcmc/jags.sourceforge.io`
-   * @programs `jags`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.jags  // via alias
-   * const pkg2 = pantry.mcmcjagssourceforgeio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  jags: mcmc_jags_sourceforge_io.McmcjagssourceforgeioPackage
+  jags: mcmc_jags_sourceforge_io.JagsPackage
 
   /**
    * **jarun/nnn** - Alias for `github.com/jarun-nnn`
@@ -19653,46 +18852,18 @@ export interface Pantry {
   jarunnnn: github_com_jarun_nnn.GithubcomjarunnnnPackage
 
   /**
-   * **jenkins x** - Alias for `jenkins/x.io`
-   *
-   * Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton
+   * **jenkins x** - Alias for `jenkinsxio`
    *
    * @alias_for `pantry.jenkinsxio`
-   * @domain `jenkins/x.io`
-   * @programs `jx`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry["jenkins x"]  // via alias
-   * const pkg2 = pantry.jenkinsxio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  "jenkins x": jenkins_x_io.JenkinsxioPackage
+  "jenkins x": jenkins_x_io.JenkinsxPackage
 
   /**
-   * **jenkins-lts** - Alias for `jenkins.io`
-   *
-   * Extendable open source continuous integration server
+   * **jenkins-lts** - Alias for `jenkinsio`
    *
    * @alias_for `pantry.jenkinsio`
-   * @domain `jenkins.io`
-   * @programs `jenkins-lts`, `jenkins-lts-cli`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.jenkinslts  // via alias
-   * const pkg2 = pantry.jenkinsio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  jenkinslts: jenkins_io.JenkinsioPackage
+  jenkinslts: jenkins_io.JenkinsltsPackage
 
   /**
    * **koekeishiya/skhd** - Alias for `github.com/koekeishiya-skhd`
@@ -19755,49 +18926,21 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  kubectlcnpg: cloudnative_pg_io.CloudnativepgioPackage
+  kubectlcnpg: cloudnative_pg_io.KubectlcnpgPackage
 
   /**
-   * **kubectl-krew** - Alias for `krew.sigs.k8s.io`
-   *
-   * 📦 Find and install kubectl plugins
+   * **kubectl-krew** - Alias for `krewsigsk8sio`
    *
    * @alias_for `pantry.krewsigsk8sio`
-   * @domain `krew.sigs.k8s.io`
-   * @programs `kubectl-krew`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.kubectlkrew  // via alias
-   * const pkg2 = pantry.krewsigsk8sio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  kubectlkrew: krew_sigs_k8s_io.Krewsigsk8sioPackage
+  kubectlkrew: krew_sigs_k8s_io.KubectlkrewPackage
 
   /**
-   * **kube-linter** - Alias for `kubelinter.io`
-   *
-   * KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices.
+   * **kube-linter** - Alias for `kubelinterio`
    *
    * @alias_for `pantry.kubelinterio`
-   * @domain `kubelinter.io`
-   * @programs `kube-linter`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.kubelinter  // via alias
-   * const pkg2 = pantry.kubelinterio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  kubelinter: kubelinter_io.KubelinterioPackage
+  kubelinter: kubelinter_io.KubelinterPackage
 
   /**
    * **ldap** - Alias for `openldap.org`
@@ -19879,25 +19022,11 @@ export interface Pantry {
   liblmdb: openldap_org_liblmdb.OpenldaporgliblmdbPackage
 
   /**
-   * **libmatio** - Alias for `matio.sourceforge.io`
-   *
-   * C library for reading and writing MATLAB MAT files
+   * **libmatio** - Alias for `matiosourceforgeio`
    *
    * @alias_for `pantry.matiosourceforgeio`
-   * @domain `matio.sourceforge.io`
-   * @programs `matdump`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.libmatio  // via alias
-   * const pkg2 = pantry.matiosourceforgeio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  libmatio: matio_sourceforge_io.MatiosourceforgeioPackage
+  libmatio: matio_sourceforge_io.LibmatioPackage
 
   /**
    * **libomp** - Alias for `openmp.llvm.org`
@@ -20001,25 +19130,11 @@ export interface Pantry {
   lynx: invisible_island_net_lynx.InvisibleislandnetlynxPackage
 
   /**
-   * **mako-render** - Alias for `makotemplates.org`
-   *
-   * Mako Templates for Python
+   * **mako-render** - Alias for `makotemplatesorg`
    *
    * @alias_for `pantry.makotemplatesorg`
-   * @domain `makotemplates.org`
-   * @programs `mako-render`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.makorender  // via alias
-   * const pkg2 = pantry.makotemplatesorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  makorender: makotemplates_org.MakotemplatesorgPackage
+  makorender: makotemplates_org.MakorenderPackage
 
   /**
    * **markdownlint** - Alias for `github.com/igorshubovych-markdownlint-cli`
@@ -20124,49 +19239,21 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  metagpt: deepwisdom_ai.DeepwisdomaiPackage
+  metagpt: deepwisdom_ai.MetagptPackage
 
   /**
-   * **microcks-cli** - Alias for `microcks.io`
-   *
-   * Simple CLI for interacting with Microcks test APIs
+   * **microcks-cli** - Alias for `microcksio`
    *
    * @alias_for `pantry.microcksio`
-   * @domain `microcks.io`
-   * @programs `microcks-cli`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.microckscli  // via alias
-   * const pkg2 = pantry.microcksio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  microckscli: microcks_io.MicrocksioPackage
+  microckscli: microcks_io.MicrockscliPackage
 
   /**
-   * **midnight commander** - Alias for `midnight/commander.org`
-   *
-   * Terminal-based visual file manager
+   * **midnight commander** - Alias for `midnightcommanderorg`
    *
    * @alias_for `pantry.midnightcommanderorg`
-   * @domain `midnight/commander.org`
-   * @programs `mc`, `mcdiff`, `mcedit`, ... (+1 more)
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry["midnight commander"]  // via alias
-   * const pkg2 = pantry.midnightcommanderorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  "midnight commander": midnight_commander_org.MidnightcommanderorgPackage
+  "midnight commander": midnight_commander_org.MidnightcommanderPackage
 
   /**
    * **MilesCranmer/rip2** - Alias for `github.com/MilesCranmer-rip2`
@@ -20211,25 +19298,11 @@ export interface Pantry {
   minseokohtomlcli: github_com_MinseokOh_toml_cli.GithubcomminseokohtomlcliPackage
 
   /**
-   * **mvn** - Alias for `maven.apache.org`
-   *
-   * Java-based project management
+   * **mvn** - Alias for `mavenapacheorg`
    *
    * @alias_for `pantry.mavenapacheorg`
-   * @domain `maven.apache.org`
-   * @programs `mvn`, `mvnDebug`, `mvnyjp`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.mvn  // via alias
-   * const pkg2 = pantry.mavenapacheorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  mvn: maven_apache_org.MavenapacheorgPackage
+  mvn: maven_apache_org.MvnPackage
 
   /**
    * **mycreepy/pakku** - Alias for `github.com/mycreepy-pakku`
@@ -20253,25 +19326,11 @@ export interface Pantry {
   mycreepypakku: github_com_mycreepy_pakku.GithubcommycreepypakkuPackage
 
   /**
-   * **mz** - Alias for `materialize.com`
-   *
-   * Real-time Data Integration and Transformation: use SQL to transform, deliver, and act on fast-changing data.
+   * **mz** - Alias for `materializecom`
    *
    * @alias_for `pantry.materializecom`
-   * @domain `materialize.com`
-   * @programs `mz`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.mz  // via alias
-   * const pkg2 = pantry.materializecom  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  mz: materialize_com.MaterializecomPackage
+  mz: materialize_com.MzPackage
 
   /**
    * **nak** - Alias for `github.com/fiatjaf-nak`
@@ -20334,7 +19393,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  ng: angular_dev.AngulardevPackage
+  ng: angular_dev.NgPackage
 
   /**
    * **nnn** - Alias for `github.com/jarun-nnn`
@@ -20358,6 +19417,27 @@ export interface Pantry {
   nnn: github_com_jarun_nnn.GithubcomjarunnnnPackage
 
   /**
+   * **node** - Alias for `nodejs.org`
+   *
+   * Platform built on V8 to build network applications
+   *
+   * @alias_for `pantry.nodejsorg`
+   * @domain `nodejs.org`
+   * @programs `node`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.node  // via alias
+   * const pkg2 = pantry.nodejsorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  node: nodejs_org.NodePackage
+
+  /**
    * **nuclei** - Alias for `projectdiscovery.io/nuclei`
    *
    * Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.
@@ -20379,46 +19459,18 @@ export interface Pantry {
   nuclei: projectdiscovery_io_nuclei.ProjectdiscoveryionucleiPackage
 
   /**
-   * **nvim** - Alias for `neovim.io`
-   *
-   * Ambitious Vim-fork focused on extensibility and agility
+   * **nvim** - Alias for `neovimio`
    *
    * @alias_for `pantry.neovimio`
-   * @domain `neovim.io`
-   * @programs `nvim`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.nvim  // via alias
-   * const pkg2 = pantry.neovimio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  nvim: neovim_io.NeovimioPackage
+  nvim: neovim_io.NvimPackage
 
   /**
-   * **oc** - Alias for `openshift.com`
-   *
-   * The OpenShift Command Line, part of OKD
+   * **oc** - Alias for `openshiftcom`
    *
    * @alias_for `pantry.openshiftcom`
-   * @domain `openshift.com`
-   * @programs `oc`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.oc  // via alias
-   * const pkg2 = pantry.openshiftcom  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  oc: openshift_com.OpenshiftcomPackage
+  oc: openshift_com.OcPackage
 
   /**
    * **oh-my-posh** - Alias for `ohmyposh.dev`
@@ -20442,46 +19494,18 @@ export interface Pantry {
   ohmyposh: ohmyposh_dev.OhmyposhdevPackage
 
   /**
-   * **opa** - Alias for `openpolicyagent.org`
-   *
-   * Open Policy Agent (OPA) is an open source, general-purpose policy engine.
+   * **opa** - Alias for `openpolicyagentorg`
    *
    * @alias_for `pantry.openpolicyagentorg`
-   * @domain `openpolicyagent.org`
-   * @programs `opa`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.opa  // via alias
-   * const pkg2 = pantry.openpolicyagentorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  opa: openpolicyagent_org.OpenpolicyagentorgPackage
+  opa: openpolicyagent_org.OpaPackage
 
   /**
-   * **open-interpreter** - Alias for `openinterpreter.com`
-   *
-   * A natural language interface for computers
+   * **open-interpreter** - Alias for `openinterpretercom`
    *
    * @alias_for `pantry.openinterpretercom`
-   * @domain `openinterpreter.com`
-   * @programs `interpreter`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.openinterpreter  // via alias
-   * const pkg2 = pantry.openinterpretercom  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  openinterpreter: openinterpreter_com.OpeninterpretercomPackage
+  openinterpreter: openinterpreter_com.OpeninterpreterPackage
 
   /**
    * **opj** - Alias for `openjpeg.org`
@@ -20544,7 +19568,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  pack: buildpacks_io.BuildpacksioPackage
+  pack: buildpacks_io.PackPackage
 
   /**
    * **pakku** - Alias for `github.com/mycreepy-pakku`
@@ -20610,25 +19634,11 @@ export interface Pantry {
   parchivepar2cmdline: github_com_Parchive_par2cmdline.Githubcomparchivepar2cmdlinePackage
 
   /**
-   * **pcap-config** - Alias for `tcpdump.org`
-   *
-   * the LIBpcap interface to various kernel packet capture mechanism
+   * **pcap-config** - Alias for `tcpdumporg`
    *
    * @alias_for `pantry.tcpdumporg`
-   * @domain `tcpdump.org`
-   * @programs `pcap-config`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.pcapconfig  // via alias
-   * const pkg2 = pantry.tcpdumporg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  pcapconfig: tcpdump_org.TcpdumporgPackage
+  pcapconfig: tcpdump_org.PcapconfigPackage
 
   /**
    * **pcsc-lite** - Alias for `pcsclite.apdu.fr`
@@ -20731,7 +19741,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  perl: perl_org.PerlorgPackage
+  perl: perl_org.PerlPackage
 
   /**
    * **php** - Alias for `php.net`
@@ -20752,7 +19762,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  php: php_net.PhpnetPackage
+  php: php_net.PhpPackage
 
   /**
    * **pik** - Alias for `crates.io/pik`
@@ -20776,46 +19786,18 @@ export interface Pantry {
   pik: crates_io_pik.CratesiopikPackage
 
   /**
-   * **pixi** - Alias for `prefix.dev`
-   *
-   * Package management made easy
+   * **pixi** - Alias for `prefixdev`
    *
    * @alias_for `pantry.prefixdev`
-   * @domain `prefix.dev`
-   * @programs `pixi`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.pixi  // via alias
-   * const pkg2 = pantry.prefixdev  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  pixi: prefix_dev.PrefixdevPackage
+  pixi: prefix_dev.PixiPackage
 
   /**
-   * **pixlet** - Alias for `tidbyt.com`
-   *
-   * Build apps for pixel-based displays ✨
+   * **pixlet** - Alias for `tidbytcom`
    *
    * @alias_for `pantry.tidbytcom`
-   * @domain `tidbyt.com`
-   * @programs `pixlet`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.pixlet  // via alias
-   * const pkg2 = pantry.tidbytcom  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  pixlet: tidbyt_com.TidbytcomPackage
+  pixlet: tidbyt_com.PixletPackage
 
   /**
    * **pkgm** - Alias for `pkgx.sh/pkgm`
@@ -20878,91 +19860,56 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  pod: cocoapods_org.CocoapodsorgPackage
+  pod: cocoapods_org.PodPackage
 
   /**
-   * **poetry** - Alias for `python/poetry.org`
-   *
-   * Python packaging and dependency management made easy
+   * **poetry** - Alias for `pythonpoetryorg`
    *
    * @alias_for `pantry.pythonpoetryorg`
-   * @domain `python/poetry.org`
-   * @programs `poetry`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.poetry  // via alias
-   * const pkg2 = pantry.pythonpoetryorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  poetry: python_poetry_org.PythonpoetryorgPackage
+  poetry: python_poetry_org.PoetryPackage
 
   /**
-   * **protocol buffers** - Alias for `protobuf.dev`
-   *
-   * Protocol Buffers - Google's data interchange format
+   * **protocol buffers** - Alias for `protobufdev`
    *
    * @alias_for `pantry.protobufdev`
-   * @domain `protobuf.dev`
-   * @programs `protoc`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry["protocol buffers"]  // via alias
-   * const pkg2 = pantry.protobufdev  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  "protocol buffers": protobuf_dev.ProtobufdevPackage
+  "protocol buffers": protobuf_dev.ProtocolbuffersPackage
 
   /**
-   * **pscale** - Alias for `planetscale.com`
-   *
-   * The CLI for PlanetScale Database
+   * **pscale** - Alias for `planetscalecom`
    *
    * @alias_for `pantry.planetscalecom`
-   * @domain `planetscale.com`
-   * @programs `pscale`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.pscale  // via alias
-   * const pkg2 = pantry.planetscalecom  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  pscale: planetscale_com.PlanetscalecomPackage
+  pscale: planetscale_com.PscalePackage
 
   /**
-   * **pygmentize** - Alias for `pygments.org`
-   *
-   * Pygments is a generic syntax highlighter written in Python
+   * **pygmentize** - Alias for `pygmentsorg`
    *
    * @alias_for `pantry.pygmentsorg`
-   * @domain `pygments.org`
-   * @programs `pygmentize`
+   */
+  pygmentize: pygments_org.PygmentizePackage
+
+  /**
+   * **python** - Alias for `python.org`
+   *
+   * The Python programming language
+   *
+   * @alias_for `pantry.pythonorg`
+   * @domain `python.org`
+   * @programs `python`, `python{{ version.major }}`, `python{{ version.marketing }}`
    *
    * @example
    * ```typescript
    * import { pantry } from 'ts-pkgx'
    *
    * // Both access the same package object
-   * const pkg1 = pantry.pygmentize  // via alias
-   * const pkg2 = pantry.pygmentsorg  // via domain
+   * const pkg1 = pantry.python  // via alias
+   * const pkg2 = pantry.pythonorg  // via domain
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  pygmentize: pygments_org.PygmentsorgPackage
+  python: python_org.PythonPackage
 
   /**
    * **qsv** - Alias for `crates.io/qsv`
@@ -21086,7 +20033,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  ruby: ruby_lang_org.RubylangorgPackage
+  ruby: ruby_lang_org.RubyPackage
 
   /**
    * **rucola** - Alias for `crates.io/rucola-notes`
@@ -21170,7 +20117,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  rust: rust_lang_org.RustlangorgPackage
+  rust: rust_lang_org.RustPackage
 
   /**
    * **rust-bindgen** - Alias for `rust/lang.org-rust-bindgen`
@@ -21215,25 +20162,11 @@ export interface Pantry {
   ryeuv: github_com_lucianosrp_rye_uv.GithubcomlucianosrpryeuvPackage
 
   /**
-   * **s3cmd** - Alias for `s3tools.org`
-   *
-   * Official s3cmd repo -- Command line tool for managing S3 compatible storage services (including Amazon S3 and CloudFront).
+   * **s3cmd** - Alias for `s3toolsorg`
    *
    * @alias_for `pantry.s3toolsorg`
-   * @domain `s3tools.org`
-   * @programs `s3cmd`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.s3cmd  // via alias
-   * const pkg2 = pantry.s3toolsorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  s3cmd: s3tools_org.S3toolsorgPackage
+  s3cmd: s3tools_org.S3cmdPackage
 
   /**
    * **s5cmd** - Alias for `github.com/peak-s5cmd`
@@ -21318,25 +20251,11 @@ export interface Pantry {
   samply: crates_io_samply.CratesiosamplyPackage
 
   /**
-   * **sbt** - Alias for `scala/sbt.org`
-   *
-   * sbt, the interactive build tool
+   * **sbt** - Alias for `scalasbtorg`
    *
    * @alias_for `pantry.scalasbtorg`
-   * @domain `scala/sbt.org`
-   * @programs `sbt`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.sbt  // via alias
-   * const pkg2 = pantry.scalasbtorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  sbt: scala_sbt_org.ScalasbtorgPackage
+  sbt: scala_sbt_org.SbtPackage
 
   /**
    * **scryer prolog** - Alias for `scryer.pl`
@@ -21360,25 +20279,11 @@ export interface Pantry {
   "scryer prolog": scryer_pl.ScryerplPackage
 
   /**
-   * **scw** - Alias for `scaleway.com`
-   *
-   * Command Line Interface for Scaleway
+   * **scw** - Alias for `scalewaycom`
    *
    * @alias_for `pantry.scalewaycom`
-   * @domain `scaleway.com`
-   * @programs `scw`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.scw  // via alias
-   * const pkg2 = pantry.scalewaycom  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  scw: scaleway_com.ScalewaycomPackage
+  scw: scaleway_com.ScwPackage
 
   /**
    * **sdkman-init.sh** - Alias for `sdkman.io`
@@ -21486,25 +20391,11 @@ export interface Pantry {
   skhd: github_com_koekeishiya_skhd.GithubcomkoekeishiyaskhdPackage
 
   /**
-   * **sops** - Alias for `getsops.io`
-   *
-   * Simple and flexible tool for managing secrets
+   * **sops** - Alias for `getsopsio`
    *
    * @alias_for `pantry.getsopsio`
-   * @domain `getsops.io`
-   * @programs `sops`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.sops  // via alias
-   * const pkg2 = pantry.getsopsio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  sops: getsops_io.GetsopsioPackage
+  sops: getsops_io.SopsPackage
 
   /**
    * **sorah/envchain** - Alias for `github.com/sorah-envchain`
@@ -21528,25 +20419,11 @@ export interface Pantry {
   sorahenvchain: github_com_sorah_envchain.GithubcomsorahenvchainPackage
 
   /**
-   * **speexdec** - Alias for `speex.org`
-   *
-   * Audio codec designed for speech
+   * **speexdec** - Alias for `speexorg`
    *
    * @alias_for `pantry.speexorg`
-   * @domain `speex.org`
-   * @programs `speexdec`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.speexdec  // via alias
-   * const pkg2 = pantry.speexorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  speexdec: speex_org.SpeexorgPackage
+  speexdec: speex_org.SpeexdecPackage
 
   /**
    * **spencerkimball/stargazers** - Alias for `github.com/spencerkimball-stargazers`
@@ -21570,25 +20447,11 @@ export interface Pantry {
   spencerkimballstargazers: github_com_spencerkimball_stargazers.GithubcomspencerkimballstargazersPackage
 
   /**
-   * **sqlite3** - Alias for `sqlite.org`
-   *
-   * Official Git mirror of the SQLite source tree
+   * **sqlite3** - Alias for `sqliteorg`
    *
    * @alias_for `pantry.sqliteorg`
-   * @domain `sqlite.org`
-   * @programs `sqlite3`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.sqlite3  // via alias
-   * const pkg2 = pantry.sqliteorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  sqlite3: sqlite_org.SqliteorgPackage
+  sqlite3: sqlite_org.Sqlite3Package
 
   /**
    * **stargazers** - Alias for `github.com/spencerkimball-stargazers`
@@ -21633,67 +20496,25 @@ export interface Pantry {
   starpls: github_com_withered_magic_starpls.GithubcomwitheredmagicstarplsPackage
 
   /**
-   * **synth** - Alias for `getsynth.com`
-   *
-   * The Declarative Data Generator
+   * **synth** - Alias for `getsynthcom`
    *
    * @alias_for `pantry.getsynthcom`
-   * @domain `getsynth.com`
-   * @programs `synth`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.synth  // via alias
-   * const pkg2 = pantry.getsynthcom  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  synth: getsynth_com.GetsynthcomPackage
+  synth: getsynth_com.SynthPackage
 
   /**
-   * **taglib-config** - Alias for `taglib.org`
-   *
-   * TagLib Audio Meta-Data Library
+   * **taglib-config** - Alias for `tagliborg`
    *
    * @alias_for `pantry.tagliborg`
-   * @domain `taglib.org`
-   * @programs `taglib-config`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.taglibconfig  // via alias
-   * const pkg2 = pantry.tagliborg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  taglibconfig: taglib_org.TagliborgPackage
+  taglibconfig: taglib_org.TaglibconfigPackage
 
   /**
-   * **talosctl** - Alias for `talos.dev`
-   *
-   * CLI for out-of-band management of Kubernetes nodes created by Talos
+   * **talosctl** - Alias for `talosdev`
    *
    * @alias_for `pantry.talosdev`
-   * @domain `talos.dev`
-   * @programs `talosctl`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.talosctl  // via alias
-   * const pkg2 = pantry.talosdev  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  talosctl: talos_dev.TalosdevPackage
+  talosctl: talos_dev.TalosctlPackage
 
   /**
    * **tb** - Alias for `tinybird.co`
@@ -21715,25 +20536,11 @@ export interface Pantry {
   tb: tinybird_co.TinybirdcoPackage
 
   /**
-   * **teller** - Alias for `tlr.dev`
-   *
-   * Cloud native secrets management for developers - never leave your command line for secrets.
+   * **teller** - Alias for `tlrdev`
    *
    * @alias_for `pantry.tlrdev`
-   * @domain `tlr.dev`
-   * @programs `teller`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.teller  // via alias
-   * const pkg2 = pantry.tlrdev  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  teller: tlr_dev.TlrdevPackage
+  teller: tlr_dev.TellerPackage
 
   /**
    * **telnet** - Alias for `apple.com/remote_cmds`
@@ -21776,25 +20583,11 @@ export interface Pantry {
   tidy: html_tidy_org.HtmltidyorgPackage
 
   /**
-   * **tofu** - Alias for `opentofu.org`
-   *
-   * OpenTofu lets you declaratively manage your cloud infrastructure.
+   * **tofu** - Alias for `opentofuorg`
    *
    * @alias_for `pantry.opentofuorg`
-   * @domain `opentofu.org`
-   * @programs `tofu`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.tofu  // via alias
-   * const pkg2 = pantry.opentofuorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  tofu: opentofu_org.OpentofuorgPackage
+  tofu: opentofu_org.TofuPackage
 
   /**
    * **toml-cli** - Alias for `github.com/MinseokOh-toml-cli`
@@ -21818,25 +20611,11 @@ export interface Pantry {
   tomlcli: github_com_MinseokOh_toml_cli.GithubcomminseokohtomlcliPackage
 
   /**
-   * **tsc** - Alias for `typescriptlang.org`
-   *
-   * TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
+   * **tsc** - Alias for `typescriptlangorg`
    *
    * @alias_for `pantry.typescriptlangorg`
-   * @domain `typescriptlang.org`
-   * @programs `tsc`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.tsc  // via alias
-   * const pkg2 = pantry.typescriptlangorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  tsc: typescriptlang_org.TypescriptlangorgPackage
+  tsc: typescriptlang_org.TscPackage
 
   /**
    * **ty** - Alias for `astral.sh/ty`
@@ -21939,25 +20718,11 @@ export interface Pantry {
   uv: astral_sh_uv.AstralshuvPackage
 
   /**
-   * **vips** - Alias for `libvips.org`
-   *
-   * A fast image processing library with low memory needs.
+   * **vips** - Alias for `libvipsorg`
    *
    * @alias_for `pantry.libvipsorg`
-   * @domain `libvips.org`
-   * @programs `vips`, `vipsedit`, `vipsheader`, ... (+2 more)
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.vips  // via alias
-   * const pkg2 = pantry.libvipsorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  vips: libvips_org.LibvipsorgPackage
+  vips: libvips_org.VipsPackage
 
   /**
    * **vscode cli** - Alias for `microsoft.com/code-cli`
@@ -21981,25 +20746,11 @@ export interface Pantry {
   "vscode cli": microsoft_com_code_cli.MicrosoftcomcodecliPackage
 
   /**
-   * **vspipe** - Alias for `vapoursynth.com`
-   *
-   * A video processing framework with simplicity in mind
+   * **vspipe** - Alias for `vapoursynthcom`
    *
    * @alias_for `pantry.vapoursynthcom`
-   * @domain `vapoursynth.com`
-   * @programs `vspipe`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.vspipe  // via alias
-   * const pkg2 = pantry.vapoursynthcom  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  vspipe: vapoursynth_com.VapoursynthcomPackage
+  vspipe: vapoursynth_com.VspipePackage
 
   /**
    * **withered-magic/starpls** - Alias for `github.com/withered-magic-starpls`
@@ -22023,25 +20774,11 @@ export interface Pantry {
   witheredmagicstarpls: github_com_withered_magic_starpls.GithubcomwitheredmagicstarplsPackage
 
   /**
-   * **wunderctl** - Alias for `wundergraph.com`
-   *
-   * WunderGraph is a Backend for Frontend Framework to optimize frontend, fullstack and backend developer workflows through API Composition.
+   * **wunderctl** - Alias for `wundergraphcom`
    *
    * @alias_for `pantry.wundergraphcom`
-   * @domain `wundergraph.com`
-   * @programs `wunderctl`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.wunderctl  // via alias
-   * const pkg2 = pantry.wundergraphcom  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  wunderctl: wundergraph_com.WundergraphcomPackage
+  wunderctl: wundergraph_com.WunderctlPackage
 
   /**
    * **xcodeproj** - Alias for `cocoapods.org/xcodeproj`
@@ -22065,67 +20802,25 @@ export interface Pantry {
   xcodeproj: cocoapods_org_xcodeproj.CocoapodsorgxcodeprojPackage
 
   /**
-   * **xkbcli** - Alias for `xkbcommon.org`
-   *
-   * keymap handling library for toolkits and window systems
+   * **xkbcli** - Alias for `xkbcommonorg`
    *
    * @alias_for `pantry.xkbcommonorg`
-   * @domain `xkbcommon.org`
-   * @programs `xkbcli`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.xkbcli  // via alias
-   * const pkg2 = pantry.xkbcommonorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  xkbcli: xkbcommon_org.XkbcommonorgPackage
+  xkbcli: xkbcommon_org.XkbcliPackage
 
   /**
-   * **xmlwf** - Alias for `libexpat.github.io`
-   *
-   * :herb: Fast streaming XML parser written in C99 with >90% test coverage; moved from SourceForge to GitHub
+   * **xmlwf** - Alias for `libexpatgithubio`
    *
    * @alias_for `pantry.libexpatgithubio`
-   * @domain `libexpat.github.io`
-   * @programs `xmlwf`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.xmlwf  // via alias
-   * const pkg2 = pantry.libexpatgithubio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  xmlwf: libexpat_github_io.LibexpatgithubioPackage
+  xmlwf: libexpat_github_io.XmlwfPackage
 
   /**
-   * **xray-core** - Alias for `xtls.github.io`
-   *
-   * Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
+   * **xray-core** - Alias for `xtlsgithubio`
    *
    * @alias_for `pantry.xtlsgithubio`
-   * @domain `xtls.github.io`
-   * @programs `xray`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.xraycore  // via alias
-   * const pkg2 = pantry.xtlsgithubio  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  xraycore: xtls_github_io.XtlsgithubioPackage
+  xraycore: xtls_github_io.XraycorePackage
 
   /**
    * **xscrnsaver** - Alias for `x.org/xscrnsaver`
@@ -22146,46 +20841,18 @@ export interface Pantry {
   xscrnsaver: x_org_xscrnsaver.XorgxscrnsaverPackage
 
   /**
-   * **zip** - Alias for `libzip.org`
-   *
-   * A C library for reading, creating, and modifying zip archives.
+   * **zip** - Alias for `libziporg`
    *
    * @alias_for `pantry.libziporg`
-   * @domain `libzip.org`
-   * @programs `zipcmp`, `zipmerge`, `ziptool`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.zip  // via alias
-   * const pkg2 = pantry.libziporg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  zip: libzip_org.LibziporgPackage
+  zip: libzip_org.ZipPackage
 
   /**
-   * **zola** - Alias for `getzola.org`
-   *
-   * A fast static site generator in a single binary with everything built-in. https://www.getzola.org
+   * **zola** - Alias for `getzolaorg`
    *
    * @alias_for `pantry.getzolaorg`
-   * @domain `getzola.org`
-   * @programs `zola`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.zola  // via alias
-   * const pkg2 = pantry.getzolaorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
    */
-  zola: getzola_org.GetzolaorgPackage
+  zola: getzola_org.ZolaPackage
 
 }
 
@@ -22194,8 +20861,8 @@ export type Packages = Pantry
 export const pantry: Pantry = {
   abseilio: abseil_io.abseilioPackage,
   acornio: acorn_io.acornioPackage,
-  agptco: agpt_co.agptcoPackage,
-  agwanamegitcrypt: agwa_name_git_crypt.agwanamegitcryptPackage,
+  agptco: agpt_co.autogptPackage,
+  agwanamegitcrypt: agwa_name_git_crypt.gitcryptPackage,
   akuityio: akuity_io.akuityioPackage,
   alacrittyorg: alacritty_org.alacrittyorgPackage,
   alembicsqlalchemyorg: alembic_sqlalchemy_org.alembicsqlalchemyorgPackage,
@@ -22205,7 +20872,7 @@ export const pantry: Pantry = {
   amrdevelopergithubio: amrdeveloper_github_io.amrdevelopergithubioPackage,
   anchorecom: anchore_com.anchorecomPackage,
   androidcom: android_com.androidcomPackage,
-  angulardev: angular_dev.angulardevPackage,
+  angulardev: angular_dev.ngPackage,
   ansiblecom: ansible_com.ansiblecomPackage,
   aomediagooglesourcecom: aomedia_googlesource_com.aomediagooglesourcecomPackage,
   apacheorg: apache_org.apacheorgPackage,
@@ -22219,7 +20886,7 @@ export const pantry: Pantry = {
   arduinogithubio: arduino_github_io.arduinogithubioPackage,
   argbashdev: argbash_dev.argbashdevPackage,
   argoprojgithubio: argoproj_github_io.argoprojgithubioPackage,
-  aria2githubio: aria2_github_io.aria2githubioPackage,
+  aria2githubio: aria2_github_io.aria2cPackage,
   arkadedev: arkade_dev.arkadedevPackage,
   asciidoctororg: asciidoctor_org.asciidoctororgPackage,
   asciinemaorg: asciinema_org.asciinemaorgPackage,
@@ -22240,11 +20907,11 @@ export const pantry: Pantry = {
   awsamazoncomsam: aws_amazon_com_sam.awsamazoncomsamPackage,
   bashlydannybco: bashly_dannyb_co.bashlydannybcoPackage,
   bcryptsourceforgenet: bcrypt_sourceforge_net.bcryptsourceforgenetPackage,
-  beyondgrepcom: beyondgrep_com.beyondgrepcomPackage,
+  beyondgrepcom: beyondgrep_com.ackPackage,
   biomejsdev: biomejs_dev.biomejsdevPackage,
   bitcoinorg: bitcoin_org.bitcoinorgPackage,
   bittensorcom: bittensor_com.bittensorcomPackage,
-  bitwardencom: bitwarden_com.bitwardencomPackage,
+  bitwardencom: bitwarden_com.bwPackage,
   blake2net: blake2_net.blake2netPackage,
   bloomreachcom: bloomreach_com.bloomreachcomPackage,
   boostorg: boost_org.boostorgPackage,
@@ -22254,14 +20921,14 @@ export const pantry: Pantry = {
   brxken128githubio: brxken128_github_io.brxken128githubioPackage,
   budimanjojogithubio: budimanjojo_github_io.budimanjojogithubioPackage,
   bufbuild: buf_build.bufbuildPackage,
-  buildpacksio: buildpacks_io.buildpacksioPackage,
+  buildpacksio: buildpacks_io.packPackage,
   bunsh: bun_sh.bunPackage,
   bytebasecom: bytebase_com.bytebasecomPackage,
   bytereeforg: bytereef_org.bytereeforgPackage,
   caresorg: c_ares_org.caresorgPackage,
   caddyservercom: caddyserver_com.caddyservercomPackage,
-  cairographicsorg: cairographics_org.cairographicsorgPackage,
-  capstoneengineorg: capstone_engine_org.capstoneengineorgPackage,
+  cairographicsorg: cairographics_org.cairotracePackage,
+  capstoneengineorg: capstone_engine_org.cstoolPackage,
   carapacesh: carapace_sh.carapaceshPackage,
   caskreadthedocsio: cask_readthedocs_io.caskreadthedocsioPackage,
   catborg: catb_org.catborgPackage,
@@ -22289,13 +20956,13 @@ export const pantry: Pantry = {
   clogtoolgithubio: clog_tool_github_io.clogtoolgithubioPackage,
   cloudflarecom: cloudflare_com.cloudflarecomPackage,
   cloudfoundryorg: cloudfoundry_org.cloudfoundryorgPackage,
-  cloudnativepgio: cloudnative_pg_io.cloudnativepgioPackage,
+  cloudnativepgio: cloudnative_pg_io.kubectlcnpgPackage,
   cmakeorg: cmake_org.cmakeorgPackage,
   cmockaorg: cmocka_org.cmockaorgPackage,
   cnqueryio: cnquery_io.cnqueryioPackage,
-  cocoapodsorg: cocoapods_org.cocoapodsorgPackage,
+  cocoapodsorg: cocoapods_org.podPackage,
   cocoapodsorgxcodeproj: cocoapods_org_xcodeproj.cocoapodsorgxcodeprojPackage,
-  cocogittoio: cocogitto_io.cocogittoioPackage,
+  cocogittoio: cocogitto_io.cogPackage,
   codevideolanorg: code_videolan_org.codevideolanorgPackage,
   codercom: coder_com.codercomPackage,
   cointopsh: cointop_sh.cointopshPackage,
@@ -22341,9 +21008,9 @@ export const pantry: Pantry = {
   daytonaio: daytona_io.daytonaioPackage,
   dblabdanvergaracom: dblab_danvergara_com.dblabdanvergaracomPackage,
   debianorg: debian_org.debianorgPackage,
-  deepwisdomai: deepwisdom_ai.deepwisdomaiPackage,
+  deepwisdomai: deepwisdom_ai.metagptPackage,
   denilsonsanombr: denilson_sa_nom_br.denilsonsanombrPackage,
-  denoland: deno_land.denolandPackage,
+  denoland: deno_land.denoPackage,
   depotdev: depot_dev.depotdevPackage,
   destunreachorg: dest_unreach_org.destunreachorgPackage,
   devyorhelnl: dev_yorhel_nl.devyorhelnlPackage,
@@ -22359,7 +21026,7 @@ export const pantry: Pantry = {
   digitaloceancom: digitalocean_com.digitaloceancomPackage,
   direnvnet: direnv_net.direnvnetPackage,
   dkrzde: dkrz_de.dkrzdePackage,
-  dnslookupdog: dns_lookup_dog.dnslookupdogPackage,
+  dnslookupdog: dns_lookup_dog.dogPackage,
   docbookorg: docbook_org.docbookorgPackage,
   dockercom: docker_com.dockercomPackage,
   doctavecom: doctave_com.doctavecomPackage,
@@ -22384,7 +21051,7 @@ export const pantry: Pantry = {
   elfutilsorg: elfutils_org.elfutilsorgPackage,
   elixirlangorg: elixir_lang_org.elixirlangorgPackage,
   elizaosgithubio: elizaOS_github_io.elizaosgithubioPackage,
-  elvsh: elv_sh.elvshPackage,
+  elvsh: elv_sh.elvishPackage,
   encoredev: encore_dev.encoredevPackage,
   endoflifedate: endoflife_date.endoflifedatePackage,
   epsilonprojectsourceforgeio: epsilon_project_sourceforge_io.epsilonprojectsourceforgeioPackage,
@@ -22427,12 +21094,12 @@ export const pantry: Pantry = {
   gaiagisit: gaia_gis_it.gaiagisitPackage,
   gdalorg: gdal_org.gdalorgPackage,
   geoffgreerfm: geoff_greer_fm.geoffgreerfmPackage,
-  getclipboardapp: getclipboard_app.getclipboardappPackage,
-  getcomposerorg: getcomposer_org.getcomposerorgPackage,
+  getclipboardapp: getclipboard_app.cbPackage,
+  getcomposerorg: getcomposer_org.composerPackage,
   getfoundrysh: getfoundry_sh.getfoundryshPackage,
-  getsopsio: getsops_io.getsopsioPackage,
-  getsynthcom: getsynth_com.getsynthcomPackage,
-  getzolaorg: getzola_org.getzolaorgPackage,
+  getsopsio: getsops_io.sopsPackage,
+  getsynthcom: getsynth_com.synthPackage,
+  getzolaorg: getzola_org.zolaPackage,
   geuzorg: geuz_org.geuzorgPackage,
   gflagsgithubio: gflags_github_io.gflagsgithubioPackage,
   ghostgumcomau: ghostgum_com_au.ghostgumcomauPackage,
@@ -22483,9 +21150,9 @@ export const pantry: Pantry = {
   gnupgorg: gnupg_org.gnupgorgPackage,
   gnuplotinfo: gnuplot_info.gnuplotinfoPackage,
   gnutlsorg: gnutls_org.gnutlsorgPackage,
-  godev: go_dev.godevPackage,
+  godev: go_dev.goPackage,
   gouberorg: go_uber_org.gouberorgPackage,
-  gohugoio: gohugo_io.gohugoioPackage,
+  gohugoio: gohugo_io.hugoPackage,
   golangcilintrun: golangci_lint_run.golangcilintrunPackage,
   gomplateca: gomplate_ca.gomplatecaPackage,
   googlecom: google_com.googlecomPackage,
@@ -22517,7 +21184,7 @@ export const pantry: Pantry = {
   hboehminfo: hboehm_info.hboehminfoPackage,
   hdfgrouporg: hdfgroup_org.hdfgrouporgPackage,
   heasarcgsfcnasagov: heasarc_gsfc_nasa_gov.heasarcgsfcnasagovPackage,
-  helixeditorcom: helix_editor_com.helixeditorcomPackage,
+  helixeditorcom: helix_editor_com.hxPackage,
   helmsh: helm_sh.helmshPackage,
   herokucom: heroku_com.herokucomPackage,
   hetznercom: hetzner_com.hetznercomPackage,
@@ -22546,7 +21213,7 @@ export const pantry: Pantry = {
   irohcomputer: iroh_computer.irohcomputerPackage,
   iscorg: isc_org.iscorgPackage,
   iscorgbind9: isc_org_bind9.iscorgbind9Package,
-  istioio: istio_io.istioioPackage,
+  istioio: istio_io.istioctlPackage,
   itstoolorg: itstool_org.itstoolorgPackage,
   ivarchcom: ivarch_com.ivarchcomPackage,
   jbangdev: jbang_dev.jbangdevPackage,
@@ -22554,8 +21221,8 @@ export const pantry: Pantry = {
   jedisct1githubio: jedisct1_github_io.jedisct1githubioPackage,
   jedsoftorg: jedsoft_org.jedsoftorgPackage,
   jemallocnet: jemalloc_net.jemallocnetPackage,
-  jenkinsxio: jenkins_x_io.jenkinsxioPackage,
-  jenkinsio: jenkins_io.jenkinsioPackage,
+  jenkinsxio: jenkins_x_io.jenkinsxPackage,
+  jenkinsio: jenkins_io.jenkinsltsPackage,
   jenvbe: jenv_be.jenvbePackage,
   jetporchcom: jetporch_com.jetporchcomPackage,
   jfrogcom: jfrog_com.jfrogcomPackage,
@@ -22588,12 +21255,12 @@ export const pantry: Pantry = {
   kotlinlangorg: kotlinlang_org.kotlinlangorgPackage,
   koyebcom: koyeb_com.koyebcomPackage,
   kptdev: kpt_dev.kptdevPackage,
-  krewsigsk8sio: krew_sigs_k8s_io.krewsigsk8sioPackage,
+  krewsigsk8sio: krew_sigs_k8s_io.kubectlkrewPackage,
   ktlintgithubio: ktlint_github_io.ktlintgithubioPackage,
   kubebuilderio: kubebuilder_io.kubebuilderioPackage,
   kubecmcloud: kubecm_cloud.kubecmcloudPackage,
   kubectxdev: kubectx_dev.kubectxdevPackage,
-  kubelinterio: kubelinter_io.kubelinterioPackage,
+  kubelinterio: kubelinter_io.kubelinterPackage,
   kubernetesio: kubernetes_io.kubernetesioPackage,
   kubesharkco: kubeshark_co.kubesharkcoPackage,
   ladspaorg: ladspa_org.ladspaorgPackage,
@@ -22611,11 +21278,11 @@ export const pantry: Pantry = {
   libcxxllvmorg: libcxx_llvm_org.libcxxllvmorgPackage,
   libeventorg: libevent_org.libeventorgPackage,
   libexifgithubio: libexif_github_io.libexifgithubioPackage,
-  libexpatgithubio: libexpat_github_io.libexpatgithubioPackage,
+  libexpatgithubio: libexpat_github_io.xmlwfPackage,
   libgdgithubio: libgd_github_io.libgdgithubioPackage,
-  libgeosorg: libgeos_org.libgeosorgPackage,
-  libgit2org: libgit2_org.libgit2orgPackage,
-  libimobiledeviceorg: libimobiledevice_org.libimobiledeviceorgPackage,
+  libgeosorg: libgeos_org.geosconfigPackage,
+  libgit2org: libgit2_org.git2Package,
+  libimobiledeviceorg: libimobiledevice_org.idevicedatePackage,
   libislsourceforgeio: libisl_sourceforge_io.libislsourceforgeioPackage,
   libjpegturboorg: libjpeg_turbo_org.libjpegturboorgPackage,
   liblqrwikidotcom: liblqr_wikidot_com.liblqrwikidotcomPackage,
@@ -22633,9 +21300,9 @@ export const pantry: Pantry = {
   liburcuorg: liburcu_org.liburcuorgPackage,
   libusbinfo: libusb_info.libusbinfoPackage,
   libuvorg: libuv_org.libuvorgPackage,
-  libvipsorg: libvips_org.libvipsorgPackage,
+  libvipsorg: libvips_org.vipsPackage,
   libwebsocketsorg: libwebsockets_org.libwebsocketsorgPackage,
-  libziporg: libzip_org.libziporgPackage,
+  libziporg: libzip_org.zipPackage,
   limavmio: lima_vm_io.limavmioPackage,
   linkerdio: linkerd_io.linkerdioPackage,
   linuxpamorg: linux_pam_org.linuxpamorgPackage,
@@ -22659,16 +21326,16 @@ export const pantry: Pantry = {
   maaslalanicom: maaslalani_com.maaslalanicomPackage,
   macvimorg: macvim_org.macvimorgPackage,
   mailpitaxllentorg: mailpit_axllent_org.mailpitaxllentorgPackage,
-  makotemplatesorg: makotemplates_org.makotemplatesorgPackage,
+  makotemplatesorg: makotemplates_org.makorenderPackage,
   mandbgitlabio: man_db_gitlab_io.mandbgitlabioPackage,
   mandocbsdlv: mandoc_bsd_lv.mandocbsdlvPackage,
   mariadbcom: mariadb_com.mariadbcomPackage,
   markupsafepalletsprojectscom: markupsafe_palletsprojects_com.markupsafepalletsprojectscomPackage,
-  materializecom: materialize_com.materializecomPackage,
-  matiosourceforgeio: matio_sourceforge_io.matiosourceforgeioPackage,
+  materializecom: materialize_com.mzPackage,
+  matiosourceforgeio: matio_sourceforge_io.libmatioPackage,
   maturinrs: maturin_rs.maturinrsPackage,
-  mavenapacheorg: maven_apache_org.mavenapacheorgPackage,
-  mcmcjagssourceforgeio: mcmc_jags_sourceforge_io.mcmcjagssourceforgeioPackage,
+  mavenapacheorg: maven_apache_org.mvnPackage,
+  mcmcjagssourceforgeio: mcmc_jags_sourceforge_io.jagsPackage,
   mercurerocks: mercure_rocks.mercurerocksPackage,
   mercurialscmorg: mercurial_scm_org.mercurialscmorgPackage,
   mergestatcom: mergestat_com.mergestatcomPackage,
@@ -22676,11 +21343,11 @@ export const pantry: Pantry = {
   mesonbuildcom: mesonbuild_com.mesonbuildcomPackage,
   microeditorgithubio: micro_editor_github_io.microeditorgithubioPackage,
   microbreworg: microbrew_org.microbreworgPackage,
-  microcksio: microcks_io.microcksioPackage,
+  microcksio: microcks_io.microckscliPackage,
   microsoftcom: microsoft_com.microsoftcomPackage,
   microsoftcomcodecli: microsoft_com_code_cli.microsoftcomcodecliPackage,
   microsoftcommarkitdown: microsoft_com_markitdown.microsoftcommarkitdownPackage,
-  midnightcommanderorg: midnight_commander_org.midnightcommanderorgPackage,
+  midnightcommanderorg: midnight_commander_org.midnightcommanderPackage,
   minio: min_io.minioPackage,
   misejdxdev: mise_jdx_dev.misejdxdevPackage,
   mitmproxyorg: mitmproxy_org.mitmproxyorgPackage,
@@ -22709,7 +21376,7 @@ export const pantry: Pantry = {
   mysqlcom: mysql_com.mysqlcomPackage,
   nanoeditororg: nano_editor_org.nanoeditororgPackage,
   nasmus: nasm_us.nasmusPackage,
-  neovimio: neovim_io.neovimioPackage,
+  neovimio: neovim_io.nvimPackage,
   netflixcom: netflix_com.netflixcomPackage,
   netliborg: netlib_org.netliborgPackage,
   netpbmsourceforgenet: netpbm_sourceforge_net.netpbmsourceforgenetPackage,
@@ -22723,7 +21390,6 @@ export const pantry: Pantry = {
   nixpackscom: nixpacks_com.nixpackscomPackage,
   nlnetlabsnl: nlnetlabs_nl.nlnetlabsnlPackage,
   nmaporg: nmap_org.nmaporgPackage,
-  node: node.nodePackage,
   nodejsorg: nodejs_org.nodePackage,
   nomadprojectio: nomadproject_io.nomadprojectioPackage,
   nongnuorg: nongnu_org.nongnuorgPackage,
@@ -22731,7 +21397,7 @@ export const pantry: Pantry = {
   npmjscom: npmjs_com.npmjscomPackage,
   ntporg: ntp_org.ntporgPackage,
   numbatdev: numbat_dev.numbatdevPackage,
-  numpyorg: numpy_org.numpyorgPackage,
+  numpyorg: numpy_org.f2pyPackage,
   nushellsh: nushell_sh.nushellshPackage,
   nxdev: nx_dev.nxdevPackage,
   oauth2proxygithubio: oauth2_proxy_github_io.oauth2proxygithubioPackage,
@@ -22751,22 +21417,22 @@ export const pantry: Pantry = {
   opendaporg: opendap_org.opendaporgPackage,
   opendevorg: opendev_org.opendevorgPackage,
   openexrcom: openexr_com.openexrcomPackage,
-  openinterpretercom: openinterpreter_com.openinterpretercomPackage,
+  openinterpretercom: openinterpreter_com.openinterpreterPackage,
   openjdkorg: openjdk_org.openjdkorgPackage,
   openjpegorg: openjpeg_org.openjpegorgPackage,
   openldaporg: openldap_org.openldaporgPackage,
   openldaporgliblmdb: openldap_org_liblmdb.openldaporgliblmdbPackage,
   openmpllvmorg: openmp_llvm_org.openmpllvmorgPackage,
   openpmixgithubio: openpmix_github_io.openpmixgithubioPackage,
-  openpolicyagentorg: openpolicyagent_org.openpolicyagentorgPackage,
+  openpolicyagentorg: openpolicyagent_org.opaPackage,
   openprintinggithubio: openprinting_github_io.openprintinggithubioPackage,
   openrestyorg: openresty_org.openrestyorgPackage,
   opensearchorg: opensearch_org.opensearchorgPackage,
-  openshiftcom: openshift_com.openshiftcomPackage,
+  openshiftcom: openshift_com.ocPackage,
   openslideorg: openslide_org.openslideorgPackage,
   opensshcom: openssh_com.opensshcomPackage,
   opensslorg: openssl_org.opensslorgPackage,
-  opentofuorg: opentofu_org.opentofuorgPackage,
+  opentofuorg: opentofu_org.tofuPackage,
   openvpnnet: openvpn_net.openvpnnetPackage,
   operatorframeworkio: operatorframework_io.operatorframeworkioPackage,
   opuscodecorg: opus_codec_org.opuscodecorgPackage,
@@ -22786,9 +21452,9 @@ export const pantry: Pantry = {
   pdmfmingdev: pdm_fming_dev.pdmfmingdevPackage,
   peopleengrtamuedu: people_engr_tamu_edu.peopleengrtamueduPackage,
   peopleredhatcom: people_redhat_com.peopleredhatcomPackage,
-  perlorg: perl_org.perlorgPackage,
+  perlorg: perl_org.perlPackage,
   permitio: permit_io.permitioPackage,
-  phpnet: php_net.phpnetPackage,
+  phpnet: php_net.phpPackage,
   phpmyadminnet: phpmyadmin_net.phpmyadminnetPackage,
   pimalayaorg: pimalaya_org.pimalayaorgPackage,
   pinnipeddev: pinniped_dev.pinnipeddevPackage,
@@ -22799,7 +21465,7 @@ export const pantry: Pantry = {
   pkgxshdev: pkgx_sh_dev.pkgxshdevPackage,
   pkgxshpkgm: pkgx_sh_pkgm.pkgxshpkgmPackage,
   pkllangorg: pkl_lang_org.pkllangorgPackage,
-  planetscalecom: planetscale_com.planetscalecomPackage,
+  planetscalecom: planetscale_com.pscalePackage,
   plantumlcom: plantuml_com.plantumlcomPackage,
   plasmasturmorg: plasmasturm_org.plasmasturmorgPackage,
   plocatesessenet: plocate_sesse_net.plocatesessenetPackage,
@@ -22816,17 +21482,17 @@ export const pantry: Pantry = {
   postgrestorg: postgrest_org.postgrestorgPackage,
   practicalschemenet: practical_scheme_net.practicalschemenetPackage,
   precommitcom: pre_commit_com.precommitcomPackage,
-  prefixdev: prefix_dev.prefixdevPackage,
+  prefixdev: prefix_dev.pixiPackage,
   presslygithubio: pressly_github_io.presslygithubioPackage,
   prettierio: prettier_io.prettierioPackage,
   printfngithubio: printfn_github_io.printfngithubioPackage,
   priverdev: priver_dev.priverdevPackage,
   projorg: proj_org.projorgPackage,
-  projectcopaceticgithubio: project_copacetic_github_io.projectcopaceticgithubioPackage,
+  projectcopaceticgithubio: project_copacetic_github_io.copaPackage,
   projectdiscoveryio: projectdiscovery_io.projectdiscoveryioPackage,
   projectdiscoveryionuclei: projectdiscovery_io_nuclei.projectdiscoveryionucleiPackage,
   projenio: projen_io.projenioPackage,
-  protobufdev: protobuf_dev.protobufdevPackage,
+  protobufdev: protobuf_dev.protocolbuffersPackage,
   prqllangorg: prql_lang_org.prqllangorgPackage,
   psycopgorg: psycopg_org.psycopgorgPackage,
   publichronopikde: public_hronopik_de.publichronopikdePackage,
@@ -22834,14 +21500,13 @@ export const pantry: Pantry = {
   pulumiio: pulumi_io.pulumiioPackage,
   pwgensourceforgeio: pwgen_sourceforge_io.pwgensourceforgeioPackage,
   pwmtorg: pwmt_org.pwmtorgPackage,
-  pygmentsorg: pygments_org.pygmentsorgPackage,
-  pyinvokeorg: pyinvoke_org.pyinvokeorgPackage,
+  pygmentsorg: pygments_org.pygmentizePackage,
+  pyinvokeorg: pyinvoke_org.invokePackage,
   pypagithubio: pypa_github_io.pypagithubioPackage,
   pypaio: pypa_io.pypaioPackage,
   pytestorg: pytest_org.pytestorgPackage,
-  python: python.pythonPackage,
   pythonpilloworg: python_pillow_org.pythonpilloworgPackage,
-  pythonpoetryorg: python_poetry_org.pythonpoetryorgPackage,
+  pythonpoetryorg: python_poetry_org.poetryPackage,
   pythonorg: python_org.pythonPackage,
   pyyamlorg: pyyaml_org.pyyamlorgPackage,
   qemuorg: qemu_org.qemuorgPackage,
@@ -22877,23 +21542,23 @@ export const pantry: Pantry = {
   rtmpdumpmplayerhqhu: rtmpdump_mplayerhq_hu.rtmpdumpmplayerhqhuPackage,
   rtomaykogithubio: rtomayko_github_io.rtomaykogithubioPackage,
   rubocoporg: rubocop_org.rubocoporgPackage,
-  rubylangorg: ruby_lang_org.rubylangorgPackage,
+  rubylangorg: ruby_lang_org.rubyPackage,
   rubygemsorg: rubygems_org.rubygemsorgPackage,
   ruciocernch: rucio_cern_ch.ruciocernchPackage,
-  runatlantisio: runatlantis_io.runatlantisioPackage,
+  runatlantisio: runatlantis_io.atlantisPackage,
   rustlanggithubio: rust_lang_github_io.rustlanggithubioPackage,
-  rustlangorg: rust_lang_org.rustlangorgPackage,
+  rustlangorg: rust_lang_org.rustPackage,
   rustlangorgrustbindgen: rust_lang_org_rust_bindgen.rustlangorgrustbindgenPackage,
   rustscriptorg: rust_script_org.rustscriptorgPackage,
   ryeastralsh: rye_astral_sh.ryeastralshPackage,
-  s3toolsorg: s3tools_org.s3toolsorgPackage,
+  s3toolsorg: s3tools_org.s3cmdPackage,
   saerasoftcom: saerasoft_com.saerasoftcomPackage,
   sagiegurarigithubio: sagiegurari_github_io.sagiegurarigithubioPackage,
   sasslangcom: sass_lang_com.sasslangcomPackage,
   savannahnongnuorg: savannah_nongnu_org.savannahnongnuorgPackage,
   scalalangorg: scala_lang_org.scalalangorgPackage,
-  scalasbtorg: scala_sbt_org.scalasbtorgPackage,
-  scalewaycom: scaleway_com.scalewaycomPackage,
+  scalasbtorg: scala_sbt_org.sbtPackage,
+  scalewaycom: scaleway_com.scwPackage,
   schollzcom: schollz_com.schollzcomPackage,
   sconsorg: scons_org.sconsorgPackage,
   scryerpl: scryer_pl.scryerplPackage,
@@ -22921,11 +21586,11 @@ export const pantry: Pantry = {
   soxrsourceforgenet: soxr_sourceforge_net.soxrsourceforgenetPackage,
   spacetimedbcom: spacetimedb_com.spacetimedbcomPackage,
   spawnlink: spawn_link.spawnlinkPackage,
-  speexorg: speex_org.speexorgPackage,
+  speexorg: speex_org.speexdecPackage,
   sphinxdocorg: sphinx_doc_org.sphinxdocorgPackage,
   sqlcdev: sqlc_dev.sqlcdevPackage,
   sqlfluffcom: sqlfluff_com.sqlfluffcomPackage,
-  sqliteorg: sqlite_org.sqliteorgPackage,
+  sqliteorg: sqlite_org.sqlite3Package,
   squawkhqcom: squawkhq_com.squawkhqcomPackage,
   srtallianceorg: srtalliance_org.srtallianceorgPackage,
   sshxio: sshx_io.sshxioPackage,
@@ -22945,17 +21610,17 @@ export const pantry: Pantry = {
   sympyorg: sympy_org.sympyorgPackage,
   syncthingnet: syncthing_net.syncthingnetPackage,
   systemdio: systemd_io.systemdioPackage,
-  tagliborg: taglib_org.tagliborgPackage,
+  tagliborg: taglib_org.taglibconfigPackage,
   tailcallrun: tailcall_run.tailcallrunPackage,
   tailwindcsscom: tailwindcss_com.tailwindcsscomPackage,
   taku910githubio: taku910_github_io.taku910githubioPackage,
-  talosdev: talos_dev.talosdevPackage,
+  talosdev: talos_dev.talosctlPackage,
   taplotamasfedev: taplo_tamasfe_dev.taplotamasfedevPackage,
   tartrun: tart_run.tartrunPackage,
   taskfiledev: taskfile_dev.taskfiledevPackage,
   tcllangorg: tcl_lang_org.tcllangorgPackage,
   tcltk: tcl_tk.tcltkPackage,
-  tcpdumporg: tcpdump_org.tcpdumporgPackage,
+  tcpdumporg: tcpdump_org.pcapconfigPackage,
   tcshorg: tcsh_org.tcshorgPackage,
   teaxyz: tea_xyz.teaxyzPackage,
   tectonictypesettinggithubio: tectonic_typesetting_github_io.tectonictypesettinggithubioPackage,
@@ -22970,12 +21635,12 @@ export const pantry: Pantry = {
   theoraorg: theora_org.theoraorgPackage,
   thoughtworksgithubio: thoughtworks_github_io.thoughtworksgithubioPackage,
   thrysoeedk: thrysoee_dk.thrysoeedkPackage,
-  tidbytcom: tidbyt_com.tidbytcomPackage,
+  tidbytcom: tidbyt_com.pixletPackage,
   tiltdev: tilt_dev.tiltdevPackage,
   tinybirdco: tinybird_co.tinybirdcoPackage,
   tinygoorg: tinygo_org.tinygoorgPackage,
   tldrsh: tldr_sh.tldrshPackage,
-  tlrdev: tlr_dev.tlrdevPackage,
+  tlrdev: tlr_dev.tellerPackage,
   tmateio: tmate_io.tmateioPackage,
   toxwiki: tox_wiki.toxwikiPackage,
   traefikio: traefik_io.traefikioPackage,
@@ -22986,7 +21651,7 @@ export const pantry: Pantry = {
   tuistio: tuist_io.tuistioPackage,
   tukaaniorg: tukaani_org.tukaaniorgPackage,
   tursotech: turso_tech.tursotechPackage,
-  typescriptlangorg: typescriptlang_org.typescriptlangorgPackage,
+  typescriptlangorg: typescriptlang_org.tscPackage,
   typstapp: typst_app.typstappPackage,
   unboundnet: unbound_net.unboundnetPackage,
   undefined: undefinedpkg.undefinedpkgPackage,
@@ -23000,7 +21665,7 @@ export const pantry: Pantry = {
   valkeyio: valkey_io.valkeyioPackage,
   vamppluginsorg: vamp_plugins_org.vamppluginsorgPackage,
   vannaai: vanna_ai.vannaaiPackage,
-  vapoursynthcom: vapoursynth_com.vapoursynthcomPackage,
+  vapoursynthcom: vapoursynth_com.vspipePackage,
   vaultprojectio: vaultproject_io.vaultprojectioPackage,
   vclustercom: vcluster_com.vclustercomPackage,
   vektragithubio: vektra_github_io.vektragithubioPackage,
@@ -23033,17 +21698,17 @@ export const pantry: Pantry = {
   wixcom: wix_com.wixcomPackage,
   wkentarogithubio: wkentaro_github_io.wkentarogithubioPackage,
   wpewebkitorg: wpewebkit_org.wpewebkitorgPackage,
-  wundergraphcom: wundergraph_com.wundergraphcomPackage,
+  wundergraphcom: wundergraph_com.wunderctlPackage,
   wxwidgetsorg: wxwidgets_org.wxwidgetsorgPackage,
   xorg: x_org.xorgPackage,
   xorgxscrnsaver: x_org_xscrnsaver.xorgxscrnsaverPackage,
   xcfiledev: xcfile_dev.xcfiledevPackage,
   xercesapacheorg: xerces_apache_org.xercesapacheorgPackage,
   xiphorg: xiph_org.xiphorgPackage,
-  xkbcommonorg: xkbcommon_org.xkbcommonorgPackage,
+  xkbcommonorg: xkbcommon_org.xkbcliPackage,
   xplrdev: xplr_dev.xplrdevPackage,
   xpraorg: xpra_org.xpraorgPackage,
-  xtlsgithubio: xtls_github_io.xtlsgithubioPackage,
+  xtlsgithubio: xtls_github_io.xraycorePackage,
   xvidcom: xvid_com.xvidcomPackage,
   yadmio: yadm_io.yadmioPackage,
   yarnpkgcom: yarnpkg_com.yarnpkgcomPackage,
@@ -23060,11 +21725,11 @@ export const pantry: Pantry = {
   "0agecreate2crunch": github_com_0age_create2crunch.githubcom0agecreate2crunchPackage,
   "1password cli": developer_1password_com_1password_cli.developer1passwordcom1passwordcliPackage,
   "1passwordcli": developer_1password_com_1password_cli.developer1passwordcom1passwordcliPackage,
-  ack: beyondgrep_com.beyondgrepcomPackage,
+  ack: beyondgrep_com.ackPackage,
   aichat: crates_io_aichat.cratesioaichatPackage,
-  aria2c: aria2_github_io.aria2githubioPackage,
-  atlantis: runatlantis_io.runatlantisioPackage,
-  autogpt: agpt_co.agptcoPackage,
+  aria2c: aria2_github_io.aria2cPackage,
+  atlantis: runatlantis_io.atlantisPackage,
+  autogpt: agpt_co.autogptPackage,
   awscli: aws_amazon_com_cli.awsamazoncomcliPackage,
   bacon: dystroy_org_bacon.dystroyorgbaconPackage,
   bake: crates_io_bake_rs.cratesiobakersPackage,
@@ -23074,177 +21739,179 @@ export const pantry: Pantry = {
   blacktoplporg: github_com_blacktop_lporg.githubcomblacktoplporgPackage,
   blynnnex: github_com_blynn_nex.githubcomblynnnexPackage,
   bun: bun_sh.bunPackage,
-  bw: bitwarden_com.bitwardencomPackage,
-  cairotrace: cairographics_org.cairographicsorgPackage,
+  bw: bitwarden_com.bwPackage,
+  cairotrace: cairographics_org.cairotracePackage,
   cargotarpaulin: crates_io_cargo_tarpaulin.cratesiocargotarpaulinPackage,
-  cb: getclipboard_app.getclipboardappPackage,
+  cb: getclipboard_app.cbPackage,
   cbindgen: mozilla_org_cbindgen.mozillaorgcbindgenPackage,
   cephadm: ceph_com_cephadm.cephcomcephadmPackage,
   cli: aws_amazon_com_cli.awsamazoncomcliPackage,
   codecli: microsoft_com_code_cli.microsoftcomcodecliPackage,
-  cog: cocogitto_io.cocogittoioPackage,
-  composer: getcomposer_org.getcomposerorgPackage,
-  copa: project_copacetic_github_io.projectcopaceticgithubioPackage,
+  cog: cocogitto_io.cogPackage,
+  composer: getcomposer_org.composerPackage,
+  copa: project_copacetic_github_io.copaPackage,
   create2crunch: github_com_0age_create2crunch.githubcom0agecreate2crunchPackage,
-  cstool: capstone_engine_org.capstoneengineorgPackage,
+  cstool: capstone_engine_org.cstoolPackage,
   cyfrinsafetxhashesutil: github_com_Cyfrin_safe_tx_hashes_util.githubcomcyfrinsafetxhashesutilPackage,
-  deno: deno_land.denolandPackage,
+  deno: deno_land.denoPackage,
   dev: pkgx_sh_dev.pkgxshdevPackage,
   diniboy1123usque: github_com_Diniboy1123_usque.githubcomdiniboy1123usquePackage,
-  dog: dns_lookup_dog.dnslookupdogPackage,
+  dog: dns_lookup_dog.dogPackage,
   ducker: crates_io_ducker.cratesioduckerPackage,
   elizaos: elizaOS_github_io.elizaosgithubioPackage,
-  elvish: elv_sh.elvshPackage,
+  elvish: elv_sh.elvishPackage,
   envchain: github_com_sorah_envchain.githubcomsorahenvchainPackage,
   eol: endoflife_date.endoflifedatePackage,
   exr: openexr_com.openexrcomPackage,
-  f2py: numpy_org.numpyorgPackage,
+  f2py: numpy_org.f2pyPackage,
   fastfetchclifastfetch: github_com_fastfetch_cli_fastfetch.githubcomfastfetchclifastfetchPackage,
   fiatjafnak: github_com_fiatjaf_nak.githubcomfiatjafnakPackage,
   flamegraph: crates_io_flamegraph.cratesioflamegraphPackage,
-  geosconfig: libgeos_org.libgeosorgPackage,
+  geosconfig: libgeos_org.geosconfigPackage,
   gh: cli_github_com.cligithubcomPackage,
-  git2: libgit2_org.libgit2orgPackage,
+  git2: libgit2_org.git2Package,
   gitcredentialmanager: github_com_git_ecosystem_git_credential_manager.githubcomgitecosystemgitcredentialmanagerPackage,
-  gitcrypt: agwa_name_git_crypt.agwanamegitcryptPackage,
+  gitcrypt: agwa_name_git_crypt.gitcryptPackage,
   gitecosystemgitcredentialmanager: github_com_git_ecosystem_git_credential_manager.githubcomgitecosystemgitcredentialmanagerPackage,
   glauthglauth: github_com_glauth_glauth.githubcomglauthglauthPackage,
   gm: graphicsmagick_org.graphicsmagickorgPackage,
-  go: go_dev.godevPackage,
+  go: go_dev.goPackage,
   gofumpt: mvdan_cc_gofumpt.mvdanccgofumptPackage,
   goyacc: modernc_org_goyacc.moderncorggoyaccPackage,
   gr2fonttest: graphite_sil_org.graphitesilorgPackage,
   huggingfacecli: huggingface_co.huggingfacecoPackage,
-  hugo: gohugo_io.gohugoioPackage,
-  hx: helix_editor_com.helixeditorcomPackage,
-  idevicedate: libimobiledevice_org.libimobiledeviceorgPackage,
+  hugo: gohugo_io.hugoPackage,
+  hx: helix_editor_com.hxPackage,
+  idevicedate: libimobiledevice_org.idevicedatePackage,
   igorshubovychmarkdownlintcli: github_com_igorshubovych_markdownlint_cli.githubcomigorshubovychmarkdownlintcliPackage,
-  invoke: pyinvoke_org.pyinvokeorgPackage,
-  istioctl: istio_io.istioioPackage,
-  jags: mcmc_jags_sourceforge_io.mcmcjagssourceforgeioPackage,
+  invoke: pyinvoke_org.invokePackage,
+  istioctl: istio_io.istioctlPackage,
+  jags: mcmc_jags_sourceforge_io.jagsPackage,
   jarunnnn: github_com_jarun_nnn.githubcomjarunnnnPackage,
-  "jenkins x": jenkins_x_io.jenkinsxioPackage,
-  jenkinslts: jenkins_io.jenkinsioPackage,
+  "jenkins x": jenkins_x_io.jenkinsxPackage,
+  jenkinslts: jenkins_io.jenkinsltsPackage,
   koekeishiyaskhd: github_com_koekeishiya_skhd.githubcomkoekeishiyaskhdPackage,
   ksops: viaduct_ai_ksops.viaductaiksopsPackage,
-  kubectlcnpg: cloudnative_pg_io.cloudnativepgioPackage,
-  kubectlkrew: krew_sigs_k8s_io.krewsigsk8sioPackage,
-  kubelinter: kubelinter_io.kubelinterioPackage,
+  kubectlcnpg: cloudnative_pg_io.kubectlcnpgPackage,
+  kubectlkrew: krew_sigs_k8s_io.kubectlkrewPackage,
+  kubelinter: kubelinter_io.kubelinterPackage,
   ldap: openldap_org.openldaporgPackage,
   libcap: kernel_org_libcap.kernelorglibcapPackage,
   libdrm: dri_freedesktop_org.drifreedesktoporgPackage,
   liblmdb: openldap_org_liblmdb.openldaporgliblmdbPackage,
-  libmatio: matio_sourceforge_io.matiosourceforgeioPackage,
+  libmatio: matio_sourceforge_io.libmatioPackage,
   libomp: openmp_llvm_org.openmpllvmorgPackage,
   licenseelicensed: github_com_licensee_licensed.githubcomlicenseelicensedPackage,
   lporg: github_com_blacktop_lporg.githubcomblacktoplporgPackage,
   lucianosrpryeuv: github_com_lucianosrp_rye_uv.githubcomlucianosrpryeuvPackage,
   lynx: invisible_island_net_lynx.invisibleislandnetlynxPackage,
-  makorender: makotemplates_org.makotemplatesorgPackage,
+  makorender: makotemplates_org.makorenderPackage,
   markdownlint: github_com_igorshubovych_markdownlint_cli.githubcomigorshubovychmarkdownlintcliPackage,
   markitdown: microsoft_com_markitdown.microsoftcommarkitdownPackage,
   mas: github_com_mas_cli_mas.githubcommasclimasPackage,
   masclimas: github_com_mas_cli_mas.githubcommasclimasPackage,
-  metagpt: deepwisdom_ai.deepwisdomaiPackage,
-  microckscli: microcks_io.microcksioPackage,
-  "midnight commander": midnight_commander_org.midnightcommanderorgPackage,
+  metagpt: deepwisdom_ai.metagptPackage,
+  microckscli: microcks_io.microckscliPackage,
+  "midnight commander": midnight_commander_org.midnightcommanderPackage,
   milescranmerrip2: github_com_MilesCranmer_rip2.githubcommilescranmerrip2Package,
   minseokohtomlcli: github_com_MinseokOh_toml_cli.githubcomminseokohtomlcliPackage,
-  mvn: maven_apache_org.mavenapacheorgPackage,
+  mvn: maven_apache_org.mvnPackage,
   mycreepypakku: github_com_mycreepy_pakku.githubcommycreepypakkuPackage,
-  mz: materialize_com.materializecomPackage,
+  mz: materialize_com.mzPackage,
   nak: github_com_fiatjaf_nak.githubcomfiatjafnakPackage,
   nex: github_com_blynn_nex.githubcomblynnnexPackage,
-  ng: angular_dev.angulardevPackage,
+  ng: angular_dev.ngPackage,
   nnn: github_com_jarun_nnn.githubcomjarunnnnPackage,
+  node: nodejs_org.nodePackage,
   nuclei: projectdiscovery_io_nuclei.projectdiscoveryionucleiPackage,
-  nvim: neovim_io.neovimioPackage,
-  oc: openshift_com.openshiftcomPackage,
+  nvim: neovim_io.nvimPackage,
+  oc: openshift_com.ocPackage,
   ohmyposh: ohmyposh_dev.ohmyposhdevPackage,
-  opa: openpolicyagent_org.openpolicyagentorgPackage,
-  openinterpreter: openinterpreter_com.openinterpretercomPackage,
+  opa: openpolicyagent_org.opaPackage,
+  openinterpreter: openinterpreter_com.openinterpreterPackage,
   opj: openjpeg_org.openjpegorgPackage,
   ox: crates_io_ox.cratesiooxPackage,
-  pack: buildpacks_io.buildpacksioPackage,
+  pack: buildpacks_io.packPackage,
   pakku: github_com_mycreepy_pakku.githubcommycreepypakkuPackage,
   par2: github_com_Parchive_par2cmdline.githubcomparchivepar2cmdlinePackage,
   parchivepar2cmdline: github_com_Parchive_par2cmdline.githubcomparchivepar2cmdlinePackage,
-  pcapconfig: tcpdump_org.tcpdumporgPackage,
+  pcapconfig: tcpdump_org.pcapconfigPackage,
   pcsclite: pcsclite_apdu_fr.pcscliteapdufrPackage,
   peaks5cmd: github_com_peak_s5cmd.githubcompeaks5cmdPackage,
   periphery: github_com_peripheryapp_periphery.githubcomperipheryappperipheryPackage,
   peripheryappperiphery: github_com_peripheryapp_periphery.githubcomperipheryappperipheryPackage,
-  perl: perl_org.perlorgPackage,
-  php: php_net.phpnetPackage,
+  perl: perl_org.perlPackage,
+  php: php_net.phpPackage,
   pik: crates_io_pik.cratesiopikPackage,
-  pixi: prefix_dev.prefixdevPackage,
-  pixlet: tidbyt_com.tidbytcomPackage,
+  pixi: prefix_dev.pixiPackage,
+  pixlet: tidbyt_com.pixletPackage,
   pkgm: pkgx_sh_pkgm.pkgxshpkgmPackage,
   pocket: pokt_network.poktnetworkPackage,
-  pod: cocoapods_org.cocoapodsorgPackage,
-  poetry: python_poetry_org.pythonpoetryorgPackage,
-  "protocol buffers": protobuf_dev.protobufdevPackage,
-  pscale: planetscale_com.planetscalecomPackage,
-  pygmentize: pygments_org.pygmentsorgPackage,
+  pod: cocoapods_org.podPackage,
+  poetry: python_poetry_org.poetryPackage,
+  "protocol buffers": protobuf_dev.protocolbuffersPackage,
+  pscale: planetscale_com.pscalePackage,
+  pygmentize: pygments_org.pygmentizePackage,
+  python: python_org.pythonPackage,
   qsv: crates_io_qsv.cratesioqsvPackage,
   remote_cmds: apple_com_remote_cmds.applecomremote_cmdsPackage,
   rga: crates_io_ripgrep_all.cratesioripgrepallPackage,
   rip2: github_com_MilesCranmer_rip2.githubcommilescranmerrip2Package,
   ripgrepall: crates_io_ripgrep_all.cratesioripgrepallPackage,
-  ruby: ruby_lang_org.rubylangorgPackage,
+  ruby: ruby_lang_org.rubyPackage,
   rucola: crates_io_rucola_notes.cratesiorucolanotesPackage,
   rucolanotes: crates_io_rucola_notes.cratesiorucolanotesPackage,
   ruff: astral_sh_ruff.astralshruffPackage,
-  rust: rust_lang_org.rustlangorgPackage,
+  rust: rust_lang_org.rustPackage,
   rustbindgen: rust_lang_org_rust_bindgen.rustlangorgrustbindgenPackage,
   ryeuv: github_com_lucianosrp_rye_uv.githubcomlucianosrpryeuvPackage,
-  s3cmd: s3tools_org.s3toolsorgPackage,
+  s3cmd: s3tools_org.s3cmdPackage,
   s5cmd: github_com_peak_s5cmd.githubcompeaks5cmdPackage,
   safe_hashes: github_com_Cyfrin_safe_tx_hashes_util.githubcomcyfrinsafetxhashesutilPackage,
   sam: aws_amazon_com_sam.awsamazoncomsamPackage,
   samply: crates_io_samply.cratesiosamplyPackage,
-  sbt: scala_sbt_org.scalasbtorgPackage,
+  sbt: scala_sbt_org.sbtPackage,
   "scryer prolog": scryer_pl.scryerplPackage,
-  scw: scaleway_com.scalewaycomPackage,
+  scw: scaleway_com.scwPackage,
   sdkmaninitsh: sdkman_io.sdkmanioPackage,
   sentrycli: sentry_io.sentryioPackage,
   sfcgalconfig: sfcgal_org.sfcgalorgPackage,
   shakaprojectshakapackager: github_com_shaka_project_shaka_packager.githubcomshakaprojectshakapackagerPackage,
   skhd: github_com_koekeishiya_skhd.githubcomkoekeishiyaskhdPackage,
-  sops: getsops_io.getsopsioPackage,
+  sops: getsops_io.sopsPackage,
   sorahenvchain: github_com_sorah_envchain.githubcomsorahenvchainPackage,
-  speexdec: speex_org.speexorgPackage,
+  speexdec: speex_org.speexdecPackage,
   spencerkimballstargazers: github_com_spencerkimball_stargazers.githubcomspencerkimballstargazersPackage,
-  sqlite3: sqlite_org.sqliteorgPackage,
+  sqlite3: sqlite_org.sqlite3Package,
   stargazers: github_com_spencerkimball_stargazers.githubcomspencerkimballstargazersPackage,
   starpls: github_com_withered_magic_starpls.githubcomwitheredmagicstarplsPackage,
-  synth: getsynth_com.getsynthcomPackage,
-  taglibconfig: taglib_org.tagliborgPackage,
-  talosctl: talos_dev.talosdevPackage,
+  synth: getsynth_com.synthPackage,
+  taglibconfig: taglib_org.taglibconfigPackage,
+  talosctl: talos_dev.talosctlPackage,
   tb: tinybird_co.tinybirdcoPackage,
-  teller: tlr_dev.tlrdevPackage,
+  teller: tlr_dev.tellerPackage,
   telnet: apple_com_remote_cmds.applecomremote_cmdsPackage,
   tidy: html_tidy_org.htmltidyorgPackage,
-  tofu: opentofu_org.opentofuorgPackage,
+  tofu: opentofu_org.tofuPackage,
   tomlcli: github_com_MinseokOh_toml_cli.githubcomminseokohtomlcliPackage,
-  tsc: typescriptlang_org.typescriptlangorgPackage,
+  tsc: typescriptlang_org.tscPackage,
   ty: astral_sh_ty.astralshtyPackage,
   ucl: oberhumer_com_ucl.oberhumercomuclPackage,
   unrar: rarlab_com.rarlabcomPackage,
   usque: github_com_Diniboy1123_usque.githubcomdiniboy1123usquePackage,
   uv: astral_sh_uv.astralshuvPackage,
-  vips: libvips_org.libvipsorgPackage,
+  vips: libvips_org.vipsPackage,
   "vscode cli": microsoft_com_code_cli.microsoftcomcodecliPackage,
-  vspipe: vapoursynth_com.vapoursynthcomPackage,
+  vspipe: vapoursynth_com.vspipePackage,
   witheredmagicstarpls: github_com_withered_magic_starpls.githubcomwitheredmagicstarplsPackage,
-  wunderctl: wundergraph_com.wundergraphcomPackage,
+  wunderctl: wundergraph_com.wunderctlPackage,
   xcodeproj: cocoapods_org_xcodeproj.cocoapodsorgxcodeprojPackage,
-  xkbcli: xkbcommon_org.xkbcommonorgPackage,
-  xmlwf: libexpat_github_io.libexpatgithubioPackage,
-  xraycore: xtls_github_io.xtlsgithubioPackage,
+  xkbcli: xkbcommon_org.xkbcliPackage,
+  xmlwf: libexpat_github_io.xmlwfPackage,
+  xraycore: xtls_github_io.xraycorePackage,
   xscrnsaver: x_org_xscrnsaver.xorgxscrnsaverPackage,
-  zip: libzip_org.libziporgPackage,
-  zola: getzola_org.getzolaorgPackage,
+  zip: libzip_org.zipPackage,
+  zola: getzola_org.zolaPackage,
 }
 
 export const packages: Packages = pantry

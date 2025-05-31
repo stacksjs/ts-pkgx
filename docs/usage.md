@@ -118,25 +118,67 @@ console.log(nodePackage.domain) // 'nodejs.org'
 
 ### Understanding Package Variable Names
 
-Package variable names follow specific conventions to ensure JavaScript/TypeScript compatibility:
+ts-pkgx uses intelligent alias-based naming for better developer experience:
 
-1. Dots are removed from domain names:
+1. **Packages with aliases use the primary alias for naming:**
    ```typescript
-   // For domain 'bun.sh'
-   import { bunshPackage } from 'ts-pkgx'
+   import {
+     bunPackage, // For bun.sh (alias: 'bun') - NOT bunshPackage
+     nodePackage, // For nodejs.org (alias: 'node') - NOT nodejsorgPackage
+     pythonPackage // For python.org (alias: 'python') - NOT pythonorgPackage
+   } from 'ts-pkgx'
    ```
 
-2. Hyphens are removed from variable names (since hyphens aren't valid in JavaScript identifiers):
+2. **Packages without aliases use domain-based naming:**
    ```typescript
-   // For domain 'ast-grep.github.io'
-   import { astgrepgithubioPackage } from 'ts-pkgx'
+   import {
+     astgrepgithubioPackage, // For ast-grep.github.io (no alias)
+     examplecomPackage // For example.com (no alias)
+   } from 'ts-pkgx'
    ```
 
-3. Nested paths are concatenated:
+3. **Nested paths are concatenated:**
    ```typescript
-   // For path 'agwa.name/git-crypt'
-   import { agwanamegitcryptPackage } from 'ts-pkgx'
+   import { agwanamegitcryptPackage } from 'ts-pkgx' // For 'agwa.name/git-crypt'
    ```
+
+### Enhanced TypeScript Intellisense
+
+All generated packages include comprehensive JSDoc documentation:
+
+```typescript
+import { pantry } from 'ts-pkgx'
+
+// Hovering over pantry.bun shows:
+// - Package description
+// - Programs provided
+// - Installation command
+// - Links to documentation
+
+// Hovering over pantry.bun.versions shows:
+// - "From newest version to oldest."
+// - Link to usage documentation
+
+console.log(pantry.bun.versions) // Excellent intellisense support
+```
+
+### Alias Support in Pantry
+
+The pantry object supports both domain names and aliases:
+
+```typescript
+import { pantry } from 'ts-pkgx'
+
+// Both approaches work and return the same object
+const bunViaAlias = pantry.bun // Using alias
+const bunViaDomain = pantry.bunsh // Using domain
+console.log(bunViaAlias === bunViaDomain) // true
+
+// Same for Node.js
+const nodeViaAlias = pantry.node // Using alias
+const nodeViaDomain = pantry.nodejsorg // Using domain
+console.log(nodeViaAlias === nodeViaDomain) // true
+```
 
 ### Using the API with Custom Options
 

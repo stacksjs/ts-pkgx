@@ -1,18 +1,67 @@
+/**
+ * **ollama** - Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models.
+ *
+ * @domain `ollama.ai`
+ * @programs `ollama`
+ * @version `0.9.0` (97 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ollama-ai.md
+ * @install `sh <(curl https://pkgx.sh) ollama`
+ * @dependencies `curl.se/ca-certs`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.ollamaai
+ * console.log(pkg.name)        // "ollama"
+ * console.log(pkg.description) // "Get up and running with Llama 3.3, DeepSeek-R1,..."
+ * console.log(pkg.programs)    // ["ollama"]
+ * console.log(pkg.versions[0]) // "0.9.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/ollama-ai.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const ollamaaiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'ollama' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'ollama.ai' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ollama.ai/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) ollama' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'ollama',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'curl.se/ca-certs',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.9.0',
     '0.8.0',

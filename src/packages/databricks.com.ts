@@ -1,16 +1,60 @@
+/**
+ * **databricks** - Databricks CLI
+ *
+ * @domain `databricks.com`
+ * @programs `databricks`
+ * @version `0.253.0` (52 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/databricks-com.md
+ * @install `sh <(curl https://pkgx.sh) databricks`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.databrickscom
+ * console.log(pkg.name)        // "databricks"
+ * console.log(pkg.description) // "Databricks CLI"
+ * console.log(pkg.programs)    // ["databricks"]
+ * console.log(pkg.versions[0]) // "0.253.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/databricks-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const databrickscomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'databricks' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'databricks.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Databricks CLI' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/databricks.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) databricks' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'databricks',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.253.0',
     '0.252.0',

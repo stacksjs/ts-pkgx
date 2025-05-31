@@ -1,16 +1,60 @@
+/**
+ * **zarf** - DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/
+ *
+ * @domain `zarf.dev`
+ * @programs `zarf`
+ * @version `0.55.6` (45 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zarf-dev.md
+ * @install `sh <(curl https://pkgx.sh) zarf`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.zarfdev
+ * console.log(pkg.name)        // "zarf"
+ * console.log(pkg.description) // "DevSecOps for Air Gap & Limited-Connection Syst..."
+ * console.log(pkg.programs)    // ["zarf"]
+ * console.log(pkg.versions[0]) // "0.55.6" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/zarf-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const zarfdevPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'zarf' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'zarf.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/zarf.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) zarf' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'zarf',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.55.6',
     '0.55.5',

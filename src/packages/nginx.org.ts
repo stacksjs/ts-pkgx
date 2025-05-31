@@ -1,20 +1,69 @@
+/**
+ * **nginx** - HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+ *
+ * @domain `nginx.org`
+ * @programs `nginx`
+ * @version `1.28.0` (18 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nginx-org.md
+ * @install `sh <(curl https://pkgx.sh) nginx`
+ * @dependencies `pcre.org@8.45`, `zlib.net^1.2.13`, `openssl.org^1.1.1k`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.nginxorg
+ * console.log(pkg.name)        // "nginx"
+ * console.log(pkg.description) // "HTTP(S) server and reverse proxy, and IMAP/POP3..."
+ * console.log(pkg.programs)    // ["nginx"]
+ * console.log(pkg.versions[0]) // "1.28.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/nginx-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const nginxorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'nginx' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'nginx.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nginx.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) nginx' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'nginx',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'pcre.org@8.45',
     'zlib.net^1.2.13',
     'openssl.org^1.1.1k',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.28.0',
     '1.27.5',

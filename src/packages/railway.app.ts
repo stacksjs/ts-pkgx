@@ -1,16 +1,60 @@
+/**
+ * **railway** - Develop and deploy code with zero configuration
+ *
+ * @domain `railway.app`
+ * @programs `railway`
+ * @version `4.5.3` (51 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/railway-app.md
+ * @install `sh <(curl https://pkgx.sh) railway`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.railwayapp
+ * console.log(pkg.name)        // "railway"
+ * console.log(pkg.description) // "Develop and deploy code with zero configuration"
+ * console.log(pkg.programs)    // ["railway"]
+ * console.log(pkg.versions[0]) // "4.5.3" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/railway-app.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const railwayappPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'railway' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'railway.app' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Develop and deploy code with zero configuration' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/railway.app/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) railway' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'railway',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '4.5.3',
     '4.5.2',

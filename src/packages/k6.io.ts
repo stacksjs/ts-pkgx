@@ -1,16 +1,60 @@
+/**
+ * **k6** - A modern load testing tool, using Go and JavaScript - https://k6.io
+ *
+ * @domain `k6.io`
+ * @programs `k6`
+ * @version `1.0.0` (24 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/k6-io.md
+ * @install `sh <(curl https://pkgx.sh) k6`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.k6io
+ * console.log(pkg.name)        // "k6"
+ * console.log(pkg.description) // "A modern load testing tool, using Go and JavaSc..."
+ * console.log(pkg.programs)    // ["k6"]
+ * console.log(pkg.versions[0]) // "1.0.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/k6-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const k6ioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'k6' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'k6.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'A modern load testing tool, using Go and JavaScript - https://k6.io' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/k6.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) k6' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'k6',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.0.0',
     '0.59.0',

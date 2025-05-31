@@ -1,16 +1,60 @@
+/**
+ * **helm** - The Kubernetes Package Manager
+ *
+ * @domain `helm.sh`
+ * @programs `helm`
+ * @version `3.18.1` (32 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/helm-sh.md
+ * @install `sh <(curl https://pkgx.sh) helm`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.helmsh
+ * console.log(pkg.name)        // "helm"
+ * console.log(pkg.description) // "The Kubernetes Package Manager"
+ * console.log(pkg.programs)    // ["helm"]
+ * console.log(pkg.versions[0]) // "3.18.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/helm-sh.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const helmshPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'helm' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'helm.sh' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The Kubernetes Package Manager' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/helm.sh/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) helm' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'helm',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '3.18.1',
     '3.18.0',

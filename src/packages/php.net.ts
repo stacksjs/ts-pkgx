@@ -1,11 +1,57 @@
-export const phpnetPackage = {
+/**
+ * **php** - General-purpose scripting language
+ *
+ * @domain `php.net`
+ * @programs `pear`, `pecl`, `phar`, `php`, `php-cgi`, ... (+3 more)
+ * @version `8.4.7` (71 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/php-net.md
+ * @install `sh <(curl https://pkgx.sh) +php.net -- $SHELL -i`
+ * @aliases `php`
+ * @dependencies `gnu.org/bison^3`, `re2c.org^3`, `apache.org/apr^1`, ... (+28 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.php
+ * // Or access via domain
+ * const samePkg = pantry.phpnet
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "php.net"
+ * console.log(pkg.description) // "General-purpose scripting language"
+ * console.log(pkg.programs)    // ["pear", "pecl", ...]
+ * console.log(pkg.versions[0]) // "8.4.7" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/php-net.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const phpPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'php.net' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'php.net' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'General-purpose scripting language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/php.net/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +php.net -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'pear',
     'pecl',
@@ -17,6 +63,10 @@ export const phpnetPackage = {
     'phpize',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'gnu.org/bison^3',
     're2c.org^3',
@@ -50,6 +100,10 @@ export const phpnetPackage = {
     'sourceware.org/bzip2^1',
     'zlib.net^1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '8.4.7',
     '8.4.6',
@@ -124,9 +178,13 @@ export const phpnetPackage = {
     '7.4.33',
   ] as const,
   fullPath: 'php.net' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'php',
   ] as const,
 }
 
-export type PhpnetPackage = typeof phpnetPackage
+export type PhpPackage = typeof phpPackage

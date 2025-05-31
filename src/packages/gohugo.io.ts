@@ -1,16 +1,65 @@
-export const gohugoioPackage = {
+/**
+ * **hugo** - The world’s fastest framework for building websites.
+ *
+ * @domain `gohugo.io`
+ * @programs `hugo`
+ * @version `0.147.7` (122 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gohugo-io.md
+ * @install `sh <(curl https://pkgx.sh) hugo`
+ * @aliases `hugo`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.hugo
+ * // Or access via domain
+ * const samePkg = pantry.gohugoio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "hugo"
+ * console.log(pkg.description) // "The world’s fastest framework for building webs..."
+ * console.log(pkg.programs)    // ["hugo"]
+ * console.log(pkg.versions[0]) // "0.147.7" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/gohugo-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const hugoPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'hugo' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'gohugo.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The world’s fastest framework for building websites.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gohugo.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) hugo' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'hugo',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.147.7',
     '0.147.6',
@@ -136,9 +185,13 @@ export const gohugoioPackage = {
     '0.104.3',
   ] as const,
   fullPath: 'gohugo.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'hugo',
   ] as const,
 }
 
-export type GohugoioPackage = typeof gohugoioPackage
+export type HugoPackage = typeof hugoPackage

@@ -1,16 +1,60 @@
+/**
+ * **cnquery** - open source, cloud-native, graph-based asset inventory
+ *
+ * @domain `cnquery.io`
+ * @programs `cnquery`
+ * @version `11.56.0` (143 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cnquery-io.md
+ * @install `sh <(curl https://pkgx.sh) cnquery`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.cnqueryio
+ * console.log(pkg.name)        // "cnquery"
+ * console.log(pkg.description) // "open source, cloud-native, graph-based asset in..."
+ * console.log(pkg.programs)    // ["cnquery"]
+ * console.log(pkg.versions[0]) // "11.56.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/cnquery-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const cnqueryioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'cnquery' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'cnquery.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'open source, cloud-native, graph-based asset inventory' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cnquery.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) cnquery' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'cnquery',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '11.56.0',
     '11.55.0',

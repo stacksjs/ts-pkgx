@@ -1,20 +1,69 @@
+/**
+ * **dotnet** - Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET SDK from source
+ *
+ * @domain `dotnet.microsoft.com`
+ * @programs `dotnet`
+ * @version `9.0.202` (32 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dotnet-microsoft-com.md
+ * @install `sh <(curl https://pkgx.sh) dotnet`
+ * @dependencies `linuxunicode.org^71openssl.org`, `unicode.org^71`, `openssl.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.dotnetmicrosoftcom
+ * console.log(pkg.name)        // "dotnet"
+ * console.log(pkg.description) // "Home of .NET's Virtual Monolithic Repository wh..."
+ * console.log(pkg.programs)    // ["dotnet"]
+ * console.log(pkg.versions[0]) // "9.0.202" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/dotnet-microsoft-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const dotnetmicrosoftcomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'dotnet' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'dotnet.microsoft.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Home of .NET\'s Virtual Monolithic Repository which includes all the code needed to build the .NET SDK from source' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dotnet.microsoft.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) dotnet' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'dotnet',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'linuxunicode.org^71openssl.org',
     'unicode.org^71',
     'openssl.org',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '9.0.202',
     '9.0.102',

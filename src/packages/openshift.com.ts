@@ -1,18 +1,72 @@
-export const openshiftcomPackage = {
+/**
+ * **oc** - The OpenShift Command Line, part of OKD
+ *
+ * @domain `openshift.com`
+ * @programs `oc`
+ * @version `4.18.16` (220 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openshift-com.md
+ * @install `sh <(curl https://pkgx.sh) oc`
+ * @aliases `oc`
+ * @dependencies `kerberos.org^1.21`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.oc
+ * // Or access via domain
+ * const samePkg = pantry.openshiftcom
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "oc"
+ * console.log(pkg.description) // "The OpenShift Command Line, part of OKD"
+ * console.log(pkg.programs)    // ["oc"]
+ * console.log(pkg.versions[0]) // "4.18.16" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/openshift-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const ocPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'oc' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'openshift.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The OpenShift Command Line, part of OKD' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openshift.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) oc' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'oc',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'kerberos.org^1.21',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '4.18.16',
     '4.18.15',
@@ -236,9 +290,13 @@ export const openshiftcomPackage = {
     '4.11.59',
   ] as const,
   fullPath: 'openshift.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'oc',
   ] as const,
 }
 
-export type OpenshiftcomPackage = typeof openshiftcomPackage
+export type OcPackage = typeof ocPackage

@@ -1,16 +1,65 @@
-export const planetscalecomPackage = {
+/**
+ * **pscale** - The CLI for PlanetScale Database
+ *
+ * @domain `planetscale.com`
+ * @programs `pscale`
+ * @version `0.243.0` (67 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/planetscale-com.md
+ * @install `sh <(curl https://pkgx.sh) pscale`
+ * @aliases `pscale`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.pscale
+ * // Or access via domain
+ * const samePkg = pantry.planetscalecom
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "pscale"
+ * console.log(pkg.description) // "The CLI for PlanetScale Database"
+ * console.log(pkg.programs)    // ["pscale"]
+ * console.log(pkg.versions[0]) // "0.243.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/planetscale-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const pscalePackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'pscale' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'planetscale.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The CLI for PlanetScale Database' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/planetscale.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) pscale' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'pscale',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.243.0',
     '0.242.0',
@@ -81,9 +130,13 @@ export const planetscalecomPackage = {
     '0.161.0',
   ] as const,
   fullPath: 'planetscale.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'pscale',
   ] as const,
 }
 
-export type PlanetscalecomPackage = typeof planetscalecomPackage
+export type PscalePackage = typeof pscalePackage

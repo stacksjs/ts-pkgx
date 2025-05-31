@@ -1,11 +1,52 @@
+/**
+ * **kotlinlang.org** - Statically typed programming language for the JVM
+ *
+ * @domain `kotlinlang.org`
+ * @programs `kapt`, `kotlin`, `kotlinc`, `kotlinc-js`, `kotlinc-jvm`
+ * @version `2.1.21` (16 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kotlinlang-org.md
+ * @install `sh <(curl https://pkgx.sh) +kotlinlang.org -- $SHELL -i`
+ * @dependencies `openjdk.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.kotlinlangorg
+ * console.log(pkg.name)        // "kotlinlang.org"
+ * console.log(pkg.description) // "Statically typed programming language for the JVM"
+ * console.log(pkg.programs)    // ["kapt", "kotlin", ...]
+ * console.log(pkg.versions[0]) // "2.1.21" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/kotlinlang-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const kotlinlangorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'kotlinlang.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'kotlinlang.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Statically typed programming language for the JVM' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kotlinlang.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +kotlinlang.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'kapt',
     'kotlin',
@@ -14,9 +55,17 @@ export const kotlinlangorgPackage = {
     'kotlinc-jvm',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'openjdk.org',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.1.21',
     '2.1.20',

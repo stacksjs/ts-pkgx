@@ -1,18 +1,67 @@
+/**
+ * **eksctl** - Simple command-line tool for creating clusters on Amazon EKS
+ *
+ * @domain `eksctl.io`
+ * @programs `eksctl`
+ * @version `0.208.0` (55 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/eksctl-io.md
+ * @install `sh <(curl https://pkgx.sh) eksctl`
+ * @dependencies `github.com/kubernetes-sigs/aws-iam-authenticator`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.eksctlio
+ * console.log(pkg.name)        // "eksctl"
+ * console.log(pkg.description) // "Simple command-line tool for creating clusters ..."
+ * console.log(pkg.programs)    // ["eksctl"]
+ * console.log(pkg.versions[0]) // "0.208.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/eksctl-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const eksctlioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'eksctl' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'eksctl.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Simple command-line tool for creating clusters on Amazon EKS' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/eksctl.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) eksctl' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'eksctl',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'github.com/kubernetes-sigs/aws-iam-authenticator',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.208.0',
     '0.207.0',

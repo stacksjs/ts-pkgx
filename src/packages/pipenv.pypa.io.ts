@@ -1,20 +1,74 @@
+/**
+ * **pipenv** - Python Development Workflow for Humans.
+ *
+ * @domain `pipenv.pypa.io`
+ * @programs `pipenv`
+ * @version `3000.0.0` (48 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pipenv-pypa-io.md
+ * @install `sh <(curl https://pkgx.sh) pipenv`
+ * @dependencies `pkgx.sh^1`
+ * @companions `pip.pypa.io`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.pipenvpypaio
+ * console.log(pkg.name)        // "pipenv"
+ * console.log(pkg.description) // "Python Development Workflow for Humans."
+ * console.log(pkg.programs)    // ["pipenv"]
+ * console.log(pkg.versions[0]) // "3000.0.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/pipenv-pypa-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const pipenvpypaioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'pipenv' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'pipenv.pypa.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Python Development Workflow for Humans.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pipenv.pypa.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) pipenv' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'pipenv',
   ] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
   companions: [
     'pip.pypa.io',
   ] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'pkgx.sh^1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '3000.0.0',
     '2025.0.3',

@@ -1,11 +1,52 @@
+/**
+ * **harfbuzz.org** - HarfBuzz text shaping engine
+ *
+ * @domain `harfbuzz.org`
+ * @programs `hb-ot-shape-closure`, `hb-shape`, `hb-subset`, `hb-view`
+ * @version `11.2.1` (28 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/harfbuzz-org.md
+ * @install `sh <(curl https://pkgx.sh) +harfbuzz.org -- $SHELL -i`
+ * @dependencies `cairographics.org@1`, `freetype.org@2`, `gnome.org/glib@2`, ... (+2 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.harfbuzzorg
+ * console.log(pkg.name)        // "harfbuzz.org"
+ * console.log(pkg.description) // "HarfBuzz text shaping engine"
+ * console.log(pkg.programs)    // ["hb-ot-shape-closure", "hb-shape", ...]
+ * console.log(pkg.versions[0]) // "11.2.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/harfbuzz-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const harfbuzzorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'harfbuzz.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'harfbuzz.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'HarfBuzz text shaping engine' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/harfbuzz.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +harfbuzz.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'hb-ot-shape-closure',
     'hb-shape',
@@ -13,6 +54,10 @@ export const harfbuzzorgPackage = {
     'hb-view',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'cairographics.org@1',
     'freetype.org@2',
@@ -20,6 +65,10 @@ export const harfbuzzorgPackage = {
     'graphite.sil.org',
     'unicode.org^71',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '11.2.1',
     '11.2.0',

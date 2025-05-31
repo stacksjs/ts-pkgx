@@ -1,11 +1,52 @@
+/**
+ * **netpbm.sourceforge.net** - Image manipulation
+ *
+ * @domain `netpbm.sourceforge.net`
+ * @programs `411toppm`, `asciitopgm`, `atktopbm`, `avstopam`, `bioradtopgm`, ... (+310 more)
+ * @version `10.86.46` (10 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/netpbm-sourceforge-net.md
+ * @install `sh <(curl https://pkgx.sh) +netpbm.sourceforge.net -- $SHELL -i`
+ * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `libpng.org`, ... (+3 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.netpbmsourceforgenet
+ * console.log(pkg.name)        // "netpbm.sourceforge.net"
+ * console.log(pkg.description) // "Image manipulation"
+ * console.log(pkg.programs)    // ["411toppm", "asciitopgm", ...]
+ * console.log(pkg.versions[0]) // "10.86.46" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/netpbm-sourceforge-net.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const netpbmsourceforgenetPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'netpbm.sourceforge.net' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'netpbm.sourceforge.net' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Image manipulation' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/netpbm.sourceforge.net/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +netpbm.sourceforge.net -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     '411toppm',
     'asciitopgm',
@@ -324,6 +365,10 @@ export const netpbmsourceforgenetPackage = {
     'zeisstopnm',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'github.com/jasper-software/jasper',
     'libjpeg-turbo.org',
@@ -332,6 +377,10 @@ export const netpbmsourceforgenetPackage = {
     'gnome.org/libxml2',
     'zlib.net',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '10.86.46',
     '10.86.45',

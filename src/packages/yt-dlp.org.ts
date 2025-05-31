@@ -1,19 +1,68 @@
+/**
+ * **yt-dlp** - A feature-rich command-line audio/video downloader
+ *
+ * @domain `yt-dlp.org`
+ * @programs `yt-dlp`
+ * @version `2025.5.22` (46 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/yt-dlp-org.md
+ * @install `sh <(curl https://pkgx.sh) yt-dlp`
+ * @dependencies `python.org>=3<3.12`, `ffmpeg.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.yt-dlporg
+ * console.log(pkg.name)        // "yt-dlp"
+ * console.log(pkg.description) // "A feature-rich command-line audio/video downloader"
+ * console.log(pkg.programs)    // ["yt-dlp"]
+ * console.log(pkg.versions[0]) // "2025.5.22" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/yt-dlp-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const ytdlporgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'yt-dlp' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'yt-dlp.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'A feature-rich command-line audio/video downloader' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/yt-dlp.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) yt-dlp' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'yt-dlp',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'python.org>=3<3.12',
     'ffmpeg.org',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2025.5.22',
     '2025.4.30',

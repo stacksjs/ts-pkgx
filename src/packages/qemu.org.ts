@@ -1,11 +1,52 @@
+/**
+ * **qemu** - Generic machine emulator and virtualizer
+ *
+ * @domain `qemu.org`
+ * @programs `qemu-img`, `qemu-edid`, `qemu-io`, `qemu-nbd`, `qemu-storage-daemon`, ... (+29 more)
+ * @version `10.0.2` (51 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/qemu-org.md
+ * @install `sh <(curl https://pkgx.sh) +qemu.org -- $SHELL -i`
+ * @dependencies `gnome.org/glib@2`, `capstone-engine.org^4`, `pixman.org^0`, ... (+7 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.qemuorg
+ * console.log(pkg.name)        // "qemu"
+ * console.log(pkg.description) // "Generic machine emulator and virtualizer"
+ * console.log(pkg.programs)    // ["qemu-img", "qemu-edid", ...]
+ * console.log(pkg.versions[0]) // "10.0.2" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/qemu-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const qemuorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'qemu' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'qemu.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Generic machine emulator and virtualizer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/qemu.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +qemu.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'qemu-img',
     'qemu-edid',
@@ -43,6 +84,10 @@ export const qemuorgPackage = {
     'qemu-system-xtensaeb',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'gnome.org/glib@2',
     'capstone-engine.org^4',
@@ -55,6 +100,10 @@ export const qemuorgPackage = {
     'libssh.org^0',
     'libpng.org^1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '10.0.2',
     '9.2.4',

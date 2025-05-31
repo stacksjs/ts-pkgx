@@ -1,19 +1,68 @@
+/**
+ * **npmjs.com** - the package manager for JavaScript
+ *
+ * @domain `npmjs.com`
+ * @programs `npm`, `npx`
+ * @version `11.4.1` (59 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/npmjs-com.md
+ * @install `sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i`
+ * @dependencies `nodejs.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.npmjscom
+ * console.log(pkg.name)        // "npmjs.com"
+ * console.log(pkg.description) // "the package manager for JavaScript"
+ * console.log(pkg.programs)    // ["npm", "npx"]
+ * console.log(pkg.versions[0]) // "11.4.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/npmjs-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const npmjscomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'npmjs.com' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'npmjs.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'the package manager for JavaScript' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/npmjs.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'npm',
     'npx',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'nodejs.org',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '11.4.1',
     '11.4.0',

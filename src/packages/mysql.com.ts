@@ -1,11 +1,52 @@
+/**
+ * **mysql.com** - MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.
+ *
+ * @domain `mysql.com`
+ * @programs `mysql_client_test`, `my_print_defaults`, `myisam_ftdump`, `myisamchk`, `myisamlog`, ... (+26 more)
+ * @version `9.3.0` (24 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mysql-com.md
+ * @install `sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i`
+ * @dependencies `unicode.org^71`, `libevent.org^2`, `lz4.org^1`, ... (+9 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.mysqlcom
+ * console.log(pkg.name)        // "mysql.com"
+ * console.log(pkg.description) // "MySQL Server, the world's most popular open sou..."
+ * console.log(pkg.programs)    // ["mysql_client_test", "my_print_defaults", ...]
+ * console.log(pkg.versions[0]) // "9.3.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/mysql-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const mysqlcomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'mysql.com' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'mysql.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'MySQL Server, the world\'s most popular open source database, and MySQL Cluster, a real-time, open source transactional database.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mysql.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'mysql_client_test',
     'my_print_defaults',
@@ -40,6 +81,10 @@ export const mysqlcomPackage = {
     'mysqlxtest',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'unicode.org^71',
     'libevent.org^2',
@@ -54,6 +99,10 @@ export const mysqlcomPackage = {
     'linuxgnu.org/gcc/libstdcxx@14',
     'gnu.org/gcc/libstdcxx@14',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '9.3.0',
     '9.2.0',

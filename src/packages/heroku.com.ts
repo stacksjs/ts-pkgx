@@ -1,18 +1,67 @@
+/**
+ * **heroku** - CLI for Heroku
+ *
+ * @domain `heroku.com`
+ * @programs `heroku`
+ * @version `10.8.0` (30 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/heroku-com.md
+ * @install `sh <(curl https://pkgx.sh) heroku`
+ * @dependencies `nodejs.org^20`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.herokucom
+ * console.log(pkg.name)        // "heroku"
+ * console.log(pkg.description) // "CLI for Heroku"
+ * console.log(pkg.programs)    // ["heroku"]
+ * console.log(pkg.versions[0]) // "10.8.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/heroku-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const herokucomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'heroku' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'heroku.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'CLI for Heroku' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/heroku.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) heroku' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'heroku',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'nodejs.org^20',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '10.8.0',
     '10.7.0',

@@ -1,20 +1,69 @@
+/**
+ * **fluentci** - Set up and run your CI locally or in any CI Provider in a consistent way https://backdropbuild.com/builds/v4/fluentci
+ *
+ * @domain `fluentci.io`
+ * @programs `fluentci`
+ * @version `0.16.5` (68 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fluentci-io.md
+ * @install `sh <(curl https://pkgx.sh) fluentci`
+ * @dependencies `dagger.io^0.10`, `deno.land^1.42`, `charm.sh/glow^1.5.1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.fluentciio
+ * console.log(pkg.name)        // "fluentci"
+ * console.log(pkg.description) // "Set up and run your CI locally or in any CI Pro..."
+ * console.log(pkg.programs)    // ["fluentci"]
+ * console.log(pkg.versions[0]) // "0.16.5" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/fluentci-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const fluentciioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'fluentci' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'fluentci.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Set up and run your CI locally or in any CI Provider in a consistent way https://backdropbuild.com/builds/v4/fluentci' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fluentci.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) fluentci' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'fluentci',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'dagger.io^0.10',
     'deno.land^1.42',
     'charm.sh/glow^1.5.1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.16.5',
     '0.16.4',

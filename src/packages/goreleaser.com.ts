@@ -1,16 +1,60 @@
+/**
+ * **goreleaser** - Deliver Go binaries as fast and easily as possible
+ *
+ * @domain `goreleaser.com`
+ * @programs `goreleaser`
+ * @version `2.9.0` (38 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/goreleaser-com.md
+ * @install `sh <(curl https://pkgx.sh) goreleaser`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.goreleasercom
+ * console.log(pkg.name)        // "goreleaser"
+ * console.log(pkg.description) // "Deliver Go binaries as fast and easily as possible"
+ * console.log(pkg.programs)    // ["goreleaser"]
+ * console.log(pkg.versions[0]) // "2.9.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/goreleaser-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const goreleasercomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'goreleaser' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'goreleaser.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Deliver Go binaries as fast and easily as possible' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/goreleaser.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) goreleaser' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'goreleaser',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.9.0',
     '2.8.2',

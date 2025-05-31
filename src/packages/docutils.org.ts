@@ -1,11 +1,52 @@
+/**
+ * **docutils.org** - Text processing system for reStructuredText
+ *
+ * @domain `docutils.org`
+ * @programs `docutils`, `rst2html`, `rst2html4`, `rst2html5`, `rst2latex`, ... (+6 more)
+ * @version `0.21.2` (6 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/docutils-org.md
+ * @install `sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i`
+ * @dependencies `pkgx.sh^1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.docutilsorg
+ * console.log(pkg.name)        // "docutils.org"
+ * console.log(pkg.description) // "Text processing system for reStructuredText"
+ * console.log(pkg.programs)    // ["docutils", "rst2html", ...]
+ * console.log(pkg.versions[0]) // "0.21.2" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/docutils-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const docutilsorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'docutils.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'docutils.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Text processing system for reStructuredText' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docutils.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'docutils',
     'rst2html',
@@ -20,9 +61,17 @@ export const docutilsorgPackage = {
     'rst2xml',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'pkgx.sh^1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.21.2',
     '0.21.1',

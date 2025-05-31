@@ -1,20 +1,69 @@
+/**
+ * **werf** - A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
+ *
+ * @domain `werf.io`
+ * @programs `werf`
+ * @version `2.36.4` (142 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/werf-io.md
+ * @install `sh <(curl https://pkgx.sh) werf`
+ * @dependencies `linuxgithub.com/kdave/btrfs-progs^6.7sourceware.org/dm^2.3`, `github.com/kdave/btrfs-progs^6.7`, `sourceware.org/dm^2.3`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.werfio
+ * console.log(pkg.name)        // "werf"
+ * console.log(pkg.description) // "A solution for implementing efficient and consi..."
+ * console.log(pkg.programs)    // ["werf"]
+ * console.log(pkg.versions[0]) // "2.36.4" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/werf-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const werfioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'werf' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'werf.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/werf.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) werf' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'werf',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'linuxgithub.com/kdave/btrfs-progs^6.7sourceware.org/dm^2.3',
     'github.com/kdave/btrfs-progs^6.7',
     'sourceware.org/dm^2.3',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.36.4',
     '2.36.3',

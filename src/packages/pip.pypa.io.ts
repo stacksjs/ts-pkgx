@@ -1,11 +1,52 @@
+/**
+ * **pip** - The Python package installer
+ *
+ * @domain `pip.pypa.io`
+ * @programs `pip`, `pip3.8`, `pip3.9`, `pip3.10`, `pip3.11`
+ * @version `25.1.1` (27 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pip-pypa-io.md
+ * @install `sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i`
+ * @dependencies `pkgx.sh^1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.pippypaio
+ * console.log(pkg.name)        // "pip"
+ * console.log(pkg.description) // "The Python package installer"
+ * console.log(pkg.programs)    // ["pip", "pip3.8", ...]
+ * console.log(pkg.versions[0]) // "25.1.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/pip-pypa-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const pippypaioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'pip' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'pip.pypa.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The Python package installer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pip.pypa.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'pip',
     'pip3.8',
@@ -14,9 +55,17 @@ export const pippypaioPackage = {
     'pip3.11',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'pkgx.sh^1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '25.1.1',
     '25.1.0',

@@ -1,16 +1,60 @@
+/**
+ * **Arkade** - Open Source Marketplace For Developer Tools
+ *
+ * @domain `arkade.dev`
+ * @programs `arkade`
+ * @version `0.11.39` (37 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/arkade-dev.md
+ * @install `sh <(curl https://pkgx.sh) arkade`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.arkadedev
+ * console.log(pkg.name)        // "Arkade"
+ * console.log(pkg.description) // "Open Source Marketplace For Developer Tools"
+ * console.log(pkg.programs)    // ["arkade"]
+ * console.log(pkg.versions[0]) // "0.11.39" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/arkade-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const arkadedevPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'Arkade' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'arkade.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Open Source Marketplace For Developer Tools' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/arkade.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) arkade' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'arkade',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.11.39',
     '0.11.38',

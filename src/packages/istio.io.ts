@@ -1,16 +1,65 @@
-export const istioioPackage = {
+/**
+ * **istioctl** - Connect, secure, control, and observe services.
+ *
+ * @domain `istio.io`
+ * @programs `istioctl`
+ * @version `1.26.1` (41 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/istio-io.md
+ * @install `sh <(curl https://pkgx.sh) istioctl`
+ * @aliases `istioctl`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.istioctl
+ * // Or access via domain
+ * const samePkg = pantry.istioio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "istioctl"
+ * console.log(pkg.description) // "Connect, secure, control, and observe services."
+ * console.log(pkg.programs)    // ["istioctl"]
+ * console.log(pkg.versions[0]) // "1.26.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/istio-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const istioctlPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'istioctl' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'istio.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Connect, secure, control, and observe services.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/istio.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) istioctl' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'istioctl',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.26.1',
     '1.26.0',
@@ -55,9 +104,13 @@ export const istioioPackage = {
     '1.19.9',
   ] as const,
   fullPath: 'istio.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'istioctl',
   ] as const,
 }
 
-export type IstioioPackage = typeof istioioPackage
+export type IstioctlPackage = typeof istioctlPackage

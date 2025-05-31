@@ -1,16 +1,60 @@
+/**
+ * **digger** - Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI pipeline ⚡️
+ *
+ * @domain `digger.dev`
+ * @programs `digger`
+ * @version `0.6.103` (187 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/digger-dev.md
+ * @install `sh <(curl https://pkgx.sh) digger`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.diggerdev
+ * console.log(pkg.name)        // "digger"
+ * console.log(pkg.description) // "Digger is an open source IaC orchestration tool..."
+ * console.log(pkg.programs)    // ["digger"]
+ * console.log(pkg.versions[0]) // "0.6.103" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/digger-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const diggerdevPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'digger' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'digger.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI pipeline ⚡️' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/digger.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) digger' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'digger',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.6.103',
     '0.6.102',

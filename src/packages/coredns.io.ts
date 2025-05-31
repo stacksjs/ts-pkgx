@@ -1,16 +1,60 @@
+/**
+ * **coredns** - CoreDNS is a DNS server that chains plugins
+ *
+ * @domain `coredns.io`
+ * @programs `coredns`
+ * @version `1.12.1` (7 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/coredns-io.md
+ * @install `sh <(curl https://pkgx.sh) coredns`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.corednsio
+ * console.log(pkg.name)        // "coredns"
+ * console.log(pkg.description) // "CoreDNS is a DNS server that chains plugins"
+ * console.log(pkg.programs)    // ["coredns"]
+ * console.log(pkg.versions[0]) // "1.12.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/coredns-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const corednsioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'coredns' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'coredns.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'CoreDNS is a DNS server that chains plugins' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/coredns.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) coredns' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'coredns',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.12.1',
     '1.12.0',

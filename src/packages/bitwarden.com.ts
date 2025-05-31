@@ -1,18 +1,72 @@
-export const bitwardencomPackage = {
+/**
+ * **bw** - Secure and free password manager for all of your devices
+ *
+ * @domain `bitwarden.com`
+ * @programs `bw`
+ * @version `2025.4.0` (24 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bitwarden-com.md
+ * @install `sh <(curl https://pkgx.sh) bw`
+ * @aliases `bw`
+ * @dependencies `nodejs.org^20`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.bw
+ * // Or access via domain
+ * const samePkg = pantry.bitwardencom
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "bw"
+ * console.log(pkg.description) // "Secure and free password manager for all of you..."
+ * console.log(pkg.programs)    // ["bw"]
+ * console.log(pkg.versions[0]) // "2025.4.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/bitwarden-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const bwPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'bw' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'bitwarden.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Secure and free password manager for all of your devices' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bitwarden.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) bw' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'bw',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'nodejs.org^20',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2025.4.0',
     '2025.3.0',
@@ -40,9 +94,13 @@ export const bitwardencomPackage = {
     '1.22.1',
   ] as const,
   fullPath: 'bitwarden.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'bw',
   ] as const,
 }
 
-export type BitwardencomPackage = typeof bitwardencomPackage
+export type BwPackage = typeof bwPackage

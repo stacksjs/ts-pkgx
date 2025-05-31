@@ -1,16 +1,60 @@
+/**
+ * **flipt** - Enterprise-ready, GitOps enabled, CloudNative feature management solution
+ *
+ * @domain `flipt.io`
+ * @programs `flipt`
+ * @version `1.58.3` (37 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/flipt-io.md
+ * @install `sh <(curl https://pkgx.sh) flipt`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.fliptio
+ * console.log(pkg.name)        // "flipt"
+ * console.log(pkg.description) // "Enterprise-ready, GitOps enabled, CloudNative f..."
+ * console.log(pkg.programs)    // ["flipt"]
+ * console.log(pkg.versions[0]) // "1.58.3" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/flipt-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const fliptioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'flipt' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'flipt.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Enterprise-ready, GitOps enabled, CloudNative feature management solution' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/flipt.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) flipt' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'flipt',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.58.3',
     '1.58.2',

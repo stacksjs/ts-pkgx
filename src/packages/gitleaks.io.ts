@@ -1,16 +1,60 @@
+/**
+ * **gitleaks** - Find secrets with Gitleaks 🔑
+ *
+ * @domain `gitleaks.io`
+ * @programs `gitleaks`
+ * @version `8.26.0` (26 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gitleaks-io.md
+ * @install `sh <(curl https://pkgx.sh) gitleaks`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.gitleaksio
+ * console.log(pkg.name)        // "gitleaks"
+ * console.log(pkg.description) // "Find secrets with Gitleaks 🔑"
+ * console.log(pkg.programs)    // ["gitleaks"]
+ * console.log(pkg.versions[0]) // "8.26.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/gitleaks-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const gitleaksioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'gitleaks' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'gitleaks.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Find secrets with Gitleaks 🔑' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gitleaks.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) gitleaks' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'gitleaks',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '8.26.0',
     '8.25.1',

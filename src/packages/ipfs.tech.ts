@@ -1,16 +1,60 @@
+/**
+ * **ipfs** - Peer-to-peer hypermedia protocol
+ *
+ * @domain `ipfs.tech`
+ * @programs `ipfs`
+ * @version `0.35.0` (28 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ipfs-tech.md
+ * @install `sh <(curl https://pkgx.sh) ipfs`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.ipfstech
+ * console.log(pkg.name)        // "ipfs"
+ * console.log(pkg.description) // "Peer-to-peer hypermedia protocol"
+ * console.log(pkg.programs)    // ["ipfs"]
+ * console.log(pkg.versions[0]) // "0.35.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/ipfs-tech.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const ipfstechPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'ipfs' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'ipfs.tech' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Peer-to-peer hypermedia protocol' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ipfs.tech/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) ipfs' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'ipfs',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.35.0',
     '0.34.1',

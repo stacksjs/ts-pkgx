@@ -1,16 +1,60 @@
+/**
+ * **turso** - Command line interface to Turso.
+ *
+ * @domain `turso.tech`
+ * @programs `turso`
+ * @version `1.0.10` (89 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/turso-tech.md
+ * @install `sh <(curl https://pkgx.sh) turso`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.tursotech
+ * console.log(pkg.name)        // "turso"
+ * console.log(pkg.description) // "Command line interface to Turso."
+ * console.log(pkg.programs)    // ["turso"]
+ * console.log(pkg.versions[0]) // "1.0.10" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/turso-tech.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const tursotechPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'turso' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'turso.tech' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Command line interface to Turso.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/turso.tech/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) turso' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'turso',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.0.10',
     '1.0.9',

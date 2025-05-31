@@ -1,16 +1,60 @@
+/**
+ * **pkgx** - Standalone binary that can run anything
+ *
+ * @domain `pkgx.sh`
+ * @programs `pkgx`
+ * @version `2.7.0` (35 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pkgx-sh.md
+ * @install `sh <(curl https://pkgx.sh) pkgx`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.pkgxsh
+ * console.log(pkg.name)        // "pkgx"
+ * console.log(pkg.description) // "Standalone binary that can run anything"
+ * console.log(pkg.programs)    // ["pkgx"]
+ * console.log(pkg.versions[0]) // "2.7.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/pkgx-sh.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const pkgxshPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'pkgx' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'pkgx.sh' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Standalone binary that can run anything' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) pkgx' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'pkgx',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.7.0',
     '2.6.0',

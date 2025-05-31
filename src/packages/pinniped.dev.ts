@@ -1,16 +1,60 @@
+/**
+ * **pinniped** - Pinniped is the easy, secure way to log in to your Kubernetes clusters.
+ *
+ * @domain `pinniped.dev`
+ * @programs `pinniped`
+ * @version `0.39.0` (14 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pinniped-dev.md
+ * @install `sh <(curl https://pkgx.sh) pinniped`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.pinnipeddev
+ * console.log(pkg.name)        // "pinniped"
+ * console.log(pkg.description) // "Pinniped is the easy, secure way to log in to y..."
+ * console.log(pkg.programs)    // ["pinniped"]
+ * console.log(pkg.versions[0]) // "0.39.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/pinniped-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const pinnipeddevPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'pinniped' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'pinniped.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Pinniped is the easy, secure way to log in to your Kubernetes clusters.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pinniped.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) pinniped' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'pinniped',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.39.0',
     '0.38.0',

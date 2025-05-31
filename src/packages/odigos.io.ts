@@ -1,16 +1,60 @@
+/**
+ * **odigos** - Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetry and eBPF
+ *
+ * @domain `odigos.io`
+ * @programs `odigos`
+ * @version `1.0.189` (174 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/odigos-io.md
+ * @install `sh <(curl https://pkgx.sh) odigos`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.odigosio
+ * console.log(pkg.name)        // "odigos"
+ * console.log(pkg.description) // "Distributed tracing without code changes. 🚀 In..."
+ * console.log(pkg.programs)    // ["odigos"]
+ * console.log(pkg.versions[0]) // "1.0.189" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/odigos-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const odigosioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'odigos' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'odigos.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetry and eBPF' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/odigos.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) odigos' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'odigos',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.0.189',
     '1.0.188',

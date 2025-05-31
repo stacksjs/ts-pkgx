@@ -1,16 +1,60 @@
+/**
+ * **xc** - Markdown defined task runner.
+ *
+ * @domain `xcfile.dev`
+ * @programs `xc`
+ * @version `0.8.5` (27 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xcfile-dev.md
+ * @install `sh <(curl https://pkgx.sh) xc`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.xcfiledev
+ * console.log(pkg.name)        // "xc"
+ * console.log(pkg.description) // "Markdown defined task runner."
+ * console.log(pkg.programs)    // ["xc"]
+ * console.log(pkg.versions[0]) // "0.8.5" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/xcfile-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const xcfiledevPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'xc' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'xcfile.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Markdown defined task runner.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/xcfile.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) xc' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'xc',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.8.5',
     '0.8.4',

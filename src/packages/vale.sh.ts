@@ -1,16 +1,60 @@
+/**
+ * **vale** - :pencil: A markup-aware linter for prose built with speed and extensibility in mind.
+ *
+ * @domain `vale.sh`
+ * @programs `vale`
+ * @version `3.11.2` (44 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vale-sh.md
+ * @install `sh <(curl https://pkgx.sh) vale`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.valesh
+ * console.log(pkg.name)        // "vale"
+ * console.log(pkg.description) // ":pencil: A markup-aware linter for prose built ..."
+ * console.log(pkg.programs)    // ["vale"]
+ * console.log(pkg.versions[0]) // "3.11.2" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/vale-sh.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const valeshPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'vale' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'vale.sh' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: ':pencil: A markup-aware linter for prose built with speed and extensibility in mind.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vale.sh/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) vale' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'vale',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '3.11.2',
     '3.11.1',

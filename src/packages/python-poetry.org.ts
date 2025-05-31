@@ -1,18 +1,72 @@
-export const pythonpoetryorgPackage = {
+/**
+ * **poetry** - Python packaging and dependency management made easy
+ *
+ * @domain `python-poetry.org`
+ * @programs `poetry`
+ * @version `2.1.3` (21 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/python-poetry-org.md
+ * @install `sh <(curl https://pkgx.sh) poetry`
+ * @aliases `poetry`
+ * @dependencies `pkgx.sh^1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.poetry
+ * // Or access via domain
+ * const samePkg = pantry.python-poetryorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "poetry"
+ * console.log(pkg.description) // "Python packaging and dependency management made..."
+ * console.log(pkg.programs)    // ["poetry"]
+ * console.log(pkg.versions[0]) // "2.1.3" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/python-poetry-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const poetryPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'poetry' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'python-poetry.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Python packaging and dependency management made easy' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/python-poetry.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) poetry' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'poetry',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'pkgx.sh^1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.1.3',
     '2.1.2',
@@ -37,9 +91,13 @@ export const pythonpoetryorgPackage = {
     '1.3.2',
   ] as const,
   fullPath: 'python-poetry.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'poetry',
   ] as const,
 }
 
-export type PythonpoetryorgPackage = typeof pythonpoetryorgPackage
+export type PoetryPackage = typeof poetryPackage

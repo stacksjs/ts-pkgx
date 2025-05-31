@@ -1,11 +1,52 @@
+/**
+ * **bitcoin** - Decentralized, peer to peer payment network
+ *
+ * @domain `bitcoin.org`
+ * @programs `bitcoin-cli`, `bitcoin-tx`, `bitcoin-util`, `bitcoin-wallet`, `bitcoind`
+ * @version `29.0.0` (16 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bitcoin-org.md
+ * @install `sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i`
+ * @dependencies `oracle.com/berkeley-db^18`, `boost.org^1`, `libevent.org^2`, ... (+4 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.bitcoinorg
+ * console.log(pkg.name)        // "bitcoin"
+ * console.log(pkg.description) // "Decentralized, peer to peer payment network"
+ * console.log(pkg.programs)    // ["bitcoin-cli", "bitcoin-tx", ...]
+ * console.log(pkg.versions[0]) // "29.0.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/bitcoin-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const bitcoinorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'bitcoin' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'bitcoin.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Decentralized, peer to peer payment network' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bitcoin.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'bitcoin-cli',
     'bitcoin-tx',
@@ -14,6 +55,10 @@ export const bitcoinorgPackage = {
     'bitcoind',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'oracle.com/berkeley-db^18',
     'boost.org^1',
@@ -23,6 +68,10 @@ export const bitcoinorgPackage = {
     'linuxgnu.org/gcc/libstdcxx',
     'gnu.org/gcc/libstdcxx',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '29.0.0',
     '28.1.0',

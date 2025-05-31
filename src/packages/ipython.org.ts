@@ -1,19 +1,68 @@
+/**
+ * **ipython** - Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.
+ *
+ * @domain `ipython.org`
+ * @programs `ipython`, `ipython3`
+ * @version `9.3.0` (44 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ipython-org.md
+ * @install `sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i`
+ * @dependencies `pkgx.sh^1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.ipythonorg
+ * console.log(pkg.name)        // "ipython"
+ * console.log(pkg.description) // "Official repository for IPython itself. Other r..."
+ * console.log(pkg.programs)    // ["ipython", "ipython3"]
+ * console.log(pkg.versions[0]) // "9.3.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/ipython-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const ipythonorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'ipython' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'ipython.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ipython.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'ipython',
     'ipython3',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'pkgx.sh^1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '9.3.0',
     '9.2.0',

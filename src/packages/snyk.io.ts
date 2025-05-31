@@ -1,18 +1,67 @@
+/**
+ * **snyk** - Scans and monitors projects for security vulnerabilities
+ *
+ * @domain `snyk.io`
+ * @programs `snyk`
+ * @version `1.1297.1` (41 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/snyk-io.md
+ * @install `sh <(curl https://pkgx.sh) snyk`
+ * @dependencies `nodejs.org^20`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.snykio
+ * console.log(pkg.name)        // "snyk"
+ * console.log(pkg.description) // "Scans and monitors projects for security vulner..."
+ * console.log(pkg.programs)    // ["snyk"]
+ * console.log(pkg.versions[0]) // "1.1297.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/snyk-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const snykioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'snyk' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'snyk.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Scans and monitors projects for security vulnerabilities' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/snyk.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) snyk' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'snyk',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'nodejs.org^20',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.1297.1',
     '1.1297.0',

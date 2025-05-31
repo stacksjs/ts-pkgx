@@ -1,16 +1,60 @@
+/**
+ * **nomad** - Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
+ *
+ * @domain `nomadproject.io`
+ * @programs `nomad`
+ * @version `1.10.1` (13 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nomadproject-io.md
+ * @install `sh <(curl https://pkgx.sh) nomad`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.nomadprojectio
+ * console.log(pkg.name)        // "nomad"
+ * console.log(pkg.description) // "Nomad is an easy-to-use, flexible, and performa..."
+ * console.log(pkg.programs)    // ["nomad"]
+ * console.log(pkg.versions[0]) // "1.10.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/nomadproject-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const nomadprojectioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'nomad' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'nomadproject.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nomadproject.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) nomad' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'nomad',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.10.1',
     '1.10.0',

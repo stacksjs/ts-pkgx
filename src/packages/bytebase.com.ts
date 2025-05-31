@@ -1,20 +1,74 @@
+/**
+ * **bytebase** - World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps.
+ *
+ * @domain `bytebase.com`
+ * @programs `bytebase`
+ * @version `3.6.2` (30 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bytebase-com.md
+ * @install `sh <(curl https://pkgx.sh) bytebase`
+ * @dependencies `nodejs.org>=23.11`
+ * @companions `postgresql.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.bytebasecom
+ * console.log(pkg.name)        // "bytebase"
+ * console.log(pkg.description) // "World's most advanced database DevSecOps soluti..."
+ * console.log(pkg.programs)    // ["bytebase"]
+ * console.log(pkg.versions[0]) // "3.6.2" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/bytebase-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const bytebasecomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'bytebase' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'bytebase.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'World\'s most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bytebase.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) bytebase' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'bytebase',
   ] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
   companions: [
     'postgresql.org',
   ] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'nodejs.org>=23.11',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '3.6.2',
     '3.6.1',

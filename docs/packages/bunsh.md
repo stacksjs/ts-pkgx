@@ -73,14 +73,36 @@ pkgx bun@1.2.15
 ## Usage Examples
 
 ```typescript
+import { bunPackage, pantry } from 'ts-pkgx'
+
+// Access this package via alias (recommended)
+const pkg = pantry.bun
+
+// Or access via domain name
+const pkgViaDomain = pantry.bunsh
+
+// Or import directly (uses alias-based naming)
+console.log(`Package: ${bunPackage.name}`)
+console.log(`Description: ${bunPackage.description}`)
+console.log(`Programs: ${bunPackage.programs.join(', ')}`)
+
+// Both approaches return the same object
+console.log(pantry.bun === pantry.bunsh) // true
+```
+
+## TypeScript Intellisense
+
+When using this package in TypeScript, you'll get excellent intellisense support:
+
+```typescript
 import { pantry } from 'ts-pkgx'
 
-// Access this package
-const pkg = pantry.bunsh
+// Hovering over pantry.bun shows comprehensive JSDoc documentation
+// including description, programs, installation command, and links
 
-console.log(`Package: ${pkg.name}`)
-console.log(`Description: ${pkg.description}`)
-console.log(`Programs: ${pkg.programs.join(', ')}`)
+// Hovering over pantry.bun.versions shows:
+// "From newest version to oldest." with link to usage docs
+console.log(pantry.bun.versions) // ['1.2.15', '1.2.14', ...]
 ```
 
 ## Links

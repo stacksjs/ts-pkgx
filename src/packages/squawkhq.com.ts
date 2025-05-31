@@ -1,16 +1,60 @@
+/**
+ * **squawk** - 🐘 linter for PostgreSQL, focused on migrations
+ *
+ * @domain `squawkhq.com`
+ * @programs `squawk`
+ * @version `2.11.0` (34 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/squawkhq-com.md
+ * @install `sh <(curl https://pkgx.sh) squawk`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.squawkhqcom
+ * console.log(pkg.name)        // "squawk"
+ * console.log(pkg.description) // "🐘 linter for PostgreSQL, focused on migrations"
+ * console.log(pkg.programs)    // ["squawk"]
+ * console.log(pkg.versions[0]) // "2.11.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/squawkhq-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const squawkhqcomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'squawk' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'squawkhq.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: '🐘 linter for PostgreSQL, focused on migrations' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/squawkhq.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) squawk' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'squawk',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.11.0',
     '2.10.0',

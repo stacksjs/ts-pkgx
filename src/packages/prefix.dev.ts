@@ -1,19 +1,73 @@
-export const prefixdevPackage = {
+/**
+ * **pixi** - Package management made easy
+ *
+ * @domain `prefix.dev`
+ * @programs `pixi`
+ * @version `0.47.0` (80 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/prefix-dev.md
+ * @install `sh <(curl https://pkgx.sh) pixi`
+ * @aliases `pixi`
+ * @dependencies `openssl.org^1.1`, `libgit2.org~1.7`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.pixi
+ * // Or access via domain
+ * const samePkg = pantry.prefixdev
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "pixi"
+ * console.log(pkg.description) // "Package management made easy"
+ * console.log(pkg.programs)    // ["pixi"]
+ * console.log(pkg.versions[0]) // "0.47.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/prefix-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const pixiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'pixi' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'prefix.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Package management made easy' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/prefix.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) pixi' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'pixi',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'openssl.org^1.1',
     'libgit2.org~1.7',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.47.0',
     '0.46.0',
@@ -97,9 +151,13 @@ export const prefixdevPackage = {
     '0.1.0',
   ] as const,
   fullPath: 'prefix.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'pixi',
   ] as const,
 }
 
-export type PrefixdevPackage = typeof prefixdevPackage
+export type PixiPackage = typeof pixiPackage

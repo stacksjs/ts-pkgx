@@ -1,11 +1,52 @@
+/**
+ * **gnupg.org** - GNU Pretty Good Privacy (PGP) package
+ *
+ * @domain `gnupg.org`
+ * @programs `gpg`, `gpg-agent`, `gpg-connect-agent`, `gpg-wks-server`, `gpgconf`, ... (+8 more)
+ * @version `2.4.8` (12 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gnupg-org.md
+ * @install `sh <(curl https://pkgx.sh) +gnupg.org -- $SHELL -i`
+ * @dependencies `zlib.net^1.1`, `sourceware.org/bzip2`, `gnupg.org/npth`, ... (+11 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.gnupgorg
+ * console.log(pkg.name)        // "gnupg.org"
+ * console.log(pkg.description) // "GNU Pretty Good Privacy (PGP) package"
+ * console.log(pkg.programs)    // ["gpg", "gpg-agent", ...]
+ * console.log(pkg.versions[0]) // "2.4.8" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/gnupg-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const gnupgorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'gnupg.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'gnupg.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'GNU Pretty Good Privacy (PGP) package' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +gnupg.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'gpg',
     'gpg-agent',
@@ -22,6 +63,10 @@ export const gnupgorgPackage = {
     'watchgnupg',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'zlib.net^1.1',
     'sourceware.org/bzip2',
@@ -38,6 +83,10 @@ export const gnupgorgPackage = {
     'darwingnu.org/gettext^0.21',
     'gnu.org/gettext^0.21',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.4.8',
     '2.4.7',

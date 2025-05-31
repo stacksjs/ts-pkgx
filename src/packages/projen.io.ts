@@ -1,14 +1,60 @@
+/**
+ * **projen** - Rapidly build modern applications with advanced configuration management
+ *
+ * @domain `projen.io`
+ * @programs `projen`
+ * @version `0.92.8` (35 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/projen-io.md
+ * @install `sh <(curl https://pkgx.sh) projen`
+ * @dependencies `nodejs.org^22 || ^20 || ^18`
+ * @companions `git-scm.org`, `classic.yarnpkg.com`, `maven.apache.org`, ... (+2 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.projenio
+ * console.log(pkg.name)        // "projen"
+ * console.log(pkg.description) // "Rapidly build modern applications with advanced..."
+ * console.log(pkg.programs)    // ["projen"]
+ * console.log(pkg.versions[0]) // "0.92.8" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/projen-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const projenioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'projen' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'projen.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Rapidly build modern applications with advanced configuration management' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/projen.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) projen' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'projen',
   ] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
   companions: [
     'git-scm.org',
     'classic.yarnpkg.com',
@@ -16,9 +62,17 @@ export const projenioPackage = {
     'python.org',
     'go.dev',
   ] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'nodejs.org^22 || ^20 || ^18',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.92.8',
     '0.92.7',

@@ -1,16 +1,60 @@
+/**
+ * **hasura** - Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events.
+ *
+ * @domain `hasura.io`
+ * @programs `hasura`
+ * @version `2.48.1` (51 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/hasura-io.md
+ * @install `sh <(curl https://pkgx.sh) hasura`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.hasuraio
+ * console.log(pkg.name)        // "hasura"
+ * console.log(pkg.description) // "Blazing fast, instant realtime GraphQL APIs on ..."
+ * console.log(pkg.programs)    // ["hasura"]
+ * console.log(pkg.versions[0]) // "2.48.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/hasura-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const hasuraioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'hasura' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'hasura.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/hasura.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) hasura' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'hasura',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.48.1',
     '2.48.0',

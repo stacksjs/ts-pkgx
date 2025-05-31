@@ -47,26 +47,32 @@ interface PkgxPackage {
 
   /**
    * List of executable programs provided by the package
+   * @see https://ts-pkgx.netlify.app/usage
    */
   programs: string[]
 
   /**
    * List of companion packages that are often used with this package
+   * @see https://ts-pkgx.netlify.app/usage
    */
   companions: string[]
 
   /**
    * List of dependencies required by this package
+   * @see https://ts-pkgx.netlify.app/usage
    */
   dependencies: string[]
 
   /**
    * List of available versions of the package
+   * From newest version to oldest.
+   * @see https://ts-pkgx.netlify.app/usage
    */
   versions: string[]
 
   /**
    * List of alternative names or aliases for this package
+   * @see https://ts-pkgx.netlify.app/usage
    */
   aliases?: string[]
 
@@ -76,6 +82,34 @@ interface PkgxPackage {
   fullPath?: string
 }
 ```
+
+### Pantry Interface
+
+The main interface that provides access to all packages with comprehensive JSDoc documentation and alias support.
+
+```typescript
+interface Pantry {
+  // Domain-based properties (e.g., bunsh, nodejsorg, pythonorg)
+  [domain: string]: PkgxPackage
+
+  // Alias properties for convenience (e.g., bun, node, python)
+  // These provide the same package objects as their domain counterparts
+  bun: PkgxPackage // Alias for bunsh (bun.sh)
+  node: PkgxPackage // Alias for nodejsorg (nodejs.org)
+  python: PkgxPackage // Alias for pythonorg (python.org)
+  go: PkgxPackage // Alias for godev (go.dev)
+  rust: PkgxPackage // Alias for rustlangorg (rust-lang.org)
+  // ... and many more aliases
+}
+```
+
+Each property in the Pantry interface includes comprehensive JSDoc documentation with:
+- Package description and purpose
+- List of programs provided
+- Installation command
+- Links to homepage, GitHub, and package documentation
+- Version information with "From newest version to oldest" description
+- Links to our usage documentation at https://ts-pkgx.netlify.app/usage
 
 ### PackageFetchOptions
 
@@ -102,6 +136,99 @@ interface PackageFetchOptions {
   debug?: boolean
 }
 ```
+
+## Enhanced Package Generation
+
+### Alias-Based Naming Convention
+
+ts-pkgx uses intelligent alias-based naming for package variables and types:
+
+1. **Packages with aliases use the primary alias for naming:**
+   ```typescript
+   // For bun.sh (alias: 'bun')
+   export const bunPackage = { ... }
+   export type BunPackage = typeof bunPackage
+
+   // For nodejs.org (alias: 'node')
+   export const nodePackage = { ... }
+   export type NodePackage = typeof nodePackage
+
+   // For python.org (alias: 'python')
+   export const pythonPackage = { ... }
+   export type PythonPackage = typeof pythonPackage
+   ```
+
+2. **Packages without aliases use domain-based naming:**
+   ```typescript
+   // For example.com (no alias)
+   export const examplecomPackage = { ... }
+   export type ExamplecomPackage = typeof examplecomPackage
+   ```
+
+### Comprehensive JSDoc Documentation
+
+Every generated package includes rich JSDoc documentation:
+
+```typescript
+/**
+ * Bun - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+ *
+ * **Programs:** bun
+ *
+ * **Install:** `pkgx bun.sh`
+ *
+ * **Homepage:** https://bun.sh
+ *
+ * **GitHub:** https://github.com/oven-sh/bun
+ *
+ * @see https://ts-pkgx.netlify.app/packages/bunsh
+ */
+export const bunPackage = {
+  name: 'bun',
+  domain: 'bun.sh',
+  description: 'Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one',
+  /**
+   * List of executable programs provided by this package
+   * @see https://ts-pkgx.netlify.app/usage
+   */
+  programs: ['bun'] as const,
+  /**
+   * List of available versions of this package
+   * From newest version to oldest.
+   * @see https://ts-pkgx.netlify.app/usage
+   */
+  versions: ['1.2.15', '1.2.14',] as const,
+  /**
+   * List of dependencies required by this package
+   * @see https://ts-pkgx.netlify.app/usage
+   */
+  dependencies: [] as const,
+  /**
+   * List of companion packages that are often used with this package
+   * @see https://ts-pkgx.netlify.app/usage
+   */
+  companions: [] as const,
+  // ... other properties with JSDoc
+} as const
+```
+
+### Enhanced TypeScript Intellisense
+
+The generated packages provide excellent TypeScript intellisense:
+
+1. **Hovering over `pantry.bun`** shows:
+   - Package description
+   - Programs provided
+   - Installation command
+   - Links to documentation
+
+2. **Hovering over `pantry.bun.versions`** shows:
+   - "From newest version to oldest."
+   - Link to usage documentation
+
+3. **Hovering over `pantry.bun.programs`** shows:
+   - "List of executable programs provided by this package"
+   - Link to usage documentation
 
 ## Core Functions
 
@@ -136,7 +263,7 @@ console.log(`Fetched ${packageInfo.name} (${fullDomainName})`)
 
 ### fetchAndSavePackage
 
-Fetches and saves a package to the specified output directory.
+Fetches and saves a package to the specified output directory with enhanced JSDoc generation.
 
 ```typescript
 async function fetchAndSavePackage(
@@ -178,7 +305,7 @@ if (result.success) {
 
 ### fetchAndSaveAllPackages
 
-Fetches and saves all packages from pkgx.dev.
+Fetches and saves all packages from pkgx.dev with enhanced documentation generation.
 
 ```typescript
 async function fetchAndSaveAllPackages(
@@ -279,11 +406,17 @@ const nestedDomain = guessOriginalDomain('agwaname-gitcrypt') // "agwa.name/gitc
 
 ### generateIndex
 
-Generates an index.ts file for all packages in the packages directory.
+Generates an index.ts file for all packages in the packages directory with comprehensive JSDoc documentation and alias support.
 
 ```typescript
 async function generateIndex(): Promise<void>
 ```
+
+The generated index includes:
+- Comprehensive JSDoc documentation for each package property
+- Alias properties that point to the same package objects
+- Type-safe property names (quoted when necessary)
+- Links to package documentation pages
 
 #### Example
 
@@ -310,23 +443,41 @@ function getPackage(name: string): PkgxPackage | undefined
 #### Example
 
 ```typescript
-const nodePackage = getPackage('node')
-const bunPackage = getPackage('bun.sh')
-const gitCrypt = getPackage('git-crypt') // Looks up by alias
+const nodePackage = getPackage('node') // Using alias
+const bunPackage = getPackage('bun.sh') // Using domain
+const gitCrypt = getPackage('git-crypt') // Using alias
 ```
 
 ### pantry
 
-The object containing all packages, indexed by domain name.
+The object containing all packages, indexed by domain name and including alias properties.
 
 ```typescript
-const pantry: Record<string, PkgxPackage> = {}
+const pantry: Pantry = {
+  // Domain-based properties
+  bunsh: bunPackage,
+  nodejsorg: nodePackage,
+  pythonorg: pythonPackage,
+
+  // Alias properties (point to the same objects)
+  bun: bunPackage, // Same as bunsh
+  node: nodePackage, // Same as nodejsorg
+  python: pythonPackage, // Same as pythonorg
+
+  // ... all other packages
+}
 ```
 
 #### Example
 
 ```typescript
-const nodePackage = pantry['nodejs.org']
+// Both approaches work and return the same object
+const nodeViaAlias = pantry.node
+const nodeViaDomain = pantry.nodejsorg
+console.log(nodeViaAlias === nodeViaDomain) // true
+
+// Access with excellent TypeScript intellisense
+console.log(pantry.bun.versions) // Shows JSDoc: "From newest version to oldest."
 ```
 
 ## Constants
@@ -354,7 +505,7 @@ const PACKAGE_ALIASES: Record<string, string> = {
 
 ### pkgx:fetch
 
-Fetches a single package or a list of packages from pkgx.dev.
+Fetches a single package or a list of packages from pkgx.dev with enhanced JSDoc generation.
 
 ```bash
 bun run pkgx:fetch <packageName> [options]
@@ -373,7 +524,7 @@ bun run pkgx:fetch --pkg <packageList> [options]
 #### Examples
 
 ```bash
-# Fetch a single package
+# Fetch a single package with enhanced documentation
 bun run pkgx:fetch node
 
 # Fetch multiple packages
@@ -388,7 +539,7 @@ bun run pkgx:fetch --pkg node,bun --timeout 60000 --output ./custom-packages
 
 ### pkgx:fetch-all
 
-Fetches all packages from pkgx.dev.
+Fetches all packages from pkgx.dev with enhanced documentation generation.
 
 ```bash
 bun run pkgx:fetch-all [options]

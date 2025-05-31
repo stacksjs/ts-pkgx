@@ -1,11 +1,52 @@
+/**
+ * **kafka.apache.org** - Mirror of Apache Kafka
+ *
+ * @domain `kafka.apache.org`
+ * @programs `connect-distributed.sh`, `connect-mirror-maker.sh`, `connect-plugin-path.sh`, `connect-standalone.sh`, `kafka-acls.sh`, ... (+36 more)
+ * @version `4.0.0` (6 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kafka-apache-org.md
+ * @install `sh <(curl https://pkgx.sh) +kafka.apache.org -- $SHELL -i`
+ * @dependencies `openjdk.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.kafkaapacheorg
+ * console.log(pkg.name)        // "kafka.apache.org"
+ * console.log(pkg.description) // "Mirror of Apache Kafka"
+ * console.log(pkg.programs)    // ["connect-distributed.sh", "connect-mirror-maker.sh", ...]
+ * console.log(pkg.versions[0]) // "4.0.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/kafka-apache-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const kafkaapacheorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'kafka.apache.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'kafka.apache.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Mirror of Apache Kafka' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kafka.apache.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +kafka.apache.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'connect-distributed.sh',
     'connect-mirror-maker.sh',
@@ -50,9 +91,17 @@ export const kafkaapacheorgPackage = {
     'zookeeper-shell.sh',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'openjdk.org',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '4.0.0',
     '3.9.1',

@@ -1,18 +1,72 @@
-export const denolandPackage = {
+/**
+ * **deno** - A modern runtime for JavaScript and TypeScript.
+ *
+ * @domain `deno.land`
+ * @programs `deno`
+ * @version `2.3.5` (131 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/deno-land.md
+ * @install `sh <(curl https://pkgx.sh) deno`
+ * @aliases `deno`
+ * @companions `info-zip.org/unzip`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.deno
+ * // Or access via domain
+ * const samePkg = pantry.denoland
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "deno"
+ * console.log(pkg.description) // "A modern runtime for JavaScript and TypeScript."
+ * console.log(pkg.programs)    // ["deno"]
+ * console.log(pkg.versions[0]) // "2.3.5" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/deno-land.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const denoPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'deno' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'deno.land' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'A modern runtime for JavaScript and TypeScript.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/deno.land/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) deno' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'deno',
   ] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
   companions: [
     'info-zip.org/unzip',
   ] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.3.5',
     '2.3.4',
@@ -147,9 +201,13 @@ export const denolandPackage = {
     '1.26.2',
   ] as const,
   fullPath: 'deno.land' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'deno',
   ] as const,
 }
 
-export type DenolandPackage = typeof denolandPackage
+export type DenoPackage = typeof denoPackage

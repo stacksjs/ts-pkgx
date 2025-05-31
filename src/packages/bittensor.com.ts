@@ -1,17 +1,60 @@
+/**
+ * **Bittensor** - Internet-scale Neural Networks
+ *
+ * @domain `bittensor.com`
+ * @version `9.7.0` (63 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bittensor-com.md
+ * @install `sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i`
+ * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.bittensorcom
+ * console.log(pkg.name)        // "Bittensor"
+ * console.log(pkg.description) // "Internet-scale Neural Networks"
+ * console.log(pkg.versions[0]) // "9.7.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/bittensor-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const bittensorcomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'Bittensor' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'bittensor.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Internet-scale Neural Networks' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bittensor.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'pkgx.sh^1',
     'openssl.org^1.1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '9.7.0',
     '9.6.1',

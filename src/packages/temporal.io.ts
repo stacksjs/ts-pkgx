@@ -1,16 +1,60 @@
+/**
+ * **temporal** - Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal
+ *
+ * @domain `temporal.io`
+ * @programs `temporal`
+ * @version `1.3.0` (14 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/temporal-io.md
+ * @install `sh <(curl https://pkgx.sh) temporal`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.temporalio
+ * console.log(pkg.name)        // "temporal"
+ * console.log(pkg.description) // "Command-line interface for running Temporal Ser..."
+ * console.log(pkg.programs)    // ["temporal"]
+ * console.log(pkg.versions[0]) // "1.3.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/temporal-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const temporalioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'temporal' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'temporal.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/temporal.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) temporal' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'temporal',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.3.0',
     '1.2.0',

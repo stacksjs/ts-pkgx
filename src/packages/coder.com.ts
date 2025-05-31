@@ -1,16 +1,60 @@
+/**
+ * **coder** - Tool for provisioning self-hosted development environments with Terraform
+ *
+ * @domain `coder.com`
+ * @programs `coder`
+ * @version `2.22.1` (67 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/coder-com.md
+ * @install `sh <(curl https://pkgx.sh) coder`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.codercom
+ * console.log(pkg.name)        // "coder"
+ * console.log(pkg.description) // "Tool for provisioning self-hosted development e..."
+ * console.log(pkg.programs)    // ["coder"]
+ * console.log(pkg.versions[0]) // "2.22.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/coder-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const codercomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'coder' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'coder.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Tool for provisioning self-hosted development environments with Terraform' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) coder' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'coder',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.22.1',
     '2.22.0',

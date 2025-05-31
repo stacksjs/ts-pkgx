@@ -1,16 +1,60 @@
+/**
+ * **vault** - A tool for secrets management, encryption as a service, and privileged access management
+ *
+ * @domain `vaultproject.io`
+ * @programs `vault`
+ * @version `1.19.5` (56 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vaultproject-io.md
+ * @install `sh <(curl https://pkgx.sh) vault`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.vaultprojectio
+ * console.log(pkg.name)        // "vault"
+ * console.log(pkg.description) // "A tool for secrets management, encryption as a ..."
+ * console.log(pkg.programs)    // ["vault"]
+ * console.log(pkg.versions[0]) // "1.19.5" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/vaultproject-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const vaultprojectioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'vault' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'vaultproject.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'A tool for secrets management, encryption as a service, and privileged access management' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vaultproject.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) vault' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'vault',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.19.5',
     '1.19.4',

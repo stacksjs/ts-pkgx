@@ -1,16 +1,60 @@
+/**
+ * **koyeb** - Koyeb cli
+ *
+ * @domain `koyeb.com`
+ * @programs `koyeb`
+ * @version `5.5.1` (36 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/koyeb-com.md
+ * @install `sh <(curl https://pkgx.sh) koyeb`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.koyebcom
+ * console.log(pkg.name)        // "koyeb"
+ * console.log(pkg.description) // "Koyeb cli"
+ * console.log(pkg.programs)    // ["koyeb"]
+ * console.log(pkg.versions[0]) // "5.5.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/koyeb-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const koyebcomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'koyeb' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'koyeb.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Koyeb cli' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/koyeb.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) koyeb' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'koyeb',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '5.5.1',
     '5.5.0',
