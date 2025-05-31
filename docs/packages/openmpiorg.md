@@ -35,20 +35,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `5.0.7`, `5.0.6`, `5.0.5`, `5.0.4`, `5.0.3`
-- `5.0.2`, `5.0.1`, `4.1.8`, `4.1.7`, `4.1.5`
+- `5.0.8`, `5.0.7`, `5.0.6`, `5.0.5`, `5.0.4`
+- `5.0.3`, `5.0.2`, `5.0.1`, `4.1.8`, `4.1.7`
+- `4.1.5`
 
 </details>
 
-**Latest Version**: `5.0.7`
+**Latest Version**: `5.0.8`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx open-mpi.org@5.0.7
+pkgx open-mpi.org@5.0.8
 ```
 
 ## Dependencies
@@ -56,7 +57,7 @@ pkgx open-mpi.org@5.0.7
 This package depends on:
 
 - `open-mpi.org/hwloc`
-- `openpmix.github.io`
+- `openpmix.github.io@5`
 - `libevent.org`
 
 ## Related Packages

@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-30T16:47:50.683Z
+- **Last Updated**: 2025-05-31T03:55:40.793Z
 
 ## Table of Contents
 
@@ -289,7 +289,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cgalorg](./packages/cgalorg.md)** () | The public CGAL repository, see the README below | cgal_create_CMakeLists, cgal_create_cmake_script, cgal_make_macosx_app | 6.0.1 (+4) | `pkgx cgal` |
 | **[changiedev](./packages/changiedev.md)** () | Automated changelog tool for preparing releases with lots of customization options | changie | 1.21.1 (+6) | `pkgx changie` |
 | **[charmsh](./packages/charmsh.md)** () |  | - | latest | `pkgx charm.sh` |
-| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.435 (+469) | `pkgx checkov` |
+| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.436 (+470) | `pkgx checkov` |
 | **[chezmoiio](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.5 (+74) | `pkgx chezmoi` |
 | **[chiarkgreenendorguk](./packages/chiarkgreenendorguk.md)** () |  | - | latest | `pkgx chiark.greenend.org.uk` |
 | **[chromedriverchromiumorg](./packages/chromedriverchromiumorg.md)** () |  | chromedriver | 114.0.5735.90 (+0) | `pkgx chromedriver` |
@@ -368,7 +368,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dotenvxcom](./packages/dotenvxcom.md)** () |  | dotenvx | 1.44.1 (+166) | `pkgx dotenvx` |
 | **[dotnetmicrosoftcom](./packages/dotnetmicrosoftcom.md)** () | Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET... | dotnet | 9.0.202 (+31) | `pkgx dotnet` |
 | **[doxygennl](./packages/doxygennl.md)** () | Generate documentation for several programming languages | doxygen | 1.14.0 (+9) | `pkgx doxygen` |
-| **[dozzledev](./packages/dozzledev.md)** () | Realtime log viewer for docker containers. | dozzle | 8.12.18 (+54) | `pkgx dozzle` |
+| **[dozzledev](./packages/dozzledev.md)** () | Realtime log viewer for docker containers. | dozzle | 8.12.19 (+55) | `pkgx dozzle` |
 | **[dprintdev](./packages/dprintdev.md)** () | Pluggable and configurable code formatting platform written in Rust. | dprint | 0.50.0 (+26) | `pkgx dprint` |
 | **[drifreedesktoporg](./packages/drifreedesktoporg.md)** (libdrm) |  | - | 2.4.124 (+9) | `pkgx libdrm` |
 | **[duktapeorg](./packages/duktapeorg.md)** () | Duktape - embeddable Javascript engine with a focus on portability and compact footprint | duk | 2.7.0 (+0) | `pkgx duk` |
@@ -721,7 +721,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[openjpegorg](./packages/openjpegorg.md)** (opj) | Official repository of the OpenJPEG project | opj_compress, opj_decompress, opj_dump | 2.5.3 (+3) | `pkgx opj` |
 | **[openldaporg](./packages/openldaporg.md)** (ldap) | Open source suite of directory software | ldapcompare, ldapdelete, ldapexop, ... (+7) | 2.6.10 (+12) | `pkgx ldap` |
 | **[openldaporgliblmdb](./packages/openldaporgliblmdb.md)** (liblmdb) | Lightning memory-mapped database: key-value data store | mdb_copy, mdb_dump, mdb_load, ... (+1) | 0.9.33 (+0) | `pkgx liblmdb` |
-| **[openmpiorg](./packages/openmpiorg.md)** () | Open MPI main development repository | mpic++, mpiCC, mpicc, ... (+8) | 5.0.7 (+9) | `pkgx open-mpi.org` |
+| **[openmpiorg](./packages/openmpiorg.md)** () | Open MPI main development repository | mpic++, mpiCC, mpicc, ... (+8) | 5.0.8 (+10) | `pkgx open-mpi.org` |
 | **[openmpllvmorg](./packages/openmpllvmorg.md)** (libomp) | The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. | - | 20.1.6 (+31) | `pkgx libomp` |
 | **[openpmixgithubio](./packages/openpmixgithubio.md)** () | Process Management Interface for HPC environments | palloc, pattrs, pctrl, ... (+6) | 6.0.0 (+8) | `pkgx openpmix.github.io` |
 | **[openpolicyagentorg](./packages/openpolicyagentorg.md)** (opa) | Open Policy Agent (OPA) is an open source, general-purpose policy engine. | opa | 1.5.0 (+24) | `pkgx opa` |
@@ -889,7 +889,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[sympyorg](./packages/sympyorg.md)** () | A computer algebra system written in pure Python | - | 1.14.0 (+6) | `pkgx sympy.org` |
 | **[syncthingnet](./packages/syncthingnet.md)** () | Open source continuous file synchronization application | syncthing | 1.29.6 (+17) | `pkgx syncthing` |
 | **[systemdio](./packages/systemdio.md)** () | The systemd System and Service Manager | busctl, coredumpctl, hostnamectl, ... (+52) | 257.6.0 (+25) | `pkgx systemd.io` |
-| **[tagliborg](./packages/tagliborg.md)** (taglib-config) | TagLib Audio Meta-Data Library | taglib-config | 2.0.2 (+3) | `pkgx taglib-config` |
+| **[tagliborg](./packages/tagliborg.md)** (taglib-config) | TagLib Audio Meta-Data Library | taglib-config | 2.1.0 (+4) | `pkgx taglib-config` |
 | **[tailcallrun](./packages/tailcallrun.md)** () | High Performance GraphQL Runtime | tailcall | 1.6.11 (+622) | `pkgx tailcall` |
 | **[tailwindcsscom](./packages/tailwindcsscom.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.8 (+41) | `pkgx tailwindcss` |
 | **[taku910githubio](./packages/taku910githubio.md)** |  | - | latest | `pkgx taku910.github.io` |

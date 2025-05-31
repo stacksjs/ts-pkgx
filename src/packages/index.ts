@@ -2563,7 +2563,7 @@ export interface Pantry {
    *
    * @domain `checkov.io`
    * @programs `checkov`
-   * @version `3.2.435` (470 versions available)
+   * @version `3.2.436` (471 versions available)
    * @install `sh <(curl https://pkgx.sh) checkov`
    * @dependencies `pkgx.sh^1`
    *
@@ -2575,7 +2575,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "checkov"
    * console.log(pkg.description) // "Prevent cloud misconfigurations and find vulner..."
    * console.log(pkg.programs)    // ["checkov"]
-   * console.log(pkg.versions[0]) // "3.2.435"
+   * console.log(pkg.versions[0]) // "3.2.436"
    * ```
    */
   checkovio: checkov_io.CheckovioPackage
@@ -4402,7 +4402,7 @@ export interface Pantry {
    *
    * @domain `dozzle.dev`
    * @programs `dozzle`
-   * @version `8.12.18` (55 versions available)
+   * @version `8.12.19` (56 versions available)
    * @install `sh <(curl https://pkgx.sh) dozzle`
    *
    * @example
@@ -4413,7 +4413,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "dozzle"
    * console.log(pkg.description) // "Realtime log viewer for docker containers."
    * console.log(pkg.programs)    // ["dozzle"]
-   * console.log(pkg.versions[0]) // "8.12.18"
+   * console.log(pkg.versions[0]) // "8.12.19"
    * ```
    */
   dozzledev: dozzle_dev.DozzledevPackage
@@ -11962,9 +11962,9 @@ export interface Pantry {
    *
    * @domain `open/mpi.org`
    * @programs `mpic++`, `mpiCC`, `mpicc`, `mpicxx`, `mpiexec`, ... (+6 more)
-   * @version `5.0.7` (10 versions available)
+   * @version `5.0.8` (11 versions available)
    * @install `sh <(curl https://pkgx.sh) +open-mpi.org -- $SHELL -i`
-   * @dependencies `open-mpi.org/hwloc`, `openpmix.github.io`, `libevent.org`
+   * @dependencies `open-mpi.org/hwloc`, `openpmix.github.io@5`, `libevent.org`
    * @companions `gnu.org/gcc`, `gnu.org/inetutils`
    *
    * @example
@@ -11975,7 +11975,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "open-mpi.org"
    * console.log(pkg.description) // "Open MPI main development repository"
    * console.log(pkg.programs)    // ["mpic++", "mpiCC", ...]
-   * console.log(pkg.versions[0]) // "5.0.7"
+   * console.log(pkg.versions[0]) // "5.0.8"
    * ```
    */
   openmpiorg: open_mpi_org.OpenmpiorgPackage
@@ -16058,7 +16058,7 @@ export interface Pantry {
    *
    * @domain `taglib.org`
    * @programs `taglib-config`
-   * @version `2.0.2` (4 versions available)
+   * @version `2.1.0` (5 versions available)
    * @install `sh <(curl https://pkgx.sh) taglib-config`
    * @aliases `taglib-config`
    * @dependencies `zlib.net^1`, `github.com/nemtrif/utfcpp^4`
@@ -16071,7 +16071,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "taglib-config"
    * console.log(pkg.description) // "TagLib Audio Meta-Data Library"
    * console.log(pkg.programs)    // ["taglib-config"]
-   * console.log(pkg.versions[0]) // "2.0.2"
+   * console.log(pkg.versions[0]) // "2.1.0"
    * ```
    */
   tagliborg: taglib_org.TagliborgPackage

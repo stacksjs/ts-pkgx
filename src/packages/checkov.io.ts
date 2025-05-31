@@ -14,6 +14,7 @@ export const checkovioPackage = {
     'pkgx.sh^1',
   ] as const,
   versions: [
+    '3.2.436',
     '3.2.435',
     '3.2.434',
     '3.2.433',

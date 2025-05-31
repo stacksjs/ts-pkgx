@@ -15,6 +15,7 @@ export const tagliborgPackage = {
     'github.com/nemtrif/utfcpp^4',
   ] as const,
   versions: [
+    '2.1.0',
     '2.0.2',
     '2.0.1',
     '2.0.0',

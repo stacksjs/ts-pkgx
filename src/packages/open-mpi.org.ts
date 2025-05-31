@@ -25,10 +25,11 @@ export const openmpiorgPackage = {
   ] as const,
   dependencies: [
     'open-mpi.org/hwloc',
-    'openpmix.github.io',
+    'openpmix.github.io@5',
     'libevent.org',
   ] as const,
   versions: [
+    '5.0.8',
     '5.0.7',
     '5.0.6',
     '5.0.5',

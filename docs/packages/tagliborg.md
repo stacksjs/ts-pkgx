@@ -31,19 +31,19 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `2.0.2`, `2.0.1`, `2.0.0`, `1.13.1`
+- `2.1.0`, `2.0.2`, `2.0.1`, `2.0.0`, `1.13.1`
 
 </details>
 
-**Latest Version**: `2.0.2`
+**Latest Version**: `2.1.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx taglib-config@2.0.2
+pkgx taglib-config@2.1.0
 ```
 
 ## Dependencies

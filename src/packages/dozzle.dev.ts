@@ -12,6 +12,7 @@ export const dozzledevPackage = {
   companions: [] as const,
   dependencies: [] as const,
   versions: [
+    '8.12.19',
     '8.12.18',
     '8.12.17',
     '8.12.16',
