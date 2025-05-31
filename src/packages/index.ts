@@ -6795,7 +6795,7 @@ export interface Pantry {
    *
    * @domain `gohugo.io`
    * @programs `hugo`
-   * @version `0.147.6` (121 versions available)
+   * @version `0.147.7` (122 versions available)
    * @install `sh <(curl https://pkgx.sh) hugo`
    * @aliases `hugo`
    *
@@ -6807,7 +6807,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "hugo"
    * console.log(pkg.description) // "The world’s fastest framework for building webs..."
    * console.log(pkg.programs)    // ["hugo"]
-   * console.log(pkg.versions[0]) // "0.147.6"
+   * console.log(pkg.versions[0]) // "0.147.7"
    * ```
    */
   gohugoio: gohugo_io.GohugoioPackage

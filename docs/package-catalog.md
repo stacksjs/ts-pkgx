@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 866
 - **Categories**: 13
-- **Last Updated**: 2025-05-31T14:46:20.781Z
+- **Last Updated**: 2025-05-31T16:47:09.818Z
 
 ## Table of Contents
 
@@ -473,7 +473,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gnuplotinfo](./packages/gnuplotinfo.md)** () | Command-driven, interactive function plotting | gnuplot | 6.0.2 (+7) | `pkgx gnuplot` |
 | **[gnutlsorg](./packages/gnutlsorg.md)** |  | certtool, danetool, gnutls-cli, ... (+5) | 3.8.9 (+9) | `pkgx gnutls.org` |
 | **[go](./packages/go.md)** (go) | The Go programming language | go, gofmt | 1.24.3 (+65) | `pkgx go.dev` |
-| **[gohugoio](./packages/gohugoio.md)** (hugo) | The world’s fastest framework for building websites. | hugo | 0.147.6 (+120) | `pkgx hugo` |
+| **[gohugoio](./packages/gohugoio.md)** (hugo) | The world’s fastest framework for building websites. | hugo | 0.147.7 (+121) | `pkgx hugo` |
 | **[golangcilintrun](./packages/golangcilintrun.md)** () | Fast linters runner for Go | golangci-lint | 2.1.6 (+51) | `pkgx golangci-lint` |
 | **[gomplateca](./packages/gomplateca.md)** () | A flexible commandline tool for template rendering. Supports lots of local and remote datasources. | gomplate | 4.3.2 (+10) | `pkgx gomplate` |
 | **[googlecom](./packages/googlecom.md)** |  | - | latest | `pkgx google.com` |
