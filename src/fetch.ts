@@ -1474,20 +1474,156 @@ function getDomainAsTypescriptName(domain: string): string {
  * @returns TypeScript file content as string
  */
 function generateTypeScriptContent(packageInfo: PkgxPackage, domainName: string): string {
-  // Convert domain to camelCase for variable name
-  const varName = `${getDomainAsTypescriptName(domainName)}Package`
+  // Determine the best variable name - use primary alias if available, otherwise use domain
+  let varName: string
+  let packageDisplayName: string
+
+  if (packageInfo.aliases && packageInfo.aliases.length > 0) {
+    // Use the first (primary) alias for the variable name
+    const primaryAlias = packageInfo.aliases[0]
+    varName = `${primaryAlias.replace(/[^a-z0-9]/gi, '')}Package`
+    packageDisplayName = primaryAlias
+  }
+  else {
+    // Fall back to domain-based naming
+    varName = `${getDomainAsTypescriptName(domainName)}Package`
+    packageDisplayName = packageInfo.name || domainName
+  }
 
   // Ensure the variable name doesn't contain hyphens (which are invalid in JavaScript)
   const safeVarName = varName.replace(/-/g, '')
 
+  // Generate comprehensive JSDoc documentation
+  const jsdoc = generatePackageJSDoc(packageInfo, domainName, packageDisplayName)
+
   // Format the package object with 'as const' assertions
   const formattedObj = formatObjectWithAsConst(packageInfo)
 
-  // Create the TypeScript content with proper imports and exports
-  return `export const ${safeVarName} = ${formattedObj}
+  // Create the TypeScript content with proper JSDoc, imports and exports
+  return `${jsdoc}
+export const ${safeVarName} = ${formattedObj}
 
 export type ${safeVarName.charAt(0).toUpperCase() + safeVarName.slice(1)} = typeof ${safeVarName}
 `
+}
+
+/**
+ * Generates comprehensive JSDoc documentation for a package
+ * @param packageInfo The package information object
+ * @param domainName The domain name
+ * @param packageDisplayName The display name for the package
+ * @returns JSDoc comment string
+ */
+function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, packageDisplayName: string): string {
+  const lines: string[] = []
+
+  lines.push('/**')
+
+  // Package title and description
+  if (packageInfo.description) {
+    lines.push(` * **${packageDisplayName}** - ${packageInfo.description}`)
+  }
+  else {
+    lines.push(` * **${packageDisplayName}** - pkgx package`)
+  }
+
+  lines.push(' *')
+
+  // Domain information
+  lines.push(` * @domain \`${packageInfo.domain || domainName}\``)
+
+  // Programs provided
+  if (packageInfo.programs && packageInfo.programs.length > 0) {
+    const programsList = packageInfo.programs.slice(0, 5).join('`, `')
+    const morePrograms = packageInfo.programs.length > 5 ? `, ... (+${packageInfo.programs.length - 5} more)` : ''
+    lines.push(` * @programs \`${programsList}\`${morePrograms}`)
+  }
+
+  // Latest version information
+  if (packageInfo.versions && packageInfo.versions.length > 0) {
+    lines.push(` * @version \`${packageInfo.versions[0]}\` (${packageInfo.versions.length} versions available)`)
+    lines.push(` * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/${domainName.replace(/\./g, '-')}.md`)
+  }
+
+  // Installation command
+  if (packageInfo.installCommand) {
+    lines.push(` * @install \`${packageInfo.installCommand}\``)
+  }
+
+  // Aliases
+  if (packageInfo.aliases && packageInfo.aliases.length > 0) {
+    lines.push(` * @aliases ${packageInfo.aliases.map(a => `\`${a}\``).join(', ')}`)
+  }
+
+  // Homepage URL
+  if (packageInfo.homepageUrl) {
+    lines.push(` * @homepage ${packageInfo.homepageUrl}`)
+  }
+
+  // Dependencies
+  if (packageInfo.dependencies && packageInfo.dependencies.length > 0) {
+    const depsList = packageInfo.dependencies.slice(0, 3).join('`, `')
+    const moreDeps = packageInfo.dependencies.length > 3 ? `, ... (+${packageInfo.dependencies.length - 3} more)` : ''
+    lines.push(` * @dependencies \`${depsList}\`${moreDeps}`)
+  }
+
+  // Companions
+  if (packageInfo.companions && packageInfo.companions.length > 0) {
+    const companionsList = packageInfo.companions.slice(0, 3).join('`, `')
+    const moreCompanions = packageInfo.companions.length > 3 ? `, ... (+${packageInfo.companions.length - 3} more)` : ''
+    lines.push(` * @companions \`${companionsList}\`${moreCompanions}`)
+  }
+
+  lines.push(' *')
+
+  // Usage example
+  lines.push(' * @example')
+  lines.push(' * ```typescript')
+  lines.push(' * import { pantry } from \'ts-pkgx\'')
+  lines.push(' *')
+
+  // Show both alias and domain access if aliases exist
+  if (packageInfo.aliases && packageInfo.aliases.length > 0) {
+    const primaryAlias = packageInfo.aliases[0]
+    const aliasVarName = primaryAlias.replace(/[^a-z0-9]/gi, '')
+    const domainVarName = getDomainAsTypescriptName(domainName)
+
+    lines.push(` * // Access via alias (recommended)`)
+    lines.push(` * const pkg = pantry.${aliasVarName}`)
+    lines.push(` * // Or access via domain`)
+    lines.push(` * const samePkg = pantry.${domainVarName}`)
+    lines.push(` * console.log(pkg === samePkg) // true`)
+  }
+  else {
+    const domainVarName = getDomainAsTypescriptName(domainName)
+    lines.push(` * const pkg = pantry.${domainVarName}`)
+  }
+
+  lines.push(` * console.log(pkg.name)        // "${packageInfo.name || packageDisplayName}"`)
+
+  if (packageInfo.description) {
+    const shortDesc = packageInfo.description.length > 50 ? `${packageInfo.description.substring(0, 47)}...` : packageInfo.description
+    lines.push(` * console.log(pkg.description) // "${shortDesc}"`)
+  }
+
+  if (packageInfo.programs && packageInfo.programs.length > 0) {
+    lines.push(` * console.log(pkg.programs)    // [${packageInfo.programs.slice(0, 2).map(p => `"${p}"`).join(', ')}${packageInfo.programs.length > 2 ? ', ...' : ''}]`)
+  }
+
+  if (packageInfo.versions && packageInfo.versions.length > 0) {
+    lines.push(` * console.log(pkg.versions[0]) // "${packageInfo.versions[0]}" (latest)`)
+  }
+
+  lines.push(' * ```')
+  lines.push(' *')
+
+  // Links to documentation
+  lines.push(` * @see https://ts-pkgx.netlify.app/packages/${domainName.replace(/\./g, '-')}.md`)
+  lines.push(` * @see https://ts-pkgx.netlify.app/usage`)
+
+  lines.push(' */')
+
+  return lines.join('\n')
 }
 
 /**
@@ -1500,11 +1636,17 @@ function formatObjectWithAsConst(obj: Record<string, any>): string {
 
   lines.push('{')
 
-  // Add each property with appropriate formatting
+  // Add each property with appropriate formatting and JSDoc comments
   for (const [key, value] of Object.entries(obj)) {
     // Skip fetchedAt property to keep it out of TypeScript files
     if (key === 'fetchedAt')
       continue
+
+    // Add JSDoc comments for specific properties
+    const jsdocComment = getPropertyJSDoc(key, value)
+    if (jsdocComment) {
+      lines.push(jsdocComment)
+    }
 
     if (value === undefined) {
       lines.push(`  ${key}: undefined,`)
@@ -1556,6 +1698,87 @@ function formatObjectWithAsConst(obj: Record<string, any>): string {
   lines.push('}')
 
   return lines.join('\n')
+}
+
+/**
+ * Generates JSDoc comments for specific object properties
+ * @param key The property key
+ * @param value The property value
+ * @returns JSDoc comment string or null if no comment needed
+ */
+function getPropertyJSDoc(key: string, value: any): string | null {
+  switch (key) {
+    case 'versions':
+      if (Array.isArray(value) && value.length > 0) {
+        return `  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */`
+      }
+      break
+
+    case 'programs':
+      if (Array.isArray(value) && value.length > 0) {
+        return `  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */`
+      }
+      break
+
+    case 'dependencies':
+      if (Array.isArray(value) && value.length > 0) {
+        return `  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */`
+      }
+      break
+
+    case 'companions':
+      if (Array.isArray(value) && value.length > 0) {
+        return `  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */`
+      }
+      break
+
+    case 'aliases':
+      if (Array.isArray(value) && value.length > 0) {
+        return `  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */`
+      }
+      break
+
+    case 'installCommand':
+      return `  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */`
+
+    case 'description':
+      return `  /**
+   * Brief description of what this package does.
+   */`
+
+    case 'domain':
+      return `  /**
+   * The canonical domain name for this package.
+   */`
+
+    case 'name':
+      return `  /**
+   * The display name of this package.
+   */`
+
+    default:
+      return null
+  }
+
+  return null
 }
 
 /**

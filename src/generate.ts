@@ -226,11 +226,40 @@ function normalizeModuleName(moduleName: string): string {
 }
 
 /**
- * Convert a filename to the expected type name in the file
+ * Read a package file and extract the actual export names
+ * @param moduleName The module filename without extension
+ * @returns Object with the actual package variable name and type name
+ */
+function getActualExportNames(moduleName: string): { packageVarName: string, typeName: string } {
+  try {
+    const filePath = path.join(PACKAGES_DIR, `${moduleName}.ts`)
+    const content = fs.readFileSync(filePath, 'utf-8')
+
+    // Extract the export const name
+    const exportConstMatch = content.match(/export const (\w+) = \{/)
+    const packageVarName = exportConstMatch ? exportConstMatch[1] : `${moduleName.replace(/\W/g, '')}Package`
+
+    // Extract the export type name
+    const exportTypeMatch = content.match(/export type (\w+) = typeof/)
+    const typeName = exportTypeMatch ? exportTypeMatch[1] : `${packageVarName.charAt(0).toUpperCase()}${packageVarName.slice(1)}`
+
+    return { packageVarName, typeName }
+  }
+  catch (error) {
+    // Fallback to the old logic if file reading fails
+    console.warn(`Could not read package file ${moduleName}.ts, using fallback naming:`, error)
+    const fallbackVarName = toPackageVarNameFallback(moduleName)
+    const fallbackTypeName = toTypeNameFallback(moduleName)
+    return { packageVarName: fallbackVarName, typeName: fallbackTypeName }
+  }
+}
+
+/**
+ * Convert a filename to the expected type name in the file (fallback)
  * @param moduleName The module filename without extension
  * @returns The expected type name
  */
-function toTypeName(moduleName: string): string {
+function toTypeNameFallback(moduleName: string): string {
   // If it's a special module, use the special name with first letter capitalized
   if (SPECIAL_MODULES[moduleName]) {
     const special = SPECIAL_MODULES[moduleName]
@@ -251,11 +280,11 @@ function toTypeName(moduleName: string): string {
 }
 
 /**
- * Convert a filename to the expected package variable name in the file
+ * Convert a filename to the expected package variable name in the file (fallback)
  * @param moduleName The module filename without extension
  * @returns The expected package variable name
  */
-function toPackageVarName(moduleName: string): string {
+function toPackageVarNameFallback(moduleName: string): string {
   // Special handling for special modules
   if (SPECIAL_MODULES[moduleName]) {
     return `${SPECIAL_MODULES[moduleName]}Package`
@@ -268,6 +297,26 @@ function toPackageVarName(moduleName: string): string {
   // but without capitalizing the first letter
   const safe = normalized.replace(/\W/g, '')
   return `${safe}Package`
+}
+
+/**
+ * Convert a filename to the expected type name in the file
+ * @param moduleName The module filename without extension
+ * @returns The expected type name
+ */
+function toTypeName(moduleName: string): string {
+  const { typeName } = getActualExportNames(moduleName)
+  return typeName
+}
+
+/**
+ * Convert a filename to the expected package variable name in the file
+ * @param moduleName The module filename without extension
+ * @returns The expected package variable name
+ */
+function toPackageVarName(moduleName: string): string {
+  const { packageVarName } = getActualExportNames(moduleName)
+  return packageVarName
 }
 
 /**
@@ -321,19 +370,23 @@ export async function generateIndex(): Promise<string | null> {
  * Each property represents a package domain and provides comprehensive package information
  * including metadata, installation commands, available programs, versions, and dependencies.
  *
+ * Packages can be accessed by their domain name (e.g., \`pantry.bunsh\`) or by their aliases
+ * (e.g., \`pantry.bun\`) for convenience.
+ *
  * @example
  * \`\`\`typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access Node.js package
+ * // Access Node.js package by domain
  * const node = pantry.nodejsorg
  * console.log(node.description) // "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine"
  * console.log(node.programs)    // ["node", "npm", "npx"]
  * console.log(node.versions[0]) // Latest version
  *
- * // Access Bun package
- * const bun = pantry.bunsh
- * console.log(bun.installCommand) // Installation command
+ * // Access Bun package by domain or alias
+ * const bun1 = pantry.bunsh  // by domain
+ * const bun2 = pantry.bun    // by alias (same object)
+ * console.log(bun1 === bun2) // true
  * \`\`\`
  */
 export interface Pantry {
@@ -344,6 +397,34 @@ export interface Pantry {
 
     // Import pantry to get package data for documentation
     const pantryData = await importPantry()
+
+    // Extract all aliases to create alias mappings
+    const aliases = await extractAllAliases()
+
+    // Create a map from alias to domain variable name for easy lookup
+    const aliasToVarName: Record<string, string> = {}
+    const domainToVarName: Record<string, string> = {}
+
+    // Process each package file to build domain mappings
+    for (const file of packageFiles) {
+      const moduleName = path.basename(file, '.ts')
+      const domain = guessOriginalDomain(moduleName)
+      const domainVarName = convertDomainToVarName(domain)
+      domainToVarName[domain] = domainVarName
+    }
+
+    // Build alias mappings
+    for (const [alias, targetDomain] of Object.entries(aliases)) {
+      const targetVarName = domainToVarName[targetDomain]
+      if (targetVarName && alias !== targetDomain) {
+        // Convert alias to a valid variable name
+        const aliasVarName = convertDomainToVarName(alias)
+        // Only add if the alias var name is different from the target var name
+        if (aliasVarName !== targetVarName) {
+          aliasToVarName[aliasVarName] = targetVarName
+        }
+      }
+    }
 
     // Process each package file
     for (const file of packageFiles) {
@@ -454,6 +535,83 @@ export interface Pantry {
 
       // Add to pantry
       pantry += `  ${domainVarName}: ${moduleVarName}.${packageVarName},\n`
+    }
+
+    // Add alias properties to the interface and pantry object
+    const sortedAliases = Object.entries(aliasToVarName).sort((a, b) => a[0].localeCompare(b[0]))
+
+    if (sortedAliases.length > 0) {
+      interfaceDecl += '  // Alias properties for convenience\n'
+
+      for (const [aliasVarName, targetVarName] of sortedAliases) {
+        const targetDomain = Object.keys(domainToVarName).find(d => domainToVarName[d] === targetVarName)
+        const pkgData = pantryData[targetVarName]
+        const originalAlias = Object.keys(aliases).find(a => convertDomainToVarName(a) === aliasVarName)
+
+        // Check if the alias variable name is a valid JavaScript identifier
+        const isValidIdentifier = /^[a-z_$][\w$]*$/i.test(aliasVarName)
+        const quotedAliasVarName = isValidIdentifier ? aliasVarName : `"${aliasVarName}"`
+
+        // Generate JSDoc for alias
+        let aliasJsdoc = '  /**\n'
+        if (pkgData && targetDomain) {
+          aliasJsdoc += `   * **${originalAlias}** - Alias for \`${targetDomain}\`\n`
+          aliasJsdoc += '   *\n'
+          if (pkgData.description) {
+            aliasJsdoc += `   * ${pkgData.description}\n`
+            aliasJsdoc += '   *\n'
+          }
+          aliasJsdoc += `   * @alias_for \`pantry.${targetVarName}\`\n`
+          aliasJsdoc += `   * @domain \`${targetDomain}\`\n`
+
+          if (pkgData.programs && pkgData.programs.length > 0) {
+            const programsList = pkgData.programs.slice(0, 3).join('`, `')
+            const morePrograms = pkgData.programs.length > 3 ? `, ... (+${pkgData.programs.length - 3} more)` : ''
+            aliasJsdoc += `   * @programs \`${programsList}\`${morePrograms}\n`
+          }
+
+          aliasJsdoc += '   *\n'
+          aliasJsdoc += '   * @example\n'
+          aliasJsdoc += '   * ```typescript\n'
+          aliasJsdoc += `   * import { pantry } from 'ts-pkgx'\n`
+          aliasJsdoc += '   *\n'
+          aliasJsdoc += `   * // Both access the same package object\n`
+          if (isValidIdentifier) {
+            aliasJsdoc += `   * const pkg1 = pantry.${aliasVarName}  // via alias\n`
+          }
+          else {
+            aliasJsdoc += `   * const pkg1 = pantry["${aliasVarName}"]  // via alias\n`
+          }
+          aliasJsdoc += `   * const pkg2 = pantry.${targetVarName}  // via domain\n`
+          aliasJsdoc += `   * console.log(pkg1 === pkg2)  // true\n`
+          aliasJsdoc += '   * ```\n'
+        }
+        else {
+          aliasJsdoc += `   * **${originalAlias}** - Alias for \`${targetVarName}\`\n`
+          aliasJsdoc += '   *\n'
+          aliasJsdoc += `   * @alias_for \`pantry.${targetVarName}\`\n`
+        }
+        aliasJsdoc += '   */\n'
+
+        // Find the target type
+        const targetFile = packageFiles.find((file) => {
+          const moduleName = path.basename(file, '.ts')
+          const domain = guessOriginalDomain(moduleName)
+          return convertDomainToVarName(domain) === targetVarName
+        })
+
+        if (targetFile) {
+          const targetModuleName = path.basename(targetFile, '.ts')
+          const targetModuleVarName = toSafeVarName(targetModuleName)
+          const targetTypeName = toTypeName(targetModuleName)
+
+          interfaceDecl += aliasJsdoc
+          interfaceDecl += `  ${quotedAliasVarName}: ${targetModuleVarName}.${targetTypeName}\n\n`
+
+          // Add to pantry object (always quote property names in object literals for consistency)
+          pantry += `  ${quotedAliasVarName}: ${targetModuleVarName}.${toPackageVarName(targetModuleName)},\n`
+        }
+      }
     }
 
     // Close the interface and pantry

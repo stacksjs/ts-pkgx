@@ -1,17 +1,72 @@
-export const nodejsorgPackage = {
+/**
+ * **node** - Platform built on V8 to build network applications
+ *
+ * @domain `nodejs.org`
+ * @programs `node`
+ * @version `24.1.0` (137 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nodejs-org.md
+ * @install `sh <(curl https://pkgx.sh) node`
+ * @aliases `node`
+ * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+2 more)
+ * @companions `npmjs.com`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.node
+ * // Or access via domain
+ * const samePkg = pantry.nodejsorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "node"
+ * console.log(pkg.description) // "Platform built on V8 to build network applications"
+ * console.log(pkg.programs)    // ["node"]
+ * console.log(pkg.versions[0]) // "24.1.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/nodejs-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const nodePackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'node' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'nodejs.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Platform built on V8 to build network applications' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nodejs.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) node' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'node',
   ] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
   companions: [
     'npmjs.com',
   ] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'unicode.org^71',
     'openssl.org@1.1',
@@ -19,6 +74,10 @@ export const nodejsorgPackage = {
     'linuxgnu.org/gcc/libstdcxx',
     'gnu.org/gcc/libstdcxx',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '24.1.0',
     '24.0.2',
@@ -159,9 +218,13 @@ export const nodejsorgPackage = {
     '12.22.12',
   ] as const,
   fullPath: 'nodejs.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'node',
   ] as const,
 }
 
-export type NodejsorgPackage = typeof nodejsorgPackage
+export type NodePackage = typeof nodePackage

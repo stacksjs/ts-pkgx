@@ -289,7 +289,6 @@ import * as gnu_org from './gnu.org'
 import * as gnupg_org from './gnupg.org'
 import * as gnuplot_info from './gnuplot.info'
 import * as gnutls_org from './gnutls.org'
-import * as go from './go'
 import * as go_dev from './go.dev'
 import * as go_uber_org from './go.uber.org'
 import * as gohugo_io from './gohugo.io'
@@ -870,19 +869,23 @@ import * as zsh_sourceforge_io from './zsh.sourceforge.io'
  * Each property represents a package domain and provides comprehensive package information
  * including metadata, installation commands, available programs, versions, and dependencies.
  *
+ * Packages can be accessed by their domain name (e.g., `pantry.bunsh`) or by their aliases
+ * (e.g., `pantry.bun`) for convenience.
+ *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access Node.js package
+ * // Access Node.js package by domain
  * const node = pantry.nodejsorg
  * console.log(node.description) // "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine"
  * console.log(node.programs)    // ["node", "npm", "npx"]
  * console.log(node.versions[0]) // Latest version
  *
- * // Access Bun package
- * const bun = pantry.bunsh
- * console.log(bun.installCommand) // Installation command
+ * // Access Bun package by domain or alias
+ * const bun1 = pantry.bunsh  // by domain
+ * const bun2 = pantry.bun    // by alias (same object)
+ * console.log(bun1 === bun2) // true
  * ```
  */
 export interface Pantry {
@@ -2159,7 +2162,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "1.2.15"
    * ```
    */
-  bunsh: bun_sh.BunshPackage
+  bunsh: bun_sh.BunPackage
 
   /**
    * **bytebase** - World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps.
@@ -6727,29 +6730,6 @@ export interface Pantry {
    * ```
    */
   gnutlsorg: gnutls_org.GnutlsorgPackage
-
-  /**
-   * **go.dev** - The Go programming language
-   *
-   * @domain `go`
-   * @programs `go`, `gofmt`
-   * @version `1.24.3` (66 versions available)
-   * @install `sh <(curl https://pkgx.sh) +go.dev -- $SHELL -i`
-   * @aliases `go`
-   * @dependencies `openssl.org@1`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * const pkg = pantry.go
-   * console.log(pkg.name)        // "go.dev"
-   * console.log(pkg.description) // "The Go programming language"
-   * console.log(pkg.programs)    // ["go", "gofmt"]
-   * console.log(pkg.versions[0]) // "1.24.3"
-   * ```
-   */
-  go: go.GoPackage
 
   /**
    * **go.dev** - The Go programming language
@@ -11612,7 +11592,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "24.1.0"
    * ```
    */
-  nodejsorg: nodejs_org.NodejsorgPackage
+  nodejsorg: nodejs_org.NodePackage
 
   /**
    * **nomad** - Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
@@ -13997,7 +13977,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "3.13.3"
    * ```
    */
-  pythonorg: python_org.PythonorgPackage
+  pythonorg: python_org.PythonPackage
 
   /**
    * **pyyaml.org** - Canonical source repository for LibYAML
@@ -18296,6 +18276,3917 @@ export interface Pantry {
    */
   zshsourceforgeio: zsh_sourceforge_io.ZshsourceforgeioPackage
 
+  // Alias properties for convenience
+  /**
+   * **0age/create2crunch** - Alias for `github.com/0age-create2crunch`
+   *
+   * A Rust program for finding salts that create gas-efficient Ethereum addresses via CREATE2.
+   *
+   * @alias_for `pantry.githubcom0agecreate2crunch`
+   * @domain `github.com/0age-create2crunch`
+   * @programs `create2crunch`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry["0agecreate2crunch"]  // via alias
+   * const pkg2 = pantry.githubcom0agecreate2crunch  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  "0agecreate2crunch": github_com_0age_create2crunch.Githubcom0agecreate2crunchPackage
+
+  /**
+   * **1password cli** - Alias for `developer.1password.com/1password-cli`
+   *
+   * @alias_for `pantry.developer1passwordcom1passwordcli`
+   * @domain `developer.1password.com/1password-cli`
+   * @programs `op`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry["1password cli"]  // via alias
+   * const pkg2 = pantry.developer1passwordcom1passwordcli  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  "1password cli": developer_1password_com_1password_cli.Developer1passwordcom1passwordcliPackage
+
+  /**
+   * **1password-cli** - Alias for `developer.1password.com/1password-cli`
+   *
+   * @alias_for `pantry.developer1passwordcom1passwordcli`
+   * @domain `developer.1password.com/1password-cli`
+   * @programs `op`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry["1passwordcli"]  // via alias
+   * const pkg2 = pantry.developer1passwordcom1passwordcli  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  "1passwordcli": developer_1password_com_1password_cli.Developer1passwordcom1passwordcliPackage
+
+  /**
+   * **ack** - Alias for `beyondgrep.com`
+   *
+   * ack is a grep-like search tool optimized for source code.
+   *
+   * @alias_for `pantry.beyondgrepcom`
+   * @domain `beyondgrep.com`
+   * @programs `ack`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ack  // via alias
+   * const pkg2 = pantry.beyondgrepcom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ack: beyondgrep_com.BeyondgrepcomPackage
+
+  /**
+   * **aichat** - Alias for `crates.io/aichat`
+   *
+   * All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.
+   *
+   * @alias_for `pantry.cratesioaichat`
+   * @domain `crates.io/aichat`
+   * @programs `aichat`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.aichat  // via alias
+   * const pkg2 = pantry.cratesioaichat  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  aichat: crates_io_aichat.CratesioaichatPackage
+
+  /**
+   * **aria2c** - Alias for `aria2.github.io`
+   *
+   * aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.
+   *
+   * @alias_for `pantry.aria2githubio`
+   * @domain `aria2.github.io`
+   * @programs `aria2c`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.aria2c  // via alias
+   * const pkg2 = pantry.aria2githubio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  aria2c: aria2_github_io.Aria2githubioPackage
+
+  /**
+   * **atlantis** - Alias for `runatlantis.io`
+   *
+   * Terraform Pull Request Automation tool
+   *
+   * @alias_for `pantry.runatlantisio`
+   * @domain `runatlantis.io`
+   * @programs `atlantis`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.atlantis  // via alias
+   * const pkg2 = pantry.runatlantisio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  atlantis: runatlantis_io.RunatlantisioPackage
+
+  /**
+   * **auto-gpt** - Alias for `agpt.co`
+   *
+   * AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
+   *
+   * @alias_for `pantry.agptco`
+   * @domain `agpt.co`
+   * @programs `auto-gpt`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.autogpt  // via alias
+   * const pkg2 = pantry.agptco  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  autogpt: agpt_co.AgptcoPackage
+
+  /**
+   * **aws/cli** - Alias for `aws.amazon.com/cli`
+   *
+   * Universal Command Line Interface for Amazon Web Services
+   *
+   * @alias_for `pantry.awsamazoncomcli`
+   * @domain `aws.amazon.com/cli`
+   * @programs `aws`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.awscli  // via alias
+   * const pkg2 = pantry.awsamazoncomcli  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  awscli: aws_amazon_com_cli.AwsamazoncomcliPackage
+
+  /**
+   * **bacon** - Alias for `dystroy.org/bacon`
+   *
+   * Background rust code check
+   *
+   * @alias_for `pantry.dystroyorgbacon`
+   * @domain `dystroy.org/bacon`
+   * @programs `bacon`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.bacon  // via alias
+   * const pkg2 = pantry.dystroyorgbacon  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  bacon: dystroy_org_bacon.DystroyorgbaconPackage
+
+  /**
+   * **bake** - Alias for `crates.io/bake-rs`
+   *
+   * Simple and easy to use "script runner" written in Rust.
+   *
+   * @alias_for `pantry.cratesiobakers`
+   * @domain `crates.io/bake-rs`
+   * @programs `bake`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.bake  // via alias
+   * const pkg2 = pantry.cratesiobakers  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  bake: crates_io_bake_rs.CratesiobakersPackage
+
+  /**
+   * **bake-rs** - Alias for `crates.io/bake-rs`
+   *
+   * Simple and easy to use "script runner" written in Rust.
+   *
+   * @alias_for `pantry.cratesiobakers`
+   * @domain `crates.io/bake-rs`
+   * @programs `bake`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.bakers  // via alias
+   * const pkg2 = pantry.cratesiobakers  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  bakers: crates_io_bake_rs.CratesiobakersPackage
+
+  /**
+   * **bind9** - Alias for `isc.org/bind9`
+   *
+   * @alias_for `pantry.iscorgbind9`
+   * @domain `isc.org/bind9`
+   * @programs `arpaname`, `delv`, `dig`, ... (+26 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.bind9  // via alias
+   * const pkg2 = pantry.iscorgbind9  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  bind9: isc_org_bind9.Iscorgbind9Package
+
+  /**
+   * **bindgen** - Alias for `rust/lang.org-rust-bindgen`
+   *
+   * Automatically generates Rust FFI bindings to C (and some C++) libraries.
+   *
+   * @alias_for `pantry.rustlangorgrustbindgen`
+   * @domain `rust/lang.org-rust-bindgen`
+   * @programs `bindgen`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.bindgen  // via alias
+   * const pkg2 = pantry.rustlangorgrustbindgen  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  bindgen: rust_lang_org_rust_bindgen.RustlangorgrustbindgenPackage
+
+  /**
+   * **blacktop/lporg** - Alias for `github.com/blacktop-lporg`
+   *
+   * Organize Your macOS Launchpad Apps
+   *
+   * @alias_for `pantry.githubcomblacktoplporg`
+   * @domain `github.com/blacktop-lporg`
+   * @programs `lporg`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.blacktoplporg  // via alias
+   * const pkg2 = pantry.githubcomblacktoplporg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  blacktoplporg: github_com_blacktop_lporg.GithubcomblacktoplporgPackage
+
+  /**
+   * **blynn/nex** - Alias for `github.com/blynn-nex`
+   *
+   * 44BSD re-implementation of vi
+   *
+   * @alias_for `pantry.githubcomblynnnex`
+   * @domain `github.com/blynn-nex`
+   * @programs `nex`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.blynnnex  // via alias
+   * const pkg2 = pantry.githubcomblynnnex  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  blynnnex: github_com_blynn_nex.GithubcomblynnnexPackage
+
+  /**
+   * **bun** - Alias for `bun.sh`
+   *
+   * Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+   *
+   * @alias_for `pantry.bunsh`
+   * @domain `bun.sh`
+   * @programs `bun`, `bunx`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.bun  // via alias
+   * const pkg2 = pantry.bunsh  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  bun: bun_sh.BunPackage
+
+  /**
+   * **bw** - Alias for `bitwarden.com`
+   *
+   * Secure and free password manager for all of your devices
+   *
+   * @alias_for `pantry.bitwardencom`
+   * @domain `bitwarden.com`
+   * @programs `bw`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.bw  // via alias
+   * const pkg2 = pantry.bitwardencom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  bw: bitwarden_com.BitwardencomPackage
+
+  /**
+   * **cairo-trace** - Alias for `cairographics.org`
+   *
+   * Vector graphics library with cross-device output support
+   *
+   * @alias_for `pantry.cairographicsorg`
+   * @domain `cairographics.org`
+   * @programs `cairo-trace`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.cairotrace  // via alias
+   * const pkg2 = pantry.cairographicsorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  cairotrace: cairographics_org.CairographicsorgPackage
+
+  /**
+   * **cargo-tarpaulin** - Alias for `crates.io/cargo-tarpaulin`
+   *
+   * A code coverage tool for Rust projects
+   *
+   * @alias_for `pantry.cratesiocargotarpaulin`
+   * @domain `crates.io/cargo-tarpaulin`
+   * @programs `cargo-tarpaulin`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.cargotarpaulin  // via alias
+   * const pkg2 = pantry.cratesiocargotarpaulin  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  cargotarpaulin: crates_io_cargo_tarpaulin.CratesiocargotarpaulinPackage
+
+  /**
+   * **cb** - Alias for `getclipboard.app`
+   *
+   * 😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨𝙡𝙮 smart clipboard manager
+   *
+   * @alias_for `pantry.getclipboardapp`
+   * @domain `getclipboard.app`
+   * @programs `cb`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.cb  // via alias
+   * const pkg2 = pantry.getclipboardapp  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  cb: getclipboard_app.GetclipboardappPackage
+
+  /**
+   * **cbindgen** - Alias for `mozilla.org/cbindgen`
+   *
+   * A project for generating C bindings from Rust code
+   *
+   * @alias_for `pantry.mozillaorgcbindgen`
+   * @domain `mozilla.org/cbindgen`
+   * @programs `cbindgen`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.cbindgen  // via alias
+   * const pkg2 = pantry.mozillaorgcbindgen  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  cbindgen: mozilla_org_cbindgen.MozillaorgcbindgenPackage
+
+  /**
+   * **cephadm** - Alias for `ceph.com/cephadm`
+   *
+   * Ceph is a distributed object, block, and file storage platform
+   *
+   * @alias_for `pantry.cephcomcephadm`
+   * @domain `ceph.com/cephadm`
+   * @programs `cephadm`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.cephadm  // via alias
+   * const pkg2 = pantry.cephcomcephadm  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  cephadm: ceph_com_cephadm.CephcomcephadmPackage
+
+  /**
+   * **cli** - Alias for `aws.amazon.com/cli`
+   *
+   * Universal Command Line Interface for Amazon Web Services
+   *
+   * @alias_for `pantry.awsamazoncomcli`
+   * @domain `aws.amazon.com/cli`
+   * @programs `aws`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.cli  // via alias
+   * const pkg2 = pantry.awsamazoncomcli  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  cli: aws_amazon_com_cli.AwsamazoncomcliPackage
+
+  /**
+   * **code-cli** - Alias for `microsoft.com/code-cli`
+   *
+   * Command-line interface built-in Visual Studio Code
+   *
+   * @alias_for `pantry.microsoftcomcodecli`
+   * @domain `microsoft.com/code-cli`
+   * @programs `code`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.codecli  // via alias
+   * const pkg2 = pantry.microsoftcomcodecli  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  codecli: microsoft_com_code_cli.MicrosoftcomcodecliPackage
+
+  /**
+   * **cog** - Alias for `cocogitto.io`
+   *
+   * The Conventional Commits toolbox
+   *
+   * @alias_for `pantry.cocogittoio`
+   * @domain `cocogitto.io`
+   * @programs `cog`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.cog  // via alias
+   * const pkg2 = pantry.cocogittoio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  cog: cocogitto_io.CocogittoioPackage
+
+  /**
+   * **composer** - Alias for `getcomposer.org`
+   *
+   * Dependency Manager for PHP
+   *
+   * @alias_for `pantry.getcomposerorg`
+   * @domain `getcomposer.org`
+   * @programs `composer`, `composer.phar`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.composer  // via alias
+   * const pkg2 = pantry.getcomposerorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  composer: getcomposer_org.GetcomposerorgPackage
+
+  /**
+   * **copa** - Alias for `project/copacetic.github.io`
+   *
+   * Tool to directly patch container images given the vulnerability scanning results
+   *
+   * @alias_for `pantry.projectcopaceticgithubio`
+   * @domain `project/copacetic.github.io`
+   * @programs `copa`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.copa  // via alias
+   * const pkg2 = pantry.projectcopaceticgithubio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  copa: project_copacetic_github_io.ProjectcopaceticgithubioPackage
+
+  /**
+   * **create2crunch** - Alias for `github.com/0age-create2crunch`
+   *
+   * A Rust program for finding salts that create gas-efficient Ethereum addresses via CREATE2.
+   *
+   * @alias_for `pantry.githubcom0agecreate2crunch`
+   * @domain `github.com/0age-create2crunch`
+   * @programs `create2crunch`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.create2crunch  // via alias
+   * const pkg2 = pantry.githubcom0agecreate2crunch  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  create2crunch: github_com_0age_create2crunch.Githubcom0agecreate2crunchPackage
+
+  /**
+   * **cstool** - Alias for `capstone/engine.org`
+   *
+   * Capstone disassembly/disassembler framework for ARM, ARM64 (ARMv8), Alpha, BPF, Ethereum VM, HPPA, LoongArch, M68K, M680X, Mips, MOS65XX, PPC, RISC-V(rv32G/rv64G), SH, Sparc, SystemZ, TMS320C64X, TriCore, Webassembly, XCore and X86.
+   *
+   * @alias_for `pantry.capstoneengineorg`
+   * @domain `capstone/engine.org`
+   * @programs `cstool`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.cstool  // via alias
+   * const pkg2 = pantry.capstoneengineorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  cstool: capstone_engine_org.CapstoneengineorgPackage
+
+  /**
+   * **Cyfrin/safe-tx-hashes-util** - Alias for `github.com/Cyfrin-safe-tx-hashes-util`
+   *
+   * @alias_for `pantry.githubcomcyfrinsafetxhashesutil`
+   * @domain `github.com/Cyfrin-safe-tx-hashes-util`
+   * @programs `safe_hashes`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.cyfrinsafetxhashesutil  // via alias
+   * const pkg2 = pantry.githubcomcyfrinsafetxhashesutil  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  cyfrinsafetxhashesutil: github_com_Cyfrin_safe_tx_hashes_util.GithubcomcyfrinsafetxhashesutilPackage
+
+  /**
+   * **deno** - Alias for `deno.land`
+   *
+   * A modern runtime for JavaScript and TypeScript.
+   *
+   * @alias_for `pantry.denoland`
+   * @domain `deno.land`
+   * @programs `deno`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.deno  // via alias
+   * const pkg2 = pantry.denoland  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  deno: deno_land.DenolandPackage
+
+  /**
+   * **dev** - Alias for `pkgx.sh/dev`
+   *
+   * isolated `dev` environments
+   *
+   * @alias_for `pantry.pkgxshdev`
+   * @domain `pkgx.sh/dev`
+   * @programs `dev`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.dev  // via alias
+   * const pkg2 = pantry.pkgxshdev  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  dev: pkgx_sh_dev.PkgxshdevPackage
+
+  /**
+   * **Diniboy1123/usque** - Alias for `github.com/Diniboy1123-usque`
+   *
+   * Open-source reimplementation of the Cloudflare WARP client's MASQUE protocol.
+   *
+   * @alias_for `pantry.githubcomdiniboy1123usque`
+   * @domain `github.com/Diniboy1123-usque`
+   * @programs `usque`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.diniboy1123usque  // via alias
+   * const pkg2 = pantry.githubcomdiniboy1123usque  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  diniboy1123usque: github_com_Diniboy1123_usque.Githubcomdiniboy1123usquePackage
+
+  /**
+   * **dog** - Alias for `dns.lookup.dog`
+   *
+   * A command-line DNS client.
+   *
+   * @alias_for `pantry.dnslookupdog`
+   * @domain `dns.lookup.dog`
+   * @programs `dog`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.dog  // via alias
+   * const pkg2 = pantry.dnslookupdog  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  dog: dns_lookup_dog.DnslookupdogPackage
+
+  /**
+   * **ducker** - Alias for `crates.io/ducker`
+   *
+   * A slightly quackers Docker TUI based on k9s 🦆
+   *
+   * @alias_for `pantry.cratesioducker`
+   * @domain `crates.io/ducker`
+   * @programs `ducker`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ducker  // via alias
+   * const pkg2 = pantry.cratesioducker  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ducker: crates_io_ducker.CratesioduckerPackage
+
+  /**
+   * **elizaos** - Alias for `elizaOS.github.io`
+   *
+   * Autonomous agents for everyone
+   *
+   * @alias_for `pantry.elizaosgithubio`
+   * @domain `elizaOS.github.io`
+   * @programs `eliza`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.elizaos  // via alias
+   * const pkg2 = pantry.elizaosgithubio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  elizaos: elizaOS_github_io.ElizaosgithubioPackage
+
+  /**
+   * **elvish** - Alias for `elv.sh`
+   *
+   * Powerful scripting language & versatile interactive shell
+   *
+   * @alias_for `pantry.elvsh`
+   * @domain `elv.sh`
+   * @programs `elvish`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.elvish  // via alias
+   * const pkg2 = pantry.elvsh  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  elvish: elv_sh.ElvshPackage
+
+  /**
+   * **envchain** - Alias for `github.com/sorah-envchain`
+   *
+   * Environment variables meet macOS Keychain and gnome-keyring <3
+   *
+   * @alias_for `pantry.githubcomsorahenvchain`
+   * @domain `github.com/sorah-envchain`
+   * @programs `envchain`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.envchain  // via alias
+   * const pkg2 = pantry.githubcomsorahenvchain  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  envchain: github_com_sorah_envchain.GithubcomsorahenvchainPackage
+
+  /**
+   * **eol** - Alias for `endoflife.date`
+   *
+   * CLI to show end-of-life dates for a number of products.
+   *
+   * @alias_for `pantry.endoflifedate`
+   * @domain `endoflife.date`
+   * @programs `eol`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.eol  // via alias
+   * const pkg2 = pantry.endoflifedate  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  eol: endoflife_date.EndoflifedatePackage
+
+  /**
+   * **exr** - Alias for `openexr.com`
+   *
+   * The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.
+   *
+   * @alias_for `pantry.openexrcom`
+   * @domain `openexr.com`
+   * @programs `exr2aces`, `exrenvmap`, `exrheader`, ... (+5 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.exr  // via alias
+   * const pkg2 = pantry.openexrcom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  exr: openexr_com.OpenexrcomPackage
+
+  /**
+   * **f2py** - Alias for `numpy.org`
+   *
+   * The fundamental package for scientific computing with Python.
+   *
+   * @alias_for `pantry.numpyorg`
+   * @domain `numpy.org`
+   * @programs `f2py`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.f2py  // via alias
+   * const pkg2 = pantry.numpyorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  f2py: numpy_org.NumpyorgPackage
+
+  /**
+   * **fastfetch-cli/fastfetch** - Alias for `github.com/fastfetch-cli-fastfetch`
+   *
+   * A maintained, feature-rich and performance oriented, neofetch like system information tool.
+   *
+   * @alias_for `pantry.githubcomfastfetchclifastfetch`
+   * @domain `github.com/fastfetch-cli-fastfetch`
+   * @programs `fastfetch`, `flashfetch`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.fastfetchclifastfetch  // via alias
+   * const pkg2 = pantry.githubcomfastfetchclifastfetch  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  fastfetchclifastfetch: github_com_fastfetch_cli_fastfetch.GithubcomfastfetchclifastfetchPackage
+
+  /**
+   * **fiatjaf/nak** - Alias for `github.com/fiatjaf-nak`
+   *
+   * a command line tool for doing all things nostr
+   *
+   * @alias_for `pantry.githubcomfiatjafnak`
+   * @domain `github.com/fiatjaf-nak`
+   * @programs `nak`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.fiatjafnak  // via alias
+   * const pkg2 = pantry.githubcomfiatjafnak  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  fiatjafnak: github_com_fiatjaf_nak.GithubcomfiatjafnakPackage
+
+  /**
+   * **flamegraph** - Alias for `crates.io/flamegraph`
+   *
+   * Easy flamegraphs for Rust projects and everything else, without Perl or pipes <3
+   *
+   * @alias_for `pantry.cratesioflamegraph`
+   * @domain `crates.io/flamegraph`
+   * @programs `flamegraph`, `cargo-flamegraph`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.flamegraph  // via alias
+   * const pkg2 = pantry.cratesioflamegraph  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  flamegraph: crates_io_flamegraph.CratesioflamegraphPackage
+
+  /**
+   * **geos-config** - Alias for `libgeos.org`
+   *
+   * Geometry Engine, Open Source
+   *
+   * @alias_for `pantry.libgeosorg`
+   * @domain `libgeos.org`
+   * @programs `geos-config`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.geosconfig  // via alias
+   * const pkg2 = pantry.libgeosorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  geosconfig: libgeos_org.LibgeosorgPackage
+
+  /**
+   * **gh** - Alias for `cli.github.com`
+   *
+   * GitHub’s official command line tool
+   *
+   * @alias_for `pantry.cligithubcom`
+   * @domain `cli.github.com`
+   * @programs `gh`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.gh  // via alias
+   * const pkg2 = pantry.cligithubcom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  gh: cli_github_com.CligithubcomPackage
+
+  /**
+   * **git2** - Alias for `libgit2.org`
+   *
+   * A cross-platform, linkable library implementation of Git that you can use in your application.
+   *
+   * @alias_for `pantry.libgit2org`
+   * @domain `libgit2.org`
+   * @programs `git2`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.git2  // via alias
+   * const pkg2 = pantry.libgit2org  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  git2: libgit2_org.Libgit2orgPackage
+
+  /**
+   * **git-credential-manager** - Alias for `github.com/git-ecosystem-git-credential-manager`
+   *
+   * Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services.
+   *
+   * @alias_for `pantry.githubcomgitecosystemgitcredentialmanager`
+   * @domain `github.com/git-ecosystem-git-credential-manager`
+   * @programs `git-credential-manager`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.gitcredentialmanager  // via alias
+   * const pkg2 = pantry.githubcomgitecosystemgitcredentialmanager  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  gitcredentialmanager: github_com_git_ecosystem_git_credential_manager.GithubcomgitecosystemgitcredentialmanagerPackage
+
+  /**
+   * **git-crypt** - Alias for `agwa.name/git-crypt`
+   *
+   * Enable transparent encryption/decryption of files in a git repo
+   *
+   * @alias_for `pantry.agwanamegitcrypt`
+   * @domain `agwa.name/git-crypt`
+   * @programs `git-crypt`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.gitcrypt  // via alias
+   * const pkg2 = pantry.agwanamegitcrypt  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  gitcrypt: agwa_name_git_crypt.AgwanamegitcryptPackage
+
+  /**
+   * **git-ecosystem/git-credential-manager** - Alias for `github.com/git-ecosystem-git-credential-manager`
+   *
+   * Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services.
+   *
+   * @alias_for `pantry.githubcomgitecosystemgitcredentialmanager`
+   * @domain `github.com/git-ecosystem-git-credential-manager`
+   * @programs `git-credential-manager`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.gitecosystemgitcredentialmanager  // via alias
+   * const pkg2 = pantry.githubcomgitecosystemgitcredentialmanager  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  gitecosystemgitcredentialmanager: github_com_git_ecosystem_git_credential_manager.GithubcomgitecosystemgitcredentialmanagerPackage
+
+  /**
+   * **glauth/glauth** - Alias for `github.com/glauth-glauth`
+   *
+   * @alias_for `pantry.githubcomglauthglauth`
+   * @domain `github.com/glauth-glauth`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.glauthglauth  // via alias
+   * const pkg2 = pantry.githubcomglauthglauth  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  glauthglauth: github_com_glauth_glauth.GithubcomglauthglauthPackage
+
+  /**
+   * **gm** - Alias for `graphicsmagick.org`
+   *
+   * Image processing tools collection
+   *
+   * @alias_for `pantry.graphicsmagickorg`
+   * @domain `graphicsmagick.org`
+   * @programs `gm`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.gm  // via alias
+   * const pkg2 = pantry.graphicsmagickorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  gm: graphicsmagick_org.GraphicsmagickorgPackage
+
+  /**
+   * **go** - Alias for `go.dev`
+   *
+   * The Go programming language
+   *
+   * @alias_for `pantry.godev`
+   * @domain `go.dev`
+   * @programs `go`, `gofmt`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.go  // via alias
+   * const pkg2 = pantry.godev  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  go: go_dev.GodevPackage
+
+  /**
+   * **gofumpt** - Alias for `mvdan.cc/gofumpt`
+   *
+   * A stricter gofmt
+   *
+   * @alias_for `pantry.mvdanccgofumpt`
+   * @domain `mvdan.cc/gofumpt`
+   * @programs `gofumpt`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.gofumpt  // via alias
+   * const pkg2 = pantry.mvdanccgofumpt  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  gofumpt: mvdan_cc_gofumpt.MvdanccgofumptPackage
+
+  /**
+   * **goyacc** - Alias for `modernc.org/goyacc`
+   *
+   * Parser Generator for Go
+   *
+   * @alias_for `pantry.moderncorggoyacc`
+   * @domain `modernc.org/goyacc`
+   * @programs `goyacc`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.goyacc  // via alias
+   * const pkg2 = pantry.moderncorggoyacc  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  goyacc: modernc_org_goyacc.ModerncorggoyaccPackage
+
+  /**
+   * **gr2fonttest** - Alias for `graphite.sil.org`
+   *
+   * Graphite is a "smart font" system developed specifically to handle the complexities of lesser-known languages of the world.
+   *
+   * @alias_for `pantry.graphitesilorg`
+   * @domain `graphite.sil.org`
+   * @programs `gr2fonttest`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.gr2fonttest  // via alias
+   * const pkg2 = pantry.graphitesilorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  gr2fonttest: graphite_sil_org.GraphitesilorgPackage
+
+  /**
+   * **huggingface/cli** - Alias for `huggingface.co`
+   *
+   * The official Python client for the Huggingface Hub.
+   *
+   * @alias_for `pantry.huggingfaceco`
+   * @domain `huggingface.co`
+   * @programs `huggingface-cli`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.huggingfacecli  // via alias
+   * const pkg2 = pantry.huggingfaceco  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  huggingfacecli: huggingface_co.HuggingfacecoPackage
+
+  /**
+   * **hugo** - Alias for `gohugo.io`
+   *
+   * The world’s fastest framework for building websites.
+   *
+   * @alias_for `pantry.gohugoio`
+   * @domain `gohugo.io`
+   * @programs `hugo`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.hugo  // via alias
+   * const pkg2 = pantry.gohugoio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  hugo: gohugo_io.GohugoioPackage
+
+  /**
+   * **hx** - Alias for `helix/editor.com`
+   *
+   * A post-modern modal text editor.
+   *
+   * @alias_for `pantry.helixeditorcom`
+   * @domain `helix/editor.com`
+   * @programs `hx`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.hx  // via alias
+   * const pkg2 = pantry.helixeditorcom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  hx: helix_editor_com.HelixeditorcomPackage
+
+  /**
+   * **idevicedate** - Alias for `libimobiledevice.org`
+   *
+   * A cross-platform protocol library to communicate with iOS devices
+   *
+   * @alias_for `pantry.libimobiledeviceorg`
+   * @domain `libimobiledevice.org`
+   * @programs `idevicedate`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.idevicedate  // via alias
+   * const pkg2 = pantry.libimobiledeviceorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  idevicedate: libimobiledevice_org.LibimobiledeviceorgPackage
+
+  /**
+   * **igorshubovych/markdownlint-cli** - Alias for `github.com/igorshubovych-markdownlint-cli`
+   *
+   * CLI for Node.js style checker and lint tool for Markdown files
+   *
+   * @alias_for `pantry.githubcomigorshubovychmarkdownlintcli`
+   * @domain `github.com/igorshubovych-markdownlint-cli`
+   * @programs `markdownlint`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.igorshubovychmarkdownlintcli  // via alias
+   * const pkg2 = pantry.githubcomigorshubovychmarkdownlintcli  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  igorshubovychmarkdownlintcli: github_com_igorshubovych_markdownlint_cli.GithubcomigorshubovychmarkdownlintcliPackage
+
+  /**
+   * **invoke** - Alias for `pyinvoke.org`
+   *
+   * Pythonic task management & command execution.
+   *
+   * @alias_for `pantry.pyinvokeorg`
+   * @domain `pyinvoke.org`
+   * @programs `invoke`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.invoke  // via alias
+   * const pkg2 = pantry.pyinvokeorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  invoke: pyinvoke_org.PyinvokeorgPackage
+
+  /**
+   * **istioctl** - Alias for `istio.io`
+   *
+   * Connect, secure, control, and observe services.
+   *
+   * @alias_for `pantry.istioio`
+   * @domain `istio.io`
+   * @programs `istioctl`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.istioctl  // via alias
+   * const pkg2 = pantry.istioio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  istioctl: istio_io.IstioioPackage
+
+  /**
+   * **jags** - Alias for `mcmc/jags.sourceforge.io`
+   *
+   * Just Another Gibbs Sampler for Bayesian MCMC simulation
+   *
+   * @alias_for `pantry.mcmcjagssourceforgeio`
+   * @domain `mcmc/jags.sourceforge.io`
+   * @programs `jags`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.jags  // via alias
+   * const pkg2 = pantry.mcmcjagssourceforgeio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  jags: mcmc_jags_sourceforge_io.McmcjagssourceforgeioPackage
+
+  /**
+   * **jarun/nnn** - Alias for `github.com/jarun-nnn`
+   *
+   * Tiny, lightning fast, feature-packed file manager
+   *
+   * @alias_for `pantry.githubcomjarunnnn`
+   * @domain `github.com/jarun-nnn`
+   * @programs `nnn`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.jarunnnn  // via alias
+   * const pkg2 = pantry.githubcomjarunnnn  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  jarunnnn: github_com_jarun_nnn.GithubcomjarunnnnPackage
+
+  /**
+   * **jenkins x** - Alias for `jenkins/x.io`
+   *
+   * Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton
+   *
+   * @alias_for `pantry.jenkinsxio`
+   * @domain `jenkins/x.io`
+   * @programs `jx`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry["jenkins x"]  // via alias
+   * const pkg2 = pantry.jenkinsxio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  "jenkins x": jenkins_x_io.JenkinsxioPackage
+
+  /**
+   * **jenkins-lts** - Alias for `jenkins.io`
+   *
+   * Extendable open source continuous integration server
+   *
+   * @alias_for `pantry.jenkinsio`
+   * @domain `jenkins.io`
+   * @programs `jenkins-lts`, `jenkins-lts-cli`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.jenkinslts  // via alias
+   * const pkg2 = pantry.jenkinsio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  jenkinslts: jenkins_io.JenkinsioPackage
+
+  /**
+   * **koekeishiya/skhd** - Alias for `github.com/koekeishiya-skhd`
+   *
+   * Simple hotkey daemon for macOS
+   *
+   * @alias_for `pantry.githubcomkoekeishiyaskhd`
+   * @domain `github.com/koekeishiya-skhd`
+   * @programs `skhd`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.koekeishiyaskhd  // via alias
+   * const pkg2 = pantry.githubcomkoekeishiyaskhd  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  koekeishiyaskhd: github_com_koekeishiya_skhd.GithubcomkoekeishiyaskhdPackage
+
+  /**
+   * **ksops** - Alias for `viaduct.ai/ksops`
+   *
+   * KSOPS - A Flexible Kustomize Plugin for SOPS Encrypted Resources
+   *
+   * @alias_for `pantry.viaductaiksops`
+   * @domain `viaduct.ai/ksops`
+   * @programs `ksops`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ksops  // via alias
+   * const pkg2 = pantry.viaductaiksops  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ksops: viaduct_ai_ksops.ViaductaiksopsPackage
+
+  /**
+   * **kubectl-cnpg** - Alias for `cloudnative/pg.io`
+   *
+   * CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases within Kubernetes environments, covering the entire operational lifecycle from initial deployment to ongoing maintenance
+   *
+   * @alias_for `pantry.cloudnativepgio`
+   * @domain `cloudnative/pg.io`
+   * @programs `kubectl-cnpg`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.kubectlcnpg  // via alias
+   * const pkg2 = pantry.cloudnativepgio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  kubectlcnpg: cloudnative_pg_io.CloudnativepgioPackage
+
+  /**
+   * **kubectl-krew** - Alias for `krew.sigs.k8s.io`
+   *
+   * 📦 Find and install kubectl plugins
+   *
+   * @alias_for `pantry.krewsigsk8sio`
+   * @domain `krew.sigs.k8s.io`
+   * @programs `kubectl-krew`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.kubectlkrew  // via alias
+   * const pkg2 = pantry.krewsigsk8sio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  kubectlkrew: krew_sigs_k8s_io.Krewsigsk8sioPackage
+
+  /**
+   * **kube-linter** - Alias for `kubelinter.io`
+   *
+   * KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices.
+   *
+   * @alias_for `pantry.kubelinterio`
+   * @domain `kubelinter.io`
+   * @programs `kube-linter`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.kubelinter  // via alias
+   * const pkg2 = pantry.kubelinterio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  kubelinter: kubelinter_io.KubelinterioPackage
+
+  /**
+   * **ldap** - Alias for `openldap.org`
+   *
+   * Open source suite of directory software
+   *
+   * @alias_for `pantry.openldaporg`
+   * @domain `openldap.org`
+   * @programs `ldapcompare`, `ldapdelete`, `ldapexop`, ... (+7 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ldap  // via alias
+   * const pkg2 = pantry.openldaporg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ldap: openldap_org.OpenldaporgPackage
+
+  /**
+   * **libcap** - Alias for `kernel.org/libcap`
+   *
+   * @alias_for `pantry.kernelorglibcap`
+   * @domain `kernel.org/libcap`
+   * @programs `capsh`, `getcap`, `getpcaps`, ... (+1 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.libcap  // via alias
+   * const pkg2 = pantry.kernelorglibcap  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  libcap: kernel_org_libcap.KernelorglibcapPackage
+
+  /**
+   * **libdrm** - Alias for `dri.freedesktop.org`
+   *
+   * @alias_for `pantry.drifreedesktoporg`
+   * @domain `dri.freedesktop.org`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.libdrm  // via alias
+   * const pkg2 = pantry.drifreedesktoporg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  libdrm: dri_freedesktop_org.DrifreedesktoporgPackage
+
+  /**
+   * **liblmdb** - Alias for `openldap.org/liblmdb`
+   *
+   * Lightning memory-mapped database: key-value data store
+   *
+   * @alias_for `pantry.openldaporgliblmdb`
+   * @domain `openldap.org/liblmdb`
+   * @programs `mdb_copy`, `mdb_dump`, `mdb_load`, ... (+1 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.liblmdb  // via alias
+   * const pkg2 = pantry.openldaporgliblmdb  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  liblmdb: openldap_org_liblmdb.OpenldaporgliblmdbPackage
+
+  /**
+   * **libmatio** - Alias for `matio.sourceforge.io`
+   *
+   * C library for reading and writing MATLAB MAT files
+   *
+   * @alias_for `pantry.matiosourceforgeio`
+   * @domain `matio.sourceforge.io`
+   * @programs `matdump`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.libmatio  // via alias
+   * const pkg2 = pantry.matiosourceforgeio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  libmatio: matio_sourceforge_io.MatiosourceforgeioPackage
+
+  /**
+   * **libomp** - Alias for `openmp.llvm.org`
+   *
+   * The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
+   *
+   * @alias_for `pantry.openmpllvmorg`
+   * @domain `openmp.llvm.org`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.libomp  // via alias
+   * const pkg2 = pantry.openmpllvmorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  libomp: openmp_llvm_org.OpenmpllvmorgPackage
+
+  /**
+   * **licensee/licensed** - Alias for `github.com/licensee-licensed`
+   *
+   * @alias_for `pantry.githubcomlicenseelicensed`
+   * @domain `github.com/licensee-licensed`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.licenseelicensed  // via alias
+   * const pkg2 = pantry.githubcomlicenseelicensed  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  licenseelicensed: github_com_licensee_licensed.GithubcomlicenseelicensedPackage
+
+  /**
+   * **lporg** - Alias for `github.com/blacktop-lporg`
+   *
+   * Organize Your macOS Launchpad Apps
+   *
+   * @alias_for `pantry.githubcomblacktoplporg`
+   * @domain `github.com/blacktop-lporg`
+   * @programs `lporg`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.lporg  // via alias
+   * const pkg2 = pantry.githubcomblacktoplporg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  lporg: github_com_blacktop_lporg.GithubcomblacktoplporgPackage
+
+  /**
+   * **lucianosrp/rye-uv** - Alias for `github.com/lucianosrp-rye-uv`
+   *
+   * Simple CLI tool to migrate from Rye to Uv
+   *
+   * @alias_for `pantry.githubcomlucianosrpryeuv`
+   * @domain `github.com/lucianosrp-rye-uv`
+   * @programs `rye-uv`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.lucianosrpryeuv  // via alias
+   * const pkg2 = pantry.githubcomlucianosrpryeuv  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  lucianosrpryeuv: github_com_lucianosrp_rye_uv.GithubcomlucianosrpryeuvPackage
+
+  /**
+   * **lynx** - Alias for `invisible/island.net-lynx`
+   *
+   * Text-based web browser
+   *
+   * @alias_for `pantry.invisibleislandnetlynx`
+   * @domain `invisible/island.net-lynx`
+   * @programs `lynx`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.lynx  // via alias
+   * const pkg2 = pantry.invisibleislandnetlynx  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  lynx: invisible_island_net_lynx.InvisibleislandnetlynxPackage
+
+  /**
+   * **mako-render** - Alias for `makotemplates.org`
+   *
+   * Mako Templates for Python
+   *
+   * @alias_for `pantry.makotemplatesorg`
+   * @domain `makotemplates.org`
+   * @programs `mako-render`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.makorender  // via alias
+   * const pkg2 = pantry.makotemplatesorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  makorender: makotemplates_org.MakotemplatesorgPackage
+
+  /**
+   * **markdownlint** - Alias for `github.com/igorshubovych-markdownlint-cli`
+   *
+   * CLI for Node.js style checker and lint tool for Markdown files
+   *
+   * @alias_for `pantry.githubcomigorshubovychmarkdownlintcli`
+   * @domain `github.com/igorshubovych-markdownlint-cli`
+   * @programs `markdownlint`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.markdownlint  // via alias
+   * const pkg2 = pantry.githubcomigorshubovychmarkdownlintcli  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  markdownlint: github_com_igorshubovych_markdownlint_cli.GithubcomigorshubovychmarkdownlintcliPackage
+
+  /**
+   * **markitdown** - Alias for `microsoft.com/markitdown`
+   *
+   * Python tool for converting files and office documents to Markdown.
+   *
+   * @alias_for `pantry.microsoftcommarkitdown`
+   * @domain `microsoft.com/markitdown`
+   * @programs `markitdown`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.markitdown  // via alias
+   * const pkg2 = pantry.microsoftcommarkitdown  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  markitdown: microsoft_com_markitdown.MicrosoftcommarkitdownPackage
+
+  /**
+   * **mas** - Alias for `github.com/mas-cli-mas`
+   *
+   * :package: Mac App Store command line interface
+   *
+   * @alias_for `pantry.githubcommasclimas`
+   * @domain `github.com/mas-cli-mas`
+   * @programs `mas`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.mas  // via alias
+   * const pkg2 = pantry.githubcommasclimas  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  mas: github_com_mas_cli_mas.GithubcommasclimasPackage
+
+  /**
+   * **mas-cli/mas** - Alias for `github.com/mas-cli-mas`
+   *
+   * :package: Mac App Store command line interface
+   *
+   * @alias_for `pantry.githubcommasclimas`
+   * @domain `github.com/mas-cli-mas`
+   * @programs `mas`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.masclimas  // via alias
+   * const pkg2 = pantry.githubcommasclimas  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  masclimas: github_com_mas_cli_mas.GithubcommasclimasPackage
+
+  /**
+   * **metagpt** - Alias for `deepwisdom.ai`
+   *
+   * 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming
+   *
+   * @alias_for `pantry.deepwisdomai`
+   * @domain `deepwisdom.ai`
+   * @programs `metagpt`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.metagpt  // via alias
+   * const pkg2 = pantry.deepwisdomai  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  metagpt: deepwisdom_ai.DeepwisdomaiPackage
+
+  /**
+   * **microcks-cli** - Alias for `microcks.io`
+   *
+   * Simple CLI for interacting with Microcks test APIs
+   *
+   * @alias_for `pantry.microcksio`
+   * @domain `microcks.io`
+   * @programs `microcks-cli`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.microckscli  // via alias
+   * const pkg2 = pantry.microcksio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  microckscli: microcks_io.MicrocksioPackage
+
+  /**
+   * **midnight commander** - Alias for `midnight/commander.org`
+   *
+   * Terminal-based visual file manager
+   *
+   * @alias_for `pantry.midnightcommanderorg`
+   * @domain `midnight/commander.org`
+   * @programs `mc`, `mcdiff`, `mcedit`, ... (+1 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry["midnight commander"]  // via alias
+   * const pkg2 = pantry.midnightcommanderorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  "midnight commander": midnight_commander_org.MidnightcommanderorgPackage
+
+  /**
+   * **MilesCranmer/rip2** - Alias for `github.com/MilesCranmer-rip2`
+   *
+   * A safe and ergonomic alternative to rm
+   *
+   * @alias_for `pantry.githubcommilescranmerrip2`
+   * @domain `github.com/MilesCranmer-rip2`
+   * @programs `rip`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.milescranmerrip2  // via alias
+   * const pkg2 = pantry.githubcommilescranmerrip2  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  milescranmerrip2: github_com_MilesCranmer_rip2.Githubcommilescranmerrip2Package
+
+  /**
+   * **MinseokOh/toml-cli** - Alias for `github.com/MinseokOh-toml-cli`
+   *
+   * A simple CLI for editing and querying TOML files.
+   *
+   * @alias_for `pantry.githubcomminseokohtomlcli`
+   * @domain `github.com/MinseokOh-toml-cli`
+   * @programs `toml-cli`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.minseokohtomlcli  // via alias
+   * const pkg2 = pantry.githubcomminseokohtomlcli  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  minseokohtomlcli: github_com_MinseokOh_toml_cli.GithubcomminseokohtomlcliPackage
+
+  /**
+   * **mvn** - Alias for `maven.apache.org`
+   *
+   * Java-based project management
+   *
+   * @alias_for `pantry.mavenapacheorg`
+   * @domain `maven.apache.org`
+   * @programs `mvn`, `mvnDebug`, `mvnyjp`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.mvn  // via alias
+   * const pkg2 = pantry.mavenapacheorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  mvn: maven_apache_org.MavenapacheorgPackage
+
+  /**
+   * **mycreepy/pakku** - Alias for `github.com/mycreepy-pakku`
+   *
+   * pakku is a declarative approach to your system package managers.
+   *
+   * @alias_for `pantry.githubcommycreepypakku`
+   * @domain `github.com/mycreepy-pakku`
+   * @programs `pakku`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.mycreepypakku  // via alias
+   * const pkg2 = pantry.githubcommycreepypakku  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  mycreepypakku: github_com_mycreepy_pakku.GithubcommycreepypakkuPackage
+
+  /**
+   * **mz** - Alias for `materialize.com`
+   *
+   * Real-time Data Integration and Transformation: use SQL to transform, deliver, and act on fast-changing data.
+   *
+   * @alias_for `pantry.materializecom`
+   * @domain `materialize.com`
+   * @programs `mz`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.mz  // via alias
+   * const pkg2 = pantry.materializecom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  mz: materialize_com.MaterializecomPackage
+
+  /**
+   * **nak** - Alias for `github.com/fiatjaf-nak`
+   *
+   * a command line tool for doing all things nostr
+   *
+   * @alias_for `pantry.githubcomfiatjafnak`
+   * @domain `github.com/fiatjaf-nak`
+   * @programs `nak`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.nak  // via alias
+   * const pkg2 = pantry.githubcomfiatjafnak  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  nak: github_com_fiatjaf_nak.GithubcomfiatjafnakPackage
+
+  /**
+   * **nex** - Alias for `github.com/blynn-nex`
+   *
+   * 44BSD re-implementation of vi
+   *
+   * @alias_for `pantry.githubcomblynnnex`
+   * @domain `github.com/blynn-nex`
+   * @programs `nex`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.nex  // via alias
+   * const pkg2 = pantry.githubcomblynnnex  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  nex: github_com_blynn_nex.GithubcomblynnnexPackage
+
+  /**
+   * **ng** - Alias for `angular.dev`
+   *
+   * CLI tool for Angular
+   *
+   * @alias_for `pantry.angulardev`
+   * @domain `angular.dev`
+   * @programs `ng`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ng  // via alias
+   * const pkg2 = pantry.angulardev  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ng: angular_dev.AngulardevPackage
+
+  /**
+   * **nnn** - Alias for `github.com/jarun-nnn`
+   *
+   * Tiny, lightning fast, feature-packed file manager
+   *
+   * @alias_for `pantry.githubcomjarunnnn`
+   * @domain `github.com/jarun-nnn`
+   * @programs `nnn`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.nnn  // via alias
+   * const pkg2 = pantry.githubcomjarunnnn  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  nnn: github_com_jarun_nnn.GithubcomjarunnnnPackage
+
+  /**
+   * **nuclei** - Alias for `projectdiscovery.io/nuclei`
+   *
+   * Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.
+   *
+   * @alias_for `pantry.projectdiscoveryionuclei`
+   * @domain `projectdiscovery.io/nuclei`
+   * @programs `nuclei`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.nuclei  // via alias
+   * const pkg2 = pantry.projectdiscoveryionuclei  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  nuclei: projectdiscovery_io_nuclei.ProjectdiscoveryionucleiPackage
+
+  /**
+   * **nvim** - Alias for `neovim.io`
+   *
+   * Ambitious Vim-fork focused on extensibility and agility
+   *
+   * @alias_for `pantry.neovimio`
+   * @domain `neovim.io`
+   * @programs `nvim`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.nvim  // via alias
+   * const pkg2 = pantry.neovimio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  nvim: neovim_io.NeovimioPackage
+
+  /**
+   * **oc** - Alias for `openshift.com`
+   *
+   * The OpenShift Command Line, part of OKD
+   *
+   * @alias_for `pantry.openshiftcom`
+   * @domain `openshift.com`
+   * @programs `oc`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.oc  // via alias
+   * const pkg2 = pantry.openshiftcom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  oc: openshift_com.OpenshiftcomPackage
+
+  /**
+   * **oh-my-posh** - Alias for `ohmyposh.dev`
+   *
+   * The most customisable and low-latency cross platform/shell prompt renderer
+   *
+   * @alias_for `pantry.ohmyposhdev`
+   * @domain `ohmyposh.dev`
+   * @programs `oh-my-posh`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ohmyposh  // via alias
+   * const pkg2 = pantry.ohmyposhdev  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ohmyposh: ohmyposh_dev.OhmyposhdevPackage
+
+  /**
+   * **opa** - Alias for `openpolicyagent.org`
+   *
+   * Open Policy Agent (OPA) is an open source, general-purpose policy engine.
+   *
+   * @alias_for `pantry.openpolicyagentorg`
+   * @domain `openpolicyagent.org`
+   * @programs `opa`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.opa  // via alias
+   * const pkg2 = pantry.openpolicyagentorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  opa: openpolicyagent_org.OpenpolicyagentorgPackage
+
+  /**
+   * **open-interpreter** - Alias for `openinterpreter.com`
+   *
+   * A natural language interface for computers
+   *
+   * @alias_for `pantry.openinterpretercom`
+   * @domain `openinterpreter.com`
+   * @programs `interpreter`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.openinterpreter  // via alias
+   * const pkg2 = pantry.openinterpretercom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  openinterpreter: openinterpreter_com.OpeninterpretercomPackage
+
+  /**
+   * **opj** - Alias for `openjpeg.org`
+   *
+   * Official repository of the OpenJPEG project
+   *
+   * @alias_for `pantry.openjpegorg`
+   * @domain `openjpeg.org`
+   * @programs `opj_compress`, `opj_decompress`, `opj_dump`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.opj  // via alias
+   * const pkg2 = pantry.openjpegorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  opj: openjpeg_org.OpenjpegorgPackage
+
+  /**
+   * **ox** - Alias for `crates.io/ox`
+   *
+   * Independent Rust text editor that runs in your terminal
+   *
+   * @alias_for `pantry.cratesioox`
+   * @domain `crates.io/ox`
+   * @programs `ox`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ox  // via alias
+   * const pkg2 = pantry.cratesioox  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ox: crates_io_ox.CratesiooxPackage
+
+  /**
+   * **pack** - Alias for `buildpacks.io`
+   *
+   * CLI for building apps using Cloud Native Buildpacks
+   *
+   * @alias_for `pantry.buildpacksio`
+   * @domain `buildpacks.io`
+   * @programs `pack`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pack  // via alias
+   * const pkg2 = pantry.buildpacksio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pack: buildpacks_io.BuildpacksioPackage
+
+  /**
+   * **pakku** - Alias for `github.com/mycreepy-pakku`
+   *
+   * pakku is a declarative approach to your system package managers.
+   *
+   * @alias_for `pantry.githubcommycreepypakku`
+   * @domain `github.com/mycreepy-pakku`
+   * @programs `pakku`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pakku  // via alias
+   * const pkg2 = pantry.githubcommycreepypakku  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pakku: github_com_mycreepy_pakku.GithubcommycreepypakkuPackage
+
+  /**
+   * **par2** - Alias for `github.com/Parchive-par2cmdline`
+   *
+   * Parchive: Parity Archive Volume Set for data recovery
+   *
+   * @alias_for `pantry.githubcomparchivepar2cmdline`
+   * @domain `github.com/Parchive-par2cmdline`
+   * @programs `par2`, `par2create`, `par2verify`, ... (+1 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.par2  // via alias
+   * const pkg2 = pantry.githubcomparchivepar2cmdline  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  par2: github_com_Parchive_par2cmdline.Githubcomparchivepar2cmdlinePackage
+
+  /**
+   * **Parchive/par2cmdline** - Alias for `github.com/Parchive-par2cmdline`
+   *
+   * Parchive: Parity Archive Volume Set for data recovery
+   *
+   * @alias_for `pantry.githubcomparchivepar2cmdline`
+   * @domain `github.com/Parchive-par2cmdline`
+   * @programs `par2`, `par2create`, `par2verify`, ... (+1 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.parchivepar2cmdline  // via alias
+   * const pkg2 = pantry.githubcomparchivepar2cmdline  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  parchivepar2cmdline: github_com_Parchive_par2cmdline.Githubcomparchivepar2cmdlinePackage
+
+  /**
+   * **pcap-config** - Alias for `tcpdump.org`
+   *
+   * the LIBpcap interface to various kernel packet capture mechanism
+   *
+   * @alias_for `pantry.tcpdumporg`
+   * @domain `tcpdump.org`
+   * @programs `pcap-config`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pcapconfig  // via alias
+   * const pkg2 = pantry.tcpdumporg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pcapconfig: tcpdump_org.TcpdumporgPackage
+
+  /**
+   * **pcsc-lite** - Alias for `pcsclite.apdu.fr`
+   *
+   * @alias_for `pantry.pcscliteapdufr`
+   * @domain `pcsclite.apdu.fr`
+   * @programs `pcscd`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pcsclite  // via alias
+   * const pkg2 = pantry.pcscliteapdufr  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pcsclite: pcsclite_apdu_fr.PcscliteapdufrPackage
+
+  /**
+   * **peak/s5cmd** - Alias for `github.com/peak-s5cmd`
+   *
+   * Parallel S3 and local filesystem execution tool.
+   *
+   * @alias_for `pantry.githubcompeaks5cmd`
+   * @domain `github.com/peak-s5cmd`
+   * @programs `s5cmd`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.peaks5cmd  // via alias
+   * const pkg2 = pantry.githubcompeaks5cmd  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  peaks5cmd: github_com_peak_s5cmd.Githubcompeaks5cmdPackage
+
+  /**
+   * **periphery** - Alias for `github.com/peripheryapp-periphery`
+   *
+   * A tool to identify unused code in Swift projects.
+   *
+   * @alias_for `pantry.githubcomperipheryappperiphery`
+   * @domain `github.com/peripheryapp-periphery`
+   * @programs `periphery`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.periphery  // via alias
+   * const pkg2 = pantry.githubcomperipheryappperiphery  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  periphery: github_com_peripheryapp_periphery.GithubcomperipheryappperipheryPackage
+
+  /**
+   * **peripheryapp/periphery** - Alias for `github.com/peripheryapp-periphery`
+   *
+   * A tool to identify unused code in Swift projects.
+   *
+   * @alias_for `pantry.githubcomperipheryappperiphery`
+   * @domain `github.com/peripheryapp-periphery`
+   * @programs `periphery`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.peripheryappperiphery  // via alias
+   * const pkg2 = pantry.githubcomperipheryappperiphery  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  peripheryappperiphery: github_com_peripheryapp_periphery.GithubcomperipheryappperipheryPackage
+
+  /**
+   * **perl** - Alias for `perl.org`
+   *
+   * Highly capable, feature-rich programming language
+   *
+   * @alias_for `pantry.perlorg`
+   * @domain `perl.org`
+   * @programs `corelist`, `cpan`, `enc2xs`, ... (+27 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.perl  // via alias
+   * const pkg2 = pantry.perlorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  perl: perl_org.PerlorgPackage
+
+  /**
+   * **php** - Alias for `php.net`
+   *
+   * General-purpose scripting language
+   *
+   * @alias_for `pantry.phpnet`
+   * @domain `php.net`
+   * @programs `pear`, `pecl`, `phar`, ... (+5 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.php  // via alias
+   * const pkg2 = pantry.phpnet  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  php: php_net.PhpnetPackage
+
+  /**
+   * **pik** - Alias for `crates.io/pik`
+   *
+   * Process Interactive Kill
+   *
+   * @alias_for `pantry.cratesiopik`
+   * @domain `crates.io/pik`
+   * @programs `pik`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pik  // via alias
+   * const pkg2 = pantry.cratesiopik  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pik: crates_io_pik.CratesiopikPackage
+
+  /**
+   * **pixi** - Alias for `prefix.dev`
+   *
+   * Package management made easy
+   *
+   * @alias_for `pantry.prefixdev`
+   * @domain `prefix.dev`
+   * @programs `pixi`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pixi  // via alias
+   * const pkg2 = pantry.prefixdev  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pixi: prefix_dev.PrefixdevPackage
+
+  /**
+   * **pixlet** - Alias for `tidbyt.com`
+   *
+   * Build apps for pixel-based displays ✨
+   *
+   * @alias_for `pantry.tidbytcom`
+   * @domain `tidbyt.com`
+   * @programs `pixlet`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pixlet  // via alias
+   * const pkg2 = pantry.tidbytcom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pixlet: tidbyt_com.TidbytcomPackage
+
+  /**
+   * **pkgm** - Alias for `pkgx.sh/pkgm`
+   *
+   * Install `pkgx` packages to `/usr/local`
+   *
+   * @alias_for `pantry.pkgxshpkgm`
+   * @domain `pkgx.sh/pkgm`
+   * @programs `pkgm`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pkgm  // via alias
+   * const pkg2 = pantry.pkgxshpkgm  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pkgm: pkgx_sh_pkgm.PkgxshpkgmPackage
+
+  /**
+   * **pocket** - Alias for `pokt.network`
+   *
+   * Official implementation of the Pocket Network Protocol
+   *
+   * @alias_for `pantry.poktnetwork`
+   * @domain `pokt.network`
+   * @programs `pocket`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pocket  // via alias
+   * const pkg2 = pantry.poktnetwork  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pocket: pokt_network.PoktnetworkPackage
+
+  /**
+   * **pod** - Alias for `cocoapods.org`
+   *
+   * Dependency manager for Cocoa projects
+   *
+   * @alias_for `pantry.cocoapodsorg`
+   * @domain `cocoapods.org`
+   * @programs `pod`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pod  // via alias
+   * const pkg2 = pantry.cocoapodsorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pod: cocoapods_org.CocoapodsorgPackage
+
+  /**
+   * **poetry** - Alias for `python/poetry.org`
+   *
+   * Python packaging and dependency management made easy
+   *
+   * @alias_for `pantry.pythonpoetryorg`
+   * @domain `python/poetry.org`
+   * @programs `poetry`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.poetry  // via alias
+   * const pkg2 = pantry.pythonpoetryorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  poetry: python_poetry_org.PythonpoetryorgPackage
+
+  /**
+   * **protocol buffers** - Alias for `protobuf.dev`
+   *
+   * Protocol Buffers - Google's data interchange format
+   *
+   * @alias_for `pantry.protobufdev`
+   * @domain `protobuf.dev`
+   * @programs `protoc`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry["protocol buffers"]  // via alias
+   * const pkg2 = pantry.protobufdev  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  "protocol buffers": protobuf_dev.ProtobufdevPackage
+
+  /**
+   * **pscale** - Alias for `planetscale.com`
+   *
+   * The CLI for PlanetScale Database
+   *
+   * @alias_for `pantry.planetscalecom`
+   * @domain `planetscale.com`
+   * @programs `pscale`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pscale  // via alias
+   * const pkg2 = pantry.planetscalecom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pscale: planetscale_com.PlanetscalecomPackage
+
+  /**
+   * **pygmentize** - Alias for `pygments.org`
+   *
+   * Pygments is a generic syntax highlighter written in Python
+   *
+   * @alias_for `pantry.pygmentsorg`
+   * @domain `pygments.org`
+   * @programs `pygmentize`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.pygmentize  // via alias
+   * const pkg2 = pantry.pygmentsorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  pygmentize: pygments_org.PygmentsorgPackage
+
+  /**
+   * **qsv** - Alias for `crates.io/qsv`
+   *
+   * Ultra-fast CSV data-wrangling toolkit
+   *
+   * @alias_for `pantry.cratesioqsv`
+   * @domain `crates.io/qsv`
+   * @programs `qsv`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.qsv  // via alias
+   * const pkg2 = pantry.cratesioqsv  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  qsv: crates_io_qsv.CratesioqsvPackage
+
+  /**
+   * **remote_cmds** - Alias for `apple.com/remote_cmds`
+   *
+   * @alias_for `pantry.applecomremote_cmds`
+   * @domain `apple.com/remote_cmds`
+   * @programs `telnet`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.remote_cmds  // via alias
+   * const pkg2 = pantry.applecomremote_cmds  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  remote_cmds: apple_com_remote_cmds.Applecomremote_cmdsPackage
+
+  /**
+   * **rga** - Alias for `crates.io/ripgrep-all`
+   *
+   * rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
+   *
+   * @alias_for `pantry.cratesioripgrepall`
+   * @domain `crates.io/ripgrep-all`
+   * @programs `rga`, `rga-fzf`, `rga-fzf-open`, ... (+1 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.rga  // via alias
+   * const pkg2 = pantry.cratesioripgrepall  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  rga: crates_io_ripgrep_all.CratesioripgrepallPackage
+
+  /**
+   * **rip2** - Alias for `github.com/MilesCranmer-rip2`
+   *
+   * A safe and ergonomic alternative to rm
+   *
+   * @alias_for `pantry.githubcommilescranmerrip2`
+   * @domain `github.com/MilesCranmer-rip2`
+   * @programs `rip`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.rip2  // via alias
+   * const pkg2 = pantry.githubcommilescranmerrip2  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  rip2: github_com_MilesCranmer_rip2.Githubcommilescranmerrip2Package
+
+  /**
+   * **ripgrep-all** - Alias for `crates.io/ripgrep-all`
+   *
+   * rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
+   *
+   * @alias_for `pantry.cratesioripgrepall`
+   * @domain `crates.io/ripgrep-all`
+   * @programs `rga`, `rga-fzf`, `rga-fzf-open`, ... (+1 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ripgrepall  // via alias
+   * const pkg2 = pantry.cratesioripgrepall  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ripgrepall: crates_io_ripgrep_all.CratesioripgrepallPackage
+
+  /**
+   * **ruby** - Alias for `ruby/lang.org`
+   *
+   * Powerful, clean, object-oriented scripting language
+   *
+   * @alias_for `pantry.rubylangorg`
+   * @domain `ruby/lang.org`
+   * @programs `erb`, `irb`, `rake`, ... (+3 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ruby  // via alias
+   * const pkg2 = pantry.rubylangorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ruby: ruby_lang_org.RubylangorgPackage
+
+  /**
+   * **rucola** - Alias for `crates.io/rucola-notes`
+   *
+   * Terminal-based markdown note manager.
+   *
+   * @alias_for `pantry.cratesiorucolanotes`
+   * @domain `crates.io/rucola-notes`
+   * @programs `rucola`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.rucola  // via alias
+   * const pkg2 = pantry.cratesiorucolanotes  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  rucola: crates_io_rucola_notes.CratesiorucolanotesPackage
+
+  /**
+   * **rucola-notes** - Alias for `crates.io/rucola-notes`
+   *
+   * Terminal-based markdown note manager.
+   *
+   * @alias_for `pantry.cratesiorucolanotes`
+   * @domain `crates.io/rucola-notes`
+   * @programs `rucola`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.rucolanotes  // via alias
+   * const pkg2 = pantry.cratesiorucolanotes  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  rucolanotes: crates_io_rucola_notes.CratesiorucolanotesPackage
+
+  /**
+   * **ruff** - Alias for `astral.sh/ruff`
+   *
+   * An extremely fast Python linter and code formatter, written in Rust.
+   *
+   * @alias_for `pantry.astralshruff`
+   * @domain `astral.sh/ruff`
+   * @programs `ruff`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ruff  // via alias
+   * const pkg2 = pantry.astralshruff  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ruff: astral_sh_ruff.AstralshruffPackage
+
+  /**
+   * **rust** - Alias for `rust/lang.org`
+   *
+   * Empowering everyone to build reliable and efficient software.
+   *
+   * @alias_for `pantry.rustlangorg`
+   * @domain `rust/lang.org`
+   * @programs `cargo-clippy`, `cargo-fmt`, `clippy-driver`, ... (+7 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.rust  // via alias
+   * const pkg2 = pantry.rustlangorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  rust: rust_lang_org.RustlangorgPackage
+
+  /**
+   * **rust-bindgen** - Alias for `rust/lang.org-rust-bindgen`
+   *
+   * Automatically generates Rust FFI bindings to C (and some C++) libraries.
+   *
+   * @alias_for `pantry.rustlangorgrustbindgen`
+   * @domain `rust/lang.org-rust-bindgen`
+   * @programs `bindgen`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.rustbindgen  // via alias
+   * const pkg2 = pantry.rustlangorgrustbindgen  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  rustbindgen: rust_lang_org_rust_bindgen.RustlangorgrustbindgenPackage
+
+  /**
+   * **rye-uv** - Alias for `github.com/lucianosrp-rye-uv`
+   *
+   * Simple CLI tool to migrate from Rye to Uv
+   *
+   * @alias_for `pantry.githubcomlucianosrpryeuv`
+   * @domain `github.com/lucianosrp-rye-uv`
+   * @programs `rye-uv`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ryeuv  // via alias
+   * const pkg2 = pantry.githubcomlucianosrpryeuv  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ryeuv: github_com_lucianosrp_rye_uv.GithubcomlucianosrpryeuvPackage
+
+  /**
+   * **s3cmd** - Alias for `s3tools.org`
+   *
+   * Official s3cmd repo -- Command line tool for managing S3 compatible storage services (including Amazon S3 and CloudFront).
+   *
+   * @alias_for `pantry.s3toolsorg`
+   * @domain `s3tools.org`
+   * @programs `s3cmd`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.s3cmd  // via alias
+   * const pkg2 = pantry.s3toolsorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  s3cmd: s3tools_org.S3toolsorgPackage
+
+  /**
+   * **s5cmd** - Alias for `github.com/peak-s5cmd`
+   *
+   * Parallel S3 and local filesystem execution tool.
+   *
+   * @alias_for `pantry.githubcompeaks5cmd`
+   * @domain `github.com/peak-s5cmd`
+   * @programs `s5cmd`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.s5cmd  // via alias
+   * const pkg2 = pantry.githubcompeaks5cmd  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  s5cmd: github_com_peak_s5cmd.Githubcompeaks5cmdPackage
+
+  /**
+   * **safe_hashes** - Alias for `github.com/Cyfrin-safe-tx-hashes-util`
+   *
+   * @alias_for `pantry.githubcomcyfrinsafetxhashesutil`
+   * @domain `github.com/Cyfrin-safe-tx-hashes-util`
+   * @programs `safe_hashes`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.safe_hashes  // via alias
+   * const pkg2 = pantry.githubcomcyfrinsafetxhashesutil  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  safe_hashes: github_com_Cyfrin_safe_tx_hashes_util.GithubcomcyfrinsafetxhashesutilPackage
+
+  /**
+   * **sam** - Alias for `aws.amazon.com/sam`
+   *
+   * CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
+   *
+   * @alias_for `pantry.awsamazoncomsam`
+   * @domain `aws.amazon.com/sam`
+   * @programs `sam`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.sam  // via alias
+   * const pkg2 = pantry.awsamazoncomsam  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  sam: aws_amazon_com_sam.AwsamazoncomsamPackage
+
+  /**
+   * **samply** - Alias for `crates.io/samply`
+   *
+   * Command-line sampling profiler for macOS, Linux, and Windows
+   *
+   * @alias_for `pantry.cratesiosamply`
+   * @domain `crates.io/samply`
+   * @programs `samply`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.samply  // via alias
+   * const pkg2 = pantry.cratesiosamply  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  samply: crates_io_samply.CratesiosamplyPackage
+
+  /**
+   * **sbt** - Alias for `scala/sbt.org`
+   *
+   * sbt, the interactive build tool
+   *
+   * @alias_for `pantry.scalasbtorg`
+   * @domain `scala/sbt.org`
+   * @programs `sbt`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.sbt  // via alias
+   * const pkg2 = pantry.scalasbtorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  sbt: scala_sbt_org.ScalasbtorgPackage
+
+  /**
+   * **scryer prolog** - Alias for `scryer.pl`
+   *
+   * Modern ISO Prolog implementation written mostly in Rust
+   *
+   * @alias_for `pantry.scryerpl`
+   * @domain `scryer.pl`
+   * @programs `scryer-prolog`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry["scryer prolog"]  // via alias
+   * const pkg2 = pantry.scryerpl  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  "scryer prolog": scryer_pl.ScryerplPackage
+
+  /**
+   * **scw** - Alias for `scaleway.com`
+   *
+   * Command Line Interface for Scaleway
+   *
+   * @alias_for `pantry.scalewaycom`
+   * @domain `scaleway.com`
+   * @programs `scw`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.scw  // via alias
+   * const pkg2 = pantry.scalewaycom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  scw: scaleway_com.ScalewaycomPackage
+
+  /**
+   * **sdkman-init.sh** - Alias for `sdkman.io`
+   *
+   * The SDKMAN! Command Line Interface
+   *
+   * @alias_for `pantry.sdkmanio`
+   * @domain `sdkman.io`
+   * @programs `sdkman-init.sh`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.sdkmaninitsh  // via alias
+   * const pkg2 = pantry.sdkmanio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  sdkmaninitsh: sdkman_io.SdkmanioPackage
+
+  /**
+   * **sentry-cli** - Alias for `sentry.io`
+   *
+   * Command-line utility to interact with Sentry
+   *
+   * @alias_for `pantry.sentryio`
+   * @domain `sentry.io`
+   * @programs `sentry-cli`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.sentrycli  // via alias
+   * const pkg2 = pantry.sentryio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  sentrycli: sentry_io.SentryioPackage
+
+  /**
+   * **sfcgal-config** - Alias for `sfcgal.org`
+   *
+   * C++ wrapper library around CGAL
+   *
+   * @alias_for `pantry.sfcgalorg`
+   * @domain `sfcgal.org`
+   * @programs `sfcgal-config`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.sfcgalconfig  // via alias
+   * const pkg2 = pantry.sfcgalorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  sfcgalconfig: sfcgal_org.SfcgalorgPackage
+
+  /**
+   * **shaka-project/shaka-packager** - Alias for `github.com/shaka-project-shaka-packager`
+   *
+   * A media packaging and development framework for VOD and Live DASH and HLS applications, supporting Common Encryption for Widevine and other DRM Systems.
+   *
+   * @alias_for `pantry.githubcomshakaprojectshakapackager`
+   * @domain `github.com/shaka-project-shaka-packager`
+   * @programs `packager`, `mpd_generator`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.shakaprojectshakapackager  // via alias
+   * const pkg2 = pantry.githubcomshakaprojectshakapackager  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  shakaprojectshakapackager: github_com_shaka_project_shaka_packager.GithubcomshakaprojectshakapackagerPackage
+
+  /**
+   * **skhd** - Alias for `github.com/koekeishiya-skhd`
+   *
+   * Simple hotkey daemon for macOS
+   *
+   * @alias_for `pantry.githubcomkoekeishiyaskhd`
+   * @domain `github.com/koekeishiya-skhd`
+   * @programs `skhd`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.skhd  // via alias
+   * const pkg2 = pantry.githubcomkoekeishiyaskhd  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  skhd: github_com_koekeishiya_skhd.GithubcomkoekeishiyaskhdPackage
+
+  /**
+   * **sops** - Alias for `getsops.io`
+   *
+   * Simple and flexible tool for managing secrets
+   *
+   * @alias_for `pantry.getsopsio`
+   * @domain `getsops.io`
+   * @programs `sops`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.sops  // via alias
+   * const pkg2 = pantry.getsopsio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  sops: getsops_io.GetsopsioPackage
+
+  /**
+   * **sorah/envchain** - Alias for `github.com/sorah-envchain`
+   *
+   * Environment variables meet macOS Keychain and gnome-keyring <3
+   *
+   * @alias_for `pantry.githubcomsorahenvchain`
+   * @domain `github.com/sorah-envchain`
+   * @programs `envchain`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.sorahenvchain  // via alias
+   * const pkg2 = pantry.githubcomsorahenvchain  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  sorahenvchain: github_com_sorah_envchain.GithubcomsorahenvchainPackage
+
+  /**
+   * **speexdec** - Alias for `speex.org`
+   *
+   * Audio codec designed for speech
+   *
+   * @alias_for `pantry.speexorg`
+   * @domain `speex.org`
+   * @programs `speexdec`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.speexdec  // via alias
+   * const pkg2 = pantry.speexorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  speexdec: speex_org.SpeexorgPackage
+
+  /**
+   * **spencerkimball/stargazers** - Alias for `github.com/spencerkimball-stargazers`
+   *
+   * Analyze GitHub stars
+   *
+   * @alias_for `pantry.githubcomspencerkimballstargazers`
+   * @domain `github.com/spencerkimball-stargazers`
+   * @programs `stargazers`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.spencerkimballstargazers  // via alias
+   * const pkg2 = pantry.githubcomspencerkimballstargazers  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  spencerkimballstargazers: github_com_spencerkimball_stargazers.GithubcomspencerkimballstargazersPackage
+
+  /**
+   * **sqlite3** - Alias for `sqlite.org`
+   *
+   * Official Git mirror of the SQLite source tree
+   *
+   * @alias_for `pantry.sqliteorg`
+   * @domain `sqlite.org`
+   * @programs `sqlite3`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.sqlite3  // via alias
+   * const pkg2 = pantry.sqliteorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  sqlite3: sqlite_org.SqliteorgPackage
+
+  /**
+   * **stargazers** - Alias for `github.com/spencerkimball-stargazers`
+   *
+   * Analyze GitHub stars
+   *
+   * @alias_for `pantry.githubcomspencerkimballstargazers`
+   * @domain `github.com/spencerkimball-stargazers`
+   * @programs `stargazers`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.stargazers  // via alias
+   * const pkg2 = pantry.githubcomspencerkimballstargazers  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  stargazers: github_com_spencerkimball_stargazers.GithubcomspencerkimballstargazersPackage
+
+  /**
+   * **starpls** - Alias for `github.com/withered-magic-starpls`
+   *
+   * An LSP implementation for Starlark, the configuration language used by Bazel and Buck2.
+   *
+   * @alias_for `pantry.githubcomwitheredmagicstarpls`
+   * @domain `github.com/withered-magic-starpls`
+   * @programs `starpls`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.starpls  // via alias
+   * const pkg2 = pantry.githubcomwitheredmagicstarpls  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  starpls: github_com_withered_magic_starpls.GithubcomwitheredmagicstarplsPackage
+
+  /**
+   * **synth** - Alias for `getsynth.com`
+   *
+   * The Declarative Data Generator
+   *
+   * @alias_for `pantry.getsynthcom`
+   * @domain `getsynth.com`
+   * @programs `synth`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.synth  // via alias
+   * const pkg2 = pantry.getsynthcom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  synth: getsynth_com.GetsynthcomPackage
+
+  /**
+   * **taglib-config** - Alias for `taglib.org`
+   *
+   * TagLib Audio Meta-Data Library
+   *
+   * @alias_for `pantry.tagliborg`
+   * @domain `taglib.org`
+   * @programs `taglib-config`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.taglibconfig  // via alias
+   * const pkg2 = pantry.tagliborg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  taglibconfig: taglib_org.TagliborgPackage
+
+  /**
+   * **talosctl** - Alias for `talos.dev`
+   *
+   * CLI for out-of-band management of Kubernetes nodes created by Talos
+   *
+   * @alias_for `pantry.talosdev`
+   * @domain `talos.dev`
+   * @programs `talosctl`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.talosctl  // via alias
+   * const pkg2 = pantry.talosdev  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  talosctl: talos_dev.TalosdevPackage
+
+  /**
+   * **tb** - Alias for `tinybird.co`
+   *
+   * @alias_for `pantry.tinybirdco`
+   * @domain `tinybird.co`
+   * @programs `tb`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.tb  // via alias
+   * const pkg2 = pantry.tinybirdco  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  tb: tinybird_co.TinybirdcoPackage
+
+  /**
+   * **teller** - Alias for `tlr.dev`
+   *
+   * Cloud native secrets management for developers - never leave your command line for secrets.
+   *
+   * @alias_for `pantry.tlrdev`
+   * @domain `tlr.dev`
+   * @programs `teller`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.teller  // via alias
+   * const pkg2 = pantry.tlrdev  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  teller: tlr_dev.TlrdevPackage
+
+  /**
+   * **telnet** - Alias for `apple.com/remote_cmds`
+   *
+   * @alias_for `pantry.applecomremote_cmds`
+   * @domain `apple.com/remote_cmds`
+   * @programs `telnet`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.telnet  // via alias
+   * const pkg2 = pantry.applecomremote_cmds  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  telnet: apple_com_remote_cmds.Applecomremote_cmdsPackage
+
+  /**
+   * **tidy** - Alias for `html/tidy.org`
+   *
+   * The granddaddy of HTML tools, with support for modern standards
+   *
+   * @alias_for `pantry.htmltidyorg`
+   * @domain `html/tidy.org`
+   * @programs `tidy`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.tidy  // via alias
+   * const pkg2 = pantry.htmltidyorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  tidy: html_tidy_org.HtmltidyorgPackage
+
+  /**
+   * **tofu** - Alias for `opentofu.org`
+   *
+   * OpenTofu lets you declaratively manage your cloud infrastructure.
+   *
+   * @alias_for `pantry.opentofuorg`
+   * @domain `opentofu.org`
+   * @programs `tofu`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.tofu  // via alias
+   * const pkg2 = pantry.opentofuorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  tofu: opentofu_org.OpentofuorgPackage
+
+  /**
+   * **toml-cli** - Alias for `github.com/MinseokOh-toml-cli`
+   *
+   * A simple CLI for editing and querying TOML files.
+   *
+   * @alias_for `pantry.githubcomminseokohtomlcli`
+   * @domain `github.com/MinseokOh-toml-cli`
+   * @programs `toml-cli`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.tomlcli  // via alias
+   * const pkg2 = pantry.githubcomminseokohtomlcli  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  tomlcli: github_com_MinseokOh_toml_cli.GithubcomminseokohtomlcliPackage
+
+  /**
+   * **tsc** - Alias for `typescriptlang.org`
+   *
+   * TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
+   *
+   * @alias_for `pantry.typescriptlangorg`
+   * @domain `typescriptlang.org`
+   * @programs `tsc`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.tsc  // via alias
+   * const pkg2 = pantry.typescriptlangorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  tsc: typescriptlang_org.TypescriptlangorgPackage
+
+  /**
+   * **ty** - Alias for `astral.sh/ty`
+   *
+   * An extremely fast Python type checker and language server, written in Rust.
+   *
+   * @alias_for `pantry.astralshty`
+   * @domain `astral.sh/ty`
+   * @programs `ty`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ty  // via alias
+   * const pkg2 = pantry.astralshty  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ty: astral_sh_ty.AstralshtyPackage
+
+  /**
+   * **ucl** - Alias for `oberhumer.com/ucl`
+   *
+   * @alias_for `pantry.oberhumercomucl`
+   * @domain `oberhumer.com/ucl`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.ucl  // via alias
+   * const pkg2 = pantry.oberhumercomucl  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  ucl: oberhumer_com_ucl.OberhumercomuclPackage
+
+  /**
+   * **unrar** - Alias for `rarlab.com`
+   *
+   * @alias_for `pantry.rarlabcom`
+   * @domain `rarlab.com`
+   * @programs `unrar`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.unrar  // via alias
+   * const pkg2 = pantry.rarlabcom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  unrar: rarlab_com.RarlabcomPackage
+
+  /**
+   * **usque** - Alias for `github.com/Diniboy1123-usque`
+   *
+   * Open-source reimplementation of the Cloudflare WARP client's MASQUE protocol.
+   *
+   * @alias_for `pantry.githubcomdiniboy1123usque`
+   * @domain `github.com/Diniboy1123-usque`
+   * @programs `usque`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.usque  // via alias
+   * const pkg2 = pantry.githubcomdiniboy1123usque  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  usque: github_com_Diniboy1123_usque.Githubcomdiniboy1123usquePackage
+
+  /**
+   * **uv** - Alias for `astral.sh/uv`
+   *
+   * An extremely fast Python package and project manager, written in Rust.
+   *
+   * @alias_for `pantry.astralshuv`
+   * @domain `astral.sh/uv`
+   * @programs `uv`, `uvx`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.uv  // via alias
+   * const pkg2 = pantry.astralshuv  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  uv: astral_sh_uv.AstralshuvPackage
+
+  /**
+   * **vips** - Alias for `libvips.org`
+   *
+   * A fast image processing library with low memory needs.
+   *
+   * @alias_for `pantry.libvipsorg`
+   * @domain `libvips.org`
+   * @programs `vips`, `vipsedit`, `vipsheader`, ... (+2 more)
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.vips  // via alias
+   * const pkg2 = pantry.libvipsorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  vips: libvips_org.LibvipsorgPackage
+
+  /**
+   * **vscode cli** - Alias for `microsoft.com/code-cli`
+   *
+   * Command-line interface built-in Visual Studio Code
+   *
+   * @alias_for `pantry.microsoftcomcodecli`
+   * @domain `microsoft.com/code-cli`
+   * @programs `code`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry["vscode cli"]  // via alias
+   * const pkg2 = pantry.microsoftcomcodecli  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  "vscode cli": microsoft_com_code_cli.MicrosoftcomcodecliPackage
+
+  /**
+   * **vspipe** - Alias for `vapoursynth.com`
+   *
+   * A video processing framework with simplicity in mind
+   *
+   * @alias_for `pantry.vapoursynthcom`
+   * @domain `vapoursynth.com`
+   * @programs `vspipe`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.vspipe  // via alias
+   * const pkg2 = pantry.vapoursynthcom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  vspipe: vapoursynth_com.VapoursynthcomPackage
+
+  /**
+   * **withered-magic/starpls** - Alias for `github.com/withered-magic-starpls`
+   *
+   * An LSP implementation for Starlark, the configuration language used by Bazel and Buck2.
+   *
+   * @alias_for `pantry.githubcomwitheredmagicstarpls`
+   * @domain `github.com/withered-magic-starpls`
+   * @programs `starpls`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.witheredmagicstarpls  // via alias
+   * const pkg2 = pantry.githubcomwitheredmagicstarpls  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  witheredmagicstarpls: github_com_withered_magic_starpls.GithubcomwitheredmagicstarplsPackage
+
+  /**
+   * **wunderctl** - Alias for `wundergraph.com`
+   *
+   * WunderGraph is a Backend for Frontend Framework to optimize frontend, fullstack and backend developer workflows through API Composition.
+   *
+   * @alias_for `pantry.wundergraphcom`
+   * @domain `wundergraph.com`
+   * @programs `wunderctl`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.wunderctl  // via alias
+   * const pkg2 = pantry.wundergraphcom  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  wunderctl: wundergraph_com.WundergraphcomPackage
+
+  /**
+   * **xcodeproj** - Alias for `cocoapods.org/xcodeproj`
+   *
+   * Create and modify Xcode projects from Ruby.
+   *
+   * @alias_for `pantry.cocoapodsorgxcodeproj`
+   * @domain `cocoapods.org/xcodeproj`
+   * @programs `xcodeproj`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.xcodeproj  // via alias
+   * const pkg2 = pantry.cocoapodsorgxcodeproj  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  xcodeproj: cocoapods_org_xcodeproj.CocoapodsorgxcodeprojPackage
+
+  /**
+   * **xkbcli** - Alias for `xkbcommon.org`
+   *
+   * keymap handling library for toolkits and window systems
+   *
+   * @alias_for `pantry.xkbcommonorg`
+   * @domain `xkbcommon.org`
+   * @programs `xkbcli`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.xkbcli  // via alias
+   * const pkg2 = pantry.xkbcommonorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  xkbcli: xkbcommon_org.XkbcommonorgPackage
+
+  /**
+   * **xmlwf** - Alias for `libexpat.github.io`
+   *
+   * :herb: Fast streaming XML parser written in C99 with >90% test coverage; moved from SourceForge to GitHub
+   *
+   * @alias_for `pantry.libexpatgithubio`
+   * @domain `libexpat.github.io`
+   * @programs `xmlwf`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.xmlwf  // via alias
+   * const pkg2 = pantry.libexpatgithubio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  xmlwf: libexpat_github_io.LibexpatgithubioPackage
+
+  /**
+   * **xray-core** - Alias for `xtls.github.io`
+   *
+   * Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
+   *
+   * @alias_for `pantry.xtlsgithubio`
+   * @domain `xtls.github.io`
+   * @programs `xray`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.xraycore  // via alias
+   * const pkg2 = pantry.xtlsgithubio  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  xraycore: xtls_github_io.XtlsgithubioPackage
+
+  /**
+   * **xscrnsaver** - Alias for `x.org/xscrnsaver`
+   *
+   * @alias_for `pantry.xorgxscrnsaver`
+   * @domain `x.org/xscrnsaver`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.xscrnsaver  // via alias
+   * const pkg2 = pantry.xorgxscrnsaver  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  xscrnsaver: x_org_xscrnsaver.XorgxscrnsaverPackage
+
+  /**
+   * **zip** - Alias for `libzip.org`
+   *
+   * A C library for reading, creating, and modifying zip archives.
+   *
+   * @alias_for `pantry.libziporg`
+   * @domain `libzip.org`
+   * @programs `zipcmp`, `zipmerge`, `ziptool`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.zip  // via alias
+   * const pkg2 = pantry.libziporg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  zip: libzip_org.LibziporgPackage
+
+  /**
+   * **zola** - Alias for `getzola.org`
+   *
+   * A fast static site generator in a single binary with everything built-in. https://www.getzola.org
+   *
+   * @alias_for `pantry.getzolaorg`
+   * @domain `getzola.org`
+   * @programs `zola`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.zola  // via alias
+   * const pkg2 = pantry.getzolaorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  zola: getzola_org.GetzolaorgPackage
+
 }
 
 export type Packages = Pantry
@@ -18364,7 +22255,7 @@ export const pantry: Pantry = {
   budimanjojogithubio: budimanjojo_github_io.budimanjojogithubioPackage,
   bufbuild: buf_build.bufbuildPackage,
   buildpacksio: buildpacks_io.buildpacksioPackage,
-  bunsh: bun_sh.bunshPackage,
+  bunsh: bun_sh.bunPackage,
   bytebasecom: bytebase_com.bytebasecomPackage,
   bytereeforg: bytereef_org.bytereeforgPackage,
   caresorg: c_ares_org.caresorgPackage,
@@ -18592,7 +22483,6 @@ export const pantry: Pantry = {
   gnupgorg: gnupg_org.gnupgorgPackage,
   gnuplotinfo: gnuplot_info.gnuplotinfoPackage,
   gnutlsorg: gnutls_org.gnutlsorgPackage,
-  go: go.goPackage,
   godev: go_dev.godevPackage,
   gouberorg: go_uber_org.gouberorgPackage,
   gohugoio: gohugo_io.gohugoioPackage,
@@ -18834,7 +22724,7 @@ export const pantry: Pantry = {
   nlnetlabsnl: nlnetlabs_nl.nlnetlabsnlPackage,
   nmaporg: nmap_org.nmaporgPackage,
   node: node.nodePackage,
-  nodejsorg: nodejs_org.nodejsorgPackage,
+  nodejsorg: nodejs_org.nodePackage,
   nomadprojectio: nomadproject_io.nomadprojectioPackage,
   nongnuorg: nongnu_org.nongnuorgPackage,
   notrojgithubio: notroj_github_io.notrojgithubioPackage,
@@ -18952,7 +22842,7 @@ export const pantry: Pantry = {
   python: python.pythonPackage,
   pythonpilloworg: python_pillow_org.pythonpilloworgPackage,
   pythonpoetryorg: python_poetry_org.pythonpoetryorgPackage,
-  pythonorg: python_org.pythonorgPackage,
+  pythonorg: python_org.pythonPackage,
   pyyamlorg: pyyaml_org.pyyamlorgPackage,
   qemuorg: qemu_org.qemuorgPackage,
   qhullorg: qhull_org.qhullorgPackage,
@@ -19167,6 +23057,194 @@ export const pantry: Pantry = {
   zlibnet: zlib_net.zlibnetPackage,
   zrokio: zrok_io.zrokioPackage,
   zshsourceforgeio: zsh_sourceforge_io.zshsourceforgeioPackage,
+  "0agecreate2crunch": github_com_0age_create2crunch.githubcom0agecreate2crunchPackage,
+  "1password cli": developer_1password_com_1password_cli.developer1passwordcom1passwordcliPackage,
+  "1passwordcli": developer_1password_com_1password_cli.developer1passwordcom1passwordcliPackage,
+  ack: beyondgrep_com.beyondgrepcomPackage,
+  aichat: crates_io_aichat.cratesioaichatPackage,
+  aria2c: aria2_github_io.aria2githubioPackage,
+  atlantis: runatlantis_io.runatlantisioPackage,
+  autogpt: agpt_co.agptcoPackage,
+  awscli: aws_amazon_com_cli.awsamazoncomcliPackage,
+  bacon: dystroy_org_bacon.dystroyorgbaconPackage,
+  bake: crates_io_bake_rs.cratesiobakersPackage,
+  bakers: crates_io_bake_rs.cratesiobakersPackage,
+  bind9: isc_org_bind9.iscorgbind9Package,
+  bindgen: rust_lang_org_rust_bindgen.rustlangorgrustbindgenPackage,
+  blacktoplporg: github_com_blacktop_lporg.githubcomblacktoplporgPackage,
+  blynnnex: github_com_blynn_nex.githubcomblynnnexPackage,
+  bun: bun_sh.bunPackage,
+  bw: bitwarden_com.bitwardencomPackage,
+  cairotrace: cairographics_org.cairographicsorgPackage,
+  cargotarpaulin: crates_io_cargo_tarpaulin.cratesiocargotarpaulinPackage,
+  cb: getclipboard_app.getclipboardappPackage,
+  cbindgen: mozilla_org_cbindgen.mozillaorgcbindgenPackage,
+  cephadm: ceph_com_cephadm.cephcomcephadmPackage,
+  cli: aws_amazon_com_cli.awsamazoncomcliPackage,
+  codecli: microsoft_com_code_cli.microsoftcomcodecliPackage,
+  cog: cocogitto_io.cocogittoioPackage,
+  composer: getcomposer_org.getcomposerorgPackage,
+  copa: project_copacetic_github_io.projectcopaceticgithubioPackage,
+  create2crunch: github_com_0age_create2crunch.githubcom0agecreate2crunchPackage,
+  cstool: capstone_engine_org.capstoneengineorgPackage,
+  cyfrinsafetxhashesutil: github_com_Cyfrin_safe_tx_hashes_util.githubcomcyfrinsafetxhashesutilPackage,
+  deno: deno_land.denolandPackage,
+  dev: pkgx_sh_dev.pkgxshdevPackage,
+  diniboy1123usque: github_com_Diniboy1123_usque.githubcomdiniboy1123usquePackage,
+  dog: dns_lookup_dog.dnslookupdogPackage,
+  ducker: crates_io_ducker.cratesioduckerPackage,
+  elizaos: elizaOS_github_io.elizaosgithubioPackage,
+  elvish: elv_sh.elvshPackage,
+  envchain: github_com_sorah_envchain.githubcomsorahenvchainPackage,
+  eol: endoflife_date.endoflifedatePackage,
+  exr: openexr_com.openexrcomPackage,
+  f2py: numpy_org.numpyorgPackage,
+  fastfetchclifastfetch: github_com_fastfetch_cli_fastfetch.githubcomfastfetchclifastfetchPackage,
+  fiatjafnak: github_com_fiatjaf_nak.githubcomfiatjafnakPackage,
+  flamegraph: crates_io_flamegraph.cratesioflamegraphPackage,
+  geosconfig: libgeos_org.libgeosorgPackage,
+  gh: cli_github_com.cligithubcomPackage,
+  git2: libgit2_org.libgit2orgPackage,
+  gitcredentialmanager: github_com_git_ecosystem_git_credential_manager.githubcomgitecosystemgitcredentialmanagerPackage,
+  gitcrypt: agwa_name_git_crypt.agwanamegitcryptPackage,
+  gitecosystemgitcredentialmanager: github_com_git_ecosystem_git_credential_manager.githubcomgitecosystemgitcredentialmanagerPackage,
+  glauthglauth: github_com_glauth_glauth.githubcomglauthglauthPackage,
+  gm: graphicsmagick_org.graphicsmagickorgPackage,
+  go: go_dev.godevPackage,
+  gofumpt: mvdan_cc_gofumpt.mvdanccgofumptPackage,
+  goyacc: modernc_org_goyacc.moderncorggoyaccPackage,
+  gr2fonttest: graphite_sil_org.graphitesilorgPackage,
+  huggingfacecli: huggingface_co.huggingfacecoPackage,
+  hugo: gohugo_io.gohugoioPackage,
+  hx: helix_editor_com.helixeditorcomPackage,
+  idevicedate: libimobiledevice_org.libimobiledeviceorgPackage,
+  igorshubovychmarkdownlintcli: github_com_igorshubovych_markdownlint_cli.githubcomigorshubovychmarkdownlintcliPackage,
+  invoke: pyinvoke_org.pyinvokeorgPackage,
+  istioctl: istio_io.istioioPackage,
+  jags: mcmc_jags_sourceforge_io.mcmcjagssourceforgeioPackage,
+  jarunnnn: github_com_jarun_nnn.githubcomjarunnnnPackage,
+  "jenkins x": jenkins_x_io.jenkinsxioPackage,
+  jenkinslts: jenkins_io.jenkinsioPackage,
+  koekeishiyaskhd: github_com_koekeishiya_skhd.githubcomkoekeishiyaskhdPackage,
+  ksops: viaduct_ai_ksops.viaductaiksopsPackage,
+  kubectlcnpg: cloudnative_pg_io.cloudnativepgioPackage,
+  kubectlkrew: krew_sigs_k8s_io.krewsigsk8sioPackage,
+  kubelinter: kubelinter_io.kubelinterioPackage,
+  ldap: openldap_org.openldaporgPackage,
+  libcap: kernel_org_libcap.kernelorglibcapPackage,
+  libdrm: dri_freedesktop_org.drifreedesktoporgPackage,
+  liblmdb: openldap_org_liblmdb.openldaporgliblmdbPackage,
+  libmatio: matio_sourceforge_io.matiosourceforgeioPackage,
+  libomp: openmp_llvm_org.openmpllvmorgPackage,
+  licenseelicensed: github_com_licensee_licensed.githubcomlicenseelicensedPackage,
+  lporg: github_com_blacktop_lporg.githubcomblacktoplporgPackage,
+  lucianosrpryeuv: github_com_lucianosrp_rye_uv.githubcomlucianosrpryeuvPackage,
+  lynx: invisible_island_net_lynx.invisibleislandnetlynxPackage,
+  makorender: makotemplates_org.makotemplatesorgPackage,
+  markdownlint: github_com_igorshubovych_markdownlint_cli.githubcomigorshubovychmarkdownlintcliPackage,
+  markitdown: microsoft_com_markitdown.microsoftcommarkitdownPackage,
+  mas: github_com_mas_cli_mas.githubcommasclimasPackage,
+  masclimas: github_com_mas_cli_mas.githubcommasclimasPackage,
+  metagpt: deepwisdom_ai.deepwisdomaiPackage,
+  microckscli: microcks_io.microcksioPackage,
+  "midnight commander": midnight_commander_org.midnightcommanderorgPackage,
+  milescranmerrip2: github_com_MilesCranmer_rip2.githubcommilescranmerrip2Package,
+  minseokohtomlcli: github_com_MinseokOh_toml_cli.githubcomminseokohtomlcliPackage,
+  mvn: maven_apache_org.mavenapacheorgPackage,
+  mycreepypakku: github_com_mycreepy_pakku.githubcommycreepypakkuPackage,
+  mz: materialize_com.materializecomPackage,
+  nak: github_com_fiatjaf_nak.githubcomfiatjafnakPackage,
+  nex: github_com_blynn_nex.githubcomblynnnexPackage,
+  ng: angular_dev.angulardevPackage,
+  nnn: github_com_jarun_nnn.githubcomjarunnnnPackage,
+  nuclei: projectdiscovery_io_nuclei.projectdiscoveryionucleiPackage,
+  nvim: neovim_io.neovimioPackage,
+  oc: openshift_com.openshiftcomPackage,
+  ohmyposh: ohmyposh_dev.ohmyposhdevPackage,
+  opa: openpolicyagent_org.openpolicyagentorgPackage,
+  openinterpreter: openinterpreter_com.openinterpretercomPackage,
+  opj: openjpeg_org.openjpegorgPackage,
+  ox: crates_io_ox.cratesiooxPackage,
+  pack: buildpacks_io.buildpacksioPackage,
+  pakku: github_com_mycreepy_pakku.githubcommycreepypakkuPackage,
+  par2: github_com_Parchive_par2cmdline.githubcomparchivepar2cmdlinePackage,
+  parchivepar2cmdline: github_com_Parchive_par2cmdline.githubcomparchivepar2cmdlinePackage,
+  pcapconfig: tcpdump_org.tcpdumporgPackage,
+  pcsclite: pcsclite_apdu_fr.pcscliteapdufrPackage,
+  peaks5cmd: github_com_peak_s5cmd.githubcompeaks5cmdPackage,
+  periphery: github_com_peripheryapp_periphery.githubcomperipheryappperipheryPackage,
+  peripheryappperiphery: github_com_peripheryapp_periphery.githubcomperipheryappperipheryPackage,
+  perl: perl_org.perlorgPackage,
+  php: php_net.phpnetPackage,
+  pik: crates_io_pik.cratesiopikPackage,
+  pixi: prefix_dev.prefixdevPackage,
+  pixlet: tidbyt_com.tidbytcomPackage,
+  pkgm: pkgx_sh_pkgm.pkgxshpkgmPackage,
+  pocket: pokt_network.poktnetworkPackage,
+  pod: cocoapods_org.cocoapodsorgPackage,
+  poetry: python_poetry_org.pythonpoetryorgPackage,
+  "protocol buffers": protobuf_dev.protobufdevPackage,
+  pscale: planetscale_com.planetscalecomPackage,
+  pygmentize: pygments_org.pygmentsorgPackage,
+  qsv: crates_io_qsv.cratesioqsvPackage,
+  remote_cmds: apple_com_remote_cmds.applecomremote_cmdsPackage,
+  rga: crates_io_ripgrep_all.cratesioripgrepallPackage,
+  rip2: github_com_MilesCranmer_rip2.githubcommilescranmerrip2Package,
+  ripgrepall: crates_io_ripgrep_all.cratesioripgrepallPackage,
+  ruby: ruby_lang_org.rubylangorgPackage,
+  rucola: crates_io_rucola_notes.cratesiorucolanotesPackage,
+  rucolanotes: crates_io_rucola_notes.cratesiorucolanotesPackage,
+  ruff: astral_sh_ruff.astralshruffPackage,
+  rust: rust_lang_org.rustlangorgPackage,
+  rustbindgen: rust_lang_org_rust_bindgen.rustlangorgrustbindgenPackage,
+  ryeuv: github_com_lucianosrp_rye_uv.githubcomlucianosrpryeuvPackage,
+  s3cmd: s3tools_org.s3toolsorgPackage,
+  s5cmd: github_com_peak_s5cmd.githubcompeaks5cmdPackage,
+  safe_hashes: github_com_Cyfrin_safe_tx_hashes_util.githubcomcyfrinsafetxhashesutilPackage,
+  sam: aws_amazon_com_sam.awsamazoncomsamPackage,
+  samply: crates_io_samply.cratesiosamplyPackage,
+  sbt: scala_sbt_org.scalasbtorgPackage,
+  "scryer prolog": scryer_pl.scryerplPackage,
+  scw: scaleway_com.scalewaycomPackage,
+  sdkmaninitsh: sdkman_io.sdkmanioPackage,
+  sentrycli: sentry_io.sentryioPackage,
+  sfcgalconfig: sfcgal_org.sfcgalorgPackage,
+  shakaprojectshakapackager: github_com_shaka_project_shaka_packager.githubcomshakaprojectshakapackagerPackage,
+  skhd: github_com_koekeishiya_skhd.githubcomkoekeishiyaskhdPackage,
+  sops: getsops_io.getsopsioPackage,
+  sorahenvchain: github_com_sorah_envchain.githubcomsorahenvchainPackage,
+  speexdec: speex_org.speexorgPackage,
+  spencerkimballstargazers: github_com_spencerkimball_stargazers.githubcomspencerkimballstargazersPackage,
+  sqlite3: sqlite_org.sqliteorgPackage,
+  stargazers: github_com_spencerkimball_stargazers.githubcomspencerkimballstargazersPackage,
+  starpls: github_com_withered_magic_starpls.githubcomwitheredmagicstarplsPackage,
+  synth: getsynth_com.getsynthcomPackage,
+  taglibconfig: taglib_org.tagliborgPackage,
+  talosctl: talos_dev.talosdevPackage,
+  tb: tinybird_co.tinybirdcoPackage,
+  teller: tlr_dev.tlrdevPackage,
+  telnet: apple_com_remote_cmds.applecomremote_cmdsPackage,
+  tidy: html_tidy_org.htmltidyorgPackage,
+  tofu: opentofu_org.opentofuorgPackage,
+  tomlcli: github_com_MinseokOh_toml_cli.githubcomminseokohtomlcliPackage,
+  tsc: typescriptlang_org.typescriptlangorgPackage,
+  ty: astral_sh_ty.astralshtyPackage,
+  ucl: oberhumer_com_ucl.oberhumercomuclPackage,
+  unrar: rarlab_com.rarlabcomPackage,
+  usque: github_com_Diniboy1123_usque.githubcomdiniboy1123usquePackage,
+  uv: astral_sh_uv.astralshuvPackage,
+  vips: libvips_org.libvipsorgPackage,
+  "vscode cli": microsoft_com_code_cli.microsoftcomcodecliPackage,
+  vspipe: vapoursynth_com.vapoursynthcomPackage,
+  witheredmagicstarpls: github_com_withered_magic_starpls.githubcomwitheredmagicstarplsPackage,
+  wunderctl: wundergraph_com.wundergraphcomPackage,
+  xcodeproj: cocoapods_org_xcodeproj.cocoapodsorgxcodeprojPackage,
+  xkbcli: xkbcommon_org.xkbcommonorgPackage,
+  xmlwf: libexpat_github_io.libexpatgithubioPackage,
+  xraycore: xtls_github_io.xtlsgithubioPackage,
+  xscrnsaver: x_org_xscrnsaver.xorgxscrnsaverPackage,
+  zip: libzip_org.libziporgPackage,
+  zola: getzola_org.getzolaorgPackage,
 }
 
 export const packages: Packages = pantry

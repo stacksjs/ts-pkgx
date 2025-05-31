@@ -1,17 +1,66 @@
-export const bunshPackage = {
+/**
+ * **bun** - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+ *
+ * @domain `bun.sh`
+ * @programs `bun`, `bunx`
+ * @version `1.2.15` (119 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bun-sh.md
+ * @install `sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i`
+ * @aliases `bun`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.bun
+ * // Or access via domain
+ * const samePkg = pantry.bunsh
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "bun"
+ * console.log(pkg.description) // "Incredibly fast JavaScript runtime, bundler, te..."
+ * console.log(pkg.programs)    // ["bun", "bunx"]
+ * console.log(pkg.versions[0]) // "1.2.15" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/bun-sh.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const bunPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'bun' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'bun.sh' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bun.sh/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'bun',
     'bunx',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.2.15',
     '1.2.14',
@@ -134,9 +183,13 @@ export const bunshPackage = {
     '0.5.6',
   ] as const,
   fullPath: 'bun.sh' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'bun',
   ] as const,
 }
 
-export type BunshPackage = typeof bunshPackage
+export type BunPackage = typeof bunPackage

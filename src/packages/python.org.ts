@@ -1,19 +1,74 @@
-export const pythonorgPackage = {
+/**
+ * **python** - The Python programming language
+ *
+ * @domain `python.org`
+ * @programs `python`, `python{{ version.major }}`, `python{{ version.marketing }}`
+ * @version `3.13.3` (145 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/python-org.md
+ * @install `sh <(curl https://pkgx.sh) +python.org -- $SHELL -i`
+ * @aliases `python`
+ * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+8 more)
+ * @companions `pip.pypa.io`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.python
+ * // Or access via domain
+ * const samePkg = pantry.pythonorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "python"
+ * console.log(pkg.description) // "The Python programming language"
+ * console.log(pkg.programs)    // ["python", "python{{ version.major }}", ...]
+ * console.log(pkg.versions[0]) // "3.13.3" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/python-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const pythonPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'python' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'python.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The Python programming language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/python.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +python.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'python',
     'python{{ version.major }}',
     'python{{ version.marketing }}',
   ] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
   companions: [
     'pip.pypa.io',
   ] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'zlib.net@1',
     'sourceware.org/bzip2@1',
@@ -27,6 +82,10 @@ export const pythonorgPackage = {
     'invisible-island.net/ncurses@6',
     'tcl-lang.org@8',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '3.13.3',
     '3.13.2',
@@ -175,9 +234,13 @@ export const pythonorgPackage = {
     '2.7.18',
   ] as const,
   fullPath: 'python.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'python',
   ] as const,
 }
 
-export type PythonorgPackage = typeof pythonorgPackage
+export type PythonPackage = typeof pythonPackage
