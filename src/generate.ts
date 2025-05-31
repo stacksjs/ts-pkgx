@@ -315,11 +315,35 @@ export async function generateIndex(): Promise<string | null> {
     // Create the imports section
     let imports = ''
 
-    // Create the interface declaration
-    let interfaceDecl = 'export interface Pantry {\n'
+    // Create the interface declaration with comprehensive JSDoc
+    let interfaceDecl = `/**
+ * The Pantry interface provides access to all available pkgx packages.
+ * Each property represents a package domain and provides comprehensive package information
+ * including metadata, installation commands, available programs, versions, and dependencies.
+ *
+ * @example
+ * \`\`\`typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access Node.js package
+ * const node = pantry.nodejsorg
+ * console.log(node.description) // "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine"
+ * console.log(node.programs)    // ["node", "npm", "npx"]
+ * console.log(node.versions[0]) // Latest version
+ *
+ * // Access Bun package
+ * const bun = pantry.bunsh
+ * console.log(bun.installCommand) // Installation command
+ * \`\`\`
+ */
+export interface Pantry {
+`
 
     // Create the pantry object
     let pantry = 'export const pantry: Pantry = {\n'
+
+    // Import pantry to get package data for documentation
+    const pantryData = await importPantry()
 
     // Process each package file
     for (const file of packageFiles) {
@@ -335,8 +359,98 @@ export async function generateIndex(): Promise<string | null> {
       // Add the import
       imports += `import * as ${moduleVarName} from './${moduleName}'\n`
 
-      // Add the interface property
-      interfaceDecl += `  ${domainVarName}: ${moduleVarName}.${typeName}\n`
+      // Get package data for JSDoc
+      const pkgData = pantryData[domainVarName]
+
+      // Generate comprehensive JSDoc for this package
+      let jsdoc = '  /**\n'
+
+      if (pkgData) {
+        // Package name and description
+        jsdoc += `   * **${pkgData.name || domain}**${pkgData.description ? ` - ${pkgData.description}` : ''}\n`
+        jsdoc += '   *\n'
+
+        // Domain information
+        jsdoc += `   * @domain \`${domain}\`\n`
+
+        // Programs provided
+        if (pkgData.programs && pkgData.programs.length > 0) {
+          const programsList = pkgData.programs.slice(0, 5).join('`, `')
+          const morePrograms = pkgData.programs.length > 5 ? `, ... (+${pkgData.programs.length - 5} more)` : ''
+          jsdoc += `   * @programs \`${programsList}\`${morePrograms}\n`
+        }
+
+        // Latest version
+        if (pkgData.versions && pkgData.versions.length > 0) {
+          jsdoc += `   * @version \`${pkgData.versions[0]}\` (${pkgData.versions.length} versions available)\n`
+        }
+
+        // Installation command
+        if (pkgData.installCommand) {
+          jsdoc += `   * @install \`${pkgData.installCommand}\`\n`
+        }
+
+        // Aliases
+        if (pkgData.aliases && pkgData.aliases.length > 0) {
+          jsdoc += `   * @aliases ${pkgData.aliases.map(a => `\`${a}\``).join(', ')}\n`
+        }
+
+        // Homepage URL
+        if (pkgData.homepageUrl) {
+          jsdoc += `   * @homepage ${pkgData.homepageUrl}\n`
+        }
+
+        // Dependencies
+        if (pkgData.dependencies && pkgData.dependencies.length > 0) {
+          const depsList = pkgData.dependencies.slice(0, 3).join('`, `')
+          const moreDeps = pkgData.dependencies.length > 3 ? `, ... (+${pkgData.dependencies.length - 3} more)` : ''
+          jsdoc += `   * @dependencies \`${depsList}\`${moreDeps}\n`
+        }
+
+        // Companions
+        if (pkgData.companions && pkgData.companions.length > 0) {
+          const companionsList = pkgData.companions.slice(0, 3).join('`, `')
+          const moreCompanions = pkgData.companions.length > 3 ? `, ... (+${pkgData.companions.length - 3} more)` : ''
+          jsdoc += `   * @companions \`${companionsList}\`${moreCompanions}\n`
+        }
+
+        jsdoc += '   *\n'
+        jsdoc += '   * @example\n'
+        jsdoc += '   * ```typescript\n'
+        jsdoc += `   * import { pantry } from 'ts-pkgx'\n`
+        jsdoc += '   *\n'
+        jsdoc += `   * const pkg = pantry.${domainVarName}\n`
+        jsdoc += `   * console.log(pkg.name)        // "${pkgData.name || domain}"\n`
+        if (pkgData.description) {
+          const shortDesc = pkgData.description.length > 50 ? `${pkgData.description.substring(0, 47)}...` : pkgData.description
+          jsdoc += `   * console.log(pkg.description) // "${shortDesc}"\n`
+        }
+        if (pkgData.programs && pkgData.programs.length > 0) {
+          jsdoc += `   * console.log(pkg.programs)    // [${pkgData.programs.slice(0, 2).map(p => `"${p}"`).join(', ')}${pkgData.programs.length > 2 ? ', ...' : ''}]\n`
+        }
+        if (pkgData.versions && pkgData.versions.length > 0) {
+          jsdoc += `   * console.log(pkg.versions[0]) // "${pkgData.versions[0]}"\n`
+        }
+        jsdoc += '   * ```\n'
+      }
+      else {
+        // Fallback for packages without data
+        jsdoc += `   * **${domain}** - pkgx package\n`
+        jsdoc += '   *\n'
+        jsdoc += `   * @domain \`${domain}\`\n`
+        jsdoc += '   *\n'
+        jsdoc += '   * @example\n'
+        jsdoc += '   * ```typescript\n'
+        jsdoc += `   * import { pantry } from 'ts-pkgx'\n`
+        jsdoc += `   * const pkg = pantry.${domainVarName}\n`
+        jsdoc += '   * ```\n'
+      }
+
+      jsdoc += '   */\n'
+
+      // Add the interface property with JSDoc
+      interfaceDecl += jsdoc
+      interfaceDecl += `  ${domainVarName}: ${moduleVarName}.${typeName}\n\n`
 
       // Add to pantry
       pantry += `  ${domainVarName}: ${moduleVarName}.${packageVarName},\n`
