@@ -1830,7 +1830,6 @@ export interface Pantry {
    * @domain `bittensor.com`
    * @version `9.7.0` (63 versions available)
    * @install `sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i`
-   * @aliases `Bittensor`
    * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
    *
    * @example
@@ -1843,7 +1842,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "9.7.0"
    * ```
    */
-  bittensorcom: bittensor_com.BittensorPackage
+  bittensorcom: bittensor_com.BittensorcomPackage
 
   /**
    * **bw** - Secure and free password manager for all of your devices
@@ -9871,7 +9870,7 @@ export interface Pantry {
    * @programs `mc`, `mcdiff`, `mcedit`, `mcview`
    * @version `4.8.33` (6 versions available)
    * @install `sh <(curl https://pkgx.sh) +midnight-commander.org -- $SHELL -i`
-   * @aliases `Midnight Commander`, `midnight commander`
+   * @aliases `midnight commander`
    * @dependencies `invisible-island.net/ncurses`, `gnome.org/glib>=2.30`, `gnu.org/gettext>=0.18.2`
    *
    * @example
@@ -9885,7 +9884,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "4.8.33"
    * ```
    */
-  midnightcommanderorg: midnight_commander_org.MidnightCommanderPackage
+  midnightcommanderorg: midnight_commander_org.MidnightcommanderPackage
 
   /**
    * **minio** - MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.
@@ -11503,7 +11502,6 @@ export interface Pantry {
    * @programs `openssl`, `c_rehash`
    * @version `3.5.0` (30 versions available)
    * @install `sh <(curl https://pkgx.sh) +openssl.org -- $SHELL -i`
-   * @aliases `OpenSSL`
    * @dependencies `curl.se/ca-certs`
    *
    * @example
@@ -11517,7 +11515,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "3.5.0"
    * ```
    */
-  opensslorg: openssl_org.OpenSSLPackage
+  opensslorg: openssl_org.OpensslorgPackage
 
   /**
    * **tofu** - OpenTofu lets you declaratively manage your cloud infrastructure.
@@ -16002,7 +16000,6 @@ export interface Pantry {
    * @domain `vanna.ai`
    * @version `0.7.9` (42 versions available)
    * @install `sh <(curl https://pkgx.sh) +vanna.ai -- $SHELL -i`
-   * @aliases `Vanna`
    * @dependencies `python.org~3.12`, `linuxopenmp.llvm.org@17`, `openmp.llvm.org@17`
    *
    * @example
@@ -16015,7 +16012,7 @@ export interface Pantry {
    * console.log(pkg.versions[0]) // "0.7.9"
    * ```
    */
-  vannaai: vanna_ai.VannaPackage
+  vannaai: vanna_ai.VannaaiPackage
 
   /**
    * **vspipe** - A video processing framework with simplicity in mind
@@ -17563,26 +17560,6 @@ export interface Pantry {
    * ```
    */
   bitcoin: bitcoin_org.BitcoinPackage
-
-  /**
-   * **Bittensor** - Alias for `bittensor.com`
-   *
-   * Internet-scale Neural Networks
-   *
-   * @alias_for `pantry.bittensorcom`
-   * @domain `bittensor.com`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.bittensor  // via alias
-   * const pkg2 = pantry.bittensorcom  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
-   */
-  bittensor: bittensor_com.BittensorPackage
 
   /**
    * **bore** - Alias for `bore.pub`
@@ -21241,7 +21218,7 @@ export interface Pantry {
    * console.log(pkg1 === pkg2)  // true
    * ```
    */
-  "midnight commander": midnight_commander_org.MidnightCommanderPackage
+  "midnight commander": midnight_commander_org.MidnightcommanderPackage
 
   /**
    * **mise** - Alias for `mise.jdx.dev`
@@ -21809,27 +21786,6 @@ export interface Pantry {
    * ```
    */
   openslide: openslide_org.OpenslidePackage
-
-  /**
-   * **OpenSSL** - Alias for `openssl.org`
-   *
-   * TLS/SSL and crypto library with QUIC APIs
-   *
-   * @alias_for `pantry.opensslorg`
-   * @domain `openssl.org`
-   * @programs `openssl`, `c_rehash`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.openssl  // via alias
-   * const pkg2 = pantry.opensslorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
-   */
-  openssl: openssl_org.OpenSSLPackage
 
   /**
    * **opj** - Alias for `openjpeg.org`
@@ -24666,26 +24622,6 @@ export interface Pantry {
   vamp: vamp_plugins_org.VampPackage
 
   /**
-   * **Vanna** - Alias for `vanna.ai`
-   *
-   * 🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using RAG 🔄.
-   *
-   * @alias_for `pantry.vannaai`
-   * @domain `vanna.ai`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.vanna  // via alias
-   * const pkg2 = pantry.vannaai  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
-   */
-  vanna: vanna_ai.VannaPackage
-
-  /**
    * **vault** - Alias for `vaultproject.io`
    *
    * A tool for secrets management, encryption as a service, and privileged access management
@@ -25414,7 +25350,7 @@ export const pantry: Pantry = {
   beyondgrepcom: beyondgrep_com.ackPackage,
   biomejsdev: biomejs_dev.biomePackage,
   bitcoinorg: bitcoin_org.bitcoinPackage,
-  bittensorcom: bittensor_com.BittensorPackage,
+  bittensorcom: bittensor_com.bittensorcomPackage,
   bitwardencom: bitwarden_com.bwPackage,
   blake2net: blake2_net.blake2netPackage,
   bloomreachcom: bloomreach_com.bloomreachcomPackage,
@@ -25855,7 +25791,7 @@ export const pantry: Pantry = {
   microsoftcom: microsoft_com.microsoftcomPackage,
   microsoftcomcodecli: microsoft_com_code_cli.microsoftcomcodecliPackage,
   microsoftcommarkitdown: microsoft_com_markitdown.microsoftcommarkitdownPackage,
-  midnightcommanderorg: midnight_commander_org.MidnightCommanderPackage,
+  midnightcommanderorg: midnight_commander_org.midnightcommanderPackage,
   minio: min_io.minioPackage,
   misejdxdev: mise_jdx_dev.misePackage,
   mitmproxyorg: mitmproxy_org.mitmproxyPackage,
@@ -25940,7 +25876,7 @@ export const pantry: Pantry = {
   openshiftcom: openshift_com.ocPackage,
   openslideorg: openslide_org.openslidePackage,
   opensshcom: openssh_com.opensshcomPackage,
-  opensslorg: openssl_org.OpenSSLPackage,
+  opensslorg: openssl_org.opensslorgPackage,
   opentofuorg: opentofu_org.tofuPackage,
   openvpnnet: openvpn_net.openvpnnetPackage,
   operatorframeworkio: operatorframework_io.operatorframeworkioPackage,
@@ -25986,7 +25922,7 @@ export const pantry: Pantry = {
   podmanio: podman_io.podmanPackage,
   poktnetwork: pokt_network.pocketPackage,
   popplerfreedesktoporg: poppler_freedesktop_org.popplerfreedesktoporgPackage,
-  portaudiocom: portaudio_com.PortAudioPackage,
+  portaudiocom: portaudio_com.portAudioPackage,
   postgresqlorg: postgresql_org.postgresqlorgPackage,
   postgrestorg: postgrest_org.postgrestPackage,
   practicalschemenet: practical_scheme_net.practicalschemenetPackage,
@@ -26174,7 +26110,7 @@ export const pantry: Pantry = {
   valesh: vale_sh.valePackage,
   valkeyio: valkey_io.valkeyPackage,
   vamppluginsorg: vamp_plugins_org.vampPackage,
-  vannaai: vanna_ai.VannaPackage,
+  vannaai: vanna_ai.vannaaiPackage,
   vapoursynthcom: vapoursynth_com.vspipePackage,
   vaultprojectio: vaultproject_io.vaultPackage,
   vclustercom: vcluster_com.vclusterPackage,
@@ -26257,7 +26193,6 @@ export const pantry: Pantry = {
   bcrypt: bcrypt_sourceforge_net.bcryptPackage,
   biome: biomejs_dev.biomePackage,
   bitcoin: bitcoin_org.bitcoinPackage,
-  bittensor: bittensor_com.BittensorPackage,
   bore: bore_pub.borePackage,
   buf: buf_build.bufPackage,
   bytebase: bytebase_com.bytebasePackage,
@@ -26432,7 +26367,7 @@ export const pantry: Pantry = {
   metagpt: deepwisdom_ai.metagptPackage,
   micro: micro_editor_github_io.microPackage,
   microckscli: microcks_io.microckscliPackage,
-  "midnight commander": midnight_commander_org.MidnightCommanderPackage,
+  "midnight commander": midnight_commander_org.midnightcommanderPackage,
   mise: mise_jdx_dev.misePackage,
   mitmproxy: mitmproxy_org.mitmproxyPackage,
   mkcert: mkcert_dev.mkcertPackage,
@@ -26460,7 +26395,6 @@ export const pantry: Pantry = {
   openapigenerator: openapi_generator_tech.openapigeneratorPackage,
   opensearch: opensearch_org.opensearchPackage,
   openslide: openslide_org.openslidePackage,
-  openssl: openssl_org.OpenSSLPackage,
   opj: openjpeg_org.opjPackage,
   oras: oras_land.orasPackage,
   ord: ordinals_com.ordPackage,
@@ -26487,7 +26421,7 @@ export const pantry: Pantry = {
   pod: cocoapods_org.podPackage,
   podman: podman_io.podmanPackage,
   poetry: python_poetry_org.poetryPackage,
-  portaudio: portaudio_com.PortAudioPackage,
+  portaudio: portaudio_com.portAudioPackage,
   postgrest: postgrest_org.postgrestPackage,
   precommit: pre_commit_com.precommitPackage,
   prettier: prettier_io.prettierPackage,
@@ -26596,7 +26530,6 @@ export const pantry: Pantry = {
   vale: vale_sh.valePackage,
   valkey: valkey_io.valkeyPackage,
   vamp: vamp_plugins_org.vampPackage,
-  vanna: vanna_ai.VannaPackage,
   vault: vaultproject_io.vaultPackage,
   vcluster: vcluster_com.vclusterPackage,
   velero: velero_io.veleroPackage,

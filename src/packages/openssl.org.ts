@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openssl-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openssl.org -- $SHELL -i`
- * @aliases `OpenSSL`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.OpenSSL
- * // Or access via domain
- * const samePkg = pantry.opensslorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.opensslorg
  * console.log(pkg.name)        // "OpenSSL"
  * console.log(pkg.description) // "TLS/SSL and crypto library with QUIC APIs"
  * console.log(pkg.programs)    // ["openssl", "c_rehash"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openssl-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const OpenSSLPackage = {
+export const opensslorgPackage = {
   /**
    * The display name of this package.
    */
@@ -101,14 +96,8 @@ export const OpenSSLPackage = {
     '1.1.1t',
     '1.1.1s',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'OpenSSL',
-  ] as const,
   fullPath: 'openssl.org' as const,
+  aliases: [] as const,
 }
 
-export type OpenSSLPackage = typeof OpenSSLPackage
+export type OpensslorgPackage = typeof opensslorgPackage

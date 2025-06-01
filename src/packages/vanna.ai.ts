@@ -6,18 +6,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vanna-ai.md
  *
  * @install `sh <(curl https://pkgx.sh) +vanna.ai -- $SHELL -i`
- * @aliases `Vanna`
  * @dependencies `python.org~3.12`, `linuxopenmp.llvm.org@17`, `openmp.llvm.org@17`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.Vanna
- * // Or access via domain
- * const samePkg = pantry.vannaai
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.vannaai
  * console.log(pkg.name)        // "Vanna"
  * console.log(pkg.description) // "🤖 Chat with your SQL database 📊. Accurate Tex..."
  * console.log(pkg.versions[0]) // "0.7.9" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/vanna-ai.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const VannaPackage = {
+export const vannaaiPackage = {
   /**
    * The display name of this package.
    */
@@ -106,14 +101,8 @@ export const VannaPackage = {
     '0.0.33',
     '0.0.32',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'Vanna',
-  ] as const,
   fullPath: 'vanna.ai' as const,
+  aliases: [] as const,
 }
 
-export type VannaPackage = typeof VannaPackage
+export type VannaaiPackage = typeof vannaaiPackage

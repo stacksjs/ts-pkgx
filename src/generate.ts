@@ -1097,7 +1097,14 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
         // Create install command
         const installCmd = `\`pkgx ${pkg.name || domain}\``
 
-        content += `| **[${domain}](./packages/${domain}.md)**${aliases} | ${description} | ${programs} | ${versionInfo} | ${installCmd} |\n`
+        // Create safe filename for package link in catalog
+        let safeCatalogFilename = domain
+        if (/^\d/.test(safeCatalogFilename)) {
+          safeCatalogFilename = `pkg-${safeCatalogFilename}`
+        }
+        safeCatalogFilename = safeCatalogFilename.replace(/[^\w.-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
+
+        content += `| **[${domain}](./packages/${safeCatalogFilename}.md)**${aliases} | ${description} | ${programs} | ${versionInfo} | ${installCmd} |\n`
       }
       catch (error) {
         console.error(`Error processing ${domain}:`, error)
@@ -1207,8 +1214,24 @@ async function generatePackagePages(outputDir: string): Promise<string[]> {
       continue
     }
     try {
-      // Use the domain variable name for the filename to ensure consistency
-      const filename = `${domainVarName}.md`
+      // Create a safe filename that doesn't start with numbers or contain spaces
+      let safeFilename = domainVarName
+
+      // If filename starts with a number, prepend with 'pkg-'
+      if (/^\d/.test(safeFilename)) {
+        safeFilename = `pkg-${safeFilename}`
+      }
+
+      // Replace spaces and other problematic characters with hyphens
+      safeFilename = safeFilename.replace(/[^\w-]/g, '-')
+
+      // Ensure it doesn't have consecutive hyphens
+      safeFilename = safeFilename.replace(/-+/g, '-')
+
+      // Remove leading/trailing hyphens
+      safeFilename = safeFilename.replace(/^-+|-+$/g, '')
+
+      const filename = `${safeFilename}.md`
       const filepath = path.join(packagesDir, filename)
 
       const domain = pkg.domain || pkg.fullPath || domainVarName
@@ -1315,7 +1338,14 @@ These packages work well with ${pkg.name || domain}:
           const companionVarName = convertDomainToVarName(companion)
           const companionPkg = pantry[companionVarName]
           if (companionPkg) {
-            content += `- [\`${companion}\`](${companionVarName}.md) - ${companionPkg.description}\n`
+            // Create safe filename for companion link
+            let safeCompanionFilename = companionVarName
+            if (/^\d/.test(safeCompanionFilename)) {
+              safeCompanionFilename = `pkg-${safeCompanionFilename}`
+            }
+            safeCompanionFilename = safeCompanionFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
+
+            content += `- [\`${companion}\`](${safeCompanionFilename}.md) - ${companionPkg.description}\n`
           }
           else {
             content += `- \`${companion}\`\n`
@@ -1413,7 +1443,14 @@ ${categoryName === 'Programming Languages'
       const aliases = pkg.aliases && pkg.aliases.length > 0 ? ` (${pkg.aliases.join(', ')})` : ''
       const description = pkg.description || ''
 
-      content += `### [${domain}](../packages/${domainVarName}.md)${aliases}
+      // Create safe filename for package link
+      let safePackageFilename = domainVarName
+      if (/^\d/.test(safePackageFilename)) {
+        safePackageFilename = `pkg-${safePackageFilename}`
+      }
+      safePackageFilename = safePackageFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
+
+      content += `### [${domain}](../packages/${safePackageFilename}.md)${aliases}
 ${description
   ? `
 ${description}

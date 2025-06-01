@@ -70,7 +70,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx node@24.1.0
+sh <(curl https://pkgx.sh) +node@24.1.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -87,7 +87,7 @@ This package depends on:
 
 These packages work well with node:
 
-- `npmjs.com`
+- [`npmjs.com`](npmjscom.md) - the package manager for JavaScript
 
 ## Usage Examples
 

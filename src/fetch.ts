@@ -1608,7 +1608,9 @@ function generateTypeScriptContent(packageInfo: PkgxPackage, domainName: string)
     const validAlias = packageInfo.aliases.find(alias => isValidAliasForVarName(alias))
 
     if (validAlias) {
-      varName = `${validAlias.replace(/[^a-z0-9]/gi, '')}Package`
+      // Make sure the const variable name starts with lowercase
+      const aliasBase = validAlias.replace(/[^a-z0-9]/gi, '')
+      varName = `${aliasBase.charAt(0).toLowerCase()}${aliasBase.slice(1)}Package`
       packageDisplayName = validAlias
     }
     else {
@@ -1813,12 +1815,26 @@ function formatObjectWithAsConst(obj: Record<string, any>): string {
         lines.push(`  ${key}: [] as const,`)
       }
       else if (typeof value[0] === 'string') {
-        // Format string array with line breaks for readability
-        lines.push(`  ${key}: [`)
-        for (const item of value) {
-          lines.push(`    '${String(item).replace(/'/g, '\\\'')}',`)
+        // For aliases array, filter out shell command patterns
+        let filteredArray = value
+        if (key === 'aliases') {
+          filteredArray = value.filter((alias) => {
+            // Filter out shell command patterns
+            return !alias.includes('--') && !alias.includes('$SHELL') && !alias.includes('+') && !alias.includes('(') && !alias.includes(')')
+          })
         }
-        lines.push(`  ] as const,`)
+
+        // Format string array with line breaks for readability
+        if (filteredArray.length === 0) {
+          lines.push(`  ${key}: [] as const,`)
+        }
+        else {
+          lines.push(`  ${key}: [`)
+          for (const item of filteredArray) {
+            lines.push(`    '${String(item).replace(/'/g, '\\\'')}',`)
+          }
+          lines.push(`  ] as const,`)
+        }
       }
       else {
         // Other array types - convert JSON.stringify output to use single quotes

@@ -1,5 +1,5 @@
 /**
- * **Midnight Commander** - Terminal-based visual file manager
+ * **midnight commander** - Terminal-based visual file manager
  *
  * @domain `midnight-commander.org`
  * @programs `mc`, `mcdiff`, `mcedit`, `mcview`
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/midnight-commander-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +midnight-commander.org -- $SHELL -i`
- * @aliases `Midnight Commander`, `midnight commander`
+ * @aliases `midnight commander`
  * @dependencies `invisible-island.net/ncurses`, `gnome.org/glib>=2.30`, `gnu.org/gettext>=0.18.2`
  *
  * @example
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.MidnightCommander
+ * const pkg = pantry.midnightcommander
  * // Or access via domain
  * const samePkg = pantry.midnightcommanderorg
  * console.log(pkg === samePkg) // true
@@ -28,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/midnight-commander-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const MidnightCommanderPackage = {
+export const midnightcommanderPackage = {
   /**
    * The display name of this package.
    */
@@ -81,15 +81,14 @@ export const MidnightCommanderPackage = {
     '4.8.29',
     '4.8.28',
   ] as const,
+  fullPath: 'midnight-commander.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
-    'Midnight Commander',
     'midnight commander',
   ] as const,
-  fullPath: 'midnight-commander.org' as const,
 }
 
-export type MidnightCommanderPackage = typeof MidnightCommanderPackage
+export type MidnightcommanderPackage = typeof midnightcommanderPackage

@@ -1,19 +1,19 @@
 # Package Catalog
 
-This comprehensive catalog lists all 527+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 529+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 527
+- **Total Packages**: 529
 - **Categories**: 13
-- **Last Updated**: 2025-06-01T18:36:01.716Z
+- **Last Updated**: 2025-06-01T19:26:26.737Z
 
 ## Table of Contents
 
-- [Programming Languages](#programming-languages) (22 packages)
-- [JavaScript & Node.js Ecosystem](#javascript-node-js-ecosystem) (10 packages)
+- [Programming Languages](#programming-languages) (23 packages)
+- [JavaScript & Node.js Ecosystem](#javascript-node-js-ecosystem) (11 packages)
 - [Package Managers & Build Tools](#package-managers-build-tools) (12 packages)
 - [Databases](#databases) (8 packages)
 - [DevOps & Infrastructure](#devops-infrastructure) (8 packages)
@@ -24,11 +24,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [CLI Tools & Utilities](#cli-tools-utilities) (2 packages)
 - [Web Servers & Proxies](#web-servers-proxies) (2 packages)
 - [Testing & Quality Assurance](#testing-quality-assurance) (1 packages)
-- [Other Utilities](#other-utilities) (459 packages)
+- [Other Utilities](#other-utilities) (460 packages)
 
 ## Programming Languages
 
-*22 packages in this category*
+*23 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -43,6 +43,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[julialangorg](./packages/julialangorg.md)** (julia) | The Julia Programming Language | julia | 1.11.5 (+17) | `pkgx julia` |
 | **[kotlinlangorg](./packages/kotlinlangorg.md)** () | Statically typed programming language for the JVM | kapt, kotlin, kotlinc, ... (+2) | 2.1.21 (+15) | `pkgx kotlinlang.org` |
 | **[nimlangorg](./packages/nimlangorg.md)** () | Nim is a statically typed compiled systems programming language. It combines successful concepts ... | nim, nim_dbg, testament, ... (+6) | 2.2.4 (+14) | `pkgx nim-lang.org` |
+| **[node](./packages/node.md)** (node) | Platform built on V8 to build network applications | node | 24.1.0 (+136) | `pkgx node` |
 | **[nodejsorg](./packages/nodejsorg.md)** (node) | Platform built on V8 to build network applications | node | 24.1.0 (+136) | `pkgx node` |
 | **[perlorg](./packages/perlorg.md)** (perl) | Highly capable, feature-rich programming language | corelist, cpan, enc2xs, ... (+27) | 5.40.2 (+13) | `pkgx perl.org` |
 | **[phpnet](./packages/phpnet.md)** (php) | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.4.7 (+70) | `pkgx php.net` |
@@ -57,7 +58,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## JavaScript & Node.js Ecosystem
 
-*10 packages in this category*
+*11 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -66,6 +67,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[classicyarnpkgcom](./packages/classicyarnpkgcom.md)** () | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx classic.yarnpkg.com` |
 | **[denoland](./packages/denoland.md)** (deno) | A modern runtime for JavaScript and TypeScript. | deno | 2.3.5 (+130) | `pkgx deno` |
 | **[flutterdev](./packages/flutterdev.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.1 (+44) | `pkgx flutter.dev` |
+| **[node](./packages/node.md)** (node) | Platform built on V8 to build network applications | node | 24.1.0 (+136) | `pkgx node` |
 | **[nodejsorg](./packages/nodejsorg.md)** (node) | Platform built on V8 to build network applications | node | 24.1.0 (+136) | `pkgx node` |
 | **[npmjscom](./packages/npmjscom.md)** () | the package manager for JavaScript | npm, npx | 11.4.1 (+58) | `pkgx npmjs.com` |
 | **[pnpmio](./packages/pnpmio.md)** (pnp) | Fast, disk space efficient package manager | pnpm, pnpx | 10.11.0 (+161) | `pkgx pnp` |
@@ -186,7 +188,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Other Utilities
 
-*459 packages in this category*
+*460 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -223,6 +225,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.5 (+16) | `pkgx browser-use.com` |
 | **[bufbuild](./packages/bufbuild.md)** (buf) | The best way of working with Protocol Buffers. | buf | 1.54.0 (+40) | `pkgx buf` |
 | **[buildpacksio](./packages/buildpacksio.md)** (pack) | CLI for building apps using Cloud Native Buildpacks | pack | 0.37.0 (+11) | `pkgx pack` |
+| **[bun](./packages/bun.md)** (bun) | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.15 (+118) | `pkgx bun` |
 | **[bytebasecom](./packages/bytebasecom.md)** (bytebase) | World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engin... | bytebase | 3.6.2 (+29) | `pkgx bytebase` |
 | **[caddyservercom](./packages/caddyservercom.md)** (caddy) | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | caddy | 2.10.0 (+9) | `pkgx caddy` |
 | **[cairographicsorg](./packages/cairographicsorg.md)** (cairo-trace) | Vector graphics library with cross-device output support | cairo-trace | 1.18.4 (+3) | `pkgx cairo-trace` |

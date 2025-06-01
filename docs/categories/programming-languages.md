@@ -1,6 +1,6 @@
 # Programming Languages
 
-*22 packages in this category*
+*23 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
@@ -113,6 +113,16 @@ Nim is a statically typed compiled systems programming language. It combines suc
 **Programs**: nim, nim_dbg, testament, nimsuggest, nimgrep, nim-gdb, atlas, nimpretty, nimble
 
 **Install**: `sh <(curl https://pkgx.sh) +nim-lang.org -- $SHELL -i`
+
+---
+
+### [node](../packages/node.md) (node)
+
+Platform built on V8 to build network applications
+
+**Programs**: node
+
+**Install**: `sh <(curl https://pkgx.sh) node`
 
 ---
 

@@ -25,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/portaudio-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const PortAudioPackage = {
+export const portAudioPackage = {
   /**
    * The display name of this package.
    */
@@ -66,4 +66,4 @@ export const PortAudioPackage = {
   fullPath: 'portaudio.com' as const,
 }
 
-export type PortAudioPackage = typeof PortAudioPackage
+export type PortAudioPackage = typeof portAudioPackage

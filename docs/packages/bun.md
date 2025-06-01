@@ -27,7 +27,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+bun.sh -- $SHELL -i`
 - `bun`
 
 ## Available Versions
@@ -68,7 +67,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx bun@1.2.15
+sh <(curl https://pkgx.sh) +bun@1.2.15 -- $SHELL -i
 ```
 
 ## Usage Examples

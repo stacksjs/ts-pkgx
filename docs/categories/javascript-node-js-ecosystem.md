@@ -1,6 +1,6 @@
 # JavaScript & Node.js Ecosystem
 
-*10 packages in this category*
+*11 packages in this category*
 
 Packages related to javascript & node.js ecosystem.
 
@@ -53,6 +53,16 @@ Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 **Programs**: flutter, dart
 
 **Install**: `sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i`
+
+---
+
+### [node](../packages/node.md) (node)
+
+Platform built on V8 to build network applications
+
+**Programs**: node
+
+**Install**: `sh <(curl https://pkgx.sh) node`
 
 ---
 
