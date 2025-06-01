@@ -1,56 +1,26 @@
 # upx
 
-> UPX - the Ultimate Packer for eXecutables
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `upxgithubio`
 - **Name**: `upx`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/upx.github.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) upx
+pkgx upx.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `upx`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `upx`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `5.0.1`, `5.0.0`, `4.2.4`
-
-</details>
-
-**Latest Version**: `5.0.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx upx@5.0.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `zlib.net`
+*No programs specified*
 
 ## Usage Examples
 
@@ -67,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/upx.github.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

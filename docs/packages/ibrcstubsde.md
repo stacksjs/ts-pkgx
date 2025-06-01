@@ -1,11 +1,11 @@
-# ibr.cs.tu-bs.de
+# ibrcstubsde
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `ibrcstubsde`
-- **Name**: `ibr.cs.tu-bs.de`
+- **Name**: `ibrcstubsde`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

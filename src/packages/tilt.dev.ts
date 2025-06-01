@@ -1,12 +1,9 @@
 /**
- * **tilt** - Define your dev environment as code. For microservice apps on Kubernetes.
+ * **tilt** - Crafters of fine Open Source products
  *
  * @domain `tilt.dev`
- * @programs `tilt`
- * @version `0.34.5` (23 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tilt-dev.md
  *
- * @install `sh <(curl https://pkgx.sh) tilt`
+ * @install `pkgx tilt.dev`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.tiltdev
  * console.log(pkg.name)        // "tilt"
- * console.log(pkg.description) // "Define your dev environment as code. For micros..."
- * console.log(pkg.programs)    // ["tilt"]
- * console.log(pkg.versions[0]) // "0.34.5" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tilt-dev.md
@@ -28,61 +23,25 @@ export const tiltdevPackage = {
    */
   name: 'tilt' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/tilt.dev/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'tilt.dev' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Define your dev environment as code. For microservice apps on Kubernetes.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tilt.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'tilt.dev' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) tilt' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'tilt',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.34.5',
-    '0.34.4',
-    '0.34.3',
-    '0.34.2',
-    '0.34.1',
-    '0.34.0',
-    '0.33.22',
-    '0.33.21',
-    '0.33.20',
-    '0.33.19',
-    '0.33.18',
-    '0.33.17',
-    '0.33.16',
-    '0.33.15',
-    '0.33.14',
-    '0.33.13',
-    '0.33.12',
-    '0.33.11',
-    '0.33.10',
-    '0.33.9',
-    '0.33.8',
-    '0.33.7',
-    '0.33.6',
-  ] as const,
-  fullPath: 'tilt.dev' as const,
+  installCommand: 'pkgx tilt.dev' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type TiltdevPackage = typeof tiltdevPackage

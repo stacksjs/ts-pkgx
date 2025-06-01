@@ -1,56 +1,26 @@
 # apktool
 
-> Tool for reverse engineering 3rd party, closed, binary Android apps
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `apktoolorg`
 - **Name**: `apktool`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apktool.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) apktool
+pkgx apktool.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `apktool`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `apktool`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `2.11.1`, `2.11.0`, `2.10.0`, `2.9.3`
-
-</details>
-
-**Latest Version**: `2.11.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx apktool@2.11.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `openjdk.org^21`
+*No programs specified*
 
 ## Usage Examples
 
@@ -67,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apktool.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

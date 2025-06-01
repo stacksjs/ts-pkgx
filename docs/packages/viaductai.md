@@ -1,11 +1,11 @@
-# viaduct.ai
+# viaductai
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `viaductai`
-- **Name**: `viaduct.ai`
+- **Name**: `viaductai`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

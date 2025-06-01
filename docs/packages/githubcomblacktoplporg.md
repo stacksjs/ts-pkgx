@@ -1,51 +1,26 @@
-# lporg
+# githubcomblacktoplporg
 
-> Organize Your macOS Launchpad Apps
+> Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomblacktoplporg`
-- **Name**: `lporg`
+- **Name**: `githubcomblacktoplporg`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/blacktop/lporg/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) lporg
+pkgx github.com-blacktop-lporg
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `lporg`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `lporg`
-- `blacktop/lporg`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `20.4.32`
-
-</details>
-
-**Latest Version**: `20.4.32`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx lporg@20.4.32
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/blacktop/lporg/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

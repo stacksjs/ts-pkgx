@@ -1,62 +1,26 @@
 # mosh
 
-> Remote terminal application
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `moshorg`
 - **Name**: `mosh`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mosh.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i
+pkgx mosh.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mosh-client`
-- `mosh-server`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+mosh.org -- $SHELL -i`
-- `mosh`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.4.0`
-
-</details>
-
-**Latest Version**: `1.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx mosh@1.4.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `protobuf.dev@26.1.0`
-- `invisible-island.net/ncurses@6`
-- `zlib.net@1.3`
-- `linuxopenssl.org@3`
-- `openssl.org@3`
+*No programs specified*
 
 ## Usage Examples
 
@@ -73,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mosh.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,67 +1,26 @@
 # gm
 
-> Image processing tools collection
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `graphicsmagickorg`
 - **Name**: `gm`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/graphicsmagick.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) gm
+pkgx graphicsmagick.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gm`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gm`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `1.3.45`, `1.3.44`, `1.3.43`, `1.3.42`, `1.3.40`
-
-</details>
-
-**Latest Version**: `1.3.45`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx gm@1.3.45
-```
-
-## Dependencies
-
-This package depends on:
-
-- `freetype.org`
-- `github.com/jasper-software/jasper`
-- `libjpeg-turbo.org`
-- `jpeg.org/jpegxl`
-- `libpng.org`
-- `simplesystems.org/libtiff`
-- `gnu.org/libtool`
-- `littlecms.com>=2.0`
-- `google.com/webp`
-- `sourceware.org/bzip2`
-- `gnome.org/libxml2`
-- `zlib.net`
+*No programs specified*
 
 ## Usage Examples
 
@@ -78,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/graphicsmagick.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

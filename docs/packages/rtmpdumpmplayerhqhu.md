@@ -1,61 +1,26 @@
 # rtmpdump
 
-> Tool for downloading RTMP streaming media
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `rtmpdumpmplayerhqhu`
 - **Name**: `rtmpdump`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rtmpdump.mplayerhq.hu/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu -- $SHELL -i
+pkgx rtmpdump.mplayerhq.hu
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rtmpdump`
-- `rtmpgw`
-- `rtmpsrv`
-- `rtmpsuck`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+rtmpdump.mplayerhq.hu -- $SHELL -i`
-- `rtmpdump`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.3.0`, `2.3.0`
-
-</details>
-
-**Latest Version**: `2.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx rtmpdump@2.3.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `openssl.org^1.1`
-- `zlib.net`
+*No programs specified*
 
 ## Usage Examples
 
@@ -72,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rtmpdump.mplayerhq.hu/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

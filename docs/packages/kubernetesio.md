@@ -1,11 +1,11 @@
-# kubernetes.io
+# kubernetesio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `kubernetesio`
-- **Name**: `kubernetes.io`
+- **Name**: `kubernetesio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

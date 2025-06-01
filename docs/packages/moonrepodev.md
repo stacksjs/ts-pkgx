@@ -1,11 +1,11 @@
-# moonrepo.dev
+# moonrepodev
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `moonrepodev`
-- **Name**: `moonrepo.dev`
+- **Name**: `moonrepodev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

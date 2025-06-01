@@ -1,68 +1,26 @@
 # harfbuzz.org
 
-> HarfBuzz text shaping engine
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `harfbuzzorg`
 - **Name**: `harfbuzz.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/harfbuzz.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +harfbuzz.org -- $SHELL -i
+pkgx harfbuzz.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `hb-ot-shape-closure`
-- `hb-shape`
-- `hb-subset`
-- `hb-view`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+harfbuzz.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 28 versions</summary>
-
-- `11.2.1`, `11.2.0`, `11.1.0`, `11.0.1`, `11.0.0`
-- `10.4.0`, `10.3.0`, `10.2.0`, `10.1.0`, `10.0.1`
-- `10.0.0`, `9.0.0`, `8.5.0`, `8.4.0`, `8.3.0`
-- `8.2.2`, `8.2.1`, `8.2.0`, `8.1.1`, `8.1.0`
-- `8.0.1`, `8.0.0`, `7.3.0`, `7.2.0`, `7.1.0`
-- `7.0.1`, `7.0.0`, `5.3.1`
-
-</details>
-
-**Latest Version**: `11.2.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx harfbuzz.org@11.2.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `cairographics.org@1`
-- `freetype.org@2`
-- `gnome.org/glib@2`
-- `graphite.sil.org`
-- `unicode.org^71`
+*No programs specified*
 
 ## Usage Examples
 
@@ -79,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/harfbuzz.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

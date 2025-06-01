@@ -1,11 +1,11 @@
-# geoff.greer.fm
+# geoffgreerfm
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `geoffgreerfm`
-- **Name**: `geoff.greer.fm`
+- **Name**: `geoffgreerfm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

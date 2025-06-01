@@ -1,59 +1,26 @@
-# envchain
+# githubcomsorahenvchain
 
-> Environment variables meet macOS Keychain and gnome-keyring <3
+> Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomsorahenvchain`
-- **Name**: `envchain`
+- **Name**: `githubcomsorahenvchain`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sorah/envchain/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) envchain
+pkgx github.com-sorah-envchain
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `envchain`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `envchain`
-- `sorah/envchain`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.1.0`
-
-</details>
-
-**Latest Version**: `1.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx envchain@1.1.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `linuxgnu.org/readlinegnome.org/libsecret`
-- `gnu.org/readline`
-- `gnome.org/libsecret`
+*No programs specified*
 
 ## Usage Examples
 
@@ -70,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sorah/envchain/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

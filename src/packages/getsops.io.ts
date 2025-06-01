@@ -1,85 +1,47 @@
 /**
- * **sops** - Simple and flexible tool for managing secrets
+ * **sops** - Crafters of fine Open Source products
  *
  * @domain `getsops.io`
- * @programs `sops`
- * @version `3.10.2` (9 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getsops-io.md
  *
- * @install `sh <(curl https://pkgx.sh) sops`
- * @aliases `sops`
+ * @install `pkgx getsops.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.sops
- * // Or access via domain
- * const samePkg = pantry.getsopsio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.getsopsio
  * console.log(pkg.name)        // "sops"
- * console.log(pkg.description) // "Simple and flexible tool for managing secrets"
- * console.log(pkg.programs)    // ["sops"]
- * console.log(pkg.versions[0]) // "3.10.2" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/getsops-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sopsPackage = {
+export const getsopsioPackage = {
   /**
    * The display name of this package.
    */
   name: 'sops' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/getsops.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'getsops.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Simple and flexible tool for managing secrets' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/getsops.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'getsops.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sops' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'sops',
-  ] as const,
-  companions: [] as const,
+  installCommand: 'pkgx getsops.io' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.10.2',
-    '3.10.1',
-    '3.10.0',
-    '3.9.4',
-    '3.9.3',
-    '3.9.2',
-    '3.9.1',
-    '3.9.0',
-    '3.8.1',
-  ] as const,
-  fullPath: 'getsops.io' as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'sops',
-  ] as const,
+  companions: [] as const,
 }
 
-export type SopsPackage = typeof sopsPackage
+export type GetsopsioPackage = typeof getsopsioPackage

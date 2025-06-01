@@ -1,11 +1,11 @@
-# reacher.email
+# reacheremail
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `reacheremail`
-- **Name**: `reacher.email`
+- **Name**: `reacheremail`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

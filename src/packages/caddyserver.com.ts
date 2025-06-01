@@ -1,12 +1,9 @@
 /**
- * **caddy** - Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
+ * **caddy** - Crafters of fine Open Source products
  *
  * @domain `caddyserver.com`
- * @programs `caddy`
- * @version `2.10.0` (10 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/caddyserver-com.md
  *
- * @install `sh <(curl https://pkgx.sh) caddy`
+ * @install `pkgx caddyserver.com`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.caddyservercom
  * console.log(pkg.name)        // "caddy"
- * console.log(pkg.description) // "Fast and extensible multi-platform HTTP/1-2-3 w..."
- * console.log(pkg.programs)    // ["caddy"]
- * console.log(pkg.versions[0]) // "2.10.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/caddyserver-com.md
@@ -28,48 +23,25 @@ export const caddyservercomPackage = {
    */
   name: 'caddy' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/caddyserver.com/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'caddyserver.com' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/caddyserver.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'caddyserver.com' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) caddy' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'caddy',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.10.0',
-    '2.9.1',
-    '2.9.0',
-    '2.8.4',
-    '2.8.2',
-    '2.8.1',
-    '2.8.0',
-    '2.7.6',
-    '2.7.5',
-    '2.7.4',
-  ] as const,
-  fullPath: 'caddyserver.com' as const,
+  installCommand: 'pkgx caddyserver.com' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type CaddyservercomPackage = typeof caddyservercomPackage

@@ -1,51 +1,26 @@
-# 1Password CLI
+# developer1passwordcom1passwordcli
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `developer1passwordcom1passwordcli`
-- **Name**: `1Password CLI`
+- **Name**: `developer1passwordcom1passwordcli`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/developer.1password.com/1password-cli/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) op
+pkgx developer.1password.com-1password-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `op`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `1password cli`
-- `1password-cli`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.31.0`, `2.30.3`
-
-</details>
-
-**Latest Version**: `2.31.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx 1Password CLI@2.31.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/developer.1password.com/1password-cli/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

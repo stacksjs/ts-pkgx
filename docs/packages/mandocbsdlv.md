@@ -1,61 +1,26 @@
 # mandoc.bsd.lv
 
-> UNIX manpage compiler toolset
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `mandocbsdlv`
 - **Name**: `mandoc.bsd.lv`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mandoc.bsd.lv/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +mandoc.bsd.lv -- $SHELL -i
+pkgx mandoc.bsd.lv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `bsdapropos`
-- `bsdman`
-- `bsdsoelim`
-- `bsdwhatis`
-- `demandoc`
-- `mandoc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+mandoc.bsd.lv -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.14.6`
-
-</details>
-
-**Latest Version**: `1.14.6`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx mandoc.bsd.lv@1.14.6
-```
-
-## Dependencies
-
-This package depends on:
-
-- `zlib.net`
+*No programs specified*
 
 ## Usage Examples
 
@@ -72,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mandoc.bsd.lv/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,11 +1,11 @@
-# fermyon.com
+# fermyoncom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `fermyoncom`
-- **Name**: `fermyon.com`
+- **Name**: `fermyoncom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

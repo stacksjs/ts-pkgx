@@ -1,11 +1,11 @@
-# veracode.com
+# veracodecom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `veracodecom`
-- **Name**: `veracode.com`
+- **Name**: `veracodecom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

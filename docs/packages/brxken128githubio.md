@@ -1,11 +1,11 @@
-# brxken128.github.io
+# brxken128githubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `brxken128githubio`
-- **Name**: `brxken128.github.io`
+- **Name**: `brxken128githubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

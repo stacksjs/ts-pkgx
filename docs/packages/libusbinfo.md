@@ -1,19 +1,19 @@
 # libusb.info
 
-> A cross-platform library to access USB devices
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `libusbinfo`
 - **Name**: `libusb.info`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libusb.info/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i
+pkgx libusb.info
 ```
 
 ## Programs
@@ -21,30 +21,6 @@ sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+libusb.info -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `1.0.28`, `1.0.27`, `1.0.26`
-
-</details>
-
-**Latest Version**: `1.0.28`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx libusb.info@1.0.28
-```
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libusb.info/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,13 +1,9 @@
 /**
- * **nim-lang.org** - Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).
+ * **nim-lang.org** - Crafters of fine Open Source products
  *
  * @domain `nim-lang.org`
- * @programs `nim`, `nim_dbg`, `testament`, `nimsuggest`, `nimgrep`, ... (+4 more)
- * @version `2.2.4` (15 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nim-lang-org.md
  *
- * @install `sh <(curl https://pkgx.sh) +nim-lang.org -- $SHELL -i`
- * @dependencies `gnu.org/gcc`, `pcre.org`, `openssl.org`
+ * @install `pkgx nim-lang.org`
  *
  * @example
  * ```typescript
@@ -15,9 +11,7 @@
  *
  * const pkg = pantry.nimlangorg
  * console.log(pkg.name)        // "nim-lang.org"
- * console.log(pkg.description) // "Nim is a statically typed compiled systems prog..."
- * console.log(pkg.programs)    // ["nim", "nim_dbg", ...]
- * console.log(pkg.versions[0]) // "2.2.4" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nim-lang-org.md
@@ -29,69 +23,25 @@ export const nimlangorgPackage = {
    */
   name: 'nim-lang.org' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/nim-lang.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'nim-lang.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nim-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'nim-lang.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +nim-lang.org -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'nim',
-    'nim_dbg',
-    'testament',
-    'nimsuggest',
-    'nimgrep',
-    'nim-gdb',
-    'atlas',
-    'nimpretty',
-    'nimble',
-  ] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/gcc',
-    'pcre.org',
-    'openssl.org',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.2.4',
-    '2.2.2',
-    '2.2.0',
-    '2.0.16',
-    '2.0.14',
-    '2.0.12',
-    '2.0.8',
-    '2.0.6',
-    '2.0.4',
-    '2.0.2',
-    '2.0.0',
-    '1.6.20',
-    '1.6.18',
-    '1.6.16',
-    '1.6.14',
-  ] as const,
-  fullPath: 'nim-lang.org' as const,
+  installCommand: 'pkgx nim-lang.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type NimlangorgPackage = typeof nimlangorgPackage

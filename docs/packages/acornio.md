@@ -1,11 +1,11 @@
-# acorn.io
+# acornio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `acornio`
-- **Name**: `acorn.io`
+- **Name**: `acornio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

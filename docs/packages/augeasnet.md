@@ -1,61 +1,26 @@
 # augeas.net
 
-> A configuration editing tool and API
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `augeasnet`
 - **Name**: `augeas.net`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/augeas.net/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +augeas.net -- $SHELL -i
+pkgx augeas.net
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `augmatch`
-- `augparse`
-- `augprint`
-- `augtool`
-- `fadot`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+augeas.net -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.14.1`, `1.14.0`
-
-</details>
-
-**Latest Version**: `1.14.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx augeas.net@1.14.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/readline`
-- `gnome.org/libxml2`
+*No programs specified*
 
 ## Usage Examples
 
@@ -72,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/augeas.net/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

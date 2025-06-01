@@ -1,11 +1,11 @@
-# sf.net
+# sfnet
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `sfnet`
-- **Name**: `sf.net`
+- **Name**: `sfnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

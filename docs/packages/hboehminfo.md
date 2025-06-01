@@ -1,11 +1,11 @@
-# hboehm.info
+# hboehminfo
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `hboehminfo`
-- **Name**: `hboehm.info`
+- **Name**: `hboehminfo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

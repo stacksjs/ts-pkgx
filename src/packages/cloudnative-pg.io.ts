@@ -1,82 +1,47 @@
 /**
- * **kubectl-cnpg** - CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases within Kubernetes environments, covering the entire operational lifecycle from initial deployment to ongoing maintenance
+ * **kubectl-cnpg** - Crafters of fine Open Source products
  *
  * @domain `cloudnative-pg.io`
- * @programs `kubectl-cnpg`
- * @version `1.26.0` (6 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cloudnative-pg-io.md
  *
- * @install `sh <(curl https://pkgx.sh) kubectl-cnpg`
- * @aliases `kubectl-cnpg`
+ * @install `pkgx cloudnative-pg.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.kubectlcnpg
- * // Or access via domain
- * const samePkg = pantry.cloudnativepgio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cloudnativepgio
  * console.log(pkg.name)        // "kubectl-cnpg"
- * console.log(pkg.description) // "CloudNativePG is a comprehensive platform desig..."
- * console.log(pkg.programs)    // ["kubectl-cnpg"]
- * console.log(pkg.versions[0]) // "1.26.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cloudnative-pg-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubectlcnpgPackage = {
+export const cloudnativepgioPackage = {
   /**
    * The display name of this package.
    */
   name: 'kubectl-cnpg' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/cloudnative-pg.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'cloudnative-pg.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases within Kubernetes environments, covering the entire operational lifecycle from initial deployment to ongoing maintenance' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cloudnative-pg.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'cloudnative-pg.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) kubectl-cnpg' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'kubectl-cnpg',
-  ] as const,
-  companions: [] as const,
+  installCommand: 'pkgx cloudnative-pg.io' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.26.0',
-    '1.25.2',
-    '1.25.1',
-    '1.25.0',
-    '1.24.4',
-    '1.24.3',
-  ] as const,
-  fullPath: 'cloudnative-pg.io' as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'kubectl-cnpg',
-  ] as const,
+  companions: [] as const,
 }
 
-export type KubectlcnpgPackage = typeof kubectlcnpgPackage
+export type CloudnativepgioPackage = typeof cloudnativepgioPackage

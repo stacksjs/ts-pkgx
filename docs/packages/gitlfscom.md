@@ -1,57 +1,26 @@
 # git-lfs
 
-> Git extension for versioning large files
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `gitlfscom`
 - **Name**: `git-lfs`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/git-lfs.com/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) git-lfs
+pkgx git-lfs.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `git-lfs`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `git-lfs`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `3.6.1`, `3.6.0`, `3.5.1`, `3.4.1`, `3.4.0`
-- `3.3.0`
-
-</details>
-
-**Latest Version**: `3.6.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx git-lfs@3.6.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `git-scm.org`
+*No programs specified*
 
 ## Usage Examples
 
@@ -68,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/git-lfs.com/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

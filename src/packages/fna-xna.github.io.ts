@@ -1,12 +1,9 @@
 /**
- * **fna-xna.github.io** - FAudio - Accuracy-focused XAudio reimplementation for open platforms
+ * **fna-xna.github.io** - Crafters of fine Open Source products
  *
  * @domain `fna-xna.github.io`
- * @version `25.5.0` (17 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fna-xna-github-io.md
  *
- * @install `sh <(curl https://pkgx.sh) +fna-xna.github.io -- $SHELL -i`
- * @dependencies `libsdl.org^2.28`
+ * @install `pkgx fna-xna.github.io`
  *
  * @example
  * ```typescript
@@ -14,8 +11,7 @@
  *
  * const pkg = pantry.fnaxnagithubio
  * console.log(pkg.name)        // "fna-xna.github.io"
- * console.log(pkg.description) // "FAudio - Accuracy-focused XAudio reimplementati..."
- * console.log(pkg.versions[0]) // "25.5.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fna-xna-github-io.md
@@ -27,55 +23,25 @@ export const fnaxnagithubioPackage = {
    */
   name: 'fna-xna.github.io' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/fna-xna.github.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'fna-xna.github.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'FAudio - Accuracy-focused XAudio reimplementation for open platforms' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fna-xna.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'fna-xna.github.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +fna-xna.github.io -- $SHELL -i' as const,
-  programs: [] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'libsdl.org^2.28',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '25.5.0',
-    '25.4.0',
-    '25.3.0',
-    '25.2.0',
-    '25.1.0',
-    '24.12.0',
-    '24.11.0',
-    '24.10.0',
-    '24.9.0',
-    '24.8.0',
-    '24.7.0',
-    '24.6.0',
-    '24.5.0',
-    '24.4.0',
-    '24.3.0',
-    '24.2.0',
-    '24.1.0',
-  ] as const,
-  fullPath: 'fna-xna.github.io' as const,
+  installCommand: 'pkgx fna-xna.github.io' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type FnaxnagithubioPackage = typeof fnaxnagithubioPackage

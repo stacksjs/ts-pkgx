@@ -1,13 +1,9 @@
 /**
- * **rust-script** - Run Rust files and expressions as scripts without any setup or compilation step.
+ * **rust-script** - Crafters of fine Open Source products
  *
  * @domain `rust-script.org`
- * @programs `rust-script`
- * @version `0.35.0` (2 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rust-script-org.md
  *
- * @install `sh <(curl https://pkgx.sh) rust-script`
- * @companions `rust-lang.org`, `rust-lang.org/cargo`
+ * @install `pkgx rust-script.org`
  *
  * @example
  * ```typescript
@@ -15,9 +11,7 @@
  *
  * const pkg = pantry.rustscriptorg
  * console.log(pkg.name)        // "rust-script"
- * console.log(pkg.description) // "Run Rust files and expressions as scripts witho..."
- * console.log(pkg.programs)    // ["rust-script"]
- * console.log(pkg.versions[0]) // "0.35.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rust-script-org.md
@@ -29,47 +23,25 @@ export const rustscriptorgPackage = {
    */
   name: 'rust-script' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/rust-script.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'rust-script.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Run Rust files and expressions as scripts without any setup or compilation step.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rust-script.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'rust-script.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rust-script' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'rust-script',
-  ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'rust-lang.org',
-    'rust-lang.org/cargo',
-  ] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.35.0',
-    '0.34.0',
-  ] as const,
-  fullPath: 'rust-script.org' as const,
+  installCommand: 'pkgx rust-script.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type RustscriptorgPackage = typeof rustscriptorgPackage

@@ -1,56 +1,26 @@
 # htop
 
-> Improved top (interactive process viewer)
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `htopdev`
 - **Name**: `htop`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/htop.dev/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) htop
+pkgx htop.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `htop`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `htop`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `3.4.1`, `3.4.0`, `3.3.0`, `3.2.2`, `3.2.1`
-
-</details>
-
-**Latest Version**: `3.4.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx htop@3.4.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `invisible-island.net/ncurses@6`
+*No programs specified*
 
 ## Usage Examples
 
@@ -67,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/htop.dev/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

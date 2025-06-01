@@ -1,19 +1,19 @@
 # libssh2.org
 
-> the SSH library
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `libssh2org`
 - **Name**: `libssh2.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libssh2.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libssh2.org -- $SHELL -i
+pkgx libssh2.org
 ```
 
 ## Programs
@@ -21,37 +21,6 @@ sh <(curl https://pkgx.sh) +libssh2.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+libssh2.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `1.11.1`, `1.11.0`, `1.10.0`
-
-</details>
-
-**Latest Version**: `1.11.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx libssh2.org@1.11.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `openssl.org^1.1`
-- `zlib.net^1.2`
 
 ## Usage Examples
 
@@ -68,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libssh2.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

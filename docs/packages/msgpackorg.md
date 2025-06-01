@@ -1,19 +1,19 @@
 # msgpack.org
 
-> MessagePack implementation for C and C++ / msgpack.org[C/C++]
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `msgpackorg`
 - **Name**: `msgpack.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/msgpack.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +msgpack.org -- $SHELL -i
+pkgx msgpack.org
 ```
 
 ## Programs
@@ -21,30 +21,6 @@ sh <(curl https://pkgx.sh) +msgpack.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+msgpack.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `6.0.2`, `6.0.1`, `6.0.0`
-
-</details>
-
-**Latest Version**: `6.0.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx msgpack.org@6.0.2
-```
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/msgpack.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

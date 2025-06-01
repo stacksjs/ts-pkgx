@@ -1,11 +1,11 @@
-# git.tozt.net
+# gittoztnet
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `gittoztnet`
-- **Name**: `git.tozt.net`
+- **Name**: `gittoztnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

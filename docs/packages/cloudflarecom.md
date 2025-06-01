@@ -1,11 +1,11 @@
-# cloudflare.com
+# cloudflarecom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `cloudflarecom`
-- **Name**: `cloudflare.com`
+- **Name**: `cloudflarecom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

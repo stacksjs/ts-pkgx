@@ -1,11 +1,11 @@
-# dkrz.de
+# dkrzde
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `dkrzde`
-- **Name**: `dkrz.de`
+- **Name**: `dkrzde`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,67 +1,26 @@
 # openpmix.github.io
 
-> Process Management Interface for HPC environments
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `openpmixgithubio`
 - **Name**: `openpmix.github.io`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openpmix.github.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openpmix.github.io -- $SHELL -i
+pkgx openpmix.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `palloc`
-- `pattrs`
-- `pctrl`
-- `pevent`
-- `plookup`
-- `pmix_info`
-- `pmixcc`
-- `pps`
-- `pquery`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+openpmix.github.io -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `6.0.0`, `5.0.8`, `5.0.7`, `5.0.6`, `5.0.5`
-- `5.0.4`, `5.0.3`, `5.0.2`, `5.0.1`
-
-</details>
-
-**Latest Version**: `6.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx openpmix.github.io@6.0.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `open-mpi.org/hwloc^2.10`
-- `libevent.org^2.1`
-- `zlib.net^1.3`
+*No programs specified*
 
 ## Usage Examples
 
@@ -78,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openpmix.github.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

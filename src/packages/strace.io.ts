@@ -1,77 +1,47 @@
 /**
- * **strace** - strace is a diagnostic, debugging and instructional userspace utility for Linux
+ * **strace** - Crafters of fine Open Source products
  *
  * @domain `strace.io`
- * @programs `strace`
- * @version `6.2.0` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/strace-io.md
  *
- * @install `sh <(curl https://pkgx.sh) strace`
- * @aliases `strace`
+ * @install `pkgx strace.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.strace
- * // Or access via domain
- * const samePkg = pantry.straceio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.straceio
  * console.log(pkg.name)        // "strace"
- * console.log(pkg.description) // "strace is a diagnostic, debugging and instructi..."
- * console.log(pkg.programs)    // ["strace"]
- * console.log(pkg.versions[0]) // "6.2.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/strace-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const stracePackage = {
+export const straceioPackage = {
   /**
    * The display name of this package.
    */
   name: 'strace' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/strace.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'strace.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'strace is a diagnostic, debugging and instructional userspace utility for Linux' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/strace.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'strace.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) strace' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'strace',
-  ] as const,
-  companions: [] as const,
+  installCommand: 'pkgx strace.io' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '6.2.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'strace',
-  ] as const,
-  fullPath: 'strace.io' as const,
+  companions: [] as const,
 }
 
-export type StracePackage = typeof stracePackage
+export type StraceioPackage = typeof straceioPackage

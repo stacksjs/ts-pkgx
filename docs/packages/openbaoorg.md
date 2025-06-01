@@ -1,11 +1,11 @@
-# openbao.org
+# openbaoorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `openbaoorg`
-- **Name**: `openbao.org`
+- **Name**: `openbaoorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,56 +1,26 @@
 # cointop
 
-> A fast and lightweight interactive terminal based UI application for tracking cryptocurrencies 🚀
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `cointopsh`
 - **Name**: `cointop`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cointop.sh/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) cointop
+pkgx cointop.sh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cointop`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `cointop`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.6.10`
-
-</details>
-
-**Latest Version**: `1.6.10`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx cointop@1.6.10
-```
-
-## Dependencies
-
-This package depends on:
-
-- `curl.se/ca-certs`
+*No programs specified*
 
 ## Usage Examples
 
@@ -67,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cointop.sh/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

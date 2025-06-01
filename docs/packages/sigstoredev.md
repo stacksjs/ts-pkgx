@@ -1,11 +1,11 @@
-# sigstore.dev
+# sigstoredev
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `sigstoredev`
-- **Name**: `sigstore.dev`
+- **Name**: `sigstoredev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

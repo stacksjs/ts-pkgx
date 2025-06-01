@@ -1,61 +1,26 @@
 # libpng.org
 
-> LIBPNG: Portable Network Graphics support, official libpng repository
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `libpngorg`
 - **Name**: `libpng.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libpng.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i
+pkgx libpng.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `libpng-config`
-- `libpng16-config`
-- `png-fix-itxt`
-- `pngfix`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+libpng.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `1.6.48`, `1.6.47`, `1.6.46`, `1.6.45`, `1.6.44`
-- `1.6.43`, `1.6.42`, `1.6.41`, `1.6.40`, `1.6.39`
-- `1.6.35`
-
-</details>
-
-**Latest Version**: `1.6.48`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx libpng.org@1.6.48
-```
-
-## Dependencies
-
-This package depends on:
-
-- `zlib.net@1`
+*No programs specified*
 
 ## Usage Examples
 
@@ -72,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libpng.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

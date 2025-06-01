@@ -1,67 +1,26 @@
 # wxwidgets.org
 
-> Cross-Platform C++ GUI Library
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `wxwidgetsorg`
 - **Name**: `wxwidgets.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wxwidgets.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +wxwidgets.org -- $SHELL -i
+pkgx wxwidgets.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `wx-config`
-- `wxrc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+wxwidgets.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `3.2.8.1`, `3.2.8`, `3.2.7`, `3.2.6`, `3.2.5`
-- `3.2.4`, `3.2.3`
-
-</details>
-
-**Latest Version**: `3.2.8.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx wxwidgets.org@3.2.8.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `libjpeg-turbo.org`
-- `libpng.org`
-- `simplesystems.org/libtiff`
-- `pcre.org/v2`
-- `libexpat.github.io`
-- `zlib.net`
-- `linuxx.org/smfreedesktop.org/mesa-glugtk.org/gtk3`
-- `x.org/sm`
-- `freedesktop.org/mesa-glu`
-- `gtk.org/gtk3`
+*No programs specified*
 
 ## Usage Examples
 
@@ -78,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/wxwidgets.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

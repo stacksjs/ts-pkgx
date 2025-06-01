@@ -1,50 +1,26 @@
 # pcap-config
 
-> the LIBpcap interface to various kernel packet capture mechanism
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `tcpdumporg`
 - **Name**: `pcap-config`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tcpdump.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) pcap-config
+pkgx tcpdump.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pcap-config`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pcap-config`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.10.5`, `1.10.4`
-
-</details>
-
-**Latest Version**: `1.10.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx pcap-config@1.10.5
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tcpdump.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

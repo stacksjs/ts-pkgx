@@ -6,13 +6,13 @@ Packages related to testing & quality assurance.
 
 ## Packages
 
-### [pytestorg](../packages/pytestorg.md) (pytest)
+### [pytestorg](../packages/pytestorg.md) ()
 
-The pytest framework makes it easy to write small tests, yet scales to support complex functional testing
+Crafters of fine Open Source products
 
-**Programs**: pytest
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) pytest`
+**Install**: `pkgx pytest.org`
 
 ---
 

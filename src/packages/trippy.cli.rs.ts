@@ -1,12 +1,9 @@
 /**
- * **trip** - Network diagnostic tool, inspired by mtr
+ * **trip** - Crafters of fine Open Source products
  *
  * @domain `trippy.cli.rs`
- * @programs `trip`
- * @version `0.13.0` (7 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/trippy-cli-rs.md
  *
- * @install `sh <(curl https://pkgx.sh) trip`
+ * @install `pkgx trippy.cli.rs`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.trippyclirs
  * console.log(pkg.name)        // "trip"
- * console.log(pkg.description) // "Network diagnostic tool, inspired by mtr"
- * console.log(pkg.programs)    // ["trip"]
- * console.log(pkg.versions[0]) // "0.13.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/trippy-cli-rs.md
@@ -28,45 +23,25 @@ export const trippyclirsPackage = {
    */
   name: 'trip' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/trippy.cli.rs/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'trippy.cli.rs' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Network diagnostic tool, inspired by mtr' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/trippy.cli.rs/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'trippy.cli.rs' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) trip' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'trip',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.13.0',
-    '0.12.2',
-    '0.12.1',
-    '0.12.0',
-    '0.11.0',
-    '0.10.0',
-    '0.9.0',
-  ] as const,
-  fullPath: 'trippy.cli.rs' as const,
+  installCommand: 'pkgx trippy.cli.rs' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type TrippyclirsPackage = typeof trippyclirsPackage

@@ -1,11 +1,11 @@
-# snaplet.dev
+# snapletdev
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `snapletdev`
-- **Name**: `snaplet.dev`
+- **Name**: `snapletdev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# eyrie.org
+# eyrieorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `eyrieorg`
-- **Name**: `eyrie.org`
+- **Name**: `eyrieorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

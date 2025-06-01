@@ -1,11 +1,11 @@
-# wpewebkit.org
+# wpewebkitorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `wpewebkitorg`
-- **Name**: `wpewebkit.org`
+- **Name**: `wpewebkitorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

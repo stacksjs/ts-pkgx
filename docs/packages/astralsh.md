@@ -1,11 +1,11 @@
-# astral.sh
+# astralsh
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `astralsh`
-- **Name**: `astral.sh`
+- **Name**: `astralsh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

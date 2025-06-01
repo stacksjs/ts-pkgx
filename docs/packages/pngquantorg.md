@@ -1,11 +1,11 @@
-# pngquant.org
+# pngquantorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `pngquantorg`
-- **Name**: `pngquant.org`
+- **Name**: `pngquantorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

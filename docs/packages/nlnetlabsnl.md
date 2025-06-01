@@ -1,11 +1,11 @@
-# nlnetlabs.nl
+# nlnetlabsnl
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `nlnetlabsnl`
-- **Name**: `nlnetlabs.nl`
+- **Name**: `nlnetlabsnl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

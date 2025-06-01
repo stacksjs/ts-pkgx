@@ -1,53 +1,26 @@
 # duckdb
 
-> DuckDB is an analytical in-process SQL database management system
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `duckdborg`
 - **Name**: `duckdb`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/duckdb.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) duckdb
+pkgx duckdb.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `duckdb`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `duckdb`
-
-## Available Versions
-
-<details>
-<summary>Show all 19 versions</summary>
-
-- `1.3.0`, `1.2.2`, `1.2.1`, `1.2.0`, `1.1.3`
-- `1.1.2`, `1.1.1`, `1.1.0`, `1.0.0`, `0.10.3`
-- `0.10.2`, `0.10.1`, `0.10.0`, `0.9.2`, `0.9.1`
-- `0.9.0`, `0.8.1`, `0.8.0`, `0.7.1`
-
-</details>
-
-**Latest Version**: `1.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx duckdb@1.3.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -64,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/duckdb.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

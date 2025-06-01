@@ -1,12 +1,9 @@
 /**
- * **glfw.org** - A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input
+ * **glfw.org** - Crafters of fine Open Source products
  *
  * @domain `glfw.org`
- * @version `3.4.0` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/glfw-org.md
  *
- * @install `sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i`
- * @dependencies `linuxfreeglut.sourceforge.io^3.4x.org/xcursor^1.2xkbcommon.org^1.0mesa3d.org^23.3`, `freeglut.sourceforge.io^3.4`, `x.org/xcursor^1.2`, ... (+2 more)
+ * @install `pkgx glfw.org`
  *
  * @example
  * ```typescript
@@ -14,8 +11,7 @@
  *
  * const pkg = pantry.glfworg
  * console.log(pkg.name)        // "glfw.org"
- * console.log(pkg.description) // "A multi-platform library for OpenGL, OpenGL ES,..."
- * console.log(pkg.versions[0]) // "3.4.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/glfw-org.md
@@ -27,45 +23,25 @@ export const glfworgPackage = {
    */
   name: 'glfw.org' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/glfw.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'glfw.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/glfw.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'glfw.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i' as const,
-  programs: [] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'linuxfreeglut.sourceforge.io^3.4x.org/xcursor^1.2xkbcommon.org^1.0mesa3d.org^23.3',
-    'freeglut.sourceforge.io^3.4',
-    'x.org/xcursor^1.2',
-    'xkbcommon.org^1.0',
-    'mesa3d.org^23.3',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.4.0',
-    '3.3.10',
-    '3.3.9',
-  ] as const,
-  fullPath: 'glfw.org' as const,
+  installCommand: 'pkgx glfw.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type GlfworgPackage = typeof glfworgPackage

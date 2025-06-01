@@ -1,52 +1,26 @@
 # d2
 
-> D2 is a modern diagram scripting language that turns text to diagrams.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `d2langcom`
 - **Name**: `d2`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/d2lang.com/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) d2
+pkgx d2lang.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `d2`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `d2`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `0.7.0`, `0.6.9`, `0.6.8`, `0.6.7`, `0.6.6`
-- `0.6.5`, `0.6.4`, `0.6.3`, `0.6.2`, `0.6.1`
-- `0.6.0`
-
-</details>
-
-**Latest Version**: `0.7.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx d2@0.7.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -63,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/d2lang.com/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

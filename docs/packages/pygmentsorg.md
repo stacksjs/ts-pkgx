@@ -1,57 +1,26 @@
 # pygmentize
 
-> Pygments is a generic syntax highlighter written in Python
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `pygmentsorg`
 - **Name**: `pygmentize`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pygments.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) pygmentize
+pkgx pygments.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pygmentize`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pygmentize`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `2.19.1`, `2.19.0`, `2.18.0`, `2.17.2`, `2.17.1`
-- `2.17.0`, `2.15.0`, `2.14.0`
-
-</details>
-
-**Latest Version**: `2.19.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx pygmentize@2.19.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `python.org~3.11`
+*No programs specified*
 
 ## Usage Examples
 
@@ -68,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pygments.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

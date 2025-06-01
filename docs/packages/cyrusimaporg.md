@@ -1,11 +1,11 @@
-# cyrusimap.org
+# cyrusimaporg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `cyrusimaporg`
-- **Name**: `cyrusimap.org`
+- **Name**: `cyrusimaporg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

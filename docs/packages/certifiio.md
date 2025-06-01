@@ -1,11 +1,11 @@
-# certifi.io
+# certifiio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `certifiio`
-- **Name**: `certifi.io`
+- **Name**: `certifiio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

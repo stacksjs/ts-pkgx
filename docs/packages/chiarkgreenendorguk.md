@@ -1,11 +1,11 @@
-# chiark.greenend.org.uk
+# chiarkgreenendorguk
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `chiarkgreenendorguk`
-- **Name**: `chiark.greenend.org.uk`
+- **Name**: `chiarkgreenendorguk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

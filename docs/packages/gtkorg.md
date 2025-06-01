@@ -1,11 +1,11 @@
-# gtk.org
+# gtkorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `gtkorg`
-- **Name**: `gtk.org`
+- **Name**: `gtkorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

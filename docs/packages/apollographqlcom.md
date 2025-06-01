@@ -1,11 +1,11 @@
-# apollographql.com
+# apollographqlcom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `apollographqlcom`
-- **Name**: `apollographql.com`
+- **Name**: `apollographqlcom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

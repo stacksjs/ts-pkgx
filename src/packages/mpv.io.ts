@@ -1,13 +1,9 @@
 /**
- * **mpv** - Media player based on MPlayer and mplayer2
+ * **mpv** - Crafters of fine Open Source products
  *
  * @domain `mpv.io`
- * @programs `mpv`
- * @version `0.40.0` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mpv-io.md
  *
- * @install `sh <(curl https://pkgx.sh) mpv`
- * @dependencies `ffmpeg.org`, `libjpeg-turbo.org@2`, `libarchive.org@3`, ... (+11 more)
+ * @install `pkgx mpv.io`
  *
  * @example
  * ```typescript
@@ -15,9 +11,7 @@
  *
  * const pkg = pantry.mpvio
  * console.log(pkg.name)        // "mpv"
- * console.log(pkg.description) // "Media player based on MPlayer and mplayer2"
- * console.log(pkg.programs)    // ["mpv"]
- * console.log(pkg.versions[0]) // "0.40.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mpv-io.md
@@ -29,60 +23,25 @@ export const mpvioPackage = {
    */
   name: 'mpv' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/mpv.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'mpv.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Media player based on MPlayer and mplayer2' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mpv.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'mpv.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) mpv' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'mpv',
-  ] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'ffmpeg.org',
-    'libjpeg-turbo.org@2',
-    'libarchive.org@3',
-    'github.com/libass/libass^0.17',
-    'videolan.org/libplacebo@6',
-    'littlecms.com@2',
-    'luajit.org@2',
-    'mujs.com@1',
-    'freedesktop.org/uchardet@0',
-    'vapoursynth.com@66',
-    'yt-dlp.org',
-    'linuxalsa-project.org/alsa-lib@1github.com/adah1972/libunibreak@6',
-    'alsa-project.org/alsa-lib@1',
-    'github.com/adah1972/libunibreak@6',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.40.0',
-    '0.39.0',
-    '0.38.0',
-  ] as const,
-  fullPath: 'mpv.io' as const,
+  installCommand: 'pkgx mpv.io' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type MpvioPackage = typeof mpvioPackage

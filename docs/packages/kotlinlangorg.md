@@ -1,63 +1,26 @@
 # kotlinlang.org
 
-> Statically typed programming language for the JVM
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `kotlinlangorg`
 - **Name**: `kotlinlang.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kotlinlang.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +kotlinlang.org -- $SHELL -i
+pkgx kotlinlang.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `kapt`
-- `kotlin`
-- `kotlinc`
-- `kotlinc-js`
-- `kotlinc-jvm`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+kotlinlang.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 16 versions</summary>
-
-- `2.1.21`, `2.1.20`, `2.1.10`, `2.1.0`, `2.0.21`
-- `2.0.20`, `2.0.10`, `2.0.0`, `1.9.25`, `1.9.24`
-- `1.9.23`, `1.9.22`, `1.9.21`, `1.9.20`, `1.9.10`
-- `1.9.0`
-
-</details>
-
-**Latest Version**: `2.1.21`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx kotlinlang.org@2.1.21
-```
-
-## Dependencies
-
-This package depends on:
-
-- `openjdk.org`
+*No programs specified*
 
 ## Usage Examples
 
@@ -74,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kotlinlang.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

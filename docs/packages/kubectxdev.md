@@ -1,58 +1,26 @@
 # kube
 
-> Tool that can switch between kubectl contexts easily and create aliases
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `kubectxdev`
 - **Name**: `kube`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubectx.dev/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +kubectx.dev -- $SHELL -i
+pkgx kubectx.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `kubectx`
-- `kubens`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+kubectx.dev -- $SHELL -i`
-- `kube`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.9.5`, `0.9.4`
-
-</details>
-
-**Latest Version**: `0.9.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx kube@0.9.5
-```
-
-## Dependencies
-
-This package depends on:
-
-- `github.com/junegunn/fzf`
+*No programs specified*
 
 ## Usage Examples
 
@@ -69,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kubectx.dev/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

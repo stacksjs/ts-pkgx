@@ -1,51 +1,26 @@
-# skhd
+# githubcomkoekeishiyaskhd
 
-> Simple hotkey daemon for macOS
+> Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomkoekeishiyaskhd`
-- **Name**: `skhd`
+- **Name**: `githubcomkoekeishiyaskhd`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/koekeishiya/skhd/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) skhd
+pkgx github.com-koekeishiya-skhd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `skhd`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `skhd`
-- `koekeishiya/skhd`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.3.9`
-
-</details>
-
-**Latest Version**: `0.3.9`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx skhd@0.3.9
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/koekeishiya/skhd/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,13 +1,9 @@
 /**
- * **langchain.com** - 🦜🔗 Build context-aware reasoning applications
+ * **langchain.com** - Crafters of fine Open Source products
  *
  * @domain `langchain.com`
- * @programs `f2py`, `jsondiff`, `jsonpatch`, `jsonpointer`, `langchain-server`, ... (+2 more)
- * @version `0.1.16` (29 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/langchain-com.md
  *
- * @install `sh <(curl https://pkgx.sh) +langchain.com -- $SHELL -i`
- * @dependencies `python.org^3.12`, `docker.com/compose^2.23`
+ * @install `pkgx langchain.com`
  *
  * @example
  * ```typescript
@@ -15,9 +11,7 @@
  *
  * const pkg = pantry.langchaincom
  * console.log(pkg.name)        // "langchain.com"
- * console.log(pkg.description) // "🦜🔗 Build context-aware reasoning applications"
- * console.log(pkg.programs)    // ["f2py", "jsondiff", ...]
- * console.log(pkg.versions[0]) // "0.1.16" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/langchain-com.md
@@ -29,80 +23,25 @@ export const langchaincomPackage = {
    */
   name: 'langchain.com' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/langchain.com/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'langchain.com' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: '🦜🔗 Build context-aware reasoning applications' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/langchain.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'langchain.com' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +langchain.com -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'f2py',
-    'jsondiff',
-    'jsonpatch',
-    'jsonpointer',
-    'langchain-server',
-    'langsmith',
-    'normalizer',
-  ] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'python.org^3.12',
-    'docker.com/compose^2.23',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.1.16',
-    '0.1.15',
-    '0.1.14',
-    '0.1.13',
-    '0.1.12',
-    '0.1.11',
-    '0.1.10',
-    '0.1.9',
-    '0.1.8',
-    '0.1.7',
-    '0.1.6',
-    '0.1.5',
-    '0.1.4',
-    '0.1.3',
-    '0.1.2',
-    '0.1.1',
-    '0.1.0',
-    '0.0.354',
-    '0.0.353',
-    '0.0.352',
-    '0.0.351',
-    '0.0.350',
-    '0.0.349',
-    '0.0.348',
-    '0.0.347',
-    '0.0.346',
-    '0.0.345',
-    '0.0.344',
-    '0.0.343',
-  ] as const,
-  fullPath: 'langchain.com' as const,
+  installCommand: 'pkgx langchain.com' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type LangchaincomPackage = typeof langchaincomPackage

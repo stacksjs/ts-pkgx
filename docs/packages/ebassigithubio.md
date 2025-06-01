@@ -1,11 +1,11 @@
-# ebassi.github.io
+# ebassigithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `ebassigithubio`
-- **Name**: `ebassi.github.io`
+- **Name**: `ebassigithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

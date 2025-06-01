@@ -1,11 +1,11 @@
-# netlib.org
+# netliborg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `netliborg`
-- **Name**: `netlib.org`
+- **Name**: `netliborg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

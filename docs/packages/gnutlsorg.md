@@ -1,66 +1,26 @@
 # gnutls.org
 
->
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `gnutlsorg`
 - **Name**: `gnutls.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnutls.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +gnutls.org -- $SHELL -i
+pkgx gnutls.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `certtool`
-- `danetool`
-- `gnutls-cli`
-- `gnutls-cli-debug`
-- `gnutls-serv`
-- `ocsptool`
-- `p11tool`
-- `psktool`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `3.8.9`, `3.8.7`, `3.8.6`, `3.8.5`, `3.8.4`
-- `3.8.3`, `3.8.2`, `3.8.1`, `3.7.10`, `3.6.16`
-
-</details>
-
-**Latest Version**: `3.8.9`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx gnutls.org@3.8.9
-```
-
-## Dependencies
-
-This package depends on:
-
-- `freedesktop.org/p11-kit`
-- `gnu.org/libidn2`
-- `gnu.org/libunistring^1`
-- `gnu.org/libtasn1^4`
-- `gnu.org/nettle`
-- `gnu.org/gettext`
-- `gnu.org/gmp`
-- `unbound.net^1`
-- `curl.se/ca-certs`
+*No programs specified*
 
 ## Usage Examples
 
@@ -77,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnutls.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,11 +1,11 @@
-# sagiegurari.github.io
+# sagiegurarigithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `sagiegurarigithubio`
-- **Name**: `sagiegurari.github.io`
+- **Name**: `sagiegurarigithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

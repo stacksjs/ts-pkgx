@@ -1,59 +1,26 @@
 # amp
 
-> A complete text editor for your terminal.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `amprs`
 - **Name**: `amp`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/amp.rs/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) amp
+pkgx amp.rs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `amp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `amp`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.7.1`
-
-</details>
-
-**Latest Version**: `0.7.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx amp@0.7.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `zlib.net@1`
-- `libgit2.org@1`
-- `linuxopenssl.org@1.1`
-- `openssl.org@1.1`
+*No programs specified*
 
 ## Usage Examples
 
@@ -70,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/amp.rs/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

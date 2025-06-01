@@ -1,63 +1,26 @@
 # openresty.org
 
-> High Performance Web Platform Based on Nginx and LuaJIT
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `openrestyorg`
 - **Name**: `openresty.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openresty.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openresty.org -- $SHELL -i
+pkgx openresty.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `nginx-xml2pod`
-- `opm`
-- `resty`
-- `restydoc`
-- `restydoc-index`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+openresty.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.25.3.2`
-
-</details>
-
-**Latest Version**: `1.25.3.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx openresty.org@1.25.3.2
-```
-
-## Dependencies
-
-This package depends on:
-
-- `pcre.org@8`
-- `openssl.org^1.1`
-- `zlib.net^1.2`
-- `perl.org`
+*No programs specified*
 
 ## Usage Examples
 
@@ -74,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openresty.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

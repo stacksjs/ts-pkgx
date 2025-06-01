@@ -1,12 +1,9 @@
 /**
- * **oauth2-proxy** - A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.
+ * **oauth2-proxy** - Crafters of fine Open Source products
  *
  * @domain `oauth2-proxy.github.io`
- * @programs `oauth2-proxy`
- * @version `7.9.0` (7 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/oauth2-proxy-github-io.md
  *
- * @install `sh <(curl https://pkgx.sh) oauth2-proxy`
+ * @install `pkgx oauth2-proxy.github.io`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.oauth2proxygithubio
  * console.log(pkg.name)        // "oauth2-proxy"
- * console.log(pkg.description) // "A reverse proxy that provides authentication wi..."
- * console.log(pkg.programs)    // ["oauth2-proxy"]
- * console.log(pkg.versions[0]) // "7.9.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/oauth2-proxy-github-io.md
@@ -28,45 +23,25 @@ export const oauth2proxygithubioPackage = {
    */
   name: 'oauth2-proxy' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/oauth2-proxy.github.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'oauth2-proxy.github.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/oauth2-proxy.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'oauth2-proxy.github.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) oauth2-proxy' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'oauth2-proxy',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '7.9.0',
-    '7.8.2',
-    '7.8.1',
-    '7.8.0',
-    '7.7.1',
-    '7.7.0',
-    '7.6.0',
-  ] as const,
-  fullPath: 'oauth2-proxy.github.io' as const,
+  installCommand: 'pkgx oauth2-proxy.github.io' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type Oauth2proxygithubioPackage = typeof oauth2proxygithubioPackage

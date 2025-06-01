@@ -1,11 +1,11 @@
-# people.redhat.com
+# peopleredhatcom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `peopleredhatcom`
-- **Name**: `people.redhat.com`
+- **Name**: `peopleredhatcom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,19 +1,19 @@
 # mpmath.org
 
->
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `mpmathorg`
 - **Name**: `mpmath.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mpmath.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +mpmath.org -- $SHELL -i
+pkgx mpmath.org
 ```
 
 ## Programs
@@ -21,30 +21,6 @@ sh <(curl https://pkgx.sh) +mpmath.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.3.0`
-
-</details>
-
-**Latest Version**: `1.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx mpmath.org@1.3.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `python.org~3.11`
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mpmath.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

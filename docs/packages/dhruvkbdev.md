@@ -1,11 +1,11 @@
-# dhruvkb.dev
+# dhruvkbdev
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `dhruvkbdev`
-- **Name**: `dhruvkb.dev`
+- **Name**: `dhruvkbdev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

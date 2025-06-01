@@ -1,11 +1,11 @@
-# dev.yorhel.nl
+# devyorhelnl
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `devyorhelnl`
-- **Name**: `dev.yorhel.nl`
+- **Name**: `devyorhelnl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

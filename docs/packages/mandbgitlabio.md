@@ -1,11 +1,11 @@
-# man-db.gitlab.io
+# mandbgitlabio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `mandbgitlabio`
-- **Name**: `man-db.gitlab.io`
+- **Name**: `mandbgitlabio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

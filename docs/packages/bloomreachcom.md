@@ -1,11 +1,11 @@
-# bloomreach.com
+# bloomreachcom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `bloomreachcom`
-- **Name**: `bloomreach.com`
+- **Name**: `bloomreachcom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

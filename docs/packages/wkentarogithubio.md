@@ -1,11 +1,11 @@
-# wkentaro.github.io
+# wkentarogithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `wkentarogithubio`
-- **Name**: `wkentaro.github.io`
+- **Name**: `wkentarogithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

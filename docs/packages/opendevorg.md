@@ -1,11 +1,11 @@
-# opendev.org
+# opendevorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `opendevorg`
-- **Name**: `opendev.org`
+- **Name**: `opendevorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

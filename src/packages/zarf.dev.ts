@@ -1,12 +1,9 @@
 /**
- * **zarf** - DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/
+ * **zarf** - Crafters of fine Open Source products
  *
  * @domain `zarf.dev`
- * @programs `zarf`
- * @version `0.55.6` (45 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zarf-dev.md
  *
- * @install `sh <(curl https://pkgx.sh) zarf`
+ * @install `pkgx zarf.dev`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.zarfdev
  * console.log(pkg.name)        // "zarf"
- * console.log(pkg.description) // "DevSecOps for Air Gap & Limited-Connection Syst..."
- * console.log(pkg.programs)    // ["zarf"]
- * console.log(pkg.versions[0]) // "0.55.6" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/zarf-dev.md
@@ -28,83 +23,25 @@ export const zarfdevPackage = {
    */
   name: 'zarf' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/zarf.dev/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'zarf.dev' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/zarf.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'zarf.dev' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) zarf' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'zarf',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.55.6',
-    '0.55.5',
-    '0.55.4',
-    '0.55.2',
-    '0.55.1',
-    '0.54.0',
-    '0.53.0',
-    '0.52.1',
-    '0.52.0',
-    '0.51.0',
-    '0.50.0',
-    '0.49.1',
-    '0.49.0',
-    '0.48.1',
-    '0.48.0',
-    '0.47.0',
-    '0.46.0',
-    '0.45.0',
-    '0.44.0',
-    '0.43.1',
-    '0.43.0',
-    '0.42.2',
-    '0.42.1',
-    '0.42.0',
-    '0.41.0',
-    '0.40.1',
-    '0.39.0',
-    '0.38.3',
-    '0.38.2',
-    '0.38.1',
-    '0.38.0',
-    '0.37.0',
-    '0.36.1',
-    '0.36.0',
-    '0.35.0',
-    '0.34.0',
-    '0.33.2',
-    '0.33.1',
-    '0.33.0',
-    '0.32.6',
-    '0.32.5',
-    '0.32.4',
-    '0.32.3',
-    '0.32.2',
-    '0.32.1',
-  ] as const,
-  fullPath: 'zarf.dev' as const,
+  installCommand: 'pkgx zarf.dev' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type ZarfdevPackage = typeof zarfdevPackage

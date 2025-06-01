@@ -1,11 +1,11 @@
-# people.engr.tamu.edu
+# peopleengrtamuedu
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `peopleengrtamuedu`
-- **Name**: `people.engr.tamu.edu`
+- **Name**: `peopleengrtamuedu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

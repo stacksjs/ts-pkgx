@@ -1,56 +1,26 @@
 # replibyte
 
-> Seed your development database with real data ⚡️
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `replibytecom`
 - **Name**: `replibyte`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/replibyte.com/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) replibyte
+pkgx replibyte.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `replibyte`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `replibyte`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.10.0`
-
-</details>
-
-**Latest Version**: `0.10.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx replibyte@0.10.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `openssl.org^1.1`
+*No programs specified*
 
 ## Usage Examples
 
@@ -67,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/replibyte.com/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

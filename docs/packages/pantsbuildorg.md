@@ -1,11 +1,11 @@
-# pantsbuild.org
+# pantsbuildorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `pantsbuildorg`
-- **Name**: `pantsbuild.org`
+- **Name**: `pantsbuildorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

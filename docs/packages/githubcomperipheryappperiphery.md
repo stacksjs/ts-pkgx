@@ -1,59 +1,26 @@
-# periphery
+# githubcomperipheryappperiphery
 
-> A tool to identify unused code in Swift projects.
+> Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomperipheryappperiphery`
-- **Name**: `periphery`
+- **Name**: `githubcomperipheryappperiphery`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peripheryapp/periphery/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) periphery
+pkgx github.com-peripheryapp-periphery
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `periphery`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `periphery`
-- `peripheryapp/periphery`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `3.1.0`, `3.0.3`, `3.0.2`, `3.0.1`, `3.0.0`
-- `2.21.2`
-
-</details>
-
-**Latest Version**: `3.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx periphery@3.1.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-- `gnome.org/libxml2`
+*No programs specified*
 
 ## Usage Examples
 
@@ -70,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peripheryapp/periphery/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

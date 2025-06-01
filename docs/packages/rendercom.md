@@ -1,51 +1,26 @@
 # render
 
-> Command-line interface for Render
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `rendercom`
 - **Name**: `render`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/render.com/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) render
+pkgx render.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `render`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `render`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `0.1.11`, `0.1.10`, `0.1.9`, `0.1.8`, `0.1.7`
-- `0.1.5`
-
-</details>
-
-**Latest Version**: `0.1.11`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx render@0.1.11
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/render.com/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

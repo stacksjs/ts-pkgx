@@ -1,50 +1,26 @@
 # jetp
 
-> Read-only mirror: see https://www.jetporch.com/community/sourcehut
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `jetporchcom`
 - **Name**: `jetp`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jetporch.com/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) jetp
+pkgx jetporch.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `jetp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `jetp`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.0.1`
-
-</details>
-
-**Latest Version**: `0.0.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx jetp@0.0.1
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jetporch.com/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

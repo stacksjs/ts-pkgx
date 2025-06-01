@@ -1,11 +1,11 @@
-# facebook.com
+# facebookcom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `facebookcom`
-- **Name**: `facebook.com`
+- **Name**: `facebookcom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

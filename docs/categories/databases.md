@@ -6,83 +6,83 @@ Database systems and data storage solutions.
 
 ## Packages
 
-### [duckdborg](../packages/duckdborg.md) (duckdb)
+### [duckdborg](../packages/duckdborg.md) ()
 
-DuckDB is an analytical in-process SQL database management system
+Crafters of fine Open Source products
 
-**Programs**: duckdb
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) duckdb`
-
----
-
-### [mongodbcom](../packages/mongodbcom.md) (+mongodb.com -- $SHELL -i)
-
-The MongoDB Database
-
-**Programs**: install_compass, mongod, mongos
-
-**Install**: `sh <(curl https://pkgx.sh) +mongodb.com -- $SHELL -i`
+**Install**: `pkgx duckdb.org`
 
 ---
 
-### [mysqlcom](../packages/mysqlcom.md) (+mysql.com -- $SHELL -i)
+### [mongodbcom](../packages/mongodbcom.md) ()
 
-MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.
+Crafters of fine Open Source products
 
-**Programs**: mysql_client_test, my_print_defaults, myisam_ftdump, myisamchk, myisamlog, myisampack, mysql, mysql_config, mysql_config_editor, mysql_keyring_encryption_test, mysql_migrate_keyring, mysql_secure_installation, mysql_tzinfo_to_sql, mysqladmin, mysqlbinlog, mysqlcheck, mysqld, mysqld_multi, mysqld_safe, mysqldump, mysqldumpslow, mysqlimport, mysqlrouter, mysqlrouter_keyring, mysqlrouter_passwd, mysqlrouter_plugin_info, mysqlshow, mysqlslap, mysqltest, mysqltest_safe_process, mysqlxtest
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i`
-
----
-
-### [postgresqlorg](../packages/postgresqlorg.md) (+postgresql.org -- $SHELL -i)
-
-Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
-
-**Programs**: clusterdb, createdb, dropdb, dropuser, ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_config, pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready, pg_receivewal, pg_recvlogical, pg_resetwal, pg_restore, pg_rewind, pg_test_fsync, pg_test_timing, pg_upgrade, pg_waldump, pgbench, postgres, psql, reindexdb, vacuumdb
-
-**Install**: `sh <(curl https://pkgx.sh) +postgresql.org -- $SHELL -i`
+**Install**: `pkgx mongodb.com`
 
 ---
 
-### [redisio](../packages/redisio.md) (+redis.io -- $SHELL -i, redis)
+### [mysqlcom](../packages/mysqlcom.md) ()
 
-Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps.
+Crafters of fine Open Source products
 
-**Programs**: redis-server, redis-cli, redis-benchmark
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +redis.io -- $SHELL -i`
-
----
-
-### [sqliteorg](../packages/sqliteorg.md) (sqlite3)
-
-Official Git mirror of the SQLite source tree
-
-**Programs**: sqlite3
-
-**Install**: `sh <(curl https://pkgx.sh) sqlite3`
+**Install**: `pkgx mysql.com`
 
 ---
 
-### [surrealdbcom](../packages/surrealdbcom.md) (surreal)
+### [postgresqlorg](../packages/postgresqlorg.md) ()
 
-A scalable, distributed, collaborative, document-graph database, for the realtime web
+Crafters of fine Open Source products
 
-**Programs**: surreal
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) surreal`
+**Install**: `pkgx postgresql.org`
 
 ---
 
-### [valkeyio](../packages/valkeyio.md) (+valkey.io -- $SHELL -i, valkey)
+### [redisio](../packages/redisio.md) ()
 
-A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
+Crafters of fine Open Source products
 
-**Programs**: valkey-server, valkey-cli, valkey-benchmark
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +valkey.io -- $SHELL -i`
+**Install**: `pkgx redis.io`
+
+---
+
+### [sqliteorg](../packages/sqliteorg.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx sqlite.org`
+
+---
+
+### [surrealdbcom](../packages/surrealdbcom.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx surrealdb.com`
+
+---
+
+### [valkeyio](../packages/valkeyio.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx valkey.io`
 
 ---
 

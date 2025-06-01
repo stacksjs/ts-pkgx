@@ -1,11 +1,11 @@
-# leethomason.github.io
+# leethomasongithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `leethomasongithubio`
-- **Name**: `leethomason.github.io`
+- **Name**: `leethomasongithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

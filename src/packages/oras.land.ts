@@ -1,12 +1,9 @@
 /**
- * **oras** - OCI registry client - managing content like artifacts, images, packages
+ * **oras** - Crafters of fine Open Source products
  *
  * @domain `oras.land`
- * @programs `oras`
- * @version `1.2.3` (4 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/oras-land.md
  *
- * @install `sh <(curl https://pkgx.sh) oras`
+ * @install `pkgx oras.land`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.orasland
  * console.log(pkg.name)        // "oras"
- * console.log(pkg.description) // "OCI registry client - managing content like art..."
- * console.log(pkg.programs)    // ["oras"]
- * console.log(pkg.versions[0]) // "1.2.3" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/oras-land.md
@@ -28,42 +23,25 @@ export const oraslandPackage = {
    */
   name: 'oras' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/oras.land/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'oras.land' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'OCI registry client - managing content like artifacts, images, packages' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/oras.land/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'oras.land' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) oras' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'oras',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.2.3',
-    '1.2.2',
-    '1.2.1',
-    '1.2.0',
-  ] as const,
-  fullPath: 'oras.land' as const,
+  installCommand: 'pkgx oras.land' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type OraslandPackage = typeof oraslandPackage

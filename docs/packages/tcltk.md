@@ -1,11 +1,11 @@
-# tcl.tk
+# tcltk
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `tcltk`
-- **Name**: `tcl.tk`
+- **Name**: `tcltk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# rbenv.org
+# rbenvorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `rbenvorg`
-- **Name**: `rbenv.org`
+- **Name**: `rbenvorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

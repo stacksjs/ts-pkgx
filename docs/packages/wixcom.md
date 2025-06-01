@@ -1,11 +1,11 @@
-# wix.com
+# wixcom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `wixcom`
-- **Name**: `wix.com`
+- **Name**: `wixcom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

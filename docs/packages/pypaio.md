@@ -1,11 +1,11 @@
-# pypa.io
+# pypaio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `pypaio`
-- **Name**: `pypa.io`
+- **Name**: `pypaio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

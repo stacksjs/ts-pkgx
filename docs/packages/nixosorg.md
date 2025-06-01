@@ -1,11 +1,11 @@
-# nixos.org
+# nixosorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `nixosorg`
-- **Name**: `nixos.org`
+- **Name**: `nixosorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

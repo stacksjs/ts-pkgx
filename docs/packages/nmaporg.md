@@ -1,59 +1,26 @@
 # nmap.org
 
-> Port scanning utility for large networks
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `nmaporg`
 - **Name**: `nmap.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nmap.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +nmap.org -- $SHELL -i
+pkgx nmap.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `nmap`
-- `ncat`
-- `nping`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+nmap.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `7.97.0`, `7.96.0`, `7.95.0`, `7.94.0`, `7.93.0`
-
-</details>
-
-**Latest Version**: `7.97.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx nmap.org@7.97.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `openssl.org^1.1`
-- `pcre.org/v2^10`
+*No programs specified*
 
 ## Usage Examples
 
@@ -70,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nmap.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

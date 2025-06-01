@@ -1,11 +1,11 @@
-# taku910.github.io
+# taku910githubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `taku910githubio`
-- **Name**: `taku910.github.io`
+- **Name**: `taku910githubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

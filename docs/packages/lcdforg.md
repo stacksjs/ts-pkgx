@@ -1,11 +1,11 @@
-# lcdf.org
+# lcdforg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `lcdforg`
-- **Name**: `lcdf.org`
+- **Name**: `lcdforg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

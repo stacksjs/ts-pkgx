@@ -1,52 +1,26 @@
 # geos-config
 
-> Geometry Engine, Open Source
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `libgeosorg`
 - **Name**: `geos-config`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libgeos.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) geos-config
+pkgx libgeos.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `geos-config`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `geos-config`
-
-## Available Versions
-
-<details>
-<summary>Show all 15 versions</summary>
-
-- `3.13.1`, `3.13.0`, `3.12.3`, `3.12.2`, `3.12.1`
-- `3.12.0`, `3.11.5`, `3.11.4`, `3.11.3`, `3.11.2`
-- `3.10.7`, `3.10.6`, `3.9.6`, `3.9.5`, `3.8.4`
-
-</details>
-
-**Latest Version**: `3.13.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx geos-config@3.13.1
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -63,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libgeos.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

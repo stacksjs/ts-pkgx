@@ -1,19 +1,19 @@
-# oberhumer.com/ucl
+# oberhumercomucl
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `oberhumercomucl`
-- **Name**: `oberhumer.com/ucl`
+- **Name**: `oberhumercomucl`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/oberhumer.com/ucl/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +oberhumer.com/ucl -- $SHELL -i
+pkgx oberhumer.com-ucl
 ```
 
 ## Programs
@@ -21,30 +21,6 @@ sh <(curl https://pkgx.sh) +oberhumer.com/ucl -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ucl`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.3.0`
-
-</details>
-
-**Latest Version**: `1.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx oberhumer.com/ucl@1.3.0
-```
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/oberhumer.com/ucl/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

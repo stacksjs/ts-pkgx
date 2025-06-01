@@ -1,12 +1,9 @@
 /**
- * **fx** - Terminal JSON viewer & processor
+ * **fx** - Crafters of fine Open Source products
  *
  * @domain `fx.wtf`
- * @programs `fx`
- * @version `36.0.3` (17 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fx-wtf.md
  *
- * @install `sh <(curl https://pkgx.sh) fx`
+ * @install `pkgx fx.wtf`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.fxwtf
  * console.log(pkg.name)        // "fx"
- * console.log(pkg.description) // "Terminal JSON viewer & processor"
- * console.log(pkg.programs)    // ["fx"]
- * console.log(pkg.versions[0]) // "36.0.3" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fx-wtf.md
@@ -28,55 +23,25 @@ export const fxwtfPackage = {
    */
   name: 'fx' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/fx.wtf/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'fx.wtf' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Terminal JSON viewer & processor' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fx.wtf/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'fx.wtf' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) fx' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'fx',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '36.0.3',
-    '36.0.2',
-    '36.0.1',
-    '36.0.0',
-    '35.0.0',
-    '34.0.0',
-    '33.0.0',
-    '32.0.0',
-    '31.0.0',
-    '30.2.0',
-    '30.1.1',
-    '30.1.0',
-    '30.0.3',
-    '30.0.2',
-    '30.0.1',
-    '30.0.0',
-    '24.1.0',
-  ] as const,
-  fullPath: 'fx.wtf' as const,
+  installCommand: 'pkgx fx.wtf' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type FxwtfPackage = typeof fxwtfPackage

@@ -1,19 +1,19 @@
 # liburcu
 
-> liburcu is a LGPLv2.1 userspace RCU (read-copy-update) library. This data synchronization library provides read-side access which scales linearly with the number of cores.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `liburcuorg`
 - **Name**: `liburcu`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/liburcu.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +liburcu.org -- $SHELL -i
+pkgx liburcu.org
 ```
 
 ## Programs
@@ -21,31 +21,6 @@ sh <(curl https://pkgx.sh) +liburcu.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+liburcu.org -- $SHELL -i`
-- `liburcu`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.15.3`, `0.15.2`, `0.15.1`, `0.15.0`
-
-</details>
-
-**Latest Version**: `0.15.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx liburcu@0.15.3
-```
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/liburcu.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

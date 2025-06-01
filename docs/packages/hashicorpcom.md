@@ -1,11 +1,11 @@
-# hashicorp.com
+# hashicorpcom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `hashicorpcom`
-- **Name**: `hashicorp.com`
+- **Name**: `hashicorpcom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

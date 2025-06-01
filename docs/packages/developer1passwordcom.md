@@ -1,11 +1,11 @@
-# developer.1password.com
+# developer1passwordcom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `developer1passwordcom`
-- **Name**: `developer.1password.com`
+- **Name**: `developer1passwordcom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,13 +1,9 @@
 /**
- * **swig.org** - SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.
+ * **swig.org** - Crafters of fine Open Source products
  *
  * @domain `swig.org`
- * @programs `swig`, `ccache-swig`
- * @version `4.3.1` (5 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/swig-org.md
  *
- * @install `sh <(curl https://pkgx.sh) +swig.org -- $SHELL -i`
- * @dependencies `pcre.org/v2`
+ * @install `pkgx swig.org`
  *
  * @example
  * ```typescript
@@ -15,9 +11,7 @@
  *
  * const pkg = pantry.swigorg
  * console.log(pkg.name)        // "swig.org"
- * console.log(pkg.description) // "SWIG is a software development tool that connec..."
- * console.log(pkg.programs)    // ["swig", "ccache-swig"]
- * console.log(pkg.versions[0]) // "4.3.1" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/swig-org.md
@@ -29,50 +23,25 @@ export const swigorgPackage = {
    */
   name: 'swig.org' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/swig.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'swig.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/swig.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'swig.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +swig.org -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'swig',
-    'ccache-swig',
-  ] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'pcre.org/v2',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '4.3.1',
-    '4.3.0',
-    '4.2.1',
-    '4.2.0',
-    '4.1.1',
-  ] as const,
-  fullPath: 'swig.org' as const,
+  installCommand: 'pkgx swig.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type SwigorgPackage = typeof swigorgPackage

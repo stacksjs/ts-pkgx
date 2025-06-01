@@ -1,19 +1,19 @@
 # libuv.org
 
-> Cross-platform asynchronous I/O
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `libuvorg`
 - **Name**: `libuv.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libuv.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libuv.org -- $SHELL -i
+pkgx libuv.org
 ```
 
 ## Programs
@@ -21,31 +21,6 @@ sh <(curl https://pkgx.sh) +libuv.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+libuv.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `1.51.0`, `1.50.0`, `1.49.2`, `1.49.1`, `1.49.0`
-- `1.48.0`, `1.47.0`, `1.46.0`, `1.45.0`, `1.44.2`
-
-</details>
-
-**Latest Version**: `1.51.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx libuv.org@1.51.0
-```
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libuv.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

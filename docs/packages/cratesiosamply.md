@@ -1,50 +1,26 @@
-# samply
+# cratesiosamply
 
-> Command-line sampling profiler for macOS, Linux, and Windows
+> Go home.
 
 ## Package Information
 
 - **Domain**: `cratesiosamply`
-- **Name**: `samply`
+- **Name**: `cratesiosamply`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/samply/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) samply
+pkgx crates.io-samply
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `samply`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `samply`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.13.1`, `0.13.0`, `0.12.0`
-
-</details>
-
-**Latest Version**: `0.13.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx samply@0.13.1
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/samply/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

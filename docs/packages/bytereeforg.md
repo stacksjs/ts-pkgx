@@ -1,11 +1,11 @@
-# bytereef.org
+# bytereeforg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `bytereeforg`
-- **Name**: `bytereef.org`
+- **Name**: `bytereeforg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

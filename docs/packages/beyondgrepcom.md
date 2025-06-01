@@ -1,57 +1,26 @@
 # ack
 
-> ack is a grep-like search tool optimized for source code.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `beyondgrepcom`
 - **Name**: `ack`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/beyondgrep.com/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) ack
+pkgx beyondgrep.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ack`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ack`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `3.9.0`, `3.8.2`, `3.8.1`, `3.8.0`, `3.7.0`
-- `3.6.0`
-
-</details>
-
-**Latest Version**: `3.9.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx ack@3.9.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `perl.org`
+*No programs specified*
 
 ## Usage Examples
 
@@ -68,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/beyondgrep.com/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

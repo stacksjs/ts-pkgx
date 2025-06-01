@@ -1,56 +1,26 @@
 # steampipe
 
-> Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `steampipeio`
 - **Name**: `steampipe`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/steampipe.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) steampipe
+pkgx steampipe.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `steampipe`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `steampipe`
-
-## Available Versions
-
-<details>
-<summary>Show all 32 versions</summary>
-
-- `1.1.3`, `1.1.2`, `1.1.1`, `1.1.0`, `1.0.3`
-- `1.0.2`, `1.0.1`, `1.0.0`, `0.24.2`, `0.24.1`
-- `0.24.0`, `0.23.5`, `0.23.4`, `0.23.3`, `0.23.2`
-- `0.23.1`, `0.23.0`, `0.22.2`, `0.22.1`, `0.22.0`
-- `0.21.8`, `0.21.7`, `0.21.6`, `0.21.5`, `0.21.4`
-- `0.21.3`, `0.21.2`, `0.21.1`, `0.21.0`, `0.20.12`
-- `0.20.11`, `0.20.10`
-
-</details>
-
-**Latest Version**: `1.1.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx steampipe@1.1.3
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -67,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/steampipe.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

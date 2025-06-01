@@ -1,58 +1,26 @@
 # tailwindcss
 
-> A utility-first CSS framework for rapid UI development.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `tailwindcsscom`
 - **Name**: `tailwindcss`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tailwindcss.com/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) tailwindcss
+pkgx tailwindcss.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tailwindcss`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `tailwindcss`
-
-## Available Versions
-
-<details>
-<summary>Show all 42 versions</summary>
-
-- `4.1.8`, `4.1.7`, `4.1.6`, `4.1.5`, `4.1.4`
-- `4.1.3`, `4.1.2`, `4.1.1`, `4.1.0`, `4.0.17`
-- `4.0.16`, `4.0.15`, `4.0.14`, `4.0.13`, `4.0.12`
-- `4.0.11`, `4.0.10`, `4.0.9`, `4.0.8`, `4.0.7`
-- `4.0.6`, `4.0.5`, `4.0.4`, `4.0.3`, `4.0.2`
-- `4.0.1`, `4.0.0`, `3.4.17`, `3.4.16`, `3.4.15`
-- `3.4.14`, `3.4.13`, `3.4.12`, `3.4.11`, `3.4.10`
-- `3.4.9`, `3.4.8`, `3.4.7`, `3.4.6`, `3.4.5`
-- `3.4.4`, `3.4.3`
-
-</details>
-
-**Latest Version**: `4.1.8`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx tailwindcss@4.1.8
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -69,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tailwindcss.com/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,19 +1,19 @@
 # zeromq.org
 
-> ZeroMQ core engine in C++, implements ZMTP/3.1
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `zeromqorg`
 - **Name**: `zeromq.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zeromq.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +zeromq.org -- $SHELL -i
+pkgx zeromq.org
 ```
 
 ## Programs
@@ -21,30 +21,6 @@ sh <(curl https://pkgx.sh) +zeromq.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+zeromq.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `4.3.5`, `4.3.4`
-
-</details>
-
-**Latest Version**: `4.3.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx zeromq.org@4.3.5
-```
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/zeromq.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

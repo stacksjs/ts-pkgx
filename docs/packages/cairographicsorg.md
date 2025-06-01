@@ -1,66 +1,26 @@
 # cairo-trace
 
-> Vector graphics library with cross-device output support
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `cairographicsorg`
 - **Name**: `cairo-trace`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) cairo-trace
+pkgx cairographics.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cairo-trace`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `cairo-trace`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.18.4`, `1.18.2`, `1.18.0`, `1.16.0`
-
-</details>
-
-**Latest Version**: `1.18.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx cairo-trace@1.18.4
-```
-
-## Dependencies
-
-This package depends on:
-
-- `libpng.org@1`
-- `pixman.org^0.40.0`
-- `freetype.org@2`
-- `gnome.org/glib@2`
-- `freedesktop.org/fontconfig@2`
-- `sourceware.org/bzip2@1`
-- `x.org/x11`
-- `x.org/xcb`
-- `x.org/exts`
-- `x.org/xrender`
-- `oberhumer.com/lzo`
+*No programs specified*
 
 ## Usage Examples
 
@@ -77,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

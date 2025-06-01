@@ -1,11 +1,11 @@
-# csie.ntu.edu.tw
+# csientuedutw
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `csientuedutw`
-- **Name**: `csie.ntu.edu.tw`
+- **Name**: `csientuedutw`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

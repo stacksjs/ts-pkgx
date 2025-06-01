@@ -1,11 +1,11 @@
-# notroj.github.io
+# notrojgithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `notrojgithubio`
-- **Name**: `notroj.github.io`
+- **Name**: `notrojgithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

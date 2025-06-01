@@ -1,11 +1,11 @@
-# kislyuk.github.io
+# kislyukgithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `kislyukgithubio`
-- **Name**: `kislyuk.github.io`
+- **Name**: `kislyukgithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# fluxcd.io
+# fluxcdio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `fluxcdio`
-- **Name**: `fluxcd.io`
+- **Name**: `fluxcdio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

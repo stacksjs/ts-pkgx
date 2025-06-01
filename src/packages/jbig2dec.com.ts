@@ -1,12 +1,9 @@
 /**
- * **jbig2dec** - This is a mirror: the canonical repo is: git.ghostscript.com/jbig2dec.git. This repo does not host releases, they are here: https://github.com/ArtifexSoftware/jbig2dec/tags
+ * **jbig2dec** - Crafters of fine Open Source products
  *
  * @domain `jbig2dec.com`
- * @programs `jbig2dec`
- * @version `0.19.0` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jbig2dec-com.md
  *
- * @install `sh <(curl https://pkgx.sh) jbig2dec`
+ * @install `pkgx jbig2dec.com`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.jbig2deccom
  * console.log(pkg.name)        // "jbig2dec"
- * console.log(pkg.description) // "This is a mirror: the canonical repo is: git.gh..."
- * console.log(pkg.programs)    // ["jbig2dec"]
- * console.log(pkg.versions[0]) // "0.19.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jbig2dec-com.md
@@ -28,39 +23,25 @@ export const jbig2deccomPackage = {
    */
   name: 'jbig2dec' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/jbig2dec.com/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'jbig2dec.com' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'This is a mirror: the canonical repo is: git.ghostscript.com/jbig2dec.git. This repo does not host releases, they are here: https://github.com/ArtifexSoftware/jbig2dec/tags' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jbig2dec.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'jbig2dec.com' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) jbig2dec' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'jbig2dec',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.19.0',
-  ] as const,
-  fullPath: 'jbig2dec.com' as const,
+  installCommand: 'pkgx jbig2dec.com' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type Jbig2deccomPackage = typeof jbig2deccomPackage

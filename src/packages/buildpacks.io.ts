@@ -1,88 +1,47 @@
 /**
- * **pack** - CLI for building apps using Cloud Native Buildpacks
+ * **pack** - Crafters of fine Open Source products
  *
  * @domain `buildpacks.io`
- * @programs `pack`
- * @version `0.37.0` (12 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/buildpacks-io.md
  *
- * @install `sh <(curl https://pkgx.sh) pack`
- * @aliases `pack`
+ * @install `pkgx buildpacks.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pack
- * // Or access via domain
- * const samePkg = pantry.buildpacksio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.buildpacksio
  * console.log(pkg.name)        // "pack"
- * console.log(pkg.description) // "CLI for building apps using Cloud Native Buildp..."
- * console.log(pkg.programs)    // ["pack"]
- * console.log(pkg.versions[0]) // "0.37.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/buildpacks-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const packPackage = {
+export const buildpacksioPackage = {
   /**
    * The display name of this package.
    */
   name: 'pack' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/buildpacks.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'buildpacks.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'CLI for building apps using Cloud Native Buildpacks' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/buildpacks.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'buildpacks.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) pack' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'pack',
-  ] as const,
-  companions: [] as const,
+  installCommand: 'pkgx buildpacks.io' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.37.0',
-    '0.36.4',
-    '0.36.3',
-    '0.36.2',
-    '0.36.1',
-    '0.36.0',
-    '0.35.1',
-    '0.35.0',
-    '0.34.2',
-    '0.34.1',
-    '0.34.0',
-    '0.33.2',
-  ] as const,
-  fullPath: 'buildpacks.io' as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pack',
-  ] as const,
+  companions: [] as const,
 }
 
-export type PackPackage = typeof packPackage
+export type BuildpacksioPackage = typeof buildpacksioPackage

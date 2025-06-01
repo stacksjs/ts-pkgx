@@ -1,57 +1,26 @@
-# Scryer Prolog
+# Scryer
 
-> Modern ISO Prolog implementation written mostly in Rust
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `scryerpl`
-- **Name**: `Scryer Prolog`
+- **Name**: `Scryer`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/scryer.pl/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) scryer-prolog
+pkgx scryer.pl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `scryer-prolog`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `scryer-prolog`
-- `scryer prolog`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.9.4`
-
-</details>
-
-**Latest Version**: `0.9.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx Scryer Prolog@0.9.4
-```
-
-## Dependencies
-
-This package depends on:
-
-- `openssl.org^1.1`
+*No programs specified*
 
 ## Usage Examples
 
@@ -68,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/scryer.pl/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

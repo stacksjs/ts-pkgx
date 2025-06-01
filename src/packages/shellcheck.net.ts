@@ -1,86 +1,47 @@
 /**
- * **shellcheck** - ShellCheck, a static analysis tool for shell scripts
+ * **shellcheck** - Crafters of fine Open Source products
  *
  * @domain `shellcheck.net`
- * @programs `shellcheck`
- * @version `0.10.0` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/shellcheck-net.md
  *
- * @install `sh <(curl https://pkgx.sh) shellcheck`
- * @aliases `shellcheck`
- * @dependencies `sourceware.org/libffi@3`
+ * @install `pkgx shellcheck.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.shellcheck
- * // Or access via domain
- * const samePkg = pantry.shellchecknet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.shellchecknet
  * console.log(pkg.name)        // "shellcheck"
- * console.log(pkg.description) // "ShellCheck, a static analysis tool for shell sc..."
- * console.log(pkg.programs)    // ["shellcheck"]
- * console.log(pkg.versions[0]) // "0.10.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/shellcheck-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const shellcheckPackage = {
+export const shellchecknetPackage = {
   /**
    * The display name of this package.
    */
   name: 'shellcheck' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/shellcheck.net/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'shellcheck.net' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'ShellCheck, a static analysis tool for shell scripts' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/shellcheck.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'shellcheck.net' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) shellcheck' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'shellcheck',
-  ] as const,
+  installCommand: 'pkgx shellcheck.net' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'sourceware.org/libffi@3',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.10.0',
-    '0.9.0',
-    '0.8.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'shellcheck',
-  ] as const,
-  fullPath: 'shellcheck.net' as const,
 }
 
-export type ShellcheckPackage = typeof shellcheckPackage
+export type ShellchecknetPackage = typeof shellchecknetPackage

@@ -1,11 +1,11 @@
-# hugo.wang
+# hugowang
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `hugowang`
-- **Name**: `hugo.wang`
+- **Name**: `hugowang`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

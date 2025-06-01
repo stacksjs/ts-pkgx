@@ -1,11 +1,11 @@
-# argoproj.github.io
+# argoprojgithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `argoprojgithubio`
-- **Name**: `argoproj.github.io`
+- **Name**: `argoprojgithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

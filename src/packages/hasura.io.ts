@@ -1,12 +1,9 @@
 /**
- * **hasura** - Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events.
+ * **hasura** - Crafters of fine Open Source products
  *
  * @domain `hasura.io`
- * @programs `hasura`
- * @version `2.48.1` (51 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/hasura-io.md
  *
- * @install `sh <(curl https://pkgx.sh) hasura`
+ * @install `pkgx hasura.io`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.hasuraio
  * console.log(pkg.name)        // "hasura"
- * console.log(pkg.description) // "Blazing fast, instant realtime GraphQL APIs on ..."
- * console.log(pkg.programs)    // ["hasura"]
- * console.log(pkg.versions[0]) // "2.48.1" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/hasura-io.md
@@ -28,89 +23,25 @@ export const hasuraioPackage = {
    */
   name: 'hasura' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/hasura.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'hasura.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/hasura.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'hasura.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) hasura' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'hasura',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.48.1',
-    '2.48.0',
-    '2.47.0',
-    '2.46.0',
-    '2.45.2',
-    '2.45.1',
-    '2.45.0',
-    '2.44.1',
-    '2.44.0',
-    '2.43.0',
-    '2.42.0',
-    '2.41.0',
-    '2.40.3',
-    '2.40.2',
-    '2.40.1',
-    '2.40.0',
-    '2.39.2',
-    '2.39.1',
-    '2.39.0',
-    '2.38.1',
-    '2.38.0',
-    '2.37.1',
-    '2.37.0',
-    '2.36.12',
-    '2.36.10',
-    '2.36.9',
-    '2.36.8',
-    '2.36.7',
-    '2.36.6',
-    '2.36.5',
-    '2.36.4',
-    '2.36.3',
-    '2.36.2',
-    '2.36.1',
-    '2.36.0',
-    '2.35.2',
-    '2.35.1',
-    '2.35.0',
-    '2.34.0',
-    '2.33.4',
-    '2.33.3',
-    '2.33.2',
-    '2.33.1',
-    '2.33.0',
-    '2.32.1',
-    '2.32.0',
-    '2.31.0',
-    '2.11.13',
-    '2.11.12',
-    '2.11.11',
-    '2.11.10',
-  ] as const,
-  fullPath: 'hasura.io' as const,
+  installCommand: 'pkgx hasura.io' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type HasuraioPackage = typeof hasuraioPackage

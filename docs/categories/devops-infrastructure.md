@@ -6,17 +6,19 @@ Tools for deployment, orchestration, and infrastructure management.
 
 ## Packages
 
-### [ansiblecom](../packages/ansiblecom.md) (+ansible.com -- $SHELL -i, ansible)
+### [ansiblecom](../packages/ansiblecom.md) ()
 
-Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
+Crafters of fine Open Source products
 
-**Programs**: ansible, ansible-config, ansible-connection, ansible-console, ansible-doc, ansible-galaxy, ansible-inventory, ansible-playbook, ansible-pull, ansible-test, ansible-vault
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i`
+**Install**: `pkgx ansible.com`
 
 ---
 
 ### [argoprojgithubio](../packages/argoprojgithubio.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -26,23 +28,27 @@ Ansible is a radically simple IT automation platform that makes your application
 
 ### [ciliumio](../packages/ciliumio.md) ()
 
+Go home.
+
 **Programs**: None specified
 
 **Install**: `pkgx cilium.io`
 
 ---
 
-### [consulio](../packages/consulio.md) (consul)
+### [consulio](../packages/consulio.md) ()
 
-Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.
+Crafters of fine Open Source products
 
-**Programs**: consul
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) consul`
+**Install**: `pkgx consul.io`
 
 ---
 
 ### [dockercom](../packages/dockercom.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -50,7 +56,9 @@ Consul is a distributed, highly available, and data center aware solution to con
 
 ---
 
-### [fluxcdio](../packages/fluxcdio.md)
+### [fluxcdio](../packages/fluxcdio.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -58,27 +66,29 @@ Consul is a distributed, highly available, and data center aware solution to con
 
 ---
 
-### [helmsh](../packages/helmsh.md) (helm)
+### [helmsh](../packages/helmsh.md) ()
 
-The Kubernetes Package Manager
+Crafters of fine Open Source products
 
-**Programs**: helm
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) helm`
-
----
-
-### [istioio](../packages/istioio.md) (istioctl)
-
-Connect, secure, control, and observe services.
-
-**Programs**: istioctl
-
-**Install**: `sh <(curl https://pkgx.sh) istioctl`
+**Install**: `pkgx helm.sh`
 
 ---
 
-### [kubernetesio](../packages/kubernetesio.md)
+### [istioio](../packages/istioio.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx istio.io`
+
+---
+
+### [kubernetesio](../packages/kubernetesio.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -86,43 +96,43 @@ Connect, secure, control, and observe services.
 
 ---
 
-### [nomadprojectio](../packages/nomadprojectio.md) (nomad)
+### [nomadprojectio](../packages/nomadprojectio.md) ()
 
-Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
+Crafters of fine Open Source products
 
-**Programs**: nomad
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) nomad`
-
----
-
-### [podmanio](../packages/podmanio.md) (+podman.io -- $SHELL -i, podman)
-
-Podman: A tool for managing OCI containers and pods.
-
-**Programs**: podman, podman-remote, podman-mac-helper
-
-**Install**: `sh <(curl https://pkgx.sh) +podman.io -- $SHELL -i`
+**Install**: `pkgx nomadproject.io`
 
 ---
 
-### [terraformio](../packages/terraformio.md) (terraform)
+### [podmanio](../packages/podmanio.md) ()
 
-Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
+Crafters of fine Open Source products
 
-**Programs**: terraform
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) terraform`
+**Install**: `pkgx podman.io`
 
 ---
 
-### [traefikio](../packages/traefikio.md) (traefik)
+### [terraformio](../packages/terraformio.md) ()
 
-The Cloud Native Application Proxy
+Crafters of fine Open Source products
 
-**Programs**: traefik
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) traefik`
+**Install**: `pkgx terraform.io`
+
+---
+
+### [traefikio](../packages/traefikio.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx traefik.io`
 
 ---
 

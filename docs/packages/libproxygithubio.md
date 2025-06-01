@@ -1,11 +1,11 @@
-# libproxy.github.io
+# libproxygithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `libproxygithubio`
-- **Name**: `libproxy.github.io`
+- **Name**: `libproxygithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

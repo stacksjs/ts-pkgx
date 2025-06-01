@@ -1,11 +1,11 @@
-# developers.yubico.com
+# developersyubicocom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `developersyubicocom`
-- **Name**: `developers.yubico.com`
+- **Name**: `developersyubicocom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

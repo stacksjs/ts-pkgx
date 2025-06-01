@@ -1,12 +1,9 @@
 /**
- * **squawk** - 🐘 linter for PostgreSQL, focused on migrations
+ * **squawk** - Crafters of fine Open Source products
  *
  * @domain `squawkhq.com`
- * @programs `squawk`
- * @version `2.11.0` (34 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/squawkhq-com.md
  *
- * @install `sh <(curl https://pkgx.sh) squawk`
+ * @install `pkgx squawkhq.com`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.squawkhqcom
  * console.log(pkg.name)        // "squawk"
- * console.log(pkg.description) // "🐘 linter for PostgreSQL, focused on migrations"
- * console.log(pkg.programs)    // ["squawk"]
- * console.log(pkg.versions[0]) // "2.11.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/squawkhq-com.md
@@ -28,72 +23,25 @@ export const squawkhqcomPackage = {
    */
   name: 'squawk' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/squawkhq.com/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'squawkhq.com' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: '🐘 linter for PostgreSQL, focused on migrations' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/squawkhq.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'squawkhq.com' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) squawk' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'squawk',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.11.0',
-    '2.10.0',
-    '2.9.0',
-    '2.8.0',
-    '2.7.0',
-    '2.6.0',
-    '2.5.0',
-    '2.4.0',
-    '2.3.0',
-    '2.2.0',
-    '2.1.0',
-    '2.0.0',
-    '1.6.1',
-    '1.6.0',
-    '1.5.5',
-    '1.5.4',
-    '1.5.3',
-    '1.5.2',
-    '1.5.1',
-    '1.5.0',
-    '1.4.0',
-    '1.2.0',
-    '1.1.2',
-    '1.1.1',
-    '1.1.0',
-    '1.0.0',
-    '0.29.0',
-    '0.28.0',
-    '0.27.0',
-    '0.26.0',
-    '0.25.0',
-    '0.24.2',
-    '0.24.1',
-    '0.24.0',
-  ] as const,
-  fullPath: 'squawkhq.com' as const,
+  installCommand: 'pkgx squawkhq.com' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type SquawkhqcomPackage = typeof squawkhqcomPackage

@@ -1,11 +1,11 @@
-# oberhumer.com
+# oberhumercom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `oberhumercom`
-- **Name**: `oberhumer.com`
+- **Name**: `oberhumercom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,69 +1,26 @@
 # mpv
 
-> Media player based on MPlayer and mplayer2
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `mpvio`
 - **Name**: `mpv`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mpv.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) mpv
+pkgx mpv.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mpv`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mpv`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.40.0`, `0.39.0`, `0.38.0`
-
-</details>
-
-**Latest Version**: `0.40.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx mpv@0.40.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `ffmpeg.org`
-- `libjpeg-turbo.org@2`
-- `libarchive.org@3`
-- `github.com/libass/libass^0.17`
-- `videolan.org/libplacebo@6`
-- `littlecms.com@2`
-- `luajit.org@2`
-- `mujs.com@1`
-- `freedesktop.org/uchardet@0`
-- `vapoursynth.com@66`
-- `yt-dlp.org`
-- `linuxalsa-project.org/alsa-lib@1github.com/adah1972/libunibreak@6`
-- `alsa-project.org/alsa-lib@1`
-- `github.com/adah1972/libunibreak@6`
+*No programs specified*
 
 ## Usage Examples
 
@@ -80,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mpv.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

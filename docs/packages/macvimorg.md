@@ -1,73 +1,26 @@
 # macvim.org
 
-> Vim - the text editor - for macOS
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `macvimorg`
 - **Name**: `macvim.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/macvim.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +macvim.org -- $SHELL -i
+pkgx macvim.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gview`
-- `gvim`
-- `gvimdiff`
-- `gvimtutor`
-- `mview`
-- `mvim`
-- `mvimdiff`
-- `mvimtutor`
-- `view`
-- `vim`
-- `vimdiff`
-- `vimtutor`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+macvim.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `181.0.0`, `180.0.0`, `179.0.0`, `178.0.0`, `177.0.0`
-
-</details>
-
-**Latest Version**: `181.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx macvim.org@181.0.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `cscope.sourceforge.io`
-- `invisible-island.net/ncurses`
-- `lua.org`
-- `python.org~3.11`
-- `ruby-lang.org`
-- `libsodium.org`
-- `gnu.org/gettext`
+*No programs specified*
 
 ## Usage Examples
 
@@ -84,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/macvim.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

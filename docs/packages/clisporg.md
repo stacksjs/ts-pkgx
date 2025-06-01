@@ -1,58 +1,26 @@
 # clisp
 
-> GNU CLISP, a Common Lisp implementation
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `clisporg`
 - **Name**: `clisp`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/clisp.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) clisp
+pkgx clisp.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `clisp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `clisp`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.49.92`
-
-</details>
-
-**Latest Version**: `2.49.92`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx clisp@2.49.92
-```
-
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/libsigsegv^2.14`
-- `gnu.org/readline^8.2`
-- `github.com/besser82/libxcrypt^4.4`
+*No programs specified*
 
 ## Usage Examples
 
@@ -69,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/clisp.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,19 +1,19 @@
 # openblas.net
 
-> OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `openblasnet`
 - **Name**: `openblas.net`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openblas.net/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openblas.net -- $SHELL -i
+pkgx openblas.net
 ```
 
 ## Programs
@@ -21,31 +21,6 @@ sh <(curl https://pkgx.sh) +openblas.net -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+openblas.net -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `0.3.29`, `0.3.28`, `0.3.27`, `0.3.26`, `0.3.25`
-- `0.3.24`, `0.3.23`
-
-</details>
-
-**Latest Version**: `0.3.29`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx openblas.net@0.3.29
-```
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openblas.net/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,50 +1,26 @@
 # jenv
 
-> Manage your Java environment
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `jenvbe`
 - **Name**: `jenv`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jenv.be/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) jenv
+pkgx jenv.be
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `jenv`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `jenv`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.5.7`, `0.5.6`
-
-</details>
-
-**Latest Version**: `0.5.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx jenv@0.5.7
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jenv.be/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

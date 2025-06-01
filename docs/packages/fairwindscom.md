@@ -1,11 +1,11 @@
-# fairwinds.com
+# fairwindscom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `fairwindscom`
-- **Name**: `fairwinds.com`
+- **Name**: `fairwindscom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

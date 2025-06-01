@@ -6,17 +6,19 @@ Packages related to package managers & build tools.
 
 ## Packages
 
-### [cmakeorg](../packages/cmakeorg.md) (+cmake.org -- $SHELL -i)
+### [cmakeorg](../packages/cmakeorg.md) ()
 
-Mirror of CMake upstream repository
+Crafters of fine Open Source products
 
-**Programs**: cmake, ccmake, cpack, ctest
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i`
+**Install**: `pkgx cmake.org`
 
 ---
 
 ### [cratesio](../packages/cratesio.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -24,113 +26,113 @@ Mirror of CMake upstream repository
 
 ---
 
-### [gradleorg](../packages/gradleorg.md) (gradle)
+### [gradleorg](../packages/gradleorg.md) ()
 
-Open-source build automation tool based on the Groovy and Kotlin DSL
+Crafters of fine Open Source products
 
-**Programs**: gradle
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) gradle`
-
----
-
-### [mavenapacheorg](../packages/mavenapacheorg.md) (+maven.apache.org -- $SHELL -i, mvn)
-
-Java-based project management
-
-**Programs**: mvn, mvnDebug, mvnyjp
-
-**Install**: `sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i`
+**Install**: `pkgx gradle.org`
 
 ---
 
-### [mesonbuildcom](../packages/mesonbuildcom.md) (meson)
+### [mavenapacheorg](../packages/mavenapacheorg.md) ()
 
-Fast and user friendly build system
+Crafters of fine Open Source products
 
-**Programs**: meson
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) meson`
-
----
-
-### [ninjabuildorg](../packages/ninjabuildorg.md) (ninja)
-
-Small build system for use with gyp or CMake
-
-**Programs**: ninja
-
-**Install**: `sh <(curl https://pkgx.sh) ninja`
+**Install**: `pkgx maven.apache.org`
 
 ---
 
-### [npmjscom](../packages/npmjscom.md) (+npmjs.com -- $SHELL -i)
+### [mesonbuildcom](../packages/mesonbuildcom.md) ()
 
-the package manager for JavaScript
+Crafters of fine Open Source products
 
-**Programs**: npm, npx
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i`
-
----
-
-### [pipenvpypaio](../packages/pipenvpypaio.md) (pipenv)
-
-Python Development Workflow for Humans.
-
-**Programs**: pipenv
-
-**Install**: `sh <(curl https://pkgx.sh) pipenv`
+**Install**: `pkgx mesonbuild.com`
 
 ---
 
-### [pippypaio](../packages/pippypaio.md) (+pip.pypa.io -- $SHELL -i, pip)
+### [ninjabuildorg](../packages/ninjabuildorg.md) ()
 
-The Python package installer
+Crafters of fine Open Source products
 
-**Programs**: pip, pip3.8, pip3.9, pip3.10, pip3.11
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i`
-
----
-
-### [pnpmio](../packages/pnpmio.md) (+pnpm.io -- $SHELL -i, pnp)
-
-Fast, disk space efficient package manager
-
-**Programs**: pnpm, pnpx
-
-**Install**: `sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i`
+**Install**: `pkgx ninja-build.org`
 
 ---
 
-### [pythonpoetryorg](../packages/pythonpoetryorg.md) (poetry)
+### [npmjscom](../packages/npmjscom.md) ()
 
-Python packaging and dependency management made easy
+Crafters of fine Open Source products
 
-**Programs**: poetry
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) poetry`
-
----
-
-### [rubygemsorg](../packages/rubygemsorg.md) (+rubygems.org -- $SHELL -i)
-
-Powerful, clean, object-oriented scripting language
-
-**Programs**: bundle, bundler, gem
-
-**Install**: `sh <(curl https://pkgx.sh) +rubygems.org -- $SHELL -i`
+**Install**: `pkgx npmjs.com`
 
 ---
 
-### [yarnpkgcom](../packages/yarnpkgcom.md) (+yarnpkg.com -- $SHELL -i, yarn)
+### [pipenvpypaio](../packages/pipenvpypaio.md) ()
 
-📦🐈 Active development trunk for Yarn ⚒
+Crafters of fine Open Source products
 
-**Programs**: yarn, yarnpkg
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i`
+**Install**: `pkgx pipenv.pypa.io`
+
+---
+
+### [pippypaio](../packages/pippypaio.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx pip.pypa.io`
+
+---
+
+### [pnpmio](../packages/pnpmio.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx pnpm.io`
+
+---
+
+### [pythonpoetryorg](../packages/pythonpoetryorg.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx python-poetry.org`
+
+---
+
+### [rubygemsorg](../packages/rubygemsorg.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx rubygems.org`
+
+---
+
+### [yarnpkgcom](../packages/yarnpkgcom.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx yarnpkg.com`
 
 ---
 

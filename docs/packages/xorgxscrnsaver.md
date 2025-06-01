@@ -1,19 +1,19 @@
-# x.org/xscrnsaver
+# xorgxscrnsaver
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `xorgxscrnsaver`
-- **Name**: `x.org/xscrnsaver`
+- **Name**: `xorgxscrnsaver`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xscrnsaver/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +x.org/xscrnsaver -- $SHELL -i
+pkgx x.org-xscrnsaver
 ```
 
 ## Programs
@@ -21,38 +21,6 @@ sh <(curl https://pkgx.sh) +x.org/xscrnsaver -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `xscrnsaver`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.2.4`
-
-</details>
-
-**Latest Version**: `1.2.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx x.org/xscrnsaver@1.2.4
-```
-
-## Dependencies
-
-This package depends on:
-
-- `x.org/x11^1`
-- `x.org/protocol`
-- `x.org/exts`
 
 ## Usage Examples
 
@@ -69,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xscrnsaver/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

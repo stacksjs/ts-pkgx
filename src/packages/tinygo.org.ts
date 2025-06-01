@@ -1,14 +1,9 @@
 /**
- * **tinygo** - Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.
+ * **tinygo** - Crafters of fine Open Source products
  *
  * @domain `tinygo.org`
- * @programs `tinygo`
- * @version `0.37.0` (7 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tinygo-org.md
  *
- * @install `sh <(curl https://pkgx.sh) tinygo`
- * @dependencies `go.dev`
- * @companions `llvm.org`
+ * @install `pkgx tinygo.org`
  *
  * @example
  * ```typescript
@@ -16,9 +11,7 @@
  *
  * const pkg = pantry.tinygoorg
  * console.log(pkg.name)        // "tinygo"
- * console.log(pkg.description) // "Go compiler for small places. Microcontrollers,..."
- * console.log(pkg.programs)    // ["tinygo"]
- * console.log(pkg.versions[0]) // "0.37.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tinygo-org.md
@@ -30,57 +23,25 @@ export const tinygoorgPackage = {
    */
   name: 'tinygo' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/tinygo.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'tinygo.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tinygo.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'tinygo.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) tinygo' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'tinygo',
-  ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'llvm.org',
-  ] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.37.0',
-    '0.36.0',
-    '0.35.0',
-    '0.34.0',
-    '0.33.0',
-    '0.32.0',
-    '0.31.2',
-  ] as const,
-  fullPath: 'tinygo.org' as const,
+  installCommand: 'pkgx tinygo.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type TinygoorgPackage = typeof tinygoorgPackage

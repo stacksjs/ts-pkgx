@@ -1,11 +1,11 @@
-# logological.org
+# logologicalorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `logologicalorg`
-- **Name**: `logological.org`
+- **Name**: `logologicalorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

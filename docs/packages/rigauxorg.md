@@ -1,11 +1,11 @@
-# rigaux.org
+# rigauxorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `rigauxorg`
-- **Name**: `rigaux.org`
+- **Name**: `rigauxorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

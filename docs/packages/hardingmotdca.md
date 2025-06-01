@@ -1,11 +1,11 @@
-# harding.motd.ca
+# hardingmotdca
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `hardingmotdca`
-- **Name**: `harding.motd.ca`
+- **Name**: `hardingmotdca`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

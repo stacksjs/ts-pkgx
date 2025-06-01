@@ -1,50 +1,26 @@
 # strace
 
-> strace is a diagnostic, debugging and instructional userspace utility for Linux
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `straceio`
 - **Name**: `strace`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/strace.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) strace
+pkgx strace.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `strace`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `strace`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `6.2.0`
-
-</details>
-
-**Latest Version**: `6.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx strace@6.2.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/strace.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

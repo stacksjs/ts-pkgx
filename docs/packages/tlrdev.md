@@ -1,56 +1,26 @@
 # teller
 
-> Cloud native secrets management for developers - never leave your command line for secrets.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `tlrdev`
 - **Name**: `teller`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tlr.dev/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) teller
+pkgx tlr.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `teller`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `teller`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `2.0.7`, `2.0.6`, `2.0.5`, `2.0.4`, `1.5.6`
-
-</details>
-
-**Latest Version**: `2.0.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx teller@2.0.7
-```
-
-## Dependencies
-
-This package depends on:
-
-- `openssl.org^1.1`
+*No programs specified*
 
 ## Usage Examples
 
@@ -67,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tlr.dev/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

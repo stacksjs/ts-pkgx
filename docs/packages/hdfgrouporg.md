@@ -1,11 +1,11 @@
-# hdfgroup.org
+# hdfgrouporg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `hdfgrouporg`
-- **Name**: `hdfgroup.org`
+- **Name**: `hdfgrouporg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

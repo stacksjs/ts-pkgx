@@ -1,19 +1,19 @@
 # libspng.org
 
-> Simple, modern libpng alternative
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `libspngorg`
 - **Name**: `libspng.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libspng.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libspng.org -- $SHELL -i
+pkgx libspng.org
 ```
 
 ## Programs
@@ -21,37 +21,6 @@ sh <(curl https://pkgx.sh) +libspng.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+libspng.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.5.0`
-
-</details>
-
-**Latest Version**: `0.5.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx libspng.org@0.5.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `darwinzlib.net`
-- `zlib.net`
 
 ## Usage Examples
 
@@ -68,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libspng.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

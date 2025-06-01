@@ -1,19 +1,19 @@
 # frei0r.dyne.org
 
->
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `frei0rdyneorg`
 - **Name**: `frei0r.dyne.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/frei0r.dyne.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +frei0r.dyne.org -- $SHELL -i
+pkgx frei0r.dyne.org
 ```
 
 ## Programs
@@ -21,24 +21,6 @@ sh <(curl https://pkgx.sh) +frei0r.dyne.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.8.0`
-
-</details>
-
-**Latest Version**: `1.8.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx frei0r.dyne.org@1.8.0
-```
 
 ## Usage Examples
 
@@ -55,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/frei0r.dyne.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,11 +1,11 @@
-# sourceware.org
+# sourcewareorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `sourcewareorg`
-- **Name**: `sourceware.org`
+- **Name**: `sourcewareorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

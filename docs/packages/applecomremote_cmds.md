@@ -1,51 +1,26 @@
-# telnet
+# applecomremote_cmds
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `applecomremote_cmds`
-- **Name**: `telnet`
+- **Name**: `applecomremote_cmds`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apple.com/remote_cmds/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) telnet
+pkgx apple.com-remote_cmds
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `telnet`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `telnet`
-- `remote_cmds`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `306.0.0`, `303.141.1`, `303.0.2`, `302.0.0`, `294.0.0`
-
-</details>
-
-**Latest Version**: `306.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx telnet@306.0.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apple.com/remote_cmds/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,11 +1,11 @@
-# amrdeveloper.github.io
+# amrdevelopergithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `amrdevelopergithubio`
-- **Name**: `amrdeveloper.github.io`
+- **Name**: `amrdevelopergithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

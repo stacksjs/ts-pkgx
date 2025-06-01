@@ -1,19 +1,19 @@
 # c-ares.org
 
->
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `caresorg`
 - **Name**: `c-ares.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/c-ares.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +c-ares.org -- $SHELL -i
+pkgx c-ares.org
 ```
 
 ## Programs
@@ -21,29 +21,6 @@ sh <(curl https://pkgx.sh) +c-ares.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 28 versions</summary>
-
-- `1.34.5`, `1.34.4`, `1.34.3`, `1.34.2`, `1.34.1`
-- `1.33.1`, `1.33.0`, `1.32.3`, `1.32.2`, `1.32.1`
-- `1.32.0`, `1.31.0`, `1.30.0`, `1.29.0`, `1.28.1`
-- `1.28.0`, `1.27.0`, `1.26.0`, `1.25.0`, `1.24.0`
-- `1.23.0`, `1.22.1`, `1.22.0`, `1.21.0`, `1.20.1`
-- `1.20.0`, `1.19.1`, `1.19.0`
-
-</details>
-
-**Latest Version**: `1.34.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx c-ares.org@1.34.5
-```
 
 ## Usage Examples
 
@@ -60,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/c-ares.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

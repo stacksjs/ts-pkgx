@@ -1,11 +1,11 @@
-# info-zip.org
+# infoziporg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `infoziporg`
-- **Name**: `info-zip.org`
+- **Name**: `infoziporg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

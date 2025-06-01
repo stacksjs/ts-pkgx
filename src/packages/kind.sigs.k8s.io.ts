@@ -1,12 +1,9 @@
 /**
- * **kind** - Kubernetes IN Docker - local clusters for testing Kubernetes
+ * **kind** - Crafters of fine Open Source products
  *
  * @domain `kind.sigs.k8s.io`
- * @programs `kind`
- * @version `0.29.0` (11 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kind-sigs-k8s-io.md
  *
- * @install `sh <(curl https://pkgx.sh) kind`
+ * @install `pkgx kind.sigs.k8s.io`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.kindsigsk8sio
  * console.log(pkg.name)        // "kind"
- * console.log(pkg.description) // "Kubernetes IN Docker - local clusters for testi..."
- * console.log(pkg.programs)    // ["kind"]
- * console.log(pkg.versions[0]) // "0.29.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kind-sigs-k8s-io.md
@@ -28,49 +23,25 @@ export const kindsigsk8sioPackage = {
    */
   name: 'kind' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/kind.sigs.k8s.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'kind.sigs.k8s.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Kubernetes IN Docker - local clusters for testing Kubernetes' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kind.sigs.k8s.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'kind.sigs.k8s.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) kind' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'kind',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.29.0',
-    '0.28.0',
-    '0.27.0',
-    '0.26.0',
-    '0.25.0',
-    '0.24.0',
-    '0.23.0',
-    '0.22.0',
-    '0.21.0',
-    '0.20.0',
-    '0.19.0',
-  ] as const,
-  fullPath: 'kind.sigs.k8s.io' as const,
+  installCommand: 'pkgx kind.sigs.k8s.io' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type Kindsigsk8sioPackage = typeof kindsigsk8sioPackage

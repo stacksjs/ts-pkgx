@@ -1,60 +1,26 @@
 # mvn
 
-> Java-based project management
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `mavenapacheorg`
 - **Name**: `mvn`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/maven.apache.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i
+pkgx maven.apache.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mvn`
-- `mvnDebug`
-- `mvnyjp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+maven.apache.org -- $SHELL -i`
-- `mvn`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `3.9.9`, `3.9.8`, `3.9.7`, `3.9.6`, `3.9.5`
-- `3.9.4`, `3.9.3`, `3.8.7`, `3.6.3`
-
-</details>
-
-**Latest Version**: `3.9.9`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx mvn@3.9.9
-```
-
-## Dependencies
-
-This package depends on:
-
-- `openjdk.org`
+*No programs specified*
 
 ## Usage Examples
 
@@ -71,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/maven.apache.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

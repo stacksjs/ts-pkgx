@@ -1,11 +1,11 @@
-# mergestat.com
+# mergestatcom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `mergestatcom`
-- **Name**: `mergestat.com`
+- **Name**: `mergestatcom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

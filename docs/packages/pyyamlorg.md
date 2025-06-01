@@ -1,19 +1,19 @@
 # pyyaml.org
 
-> Canonical source repository for LibYAML
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `pyyamlorg`
 - **Name**: `pyyaml.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pyyaml.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +pyyaml.org -- $SHELL -i
+pkgx pyyaml.org
 ```
 
 ## Programs
@@ -21,30 +21,6 @@ sh <(curl https://pkgx.sh) +pyyaml.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+pyyaml.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.2.5`
-
-</details>
-
-**Latest Version**: `0.2.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx pyyaml.org@0.2.5
-```
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pyyaml.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

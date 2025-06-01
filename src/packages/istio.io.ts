@@ -1,117 +1,47 @@
 /**
- * **istioctl** - Connect, secure, control, and observe services.
+ * **istioctl** - Crafters of fine Open Source products
  *
  * @domain `istio.io`
- * @programs `istioctl`
- * @version `1.26.1` (41 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/istio-io.md
  *
- * @install `sh <(curl https://pkgx.sh) istioctl`
- * @aliases `istioctl`
+ * @install `pkgx istio.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.istioctl
- * // Or access via domain
- * const samePkg = pantry.istioio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.istioio
  * console.log(pkg.name)        // "istioctl"
- * console.log(pkg.description) // "Connect, secure, control, and observe services."
- * console.log(pkg.programs)    // ["istioctl"]
- * console.log(pkg.versions[0]) // "1.26.1" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/istio-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const istioctlPackage = {
+export const istioioPackage = {
   /**
    * The display name of this package.
    */
   name: 'istioctl' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/istio.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'istio.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Connect, secure, control, and observe services.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/istio.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'istio.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) istioctl' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'istioctl',
-  ] as const,
-  companions: [] as const,
+  installCommand: 'pkgx istio.io' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.26.1',
-    '1.26.0',
-    '1.25.3',
-    '1.25.2',
-    '1.25.1',
-    '1.25.0',
-    '1.24.6',
-    '1.24.4',
-    '1.24.3',
-    '1.24.2',
-    '1.24.1',
-    '1.24.0',
-    '1.23.6',
-    '1.23.5',
-    '1.23.4',
-    '1.23.3',
-    '1.23.2',
-    '1.23.1',
-    '1.23.0',
-    '1.22.8',
-    '1.22.7',
-    '1.22.6',
-    '1.22.5',
-    '1.22.4',
-    '1.22.3',
-    '1.22.2',
-    '1.22.1',
-    '1.22.0',
-    '1.21.6',
-    '1.21.5',
-    '1.21.4',
-    '1.21.3',
-    '1.21.2',
-    '1.21.1',
-    '1.21.0',
-    '1.20.8',
-    '1.20.7',
-    '1.20.6',
-    '1.20.5',
-    '1.19.10',
-    '1.19.9',
-  ] as const,
-  fullPath: 'istio.io' as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'istioctl',
-  ] as const,
+  companions: [] as const,
 }
 
-export type IstioctlPackage = typeof istioctlPackage
+export type IstioioPackage = typeof istioioPackage

@@ -1,51 +1,26 @@
-# toml-cli
+# githubcomminseokohtomlcli
 
-> A simple CLI for editing and querying TOML files.
+> Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomminseokohtomlcli`
-- **Name**: `toml-cli`
+- **Name**: `githubcomminseokohtomlcli`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/MinseokOh/toml-cli/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) toml-cli
+pkgx github.com-MinseokOh-toml-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `toml-cli`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `toml-cli`
-- `MinseokOh/toml-cli`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.1.1`
-
-</details>
-
-**Latest Version**: `0.1.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx toml-cli@0.1.1
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/MinseokOh/toml-cli/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

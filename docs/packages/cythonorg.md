@@ -1,59 +1,26 @@
 # cython
 
-> Compiler for writing C extensions for the Python language
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `cythonorg`
 - **Name**: `cython`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) cython
+pkgx cython.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cython`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `cython`
-
-## Available Versions
-
-<details>
-<summary>Show all 19 versions</summary>
-
-- `3.1.1`, `3.1.0`, `3.0.12`, `3.0.11`, `3.0.10`
-- `3.0.9`, `3.0.8`, `3.0.7`, `3.0.6`, `3.0.5`
-- `3.0.4`, `3.0.3`, `3.0.2`, `3.0.1`, `3.0.0`
-- `0.29.37.1`, `0.29.37`, `0.29.36`, `0.29.35`
-
-</details>
-
-**Latest Version**: `3.1.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx cython@3.1.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `python.org<3.12`
+*No programs specified*
 
 ## Usage Examples
 
@@ -70,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

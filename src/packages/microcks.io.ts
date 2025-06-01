@@ -1,89 +1,47 @@
 /**
- * **microcks-cli** - Simple CLI for interacting with Microcks test APIs
+ * **microcks-cli** - Crafters of fine Open Source products
  *
  * @domain `microcks.io`
- * @programs `microcks-cli`
- * @version `0.9.0` (6 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/microcks-io.md
  *
- * @install `sh <(curl https://pkgx.sh) microcks-cli`
- * @aliases `microcks-cli`
- * @dependencies `curl.se/ca-certs`
+ * @install `pkgx microcks.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.microckscli
- * // Or access via domain
- * const samePkg = pantry.microcksio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.microcksio
  * console.log(pkg.name)        // "microcks-cli"
- * console.log(pkg.description) // "Simple CLI for interacting with Microcks test APIs"
- * console.log(pkg.programs)    // ["microcks-cli"]
- * console.log(pkg.versions[0]) // "0.9.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/microcks-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const microckscliPackage = {
+export const microcksioPackage = {
   /**
    * The display name of this package.
    */
   name: 'microcks-cli' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/microcks.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'microcks.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Simple CLI for interacting with Microcks test APIs' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/microcks.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'microcks.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) microcks-cli' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'microcks-cli',
-  ] as const,
+  installCommand: 'pkgx microcks.io' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'curl.se/ca-certs',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.9.0',
-    '0.5.8',
-    '0.5.7',
-    '0.5.6',
-    '0.5.5',
-    '0.5.4',
-  ] as const,
-  fullPath: 'microcks.io' as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'microcks-cli',
-  ] as const,
 }
 
-export type MicrockscliPackage = typeof microckscliPackage
+export type MicrocksioPackage = typeof microcksioPackage

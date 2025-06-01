@@ -1,11 +1,11 @@
-# yui.github.io
+# yuigithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `yuigithubio`
-- **Name**: `yui.github.io`
+- **Name**: `yuigithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# mariadb.com
+# mariadbcom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `mariadbcom`
-- **Name**: `mariadb.com`
+- **Name**: `mariadbcom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,19 +1,19 @@
 # jemalloc.net
 
->
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `jemallocnet`
 - **Name**: `jemalloc.net`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jemalloc.net/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +jemalloc.net -- $SHELL -i
+pkgx jemalloc.net
 ```
 
 ## Programs
@@ -21,24 +21,6 @@ sh <(curl https://pkgx.sh) +jemalloc.net -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `5.3.0`
-
-</details>
-
-**Latest Version**: `5.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx jemalloc.net@5.3.0
-```
 
 ## Usage Examples
 
@@ -55,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jemalloc.net/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

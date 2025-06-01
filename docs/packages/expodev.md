@@ -1,11 +1,11 @@
-# expo.dev
+# expodev
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `expodev`
-- **Name**: `expo.dev`
+- **Name**: `expodev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

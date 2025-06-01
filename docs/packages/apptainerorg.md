@@ -1,66 +1,26 @@
 # apptainer.org
 
-> Application container and unprivileged sandbox platform for Linux
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `apptainerorg`
 - **Name**: `apptainer.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apptainer.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +apptainer.org -- $SHELL -i
+pkgx apptainer.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `apptainer`
-- `run-singularity`
-- `singularity`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+apptainer.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `1.4.1`, `1.4.0`, `1.3.6`, `1.3.5`, `1.3.4`
-- `1.3.3`
-
-</details>
-
-**Latest Version**: `1.4.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx apptainer.org@1.4.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `github.com/seccomp/libseccomp@2`
-- `curl.se/ca-certs`
-
-## Related Packages
-
-These packages work well with apptainer.org:
-
-- `github.com/plougher/squashfs-tools`
+*No programs specified*
 
 ## Usage Examples
 
@@ -77,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apptainer.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

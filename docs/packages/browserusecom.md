@@ -1,19 +1,19 @@
 # browser-use.com
 
-> Make websites accessible for AI agents
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `browserusecom`
 - **Name**: `browser-use.com`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/browser-use.com/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +browser-use.com -- $SHELL -i
+pkgx browser-use.com
 ```
 
 ## Programs
@@ -21,39 +21,6 @@ sh <(curl https://pkgx.sh) +browser-use.com -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+browser-use.com -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 17 versions</summary>
-
-- `0.2.5`, `0.2.4`, `0.2.3`, `0.2.2`, `0.2.1`
-- `0.1.48`, `0.1.47`, `0.1.46`, `0.1.45`, `0.1.44`
-- `0.1.43`, `0.1.42`, `0.1.41`, `0.1.40`, `0.1.39`
-- `0.1.38`, `0.1.37`
-
-</details>
-
-**Latest Version**: `0.2.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx browser-use.com@0.2.5
-```
-
-## Dependencies
-
-This package depends on:
-
-- `python.org~3.12`
 
 ## Usage Examples
 
@@ -70,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/browser-use.com/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,51 +1,26 @@
 # hx
 
-> A post-modern modal text editor.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `helixeditorcom`
 - **Name**: `hx`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/helix-editor.com/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) hx
+pkgx helix-editor.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `hx`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `hx`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `25.1.1`, `25.1.0`, `24.7.0`, `24.3.0`, `23.10.0`
-- `23.5.0`, `23.3.0`, `22.12.0`
-
-</details>
-
-**Latest Version**: `25.1.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx hx@25.1.1
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/helix-editor.com/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

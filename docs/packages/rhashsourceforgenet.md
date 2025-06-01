@@ -1,61 +1,26 @@
 # rhash.sourceforge.net
 
-> Utility for computing and verifying hash sums of files
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `rhashsourceforgenet`
 - **Name**: `rhash.sourceforge.net`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rhash.sourceforge.net/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +rhash.sourceforge.net -- $SHELL -i
+pkgx rhash.sourceforge.net
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `whirlpool-hash`
-- `tiger-hash`
-- `tth-hash`
-- `rhash`
-- `sfv-hash`
-- `magnet-link`
-- `has160-hash`
-- `gost12-256-hash`
-- `gost12-512-hash`
-- `edonr512-hash`
-- `edonr256-hash`
-- `ed2k-link`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+rhash.sourceforge.net -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.4.6`, `1.4.5`, `1.4.4`, `1.4.3`
-
-</details>
-
-**Latest Version**: `1.4.6`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx rhash.sourceforge.net@1.4.6
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -72,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rhash.sourceforge.net/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

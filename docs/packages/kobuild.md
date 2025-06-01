@@ -1,50 +1,26 @@
 # ko
 
-> Build and deploy Go applications on Kubernetes
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `kobuild`
 - **Name**: `ko`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ko.build/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) ko
+pkgx ko.build
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ko`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ko`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.18.0`, `0.17.1`, `0.17.0`, `0.16.0`
-
-</details>
-
-**Latest Version**: `0.18.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx ko@0.18.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ko.build/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

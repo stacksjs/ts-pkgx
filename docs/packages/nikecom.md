@@ -1,11 +1,11 @@
-# nike.com
+# nikecom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `nikecom`
-- **Name**: `nike.com`
+- **Name**: `nikecom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

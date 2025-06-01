@@ -1,11 +1,11 @@
-# xiph.org
+# xiphorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `xiphorg`
-- **Name**: `xiph.org`
+- **Name**: `xiphorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

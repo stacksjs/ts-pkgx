@@ -1,19 +1,19 @@
 # abseil.io
 
-> Abseil Common Libraries (C++)
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `abseilio`
 - **Name**: `abseil.io`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/abseil.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i
+pkgx abseil.io
 ```
 
 ## Programs
@@ -21,33 +21,6 @@ sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+abseil.io -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 17 versions</summary>
-
-- `20250512.0.0`, `20250127.1.0`, `20250127.0.0`, `20240722.1.0`, `20240722.0.0`
-- `20240116.3.0`, `20240116.2.0`, `20240116.1.0`, `20240116.0.0`, `20230802.3.0`
-- `20230802.2.0`, `20230802.1.0`, `20230802.0.0`, `20230125.4.0`, `20230125.3.0`
-- `20230125.2.0`, `20220623.2.0`
-
-</details>
-
-**Latest Version**: `20250512.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx abseil.io@20250512.0.0
-```
 
 ## Usage Examples
 
@@ -64,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/abseil.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

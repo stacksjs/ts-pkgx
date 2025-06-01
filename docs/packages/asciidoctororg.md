@@ -1,58 +1,26 @@
 # asciidoctor
 
-> :gem: A fast, open source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `asciidoctororg`
 - **Name**: `asciidoctor`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/asciidoctor.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) asciidoctor
+pkgx asciidoctor.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `asciidoctor`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `asciidoctor`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `2.0.23`, `2.0.22`, `2.0.21`, `2.0.20`, `2.0.19`
-- `2.0.18`
-
-</details>
-
-**Latest Version**: `2.0.23`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx asciidoctor@2.0.23
-```
-
-## Dependencies
-
-This package depends on:
-
-- `ruby-lang.org^3.1`
-- `rubygems.org`
+*No programs specified*
 
 ## Usage Examples
 
@@ -69,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/asciidoctor.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

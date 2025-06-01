@@ -1,63 +1,26 @@
 # lunarvim.org
 
-> 🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `lunarvimorg`
 - **Name**: `lunarvim.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lunarvim.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +lunarvim.org -- $SHELL -i
+pkgx lunarvim.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `lvim`
-- `nvim`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+lunarvim.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.4.0`, `1.3.0`
-
-</details>
-
-**Latest Version**: `1.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx lunarvim.org@1.4.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/bash`
-- `crates.io/fd-find`
-- `pip.pypa.io`
-- `python.org^3`
-- `nodejs.org`
-- `rust-lang.org/cargo`
-- `neovim.io`
+*No programs specified*
 
 ## Usage Examples
 
@@ -74,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lunarvim.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

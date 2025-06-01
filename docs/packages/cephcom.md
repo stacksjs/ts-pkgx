@@ -1,11 +1,11 @@
-# ceph.com
+# cephcom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `cephcom`
-- **Name**: `ceph.com`
+- **Name**: `cephcom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

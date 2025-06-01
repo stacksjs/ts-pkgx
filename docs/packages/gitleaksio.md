@@ -1,55 +1,26 @@
 # gitleaks
 
-> Find secrets with Gitleaks 🔑
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `gitleaksio`
 - **Name**: `gitleaks`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gitleaks.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) gitleaks
+pkgx gitleaks.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gitleaks`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gitleaks`
-
-## Available Versions
-
-<details>
-<summary>Show all 26 versions</summary>
-
-- `8.26.0`, `8.25.1`, `8.25.0`, `8.24.3`, `8.24.2`
-- `8.24.0`, `8.23.3`, `8.23.2`, `8.23.1`, `8.23.0`
-- `8.22.1`, `8.22.0`, `8.21.4`, `8.21.3`, `8.21.2`
-- `8.21.1`, `8.21.0`, `8.20.1`, `8.20.0`, `8.19.3`
-- `8.19.2`, `8.19.1`, `8.18.4`, `8.18.3`, `8.18.2`
-- `8.18.1`
-
-</details>
-
-**Latest Version**: `8.26.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx gitleaks@8.26.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -66,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gitleaks.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

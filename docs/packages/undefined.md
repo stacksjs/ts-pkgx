@@ -1,6 +1,6 @@
 # undefined
 
->
+> Go home.
 
 ## Package Information
 

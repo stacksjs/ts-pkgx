@@ -1,13 +1,9 @@
 /**
- * **nano** - Free (GNU) replacement for the Pico text editor
+ * **nano** - Crafters of fine Open Source products
  *
  * @domain `nano-editor.org`
- * @programs `nano`
- * @version `8.0.0` (2 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nano-editor-org.md
  *
- * @install `sh <(curl https://pkgx.sh) nano`
- * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
+ * @install `pkgx nano-editor.org`
  *
  * @example
  * ```typescript
@@ -15,9 +11,7 @@
  *
  * const pkg = pantry.nanoeditororg
  * console.log(pkg.name)        // "nano"
- * console.log(pkg.description) // "Free (GNU) replacement for the Pico text editor"
- * console.log(pkg.programs)    // ["nano"]
- * console.log(pkg.versions[0]) // "8.0.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nano-editor-org.md
@@ -29,47 +23,25 @@ export const nanoeditororgPackage = {
    */
   name: 'nano' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/nano-editor.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'nano-editor.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Free (GNU) replacement for the Pico text editor' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nano-editor.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'nano-editor.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) nano' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'nano',
-  ] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/gettext',
-    'invisible-island.net/ncurses>=6.0',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '8.0.0',
-    '7.2.0',
-  ] as const,
-  fullPath: 'nano-editor.org' as const,
+  installCommand: 'pkgx nano-editor.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type NanoeditororgPackage = typeof nanoeditororgPackage

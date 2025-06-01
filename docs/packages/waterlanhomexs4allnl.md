@@ -1,11 +1,11 @@
-# waterlan.home.xs4all.nl
+# waterlanhomexs4allnl
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `waterlanhomexs4allnl`
-- **Name**: `waterlan.home.xs4all.nl`
+- **Name**: `waterlanhomexs4allnl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

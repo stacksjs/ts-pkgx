@@ -1,57 +1,26 @@
-# rye-uv
+# githubcomlucianosrpryeuv
 
-> Simple CLI tool to migrate from Rye to Uv
+> Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomlucianosrpryeuv`
-- **Name**: `rye-uv`
+- **Name**: `githubcomlucianosrpryeuv`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/lucianosrp/rye-uv/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) rye-uv
+pkgx github.com-lucianosrp-rye-uv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rye-uv`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `rye-uv`
-- `lucianosrp/rye-uv`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.1.3`
-
-</details>
-
-**Latest Version**: `0.1.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx rye-uv@0.1.3
-```
-
-## Related Packages
-
-These packages work well with rye-uv:
-
-- `astral.sh/uv`
+*No programs specified*
 
 ## Usage Examples
 
@@ -68,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/lucianosrp/rye-uv/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

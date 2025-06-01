@@ -1,88 +1,26 @@
 # vips
 
-> A fast image processing library with low memory needs.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `libvipsorg`
 - **Name**: `vips`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libvips.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i
+pkgx libvips.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `vips`
-- `vipsedit`
-- `vipsheader`
-- `vipsprofile`
-- `vipsthumbnail`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+libvips.org -- $SHELL -i`
-- `vips`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `8.16.1`, `8.16.0`, `8.15.5`, `8.15.3`, `8.15.2`
-- `8.15.1`, `8.15.0`, `8.14.5`
-
-</details>
-
-**Latest Version**: `8.16.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx vips@8.16.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `mozilla.org/mozjpeg`
-- `cairographics.org`
-- `heasarc.gsfc.nasa.gov/cfitsio`
-- `github.com/dloebl/cgif`
-- `fftw.org`
-- `freedesktop.org/fontconfig`
-- `gnu.org/gettext`
-- `gnome.org/glib`
-- `graphicsmagick.org`
-- `jpeg.org/jpegxl`
-- `libexif.github.io`
-- `gnome.org/libgsf`
-- `github.com/strukturag/libheif`
-- `pngquant.org/lib`
-- `matio.sourceforge.io`
-- `gnome.org/librsvg`
-- `libspng.org`
-- `simplesystems.org/libtiff`
-- `littlecms.com`
-- `openexr.com`
-- `openjpeg.org`
-- `gstreamer.freedesktop.org/orc`
-- `gnome.org/pango`
-- `poppler.freedesktop.org`
-- `google.com/webp`
-- `libexpat.github.io`
-- `zlib.net`
+*No programs specified*
 
 ## Usage Examples
 
@@ -99,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libvips.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

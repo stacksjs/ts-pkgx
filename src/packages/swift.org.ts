@@ -1,13 +1,9 @@
 /**
- * **swift** - The Swift Programming Language
+ * **swift** - Crafters of fine Open Source products
  *
  * @domain `swift.org`
- * @programs `docc`, `dsymutil`, `sourcekit-lsp`, `swift-api-checker.py`, `swift-build-sdk-interfaces`, ... (+21 more)
- * @version `6.1.2` (10 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/swift-org.md
  *
- * @install `sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i`
- * @dependencies `linuxgnu.org/gccgnu.org/binutilsgnupg.org^2gnome.org/libxml2libgit2.org~1.7curl.sesqlite.org^3`, `gnu.org/gcc`, `gnu.org/binutils`, ... (+5 more)
+ * @install `pkgx swift.org`
  *
  * @example
  * ```typescript
@@ -15,9 +11,7 @@
  *
  * const pkg = pantry.swiftorg
  * console.log(pkg.name)        // "swift"
- * console.log(pkg.description) // "The Swift Programming Language"
- * console.log(pkg.programs)    // ["docc", "dsymutil", ...]
- * console.log(pkg.versions[0]) // "6.1.2" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/swift-org.md
@@ -29,86 +23,25 @@ export const swiftorgPackage = {
    */
   name: 'swift' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/swift.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'swift.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'The Swift Programming Language' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/swift.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'swift.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'docc',
-    'dsymutil',
-    'sourcekit-lsp',
-    'swift-api-checker.py',
-    'swift-build-sdk-interfaces',
-    'swift-build-tool',
-    'swift-demangle',
-    'swift-driver',
-    'swift-format',
-    'swift-frontend',
-    'swift-help',
-    'swift-package',
-    'swift-plugin-server',
-    'swift-stdlib-tool',
-    'swift',
-    'swift-api-digester',
-    'swift-api-extract',
-    'swift-autolink-extract',
-    'swift-build',
-    'swift-experimental-sdk',
-    'swift-package-collection',
-    'swift-package-registry',
-    'swift-run',
-    'swift-symbolgraph-extract',
-    'swift-test',
-    'swiftc',
-  ] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'linuxgnu.org/gccgnu.org/binutilsgnupg.org^2gnome.org/libxml2libgit2.org~1.7curl.sesqlite.org^3',
-    'gnu.org/gcc',
-    'gnu.org/binutils',
-    'gnupg.org^2',
-    'gnome.org/libxml2',
-    'libgit2.org~1.7',
-    'curl.se',
-    'sqlite.org^3',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '6.1.2',
-    '6.1.1',
-    '6.1.0',
-    '6.0.3',
-    '6.0.2',
-    '6.0.1',
-    '6.0.0',
-    '5.10.1',
-    '5.10.0',
-    '5.9.2',
-  ] as const,
-  fullPath: 'swift.org' as const,
+  installCommand: 'pkgx swift.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type SwiftorgPackage = typeof swiftorgPackage

@@ -1,13 +1,9 @@
 /**
- * **mosh** - Remote terminal application
+ * **mosh** - Crafters of fine Open Source products
  *
  * @domain `mosh.org`
- * @programs `mosh-client`, `mosh-server`
- * @version `1.4.0` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mosh-org.md
  *
- * @install `sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i`
- * @dependencies `protobuf.dev@26.1.0`, `invisible-island.net/ncurses@6`, `zlib.net@1.3`, ... (+2 more)
+ * @install `pkgx mosh.org`
  *
  * @example
  * ```typescript
@@ -15,9 +11,7 @@
  *
  * const pkg = pantry.moshorg
  * console.log(pkg.name)        // "mosh"
- * console.log(pkg.description) // "Remote terminal application"
- * console.log(pkg.programs)    // ["mosh-client", "mosh-server"]
- * console.log(pkg.versions[0]) // "1.4.0" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mosh-org.md
@@ -29,50 +23,25 @@ export const moshorgPackage = {
    */
   name: 'mosh' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/mosh.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'mosh.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Remote terminal application' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mosh.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'mosh.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'mosh-client',
-    'mosh-server',
-  ] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'protobuf.dev@26.1.0',
-    'invisible-island.net/ncurses@6',
-    'zlib.net@1.3',
-    'linuxopenssl.org@3',
-    'openssl.org@3',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.4.0',
-  ] as const,
-  fullPath: 'mosh.org' as const,
+  installCommand: 'pkgx mosh.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type MoshorgPackage = typeof moshorgPackage

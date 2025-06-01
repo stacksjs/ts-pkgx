@@ -1,99 +1,47 @@
 /**
- * **+apptainer.org -- $SHELL -i** - Application container and unprivileged sandbox platform for Linux
+ * **apptainer.org** - Crafters of fine Open Source products
  *
  * @domain `apptainer.org`
- * @programs `apptainer`, `run-singularity`, `singularity`
- * @version `1.4.1` (6 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/apptainer-org.md
  *
- * @install `sh <(curl https://pkgx.sh) +apptainer.org -- $SHELL -i`
- * @aliases `+apptainer.org -- $SHELL -i`
- * @dependencies `github.com/seccomp/libseccomp@2`, `curl.se/ca-certs`
- * @companions `github.com/plougher/squashfs-tools`
+ * @install `pkgx apptainer.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.apptainerorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.apptainerorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.apptainerorg
  * console.log(pkg.name)        // "apptainer.org"
- * console.log(pkg.description) // "Application container and unprivileged sandbox ..."
- * console.log(pkg.programs)    // ["apptainer", "run-singularity", ...]
- * console.log(pkg.versions[0]) // "1.4.1" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/apptainer-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const apptainerorgSHELLiPackage = {
+export const apptainerorgPackage = {
   /**
    * The display name of this package.
    */
   name: 'apptainer.org' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/apptainer.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'apptainer.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Application container and unprivileged sandbox platform for Linux' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apptainer.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'apptainer.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +apptainer.org -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'apptainer',
-    'run-singularity',
-    'singularity',
-  ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'github.com/plougher/squashfs-tools',
-  ] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'github.com/seccomp/libseccomp@2',
-    'curl.se/ca-certs',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.4.1',
-    '1.4.0',
-    '1.3.6',
-    '1.3.5',
-    '1.3.4',
-    '1.3.3',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+apptainer.org -- $SHELL -i',
-  ] as const,
-  fullPath: 'apptainer.org' as const,
+  installCommand: 'pkgx apptainer.org' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
-export type ApptainerorgSHELLiPackage = typeof apptainerorgSHELLiPackage
+export type ApptainerorgPackage = typeof apptainerorgPackage

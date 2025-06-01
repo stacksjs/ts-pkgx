@@ -1,52 +1,26 @@
 # gomplate
 
-> A flexible commandline tool for template rendering. Supports lots of local and remote datasources.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `gomplateca`
 - **Name**: `gomplate`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gomplate.ca/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) gomplate
+pkgx gomplate.ca
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gomplate`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gomplate`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `4.3.2`, `4.3.1`, `4.3.0`, `4.2.0`, `4.1.0`
-- `4.0.1`, `4.0.0`, `3.11.8`, `3.11.7`, `3.11.6`
-- `3.11.4`
-
-</details>
-
-**Latest Version**: `4.3.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx gomplate@4.3.2
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -63,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gomplate.ca/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

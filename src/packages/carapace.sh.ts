@@ -1,12 +1,9 @@
 /**
- * **carapace** - Multi-shell multi-command argument completer
+ * **carapace** - Crafters of fine Open Source products
  *
  * @domain `carapace.sh`
- * @programs `carapace`
- * @version `1.3.2` (11 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/carapace-sh.md
  *
- * @install `sh <(curl https://pkgx.sh) carapace`
+ * @install `pkgx carapace.sh`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.carapacesh
  * console.log(pkg.name)        // "carapace"
- * console.log(pkg.description) // "Multi-shell multi-command argument completer"
- * console.log(pkg.programs)    // ["carapace"]
- * console.log(pkg.versions[0]) // "1.3.2" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/carapace-sh.md
@@ -28,49 +23,25 @@ export const carapaceshPackage = {
    */
   name: 'carapace' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/carapace.sh/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'carapace.sh' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Multi-shell multi-command argument completer' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/carapace.sh/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'carapace.sh' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) carapace' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'carapace',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.3.2',
-    '1.3.1',
-    '1.3.0',
-    '1.2.1',
-    '1.2.0',
-    '1.1.1',
-    '1.1.0',
-    '1.0.7',
-    '1.0.6',
-    '1.0.5',
-    '1.0.4',
-  ] as const,
-  fullPath: 'carapace.sh' as const,
+  installCommand: 'pkgx carapace.sh' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type CarapaceshPackage = typeof carapaceshPackage

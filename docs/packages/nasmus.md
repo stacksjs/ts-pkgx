@@ -1,51 +1,26 @@
 # nasm.us
 
-> A cross-platform x86 assembler with an Intel-like syntax
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `nasmus`
 - **Name**: `nasm.us`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nasm.us/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +nasm.us -- $SHELL -i
+pkgx nasm.us
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `nasm`
-- `ndisasm`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+nasm.us -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `2.16.3`, `2.16.2`, `2.15.5`
-
-</details>
-
-**Latest Version**: `2.16.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx nasm.us@2.16.3
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nasm.us/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

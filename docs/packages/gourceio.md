@@ -1,62 +1,26 @@
 # gource
 
-> software version control visualization
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `gourceio`
 - **Name**: `gource`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gource.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) gource
+pkgx gource.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gource`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gource`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.55.0`, `0.54.0`
-
-</details>
-
-**Latest Version**: `0.55.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx gource@0.55.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `boost.org^1.82`
-- `freetype.org^2`
-- `libpng.org^1.6`
-- `pcre.org/v2^10`
-- `libsdl.org^2`
-- `glew.sourceforge.io^2`
-- `libsdl.org/SDL_image^2`
+*No programs specified*
 
 ## Usage Examples
 
@@ -73,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gource.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

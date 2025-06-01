@@ -1,60 +1,26 @@
 # vamp
 
-> Audio processing plugin system sdk
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `vamppluginsorg`
 - **Name**: `vamp`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vamp-plugins.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +vamp-plugins.org -- $SHELL -i
+pkgx vamp-plugins.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `vamp-simple-host`
-- `vamp-rdf-template-generator`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+vamp-plugins.org -- $SHELL -i`
-- `vamp`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.10.0`, `2.9.0`
-
-</details>
-
-**Latest Version**: `2.10.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx vamp@2.10.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `xiph.org/flac^1.4`
-- `xiph.org/ogg^1.3`
-- `github.com/libsndfile/libsndfile^1.2`
+*No programs specified*
 
 ## Usage Examples
 
@@ -71,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/vamp-plugins.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,51 +1,26 @@
-# starpls
+# githubcomwitheredmagicstarpls
 
-> An LSP implementation for Starlark, the configuration language used by Bazel and Buck2.
+> Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomwitheredmagicstarpls`
-- **Name**: `starpls`
+- **Name**: `githubcomwitheredmagicstarpls`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/withered-magic/starpls/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) starpls
+pkgx github.com-withered-magic-starpls
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `starpls`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `starpls`
-- `withered-magic/starpls`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.1.21`
-
-</details>
-
-**Latest Version**: `0.1.21`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx starpls@0.1.21
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/withered-magic/starpls/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

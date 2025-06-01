@@ -1,50 +1,26 @@
 # hjson
 
-> Hjson for Rust
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `hjsongithubio`
 - **Name**: `hjson`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hjson.github.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) hjson
+pkgx hjson.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `hjson`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `hjson`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.1.0`, `1.0.0`
-
-</details>
-
-**Latest Version**: `1.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx hjson@1.1.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/hjson.github.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

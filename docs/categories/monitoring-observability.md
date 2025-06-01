@@ -6,7 +6,9 @@ Packages related to monitoring & observability.
 
 ## Packages
 
-### [grafanacom](../packages/grafanacom.md)
+### [grafanacom](../packages/grafanacom.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -14,13 +16,13 @@ Packages related to monitoring & observability.
 
 ---
 
-### [sentryio](../packages/sentryio.md) (sentry-cli)
+### [sentryio](../packages/sentryio.md) ()
 
-Command-line utility to interact with Sentry
+Crafters of fine Open Source products
 
-**Programs**: sentry-cli
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) sentry-cli`
+**Install**: `pkgx sentry.io`
 
 ---
 

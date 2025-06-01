@@ -1,59 +1,26 @@
 # tldr
 
-> C command-line client for tldr pages 📚
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `tldrsh`
 - **Name**: `tldr`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tldr.sh/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) tldr
+pkgx tldr.sh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tldr`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `tldr`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `1.6.1`, `1.6.0`, `1.5.0`
-
-</details>
-
-**Latest Version**: `1.6.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx tldr@1.6.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `linuxsourceware.org/bzip2^1`
-- `sourceware.org/bzip2^1`
-- `libzip.org^1.9.2`
-- `curl.se`
+*No programs specified*
 
 ## Usage Examples
 
@@ -70,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tldr.sh/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,66 +1,26 @@
 # lftp
 
-> sophisticated command line file transfer program (ftp, http, sftp, fish, torrent)
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `lftpyarru`
 - **Name**: `lftp`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i
+pkgx lftp.yar.ru
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `lftp`
-- `lftpget`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+lftp.yar.ru -- $SHELL -i`
-- `lftp`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `4.9.3`, `4.9.2`, `4.9.1`
-
-</details>
-
-**Latest Version**: `4.9.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx lftp@4.9.3
-```
-
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/libidn2`
-- `gnu.org/gettext`
-- `gnu.org/readline`
-- `openssl.org^1.1`
-- `zlib.net`
-- `invisible-island.net/ncurses`
-- `libexpat.github.io`
-- `linuxgnu.org/gcc/libstdcxx@14`
-- `gnu.org/gcc/libstdcxx@14`
+*No programs specified*
 
 ## Usage Examples
 
@@ -77,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

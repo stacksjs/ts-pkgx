@@ -1,19 +1,19 @@
 # zlib.net
 
-> A massively spiffy yet delicately unobtrusive compression library.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `zlibnet`
 - **Name**: `zlib.net`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zlib.net/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +zlib.net -- $SHELL -i
+pkgx zlib.net
 ```
 
 ## Programs
@@ -21,30 +21,6 @@ sh <(curl https://pkgx.sh) +zlib.net -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+zlib.net -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.3.1`, `1.3.0`, `1.2.13`, `1.2.12`
-
-</details>
-
-**Latest Version**: `1.3.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx zlib.net@1.3.1
-```
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/zlib.net/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

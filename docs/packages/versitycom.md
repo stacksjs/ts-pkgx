@@ -1,11 +1,11 @@
-# versity.com
+# versitycom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `versitycom`
-- **Name**: `versity.com`
+- **Name**: `versitycom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# supabase.com
+# supabasecom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `supabasecom`
-- **Name**: `supabase.com`
+- **Name**: `supabasecom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

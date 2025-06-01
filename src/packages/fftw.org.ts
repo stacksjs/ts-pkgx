@@ -1,13 +1,9 @@
 /**
- * **fftw** - C routines to compute the Discrete Fourier Transform
+ * **fftw** - Crafters of fine Open Source products
  *
  * @domain `fftw.org`
- * @programs `fftw-wisdom`, `fftw-wisdom-to-conf`, `fftwf-wisdom`, `fftwl-wisdom`
- * @version `3.3.10` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fftw-org.md
  *
- * @install `sh <(curl https://pkgx.sh) +fftw.org -- $SHELL -i`
- * @dependencies `open-mpi.org`
+ * @install `pkgx fftw.org`
  *
  * @example
  * ```typescript
@@ -15,9 +11,7 @@
  *
  * const pkg = pantry.fftworg
  * console.log(pkg.name)        // "fftw"
- * console.log(pkg.description) // "C routines to compute the Discrete Fourier Tran..."
- * console.log(pkg.programs)    // ["fftw-wisdom", "fftw-wisdom-to-conf", ...]
- * console.log(pkg.versions[0]) // "3.3.10" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fftw-org.md
@@ -29,48 +23,25 @@ export const fftworgPackage = {
    */
   name: 'fftw' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/fftw.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'fftw.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'C routines to compute the Discrete Fourier Transform' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fftw.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'fftw.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +fftw.org -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'fftw-wisdom',
-    'fftw-wisdom-to-conf',
-    'fftwf-wisdom',
-    'fftwl-wisdom',
-  ] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'open-mpi.org',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.3.10',
-  ] as const,
-  fullPath: 'fftw.org' as const,
+  installCommand: 'pkgx fftw.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type FftworgPackage = typeof fftworgPackage

@@ -1,19 +1,19 @@
 # libexif.github.io
 
-> A library for parsing, editing, and saving EXIF data
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `libexifgithubio`
 - **Name**: `libexif.github.io`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libexif.github.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libexif.github.io -- $SHELL -i
+pkgx libexif.github.io
 ```
 
 ## Programs
@@ -21,36 +21,6 @@ sh <(curl https://pkgx.sh) +libexif.github.io -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+libexif.github.io -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.6.25`, `0.6.24`
-
-</details>
-
-**Latest Version**: `0.6.25`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx libexif.github.io@0.6.25
-```
-
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/gettext`
 
 ## Usage Examples
 
@@ -67,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libexif.github.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

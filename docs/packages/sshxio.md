@@ -1,56 +1,26 @@
 # sshx
 
-> Fast, collaborative live terminal sharing over the web
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `sshxio`
 - **Name**: `sshx`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sshx.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) sshx
+pkgx sshx.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sshx`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `sshx`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2023.11.14`
-
-</details>
-
-**Latest Version**: `2023.11.14`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx sshx@2023.11.14
-```
-
-## Dependencies
-
-This package depends on:
-
-- `protobuf.dev`
+*No programs specified*
 
 ## Usage Examples
 
@@ -67,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sshx.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

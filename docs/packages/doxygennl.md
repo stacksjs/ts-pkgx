@@ -1,51 +1,26 @@
 # doxygen
 
-> Generate documentation for several programming languages
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `doxygennl`
 - **Name**: `doxygen`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/doxygen.nl/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) doxygen
+pkgx doxygen.nl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `doxygen`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `doxygen`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `1.14.0`, `1.13.2`, `1.13.1`, `1.13.0`, `1.12.0`
-- `1.11.0`, `1.10.0`, `1.9.8`, `1.9.7`, `1.9.6`
-
-</details>
-
-**Latest Version**: `1.14.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx doxygen@1.14.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/doxygen.nl/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,11 +1,11 @@
-# imageflow.io
+# imageflowio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `imageflowio`
-- **Name**: `imageflow.io`
+- **Name**: `imageflowio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

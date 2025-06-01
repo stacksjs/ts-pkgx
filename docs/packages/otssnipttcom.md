@@ -1,50 +1,26 @@
 # ots
 
-> 🔐 Share end-to-end encrypted secrets with others via a one-time URL
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `otssnipttcom`
 - **Name**: `ots`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ots.sniptt.com/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) ots
+pkgx ots.sniptt.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ots`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ots`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.3.1`, `0.3.0`, `0.2.0`
-
-</details>
-
-**Latest Version**: `0.3.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx ots@0.3.1
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ots.sniptt.com/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

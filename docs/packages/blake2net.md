@@ -1,11 +1,11 @@
-# blake2.net
+# blake2net
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `blake2net`
-- **Name**: `blake2.net`
+- **Name**: `blake2net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

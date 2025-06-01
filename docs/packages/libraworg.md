@@ -1,71 +1,26 @@
 # libraw.org
 
-> Library for reading RAW files from digital photo cameras
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `libraworg`
 - **Name**: `libraw.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libraw.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libraw.org -- $SHELL -i
+pkgx libraw.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `4channels`
-- `dcraw_emu`
-- `dcraw_half`
-- `half_mt`
-- `mem_image`
-- `multirender_test`
-- `postprocessing_benchmark`
-- `raw-identify`
-- `rawtextdump`
-- `simple_dcraw`
-- `unprocessed_raw`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+libraw.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.21.4`, `0.21.3`, `0.21.2`, `0.21.1`
-
-</details>
-
-**Latest Version**: `0.21.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx libraw.org@0.21.4
-```
-
-## Dependencies
-
-This package depends on:
-
-- `github.com/jasper-software/jasper`
-- `libjpeg-turbo.org`
-- `littlecms.com`
-- `zlib.net`
-- `darwinopenmp.llvm.org`
-- `openmp.llvm.org`
+*No programs specified*
 
 ## Usage Examples
 
@@ -82,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libraw.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,11 +1,11 @@
-# crates.io
+# cratesio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `cratesio`
-- **Name**: `crates.io`
+- **Name**: `cratesio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

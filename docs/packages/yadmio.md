@@ -1,57 +1,26 @@
 # yadm
 
-> Yet Another Dotfiles Manager
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `yadmio`
 - **Name**: `yadm`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/yadm.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) yadm
+pkgx yadm.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `yadm`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `yadm`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `3.5.0`, `3.4.0`, `3.3.0`, `3.2.2`
-
-</details>
-
-**Latest Version**: `3.5.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx yadm@3.5.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `git-scm.org`
-- `gnu.org/bash`
+*No programs specified*
 
 ## Usage Examples
 
@@ -68,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/yadm.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

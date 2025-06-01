@@ -1,58 +1,26 @@
 # alacritty
 
-> A cross-platform, OpenGL terminal emulator.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `alacrittyorg`
 - **Name**: `alacritty`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/alacritty.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) alacritty
+pkgx alacritty.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `alacritty`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `alacritty`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.15.1`, `0.15.0`, `0.14.0`, `0.13.2`
-
-</details>
-
-**Latest Version**: `0.15.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx alacritty@0.15.1
-```
-
-## Dependencies
-
-This package depends on:
-
-- `linuxfreetype.orgfreedesktop.org/fontconfig`
-- `freetype.org`
-- `freedesktop.org/fontconfig`
+*No programs specified*
 
 ## Usage Examples
 
@@ -69,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/alacritty.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

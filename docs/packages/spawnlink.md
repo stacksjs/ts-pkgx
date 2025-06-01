@@ -1,53 +1,26 @@
 # spawn.link
 
-> a featureful union filesystem
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `spawnlink`
 - **Name**: `spawn.link`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/spawn.link/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +spawn.link -- $SHELL -i
+pkgx spawn.link
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mergerfs`
-- `mergerfs-fusermount`
-- `mount.mergerfs`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+spawn.link -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `2.40.2`, `2.40.1`, `2.40.0`, `2.39.0`, `2.38.0`
-- `2.37.1`, `2.37.0`, `2.36.0`, `2.35.1`
-
-</details>
-
-**Latest Version**: `2.40.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx spawn.link@2.40.2
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -64,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/spawn.link/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

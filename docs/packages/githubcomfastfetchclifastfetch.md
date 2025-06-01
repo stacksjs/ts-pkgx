@@ -1,54 +1,26 @@
-# github.com/fastfetch-cli/fastfetch
+# githubcomfastfetchclifastfetch
 
-> A maintained, feature-rich and performance oriented, neofetch like system information tool.
+> Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomfastfetchclifastfetch`
-- **Name**: `github.com/fastfetch-cli/fastfetch`
+- **Name**: `githubcomfastfetchclifastfetch`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fastfetch-cli/fastfetch/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +github.com/fastfetch-cli/fastfetch -- $SHELL -i
+pkgx github.com-fastfetch-cli-fastfetch
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `fastfetch`
-- `flashfetch`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `fastfetch-cli/fastfetch`
-
-## Available Versions
-
-<details>
-<summary>Show all 19 versions</summary>
-
-- `2.44.0`, `2.43.0`, `2.42.0`, `2.41.0`, `2.40.4`
-- `2.40.3`, `2.40.2`, `2.40.1`, `2.40.0`, `2.39.1`
-- `2.39.0`, `2.38.0`, `2.37.0`, `2.36.1`, `2.36.0`
-- `2.35.0`, `2.34.1`, `2.34.0`, `2.33.0`
-
-</details>
-
-**Latest Version**: `2.44.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx github.com/fastfetch-cli/fastfetch@2.44.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -65,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fastfetch-cli/fastfetch/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

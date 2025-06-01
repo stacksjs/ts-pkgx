@@ -1,52 +1,26 @@
 # carapace
 
-> Multi-shell multi-command argument completer
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `carapacesh`
 - **Name**: `carapace`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/carapace.sh/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) carapace
+pkgx carapace.sh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `carapace`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `carapace`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `1.3.2`, `1.3.1`, `1.3.0`, `1.2.1`, `1.2.0`
-- `1.1.1`, `1.1.0`, `1.0.7`, `1.0.6`, `1.0.5`
-- `1.0.4`
-
-</details>
-
-**Latest Version**: `1.3.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx carapace@1.3.2
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -63,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/carapace.sh/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

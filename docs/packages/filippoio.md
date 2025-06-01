@@ -1,11 +1,11 @@
-# filippo.io
+# filippoio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `filippoio`
-- **Name**: `filippo.io`
+- **Name**: `filippoio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

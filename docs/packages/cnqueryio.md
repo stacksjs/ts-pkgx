@@ -1,78 +1,26 @@
 # cnquery
 
-> open source, cloud-native, graph-based asset inventory
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `cnqueryio`
 - **Name**: `cnquery`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cnquery.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) cnquery
+pkgx cnquery.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cnquery`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `cnquery`
-
-## Available Versions
-
-<details>
-<summary>Show all 143 versions</summary>
-
-- `11.56.0`, `11.55.0`, `11.54.0`, `11.53.2`, `11.53.1`
-- `11.53.0`, `11.52.0`, `11.51.2`, `11.51.1`, `11.51.0`
-- `11.50.0`, `11.49.0`, `11.48.0`, `11.47.1`, `11.47.0`
-- `11.46.2`, `11.46.1`, `11.46.0`, `11.45.1`, `11.45.0`
-- `11.44.0`, `11.43.0`, `11.42.0`, `11.41.0`, `11.40.0`
-- `11.39.0`, `11.38.0`, `11.37.1`, `11.37.0`, `11.36.2`
-- `11.36.1`, `11.36.0`, `11.35.0`, `11.34.0`, `11.33.1`
-- `11.33.0`, `11.32.0`, `11.31.1`, `11.31.0`, `11.30.2`
-- `11.30.1`, `11.30.0`, `11.29.0`, `11.28.1`, `11.28.0`
-- `11.27.0`, `11.26.0`, `11.25.0`, `11.24.0`, `11.23.2`
-- `11.23.1`, `11.23.0`, `11.22.0`, `11.21.1`, `11.21.0`
-- `11.20.1`, `11.20.0`, `11.19.1`, `11.19.0`, `11.18.0`
-- `11.17.0`, `11.16.1`, `11.16.0`, `11.15.1`, `11.15.0`
-- `11.14.1`, `11.14.0`, `11.13.2`, `11.13.1`, `11.13.0`
-- `11.12.2`, `11.12.1`, `11.12.0`, `11.11.0`, `11.10.0`
-- `11.9.1`, `11.9.0`, `11.8.0`, `11.7.3`, `11.7.2`
-- `11.7.1`, `11.7.0`, `11.6.3`, `11.6.2`, `11.6.1`
-- `11.6.0`, `11.5.0`, `11.4.3`, `11.4.2`, `11.4.1`
-- `11.4.0`, `11.3.1`, `11.3.0`, `11.2.0`, `11.1.1`
-- `11.1.0`, `11.0.2`, `11.0.1`, `11.0.0`, `10.12.2`
-- `10.12.1`, `10.12.0`, `10.11.1`, `10.11.0`, `10.10.0`
-- `10.9.3`, `10.9.2`, `10.9.1`, `10.9.0`, `10.8.4`
-- `10.8.3`, `10.8.2`, `10.8.1`, `10.8.0`, `10.7.3`
-- `10.7.2`, `10.7.1`, `10.7.0`, `10.6.1`, `10.6.0`
-- `10.5.0`, `10.4.2`, `10.4.1`, `10.4.0`, `10.3.4`
-- `10.3.3`, `10.3.2`, `10.3.1`, `10.3.0`, `10.2.0`
-- `10.1.6`, `10.1.5`, `10.1.4`, `10.1.3`, `10.1.2`
-- `10.1.1`, `10.1.0`, `10.0.3`, `10.0.2`, `10.0.1`
-- `10.0.0`, `9.14.0`, `9.13.0`
-
-</details>
-
-**Latest Version**: `11.56.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx cnquery@11.56.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -89,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cnquery.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,135 +1,47 @@
 /**
- * **+flutter.dev -- $SHELL -i** - Flutter makes it easy and fast to build beautiful apps for mobile and beyond
+ * **flutter.dev** - Crafters of fine Open Source products
  *
  * @domain `flutter.dev`
- * @programs `flutter`, `dart`
- * @version `3.32.1` (45 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/flutter-dev.md
  *
- * @install `sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i`
- * @aliases `+flutter.dev -- $SHELL -i`
- * @dependencies `git-scm.org`, `tukaani.org/xz`, `gnu.org/which`, ... (+4 more)
+ * @install `pkgx flutter.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.flutterdevSHELLi
- * // Or access via domain
- * const samePkg = pantry.flutterdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.flutterdev
  * console.log(pkg.name)        // "flutter.dev"
- * console.log(pkg.description) // "Flutter makes it easy and fast to build beautif..."
- * console.log(pkg.programs)    // ["flutter", "dart"]
- * console.log(pkg.versions[0]) // "3.32.1" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/flutter-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const flutterdevSHELLiPackage = {
+export const flutterdevPackage = {
   /**
    * The display name of this package.
    */
   name: 'flutter.dev' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/flutter.dev/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'flutter.dev' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Flutter makes it easy and fast to build beautiful apps for mobile and beyond' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/flutter.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'flutter.dev' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'flutter',
-    'dart',
-  ] as const,
+  installCommand: 'pkgx flutter.dev' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'git-scm.org',
-    'tukaani.org/xz',
-    'gnu.org/which',
-    'linuxcurl.seinfo-zip.org/zipinfo-zip.org/unzip',
-    'curl.se',
-    'info-zip.org/zip',
-    'info-zip.org/unzip',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.32.1',
-    '3.32.0',
-    '3.29.3',
-    '3.29.2',
-    '3.29.1',
-    '3.29.0',
-    '3.27.4',
-    '3.27.3',
-    '3.27.2',
-    '3.27.1',
-    '3.27.0',
-    '3.24.5',
-    '3.24.4',
-    '3.24.3',
-    '3.24.2',
-    '3.24.1',
-    '3.24.0',
-    '3.22.3',
-    '3.22.2',
-    '3.22.1',
-    '3.22.0',
-    '3.19.6',
-    '3.19.5',
-    '3.19.4',
-    '3.19.3',
-    '3.19.2',
-    '3.19.1',
-    '3.19.0',
-    '3.16.9',
-    '3.16.8',
-    '3.16.7',
-    '3.16.6',
-    '3.16.5',
-    '3.16.4',
-    '3.16.3',
-    '3.16.2',
-    '3.16.1',
-    '3.16.0',
-    '3.13.9',
-    '3.13.8',
-    '3.13.7',
-    '3.13.6',
-    '3.13.5',
-    '3.13.4',
-    '3.13.3',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+flutter.dev -- $SHELL -i',
-  ] as const,
-  fullPath: 'flutter.dev' as const,
 }
 
-export type FlutterdevSHELLiPackage = typeof flutterdevSHELLiPackage
+export type FlutterdevPackage = typeof flutterdevPackage

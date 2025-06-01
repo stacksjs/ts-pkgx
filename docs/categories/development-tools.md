@@ -6,7 +6,9 @@ Packages related to development tools.
 
 ## Packages
 
-### [githubcom](../packages/githubcom.md)
+### [githubcom](../packages/githubcom.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -14,7 +16,9 @@ Packages related to development tools.
 
 ---
 
-### [gitlabcom](../packages/gitlabcom.md)
+### [gitlabcom](../packages/gitlabcom.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -22,43 +26,43 @@ Packages related to development tools.
 
 ---
 
-### [gitscmorg](../packages/gitscmorg.md) (+git-scm.org -- $SHELL -i, git)
+### [gitscmorg](../packages/gitscmorg.md) ()
 
-Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
+Crafters of fine Open Source products
 
-**Programs**: git, git-cvsserver, git-receive-pack, git-shell, git-upload-archive, git-upload-pack, scalar, git-credential-osxkeychain
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +git-scm.org -- $SHELL -i`
-
----
-
-### [neovimio](../packages/neovimio.md) (nvim)
-
-Ambitious Vim-fork focused on extensibility and agility
-
-**Programs**: nvim
-
-**Install**: `sh <(curl https://pkgx.sh) nvim`
+**Install**: `pkgx git-scm.org`
 
 ---
 
-### [prettierio](../packages/prettierio.md) (prettier)
+### [neovimio](../packages/neovimio.md) ()
 
-Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+Crafters of fine Open Source products
 
-**Programs**: prettier
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) prettier`
+**Install**: `pkgx neovim.io`
 
 ---
 
-### [vimorg](../packages/vimorg.md) (+vim.org -- $SHELL -i)
+### [prettierio](../packages/prettierio.md) ()
 
-The official Vim repository
+Crafters of fine Open Source products
 
-**Programs**: vim, vi
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i`
+**Install**: `pkgx prettier.io`
+
+---
+
+### [vimorg](../packages/vimorg.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx vim.org`
 
 ---
 

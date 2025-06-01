@@ -1,57 +1,26 @@
-# qsv
+# cratesioqsv
 
-> Ultra-fast CSV data-wrangling toolkit
+> Go home.
 
 ## Package Information
 
 - **Domain**: `cratesioqsv`
-- **Name**: `qsv`
+- **Name**: `cratesioqsv`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/qsv/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) qsv
+pkgx crates.io-qsv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `qsv`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `qsv`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `5.0.3`, `4.0.0`, `3.3.0`, `3.2.0`
-
-</details>
-
-**Latest Version**: `5.0.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx qsv@5.0.3
-```
-
-## Dependencies
-
-This package depends on:
-
-- `linuxwayland.freedesktop.org`
-- `wayland.freedesktop.org`
+*No programs specified*
 
 ## Usage Examples
 
@@ -68,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/qsv/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

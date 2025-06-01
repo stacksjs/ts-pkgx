@@ -1,11 +1,11 @@
-# openai.com
+# openaicom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `openaicom`
-- **Name**: `openai.com`
+- **Name**: `openaicom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,50 +1,26 @@
-# ksops
+# viaductaiksops
 
-> KSOPS - A Flexible Kustomize Plugin for SOPS Encrypted Resources
+> Go home.
 
 ## Package Information
 
 - **Domain**: `viaductaiksops`
-- **Name**: `ksops`
+- **Name**: `viaductaiksops`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/viaduct.ai/ksops/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) ksops
+pkgx viaduct.ai-ksops
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ksops`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ksops`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `4.3.3`, `4.3.2`
-
-</details>
-
-**Latest Version**: `4.3.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx ksops@4.3.3
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/viaduct.ai/ksops/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,13 +1,9 @@
 /**
- * **wireshark.org** - Network analyzer and capture tool - without graphical user interface
+ * **wireshark.org** - Crafters of fine Open Source products
  *
  * @domain `wireshark.org`
- * @programs `capinfos`, `captype`, `dumpcap`, `editcap`, `idl2wrs`, ... (+8 more)
- * @version `4.4.6` (30 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wireshark-org.md
  *
- * @install `sh <(curl https://pkgx.sh) +wireshark.org -- $SHELL -i`
- * @dependencies `c-ares.org^1.23`, `gnome.org/glib^2.78.3`, `gnutls.org^3.8.2`, ... (+10 more)
+ * @install `pkgx wireshark.org`
  *
  * @example
  * ```typescript
@@ -15,9 +11,7 @@
  *
  * const pkg = pantry.wiresharkorg
  * console.log(pkg.name)        // "wireshark.org"
- * console.log(pkg.description) // "Network analyzer and capture tool - without gra..."
- * console.log(pkg.programs)    // ["capinfos", "captype", ...]
- * console.log(pkg.versions[0]) // "4.4.6" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wireshark-org.md
@@ -29,98 +23,25 @@ export const wiresharkorgPackage = {
    */
   name: 'wireshark.org' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/wireshark.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'wireshark.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Network analyzer and capture tool - without graphical user interface' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wireshark.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'wireshark.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +wireshark.org -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'capinfos',
-    'captype',
-    'dumpcap',
-    'editcap',
-    'idl2wrs',
-    'mergecap',
-    'mmdbresolve',
-    'randpkt',
-    'rawshark',
-    'reordercap',
-    'sharkd',
-    'text2pcap',
-    'tshark',
-  ] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'c-ares.org^1.23',
-    'gnome.org/glib^2.78.3',
-    'gnutls.org^3.8.2',
-    'gnupg.org/libgcrypt^1.10.3',
-    'gnupg.org/libgpg-error^1.47',
-    'github.com/maxmind/libmaxminddb^1.8',
-    'nghttp2.org^1.58',
-    'ibr.cs.tu-bs.de/libsmi^0.4.8',
-    'libssh.org^0.10.5',
-    'lua.org^5.4',
-    'github.com/xiph/speexdsp^1.2.1',
-    'tcpdump.org^1.10.4',
-    'gnome.org/libxml2^2.12.3',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '4.4.6',
-    '4.4.5',
-    '4.4.4',
-    '4.4.3',
-    '4.4.2',
-    '4.4.1',
-    '4.4.0',
-    '4.3.1',
-    '4.3.0',
-    '4.2.11',
-    '4.2.10',
-    '4.2.9',
-    '4.2.8',
-    '4.2.7',
-    '4.2.5',
-    '4.2.3',
-    '4.2.2',
-    '4.2.1',
-    '4.2.0',
-    '4.0.17',
-    '4.0.16',
-    '4.0.15',
-    '4.0.14',
-    '4.0.13',
-    '4.0.12',
-    '3.6.24',
-    '3.6.23',
-    '3.6.22',
-    '3.6.21',
-    '3.6.20',
-  ] as const,
-  fullPath: 'wireshark.org' as const,
+  installCommand: 'pkgx wireshark.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type WiresharkorgPackage = typeof wiresharkorgPackage

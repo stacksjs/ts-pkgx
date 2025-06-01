@@ -1,11 +1,11 @@
-# jedsoft.org
+# jedsoftorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `jedsoftorg`
-- **Name**: `jedsoft.org`
+- **Name**: `jedsoftorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

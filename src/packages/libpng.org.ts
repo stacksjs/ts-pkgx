@@ -1,13 +1,9 @@
 /**
- * **libpng.org** - LIBPNG: Portable Network Graphics support, official libpng repository
+ * **libpng.org** - Crafters of fine Open Source products
  *
  * @domain `libpng.org`
- * @programs `libpng-config`, `libpng16-config`, `png-fix-itxt`, `pngfix`
- * @version `1.6.48` (11 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libpng-org.md
  *
- * @install `sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i`
- * @dependencies `zlib.net@1`
+ * @install `pkgx libpng.org`
  *
  * @example
  * ```typescript
@@ -15,9 +11,7 @@
  *
  * const pkg = pantry.libpngorg
  * console.log(pkg.name)        // "libpng.org"
- * console.log(pkg.description) // "LIBPNG: Portable Network Graphics support, offi..."
- * console.log(pkg.programs)    // ["libpng-config", "libpng16-config", ...]
- * console.log(pkg.versions[0]) // "1.6.48" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libpng-org.md
@@ -29,58 +23,25 @@ export const libpngorgPackage = {
    */
   name: 'libpng.org' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/libpng.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'libpng.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'LIBPNG: Portable Network Graphics support, official libpng repository' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libpng.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'libpng.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'libpng-config',
-    'libpng16-config',
-    'png-fix-itxt',
-    'pngfix',
-  ] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'zlib.net@1',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.6.48',
-    '1.6.47',
-    '1.6.46',
-    '1.6.45',
-    '1.6.44',
-    '1.6.43',
-    '1.6.42',
-    '1.6.41',
-    '1.6.40',
-    '1.6.39',
-    '1.6.35',
-  ] as const,
-  fullPath: 'libpng.org' as const,
+  installCommand: 'pkgx libpng.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type LibpngorgPackage = typeof libpngorgPackage

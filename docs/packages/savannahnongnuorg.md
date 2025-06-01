@@ -1,11 +1,11 @@
-# savannah.nongnu.org
+# savannahnongnuorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `savannahnongnuorg`
-- **Name**: `savannah.nongnu.org`
+- **Name**: `savannahnongnuorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

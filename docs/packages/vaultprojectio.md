@@ -1,61 +1,26 @@
 # vault
 
-> A tool for secrets management, encryption as a service, and privileged access management
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `vaultprojectio`
 - **Name**: `vault`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vaultproject.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) vault
+pkgx vaultproject.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `vault`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `vault`
-
-## Available Versions
-
-<details>
-<summary>Show all 56 versions</summary>
-
-- `1.19.5`, `1.19.4`, `1.19.3`, `1.19.2`, `1.19.1`
-- `1.19.0`, `1.18.5`, `1.18.4`, `1.18.3`, `1.18.2`
-- `1.18.1`, `1.18.0`, `1.17.6`, `1.17.5`, `1.17.4`
-- `1.17.3`, `1.17.2`, `1.17.1`, `1.17.0`, `1.16.3`
-- `1.16.2`, `1.16.1`, `1.16.0`, `1.15.6`, `1.15.5`
-- `1.15.4`, `1.15.3`, `1.15.2`, `1.15.1`, `1.15.0`
-- `1.14.10`, `1.14.9`, `1.14.8`, `1.14.7`, `1.14.6`
-- `1.14.5`, `1.14.4`, `1.14.3`, `1.14.2`, `1.14.1`
-- `1.14.0`, `1.13.13`, `1.13.12`, `1.13.11`, `1.13.10`
-- `1.13.9`, `1.13.8`, `1.13.7`, `1.13.6`, `1.13.5`
-- `1.13.4`, `1.13.3`, `1.12.11`, `1.12.10`, `1.12.9`
-- `1.12.8`
-
-</details>
-
-**Latest Version**: `1.19.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx vault@1.19.5
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -72,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/vaultproject.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

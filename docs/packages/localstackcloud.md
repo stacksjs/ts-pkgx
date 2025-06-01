@@ -1,11 +1,11 @@
-# localstack.cloud
+# localstackcloud
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `localstackcloud`
-- **Name**: `localstack.cloud`
+- **Name**: `localstackcloud`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

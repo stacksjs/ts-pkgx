@@ -1,52 +1,26 @@
 # mpg123
 
-> MP3 player for Linux and UNIX
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `mpg123de`
 - **Name**: `mpg123`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mpg123.de/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) mpg123
+pkgx mpg123.de
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mpg123`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mpg123`
-
-## Available Versions
-
-<details>
-<summary>Show all 12 versions</summary>
-
-- `1.32.10`, `1.32.9`, `1.32.8`, `1.32.7`, `1.32.6`
-- `1.32.5`, `1.32.4`, `1.32.3`, `1.32.2`, `1.32.1`
-- `1.32.0`, `1.31.2`
-
-</details>
-
-**Latest Version**: `1.32.10`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx mpg123@1.32.10
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -63,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mpg123.de/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

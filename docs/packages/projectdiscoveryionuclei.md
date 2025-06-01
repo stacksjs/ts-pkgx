@@ -1,50 +1,26 @@
-# nuclei
+# projectdiscoveryionuclei
 
-> Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.
+> Go home.
 
 ## Package Information
 
 - **Domain**: `projectdiscoveryionuclei`
-- **Name**: `nuclei`
+- **Name**: `projectdiscoveryionuclei`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/projectdiscovery.io/nuclei/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) nuclei
+pkgx projectdiscovery.io-nuclei
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `nuclei`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `nuclei`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `3.4.4`, `3.4.3`, `3.4.2`
-
-</details>
-
-**Latest Version**: `3.4.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx nuclei@3.4.4
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/projectdiscovery.io/nuclei/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

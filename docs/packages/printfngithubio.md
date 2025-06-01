@@ -1,11 +1,11 @@
-# printfn.github.io
+# printfngithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `printfngithubio`
-- **Name**: `printfn.github.io`
+- **Name**: `printfngithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

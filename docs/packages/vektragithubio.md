@@ -1,11 +1,11 @@
-# vektra.github.io
+# vektragithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `vektragithubio`
-- **Name**: `vektra.github.io`
+- **Name**: `vektragithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# cilium.io
+# ciliumio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `ciliumio`
-- **Name**: `cilium.io`
+- **Name**: `ciliumio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,50 +1,26 @@
 # sdkman-init.sh
 
-> The SDKMAN! Command Line Interface
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `sdkmanio`
 - **Name**: `sdkman-init.sh`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sdkman.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) sdkman-init.sh
+pkgx sdkman.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sdkman-init.sh`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `sdkman-init.sh`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `5.19.0`, `5.18.2`
-
-</details>
-
-**Latest Version**: `5.19.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx sdkman-init.sh@5.19.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sdkman.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

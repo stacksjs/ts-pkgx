@@ -1,11 +1,9 @@
 /**
- * **libusb.info** - A cross-platform library to access USB devices
+ * **libusb.info** - Crafters of fine Open Source products
  *
  * @domain `libusb.info`
- * @version `1.0.28` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libusb-info.md
  *
- * @install `sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i`
+ * @install `pkgx libusb.info`
  *
  * @example
  * ```typescript
@@ -13,8 +11,7 @@
  *
  * const pkg = pantry.libusbinfo
  * console.log(pkg.name)        // "libusb.info"
- * console.log(pkg.description) // "A cross-platform library to access USB devices"
- * console.log(pkg.versions[0]) // "1.0.28" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libusb-info.md
@@ -26,35 +23,25 @@ export const libusbinfoPackage = {
    */
   name: 'libusb.info' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/libusb.info/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'libusb.info' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'A cross-platform library to access USB devices' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libusb.info/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'libusb.info' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i' as const,
-  programs: [] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.0.28',
-    '1.0.27',
-    '1.0.26',
-  ] as const,
-  fullPath: 'libusb.info' as const,
+  installCommand: 'pkgx libusb.info' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type LibusbinfoPackage = typeof libusbinfoPackage

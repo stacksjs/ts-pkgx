@@ -1,11 +1,11 @@
-# cisco.com
+# ciscocom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `ciscocom`
-- **Name**: `cisco.com`
+- **Name**: `ciscocom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

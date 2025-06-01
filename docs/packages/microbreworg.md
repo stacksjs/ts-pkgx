@@ -1,11 +1,11 @@
-# microbrew.org
+# microbreworg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `microbreworg`
-- **Name**: `microbrew.org`
+- **Name**: `microbreworg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# indexsupply.com
+# indexsupplycom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `indexsupplycom`
-- **Name**: `indexsupply.com`
+- **Name**: `indexsupplycom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

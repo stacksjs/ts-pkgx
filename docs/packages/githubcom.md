@@ -1,11 +1,11 @@
-# github.com
+# githubcom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `githubcom`
-- **Name**: `github.com`
+- **Name**: `githubcom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

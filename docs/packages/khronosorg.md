@@ -1,11 +1,11 @@
-# khronos.org
+# khronosorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `khronosorg`
-- **Name**: `khronos.org`
+- **Name**: `khronosorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

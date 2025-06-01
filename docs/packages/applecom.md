@@ -1,11 +1,11 @@
-# apple.com
+# applecom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `applecom`
-- **Name**: `apple.com`
+- **Name**: `applecom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

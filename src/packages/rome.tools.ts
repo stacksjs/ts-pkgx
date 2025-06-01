@@ -1,12 +1,9 @@
 /**
- * **rome** - Unified developer tools for JavaScript, TypeScript, and the web
+ * **rome** - Crafters of fine Open Source products
  *
  * @domain `rome.tools`
- * @programs `rome`
- * @version `0.4.2` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rome-tools.md
  *
- * @install `sh <(curl https://pkgx.sh) rome`
+ * @install `pkgx rome.tools`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.rometools
  * console.log(pkg.name)        // "rome"
- * console.log(pkg.description) // "Unified developer tools for JavaScript, TypeScr..."
- * console.log(pkg.programs)    // ["rome"]
- * console.log(pkg.versions[0]) // "0.4.2" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rome-tools.md
@@ -28,39 +23,25 @@ export const rometoolsPackage = {
    */
   name: 'rome' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/rome.tools/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'rome.tools' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Unified developer tools for JavaScript, TypeScript, and the web' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rome.tools/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'rome.tools' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rome' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'rome',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.4.2',
-  ] as const,
-  fullPath: 'rome.tools' as const,
+  installCommand: 'pkgx rome.tools' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type RometoolsPackage = typeof rometoolsPackage

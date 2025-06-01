@@ -1,11 +1,11 @@
-# isc.org
+# iscorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `iscorg`
-- **Name**: `isc.org`
+- **Name**: `iscorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

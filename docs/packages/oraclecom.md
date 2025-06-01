@@ -1,11 +1,11 @@
-# oracle.com
+# oraclecom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `oraclecom`
-- **Name**: `oracle.com`
+- **Name**: `oraclecom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

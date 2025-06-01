@@ -1,11 +1,11 @@
-# trufflesecurity.com
+# trufflesecuritycom
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `trufflesecuritycom`
-- **Name**: `trufflesecurity.com`
+- **Name**: `trufflesecuritycom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

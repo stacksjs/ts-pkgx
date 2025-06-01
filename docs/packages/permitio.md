@@ -1,11 +1,11 @@
-# permit.io
+# permitio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `permitio`
-- **Name**: `permit.io`
+- **Name**: `permitio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

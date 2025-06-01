@@ -1,58 +1,26 @@
-# nnn
+# githubcomjarunnnn
 
-> Tiny, lightning fast, feature-packed file manager
+> Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomjarunnnn`
-- **Name**: `nnn`
+- **Name**: `githubcomjarunnnn`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jarun/nnn/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) nnn
+pkgx github.com-jarun-nnn
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `nnn`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `nnn`
-- `jarun/nnn`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `5.1.0`, `5.0.0`
-
-</details>
-
-**Latest Version**: `5.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx nnn@5.1.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `invisible-island.net/ncurses@6`
-- `gnu.org/readline@8`
+*No programs specified*
 
 ## Usage Examples
 
@@ -69,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jarun/nnn/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

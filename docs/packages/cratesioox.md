@@ -1,50 +1,26 @@
-# ox
+# cratesioox
 
-> Independent Rust text editor that runs in your terminal
+> Go home.
 
 ## Package Information
 
 - **Domain**: `cratesioox`
-- **Name**: `ox`
+- **Name**: `cratesioox`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/ox/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) ox
+pkgx crates.io-ox
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ox`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ox`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.7.7`, `0.7.6`
-
-</details>
-
-**Latest Version**: `0.7.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx ox@0.7.7
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/ox/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

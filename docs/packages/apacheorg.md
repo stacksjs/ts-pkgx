@@ -1,11 +1,11 @@
-# apache.org
+# apacheorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `apacheorg`
-- **Name**: `apache.org`
+- **Name**: `apacheorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -6,17 +6,19 @@ Packages related to security & authentication.
 
 ## Packages
 
-### [bitwardencom](../packages/bitwardencom.md) (bw)
+### [bitwardencom](../packages/bitwardencom.md) ()
 
-Secure and free password manager for all of your devices
+Crafters of fine Open Source products
 
-**Programs**: bw
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) bw`
+**Install**: `pkgx bitwarden.com`
 
 ---
 
 ### [developer1passwordcom](../packages/developer1passwordcom.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -24,7 +26,9 @@ Secure and free password manager for all of your devices
 
 ---
 
-### [hashicorpcom](../packages/hashicorpcom.md)
+### [hashicorpcom](../packages/hashicorpcom.md) ()
+
+Go home.
 
 **Programs**: None specified
 

@@ -1,11 +1,11 @@
-# google.github.io
+# googlegithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `googlegithubio`
-- **Name**: `google.github.io`
+- **Name**: `googlegithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

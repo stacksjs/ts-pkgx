@@ -1,11 +1,11 @@
-# gphoto.org
+# gphotoorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `gphotoorg`
-- **Name**: `gphoto.org`
+- **Name**: `gphotoorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

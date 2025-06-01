@@ -8,29 +8,31 @@ Packages related to web servers & proxies.
 
 ### [apacheorg](../packages/apacheorg.md) ()
 
+Go home.
+
 **Programs**: None specified
 
 **Install**: `pkgx apache.org`
 
 ---
 
-### [nginxorg](../packages/nginxorg.md) (nginx)
+### [nginxorg](../packages/nginxorg.md) ()
 
-HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+Crafters of fine Open Source products
 
-**Programs**: nginx
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) nginx`
+**Install**: `pkgx nginx.org`
 
 ---
 
-### [traefikio](../packages/traefikio.md) (traefik)
+### [traefikio](../packages/traefikio.md) ()
 
-The Cloud Native Application Proxy
+Crafters of fine Open Source products
 
-**Programs**: traefik
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) traefik`
+**Install**: `pkgx traefik.io`
 
 ---
 

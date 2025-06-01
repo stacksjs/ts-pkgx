@@ -1,11 +1,11 @@
-# debian.org
+# debianorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `debianorg`
-- **Name**: `debian.org`
+- **Name**: `debianorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

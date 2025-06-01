@@ -1,11 +1,11 @@
-# tukaani.org
+# tukaaniorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `tukaaniorg`
-- **Name**: `tukaani.org`
+- **Name**: `tukaaniorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# fuellabs.github.io
+# fuellabsgithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `fuellabsgithubio`
-- **Name**: `fuellabs.github.io`
+- **Name**: `fuellabsgithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -8,6 +8,8 @@ Packages related to cloud platforms & services.
 
 ### [awsamazoncom](../packages/awsamazoncom.md) ()
 
+Go home.
+
 **Programs**: None specified
 
 **Install**: `pkgx aws.amazon.com`
@@ -15,6 +17,8 @@ Packages related to cloud platforms & services.
 ---
 
 ### [cloudflarecom](../packages/cloudflarecom.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -24,23 +28,27 @@ Packages related to cloud platforms & services.
 
 ### [digitaloceancom](../packages/digitaloceancom.md) ()
 
+Go home.
+
 **Programs**: None specified
 
 **Install**: `pkgx digitalocean.com`
 
 ---
 
-### [flyio](../packages/flyio.md) (+fly.io -- $SHELL -i, fly)
+### [flyio](../packages/flyio.md) ()
 
-Command line tools for fly.io services
+Crafters of fine Open Source products
 
-**Programs**: fly, flyctl
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +fly.io -- $SHELL -i`
+**Install**: `pkgx fly.io`
 
 ---
 
-### [githubcom](../packages/githubcom.md)
+### [githubcom](../packages/githubcom.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -48,7 +56,9 @@ Command line tools for fly.io services
 
 ---
 
-### [gitlabcom](../packages/gitlabcom.md)
+### [gitlabcom](../packages/gitlabcom.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -56,27 +66,29 @@ Command line tools for fly.io services
 
 ---
 
-### [herokucom](../packages/herokucom.md) (heroku)
+### [herokucom](../packages/herokucom.md) ()
 
-CLI for Heroku
+Crafters of fine Open Source products
 
-**Programs**: heroku
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) heroku`
-
----
-
-### [railwayapp](../packages/railwayapp.md) (railway)
-
-Develop and deploy code with zero configuration
-
-**Programs**: railway
-
-**Install**: `sh <(curl https://pkgx.sh) railway`
+**Install**: `pkgx heroku.com`
 
 ---
 
-### [vercelcom](../packages/vercelcom.md)
+### [railwayapp](../packages/railwayapp.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx railway.app`
+
+---
+
+### [vercelcom](../packages/vercelcom.md) ()
+
+Go home.
 
 **Programs**: None specified
 

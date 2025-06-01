@@ -1,51 +1,26 @@
-# s5cmd
+# githubcompeaks5cmd
 
-> Parallel S3 and local filesystem execution tool.
+> Go home.
 
 ## Package Information
 
 - **Domain**: `githubcompeaks5cmd`
-- **Name**: `s5cmd`
+- **Name**: `githubcompeaks5cmd`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peak/s5cmd/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) s5cmd
+pkgx github.com-peak-s5cmd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `s5cmd`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `s5cmd`
-- `peak/s5cmd`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.3.0`
-
-</details>
-
-**Latest Version**: `2.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx s5cmd@2.3.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peak/s5cmd/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

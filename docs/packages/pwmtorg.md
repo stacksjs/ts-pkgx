@@ -1,11 +1,11 @@
-# pwmt.org
+# pwmtorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `pwmtorg`
-- **Name**: `pwmt.org`
+- **Name**: `pwmtorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

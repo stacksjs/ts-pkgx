@@ -1,12 +1,9 @@
 /**
- * **tailwindcss** - A utility-first CSS framework for rapid UI development.
+ * **tailwindcss** - Crafters of fine Open Source products
  *
  * @domain `tailwindcss.com`
- * @programs `tailwindcss`
- * @version `4.1.8` (42 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tailwindcss-com.md
  *
- * @install `sh <(curl https://pkgx.sh) tailwindcss`
+ * @install `pkgx tailwindcss.com`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.tailwindcsscom
  * console.log(pkg.name)        // "tailwindcss"
- * console.log(pkg.description) // "A utility-first CSS framework for rapid UI deve..."
- * console.log(pkg.programs)    // ["tailwindcss"]
- * console.log(pkg.versions[0]) // "4.1.8" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tailwindcss-com.md
@@ -28,80 +23,25 @@ export const tailwindcsscomPackage = {
    */
   name: 'tailwindcss' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/tailwindcss.com/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'tailwindcss.com' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'A utility-first CSS framework for rapid UI development.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tailwindcss.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'tailwindcss.com' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) tailwindcss' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'tailwindcss',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '4.1.8',
-    '4.1.7',
-    '4.1.6',
-    '4.1.5',
-    '4.1.4',
-    '4.1.3',
-    '4.1.2',
-    '4.1.1',
-    '4.1.0',
-    '4.0.17',
-    '4.0.16',
-    '4.0.15',
-    '4.0.14',
-    '4.0.13',
-    '4.0.12',
-    '4.0.11',
-    '4.0.10',
-    '4.0.9',
-    '4.0.8',
-    '4.0.7',
-    '4.0.6',
-    '4.0.5',
-    '4.0.4',
-    '4.0.3',
-    '4.0.2',
-    '4.0.1',
-    '4.0.0',
-    '3.4.17',
-    '3.4.16',
-    '3.4.15',
-    '3.4.14',
-    '3.4.13',
-    '3.4.12',
-    '3.4.11',
-    '3.4.10',
-    '3.4.9',
-    '3.4.8',
-    '3.4.7',
-    '3.4.6',
-    '3.4.5',
-    '3.4.4',
-    '3.4.3',
-  ] as const,
-  fullPath: 'tailwindcss.com' as const,
+  installCommand: 'pkgx tailwindcss.com' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type TailwindcsscomPackage = typeof tailwindcsscomPackage

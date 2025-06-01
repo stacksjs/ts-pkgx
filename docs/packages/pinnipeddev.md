@@ -1,52 +1,26 @@
 # pinniped
 
-> Pinniped is the easy, secure way to log in to your Kubernetes clusters.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `pinnipeddev`
 - **Name**: `pinniped`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pinniped.dev/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) pinniped
+pkgx pinniped.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pinniped`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pinniped`
-
-## Available Versions
-
-<details>
-<summary>Show all 14 versions</summary>
-
-- `0.39.0`, `0.38.0`, `0.37.0`, `0.36.0`, `0.35.0`
-- `0.34.0`, `0.33.0`, `0.32.0`, `0.31.0`, `0.30.0`
-- `0.29.0`, `0.28.0`, `0.27.0`, `0.26.0`
-
-</details>
-
-**Latest Version**: `0.39.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx pinniped@0.39.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -63,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pinniped.dev/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

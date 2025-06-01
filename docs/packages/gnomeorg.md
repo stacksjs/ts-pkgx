@@ -1,11 +1,11 @@
-# gnome.org
+# gnomeorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `gnomeorg`
-- **Name**: `gnome.org`
+- **Name**: `gnomeorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

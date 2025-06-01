@@ -1,19 +1,19 @@
 # eigen.tuxfamily.org
 
->
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `eigentuxfamilyorg`
 - **Name**: `eigen.tuxfamily.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/eigen.tuxfamily.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i
+pkgx eigen.tuxfamily.org
 ```
 
 ## Programs
@@ -21,31 +21,6 @@ sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `3.4.0`
-
-</details>
-
-**Latest Version**: `3.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx eigen.tuxfamily.org@3.4.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `linuxgnu.org/gcc/libstdcxx@14`
-- `gnu.org/gcc/libstdcxx@14`
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/eigen.tuxfamily.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

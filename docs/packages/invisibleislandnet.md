@@ -1,11 +1,11 @@
-# invisible-island.net
+# invisibleislandnet
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `invisibleislandnet`
-- **Name**: `invisible-island.net`
+- **Name**: `invisibleislandnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

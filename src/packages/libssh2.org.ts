@@ -1,12 +1,9 @@
 /**
- * **libssh2.org** - the SSH library
+ * **libssh2.org** - Crafters of fine Open Source products
  *
  * @domain `libssh2.org`
- * @version `1.11.1` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libssh2-org.md
  *
- * @install `sh <(curl https://pkgx.sh) +libssh2.org -- $SHELL -i`
- * @dependencies `openssl.org^1.1`, `zlib.net^1.2`
+ * @install `pkgx libssh2.org`
  *
  * @example
  * ```typescript
@@ -14,8 +11,7 @@
  *
  * const pkg = pantry.libssh2org
  * console.log(pkg.name)        // "libssh2.org"
- * console.log(pkg.description) // "the SSH library"
- * console.log(pkg.versions[0]) // "1.11.1" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libssh2-org.md
@@ -27,42 +23,25 @@ export const libssh2orgPackage = {
    */
   name: 'libssh2.org' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/libssh2.org/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'libssh2.org' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'the SSH library' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libssh2.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'libssh2.org' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +libssh2.org -- $SHELL -i' as const,
-  programs: [] as const,
-  companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'openssl.org^1.1',
-    'zlib.net^1.2',
-  ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.11.1',
-    '1.11.0',
-    '1.10.0',
-  ] as const,
-  fullPath: 'libssh2.org' as const,
+  installCommand: 'pkgx libssh2.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type Libssh2orgPackage = typeof libssh2orgPackage

@@ -1,52 +1,54 @@
 # JavaScript & Node.js Ecosystem
 
-*12 packages in this category*
+*11 packages in this category*
 
 Packages related to javascript & node.js ecosystem.
 
 ## Packages
 
-### [angulardev](../packages/angulardev.md) (ng)
+### [angulardev](../packages/angulardev.md) ()
 
-CLI tool for Angular
+Crafters of fine Open Source products
 
-**Programs**: ng
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) ng`
-
----
-
-### [bunsh](../packages/bunsh.md) (+bun.sh -- $SHELL -i, bun)
-
-Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
-
-**Programs**: bun, bunx
-
-**Install**: `sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i`
+**Install**: `pkgx angular.dev`
 
 ---
 
-### [classicyarnpkgcom](../packages/classicyarnpkgcom.md) (+classic.yarnpkg.com -- $SHELL -i)
+### [bunsh](../packages/bunsh.md) ()
 
-The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
+Crafters of fine Open Source products
 
-**Programs**: yarn, yarnpkg
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i`
-
----
-
-### [denoland](../packages/denoland.md) (deno)
-
-A modern runtime for JavaScript and TypeScript.
-
-**Programs**: deno
-
-**Install**: `sh <(curl https://pkgx.sh) deno`
+**Install**: `pkgx bun.sh`
 
 ---
 
-### [expodev](../packages/expodev.md)
+### [classicyarnpkgcom](../packages/classicyarnpkgcom.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx classic.yarnpkg.com`
+
+---
+
+### [denoland](../packages/denoland.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx deno.land`
+
+---
+
+### [expodev](../packages/expodev.md) ()
+
+Go home.
 
 **Programs**: None specified
 
@@ -54,73 +56,63 @@ A modern runtime for JavaScript and TypeScript.
 
 ---
 
-### [flutterdev](../packages/flutterdev.md) (+flutter.dev -- $SHELL -i)
+### [flutterdev](../packages/flutterdev.md) ()
 
-Flutter makes it easy and fast to build beautiful apps for mobile and beyond
+Crafters of fine Open Source products
 
-**Programs**: flutter, dart
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i`
-
----
-
-### [node](../packages/node.md) (node)
-
-Platform built on V8 to build network applications
-
-**Programs**: node
-
-**Install**: `sh <(curl https://pkgx.sh) node`
+**Install**: `pkgx flutter.dev`
 
 ---
 
-### [nodejsorg](../packages/nodejsorg.md) (node)
+### [nodejsorg](../packages/nodejsorg.md) ()
 
-Platform built on V8 to build network applications
+Crafters of fine Open Source products
 
-**Programs**: node
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) node`
-
----
-
-### [npmjscom](../packages/npmjscom.md) (+npmjs.com -- $SHELL -i)
-
-the package manager for JavaScript
-
-**Programs**: npm, npx
-
-**Install**: `sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i`
+**Install**: `pkgx nodejs.org`
 
 ---
 
-### [pnpmio](../packages/pnpmio.md) (+pnpm.io -- $SHELL -i, pnp)
+### [npmjscom](../packages/npmjscom.md) ()
 
-Fast, disk space efficient package manager
+Crafters of fine Open Source products
 
-**Programs**: pnpm, pnpx
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i`
-
----
-
-### [vitejsdev](../packages/vitejsdev.md) (vite)
-
-Next generation frontend tooling. It's fast!
-
-**Programs**: vite
-
-**Install**: `sh <(curl https://pkgx.sh) vite`
+**Install**: `pkgx npmjs.com`
 
 ---
 
-### [yarnpkgcom](../packages/yarnpkgcom.md) (+yarnpkg.com -- $SHELL -i, yarn)
+### [pnpmio](../packages/pnpmio.md) ()
 
-📦🐈 Active development trunk for Yarn ⚒
+Crafters of fine Open Source products
 
-**Programs**: yarn, yarnpkg
+**Programs**: None specified
 
-**Install**: `sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i`
+**Install**: `pkgx pnpm.io`
+
+---
+
+### [vitejsdev](../packages/vitejsdev.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx vitejs.dev`
+
+---
+
+### [yarnpkgcom](../packages/yarnpkgcom.md) ()
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx yarnpkg.com`
 
 ---
 

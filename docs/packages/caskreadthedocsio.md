@@ -1,57 +1,26 @@
 # cask
 
-> Project management tool for Emacs
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `caskreadthedocsio`
 - **Name**: `cask`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cask.readthedocs.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) cask
+pkgx cask.readthedocs.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cask`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `cask`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.9.0`
-
-</details>
-
-**Latest Version**: `0.9.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx cask@0.9.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/coreutils`
-- `gnu.org/emacs`
+*No programs specified*
 
 ## Usage Examples
 
@@ -68,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cask.readthedocs.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

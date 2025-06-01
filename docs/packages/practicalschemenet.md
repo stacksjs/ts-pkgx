@@ -1,11 +1,11 @@
-# practical-scheme.net
+# practicalschemenet
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `practicalschemenet`
-- **Name**: `practical-scheme.net`
+- **Name**: `practicalschemenet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

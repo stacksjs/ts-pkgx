@@ -1,53 +1,26 @@
-# liblmdb
+# openldaporgliblmdb
 
-> Lightning memory-mapped database: key-value data store
+> Go home.
 
 ## Package Information
 
 - **Domain**: `openldaporgliblmdb`
-- **Name**: `liblmdb`
+- **Name**: `openldaporgliblmdb`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/liblmdb/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openldap.org/liblmdb -- $SHELL -i
+pkgx openldap.org-liblmdb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mdb_copy`
-- `mdb_dump`
-- `mdb_load`
-- `mdb_stat`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `liblmdb`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.9.33`
-
-</details>
-
-**Latest Version**: `0.9.33`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx liblmdb@0.9.33
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -64,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/liblmdb/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

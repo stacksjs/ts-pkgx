@@ -1,11 +1,11 @@
-# digip.org
+# digiporg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `digiporg`
-- **Name**: `digip.org`
+- **Name**: `digiporg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

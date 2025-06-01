@@ -1,51 +1,26 @@
 # aux4
 
-> elevate your imagination
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `aux4io`
 - **Name**: `aux4`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aux4.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) aux4
+pkgx aux4.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `aux4`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `aux4`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `5.0.14`, `5.0.11`, `5.0.10`, `5.0.9`, `5.0.8`
-- `5.0.3`
-
-</details>
-
-**Latest Version**: `5.0.14`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx aux4@5.0.14
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/aux4.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

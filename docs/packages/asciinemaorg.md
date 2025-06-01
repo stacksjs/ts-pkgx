@@ -1,56 +1,26 @@
 # asciinema
 
-> Record and share terminal sessions
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `asciinemaorg`
 - **Name**: `asciinema`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) asciinema
+pkgx asciinema.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `asciinema`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `asciinema`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.4.0`
-
-</details>
-
-**Latest Version**: `2.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx asciinema@2.4.0
-```
-
-## Dependencies
-
-This package depends on:
-
-- `python.org^3.12`
+*No programs specified*
 
 ## Usage Examples
 
@@ -67,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

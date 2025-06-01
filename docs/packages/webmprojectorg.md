@@ -1,11 +1,11 @@
-# webmproject.org
+# webmprojectorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `webmprojectorg`
-- **Name**: `webmproject.org`
+- **Name**: `webmprojectorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

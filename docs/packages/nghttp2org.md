@@ -1,19 +1,19 @@
 # nghttp2.org
 
-> nghttp2 - HTTP/2 C Library and tools
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `nghttp2org`
 - **Name**: `nghttp2.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nghttp2.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i
+pkgx nghttp2.org
 ```
 
 ## Programs
@@ -21,33 +21,6 @@ sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+nghttp2.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 17 versions</summary>
-
-- `1.65.0`, `1.64.0`, `1.63.0`, `1.62.1`, `1.62.0`
-- `1.61.0`, `1.60.0`, `1.59.0`, `1.58.0`, `1.57.0`
-- `1.56.0`, `1.55.1`, `1.55.0`, `1.54.0`, `1.53.0`
-- `1.52.0`, `1.51.0`
-
-</details>
-
-**Latest Version**: `1.65.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx nghttp2.org@1.65.0
-```
 
 ## Usage Examples
 
@@ -64,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nghttp2.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

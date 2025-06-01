@@ -1,11 +1,11 @@
-# dystroy.org
+# dystroyorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `dystroyorg`
-- **Name**: `dystroy.org`
+- **Name**: `dystroyorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

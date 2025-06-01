@@ -1,11 +1,11 @@
-# rockdaboot.github.io
+# rockdabootgithubio
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `rockdabootgithubio`
-- **Name**: `rockdaboot.github.io`
+- **Name**: `rockdabootgithubio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

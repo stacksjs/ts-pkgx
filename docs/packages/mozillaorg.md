@@ -1,11 +1,11 @@
-# mozilla.org
+# mozillaorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `mozillaorg`
-- **Name**: `mozilla.org`
+- **Name**: `mozillaorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

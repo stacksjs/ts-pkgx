@@ -1,58 +1,26 @@
 # httpie.io
 
-> 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `httpieio`
 - **Name**: `httpie.io`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/httpie.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +httpie.io -- $SHELL -i
+pkgx httpie.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `http`
-- `httpie`
-- `https`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+httpie.io -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `3.2.4`, `3.2.3`, `3.2.2`, `3.2.1`
-
-</details>
-
-**Latest Version**: `3.2.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx httpie.io@3.2.4
-```
-
-## Dependencies
-
-This package depends on:
-
-- `python.org>=3<3.12`
+*No programs specified*
 
 ## Usage Examples
 
@@ -69,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/httpie.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

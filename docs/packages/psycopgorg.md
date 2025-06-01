@@ -1,11 +1,11 @@
-# psycopg.org
+# psycopgorg
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `psycopgorg`
-- **Name**: `psycopg.org`
+- **Name**: `psycopgorg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

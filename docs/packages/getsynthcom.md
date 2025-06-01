@@ -1,50 +1,26 @@
 # synth
 
-> The Declarative Data Generator
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `getsynthcom`
 - **Name**: `synth`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getsynth.com/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) synth
+pkgx getsynth.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `synth`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `synth`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.6.9`
-
-</details>
-
-**Latest Version**: `0.6.9`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx synth@0.6.9
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -61,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/getsynth.com/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

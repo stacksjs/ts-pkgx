@@ -1,12 +1,9 @@
 /**
- * **flipt** - Enterprise-ready, GitOps enabled, CloudNative feature management solution
+ * **flipt** - Crafters of fine Open Source products
  *
  * @domain `flipt.io`
- * @programs `flipt`
- * @version `1.58.3` (37 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/flipt-io.md
  *
- * @install `sh <(curl https://pkgx.sh) flipt`
+ * @install `pkgx flipt.io`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.fliptio
  * console.log(pkg.name)        // "flipt"
- * console.log(pkg.description) // "Enterprise-ready, GitOps enabled, CloudNative f..."
- * console.log(pkg.programs)    // ["flipt"]
- * console.log(pkg.versions[0]) // "1.58.3" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/flipt-io.md
@@ -28,75 +23,25 @@ export const fliptioPackage = {
    */
   name: 'flipt' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/flipt.io/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'flipt.io' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Enterprise-ready, GitOps enabled, CloudNative feature management solution' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/flipt.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'flipt.io' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) flipt' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'flipt',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.58.3',
-    '1.58.2',
-    '1.58.1',
-    '1.58.0',
-    '1.57.0',
-    '1.56.0',
-    '1.55.1',
-    '1.55.0',
-    '1.54.2',
-    '1.54.1',
-    '1.54.0',
-    '1.53.2',
-    '1.53.1',
-    '1.53.0',
-    '1.52.2',
-    '1.52.1',
-    '1.52.0',
-    '1.51.1',
-    '1.51.0',
-    '1.50.1',
-    '1.50.0',
-    '1.49.2',
-    '1.49.1',
-    '1.49.0',
-    '1.48.1',
-    '1.48.0',
-    '1.47.1',
-    '1.47.0',
-    '1.46.3',
-    '1.46.2',
-    '1.46.1',
-    '1.46.0',
-    '1.45.2',
-    '1.45.1',
-    '1.45.0',
-    '1.44.1',
-    '1.44.0',
-  ] as const,
-  fullPath: 'flipt.io' as const,
+  installCommand: 'pkgx flipt.io' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type FliptioPackage = typeof fliptioPackage

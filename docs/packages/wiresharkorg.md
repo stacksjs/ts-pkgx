@@ -1,85 +1,26 @@
 # wireshark.org
 
-> Network analyzer and capture tool - without graphical user interface
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `wiresharkorg`
 - **Name**: `wireshark.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wireshark.org/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +wireshark.org -- $SHELL -i
+pkgx wireshark.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `capinfos`
-- `captype`
-- `dumpcap`
-- `editcap`
-- `idl2wrs`
-- `mergecap`
-- `mmdbresolve`
-- `randpkt`
-- `rawshark`
-- `reordercap`
-- `sharkd`
-- `text2pcap`
-- `tshark`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+wireshark.org -- $SHELL -i`
-
-## Available Versions
-
-<details>
-<summary>Show all 30 versions</summary>
-
-- `4.4.6`, `4.4.5`, `4.4.4`, `4.4.3`, `4.4.2`
-- `4.4.1`, `4.4.0`, `4.3.1`, `4.3.0`, `4.2.11`
-- `4.2.10`, `4.2.9`, `4.2.8`, `4.2.7`, `4.2.5`
-- `4.2.3`, `4.2.2`, `4.2.1`, `4.2.0`, `4.0.17`
-- `4.0.16`, `4.0.15`, `4.0.14`, `4.0.13`, `4.0.12`
-- `3.6.24`, `3.6.23`, `3.6.22`, `3.6.21`, `3.6.20`
-
-</details>
-
-**Latest Version**: `4.4.6`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx wireshark.org@4.4.6
-```
-
-## Dependencies
-
-This package depends on:
-
-- `c-ares.org^1.23`
-- `gnome.org/glib^2.78.3`
-- `gnutls.org^3.8.2`
-- `gnupg.org/libgcrypt^1.10.3`
-- `gnupg.org/libgpg-error^1.47`
-- `github.com/maxmind/libmaxminddb^1.8`
-- `nghttp2.org^1.58`
-- `ibr.cs.tu-bs.de/libsmi^0.4.8`
-- `libssh.org^0.10.5`
-- `lua.org^5.4`
-- `github.com/xiph/speexdsp^1.2.1`
-- `tcpdump.org^1.10.4`
-- `gnome.org/libxml2^2.12.3`
+*No programs specified*
 
 ## Usage Examples
 
@@ -96,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/wireshark.org/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,12 +1,9 @@
 /**
- * **changie** - Automated changelog tool for preparing releases with lots of customization options
+ * **changie** - Crafters of fine Open Source products
  *
  * @domain `changie.dev`
- * @programs `changie`
- * @version `1.21.1` (7 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/changie-dev.md
  *
- * @install `sh <(curl https://pkgx.sh) changie`
+ * @install `pkgx changie.dev`
  *
  * @example
  * ```typescript
@@ -14,9 +11,7 @@
  *
  * const pkg = pantry.changiedev
  * console.log(pkg.name)        // "changie"
- * console.log(pkg.description) // "Automated changelog tool for preparing releases..."
- * console.log(pkg.programs)    // ["changie"]
- * console.log(pkg.versions[0]) // "1.21.1" (latest)
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/changie-dev.md
@@ -28,45 +23,25 @@ export const changiedevPackage = {
    */
   name: 'changie' as const,
   /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/changie.dev/' as const,
+  /**
    * The canonical domain name for this package.
    */
   domain: 'changie.dev' as const,
-  /**
-   * Brief description of what this package does.
-   */
-  description: 'Automated changelog tool for preparing releases with lots of customization options' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/changie.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  fullPath: 'changie.dev' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) changie' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'changie',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.21.1',
-    '1.21.0',
-    '1.20.1',
-    '1.20.0',
-    '1.19.1',
-    '1.19.0',
-    '1.18.0',
-  ] as const,
-  fullPath: 'changie.dev' as const,
+  installCommand: 'pkgx changie.dev' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type ChangiedevPackage = typeof changiedevPackage

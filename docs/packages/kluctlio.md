@@ -1,52 +1,26 @@
 # kluctl
 
-> The missing glue to put together large Kubernetes deployments, composed of multiple smaller parts (Helm/Kustomize/...)  in a manageable and unified way.
+> Crafters of fine Open Source products
 
 ## Package Information
 
 - **Domain**: `kluctlio`
 - **Name**: `kluctl`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kluctl.io/package.yml)
+- **Source**: [View on GitHub](#)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) kluctl
+pkgx kluctl.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `kluctl`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `kluctl`
-
-## Available Versions
-
-<details>
-<summary>Show all 14 versions</summary>
-
-- `2.26.0`, `2.25.1`, `2.25.0`, `2.24.1`, `2.24.0`
-- `2.23.5`, `2.23.4`, `2.23.3`, `2.23.2`, `2.23.1`
-- `2.23.0`, `2.22.1`, `2.22.0`, `2.21.2`
-
-</details>
-
-**Latest Version**: `2.26.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-pkgx kluctl@2.26.0
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -63,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kluctl.io/package.yml)
+- [Package Source](#)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

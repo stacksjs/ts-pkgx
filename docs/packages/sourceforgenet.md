@@ -1,11 +1,11 @@
-# sourceforge.net
+# sourceforgenet
 
->
+> Go home.
 
 ## Package Information
 
 - **Domain**: `sourceforgenet`
-- **Name**: `sourceforge.net`
+- **Name**: `sourceforgenet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 
