@@ -16155,7 +16155,7 @@ export interface Pantry {
    *
    * @domain `vim.org`
    * @programs `vim`, `vi`
-   * @version `9.1.1421` (1996 versions available)
+   * @version `9.1.1423` (1998 versions available)
    * @install `sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i`
    * @dependencies `python.org~3.11`, `lua.org>=5.4`, `invisible-island.net/ncurses>=6.3`, ... (+2 more)
    *
@@ -16167,7 +16167,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "vim.org"
    * console.log(pkg.description) // "The official Vim repository"
    * console.log(pkg.programs)    // ["vim", "vi"]
-   * console.log(pkg.versions[0]) // "9.1.1421"
+   * console.log(pkg.versions[0]) // "9.1.1423"
    * ```
    */
   vimorg: vim_org.VimorgPackage
