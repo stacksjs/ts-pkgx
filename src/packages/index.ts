@@ -4090,7 +4090,7 @@ export interface Pantry {
    *
    * @domain `dozzle.dev`
    * @programs `dozzle`
-   * @version `8.12.19` (56 versions available)
+   * @version `8.12.20` (57 versions available)
    * @install `sh <(curl https://pkgx.sh) dozzle`
    * @aliases `dozzle`
    *
@@ -4102,7 +4102,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "dozzle"
    * console.log(pkg.description) // "Realtime log viewer for docker containers."
    * console.log(pkg.programs)    // ["dozzle"]
-   * console.log(pkg.versions[0]) // "8.12.19"
+   * console.log(pkg.versions[0]) // "8.12.20"
    * ```
    */
   dozzledev: dozzle_dev.DozzlePackage
@@ -4936,7 +4936,7 @@ export interface Pantry {
    * **fna-xna.github.io** - FAudio - Accuracy-focused XAudio reimplementation for open platforms
    *
    * @domain `fna/xna.github.io`
-   * @version `25.5.0` (17 versions available)
+   * @version `25.6.0` (18 versions available)
    * @install `sh <(curl https://pkgx.sh) +fna-xna.github.io -- $SHELL -i`
    * @dependencies `libsdl.org^2.28`
    *
@@ -4947,7 +4947,7 @@ export interface Pantry {
    * const pkg = pantry.fnaxnagithubio
    * console.log(pkg.name)        // "fna-xna.github.io"
    * console.log(pkg.description) // "FAudio - Accuracy-focused XAudio reimplementati..."
-   * console.log(pkg.versions[0]) // "25.5.0"
+   * console.log(pkg.versions[0]) // "25.6.0"
    * ```
    */
   fnaxnagithubio: fna_xna_github_io.FnaxnagithubioPackage
@@ -12329,7 +12329,7 @@ export interface Pantry {
    *
    * @domain `postgrest.org`
    * @programs `postgrest`
-   * @version `13.0.0` (11 versions available)
+   * @version `13.0.1` (12 versions available)
    * @install `sh <(curl https://pkgx.sh) postgrest`
    * @aliases `postgrest`
    * @dependencies `postgresql.org/libpq@17`, `zlib.net~1.3`, `gnu.org/gcc/libstdcxx@14`
@@ -12342,7 +12342,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "postgrest"
    * console.log(pkg.description) // "Serves a fully RESTful API from any existing Po..."
    * console.log(pkg.programs)    // ["postgrest"]
-   * console.log(pkg.versions[0]) // "13.0.0"
+   * console.log(pkg.versions[0]) // "13.0.1"
    * ```
    */
   postgrestorg: postgrest_org.PostgrestPackage

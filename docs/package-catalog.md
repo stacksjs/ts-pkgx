@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 527
 - **Categories**: 13
-- **Last Updated**: 2025-06-01T14:33:17.547Z
+- **Last Updated**: 2025-06-01T15:33:46.315Z
 
 ## Table of Contents
 
@@ -274,7 +274,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dotenvlintergithubio](./packages/dotenvlintergithubio.md)** (dotenv-linter) | ⚡️Lightning-fast linter for .env files. Written in Rust 🦀 | dotenv-linter | 3.3.0 (+0) | `pkgx dotenv-linter` |
 | **[dotnetmicrosoftcom](./packages/dotnetmicrosoftcom.md)** (dotnet) | Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET... | dotnet | 9.0.202 (+31) | `pkgx dotnet` |
 | **[doxygennl](./packages/doxygennl.md)** (doxygen) | Generate documentation for several programming languages | doxygen | 1.14.0 (+9) | `pkgx doxygen` |
-| **[dozzledev](./packages/dozzledev.md)** (dozzle) | Realtime log viewer for docker containers. | dozzle | 8.12.19 (+55) | `pkgx dozzle` |
+| **[dozzledev](./packages/dozzledev.md)** (dozzle) | Realtime log viewer for docker containers. | dozzle | 8.12.20 (+56) | `pkgx dozzle` |
 | **[dprintdev](./packages/dprintdev.md)** (dprint) | Pluggable and configurable code formatting platform written in Rust. | dprint | 0.50.0 (+26) | `pkgx dprint` |
 | **[duktapeorg](./packages/duktapeorg.md)** (duk) | Duktape - embeddable Javascript engine with a focus on portability and compact footprint | duk | 2.7.0 (+0) | `pkgx duk` |
 | **[edgedbcom](./packages/edgedbcom.md)** (edgedb) | The EdgeDB CLI | edgedb | 7.5.1 (+35) | `pkgx edgedb` |
@@ -297,7 +297,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[fluentciio](./packages/fluentciio.md)** (fluentci) | Set up and run your CI locally or in any CI Provider in a consistent way https://backdropbuild.co... | fluentci | 0.16.5 (+67) | `pkgx fluentci` |
 | **[flywaydborg](./packages/flywaydborg.md)** (flyway) | Database version control to control migrations | flyway | 11.8.2 (+40) | `pkgx flyway` |
 | **[fmtdev](./packages/fmtdev.md)** () | A modern formatting library | - | 11.2.0 (+14) | `pkgx fmt.dev` |
-| **[fnaxnagithubio](./packages/fnaxnagithubio.md)** () | FAudio - Accuracy-focused XAudio reimplementation for open platforms | - | 25.5.0 (+16) | `pkgx fna-xna.github.io` |
+| **[fnaxnagithubio](./packages/fnaxnagithubio.md)** () | FAudio - Accuracy-focused XAudio reimplementation for open platforms | - | 25.6.0 (+17) | `pkgx fna-xna.github.io` |
 | **[freeglutsourceforgeio](./packages/freeglutsourceforgeio.md)** () | Free implementation of the OpenGL Utility Toolkit (GLUT) | - | 3.6.0 (+1) | `pkgx freeglut.sourceforge.io` |
 | **[freetdsorg](./packages/freetdsorg.md)** () | Libraries to talk to Microsoft SQL Server and Sybase databases | bsqldb, bsqlodbc, datacopy, ... (+6) | 1.5.2 (+30) | `pkgx freetds.org` |
 | **[furyco](./packages/furyco.md)** (fury) | Gemfury CLI | fury | 0.23.0 (+2) | `pkgx fury` |
@@ -508,7 +508,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[pocketbaseio](./packages/pocketbaseio.md)** (pocketbase) | Open source backend for your next project in 1 file | pocketbase | 0.28.2 (+79) | `pkgx pocketbase` |
 | **[poktnetwork](./packages/poktnetwork.md)** (pocket) | Official implementation of the Pocket Network Protocol | pocket | 0.12.0 (+7) | `pkgx pocket` |
 | **[portaudiocom](./packages/portaudiocom.md)** (PortAudio) | PortAudio is a cross-platform, open-source C language library for real-time audio input and output. | - | 19.7.0 (+0) | `pkgx PortAudio` |
-| **[postgrestorg](./packages/postgrestorg.md)** (postgrest) | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 13.0.0 (+10) | `pkgx postgrest` |
+| **[postgrestorg](./packages/postgrestorg.md)** (postgrest) | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 13.0.1 (+11) | `pkgx postgrest` |
 | **[precommitcom](./packages/precommitcom.md)** (pre-commit) | A framework for managing and maintaining multi-language pre-commit hooks. | pre-commit | 4.2.0 (+21) | `pkgx pre-commit` |
 | **[prefixdev](./packages/prefixdev.md)** (pixi) | Package management made easy | pixi | 0.47.0 (+79) | `pkgx pixi` |
 | **[projectcopaceticgithubio](./packages/projectcopaceticgithubio.md)** (copa) | Tool to directly patch container images given the vulnerability scanning results | copa | 0.10.0 (+4) | `pkgx copa` |

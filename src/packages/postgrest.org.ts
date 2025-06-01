@@ -3,7 +3,7 @@
  *
  * @domain `postgrest.org`
  * @programs `postgrest`
- * @version `13.0.0` (11 versions available)
+ * @version `13.0.1` (12 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/postgrest-org.md
  *
  * @install `sh <(curl https://pkgx.sh) postgrest`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "postgrest"
  * console.log(pkg.description) // "Serves a fully RESTful API from any existing Po..."
  * console.log(pkg.programs)    // ["postgrest"]
- * console.log(pkg.versions[0]) // "13.0.0" (latest)
+ * console.log(pkg.versions[0]) // "13.0.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/postgrest-org.md
@@ -71,6 +71,7 @@ export const postgrestPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '13.0.1',
     '13.0.0',
     '12.2.12',
     '12.2.11',
