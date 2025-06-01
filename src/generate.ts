@@ -569,8 +569,15 @@ export async function generateIndex(): Promise<string | null> {
     let interfaceDecl = 'export interface Pantry {\n'
     let pantry = 'export const pantry: Pantry = {\n'
 
+    // Sort package files alphabetically for consistent import order
+    const sortedPackageFiles = packageFiles.sort((a, b) => {
+      const moduleA = path.basename(a, '.ts')
+      const moduleB = path.basename(b, '.ts')
+      return moduleA.localeCompare(moduleB)
+    })
+
     // Process each package file
-    for (const file of packageFiles) {
+    for (const file of sortedPackageFiles) {
       const moduleName = path.basename(file, '.ts')
       const moduleVarName = toSafeVarName(moduleName)
       const packageVarName = toPackageVarName(moduleName)
@@ -702,12 +709,27 @@ export async function generateIndex(): Promise<string | null> {
     if (sortedAliases.length > 0) {
       interfaceDecl += '  // Alias properties for convenience\n'
 
+      // Track used property names to avoid duplicates
+      const usedPropertyNames = new Set<string>()
+
+      // Add all domain variable names to the used set
+      Object.values(domainToVarName).forEach(varName => usedPropertyNames.add(varName))
+
       for (const [originalAlias, targetVarName] of sortedAliases) {
         const targetDomain = Object.keys(domainToVarName).find(d => domainToVarName[d] === targetVarName)
         const pkgData = pantryData[targetVarName] || (targetDomain ? pantryData[convertDomainToVarName(targetDomain)] : null)
 
         // Convert the original alias to a safe property name
         const aliasVarName = convertDomainToVarName(originalAlias)
+
+        // Check if this property name is already used (avoid duplicates)
+        if (usedPropertyNames.has(aliasVarName)) {
+          console.log(`Skipping duplicate alias property: ${aliasVarName} for ${originalAlias}`)
+          continue
+        }
+
+        // Mark this property name as used
+        usedPropertyNames.add(aliasVarName)
 
         // Check if the alias variable name is a valid JavaScript identifier
         const isValidIdentifier = /^[a-z_$][\w$]*$/i.test(aliasVarName)
