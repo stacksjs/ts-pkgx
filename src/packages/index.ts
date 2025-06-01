@@ -10925,7 +10925,7 @@ export interface Pantry {
    *
    * @domain `ohmyposh.dev`
    * @programs `oh-my-posh`
-   * @version `26.0.5` (277 versions available)
+   * @version `26.1.0` (278 versions available)
    * @install `sh <(curl https://pkgx.sh) oh-my-posh`
    * @aliases `oh-my-posh`
    *
@@ -10937,7 +10937,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "oh-my-posh"
    * console.log(pkg.description) // "The most customisable and low-latency cross pla..."
    * console.log(pkg.programs)    // ["oh-my-posh"]
-   * console.log(pkg.versions[0]) // "26.0.5"
+   * console.log(pkg.versions[0]) // "26.1.0"
    * ```
    */
   ohmyposhdev: ohmyposh_dev.OhmyposhPackage

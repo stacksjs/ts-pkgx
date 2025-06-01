@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 527
 - **Categories**: 13
-- **Last Updated**: 2025-06-01T15:33:46.315Z
+- **Last Updated**: 2025-06-01T16:34:30.102Z
 
 ## Table of Contents
 
@@ -469,7 +469,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[nushellsh](./packages/nushellsh.md)** (nu) | Modern shell for the GitHub era | nu | 0.104.1 (+45) | `pkgx nu` |
 | **[oauth2proxygithubio](./packages/oauth2proxygithubio.md)** (oauth2-proxy) | A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more ide... | oauth2-proxy | 7.9.0 (+6) | `pkgx oauth2-proxy` |
 | **[odigosio](./packages/odigosio.md)** (odigos) | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.189 (+173) | `pkgx odigos` |
-| **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.0.5 (+276) | `pkgx oh-my-posh` |
+| **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.1.0 (+277) | `pkgx oh-my-posh` |
 | **[ollamaai](./packages/ollamaai.md)** (ollama) | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.0 (+96) | `pkgx ollama` |
 | **[onefetchdev](./packages/onefetchdev.md)** (onefetch) | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch` |
 | **[openapigeneratortech](./packages/openapigeneratortech.md)** (openapi-generator) | OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, docum... | openapi-generator | 7.13.0 (+11) | `pkgx openapi-generator` |
