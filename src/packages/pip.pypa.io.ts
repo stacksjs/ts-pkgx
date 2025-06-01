@@ -5,6 +5,7 @@
  * @programs `pip`, `pip3.8`, `pip3.9`, `pip3.10`, `pip3.11`
  * @version `25.1.1` (27 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pip-pypa-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i`
  * @dependencies `pkgx.sh^1`
  *

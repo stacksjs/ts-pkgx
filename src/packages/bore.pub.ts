@@ -5,6 +5,7 @@
  * @programs `bore`
  * @version `0.5.3` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bore-pub.md
+ *
  * @install `sh <(curl https://pkgx.sh) bore`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `turso`
  * @version `1.0.10` (89 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/turso-tech.md
+ *
  * @install `sh <(curl https://pkgx.sh) turso`
  *
  * @example

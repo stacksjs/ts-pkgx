@@ -5,6 +5,7 @@
  * @programs `quickwit`
  * @version `0.8.2` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/quickwit-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) quickwit`
  * @dependencies `protobuf.dev^25`
  *

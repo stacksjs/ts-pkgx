@@ -5,6 +5,7 @@
  * @programs `terratag`
  * @version `0.7.2` (18 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/terratag-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) terratag`
  * @dependencies `terraform.io>=0.12`, `curl.se/ca-certs`
  *

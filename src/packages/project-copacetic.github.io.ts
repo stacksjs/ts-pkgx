@@ -5,6 +5,7 @@
  * @programs `copa`
  * @version `0.10.0` (5 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/project-copacetic-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) copa`
  * @aliases `copa`
  *
@@ -15,7 +16,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.copa
  * // Or access via domain
- * const samePkg = pantry.project-copaceticgithubio
+ * const samePkg = pantry.projectcopaceticgithubio
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "copa"
  * console.log(pkg.description) // "Tool to directly patch container images given t..."

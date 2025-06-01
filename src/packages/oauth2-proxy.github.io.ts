@@ -5,13 +5,14 @@
  * @programs `oauth2-proxy`
  * @version `7.9.0` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/oauth2-proxy-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) oauth2-proxy`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.oauth2-proxygithubio
+ * const pkg = pantry.oauth2proxygithubio
  * console.log(pkg.name)        // "oauth2-proxy"
  * console.log(pkg.description) // "A reverse proxy that provides authentication wi..."
  * console.log(pkg.programs)    // ["oauth2-proxy"]

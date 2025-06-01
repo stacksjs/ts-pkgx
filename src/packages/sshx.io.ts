@@ -5,6 +5,7 @@
  * @programs `sshx`
  * @version `2023.11.14` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sshx-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) sshx`
  * @dependencies `protobuf.dev`
  *

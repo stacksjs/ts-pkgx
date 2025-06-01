@@ -5,6 +5,7 @@
  * @programs `idevicedate`
  * @version `1.3.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libimobiledevice-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) idevicedate`
  * @aliases `idevicedate`
  * @dependencies `libimobiledevice.org/libplist^2.4`, `gnu.org/libtasn1^4.19`, `libimobiledevice.org/libusbmuxd^2`, ... (+1 more)

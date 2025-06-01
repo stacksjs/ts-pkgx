@@ -1,16 +1,66 @@
-export const cligithubcomPackage = {
+/**
+ * **gh** - GitHub’s official command line tool
+ *
+ * @domain `cli.github.com`
+ * @programs `gh`
+ * @version `2.74.0` (76 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cli-github-com.md
+ *
+ * @install `sh <(curl https://pkgx.sh) gh`
+ * @aliases `gh`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.gh
+ * // Or access via domain
+ * const samePkg = pantry.cligithubcom
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "gh"
+ * console.log(pkg.description) // "GitHub’s official command line tool"
+ * console.log(pkg.programs)    // ["gh"]
+ * console.log(pkg.versions[0]) // "2.74.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/cli-github-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const ghPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'gh' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'cli.github.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'GitHub’s official command line tool' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cli.github.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) gh' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'gh',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.74.0',
     '2.73.0',
@@ -89,10 +139,14 @@ export const cligithubcomPackage = {
     '2.21.2',
     '2.20.2',
   ] as const,
-  fullPath: 'cli.github.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'gh',
   ] as const,
+  fullPath: 'cli.github.com' as const,
 }
 
-export type CligithubcomPackage = typeof cligithubcomPackage
+export type GhPackage = typeof ghPackage

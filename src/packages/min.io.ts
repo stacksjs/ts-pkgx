@@ -5,6 +5,7 @@
  * @programs `minio`
  * @version `2023.10.25.6.33.25` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/min-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) minio`
  * @aliases `minio`
  *

@@ -5,6 +5,7 @@
  * @programs `tilt`
  * @version `0.34.5` (23 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tilt-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) tilt`
  *
  * @example

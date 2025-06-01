@@ -5,6 +5,7 @@
  * @programs `cstool`
  * @version `5.0.6` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/capstone-engine-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) cstool`
  * @aliases `cstool`
  *
@@ -15,7 +16,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.cstool
  * // Or access via domain
- * const samePkg = pantry.capstone-engineorg
+ * const samePkg = pantry.capstoneengineorg
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "cstool"
  * console.log(pkg.description) // "Capstone disassembly/disassembler framework for..."

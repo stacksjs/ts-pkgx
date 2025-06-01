@@ -5,6 +5,7 @@
  * @programs `mc`, `mcdiff`, `mcedit`, `mcview`
  * @version `4.8.33` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/midnight-commander-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +midnight-commander.org -- $SHELL -i`
  * @aliases `midnight commander`
  * @dependencies `invisible-island.net/ncurses`, `gnome.org/glib>=2.30`, `gnu.org/gettext>=0.18.2`
@@ -16,7 +17,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.midnightcommander
  * // Or access via domain
- * const samePkg = pantry.midnight-commanderorg
+ * const samePkg = pantry.midnightcommanderorg
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "Midnight Commander"
  * console.log(pkg.description) // "Terminal-based visual file manager"

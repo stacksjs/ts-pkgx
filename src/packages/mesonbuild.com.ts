@@ -5,6 +5,7 @@
  * @programs `meson`
  * @version `1.8.1` (27 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mesonbuild-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) meson`
  * @dependencies `pkgx.sh^1`
  *

@@ -5,6 +5,7 @@
  * @programs `jsonnet`, `jsonnetfmt`
  * @version `0.21.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jsonnet-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +jsonnet.org -- $SHELL -i`
  *
  * @example

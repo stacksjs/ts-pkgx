@@ -5,6 +5,7 @@
  * @programs `databricks`
  * @version `0.253.0` (52 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/databricks-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) databricks`
  *
  * @example

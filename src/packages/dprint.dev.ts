@@ -5,6 +5,7 @@
  * @programs `dprint`
  * @version `0.50.0` (27 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dprint-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) dprint`
  *
  * @example

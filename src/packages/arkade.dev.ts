@@ -5,6 +5,7 @@
  * @programs `arkade`
  * @version `0.11.39` (37 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/arkade-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) arkade`
  *
  * @example

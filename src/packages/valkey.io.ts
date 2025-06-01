@@ -5,6 +5,7 @@
  * @programs `valkey-server`, `valkey-cli`, `valkey-benchmark`
  * @version `8.1.1` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/valkey-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +valkey.io -- $SHELL -i`
  * @dependencies `openssl.org^1`
  *

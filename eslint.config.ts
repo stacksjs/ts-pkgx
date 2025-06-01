@@ -12,6 +12,8 @@ const config: ESLintConfig = stacks({
   yaml: true,
   ignores: [
     'fixtures/**',
+    'docs/advanced.md',
+    'docs/api-reference.md',
   ],
 })
 

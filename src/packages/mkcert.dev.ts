@@ -5,6 +5,7 @@
  * @programs `mkcert`
  * @version `1.4.4` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mkcert-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) mkcert`
  *
  * @example

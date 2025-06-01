@@ -5,6 +5,7 @@
  * @programs `sqlc`
  * @version `1.29.0` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sqlc-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) sqlc`
  *
  * @example

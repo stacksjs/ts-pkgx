@@ -5,6 +5,7 @@
  * @programs `cairo-trace`
  * @version `1.18.4` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cairographics-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) cairo-trace`
  * @aliases `cairo-trace`
  * @dependencies `libpng.org@1`, `pixman.org^0.40.0`, `freetype.org@2`, ... (+8 more)

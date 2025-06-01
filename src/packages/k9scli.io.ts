@@ -1,16 +1,66 @@
-export const k9scliioPackage = {
+/**
+ * **k9s** - 🐶 Kubernetes CLI To Manage Your Clusters In Style!
+ *
+ * @domain `k9scli.io`
+ * @programs `k9s`
+ * @version `0.50.6` (52 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/k9scli-io.md
+ *
+ * @install `sh <(curl https://pkgx.sh) k9s`
+ * @aliases `k9s`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.k9s
+ * // Or access via domain
+ * const samePkg = pantry.k9scliio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "k9s"
+ * console.log(pkg.description) // "🐶 Kubernetes CLI To Manage Your Clusters In St..."
+ * console.log(pkg.programs)    // ["k9s"]
+ * console.log(pkg.versions[0]) // "0.50.6" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/k9scli-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const k9sPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'k9s' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'k9scli.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: '🐶 Kubernetes CLI To Manage Your Clusters In Style!' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/k9scli.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) k9s' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'k9s',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.50.6',
     '0.50.5',
@@ -65,8 +115,14 @@ export const k9scliioPackage = {
     '0.27.4',
     '0.27.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'k9s',
+  ] as const,
   fullPath: 'k9scli.io' as const,
-  aliases: [] as const,
 }
 
-export type K9scliioPackage = typeof k9scliioPackage
+export type K9sPackage = typeof k9sPackage

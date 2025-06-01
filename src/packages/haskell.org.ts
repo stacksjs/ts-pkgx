@@ -5,6 +5,7 @@
  * @programs `ghc`, `ghc-{{version.marketing}}`, `ghc-{{version}}`, `ghc-pkg`, `ghc-pkg-{{version.marketing}}`, ... (+23 more)
  * @version `9.12.2` (19 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/haskell-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +haskell.org -- $SHELL -i`
  * @dependencies `gnu.org/gmp@6`, `invisible-island.net/ncurses@6`, `sourceware.org/libffi@3`, ... (+3 more)
  *

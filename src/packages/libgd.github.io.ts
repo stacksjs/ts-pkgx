@@ -5,6 +5,7 @@
  * @programs `bdftogd`, `gd2copypal`, `gd2togif`, `gdcmpgif`, `giftogd2`
  * @version `2.3.3` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libgd-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +libgd.github.io -- $SHELL -i`
  * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `libjpeg-turbo.org`, ... (+5 more)
  *

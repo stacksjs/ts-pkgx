@@ -5,6 +5,7 @@
  * @programs `deno`
  * @version `2.3.5` (131 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/deno-land.md
+ *
  * @install `sh <(curl https://pkgx.sh) deno`
  * @aliases `deno`
  * @companions `info-zip.org/unzip`

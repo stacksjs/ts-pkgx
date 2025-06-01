@@ -5,6 +5,7 @@
  * @programs `fluentci`
  * @version `0.16.5` (68 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fluentci-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) fluentci`
  * @dependencies `dagger.io^0.10`, `deno.land^1.42`, `charm.sh/glow^1.5.1`
  *

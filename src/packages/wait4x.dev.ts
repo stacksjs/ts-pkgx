@@ -5,6 +5,7 @@
  * @programs `wait4x`
  * @version `3.3.1` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wait4x-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) wait4x`
  * @companions `curl.se/ca-certs`
  *

@@ -1,18 +1,73 @@
-export const sentryioPackage = {
+/**
+ * **sentry-cli** - Command-line utility to interact with Sentry
+ *
+ * @domain `sentry.io`
+ * @programs `sentry-cli`
+ * @version `2.46.0` (45 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sentry-io.md
+ *
+ * @install `sh <(curl https://pkgx.sh) sentry-cli`
+ * @aliases `sentry-cli`
+ * @dependencies `libgit2.org~1.7`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.sentrycli
+ * // Or access via domain
+ * const samePkg = pantry.sentryio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "sentry-cli"
+ * console.log(pkg.description) // "Command-line utility to interact with Sentry"
+ * console.log(pkg.programs)    // ["sentry-cli"]
+ * console.log(pkg.versions[0]) // "2.46.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/sentry-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const sentrycliPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'sentry-cli' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'sentry.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Command-line utility to interact with Sentry' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sentry.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) sentry-cli' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'sentry-cli',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'libgit2.org~1.7',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.46.0',
     '2.45.0',
@@ -60,10 +115,14 @@ export const sentryioPackage = {
     '2.30.0',
     '2.29.1',
   ] as const,
-  fullPath: 'sentry.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'sentry-cli',
   ] as const,
+  fullPath: 'sentry.io' as const,
 }
 
-export type SentryioPackage = typeof sentryioPackage
+export type SentrycliPackage = typeof sentrycliPackage

@@ -5,6 +5,7 @@
  * @programs `curlie`
  * @version `1.8.2` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/curlie-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) curlie`
  *
  * @example

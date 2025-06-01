@@ -5,6 +5,7 @@
  * @programs `itstool`
  * @version `2.0.7` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/itstool-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) itstool`
  * @dependencies `gnome.org/libxml2`, `python.org~3.11`
  *

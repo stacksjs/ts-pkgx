@@ -5,6 +5,7 @@
  * @programs `cointop`
  * @version `1.6.10` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cointop-sh.md
+ *
  * @install `sh <(curl https://pkgx.sh) cointop`
  * @dependencies `curl.se/ca-certs`
  *

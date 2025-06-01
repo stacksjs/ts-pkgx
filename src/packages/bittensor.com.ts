@@ -4,6 +4,7 @@
  * @domain `bittensor.com`
  * @version `9.7.0` (63 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bittensor-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i`
  * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
  *

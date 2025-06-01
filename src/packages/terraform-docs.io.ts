@@ -5,13 +5,14 @@
  * @programs `terraform-docs`
  * @version `0.20.0` (5 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/terraform-docs-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) terraform-docs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.terraform-docsio
+ * const pkg = pantry.terraformdocsio
  * console.log(pkg.name)        // "terraform-docs"
  * console.log(pkg.description) // "Generate documentation from Terraform modules i..."
  * console.log(pkg.programs)    // ["terraform-docs"]

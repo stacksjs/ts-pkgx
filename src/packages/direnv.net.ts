@@ -5,6 +5,7 @@
  * @programs `direnv`
  * @version `2.36.0` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/direnv-net.md
+ *
  * @install `sh <(curl https://pkgx.sh) direnv`
  *
  * @example

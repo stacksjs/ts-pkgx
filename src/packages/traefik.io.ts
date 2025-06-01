@@ -5,6 +5,7 @@
  * @programs `traefik`
  * @version `3.4.1` (58 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/traefik-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) traefik`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `tesseract`
  * @version `5.5.1` (9 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tesseract-ocr-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) tesseract`
  * @dependencies `cairographics.org@1`, `unicode.org@71`, `leptonica.org`, ... (+2 more)
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tesseract-ocrgithubio
+ * const pkg = pantry.tesseractocrgithubio
  * console.log(pkg.name)        // "tesseract"
  * console.log(pkg.description) // "Tesseract Open Source OCR Engine (main repository)"
  * console.log(pkg.programs)    // ["tesseract"]

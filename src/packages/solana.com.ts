@@ -5,6 +5,7 @@
  * @programs `solana`, `solana-keygen`, `solana-bench-streamer`, `solana-faucet`, `solana-keygen`, ... (+5 more)
  * @version `1.18.26` (83 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/solana-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +solana.com -- $SHELL -i`
  * @dependencies `protobuf.dev^21`, `zlib.net^1.2`, `openssl.org^1.1`
  *

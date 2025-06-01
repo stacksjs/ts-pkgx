@@ -5,6 +5,7 @@
  * @programs `d2`
  * @version `0.7.0` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/d2lang-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) d2`
  *
  * @example

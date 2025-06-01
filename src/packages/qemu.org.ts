@@ -5,6 +5,7 @@
  * @programs `qemu-img`, `qemu-edid`, `qemu-io`, `qemu-nbd`, `qemu-storage-daemon`, ... (+29 more)
  * @version `10.0.2` (51 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/qemu-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +qemu.org -- $SHELL -i`
  * @dependencies `gnome.org/glib@2`, `capstone-engine.org^4`, `pixman.org^0`, ... (+7 more)
  *

@@ -5,6 +5,7 @@
  * @programs `yadm`
  * @version `3.5.0` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/yadm-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) yadm`
  * @dependencies `git-scm.org`, `gnu.org/bash`
  *

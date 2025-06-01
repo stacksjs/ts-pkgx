@@ -5,6 +5,7 @@
  * @programs `ollama`
  * @version `0.9.0` (97 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ollama-ai.md
+ *
  * @install `sh <(curl https://pkgx.sh) ollama`
  * @dependencies `curl.se/ca-certs`
  *

@@ -5,6 +5,7 @@
  * @programs `buf`
  * @version `1.54.0` (41 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/buf-build.md
+ *
  * @install `sh <(curl https://pkgx.sh) buf`
  *
  * @example

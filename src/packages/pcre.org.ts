@@ -5,6 +5,7 @@
  * @programs `pcre-config`, `pcregrep`, `pcretest`
  * @version `8.45.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pcre-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +pcre.org -- $SHELL -i`
  * @dependencies `sourceware.org/bzip2@1`, `zlib.net@1`
  *

@@ -5,6 +5,7 @@
  * @programs `rubocop`
  * @version `1.75.8` (24 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rubocop-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) rubocop`
  * @dependencies `ruby-lang.org>=3.1<3.3.7`, `rubygems.org`
  *

@@ -5,6 +5,7 @@
  * @programs `tinygo`
  * @version `0.37.0` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tinygo-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) tinygo`
  * @dependencies `go.dev`
  * @companions `llvm.org`

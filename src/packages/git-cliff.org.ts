@@ -5,6 +5,7 @@
  * @programs `git-cliff`
  * @version `2.8.0` (21 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/git-cliff-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) git-cliff`
  * @dependencies `libgit2.org~1.7`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.git-clifforg
+ * const pkg = pantry.gitclifforg
  * console.log(pkg.name)        // "git-cliff"
  * console.log(pkg.description) // "A highly customizable Changelog Generator that ..."
  * console.log(pkg.programs)    // ["git-cliff"]

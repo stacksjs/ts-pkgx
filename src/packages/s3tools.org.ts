@@ -5,6 +5,7 @@
  * @programs `s3cmd`
  * @version `2.4.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/s3tools-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) s3cmd`
  * @aliases `s3cmd`
  * @dependencies `python.org>=3<3.12`

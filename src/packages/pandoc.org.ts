@@ -5,6 +5,7 @@
  * @programs `pandoc`
  * @version `3.7.0.2` (31 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pandoc-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) pandoc`
  * @dependencies `gnu.org/gmp@6`, `zlib.net@1`, `sourceware.org/libffi@3`
  *

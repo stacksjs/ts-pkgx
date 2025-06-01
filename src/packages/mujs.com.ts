@@ -5,6 +5,7 @@
  * @programs `mujs`, `mujs-pp`
  * @version `1.3.6` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mujs-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +mujs.com -- $SHELL -i`
  * @dependencies `linuxgnu.org/readline~8.1invisible-island.net/ncurses`, `gnu.org/readline~8.1`, `invisible-island.net/ncurses`
  *

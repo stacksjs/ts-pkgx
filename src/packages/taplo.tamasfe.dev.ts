@@ -5,6 +5,7 @@
  * @programs `taplo`
  * @version `0.10.0` (5 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/taplo-tamasfe-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) taplo`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `daytona`
  * @version `0.100.0` (76 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/daytona-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) daytona`
  *
  * @example

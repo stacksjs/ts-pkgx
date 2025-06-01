@@ -5,6 +5,7 @@
  * @programs `kubebuilder`
  * @version `4.6.0` (18 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubebuilder-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) kubebuilder`
  *
  * @example

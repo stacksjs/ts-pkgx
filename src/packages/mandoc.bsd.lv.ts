@@ -5,6 +5,7 @@
  * @programs `bsdapropos`, `bsdman`, `bsdsoelim`, `bsdwhatis`, `demandoc`, ... (+1 more)
  * @version `1.14.6` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mandoc-bsd-lv.md
+ *
  * @install `sh <(curl https://pkgx.sh) +mandoc.bsd.lv -- $SHELL -i`
  * @dependencies `zlib.net`
  *

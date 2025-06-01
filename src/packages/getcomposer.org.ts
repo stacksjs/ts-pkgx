@@ -5,6 +5,7 @@
  * @programs `composer`, `composer.phar`
  * @version `2.8.9` (30 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getcomposer-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +getcomposer.org -- $SHELL -i`
  * @aliases `composer`
  * @dependencies `php.net`

@@ -5,6 +5,7 @@
  * @programs `mypy`, `mypyc`, `dmypy`
  * @version `1.16.0` (24 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mypy-lang-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +mypy-lang.org -- $SHELL -i`
  * @dependencies `pkgx.sh^1`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mypy-langorg
+ * const pkg = pantry.mypylangorg
  * console.log(pkg.name)        // "mypy-lang.org"
  * console.log(pkg.description) // "Experimental optional static type checker for P..."
  * console.log(pkg.programs)    // ["mypy", "mypyc", ...]

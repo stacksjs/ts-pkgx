@@ -5,6 +5,7 @@
  * @programs `tldr`
  * @version `1.6.1` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tldr-sh.md
+ *
  * @install `sh <(curl https://pkgx.sh) tldr`
  * @dependencies `linuxsourceware.org/bzip2^1`, `sourceware.org/bzip2^1`, `libzip.org^1.9.2`, ... (+1 more)
  *

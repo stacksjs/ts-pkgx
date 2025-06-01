@@ -5,6 +5,7 @@
  * @programs `mysql_client_test`, `my_print_defaults`, `myisam_ftdump`, `myisamchk`, `myisamlog`, ... (+26 more)
  * @version `9.3.0` (24 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mysql-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i`
  * @dependencies `unicode.org^71`, `libevent.org^2`, `lz4.org^1`, ... (+9 more)
  *

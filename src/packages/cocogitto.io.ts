@@ -5,6 +5,7 @@
  * @programs `cog`
  * @version `6.3.0` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cocogitto-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) cog`
  * @aliases `cog`
  * @dependencies `libgit2.org~1.7`

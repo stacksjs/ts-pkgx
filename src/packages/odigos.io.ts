@@ -5,6 +5,7 @@
  * @programs `odigos`
  * @version `1.0.189` (174 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/odigos-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) odigos`
  *
  * @example

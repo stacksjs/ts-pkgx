@@ -5,6 +5,7 @@
  * @programs `tailwindcss`
  * @version `4.1.8` (42 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tailwindcss-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) tailwindcss`
  *
  * @example

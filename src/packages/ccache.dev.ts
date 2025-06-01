@@ -5,6 +5,7 @@
  * @programs `ccache`
  * @version `4.11.3` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ccache-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) ccache`
  * @dependencies `github.com/redis/hiredis`, `facebook.com/zstd`
  *

@@ -5,6 +5,7 @@
  * @programs `task`
  * @version `3.43.3` (30 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/taskfile-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) task`
  *
  * @example

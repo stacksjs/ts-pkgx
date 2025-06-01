@@ -5,6 +5,7 @@
  * @programs `mitmproxy`
  * @version `12.1.1` (27 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mitmproxy-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) mitmproxy`
  * @dependencies `pkgx.sh^1`
  *

@@ -5,6 +5,7 @@
  * @programs `terraform`
  * @version `1.12.1` (74 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/terraform-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) terraform`
  *
  * @example

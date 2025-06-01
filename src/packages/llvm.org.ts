@@ -5,6 +5,7 @@
  * @programs `lld`, `clang`, `clang++`, `cc`, `c++`, ... (+9 more)
  * @version `20.1.6` (42 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/llvm-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +llvm.org -- $SHELL -i`
  * @dependencies `zlib.net@1`
  *

@@ -5,6 +5,7 @@
  * @programs `syncthing`
  * @version `1.29.6` (18 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/syncthing-net.md
+ *
  * @install `sh <(curl https://pkgx.sh) syncthing`
  *
  * @example

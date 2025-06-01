@@ -5,6 +5,7 @@
  * @programs `coredns`
  * @version `1.12.1` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/coredns-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) coredns`
  *
  * @example

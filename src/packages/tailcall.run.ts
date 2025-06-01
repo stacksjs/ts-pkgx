@@ -5,6 +5,7 @@
  * @programs `tailcall`
  * @version `1.6.11` (623 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tailcall-run.md
+ *
  * @install `sh <(curl https://pkgx.sh) tailcall`
  *
  * @example

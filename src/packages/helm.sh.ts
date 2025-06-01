@@ -5,6 +5,7 @@
  * @programs `helm`
  * @version `3.18.1` (32 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/helm-sh.md
+ *
  * @install `sh <(curl https://pkgx.sh) helm`
  *
  * @example

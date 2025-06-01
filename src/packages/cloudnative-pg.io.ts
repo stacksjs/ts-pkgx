@@ -5,6 +5,7 @@
  * @programs `kubectl-cnpg`
  * @version `1.26.0` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cloudnative-pg-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) kubectl-cnpg`
  * @aliases `kubectl-cnpg`
  *
@@ -15,7 +16,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.kubectlcnpg
  * // Or access via domain
- * const samePkg = pantry.cloudnative-pgio
+ * const samePkg = pantry.cloudnativepgio
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "kubectl-cnpg"
  * console.log(pkg.description) // "CloudNativePG is a comprehensive platform desig..."

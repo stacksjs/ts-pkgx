@@ -5,6 +5,7 @@
  * @programs `python`, `python{{ version.major }}`, `python{{ version.marketing }}`
  * @version `3.13.3` (145 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/python-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +python.org -- $SHELL -i`
  * @aliases `python`
  * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+8 more)

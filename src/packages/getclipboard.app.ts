@@ -5,6 +5,7 @@
  * @programs `cb`
  * @version `0.9.1` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getclipboard-app.md
+ *
  * @install `sh <(curl https://pkgx.sh) cb`
  * @aliases `cb`
  * @dependencies `openssl.org^1.1`, `linuxalsa-project.org/alsa-lib@1x.org/x11@1wayland.freedesktop.org@1gnu.org/gcc/libstdcxx@14`, `alsa-project.org/alsa-lib@1`, ... (+3 more)

@@ -5,6 +5,7 @@
  * @programs `4channels`, `dcraw_emu`, `dcraw_half`, `half_mt`, `mem_image`, ... (+6 more)
  * @version `0.21.4` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libraw-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +libraw.org -- $SHELL -i`
  * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `littlecms.com`, ... (+3 more)
  *

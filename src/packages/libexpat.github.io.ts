@@ -5,6 +5,7 @@
  * @programs `xmlwf`
  * @version `2.7.1` (9 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libexpat-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) xmlwf`
  * @aliases `xmlwf`
  *

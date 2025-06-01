@@ -5,6 +5,7 @@
  * @programs `digger`
  * @version `0.6.103` (187 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/digger-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) digger`
  *
  * @example

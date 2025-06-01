@@ -5,6 +5,7 @@
  * @programs `ipfs`
  * @version `0.35.0` (28 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ipfs-tech.md
+ *
  * @install `sh <(curl https://pkgx.sh) ipfs`
  *
  * @example

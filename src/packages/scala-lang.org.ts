@@ -5,6 +5,7 @@
  * @programs `scalac`, `scala`, `scala-cli`, `sbtn`, `amm`
  * @version `3.7.0` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/scala-lang-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +scala-lang.org -- $SHELL -i`
  * @dependencies `openjdk.org`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.scala-langorg
+ * const pkg = pantry.scalalangorg
  * console.log(pkg.name)        // "scala-lang.org"
  * console.log(pkg.description) // "The Scala 3 compiler, also known as Dotty."
  * console.log(pkg.programs)    // ["scalac", "scala", ...]

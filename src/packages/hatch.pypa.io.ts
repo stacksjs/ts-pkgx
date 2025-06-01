@@ -5,6 +5,7 @@
  * @programs `hatch`
  * @version `1.14.1` (18 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/hatch-pypa-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) hatch`
  * @dependencies `python.org>=3<3.12`
  *

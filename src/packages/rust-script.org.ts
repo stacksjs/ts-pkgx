@@ -5,6 +5,7 @@
  * @programs `rust-script`
  * @version `0.35.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rust-script-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) rust-script`
  * @companions `rust-lang.org`, `rust-lang.org/cargo`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.rust-scriptorg
+ * const pkg = pantry.rustscriptorg
  * console.log(pkg.name)        // "rust-script"
  * console.log(pkg.description) // "Run Rust files and expressions as scripts witho..."
  * console.log(pkg.programs)    // ["rust-script"]

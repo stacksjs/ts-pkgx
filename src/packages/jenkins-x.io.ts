@@ -5,6 +5,7 @@
  * @programs `jx`
  * @version `3.11.81` (55 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jenkins-x-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) jx`
  * @aliases `jenkins x`
  *
@@ -15,7 +16,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.jenkinsx
  * // Or access via domain
- * const samePkg = pantry.jenkins-xio
+ * const samePkg = pantry.jenkinsxio
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "Jenkins X"
  * console.log(pkg.description) // "Jenkins X provides automated CI+CD for Kubernet..."

@@ -1,16 +1,66 @@
-export const ohmyposhdevPackage = {
+/**
+ * **oh-my-posh** - The most customisable and low-latency cross platform/shell prompt renderer
+ *
+ * @domain `ohmyposh.dev`
+ * @programs `oh-my-posh`
+ * @version `26.0.5` (277 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ohmyposh-dev.md
+ *
+ * @install `sh <(curl https://pkgx.sh) oh-my-posh`
+ * @aliases `oh-my-posh`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.ohmyposh
+ * // Or access via domain
+ * const samePkg = pantry.ohmyposhdev
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "oh-my-posh"
+ * console.log(pkg.description) // "The most customisable and low-latency cross pla..."
+ * console.log(pkg.programs)    // ["oh-my-posh"]
+ * console.log(pkg.versions[0]) // "26.0.5" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/ohmyposh-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const ohmyposhPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'oh-my-posh' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'ohmyposh.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The most customisable and low-latency cross platform/shell prompt renderer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ohmyposh.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) oh-my-posh' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'oh-my-posh',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '26.0.5',
     '26.0.4',
@@ -290,10 +340,14 @@ export const ohmyposhdevPackage = {
     '19.8.1',
     '19.8.0',
   ] as const,
-  fullPath: 'ohmyposh.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
     'oh-my-posh',
   ] as const,
+  fullPath: 'ohmyposh.dev' as const,
 }
 
-export type OhmyposhdevPackage = typeof ohmyposhdevPackage
+export type OhmyposhPackage = typeof ohmyposhPackage

@@ -1,14 +1,58 @@
-export const openmpllvmorgPackage = {
+/**
+ * **+openmp.llvm.org -- $SHELL -i** - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
+ *
+ * @domain `openmp.llvm.org`
+ * @version `20.1.6` (32 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openmp-llvm-org.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +openmp.llvm.org -- $SHELL -i`
+ * @aliases `+openmp.llvm.org -- $SHELL -i`, `libomp`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.openmpllvmorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.openmpllvmorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "libomp"
+ * console.log(pkg.description) // "The LLVM Project is a collection of modular and..."
+ * console.log(pkg.versions[0]) // "20.1.6" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/openmp-llvm-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const openmpllvmorgSHELLiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'libomp' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'openmp.llvm.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openmp.llvm.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +openmp.llvm.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '20.1.6',
     '20.1.5',
@@ -43,10 +87,15 @@ export const openmpllvmorgPackage = {
     '17.0.0',
     '16.0.6',
   ] as const,
-  fullPath: 'openmp.llvm.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
+    '+openmp.llvm.org -- $SHELL -i',
     'libomp',
   ] as const,
+  fullPath: 'openmp.llvm.org' as const,
 }
 
-export type OpenmpllvmorgPackage = typeof openmpllvmorgPackage
+export type OpenmpllvmorgSHELLiPackage = typeof openmpllvmorgSHELLiPackage

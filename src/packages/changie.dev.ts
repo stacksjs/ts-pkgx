@@ -5,6 +5,7 @@
  * @programs `changie`
  * @version `1.21.1` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/changie-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) changie`
  *
  * @example

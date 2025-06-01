@@ -5,6 +5,7 @@
  * @programs `pinniped`
  * @version `0.39.0` (14 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pinniped-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) pinniped`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `temporal`
  * @version `1.3.0` (14 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/temporal-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) temporal`
  *
  * @example

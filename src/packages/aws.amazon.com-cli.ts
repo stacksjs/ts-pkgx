@@ -1,20 +1,79 @@
-export const awsamazoncomcliPackage = {
+/**
+ * **aws** - Universal Command Line Interface for Amazon Web Services
+ *
+ * @domain `aws.amazon.com/cli`
+ * @programs `aws`
+ * @version `2.27.26` (903 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/aws-amazon-com-cli.md
+ * @install `sh <(curl https://pkgx.sh) aws`
+ * @aliases `aws`, `aws/cli`
+ * @dependencies `sourceware.org/libffi^3`, `pkgx.sh^1`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.aws
+ * // Or access via domain
+ * const samePkg = pantry.awsamazoncomcli
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "aws/cli"
+ * console.log(pkg.description) // "Universal Command Line Interface for Amazon Web..."
+ * console.log(pkg.programs)    // ["aws"]
+ * console.log(pkg.versions[0]) // "2.27.26" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/aws-amazon-com-cli.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const awsPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'aws/cli' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'aws.amazon.com/cli' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Universal Command Line Interface for Amazon Web Services' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/cli/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) aws' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'aws',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'sourceware.org/libffi^3',
     'pkgx.sh^1',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
+    '2.27.26',
+    '2.27.25',
+    '2.27.24',
+    '2.27.23',
+    '2.27.22',
     '2.27.21',
     '2.27.20',
     '2.27.19',
@@ -388,6 +447,11 @@ export const awsamazoncomcliPackage = {
     '2.11.7',
     '2.10.4',
     '2.10.3',
+    '1.40.26',
+    '1.40.25',
+    '1.40.24',
+    '1.40.23',
+    '1.40.22',
     '1.40.21',
     '1.40.20',
     '1.40.19',
@@ -909,11 +973,15 @@ export const awsamazoncomcliPackage = {
     '1.27.103',
     '1.27.102',
   ] as const,
-  fullPath: 'aws.amazon.com/cli' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [
+    'aws',
     'aws/cli',
-    'cli',
   ] as const,
+  fullPath: 'aws.amazon.com/cli' as const,
 }
 
-export type AwsamazoncomcliPackage = typeof awsamazoncomcliPackage
+export type AwsPackage = typeof awsPackage

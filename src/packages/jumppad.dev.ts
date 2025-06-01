@@ -5,6 +5,7 @@
  * @programs `jumppad`
  * @version `0.20.1` (20 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jumppad-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) jumppad`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `git-quick-stats`
  * @version `2.5.8` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/git-quick-stats-sh.md
+ *
  * @install `sh <(curl https://pkgx.sh) git-quick-stats`
  * @dependencies `git-scm.org`, `gnu.org/bash`, `linuxgithub.com/util-linux/util-linux`, ... (+1 more)
  * @companions `gnu.org/coreutils`
@@ -13,7 +14,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.git-quick-statssh
+ * const pkg = pantry.gitquickstatssh
  * console.log(pkg.name)        // "git-quick-stats"
  * console.log(pkg.description) // "▁▅▆▃▅ Git quick statistics is a simple and effi..."
  * console.log(pkg.programs)    // ["git-quick-stats"]

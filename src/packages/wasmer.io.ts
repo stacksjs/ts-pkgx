@@ -5,6 +5,7 @@
  * @programs `wasmer`
  * @version `6.0.1` (23 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wasmer-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) wasmer`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `bitcoin-cli`, `bitcoin-tx`, `bitcoin-util`, `bitcoin-wallet`, `bitcoind`
  * @version `29.0.0` (16 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bitcoin-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i`
  * @dependencies `oracle.com/berkeley-db^18`, `boost.org^1`, `libevent.org^2`, ... (+4 more)
  *

@@ -5,6 +5,7 @@
  * @programs `msguntypot`, `po4a`, `po4a-display-man`, `po4a-display-pod`, `po4a-gettextize`, ... (+3 more)
  * @version `0.73.0` (5 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/po4a-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +po4a.org -- $SHELL -i`
  * @dependencies `gnu.org/gettext^0.22`, `perl.org^5.22`, `gnome.org/libxslt^1.1`
  *

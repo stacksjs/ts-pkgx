@@ -1,17 +1,67 @@
-export const astgrepgithubioPackage = {
+/**
+ * **+ast-grep.github.io -- $SHELL -i** - ⚡A CLI tool for code structural search, lint and rewriting. Written in Rust
+ *
+ * @domain `ast-grep.github.io`
+ * @programs `sg`, `ast-grep`
+ * @version `0.38.3` (80 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ast-grep-github-io.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +ast-grep.github.io -- $SHELL -i`
+ * @aliases `+ast-grep.github.io -- $SHELL -i`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.astgrepgithubioSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.astgrepgithubio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "ast-grep.github.io"
+ * console.log(pkg.description) // "⚡A CLI tool for code structural search, lint an..."
+ * console.log(pkg.programs)    // ["sg", "ast-grep"]
+ * console.log(pkg.versions[0]) // "0.38.3" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/ast-grep-github-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const astgrepgithubioSHELLiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'ast-grep.github.io' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'ast-grep.github.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: '⚡A CLI tool for code structural search, lint and rewriting. Written in Rust' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ast-grep.github.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +ast-grep.github.io -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'sg',
     'ast-grep',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.38.3',
     '0.38.2',
@@ -94,8 +144,14 @@ export const astgrepgithubioPackage = {
     '0.14.4',
     '0.14.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+ast-grep.github.io -- $SHELL -i',
+  ] as const,
   fullPath: 'ast-grep.github.io' as const,
-  aliases: [] as const,
 }
 
-export type AstgrepgithubioPackage = typeof astgrepgithubioPackage
+export type AstgrepgithubioSHELLiPackage = typeof astgrepgithubioSHELLiPackage

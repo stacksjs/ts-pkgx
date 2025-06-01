@@ -1,16 +1,67 @@
-export const groongaorgPackage = {
+/**
+ * **+groonga.org -- $SHELL -i** - An embeddable fulltext search engine. Groonga is the successor project to Senna.
+ *
+ * @domain `groonga.org`
+ * @programs `groonga`, `groonga-suggest-create-dataset`
+ * @version `15.0.9` (26 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/groonga-org.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +groonga.org -- $SHELL -i`
+ * @aliases `+groonga.org -- $SHELL -i`, `groonga`
+ * @dependencies `darwintaku910.github.io/mecabtaku910.github.io/mecab-ipadic`, `taku910.github.io/mecab`, `taku910.github.io/mecab-ipadic`, ... (+9 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.groongaorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.groongaorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "groonga"
+ * console.log(pkg.description) // "An embeddable fulltext search engine. Groonga i..."
+ * console.log(pkg.programs)    // ["groonga", "groonga-suggest-create-dataset"]
+ * console.log(pkg.versions[0]) // "15.0.9" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/groonga-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const groongaorgSHELLiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'groonga' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'groonga.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'An embeddable fulltext search engine. Groonga is the successor project to Senna.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/groonga.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +groonga.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'groonga',
     'groonga-suggest-create-dataset',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'darwintaku910.github.io/mecabtaku910.github.io/mecab-ipadic',
     'taku910.github.io/mecab',
@@ -25,6 +76,10 @@ export const groongaorgPackage = {
     'linuxgnome.org/glib',
     'gnome.org/glib',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '15.0.9',
     '15.0.4',
@@ -53,8 +108,15 @@ export const groongaorgPackage = {
     '13.0.7',
     '13.0.6',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+groonga.org -- $SHELL -i',
+    'groonga',
+  ] as const,
   fullPath: 'groonga.org' as const,
-  aliases: [] as const,
 }
 
-export type GroongaorgPackage = typeof groongaorgPackage
+export type GroongaorgSHELLiPackage = typeof groongaorgSHELLiPackage

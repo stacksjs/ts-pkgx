@@ -1,18 +1,73 @@
-export const symfonycomPackage = {
+/**
+ * **symfony** - The Symfony CLI tool
+ *
+ * @domain `symfony.com`
+ * @programs `symfony`
+ * @version `5.11.0` (49 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/symfony-com.md
+ *
+ * @install `sh <(curl https://pkgx.sh) symfony`
+ * @aliases `symfony`
+ * @dependencies `php.net`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.symfony
+ * // Or access via domain
+ * const samePkg = pantry.symfonycom
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "symfony"
+ * console.log(pkg.description) // "The Symfony CLI tool"
+ * console.log(pkg.programs)    // ["symfony"]
+ * console.log(pkg.versions[0]) // "5.11.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/symfony-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const symfonyPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'symfony' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'symfony.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The Symfony CLI tool' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) symfony' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'symfony',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'php.net',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '5.11.0',
     '5.10.9',
@@ -64,8 +119,14 @@ export const symfonycomPackage = {
     '5.5.8',
     '5.5.7',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'symfony',
+  ] as const,
   fullPath: 'symfony.com' as const,
-  aliases: [] as const,
 }
 
-export type SymfonycomPackage = typeof symfonycomPackage
+export type SymfonyPackage = typeof symfonyPackage

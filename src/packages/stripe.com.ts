@@ -1,16 +1,66 @@
-export const stripecomPackage = {
+/**
+ * **stripe** - A command-line tool for Stripe
+ *
+ * @domain `stripe.com`
+ * @programs `stripe`
+ * @version `1.27.0` (51 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/stripe-com.md
+ *
+ * @install `sh <(curl https://pkgx.sh) stripe`
+ * @aliases `stripe`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.stripe
+ * // Or access via domain
+ * const samePkg = pantry.stripecom
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "stripe"
+ * console.log(pkg.description) // "A command-line tool for Stripe"
+ * console.log(pkg.programs)    // ["stripe"]
+ * console.log(pkg.versions[0]) // "1.27.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/stripe-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const stripePackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'stripe' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'stripe.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'A command-line tool for Stripe' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/stripe.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) stripe' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'stripe',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.27.0',
     '1.26.1',
@@ -64,8 +114,14 @@ export const stripecomPackage = {
     '1.14.0',
     '1.13.12',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'stripe',
+  ] as const,
   fullPath: 'stripe.com' as const,
-  aliases: [] as const,
 }
 
-export type StripecomPackage = typeof stripecomPackage
+export type StripePackage = typeof stripePackage

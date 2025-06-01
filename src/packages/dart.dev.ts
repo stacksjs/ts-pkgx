@@ -5,6 +5,7 @@
  * @programs `dart`, `dartaotruntime`
  * @version `3.8.1` (36 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dart-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) +dart.dev -- $SHELL -i`
  *
  * @example

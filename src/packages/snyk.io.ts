@@ -5,6 +5,7 @@
  * @programs `snyk`
  * @version `1.1297.1` (41 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/snyk-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) snyk`
  * @dependencies `nodejs.org^20`
  *

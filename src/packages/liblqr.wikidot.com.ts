@@ -4,6 +4,7 @@
  * @domain `liblqr.wikidot.com`
  * @version `0.4.3` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/liblqr-wikidot-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +liblqr.wikidot.com -- $SHELL -i`
  * @dependencies `gnome.org/glib`
  *

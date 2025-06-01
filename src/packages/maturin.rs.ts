@@ -5,6 +5,7 @@
  * @programs `maturin`
  * @version `1.8.6` (19 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/maturin-rs.md
+ *
  * @install `sh <(curl https://pkgx.sh) maturin`
  *
  * @example

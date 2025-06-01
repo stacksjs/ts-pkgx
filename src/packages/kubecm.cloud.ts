@@ -5,6 +5,7 @@
  * @programs `kubecm`
  * @version `0.33.0` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubecm-cloud.md
+ *
  * @install `sh <(curl https://pkgx.sh) kubecm`
  *
  * @example

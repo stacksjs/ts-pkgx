@@ -5,6 +5,7 @@
  * @programs `tectonic`
  * @version `0.15.0` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tectonic-typesetting-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) tectonic`
  * @dependencies `freetype.org`, `graphite.sil.org`, `harfbuzz.org`, ... (+3 more)
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tectonic-typesettinggithubio
+ * const pkg = pantry.tectonictypesettinggithubio
  * console.log(pkg.name)        // "tectonic"
  * console.log(pkg.description) // "A modernized, complete, self-contained TeX/LaTe..."
  * console.log(pkg.programs)    // ["tectonic"]

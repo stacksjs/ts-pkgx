@@ -5,6 +5,7 @@
  * @programs `pack`
  * @version `0.37.0` (12 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/buildpacks-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) pack`
  * @aliases `pack`
  *

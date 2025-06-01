@@ -5,6 +5,7 @@
  * @programs `zarf`
  * @version `0.55.6` (45 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zarf-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) zarf`
  *
  * @example

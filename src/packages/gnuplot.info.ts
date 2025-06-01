@@ -5,6 +5,7 @@
  * @programs `gnuplot`
  * @version `6.0.2` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gnuplot-info.md
+ *
  * @install `sh <(curl https://pkgx.sh) gnuplot`
  * @dependencies `libgd.github.io`, `lua.org`, `gnome.org/pango`, ... (+3 more)
  *

@@ -5,6 +5,7 @@
  * @programs `solc`, `yul-phaser`
  * @version `0.8.30` (14 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/soliditylang-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +soliditylang.org -- $SHELL -i`
  * @dependencies `boost.org~1.84`, `linuxgnu.org/gcc/libstdcxx@14`, `gnu.org/gcc/libstdcxx@14`
  *

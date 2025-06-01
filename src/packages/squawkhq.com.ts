@@ -5,6 +5,7 @@
  * @programs `squawk`
  * @version `2.11.0` (34 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/squawkhq-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) squawk`
  *
  * @example

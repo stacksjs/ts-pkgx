@@ -1,11 +1,58 @@
-export const rabbitmqcomPackage = {
+/**
+ * **+rabbitmq.com -- $SHELL -i** - Open source RabbitMQ: core server and tier 1 (built-in) plugins
+ *
+ * @domain `rabbitmq.com`
+ * @programs `rabbitmqctl`, `rabbitmq-defaults`, `rabbitmq-diagnostics`, `rabbitmq-env`, `rabbitmq-plugins`, ... (+5 more)
+ * @version `4.1.0` (32 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rabbitmq-com.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +rabbitmq.com -- $SHELL -i`
+ * @aliases `+rabbitmq.com -- $SHELL -i`
+ * @dependencies `erlang.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.rabbitmqcomSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.rabbitmqcom
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "rabbitmq.com"
+ * console.log(pkg.description) // "Open source RabbitMQ: core server and tier 1 (b..."
+ * console.log(pkg.programs)    // ["rabbitmqctl", "rabbitmq-defaults", ...]
+ * console.log(pkg.versions[0]) // "4.1.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/rabbitmq-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const rabbitmqcomSHELLiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'rabbitmq.com' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'rabbitmq.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Open source RabbitMQ: core server and tier 1 (built-in) plugins' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rabbitmq.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +rabbitmq.com -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'rabbitmqctl',
     'rabbitmq-defaults',
@@ -19,9 +66,17 @@ export const rabbitmqcomPackage = {
     'vmware-rabbitmq',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'erlang.org',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '4.1.0',
     '4.0.9',
@@ -56,8 +111,14 @@ export const rabbitmqcomPackage = {
     '3.11.25',
     '3.11.24',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+rabbitmq.com -- $SHELL -i',
+  ] as const,
   fullPath: 'rabbitmq.com' as const,
-  aliases: [] as const,
 }
 
-export type RabbitmqcomPackage = typeof rabbitmqcomPackage
+export type RabbitmqcomSHELLiPackage = typeof rabbitmqcomSHELLiPackage

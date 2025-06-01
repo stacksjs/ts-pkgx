@@ -5,6 +5,7 @@
  * @programs `synth`
  * @version `0.6.9` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getsynth-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) synth`
  * @aliases `synth`
  *

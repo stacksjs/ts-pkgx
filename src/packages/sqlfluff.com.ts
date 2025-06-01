@@ -5,6 +5,7 @@
  * @programs `sqlfluff`
  * @version `3.4.0` (23 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sqlfluff-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) sqlfluff`
  * @dependencies `python.org>=3.7<3.12`
  *

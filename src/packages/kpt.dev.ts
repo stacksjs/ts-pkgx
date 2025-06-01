@@ -5,6 +5,7 @@
  * @programs `kpt`
  * @version `0.39.3` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kpt-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) kpt`
  * @dependencies `git-scm.org`
  *

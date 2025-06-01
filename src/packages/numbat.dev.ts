@@ -5,6 +5,7 @@
  * @programs `numbat`
  * @version `1.16.0` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/numbat-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) numbat`
  *
  * @example

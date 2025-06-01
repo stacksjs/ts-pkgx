@@ -5,6 +5,7 @@
  * @programs `flit`
  * @version `3.12.0` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/flit-pypa-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) flit`
  * @dependencies `python.org>=3<3.12`
  *

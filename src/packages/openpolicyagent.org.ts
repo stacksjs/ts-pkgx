@@ -5,6 +5,7 @@
  * @programs `opa`
  * @version `1.5.0` (25 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openpolicyagent-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) opa`
  * @aliases `opa`
  *

@@ -5,6 +5,7 @@
  * @programs `prettier`
  * @version `3.5.3` (12 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/prettier-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) prettier`
  * @dependencies `nodejs.org^20`
  *

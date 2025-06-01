@@ -5,6 +5,7 @@
  * @programs `pod`
  * @version `1.16.2` (13 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cocoapods-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) pod`
  * @aliases `pod`
  * @dependencies `ruby-lang.org~3.2`, `sourceware.org/libffi^3`, `rubygems.org^3`, ... (+1 more)

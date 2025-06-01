@@ -5,6 +5,7 @@
  * @programs `streamlink`
  * @version `7.3.0` (19 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/streamlink-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) streamlink`
  * @dependencies `pkgx.sh^1`
  * @companions `ffmpeg.org`

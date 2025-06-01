@@ -5,6 +5,7 @@
  * @programs `qpdf`
  * @version `12.2.0` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/qpdf-sourceforge-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) qpdf`
  * @dependencies `zlib.net^1`, `libjpeg-turbo.org^2`, `openssl.org^1.1`, ... (+1 more)
  *

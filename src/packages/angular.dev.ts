@@ -5,6 +5,7 @@
  * @programs `ng`
  * @version `20.0.0` (104 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/angular-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) ng`
  * @aliases `ng`
  * @dependencies `nodejs.org^20`

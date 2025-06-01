@@ -5,6 +5,7 @@
  * @programs `poetry`
  * @version `2.1.3` (21 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/python-poetry-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) poetry`
  * @aliases `poetry`
  * @dependencies `pkgx.sh^1`
@@ -16,7 +17,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.poetry
  * // Or access via domain
- * const samePkg = pantry.python-poetryorg
+ * const samePkg = pantry.pythonpoetryorg
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "poetry"
  * console.log(pkg.description) // "Python packaging and dependency management made..."

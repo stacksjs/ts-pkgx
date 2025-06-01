@@ -1,14 +1,58 @@
-export const nghttp2orgPackage = {
+/**
+ * **+nghttp2.org -- $SHELL -i** - nghttp2 - HTTP/2 C Library and tools
+ *
+ * @domain `nghttp2.org`
+ * @version `1.65.0` (17 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nghttp2-org.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i`
+ * @aliases `+nghttp2.org -- $SHELL -i`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.nghttp2orgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.nghttp2org
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "nghttp2.org"
+ * console.log(pkg.description) // "nghttp2 - HTTP/2 C Library and tools"
+ * console.log(pkg.versions[0]) // "1.65.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/nghttp2-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const nghttp2orgSHELLiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'nghttp2.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'nghttp2.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'nghttp2 - HTTP/2 C Library and tools' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nghttp2.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.65.0',
     '1.64.0',
@@ -28,8 +72,14 @@ export const nghttp2orgPackage = {
     '1.52.0',
     '1.51.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+nghttp2.org -- $SHELL -i',
+  ] as const,
   fullPath: 'nghttp2.org' as const,
-  aliases: [] as const,
 }
 
-export type Nghttp2orgPackage = typeof nghttp2orgPackage
+export type Nghttp2orgSHELLiPackage = typeof nghttp2orgSHELLiPackage

@@ -5,6 +5,7 @@
  * @programs `aux4`
  * @version `5.0.14` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/aux4-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) aux4`
  *
  * @example

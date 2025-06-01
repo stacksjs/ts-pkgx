@@ -5,6 +5,7 @@
  * @programs `wx-config`, `wxrc`
  * @version `3.2.8.1` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wxwidgets-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +wxwidgets.org -- $SHELL -i`
  * @dependencies `libjpeg-turbo.org`, `libpng.org`, `simplesystems.org/libtiff`, ... (+7 more)
  *

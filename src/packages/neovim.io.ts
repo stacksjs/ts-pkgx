@@ -5,6 +5,7 @@
  * @programs `nvim`
  * @version `0.11.2` (15 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/neovim-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) nvim`
  * @aliases `nvim`
  * @dependencies `gnu.org/gettext^0`

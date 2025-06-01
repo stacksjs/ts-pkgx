@@ -5,6 +5,7 @@
  * @programs `rtx`, `mise`
  * @version `2025.5.17` (282 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mise-jdx-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `libgit2.org^1`
  *

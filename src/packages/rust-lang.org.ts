@@ -5,6 +5,7 @@
  * @programs `cargo-clippy`, `cargo-fmt`, `clippy-driver`, `rust-analyzer`, `rust-gdb`, ... (+5 more)
  * @version `1.87.0` (34 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rust-lang-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +rust-lang.org -- $SHELL -i`
  * @aliases `rust`
  * @dependencies `zlib.net@1`
@@ -17,7 +18,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.rust
  * // Or access via domain
- * const samePkg = pantry.rust-langorg
+ * const samePkg = pantry.rustlangorg
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "rust"
  * console.log(pkg.description) // "Empowering everyone to build reliable and effic..."

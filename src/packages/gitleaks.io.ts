@@ -5,6 +5,7 @@
  * @programs `gitleaks`
  * @version `8.26.0` (26 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gitleaks-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) gitleaks`
  *
  * @example

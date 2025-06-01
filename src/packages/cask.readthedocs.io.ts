@@ -5,6 +5,7 @@
  * @programs `cask`
  * @version `0.9.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cask-readthedocs-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) cask`
  * @dependencies `gnu.org/coreutils`, `gnu.org/emacs`
  *

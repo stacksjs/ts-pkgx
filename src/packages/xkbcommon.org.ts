@@ -5,6 +5,7 @@
  * @programs `xkbcli`
  * @version `1.10.0` (9 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xkbcommon-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) xkbcli`
  * @aliases `xkbcli`
  * @dependencies `x.org/x11`, `x.org/xcb`, `freedesktop.org/XKeyboardConfig`, ... (+1 more)

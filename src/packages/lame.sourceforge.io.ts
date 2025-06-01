@@ -5,6 +5,7 @@
  * @programs `lame`
  * @version `3.100.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lame-sourceforge-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) lame`
  *
  * @example

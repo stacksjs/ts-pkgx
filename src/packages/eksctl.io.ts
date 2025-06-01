@@ -5,6 +5,7 @@
  * @programs `eksctl`
  * @version `0.208.0` (55 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/eksctl-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) eksctl`
  * @dependencies `github.com/kubernetes-sigs/aws-iam-authenticator`
  *

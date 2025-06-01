@@ -5,6 +5,7 @@
  * @programs `projen`
  * @version `0.92.8` (35 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/projen-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) projen`
  * @dependencies `nodejs.org^22 || ^20 || ^18`
  * @companions `git-scm.org`, `classic.yarnpkg.com`, `maven.apache.org`, ... (+2 more)

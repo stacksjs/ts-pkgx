@@ -5,6 +5,7 @@
  * @programs `dozzle`
  * @version `8.12.19` (56 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dozzle-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) dozzle`
  *
  * @example

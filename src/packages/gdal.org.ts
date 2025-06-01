@@ -5,6 +5,7 @@
  * @programs `gdaladdo`, `gdalbuildvrt`, `gdal-config`, `gdal_contour`, `gdal_create`, ... (+23 more)
  * @version `3.11.0` (17 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gdal-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +gdal.org -- $SHELL -i`
  * @dependencies `apache.org/arrow`, `heasarc.gsfc.nasa.gov/cfitsio`, `epsilon-project.sourceforge.io`, ... (+43 more)
  *

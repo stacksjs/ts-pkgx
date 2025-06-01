@@ -5,6 +5,7 @@
  * @programs `erb`, `irb`, `rake`, `rdoc`, `ri`, ... (+1 more)
  * @version `3.4.4` (42 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ruby-lang-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +ruby-lang.org -- $SHELL -i`
  * @aliases `ruby`
  * @dependencies `openssl.org^1.1`, `pyyaml.org^0.2`, `zlib.net^1`
@@ -17,7 +18,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.ruby
  * // Or access via domain
- * const samePkg = pantry.ruby-langorg
+ * const samePkg = pantry.rubylangorg
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "ruby-lang.org"
  * console.log(pkg.description) // "Powerful, clean, object-oriented scripting lang..."

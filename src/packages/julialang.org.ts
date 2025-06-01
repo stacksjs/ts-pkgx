@@ -5,6 +5,7 @@
  * @programs `julia`
  * @version `1.11.5` (18 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/julialang-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) julia`
  *
  * @example

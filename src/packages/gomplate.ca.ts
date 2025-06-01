@@ -5,6 +5,7 @@
  * @programs `gomplate`
  * @version `4.3.2` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gomplate-ca.md
+ *
  * @install `sh <(curl https://pkgx.sh) gomplate`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `amber`
  * @version `0.4.0` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/amber-lang-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) amber`
  * @companions `gnu.org/bc`, `gnu.org/sed`, `gnu.org/coreutils`, ... (+2 more)
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.amber-langcom
+ * const pkg = pantry.amberlangcom
  * console.log(pkg.name)        // "amber"
  * console.log(pkg.description) // "Crystal web framework. Bare metal performance, ..."
  * console.log(pkg.programs)    // ["amber"]

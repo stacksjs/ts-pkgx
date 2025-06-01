@@ -5,6 +5,7 @@
  * @programs `k3d`
  * @version `5.8.3` (17 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/k3d-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) k3d`
  *
  * @example

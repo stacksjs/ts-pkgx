@@ -5,6 +5,7 @@
  * @programs `bw`
  * @version `2025.4.0` (24 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bitwarden-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) bw`
  * @aliases `bw`
  * @dependencies `nodejs.org^20`

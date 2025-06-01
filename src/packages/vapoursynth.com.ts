@@ -5,6 +5,7 @@
  * @programs `vspipe`
  * @version `71.0.0` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vapoursynth-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) vspipe`
  * @aliases `vspipe`
  * @dependencies `python.org~3.11`, `github.com/sekrit-twc/zimg`, `linuxgnu.org/gcc/libstdcxx`, ... (+1 more)

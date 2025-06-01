@@ -5,6 +5,7 @@
  * @programs `mako-render`
  * @version `1.3.10` (12 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/makotemplates-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) mako-render`
  * @aliases `mako-render`
  * @dependencies `python.org~3.11`

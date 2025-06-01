@@ -5,6 +5,7 @@
  * @programs `ansible`, `ansible-config`, `ansible-connection`, `ansible-console`, `ansible-doc`, ... (+6 more)
  * @version `2.18.6` (69 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ansible-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i`
  * @dependencies `pkgx.sh@1`
  *

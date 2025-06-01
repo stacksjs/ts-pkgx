@@ -5,6 +5,7 @@
  * @programs `istioctl`
  * @version `1.26.1` (41 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/istio-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) istioctl`
  * @aliases `istioctl`
  *

@@ -5,6 +5,7 @@
  * @programs `mkdocs`
  * @version `1.6.1` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mkdocs-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) mkdocs`
  * @dependencies `python.org>=3<3.12`
  *

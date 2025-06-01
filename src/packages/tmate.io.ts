@@ -5,6 +5,7 @@
  * @programs `tmate`
  * @version `2.4.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tmate-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) tmate`
  * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses@6`, `msgpack.org@6`, ... (+1 more)
  *

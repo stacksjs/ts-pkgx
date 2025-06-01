@@ -5,6 +5,7 @@
  * @programs `pnpm`, `pnpx`
  * @version `10.11.0` (162 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pnpm-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i`
  * @dependencies `nodejs.org`
  *

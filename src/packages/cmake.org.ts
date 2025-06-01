@@ -5,6 +5,7 @@
  * @programs `cmake`, `ccmake`, `cpack`, `ctest`
  * @version `4.0.2` (59 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cmake-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i`
  * @dependencies `curl.se>=5`, `zlib.net@1`, `sourceware.org/bzip2@1`
  *

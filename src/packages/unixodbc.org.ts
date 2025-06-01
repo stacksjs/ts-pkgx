@@ -5,6 +5,7 @@
  * @programs `dltest`, `isql`, `iusql`, `odbc_config`, `odbcinst`, ... (+1 more)
  * @version `2.3.12` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/unixodbc-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +unixodbc.org -- $SHELL -i`
  * @dependencies `gnu.org/libtool`
  *

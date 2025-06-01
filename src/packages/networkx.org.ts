@@ -4,6 +4,7 @@
  * @domain `networkx.org`
  * @version `3.5.0` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/networkx-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +networkx.org -- $SHELL -i`
  * @dependencies `python.org>=3.11`
  *

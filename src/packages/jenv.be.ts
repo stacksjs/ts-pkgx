@@ -5,6 +5,7 @@
  * @programs `jenv`
  * @version `0.5.7` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jenv-be.md
+ *
  * @install `sh <(curl https://pkgx.sh) jenv`
  *
  * @example

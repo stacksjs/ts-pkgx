@@ -4,6 +4,7 @@
  * @domain `libusb.info`
  * @version `1.0.28` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libusb-info.md
+ *
  * @install `sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i`
  *
  * @example

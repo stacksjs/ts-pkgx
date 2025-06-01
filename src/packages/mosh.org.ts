@@ -5,6 +5,7 @@
  * @programs `mosh-client`, `mosh-server`
  * @version `1.4.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mosh-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i`
  * @dependencies `protobuf.dev@26.1.0`, `invisible-island.net/ncurses@6`, `zlib.net@1.3`, ... (+2 more)
  *

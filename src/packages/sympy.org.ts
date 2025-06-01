@@ -4,6 +4,7 @@
  * @domain `sympy.org`
  * @version `1.14.0` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sympy-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +sympy.org -- $SHELL -i`
  * @dependencies `python.org>=3.11`
  *

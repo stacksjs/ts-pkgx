@@ -5,6 +5,7 @@
  * @programs `railway`
  * @version `4.5.3` (51 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/railway-app.md
+ *
  * @install `sh <(curl https://pkgx.sh) railway`
  *
  * @example

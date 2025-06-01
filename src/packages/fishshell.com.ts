@@ -5,6 +5,7 @@
  * @programs `fish`, `fish_indent`, `fish_key_reader`
  * @version `4.0.2` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fishshell-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +fishshell.com -- $SHELL -i`
  * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
  *

@@ -5,6 +5,7 @@
  * @programs `heroku`
  * @version `10.8.0` (30 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/heroku-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) heroku`
  * @dependencies `nodejs.org^20`
  *

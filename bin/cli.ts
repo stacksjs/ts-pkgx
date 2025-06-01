@@ -84,7 +84,7 @@ cli
   .option('-j, --json', 'Save as JSON instead of TypeScript')
   .option('-d, --debug', 'Enable debug mode (save screenshots)')
   .option('-v, --verbose', 'Enable verbose output')
-  .option('-y, --concurrency <count>', 'Number of packages to fetch concurrently (default: 10)', { default: 10 })
+  .option('-y, --concurrency <count>', 'Number of packages to fetch concurrently (default: 8)', { default: 8 })
   .action(async (packageName: string | undefined, options: FetchOptions) => {
     // Extract options with appropriate types
     const {
@@ -99,7 +99,7 @@ cli
       json: saveAsJson = false,
       debug = false,
       verbose = false,
-      concurrency = 10,
+      concurrency = 8,
       pkg,
     } = options
 
@@ -131,7 +131,7 @@ cli
           timeout: Number.parseInt(String(timeout), 10),
           debug,
           limit: limit ? Number.parseInt(String(limit), 10) : undefined,
-          concurrency: Number.parseInt(String(concurrency), 10),
+          concurrency: Math.min(Number.parseInt(String(concurrency), 10), 12),
         }
 
         savedPackages = await fetchAndSaveAllPackages(fetchOptions)

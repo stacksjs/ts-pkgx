@@ -5,6 +5,7 @@
  * @programs `oc`
  * @version `4.18.16` (220 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openshift-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) oc`
  * @aliases `oc`
  * @dependencies `kerberos.org^1.21`

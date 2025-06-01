@@ -5,6 +5,7 @@
  * @programs `depot`
  * @version `2.85.6` (39 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/depot-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) depot`
  *
  * @example

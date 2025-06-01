@@ -5,6 +5,7 @@
  * @programs `doctave`
  * @version `0.4.2` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/doctave-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) doctave`
  *
  * @example

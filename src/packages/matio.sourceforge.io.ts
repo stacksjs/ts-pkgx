@@ -5,6 +5,7 @@
  * @programs `matdump`
  * @version `1.5.28` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/matio-sourceforge-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) matdump`
  * @aliases `libmatio`
  * @dependencies `hdfgroup.org/HDF5`, `zlib.net`

@@ -5,6 +5,7 @@
  * @programs `asciidoctor`
  * @version `2.0.23` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/asciidoctor-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) asciidoctor`
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
  *

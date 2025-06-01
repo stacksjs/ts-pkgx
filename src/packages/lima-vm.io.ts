@@ -5,6 +5,7 @@
  * @programs `apptainer.lima`, `docker.lima`, `kubectl.lima`, `lima`, `limactl`, ... (+2 more)
  * @version `1.1.1` (25 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lima-vm-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +lima-vm.io -- $SHELL -i`
  * @dependencies `qemu.org`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.lima-vmio
+ * const pkg = pantry.limavmio
  * console.log(pkg.name)        // "lima-vm.io"
  * console.log(pkg.description) // "Linux virtual machines, with a focus on running..."
  * console.log(pkg.programs)    // ["apptainer.lima", "docker.lima", ...]

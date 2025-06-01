@@ -5,6 +5,7 @@
  * @programs `dagger`
  * @version `0.18.9` (90 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dagger-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) dagger`
  *
  * @example

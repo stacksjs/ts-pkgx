@@ -5,6 +5,7 @@
  * @programs `gleam`
  * @version `1.10.0` (42 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gleam-run.md
+ *
  * @install `sh <(curl https://pkgx.sh) gleam`
  *
  * @example

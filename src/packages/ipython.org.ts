@@ -5,6 +5,7 @@
  * @programs `ipython`, `ipython3`
  * @version `9.3.0` (44 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ipython-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i`
  * @dependencies `pkgx.sh^1`
  *

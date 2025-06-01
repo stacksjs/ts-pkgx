@@ -5,6 +5,7 @@
  * @programs `packer`
  * @version `1.12.0` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/packer-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) packer`
  *
  * @example

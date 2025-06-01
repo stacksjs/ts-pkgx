@@ -5,6 +5,7 @@
  * @programs `jless`
  * @version `0.9.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jless-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) jless`
  * @dependencies `linuxx.org/xcb@1`, `x.org/xcb@1`
  *

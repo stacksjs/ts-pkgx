@@ -5,6 +5,7 @@
  * @programs `rye`
  * @version `0.44.0` (9 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rye-astral-sh.md
+ *
  * @install `sh <(curl https://pkgx.sh) rye`
  * @dependencies `curl.se/ca-certs`
  *

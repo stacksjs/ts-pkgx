@@ -5,6 +5,7 @@
  * @programs `ktlint`
  * @version `1.6.0` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ktlint-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) ktlint`
  * @dependencies `openjdk.org`
  *

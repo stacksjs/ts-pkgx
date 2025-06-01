@@ -5,6 +5,7 @@
  * @programs `kube-linter`
  * @version `0.7.2` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubelinter-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) kube-linter`
  * @aliases `kube-linter`
  *

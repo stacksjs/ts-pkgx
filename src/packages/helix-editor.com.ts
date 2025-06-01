@@ -5,6 +5,7 @@
  * @programs `hx`
  * @version `25.1.1` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/helix-editor-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) hx`
  * @aliases `hx`
  *
@@ -15,7 +16,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.hx
  * // Or access via domain
- * const samePkg = pantry.helix-editorcom
+ * const samePkg = pantry.helixeditorcom
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "hx"
  * console.log(pkg.description) // "A post-modern modal text editor."

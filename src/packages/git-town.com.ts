@@ -5,13 +5,14 @@
  * @programs `git-town`
  * @version `21.0.0` (54 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/git-town-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) git-town`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.git-towncom
+ * const pkg = pantry.gittowncom
  * console.log(pkg.name)        // "git-town"
  * console.log(pkg.description) // "High-level command-line interface for Git"
  * console.log(pkg.programs)    // ["git-town"]

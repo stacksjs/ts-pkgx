@@ -5,6 +5,7 @@
  * @programs `scons`
  * @version `4.9.1` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/scons-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) scons`
  * @dependencies `python.org~3.11`, `linuxgnu.org/gcc>=10`, `gnu.org/gcc>=10`
  *

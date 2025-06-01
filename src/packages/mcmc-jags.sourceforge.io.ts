@@ -5,6 +5,7 @@
  * @programs `jags`
  * @version `4.3.2` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mcmc-jags-sourceforge-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) jags`
  * @aliases `jags`
  * @dependencies `gnu.org/gcc`, `linuxnetlib.org/lapack^3`, `netlib.org/lapack^3`
@@ -16,7 +17,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.jags
  * // Or access via domain
- * const samePkg = pantry.mcmc-jagssourceforgeio
+ * const samePkg = pantry.mcmcjagssourceforgeio
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "jags"
  * console.log(pkg.description) // "Just Another Gibbs Sampler for Bayesian MCMC si..."

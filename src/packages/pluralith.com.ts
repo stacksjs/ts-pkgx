@@ -5,6 +5,7 @@
  * @programs `pluralith`
  * @version `0.2.2` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pluralith-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) pluralith`
  * @dependencies `curl.se/ca-certs`
  *

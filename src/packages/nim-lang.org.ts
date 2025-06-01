@@ -5,6 +5,7 @@
  * @programs `nim`, `nim_dbg`, `testament`, `nimsuggest`, `nimgrep`, ... (+4 more)
  * @version `2.2.4` (15 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nim-lang-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +nim-lang.org -- $SHELL -i`
  * @dependencies `gnu.org/gcc`, `pcre.org`, `openssl.org`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.nim-langorg
+ * const pkg = pantry.nimlangorg
  * console.log(pkg.name)        // "nim-lang.org"
  * console.log(pkg.description) // "Nim is a statically typed compiled systems prog..."
  * console.log(pkg.programs)    // ["nim", "nim_dbg", ...]

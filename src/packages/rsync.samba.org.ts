@@ -5,6 +5,7 @@
  * @programs `rsync`, `rsync-ssl`
  * @version `3.4.1` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rsync-samba-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +rsync.samba.org -- $SHELL -i`
  * @dependencies `zlib.net^1`, `facebook.com/zstd^1`, `lz4.org^1`
  *

@@ -5,6 +5,7 @@
  * @programs `pulumi`, `pulumi-analyzer-policy`, `pulumi-analyzer-policy-python`, `pulumi-language-dotnet`, `pulumi-language-go`, ... (+8 more)
  * @version `3.173.0` (136 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pulumi-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i`
  * @dependencies `curl.se/ca-certs`
  *

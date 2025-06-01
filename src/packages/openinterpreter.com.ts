@@ -5,6 +5,7 @@
  * @programs `interpreter`
  * @version `0.4.0` (22 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openinterpreter-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) interpreter`
  * @aliases `open-interpreter`
  * @dependencies `python.org>=3.10<3.12`, `github.com/mattrobenolt/jinja2-cli`

@@ -5,6 +5,7 @@
  * @programs `mpv`
  * @version `0.40.0` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mpv-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) mpv`
  * @dependencies `ffmpeg.org`, `libjpeg-turbo.org@2`, `libarchive.org@3`, ... (+11 more)
  *

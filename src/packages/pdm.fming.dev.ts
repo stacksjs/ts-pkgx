@@ -5,6 +5,7 @@
  * @programs `pdm`
  * @version `2.24.2` (65 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pdm-fming-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) pdm`
  * @dependencies `python.org~3.11`
  *

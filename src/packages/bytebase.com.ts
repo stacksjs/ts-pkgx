@@ -5,6 +5,7 @@
  * @programs `bytebase`
  * @version `3.6.2` (30 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bytebase-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) bytebase`
  * @dependencies `nodejs.org>=23.11`
  * @companions `postgresql.org`

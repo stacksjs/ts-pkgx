@@ -5,6 +5,7 @@
  * @programs `cgal_create_CMakeLists`, `cgal_create_cmake_script`, `cgal_make_macosx_app`
  * @version `6.0.1` (5 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cgal-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +cgal.org -- $SHELL -i`
  * @dependencies `boost.org`, `eigen.tuxfamily.org`, `gnu.org/gmp`, ... (+2 more)
  *

@@ -5,6 +5,7 @@
  * @programs `fx`
  * @version `36.0.3` (17 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fx-wtf.md
+ *
  * @install `sh <(curl https://pkgx.sh) fx`
  *
  * @example

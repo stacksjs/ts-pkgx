@@ -5,6 +5,7 @@
  * @programs `jenkins-lts`, `jenkins-lts-cli`
  * @version `2.504.2` (19 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jenkins-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i`
  * @aliases `jenkins-lts`
  * @dependencies `openjdk.org<20`

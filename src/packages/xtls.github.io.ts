@@ -5,6 +5,7 @@
  * @programs `xray`
  * @version `25.5.16` (30 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xtls-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) xray`
  * @aliases `xray-core`
  *

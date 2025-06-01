@@ -5,6 +5,7 @@
  * @programs `jpgicc`, `linkicc`, `psicc`, `tificc`, `transicc`
  * @version `2.17.0` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/littlecms-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +littlecms.com -- $SHELL -i`
  * @dependencies `simplesystems.org/libtiff^4`, `libjpeg-turbo.org^2`
  *

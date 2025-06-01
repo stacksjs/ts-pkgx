@@ -5,6 +5,7 @@
  * @programs `atlas`
  * @version `0.34.0` (21 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/atlasgo-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) atlas`
  *
  * @example

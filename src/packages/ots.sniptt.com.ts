@@ -5,6 +5,7 @@
  * @programs `ots`
  * @version `0.3.1` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ots-sniptt-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) ots`
  *
  * @example

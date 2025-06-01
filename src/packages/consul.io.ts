@@ -5,6 +5,7 @@
  * @programs `consul`
  * @version `1.21.1` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/consul-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) consul`
  *
  * @example

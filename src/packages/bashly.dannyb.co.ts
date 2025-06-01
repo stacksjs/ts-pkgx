@@ -5,6 +5,7 @@
  * @programs `bashly`
  * @version `1.2.12` (14 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bashly-dannyb-co.md
+ *
  * @install `sh <(curl https://pkgx.sh) bashly`
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
  * @companions `gnu.org/bash`

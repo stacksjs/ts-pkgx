@@ -5,6 +5,7 @@
  * @programs `flipt`
  * @version `1.58.3` (37 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/flipt-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) flipt`
  *
  * @example

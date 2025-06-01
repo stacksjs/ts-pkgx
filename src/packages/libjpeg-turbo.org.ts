@@ -5,13 +5,14 @@
  * @programs `cjpeg`, `djpeg`, `jpegtran`, `rdjpgcom`, `tjbench`, ... (+1 more)
  * @version `3.1.0` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libjpeg-turbo-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +libjpeg-turbo.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.libjpeg-turboorg
+ * const pkg = pantry.libjpegturboorg
  * console.log(pkg.name)        // "libjpeg-turbo.org"
  * console.log(pkg.description) // "Main libjpeg-turbo repository"
  * console.log(pkg.programs)    // ["cjpeg", "djpeg", ...]

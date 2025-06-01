@@ -5,6 +5,7 @@
  * @programs `watchexec`
  * @version `2.3.2` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/watchexec-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) watchexec`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `atlantis`
  * @version `0.34.0` (18 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/runatlantis-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) atlantis`
  * @aliases `atlantis`
  *

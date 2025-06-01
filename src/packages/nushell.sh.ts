@@ -5,6 +5,7 @@
  * @programs `nu`
  * @version `0.104.1` (46 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nushell-sh.md
+ *
  * @install `sh <(curl https://pkgx.sh) nu`
  * @dependencies `openssl.org^1`
  *

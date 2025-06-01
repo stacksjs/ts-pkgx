@@ -5,6 +5,7 @@
  * @programs `faillock`, `mkhomedir_helper`, `pam_namespace_helper`, `pam_timestamp_check`, `unix_chkpwd`
  * @version `1.7.0` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/linux-pam-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +linux-pam.org -- $SHELL -i`
  * @dependencies `github.com/thkukuk/libnsl`, `sourceforge.net/libtirpc`, `github.com/besser82/libxcrypt`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.linux-pamorg
+ * const pkg = pantry.linuxpamorg
  * console.log(pkg.name)        // "linux-pam.org"
  * console.log(pkg.description) // "Linux PAM (Pluggable Authentication Modules for..."
  * console.log(pkg.programs)    // ["faillock", "mkhomedir_helper", ...]

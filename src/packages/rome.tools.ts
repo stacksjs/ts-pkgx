@@ -5,6 +5,7 @@
  * @programs `rome`
  * @version `0.4.2` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rome-tools.md
+ *
  * @install `sh <(curl https://pkgx.sh) rome`
  *
  * @example

@@ -1,16 +1,66 @@
-export const tartrunPackage = {
+/**
+ * **tart** - macOS and Linux VMs on Apple Silicon to use in CI and other automations
+ *
+ * @domain `tart.run`
+ * @programs `tart`
+ * @version `2.27.2` (54 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tart-run.md
+ *
+ * @install `sh <(curl https://pkgx.sh) tart`
+ * @aliases `tart`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.tart
+ * // Or access via domain
+ * const samePkg = pantry.tartrun
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "tart"
+ * console.log(pkg.description) // "macOS and Linux VMs on Apple Silicon to use in ..."
+ * console.log(pkg.programs)    // ["tart"]
+ * console.log(pkg.versions[0]) // "2.27.2" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/tart-run.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const tartPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'tart' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'tart.run' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'macOS and Linux VMs on Apple Silicon to use in CI and other automations' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tart.run/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) tart' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'tart',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.27.2',
     '2.27.1',
@@ -67,8 +117,14 @@ export const tartrunPackage = {
     '2.2.0',
     '0.38.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'tart',
+  ] as const,
   fullPath: 'tart.run' as const,
-  aliases: [] as const,
 }
 
-export type TartrunPackage = typeof tartrunPackage
+export type TartPackage = typeof tartPackage

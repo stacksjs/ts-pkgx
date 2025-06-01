@@ -5,6 +5,7 @@
  * @programs `xpra`
  * @version `6.3.0` (9 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xpra-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) xpra`
  * @dependencies `pkgx.sh^1`, `python.org~3.11`, `cython.org`, ... (+26 more)
  *

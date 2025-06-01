@@ -5,6 +5,7 @@
  * @programs `jbang`
  * @version `0.126.1` (20 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jbang-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) jbang`
  * @dependencies `openjdk.org`
  *

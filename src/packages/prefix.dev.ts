@@ -5,6 +5,7 @@
  * @programs `pixi`
  * @version `0.47.0` (80 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/prefix-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) pixi`
  * @aliases `pixi`
  * @dependencies `openssl.org^1.1`, `libgit2.org~1.7`

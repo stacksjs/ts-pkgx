@@ -4,6 +4,7 @@
  * @domain `boost.org`
  * @version `1.88.0` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/boost-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +boost.org -- $SHELL -i`
  * @dependencies `facebook.com/zstd^1`
  *

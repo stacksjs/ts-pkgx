@@ -5,6 +5,7 @@
  * @programs `dblab`
  * @version `0.32.0` (15 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dblab-danvergara-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) dblab`
  *
  * @example

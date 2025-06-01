@@ -5,6 +5,7 @@
  * @programs `kind`
  * @version `0.29.0` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kind-sigs-k8s-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) kind`
  *
  * @example

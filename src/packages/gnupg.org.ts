@@ -5,6 +5,7 @@
  * @programs `gpg`, `gpg-agent`, `gpg-connect-agent`, `gpg-wks-server`, `gpgconf`, ... (+8 more)
  * @version `2.4.8` (12 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gnupg-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +gnupg.org -- $SHELL -i`
  * @dependencies `zlib.net^1.1`, `sourceware.org/bzip2`, `gnupg.org/npth`, ... (+11 more)
  *

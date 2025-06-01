@@ -5,6 +5,7 @@
  * @programs `kubeshark`
  * @version `72.3.83` (54 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubeshark-co.md
+ *
  * @install `sh <(curl https://pkgx.sh) kubeshark`
  *
  * @example

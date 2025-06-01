@@ -5,6 +5,7 @@
  * @programs `convco`
  * @version `0.6.2` (9 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/convco-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) convco`
  *
  * @example

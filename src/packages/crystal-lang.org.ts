@@ -1,17 +1,73 @@
-export const crystallangorgPackage = {
+/**
+ * **crystal** - Fast and statically typed, compiled language with Ruby-like syntax
+ *
+ * @domain `crystal-lang.org`
+ * @programs `crystal`
+ * @version `1.16.3` (19 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/crystal-lang-org.md
+ *
+ * @install `sh <(curl https://pkgx.sh) crystal`
+ * @aliases `crystal`
+ * @dependencies `hboehm.info/gc^8`, `gnu.org/gmp^6`, `libevent.org^2`, ... (+7 more)
+ * @companions `crystal-lang.org/shards`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.crystal
+ * // Or access via domain
+ * const samePkg = pantry.crystallangorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "crystal"
+ * console.log(pkg.description) // "Fast and statically typed, compiled language wi..."
+ * console.log(pkg.programs)    // ["crystal"]
+ * console.log(pkg.versions[0]) // "1.16.3" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/crystal-lang-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const crystalPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'crystal' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'crystal-lang.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Fast and statically typed, compiled language with Ruby-like syntax' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crystal-lang.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) crystal' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'crystal',
   ] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
   companions: [
     'crystal-lang.org/shards',
   ] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'hboehm.info/gc^8',
     'gnu.org/gmp^6',
@@ -24,6 +80,10 @@ export const crystallangorgPackage = {
     'sourceware.org/libffi^3',
     'invisible-island.net/ncurses^6',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.16.3',
     '1.16.2',
@@ -45,8 +105,14 @@ export const crystallangorgPackage = {
     '1.11.0',
     '1.10.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'crystal',
+  ] as const,
   fullPath: 'crystal-lang.org' as const,
-  aliases: [] as const,
 }
 
-export type CrystallangorgPackage = typeof crystallangorgPackage
+export type CrystalPackage = typeof crystalPackage

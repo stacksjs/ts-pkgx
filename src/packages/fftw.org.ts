@@ -5,6 +5,7 @@
  * @programs `fftw-wisdom`, `fftw-wisdom-to-conf`, `fftwf-wisdom`, `fftwl-wisdom`
  * @version `3.3.10` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fftw-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +fftw.org -- $SHELL -i`
  * @dependencies `open-mpi.org`
  *

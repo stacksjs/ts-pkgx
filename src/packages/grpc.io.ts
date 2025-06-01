@@ -5,6 +5,7 @@
  * @programs `grpc_csharp_plugin`, `grpc_node_plugin`, `grpc_cpp_plugin`, `grpc_python_plugin`, `grpc_objective_c_plugin`, ... (+3 more)
  * @version `1.72.0` (43 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/grpc-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +grpc.io -- $SHELL -i`
  * @dependencies `abseil.io^20250127`, `c-ares.org`, `openssl.org^1.1`, ... (+5 more)
  *

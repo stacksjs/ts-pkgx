@@ -5,6 +5,7 @@
  * @programs `sqlite3`
  * @version `3.50.0` (25 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sqlite-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) sqlite3`
  * @aliases `sqlite3`
  * @dependencies `zlib.net@1`, `gnu.org/readline@8`

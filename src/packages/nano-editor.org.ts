@@ -5,6 +5,7 @@
  * @programs `nano`
  * @version `8.0.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nano-editor-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) nano`
  * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.nano-editororg
+ * const pkg = pantry.nanoeditororg
  * console.log(pkg.name)        // "nano"
  * console.log(pkg.description) // "Free (GNU) replacement for the Pico text editor"
  * console.log(pkg.programs)    // ["nano"]

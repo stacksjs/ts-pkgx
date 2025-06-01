@@ -5,6 +5,7 @@
  * @programs `upx`
  * @version `5.0.1` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/upx-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) upx`
  * @dependencies `zlib.net`
  *

@@ -1,11 +1,58 @@
-export const erlangorgPackage = {
+/**
+ * **+erlang.org -- $SHELL -i** - Programming language for highly scalable real-time systems
+ *
+ * @domain `erlang.org`
+ * @programs `ct_run`, `dialyzer`, `epmd`, `erl`, `erlc`, ... (+4 more)
+ * @version `28.0.0` (72 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/erlang-org.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +erlang.org -- $SHELL -i`
+ * @aliases `+erlang.org -- $SHELL -i`
+ * @dependencies `openssl.org^1.1`, `invisible-island.net/ncurses`, `linux/x86-64gnu.org/gcc/libstdcxx`, ... (+1 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.erlangorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.erlangorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "erlang.org"
+ * console.log(pkg.description) // "Programming language for highly scalable real-t..."
+ * console.log(pkg.programs)    // ["ct_run", "dialyzer", ...]
+ * console.log(pkg.versions[0]) // "28.0.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/erlang-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const erlangorgSHELLiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'erlang.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'erlang.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Programming language for highly scalable real-time systems' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/erlang.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +erlang.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'ct_run',
     'dialyzer',
@@ -18,12 +65,20 @@ export const erlangorgPackage = {
     'typer',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'openssl.org^1.1',
     'invisible-island.net/ncurses',
     'linux/x86-64gnu.org/gcc/libstdcxx',
     'gnu.org/gcc/libstdcxx',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '28.0.0',
     '27.3.4',
@@ -98,8 +153,14 @@ export const erlangorgPackage = {
     '24.3.4.12',
     '24.3.4.11',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+erlang.org -- $SHELL -i',
+  ] as const,
   fullPath: 'erlang.org' as const,
-  aliases: [] as const,
 }
 
-export type ErlangorgPackage = typeof erlangorgPackage
+export type ErlangorgSHELLiPackage = typeof erlangorgSHELLiPackage

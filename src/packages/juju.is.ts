@@ -5,6 +5,7 @@
  * @programs `juju`
  * @version `3.6.6` (16 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/juju-is.md
+ *
  * @install `sh <(curl https://pkgx.sh) juju`
  *
  * @example

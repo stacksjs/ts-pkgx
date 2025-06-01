@@ -5,6 +5,7 @@
  * @programs `k6`
  * @version `1.0.0` (24 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/k6-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) k6`
  *
  * @example

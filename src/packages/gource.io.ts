@@ -5,6 +5,7 @@
  * @programs `gource`
  * @version `0.55.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gource-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) gource`
  * @dependencies `boost.org^1.82`, `freetype.org^2`, `libpng.org^1.6`, ... (+4 more)
  *

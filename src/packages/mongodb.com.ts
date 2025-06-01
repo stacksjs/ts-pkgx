@@ -5,6 +5,7 @@
  * @programs `install_compass`, `mongod`, `mongos`
  * @version `8.1.1` (31 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mongodb-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +mongodb.com -- $SHELL -i`
  * @dependencies `curl.se@8`, `openssl.org@1.1`
  *

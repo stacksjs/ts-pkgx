@@ -5,6 +5,7 @@
  * @programs `pkgx`
  * @version `2.7.0` (35 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pkgx-sh.md
+ *
  * @install `sh <(curl https://pkgx.sh) pkgx`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `zrok`, `copyto`, `pastefrom`
  * @version `1.0.4` (36 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zrok-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +zrok.io -- $SHELL -i`
  *
  * @example

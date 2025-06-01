@@ -1,12 +1,13 @@
 /**
- * **go** - The Go programming language
+ * **+go.dev -- $SHELL -i** - The Go programming language
  *
  * @domain `go.dev`
  * @programs `go`, `gofmt`
  * @version `1.24.3` (66 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/go-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) +go.dev -- $SHELL -i`
- * @aliases `go`
+ * @aliases `+go.dev -- $SHELL -i`, `go`
  * @dependencies `openssl.org@1`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.go
+ * const pkg = pantry.godevSHELLi
  * // Or access via domain
  * const samePkg = pantry.godev
  * console.log(pkg === samePkg) // true
@@ -27,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/go-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const goPackage = {
+export const godevSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -136,14 +137,15 @@ export const goPackage = {
     '1.17.13',
     '1.16.15',
   ] as const,
-  fullPath: 'go.dev' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
+    '+go.dev -- $SHELL -i',
     'go',
   ] as const,
+  fullPath: 'go.dev' as const,
 }
 
-export type GoPackage = typeof goPackage
+export type GodevSHELLiPackage = typeof godevSHELLiPackage

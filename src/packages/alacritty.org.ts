@@ -5,6 +5,7 @@
  * @programs `alacritty`
  * @version `0.15.1` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/alacritty-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) alacritty`
  * @dependencies `linuxfreetype.orgfreedesktop.org/fontconfig`, `freetype.org`, `freedesktop.org/fontconfig`
  *

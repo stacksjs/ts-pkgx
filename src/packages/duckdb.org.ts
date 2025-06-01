@@ -5,6 +5,7 @@
  * @programs `duckdb`
  * @version `1.3.0` (19 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/duckdb-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) duckdb`
  *
  * @example

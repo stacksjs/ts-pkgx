@@ -5,6 +5,7 @@
  * @programs `jbig2dec`
  * @version `0.19.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jbig2dec-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) jbig2dec`
  *
  * @example

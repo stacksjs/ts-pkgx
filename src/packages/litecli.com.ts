@@ -5,6 +5,7 @@
  * @programs `litecli`
  * @version `1.15.0` (15 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/litecli-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) litecli`
  * @dependencies `pkgx.sh^1`, `sqlite.org^3.45`
  *

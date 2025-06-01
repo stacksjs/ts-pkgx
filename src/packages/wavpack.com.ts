@@ -5,6 +5,7 @@
  * @programs `wavpack`, `wvunpack`, `wvtag`, `wvgain`
  * @version `5.8.1` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wavpack-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +wavpack.com -- $SHELL -i`
  *
  * @example

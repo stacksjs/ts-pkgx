@@ -5,6 +5,7 @@
  * @programs `zipcmp`, `zipmerge`, `ziptool`
  * @version `1.11.4` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libzip-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +libzip.org -- $SHELL -i`
  * @aliases `zip`
  * @dependencies `facebook.com/zstd>=1.5.0`, `darwinsourceware.org/bzip2>=1.0.8tukaani.org/xz>=5.2.7zlib.net>=1.2.13`, `sourceware.org/bzip2>=1.0.8`, ... (+4 more)

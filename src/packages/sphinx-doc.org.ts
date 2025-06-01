@@ -5,6 +5,7 @@
  * @programs `sphinx-apidoc`, `sphinx-autogen`, `sphinx-build`, `sphinx-quickstart`
  * @version `8.2.3` (42 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sphinx-doc-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +sphinx-doc.org -- $SHELL -i`
  * @dependencies `python.org>=3.8<3.12`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.sphinx-docorg
+ * const pkg = pantry.sphinxdocorg
  * console.log(pkg.name)        // "sphinx"
  * console.log(pkg.description) // "Tool to create intelligent and beautiful docume..."
  * console.log(pkg.programs)    // ["sphinx-apidoc", "sphinx-autogen", ...]

@@ -5,6 +5,7 @@
  * @programs `just`
  * @version `1.40.0` (40 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/just-systems.md
+ *
  * @install `sh <(curl https://pkgx.sh) just`
  *
  * @example

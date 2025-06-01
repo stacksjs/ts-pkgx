@@ -1,20 +1,75 @@
-export const appiumioPackage = {
+/**
+ * **appium** - Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol
+ *
+ * @domain `appium.io`
+ * @programs `appium`
+ * @version `2.18.0` (36 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/appium-io.md
+ *
+ * @install `sh <(curl https://pkgx.sh) appium`
+ * @aliases `appium`
+ * @dependencies `npmjs.com`, `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`, `openjdk.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.appium
+ * // Or access via domain
+ * const samePkg = pantry.appiumio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "appium"
+ * console.log(pkg.description) // "Cross-platform automation framework for all kin..."
+ * console.log(pkg.programs)    // ["appium"]
+ * console.log(pkg.versions[0]) // "2.18.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/appium-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const appiumPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'appium' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'appium.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/appium.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) appium' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'appium',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'npmjs.com',
     'nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20',
     'openjdk.org',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '2.18.0',
     '2.17.1',
@@ -53,8 +108,14 @@ export const appiumioPackage = {
     '2.3.0',
     '2.2.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'appium',
+  ] as const,
   fullPath: 'appium.io' as const,
-  aliases: [] as const,
 }
 
-export type AppiumioPackage = typeof appiumioPackage
+export type AppiumPackage = typeof appiumPackage

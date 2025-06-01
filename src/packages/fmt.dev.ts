@@ -4,6 +4,7 @@
  * @domain `fmt.dev`
  * @version `11.2.0` (15 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fmt-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) +fmt.dev -- $SHELL -i`
  *
  * @example

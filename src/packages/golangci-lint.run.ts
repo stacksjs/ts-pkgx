@@ -5,13 +5,14 @@
  * @programs `golangci-lint`
  * @version `2.1.6` (52 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/golangci-lint-run.md
+ *
  * @install `sh <(curl https://pkgx.sh) golangci-lint`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.golangci-lintrun
+ * const pkg = pantry.golangcilintrun
  * console.log(pkg.name)        // "golangci-lint"
  * console.log(pkg.description) // "Fast linters runner for Go"
  * console.log(pkg.programs)    // ["golangci-lint"]

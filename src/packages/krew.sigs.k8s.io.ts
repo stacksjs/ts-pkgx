@@ -5,6 +5,7 @@
  * @programs `kubectl-krew`
  * @version `0.4.5` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/krew-sigs-k8s-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) kubectl-krew`
  * @aliases `kubectl-krew`
  * @dependencies `git-scm.org`

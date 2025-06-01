@@ -5,6 +5,7 @@
  * @programs `dgraph`
  * @version `24.1.3` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dgraph-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) dgraph`
  *
  * @example

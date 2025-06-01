@@ -5,6 +5,7 @@
  * @programs `leo`
  * @version `2.6.1` (13 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/leo-lang-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) leo`
  * @dependencies `openssl.org^1.1`, `curl.se^8.4`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.leo-langorg
+ * const pkg = pantry.leolangorg
  * console.log(pkg.name)        // "leo"
  * console.log(pkg.description) // "🦁 The Leo Programming Language. A Programming ..."
  * console.log(pkg.programs)    // ["leo"]

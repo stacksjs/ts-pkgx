@@ -5,13 +5,14 @@
  * @programs `prql-compiler`, `prqlc`
  * @version `0.13.4` (33 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/prql-lang-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +prql-lang.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.prql-langorg
+ * const pkg = pantry.prqllangorg
  * console.log(pkg.name)        // "prql"
  * console.log(pkg.description) // "PRQL is a modern language for transforming data..."
  * console.log(pkg.programs)    // ["prql-compiler", "prqlc"]

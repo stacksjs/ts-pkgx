@@ -5,6 +5,7 @@
  * @programs `ack`
  * @version `3.9.0` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/beyondgrep-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) ack`
  * @aliases `ack`
  * @dependencies `perl.org`

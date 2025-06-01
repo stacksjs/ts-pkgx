@@ -5,6 +5,7 @@
  * @programs `carapace`
  * @version `1.3.2` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/carapace-sh.md
+ *
  * @install `sh <(curl https://pkgx.sh) carapace`
  *
  * @example

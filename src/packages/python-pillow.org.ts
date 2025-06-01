@@ -1,13 +1,58 @@
-export const pythonpilloworgPackage = {
+/**
+ * **+python-pillow.org -- $SHELL -i** - Python Imaging Library (Fork)
+ *
+ * @domain `python-pillow.org`
+ * @version `11.2.1` (6 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/python-pillow-org.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +python-pillow.org -- $SHELL -i`
+ * @aliases `+python-pillow.org -- $SHELL -i`
+ * @dependencies `libjpeg-turbo.org^2`, `pngquant.org/lib^4`, `simplesystems.org/libtiff^4`, ... (+7 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.pythonpilloworgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.pythonpilloworg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "python-pillow.org"
+ * console.log(pkg.description) // "Python Imaging Library (Fork)"
+ * console.log(pkg.versions[0]) // "11.2.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/python-pillow-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const pythonpilloworgSHELLiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'python-pillow.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'python-pillow.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Python Imaging Library (Fork)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/python-pillow.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +python-pillow.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'libjpeg-turbo.org^2',
     'pngquant.org/lib^4',
@@ -20,6 +65,10 @@ export const pythonpilloworgPackage = {
     'zlib.net^1',
     'python.org~3.12',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '11.2.1',
     '11.1.0',
@@ -28,8 +77,14 @@ export const pythonpilloworgPackage = {
     '10.3.0',
     '10.2.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+python-pillow.org -- $SHELL -i',
+  ] as const,
   fullPath: 'python-pillow.org' as const,
-  aliases: [] as const,
 }
 
-export type PythonpilloworgPackage = typeof pythonpilloworgPackage
+export type PythonpilloworgSHELLiPackage = typeof pythonpilloworgSHELLiPackage

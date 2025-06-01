@@ -5,6 +5,7 @@
  * @programs `pipenv`
  * @version `3000.0.0` (48 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pipenv-pypa-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) pipenv`
  * @dependencies `pkgx.sh^1`
  * @companions `pip.pypa.io`

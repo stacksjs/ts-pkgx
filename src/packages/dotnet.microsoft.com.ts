@@ -5,6 +5,7 @@
  * @programs `dotnet`
  * @version `9.0.202` (32 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dotnet-microsoft-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) dotnet`
  * @dependencies `linuxunicode.org^71openssl.org`, `unicode.org^71`, `openssl.org`
  *

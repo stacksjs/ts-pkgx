@@ -5,13 +5,14 @@
  * @programs `micro`
  * @version `2.0.14` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/micro-editor-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) micro`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.micro-editorgithubio
+ * const pkg = pantry.microeditorgithubio
  * console.log(pkg.name)        // "micro"
  * console.log(pkg.description) // "A modern and intuitive terminal-based text editor"
  * console.log(pkg.programs)    // ["micro"]

@@ -5,6 +5,7 @@
  * @programs `pytest`
  * @version `8.3.5` (25 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pytest-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) pytest`
  * @dependencies `pkgx.sh^1`
  *

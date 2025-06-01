@@ -5,6 +5,7 @@
  * @programs `mvn`, `mvnDebug`, `mvnyjp`
  * @version `3.9.9` (9 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/maven-apache-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i`
  * @aliases `mvn`
  * @dependencies `openjdk.org`

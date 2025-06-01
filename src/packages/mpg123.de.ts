@@ -5,6 +5,7 @@
  * @programs `mpg123`
  * @version `1.32.10` (12 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mpg123-de.md
+ *
  * @install `sh <(curl https://pkgx.sh) mpg123`
  *
  * @example

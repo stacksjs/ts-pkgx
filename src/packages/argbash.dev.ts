@@ -5,6 +5,7 @@
  * @programs `argbash`, `argbash-init`, `argbash-1to2`
  * @version `2.11.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/argbash-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) +argbash.dev -- $SHELL -i`
  * @dependencies `gnu.org/bash>=3`, `gnu.org/autoconf`
  *

@@ -5,6 +5,7 @@
  * @programs `youtube-dl`
  * @version `2023.8.4` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/youtube-dl-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) youtube-dl`
  * @dependencies `python.org>=3<3.12`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.youtube-dlorg
+ * const pkg = pantry.youtubedlorg
  * console.log(pkg.name)        // "youtube-dl"
  * console.log(pkg.description) // "Command-line program to download videos from Yo..."
  * console.log(pkg.programs)    // ["youtube-dl"]

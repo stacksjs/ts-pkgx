@@ -5,6 +5,7 @@
  * @programs `opensearch`, `opensearch-keystore`, `opensearch-plugin`, `opensearch-shard`
  * @version `3.0.0` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/opensearch-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +opensearch.org -- $SHELL -i`
  * @dependencies `openjdk.org^21`, `openmp.llvm.org^17`
  *

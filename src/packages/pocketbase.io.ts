@@ -1,16 +1,66 @@
-export const pocketbaseioPackage = {
+/**
+ * **pocketbase** - Open source backend for your next project in 1 file
+ *
+ * @domain `pocketbase.io`
+ * @programs `pocketbase`
+ * @version `0.28.2` (80 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pocketbase-io.md
+ *
+ * @install `sh <(curl https://pkgx.sh) pocketbase`
+ * @aliases `pocketbase`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.pocketbase
+ * // Or access via domain
+ * const samePkg = pantry.pocketbaseio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "pocketbase"
+ * console.log(pkg.description) // "Open source backend for your next project in 1 ..."
+ * console.log(pkg.programs)    // ["pocketbase"]
+ * console.log(pkg.versions[0]) // "0.28.2" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/pocketbase-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const pocketbasePackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'pocketbase' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'pocketbase.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Open source backend for your next project in 1 file' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pocketbase.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) pocketbase' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'pocketbase',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '0.28.2',
     '0.28.1',
@@ -93,8 +143,14 @@ export const pocketbaseioPackage = {
     '0.21.0',
     '0.20.7',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'pocketbase',
+  ] as const,
   fullPath: 'pocketbase.io' as const,
-  aliases: [] as const,
 }
 
-export type PocketbaseioPackage = typeof pocketbaseioPackage
+export type PocketbasePackage = typeof pocketbasePackage

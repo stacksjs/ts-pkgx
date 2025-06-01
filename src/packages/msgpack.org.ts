@@ -4,6 +4,7 @@
  * @domain `msgpack.org`
  * @version `6.0.2` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/msgpack-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +msgpack.org -- $SHELL -i`
  *
  * @example

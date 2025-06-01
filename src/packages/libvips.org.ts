@@ -5,6 +5,7 @@
  * @programs `vips`, `vipsedit`, `vipsheader`, `vipsprofile`, `vipsthumbnail`
  * @version `8.16.1` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libvips-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i`
  * @aliases `vips`
  * @dependencies `mozilla.org/mozjpeg`, `cairographics.org`, `heasarc.gsfc.nasa.gov/cfitsio`, ... (+24 more)

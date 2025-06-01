@@ -5,6 +5,7 @@
  * @programs `aspell`, `aspell-import`, `precat`, `preunzip`, `prezip`, ... (+4 more)
  * @version `0.60.8.1` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/aspell-net.md
+ *
  * @install `sh <(curl https://pkgx.sh) +aspell.net -- $SHELL -i`
  *
  * @example

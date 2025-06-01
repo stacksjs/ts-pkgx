@@ -5,6 +5,7 @@
  * @programs `bcrypt`
  * @version `1.1.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bcrypt-sourceforge-net.md
+ *
  * @install `sh <(curl https://pkgx.sh) bcrypt`
  * @dependencies `zlib.net`
  *

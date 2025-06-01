@@ -5,6 +5,7 @@
  * @programs `wunderctl`
  * @version `0.181.0` (20 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wundergraph-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) wunderctl`
  * @aliases `wunderctl`
  *

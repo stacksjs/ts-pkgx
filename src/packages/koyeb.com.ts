@@ -5,6 +5,7 @@
  * @programs `koyeb`
  * @version `5.5.1` (36 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/koyeb-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) koyeb`
  *
  * @example

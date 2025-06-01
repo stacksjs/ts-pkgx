@@ -5,6 +5,7 @@
  * @programs `aria2c`
  * @version `1.37.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/aria2-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) aria2c`
  * @aliases `aria2c`
  * @dependencies `zlib.net^1`, `openssl.org^1`, `libexpat.github.io`, ... (+1 more)

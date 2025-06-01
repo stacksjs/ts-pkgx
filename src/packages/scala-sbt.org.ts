@@ -5,6 +5,7 @@
  * @programs `sbt`
  * @version `1.11.0` (19 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/scala-sbt-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) sbt`
  * @aliases `sbt`
  * @dependencies `openjdk.org`
@@ -16,7 +17,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.sbt
  * // Or access via domain
- * const samePkg = pantry.scala-sbtorg
+ * const samePkg = pantry.scalasbtorg
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "sbt"
  * console.log(pkg.description) // "sbt, the interactive build tool"

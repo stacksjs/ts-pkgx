@@ -5,6 +5,7 @@
  * @programs `microcks-cli`
  * @version `0.9.0` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/microcks-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) microcks-cli`
  * @aliases `microcks-cli`
  * @dependencies `curl.se/ca-certs`

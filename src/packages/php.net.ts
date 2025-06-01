@@ -5,6 +5,7 @@
  * @programs `pear`, `pecl`, `phar`, `php`, `php-cgi`, ... (+3 more)
  * @version `8.4.7` (71 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/php-net.md
+ *
  * @install `sh <(curl https://pkgx.sh) +php.net -- $SHELL -i`
  * @aliases `php`
  * @dependencies `gnu.org/bison^3`, `re2c.org^3`, `apache.org/apr^1`, ... (+28 more)

@@ -5,6 +5,7 @@
  * @programs `laravel`
  * @version `5.15.0` (16 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/laravel-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) laravel`
  * @dependencies `php.net^8.2`, `getcomposer.org^2.7`, `linuxinfo-zip.org/unzip^6`, ... (+1 more)
  *

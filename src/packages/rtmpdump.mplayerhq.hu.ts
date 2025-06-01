@@ -5,6 +5,7 @@
  * @programs `rtmpdump`, `rtmpgw`, `rtmpsrv`, `rtmpsuck`
  * @version `2.3.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rtmpdump-mplayerhq-hu.md
+ *
  * @install `sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `zlib.net`
  *

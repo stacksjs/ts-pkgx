@@ -115,10 +115,10 @@ export function saveToCacheAndOutput(
 // Global browser instance to be shared across fetches (only used when not in concurrent mode)
 let sharedBrowser: Browser | null = null
 
-// Browser pool for concurrent operations
+// Browser pool for concurrent operations (legacy - kept for compatibility)
 const browserPool: { browser: Browser, inUse: boolean, createdAt: number }[] = []
-// Maximum number of browsers to keep in the pool (will be set based on concurrency)
-let MAX_BROWSER_POOL_SIZE = 10 // Default limit, can be adjusted based on concurrency setting
+// Maximum number of browsers to keep in the pool (legacy - kept for compatibility)
+const MAX_BROWSER_POOL_SIZE = 10 // Default limit, can be adjusted based on concurrency setting
 
 // Function to check system resources and adjust behavior
 function getSystemResourceStatus() {
@@ -235,7 +235,7 @@ export async function cleanupBrowserResources(): Promise<void> {
 /**
  * Get a browser from the pool or create a new one if needed
  */
-async function acquireBrowser(timeout: number): Promise<Browser | null> {
+async function _acquireBrowser(timeout: number): Promise<Browser | null> {
   // Check system resources before proceeding
   const resourceStatus = getSystemResourceStatus()
   if (resourceStatus.isUnderStress) {
@@ -377,7 +377,7 @@ async function acquireBrowser(timeout: number): Promise<Browser | null> {
 /**
  * Release a browser back to the pool
  */
-function releaseBrowser(browser: Browser): void {
+function _releaseBrowser(browser: Browser): void {
   const entry = browserPool.find(entry => entry.browser === browser)
   if (entry) {
     entry.inUse = false
@@ -608,6 +608,65 @@ export async function fetchPkgxPackage(
         const dependencies = getItemsBelowHeading('Dependencies')
         const versions = getItemsBelowHeading('Versions')
 
+        // Extract aliases from the install command
+        const aliases: string[] = []
+
+        // Look for aliases in the install command - pkgx.dev shows install commands like "sh <(curl https://pkgx.sh) aws"
+        // The part after the curl command is usually the primary alias
+        if (installCommand) {
+          const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(.+)/)
+          if (installMatch && installMatch[1]) {
+            const primaryAlias = installMatch[1].trim()
+            if (primaryAlias && primaryAlias !== domain) {
+              aliases.push(primaryAlias)
+            }
+          }
+        }
+
+        // For AWS CLI specifically, add known aliases
+        if (domain === 'aws.amazon.com/cli' || name === 'aws/cli') {
+          if (!aliases.includes('aws'))
+            aliases.push('aws')
+          if (!aliases.includes('aws/cli'))
+            aliases.push('aws/cli')
+          // Note: 'cli' alone is NOT an alias for AWS CLI - the install command uses 'aws'
+        }
+
+        // For AWS CDK specifically, add known aliases
+        if (domain === 'aws.amazon.com/cdk' || name === 'aws/cdk') {
+          if (!aliases.includes('cdk'))
+            aliases.push('cdk')
+          if (!aliases.includes('aws/cdk'))
+            aliases.push('aws/cdk')
+        }
+
+        // For other packages, only add path components as aliases if they make sense
+        // Don't automatically add the last part of a path as an alias unless it's confirmed
+        if (domain && domain.includes('/')) {
+          const parts = domain.split('/')
+          const lastPart = parts[parts.length - 1]
+
+          // Only add the last part as an alias if:
+          // 1. It's different from the name
+          // 2. It appears in the install command as a standalone command
+          // 3. It's a meaningful standalone identifier (not just a generic word like 'cli')
+          if (lastPart && lastPart !== name && installCommand) {
+            const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(.+)/)
+            if (installMatch && installMatch[1]) {
+              const installAlias = installMatch[1].trim()
+              // Only add if the install command specifically uses this part
+              if (installAlias === lastPart && !aliases.includes(lastPart)) {
+                aliases.push(lastPart)
+              }
+            }
+          }
+        }
+
+        // If the name is different from domain and looks like an alias, add it
+        if (name && name !== domain && name.length < domain.length && !aliases.includes(name)) {
+          aliases.push(name)
+        }
+
         // Return two separate objects to avoid type issues
         return {
           possibleAlias,
@@ -623,6 +682,7 @@ export async function fetchPkgxPackage(
             companions,
             dependencies,
             versions,
+            aliases,
           },
         }
       })
@@ -908,7 +968,7 @@ async function fetchVersionsFromGitHub(packageName: string): Promise<string[]> {
   }
 }
 
-function generateProgressBar(completed: number, total: number, width = 30): string {
+function _generateProgressBar(completed: number, total: number, width = 30): string {
   const percentage = Math.min(100, Math.round((completed / total) * 100))
   const filledWidth = Math.round((width * completed) / total)
   const emptyWidth = width - filledWidth
@@ -1020,126 +1080,96 @@ export function startPeriodicCleanup(): void {
  * Fetches and saves all packages with proper concurrency support
  */
 export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {}): Promise<string[]> {
-  // Start the periodic cleanup task
-  startPeriodicCleanup()
-
   const timeout = options.timeout || DEFAULT_TIMEOUT_MS
   const outputDir = options.outputDir || 'packages'
   const cacheDir = options.cacheDir || DEFAULT_CACHE_DIR
   const useCache = options.cache !== false
   const cacheExpirationMinutes = options.cacheExpirationMinutes || DEFAULT_CACHE_EXPIRATION_MINUTES
-  const concurrency = options.concurrency || 10
+  const concurrency = Math.min(options.concurrency || 8, 12) // Reduce max concurrency to prevent browser launch failures
 
-  // Set the browser pool size to match concurrency for 1:1 ratio, but cap it for system stability
-  // This gives each concurrent request its own browser for better performance
-  let maxBrowsers = 10 // Allow up to 10 browsers
-  if (concurrency > 15) {
-    maxBrowsers = 10 // Cap at 10 even for very high concurrency
-  }
-  MAX_BROWSER_POOL_SIZE = Math.min(concurrency, maxBrowsers)
+  console.log(`Starting bulk fetch with concurrency: ${concurrency}, timeout: ${timeout}ms`)
 
-  // Use the requested concurrency
-  const actualConcurrency = concurrency
-
-  console.log(`Using timeout: ${timeout}ms for all operations`)
-  console.log(`Using concurrency: ${actualConcurrency} concurrent requests (browser pool size: ${MAX_BROWSER_POOL_SIZE})`)
-
-  // Track progress and timing
   const startTime = Date.now()
-  let lastCleanupTime = startTime
+  let allPackageNames: string[] = []
 
   try {
-    console.log('Fetching all packages...')
-
-    // Start by fetching the complete list from GitHub API
-    let allPackageNames: string[] = []
+    // Get package list from GitHub API first (fastest method)
+    console.log('Fetching package list from GitHub API...')
     try {
-      // This is now our primary source of package information
       const projects = await fetchPkgxProjects()
       allPackageNames = projects.map(project => project.name)
       console.log(`Found ${allPackageNames.length} packages from GitHub API`)
     }
     catch (githubError) {
-      console.error(`Error fetching from GitHub API: ${githubError}`)
-
-      // Fall back to web scraping if GitHub API fails
-      console.log('Falling back to web scraping...')
-
-      try {
-        // Launch browser for web scraping (not shared, just for this operation)
-        const scrapingBrowser = await chromium.launch({
-          headless: true,
-          timeout: timeout / 2,
-        })
-
-        try {
-          const context = await scrapingBrowser.newContext()
-          const page = await context.newPage()
-
-          console.log('Navigating to pkgx.dev/pkgs...')
-          await page.goto('https://pkgx.dev/pkgs', {
-            timeout,
-            waitUntil: 'networkidle',
-          })
-
-          // Wait for client-side rendering
-          await page.waitForTimeout(2000)
-
-          console.log('Extracting package list...')
-          allPackageNames = await page.evaluate(() => {
-            const packageElements = Array.from(document.querySelectorAll('a[href^="/pkgs/"]'))
-            return packageElements
-              .map((link) => {
-                const href = (link as HTMLAnchorElement).href
-                const path = href.split('/pkgs/')[1]
-                return path ? path.replace(/\/$/, '') : null
-              })
-              .filter(Boolean) as string[]
-          })
-
-          console.log(`Found ${allPackageNames.length} packages from web scraping`)
-        }
-        finally {
-          // Close the scraping browser
-          await scrapingBrowser.close()
-        }
-      }
-      catch (scrapingError) {
-        console.error(`Error with web scraping fallback: ${scrapingError}`)
-      }
-    }
-
-    // If both methods failed or returned too few packages, use our built-in list
-    if (allPackageNames.length < 600) {
-      console.log(`Package count seems low (${allPackageNames.length}), using built-in package list...`)
-
-      // Merge with any packages we already found to ensure we have a complete list
-      const combinedList = [...new Set([...allPackageNames, ...ALL_KNOWN_PACKAGES])]
-      allPackageNames = combinedList
-
-      console.log(`Combined with built-in list, now have ${allPackageNames.length} packages`)
+      console.error(`GitHub API failed: ${githubError}`)
+      console.log('Using built-in package list as fallback...')
+      allPackageNames = [...ALL_KNOWN_PACKAGES]
     }
 
     // Apply limit if specified
-    if (options.limit && options.limit > 0 && options.limit < allPackageNames.length) {
-      console.log(`Limiting to ${options.limit} packages as requested`)
+    if (options.limit && options.limit > 0) {
       allPackageNames = allPackageNames.slice(0, options.limit)
+      console.log(`Limited to ${allPackageNames.length} packages`)
     }
 
-    // Process packages in chunks for concurrency
     const processedDomains = new Set<string>()
     const savedPackages: string[] = []
     const failedPackages: string[] = []
 
-    // Define a function to process a single package with its own browser instance
+    // Use a shared browser pool with better management
+    const browserPool: Browser[] = []
+    const maxBrowsers = Math.min(concurrency, 6) // Limit total browsers to prevent system overload
+
+    // Pre-launch browsers to avoid launch timeouts during processing
+    console.log(`Pre-launching ${maxBrowsers} browsers...`)
+    for (let i = 0; i < maxBrowsers; i++) {
+      try {
+        const browser = await chromium.launch({
+          headless: true,
+          timeout: 10000, // Longer timeout for initial launch
+          args: [
+            '--no-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-gpu',
+            '--disable-web-security',
+            '--disable-features=VizDisplayCompositor',
+            '--memory-pressure-off',
+            '--max_old_space_size=256',
+            '--disable-background-timer-throttling',
+            '--disable-backgrounding-occluded-windows',
+            '--disable-renderer-backgrounding',
+            '--disable-extensions',
+            '--disable-plugins',
+            '--disable-images',
+            '--disable-javascript',
+          ],
+        })
+        browserPool.push(browser)
+        console.log(`Launched browser ${i + 1}/${maxBrowsers}`)
+
+        // Small delay between launches to prevent overwhelming the system
+        await new Promise(resolve => setTimeout(resolve, 500))
+      }
+      catch (error) {
+        console.error(`Failed to launch browser ${i + 1}: ${error}`)
+        // Continue with fewer browsers if some fail to launch
+      }
+    }
+
+    console.log(`Successfully launched ${browserPool.length} browsers`)
+
+    // Simple semaphore for concurrency control
+    let activeRequests = 0
+    let browserIndex = 0
+
+    // Process a single package with improved error handling
     const processPackage = async (packageName: string): Promise<string | null> => {
-      // Skip if we've already processed this domain
+      // Skip if already processed
       if (processedDomains.has(packageName)) {
-        console.log(`Skipping ${packageName} (already processed)`)
         return null
       }
 
-      // Check cache first if enabled
+      // Check cache first
       if (useCache) {
         const cachedPackage = getValidCachedPackage(packageName, {
           cacheDir,
@@ -1151,285 +1181,157 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
           const fullDomainName = packageInfo.domain || packageName
           const safeFilename = fullDomainName.replace(/\//g, '-')
 
-          // Generate TypeScript file in the output directory
+          // Generate TypeScript file
           savePackageAsTypeScript(outputDir, safeFilename, packageInfo)
-          console.log(`Used cached data for ${packageName} (generated TypeScript)`)
 
-          // Mark this domain as processed
+          // Mark as processed
           processedDomains.add(fullDomainName)
-
-          // Also mark any aliases as processed
-          if (packageInfo.aliases && packageInfo.aliases.length > 0) {
-            for (const alias of packageInfo.aliases) {
-              processedDomains.add(alias)
-            }
+          if (packageInfo.aliases) {
+            packageInfo.aliases.forEach(alias => processedDomains.add(alias))
           }
 
           return fullDomainName
         }
       }
 
-      let browser = null
+      // Get a browser from the pool (round-robin)
+      if (browserPool.length === 0) {
+        console.error(`No browsers available for ${packageName}`)
+        return null
+      }
+
+      const browser = browserPool[browserIndex % browserPool.length]
+      browserIndex++
+
       try {
-        // Only acquire a browser if we didn't find the package in cache
-        browser = await acquireBrowser(timeout)
-
-        // If browser acquisition failed, skip this package
-        if (!browser) {
-          console.error(`Failed to acquire browser for ${packageName}, skipping`)
-          failedPackages.push(packageName)
-          return null
-        }
-
-        // Fetch and save the package with a timeout to prevent hanging
-        const fetchPromise = fetchAndSavePackage(
-          packageName,
-          outputDir,
-          timeout,
-          false, // Save as TypeScript instead of JSON
-          1, // First attempt
-          3, // Max retries
-          options.debug || false,
-          { // Pass the same cache options
-            cacheDir,
-            cache: useCache,
-            cacheExpirationMinutes,
-            browser, // Now correctly passing the browser instance
-          },
-        )
-
-        // Set a package-specific timeout as a safety measure
-        const packageTimeout = timeout // Use the same flat timeout
+        // Fetch the package with timeout
         const result = await Promise.race([
-          fetchPromise,
+          fetchAndSavePackage(
+            packageName,
+            outputDir,
+            timeout,
+            false, // Save as TypeScript
+            1, // First attempt only for bulk operation
+            1, // No retries for bulk operation
+            false, // No debug
+            {
+              cacheDir,
+              cache: useCache,
+              cacheExpirationMinutes,
+              browser,
+            },
+          ),
           new Promise<null>((resolve) => {
             setTimeout(() => {
-              console.error(`Package ${packageName} processing timed out after ${packageTimeout}ms`)
+              console.warn(`Timeout processing ${packageName} after ${timeout}ms`)
               resolve(null)
-            }, packageTimeout)
+            }, timeout + 2000) // Add buffer to operation timeout
           }),
         ])
 
-        if (!result) {
-          // Timeout occurred
-          failedPackages.push(packageName)
-          console.error(`Skipping ${packageName} due to timeout`)
-          return null
-        }
-
-        if (result.success && result.fullDomainName) {
-          // Mark this domain as processed
+        if (result?.success && result.fullDomainName) {
           processedDomains.add(result.fullDomainName)
-
-          // Also mark any aliases as processed
-          if (result.aliases && result.aliases.length > 0) {
-            for (const alias of result.aliases) {
-              processedDomains.add(alias)
-            }
+          if (result.aliases) {
+            result.aliases.forEach(alias => processedDomains.add(alias))
           }
-
           return result.fullDomainName
         }
-        else {
-          // Failed to fetch - check if we have an existing file to preserve
-          const safeFilename = packageName.replace(/\//g, '-')
-          const existingFilePath = path.join(outputDir, `${safeFilename}.ts`)
 
-          if (fs.existsSync(existingFilePath)) {
-            console.log(`Preserving existing file for ${packageName} at ${existingFilePath}`)
-            // Mark as processed to avoid overwriting
-            processedDomains.add(packageName)
-            return packageName
-          }
-
-          // No existing file, mark as failed
-          failedPackages.push(packageName)
-          return null
-        }
-      }
-      catch (error) {
-        const errorString = String(error)
-
-        // Check for specific Playwright errors that indicate browser disconnection
-        if (errorString.includes('No target found for targetId')
-          || errorString.includes('Target page, context or browser has been closed')
-          || errorString.includes('Protocol error')
-          || errorString.includes('Assertion error')
-          || errorString.includes('Connection closed')
-          || errorString.includes('Browser has been closed')
-          || errorString.includes('Target closed')
-          || errorString.includes('Session closed')) {
-          console.error(`Browser disconnection error for ${packageName}: ${errorString.substring(0, 100)}...`)
-
-          // Force cleanup of all browsers when we get these errors
-          console.log('Forcing browser cleanup due to connection errors...')
-          await cleanupBrowserResources()
-
-          // Wait longer before continuing
-          await new Promise(resolve => setTimeout(resolve, 3000))
-        }
-        else {
-          console.error(`Error processing package ${packageName}:`, error)
-        }
-
-        // Always add to failed packages and continue processing
-        failedPackages.push(packageName)
-        console.log(`Added ${packageName} to failed packages list, continuing with remaining packages...`)
         return null
       }
-      finally {
-        // Always release the browser back to the pool if we acquired one
-        if (browser) {
-          try {
-            releaseBrowser(browser)
-          }
-          catch (error) {
-            console.error(`Error releasing browser for ${packageName}:`, error)
-            // If we can't release the browser, try to close it to prevent leaks
-            try {
-              await browser.close().catch(() => {})
-            }
-            catch {
-              // Ignore any close errors
-            }
-          }
-        }
+      catch (error) {
+        // Log error but don't let it stop the process
+        const errorMsg = String(error).substring(0, 100)
+        console.error(`Error processing ${packageName}: ${errorMsg}`)
+        return null
       }
     }
 
-    // Process all packages in parallel with controlled concurrency
-    console.log(`Processing ${allPackageNames.length} packages with concurrency of ${actualConcurrency}...`)
+    // Process packages with controlled concurrency using Promise.allSettled
+    console.log(`Processing ${allPackageNames.length} packages...`)
 
-    // Set a maximum time for the entire operation (30 minutes)
-    const maxOperationTime = 30 * 60 * 1000 // 30 minutes
-    const operationStartTime = Date.now()
-
-    // Create chunks for better progress reporting
-    // Use the full concurrency setting for chunk size
-    const chunkSize = actualConcurrency
-    const chunks: string[][] = []
-    for (let i = 0; i < allPackageNames.length; i += chunkSize) {
-      chunks.push(allPackageNames.slice(i, i + chunkSize))
+    const batchSize = 25 // Smaller batches for better progress reporting and resource management
+    const batches: string[][] = []
+    for (let i = 0; i < allPackageNames.length; i += batchSize) {
+      batches.push(allPackageNames.slice(i, i + batchSize))
     }
 
-    console.log(`Split into ${chunks.length} chunks for processing`)
+    for (let batchIndex = 0; batchIndex < batches.length; batchIndex++) {
+      const batch = batches[batchIndex]
+      console.log(`Processing batch ${batchIndex + 1}/${batches.length} (${batch.length} packages)`)
 
-    // Process chunk by chunk
-    for (let chunkIndex = 0; chunkIndex < chunks.length; chunkIndex++) {
-      try {
-        // Check if we've exceeded the maximum operation time
-        if (Date.now() - operationStartTime > maxOperationTime) {
-          console.log(`Maximum operation time (${maxOperationTime / 60000} minutes) exceeded, stopping processing`)
-          break
+      // Create semaphore-controlled promises
+      const batchPromises = batch.map(async (packageName) => {
+        // Wait for available slot
+        // eslint-disable-next-line no-unmodified-loop-condition
+        while (activeRequests >= concurrency) {
+          await new Promise(resolve => setTimeout(resolve, 50))
         }
 
-        const chunk = chunks[chunkIndex]
-        console.log(`Processing chunk ${chunkIndex + 1}/${chunks.length} (${chunk.length} packages)`)
-
-        // Process this chunk of packages concurrently with error isolation
-        const chunkPromises = chunk.map(packageName =>
-          processPackage(packageName).catch((error) => {
-            const errorString = String(error)
-            console.error(`Critical error processing ${packageName}:`, errorString.substring(0, 200))
-
-            // Check for browser errors and trigger cleanup
-            if (errorString.includes('No target found for targetId')
-              || errorString.includes('Assertion error')
-              || errorString.includes('Target page, context or browser has been closed')
-              || errorString.includes('Protocol error')) {
-              console.error('Browser error detected, triggering cleanup...')
-              // Trigger cleanup asynchronously without blocking
-              cleanupBrowserResources().catch(() => {})
-            }
-
+        activeRequests++
+        try {
+          const result = await processPackage(packageName)
+          if (result) {
+            savedPackages.push(result)
+          }
+          else {
             failedPackages.push(packageName)
-            return null
-          }),
-        )
-
-        const chunkResults = await Promise.allSettled(chunkPromises)
-
-        // Extract successful results from settled promises
-        const successfulResults = chunkResults
-          .filter(result => result.status === 'fulfilled' && result.value !== null)
-          .map(result => (result as PromiseFulfilledResult<string>).value)
-
-        // Add successfully processed packages to results
-        savedPackages.push(...successfulResults)
-
-        // Add a delay between chunks to prevent system overload
-        if (chunkIndex < chunks.length - 1) { // Don't delay after the last chunk
-          // With 1:1 browser ratio, we can use more predictable delays
-          let baseDelay = 2000 // Base 2 second delay
-          if (actualConcurrency > 10) {
-            baseDelay = 4000 // 4 seconds for high concurrency
           }
-          else if (actualConcurrency > 6) {
-            baseDelay = 3000 // 3 seconds for medium concurrency
-          }
-
-          console.log(`Waiting ${Math.round(baseDelay / 1000)}s between chunks (concurrency: ${actualConcurrency}, browsers: ${MAX_BROWSER_POOL_SIZE})`)
-          await new Promise(resolve => setTimeout(resolve, baseDelay))
+          return result
         }
-      }
-      catch (chunkError) {
-        console.error(`Error processing chunk ${chunkIndex + 1}:`, chunkError)
-        // Continue with next chunk even if this one fails completely
-        continue
-      }
+        finally {
+          activeRequests--
+        }
+      })
 
-      // Report progress
-      const now = Date.now()
-      const elapsedSeconds = Math.round((now - startTime) / 1000)
+      // Wait for batch to complete
+      await Promise.allSettled(batchPromises)
+
+      // Progress reporting
       const processedCount = savedPackages.length + failedPackages.length
-      const remainingCount = allPackageNames.length - processedCount
       const completedPercent = Math.round((processedCount / allPackageNames.length) * 100)
-      const progressBar = generateProgressBar(processedCount, allPackageNames.length)
+      const elapsedSeconds = Math.round((Date.now() - startTime) / 1000)
+      const rate = processedCount / elapsedSeconds
+      const estimatedTotal = Math.round(allPackageNames.length / rate)
 
-      console.log(`${progressBar} Completed chunk ${chunkIndex + 1}/${chunks.length}, processed ${processedCount}/${allPackageNames.length} (${completedPercent}%), ${failedPackages.length} failed, ${remainingCount} remaining, elapsed time: ${elapsedSeconds}s`)
+      console.log(`Batch ${batchIndex + 1}/${batches.length} complete. Progress: ${processedCount}/${allPackageNames.length} (${completedPercent}%) | Success: ${savedPackages.length} | Failed: ${failedPackages.length} | Rate: ${rate.toFixed(1)}/s | ETA: ${Math.max(0, estimatedTotal - elapsedSeconds)}s`)
 
-      // Periodic cleanup of browser resources to prevent memory issues
-      // With 1:1 browser to concurrency ratio, we can be less aggressive with cleanup
-      const cleanupFrequency = Math.max(2, Math.floor(10 / Math.max(actualConcurrency / 5, 1))) // Less frequent cleanup
-      if (browserPool.length >= MAX_BROWSER_POOL_SIZE
-        || (chunkIndex + 1) % cleanupFrequency === 0 // Every N chunks based on concurrency
-        || (now - lastCleanupTime > 30 * 1000)) { // 30 seconds
-        console.log('Performing periodic browser resource cleanup...')
-        await cleanupBrowserResources()
-        lastCleanupTime = now
-
-        // Longer delay to let system recover after cleanup, scaled by concurrency
-        const recoveryDelayMs = Math.max(3000, Math.min(actualConcurrency * 300, 8000)) // 3-8s recovery time
-        await new Promise(resolve => setTimeout(resolve, recoveryDelayMs))
+      // Small delay between batches to prevent overwhelming the system
+      if (batchIndex < batches.length - 1) {
+        await new Promise(resolve => setTimeout(resolve, 1000))
       }
     }
 
-    console.log(`Successfully fetched ${savedPackages.length} packages, ${failedPackages.length} failed`)
-
-    if (failedPackages.length > 0) {
-      console.log(`Failed packages: ${failedPackages.slice(0, 10).join(', ')}${failedPackages.length > 10 ? '...' : ''}`)
+    // Clean up browser pool
+    console.log('Cleaning up browser pool...')
+    for (let i = 0; i < browserPool.length; i++) {
+      try {
+        await Promise.race([
+          browserPool[i].close(),
+          new Promise(resolve => setTimeout(resolve, 3000)),
+        ])
+        console.log(`Closed browser ${i + 1}/${browserPool.length}`)
+      }
+      catch (error) {
+        console.error(`Error closing browser ${i + 1}: ${error}`)
+      }
     }
 
-    // Generate index
-    if (savedPackages.length > 0) {
-      console.log('Regenerating package index...')
-      // The generateIndex function would be called here if available
+    const totalTime = Math.round((Date.now() - startTime) / 1000)
+    console.log(`\nCompleted in ${totalTime}s. Successfully processed: ${savedPackages.length}, Failed: ${failedPackages.length}`)
+
+    if (failedPackages.length > 0 && failedPackages.length <= 20) {
+      console.log(`Failed packages: ${failedPackages.join(', ')}`)
+    }
+    else if (failedPackages.length > 20) {
+      console.log(`Failed packages (first 20): ${failedPackages.slice(0, 20).join(', ')}...`)
     }
 
     return savedPackages
   }
   catch (error) {
-    console.error('Error during package fetching:', error)
+    console.error('Error during bulk package fetching:', error)
     throw error
-  }
-  finally {
-    // Clean up browser resources
-    await cleanupBrowserResources()
-    // Clean up the interval when finished
-    if (cleanupInterval) {
-      clearInterval(cleanupInterval)
-      cleanupInterval = null
-    }
   }
 }
 
@@ -1547,6 +1449,7 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
 
   // Installation command
   if (packageInfo.installCommand) {
+    lines.push(` *`)
     lines.push(` * @install \`${packageInfo.installCommand}\``)
   }
 
@@ -1586,7 +1489,8 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
   if (packageInfo.aliases && packageInfo.aliases.length > 0) {
     const primaryAlias = packageInfo.aliases[0]
     const aliasVarName = primaryAlias.replace(/[^a-z0-9]/gi, '')
-    const domainVarName = getDomainAsTypescriptName(domainName)
+    // Use the same function as the index generation to ensure consistency
+    const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
 
     lines.push(` * // Access via alias (recommended)`)
     lines.push(` * const pkg = pantry.${aliasVarName}`)
@@ -1595,7 +1499,8 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
     lines.push(` * console.log(pkg === samePkg) // true`)
   }
   else {
-    const domainVarName = getDomainAsTypescriptName(domainName)
+    // Use the same function as the index generation to ensure consistency
+    const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
     lines.push(` * const pkg = pantry.${domainVarName}`)
   }
 
@@ -1985,9 +1890,14 @@ export async function fetchAndSavePackage(
         // Add aliases information to the package info
         const knownAliases: string[] = []
 
+        // Start with aliases that were extracted from the web scraping
+        if (packageInfo.aliases && packageInfo.aliases.length > 0) {
+          knownAliases.push(...packageInfo.aliases)
+        }
+
         // Check if this is the target of an alias in PACKAGE_ALIASES
         for (const [alias, target] of Object.entries(PACKAGE_ALIASES)) {
-          if (target === fullDomainName) {
+          if (target === fullDomainName && !knownAliases.includes(alias)) {
             knownAliases.push(alias)
           }
         }
@@ -1997,8 +1907,10 @@ export async function fetchAndSavePackage(
           knownAliases.push(originalName)
         }
 
-        // Use the subpath component as an alias (e.g., 'acorn-cli' for 'acorn.io/acorn-cli')
-        if (!knownAliases.includes(subPath)) {
+        // Only add the subpath component as an alias if it makes sense
+        // Don't add generic words like 'cli', 'app', 'tool' as standalone aliases
+        const genericWords = ['cli', 'app', 'tool', 'server', 'client', 'api', 'lib', 'core']
+        if (!knownAliases.includes(subPath) && !genericWords.includes(subPath.toLowerCase())) {
           knownAliases.push(subPath)
         }
 
@@ -2086,9 +1998,10 @@ export async function fetchAndSavePackage(
                   versions: [],
                 }
 
-                // Add the aliases
+                // Add the aliases (only if not generic)
                 const safeFilename = packageName.replace(/\//g, '-')
-                const knownAliases = [subPath]
+                const genericWords = ['cli', 'app', 'tool', 'server', 'client', 'api', 'lib', 'core']
+                const knownAliases = genericWords.includes(subPath.toLowerCase()) ? [] : [subPath]
 
                 const enhancedPackageInfo = {
                   ...packageInfo,
@@ -2230,9 +2143,14 @@ export async function fetchAndSavePackage(
         // Add aliases information to the package info
         const knownAliases: string[] = []
 
+        // Start with aliases that were extracted from the web scraping
+        if (packageInfo.aliases && packageInfo.aliases.length > 0) {
+          knownAliases.push(...packageInfo.aliases)
+        }
+
         // Check if this is the target of an alias in PACKAGE_ALIASES
         for (const [alias, target] of Object.entries(PACKAGE_ALIASES)) {
-          if (target === fullDomainName) {
+          if (target === fullDomainName && !knownAliases.includes(alias)) {
             knownAliases.push(alias)
           }
         }

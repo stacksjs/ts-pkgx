@@ -1,16 +1,66 @@
-export const mailpitaxllentorgPackage = {
+/**
+ * **mailpit** - An email and SMTP testing tool with API for developers
+ *
+ * @domain `mailpit.axllent.org`
+ * @programs `mailpit`
+ * @version `1.25.1` (65 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mailpit-axllent-org.md
+ *
+ * @install `sh <(curl https://pkgx.sh) mailpit`
+ * @aliases `mailpit`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.mailpit
+ * // Or access via domain
+ * const samePkg = pantry.mailpitaxllentorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "mailpit"
+ * console.log(pkg.description) // "An email and SMTP testing tool with API for dev..."
+ * console.log(pkg.programs)    // ["mailpit"]
+ * console.log(pkg.versions[0]) // "1.25.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/mailpit-axllent-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const mailpitPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'mailpit' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'mailpit.axllent.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'An email and SMTP testing tool with API for developers' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mailpit.axllent.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) mailpit' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'mailpit',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '1.25.1',
     '1.25.0',
@@ -78,8 +128,14 @@ export const mailpitaxllentorgPackage = {
     '1.10.0',
     '1.9.10',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'mailpit',
+  ] as const,
   fullPath: 'mailpit.axllent.org' as const,
-  aliases: [] as const,
 }
 
-export type MailpitaxllentorgPackage = typeof mailpitaxllentorgPackage
+export type MailpitPackage = typeof mailpitPackage

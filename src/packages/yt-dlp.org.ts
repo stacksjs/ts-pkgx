@@ -5,6 +5,7 @@
  * @programs `yt-dlp`
  * @version `2025.5.22` (46 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/yt-dlp-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) yt-dlp`
  * @dependencies `python.org>=3<3.12`, `ffmpeg.org`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.yt-dlporg
+ * const pkg = pantry.ytdlporg
  * console.log(pkg.name)        // "yt-dlp"
  * console.log(pkg.description) // "A feature-rich command-line audio/video downloader"
  * console.log(pkg.programs)    // ["yt-dlp"]

@@ -5,6 +5,7 @@
  * @programs `fluid`, `fltk-config`
  * @version `1.4.3` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fltk-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +fltk.org -- $SHELL -i`
  * @dependencies `libjpeg-turbo.org^2`, `libpng.org^1`, `linuxx.org/xft^2x.org/xt^1freedesktop.org/mesa-glu^9`, ... (+3 more)
  *

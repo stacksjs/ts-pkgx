@@ -4,6 +4,7 @@
  * @domain `vanna.ai`
  * @version `0.7.9` (42 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vanna-ai.md
+ *
  * @install `sh <(curl https://pkgx.sh) +vanna.ai -- $SHELL -i`
  * @dependencies `python.org~3.12`, `linuxopenmp.llvm.org@17`, `openmp.llvm.org@17`
  *

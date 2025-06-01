@@ -5,6 +5,7 @@
  * @programs `clusterdb`, `createdb`, `dropdb`, `dropuser`, `ecpg`, ... (+23 more)
  * @version `17.2.0` (12 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/postgresql-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +postgresql.org -- $SHELL -i`
  * @dependencies `openssl.org^1.0.1`, `gnu.org/readline`, `zlib.net`, ... (+4 more)
  *

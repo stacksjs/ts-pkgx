@@ -5,6 +5,7 @@
  * @programs `local-ai`
  * @version `2.26.0` (37 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/localai-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) local-ai`
  * @dependencies `darwinopenmp.llvm.org@18`, `openmp.llvm.org@18`
  * @companions `linux`

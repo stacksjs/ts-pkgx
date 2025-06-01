@@ -5,6 +5,7 @@
  * @programs `zig`
  * @version `0.14.1` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ziglang-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) zig`
  *
  * @example

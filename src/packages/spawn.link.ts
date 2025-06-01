@@ -5,6 +5,7 @@
  * @programs `mergerfs`, `mergerfs-fusermount`, `mount.mergerfs`
  * @version `2.40.2` (9 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/spawn-link.md
+ *
  * @install `sh <(curl https://pkgx.sh) +spawn.link -- $SHELL -i`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `docutils`, `rst2html`, `rst2html4`, `rst2html5`, `rst2latex`, ... (+6 more)
  * @version `0.21.2` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/docutils-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i`
  * @dependencies `pkgx.sh^1`
  *

@@ -4,6 +4,7 @@
  * @domain `markupsafe.palletsprojects.com`
  * @version `3.0.2` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/markupsafe-palletsprojects-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +markupsafe.palletsprojects.com -- $SHELL -i`
  * @dependencies `python.org~3.11`
  *

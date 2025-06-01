@@ -5,6 +5,7 @@
  * @programs `infracost`
  * @version `0.10.41` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/infracost-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) infracost`
  *
  * @example

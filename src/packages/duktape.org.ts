@@ -5,6 +5,7 @@
  * @programs `duk`
  * @version `2.7.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/duktape-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) duk`
  *
  * @example

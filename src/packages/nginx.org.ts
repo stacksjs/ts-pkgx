@@ -5,6 +5,7 @@
  * @programs `nginx`
  * @version `1.28.0` (18 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nginx-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) nginx`
  * @dependencies `pcre.org@8.45`, `zlib.net^1.2.13`, `openssl.org^1.1.1k`
  *

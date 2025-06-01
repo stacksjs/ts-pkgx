@@ -4,6 +4,7 @@
  * @domain `pyyaml.org`
  * @version `0.2.5` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pyyaml-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +pyyaml.org -- $SHELL -i`
  *
  * @example

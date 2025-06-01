@@ -5,6 +5,7 @@
  * @programs `assimp`
  * @version `5.4.3` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/assimp-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) assimp`
  * @dependencies `zlib.net`
  *

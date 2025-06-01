@@ -5,6 +5,7 @@
  * @programs `protoc`
  * @version `31.1.0` (43 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/protobuf-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) protoc`
  * @aliases `protocol buffers`
  * @dependencies `zlib.net^1`, `abseil.io`

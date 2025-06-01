@@ -4,6 +4,7 @@
  * @domain `modal.com`
  * @version `1.0.2` (790 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/modal-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +modal.com -- $SHELL -i`
  * @dependencies `pkgx.sh@1`
  *

@@ -5,6 +5,7 @@
  * @programs `re2c`
  * @version `4.2.0` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/re2c-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) re2c`
  *
  * @example

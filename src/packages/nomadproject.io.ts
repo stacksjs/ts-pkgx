@@ -5,6 +5,7 @@
  * @programs `nomad`
  * @version `1.10.1` (13 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nomadproject-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) nomad`
  *
  * @example

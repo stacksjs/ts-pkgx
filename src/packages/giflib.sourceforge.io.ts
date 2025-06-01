@@ -5,6 +5,7 @@
  * @programs `gif2rgb`, `gifbuild`, `gifclrmp`, `giffix`, `giftext`, ... (+1 more)
  * @version `5.2.2` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/giflib-sourceforge-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +giflib.sourceforge.io -- $SHELL -i`
  *
  * @example

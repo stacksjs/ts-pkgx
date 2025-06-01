@@ -5,6 +5,7 @@
  * @programs `oras`
  * @version `1.2.3` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/oras-land.md
+ *
  * @install `sh <(curl https://pkgx.sh) oras`
  *
  * @example

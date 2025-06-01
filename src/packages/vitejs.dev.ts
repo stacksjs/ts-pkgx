@@ -1,18 +1,73 @@
-export const vitejsdevPackage = {
+/**
+ * **vite** - Next generation frontend tooling. It's fast!
+ *
+ * @domain `vitejs.dev`
+ * @programs `vite`
+ * @version `6.3.5` (100 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vitejs-dev.md
+ *
+ * @install `sh <(curl https://pkgx.sh) vite`
+ * @aliases `vite`
+ * @dependencies `nodejs.org^16 || ^18 || ^20`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.vite
+ * // Or access via domain
+ * const samePkg = pantry.vitejsdev
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "vite"
+ * console.log(pkg.description) // "Next generation frontend tooling. It's fast!"
+ * console.log(pkg.programs)    // ["vite"]
+ * console.log(pkg.versions[0]) // "6.3.5" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/vitejs-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const vitePackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'vite' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'vitejs.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Next generation frontend tooling. It\'s fast!' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vitejs.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) vite' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'vite',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'nodejs.org^16 || ^18 || ^20',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '6.3.5',
     '6.3.3',
@@ -115,8 +170,14 @@ export const vitejsdevPackage = {
     '3.2.10',
     '2.9.18',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'vite',
+  ] as const,
   fullPath: 'vitejs.dev' as const,
-  aliases: [] as const,
 }
 
-export type VitejsdevPackage = typeof vitejsdevPackage
+export type VitePackage = typeof vitePackage

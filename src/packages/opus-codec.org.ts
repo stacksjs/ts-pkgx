@@ -4,13 +4,14 @@
  * @domain `opus-codec.org`
  * @version `1.5.2` (5 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/opus-codec-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +opus-codec.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.opus-codecorg
+ * const pkg = pantry.opuscodecorg
  * console.log(pkg.name)        // "opus-codec.org"
  * console.log(pkg.description) // "Modern audio compression for the internet."
  * console.log(pkg.versions[0]) // "1.5.2" (latest)

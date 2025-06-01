@@ -5,6 +5,7 @@
  * @programs `git2`
  * @version `1.9.0` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libgit2-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) git2`
  * @aliases `git2`
  * @dependencies `libssh2.org^1`

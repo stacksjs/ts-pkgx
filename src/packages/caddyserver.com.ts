@@ -5,6 +5,7 @@
  * @programs `caddy`
  * @version `2.10.0` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/caddyserver-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) caddy`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `kaggle`
  * @version `1.7.4.5` (5 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kaggle-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) kaggle`
  * @dependencies `pkgx.sh^1`
  *

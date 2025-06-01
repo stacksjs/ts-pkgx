@@ -24,14 +24,14 @@ export const DEFAULT_CACHE_DIR = '.cache/packages'
 export const DEFAULT_CACHE_EXPIRATION_MINUTES = 1440
 
 /**
- * Default timeout for all operations in milliseconds (10 seconds)
+ * Default timeout for all operations in milliseconds (12 seconds)
  * This applies to:
  * - Browser navigation
  * - Package fetching operations
  * - Individual package processing
  * Can be overridden via CLI --timeout option
  */
-export const DEFAULT_TIMEOUT_MS = 10000
+export const DEFAULT_TIMEOUT_MS = 12000
 
 /**
  * Known packages list as a fallback if all other methods fail

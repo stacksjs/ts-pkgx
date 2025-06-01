@@ -5,6 +5,7 @@
  * @programs `vale`
  * @version `3.11.2` (44 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vale-sh.md
+ *
  * @install `sh <(curl https://pkgx.sh) vale`
  *
  * @example

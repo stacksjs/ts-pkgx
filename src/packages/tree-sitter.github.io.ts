@@ -5,13 +5,14 @@
  * @programs `tree-sitter`
  * @version `0.25.5` (27 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tree-sitter-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) tree-sitter`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tree-sittergithubio
+ * const pkg = pantry.treesittergithubio
  * console.log(pkg.name)        // "tree-sitter"
  * console.log(pkg.description) // "Parser generator tool and incremental parsing l..."
  * console.log(pkg.programs)    // ["tree-sitter"]

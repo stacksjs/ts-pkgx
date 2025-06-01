@@ -4,6 +4,7 @@
  * @domain `abseil.io`
  * @version `20250512.0.0` (17 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/abseil-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i`
  *
  * @example

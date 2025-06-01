@@ -5,6 +5,7 @@
  * @programs `typst`
  * @version `0.13.1` (14 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/typst-app.md
+ *
  * @install `sh <(curl https://pkgx.sh) typst`
  * @dependencies `openssl.org^1.1`
  *

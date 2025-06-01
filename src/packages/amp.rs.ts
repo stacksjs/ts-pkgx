@@ -5,6 +5,7 @@
  * @programs `amp`
  * @version `0.7.1` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/amp-rs.md
+ *
  * @install `sh <(curl https://pkgx.sh) amp`
  * @dependencies `zlib.net@1`, `libgit2.org@1`, `linuxopenssl.org@1.1`, ... (+1 more)
  *

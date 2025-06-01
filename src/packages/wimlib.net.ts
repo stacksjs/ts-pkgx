@@ -5,6 +5,7 @@
  * @programs `mkwinpeimg`, `wimappend`, `wimapply`, `wimapply`, `wimdelete`, ... (+13 more)
  * @version `1.14.4` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wimlib-net.md
+ *
  * @install `sh <(curl https://pkgx.sh) +wimlib.net -- $SHELL -i`
  * @dependencies `openssl.org^3.1.0`, `gnome.org/libxml2`
  *

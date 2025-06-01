@@ -5,6 +5,7 @@
  * @programs `git-lfs`
  * @version `3.6.1` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/git-lfs-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) git-lfs`
  * @dependencies `git-scm.org`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.git-lfscom
+ * const pkg = pantry.gitlfscom
  * console.log(pkg.name)        // "git-lfs"
  * console.log(pkg.description) // "Git extension for versioning large files"
  * console.log(pkg.programs)    // ["git-lfs"]

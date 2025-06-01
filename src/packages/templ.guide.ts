@@ -5,6 +5,7 @@
  * @programs `templ`
  * @version `0.3.887` (25 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/templ-guide.md
+ *
  * @install `sh <(curl https://pkgx.sh) templ`
  *
  * @example

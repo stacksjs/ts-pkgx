@@ -5,6 +5,7 @@
  * @programs `openslide-quickhash1sum`, `openslide-show-properties`, `openslide-write-png`
  * @version `4.0.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openslide-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +openslide.org -- $SHELL -i`
  * @dependencies `cairographics.org`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+6 more)
  *

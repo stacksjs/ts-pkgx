@@ -5,6 +5,7 @@
  * @programs `goreleaser`
  * @version `2.9.0` (38 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/goreleaser-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) goreleaser`
  *
  * @example

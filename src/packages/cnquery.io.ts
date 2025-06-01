@@ -5,6 +5,7 @@
  * @programs `cnquery`
  * @version `11.56.0` (143 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cnquery-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) cnquery`
  *
  * @example

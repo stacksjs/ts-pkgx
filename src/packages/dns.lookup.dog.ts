@@ -5,6 +5,7 @@
  * @programs `dog`
  * @version `0.1.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dns-lookup-dog.md
+ *
  * @install `sh <(curl https://pkgx.sh) dog`
  * @aliases `dog`
  * @dependencies `openssl.org^1.1`

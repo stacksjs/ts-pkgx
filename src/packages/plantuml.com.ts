@@ -5,6 +5,7 @@
  * @programs `plantuml`
  * @version `1.2025.2` (16 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/plantuml-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) plantuml`
  * @dependencies `graphviz.org`, `openjdk.org`
  *

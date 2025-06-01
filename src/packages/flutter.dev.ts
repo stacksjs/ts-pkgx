@@ -1,16 +1,67 @@
-export const flutterdevPackage = {
+/**
+ * **+flutter.dev -- $SHELL -i** - Flutter makes it easy and fast to build beautiful apps for mobile and beyond
+ *
+ * @domain `flutter.dev`
+ * @programs `flutter`, `dart`
+ * @version `3.32.1` (45 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/flutter-dev.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i`
+ * @aliases `+flutter.dev -- $SHELL -i`
+ * @dependencies `git-scm.org`, `tukaani.org/xz`, `gnu.org/which`, ... (+4 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.flutterdevSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.flutterdev
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "flutter.dev"
+ * console.log(pkg.description) // "Flutter makes it easy and fast to build beautif..."
+ * console.log(pkg.programs)    // ["flutter", "dart"]
+ * console.log(pkg.versions[0]) // "3.32.1" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/flutter-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const flutterdevSHELLiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'flutter.dev' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'flutter.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Flutter makes it easy and fast to build beautiful apps for mobile and beyond' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/flutter.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'flutter',
     'dart',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'git-scm.org',
     'tukaani.org/xz',
@@ -20,6 +71,10 @@ export const flutterdevPackage = {
     'info-zip.org/zip',
     'info-zip.org/unzip',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '3.32.1',
     '3.32.0',
@@ -67,8 +122,14 @@ export const flutterdevPackage = {
     '3.13.4',
     '3.13.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+flutter.dev -- $SHELL -i',
+  ] as const,
   fullPath: 'flutter.dev' as const,
-  aliases: [] as const,
 }
 
-export type FlutterdevPackage = typeof flutterdevPackage
+export type FlutterdevSHELLiPackage = typeof flutterdevSHELLiPackage

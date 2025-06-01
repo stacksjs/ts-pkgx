@@ -5,6 +5,7 @@
  * @programs `git`, `git-cvsserver`, `git-receive-pack`, `git-shell`, `git-upload-archive`, ... (+3 more)
  * @version `2.49.0` (21 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/git-scm-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +git-scm.org -- $SHELL -i`
  * @dependencies `zlib.net@1`, `gnu.org/gettext^0.21`, `curl.se>=5`, ... (+3 more)
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.git-scmorg
+ * const pkg = pantry.gitscmorg
  * console.log(pkg.name)        // "git"
  * console.log(pkg.description) // "Git Source Code Mirror - This is a publish-only..."
  * console.log(pkg.programs)    // ["git", "git-cvsserver", ...]

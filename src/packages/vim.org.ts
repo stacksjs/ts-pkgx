@@ -1,16 +1,67 @@
-export const vimorgPackage = {
+/**
+ * **+vim.org -- $SHELL -i** - The official Vim repository
+ *
+ * @domain `vim.org`
+ * @programs `vim`, `vi`
+ * @version `9.1.1420` (1995 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vim-org.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i`
+ * @aliases `+vim.org -- $SHELL -i`
+ * @dependencies `python.org~3.11`, `lua.org>=5.4`, `invisible-island.net/ncurses>=6.3`, ... (+2 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.vimorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.vimorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "vim.org"
+ * console.log(pkg.description) // "The official Vim repository"
+ * console.log(pkg.programs)    // ["vim", "vi"]
+ * console.log(pkg.versions[0]) // "9.1.1420" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/vim-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const vimorgSHELLiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'vim.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'vim.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'The official Vim repository' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vim.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'vim',
     'vi',
   ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'python.org~3.11',
     'lua.org>=5.4',
@@ -18,6 +69,10 @@ export const vimorgPackage = {
     'perl.org>=5.36',
     'ruby-lang.org>=3.2',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '9.1.1420',
     '9.1.1419',
@@ -2015,8 +2070,14 @@ export const vimorgPackage = {
     '9.0.1504',
     '9.0.1294',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+vim.org -- $SHELL -i',
+  ] as const,
   fullPath: 'vim.org' as const,
-  aliases: [] as const,
 }
 
-export type VimorgPackage = typeof vimorgPackage
+export type VimorgSHELLiPackage = typeof vimorgSHELLiPackage

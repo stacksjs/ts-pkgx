@@ -5,6 +5,7 @@
  * @programs `git-crypt`
  * @version `0.7.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/agwa-name-git-crypt.md
+ *
  * @install `sh <(curl https://pkgx.sh) git-crypt`
  * @aliases `git-crypt`
  * @dependencies `openssl.org^1.1`
@@ -16,7 +17,7 @@
  * // Access via alias (recommended)
  * const pkg = pantry.gitcrypt
  * // Or access via domain
- * const samePkg = pantry.agwaname-git-crypt
+ * const samePkg = pantry.agwanamegitcrypt
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "git-crypt"
  * console.log(pkg.description) // "Enable transparent encryption/decryption of fil..."

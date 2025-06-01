@@ -5,6 +5,7 @@
  * @programs `augmatch`, `augparse`, `augprint`, `augtool`, `fadot`
  * @version `1.14.1` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/augeas-net.md
+ *
  * @install `sh <(curl https://pkgx.sh) +augeas.net -- $SHELL -i`
  * @dependencies `gnu.org/readline`, `gnome.org/libxml2`
  *

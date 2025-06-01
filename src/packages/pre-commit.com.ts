@@ -5,6 +5,7 @@
  * @programs `pre-commit`
  * @version `4.2.0` (22 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pre-commit-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) pre-commit`
  * @dependencies `python.org>=3.8<3.12`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pre-commitcom
+ * const pkg = pantry.precommitcom
  * console.log(pkg.name)        // "pre-commit"
  * console.log(pkg.description) // "A framework for managing and maintaining multi-..."
  * console.log(pkg.programs)    // ["pre-commit"]

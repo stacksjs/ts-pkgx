@@ -5,6 +5,7 @@
  * @programs `hjson`
  * @version `1.1.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/hjson-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) hjson`
  *
  * @example

@@ -1,17 +1,67 @@
-export const etcdioPackage = {
+/**
+ * **+etcd.io -- $SHELL -i** - Distributed reliable key-value store for the most critical data of a distributed system
+ *
+ * @domain `etcd.io`
+ * @programs `etcd`, `etcdctl`
+ * @version `3.6.0` (11 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/etcd-io.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +etcd.io -- $SHELL -i`
+ * @aliases `+etcd.io -- $SHELL -i`, `etcd`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.etcdioSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.etcdio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "etcd"
+ * console.log(pkg.description) // "Distributed reliable key-value store for the mo..."
+ * console.log(pkg.programs)    // ["etcd", "etcdctl"]
+ * console.log(pkg.versions[0]) // "3.6.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/etcd-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const etcdioSHELLiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'etcd' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'etcd.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Distributed reliable key-value store for the most critical data of a distributed system' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/etcd.io/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +etcd.io -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'etcd',
     'etcdctl',
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '3.6.0',
     '3.5.21',
@@ -25,8 +75,15 @@ export const etcdioPackage = {
     '3.4.37',
     '3.4.36',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+etcd.io -- $SHELL -i',
+    'etcd',
+  ] as const,
   fullPath: 'etcd.io' as const,
-  aliases: [] as const,
 }
 
-export type EtcdioPackage = typeof etcdioPackage
+export type EtcdioSHELLiPackage = typeof etcdioSHELLiPackage

@@ -5,6 +5,7 @@
  * @programs `onefetch`
  * @version `2.24.0` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/onefetch-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) onefetch`
  * @dependencies `libgit2.org~1.7`
  *

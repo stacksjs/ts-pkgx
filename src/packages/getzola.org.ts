@@ -5,6 +5,7 @@
  * @programs `zola`
  * @version `0.20.0` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getzola-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) zola`
  * @aliases `zola`
  *

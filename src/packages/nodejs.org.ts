@@ -5,6 +5,7 @@
  * @programs `node`
  * @version `24.1.0` (137 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nodejs-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) node`
  * @aliases `node`
  * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+2 more)

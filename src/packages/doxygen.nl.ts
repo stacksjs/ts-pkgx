@@ -5,6 +5,7 @@
  * @programs `doxygen`
  * @version `1.14.0` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/doxygen-nl.md
+ *
  * @install `sh <(curl https://pkgx.sh) doxygen`
  *
  * @example

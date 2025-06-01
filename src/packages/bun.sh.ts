@@ -5,6 +5,7 @@
  * @programs `bun`, `bunx`
  * @version `1.2.15` (119 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bun-sh.md
+ *
  * @install `sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i`
  * @aliases `bun`
  *

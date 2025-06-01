@@ -4,6 +4,7 @@
  * @domain `attrs.org`
  * @version `25.3.0` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/attrs-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +attrs.org -- $SHELL -i`
  * @dependencies `python.org~3.11`
  *

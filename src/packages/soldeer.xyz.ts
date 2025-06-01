@@ -5,6 +5,7 @@
  * @programs `soldeer`
  * @version `0.5.4` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/soldeer-xyz.md
+ *
  * @install `sh <(curl https://pkgx.sh) soldeer`
  *
  * @example

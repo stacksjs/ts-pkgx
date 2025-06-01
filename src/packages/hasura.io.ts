@@ -5,6 +5,7 @@
  * @programs `hasura`
  * @version `2.48.1` (51 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/hasura-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) hasura`
  *
  * @example

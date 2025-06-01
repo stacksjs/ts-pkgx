@@ -5,6 +5,7 @@
  * @programs `xplr`
  * @version `1.0.0` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xplr-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) xplr`
  *
  * @example

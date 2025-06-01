@@ -5,6 +5,7 @@
  * @programs `hugo`
  * @version `0.147.7` (122 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gohugo-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) hugo`
  * @aliases `hugo`
  *

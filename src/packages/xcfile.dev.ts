@@ -5,6 +5,7 @@
  * @programs `xc`
  * @version `0.8.5` (27 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xcfile-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) xc`
  *
  * @example

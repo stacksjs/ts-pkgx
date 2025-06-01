@@ -5,6 +5,7 @@
  * @programs `rclone`
  * @version `1.69.3` (16 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rclone-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) rclone`
  *
  * @example

@@ -5,6 +5,7 @@
  * @programs `yasm`
  * @version `1.3.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/yasm-tortall-net.md
+ *
  * @install `sh <(curl https://pkgx.sh) yasm`
  *
  * @example

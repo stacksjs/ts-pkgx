@@ -5,6 +5,7 @@
  * @programs `dhall`
  * @version `1.42.2` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dhall-lang-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) dhall`
  * @dependencies `invisible-island.net/ncurses^6.4`, `zlib.net^1.3`
  *
@@ -12,7 +13,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.dhall-langorg
+ * const pkg = pantry.dhalllangorg
  * console.log(pkg.name)        // "dhall"
  * console.log(pkg.description) // "Interpreter for the Dhall language"
  * console.log(pkg.programs)    // ["dhall"]

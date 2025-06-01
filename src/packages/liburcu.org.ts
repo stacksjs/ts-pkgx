@@ -4,6 +4,7 @@
  * @domain `liburcu.org`
  * @version `0.15.3` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/liburcu-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +liburcu.org -- $SHELL -i`
  *
  * @example

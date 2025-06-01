@@ -5,13 +5,14 @@
  * @programs `dotenv-linter`
  * @version `3.3.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dotenv-linter-github-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) dotenv-linter`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.dotenv-lintergithubio
+ * const pkg = pantry.dotenvlintergithubio
  * console.log(pkg.name)        // "dotenv-linter"
  * console.log(pkg.description) // "⚡️Lightning-fast linter for .env files. Written..."
  * console.log(pkg.programs)    // ["dotenv-linter"]

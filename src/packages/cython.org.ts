@@ -5,6 +5,7 @@
  * @programs `cython`
  * @version `3.1.1` (19 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cython-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) cython`
  * @dependencies `python.org<3.12`
  *

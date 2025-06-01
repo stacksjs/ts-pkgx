@@ -5,6 +5,7 @@
  * @programs `apktool`
  * @version `2.11.1` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/apktool-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) apktool`
  * @dependencies `openjdk.org^21`
  *

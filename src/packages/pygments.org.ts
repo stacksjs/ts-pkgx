@@ -5,6 +5,7 @@
  * @programs `pygmentize`
  * @version `2.19.1` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pygments-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) pygmentize`
  * @aliases `pygmentize`
  * @dependencies `python.org~3.11`

@@ -1,11 +1,59 @@
-export const openmpiorgPackage = {
+/**
+ * **+open-mpi.org -- $SHELL -i** - Open MPI main development repository
+ *
+ * @domain `open-mpi.org`
+ * @programs `mpic++`, `mpiCC`, `mpicc`, `mpicxx`, `mpiexec`, ... (+6 more)
+ * @version `5.0.8` (11 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/open-mpi-org.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +open-mpi.org -- $SHELL -i`
+ * @aliases `+open-mpi.org -- $SHELL -i`
+ * @dependencies `open-mpi.org/hwloc`, `openpmix.github.io@5`, `libevent.org`
+ * @companions `gnu.org/gcc`, `gnu.org/inetutils`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.openmpiorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.openmpiorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "open-mpi.org"
+ * console.log(pkg.description) // "Open MPI main development repository"
+ * console.log(pkg.programs)    // ["mpic++", "mpiCC", ...]
+ * console.log(pkg.versions[0]) // "5.0.8" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/open-mpi-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const openmpiorgSHELLiPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'open-mpi.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'open-mpi.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
   description: 'Open MPI main development repository' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/open-mpi.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
   installCommand: 'sh <(curl https://pkgx.sh) +open-mpi.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
   programs: [
     'mpic++',
     'mpiCC',
@@ -19,15 +67,27 @@ export const openmpiorgPackage = {
     'ompi_info',
     'opal_wrapper',
   ] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
   companions: [
     'gnu.org/gcc',
     'gnu.org/inetutils',
   ] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
   dependencies: [
     'open-mpi.org/hwloc',
     'openpmix.github.io@5',
     'libevent.org',
   ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
   versions: [
     '5.0.8',
     '5.0.7',
@@ -41,8 +101,14 @@ export const openmpiorgPackage = {
     '4.1.7',
     '4.1.5',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+open-mpi.org -- $SHELL -i',
+  ] as const,
   fullPath: 'open-mpi.org' as const,
-  aliases: [] as const,
 }
 
-export type OpenmpiorgPackage = typeof openmpiorgPackage
+export type OpenmpiorgSHELLiPackage = typeof openmpiorgSHELLiPackage

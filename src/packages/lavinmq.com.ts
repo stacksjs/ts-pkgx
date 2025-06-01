@@ -5,6 +5,7 @@
  * @programs `lavinmq`, `lavinmqctl`, `lavinmqperf`
  * @version `2.3.0` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lavinmq-com.md
+ *
  * @install `sh <(curl https://pkgx.sh) +lavinmq.com -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `pcre.org/v2@10`, `libevent.org@2`, ... (+1 more)
  *

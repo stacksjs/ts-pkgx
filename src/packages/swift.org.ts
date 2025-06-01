@@ -5,6 +5,7 @@
  * @programs `docc`, `dsymutil`, `sourcekit-lsp`, `swift-api-checker.py`, `swift-build-sdk-interfaces`, ... (+21 more)
  * @version `6.1.2` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/swift-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i`
  * @dependencies `linuxgnu.org/gccgnu.org/binutilsgnupg.org^2gnome.org/libxml2libgit2.org~1.7curl.sesqlite.org^3`, `gnu.org/gcc`, `gnu.org/binutils`, ... (+5 more)
  *

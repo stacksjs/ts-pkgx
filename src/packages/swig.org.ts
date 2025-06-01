@@ -5,6 +5,7 @@
  * @programs `swig`, `ccache-swig`
  * @version `4.3.1` (5 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/swig-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) +swig.org -- $SHELL -i`
  * @dependencies `pcre.org/v2`
  *

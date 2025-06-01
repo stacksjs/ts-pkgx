@@ -5,6 +5,7 @@
  * @programs `tox`
  * @version `4.26.0` (15 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tox-wiki.md
+ *
  * @install `sh <(curl https://pkgx.sh) tox`
  * @dependencies `pkgx.sh^1`
  *

@@ -5,6 +5,7 @@
  * @programs `sops`
  * @version `3.10.2` (9 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getsops-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) sops`
  * @aliases `sops`
  *

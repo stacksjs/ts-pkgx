@@ -5,6 +5,7 @@
  * @programs `lftp`, `lftpget`
  * @version `4.9.3` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lftp-yar-ru.md
+ *
  * @install `sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i`
  * @dependencies `gnu.org/libidn2`, `gnu.org/gettext`, `gnu.org/readline`, ... (+6 more)
  *

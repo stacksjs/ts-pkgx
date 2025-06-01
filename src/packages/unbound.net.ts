@@ -5,6 +5,7 @@
  * @programs `unbound`, `unbound-anchor`, `unbound-checkconf`, `unbound-control`, `unbound-control-setup`, ... (+1 more)
  * @version `1.23.0` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/unbound-net.md
+ *
  * @install `sh <(curl https://pkgx.sh) +unbound.net -- $SHELL -i`
  * @dependencies `openssl.org^1`
  *

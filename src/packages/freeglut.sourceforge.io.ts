@@ -4,6 +4,7 @@
  * @domain `freeglut.sourceforge.io`
  * @version `3.6.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/freeglut-sourceforge-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) +freeglut.sourceforge.io -- $SHELL -i`
  * @dependencies `x.org/x11`, `x.org/xi`, `x.org/xrandr`, ... (+5 more)
  *

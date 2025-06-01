@@ -5,6 +5,7 @@
  * @programs `geos-config`
  * @version `3.13.1` (15 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libgeos-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) geos-config`
  * @aliases `geos-config`
  *

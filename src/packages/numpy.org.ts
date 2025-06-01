@@ -5,6 +5,7 @@
  * @programs `f2py`
  * @version `2.2.6` (17 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/numpy-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) f2py`
  * @aliases `f2py`
  * @dependencies `openblas.net^0.3`, `python.org^3.11`

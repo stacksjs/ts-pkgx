@@ -5,6 +5,7 @@
  * @programs `fastlane`
  * @version `2.227.2` (22 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fastlane-tools.md
+ *
  * @install `sh <(curl https://pkgx.sh) fastlane`
  * @dependencies `ruby-lang.org~3.2`, `rubygems.org`
  * @companions `cocoapods.org/xcodeproj`

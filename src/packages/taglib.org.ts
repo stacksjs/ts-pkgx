@@ -5,6 +5,7 @@
  * @programs `taglib-config`
  * @version `2.1.0` (5 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/taglib-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) taglib-config`
  * @aliases `taglib-config`
  * @dependencies `zlib.net^1`, `github.com/nemtrif/utfcpp^4`

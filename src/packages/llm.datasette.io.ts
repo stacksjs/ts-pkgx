@@ -5,6 +5,7 @@
  * @programs `llm`
  * @version `0.26.0` (30 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/llm-datasette-io.md
+ *
  * @install `sh <(curl https://pkgx.sh) llm`
  * @dependencies `python.org~3.11`
  *

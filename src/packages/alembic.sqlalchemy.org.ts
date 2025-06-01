@@ -5,6 +5,7 @@
  * @programs `alembic`
  * @version `1.16.1` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/alembic-sqlalchemy-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) alembic`
  * @dependencies `pkgx.sh^1`
  *

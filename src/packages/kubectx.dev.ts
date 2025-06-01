@@ -5,6 +5,7 @@
  * @programs `kubectx`, `kubens`
  * @version `0.9.5` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubectx-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) +kubectx.dev -- $SHELL -i`
  * @dependencies `github.com/junegunn/fzf`
  *

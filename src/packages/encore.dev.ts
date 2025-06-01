@@ -5,6 +5,7 @@
  * @programs `encore`, `git-remote-encore`
  * @version `1.48.0` (52 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/encore-dev.md
+ *
  * @install `sh <(curl https://pkgx.sh) +encore.dev -- $SHELL -i`
  * @dependencies `encore.dev/go^1.21`
  *

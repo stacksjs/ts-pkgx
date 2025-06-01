@@ -5,6 +5,7 @@
  * @programs `robot`
  * @version `7.3.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/robotframework-org.md
+ *
  * @install `sh <(curl https://pkgx.sh) robot`
  * @dependencies `pkgx.sh^1`
  *
