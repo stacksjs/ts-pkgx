@@ -1,9 +1,12 @@
 /**
- * **v** - Crafters of fine Open Source products
+ * **v** - Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
  *
  * @domain `vlang.io`
+ * @programs `v`
+ * @version `0.4.10` (14 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vlang-io.md
  *
- * @install `pkgx vlang.io`
+ * @install `sh <(curl https://pkgx.sh) v`
  *
  * @example
  * ```typescript
@@ -11,7 +14,9 @@
  *
  * const pkg = pantry.vlangio
  * console.log(pkg.name)        // "v"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "Simple, fast, safe, compiled language for devel..."
+ * console.log(pkg.programs)    // ["v"]
+ * console.log(pkg.versions[0]) // "0.4.10" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/vlang-io.md
@@ -23,25 +28,52 @@ export const vlangioPackage = {
    */
   name: 'v' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/vlang.io/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'vlang.io' as const,
-  fullPath: 'vlang.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vlang.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx vlang.io' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) v' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'v',
+  ] as const,
   companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.4.10',
+    '0.4.9',
+    '0.4.8',
+    '0.4.7',
+    '0.4.6',
+    '0.4.5',
+    '0.4.4',
+    '0.4.3',
+    '0.4.2',
+    '0.4.1',
+    '0.4.0',
+    '0.3.5',
+    '0.3.4',
+    '0.3.3',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'vlang.io' as const,
 }
 
 export type VlangioPackage = typeof vlangioPackage

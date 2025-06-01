@@ -1,9 +1,12 @@
 /**
- * **lxml.de** - Crafters of fine Open Source products
+ * **lxml.de** - The lxml XML toolkit for Python
  *
  * @domain `lxml.de`
+ * @version `5.4.0` (14 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lxml-de.md
  *
- * @install `pkgx lxml.de`
+ * @install `sh <(curl https://pkgx.sh) +lxml.de -- $SHELL -i`
+ * @dependencies `python.org^3.10`, `gnome.org/libxml2~2.12`, `gnome.org/libxslt^1`
  *
  * @example
  * ```typescript
@@ -11,7 +14,8 @@
  *
  * const pkg = pantry.lxmlde
  * console.log(pkg.name)        // "lxml.de"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "The lxml XML toolkit for Python"
+ * console.log(pkg.versions[0]) // "5.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/lxml-de.md
@@ -23,25 +27,54 @@ export const lxmldePackage = {
    */
   name: 'lxml.de' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/lxml.de/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'lxml.de' as const,
-  fullPath: 'lxml.de' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'The lxml XML toolkit for Python' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lxml.de/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx lxml.de' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +lxml.de -- $SHELL -i' as const,
+  programs: [] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'python.org^3.10',
+    'gnome.org/libxml2~2.12',
+    'gnome.org/libxslt^1',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.4.0',
+    '5.3.2',
+    '5.3.1',
+    '5.3.0',
+    '5.2.2',
+    '5.2.1',
+    '5.2.0',
+    '5.1.1',
+    '5.1.0',
+    '5.0.2',
+    '5.0.1',
+    '5.0.0',
+    '4.9.4',
+    '4.9.3',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'lxml.de' as const,
 }
 
 export type LxmldePackage = typeof lxmldePackage

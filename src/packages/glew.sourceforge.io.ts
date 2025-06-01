@@ -1,9 +1,12 @@
 /**
- * **glew.sourceforge.io** - Crafters of fine Open Source products
+ * **glew.sourceforge.io** - The OpenGL Extension Wrangler Library
  *
  * @domain `glew.sourceforge.io`
+ * @programs `glewinfo`, `visualinfo`
+ * @version `2.2.0` (1 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/glew-sourceforge-io.md
  *
- * @install `pkgx glew.sourceforge.io`
+ * @install `sh <(curl https://pkgx.sh) +glew.sourceforge.io -- $SHELL -i`
  *
  * @example
  * ```typescript
@@ -11,7 +14,9 @@
  *
  * const pkg = pantry.glewsourceforgeio
  * console.log(pkg.name)        // "glew.sourceforge.io"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "The OpenGL Extension Wrangler Library"
+ * console.log(pkg.programs)    // ["glewinfo", "visualinfo"]
+ * console.log(pkg.versions[0]) // "2.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/glew-sourceforge-io.md
@@ -23,25 +28,40 @@ export const glewsourceforgeioPackage = {
    */
   name: 'glew.sourceforge.io' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/glew.sourceforge.io/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'glew.sourceforge.io' as const,
-  fullPath: 'glew.sourceforge.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'The OpenGL Extension Wrangler Library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/glew.sourceforge.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx glew.sourceforge.io' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +glew.sourceforge.io -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'glewinfo',
+    'visualinfo',
+  ] as const,
   companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.2.0',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'glew.sourceforge.io' as const,
 }
 
 export type GlewsourceforgeioPackage = typeof glewsourceforgeioPackage

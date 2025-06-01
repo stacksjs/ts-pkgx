@@ -1,47 +1,85 @@
 /**
- * **cask** - Crafters of fine Open Source products
+ * **cask** - Project management tool for Emacs
  *
  * @domain `cask.readthedocs.io`
+ * @programs `cask`
+ * @version `0.9.0` (1 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cask-readthedocs-io.md
  *
- * @install `pkgx cask.readthedocs.io`
+ * @install `sh <(curl https://pkgx.sh) cask`
+ * @aliases `cask`
+ * @dependencies `gnu.org/coreutils`, `gnu.org/emacs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.caskreadthedocsio
+ * // Access via alias (recommended)
+ * const pkg = pantry.cask
+ * // Or access via domain
+ * const samePkg = pantry.caskreadthedocsio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "cask"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "Project management tool for Emacs"
+ * console.log(pkg.programs)    // ["cask"]
+ * console.log(pkg.versions[0]) // "0.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cask-readthedocs-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const caskreadthedocsioPackage = {
+export const caskPackage = {
   /**
    * The display name of this package.
    */
   name: 'cask' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/cask.readthedocs.io/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'cask.readthedocs.io' as const,
-  fullPath: 'cask.readthedocs.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Project management tool for Emacs' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cask.readthedocs.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx cask.readthedocs.io' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) cask' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'cask',
+  ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/coreutils',
+    'gnu.org/emacs',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.9.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'cask',
+  ] as const,
+  fullPath: 'cask.readthedocs.io' as const,
 }
 
-export type CaskreadthedocsioPackage = typeof caskreadthedocsioPackage
+export type CaskPackage = typeof caskPackage

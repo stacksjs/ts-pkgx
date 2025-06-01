@@ -1,9 +1,12 @@
 /**
- * **markupsafe.palletsprojects.com** - Crafters of fine Open Source products
+ * **markupsafe.palletsprojects.com** - Safely add untrusted strings to HTML/XML markup.
  *
  * @domain `markupsafe.palletsprojects.com`
+ * @version `3.0.2` (6 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/markupsafe-palletsprojects-com.md
  *
- * @install `pkgx markupsafe.palletsprojects.com`
+ * @install `sh <(curl https://pkgx.sh) +markupsafe.palletsprojects.com -- $SHELL -i`
+ * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
@@ -11,7 +14,8 @@
  *
  * const pkg = pantry.markupsafepalletsprojectscom
  * console.log(pkg.name)        // "markupsafe.palletsprojects.com"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "Safely add untrusted strings to HTML/XML markup."
+ * console.log(pkg.versions[0]) // "3.0.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/markupsafe-palletsprojects-com.md
@@ -23,25 +27,44 @@ export const markupsafepalletsprojectscomPackage = {
    */
   name: 'markupsafe.palletsprojects.com' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/markupsafe.palletsprojects.com/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'markupsafe.palletsprojects.com' as const,
-  fullPath: 'markupsafe.palletsprojects.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Safely add untrusted strings to HTML/XML markup.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/markupsafe.palletsprojects.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx markupsafe.palletsprojects.com' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +markupsafe.palletsprojects.com -- $SHELL -i' as const,
+  programs: [] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'python.org~3.11',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.0.2',
+    '3.0.1',
+    '3.0.0',
+    '2.1.5',
+    '2.1.4',
+    '2.1.3',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'markupsafe.palletsprojects.com' as const,
 }
 
 export type MarkupsafepalletsprojectscomPackage = typeof markupsafepalletsprojectscomPackage

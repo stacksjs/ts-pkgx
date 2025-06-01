@@ -1,47 +1,77 @@
 /**
- * **dotenv-linter** - Crafters of fine Open Source products
+ * **dotenv-linter** - ⚡️Lightning-fast linter for .env files. Written in Rust 🦀
  *
  * @domain `dotenv-linter.github.io`
+ * @programs `dotenv-linter`
+ * @version `3.3.0` (1 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dotenv-linter-github-io.md
  *
- * @install `pkgx dotenv-linter.github.io`
+ * @install `sh <(curl https://pkgx.sh) dotenv-linter`
+ * @aliases `dotenv-linter`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.dotenvlintergithubio
+ * // Access via alias (recommended)
+ * const pkg = pantry.dotenvlinter
+ * // Or access via domain
+ * const samePkg = pantry.dotenvlintergithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "dotenv-linter"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "⚡️Lightning-fast linter for .env files. Written..."
+ * console.log(pkg.programs)    // ["dotenv-linter"]
+ * console.log(pkg.versions[0]) // "3.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dotenv-linter-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dotenvlintergithubioPackage = {
+export const dotenvlinterPackage = {
   /**
    * The display name of this package.
    */
   name: 'dotenv-linter' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/dotenv-linter.github.io/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'dotenv-linter.github.io' as const,
-  fullPath: 'dotenv-linter.github.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: '⚡️Lightning-fast linter for .env files. Written in Rust 🦀' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dotenv-linter.github.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx dotenv-linter.github.io' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) dotenv-linter' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'dotenv-linter',
+  ] as const,
   companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.3.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'dotenv-linter',
+  ] as const,
+  fullPath: 'dotenv-linter.github.io' as const,
 }
 
-export type DotenvlintergithubioPackage = typeof dotenvlintergithubioPackage
+export type DotenvlinterPackage = typeof dotenvlinterPackage

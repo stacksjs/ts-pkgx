@@ -1,47 +1,77 @@
 /**
- * **synth** - Crafters of fine Open Source products
+ * **synth** - The Declarative Data Generator
  *
  * @domain `getsynth.com`
+ * @programs `synth`
+ * @version `0.6.9` (1 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getsynth-com.md
  *
- * @install `pkgx getsynth.com`
+ * @install `sh <(curl https://pkgx.sh) synth`
+ * @aliases `synth`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.getsynthcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.synth
+ * // Or access via domain
+ * const samePkg = pantry.getsynthcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "synth"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "The Declarative Data Generator"
+ * console.log(pkg.programs)    // ["synth"]
+ * console.log(pkg.versions[0]) // "0.6.9" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/getsynth-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const getsynthcomPackage = {
+export const synthPackage = {
   /**
    * The display name of this package.
    */
   name: 'synth' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/getsynth.com/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'getsynth.com' as const,
-  fullPath: 'getsynth.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'The Declarative Data Generator' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/getsynth.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx getsynth.com' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) synth' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'synth',
+  ] as const,
   companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.6.9',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'synth',
+  ] as const,
+  fullPath: 'getsynth.com' as const,
 }
 
-export type GetsynthcomPackage = typeof getsynthcomPackage
+export type SynthPackage = typeof synthPackage

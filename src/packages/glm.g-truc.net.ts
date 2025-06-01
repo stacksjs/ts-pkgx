@@ -1,9 +1,11 @@
 /**
- * **glm.g-truc.net** - Crafters of fine Open Source products
+ * **glm.g-truc.net** - OpenGL Mathematics (GLM)
  *
  * @domain `glm.g-truc.net`
+ * @version `1.0.1` (3 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/glm-g-truc-net.md
  *
- * @install `pkgx glm.g-truc.net`
+ * @install `sh <(curl https://pkgx.sh) +glm.g-truc.net -- $SHELL -i`
  *
  * @example
  * ```typescript
@@ -11,7 +13,8 @@
  *
  * const pkg = pantry.glmgtrucnet
  * console.log(pkg.name)        // "glm.g-truc.net"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "OpenGL Mathematics (GLM)"
+ * console.log(pkg.versions[0]) // "1.0.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/glm-g-truc-net.md
@@ -23,25 +26,35 @@ export const glmgtrucnetPackage = {
    */
   name: 'glm.g-truc.net' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/glm.g-truc.net/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'glm.g-truc.net' as const,
-  fullPath: 'glm.g-truc.net' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'OpenGL Mathematics (GLM)' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/glm.g-truc.net/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx glm.g-truc.net' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +glm.g-truc.net -- $SHELL -i' as const,
+  programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.0.1',
+    '1.0.0',
+    '0.9.9.8',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'glm.g-truc.net' as const,
 }
 
 export type GlmgtrucnetPackage = typeof glmgtrucnetPackage

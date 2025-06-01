@@ -1,9 +1,13 @@
 /**
- * **graphviz.org** - Crafters of fine Open Source products
+ * **graphviz.org** - Graph visualization software from AT&T and Bell Labs
  *
  * @domain `graphviz.org`
+ * @programs `acyclic`, `bcomps`, `ccomps`, `circo`, `cluster`, ... (+30 more)
+ * @version `12.2.1` (11 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/graphviz-org.md
  *
- * @install `pkgx graphviz.org`
+ * @install `sh <(curl https://pkgx.sh) +graphviz.org -- $SHELL -i`
+ * @dependencies `cairographics.org^1.1.10`, `freedesktop.org/fontconfig^2.3.95`, `freetype.org^2.1.0`, ... (+7 more)
  *
  * @example
  * ```typescript
@@ -11,7 +15,9 @@
  *
  * const pkg = pantry.graphvizorg
  * console.log(pkg.name)        // "graphviz.org"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "Graph visualization software from AT&T and Bell..."
+ * console.log(pkg.programs)    // ["acyclic", "bcomps", ...]
+ * console.log(pkg.versions[0]) // "12.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/graphviz-org.md
@@ -23,25 +29,98 @@ export const graphvizorgPackage = {
    */
   name: 'graphviz.org' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/graphviz.org/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'graphviz.org' as const,
-  fullPath: 'graphviz.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Graph visualization software from AT&T and Bell Labs' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/graphviz.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx graphviz.org' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +graphviz.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'acyclic',
+    'bcomps',
+    'ccomps',
+    'circo',
+    'cluster',
+    'dijkstra',
+    'dot',
+    'dot2gxl',
+    'dot_builtins',
+    'edgepaint',
+    'fdp',
+    'gc',
+    'gml2gv',
+    'graphml2gv',
+    'gv2gml',
+    'gv2gxl',
+    'gvcolor',
+    'gvgen',
+    'gvmap',
+    'gvmap.sh',
+    'gvpack',
+    'gvpr',
+    'gxl2dot',
+    'gxl2gv',
+    'mm2gv',
+    'neato',
+    'nop',
+    'osage',
+    'patchwork',
+    'prune',
+    'sccmap',
+    'sfdp',
+    'tred',
+    'twopi',
+    'unflatten',
+  ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cairographics.org^1.1.10',
+    'freedesktop.org/fontconfig^2.3.95',
+    'freetype.org^2.1.0',
+    'gnome.org/glib^2.11.0',
+    'gnome.org/pango^1.12.4',
+    'gnu.org/libtool^2',
+    'libexpat.github.io^2.0.0',
+    'libpng.org^1.2.10',
+    'poppler.freedesktop.org',
+    'zlib.net^1.2.3',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '12.2.1',
+    '12.2.0',
+    '12.1.2',
+    '12.1.1',
+    '12.1.0',
+    '12.0.0',
+    '11.0.0',
+    '10.0.1',
+    '9.0.0',
+    '8.1.0',
+    '7.1.0',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'graphviz.org' as const,
 }
 
 export type GraphvizorgPackage = typeof graphvizorgPackage

@@ -1,47 +1,105 @@
 /**
- * **bashly** - Crafters of fine Open Source products
+ * **bashly** - Bash command line framework and CLI generator
  *
  * @domain `bashly.dannyb.co`
+ * @programs `bashly`
+ * @version `1.2.12` (14 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bashly-dannyb-co.md
  *
- * @install `pkgx bashly.dannyb.co`
+ * @install `sh <(curl https://pkgx.sh) bashly`
+ * @aliases `bashly`
+ * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
+ * @companions `gnu.org/bash`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.bashlydannybco
+ * // Access via alias (recommended)
+ * const pkg = pantry.bashly
+ * // Or access via domain
+ * const samePkg = pantry.bashlydannybco
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "bashly"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "Bash command line framework and CLI generator"
+ * console.log(pkg.programs)    // ["bashly"]
+ * console.log(pkg.versions[0]) // "1.2.12" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/bashly-dannyb-co.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bashlydannybcoPackage = {
+export const bashlyPackage = {
   /**
    * The display name of this package.
    */
   name: 'bashly' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/bashly.dannyb.co/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'bashly.dannyb.co' as const,
-  fullPath: 'bashly.dannyb.co' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Bash command line framework and CLI generator' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bashly.dannyb.co/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx bashly.dannyb.co' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
-  companions: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) bashly' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'bashly',
+  ] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'gnu.org/bash',
+  ] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'ruby-lang.org^3.1',
+    'rubygems.org',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.2.12',
+    '1.2.11',
+    '1.2.10',
+    '1.2.9',
+    '1.2.8',
+    '1.2.7',
+    '1.2.6',
+    '1.2.5',
+    '1.2.4',
+    '1.2.3',
+    '1.2.2',
+    '1.2.1',
+    '1.2.0',
+    '1.1.10',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'bashly',
+  ] as const,
+  fullPath: 'bashly.dannyb.co' as const,
 }
 
-export type BashlydannybcoPackage = typeof bashlydannybcoPackage
+export type BashlyPackage = typeof bashlyPackage

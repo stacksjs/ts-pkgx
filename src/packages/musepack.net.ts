@@ -1,9 +1,13 @@
 /**
- * **musepack.net** - Crafters of fine Open Source products
+ * **musepack.net** - Audio compression format and tools
  *
  * @domain `musepack.net`
+ * @programs `mpc2sv8`, `mpcchap`, `mpccut`, `mpcdec`, `mpcenc`, ... (+2 more)
+ * @version `475.0.0` (1 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/musepack-net.md
  *
- * @install `pkgx musepack.net`
+ * @install `sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i`
+ * @dependencies `musepack.net/libreplaygain`, `musepack.net/libcuefile`
  *
  * @example
  * ```typescript
@@ -11,7 +15,9 @@
  *
  * const pkg = pantry.musepacknet
  * console.log(pkg.name)        // "musepack.net"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "Audio compression format and tools"
+ * console.log(pkg.programs)    // ["mpc2sv8", "mpcchap", ...]
+ * console.log(pkg.versions[0]) // "475.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/musepack-net.md
@@ -23,25 +29,52 @@ export const musepacknetPackage = {
    */
   name: 'musepack.net' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/musepack.net/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'musepack.net' as const,
-  fullPath: 'musepack.net' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Audio compression format and tools' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/musepack.net/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx musepack.net' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'mpc2sv8',
+    'mpcchap',
+    'mpccut',
+    'mpcdec',
+    'mpcenc',
+    'mpcgain',
+    'wavcmp',
+  ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'musepack.net/libreplaygain',
+    'musepack.net/libcuefile',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '475.0.0',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'musepack.net' as const,
 }
 
 export type MusepacknetPackage = typeof musepacknetPackage

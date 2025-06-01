@@ -1,47 +1,94 @@
 /**
- * **cgal** - Crafters of fine Open Source products
+ * **cgal** - The public CGAL repository, see the README below
  *
  * @domain `cgal.org`
+ * @programs `cgal_create_CMakeLists`, `cgal_create_cmake_script`, `cgal_make_macosx_app`
+ * @version `6.0.1` (5 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cgal-org.md
  *
- * @install `pkgx cgal.org`
+ * @install `sh <(curl https://pkgx.sh) +cgal.org -- $SHELL -i`
+ * @aliases `cgal`
+ * @dependencies `boost.org`, `eigen.tuxfamily.org`, `gnu.org/gmp`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cgalorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.cgal
+ * // Or access via domain
+ * const samePkg = pantry.cgalorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "cgal"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "The public CGAL repository, see the README below"
+ * console.log(pkg.programs)    // ["cgal_create_CMakeLists", "cgal_create_cmake_script", ...]
+ * console.log(pkg.versions[0]) // "6.0.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cgal-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cgalorgPackage = {
+export const cgalPackage = {
   /**
    * The display name of this package.
    */
   name: 'cgal' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/cgal.org/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'cgal.org' as const,
-  fullPath: 'cgal.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'The public CGAL repository, see the README below' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cgal.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx cgal.org' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +cgal.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'cgal_create_CMakeLists',
+    'cgal_create_cmake_script',
+    'cgal_make_macosx_app',
+  ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'boost.org',
+    'eigen.tuxfamily.org',
+    'gnu.org/gmp',
+    'gnu.org/mpfr',
+    'openssl.org',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '6.0.1',
+    '6.0.0',
+    '5.6.2',
+    '5.6.1',
+    '5.6.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'cgal',
+  ] as const,
+  fullPath: 'cgal.org' as const,
 }
 
-export type CgalorgPackage = typeof cgalorgPackage
+export type CgalPackage = typeof cgalPackage

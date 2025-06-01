@@ -1,47 +1,80 @@
 /**
- * **micro** - Crafters of fine Open Source products
+ * **micro** - A modern and intuitive terminal-based text editor
  *
  * @domain `micro-editor.github.io`
+ * @programs `micro`
+ * @version `2.0.14` (4 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/micro-editor-github-io.md
  *
- * @install `pkgx micro-editor.github.io`
+ * @install `sh <(curl https://pkgx.sh) micro`
+ * @aliases `micro`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.microeditorgithubio
+ * // Access via alias (recommended)
+ * const pkg = pantry.micro
+ * // Or access via domain
+ * const samePkg = pantry.microeditorgithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "micro"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "A modern and intuitive terminal-based text editor"
+ * console.log(pkg.programs)    // ["micro"]
+ * console.log(pkg.versions[0]) // "2.0.14" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/micro-editor-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const microeditorgithubioPackage = {
+export const microPackage = {
   /**
    * The display name of this package.
    */
   name: 'micro' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/micro-editor.github.io/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'micro-editor.github.io' as const,
-  fullPath: 'micro-editor.github.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'A modern and intuitive terminal-based text editor' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/micro-editor.github.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx micro-editor.github.io' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) micro' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'micro',
+  ] as const,
   companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.0.14',
+    '2.0.13',
+    '2.0.12',
+    '2.0.11',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'micro',
+  ] as const,
+  fullPath: 'micro-editor.github.io' as const,
 }
 
-export type MicroeditorgithubioPackage = typeof microeditorgithubioPackage
+export type MicroPackage = typeof microPackage

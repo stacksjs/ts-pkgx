@@ -1,47 +1,84 @@
 /**
- * **speexdec** - Crafters of fine Open Source products
+ * **speexdec** - Audio codec designed for speech
  *
  * @domain `speex.org`
+ * @programs `speexdec`
+ * @version `1.2.1` (1 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/speex-org.md
  *
- * @install `pkgx speex.org`
+ * @install `sh <(curl https://pkgx.sh) speexdec`
+ * @aliases `speexdec`
+ * @dependencies `xiph.org/ogg`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.speexorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.speexdec
+ * // Or access via domain
+ * const samePkg = pantry.speexorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "speexdec"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "Audio codec designed for speech"
+ * console.log(pkg.programs)    // ["speexdec"]
+ * console.log(pkg.versions[0]) // "1.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/speex-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const speexorgPackage = {
+export const speexdecPackage = {
   /**
    * The display name of this package.
    */
   name: 'speexdec' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/speex.org/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'speex.org' as const,
-  fullPath: 'speex.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Audio codec designed for speech' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/speex.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx speex.org' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) speexdec' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'speexdec',
+  ] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'xiph.org/ogg',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.2.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'speexdec',
+  ] as const,
+  fullPath: 'speex.org' as const,
 }
 
-export type SpeexorgPackage = typeof speexorgPackage
+export type SpeexdecPackage = typeof speexdecPackage
