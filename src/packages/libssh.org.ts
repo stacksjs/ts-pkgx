@@ -1,27 +1,47 @@
+/**
+ * **libssh.org** - Crafters of fine Open Source products
+ *
+ * @domain `libssh.org`
+ *
+ * @install `pkgx libssh.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.libsshorg
+ * console.log(pkg.name)        // "libssh.org"
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/libssh-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const libsshorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'libssh.org' as const,
-  domain: 'libssh.org' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libssh.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
   programs: [] as const,
-  companions: [] as const,
-  dependencies: [
-    'openssl.org^1.1',
-    'zlib.net^1',
-  ] as const,
-  versions: [
-    '0.11.1',
-    '0.11.0',
-    '0.10.6',
-    '0.10.5',
-    '0.10.4',
-    '0.9.8',
-    '0.9.7',
-  ] as const,
+  homepage: 'https://pkgx.dev/pkgs/libssh.org/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'libssh.org' as const,
   fullPath: 'libssh.org' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx libssh.org' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type LibsshorgPackage = typeof libsshorgPackage

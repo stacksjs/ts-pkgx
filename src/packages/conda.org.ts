@@ -1,38 +1,47 @@
+/**
+ * **conda** - Crafters of fine Open Source products
+ *
+ * @domain `conda.org`
+ *
+ * @install `pkgx conda.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.condaorg
+ * console.log(pkg.name)        // "conda"
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/conda-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const condaorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'conda' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/conda.org/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'conda.org' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/conda.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) conda' as const,
-  programs: [
-    'conda',
-  ] as const,
-  companions: [] as const,
-  dependencies: [
-    'pkgx.sh^1',
-    'openssl.org^1.1',
-  ] as const,
-  versions: [
-    '25.3.1',
-    '25.1.1',
-    '24.11.1',
-    '24.9.2',
-    '24.7.1',
-    '24.5.0',
-    '24.4.0',
-    '24.3.0',
-    '24.1.2',
-    '23.11.0',
-    '23.10.0',
-    '23.9.0',
-    '23.7.4',
-    '23.7.3',
-    '23.7.2',
-  ] as const,
   fullPath: 'conda.org' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx conda.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type CondaorgPackage = typeof condaorgPackage

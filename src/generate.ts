@@ -41,6 +41,50 @@ async function importPantry() {
 }
 
 /**
+ * Filters out invalid aliases according to the user rules
+ * @param alias The alias to check
+ * @param targetDomain The target domain
+ * @returns true if the alias is valid, false otherwise
+ */
+function isValidAlias(alias: string, targetDomain: string): boolean {
+  // Don't create standalone aliases from generic sub-path words
+  const genericWords = ['cli', 'app', 'tool', 'server', 'client', 'api', 'lib', 'core']
+
+  // If the alias is just a generic word, skip it
+  if (genericWords.includes(alias.toLowerCase())) {
+    return false
+  }
+
+  // Don't create aliases that are the same as the domain
+  if (alias === targetDomain) {
+    return false
+  }
+
+  // Don't create aliases that are just the domain without dots
+  const domainWithoutDots = targetDomain.replace(/\./g, '')
+  if (alias.toLowerCase() === domainWithoutDots.toLowerCase()) {
+    return false
+  }
+
+  // Filter out shell command aliases (contain + or $ or -- or other shell syntax)
+  if (alias.includes('+') || alias.includes('$') || alias.includes('--') || alias.includes(' -')) {
+    return false
+  }
+
+  // Filter out aliases that start with special characters
+  if (/^\W/.test(alias)) {
+    return false
+  }
+
+  // Filter out aliases that are too long (likely to be command descriptions)
+  if (alias.length > 50) {
+    return false
+  }
+
+  return true
+}
+
+/**
  * Enhanced category mapping with better organization
  * Note: Domain names are normalized (dots removed, lowercase)
  */
@@ -413,15 +457,24 @@ export interface Pantry {
       domainToVarName[domain] = domainVarName
     }
 
-    // Build alias mappings
+    // Build alias mappings with improved handling for special characters
     for (const [alias, targetDomain] of Object.entries(aliases)) {
       const targetVarName = domainToVarName[targetDomain]
       if (targetVarName && alias !== targetDomain) {
-        // Convert alias to a valid variable name
+        // Check if this is a valid alias according to our rules
+        if (!isValidAlias(alias, targetDomain)) {
+          continue
+        }
+
+        // For aliases with spaces or special characters, we need special handling
+        // Convert alias to a safe variable name for internal use
         const aliasVarName = convertDomainToVarName(alias)
+
         // Only add if the alias var name is different from the target var name
-        if (aliasVarName !== targetVarName) {
-          aliasToVarName[aliasVarName] = targetVarName
+        // and if the original alias is meaningful (not just the domain itself)
+        if (aliasVarName !== targetVarName && alias !== targetDomain) {
+          // Store both the safe variable name and the original alias
+          aliasToVarName[alias] = targetVarName
         }
       }
     }
@@ -543,10 +596,12 @@ export interface Pantry {
     if (sortedAliases.length > 0) {
       interfaceDecl += '  // Alias properties for convenience\n'
 
-      for (const [aliasVarName, targetVarName] of sortedAliases) {
+      for (const [originalAlias, targetVarName] of sortedAliases) {
         const targetDomain = Object.keys(domainToVarName).find(d => domainToVarName[d] === targetVarName)
         const pkgData = pantryData[targetVarName]
-        const originalAlias = Object.keys(aliases).find(a => convertDomainToVarName(a) === aliasVarName)
+
+        // Convert the original alias to a safe property name
+        const aliasVarName = convertDomainToVarName(originalAlias)
 
         // Check if the alias variable name is a valid JavaScript identifier
         const isValidIdentifier = /^[a-z_$][\w$]*$/i.test(aliasVarName)

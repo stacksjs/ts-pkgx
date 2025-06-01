@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import type { Browser } from 'playwright'
+import type { Browser, Page } from 'playwright'
 import type { FetchProjectsOptions, GitHubContent, PackageFetchOptions, PkgxPackage, ProjectFolder } from './types'
 import fs from 'node:fs'
 import path from 'node:path'
@@ -1085,7 +1085,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
   const cacheDir = options.cacheDir || DEFAULT_CACHE_DIR
   const useCache = options.cache !== false
   const cacheExpirationMinutes = options.cacheExpirationMinutes || DEFAULT_CACHE_EXPIRATION_MINUTES
-  const concurrency = Math.min(options.concurrency || 8, 12) // Reduce max concurrency to prevent browser launch failures
+  const concurrency = Math.min(options.concurrency || 6, 8) // Further reduce concurrency for stability
 
   console.log(`Starting bulk fetch with concurrency: ${concurrency}, timeout: ${timeout}ms`)
 
@@ -1096,15 +1096,41 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
     // Get package list from GitHub API first (fastest method)
     console.log('Fetching package list from GitHub API...')
     try {
-      const projects = await fetchPkgxProjects()
-      allPackageNames = projects.map(project => project.name)
-      console.log(`Found ${allPackageNames.length} packages from GitHub API`)
+      const response = await fetch('https://api.github.com/repos/pkgxdev/pantry/contents/projects', {
+        headers: {
+          'User-Agent': 'ts-pkgx-fetcher',
+          'Accept': 'application/vnd.github.v3+json',
+        },
+      })
+
+      if (response.ok) {
+        const projects = await response.json() as Array<{ name: string, type: string }>
+        const packageNames = projects
+          .filter(item => item.type === 'dir')
+          .map(item => item.name)
+          .sort()
+
+        console.log(`Retrieved ${packageNames.length} projects from GitHub API`)
+        allPackageNames = packageNames
+      }
+      else {
+        throw new Error(`GitHub API returned ${response.status}`)
+      }
     }
-    catch (githubError) {
-      console.error(`GitHub API failed: ${githubError}`)
-      console.log('Using built-in package list as fallback...')
-      allPackageNames = [...ALL_KNOWN_PACKAGES]
+    catch (error) {
+      console.warn('Failed to fetch from GitHub API, falling back to local discovery:', error)
+      // Fallback: scan existing package files
+      const existingFiles = fs.readdirSync(outputDir).filter(f => f.endsWith('.ts'))
+      allPackageNames = existingFiles.map(f => path.basename(f, '.ts'))
+      console.log(`Found ${allPackageNames.length} existing packages`)
     }
+
+    if (allPackageNames.length === 0) {
+      console.error('No packages found to process')
+      return []
+    }
+
+    console.log(`Found ${allPackageNames.length} packages from GitHub API`)
 
     // Apply limit if specified
     if (options.limit && options.limit > 0) {
@@ -1112,189 +1138,120 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       console.log(`Limited to ${allPackageNames.length} packages`)
     }
 
-    const processedDomains = new Set<string>()
-    const savedPackages: string[] = []
+    // Create a single browser instance for all operations
+    console.log('Launching browser...')
+    const browser = await chromium.launch({
+      headless: true,
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+        '--disable-accelerated-2d-canvas',
+        '--disable-gpu',
+        '--window-size=1920,1080',
+        '--disable-extensions',
+        '--disable-plugins',
+        '--disable-images', // Disable image loading for faster page loads
+        '--disable-javascript', // Disable JS for faster, more reliable scraping
+      ],
+    })
+
+    console.log('Browser launched successfully')
+
+    const successfulPackages: string[] = []
     const failedPackages: string[] = []
+    let processed = 0
 
-    // Use a shared browser pool with better management
-    const browserPool: Browser[] = []
-    const maxBrowsers = Math.min(concurrency, 6) // Limit total browsers to prevent system overload
-
-    // Pre-launch browsers to avoid launch timeouts during processing
-    console.log(`Pre-launching ${maxBrowsers} browsers...`)
-    for (let i = 0; i < maxBrowsers; i++) {
-      try {
-        const browser = await chromium.launch({
-          headless: true,
-          timeout: 10000, // Longer timeout for initial launch
-          args: [
-            '--no-sandbox',
-            '--disable-dev-shm-usage',
-            '--disable-gpu',
-            '--disable-web-security',
-            '--disable-features=VizDisplayCompositor',
-            '--memory-pressure-off',
-            '--max_old_space_size=256',
-            '--disable-background-timer-throttling',
-            '--disable-backgrounding-occluded-windows',
-            '--disable-renderer-backgrounding',
-            '--disable-extensions',
-            '--disable-plugins',
-            '--disable-images',
-            '--disable-javascript',
-          ],
-        })
-        browserPool.push(browser)
-        console.log(`Launched browser ${i + 1}/${maxBrowsers}`)
-
-        // Small delay between launches to prevent overwhelming the system
-        await new Promise(resolve => setTimeout(resolve, 500))
-      }
-      catch (error) {
-        console.error(`Failed to launch browser ${i + 1}: ${error}`)
-        // Continue with fewer browsers if some fail to launch
-      }
-    }
-
-    console.log(`Successfully launched ${browserPool.length} browsers`)
-
-    // Simple semaphore for concurrency control
-    let activeRequests = 0
-    let browserIndex = 0
-
-    // Process a single package with improved error handling
-    const processPackage = async (packageName: string): Promise<string | null> => {
-      // Skip if already processed
-      if (processedDomains.has(packageName)) {
-        return null
-      }
-
-      // Check cache first
-      if (useCache) {
-        const cachedPackage = getValidCachedPackage(packageName, {
-          cacheDir,
-          cacheExpirationMinutes,
-        })
-
-        if (cachedPackage) {
-          const { packageInfo } = cachedPackage
-          const fullDomainName = packageInfo.domain || packageName
-          const safeFilename = fullDomainName.replace(/\//g, '-')
-
-          // Generate TypeScript file
-          savePackageAsTypeScript(outputDir, safeFilename, packageInfo)
-
-          // Mark as processed
-          processedDomains.add(fullDomainName)
-          if (packageInfo.aliases) {
-            packageInfo.aliases.forEach(alias => processedDomains.add(alias))
-          }
-
-          return fullDomainName
-        }
-      }
-
-      // Get a browser from the pool (round-robin)
-      if (browserPool.length === 0) {
-        console.error(`No browsers available for ${packageName}`)
-        return null
-      }
-
-      const browser = browserPool[browserIndex % browserPool.length]
-      browserIndex++
-
-      try {
-        // Fetch the package with timeout
-        const result = await Promise.race([
-          fetchAndSavePackage(
-            packageName,
-            outputDir,
-            timeout,
-            false, // Save as TypeScript
-            1, // First attempt only for bulk operation
-            1, // No retries for bulk operation
-            false, // No debug
-            {
-              cacheDir,
-              cache: useCache,
-              cacheExpirationMinutes,
-              browser,
-            },
-          ),
-          new Promise<null>((resolve) => {
-            setTimeout(() => {
-              console.warn(`Timeout processing ${packageName} after ${timeout}ms`)
-              resolve(null)
-            }, timeout + 2000) // Add buffer to operation timeout
-          }),
-        ])
-
-        if (result?.success && result.fullDomainName) {
-          processedDomains.add(result.fullDomainName)
-          if (result.aliases) {
-            result.aliases.forEach(alias => processedDomains.add(alias))
-          }
-          return result.fullDomainName
-        }
-
-        return null
-      }
-      catch (error) {
-        // Log error but don't let it stop the process
-        const errorMsg = String(error).substring(0, 100)
-        console.error(`Error processing ${packageName}: ${errorMsg}`)
-        return null
-      }
-    }
-
-    // Process packages with controlled concurrency using Promise.allSettled
-    console.log(`Processing ${allPackageNames.length} packages...`)
-
-    const batchSize = 25 // Smaller batches for better progress reporting and resource management
-    const batches: string[][] = []
+    // Process packages in smaller batches to avoid overwhelming the system
+    const batchSize = Math.min(concurrency, 6)
+    const batches = []
     for (let i = 0; i < allPackageNames.length; i += batchSize) {
       batches.push(allPackageNames.slice(i, i + batchSize))
     }
+
+    console.log(`Processing ${allPackageNames.length} packages in ${batches.length} batches...`)
 
     for (let batchIndex = 0; batchIndex < batches.length; batchIndex++) {
       const batch = batches[batchIndex]
       console.log(`Processing batch ${batchIndex + 1}/${batches.length} (${batch.length} packages)`)
 
-      // Create semaphore-controlled promises
+      // Process batch with controlled concurrency
       const batchPromises = batch.map(async (packageName) => {
-        // Wait for available slot
-        // eslint-disable-next-line no-unmodified-loop-condition
-        while (activeRequests >= concurrency) {
-          await new Promise(resolve => setTimeout(resolve, 50))
-        }
-
-        activeRequests++
         try {
-          const result = await processPackage(packageName)
-          if (result) {
-            savedPackages.push(result)
+          // Check cache first
+          const cacheFile = path.join(cacheDir, `${packageName}.json`)
+          if (useCache && fs.existsSync(cacheFile)) {
+            const stats = fs.statSync(cacheFile)
+            const ageMinutes = (Date.now() - stats.mtime.getTime()) / (1000 * 60)
+
+            if (ageMinutes < cacheExpirationMinutes) {
+              console.log(`Using cached data for ${packageName} (age: ${Math.round(ageMinutes)} minutes)`)
+              try {
+                const cachedData = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'))
+                const tsFilePath = savePackageAsTypeScript(outputDir, packageName, cachedData)
+                console.log(`Using cached data for ${packageName} (saved to ${tsFilePath})`)
+                return { success: true, packageName }
+              }
+              catch {
+                console.warn(`Cache file corrupted for ${packageName}, will refetch`)
+              }
+            }
           }
-          else {
-            failedPackages.push(packageName)
+
+          // Create a new page for this package
+          const page = await browser.newPage()
+
+          try {
+            // Set a shorter timeout for individual operations
+            page.setDefaultTimeout(timeout)
+
+            const result = await fetchPackageWithPage(page, packageName, outputDir, timeout, useCache, cacheDir)
+
+            if (result?.success) {
+              return { success: true, packageName }
+            }
+            else {
+              console.warn(`Failed to fetch ${packageName}`)
+              return { success: false, packageName }
+            }
           }
-          return result
+          finally {
+            // Always close the page to free resources
+            await page.close().catch(() => {}) // Ignore close errors
+          }
         }
-        finally {
-          activeRequests--
+        catch (error) {
+          console.error(`Error processing ${packageName}:`, error)
+          return { success: false, packageName }
         }
       })
 
       // Wait for batch to complete
-      await Promise.allSettled(batchPromises)
+      const batchResults = await Promise.allSettled(batchPromises)
 
-      // Progress reporting
-      const processedCount = savedPackages.length + failedPackages.length
-      const completedPercent = Math.round((processedCount / allPackageNames.length) * 100)
-      const elapsedSeconds = Math.round((Date.now() - startTime) / 1000)
-      const rate = processedCount / elapsedSeconds
-      const estimatedTotal = Math.round(allPackageNames.length / rate)
+      // Process results
+      for (const result of batchResults) {
+        processed++
+        if (result.status === 'fulfilled') {
+          if (result.value.success) {
+            successfulPackages.push(result.value.packageName)
+          }
+          else {
+            failedPackages.push(result.value.packageName)
+          }
+        }
+        else {
+          console.error('Batch promise rejected:', result.reason)
+          failedPackages.push('unknown')
+        }
+      }
 
-      console.log(`Batch ${batchIndex + 1}/${batches.length} complete. Progress: ${processedCount}/${allPackageNames.length} (${completedPercent}%) | Success: ${savedPackages.length} | Failed: ${failedPackages.length} | Rate: ${rate.toFixed(1)}/s | ETA: ${Math.max(0, estimatedTotal - elapsedSeconds)}s`)
+      // Progress update
+      const elapsed = Math.round((Date.now() - startTime) / 1000)
+      const rate = Math.round(processed / elapsed * 10) / 10
+      const eta = Math.round((allPackageNames.length - processed) / rate)
+
+      console.log(`Batch ${batchIndex + 1}/${batches.length} complete. Progress: ${processed}/${allPackageNames.length} (${Math.round(processed / allPackageNames.length * 100)}%) | Success: ${successfulPackages.length} | Failed: ${failedPackages.length} | Rate: ${rate}/s | ETA: ${eta}s`)
 
       // Small delay between batches to prevent overwhelming the system
       if (batchIndex < batches.length - 1) {
@@ -1302,36 +1259,210 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       }
     }
 
-    // Clean up browser pool
-    console.log('Cleaning up browser pool...')
-    for (let i = 0; i < browserPool.length; i++) {
-      try {
-        await Promise.race([
-          browserPool[i].close(),
-          new Promise(resolve => setTimeout(resolve, 3000)),
-        ])
-        console.log(`Closed browser ${i + 1}/${browserPool.length}`)
-      }
-      catch (error) {
-        console.error(`Error closing browser ${i + 1}: ${error}`)
-      }
-    }
+    // Clean up browser
+    console.log('Closing browser...')
+    await browser.close()
 
     const totalTime = Math.round((Date.now() - startTime) / 1000)
-    console.log(`\nCompleted in ${totalTime}s. Successfully processed: ${savedPackages.length}, Failed: ${failedPackages.length}`)
+    console.log(`\nCompleted in ${totalTime}s. Successfully processed: ${successfulPackages.length}, Failed: ${failedPackages.length}`)
 
-    if (failedPackages.length > 0 && failedPackages.length <= 20) {
-      console.log(`Failed packages: ${failedPackages.join(', ')}`)
-    }
-    else if (failedPackages.length > 20) {
-      console.log(`Failed packages (first 20): ${failedPackages.slice(0, 20).join(', ')}...`)
+    if (failedPackages.length > 0) {
+      console.log(`Failed packages: ${failedPackages.slice(0, 10).join(', ')}${failedPackages.length > 10 ? ` ... and ${failedPackages.length - 10} more` : ''}`)
     }
 
-    return savedPackages
+    return successfulPackages
   }
   catch (error) {
-    console.error('Error during bulk package fetching:', error)
-    throw error
+    console.error('Error in fetchAndSaveAllPackages:', error)
+    return []
+  }
+}
+
+/**
+ * Fetch package data using a provided page instance
+ */
+async function fetchPackageWithPage(
+  page: Page,
+  packageName: string,
+  outputDir: string,
+  timeout: number,
+  useCache: boolean,
+  cacheDir: string,
+): Promise<{ success: boolean, filePath?: string } | null> {
+  try {
+    // Handle special domain cases
+    if (packageName.includes('/')) {
+      console.log(`Using specialized handling for ${packageName}...`)
+      const parts = packageName.split('/')
+      const domain = parts[0]
+      const subPath = parts.slice(1).join('/')
+      const fullPath = `${domain}/${subPath}`
+
+      // Check cache for the full path version
+      const cacheFile = path.join(cacheDir, `${domain}-${subPath.replace(/\//g, '-')}.json`)
+      if (useCache && fs.existsSync(cacheFile)) {
+        const stats = fs.statSync(cacheFile)
+        const ageMinutes = (Date.now() - stats.mtime.getTime()) / (1000 * 60)
+
+        if (ageMinutes < DEFAULT_CACHE_EXPIRATION_MINUTES) {
+          console.log(`Using cached data for ${fullPath} (age: ${Math.round(ageMinutes)} minutes)`)
+          try {
+            const cachedData = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'))
+            const tsFilePath = savePackageAsTypeScript(outputDir, `${domain}-${subPath.replace(/\//g, '-')}`, cachedData)
+            console.log(`Using cached data for ${fullPath} (saved to ${tsFilePath})`)
+            return { success: true, filePath: tsFilePath }
+          }
+          catch {
+            console.warn(`Cache file corrupted for ${fullPath}, will refetch`)
+          }
+        }
+      }
+    }
+
+    // Navigate to the package page
+    const url = `https://pkgx.dev/pkgs/${packageName}/`
+    console.log(`Navigating to ${url}...`)
+
+    await page.goto(url, {
+      waitUntil: 'domcontentloaded', // Don't wait for all resources
+      timeout,
+    })
+
+    // Extract package information with improved selectors
+    console.log('Extracting package information...')
+
+    const packageInfo = await page.evaluate(() => {
+      // Try multiple strategies to extract package data
+      const strategies = [
+        // Strategy 1: Look for structured data
+        () => {
+          const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+          for (const script of scripts) {
+            try {
+              const data = JSON.parse(script.textContent || '')
+              if (data.name || data.description) {
+                return data
+              }
+            }
+            catch {
+              // Continue to next script
+            }
+          }
+          return null
+        },
+
+        // Strategy 2: Extract from meta tags and page content
+        () => {
+          const getMetaContent = (name: string) => {
+            const meta = document.querySelector(`meta[name="${name}"], meta[property="${name}"]`)
+            return meta?.getAttribute('content') || ''
+          }
+
+          const title = document.title || ''
+          const description = getMetaContent('description')
+            || getMetaContent('og:description')
+            || document.querySelector('p')?.textContent?.trim() || ''
+
+          // Look for version information
+          const versionElements = Array.from(document.querySelectorAll('*')).filter(el =>
+            el.textContent?.match(/v?\d+\.\d+\.\d+/) && el.textContent.length < 50,
+          )
+
+          const versions = versionElements
+            .map(el => el.textContent?.match(/v?(\d+\.\d+\.\d\S*)/)?.[1])
+            .filter(Boolean)
+            .slice(0, 10) // Limit to first 10 versions found
+
+          // Look for program/command information
+          const codeElements = Array.from(document.querySelectorAll('code, .command, .program'))
+          const programs = codeElements
+            .map(el => el.textContent?.trim())
+            .filter(text => text && text.length < 50 && !text.includes(' ') && /^[\w-]+$/.test(text))
+            .slice(0, 5) // Limit to first 5 programs
+
+          return {
+            name: title.split(' ')[0] || '',
+            description: description.substring(0, 500), // Limit description length
+            versions: Array.from(new Set(versions)), // Remove duplicates
+            programs: Array.from(new Set(programs)), // Remove duplicates
+            homepage: window.location.href,
+          }
+        },
+      ]
+
+      // Try each strategy
+      for (const strategy of strategies) {
+        try {
+          const result = strategy()
+          if (result && (result.name || result.description)) {
+            return result
+          }
+        }
+        catch {
+          // Strategy failed, continue to next
+        }
+      }
+
+      // Fallback: minimal data
+      return {
+        name: '',
+        description: '',
+        versions: [],
+        programs: [],
+        homepage: window.location.href,
+      }
+    })
+
+    // Validate the extracted data
+    if (!packageInfo.name && !packageInfo.description) {
+      console.warn(`⚠️  Package ${packageName} has no meaningful data. Skipping.`)
+      return { success: false }
+    }
+
+    // Check for generic/placeholder descriptions that indicate fetch errors
+    const genericDescriptions = [
+      'loading',
+      'please wait',
+      'not found',
+      'error',
+      'unavailable',
+      'coming soon',
+      'under construction',
+    ]
+
+    if (packageInfo.description && genericDescriptions.some(generic =>
+      packageInfo.description.toLowerCase().includes(generic),
+    )) {
+      console.warn(`⚠️  Package ${packageName} has generic description. Might be a fetch error.`)
+      return { success: false }
+    }
+
+    // Enhance the package info
+    const enhancedPackageInfo = {
+      ...packageInfo,
+      domain: packageName,
+      fullPath: packageName,
+      fetchedAt: new Date().toISOString(),
+      installCommand: `pkgx ${packageName}`,
+      aliases: [], // Will be populated later if needed
+      dependencies: [],
+      companions: [],
+    }
+
+    // Save to cache
+    if (useCache) {
+      const cacheFile = path.join(cacheDir, `${packageName.replace(/\//g, '-')}.json`)
+      fs.writeFileSync(cacheFile, JSON.stringify(enhancedPackageInfo, null, 2))
+    }
+
+    // Save as TypeScript
+    const tsFilePath = savePackageAsTypeScript(outputDir, packageName.replace(/\//g, '-'), enhancedPackageInfo)
+
+    return { success: true, filePath: tsFilePath }
+  }
+  catch (error) {
+    console.error(`Error fetching ${packageName}:`, error)
+    return { success: false }
   }
 }
 

@@ -1,16 +1,47 @@
+/**
+ * **fullstory.com** - Go home.
+ *
+ * @domain `fullstory.com`
+ *
+ * @install `pkgx fullstory.com`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.fullstorycom
+ * console.log(pkg.name)        // "fullstory.com"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/fullstory-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const fullstorycomPackage = {
-  name: 'fullstory.com' as const,
-  domain: 'fullstory.com' as const,
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
-  installCommand: 'pkgx fullstory.com' as const,
-  programs: [] as const,
-  companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
   versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/fullstory.com/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'fullstory.com' as const,
   fullPath: 'fullstory.com' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx fullstory.com' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type FullstorycomPackage = typeof fullstorycomPackage

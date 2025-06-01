@@ -1,41 +1,47 @@
+/**
+ * **unrar** - Crafters of fine Open Source products
+ *
+ * @domain `rarlab.com`
+ *
+ * @install `pkgx rarlab.com`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.rarlabcom
+ * console.log(pkg.name)        // "unrar"
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/rarlab-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const rarlabcomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'unrar' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/rarlab.com/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'rarlab.com' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rarlab.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) unrar' as const,
-  programs: [
-    'unrar',
-  ] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  versions: [
-    '7.1.6',
-    '7.1.5',
-    '7.1.4',
-    '7.1.2',
-    '7.1.1',
-    '7.0.9',
-    '7.0.8',
-    '7.0.7',
-    '7.0.6',
-    '7.0.5',
-    '7.0.4',
-    '7.0.3',
-    '7.0.2',
-    '7.0.1',
-    '6.2.12',
-    '6.2.11',
-    '6.2.10',
-    '6.2.9',
-    '6.2.8',
-  ] as const,
   fullPath: 'rarlab.com' as const,
-  aliases: [
-    'unrar',
-  ] as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx rarlab.com' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type RarlabcomPackage = typeof rarlabcomPackage

@@ -1,43 +1,47 @@
+/**
+ * **openssh.com** - Crafters of fine Open Source products
+ *
+ * @domain `openssh.com`
+ *
+ * @install `pkgx openssh.com`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.opensshcom
+ * console.log(pkg.name)        // "openssh.com"
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/openssh-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const opensshcomPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'openssh.com' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/openssh.com/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'openssh.com' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openssh.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) +openssh.com -- $SHELL -i' as const,
-  programs: [
-    'scp',
-    'sftp',
-    'slogin',
-    'ssh',
-    'ssh-add',
-    'ssh-agent',
-    'ssh-keygen',
-    'ssh-keyscan',
-    'sshd',
-  ] as const,
-  companions: [] as const,
-  dependencies: [
-    'nlnetlabs.nl/ldns',
-    'developers.yubico.com/libfido2',
-    'openssl.org',
-    'kerberos.org',
-    'thrysoee.dk/editline',
-    'github.com/besser82/libxcrypt',
-    'zlib.net',
-    'linuxlinux-pam.org',
-    'linux-pam.org',
-  ] as const,
-  versions: [
-    '10.0.0',
-    '9.9.0',
-    '9.8.0',
-    '9.7.0',
-    '9.6.0',
-    '9.5.0',
-  ] as const,
   fullPath: 'openssh.com' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx openssh.com' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type OpensshcomPackage = typeof opensshcomPackage

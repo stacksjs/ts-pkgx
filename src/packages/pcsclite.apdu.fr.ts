@@ -1,39 +1,47 @@
+/**
+ * **pcsc-lite** - Crafters of fine Open Source products
+ *
+ * @domain `pcsclite.apdu.fr`
+ *
+ * @install `pkgx pcsclite.apdu.fr`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.pcscliteapdufr
+ * console.log(pkg.name)        // "pcsc-lite"
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/pcsclite-apdu-fr.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const pcscliteapdufrPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'pcsc-lite' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/pcsclite.apdu.fr/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'pcsclite.apdu.fr' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pcsclite.apdu.fr/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) pcscd' as const,
-  programs: [
-    'pcscd',
-  ] as const,
-  companions: [] as const,
-  dependencies: [
-    'libusb.info^1',
-    'linuxsystemd.io^254',
-    'systemd.io^254',
-  ] as const,
-  versions: [
-    '2.3.3',
-    '2.3.2',
-    '2.3.1',
-    '2.3.0',
-    '2.2.3',
-    '2.2.2',
-    '2.2.1',
-    '2.2.0',
-    '2.1.0',
-    '2.0.3',
-    '2.0.2',
-    '2.0.1',
-    '2.0.0',
-  ] as const,
   fullPath: 'pcsclite.apdu.fr' as const,
-  aliases: [
-    'pcsc-lite',
-  ] as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx pcsclite.apdu.fr' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type PcscliteapdufrPackage = typeof pcscliteapdufrPackage

@@ -1,18 +1,47 @@
+/**
+ * **opencore-amr.sourceforge.io** - Crafters of fine Open Source products
+ *
+ * @domain `opencore-amr.sourceforge.io`
+ *
+ * @install `pkgx opencore-amr.sourceforge.io`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.opencoreamrsourceforgeio
+ * console.log(pkg.name)        // "opencore-amr.sourceforge.io"
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/opencore-amr-sourceforge-io.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const opencoreamrsourceforgeioPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'opencore-amr.sourceforge.io' as const,
-  domain: 'opencore-amr.sourceforge.io' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opencore-amr.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) +opencore-amr.sourceforge.io -- $SHELL -i' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
   programs: [] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  versions: [
-    '0.1.6',
-  ] as const,
+  homepage: 'https://pkgx.dev/pkgs/opencore-amr.sourceforge.io/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'opencore-amr.sourceforge.io' as const,
   fullPath: 'opencore-amr.sourceforge.io' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx opencore-amr.sourceforge.io' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type OpencoreamrsourceforgeioPackage = typeof opencoreamrsourceforgeioPackage

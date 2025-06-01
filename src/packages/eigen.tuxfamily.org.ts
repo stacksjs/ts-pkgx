@@ -1,22 +1,47 @@
+/**
+ * **eigen.tuxfamily.org** - Crafters of fine Open Source products
+ *
+ * @domain `eigen.tuxfamily.org`
+ *
+ * @install `pkgx eigen.tuxfamily.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.eigentuxfamilyorg
+ * console.log(pkg.name)        // "eigen.tuxfamily.org"
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/eigen-tuxfamily-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const eigentuxfamilyorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'eigen.tuxfamily.org' as const,
-  domain: 'eigen.tuxfamily.org' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/eigen.tuxfamily.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
   programs: [] as const,
-  companions: [] as const,
-  dependencies: [
-    'linuxgnu.org/gcc/libstdcxx@14',
-    'gnu.org/gcc/libstdcxx@14',
-  ] as const,
-  versions: [
-    '3.4.0',
-  ] as const,
+  homepage: 'https://pkgx.dev/pkgs/eigen.tuxfamily.org/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'eigen.tuxfamily.org' as const,
   fullPath: 'eigen.tuxfamily.org' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx eigen.tuxfamily.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type EigentuxfamilyorgPackage = typeof eigentuxfamilyorgPackage

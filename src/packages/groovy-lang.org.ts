@@ -1,54 +1,47 @@
+/**
+ * **groovy-lang.org** - Crafters of fine Open Source products
+ *
+ * @domain `groovy-lang.org`
+ *
+ * @install `pkgx groovy-lang.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.groovylangorg
+ * console.log(pkg.name)        // "groovy-lang.org"
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/groovy-lang-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const groovylangorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'groovy-lang.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/groovy-lang.org/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'groovy-lang.org' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/groovy-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) +groovy-lang.org -- $SHELL -i' as const,
-  programs: [
-    'grape',
-    'grape_completion',
-    'groovy',
-    'groovyc',
-    'groovyc_completion',
-    'groovy_completion',
-    'groovyConsole',
-    'groovyConsole_completion',
-    'groovydoc',
-    'groovydoc_completion',
-    'groovysh',
-    'groovysh_completion',
-    'java2groovy',
-    'startGroovy',
-  ] as const,
-  companions: [] as const,
-  dependencies: [
-    'openjdk.org@17',
-  ] as const,
-  versions: [
-    '4.0.26',
-    '4.0.25',
-    '4.0.24',
-    '4.0.23',
-    '4.0.22',
-    '4.0.21',
-    '4.0.20',
-    '4.0.18',
-    '4.0.17',
-    '4.0.16',
-    '4.0.15',
-    '4.0.14',
-    '4.0.13',
-    '3.0.24',
-    '3.0.23',
-    '3.0.22',
-    '3.0.21',
-    '3.0.20',
-    '3.0.19',
-    '2.5.23',
-  ] as const,
   fullPath: 'groovy-lang.org' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx groovy-lang.org' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type GroovylangorgPackage = typeof groovylangorgPackage

@@ -1,17 +1,47 @@
+/**
+ * **anchore.com** - Go home.
+ *
+ * @domain `anchore.com`
+ *
+ * @install `pkgx anchore.com`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.anchorecom
+ * console.log(pkg.name)        // "anchore.com"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/anchore-com.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const anchorecomPackage = {
-  name: 'anchore.com' as const,
-  domain: 'anchore.com' as const,
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
-  installCommand: 'pkgx anchore.com' as const,
-  programs: [] as const,
-  companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
   versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/anchore.com/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'anchore.com' as const,
   fullPath: 'anchore.com' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx anchore.com' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type AnchorecomPackage = typeof anchorecomPackage

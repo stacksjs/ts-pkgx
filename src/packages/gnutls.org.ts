@@ -1,46 +1,47 @@
+/**
+ * **gnutls.org** - Crafters of fine Open Source products
+ *
+ * @domain `gnutls.org`
+ *
+ * @install `pkgx gnutls.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.gnutlsorg
+ * console.log(pkg.name)        // "gnutls.org"
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/gnutls-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const gnutlsorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'gnutls.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/gnutls.org/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'gnutls.org' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnutls.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) +gnutls.org -- $SHELL -i' as const,
-  programs: [
-    'certtool',
-    'danetool',
-    'gnutls-cli',
-    'gnutls-cli-debug',
-    'gnutls-serv',
-    'ocsptool',
-    'p11tool',
-    'psktool',
-  ] as const,
-  companions: [] as const,
-  dependencies: [
-    'freedesktop.org/p11-kit',
-    'gnu.org/libidn2',
-    'gnu.org/libunistring^1',
-    'gnu.org/libtasn1^4',
-    'gnu.org/nettle',
-    'gnu.org/gettext',
-    'gnu.org/gmp',
-    'unbound.net^1',
-    'curl.se/ca-certs',
-  ] as const,
-  versions: [
-    '3.8.9',
-    '3.8.7',
-    '3.8.6',
-    '3.8.5',
-    '3.8.4',
-    '3.8.3',
-    '3.8.2',
-    '3.8.1',
-    '3.7.10',
-    '3.6.16',
-  ] as const,
   fullPath: 'gnutls.org' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx gnutls.org' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type GnutlsorgPackage = typeof gnutlsorgPackage

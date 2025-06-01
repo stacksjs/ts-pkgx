@@ -1,28 +1,47 @@
+/**
+ * **ceres-solver.org** - Crafters of fine Open Source products
+ *
+ * @domain `ceres-solver.org`
+ *
+ * @install `pkgx ceres-solver.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.ceressolverorg
+ * console.log(pkg.name)        // "ceres-solver.org"
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/ceres-solver-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const ceressolverorgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'ceres-solver.org' as const,
-  domain: 'ceres-solver.org' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ceres-solver.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) +ceres-solver.org -- $SHELL -i' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
   programs: [] as const,
-  companions: [] as const,
-  dependencies: [
-    'eigen.tuxfamily.org',
-    'gflags.github.io',
-    'google.com/glog',
-    'glaros.dtc.umn.edu/metis',
-    'netlib.org/lapack',
-    'people.engr.tamu.edu/davis/suitesparse',
-    'github.com/oneapi-src/oneTBB',
-  ] as const,
-  versions: [
-    '2.2.0',
-    '2.1.0',
-  ] as const,
+  homepage: 'https://pkgx.dev/pkgs/ceres-solver.org/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'ceres-solver.org' as const,
   fullPath: 'ceres-solver.org' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx ceres-solver.org' as const,
   aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type CeressolverorgPackage = typeof ceressolverorgPackage
