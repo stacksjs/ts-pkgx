@@ -1943,10 +1943,14 @@ export interface Pantry {
   ffmpegorg: ffmpeg_org.FfmpegorgPackage
 
   /**
-   * **Auto-GPT**
+   * **Auto-GPT** - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
    *
    * @domain `agpt.co`
-   * @install `pkgx agpt.co`
+   * @programs `auto-gpt`
+   * @version `0.4.7` (9 versions available)
+   * @install `sh <(curl https://pkgx.sh) auto-gpt`
+   * @aliases `auto-gpt`
+   * @dependencies `python.org>=3.10<3.12`, `redis.io^7`, `tea.xyz^0`
    *
    * @example
    * ```typescript
@@ -1954,10 +1958,12 @@ export interface Pantry {
    *
    * const pkg = pantry.agptco
    * console.log(pkg.name)        // "Auto-GPT"
-   * console.log(pkg.description) // "Crafters of fine Open Source products"
+   * console.log(pkg.description) // "AutoGPT is the vision of accessible AI for ever..."
+   * console.log(pkg.programs)    // ["auto-gpt"]
+   * console.log(pkg.versions[0]) // "0.4.7"
    * ```
    */
-  agptco: agpt_co.AgptcoPackage
+  agptco: agpt_co.AutogptPackage
 
   /**
    * **langchain.com**
@@ -2949,6 +2955,8 @@ export interface Pantry {
    * **pocket**
    *
    * @domain `pokt.network`
+   * @programs `pocket`
+   * @version `0.9.20.12.00.11.30.11.20.11.10.10.40.10.30.10.0` (9 versions available)
    * @install `pkgx pokt.network`
    *
    * @example
@@ -2958,6 +2966,8 @@ export interface Pantry {
    * const pkg = pantry.poktnetwork
    * console.log(pkg.name)        // "pocket"
    * console.log(pkg.description) // "Crafters of fine Open Source products"
+   * console.log(pkg.programs)    // ["pocket"]
+   * console.log(pkg.versions[0]) // "0.9.20.12.00.11.30.11.20.11.10.10.40.10.30.10.0"
    * ```
    */
   poktnetwork: pokt_network.PoktnetworkPackage
@@ -3870,13 +3880,10 @@ export interface Pantry {
   ccachedev: ccache_dev.CcachedevPackage
 
   /**
-   * **pnp** - Fast, disk space efficient package manager
+   * **pnp**
    *
    * @domain `pnpm.io`
-   * @programs `pnpm`, `pnpx`
-   * @version `10.11.0` (162 versions available)
-   * @install `sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i`
-   * @dependencies `nodejs.org`
+   * @install `pkgx pnpm.io`
    *
    * @example
    * ```typescript
@@ -3884,9 +3891,7 @@ export interface Pantry {
    *
    * const pkg = pantry.pnpmio
    * console.log(pkg.name)        // "pnp"
-   * console.log(pkg.description) // "Fast, disk space efficient package manager"
-   * console.log(pkg.programs)    // ["pnpm", "pnpx"]
-   * console.log(pkg.versions[0]) // "10.11.0"
+   * console.log(pkg.description) // "Crafters of fine Open Source products"
    * ```
    */
   pnpmio: pnpm_io.PnpmioPackage
@@ -4062,14 +4067,10 @@ export interface Pantry {
   wezfurlongorg: wezfurlong_org.WezfurlongorgPackage
 
   /**
-   * **sfcgal-config** - C++ wrapper library around CGAL
+   * **sfcgal-config**
    *
    * @domain `sfcgal.org`
-   * @programs `sfcgal-config`
-   * @version `2.1.0` (6 versions available)
-   * @install `sh <(curl https://pkgx.sh) sfcgal-config`
-   * @aliases `sfcgal-config`
-   * @dependencies `boost.org`, `cgal.org`, `gnu.org/gmp`, ... (+1 more)
+   * @install `pkgx sfcgal.org`
    *
    * @example
    * ```typescript
@@ -4077,12 +4078,10 @@ export interface Pantry {
    *
    * const pkg = pantry.sfcgalorg
    * console.log(pkg.name)        // "sfcgal-config"
-   * console.log(pkg.description) // "C++ wrapper library around CGAL"
-   * console.log(pkg.programs)    // ["sfcgal-config"]
-   * console.log(pkg.versions[0]) // "2.1.0"
+   * console.log(pkg.description) // "Crafters of fine Open Source products"
    * ```
    */
-  sfcgalorg: sfcgal_org.SfcgalconfigPackage
+  sfcgalorg: sfcgal_org.SfcgalorgPackage
 
   /**
    * **github.com/fastfetch-cli-fastfetch**
@@ -7128,10 +7127,11 @@ export interface Pantry {
   logdydev: logdy_dev.LogdydevPackage
 
   /**
-   * **abseil.io**
+   * **abseil.io** - Abseil Common Libraries (C++)
    *
    * @domain `abseil.io`
-   * @install `pkgx abseil.io`
+   * @version `20250512.0.0` (17 versions available)
+   * @install `sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i`
    *
    * @example
    * ```typescript
@@ -7139,7 +7139,8 @@ export interface Pantry {
    *
    * const pkg = pantry.abseilio
    * console.log(pkg.name)        // "abseil.io"
-   * console.log(pkg.description) // "Crafters of fine Open Source products"
+   * console.log(pkg.description) // "Abseil Common Libraries (C++)"
+   * console.log(pkg.versions[0]) // "20250512.0.0"
    * ```
    */
   abseilio: abseil_io.AbseilioPackage
@@ -7505,6 +7506,8 @@ export interface Pantry {
    * **postgresql.org**
    *
    * @domain `postgresql.org`
+   * @programs `clusterdb`, `createdb`, `dropdb`, `dropuser`, `ecpg`
+   * @version `17.2.0` (10 versions available)
    * @install `pkgx postgresql.org`
    *
    * @example
@@ -7514,6 +7517,8 @@ export interface Pantry {
    * const pkg = pantry.postgresqlorg
    * console.log(pkg.name)        // "postgresql.org"
    * console.log(pkg.description) // "Crafters of fine Open Source products"
+   * console.log(pkg.programs)    // ["clusterdb", "createdb", ...]
+   * console.log(pkg.versions[0]) // "17.2.0"
    * ```
    */
   postgresqlorg: postgresql_org.PostgresqlorgPackage
@@ -9449,6 +9454,7 @@ export interface Pantry {
    * **PortAudio**
    *
    * @domain `portaudio.com`
+   * @version `19.7.0` (1 versions available)
    * @install `pkgx portaudio.com`
    *
    * @example
@@ -9458,6 +9464,7 @@ export interface Pantry {
    * const pkg = pantry.portaudiocom
    * console.log(pkg.name)        // "PortAudio"
    * console.log(pkg.description) // "Crafters of fine Open Source products"
+   * console.log(pkg.versions[0]) // "19.7.0"
    * ```
    */
   portaudiocom: portaudio_com.PortaudiocomPackage
@@ -9993,6 +10000,8 @@ export interface Pantry {
    * **poppler.freedesktop.org**
    *
    * @domain `poppler.freedesktop.org`
+   * @programs `pdfattach`, `pdfdetach`, `pdffonts`, `pdfimages`, `pdfinfo`
+   * @version `1.58.0` (8 versions available)
    * @install `pkgx poppler.freedesktop.org`
    *
    * @example
@@ -10002,6 +10011,8 @@ export interface Pantry {
    * const pkg = pantry.popplerfreedesktoporg
    * console.log(pkg.name)        // "poppler.freedesktop.org"
    * console.log(pkg.description) // "Crafters of fine Open Source products"
+   * console.log(pkg.programs)    // ["pdfattach", "pdfdetach", ...]
+   * console.log(pkg.versions[0]) // "1.58.0"
    * ```
    */
   popplerfreedesktoporg: poppler_freedesktop_org.PopplerfreedesktoporgPackage
@@ -13750,6 +13761,8 @@ export interface Pantry {
    * **podman**
    *
    * @domain `podman.io`
+   * @programs `podman`, `podman-remote`, `podman-mac-helper`
+   * @version `5.5.0` (10 versions available)
    * @install `pkgx podman.io`
    *
    * @example
@@ -13759,6 +13772,8 @@ export interface Pantry {
    * const pkg = pantry.podmanio
    * console.log(pkg.name)        // "podman"
    * console.log(pkg.description) // "Crafters of fine Open Source products"
+   * console.log(pkg.programs)    // ["podman", "podman-remote", ...]
+   * console.log(pkg.versions[0]) // "5.5.0"
    * ```
    */
   podmanio: podman_io.PodmanioPackage
@@ -15652,6 +15667,27 @@ export interface Pantry {
 
   // Alias properties for convenience
   /**
+   * **auto-gpt** - Alias for `agpt.co`
+   *
+   * AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what mat...
+   *
+   * @alias_for `pantry.agptco`
+   * @domain `agpt.co`
+   * @programs `auto-gpt`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.autogpt  // via alias
+   * const pkg2 = pantry.agptco  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  autogpt: agpt_co.AutogptPackage
+
+  /**
    * **aws** - Alias for `aws.amazon.com/cli`
    *
    * @alias_for `pantry.awsamazoncomcli`
@@ -15765,27 +15801,6 @@ export interface Pantry {
    */
   gitcrypt: agwa_name_git_crypt.GitcryptPackage
 
-  /**
-   * **sfcgal-config** - Alias for `sfcgal.org`
-   *
-   * C++ wrapper library around CGAL
-   *
-   * @alias_for `pantry.sfcgalorg`
-   * @domain `sfcgal.org`
-   * @programs `sfcgal-config`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.sfcgalconfig  // via alias
-   * const pkg2 = pantry.sfcgalorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
-   */
-  sfcgalconfig: sfcgal_org.SfcgalconfigPackage
-
 }
 
 export type Packages = Pantry
@@ -15854,7 +15869,7 @@ export const pantry: Pantry = {
   alacrittyorg: alacritty_org.alacrittyorgPackage,
   groongaorg: groonga_org.groongaorgPackage,
   ffmpegorg: ffmpeg_org.ffmpegorgPackage,
-  agptco: agpt_co.agptcoPackage,
+  agptco: agpt_co.autogptPackage,
   langchaincom: langchain_com.langchaincomPackage,
   po4aorg: po4a_org.po4aorgPackage,
   reacheremail: reacher_email.reacheremailPackage,
@@ -15978,7 +15993,7 @@ export const pantry: Pantry = {
   libjpegturboorg: libjpeg_turbo_org.libjpegturboorgPackage,
   hetznercom: hetzner_com.hetznercomPackage,
   wezfurlongorg: wezfurlong_org.wezfurlongorgPackage,
-  sfcgalorg: sfcgal_org.sfcgalconfigPackage,
+  sfcgalorg: sfcgal_org.sfcgalorgPackage,
   githubcomfastfetchclifastfetch: github_com_fastfetch_cli_fastfetch.githubcomfastfetchclifastfetchPackage,
   localstackcloud: localstack_cloud.localstackcloudPackage,
   tinybirdco: tinybird_co.tinybirdcoPackage,
@@ -16659,13 +16674,13 @@ export const pantry: Pantry = {
   angulardev: angular_dev.angulardevPackage,
   ciliumio: cilium_io.ciliumioPackage,
   gitquickstatssh: git_quick_stats_sh.gitquickstatsshPackage,
+  autogpt: agpt_co.autogptPackage,
   aws: aws_amazon_com_cli.awsamazoncomcliPackage,
   awscdk: aws_amazon_com_cdk.awsamazoncomcdkPackage,
   awscli: aws_amazon_com_cli.awsamazoncomcliPackage,
   cdk: aws_amazon_com_cdk.awsamazoncomcdkPackage,
   curl: curl_se.cURLPackage,
   gitcrypt: agwa_name_git_crypt.gitcryptPackage,
-  sfcgalconfig: sfcgal_org.sfcgalconfigPackage,
 }
 
 export const packages: Packages = pantry

@@ -1263,26 +1263,29 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
             }
           }
 
-          // Create a new page for this package
-          const page = await browser.newPage()
+          // Use the comprehensive fetch function instead of the simplified one
+          const result = await fetchAndSavePackage(
+            packageName,
+            outputDir,
+            timeout,
+            false, // saveAsJson
+            1, // retryNumber
+            3, // maxRetries
+            false, // debug
+            {
+              cacheDir,
+              cache: useCache,
+              cacheExpirationMinutes,
+              browser, // Pass the shared browser
+            },
+          )
 
-          try {
-            // Set a shorter timeout for individual operations
-            page.setDefaultTimeout(timeout)
-
-            const result = await fetchPackageWithPage(page, packageName, outputDir, timeout, useCache, cacheDir)
-
-            if (result?.success) {
-              return { success: true, packageName }
-            }
-            else {
-              console.warn(`Failed to fetch ${packageName}`)
-              return { success: false, packageName }
-            }
+          if (result?.success) {
+            return { success: true, packageName }
           }
-          finally {
-            // Always close the page to free resources
-            await page.close().catch(() => {}) // Ignore close errors
+          else {
+            console.warn(`Failed to fetch ${packageName}`)
+            return { success: false, packageName }
           }
         }
         catch (error) {
@@ -1344,9 +1347,9 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
 }
 
 /**
- * Fetch package data using a provided page instance
+ * Fetch package data using a provided page instance (DEPRECATED - use fetchAndSavePackage instead)
  */
-async function fetchPackageWithPage(
+async function _fetchPackageWithPage(
   page: Page,
   packageName: string,
   outputDir: string,

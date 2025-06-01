@@ -2,6 +2,9 @@
  * **podman** - Crafters of fine Open Source products
  *
  * @domain `podman.io`
+ * @programs `podman`, `podman-remote`, `podman-mac-helper`
+ * @version `5.5.0` (10 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/podman-io.md
  *
  * @install `pkgx podman.io`
  *
@@ -12,6 +15,8 @@
  * const pkg = pantry.podmanio
  * console.log(pkg.name)        // "podman"
  * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.programs)    // ["podman", "podman-remote", ...]
+ * console.log(pkg.versions[0]) // "5.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/podman-io.md
@@ -26,8 +31,31 @@ export const podmanioPackage = {
    * Brief description of what this package does.
    */
   description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.5.0',
+    '5.4.2',
+    '5.4.1',
+    '5.4.0',
+    '5.3.2',
+    '5.3.1',
+    '5.3.0',
+    '5.2.5',
+    '5.2.4',
+    '5.2.3',
+  ] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'podman',
+    'podman-remote',
+    'podman-mac-helper',
+  ] as const,
   homepage: 'https://pkgx.dev/pkgs/podman.io/' as const,
   /**
    * The canonical domain name for this package.

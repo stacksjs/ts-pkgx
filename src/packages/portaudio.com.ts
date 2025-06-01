@@ -2,6 +2,8 @@
  * **PortAudio** - Crafters of fine Open Source products
  *
  * @domain `portaudio.com`
+ * @version `19.7.0` (1 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/portaudio-com.md
  *
  * @install `pkgx portaudio.com`
  *
@@ -12,6 +14,7 @@
  * const pkg = pantry.portaudiocom
  * console.log(pkg.name)        // "PortAudio"
  * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.versions[0]) // "19.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/portaudio-com.md
@@ -26,7 +29,13 @@ export const portaudiocomPackage = {
    * Brief description of what this package does.
    */
   description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '19.7.0',
+  ] as const,
   programs: [] as const,
   homepage: 'https://pkgx.dev/pkgs/portaudio.com/' as const,
   /**
