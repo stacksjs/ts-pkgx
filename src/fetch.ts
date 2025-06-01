@@ -617,7 +617,8 @@ export async function fetchPkgxPackage(
           const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(.+)/)
           if (installMatch && installMatch[1]) {
             const primaryAlias = installMatch[1].trim()
-            if (primaryAlias && primaryAlias !== domain) {
+            // Only add as alias if it's not a shell command pattern and is different from domain
+            if (primaryAlias && primaryAlias !== domain && !primaryAlias.includes('--') && !primaryAlias.includes('$SHELL')) {
               aliases.push(primaryAlias)
             }
           }
@@ -650,12 +651,13 @@ export async function fetchPkgxPackage(
           // 1. It's different from the name
           // 2. It appears in the install command as a standalone command
           // 3. It's a meaningful standalone identifier (not just a generic word like 'cli')
-          if (lastPart && lastPart !== name && installCommand) {
+          // 4. It's not a shell command pattern
+          if (lastPart && lastPart !== name && installCommand && !lastPart.includes('--') && !lastPart.includes('$SHELL')) {
             const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(.+)/)
             if (installMatch && installMatch[1]) {
               const installAlias = installMatch[1].trim()
-              // Only add if the install command specifically uses this part
-              if (installAlias === lastPart && !aliases.includes(lastPart)) {
+              // Only add if the install command specifically uses this part and it's not a shell command
+              if (installAlias === lastPart && !installAlias.includes('--') && !installAlias.includes('$SHELL') && !aliases.includes(lastPart)) {
                 aliases.push(lastPart)
               }
             }
@@ -663,7 +665,8 @@ export async function fetchPkgxPackage(
         }
 
         // If the name is different from domain and looks like an alias, add it
-        if (name && name !== domain && name.length < domain.length && !aliases.includes(name)) {
+        // But make sure it's not a shell command pattern
+        if (name && name !== domain && name.length < domain.length && !name.includes('--') && !name.includes('$SHELL') && !aliases.includes(name)) {
           aliases.push(name)
         }
 

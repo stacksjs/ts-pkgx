@@ -45,12 +45,116 @@ interface PkgxPackage {
 
 async function importPantry(): Promise<Record<string, PkgxPackage>> {
   try {
-    const packages = await import('./packages')
-    return (packages as any).pantry || {}
+    const pantryData: Record<string, PkgxPackage> = {}
+
+    // Get all package files
+    const packageFiles = fs.readdirSync(PACKAGES_DIR)
+      .filter(file => file.endsWith('.ts') && file !== 'index.ts' && file !== 'aliases.ts')
+
+    console.log(`Reading package data from ${packageFiles.length} files...`)
+
+    // Read each package file and extract the package data
+    for (const file of packageFiles) {
+      try {
+        const filePath = path.join(PACKAGES_DIR, file)
+        const content = fs.readFileSync(filePath, 'utf-8')
+        const moduleName = path.basename(file, '.ts')
+        const domain = guessOriginalDomain(moduleName)
+        const domainVarName = convertDomainToVarName(domain)
+
+        // Extract package data from the file content
+        const packageData = extractPackageDataFromFile(content, domain)
+        if (packageData) {
+          pantryData[domainVarName] = packageData
+          console.log(`Loaded package data for ${domain} -> ${domainVarName}`)
+        }
+      }
+      catch (error) {
+        console.error(`Error reading package file ${file}:`, error)
+      }
+    }
+
+    console.log(`Successfully loaded ${Object.keys(pantryData).length} packages`)
+    return pantryData
   }
   catch (error) {
     console.error('Error importing pantry:', error)
     return {}
+  }
+}
+
+/**
+ * Extract package data from a TypeScript package file content
+ */
+function extractPackageDataFromFile(content: string, domain: string): PkgxPackage | null {
+  try {
+    // Extract the package object from the file
+    const packageMatch = content.match(/export const \w+Package = \{([\s\S]*?)\}/)
+    if (!packageMatch) {
+      console.warn(`Could not find package object in file for ${domain}`)
+      return null
+    }
+
+    // Helper function to extract array values
+    const extractArray = (key: string): string[] => {
+      const regex = new RegExp(`${key}:\\s*\\[(.*?)\\]\\s*as const`, 's')
+      const match = content.match(regex)
+      if (!match)
+        return []
+
+      const arrayContent = match[1]
+      const items = arrayContent.match(/'([^']*)'/g)
+      return items ? items.map(item => item.replace(/'/g, '')) : []
+    }
+
+    // Helper function to extract string values
+    const extractString = (key: string): string => {
+      // Try with 'as const' first
+      let regex = new RegExp(`${key}:\\s*'([^']*)'\\s*as const`)
+      let match = content.match(regex)
+      if (match)
+        return match[1]
+
+      // Try without 'as const'
+      regex = new RegExp(`${key}:\\s*'([^']*)'`)
+      match = content.match(regex)
+      return match ? match[1] : ''
+    }
+
+    // Extract all the package properties
+    const name = extractString('name') || domain
+    const description = extractString('description') || ''
+    const packageYmlUrl = extractString('packageYmlUrl') || ''
+    const homepageUrl = extractString('homepageUrl') || ''
+    const githubUrl = extractString('githubUrl') || ''
+    const installCommand = extractString('installCommand') || ''
+    const fullPath = extractString('fullPath') || domain
+
+    const programs = extractArray('programs')
+    const companions = extractArray('companions')
+    const dependencies = extractArray('dependencies')
+    const versions = extractArray('versions')
+    const aliases = extractArray('aliases')
+
+    return {
+      name,
+      domain,
+      description,
+      packageYmlUrl,
+      homepageUrl,
+      githubUrl,
+      installCommand,
+      programs,
+      companions,
+      dependencies,
+      versions,
+      fullPath,
+      aliases,
+    }
+  }
+  catch (error) {
+    console.error(`Error extracting package data for ${domain}:`, error)
+    return null
   }
 }
 
@@ -481,8 +585,39 @@ export async function generateIndex(): Promise<string | null> {
       let jsdoc = '  /**\n'
 
       if (pkgData) {
-        // Package name and description
-        jsdoc += `   * **${pkgData.name || domain}**${pkgData.description ? ` - ${pkgData.description}` : ''}\n`
+        // Package name and description - escape and limit length
+        let description = ''
+        if (pkgData.description) {
+          // Check for generic/placeholder descriptions that should be ignored
+          const genericDescriptions = [
+            'Crafters of fine Open Source products',
+            'Go home.',
+            'Package information for',
+            'pkgx package',
+            'Loading...',
+            'Please wait...',
+          ]
+
+          const isGenericDescription = genericDescriptions.some(generic =>
+            pkgData.description.includes(generic),
+          )
+
+          if (!isGenericDescription) {
+            // Escape backslashes and other special characters for JSDoc
+            let escapedDesc = pkgData.description
+              .replace(/\\/g, '\\\\') // Escape backslashes
+              .replace(/\*/g, '\\*') // Escape asterisks
+              .replace(/`/g, '\\`') // Escape backticks
+
+            // Limit description length for readability
+            if (escapedDesc.length > 200) {
+              escapedDesc = `${escapedDesc.substring(0, 197)}...`
+            }
+
+            description = ` - ${escapedDesc}`
+          }
+        }
+        jsdoc += `   * **${pkgData.name || domain}**${description}\n`
         jsdoc += '   *\n'
 
         // Domain information
@@ -579,7 +714,7 @@ export async function generateIndex(): Promise<string | null> {
 
       for (const [originalAlias, targetVarName] of sortedAliases) {
         const targetDomain = Object.keys(domainToVarName).find(d => domainToVarName[d] === targetVarName)
-        const pkgData = pantryData[targetVarName]
+        const pkgData = pantryData[targetVarName] || (targetDomain ? pantryData[convertDomainToVarName(targetDomain)] : null)
 
         // Convert the original alias to a safe property name
         const aliasVarName = convertDomainToVarName(originalAlias)
@@ -594,8 +729,34 @@ export async function generateIndex(): Promise<string | null> {
           aliasJsdoc += `   * **${originalAlias}** - Alias for \`${targetDomain}\`\n`
           aliasJsdoc += '   *\n'
           if (pkgData.description) {
-            aliasJsdoc += `   * ${pkgData.description}\n`
-            aliasJsdoc += '   *\n'
+            // Check for generic/placeholder descriptions that should be ignored
+            const genericDescriptions = [
+              'Crafters of fine Open Source products',
+              'Go home.',
+              'Package information for',
+              'pkgx package',
+              'Loading...',
+              'Please wait...',
+            ]
+
+            const isGenericDescription = genericDescriptions.some(generic =>
+              pkgData.description.includes(generic),
+            )
+
+            if (!isGenericDescription) {
+              // Escape and limit description for alias
+              let escapedDesc = pkgData.description
+                .replace(/\\/g, '\\\\') // Escape backslashes
+                .replace(/\*/g, '\\*') // Escape asterisks
+                .replace(/`/g, '\\`') // Escape backticks
+
+              if (escapedDesc.length > 150) {
+                escapedDesc = `${escapedDesc.substring(0, 147)}...`
+              }
+
+              aliasJsdoc += `   * ${escapedDesc}\n`
+              aliasJsdoc += '   *\n'
+            }
           }
           aliasJsdoc += `   * @alias_for \`pantry.${targetVarName}\`\n`
           aliasJsdoc += `   * @domain \`${targetDomain}\`\n`
@@ -717,14 +878,40 @@ async function extractAllAliases(): Promise<Record<string, string>> {
       if (aliasesMatch && aliasesMatch[1]) {
         const aliases = aliasesMatch[1].match(/["']([^"']*)["']/g)
         if (aliases) {
-          // Add each alias to the map
+          // Add each alias to the map, but filter out shell commands
           for (const alias of aliases) {
             const cleanAlias = alias.replace(/["']/g, '')
-            if (cleanAlias) {
+            if (cleanAlias && isValidAlias(cleanAlias, domain)) {
               allAliases[cleanAlias] = domain
               console.log(`Found alias ${cleanAlias} -> ${domain}`)
             }
+            else {
+              console.log(`Filtered out invalid alias: ${cleanAlias} for ${domain}`)
+            }
           }
+        }
+      }
+
+      // Special handling for AWS packages to ensure proper aliases
+      if (domain === 'aws.amazon.com/cli') {
+        if (!allAliases.aws) {
+          allAliases.aws = domain
+          console.log(`Added AWS CLI alias: aws -> ${domain}`)
+        }
+        if (!allAliases['aws/cli']) {
+          allAliases['aws/cli'] = domain
+          console.log(`Added AWS CLI path alias: aws/cli -> ${domain}`)
+        }
+      }
+
+      if (domain === 'aws.amazon.com/cdk') {
+        if (!allAliases.cdk) {
+          allAliases.cdk = domain
+          console.log(`Added AWS CDK alias: cdk -> ${domain}`)
+        }
+        if (!allAliases['aws/cdk']) {
+          allAliases['aws/cdk'] = domain
+          console.log(`Added AWS CDK path alias: aws/cdk -> ${domain}`)
         }
       }
 
