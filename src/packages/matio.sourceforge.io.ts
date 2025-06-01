@@ -1,5 +1,5 @@
 /**
- * **libmatio** - C library for reading and writing MATLAB MAT files
+ * **matdump** - C library for reading and writing MATLAB MAT files
  *
  * @domain `matio.sourceforge.io`
  * @programs `matdump`
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/matio-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) matdump`
- * @aliases `libmatio`
+ * @aliases `matdump`, `libmatio`
  * @dependencies `hdfgroup.org/HDF5`, `zlib.net`
  *
  * @example
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.libmatio
+ * const pkg = pantry.matdump
  * // Or access via domain
  * const samePkg = pantry.matiosourceforgeio
  * console.log(pkg === samePkg) // true
@@ -28,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/matio-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libmatioPackage = {
+export const matdumpPackage = {
   /**
    * The display name of this package.
    */
@@ -77,14 +77,15 @@ export const libmatioPackage = {
     '1.5.24',
     '1.5.23',
   ] as const,
-  fullPath: 'matio.sourceforge.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
+    'matdump',
     'libmatio',
   ] as const,
+  fullPath: 'matio.sourceforge.io' as const,
 }
 
-export type LibmatioPackage = typeof libmatioPackage
+export type MatdumpPackage = typeof matdumpPackage

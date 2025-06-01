@@ -33,6 +33,12 @@ This package provides the following executable programs:
 - `pkgdata`
 - `uconv`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+unicode.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -1,5 +1,5 @@
 /**
- * **libgd.github.io** - Graphics library to dynamically manipulate images
+ * **+libgd.github.io -- $SHELL -i** - Graphics library to dynamically manipulate images
  *
  * @domain `libgd.github.io`
  * @programs `bdftogd`, `gd2copypal`, `gd2togif`, `gdcmpgif`, `giftogd2`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libgd-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +libgd.github.io -- $SHELL -i`
+ * @aliases `+libgd.github.io -- $SHELL -i`
  * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `libjpeg-turbo.org`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.libgdgithubio
+ * // Access via alias (recommended)
+ * const pkg = pantry.libgdgithubioSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.libgdgithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libgd.github.io"
  * console.log(pkg.description) // "Graphics library to dynamically manipulate images"
  * console.log(pkg.programs)    // ["bdftogd", "gd2copypal", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libgd-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libgdgithubioPackage = {
+export const libgdgithubioSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -77,8 +82,14 @@ export const libgdgithubioPackage = {
   versions: [
     '2.3.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+libgd.github.io -- $SHELL -i',
+  ] as const,
   fullPath: 'libgd.github.io' as const,
-  aliases: [] as const,
 }
 
-export type LibgdgithubioPackage = typeof libgdgithubioPackage
+export type LibgdgithubioSHELLiPackage = typeof libgdgithubioSHELLiPackage

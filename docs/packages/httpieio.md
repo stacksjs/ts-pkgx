@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `httpie`
 - `https`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+httpie.io -- $SHELL -i`
+
 ## Available Versions
 
 <details>

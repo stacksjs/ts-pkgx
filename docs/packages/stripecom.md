@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `stripe`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `stripe`
+
 ## Available Versions
 
 <details>

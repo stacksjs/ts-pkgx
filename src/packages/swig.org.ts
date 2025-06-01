@@ -1,5 +1,5 @@
 /**
- * **swig.org** - SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.
+ * **+swig.org -- $SHELL -i** - SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.
  *
  * @domain `swig.org`
  * @programs `swig`, `ccache-swig`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/swig-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +swig.org -- $SHELL -i`
+ * @aliases `+swig.org -- $SHELL -i`
  * @dependencies `pcre.org/v2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.swigorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.swigorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.swigorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "swig.org"
  * console.log(pkg.description) // "SWIG is a software development tool that connec..."
  * console.log(pkg.programs)    // ["swig", "ccache-swig"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/swig-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const swigorgPackage = {
+export const swigorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -71,8 +76,14 @@ export const swigorgPackage = {
     '4.2.0',
     '4.1.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+swig.org -- $SHELL -i',
+  ] as const,
   fullPath: 'swig.org' as const,
-  aliases: [] as const,
 }
 
-export type SwigorgPackage = typeof swigorgPackage
+export type SwigorgSHELLiPackage = typeof swigorgSHELLiPackage

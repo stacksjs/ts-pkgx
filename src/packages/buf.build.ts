@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/buf-build.md
  *
  * @install `sh <(curl https://pkgx.sh) buf`
+ * @aliases `buf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.bufbuild
+ * // Access via alias (recommended)
+ * const pkg = pantry.buf
+ * // Or access via domain
+ * const samePkg = pantry.bufbuild
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "buf"
  * console.log(pkg.description) // "The best way of working with Protocol Buffers."
  * console.log(pkg.programs)    // ["buf"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/buf-build.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bufbuildPackage = {
+export const bufPackage = {
   /**
    * The display name of this package.
    */
@@ -99,8 +104,14 @@ export const bufbuildPackage = {
     '1.27.0',
     '1.26.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'buf',
+  ] as const,
   fullPath: 'buf.build' as const,
-  aliases: [] as const,
 }
 
-export type BufbuildPackage = typeof bufbuildPackage
+export type BufPackage = typeof bufPackage

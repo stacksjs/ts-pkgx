@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `certbot`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `certbot`
+
 ## Available Versions
 
 <details>

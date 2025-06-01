@@ -6,7 +6,7 @@ Popular programming languages and their runtimes available through pkgx.
 
 ## Packages
 
-### [crystallangorg](../packages/crystallangorg.md) ()
+### [crystallangorg](../packages/crystallangorg.md) (crystal)
 
 Fast and statically typed, compiled language with Ruby-like syntax
 
@@ -16,7 +16,7 @@ Fast and statically typed, compiled language with Ruby-like syntax
 
 ---
 
-### [dartdev](../packages/dartdev.md) ()
+### [dartdev](../packages/dartdev.md) (+dart.dev -- $SHELL -i, dart)
 
 The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
 
@@ -36,7 +36,7 @@ A modern runtime for JavaScript and TypeScript.
 
 ---
 
-### [elixirlangorg](../packages/elixirlangorg.md) ()
+### [elixirlangorg](../packages/elixirlangorg.md) (+elixir-lang.org -- $SHELL -i)
 
 Elixir is a dynamic, functional language for building scalable and maintainable applications
 
@@ -46,7 +46,7 @@ Elixir is a dynamic, functional language for building scalable and maintainable 
 
 ---
 
-### [erlangorg](../packages/erlangorg.md) ()
+### [erlangorg](../packages/erlangorg.md) (+erlang.org -- $SHELL -i)
 
 Programming language for highly scalable real-time systems
 
@@ -56,7 +56,7 @@ Programming language for highly scalable real-time systems
 
 ---
 
-### [gleamrun](../packages/gleamrun.md) ()
+### [gleamrun](../packages/gleamrun.md) (gleam)
 
 ⭐️ A friendly language for building type-safe, scalable systems!
 
@@ -66,7 +66,7 @@ Programming language for highly scalable real-time systems
 
 ---
 
-### [godev](../packages/godev.md) (go)
+### [godev](../packages/godev.md) (+go.dev -- $SHELL -i, go)
 
 The Go programming language
 
@@ -76,7 +76,7 @@ The Go programming language
 
 ---
 
-### [haskellorg](../packages/haskellorg.md) ()
+### [haskellorg](../packages/haskellorg.md) (+haskell.org -- $SHELL -i)
 
 Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
 
@@ -86,7 +86,7 @@ Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC'
 
 ---
 
-### [julialangorg](../packages/julialangorg.md) ()
+### [julialangorg](../packages/julialangorg.md) (julia)
 
 The Julia Programming Language
 
@@ -96,7 +96,7 @@ The Julia Programming Language
 
 ---
 
-### [kotlinlangorg](../packages/kotlinlangorg.md) ()
+### [kotlinlangorg](../packages/kotlinlangorg.md) (+kotlinlang.org -- $SHELL -i)
 
 Statically typed programming language for the JVM
 
@@ -106,7 +106,7 @@ Statically typed programming language for the JVM
 
 ---
 
-### [nimlangorg](../packages/nimlangorg.md) ()
+### [nimlangorg](../packages/nimlangorg.md) (+nim-lang.org -- $SHELL -i)
 
 Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).
 
@@ -136,7 +136,7 @@ Platform built on V8 to build network applications
 
 ---
 
-### [perlorg](../packages/perlorg.md) (perl)
+### [perlorg](../packages/perlorg.md) (+perl.org -- $SHELL -i, perl)
 
 Highly capable, feature-rich programming language
 
@@ -146,7 +146,7 @@ Highly capable, feature-rich programming language
 
 ---
 
-### [phpnet](../packages/phpnet.md) (php)
+### [phpnet](../packages/phpnet.md) (+php.net -- $SHELL -i, php)
 
 General-purpose scripting language
 
@@ -156,7 +156,7 @@ General-purpose scripting language
 
 ---
 
-### [python](../packages/python.md) (python)
+### [python](../packages/python.md) (+python.org -- $SHELL -i, python)
 
 The Python programming language
 
@@ -166,7 +166,7 @@ The Python programming language
 
 ---
 
-### [pythonorg](../packages/pythonorg.md) (python)
+### [pythonorg](../packages/pythonorg.md) (+python.org -- $SHELL -i, python)
 
 The Python programming language
 
@@ -176,7 +176,7 @@ The Python programming language
 
 ---
 
-### [rubylangorg](../packages/rubylangorg.md) (ruby)
+### [rubylangorg](../packages/rubylangorg.md) (+ruby-lang.org -- $SHELL -i, ruby)
 
 Powerful, clean, object-oriented scripting language
 
@@ -186,7 +186,7 @@ Powerful, clean, object-oriented scripting language
 
 ---
 
-### [rustlangorg](../packages/rustlangorg.md) (rust)
+### [rustlangorg](../packages/rustlangorg.md) (+rust-lang.org -- $SHELL -i, rust)
 
 Empowering everyone to build reliable and efficient software.
 
@@ -196,7 +196,7 @@ Empowering everyone to build reliable and efficient software.
 
 ---
 
-### [scalalangorg](../packages/scalalangorg.md) ()
+### [scalalangorg](../packages/scalalangorg.md) (+scala-lang.org -- $SHELL -i)
 
 The Scala 3 compiler, also known as Dotty.
 
@@ -206,7 +206,7 @@ The Scala 3 compiler, also known as Dotty.
 
 ---
 
-### [swiftorg](../packages/swiftorg.md) ()
+### [swiftorg](../packages/swiftorg.md) (+swift.org -- $SHELL -i, swift)
 
 The Swift Programming Language
 
@@ -226,7 +226,7 @@ TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
 
 ---
 
-### [vlangio](../packages/vlangio.md) ()
+### [vlangio](../packages/vlangio.md) (v)
 
 Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
 
@@ -236,7 +236,7 @@ Simple, fast, safe, compiled language for developing maintainable software. Comp
 
 ---
 
-### [ziglangorg](../packages/ziglangorg.md) ()
+### [ziglangorg](../packages/ziglangorg.md) (zig)
 
 General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
 

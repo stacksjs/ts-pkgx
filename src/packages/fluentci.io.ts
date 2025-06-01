@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fluentci-io.md
  *
  * @install `sh <(curl https://pkgx.sh) fluentci`
+ * @aliases `fluentci`
  * @dependencies `dagger.io^0.10`, `deno.land^1.42`, `charm.sh/glow^1.5.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.fluentciio
+ * // Access via alias (recommended)
+ * const pkg = pantry.fluentci
+ * // Or access via domain
+ * const samePkg = pantry.fluentciio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "fluentci"
  * console.log(pkg.description) // "Set up and run your CI locally or in any CI Pro..."
  * console.log(pkg.programs)    // ["fluentci"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fluentci-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fluentciioPackage = {
+export const fluentciPackage = {
   /**
    * The display name of this package.
    */
@@ -135,8 +140,14 @@ export const fluentciioPackage = {
     '0.6.8',
     '0.6.7',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'fluentci',
+  ] as const,
   fullPath: 'fluentci.io' as const,
-  aliases: [] as const,
 }
 
-export type FluentciioPackage = typeof fluentciioPackage
+export type FluentciPackage = typeof fluentciPackage

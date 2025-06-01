@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `soldeer`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `soldeer`
+
 ## Available Versions
 
 <details>

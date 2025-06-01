@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `gnuplot`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `gnuplot`
+
 ## Available Versions
 
 <details>

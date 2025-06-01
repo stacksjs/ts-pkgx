@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `turso`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `turso`
+
 ## Available Versions
 
 <details>

@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/odigos-io.md
  *
  * @install `sh <(curl https://pkgx.sh) odigos`
+ * @aliases `odigos`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.odigosio
+ * // Access via alias (recommended)
+ * const pkg = pantry.odigos
+ * // Or access via domain
+ * const samePkg = pantry.odigosio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "odigos"
  * console.log(pkg.description) // "Distributed tracing without code changes. 🚀 In..."
  * console.log(pkg.programs)    // ["odigos"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/odigos-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const odigosioPackage = {
+export const odigosPackage = {
   /**
    * The display name of this package.
    */
@@ -232,8 +237,14 @@ export const odigosioPackage = {
     '1.0.2',
     '1.0.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'odigos',
+  ] as const,
   fullPath: 'odigos.io' as const,
-  aliases: [] as const,
 }
 
-export type OdigosioPackage = typeof odigosioPackage
+export type OdigosPackage = typeof odigosPackage

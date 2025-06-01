@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `tinygo`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `tinygo`
+
 ## Available Versions
 
 <details>

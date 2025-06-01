@@ -1,17 +1,22 @@
 /**
- * **glm.g-truc.net** - OpenGL Mathematics (GLM)
+ * **+glm.g-truc.net -- $SHELL -i** - OpenGL Mathematics (GLM)
  *
  * @domain `glm.g-truc.net`
  * @version `1.0.1` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/glm-g-truc-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +glm.g-truc.net -- $SHELL -i`
+ * @aliases `+glm.g-truc.net -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.glmgtrucnet
+ * // Access via alias (recommended)
+ * const pkg = pantry.glmgtrucnetSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.glmgtrucnet
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "glm.g-truc.net"
  * console.log(pkg.description) // "OpenGL Mathematics (GLM)"
  * console.log(pkg.versions[0]) // "1.0.1" (latest)
@@ -20,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/glm-g-truc-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const glmgtrucnetPackage = {
+export const glmgtrucnetSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -53,8 +58,14 @@ export const glmgtrucnetPackage = {
     '1.0.0',
     '0.9.9.8',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+glm.g-truc.net -- $SHELL -i',
+  ] as const,
   fullPath: 'glm.g-truc.net' as const,
-  aliases: [] as const,
 }
 
-export type GlmgtrucnetPackage = typeof glmgtrucnetPackage
+export type GlmgtrucnetSHELLiPackage = typeof glmgtrucnetSHELLiPackage

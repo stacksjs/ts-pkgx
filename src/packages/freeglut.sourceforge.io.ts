@@ -1,18 +1,23 @@
 /**
- * **freeglut.sourceforge.io** - Free implementation of the OpenGL Utility Toolkit (GLUT)
+ * **+freeglut.sourceforge.io -- $SHELL -i** - Free implementation of the OpenGL Utility Toolkit (GLUT)
  *
  * @domain `freeglut.sourceforge.io`
  * @version `3.6.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/freeglut-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +freeglut.sourceforge.io -- $SHELL -i`
+ * @aliases `+freeglut.sourceforge.io -- $SHELL -i`
  * @dependencies `x.org/x11`, `x.org/xi`, `x.org/xrandr`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.freeglutsourceforgeio
+ * // Access via alias (recommended)
+ * const pkg = pantry.freeglutsourceforgeioSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.freeglutsourceforgeio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "freeglut.sourceforge.io"
  * console.log(pkg.description) // "Free implementation of the OpenGL Utility Toolk..."
  * console.log(pkg.versions[0]) // "3.6.0" (latest)
@@ -21,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/freeglut-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const freeglutsourceforgeioPackage = {
+export const freeglutsourceforgeioSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -66,8 +71,14 @@ export const freeglutsourceforgeioPackage = {
     '3.6.0',
     '3.4.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+freeglut.sourceforge.io -- $SHELL -i',
+  ] as const,
   fullPath: 'freeglut.sourceforge.io' as const,
-  aliases: [] as const,
 }
 
-export type FreeglutsourceforgeioPackage = typeof freeglutsourceforgeioPackage
+export type FreeglutsourceforgeioSHELLiPackage = typeof freeglutsourceforgeioSHELLiPackage

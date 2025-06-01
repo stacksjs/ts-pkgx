@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `htsfile`
 - `tabix`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+htslib.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

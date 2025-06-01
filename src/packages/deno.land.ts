@@ -201,7 +201,6 @@ export const denoPackage = {
     '1.28.0',
     '1.26.2',
   ] as const,
-  fullPath: 'deno.land' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -209,6 +208,7 @@ export const denoPackage = {
   aliases: [
     'deno',
   ] as const,
+  fullPath: 'deno.land' as const,
 }
 
 export type DenoPackage = typeof denoPackage

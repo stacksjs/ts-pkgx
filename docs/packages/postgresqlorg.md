@@ -49,6 +49,12 @@ This package provides the following executable programs:
 - `reindexdb`
 - `vacuumdb`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+postgresql.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

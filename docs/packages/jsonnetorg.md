@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `jsonnet`
 - `jsonnetfmt`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+jsonnet.org -- $SHELL -i`
+- `jsonnet`
+
 ## Available Versions
 
 <details>

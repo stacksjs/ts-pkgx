@@ -7,6 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/git-quick-stats-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) git-quick-stats`
+ * @aliases `git-quick-stats`
  * @dependencies `git-scm.org`, `gnu.org/bash`, `linuxgithub.com/util-linux/util-linux`, ... (+1 more)
  * @companions `gnu.org/coreutils`
  *
@@ -14,7 +15,11 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.gitquickstatssh
+ * // Access via alias (recommended)
+ * const pkg = pantry.gitquickstats
+ * // Or access via domain
+ * const samePkg = pantry.gitquickstatssh
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "git-quick-stats"
  * console.log(pkg.description) // "▁▅▆▃▅ Git quick statistics is a simple and effi..."
  * console.log(pkg.programs)    // ["git-quick-stats"]
@@ -24,7 +29,7 @@
  * @see https://ts-pkgx.netlify.app/packages/git-quick-stats-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitquickstatsshPackage = {
+export const gitquickstatsPackage = {
   /**
    * The display name of this package.
    */
@@ -85,8 +90,14 @@ export const gitquickstatsshPackage = {
     '2.5.0',
     '2.4.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'git-quick-stats',
+  ] as const,
   fullPath: 'git-quick-stats.sh' as const,
-  aliases: [] as const,
 }
 
-export type GitquickstatsshPackage = typeof gitquickstatsshPackage
+export type GitquickstatsPackage = typeof gitquickstatsPackage

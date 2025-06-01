@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pytest-org.md
  *
  * @install `sh <(curl https://pkgx.sh) pytest`
+ * @aliases `pytest`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pytestorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.pytest
+ * // Or access via domain
+ * const samePkg = pantry.pytestorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pytest"
  * console.log(pkg.description) // "The pytest framework makes it easy to write sma..."
  * console.log(pkg.programs)    // ["pytest"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pytest-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pytestorgPackage = {
+export const pytestPackage = {
   /**
    * The display name of this package.
    */
@@ -90,8 +95,14 @@ export const pytestorgPackage = {
     '7.2.2',
     '7.1.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'pytest',
+  ] as const,
   fullPath: 'pytest.org' as const,
-  aliases: [] as const,
 }
 
-export type PytestorgPackage = typeof pytestorgPackage
+export type PytestPackage = typeof pytestPackage

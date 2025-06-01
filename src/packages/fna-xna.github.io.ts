@@ -1,18 +1,23 @@
 /**
- * **fna-xna.github.io** - FAudio - Accuracy-focused XAudio reimplementation for open platforms
+ * **+fna-xna.github.io -- $SHELL -i** - FAudio - Accuracy-focused XAudio reimplementation for open platforms
  *
  * @domain `fna-xna.github.io`
  * @version `25.5.0` (17 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fna-xna-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +fna-xna.github.io -- $SHELL -i`
+ * @aliases `+fna-xna.github.io -- $SHELL -i`
  * @dependencies `libsdl.org^2.28`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.fnaxnagithubio
+ * // Access via alias (recommended)
+ * const pkg = pantry.fnaxnagithubioSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.fnaxnagithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "fna-xna.github.io"
  * console.log(pkg.description) // "FAudio - Accuracy-focused XAudio reimplementati..."
  * console.log(pkg.versions[0]) // "25.5.0" (latest)
@@ -21,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fna-xna-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fnaxnagithubioPackage = {
+export const fnaxnagithubioSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -74,8 +79,14 @@ export const fnaxnagithubioPackage = {
     '24.2.0',
     '24.1.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+fna-xna.github.io -- $SHELL -i',
+  ] as const,
   fullPath: 'fna-xna.github.io' as const,
-  aliases: [] as const,
 }
 
-export type FnaxnagithubioPackage = typeof fnaxnagithubioPackage
+export type FnaxnagithubioSHELLiPackage = typeof fnaxnagithubioSHELLiPackage

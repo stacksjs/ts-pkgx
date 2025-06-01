@@ -28,6 +28,7 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
+- `+openjpeg.org -- $SHELL -i`
 - `opj`
 
 ## Available Versions

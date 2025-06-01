@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ollama-ai.md
  *
  * @install `sh <(curl https://pkgx.sh) ollama`
+ * @aliases `ollama`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.ollamaai
+ * // Access via alias (recommended)
+ * const pkg = pantry.ollama
+ * // Or access via domain
+ * const samePkg = pantry.ollamaai
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "ollama"
  * console.log(pkg.description) // "Get up and running with Llama 3.3, DeepSeek-R1,..."
  * console.log(pkg.programs)    // ["ollama"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ollama-ai.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ollamaaiPackage = {
+export const ollamaPackage = {
   /**
    * The display name of this package.
    */
@@ -162,8 +167,14 @@ export const ollamaaiPackage = {
     '0.0.18',
     '0.0.17',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'ollama',
+  ] as const,
   fullPath: 'ollama.ai' as const,
-  aliases: [] as const,
 }
 
-export type OllamaaiPackage = typeof ollamaaiPackage
+export type OllamaPackage = typeof ollamaPackage

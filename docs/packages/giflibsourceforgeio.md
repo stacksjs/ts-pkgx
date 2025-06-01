@@ -27,6 +27,13 @@ This package provides the following executable programs:
 - `giftext`
 - `giftool`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+giflib.sourceforge.io -- $SHELL -i`
+- `gif`
+
 ## Available Versions
 
 <details>

@@ -30,6 +30,12 @@ This package provides the following executable programs:
 - `tdspool`
 - `tsql`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+freetds.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

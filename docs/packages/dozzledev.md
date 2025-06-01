@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `dozzle`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `dozzle`
+
 ## Available Versions
 
 <details>

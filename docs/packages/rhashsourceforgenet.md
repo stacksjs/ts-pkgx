@@ -33,6 +33,12 @@ This package provides the following executable programs:
 - `edonr256-hash`
 - `ed2k-link`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+rhash.sourceforge.net -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -33,6 +33,7 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
+- `+php.net -- $SHELL -i`
 - `php`
 
 ## Available Versions

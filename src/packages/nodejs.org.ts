@@ -218,7 +218,6 @@ export const nodePackage = {
     '14.20.1',
     '12.22.12',
   ] as const,
-  fullPath: 'nodejs.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -226,6 +225,7 @@ export const nodePackage = {
   aliases: [
     'node',
   ] as const,
+  fullPath: 'nodejs.org' as const,
 }
 
 export type NodePackage = typeof nodePackage

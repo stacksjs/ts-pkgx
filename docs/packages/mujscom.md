@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `mujs`
 - `mujs-pp`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+mujs.com -- $SHELL -i`
+- `mujs`
+
 ## Available Versions
 
 <details>

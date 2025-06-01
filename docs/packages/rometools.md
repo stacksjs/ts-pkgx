@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `rome`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `rome`
+
 ## Available Versions
 
 <details>

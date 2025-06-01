@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `gleam`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `gleam`
+
 ## Available Versions
 
 <details>

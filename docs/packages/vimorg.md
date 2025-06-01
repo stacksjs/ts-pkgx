@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `vim`
 - `vi`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+vim.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -1,17 +1,22 @@
 /**
- * **libcxx.llvm.org** - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
+ * **+libcxx.llvm.org -- $SHELL -i** - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
  *
  * @domain `libcxx.llvm.org`
  * @version `20.1.6` (40 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libcxx-llvm-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libcxx.llvm.org -- $SHELL -i`
+ * @aliases `+libcxx.llvm.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.libcxxllvmorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.libcxxllvmorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.libcxxllvmorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libcxx.llvm.org"
  * console.log(pkg.description) // "The LLVM Project is a collection of modular and..."
  * console.log(pkg.versions[0]) // "20.1.6" (latest)
@@ -20,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libcxx-llvm-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libcxxllvmorgPackage = {
+export const libcxxllvmorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -90,8 +95,14 @@ export const libcxxllvmorgPackage = {
     '13.0.1',
     '12.0.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+libcxx.llvm.org -- $SHELL -i',
+  ] as const,
   fullPath: 'libcxx.llvm.org' as const,
-  aliases: [] as const,
 }
 
-export type LibcxxllvmorgPackage = typeof libcxxllvmorgPackage
+export type LibcxxllvmorgSHELLiPackage = typeof libcxxllvmorgSHELLiPackage

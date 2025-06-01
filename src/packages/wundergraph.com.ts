@@ -83,7 +83,6 @@ export const wunderctlPackage = {
     '0.169.3',
     '0.169.2',
   ] as const,
-  fullPath: 'wundergraph.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -91,6 +90,7 @@ export const wunderctlPackage = {
   aliases: [
     'wunderctl',
   ] as const,
+  fullPath: 'wundergraph.com' as const,
 }
 
 export type WunderctlPackage = typeof wunderctlPackage

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/terratag-io.md
  *
  * @install `sh <(curl https://pkgx.sh) terratag`
+ * @aliases `terratag`
  * @dependencies `terraform.io>=0.12`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.terratagio
+ * // Access via alias (recommended)
+ * const pkg = pantry.terratag
+ * // Or access via domain
+ * const samePkg = pantry.terratagio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "terratag"
  * console.log(pkg.description) // "Terratag is a CLI tool that enables users of Te..."
  * console.log(pkg.programs)    // ["terratag"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/terratag-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const terratagioPackage = {
+export const terratagPackage = {
   /**
    * The display name of this package.
    */
@@ -84,8 +89,14 @@ export const terratagioPackage = {
     '0.3.0',
     '0.2.6',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'terratag',
+  ] as const,
   fullPath: 'terratag.io' as const,
-  aliases: [] as const,
 }
 
-export type TerratagioPackage = typeof terratagioPackage
+export type TerratagPackage = typeof terratagPackage

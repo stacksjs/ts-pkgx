@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `sg`
 - `ast-grep`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+ast-grep.github.io -- $SHELL -i`
+
 ## Available Versions
 
 <details>

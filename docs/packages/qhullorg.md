@@ -27,6 +27,12 @@ This package provides the following executable programs:
 - `qvoronoi`
 - `rbox`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+qhull.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

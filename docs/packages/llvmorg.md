@@ -35,6 +35,12 @@ This package provides the following executable programs:
 - `llvm-profdata`
 - `llvm-cov`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+llvm.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

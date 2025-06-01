@@ -16,7 +16,7 @@ CLI tool for Angular
 
 ---
 
-### [bunsh](../packages/bunsh.md) (bun)
+### [bunsh](../packages/bunsh.md) (+bun.sh -- $SHELL -i, bun)
 
 Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
 
@@ -26,7 +26,7 @@ Incredibly fast JavaScript runtime, bundler, test runner, and package manager �
 
 ---
 
-### [classicyarnpkgcom](../packages/classicyarnpkgcom.md) ()
+### [classicyarnpkgcom](../packages/classicyarnpkgcom.md) (+classic.yarnpkg.com -- $SHELL -i)
 
 The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
 
@@ -54,7 +54,7 @@ A modern runtime for JavaScript and TypeScript.
 
 ---
 
-### [flutterdev](../packages/flutterdev.md) ()
+### [flutterdev](../packages/flutterdev.md) (+flutter.dev -- $SHELL -i)
 
 Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 
@@ -84,7 +84,7 @@ Platform built on V8 to build network applications
 
 ---
 
-### [npmjscom](../packages/npmjscom.md) ()
+### [npmjscom](../packages/npmjscom.md) (+npmjs.com -- $SHELL -i)
 
 the package manager for JavaScript
 
@@ -94,7 +94,7 @@ the package manager for JavaScript
 
 ---
 
-### [pnpmio](../packages/pnpmio.md) ()
+### [pnpmio](../packages/pnpmio.md) (+pnpm.io -- $SHELL -i, pnp)
 
 Fast, disk space efficient package manager
 
@@ -104,7 +104,7 @@ Fast, disk space efficient package manager
 
 ---
 
-### [vitejsdev](../packages/vitejsdev.md) ()
+### [vitejsdev](../packages/vitejsdev.md) (vite)
 
 Next generation frontend tooling. It's fast!
 
@@ -114,7 +114,7 @@ Next generation frontend tooling. It's fast!
 
 ---
 
-### [yarnpkgcom](../packages/yarnpkgcom.md) ()
+### [yarnpkgcom](../packages/yarnpkgcom.md) (+yarnpkg.com -- $SHELL -i, yarn)
 
 📦🐈 Active development trunk for Yarn ⚒
 

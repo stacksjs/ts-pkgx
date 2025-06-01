@@ -1,18 +1,23 @@
 /**
- * **markupsafe.palletsprojects.com** - Safely add untrusted strings to HTML/XML markup.
+ * **+markupsafe.palletsprojects.com -- $SHELL -i** - Safely add untrusted strings to HTML/XML markup.
  *
  * @domain `markupsafe.palletsprojects.com`
  * @version `3.0.2` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/markupsafe-palletsprojects-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +markupsafe.palletsprojects.com -- $SHELL -i`
+ * @aliases `+markupsafe.palletsprojects.com -- $SHELL -i`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.markupsafepalletsprojectscom
+ * // Access via alias (recommended)
+ * const pkg = pantry.markupsafepalletsprojectscomSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.markupsafepalletsprojectscom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "markupsafe.palletsprojects.com"
  * console.log(pkg.description) // "Safely add untrusted strings to HTML/XML markup."
  * console.log(pkg.versions[0]) // "3.0.2" (latest)
@@ -21,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/markupsafe-palletsprojects-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const markupsafepalletsprojectscomPackage = {
+export const markupsafepalletsprojectscomSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -63,8 +68,14 @@ export const markupsafepalletsprojectscomPackage = {
     '2.1.4',
     '2.1.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+markupsafe.palletsprojects.com -- $SHELL -i',
+  ] as const,
   fullPath: 'markupsafe.palletsprojects.com' as const,
-  aliases: [] as const,
 }
 
-export type MarkupsafepalletsprojectscomPackage = typeof markupsafepalletsprojectscomPackage
+export type MarkupsafepalletsprojectscomSHELLiPackage = typeof markupsafepalletsprojectscomSHELLiPackage

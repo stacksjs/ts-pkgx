@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/yasm-tortall-net.md
  *
  * @install `sh <(curl https://pkgx.sh) yasm`
+ * @aliases `yasm`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.yasmtortallnet
+ * // Access via alias (recommended)
+ * const pkg = pantry.yasm
+ * // Or access via domain
+ * const samePkg = pantry.yasmtortallnet
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "yasm"
  * console.log(pkg.description) // "Yasm Assembler mainline development tree"
  * console.log(pkg.programs)    // ["yasm"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/yasm-tortall-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const yasmtortallnetPackage = {
+export const yasmPackage = {
   /**
    * The display name of this package.
    */
@@ -59,8 +64,14 @@ export const yasmtortallnetPackage = {
   versions: [
     '1.3.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'yasm',
+  ] as const,
   fullPath: 'yasm.tortall.net' as const,
-  aliases: [] as const,
 }
 
-export type YasmtortallnetPackage = typeof yasmtortallnetPackage
+export type YasmPackage = typeof yasmPackage

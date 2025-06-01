@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tectonic-typesetting-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) tectonic`
+ * @aliases `tectonic`
  * @dependencies `freetype.org`, `graphite.sil.org`, `harfbuzz.org`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tectonictypesettinggithubio
+ * // Access via alias (recommended)
+ * const pkg = pantry.tectonic
+ * // Or access via domain
+ * const samePkg = pantry.tectonictypesettinggithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "tectonic"
  * console.log(pkg.description) // "A modernized, complete, self-contained TeX/LaTe..."
  * console.log(pkg.programs)    // ["tectonic"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tectonic-typesetting-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tectonictypesettinggithubioPackage = {
+export const tectonicPackage = {
   /**
    * The display name of this package.
    */
@@ -76,8 +81,14 @@ export const tectonictypesettinggithubioPackage = {
     '0.13.0',
     '0.12.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'tectonic',
+  ] as const,
   fullPath: 'tectonic-typesetting.github.io' as const,
-  aliases: [] as const,
 }
 
-export type TectonictypesettinggithubioPackage = typeof tectonictypesettinggithubioPackage
+export type TectonicPackage = typeof tectonicPackage

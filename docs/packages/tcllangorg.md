@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `wish`
 - `critcl`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+tcl-lang.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

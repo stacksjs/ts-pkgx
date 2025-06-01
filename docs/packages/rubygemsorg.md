@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `bundler`
 - `gem`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+rubygems.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

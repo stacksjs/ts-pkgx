@@ -25,6 +25,13 @@ This package provides the following executable programs:
 - `rtmpsrv`
 - `rtmpsuck`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+rtmpdump.mplayerhq.hu -- $SHELL -i`
+- `rtmpdump`
+
 ## Available Versions
 
 <details>

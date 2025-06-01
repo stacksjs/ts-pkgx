@@ -1,5 +1,5 @@
 /**
- * **lima-vm.io** - Linux virtual machines, with a focus on running containers
+ * **+lima-vm.io -- $SHELL -i** - Linux virtual machines, with a focus on running containers
  *
  * @domain `lima-vm.io`
  * @programs `apptainer.lima`, `docker.lima`, `kubectl.lima`, `lima`, `limactl`, ... (+2 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lima-vm-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +lima-vm.io -- $SHELL -i`
+ * @aliases `+lima-vm.io -- $SHELL -i`
  * @dependencies `qemu.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.limavmio
+ * // Access via alias (recommended)
+ * const pkg = pantry.limavmioSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.limavmio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "lima-vm.io"
  * console.log(pkg.description) // "Linux virtual machines, with a focus on running..."
  * console.log(pkg.programs)    // ["apptainer.lima", "docker.lima", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/lima-vm-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const limavmioPackage = {
+export const limavmioSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -96,8 +101,14 @@ export const limavmioPackage = {
     '0.17.0',
     '0.16.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+lima-vm.io -- $SHELL -i',
+  ] as const,
   fullPath: 'lima-vm.io' as const,
-  aliases: [] as const,
 }
 
-export type LimavmioPackage = typeof limavmioPackage
+export type LimavmioSHELLiPackage = typeof limavmioSHELLiPackage

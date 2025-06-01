@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `fastlane`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `fastlane`
+
 ## Available Versions
 
 <details>

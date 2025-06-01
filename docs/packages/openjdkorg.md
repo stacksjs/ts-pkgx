@@ -48,6 +48,12 @@ This package provides the following executable programs:
 - `rmiregistry`
 - `serialver`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+openjdk.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

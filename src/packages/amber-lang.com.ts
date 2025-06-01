@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/amber-lang-com.md
  *
  * @install `sh <(curl https://pkgx.sh) amber`
+ * @aliases `amber`
  * @companions `gnu.org/bc`, `gnu.org/sed`, `gnu.org/coreutils`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.amberlangcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.amber
+ * // Or access via domain
+ * const samePkg = pantry.amberlangcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "amber"
  * console.log(pkg.description) // "Crystal web framework. Bare metal performance, ..."
  * console.log(pkg.programs)    // ["amber"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/amber-lang-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const amberlangcomPackage = {
+export const amberPackage = {
   /**
    * The display name of this package.
    */
@@ -75,8 +80,14 @@ export const amberlangcomPackage = {
     '0.3.2',
     '0.3.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'amber',
+  ] as const,
   fullPath: 'amber-lang.com' as const,
-  aliases: [] as const,
 }
 
-export type AmberlangcomPackage = typeof amberlangcomPackage
+export type AmberPackage = typeof amberPackage

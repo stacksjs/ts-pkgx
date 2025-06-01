@@ -1,17 +1,22 @@
 /**
- * **msgpack.org** - MessagePack implementation for C and C++ / msgpack.org[C/C++]
+ * **+msgpack.org -- $SHELL -i** - MessagePack implementation for C and C++ / msgpack.org[C/C++]
  *
  * @domain `msgpack.org`
  * @version `6.0.2` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/msgpack-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +msgpack.org -- $SHELL -i`
+ * @aliases `+msgpack.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.msgpackorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.msgpackorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.msgpackorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "msgpack.org"
  * console.log(pkg.description) // "MessagePack implementation for C and C++ / msgp..."
  * console.log(pkg.versions[0]) // "6.0.2" (latest)
@@ -20,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/msgpack-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const msgpackorgPackage = {
+export const msgpackorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -53,8 +58,14 @@ export const msgpackorgPackage = {
     '6.0.1',
     '6.0.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+msgpack.org -- $SHELL -i',
+  ] as const,
   fullPath: 'msgpack.org' as const,
-  aliases: [] as const,
 }
 
-export type MsgpackorgPackage = typeof msgpackorgPackage
+export type MsgpackorgSHELLiPackage = typeof msgpackorgSHELLiPackage

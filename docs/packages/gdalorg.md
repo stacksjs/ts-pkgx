@@ -49,6 +49,12 @@ This package provides the following executable programs:
 - `ogrtindex`
 - `sozip`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+gdal.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

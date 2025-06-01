@@ -1,17 +1,22 @@
 /**
- * **pyyaml.org** - Canonical source repository for LibYAML
+ * **+pyyaml.org -- $SHELL -i** - Canonical source repository for LibYAML
  *
  * @domain `pyyaml.org`
  * @version `0.2.5` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pyyaml-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +pyyaml.org -- $SHELL -i`
+ * @aliases `+pyyaml.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pyyamlorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.pyyamlorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.pyyamlorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pyyaml.org"
  * console.log(pkg.description) // "Canonical source repository for LibYAML"
  * console.log(pkg.versions[0]) // "0.2.5" (latest)
@@ -20,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pyyaml-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pyyamlorgPackage = {
+export const pyyamlorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -51,8 +56,14 @@ export const pyyamlorgPackage = {
   versions: [
     '0.2.5',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+pyyaml.org -- $SHELL -i',
+  ] as const,
   fullPath: 'pyyaml.org' as const,
-  aliases: [] as const,
 }
 
-export type PyyamlorgPackage = typeof pyyamlorgPackage
+export type PyyamlorgSHELLiPackage = typeof pyyamlorgSHELLiPackage

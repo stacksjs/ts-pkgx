@@ -25,6 +25,12 @@ This package provides the following executable programs:
 - `getdap`
 - `getdap4`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+opendap.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

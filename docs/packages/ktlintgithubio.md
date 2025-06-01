@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `ktlint`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ktlint`
+
 ## Available Versions
 
 <details>

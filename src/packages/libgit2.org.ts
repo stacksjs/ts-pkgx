@@ -81,7 +81,6 @@ export const git2Package = {
     '1.6.5',
     '1.6.4',
   ] as const,
-  fullPath: 'libgit2.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -89,6 +88,7 @@ export const git2Package = {
   aliases: [
     'git2',
   ] as const,
+  fullPath: 'libgit2.org' as const,
 }
 
 export type Git2Package = typeof git2Package

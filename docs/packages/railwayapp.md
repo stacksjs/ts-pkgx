@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `railway`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `railway`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `terragrunt`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `terragrunt`
+
 ## Available Versions
 
 <details>

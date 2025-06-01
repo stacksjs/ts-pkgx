@@ -81,7 +81,6 @@ export const atlantisPackage = {
     '0.26.0',
     '0.25.0',
   ] as const,
-  fullPath: 'runatlantis.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -89,6 +88,7 @@ export const atlantisPackage = {
   aliases: [
     'atlantis',
   ] as const,
+  fullPath: 'runatlantis.io' as const,
 }
 
 export type AtlantisPackage = typeof atlantisPackage

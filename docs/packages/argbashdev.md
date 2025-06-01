@@ -24,6 +24,13 @@ This package provides the following executable programs:
 - `argbash-init`
 - `argbash-1to2`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+argbash.dev -- $SHELL -i`
+- `argbash`
+
 ## Available Versions
 
 <details>

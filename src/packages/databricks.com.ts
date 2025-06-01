@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/databricks-com.md
  *
  * @install `sh <(curl https://pkgx.sh) databricks`
+ * @aliases `databricks`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.databrickscom
+ * // Access via alias (recommended)
+ * const pkg = pantry.databricks
+ * // Or access via domain
+ * const samePkg = pantry.databrickscom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "databricks"
  * console.log(pkg.description) // "Databricks CLI"
  * console.log(pkg.programs)    // ["databricks"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/databricks-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const databrickscomPackage = {
+export const databricksPackage = {
   /**
    * The display name of this package.
    */
@@ -110,8 +115,14 @@ export const databrickscomPackage = {
     '0.216.0',
     '0.215.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'databricks',
+  ] as const,
   fullPath: 'databricks.com' as const,
-  aliases: [] as const,
 }
 
-export type DatabrickscomPackage = typeof databrickscomPackage
+export type DatabricksPackage = typeof databricksPackage

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `cnquery`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `cnquery`
+
 ## Available Versions
 
 <details>

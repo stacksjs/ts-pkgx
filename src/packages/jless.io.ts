@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jless-io.md
  *
  * @install `sh <(curl https://pkgx.sh) jless`
+ * @aliases `jless`
  * @dependencies `linuxx.org/xcb@1`, `x.org/xcb@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.jlessio
+ * // Access via alias (recommended)
+ * const pkg = pantry.jless
+ * // Or access via domain
+ * const samePkg = pantry.jlessio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "jless"
  * console.log(pkg.description) // "jless is a command-line JSON viewer designed fo..."
  * console.log(pkg.programs)    // ["jless"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jless-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jlessioPackage = {
+export const jlessPackage = {
   /**
    * The display name of this package.
    */
@@ -67,8 +72,14 @@ export const jlessioPackage = {
   versions: [
     '0.9.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'jless',
+  ] as const,
   fullPath: 'jless.io' as const,
-  aliases: [] as const,
 }
 
-export type JlessioPackage = typeof jlessioPackage
+export type JlessPackage = typeof jlessPackage

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `git-town`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `git-town`
+
 ## Available Versions
 
 <details>

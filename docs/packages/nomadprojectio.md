@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `nomad`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `nomad`
+
 ## Available Versions
 
 <details>

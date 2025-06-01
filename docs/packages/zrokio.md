@@ -24,6 +24,13 @@ This package provides the following executable programs:
 - `copyto`
 - `pastefrom`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+zrok.io -- $SHELL -i`
+- `zrok`
+
 ## Available Versions
 
 <details>

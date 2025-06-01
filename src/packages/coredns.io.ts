@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/coredns-io.md
  *
  * @install `sh <(curl https://pkgx.sh) coredns`
+ * @aliases `coredns`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.corednsio
+ * // Access via alias (recommended)
+ * const pkg = pantry.coredns
+ * // Or access via domain
+ * const samePkg = pantry.corednsio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "coredns"
  * console.log(pkg.description) // "CoreDNS is a DNS server that chains plugins"
  * console.log(pkg.programs)    // ["coredns"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/coredns-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const corednsioPackage = {
+export const corednsPackage = {
   /**
    * The display name of this package.
    */
@@ -65,8 +70,14 @@ export const corednsioPackage = {
     '1.11.1',
     '1.10.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'coredns',
+  ] as const,
   fullPath: 'coredns.io' as const,
-  aliases: [] as const,
 }
 
-export type CorednsioPackage = typeof corednsioPackage
+export type CorednsPackage = typeof corednsPackage

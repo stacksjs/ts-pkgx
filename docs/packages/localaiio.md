@@ -22,6 +22,13 @@ This package provides the following executable programs:
 
 - `local-ai`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `local-ai`
+- `LocalAI`
+
 ## Available Versions
 
 <details>

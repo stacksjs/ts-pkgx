@@ -1,5 +1,5 @@
 /**
- * **LocalAI** - :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI,  running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference
+ * **local-ai** - :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI,  running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference
  *
  * @domain `localai.io`
  * @programs `local-ai`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/localai-io.md
  *
  * @install `sh <(curl https://pkgx.sh) local-ai`
+ * @aliases `local-ai`, `LocalAI`
  * @dependencies `darwinopenmp.llvm.org@18`, `openmp.llvm.org@18`
  * @companions `linux`
  *
@@ -14,7 +15,11 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.localaiio
+ * // Access via alias (recommended)
+ * const pkg = pantry.localai
+ * // Or access via domain
+ * const samePkg = pantry.localaiio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "LocalAI"
  * console.log(pkg.description) // ":robot: The free, Open Source alternative to Op..."
  * console.log(pkg.programs)    // ["local-ai"]
@@ -24,7 +29,7 @@
  * @see https://ts-pkgx.netlify.app/packages/localai-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const localaiioPackage = {
+export const localaiPackage = {
   /**
    * The display name of this package.
    */
@@ -110,8 +115,15 @@ export const localaiioPackage = {
     '2.7.0',
     '2.6.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'local-ai',
+    'LocalAI',
+  ] as const,
   fullPath: 'localai.io' as const,
-  aliases: [] as const,
 }
 
-export type LocalaiioPackage = typeof localaiioPackage
+export type LocalaiPackage = typeof localaiPackage

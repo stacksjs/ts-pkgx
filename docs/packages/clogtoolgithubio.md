@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `clog`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `clog`
+
 ## Available Versions
 
 <details>

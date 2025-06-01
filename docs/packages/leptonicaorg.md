@@ -31,6 +31,12 @@ This package provides the following executable programs:
 - `imagetops`
 - `xtractprotos`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+leptonica.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

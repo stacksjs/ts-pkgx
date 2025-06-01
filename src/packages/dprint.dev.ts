@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dprint-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) dprint`
+ * @aliases `dprint`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.dprintdev
+ * // Access via alias (recommended)
+ * const pkg = pantry.dprint
+ * // Or access via domain
+ * const samePkg = pantry.dprintdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "dprint"
  * console.log(pkg.description) // "Pluggable and configurable code formatting plat..."
  * console.log(pkg.programs)    // ["dprint"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dprint-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dprintdevPackage = {
+export const dprintPackage = {
   /**
    * The display name of this package.
    */
@@ -85,8 +90,14 @@ export const dprintdevPackage = {
     '0.41.0',
     '0.40.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'dprint',
+  ] as const,
   fullPath: 'dprint.dev' as const,
-  aliases: [] as const,
 }
 
-export type DprintdevPackage = typeof dprintdevPackage
+export type DprintPackage = typeof dprintPackage

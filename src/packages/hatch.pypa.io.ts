@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/hatch-pypa-io.md
  *
  * @install `sh <(curl https://pkgx.sh) hatch`
+ * @aliases `hatch`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.hatchpypaio
+ * // Access via alias (recommended)
+ * const pkg = pantry.hatch
+ * // Or access via domain
+ * const samePkg = pantry.hatchpypaio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "hatch"
  * console.log(pkg.description) // "Modern, extensible Python project management"
  * console.log(pkg.programs)    // ["hatch"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/hatch-pypa-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const hatchpypaioPackage = {
+export const hatchPackage = {
   /**
    * The display name of this package.
    */
@@ -83,8 +88,14 @@ export const hatchpypaioPackage = {
     '1.8.0',
     '1.7.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'hatch',
+  ] as const,
   fullPath: 'hatch.pypa.io' as const,
-  aliases: [] as const,
 }
 
-export type HatchpypaioPackage = typeof hatchpypaioPackage
+export type HatchPackage = typeof hatchPackage

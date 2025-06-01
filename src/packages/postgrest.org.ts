@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/postgrest-org.md
  *
  * @install `sh <(curl https://pkgx.sh) postgrest`
+ * @aliases `postgrest`
  * @dependencies `postgresql.org/libpq@17`, `zlib.net~1.3`, `gnu.org/gcc/libstdcxx@14`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.postgrestorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.postgrest
+ * // Or access via domain
+ * const samePkg = pantry.postgrestorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "postgrest"
  * console.log(pkg.description) // "Serves a fully RESTful API from any existing Po..."
  * console.log(pkg.programs)    // ["postgrest"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/postgrest-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const postgrestorgPackage = {
+export const postgrestPackage = {
   /**
    * The display name of this package.
    */
@@ -78,8 +83,14 @@ export const postgrestorgPackage = {
     '12.2.4',
     '12.2.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'postgrest',
+  ] as const,
   fullPath: 'postgrest.org' as const,
-  aliases: [] as const,
 }
 
-export type PostgrestorgPackage = typeof postgrestorgPackage
+export type PostgrestPackage = typeof postgrestPackage

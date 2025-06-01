@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/duckdb-org.md
  *
  * @install `sh <(curl https://pkgx.sh) duckdb`
+ * @aliases `duckdb`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.duckdborg
+ * // Access via alias (recommended)
+ * const pkg = pantry.duckdb
+ * // Or access via domain
+ * const samePkg = pantry.duckdborg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "duckdb"
  * console.log(pkg.description) // "DuckDB is an analytical in-process SQL database..."
  * console.log(pkg.programs)    // ["duckdb"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/duckdb-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const duckdborgPackage = {
+export const duckdbPackage = {
   /**
    * The display name of this package.
    */
@@ -77,8 +82,14 @@ export const duckdborgPackage = {
     '0.8.0',
     '0.7.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'duckdb',
+  ] as const,
   fullPath: 'duckdb.org' as const,
-  aliases: [] as const,
 }
 
-export type DuckdborgPackage = typeof duckdborgPackage
+export type DuckdbPackage = typeof duckdbPackage

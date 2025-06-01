@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/plantuml-com.md
  *
  * @install `sh <(curl https://pkgx.sh) plantuml`
+ * @aliases `plantuml`
  * @dependencies `graphviz.org`, `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.plantumlcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.plantuml
+ * // Or access via domain
+ * const samePkg = pantry.plantumlcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "plantuml"
  * console.log(pkg.description) // "Generate diagrams from textual description"
  * console.log(pkg.programs)    // ["plantuml"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/plantuml-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const plantumlcomPackage = {
+export const plantumlPackage = {
   /**
    * The display name of this package.
    */
@@ -82,8 +87,14 @@ export const plantumlcomPackage = {
     '1.2023.11',
     '1.2023.10',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'plantuml',
+  ] as const,
   fullPath: 'plantuml.com' as const,
-  aliases: [] as const,
 }
 
-export type PlantumlcomPackage = typeof plantumlcomPackage
+export type PlantumlPackage = typeof plantumlPackage

@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/doctave-com.md
  *
  * @install `sh <(curl https://pkgx.sh) doctave`
+ * @aliases `doctave`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.doctavecom
+ * // Access via alias (recommended)
+ * const pkg = pantry.doctave
+ * // Or access via domain
+ * const samePkg = pantry.doctavecom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "doctave"
  * console.log(pkg.description) // "A batteries-included developer documentation si..."
  * console.log(pkg.programs)    // ["doctave"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/doctave-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const doctavecomPackage = {
+export const doctavePackage = {
   /**
    * The display name of this package.
    */
@@ -59,8 +64,14 @@ export const doctavecomPackage = {
   versions: [
     '0.4.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'doctave',
+  ] as const,
   fullPath: 'doctave.com' as const,
-  aliases: [] as const,
 }
 
-export type DoctavecomPackage = typeof doctavecomPackage
+export type DoctavePackage = typeof doctavePackage

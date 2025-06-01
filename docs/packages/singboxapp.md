@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `sing-box`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `sing-box`
+
 ## Available Versions
 
 <details>

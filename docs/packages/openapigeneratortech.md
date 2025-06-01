@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `openapi-generator`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `openapi-generator`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `juju`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `juju`
+
 ## Available Versions
 
 <details>

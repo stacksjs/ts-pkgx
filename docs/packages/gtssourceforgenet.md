@@ -30,6 +30,12 @@ This package provides the following executable programs:
 - `stl2gts`
 - `transform`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+gts.sourceforge.net -- $SHELL -i`
+
 ## Available Versions
 
 <details>

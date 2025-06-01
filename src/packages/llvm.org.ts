@@ -1,5 +1,5 @@
 /**
- * **llvm.org** - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
+ * **+llvm.org -- $SHELL -i** - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
  *
  * @domain `llvm.org`
  * @programs `lld`, `clang`, `clang++`, `cc`, `c++`, ... (+9 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/llvm-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +llvm.org -- $SHELL -i`
+ * @aliases `+llvm.org -- $SHELL -i`
  * @dependencies `zlib.net@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.llvmorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.llvmorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.llvmorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "llvm.org"
  * console.log(pkg.description) // "The LLVM Project is a collection of modular and..."
  * console.log(pkg.programs)    // ["lld", "clang", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/llvm-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const llvmorgPackage = {
+export const llvmorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -120,8 +125,14 @@ export const llvmorgPackage = {
     '13.0.1',
     '12.0.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+llvm.org -- $SHELL -i',
+  ] as const,
   fullPath: 'llvm.org' as const,
-  aliases: [] as const,
 }
 
-export type LlvmorgPackage = typeof llvmorgPackage
+export type LlvmorgSHELLiPackage = typeof llvmorgSHELLiPackage

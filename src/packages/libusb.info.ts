@@ -1,17 +1,22 @@
 /**
- * **libusb.info** - A cross-platform library to access USB devices
+ * **+libusb.info -- $SHELL -i** - A cross-platform library to access USB devices
  *
  * @domain `libusb.info`
  * @version `1.0.28` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libusb-info.md
  *
  * @install `sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i`
+ * @aliases `+libusb.info -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.libusbinfo
+ * // Access via alias (recommended)
+ * const pkg = pantry.libusbinfoSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.libusbinfo
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libusb.info"
  * console.log(pkg.description) // "A cross-platform library to access USB devices"
  * console.log(pkg.versions[0]) // "1.0.28" (latest)
@@ -20,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libusb-info.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libusbinfoPackage = {
+export const libusbinfoSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -53,8 +58,14 @@ export const libusbinfoPackage = {
     '1.0.27',
     '1.0.26',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+libusb.info -- $SHELL -i',
+  ] as const,
   fullPath: 'libusb.info' as const,
-  aliases: [] as const,
 }
 
-export type LibusbinfoPackage = typeof libusbinfoPackage
+export type LibusbinfoSHELLiPackage = typeof libusbinfoSHELLiPackage

@@ -1,5 +1,5 @@
 /**
- * **mypy-lang.org** - Experimental optional static type checker for Python
+ * **+mypy-lang.org -- $SHELL -i** - Experimental optional static type checker for Python
  *
  * @domain `mypy-lang.org`
  * @programs `mypy`, `mypyc`, `dmypy`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mypy-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +mypy-lang.org -- $SHELL -i`
+ * @aliases `+mypy-lang.org -- $SHELL -i`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mypylangorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.mypylangorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.mypylangorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mypy-lang.org"
  * console.log(pkg.description) // "Experimental optional static type checker for P..."
  * console.log(pkg.programs)    // ["mypy", "mypyc", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mypy-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mypylangorgPackage = {
+export const mypylangorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -91,8 +96,14 @@ export const mypylangorgPackage = {
     '1.3.0',
     '1.2.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+mypy-lang.org -- $SHELL -i',
+  ] as const,
   fullPath: 'mypy-lang.org' as const,
-  aliases: [] as const,
 }
 
-export type MypylangorgPackage = typeof mypylangorgPackage
+export type MypylangorgSHELLiPackage = typeof mypylangorgSHELLiPackage

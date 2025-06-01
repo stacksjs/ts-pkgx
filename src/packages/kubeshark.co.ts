@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubeshark-co.md
  *
  * @install `sh <(curl https://pkgx.sh) kubeshark`
+ * @aliases `kubeshark`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.kubesharkco
+ * // Access via alias (recommended)
+ * const pkg = pantry.kubeshark
+ * // Or access via domain
+ * const samePkg = pantry.kubesharkco
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "kubeshark"
  * console.log(pkg.description) // "The API traffic analyzer for Kubernetes providi..."
  * console.log(pkg.programs)    // ["kubeshark"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kubeshark-co.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubesharkcoPackage = {
+export const kubesharkPackage = {
   /**
    * The display name of this package.
    */
@@ -112,8 +117,14 @@ export const kubesharkcoPackage = {
     '51.0.14',
     '51.0.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'kubeshark',
+  ] as const,
   fullPath: 'kubeshark.co' as const,
-  aliases: [] as const,
 }
 
-export type KubesharkcoPackage = typeof kubesharkcoPackage
+export type KubesharkPackage = typeof kubesharkPackage

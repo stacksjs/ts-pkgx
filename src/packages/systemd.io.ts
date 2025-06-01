@@ -1,5 +1,5 @@
 /**
- * **systemd.io** - The systemd System and Service Manager
+ * **+systemd.io -- $SHELL -i** - The systemd System and Service Manager
  *
  * @domain `systemd.io`
  * @programs `busctl`, `coredumpctl`, `hostnamectl`, `journalctl`, `kernel-install`, ... (+50 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/systemd-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +systemd.io -- $SHELL -i`
+ * @aliases `+systemd.io -- $SHELL -i`
  * @dependencies `libexpat.github.io`, `google.com/fullycapable`, `lz4.org`, ... (+10 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.systemdio
+ * // Access via alias (recommended)
+ * const pkg = pantry.systemdioSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.systemdio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "systemd.io"
  * console.log(pkg.description) // "The systemd System and Service Manager"
  * console.log(pkg.programs)    // ["busctl", "coredumpctl", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/systemd-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const systemdioPackage = {
+export const systemdioSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -157,8 +162,14 @@ export const systemdioPackage = {
     '255.0.0',
     '254.0.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+systemd.io -- $SHELL -i',
+  ] as const,
   fullPath: 'systemd.io' as const,
-  aliases: [] as const,
 }
 
-export type SystemdioPackage = typeof systemdioPackage
+export type SystemdioSHELLiPackage = typeof systemdioSHELLiPackage

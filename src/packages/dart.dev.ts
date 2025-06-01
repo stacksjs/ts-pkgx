@@ -1,5 +1,5 @@
 /**
- * **dart** - The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
+ * **+dart.dev -- $SHELL -i** - The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
  *
  * @domain `dart.dev`
  * @programs `dart`, `dartaotruntime`
@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dart-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +dart.dev -- $SHELL -i`
+ * @aliases `+dart.dev -- $SHELL -i`, `dart`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.dartdev
+ * // Access via alias (recommended)
+ * const pkg = pantry.dartdevSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.dartdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "dart"
  * console.log(pkg.description) // "The Dart SDK, including the VM, JS and Wasm com..."
  * console.log(pkg.programs)    // ["dart", "dartaotruntime"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dart-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dartdevPackage = {
+export const dartdevSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -95,8 +100,15 @@ export const dartdevPackage = {
     '3.1.2',
     '3.1.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+dart.dev -- $SHELL -i',
+    'dart',
+  ] as const,
   fullPath: 'dart.dev' as const,
-  aliases: [] as const,
 }
 
-export type DartdevPackage = typeof dartdevPackage
+export type DartdevSHELLiPackage = typeof dartdevSHELLiPackage

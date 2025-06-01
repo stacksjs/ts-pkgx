@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `amp`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `amp`
+
 ## Available Versions
 
 <details>

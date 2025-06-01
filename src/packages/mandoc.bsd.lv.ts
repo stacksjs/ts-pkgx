@@ -1,5 +1,5 @@
 /**
- * **mandoc.bsd.lv** - UNIX manpage compiler toolset
+ * **+mandoc.bsd.lv -- $SHELL -i** - UNIX manpage compiler toolset
  *
  * @domain `mandoc.bsd.lv`
  * @programs `bsdapropos`, `bsdman`, `bsdsoelim`, `bsdwhatis`, `demandoc`, ... (+1 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mandoc-bsd-lv.md
  *
  * @install `sh <(curl https://pkgx.sh) +mandoc.bsd.lv -- $SHELL -i`
+ * @aliases `+mandoc.bsd.lv -- $SHELL -i`
  * @dependencies `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mandocbsdlv
+ * // Access via alias (recommended)
+ * const pkg = pantry.mandocbsdlvSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.mandocbsdlv
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mandoc.bsd.lv"
  * console.log(pkg.description) // "UNIX manpage compiler toolset"
  * console.log(pkg.programs)    // ["bsdapropos", "bsdman", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mandoc-bsd-lv.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mandocbsdlvPackage = {
+export const mandocbsdlvSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -71,8 +76,14 @@ export const mandocbsdlvPackage = {
   versions: [
     '1.14.6',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+mandoc.bsd.lv -- $SHELL -i',
+  ] as const,
   fullPath: 'mandoc.bsd.lv' as const,
-  aliases: [] as const,
 }
 
-export type MandocbsdlvPackage = typeof mandocbsdlvPackage
+export type MandocbsdlvSHELLiPackage = typeof mandocbsdlvSHELLiPackage

@@ -39,6 +39,12 @@ This package provides the following executable programs:
 - `wimupdate`
 - `wimverify`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+wimlib.net -- $SHELL -i`
+
 ## Available Versions
 
 <details>

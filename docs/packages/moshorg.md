@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `mosh-client`
 - `mosh-server`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+mosh.org -- $SHELL -i`
+- `mosh`
+
 ## Available Versions
 
 <details>

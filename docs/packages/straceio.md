@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `strace`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `strace`
+
 ## Available Versions
 
 <details>

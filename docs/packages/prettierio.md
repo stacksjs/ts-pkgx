@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `prettier`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `prettier`
+
 ## Available Versions
 
 <details>

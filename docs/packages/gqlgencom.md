@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `gqlgen`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `gqlgen`
+
 ## Available Versions
 
 <details>

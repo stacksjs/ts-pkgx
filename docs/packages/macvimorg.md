@@ -33,6 +33,12 @@ This package provides the following executable programs:
 - `vimdiff`
 - `vimtutor`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+macvim.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

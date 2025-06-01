@@ -32,6 +32,12 @@ This package provides the following executable programs:
 - `rst2xetex`
 - `rst2xml`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+docutils.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

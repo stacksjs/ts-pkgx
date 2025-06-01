@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `syncthing`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `syncthing`
+
 ## Available Versions
 
 <details>

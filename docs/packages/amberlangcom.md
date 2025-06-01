@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `amber`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `amber`
+
 ## Available Versions
 
 <details>

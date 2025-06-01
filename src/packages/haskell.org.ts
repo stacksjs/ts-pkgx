@@ -1,5 +1,5 @@
 /**
- * **haskell.org** - Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
+ * **+haskell.org -- $SHELL -i** - Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
  *
  * @domain `haskell.org`
  * @programs `ghc`, `ghc-{{version.marketing}}`, `ghc-{{version}}`, `ghc-pkg`, `ghc-pkg-{{version.marketing}}`, ... (+23 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/haskell-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +haskell.org -- $SHELL -i`
+ * @aliases `+haskell.org -- $SHELL -i`
  * @dependencies `gnu.org/gmp@6`, `invisible-island.net/ncurses@6`, `sourceware.org/libffi@3`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.haskellorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.haskellorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.haskellorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "haskell.org"
  * console.log(pkg.description) // "Mirror of the Glasgow Haskell Compiler. Please ..."
  * console.log(pkg.programs)    // ["ghc", "ghc-{{version.marketing}}", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/haskell-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const haskellorgPackage = {
+export const haskellorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -116,8 +121,14 @@ export const haskellorgPackage = {
     '9.0.2',
     '8.10.7',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+haskell.org -- $SHELL -i',
+  ] as const,
   fullPath: 'haskell.org' as const,
-  aliases: [] as const,
 }
 
-export type HaskellorgPackage = typeof haskellorgPackage
+export type HaskellorgSHELLiPackage = typeof haskellorgSHELLiPackage

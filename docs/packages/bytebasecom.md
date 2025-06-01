@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `bytebase`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `bytebase`
+
 ## Available Versions
 
 <details>

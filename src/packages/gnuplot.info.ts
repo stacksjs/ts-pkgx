@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gnuplot-info.md
  *
  * @install `sh <(curl https://pkgx.sh) gnuplot`
+ * @aliases `gnuplot`
  * @dependencies `libgd.github.io`, `lua.org`, `gnome.org/pango`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.gnuplotinfo
+ * // Access via alias (recommended)
+ * const pkg = pantry.gnuplot
+ * // Or access via domain
+ * const samePkg = pantry.gnuplotinfo
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gnuplot"
  * console.log(pkg.description) // "Command-driven, interactive function plotting"
  * console.log(pkg.programs)    // ["gnuplot"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnuplot-info.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gnuplotinfoPackage = {
+export const gnuplotPackage = {
   /**
    * The display name of this package.
    */
@@ -78,8 +83,14 @@ export const gnuplotinfoPackage = {
     '5.4.7',
     '5.4.6',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'gnuplot',
+  ] as const,
   fullPath: 'gnuplot.info' as const,
-  aliases: [] as const,
 }
 
-export type GnuplotinfoPackage = typeof gnuplotinfoPackage
+export type GnuplotPackage = typeof gnuplotPackage

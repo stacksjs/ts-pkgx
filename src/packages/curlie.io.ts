@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/curlie-io.md
  *
  * @install `sh <(curl https://pkgx.sh) curlie`
+ * @aliases `curlie`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.curlieio
+ * // Access via alias (recommended)
+ * const pkg = pantry.curlie
+ * // Or access via domain
+ * const samePkg = pantry.curlieio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "curlie"
  * console.log(pkg.description) // "The power of curl, the ease of use of httpie."
  * console.log(pkg.programs)    // ["curlie"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/curlie-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const curlieioPackage = {
+export const curliePackage = {
   /**
    * The display name of this package.
    */
@@ -60,8 +65,14 @@ export const curlieioPackage = {
     '1.8.2',
     '1.7.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'curlie',
+  ] as const,
   fullPath: 'curlie.io' as const,
-  aliases: [] as const,
 }
 
-export type CurlieioPackage = typeof curlieioPackage
+export type CurliePackage = typeof curliePackage

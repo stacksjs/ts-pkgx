@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `jumppad`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `jumppad`
+
 ## Available Versions
 
 <details>

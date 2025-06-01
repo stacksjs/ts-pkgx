@@ -1,5 +1,5 @@
 /**
- * **postgresql.org** - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
+ * **+postgresql.org -- $SHELL -i** - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
  *
  * @domain `postgresql.org`
  * @programs `clusterdb`, `createdb`, `dropdb`, `dropuser`, `ecpg`, ... (+23 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/postgresql-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +postgresql.org -- $SHELL -i`
+ * @aliases `+postgresql.org -- $SHELL -i`
  * @dependencies `openssl.org^1.0.1`, `gnu.org/readline`, `zlib.net`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.postgresqlorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.postgresqlorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.postgresqlorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "postgresql.org"
  * console.log(pkg.description) // "Mirror of the official PostgreSQL GIT repositor..."
  * console.log(pkg.programs)    // ["clusterdb", "createdb", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/postgresql-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const postgresqlorgPackage = {
+export const postgresqlorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -110,8 +115,14 @@ export const postgresqlorgPackage = {
     '12.14.0',
     '11.19.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+postgresql.org -- $SHELL -i',
+  ] as const,
   fullPath: 'postgresql.org' as const,
-  aliases: [] as const,
 }
 
-export type PostgresqlorgPackage = typeof postgresqlorgPackage
+export type PostgresqlorgSHELLiPackage = typeof postgresqlorgSHELLiPackage

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `jbang`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `jbang`
+
 ## Available Versions
 
 <details>

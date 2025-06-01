@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/leo-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) leo`
+ * @aliases `leo`
  * @dependencies `openssl.org^1.1`, `curl.se^8.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.leolangorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.leo
+ * // Or access via domain
+ * const samePkg = pantry.leolangorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "leo"
  * console.log(pkg.description) // "🦁 The Leo Programming Language. A Programming ..."
  * console.log(pkg.programs)    // ["leo"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/leo-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const leolangorgPackage = {
+export const leoPackage = {
   /**
    * The display name of this package.
    */
@@ -79,8 +84,14 @@ export const leolangorgPackage = {
     '1.11.0',
     '1.10.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'leo',
+  ] as const,
   fullPath: 'leo-lang.org' as const,
-  aliases: [] as const,
 }
 
-export type LeolangorgPackage = typeof leolangorgPackage
+export type LeoPackage = typeof leoPackage

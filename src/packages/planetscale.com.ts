@@ -130,7 +130,6 @@ export const pscalePackage = {
     '0.162.0',
     '0.161.0',
   ] as const,
-  fullPath: 'planetscale.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -138,6 +137,7 @@ export const pscalePackage = {
   aliases: [
     'pscale',
   ] as const,
+  fullPath: 'planetscale.com' as const,
 }
 
 export type PscalePackage = typeof pscalePackage

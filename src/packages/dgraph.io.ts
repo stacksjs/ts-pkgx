@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dgraph-io.md
  *
  * @install `sh <(curl https://pkgx.sh) dgraph`
+ * @aliases `dgraph`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.dgraphio
+ * // Access via alias (recommended)
+ * const pkg = pantry.dgraph
+ * // Or access via domain
+ * const samePkg = pantry.dgraphio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "dgraph"
  * console.log(pkg.description) // "high-performance graph database for real-time u..."
  * console.log(pkg.programs)    // ["dgraph"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dgraph-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dgraphioPackage = {
+export const dgraphPackage = {
   /**
    * The display name of this package.
    */
@@ -69,8 +74,14 @@ export const dgraphioPackage = {
     '23.1.1',
     '23.1.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'dgraph',
+  ] as const,
   fullPath: 'dgraph.io' as const,
-  aliases: [] as const,
 }
 
-export type DgraphioPackage = typeof dgraphioPackage
+export type DgraphPackage = typeof dgraphPackage

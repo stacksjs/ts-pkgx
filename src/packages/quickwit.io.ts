@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/quickwit-io.md
  *
  * @install `sh <(curl https://pkgx.sh) quickwit`
+ * @aliases `quickwit`
  * @dependencies `protobuf.dev^25`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.quickwitio
+ * // Access via alias (recommended)
+ * const pkg = pantry.quickwit
+ * // Or access via domain
+ * const samePkg = pantry.quickwitio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "quickwit"
  * console.log(pkg.description) // "Cloud-native search engine for observability. A..."
  * console.log(pkg.programs)    // ["quickwit"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/quickwit-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const quickwitioPackage = {
+export const quickwitPackage = {
   /**
    * The display name of this package.
    */
@@ -72,8 +77,14 @@ export const quickwitioPackage = {
     '0.6.5',
     '0.6.4',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'quickwit',
+  ] as const,
   fullPath: 'quickwit.io' as const,
-  aliases: [] as const,
 }
 
-export type QuickwitioPackage = typeof quickwitioPackage
+export type QuickwitPackage = typeof quickwitPackage

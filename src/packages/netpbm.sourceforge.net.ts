@@ -1,5 +1,5 @@
 /**
- * **netpbm.sourceforge.net** - Image manipulation
+ * **+netpbm.sourceforge.net -- $SHELL -i** - Image manipulation
  *
  * @domain `netpbm.sourceforge.net`
  * @programs `411toppm`, `asciitopgm`, `atktopbm`, `avstopam`, `bioradtopgm`, ... (+310 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/netpbm-sourceforge-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +netpbm.sourceforge.net -- $SHELL -i`
+ * @aliases `+netpbm.sourceforge.net -- $SHELL -i`
  * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `libpng.org`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.netpbmsourceforgenet
+ * // Access via alias (recommended)
+ * const pkg = pantry.netpbmsourceforgenetSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.netpbmsourceforgenet
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "netpbm.sourceforge.net"
  * console.log(pkg.description) // "Image manipulation"
  * console.log(pkg.programs)    // ["411toppm", "asciitopgm", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/netpbm-sourceforge-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const netpbmsourceforgenetPackage = {
+export const netpbmsourceforgenetSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -394,8 +399,14 @@ export const netpbmsourceforgenetPackage = {
     '10.86.38',
     '10.73.43',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+netpbm.sourceforge.net -- $SHELL -i',
+  ] as const,
   fullPath: 'netpbm.sourceforge.net' as const,
-  aliases: [] as const,
 }
 
-export type NetpbmsourceforgenetPackage = typeof netpbmsourceforgenetPackage
+export type NetpbmsourceforgenetSHELLiPackage = typeof netpbmsourceforgenetSHELLiPackage

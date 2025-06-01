@@ -1,5 +1,5 @@
 /**
- * **libpng.org** - LIBPNG: Portable Network Graphics support, official libpng repository
+ * **+libpng.org -- $SHELL -i** - LIBPNG: Portable Network Graphics support, official libpng repository
  *
  * @domain `libpng.org`
  * @programs `libpng-config`, `libpng16-config`, `png-fix-itxt`, `pngfix`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libpng-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i`
+ * @aliases `+libpng.org -- $SHELL -i`
  * @dependencies `zlib.net@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.libpngorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.libpngorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.libpngorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libpng.org"
  * console.log(pkg.description) // "LIBPNG: Portable Network Graphics support, offi..."
  * console.log(pkg.programs)    // ["libpng-config", "libpng16-config", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libpng-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libpngorgPackage = {
+export const libpngorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -79,8 +84,14 @@ export const libpngorgPackage = {
     '1.6.39',
     '1.6.35',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+libpng.org -- $SHELL -i',
+  ] as const,
   fullPath: 'libpng.org' as const,
-  aliases: [] as const,
 }
 
-export type LibpngorgPackage = typeof libpngorgPackage
+export type LibpngorgSHELLiPackage = typeof libpngorgSHELLiPackage

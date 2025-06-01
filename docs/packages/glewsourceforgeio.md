@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `glewinfo`
 - `visualinfo`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+glew.sourceforge.io -- $SHELL -i`
+
 ## Available Versions
 
 <details>

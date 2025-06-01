@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `fx`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `fx`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `rubocop`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `rubocop`
+
 ## Available Versions
 
 <details>

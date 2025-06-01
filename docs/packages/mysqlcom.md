@@ -52,6 +52,12 @@ This package provides the following executable programs:
 - `mysqltest_safe_process`
 - `mysqlxtest`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+mysql.com -- $SHELL -i`
+
 ## Available Versions
 
 <details>

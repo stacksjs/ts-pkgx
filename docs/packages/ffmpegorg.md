@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `ffplay`
 - `ffprobe`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+ffmpeg.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

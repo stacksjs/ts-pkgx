@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `cscope`
 - `ocs`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+cscope.sourceforge.io -- $SHELL -i`
+
 ## Available Versions
 
 <details>

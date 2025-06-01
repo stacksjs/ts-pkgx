@@ -71,7 +71,6 @@ export const gitcryptPackage = {
   versions: [
     '0.7.0',
   ] as const,
-  fullPath: 'agwa.name/git-crypt' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -79,6 +78,7 @@ export const gitcryptPackage = {
   aliases: [
     'git-crypt',
   ] as const,
+  fullPath: 'agwa.name/git-crypt' as const,
 }
 
 export type GitcryptPackage = typeof gitcryptPackage

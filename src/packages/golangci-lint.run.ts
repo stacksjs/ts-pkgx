@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/golangci-lint-run.md
  *
  * @install `sh <(curl https://pkgx.sh) golangci-lint`
+ * @aliases `golangci-lint`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.golangcilintrun
+ * // Access via alias (recommended)
+ * const pkg = pantry.golangcilint
+ * // Or access via domain
+ * const samePkg = pantry.golangcilintrun
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "golangci-lint"
  * console.log(pkg.description) // "Fast linters runner for Go"
  * console.log(pkg.programs)    // ["golangci-lint"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/golangci-lint-run.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const golangcilintrunPackage = {
+export const golangcilintPackage = {
   /**
    * The display name of this package.
    */
@@ -110,8 +115,14 @@ export const golangcilintrunPackage = {
     '1.52.0',
     '1.51.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'golangci-lint',
+  ] as const,
   fullPath: 'golangci-lint.run' as const,
-  aliases: [] as const,
 }
 
-export type GolangcilintrunPackage = typeof golangcilintrunPackage
+export type GolangcilintPackage = typeof golangcilintPackage

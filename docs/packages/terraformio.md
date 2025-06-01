@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `terraform`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `terraform`
+
 ## Available Versions
 
 <details>

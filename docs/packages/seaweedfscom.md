@@ -22,6 +22,13 @@ This package provides the following executable programs:
 
 - `weed`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `weed`
+- `SeaweedFS`
+
 ## Available Versions
 
 <details>

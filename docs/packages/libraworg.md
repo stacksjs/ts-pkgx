@@ -32,6 +32,12 @@ This package provides the following executable programs:
 - `simple_dcraw`
 - `unprocessed_raw`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+libraw.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

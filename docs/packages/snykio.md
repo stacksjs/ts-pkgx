@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `snyk`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `snyk`
+
 ## Available Versions
 
 <details>

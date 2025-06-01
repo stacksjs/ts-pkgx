@@ -30,6 +30,12 @@ This package provides the following executable programs:
 - `run-with-aspell`
 - `word-list-compress`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+aspell.net -- $SHELL -i`
+
 ## Available Versions
 
 <details>

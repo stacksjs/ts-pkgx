@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `lua`
 - `luac`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+lua.org -- $SHELL -i`
+- `lua`
+
 ## Available Versions
 
 <details>

@@ -28,6 +28,12 @@ This package provides the following executable programs:
 - `elementsd`
 - `test_bitcoin`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+elementsproject.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

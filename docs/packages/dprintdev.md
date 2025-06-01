@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `dprint`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `dprint`
+
 ## Available Versions
 
 <details>

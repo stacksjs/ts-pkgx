@@ -30,6 +30,12 @@ This package provides the following executable programs:
 - `nimpretty`
 - `nimble`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+nim-lang.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `kubebuilder`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `kubebuilder`
+
 ## Available Versions
 
 <details>

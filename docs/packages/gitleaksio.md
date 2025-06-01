@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `gitleaks`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `gitleaks`
+
 ## Available Versions
 
 <details>

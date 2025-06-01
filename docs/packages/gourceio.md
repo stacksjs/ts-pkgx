@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `gource`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `gource`
+
 ## Available Versions
 
 <details>

@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/taplo-tamasfe-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) taplo`
+ * @aliases `taplo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.taplotamasfedev
+ * // Access via alias (recommended)
+ * const pkg = pantry.taplo
+ * // Or access via domain
+ * const samePkg = pantry.taplotamasfedev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "taplo"
  * console.log(pkg.description) // "A TOML toolkit written in Rust"
  * console.log(pkg.programs)    // ["taplo"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/taplo-tamasfe-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const taplotamasfedevPackage = {
+export const taploPackage = {
   /**
    * The display name of this package.
    */
@@ -63,8 +68,14 @@ export const taplotamasfedevPackage = {
     '0.8.1',
     '0.7.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'taplo',
+  ] as const,
   fullPath: 'taplo.tamasfe.dev' as const,
-  aliases: [] as const,
 }
 
-export type TaplotamasfedevPackage = typeof taplotamasfedevPackage
+export type TaploPackage = typeof taploPackage

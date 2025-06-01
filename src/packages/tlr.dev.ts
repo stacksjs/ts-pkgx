@@ -75,7 +75,6 @@ export const tellerPackage = {
     '2.0.4',
     '1.5.6',
   ] as const,
-  fullPath: 'tlr.dev' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -83,6 +82,7 @@ export const tellerPackage = {
   aliases: [
     'teller',
   ] as const,
+  fullPath: 'tlr.dev' as const,
 }
 
 export type TellerPackage = typeof tellerPackage

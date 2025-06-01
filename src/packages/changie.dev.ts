@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/changie-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) changie`
+ * @aliases `changie`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.changiedev
+ * // Access via alias (recommended)
+ * const pkg = pantry.changie
+ * // Or access via domain
+ * const samePkg = pantry.changiedev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "changie"
  * console.log(pkg.description) // "Automated changelog tool for preparing releases..."
  * console.log(pkg.programs)    // ["changie"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/changie-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const changiedevPackage = {
+export const changiePackage = {
   /**
    * The display name of this package.
    */
@@ -65,8 +70,14 @@ export const changiedevPackage = {
     '1.19.0',
     '1.18.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'changie',
+  ] as const,
   fullPath: 'changie.dev' as const,
-  aliases: [] as const,
 }
 
-export type ChangiedevPackage = typeof changiedevPackage
+export type ChangiePackage = typeof changiePackage

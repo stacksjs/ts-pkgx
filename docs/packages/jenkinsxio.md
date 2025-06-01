@@ -26,6 +26,8 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
+- `jx`
+- `Jenkins X`
 - `jenkins x`
 
 ## Available Versions

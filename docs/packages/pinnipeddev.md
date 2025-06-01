@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `pinniped`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pinniped`
+
 ## Available Versions
 
 <details>

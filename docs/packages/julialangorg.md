@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `julia`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `julia`
+
 ## Available Versions
 
 <details>

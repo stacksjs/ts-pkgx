@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `mergerfs-fusermount`
 - `mount.mergerfs`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+spawn.link -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `sqlfluff`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `sqlfluff`
+
 ## Available Versions
 
 <details>

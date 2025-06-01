@@ -27,6 +27,12 @@ This package provides the following executable programs:
 - `odbcinst`
 - `slencheck`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+unixodbc.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -1,5 +1,5 @@
 /**
- * **python** - The Python programming language
+ * **+python.org -- $SHELL -i** - The Python programming language
  *
  * @domain `python.org`
  * @programs `python`, `python{{ version.major }}`, `python{{ version.marketing }}`
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/python-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +python.org -- $SHELL -i`
- * @aliases `python`
+ * @aliases `+python.org -- $SHELL -i`, `python`
  * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+8 more)
  * @companions `pip.pypa.io`
  *
@@ -16,7 +16,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.python
+ * const pkg = pantry.pythonorgSHELLi
  * // Or access via domain
  * const samePkg = pantry.pythonorg
  * console.log(pkg === samePkg) // true
@@ -29,7 +29,7 @@
  * @see https://ts-pkgx.netlify.app/packages/python-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pythonPackage = {
+export const pythonorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -234,14 +234,15 @@ export const pythonPackage = {
     '3.3.0',
     '2.7.18',
   ] as const,
-  fullPath: 'python.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
+    '+python.org -- $SHELL -i',
     'python',
   ] as const,
+  fullPath: 'python.org' as const,
 }
 
-export type PythonPackage = typeof pythonPackage
+export type PythonorgSHELLiPackage = typeof pythonorgSHELLiPackage

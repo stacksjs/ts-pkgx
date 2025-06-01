@@ -26,6 +26,12 @@ This package provides the following executable programs:
 - `restydoc`
 - `restydoc-index`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+openresty.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

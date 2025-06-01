@@ -24,6 +24,13 @@ This package provides the following executable programs:
 - `openslide-show-properties`
 - `openslide-write-png`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+openslide.org -- $SHELL -i`
+- `openslide`
+
 ## Available Versions
 
 <details>

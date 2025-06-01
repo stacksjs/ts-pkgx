@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dblab-danvergara-com.md
  *
  * @install `sh <(curl https://pkgx.sh) dblab`
+ * @aliases `dblab`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.dblabdanvergaracom
+ * // Access via alias (recommended)
+ * const pkg = pantry.dblab
+ * // Or access via domain
+ * const samePkg = pantry.dblabdanvergaracom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "dblab"
  * console.log(pkg.description) // "The database client every command line junkie d..."
  * console.log(pkg.programs)    // ["dblab"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dblab-danvergara-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dblabdanvergaracomPackage = {
+export const dblabPackage = {
   /**
    * The display name of this package.
    */
@@ -73,8 +78,14 @@ export const dblabdanvergaracomPackage = {
     '0.22.0',
     '0.21.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'dblab',
+  ] as const,
   fullPath: 'dblab.danvergara.com' as const,
-  aliases: [] as const,
 }
 
-export type DblabdanvergaracomPackage = typeof dblabdanvergaracomPackage
+export type DblabPackage = typeof dblabPackage

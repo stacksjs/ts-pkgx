@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `plantuml`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `plantuml`
+
 ## Available Versions
 
 <details>

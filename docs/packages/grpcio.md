@@ -29,6 +29,13 @@ This package provides the following executable programs:
 - `grpc_php_plugin`
 - `grpc_cli`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+grpc.io -- $SHELL -i`
+- `grpc`
+
 ## Available Versions
 
 <details>

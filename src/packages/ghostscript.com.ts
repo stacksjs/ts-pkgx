@@ -1,5 +1,5 @@
 /**
- * **ghostscript.com** - This is purely for downloads, please check the website for full information
+ * **+ghostscript.com -- $SHELL -i** - This is purely for downloads, please check the website for full information
  *
  * @domain `ghostscript.com`
  * @programs `dvipdf`, `eps2eps`, `gpcl6`, `gpcl6c`, `gpdlc`, ... (+28 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ghostscript-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +ghostscript.com -- $SHELL -i`
+ * @aliases `+ghostscript.com -- $SHELL -i`
  * @dependencies `zlib.net^1.2`, `libpng.org^1.6`, `libjpeg-turbo.org^2`, ... (+8 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.ghostscriptcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.ghostscriptcomSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.ghostscriptcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "ghostscript.com"
  * console.log(pkg.description) // "This is purely for downloads, please check the ..."
  * console.log(pkg.programs)    // ["dvipdf", "eps2eps", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ghostscript-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ghostscriptcomPackage = {
+export const ghostscriptcomSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -114,8 +119,14 @@ export const ghostscriptcomPackage = {
     '10.2.0',
     '10.1.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+ghostscript.com -- $SHELL -i',
+  ] as const,
   fullPath: 'ghostscript.com' as const,
-  aliases: [] as const,
 }
 
-export type GhostscriptcomPackage = typeof ghostscriptcomPackage
+export type GhostscriptcomSHELLiPackage = typeof ghostscriptcomSHELLiPackage

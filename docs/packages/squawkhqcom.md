@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `squawk`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `squawk`
+
 ## Available Versions
 
 <details>

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/assimp-org.md
  *
  * @install `sh <(curl https://pkgx.sh) assimp`
+ * @aliases `assimp`
  * @dependencies `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.assimporg
+ * // Access via alias (recommended)
+ * const pkg = pantry.assimp
+ * // Or access via domain
+ * const samePkg = pantry.assimporg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "assimp"
  * console.log(pkg.description) // "The official Open-Asset-Importer-Library Reposi..."
  * console.log(pkg.programs)    // ["assimp"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/assimp-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const assimporgPackage = {
+export const assimpPackage = {
   /**
    * The display name of this package.
    */
@@ -72,8 +77,14 @@ export const assimporgPackage = {
     '5.3.0',
     '5.2.5',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'assimp',
+  ] as const,
   fullPath: 'assimp.org' as const,
-  aliases: [] as const,
 }
 
-export type AssimporgPackage = typeof assimporgPackage
+export type AssimpPackage = typeof assimpPackage

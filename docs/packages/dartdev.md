@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `dart`
 - `dartaotruntime`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+dart.dev -- $SHELL -i`
+- `dart`
+
 ## Available Versions
 
 <details>

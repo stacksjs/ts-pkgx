@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/doxygen-nl.md
  *
  * @install `sh <(curl https://pkgx.sh) doxygen`
+ * @aliases `doxygen`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.doxygennl
+ * // Access via alias (recommended)
+ * const pkg = pantry.doxygen
+ * // Or access via domain
+ * const samePkg = pantry.doxygennl
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "doxygen"
  * console.log(pkg.description) // "Generate documentation for several programming ..."
  * console.log(pkg.programs)    // ["doxygen"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/doxygen-nl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const doxygennlPackage = {
+export const doxygenPackage = {
   /**
    * The display name of this package.
    */
@@ -68,8 +73,14 @@ export const doxygennlPackage = {
     '1.9.7',
     '1.9.6',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'doxygen',
+  ] as const,
   fullPath: 'doxygen.nl' as const,
-  aliases: [] as const,
 }
 
-export type DoxygennlPackage = typeof doxygennlPackage
+export type DoxygenPackage = typeof doxygenPackage

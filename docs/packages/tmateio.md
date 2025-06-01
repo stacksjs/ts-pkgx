@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `tmate`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `tmate`
+
 ## Available Versions
 
 <details>

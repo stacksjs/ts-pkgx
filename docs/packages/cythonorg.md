@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `cython`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `cython`
+
 ## Available Versions
 
 <details>

@@ -27,6 +27,12 @@ This package provides the following executable programs:
 - `demandoc`
 - `mandoc`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+mandoc.bsd.lv -- $SHELL -i`
+
 ## Available Versions
 
 <details>

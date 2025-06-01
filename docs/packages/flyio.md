@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `fly`
 - `flyctl`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+fly.io -- $SHELL -i`
+- `fly`
+
 ## Available Versions
 
 <details>

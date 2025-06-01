@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `iroh`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `iroh`
+
 ## Available Versions
 
 <details>

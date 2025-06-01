@@ -26,6 +26,12 @@ This package provides the following executable programs:
 - `gdcmpgif`
 - `giftogd2`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+libgd.github.io -- $SHELL -i`
+
 ## Available Versions
 
 <details>

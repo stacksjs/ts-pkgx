@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `ipfs`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ipfs`
+
 ## Available Versions
 
 <details>

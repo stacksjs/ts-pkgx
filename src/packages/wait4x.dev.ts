@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wait4x-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) wait4x`
+ * @aliases `wait4x`
  * @companions `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.wait4xdev
+ * // Access via alias (recommended)
+ * const pkg = pantry.wait4x
+ * // Or access via domain
+ * const samePkg = pantry.wait4xdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "wait4x"
  * console.log(pkg.description) // "Wait4X allows you to wait for a port or a servi..."
  * console.log(pkg.programs)    // ["wait4x"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wait4x-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wait4xdevPackage = {
+export const wait4xPackage = {
   /**
    * The display name of this package.
    */
@@ -72,8 +77,14 @@ export const wait4xdevPackage = {
     '2.14.3',
     '2.14.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'wait4x',
+  ] as const,
   fullPath: 'wait4x.dev' as const,
-  aliases: [] as const,
 }
 
-export type Wait4xdevPackage = typeof wait4xdevPackage
+export type Wait4xPackage = typeof wait4xPackage

@@ -45,6 +45,12 @@ This package provides the following executable programs:
 - `jupyter-troubleshoot`
 - `jupyter-trust`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+jupyter.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

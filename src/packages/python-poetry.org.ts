@@ -91,7 +91,6 @@ export const poetryPackage = {
     '1.4.0',
     '1.3.2',
   ] as const,
-  fullPath: 'python-poetry.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -99,6 +98,7 @@ export const poetryPackage = {
   aliases: [
     'poetry',
   ] as const,
+  fullPath: 'python-poetry.org' as const,
 }
 
 export type PoetryPackage = typeof poetryPackage

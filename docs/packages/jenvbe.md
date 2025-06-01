@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `jenv`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `jenv`
+
 ## Available Versions
 
 <details>

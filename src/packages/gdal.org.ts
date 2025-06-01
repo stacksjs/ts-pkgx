@@ -1,5 +1,5 @@
 /**
- * **gdal.org** - GDAL is an open source MIT licensed translator library for raster and vector geospatial data formats.
+ * **+gdal.org -- $SHELL -i** - GDAL is an open source MIT licensed translator library for raster and vector geospatial data formats.
  *
  * @domain `gdal.org`
  * @programs `gdaladdo`, `gdalbuildvrt`, `gdal-config`, `gdal_contour`, `gdal_create`, ... (+23 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gdal-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +gdal.org -- $SHELL -i`
+ * @aliases `+gdal.org -- $SHELL -i`
  * @dependencies `apache.org/arrow`, `heasarc.gsfc.nasa.gov/cfitsio`, `epsilon-project.sourceforge.io`, ... (+43 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.gdalorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.gdalorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.gdalorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gdal.org"
  * console.log(pkg.description) // "GDAL is an open source MIT licensed translator ..."
  * console.log(pkg.programs)    // ["gdaladdo", "gdalbuildvrt", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gdal-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gdalorgPackage = {
+export const gdalorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -154,8 +159,14 @@ export const gdalorgPackage = {
     '3.7.3',
     '3.7.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+gdal.org -- $SHELL -i',
+  ] as const,
   fullPath: 'gdal.org' as const,
-  aliases: [] as const,
 }
 
-export type GdalorgPackage = typeof gdalorgPackage
+export type GdalorgSHELLiPackage = typeof gdalorgSHELLiPackage

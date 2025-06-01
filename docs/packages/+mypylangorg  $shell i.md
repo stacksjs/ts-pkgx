@@ -1,0 +1,82 @@
+# mypy-lang.org
+
+> Experimental optional static type checker for Python
+
+## Package Information
+
+- **Domain**: `+mypylangorg  $shell i`
+- **Name**: `mypy-lang.org`
+- **Homepage**: Not specified
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mypy-lang.org/package.yml)
+
+## Installation
+
+```bash
+# Install with pkgx
+sh <(curl https://pkgx.sh) +mypy-lang.org -- $SHELL -i
+```
+
+## Programs
+
+This package provides the following executable programs:
+
+- `mypy`
+- `mypyc`
+- `dmypy`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+mypy-lang.org -- $SHELL -i`
+
+## Available Versions
+
+<details>
+<summary>Show all 24 versions</summary>
+
+- `1.16.0`, `1.15.0`, `1.14.1`, `1.14.0`, `1.13.0`
+- `1.12.1`, `1.12.0`, `1.11.2`, `1.11.1`, `1.11.0`
+- `1.10.1`, `1.10.0`, `1.9.0`, `1.8.0`, `1.7.1`
+- `1.7.0`, `1.6.1`, `1.6.0`, `1.5.1`, `1.5.0`
+- `1.4.1`, `1.4.0`, `1.3.0`, `1.2.0`
+
+</details>
+
+**Latest Version**: `1.16.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+pkgx mypy-lang.org@1.16.0
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pkgx.sh^1`
+
+## Usage Examples
+
+```typescript
+import { pantry } from 'ts-pkgx'
+
+// Access this package
+const pkg = pantry.+mypylangorg  $shell i
+
+console.log(`Package: ${pkg.name}`)
+console.log(`Description: ${pkg.description}`)
+console.log(`Programs: ${pkg.programs.join(', ')}`)
+```
+
+## Links
+
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mypy-lang.org/package.yml)
+- [Homepage](#)
+- [Back to Package Catalog](../package-catalog.md)
+
+---
+
+*This documentation was auto-generated from package data.*

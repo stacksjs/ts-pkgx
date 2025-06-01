@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `curl`
 - `curl-config`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+curl.se -- $SHELL -i`
+- `cURL`
+
 ## Available Versions
 
 <details>

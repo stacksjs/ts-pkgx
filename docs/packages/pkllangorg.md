@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `jpkl`
 - `pkl`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+pkl-lang.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

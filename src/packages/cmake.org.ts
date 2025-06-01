@@ -1,5 +1,5 @@
 /**
- * **cmake.org** - Mirror of CMake upstream repository
+ * **+cmake.org -- $SHELL -i** - Mirror of CMake upstream repository
  *
  * @domain `cmake.org`
  * @programs `cmake`, `ccmake`, `cpack`, `ctest`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cmake-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i`
+ * @aliases `+cmake.org -- $SHELL -i`
  * @dependencies `curl.se>=5`, `zlib.net@1`, `sourceware.org/bzip2@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cmakeorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.cmakeorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.cmakeorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "cmake.org"
  * console.log(pkg.description) // "Mirror of CMake upstream repository"
  * console.log(pkg.programs)    // ["cmake", "ccmake", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cmake-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cmakeorgPackage = {
+export const cmakeorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -129,8 +134,14 @@ export const cmakeorgPackage = {
     '3.24.4',
     '3.24.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+cmake.org -- $SHELL -i',
+  ] as const,
   fullPath: 'cmake.org' as const,
-  aliases: [] as const,
 }
 
-export type CmakeorgPackage = typeof cmakeorgPackage
+export type CmakeorgSHELLiPackage = typeof cmakeorgSHELLiPackage

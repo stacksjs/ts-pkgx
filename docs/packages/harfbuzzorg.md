@@ -25,6 +25,12 @@ This package provides the following executable programs:
 - `hb-subset`
 - `hb-view`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+harfbuzz.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

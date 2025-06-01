@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tesseract-ocr-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) tesseract`
+ * @aliases `tesseract`
  * @dependencies `cairographics.org@1`, `unicode.org@71`, `leptonica.org`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tesseractocrgithubio
+ * // Access via alias (recommended)
+ * const pkg = pantry.tesseract
+ * // Or access via domain
+ * const samePkg = pantry.tesseractocrgithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "tesseract"
  * console.log(pkg.description) // "Tesseract Open Source OCR Engine (main repository)"
  * console.log(pkg.programs)    // ["tesseract"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tesseract-ocr-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tesseractocrgithubioPackage = {
+export const tesseractPackage = {
   /**
    * The display name of this package.
    */
@@ -78,8 +83,14 @@ export const tesseractocrgithubioPackage = {
     '5.3.1',
     '5.3.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'tesseract',
+  ] as const,
   fullPath: 'tesseract-ocr.github.io' as const,
-  aliases: [] as const,
 }
 
-export type TesseractocrgithubioPackage = typeof tesseractocrgithubioPackage
+export type TesseractPackage = typeof tesseractPackage

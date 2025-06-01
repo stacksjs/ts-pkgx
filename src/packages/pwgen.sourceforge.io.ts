@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pwgen-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) pwgen`
+ * @aliases `pwgen`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pwgensourceforgeio
+ * // Access via alias (recommended)
+ * const pkg = pantry.pwgen
+ * // Or access via domain
+ * const samePkg = pantry.pwgensourceforgeio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pwgen"
  * console.log(pkg.description) // "Password generator"
  * console.log(pkg.programs)    // ["pwgen"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pwgen-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pwgensourceforgeioPackage = {
+export const pwgenPackage = {
   /**
    * The display name of this package.
    */
@@ -59,8 +64,14 @@ export const pwgensourceforgeioPackage = {
   versions: [
     '2.8.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'pwgen',
+  ] as const,
   fullPath: 'pwgen.sourceforge.io' as const,
-  aliases: [] as const,
 }
 
-export type PwgensourceforgeioPackage = typeof pwgensourceforgeioPackage
+export type PwgenPackage = typeof pwgenPackage

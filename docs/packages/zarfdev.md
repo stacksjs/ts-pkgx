@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `zarf`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `zarf`
+
 ## Available Versions
 
 <details>

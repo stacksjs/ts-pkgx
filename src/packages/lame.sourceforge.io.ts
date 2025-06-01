@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lame-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) lame`
+ * @aliases `lame`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.lamesourceforgeio
+ * // Access via alias (recommended)
+ * const pkg = pantry.lame
+ * // Or access via domain
+ * const samePkg = pantry.lamesourceforgeio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "lame"
  * console.log(pkg.description) // "High quality MPEG Audio Layer III (MP3) encoder"
  * console.log(pkg.programs)    // ["lame"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/lame-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const lamesourceforgeioPackage = {
+export const lamePackage = {
   /**
    * The display name of this package.
    */
@@ -59,8 +64,14 @@ export const lamesourceforgeioPackage = {
   versions: [
     '3.100.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'lame',
+  ] as const,
   fullPath: 'lame.sourceforge.io' as const,
-  aliases: [] as const,
 }
 
-export type LamesourceforgeioPackage = typeof lamesourceforgeioPackage
+export type LamePackage = typeof lamePackage

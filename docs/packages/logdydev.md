@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `logdy`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `logdy`
+
 ## Available Versions
 
 <details>

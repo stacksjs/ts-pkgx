@@ -88,7 +88,6 @@ export const opaPackage = {
     '0.59.0',
     '0.58.0',
   ] as const,
-  fullPath: 'openpolicyagent.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -96,6 +95,7 @@ export const opaPackage = {
   aliases: [
     'opa',
   ] as const,
+  fullPath: 'openpolicyagent.org' as const,
 }
 
 export type OpaPackage = typeof opaPackage

@@ -24,6 +24,13 @@ This package provides the following executable programs:
 - `cgal_create_cmake_script`
 - `cgal_make_macosx_app`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+cgal.org -- $SHELL -i`
+- `cgal`
+
 ## Available Versions
 
 <details>

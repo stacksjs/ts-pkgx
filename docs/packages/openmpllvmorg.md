@@ -26,6 +26,7 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
+- `+openmp.llvm.org -- $SHELL -i`
 - `libomp`
 
 ## Available Versions

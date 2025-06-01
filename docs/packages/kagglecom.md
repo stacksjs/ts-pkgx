@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `kaggle`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `kaggle`
+
 ## Available Versions
 
 <details>

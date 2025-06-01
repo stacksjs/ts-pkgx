@@ -28,6 +28,12 @@ This package provides the following executable programs:
 - `langsmith`
 - `normalizer`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+langchain.com -- $SHELL -i`
+
 ## Available Versions
 
 <details>

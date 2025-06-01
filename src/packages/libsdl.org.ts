@@ -1,18 +1,23 @@
 /**
- * **libsdl.org** - Simple Directmedia Layer
+ * **+libsdl.org -- $SHELL -i** - Simple Directmedia Layer
  *
  * @domain `libsdl.org`
  * @version `3.2.14` (32 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libsdl-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libsdl.org -- $SHELL -i`
+ * @aliases `+libsdl.org -- $SHELL -i`
  * @dependencies `linuxx.org/x11x.org/xcursorx.org/xix.org/xrandrx.org/xfixesx.org/xrenderx.org/xscrnsaverx.org/exts`, `x.org/x11`, `x.org/xcursor`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.libsdlorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.libsdlorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.libsdlorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libsdl.org"
  * console.log(pkg.description) // "Simple Directmedia Layer"
  * console.log(pkg.versions[0]) // "3.2.14" (latest)
@@ -21,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libsdl-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libsdlorgPackage = {
+export const libsdlorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -97,8 +102,14 @@ export const libsdlorgPackage = {
     '2.28.0',
     '2.26.5',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+libsdl.org -- $SHELL -i',
+  ] as const,
   fullPath: 'libsdl.org' as const,
-  aliases: [] as const,
 }
 
-export type LibsdlorgPackage = typeof libsdlorgPackage
+export type LibsdlorgSHELLiPackage = typeof libsdlorgSHELLiPackage

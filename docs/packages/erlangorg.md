@@ -30,6 +30,12 @@ This package provides the following executable programs:
 - `to_erl`
 - `typer`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+erlang.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

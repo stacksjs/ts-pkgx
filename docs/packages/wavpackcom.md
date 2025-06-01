@@ -25,6 +25,12 @@ This package provides the following executable programs:
 - `wvtag`
 - `wvgain`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+wavpack.com -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/consul-io.md
  *
  * @install `sh <(curl https://pkgx.sh) consul`
+ * @aliases `consul`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.consulio
+ * // Access via alias (recommended)
+ * const pkg = pantry.consul
+ * // Or access via domain
+ * const samePkg = pantry.consulio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "consul"
  * console.log(pkg.description) // "Consul is a distributed, highly available, and ..."
  * console.log(pkg.programs)    // ["consul"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/consul-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const consulioPackage = {
+export const consulPackage = {
   /**
    * The display name of this package.
    */
@@ -69,8 +74,14 @@ export const consulioPackage = {
     '1.19.2',
     '1.19.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'consul',
+  ] as const,
   fullPath: 'consul.io' as const,
-  aliases: [] as const,
 }
 
-export type ConsulioPackage = typeof consulioPackage
+export type ConsulPackage = typeof consulPackage

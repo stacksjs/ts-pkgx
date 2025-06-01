@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ktlint-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) ktlint`
+ * @aliases `ktlint`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.ktlintgithubio
+ * // Access via alias (recommended)
+ * const pkg = pantry.ktlint
+ * // Or access via domain
+ * const samePkg = pantry.ktlintgithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "ktlint"
  * console.log(pkg.description) // "An anti-bikeshedding Kotlin linter with built-i..."
  * console.log(pkg.programs)    // ["ktlint"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ktlint-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ktlintgithubioPackage = {
+export const ktlintPackage = {
   /**
    * The display name of this package.
    */
@@ -75,8 +80,14 @@ export const ktlintgithubioPackage = {
     '1.1.1',
     '0.49.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'ktlint',
+  ] as const,
   fullPath: 'ktlint.github.io' as const,
-  aliases: [] as const,
 }
 
-export type KtlintgithubioPackage = typeof ktlintgithubioPackage
+export type KtlintPackage = typeof ktlintPackage

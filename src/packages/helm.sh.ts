@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/helm-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) helm`
+ * @aliases `helm`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.helmsh
+ * // Access via alias (recommended)
+ * const pkg = pantry.helm
+ * // Or access via domain
+ * const samePkg = pantry.helmsh
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "helm"
  * console.log(pkg.description) // "The Kubernetes Package Manager"
  * console.log(pkg.programs)    // ["helm"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/helm-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const helmshPackage = {
+export const helmPackage = {
   /**
    * The display name of this package.
    */
@@ -90,8 +95,14 @@ export const helmshPackage = {
     '3.11.2',
     '3.11.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'helm',
+  ] as const,
   fullPath: 'helm.sh' as const,
-  aliases: [] as const,
 }
 
-export type HelmshPackage = typeof helmshPackage
+export type HelmPackage = typeof helmPackage

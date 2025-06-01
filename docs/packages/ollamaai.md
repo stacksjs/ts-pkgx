@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `ollama`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ollama`
+
 ## Available Versions
 
 <details>

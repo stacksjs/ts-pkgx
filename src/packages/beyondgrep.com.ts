@@ -76,7 +76,6 @@ export const ackPackage = {
     '3.7.0',
     '3.6.0',
   ] as const,
-  fullPath: 'beyondgrep.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -84,6 +83,7 @@ export const ackPackage = {
   aliases: [
     'ack',
   ] as const,
+  fullPath: 'beyondgrep.com' as const,
 }
 
 export type AckPackage = typeof ackPackage

@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `mongod`
 - `mongos`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+mongodb.com -- $SHELL -i`
+
 ## Available Versions
 
 <details>

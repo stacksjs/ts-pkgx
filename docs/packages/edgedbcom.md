@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `edgedb`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `edgedb`
+
 ## Available Versions
 
 <details>

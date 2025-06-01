@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dhall-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) dhall`
+ * @aliases `dhall`
  * @dependencies `invisible-island.net/ncurses^6.4`, `zlib.net^1.3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.dhalllangorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.dhall
+ * // Or access via domain
+ * const samePkg = pantry.dhalllangorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "dhall"
  * console.log(pkg.description) // "Interpreter for the Dhall language"
  * console.log(pkg.programs)    // ["dhall"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dhall-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dhalllangorgPackage = {
+export const dhallPackage = {
   /**
    * The display name of this package.
    */
@@ -68,8 +73,14 @@ export const dhalllangorgPackage = {
     '1.42.2',
     '1.42.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'dhall',
+  ] as const,
   fullPath: 'dhall-lang.org' as const,
-  aliases: [] as const,
 }
 
-export type DhalllangorgPackage = typeof dhalllangorgPackage
+export type DhallPackage = typeof dhallPackage

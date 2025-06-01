@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/packer-io.md
  *
  * @install `sh <(curl https://pkgx.sh) packer`
+ * @aliases `packer`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.packerio
+ * // Access via alias (recommended)
+ * const pkg = pantry.packer
+ * // Or access via domain
+ * const samePkg = pantry.packerio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "packer"
  * console.log(pkg.description) // "Packer is a tool for creating identical machine..."
  * console.log(pkg.programs)    // ["packer"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/packer-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const packerioPackage = {
+export const packerPackage = {
   /**
    * The display name of this package.
    */
@@ -69,8 +74,14 @@ export const packerioPackage = {
     '1.9.3',
     '1.9.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'packer',
+  ] as const,
   fullPath: 'packer.io' as const,
-  aliases: [] as const,
 }
 
-export type PackerioPackage = typeof packerioPackage
+export type PackerPackage = typeof packerPackage

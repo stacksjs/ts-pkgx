@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `render`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `render`
+
 ## Available Versions
 
 <details>

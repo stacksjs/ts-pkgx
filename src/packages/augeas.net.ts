@@ -1,5 +1,5 @@
 /**
- * **augeas.net** - A configuration editing tool and API
+ * **+augeas.net -- $SHELL -i** - A configuration editing tool and API
  *
  * @domain `augeas.net`
  * @programs `augmatch`, `augparse`, `augprint`, `augtool`, `fadot`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/augeas-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +augeas.net -- $SHELL -i`
+ * @aliases `+augeas.net -- $SHELL -i`
  * @dependencies `gnu.org/readline`, `gnome.org/libxml2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.augeasnet
+ * // Access via alias (recommended)
+ * const pkg = pantry.augeasnetSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.augeasnet
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "augeas.net"
  * console.log(pkg.description) // "A configuration editing tool and API"
  * console.log(pkg.programs)    // ["augmatch", "augparse", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/augeas-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const augeasnetPackage = {
+export const augeasnetSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -72,8 +77,14 @@ export const augeasnetPackage = {
     '1.14.1',
     '1.14.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+augeas.net -- $SHELL -i',
+  ] as const,
   fullPath: 'augeas.net' as const,
-  aliases: [] as const,
 }
 
-export type AugeasnetPackage = typeof augeasnetPackage
+export type AugeasnetSHELLiPackage = typeof augeasnetSHELLiPackage

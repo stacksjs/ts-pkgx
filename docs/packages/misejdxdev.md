@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `rtx`
 - `mise`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+mise.jdx.dev -- $SHELL -i`
+- `mise`
+
 ## Available Versions
 
 <details>

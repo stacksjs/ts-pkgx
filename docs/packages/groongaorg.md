@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `groonga`
 - `groonga-suggest-create-dataset`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+groonga.org -- $SHELL -i`
+- `groonga`
+
 ## Available Versions
 
 <details>

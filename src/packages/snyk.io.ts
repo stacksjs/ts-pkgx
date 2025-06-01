@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/snyk-io.md
  *
  * @install `sh <(curl https://pkgx.sh) snyk`
+ * @aliases `snyk`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.snykio
+ * // Access via alias (recommended)
+ * const pkg = pantry.snyk
+ * // Or access via domain
+ * const samePkg = pantry.snykio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "snyk"
  * console.log(pkg.description) // "Scans and monitors projects for security vulner..."
  * console.log(pkg.programs)    // ["snyk"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/snyk-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const snykioPackage = {
+export const snykPackage = {
   /**
    * The display name of this package.
    */
@@ -106,8 +111,14 @@ export const snykioPackage = {
     '1.1281.0',
     '1.1280.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'snyk',
+  ] as const,
   fullPath: 'snyk.io' as const,
-  aliases: [] as const,
 }
 
-export type SnykioPackage = typeof snykioPackage
+export type SnykPackage = typeof snykPackage

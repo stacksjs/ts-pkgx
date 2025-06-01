@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `skaffold`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `skaffold`
+
 ## Available Versions
 
 <details>

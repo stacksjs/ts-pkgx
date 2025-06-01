@@ -85,7 +85,6 @@ export const nvimPackage = {
     '0.8.2',
     '0.8.1',
   ] as const,
-  fullPath: 'neovim.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -93,6 +92,7 @@ export const nvimPackage = {
   aliases: [
     'nvim',
   ] as const,
+  fullPath: 'neovim.io' as const,
 }
 
 export type NvimPackage = typeof nvimPackage

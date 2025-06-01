@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `kubectx`
 - `kubens`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+kubectx.dev -- $SHELL -i`
+- `kube`
+
 ## Available Versions
 
 <details>

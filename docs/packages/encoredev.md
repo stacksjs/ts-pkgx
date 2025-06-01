@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `encore`
 - `git-remote-encore`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+encore.dev -- $SHELL -i`
+
 ## Available Versions
 
 <details>

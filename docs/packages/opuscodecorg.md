@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+opus-codec.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

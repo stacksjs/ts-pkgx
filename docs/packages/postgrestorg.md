@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `postgrest`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `postgrest`
+
 ## Available Versions
 
 <details>

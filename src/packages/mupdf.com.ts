@@ -1,5 +1,5 @@
 /**
- * **mupdf.com** - Lightweight PDF and XPS viewer
+ * **+mupdf.com -- $SHELL -i** - Lightweight PDF and XPS viewer
  *
  * @domain `mupdf.com`
  * @programs `mupdf-gl`, `muraster`, `mutool`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mupdf-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +mupdf.com -- $SHELL -i`
+ * @aliases `+mupdf.com -- $SHELL -i`
  * @dependencies `zlib.net^1`, `openssl.org^1.1`, `info-zip.org/unzip^6`, ... (+19 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mupdfcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.mupdfcomSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.mupdfcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mupdf.com"
  * console.log(pkg.description) // "Lightweight PDF and XPS viewer"
  * console.log(pkg.programs)    // ["mupdf-gl", "muraster", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mupdf-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mupdfcomPackage = {
+export const mupdfcomSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -115,8 +120,14 @@ export const mupdfcomPackage = {
     '1.23.7',
     '1.23.6',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+mupdf.com -- $SHELL -i',
+  ] as const,
   fullPath: 'mupdf.com' as const,
-  aliases: [] as const,
 }
 
-export type MupdfcomPackage = typeof mupdfcomPackage
+export type MupdfcomSHELLiPackage = typeof mupdfcomSHELLiPackage

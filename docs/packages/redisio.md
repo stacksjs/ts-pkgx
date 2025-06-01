@@ -24,6 +24,13 @@ This package provides the following executable programs:
 - `redis-cli`
 - `redis-benchmark`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+redis.io -- $SHELL -i`
+- `redis`
+
 ## Available Versions
 
 <details>

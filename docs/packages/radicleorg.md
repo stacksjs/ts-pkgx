@@ -47,6 +47,12 @@ This package provides the following executable programs:
 - `rad-track`
 - `rad-untrack`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+radicle.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

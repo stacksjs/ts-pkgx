@@ -1,5 +1,5 @@
 /**
- * **wxwidgets.org** - Cross-Platform C++ GUI Library
+ * **+wxwidgets.org -- $SHELL -i** - Cross-Platform C++ GUI Library
  *
  * @domain `wxwidgets.org`
  * @programs `wx-config`, `wxrc`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wxwidgets-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +wxwidgets.org -- $SHELL -i`
+ * @aliases `+wxwidgets.org -- $SHELL -i`
  * @dependencies `libjpeg-turbo.org`, `libpng.org`, `simplesystems.org/libtiff`, ... (+7 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.wxwidgetsorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.wxwidgetsorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.wxwidgetsorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "wxwidgets.org"
  * console.log(pkg.description) // "Cross-Platform C++ GUI Library"
  * console.log(pkg.programs)    // ["wx-config", "wxrc"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wxwidgets-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wxwidgetsorgPackage = {
+export const wxwidgetsorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -82,8 +87,14 @@ export const wxwidgetsorgPackage = {
     '3.2.4',
     '3.2.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+wxwidgets.org -- $SHELL -i',
+  ] as const,
   fullPath: 'wxwidgets.org' as const,
-  aliases: [] as const,
 }
 
-export type WxwidgetsorgPackage = typeof wxwidgetsorgPackage
+export type WxwidgetsorgSHELLiPackage = typeof wxwidgetsorgSHELLiPackage

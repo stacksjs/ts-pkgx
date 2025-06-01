@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/traefik-io.md
  *
  * @install `sh <(curl https://pkgx.sh) traefik`
+ * @aliases `traefik`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.traefikio
+ * // Access via alias (recommended)
+ * const pkg = pantry.traefik
+ * // Or access via domain
+ * const samePkg = pantry.traefikio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "traefik"
  * console.log(pkg.description) // "The Cloud Native Application Proxy"
  * console.log(pkg.programs)    // ["traefik"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/traefik-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const traefikioPackage = {
+export const traefikPackage = {
   /**
    * The display name of this package.
    */
@@ -116,8 +121,14 @@ export const traefikioPackage = {
     '2.10.6',
     '2.10.5',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'traefik',
+  ] as const,
   fullPath: 'traefik.io' as const,
-  aliases: [] as const,
 }
 
-export type TraefikioPackage = typeof traefikioPackage
+export type TraefikPackage = typeof traefikPackage

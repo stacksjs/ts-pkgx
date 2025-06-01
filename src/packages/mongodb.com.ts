@@ -1,5 +1,5 @@
 /**
- * **mongodb.com** - The MongoDB Database
+ * **+mongodb.com -- $SHELL -i** - The MongoDB Database
  *
  * @domain `mongodb.com`
  * @programs `install_compass`, `mongod`, `mongos`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mongodb-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +mongodb.com -- $SHELL -i`
+ * @aliases `+mongodb.com -- $SHELL -i`
  * @dependencies `curl.se@8`, `openssl.org@1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mongodbcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.mongodbcomSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.mongodbcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mongodb.com"
  * console.log(pkg.description) // "The MongoDB Database"
  * console.log(pkg.programs)    // ["install_compass", "mongod", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mongodb-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mongodbcomPackage = {
+export const mongodbcomSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -99,8 +104,14 @@ export const mongodbcomPackage = {
     '6.0.18',
     '6.0.17',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+mongodb.com -- $SHELL -i',
+  ] as const,
   fullPath: 'mongodb.com' as const,
-  aliases: [] as const,
 }
 
-export type MongodbcomPackage = typeof mongodbcomPackage
+export type MongodbcomSHELLiPackage = typeof mongodbcomSHELLiPackage

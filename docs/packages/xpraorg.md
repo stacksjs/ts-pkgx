@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `xpra`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `xpra`
+
 ## Available Versions
 
 <details>

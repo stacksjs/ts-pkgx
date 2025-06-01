@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `lftp`
 - `lftpget`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+lftp.yar.ru -- $SHELL -i`
+- `lftp`
+
 ## Available Versions
 
 <details>

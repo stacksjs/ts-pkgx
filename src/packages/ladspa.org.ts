@@ -1,5 +1,5 @@
 /**
- * **ladspa.org** - Linux Audio Developer's Simple Plugin
+ * **+ladspa.org -- $SHELL -i** - Linux Audio Developer's Simple Plugin
  *
  * @domain `ladspa.org`
  * @programs `analyseplugin`, `applyplugin`, `listplugins`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ladspa-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +ladspa.org -- $SHELL -i`
+ * @aliases `+ladspa.org -- $SHELL -i`
  * @dependencies `github.com/libsndfile/libsndfile^1.2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.ladspaorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.ladspaorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.ladspaorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "ladspa.org"
  * console.log(pkg.description) // "Linux Audio Developer's Simple Plugin"
  * console.log(pkg.programs)    // ["analyseplugin", "applyplugin", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ladspa-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ladspaorgPackage = {
+export const ladspaorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -68,8 +73,14 @@ export const ladspaorgPackage = {
   versions: [
     '1.17.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+ladspa.org -- $SHELL -i',
+  ] as const,
   fullPath: 'ladspa.org' as const,
-  aliases: [] as const,
 }
 
-export type LadspaorgPackage = typeof ladspaorgPackage
+export type LadspaorgSHELLiPackage = typeof ladspaorgSHELLiPackage

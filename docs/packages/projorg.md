@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `proj`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `proj`
+
 ## Available Versions
 
 <details>

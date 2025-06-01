@@ -1,5 +1,5 @@
 /**
- * **openslide** - C library to read whole-slide images (a.k.a. virtual slides)
+ * **+openslide.org -- $SHELL -i** - C library to read whole-slide images (a.k.a. virtual slides)
  *
  * @domain `openslide.org`
  * @programs `openslide-quickhash1sum`, `openslide-show-properties`, `openslide-write-png`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openslide-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openslide.org -- $SHELL -i`
+ * @aliases `+openslide.org -- $SHELL -i`, `openslide`
  * @dependencies `cairographics.org`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.openslideorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.openslideorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.openslideorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "openslide"
  * console.log(pkg.description) // "C library to read whole-slide images (a.k.a. vi..."
  * console.log(pkg.programs)    // ["openslide-quickhash1sum", "openslide-show-properties", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openslide-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openslideorgPackage = {
+export const openslideorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -77,8 +82,15 @@ export const openslideorgPackage = {
     '4.0.0',
     '3.4.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+openslide.org -- $SHELL -i',
+    'openslide',
+  ] as const,
   fullPath: 'openslide.org' as const,
-  aliases: [] as const,
 }
 
-export type OpenslideorgPackage = typeof openslideorgPackage
+export type OpenslideorgSHELLiPackage = typeof openslideorgSHELLiPackage

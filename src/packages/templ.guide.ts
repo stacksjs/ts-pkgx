@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/templ-guide.md
  *
  * @install `sh <(curl https://pkgx.sh) templ`
+ * @aliases `templ`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.templguide
+ * // Access via alias (recommended)
+ * const pkg = pantry.templ
+ * // Or access via domain
+ * const samePkg = pantry.templguide
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "templ"
  * console.log(pkg.description) // "A language for writing HTML user interfaces in Go."
  * console.log(pkg.programs)    // ["templ"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/templ-guide.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const templguidePackage = {
+export const templPackage = {
   /**
    * The display name of this package.
    */
@@ -83,8 +88,14 @@ export const templguidePackage = {
     '0.2.501',
     '0.2.476',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'templ',
+  ] as const,
   fullPath: 'templ.guide' as const,
-  aliases: [] as const,
 }
 
-export type TemplguidePackage = typeof templguidePackage
+export type TemplPackage = typeof templPackage

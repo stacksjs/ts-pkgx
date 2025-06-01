@@ -26,6 +26,12 @@ This package provides the following executable programs:
 - `kotlinc-js`
 - `kotlinc-jvm`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+kotlinlang.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

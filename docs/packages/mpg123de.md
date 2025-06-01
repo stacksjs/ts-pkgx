@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `mpg123`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `mpg123`
+
 ## Available Versions
 
 <details>

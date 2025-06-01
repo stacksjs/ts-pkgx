@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `qpdf`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `qpdf`
+
 ## Available Versions
 
 <details>

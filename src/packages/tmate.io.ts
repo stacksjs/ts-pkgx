@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tmate-io.md
  *
  * @install `sh <(curl https://pkgx.sh) tmate`
+ * @aliases `tmate`
  * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses@6`, `msgpack.org@6`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tmateio
+ * // Access via alias (recommended)
+ * const pkg = pantry.tmate
+ * // Or access via domain
+ * const samePkg = pantry.tmateio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "tmate"
  * console.log(pkg.description) // "Instant Terminal Sharing"
  * console.log(pkg.programs)    // ["tmate"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tmate-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tmateioPackage = {
+export const tmatePackage = {
   /**
    * The display name of this package.
    */
@@ -69,8 +74,14 @@ export const tmateioPackage = {
   versions: [
     '2.4.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'tmate',
+  ] as const,
   fullPath: 'tmate.io' as const,
-  aliases: [] as const,
 }
 
-export type TmateioPackage = typeof tmateioPackage
+export type TmatePackage = typeof tmatePackage

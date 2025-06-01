@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `wait4x`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `wait4x`
+
 ## Available Versions
 
 <details>

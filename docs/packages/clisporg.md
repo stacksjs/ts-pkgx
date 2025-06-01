@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `clisp`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `clisp`
+
 ## Available Versions
 
 <details>

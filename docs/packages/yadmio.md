@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `yadm`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `yadm`
+
 ## Available Versions
 
 <details>

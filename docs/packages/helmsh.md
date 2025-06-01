@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `helm`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `helm`
+
 ## Available Versions
 
 <details>

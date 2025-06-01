@@ -35,6 +35,7 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
+- `+openldap.org -- $SHELL -i`
 - `ldap`
 
 ## Available Versions

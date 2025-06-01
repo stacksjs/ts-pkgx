@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `yt-dlp`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `yt-dlp`
+
 ## Available Versions
 
 <details>

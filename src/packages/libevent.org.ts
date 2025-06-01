@@ -1,18 +1,23 @@
 /**
- * **libevent.org** - Event notification library
+ * **+libevent.org -- $SHELL -i** - Event notification library
  *
  * @domain `libevent.org`
  * @version `2.1.12` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libevent-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libevent.org -- $SHELL -i`
+ * @aliases `+libevent.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.libeventorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.libeventorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.libeventorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libevent.org"
  * console.log(pkg.description) // "Event notification library"
  * console.log(pkg.versions[0]) // "2.1.12" (latest)
@@ -21,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libevent-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libeventorgPackage = {
+export const libeventorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -58,8 +63,14 @@ export const libeventorgPackage = {
   versions: [
     '2.1.12',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+libevent.org -- $SHELL -i',
+  ] as const,
   fullPath: 'libevent.org' as const,
-  aliases: [] as const,
 }
 
-export type LibeventorgPackage = typeof libeventorgPackage
+export type LibeventorgSHELLiPackage = typeof libeventorgSHELLiPackage

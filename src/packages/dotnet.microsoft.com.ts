@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dotnet-microsoft-com.md
  *
  * @install `sh <(curl https://pkgx.sh) dotnet`
+ * @aliases `dotnet`
  * @dependencies `linuxunicode.org^71openssl.org`, `unicode.org^71`, `openssl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.dotnetmicrosoftcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.dotnet
+ * // Or access via domain
+ * const samePkg = pantry.dotnetmicrosoftcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "dotnet"
  * console.log(pkg.description) // "Home of .NET's Virtual Monolithic Repository wh..."
  * console.log(pkg.programs)    // ["dotnet"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dotnet-microsoft-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dotnetmicrosoftcomPackage = {
+export const dotnetPackage = {
   /**
    * The display name of this package.
    */
@@ -99,8 +104,14 @@ export const dotnetmicrosoftcomPackage = {
     '6.0.131',
     '6.0.130',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'dotnet',
+  ] as const,
   fullPath: 'dotnet.microsoft.com' as const,
-  aliases: [] as const,
 }
 
-export type DotnetmicrosoftcomPackage = typeof dotnetmicrosoftcomPackage
+export type DotnetPackage = typeof dotnetPackage

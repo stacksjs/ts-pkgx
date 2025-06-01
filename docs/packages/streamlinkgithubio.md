@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `streamlink`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `streamlink`
+
 ## Available Versions
 
 <details>

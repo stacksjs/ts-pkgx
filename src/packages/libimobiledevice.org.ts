@@ -74,7 +74,6 @@ export const idevicedatePackage = {
   versions: [
     '1.3.0',
   ] as const,
-  fullPath: 'libimobiledevice.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -82,6 +81,7 @@ export const idevicedatePackage = {
   aliases: [
     'idevicedate',
   ] as const,
+  fullPath: 'libimobiledevice.org' as const,
 }
 
 export type IdevicedatePackage = typeof idevicedatePackage

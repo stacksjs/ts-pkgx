@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `v`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `v`
+
 ## Available Versions
 
 <details>

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sshx-io.md
  *
  * @install `sh <(curl https://pkgx.sh) sshx`
+ * @aliases `sshx`
  * @dependencies `protobuf.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.sshxio
+ * // Access via alias (recommended)
+ * const pkg = pantry.sshx
+ * // Or access via domain
+ * const samePkg = pantry.sshxio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "sshx"
  * console.log(pkg.description) // "Fast, collaborative live terminal sharing over ..."
  * console.log(pkg.programs)    // ["sshx"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sshx-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sshxioPackage = {
+export const sshxPackage = {
   /**
    * The display name of this package.
    */
@@ -66,8 +71,14 @@ export const sshxioPackage = {
   versions: [
     '2023.11.14',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'sshx',
+  ] as const,
   fullPath: 'sshx.io' as const,
-  aliases: [] as const,
 }
 
-export type SshxioPackage = typeof sshxioPackage
+export type SshxPackage = typeof sshxPackage

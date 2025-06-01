@@ -71,7 +71,6 @@ export const scwPackage = {
     '2.33.0',
     '2.32.1',
   ] as const,
-  fullPath: 'scaleway.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -79,6 +78,7 @@ export const scwPackage = {
   aliases: [
     'scw',
   ] as const,
+  fullPath: 'scaleway.com' as const,
 }
 
 export type ScwPackage = typeof scwPackage

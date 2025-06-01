@@ -31,6 +31,12 @@ This package provides the following executable programs:
 - `rabbitmq-upgrade`
 - `vmware-rabbitmq`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+rabbitmq.com -- $SHELL -i`
+
 ## Available Versions
 
 <details>

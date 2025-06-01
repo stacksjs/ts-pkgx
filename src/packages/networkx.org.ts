@@ -1,18 +1,23 @@
 /**
- * **networkx.org** - Network Analysis in Python
+ * **+networkx.org -- $SHELL -i** - Network Analysis in Python
  *
  * @domain `networkx.org`
  * @version `3.5.0` (6 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/networkx-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +networkx.org -- $SHELL -i`
+ * @aliases `+networkx.org -- $SHELL -i`
  * @dependencies `python.org>=3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.networkxorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.networkxorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.networkxorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "networkx.org"
  * console.log(pkg.description) // "Network Analysis in Python"
  * console.log(pkg.versions[0]) // "3.5.0" (latest)
@@ -21,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/networkx-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const networkxorgPackage = {
+export const networkxorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -63,8 +68,14 @@ export const networkxorgPackage = {
     '3.3.0',
     '3.2.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+networkx.org -- $SHELL -i',
+  ] as const,
   fullPath: 'networkx.org' as const,
-  aliases: [] as const,
 }
 
-export type NetworkxorgPackage = typeof networkxorgPackage
+export type NetworkxorgSHELLiPackage = typeof networkxorgSHELLiPackage

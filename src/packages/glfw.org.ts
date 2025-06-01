@@ -1,18 +1,23 @@
 /**
- * **glfw.org** - A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input
+ * **+glfw.org -- $SHELL -i** - A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input
  *
  * @domain `glfw.org`
  * @version `3.4.0` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/glfw-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i`
+ * @aliases `+glfw.org -- $SHELL -i`
  * @dependencies `linuxfreeglut.sourceforge.io^3.4x.org/xcursor^1.2xkbcommon.org^1.0mesa3d.org^23.3`, `freeglut.sourceforge.io^3.4`, `x.org/xcursor^1.2`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.glfworg
+ * // Access via alias (recommended)
+ * const pkg = pantry.glfworgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.glfworg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "glfw.org"
  * console.log(pkg.description) // "A multi-platform library for OpenGL, OpenGL ES,..."
  * console.log(pkg.versions[0]) // "3.4.0" (latest)
@@ -21,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/glfw-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const glfworgPackage = {
+export const glfworgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -64,8 +69,14 @@ export const glfworgPackage = {
     '3.3.10',
     '3.3.9',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+glfw.org -- $SHELL -i',
+  ] as const,
   fullPath: 'glfw.org' as const,
-  aliases: [] as const,
 }
 
-export type GlfworgPackage = typeof glfworgPackage
+export type GlfworgSHELLiPackage = typeof glfworgSHELLiPackage

@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `swig`
 - `ccache-swig`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+swig.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

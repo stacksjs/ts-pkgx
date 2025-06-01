@@ -28,6 +28,12 @@ This package provides the following executable programs:
 - `mpcgain`
 - `wavcmp`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+musepack.net -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `nixpacks`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `nixpacks`
+
 ## Available Versions
 
 <details>

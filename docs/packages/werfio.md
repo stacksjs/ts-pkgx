@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `werf`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `werf`
+
 ## Available Versions
 
 <details>

@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `etcd`
 - `etcdctl`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+etcd.io -- $SHELL -i`
+- `etcd`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `zig`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `zig`
+
 ## Available Versions
 
 <details>

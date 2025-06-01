@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/julialang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) julia`
+ * @aliases `julia`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.julialangorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.julia
+ * // Or access via domain
+ * const samePkg = pantry.julialangorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "julia"
  * console.log(pkg.description) // "The Julia Programming Language"
  * console.log(pkg.programs)    // ["julia"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/julialang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const julialangorgPackage = {
+export const juliaPackage = {
   /**
    * The display name of this package.
    */
@@ -76,8 +81,14 @@ export const julialangorgPackage = {
     '1.9.4',
     '1.9.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'julia',
+  ] as const,
   fullPath: 'julialang.org' as const,
-  aliases: [] as const,
 }
 
-export type JulialangorgPackage = typeof julialangorgPackage
+export type JuliaPackage = typeof juliaPackage

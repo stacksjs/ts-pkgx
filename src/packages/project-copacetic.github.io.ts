@@ -68,7 +68,6 @@ export const copaPackage = {
     '0.7.0',
     '0.6.2',
   ] as const,
-  fullPath: 'project-copacetic.github.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -76,6 +75,7 @@ export const copaPackage = {
   aliases: [
     'copa',
   ] as const,
+  fullPath: 'project-copacetic.github.io' as const,
 }
 
 export type CopaPackage = typeof copaPackage

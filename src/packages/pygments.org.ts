@@ -78,7 +78,6 @@ export const pygmentizePackage = {
     '2.15.0',
     '2.14.0',
   ] as const,
-  fullPath: 'pygments.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -86,6 +85,7 @@ export const pygmentizePackage = {
   aliases: [
     'pygmentize',
   ] as const,
+  fullPath: 'pygments.org' as const,
 }
 
 export type PygmentizePackage = typeof pygmentizePackage

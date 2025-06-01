@@ -1,5 +1,5 @@
 /**
- * **npmjs.com** - the package manager for JavaScript
+ * **+npmjs.com -- $SHELL -i** - the package manager for JavaScript
  *
  * @domain `npmjs.com`
  * @programs `npm`, `npx`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/npmjs-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i`
+ * @aliases `+npmjs.com -- $SHELL -i`
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.npmjscom
+ * // Access via alias (recommended)
+ * const pkg = pantry.npmjscomSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.npmjscom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "npmjs.com"
  * console.log(pkg.description) // "the package manager for JavaScript"
  * console.log(pkg.programs)    // ["npm", "npx"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/npmjs-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const npmjscomPackage = {
+export const npmjscomSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -125,8 +130,14 @@ export const npmjscomPackage = {
     '8.19.4',
     '8.19.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+npmjs.com -- $SHELL -i',
+  ] as const,
   fullPath: 'npmjs.com' as const,
-  aliases: [] as const,
 }
 
-export type NpmjscomPackage = typeof npmjscomPackage
+export type NpmjscomSHELLiPackage = typeof npmjscomSHELLiPackage

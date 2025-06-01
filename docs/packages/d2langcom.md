@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `d2`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `d2`
+
 ## Available Versions
 
 <details>

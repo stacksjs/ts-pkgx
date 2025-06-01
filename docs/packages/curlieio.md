@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `curlie`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `curlie`
+
 ## Available Versions
 
 <details>

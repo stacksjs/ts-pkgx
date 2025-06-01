@@ -104,7 +104,6 @@ export const istioctlPackage = {
     '1.19.10',
     '1.19.9',
   ] as const,
-  fullPath: 'istio.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -112,6 +111,7 @@ export const istioctlPackage = {
   aliases: [
     'istioctl',
   ] as const,
+  fullPath: 'istio.io' as const,
 }
 
 export type IstioctlPackage = typeof istioctlPackage

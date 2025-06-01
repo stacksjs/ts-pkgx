@@ -1,5 +1,5 @@
 /**
- * **linux-pam.org** - Linux PAM (Pluggable Authentication Modules for Linux) project
+ * **+linux-pam.org -- $SHELL -i** - Linux PAM (Pluggable Authentication Modules for Linux) project
  *
  * @domain `linux-pam.org`
  * @programs `faillock`, `mkhomedir_helper`, `pam_namespace_helper`, `pam_timestamp_check`, `unix_chkpwd`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/linux-pam-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +linux-pam.org -- $SHELL -i`
+ * @aliases `+linux-pam.org -- $SHELL -i`
  * @dependencies `github.com/thkukuk/libnsl`, `sourceforge.net/libtirpc`, `github.com/besser82/libxcrypt`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.linuxpamorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.linuxpamorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.linuxpamorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "linux-pam.org"
  * console.log(pkg.description) // "Linux PAM (Pluggable Authentication Modules for..."
  * console.log(pkg.programs)    // ["faillock", "mkhomedir_helper", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/linux-pam-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const linuxpamorgPackage = {
+export const linuxpamorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -75,8 +80,14 @@ export const linuxpamorgPackage = {
     '1.6.0',
     '1.5.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+linux-pam.org -- $SHELL -i',
+  ] as const,
   fullPath: 'linux-pam.org' as const,
-  aliases: [] as const,
 }
 
-export type LinuxpamorgPackage = typeof linuxpamorgPackage
+export type LinuxpamorgSHELLiPackage = typeof linuxpamorgSHELLiPackage

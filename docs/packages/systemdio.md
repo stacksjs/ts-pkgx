@@ -76,6 +76,12 @@ This package provides the following executable programs:
 - `shutdown`
 - `telinit`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+systemd.io -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `ots`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ots`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `flipt`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `flipt`
+
 ## Available Versions
 
 <details>

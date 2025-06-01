@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `pytest`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pytest`
+
 ## Available Versions
 
 <details>

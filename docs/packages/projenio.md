@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `projen`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `projen`
+
 ## Available Versions
 
 <details>

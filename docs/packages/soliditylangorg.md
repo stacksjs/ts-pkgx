@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `solc`
 - `yul-phaser`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+soliditylang.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `vite`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `vite`
+
 ## Available Versions
 
 <details>

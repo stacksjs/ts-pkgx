@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `cointop`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `cointop`
+
 ## Available Versions
 
 <details>

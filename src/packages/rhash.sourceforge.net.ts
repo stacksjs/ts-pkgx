@@ -1,5 +1,5 @@
 /**
- * **rhash.sourceforge.net** - Utility for computing and verifying hash sums of files
+ * **+rhash.sourceforge.net -- $SHELL -i** - Utility for computing and verifying hash sums of files
  *
  * @domain `rhash.sourceforge.net`
  * @programs `whirlpool-hash`, `tiger-hash`, `tth-hash`, `rhash`, `sfv-hash`, ... (+7 more)
@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rhash-sourceforge-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +rhash.sourceforge.net -- $SHELL -i`
+ * @aliases `+rhash.sourceforge.net -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.rhashsourceforgenet
+ * // Access via alias (recommended)
+ * const pkg = pantry.rhashsourceforgenetSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.rhashsourceforgenet
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "rhash.sourceforge.net"
  * console.log(pkg.description) // "Utility for computing and verifying hash sums o..."
  * console.log(pkg.programs)    // ["whirlpool-hash", "tiger-hash", ...]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rhash-sourceforge-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rhashsourceforgenetPackage = {
+export const rhashsourceforgenetSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -73,8 +78,14 @@ export const rhashsourceforgenetPackage = {
     '1.4.4',
     '1.4.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+rhash.sourceforge.net -- $SHELL -i',
+  ] as const,
   fullPath: 'rhash.sourceforge.net' as const,
-  aliases: [] as const,
 }
 
-export type RhashsourceforgenetPackage = typeof rhashsourceforgenetPackage
+export type RhashsourceforgenetSHELLiPackage = typeof rhashsourceforgenetSHELLiPackage

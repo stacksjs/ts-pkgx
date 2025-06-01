@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `tesseract`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `tesseract`
+
 ## Available Versions
 
 <details>

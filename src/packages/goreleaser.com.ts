@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/goreleaser-com.md
  *
  * @install `sh <(curl https://pkgx.sh) goreleaser`
+ * @aliases `goreleaser`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.goreleasercom
+ * // Access via alias (recommended)
+ * const pkg = pantry.goreleaser
+ * // Or access via domain
+ * const samePkg = pantry.goreleasercom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "goreleaser"
  * console.log(pkg.description) // "Deliver Go binaries as fast and easily as possible"
  * console.log(pkg.programs)    // ["goreleaser"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/goreleaser-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const goreleasercomPackage = {
+export const goreleaserPackage = {
   /**
    * The display name of this package.
    */
@@ -96,8 +101,14 @@ export const goreleasercomPackage = {
     '1.21.0',
     '1.20.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'goreleaser',
+  ] as const,
   fullPath: 'goreleaser.com' as const,
-  aliases: [] as const,
 }
 
-export type GoreleasercomPackage = typeof goreleasercomPackage
+export type GoreleaserPackage = typeof goreleaserPackage

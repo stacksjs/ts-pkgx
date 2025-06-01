@@ -26,6 +26,12 @@ This package provides the following executable programs:
 - `augtool`
 - `fadot`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+augeas.net -- $SHELL -i`
+
 ## Available Versions
 
 <details>

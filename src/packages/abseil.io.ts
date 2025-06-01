@@ -1,17 +1,22 @@
 /**
- * **abseil.io** - Abseil Common Libraries (C++)
+ * **+abseil.io -- $SHELL -i** - Abseil Common Libraries (C++)
  *
  * @domain `abseil.io`
  * @version `20250512.0.0` (17 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/abseil-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i`
+ * @aliases `+abseil.io -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.abseilio
+ * // Access via alias (recommended)
+ * const pkg = pantry.abseilioSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.abseilio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "abseil.io"
  * console.log(pkg.description) // "Abseil Common Libraries (C++)"
  * console.log(pkg.versions[0]) // "20250512.0.0" (latest)
@@ -20,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/abseil-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const abseilioPackage = {
+export const abseilioSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -67,8 +72,14 @@ export const abseilioPackage = {
     '20230125.2.0',
     '20220623.2.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+abseil.io -- $SHELL -i',
+  ] as const,
   fullPath: 'abseil.io' as const,
-  aliases: [] as const,
 }
 
-export type AbseilioPackage = typeof abseilioPackage
+export type AbseilioSHELLiPackage = typeof abseilioSHELLiPackage

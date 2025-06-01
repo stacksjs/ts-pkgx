@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `coredns`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `coredns`
+
 ## Available Versions
 
 <details>

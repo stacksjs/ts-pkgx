@@ -1,0 +1,77 @@
+# attrs.org
+
+> Python Classes Without Boilerplate
+
+## Package Information
+
+- **Domain**: `+attrsorg  $shell i`
+- **Name**: `attrs.org`
+- **Homepage**: Not specified
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/attrs.org/package.yml)
+
+## Installation
+
+```bash
+# Install with pkgx
+sh <(curl https://pkgx.sh) +attrs.org -- $SHELL -i
+```
+
+## Programs
+
+This package provides the following executable programs:
+
+*No programs specified*
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+attrs.org -- $SHELL -i`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `25.3.0`, `25.2.0`, `25.1.0`, `24.3.0`, `24.2.0`
+- `24.1.0`, `23.2.0`
+
+</details>
+
+**Latest Version**: `25.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+pkgx attrs.org@25.3.0
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org~3.11`
+
+## Usage Examples
+
+```typescript
+import { pantry } from 'ts-pkgx'
+
+// Access this package
+const pkg = pantry.+attrsorg  $shell i
+
+console.log(`Package: ${pkg.name}`)
+console.log(`Description: ${pkg.description}`)
+console.log(`Programs: ${pkg.programs.join(', ')}`)
+```
+
+## Links
+
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/attrs.org/package.yml)
+- [Homepage](#)
+- [Back to Package Catalog](../package-catalog.md)
+
+---
+
+*This documentation was auto-generated from package data.*

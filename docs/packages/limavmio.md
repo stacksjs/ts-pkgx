@@ -28,6 +28,12 @@ This package provides the following executable programs:
 - `nerdctl.lima`
 - `podman.lima`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+lima-vm.io -- $SHELL -i`
+
 ## Available Versions
 
 <details>

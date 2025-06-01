@@ -7,6 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tinygo-org.md
  *
  * @install `sh <(curl https://pkgx.sh) tinygo`
+ * @aliases `tinygo`
  * @dependencies `go.dev`
  * @companions `llvm.org`
  *
@@ -14,7 +15,11 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tinygoorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.tinygo
+ * // Or access via domain
+ * const samePkg = pantry.tinygoorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "tinygo"
  * console.log(pkg.description) // "Go compiler for small places. Microcontrollers,..."
  * console.log(pkg.programs)    // ["tinygo"]
@@ -24,7 +29,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tinygo-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tinygoorgPackage = {
+export const tinygoPackage = {
   /**
    * The display name of this package.
    */
@@ -79,8 +84,14 @@ export const tinygoorgPackage = {
     '0.32.0',
     '0.31.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'tinygo',
+  ] as const,
   fullPath: 'tinygo.org' as const,
-  aliases: [] as const,
 }
 
-export type TinygoorgPackage = typeof tinygoorgPackage
+export type TinygoPackage = typeof tinygoPackage

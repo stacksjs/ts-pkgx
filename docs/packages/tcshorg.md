@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `csh`
 - `tcsh`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+tcsh.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

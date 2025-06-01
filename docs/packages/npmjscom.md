@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `npm`
 - `npx`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+npmjs.com -- $SHELL -i`
+
 ## Available Versions
 
 <details>

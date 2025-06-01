@@ -22,7 +22,7 @@ Packages related to development tools.
 
 ---
 
-### [gitscmorg](../packages/gitscmorg.md) ()
+### [gitscmorg](../packages/gitscmorg.md) (+git-scm.org -- $SHELL -i, git)
 
 Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
 
@@ -42,7 +42,7 @@ Ambitious Vim-fork focused on extensibility and agility
 
 ---
 
-### [prettierio](../packages/prettierio.md) ()
+### [prettierio](../packages/prettierio.md) (prettier)
 
 Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 
@@ -52,7 +52,7 @@ Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 
 ---
 
-### [vimorg](../packages/vimorg.md) ()
+### [vimorg](../packages/vimorg.md) (+vim.org -- $SHELL -i)
 
 The official Vim repository
 

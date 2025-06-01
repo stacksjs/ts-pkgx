@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cython-org.md
  *
  * @install `sh <(curl https://pkgx.sh) cython`
+ * @aliases `cython`
  * @dependencies `python.org<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cythonorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.cython
+ * // Or access via domain
+ * const samePkg = pantry.cythonorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "cython"
  * console.log(pkg.description) // "Compiler for writing C extensions for the Pytho..."
  * console.log(pkg.programs)    // ["cython"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cython-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cythonorgPackage = {
+export const cythonPackage = {
   /**
    * The display name of this package.
    */
@@ -84,8 +89,14 @@ export const cythonorgPackage = {
     '0.29.36',
     '0.29.35',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'cython',
+  ] as const,
   fullPath: 'cython.org' as const,
-  aliases: [] as const,
 }
 
-export type CythonorgPackage = typeof cythonorgPackage
+export type CythonPackage = typeof cythonPackage

@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/terraform-io.md
  *
  * @install `sh <(curl https://pkgx.sh) terraform`
+ * @aliases `terraform`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.terraformio
+ * // Access via alias (recommended)
+ * const pkg = pantry.terraform
+ * // Or access via domain
+ * const samePkg = pantry.terraformio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "terraform"
  * console.log(pkg.description) // "Terraform enables you to safely and predictably..."
  * console.log(pkg.programs)    // ["terraform"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/terraform-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const terraformioPackage = {
+export const terraformPackage = {
   /**
    * The display name of this package.
    */
@@ -132,8 +137,14 @@ export const terraformioPackage = {
     '0.12.0',
     '0.11.12',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'terraform',
+  ] as const,
   fullPath: 'terraform.io' as const,
-  aliases: [] as const,
 }
 
-export type TerraformioPackage = typeof terraformioPackage
+export type TerraformPackage = typeof terraformPackage

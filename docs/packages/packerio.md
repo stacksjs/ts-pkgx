@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `packer`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `packer`
+
 ## Available Versions
 
 <details>

@@ -336,6 +336,12 @@ This package provides the following executable programs:
 - `yuy2topam`
 - `zeisstopnm`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+netpbm.sourceforge.net -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -73,7 +73,6 @@ export const jagsPackage = {
   versions: [
     '4.3.2',
   ] as const,
-  fullPath: 'mcmc-jags.sourceforge.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -81,6 +80,7 @@ export const jagsPackage = {
   aliases: [
     'jags',
   ] as const,
+  fullPath: 'mcmc-jags.sourceforge.io' as const,
 }
 
 export type JagsPackage = typeof jagsPackage

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `k3d`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `k3d`
+
 ## Available Versions
 
 <details>

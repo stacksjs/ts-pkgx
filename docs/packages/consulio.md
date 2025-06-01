@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `consul`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `consul`
+
 ## Available Versions
 
 <details>

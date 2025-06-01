@@ -1,5 +1,5 @@
 /**
- * **composer** - Dependency Manager for PHP
+ * **+getcomposer.org -- $SHELL -i** - Dependency Manager for PHP
  *
  * @domain `getcomposer.org`
  * @programs `composer`, `composer.phar`
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getcomposer-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +getcomposer.org -- $SHELL -i`
- * @aliases `composer`
+ * @aliases `+getcomposer.org -- $SHELL -i`, `composer`
  * @dependencies `php.net`
  *
  * @example
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.composer
+ * const pkg = pantry.getcomposerorgSHELLi
  * // Or access via domain
  * const samePkg = pantry.getcomposerorg
  * console.log(pkg === samePkg) // true
@@ -28,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/getcomposer-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const composerPackage = {
+export const getcomposerorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -101,14 +101,15 @@ export const composerPackage = {
     '2.2.24',
     '2.2.23',
   ] as const,
-  fullPath: 'getcomposer.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
+    '+getcomposer.org -- $SHELL -i',
     'composer',
   ] as const,
+  fullPath: 'getcomposer.org' as const,
 }
 
-export type ComposerPackage = typeof composerPackage
+export type GetcomposerorgSHELLiPackage = typeof getcomposerorgSHELLiPackage

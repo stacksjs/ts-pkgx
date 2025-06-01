@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `mpv`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `mpv`
+
 ## Available Versions
 
 <details>

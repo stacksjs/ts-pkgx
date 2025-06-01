@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `git-cliff`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `git-cliff`
+
 ## Available Versions
 
 <details>

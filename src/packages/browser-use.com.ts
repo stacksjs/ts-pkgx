@@ -1,18 +1,23 @@
 /**
- * **browser-use.com** - Make websites accessible for AI agents
+ * **+browser-use.com -- $SHELL -i** - Make websites accessible for AI agents
  *
  * @domain `browser-use.com`
  * @version `0.2.5` (17 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/browser-use-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +browser-use.com -- $SHELL -i`
+ * @aliases `+browser-use.com -- $SHELL -i`
  * @dependencies `python.org~3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.browserusecom
+ * // Access via alias (recommended)
+ * const pkg = pantry.browserusecomSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.browserusecom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "browser-use.com"
  * console.log(pkg.description) // "Make websites accessible for AI agents"
  * console.log(pkg.versions[0]) // "0.2.5" (latest)
@@ -21,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/browser-use-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const browserusecomPackage = {
+export const browserusecomSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -74,8 +79,14 @@ export const browserusecomPackage = {
     '0.1.38',
     '0.1.37',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+browser-use.com -- $SHELL -i',
+  ] as const,
   fullPath: 'browser-use.com' as const,
-  aliases: [] as const,
 }
 
-export type BrowserusecomPackage = typeof browserusecomPackage
+export type BrowserusecomSHELLiPackage = typeof browserusecomSHELLiPackage

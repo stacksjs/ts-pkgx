@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `mitmproxy`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `mitmproxy`
+
 ## Available Versions
 
 <details>

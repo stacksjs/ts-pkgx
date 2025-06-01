@@ -1,5 +1,5 @@
 /**
- * **langchain.com** - 🦜🔗 Build context-aware reasoning applications
+ * **+langchain.com -- $SHELL -i** - 🦜🔗 Build context-aware reasoning applications
  *
  * @domain `langchain.com`
  * @programs `f2py`, `jsondiff`, `jsonpatch`, `jsonpointer`, `langchain-server`, ... (+2 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/langchain-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +langchain.com -- $SHELL -i`
+ * @aliases `+langchain.com -- $SHELL -i`
  * @dependencies `python.org^3.12`, `docker.com/compose^2.23`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.langchaincom
+ * // Access via alias (recommended)
+ * const pkg = pantry.langchaincomSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.langchaincom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "langchain.com"
  * console.log(pkg.description) // "🦜🔗 Build context-aware reasoning applications"
  * console.log(pkg.programs)    // ["f2py", "jsondiff", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/langchain-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const langchaincomPackage = {
+export const langchaincomSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -101,8 +106,14 @@ export const langchaincomPackage = {
     '0.0.344',
     '0.0.343',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+langchain.com -- $SHELL -i',
+  ] as const,
   fullPath: 'langchain.com' as const,
-  aliases: [] as const,
 }
 
-export type LangchaincomPackage = typeof langchaincomPackage
+export type LangchaincomSHELLiPackage = typeof langchaincomSHELLiPackage

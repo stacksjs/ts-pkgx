@@ -26,6 +26,12 @@ This package provides the following executable programs:
 - `pam_timestamp_check`
 - `unix_chkpwd`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+linux-pam.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

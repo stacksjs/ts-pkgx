@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `mypyc`
 - `dmypy`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+mypy-lang.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

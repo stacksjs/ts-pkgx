@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `flutter`
 - `dart`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+flutter.dev -- $SHELL -i`
+
 ## Available Versions
 
 <details>

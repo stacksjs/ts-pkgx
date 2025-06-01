@@ -1,5 +1,5 @@
 /**
- * **kotlinlang.org** - Statically typed programming language for the JVM
+ * **+kotlinlang.org -- $SHELL -i** - Statically typed programming language for the JVM
  *
  * @domain `kotlinlang.org`
  * @programs `kapt`, `kotlin`, `kotlinc`, `kotlinc-js`, `kotlinc-jvm`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kotlinlang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +kotlinlang.org -- $SHELL -i`
+ * @aliases `+kotlinlang.org -- $SHELL -i`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.kotlinlangorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.kotlinlangorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.kotlinlangorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "kotlinlang.org"
  * console.log(pkg.description) // "Statically typed programming language for the JVM"
  * console.log(pkg.programs)    // ["kapt", "kotlin", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kotlinlang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kotlinlangorgPackage = {
+export const kotlinlangorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -85,8 +90,14 @@ export const kotlinlangorgPackage = {
     '1.9.10',
     '1.9.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+kotlinlang.org -- $SHELL -i',
+  ] as const,
   fullPath: 'kotlinlang.org' as const,
-  aliases: [] as const,
 }
 
-export type KotlinlangorgPackage = typeof kotlinlangorgPackage
+export type KotlinlangorgSHELLiPackage = typeof kotlinlangorgSHELLiPackage

@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `luarocks`
 - `luarocks-admin`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+luarocks.org -- $SHELL -i`
+- `luarocks`
+
 ## Available Versions
 
 <details>

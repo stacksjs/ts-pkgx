@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `run-singularity`
 - `singularity`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+apptainer.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

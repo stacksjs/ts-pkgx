@@ -34,6 +34,13 @@ This package provides the following executable programs:
 - `pulumi-resource-pulumi-python`
 - `pulumi-watch`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+pulumi.io -- $SHELL -i`
+- `pulumi`
+
 ## Available Versions
 
 <details>

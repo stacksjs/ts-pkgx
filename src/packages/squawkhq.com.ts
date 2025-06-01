@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/squawkhq-com.md
  *
  * @install `sh <(curl https://pkgx.sh) squawk`
+ * @aliases `squawk`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.squawkhqcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.squawk
+ * // Or access via domain
+ * const samePkg = pantry.squawkhqcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "squawk"
  * console.log(pkg.description) // "🐘 linter for PostgreSQL, focused on migrations"
  * console.log(pkg.programs)    // ["squawk"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/squawkhq-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const squawkhqcomPackage = {
+export const squawkPackage = {
   /**
    * The display name of this package.
    */
@@ -92,8 +97,14 @@ export const squawkhqcomPackage = {
     '0.24.1',
     '0.24.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'squawk',
+  ] as const,
   fullPath: 'squawkhq.com' as const,
-  aliases: [] as const,
 }
 
-export type SquawkhqcomPackage = typeof squawkhqcomPackage
+export type SquawkPackage = typeof squawkPackage

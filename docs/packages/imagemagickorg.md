@@ -37,6 +37,12 @@ This package provides the following executable programs:
 - `montage`
 - `stream`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+imagemagick.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

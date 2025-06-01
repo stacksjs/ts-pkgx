@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `kubeshark`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `kubeshark`
+
 ## Available Versions
 
 <details>

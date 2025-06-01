@@ -1,18 +1,23 @@
 /**
- * **libspng.org** - Simple, modern libpng alternative
+ * **+libspng.org -- $SHELL -i** - Simple, modern libpng alternative
  *
  * @domain `libspng.org`
  * @version `0.5.0` (1 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libspng-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libspng.org -- $SHELL -i`
+ * @aliases `+libspng.org -- $SHELL -i`
  * @dependencies `darwinzlib.net`, `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.libspngorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.libspngorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.libspngorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libspng.org"
  * console.log(pkg.description) // "Simple, modern libpng alternative"
  * console.log(pkg.versions[0]) // "0.5.0" (latest)
@@ -21,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libspng-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libspngorgPackage = {
+export const libspngorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -59,8 +64,14 @@ export const libspngorgPackage = {
   versions: [
     '0.5.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+libspng.org -- $SHELL -i',
+  ] as const,
   fullPath: 'libspng.org' as const,
-  aliases: [] as const,
 }
 
-export type LibspngorgPackage = typeof libspngorgPackage
+export type LibspngorgSHELLiPackage = typeof libspngorgSHELLiPackage

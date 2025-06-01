@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `yarn`
 - `yarnpkg`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+classic.yarnpkg.com -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `rye`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `rye`
+
 ## Available Versions
 
 <details>

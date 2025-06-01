@@ -76,7 +76,6 @@ export const taglibconfigPackage = {
     '2.0.0',
     '1.13.1',
   ] as const,
-  fullPath: 'taglib.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -84,6 +83,7 @@ export const taglibconfigPackage = {
   aliases: [
     'taglib-config',
   ] as const,
+  fullPath: 'taglib.org' as const,
 }
 
 export type TaglibconfigPackage = typeof taglibconfigPackage

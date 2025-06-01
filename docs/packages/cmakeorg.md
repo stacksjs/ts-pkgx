@@ -25,6 +25,12 @@ This package provides the following executable programs:
 - `cpack`
 - `ctest`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+cmake.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

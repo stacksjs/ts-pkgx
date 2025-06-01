@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ots-sniptt-com.md
  *
  * @install `sh <(curl https://pkgx.sh) ots`
+ * @aliases `ots`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.otssnipttcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.ots
+ * // Or access via domain
+ * const samePkg = pantry.otssnipttcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "ots"
  * console.log(pkg.description) // "🔐 Share end-to-end encrypted secrets with othe..."
  * console.log(pkg.programs)    // ["ots"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ots-sniptt-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const otssnipttcomPackage = {
+export const otsPackage = {
   /**
    * The display name of this package.
    */
@@ -61,8 +66,14 @@ export const otssnipttcomPackage = {
     '0.3.0',
     '0.2.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'ots',
+  ] as const,
   fullPath: 'ots.sniptt.com' as const,
-  aliases: [] as const,
 }
 
-export type OtssnipttcomPackage = typeof otssnipttcomPackage
+export type OtsPackage = typeof otsPackage

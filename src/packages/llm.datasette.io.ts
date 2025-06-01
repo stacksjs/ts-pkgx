@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/llm-datasette-io.md
  *
  * @install `sh <(curl https://pkgx.sh) llm`
+ * @aliases `llm`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.llmdatasetteio
+ * // Access via alias (recommended)
+ * const pkg = pantry.llm
+ * // Or access via domain
+ * const samePkg = pantry.llmdatasetteio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "llm"
  * console.log(pkg.description) // "Access large language models from the command-line"
  * console.log(pkg.programs)    // ["llm"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/llm-datasette-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const llmdatasetteioPackage = {
+export const llmPackage = {
   /**
    * The display name of this package.
    */
@@ -95,8 +100,14 @@ export const llmdatasetteioPackage = {
     '0.7.0',
     '0.6.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'llm',
+  ] as const,
   fullPath: 'llm.datasette.io' as const,
-  aliases: [] as const,
 }
 
-export type LlmdatasetteioPackage = typeof llmdatasetteioPackage
+export type LlmPackage = typeof llmPackage

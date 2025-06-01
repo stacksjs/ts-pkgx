@@ -1,5 +1,5 @@
 /**
- * **mysql.com** - MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.
+ * **+mysql.com -- $SHELL -i** - MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.
  *
  * @domain `mysql.com`
  * @programs `mysql_client_test`, `my_print_defaults`, `myisam_ftdump`, `myisamchk`, `myisamlog`, ... (+26 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mysql-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i`
+ * @aliases `+mysql.com -- $SHELL -i`
  * @dependencies `unicode.org^71`, `libevent.org^2`, `lz4.org^1`, ... (+9 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mysqlcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.mysqlcomSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.mysqlcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mysql.com"
  * console.log(pkg.description) // "MySQL Server, the world's most popular open sou..."
  * console.log(pkg.programs)    // ["mysql_client_test", "my_print_defaults", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mysql-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mysqlcomPackage = {
+export const mysqlcomSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -130,8 +135,14 @@ export const mysqlcomPackage = {
     '8.0.33',
     '8.0.32',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+mysql.com -- $SHELL -i',
+  ] as const,
   fullPath: 'mysql.com' as const,
-  aliases: [] as const,
 }
 
-export type MysqlcomPackage = typeof mysqlcomPackage
+export type MysqlcomSHELLiPackage = typeof mysqlcomSHELLiPackage

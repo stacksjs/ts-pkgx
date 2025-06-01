@@ -1,5 +1,5 @@
 /**
- * **opensearch** - 🔎 Open source distributed and RESTful search engine.
+ * **+opensearch.org -- $SHELL -i** - 🔎 Open source distributed and RESTful search engine.
  *
  * @domain `opensearch.org`
  * @programs `opensearch`, `opensearch-keystore`, `opensearch-plugin`, `opensearch-shard`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/opensearch-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +opensearch.org -- $SHELL -i`
+ * @aliases `+opensearch.org -- $SHELL -i`, `opensearch`
  * @dependencies `openjdk.org^21`, `openmp.llvm.org^17`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.opensearchorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.opensearchorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.opensearchorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "opensearch"
  * console.log(pkg.description) // "🔎 Open source distributed and RESTful search e..."
  * console.log(pkg.programs)    // ["opensearch", "opensearch-keystore", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/opensearch-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const opensearchorgPackage = {
+export const opensearchorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -80,8 +85,15 @@ export const opensearchorgPackage = {
     '2.12.0',
     '2.11.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+opensearch.org -- $SHELL -i',
+    'opensearch',
+  ] as const,
   fullPath: 'opensearch.org' as const,
-  aliases: [] as const,
 }
 
-export type OpensearchorgPackage = typeof opensearchorgPackage
+export type OpensearchorgSHELLiPackage = typeof opensearchorgSHELLiPackage

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `dgraph`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `dgraph`
+
 ## Available Versions
 
 <details>

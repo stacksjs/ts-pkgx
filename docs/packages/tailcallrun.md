@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `tailcall`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `tailcall`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `volta`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `volta`
+
 ## Available Versions
 
 <details>

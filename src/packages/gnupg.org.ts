@@ -1,5 +1,5 @@
 /**
- * **gnupg.org** - GNU Pretty Good Privacy (PGP) package
+ * **+gnupg.org -- $SHELL -i** - GNU Pretty Good Privacy (PGP) package
  *
  * @domain `gnupg.org`
  * @programs `gpg`, `gpg-agent`, `gpg-connect-agent`, `gpg-wks-server`, `gpgconf`, ... (+8 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gnupg-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +gnupg.org -- $SHELL -i`
+ * @aliases `+gnupg.org -- $SHELL -i`
  * @dependencies `zlib.net^1.1`, `sourceware.org/bzip2`, `gnupg.org/npth`, ... (+11 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.gnupgorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.gnupgorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.gnupgorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gnupg.org"
  * console.log(pkg.description) // "GNU Pretty Good Privacy (PGP) package"
  * console.log(pkg.programs)    // ["gpg", "gpg-agent", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnupg-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gnupgorgPackage = {
+export const gnupgorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -102,8 +107,14 @@ export const gnupgorgPackage = {
     '2.2.43',
     '2.2.42',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+gnupg.org -- $SHELL -i',
+  ] as const,
   fullPath: 'gnupg.org' as const,
-  aliases: [] as const,
 }
 
-export type GnupgorgPackage = typeof gnupgorgPackage
+export type GnupgorgSHELLiPackage = typeof gnupgorgSHELLiPackage

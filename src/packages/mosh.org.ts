@@ -1,5 +1,5 @@
 /**
- * **mosh** - Remote terminal application
+ * **+mosh.org -- $SHELL -i** - Remote terminal application
  *
  * @domain `mosh.org`
  * @programs `mosh-client`, `mosh-server`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mosh-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i`
+ * @aliases `+mosh.org -- $SHELL -i`, `mosh`
  * @dependencies `protobuf.dev@26.1.0`, `invisible-island.net/ncurses@6`, `zlib.net@1.3`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.moshorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.moshorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.moshorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mosh"
  * console.log(pkg.description) // "Remote terminal application"
  * console.log(pkg.programs)    // ["mosh-client", "mosh-server"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mosh-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const moshorgPackage = {
+export const moshorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -71,8 +76,15 @@ export const moshorgPackage = {
   versions: [
     '1.4.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+mosh.org -- $SHELL -i',
+    'mosh',
+  ] as const,
   fullPath: 'mosh.org' as const,
-  aliases: [] as const,
 }
 
-export type MoshorgPackage = typeof moshorgPackage
+export type MoshorgSHELLiPackage = typeof moshorgSHELLiPackage

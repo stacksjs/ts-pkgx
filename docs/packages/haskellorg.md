@@ -49,6 +49,12 @@ This package provides the following executable programs:
 - `runhaskell-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;`
 - `runhaskell-&lbrace;&lbrace;version&rbrace;&rbrace;`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+haskell.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

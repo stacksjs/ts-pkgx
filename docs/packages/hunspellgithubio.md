@@ -28,6 +28,13 @@ This package provides the following executable programs:
 - `munch`
 - `unmunch`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+hunspell.github.io -- $SHELL -i`
+- `hunspell`
+
 ## Available Versions
 
 <details>

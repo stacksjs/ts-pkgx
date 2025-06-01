@@ -1,5 +1,5 @@
 /**
- * **mvn** - Java-based project management
+ * **+maven.apache.org -- $SHELL -i** - Java-based project management
  *
  * @domain `maven.apache.org`
  * @programs `mvn`, `mvnDebug`, `mvnyjp`
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/maven-apache-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i`
- * @aliases `mvn`
+ * @aliases `+maven.apache.org -- $SHELL -i`, `mvn`
  * @dependencies `openjdk.org`
  *
  * @example
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.mvn
+ * const pkg = pantry.mavenapacheorgSHELLi
  * // Or access via domain
  * const samePkg = pantry.mavenapacheorg
  * console.log(pkg === samePkg) // true
@@ -28,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/maven-apache-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mvnPackage = {
+export const mavenapacheorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -81,14 +81,15 @@ export const mvnPackage = {
     '3.8.7',
     '3.6.3',
   ] as const,
-  fullPath: 'maven.apache.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
+    '+maven.apache.org -- $SHELL -i',
     'mvn',
   ] as const,
+  fullPath: 'maven.apache.org' as const,
 }
 
-export type MvnPackage = typeof mvnPackage
+export type MavenapacheorgSHELLiPackage = typeof mavenapacheorgSHELLiPackage

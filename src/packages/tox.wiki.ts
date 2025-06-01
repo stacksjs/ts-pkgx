@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tox-wiki.md
  *
  * @install `sh <(curl https://pkgx.sh) tox`
+ * @aliases `tox`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.toxwiki
+ * // Access via alias (recommended)
+ * const pkg = pantry.tox
+ * // Or access via domain
+ * const samePkg = pantry.toxwiki
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "tox"
  * console.log(pkg.description) // "Command line driven CI frontend and development..."
  * console.log(pkg.programs)    // ["tox"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tox-wiki.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const toxwikiPackage = {
+export const toxPackage = {
   /**
    * The display name of this package.
    */
@@ -80,8 +85,14 @@ export const toxwikiPackage = {
     '4.19.0',
     '4.18.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'tox',
+  ] as const,
   fullPath: 'tox.wiki' as const,
-  aliases: [] as const,
 }
 
-export type ToxwikiPackage = typeof toxwikiPackage
+export type ToxPackage = typeof toxPackage

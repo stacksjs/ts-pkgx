@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/hasura-io.md
  *
  * @install `sh <(curl https://pkgx.sh) hasura`
+ * @aliases `hasura`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.hasuraio
+ * // Access via alias (recommended)
+ * const pkg = pantry.hasura
+ * // Or access via domain
+ * const samePkg = pantry.hasuraio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "hasura"
  * console.log(pkg.description) // "Blazing fast, instant realtime GraphQL APIs on ..."
  * console.log(pkg.programs)    // ["hasura"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/hasura-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const hasuraioPackage = {
+export const hasuraPackage = {
   /**
    * The display name of this package.
    */
@@ -109,8 +114,14 @@ export const hasuraioPackage = {
     '2.11.11',
     '2.11.10',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'hasura',
+  ] as const,
   fullPath: 'hasura.io' as const,
-  aliases: [] as const,
 }
 
-export type HasuraioPackage = typeof hasuraioPackage
+export type HasuraPackage = typeof hasuraPackage

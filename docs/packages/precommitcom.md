@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `pre-commit`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pre-commit`
+
 ## Available Versions
 
 <details>

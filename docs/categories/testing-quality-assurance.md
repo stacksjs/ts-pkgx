@@ -6,7 +6,7 @@ Packages related to testing & quality assurance.
 
 ## Packages
 
-### [pytestorg](../packages/pytestorg.md) ()
+### [pytestorg](../packages/pytestorg.md) (pytest)
 
 The pytest framework makes it easy to write small tests, yet scales to support complex functional testing
 

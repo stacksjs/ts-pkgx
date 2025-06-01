@@ -29,6 +29,12 @@ This package provides the following executable programs:
 - `po4a-updatepo`
 - `podselect`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+po4a.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

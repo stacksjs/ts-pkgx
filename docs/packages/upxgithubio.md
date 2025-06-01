@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `upx`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `upx`
+
 ## Available Versions
 
 <details>

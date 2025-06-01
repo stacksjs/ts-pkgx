@@ -62,6 +62,12 @@ This package provides the following executable programs:
 - `zookeeper-server-stop.sh`
 - `zookeeper-shell.sh`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+kafka.apache.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

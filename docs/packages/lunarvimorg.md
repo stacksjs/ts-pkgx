@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `lvim`
 - `nvim`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+lunarvim.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

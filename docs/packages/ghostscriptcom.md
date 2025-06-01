@@ -54,6 +54,12 @@ This package provides the following executable programs:
 - `ps2ps2`
 - `unix-lpr.sh`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+ghostscript.com -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `sshx`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `sshx`
+
 ## Available Versions
 
 <details>

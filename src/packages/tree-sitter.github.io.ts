@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tree-sitter-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) tree-sitter`
+ * @aliases `tree-sitter`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.treesittergithubio
+ * // Access via alias (recommended)
+ * const pkg = pantry.treesitter
+ * // Or access via domain
+ * const samePkg = pantry.treesittergithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "tree-sitter"
  * console.log(pkg.description) // "Parser generator tool and incremental parsing l..."
  * console.log(pkg.programs)    // ["tree-sitter"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tree-sitter-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const treesittergithubioPackage = {
+export const treesitterPackage = {
   /**
    * The display name of this package.
    */
@@ -85,8 +90,14 @@ export const treesittergithubioPackage = {
     '0.20.9',
     '0.20.8',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'tree-sitter',
+  ] as const,
   fullPath: 'tree-sitter.github.io' as const,
-  aliases: [] as const,
 }
 
-export type TreesittergithubioPackage = typeof treesittergithubioPackage
+export type TreesitterPackage = typeof treesitterPackage

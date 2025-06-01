@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `symfony`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `symfony`
+
 ## Available Versions
 
 <details>

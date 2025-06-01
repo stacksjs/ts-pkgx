@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `htop`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `htop`
+
 ## Available Versions
 
 <details>

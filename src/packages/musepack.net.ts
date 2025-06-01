@@ -1,5 +1,5 @@
 /**
- * **musepack.net** - Audio compression format and tools
+ * **+musepack.net -- $SHELL -i** - Audio compression format and tools
  *
  * @domain `musepack.net`
  * @programs `mpc2sv8`, `mpcchap`, `mpccut`, `mpcdec`, `mpcenc`, ... (+2 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/musepack-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i`
+ * @aliases `+musepack.net -- $SHELL -i`
  * @dependencies `musepack.net/libreplaygain`, `musepack.net/libcuefile`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.musepacknet
+ * // Access via alias (recommended)
+ * const pkg = pantry.musepacknetSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.musepacknet
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "musepack.net"
  * console.log(pkg.description) // "Audio compression format and tools"
  * console.log(pkg.programs)    // ["mpc2sv8", "mpcchap", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/musepack-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const musepacknetPackage = {
+export const musepacknetSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -73,8 +78,14 @@ export const musepacknetPackage = {
   versions: [
     '475.0.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+musepack.net -- $SHELL -i',
+  ] as const,
   fullPath: 'musepack.net' as const,
-  aliases: [] as const,
 }
 
-export type MusepacknetPackage = typeof musepacknetPackage
+export type MusepacknetSHELLiPackage = typeof musepacknetSHELLiPackage

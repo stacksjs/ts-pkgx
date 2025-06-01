@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `spacetime`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `spacetime`
+
 ## Available Versions
 
 <details>

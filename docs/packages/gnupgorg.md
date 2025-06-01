@@ -34,6 +34,12 @@ This package provides the following executable programs:
 - `kbxutil`
 - `watchgnupg`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+gnupg.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

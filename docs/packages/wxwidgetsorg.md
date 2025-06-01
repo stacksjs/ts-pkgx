@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `wx-config`
 - `wxrc`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+wxwidgets.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

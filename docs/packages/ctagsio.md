@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `ctags`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ctags`
+
 ## Available Versions
 
 <details>

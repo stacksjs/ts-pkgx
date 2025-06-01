@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `rsync`
 - `rsync-ssl`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+rsync.samba.org -- $SHELL -i`
+- `rsync`
+
 ## Available Versions
 
 <details>

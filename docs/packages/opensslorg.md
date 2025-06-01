@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `openssl`
 - `c_rehash`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+openssl.org -- $SHELL -i`
+- `OpenSSL`
+
 ## Available Versions
 
 <details>

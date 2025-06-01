@@ -1,5 +1,5 @@
 /**
- * **jenkins x** - Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton
+ * **jx** - Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton
  *
  * @domain `jenkins-x.io`
  * @programs `jx`
@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jenkins-x-io.md
  *
  * @install `sh <(curl https://pkgx.sh) jx`
- * @aliases `jenkins x`
+ * @aliases `jx`, `Jenkins X`, `jenkins x`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.jenkinsx
+ * const pkg = pantry.jx
  * // Or access via domain
  * const samePkg = pantry.jenkinsxio
  * console.log(pkg === samePkg) // true
@@ -27,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jenkins-x-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jenkinsxPackage = {
+export const jxPackage = {
   /**
    * The display name of this package.
    */
@@ -118,14 +118,16 @@ export const jenkinsxPackage = {
     '3.10.155',
     '3.10.154',
   ] as const,
-  fullPath: 'jenkins-x.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
+    'jx',
+    'Jenkins X',
     'jenkins x',
   ] as const,
+  fullPath: 'jenkins-x.io' as const,
 }
 
-export type JenkinsxPackage = typeof jenkinsxPackage
+export type JxPackage = typeof jxPackage

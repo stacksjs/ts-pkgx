@@ -1,5 +1,5 @@
 /**
- * **pulumi** - Pulumi - Infrastructure as Code in any programming language 🚀
+ * **+pulumi.io -- $SHELL -i** - Pulumi - Infrastructure as Code in any programming language 🚀
  *
  * @domain `pulumi.io`
  * @programs `pulumi`, `pulumi-analyzer-policy`, `pulumi-analyzer-policy-python`, `pulumi-language-dotnet`, `pulumi-language-go`, ... (+8 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pulumi-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i`
+ * @aliases `+pulumi.io -- $SHELL -i`, `pulumi`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pulumiio
+ * // Access via alias (recommended)
+ * const pkg = pantry.pulumiioSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.pulumiio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pulumi"
  * console.log(pkg.description) // "Pulumi - Infrastructure as Code in any programm..."
  * console.log(pkg.programs)    // ["pulumi", "pulumi-analyzer-policy", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pulumi-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pulumiioPackage = {
+export const pulumiioSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -213,8 +218,15 @@ export const pulumiioPackage = {
     '3.67.0',
     '3.66.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+pulumi.io -- $SHELL -i',
+    'pulumi',
+  ] as const,
   fullPath: 'pulumi.io' as const,
-  aliases: [] as const,
 }
 
-export type PulumiioPackage = typeof pulumiioPackage
+export type PulumiioSHELLiPackage = typeof pulumiioSHELLiPackage

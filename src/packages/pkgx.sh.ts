@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pkgx-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) pkgx`
+ * @aliases `pkgx`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pkgxsh
+ * // Access via alias (recommended)
+ * const pkg = pantry.pkgx
+ * // Or access via domain
+ * const samePkg = pantry.pkgxsh
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pkgx"
  * console.log(pkg.description) // "Standalone binary that can run anything"
  * console.log(pkg.programs)    // ["pkgx"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pkgx-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pkgxshPackage = {
+export const pkgxPackage = {
   /**
    * The display name of this package.
    */
@@ -93,8 +98,14 @@ export const pkgxshPackage = {
     '1.0.1',
     '1.0.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'pkgx',
+  ] as const,
   fullPath: 'pkgx.sh' as const,
-  aliases: [] as const,
 }
 
-export type PkgxshPackage = typeof pkgxshPackage
+export type PkgxPackage = typeof pkgxPackage

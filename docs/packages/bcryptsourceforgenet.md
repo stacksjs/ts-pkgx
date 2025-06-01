@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `bcrypt`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `bcrypt`
+
 ## Available Versions
 
 <details>

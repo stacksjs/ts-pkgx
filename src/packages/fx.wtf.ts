@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fx-wtf.md
  *
  * @install `sh <(curl https://pkgx.sh) fx`
+ * @aliases `fx`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.fxwtf
+ * // Access via alias (recommended)
+ * const pkg = pantry.fx
+ * // Or access via domain
+ * const samePkg = pantry.fxwtf
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "fx"
  * console.log(pkg.description) // "Terminal JSON viewer & processor"
  * console.log(pkg.programs)    // ["fx"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fx-wtf.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fxwtfPackage = {
+export const fxPackage = {
   /**
    * The display name of this package.
    */
@@ -75,8 +80,14 @@ export const fxwtfPackage = {
     '30.0.0',
     '24.1.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'fx',
+  ] as const,
   fullPath: 'fx.wtf' as const,
-  aliases: [] as const,
 }
 
-export type FxwtfPackage = typeof fxwtfPackage
+export type FxPackage = typeof fxPackage

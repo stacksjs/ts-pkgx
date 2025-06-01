@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `numbat`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `numbat`
+
 ## Available Versions
 
 <details>

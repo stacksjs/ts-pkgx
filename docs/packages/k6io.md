@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `k6`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `k6`
+
 ## Available Versions
 
 <details>

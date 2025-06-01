@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/amp-rs.md
  *
  * @install `sh <(curl https://pkgx.sh) amp`
+ * @aliases `amp`
  * @dependencies `zlib.net@1`, `libgit2.org@1`, `linuxopenssl.org@1.1`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.amprs
+ * // Access via alias (recommended)
+ * const pkg = pantry.amp
+ * // Or access via domain
+ * const samePkg = pantry.amprs
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "amp"
  * console.log(pkg.description) // "A complete text editor for your terminal."
  * console.log(pkg.programs)    // ["amp"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/amp-rs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const amprsPackage = {
+export const ampPackage = {
   /**
    * The display name of this package.
    */
@@ -69,8 +74,14 @@ export const amprsPackage = {
   versions: [
     '0.7.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'amp',
+  ] as const,
   fullPath: 'amp.rs' as const,
-  aliases: [] as const,
 }
 
-export type AmprsPackage = typeof amprsPackage
+export type AmpPackage = typeof ampPackage

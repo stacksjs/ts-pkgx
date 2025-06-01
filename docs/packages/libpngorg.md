@@ -25,6 +25,12 @@ This package provides the following executable programs:
 - `png-fix-itxt`
 - `pngfix`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+libpng.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -27,6 +27,13 @@ This package provides the following executable programs:
 - `unbound-control-setup`
 - `unbound-host`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+unbound.net -- $SHELL -i`
+- `unbound`
+
 ## Available Versions
 
 <details>

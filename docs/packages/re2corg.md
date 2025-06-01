@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `re2c`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `re2c`
+
 ## Available Versions
 
 <details>

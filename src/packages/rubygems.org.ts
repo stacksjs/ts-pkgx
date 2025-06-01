@@ -1,5 +1,5 @@
 /**
- * **rubygems.org** - Powerful, clean, object-oriented scripting language
+ * **+rubygems.org -- $SHELL -i** - Powerful, clean, object-oriented scripting language
  *
  * @domain `rubygems.org`
  * @programs `bundle`, `bundler`, `gem`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rubygems-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +rubygems.org -- $SHELL -i`
+ * @aliases `+rubygems.org -- $SHELL -i`
  * @dependencies `ruby-lang.org>=2.3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.rubygemsorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.rubygemsorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.rubygemsorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "rubygems.org"
  * console.log(pkg.description) // "Powerful, clean, object-oriented scripting lang..."
  * console.log(pkg.programs)    // ["bundle", "bundler", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rubygems-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rubygemsorgPackage = {
+export const rubygemsorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -124,8 +129,14 @@ export const rubygemsorgPackage = {
     '3.3.25',
     '3.2.34',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+rubygems.org -- $SHELL -i',
+  ] as const,
   fullPath: 'rubygems.org' as const,
-  aliases: [] as const,
 }
 
-export type RubygemsorgPackage = typeof rubygemsorgPackage
+export type RubygemsorgSHELLiPackage = typeof rubygemsorgSHELLiPackage

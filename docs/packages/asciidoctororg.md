@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `asciidoctor`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `asciidoctor`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `mun`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `mun`
+
 ## Available Versions
 
 <details>

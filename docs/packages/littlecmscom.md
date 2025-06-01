@@ -26,6 +26,12 @@ This package provides the following executable programs:
 - `tificc`
 - `transicc`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+littlecms.com -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -72,7 +72,6 @@ export const kubectlkrewPackage = {
     '0.4.5',
     '0.4.4',
   ] as const,
-  fullPath: 'krew.sigs.k8s.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -80,6 +79,7 @@ export const kubectlkrewPackage = {
   aliases: [
     'kubectl-krew',
   ] as const,
+  fullPath: 'krew.sigs.k8s.io' as const,
 }
 
 export type KubectlkrewPackage = typeof kubectlkrewPackage

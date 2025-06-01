@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `hasura`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `hasura`
+
 ## Available Versions
 
 <details>

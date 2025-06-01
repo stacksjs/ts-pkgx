@@ -25,6 +25,12 @@ This package provides the following executable programs:
 - `iex`
 - `mix`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+elixir-lang.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

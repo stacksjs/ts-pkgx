@@ -1,5 +1,5 @@
 /**
- * **cgal** - The public CGAL repository, see the README below
+ * **+cgal.org -- $SHELL -i** - The public CGAL repository, see the README below
  *
  * @domain `cgal.org`
  * @programs `cgal_create_CMakeLists`, `cgal_create_cmake_script`, `cgal_make_macosx_app`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cgal-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +cgal.org -- $SHELL -i`
+ * @aliases `+cgal.org -- $SHELL -i`, `cgal`
  * @dependencies `boost.org`, `eigen.tuxfamily.org`, `gnu.org/gmp`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cgalorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.cgalorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.cgalorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "cgal"
  * console.log(pkg.description) // "The public CGAL repository, see the README below"
  * console.log(pkg.programs)    // ["cgal_create_CMakeLists", "cgal_create_cmake_script", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cgal-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cgalorgPackage = {
+export const cgalorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -76,8 +81,15 @@ export const cgalorgPackage = {
     '5.6.1',
     '5.6.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+cgal.org -- $SHELL -i',
+    'cgal',
+  ] as const,
   fullPath: 'cgal.org' as const,
-  aliases: [] as const,
 }
 
-export type CgalorgPackage = typeof cgalorgPackage
+export type CgalorgSHELLiPackage = typeof cgalorgSHELLiPackage

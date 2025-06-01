@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `exiftool`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `exiftool`
+
 ## Available Versions
 
 <details>

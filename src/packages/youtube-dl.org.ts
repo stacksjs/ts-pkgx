@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/youtube-dl-org.md
  *
  * @install `sh <(curl https://pkgx.sh) youtube-dl`
+ * @aliases `youtube-dl`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.youtubedlorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.youtubedl
+ * // Or access via domain
+ * const samePkg = pantry.youtubedlorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "youtube-dl"
  * console.log(pkg.description) // "Command-line program to download videos from Yo..."
  * console.log(pkg.programs)    // ["youtube-dl"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/youtube-dl-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const youtubedlorgPackage = {
+export const youtubedlPackage = {
   /**
    * The display name of this package.
    */
@@ -67,8 +72,14 @@ export const youtubedlorgPackage = {
     '2023.8.4',
     '2021.12.17',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'youtube-dl',
+  ] as const,
   fullPath: 'youtube-dl.org' as const,
-  aliases: [] as const,
 }
 
-export type YoutubedlorgPackage = typeof youtubedlorgPackage
+export type YoutubedlPackage = typeof youtubedlPackage

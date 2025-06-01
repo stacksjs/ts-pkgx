@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `scons`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `scons`
+
 ## Available Versions
 
 <details>

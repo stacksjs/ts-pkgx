@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `uplift`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `uplift`
+
 ## Available Versions
 
 <details>

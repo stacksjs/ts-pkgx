@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `leo`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `leo`
+
 ## Available Versions
 
 <details>

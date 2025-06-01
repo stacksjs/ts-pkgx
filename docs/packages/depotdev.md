@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `depot`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `depot`
+
 ## Available Versions
 
 <details>

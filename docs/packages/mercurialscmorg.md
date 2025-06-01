@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `hg`
 - `chg`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+mercurial-scm.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

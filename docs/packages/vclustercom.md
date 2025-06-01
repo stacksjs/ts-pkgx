@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `vcluster`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `vcluster`
+
 ## Available Versions
 
 <details>

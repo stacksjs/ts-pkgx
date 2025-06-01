@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `lychee`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `lychee`
+
 ## Available Versions
 
 <details>

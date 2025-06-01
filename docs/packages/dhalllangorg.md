@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `dhall`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `dhall`
+
 ## Available Versions
 
 <details>

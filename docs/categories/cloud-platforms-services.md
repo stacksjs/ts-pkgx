@@ -30,7 +30,7 @@ Packages related to cloud platforms & services.
 
 ---
 
-### [flyio](../packages/flyio.md) ()
+### [flyio](../packages/flyio.md) (+fly.io -- $SHELL -i, fly)
 
 Command line tools for fly.io services
 
@@ -56,7 +56,7 @@ Command line tools for fly.io services
 
 ---
 
-### [herokucom](../packages/herokucom.md) ()
+### [herokucom](../packages/herokucom.md) (heroku)
 
 CLI for Heroku
 
@@ -66,7 +66,7 @@ CLI for Heroku
 
 ---
 
-### [railwayapp](../packages/railwayapp.md) ()
+### [railwayapp](../packages/railwayapp.md) (railway)
 
 Develop and deploy code with zero configuration
 

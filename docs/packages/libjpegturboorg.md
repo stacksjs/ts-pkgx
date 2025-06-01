@@ -27,6 +27,12 @@ This package provides the following executable programs:
 - `tjbench`
 - `wrjpgcom`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+libjpeg-turbo.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

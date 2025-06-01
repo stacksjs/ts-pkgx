@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/convco-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) convco`
+ * @aliases `convco`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.convcogithubio
+ * // Access via alias (recommended)
+ * const pkg = pantry.convco
+ * // Or access via domain
+ * const samePkg = pantry.convcogithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "convco"
  * console.log(pkg.description) // "Conventional commits, changelog, versioning, va..."
  * console.log(pkg.programs)    // ["convco"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/convco-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const convcogithubioPackage = {
+export const convcoPackage = {
   /**
    * The display name of this package.
    */
@@ -67,8 +72,14 @@ export const convcogithubioPackage = {
     '0.4.2',
     '0.4.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'convco',
+  ] as const,
   fullPath: 'convco.github.io' as const,
-  aliases: [] as const,
 }
 
-export type ConvcogithubioPackage = typeof convcogithubioPackage
+export type ConvcoPackage = typeof convcoPackage

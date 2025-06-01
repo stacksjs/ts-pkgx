@@ -1,5 +1,5 @@
 /**
- * **unixodbc.org** - The unixODBC Project goals are to develop and promote unixODBC to be the definitive standard for ODBC on non MS Windows platforms.
+ * **+unixodbc.org -- $SHELL -i** - The unixODBC Project goals are to develop and promote unixODBC to be the definitive standard for ODBC on non MS Windows platforms.
  *
  * @domain `unixodbc.org`
  * @programs `dltest`, `isql`, `iusql`, `odbc_config`, `odbcinst`, ... (+1 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/unixodbc-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +unixodbc.org -- $SHELL -i`
+ * @aliases `+unixodbc.org -- $SHELL -i`
  * @dependencies `gnu.org/libtool`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.unixodbcorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.unixodbcorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.unixodbcorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "unixodbc.org"
  * console.log(pkg.description) // "The unixODBC Project goals are to develop and p..."
  * console.log(pkg.programs)    // ["dltest", "isql", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/unixodbc-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const unixodbcorgPackage = {
+export const unixodbcorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -72,8 +77,14 @@ export const unixodbcorgPackage = {
     '2.3.12',
     '2.3.11',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+unixodbc.org -- $SHELL -i',
+  ] as const,
   fullPath: 'unixodbc.org' as const,
-  aliases: [] as const,
 }
 
-export type UnixodbcorgPackage = typeof unixodbcorgPackage
+export type UnixodbcorgSHELLiPackage = typeof unixodbcorgSHELLiPackage

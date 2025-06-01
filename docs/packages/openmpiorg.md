@@ -32,6 +32,12 @@ This package provides the following executable programs:
 - `ompi_info`
 - `opal_wrapper`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+open-mpi.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `pluralith`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pluralith`
+
 ## Available Versions
 
 <details>

@@ -1,5 +1,5 @@
 /**
- * **zrok** - Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti.
+ * **+zrok.io -- $SHELL -i** - Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti.
  *
  * @domain `zrok.io`
  * @programs `zrok`, `copyto`, `pastefrom`
@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zrok-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +zrok.io -- $SHELL -i`
+ * @aliases `+zrok.io -- $SHELL -i`, `zrok`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.zrokio
+ * // Access via alias (recommended)
+ * const pkg = pantry.zrokioSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.zrokio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "zrok"
  * console.log(pkg.description) // "Geo-scale, next-generation peer-to-peer sharing..."
  * console.log(pkg.programs)    // ["zrok", "copyto", ...]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/zrok-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zrokioPackage = {
+export const zrokioSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -96,8 +101,15 @@ export const zrokioPackage = {
     '0.4.17',
     '0.4.16',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+zrok.io -- $SHELL -i',
+    'zrok',
+  ] as const,
   fullPath: 'zrok.io' as const,
-  aliases: [] as const,
 }
 
-export type ZrokioPackage = typeof zrokioPackage
+export type ZrokioSHELLiPackage = typeof zrokioSHELLiPackage

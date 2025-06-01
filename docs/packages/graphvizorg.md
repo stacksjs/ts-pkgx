@@ -56,6 +56,12 @@ This package provides the following executable programs:
 - `twopi`
 - `unflatten`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+graphviz.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

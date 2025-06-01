@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `circleci`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `circleci`
+
 ## Available Versions
 
 <details>

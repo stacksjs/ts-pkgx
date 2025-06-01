@@ -34,6 +34,12 @@ This package provides the following executable programs:
 - `text2pcap`
 - `tshark`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+wireshark.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

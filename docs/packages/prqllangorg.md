@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `prql-compiler`
 - `prqlc`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+prql-lang.org -- $SHELL -i`
+- `prql`
+
 ## Available Versions
 
 <details>

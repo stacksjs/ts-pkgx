@@ -48,6 +48,12 @@ This package provides the following executable programs:
 - `sserver`
 - `uuserver`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+kerberos.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

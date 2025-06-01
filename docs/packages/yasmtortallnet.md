@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `yasm`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `yasm`
+
 ## Available Versions
 
 <details>

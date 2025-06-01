@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `koyeb`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `koyeb`
+
 ## Available Versions
 
 <details>

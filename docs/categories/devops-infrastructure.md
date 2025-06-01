@@ -6,7 +6,7 @@ Tools for deployment, orchestration, and infrastructure management.
 
 ## Packages
 
-### [ansiblecom](../packages/ansiblecom.md) ()
+### [ansiblecom](../packages/ansiblecom.md) (+ansible.com -- $SHELL -i, ansible)
 
 Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
 
@@ -32,7 +32,7 @@ Ansible is a radically simple IT automation platform that makes your application
 
 ---
 
-### [consulio](../packages/consulio.md) ()
+### [consulio](../packages/consulio.md) (consul)
 
 Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.
 
@@ -58,7 +58,7 @@ Consul is a distributed, highly available, and data center aware solution to con
 
 ---
 
-### [helmsh](../packages/helmsh.md) ()
+### [helmsh](../packages/helmsh.md) (helm)
 
 The Kubernetes Package Manager
 
@@ -86,7 +86,7 @@ Connect, secure, control, and observe services.
 
 ---
 
-### [nomadprojectio](../packages/nomadprojectio.md) ()
+### [nomadprojectio](../packages/nomadprojectio.md) (nomad)
 
 Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
 
@@ -96,7 +96,7 @@ Nomad is an easy-to-use, flexible, and performant workload orchestrator that can
 
 ---
 
-### [podmanio](../packages/podmanio.md) ()
+### [podmanio](../packages/podmanio.md) (+podman.io -- $SHELL -i, podman)
 
 Podman: A tool for managing OCI containers and pods.
 
@@ -106,7 +106,7 @@ Podman: A tool for managing OCI containers and pods.
 
 ---
 
-### [terraformio](../packages/terraformio.md) ()
+### [terraformio](../packages/terraformio.md) (terraform)
 
 Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
 
@@ -116,7 +116,7 @@ Terraform enables you to safely and predictably create, change, and improve infr
 
 ---
 
-### [traefikio](../packages/traefikio.md) ()
+### [traefikio](../packages/traefikio.md) (traefik)
 
 The Cloud Native Application Proxy
 

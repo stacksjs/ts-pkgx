@@ -26,6 +26,13 @@ This package provides the following executable programs:
 - `bitcoin-wallet`
 - `bitcoind`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+bitcoin.org -- $SHELL -i`
+- `bitcoin`
+
 ## Available Versions
 
 <details>

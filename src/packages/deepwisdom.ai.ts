@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/deepwisdom-ai.md
  *
  * @install `sh <(curl https://pkgx.sh) metagpt`
- * @aliases `metagpt`
+ * @aliases `metagpt`, `MetaGPT`
  * @dependencies `pkgx.sh^1`, `git-scm.org^2`
  *
  * @example
@@ -87,14 +87,15 @@ export const metagptPackage = {
     '0.6.0',
     '0.5.2',
   ] as const,
-  fullPath: 'deepwisdom.ai' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
     'metagpt',
+    'MetaGPT',
   ] as const,
+  fullPath: 'deepwisdom.ai' as const,
 }
 
 export type MetagptPackage = typeof metagptPackage

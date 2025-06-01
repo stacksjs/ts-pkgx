@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `pocketbase`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pocketbase`
+
 ## Available Versions
 
 <details>

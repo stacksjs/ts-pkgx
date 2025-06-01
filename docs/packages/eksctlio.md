@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `eksctl`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `eksctl`
+
 ## Available Versions
 
 <details>

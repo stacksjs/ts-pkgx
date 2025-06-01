@@ -1,5 +1,5 @@
 /**
- * **swift** - The Swift Programming Language
+ * **+swift.org -- $SHELL -i** - The Swift Programming Language
  *
  * @domain `swift.org`
  * @programs `docc`, `dsymutil`, `sourcekit-lsp`, `swift-api-checker.py`, `swift-build-sdk-interfaces`, ... (+21 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/swift-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i`
+ * @aliases `+swift.org -- $SHELL -i`, `swift`
  * @dependencies `linuxgnu.org/gccgnu.org/binutilsgnupg.org^2gnome.org/libxml2libgit2.org~1.7curl.sesqlite.org^3`, `gnu.org/gcc`, `gnu.org/binutils`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.swiftorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.swiftorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.swiftorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "swift"
  * console.log(pkg.description) // "The Swift Programming Language"
  * console.log(pkg.programs)    // ["docc", "dsymutil", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/swift-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const swiftorgPackage = {
+export const swiftorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -107,8 +112,15 @@ export const swiftorgPackage = {
     '5.10.0',
     '5.9.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+swift.org -- $SHELL -i',
+    'swift',
+  ] as const,
   fullPath: 'swift.org' as const,
-  aliases: [] as const,
 }
 
-export type SwiftorgPackage = typeof swiftorgPackage
+export type SwiftorgSHELLiPackage = typeof swiftorgSHELLiPackage

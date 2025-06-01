@@ -31,6 +31,13 @@ This package provides the following executable programs:
 - `solana-tokens`
 - `solana-watchtower`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+solana.com -- $SHELL -i`
+- `solana`
+
 ## Available Versions
 
 <details>

@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `hurl`
 - `hurlfmt`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+hurl.dev -- $SHELL -i`
+- `hurl`
+
 ## Available Versions
 
 <details>

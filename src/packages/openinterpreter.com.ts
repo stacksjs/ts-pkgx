@@ -1,5 +1,5 @@
 /**
- * **open-interpreter** - A natural language interface for computers
+ * **interpreter** - A natural language interface for computers
  *
  * @domain `openinterpreter.com`
  * @programs `interpreter`
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openinterpreter-com.md
  *
  * @install `sh <(curl https://pkgx.sh) interpreter`
- * @aliases `open-interpreter`
+ * @aliases `interpreter`, `open-interpreter`
  * @dependencies `python.org>=3.10<3.12`, `github.com/mattrobenolt/jinja2-cli`
  *
  * @example
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.openinterpreter
+ * const pkg = pantry.interpreter
  * // Or access via domain
  * const samePkg = pantry.openinterpretercom
  * console.log(pkg === samePkg) // true
@@ -28,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openinterpreter-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openinterpreterPackage = {
+export const interpreterPackage = {
   /**
    * The display name of this package.
    */
@@ -93,14 +93,15 @@ export const openinterpreterPackage = {
     '0.1.0',
     '0.0.297',
   ] as const,
-  fullPath: 'openinterpreter.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
+    'interpreter',
     'open-interpreter',
   ] as const,
+  fullPath: 'openinterpreter.com' as const,
 }
 
-export type OpeninterpreterPackage = typeof openinterpreterPackage
+export type InterpreterPackage = typeof interpreterPackage

@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `nasm`
 - `ndisasm`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+nasm.us -- $SHELL -i`
+
 ## Available Versions
 
 <details>

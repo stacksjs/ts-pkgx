@@ -1,18 +1,23 @@
 /**
- * **modal.com** - Python client library for Modal
+ * **+modal.com -- $SHELL -i** - Python client library for Modal
  *
  * @domain `modal.com`
  * @version `1.0.2` (790 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/modal-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +modal.com -- $SHELL -i`
+ * @aliases `+modal.com -- $SHELL -i`
  * @dependencies `pkgx.sh@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.modalcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.modalcomSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.modalcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "modal.com"
  * console.log(pkg.description) // "Python client library for Modal"
  * console.log(pkg.versions[0]) // "1.0.2" (latest)
@@ -21,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/modal-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const modalcomPackage = {
+export const modalcomSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -847,8 +852,14 @@ export const modalcomPackage = {
     '0.64.8',
     '0.64.7',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+modal.com -- $SHELL -i',
+  ] as const,
   fullPath: 'modal.com' as const,
-  aliases: [] as const,
 }
 
-export type ModalcomPackage = typeof modalcomPackage
+export type ModalcomSHELLiPackage = typeof modalcomSHELLiPackage

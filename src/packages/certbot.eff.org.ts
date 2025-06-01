@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/certbot-eff-org.md
  *
  * @install `sh <(curl https://pkgx.sh) certbot`
+ * @aliases `certbot`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.certbotefforg
+ * // Access via alias (recommended)
+ * const pkg = pantry.certbot
+ * // Or access via domain
+ * const samePkg = pantry.certbotefforg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "certbot"
  * console.log(pkg.description) // "Certbot is EFF's tool to obtain certs from Let'..."
  * console.log(pkg.programs)    // ["certbot"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/certbot-eff-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const certbotefforgPackage = {
+export const certbotPackage = {
   /**
    * The display name of this package.
    */
@@ -82,8 +87,14 @@ export const certbotefforgPackage = {
     '2.7.0',
     '2.6.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'certbot',
+  ] as const,
   fullPath: 'certbot.eff.org' as const,
-  aliases: [] as const,
 }
 
-export type CertbotefforgPackage = typeof certbotefforgPackage
+export type CertbotPackage = typeof certbotPackage

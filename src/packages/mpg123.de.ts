@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mpg123-de.md
  *
  * @install `sh <(curl https://pkgx.sh) mpg123`
+ * @aliases `mpg123`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mpg123de
+ * // Access via alias (recommended)
+ * const pkg = pantry.mpg123
+ * // Or access via domain
+ * const samePkg = pantry.mpg123de
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mpg123"
  * console.log(pkg.description) // "MP3 player for Linux and UNIX"
  * console.log(pkg.programs)    // ["mpg123"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mpg123-de.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mpg123dePackage = {
+export const mpg123Package = {
   /**
    * The display name of this package.
    */
@@ -70,8 +75,14 @@ export const mpg123dePackage = {
     '1.32.0',
     '1.31.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'mpg123',
+  ] as const,
   fullPath: 'mpg123.de' as const,
-  aliases: [] as const,
 }
 
-export type Mpg123dePackage = typeof mpg123dePackage
+export type Mpg123Package = typeof mpg123Package

@@ -1,5 +1,5 @@
 /**
- * **zip** - A C library for reading, creating, and modifying zip archives.
+ * **+libzip.org -- $SHELL -i** - A C library for reading, creating, and modifying zip archives.
  *
  * @domain `libzip.org`
  * @programs `zipcmp`, `zipmerge`, `ziptool`
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libzip-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libzip.org -- $SHELL -i`
- * @aliases `zip`
+ * @aliases `+libzip.org -- $SHELL -i`, `zip`
  * @dependencies `facebook.com/zstd>=1.5.0`, `darwinsourceware.org/bzip2>=1.0.8tukaani.org/xz>=5.2.7zlib.net>=1.2.13`, `sourceware.org/bzip2>=1.0.8`, ... (+4 more)
  *
  * @example
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.zip
+ * const pkg = pantry.libziporgSHELLi
  * // Or access via domain
  * const samePkg = pantry.libziporg
  * console.log(pkg === samePkg) // true
@@ -28,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libzip-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zipPackage = {
+export const libziporgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -85,14 +85,15 @@ export const zipPackage = {
     '1.10.0',
     '1.9.2',
   ] as const,
-  fullPath: 'libzip.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
+    '+libzip.org -- $SHELL -i',
     'zip',
   ] as const,
+  fullPath: 'libzip.org' as const,
 }
 
-export type ZipPackage = typeof zipPackage
+export type LibziporgSHELLiPackage = typeof libziporgSHELLiPackage

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/eksctl-io.md
  *
  * @install `sh <(curl https://pkgx.sh) eksctl`
+ * @aliases `eksctl`
  * @dependencies `github.com/kubernetes-sigs/aws-iam-authenticator`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.eksctlio
+ * // Access via alias (recommended)
+ * const pkg = pantry.eksctl
+ * // Or access via domain
+ * const samePkg = pantry.eksctlio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "eksctl"
  * console.log(pkg.description) // "Simple command-line tool for creating clusters ..."
  * console.log(pkg.programs)    // ["eksctl"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/eksctl-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const eksctlioPackage = {
+export const eksctlPackage = {
   /**
    * The display name of this package.
    */
@@ -120,8 +125,14 @@ export const eksctlioPackage = {
     '0.155.0',
     '0.154.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'eksctl',
+  ] as const,
   fullPath: 'eksctl.io' as const,
-  aliases: [] as const,
 }
 
-export type EksctlioPackage = typeof eksctlioPackage
+export type EksctlPackage = typeof eksctlPackage

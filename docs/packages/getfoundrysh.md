@@ -25,6 +25,12 @@ This package provides the following executable programs:
 - `cast`
 - `chisel`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+getfoundry.sh -- $SHELL -i`
+
 ## Available Versions
 
 <details>

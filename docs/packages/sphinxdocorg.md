@@ -25,6 +25,13 @@ This package provides the following executable programs:
 - `sphinx-build`
 - `sphinx-quickstart`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+sphinx-doc.org -- $SHELL -i`
+- `sphinx`
+
 ## Available Versions
 
 <details>

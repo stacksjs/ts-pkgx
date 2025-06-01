@@ -82,7 +82,6 @@ export const makorenderPackage = {
     '1.3.0',
     '1.2.4',
   ] as const,
-  fullPath: 'makotemplates.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -90,6 +89,7 @@ export const makorenderPackage = {
   aliases: [
     'mako-render',
   ] as const,
+  fullPath: 'makotemplates.org' as const,
 }
 
 export type MakorenderPackage = typeof makorenderPackage

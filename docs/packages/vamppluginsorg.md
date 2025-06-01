@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `vamp-simple-host`
 - `vamp-rdf-template-generator`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+vamp-plugins.org -- $SHELL -i`
+- `vamp`
+
 ## Available Versions
 
 <details>

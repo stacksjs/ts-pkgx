@@ -1,5 +1,5 @@
 /**
- * **protocol buffers** - Protocol Buffers - Google's data interchange format
+ * **protoc** - Protocol Buffers - Google's data interchange format
  *
  * @domain `protobuf.dev`
  * @programs `protoc`
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/protobuf-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) protoc`
- * @aliases `protocol buffers`
+ * @aliases `protoc`, `protocol buffers`
  * @dependencies `zlib.net^1`, `abseil.io`
  *
  * @example
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.protocolbuffers
+ * const pkg = pantry.protoc
  * // Or access via domain
  * const samePkg = pantry.protobufdev
  * console.log(pkg === samePkg) // true
@@ -28,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/protobuf-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const protocolbuffersPackage = {
+export const protocPackage = {
   /**
    * The display name of this package.
    */
@@ -114,14 +114,15 @@ export const protocolbuffersPackage = {
     '22.5.0',
     '21.12.0',
   ] as const,
-  fullPath: 'protobuf.dev' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
+    'protoc',
     'protocol buffers',
   ] as const,
+  fullPath: 'protobuf.dev' as const,
 }
 
-export type ProtocolbuffersPackage = typeof protocolbuffersPackage
+export type ProtocPackage = typeof protocPackage

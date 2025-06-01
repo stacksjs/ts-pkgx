@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `fluentci`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `fluentci`
+
 ## Available Versions
 
 <details>

@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/depot-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) depot`
+ * @aliases `depot`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.depotdev
+ * // Access via alias (recommended)
+ * const pkg = pantry.depot
+ * // Or access via domain
+ * const samePkg = pantry.depotdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "depot"
  * console.log(pkg.description) // "🖥️ Depot CLI, build your Docker images in the ..."
  * console.log(pkg.programs)    // ["depot"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/depot-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const depotdevPackage = {
+export const depotPackage = {
   /**
    * The display name of this package.
    */
@@ -97,8 +102,14 @@ export const depotdevPackage = {
     '2.70.0',
     '2.68.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'depot',
+  ] as const,
   fullPath: 'depot.dev' as const,
-  aliases: [] as const,
 }
 
-export type DepotdevPackage = typeof depotdevPackage
+export type DepotPackage = typeof depotPackage

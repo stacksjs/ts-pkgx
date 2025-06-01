@@ -7,6 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/projen-io.md
  *
  * @install `sh <(curl https://pkgx.sh) projen`
+ * @aliases `projen`
  * @dependencies `nodejs.org^22 || ^20 || ^18`
  * @companions `git-scm.org`, `classic.yarnpkg.com`, `maven.apache.org`, ... (+2 more)
  *
@@ -14,7 +15,11 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.projenio
+ * // Access via alias (recommended)
+ * const pkg = pantry.projen
+ * // Or access via domain
+ * const samePkg = pantry.projenio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "projen"
  * console.log(pkg.description) // "Rapidly build modern applications with advanced..."
  * console.log(pkg.programs)    // ["projen"]
@@ -24,7 +29,7 @@
  * @see https://ts-pkgx.netlify.app/packages/projen-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const projenioPackage = {
+export const projenPackage = {
   /**
    * The display name of this package.
    */
@@ -111,8 +116,14 @@ export const projenioPackage = {
     '0.91.7',
     '0.91.6',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'projen',
+  ] as const,
   fullPath: 'projen.io' as const,
-  aliases: [] as const,
 }
 
-export type ProjenioPackage = typeof projenioPackage
+export type ProjenPackage = typeof projenPackage

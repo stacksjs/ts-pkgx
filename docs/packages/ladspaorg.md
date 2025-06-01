@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `applyplugin`
 - `listplugins`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+ladspa.org -- $SHELL -i`
+
 ## Available Versions
 
 <details>

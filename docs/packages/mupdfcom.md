@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `muraster`
 - `mutool`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+mupdf.com -- $SHELL -i`
+
 ## Available Versions
 
 <details>

@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `aux4`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `aux4`
+
 ## Available Versions
 
 <details>

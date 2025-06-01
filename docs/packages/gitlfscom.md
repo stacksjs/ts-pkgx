@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `git-lfs`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `git-lfs`
+
 ## Available Versions
 
 <details>

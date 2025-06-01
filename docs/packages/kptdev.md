@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `kpt`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `kpt`
+
 ## Available Versions
 
 <details>

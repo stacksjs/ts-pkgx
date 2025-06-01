@@ -70,7 +70,6 @@ export const cstoolPackage = {
     '5.0.0',
     '4.0.2',
   ] as const,
-  fullPath: 'capstone-engine.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -78,6 +77,7 @@ export const cstoolPackage = {
   aliases: [
     'cstool',
   ] as const,
+  fullPath: 'capstone-engine.org' as const,
 }
 
 export type CstoolPackage = typeof cstoolPackage

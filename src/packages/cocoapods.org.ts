@@ -86,7 +86,6 @@ export const podPackage = {
     '1.12.1',
     '1.5.0',
   ] as const,
-  fullPath: 'cocoapods.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -94,6 +93,7 @@ export const podPackage = {
   aliases: [
     'pod',
   ] as const,
+  fullPath: 'cocoapods.org' as const,
 }
 
 export type PodPackage = typeof podPackage

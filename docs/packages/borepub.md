@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `bore`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `bore`
+
 ## Available Versions
 
 <details>

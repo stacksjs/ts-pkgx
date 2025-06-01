@@ -30,6 +30,12 @@ This package provides the following executable programs:
 - `pps`
 - `pquery`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+openpmix.github.io -- $SHELL -i`
+
 ## Available Versions
 
 <details>

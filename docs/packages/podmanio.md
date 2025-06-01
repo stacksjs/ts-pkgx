@@ -24,6 +24,13 @@ This package provides the following executable programs:
 - `podman-remote`
 - `podman-mac-helper`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+podman.io -- $SHELL -i`
+- `podman`
+
 ## Available Versions
 
 <details>

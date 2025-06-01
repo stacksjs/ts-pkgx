@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `asciinema`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `asciinema`
+
 ## Available Versions
 
 <details>

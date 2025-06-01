@@ -151,7 +151,6 @@ export const pixiPackage = {
     '0.2.0',
     '0.1.0',
   ] as const,
-  fullPath: 'prefix.dev' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -159,6 +158,7 @@ export const pixiPackage = {
   aliases: [
     'pixi',
   ] as const,
+  fullPath: 'prefix.dev' as const,
 }
 
 export type PixiPackage = typeof pixiPackage

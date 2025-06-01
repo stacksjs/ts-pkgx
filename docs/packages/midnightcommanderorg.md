@@ -29,6 +29,8 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
+- `+midnight-commander.org -- $SHELL -i`
+- `Midnight Commander`
 - `midnight commander`
 
 ## Available Versions

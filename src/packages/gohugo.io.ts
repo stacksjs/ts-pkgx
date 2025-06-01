@@ -185,7 +185,6 @@ export const hugoPackage = {
     '0.105.0',
     '0.104.3',
   ] as const,
-  fullPath: 'gohugo.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -193,6 +192,7 @@ export const hugoPackage = {
   aliases: [
     'hugo',
   ] as const,
+  fullPath: 'gohugo.io' as const,
 }
 
 export type HugoPackage = typeof hugoPackage

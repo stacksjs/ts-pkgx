@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/soldeer-xyz.md
  *
  * @install `sh <(curl https://pkgx.sh) soldeer`
+ * @aliases `soldeer`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.soldeerxyz
+ * // Access via alias (recommended)
+ * const pkg = pantry.soldeer
+ * // Or access via domain
+ * const samePkg = pantry.soldeerxyz
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "soldeer"
  * console.log(pkg.description) // "Solidity Package Manager written in rust and in..."
  * console.log(pkg.programs)    // ["soldeer"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/soldeer-xyz.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const soldeerxyzPackage = {
+export const soldeerPackage = {
   /**
    * The display name of this package.
    */
@@ -61,8 +66,14 @@ export const soldeerxyzPackage = {
     '0.5.3',
     '0.5.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'soldeer',
+  ] as const,
   fullPath: 'soldeer.xyz' as const,
-  aliases: [] as const,
 }
 
-export type SoldeerxyzPackage = typeof soldeerxyzPackage
+export type SoldeerPackage = typeof soldeerPackage

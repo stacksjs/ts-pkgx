@@ -6,7 +6,7 @@ Database systems and data storage solutions.
 
 ## Packages
 
-### [duckdborg](../packages/duckdborg.md) ()
+### [duckdborg](../packages/duckdborg.md) (duckdb)
 
 DuckDB is an analytical in-process SQL database management system
 
@@ -16,7 +16,7 @@ DuckDB is an analytical in-process SQL database management system
 
 ---
 
-### [mongodbcom](../packages/mongodbcom.md) ()
+### [mongodbcom](../packages/mongodbcom.md) (+mongodb.com -- $SHELL -i)
 
 The MongoDB Database
 
@@ -26,7 +26,7 @@ The MongoDB Database
 
 ---
 
-### [mysqlcom](../packages/mysqlcom.md) ()
+### [mysqlcom](../packages/mysqlcom.md) (+mysql.com -- $SHELL -i)
 
 MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.
 
@@ -36,7 +36,7 @@ MySQL Server, the world's most popular open source database, and MySQL Cluster, 
 
 ---
 
-### [postgresqlorg](../packages/postgresqlorg.md) ()
+### [postgresqlorg](../packages/postgresqlorg.md) (+postgresql.org -- $SHELL -i)
 
 Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
 
@@ -46,7 +46,7 @@ Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirr
 
 ---
 
-### [redisio](../packages/redisio.md) ()
+### [redisio](../packages/redisio.md) (+redis.io -- $SHELL -i, redis)
 
 Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps.
 
@@ -66,7 +66,7 @@ Official Git mirror of the SQLite source tree
 
 ---
 
-### [surrealdbcom](../packages/surrealdbcom.md) ()
+### [surrealdbcom](../packages/surrealdbcom.md) (surreal)
 
 A scalable, distributed, collaborative, document-graph database, for the realtime web
 
@@ -76,7 +76,7 @@ A scalable, distributed, collaborative, document-graph database, for the realtim
 
 ---
 
-### [valkeyio](../packages/valkeyio.md) ()
+### [valkeyio](../packages/valkeyio.md) (+valkey.io -- $SHELL -i, valkey)
 
 A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
 

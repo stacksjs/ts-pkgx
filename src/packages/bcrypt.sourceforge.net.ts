@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bcrypt-sourceforge-net.md
  *
  * @install `sh <(curl https://pkgx.sh) bcrypt`
+ * @aliases `bcrypt`
  * @dependencies `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.bcryptsourceforgenet
+ * // Access via alias (recommended)
+ * const pkg = pantry.bcrypt
+ * // Or access via domain
+ * const samePkg = pantry.bcryptsourceforgenet
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "bcrypt"
  * console.log(pkg.description) // "Cross platform file encryption utility using bl..."
  * console.log(pkg.programs)    // ["bcrypt"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bcrypt-sourceforge-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bcryptsourceforgenetPackage = {
+export const bcryptPackage = {
   /**
    * The display name of this package.
    */
@@ -66,8 +71,14 @@ export const bcryptsourceforgenetPackage = {
   versions: [
     '1.1.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'bcrypt',
+  ] as const,
   fullPath: 'bcrypt.sourceforge.net' as const,
-  aliases: [] as const,
 }
 
-export type BcryptsourceforgenetPackage = typeof bcryptsourceforgenetPackage
+export type BcryptPackage = typeof bcryptPackage

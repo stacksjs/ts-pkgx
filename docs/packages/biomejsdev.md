@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `biome`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `biome`
+
 ## Available Versions
 
 <details>

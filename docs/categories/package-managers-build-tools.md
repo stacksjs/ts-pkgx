@@ -6,7 +6,7 @@ Packages related to package managers & build tools.
 
 ## Packages
 
-### [cmakeorg](../packages/cmakeorg.md) ()
+### [cmakeorg](../packages/cmakeorg.md) (+cmake.org -- $SHELL -i)
 
 Mirror of CMake upstream repository
 
@@ -24,7 +24,7 @@ Mirror of CMake upstream repository
 
 ---
 
-### [gradleorg](../packages/gradleorg.md) ()
+### [gradleorg](../packages/gradleorg.md) (gradle)
 
 Open-source build automation tool based on the Groovy and Kotlin DSL
 
@@ -34,7 +34,7 @@ Open-source build automation tool based on the Groovy and Kotlin DSL
 
 ---
 
-### [mavenapacheorg](../packages/mavenapacheorg.md) (mvn)
+### [mavenapacheorg](../packages/mavenapacheorg.md) (+maven.apache.org -- $SHELL -i, mvn)
 
 Java-based project management
 
@@ -44,7 +44,7 @@ Java-based project management
 
 ---
 
-### [mesonbuildcom](../packages/mesonbuildcom.md) ()
+### [mesonbuildcom](../packages/mesonbuildcom.md) (meson)
 
 Fast and user friendly build system
 
@@ -54,7 +54,7 @@ Fast and user friendly build system
 
 ---
 
-### [ninjabuildorg](../packages/ninjabuildorg.md) ()
+### [ninjabuildorg](../packages/ninjabuildorg.md) (ninja)
 
 Small build system for use with gyp or CMake
 
@@ -64,7 +64,7 @@ Small build system for use with gyp or CMake
 
 ---
 
-### [npmjscom](../packages/npmjscom.md) ()
+### [npmjscom](../packages/npmjscom.md) (+npmjs.com -- $SHELL -i)
 
 the package manager for JavaScript
 
@@ -74,7 +74,7 @@ the package manager for JavaScript
 
 ---
 
-### [pipenvpypaio](../packages/pipenvpypaio.md) ()
+### [pipenvpypaio](../packages/pipenvpypaio.md) (pipenv)
 
 Python Development Workflow for Humans.
 
@@ -84,7 +84,7 @@ Python Development Workflow for Humans.
 
 ---
 
-### [pippypaio](../packages/pippypaio.md) ()
+### [pippypaio](../packages/pippypaio.md) (+pip.pypa.io -- $SHELL -i, pip)
 
 The Python package installer
 
@@ -94,7 +94,7 @@ The Python package installer
 
 ---
 
-### [pnpmio](../packages/pnpmio.md) ()
+### [pnpmio](../packages/pnpmio.md) (+pnpm.io -- $SHELL -i, pnp)
 
 Fast, disk space efficient package manager
 
@@ -114,7 +114,7 @@ Python packaging and dependency management made easy
 
 ---
 
-### [rubygemsorg](../packages/rubygemsorg.md) ()
+### [rubygemsorg](../packages/rubygemsorg.md) (+rubygems.org -- $SHELL -i)
 
 Powerful, clean, object-oriented scripting language
 
@@ -124,7 +124,7 @@ Powerful, clean, object-oriented scripting language
 
 ---
 
-### [yarnpkgcom](../packages/yarnpkgcom.md) ()
+### [yarnpkgcom](../packages/yarnpkgcom.md) (+yarnpkg.com -- $SHELL -i, yarn)
 
 📦🐈 Active development trunk for Yarn ⚒
 

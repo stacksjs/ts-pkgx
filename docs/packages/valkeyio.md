@@ -24,6 +24,13 @@ This package provides the following executable programs:
 - `valkey-cli`
 - `valkey-benchmark`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+valkey.io -- $SHELL -i`
+- `valkey`
+
 ## Available Versions
 
 <details>

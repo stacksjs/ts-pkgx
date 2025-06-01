@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `vale`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `vale`
+
 ## Available Versions
 
 <details>

@@ -26,14 +26,15 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
+- `aws`
 - `aws/cli`
-- `cli`
 
 ## Available Versions
 
 <details>
-<summary>Show all 893 versions</summary>
+<summary>Show all 903 versions</summary>
 
+- `2.27.26`, `2.27.25`, `2.27.24`, `2.27.23`, `2.27.22`
 - `2.27.21`, `2.27.20`, `2.27.19`, `2.27.18`, `2.27.17`
 - `2.27.16`, `2.27.15`, `2.27.14`, `2.27.13`, `2.27.12`
 - `2.27.11`, `2.27.10`, `2.27.9`, `2.27.8`, `2.27.7`
@@ -108,7 +109,8 @@ This package can also be accessed using these aliases:
 - `2.11.22`, `2.11.21`, `2.11.20`, `2.11.19`, `2.11.18`
 - `2.11.17`, `2.11.16`, `2.11.15`, `2.11.14`, `2.11.13`
 - `2.11.12`, `2.11.11`, `2.11.10`, `2.11.9`, `2.11.8`
-- `2.11.7`, `2.10.4`, `2.10.3`, `1.40.21`, `1.40.20`
+- `2.11.7`, `2.10.4`, `2.10.3`, `1.40.26`, `1.40.25`
+- `1.40.24`, `1.40.23`, `1.40.22`, `1.40.21`, `1.40.20`
 - `1.40.19`, `1.40.18`, `1.40.17`, `1.40.16`, `1.40.15`
 - `1.40.14`, `1.40.13`, `1.40.12`, `1.40.11`, `1.40.10`
 - `1.40.9`, `1.40.8`, `1.40.7`, `1.40.6`, `1.40.5`
@@ -216,13 +218,13 @@ This package can also be accessed using these aliases:
 
 </details>
 
-**Latest Version**: `2.27.21`
+**Latest Version**: `2.27.26`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx aws/cli@2.27.21
+pkgx aws/cli@2.27.26
 ```
 
 ## Dependencies

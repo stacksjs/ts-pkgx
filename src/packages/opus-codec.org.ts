@@ -1,17 +1,22 @@
 /**
- * **opus-codec.org** - Modern audio compression for the internet.
+ * **+opus-codec.org -- $SHELL -i** - Modern audio compression for the internet.
  *
  * @domain `opus-codec.org`
  * @version `1.5.2` (5 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/opus-codec-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +opus-codec.org -- $SHELL -i`
+ * @aliases `+opus-codec.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.opuscodecorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.opuscodecorgSHELLi
+ * // Or access via domain
+ * const samePkg = pantry.opuscodecorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "opus-codec.org"
  * console.log(pkg.description) // "Modern audio compression for the internet."
  * console.log(pkg.versions[0]) // "1.5.2" (latest)
@@ -20,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/opus-codec-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const opuscodecorgPackage = {
+export const opuscodecorgSHELLiPackage = {
   /**
    * The display name of this package.
    */
@@ -55,8 +60,14 @@ export const opuscodecorgPackage = {
     '1.4.0',
     '1.3.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    '+opus-codec.org -- $SHELL -i',
+  ] as const,
   fullPath: 'opus-codec.org' as const,
-  aliases: [] as const,
 }
 
-export type OpuscodecorgPackage = typeof opuscodecorgPackage
+export type OpuscodecorgSHELLiPackage = typeof opuscodecorgSHELLiPackage

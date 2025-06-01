@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xpra-org.md
  *
  * @install `sh <(curl https://pkgx.sh) xpra`
+ * @aliases `xpra`
  * @dependencies `pkgx.sh^1`, `python.org~3.11`, `cython.org`, ... (+26 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.xpraorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.xpra
+ * // Or access via domain
+ * const samePkg = pantry.xpraorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "xpra"
  * console.log(pkg.description) // "Persistent remote applications for X11; screen ..."
  * console.log(pkg.programs)    // ["xpra"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/xpra-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xpraorgPackage = {
+export const xpraPackage = {
   /**
    * The display name of this package.
    */
@@ -102,8 +107,14 @@ export const xpraorgPackage = {
     '6.1.3',
     '6.1.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'xpra',
+  ] as const,
   fullPath: 'xpra.org' as const,
-  aliases: [] as const,
 }
 
-export type XpraorgPackage = typeof xpraorgPackage
+export type XpraPackage = typeof xpraPackage

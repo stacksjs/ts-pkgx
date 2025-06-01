@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `fury`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `fury`
+
 ## Available Versions
 
 <details>

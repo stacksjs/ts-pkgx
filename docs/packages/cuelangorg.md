@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `cue`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `cue`
+
 ## Available Versions
 
 <details>

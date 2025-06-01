@@ -25,6 +25,13 @@ This package provides the following executable programs:
 - `srt-live-transmit`
 - `srt-tunnel`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `+srtalliance.org -- $SHELL -i`
+- `srt`
+
 ## Available Versions
 
 <details>
