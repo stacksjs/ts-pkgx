@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dnslookupdog`
+- **Domain**: `dns.lookup.dog`
 - **Name**: `dog`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rpmorg`
+- **Domain**: `rpm.org`
 - **Name**: `rpm.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

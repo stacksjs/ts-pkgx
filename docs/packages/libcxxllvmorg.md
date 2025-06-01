@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libcxxllvmorg`
+- **Domain**: `libcxx.llvm.org`
 - **Name**: `libcxx.llvm.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

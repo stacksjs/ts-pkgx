@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `spacetimedbcom`
+- **Domain**: `spacetimedb.com`
 - **Name**: `spacetime`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

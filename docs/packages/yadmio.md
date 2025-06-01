@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `yadmio`
+- **Domain**: `yadm.io`
 - **Name**: `yadm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

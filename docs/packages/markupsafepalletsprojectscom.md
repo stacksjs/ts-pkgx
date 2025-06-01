@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `markupsafepalletsprojectscom`
+- **Domain**: `markupsafe.palletsprojects.com`
 - **Name**: `markupsafe.palletsprojects.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

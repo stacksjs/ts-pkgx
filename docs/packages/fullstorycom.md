@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fullstorycom`
+- **Domain**: `fullstory.com`
 - **Name**: `fullstory.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

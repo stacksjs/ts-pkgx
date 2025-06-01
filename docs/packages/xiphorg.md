@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `xiphorg`
+- **Domain**: `xiph.org`
 - **Name**: `xiph.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

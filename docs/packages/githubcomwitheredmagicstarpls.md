@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomwitheredmagicstarpls`
+- **Domain**: `github.com/withered-magic-starpls`
 - **Name**: `github.com/withered-magic-starpls`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `lamesourceforgeio`
+- **Domain**: `lame.sourceforge.io`
 - **Name**: `lame`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

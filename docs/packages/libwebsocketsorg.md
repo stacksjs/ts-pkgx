@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libwebsocketsorg`
+- **Domain**: `libwebsockets.org`
 - **Name**: `libwebsockets.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

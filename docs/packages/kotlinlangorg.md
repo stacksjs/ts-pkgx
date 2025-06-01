@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kotlinlangorg`
+- **Domain**: `kotlinlang.org`
 - **Name**: `kotlinlang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

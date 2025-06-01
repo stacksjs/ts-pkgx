@@ -6,7 +6,7 @@ Packages related to development tools.
 
 ## Packages
 
-### [git/scm.org](../packages/git/scm-org.md)
+### [git/scm.org](../packages/gitscmorg.md)
 
 Crafters of fine Open Source products
 
@@ -16,7 +16,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [github.com](../packages/github-com.md)
+### [github.com](../packages/githubcom.md)
 
 Go home.
 
@@ -26,7 +26,7 @@ Go home.
 
 ---
 
-### [gitlab.com](../packages/gitlab-com.md)
+### [gitlab.com](../packages/gitlabcom.md)
 
 Go home.
 
@@ -36,7 +36,7 @@ Go home.
 
 ---
 
-### [neovim.io](../packages/neovim-io.md)
+### [neovim.io](../packages/neovimio.md)
 
 Crafters of fine Open Source products
 
@@ -46,7 +46,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [prettier.io](../packages/prettier-io.md)
+### [prettier.io](../packages/prettierio.md)
 
 Crafters of fine Open Source products
 
@@ -56,7 +56,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [vim.org](../packages/vim-org.md)
+### [vim.org](../packages/vimorg.md)
 
 Crafters of fine Open Source products
 

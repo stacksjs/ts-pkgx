@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pagureio`
+- **Domain**: `pagure.io`
 - **Name**: `pagure.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

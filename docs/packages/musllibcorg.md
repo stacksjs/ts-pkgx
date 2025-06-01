@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `musllibcorg`
+- **Domain**: `musl.libc.org`
 - **Name**: `musl.libc.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mupdfcom`
+- **Domain**: `mupdf.com`
 - **Name**: `mupdf.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

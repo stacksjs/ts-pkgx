@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pyyamlorg`
+- **Domain**: `pyyaml.org`
 - **Name**: `pyyaml.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

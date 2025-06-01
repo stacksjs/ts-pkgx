@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `qpdfsourceforgeio`
+- **Domain**: `qpdf.sourceforge.io`
 - **Name**: `qpdf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

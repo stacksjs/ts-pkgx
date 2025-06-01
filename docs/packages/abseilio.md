@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `abseilio`
+- **Domain**: `abseil.io`
 - **Name**: `abseil.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `developer1passwordcom1passwordcli`
+- **Domain**: `developer.1password.com/1password-cli`
 - **Name**: `developer.1password.com/1password-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `julialangorg`
+- **Domain**: `julialang.org`
 - **Name**: `julia`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

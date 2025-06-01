@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kluctlio`
+- **Domain**: `kluctl.io`
 - **Name**: `kluctl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

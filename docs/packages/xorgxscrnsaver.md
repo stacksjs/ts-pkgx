@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `xorgxscrnsaver`
+- **Domain**: `x.org/xscrnsaver`
 - **Name**: `x.org/xscrnsaver`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `projectcopaceticgithubio`
+- **Domain**: `project/copacetic.github.io`
 - **Name**: `copa`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

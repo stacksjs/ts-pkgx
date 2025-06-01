@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sagiegurarigithubio`
+- **Domain**: `sagiegurari.github.io`
 - **Name**: `sagiegurari.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

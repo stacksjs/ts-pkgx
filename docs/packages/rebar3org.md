@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rebar3org`
+- **Domain**: `rebar3.org`
 - **Name**: `rebar3`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

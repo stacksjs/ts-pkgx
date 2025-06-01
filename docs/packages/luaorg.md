@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `luaorg`
+- **Domain**: `lua.org`
 - **Name**: `lua`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `aria2githubio`
+- **Domain**: `aria2.github.io`
 - **Name**: `aria2c`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

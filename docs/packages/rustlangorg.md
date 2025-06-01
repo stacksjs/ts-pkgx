@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rustlangorg`
+- **Domain**: `rust/lang.org`
 - **Name**: `rust`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pnpmio`
+- **Domain**: `pnpm.io`
 - **Name**: `pnp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

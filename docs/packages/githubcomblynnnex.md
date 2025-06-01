@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomblynnnex`
+- **Domain**: `github.com/blynn-nex`
 - **Name**: `github.com/blynn-nex`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

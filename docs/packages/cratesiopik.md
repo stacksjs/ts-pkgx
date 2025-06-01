@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cratesiopik`
+- **Domain**: `crates.io/pik`
 - **Name**: `crates.io/pik`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

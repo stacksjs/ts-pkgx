@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sourcewareorg`
+- **Domain**: `sourceware.org`
 - **Name**: `sourceware.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

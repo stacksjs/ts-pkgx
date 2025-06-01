@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `edgedbcom`
+- **Domain**: `edgedb.com`
 - **Name**: `edgedb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

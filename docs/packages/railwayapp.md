@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `railwayapp`
+- **Domain**: `railway.app`
 - **Name**: `railway`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

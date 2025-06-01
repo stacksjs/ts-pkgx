@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `astgrepgithubio`
+- **Domain**: `ast/grep.github.io`
 - **Name**: `ast-grep.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

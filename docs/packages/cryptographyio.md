@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cryptographyio`
+- **Domain**: `cryptography.io`
 - **Name**: `cryptography.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

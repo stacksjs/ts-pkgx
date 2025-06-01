@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openinterpretercom`
+- **Domain**: `openinterpreter.com`
 - **Name**: `open-interpreter`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gflagsgithubio`
+- **Domain**: `gflags.github.io`
 - **Name**: `gflags.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

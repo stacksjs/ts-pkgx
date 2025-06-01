@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `chezmoiio`
+- **Domain**: `chezmoi.io`
 - **Name**: `chezmoi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

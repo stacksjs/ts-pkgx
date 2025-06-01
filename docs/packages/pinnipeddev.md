@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pinnipeddev`
+- **Domain**: `pinniped.dev`
 - **Name**: `pinniped`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

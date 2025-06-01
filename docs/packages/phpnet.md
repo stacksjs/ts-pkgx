@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `phpnet`
+- **Domain**: `php.net`
 - **Name**: `php.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

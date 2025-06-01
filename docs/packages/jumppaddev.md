@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jumppaddev`
+- **Domain**: `jumppad.dev`
 - **Name**: `jumppad`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

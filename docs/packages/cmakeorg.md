@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cmakeorg`
+- **Domain**: `cmake.org`
 - **Name**: `cmake.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

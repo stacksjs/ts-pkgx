@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `localstackcloud`
+- **Domain**: `localstack.cloud`
 - **Name**: `localstack.cloud`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

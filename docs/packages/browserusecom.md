@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `browserusecom`
+- **Domain**: `browser/use.com`
 - **Name**: `browser-use.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openbaoorg`
+- **Domain**: `openbao.org`
 - **Name**: `openbao.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

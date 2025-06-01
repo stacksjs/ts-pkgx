@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `atlasgoio`
+- **Domain**: `atlasgo.io`
 - **Name**: `atlas`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

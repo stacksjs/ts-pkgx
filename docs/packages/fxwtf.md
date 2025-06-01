@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fxwtf`
+- **Domain**: `fx.wtf`
 - **Name**: `fx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `schollzcom`
+- **Domain**: `schollz.com`
 - **Name**: `schollz.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

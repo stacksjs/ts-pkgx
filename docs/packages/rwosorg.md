@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rwosorg`
+- **Domain**: `r/wos.org`
 - **Name**: `r/wos.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gohugoio`
+- **Domain**: `gohugo.io`
 - **Name**: `hugo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

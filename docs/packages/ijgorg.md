@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ijgorg`
+- **Domain**: `ijg.org`
 - **Name**: `ijg.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

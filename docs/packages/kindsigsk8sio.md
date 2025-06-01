@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kindsigsk8sio`
+- **Domain**: `kind.sigs.k8s.io`
 - **Name**: `kind`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomkoekeishiyaskhd`
+- **Domain**: `github.com/koekeishiya-skhd`
 - **Name**: `github.com/koekeishiya-skhd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

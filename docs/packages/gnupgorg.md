@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gnupgorg`
+- **Domain**: `gnupg.org`
 - **Name**: `gnupg.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

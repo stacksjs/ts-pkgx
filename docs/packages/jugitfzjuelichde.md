@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jugitfzjuelichde`
+- **Domain**: `jugit.fz/juelich.de`
 - **Name**: `jugit.fz/juelich.de`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

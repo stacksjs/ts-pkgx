@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jenkinsio`
+- **Domain**: `jenkins.io`
 - **Name**: `jenkins-lts`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

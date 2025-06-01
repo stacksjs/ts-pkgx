@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `portaudiocom`
+- **Domain**: `portaudio.com`
 - **Name**: `PortAudio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

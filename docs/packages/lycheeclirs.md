@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `lycheeclirs`
+- **Domain**: `lychee.cli.rs`
 - **Name**: `lychee`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

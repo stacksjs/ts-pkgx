@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pixmanorg`
+- **Domain**: `pixman.org`
 - **Name**: `pixman.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

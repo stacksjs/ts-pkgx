@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jenkinsxio`
+- **Domain**: `jenkins/x.io`
 - **Name**: `Jenkins`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

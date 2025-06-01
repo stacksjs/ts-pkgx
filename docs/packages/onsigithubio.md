@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `onsigithubio`
+- **Domain**: `onsi.github.io`
 - **Name**: `onsi.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

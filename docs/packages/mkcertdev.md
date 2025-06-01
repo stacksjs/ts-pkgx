@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mkcertdev`
+- **Domain**: `mkcert.dev`
 - **Name**: `mkcert`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

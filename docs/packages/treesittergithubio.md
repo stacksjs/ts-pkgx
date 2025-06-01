@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `treesittergithubio`
+- **Domain**: `tree/sitter.github.io`
 - **Name**: `tree-sitter`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

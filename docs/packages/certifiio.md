@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `certifiio`
+- **Domain**: `certifi.io`
 - **Name**: `certifi.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

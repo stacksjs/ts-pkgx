@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `certbotefforg`
+- **Domain**: `certbot.eff.org`
 - **Name**: `certbot`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

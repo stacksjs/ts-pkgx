@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `macfusegithubio`
+- **Domain**: `macfuse.github.io`
 - **Name**: `macfuse.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

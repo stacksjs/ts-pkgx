@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `apptainerorg`
+- **Domain**: `apptainer.org`
 - **Name**: `apptainer.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

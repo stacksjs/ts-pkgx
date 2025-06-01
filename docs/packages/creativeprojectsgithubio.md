@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `creativeprojectsgithubio`
+- **Domain**: `creativeprojects.github.io`
 - **Name**: `creativeprojects.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cedarpolicycom`
+- **Domain**: `cedarpolicy.com`
 - **Name**: `cedarpolicy.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

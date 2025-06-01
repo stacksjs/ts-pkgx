@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `linuxpamorg`
+- **Domain**: `linux/pam.org`
 - **Name**: `linux-pam.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

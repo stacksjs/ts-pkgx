@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `capstoneengineorg`
+- **Domain**: `capstone/engine.org`
 - **Name**: `cstool`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

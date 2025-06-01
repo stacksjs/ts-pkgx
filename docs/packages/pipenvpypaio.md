@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pipenvpypaio`
+- **Domain**: `pipenv.pypa.io`
 - **Name**: `pipenv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

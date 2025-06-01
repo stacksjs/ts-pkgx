@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gradleorg`
+- **Domain**: `gradle.org`
 - **Name**: `gradle`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

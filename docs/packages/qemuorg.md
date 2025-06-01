@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `qemuorg`
+- **Domain**: `qemu.org`
 - **Name**: `qemu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

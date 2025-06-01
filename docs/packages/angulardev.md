@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `angulardev`
+- **Domain**: `angular.dev`
 - **Name**: `ng`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

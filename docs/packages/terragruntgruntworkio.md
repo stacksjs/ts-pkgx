@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `terragruntgruntworkio`
+- **Domain**: `terragrunt.gruntwork.io`
 - **Name**: `terragrunt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

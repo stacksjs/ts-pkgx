@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pkgxshdev`
+- **Domain**: `pkgx.sh/dev`
 - **Name**: `pkgx.sh/dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

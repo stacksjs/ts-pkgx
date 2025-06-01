@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `microsoftcomcodecli`
+- **Domain**: `microsoft.com/code-cli`
 - **Name**: `microsoft.com/code-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

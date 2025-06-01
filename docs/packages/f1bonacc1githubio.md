@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `f1bonacc1githubio`
+- **Domain**: `f1bonacc1.github.io`
 - **Name**: `f1bonacc1.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

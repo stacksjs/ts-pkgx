@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `direnvnet`
+- **Domain**: `direnv.net`
 - **Name**: `direnv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

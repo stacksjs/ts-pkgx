@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ghostgumcomau`
+- **Domain**: `ghostgum.com.au`
 - **Name**: `ghostgum.com.au`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

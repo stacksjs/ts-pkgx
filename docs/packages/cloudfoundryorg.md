@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cloudfoundryorg`
+- **Domain**: `cloudfoundry.org`
 - **Name**: `cloudfoundry.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

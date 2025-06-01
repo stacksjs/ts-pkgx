@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ntporg`
+- **Domain**: `ntp.org`
 - **Name**: `ntp.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

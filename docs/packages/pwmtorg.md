@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pwmtorg`
+- **Domain**: `pwmt.org`
 - **Name**: `pwmt.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cratesioox`
+- **Domain**: `crates.io/ox`
 - **Name**: `crates.io/ox`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

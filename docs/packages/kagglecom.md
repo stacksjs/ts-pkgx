@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kagglecom`
+- **Domain**: `kaggle.com`
 - **Name**: `kaggle`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

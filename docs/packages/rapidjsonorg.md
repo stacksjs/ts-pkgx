@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rapidjsonorg`
+- **Domain**: `rapidjson.org`
 - **Name**: `rapidjson.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

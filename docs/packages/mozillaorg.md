@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mozillaorg`
+- **Domain**: `mozilla.org`
 - **Name**: `mozilla.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

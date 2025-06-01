@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `poktnetwork`
+- **Domain**: `pokt.network`
 - **Name**: `pocket`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

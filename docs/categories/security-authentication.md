@@ -6,7 +6,7 @@ Packages related to security & authentication.
 
 ## Packages
 
-### [bitwarden.com](../packages/bitwarden-com.md)
+### [bitwarden.com](../packages/bitwardencom.md)
 
 Crafters of fine Open Source products
 
@@ -16,7 +16,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [developer.1password.com](../packages/developer-1password-com.md)
+### [developer.1password.com](../packages/developer1passwordcom.md)
 
 Go home.
 
@@ -26,7 +26,7 @@ Go home.
 
 ---
 
-### [hashicorp.com](../packages/hashicorp-com.md)
+### [hashicorp.com](../packages/hashicorpcom.md)
 
 Go home.
 

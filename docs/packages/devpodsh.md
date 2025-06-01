@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `devpodsh`
+- **Domain**: `devpod.sh`
 - **Name**: `devpod.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

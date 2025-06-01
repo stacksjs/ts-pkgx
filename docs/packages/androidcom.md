@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `androidcom`
+- **Domain**: `android.com`
 - **Name**: `android.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

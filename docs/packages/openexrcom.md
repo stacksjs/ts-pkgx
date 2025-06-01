@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openexrcom`
+- **Domain**: `openexr.com`
 - **Name**: `exr`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

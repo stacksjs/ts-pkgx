@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ghostscriptcom`
+- **Domain**: `ghostscript.com`
 - **Name**: `ghostscript.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

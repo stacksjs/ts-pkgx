@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openvpnnet`
+- **Domain**: `openvpn.net`
 - **Name**: `openvpn`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

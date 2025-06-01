@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kernelorg`
+- **Domain**: `kernel.org`
 - **Name**: `kernel.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

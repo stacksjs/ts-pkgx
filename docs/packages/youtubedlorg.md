@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `youtubedlorg`
+- **Domain**: `youtube/dl.org`
 - **Name**: `youtube-dl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

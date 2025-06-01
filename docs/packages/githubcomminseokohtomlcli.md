@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomminseokohtomlcli`
+- **Domain**: `github.com/MinseokOh-toml-cli`
 - **Name**: `github.com/MinseokOh-toml-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `awsamazoncom`
+- **Domain**: `aws.amazon.com`
 - **Name**: `aws.amazon.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

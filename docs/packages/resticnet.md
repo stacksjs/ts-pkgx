@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `resticnet`
+- **Domain**: `restic.net`
 - **Name**: `restic.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

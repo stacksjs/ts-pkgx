@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `glarosdtcumnedu`
+- **Domain**: `glaros.dtc.umn.edu`
 - **Name**: `glaros.dtc.umn.edu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

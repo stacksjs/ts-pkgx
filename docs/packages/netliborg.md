@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `netliborg`
+- **Domain**: `netlib.org`
 - **Name**: `netlib.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

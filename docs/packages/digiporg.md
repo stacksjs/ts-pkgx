@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `digiporg`
+- **Domain**: `digip.org`
 - **Name**: `digip.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

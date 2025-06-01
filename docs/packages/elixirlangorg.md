@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `elixirlangorg`
+- **Domain**: `elixir/lang.org`
 - **Name**: `elixir-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

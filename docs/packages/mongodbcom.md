@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mongodbcom`
+- **Domain**: `mongodb.com`
 - **Name**: `mongodb.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

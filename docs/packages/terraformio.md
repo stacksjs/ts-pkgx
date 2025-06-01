@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `terraformio`
+- **Domain**: `terraform.io`
 - **Name**: `terraform`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

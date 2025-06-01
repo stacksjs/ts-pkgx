@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `liburcuorg`
+- **Domain**: `liburcu.org`
 - **Name**: `liburcu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

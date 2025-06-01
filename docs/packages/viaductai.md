@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `viaductai`
+- **Domain**: `viaduct.ai`
 - **Name**: `viaduct.ai`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

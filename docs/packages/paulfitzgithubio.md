@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `paulfitzgithubio`
+- **Domain**: `paulfitz.github.io`
 - **Name**: `paulfitz.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

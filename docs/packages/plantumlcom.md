@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `plantumlcom`
+- **Domain**: `plantuml.com`
 - **Name**: `plantuml`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

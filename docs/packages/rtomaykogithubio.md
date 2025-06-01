@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rtomaykogithubio`
+- **Domain**: `rtomayko.github.io`
 - **Name**: `rtomayko.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

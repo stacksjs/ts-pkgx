@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `etcdio`
+- **Domain**: `etcd.io`
 - **Name**: `etcd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

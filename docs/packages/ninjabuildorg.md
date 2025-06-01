@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ninjabuildorg`
+- **Domain**: `ninja/build.org`
 - **Name**: `ninja`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mailpitaxllentorg`
+- **Domain**: `mailpit.axllent.org`
 - **Name**: `mailpit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

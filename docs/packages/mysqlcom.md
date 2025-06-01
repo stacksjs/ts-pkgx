@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mysqlcom`
+- **Domain**: `mysql.com`
 - **Name**: `mysql.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `taku910githubio`
+- **Domain**: `taku910.github.io`
 - **Name**: `taku910.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

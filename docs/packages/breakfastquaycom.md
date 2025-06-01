@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `breakfastquaycom`
+- **Domain**: `breakfastquay.com`
 - **Name**: `breakfastquay.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

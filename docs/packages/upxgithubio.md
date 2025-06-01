@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `upxgithubio`
+- **Domain**: `upx.github.io`
 - **Name**: `upx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

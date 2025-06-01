@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `glewsourceforgeio`
+- **Domain**: `glew.sourceforge.io`
 - **Name**: `glew.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

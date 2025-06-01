@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `maturinrs`
+- **Domain**: `maturin.rs`
 - **Name**: `maturin`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

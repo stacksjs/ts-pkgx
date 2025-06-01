@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `deepwisdomai`
+- **Domain**: `deepwisdom.ai`
 - **Name**: `MetaGPT`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

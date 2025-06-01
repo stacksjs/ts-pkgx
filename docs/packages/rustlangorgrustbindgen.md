@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rustlangorgrustbindgen`
+- **Domain**: `rust/lang.org-rust-bindgen`
 - **Name**: `rust/lang.org-rust-bindgen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

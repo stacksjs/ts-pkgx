@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `waylandfreedesktoporg`
+- **Domain**: `wayland.freedesktop.org`
 - **Name**: `wayland`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

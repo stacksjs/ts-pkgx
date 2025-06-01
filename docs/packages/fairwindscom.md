@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fairwindscom`
+- **Domain**: `fairwinds.com`
 - **Name**: `fairwinds.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

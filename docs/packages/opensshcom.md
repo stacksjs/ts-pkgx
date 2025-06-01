@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `opensshcom`
+- **Domain**: `openssh.com`
 - **Name**: `openssh.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

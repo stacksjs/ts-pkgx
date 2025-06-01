@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nushellsh`
+- **Domain**: `nushell.sh`
 - **Name**: `nu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

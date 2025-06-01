@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `scalasbtorg`
+- **Domain**: `scala/sbt.org`
 - **Name**: `sbt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

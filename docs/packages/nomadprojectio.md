@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nomadprojectio`
+- **Domain**: `nomadproject.io`
 - **Name**: `nomad`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

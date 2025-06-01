@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `onefetchdev`
+- **Domain**: `onefetch.dev`
 - **Name**: `onefetch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

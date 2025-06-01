@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gitleaksio`
+- **Domain**: `gitleaks.io`
 - **Name**: `gitleaks`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

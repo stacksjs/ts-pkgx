@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pypagithubio`
+- **Domain**: `pypa.github.io`
 - **Name**: `pypa.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

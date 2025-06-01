@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gphotoorg`
+- **Domain**: `gphoto.org`
 - **Name**: `gphoto.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nmaporg`
+- **Domain**: `nmap.org`
 - **Name**: `nmap.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

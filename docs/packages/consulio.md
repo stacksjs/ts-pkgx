@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `consulio`
+- **Domain**: `consul.io`
 - **Name**: `consul`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kornelski`
+- **Domain**: `kornel.ski`
 - **Name**: `kornel.ski`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

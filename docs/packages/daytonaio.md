@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `daytonaio`
+- **Domain**: `daytona.io`
 - **Name**: `daytona`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

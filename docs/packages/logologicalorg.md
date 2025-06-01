@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `logologicalorg`
+- **Domain**: `logological.org`
 - **Name**: `logological.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

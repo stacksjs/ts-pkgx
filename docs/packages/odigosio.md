@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `odigosio`
+- **Domain**: `odigos.io`
 - **Name**: `odigos`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

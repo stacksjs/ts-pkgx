@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mvdancc`
+- **Domain**: `mvdan.cc`
 - **Name**: `mvdan.cc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

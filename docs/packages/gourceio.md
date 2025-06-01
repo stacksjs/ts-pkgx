@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gourceio`
+- **Domain**: `gource.io`
 - **Name**: `gource`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

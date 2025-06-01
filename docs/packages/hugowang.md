@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `hugowang`
+- **Domain**: `hugo.wang`
 - **Name**: `hugo.wang`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

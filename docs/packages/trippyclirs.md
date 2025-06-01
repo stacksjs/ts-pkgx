@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `trippyclirs`
+- **Domain**: `trippy.cli.rs`
 - **Name**: `trip`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

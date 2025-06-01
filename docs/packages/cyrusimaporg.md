@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cyrusimaporg`
+- **Domain**: `cyrusimap.org`
 - **Name**: `cyrusimap.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

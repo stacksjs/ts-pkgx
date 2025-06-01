@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `httpieio`
+- **Domain**: `httpie.io`
 - **Name**: `httpie.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

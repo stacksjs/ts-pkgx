@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `digitaloceancom`
+- **Domain**: `digitalocean.com`
 - **Name**: `digitalocean.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

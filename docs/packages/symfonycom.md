@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `symfonycom`
+- **Domain**: `symfony.com`
 - **Name**: `symfony`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

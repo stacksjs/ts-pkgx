@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `packerio`
+- **Domain**: `packer.io`
 - **Name**: `packer`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `virtualenvpypaio`
+- **Domain**: `virtualenv.pypa.io`
 - **Name**: `virtualenv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `leonerdorguk`
+- **Domain**: `leonerd.org.uk`
 - **Name**: `leonerd.org.uk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

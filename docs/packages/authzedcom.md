@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `authzedcom`
+- **Domain**: `authzed.com`
 - **Name**: `authzed.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

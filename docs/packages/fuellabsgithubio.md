@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fuellabsgithubio`
+- **Domain**: `fuellabs.github.io`
 - **Name**: `fuellabs.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

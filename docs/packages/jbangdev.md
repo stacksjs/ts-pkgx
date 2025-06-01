@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jbangdev`
+- **Domain**: `jbang.dev`
 - **Name**: `jbang`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `linkerdio`
+- **Domain**: `linkerd.io`
 - **Name**: `linkerd.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

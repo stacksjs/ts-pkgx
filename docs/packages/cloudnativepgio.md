@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cloudnativepgio`
+- **Domain**: `cloudnative/pg.io`
 - **Name**: `kubectl-cnpg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

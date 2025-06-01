@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `lz4org`
+- **Domain**: `lz4.org`
 - **Name**: `lz4`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

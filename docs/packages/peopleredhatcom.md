@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `peopleredhatcom`
+- **Domain**: `people.redhat.com`
 - **Name**: `people.redhat.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

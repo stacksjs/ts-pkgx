@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `laravelcom`
+- **Domain**: `laravel.com`
 - **Name**: `laravel`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

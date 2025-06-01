@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rcloneorg`
+- **Domain**: `rclone.org`
 - **Name**: `rclone`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

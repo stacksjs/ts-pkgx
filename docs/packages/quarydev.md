@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `quarydev`
+- **Domain**: `quary.dev`
 - **Name**: `quary.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tagliborg`
+- **Domain**: `taglib.org`
 - **Name**: `taglib-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

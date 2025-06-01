@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `chromedriverchromiumorg`
+- **Domain**: `chromedriver.chromium.org`
 - **Name**: `chromedriver`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

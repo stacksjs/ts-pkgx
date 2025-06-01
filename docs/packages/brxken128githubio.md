@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `brxken128githubio`
+- **Domain**: `brxken128.github.io`
 - **Name**: `brxken128.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

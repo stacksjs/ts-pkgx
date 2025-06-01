@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ryeastralsh`
+- **Domain**: `rye.astral.sh`
 - **Name**: `rye`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

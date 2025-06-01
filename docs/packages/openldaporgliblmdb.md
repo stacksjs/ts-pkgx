@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openldaporgliblmdb`
+- **Domain**: `openldap.org/liblmdb`
 - **Name**: `openldap.org/liblmdb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `operatorframeworkio`
+- **Domain**: `operatorframework.io`
 - **Name**: `operatorframework.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

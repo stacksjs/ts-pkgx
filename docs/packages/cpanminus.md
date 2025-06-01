@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cpanminus`
+- **Domain**: `cpanmin.us`
 - **Name**: `cpanm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

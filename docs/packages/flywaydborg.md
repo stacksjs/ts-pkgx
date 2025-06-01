@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `flywaydborg`
+- **Domain**: `flywaydb.org`
 - **Name**: `flyway`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

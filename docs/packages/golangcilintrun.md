@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `golangcilintrun`
+- **Domain**: `golangci/lint.run`
 - **Name**: `golangci-lint`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

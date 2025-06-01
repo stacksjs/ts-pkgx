@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `opuscodecorg`
+- **Domain**: `opus/codec.org`
 - **Name**: `opus-codec.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

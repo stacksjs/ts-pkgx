@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `glmgtrucnet`
+- **Domain**: `glm.g/truc.net`
 - **Name**: `glm.g-truc.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

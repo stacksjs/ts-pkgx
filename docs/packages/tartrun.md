@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tartrun`
+- **Domain**: `tart.run`
 - **Name**: `tart`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

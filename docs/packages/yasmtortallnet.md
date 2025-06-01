@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `yasmtortallnet`
+- **Domain**: `yasm.tortall.net`
 - **Name**: `yasm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

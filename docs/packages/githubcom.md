@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcom`
+- **Domain**: `github.com`
 - **Name**: `github.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

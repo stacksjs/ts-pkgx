@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `bashlydannybco`
+- **Domain**: `bashly.dannyb.co`
 - **Name**: `bashly`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

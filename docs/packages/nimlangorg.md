@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nimlangorg`
+- **Domain**: `nim/lang.org`
 - **Name**: `nim-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

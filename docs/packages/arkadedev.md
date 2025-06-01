@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `arkadedev`
+- **Domain**: `arkade.dev`
 - **Name**: `Arkade`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

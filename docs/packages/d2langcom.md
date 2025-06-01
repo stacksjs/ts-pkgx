@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `d2langcom`
+- **Domain**: `d2lang.com`
 - **Name**: `d2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sigstoredev`
+- **Domain**: `sigstore.dev`
 - **Name**: `sigstore.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

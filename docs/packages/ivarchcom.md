@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ivarchcom`
+- **Domain**: `ivarch.com`
 - **Name**: `ivarch.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

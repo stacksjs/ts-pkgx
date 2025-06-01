@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `leolangorg`
+- **Domain**: `leo/lang.org`
 - **Name**: `leo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `huggingfaceco`
+- **Domain**: `huggingface.co`
 - **Name**: `huggingface/cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

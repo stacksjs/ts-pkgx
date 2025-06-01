@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gnuplotinfo`
+- **Domain**: `gnuplot.info`
 - **Name**: `gnuplot`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

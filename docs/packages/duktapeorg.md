@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `duktapeorg`
+- **Domain**: `duktape.org`
 - **Name**: `duk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

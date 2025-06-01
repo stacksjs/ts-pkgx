@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tesseractocrgithubio`
+- **Domain**: `tesseract/ocr.github.io`
 - **Name**: `tesseract`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

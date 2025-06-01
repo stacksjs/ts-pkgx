@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jemallocnet`
+- **Domain**: `jemalloc.net`
 - **Name**: `jemalloc.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

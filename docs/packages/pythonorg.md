@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pythonorg`
+- **Domain**: `python.org`
 - **Name**: `python`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

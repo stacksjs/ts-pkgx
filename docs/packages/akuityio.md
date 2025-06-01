@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `akuityio`
+- **Domain**: `akuity.io`
 - **Name**: `akuity.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

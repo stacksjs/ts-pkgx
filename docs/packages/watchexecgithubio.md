@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `watchexecgithubio`
+- **Domain**: `watchexec.github.io`
 - **Name**: `watchexec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

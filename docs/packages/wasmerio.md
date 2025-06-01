@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wasmerio`
+- **Domain**: `wasmer.io`
 - **Name**: `wasmer`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libuvorg`
+- **Domain**: `libuv.org`
 - **Name**: `libuv.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

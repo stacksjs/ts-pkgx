@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `qtio`
+- **Domain**: `qt.io`
 - **Name**: `qt.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

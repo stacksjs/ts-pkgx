@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `heasarcgsfcnasagov`
+- **Domain**: `heasarc.gsfc.nasa.gov`
 - **Name**: `heasarc.gsfc.nasa.gov`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

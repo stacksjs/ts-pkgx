@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcompeaks5cmd`
+- **Domain**: `github.com/peak-s5cmd`
 - **Name**: `github.com/peak-s5cmd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

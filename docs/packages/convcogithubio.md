@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `convcogithubio`
+- **Domain**: `convco.github.io`
 - **Name**: `convco`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

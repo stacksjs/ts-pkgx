@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ceressolverorg`
+- **Domain**: `ceres/solver.org`
 - **Name**: `ceres-solver.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

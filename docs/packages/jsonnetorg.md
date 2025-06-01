@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jsonnetorg`
+- **Domain**: `jsonnet.org`
 - **Name**: `jsonnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

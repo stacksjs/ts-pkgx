@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `stripecom`
+- **Domain**: `stripe.com`
 - **Name**: `stripe`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

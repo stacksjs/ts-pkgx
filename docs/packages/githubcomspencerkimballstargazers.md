@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomspencerkimballstargazers`
+- **Domain**: `github.com/spencerkimball-stargazers`
 - **Name**: `github.com/spencerkimball-stargazers`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

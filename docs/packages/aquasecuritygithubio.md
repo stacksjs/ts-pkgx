@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `aquasecuritygithubio`
+- **Domain**: `aquasecurity.github.io`
 - **Name**: `aquasecurity.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

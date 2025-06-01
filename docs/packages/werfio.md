@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `werfio`
+- **Domain**: `werf.io`
 - **Name**: `werf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

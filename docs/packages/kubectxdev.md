@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kubectxdev`
+- **Domain**: `kubectx.dev`
 - **Name**: `kube`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

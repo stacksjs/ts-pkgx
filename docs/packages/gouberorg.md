@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gouberorg`
+- **Domain**: `go.uber.org`
 - **Name**: `go.uber.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

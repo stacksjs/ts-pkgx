@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dprintdev`
+- **Domain**: `dprint.dev`
 - **Name**: `dprint`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `msgpackorg`
+- **Domain**: `msgpack.org`
 - **Name**: `msgpack.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

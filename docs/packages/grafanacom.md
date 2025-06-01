@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `grafanacom`
+- **Domain**: `grafana.com`
 - **Name**: `grafana.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tuistio`
+- **Domain**: `tuist.io`
 - **Name**: `tuist.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

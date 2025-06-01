@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ollamaai`
+- **Domain**: `ollama.ai`
 - **Name**: `ollama`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

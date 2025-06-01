@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `smartmontoolsorg`
+- **Domain**: `smartmontools.org`
 - **Name**: `smartmontools.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `docbookorg`
+- **Domain**: `docbook.org`
 - **Name**: `docbook.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

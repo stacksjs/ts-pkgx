@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openslideorg`
+- **Domain**: `openslide.org`
 - **Name**: `openslide`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

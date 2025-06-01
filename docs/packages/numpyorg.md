@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `numpyorg`
+- **Domain**: `numpy.org`
 - **Name**: `f2py`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

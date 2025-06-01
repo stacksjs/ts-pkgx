@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `lavinmqcom`
+- **Domain**: `lavinmq.com`
 - **Name**: `lavinmq`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `projenio`
+- **Domain**: `projen.io`
 - **Name**: `projen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

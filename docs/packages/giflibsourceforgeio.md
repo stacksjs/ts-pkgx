@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `giflibsourceforgeio`
+- **Domain**: `giflib.sourceforge.io`
 - **Name**: `gif`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `numbatdev`
+- **Domain**: `numbat.dev`
 - **Name**: `numbat`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

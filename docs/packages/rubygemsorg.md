@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rubygemsorg`
+- **Domain**: `rubygems.org`
 - **Name**: `rubygems.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

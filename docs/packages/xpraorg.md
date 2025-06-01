@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `xpraorg`
+- **Domain**: `xpra.org`
 - **Name**: `xpra`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

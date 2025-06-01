@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openrestyorg`
+- **Domain**: `openresty.org`
 - **Name**: `openresty.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sphinxdocorg`
+- **Domain**: `sphinx/doc.org`
 - **Name**: `sphinx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

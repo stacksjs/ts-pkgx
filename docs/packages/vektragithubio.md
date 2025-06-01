@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `vektragithubio`
+- **Domain**: `vektra.github.io`
 - **Name**: `vektra.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

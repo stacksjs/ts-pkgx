@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mkdocsorg`
+- **Domain**: `mkdocs.org`
 - **Name**: `mkdocs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

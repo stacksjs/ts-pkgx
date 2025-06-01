@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gitosgeoorg`
+- **Domain**: `git.osgeo.org`
 - **Name**: `git.osgeo.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

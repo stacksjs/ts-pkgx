@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wixcom`
+- **Domain**: `wix.com`
 - **Name**: `wix.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

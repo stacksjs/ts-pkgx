@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libjpegturboorg`
+- **Domain**: `libjpeg/turbo.org`
 - **Name**: `libjpeg-turbo.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

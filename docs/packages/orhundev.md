@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `orhundev`
+- **Domain**: `orhun.dev`
 - **Name**: `orhun.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

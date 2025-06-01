@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `granteddev`
+- **Domain**: `granted.dev`
 - **Name**: `granted`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

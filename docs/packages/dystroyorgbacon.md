@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dystroyorgbacon`
+- **Domain**: `dystroy.org/bacon`
 - **Name**: `dystroy.org/bacon`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

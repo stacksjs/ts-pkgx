@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `videolanorg`
+- **Domain**: `videolan.org`
 - **Name**: `videolan.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

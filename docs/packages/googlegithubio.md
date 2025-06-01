@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `googlegithubio`
+- **Domain**: `google.github.io`
 - **Name**: `google.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

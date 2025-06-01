@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `otssnipttcom`
+- **Domain**: `ots.sniptt.com`
 - **Name**: `ots`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

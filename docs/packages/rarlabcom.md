@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rarlabcom`
+- **Domain**: `rarlab.com`
 - **Name**: `unrar`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

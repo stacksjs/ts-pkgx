@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `hdfgrouporg`
+- **Domain**: `hdfgroup.org`
 - **Name**: `hdfgroup.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

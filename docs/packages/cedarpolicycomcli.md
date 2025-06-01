@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cedarpolicycomcli`
+- **Domain**: `cedarpolicy.com/cli`
 - **Name**: `cedarpolicy.com/cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

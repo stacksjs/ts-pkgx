@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `conftestdev`
+- **Domain**: `conftest.dev`
 - **Name**: `conftest`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `augeasnet`
+- **Domain**: `augeas.net`
 - **Name**: `augeas.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

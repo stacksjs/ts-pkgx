@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `unixodbcorg`
+- **Domain**: `unixodbc.org`
 - **Name**: `unixodbc.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

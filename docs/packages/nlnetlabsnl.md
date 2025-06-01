@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nlnetlabsnl`
+- **Domain**: `nlnetlabs.nl`
 - **Name**: `nlnetlabs.nl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `charmsh`
+- **Domain**: `charm.sh`
 - **Name**: `charm.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

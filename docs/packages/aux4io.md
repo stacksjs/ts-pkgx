@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `aux4io`
+- **Domain**: `aux4.io`
 - **Name**: `aux4`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

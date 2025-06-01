@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ctopsh`
+- **Domain**: `ctop.sh`
 - **Name**: `ctop`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

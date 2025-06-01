@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `templguide`
+- **Domain**: `templ.guide`
 - **Name**: `templ`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

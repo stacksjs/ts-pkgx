@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `munlangorg`
+- **Domain**: `mun/lang.org`
 - **Name**: `mun`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

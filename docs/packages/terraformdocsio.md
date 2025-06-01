@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `terraformdocsio`
+- **Domain**: `terraform/docs.io`
 - **Name**: `terraform-docs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

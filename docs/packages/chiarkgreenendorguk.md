@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `chiarkgreenendorguk`
+- **Domain**: `chiark.greenend.org.uk`
 - **Name**: `chiark.greenend.org.uk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

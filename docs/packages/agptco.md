@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `agptco`
+- **Domain**: `agpt.co`
 - **Name**: `Auto-GPT`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

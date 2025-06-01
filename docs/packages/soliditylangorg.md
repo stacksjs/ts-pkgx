@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `soliditylangorg`
+- **Domain**: `soliditylang.org`
 - **Name**: `soliditylang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

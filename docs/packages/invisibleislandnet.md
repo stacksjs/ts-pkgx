@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `invisibleislandnet`
+- **Domain**: `invisible/island.net`
 - **Name**: `invisible/island.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

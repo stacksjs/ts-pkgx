@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `simplesystemsorg`
+- **Domain**: `simplesystems.org`
 - **Name**: `simplesystems.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

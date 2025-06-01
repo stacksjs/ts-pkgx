@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `neovimio`
+- **Domain**: `neovim.io`
 - **Name**: `nvim`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

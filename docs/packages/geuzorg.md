@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `geuzorg`
+- **Domain**: `geuz.org`
 - **Name**: `geuz.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

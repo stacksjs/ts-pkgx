@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openmpllvmorg`
+- **Domain**: `openmp.llvm.org`
 - **Name**: `libomp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

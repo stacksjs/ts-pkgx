@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `zeromqorg`
+- **Domain**: `zeromq.org`
 - **Name**: `zeromq.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

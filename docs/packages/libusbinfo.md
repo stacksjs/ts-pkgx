@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libusbinfo`
+- **Domain**: `libusb.info`
 - **Name**: `libusb.info`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

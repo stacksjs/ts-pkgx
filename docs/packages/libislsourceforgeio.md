@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libislsourceforgeio`
+- **Domain**: `libisl.sourceforge.io`
 - **Name**: `libisl.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

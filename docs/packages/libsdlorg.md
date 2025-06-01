@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libsdlorg`
+- **Domain**: `libsdl.org`
 - **Name**: `libsdl.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

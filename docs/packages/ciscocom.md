@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ciscocom`
+- **Domain**: `cisco.com`
 - **Name**: `cisco.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

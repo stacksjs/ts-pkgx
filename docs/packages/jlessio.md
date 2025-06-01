@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jlessio`
+- **Domain**: `jless.io`
 - **Name**: `jless`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

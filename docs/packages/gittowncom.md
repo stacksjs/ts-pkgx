@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gittowncom`
+- **Domain**: `git/town.com`
 - **Name**: `git-town`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

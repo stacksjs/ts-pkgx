@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `qhullorg`
+- **Domain**: `qhull.org`
 - **Name**: `qhull.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

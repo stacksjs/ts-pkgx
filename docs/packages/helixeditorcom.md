@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `helixeditorcom`
+- **Domain**: `helix/editor.com`
 - **Name**: `hx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

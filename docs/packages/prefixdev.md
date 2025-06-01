@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `prefixdev`
+- **Domain**: `prefix.dev`
 - **Name**: `pixi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

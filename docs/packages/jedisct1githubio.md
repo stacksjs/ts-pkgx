@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jedisct1githubio`
+- **Domain**: `jedisct1.github.io`
 - **Name**: `jedisct1.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

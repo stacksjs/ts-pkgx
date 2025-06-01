@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libexifgithubio`
+- **Domain**: `libexif.github.io`
 - **Name**: `libexif.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

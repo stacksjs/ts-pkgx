@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kubesharkco`
+- **Domain**: `kubeshark.co`
 - **Name**: `kubeshark`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

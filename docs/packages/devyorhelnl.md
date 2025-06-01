@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `devyorhelnl`
+- **Domain**: `dev.yorhel.nl`
 - **Name**: `dev.yorhel.nl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

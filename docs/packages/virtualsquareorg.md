@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `virtualsquareorg`
+- **Domain**: `virtualsquare.org`
 - **Name**: `virtualsquare.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

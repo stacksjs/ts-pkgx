@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `hadronsorg`
+- **Domain**: `hadrons.org`
 - **Name**: `hadrons.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

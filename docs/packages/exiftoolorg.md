@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `exiftoolorg`
+- **Domain**: `exiftool.org`
 - **Name**: `exiftool`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `webmprojectorg`
+- **Domain**: `webmproject.org`
 - **Name**: `webmproject.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

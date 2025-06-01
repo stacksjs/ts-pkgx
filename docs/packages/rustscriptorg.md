@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rustscriptorg`
+- **Domain**: `rust/script.org`
 - **Name**: `rust-script`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

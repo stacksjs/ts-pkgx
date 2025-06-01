@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `graphvizorg`
+- **Domain**: `graphviz.org`
 - **Name**: `graphviz.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

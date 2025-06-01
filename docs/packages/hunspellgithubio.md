@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `hunspellgithubio`
+- **Domain**: `hunspell.github.io`
 - **Name**: `hunspell`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

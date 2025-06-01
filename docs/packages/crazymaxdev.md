@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `crazymaxdev`
+- **Domain**: `crazymax.dev`
 - **Name**: `crazymax.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

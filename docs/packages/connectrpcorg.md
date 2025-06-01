@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `connectrpcorg`
+- **Domain**: `connectrpc.org`
 - **Name**: `connectrpc.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cythonorg`
+- **Domain**: `cython.org`
 - **Name**: `cython`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

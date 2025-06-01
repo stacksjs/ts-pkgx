@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dkrzde`
+- **Domain**: `dkrz.de`
 - **Name**: `dkrz.de`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

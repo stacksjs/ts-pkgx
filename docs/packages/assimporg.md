@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `assimporg`
+- **Domain**: `assimp.org`
 - **Name**: `assimp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

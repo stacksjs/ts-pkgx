@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openpolicyagentorg`
+- **Domain**: `openpolicyagent.org`
 - **Name**: `opa`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

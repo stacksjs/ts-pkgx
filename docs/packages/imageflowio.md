@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `imageflowio`
+- **Domain**: `imageflow.io`
 - **Name**: `imageflow.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

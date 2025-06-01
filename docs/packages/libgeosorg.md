@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libgeosorg`
+- **Domain**: `libgeos.org`
 - **Name**: `geos-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

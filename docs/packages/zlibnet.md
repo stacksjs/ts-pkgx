@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `zlibnet`
+- **Domain**: `zlib.net`
 - **Name**: `zlib.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

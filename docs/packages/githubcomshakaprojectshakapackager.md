@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomshakaprojectshakapackager`
+- **Domain**: `github.com/shaka-project-shaka-packager`
 - **Name**: `github.com/shaka-project-shaka-packager`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `thrysoeedk`
+- **Domain**: `thrysoee.dk`
 - **Name**: `thrysoee.dk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

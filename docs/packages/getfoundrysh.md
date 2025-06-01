@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `getfoundrysh`
+- **Domain**: `getfoundry.sh`
 - **Name**: `getfoundry.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

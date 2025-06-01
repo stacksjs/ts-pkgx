@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mypylangorg`
+- **Domain**: `mypy/lang.org`
 - **Name**: `mypy-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `goreleasercom`
+- **Domain**: `goreleaser.com`
 - **Name**: `goreleaser`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `po4aorg`
+- **Domain**: `po4a.org`
 - **Name**: `po4a.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

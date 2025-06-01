@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pimalayaorg`
+- **Domain**: `pimalaya.org`
 - **Name**: `pimalaya.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

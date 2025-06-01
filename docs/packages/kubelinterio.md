@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kubelinterio`
+- **Domain**: `kubelinter.io`
 - **Name**: `kube-linter`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `hboehminfo`
+- **Domain**: `hboehm.info`
 - **Name**: `hboehm.info`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

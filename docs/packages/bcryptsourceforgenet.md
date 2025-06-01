@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `bcryptsourceforgenet`
+- **Domain**: `bcrypt.sourceforge.net`
 - **Name**: `bcrypt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

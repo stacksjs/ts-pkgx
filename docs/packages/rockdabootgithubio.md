@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rockdabootgithubio`
+- **Domain**: `rockdaboot.github.io`
 - **Name**: `rockdaboot.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

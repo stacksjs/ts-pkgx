@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wxwidgetsorg`
+- **Domain**: `wxwidgets.org`
 - **Name**: `wxwidgets.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

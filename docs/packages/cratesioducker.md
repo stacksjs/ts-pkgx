@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cratesioducker`
+- **Domain**: `crates.io/ducker`
 - **Name**: `crates.io/ducker`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

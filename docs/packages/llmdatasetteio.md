@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `llmdatasetteio`
+- **Domain**: `llm.datasette.io`
 - **Name**: `llm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

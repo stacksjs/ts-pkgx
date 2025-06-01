@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `zrokio`
+- **Domain**: `zrok.io`
 - **Name**: `zrok`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

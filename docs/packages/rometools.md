@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rometools`
+- **Domain**: `rome.tools`
 - **Name**: `rome`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

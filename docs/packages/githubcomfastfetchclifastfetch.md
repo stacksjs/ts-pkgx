@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomfastfetchclifastfetch`
+- **Domain**: `github.com/fastfetch-cli-fastfetch`
 - **Name**: `github.com/fastfetch-cli-fastfetch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

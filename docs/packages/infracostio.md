@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `infracostio`
+- **Domain**: `infracost.io`
 - **Name**: `infracost`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

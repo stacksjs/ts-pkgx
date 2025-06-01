@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `acornio`
+- **Domain**: `acorn.io`
 - **Name**: `acorn.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

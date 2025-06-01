@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `vercelcom`
+- **Domain**: `vercel.com`
 - **Name**: `vercel.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `langchaincom`
+- **Domain**: `langchain.com`
 - **Name**: `langchain.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pcreorg`
+- **Domain**: `pcre.org`
 - **Name**: `pcre`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

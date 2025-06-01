@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `microbreworg`
+- **Domain**: `microbrew.org`
 - **Name**: `microbrew.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `daggerio`
+- **Domain**: `dagger.io`
 - **Name**: `dagger`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

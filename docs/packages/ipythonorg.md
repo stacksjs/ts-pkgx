@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ipythonorg`
+- **Domain**: `ipython.org`
 - **Name**: `ipython`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

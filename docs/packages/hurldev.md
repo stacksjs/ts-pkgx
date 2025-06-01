@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `hurldev`
+- **Domain**: `hurl.dev`
 - **Name**: `hurl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

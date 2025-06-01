@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `freetypeorg`
+- **Domain**: `freetype.org`
 - **Name**: `freetype.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

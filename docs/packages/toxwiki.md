@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `toxwiki`
+- **Domain**: `tox.wiki`
 - **Name**: `tox`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

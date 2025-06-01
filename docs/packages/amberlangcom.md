@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `amberlangcom`
+- **Domain**: `amber/lang.com`
 - **Name**: `amber`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

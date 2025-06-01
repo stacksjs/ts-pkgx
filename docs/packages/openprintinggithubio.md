@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openprintinggithubio`
+- **Domain**: `openprinting.github.io`
 - **Name**: `openprinting.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

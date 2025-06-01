@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cairographicsorg`
+- **Domain**: `cairographics.org`
 - **Name**: `cairo-trace`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

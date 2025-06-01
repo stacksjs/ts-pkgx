@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `imagemagickorg`
+- **Domain**: `imagemagick.org`
 - **Name**: `imagemagick.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

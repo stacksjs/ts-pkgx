@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openmpiorg`
+- **Domain**: `open/mpi.org`
 - **Name**: `open-mpi.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

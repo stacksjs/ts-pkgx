@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `caddyservercom`
+- **Domain**: `caddyserver.com`
 - **Name**: `caddy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

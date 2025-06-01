@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rendercom`
+- **Domain**: `render.com`
 - **Name**: `render`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

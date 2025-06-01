@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `valkeyio`
+- **Domain**: `valkey.io`
 - **Name**: `valkey`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

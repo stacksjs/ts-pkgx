@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cratesio`
+- **Domain**: `crates.io`
 - **Name**: `crates.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

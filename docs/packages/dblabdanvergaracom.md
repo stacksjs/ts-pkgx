@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dblabdanvergaracom`
+- **Domain**: `dblab.danvergara.com`
 - **Name**: `dblab`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openjdkorg`
+- **Domain**: `openjdk.org`
 - **Name**: `openjdk.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

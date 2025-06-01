@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `godev`
+- **Domain**: `go.dev`
 - **Name**: `go.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

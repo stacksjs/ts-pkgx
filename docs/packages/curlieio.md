@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `curlieio`
+- **Domain**: `curlie.io`
 - **Name**: `curlie`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

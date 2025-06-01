@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `networkxorg`
+- **Domain**: `networkx.org`
 - **Name**: `networkx.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

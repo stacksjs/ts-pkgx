@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `attrsorg`
+- **Domain**: `attrs.org`
 - **Name**: `attrs.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

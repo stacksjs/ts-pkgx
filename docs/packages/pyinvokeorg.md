@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pyinvokeorg`
+- **Domain**: `pyinvoke.org`
 - **Name**: `invoke`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

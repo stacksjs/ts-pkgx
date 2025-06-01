@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mergestatcom`
+- **Domain**: `mergestat.com`
 - **Name**: `mergestat.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

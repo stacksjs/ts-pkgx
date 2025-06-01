@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cratesiorucolanotes`
+- **Domain**: `crates.io/rucola-notes`
 - **Name**: `crates.io/rucola-notes`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

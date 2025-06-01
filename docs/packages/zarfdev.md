@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `zarfdev`
+- **Domain**: `zarf.dev`
 - **Name**: `zarf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

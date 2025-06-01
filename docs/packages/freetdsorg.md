@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `freetdsorg`
+- **Domain**: `freetds.org`
 - **Name**: `freetds.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

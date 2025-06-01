@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rubylangorg`
+- **Domain**: `ruby/lang.org`
 - **Name**: `ruby-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

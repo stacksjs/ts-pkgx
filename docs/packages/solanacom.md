@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `solanacom`
+- **Domain**: `solana.com`
 - **Name**: `solana`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

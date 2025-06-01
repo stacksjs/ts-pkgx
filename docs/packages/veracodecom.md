@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `veracodecom`
+- **Domain**: `veracode.com`
 - **Name**: `veracode.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

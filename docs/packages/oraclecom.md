@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `oraclecom`
+- **Domain**: `oracle.com`
 - **Name**: `oracle.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

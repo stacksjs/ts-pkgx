@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mpmathorg`
+- **Domain**: `mpmath.org`
 - **Name**: `mpmath.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

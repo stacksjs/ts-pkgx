@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `iscorgbind9`
+- **Domain**: `isc.org/bind9`
 - **Name**: `isc.org/bind9`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

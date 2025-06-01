@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dotenvlintergithubio`
+- **Domain**: `dotenv/linter.github.io`
 - **Name**: `dotenv-linter`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

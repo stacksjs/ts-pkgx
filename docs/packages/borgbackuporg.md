@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `borgbackuporg`
+- **Domain**: `borgbackup.org`
 - **Name**: `borgbackup.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

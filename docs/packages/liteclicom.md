@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `liteclicom`
+- **Domain**: `litecli.com`
 - **Name**: `litecli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `agwanamegitcrypt`
+- **Domain**: `agwa.name/git-crypt`
 - **Name**: `git-crypt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/agwa.name/git-crypt/package.yml)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tukaaniorg`
+- **Domain**: `tukaani.org`
 - **Name**: `tukaani.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

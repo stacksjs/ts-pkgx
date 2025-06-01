@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `planetscalecom`
+- **Domain**: `planetscale.com`
 - **Name**: `pscale`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

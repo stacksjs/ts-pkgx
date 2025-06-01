@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `eksctlio`
+- **Domain**: `eksctl.io`
 - **Name**: `eksctl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

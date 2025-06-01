@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pngquantorg`
+- **Domain**: `pngquant.org`
 - **Name**: `pngquant.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

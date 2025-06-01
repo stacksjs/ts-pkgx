@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `graphicsmagickorg`
+- **Domain**: `graphicsmagick.org`
 - **Name**: `gm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

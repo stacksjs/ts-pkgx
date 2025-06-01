@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openaicom`
+- **Domain**: `openai.com`
 - **Name**: `openai.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

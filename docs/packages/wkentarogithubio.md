@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wkentarogithubio`
+- **Domain**: `wkentaro.github.io`
 - **Name**: `wkentaro.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

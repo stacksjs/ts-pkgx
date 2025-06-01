@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `hjsongithubio`
+- **Domain**: `hjson.github.io`
 - **Name**: `hjson`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

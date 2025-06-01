@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `caresorg`
+- **Domain**: `c/ares.org`
 - **Name**: `c-ares.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

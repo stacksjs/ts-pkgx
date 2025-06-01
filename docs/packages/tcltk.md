@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tcltk`
+- **Domain**: `tcl.tk`
 - **Name**: `tcl.tk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

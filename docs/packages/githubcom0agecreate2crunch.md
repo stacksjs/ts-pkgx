@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcom0agecreate2crunch`
+- **Domain**: `github.com/0age-create2crunch`
 - **Name**: `github.com/0age-create2crunch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

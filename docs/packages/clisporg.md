@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `clisporg`
+- **Domain**: `clisp.org`
 - **Name**: `clisp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

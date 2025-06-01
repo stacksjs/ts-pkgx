@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `anchorecom`
+- **Domain**: `anchore.com`
 - **Name**: `anchore.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

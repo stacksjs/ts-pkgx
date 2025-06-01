@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `filippoio`
+- **Domain**: `filippo.io`
 - **Name**: `filippo.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

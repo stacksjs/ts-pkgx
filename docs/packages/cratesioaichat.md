@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cratesioaichat`
+- **Domain**: `crates.io/aichat`
 - **Name**: `crates.io/aichat`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `argbashdev`
+- **Domain**: `argbash.dev`
 - **Name**: `argbash`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

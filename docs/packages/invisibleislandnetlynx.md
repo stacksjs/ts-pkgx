@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `invisibleislandnetlynx`
+- **Domain**: `invisible/island.net-lynx`
 - **Name**: `invisible/island.net-lynx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

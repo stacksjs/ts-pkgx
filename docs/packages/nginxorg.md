@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nginxorg`
+- **Domain**: `nginx.org`
 - **Name**: `nginx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

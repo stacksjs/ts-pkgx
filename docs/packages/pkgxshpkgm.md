@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pkgxshpkgm`
+- **Domain**: `pkgx.sh/pkgm`
 - **Name**: `pkgx.sh/pkgm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

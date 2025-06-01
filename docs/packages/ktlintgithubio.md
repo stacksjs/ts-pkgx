@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ktlintgithubio`
+- **Domain**: `ktlint.github.io`
 - **Name**: `ktlint`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

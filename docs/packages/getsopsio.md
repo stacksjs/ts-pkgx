@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `getsopsio`
+- **Domain**: `getsops.io`
 - **Name**: `sops`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

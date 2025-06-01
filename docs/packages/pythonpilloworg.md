@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pythonpilloworg`
+- **Domain**: `python/pillow.org`
 - **Name**: `python-pillow.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

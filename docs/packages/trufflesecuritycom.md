@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `trufflesecuritycom`
+- **Domain**: `trufflesecurity.com`
 - **Name**: `trufflesecurity.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

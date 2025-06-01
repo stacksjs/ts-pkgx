@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `harfbuzzorg`
+- **Domain**: `harfbuzz.org`
 - **Name**: `harfbuzz.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

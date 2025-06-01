@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `taplotamasfedev`
+- **Domain**: `taplo.tamasfe.dev`
 - **Name**: `taplo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

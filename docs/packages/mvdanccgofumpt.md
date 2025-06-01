@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mvdanccgofumpt`
+- **Domain**: `mvdan.cc/gofumpt`
 - **Name**: `mvdan.cc/gofumpt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

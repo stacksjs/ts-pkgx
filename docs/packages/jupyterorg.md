@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jupyterorg`
+- **Domain**: `jupyter.org`
 - **Name**: `jupyter.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

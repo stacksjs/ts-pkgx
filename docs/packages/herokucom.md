@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `herokucom`
+- **Domain**: `heroku.com`
 - **Name**: `heroku`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

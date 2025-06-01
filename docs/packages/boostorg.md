@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `boostorg`
+- **Domain**: `boost.org`
 - **Name**: `boost.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

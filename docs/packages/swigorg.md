@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `swigorg`
+- **Domain**: `swig.org`
 - **Name**: `swig.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

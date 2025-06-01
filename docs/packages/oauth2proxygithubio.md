@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `oauth2proxygithubio`
+- **Domain**: `oauth2/proxy.github.io`
 - **Name**: `oauth2-proxy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

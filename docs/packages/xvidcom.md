@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `xvidcom`
+- **Domain**: `xvid.com`
 - **Name**: `xvid.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `buildpacksio`
+- **Domain**: `buildpacks.io`
 - **Name**: `pack`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

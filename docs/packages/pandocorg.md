@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pandocorg`
+- **Domain**: `pandoc.org`
 - **Name**: `pandoc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

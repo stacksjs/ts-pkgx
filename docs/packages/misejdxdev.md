@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `misejdxdev`
+- **Domain**: `mise.jdx.dev`
 - **Name**: `mise`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

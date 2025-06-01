@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mercurialscmorg`
+- **Domain**: `mercurial/scm.org`
 - **Name**: `mercurial-scm.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

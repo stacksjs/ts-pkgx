@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `facebookcom`
+- **Domain**: `facebook.com`
 - **Name**: `facebook.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

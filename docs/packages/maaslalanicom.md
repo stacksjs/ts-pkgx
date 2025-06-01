@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `maaslalanicom`
+- **Domain**: `maaslalani.com`
 - **Name**: `maaslalani.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

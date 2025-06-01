@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mandbgitlabio`
+- **Domain**: `man/db.gitlab.io`
 - **Name**: `man/db.gitlab.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

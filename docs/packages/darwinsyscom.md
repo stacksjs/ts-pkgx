@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `darwinsyscom`
+- **Domain**: `darwinsys.com`
 - **Name**: `darwinsys.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

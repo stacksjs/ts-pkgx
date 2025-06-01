@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mitmproxyorg`
+- **Domain**: `mitmproxy.org`
 - **Name**: `mitmproxy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

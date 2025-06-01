@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `redisio`
+- **Domain**: `redis.io`
 - **Name**: `redis`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

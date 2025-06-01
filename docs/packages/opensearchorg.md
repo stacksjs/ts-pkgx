@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `opensearchorg`
+- **Domain**: `opensearch.org`
 - **Name**: `opensearch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

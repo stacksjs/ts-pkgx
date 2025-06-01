@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `publichronopikde`
+- **Domain**: `public.hronopik.de`
 - **Name**: `public.hronopik.de`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

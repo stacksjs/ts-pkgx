@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `vlangio`
+- **Domain**: `vlang.io`
 - **Name**: `v`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

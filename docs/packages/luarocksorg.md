@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `luarocksorg`
+- **Domain**: `luarocks.org`
 - **Name**: `luarocks`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

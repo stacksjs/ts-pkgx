@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `presslygithubio`
+- **Domain**: `pressly.github.io`
 - **Name**: `pressly.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

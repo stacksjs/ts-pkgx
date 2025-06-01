@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cuelangorg`
+- **Domain**: `cuelang.org`
 - **Name**: `cue`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

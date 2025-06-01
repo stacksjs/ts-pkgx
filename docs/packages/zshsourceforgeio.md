@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `zshsourceforgeio`
+- **Domain**: `zsh.sourceforge.io`
 - **Name**: `zsh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

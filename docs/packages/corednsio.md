@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `corednsio`
+- **Domain**: `coredns.io`
 - **Name**: `coredns`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

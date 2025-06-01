@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fastlanetools`
+- **Domain**: `fastlane.tools`
 - **Name**: `fastlane`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

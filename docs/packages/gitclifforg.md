@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gitclifforg`
+- **Domain**: `git/cliff.org`
 - **Name**: `git-cliff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

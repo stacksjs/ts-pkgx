@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `hardingmotdca`
+- **Domain**: `harding.motd.ca`
 - **Name**: `harding.motd.ca`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

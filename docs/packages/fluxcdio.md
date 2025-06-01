@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fluxcdio`
+- **Domain**: `fluxcd.io`
 - **Name**: `fluxcd.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `xorg`
+- **Domain**: `x.org`
 - **Name**: `x.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

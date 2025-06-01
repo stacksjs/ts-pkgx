@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `microsoftcom`
+- **Domain**: `microsoft.com`
 - **Name**: `microsoft.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

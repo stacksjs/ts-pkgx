@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fliptio`
+- **Domain**: `flipt.io`
 - **Name**: `flipt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

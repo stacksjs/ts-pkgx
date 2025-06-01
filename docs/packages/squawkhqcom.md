@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `squawkhqcom`
+- **Domain**: `squawkhq.com`
 - **Name**: `squawk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

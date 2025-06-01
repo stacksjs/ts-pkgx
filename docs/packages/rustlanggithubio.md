@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rustlanggithubio`
+- **Domain**: `rust/lang.github.io`
 - **Name**: `rust/lang.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

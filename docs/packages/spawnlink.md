@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `spawnlink`
+- **Domain**: `spawn.link`
 - **Name**: `spawn.link`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

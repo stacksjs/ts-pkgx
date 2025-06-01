@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ohmyposhdev`
+- **Domain**: `ohmyposh.dev`
 - **Name**: `oh-my-posh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

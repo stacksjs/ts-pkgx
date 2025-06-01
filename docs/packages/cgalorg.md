@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cgalorg`
+- **Domain**: `cgal.org`
 - **Name**: `cgal`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

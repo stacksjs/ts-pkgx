@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `clogtoolgithubio`
+- **Domain**: `clog/tool.github.io`
 - **Name**: `clog`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

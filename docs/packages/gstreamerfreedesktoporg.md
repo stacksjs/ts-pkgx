@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gstreamerfreedesktoporg`
+- **Domain**: `gstreamer.freedesktop.org`
 - **Name**: `gstreamer.freedesktop.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

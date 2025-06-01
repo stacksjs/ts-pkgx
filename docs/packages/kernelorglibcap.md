@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kernelorglibcap`
+- **Domain**: `kernel.org/libcap`
 - **Name**: `kernel.org/libcap`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

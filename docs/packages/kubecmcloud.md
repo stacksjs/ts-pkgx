@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kubecmcloud`
+- **Domain**: `kubecm.cloud`
 - **Name**: `kubecm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

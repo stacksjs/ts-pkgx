@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ladspaorg`
+- **Domain**: `ladspa.org`
 - **Name**: `ladspa.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mesa3dorg`
+- **Domain**: `mesa3d.org`
 - **Name**: `mesa3d.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

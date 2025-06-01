@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `flyio`
+- **Domain**: `fly.io`
 - **Name**: `fly`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

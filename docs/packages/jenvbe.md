@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jenvbe`
+- **Domain**: `jenv.be`
 - **Name**: `jenv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `checkovio`
+- **Domain**: `checkov.io`
 - **Name**: `checkov`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

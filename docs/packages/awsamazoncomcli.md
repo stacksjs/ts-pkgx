@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `awsamazoncomcli`
+- **Domain**: `aws.amazon.com/cli`
 - **Name**: `aws.amazon.com/cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

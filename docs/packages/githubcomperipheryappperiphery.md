@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomperipheryappperiphery`
+- **Domain**: `github.com/peripheryapp-periphery`
 - **Name**: `github.com/peripheryapp-periphery`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

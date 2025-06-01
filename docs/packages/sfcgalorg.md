@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sfcgalorg`
+- **Domain**: `sfcgal.org`
 - **Name**: `sfcgal-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

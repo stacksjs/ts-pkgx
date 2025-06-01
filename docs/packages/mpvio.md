@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mpvio`
+- **Domain**: `mpv.io`
 - **Name**: `mpv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

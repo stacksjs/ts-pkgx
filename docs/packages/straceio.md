@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `straceio`
+- **Domain**: `strace.io`
 - **Name**: `strace`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

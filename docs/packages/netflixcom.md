@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `netflixcom`
+- **Domain**: `netflix.com`
 - **Name**: `netflix.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

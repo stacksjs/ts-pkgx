@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `upliftcidev`
+- **Domain**: `upliftci.dev`
 - **Name**: `uplift`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

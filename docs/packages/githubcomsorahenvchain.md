@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomsorahenvchain`
+- **Domain**: `github.com/sorah-envchain`
 - **Name**: `github.com/sorah-envchain`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

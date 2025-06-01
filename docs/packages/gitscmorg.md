@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gitscmorg`
+- **Domain**: `git/scm.org`
 - **Name**: `git`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

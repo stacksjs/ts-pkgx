@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kafkaapacheorg`
+- **Domain**: `kafka.apache.org`
 - **Name**: `kafka.apache.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

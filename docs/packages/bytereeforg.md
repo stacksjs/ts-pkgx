@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `bytereeforg`
+- **Domain**: `bytereef.org`
 - **Name**: `bytereef.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

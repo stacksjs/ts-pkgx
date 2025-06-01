@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `htopdev`
+- **Domain**: `htop.dev`
 - **Name**: `htop`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

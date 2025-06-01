@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `classicyarnpkgcom`
+- **Domain**: `classic.yarnpkg.com`
 - **Name**: `classic.yarnpkg.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

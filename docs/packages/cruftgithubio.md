@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cruftgithubio`
+- **Domain**: `cruft.github.io`
 - **Name**: `cruft`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

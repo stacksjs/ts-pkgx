@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `irohcomputer`
+- **Domain**: `iroh.computer`
 - **Name**: `iroh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

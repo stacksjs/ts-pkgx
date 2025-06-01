@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `vamppluginsorg`
+- **Domain**: `vamp/plugins.org`
 - **Name**: `vamp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

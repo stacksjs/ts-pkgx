@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `xercesapacheorg`
+- **Domain**: `xerces.apache.org`
 - **Name**: `xerces.apache.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

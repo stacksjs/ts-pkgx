@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tailwindcsscom`
+- **Domain**: `tailwindcss.com`
 - **Name**: `tailwindcss`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

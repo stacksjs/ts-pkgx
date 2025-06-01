@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gnuorg`
+- **Domain**: `gnu.org`
 - **Name**: `gnu.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

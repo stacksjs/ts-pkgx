@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wpewebkitorg`
+- **Domain**: `wpewebkit.org`
 - **Name**: `wpewebkit.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

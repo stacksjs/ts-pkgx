@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `apacheorg`
+- **Domain**: `apache.org`
 - **Name**: `apache.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

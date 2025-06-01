@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fltkorg`
+- **Domain**: `fltk.org`
 - **Name**: `fltk.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

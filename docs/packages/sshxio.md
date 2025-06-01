@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sshxio`
+- **Domain**: `sshx.io`
 - **Name**: `sshx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

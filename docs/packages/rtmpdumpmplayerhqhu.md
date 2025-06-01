@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rtmpdumpmplayerhqhu`
+- **Domain**: `rtmpdump.mplayerhq.hu`
 - **Name**: `rtmpdump`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

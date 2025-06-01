@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libvipsorg`
+- **Domain**: `libvips.org`
 - **Name**: `vips`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

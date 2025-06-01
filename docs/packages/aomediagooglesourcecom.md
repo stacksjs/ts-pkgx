@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `aomediagooglesourcecom`
+- **Domain**: `aomedia.googlesource.com`
 - **Name**: `aomedia.googlesource.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

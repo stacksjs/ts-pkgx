@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `alembicsqlalchemyorg`
+- **Domain**: `alembic.sqlalchemy.org`
 - **Name**: `alembic`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

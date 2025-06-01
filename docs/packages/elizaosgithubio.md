@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `elizaosgithubio`
+- **Domain**: `elizaOS.github.io`
 - **Name**: `elizaOS`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

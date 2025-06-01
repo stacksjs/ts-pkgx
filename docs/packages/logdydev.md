@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `logdydev`
+- **Domain**: `logdy.dev`
 - **Name**: `logdy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

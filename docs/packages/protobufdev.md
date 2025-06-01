@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `protobufdev`
+- **Domain**: `protobuf.dev`
 - **Name**: `Protocol`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

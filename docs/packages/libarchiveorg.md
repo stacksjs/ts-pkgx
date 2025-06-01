@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libarchiveorg`
+- **Domain**: `libarchive.org`
 - **Name**: `libarchive.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

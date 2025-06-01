@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rigauxorg`
+- **Domain**: `rigaux.org`
 - **Name**: `rigaux.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

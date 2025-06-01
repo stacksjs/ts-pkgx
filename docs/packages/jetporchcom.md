@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jetporchcom`
+- **Domain**: `jetporch.com`
 - **Name**: `jetp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

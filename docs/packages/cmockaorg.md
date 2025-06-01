@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cmockaorg`
+- **Domain**: `cmocka.org`
 - **Name**: `cmocka.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

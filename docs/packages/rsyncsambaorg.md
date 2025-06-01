@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rsyncsambaorg`
+- **Domain**: `rsync.samba.org`
 - **Name**: `rsync`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

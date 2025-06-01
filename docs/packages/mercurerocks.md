@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mercurerocks`
+- **Domain**: `mercure.rocks`
 - **Name**: `mercure`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

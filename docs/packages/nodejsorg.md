@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nodejsorg`
+- **Domain**: `nodejs.org`
 - **Name**: `node`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

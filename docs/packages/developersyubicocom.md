@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `developersyubicocom`
+- **Domain**: `developers.yubico.com`
 - **Name**: `developers.yubico.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

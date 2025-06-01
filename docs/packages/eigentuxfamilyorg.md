@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `eigentuxfamilyorg`
+- **Domain**: `eigen.tuxfamily.org`
 - **Name**: `eigen.tuxfamily.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

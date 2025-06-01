@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gnomeorg`
+- **Domain**: `gnome.org`
 - **Name**: `gnome.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

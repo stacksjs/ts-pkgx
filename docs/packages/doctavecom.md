@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `doctavecom`
+- **Domain**: `doctave.com`
 - **Name**: `doctave`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

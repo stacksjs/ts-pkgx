@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `getclipboardapp`
+- **Domain**: `getclipboard.app`
 - **Name**: `cb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `skaffolddev`
+- **Domain**: `skaffold.dev`
 - **Name**: `skaffold`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

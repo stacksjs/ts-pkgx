@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `astralsh`
+- **Domain**: `astral.sh`
 - **Name**: `astral.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

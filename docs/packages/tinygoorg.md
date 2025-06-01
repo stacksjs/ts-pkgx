@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tinygoorg`
+- **Domain**: `tinygo.org`
 - **Name**: `tinygo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

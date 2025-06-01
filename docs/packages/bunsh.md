@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `bunsh`
+- **Domain**: `bun.sh`
 - **Name**: `bun`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

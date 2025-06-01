@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `microeditorgithubio`
+- **Domain**: `micro/editor.github.io`
 - **Name**: `micro`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `musepacknet`
+- **Domain**: `musepack.net`
 - **Name**: `musepack.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

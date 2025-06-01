@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `koyebcom`
+- **Domain**: `koyeb.com`
 - **Name**: `koyeb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

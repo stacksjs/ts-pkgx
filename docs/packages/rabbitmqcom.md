@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rabbitmqcom`
+- **Domain**: `rabbitmq.com`
 - **Name**: `rabbitmq.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

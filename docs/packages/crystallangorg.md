@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `crystallangorg`
+- **Domain**: `crystal/lang.org`
 - **Name**: `crystal`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

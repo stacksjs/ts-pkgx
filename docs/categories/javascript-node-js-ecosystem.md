@@ -6,7 +6,7 @@ Packages related to javascript & node.js ecosystem.
 
 ## Packages
 
-### [angular.dev](../packages/angular-dev.md)
+### [angular.dev](../packages/angulardev.md)
 
 Crafters of fine Open Source products
 
@@ -16,7 +16,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [bun.sh](../packages/bun-sh.md)
+### [bun.sh](../packages/bunsh.md)
 
 Crafters of fine Open Source products
 
@@ -26,7 +26,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [classic.yarnpkg.com](../packages/classic-yarnpkg-com.md)
+### [classic.yarnpkg.com](../packages/classicyarnpkgcom.md)
 
 Crafters of fine Open Source products
 
@@ -36,7 +36,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [deno.land](../packages/deno-land.md)
+### [deno.land](../packages/denoland.md)
 
 Crafters of fine Open Source products
 
@@ -46,7 +46,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [expo.dev](../packages/expo-dev.md)
+### [expo.dev](../packages/expodev.md)
 
 Go home.
 
@@ -56,7 +56,7 @@ Go home.
 
 ---
 
-### [flutter.dev](../packages/flutter-dev.md)
+### [flutter.dev](../packages/flutterdev.md)
 
 Crafters of fine Open Source products
 
@@ -66,7 +66,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [nodejs.org](../packages/nodejs-org.md)
+### [nodejs.org](../packages/nodejsorg.md)
 
 Crafters of fine Open Source products
 
@@ -76,7 +76,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [npmjs.com](../packages/npmjs-com.md)
+### [npmjs.com](../packages/npmjscom.md)
 
 Crafters of fine Open Source products
 
@@ -86,7 +86,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [pnpm.io](../packages/pnpm-io.md)
+### [pnpm.io](../packages/pnpmio.md)
 
 Crafters of fine Open Source products
 
@@ -96,7 +96,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [vitejs.dev](../packages/vitejs-dev.md)
+### [vitejs.dev](../packages/vitejsdev.md)
 
 Crafters of fine Open Source products
 
@@ -106,7 +106,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [yarnpkg.com](../packages/yarnpkg-com.md)
+### [yarnpkg.com](../packages/yarnpkgcom.md)
 
 Crafters of fine Open Source products
 

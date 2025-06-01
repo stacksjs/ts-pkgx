@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nghttp2org`
+- **Domain**: `nghttp2.org`
 - **Name**: `nghttp2.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

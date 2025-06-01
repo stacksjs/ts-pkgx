@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `endoflifedate`
+- **Domain**: `endoflife.date`
 - **Name**: `eol`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

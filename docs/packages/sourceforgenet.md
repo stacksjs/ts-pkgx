@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sourceforgenet`
+- **Domain**: `sourceforge.net`
 - **Name**: `sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

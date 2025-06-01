@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `typstapp`
+- **Domain**: `typst.app`
 - **Name**: `typst`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

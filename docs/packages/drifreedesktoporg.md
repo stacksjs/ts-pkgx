@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `drifreedesktoporg`
+- **Domain**: `dri.freedesktop.org`
 - **Name**: `libdrm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

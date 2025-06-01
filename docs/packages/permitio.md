@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `permitio`
+- **Domain**: `permit.io`
 - **Name**: `permit.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `xtlsgithubio`
+- **Domain**: `xtls.github.io`
 - **Name**: `xray-core`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

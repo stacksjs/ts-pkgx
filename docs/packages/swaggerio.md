@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `swaggerio`
+- **Domain**: `swagger.io`
 - **Name**: `swagger.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

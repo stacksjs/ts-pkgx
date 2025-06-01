@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `arduinogithubio`
+- **Domain**: `arduino.github.io`
 - **Name**: `arduino.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

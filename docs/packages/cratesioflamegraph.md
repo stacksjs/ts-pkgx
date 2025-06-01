@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cratesioflamegraph`
+- **Domain**: `crates.io/flamegraph`
 - **Name**: `crates.io/flamegraph`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

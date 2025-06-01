@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cocoapodsorg`
+- **Domain**: `cocoapods.org`
 - **Name**: `pod`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

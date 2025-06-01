@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pugixmlorg`
+- **Domain**: `pugixml.org`
 - **Name**: `pugixml.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

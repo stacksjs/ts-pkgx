@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fftworg`
+- **Domain**: `fftw.org`
 - **Name**: `fftw`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mujscom`
+- **Domain**: `mujs.com`
 - **Name**: `mujs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

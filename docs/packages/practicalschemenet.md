@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `practicalschemenet`
+- **Domain**: `practical/scheme.net`
 - **Name**: `practical/scheme.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `crypto`
+- **Domain**: `cr.yp.to`
 - **Name**: `cr.yp.to`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

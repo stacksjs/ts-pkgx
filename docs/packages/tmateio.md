@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tmateio`
+- **Domain**: `tmate.io`
 - **Name**: `tmate`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

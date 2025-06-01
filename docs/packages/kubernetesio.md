@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kubernetesio`
+- **Domain**: `kubernetes.io`
 - **Name**: `kubernetes.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

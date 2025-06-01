@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `minio`
+- **Domain**: `min.io`
 - **Name**: `minio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

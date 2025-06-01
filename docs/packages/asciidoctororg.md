@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `asciidoctororg`
+- **Domain**: `asciidoctor.org`
 - **Name**: `asciidoctor`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

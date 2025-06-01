@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gtssourceforgenet`
+- **Domain**: `gts.sourceforge.net`
 - **Name**: `gts.sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

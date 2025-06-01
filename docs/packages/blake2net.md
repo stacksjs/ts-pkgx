@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `blake2net`
+- **Domain**: `blake2.net`
 - **Name**: `blake2.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

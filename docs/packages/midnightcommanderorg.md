@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `midnightcommanderorg`
+- **Domain**: `midnight/commander.org`
 - **Name**: `Midnight`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

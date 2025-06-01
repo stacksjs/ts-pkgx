@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pkllangorg`
+- **Domain**: `pkl/lang.org`
 - **Name**: `pkl-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ffmpegorg`
+- **Domain**: `ffmpeg.org`
 - **Name**: `ffmpeg.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

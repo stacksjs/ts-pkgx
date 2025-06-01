@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `palletsprojectscom`
+- **Domain**: `palletsprojects.com`
 - **Name**: `palletsprojects.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

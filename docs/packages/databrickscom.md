@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `databrickscom`
+- **Domain**: `databricks.com`
 - **Name**: `databricks`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

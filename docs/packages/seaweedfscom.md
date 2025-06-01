@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `seaweedfscom`
+- **Domain**: `seaweedfs.com`
 - **Name**: `SeaweedFS`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cocogittoio`
+- **Domain**: `cocogitto.io`
 - **Name**: `cog`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

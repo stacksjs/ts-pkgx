@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dozzledev`
+- **Domain**: `dozzle.dev`
 - **Name**: `dozzle`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

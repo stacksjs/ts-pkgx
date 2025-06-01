@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nanoeditororg`
+- **Domain**: `nano/editor.org`
 - **Name**: `nano`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

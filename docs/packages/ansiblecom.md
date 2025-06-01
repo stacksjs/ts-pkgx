@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ansiblecom`
+- **Domain**: `ansible.com`
 - **Name**: `ansible`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

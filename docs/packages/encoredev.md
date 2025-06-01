@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `encoredev`
+- **Domain**: `encore.dev`
 - **Name**: `encore.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

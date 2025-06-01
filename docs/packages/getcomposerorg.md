@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `getcomposerorg`
+- **Domain**: `getcomposer.org`
 - **Name**: `composer`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

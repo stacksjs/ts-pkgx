@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pantsbuildorg`
+- **Domain**: `pantsbuild.org`
 - **Name**: `pantsbuild.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

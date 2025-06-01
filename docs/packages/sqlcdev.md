@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sqlcdev`
+- **Domain**: `sqlc.dev`
 - **Name**: `sqlc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

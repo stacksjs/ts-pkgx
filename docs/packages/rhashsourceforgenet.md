@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rhashsourceforgenet`
+- **Domain**: `rhash.sourceforge.net`
 - **Name**: `rhash.sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

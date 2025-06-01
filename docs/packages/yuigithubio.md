@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `yuigithubio`
+- **Domain**: `yui.github.io`
 - **Name**: `yui.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `lxmlde`
+- **Domain**: `lxml.de`
 - **Name**: `lxml.de`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

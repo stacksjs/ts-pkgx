@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `grpcio`
+- **Domain**: `grpc.io`
 - **Name**: `grpc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

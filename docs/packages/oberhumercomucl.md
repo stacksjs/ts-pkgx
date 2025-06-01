@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `oberhumercomucl`
+- **Domain**: `oberhumer.com/ucl`
 - **Name**: `oberhumer.com/ucl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

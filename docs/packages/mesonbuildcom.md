@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mesonbuildcom`
+- **Domain**: `mesonbuild.com`
 - **Name**: `meson`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

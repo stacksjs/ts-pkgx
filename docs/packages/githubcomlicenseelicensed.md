@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomlicenseelicensed`
+- **Domain**: `github.com/licensee-licensed`
 - **Name**: `github.com/licensee-licensed`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

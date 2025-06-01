@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openblasnet`
+- **Domain**: `openblas.net`
 - **Name**: `openblas.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

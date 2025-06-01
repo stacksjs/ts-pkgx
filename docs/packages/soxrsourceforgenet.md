@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `soxrsourceforgenet`
+- **Domain**: `soxr.sourceforge.net`
 - **Name**: `soxr.sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

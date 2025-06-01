@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `lunarvimorg`
+- **Domain**: `lunarvim.org`
 - **Name**: `lunarvim.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

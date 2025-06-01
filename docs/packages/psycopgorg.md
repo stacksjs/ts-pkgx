@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `psycopgorg`
+- **Domain**: `psycopg.org`
 - **Name**: `psycopg.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

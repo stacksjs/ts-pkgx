@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `perlorg`
+- **Domain**: `perl.org`
 - **Name**: `perl.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

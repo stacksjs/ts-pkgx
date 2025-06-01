@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `groovylangorg`
+- **Domain**: `groovy/lang.org`
 - **Name**: `groovy-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

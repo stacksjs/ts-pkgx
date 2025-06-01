@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `opendaporg`
+- **Domain**: `opendap.org`
 - **Name**: `opendap.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

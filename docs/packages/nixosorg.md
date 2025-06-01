@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nixosorg`
+- **Domain**: `nixos.org`
 - **Name**: `nixos.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

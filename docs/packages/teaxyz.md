@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `teaxyz`
+- **Domain**: `tea.xyz`
 - **Name**: `tea.xyz`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

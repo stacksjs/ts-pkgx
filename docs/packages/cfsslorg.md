@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cfsslorg`
+- **Domain**: `cfssl.org`
 - **Name**: `cfssl.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

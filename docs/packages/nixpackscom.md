@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nixpackscom`
+- **Domain**: `nixpacks.com`
 - **Name**: `nixpacks`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

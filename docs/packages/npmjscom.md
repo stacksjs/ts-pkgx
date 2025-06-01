@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `npmjscom`
+- **Domain**: `npmjs.com`
 - **Name**: `npmjs.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

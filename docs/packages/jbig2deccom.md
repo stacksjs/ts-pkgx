@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jbig2deccom`
+- **Domain**: `jbig2dec.com`
 - **Name**: `jbig2dec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

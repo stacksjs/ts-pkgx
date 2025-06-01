@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gaiagisit`
+- **Domain**: `gaia/gis.it`
 - **Name**: `gaia/gis.it`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

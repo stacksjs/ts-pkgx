@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `hasuraio`
+- **Domain**: `hasura.io`
 - **Name**: `hasura`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

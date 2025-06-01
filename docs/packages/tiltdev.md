@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tiltdev`
+- **Domain**: `tilt.dev`
 - **Name**: `tilt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

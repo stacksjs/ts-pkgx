@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `uriparsergithubio`
+- **Domain**: `uriparser.github.io`
 - **Name**: `uriparse`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

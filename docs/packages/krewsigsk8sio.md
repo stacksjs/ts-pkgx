@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `krewsigsk8sio`
+- **Domain**: `krew.sigs.k8s.io`
 - **Name**: `kubectl-krew`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

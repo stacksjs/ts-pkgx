@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `bittensorcom`
+- **Domain**: `bittensor.com`
 - **Name**: `Bittensor`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

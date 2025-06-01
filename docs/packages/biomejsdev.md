@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `biomejsdev`
+- **Domain**: `biomejs.dev`
 - **Name**: `biome`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

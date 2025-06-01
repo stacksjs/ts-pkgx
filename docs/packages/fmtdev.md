@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fmtdev`
+- **Domain**: `fmt.dev`
 - **Name**: `fmt.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

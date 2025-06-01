@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `peopleengrtamuedu`
+- **Domain**: `people.engr.tamu.edu`
 - **Name**: `people.engr.tamu.edu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

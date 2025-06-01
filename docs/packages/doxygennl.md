@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `doxygennl`
+- **Domain**: `doxygen.nl`
 - **Name**: `doxygen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

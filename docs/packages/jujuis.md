@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jujuis`
+- **Domain**: `juju.is`
 - **Name**: `juju`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

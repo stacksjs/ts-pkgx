@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `vapoursynthcom`
+- **Domain**: `vapoursynth.com`
 - **Name**: `vspipe`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

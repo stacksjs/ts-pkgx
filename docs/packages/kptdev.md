@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kptdev`
+- **Domain**: `kpt.dev`
 - **Name**: `kpt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

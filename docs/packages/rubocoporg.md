@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rubocoporg`
+- **Domain**: `rubocop.org`
 - **Name**: `rubocop`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

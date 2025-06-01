@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libexpatgithubio`
+- **Domain**: `libexpat.github.io`
 - **Name**: `xmlwf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

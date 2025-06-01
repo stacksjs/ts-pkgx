@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `limavmio`
+- **Domain**: `lima/vm.io`
 - **Name**: `lima-vm.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

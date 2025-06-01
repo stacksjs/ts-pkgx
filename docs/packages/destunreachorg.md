@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `destunreachorg`
+- **Domain**: `dest/unreach.org`
 - **Name**: `dest/unreach.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

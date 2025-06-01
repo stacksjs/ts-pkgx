@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `voltash`
+- **Domain**: `volta.sh`
 - **Name**: `volta`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

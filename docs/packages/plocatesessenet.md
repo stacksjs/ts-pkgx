@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `plocatesessenet`
+- **Domain**: `plocate.sesse.net`
 - **Name**: `plocate.sesse.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

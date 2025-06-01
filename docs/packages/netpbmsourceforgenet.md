@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `netpbmsourceforgenet`
+- **Domain**: `netpbm.sourceforge.net`
 - **Name**: `netpbm.sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

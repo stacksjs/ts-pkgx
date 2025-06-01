@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pcscliteapdufr`
+- **Domain**: `pcsclite.apdu.fr`
 - **Name**: `pcsc-lite`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

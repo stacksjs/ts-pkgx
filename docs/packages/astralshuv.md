@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `astralshuv`
+- **Domain**: `astral.sh/uv`
 - **Name**: `astral.sh/uv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

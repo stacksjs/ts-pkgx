@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tcllangorg`
+- **Domain**: `tcl/lang.org`
 - **Name**: `tcl-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

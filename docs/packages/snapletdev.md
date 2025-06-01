@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `snapletdev`
+- **Domain**: `snaplet.dev`
 - **Name**: `snaplet.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

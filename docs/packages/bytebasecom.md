@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `bytebasecom`
+- **Domain**: `bytebase.com`
 - **Name**: `bytebase`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

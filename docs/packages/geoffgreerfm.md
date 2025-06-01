@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `geoffgreerfm`
+- **Domain**: `geoff.greer.fm`
 - **Name**: `geoff.greer.fm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

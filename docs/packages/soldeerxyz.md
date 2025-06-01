@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `soldeerxyz`
+- **Domain**: `soldeer.xyz`
 - **Name**: `soldeer`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

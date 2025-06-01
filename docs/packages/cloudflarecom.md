@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cloudflarecom`
+- **Domain**: `cloudflare.com`
 - **Name**: `cloudflare.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

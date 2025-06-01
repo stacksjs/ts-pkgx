@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `scryerpl`
+- **Domain**: `scryer.pl`
 - **Name**: `Scryer`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cocoapodsorgxcodeproj`
+- **Domain**: `cocoapods.org/xcodeproj`
 - **Name**: `cocoapods.org/xcodeproj`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

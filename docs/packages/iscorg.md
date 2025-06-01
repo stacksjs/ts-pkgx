@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `iscorg`
+- **Domain**: `isc.org`
 - **Name**: `isc.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

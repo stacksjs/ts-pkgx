@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gtkorg`
+- **Domain**: `gtk.org`
 - **Name**: `gtk.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

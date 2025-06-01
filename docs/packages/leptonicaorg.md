@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `leptonicaorg`
+- **Domain**: `leptonica.org`
 - **Name**: `leptonica.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

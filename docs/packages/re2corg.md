@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `re2corg`
+- **Domain**: `re2c.org`
 - **Name**: `re2c`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

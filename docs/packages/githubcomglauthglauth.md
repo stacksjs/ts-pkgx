@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomglauthglauth`
+- **Domain**: `github.com/glauth-glauth`
 - **Name**: `github.com/glauth-glauth`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

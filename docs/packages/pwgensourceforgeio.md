@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pwgensourceforgeio`
+- **Domain**: `pwgen.sourceforge.io`
 - **Name**: `pwgen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

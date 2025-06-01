@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `opendevorg`
+- **Domain**: `opendev.org`
 - **Name**: `opendev.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

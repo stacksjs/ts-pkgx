@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `runatlantisio`
+- **Domain**: `runatlantis.io`
 - **Name**: `atlantis`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

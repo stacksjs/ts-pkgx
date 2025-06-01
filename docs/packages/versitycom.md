@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `versitycom`
+- **Domain**: `versity.com`
 - **Name**: `versity.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

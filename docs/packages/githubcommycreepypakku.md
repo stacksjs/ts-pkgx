@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcommycreepypakku`
+- **Domain**: `github.com/mycreepy-pakku`
 - **Name**: `github.com/mycreepy-pakku`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

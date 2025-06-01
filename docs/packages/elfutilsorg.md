@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `elfutilsorg`
+- **Domain**: `elfutils.org`
 - **Name**: `elfutils.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

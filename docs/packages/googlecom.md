@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `googlecom`
+- **Domain**: `google.com`
 - **Name**: `google.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

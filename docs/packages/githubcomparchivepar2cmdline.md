@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomparchivepar2cmdline`
+- **Domain**: `github.com/Parchive-par2cmdline`
 - **Name**: `github.com/Parchive-par2cmdline`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

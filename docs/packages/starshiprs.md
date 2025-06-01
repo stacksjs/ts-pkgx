@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `starshiprs`
+- **Domain**: `starship.rs`
 - **Name**: `starship`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

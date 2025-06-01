@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `borepub`
+- **Domain**: `bore.pub`
 - **Name**: `bore`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

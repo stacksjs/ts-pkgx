@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `depotdev`
+- **Domain**: `depot.dev`
 - **Name**: `depot`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

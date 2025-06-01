@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gitquickstatssh`
+- **Domain**: `git/quick-stats.sh`
 - **Name**: `git-quick-stats`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

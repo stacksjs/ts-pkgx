@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wimlibnet`
+- **Domain**: `wimlib.net`
 - **Name**: `wimlib.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

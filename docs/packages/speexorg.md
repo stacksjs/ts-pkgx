@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `speexorg`
+- **Domain**: `speex.org`
 - **Name**: `speexdec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

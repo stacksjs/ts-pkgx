@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libsouporg`
+- **Domain**: `libsoup.org`
 - **Name**: `libsoup.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

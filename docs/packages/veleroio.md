@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `veleroio`
+- **Domain**: `velero.io`
 - **Name**: `velero`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

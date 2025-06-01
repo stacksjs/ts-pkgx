@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `moshorg`
+- **Domain**: `mosh.org`
 - **Name**: `mosh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

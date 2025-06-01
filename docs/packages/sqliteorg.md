@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sqliteorg`
+- **Domain**: `sqlite.org`
 - **Name**: `sqlite3`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

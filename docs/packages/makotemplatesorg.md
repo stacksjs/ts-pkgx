@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `makotemplatesorg`
+- **Domain**: `makotemplates.org`
 - **Name**: `mako-render`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

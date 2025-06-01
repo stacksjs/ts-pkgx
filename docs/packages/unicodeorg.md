@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `unicodeorg`
+- **Domain**: `unicode.org`
 - **Name**: `unicode.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

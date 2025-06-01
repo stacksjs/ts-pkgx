@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mandocbsdlv`
+- **Domain**: `mandoc.bsd.lv`
 - **Name**: `mandoc.bsd.lv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

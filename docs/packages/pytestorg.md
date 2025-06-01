@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pytestorg`
+- **Domain**: `pytest.org`
 - **Name**: `pytest`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

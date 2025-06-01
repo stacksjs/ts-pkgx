@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `circlecicom`
+- **Domain**: `circleci.com`
 - **Name**: `circleci`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

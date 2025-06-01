@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `developer1passwordcom`
+- **Domain**: `developer.1password.com`
 - **Name**: `developer.1password.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

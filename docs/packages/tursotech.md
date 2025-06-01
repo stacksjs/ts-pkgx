@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tursotech`
+- **Domain**: `turso.tech`
 - **Name**: `turso`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

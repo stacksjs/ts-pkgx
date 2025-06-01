@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tldrsh`
+- **Domain**: `tldr.sh`
 - **Name**: `tldr`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

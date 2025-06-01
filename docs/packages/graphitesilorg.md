@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `graphitesilorg`
+- **Domain**: `graphite.sil.org`
 - **Name**: `gr2fonttest`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

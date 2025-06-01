@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `amprs`
+- **Domain**: `amp.rs`
 - **Name**: `amp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

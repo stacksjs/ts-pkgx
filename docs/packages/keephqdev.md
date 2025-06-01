@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `keephqdev`
+- **Domain**: `keephq.dev`
 - **Name**: `keep`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

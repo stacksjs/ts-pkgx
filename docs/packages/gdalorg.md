@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gdalorg`
+- **Domain**: `gdal.org`
 - **Name**: `gdal.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `amrdevelopergithubio`
+- **Domain**: `amrdeveloper.github.io`
 - **Name**: `amrdeveloper.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

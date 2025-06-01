@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `prettierio`
+- **Domain**: `prettier.io`
 - **Name**: `prettier`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

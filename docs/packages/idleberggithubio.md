@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `idleberggithubio`
+- **Domain**: `idleberg.github.io`
 - **Name**: `idleberg.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

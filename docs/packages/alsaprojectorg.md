@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `alsaprojectorg`
+- **Domain**: `alsa/project.org`
 - **Name**: `alsa/project.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

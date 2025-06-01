@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcommasclimas`
+- **Domain**: `github.com/mas-cli-mas`
 - **Name**: `github.com/mas-cli-mas`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

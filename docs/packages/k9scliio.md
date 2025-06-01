@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `k9scliio`
+- **Domain**: `k9scli.io`
 - **Name**: `k9s`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

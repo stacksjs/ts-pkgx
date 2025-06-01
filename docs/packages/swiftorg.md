@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `swiftorg`
+- **Domain**: `swift.org`
 - **Name**: `swift`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

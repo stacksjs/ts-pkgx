@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `graphqleditorcom`
+- **Domain**: `graphqleditor.com`
 - **Name**: `graphqleditor.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

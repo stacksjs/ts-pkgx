@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sonarqubeorg`
+- **Domain**: `sonarqube.org`
 - **Name**: `sonarqube.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

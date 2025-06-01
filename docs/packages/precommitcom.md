@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `precommitcom`
+- **Domain**: `pre/commit.com`
 - **Name**: `pre-commit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

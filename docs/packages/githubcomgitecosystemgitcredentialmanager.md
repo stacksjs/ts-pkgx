@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomgitecosystemgitcredentialmanager`
+- **Domain**: `github.com/git-ecosystem-git-credential-manager`
 - **Name**: `github.com/git-ecosystem-git-credential-manager`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

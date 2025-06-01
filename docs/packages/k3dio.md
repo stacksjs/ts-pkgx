@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `k3dio`
+- **Domain**: `k3d.io`
 - **Name**: `k3d`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

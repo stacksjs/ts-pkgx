@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `hatchpypaio`
+- **Domain**: `hatch.pypa.io`
 - **Name**: `hatch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

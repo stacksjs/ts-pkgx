@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fukuchiorg`
+- **Domain**: `fukuchi.org`
 - **Name**: `fukuchi.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

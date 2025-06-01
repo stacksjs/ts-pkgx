@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `prqllangorg`
+- **Domain**: `prql/lang.org`
 - **Name**: `prql`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `luajitorg`
+- **Domain**: `luajit.org`
 - **Name**: `luajit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

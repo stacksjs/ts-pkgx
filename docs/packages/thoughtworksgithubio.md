@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `thoughtworksgithubio`
+- **Domain**: `thoughtworks.github.io`
 - **Name**: `thoughtworks.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

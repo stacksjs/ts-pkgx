@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `vclustercom`
+- **Domain**: `vcluster.com`
 - **Name**: `vcluster`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

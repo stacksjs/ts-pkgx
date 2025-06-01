@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `helmsh`
+- **Domain**: `helm.sh`
 - **Name**: `helm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `theoraorg`
+- **Domain**: `theora.org`
 - **Name**: `theora.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

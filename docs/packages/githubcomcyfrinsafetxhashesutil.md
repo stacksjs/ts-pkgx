@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomcyfrinsafetxhashesutil`
+- **Domain**: `github.com/Cyfrin-safe-tx-hashes-util`
 - **Name**: `github.com/Cyfrin-safe-tx-hashes-util`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

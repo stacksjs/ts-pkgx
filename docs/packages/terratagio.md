@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `terratagio`
+- **Domain**: `terratag.io`
 - **Name**: `terratag`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

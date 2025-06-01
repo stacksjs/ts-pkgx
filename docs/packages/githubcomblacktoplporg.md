@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomblacktoplporg`
+- **Domain**: `github.com/blacktop-lporg`
 - **Name**: `github.com/blacktop-lporg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

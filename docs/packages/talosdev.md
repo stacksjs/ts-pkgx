@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `talosdev`
+- **Domain**: `talos.dev`
 - **Name**: `talosctl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

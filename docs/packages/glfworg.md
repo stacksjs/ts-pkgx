@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `glfworg`
+- **Domain**: `glfw.org`
 - **Name**: `glfw.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

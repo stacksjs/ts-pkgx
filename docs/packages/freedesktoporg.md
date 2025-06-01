@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `freedesktoporg`
+- **Domain**: `freedesktop.org`
 - **Name**: `freedesktop.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

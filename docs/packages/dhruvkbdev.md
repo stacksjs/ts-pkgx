@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dhruvkbdev`
+- **Domain**: `dhruvkb.dev`
 - **Name**: `dhruvkb.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `singboxapp`
+- **Domain**: `sing/box.app`
 - **Name**: `sing-box`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `viaductaiksops`
+- **Domain**: `viaduct.ai/ksops`
 - **Name**: `viaduct.ai/ksops`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

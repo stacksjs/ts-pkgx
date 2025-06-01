@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `applecomremote_cmds`
+- **Domain**: `apple.com/remote_cmds`
 - **Name**: `apple.com/remote_cmds`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

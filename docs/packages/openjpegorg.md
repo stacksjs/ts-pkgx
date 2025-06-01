@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openjpegorg`
+- **Domain**: `openjpeg.org`
 - **Name**: `opj`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

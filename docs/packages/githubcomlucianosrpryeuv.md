@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomlucianosrpryeuv`
+- **Domain**: `github.com/lucianosrp-rye-uv`
 - **Name**: `github.com/lucianosrp-rye-uv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

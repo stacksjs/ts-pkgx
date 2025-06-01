@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `littlecmscom`
+- **Domain**: `littlecms.com`
 - **Name**: `littlecms.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `appiumio`
+- **Domain**: `appium.io`
 - **Name**: `appium`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

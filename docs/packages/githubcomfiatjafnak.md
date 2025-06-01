@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomfiatjafnak`
+- **Domain**: `github.com/fiatjaf-nak`
 - **Name**: `github.com/fiatjaf-nak`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

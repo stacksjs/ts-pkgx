@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dgraphio`
+- **Domain**: `dgraph.io`
 - **Name**: `dgraph`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

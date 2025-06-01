@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `xplrdev`
+- **Domain**: `xplr.dev`
 - **Name**: `xplr`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

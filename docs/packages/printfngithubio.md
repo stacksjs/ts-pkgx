@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `printfngithubio`
+- **Domain**: `printfn.github.io`
 - **Name**: `printfn.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

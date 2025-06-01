@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `alacrittyorg`
+- **Domain**: `alacritty.org`
 - **Name**: `alacritty`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

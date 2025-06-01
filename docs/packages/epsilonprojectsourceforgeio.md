@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `epsilonprojectsourceforgeio`
+- **Domain**: `epsilon/project.sourceforge.io`
 - **Name**: `epsilon`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

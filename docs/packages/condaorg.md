@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `condaorg`
+- **Domain**: `conda.org`
 - **Name**: `conda`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

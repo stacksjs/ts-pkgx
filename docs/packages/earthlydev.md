@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `earthlydev`
+- **Domain**: `earthly.dev`
 - **Name**: `earthly.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

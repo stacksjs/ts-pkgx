@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `scalalangorg`
+- **Domain**: `scala/lang.org`
 - **Name**: `scala-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

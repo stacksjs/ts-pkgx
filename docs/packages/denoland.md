@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `denoland`
+- **Domain**: `deno.land`
 - **Name**: `deno`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

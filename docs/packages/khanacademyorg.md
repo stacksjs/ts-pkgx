@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `khanacademyorg`
+- **Domain**: `khanacademy.org`
 - **Name**: `khanacademy.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

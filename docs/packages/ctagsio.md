@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ctagsio`
+- **Domain**: `ctags.io`
 - **Name**: `ctags`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

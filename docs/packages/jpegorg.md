@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jpegorg`
+- **Domain**: `jpeg.org`
 - **Name**: `jpeg.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

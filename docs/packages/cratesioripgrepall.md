@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cratesioripgrepall`
+- **Domain**: `crates.io/ripgrep-all`
 - **Name**: `crates.io/ripgrep-all`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

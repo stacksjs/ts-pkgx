@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `macvimorg`
+- **Domain**: `macvim.org`
 - **Name**: `macvim.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

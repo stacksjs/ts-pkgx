@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gitlfscom`
+- **Domain**: `git/lfs.com`
 - **Name**: `git-lfs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

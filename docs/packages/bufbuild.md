@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `bufbuild`
+- **Domain**: `buf.build`
 - **Name**: `buf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

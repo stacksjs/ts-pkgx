@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fnaxnagithubio`
+- **Domain**: `fna/xna.github.io`
 - **Name**: `fna-xna.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `elementsprojectorg`
+- **Domain**: `elementsproject.org`
 - **Name**: `elementsproject.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

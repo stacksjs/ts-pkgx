@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libgdgithubio`
+- **Domain**: `libgd.github.io`
 - **Name**: `libgd.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

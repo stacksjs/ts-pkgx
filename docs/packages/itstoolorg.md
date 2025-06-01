@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `itstoolorg`
+- **Domain**: `itstool.org`
 - **Name**: `itstool`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

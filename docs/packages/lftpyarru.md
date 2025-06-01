@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `lftpyarru`
+- **Domain**: `lftp.yar.ru`
 - **Name**: `lftp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

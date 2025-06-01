@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mcmcjagssourceforgeio`
+- **Domain**: `mcmc/jags.sourceforge.io`
 - **Name**: `jags`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

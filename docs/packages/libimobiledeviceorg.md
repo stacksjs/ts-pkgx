@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libimobiledeviceorg`
+- **Domain**: `libimobiledevice.org`
 - **Name**: `idevicedate`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sfnet`
+- **Domain**: `sf.net`
 - **Name**: `sf.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

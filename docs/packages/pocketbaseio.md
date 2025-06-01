@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pocketbaseio`
+- **Domain**: `pocketbase.io`
 - **Name**: `pocketbase`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

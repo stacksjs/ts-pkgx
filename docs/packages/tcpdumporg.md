@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tcpdumporg`
+- **Domain**: `tcpdump.org`
 - **Name**: `pcap-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `bitcoinorg`
+- **Domain**: `bitcoin.org`
 - **Name**: `bitcoin`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

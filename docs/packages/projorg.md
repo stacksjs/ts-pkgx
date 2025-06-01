@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `projorg`
+- **Domain**: `proj.org`
 - **Name**: `proj`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `xkbcommonorg`
+- **Domain**: `xkbcommon.org`
 - **Name**: `xkbcli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

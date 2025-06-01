@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `microcksio`
+- **Domain**: `microcks.io`
 - **Name**: `microcks-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

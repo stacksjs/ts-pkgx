@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `projectdiscoveryionuclei`
+- **Domain**: `projectdiscovery.io/nuclei`
 - **Name**: `projectdiscovery.io/nuclei`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

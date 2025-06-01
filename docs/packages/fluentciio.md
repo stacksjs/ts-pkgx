@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fluentciio`
+- **Domain**: `fluentci.io`
 - **Name**: `fluentci`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

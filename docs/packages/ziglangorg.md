@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ziglangorg`
+- **Domain**: `ziglang.org`
 - **Name**: `zig`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cligithubcom`
+- **Domain**: `cli.github.com`
 - **Name**: `gh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

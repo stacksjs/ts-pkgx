@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pythonpoetryorg`
+- **Domain**: `python/poetry.org`
 - **Name**: `poetry`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

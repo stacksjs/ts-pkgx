@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `orasland`
+- **Domain**: `oras.land`
 - **Name**: `oras`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

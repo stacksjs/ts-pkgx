@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mpg123de`
+- **Domain**: `mpg123.de`
 - **Name**: `mpg123`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

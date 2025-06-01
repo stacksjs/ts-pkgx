@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tlrdev`
+- **Domain**: `tlr.dev`
 - **Name**: `teller`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

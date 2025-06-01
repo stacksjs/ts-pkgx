@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `stedolangithubio`
+- **Domain**: `stedolan.github.io`
 - **Name**: `stedolan.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

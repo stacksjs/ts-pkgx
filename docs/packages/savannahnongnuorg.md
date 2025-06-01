@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `savannahnongnuorg`
+- **Domain**: `savannah.nongnu.org`
 - **Name**: `savannah.nongnu.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

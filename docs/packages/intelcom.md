@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `intelcom`
+- **Domain**: `intel.com`
 - **Name**: `intel.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

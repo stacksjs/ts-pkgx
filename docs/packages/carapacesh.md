@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `carapacesh`
+- **Domain**: `carapace.sh`
 - **Name**: `carapace`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

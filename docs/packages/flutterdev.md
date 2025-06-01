@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `flutterdev`
+- **Domain**: `flutter.dev`
 - **Name**: `flutter.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

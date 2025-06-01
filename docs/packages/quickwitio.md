@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `quickwitio`
+- **Domain**: `quickwit.io`
 - **Name**: `quickwit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

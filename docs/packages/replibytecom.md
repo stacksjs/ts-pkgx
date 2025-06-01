@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `replibytecom`
+- **Domain**: `replibyte.com`
 - **Name**: `replibyte`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

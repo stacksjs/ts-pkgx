@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wailsio`
+- **Domain**: `wails.io`
 - **Name**: `wails`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

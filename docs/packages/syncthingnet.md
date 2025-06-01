@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `syncthingnet`
+- **Domain**: `syncthing.net`
 - **Name**: `syncthing`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

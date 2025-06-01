@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sconsorg`
+- **Domain**: `scons.org`
 - **Name**: `scons`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

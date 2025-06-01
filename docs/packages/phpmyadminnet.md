@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `phpmyadminnet`
+- **Domain**: `phpmyadmin.net`
 - **Name**: `phpMyAdmin`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

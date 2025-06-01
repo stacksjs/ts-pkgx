@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nxdev`
+- **Domain**: `nx.dev`
 - **Name**: `nx.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `podmanio`
+- **Domain**: `podman.io`
 - **Name**: `podman`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

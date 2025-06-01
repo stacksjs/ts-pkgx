@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cscopesourceforgeio`
+- **Domain**: `cscope.sourceforge.io`
 - **Name**: `cscope.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

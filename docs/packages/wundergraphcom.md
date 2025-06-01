@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wundergraphcom`
+- **Domain**: `wundergraph.com`
 - **Name**: `wunderctl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

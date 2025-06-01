@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ibrcstubsde`
+- **Domain**: `ibr.cs.tu/bs.de`
 - **Name**: `ibr.cs.tu/bs.de`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

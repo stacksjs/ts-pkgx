@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sympyorg`
+- **Domain**: `sympy.org`
 - **Name**: `sympy.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

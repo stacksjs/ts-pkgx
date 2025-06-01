@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `justsystems`
+- **Domain**: `just.systems`
 - **Name**: `just`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

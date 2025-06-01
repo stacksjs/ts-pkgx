@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `materializecom`
+- **Domain**: `materialize.com`
 - **Name**: `mz`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

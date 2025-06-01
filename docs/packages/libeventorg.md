@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libeventorg`
+- **Domain**: `libevent.org`
 - **Name**: `libevent.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

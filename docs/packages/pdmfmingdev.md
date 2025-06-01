@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pdmfmingdev`
+- **Domain**: `pdm.fming.dev`
 - **Name**: `pdm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

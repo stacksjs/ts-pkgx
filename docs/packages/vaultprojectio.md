@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `vaultprojectio`
+- **Domain**: `vaultproject.io`
 - **Name**: `vault`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

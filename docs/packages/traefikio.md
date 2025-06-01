@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `traefikio`
+- **Domain**: `traefik.io`
 - **Name**: `traefik`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

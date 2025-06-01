@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `reacheremail`
+- **Domain**: `reacher.email`
 - **Name**: `reacher.email`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

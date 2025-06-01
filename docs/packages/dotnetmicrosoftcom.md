@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dotnetmicrosoftcom`
+- **Domain**: `dotnet.microsoft.com`
 - **Name**: `dotnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

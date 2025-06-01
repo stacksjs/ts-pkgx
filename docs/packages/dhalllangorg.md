@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dhalllangorg`
+- **Domain**: `dhall/lang.org`
 - **Name**: `dhall`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

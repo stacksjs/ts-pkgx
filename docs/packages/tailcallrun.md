@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tailcallrun`
+- **Domain**: `tailcall.run`
 - **Name**: `tailcall`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

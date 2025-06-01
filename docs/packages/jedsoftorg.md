@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jedsoftorg`
+- **Domain**: `jedsoft.org`
 - **Name**: `jedsoft.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

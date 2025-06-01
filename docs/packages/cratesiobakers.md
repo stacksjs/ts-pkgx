@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cratesiobakers`
+- **Domain**: `crates.io/bake-rs`
 - **Name**: `crates.io/bake-rs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

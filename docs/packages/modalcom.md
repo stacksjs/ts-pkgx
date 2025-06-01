@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `modalcom`
+- **Domain**: `modal.com`
 - **Name**: `modal.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

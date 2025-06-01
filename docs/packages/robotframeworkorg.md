@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `robotframeworkorg`
+- **Domain**: `robotframework.org`
 - **Name**: `robot`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

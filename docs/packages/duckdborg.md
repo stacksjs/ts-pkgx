@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `duckdborg`
+- **Domain**: `duckdb.org`
 - **Name**: `duckdb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

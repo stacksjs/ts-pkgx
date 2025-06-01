@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gomplateca`
+- **Domain**: `gomplate.ca`
 - **Name**: `gomplate`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

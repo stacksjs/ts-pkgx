@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `temporalio`
+- **Domain**: `temporal.io`
 - **Name**: `temporal`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

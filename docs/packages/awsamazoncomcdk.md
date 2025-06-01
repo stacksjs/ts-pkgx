@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `awsamazoncomcdk`
+- **Domain**: `aws.amazon.com/cdk`
 - **Name**: `aws.amazon.com/cdk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

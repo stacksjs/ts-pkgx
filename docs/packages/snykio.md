@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `snykio`
+- **Domain**: `snyk.io`
 - **Name**: `snyk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wavpackcom`
+- **Domain**: `wavpack.com`
 - **Name**: `wavpack.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wiresharkorg`
+- **Domain**: `wireshark.org`
 - **Name**: `wireshark.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

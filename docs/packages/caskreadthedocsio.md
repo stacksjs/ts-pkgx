@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `caskreadthedocsio`
+- **Domain**: `cask.readthedocs.io`
 - **Name**: `cask`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

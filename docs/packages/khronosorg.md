@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `khronosorg`
+- **Domain**: `khronos.org`
 - **Name**: `khronos.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cephcomcephadm`
+- **Domain**: `ceph.com/cephadm`
 - **Name**: `ceph.com/cephadm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

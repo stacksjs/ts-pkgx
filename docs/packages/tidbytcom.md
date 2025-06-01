@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tidbytcom`
+- **Domain**: `tidbyt.com`
 - **Name**: `pixlet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

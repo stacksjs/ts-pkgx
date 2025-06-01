@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wait4xdev`
+- **Domain**: `wait4x.dev`
 - **Name**: `wait4x`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

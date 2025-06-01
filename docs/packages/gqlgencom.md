@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gqlgencom`
+- **Domain**: `gqlgen.com`
 - **Name**: `gqlgen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

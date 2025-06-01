@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `docutilsorg`
+- **Domain**: `docutils.org`
 - **Name**: `docutils.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

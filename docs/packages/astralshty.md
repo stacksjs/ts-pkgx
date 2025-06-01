@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `astralshty`
+- **Domain**: `astral.sh/ty`
 - **Name**: `astral.sh/ty`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

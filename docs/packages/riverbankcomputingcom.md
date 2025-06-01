@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `riverbankcomputingcom`
+- **Domain**: `riverbankcomputing.com`
 - **Name**: `riverbankcomputing.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

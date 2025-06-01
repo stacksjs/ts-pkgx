@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kerberosorg`
+- **Domain**: `kerberos.org`
 - **Name**: `kerberos.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

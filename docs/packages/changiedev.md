@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `changiedev`
+- **Domain**: `changie.dev`
 - **Name**: `changie`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

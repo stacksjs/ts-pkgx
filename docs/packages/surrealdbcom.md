@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `surrealdbcom`
+- **Domain**: `surrealdb.com`
 - **Name**: `surreal`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

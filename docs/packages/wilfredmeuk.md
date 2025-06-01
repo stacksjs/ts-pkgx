@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wilfredmeuk`
+- **Domain**: `wilfred.me.uk`
 - **Name**: `wilfred.me.uk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

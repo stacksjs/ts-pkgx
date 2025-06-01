@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `s3toolsorg`
+- **Domain**: `s3tools.org`
 - **Name**: `s3cmd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

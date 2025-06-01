@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `diggerdev`
+- **Domain**: `digger.dev`
 - **Name**: `digger`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

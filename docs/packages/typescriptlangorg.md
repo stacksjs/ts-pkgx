@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `typescriptlangorg`
+- **Domain**: `typescriptlang.org`
 - **Name**: `tsc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

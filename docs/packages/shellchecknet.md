@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `shellchecknet`
+- **Domain**: `shellcheck.net`
 - **Name**: `shellcheck`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

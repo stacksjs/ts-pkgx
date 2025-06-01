@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `aspellnet`
+- **Domain**: `aspell.net`
 - **Name**: `aspell.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

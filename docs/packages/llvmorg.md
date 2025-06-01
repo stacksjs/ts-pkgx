@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `llvmorg`
+- **Domain**: `llvm.org`
 - **Name**: `llvm.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

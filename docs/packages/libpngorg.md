@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libpngorg`
+- **Domain**: `libpng.org`
 - **Name**: `libpng.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

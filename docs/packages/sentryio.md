@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sentryio`
+- **Domain**: `sentry.io`
 - **Name**: `sentry-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `furyco`
+- **Domain**: `fury.co`
 - **Name**: `fury`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

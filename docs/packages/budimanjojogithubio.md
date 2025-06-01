@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `budimanjojogithubio`
+- **Domain**: `budimanjojo.github.io`
 - **Name**: `budimanjojo.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

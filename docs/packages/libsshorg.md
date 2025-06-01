@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libsshorg`
+- **Domain**: `libssh.org`
 - **Name**: `libssh.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

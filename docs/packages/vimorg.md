@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `vimorg`
+- **Domain**: `vim.org`
 - **Name**: `vim.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

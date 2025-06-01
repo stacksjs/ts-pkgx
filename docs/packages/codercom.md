@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `codercom`
+- **Domain**: `coder.com`
 - **Name**: `coder`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

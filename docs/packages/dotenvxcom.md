@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dotenvxcom`
+- **Domain**: `dotenvx.com`
 - **Name**: `dotenvx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

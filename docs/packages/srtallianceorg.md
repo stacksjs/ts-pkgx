@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `srtallianceorg`
+- **Domain**: `srtalliance.org`
 - **Name**: `srt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

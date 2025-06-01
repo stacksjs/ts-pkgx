@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `systemdio`
+- **Domain**: `systemd.io`
 - **Name**: `systemd.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

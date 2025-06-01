@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ebassigithubio`
+- **Domain**: `ebassi.github.io`
 - **Name**: `ebassi.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

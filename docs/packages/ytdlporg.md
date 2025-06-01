@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ytdlporg`
+- **Domain**: `yt/dlp.org`
 - **Name**: `yt-dlp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

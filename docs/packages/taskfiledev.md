@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `taskfiledev`
+- **Domain**: `taskfile.dev`
 - **Name**: `task`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

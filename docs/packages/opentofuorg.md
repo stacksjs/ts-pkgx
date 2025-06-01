@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `opentofuorg`
+- **Domain**: `opentofu.org`
 - **Name**: `tofu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

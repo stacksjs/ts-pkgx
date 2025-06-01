@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `applecom`
+- **Domain**: `apple.com`
 - **Name**: `apple.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

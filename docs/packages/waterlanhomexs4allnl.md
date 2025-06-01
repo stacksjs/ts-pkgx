@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `waterlanhomexs4allnl`
+- **Domain**: `waterlan.home.xs4all.nl`
 - **Name**: `waterlan.home.xs4all.nl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

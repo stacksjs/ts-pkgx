@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tcshorg`
+- **Domain**: `tcsh.org`
 - **Name**: `tcsh.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

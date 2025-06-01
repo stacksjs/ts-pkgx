@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `getzolaorg`
+- **Domain**: `getzola.org`
 - **Name**: `zola`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

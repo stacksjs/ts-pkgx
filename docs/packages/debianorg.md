@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `debianorg`
+- **Domain**: `debian.org`
 - **Name**: `debian.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

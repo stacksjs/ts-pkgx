@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `localaiio`
+- **Domain**: `localai.io`
 - **Name**: `LocalAI`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

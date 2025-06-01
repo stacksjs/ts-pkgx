@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sftpgocom`
+- **Domain**: `sftpgo.com`
 - **Name**: `sftpgo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

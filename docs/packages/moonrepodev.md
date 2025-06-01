@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `moonrepodev`
+- **Domain**: `moonrepo.dev`
 - **Name**: `moonrepo.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mavenapacheorg`
+- **Domain**: `maven.apache.org`
 - **Name**: `mvn`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

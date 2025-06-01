@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `frei0rdyneorg`
+- **Domain**: `frei0r.dyne.org`
 - **Name**: `frei0r.dyne.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

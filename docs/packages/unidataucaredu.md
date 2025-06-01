@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `unidataucaredu`
+- **Domain**: `unidata.ucar.edu`
 - **Name**: `unidata.ucar.edu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

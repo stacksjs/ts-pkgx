@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gleamrun`
+- **Domain**: `gleam.run`
 - **Name**: `gleam`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

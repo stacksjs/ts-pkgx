@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `unboundnet`
+- **Domain**: `unbound.net`
 - **Name**: `unbound`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

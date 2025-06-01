@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `asciinemaorg`
+- **Domain**: `asciinema.org`
 - **Name**: `asciinema`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

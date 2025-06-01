@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `svenstarogithubio`
+- **Domain**: `svenstaro.github.io`
 - **Name**: `svenstaro.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

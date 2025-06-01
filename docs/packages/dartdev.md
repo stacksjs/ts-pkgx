@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dartdev`
+- **Domain**: `dart.dev`
 - **Name**: `dart`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

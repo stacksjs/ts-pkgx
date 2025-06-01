@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomdiniboy1123usque`
+- **Domain**: `github.com/Diniboy1123-usque`
 - **Name**: `github.com/Diniboy1123-usque`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

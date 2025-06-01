@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `lcdforg`
+- **Domain**: `lcdf.org`
 - **Name**: `lcdf.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

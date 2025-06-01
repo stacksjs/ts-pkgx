@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `flitpypaio`
+- **Domain**: `flit.pypa.io`
 - **Name**: `flit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

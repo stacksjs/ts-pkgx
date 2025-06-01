@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pippypaio`
+- **Domain**: `pip.pypa.io`
 - **Name**: `pip`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

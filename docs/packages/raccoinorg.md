@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `raccoinorg`
+- **Domain**: `raccoin.org`
 - **Name**: `raccoin`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

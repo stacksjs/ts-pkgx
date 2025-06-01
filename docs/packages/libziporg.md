@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libziporg`
+- **Domain**: `libzip.org`
 - **Name**: `zip`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pluralithcom`
+- **Domain**: `pluralith.com`
 - **Name**: `pluralith`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

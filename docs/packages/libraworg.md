@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libraworg`
+- **Domain**: `libraw.org`
 - **Name**: `libraw.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

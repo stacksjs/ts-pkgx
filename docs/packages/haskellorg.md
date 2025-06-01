@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `haskellorg`
+- **Domain**: `haskell.org`
 - **Name**: `haskell.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

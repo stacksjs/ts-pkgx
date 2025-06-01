@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `indexsupplycom`
+- **Domain**: `indexsupply.com`
 - **Name**: `indexsupply.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

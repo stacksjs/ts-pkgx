@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openapigeneratortech`
+- **Domain**: `openapi/generator.tech`
 - **Name**: `openapi-generator`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `popplerfreedesktoporg`
+- **Domain**: `poppler.freedesktop.org`
 - **Name**: `poppler.freedesktop.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

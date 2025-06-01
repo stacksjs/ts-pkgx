@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `wezfurlongorg`
+- **Domain**: `wezfurlong.org`
 - **Name**: `wezfurlong.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

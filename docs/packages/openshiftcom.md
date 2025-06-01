@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openshiftcom`
+- **Domain**: `openshift.com`
 - **Name**: `oc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `valesh`
+- **Domain**: `vale.sh`
 - **Name**: `vale`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

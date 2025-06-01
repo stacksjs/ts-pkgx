@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fishshellcom`
+- **Domain**: `fishshell.com`
 - **Name**: `fish`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcommilescranmerrip2`
+- **Domain**: `github.com/MilesCranmer-rip2`
 - **Name**: `github.com/MilesCranmer-rip2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

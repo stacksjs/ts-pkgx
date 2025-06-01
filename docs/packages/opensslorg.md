@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `opensslorg`
+- **Domain**: `openssl.org`
 - **Name**: `OpenSSL`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

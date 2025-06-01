@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libpipelinegitlabio`
+- **Domain**: `libpipeline.gitlab.io`
 - **Name**: `libpipeline.gitlab.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

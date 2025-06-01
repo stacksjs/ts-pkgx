@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mariadbcom`
+- **Domain**: `mariadb.com`
 - **Name**: `mariadb.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

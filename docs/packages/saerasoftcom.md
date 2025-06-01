@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `saerasoftcom`
+- **Domain**: `saerasoft.com`
 - **Name**: `saerasoft.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

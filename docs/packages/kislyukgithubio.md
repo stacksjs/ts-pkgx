@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kislyukgithubio`
+- **Domain**: `kislyuk.github.io`
 - **Name**: `kislyuk.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

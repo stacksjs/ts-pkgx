@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tinybirdco`
+- **Domain**: `tinybird.co`
 - **Name**: `tb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

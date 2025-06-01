@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `astralshruff`
+- **Domain**: `astral.sh/ruff`
 - **Name**: `astral.sh/ruff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

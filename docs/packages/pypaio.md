@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pypaio`
+- **Domain**: `pypa.io`
 - **Name**: `pypa.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

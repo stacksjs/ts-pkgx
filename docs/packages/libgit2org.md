@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libgit2org`
+- **Domain**: `libgit2.org`
 - **Name**: `git2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

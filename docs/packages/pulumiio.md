@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pulumiio`
+- **Domain**: `pulumi.io`
 - **Name**: `pulumi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

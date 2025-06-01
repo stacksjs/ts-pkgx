@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `istioio`
+- **Domain**: `istio.io`
 - **Name**: `istioctl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

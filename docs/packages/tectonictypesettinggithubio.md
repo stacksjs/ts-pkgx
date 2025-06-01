@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tectonictypesettinggithubio`
+- **Domain**: `tectonic/typesetting.github.io`
 - **Name**: `tectonic`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

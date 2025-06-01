@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `steampipeio`
+- **Domain**: `steampipe.io`
 - **Name**: `steampipe`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

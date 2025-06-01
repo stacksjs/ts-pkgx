@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `githubcomigorshubovychmarkdownlintcli`
+- **Domain**: `github.com/igorshubovych-markdownlint-cli`
 - **Name**: `github.com/igorshubovych-markdownlint-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openpmixgithubio`
+- **Domain**: `openpmix.github.io`
 - **Name**: `openpmix.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cnqueryio`
+- **Domain**: `cnquery.io`
 - **Name**: `cnquery`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

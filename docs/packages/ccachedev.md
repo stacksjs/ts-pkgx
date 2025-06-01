@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ccachedev`
+- **Domain**: `ccache.dev`
 - **Name**: `ccache`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

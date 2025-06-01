@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `hashicorpcom`
+- **Domain**: `hashicorp.com`
 - **Name**: `hashicorp.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

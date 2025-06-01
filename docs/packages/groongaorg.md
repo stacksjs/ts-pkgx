@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `groongaorg`
+- **Domain**: `groonga.org`
 - **Name**: `groonga`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

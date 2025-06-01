@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `supabasecom`
+- **Domain**: `supabase.com`
 - **Name**: `supabase.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

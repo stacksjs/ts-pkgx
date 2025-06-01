@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `erlangorg`
+- **Domain**: `erlang.org`
 - **Name**: `erlang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

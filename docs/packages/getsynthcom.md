@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `getsynthcom`
+- **Domain**: `getsynth.com`
 - **Name**: `synth`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

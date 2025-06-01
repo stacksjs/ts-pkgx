@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `streamlinkgithubio`
+- **Domain**: `streamlink.github.io`
 - **Name**: `streamlink`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

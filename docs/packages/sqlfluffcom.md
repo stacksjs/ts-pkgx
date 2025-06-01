@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sqlfluffcom`
+- **Domain**: `sqlfluff.com`
 - **Name**: `sqlfluff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

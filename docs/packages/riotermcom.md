@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `riotermcom`
+- **Domain**: `rioterm.com`
 - **Name**: `rioterm.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

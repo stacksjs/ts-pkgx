@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fermyoncom`
+- **Domain**: `fermyon.com`
 - **Name**: `fermyon.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openldaporg`
+- **Domain**: `openldap.org`
 - **Name**: `ldap`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

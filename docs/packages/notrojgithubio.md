@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `notrojgithubio`
+- **Domain**: `notroj.github.io`
 - **Name**: `notroj.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

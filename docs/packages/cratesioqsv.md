@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cratesioqsv`
+- **Domain**: `crates.io/qsv`
 - **Name**: `crates.io/qsv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

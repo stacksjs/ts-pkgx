@@ -6,7 +6,7 @@ Popular programming languages and their runtimes available through pkgx.
 
 ## Packages
 
-### [crystal/lang.org](../packages/crystal/lang-org.md)
+### [crystal/lang.org](../packages/crystallangorg.md)
 
 Crafters of fine Open Source products
 
@@ -16,7 +16,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [dart.dev](../packages/dart-dev.md)
+### [dart.dev](../packages/dartdev.md)
 
 Crafters of fine Open Source products
 
@@ -26,7 +26,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [deno.land](../packages/deno-land.md)
+### [deno.land](../packages/denoland.md)
 
 Crafters of fine Open Source products
 
@@ -36,7 +36,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [elixir/lang.org](../packages/elixir/lang-org.md)
+### [elixir/lang.org](../packages/elixirlangorg.md)
 
 Crafters of fine Open Source products
 
@@ -46,7 +46,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [erlang.org](../packages/erlang-org.md)
+### [erlang.org](../packages/erlangorg.md)
 
 Crafters of fine Open Source products
 
@@ -56,7 +56,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [gleam.run](../packages/gleam-run.md)
+### [gleam.run](../packages/gleamrun.md)
 
 Crafters of fine Open Source products
 
@@ -66,7 +66,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [go.dev](../packages/go-dev.md)
+### [go.dev](../packages/godev.md)
 
 Crafters of fine Open Source products
 
@@ -76,7 +76,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [haskell.org](../packages/haskell-org.md)
+### [haskell.org](../packages/haskellorg.md)
 
 Crafters of fine Open Source products
 
@@ -86,7 +86,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [julialang.org](../packages/julialang-org.md)
+### [julialang.org](../packages/julialangorg.md)
 
 Crafters of fine Open Source products
 
@@ -96,7 +96,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [kotlinlang.org](../packages/kotlinlang-org.md)
+### [kotlinlang.org](../packages/kotlinlangorg.md)
 
 Crafters of fine Open Source products
 
@@ -106,7 +106,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [nim/lang.org](../packages/nim/lang-org.md)
+### [nim/lang.org](../packages/nimlangorg.md)
 
 Crafters of fine Open Source products
 
@@ -116,7 +116,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [nodejs.org](../packages/nodejs-org.md)
+### [nodejs.org](../packages/nodejsorg.md)
 
 Crafters of fine Open Source products
 
@@ -126,7 +126,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [perl.org](../packages/perl-org.md)
+### [perl.org](../packages/perlorg.md)
 
 Crafters of fine Open Source products
 
@@ -136,7 +136,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [php.net](../packages/php-net.md)
+### [php.net](../packages/phpnet.md)
 
 Crafters of fine Open Source products
 
@@ -146,7 +146,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [python.org](../packages/python-org.md)
+### [python.org](../packages/pythonorg.md)
 
 Crafters of fine Open Source products
 
@@ -156,7 +156,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [ruby/lang.org](../packages/ruby/lang-org.md)
+### [ruby/lang.org](../packages/rubylangorg.md)
 
 Crafters of fine Open Source products
 
@@ -166,7 +166,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [rust/lang.org](../packages/rust/lang-org.md)
+### [rust/lang.org](../packages/rustlangorg.md)
 
 Crafters of fine Open Source products
 
@@ -176,7 +176,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [scala/lang.org](../packages/scala/lang-org.md)
+### [scala/lang.org](../packages/scalalangorg.md)
 
 Crafters of fine Open Source products
 
@@ -186,7 +186,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [swift.org](../packages/swift-org.md)
+### [swift.org](../packages/swiftorg.md)
 
 Crafters of fine Open Source products
 
@@ -196,7 +196,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [typescriptlang.org](../packages/typescriptlang-org.md)
+### [typescriptlang.org](../packages/typescriptlangorg.md)
 
 Crafters of fine Open Source products
 
@@ -206,7 +206,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [vlang.io](../packages/vlang-io.md)
+### [vlang.io](../packages/vlangio.md)
 
 Crafters of fine Open Source products
 
@@ -216,7 +216,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [ziglang.org](../packages/ziglang-org.md)
+### [ziglang.org](../packages/ziglangorg.md)
 
 Crafters of fine Open Source products
 

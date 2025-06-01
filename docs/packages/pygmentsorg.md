@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pygmentsorg`
+- **Domain**: `pygments.org`
 - **Name**: `pygmentize`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

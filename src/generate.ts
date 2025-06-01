@@ -1056,7 +1056,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
         // Create install command
         const installCmd = `\`pkgx ${pkg.name || domain}\``
 
-        content += `| **[${domain}](./packages/${domain.replace(/\./g, '-')}.md)**${aliases} | ${description} | ${programs} | ${versionInfo} | ${installCmd} |\n`
+        content += `| **[${domain}](./packages/${domain}.md)**${aliases} | ${description} | ${programs} | ${versionInfo} | ${installCmd} |\n`
       }
       catch (error) {
         console.error(`Error processing ${domain}:`, error)
@@ -1165,6 +1165,8 @@ async function generatePackagePages(outputDir: string): Promise<string[]> {
       const filename = `${domainVarName}.md`
       const filepath = path.join(packagesDir, filename)
 
+      const domain = pkg.domain || pkg.fullPath || domainVarName
+
       let content = `# ${pkg.name || domain}
 
 >${pkg.description ? ` ${pkg.description}` : ''}
@@ -1263,9 +1265,10 @@ These packages work well with ${pkg.name || domain}:
 
 `
         pkg.companions.forEach((companion) => {
-          const companionPkg = pantry[companion]
+          const companionVarName = convertDomainToVarName(companion)
+          const companionPkg = pantry[companionVarName]
           if (companionPkg) {
-            content += `- [\`${companion}\`](${companion.replace(/\./g, '-')}.md) - ${companionPkg.description}\n`
+            content += `- [\`${companion}\`](${companionVarName}.md) - ${companionPkg.description}\n`
           }
           else {
             content += `- \`${companion}\`\n`
@@ -1280,7 +1283,7 @@ These packages work well with ${pkg.name || domain}:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.${convertDomainToVarName(domain)}
+const pkg = pantry.${domainVarName}
 
 console.log(\`Package: \${pkg.name}\`)
 console.log(\`Description: \${pkg.description}\`)
@@ -1302,7 +1305,7 @@ console.log(\`Programs: \${pkg.programs.join(', ')}\`)
       generatedFiles.push(filepath)
     }
     catch (error) {
-      console.error(`Error generating page for ${domain}:`, error)
+      console.error(`Error generating page for ${domainVarName}:`, error)
     }
   }
 
@@ -1357,10 +1360,10 @@ ${categoryName === 'Programming Languages'
 
 `
 
-    validPackages.forEach(({ pkg }) => {
+    validPackages.forEach(({ domainVarName, pkg }) => {
       const domain = pkg.domain || pkg.fullPath || 'unknown'
       const aliases = pkg.aliases && pkg.aliases.length > 0 ? ` (${pkg.aliases.join(', ')})` : ''
-      content += `### [${domain}](../packages/${domain.replace(/\./g, '-')}.md)${aliases}
+      content += `### [${domain}](../packages/${domainVarName}.md)${aliases}
 ${pkg.description
   ? `
 ${pkg.description}

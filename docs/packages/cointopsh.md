@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cointopsh`
+- **Domain**: `cointop.sh`
 - **Name**: `cointop`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

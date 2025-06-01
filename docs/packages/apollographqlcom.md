@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `apollographqlcom`
+- **Domain**: `apollographql.com`
 - **Name**: `apollographql.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

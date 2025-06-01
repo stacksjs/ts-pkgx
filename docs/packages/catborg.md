@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `catborg`
+- **Domain**: `catb.org`
 - **Name**: `catb.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

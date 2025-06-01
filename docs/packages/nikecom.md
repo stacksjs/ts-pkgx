@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nikecom`
+- **Domain**: `nike.com`
 - **Name**: `nike.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

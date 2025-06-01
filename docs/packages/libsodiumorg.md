@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libsodiumorg`
+- **Domain**: `libsodium.org`
 - **Name**: `libsodium.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

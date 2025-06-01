@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `beyondgrepcom`
+- **Domain**: `beyondgrep.com`
 - **Name**: `ack`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

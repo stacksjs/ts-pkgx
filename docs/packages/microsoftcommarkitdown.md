@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `microsoftcommarkitdown`
+- **Domain**: `microsoft.com/markitdown`
 - **Name**: `microsoft.com/markitdown`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

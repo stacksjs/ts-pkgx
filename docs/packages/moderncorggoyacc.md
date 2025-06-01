@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `moderncorggoyacc`
+- **Domain**: `modernc.org/goyacc`
 - **Name**: `modernc.org/goyacc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

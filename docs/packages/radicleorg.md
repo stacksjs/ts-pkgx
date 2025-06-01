@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `radicleorg`
+- **Domain**: `radicle.org`
 - **Name**: `radicle.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

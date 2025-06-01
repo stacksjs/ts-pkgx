@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `apktoolorg`
+- **Domain**: `apktool.org`
 - **Name**: `apktool`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

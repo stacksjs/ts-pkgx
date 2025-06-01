@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nasmus`
+- **Domain**: `nasm.us`
 - **Name**: `nasm.us`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `k6io`
+- **Domain**: `k6.io`
 - **Name**: `k6`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

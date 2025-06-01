@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `htmltidyorg`
+- **Domain**: `html/tidy.org`
 - **Name**: `tidy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

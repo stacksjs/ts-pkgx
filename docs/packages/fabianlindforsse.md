@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fabianlindforsse`
+- **Domain**: `fabianlindfors.se`
 - **Name**: `fabianlindfors.se`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

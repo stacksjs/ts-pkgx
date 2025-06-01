@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sdkmanio`
+- **Domain**: `sdkman.io`
 - **Name**: `sdkman-init.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

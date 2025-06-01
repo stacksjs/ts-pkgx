@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `htsliborg`
+- **Domain**: `htslib.org`
 - **Name**: `htslib.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

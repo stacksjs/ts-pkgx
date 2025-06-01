@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ruciocernch`
+- **Domain**: `rucio.cern.ch`
 - **Name**: `rucio.cern.ch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

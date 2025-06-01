@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gnutlsorg`
+- **Domain**: `gnutls.org`
 - **Name**: `gnutls.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

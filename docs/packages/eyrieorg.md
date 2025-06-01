@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `eyrieorg`
+- **Domain**: `eyrie.org`
 - **Name**: `eyrie.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `freeglutsourceforgeio`
+- **Domain**: `freeglut.sourceforge.io`
 - **Name**: `freeglut.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

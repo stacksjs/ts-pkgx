@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `elvsh`
+- **Domain**: `elv.sh`
 - **Name**: `elvish`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kobuild`
+- **Domain**: `ko.build`
 - **Name**: `ko`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

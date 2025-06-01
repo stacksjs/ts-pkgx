@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `opencoreamrsourceforgeio`
+- **Domain**: `opencore/amr.sourceforge.io`
 - **Name**: `opencore-amr.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

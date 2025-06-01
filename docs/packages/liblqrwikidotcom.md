@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `liblqrwikidotcom`
+- **Domain**: `liblqr.wikidot.com`
 - **Name**: `liblqr.wikidot.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

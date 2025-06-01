@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `priverdev`
+- **Domain**: `priver.dev`
 - **Name**: `priver.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

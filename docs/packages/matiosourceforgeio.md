@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `matiosourceforgeio`
+- **Domain**: `matio.sourceforge.io`
 - **Name**: `libmatio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

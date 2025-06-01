@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `vitejsdev`
+- **Domain**: `vitejs.dev`
 - **Name**: `vite`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

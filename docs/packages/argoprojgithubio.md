@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `argoprojgithubio`
+- **Domain**: `argoproj.github.io`
 - **Name**: `argoproj.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

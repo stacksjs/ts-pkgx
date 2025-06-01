@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libproxygithubio`
+- **Domain**: `libproxy.github.io`
 - **Name**: `libproxy.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

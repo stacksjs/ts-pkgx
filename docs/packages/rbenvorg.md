@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rbenvorg`
+- **Domain**: `rbenv.org`
 - **Name**: `rbenv.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

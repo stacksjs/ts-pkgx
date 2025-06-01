@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gittoztnet`
+- **Domain**: `git.tozt.net`
 - **Name**: `git.tozt.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

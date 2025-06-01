@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sasslangcom`
+- **Domain**: `sass/lang.com`
 - **Name**: `sass/lang.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

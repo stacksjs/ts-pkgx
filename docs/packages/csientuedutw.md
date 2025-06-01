@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `csientuedutw`
+- **Domain**: `csie.ntu.edu.tw`
 - **Name**: `csie.ntu.edu.tw`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

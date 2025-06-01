@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `expodev`
+- **Domain**: `expo.dev`
 - **Name**: `expo.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

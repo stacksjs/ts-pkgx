@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `postgrestorg`
+- **Domain**: `postgrest.org`
 - **Name**: `postgrest`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

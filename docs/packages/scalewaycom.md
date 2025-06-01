@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `scalewaycom`
+- **Domain**: `scaleway.com`
 - **Name**: `scw`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

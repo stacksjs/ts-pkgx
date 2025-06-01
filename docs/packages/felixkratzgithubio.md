@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `felixkratzgithubio`
+- **Domain**: `felixkratz.github.io`
 - **Name**: `felixkratz.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `thekelleysorguk`
+- **Domain**: `thekelleys.org.uk`
 - **Name**: `thekelleys.org.uk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `vannaai`
+- **Domain**: `vanna.ai`
 - **Name**: `Vanna`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)

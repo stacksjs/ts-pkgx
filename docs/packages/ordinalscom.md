@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ordinalscom`
+- **Domain**: `ordinals.com`
 - **Name**: `ord`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
