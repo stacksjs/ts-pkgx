@@ -5884,7 +5884,7 @@ export interface Pantry {
    *
    * @domain `gitleaks.io`
    * @programs `gitleaks`
-   * @version `8.26.0` (26 versions available)
+   * @version `8.27.0` (27 versions available)
    * @install `sh <(curl https://pkgx.sh) gitleaks`
    * @aliases `gitleaks`
    *
@@ -5896,7 +5896,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "gitleaks"
    * console.log(pkg.description) // "Find secrets with Gitleaks 🔑"
    * console.log(pkg.programs)    // ["gitleaks"]
-   * console.log(pkg.versions[0]) // "8.26.0"
+   * console.log(pkg.versions[0]) // "8.27.0"
    * ```
    */
   gitleaksio: gitleaks_io.GitleaksPackage
@@ -16155,7 +16155,7 @@ export interface Pantry {
    *
    * @domain `vim.org`
    * @programs `vim`, `vi`
-   * @version `9.1.1420` (1995 versions available)
+   * @version `9.1.1421` (1996 versions available)
    * @install `sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i`
    * @dependencies `python.org~3.11`, `lua.org>=5.4`, `invisible-island.net/ncurses>=6.3`, ... (+2 more)
    *
@@ -16167,7 +16167,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "vim.org"
    * console.log(pkg.description) // "The official Vim repository"
    * console.log(pkg.programs)    // ["vim", "vi"]
-   * console.log(pkg.versions[0]) // "9.1.1420"
+   * console.log(pkg.versions[0]) // "9.1.1421"
    * ```
    */
   vimorg: vim_org.VimorgPackage

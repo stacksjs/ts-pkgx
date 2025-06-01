@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 527
 - **Categories**: 13
-- **Last Updated**: 2025-06-01T16:34:30.102Z
+- **Last Updated**: 2025-06-01T17:33:10.419Z
 
 ## Table of Contents
 
@@ -156,7 +156,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitscmorg](./packages/gitscmorg.md)** (git) | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.49.0 (+20) | `pkgx git` |
 | **[neovimio](./packages/neovimio.md)** (nvim) | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** (prettier) | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
-| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1420 (+1994) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1421 (+1995) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
@@ -313,7 +313,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ghostscriptcom](./packages/ghostscriptcom.md)** () | This is purely for downloads, please check the website for full information | dvipdf, eps2eps, gpcl6, ... (+30) | 10.5.1 (+6) | `pkgx ghostscript.com` |
 | **[giflibsourceforgeio](./packages/giflibsourceforgeio.md)** (gif) | Library and utilities for processing GIFs | gif2rgb, gifbuild, gifclrmp, ... (+3) | 5.2.2 (+1) | `pkgx gif` |
 | **[gitclifforg](./packages/gitclifforg.md)** (git-cliff) | A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️ | git-cliff | 2.8.0 (+20) | `pkgx git-cliff` |
-| **[gitleaksio](./packages/gitleaksio.md)** (gitleaks) | Find secrets with Gitleaks 🔑 | gitleaks | 8.26.0 (+25) | `pkgx gitleaks` |
+| **[gitleaksio](./packages/gitleaksio.md)** (gitleaks) | Find secrets with Gitleaks 🔑 | gitleaks | 8.27.0 (+26) | `pkgx gitleaks` |
 | **[gitlfscom](./packages/gitlfscom.md)** (git-lfs) | Git extension for versioning large files | git-lfs | 3.6.1 (+5) | `pkgx git-lfs` |
 | **[gitquickstatssh](./packages/gitquickstatssh.md)** (git-quick-stats) | ▁▅▆▃▅ Git quick statistics is a simple and efficient way to access various statistics in git repo... | git-quick-stats | 2.5.8 (+9) | `pkgx git-quick-stats` |
 | **[gittowncom](./packages/gittowncom.md)** (git-town) | High-level command-line interface for Git | git-town | 21.0.0 (+53) | `pkgx git-town` |
