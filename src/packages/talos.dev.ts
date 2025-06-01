@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/talos-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) talosctl`
- * @aliases `talosctl`
+ * @name `talosctl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.talosctl
  * // Or access via domain
  * const samePkg = pantry.talosdev
@@ -90,14 +90,12 @@ export const talosctlPackage = {
     '1.6.7',
     '1.6.6',
   ] as const,
-  fullPath: 'talos.dev' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'talosctl',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'talos.dev' as const,
 }
 
 export type TalosctlPackage = typeof talosctlPackage

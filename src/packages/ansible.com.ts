@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ansible-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i`
+ * @name `ansible`
  * @dependencies `pkgx.sh@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.ansiblecom
+ * // Access the package
+ * const pkg = pantry.ansible
+ * // Or access via domain
+ * const samePkg = pantry.ansiblecom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "ansible"
  * console.log(pkg.description) // "Ansible is a radically simple IT automation pla..."
  * console.log(pkg.programs)    // ["ansible", "ansible-config", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ansible-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ansiblecomPackage = {
+export const ansiblePackage = {
   /**
    * The display name of this package.
    */
@@ -144,8 +149,12 @@ export const ansiblecomPackage = {
     '2.13.10',
     '2.13.9',
   ] as const,
-  fullPath: 'ansible.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'ansible.com' as const,
 }
 
-export type AnsiblecomPackage = typeof ansiblecomPackage
+export type AnsiblePackage = typeof ansiblePackage

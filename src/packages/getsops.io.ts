@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getsops-io.md
  *
  * @install `sh <(curl https://pkgx.sh) sops`
- * @aliases `sops`
+ * @name `sops`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sops
  * // Or access via domain
  * const samePkg = pantry.getsopsio
@@ -72,14 +72,12 @@ export const sopsPackage = {
     '3.9.0',
     '3.8.1',
   ] as const,
-  fullPath: 'getsops.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sops',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'getsops.io' as const,
 }
 
 export type SopsPackage = typeof sopsPackage

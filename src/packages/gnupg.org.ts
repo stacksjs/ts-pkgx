@@ -102,8 +102,8 @@ export const gnupgorgPackage = {
     '2.2.43',
     '2.2.42',
   ] as const,
-  fullPath: 'gnupg.org' as const,
   aliases: [] as const,
+  fullPath: 'gnupg.org' as const,
 }
 
 export type GnupgorgPackage = typeof gnupgorgPackage

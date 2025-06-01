@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/turso-tech.md
  *
  * @install `sh <(curl https://pkgx.sh) turso`
+ * @name `turso`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tursotech
+ * // Access the package
+ * const pkg = pantry.turso
+ * // Or access via domain
+ * const samePkg = pantry.tursotech
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "turso"
  * console.log(pkg.description) // "Command line interface to Turso."
  * console.log(pkg.programs)    // ["turso"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/turso-tech.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tursotechPackage = {
+export const tursoPackage = {
   /**
    * The display name of this package.
    */
@@ -147,8 +152,12 @@ export const tursotechPackage = {
     '0.80.1',
     '0.80.0',
   ] as const,
-  fullPath: 'turso.tech' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'turso.tech' as const,
 }
 
-export type TursotechPackage = typeof tursotechPackage
+export type TursoPackage = typeof tursoPackage

@@ -111,8 +111,8 @@ export const kafkaapacheorgPackage = {
     '3.8.0',
     '3.7.2',
   ] as const,
-  fullPath: 'kafka.apache.org' as const,
   aliases: [] as const,
+  fullPath: 'kafka.apache.org' as const,
 }
 
 export type KafkaapacheorgPackage = typeof kafkaapacheorgPackage

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/curl-se.md
  *
  * @install `sh <(curl https://pkgx.sh) +curl.se -- $SHELL -i`
- * @aliases `cURL`
+ * @name `cURL`
  * @dependencies `openssl.org^1.1`, `curl.se/ca-certs`, `zlib.net^1.2.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cURL
  * // Or access via domain
  * const samePkg = pantry.curlse
@@ -101,9 +101,7 @@ export const cURLPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cURL',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'curl.se' as const,
 }
 

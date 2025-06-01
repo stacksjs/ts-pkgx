@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openapi-generator-tech.md
  *
  * @install `sh <(curl https://pkgx.sh) openapi-generator`
- * @aliases `openapi-generator`
+ * @name `openapi-generator`
  * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.openapigenerator
  * // Or access via domain
  * const samePkg = pantry.openapigeneratortech
@@ -86,9 +86,7 @@ export const openapigeneratorPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'openapi-generator',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'openapi-generator.tech' as const,
 }
 

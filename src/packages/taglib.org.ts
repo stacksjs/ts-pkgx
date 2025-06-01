@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/taglib-org.md
  *
  * @install `sh <(curl https://pkgx.sh) taglib-config`
- * @aliases `taglib-config`
+ * @name `taglib-config`
  * @dependencies `zlib.net^1`, `github.com/nemtrif/utfcpp^4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.taglibconfig
  * // Or access via domain
  * const samePkg = pantry.tagliborg
@@ -76,14 +76,12 @@ export const taglibconfigPackage = {
     '2.0.0',
     '1.13.1',
   ] as const,
-  fullPath: 'taglib.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'taglib-config',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'taglib.org' as const,
 }
 
 export type TaglibconfigPackage = typeof taglibconfigPackage

@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/stripe-com.md
  *
  * @install `sh <(curl https://pkgx.sh) stripe`
- * @aliases `stripe`
+ * @name `stripe`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.stripe
  * // Or access via domain
  * const samePkg = pantry.stripecom
@@ -118,9 +118,7 @@ export const stripePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'stripe',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'stripe.com' as const,
 }
 

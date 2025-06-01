@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/capstone-engine-org.md
  *
  * @install `sh <(curl https://pkgx.sh) cstool`
- * @aliases `cstool`
+ * @name `cstool`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cstool
  * // Or access via domain
  * const samePkg = pantry.capstoneengineorg
@@ -70,14 +70,12 @@ export const cstoolPackage = {
     '5.0.0',
     '4.0.2',
   ] as const,
-  fullPath: 'capstone-engine.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cstool',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'capstone-engine.org' as const,
 }
 
 export type CstoolPackage = typeof cstoolPackage

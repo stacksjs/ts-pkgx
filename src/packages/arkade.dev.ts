@@ -1,5 +1,5 @@
 /**
- * **Arkade** - Open Source Marketplace For Developer Tools
+ * **arkade** - Open Source Marketplace For Developer Tools
  *
  * @domain `arkade.dev`
  * @programs `arkade`
@@ -7,12 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/arkade-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) arkade`
+ * @name `Arkade`
+ * @aliases `arkade`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.arkadedev
+ * // Access via alias (recommended)
+ * const pkg = pantry.arkade
+ * // Or access via domain
+ * const samePkg = pantry.arkadedev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "Arkade"
  * console.log(pkg.description) // "Open Source Marketplace For Developer Tools"
  * console.log(pkg.programs)    // ["arkade"]
@@ -22,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/arkade-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const arkadedevPackage = {
+export const arkadePackage = {
   /**
    * The display name of this package.
    */
@@ -95,8 +101,14 @@ export const arkadedevPackage = {
     '0.10.23',
     '0.10.22',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'arkade',
+  ] as const,
   fullPath: 'arkade.dev' as const,
-  aliases: [] as const,
 }
 
-export type ArkadedevPackage = typeof arkadedevPackage
+export type ArkadePackage = typeof arkadePackage

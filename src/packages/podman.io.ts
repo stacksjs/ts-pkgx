@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/podman-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +podman.io -- $SHELL -i`
- * @aliases `podman`
+ * @name `podman`
  * @dependencies `qemu.org`, `github.com/containers/gvisor-tap-vsock`, `darwingithub.com/crc-org/vfkit`, ... (+1 more)
  * @companions `openssh.com`
  *
@@ -15,7 +15,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.podman
  * // Or access via domain
  * const samePkg = pantry.podmanio
@@ -124,9 +124,7 @@ export const podmanPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'podman',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'podman.io' as const,
 }
 

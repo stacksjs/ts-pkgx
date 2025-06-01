@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/maven-apache-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i`
- * @aliases `mvn`
+ * @name `mvn`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mvn
  * // Or access via domain
  * const samePkg = pantry.mavenapacheorg
@@ -81,14 +81,12 @@ export const mvnPackage = {
     '3.8.7',
     '3.6.3',
   ] as const,
-  fullPath: 'maven.apache.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mvn',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'maven.apache.org' as const,
 }
 
 export type MvnPackage = typeof mvnPackage

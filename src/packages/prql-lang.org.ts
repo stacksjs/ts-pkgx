@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/prql-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +prql-lang.org -- $SHELL -i`
+ * @name `prql`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.prqllangorg
+ * // Access the package
+ * const pkg = pantry.prql
+ * // Or access via domain
+ * const samePkg = pantry.prqllangorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "prql"
  * console.log(pkg.description) // "PRQL is a modern language for transforming data..."
  * console.log(pkg.programs)    // ["prql-compiler", "prqlc"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/prql-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const prqllangorgPackage = {
+export const prqlPackage = {
   /**
    * The display name of this package.
    */
@@ -92,8 +97,12 @@ export const prqllangorgPackage = {
     '0.4.0',
     '0.3.1',
   ] as const,
-  fullPath: 'prql-lang.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'prql-lang.org' as const,
 }
 
-export type PrqllangorgPackage = typeof prqllangorgPackage
+export type PrqlPackage = typeof prqlPackage

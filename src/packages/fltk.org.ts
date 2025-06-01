@@ -77,8 +77,8 @@ export const fltkorgPackage = {
     '1.3.10',
     '1.3.9',
   ] as const,
-  fullPath: 'fltk.org' as const,
   aliases: [] as const,
+  fullPath: 'fltk.org' as const,
 }
 
 export type FltkorgPackage = typeof fltkorgPackage

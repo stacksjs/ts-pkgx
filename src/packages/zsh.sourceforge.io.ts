@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zsh-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) zsh`
+ * @name `zsh`
  * @dependencies `invisible-island.net/ncurses`, `pcre.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.zshsourceforgeio
+ * // Access the package
+ * const pkg = pantry.zsh
+ * // Or access via domain
+ * const samePkg = pantry.zshsourceforgeio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "zsh"
  * console.log(pkg.description) // "UNIX shell (command interpreter)"
  * console.log(pkg.programs)    // ["zsh"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/zsh-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zshsourceforgeioPackage = {
+export const zshPackage = {
   /**
    * The display name of this package.
    */
@@ -67,8 +72,12 @@ export const zshsourceforgeioPackage = {
   versions: [
     '5.9.0',
   ] as const,
-  fullPath: 'zsh.sourceforge.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'zsh.sourceforge.io' as const,
 }
 
-export type ZshsourceforgeioPackage = typeof zshsourceforgeioPackage
+export type ZshPackage = typeof zshPackage

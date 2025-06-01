@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mcmc-jags-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) jags`
- * @aliases `jags`
+ * @name `jags`
  * @dependencies `gnu.org/gcc`, `linuxnetlib.org/lapack^3`, `netlib.org/lapack^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jags
  * // Or access via domain
  * const samePkg = pantry.mcmcjagssourceforgeio
@@ -73,14 +73,12 @@ export const jagsPackage = {
   versions: [
     '4.3.2',
   ] as const,
-  fullPath: 'mcmc-jags.sourceforge.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jags',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'mcmc-jags.sourceforge.io' as const,
 }
 
 export type JagsPackage = typeof jagsPackage

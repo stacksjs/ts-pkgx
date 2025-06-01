@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/just-systems.md
  *
  * @install `sh <(curl https://pkgx.sh) just`
+ * @name `just`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.justsystems
+ * // Access the package
+ * const pkg = pantry.just
+ * // Or access via domain
+ * const samePkg = pantry.justsystems
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "just"
  * console.log(pkg.description) // "Handy way to save and run project-specific comm..."
  * console.log(pkg.programs)    // ["just"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/just-systems.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const justsystemsPackage = {
+export const justPackage = {
   /**
    * The display name of this package.
    */
@@ -98,8 +103,12 @@ export const justsystemsPackage = {
     '1.8.0',
     '1.6.0',
   ] as const,
-  fullPath: 'just.systems' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'just.systems' as const,
 }
 
-export type JustsystemsPackage = typeof justsystemsPackage
+export type JustPackage = typeof justPackage

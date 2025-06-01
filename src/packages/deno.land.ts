@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/deno-land.md
  *
  * @install `sh <(curl https://pkgx.sh) deno`
- * @aliases `deno`
+ * @name `deno`
  * @companions `info-zip.org/unzip`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.deno
  * // Or access via domain
  * const samePkg = pantry.denoland
@@ -201,14 +201,12 @@ export const denoPackage = {
     '1.28.0',
     '1.26.2',
   ] as const,
-  fullPath: 'deno.land' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'deno',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'deno.land' as const,
 }
 
 export type DenoPackage = typeof denoPackage

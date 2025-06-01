@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fly-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +fly.io -- $SHELL -i`
- * @aliases `fly`
+ * @name `fly`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.fly
  * // Or access via domain
  * const samePkg = pantry.flyio
@@ -461,9 +461,7 @@ export const flyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'fly',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'fly.io' as const,
 }
 

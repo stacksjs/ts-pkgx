@@ -126,7 +126,6 @@ export const rubyPackage = {
     '2.6.10',
     '2.5.9',
   ] as const,
-  fullPath: 'ruby-lang.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -134,6 +133,7 @@ export const rubyPackage = {
   aliases: [
     'ruby',
   ] as const,
+  fullPath: 'ruby-lang.org' as const,
 }
 
 export type RubyPackage = typeof rubyPackage

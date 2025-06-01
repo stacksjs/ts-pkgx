@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cuelang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) cue`
- * @aliases `cue`
+ * @name `cue`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cue
  * // Or access via domain
  * const samePkg = pantry.cuelangorg
@@ -86,9 +86,7 @@ export const cuePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cue',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'cuelang.org' as const,
 }
 

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/s3tools-org.md
  *
  * @install `sh <(curl https://pkgx.sh) s3cmd`
- * @aliases `s3cmd`
+ * @name `s3cmd`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.s3cmd
  * // Or access via domain
  * const samePkg = pantry.s3toolsorg
@@ -72,14 +72,12 @@ export const s3cmdPackage = {
     '2.4.0',
     '2.3.0',
   ] as const,
-  fullPath: 's3tools.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    's3cmd',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 's3tools.org' as const,
 }
 
 export type S3cmdPackage = typeof s3cmdPackage

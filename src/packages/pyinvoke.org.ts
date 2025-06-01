@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pyinvoke-org.md
  *
  * @install `sh <(curl https://pkgx.sh) invoke`
- * @aliases `invoke`
+ * @name `invoke`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.invoke
  * // Or access via domain
  * const samePkg = pantry.pyinvokeorg
@@ -71,14 +71,12 @@ export const invokePackage = {
   versions: [
     '2.2.0',
   ] as const,
-  fullPath: 'pyinvoke.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'invoke',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'pyinvoke.org' as const,
 }
 
 export type InvokePackage = typeof invokePackage

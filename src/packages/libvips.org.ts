@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libvips-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i`
- * @aliases `vips`
+ * @name `vips`
  * @dependencies `mozilla.org/mozjpeg`, `cairographics.org`, `heasarc.gsfc.nasa.gov/cfitsio`, ... (+24 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.vips
  * // Or access via domain
  * const samePkg = pantry.libvipsorg
@@ -108,14 +108,12 @@ export const vipsPackage = {
     '8.15.0',
     '8.14.5',
   ] as const,
-  fullPath: 'libvips.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'vips',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'libvips.org' as const,
 }
 
 export type VipsPackage = typeof vipsPackage

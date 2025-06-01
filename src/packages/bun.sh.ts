@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bun-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i`
- * @aliases `bun`
+ * @name `bun`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.bun
  * // Or access via domain
  * const samePkg = pantry.bunsh
@@ -187,9 +187,7 @@ export const bunPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'bun',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'bun.sh' as const,
 }
 

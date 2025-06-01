@@ -69,8 +69,8 @@ export const spawnlinkPackage = {
     '2.36.0',
     '2.35.1',
   ] as const,
-  fullPath: 'spawn.link' as const,
   aliases: [] as const,
+  fullPath: 'spawn.link' as const,
 }
 
 export type SpawnlinkPackage = typeof spawnlinkPackage

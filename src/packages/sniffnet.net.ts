@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sniffnet-net.md
  *
  * @install `sh <(curl https://pkgx.sh) sniffnet`
- * @aliases `sniffnet`
+ * @name `sniffnet`
  * @dependencies `openssl.org@1`, `tcpdump.org@1`, `linuxalsa-project.org/alsa-lib@1freedesktop.org/fontconfig@2`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sniffnet
  * // Or access via domain
  * const samePkg = pantry.sniffnetnet
@@ -80,9 +80,7 @@ export const sniffnetPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sniffnet',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'sniffnet.net' as const,
 }
 

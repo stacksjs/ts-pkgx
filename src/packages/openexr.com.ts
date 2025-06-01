@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openexr-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i`
- * @aliases `exr`
+ * @name `exr`
  * @dependencies `zlib.net^1`, `openexr.com/imath`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.exr
  * // Or access via domain
  * const samePkg = pantry.openexrcom
@@ -101,9 +101,7 @@ export const exrPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'exr',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'openexr.com' as const,
 }
 

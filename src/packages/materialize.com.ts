@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/materialize-com.md
  *
  * @install `sh <(curl https://pkgx.sh) mz`
- * @aliases `mz`
+ * @name `mz`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mz
  * // Or access via domain
  * const samePkg = pantry.materializecom
@@ -115,14 +115,12 @@ export const mzPackage = {
     '0.68.1',
     '0.67.3',
   ] as const,
-  fullPath: 'materialize.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mz',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'materialize.com' as const,
 }
 
 export type MzPackage = typeof mzPackage

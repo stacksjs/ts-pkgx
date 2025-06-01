@@ -84,8 +84,8 @@ export const libraworgPackage = {
     '0.21.2',
     '0.21.1',
   ] as const,
-  fullPath: 'libraw.org' as const,
   aliases: [] as const,
+  fullPath: 'libraw.org' as const,
 }
 
 export type LibraworgPackage = typeof libraworgPackage

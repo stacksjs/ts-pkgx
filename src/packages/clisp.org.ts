@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/clisp-org.md
  *
  * @install `sh <(curl https://pkgx.sh) clisp`
- * @aliases `clisp`
+ * @name `clisp`
  * @dependencies `gnu.org/libsigsegv^2.14`, `gnu.org/readline^8.2`, `github.com/besser82/libxcrypt^4.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.clisp
  * // Or access via domain
  * const samePkg = pantry.clisporg
@@ -77,9 +77,7 @@ export const clispPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'clisp',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'clisp.org' as const,
 }
 

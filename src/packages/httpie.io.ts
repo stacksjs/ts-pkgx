@@ -71,10 +71,6 @@ export const httpieioPackage = {
     '3.2.2',
     '3.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
   fullPath: 'httpie.io' as const,
 }

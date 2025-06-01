@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zarf-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) zarf`
+ * @name `zarf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.zarfdev
+ * // Access the package
+ * const pkg = pantry.zarf
+ * // Or access via domain
+ * const samePkg = pantry.zarfdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "zarf"
  * console.log(pkg.description) // "DevSecOps for Air Gap & Limited-Connection Syst..."
  * console.log(pkg.programs)    // ["zarf"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/zarf-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zarfdevPackage = {
+export const zarfPackage = {
   /**
    * The display name of this package.
    */
@@ -103,8 +108,12 @@ export const zarfdevPackage = {
     '0.32.2',
     '0.32.1',
   ] as const,
-  fullPath: 'zarf.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'zarf.dev' as const,
 }
 
-export type ZarfdevPackage = typeof zarfdevPackage
+export type ZarfPackage = typeof zarfPackage

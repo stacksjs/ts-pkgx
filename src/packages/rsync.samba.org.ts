@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rsync-samba-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +rsync.samba.org -- $SHELL -i`
+ * @name `rsync`
  * @dependencies `zlib.net^1`, `facebook.com/zstd^1`, `lz4.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.rsyncsambaorg
+ * // Access the package
+ * const pkg = pantry.rsync
+ * // Or access via domain
+ * const samePkg = pantry.rsyncsambaorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "rsync"
  * console.log(pkg.description) // "An open source utility that provides fast incre..."
  * console.log(pkg.programs)    // ["rsync", "rsync-ssl"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rsync-samba-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rsyncsambaorgPackage = {
+export const rsyncPackage = {
   /**
    * The display name of this package.
    */
@@ -72,8 +77,12 @@ export const rsyncsambaorgPackage = {
     '3.3.0',
     '3.2.7',
   ] as const,
-  fullPath: 'rsync.samba.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'rsync.samba.org' as const,
 }
 
-export type RsyncsambaorgPackage = typeof rsyncsambaorgPackage
+export type RsyncPackage = typeof rsyncPackage

@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getsynth-com.md
  *
  * @install `sh <(curl https://pkgx.sh) synth`
- * @aliases `synth`
+ * @name `synth`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.synth
  * // Or access via domain
  * const samePkg = pantry.getsynthcom
@@ -64,14 +64,12 @@ export const synthPackage = {
   versions: [
     '0.6.9',
   ] as const,
-  fullPath: 'getsynth.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'synth',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'getsynth.com' as const,
 }
 
 export type SynthPackage = typeof synthPackage

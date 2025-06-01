@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/keephq-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) keep`
- * @aliases `keep`
+ * @name `keep`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.keep
  * // Or access via domain
  * const samePkg = pantry.keephqdev
@@ -75,9 +75,7 @@ export const keepPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'keep',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'keephq.dev' as const,
 }
 

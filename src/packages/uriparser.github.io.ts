@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/uriparser-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) uriparse`
+ * @name `uriparse`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.uriparsergithubio
+ * // Access the package
+ * const pkg = pantry.uriparse
+ * // Or access via domain
+ * const samePkg = pantry.uriparsergithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "uriparse"
  * console.log(pkg.description) // ":hocho: Strictly RFC 3986 compliant URI parsing..."
  * console.log(pkg.programs)    // ["uriparse"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/uriparser-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const uriparsergithubioPackage = {
+export const uriparsePackage = {
   /**
    * The display name of this package.
    */
@@ -60,8 +65,12 @@ export const uriparsergithubioPackage = {
     '0.9.8',
     '0.9.7',
   ] as const,
-  fullPath: 'uriparser.github.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'uriparser.github.io' as const,
 }
 
-export type UriparsergithubioPackage = typeof uriparsergithubioPackage
+export type UriparsePackage = typeof uriparsePackage

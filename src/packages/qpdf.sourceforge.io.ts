@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/qpdf-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) qpdf`
+ * @name `qpdf`
  * @dependencies `zlib.net^1`, `libjpeg-turbo.org^2`, `openssl.org^1.1`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.qpdfsourceforgeio
+ * // Access the package
+ * const pkg = pantry.qpdf
+ * // Or access via domain
+ * const samePkg = pantry.qpdfsourceforgeio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "qpdf"
  * console.log(pkg.description) // "qpdf: A content-preserving PDF document transfo..."
  * console.log(pkg.programs)    // ["qpdf"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/qpdf-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const qpdfsourceforgeioPackage = {
+export const qpdfPackage = {
   /**
    * The display name of this package.
    */
@@ -78,8 +83,12 @@ export const qpdfsourceforgeioPackage = {
     '11.7.0',
     '11.6.4',
   ] as const,
-  fullPath: 'qpdf.sourceforge.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'qpdf.sourceforge.io' as const,
 }
 
-export type QpdfsourceforgeioPackage = typeof qpdfsourceforgeioPackage
+export type QpdfPackage = typeof qpdfPackage

@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/istio-io.md
  *
  * @install `sh <(curl https://pkgx.sh) istioctl`
- * @aliases `istioctl`
+ * @name `istioctl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.istioctl
  * // Or access via domain
  * const samePkg = pantry.istioio
@@ -104,14 +104,12 @@ export const istioctlPackage = {
     '1.19.10',
     '1.19.9',
   ] as const,
-  fullPath: 'istio.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'istioctl',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'istio.io' as const,
 }
 
 export type IstioctlPackage = typeof istioctlPackage

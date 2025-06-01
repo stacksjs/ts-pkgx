@@ -7,7 +7,8 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/seaweedfs-com.md
  *
  * @install `sh <(curl https://pkgx.sh) weed`
- * @aliases `weed`, `SeaweedFS`
+ * @name `SeaweedFS`
+ * @aliases `weed`
  *
  * @example
  * ```typescript
@@ -79,7 +80,6 @@ export const weedPackage = {
    */
   aliases: [
     'weed',
-    'SeaweedFS',
   ] as const,
   fullPath: 'seaweedfs.com' as const,
 }

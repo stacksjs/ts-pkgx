@@ -2,7 +2,7 @@
  * **libusb.info** - A cross-platform library to access USB devices
  *
  * @domain `libusb.info`
- * @version `1.0.28` (3 versions available)
+ * @version `1.0.29` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libusb-info.md
  *
  * @install `sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i`
@@ -14,7 +14,7 @@
  * const pkg = pantry.libusbinfo
  * console.log(pkg.name)        // "libusb.info"
  * console.log(pkg.description) // "A cross-platform library to access USB devices"
- * console.log(pkg.versions[0]) // "1.0.28" (latest)
+ * console.log(pkg.versions[0]) // "1.0.29" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libusb-info.md
@@ -49,12 +49,13 @@ export const libusbinfoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.0.29',
     '1.0.28',
     '1.0.27',
     '1.0.26',
   ] as const,
-  fullPath: 'libusb.info' as const,
   aliases: [] as const,
+  fullPath: 'libusb.info' as const,
 }
 
 export type LibusbinfoPackage = typeof libusbinfoPackage

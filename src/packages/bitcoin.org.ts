@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bitcoin-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i`
+ * @name `bitcoin`
  * @dependencies `oracle.com/berkeley-db^18`, `boost.org^1`, `libevent.org^2`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.bitcoinorg
+ * // Access the package
+ * const pkg = pantry.bitcoin
+ * // Or access via domain
+ * const samePkg = pantry.bitcoinorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "bitcoin"
  * console.log(pkg.description) // "Decentralized, peer to peer payment network"
  * console.log(pkg.programs)    // ["bitcoin-cli", "bitcoin-tx", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bitcoin-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bitcoinorgPackage = {
+export const bitcoinPackage = {
   /**
    * The display name of this package.
    */
@@ -91,8 +96,12 @@ export const bitcoinorgPackage = {
     '24.0.1',
     '23.2.0',
   ] as const,
-  fullPath: 'bitcoin.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'bitcoin.org' as const,
 }
 
-export type BitcoinorgPackage = typeof bitcoinorgPackage
+export type BitcoinPackage = typeof bitcoinPackage

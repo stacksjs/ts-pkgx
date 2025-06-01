@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lychee-cli-rs.md
  *
  * @install `sh <(curl https://pkgx.sh) lychee`
- * @aliases `lychee`
+ * @name `lychee`
  * @dependencies `openssl.org>=1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.lychee
  * // Or access via domain
  * const samePkg = pantry.lycheeclirs
@@ -79,9 +79,7 @@ export const lycheePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'lychee',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'lychee.cli.rs' as const,
 }
 

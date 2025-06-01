@@ -6,13 +6,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openmp-llvm-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openmp.llvm.org -- $SHELL -i`
- * @aliases `libomp`
+ * @name `libomp`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.libomp
  * // Or access via domain
  * const samePkg = pantry.openmpllvmorg
@@ -91,9 +91,7 @@ export const libompPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'libomp',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'openmp.llvm.org' as const,
 }
 

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getcomposer-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +getcomposer.org -- $SHELL -i`
- * @aliases `composer`
+ * @name `composer`
  * @dependencies `php.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.composer
  * // Or access via domain
  * const samePkg = pantry.getcomposerorg
@@ -101,14 +101,12 @@ export const composerPackage = {
     '2.2.24',
     '2.2.23',
   ] as const,
-  fullPath: 'getcomposer.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'composer',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'getcomposer.org' as const,
 }
 
 export type ComposerPackage = typeof composerPackage

@@ -74,10 +74,6 @@ export const gtssourceforgenetPackage = {
   versions: [
     '0.7.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
   fullPath: 'gts.sourceforge.net' as const,
 }

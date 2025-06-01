@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/hurl-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +hurl.dev -- $SHELL -i`
- * @aliases `hurl`
+ * @name `hurl`
  * @dependencies `gnome.org/libxml2`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hurl
  * // Or access via domain
  * const samePkg = pantry.hurldev
@@ -85,9 +85,7 @@ export const hurlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hurl',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'hurl.dev' as const,
 }
 

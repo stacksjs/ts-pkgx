@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jsonnet-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +jsonnet.org -- $SHELL -i`
+ * @name `jsonnet`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.jsonnetorg
+ * // Access the package
+ * const pkg = pantry.jsonnet
+ * // Or access via domain
+ * const samePkg = pantry.jsonnetorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "jsonnet"
  * console.log(pkg.description) // "Jsonnet - The data templating language"
  * console.log(pkg.programs)    // ["jsonnet", "jsonnetfmt"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jsonnet-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jsonnetorgPackage = {
+export const jsonnetPackage = {
   /**
    * The display name of this package.
    */
@@ -61,8 +66,12 @@ export const jsonnetorgPackage = {
     '0.21.0',
     '0.20.0',
   ] as const,
-  fullPath: 'jsonnet.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'jsonnet.org' as const,
 }
 
-export type JsonnetorgPackage = typeof jsonnetorgPackage
+export type JsonnetPackage = typeof jsonnetPackage

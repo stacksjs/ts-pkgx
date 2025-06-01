@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/crystal-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) crystal`
- * @aliases `crystal`
+ * @name `crystal`
  * @dependencies `hboehm.info/gc^8`, `gnu.org/gmp^6`, `libevent.org^2`, ... (+7 more)
  * @companions `crystal-lang.org/shards`
  *
@@ -15,7 +15,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.crystal
  * // Or access via domain
  * const samePkg = pantry.crystallangorg
@@ -109,9 +109,7 @@ export const crystalPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'crystal',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'crystal-lang.org' as const,
 }
 

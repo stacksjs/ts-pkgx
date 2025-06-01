@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/graphite-sil-org.md
  *
  * @install `sh <(curl https://pkgx.sh) gr2fonttest`
- * @aliases `gr2fonttest`
+ * @name `gr2fonttest`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gr2fonttest
  * // Or access via domain
  * const samePkg = pantry.graphitesilorg
@@ -68,9 +68,7 @@ export const gr2fonttestPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gr2fonttest',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'graphite.sil.org' as const,
 }
 

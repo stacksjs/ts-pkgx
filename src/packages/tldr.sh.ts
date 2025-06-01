@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tldr-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) tldr`
+ * @name `tldr`
  * @dependencies `linuxsourceware.org/bzip2^1`, `sourceware.org/bzip2^1`, `libzip.org^1.9.2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tldrsh
+ * // Access the package
+ * const pkg = pantry.tldr
+ * // Or access via domain
+ * const samePkg = pantry.tldrsh
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "tldr"
  * console.log(pkg.description) // "C command-line client for tldr pages 📚"
  * console.log(pkg.programs)    // ["tldr"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tldr-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tldrshPackage = {
+export const tldrPackage = {
   /**
    * The display name of this package.
    */
@@ -71,8 +76,12 @@ export const tldrshPackage = {
     '1.6.0',
     '1.5.0',
   ] as const,
-  fullPath: 'tldr.sh' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'tldr.sh' as const,
 }
 
-export type TldrshPackage = typeof tldrshPackage
+export type TldrPackage = typeof tldrPackage

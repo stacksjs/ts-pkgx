@@ -125,8 +125,8 @@ export const npmjscomPackage = {
     '8.19.4',
     '8.19.3',
   ] as const,
-  fullPath: 'npmjs.com' as const,
   aliases: [] as const,
+  fullPath: 'npmjs.com' as const,
 }
 
 export type NpmjscomPackage = typeof npmjscomPackage

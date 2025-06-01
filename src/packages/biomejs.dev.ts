@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/biomejs-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) biome`
- * @aliases `biome`
+ * @name `biome`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.biome
  * // Or access via domain
  * const samePkg = pantry.biomejsdev
@@ -95,9 +95,7 @@ export const biomePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'biome',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'biomejs.dev' as const,
 }
 

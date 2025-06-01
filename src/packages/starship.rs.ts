@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/starship-rs.md
  *
  * @install `sh <(curl https://pkgx.sh) starship`
- * @aliases `starship`
+ * @name `starship`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.starship
  * // Or access via domain
  * const samePkg = pantry.starshiprs
@@ -88,9 +88,7 @@ export const starshipPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'starship',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'starship.rs' as const,
 }
 

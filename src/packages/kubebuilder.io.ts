@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubebuilder-io.md
  *
  * @install `sh <(curl https://pkgx.sh) kubebuilder`
+ * @name `kubebuilder`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.kubebuilderio
+ * // Access the package
+ * const pkg = pantry.kubebuilder
+ * // Or access via domain
+ * const samePkg = pantry.kubebuilderio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "kubebuilder"
  * console.log(pkg.description) // "Kubebuilder - SDK for building Kubernetes APIs ..."
  * console.log(pkg.programs)    // ["kubebuilder"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kubebuilder-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubebuilderioPackage = {
+export const kubebuilderPackage = {
   /**
    * The display name of this package.
    */
@@ -76,8 +81,12 @@ export const kubebuilderioPackage = {
     '3.13.0',
     '3.12.0',
   ] as const,
-  fullPath: 'kubebuilder.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'kubebuilder.io' as const,
 }
 
-export type KubebuilderioPackage = typeof kubebuilderioPackage
+export type KubebuilderPackage = typeof kubebuilderPackage

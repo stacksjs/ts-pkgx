@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/replibyte-com.md
  *
  * @install `sh <(curl https://pkgx.sh) replibyte`
- * @aliases `replibyte`
+ * @name `replibyte`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.replibyte
  * // Or access via domain
  * const samePkg = pantry.replibytecom
@@ -75,9 +75,7 @@ export const replibytePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'replibyte',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'replibyte.com' as const,
 }
 

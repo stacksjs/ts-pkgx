@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/python-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +python.org -- $SHELL -i`
- * @aliases `python`
+ * @name `python`
  * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+8 more)
  * @companions `pip.pypa.io`
  *
@@ -15,7 +15,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.python
  * // Or access via domain
  * const samePkg = pantry.pythonorg
@@ -238,9 +238,7 @@ export const pythonPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'python',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'python.org' as const,
 }
 

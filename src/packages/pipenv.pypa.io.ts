@@ -7,6 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pipenv-pypa-io.md
  *
  * @install `sh <(curl https://pkgx.sh) pipenv`
+ * @name `pipenv`
  * @dependencies `pkgx.sh^1`
  * @companions `pip.pypa.io`
  *
@@ -14,7 +15,11 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pipenvpypaio
+ * // Access the package
+ * const pkg = pantry.pipenv
+ * // Or access via domain
+ * const samePkg = pantry.pipenvpypaio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pipenv"
  * console.log(pkg.description) // "Python Development Workflow for Humans."
  * console.log(pkg.programs)    // ["pipenv"]
@@ -24,7 +29,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pipenv-pypa-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pipenvpypaioPackage = {
+export const pipenvPackage = {
   /**
    * The display name of this package.
    */
@@ -120,8 +125,12 @@ export const pipenvpypaioPackage = {
     '2023.2.18',
     '2023.2.4',
   ] as const,
-  fullPath: 'pipenv.pypa.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'pipenv.pypa.io' as const,
 }
 
-export type PipenvpypaioPackage = typeof pipenvpypaioPackage
+export type PipenvPackage = typeof pipenvPackage

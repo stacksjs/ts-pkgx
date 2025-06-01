@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubelinter-io.md
  *
  * @install `sh <(curl https://pkgx.sh) kube-linter`
- * @aliases `kube-linter`
+ * @name `kube-linter`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kubelinter
  * // Or access via domain
  * const samePkg = pantry.kubelinterio
@@ -67,14 +67,12 @@ export const kubelinterPackage = {
     '0.7.0',
     '0.6.8',
   ] as const,
-  fullPath: 'kubelinter.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kube-linter',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'kubelinter.io' as const,
 }
 
 export type KubelinterPackage = typeof kubelinterPackage

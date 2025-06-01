@@ -71,8 +71,8 @@ export const mandocbsdlvPackage = {
   versions: [
     '1.14.6',
   ] as const,
-  fullPath: 'mandoc.bsd.lv' as const,
   aliases: [] as const,
+  fullPath: 'mandoc.bsd.lv' as const,
 }
 
 export type MandocbsdlvPackage = typeof mandocbsdlvPackage

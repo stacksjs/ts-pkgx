@@ -82,8 +82,8 @@ export const soliditylangorgPackage = {
     '0.8.18',
     '0.8.17',
   ] as const,
-  fullPath: 'soliditylang.org' as const,
   aliases: [] as const,
+  fullPath: 'soliditylang.org' as const,
 }
 
 export type SoliditylangorgPackage = typeof soliditylangorgPackage

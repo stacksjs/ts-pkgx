@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cointop-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) cointop`
+ * @name `cointop`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cointopsh
+ * // Access the package
+ * const pkg = pantry.cointop
+ * // Or access via domain
+ * const samePkg = pantry.cointopsh
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "cointop"
  * console.log(pkg.description) // "A fast and lightweight interactive terminal bas..."
  * console.log(pkg.programs)    // ["cointop"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cointop-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cointopshPackage = {
+export const cointopPackage = {
   /**
    * The display name of this package.
    */
@@ -66,8 +71,12 @@ export const cointopshPackage = {
   versions: [
     '1.6.10',
   ] as const,
-  fullPath: 'cointop.sh' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'cointop.sh' as const,
 }
 
-export type CointopshPackage = typeof cointopshPackage
+export type CointopPackage = typeof cointopPackage

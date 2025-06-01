@@ -3,26 +3,31 @@
  *
  * @domain `gitleaks.io`
  * @programs `gitleaks`
- * @version `8.26.0` (26 versions available)
+ * @version `8.27.0` (27 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gitleaks-io.md
  *
  * @install `sh <(curl https://pkgx.sh) gitleaks`
+ * @name `gitleaks`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.gitleaksio
+ * // Access the package
+ * const pkg = pantry.gitleaks
+ * // Or access via domain
+ * const samePkg = pantry.gitleaksio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gitleaks"
  * console.log(pkg.description) // "Find secrets with Gitleaks 🔑"
  * console.log(pkg.programs)    // ["gitleaks"]
- * console.log(pkg.versions[0]) // "8.26.0" (latest)
+ * console.log(pkg.versions[0]) // "8.27.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gitleaks-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitleaksioPackage = {
+export const gitleaksPackage = {
   /**
    * The display name of this package.
    */
@@ -57,6 +62,7 @@ export const gitleaksioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.27.0',
     '8.26.0',
     '8.25.1',
     '8.25.0',
@@ -84,8 +90,12 @@ export const gitleaksioPackage = {
     '8.18.2',
     '8.18.1',
   ] as const,
-  fullPath: 'gitleaks.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'gitleaks.io' as const,
 }
 
-export type GitleaksioPackage = typeof gitleaksioPackage
+export type GitleaksPackage = typeof gitleaksPackage

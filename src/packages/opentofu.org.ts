@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/opentofu-org.md
  *
  * @install `sh <(curl https://pkgx.sh) tofu`
- * @aliases `tofu`
+ * @name `tofu`
  * @dependencies `linuxgnu.org/gcc/libstdcxx`, `gnu.org/gcc/libstdcxx`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tofu
  * // Or access via domain
  * const samePkg = pantry.opentofuorg
@@ -91,14 +91,12 @@ export const tofuPackage = {
     '1.7.3',
     '1.6.0.3',
   ] as const,
-  fullPath: 'opentofu.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tofu',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'opentofu.org' as const,
 }
 
 export type TofuPackage = typeof tofuPackage

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nano-editor-org.md
  *
  * @install `sh <(curl https://pkgx.sh) nano`
+ * @name `nano`
  * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.nanoeditororg
+ * // Access the package
+ * const pkg = pantry.nano
+ * // Or access via domain
+ * const samePkg = pantry.nanoeditororg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "nano"
  * console.log(pkg.description) // "Free (GNU) replacement for the Pico text editor"
  * console.log(pkg.programs)    // ["nano"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nano-editor-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nanoeditororgPackage = {
+export const nanoPackage = {
   /**
    * The display name of this package.
    */
@@ -68,8 +73,12 @@ export const nanoeditororgPackage = {
     '8.0.0',
     '7.2.0',
   ] as const,
-  fullPath: 'nano-editor.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'nano-editor.org' as const,
 }
 
-export type NanoeditororgPackage = typeof nanoeditororgPackage
+export type NanoPackage = typeof nanoPackage

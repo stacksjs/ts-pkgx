@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openpolicyagent-org.md
  *
  * @install `sh <(curl https://pkgx.sh) opa`
- * @aliases `opa`
+ * @name `opa`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.opa
  * // Or access via domain
  * const samePkg = pantry.openpolicyagentorg
@@ -88,14 +88,12 @@ export const opaPackage = {
     '0.59.0',
     '0.58.0',
   ] as const,
-  fullPath: 'openpolicyagent.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'opa',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'openpolicyagent.org' as const,
 }
 
 export type OpaPackage = typeof opaPackage

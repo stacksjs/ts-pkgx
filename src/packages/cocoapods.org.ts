@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cocoapods-org.md
  *
  * @install `sh <(curl https://pkgx.sh) pod`
- * @aliases `pod`
+ * @name `pod`
  * @dependencies `ruby-lang.org~3.2`, `sourceware.org/libffi^3`, `rubygems.org^3`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pod
  * // Or access via domain
  * const samePkg = pantry.cocoapodsorg
@@ -86,14 +86,12 @@ export const podPackage = {
     '1.12.1',
     '1.5.0',
   ] as const,
-  fullPath: 'cocoapods.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pod',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'cocoapods.org' as const,
 }
 
 export type PodPackage = typeof podPackage

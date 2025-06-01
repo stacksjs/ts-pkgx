@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/infracost-io.md
  *
  * @install `sh <(curl https://pkgx.sh) infracost`
+ * @name `infracost`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.infracostio
+ * // Access the package
+ * const pkg = pantry.infracost
+ * // Or access via domain
+ * const samePkg = pantry.infracostio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "infracost"
  * console.log(pkg.description) // "Cloud cost estimates for Terraform in pull requ..."
  * console.log(pkg.programs)    // ["infracost"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/infracost-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const infracostioPackage = {
+export const infracostPackage = {
   /**
    * The display name of this package.
    */
@@ -68,8 +73,12 @@ export const infracostioPackage = {
     '0.10.33',
     '0.10.32',
   ] as const,
-  fullPath: 'infracost.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'infracost.io' as const,
 }
 
-export type InfracostioPackage = typeof infracostioPackage
+export type InfracostPackage = typeof infracostPackage

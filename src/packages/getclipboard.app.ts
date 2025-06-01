@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getclipboard-app.md
  *
  * @install `sh <(curl https://pkgx.sh) cb`
- * @aliases `cb`
+ * @name `cb`
  * @dependencies `openssl.org^1.1`, `linuxalsa-project.org/alsa-lib@1x.org/x11@1wayland.freedesktop.org@1gnu.org/gcc/libstdcxx@14`, `alsa-project.org/alsa-lib@1`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cb
  * // Or access via domain
  * const samePkg = pantry.getclipboardapp
@@ -78,14 +78,12 @@ export const cbPackage = {
     '0.9.0.1',
     '0.10.0',
   ] as const,
-  fullPath: 'getclipboard.app' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cb',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'getclipboard.app' as const,
 }
 
 export type CbPackage = typeof cbPackage

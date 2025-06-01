@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nodejs-org.md
  *
  * @install `sh <(curl https://pkgx.sh) node`
- * @aliases `node`
+ * @name `node`
  * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+2 more)
  * @companions `npmjs.com`
  *
@@ -15,7 +15,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.node
  * // Or access via domain
  * const samePkg = pantry.nodejsorg
@@ -222,9 +222,7 @@ export const nodePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'node',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'nodejs.org' as const,
 }
 

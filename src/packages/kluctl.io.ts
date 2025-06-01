@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kluctl-io.md
  *
  * @install `sh <(curl https://pkgx.sh) kluctl`
- * @aliases `kluctl`
+ * @name `kluctl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kluctl
  * // Or access via domain
  * const samePkg = pantry.kluctlio
@@ -81,9 +81,7 @@ export const kluctlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kluctl',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'kluctl.io' as const,
 }
 

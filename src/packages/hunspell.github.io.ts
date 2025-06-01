@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/hunspell-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +hunspell.github.io -- $SHELL -i`
- * @aliases `hunspell`
+ * @name `hunspell`
  * @dependencies `gnu.org/readline`, `invisible-island.net/ncurses`, `gnu.org/gettext`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hunspell
  * // Or access via domain
  * const samePkg = pantry.hunspellgithubio
@@ -83,9 +83,7 @@ export const hunspellPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hunspell',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'hunspell.github.io' as const,
 }
 

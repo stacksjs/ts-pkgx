@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/k6-io.md
  *
  * @install `sh <(curl https://pkgx.sh) k6`
+ * @name `k6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.k6io
+ * // Access the package
+ * const pkg = pantry.k6
+ * // Or access via domain
+ * const samePkg = pantry.k6io
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "k6"
  * console.log(pkg.description) // "A modern load testing tool, using Go and JavaSc..."
  * console.log(pkg.programs)    // ["k6"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/k6-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const k6ioPackage = {
+export const k6Package = {
   /**
    * The display name of this package.
    */
@@ -82,8 +87,12 @@ export const k6ioPackage = {
     '0.43.0',
     '0.42.0',
   ] as const,
-  fullPath: 'k6.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'k6.io' as const,
 }
 
-export type K6ioPackage = typeof k6ioPackage
+export type K6Package = typeof k6Package

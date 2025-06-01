@@ -73,10 +73,6 @@ export const lxmldePackage = {
     '4.9.4',
     '4.9.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
   fullPath: 'lxml.de' as const,
 }

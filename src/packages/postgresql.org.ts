@@ -110,8 +110,8 @@ export const postgresqlorgPackage = {
     '12.14.0',
     '11.19.0',
   ] as const,
-  fullPath: 'postgresql.org' as const,
   aliases: [] as const,
+  fullPath: 'postgresql.org' as const,
 }
 
 export type PostgresqlorgPackage = typeof postgresqlorgPackage

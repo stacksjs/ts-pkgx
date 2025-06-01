@@ -90,8 +90,8 @@ export const mercurialscmorgPackage = {
     '6.5.2',
     '6.5.0',
   ] as const,
-  fullPath: 'mercurial-scm.org' as const,
   aliases: [] as const,
+  fullPath: 'mercurial-scm.org' as const,
 }
 
 export type MercurialscmorgPackage = typeof mercurialscmorgPackage

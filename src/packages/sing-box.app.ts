@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sing-box-app.md
  *
  * @install `sh <(curl https://pkgx.sh) sing-box`
- * @aliases `sing-box`
+ * @name `sing-box`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.singbox
  * // Or access via domain
  * const samePkg = pantry.singboxapp
@@ -116,9 +116,7 @@ export const singboxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sing-box',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'sing-box.app' as const,
 }
 

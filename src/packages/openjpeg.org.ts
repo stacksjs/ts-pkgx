@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openjpeg-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openjpeg.org -- $SHELL -i`
- * @aliases `opj`
+ * @name `opj`
  * @dependencies `libpng.org^1`, `simplesystems.org/libtiff^4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.opj
  * // Or access via domain
  * const samePkg = pantry.openjpegorg
@@ -81,9 +81,7 @@ export const opjPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'opj',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'openjpeg.org' as const,
 }
 

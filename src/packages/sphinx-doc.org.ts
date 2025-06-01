@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sphinx-doc-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +sphinx-doc.org -- $SHELL -i`
+ * @name `sphinx`
  * @dependencies `python.org>=3.8<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.sphinxdocorg
+ * // Access the package
+ * const pkg = pantry.sphinx
+ * // Or access via domain
+ * const samePkg = pantry.sphinxdocorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "sphinx"
  * console.log(pkg.description) // "Tool to create intelligent and beautiful docume..."
  * console.log(pkg.programs)    // ["sphinx-apidoc", "sphinx-autogen", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sphinx-doc-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sphinxdocorgPackage = {
+export const sphinxPackage = {
   /**
    * The display name of this package.
    */
@@ -110,8 +115,12 @@ export const sphinxdocorgPackage = {
     '6.2.0',
     '6.1.3',
   ] as const,
-  fullPath: 'sphinx-doc.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'sphinx-doc.org' as const,
 }
 
-export type SphinxdocorgPackage = typeof sphinxdocorgPackage
+export type SphinxPackage = typeof sphinxPackage

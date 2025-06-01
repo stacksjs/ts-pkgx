@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tcpdump-org.md
  *
  * @install `sh <(curl https://pkgx.sh) pcap-config`
- * @aliases `pcap-config`
+ * @name `pcap-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pcapconfig
  * // Or access via domain
  * const samePkg = pantry.tcpdumporg
@@ -65,14 +65,12 @@ export const pcapconfigPackage = {
     '1.10.5',
     '1.10.4',
   ] as const,
-  fullPath: 'tcpdump.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pcap-config',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'tcpdump.org' as const,
 }
 
 export type PcapconfigPackage = typeof pcapconfigPackage

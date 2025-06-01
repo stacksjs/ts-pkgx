@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libexpat-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) xmlwf`
- * @aliases `xmlwf`
+ * @name `xmlwf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.xmlwf
  * // Or access via domain
  * const samePkg = pantry.libexpatgithubio
@@ -72,14 +72,12 @@ export const xmlwfPackage = {
     '2.5.0',
     '2.4.9',
   ] as const,
-  fullPath: 'libexpat.github.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xmlwf',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'libexpat.github.io' as const,
 }
 
 export type XmlwfPackage = typeof xmlwfPackage

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cocogitto-io.md
  *
  * @install `sh <(curl https://pkgx.sh) cog`
- * @aliases `cog`
+ * @name `cog`
  * @dependencies `libgit2.org~1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cog
  * // Or access via domain
  * const samePkg = pantry.cocogittoio
@@ -77,14 +77,12 @@ export const cogPackage = {
     '5.6.0',
     '5.5.0',
   ] as const,
-  fullPath: 'cocogitto.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cog',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'cocogitto.io' as const,
 }
 
 export type CogPackage = typeof cogPackage

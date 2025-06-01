@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pygments-org.md
  *
  * @install `sh <(curl https://pkgx.sh) pygmentize`
- * @aliases `pygmentize`
+ * @name `pygmentize`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pygmentize
  * // Or access via domain
  * const samePkg = pantry.pygmentsorg
@@ -78,14 +78,12 @@ export const pygmentizePackage = {
     '2.15.0',
     '2.14.0',
   ] as const,
-  fullPath: 'pygments.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pygmentize',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'pygments.org' as const,
 }
 
 export type PygmentizePackage = typeof pygmentizePackage

@@ -59,8 +59,8 @@ export const libspngorgPackage = {
   versions: [
     '0.5.0',
   ] as const,
-  fullPath: 'libspng.org' as const,
   aliases: [] as const,
+  fullPath: 'libspng.org' as const,
 }
 
 export type LibspngorgPackage = typeof libspngorgPackage

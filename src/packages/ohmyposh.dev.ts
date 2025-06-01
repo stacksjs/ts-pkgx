@@ -3,17 +3,17 @@
  *
  * @domain `ohmyposh.dev`
  * @programs `oh-my-posh`
- * @version `26.0.5` (277 versions available)
+ * @version `26.1.0` (278 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ohmyposh-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) oh-my-posh`
- * @aliases `oh-my-posh`
+ * @name `oh-my-posh`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ohmyposh
  * // Or access via domain
  * const samePkg = pantry.ohmyposhdev
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "oh-my-posh"
  * console.log(pkg.description) // "The most customisable and low-latency cross pla..."
  * console.log(pkg.programs)    // ["oh-my-posh"]
- * console.log(pkg.versions[0]) // "26.0.5" (latest)
+ * console.log(pkg.versions[0]) // "26.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ohmyposh-dev.md
@@ -62,6 +62,7 @@ export const ohmyposhPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '26.1.0',
     '26.0.5',
     '26.0.4',
     '26.0.3',
@@ -344,9 +345,7 @@ export const ohmyposhPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'oh-my-posh',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'ohmyposh.dev' as const,
 }
 

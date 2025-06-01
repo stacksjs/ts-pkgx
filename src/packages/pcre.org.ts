@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pcre-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +pcre.org -- $SHELL -i`
+ * @name `pcre`
  * @dependencies `sourceware.org/bzip2@1`, `zlib.net@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pcreorg
+ * // Access the package
+ * const pkg = pantry.pcre
+ * // Or access via domain
+ * const samePkg = pantry.pcreorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pcre"
  * console.log(pkg.description) // "Perl compatible regular expressions library"
  * console.log(pkg.programs)    // ["pcre-config", "pcregrep", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pcre-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pcreorgPackage = {
+export const pcrePackage = {
   /**
    * The display name of this package.
    */
@@ -69,8 +74,12 @@ export const pcreorgPackage = {
   versions: [
     '8.45.0',
   ] as const,
-  fullPath: 'pcre.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'pcre.org' as const,
 }
 
-export type PcreorgPackage = typeof pcreorgPackage
+export type PcrePackage = typeof pcrePackage

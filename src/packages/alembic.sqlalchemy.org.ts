@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/alembic-sqlalchemy-org.md
  *
  * @install `sh <(curl https://pkgx.sh) alembic`
+ * @name `alembic`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.alembicsqlalchemyorg
+ * // Access the package
+ * const pkg = pantry.alembic
+ * // Or access via domain
+ * const samePkg = pantry.alembicsqlalchemyorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "alembic"
  * console.log(pkg.description) // "A database migrations tool for SQLAlchemy."
  * console.log(pkg.programs)    // ["alembic"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/alembic-sqlalchemy-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const alembicsqlalchemyorgPackage = {
+export const alembicPackage = {
   /**
    * The display name of this package.
    */
@@ -73,8 +78,12 @@ export const alembicsqlalchemyorgPackage = {
     '1.13.3',
     '1.13.2',
   ] as const,
-  fullPath: 'alembic.sqlalchemy.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'alembic.sqlalchemy.org' as const,
 }
 
-export type AlembicsqlalchemyorgPackage = typeof alembicsqlalchemyorgPackage
+export type AlembicPackage = typeof alembicPackage

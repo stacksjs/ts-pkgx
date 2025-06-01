@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sqlite-org.md
  *
  * @install `sh <(curl https://pkgx.sh) sqlite3`
- * @aliases `sqlite3`
+ * @name `sqlite3`
  * @dependencies `zlib.net@1`, `gnu.org/readline@8`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sqlite3
  * // Or access via domain
  * const samePkg = pantry.sqliteorg
@@ -96,14 +96,12 @@ export const sqlite3Package = {
     '3.40.0',
     '3.39.4',
   ] as const,
-  fullPath: 'sqlite.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sqlite3',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'sqlite.org' as const,
 }
 
 export type Sqlite3Package = typeof sqlite3Package

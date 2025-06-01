@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/neovim-io.md
  *
  * @install `sh <(curl https://pkgx.sh) nvim`
- * @aliases `nvim`
+ * @name `nvim`
  * @dependencies `gnu.org/gettext^0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.nvim
  * // Or access via domain
  * const samePkg = pantry.neovimio
@@ -85,14 +85,12 @@ export const nvimPackage = {
     '0.8.2',
     '0.8.1',
   ] as const,
-  fullPath: 'neovim.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nvim',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'neovim.io' as const,
 }
 
 export type NvimPackage = typeof nvimPackage

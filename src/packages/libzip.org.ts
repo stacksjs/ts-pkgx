@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libzip-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libzip.org -- $SHELL -i`
- * @aliases `zip`
+ * @name `zip`
  * @dependencies `facebook.com/zstd>=1.5.0`, `darwinsourceware.org/bzip2>=1.0.8tukaani.org/xz>=5.2.7zlib.net>=1.2.13`, `sourceware.org/bzip2>=1.0.8`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.zip
  * // Or access via domain
  * const samePkg = pantry.libziporg
@@ -85,14 +85,12 @@ export const zipPackage = {
     '1.10.0',
     '1.9.2',
   ] as const,
-  fullPath: 'libzip.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'zip',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'libzip.org' as const,
 }
 
 export type ZipPackage = typeof zipPackage

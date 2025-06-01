@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/microcks-io.md
  *
  * @install `sh <(curl https://pkgx.sh) microcks-cli`
- * @aliases `microcks-cli`
+ * @name `microcks-cli`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.microckscli
  * // Or access via domain
  * const samePkg = pantry.microcksio
@@ -76,14 +76,12 @@ export const microckscliPackage = {
     '0.5.5',
     '0.5.4',
   ] as const,
-  fullPath: 'microcks.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'microcks-cli',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'microcks.io' as const,
 }
 
 export type MicrockscliPackage = typeof microckscliPackage

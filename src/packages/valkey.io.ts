@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/valkey-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +valkey.io -- $SHELL -i`
+ * @name `valkey`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.valkeyio
+ * // Access the package
+ * const pkg = pantry.valkey
+ * // Or access via domain
+ * const samePkg = pantry.valkeyio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "valkey"
  * console.log(pkg.description) // "A flexible distributed key-value datastore that..."
  * console.log(pkg.programs)    // ["valkey-server", "valkey-cli", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/valkey-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const valkeyioPackage = {
+export const valkeyPackage = {
   /**
    * The display name of this package.
    */
@@ -78,8 +83,12 @@ export const valkeyioPackage = {
     '7.2.6',
     '7.2.5',
   ] as const,
-  fullPath: 'valkey.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'valkey.io' as const,
 }
 
-export type ValkeyioPackage = typeof valkeyioPackage
+export type ValkeyPackage = typeof valkeyPackage

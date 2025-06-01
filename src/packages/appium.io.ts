@@ -3,18 +3,18 @@
  *
  * @domain `appium.io`
  * @programs `appium`
- * @version `2.18.0` (36 versions available)
+ * @version `2.19.0` (37 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/appium-io.md
  *
  * @install `sh <(curl https://pkgx.sh) appium`
- * @aliases `appium`
+ * @name `appium`
  * @dependencies `npmjs.com`, `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`, `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.appium
  * // Or access via domain
  * const samePkg = pantry.appiumio
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "appium"
  * console.log(pkg.description) // "Cross-platform automation framework for all kin..."
  * console.log(pkg.programs)    // ["appium"]
- * console.log(pkg.versions[0]) // "2.18.0" (latest)
+ * console.log(pkg.versions[0]) // "2.19.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/appium-io.md
@@ -71,6 +71,7 @@ export const appiumPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.19.0',
     '2.18.0',
     '2.17.1',
     '2.17.0',
@@ -112,9 +113,7 @@ export const appiumPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'appium',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'appium.io' as const,
 }
 

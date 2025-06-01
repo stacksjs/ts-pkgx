@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/velero-io.md
  *
  * @install `sh <(curl https://pkgx.sh) velero`
- * @aliases `velero`
+ * @name `velero`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.velero
  * // Or access via domain
  * const samePkg = pantry.veleroio
@@ -68,9 +68,7 @@ export const veleroPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'velero',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'velero.io' as const,
 }
 

@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/temporal-io.md
  *
  * @install `sh <(curl https://pkgx.sh) temporal`
+ * @name `temporal`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.temporalio
+ * // Access the package
+ * const pkg = pantry.temporal
+ * // Or access via domain
+ * const samePkg = pantry.temporalio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "temporal"
  * console.log(pkg.description) // "Command-line interface for running Temporal Ser..."
  * console.log(pkg.programs)    // ["temporal"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/temporal-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const temporalioPackage = {
+export const temporalPackage = {
   /**
    * The display name of this package.
    */
@@ -72,8 +77,12 @@ export const temporalioPackage = {
     '0.10.6',
     '0.10.5',
   ] as const,
-  fullPath: 'temporal.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'temporal.io' as const,
 }
 
-export type TemporalioPackage = typeof temporalioPackage
+export type TemporalPackage = typeof temporalPackage

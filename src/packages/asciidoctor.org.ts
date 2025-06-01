@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/asciidoctor-org.md
  *
  * @install `sh <(curl https://pkgx.sh) asciidoctor`
+ * @name `asciidoctor`
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.asciidoctororg
+ * // Access the package
+ * const pkg = pantry.asciidoctor
+ * // Or access via domain
+ * const samePkg = pantry.asciidoctororg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "asciidoctor"
  * console.log(pkg.description) // ":gem: A fast, open source text processor and pu..."
  * console.log(pkg.programs)    // ["asciidoctor"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/asciidoctor-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const asciidoctororgPackage = {
+export const asciidoctorPackage = {
   /**
    * The display name of this package.
    */
@@ -72,8 +77,12 @@ export const asciidoctororgPackage = {
     '2.0.19',
     '2.0.18',
   ] as const,
-  fullPath: 'asciidoctor.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'asciidoctor.org' as const,
 }
 
-export type AsciidoctororgPackage = typeof asciidoctororgPackage
+export type AsciidoctorPackage = typeof asciidoctorPackage

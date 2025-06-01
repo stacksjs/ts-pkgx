@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tidbyt-com.md
  *
  * @install `sh <(curl https://pkgx.sh) pixlet`
- * @aliases `pixlet`
+ * @name `pixlet`
  * @dependencies `google.com/webp^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pixlet
  * // Or access via domain
  * const samePkg = pantry.tidbytcom
@@ -90,14 +90,12 @@ export const pixletPackage = {
     '0.30.0',
     '0.29.1',
   ] as const,
-  fullPath: 'tidbyt.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pixlet',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'tidbyt.com' as const,
 }
 
 export type PixletPackage = typeof pixletPackage

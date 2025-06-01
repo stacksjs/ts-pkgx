@@ -62,8 +62,8 @@ export const nasmusPackage = {
     '2.16.2',
     '2.15.5',
   ] as const,
-  fullPath: 'nasm.us' as const,
   aliases: [] as const,
+  fullPath: 'nasm.us' as const,
 }
 
 export type NasmusPackage = typeof nasmusPackage

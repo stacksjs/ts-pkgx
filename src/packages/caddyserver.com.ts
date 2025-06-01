@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/caddyserver-com.md
  *
  * @install `sh <(curl https://pkgx.sh) caddy`
+ * @name `caddy`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.caddyservercom
+ * // Access the package
+ * const pkg = pantry.caddy
+ * // Or access via domain
+ * const samePkg = pantry.caddyservercom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "caddy"
  * console.log(pkg.description) // "Fast and extensible multi-platform HTTP/1-2-3 w..."
  * console.log(pkg.programs)    // ["caddy"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/caddyserver-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const caddyservercomPackage = {
+export const caddyPackage = {
   /**
    * The display name of this package.
    */
@@ -68,8 +73,12 @@ export const caddyservercomPackage = {
     '2.7.5',
     '2.7.4',
   ] as const,
-  fullPath: 'caddyserver.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'caddyserver.com' as const,
 }
 
-export type CaddyservercomPackage = typeof caddyservercomPackage
+export type CaddyPackage = typeof caddyPackage

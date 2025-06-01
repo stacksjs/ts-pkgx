@@ -7,7 +7,8 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/huggingface-co.md
  *
  * @install `sh <(curl https://pkgx.sh) huggingface-cli`
- * @aliases `huggingface-cli`, `huggingface/cli`
+ * @name `huggingface/cli`
+ * @aliases `huggingface-cli`
  * @dependencies `pkgx.sh^1`
  *
  * @example
@@ -128,7 +129,6 @@ export const huggingfacecliPackage = {
    */
   aliases: [
     'huggingface-cli',
-    'huggingface/cli',
   ] as const,
   fullPath: 'huggingface.co' as const,
 }

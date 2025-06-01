@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/git-cliff-org.md
  *
  * @install `sh <(curl https://pkgx.sh) git-cliff`
+ * @name `git-cliff`
  * @dependencies `libgit2.org~1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.gitclifforg
+ * // Access the package
+ * const pkg = pantry.gitcliff
+ * // Or access via domain
+ * const samePkg = pantry.gitclifforg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "git-cliff"
  * console.log(pkg.description) // "A highly customizable Changelog Generator that ..."
  * console.log(pkg.programs)    // ["git-cliff"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/git-cliff-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitclifforgPackage = {
+export const gitcliffPackage = {
   /**
    * The display name of this package.
    */
@@ -86,8 +91,12 @@ export const gitclifforgPackage = {
     '1.3.0',
     '1.2.0',
   ] as const,
-  fullPath: 'git-cliff.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'git-cliff.org' as const,
 }
 
-export type GitclifforgPackage = typeof gitclifforgPackage
+export type GitcliffPackage = typeof gitcliffPackage

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mise-jdx-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i`
+ * @name `mise`
  * @dependencies `openssl.org^1.1`, `libgit2.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.misejdxdev
+ * // Access the package
+ * const pkg = pantry.mise
+ * // Or access via domain
+ * const samePkg = pantry.misejdxdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mise"
  * console.log(pkg.description) // "dev tools, env vars, task runner"
  * console.log(pkg.programs)    // ["rtx", "mise"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mise-jdx-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const misejdxdevPackage = {
+export const misePackage = {
   /**
    * The display name of this package.
    */
@@ -349,8 +354,12 @@ export const misejdxdevPackage = {
     '2024.1.2',
     '2024.1.0',
   ] as const,
-  fullPath: 'mise.jdx.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'mise.jdx.dev' as const,
 }
 
-export type MisejdxdevPackage = typeof misejdxdevPackage
+export type MisePackage = typeof misePackage

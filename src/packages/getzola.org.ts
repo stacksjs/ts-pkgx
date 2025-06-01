@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getzola-org.md
  *
  * @install `sh <(curl https://pkgx.sh) zola`
- * @aliases `zola`
+ * @name `zola`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.zola
  * // Or access via domain
  * const samePkg = pantry.getzolaorg
@@ -69,14 +69,12 @@ export const zolaPackage = {
     '0.18.0',
     '0.17.2',
   ] as const,
-  fullPath: 'getzola.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'zola',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'getzola.org' as const,
 }
 
 export type ZolaPackage = typeof zolaPackage

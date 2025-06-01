@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/k9scli-io.md
  *
  * @install `sh <(curl https://pkgx.sh) k9s`
- * @aliases `k9s`
+ * @name `k9s`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.k9s
  * // Or access via domain
  * const samePkg = pantry.k9scliio
@@ -119,9 +119,7 @@ export const k9sPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'k9s',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'k9scli.io' as const,
 }
 

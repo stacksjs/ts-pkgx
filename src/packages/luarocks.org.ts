@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/luarocks-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +luarocks.org -- $SHELL -i`
- * @aliases `luarocks`
+ * @name `luarocks`
  * @dependencies `lua.org`, `info-zip.org/unzip`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.luarocks
  * // Or access via domain
  * const samePkg = pantry.luarocksorg
@@ -80,9 +80,7 @@ export const luarocksPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'luarocks',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'luarocks.org' as const,
 }
 

@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/min-io.md
  *
  * @install `sh <(curl https://pkgx.sh) minio`
- * @aliases `minio`
+ * @name `minio`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.minio
  * // Or access via domain
  * const samePkg = pantry.minio
@@ -64,14 +64,12 @@ export const minioPackage = {
   versions: [
     '2023.10.25.6.33.25',
   ] as const,
-  fullPath: 'min.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'minio',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'min.io' as const,
 }
 
 export type MinioPackage = typeof minioPackage

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lua-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +lua.org -- $SHELL -i`
- * @aliases `lua`
+ * @name `lua`
  * @dependencies `gnu.org/readline`
  * @companions `luarocks.org`
  *
@@ -15,7 +15,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.lua
  * // Or access via domain
  * const samePkg = pantry.luaorg
@@ -85,9 +85,7 @@ export const luaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'lua',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'lua.org' as const,
 }
 

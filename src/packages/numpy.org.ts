@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/numpy-org.md
  *
  * @install `sh <(curl https://pkgx.sh) f2py`
- * @aliases `f2py`
+ * @name `f2py`
  * @dependencies `openblas.net^0.3`, `python.org^3.11`
  * @companions `gnu.org/gcc`
  *
@@ -15,7 +15,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.f2py
  * // Or access via domain
  * const samePkg = pantry.numpyorg
@@ -95,14 +95,12 @@ export const f2pyPackage = {
     '1.26.3',
     '1.26.2',
   ] as const,
-  fullPath: 'numpy.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'f2py',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'numpy.org' as const,
 }
 
 export type F2pyPackage = typeof f2pyPackage

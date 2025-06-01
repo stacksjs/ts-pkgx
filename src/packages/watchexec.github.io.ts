@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/watchexec-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) watchexec`
+ * @name `watchexec`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.watchexecgithubio
+ * // Access the package
+ * const pkg = pantry.watchexec
+ * // Or access via domain
+ * const samePkg = pantry.watchexecgithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "watchexec"
  * console.log(pkg.description) // "Executes commands in response to file modificat..."
  * console.log(pkg.programs)    // ["watchexec"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/watchexec-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const watchexecgithubioPackage = {
+export const watchexecPackage = {
   /**
    * The display name of this package.
    */
@@ -64,8 +69,12 @@ export const watchexecgithubioPackage = {
     '2.2.0',
     '2.1.2',
   ] as const,
-  fullPath: 'watchexec.github.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'watchexec.github.io' as const,
 }
 
-export type WatchexecgithubioPackage = typeof watchexecgithubioPackage
+export type WatchexecPackage = typeof watchexecPackage

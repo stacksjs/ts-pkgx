@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gqlgen-com.md
  *
  * @install `sh <(curl https://pkgx.sh) gqlgen`
- * @aliases `gqlgen`
+ * @name `gqlgen`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gqlgen
  * // Or access via domain
  * const samePkg = pantry.gqlgencom
@@ -104,9 +104,7 @@ export const gqlgenPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gqlgen',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'gqlgen.com' as const,
 }
 

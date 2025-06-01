@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/yadm-io.md
  *
  * @install `sh <(curl https://pkgx.sh) yadm`
+ * @name `yadm`
  * @dependencies `git-scm.org`, `gnu.org/bash`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.yadmio
+ * // Access the package
+ * const pkg = pantry.yadm
+ * // Or access via domain
+ * const samePkg = pantry.yadmio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "yadm"
  * console.log(pkg.description) // "Yet Another Dotfiles Manager"
  * console.log(pkg.programs)    // ["yadm"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/yadm-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const yadmioPackage = {
+export const yadmPackage = {
   /**
    * The display name of this package.
    */
@@ -70,8 +75,12 @@ export const yadmioPackage = {
     '3.3.0',
     '3.2.2',
   ] as const,
-  fullPath: 'yadm.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'yadm.io' as const,
 }
 
-export type YadmioPackage = typeof yadmioPackage
+export type YadmPackage = typeof yadmPackage

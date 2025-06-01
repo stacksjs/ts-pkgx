@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/spacetimedb-com.md
  *
  * @install `sh <(curl https://pkgx.sh) spacetime`
+ * @name `spacetime`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.spacetimedbcom
+ * // Access the package
+ * const pkg = pantry.spacetime
+ * // Or access via domain
+ * const samePkg = pantry.spacetimedbcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "spacetime"
  * console.log(pkg.description) // "Multiplayer at the speed of light"
  * console.log(pkg.programs)    // ["spacetime"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/spacetimedb-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const spacetimedbcomPackage = {
+export const spacetimePackage = {
   /**
    * The display name of this package.
    */
@@ -67,8 +72,12 @@ export const spacetimedbcomPackage = {
     '2023.12.8',
     '2023.8.12',
   ] as const,
-  fullPath: 'spacetimedb.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'spacetimedb.com' as const,
 }
 
-export type SpacetimedbcomPackage = typeof spacetimedbcomPackage
+export type SpacetimePackage = typeof spacetimePackage

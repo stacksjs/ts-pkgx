@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mkdocs-org.md
  *
  * @install `sh <(curl https://pkgx.sh) mkdocs`
+ * @name `mkdocs`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mkdocsorg
+ * // Access the package
+ * const pkg = pantry.mkdocs
+ * // Or access via domain
+ * const samePkg = pantry.mkdocsorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mkdocs"
  * console.log(pkg.description) // "Project documentation with Markdown."
  * console.log(pkg.programs)    // ["mkdocs"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mkdocs-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mkdocsorgPackage = {
+export const mkdocsPackage = {
   /**
    * The display name of this package.
    */
@@ -68,8 +73,12 @@ export const mkdocsorgPackage = {
     '1.6.0',
     '1.5.3',
   ] as const,
-  fullPath: 'mkdocs.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'mkdocs.org' as const,
 }
 
-export type MkdocsorgPackage = typeof mkdocsorgPackage
+export type MkdocsPackage = typeof mkdocsPackage

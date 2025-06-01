@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xkbcommon-org.md
  *
  * @install `sh <(curl https://pkgx.sh) xkbcli`
- * @aliases `xkbcli`
+ * @name `xkbcli`
  * @dependencies `x.org/x11`, `x.org/xcb`, `freedesktop.org/XKeyboardConfig`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.xkbcli
  * // Or access via domain
  * const samePkg = pantry.xkbcommonorg
@@ -82,14 +82,12 @@ export const xkbcliPackage = {
     '1.6.0',
     '1.5.0',
   ] as const,
-  fullPath: 'xkbcommon.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xkbcli',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'xkbcommon.org' as const,
 }
 
 export type XkbcliPackage = typeof xkbcliPackage

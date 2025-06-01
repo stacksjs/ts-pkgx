@@ -59,8 +59,8 @@ export const liblqrwikidotcomPackage = {
     '0.4.3',
     '0.4.2',
   ] as const,
-  fullPath: 'liblqr.wikidot.com' as const,
   aliases: [] as const,
+  fullPath: 'liblqr.wikidot.com' as const,
 }
 
 export type LiblqrwikidotcomPackage = typeof liblqrwikidotcomPackage

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/beyondgrep-com.md
  *
  * @install `sh <(curl https://pkgx.sh) ack`
- * @aliases `ack`
+ * @name `ack`
  * @dependencies `perl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ack
  * // Or access via domain
  * const samePkg = pantry.beyondgrepcom
@@ -76,14 +76,12 @@ export const ackPackage = {
     '3.7.0',
     '3.6.0',
   ] as const,
-  fullPath: 'beyondgrep.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ack',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'beyondgrep.com' as const,
 }
 
 export type AckPackage = typeof ackPackage

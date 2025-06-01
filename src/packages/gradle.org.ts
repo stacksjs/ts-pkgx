@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gradle-org.md
  *
  * @install `sh <(curl https://pkgx.sh) gradle`
- * @aliases `gradle`
+ * @name `gradle`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gradle
  * // Or access via domain
  * const samePkg = pantry.gradleorg
@@ -90,9 +90,7 @@ export const gradlePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gradle',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'gradle.org' as const,
 }
 

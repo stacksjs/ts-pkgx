@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jenkins-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i`
- * @aliases `jenkins-lts`
+ * @name `jenkins-lts`
  * @dependencies `openjdk.org<20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jenkinslts
  * // Or access via domain
  * const samePkg = pantry.jenkinsio
@@ -90,14 +90,12 @@ export const jenkinsltsPackage = {
     '2.426.3',
     '2.426.2',
   ] as const,
-  fullPath: 'jenkins.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jenkins-lts',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'jenkins.io' as const,
 }
 
 export type JenkinsltsPackage = typeof jenkinsltsPackage

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/makotemplates-org.md
  *
  * @install `sh <(curl https://pkgx.sh) mako-render`
- * @aliases `mako-render`
+ * @name `mako-render`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.makorender
  * // Or access via domain
  * const samePkg = pantry.makotemplatesorg
@@ -82,14 +82,12 @@ export const makorenderPackage = {
     '1.3.0',
     '1.2.4',
   ] as const,
-  fullPath: 'makotemplates.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mako-render',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'makotemplates.org' as const,
 }
 
 export type MakorenderPackage = typeof makorenderPackage

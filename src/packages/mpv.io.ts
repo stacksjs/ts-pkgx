@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mpv-io.md
  *
  * @install `sh <(curl https://pkgx.sh) mpv`
+ * @name `mpv`
  * @dependencies `ffmpeg.org`, `libjpeg-turbo.org@2`, `libarchive.org@3`, ... (+11 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mpvio
+ * // Access the package
+ * const pkg = pantry.mpv
+ * // Or access via domain
+ * const samePkg = pantry.mpvio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mpv"
  * console.log(pkg.description) // "Media player based on MPlayer and mplayer2"
  * console.log(pkg.programs)    // ["mpv"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mpv-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mpvioPackage = {
+export const mpvPackage = {
   /**
    * The display name of this package.
    */
@@ -81,8 +86,12 @@ export const mpvioPackage = {
     '0.39.0',
     '0.38.0',
   ] as const,
-  fullPath: 'mpv.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'mpv.io' as const,
 }
 
-export type MpvioPackage = typeof mpvioPackage
+export type MpvPackage = typeof mpvPackage

@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/helix-editor-com.md
  *
  * @install `sh <(curl https://pkgx.sh) hx`
- * @aliases `hx`
+ * @name `hx`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hx
  * // Or access via domain
  * const samePkg = pantry.helixeditorcom
@@ -71,14 +71,12 @@ export const hxPackage = {
     '23.3.0',
     '22.12.0',
   ] as const,
-  fullPath: 'helix-editor.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hx',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'helix-editor.com' as const,
 }
 
 export type HxPackage = typeof hxPackage

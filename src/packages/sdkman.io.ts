@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sdkman-io.md
  *
  * @install `sh <(curl https://pkgx.sh) sdkman-init.sh`
- * @aliases `sdkman-init.sh`
+ * @name `sdkman-init.sh`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sdkmaninitsh
  * // Or access via domain
  * const samePkg = pantry.sdkmanio
@@ -69,9 +69,7 @@ export const sdkmaninitshPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sdkman-init.sh',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'sdkman.io' as const,
 }
 

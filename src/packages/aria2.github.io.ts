@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/aria2-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) aria2c`
- * @aliases `aria2c`
+ * @name `aria2c`
  * @dependencies `zlib.net^1`, `openssl.org^1`, `libexpat.github.io`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.aria2c
  * // Or access via domain
  * const samePkg = pantry.aria2githubio
@@ -75,14 +75,12 @@ export const aria2cPackage = {
     '1.37.0',
     '1.36.0',
   ] as const,
-  fullPath: 'aria2.github.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'aria2c',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'aria2.github.io' as const,
 }
 
 export type Aria2cPackage = typeof aria2cPackage

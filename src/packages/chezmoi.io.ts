@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/chezmoi-io.md
  *
  * @install `sh <(curl https://pkgx.sh) chezmoi`
- * @aliases `chezmoi`
+ * @name `chezmoi`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.chezmoi
  * // Or access via domain
  * const samePkg = pantry.chezmoiio
@@ -142,9 +142,7 @@ export const chezmoiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'chezmoi',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'chezmoi.io' as const,
 }
 

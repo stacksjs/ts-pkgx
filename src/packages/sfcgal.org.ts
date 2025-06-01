@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sfcgal-org.md
  *
  * @install `sh <(curl https://pkgx.sh) sfcgal-config`
- * @aliases `sfcgal-config`
+ * @name `sfcgal-config`
  * @dependencies `boost.org`, `cgal.org`, `gnu.org/gmp`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sfcgalconfig
  * // Or access via domain
  * const samePkg = pantry.sfcgalorg
@@ -83,9 +83,7 @@ export const sfcgalconfigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sfcgal-config',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'sfcgal.org' as const,
 }
 

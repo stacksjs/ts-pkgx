@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nixpacks-com.md
  *
  * @install `sh <(curl https://pkgx.sh) nixpacks`
- * @aliases `nixpacks`
+ * @name `nixpacks`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.nixpacks
  * // Or access via domain
  * const samePkg = pantry.nixpackscom
@@ -100,9 +100,7 @@ export const nixpacksPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nixpacks',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'nixpacks.com' as const,
 }
 

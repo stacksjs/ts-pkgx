@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/skaffold-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) skaffold`
- * @aliases `skaffold`
+ * @name `skaffold`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.skaffold
  * // Or access via domain
  * const samePkg = pantry.skaffolddev
@@ -81,9 +81,7 @@ export const skaffoldPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'skaffold',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'skaffold.dev' as const,
 }
 

@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pokt-network.md
  *
  * @install `sh <(curl https://pkgx.sh) pocket`
- * @aliases `pocket`
+ * @name `pocket`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pocket
  * // Or access via domain
  * const samePkg = pantry.poktnetwork
@@ -75,9 +75,7 @@ export const pocketPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pocket',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'pokt.network' as const,
 }
 

@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/k3d-io.md
  *
  * @install `sh <(curl https://pkgx.sh) k3d`
+ * @name `k3d`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.k3dio
+ * // Access the package
+ * const pkg = pantry.k3d
+ * // Or access via domain
+ * const samePkg = pantry.k3dio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "k3d"
  * console.log(pkg.description) // "Little helper to run CNCF's k3s in Docker"
  * console.log(pkg.programs)    // ["k3d"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/k3d-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const k3dioPackage = {
+export const k3dPackage = {
   /**
    * The display name of this package.
    */
@@ -75,8 +80,12 @@ export const k3dioPackage = {
     '5.5.0',
     '5.4.9',
   ] as const,
-  fullPath: 'k3d.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'k3d.io' as const,
 }
 
-export type K3dioPackage = typeof k3dioPackage
+export type K3dPackage = typeof k3dPackage

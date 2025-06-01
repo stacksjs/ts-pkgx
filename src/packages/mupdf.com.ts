@@ -115,8 +115,8 @@ export const mupdfcomPackage = {
     '1.23.7',
     '1.23.6',
   ] as const,
-  fullPath: 'mupdf.com' as const,
   aliases: [] as const,
+  fullPath: 'mupdf.com' as const,
 }
 
 export type MupdfcomPackage = typeof mupdfcomPackage

@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/planetscale-com.md
  *
  * @install `sh <(curl https://pkgx.sh) pscale`
- * @aliases `pscale`
+ * @name `pscale`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pscale
  * // Or access via domain
  * const samePkg = pantry.planetscalecom
@@ -130,14 +130,12 @@ export const pscalePackage = {
     '0.162.0',
     '0.161.0',
   ] as const,
-  fullPath: 'planetscale.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pscale',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'planetscale.com' as const,
 }
 
 export type PscalePackage = typeof pscalePackage

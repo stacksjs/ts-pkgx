@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/srtalliance-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +srtalliance.org -- $SHELL -i`
- * @aliases `srt`
+ * @name `srt`
  * @dependencies `openssl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.srt
  * // Or access via domain
  * const samePkg = pantry.srtallianceorg
@@ -80,9 +80,7 @@ export const srtPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'srt',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'srtalliance.org' as const,
 }
 

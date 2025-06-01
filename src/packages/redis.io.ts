@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/redis-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +redis.io -- $SHELL -i`
- * @aliases `redis`
+ * @name `redis`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.redis
  * // Or access via domain
  * const samePkg = pantry.redisio
@@ -113,9 +113,7 @@ export const redisPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'redis',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'redis.io' as const,
 }
 

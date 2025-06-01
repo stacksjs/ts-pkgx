@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tart-run.md
  *
  * @install `sh <(curl https://pkgx.sh) tart`
- * @aliases `tart`
+ * @name `tart`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tart
  * // Or access via domain
  * const samePkg = pantry.tartrun
@@ -121,9 +121,7 @@ export const tartPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tart',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'tart.run' as const,
 }
 

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/surrealdb-com.md
  *
  * @install `sh <(curl https://pkgx.sh) surreal`
- * @aliases `surreal`
+ * @name `surreal`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.surreal
  * // Or access via domain
  * const samePkg = pantry.surrealdbcom
@@ -115,9 +115,7 @@ export const surrealPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'surreal',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'surrealdb.com' as const,
 }
 

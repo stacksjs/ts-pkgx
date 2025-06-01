@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/hjson-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) hjson`
+ * @name `hjson`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.hjsongithubio
+ * // Access the package
+ * const pkg = pantry.hjson
+ * // Or access via domain
+ * const samePkg = pantry.hjsongithubio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "hjson"
  * console.log(pkg.description) // "Hjson for Rust"
  * console.log(pkg.programs)    // ["hjson"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/hjson-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const hjsongithubioPackage = {
+export const hjsonPackage = {
   /**
    * The display name of this package.
    */
@@ -60,8 +65,12 @@ export const hjsongithubioPackage = {
     '1.1.0',
     '1.0.0',
   ] as const,
-  fullPath: 'hjson.github.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'hjson.github.io' as const,
 }
 
-export type HjsongithubioPackage = typeof hjsongithubioPackage
+export type HjsonPackage = typeof hjsonPackage

@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ziglang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) zig`
+ * @name `zig`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.ziglangorg
+ * // Access the package
+ * const pkg = pantry.zig
+ * // Or access via domain
+ * const samePkg = pantry.ziglangorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "zig"
  * console.log(pkg.description) // "General-purpose programming language and toolch..."
  * console.log(pkg.programs)    // ["zig"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ziglang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ziglangorgPackage = {
+export const zigPackage = {
   /**
    * The display name of this package.
    */
@@ -65,8 +70,12 @@ export const ziglangorgPackage = {
     '0.11.0',
     '0.10.1',
   ] as const,
-  fullPath: 'ziglang.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'ziglang.org' as const,
 }
 
-export type ZiglangorgPackage = typeof ziglangorgPackage
+export type ZigPackage = typeof zigPackage

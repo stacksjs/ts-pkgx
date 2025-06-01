@@ -81,10 +81,6 @@ export const apptainerorgPackage = {
     '1.3.4',
     '1.3.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
   fullPath: 'apptainer.org' as const,
 }

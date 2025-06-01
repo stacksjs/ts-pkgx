@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openldap-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openldap.org -- $SHELL -i`
- * @aliases `ldap`
+ * @name `ldap`
  * @dependencies `openssl.org^1.1`, `linuxgithub.com/util-linux/util-linux`, `github.com/util-linux/util-linux`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ldap
  * // Or access via domain
  * const samePkg = pantry.openldaporg
@@ -98,9 +98,7 @@ export const ldapPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ldap',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'openldap.org' as const,
 }
 

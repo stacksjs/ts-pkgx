@@ -697,9 +697,21 @@ export * from './aliases'
           jsdoc += `   * @install \`${pkgData.installCommand}\`\n`
         }
 
-        // Aliases
+        // Aliases - separate package name from true aliases
         if (pkgData.aliases && pkgData.aliases.length > 0) {
-          jsdoc += `   * @aliases ${pkgData.aliases.map(a => `\`${a}\``).join(', ')}\n`
+          const packageName = pkgData.name
+          const trueAliases = pkgData.aliases.filter(alias => alias !== packageName)
+          const packageNameAlias = pkgData.aliases.find(alias => alias === packageName)
+
+          // Add @name if the package name is in the aliases list
+          if (packageNameAlias) {
+            jsdoc += `   * @name \`${packageNameAlias}\`\n`
+          }
+
+          // Add @aliases only for true aliases (not the package name)
+          if (trueAliases.length > 0) {
+            jsdoc += `   * @aliases ${trueAliases.map(a => `\`${a}\``).join(', ')}\n`
+          }
         }
 
         // Homepage URL

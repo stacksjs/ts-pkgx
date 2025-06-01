@@ -76,8 +76,8 @@ export const unicodeorgPackage = {
     '73.2.0',
     '71.1.0',
   ] as const,
-  fullPath: 'unicode.org' as const,
   aliases: [] as const,
+  fullPath: 'unicode.org' as const,
 }
 
 export type UnicodeorgPackage = typeof unicodeorgPackage

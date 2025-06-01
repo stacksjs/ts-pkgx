@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ctags-io.md
  *
  * @install `sh <(curl https://pkgx.sh) ctags`
- * @aliases `ctags`
+ * @name `ctags`
  * @dependencies `digip.org/jansson^2`, `pyyaml.org/libyaml^0.2`, `pcre.org/v2^10`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ctags
  * // Or access via domain
  * const samePkg = pantry.ctagsio
@@ -78,9 +78,7 @@ export const ctagsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ctags',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'ctags.io' as const,
 }
 

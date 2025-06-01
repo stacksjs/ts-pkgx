@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libgeos-org.md
  *
  * @install `sh <(curl https://pkgx.sh) geos-config`
- * @aliases `geos-config`
+ * @name `geos-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.geosconfig
  * // Or access via domain
  * const samePkg = pantry.libgeosorg
@@ -78,14 +78,12 @@ export const geosconfigPackage = {
     '3.9.5',
     '3.8.4',
   ] as const,
-  fullPath: 'libgeos.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'geos-config',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'libgeos.org' as const,
 }
 
 export type GeosconfigPackage = typeof geosconfigPackage

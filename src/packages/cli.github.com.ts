@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cli-github-com.md
  *
  * @install `sh <(curl https://pkgx.sh) gh`
- * @aliases `gh`
+ * @name `gh`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gh
  * // Or access via domain
  * const samePkg = pantry.cligithubcom
@@ -143,9 +143,7 @@ export const ghPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gh',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'cli.github.com' as const,
 }
 

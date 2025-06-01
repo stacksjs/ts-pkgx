@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vcluster-com.md
  *
  * @install `sh <(curl https://pkgx.sh) vcluster`
- * @aliases `vcluster`
+ * @name `vcluster`
  * @dependencies `kubernetes.io/kubectl^1`, `linuxcurl.se/ca-certs`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.vcluster
  * // Or access via domain
  * const samePkg = pantry.vclustercom
@@ -109,9 +109,7 @@ export const vclusterPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'vcluster',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'vcluster.com' as const,
 }
 

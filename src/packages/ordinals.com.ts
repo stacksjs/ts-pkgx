@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ordinals-com.md
  *
  * @install `sh <(curl https://pkgx.sh) ord`
+ * @name `ord`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.ordinalscom
+ * // Access the package
+ * const pkg = pantry.ord
+ * // Or access via domain
+ * const samePkg = pantry.ordinalscom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "ord"
  * console.log(pkg.description) // "Index, block explorer, and command-line wallet"
  * console.log(pkg.programs)    // ["ord"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ordinals-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ordinalscomPackage = {
+export const ordPackage = {
   /**
    * The display name of this package.
    */
@@ -62,8 +67,12 @@ export const ordinalscomPackage = {
     '0.5.1',
     '0.5.0',
   ] as const,
-  fullPath: 'ordinals.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'ordinals.com' as const,
 }
 
-export type OrdinalscomPackage = typeof ordinalscomPackage
+export type OrdPackage = typeof ordPackage

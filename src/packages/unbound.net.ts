@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/unbound-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +unbound.net -- $SHELL -i`
+ * @name `unbound`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.unboundnet
+ * // Access the package
+ * const pkg = pantry.unbound
+ * // Or access via domain
+ * const samePkg = pantry.unboundnet
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "unbound"
  * console.log(pkg.description) // "Unbound is a validating, recursive, and caching..."
  * console.log(pkg.programs)    // ["unbound", "unbound-anchor", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/unbound-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const unboundnetPackage = {
+export const unboundPackage = {
   /**
    * The display name of this package.
    */
@@ -81,8 +86,12 @@ export const unboundnetPackage = {
     '1.18.0',
     '1.17.1',
   ] as const,
-  fullPath: 'unbound.net' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'unbound.net' as const,
 }
 
-export type UnboundnetPackage = typeof unboundnetPackage
+export type UnboundPackage = typeof unboundPackage

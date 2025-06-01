@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mosh-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i`
+ * @name `mosh`
  * @dependencies `protobuf.dev@26.1.0`, `invisible-island.net/ncurses@6`, `zlib.net@1.3`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.moshorg
+ * // Access the package
+ * const pkg = pantry.mosh
+ * // Or access via domain
+ * const samePkg = pantry.moshorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mosh"
  * console.log(pkg.description) // "Remote terminal application"
  * console.log(pkg.programs)    // ["mosh-client", "mosh-server"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mosh-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const moshorgPackage = {
+export const moshPackage = {
   /**
    * The display name of this package.
    */
@@ -71,8 +76,12 @@ export const moshorgPackage = {
   versions: [
     '1.4.0',
   ] as const,
-  fullPath: 'mosh.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'mosh.org' as const,
 }
 
-export type MoshorgPackage = typeof moshorgPackage
+export type MoshPackage = typeof moshPackage

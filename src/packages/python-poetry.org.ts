@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/python-poetry-org.md
  *
  * @install `sh <(curl https://pkgx.sh) poetry`
- * @aliases `poetry`
+ * @name `poetry`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.poetry
  * // Or access via domain
  * const samePkg = pantry.pythonpoetryorg
@@ -91,14 +91,12 @@ export const poetryPackage = {
     '1.4.0',
     '1.3.2',
   ] as const,
-  fullPath: 'python-poetry.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'poetry',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'python-poetry.org' as const,
 }
 
 export type PoetryPackage = typeof poetryPackage

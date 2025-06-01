@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cruft-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) cruft`
- * @aliases `cruft`
+ * @name `cruft`
  * @dependencies `python.org>=3.7<3.12`, `git-scm.org^2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cruft
  * // Or access via domain
  * const samePkg = pantry.cruftgithubio
@@ -77,9 +77,7 @@ export const cruftPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cruft',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'cruft.github.io' as const,
 }
 

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/raccoin-org.md
  *
  * @install `sh <(curl https://pkgx.sh) raccoin`
- * @aliases `raccoin`
+ * @name `raccoin`
  * @dependencies `gnu.org/libiconv^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.raccoin
  * // Or access via domain
  * const samePkg = pantry.raccoinorg
@@ -77,9 +77,7 @@ export const raccoinPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'raccoin',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'raccoin.org' as const,
 }
 

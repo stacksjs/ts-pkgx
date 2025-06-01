@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/taskfile-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) task`
+ * @name `task`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.taskfiledev
+ * // Access the package
+ * const pkg = pantry.task
+ * // Or access via domain
+ * const samePkg = pantry.taskfiledev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "task"
  * console.log(pkg.description) // "A task runner / simpler Make alternative writte..."
  * console.log(pkg.programs)    // ["task"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/taskfile-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const taskfiledevPackage = {
+export const taskPackage = {
   /**
    * The display name of this package.
    */
@@ -88,8 +93,12 @@ export const taskfiledevPackage = {
     '3.27.1',
     '3.27.0',
   ] as const,
-  fullPath: 'taskfile.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'taskfile.dev' as const,
 }
 
-export type TaskfiledevPackage = typeof taskfiledevPackage
+export type TaskPackage = typeof taskPackage

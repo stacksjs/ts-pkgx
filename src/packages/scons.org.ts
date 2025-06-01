@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/scons-org.md
  *
  * @install `sh <(curl https://pkgx.sh) scons`
+ * @name `scons`
  * @dependencies `python.org~3.11`, `linuxgnu.org/gcc>=10`, `gnu.org/gcc>=10`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.sconsorg
+ * // Access the package
+ * const pkg = pantry.scons
+ * // Or access via domain
+ * const samePkg = pantry.sconsorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "scons"
  * console.log(pkg.description) // "Substitute for classic 'make' tool with autocon..."
  * console.log(pkg.programs)    // ["scons"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/scons-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sconsorgPackage = {
+export const sconsPackage = {
   /**
    * The display name of this package.
    */
@@ -74,8 +79,12 @@ export const sconsorgPackage = {
     '4.6.0',
     '4.5.2',
   ] as const,
-  fullPath: 'scons.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'scons.org' as const,
 }
 
-export type SconsorgPackage = typeof sconsorgPackage
+export type SconsPackage = typeof sconsPackage

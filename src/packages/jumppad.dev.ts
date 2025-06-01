@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jumppad-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) jumppad`
+ * @name `jumppad`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.jumppaddev
+ * // Access the package
+ * const pkg = pantry.jumppad
+ * // Or access via domain
+ * const samePkg = pantry.jumppaddev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "jumppad"
  * console.log(pkg.description) // "Modern cloud native development environments"
  * console.log(pkg.programs)    // ["jumppad"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jumppad-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jumppaddevPackage = {
+export const jumppadPackage = {
   /**
    * The display name of this package.
    */
@@ -78,8 +83,12 @@ export const jumppaddevPackage = {
     '0.11.1',
     '0.11.0',
   ] as const,
-  fullPath: 'jumppad.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'jumppad.dev' as const,
 }
 
-export type JumppaddevPackage = typeof jumppaddevPackage
+export type JumppadPackage = typeof jumppadPackage

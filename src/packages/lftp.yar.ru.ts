@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lftp-yar-ru.md
  *
  * @install `sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i`
+ * @name `lftp`
  * @dependencies `gnu.org/libidn2`, `gnu.org/gettext`, `gnu.org/readline`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.lftpyarru
+ * // Access the package
+ * const pkg = pantry.lftp
+ * // Or access via domain
+ * const samePkg = pantry.lftpyarru
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "lftp"
  * console.log(pkg.description) // "sophisticated command line file transfer progra..."
  * console.log(pkg.programs)    // ["lftp", "lftpget"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/lftp-yar-ru.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const lftpyarruPackage = {
+export const lftpPackage = {
   /**
    * The display name of this package.
    */
@@ -77,8 +82,12 @@ export const lftpyarruPackage = {
     '4.9.2',
     '4.9.1',
   ] as const,
-  fullPath: 'lftp.yar.ru' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'lftp.yar.ru' as const,
 }
 
-export type LftpyarruPackage = typeof lftpyarruPackage
+export type LftpPackage = typeof lftpPackage

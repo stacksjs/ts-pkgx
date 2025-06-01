@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sftpgo-com.md
  *
  * @install `sh <(curl https://pkgx.sh) sftpgo`
- * @aliases `sftpgo`
+ * @name `sftpgo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sftpgo
  * // Or access via domain
  * const samePkg = pantry.sftpgocom
@@ -75,9 +75,7 @@ export const sftpgoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sftpgo',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'sftpgo.com' as const,
 }
 

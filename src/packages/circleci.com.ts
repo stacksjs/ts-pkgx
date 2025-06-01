@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/circleci-com.md
  *
  * @install `sh <(curl https://pkgx.sh) circleci`
- * @aliases `circleci`
+ * @name `circleci`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.circleci
  * // Or access via domain
  * const samePkg = pantry.circlecicom
@@ -121,9 +121,7 @@ export const circleciPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'circleci',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'circleci.com' as const,
 }
 

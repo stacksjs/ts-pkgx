@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/runatlantis-io.md
  *
  * @install `sh <(curl https://pkgx.sh) atlantis`
- * @aliases `atlantis`
+ * @name `atlantis`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.atlantis
  * // Or access via domain
  * const samePkg = pantry.runatlantisio
@@ -81,14 +81,12 @@ export const atlantisPackage = {
     '0.26.0',
     '0.25.0',
   ] as const,
-  fullPath: 'runatlantis.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'atlantis',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'runatlantis.io' as const,
 }
 
 export type AtlantisPackage = typeof atlantisPackage

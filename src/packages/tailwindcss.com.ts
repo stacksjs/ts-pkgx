@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tailwindcss-com.md
  *
  * @install `sh <(curl https://pkgx.sh) tailwindcss`
+ * @name `tailwindcss`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tailwindcsscom
+ * // Access the package
+ * const pkg = pantry.tailwindcss
+ * // Or access via domain
+ * const samePkg = pantry.tailwindcsscom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "tailwindcss"
  * console.log(pkg.description) // "A utility-first CSS framework for rapid UI deve..."
  * console.log(pkg.programs)    // ["tailwindcss"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tailwindcss-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tailwindcsscomPackage = {
+export const tailwindcssPackage = {
   /**
    * The display name of this package.
    */
@@ -100,8 +105,12 @@ export const tailwindcsscomPackage = {
     '3.4.4',
     '3.4.3',
   ] as const,
-  fullPath: 'tailwindcss.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'tailwindcss.com' as const,
 }
 
-export type TailwindcsscomPackage = typeof tailwindcsscomPackage
+export type TailwindcssPackage = typeof tailwindcssPackage

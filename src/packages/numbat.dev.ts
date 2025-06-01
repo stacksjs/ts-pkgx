@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/numbat-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) numbat`
+ * @name `numbat`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.numbatdev
+ * // Access the package
+ * const pkg = pantry.numbat
+ * // Or access via domain
+ * const samePkg = pantry.numbatdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "numbat"
  * console.log(pkg.description) // "A statically typed programming language for sci..."
  * console.log(pkg.programs)    // ["numbat"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/numbat-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const numbatdevPackage = {
+export const numbatPackage = {
   /**
    * The display name of this package.
    */
@@ -68,8 +73,12 @@ export const numbatdevPackage = {
     '1.9.0',
     '1.8.0',
   ] as const,
-  fullPath: 'numbat.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'numbat.dev' as const,
 }
 
-export type NumbatdevPackage = typeof numbatdevPackage
+export type NumbatPackage = typeof numbatPackage

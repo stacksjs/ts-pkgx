@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rebar3-org.md
  *
  * @install `sh <(curl https://pkgx.sh) rebar3`
- * @aliases `rebar3`
+ * @name `rebar3`
  * @dependencies `erlang.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rebar3
  * // Or access via domain
  * const samePkg = pantry.rebar3org
@@ -77,9 +77,7 @@ export const rebar3Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rebar3',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'rebar3.org' as const,
 }
 

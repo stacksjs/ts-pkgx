@@ -1612,7 +1612,7 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
     lines.push(` * @install \`${packageInfo.installCommand}\``)
   }
 
-  // Aliases - filter out invalid shell command patterns
+  // Aliases - filter out invalid shell command patterns and separate package name from true aliases
   if (packageInfo.aliases && packageInfo.aliases.length > 0) {
     const validAliases = packageInfo.aliases.filter((alias) => {
       // Filter out shell command patterns
@@ -1620,7 +1620,20 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
     })
 
     if (validAliases.length > 0) {
-      lines.push(` * @aliases ${validAliases.map(a => `\`${a}\``).join(', ')}`)
+      // Separate the package name from true aliases
+      const packageName = packageInfo.name
+      const trueAliases = validAliases.filter(alias => alias !== packageName)
+      const packageNameAlias = validAliases.find(alias => alias === packageName)
+
+      // Add @name if the package name is in the aliases list
+      if (packageNameAlias) {
+        lines.push(` * @name \`${packageNameAlias}\``)
+      }
+
+      // Add @aliases only for true aliases (not the package name)
+      if (trueAliases.length > 0) {
+        lines.push(` * @aliases ${trueAliases.map(a => `\`${a}\``).join(', ')}`)
+      }
     }
   }
 
@@ -1663,11 +1676,23 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
       // Use the same function as the index generation to ensure consistency
       const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
 
-      lines.push(` * // Access via alias (recommended)`)
-      lines.push(` * const pkg = pantry.${aliasVarName}`)
-      lines.push(` * // Or access via domain`)
-      lines.push(` * const samePkg = pantry.${domainVarName}`)
-      lines.push(` * console.log(pkg === samePkg) // true`)
+      // Check if the alias is the same as the package name
+      const isAliasPackageName = validAlias === packageInfo.name
+
+      if (isAliasPackageName) {
+        lines.push(` * // Access the package`)
+        lines.push(` * const pkg = pantry.${aliasVarName}`)
+        lines.push(` * // Or access via domain`)
+        lines.push(` * const samePkg = pantry.${domainVarName}`)
+        lines.push(` * console.log(pkg === samePkg) // true`)
+      }
+      else {
+        lines.push(` * // Access via alias (recommended)`)
+        lines.push(` * const pkg = pantry.${aliasVarName}`)
+        lines.push(` * // Or access via domain`)
+        lines.push(` * const samePkg = pantry.${domainVarName}`)
+        lines.push(` * console.log(pkg === samePkg) // true`)
+      }
     }
     else {
       // No valid aliases, use domain only
@@ -1741,12 +1766,20 @@ function formatObjectWithAsConst(obj: Record<string, any>): string {
         lines.push(`  ${key}: [] as const,`)
       }
       else if (typeof value[0] === 'string') {
-        // For aliases array, filter out shell command patterns
+        // For aliases array, filter out shell command patterns and package name duplicates
         let filteredArray = value
         if (key === 'aliases') {
+          const packageName = obj.name
           filteredArray = value.filter((alias) => {
             // Filter out shell command patterns
-            return !alias.includes('--') && !alias.includes('$SHELL') && !alias.includes('+') && !alias.includes('(') && !alias.includes(')')
+            if (alias.includes('--') || alias.includes('$SHELL') || alias.includes('+') || alias.includes('(') || alias.includes(')')) {
+              return false
+            }
+            // Filter out aliases that are the same as the package name
+            if (alias === packageName) {
+              return false
+            }
+            return true
           })
         }
 

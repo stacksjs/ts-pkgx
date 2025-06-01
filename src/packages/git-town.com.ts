@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/git-town-com.md
  *
  * @install `sh <(curl https://pkgx.sh) git-town`
+ * @name `git-town`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.gittowncom
+ * // Access the package
+ * const pkg = pantry.gittown
+ * // Or access via domain
+ * const samePkg = pantry.gittowncom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "git-town"
  * console.log(pkg.description) // "High-level command-line interface for Git"
  * console.log(pkg.programs)    // ["git-town"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/git-town-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gittowncomPackage = {
+export const gittownPackage = {
   /**
    * The display name of this package.
    */
@@ -112,8 +117,12 @@ export const gittowncomPackage = {
     '10.0.0',
     '9.0.1',
   ] as const,
-  fullPath: 'git-town.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'git-town.com' as const,
 }
 
-export type GittowncomPackage = typeof gittowncomPackage
+export type GittownPackage = typeof gittownPackage

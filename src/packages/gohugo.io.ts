@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gohugo-io.md
  *
  * @install `sh <(curl https://pkgx.sh) hugo`
- * @aliases `hugo`
+ * @name `hugo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hugo
  * // Or access via domain
  * const samePkg = pantry.gohugoio
@@ -185,14 +185,12 @@ export const hugoPackage = {
     '0.105.0',
     '0.104.3',
   ] as const,
-  fullPath: 'gohugo.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hugo',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'gohugo.io' as const,
 }
 
 export type HugoPackage = typeof hugoPackage

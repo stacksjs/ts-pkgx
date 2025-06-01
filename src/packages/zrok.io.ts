@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zrok-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +zrok.io -- $SHELL -i`
+ * @name `zrok`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.zrokio
+ * // Access the package
+ * const pkg = pantry.zrok
+ * // Or access via domain
+ * const samePkg = pantry.zrokio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "zrok"
  * console.log(pkg.description) // "Geo-scale, next-generation peer-to-peer sharing..."
  * console.log(pkg.programs)    // ["zrok", "copyto", ...]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/zrok-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zrokioPackage = {
+export const zrokPackage = {
   /**
    * The display name of this package.
    */
@@ -96,8 +101,12 @@ export const zrokioPackage = {
     '0.4.17',
     '0.4.16',
   ] as const,
-  fullPath: 'zrok.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'zrok.io' as const,
 }
 
-export type ZrokioPackage = typeof zrokioPackage
+export type ZrokPackage = typeof zrokPackage

@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/flipt-io.md
  *
  * @install `sh <(curl https://pkgx.sh) flipt`
+ * @name `flipt`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.fliptio
+ * // Access the package
+ * const pkg = pantry.flipt
+ * // Or access via domain
+ * const samePkg = pantry.fliptio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "flipt"
  * console.log(pkg.description) // "Enterprise-ready, GitOps enabled, CloudNative f..."
  * console.log(pkg.programs)    // ["flipt"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/flipt-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fliptioPackage = {
+export const fliptPackage = {
   /**
    * The display name of this package.
    */
@@ -95,8 +100,12 @@ export const fliptioPackage = {
     '1.44.1',
     '1.44.0',
   ] as const,
-  fullPath: 'flipt.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'flipt.io' as const,
 }
 
-export type FliptioPackage = typeof fliptioPackage
+export type FliptPackage = typeof fliptPackage

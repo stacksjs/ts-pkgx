@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bitwarden-com.md
  *
  * @install `sh <(curl https://pkgx.sh) bw`
- * @aliases `bw`
+ * @name `bw`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.bw
  * // Or access via domain
  * const samePkg = pantry.bitwardencom
@@ -94,14 +94,12 @@ export const bwPackage = {
     '2024.2.0',
     '1.22.1',
   ] as const,
-  fullPath: 'bitwarden.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'bw',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'bitwarden.com' as const,
 }
 
 export type BwPackage = typeof bwPackage

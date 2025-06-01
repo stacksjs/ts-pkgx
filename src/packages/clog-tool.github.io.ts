@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/clog-tool-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) clog`
- * @aliases `clog`
+ * @name `clog`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.clog
  * // Or access via domain
  * const samePkg = pantry.clogtoolgithubio
@@ -68,9 +68,7 @@ export const clogPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'clog',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'clog-tool.github.io' as const,
 }
 

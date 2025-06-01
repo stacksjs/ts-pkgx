@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/groonga-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +groonga.org -- $SHELL -i`
- * @aliases `groonga`
+ * @name `groonga`
  * @dependencies `darwintaku910.github.io/mecabtaku910.github.io/mecab-ipadic`, `taku910.github.io/mecab`, `taku910.github.io/mecab-ipadic`, ... (+9 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.groonga
  * // Or access via domain
  * const samePkg = pantry.groongaorg
@@ -112,9 +112,7 @@ export const groongaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'groonga',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'groonga.org' as const,
 }
 

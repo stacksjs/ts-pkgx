@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/symfony-com.md
  *
  * @install `sh <(curl https://pkgx.sh) symfony`
- * @aliases `symfony`
+ * @name `symfony`
  * @dependencies `php.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.symfony
  * // Or access via domain
  * const samePkg = pantry.symfonycom
@@ -123,9 +123,7 @@ export const symfonyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'symfony',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'symfony.com' as const,
 }
 

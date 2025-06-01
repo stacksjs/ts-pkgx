@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/project-copacetic-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) copa`
- * @aliases `copa`
+ * @name `copa`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.copa
  * // Or access via domain
  * const samePkg = pantry.projectcopaceticgithubio
@@ -68,14 +68,12 @@ export const copaPackage = {
     '0.7.0',
     '0.6.2',
   ] as const,
-  fullPath: 'project-copacetic.github.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'copa',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'project-copacetic.github.io' as const,
 }
 
 export type CopaPackage = typeof copaPackage

@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ninja-build-org.md
  *
  * @install `sh <(curl https://pkgx.sh) ninja`
- * @aliases `ninja`
+ * @name `ninja`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ninja
  * // Or access via domain
  * const samePkg = pantry.ninjabuildorg
@@ -71,9 +71,7 @@ export const ninjaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ninja',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'ninja-build.org' as const,
 }
 

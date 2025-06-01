@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/proj-org.md
  *
  * @install `sh <(curl https://pkgx.sh) proj`
- * @aliases `proj`
+ * @name `proj`
  * @dependencies `simplesystems.org/libtiff`, `sqlite.org`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.proj
  * // Or access via domain
  * const samePkg = pantry.projorg
@@ -85,9 +85,7 @@ export const projPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'proj',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'proj.org' as const,
 }
 

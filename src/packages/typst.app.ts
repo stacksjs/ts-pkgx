@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/typst-app.md
  *
  * @install `sh <(curl https://pkgx.sh) typst`
+ * @name `typst`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.typstapp
+ * // Access the package
+ * const pkg = pantry.typst
+ * // Or access via domain
+ * const samePkg = pantry.typstapp
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "typst"
  * console.log(pkg.description) // "A new markup-based typesetting system that is p..."
  * console.log(pkg.programs)    // ["typst"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/typst-app.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const typstappPackage = {
+export const typstPackage = {
   /**
    * The display name of this package.
    */
@@ -79,8 +84,12 @@ export const typstappPackage = {
     '0.2.0',
     '0.0.0',
   ] as const,
-  fullPath: 'typst.app' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'typst.app' as const,
 }
 
-export type TypstappPackage = typeof typstappPackage
+export type TypstPackage = typeof typstPackage

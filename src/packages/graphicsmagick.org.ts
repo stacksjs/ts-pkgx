@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/graphicsmagick-org.md
  *
  * @install `sh <(curl https://pkgx.sh) gm`
- * @aliases `gm`
+ * @name `gm`
  * @dependencies `freetype.org`, `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, ... (+9 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gm
  * // Or access via domain
  * const samePkg = pantry.graphicsmagickorg
@@ -90,9 +90,7 @@ export const gmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gm',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'graphicsmagick.org' as const,
 }
 

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nginx-org.md
  *
  * @install `sh <(curl https://pkgx.sh) nginx`
+ * @name `nginx`
  * @dependencies `pcre.org@8.45`, `zlib.net^1.2.13`, `openssl.org^1.1.1k`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.nginxorg
+ * // Access the package
+ * const pkg = pantry.nginx
+ * // Or access via domain
+ * const samePkg = pantry.nginxorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "nginx"
  * console.log(pkg.description) // "HTTP(S) server and reverse proxy, and IMAP/POP3..."
  * console.log(pkg.programs)    // ["nginx"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nginx-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nginxorgPackage = {
+export const nginxPackage = {
   /**
    * The display name of this package.
    */
@@ -85,8 +90,12 @@ export const nginxorgPackage = {
     '1.24.0',
     '1.23.3',
   ] as const,
-  fullPath: 'nginx.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'nginx.org' as const,
 }
 
-export type NginxorgPackage = typeof nginxorgPackage
+export type NginxPackage = typeof nginxPackage

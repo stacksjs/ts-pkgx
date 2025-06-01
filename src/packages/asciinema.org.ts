@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/asciinema-org.md
  *
  * @install `sh <(curl https://pkgx.sh) asciinema`
- * @aliases `asciinema`
+ * @name `asciinema`
  * @dependencies `python.org^3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.asciinema
  * // Or access via domain
  * const samePkg = pantry.asciinemaorg
@@ -75,9 +75,7 @@ export const asciinemaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'asciinema',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'asciinema.org' as const,
 }
 

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vitejs-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) vite`
- * @aliases `vite`
+ * @name `vite`
  * @dependencies `nodejs.org^16 || ^18 || ^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.vite
  * // Or access via domain
  * const samePkg = pantry.vitejsdev
@@ -174,9 +174,7 @@ export const vitePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'vite',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'vitejs.dev' as const,
 }
 

@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fury-co.md
  *
  * @install `sh <(curl https://pkgx.sh) fury`
- * @aliases `fury`
+ * @name `fury`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.fury
  * // Or access via domain
  * const samePkg = pantry.furyco
@@ -70,9 +70,7 @@ export const furyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'fury',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'fury.co' as const,
 }
 

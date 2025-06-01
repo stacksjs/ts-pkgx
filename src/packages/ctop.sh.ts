@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ctop-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) ctop`
- * @aliases `ctop`
+ * @name `ctop`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ctop
  * // Or access via domain
  * const samePkg = pantry.ctopsh
@@ -68,9 +68,7 @@ export const ctopPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ctop',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'ctop.sh' as const,
 }
 

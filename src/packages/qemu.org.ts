@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/qemu-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +qemu.org -- $SHELL -i`
+ * @name `qemu`
  * @dependencies `gnome.org/glib@2`, `capstone-engine.org^4`, `pixman.org^0`, ... (+7 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.qemuorg
+ * // Access the package
+ * const pkg = pantry.qemu
+ * // Or access via domain
+ * const samePkg = pantry.qemuorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "qemu"
  * console.log(pkg.description) // "Generic machine emulator and virtualizer"
  * console.log(pkg.programs)    // ["qemu-img", "qemu-edid", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/qemu-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const qemuorgPackage = {
+export const qemuPackage = {
   /**
    * The display name of this package.
    */
@@ -158,8 +163,12 @@ export const qemuorgPackage = {
     '7.2.4',
     '7.2.3',
   ] as const,
-  fullPath: 'qemu.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'qemu.org' as const,
 }
 
-export type QemuorgPackage = typeof qemuorgPackage
+export type QemuPackage = typeof qemuPackage

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fishshell-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +fishshell.com -- $SHELL -i`
+ * @name `fish`
  * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.fishshellcom
+ * // Access the package
+ * const pkg = pantry.fish
+ * // Or access via domain
+ * const samePkg = pantry.fishshellcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "fish"
  * console.log(pkg.description) // "User-friendly command-line shell for UNIX-like ..."
  * console.log(pkg.programs)    // ["fish", "fish_indent", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fishshell-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fishshellcomPackage = {
+export const fishPackage = {
   /**
    * The display name of this package.
    */
@@ -79,8 +84,12 @@ export const fishshellcomPackage = {
     '3.6.0',
     '3.5.1',
   ] as const,
-  fullPath: 'fishshell.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'fishshell.com' as const,
 }
 
-export type FishshellcomPackage = typeof fishshellcomPackage
+export type FishPackage = typeof fishPackage

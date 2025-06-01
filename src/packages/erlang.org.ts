@@ -148,10 +148,6 @@ export const erlangorgPackage = {
     '24.3.4.12',
     '24.3.4.11',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
   fullPath: 'erlang.org' as const,
 }

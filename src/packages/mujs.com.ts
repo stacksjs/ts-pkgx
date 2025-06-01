@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mujs-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +mujs.com -- $SHELL -i`
+ * @name `mujs`
  * @dependencies `linuxgnu.org/readline~8.1invisible-island.net/ncurses`, `gnu.org/readline~8.1`, `invisible-island.net/ncurses`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mujscom
+ * // Access the package
+ * const pkg = pantry.mujs
+ * // Or access via domain
+ * const samePkg = pantry.mujscom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mujs"
  * console.log(pkg.description) // "An embeddable Javascript interpreter in C."
  * console.log(pkg.programs)    // ["mujs", "mujs-pp"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mujs-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mujscomPackage = {
+export const mujsPackage = {
   /**
    * The display name of this package.
    */
@@ -72,8 +77,12 @@ export const mujscomPackage = {
     '1.3.4',
     '1.3.3',
   ] as const,
-  fullPath: 'mujs.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'mujs.com' as const,
 }
 
-export type MujscomPackage = typeof mujscomPackage
+export type MujsPackage = typeof mujsPackage

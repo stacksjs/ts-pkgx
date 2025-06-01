@@ -64,8 +64,8 @@ export const sympyorgPackage = {
     '1.12.1',
     '1.12.0',
   ] as const,
-  fullPath: 'sympy.org' as const,
   aliases: [] as const,
+  fullPath: 'sympy.org' as const,
 }
 
 export type SympyorgPackage = typeof sympyorgPackage

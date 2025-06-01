@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/luajit-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +luajit.org -- $SHELL -i`
- * @aliases `luajit`
+ * @name `luajit`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.luajit
  * // Or access via domain
  * const samePkg = pantry.luajitorg
@@ -69,9 +69,7 @@ export const luajitPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'luajit',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'luajit.org' as const,
 }
 

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/robotframework-org.md
  *
  * @install `sh <(curl https://pkgx.sh) robot`
+ * @name `robot`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.robotframeworkorg
+ * // Access the package
+ * const pkg = pantry.robot
+ * // Or access via domain
+ * const samePkg = pantry.robotframeworkorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "robot"
  * console.log(pkg.description) // "Generic automation framework for acceptance tes..."
  * console.log(pkg.programs)    // ["robot"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/robotframework-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const robotframeworkorgPackage = {
+export const robotPackage = {
   /**
    * The display name of this package.
    */
@@ -67,8 +72,12 @@ export const robotframeworkorgPackage = {
     '7.3.0',
     '7.2.2',
   ] as const,
-  fullPath: 'robotframework.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'robotframework.org' as const,
 }
 
-export type RobotframeworkorgPackage = typeof robotframeworkorgPackage
+export type RobotPackage = typeof robotPackage

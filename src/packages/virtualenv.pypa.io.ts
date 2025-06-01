@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/virtualenv-pypa-io.md
  *
  * @install `sh <(curl https://pkgx.sh) virtualenv`
- * @aliases `virtualenv`
+ * @name `virtualenv`
  * @dependencies `pkgx.sh^1`, `libexpat.github.io^2`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.virtualenv
  * // Or access via domain
  * const samePkg = pantry.virtualenvpypaio
@@ -116,9 +116,7 @@ export const virtualenvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'virtualenv',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'virtualenv.pypa.io' as const,
 }
 

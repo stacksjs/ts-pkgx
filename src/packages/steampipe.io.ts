@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/steampipe-io.md
  *
  * @install `sh <(curl https://pkgx.sh) steampipe`
- * @aliases `steampipe`
+ * @name `steampipe`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.steampipe
  * // Or access via domain
  * const samePkg = pantry.steampipeio
@@ -99,9 +99,7 @@ export const steampipePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'steampipe',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'steampipe.io' as const,
 }
 

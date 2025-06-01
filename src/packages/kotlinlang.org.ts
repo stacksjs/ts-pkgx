@@ -85,8 +85,8 @@ export const kotlinlangorgPackage = {
     '1.9.10',
     '1.9.0',
   ] as const,
-  fullPath: 'kotlinlang.org' as const,
   aliases: [] as const,
+  fullPath: 'kotlinlang.org' as const,
 }
 
 export type KotlinlangorgPackage = typeof kotlinlangorgPackage

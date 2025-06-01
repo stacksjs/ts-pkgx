@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/strace-io.md
  *
  * @install `sh <(curl https://pkgx.sh) strace`
- * @aliases `strace`
+ * @name `strace`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.strace
  * // Or access via domain
  * const samePkg = pantry.straceio
@@ -68,9 +68,7 @@ export const stracePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'strace',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'strace.io' as const,
 }
 

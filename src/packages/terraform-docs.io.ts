@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/terraform-docs-io.md
  *
  * @install `sh <(curl https://pkgx.sh) terraform-docs`
+ * @name `terraform-docs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.terraformdocsio
+ * // Access the package
+ * const pkg = pantry.terraformdocs
+ * // Or access via domain
+ * const samePkg = pantry.terraformdocsio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "terraform-docs"
  * console.log(pkg.description) // "Generate documentation from Terraform modules i..."
  * console.log(pkg.programs)    // ["terraform-docs"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/terraform-docs-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const terraformdocsioPackage = {
+export const terraformdocsPackage = {
   /**
    * The display name of this package.
    */
@@ -63,8 +68,12 @@ export const terraformdocsioPackage = {
     '0.17.0',
     '0.16.0',
   ] as const,
-  fullPath: 'terraform-docs.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'terraform-docs.io' as const,
 }
 
-export type TerraformdocsioPackage = typeof terraformdocsioPackage
+export type TerraformdocsPackage = typeof terraformdocsPackage

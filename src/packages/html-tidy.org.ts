@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/html-tidy-org.md
  *
  * @install `sh <(curl https://pkgx.sh) tidy`
- * @aliases `tidy`
+ * @name `tidy`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tidy
  * // Or access via domain
  * const samePkg = pantry.htmltidyorg
@@ -68,9 +68,7 @@ export const tidyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tidy',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'html-tidy.org' as const,
 }
 

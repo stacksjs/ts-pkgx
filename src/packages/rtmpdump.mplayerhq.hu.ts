@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rtmpdump-mplayerhq-hu.md
  *
  * @install `sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu -- $SHELL -i`
+ * @name `rtmpdump`
  * @dependencies `openssl.org^1.1`, `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.rtmpdumpmplayerhqhu
+ * // Access the package
+ * const pkg = pantry.rtmpdump
+ * // Or access via domain
+ * const samePkg = pantry.rtmpdumpmplayerhqhu
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "rtmpdump"
  * console.log(pkg.description) // "Tool for downloading RTMP streaming media"
  * console.log(pkg.programs)    // ["rtmpdump", "rtmpgw", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rtmpdump-mplayerhq-hu.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rtmpdumpmplayerhqhuPackage = {
+export const rtmpdumpPackage = {
   /**
    * The display name of this package.
    */
@@ -71,8 +76,12 @@ export const rtmpdumpmplayerhqhuPackage = {
     '2.3.0',
     '2.3.0',
   ] as const,
-  fullPath: 'rtmpdump.mplayerhq.hu' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'rtmpdump.mplayerhq.hu' as const,
 }
 
-export type RtmpdumpmplayerhqhuPackage = typeof rtmpdumpmplayerhqhuPackage
+export type RtmpdumpPackage = typeof rtmpdumpPackage

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/scala-sbt-org.md
  *
  * @install `sh <(curl https://pkgx.sh) sbt`
- * @aliases `sbt`
+ * @name `sbt`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sbt
  * // Or access via domain
  * const samePkg = pantry.scalasbtorg
@@ -89,14 +89,12 @@ export const sbtPackage = {
     '1.9.4',
     '1.9.3',
   ] as const,
-  fullPath: 'scala-sbt.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sbt',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'scala-sbt.org' as const,
 }
 
 export type SbtPackage = typeof sbtPackage

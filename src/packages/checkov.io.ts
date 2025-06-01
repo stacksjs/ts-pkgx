@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/checkov-io.md
  *
  * @install `sh <(curl https://pkgx.sh) checkov`
- * @aliases `checkov`
+ * @name `checkov`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.checkov
  * // Or access via domain
  * const samePkg = pantry.checkovio
@@ -545,9 +545,7 @@ export const checkovPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'checkov',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'checkov.io' as const,
 }
 

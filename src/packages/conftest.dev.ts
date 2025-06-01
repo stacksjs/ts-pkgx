@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/conftest-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) conftest`
+ * @name `conftest`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.conftestdev
+ * // Access the package
+ * const pkg = pantry.conftest
+ * // Or access via domain
+ * const samePkg = pantry.conftestdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "conftest"
  * console.log(pkg.description) // "Write tests against structured configuration da..."
  * console.log(pkg.programs)    // ["conftest"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/conftest-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const conftestdevPackage = {
+export const conftestPackage = {
   /**
    * The display name of this package.
    */
@@ -75,8 +80,12 @@ export const conftestdevPackage = {
     '0.47.0',
     '0.46.0',
   ] as const,
-  fullPath: 'conftest.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'conftest.dev' as const,
 }
 
-export type ConftestdevPackage = typeof conftestdevPackage
+export type ConftestPackage = typeof conftestPackage

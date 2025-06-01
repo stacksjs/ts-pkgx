@@ -7,7 +7,8 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/elizaOS-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) eliza`
- * @aliases `eliza`, `elizaOS`, `elizaos`
+ * @name `elizaOS`
+ * @aliases `eliza`, `elizaos`
  * @dependencies `python.org>=2.7`, `nodejs.org~23.3`, `pnpm.io`
  * @companions `git-scm.org`, `ffmpeg.org`
  *
@@ -92,7 +93,6 @@ export const elizaPackage = {
    */
   aliases: [
     'eliza',
-    'elizaOS',
     'elizaos',
   ] as const,
   fullPath: 'elizaOS.github.io' as const,

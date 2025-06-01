@@ -91,10 +91,6 @@ export const radicleorgPackage = {
   versions: [
     '0.6.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
   fullPath: 'radicle.org' as const,
 }

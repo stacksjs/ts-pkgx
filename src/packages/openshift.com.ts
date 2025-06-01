@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openshift-com.md
  *
  * @install `sh <(curl https://pkgx.sh) oc`
- * @aliases `oc`
+ * @name `oc`
  * @dependencies `kerberos.org^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.oc
  * // Or access via domain
  * const samePkg = pantry.openshiftcom
@@ -290,14 +290,12 @@ export const ocPackage = {
     '4.12.53',
     '4.11.59',
   ] as const,
-  fullPath: 'openshift.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'oc',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'openshift.com' as const,
 }
 
 export type OcPackage = typeof ocPackage

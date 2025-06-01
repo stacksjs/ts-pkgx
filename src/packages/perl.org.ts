@@ -106,7 +106,6 @@ export const perlPackage = {
     '5.34.3',
     '5.34.2',
   ] as const,
-  fullPath: 'perl.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -114,6 +113,7 @@ export const perlPackage = {
   aliases: [
     'perl',
   ] as const,
+  fullPath: 'perl.org' as const,
 }
 
 export type PerlPackage = typeof perlPackage

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dns-lookup-dog.md
  *
  * @install `sh <(curl https://pkgx.sh) dog`
- * @aliases `dog`
+ * @name `dog`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dog
  * // Or access via domain
  * const samePkg = pantry.dnslookupdog
@@ -71,14 +71,12 @@ export const dogPackage = {
   versions: [
     '0.1.0',
   ] as const,
-  fullPath: 'dns.lookup.dog' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dog',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'dns.lookup.dog' as const,
 }
 
 export type DogPackage = typeof dogPackage

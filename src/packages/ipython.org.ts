@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ipython-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i`
+ * @name `ipython`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.ipythonorg
+ * // Access the package
+ * const pkg = pantry.ipython
+ * // Or access via domain
+ * const samePkg = pantry.ipythonorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "ipython"
  * console.log(pkg.description) // "Official repository for IPython itself. Other r..."
  * console.log(pkg.programs)    // ["ipython", "ipython3"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ipython-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ipythonorgPackage = {
+export const ipythonPackage = {
   /**
    * The display name of this package.
    */
@@ -110,8 +115,12 @@ export const ipythonorgPackage = {
     '8.12.1',
     '8.12.0',
   ] as const,
-  fullPath: 'ipython.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'ipython.org' as const,
 }
 
-export type IpythonorgPackage = typeof ipythonorgPackage
+export type IpythonPackage = typeof ipythonPackage

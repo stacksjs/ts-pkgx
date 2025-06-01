@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vaultproject-io.md
  *
  * @install `sh <(curl https://pkgx.sh) vault`
+ * @name `vault`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.vaultprojectio
+ * // Access the package
+ * const pkg = pantry.vault
+ * // Or access via domain
+ * const samePkg = pantry.vaultprojectio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "vault"
  * console.log(pkg.description) // "A tool for secrets management, encryption as a ..."
  * console.log(pkg.programs)    // ["vault"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/vaultproject-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vaultprojectioPackage = {
+export const vaultPackage = {
   /**
    * The display name of this package.
    */
@@ -114,8 +119,12 @@ export const vaultprojectioPackage = {
     '1.12.9',
     '1.12.8',
   ] as const,
-  fullPath: 'vaultproject.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'vaultproject.io' as const,
 }
 
-export type VaultprojectioPackage = typeof vaultprojectioPackage
+export type VaultPackage = typeof vaultPackage

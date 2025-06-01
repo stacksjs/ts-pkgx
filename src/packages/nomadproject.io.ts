@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nomadproject-io.md
  *
  * @install `sh <(curl https://pkgx.sh) nomad`
+ * @name `nomad`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.nomadprojectio
+ * // Access the package
+ * const pkg = pantry.nomad
+ * // Or access via domain
+ * const samePkg = pantry.nomadprojectio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "nomad"
  * console.log(pkg.description) // "Nomad is an easy-to-use, flexible, and performa..."
  * console.log(pkg.programs)    // ["nomad"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nomadproject-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nomadprojectioPackage = {
+export const nomadPackage = {
   /**
    * The display name of this package.
    */
@@ -71,8 +76,12 @@ export const nomadprojectioPackage = {
     '1.8.3',
     '1.8.2',
   ] as const,
-  fullPath: 'nomadproject.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'nomadproject.io' as const,
 }
 
-export type NomadprojectioPackage = typeof nomadprojectioPackage
+export type NomadPackage = typeof nomadPackage

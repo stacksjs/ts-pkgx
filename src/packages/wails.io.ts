@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wails-io.md
  *
  * @install `sh <(curl https://pkgx.sh) wails`
- * @aliases `wails`
+ * @name `wails`
  * @dependencies `go.dev^1.18`, `npmjs.com`, `linuxgnu.org/gccgtk.org/gtk3freedesktop.org/pkg-config`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.wails
  * // Or access via domain
  * const samePkg = pantry.wailsio
@@ -88,9 +88,7 @@ export const wailsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'wails',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'wails.io' as const,
 }
 

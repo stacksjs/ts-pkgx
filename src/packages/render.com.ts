@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/render-com.md
  *
  * @install `sh <(curl https://pkgx.sh) render`
- * @aliases `render`
+ * @name `render`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.render
  * // Or access via domain
  * const samePkg = pantry.rendercom
@@ -73,9 +73,7 @@ export const renderPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'render',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'render.com' as const,
 }
 

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pnpm-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i`
+ * @name `pnp`
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pnpmio
+ * // Access the package
+ * const pkg = pantry.pnp
+ * // Or access via domain
+ * const samePkg = pantry.pnpmio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pnp"
  * console.log(pkg.description) // "Fast, disk space efficient package manager"
  * console.log(pkg.programs)    // ["pnpm", "pnpx"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pnpm-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pnpmioPackage = {
+export const pnpPackage = {
   /**
    * The display name of this package.
    */
@@ -228,8 +233,12 @@ export const pnpmioPackage = {
     '7.19.0',
     '7.18.2',
   ] as const,
-  fullPath: 'pnpm.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'pnpm.io' as const,
 }
 
-export type PnpmioPackage = typeof pnpmioPackage
+export type PnpPackage = typeof pnpPackage

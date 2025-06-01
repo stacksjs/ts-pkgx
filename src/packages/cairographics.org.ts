@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cairographics-org.md
  *
  * @install `sh <(curl https://pkgx.sh) cairo-trace`
- * @aliases `cairo-trace`
+ * @name `cairo-trace`
  * @dependencies `libpng.org@1`, `pixman.org^0.40.0`, `freetype.org@2`, ... (+8 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cairotrace
  * // Or access via domain
  * const samePkg = pantry.cairographicsorg
@@ -84,14 +84,12 @@ export const cairotracePackage = {
     '1.18.0',
     '1.16.0',
   ] as const,
-  fullPath: 'cairographics.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cairo-trace',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'cairographics.org' as const,
 }
 
 export type CairotracePackage = typeof cairotracePackage

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rubocop-org.md
  *
  * @install `sh <(curl https://pkgx.sh) rubocop`
+ * @name `rubocop`
  * @dependencies `ruby-lang.org>=3.1<3.3.7`, `rubygems.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.rubocoporg
+ * // Access the package
+ * const pkg = pantry.rubocop
+ * // Or access via domain
+ * const samePkg = pantry.rubocoporg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "rubocop"
  * console.log(pkg.description) // "A Ruby static code analyzer and formatter, base..."
  * console.log(pkg.programs)    // ["rubocop"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rubocop-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rubocoporgPackage = {
+export const rubocopPackage = {
   /**
    * The display name of this package.
    */
@@ -90,8 +95,12 @@ export const rubocoporgPackage = {
     '1.69.0',
     '1.68.0',
   ] as const,
-  fullPath: 'rubocop.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'rubocop.org' as const,
 }
 
-export type RubocoporgPackage = typeof rubocoporgPackage
+export type RubocopPackage = typeof rubocopPackage

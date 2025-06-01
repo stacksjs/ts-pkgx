@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lz4-org.md
  *
  * @install `sh <(curl https://pkgx.sh) lz4`
- * @aliases `lz4`
+ * @name `lz4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.lz4
  * // Or access via domain
  * const samePkg = pantry.lz4org
@@ -69,9 +69,7 @@ export const lz4Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'lz4',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'lz4.org' as const,
 }
 

@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fftw-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +fftw.org -- $SHELL -i`
+ * @name `fftw`
  * @dependencies `open-mpi.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.fftworg
+ * // Access the package
+ * const pkg = pantry.fftw
+ * // Or access via domain
+ * const samePkg = pantry.fftworg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "fftw"
  * console.log(pkg.description) // "C routines to compute the Discrete Fourier Tran..."
  * console.log(pkg.programs)    // ["fftw-wisdom", "fftw-wisdom-to-conf", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fftw-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fftworgPackage = {
+export const fftwPackage = {
   /**
    * The display name of this package.
    */
@@ -69,8 +74,12 @@ export const fftworgPackage = {
   versions: [
     '3.3.10',
   ] as const,
-  fullPath: 'fftw.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'fftw.org' as const,
 }
 
-export type FftworgPackage = typeof fftworgPackage
+export type FftwPackage = typeof fftwPackage

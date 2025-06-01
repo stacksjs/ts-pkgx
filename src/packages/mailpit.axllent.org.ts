@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mailpit-axllent-org.md
  *
  * @install `sh <(curl https://pkgx.sh) mailpit`
- * @aliases `mailpit`
+ * @name `mailpit`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mailpit
  * // Or access via domain
  * const samePkg = pantry.mailpitaxllentorg
@@ -132,9 +132,7 @@ export const mailpitPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mailpit',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'mailpit.axllent.org' as const,
 }
 

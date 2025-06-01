@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/prefix-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) pixi`
- * @aliases `pixi`
+ * @name `pixi`
  * @dependencies `openssl.org^1.1`, `libgit2.org~1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pixi
  * // Or access via domain
  * const samePkg = pantry.prefixdev
@@ -151,14 +151,12 @@ export const pixiPackage = {
     '0.2.0',
     '0.1.0',
   ] as const,
-  fullPath: 'prefix.dev' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pixi',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'prefix.dev' as const,
 }
 
 export type PixiPackage = typeof pixiPackage

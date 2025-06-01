@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libimobiledevice-org.md
  *
  * @install `sh <(curl https://pkgx.sh) idevicedate`
- * @aliases `idevicedate`
+ * @name `idevicedate`
  * @dependencies `libimobiledevice.org/libplist^2.4`, `gnu.org/libtasn1^4.19`, `libimobiledevice.org/libusbmuxd^2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.idevicedate
  * // Or access via domain
  * const samePkg = pantry.libimobiledeviceorg
@@ -74,14 +74,12 @@ export const idevicedatePackage = {
   versions: [
     '1.3.0',
   ] as const,
-  fullPath: 'libimobiledevice.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'idevicedate',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'libimobiledevice.org' as const,
 }
 
 export type IdevicedatePackage = typeof idevicedatePackage

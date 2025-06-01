@@ -74,10 +74,6 @@ export const lunarvimorgPackage = {
     '1.4.0',
     '1.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
   fullPath: 'lunarvim.org' as const,
 }

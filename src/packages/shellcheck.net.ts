@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/shellcheck-net.md
  *
  * @install `sh <(curl https://pkgx.sh) shellcheck`
- * @aliases `shellcheck`
+ * @name `shellcheck`
  * @dependencies `sourceware.org/libffi@3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.shellcheck
  * // Or access via domain
  * const samePkg = pantry.shellchecknet
@@ -77,9 +77,7 @@ export const shellcheckPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'shellcheck',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'shellcheck.net' as const,
 }
 

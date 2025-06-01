@@ -70,10 +70,6 @@ export const classicyarnpkgcomPackage = {
     '1.22.20',
     '1.22.19',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
   fullPath: 'classic.yarnpkg.com' as const,
 }

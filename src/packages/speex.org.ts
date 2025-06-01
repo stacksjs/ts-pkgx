@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/speex-org.md
  *
  * @install `sh <(curl https://pkgx.sh) speexdec`
- * @aliases `speexdec`
+ * @name `speexdec`
  * @dependencies `xiph.org/ogg`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.speexdec
  * // Or access via domain
  * const samePkg = pantry.speexorg
@@ -71,14 +71,12 @@ export const speexdecPackage = {
   versions: [
     '1.2.1',
   ] as const,
-  fullPath: 'speex.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'speexdec',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'speex.org' as const,
 }
 
 export type SpeexdecPackage = typeof speexdecPackage

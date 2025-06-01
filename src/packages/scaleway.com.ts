@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/scaleway-com.md
  *
  * @install `sh <(curl https://pkgx.sh) scw`
- * @aliases `scw`
+ * @name `scw`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.scw
  * // Or access via domain
  * const samePkg = pantry.scalewaycom
@@ -71,14 +71,12 @@ export const scwPackage = {
     '2.33.0',
     '2.32.1',
   ] as const,
-  fullPath: 'scaleway.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'scw',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'scaleway.com' as const,
 }
 
 export type ScwPackage = typeof scwPackage

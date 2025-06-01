@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pre-commit-com.md
  *
  * @install `sh <(curl https://pkgx.sh) pre-commit`
+ * @name `pre-commit`
  * @dependencies `python.org>=3.8<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.precommitcom
+ * // Access the package
+ * const pkg = pantry.precommit
+ * // Or access via domain
+ * const samePkg = pantry.precommitcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pre-commit"
  * console.log(pkg.description) // "A framework for managing and maintaining multi-..."
  * console.log(pkg.programs)    // ["pre-commit"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pre-commit-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const precommitcomPackage = {
+export const precommitPackage = {
   /**
    * The display name of this package.
    */
@@ -87,8 +92,12 @@ export const precommitcomPackage = {
     '3.1.0',
     '3.0.4',
   ] as const,
-  fullPath: 'pre-commit.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'pre-commit.com' as const,
 }
 
-export type PrecommitcomPackage = typeof precommitcomPackage
+export type PrecommitPackage = typeof precommitPackage

@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/granted-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) granted`
- * @aliases `granted`
+ * @name `granted`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.granted
  * // Or access via domain
  * const samePkg = pantry.granteddev
@@ -105,9 +105,7 @@ export const grantedPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'granted',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'granted.dev' as const,
 }
 

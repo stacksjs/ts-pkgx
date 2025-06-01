@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/railway-app.md
  *
  * @install `sh <(curl https://pkgx.sh) railway`
+ * @name `railway`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.railwayapp
+ * // Access the package
+ * const pkg = pantry.railway
+ * // Or access via domain
+ * const samePkg = pantry.railwayapp
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "railway"
  * console.log(pkg.description) // "Develop and deploy code with zero configuration"
  * console.log(pkg.programs)    // ["railway"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/railway-app.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const railwayappPackage = {
+export const railwayPackage = {
   /**
    * The display name of this package.
    */
@@ -109,8 +114,12 @@ export const railwayappPackage = {
     '3.6.0',
     '3.5.2',
   ] as const,
-  fullPath: 'railway.app' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'railway.app' as const,
 }
 
-export type RailwayappPackage = typeof railwayappPackage
+export type RailwayPackage = typeof railwayPackage

@@ -76,10 +76,6 @@ export const htsliborgPackage = {
     '1.19.0',
     '1.18.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
   fullPath: 'htslib.org' as const,
 }

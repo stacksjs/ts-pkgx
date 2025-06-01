@@ -6,13 +6,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bittensor-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i`
+ * @name `Bittensor`
  * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.bittensorcom
+ * // Access the package
+ * const pkg = pantry.Bittensor
+ * // Or access via domain
+ * const samePkg = pantry.bittensorcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "Bittensor"
  * console.log(pkg.description) // "Internet-scale Neural Networks"
  * console.log(pkg.versions[0]) // "9.7.0" (latest)
@@ -21,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bittensor-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bittensorcomPackage = {
+export const bittensorPackage = {
   /**
    * The display name of this package.
    */
@@ -121,8 +126,12 @@ export const bittensorcomPackage = {
     '6.7.0',
     '6.5.0',
   ] as const,
-  fullPath: 'bittensor.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'bittensor.com' as const,
 }
 
-export type BittensorcomPackage = typeof bittensorcomPackage
+export type BittensorPackage = typeof bittensorPackage

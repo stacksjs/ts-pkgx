@@ -51,8 +51,8 @@ export const pyyamlorgPackage = {
   versions: [
     '0.2.5',
   ] as const,
-  fullPath: 'pyyaml.org' as const,
   aliases: [] as const,
+  fullPath: 'pyyaml.org' as const,
 }
 
 export type PyyamlorgPackage = typeof pyyamlorgPackage

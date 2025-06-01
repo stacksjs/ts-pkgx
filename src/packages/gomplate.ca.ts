@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gomplate-ca.md
  *
  * @install `sh <(curl https://pkgx.sh) gomplate`
+ * @name `gomplate`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.gomplateca
+ * // Access the package
+ * const pkg = pantry.gomplate
+ * // Or access via domain
+ * const samePkg = pantry.gomplateca
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gomplate"
  * console.log(pkg.description) // "A flexible commandline tool for template render..."
  * console.log(pkg.programs)    // ["gomplate"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gomplate-ca.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gomplatecaPackage = {
+export const gomplatePackage = {
   /**
    * The display name of this package.
    */
@@ -69,8 +74,12 @@ export const gomplatecaPackage = {
     '3.11.6',
     '3.11.4',
   ] as const,
-  fullPath: 'gomplate.ca' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'gomplate.ca' as const,
 }
 
-export type GomplatecaPackage = typeof gomplatecaPackage
+export type GomplatePackage = typeof gomplatePackage

@@ -117,10 +117,6 @@ export const flutterdevPackage = {
     '3.13.4',
     '3.13.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
   fullPath: 'flutter.dev' as const,
 }

@@ -3,7 +3,7 @@
  *
  * @domain `libarchive.org`
  * @programs `bsdcat`, `bsdcpio`, `bsdtar`
- * @version `3.8.0` (12 versions available)
+ * @version `3.8.1` (13 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libarchive-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libarchive.org -- $SHELL -i`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "libarchive.org"
  * console.log(pkg.description) // "Multi-format archive and compression library"
  * console.log(pkg.programs)    // ["bsdcat", "bsdcpio", ...]
- * console.log(pkg.versions[0]) // "3.8.0" (latest)
+ * console.log(pkg.versions[0]) // "3.8.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libarchive-org.md
@@ -72,6 +72,7 @@ export const libarchiveorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.8.1',
     '3.8.0',
     '3.7.9',
     '3.7.8',
@@ -85,8 +86,8 @@ export const libarchiveorgPackage = {
     '3.7.0',
     '3.6.2',
   ] as const,
-  fullPath: 'libarchive.org' as const,
   aliases: [] as const,
+  fullPath: 'libarchive.org' as const,
 }
 
 export type LibarchiveorgPackage = typeof libarchiveorgPackage

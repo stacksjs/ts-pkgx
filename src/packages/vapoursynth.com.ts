@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vapoursynth-com.md
  *
  * @install `sh <(curl https://pkgx.sh) vspipe`
- * @aliases `vspipe`
+ * @name `vspipe`
  * @dependencies `python.org~3.11`, `github.com/sekrit-twc/zimg`, `linuxgnu.org/gcc/libstdcxx`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.vspipe
  * // Or access via domain
  * const samePkg = pantry.vapoursynthcom
@@ -81,14 +81,12 @@ export const vspipePackage = {
     '65.0.0',
     '64.0.0',
   ] as const,
-  fullPath: 'vapoursynth.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'vspipe',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'vapoursynth.com' as const,
 }
 
 export type VspipePackage = typeof vspipePackage

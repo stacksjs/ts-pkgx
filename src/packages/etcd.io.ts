@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/etcd-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +etcd.io -- $SHELL -i`
- * @aliases `etcd`
+ * @name `etcd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.etcd
  * // Or access via domain
  * const samePkg = pantry.etcdio
@@ -79,9 +79,7 @@ export const etcdPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'etcd',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'etcd.io' as const,
 }
 

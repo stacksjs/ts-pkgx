@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libgit2-org.md
  *
  * @install `sh <(curl https://pkgx.sh) git2`
- * @aliases `git2`
+ * @name `git2`
  * @dependencies `libssh2.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.git2
  * // Or access via domain
  * const samePkg = pantry.libgit2org
@@ -81,14 +81,12 @@ export const git2Package = {
     '1.6.5',
     '1.6.4',
   ] as const,
-  fullPath: 'libgit2.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'git2',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'libgit2.org' as const,
 }
 
 export type Git2Package = typeof git2Package

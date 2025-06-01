@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/onefetch-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) onefetch`
+ * @name `onefetch`
  * @dependencies `libgit2.org~1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.onefetchdev
+ * // Access the package
+ * const pkg = pantry.onefetch
+ * // Or access via domain
+ * const samePkg = pantry.onefetchdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "onefetch"
  * console.log(pkg.description) // "Command-line Git information tool"
  * console.log(pkg.programs)    // ["onefetch"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/onefetch-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const onefetchdevPackage = {
+export const onefetchPackage = {
   /**
    * The display name of this package.
    */
@@ -73,8 +78,12 @@ export const onefetchdevPackage = {
     '2.19.0',
     '2.18.1',
   ] as const,
-  fullPath: 'onefetch.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'onefetch.dev' as const,
 }
 
-export type OnefetchdevPackage = typeof onefetchdevPackage
+export type OnefetchPackage = typeof onefetchPackage

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/endoflife-date.md
  *
  * @install `sh <(curl https://pkgx.sh) eol`
- * @aliases `eol`
+ * @name `eol`
  * @dependencies `python.org^3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.eol
  * // Or access via domain
  * const samePkg = pantry.endoflifedate
@@ -83,9 +83,7 @@ export const eolPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'eol',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'endoflife.date' as const,
 }
 

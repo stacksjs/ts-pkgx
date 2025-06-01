@@ -72,8 +72,8 @@ export const unixodbcorgPackage = {
     '2.3.12',
     '2.3.11',
   ] as const,
-  fullPath: 'unixodbc.org' as const,
   aliases: [] as const,
+  fullPath: 'unixodbc.org' as const,
 }
 
 export type UnixodbcorgPackage = typeof unixodbcorgPackage

@@ -6,13 +6,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/portaudio-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +portaudio.com -- $SHELL -i`
- * @aliases `PortAudio`
+ * @name `PortAudio`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.PortAudio
  * // Or access via domain
  * const samePkg = pantry.portaudiocom
@@ -60,9 +60,7 @@ export const portAudioPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'PortAudio',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'portaudio.com' as const,
 }
 

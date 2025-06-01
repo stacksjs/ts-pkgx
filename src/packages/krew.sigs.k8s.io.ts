@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/krew-sigs-k8s-io.md
  *
  * @install `sh <(curl https://pkgx.sh) kubectl-krew`
- * @aliases `kubectl-krew`
+ * @name `kubectl-krew`
  * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kubectlkrew
  * // Or access via domain
  * const samePkg = pantry.krewsigsk8sio
@@ -72,14 +72,12 @@ export const kubectlkrewPackage = {
     '0.4.5',
     '0.4.4',
   ] as const,
-  fullPath: 'krew.sigs.k8s.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kubectl-krew',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'krew.sigs.k8s.io' as const,
 }
 
 export type KubectlkrewPackage = typeof kubectlkrewPackage

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tlr-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) teller`
- * @aliases `teller`
+ * @name `teller`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.teller
  * // Or access via domain
  * const samePkg = pantry.tlrdev
@@ -75,14 +75,12 @@ export const tellerPackage = {
     '2.0.4',
     '1.5.6',
   ] as const,
-  fullPath: 'tlr.dev' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'teller',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'tlr.dev' as const,
 }
 
 export type TellerPackage = typeof tellerPackage

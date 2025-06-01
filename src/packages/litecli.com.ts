@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/litecli-com.md
  *
  * @install `sh <(curl https://pkgx.sh) litecli`
+ * @name `litecli`
  * @dependencies `pkgx.sh^1`, `sqlite.org^3.45`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.liteclicom
+ * // Access the package
+ * const pkg = pantry.litecli
+ * // Or access via domain
+ * const samePkg = pantry.liteclicom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "litecli"
  * console.log(pkg.description) // "CLI for SQLite Databases with auto-completion a..."
  * console.log(pkg.programs)    // ["litecli"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/litecli-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const liteclicomPackage = {
+export const litecliPackage = {
   /**
    * The display name of this package.
    */
@@ -81,8 +86,12 @@ export const liteclicomPackage = {
     '1.10.1',
     '1.10.0',
   ] as const,
-  fullPath: 'litecli.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'litecli.com' as const,
 }
 
-export type LiteclicomPackage = typeof liteclicomPackage
+export type LitecliPackage = typeof litecliPackage

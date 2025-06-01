@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/epsilon-project-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) epsilon`
- * @aliases `epsilon`
+ * @name `epsilon`
  * @dependencies `rpm.org/popt`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.epsilon
  * // Or access via domain
  * const samePkg = pantry.epsilonprojectsourceforgeio
@@ -75,9 +75,7 @@ export const epsilonPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'epsilon',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'epsilon-project.sourceforge.io' as const,
 }
 

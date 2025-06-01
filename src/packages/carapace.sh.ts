@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/carapace-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) carapace`
+ * @name `carapace`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.carapacesh
+ * // Access the package
+ * const pkg = pantry.carapace
+ * // Or access via domain
+ * const samePkg = pantry.carapacesh
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "carapace"
  * console.log(pkg.description) // "Multi-shell multi-command argument completer"
  * console.log(pkg.programs)    // ["carapace"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/carapace-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const carapaceshPackage = {
+export const carapacePackage = {
   /**
    * The display name of this package.
    */
@@ -69,8 +74,12 @@ export const carapaceshPackage = {
     '1.0.5',
     '1.0.4',
   ] as const,
-  fullPath: 'carapace.sh' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'carapace.sh' as const,
 }
 
-export type CarapaceshPackage = typeof carapaceshPackage
+export type CarapacePackage = typeof carapacePackage

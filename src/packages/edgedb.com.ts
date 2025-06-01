@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/edgedb-com.md
  *
  * @install `sh <(curl https://pkgx.sh) edgedb`
- * @aliases `edgedb`
+ * @name `edgedb`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.edgedb
  * // Or access via domain
  * const samePkg = pantry.edgedbcom
@@ -103,9 +103,7 @@ export const edgedbPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'edgedb',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'edgedb.com' as const,
 }
 

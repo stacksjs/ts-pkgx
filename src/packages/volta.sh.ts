@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/volta-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) volta`
- * @aliases `volta`
+ * @name `volta`
  * @dependencies `linuxcurl.se/ca-certs`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.volta
  * // Or access via domain
  * const samePkg = pantry.voltash
@@ -79,9 +79,7 @@ export const voltaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'volta',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'volta.sh' as const,
 }
 

@@ -7,6 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mun-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) mun`
+ * @name `mun`
  * @dependencies `invisible-island.net/ncurses@6`, `sourceware.org/libffi@3`, `gnome.org/libxml2@2`
  * @companions `llvm.org`
  *
@@ -14,7 +15,11 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.munlangorg
+ * // Access the package
+ * const pkg = pantry.mun
+ * // Or access via domain
+ * const samePkg = pantry.munlangorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mun"
  * console.log(pkg.description) // "Source code for the Mun language and runtime."
  * console.log(pkg.programs)    // ["mun"]
@@ -24,7 +29,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mun-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const munlangorgPackage = {
+export const munPackage = {
   /**
    * The display name of this package.
    */
@@ -75,8 +80,12 @@ export const munlangorgPackage = {
   versions: [
     '0.5.0',
   ] as const,
-  fullPath: 'mun-lang.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'mun-lang.org' as const,
 }
 
-export type MunlangorgPackage = typeof munlangorgPackage
+export type MunPackage = typeof munPackage

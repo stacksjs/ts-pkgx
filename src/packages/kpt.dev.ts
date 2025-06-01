@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kpt-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) kpt`
+ * @name `kpt`
  * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.kptdev
+ * // Access the package
+ * const pkg = pantry.kpt
+ * // Or access via domain
+ * const samePkg = pantry.kptdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "kpt"
  * console.log(pkg.description) // "Automate Kubernetes Configuration Editing"
  * console.log(pkg.programs)    // ["kpt"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kpt-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kptdevPackage = {
+export const kptPackage = {
   /**
    * The display name of this package.
    */
@@ -66,8 +71,12 @@ export const kptdevPackage = {
   versions: [
     '0.39.3',
   ] as const,
-  fullPath: 'kpt.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'kpt.dev' as const,
 }
 
-export type KptdevPackage = typeof kptdevPackage
+export type KptPackage = typeof kptPackage

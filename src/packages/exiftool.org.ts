@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/exiftool-org.md
  *
  * @install `sh <(curl https://pkgx.sh) exiftool`
- * @aliases `exiftool`
+ * @name `exiftool`
  * @dependencies `perl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.exiftool
  * // Or access via domain
  * const samePkg = pantry.exiftoolorg
@@ -82,9 +82,7 @@ export const exiftoolPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'exiftool',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'exiftool.org' as const,
 }
 

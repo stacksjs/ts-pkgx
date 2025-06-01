@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rust-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +rust-lang.org -- $SHELL -i`
- * @aliases `rust`
+ * @name `rust`
  * @dependencies `zlib.net@1`
  * @companions `rust-lang.org/cargo`, `linux`
  *
@@ -15,7 +15,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rust
  * // Or access via domain
  * const samePkg = pantry.rustlangorg
@@ -121,14 +121,12 @@ export const rustPackage = {
     '1.65.0',
     '1.64.0',
   ] as const,
-  fullPath: 'rust-lang.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rust',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'rust-lang.org' as const,
 }
 
 export type RustPackage = typeof rustPackage

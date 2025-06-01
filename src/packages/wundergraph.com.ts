@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wundergraph-com.md
  *
  * @install `sh <(curl https://pkgx.sh) wunderctl`
- * @aliases `wunderctl`
+ * @name `wunderctl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.wunderctl
  * // Or access via domain
  * const samePkg = pantry.wundergraphcom
@@ -83,14 +83,12 @@ export const wunderctlPackage = {
     '0.169.3',
     '0.169.2',
   ] as const,
-  fullPath: 'wundergraph.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'wunderctl',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'wundergraph.com' as const,
 }
 
 export type WunderctlPackage = typeof wunderctlPackage

@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/flywaydb-org.md
  *
  * @install `sh <(curl https://pkgx.sh) flyway`
- * @aliases `flyway`
+ * @name `flyway`
  * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.flyway
  * // Or access via domain
  * const samePkg = pantry.flywaydborg
@@ -115,9 +115,7 @@ export const flywayPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'flyway',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'flywaydb.org' as const,
 }
 

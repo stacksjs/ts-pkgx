@@ -62,8 +62,8 @@ export const libwebsocketsorgPackage = {
     '4.3.3',
     '4.3.2',
   ] as const,
-  fullPath: 'libwebsockets.org' as const,
   aliases: [] as const,
+  fullPath: 'libwebsockets.org' as const,
 }
 
 export type LibwebsocketsorgPackage = typeof libwebsocketsorgPackage

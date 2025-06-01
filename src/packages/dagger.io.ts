@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dagger-io.md
  *
  * @install `sh <(curl https://pkgx.sh) dagger`
+ * @name `dagger`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.daggerio
+ * // Access the package
+ * const pkg = pantry.dagger
+ * // Or access via domain
+ * const samePkg = pantry.daggerio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "dagger"
  * console.log(pkg.description) // "An engine to run your pipelines in containers"
  * console.log(pkg.programs)    // ["dagger"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dagger-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const daggerioPackage = {
+export const daggerPackage = {
   /**
    * The display name of this package.
    */
@@ -148,8 +153,12 @@ export const daggerioPackage = {
     '0.3.10',
     '0.3.9',
   ] as const,
-  fullPath: 'dagger.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'dagger.io' as const,
 }
 
-export type DaggerioPackage = typeof daggerioPackage
+export type DaggerPackage = typeof daggerPackage

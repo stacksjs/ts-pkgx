@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kaggle-com.md
  *
  * @install `sh <(curl https://pkgx.sh) kaggle`
+ * @name `kaggle`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.kagglecom
+ * // Access the package
+ * const pkg = pantry.kaggle
+ * // Or access via domain
+ * const samePkg = pantry.kagglecom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "kaggle"
  * console.log(pkg.description) // "Official Kaggle API"
  * console.log(pkg.programs)    // ["kaggle"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kaggle-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kagglecomPackage = {
+export const kagglePackage = {
   /**
    * The display name of this package.
    */
@@ -70,8 +75,12 @@ export const kagglecomPackage = {
     '1.6.1',
     '1.5.16',
   ] as const,
-  fullPath: 'kaggle.com' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'kaggle.com' as const,
 }
 
-export type KagglecomPackage = typeof kagglecomPackage
+export type KagglePackage = typeof kagglePackage

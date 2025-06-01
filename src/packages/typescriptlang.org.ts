@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/typescriptlang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) tsc`
- * @aliases `tsc`
+ * @name `tsc`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tsc
  * // Or access via domain
  * const samePkg = pantry.typescriptlangorg
@@ -83,14 +83,12 @@ export const tscPackage = {
     '5.4.3',
     '5.4.2',
   ] as const,
-  fullPath: 'typescriptlang.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tsc',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'typescriptlang.org' as const,
 }
 
 export type TscPackage = typeof tscPackage

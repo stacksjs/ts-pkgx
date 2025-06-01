@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sentry-io.md
  *
  * @install `sh <(curl https://pkgx.sh) sentry-cli`
- * @aliases `sentry-cli`
+ * @name `sentry-cli`
  * @dependencies `libgit2.org~1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sentrycli
  * // Or access via domain
  * const samePkg = pantry.sentryio
@@ -119,9 +119,7 @@ export const sentrycliPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sentry-cli',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'sentry.io' as const,
 }
 

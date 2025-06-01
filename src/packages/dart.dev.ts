@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dart-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +dart.dev -- $SHELL -i`
+ * @name `dart`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.dartdev
+ * // Access the package
+ * const pkg = pantry.dart
+ * // Or access via domain
+ * const samePkg = pantry.dartdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "dart"
  * console.log(pkg.description) // "The Dart SDK, including the VM, JS and Wasm com..."
  * console.log(pkg.programs)    // ["dart", "dartaotruntime"]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dart-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dartdevPackage = {
+export const dartPackage = {
   /**
    * The display name of this package.
    */
@@ -95,8 +100,12 @@ export const dartdevPackage = {
     '3.1.2',
     '3.1.1',
   ] as const,
-  fullPath: 'dart.dev' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'dart.dev' as const,
 }
 
-export type DartdevPackage = typeof dartdevPackage
+export type DartPackage = typeof dartPackage

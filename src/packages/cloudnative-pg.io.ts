@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cloudnative-pg-io.md
  *
  * @install `sh <(curl https://pkgx.sh) kubectl-cnpg`
- * @aliases `kubectl-cnpg`
+ * @name `kubectl-cnpg`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kubectlcnpg
  * // Or access via domain
  * const samePkg = pantry.cloudnativepgio
@@ -69,14 +69,12 @@ export const kubectlcnpgPackage = {
     '1.24.4',
     '1.24.3',
   ] as const,
-  fullPath: 'cloudnative-pg.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kubectl-cnpg',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'cloudnative-pg.io' as const,
 }
 
 export type KubectlcnpgPackage = typeof kubectlcnpgPackage

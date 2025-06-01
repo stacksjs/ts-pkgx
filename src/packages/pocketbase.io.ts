@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pocketbase-io.md
  *
  * @install `sh <(curl https://pkgx.sh) pocketbase`
- * @aliases `pocketbase`
+ * @name `pocketbase`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pocketbase
  * // Or access via domain
  * const samePkg = pantry.pocketbaseio
@@ -147,9 +147,7 @@ export const pocketbasePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pocketbase',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'pocketbase.io' as const,
 }
 

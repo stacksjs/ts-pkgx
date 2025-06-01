@@ -7,13 +7,18 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/werf-io.md
  *
  * @install `sh <(curl https://pkgx.sh) werf`
+ * @name `werf`
  * @dependencies `linuxgithub.com/kdave/btrfs-progs^6.7sourceware.org/dm^2.3`, `github.com/kdave/btrfs-progs^6.7`, `sourceware.org/dm^2.3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.werfio
+ * // Access the package
+ * const pkg = pantry.werf
+ * // Or access via domain
+ * const samePkg = pantry.werfio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "werf"
  * console.log(pkg.description) // "A solution for implementing efficient and consi..."
  * console.log(pkg.programs)    // ["werf"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/werf-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const werfioPackage = {
+export const werfPackage = {
   /**
    * The display name of this package.
    */
@@ -209,8 +214,12 @@ export const werfioPackage = {
     '1.1.36',
     '1.1.35',
   ] as const,
-  fullPath: 'werf.io' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'werf.io' as const,
 }
 
-export type WerfioPackage = typeof werfioPackage
+export type WerfPackage = typeof werfPackage

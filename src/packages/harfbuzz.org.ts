@@ -100,8 +100,8 @@ export const harfbuzzorgPackage = {
     '7.0.0',
     '5.3.1',
   ] as const,
-  fullPath: 'harfbuzz.org' as const,
   aliases: [] as const,
+  fullPath: 'harfbuzz.org' as const,
 }
 
 export type HarfbuzzorgPackage = typeof harfbuzzorgPackage

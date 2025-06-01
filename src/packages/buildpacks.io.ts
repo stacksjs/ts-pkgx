@@ -7,13 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/buildpacks-io.md
  *
  * @install `sh <(curl https://pkgx.sh) pack`
- * @aliases `pack`
+ * @name `pack`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pack
  * // Or access via domain
  * const samePkg = pantry.buildpacksio
@@ -75,14 +75,12 @@ export const packPackage = {
     '0.34.0',
     '0.33.2',
   ] as const,
-  fullPath: 'buildpacks.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pack',
-  ] as const,
+  aliases: [] as const,
+  fullPath: 'buildpacks.io' as const,
 }
 
 export type PackPackage = typeof packPackage

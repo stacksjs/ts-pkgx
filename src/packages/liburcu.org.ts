@@ -6,12 +6,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/liburcu-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +liburcu.org -- $SHELL -i`
+ * @name `liburcu`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.liburcuorg
+ * // Access the package
+ * const pkg = pantry.liburcu
+ * // Or access via domain
+ * const samePkg = pantry.liburcuorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "liburcu"
  * console.log(pkg.description) // "liburcu is a LGPLv2.1 userspace RCU (read-copy-..."
  * console.log(pkg.versions[0]) // "0.15.3" (latest)
@@ -20,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/liburcu-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const liburcuorgPackage = {
+export const liburcuPackage = {
   /**
    * The display name of this package.
    */
@@ -54,8 +59,12 @@ export const liburcuorgPackage = {
     '0.15.1',
     '0.15.0',
   ] as const,
-  fullPath: 'liburcu.org' as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
+  fullPath: 'liburcu.org' as const,
 }
 
-export type LiburcuorgPackage = typeof liburcuorgPackage
+export type LiburcuPackage = typeof liburcuPackage
