@@ -6,7 +6,7 @@ Packages related to testing & quality assurance.
 
 ## Packages
 
-### [pytestorg](../packages/pytestorg.md) ()
+### [pytest.org](../packages/pytest-org.md)
 
 Crafters of fine Open Source products
 

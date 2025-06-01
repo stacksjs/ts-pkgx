@@ -6,7 +6,7 @@ Packages related to cloud platforms & services.
 
 ## Packages
 
-### [awsamazoncom](../packages/awsamazoncom.md) ()
+### [aws.amazon.com](../packages/aws-amazon-com.md)
 
 Go home.
 
@@ -16,7 +16,7 @@ Go home.
 
 ---
 
-### [cloudflarecom](../packages/cloudflarecom.md) ()
+### [cloudflare.com](../packages/cloudflare-com.md)
 
 Go home.
 
@@ -26,7 +26,7 @@ Go home.
 
 ---
 
-### [digitaloceancom](../packages/digitaloceancom.md) ()
+### [digitalocean.com](../packages/digitalocean-com.md)
 
 Go home.
 
@@ -36,7 +36,7 @@ Go home.
 
 ---
 
-### [flyio](../packages/flyio.md) ()
+### [fly.io](../packages/fly-io.md)
 
 Crafters of fine Open Source products
 
@@ -46,7 +46,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [githubcom](../packages/githubcom.md) ()
+### [github.com](../packages/github-com.md)
 
 Go home.
 
@@ -56,7 +56,7 @@ Go home.
 
 ---
 
-### [gitlabcom](../packages/gitlabcom.md) ()
+### [gitlab.com](../packages/gitlab-com.md)
 
 Go home.
 
@@ -66,7 +66,7 @@ Go home.
 
 ---
 
-### [herokucom](../packages/herokucom.md) ()
+### [heroku.com](../packages/heroku-com.md)
 
 Crafters of fine Open Source products
 
@@ -76,7 +76,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [railwayapp](../packages/railwayapp.md) ()
+### [railway.app](../packages/railway-app.md)
 
 Crafters of fine Open Source products
 
@@ -86,7 +86,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [vercelcom](../packages/vercelcom.md) ()
+### [vercel.com](../packages/vercel-com.md)
 
 Go home.
 

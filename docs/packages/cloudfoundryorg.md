@@ -1,11 +1,11 @@
-# cloudfoundryorg
+# cloudfoundry.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cloudfoundryorg`
-- **Name**: `cloudfoundryorg`
+- **Name**: `cloudfoundry.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

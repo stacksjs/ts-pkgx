@@ -1,11 +1,11 @@
-# gstreamerfreedesktoporg
+# gstreamer.freedesktop.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `gstreamerfreedesktoporg`
-- **Name**: `gstreamerfreedesktoporg`
+- **Name**: `gstreamer.freedesktop.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# cratesiosamply
+# crates.io/samply
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cratesiosamply`
-- **Name**: `cratesiosamply`
+- **Name**: `crates.io/samply`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

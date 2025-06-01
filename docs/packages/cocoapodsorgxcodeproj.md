@@ -1,11 +1,11 @@
-# cocoapodsorgxcodeproj
+# cocoapods.org/xcodeproj
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cocoapodsorgxcodeproj`
-- **Name**: `cocoapodsorgxcodeproj`
+- **Name**: `cocoapods.org/xcodeproj`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

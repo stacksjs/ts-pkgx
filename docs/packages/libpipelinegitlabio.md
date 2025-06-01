@@ -1,11 +1,11 @@
-# libpipelinegitlabio
+# libpipeline.gitlab.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `libpipelinegitlabio`
-- **Name**: `libpipelinegitlabio`
+- **Name**: `libpipeline.gitlab.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

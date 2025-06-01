@@ -1,11 +1,11 @@
-# ghostgumcomau
+# ghostgum.com.au
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `ghostgumcomau`
-- **Name**: `ghostgumcomau`
+- **Name**: `ghostgum.com.au`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

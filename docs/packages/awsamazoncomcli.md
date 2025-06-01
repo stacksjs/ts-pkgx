@@ -1,11 +1,11 @@
-# awsamazoncomcli
+# aws.amazon.com/cli
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `awsamazoncomcli`
-- **Name**: `awsamazoncomcli`
+- **Name**: `aws.amazon.com/cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

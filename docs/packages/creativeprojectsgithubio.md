@@ -1,11 +1,11 @@
-# creativeprojectsgithubio
+# creativeprojects.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `creativeprojectsgithubio`
-- **Name**: `creativeprojectsgithubio`
+- **Name**: `creativeprojects.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# fullstorycom
+# fullstory.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `fullstorycom`
-- **Name**: `fullstorycom`
+- **Name**: `fullstory.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

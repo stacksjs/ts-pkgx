@@ -1,11 +1,11 @@
-# maaslalanicom
+# maaslalani.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `maaslalanicom`
-- **Name**: `maaslalanicom`
+- **Name**: `maaslalani.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

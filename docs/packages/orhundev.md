@@ -1,11 +1,11 @@
-# orhundev
+# orhun.dev
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `orhundev`
-- **Name**: `orhundev`
+- **Name**: `orhun.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

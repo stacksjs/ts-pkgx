@@ -1,11 +1,11 @@
-# githubcomwitheredmagicstarpls
+# github.com/withered-magic-starpls
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomwitheredmagicstarpls`
-- **Name**: `githubcomwitheredmagicstarpls`
+- **Name**: `github.com/withered-magic-starpls`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

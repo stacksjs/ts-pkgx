@@ -1,11 +1,11 @@
-# gnuorg
+# gnu.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `gnuorg`
-- **Name**: `gnuorg`
+- **Name**: `gnu.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

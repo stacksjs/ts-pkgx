@@ -1,11 +1,11 @@
-# ivarchcom
+# ivarch.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `ivarchcom`
-- **Name**: `ivarchcom`
+- **Name**: `ivarch.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

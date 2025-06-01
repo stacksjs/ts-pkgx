@@ -6,7 +6,7 @@ Database systems and data storage solutions.
 
 ## Packages
 
-### [duckdborg](../packages/duckdborg.md) ()
+### [duckdb.org](../packages/duckdb-org.md)
 
 Crafters of fine Open Source products
 
@@ -16,7 +16,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [mongodbcom](../packages/mongodbcom.md) ()
+### [mongodb.com](../packages/mongodb-com.md)
 
 Crafters of fine Open Source products
 
@@ -26,7 +26,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [mysqlcom](../packages/mysqlcom.md) ()
+### [mysql.com](../packages/mysql-com.md)
 
 Crafters of fine Open Source products
 
@@ -36,7 +36,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [postgresqlorg](../packages/postgresqlorg.md) ()
+### [postgresql.org](../packages/postgresql-org.md)
 
 Crafters of fine Open Source products
 
@@ -46,7 +46,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [redisio](../packages/redisio.md) ()
+### [redis.io](../packages/redis-io.md)
 
 Crafters of fine Open Source products
 
@@ -56,7 +56,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [sqliteorg](../packages/sqliteorg.md) ()
+### [sqlite.org](../packages/sqlite-org.md)
 
 Crafters of fine Open Source products
 
@@ -66,7 +66,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [surrealdbcom](../packages/surrealdbcom.md) ()
+### [surrealdb.com](../packages/surrealdb-com.md)
 
 Crafters of fine Open Source products
 
@@ -76,7 +76,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [valkeyio](../packages/valkeyio.md) ()
+### [valkey.io](../packages/valkey-io.md)
 
 Crafters of fine Open Source products
 

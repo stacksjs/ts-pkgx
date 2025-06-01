@@ -1,11 +1,11 @@
-# githubcomfastfetchclifastfetch
+# github.com/fastfetch-cli-fastfetch
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomfastfetchclifastfetch`
-- **Name**: `githubcomfastfetchclifastfetch`
+- **Name**: `github.com/fastfetch-cli-fastfetch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

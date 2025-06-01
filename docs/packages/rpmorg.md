@@ -1,11 +1,11 @@
-# rpmorg
+# rpm.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `rpmorg`
-- **Name**: `rpmorg`
+- **Name**: `rpm.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

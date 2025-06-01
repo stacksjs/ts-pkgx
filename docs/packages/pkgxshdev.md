@@ -1,11 +1,11 @@
-# pkgxshdev
+# pkgx.sh/dev
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `pkgxshdev`
-- **Name**: `pkgxshdev`
+- **Name**: `pkgx.sh/dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

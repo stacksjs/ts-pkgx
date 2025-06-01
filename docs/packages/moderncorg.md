@@ -1,11 +1,11 @@
-# moderncorg
+# modernc.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `moderncorg`
-- **Name**: `moderncorg`
+- **Name**: `modernc.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# denilsonsanombr
+# denilson.sa.nom.br
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `denilsonsanombr`
-- **Name**: `denilsonsanombr`
+- **Name**: `denilson.sa.nom.br`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

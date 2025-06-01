@@ -1,11 +1,11 @@
-# kernelorglibcap
+# kernel.org/libcap
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `kernelorglibcap`
-- **Name**: `kernelorglibcap`
+- **Name**: `kernel.org/libcap`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

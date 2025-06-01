@@ -1,11 +1,11 @@
-# cratesiocargotarpaulin
+# crates.io/cargo-tarpaulin
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cratesiocargotarpaulin`
-- **Name**: `cratesiocargotarpaulin`
+- **Name**: `crates.io/cargo-tarpaulin`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

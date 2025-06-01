@@ -1,11 +1,11 @@
-# netflixcom
+# netflix.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `netflixcom`
-- **Name**: `netflixcom`
+- **Name**: `netflix.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# microsoftcom
+# microsoft.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `microsoftcom`
-- **Name**: `microsoftcom`
+- **Name**: `microsoft.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

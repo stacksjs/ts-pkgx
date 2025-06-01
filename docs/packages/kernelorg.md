@@ -1,11 +1,11 @@
-# kernelorg
+# kernel.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `kernelorg`
-- **Name**: `kernelorg`
+- **Name**: `kernel.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

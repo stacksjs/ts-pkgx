@@ -1,11 +1,11 @@
-# rustlangorgrustbindgen
+# rust/lang.org-rust-bindgen
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `rustlangorgrustbindgen`
-- **Name**: `rustlangorgrustbindgen`
+- **Name**: `rust/lang.org-rust-bindgen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

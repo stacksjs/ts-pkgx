@@ -1,11 +1,11 @@
-# sasslangcom
+# sass/lang.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `sasslangcom`
-- **Name**: `sasslangcom`
+- **Name**: `sass/lang.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

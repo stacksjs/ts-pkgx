@@ -1,11 +1,11 @@
-# dystroyorgbacon
+# dystroy.org/bacon
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `dystroyorgbacon`
-- **Name**: `dystroyorgbacon`
+- **Name**: `dystroy.org/bacon`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

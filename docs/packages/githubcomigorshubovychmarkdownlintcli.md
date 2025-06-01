@@ -1,11 +1,11 @@
-# githubcomigorshubovychmarkdownlintcli
+# github.com/igorshubovych-markdownlint-cli
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomigorshubovychmarkdownlintcli`
-- **Name**: `githubcomigorshubovychmarkdownlintcli`
+- **Name**: `github.com/igorshubovych-markdownlint-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# pypagithubio
+# pypa.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `pypagithubio`
-- **Name**: `pypagithubio`
+- **Name**: `pypa.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

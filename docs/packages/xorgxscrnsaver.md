@@ -1,11 +1,11 @@
-# xorgxscrnsaver
+# x.org/xscrnsaver
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `xorgxscrnsaver`
-- **Name**: `xorgxscrnsaver`
+- **Name**: `x.org/xscrnsaver`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

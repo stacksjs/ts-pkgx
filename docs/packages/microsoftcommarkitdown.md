@@ -1,11 +1,11 @@
-# microsoftcommarkitdown
+# microsoft.com/markitdown
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `microsoftcommarkitdown`
-- **Name**: `microsoftcommarkitdown`
+- **Name**: `microsoft.com/markitdown`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

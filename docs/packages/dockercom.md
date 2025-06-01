@@ -1,11 +1,11 @@
-# dockercom
+# docker.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `dockercom`
-- **Name**: `dockercom`
+- **Name**: `docker.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

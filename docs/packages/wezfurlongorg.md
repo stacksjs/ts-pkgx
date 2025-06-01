@@ -1,11 +1,11 @@
-# wezfurlongorg
+# wezfurlong.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `wezfurlongorg`
-- **Name**: `wezfurlongorg`
+- **Name**: `wezfurlong.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

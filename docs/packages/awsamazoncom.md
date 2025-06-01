@@ -1,11 +1,11 @@
-# awsamazoncom
+# aws.amazon.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `awsamazoncom`
-- **Name**: `awsamazoncom`
+- **Name**: `aws.amazon.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

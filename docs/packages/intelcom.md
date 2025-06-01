@@ -1,11 +1,11 @@
-# intelcom
+# intel.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `intelcom`
-- **Name**: `intelcom`
+- **Name**: `intel.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

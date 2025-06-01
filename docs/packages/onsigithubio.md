@@ -1,11 +1,11 @@
-# onsigithubio
+# onsi.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `onsigithubio`
-- **Name**: `onsigithubio`
+- **Name**: `onsi.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

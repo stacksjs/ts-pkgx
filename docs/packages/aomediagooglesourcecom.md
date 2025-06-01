@@ -1,11 +1,11 @@
-# aomediagooglesourcecom
+# aomedia.googlesource.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `aomediagooglesourcecom`
-- **Name**: `aomediagooglesourcecom`
+- **Name**: `aomedia.googlesource.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# wilfredmeuk
+# wilfred.me.uk
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `wilfredmeuk`
-- **Name**: `wilfredmeuk`
+- **Name**: `wilfred.me.uk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

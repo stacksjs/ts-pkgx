@@ -1,11 +1,11 @@
-# githubcommycreepypakku
+# github.com/mycreepy-pakku
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcommycreepypakku`
-- **Name**: `githubcommycreepypakku`
+- **Name**: `github.com/mycreepy-pakku`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

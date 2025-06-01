@@ -1,11 +1,11 @@
-# riverbankcomputingcom
+# riverbankcomputing.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `riverbankcomputingcom`
-- **Name**: `riverbankcomputingcom`
+- **Name**: `riverbankcomputing.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

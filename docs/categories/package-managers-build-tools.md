@@ -6,7 +6,7 @@ Packages related to package managers & build tools.
 
 ## Packages
 
-### [cmakeorg](../packages/cmakeorg.md) ()
+### [cmake.org](../packages/cmake-org.md)
 
 Crafters of fine Open Source products
 
@@ -16,7 +16,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [cratesio](../packages/cratesio.md) ()
+### [crates.io](../packages/crates-io.md)
 
 Go home.
 
@@ -26,7 +26,7 @@ Go home.
 
 ---
 
-### [gradleorg](../packages/gradleorg.md) ()
+### [gradle.org](../packages/gradle-org.md)
 
 Crafters of fine Open Source products
 
@@ -36,7 +36,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [mavenapacheorg](../packages/mavenapacheorg.md) ()
+### [maven.apache.org](../packages/maven-apache-org.md)
 
 Crafters of fine Open Source products
 
@@ -46,7 +46,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [mesonbuildcom](../packages/mesonbuildcom.md) ()
+### [mesonbuild.com](../packages/mesonbuild-com.md)
 
 Crafters of fine Open Source products
 
@@ -56,7 +56,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [ninjabuildorg](../packages/ninjabuildorg.md) ()
+### [ninja/build.org](../packages/ninja/build-org.md)
 
 Crafters of fine Open Source products
 
@@ -66,7 +66,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [npmjscom](../packages/npmjscom.md) ()
+### [npmjs.com](../packages/npmjs-com.md)
 
 Crafters of fine Open Source products
 
@@ -76,17 +76,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [pipenvpypaio](../packages/pipenvpypaio.md) ()
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx pipenv.pypa.io`
-
----
-
-### [pippypaio](../packages/pippypaio.md) ()
+### [pip.pypa.io](../packages/pip-pypa-io.md)
 
 Crafters of fine Open Source products
 
@@ -96,7 +86,17 @@ Crafters of fine Open Source products
 
 ---
 
-### [pnpmio](../packages/pnpmio.md) ()
+### [pipenv.pypa.io](../packages/pipenv-pypa-io.md)
+
+Crafters of fine Open Source products
+
+**Programs**: None specified
+
+**Install**: `pkgx pipenv.pypa.io`
+
+---
+
+### [pnpm.io](../packages/pnpm-io.md)
 
 Crafters of fine Open Source products
 
@@ -106,7 +106,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [pythonpoetryorg](../packages/pythonpoetryorg.md) ()
+### [python/poetry.org](../packages/python/poetry-org.md)
 
 Crafters of fine Open Source products
 
@@ -116,7 +116,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [rubygemsorg](../packages/rubygemsorg.md) ()
+### [rubygems.org](../packages/rubygems-org.md)
 
 Crafters of fine Open Source products
 
@@ -126,7 +126,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [yarnpkgcom](../packages/yarnpkgcom.md) ()
+### [yarnpkg.com](../packages/yarnpkg-com.md)
 
 Crafters of fine Open Source products
 

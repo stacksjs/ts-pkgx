@@ -1,11 +1,11 @@
-# devpodsh
+# devpod.sh
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `devpodsh`
-- **Name**: `devpodsh`
+- **Name**: `devpod.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

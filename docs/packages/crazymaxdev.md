@@ -1,11 +1,11 @@
-# crazymaxdev
+# crazymax.dev
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `crazymaxdev`
-- **Name**: `crazymaxdev`
+- **Name**: `crazymax.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# cedarpolicycom
+# cedarpolicy.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cedarpolicycom`
-- **Name**: `cedarpolicycom`
+- **Name**: `cedarpolicy.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# mvdanccgofumpt
+# mvdan.cc/gofumpt
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `mvdanccgofumpt`
-- **Name**: `mvdanccgofumpt`
+- **Name**: `mvdan.cc/gofumpt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

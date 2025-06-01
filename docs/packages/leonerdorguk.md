@@ -1,11 +1,11 @@
-# leonerdorguk
+# leonerd.org.uk
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `leonerdorguk`
-- **Name**: `leonerdorguk`
+- **Name**: `leonerd.org.uk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

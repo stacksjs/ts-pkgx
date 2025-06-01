@@ -1,11 +1,11 @@
-# androidcom
+# android.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `androidcom`
-- **Name**: `androidcom`
+- **Name**: `android.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

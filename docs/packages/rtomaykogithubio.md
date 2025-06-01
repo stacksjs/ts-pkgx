@@ -1,11 +1,11 @@
-# rtomaykogithubio
+# rtomayko.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `rtomaykogithubio`
-- **Name**: `rtomaykogithubio`
+- **Name**: `rtomayko.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

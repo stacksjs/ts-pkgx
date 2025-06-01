@@ -1,11 +1,11 @@
-# videolanorg
+# videolan.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `videolanorg`
-- **Name**: `videolanorg`
+- **Name**: `videolan.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

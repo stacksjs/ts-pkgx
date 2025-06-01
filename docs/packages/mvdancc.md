@@ -1,11 +1,11 @@
-# mvdancc
+# mvdan.cc
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `mvdancc`
-- **Name**: `mvdancc`
+- **Name**: `mvdan.cc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

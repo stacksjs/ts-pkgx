@@ -1,11 +1,11 @@
-# githubcomfiatjafnak
+# github.com/fiatjaf-nak
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomfiatjafnak`
-- **Name**: `githubcomfiatjafnak`
+- **Name**: `github.com/fiatjaf-nak`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

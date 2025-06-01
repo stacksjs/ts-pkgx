@@ -1,11 +1,11 @@
-# cratesioducker
+# crates.io/ducker
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cratesioducker`
-- **Name**: `cratesioducker`
+- **Name**: `crates.io/ducker`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

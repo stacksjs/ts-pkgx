@@ -1,11 +1,11 @@
-# destunreachorg
+# dest/unreach.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `destunreachorg`
-- **Name**: `destunreachorg`
+- **Name**: `dest/unreach.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

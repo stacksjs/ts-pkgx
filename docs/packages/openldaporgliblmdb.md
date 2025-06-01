@@ -1,11 +1,11 @@
-# openldaporgliblmdb
+# openldap.org/liblmdb
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `openldaporgliblmdb`
-- **Name**: `openldaporgliblmdb`
+- **Name**: `openldap.org/liblmdb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

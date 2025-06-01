@@ -1,11 +1,11 @@
-# earthlydev
+# earthly.dev
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `earthlydev`
-- **Name**: `earthlydev`
+- **Name**: `earthly.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# aquasecuritygithubio
+# aquasecurity.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `aquasecuritygithubio`
-- **Name**: `aquasecuritygithubio`
+- **Name**: `aquasecurity.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

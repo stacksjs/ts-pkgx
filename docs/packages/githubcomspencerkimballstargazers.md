@@ -1,11 +1,11 @@
-# githubcomspencerkimballstargazers
+# github.com/spencerkimball-stargazers
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomspencerkimballstargazers`
-- **Name**: `githubcomspencerkimballstargazers`
+- **Name**: `github.com/spencerkimball-stargazers`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

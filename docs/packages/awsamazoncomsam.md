@@ -1,11 +1,11 @@
-# awsamazoncomsam
+# aws.amazon.com/sam
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `awsamazoncomsam`
-- **Name**: `awsamazoncomsam`
+- **Name**: `aws.amazon.com/sam`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

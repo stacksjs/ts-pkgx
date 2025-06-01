@@ -1,11 +1,11 @@
-# tsl0922githubio
+# tsl0922.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `tsl0922githubio`
-- **Name**: `tsl0922githubio`
+- **Name**: `tsl0922.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

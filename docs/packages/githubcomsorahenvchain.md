@@ -1,11 +1,11 @@
-# githubcomsorahenvchain
+# github.com/sorah-envchain
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomsorahenvchain`
-- **Name**: `githubcomsorahenvchain`
+- **Name**: `github.com/sorah-envchain`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

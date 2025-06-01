@@ -1,11 +1,11 @@
-# pimalayaorg
+# pimalaya.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `pimalayaorg`
-- **Name**: `pimalayaorg`
+- **Name**: `pimalaya.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

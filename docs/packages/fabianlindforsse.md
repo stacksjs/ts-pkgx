@@ -1,11 +1,11 @@
-# fabianlindforsse
+# fabianlindfors.se
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `fabianlindforsse`
-- **Name**: `fabianlindforsse`
+- **Name**: `fabianlindfors.se`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

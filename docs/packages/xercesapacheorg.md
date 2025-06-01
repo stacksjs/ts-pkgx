@@ -1,11 +1,11 @@
-# xercesapacheorg
+# xerces.apache.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `xercesapacheorg`
-- **Name**: `xercesapacheorg`
+- **Name**: `xerces.apache.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

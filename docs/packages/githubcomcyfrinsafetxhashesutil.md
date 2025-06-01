@@ -1,11 +1,11 @@
-# githubcomcyfrinsafetxhashesutil
+# github.com/Cyfrin-safe-tx-hashes-util
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomcyfrinsafetxhashesutil`
-- **Name**: `githubcomcyfrinsafetxhashesutil`
+- **Name**: `github.com/Cyfrin-safe-tx-hashes-util`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

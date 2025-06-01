@@ -1,11 +1,11 @@
-# cratesioaichat
+# crates.io/aichat
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cratesioaichat`
-- **Name**: `cratesioaichat`
+- **Name**: `crates.io/aichat`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

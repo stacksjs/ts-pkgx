@@ -1,11 +1,11 @@
-# projectdiscoveryio
+# projectdiscovery.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `projectdiscoveryio`
-- **Name**: `projectdiscoveryio`
+- **Name**: `projectdiscovery.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

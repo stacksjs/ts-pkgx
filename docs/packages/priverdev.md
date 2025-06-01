@@ -1,11 +1,11 @@
-# priverdev
+# priver.dev
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `priverdev`
-- **Name**: `priverdev`
+- **Name**: `priver.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# graphqleditorcom
+# graphqleditor.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `graphqleditorcom`
-- **Name**: `graphqleditorcom`
+- **Name**: `graphqleditor.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

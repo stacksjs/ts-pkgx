@@ -1,11 +1,11 @@
-# projectdiscoveryionuclei
+# projectdiscovery.io/nuclei
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `projectdiscoveryionuclei`
-- **Name**: `projectdiscoveryionuclei`
+- **Name**: `projectdiscovery.io/nuclei`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

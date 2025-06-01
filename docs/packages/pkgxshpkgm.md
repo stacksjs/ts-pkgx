@@ -1,11 +1,11 @@
-# pkgxshpkgm
+# pkgx.sh/pkgm
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `pkgxshpkgm`
-- **Name**: `pkgxshpkgm`
+- **Name**: `pkgx.sh/pkgm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# ruciocernch
+# rucio.cern.ch
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `ruciocernch`
-- **Name**: `ruciocernch`
+- **Name**: `rucio.cern.ch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

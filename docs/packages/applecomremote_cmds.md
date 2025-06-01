@@ -1,11 +1,11 @@
-# applecomremote_cmds
+# apple.com/remote_cmds
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `applecomremote_cmds`
-- **Name**: `applecomremote_cmds`
+- **Name**: `apple.com/remote_cmds`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

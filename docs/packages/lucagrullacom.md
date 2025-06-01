@@ -1,11 +1,11 @@
-# lucagrullacom
+# lucagrulla.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `lucagrullacom`
-- **Name**: `lucagrullacom`
+- **Name**: `lucagrulla.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

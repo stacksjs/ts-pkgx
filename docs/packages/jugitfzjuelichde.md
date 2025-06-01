@@ -1,11 +1,11 @@
-# jugitfzjuelichde
+# jugit.fz/juelich.de
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `jugitfzjuelichde`
-- **Name**: `jugitfzjuelichde`
+- **Name**: `jugit.fz/juelich.de`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

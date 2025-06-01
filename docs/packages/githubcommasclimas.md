@@ -1,11 +1,11 @@
-# githubcommasclimas
+# github.com/mas-cli-mas
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcommasclimas`
-- **Name**: `githubcommasclimas`
+- **Name**: `github.com/mas-cli-mas`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

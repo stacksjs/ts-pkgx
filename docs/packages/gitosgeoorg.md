@@ -1,11 +1,11 @@
-# gitosgeoorg
+# git.osgeo.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `gitosgeoorg`
-- **Name**: `gitosgeoorg`
+- **Name**: `git.osgeo.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

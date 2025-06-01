@@ -6,27 +6,7 @@ Packages related to development tools.
 
 ## Packages
 
-### [githubcom](../packages/githubcom.md) ()
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx github.com`
-
----
-
-### [gitlabcom](../packages/gitlabcom.md) ()
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx gitlab.com`
-
----
-
-### [gitscmorg](../packages/gitscmorg.md) ()
+### [git/scm.org](../packages/git/scm-org.md)
 
 Crafters of fine Open Source products
 
@@ -36,7 +16,27 @@ Crafters of fine Open Source products
 
 ---
 
-### [neovimio](../packages/neovimio.md) ()
+### [github.com](../packages/github-com.md)
+
+Go home.
+
+**Programs**: None specified
+
+**Install**: `pkgx github.com`
+
+---
+
+### [gitlab.com](../packages/gitlab-com.md)
+
+Go home.
+
+**Programs**: None specified
+
+**Install**: `pkgx gitlab.com`
+
+---
+
+### [neovim.io](../packages/neovim-io.md)
 
 Crafters of fine Open Source products
 
@@ -46,7 +46,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [prettierio](../packages/prettierio.md) ()
+### [prettier.io](../packages/prettier-io.md)
 
 Crafters of fine Open Source products
 
@@ -56,7 +56,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [vimorg](../packages/vimorg.md) ()
+### [vim.org](../packages/vim-org.md)
 
 Crafters of fine Open Source products
 

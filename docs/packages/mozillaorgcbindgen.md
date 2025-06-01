@@ -1,11 +1,11 @@
-# mozillaorgcbindgen
+# mozilla.org/cbindgen
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `mozillaorgcbindgen`
-- **Name**: `mozillaorgcbindgen`
+- **Name**: `mozilla.org/cbindgen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

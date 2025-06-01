@@ -1,11 +1,11 @@
-# thrysoeedk
+# thrysoee.dk
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `thrysoeedk`
-- **Name**: `thrysoeedk`
+- **Name**: `thrysoee.dk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

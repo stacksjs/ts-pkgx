@@ -1,11 +1,11 @@
-# lloydgithubio
+# lloyd.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `lloydgithubio`
-- **Name**: `lloydgithubio`
+- **Name**: `lloyd.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

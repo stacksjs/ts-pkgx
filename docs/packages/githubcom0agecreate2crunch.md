@@ -1,11 +1,11 @@
-# githubcom0agecreate2crunch
+# github.com/0age-create2crunch
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcom0agecreate2crunch`
-- **Name**: `githubcom0agecreate2crunch`
+- **Name**: `github.com/0age-create2crunch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# githubcomperipheryappperiphery
+# github.com/peripheryapp-periphery
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomperipheryappperiphery`
-- **Name**: `githubcomperipheryappperiphery`
+- **Name**: `github.com/peripheryapp-periphery`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

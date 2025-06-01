@@ -1,11 +1,11 @@
-# freedesktoporg
+# freedesktop.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `freedesktoporg`
-- **Name**: `freedesktoporg`
+- **Name**: `freedesktop.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

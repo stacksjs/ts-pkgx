@@ -6,7 +6,7 @@ Packages related to web servers & proxies.
 
 ## Packages
 
-### [apacheorg](../packages/apacheorg.md) ()
+### [apache.org](../packages/apache-org.md)
 
 Go home.
 
@@ -16,7 +16,7 @@ Go home.
 
 ---
 
-### [nginxorg](../packages/nginxorg.md) ()
+### [nginx.org](../packages/nginx-org.md)
 
 Crafters of fine Open Source products
 
@@ -26,7 +26,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [traefikio](../packages/traefikio.md) ()
+### [traefik.io](../packages/traefik-io.md)
 
 Crafters of fine Open Source products
 

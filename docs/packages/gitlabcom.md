@@ -1,11 +1,11 @@
-# gitlabcom
+# gitlab.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `gitlabcom`
-- **Name**: `gitlabcom`
+- **Name**: `gitlab.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

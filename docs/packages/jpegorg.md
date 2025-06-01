@@ -1,11 +1,11 @@
-# jpegorg
+# jpeg.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `jpegorg`
-- **Name**: `jpegorg`
+- **Name**: `jpeg.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

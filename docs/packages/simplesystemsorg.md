@@ -1,11 +1,11 @@
-# simplesystemsorg
+# simplesystems.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `simplesystemsorg`
-- **Name**: `simplesystemsorg`
+- **Name**: `simplesystems.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

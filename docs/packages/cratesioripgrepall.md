@@ -1,11 +1,11 @@
-# cratesioripgrepall
+# crates.io/ripgrep-all
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cratesioripgrepall`
-- **Name**: `cratesioripgrepall`
+- **Name**: `crates.io/ripgrep-all`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

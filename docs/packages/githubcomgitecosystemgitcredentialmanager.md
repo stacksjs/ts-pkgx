@@ -1,11 +1,11 @@
-# githubcomgitecosystemgitcredentialmanager
+# github.com/git-ecosystem-git-credential-manager
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomgitecosystemgitcredentialmanager`
-- **Name**: `githubcomgitecosystemgitcredentialmanager`
+- **Name**: `github.com/git-ecosystem-git-credential-manager`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

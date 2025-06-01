@@ -1,11 +1,11 @@
-# githubcomblynnnex
+# github.com/blynn-nex
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomblynnnex`
-- **Name**: `githubcomblynnnex`
+- **Name**: `github.com/blynn-nex`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

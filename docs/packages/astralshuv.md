@@ -1,11 +1,11 @@
-# astralshuv
+# astral.sh/uv
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `astralshuv`
-- **Name**: `astralshuv`
+- **Name**: `astral.sh/uv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

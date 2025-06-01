@@ -1,11 +1,11 @@
-# invisibleislandnetlynx
+# invisible/island.net-lynx
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `invisibleislandnetlynx`
-- **Name**: `invisibleislandnetlynx`
+- **Name**: `invisible/island.net-lynx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

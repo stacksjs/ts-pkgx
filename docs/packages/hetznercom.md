@@ -1,11 +1,11 @@
-# hetznercom
+# hetzner.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `hetznercom`
-- **Name**: `hetznercom`
+- **Name**: `hetzner.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

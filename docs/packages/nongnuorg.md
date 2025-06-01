@@ -1,11 +1,11 @@
-# nongnuorg
+# nongnu.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `nongnuorg`
-- **Name**: `nongnuorg`
+- **Name**: `nongnu.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

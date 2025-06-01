@@ -1,11 +1,11 @@
-# connectrpcorg
+# connectrpc.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `connectrpcorg`
-- **Name**: `connectrpcorg`
+- **Name**: `connectrpc.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

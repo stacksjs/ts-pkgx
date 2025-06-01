@@ -1,11 +1,11 @@
-# kornelski
+# kornel.ski
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `kornelski`
-- **Name**: `kornelski`
+- **Name**: `kornel.ski`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

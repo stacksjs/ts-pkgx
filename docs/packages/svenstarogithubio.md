@@ -1,11 +1,11 @@
-# svenstarogithubio
+# svenstaro.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `svenstarogithubio`
-- **Name**: `svenstarogithubio`
+- **Name**: `svenstaro.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

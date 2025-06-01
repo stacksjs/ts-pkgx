@@ -1,11 +1,11 @@
-# stedolangithubio
+# stedolan.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `stedolangithubio`
-- **Name**: `stedolangithubio`
+- **Name**: `stedolan.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

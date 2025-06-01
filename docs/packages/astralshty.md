@@ -1,11 +1,11 @@
-# astralshty
+# astral.sh/ty
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `astralshty`
-- **Name**: `astralshty`
+- **Name**: `astral.sh/ty`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

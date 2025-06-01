@@ -1,11 +1,11 @@
-# virtualsquareorg
+# virtualsquare.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `virtualsquareorg`
-- **Name**: `virtualsquareorg`
+- **Name**: `virtualsquare.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

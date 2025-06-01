@@ -1,11 +1,11 @@
-# hadronsorg
+# hadrons.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `hadronsorg`
-- **Name**: `hadronsorg`
+- **Name**: `hadrons.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

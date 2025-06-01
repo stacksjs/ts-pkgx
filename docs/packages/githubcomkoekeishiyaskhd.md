@@ -1,11 +1,11 @@
-# githubcomkoekeishiyaskhd
+# github.com/koekeishiya-skhd
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomkoekeishiyaskhd`
-- **Name**: `githubcomkoekeishiyaskhd`
+- **Name**: `github.com/koekeishiya-skhd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

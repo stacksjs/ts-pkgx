@@ -1,11 +1,11 @@
-# saerasoftcom
+# saerasoft.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `saerasoftcom`
-- **Name**: `saerasoftcom`
+- **Name**: `saerasoft.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

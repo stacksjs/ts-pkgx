@@ -1,11 +1,11 @@
-# breakfastquaycom
+# breakfastquay.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `breakfastquaycom`
-- **Name**: `breakfastquaycom`
+- **Name**: `breakfastquay.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# githubcomblacktoplporg
+# github.com/blacktop-lporg
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomblacktoplporg`
-- **Name**: `githubcomblacktoplporg`
+- **Name**: `github.com/blacktop-lporg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

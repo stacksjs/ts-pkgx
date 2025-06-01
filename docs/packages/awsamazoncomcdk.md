@@ -1,11 +1,11 @@
-# awsamazoncomcdk
+# aws.amazon.com/cdk
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `awsamazoncomcdk`
-- **Name**: `awsamazoncomcdk`
+- **Name**: `aws.amazon.com/cdk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

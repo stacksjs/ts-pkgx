@@ -1,11 +1,11 @@
-# arduinogithubio
+# arduino.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `arduinogithubio`
-- **Name**: `arduinogithubio`
+- **Name**: `arduino.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

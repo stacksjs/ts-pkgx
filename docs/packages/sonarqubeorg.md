@@ -1,11 +1,11 @@
-# sonarqubeorg
+# sonarqube.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `sonarqubeorg`
-- **Name**: `sonarqubeorg`
+- **Name**: `sonarqube.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

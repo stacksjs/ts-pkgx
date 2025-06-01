@@ -1,11 +1,11 @@
-# githubcommilescranmerrip2
+# github.com/MilesCranmer-rip2
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcommilescranmerrip2`
-- **Name**: `githubcommilescranmerrip2`
+- **Name**: `github.com/MilesCranmer-rip2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# paulfitzgithubio
+# paulfitz.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `paulfitzgithubio`
-- **Name**: `paulfitzgithubio`
+- **Name**: `paulfitz.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

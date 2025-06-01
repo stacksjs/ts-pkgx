@@ -1,11 +1,11 @@
-# digitaloceancom
+# digitalocean.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `digitaloceancom`
-- **Name**: `digitaloceancom`
+- **Name**: `digitalocean.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

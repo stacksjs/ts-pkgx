@@ -1,11 +1,11 @@
-# unidataucaredu
+# unidata.ucar.edu
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `unidataucaredu`
-- **Name**: `unidataucaredu`
+- **Name**: `unidata.ucar.edu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

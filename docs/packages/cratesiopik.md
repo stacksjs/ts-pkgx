@@ -1,11 +1,11 @@
-# cratesiopik
+# crates.io/pik
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cratesiopik`
-- **Name**: `cratesiopik`
+- **Name**: `crates.io/pik`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

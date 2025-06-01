@@ -1,11 +1,11 @@
-# teaxyz
+# tea.xyz
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `teaxyz`
-- **Name**: `teaxyz`
+- **Name**: `tea.xyz`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

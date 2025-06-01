@@ -1,11 +1,11 @@
-# presslygithubio
+# pressly.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `presslygithubio`
-- **Name**: `presslygithubio`
+- **Name**: `pressly.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

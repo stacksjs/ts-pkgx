@@ -1,11 +1,11 @@
-# geuzorg
+# geuz.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `geuzorg`
-- **Name**: `geuzorg`
+- **Name**: `geuz.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

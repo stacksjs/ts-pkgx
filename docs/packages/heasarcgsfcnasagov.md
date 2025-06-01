@@ -1,11 +1,11 @@
-# heasarcgsfcnasagov
+# heasarc.gsfc.nasa.gov
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `heasarcgsfcnasagov`
-- **Name**: `heasarcgsfcnasagov`
+- **Name**: `heasarc.gsfc.nasa.gov`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

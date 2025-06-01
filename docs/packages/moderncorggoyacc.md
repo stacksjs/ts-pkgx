@@ -1,11 +1,11 @@
-# moderncorggoyacc
+# modernc.org/goyacc
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `moderncorggoyacc`
-- **Name**: `moderncorggoyacc`
+- **Name**: `modernc.org/goyacc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# jfrogcom
+# jfrog.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `jfrogcom`
-- **Name**: `jfrogcom`
+- **Name**: `jfrog.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

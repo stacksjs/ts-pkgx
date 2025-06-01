@@ -1,11 +1,11 @@
-# cedarpolicycomcli
+# cedarpolicy.com/cli
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cedarpolicycomcli`
-- **Name**: `cedarpolicycomcli`
+- **Name**: `cedarpolicy.com/cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

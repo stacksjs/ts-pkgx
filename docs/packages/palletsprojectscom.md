@@ -1,11 +1,11 @@
-# palletsprojectscom
+# palletsprojects.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `palletsprojectscom`
-- **Name**: `palletsprojectscom`
+- **Name**: `palletsprojects.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

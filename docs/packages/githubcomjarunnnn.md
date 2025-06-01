@@ -1,11 +1,11 @@
-# githubcomjarunnnn
+# github.com/jarun-nnn
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomjarunnnn`
-- **Name**: `githubcomjarunnnn`
+- **Name**: `github.com/jarun-nnn`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

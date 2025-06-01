@@ -1,11 +1,11 @@
-# pagureio
+# pagure.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `pagureio`
-- **Name**: `pagureio`
+- **Name**: `pagure.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

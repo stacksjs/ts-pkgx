@@ -1,11 +1,11 @@
-# linkerdio
+# linkerd.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `linkerdio`
-- **Name**: `linkerdio`
+- **Name**: `linkerd.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

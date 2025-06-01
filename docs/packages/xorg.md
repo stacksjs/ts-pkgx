@@ -1,11 +1,11 @@
-# xorg
+# x.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `xorg`
-- **Name**: `xorg`
+- **Name**: `x.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

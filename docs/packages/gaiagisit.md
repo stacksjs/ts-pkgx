@@ -1,11 +1,11 @@
-# gaiagisit
+# gaia/gis.it
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `gaiagisit`
-- **Name**: `gaiagisit`
+- **Name**: `gaia/gis.it`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

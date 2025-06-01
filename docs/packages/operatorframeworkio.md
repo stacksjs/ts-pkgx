@@ -1,11 +1,11 @@
-# operatorframeworkio
+# operatorframework.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `operatorframeworkio`
-- **Name**: `operatorframeworkio`
+- **Name**: `operatorframework.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

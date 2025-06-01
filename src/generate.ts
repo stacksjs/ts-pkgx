@@ -1034,7 +1034,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
         const aliases = pkg.aliases ? ` (${pkg.aliases.join(', ')})` : ''
 
         // Limit programs display and escape template variables for VitePress
-        let programs = pkg.programs.slice(0, 3).map(p => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ')
+        let programs = pkg.programs.slice(0, 3).map((p: string) => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ')
         if (pkg.programs.length > 3) {
           programs += `, ... (+${pkg.programs.length - 3})`
         }
@@ -1159,9 +1159,10 @@ async function generatePackagePages(outputDir: string): Promise<string[]> {
 
   const generatedFiles: string[] = []
 
-  for (const [domain, pkg] of Object.entries(pantry)) {
+  for (const [domainVarName, pkg] of Object.entries(pantry)) {
     try {
-      const filename = `${domain.replace(/\./g, '-')}.md`
+      // Use the domain variable name for the filename to ensure consistency
+      const filename = `${domainVarName}.md`
       const filepath = path.join(packagesDir, filename)
 
       let content = `# ${pkg.name || domain}
@@ -1189,7 +1190,7 @@ This package provides the following executable programs:
 `
 
       if (pkg.programs && pkg.programs.length > 0) {
-        pkg.programs.forEach((program) => {
+        pkg.programs.forEach((program: string) => {
           // Escape template variables for VitePress
           const escapedProgram = program.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')
           content += `- \`${escapedProgram}\`\n`
@@ -1323,9 +1324,17 @@ async function generateCategoryPages(outputDir: string): Promise<string[]> {
 
   const generatedFiles: string[] = []
 
-  for (const [categoryName, domains] of Object.entries(categories)) {
-    const validDomains = domains.filter(domain => pantry[domain])
-    if (validDomains.length === 0)
+  for (const [categoryName, domainVarNames] of Object.entries(categories)) {
+    // Convert domain variable names back to actual domains and get valid packages
+    const validPackages = domainVarNames
+      .map((domainVarName) => {
+        const pkg = pantry[domainVarName]
+        return pkg ? { domainVarName, pkg } : null
+      })
+      .filter((item): item is { domainVarName: string, pkg: PkgxPackage } => item !== null)
+      .sort((a, b) => (a.pkg.domain || a.domainVarName).localeCompare(b.pkg.domain || b.domainVarName))
+
+    if (validPackages.length === 0)
       continue
 
     const filename = `${categoryName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.md`
@@ -1333,7 +1342,7 @@ async function generateCategoryPages(outputDir: string): Promise<string[]> {
 
     let content = `# ${categoryName}
 
-*${validDomains.length} packages in this category*
+*${validPackages.length} packages in this category*
 
 ${categoryName === 'Programming Languages'
     ? 'Popular programming languages and their runtimes available through pkgx.'
@@ -1348,24 +1357,22 @@ ${categoryName === 'Programming Languages'
 
 `
 
-    validDomains.sort().forEach((domain) => {
-      const pkg = pantry[domain]
-      if (pkg) {
-        const aliases = pkg.aliases ? ` (${pkg.aliases.join(', ')})` : ''
-        content += `### [${domain}](../packages/${domain.replace(/\./g, '-')}.md)${aliases}
+    validPackages.forEach(({ pkg }) => {
+      const domain = pkg.domain || pkg.fullPath || 'unknown'
+      const aliases = pkg.aliases && pkg.aliases.length > 0 ? ` (${pkg.aliases.join(', ')})` : ''
+      content += `### [${domain}](../packages/${domain.replace(/\./g, '-')}.md)${aliases}
 ${pkg.description
   ? `
 ${pkg.description}
 `
   : ''}
-**Programs**: ${pkg.programs.length > 0 ? pkg.programs.map(p => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ') : 'None specified'}
+**Programs**: ${pkg.programs && pkg.programs.length > 0 ? pkg.programs.map((p: string) => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ') : 'None specified'}
 
 **Install**: \`${pkg.installCommand || `pkgx ${pkg.name || domain}`}\`
 
 ---
 
 `
-      }
     })
 
     content += `[← Back to Package Catalog](../package-catalog.md)

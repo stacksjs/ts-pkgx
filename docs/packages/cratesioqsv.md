@@ -1,11 +1,11 @@
-# cratesioqsv
+# crates.io/qsv
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cratesioqsv`
-- **Name**: `cratesioqsv`
+- **Name**: `crates.io/qsv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

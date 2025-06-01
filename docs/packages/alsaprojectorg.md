@@ -1,11 +1,11 @@
-# alsaprojectorg
+# alsa/project.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `alsaprojectorg`
-- **Name**: `alsaprojectorg`
+- **Name**: `alsa/project.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

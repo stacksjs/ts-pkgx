@@ -1,11 +1,11 @@
-# microsoftcomcodecli
+# microsoft.com/code-cli
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `microsoftcomcodecli`
-- **Name**: `microsoftcomcodecli`
+- **Name**: `microsoft.com/code-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

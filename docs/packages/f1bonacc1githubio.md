@@ -1,11 +1,11 @@
-# f1bonacc1githubio
+# f1bonacc1.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `f1bonacc1githubio`
-- **Name**: `f1bonacc1githubio`
+- **Name**: `f1bonacc1.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

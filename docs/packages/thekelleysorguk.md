@@ -1,11 +1,11 @@
-# thekelleysorguk
+# thekelleys.org.uk
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `thekelleysorguk`
-- **Name**: `thekelleysorguk`
+- **Name**: `thekelleys.org.uk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

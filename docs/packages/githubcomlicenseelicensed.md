@@ -1,11 +1,11 @@
-# githubcomlicenseelicensed
+# github.com/licensee-licensed
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomlicenseelicensed`
-- **Name**: `githubcomlicenseelicensed`
+- **Name**: `github.com/licensee-licensed`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

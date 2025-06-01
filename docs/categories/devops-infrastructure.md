@@ -6,7 +6,7 @@ Tools for deployment, orchestration, and infrastructure management.
 
 ## Packages
 
-### [ansiblecom](../packages/ansiblecom.md) ()
+### [ansible.com](../packages/ansible-com.md)
 
 Crafters of fine Open Source products
 
@@ -16,7 +16,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [argoprojgithubio](../packages/argoprojgithubio.md) ()
+### [argoproj.github.io](../packages/argoproj-github-io.md)
 
 Go home.
 
@@ -26,7 +26,7 @@ Go home.
 
 ---
 
-### [ciliumio](../packages/ciliumio.md) ()
+### [cilium.io](../packages/cilium-io.md)
 
 Go home.
 
@@ -36,7 +36,7 @@ Go home.
 
 ---
 
-### [consulio](../packages/consulio.md) ()
+### [consul.io](../packages/consul-io.md)
 
 Crafters of fine Open Source products
 
@@ -46,7 +46,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [dockercom](../packages/dockercom.md) ()
+### [docker.com](../packages/docker-com.md)
 
 Go home.
 
@@ -56,7 +56,7 @@ Go home.
 
 ---
 
-### [fluxcdio](../packages/fluxcdio.md) ()
+### [fluxcd.io](../packages/fluxcd-io.md)
 
 Go home.
 
@@ -66,7 +66,7 @@ Go home.
 
 ---
 
-### [helmsh](../packages/helmsh.md) ()
+### [helm.sh](../packages/helm-sh.md)
 
 Crafters of fine Open Source products
 
@@ -76,7 +76,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [istioio](../packages/istioio.md) ()
+### [istio.io](../packages/istio-io.md)
 
 Crafters of fine Open Source products
 
@@ -86,7 +86,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [kubernetesio](../packages/kubernetesio.md) ()
+### [kubernetes.io](../packages/kubernetes-io.md)
 
 Go home.
 
@@ -96,7 +96,7 @@ Go home.
 
 ---
 
-### [nomadprojectio](../packages/nomadprojectio.md) ()
+### [nomadproject.io](../packages/nomadproject-io.md)
 
 Crafters of fine Open Source products
 
@@ -106,7 +106,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [podmanio](../packages/podmanio.md) ()
+### [podman.io](../packages/podman-io.md)
 
 Crafters of fine Open Source products
 
@@ -116,7 +116,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [terraformio](../packages/terraformio.md) ()
+### [terraform.io](../packages/terraform-io.md)
 
 Crafters of fine Open Source products
 
@@ -126,7 +126,7 @@ Crafters of fine Open Source products
 
 ---
 
-### [traefikio](../packages/traefikio.md) ()
+### [traefik.io](../packages/traefik-io.md)
 
 Crafters of fine Open Source products
 

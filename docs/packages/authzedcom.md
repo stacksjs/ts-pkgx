@@ -1,11 +1,11 @@
-# authzedcom
+# authzed.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `authzedcom`
-- **Name**: `authzedcom`
+- **Name**: `authzed.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

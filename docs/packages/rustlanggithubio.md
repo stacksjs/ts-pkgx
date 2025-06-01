@@ -1,11 +1,11 @@
-# rustlanggithubio
+# rust/lang.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `rustlanggithubio`
-- **Name**: `rustlanggithubio`
+- **Name**: `rust/lang.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

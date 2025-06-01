@@ -1,11 +1,11 @@
-# swaggerio
+# swagger.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `swaggerio`
-- **Name**: `swaggerio`
+- **Name**: `swagger.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

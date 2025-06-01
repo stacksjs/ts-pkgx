@@ -1,11 +1,11 @@
-# githubcomshakaprojectshakapackager
+# github.com/shaka-project-shaka-packager
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomshakaprojectshakapackager`
-- **Name**: `githubcomshakaprojectshakapackager`
+- **Name**: `github.com/shaka-project-shaka-packager`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

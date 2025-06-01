@@ -1,11 +1,11 @@
-# astralshruff
+# astral.sh/ruff
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `astralshruff`
-- **Name**: `astralshruff`
+- **Name**: `astral.sh/ruff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

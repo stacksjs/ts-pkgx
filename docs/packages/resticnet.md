@@ -1,11 +1,11 @@
-# resticnet
+# restic.net
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `resticnet`
-- **Name**: `resticnet`
+- **Name**: `restic.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

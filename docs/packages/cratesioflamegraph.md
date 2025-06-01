@@ -1,11 +1,11 @@
-# cratesioflamegraph
+# crates.io/flamegraph
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cratesioflamegraph`
-- **Name**: `cratesioflamegraph`
+- **Name**: `crates.io/flamegraph`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# darwinsyscom
+# darwinsys.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `darwinsyscom`
-- **Name**: `darwinsyscom`
+- **Name**: `darwinsys.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

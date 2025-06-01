@@ -1,11 +1,11 @@
-# cratesiobakers
+# crates.io/bake-rs
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cratesiobakers`
-- **Name**: `cratesiobakers`
+- **Name**: `crates.io/bake-rs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

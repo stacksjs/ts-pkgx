@@ -1,11 +1,11 @@
-# openprintinggithubio
+# openprinting.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `openprintinggithubio`
-- **Name**: `openprintinggithubio`
+- **Name**: `openprinting.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

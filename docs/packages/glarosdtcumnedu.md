@@ -1,11 +1,11 @@
-# glarosdtcumnedu
+# glaros.dtc.umn.edu
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `glarosdtcumnedu`
-- **Name**: `glarosdtcumnedu`
+- **Name**: `glaros.dtc.umn.edu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

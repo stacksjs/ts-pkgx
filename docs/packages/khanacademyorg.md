@@ -1,11 +1,11 @@
-# khanacademyorg
+# khanacademy.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `khanacademyorg`
-- **Name**: `khanacademyorg`
+- **Name**: `khanacademy.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# googlecom
+# google.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `googlecom`
-- **Name**: `googlecom`
+- **Name**: `google.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# grafanacom
+# grafana.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `grafanacom`
-- **Name**: `grafanacom`
+- **Name**: `grafana.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

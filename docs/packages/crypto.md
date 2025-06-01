@@ -1,11 +1,11 @@
-# crypto
+# cr.yp.to
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `crypto`
-- **Name**: `crypto`
+- **Name**: `cr.yp.to`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

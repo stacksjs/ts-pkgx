@@ -1,11 +1,11 @@
-# githubcompeaks5cmd
+# github.com/peak-s5cmd
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcompeaks5cmd`
-- **Name**: `githubcompeaks5cmd`
+- **Name**: `github.com/peak-s5cmd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

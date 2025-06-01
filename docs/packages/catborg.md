@@ -1,11 +1,11 @@
-# catborg
+# catb.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `catborg`
-- **Name**: `catborg`
+- **Name**: `catb.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

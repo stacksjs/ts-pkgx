@@ -1,11 +1,11 @@
-# charmsh
+# charm.sh
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `charmsh`
-- **Name**: `charmsh`
+- **Name**: `charm.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# fukuchiorg
+# fukuchi.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `fukuchiorg`
-- **Name**: `fukuchiorg`
+- **Name**: `fukuchi.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

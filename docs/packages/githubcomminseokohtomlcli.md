@@ -1,11 +1,11 @@
-# githubcomminseokohtomlcli
+# github.com/MinseokOh-toml-cli
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomminseokohtomlcli`
-- **Name**: `githubcomminseokohtomlcli`
+- **Name**: `github.com/MinseokOh-toml-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

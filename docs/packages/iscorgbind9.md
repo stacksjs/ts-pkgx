@@ -1,11 +1,11 @@
-# iscorgbind9
+# isc.org/bind9
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `iscorgbind9`
-- **Name**: `iscorgbind9`
+- **Name**: `isc.org/bind9`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -6,7 +6,7 @@ Packages related to monitoring & observability.
 
 ## Packages
 
-### [grafanacom](../packages/grafanacom.md) ()
+### [grafana.com](../packages/grafana-com.md)
 
 Go home.
 
@@ -16,7 +16,7 @@ Go home.
 
 ---
 
-### [sentryio](../packages/sentryio.md) ()
+### [sentry.io](../packages/sentry-io.md)
 
 Crafters of fine Open Source products
 

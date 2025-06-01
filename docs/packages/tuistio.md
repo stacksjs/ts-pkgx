@@ -1,11 +1,11 @@
-# tuistio
+# tuist.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `tuistio`
-- **Name**: `tuistio`
+- **Name**: `tuist.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# cratesiorucolanotes
+# crates.io/rucola-notes
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cratesiorucolanotes`
-- **Name**: `cratesiorucolanotes`
+- **Name**: `crates.io/rucola-notes`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# thoughtworksgithubio
+# thoughtworks.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `thoughtworksgithubio`
-- **Name**: `thoughtworksgithubio`
+- **Name**: `thoughtworks.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

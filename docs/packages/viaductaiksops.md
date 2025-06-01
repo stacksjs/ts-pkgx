@@ -1,11 +1,11 @@
-# viaductaiksops
+# viaduct.ai/ksops
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `viaductaiksops`
-- **Name**: `viaductaiksops`
+- **Name**: `viaduct.ai/ksops`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

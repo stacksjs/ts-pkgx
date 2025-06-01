@@ -1,11 +1,11 @@
-# budimanjojogithubio
+# budimanjojo.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `budimanjojogithubio`
-- **Name**: `budimanjojogithubio`
+- **Name**: `budimanjojo.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

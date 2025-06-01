@@ -1,11 +1,11 @@
-# schollzcom
+# schollz.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `schollzcom`
-- **Name**: `schollzcom`
+- **Name**: `schollz.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

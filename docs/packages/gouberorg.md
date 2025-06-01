@@ -1,11 +1,11 @@
-# gouberorg
+# go.uber.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `gouberorg`
-- **Name**: `gouberorg`
+- **Name**: `go.uber.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

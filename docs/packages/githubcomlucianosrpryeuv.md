@@ -1,11 +1,11 @@
-# githubcomlucianosrpryeuv
+# github.com/lucianosrp-rye-uv
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomlucianosrpryeuv`
-- **Name**: `githubcomlucianosrpryeuv`
+- **Name**: `github.com/lucianosrp-rye-uv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

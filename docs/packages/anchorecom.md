@@ -1,11 +1,11 @@
-# anchorecom
+# anchore.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `anchorecom`
-- **Name**: `anchorecom`
+- **Name**: `anchore.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

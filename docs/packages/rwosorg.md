@@ -1,11 +1,11 @@
-# rwosorg
+# r/wos.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `rwosorg`
-- **Name**: `rwosorg`
+- **Name**: `r/wos.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

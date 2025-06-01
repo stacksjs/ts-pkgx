@@ -1,11 +1,11 @@
-# idleberggithubio
+# idleberg.github.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `idleberggithubio`
-- **Name**: `idleberggithubio`
+- **Name**: `idleberg.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

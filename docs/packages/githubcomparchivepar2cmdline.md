@@ -1,11 +1,11 @@
-# githubcomparchivepar2cmdline
+# github.com/Parchive-par2cmdline
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomparchivepar2cmdline`
-- **Name**: `githubcomparchivepar2cmdline`
+- **Name**: `github.com/Parchive-par2cmdline`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

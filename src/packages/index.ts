@@ -3507,10 +3507,14 @@ export interface Pantry {
   surrealdbcom: surrealdb_com.SurrealdbcomPackage
 
   /**
-   * **cURL**
+   * **cURL** - A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP...
    *
    * @domain `curl.se`
-   * @install `pkgx curl.se`
+   * @programs `curl`, `curl-config`
+   * @version `8.14.0` (24 versions available)
+   * @install `sh <(curl https://pkgx.sh) +curl.se -- $SHELL -i`
+   * @aliases `cURL`
+   * @dependencies `openssl.org^1.1`, `curl.se/ca-certs`, `zlib.net^1.2.11`
    *
    * @example
    * ```typescript
@@ -3518,10 +3522,12 @@ export interface Pantry {
    *
    * const pkg = pantry.curlse
    * console.log(pkg.name)        // "cURL"
-   * console.log(pkg.description) // "Crafters of fine Open Source products"
+   * console.log(pkg.description) // "A command line tool and library for transferrin..."
+   * console.log(pkg.programs)    // ["curl", "curl-config"]
+   * console.log(pkg.versions[0]) // "8.14.0"
    * ```
    */
-  curlse: curl_se.CurlsePackage
+  curlse: curl_se.CURLPackage
 
   /**
    * **sqlc**
@@ -15707,6 +15713,27 @@ export interface Pantry {
   cdk: aws_amazon_com_cdk.AwsamazoncomcdkPackage
 
   /**
+   * **cURL** - Alias for `curl.se`
+   *
+   * A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS,...
+   *
+   * @alias_for `pantry.curlse`
+   * @domain `curl.se`
+   * @programs `curl`, `curl-config`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.curl  // via alias
+   * const pkg2 = pantry.curlse  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  curl: curl_se.CURLPackage
+
+  /**
    * **git-crypt** - Alias for `agwa.name/git-crypt`
    *
    * Enable transparent encryption/decryption of files in a git repo
@@ -15887,7 +15914,7 @@ export const pantry: Pantry = {
   githubcomsorahenvchain: github_com_sorah_envchain.githubcomsorahenvchainPackage,
   augeasnet: augeas_net.augeasnetPackage,
   surrealdbcom: surrealdb_com.surrealdbcomPackage,
-  curlse: curl_se.curlsePackage,
+  curlse: curl_se.cURLPackage,
   sqlcdev: sqlc_dev.sqlcdevPackage,
   virtualsquareorg: virtualsquare_org.virtualsquareorgPackage,
   terraformdocsio: terraform_docs_io.terraformdocsioPackage,
@@ -16604,6 +16631,7 @@ export const pantry: Pantry = {
   awscdk: aws_amazon_com_cdk.awsamazoncomcdkPackage,
   awscli: aws_amazon_com_cli.awsamazoncomcliPackage,
   cdk: aws_amazon_com_cdk.awsamazoncomcdkPackage,
+  curl: curl_se.cURLPackage,
   gitcrypt: agwa_name_git_crypt.gitcryptPackage,
 }
 

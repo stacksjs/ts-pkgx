@@ -1,11 +1,11 @@
-# vercelcom
+# vercel.com
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `vercelcom`
-- **Name**: `vercelcom`
+- **Name**: `vercel.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

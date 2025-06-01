@@ -1,11 +1,11 @@
-# githubcomdiniboy1123usque
+# github.com/Diniboy1123-usque
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomdiniboy1123usque`
-- **Name**: `githubcomdiniboy1123usque`
+- **Name**: `github.com/Diniboy1123-usque`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

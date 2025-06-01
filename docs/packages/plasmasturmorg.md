@@ -1,11 +1,11 @@
-# plasmasturmorg
+# plasmasturm.org
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `plasmasturmorg`
-- **Name**: `plasmasturmorg`
+- **Name**: `plasmasturm.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# akuityio
+# akuity.io
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `akuityio`
-- **Name**: `akuityio`
+- **Name**: `akuity.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

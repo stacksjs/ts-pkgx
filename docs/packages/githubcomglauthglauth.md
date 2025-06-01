@@ -1,11 +1,11 @@
-# githubcomglauthglauth
+# github.com/glauth-glauth
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `githubcomglauthglauth`
-- **Name**: `githubcomglauthglauth`
+- **Name**: `github.com/glauth-glauth`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

@@ -1,11 +1,11 @@
-# libtomnet
+# libtom.net
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `libtomnet`
-- **Name**: `libtomnet`
+- **Name**: `libtom.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

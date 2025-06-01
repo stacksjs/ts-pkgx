@@ -1,11 +1,11 @@
-# publichronopikde
+# public.hronopik.de
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `publichronopikde`
-- **Name**: `publichronopikde`
+- **Name**: `public.hronopik.de`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

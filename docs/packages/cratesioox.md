@@ -1,11 +1,11 @@
-# cratesioox
+# crates.io/ox
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `cratesioox`
-- **Name**: `cratesioox`
+- **Name**: `crates.io/ox`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 

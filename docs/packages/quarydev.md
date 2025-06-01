@@ -1,11 +1,11 @@
-# quarydev
+# quary.dev
 
 > Go home.
 
 ## Package Information
 
 - **Domain**: `quarydev`
-- **Name**: `quarydev`
+- **Name**: `quary.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](#)
 
