@@ -58,8 +58,8 @@ export const libeventorgPackage = {
   versions: [
     '2.1.12',
   ] as const,
-  aliases: [] as const,
   fullPath: 'libevent.org' as const,
+  aliases: [] as const,
 }
 
 export type LibeventorgPackage = typeof libeventorgPackage

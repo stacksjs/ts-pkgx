@@ -91,6 +91,7 @@ export const tofuPackage = {
     '1.7.3',
     '1.6.0.3',
   ] as const,
+  fullPath: 'opentofu.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -98,7 +99,6 @@ export const tofuPackage = {
   aliases: [
     'tofu',
   ] as const,
-  fullPath: 'opentofu.org' as const,
 }
 
 export type TofuPackage = typeof tofuPackage

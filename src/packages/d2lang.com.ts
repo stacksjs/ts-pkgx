@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/d2lang-com.md
  *
  * @install `sh <(curl https://pkgx.sh) d2`
- * @aliases `d2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.d2
- * // Or access via domain
- * const samePkg = pantry.d2langcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.d2langcom
  * console.log(pkg.name)        // "d2"
  * console.log(pkg.description) // "D2 is a modern diagram scripting language that ..."
  * console.log(pkg.programs)    // ["d2"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/d2lang-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const d2Package = {
+export const d2langcomPackage = {
   /**
    * The display name of this package.
    */
@@ -74,14 +69,8 @@ export const d2Package = {
     '0.6.1',
     '0.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'd2',
-  ] as const,
   fullPath: 'd2lang.com' as const,
+  aliases: [] as const,
 }
 
-export type D2Package = typeof d2Package
+export type D2langcomPackage = typeof d2langcomPackage

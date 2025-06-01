@@ -77,8 +77,8 @@ export const libgdgithubioPackage = {
   versions: [
     '2.3.3',
   ] as const,
-  aliases: [] as const,
   fullPath: 'libgd.github.io' as const,
+  aliases: [] as const,
 }
 
 export type LibgdgithubioPackage = typeof libgdgithubioPackage

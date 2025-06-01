@@ -79,8 +79,8 @@ export const libpngorgPackage = {
     '1.6.39',
     '1.6.35',
   ] as const,
-  aliases: [] as const,
   fullPath: 'libpng.org' as const,
+  aliases: [] as const,
 }
 
 export type LibpngorgPackage = typeof libpngorgPackage

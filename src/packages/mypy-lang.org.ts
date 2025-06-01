@@ -91,8 +91,8 @@ export const mypylangorgPackage = {
     '1.3.0',
     '1.2.0',
   ] as const,
-  aliases: [] as const,
   fullPath: 'mypy-lang.org' as const,
+  aliases: [] as const,
 }
 
 export type MypylangorgPackage = typeof mypylangorgPackage

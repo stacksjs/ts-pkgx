@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/oras-land.md
  *
  * @install `sh <(curl https://pkgx.sh) oras`
- * @aliases `oras`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.oras
- * // Or access via domain
- * const samePkg = pantry.orasland
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.orasland
  * console.log(pkg.name)        // "oras"
  * console.log(pkg.description) // "OCI registry client - managing content like art..."
  * console.log(pkg.programs)    // ["oras"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/oras-land.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const orasPackage = {
+export const oraslandPackage = {
   /**
    * The display name of this package.
    */
@@ -67,14 +62,8 @@ export const orasPackage = {
     '1.2.1',
     '1.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'oras',
-  ] as const,
   fullPath: 'oras.land' as const,
+  aliases: [] as const,
 }
 
-export type OrasPackage = typeof orasPackage
+export type OraslandPackage = typeof oraslandPackage

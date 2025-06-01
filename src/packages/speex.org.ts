@@ -71,6 +71,7 @@ export const speexdecPackage = {
   versions: [
     '1.2.1',
   ] as const,
+  fullPath: 'speex.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -78,7 +79,6 @@ export const speexdecPackage = {
   aliases: [
     'speexdec',
   ] as const,
-  fullPath: 'speex.org' as const,
 }
 
 export type SpeexdecPackage = typeof speexdecPackage

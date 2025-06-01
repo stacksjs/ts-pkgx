@@ -64,8 +64,8 @@ export const qhullorgPackage = {
   versions: [
     '8.0.2',
   ] as const,
-  aliases: [] as const,
   fullPath: 'qhull.org' as const,
+  aliases: [] as const,
 }
 
 export type QhullorgPackage = typeof qhullorgPackage

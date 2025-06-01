@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/re2c-org.md
  *
  * @install `sh <(curl https://pkgx.sh) re2c`
- * @aliases `re2c`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.re2c
- * // Or access via domain
- * const samePkg = pantry.re2corg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.re2corg
  * console.log(pkg.name)        // "re2c"
  * console.log(pkg.description) // "Lexer generator for C, C++, D, Go, Haskell, Jav..."
  * console.log(pkg.programs)    // ["re2c"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/re2c-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const re2cPackage = {
+export const re2corgPackage = {
   /**
    * The display name of this package.
    */
@@ -70,14 +65,8 @@ export const re2cPackage = {
     '3.1.0',
     '3.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    're2c',
-  ] as const,
   fullPath: 're2c.org' as const,
+  aliases: [] as const,
 }
 
-export type Re2cPackage = typeof re2cPackage
+export type Re2corgPackage = typeof re2corgPackage

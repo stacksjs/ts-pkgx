@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bore-pub.md
  *
  * @install `sh <(curl https://pkgx.sh) bore`
- * @aliases `bore`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.bore
- * // Or access via domain
- * const samePkg = pantry.borepub
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.borepub
  * console.log(pkg.name)        // "bore"
  * console.log(pkg.description) // "Modern, simple TCP tunnel in Rust that exposes ..."
  * console.log(pkg.programs)    // ["bore"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bore-pub.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const borePackage = {
+export const borepubPackage = {
   /**
    * The display name of this package.
    */
@@ -67,14 +62,8 @@ export const borePackage = {
     '0.5.1',
     '0.5.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'bore',
-  ] as const,
   fullPath: 'bore.pub' as const,
+  aliases: [] as const,
 }
 
-export type BorePackage = typeof borePackage
+export type BorepubPackage = typeof borepubPackage

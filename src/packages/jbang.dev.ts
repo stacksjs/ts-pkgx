@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jbang-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) jbang`
- * @aliases `jbang`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jbang
- * // Or access via domain
- * const samePkg = pantry.jbangdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jbangdev
  * console.log(pkg.name)        // "jbang"
  * console.log(pkg.description) // "Unleash the power of Java - JBang Lets Students..."
  * console.log(pkg.programs)    // ["jbang"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jbang-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jbangPackage = {
+export const jbangdevPackage = {
   /**
    * The display name of this package.
    */
@@ -90,14 +85,8 @@ export const jbangPackage = {
     '0.111.0',
     '0.110.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'jbang',
-  ] as const,
   fullPath: 'jbang.dev' as const,
+  aliases: [] as const,
 }
 
-export type JbangPackage = typeof jbangPackage
+export type JbangdevPackage = typeof jbangdevPackage

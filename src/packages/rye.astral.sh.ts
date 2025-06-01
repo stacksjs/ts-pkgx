@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rye-astral-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) rye`
- * @aliases `rye`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.rye
- * // Or access via domain
- * const samePkg = pantry.ryeastralsh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ryeastralsh
  * console.log(pkg.name)        // "rye"
  * console.log(pkg.description) // "Experimental Package Management Solution for Py..."
  * console.log(pkg.programs)    // ["rye"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rye-astral-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ryePackage = {
+export const ryeastralshPackage = {
   /**
    * The display name of this package.
    */
@@ -79,14 +74,8 @@ export const ryePackage = {
     '0.37.0',
     '0.36.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'rye',
-  ] as const,
   fullPath: 'rye.astral.sh' as const,
+  aliases: [] as const,
 }
 
-export type RyePackage = typeof ryePackage
+export type RyeastralshPackage = typeof ryeastralshPackage

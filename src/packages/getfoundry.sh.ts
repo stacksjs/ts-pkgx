@@ -77,6 +77,10 @@ export const getfoundryshPackage = {
     '1.0.0',
     '0.3.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'getfoundry.sh' as const,
 }

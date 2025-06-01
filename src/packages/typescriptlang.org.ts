@@ -83,6 +83,7 @@ export const tscPackage = {
     '5.4.3',
     '5.4.2',
   ] as const,
+  fullPath: 'typescriptlang.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -90,7 +91,6 @@ export const tscPackage = {
   aliases: [
     'tsc',
   ] as const,
-  fullPath: 'typescriptlang.org' as const,
 }
 
 export type TscPackage = typeof tscPackage

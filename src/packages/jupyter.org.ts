@@ -138,8 +138,8 @@ export const jupyterorgPackage = {
     '3.6.4',
     '3.6.3',
   ] as const,
-  aliases: [] as const,
   fullPath: 'jupyter.org' as const,
+  aliases: [] as const,
 }
 
 export type JupyterorgPackage = typeof jupyterorgPackage

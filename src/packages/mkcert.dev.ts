@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mkcert-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) mkcert`
- * @aliases `mkcert`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mkcert
- * // Or access via domain
- * const samePkg = pantry.mkcertdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mkcertdev
  * console.log(pkg.name)        // "mkcert"
  * console.log(pkg.description) // "A simple zero-config tool to make locally trust..."
  * console.log(pkg.programs)    // ["mkcert"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mkcert-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mkcertPackage = {
+export const mkcertdevPackage = {
   /**
    * The display name of this package.
    */
@@ -64,14 +59,8 @@ export const mkcertPackage = {
   versions: [
     '1.4.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mkcert',
-  ] as const,
   fullPath: 'mkcert.dev' as const,
+  aliases: [] as const,
 }
 
-export type MkcertPackage = typeof mkcertPackage
+export type MkcertdevPackage = typeof mkcertdevPackage

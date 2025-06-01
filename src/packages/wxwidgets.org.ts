@@ -82,8 +82,8 @@ export const wxwidgetsorgPackage = {
     '3.2.4',
     '3.2.3',
   ] as const,
-  aliases: [] as const,
   fullPath: 'wxwidgets.org' as const,
+  aliases: [] as const,
 }
 
 export type WxwidgetsorgPackage = typeof wxwidgetsorgPackage

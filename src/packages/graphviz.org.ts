@@ -119,6 +119,10 @@ export const graphvizorgPackage = {
     '8.1.0',
     '7.1.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'graphviz.org' as const,
 }

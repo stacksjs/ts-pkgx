@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ipfs-tech.md
  *
  * @install `sh <(curl https://pkgx.sh) ipfs`
- * @aliases `ipfs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.ipfs
- * // Or access via domain
- * const samePkg = pantry.ipfstech
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ipfstech
  * console.log(pkg.name)        // "ipfs"
  * console.log(pkg.description) // "Peer-to-peer hypermedia protocol"
  * console.log(pkg.programs)    // ["ipfs"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ipfs-tech.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ipfsPackage = {
+export const ipfstechPackage = {
   /**
    * The display name of this package.
    */
@@ -91,14 +86,8 @@ export const ipfsPackage = {
     '0.17.0',
     '0.16.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'ipfs',
-  ] as const,
   fullPath: 'ipfs.tech' as const,
+  aliases: [] as const,
 }
 
-export type IpfsPackage = typeof ipfsPackage
+export type IpfstechPackage = typeof ipfstechPackage

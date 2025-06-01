@@ -51,6 +51,10 @@ export const rapidjsonorgPackage = {
   versions: [
     '1.1.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'rapidjson.org' as const,
 }

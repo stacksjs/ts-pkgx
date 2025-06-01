@@ -7,7 +7,6 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/streamlink-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) streamlink`
- * @aliases `streamlink`
  * @dependencies `pkgx.sh^1`
  * @companions `ffmpeg.org`
  *
@@ -15,11 +14,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.streamlink
- * // Or access via domain
- * const samePkg = pantry.streamlinkgithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.streamlinkgithubio
  * console.log(pkg.name)        // "streamlink"
  * console.log(pkg.description) // "Streamlink is a CLI utility which pipes video s..."
  * console.log(pkg.programs)    // ["streamlink"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/streamlink-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const streamlinkPackage = {
+export const streamlinkgithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -96,14 +91,8 @@ export const streamlinkPackage = {
     '6.7.1',
     '6.7.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'streamlink',
-  ] as const,
   fullPath: 'streamlink.github.io' as const,
+  aliases: [] as const,
 }
 
-export type StreamlinkPackage = typeof streamlinkPackage
+export type StreamlinkgithubioPackage = typeof streamlinkgithubioPackage

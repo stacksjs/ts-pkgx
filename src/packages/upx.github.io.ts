@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/upx-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) upx`
- * @aliases `upx`
  * @dependencies `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.upx
- * // Or access via domain
- * const samePkg = pantry.upxgithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.upxgithubio
  * console.log(pkg.name)        // "upx"
  * console.log(pkg.description) // "UPX - the Ultimate Packer for eXecutables"
  * console.log(pkg.programs)    // ["upx"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/upx-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const upxPackage = {
+export const upxgithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -73,14 +68,8 @@ export const upxPackage = {
     '5.0.0',
     '4.2.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'upx',
-  ] as const,
   fullPath: 'upx.github.io' as const,
+  aliases: [] as const,
 }
 
-export type UpxPackage = typeof upxPackage
+export type UpxgithubioPackage = typeof upxgithubioPackage

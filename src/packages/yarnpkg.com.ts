@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/yarnpkg-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i`
- * @aliases `yarn`
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.yarn
- * // Or access via domain
- * const samePkg = pantry.yarnpkgcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.yarnpkgcom
  * console.log(pkg.name)        // "yarn"
  * console.log(pkg.description) // "📦🐈 Active development trunk for Yarn ⚒"
  * console.log(pkg.programs)    // ["yarn", "yarnpkg"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/yarnpkg-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const yarnPackage = {
+export const yarnpkgcomPackage = {
   /**
    * The display name of this package.
    */
@@ -110,14 +105,8 @@ export const yarnPackage = {
     '3.5.0',
     '3.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'yarn',
-  ] as const,
   fullPath: 'yarnpkg.com' as const,
+  aliases: [] as const,
 }
 
-export type YarnPackage = typeof yarnPackage
+export type YarnpkgcomPackage = typeof yarnpkgcomPackage

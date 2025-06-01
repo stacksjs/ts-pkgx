@@ -72,6 +72,7 @@ export const s3cmdPackage = {
     '2.4.0',
     '2.3.0',
   ] as const,
+  fullPath: 's3tools.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -79,7 +80,6 @@ export const s3cmdPackage = {
   aliases: [
     's3cmd',
   ] as const,
-  fullPath: 's3tools.org' as const,
 }
 
 export type S3cmdPackage = typeof s3cmdPackage

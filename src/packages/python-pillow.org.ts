@@ -72,6 +72,10 @@ export const pythonpilloworgPackage = {
     '10.3.0',
     '10.2.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'python-pillow.org' as const,
 }

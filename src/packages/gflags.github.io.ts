@@ -51,6 +51,10 @@ export const gflagsgithubioPackage = {
   versions: [
     '2.2.2',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'gflags.github.io' as const,
 }

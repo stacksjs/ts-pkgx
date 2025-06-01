@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/swift-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i`
- * @aliases `swift`
  * @dependencies `linuxgnu.org/gccgnu.org/binutilsgnupg.org^2gnome.org/libxml2libgit2.org~1.7curl.sesqlite.org^3`, `gnu.org/gcc`, `gnu.org/binutils`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.swift
- * // Or access via domain
- * const samePkg = pantry.swiftorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.swiftorg
  * console.log(pkg.name)        // "swift"
  * console.log(pkg.description) // "The Swift Programming Language"
  * console.log(pkg.programs)    // ["docc", "dsymutil", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/swift-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const swiftPackage = {
+export const swiftorgPackage = {
   /**
    * The display name of this package.
    */
@@ -112,14 +107,8 @@ export const swiftPackage = {
     '5.10.0',
     '5.9.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'swift',
-  ] as const,
   fullPath: 'swift.org' as const,
+  aliases: [] as const,
 }
 
-export type SwiftPackage = typeof swiftPackage
+export type SwiftorgPackage = typeof swiftorgPackage

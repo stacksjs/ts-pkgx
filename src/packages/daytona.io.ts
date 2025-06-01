@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/daytona-io.md
  *
  * @install `sh <(curl https://pkgx.sh) daytona`
- * @aliases `daytona`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.daytona
- * // Or access via domain
- * const samePkg = pantry.daytonaio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.daytonaio
  * console.log(pkg.name)        // "daytona"
  * console.log(pkg.description) // "The Open Source Dev Environment Manager."
  * console.log(pkg.programs)    // ["daytona"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/daytona-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const daytonaPackage = {
+export const daytonaioPackage = {
   /**
    * The display name of this package.
    */
@@ -139,14 +134,8 @@ export const daytonaPackage = {
     '0.3.0',
     '0.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'daytona',
-  ] as const,
   fullPath: 'daytona.io' as const,
+  aliases: [] as const,
 }
 
-export type DaytonaPackage = typeof daytonaPackage
+export type DaytonaioPackage = typeof daytonaioPackage

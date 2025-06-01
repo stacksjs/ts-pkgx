@@ -82,6 +82,10 @@ export const elementsprojectorgPackage = {
     '23.2.1',
     '22.1.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'elementsproject.org' as const,
 }

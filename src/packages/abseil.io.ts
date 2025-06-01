@@ -67,8 +67,8 @@ export const abseilioPackage = {
     '20230125.2.0',
     '20220623.2.0',
   ] as const,
-  aliases: [] as const,
   fullPath: 'abseil.io' as const,
+  aliases: [] as const,
 }
 
 export type AbseilioPackage = typeof abseilioPackage

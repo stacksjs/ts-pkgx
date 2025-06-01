@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wasmer-io.md
  *
  * @install `sh <(curl https://pkgx.sh) wasmer`
- * @aliases `wasmer`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.wasmer
- * // Or access via domain
- * const samePkg = pantry.wasmerio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.wasmerio
  * console.log(pkg.name)        // "wasmer"
  * console.log(pkg.description) // "🚀 Fast, secure, lightweight containers based o..."
  * console.log(pkg.programs)    // ["wasmer"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wasmer-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wasmerPackage = {
+export const wasmerioPackage = {
   /**
    * The display name of this package.
    */
@@ -86,14 +81,8 @@ export const wasmerPackage = {
     '4.2.3',
     '4.2.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'wasmer',
-  ] as const,
   fullPath: 'wasmer.io' as const,
+  aliases: [] as const,
 }
 
-export type WasmerPackage = typeof wasmerPackage
+export type WasmerioPackage = typeof wasmerioPackage

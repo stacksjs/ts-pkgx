@@ -90,6 +90,7 @@ export const jenkinsltsPackage = {
     '2.426.3',
     '2.426.2',
   ] as const,
+  fullPath: 'jenkins.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -97,7 +98,6 @@ export const jenkinsltsPackage = {
   aliases: [
     'jenkins-lts',
   ] as const,
-  fullPath: 'jenkins.io' as const,
 }
 
 export type JenkinsltsPackage = typeof jenkinsltsPackage

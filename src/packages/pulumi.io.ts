@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pulumi-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i`
- * @aliases `pulumi`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pulumi
- * // Or access via domain
- * const samePkg = pantry.pulumiio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pulumiio
  * console.log(pkg.name)        // "pulumi"
  * console.log(pkg.description) // "Pulumi - Infrastructure as Code in any programm..."
  * console.log(pkg.programs)    // ["pulumi", "pulumi-analyzer-policy", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pulumi-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pulumiPackage = {
+export const pulumiioPackage = {
   /**
    * The display name of this package.
    */
@@ -218,14 +213,8 @@ export const pulumiPackage = {
     '3.67.0',
     '3.66.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pulumi',
-  ] as const,
   fullPath: 'pulumi.io' as const,
+  aliases: [] as const,
 }
 
-export type PulumiPackage = typeof pulumiPackage
+export type PulumiioPackage = typeof pulumiioPackage

@@ -57,6 +57,10 @@ export const openblasnetPackage = {
     '0.3.24',
     '0.3.23',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'openblas.net' as const,
 }

@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/laravel-com.md
  *
  * @install `sh <(curl https://pkgx.sh) laravel`
- * @aliases `laravel`
  * @dependencies `php.net^8.2`, `getcomposer.org^2.7`, `linuxinfo-zip.org/unzip^6`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.laravel
- * // Or access via domain
- * const samePkg = pantry.laravelcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.laravelcom
  * console.log(pkg.name)        // "laravel"
  * console.log(pkg.description) // "The Laravel application installer."
  * console.log(pkg.programs)    // ["laravel"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/laravel-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const laravelPackage = {
+export const laravelcomPackage = {
   /**
    * The display name of this package.
    */
@@ -89,14 +84,8 @@ export const laravelPackage = {
     '5.8.5',
     '5.8.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'laravel',
-  ] as const,
   fullPath: 'laravel.com' as const,
+  aliases: [] as const,
 }
 
-export type LaravelPackage = typeof laravelPackage
+export type LaravelcomPackage = typeof laravelcomPackage

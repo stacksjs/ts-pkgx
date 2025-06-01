@@ -81,8 +81,8 @@ export const docutilsorgPackage = {
     '0.20.0',
     '0.19.0',
   ] as const,
-  aliases: [] as const,
   fullPath: 'docutils.org' as const,
+  aliases: [] as const,
 }
 
 export type DocutilsorgPackage = typeof docutilsorgPackage

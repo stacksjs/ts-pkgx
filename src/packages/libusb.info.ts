@@ -53,8 +53,8 @@ export const libusbinfoPackage = {
     '1.0.27',
     '1.0.26',
   ] as const,
-  aliases: [] as const,
   fullPath: 'libusb.info' as const,
+  aliases: [] as const,
 }
 
 export type LibusbinfoPackage = typeof libusbinfoPackage

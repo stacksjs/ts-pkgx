@@ -72,6 +72,7 @@ export const sopsPackage = {
     '3.9.0',
     '3.8.1',
   ] as const,
+  fullPath: 'getsops.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -79,7 +80,6 @@ export const sopsPackage = {
   aliases: [
     'sops',
   ] as const,
-  fullPath: 'getsops.io' as const,
 }
 
 export type SopsPackage = typeof sopsPackage

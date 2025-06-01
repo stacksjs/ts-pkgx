@@ -85,6 +85,7 @@ export const zipPackage = {
     '1.10.0',
     '1.9.2',
   ] as const,
+  fullPath: 'libzip.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -92,7 +93,6 @@ export const zipPackage = {
   aliases: [
     'zip',
   ] as const,
-  fullPath: 'libzip.org' as const,
 }
 
 export type ZipPackage = typeof zipPackage

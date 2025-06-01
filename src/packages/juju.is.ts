@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/juju-is.md
  *
  * @install `sh <(curl https://pkgx.sh) juju`
- * @aliases `juju`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.juju
- * // Or access via domain
- * const samePkg = pantry.jujuis
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jujuis
  * console.log(pkg.name)        // "juju"
  * console.log(pkg.description) // "Orchestration engine that enables the deploymen..."
  * console.log(pkg.programs)    // ["juju"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/juju-is.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jujuPackage = {
+export const jujuisPackage = {
   /**
    * The display name of this package.
    */
@@ -79,14 +74,8 @@ export const jujuPackage = {
     '3.1.10',
     '2.9.51',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'juju',
-  ] as const,
   fullPath: 'juju.is' as const,
+  aliases: [] as const,
 }
 
-export type JujuPackage = typeof jujuPackage
+export type JujuisPackage = typeof jujuisPackage

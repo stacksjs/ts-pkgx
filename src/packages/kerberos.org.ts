@@ -97,6 +97,10 @@ export const kerberosorgPackage = {
     '1.20.2',
     '1.20.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'kerberos.org' as const,
 }

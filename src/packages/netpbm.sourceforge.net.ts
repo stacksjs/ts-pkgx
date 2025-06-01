@@ -394,8 +394,8 @@ export const netpbmsourceforgenetPackage = {
     '10.86.38',
     '10.73.43',
   ] as const,
-  aliases: [] as const,
   fullPath: 'netpbm.sourceforge.net' as const,
+  aliases: [] as const,
 }
 
 export type NetpbmsourceforgenetPackage = typeof netpbmsourceforgenetPackage

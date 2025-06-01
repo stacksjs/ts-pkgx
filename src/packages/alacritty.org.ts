@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/alacritty-org.md
  *
  * @install `sh <(curl https://pkgx.sh) alacritty`
- * @aliases `alacritty`
  * @dependencies `linuxfreetype.orgfreedesktop.org/fontconfig`, `freetype.org`, `freedesktop.org/fontconfig`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.alacritty
- * // Or access via domain
- * const samePkg = pantry.alacrittyorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.alacrittyorg
  * console.log(pkg.name)        // "alacritty"
  * console.log(pkg.description) // "A cross-platform, OpenGL terminal emulator."
  * console.log(pkg.programs)    // ["alacritty"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/alacritty-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const alacrittyPackage = {
+export const alacrittyorgPackage = {
   /**
    * The display name of this package.
    */
@@ -76,14 +71,8 @@ export const alacrittyPackage = {
     '0.14.0',
     '0.13.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'alacritty',
-  ] as const,
   fullPath: 'alacritty.org' as const,
+  aliases: [] as const,
 }
 
-export type AlacrittyPackage = typeof alacrittyPackage
+export type AlacrittyorgPackage = typeof alacrittyorgPackage

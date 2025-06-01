@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openslide-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openslide.org -- $SHELL -i`
- * @aliases `openslide`
  * @dependencies `cairographics.org`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.openslide
- * // Or access via domain
- * const samePkg = pantry.openslideorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.openslideorg
  * console.log(pkg.name)        // "openslide"
  * console.log(pkg.description) // "C library to read whole-slide images (a.k.a. vi..."
  * console.log(pkg.programs)    // ["openslide-quickhash1sum", "openslide-show-properties", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openslide-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openslidePackage = {
+export const openslideorgPackage = {
   /**
    * The display name of this package.
    */
@@ -82,14 +77,8 @@ export const openslidePackage = {
     '4.0.0',
     '3.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'openslide',
-  ] as const,
   fullPath: 'openslide.org' as const,
+  aliases: [] as const,
 }
 
-export type OpenslidePackage = typeof openslidePackage
+export type OpenslideorgPackage = typeof openslideorgPackage

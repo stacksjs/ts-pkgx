@@ -53,8 +53,8 @@ export const glmgtrucnetPackage = {
     '1.0.0',
     '0.9.9.8',
   ] as const,
-  aliases: [] as const,
   fullPath: 'glm.g-truc.net' as const,
+  aliases: [] as const,
 }
 
 export type GlmgtrucnetPackage = typeof glmgtrucnetPackage

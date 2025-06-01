@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tailcall-run.md
  *
  * @install `sh <(curl https://pkgx.sh) tailcall`
- * @aliases `tailcall`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.tailcall
- * // Or access via domain
- * const samePkg = pantry.tailcallrun
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tailcallrun
  * console.log(pkg.name)        // "tailcall"
  * console.log(pkg.description) // "High Performance GraphQL Runtime"
  * console.log(pkg.programs)    // ["tailcall"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tailcall-run.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tailcallPackage = {
+export const tailcallrunPackage = {
   /**
    * The display name of this package.
    */
@@ -686,14 +681,8 @@ export const tailcallPackage = {
     '0.18.1',
     '0.18.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'tailcall',
-  ] as const,
   fullPath: 'tailcall.run' as const,
+  aliases: [] as const,
 }
 
-export type TailcallPackage = typeof tailcallPackage
+export type TailcallrunPackage = typeof tailcallrunPackage

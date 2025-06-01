@@ -65,8 +65,8 @@ export const fmtdevPackage = {
     '10.0.0',
     '9.1.0',
   ] as const,
-  aliases: [] as const,
   fullPath: 'fmt.dev' as const,
+  aliases: [] as const,
 }
 
 export type FmtdevPackage = typeof fmtdevPackage

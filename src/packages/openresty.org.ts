@@ -73,8 +73,8 @@ export const openrestyorgPackage = {
   versions: [
     '1.25.3.2',
   ] as const,
-  aliases: [] as const,
   fullPath: 'openresty.org' as const,
+  aliases: [] as const,
 }
 
 export type OpenrestyorgPackage = typeof openrestyorgPackage

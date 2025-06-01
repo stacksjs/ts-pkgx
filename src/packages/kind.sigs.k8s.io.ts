@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kind-sigs-k8s-io.md
  *
  * @install `sh <(curl https://pkgx.sh) kind`
- * @aliases `kind`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.kind
- * // Or access via domain
- * const samePkg = pantry.kindsigsk8sio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kindsigsk8sio
  * console.log(pkg.name)        // "kind"
  * console.log(pkg.description) // "Kubernetes IN Docker - local clusters for testi..."
  * console.log(pkg.programs)    // ["kind"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kind-sigs-k8s-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kindPackage = {
+export const kindsigsk8sioPackage = {
   /**
    * The display name of this package.
    */
@@ -74,14 +69,8 @@ export const kindPackage = {
     '0.20.0',
     '0.19.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'kind',
-  ] as const,
   fullPath: 'kind.sigs.k8s.io' as const,
+  aliases: [] as const,
 }
 
-export type KindPackage = typeof kindPackage
+export type Kindsigsk8sioPackage = typeof kindsigsk8sioPackage

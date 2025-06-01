@@ -7,7 +7,6 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fastlane-tools.md
  *
  * @install `sh <(curl https://pkgx.sh) fastlane`
- * @aliases `fastlane`
  * @dependencies `ruby-lang.org~3.2`, `rubygems.org`
  * @companions `cocoapods.org/xcodeproj`
  *
@@ -15,11 +14,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.fastlane
- * // Or access via domain
- * const samePkg = pantry.fastlanetools
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fastlanetools
  * console.log(pkg.name)        // "fastlane"
  * console.log(pkg.description) // "🚀 The easiest way to automate building and rel..."
  * console.log(pkg.programs)    // ["fastlane"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fastlane-tools.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fastlanePackage = {
+export const fastlanetoolsPackage = {
   /**
    * The display name of this package.
    */
@@ -100,14 +95,8 @@ export const fastlanePackage = {
     '2.212.2',
     '2.212.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'fastlane',
-  ] as const,
   fullPath: 'fastlane.tools' as const,
+  aliases: [] as const,
 }
 
-export type FastlanePackage = typeof fastlanePackage
+export type FastlanetoolsPackage = typeof fastlanetoolsPackage

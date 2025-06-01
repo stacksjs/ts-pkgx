@@ -101,6 +101,7 @@ export const composerPackage = {
     '2.2.24',
     '2.2.23',
   ] as const,
+  fullPath: 'getcomposer.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -108,7 +109,6 @@ export const composerPackage = {
   aliases: [
     'composer',
   ] as const,
-  fullPath: 'getcomposer.org' as const,
 }
 
 export type ComposerPackage = typeof composerPackage

@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vale-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) vale`
- * @aliases `vale`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.vale
- * // Or access via domain
- * const samePkg = pantry.valesh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.valesh
  * console.log(pkg.name)        // "vale"
  * console.log(pkg.description) // ":pencil: A markup-aware linter for prose built ..."
  * console.log(pkg.programs)    // ["vale"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/vale-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const valePackage = {
+export const valeshPackage = {
   /**
    * The display name of this package.
    */
@@ -107,14 +102,8 @@ export const valePackage = {
     '2.29.0',
     '2.28.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'vale',
-  ] as const,
   fullPath: 'vale.sh' as const,
+  aliases: [] as const,
 }
 
-export type ValePackage = typeof valePackage
+export type ValeshPackage = typeof valeshPackage

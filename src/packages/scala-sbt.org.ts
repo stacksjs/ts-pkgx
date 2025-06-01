@@ -89,6 +89,7 @@ export const sbtPackage = {
     '1.9.4',
     '1.9.3',
   ] as const,
+  fullPath: 'scala-sbt.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -96,7 +97,6 @@ export const sbtPackage = {
   aliases: [
     'sbt',
   ] as const,
-  fullPath: 'scala-sbt.org' as const,
 }
 
 export type SbtPackage = typeof sbtPackage

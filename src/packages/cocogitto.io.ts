@@ -77,6 +77,7 @@ export const cogPackage = {
     '5.6.0',
     '5.5.0',
   ] as const,
+  fullPath: 'cocogitto.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -84,7 +85,6 @@ export const cogPackage = {
   aliases: [
     'cog',
   ] as const,
-  fullPath: 'cocogitto.io' as const,
 }
 
 export type CogPackage = typeof cogPackage

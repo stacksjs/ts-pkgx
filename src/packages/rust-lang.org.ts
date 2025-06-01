@@ -121,6 +121,7 @@ export const rustPackage = {
     '1.65.0',
     '1.64.0',
   ] as const,
+  fullPath: 'rust-lang.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -128,7 +129,6 @@ export const rustPackage = {
   aliases: [
     'rust',
   ] as const,
-  fullPath: 'rust-lang.org' as const,
 }
 
 export type RustPackage = typeof rustPackage

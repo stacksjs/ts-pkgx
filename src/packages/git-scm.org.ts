@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/git-scm-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +git-scm.org -- $SHELL -i`
- * @aliases `git`
  * @dependencies `zlib.net@1`, `gnu.org/gettext^0.21`, `curl.se>=5`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.git
- * // Or access via domain
- * const samePkg = pantry.gitscmorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gitscmorg
  * console.log(pkg.name)        // "git"
  * console.log(pkg.description) // "Git Source Code Mirror - This is a publish-only..."
  * console.log(pkg.programs)    // ["git", "git-cvsserver", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/git-scm-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitPackage = {
+export const gitscmorgPackage = {
   /**
    * The display name of this package.
    */
@@ -103,14 +98,8 @@ export const gitPackage = {
     '2.39.0',
     '2.38.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'git',
-  ] as const,
   fullPath: 'git-scm.org' as const,
+  aliases: [] as const,
 }
 
-export type GitPackage = typeof gitPackage
+export type GitscmorgPackage = typeof gitscmorgPackage

@@ -63,8 +63,8 @@ export const markupsafepalletsprojectscomPackage = {
     '2.1.4',
     '2.1.3',
   ] as const,
-  aliases: [] as const,
   fullPath: 'markupsafe.palletsprojects.com' as const,
+  aliases: [] as const,
 }
 
 export type MarkupsafepalletsprojectscomPackage = typeof markupsafepalletsprojectscomPackage

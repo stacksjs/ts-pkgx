@@ -83,8 +83,8 @@ export const leptonicaorgPackage = {
     '1.84.0',
     '1.83.1',
   ] as const,
-  aliases: [] as const,
   fullPath: 'leptonica.org' as const,
+  aliases: [] as const,
 }
 
 export type LeptonicaorgPackage = typeof leptonicaorgPackage

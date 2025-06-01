@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ko-build.md
  *
  * @install `sh <(curl https://pkgx.sh) ko`
- * @aliases `ko`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.ko
- * // Or access via domain
- * const samePkg = pantry.kobuild
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kobuild
  * console.log(pkg.name)        // "ko"
  * console.log(pkg.description) // "Build and deploy Go applications on Kubernetes"
  * console.log(pkg.programs)    // ["ko"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ko-build.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const koPackage = {
+export const kobuildPackage = {
   /**
    * The display name of this package.
    */
@@ -67,14 +62,8 @@ export const koPackage = {
     '0.17.0',
     '0.16.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'ko',
-  ] as const,
   fullPath: 'ko.build' as const,
+  aliases: [] as const,
 }
 
-export type KoPackage = typeof koPackage
+export type KobuildPackage = typeof kobuildPackage

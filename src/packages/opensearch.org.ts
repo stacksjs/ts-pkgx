@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/opensearch-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +opensearch.org -- $SHELL -i`
- * @aliases `opensearch`
  * @dependencies `openjdk.org^21`, `openmp.llvm.org^17`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.opensearch
- * // Or access via domain
- * const samePkg = pantry.opensearchorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.opensearchorg
  * console.log(pkg.name)        // "opensearch"
  * console.log(pkg.description) // "🔎 Open source distributed and RESTful search e..."
  * console.log(pkg.programs)    // ["opensearch", "opensearch-keystore", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/opensearch-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const opensearchPackage = {
+export const opensearchorgPackage = {
   /**
    * The display name of this package.
    */
@@ -85,14 +80,8 @@ export const opensearchPackage = {
     '2.12.0',
     '2.11.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'opensearch',
-  ] as const,
   fullPath: 'opensearch.org' as const,
+  aliases: [] as const,
 }
 
-export type OpensearchPackage = typeof opensearchPackage
+export type OpensearchorgPackage = typeof opensearchorgPackage

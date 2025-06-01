@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/git-lfs-com.md
  *
  * @install `sh <(curl https://pkgx.sh) git-lfs`
- * @aliases `git-lfs`
  * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gitlfs
- * // Or access via domain
- * const samePkg = pantry.gitlfscom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gitlfscom
  * console.log(pkg.name)        // "git-lfs"
  * console.log(pkg.description) // "Git extension for versioning large files"
  * console.log(pkg.programs)    // ["git-lfs"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/git-lfs-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitlfsPackage = {
+export const gitlfscomPackage = {
   /**
    * The display name of this package.
    */
@@ -76,14 +71,8 @@ export const gitlfsPackage = {
     '3.4.0',
     '3.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'git-lfs',
-  ] as const,
   fullPath: 'git-lfs.com' as const,
+  aliases: [] as const,
 }
 
-export type GitlfsPackage = typeof gitlfsPackage
+export type GitlfscomPackage = typeof gitlfscomPackage

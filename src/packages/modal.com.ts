@@ -847,8 +847,8 @@ export const modalcomPackage = {
     '0.64.8',
     '0.64.7',
   ] as const,
-  aliases: [] as const,
   fullPath: 'modal.com' as const,
+  aliases: [] as const,
 }
 
 export type ModalcomPackage = typeof modalcomPackage

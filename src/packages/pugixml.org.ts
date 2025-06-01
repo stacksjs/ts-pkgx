@@ -53,8 +53,8 @@ export const pugixmlorgPackage = {
     '1.14.0',
     '1.13.0',
   ] as const,
-  aliases: [] as const,
   fullPath: 'pugixml.org' as const,
+  aliases: [] as const,
 }
 
 export type PugixmlorgPackage = typeof pugixmlorgPackage

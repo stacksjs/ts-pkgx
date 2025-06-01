@@ -92,6 +92,10 @@ export const elixirlangorgPackage = {
     '1.14.5',
     '1.14.4',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'elixir-lang.org' as const,
 }

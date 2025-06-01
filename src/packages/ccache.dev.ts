@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ccache-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) ccache`
- * @aliases `ccache`
  * @dependencies `github.com/redis/hiredis`, `facebook.com/zstd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.ccache
- * // Or access via domain
- * const samePkg = pantry.ccachedev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ccachedev
  * console.log(pkg.name)        // "ccache"
  * console.log(pkg.description) // "Object-file caching compiler wrapper"
  * console.log(pkg.programs)    // ["ccache"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ccache-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ccachePackage = {
+export const ccachedevPackage = {
   /**
    * The display name of this package.
    */
@@ -81,14 +76,8 @@ export const ccachePackage = {
     '4.9.0',
     '4.8.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'ccache',
-  ] as const,
   fullPath: 'ccache.dev' as const,
+  aliases: [] as const,
 }
 
-export type CcachePackage = typeof ccachePackage
+export type CcachedevPackage = typeof ccachedevPackage

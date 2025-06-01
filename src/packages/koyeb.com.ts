@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/koyeb-com.md
  *
  * @install `sh <(curl https://pkgx.sh) koyeb`
- * @aliases `koyeb`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.koyeb
- * // Or access via domain
- * const samePkg = pantry.koyebcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.koyebcom
  * console.log(pkg.name)        // "koyeb"
  * console.log(pkg.description) // "Koyeb cli"
  * console.log(pkg.programs)    // ["koyeb"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/koyeb-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const koyebPackage = {
+export const koyebcomPackage = {
   /**
    * The display name of this package.
    */
@@ -99,14 +94,8 @@ export const koyebPackage = {
     '3.0.2',
     '3.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'koyeb',
-  ] as const,
   fullPath: 'koyeb.com' as const,
+  aliases: [] as const,
 }
 
-export type KoyebPackage = typeof koyebPackage
+export type KoyebcomPackage = typeof koyebcomPackage

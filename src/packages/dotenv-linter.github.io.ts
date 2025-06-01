@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dotenv-linter-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) dotenv-linter`
- * @aliases `dotenv-linter`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.dotenvlinter
- * // Or access via domain
- * const samePkg = pantry.dotenvlintergithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dotenvlintergithubio
  * console.log(pkg.name)        // "dotenv-linter"
  * console.log(pkg.description) // "⚡️Lightning-fast linter for .env files. Written..."
  * console.log(pkg.programs)    // ["dotenv-linter"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dotenv-linter-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dotenvlinterPackage = {
+export const dotenvlintergithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -64,14 +59,8 @@ export const dotenvlinterPackage = {
   versions: [
     '3.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'dotenv-linter',
-  ] as const,
   fullPath: 'dotenv-linter.github.io' as const,
+  aliases: [] as const,
 }
 
-export type DotenvlinterPackage = typeof dotenvlinterPackage
+export type DotenvlintergithubioPackage = typeof dotenvlintergithubioPackage

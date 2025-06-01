@@ -178,6 +178,7 @@ export const phpPackage = {
     '8.0.28',
     '7.4.33',
   ] as const,
+  fullPath: 'php.net' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -185,7 +186,6 @@ export const phpPackage = {
   aliases: [
     'php',
   ] as const,
-  fullPath: 'php.net' as const,
 }
 
 export type PhpPackage = typeof phpPackage

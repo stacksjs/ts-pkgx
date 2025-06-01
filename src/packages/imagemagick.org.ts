@@ -107,6 +107,10 @@ export const imagemagickorgPackage = {
     '7.1.1.12',
     '7.1.0.61',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'imagemagick.org' as const,
 }

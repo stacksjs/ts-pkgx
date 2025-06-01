@@ -75,6 +75,7 @@ export const aria2cPackage = {
     '1.37.0',
     '1.36.0',
   ] as const,
+  fullPath: 'aria2.github.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -82,7 +83,6 @@ export const aria2cPackage = {
   aliases: [
     'aria2c',
   ] as const,
-  fullPath: 'aria2.github.io' as const,
 }
 
 export type Aria2cPackage = typeof aria2cPackage

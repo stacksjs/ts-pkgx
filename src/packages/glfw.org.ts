@@ -64,8 +64,8 @@ export const glfworgPackage = {
     '3.3.10',
     '3.3.9',
   ] as const,
-  aliases: [] as const,
   fullPath: 'glfw.org' as const,
+  aliases: [] as const,
 }
 
 export type GlfworgPackage = typeof glfworgPackage

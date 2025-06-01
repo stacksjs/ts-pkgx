@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vamp-plugins-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +vamp-plugins.org -- $SHELL -i`
- * @aliases `vamp`
  * @dependencies `xiph.org/flac^1.4`, `xiph.org/ogg^1.3`, `github.com/libsndfile/libsndfile^1.2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.vamp
- * // Or access via domain
- * const samePkg = pantry.vamppluginsorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.vamppluginsorg
  * console.log(pkg.name)        // "vamp"
  * console.log(pkg.description) // "Audio processing plugin system sdk"
  * console.log(pkg.programs)    // ["vamp-simple-host", "vamp-rdf-template-generator"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/vamp-plugins-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vampPackage = {
+export const vamppluginsorgPackage = {
   /**
    * The display name of this package.
    */
@@ -75,14 +70,8 @@ export const vampPackage = {
     '2.10.0',
     '2.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'vamp',
-  ] as const,
   fullPath: 'vamp-plugins.org' as const,
+  aliases: [] as const,
 }
 
-export type VampPackage = typeof vampPackage
+export type VamppluginsorgPackage = typeof vamppluginsorgPackage

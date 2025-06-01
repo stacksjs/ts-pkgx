@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pluralith-com.md
  *
  * @install `sh <(curl https://pkgx.sh) pluralith`
- * @aliases `pluralith`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pluralith
- * // Or access via domain
- * const samePkg = pantry.pluralithcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pluralithcom
  * console.log(pkg.name)        // "pluralith"
  * console.log(pkg.description) // "A tool for Terraform state visualisation and au..."
  * console.log(pkg.programs)    // ["pluralith"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pluralith-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pluralithPackage = {
+export const pluralithcomPackage = {
   /**
    * The display name of this package.
    */
@@ -71,14 +66,8 @@ export const pluralithPackage = {
   versions: [
     '0.2.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pluralith',
-  ] as const,
   fullPath: 'pluralith.com' as const,
+  aliases: [] as const,
 }
 
-export type PluralithPackage = typeof pluralithPackage
+export type PluralithcomPackage = typeof pluralithcomPackage

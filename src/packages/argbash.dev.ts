@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/argbash-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +argbash.dev -- $SHELL -i`
- * @aliases `argbash`
  * @dependencies `gnu.org/bash>=3`, `gnu.org/autoconf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.argbash
- * // Or access via domain
- * const samePkg = pantry.argbashdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.argbashdev
  * console.log(pkg.name)        // "argbash"
  * console.log(pkg.description) // "Bash argument parsing code generator"
  * console.log(pkg.programs)    // ["argbash", "argbash-init", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/argbash-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const argbashPackage = {
+export const argbashdevPackage = {
   /**
    * The display name of this package.
    */
@@ -75,14 +70,8 @@ export const argbashPackage = {
     '2.11.0',
     '2.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'argbash',
-  ] as const,
   fullPath: 'argbash.dev' as const,
+  aliases: [] as const,
 }
 
-export type ArgbashPackage = typeof argbashPackage
+export type ArgbashdevPackage = typeof argbashdevPackage

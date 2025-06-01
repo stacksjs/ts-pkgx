@@ -79,8 +79,8 @@ export const cryptographyioPackage = {
     '42.0.2',
     '42.0.1',
   ] as const,
-  aliases: [] as const,
   fullPath: 'cryptography.io' as const,
+  aliases: [] as const,
 }
 
 export type CryptographyioPackage = typeof cryptographyioPackage

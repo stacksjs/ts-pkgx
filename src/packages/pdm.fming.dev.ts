@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pdm-fming-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) pdm`
- * @aliases `pdm`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pdm
- * // Or access via domain
- * const samePkg = pantry.pdmfmingdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pdmfmingdev
  * console.log(pkg.name)        // "pdm"
  * console.log(pkg.description) // "A modern Python package and dependency manager ..."
  * console.log(pkg.programs)    // ["pdm"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pdm-fming-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pdmPackage = {
+export const pdmfmingdevPackage = {
   /**
    * The display name of this package.
    */
@@ -135,14 +130,8 @@ export const pdmPackage = {
     '2.5.6',
     '2.5.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pdm',
-  ] as const,
   fullPath: 'pdm.fming.dev' as const,
+  aliases: [] as const,
 }
 
-export type PdmPackage = typeof pdmPackage
+export type PdmfmingdevPackage = typeof pdmfmingdevPackage

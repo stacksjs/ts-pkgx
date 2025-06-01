@@ -87,6 +87,10 @@ export const macvimorgPackage = {
     '178.0.0',
     '177.0.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'macvim.org' as const,
 }

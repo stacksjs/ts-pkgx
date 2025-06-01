@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/upliftci-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) uplift`
- * @aliases `uplift`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.uplift
- * // Or access via domain
- * const samePkg = pantry.upliftcidev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.upliftcidev
  * console.log(pkg.name)        // "uplift"
  * console.log(pkg.description) // "Semantic versioning the easy way. Powered by Co..."
  * console.log(pkg.programs)    // ["uplift"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/upliftci-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const upliftPackage = {
+export const upliftcidevPackage = {
   /**
    * The display name of this package.
    */
@@ -68,14 +63,8 @@ export const upliftPackage = {
     '2.23.0',
     '2.22.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'uplift',
-  ] as const,
   fullPath: 'upliftci.dev' as const,
+  aliases: [] as const,
 }
 
-export type UpliftPackage = typeof upliftPackage
+export type UpliftcidevPackage = typeof upliftcidevPackage

@@ -77,8 +77,8 @@ export const scalalangorgPackage = {
     '3.3.6',
     '3.3.5',
   ] as const,
-  aliases: [] as const,
   fullPath: 'scala-lang.org' as const,
+  aliases: [] as const,
 }
 
 export type ScalalangorgPackage = typeof scalalangorgPackage

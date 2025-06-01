@@ -99,8 +99,8 @@ export const mongodbcomPackage = {
     '6.0.18',
     '6.0.17',
   ] as const,
-  aliases: [] as const,
   fullPath: 'mongodb.com' as const,
+  aliases: [] as const,
 }
 
 export type MongodbcomPackage = typeof mongodbcomPackage

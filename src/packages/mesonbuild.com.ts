@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mesonbuild-com.md
  *
  * @install `sh <(curl https://pkgx.sh) meson`
- * @aliases `meson`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.meson
- * // Or access via domain
- * const samePkg = pantry.mesonbuildcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mesonbuildcom
  * console.log(pkg.name)        // "meson"
  * console.log(pkg.description) // "Fast and user friendly build system"
  * console.log(pkg.programs)    // ["meson"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mesonbuild-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mesonPackage = {
+export const mesonbuildcomPackage = {
   /**
    * The display name of this package.
    */
@@ -97,14 +92,8 @@ export const mesonPackage = {
     '0.64.0',
     '0.63.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'meson',
-  ] as const,
   fullPath: 'mesonbuild.com' as const,
+  aliases: [] as const,
 }
 
-export type MesonPackage = typeof mesonPackage
+export type MesonbuildcomPackage = typeof mesonbuildcomPackage

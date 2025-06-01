@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/oauth2-proxy-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) oauth2-proxy`
- * @aliases `oauth2-proxy`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.oauth2proxy
- * // Or access via domain
- * const samePkg = pantry.oauth2proxygithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.oauth2proxygithubio
  * console.log(pkg.name)        // "oauth2-proxy"
  * console.log(pkg.description) // "A reverse proxy that provides authentication wi..."
  * console.log(pkg.programs)    // ["oauth2-proxy"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/oauth2-proxy-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const oauth2proxyPackage = {
+export const oauth2proxygithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -70,14 +65,8 @@ export const oauth2proxyPackage = {
     '7.7.0',
     '7.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'oauth2-proxy',
-  ] as const,
   fullPath: 'oauth2-proxy.github.io' as const,
+  aliases: [] as const,
 }
 
-export type Oauth2proxyPackage = typeof oauth2proxyPackage
+export type Oauth2proxygithubioPackage = typeof oauth2proxygithubioPackage

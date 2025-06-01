@@ -67,6 +67,7 @@ export const elvishPackage = {
     '0.20.0',
     '0.19.2',
   ] as const,
+  fullPath: 'elv.sh' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -74,7 +75,6 @@ export const elvishPackage = {
   aliases: [
     'elvish',
   ] as const,
-  fullPath: 'elv.sh' as const,
 }
 
 export type ElvishPackage = typeof elvishPackage

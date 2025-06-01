@@ -174,6 +174,7 @@ export const ngPackage = {
     '16.2.14',
     '15.2.11',
   ] as const,
+  fullPath: 'angular.dev' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -181,7 +182,6 @@ export const ngPackage = {
   aliases: [
     'ng',
   ] as const,
-  fullPath: 'angular.dev' as const,
 }
 
 export type NgPackage = typeof ngPackage

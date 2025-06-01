@@ -60,8 +60,8 @@ export const glewsourceforgeioPackage = {
   versions: [
     '2.2.0',
   ] as const,
-  aliases: [] as const,
   fullPath: 'glew.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
 export type GlewsourceforgeioPackage = typeof glewsourceforgeioPackage

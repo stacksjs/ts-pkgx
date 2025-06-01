@@ -71,6 +71,7 @@ export const invokePackage = {
   versions: [
     '2.2.0',
   ] as const,
+  fullPath: 'pyinvoke.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -78,7 +79,6 @@ export const invokePackage = {
   aliases: [
     'invoke',
   ] as const,
-  fullPath: 'pyinvoke.org' as const,
 }
 
 export type InvokePackage = typeof invokePackage

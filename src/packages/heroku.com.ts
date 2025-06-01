@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/heroku-com.md
  *
  * @install `sh <(curl https://pkgx.sh) heroku`
- * @aliases `heroku`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.heroku
- * // Or access via domain
- * const samePkg = pantry.herokucom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.herokucom
  * console.log(pkg.name)        // "heroku"
  * console.log(pkg.description) // "CLI for Heroku"
  * console.log(pkg.programs)    // ["heroku"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/heroku-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const herokuPackage = {
+export const herokucomPackage = {
   /**
    * The display name of this package.
    */
@@ -100,14 +95,8 @@ export const herokuPackage = {
     '8.11.0',
     '8.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'heroku',
-  ] as const,
   fullPath: 'heroku.com' as const,
+  aliases: [] as const,
 }
 
-export type HerokuPackage = typeof herokuPackage
+export type HerokucomPackage = typeof herokucomPackage

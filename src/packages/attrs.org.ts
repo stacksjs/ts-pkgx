@@ -64,8 +64,8 @@ export const attrsorgPackage = {
     '24.1.0',
     '23.2.0',
   ] as const,
-  aliases: [] as const,
   fullPath: 'attrs.org' as const,
+  aliases: [] as const,
 }
 
 export type AttrsorgPackage = typeof attrsorgPackage

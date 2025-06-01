@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/prettier-io.md
  *
  * @install `sh <(curl https://pkgx.sh) prettier`
- * @aliases `prettier`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.prettier
- * // Or access via domain
- * const samePkg = pantry.prettierio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.prettierio
  * console.log(pkg.name)        // "prettier"
  * console.log(pkg.description) // "Code formatter for JavaScript, CSS, JSON, Graph..."
  * console.log(pkg.programs)    // ["prettier"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/prettier-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const prettierPackage = {
+export const prettierioPackage = {
   /**
    * The display name of this package.
    */
@@ -82,14 +77,8 @@ export const prettierPackage = {
     '3.3.0',
     '3.2.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'prettier',
-  ] as const,
   fullPath: 'prettier.io' as const,
+  aliases: [] as const,
 }
 
-export type PrettierPackage = typeof prettierPackage
+export type PrettierioPackage = typeof prettierioPackage

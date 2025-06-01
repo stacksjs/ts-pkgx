@@ -108,6 +108,7 @@ export const vipsPackage = {
     '8.15.0',
     '8.14.5',
   ] as const,
+  fullPath: 'libvips.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -115,7 +116,6 @@ export const vipsPackage = {
   aliases: [
     'vips',
   ] as const,
-  fullPath: 'libvips.org' as const,
 }
 
 export type VipsPackage = typeof vipsPackage

@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/syncthing-net.md
  *
  * @install `sh <(curl https://pkgx.sh) syncthing`
- * @aliases `syncthing`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.syncthing
- * // Or access via domain
- * const samePkg = pantry.syncthingnet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.syncthingnet
  * console.log(pkg.name)        // "syncthing"
  * console.log(pkg.description) // "Open source continuous file synchronization app..."
  * console.log(pkg.programs)    // ["syncthing"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/syncthing-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const syncthingPackage = {
+export const syncthingnetPackage = {
   /**
    * The display name of this package.
    */
@@ -81,14 +76,8 @@ export const syncthingPackage = {
     '1.27.5',
     '1.27.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'syncthing',
-  ] as const,
   fullPath: 'syncthing.net' as const,
+  aliases: [] as const,
 }
 
-export type SyncthingPackage = typeof syncthingPackage
+export type SyncthingnetPackage = typeof syncthingnetPackage

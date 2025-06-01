@@ -78,6 +78,10 @@ export const tcllangorgPackage = {
     '8.6.14',
     '8.6.13',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'tcl-lang.org' as const,
 }

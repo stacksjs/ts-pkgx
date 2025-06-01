@@ -74,8 +74,8 @@ export const browserusecomPackage = {
     '0.1.38',
     '0.1.37',
   ] as const,
-  aliases: [] as const,
   fullPath: 'browser-use.com' as const,
+  aliases: [] as const,
 }
 
 export type BrowserusecomPackage = typeof browserusecomPackage

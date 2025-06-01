@@ -106,6 +106,10 @@ export const rabbitmqcomPackage = {
     '3.11.25',
     '3.11.24',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'rabbitmq.com' as const,
 }

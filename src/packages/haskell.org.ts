@@ -116,8 +116,8 @@ export const haskellorgPackage = {
     '9.0.2',
     '8.10.7',
   ] as const,
-  aliases: [] as const,
   fullPath: 'haskell.org' as const,
+  aliases: [] as const,
 }
 
 export type HaskellorgPackage = typeof haskellorgPackage

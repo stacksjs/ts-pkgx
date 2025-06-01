@@ -94,6 +94,7 @@ export const bwPackage = {
     '2024.2.0',
     '1.22.1',
   ] as const,
+  fullPath: 'bitwarden.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -101,7 +102,6 @@ export const bwPackage = {
   aliases: [
     'bw',
   ] as const,
-  fullPath: 'bitwarden.com' as const,
 }
 
 export type BwPackage = typeof bwPackage

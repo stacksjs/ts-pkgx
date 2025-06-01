@@ -67,6 +67,10 @@ export const nghttp2orgPackage = {
     '1.52.0',
     '1.51.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'nghttp2.org' as const,
 }

@@ -54,6 +54,10 @@ export const zlibnetPackage = {
     '1.2.13',
     '1.2.12',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'zlib.net' as const,
 }

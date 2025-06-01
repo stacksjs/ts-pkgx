@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/solana-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +solana.com -- $SHELL -i`
- * @aliases `solana`
  * @dependencies `protobuf.dev^21`, `zlib.net^1.2`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.solana
- * // Or access via domain
- * const samePkg = pantry.solanacom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.solanacom
  * console.log(pkg.name)        // "solana"
  * console.log(pkg.description) // "Web-Scale Blockchain for fast, secure, scalable..."
  * console.log(pkg.programs)    // ["solana", "solana-keygen", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/solana-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const solanaPackage = {
+export const solanacomPackage = {
   /**
    * The display name of this package.
    */
@@ -164,14 +159,8 @@ export const solanaPackage = {
     '1.14.19',
     '1.14.18',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'solana',
-  ] as const,
   fullPath: 'solana.com' as const,
+  aliases: [] as const,
 }
 
-export type SolanaPackage = typeof solanaPackage
+export type SolanacomPackage = typeof solanacomPackage

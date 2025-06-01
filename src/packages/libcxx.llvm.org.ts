@@ -90,8 +90,8 @@ export const libcxxllvmorgPackage = {
     '13.0.1',
     '12.0.1',
   ] as const,
-  aliases: [] as const,
   fullPath: 'libcxx.llvm.org' as const,
+  aliases: [] as const,
 }
 
 export type LibcxxllvmorgPackage = typeof libcxxllvmorgPackage

@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rome-tools.md
  *
  * @install `sh <(curl https://pkgx.sh) rome`
- * @aliases `rome`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.rome
- * // Or access via domain
- * const samePkg = pantry.rometools
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rometools
  * console.log(pkg.name)        // "rome"
  * console.log(pkg.description) // "Unified developer tools for JavaScript, TypeScr..."
  * console.log(pkg.programs)    // ["rome"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rome-tools.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const romePackage = {
+export const rometoolsPackage = {
   /**
    * The display name of this package.
    */
@@ -64,14 +59,8 @@ export const romePackage = {
   versions: [
     '0.4.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'rome',
-  ] as const,
   fullPath: 'rome.tools' as const,
+  aliases: [] as const,
 }
 
-export type RomePackage = typeof romePackage
+export type RometoolsPackage = typeof rometoolsPackage

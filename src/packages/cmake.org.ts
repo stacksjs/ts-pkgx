@@ -129,8 +129,8 @@ export const cmakeorgPackage = {
     '3.24.4',
     '3.24.2',
   ] as const,
-  aliases: [] as const,
   fullPath: 'cmake.org' as const,
+  aliases: [] as const,
 }
 
 export type CmakeorgPackage = typeof cmakeorgPackage

@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gource-io.md
  *
  * @install `sh <(curl https://pkgx.sh) gource`
- * @aliases `gource`
  * @dependencies `boost.org^1.82`, `freetype.org^2`, `libpng.org^1.6`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gource
- * // Or access via domain
- * const samePkg = pantry.gourceio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gourceio
  * console.log(pkg.name)        // "gource"
  * console.log(pkg.description) // "software version control visualization"
  * console.log(pkg.programs)    // ["gource"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gource-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gourcePackage = {
+export const gourceioPackage = {
   /**
    * The display name of this package.
    */
@@ -78,14 +73,8 @@ export const gourcePackage = {
     '0.55.0',
     '0.54.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gource',
-  ] as const,
   fullPath: 'gource.io' as const,
+  aliases: [] as const,
 }
 
-export type GourcePackage = typeof gourcePackage
+export type GourceioPackage = typeof gourceioPackage

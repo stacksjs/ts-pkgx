@@ -3,32 +3,27 @@
  *
  * @domain `plantuml.com`
  * @programs `plantuml`
- * @version `1.2025.3` (17 versions available)
+ * @version `1.2025.2` (16 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/plantuml-com.md
  *
  * @install `sh <(curl https://pkgx.sh) plantuml`
- * @aliases `plantuml`
  * @dependencies `graphviz.org`, `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.plantuml
- * // Or access via domain
- * const samePkg = pantry.plantumlcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.plantumlcom
  * console.log(pkg.name)        // "plantuml"
  * console.log(pkg.description) // "Generate diagrams from textual description"
  * console.log(pkg.programs)    // ["plantuml"]
- * console.log(pkg.versions[0]) // "1.2025.3" (latest)
+ * console.log(pkg.versions[0]) // "1.2025.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/plantuml-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const plantumlPackage = {
+export const plantumlcomPackage = {
   /**
    * The display name of this package.
    */
@@ -70,7 +65,6 @@ export const plantumlPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
-    '1.2025.3',
     '1.2025.2',
     '1.2025.1',
     '1.2025.0',
@@ -88,14 +82,8 @@ export const plantumlPackage = {
     '1.2023.11',
     '1.2023.10',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'plantuml',
-  ] as const,
   fullPath: 'plantuml.com' as const,
+  aliases: [] as const,
 }
 
-export type PlantumlPackage = typeof plantumlPackage
+export type PlantumlcomPackage = typeof plantumlcomPackage

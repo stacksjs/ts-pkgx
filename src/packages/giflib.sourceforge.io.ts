@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/giflib-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +giflib.sourceforge.io -- $SHELL -i`
- * @aliases `gif`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gif
- * // Or access via domain
- * const samePkg = pantry.giflibsourceforgeio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.giflibsourceforgeio
  * console.log(pkg.name)        // "gif"
  * console.log(pkg.description) // "Library and utilities for processing GIFs"
  * console.log(pkg.programs)    // ["gif2rgb", "gifbuild", ...]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/giflib-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gifPackage = {
+export const giflibsourceforgeioPackage = {
   /**
    * The display name of this package.
    */
@@ -70,14 +65,8 @@ export const gifPackage = {
     '5.2.2',
     '5.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gif',
-  ] as const,
   fullPath: 'giflib.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
-export type GifPackage = typeof gifPackage
+export type GiflibsourceforgeioPackage = typeof giflibsourceforgeioPackage

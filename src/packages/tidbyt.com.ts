@@ -90,6 +90,7 @@ export const pixletPackage = {
     '0.30.0',
     '0.29.1',
   ] as const,
+  fullPath: 'tidbyt.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -97,7 +98,6 @@ export const pixletPackage = {
   aliases: [
     'pixlet',
   ] as const,
-  fullPath: 'tidbyt.com' as const,
 }
 
 export type PixletPackage = typeof pixletPackage

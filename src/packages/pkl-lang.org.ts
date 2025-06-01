@@ -78,8 +78,8 @@ export const pkllangorgPackage = {
     '0.25.3',
     '0.25.2',
   ] as const,
-  aliases: [] as const,
   fullPath: 'pkl-lang.org' as const,
+  aliases: [] as const,
 }
 
 export type PkllangorgPackage = typeof pkllangorgPackage

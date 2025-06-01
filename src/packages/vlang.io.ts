@@ -7,12 +7,17 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vlang-io.md
  *
  * @install `sh <(curl https://pkgx.sh) v`
+ * @aliases `v`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.vlangio
+ * // Access via alias (recommended)
+ * const pkg = pantry.v
+ * // Or access via domain
+ * const samePkg = pantry.vlangio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "v"
  * console.log(pkg.description) // "Simple, fast, safe, compiled language for devel..."
  * console.log(pkg.programs)    // ["v"]
@@ -72,7 +77,13 @@ export const vlangioPackage = {
     '0.3.4',
     '0.3.3',
   ] as const,
-  aliases: [] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'v',
+  ] as const,
   fullPath: 'vlang.io' as const,
 }
 

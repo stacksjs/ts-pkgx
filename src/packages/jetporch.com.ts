@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jetporch-com.md
  *
  * @install `sh <(curl https://pkgx.sh) jetp`
- * @aliases `jetp`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jetp
- * // Or access via domain
- * const samePkg = pantry.jetporchcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jetporchcom
  * console.log(pkg.name)        // "jetp"
  * console.log(pkg.description) // "Read-only mirror: see https://www.jetporch.com/..."
  * console.log(pkg.programs)    // ["jetp"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jetporch-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jetpPackage = {
+export const jetporchcomPackage = {
   /**
    * The display name of this package.
    */
@@ -64,14 +59,8 @@ export const jetpPackage = {
   versions: [
     '0.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'jetp',
-  ] as const,
   fullPath: 'jetporch.com' as const,
+  aliases: [] as const,
 }
 
-export type JetpPackage = typeof jetpPackage
+export type JetporchcomPackage = typeof jetporchcomPackage

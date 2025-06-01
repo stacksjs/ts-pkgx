@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubectx-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +kubectx.dev -- $SHELL -i`
- * @aliases `kube`
  * @dependencies `github.com/junegunn/fzf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.kube
- * // Or access via domain
- * const samePkg = pantry.kubectxdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kubectxdev
  * console.log(pkg.name)        // "kube"
  * console.log(pkg.description) // "Tool that can switch between kubectl contexts e..."
  * console.log(pkg.programs)    // ["kubectx", "kubens"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kubectx-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubePackage = {
+export const kubectxdevPackage = {
   /**
    * The display name of this package.
    */
@@ -73,14 +68,8 @@ export const kubePackage = {
     '0.9.5',
     '0.9.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'kube',
-  ] as const,
   fullPath: 'kubectx.dev' as const,
+  aliases: [] as const,
 }
 
-export type KubePackage = typeof kubePackage
+export type KubectxdevPackage = typeof kubectxdevPackage

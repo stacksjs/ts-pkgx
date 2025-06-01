@@ -96,6 +96,10 @@ export const openmpiorgPackage = {
     '4.1.7',
     '4.1.5',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'open-mpi.org' as const,
 }

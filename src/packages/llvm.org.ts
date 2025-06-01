@@ -120,8 +120,8 @@ export const llvmorgPackage = {
     '13.0.1',
     '12.0.1',
   ] as const,
-  aliases: [] as const,
   fullPath: 'llvm.org' as const,
+  aliases: [] as const,
 }
 
 export type LlvmorgPackage = typeof llvmorgPackage

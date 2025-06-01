@@ -81,6 +81,7 @@ export const mvnPackage = {
     '3.8.7',
     '3.6.3',
   ] as const,
+  fullPath: 'maven.apache.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -88,7 +89,6 @@ export const mvnPackage = {
   aliases: [
     'mvn',
   ] as const,
-  fullPath: 'maven.apache.org' as const,
 }
 
 export type MvnPackage = typeof mvnPackage

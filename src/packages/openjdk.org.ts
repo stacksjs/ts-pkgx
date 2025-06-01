@@ -117,6 +117,10 @@ export const openjdkorgPackage = {
     '17.0.10.6',
     '11.0.23.6',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'openjdk.org' as const,
 }

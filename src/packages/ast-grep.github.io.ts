@@ -139,6 +139,10 @@ export const astgrepgithubioPackage = {
     '0.14.4',
     '0.14.3',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
   fullPath: 'ast-grep.github.io' as const,
 }

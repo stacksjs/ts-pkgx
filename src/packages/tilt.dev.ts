@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tilt-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) tilt`
- * @aliases `tilt`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.tilt
- * // Or access via domain
- * const samePkg = pantry.tiltdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tiltdev
  * console.log(pkg.name)        // "tilt"
  * console.log(pkg.description) // "Define your dev environment as code. For micros..."
  * console.log(pkg.programs)    // ["tilt"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tilt-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tiltPackage = {
+export const tiltdevPackage = {
   /**
    * The display name of this package.
    */
@@ -86,14 +81,8 @@ export const tiltPackage = {
     '0.33.7',
     '0.33.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'tilt',
-  ] as const,
   fullPath: 'tilt.dev' as const,
+  aliases: [] as const,
 }
 
-export type TiltPackage = typeof tiltPackage
+export type TiltdevPackage = typeof tiltdevPackage
