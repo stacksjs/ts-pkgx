@@ -1,6 +1,6 @@
 # ctags
 
-> Crafters of fine Open Source products
+> A maintained ctags implementation
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx ctags.io
+sh <(curl https://pkgx.sh) ctags
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ctags`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ctags`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `6.1.0`
+
+</details>
+
+**Latest Version**: `6.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ctags.io@6.1.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `digip.org/jansson^2`
+- `pyyaml.org/libyaml^0.2`
+- `pcre.org/v2^10`
+- `gnome.org/libxml2^2`
 
 ## Usage Examples
 

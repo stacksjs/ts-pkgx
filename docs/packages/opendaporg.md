@@ -1,6 +1,6 @@
 # opendap.org
 
-> Crafters of fine Open Source products
+> A new version of libdap that contains both DAP2 and DAP4 support
 
 ## Package Information
 
@@ -13,14 +13,46 @@
 
 ```bash
 # Install with pkgx
-pkgx opendap.org
+sh <(curl https://pkgx.sh) +opendap.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `dap-config`
+- `dap-config-pkgconfig`
+- `getdap`
+- `getdap4`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `3.21.1`, `3.20.11`
+
+</details>
+
+**Latest Version**: `3.21.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +opendap.org@3.21.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnome.org/libxml2`
+- `openssl.org`
+- `curl.se`
+- `linuxsourceforge.net/libtirpcgithub.com/util-linux/util-linux`
+- `sourceforge.net/libtirpc`
+- `github.com/util-linux/util-linux`
 
 ## Usage Examples
 

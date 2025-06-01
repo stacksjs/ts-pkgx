@@ -1,6 +1,6 @@
 # libpng.org
 
-> Crafters of fine Open Source products
+> LIBPNG: Portable Network Graphics support, official libpng repository
 
 ## Package Information
 
@@ -13,14 +13,43 @@
 
 ```bash
 # Install with pkgx
-pkgx libpng.org
+sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `libpng-config`
+- `libpng16-config`
+- `png-fix-itxt`
+- `pngfix`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `1.6.48`, `1.6.47`, `1.6.46`, `1.6.45`, `1.6.44`
+- `1.6.43`, `1.6.42`, `1.6.41`, `1.6.40`, `1.6.39`
+- `1.6.35`
+
+</details>
+
+**Latest Version**: `1.6.48`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libpng.org@1.6.48 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `zlib.net@1`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # raccoin
 
-> Crafters of fine Open Source products
+> Crypto Portfolio and Tax Reporting Tool
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx raccoin.org
+sh <(curl https://pkgx.sh) raccoin
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `raccoin`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `raccoin`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.2.0`, `0.1.0`
+
+</details>
+
+**Latest Version**: `0.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +raccoin.org@0.2.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/libiconv^1`
+- `openssl.org^1.1`
 
 ## Usage Examples
 

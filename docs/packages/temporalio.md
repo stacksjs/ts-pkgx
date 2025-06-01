@@ -1,6 +1,6 @@
 # temporal
 
-> Crafters of fine Open Source products
+> Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx temporal.io
+sh <(curl https://pkgx.sh) temporal
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `temporal`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `temporal`
+
+## Available Versions
+
+<details>
+<summary>Show all 14 versions</summary>
+
+- `1.3.0`, `1.2.0`, `1.1.2`, `1.1.1`, `1.1.0`
+- `1.0.0`, `0.13.2`, `0.13.1`, `0.13.0`, `0.12.0`
+- `0.11.0`, `0.10.7`, `0.10.6`, `0.10.5`
+
+</details>
+
+**Latest Version**: `1.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +temporal.io@1.3.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

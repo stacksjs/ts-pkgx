@@ -1,6 +1,6 @@
 # valkey
 
-> Crafters of fine Open Source products
+> A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
 
 ## Package Information
 
@@ -13,14 +13,48 @@
 
 ```bash
 # Install with pkgx
-pkgx valkey.io
+sh <(curl https://pkgx.sh) +valkey.io -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `valkey-server`
+- `valkey-cli`
+- `valkey-benchmark`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `valkey`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `8.1.1`, `8.1.0`, `8.0.3`, `8.0.2`, `8.0.1`
+- `8.0.0`, `7.2.9`, `7.2.8`, `7.2.7`, `7.2.6`
+- `7.2.5`
+
+</details>
+
+**Latest Version**: `8.1.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +valkey.io@8.1.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1`
 
 ## Usage Examples
 

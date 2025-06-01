@@ -1,6 +1,6 @@
 # macvim.org
 
-> Crafters of fine Open Source products
+> Vim - the text editor - for macOS
 
 ## Package Information
 
@@ -13,14 +13,55 @@
 
 ```bash
 # Install with pkgx
-pkgx macvim.org
+sh <(curl https://pkgx.sh) +macvim.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gview`
+- `gvim`
+- `gvimdiff`
+- `gvimtutor`
+- `mview`
+- `mvim`
+- `mvimdiff`
+- `mvimtutor`
+- `view`
+- `vim`
+- `vimdiff`
+- `vimtutor`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `181.0.0`, `180.0.0`, `179.0.0`, `178.0.0`, `177.0.0`
+
+</details>
+
+**Latest Version**: `181.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +macvim.org@181.0.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `cscope.sourceforge.io`
+- `invisible-island.net/ncurses`
+- `lua.org`
+- `python.org~3.11`
+- `ruby-lang.org`
+- `libsodium.org`
+- `gnu.org/gettext`
 
 ## Usage Examples
 

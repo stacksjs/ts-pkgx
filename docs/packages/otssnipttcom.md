@@ -1,6 +1,6 @@
 # ots
 
-> Crafters of fine Open Source products
+> 🔐 Share end-to-end encrypted secrets with others via a one-time URL
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx ots.sniptt.com
+sh <(curl https://pkgx.sh) ots
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ots`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ots`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.3.1`, `0.3.0`, `0.2.0`
+
+</details>
+
+**Latest Version**: `0.3.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ots.sniptt.com@0.3.1 -- $SHELL -i
+```
 
 ## Usage Examples
 

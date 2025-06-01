@@ -1,26 +1,56 @@
 # mypy-lang.org
 
-> Crafters of fine Open Source products
+> Experimental optional static type checker for Python
 
 ## Package Information
 
 - **Domain**: `mypy/lang.org`
 - **Name**: `mypy-lang.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mypy/lang.org/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mypy-lang.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-pkgx mypy-lang.org
+sh <(curl https://pkgx.sh) +mypy-lang.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mypy`
+- `mypyc`
+- `dmypy`
+
+## Available Versions
+
+<details>
+<summary>Show all 24 versions</summary>
+
+- `1.16.0`, `1.15.0`, `1.14.1`, `1.14.0`, `1.13.0`
+- `1.12.1`, `1.12.0`, `1.11.2`, `1.11.1`, `1.11.0`
+- `1.10.1`, `1.10.0`, `1.9.0`, `1.8.0`, `1.7.1`
+- `1.7.0`, `1.6.1`, `1.6.0`, `1.5.1`, `1.5.0`
+- `1.4.1`, `1.4.0`, `1.3.0`, `1.2.0`
+
+</details>
+
+**Latest Version**: `1.16.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mypy/lang.org@1.16.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pkgx.sh^1`
 
 ## Usage Examples
 
@@ -37,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mypy/lang.org/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mypy-lang.org/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

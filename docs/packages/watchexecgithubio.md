@@ -1,6 +1,6 @@
 # watchexec
 
-> Crafters of fine Open Source products
+> Executes commands in response to file modifications
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx watchexec.github.io
+sh <(curl https://pkgx.sh) watchexec
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `watchexec`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `watchexec`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `2.3.2`, `2.3.1`, `2.3.0`, `2.2.1`, `2.2.0`
+- `2.1.2`
+
+</details>
+
+**Latest Version**: `2.3.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +watchexec.github.io@2.3.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # velero
 
-> Crafters of fine Open Source products
+> Backup and migrate Kubernetes applications and their persistent volumes
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx velero.io
+sh <(curl https://pkgx.sh) velero
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `velero`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `velero`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.16.1`
+
+</details>
+
+**Latest Version**: `1.16.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +velero.io@1.16.1 -- $SHELL -i
+```
 
 ## Usage Examples
 

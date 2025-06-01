@@ -1,6 +1,6 @@
 # libssh2.org
 
-> Crafters of fine Open Source products
+> the SSH library
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx libssh2.org
+sh <(curl https://pkgx.sh) +libssh2.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,31 @@ pkgx libssh2.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.11.1`, `1.11.0`, `1.10.0`
+
+</details>
+
+**Latest Version**: `1.11.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libssh2.org@1.11.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1.1`
+- `zlib.net^1.2`
 
 ## Usage Examples
 

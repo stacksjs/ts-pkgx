@@ -1,6 +1,6 @@
 # rome
 
-> Crafters of fine Open Source products
+> Unified developer tools for JavaScript, TypeScript, and the web
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx rome.tools
+sh <(curl https://pkgx.sh) rome
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rome`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `rome`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.4.2`
+
+</details>
+
+**Latest Version**: `0.4.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +rome.tools@0.4.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

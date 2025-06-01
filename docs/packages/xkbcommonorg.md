@@ -1,6 +1,6 @@
 # xkbcli
 
-> Crafters of fine Open Source products
+> keymap handling library for toolkits and window systems
 
 ## Package Information
 
@@ -13,14 +13,48 @@
 
 ```bash
 # Install with pkgx
-pkgx xkbcommon.org
+sh <(curl https://pkgx.sh) xkbcli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `xkbcli`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `xkbcli`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `1.10.0`, `1.9.2`, `1.9.1`, `1.9.0`, `1.8.1`
+- `1.8.0`, `1.7.0`, `1.6.0`, `1.5.0`
+
+</details>
+
+**Latest Version**: `1.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +xkbcommon.org@1.10.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `x.org/x11`
+- `x.org/xcb`
+- `freedesktop.org/XKeyboardConfig`
+- `gnome.org/libxml2`
 
 ## Usage Examples
 

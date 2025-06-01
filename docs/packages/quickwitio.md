@@ -1,6 +1,6 @@
 # quickwit
 
-> Crafters of fine Open Source products
+> Cloud-native search engine for observability. An open-source alternative to Datadog, Elasticsearch, Loki, and Tempo.
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx quickwit.io
+sh <(curl https://pkgx.sh) quickwit
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `quickwit`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `quickwit`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `0.8.2`, `0.8.1`, `0.8.0`, `0.7.1`, `0.7.0`
+- `0.6.5`, `0.6.4`
+
+</details>
+
+**Latest Version**: `0.8.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +quickwit.io@0.8.2 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `protobuf.dev^25`
 
 ## Usage Examples
 

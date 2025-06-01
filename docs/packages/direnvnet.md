@@ -1,6 +1,6 @@
 # direnv
 
-> Crafters of fine Open Source products
+> Load/unload environment variables based on $PWD
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx direnv.net
+sh <(curl https://pkgx.sh) direnv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `direnv`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `direnv`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `2.36.0`, `2.35.0`, `2.34.0`, `2.33.0`, `2.32.3`
+- `2.32.2`
+
+</details>
+
+**Latest Version**: `2.36.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +direnv.net@2.36.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

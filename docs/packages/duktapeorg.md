@@ -1,6 +1,6 @@
 # duk
 
-> Crafters of fine Open Source products
+> Duktape - embeddable Javascript engine with a focus on portability and compact footprint
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx duktape.org
+sh <(curl https://pkgx.sh) duk
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `duk`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `duk`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.7.0`
+
+</details>
+
+**Latest Version**: `2.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +duktape.org@2.7.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

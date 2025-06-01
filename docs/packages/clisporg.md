@@ -1,6 +1,6 @@
 # clisp
 
-> Crafters of fine Open Source products
+> GNU CLISP, a Common Lisp implementation
 
 ## Package Information
 
@@ -13,14 +13,46 @@
 
 ```bash
 # Install with pkgx
-pkgx clisp.org
+sh <(curl https://pkgx.sh) clisp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `clisp`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `clisp`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.49.92`
+
+</details>
+
+**Latest Version**: `2.49.92`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +clisp.org@2.49.92 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/libsigsegv^2.14`
+- `gnu.org/readline^8.2`
+- `github.com/besser82/libxcrypt^4.4`
 
 ## Usage Examples
 

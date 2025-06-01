@@ -1,6 +1,6 @@
 # caddy
 
-> Crafters of fine Open Source products
+> Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx caddyserver.com
+sh <(curl https://pkgx.sh) caddy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `caddy`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `caddy`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `2.10.0`, `2.9.1`, `2.9.0`, `2.8.4`, `2.8.2`
+- `2.8.1`, `2.8.0`, `2.7.6`, `2.7.5`, `2.7.4`
+
+</details>
+
+**Latest Version**: `2.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +caddyserver.com@2.10.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

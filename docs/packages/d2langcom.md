@@ -1,6 +1,6 @@
 # d2
 
-> Crafters of fine Open Source products
+> D2 is a modern diagram scripting language that turns text to diagrams.
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx d2lang.com
+sh <(curl https://pkgx.sh) d2
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `d2`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `d2`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `0.7.0`, `0.6.9`, `0.6.8`, `0.6.7`, `0.6.6`
+- `0.6.5`, `0.6.4`, `0.6.3`, `0.6.2`, `0.6.1`
+- `0.6.0`
+
+</details>
+
+**Latest Version**: `0.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +d2lang.com@0.7.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

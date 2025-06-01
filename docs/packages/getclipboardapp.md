@@ -1,6 +1,6 @@
 # cb
 
-> Crafters of fine Open Source products
+> 😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨𝙡𝙮 smart clipboard manager
 
 ## Package Information
 
@@ -13,14 +13,49 @@
 
 ```bash
 # Install with pkgx
-pkgx getclipboard.app
+sh <(curl https://pkgx.sh) cb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cb`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `cb`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.9.1`, `0.9.0.1`, `0.10.0`
+
+</details>
+
+**Latest Version**: `0.9.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +getclipboard.app@0.9.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1.1`
+- `linuxalsa-project.org/alsa-lib@1x.org/x11@1wayland.freedesktop.org@1gnu.org/gcc/libstdcxx@14`
+- `alsa-project.org/alsa-lib@1`
+- `x.org/x11@1`
+- `wayland.freedesktop.org@1`
+- `gnu.org/gcc/libstdcxx@14`
 
 ## Usage Examples
 

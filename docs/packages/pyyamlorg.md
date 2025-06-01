@@ -1,6 +1,6 @@
 # pyyaml.org
 
-> Crafters of fine Open Source products
+> Canonical source repository for LibYAML
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx pyyaml.org
+sh <(curl https://pkgx.sh) +pyyaml.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx pyyaml.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.2.5`
+
+</details>
+
+**Latest Version**: `0.2.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +pyyaml.org@0.2.5 -- $SHELL -i
+```
 
 ## Usage Examples
 

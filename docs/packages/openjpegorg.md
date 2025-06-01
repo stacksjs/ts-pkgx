@@ -1,6 +1,6 @@
 # opj
 
-> Crafters of fine Open Source products
+> Official repository of the OpenJPEG project
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx openjpeg.org
+sh <(curl https://pkgx.sh) +openjpeg.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `opj_compress`
+- `opj_decompress`
+- `opj_dump`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `opj`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `2.5.3`, `2.5.2`, `2.5.1`, `2.5.0`
+
+</details>
+
+**Latest Version**: `2.5.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +openjpeg.org@2.5.3 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `libpng.org^1`
+- `simplesystems.org/libtiff^4`
 
 ## Usage Examples
 

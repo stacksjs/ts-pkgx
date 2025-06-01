@@ -1,6 +1,6 @@
 # carapace
 
-> Crafters of fine Open Source products
+> Multi-shell multi-command argument completer
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx carapace.sh
+sh <(curl https://pkgx.sh) carapace
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `carapace`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `carapace`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `1.3.2`, `1.3.1`, `1.3.0`, `1.2.1`, `1.2.0`
+- `1.1.1`, `1.1.0`, `1.0.7`, `1.0.6`, `1.0.5`
+- `1.0.4`
+
+</details>
+
+**Latest Version**: `1.3.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +carapace.sh@1.3.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

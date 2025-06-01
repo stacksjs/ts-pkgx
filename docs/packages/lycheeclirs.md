@@ -1,6 +1,6 @@
 # lychee
 
-> Crafters of fine Open Source products
+> ⚡ Fast, async, stream-based link checker written in Rust. Finds broken URLs and mail addresses inside Markdown, HTML, reStructuredText, websites and more!
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx lychee.cli.rs
+sh <(curl https://pkgx.sh) lychee
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `lychee`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `lychee`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `0.15.1`, `0.15.0`, `0.14.3`, `0.14.2`, `0.14.1`
+
+</details>
+
+**Latest Version**: `0.15.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +lychee.cli.rs@0.15.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org>=1.1`
 
 ## Usage Examples
 

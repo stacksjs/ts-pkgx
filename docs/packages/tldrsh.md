@@ -1,6 +1,6 @@
 # tldr
 
-> Crafters of fine Open Source products
+> C command-line client for tldr pages 📚
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx tldr.sh
+sh <(curl https://pkgx.sh) tldr
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tldr`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `tldr`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.6.1`, `1.6.0`, `1.5.0`
+
+</details>
+
+**Latest Version**: `1.6.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +tldr.sh@1.6.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `linuxsourceware.org/bzip2^1`
+- `sourceware.org/bzip2^1`
+- `libzip.org^1.9.2`
+- `curl.se`
 
 ## Usage Examples
 

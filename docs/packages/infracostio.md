@@ -1,6 +1,6 @@
 # infracost
 
-> Crafters of fine Open Source products
+> Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left!
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx infracost.io
+sh <(curl https://pkgx.sh) infracost
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `infracost`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `infracost`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `0.10.41`, `0.10.40`, `0.10.39`, `0.10.38`, `0.10.37`
+- `0.10.36`, `0.10.35`, `0.10.34`, `0.10.33`, `0.10.32`
+
+</details>
+
+**Latest Version**: `0.10.41`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +infracost.io@0.10.41 -- $SHELL -i
+```
 
 ## Usage Examples
 

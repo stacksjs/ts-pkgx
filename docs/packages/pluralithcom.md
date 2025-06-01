@@ -1,6 +1,6 @@
 # pluralith
 
-> Crafters of fine Open Source products
+> A tool for Terraform state visualisation and automated generation of infrastructure documentation
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx pluralith.com
+sh <(curl https://pkgx.sh) pluralith
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pluralith`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pluralith`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.2.2`
+
+</details>
+
+**Latest Version**: `0.2.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +pluralith.com@0.2.2 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se/ca-certs`
 
 ## Usage Examples
 

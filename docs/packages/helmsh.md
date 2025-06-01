@@ -1,6 +1,6 @@
 # helm
 
-> Crafters of fine Open Source products
+> The Kubernetes Package Manager
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx helm.sh
+sh <(curl https://pkgx.sh) helm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `helm`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `helm`
+
+## Available Versions
+
+<details>
+<summary>Show all 32 versions</summary>
+
+- `3.18.1`, `3.18.0`, `3.17.3`, `3.17.2`, `3.17.1`
+- `3.17.0`, `3.16.4`, `3.16.3`, `3.16.2`, `3.16.1`
+- `3.16.0`, `3.15.4`, `3.15.3`, `3.15.2`, `3.15.1`
+- `3.15.0`, `3.14.4`, `3.14.3`, `3.14.2`, `3.14.1`
+- `3.14.0`, `3.13.3`, `3.13.2`, `3.13.1`, `3.13.0`
+- `3.12.3`, `3.12.2`, `3.12.1`, `3.12.0`, `3.11.3`
+- `3.11.2`, `3.11.1`
+
+</details>
+
+**Latest Version**: `3.18.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +helm.sh@3.18.1 -- $SHELL -i
+```
 
 ## Usage Examples
 

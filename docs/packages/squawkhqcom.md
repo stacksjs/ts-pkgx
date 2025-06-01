@@ -1,6 +1,6 @@
 # squawk
 
-> Crafters of fine Open Source products
+> 🐘 linter for PostgreSQL, focused on migrations
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx squawkhq.com
+sh <(curl https://pkgx.sh) squawk
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `squawk`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `squawk`
+
+## Available Versions
+
+<details>
+<summary>Show all 34 versions</summary>
+
+- `2.11.0`, `2.10.0`, `2.9.0`, `2.8.0`, `2.7.0`
+- `2.6.0`, `2.5.0`, `2.4.0`, `2.3.0`, `2.2.0`
+- `2.1.0`, `2.0.0`, `1.6.1`, `1.6.0`, `1.5.5`
+- `1.5.4`, `1.5.3`, `1.5.2`, `1.5.1`, `1.5.0`
+- `1.4.0`, `1.2.0`, `1.1.2`, `1.1.1`, `1.1.0`
+- `1.0.0`, `0.29.0`, `0.28.0`, `0.27.0`, `0.26.0`
+- `0.25.0`, `0.24.2`, `0.24.1`, `0.24.0`
+
+</details>
+
+**Latest Version**: `2.11.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +squawkhq.com@2.11.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

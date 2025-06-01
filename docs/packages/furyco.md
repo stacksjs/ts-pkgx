@@ -1,6 +1,6 @@
 # fury
 
-> Crafters of fine Open Source products
+> Gemfury CLI
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx fury.co
+sh <(curl https://pkgx.sh) fury
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `fury`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `fury`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.23.0`, `0.22.0`, `0.21.0`
+
+</details>
+
+**Latest Version**: `0.23.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +fury.co@0.23.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

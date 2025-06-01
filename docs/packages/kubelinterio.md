@@ -1,6 +1,6 @@
 # kube-linter
 
-> Crafters of fine Open Source products
+> KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices.
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx kubelinter.io
+sh <(curl https://pkgx.sh) kube-linter
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kube-linter`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `kube-linter`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.7.2`, `0.7.1`, `0.7.0`, `0.6.8`
+
+</details>
+
+**Latest Version**: `0.7.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +kubelinter.io@0.7.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

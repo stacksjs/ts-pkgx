@@ -1,26 +1,57 @@
 # rust-script
 
-> Crafters of fine Open Source products
+> Run Rust files and expressions as scripts without any setup or compilation step.
 
 ## Package Information
 
 - **Domain**: `rust/script.org`
 - **Name**: `rust-script`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust/script.org/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-script.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-pkgx rust-script.org
+sh <(curl https://pkgx.sh) rust-script
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rust-script`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `rust-script`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.35.0`, `0.34.0`
+
+</details>
+
+**Latest Version**: `0.35.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +rust/script.org@0.35.0 -- $SHELL -i
+```
+
+## Related Packages
+
+These packages work well with rust-script:
+
+- [`rust-lang.org`](rustlangorg.md) - Empowering everyone to build reliable and efficient software.
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 
@@ -37,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rust/script.org/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rust-script.org/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,6 +1,6 @@
 # lame
 
-> Crafters of fine Open Source products
+> High quality MPEG Audio Layer III (MP3) encoder
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx lame.sourceforge.io
+sh <(curl https://pkgx.sh) lame
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `lame`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `lame`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `3.100.0`
+
+</details>
+
+**Latest Version**: `3.100.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +lame.sourceforge.io@3.100.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

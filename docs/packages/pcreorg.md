@@ -1,6 +1,6 @@
 # pcre
 
-> Crafters of fine Open Source products
+> Perl compatible regular expressions library
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx pcre.org
+sh <(curl https://pkgx.sh) +pcre.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pcre-config`
+- `pcregrep`
+- `pcretest`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pcre`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `8.45.0`
+
+</details>
+
+**Latest Version**: `8.45.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +pcre.org@8.45.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `sourceware.org/bzip2@1`
+- `zlib.net@1`
 
 ## Usage Examples
 

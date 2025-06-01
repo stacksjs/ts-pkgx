@@ -1,6 +1,6 @@
 # surreal
 
-> Crafters of fine Open Source products
+> A scalable, distributed, collaborative, document-graph database, for the realtime web
 
 ## Package Information
 
@@ -13,14 +13,52 @@
 
 ```bash
 # Install with pkgx
-pkgx surrealdb.com
+sh <(curl https://pkgx.sh) surreal
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `surreal`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `surreal`
+
+## Available Versions
+
+<details>
+<summary>Show all 41 versions</summary>
+
+- `2023.9.1`, `2.3.3`, `2.3.2`, `2.3.1`, `2.3.0`
+- `2.2.3`, `2.2.2`, `2.2.1`, `2.2.0`, `2.1.5`
+- `2.1.4`, `2.1.3`, `2.1.2`, `2.1.1`, `2.1.0`
+- `2.0.5`, `2.0.4`, `2.0.3`, `2.0.2`, `2.0.1`
+- `2.0.0`, `1.5.6`, `1.5.5`, `1.5.4`, `1.5.3`
+- `1.5.2`, `1.5.1`, `1.5.0`, `1.4.2`, `1.4.0`
+- `1.3.1`, `1.3.0`, `1.2.2`, `1.2.1`, `1.2.0`
+- `1.1.1`, `1.1.0`, `1.0.2`, `1.0.1`, `1.0.0`
+- `0.0.0`
+
+</details>
+
+**Latest Version**: `2023.9.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +surrealdb.com@2023.9.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1`
 
 ## Usage Examples
 

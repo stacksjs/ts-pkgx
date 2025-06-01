@@ -1,6 +1,6 @@
 # mpg123
 
-> Crafters of fine Open Source products
+> MP3 player for Linux and UNIX
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx mpg123.de
+sh <(curl https://pkgx.sh) mpg123
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mpg123`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `mpg123`
+
+## Available Versions
+
+<details>
+<summary>Show all 12 versions</summary>
+
+- `1.32.10`, `1.32.9`, `1.32.8`, `1.32.7`, `1.32.6`
+- `1.32.5`, `1.32.4`, `1.32.3`, `1.32.2`, `1.32.1`
+- `1.32.0`, `1.31.2`
+
+</details>
+
+**Latest Version**: `1.32.10`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mpg123.de@1.32.10 -- $SHELL -i
+```
 
 ## Usage Examples
 

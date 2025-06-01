@@ -1,6 +1,6 @@
 # spacetime
 
-> Crafters of fine Open Source products
+> Multiplayer at the speed of light
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx spacetimedb.com
+sh <(curl https://pkgx.sh) spacetime
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `spacetime`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `spacetime`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `2023.12.8`, `2023.8.12`
+
+</details>
+
+**Latest Version**: `2023.12.8`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +spacetimedb.com@2023.12.8 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1`
 
 ## Usage Examples
 

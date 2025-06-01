@@ -1,6 +1,6 @@
 # strace
 
-> Crafters of fine Open Source products
+> strace is a diagnostic, debugging and instructional userspace utility for Linux
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx strace.io
+sh <(curl https://pkgx.sh) strace
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `strace`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `strace`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `6.2.0`
+
+</details>
+
+**Latest Version**: `6.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +strace.io@6.2.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

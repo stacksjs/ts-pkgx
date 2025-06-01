@@ -1,6 +1,6 @@
 # uriparse
 
-> Crafters of fine Open Source products
+> :hocho: Strictly RFC 3986 compliant URI parsing and handling library written in C89; moved from SourceForge to GitHub
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx uriparser.github.io
+sh <(curl https://pkgx.sh) uriparse
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `uriparse`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `uriparse`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.9.8`, `0.9.7`
+
+</details>
+
+**Latest Version**: `0.9.8`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +uriparser.github.io@0.9.8 -- $SHELL -i
+```
 
 ## Usage Examples
 

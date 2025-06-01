@@ -1,6 +1,6 @@
 # render
 
-> Crafters of fine Open Source products
+> Command-line interface for Render
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx render.com
+sh <(curl https://pkgx.sh) render
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `render`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `render`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `0.1.11`, `0.1.10`, `0.1.9`, `0.1.8`, `0.1.7`
+- `0.1.5`
+
+</details>
+
+**Latest Version**: `0.1.11`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +render.com@0.1.11 -- $SHELL -i
+```
 
 ## Usage Examples
 

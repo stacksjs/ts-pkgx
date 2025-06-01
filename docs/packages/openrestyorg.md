@@ -1,6 +1,6 @@
 # openresty.org
 
-> Crafters of fine Open Source products
+> High Performance Web Platform Based on Nginx and LuaJIT
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx openresty.org
+sh <(curl https://pkgx.sh) +openresty.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `nginx-xml2pod`
+- `opm`
+- `resty`
+- `restydoc`
+- `restydoc-index`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.25.3.2`
+
+</details>
+
+**Latest Version**: `1.25.3.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +openresty.org@1.25.3.2 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pcre.org@8`
+- `openssl.org^1.1`
+- `zlib.net^1.2`
+- `perl.org`
 
 ## Usage Examples
 

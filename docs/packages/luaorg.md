@@ -1,6 +1,6 @@
 # lua
 
-> Crafters of fine Open Source products
+> Powerful, lightweight programming language
 
 ## Package Information
 
@@ -13,14 +13,51 @@
 
 ```bash
 # Install with pkgx
-pkgx lua.org
+sh <(curl https://pkgx.sh) +lua.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `lua`
+- `luac`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `lua`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `5.4.7`, `5.4.6`, `5.4.4`
+
+</details>
+
+**Latest Version**: `5.4.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +lua.org@5.4.7 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/readline`
+
+## Related Packages
+
+These packages work well with lua:
+
+- [`luarocks.org`](luarocksorg.md) - LuaRocks is the package manager for the Lua programming language.
 
 ## Usage Examples
 

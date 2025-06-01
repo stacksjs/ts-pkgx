@@ -1,6 +1,6 @@
 # replibyte
 
-> Crafters of fine Open Source products
+> Seed your development database with real data ⚡️
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx replibyte.com
+sh <(curl https://pkgx.sh) replibyte
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `replibyte`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `replibyte`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.10.0`
+
+</details>
+
+**Latest Version**: `0.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +replibyte.com@0.10.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1.1`
 
 ## Usage Examples
 

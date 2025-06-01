@@ -1,6 +1,6 @@
 # libevent.org
 
-> Crafters of fine Open Source products
+> Event notification library
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx libevent.org
+sh <(curl https://pkgx.sh) +libevent.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,30 @@ pkgx libevent.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.1.12`
+
+</details>
+
+**Latest Version**: `2.1.12`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libevent.org@2.1.12 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1.1`
 
 ## Usage Examples
 

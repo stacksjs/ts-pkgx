@@ -1,6 +1,6 @@
 # kaggle
 
-> Crafters of fine Open Source products
+> Official Kaggle API
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx kaggle.com
+sh <(curl https://pkgx.sh) kaggle
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kaggle`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `kaggle`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `1.7.4.5`, `1.7.4.2`, `1.6.3`, `1.6.1`, `1.5.16`
+
+</details>
+
+**Latest Version**: `1.7.4.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +kaggle.com@1.7.4.5 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pkgx.sh^1`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # tcsh.org
 
-> Crafters of fine Open Source products
+> Enhanced, fully compatible version of the Berkeley C shell
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx tcsh.org
+sh <(curl https://pkgx.sh) +tcsh.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `csh`
+- `tcsh`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `6.24.15`
+
+</details>
+
+**Latest Version**: `6.24.15`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +tcsh.org@6.24.15 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `github.com/besser82/libxcrypt@4`
+- `invisible-island.net/ncurses@6`
 
 ## Usage Examples
 

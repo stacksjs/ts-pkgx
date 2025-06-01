@@ -1,6 +1,6 @@
 # gts.sourceforge.net
 
-> Crafters of fine Open Source products
+> GNU triangulated surface library
 
 ## Package Information
 
@@ -13,14 +13,46 @@
 
 ```bash
 # Install with pkgx
-pkgx gts.sourceforge.net
+sh <(curl https://pkgx.sh) +gts.sourceforge.net -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `delaunay`
+- `gts2dxf`
+- `gts2oogl`
+- `gts2stl`
+- `gtscheck`
+- `gtscompare`
+- `gtstemplate`
+- `stl2gts`
+- `transform`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.7.6`
+
+</details>
+
+**Latest Version**: `0.7.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gts.sourceforge.net@0.7.6 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnome.org/glib>=2.4.0`
 
 ## Usage Examples
 

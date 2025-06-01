@@ -1,6 +1,6 @@
 # luajit
 
-> Crafters of fine Open Source products
+> Mirror of the LuaJIT git repository
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx luajit.org
+sh <(curl https://pkgx.sh) +luajit.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `luajit`
+- `luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;.`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `luajit`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.1.0`
+
+</details>
+
+**Latest Version**: `2.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +luajit.org@2.1.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

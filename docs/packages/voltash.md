@@ -1,6 +1,6 @@
 # volta
 
-> Crafters of fine Open Source products
+> JavaScript toolchain manager for reproducible environments
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx volta.sh
+sh <(curl https://pkgx.sh) volta
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `volta`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `volta`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `2.0.2`, `2.0.1`, `2.0.0`, `1.1.1`
+
+</details>
+
+**Latest Version**: `2.0.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +volta.sh@2.0.2 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `linuxcurl.se/ca-certs`
+- `curl.se/ca-certs`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # pwgen
 
-> Crafters of fine Open Source products
+> Password generator
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx pwgen.sourceforge.io
+sh <(curl https://pkgx.sh) pwgen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pwgen`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pwgen`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.8.0`
+
+</details>
+
+**Latest Version**: `2.8.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +pwgen.sourceforge.io@2.8.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

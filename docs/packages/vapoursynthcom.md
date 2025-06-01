@@ -1,6 +1,6 @@
 # vspipe
 
-> Crafters of fine Open Source products
+> A video processing framework with simplicity in mind
 
 ## Package Information
 
@@ -13,14 +13,48 @@
 
 ```bash
 # Install with pkgx
-pkgx vapoursynth.com
+sh <(curl https://pkgx.sh) vspipe
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `vspipe`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `vspipe`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `71.0.0`, `70.0.0`, `69.0.0`, `68.0.0`, `67.0.0`
+- `66.0.0`, `65.0.0`, `64.0.0`
+
+</details>
+
+**Latest Version**: `71.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +vapoursynth.com@71.0.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org~3.11`
+- `github.com/sekrit-twc/zimg`
+- `linuxgnu.org/gcc/libstdcxx`
+- `gnu.org/gcc/libstdcxx`
 
 ## Usage Examples
 

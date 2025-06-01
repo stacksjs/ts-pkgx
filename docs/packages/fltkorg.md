@@ -1,6 +1,6 @@
 # fltk.org
 
-> Crafters of fine Open Source products
+> FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx fltk.org
+sh <(curl https://pkgx.sh) +fltk.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `fluid`
+- `fltk-config`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `1.4.3`, `1.4.2`, `1.4.1`, `1.3.11`, `1.3.10`
+- `1.3.9`
+
+</details>
+
+**Latest Version**: `1.4.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +fltk.org@1.4.3 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `libjpeg-turbo.org^2`
+- `libpng.org^1`
+- `linuxx.org/xft^2x.org/xt^1freedesktop.org/mesa-glu^9`
+- `x.org/xft^2`
+- `x.org/xt^1`
+- `freedesktop.org/mesa-glu^9`
 
 ## Usage Examples
 

@@ -16,13 +16,13 @@ Go home.
 
 ---
 
-### [sentry.io](../packages/sentryio.md)
+### [sentry.io](../packages/sentryio.md) (sentry-cli)
 
-Crafters of fine Open Source products
+Command-line utility to interact with Sentry
 
-**Programs**: None specified
+**Programs**: sentry-cli
 
-**Install**: `pkgx sentry.io`
+**Install**: `sh <(curl https://pkgx.sh) sentry-cli`
 
 ---
 

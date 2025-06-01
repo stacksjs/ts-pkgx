@@ -1,6 +1,6 @@
 # apktool
 
-> Crafters of fine Open Source products
+> Tool for reverse engineering 3rd party, closed, binary Android apps
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx apktool.org
+sh <(curl https://pkgx.sh) apktool
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `apktool`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `apktool`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `2.11.1`, `2.11.0`, `2.10.0`, `2.9.3`
+
+</details>
+
+**Latest Version**: `2.11.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +apktool.org@2.11.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openjdk.org^21`
 
 ## Usage Examples
 

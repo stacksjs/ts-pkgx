@@ -1,6 +1,6 @@
 # minio
 
-> Crafters of fine Open Source products
+> MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx min.io
+sh <(curl https://pkgx.sh) minio
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `minio`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `minio`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2023.10.25.6.33.25`
+
+</details>
+
+**Latest Version**: `2023.10.25.6.33.25`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +min.io@2023.10.25.6.33.25 -- $SHELL -i
+```
 
 ## Usage Examples
 

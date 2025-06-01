@@ -1,6 +1,6 @@
 # speexdec
 
-> Crafters of fine Open Source products
+> Audio codec designed for speech
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx speex.org
+sh <(curl https://pkgx.sh) speexdec
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `speexdec`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `speexdec`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.2.1`
+
+</details>
+
+**Latest Version**: `1.2.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +speex.org@1.2.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `xiph.org/ogg`
 
 ## Usage Examples
 

@@ -1,26 +1,55 @@
 # mercurial-scm.org
 
-> Crafters of fine Open Source products
+> Scalable distributed version control system
 
 ## Package Information
 
 - **Domain**: `mercurial/scm.org`
 - **Name**: `mercurial-scm.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mercurial/scm.org/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mercurial-scm.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-pkgx mercurial-scm.org
+sh <(curl https://pkgx.sh) +mercurial-scm.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `hg`
+- `chg`
+
+## Available Versions
+
+<details>
+<summary>Show all 24 versions</summary>
+
+- `7.0.2`, `7.0.1`, `7.0.0`, `6.9.5`, `6.9.4`
+- `6.9.3`, `6.9.2`, `6.9.1`, `6.9.0`, `6.8.2`
+- `6.8.1`, `6.8.0`, `6.7.4`, `6.7.3`, `6.7.2`
+- `6.7.1`, `6.7.0`, `6.6.3`, `6.6.2`, `6.6.1`
+- `6.6.0`, `6.5.3`, `6.5.2`, `6.5.0`
+
+</details>
+
+**Latest Version**: `7.0.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mercurial/scm.org@7.0.2 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org~3.11`
 
 ## Usage Examples
 
@@ -37,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mercurial/scm.org/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mercurial-scm.org/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

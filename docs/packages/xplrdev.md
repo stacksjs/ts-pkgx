@@ -1,6 +1,6 @@
 # xplr
 
-> Crafters of fine Open Source products
+> A hackable, minimal, fast TUI file explorer
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx xplr.dev
+sh <(curl https://pkgx.sh) xplr
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `xplr`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `xplr`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.0.0`, `0.21.10`, `0.21.9`, `0.21.8`
+
+</details>
+
+**Latest Version**: `1.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +xplr.dev@1.0.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

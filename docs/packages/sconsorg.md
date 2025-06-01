@@ -1,6 +1,6 @@
 # scons
 
-> Crafters of fine Open Source products
+> Substitute for classic \
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx scons.org
+sh <(curl https://pkgx.sh) scons
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `scons`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `scons`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `4.9.1`, `4.9.0`, `4.8.1`, `4.8.0`, `4.7.0`
+- `4.6.0`, `4.5.2`
+
+</details>
+
+**Latest Version**: `4.9.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +scons.org@4.9.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org~3.11`
+- `linuxgnu.org/gcc>=10`
+- `gnu.org/gcc>=10`
 
 ## Usage Examples
 

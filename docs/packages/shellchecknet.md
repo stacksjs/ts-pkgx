@@ -1,6 +1,6 @@
 # shellcheck
 
-> Crafters of fine Open Source products
+> ShellCheck, a static analysis tool for shell scripts
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx shellcheck.net
+sh <(curl https://pkgx.sh) shellcheck
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `shellcheck`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `shellcheck`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.10.0`, `0.9.0`, `0.8.0`
+
+</details>
+
+**Latest Version**: `0.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +shellcheck.net@0.10.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `sourceware.org/libffi@3`
 
 ## Usage Examples
 

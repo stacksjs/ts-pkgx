@@ -1,6 +1,6 @@
 # tinygo
 
-> Crafters of fine Open Source products
+> Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.
 
 ## Package Information
 
@@ -13,14 +13,51 @@
 
 ```bash
 # Install with pkgx
-pkgx tinygo.org
+sh <(curl https://pkgx.sh) tinygo
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tinygo`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `tinygo`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `0.37.0`, `0.36.0`, `0.35.0`, `0.34.0`, `0.33.0`
+- `0.32.0`, `0.31.2`
+
+</details>
+
+**Latest Version**: `0.37.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +tinygo.org@0.37.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
+
+## Related Packages
+
+These packages work well with tinygo:
+
+- [`llvm.org`](llvmorg.md) - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Usage Examples
 

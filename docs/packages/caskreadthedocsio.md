@@ -1,6 +1,6 @@
 # cask
 
-> Crafters of fine Open Source products
+> Project management tool for Emacs
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx cask.readthedocs.io
+sh <(curl https://pkgx.sh) cask
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cask`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `cask`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.9.0`
+
+</details>
+
+**Latest Version**: `0.9.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +cask.readthedocs.io@0.9.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/coreutils`
+- `gnu.org/emacs`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # terratag
 
-> Crafters of fine Open Source products
+> Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources
 
 ## Package Information
 
@@ -13,14 +13,48 @@
 
 ```bash
 # Install with pkgx
-pkgx terratag.io
+sh <(curl https://pkgx.sh) terratag
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `terratag`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `terratag`
+
+## Available Versions
+
+<details>
+<summary>Show all 18 versions</summary>
+
+- `0.7.2`, `0.7.1`, `0.7.0`, `0.6.1`, `0.6.0`
+- `0.5.3`, `0.5.2`, `0.5.1`, `0.5.0`, `0.4.1`
+- `0.4.0`, `0.3.5`, `0.3.4`, `0.3.3`, `0.3.2`
+- `0.3.1`, `0.3.0`, `0.2.6`
+
+</details>
+
+**Latest Version**: `0.7.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +terratag.io@0.7.2 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `terraform.io>=0.12`
+- `curl.se/ca-certs`
 
 ## Usage Examples
 

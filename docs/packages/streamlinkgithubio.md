@@ -1,6 +1,6 @@
 # streamlink
 
-> Crafters of fine Open Source products
+> Streamlink is a CLI utility which pipes video streams from various services into a video player
 
 ## Package Information
 
@@ -13,14 +13,53 @@
 
 ```bash
 # Install with pkgx
-pkgx streamlink.github.io
+sh <(curl https://pkgx.sh) streamlink
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `streamlink`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `streamlink`
+
+## Available Versions
+
+<details>
+<summary>Show all 19 versions</summary>
+
+- `7.3.0`, `7.2.0`, `7.1.3`, `7.1.2`, `7.1.1`
+- `7.1.0`, `7.0.0`, `6.11.0`, `6.10.0`, `6.9.0`
+- `6.8.3`, `6.8.2`, `6.8.1`, `6.8.0`, `6.7.4`
+- `6.7.3`, `6.7.2`, `6.7.1`, `6.7.0`
+
+</details>
+
+**Latest Version**: `7.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +streamlink.github.io@7.3.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pkgx.sh^1`
+
+## Related Packages
+
+These packages work well with streamlink:
+
+- [`ffmpeg.org`](ffmpegorg.md) - Play, record, convert, and stream audio and video
 
 ## Usage Examples
 

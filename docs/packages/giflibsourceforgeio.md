@@ -1,6 +1,6 @@
 # gif
 
-> Crafters of fine Open Source products
+> Library and utilities for processing GIFs
 
 ## Package Information
 
@@ -13,14 +13,43 @@
 
 ```bash
 # Install with pkgx
-pkgx giflib.sourceforge.io
+sh <(curl https://pkgx.sh) +giflib.sourceforge.io -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gif2rgb`
+- `gifbuild`
+- `gifclrmp`
+- `giffix`
+- `giftext`
+- `giftool`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `gif`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `5.2.2`, `5.2.1`
+
+</details>
+
+**Latest Version**: `5.2.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +giflib.sourceforge.io@5.2.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # jbig2dec
 
-> Crafters of fine Open Source products
+> This is a mirror: the canonical repo is: git.ghostscript.com/jbig2dec.git. This repo does not host releases, they are here: https://github.com/ArtifexSoftware/jbig2dec/tags
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx jbig2dec.com
+sh <(curl https://pkgx.sh) jbig2dec
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `jbig2dec`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `jbig2dec`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.19.0`
+
+</details>
+
+**Latest Version**: `0.19.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +jbig2dec.com@0.19.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

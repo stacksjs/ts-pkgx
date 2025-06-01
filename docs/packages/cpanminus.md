@@ -1,6 +1,6 @@
 # cpanm
 
-> Crafters of fine Open Source products
+> cpanminus - get, unpack, build and install modules from CPAN
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx cpanmin.us
+sh <(curl https://pkgx.sh) cpanm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cpanm`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `cpanm`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.7048.0`, `1.7047.0`, `1.7046.0`
+
+</details>
+
+**Latest Version**: `1.7048.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +cpanmin.us@1.7048.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `perl.org`
 
 ## Usage Examples
 

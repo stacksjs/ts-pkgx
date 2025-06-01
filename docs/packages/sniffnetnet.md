@@ -1,6 +1,6 @@
 # sniffnet
 
-> Crafters of fine Open Source products
+> Cross-platform application to monitor your network traffic
 
 ## Package Information
 
@@ -13,14 +13,48 @@
 
 ```bash
 # Install with pkgx
-pkgx sniffnet.net
+sh <(curl https://pkgx.sh) sniffnet
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sniffnet`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `sniffnet`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.3.2`, `1.3.1`
+
+</details>
+
+**Latest Version**: `1.3.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +sniffnet.net@1.3.2 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org@1`
+- `tcpdump.org@1`
+- `linuxalsa-project.org/alsa-lib@1freedesktop.org/fontconfig@2`
+- `alsa-project.org/alsa-lib@1`
+- `freedesktop.org/fontconfig@2`
 
 ## Usage Examples
 

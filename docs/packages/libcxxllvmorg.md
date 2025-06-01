@@ -1,6 +1,6 @@
 # libcxx.llvm.org
 
-> Crafters of fine Open Source products
+> The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx libcxx.llvm.org
+sh <(curl https://pkgx.sh) +libcxx.llvm.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,31 @@ pkgx libcxx.llvm.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 40 versions</summary>
+
+- `20.1.6`, `20.1.5`, `20.1.4`, `20.1.3`, `20.1.2`
+- `20.1.1`, `20.1.0`, `19.1.7`, `19.1.6`, `19.1.5`
+- `19.1.4`, `19.1.3`, `19.1.2`, `19.1.1`, `19.1.0`
+- `18.1.8`, `18.1.7`, `18.1.6`, `18.1.4`, `18.1.3`
+- `18.1.2`, `18.1.1`, `17.0.6`, `17.0.5`, `17.0.4`
+- `17.0.3`, `17.0.2`, `17.0.1`, `16.0.6`, `16.0.5`
+- `16.0.4`, `16.0.3`, `16.0.2`, `16.0.1`, `15.0.7`
+- `15.0.6`, `14.0.6`, `14.0.3`, `13.0.1`, `12.0.1`
+
+</details>
+
+**Latest Version**: `20.1.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libcxx.llvm.org@20.1.6 -- $SHELL -i
+```
 
 ## Usage Examples
 

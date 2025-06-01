@@ -1,6 +1,6 @@
 # bcrypt
 
-> Crafters of fine Open Source products
+> Cross platform file encryption utility using blowfish
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx bcrypt.sourceforge.net
+sh <(curl https://pkgx.sh) bcrypt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `bcrypt`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `bcrypt`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.1.0`
+
+</details>
+
+**Latest Version**: `1.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +bcrypt.sourceforge.net@1.1.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `zlib.net`
 
 ## Usage Examples
 

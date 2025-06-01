@@ -1,6 +1,6 @@
 # libspng.org
 
-> Crafters of fine Open Source products
+> Simple, modern libpng alternative
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx libspng.org
+sh <(curl https://pkgx.sh) +libspng.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,31 @@ pkgx libspng.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.5.0`
+
+</details>
+
+**Latest Version**: `0.5.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libspng.org@0.5.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `darwinzlib.net`
+- `zlib.net`
 
 ## Usage Examples
 

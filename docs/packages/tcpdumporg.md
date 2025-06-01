@@ -1,6 +1,6 @@
 # pcap-config
 
-> Crafters of fine Open Source products
+> the LIBpcap interface to various kernel packet capture mechanism
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx tcpdump.org
+sh <(curl https://pkgx.sh) pcap-config
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pcap-config`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pcap-config`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.10.5`, `1.10.4`
+
+</details>
+
+**Latest Version**: `1.10.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +tcpdump.org@1.10.5 -- $SHELL -i
+```
 
 ## Usage Examples
 

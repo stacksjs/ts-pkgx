@@ -1,6 +1,6 @@
 # zola
 
-> Crafters of fine Open Source products
+> A fast static site generator in a single binary with everything built-in. https://www.getzola.org
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx getzola.org
+sh <(curl https://pkgx.sh) zola
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `zola`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `zola`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `0.20.0`, `0.19.2`, `0.19.1`, `0.19.0`, `0.18.0`
+- `0.17.2`
+
+</details>
+
+**Latest Version**: `0.20.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +getzola.org@0.20.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # qpdf
 
-> Crafters of fine Open Source products
+> qpdf: A content-preserving PDF document transformer
 
 ## Package Information
 
@@ -13,14 +13,48 @@
 
 ```bash
 # Install with pkgx
-pkgx qpdf.sourceforge.io
+sh <(curl https://pkgx.sh) qpdf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `qpdf`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `qpdf`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `12.2.0`, `12.1.0`, `12.0.0`, `11.10.1`, `11.10.0`
+- `11.9.1`, `11.9.0`, `11.8.0`, `11.7.0`, `11.6.4`
+
+</details>
+
+**Latest Version**: `12.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +qpdf.sourceforge.io@12.2.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `zlib.net^1`
+- `libjpeg-turbo.org^2`
+- `openssl.org^1.1`
+- `gnutls.org^3`
 
 ## Usage Examples
 

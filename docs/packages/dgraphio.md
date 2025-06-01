@@ -1,6 +1,6 @@
 # dgraph
 
-> Crafters of fine Open Source products
+> high-performance graph database for real-time use cases
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx dgraph.io
+sh <(curl https://pkgx.sh) dgraph
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `dgraph`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `dgraph`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `24.1.3`, `24.1.2`, `24.1.1`, `24.1.0`, `24.0.5`
+- `24.0.4`, `24.0.2`, `24.0.1`, `24.0.0`, `23.1.1`
+- `23.1.0`
+
+</details>
+
+**Latest Version**: `24.1.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +dgraph.io@24.1.3 -- $SHELL -i
+```
 
 ## Usage Examples
 

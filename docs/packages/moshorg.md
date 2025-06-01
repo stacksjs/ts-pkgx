@@ -1,6 +1,6 @@
 # mosh
 
-> Crafters of fine Open Source products
+> Remote terminal application
 
 ## Package Information
 
@@ -13,14 +13,49 @@
 
 ```bash
 # Install with pkgx
-pkgx mosh.org
+sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mosh-client`
+- `mosh-server`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `mosh`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.4.0`
+
+</details>
+
+**Latest Version**: `1.4.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mosh.org@1.4.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `protobuf.dev@26.1.0`
+- `invisible-island.net/ncurses@6`
+- `zlib.net@1.3`
+- `linuxopenssl.org@3`
+- `openssl.org@3`
 
 ## Usage Examples
 

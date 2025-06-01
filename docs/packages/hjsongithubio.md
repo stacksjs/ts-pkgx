@@ -1,6 +1,6 @@
 # hjson
 
-> Crafters of fine Open Source products
+> Hjson for Rust
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx hjson.github.io
+sh <(curl https://pkgx.sh) hjson
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `hjson`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `hjson`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.1.0`, `1.0.0`
+
+</details>
+
+**Latest Version**: `1.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +hjson.github.io@1.1.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

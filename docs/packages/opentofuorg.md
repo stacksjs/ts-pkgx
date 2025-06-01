@@ -1,6 +1,6 @@
 # tofu
 
-> Crafters of fine Open Source products
+> OpenTofu lets you declaratively manage your cloud infrastructure.
 
 ## Package Information
 
@@ -13,14 +13,49 @@
 
 ```bash
 # Install with pkgx
-pkgx opentofu.org
+sh <(curl https://pkgx.sh) tofu
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tofu`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `tofu`
+
+## Available Versions
+
+<details>
+<summary>Show all 19 versions</summary>
+
+- `1.9.1`, `1.9.0`, `1.8.9`, `1.8.8`, `1.8.7`
+- `1.8.6`, `1.8.5`, `1.8.4`, `1.8.3`, `1.8.2`
+- `1.8.1`, `1.8.0`, `1.7.8`, `1.7.7`, `1.7.6`
+- `1.7.5`, `1.7.4`, `1.7.3`, `1.6.0.3`
+
+</details>
+
+**Latest Version**: `1.9.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +opentofu.org@1.9.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `linuxgnu.org/gcc/libstdcxx`
+- `gnu.org/gcc/libstdcxx`
+- `curl.se/ca-certs`
 
 ## Usage Examples
 

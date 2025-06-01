@@ -6,13 +6,13 @@ Packages related to development tools.
 
 ## Packages
 
-### [git/scm.org](../packages/gitscmorg.md)
+### [git/scm.org](../packages/gitscmorg.md) (git)
 
-Crafters of fine Open Source products
+Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
 
-**Programs**: None specified
+**Programs**: git, git-cvsserver, git-receive-pack, git-shell, git-upload-archive, git-upload-pack, scalar, git-credential-osxkeychain
 
-**Install**: `pkgx git-scm.org`
+**Install**: `sh <(curl https://pkgx.sh) +git-scm.org -- $SHELL -i`
 
 ---
 
@@ -36,33 +36,33 @@ Go home.
 
 ---
 
-### [neovim.io](../packages/neovimio.md)
+### [neovim.io](../packages/neovimio.md) (nvim)
 
-Crafters of fine Open Source products
+Ambitious Vim-fork focused on extensibility and agility
 
-**Programs**: None specified
+**Programs**: nvim
 
-**Install**: `pkgx neovim.io`
+**Install**: `sh <(curl https://pkgx.sh) nvim`
 
 ---
 
-### [prettier.io](../packages/prettierio.md)
+### [prettier.io](../packages/prettierio.md) (prettier)
 
-Crafters of fine Open Source products
+Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 
-**Programs**: None specified
+**Programs**: prettier
 
-**Install**: `pkgx prettier.io`
+**Install**: `sh <(curl https://pkgx.sh) prettier`
 
 ---
 
 ### [vim.org](../packages/vimorg.md)
 
-Crafters of fine Open Source products
+The official Vim repository
 
-**Programs**: None specified
+**Programs**: vim, vi
 
-**Install**: `pkgx vim.org`
+**Install**: `sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i`
 
 ---
 

@@ -1,6 +1,6 @@
 # ko
 
-> Crafters of fine Open Source products
+> Build and deploy Go applications on Kubernetes
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx ko.build
+sh <(curl https://pkgx.sh) ko
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ko`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ko`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.18.0`, `0.17.1`, `0.17.0`, `0.16.0`
+
+</details>
+
+**Latest Version**: `0.18.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ko.build@0.18.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

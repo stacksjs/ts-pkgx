@@ -1,6 +1,6 @@
 # ord
 
-> Crafters of fine Open Source products
+> Index, block explorer, and command-line wallet
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx ordinals.com
+sh <(curl https://pkgx.sh) ord
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ord`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ord`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.6.1`, `0.6.0`, `0.5.1`, `0.5.0`
+
+</details>
+
+**Latest Version**: `0.6.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ordinals.com@0.6.1 -- $SHELL -i
+```
 
 ## Usage Examples
 

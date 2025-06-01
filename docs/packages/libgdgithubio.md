@@ -1,6 +1,6 @@
 # libgd.github.io
 
-> Crafters of fine Open Source products
+> Graphics library to dynamically manipulate images
 
 ## Package Information
 
@@ -13,14 +13,49 @@
 
 ```bash
 # Install with pkgx
-pkgx libgd.github.io
+sh <(curl https://pkgx.sh) +libgd.github.io -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `bdftogd`
+- `gd2copypal`
+- `gd2togif`
+- `gdcmpgif`
+- `giftogd2`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.3.3`
+
+</details>
+
+**Latest Version**: `2.3.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libgd.github.io@2.3.3 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `freedesktop.org/fontconfig`
+- `freetype.org`
+- `libjpeg-turbo.org`
+- `github.com/AOMediaCodec/libavif`
+- `libpng.org`
+- `simplesystems.org/libtiff`
+- `google.com/webp`
+- `zlib.net`
 
 ## Usage Examples
 

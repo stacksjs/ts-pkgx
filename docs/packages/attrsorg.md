@@ -1,6 +1,6 @@
 # attrs.org
 
-> Crafters of fine Open Source products
+> Python Classes Without Boilerplate
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx attrs.org
+sh <(curl https://pkgx.sh) +attrs.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,31 @@ pkgx attrs.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `25.3.0`, `25.2.0`, `25.1.0`, `24.3.0`, `24.2.0`
+- `24.1.0`, `23.2.0`
+
+</details>
+
+**Latest Version**: `25.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +attrs.org@25.3.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org~3.11`
 
 ## Usage Examples
 

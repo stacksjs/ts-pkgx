@@ -1,6 +1,6 @@
 # liburcu
 
-> Crafters of fine Open Source products
+> liburcu is a LGPLv2.1 userspace RCU (read-copy-update) library. This data synchronization library provides read-side access which scales linearly with the number of cores.
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx liburcu.org
+sh <(curl https://pkgx.sh) +liburcu.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,30 @@ pkgx liburcu.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `liburcu`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.15.3`, `0.15.2`, `0.15.1`, `0.15.0`
+
+</details>
+
+**Latest Version**: `0.15.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +liburcu.org@0.15.3 -- $SHELL -i
+```
 
 ## Usage Examples
 

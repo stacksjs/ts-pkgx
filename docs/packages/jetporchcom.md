@@ -1,6 +1,6 @@
 # jetp
 
-> Crafters of fine Open Source products
+> Read-only mirror: see https://www.jetporch.com/community/sourcehut
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx jetporch.com
+sh <(curl https://pkgx.sh) jetp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `jetp`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `jetp`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.0.1`
+
+</details>
+
+**Latest Version**: `0.0.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +jetporch.com@0.0.1 -- $SHELL -i
+```
 
 ## Usage Examples
 

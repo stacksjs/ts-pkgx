@@ -1,6 +1,6 @@
 # cgal
 
-> Crafters of fine Open Source products
+> The public CGAL repository, see the README below
 
 ## Package Information
 
@@ -13,14 +13,50 @@
 
 ```bash
 # Install with pkgx
-pkgx cgal.org
+sh <(curl https://pkgx.sh) +cgal.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cgal_create_CMakeLists`
+- `cgal_create_cmake_script`
+- `cgal_make_macosx_app`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `cgal`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `6.0.1`, `6.0.0`, `5.6.2`, `5.6.1`, `5.6.0`
+
+</details>
+
+**Latest Version**: `6.0.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +cgal.org@6.0.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `boost.org`
+- `eigen.tuxfamily.org`
+- `gnu.org/gmp`
+- `gnu.org/mpfr`
+- `openssl.org`
 
 ## Usage Examples
 

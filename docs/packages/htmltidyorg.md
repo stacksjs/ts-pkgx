@@ -1,26 +1,50 @@
 # tidy
 
-> Crafters of fine Open Source products
+> The granddaddy of HTML tools, with support for modern standards
 
 ## Package Information
 
 - **Domain**: `html/tidy.org`
 - **Name**: `tidy`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/html/tidy.org/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/html-tidy.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-pkgx html-tidy.org
+sh <(curl https://pkgx.sh) tidy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tidy`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `tidy`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `5.8.0`
+
+</details>
+
+**Latest Version**: `5.8.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +html/tidy.org@5.8.0 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -37,7 +61,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/html/tidy.org/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/html-tidy.org/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -6,13 +6,13 @@ Packages related to security & authentication.
 
 ## Packages
 
-### [bitwarden.com](../packages/bitwardencom.md)
+### [bitwarden.com](../packages/bitwardencom.md) (bw)
 
-Crafters of fine Open Source products
+Secure and free password manager for all of your devices
 
-**Programs**: None specified
+**Programs**: bw
 
-**Install**: `pkgx bitwarden.com`
+**Install**: `sh <(curl https://pkgx.sh) bw`
 
 ---
 

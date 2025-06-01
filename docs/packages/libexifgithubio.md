@@ -1,6 +1,6 @@
 # libexif.github.io
 
-> Crafters of fine Open Source products
+> A library for parsing, editing, and saving EXIF data
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx libexif.github.io
+sh <(curl https://pkgx.sh) +libexif.github.io -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,30 @@ pkgx libexif.github.io
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.6.25`, `0.6.24`
+
+</details>
+
+**Latest Version**: `0.6.25`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libexif.github.io@0.6.25 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/gettext`
 
 ## Usage Examples
 

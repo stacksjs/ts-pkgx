@@ -1,6 +1,6 @@
 # skaffold
 
-> Crafters of fine Open Source products
+> Easy and Repeatable Kubernetes Development
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx skaffold.dev
+sh <(curl https://pkgx.sh) skaffold
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `skaffold`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `skaffold`
+
+## Available Versions
+
+<details>
+<summary>Show all 14 versions</summary>
+
+- `2.16.0`, `2.15.0`, `2.14.2`, `2.14.1`, `2.14.0`
+- `2.13.2`, `2.13.0`, `2.12.0`, `2.11.1`, `2.11.0`
+- `2.10.1`, `2.10.0`, `2.9.0`, `2.8.0`
+
+</details>
+
+**Latest Version**: `2.16.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +skaffold.dev@2.16.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

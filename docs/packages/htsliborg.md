@@ -1,6 +1,6 @@
 # htslib.org
 
-> Crafters of fine Open Source products
+> C library for high-throughput sequencing data formats
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx htslib.org
+sh <(curl https://pkgx.sh) +htslib.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `bgzip`
+- `htsfile`
+- `tabix`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `1.22.0`, `1.21.0`, `1.20.0`, `1.19.1`, `1.19.0`
+- `1.18.0`
+
+</details>
+
+**Latest Version**: `1.22.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +htslib.org@1.22.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `sourceware.org/bzip2`
+- `tukaani.org/xz`
+- `zlib.net^1`
+- `curl.se>=5`
 
 ## Usage Examples
 

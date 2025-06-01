@@ -1,26 +1,50 @@
 # terraform-docs
 
-> Crafters of fine Open Source products
+> Generate documentation from Terraform modules in various output formats
 
 ## Package Information
 
 - **Domain**: `terraform/docs.io`
 - **Name**: `terraform-docs`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/terraform/docs.io/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/terraform-docs.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-pkgx terraform-docs.io
+sh <(curl https://pkgx.sh) terraform-docs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `terraform-docs`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `terraform-docs`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `0.20.0`, `0.19.0`, `0.18.0`, `0.17.0`, `0.16.0`
+
+</details>
+
+**Latest Version**: `0.20.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +terraform/docs.io@0.20.0 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -37,7 +61,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/terraform/docs.io/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/terraform-docs.io/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

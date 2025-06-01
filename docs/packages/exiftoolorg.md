@@ -1,6 +1,6 @@
 # exiftool
 
-> Crafters of fine Open Source products
+> Perl lib for reading and writing EXIF metadata
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx exiftool.org
+sh <(curl https://pkgx.sh) exiftool
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `exiftool`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `exiftool`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `13.30.0`, `13.25.0`, `13.10.0`, `13.0.0`, `12.76.0`
+- `12.75.0`, `12.70.0`, `12.60.0`
+
+</details>
+
+**Latest Version**: `13.30.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +exiftool.org@13.30.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `perl.org`
 
 ## Usage Examples
 

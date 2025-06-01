@@ -1,6 +1,6 @@
 # hunspell
 
-> Crafters of fine Open Source products
+> Spell checker and morphological analyzer
 
 ## Package Information
 
@@ -13,14 +13,52 @@
 
 ```bash
 # Install with pkgx
-pkgx hunspell.github.io
+sh <(curl https://pkgx.sh) +hunspell.github.io -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `analyze`
+- `chmorph`
+- `hunspell`
+- `hunzip`
+- `hzip`
+- `munch`
+- `unmunch`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `hunspell`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.7.2`
+
+</details>
+
+**Latest Version**: `1.7.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +hunspell.github.io@1.7.2 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/readline`
+- `invisible-island.net/ncurses`
+- `gnu.org/gettext`
 
 ## Usage Examples
 

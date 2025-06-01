@@ -1,6 +1,6 @@
 # upx
 
-> Crafters of fine Open Source products
+> UPX - the Ultimate Packer for eXecutables
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx upx.github.io
+sh <(curl https://pkgx.sh) upx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `upx`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `upx`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `5.0.1`, `5.0.0`, `4.2.4`
+
+</details>
+
+**Latest Version**: `5.0.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +upx.github.io@5.0.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `zlib.net`
 
 ## Usage Examples
 

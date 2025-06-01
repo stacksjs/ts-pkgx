@@ -1,6 +1,6 @@
 # asciinema
 
-> Crafters of fine Open Source products
+> Record and share terminal sessions
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx asciinema.org
+sh <(curl https://pkgx.sh) asciinema
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `asciinema`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `asciinema`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.4.0`
+
+</details>
+
+**Latest Version**: `2.4.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +asciinema.org@2.4.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org^3.12`
 
 ## Usage Examples
 

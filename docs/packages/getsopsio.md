@@ -1,6 +1,6 @@
 # sops
 
-> Crafters of fine Open Source products
+> Simple and flexible tool for managing secrets
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx getsops.io
+sh <(curl https://pkgx.sh) sops
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sops`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `sops`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `3.10.2`, `3.10.1`, `3.10.0`, `3.9.4`, `3.9.3`
+- `3.9.2`, `3.9.1`, `3.9.0`, `3.8.1`
+
+</details>
+
+**Latest Version**: `3.10.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +getsops.io@3.10.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # glew.sourceforge.io
 
-> Crafters of fine Open Source products
+> The OpenGL Extension Wrangler Library
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with pkgx
-pkgx glew.sourceforge.io
+sh <(curl https://pkgx.sh) +glew.sourceforge.io -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `glewinfo`
+- `visualinfo`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.2.0`
+
+</details>
+
+**Latest Version**: `2.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +glew.sourceforge.io@2.2.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

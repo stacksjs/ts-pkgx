@@ -1,6 +1,6 @@
 # scw
 
-> Crafters of fine Open Source products
+> Command Line Interface for Scaleway
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx scaleway.com
+sh <(curl https://pkgx.sh) scw
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `scw`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `scw`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `2.39.0`, `2.38.0`, `2.37.0`, `2.36.0`, `2.35.0`
+- `2.34.0`, `2.33.0`, `2.32.1`
+
+</details>
+
+**Latest Version**: `2.39.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +scaleway.com@2.39.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

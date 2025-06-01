@@ -1,26 +1,58 @@
 # tcl-lang.org
 
-> Crafters of fine Open Source products
+> Tool Command Language
 
 ## Package Information
 
 - **Domain**: `tcl/lang.org`
 - **Name**: `tcl-lang.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tcl/lang.org/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-pkgx tcl-lang.org
+sh <(curl https://pkgx.sh) +tcl-lang.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tclsh`
+- `wish`
+- `critcl`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `9.0.1`, `9.0.0`, `8.6.16`, `8.6.15`, `8.6.14`
+- `8.6.13`
+
+</details>
+
+**Latest Version**: `9.0.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +tcl/lang.org@9.0.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1.1`
+- `zlib.net^1.3`
+- `freetype.org^2`
+- `freedesktop.org/pkg-config^0.29`
+- `x.org/x11=1.8.11`
+- `x.org/exts^1`
 
 ## Usage Examples
 
@@ -37,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tcl/lang.org/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

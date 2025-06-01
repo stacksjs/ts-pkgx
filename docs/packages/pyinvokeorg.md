@@ -1,6 +1,6 @@
 # invoke
 
-> Crafters of fine Open Source products
+> Pythonic task management & command execution.
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx pyinvoke.org
+sh <(curl https://pkgx.sh) invoke
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `invoke`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `invoke`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.2.0`
+
+</details>
+
+**Latest Version**: `2.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +pyinvoke.org@2.2.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pkgx.sh^1`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # re2c
 
-> Crafters of fine Open Source products
+> Lexer generator for C, C++, D, Go, Haskell, Java, JS, OCaml, Python, Rust, V and Zig.
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx re2c.org
+sh <(curl https://pkgx.sh) re2c
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `re2c`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `re2c`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `4.2.0`, `4.1.0`, `4.0.2`, `4.0.1`, `4.0.0`
+- `3.1.0`, `3.0.0`
+
+</details>
+
+**Latest Version**: `4.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +re2c.org@4.2.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # kind
 
-> Crafters of fine Open Source products
+> Kubernetes IN Docker - local clusters for testing Kubernetes
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx kind.sigs.k8s.io
+sh <(curl https://pkgx.sh) kind
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kind`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `kind`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `0.29.0`, `0.28.0`, `0.27.0`, `0.26.0`, `0.25.0`
+- `0.24.0`, `0.23.0`, `0.22.0`, `0.21.0`, `0.20.0`
+- `0.19.0`
+
+</details>
+
+**Latest Version**: `0.29.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +kind.sigs.k8s.io@0.29.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

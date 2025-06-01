@@ -6,223 +6,223 @@ Popular programming languages and their runtimes available through pkgx.
 
 ## Packages
 
-### [crystal/lang.org](../packages/crystallangorg.md)
+### [crystal/lang.org](../packages/crystallangorg.md) (crystal)
 
-Crafters of fine Open Source products
+Fast and statically typed, compiled language with Ruby-like syntax
 
-**Programs**: None specified
+**Programs**: crystal
 
-**Install**: `pkgx crystal-lang.org`
-
----
-
-### [dart.dev](../packages/dartdev.md)
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx dart.dev`
+**Install**: `sh <(curl https://pkgx.sh) crystal`
 
 ---
 
-### [deno.land](../packages/denoland.md)
+### [dart.dev](../packages/dartdev.md) (dart)
 
-Crafters of fine Open Source products
+The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
 
-**Programs**: None specified
+**Programs**: dart, dartaotruntime
 
-**Install**: `pkgx deno.land`
+**Install**: `sh <(curl https://pkgx.sh) +dart.dev -- $SHELL -i`
+
+---
+
+### [deno.land](../packages/denoland.md) (deno)
+
+A modern runtime for JavaScript and TypeScript.
+
+**Programs**: deno
+
+**Install**: `sh <(curl https://pkgx.sh) deno`
 
 ---
 
 ### [elixir/lang.org](../packages/elixirlangorg.md)
 
-Crafters of fine Open Source products
+Elixir is a dynamic, functional language for building scalable and maintainable applications
 
-**Programs**: None specified
+**Programs**: elixir, elixirc, iex, mix
 
-**Install**: `pkgx elixir-lang.org`
+**Install**: `sh <(curl https://pkgx.sh) +elixir-lang.org -- $SHELL -i`
 
 ---
 
 ### [erlang.org](../packages/erlangorg.md)
 
-Crafters of fine Open Source products
+Programming language for highly scalable real-time systems
 
-**Programs**: None specified
+**Programs**: ct_run, dialyzer, epmd, erl, erlc, escript, run_erl, to_erl, typer
 
-**Install**: `pkgx erlang.org`
-
----
-
-### [gleam.run](../packages/gleamrun.md)
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx gleam.run`
+**Install**: `sh <(curl https://pkgx.sh) +erlang.org -- $SHELL -i`
 
 ---
 
-### [go.dev](../packages/godev.md)
+### [gleam.run](../packages/gleamrun.md) (gleam)
 
-Crafters of fine Open Source products
+⭐️ A friendly language for building type-safe, scalable systems!
 
-**Programs**: None specified
+**Programs**: gleam
 
-**Install**: `pkgx go.dev`
+**Install**: `sh <(curl https://pkgx.sh) gleam`
+
+---
+
+### [go.dev](../packages/godev.md) (go)
+
+The Go programming language
+
+**Programs**: go, gofmt
+
+**Install**: `sh <(curl https://pkgx.sh) +go.dev -- $SHELL -i`
 
 ---
 
 ### [haskell.org](../packages/haskellorg.md)
 
-Crafters of fine Open Source products
+Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC\
 
-**Programs**: None specified
+**Programs**: ghc, ghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-&lbrace;&lbrace;version&rbrace;&rbrace;, ghc-pkg, ghc-pkg-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-pkg-&lbrace;&lbrace;version&rbrace;&rbrace;, ghci, ghci-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghci-&lbrace;&lbrace;version&rbrace;&rbrace;, ghcup, haddock, haddock-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, haddock-&lbrace;&lbrace;version&rbrace;&rbrace;, hp2ps, hp2ps-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hp2ps-&lbrace;&lbrace;version&rbrace;&rbrace;, hpc, hpc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hpc-&lbrace;&lbrace;version&rbrace;&rbrace;, hsc2hs, hsc2hs-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hsc2hs-&lbrace;&lbrace;version&rbrace;&rbrace;, runghc, runghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, runghc-&lbrace;&lbrace;version&rbrace;&rbrace;, runhaskell, runhaskell-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, runhaskell-&lbrace;&lbrace;version&rbrace;&rbrace;
 
-**Install**: `pkgx haskell.org`
+**Install**: `sh <(curl https://pkgx.sh) +haskell.org -- $SHELL -i`
 
 ---
 
-### [julialang.org](../packages/julialangorg.md)
+### [julialang.org](../packages/julialangorg.md) (julia)
 
-Crafters of fine Open Source products
+The Julia Programming Language
 
-**Programs**: None specified
+**Programs**: julia
 
-**Install**: `pkgx julialang.org`
+**Install**: `sh <(curl https://pkgx.sh) julia`
 
 ---
 
 ### [kotlinlang.org](../packages/kotlinlangorg.md)
 
-Crafters of fine Open Source products
+Statically typed programming language for the JVM
 
-**Programs**: None specified
+**Programs**: kapt, kotlin, kotlinc, kotlinc-js, kotlinc-jvm
 
-**Install**: `pkgx kotlinlang.org`
+**Install**: `sh <(curl https://pkgx.sh) +kotlinlang.org -- $SHELL -i`
 
 ---
 
 ### [nim/lang.org](../packages/nimlangorg.md)
 
-Crafters of fine Open Source products
+Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).
 
-**Programs**: None specified
+**Programs**: nim, nim_dbg, testament, nimsuggest, nimgrep, nim-gdb, atlas, nimpretty, nimble
 
-**Install**: `pkgx nim-lang.org`
-
----
-
-### [nodejs.org](../packages/nodejsorg.md)
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx nodejs.org`
+**Install**: `sh <(curl https://pkgx.sh) +nim-lang.org -- $SHELL -i`
 
 ---
 
-### [perl.org](../packages/perlorg.md)
+### [nodejs.org](../packages/nodejsorg.md) (node)
 
-Crafters of fine Open Source products
+Platform built on V8 to build network applications
 
-**Programs**: None specified
+**Programs**: node
 
-**Install**: `pkgx perl.org`
-
----
-
-### [php.net](../packages/phpnet.md)
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx php.net`
+**Install**: `sh <(curl https://pkgx.sh) node`
 
 ---
 
-### [python.org](../packages/pythonorg.md)
+### [perl.org](../packages/perlorg.md) (perl)
 
-Crafters of fine Open Source products
+Highly capable, feature-rich programming language
 
-**Programs**: None specified
+**Programs**: corelist, cpan, enc2xs, encguess, h2ph, h2xs, instmodsh, json_pp, libnetcfg, perl, perlbug, perldoc, perlivp, perlthanks, piconv, pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, prove, ptar, ptardiff, ptargrep, shasum, splain, streamzip, xsubpp, zipdetails
 
-**Install**: `pkgx python.org`
-
----
-
-### [ruby/lang.org](../packages/rubylangorg.md)
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx ruby-lang.org`
+**Install**: `sh <(curl https://pkgx.sh) +perl.org -- $SHELL -i`
 
 ---
 
-### [rust/lang.org](../packages/rustlangorg.md)
+### [php.net](../packages/phpnet.md) (php)
 
-Crafters of fine Open Source products
+General-purpose scripting language
 
-**Programs**: None specified
+**Programs**: pear, pecl, phar, php, php-cgi, php-config, phpdbg, phpize
 
-**Install**: `pkgx rust-lang.org`
+**Install**: `sh <(curl https://pkgx.sh) +php.net -- $SHELL -i`
+
+---
+
+### [python.org](../packages/pythonorg.md) (python)
+
+The Python programming language
+
+**Programs**: python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;
+
+**Install**: `sh <(curl https://pkgx.sh) +python.org -- $SHELL -i`
+
+---
+
+### [ruby/lang.org](../packages/rubylangorg.md) (ruby)
+
+Powerful, clean, object-oriented scripting language
+
+**Programs**: erb, irb, rake, rdoc, ri, ruby
+
+**Install**: `sh <(curl https://pkgx.sh) +ruby-lang.org -- $SHELL -i`
+
+---
+
+### [rust/lang.org](../packages/rustlangorg.md) (rust)
+
+Empowering everyone to build reliable and efficient software.
+
+**Programs**: cargo-clippy, cargo-fmt, clippy-driver, rust-analyzer, rust-gdb, rust-gdbgui, rust-lldb, rustc, rustdoc, rustfmt
+
+**Install**: `sh <(curl https://pkgx.sh) +rust-lang.org -- $SHELL -i`
 
 ---
 
 ### [scala/lang.org](../packages/scalalangorg.md)
 
-Crafters of fine Open Source products
+The Scala 3 compiler, also known as Dotty.
 
-**Programs**: None specified
+**Programs**: scalac, scala, scala-cli, sbtn, amm
 
-**Install**: `pkgx scala-lang.org`
-
----
-
-### [swift.org](../packages/swiftorg.md)
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx swift.org`
+**Install**: `sh <(curl https://pkgx.sh) +scala-lang.org -- $SHELL -i`
 
 ---
 
-### [typescriptlang.org](../packages/typescriptlangorg.md)
+### [swift.org](../packages/swiftorg.md) (swift)
 
-Crafters of fine Open Source products
+The Swift Programming Language
 
-**Programs**: None specified
+**Programs**: docc, dsymutil, sourcekit-lsp, swift-api-checker.py, swift-build-sdk-interfaces, swift-build-tool, swift-demangle, swift-driver, swift-format, swift-frontend, swift-help, swift-package, swift-plugin-server, swift-stdlib-tool, swift, swift-api-digester, swift-api-extract, swift-autolink-extract, swift-build, swift-experimental-sdk, swift-package-collection, swift-package-registry, swift-run, swift-symbolgraph-extract, swift-test, swiftc
 
-**Install**: `pkgx typescriptlang.org`
+**Install**: `sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i`
+
+---
+
+### [typescriptlang.org](../packages/typescriptlangorg.md) (tsc)
+
+TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
+
+**Programs**: tsc
+
+**Install**: `sh <(curl https://pkgx.sh) tsc`
 
 ---
 
 ### [vlang.io](../packages/vlangio.md)
 
-Crafters of fine Open Source products
+Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
 
-**Programs**: None specified
+**Programs**: v
 
-**Install**: `pkgx vlang.io`
+**Install**: `sh <(curl https://pkgx.sh) v`
 
 ---
 
-### [ziglang.org](../packages/ziglangorg.md)
+### [ziglang.org](../packages/ziglangorg.md) (zig)
 
-Crafters of fine Open Source products
+General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
 
-**Programs**: None specified
+**Programs**: zig
 
-**Install**: `pkgx ziglang.org`
+**Install**: `sh <(curl https://pkgx.sh) zig`
 
 ---
 

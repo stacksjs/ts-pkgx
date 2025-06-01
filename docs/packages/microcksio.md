@@ -1,6 +1,6 @@
 # microcks-cli
 
-> Crafters of fine Open Source products
+> Simple CLI for interacting with Microcks test APIs
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx microcks.io
+sh <(curl https://pkgx.sh) microcks-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `microcks-cli`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `microcks-cli`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `0.9.0`, `0.5.8`, `0.5.7`, `0.5.6`, `0.5.5`
+- `0.5.4`
+
+</details>
+
+**Latest Version**: `0.9.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +microcks.io@0.9.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se/ca-certs`
 
 ## Usage Examples
 

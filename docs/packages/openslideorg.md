@@ -1,6 +1,6 @@
 # openslide
 
-> Crafters of fine Open Source products
+> C library to read whole-slide images (a.k.a. virtual slides)
 
 ## Package Information
 
@@ -13,14 +13,54 @@
 
 ```bash
 # Install with pkgx
-pkgx openslide.org
+sh <(curl https://pkgx.sh) +openslide.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `openslide-quickhash1sum`
+- `openslide-show-properties`
+- `openslide-write-png`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `openslide`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `4.0.0`, `3.4.1`
+
+</details>
+
+**Latest Version**: `4.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +openslide.org@4.0.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `cairographics.org`
+- `gnome.org/gdk-pixbuf`
+- `gnome.org/glib`
+- `libjpeg-turbo.org`
+- `libpng.org`
+- `simplesystems.org/libtiff`
+- `gnome.org/libxml2`
+- `openjpeg.org`
+- `sqlite.org`
 
 ## Usage Examples
 

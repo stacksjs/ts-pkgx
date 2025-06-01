@@ -1,6 +1,6 @@
 # v
 
-> Crafters of fine Open Source products
+> Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with pkgx
-pkgx vlang.io
+sh <(curl https://pkgx.sh) v
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `v`
+
+## Available Versions
+
+<details>
+<summary>Show all 14 versions</summary>
+
+- `0.4.10`, `0.4.9`, `0.4.8`, `0.4.7`, `0.4.6`
+- `0.4.5`, `0.4.4`, `0.4.3`, `0.4.2`, `0.4.1`
+- `0.4.0`, `0.3.5`, `0.3.4`, `0.3.3`
+
+</details>
+
+**Latest Version**: `0.4.10`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +vlang.io@0.4.10 -- $SHELL -i
+```
 
 ## Usage Examples
 

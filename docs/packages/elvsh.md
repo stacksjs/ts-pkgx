@@ -1,6 +1,6 @@
 # elvish
 
-> Crafters of fine Open Source products
+> Powerful scripting language & versatile interactive shell
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx elv.sh
+sh <(curl https://pkgx.sh) elvish
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `elvish`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `elvish`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.21.0`, `0.20.1`, `0.20.0`, `0.19.2`
+
+</details>
+
+**Latest Version**: `0.21.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +elv.sh@0.21.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

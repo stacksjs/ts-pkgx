@@ -1,6 +1,6 @@
 # lz4
 
-> Crafters of fine Open Source products
+> Extremely Fast Compression algorithm
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx lz4.org
+sh <(curl https://pkgx.sh) lz4
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `lz4`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `lz4`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.10.0`, `1.9.4`
+
+</details>
+
+**Latest Version**: `1.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +lz4.org@1.10.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

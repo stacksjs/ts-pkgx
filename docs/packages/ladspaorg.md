@@ -1,6 +1,6 @@
 # ladspa.org
 
-> Crafters of fine Open Source products
+> Linux Audio Developer\
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx ladspa.org
+sh <(curl https://pkgx.sh) +ladspa.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `analyseplugin`
+- `applyplugin`
+- `listplugins`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.17.0`
+
+</details>
+
+**Latest Version**: `1.17.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ladspa.org@1.17.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `github.com/libsndfile/libsndfile^1.2`
 
 ## Usage Examples
 

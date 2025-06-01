@@ -1,6 +1,6 @@
 # curlie
 
-> Crafters of fine Open Source products
+> The power of curl, the ease of use of httpie.
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx curlie.io
+sh <(curl https://pkgx.sh) curlie
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `curlie`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `curlie`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.8.2`, `1.7.2`
+
+</details>
+
+**Latest Version**: `1.8.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +curlie.io@1.8.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

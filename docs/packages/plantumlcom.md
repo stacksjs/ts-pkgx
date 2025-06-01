@@ -1,6 +1,6 @@
 # plantuml
 
-> Crafters of fine Open Source products
+> Generate diagrams from textual description
 
 ## Package Information
 
@@ -13,14 +13,48 @@
 
 ```bash
 # Install with pkgx
-pkgx plantuml.com
+sh <(curl https://pkgx.sh) plantuml
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `plantuml`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `plantuml`
+
+## Available Versions
+
+<details>
+<summary>Show all 16 versions</summary>
+
+- `1.2025.2`, `1.2025.1`, `1.2025.0`, `1.2024.8`, `1.2024.7`
+- `1.2024.6`, `1.2024.5`, `1.2024.4`, `1.2024.3`, `1.2024.2`
+- `1.2024.1`, `1.2024.0`, `1.2023.13`, `1.2023.12`, `1.2023.11`
+- `1.2023.10`
+
+</details>
+
+**Latest Version**: `1.2025.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +plantuml.com@1.2025.2 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `graphviz.org`
+- `openjdk.org`
 
 ## Usage Examples
 

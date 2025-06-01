@@ -1,6 +1,6 @@
 # gomplate
 
-> Crafters of fine Open Source products
+> A flexible commandline tool for template rendering. Supports lots of local and remote datasources.
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx gomplate.ca
+sh <(curl https://pkgx.sh) gomplate
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gomplate`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `gomplate`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `4.3.2`, `4.3.1`, `4.3.0`, `4.2.0`, `4.1.0`
+- `4.0.1`, `4.0.0`, `3.11.8`, `3.11.7`, `3.11.6`
+- `3.11.4`
+
+</details>
+
+**Latest Version**: `4.3.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gomplate.ca@4.3.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

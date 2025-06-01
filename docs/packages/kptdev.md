@@ -1,6 +1,6 @@
 # kpt
 
-> Crafters of fine Open Source products
+> Automate Kubernetes Configuration Editing
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx kpt.dev
+sh <(curl https://pkgx.sh) kpt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kpt`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `kpt`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.39.3`
+
+</details>
+
+**Latest Version**: `0.39.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +kpt.dev@0.39.3 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `git-scm.org`
 
 ## Usage Examples
 

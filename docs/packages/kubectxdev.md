@@ -1,6 +1,6 @@
 # kube
 
-> Crafters of fine Open Source products
+> Tool that can switch between kubectl contexts easily and create aliases
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx kubectx.dev
+sh <(curl https://pkgx.sh) +kubectx.dev -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kubectx`
+- `kubens`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `kube`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.9.5`, `0.9.4`
+
+</details>
+
+**Latest Version**: `0.9.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +kubectx.dev@0.9.5 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `github.com/junegunn/fzf`
 
 ## Usage Examples
 

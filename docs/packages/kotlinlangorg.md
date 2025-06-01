@@ -1,6 +1,6 @@
 # kotlinlang.org
 
-> Crafters of fine Open Source products
+> Statically typed programming language for the JVM
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx kotlinlang.org
+sh <(curl https://pkgx.sh) +kotlinlang.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kapt`
+- `kotlin`
+- `kotlinc`
+- `kotlinc-js`
+- `kotlinc-jvm`
+
+## Available Versions
+
+<details>
+<summary>Show all 16 versions</summary>
+
+- `2.1.21`, `2.1.20`, `2.1.10`, `2.1.0`, `2.0.21`
+- `2.0.20`, `2.0.10`, `2.0.0`, `1.9.25`, `1.9.24`
+- `1.9.23`, `1.9.22`, `1.9.21`, `1.9.20`, `1.9.10`
+- `1.9.0`
+
+</details>
+
+**Latest Version**: `2.1.21`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +kotlinlang.org@2.1.21 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openjdk.org`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # certbot
 
-> Crafters of fine Open Source products
+> Certbot is EFF\
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx certbot.eff.org
+sh <(curl https://pkgx.sh) certbot
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `certbot`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `certbot`
+
+## Available Versions
+
+<details>
+<summary>Show all 17 versions</summary>
+
+- `4.0.0`, `3.3.0`, `3.2.0`, `3.1.0`, `3.0.1`
+- `3.0.0`, `2.11.1`, `2.11.0`, `2.10.0`, `2.9.0`
+- `2.8.0`, `2.7.4`, `2.7.3`, `2.7.2`, `2.7.1`
+- `2.7.0`, `2.6.0`
+
+</details>
+
+**Latest Version**: `4.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +certbot.eff.org@4.0.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org~3.11`
 
 ## Usage Examples
 

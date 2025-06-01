@@ -8,11 +8,11 @@ Packages related to package managers & build tools.
 
 ### [cmake.org](../packages/cmakeorg.md)
 
-Crafters of fine Open Source products
+Mirror of CMake upstream repository
 
-**Programs**: None specified
+**Programs**: cmake, ccmake, cpack, ctest
 
-**Install**: `pkgx cmake.org`
+**Install**: `sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i`
 
 ---
 
@@ -26,113 +26,113 @@ Go home.
 
 ---
 
-### [gradle.org](../packages/gradleorg.md)
+### [gradle.org](../packages/gradleorg.md) (gradle)
 
-Crafters of fine Open Source products
+Open-source build automation tool based on the Groovy and Kotlin DSL
 
-**Programs**: None specified
+**Programs**: gradle
 
-**Install**: `pkgx gradle.org`
-
----
-
-### [maven.apache.org](../packages/mavenapacheorg.md)
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx maven.apache.org`
+**Install**: `sh <(curl https://pkgx.sh) gradle`
 
 ---
 
-### [mesonbuild.com](../packages/mesonbuildcom.md)
+### [maven.apache.org](../packages/mavenapacheorg.md) (mvn)
 
-Crafters of fine Open Source products
+Java-based project management
 
-**Programs**: None specified
+**Programs**: mvn, mvnDebug, mvnyjp
 
-**Install**: `pkgx mesonbuild.com`
+**Install**: `sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i`
 
 ---
 
-### [ninja/build.org](../packages/ninjabuildorg.md)
+### [mesonbuild.com](../packages/mesonbuildcom.md) (meson)
 
-Crafters of fine Open Source products
+Fast and user friendly build system
 
-**Programs**: None specified
+**Programs**: meson
 
-**Install**: `pkgx ninja-build.org`
+**Install**: `sh <(curl https://pkgx.sh) meson`
+
+---
+
+### [ninja/build.org](../packages/ninjabuildorg.md) (ninja)
+
+Small build system for use with gyp or CMake
+
+**Programs**: ninja
+
+**Install**: `sh <(curl https://pkgx.sh) ninja`
 
 ---
 
 ### [npmjs.com](../packages/npmjscom.md)
 
-Crafters of fine Open Source products
+the package manager for JavaScript
 
-**Programs**: None specified
+**Programs**: npm, npx
 
-**Install**: `pkgx npmjs.com`
-
----
-
-### [pip.pypa.io](../packages/pippypaio.md)
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx pip.pypa.io`
+**Install**: `sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i`
 
 ---
 
-### [pipenv.pypa.io](../packages/pipenvpypaio.md)
+### [pip.pypa.io](../packages/pippypaio.md) (pip)
 
-Crafters of fine Open Source products
+The Python package installer
 
-**Programs**: None specified
+**Programs**: pip, pip3.8, pip3.9, pip3.10, pip3.11
 
-**Install**: `pkgx pipenv.pypa.io`
-
----
-
-### [pnpm.io](../packages/pnpmio.md)
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx pnpm.io`
+**Install**: `sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i`
 
 ---
 
-### [python/poetry.org](../packages/pythonpoetryorg.md)
+### [pipenv.pypa.io](../packages/pipenvpypaio.md) (pipenv)
 
-Crafters of fine Open Source products
+Python Development Workflow for Humans.
 
-**Programs**: None specified
+**Programs**: pipenv
 
-**Install**: `pkgx python-poetry.org`
+**Install**: `sh <(curl https://pkgx.sh) pipenv`
+
+---
+
+### [pnpm.io](../packages/pnpmio.md) (pnp)
+
+Fast, disk space efficient package manager
+
+**Programs**: pnpm, pnpx
+
+**Install**: `sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i`
+
+---
+
+### [python/poetry.org](../packages/pythonpoetryorg.md) (poetry)
+
+Python packaging and dependency management made easy
+
+**Programs**: poetry
+
+**Install**: `sh <(curl https://pkgx.sh) poetry`
 
 ---
 
 ### [rubygems.org](../packages/rubygemsorg.md)
 
-Crafters of fine Open Source products
+Powerful, clean, object-oriented scripting language
 
-**Programs**: None specified
+**Programs**: bundle, bundler, gem
 
-**Install**: `pkgx rubygems.org`
+**Install**: `sh <(curl https://pkgx.sh) +rubygems.org -- $SHELL -i`
 
 ---
 
-### [yarnpkg.com](../packages/yarnpkgcom.md)
+### [yarnpkg.com](../packages/yarnpkgcom.md) (yarn)
 
-Crafters of fine Open Source products
+📦🐈 Active development trunk for Yarn ⚒
 
-**Programs**: None specified
+**Programs**: yarn, yarnpkg
 
-**Install**: `pkgx yarnpkg.com`
+**Install**: `sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i`
 
 ---
 

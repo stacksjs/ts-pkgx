@@ -1,6 +1,6 @@
 # gqlgen
 
-> Crafters of fine Open Source products
+> go generate based graphql server library
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx gqlgen.com
+sh <(curl https://pkgx.sh) gqlgen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gqlgen`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `gqlgen`
+
+## Available Versions
+
+<details>
+<summary>Show all 37 versions</summary>
+
+- `0.17.73`, `0.17.72`, `0.17.71`, `0.17.70`, `0.17.69`
+- `0.17.68`, `0.17.67`, `0.17.66`, `0.17.65`, `0.17.64`
+- `0.17.63`, `0.17.62`, `0.17.61`, `0.17.60`, `0.17.59`
+- `0.17.58`, `0.17.57`, `0.17.56`, `0.17.55`, `0.17.54`
+- `0.17.53`, `0.17.52`, `0.17.51`, `0.17.50`, `0.17.49`
+- `0.17.48`, `0.17.47`, `0.17.46`, `0.17.45`, `0.17.44`
+- `0.17.43`, `0.17.42`, `0.17.41`, `0.17.40`, `0.17.39`
+- `0.17.38`, `0.17.37`
+
+</details>
+
+**Latest Version**: `0.17.73`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gqlgen.com@0.17.73 -- $SHELL -i
+```
 
 ## Usage Examples
 

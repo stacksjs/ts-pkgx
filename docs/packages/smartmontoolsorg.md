@@ -1,6 +1,6 @@
 # smartmontools.org
 
-> Crafters of fine Open Source products
+> SMART hard drive monitoring
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with pkgx
-pkgx smartmontools.org
+sh <(curl https://pkgx.sh) +smartmontools.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `smartctl`
+- `smartd`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `7.5.0`, `7.4.0`, `7.3.0`
+
+</details>
+
+**Latest Version**: `7.5.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +smartmontools.org@7.5.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

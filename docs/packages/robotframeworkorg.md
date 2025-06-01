@@ -1,6 +1,6 @@
 # robot
 
-> Crafters of fine Open Source products
+> Generic automation framework for acceptance testing and RPA
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx robotframework.org
+sh <(curl https://pkgx.sh) robot
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `robot`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `robot`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `7.3.0`, `7.2.2`
+
+</details>
+
+**Latest Version**: `7.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +robotframework.org@7.3.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pkgx.sh^1`
 
 ## Usage Examples
 

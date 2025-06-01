@@ -1,6 +1,6 @@
 # classic.yarnpkg.com
 
-> Crafters of fine Open Source products
+> The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx classic.yarnpkg.com
+sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `yarn`
+- `yarnpkg`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.22.22`, `1.22.21`, `1.22.20`, `1.22.19`
+
+</details>
+
+**Latest Version**: `1.22.22`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +classic.yarnpkg.com@1.22.22 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `nodejs.org>=5`
 
 ## Usage Examples
 

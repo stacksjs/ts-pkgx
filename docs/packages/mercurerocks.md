@@ -1,6 +1,6 @@
 # mercure
 
-> Crafters of fine Open Source products
+> 🪽 An open, easy, fast, reliable and battery-efficient solution for real-time communications
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx mercure.rocks
+sh <(curl https://pkgx.sh) mercure
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mercure`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `mercure`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `0.19.2`, `0.19.1`, `0.19.0`, `0.18.4`, `0.18.3`
+- `0.18.2`, `0.18.1`, `0.18.0`, `0.17.1`, `0.17.0`
+- `0.16.3`
+
+</details>
+
+**Latest Version**: `0.19.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mercure.rocks@0.19.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

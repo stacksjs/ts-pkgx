@@ -1,6 +1,6 @@
 # soldeer
 
-> Crafters of fine Open Source products
+> Solidity Package Manager written in rust and integrated into Foundry (forge soldeer ...)
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx soldeer.xyz
+sh <(curl https://pkgx.sh) soldeer
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `soldeer`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `soldeer`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.5.4`, `0.5.3`, `0.5.2`
+
+</details>
+
+**Latest Version**: `0.5.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +soldeer.xyz@0.5.4 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # consul
 
-> Crafters of fine Open Source products
+> Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx consul.io
+sh <(curl https://pkgx.sh) consul
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `consul`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `consul`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `1.21.1`, `1.21.0`, `1.20.6`, `1.20.5`, `1.20.4`
+- `1.20.3`, `1.20.2`, `1.20.1`, `1.20.0`, `1.19.2`
+- `1.19.1`
+
+</details>
+
+**Latest Version**: `1.21.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +consul.io@1.21.1 -- $SHELL -i
+```
 
 ## Usage Examples
 

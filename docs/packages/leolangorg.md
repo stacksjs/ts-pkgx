@@ -1,26 +1,59 @@
 # leo
 
-> Crafters of fine Open Source products
+> 🦁 The Leo Programming Language. A Programming Language for Formally Verified, Zero-Knowledge Applications
 
 ## Package Information
 
 - **Domain**: `leo/lang.org`
 - **Name**: `leo`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/leo/lang.org/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/leo-lang.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-pkgx leo-lang.org
+sh <(curl https://pkgx.sh) leo
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `leo`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `leo`
+
+## Available Versions
+
+<details>
+<summary>Show all 13 versions</summary>
+
+- `2.6.1`, `2.6.0`, `2.5.0`, `2.4.1`, `2.4.0`
+- `2.3.1`, `2.3.0`, `2.2.0`, `2.1.0`, `2.0.0`
+- `1.12.0`, `1.11.0`, `1.10.0`
+
+</details>
+
+**Latest Version**: `2.6.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +leo/lang.org@2.6.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1.1`
+- `curl.se^8.4`
 
 ## Usage Examples
 
@@ -37,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/leo/lang.org/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/leo-lang.org/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

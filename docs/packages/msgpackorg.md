@@ -1,6 +1,6 @@
 # msgpack.org
 
-> Crafters of fine Open Source products
+> MessagePack implementation for C and C++ / msgpack.org[C/C++]
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx msgpack.org
+sh <(curl https://pkgx.sh) +msgpack.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx msgpack.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `6.0.2`, `6.0.1`, `6.0.0`
+
+</details>
+
+**Latest Version**: `6.0.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +msgpack.org@6.0.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -6,23 +6,23 @@ Packages related to cli tools & utilities.
 
 ## Packages
 
-### [curl.se](../packages/curlse.md)
+### [curl.se](../packages/curlse.md) (cURL)
 
-Crafters of fine Open Source products
+A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features
 
-**Programs**: None specified
+**Programs**: curl, curl-config
 
-**Install**: `pkgx curl.se`
+**Install**: `sh <(curl https://pkgx.sh) +curl.se -- $SHELL -i`
 
 ---
 
-### [htop.dev](../packages/htopdev.md)
+### [htop.dev](../packages/htopdev.md) (htop)
 
-Crafters of fine Open Source products
+Improved top (interactive process viewer)
 
-**Programs**: None specified
+**Programs**: htop
 
-**Install**: `pkgx htop.dev`
+**Install**: `sh <(curl https://pkgx.sh) htop`
 
 ---
 

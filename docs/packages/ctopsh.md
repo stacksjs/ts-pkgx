@@ -1,6 +1,6 @@
 # ctop
 
-> Crafters of fine Open Source products
+> Top-like interface for container metrics
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx ctop.sh
+sh <(curl https://pkgx.sh) ctop
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ctop`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ctop`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.7.7`
+
+</details>
+
+**Latest Version**: `0.7.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ctop.sh@0.7.7 -- $SHELL -i
+```
 
 ## Usage Examples
 

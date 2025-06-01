@@ -1,6 +1,6 @@
 # ktlint
 
-> Crafters of fine Open Source products
+> An anti-bikeshedding Kotlin linter with built-in formatter
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx ktlint.github.io
+sh <(curl https://pkgx.sh) ktlint
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ktlint`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ktlint`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `1.6.0`, `1.5.0`, `1.4.1`, `1.4.0`, `1.3.1`
+- `1.3.0`, `1.2.1`, `1.2.0`, `1.1.1`, `0.49.1`
+
+</details>
+
+**Latest Version**: `1.6.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ktlint.github.io@1.6.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openjdk.org`
 
 ## Usage Examples
 

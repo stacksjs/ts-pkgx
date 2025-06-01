@@ -1,6 +1,6 @@
 # gm
 
-> Crafters of fine Open Source products
+> Image processing tools collection
 
 ## Package Information
 
@@ -13,14 +13,55 @@
 
 ```bash
 # Install with pkgx
-pkgx graphicsmagick.org
+sh <(curl https://pkgx.sh) gm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gm`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `gm`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `1.3.45`, `1.3.44`, `1.3.43`, `1.3.42`, `1.3.40`
+
+</details>
+
+**Latest Version**: `1.3.45`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +graphicsmagick.org@1.3.45 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `freetype.org`
+- `github.com/jasper-software/jasper`
+- `libjpeg-turbo.org`
+- `jpeg.org/jpegxl`
+- `libpng.org`
+- `simplesystems.org/libtiff`
+- `gnu.org/libtool`
+- `littlecms.com>=2.0`
+- `google.com/webp`
+- `sourceware.org/bzip2`
+- `gnome.org/libxml2`
+- `zlib.net`
 
 ## Usage Examples
 

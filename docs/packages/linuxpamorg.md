@@ -1,26 +1,56 @@
 # linux-pam.org
 
-> Crafters of fine Open Source products
+> Linux PAM (Pluggable Authentication Modules for Linux) project
 
 ## Package Information
 
 - **Domain**: `linux/pam.org`
 - **Name**: `linux-pam.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/linux/pam.org/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/linux-pam.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-pkgx linux-pam.org
+sh <(curl https://pkgx.sh) +linux-pam.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `faillock`
+- `mkhomedir_helper`
+- `pam_namespace_helper`
+- `pam_timestamp_check`
+- `unix_chkpwd`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.7.0`, `1.6.1`, `1.6.0`, `1.5.3`
+
+</details>
+
+**Latest Version**: `1.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +linux/pam.org@1.7.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `github.com/thkukuk/libnsl`
+- `sourceforge.net/libtirpc`
+- `github.com/besser82/libxcrypt`
 
 ## Usage Examples
 
@@ -37,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/linux/pam.org/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/linux-pam.org/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -1,6 +1,6 @@
 # qhull.org
 
-> Crafters of fine Open Source products
+> Qhull development for www.qhull.org -- Qhull 2020.2 (8.1-alpha1) at https://github.com/qhull/qhull/wiki
 
 ## Package Information
 
@@ -13,14 +13,37 @@
 
 ```bash
 # Install with pkgx
-pkgx qhull.org
+sh <(curl https://pkgx.sh) +qhull.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `qconvex`
+- `qdelaunay`
+- `qhalf`
+- `qhull`
+- `qvoronoi`
+- `rbox`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `8.0.2`
+
+</details>
+
+**Latest Version**: `8.0.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +qhull.org@8.0.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

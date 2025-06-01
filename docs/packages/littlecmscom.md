@@ -1,6 +1,6 @@
 # littlecms.com
 
-> Crafters of fine Open Source products
+> A free, open source, CMM engine. It provides fast transforms between ICC profiles.
 
 ## Package Information
 
@@ -13,14 +13,43 @@
 
 ```bash
 # Install with pkgx
-pkgx littlecms.com
+sh <(curl https://pkgx.sh) +littlecms.com -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `jpgicc`
+- `linkicc`
+- `psicc`
+- `tificc`
+- `transicc`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `2.17.0`, `2.16.0`, `2.15.0`, `2.12.0`
+
+</details>
+
+**Latest Version**: `2.17.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +littlecms.com@2.17.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `simplesystems.org/libtiff^4`
+- `libjpeg-turbo.org^2`
 
 ## Usage Examples
 

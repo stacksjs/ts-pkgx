@@ -1,6 +1,6 @@
 # swig.org
 
-> Crafters of fine Open Source products
+> SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx swig.org
+sh <(curl https://pkgx.sh) +swig.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `swig`
+- `ccache-swig`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `4.3.1`, `4.3.0`, `4.2.1`, `4.2.0`, `4.1.1`
+
+</details>
+
+**Latest Version**: `4.3.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +swig.org@4.3.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pcre.org/v2`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # fx
 
-> Crafters of fine Open Source products
+> Terminal JSON viewer & processor
 
 ## Package Information
 
@@ -13,14 +13,41 @@
 
 ```bash
 # Install with pkgx
-pkgx fx.wtf
+sh <(curl https://pkgx.sh) fx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `fx`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `fx`
+
+## Available Versions
+
+<details>
+<summary>Show all 17 versions</summary>
+
+- `36.0.3`, `36.0.2`, `36.0.1`, `36.0.0`, `35.0.0`
+- `34.0.0`, `33.0.0`, `32.0.0`, `31.0.0`, `30.2.0`
+- `30.1.1`, `30.1.0`, `30.0.3`, `30.0.2`, `30.0.1`
+- `30.0.0`, `24.1.0`
+
+</details>
+
+**Latest Version**: `36.0.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +fx.wtf@36.0.3 -- $SHELL -i
+```
 
 ## Usage Examples
 

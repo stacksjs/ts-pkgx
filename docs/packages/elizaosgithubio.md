@@ -1,6 +1,6 @@
 # elizaOS
 
-> Crafters of fine Open Source products
+> Autonomous agents for everyone
 
 ## Package Information
 
@@ -13,14 +13,56 @@
 
 ```bash
 # Install with pkgx
-pkgx elizaOS.github.io
+sh <(curl https://pkgx.sh) eliza
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `eliza`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `eliza`
+- `elizaOS`
+- `elizaos`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `0.25.19`, `0.25.9`, `0.25.8`, `0.1.9`, `0.1.8.1`
+- `0.1.7`
+
+</details>
+
+**Latest Version**: `0.25.19`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +elizaOS.github.io@0.25.19 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org>=2.7`
+- `nodejs.org~23.3`
+- `pnpm.io`
+
+## Related Packages
+
+These packages work well with elizaOS:
+
+- [`git-scm.org`](gitscmorg.md) - Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
+- [`ffmpeg.org`](ffmpegorg.md) - Play, record, convert, and stream audio and video
 
 ## Usage Examples
 

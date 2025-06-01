@@ -1,6 +1,6 @@
 # Auto-GPT
 
-> Crafters of fine Open Source products
+> AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx agpt.co
+sh <(curl https://pkgx.sh) auto-gpt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `auto-gpt`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `auto-gpt`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `0.4.7`, `0.4.6`, `0.4.5`, `0.4.4`, `0.4.3`
+- `0.4.2`, `0.4.0`, `0.3.1`, `0.3.0`
+
+</details>
+
+**Latest Version**: `0.4.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +agpt.co@0.4.7 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org>=3.10<3.12`
+- `redis.io^7`
+- `tea.xyz^0`
 
 ## Usage Examples
 

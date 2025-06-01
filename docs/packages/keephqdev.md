@@ -1,6 +1,6 @@
 # keep
 
-> Crafters of fine Open Source products
+> The open-source AIOps and alert management platform
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx keephq.dev
+sh <(curl https://pkgx.sh) keep
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `keep`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `keep`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.0.0`
+
+</details>
+
+**Latest Version**: `0.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +keephq.dev@0.0.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org>=3<3.12`
 
 ## Usage Examples
 

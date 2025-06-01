@@ -1,6 +1,6 @@
 # freeglut.sourceforge.io
 
-> Crafters of fine Open Source products
+> Free implementation of the OpenGL Utility Toolkit (GLUT)
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx freeglut.sourceforge.io
+sh <(curl https://pkgx.sh) +freeglut.sourceforge.io -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,37 @@ pkgx freeglut.sourceforge.io
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `3.6.0`, `3.4.0`
+
+</details>
+
+**Latest Version**: `3.6.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +freeglut.sourceforge.io@3.6.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `x.org/x11`
+- `x.org/xi`
+- `x.org/xrandr`
+- `x.org/xxf86vm`
+- `mesa3d.org`
+- `linuxfreedesktop.org/mesa-glux.org/xinput`
+- `freedesktop.org/mesa-glu`
+- `x.org/xinput`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # gr2fonttest
 
-> Crafters of fine Open Source products
+> Graphite is a "smart font" system developed specifically to handle the complexities of lesser-known languages of the world.
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx graphite.sil.org
+sh <(curl https://pkgx.sh) gr2fonttest
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gr2fonttest`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `gr2fonttest`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.3.14`
+
+</details>
+
+**Latest Version**: `1.3.14`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +graphite.sil.org@1.3.14 -- $SHELL -i
+```
 
 ## Usage Examples
 

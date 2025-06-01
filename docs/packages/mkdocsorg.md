@@ -1,6 +1,6 @@
 # mkdocs
 
-> Crafters of fine Open Source products
+> Project documentation with Markdown.
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx mkdocs.org
+sh <(curl https://pkgx.sh) mkdocs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mkdocs`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `mkdocs`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.6.1`, `1.6.0`, `1.5.3`
+
+</details>
+
+**Latest Version**: `1.6.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mkdocs.org@1.6.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org>=3<3.12`
 
 ## Usage Examples
 

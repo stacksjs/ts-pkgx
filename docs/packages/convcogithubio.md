@@ -1,6 +1,6 @@
 # convco
 
-> Crafters of fine Open Source products
+> Conventional commits, changelog, versioning, validation
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx convco.github.io
+sh <(curl https://pkgx.sh) convco
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `convco`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `convco`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `0.6.2`, `0.6.1`, `0.6.0`, `0.5.2`, `0.5.1`
+- `0.5.0`, `0.4.3`, `0.4.2`, `0.4.1`
+
+</details>
+
+**Latest Version**: `0.6.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +convco.github.io@0.6.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

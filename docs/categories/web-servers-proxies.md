@@ -16,23 +16,23 @@ Go home.
 
 ---
 
-### [nginx.org](../packages/nginxorg.md)
+### [nginx.org](../packages/nginxorg.md) (nginx)
 
-Crafters of fine Open Source products
+HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 
-**Programs**: None specified
+**Programs**: nginx
 
-**Install**: `pkgx nginx.org`
+**Install**: `sh <(curl https://pkgx.sh) nginx`
 
 ---
 
-### [traefik.io](../packages/traefikio.md)
+### [traefik.io](../packages/traefikio.md) (traefik)
 
-Crafters of fine Open Source products
+The Cloud Native Application Proxy
 
-**Programs**: None specified
+**Programs**: traefik
 
-**Install**: `pkgx traefik.io`
+**Install**: `sh <(curl https://pkgx.sh) traefik`
 
 ---
 

@@ -1,6 +1,6 @@
 # idevicedate
 
-> Crafters of fine Open Source products
+> A cross-platform protocol library to communicate with iOS devices
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx libimobiledevice.org
+sh <(curl https://pkgx.sh) idevicedate
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `idevicedate`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `idevicedate`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.3.0`
+
+</details>
+
+**Latest Version**: `1.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libimobiledevice.org@1.3.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `libimobiledevice.org/libplist^2.4`
+- `gnu.org/libtasn1^4.19`
+- `libimobiledevice.org/libusbmuxd^2`
+- `openssl.org^1.1`
 
 ## Usage Examples
 

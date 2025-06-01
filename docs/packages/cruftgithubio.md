@@ -1,6 +1,6 @@
 # cruft
 
-> Crafters of fine Open Source products
+> Allows you to maintain all the necessary cruft for packaging and building projects separate from the code you intentionally write. Built on-top of, and fully compatible with, CookieCutter.
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx cruft.github.io
+sh <(curl https://pkgx.sh) cruft
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cruft`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `cruft`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `2.16.0`, `2.15.0`
+
+</details>
+
+**Latest Version**: `2.16.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +cruft.github.io@2.16.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org>=3.7<3.12`
+- `git-scm.org^2`
 
 ## Usage Examples
 

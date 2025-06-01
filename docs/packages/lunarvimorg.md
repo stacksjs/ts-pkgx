@@ -1,6 +1,6 @@
 # lunarvim.org
 
-> Crafters of fine Open Source products
+> 🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx lunarvim.org
+sh <(curl https://pkgx.sh) +lunarvim.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `lvim`
+- `nvim`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.4.0`, `1.3.0`
+
+</details>
+
+**Latest Version**: `1.4.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +lunarvim.org@1.4.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/bash`
+- `crates.io/fd-find`
+- `pip.pypa.io`
+- `python.org^3`
+- `nodejs.org`
+- `rust-lang.org/cargo`
+- `neovim.io`
 
 ## Usage Examples
 

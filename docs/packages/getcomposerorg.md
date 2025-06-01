@@ -1,6 +1,6 @@
 # composer
 
-> Crafters of fine Open Source products
+> Dependency Manager for PHP
 
 ## Package Information
 
@@ -13,14 +13,50 @@
 
 ```bash
 # Install with pkgx
-pkgx getcomposer.org
+sh <(curl https://pkgx.sh) +getcomposer.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `composer`
+- `composer.phar`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `composer`
+
+## Available Versions
+
+<details>
+<summary>Show all 30 versions</summary>
+
+- `2.8.9`, `2.8.8`, `2.8.7`, `2.8.6`, `2.8.5`
+- `2.8.4`, `2.8.3`, `2.8.2`, `2.8.1`, `2.8.0`
+- `2.7.9`, `2.7.8`, `2.7.7`, `2.7.6`, `2.7.5`
+- `2.7.4`, `2.7.3`, `2.7.2`, `2.7.1`, `2.7.0`
+- `2.6.6`, `2.6.5`, `2.6.4`, `2.6.3`, `2.6.2`
+- `2.6.1`, `2.6.0`, `2.5.8`, `2.2.24`, `2.2.23`
+
+</details>
+
+**Latest Version**: `2.8.9`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +getcomposer.org@2.8.9 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `php.net`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # docutils.org
 
-> Crafters of fine Open Source products
+> Text processing system for reStructuredText
 
 ## Package Information
 
@@ -13,14 +13,49 @@
 
 ```bash
 # Install with pkgx
-pkgx docutils.org
+sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `docutils`
+- `rst2html`
+- `rst2html4`
+- `rst2html5`
+- `rst2latex`
+- `rst2man`
+- `rst2odt`
+- `rst2pseudoxml`
+- `rst2s5`
+- `rst2xetex`
+- `rst2xml`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `0.21.2`, `0.21.1`, `0.21.0`, `0.20.1`, `0.20.0`
+- `0.19.0`
+
+</details>
+
+**Latest Version**: `0.21.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +docutils.org@0.21.2 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pkgx.sh^1`
 
 ## Usage Examples
 

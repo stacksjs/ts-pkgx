@@ -1,6 +1,6 @@
 # mujs
 
-> Crafters of fine Open Source products
+> An embeddable Javascript interpreter in C.
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx mujs.com
+sh <(curl https://pkgx.sh) +mujs.com -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mujs`
+- `mujs-pp`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `mujs`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.3.6`, `1.3.5`, `1.3.4`, `1.3.3`
+
+</details>
+
+**Latest Version**: `1.3.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mujs.com@1.3.6 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `linuxgnu.org/readline~8.1invisible-island.net/ncurses`
+- `gnu.org/readline~8.1`
+- `invisible-island.net/ncurses`
 
 ## Usage Examples
 

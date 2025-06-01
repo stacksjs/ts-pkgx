@@ -1,6 +1,6 @@
 # prettier
 
-> Crafters of fine Open Source products
+> Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 
 ## Package Information
 
@@ -13,14 +13,46 @@
 
 ```bash
 # Install with pkgx
-pkgx prettier.io
+sh <(curl https://pkgx.sh) prettier
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `prettier`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `prettier`
+
+## Available Versions
+
+<details>
+<summary>Show all 12 versions</summary>
+
+- `3.5.3`, `3.5.2`, `3.5.1`, `3.5.0`, `3.4.2`
+- `3.4.1`, `3.4.0`, `3.3.3`, `3.3.2`, `3.3.1`
+- `3.3.0`, `3.2.5`
+
+</details>
+
+**Latest Version**: `3.5.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +prettier.io@3.5.3 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `nodejs.org^20`
 
 ## Usage Examples
 

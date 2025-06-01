@@ -1,6 +1,6 @@
 # tox
 
-> Crafters of fine Open Source products
+> Command line driven CI frontend and development task automation tool.
 
 ## Package Information
 
@@ -13,14 +13,46 @@
 
 ```bash
 # Install with pkgx
-pkgx tox.wiki
+sh <(curl https://pkgx.sh) tox
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tox`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `tox`
+
+## Available Versions
+
+<details>
+<summary>Show all 15 versions</summary>
+
+- `4.26.0`, `4.25.0`, `4.24.2`, `4.24.1`, `4.24.0`
+- `4.23.2`, `4.23.1`, `4.23.0`, `4.22.0`, `4.21.2`
+- `4.21.1`, `4.21.0`, `4.20.0`, `4.19.0`, `4.18.1`
+
+</details>
+
+**Latest Version**: `4.26.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +tox.wiki@4.26.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pkgx.sh^1`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # yadm
 
-> Crafters of fine Open Source products
+> Yet Another Dotfiles Manager
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx yadm.io
+sh <(curl https://pkgx.sh) yadm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `yadm`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `yadm`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `3.5.0`, `3.4.0`, `3.3.0`, `3.2.2`
+
+</details>
+
+**Latest Version**: `3.5.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +yadm.io@3.5.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `git-scm.org`
+- `gnu.org/bash`
 
 ## Usage Examples
 

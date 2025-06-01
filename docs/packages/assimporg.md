@@ -1,6 +1,6 @@
 # assimp
 
-> Crafters of fine Open Source products
+> The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure.
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx assimp.org
+sh <(curl https://pkgx.sh) assimp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `assimp`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `assimp`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `5.4.3`, `5.4.2`, `5.4.1`, `5.4.0`, `5.3.1`
+- `5.3.0`, `5.2.5`
+
+</details>
+
+**Latest Version**: `5.4.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +assimp.org@5.4.3 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `zlib.net`
 
 ## Usage Examples
 

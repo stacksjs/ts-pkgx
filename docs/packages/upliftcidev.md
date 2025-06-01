@@ -1,6 +1,6 @@
 # uplift
 
-> Crafters of fine Open Source products
+> Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI.
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx upliftci.dev
+sh <(curl https://pkgx.sh) uplift
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `uplift`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `uplift`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `2.25.0`, `2.24.1`, `2.24.0`, `2.23.0`, `2.22.0`
+
+</details>
+
+**Latest Version**: `2.25.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +upliftci.dev@2.25.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

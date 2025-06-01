@@ -1,6 +1,6 @@
 # unicode.org
 
-> Crafters of fine Open Source products
+> The home of the ICU project source code.
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx unicode.org
+sh <(curl https://pkgx.sh) +unicode.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `derb`
+- `genbrk`
+- `gencfu`
+- `gencnval`
+- `gendict`
+- `genrb`
+- `icu-config`
+- `icuexportdata`
+- `icuinfo`
+- `makeconv`
+- `pkgdata`
+- `uconv`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `77.1.0`, `76.1.0`, `75.1.0`, `74.2.0`, `74.1.0`
+- `73.2.0`, `71.1.0`
+
+</details>
+
+**Latest Version**: `77.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +unicode.org@77.1.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

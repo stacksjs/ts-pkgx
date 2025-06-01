@@ -1,6 +1,6 @@
 # dog
 
-> Crafters of fine Open Source products
+> A command-line DNS client.
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx dns.lookup.dog
+sh <(curl https://pkgx.sh) dog
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `dog`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `dog`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.1.0`
+
+</details>
+
+**Latest Version**: `0.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +dns.lookup.dog@0.1.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1.1`
 
 ## Usage Examples
 

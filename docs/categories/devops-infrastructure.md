@@ -6,13 +6,13 @@ Tools for deployment, orchestration, and infrastructure management.
 
 ## Packages
 
-### [ansible.com](../packages/ansiblecom.md)
+### [ansible.com](../packages/ansiblecom.md) (ansible)
 
-Crafters of fine Open Source products
+Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
 
-**Programs**: None specified
+**Programs**: ansible, ansible-config, ansible-connection, ansible-console, ansible-doc, ansible-galaxy, ansible-inventory, ansible-playbook, ansible-pull, ansible-test, ansible-vault
 
-**Install**: `pkgx ansible.com`
+**Install**: `sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i`
 
 ---
 
@@ -36,13 +36,13 @@ Go home.
 
 ---
 
-### [consul.io](../packages/consulio.md)
+### [consul.io](../packages/consulio.md) (consul)
 
-Crafters of fine Open Source products
+Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.
 
-**Programs**: None specified
+**Programs**: consul
 
-**Install**: `pkgx consul.io`
+**Install**: `sh <(curl https://pkgx.sh) consul`
 
 ---
 
@@ -66,23 +66,23 @@ Go home.
 
 ---
 
-### [helm.sh](../packages/helmsh.md)
+### [helm.sh](../packages/helmsh.md) (helm)
 
-Crafters of fine Open Source products
+The Kubernetes Package Manager
 
-**Programs**: None specified
+**Programs**: helm
 
-**Install**: `pkgx helm.sh`
+**Install**: `sh <(curl https://pkgx.sh) helm`
 
 ---
 
-### [istio.io](../packages/istioio.md)
+### [istio.io](../packages/istioio.md) (istioctl)
 
-Crafters of fine Open Source products
+Connect, secure, control, and observe services.
 
-**Programs**: None specified
+**Programs**: istioctl
 
-**Install**: `pkgx istio.io`
+**Install**: `sh <(curl https://pkgx.sh) istioctl`
 
 ---
 
@@ -96,43 +96,43 @@ Go home.
 
 ---
 
-### [nomadproject.io](../packages/nomadprojectio.md)
+### [nomadproject.io](../packages/nomadprojectio.md) (nomad)
 
-Crafters of fine Open Source products
+Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
 
-**Programs**: None specified
+**Programs**: nomad
 
-**Install**: `pkgx nomadproject.io`
-
----
-
-### [podman.io](../packages/podmanio.md)
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx podman.io`
+**Install**: `sh <(curl https://pkgx.sh) nomad`
 
 ---
 
-### [terraform.io](../packages/terraformio.md)
+### [podman.io](../packages/podmanio.md) (podman)
 
-Crafters of fine Open Source products
+Podman: A tool for managing OCI containers and pods.
 
-**Programs**: None specified
+**Programs**: podman, podman-remote, podman-mac-helper
 
-**Install**: `pkgx terraform.io`
+**Install**: `sh <(curl https://pkgx.sh) +podman.io -- $SHELL -i`
 
 ---
 
-### [traefik.io](../packages/traefikio.md)
+### [terraform.io](../packages/terraformio.md) (terraform)
 
-Crafters of fine Open Source products
+Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
 
-**Programs**: None specified
+**Programs**: terraform
 
-**Install**: `pkgx traefik.io`
+**Install**: `sh <(curl https://pkgx.sh) terraform`
+
+---
+
+### [traefik.io](../packages/traefikio.md) (traefik)
+
+The Cloud Native Application Proxy
+
+**Programs**: traefik
+
+**Install**: `sh <(curl https://pkgx.sh) traefik`
 
 ---
 

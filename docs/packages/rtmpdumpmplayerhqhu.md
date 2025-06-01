@@ -1,6 +1,6 @@
 # rtmpdump
 
-> Crafters of fine Open Source products
+> Tool for downloading RTMP streaming media
 
 ## Package Information
 
@@ -13,14 +13,48 @@
 
 ```bash
 # Install with pkgx
-pkgx rtmpdump.mplayerhq.hu
+sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rtmpdump`
+- `rtmpgw`
+- `rtmpsrv`
+- `rtmpsuck`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `rtmpdump`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `2.3.0`, `2.3.0`
+
+</details>
+
+**Latest Version**: `2.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu@2.3.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1.1`
+- `zlib.net`
 
 ## Usage Examples
 

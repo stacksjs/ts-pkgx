@@ -1,6 +1,6 @@
 # jsonnet
 
-> Crafters of fine Open Source products
+> Jsonnet - The data templating language
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx jsonnet.org
+sh <(curl https://pkgx.sh) +jsonnet.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `jsonnet`
+- `jsonnetfmt`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `jsonnet`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.21.0`, `0.20.0`
+
+</details>
+
+**Latest Version**: `0.21.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +jsonnet.org@0.21.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

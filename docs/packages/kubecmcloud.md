@@ -1,6 +1,6 @@
 # kubecm
 
-> Crafters of fine Open Source products
+> Manage your kubeconfig more easily.
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx kubecm.cloud
+sh <(curl https://pkgx.sh) kubecm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kubecm`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `kubecm`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `0.33.0`, `0.32.3`, `0.32.2`, `0.32.1`, `0.32.0`
+- `0.31.0`, `0.30.0`, `0.29.1`, `0.29.0`, `0.28.0`
+
+</details>
+
+**Latest Version**: `0.33.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +kubecm.cloud@0.33.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # templ
 
-> Crafters of fine Open Source products
+> A language for writing HTML user interfaces in Go.
 
 ## Package Information
 
@@ -13,14 +13,42 @@
 
 ```bash
 # Install with pkgx
-pkgx templ.guide
+sh <(curl https://pkgx.sh) templ
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `templ`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `templ`
+
+## Available Versions
+
+<details>
+<summary>Show all 25 versions</summary>
+
+- `0.3.887`, `0.3.865`, `0.3.857`, `0.3.856`, `0.3.850`
+- `0.3.833`, `0.3.819`, `0.2.793`, `0.2.778`, `0.2.771`
+- `0.2.747`, `0.2.742`, `0.2.731`, `0.2.707`, `0.2.697`
+- `0.2.680`, `0.2.663`, `0.2.648`, `0.2.646`, `0.2.639`
+- `0.2.598`, `0.2.543`, `0.2.513`, `0.2.501`, `0.2.476`
+
+</details>
+
+**Latest Version**: `0.3.887`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +templ.guide@0.3.887 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # alembic
 
-> Crafters of fine Open Source products
+> A database migrations tool for SQLAlchemy.
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx alembic.sqlalchemy.org
+sh <(curl https://pkgx.sh) alembic
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `alembic`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `alembic`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `1.16.1`, `1.16.0`, `1.15.2`, `1.15.1`, `1.14.1`
+- `1.14.0`, `1.13.3`, `1.13.2`
+
+</details>
+
+**Latest Version**: `1.16.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +alembic.sqlalchemy.org@1.16.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pkgx.sh^1`
 
 ## Usage Examples
 

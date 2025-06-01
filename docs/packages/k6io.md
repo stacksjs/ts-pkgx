@@ -1,6 +1,6 @@
 # k6
 
-> Crafters of fine Open Source products
+> A modern load testing tool, using Go and JavaScript - https://k6.io
 
 ## Package Information
 
@@ -13,14 +13,42 @@
 
 ```bash
 # Install with pkgx
-pkgx k6.io
+sh <(curl https://pkgx.sh) k6
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `k6`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `k6`
+
+## Available Versions
+
+<details>
+<summary>Show all 24 versions</summary>
+
+- `1.0.0`, `0.59.0`, `0.58.0`, `0.57.0`, `0.56.0`
+- `0.55.2`, `0.55.1`, `0.55.0`, `0.54.0`, `0.53.0`
+- `0.52.0`, `0.51.0`, `0.50.0`, `0.49.0`, `0.48.0`
+- `0.47.0`, `0.46.0`, `0.45.1`, `0.45.0`, `0.44.1`
+- `0.44.0`, `0.43.1`, `0.43.0`, `0.42.0`
+
+</details>
+
+**Latest Version**: `1.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +k6.io@1.0.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

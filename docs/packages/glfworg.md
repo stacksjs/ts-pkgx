@@ -1,6 +1,6 @@
 # glfw.org
 
-> Crafters of fine Open Source products
+> A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx glfw.org
+sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,34 @@ pkgx glfw.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `3.4.0`, `3.3.10`, `3.3.9`
+
+</details>
+
+**Latest Version**: `3.4.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +glfw.org@3.4.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `linuxfreeglut.sourceforge.io^3.4x.org/xcursor^1.2xkbcommon.org^1.0mesa3d.org^23.3`
+- `freeglut.sourceforge.io^3.4`
+- `x.org/xcursor^1.2`
+- `xkbcommon.org^1.0`
+- `mesa3d.org^23.3`
 
 ## Usage Examples
 

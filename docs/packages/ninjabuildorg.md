@@ -1,26 +1,50 @@
 # ninja
 
-> Crafters of fine Open Source products
+> Small build system for use with gyp or CMake
 
 ## Package Information
 
 - **Domain**: `ninja/build.org`
 - **Name**: `ninja`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ninja/build.org/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ninja-build.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-pkgx ninja-build.org
+sh <(curl https://pkgx.sh) ninja
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ninja`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ninja`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.12.1`, `1.12.0`, `1.11.1`, `1.11.0`
+
+</details>
+
+**Latest Version**: `1.12.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ninja/build.org@1.12.1 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -37,7 +61,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ninja/build.org/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ninja-build.org/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

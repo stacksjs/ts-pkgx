@@ -1,6 +1,6 @@
 # synth
 
-> Crafters of fine Open Source products
+> The Declarative Data Generator
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx getsynth.com
+sh <(curl https://pkgx.sh) synth
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `synth`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `synth`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.6.9`
+
+</details>
+
+**Latest Version**: `0.6.9`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +getsynth.com@0.6.9 -- $SHELL -i
+```
 
 ## Usage Examples
 

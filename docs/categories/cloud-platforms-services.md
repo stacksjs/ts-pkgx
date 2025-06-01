@@ -36,13 +36,13 @@ Go home.
 
 ---
 
-### [fly.io](../packages/flyio.md)
+### [fly.io](../packages/flyio.md) (fly)
 
-Crafters of fine Open Source products
+Command line tools for fly.io services
 
-**Programs**: None specified
+**Programs**: fly, flyctl
 
-**Install**: `pkgx fly.io`
+**Install**: `sh <(curl https://pkgx.sh) +fly.io -- $SHELL -i`
 
 ---
 
@@ -66,23 +66,23 @@ Go home.
 
 ---
 
-### [heroku.com](../packages/herokucom.md)
+### [heroku.com](../packages/herokucom.md) (heroku)
 
-Crafters of fine Open Source products
+CLI for Heroku
 
-**Programs**: None specified
+**Programs**: heroku
 
-**Install**: `pkgx heroku.com`
+**Install**: `sh <(curl https://pkgx.sh) heroku`
 
 ---
 
-### [railway.app](../packages/railwayapp.md)
+### [railway.app](../packages/railwayapp.md) (railway)
 
-Crafters of fine Open Source products
+Develop and deploy code with zero configuration
 
-**Programs**: None specified
+**Programs**: railway
 
-**Install**: `pkgx railway.app`
+**Install**: `sh <(curl https://pkgx.sh) railway`
 
 ---
 

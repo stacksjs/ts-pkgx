@@ -1,6 +1,6 @@
 # dblab
 
-> Crafters of fine Open Source products
+> The database client every command line junkie deserves.
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx dblab.danvergara.com
+sh <(curl https://pkgx.sh) dblab
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `dblab`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `dblab`
+
+## Available Versions
+
+<details>
+<summary>Show all 15 versions</summary>
+
+- `0.32.0`, `0.31.0`, `0.30.1`, `0.30.0`, `0.29.0`
+- `0.28.1`, `0.28.0`, `0.27.0`, `0.26.0`, `0.25.0`
+- `0.24.1`, `0.24.0`, `0.23.0`, `0.22.0`, `0.21.0`
+
+</details>
+
+**Latest Version**: `0.32.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +dblab.danvergara.com@0.32.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

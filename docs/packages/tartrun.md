@@ -1,6 +1,6 @@
 # tart
 
-> Crafters of fine Open Source products
+> macOS and Linux VMs on Apple Silicon to use in CI and other automations
 
 ## Package Information
 
@@ -13,14 +13,48 @@
 
 ```bash
 # Install with pkgx
-pkgx tart.run
+sh <(curl https://pkgx.sh) tart
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tart`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `tart`
+
+## Available Versions
+
+<details>
+<summary>Show all 54 versions</summary>
+
+- `2.27.2`, `2.27.1`, `2.27.0`, `2.26.1`, `2.26.0`
+- `2.25.0`, `2.24.1`, `2.24.0`, `2.23.0`, `2.22.4`
+- `2.22.3`, `2.22.2`, `2.22.0`, `2.21.0`, `2.20.2`
+- `2.20.1`, `2.20.0`, `2.19.3`, `2.19.2`, `2.19.1`
+- `2.19.0`, `2.18.5`, `2.18.4`, `2.18.3`, `2.18.2`
+- `2.18.1`, `2.18.0`, `2.17.0`, `2.16.0`, `2.15.0`
+- `2.14.0`, `2.13.0`, `2.12.0`, `2.11.1`, `2.11.0`
+- `2.10.0`, `2.9.1`, `2.9.0`, `2.8.1`, `2.8.0`
+- `2.7.2`, `2.7.1`, `2.7.0`, `2.6.1`, `2.6.0`
+- `2.4.4`, `2.4.3`, `2.4.2`, `2.4.1`, `2.4.0`
+- `2.3.0`, `2.2.1`, `2.2.0`, `0.38.0`
+
+</details>
+
+**Latest Version**: `2.27.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +tart.run@2.27.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

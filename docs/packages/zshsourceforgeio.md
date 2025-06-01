@@ -1,6 +1,6 @@
 # zsh
 
-> Crafters of fine Open Source products
+> UNIX shell (command interpreter)
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx zsh.sourceforge.io
+sh <(curl https://pkgx.sh) zsh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `zsh`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `zsh`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `5.9.0`
+
+</details>
+
+**Latest Version**: `5.9.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +zsh.sourceforge.io@5.9.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `invisible-island.net/ncurses`
+- `pcre.org`
 
 ## Usage Examples
 

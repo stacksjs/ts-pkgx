@@ -1,6 +1,6 @@
 # luarocks
 
-> Crafters of fine Open Source products
+> LuaRocks is the package manager for the Lua programming language.
 
 ## Package Information
 
@@ -13,14 +13,46 @@
 
 ```bash
 # Install with pkgx
-pkgx luarocks.org
+sh <(curl https://pkgx.sh) +luarocks.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `luarocks`
+- `luarocks-admin`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `luarocks`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `3.11.1`, `3.11.0`, `3.10.0`, `3.9.2`
+
+</details>
+
+**Latest Version**: `3.11.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +luarocks.org@3.11.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `lua.org`
+- `info-zip.org/unzip`
 
 ## Usage Examples
 

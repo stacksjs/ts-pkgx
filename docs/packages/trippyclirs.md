@@ -1,6 +1,6 @@
 # trip
 
-> Crafters of fine Open Source products
+> Network diagnostic tool, inspired by mtr
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx trippy.cli.rs
+sh <(curl https://pkgx.sh) trip
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `trip`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `trip`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `0.13.0`, `0.12.2`, `0.12.1`, `0.12.0`, `0.11.0`
+- `0.10.0`, `0.9.0`
+
+</details>
+
+**Latest Version**: `0.13.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +trippy.cli.rs@0.13.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

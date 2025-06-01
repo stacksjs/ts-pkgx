@@ -1,6 +1,6 @@
 # aria2c
 
-> Crafters of fine Open Source products
+> aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx aria2.github.io
+sh <(curl https://pkgx.sh) aria2c
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `aria2c`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `aria2c`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.37.0`, `1.36.0`
+
+</details>
+
+**Latest Version**: `1.37.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +aria2.github.io@1.37.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `zlib.net^1`
+- `openssl.org^1`
+- `libexpat.github.io`
+- `sqlite.org^3`
 
 ## Usage Examples
 

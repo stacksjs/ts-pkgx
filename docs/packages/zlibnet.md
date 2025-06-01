@@ -1,6 +1,6 @@
 # zlib.net
 
-> Crafters of fine Open Source products
+> A massively spiffy yet delicately unobtrusive compression library.
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx zlib.net
+sh <(curl https://pkgx.sh) +zlib.net -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx zlib.net
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.3.1`, `1.3.0`, `1.2.13`, `1.2.12`
+
+</details>
+
+**Latest Version**: `1.3.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +zlib.net@1.3.1 -- $SHELL -i
+```
 
 ## Usage Examples
 

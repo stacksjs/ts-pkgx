@@ -1,6 +1,6 @@
 # augeas.net
 
-> Crafters of fine Open Source products
+> A configuration editing tool and API
 
 ## Package Information
 
@@ -13,14 +13,43 @@
 
 ```bash
 # Install with pkgx
-pkgx augeas.net
+sh <(curl https://pkgx.sh) +augeas.net -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `augmatch`
+- `augparse`
+- `augprint`
+- `augtool`
+- `fadot`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.14.1`, `1.14.0`
+
+</details>
+
+**Latest Version**: `1.14.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +augeas.net@1.14.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/readline`
+- `gnome.org/libxml2`
 
 ## Usage Examples
 

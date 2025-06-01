@@ -1,6 +1,6 @@
 # nghttp2.org
 
-> Crafters of fine Open Source products
+> nghttp2 - HTTP/2 C Library and tools
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx nghttp2.org
+sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,27 @@ pkgx nghttp2.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 17 versions</summary>
+
+- `1.65.0`, `1.64.0`, `1.63.0`, `1.62.1`, `1.62.0`
+- `1.61.0`, `1.60.0`, `1.59.0`, `1.58.0`, `1.57.0`
+- `1.56.0`, `1.55.1`, `1.55.0`, `1.54.0`, `1.53.0`
+- `1.52.0`, `1.51.0`
+
+</details>
+
+**Latest Version**: `1.65.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +nghttp2.org@1.65.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # mkcert
 
-> Crafters of fine Open Source products
+> A simple zero-config tool to make locally trusted development certificates with any names you\
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx mkcert.dev
+sh <(curl https://pkgx.sh) mkcert
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mkcert`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `mkcert`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.4.4`
+
+</details>
+
+**Latest Version**: `1.4.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mkcert.dev@1.4.4 -- $SHELL -i
+```
 
 ## Usage Examples
 

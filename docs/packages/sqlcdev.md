@@ -1,6 +1,6 @@
 # sqlc
 
-> Crafters of fine Open Source products
+> Generate type-safe code from SQL
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx sqlc.dev
+sh <(curl https://pkgx.sh) sqlc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sqlc`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `sqlc`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.29.0`, `1.28.0`, `1.27.0`
+
+</details>
+
+**Latest Version**: `1.29.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +sqlc.dev@1.29.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

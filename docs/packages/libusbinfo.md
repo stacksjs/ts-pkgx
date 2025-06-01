@@ -1,6 +1,6 @@
 # libusb.info
 
-> Crafters of fine Open Source products
+> A cross-platform library to access USB devices
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx libusb.info
+sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx libusb.info
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.0.28`, `1.0.27`, `1.0.26`
+
+</details>
+
+**Latest Version**: `1.0.28`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libusb.info@1.0.28 -- $SHELL -i
+```
 
 ## Usage Examples
 

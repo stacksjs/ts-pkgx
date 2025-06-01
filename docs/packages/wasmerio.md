@@ -1,6 +1,6 @@
 # wasmer
 
-> Crafters of fine Open Source products
+> 🚀 Fast, secure, lightweight containers based on WebAssembly
 
 ## Package Information
 
@@ -13,14 +13,42 @@
 
 ```bash
 # Install with pkgx
-pkgx wasmer.io
+sh <(curl https://pkgx.sh) wasmer
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `wasmer`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `wasmer`
+
+## Available Versions
+
+<details>
+<summary>Show all 23 versions</summary>
+
+- `6.0.1`, `6.0.0`, `5.0.4`, `5.0.3`, `5.0.2`
+- `5.0.1`, `5.0.0`, `4.4.0`, `4.3.7`, `4.3.6`
+- `4.3.5`, `4.3.4`, `4.3.3`, `4.3.2`, `4.3.1`
+- `4.3.0`, `4.2.8`, `4.2.7`, `4.2.6`, `4.2.5`
+- `4.2.4`, `4.2.3`, `4.2.2`
+
+</details>
+
+**Latest Version**: `6.0.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +wasmer.io@6.0.1 -- $SHELL -i
+```
 
 ## Usage Examples
 

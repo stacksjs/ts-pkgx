@@ -1,6 +1,6 @@
 # cairo-trace
 
-> Crafters of fine Open Source products
+> Vector graphics library with cross-device output support
 
 ## Package Information
 
@@ -13,14 +13,54 @@
 
 ```bash
 # Install with pkgx
-pkgx cairographics.org
+sh <(curl https://pkgx.sh) cairo-trace
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cairo-trace`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `cairo-trace`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.18.4`, `1.18.2`, `1.18.0`, `1.16.0`
+
+</details>
+
+**Latest Version**: `1.18.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +cairographics.org@1.18.4 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `libpng.org@1`
+- `pixman.org^0.40.0`
+- `freetype.org@2`
+- `gnome.org/glib@2`
+- `freedesktop.org/fontconfig@2`
+- `sourceware.org/bzip2@1`
+- `x.org/x11`
+- `x.org/xcb`
+- `x.org/exts`
+- `x.org/xrender`
+- `oberhumer.com/lzo`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # nixpacks
 
-> Crafters of fine Open Source products
+> App source + Nix packages + Docker = Image
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx nixpacks.com
+sh <(curl https://pkgx.sh) nixpacks
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `nixpacks`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `nixpacks`
+
+## Available Versions
+
+<details>
+<summary>Show all 33 versions</summary>
+
+- `1.39.0`, `1.38.0`, `1.37.0`, `1.36.0`, `1.35.0`
+- `1.34.1`, `1.34.0`, `1.33.0`, `1.32.0`, `1.31.0`
+- `1.30.0`, `1.29.1`, `1.29.0`, `1.28.1`, `1.28.0`
+- `1.27.1`, `1.27.0`, `1.26.1`, `1.26.0`, `1.25.0`
+- `1.24.6`, `1.24.5`, `1.24.4`, `1.24.3`, `1.24.2`
+- `1.24.1`, `1.24.0`, `1.23.0`, `1.22.0`, `1.21.3`
+- `1.21.2`, `1.21.1`, `1.21.0`
+
+</details>
+
+**Latest Version**: `1.39.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +nixpacks.com@1.39.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

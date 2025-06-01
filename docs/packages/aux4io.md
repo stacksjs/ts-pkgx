@@ -1,6 +1,6 @@
 # aux4
 
-> Crafters of fine Open Source products
+> elevate your imagination
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx aux4.io
+sh <(curl https://pkgx.sh) aux4
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `aux4`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `aux4`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `5.0.14`, `5.0.11`, `5.0.10`, `5.0.9`, `5.0.8`
+- `5.0.3`
+
+</details>
+
+**Latest Version**: `5.0.14`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +aux4.io@5.0.14 -- $SHELL -i
+```
 
 ## Usage Examples
 

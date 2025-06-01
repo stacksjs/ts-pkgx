@@ -6,43 +6,43 @@ Packages related to javascript & node.js ecosystem.
 
 ## Packages
 
-### [angular.dev](../packages/angulardev.md)
+### [angular.dev](../packages/angulardev.md) (ng)
 
-Crafters of fine Open Source products
+CLI tool for Angular
 
-**Programs**: None specified
+**Programs**: ng
 
-**Install**: `pkgx angular.dev`
+**Install**: `sh <(curl https://pkgx.sh) ng`
 
 ---
 
-### [bun.sh](../packages/bunsh.md)
+### [bun.sh](../packages/bunsh.md) (bun)
 
-Crafters of fine Open Source products
+Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
 
-**Programs**: None specified
+**Programs**: bun, bunx
 
-**Install**: `pkgx bun.sh`
+**Install**: `sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i`
 
 ---
 
 ### [classic.yarnpkg.com](../packages/classicyarnpkgcom.md)
 
-Crafters of fine Open Source products
+The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
 
-**Programs**: None specified
+**Programs**: yarn, yarnpkg
 
-**Install**: `pkgx classic.yarnpkg.com`
+**Install**: `sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i`
 
 ---
 
-### [deno.land](../packages/denoland.md)
+### [deno.land](../packages/denoland.md) (deno)
 
-Crafters of fine Open Source products
+A modern runtime for JavaScript and TypeScript.
 
-**Programs**: None specified
+**Programs**: deno
 
-**Install**: `pkgx deno.land`
+**Install**: `sh <(curl https://pkgx.sh) deno`
 
 ---
 
@@ -58,61 +58,61 @@ Go home.
 
 ### [flutter.dev](../packages/flutterdev.md)
 
-Crafters of fine Open Source products
+Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 
-**Programs**: None specified
+**Programs**: flutter, dart
 
-**Install**: `pkgx flutter.dev`
+**Install**: `sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i`
 
 ---
 
-### [nodejs.org](../packages/nodejsorg.md)
+### [nodejs.org](../packages/nodejsorg.md) (node)
 
-Crafters of fine Open Source products
+Platform built on V8 to build network applications
 
-**Programs**: None specified
+**Programs**: node
 
-**Install**: `pkgx nodejs.org`
+**Install**: `sh <(curl https://pkgx.sh) node`
 
 ---
 
 ### [npmjs.com](../packages/npmjscom.md)
 
-Crafters of fine Open Source products
+the package manager for JavaScript
 
-**Programs**: None specified
+**Programs**: npm, npx
 
-**Install**: `pkgx npmjs.com`
-
----
-
-### [pnpm.io](../packages/pnpmio.md)
-
-Crafters of fine Open Source products
-
-**Programs**: None specified
-
-**Install**: `pkgx pnpm.io`
+**Install**: `sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i`
 
 ---
 
-### [vitejs.dev](../packages/vitejsdev.md)
+### [pnpm.io](../packages/pnpmio.md) (pnp)
 
-Crafters of fine Open Source products
+Fast, disk space efficient package manager
 
-**Programs**: None specified
+**Programs**: pnpm, pnpx
 
-**Install**: `pkgx vitejs.dev`
+**Install**: `sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i`
 
 ---
 
-### [yarnpkg.com](../packages/yarnpkgcom.md)
+### [vitejs.dev](../packages/vitejsdev.md) (vite)
 
-Crafters of fine Open Source products
+Next generation frontend tooling. It\
 
-**Programs**: None specified
+**Programs**: vite
 
-**Install**: `pkgx yarnpkg.com`
+**Install**: `sh <(curl https://pkgx.sh) vite`
+
+---
+
+### [yarnpkg.com](../packages/yarnpkgcom.md) (yarn)
+
+📦🐈 Active development trunk for Yarn ⚒
+
+**Programs**: yarn, yarnpkg
+
+**Install**: `sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i`
 
 ---
 

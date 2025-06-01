@@ -1,6 +1,6 @@
 # sdkman-init.sh
 
-> Crafters of fine Open Source products
+> The SDKMAN! Command Line Interface
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx sdkman.io
+sh <(curl https://pkgx.sh) sdkman-init.sh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sdkman-init.sh`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `sdkman-init.sh`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `5.19.0`, `5.18.2`
+
+</details>
+
+**Latest Version**: `5.19.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +sdkman.io@5.19.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

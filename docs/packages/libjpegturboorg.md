@@ -1,26 +1,50 @@
 # libjpeg-turbo.org
 
-> Crafters of fine Open Source products
+> Main libjpeg-turbo repository
 
 ## Package Information
 
 - **Domain**: `libjpeg/turbo.org`
 - **Name**: `libjpeg-turbo.org`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libjpeg/turbo.org/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libjpeg-turbo.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-pkgx libjpeg-turbo.org
+sh <(curl https://pkgx.sh) +libjpeg-turbo.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cjpeg`
+- `djpeg`
+- `jpegtran`
+- `rdjpgcom`
+- `tjbench`
+- `wrjpgcom`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `3.1.0`, `3.0.4`, `3.0.3`, `3.0.2`, `3.0.1`
+- `3.0.0`, `2.1.5.1`
+
+</details>
+
+**Latest Version**: `3.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libjpeg/turbo.org@3.1.0 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -37,7 +61,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libjpeg/turbo.org/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libjpeg-turbo.org/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

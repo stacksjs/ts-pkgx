@@ -1,6 +1,6 @@
 # zeromq.org
 
-> Crafters of fine Open Source products
+> ZeroMQ core engine in C++, implements ZMTP/3.1
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx zeromq.org
+sh <(curl https://pkgx.sh) +zeromq.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx zeromq.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `4.3.5`, `4.3.4`
+
+</details>
+
+**Latest Version**: `4.3.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +zeromq.org@4.3.5 -- $SHELL -i
+```
 
 ## Usage Examples
 

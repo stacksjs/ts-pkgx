@@ -1,6 +1,6 @@
 # srt
 
-> Crafters of fine Open Source products
+> Secure, Reliable, Transport
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx srtalliance.org
+sh <(curl https://pkgx.sh) +srtalliance.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `srt-ffplay`
+- `srt-file-transmit`
+- `srt-live-transmit`
+- `srt-tunnel`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `srt`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.5.4`, `1.5.3`, `1.5.2`
+
+</details>
+
+**Latest Version**: `1.5.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +srtalliance.org@1.5.4 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org`
 
 ## Usage Examples
 

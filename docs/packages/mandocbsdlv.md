@@ -1,6 +1,6 @@
 # mandoc.bsd.lv
 
-> Crafters of fine Open Source products
+> UNIX manpage compiler toolset
 
 ## Package Information
 
@@ -13,14 +13,43 @@
 
 ```bash
 # Install with pkgx
-pkgx mandoc.bsd.lv
+sh <(curl https://pkgx.sh) +mandoc.bsd.lv -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `bsdapropos`
+- `bsdman`
+- `bsdsoelim`
+- `bsdwhatis`
+- `demandoc`
+- `mandoc`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.14.6`
+
+</details>
+
+**Latest Version**: `1.14.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mandoc.bsd.lv@1.14.6 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `zlib.net`
 
 ## Usage Examples
 

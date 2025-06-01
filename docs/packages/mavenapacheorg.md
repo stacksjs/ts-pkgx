@@ -1,6 +1,6 @@
 # mvn
 
-> Crafters of fine Open Source products
+> Java-based project management
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx maven.apache.org
+sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mvn`
+- `mvnDebug`
+- `mvnyjp`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `mvn`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `3.9.9`, `3.9.8`, `3.9.7`, `3.9.6`, `3.9.5`
+- `3.9.4`, `3.9.3`, `3.8.7`, `3.6.3`
+
+</details>
+
+**Latest Version**: `3.9.9`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +maven.apache.org@3.9.9 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openjdk.org`
 
 ## Usage Examples
 

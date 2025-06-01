@@ -1,6 +1,6 @@
 # flit
 
-> Crafters of fine Open Source products
+> Simplified packaging of Python modules
 
 ## Package Information
 
@@ -13,14 +13,45 @@
 
 ```bash
 # Install with pkgx
-pkgx flit.pypa.io
+sh <(curl https://pkgx.sh) flit
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `flit`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `flit`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `3.12.0`, `3.11.0`, `3.10.1`, `3.10.0`, `3.9.0`
+- `3.8.0`
+
+</details>
+
+**Latest Version**: `3.12.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +flit.pypa.io@3.12.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org>=3<3.12`
 
 ## Usage Examples
 

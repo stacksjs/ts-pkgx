@@ -1,6 +1,6 @@
 # sshx
 
-> Crafters of fine Open Source products
+> Fast, collaborative live terminal sharing over the web
 
 ## Package Information
 
@@ -13,14 +13,44 @@
 
 ```bash
 # Install with pkgx
-pkgx sshx.io
+sh <(curl https://pkgx.sh) sshx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sshx`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `sshx`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2023.11.14`
+
+</details>
+
+**Latest Version**: `2023.11.14`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +sshx.io@2023.11.14 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `protobuf.dev`
 
 ## Usage Examples
 

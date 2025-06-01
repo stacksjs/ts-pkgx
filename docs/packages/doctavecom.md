@@ -1,6 +1,6 @@
 # doctave
 
-> Crafters of fine Open Source products
+> A batteries-included developer documentation site generator
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx doctave.com
+sh <(curl https://pkgx.sh) doctave
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `doctave`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `doctave`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.4.2`
+
+</details>
+
+**Latest Version**: `0.4.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +doctave.com@0.4.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

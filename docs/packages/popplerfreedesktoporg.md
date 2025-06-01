@@ -20,7 +20,30 @@ pkgx poppler.freedesktop.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pdfattach`
+- `pdfdetach`
+- `pdffonts`
+- `pdfimages`
+- `pdfinfo`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `1.58.0`, `1.16.0`, `25.5.0`, `25.4.0`, `25.3.0`
+- `25.2.0`, `25.1.0`, `24.9.0`
+
+</details>
+
+**Latest Version**: `1.58.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +poppler.freedesktop.org@1.58.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

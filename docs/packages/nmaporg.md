@@ -1,6 +1,6 @@
 # nmap.org
 
-> Crafters of fine Open Source products
+> Port scanning utility for large networks
 
 ## Package Information
 
@@ -13,14 +13,41 @@
 
 ```bash
 # Install with pkgx
-pkgx nmap.org
+sh <(curl https://pkgx.sh) +nmap.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `nmap`
+- `ncat`
+- `nping`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `7.97.0`, `7.96.0`, `7.95.0`, `7.94.0`, `7.93.0`
+
+</details>
+
+**Latest Version**: `7.97.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +nmap.org@7.97.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1.1`
+- `pcre.org/v2^10`
 
 ## Usage Examples
 
