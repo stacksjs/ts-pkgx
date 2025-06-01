@@ -3870,10 +3870,13 @@ export interface Pantry {
   ccachedev: ccache_dev.CcachedevPackage
 
   /**
-   * **pnp**
+   * **pnp** - Fast, disk space efficient package manager
    *
    * @domain `pnpm.io`
-   * @install `pkgx pnpm.io`
+   * @programs `pnpm`, `pnpx`
+   * @version `10.11.0` (162 versions available)
+   * @install `sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i`
+   * @dependencies `nodejs.org`
    *
    * @example
    * ```typescript
@@ -3881,7 +3884,9 @@ export interface Pantry {
    *
    * const pkg = pantry.pnpmio
    * console.log(pkg.name)        // "pnp"
-   * console.log(pkg.description) // "Crafters of fine Open Source products"
+   * console.log(pkg.description) // "Fast, disk space efficient package manager"
+   * console.log(pkg.programs)    // ["pnpm", "pnpx"]
+   * console.log(pkg.versions[0]) // "10.11.0"
    * ```
    */
   pnpmio: pnpm_io.PnpmioPackage
@@ -4057,10 +4062,14 @@ export interface Pantry {
   wezfurlongorg: wezfurlong_org.WezfurlongorgPackage
 
   /**
-   * **sfcgal-config**
+   * **sfcgal-config** - C++ wrapper library around CGAL
    *
    * @domain `sfcgal.org`
-   * @install `pkgx sfcgal.org`
+   * @programs `sfcgal-config`
+   * @version `2.1.0` (6 versions available)
+   * @install `sh <(curl https://pkgx.sh) sfcgal-config`
+   * @aliases `sfcgal-config`
+   * @dependencies `boost.org`, `cgal.org`, `gnu.org/gmp`, ... (+1 more)
    *
    * @example
    * ```typescript
@@ -4068,10 +4077,12 @@ export interface Pantry {
    *
    * const pkg = pantry.sfcgalorg
    * console.log(pkg.name)        // "sfcgal-config"
-   * console.log(pkg.description) // "Crafters of fine Open Source products"
+   * console.log(pkg.description) // "C++ wrapper library around CGAL"
+   * console.log(pkg.programs)    // ["sfcgal-config"]
+   * console.log(pkg.versions[0]) // "2.1.0"
    * ```
    */
-  sfcgalorg: sfcgal_org.SfcgalorgPackage
+  sfcgalorg: sfcgal_org.SfcgalconfigPackage
 
   /**
    * **github.com/fastfetch-cli-fastfetch**
@@ -7117,11 +7128,10 @@ export interface Pantry {
   logdydev: logdy_dev.LogdydevPackage
 
   /**
-   * **abseil.io** - Abseil Common Libraries (C++)
+   * **abseil.io**
    *
    * @domain `abseil.io`
-   * @version `20250512.0.0` (17 versions available)
-   * @install `sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i`
+   * @install `pkgx abseil.io`
    *
    * @example
    * ```typescript
@@ -7129,8 +7139,7 @@ export interface Pantry {
    *
    * const pkg = pantry.abseilio
    * console.log(pkg.name)        // "abseil.io"
-   * console.log(pkg.description) // "Abseil Common Libraries (C++)"
-   * console.log(pkg.versions[0]) // "20250512.0.0"
+   * console.log(pkg.description) // "Crafters of fine Open Source products"
    * ```
    */
   abseilio: abseil_io.AbseilioPackage
@@ -15756,6 +15765,27 @@ export interface Pantry {
    */
   gitcrypt: agwa_name_git_crypt.GitcryptPackage
 
+  /**
+   * **sfcgal-config** - Alias for `sfcgal.org`
+   *
+   * C++ wrapper library around CGAL
+   *
+   * @alias_for `pantry.sfcgalorg`
+   * @domain `sfcgal.org`
+   * @programs `sfcgal-config`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * // Both access the same package object
+   * const pkg1 = pantry.sfcgalconfig  // via alias
+   * const pkg2 = pantry.sfcgalorg  // via domain
+   * console.log(pkg1 === pkg2)  // true
+   * ```
+   */
+  sfcgalconfig: sfcgal_org.SfcgalconfigPackage
+
 }
 
 export type Packages = Pantry
@@ -15948,7 +15978,7 @@ export const pantry: Pantry = {
   libjpegturboorg: libjpeg_turbo_org.libjpegturboorgPackage,
   hetznercom: hetzner_com.hetznercomPackage,
   wezfurlongorg: wezfurlong_org.wezfurlongorgPackage,
-  sfcgalorg: sfcgal_org.sfcgalorgPackage,
+  sfcgalorg: sfcgal_org.sfcgalconfigPackage,
   githubcomfastfetchclifastfetch: github_com_fastfetch_cli_fastfetch.githubcomfastfetchclifastfetchPackage,
   localstackcloud: localstack_cloud.localstackcloudPackage,
   tinybirdco: tinybird_co.tinybirdcoPackage,
@@ -16635,6 +16665,7 @@ export const pantry: Pantry = {
   cdk: aws_amazon_com_cdk.awsamazoncomcdkPackage,
   curl: curl_se.cURLPackage,
   gitcrypt: agwa_name_git_crypt.gitcryptPackage,
+  sfcgalconfig: sfcgal_org.sfcgalconfigPackage,
 }
 
 export const packages: Packages = pantry

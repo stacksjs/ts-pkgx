@@ -47,6 +47,32 @@ export function getValidCachedPackage(
 
     // Check if the cached data has a fetchedAt timestamp
     if (!cachedData.fetchedAt) {
+      console.log(`Cache for ${packageName} missing fetchedAt timestamp, invalidating`)
+      return null
+    }
+
+    // Check for generic/placeholder descriptions that indicate bad cached data
+    const genericDescriptions = [
+      'Crafters of fine Open Source products',
+      'Go home.',
+      'Package information for',
+      'pkgx package',
+      'Loading...',
+      'Please wait...',
+    ]
+
+    const hasGenericDescription = genericDescriptions.some(generic =>
+      cachedData.description && cachedData.description.includes(generic),
+    )
+
+    if (hasGenericDescription) {
+      console.log(`Cache for ${packageName} has generic description "${cachedData.description}", invalidating`)
+      return null
+    }
+
+    // Check if the package has no versions (likely incomplete data)
+    if (!cachedData.versions || cachedData.versions.length === 0) {
+      console.log(`Cache for ${packageName} has no versions, invalidating`)
       return null
     }
 
@@ -611,14 +637,38 @@ export async function fetchPkgxPackage(
         // Extract aliases from the install command
         const aliases: string[] = []
 
+        // Helper function to check if a string is a valid alias
+        function isValidAlias(alias: string): boolean {
+          if (!alias || alias.length < 2)
+            return false
+
+          // Filter out shell command patterns
+          if (alias.includes('--') || alias.includes('$SHELL') || alias.includes('+') || alias.includes('(') || alias.includes(')')) {
+            return false
+          }
+
+          // Filter out generic words that shouldn't be standalone aliases
+          const genericWords = ['cli', 'app', 'tool', 'server', 'client', 'api', 'lib', 'core']
+          if (genericWords.includes(alias.toLowerCase())) {
+            return false
+          }
+
+          // Filter out version strings
+          if (/^\d+(?:\.\d+)*/.test(alias)) {
+            return false
+          }
+
+          return true
+        }
+
         // Look for aliases in the install command - pkgx.dev shows install commands like "sh <(curl https://pkgx.sh) aws"
         // The part after the curl command is usually the primary alias
         if (installCommand) {
-          const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(.+)/)
+          const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(\S+)/)
           if (installMatch && installMatch[1]) {
             const primaryAlias = installMatch[1].trim()
-            // Only add as alias if it's not a shell command pattern and is different from domain
-            if (primaryAlias && primaryAlias !== domain && !primaryAlias.includes('--') && !primaryAlias.includes('$SHELL')) {
+            // Only add as alias if it's valid and different from domain
+            if (isValidAlias(primaryAlias) && primaryAlias !== domain) {
               aliases.push(primaryAlias)
             }
           }
@@ -647,17 +697,13 @@ export async function fetchPkgxPackage(
           const parts = domain.split('/')
           const lastPart = parts[parts.length - 1]
 
-          // Only add the last part as an alias if:
-          // 1. It's different from the name
-          // 2. It appears in the install command as a standalone command
-          // 3. It's a meaningful standalone identifier (not just a generic word like 'cli')
-          // 4. It's not a shell command pattern
-          if (lastPart && lastPart !== name && installCommand && !lastPart.includes('--') && !lastPart.includes('$SHELL')) {
-            const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(.+)/)
+          // Only add the last part as an alias if it's valid and appears in the install command
+          if (lastPart && lastPart !== name && installCommand && isValidAlias(lastPart)) {
+            const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(\S+)/)
             if (installMatch && installMatch[1]) {
               const installAlias = installMatch[1].trim()
-              // Only add if the install command specifically uses this part and it's not a shell command
-              if (installAlias === lastPart && !installAlias.includes('--') && !installAlias.includes('$SHELL') && !aliases.includes(lastPart)) {
+              // Only add if the install command specifically uses this part
+              if (installAlias === lastPart && !aliases.includes(lastPart)) {
                 aliases.push(lastPart)
               }
             }
@@ -665,8 +711,8 @@ export async function fetchPkgxPackage(
         }
 
         // If the name is different from domain and looks like an alias, add it
-        // But make sure it's not a shell command pattern
-        if (name && name !== domain && name.length < domain.length && !name.includes('--') && !name.includes('$SHELL') && !aliases.includes(name)) {
+        // But make sure it's a valid alias
+        if (name && name !== domain && name.length < domain.length && isValidAlias(name) && !aliases.includes(name)) {
           aliases.push(name)
         }
 
@@ -1526,15 +1572,47 @@ function getDomainAsTypescriptName(domain: string): string {
  * @returns TypeScript file content as string
  */
 function generateTypeScriptContent(packageInfo: PkgxPackage, domainName: string): string {
-  // Determine the best variable name - use primary alias if available, otherwise use domain
+  // Helper function to check if a string is a valid alias for variable naming
+  function isValidAliasForVarName(alias: string): boolean {
+    if (!alias || alias.length < 2)
+      return false
+
+    // Filter out shell command patterns
+    if (alias.includes('--') || alias.includes('$SHELL') || alias.includes('+') || alias.includes('(') || alias.includes(')')) {
+      return false
+    }
+
+    // Filter out generic words that shouldn't be standalone aliases
+    const genericWords = ['cli', 'app', 'tool', 'server', 'client', 'api', 'lib', 'core']
+    if (genericWords.includes(alias.toLowerCase())) {
+      return false
+    }
+
+    // Filter out version strings
+    if (/^\d+(?:\.\d+)*/.test(alias)) {
+      return false
+    }
+
+    return true
+  }
+
+  // Determine the best variable name - use a valid primary alias if available, otherwise use domain
   let varName: string
   let packageDisplayName: string
 
   if (packageInfo.aliases && packageInfo.aliases.length > 0) {
-    // Use the first (primary) alias for the variable name
-    const primaryAlias = packageInfo.aliases[0]
-    varName = `${primaryAlias.replace(/[^a-z0-9]/gi, '')}Package`
-    packageDisplayName = primaryAlias
+    // Find the first valid alias for variable naming
+    const validAlias = packageInfo.aliases.find(alias => isValidAliasForVarName(alias))
+
+    if (validAlias) {
+      varName = `${validAlias.replace(/[^a-z0-9]/gi, '')}Package`
+      packageDisplayName = validAlias
+    }
+    else {
+      // No valid aliases, fall back to domain-based naming
+      varName = `${getDomainAsTypescriptName(domainName)}Package`
+      packageDisplayName = packageInfo.name || domainName
+    }
   }
   else {
     // Fall back to domain-based naming
@@ -1603,9 +1681,16 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
     lines.push(` * @install \`${packageInfo.installCommand}\``)
   }
 
-  // Aliases
+  // Aliases - filter out invalid shell command patterns
   if (packageInfo.aliases && packageInfo.aliases.length > 0) {
-    lines.push(` * @aliases ${packageInfo.aliases.map(a => `\`${a}\``).join(', ')}`)
+    const validAliases = packageInfo.aliases.filter((alias) => {
+      // Filter out shell command patterns
+      return !alias.includes('--') && !alias.includes('$SHELL') && !alias.includes('+') && !alias.includes('(') && !alias.includes(')')
+    })
+
+    if (validAliases.length > 0) {
+      lines.push(` * @aliases ${validAliases.map(a => `\`${a}\``).join(', ')}`)
+    }
   }
 
   // Homepage URL
@@ -1635,18 +1720,29 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
   lines.push(' * import { pantry } from \'ts-pkgx\'')
   lines.push(' *')
 
-  // Show both alias and domain access if aliases exist
+  // Show both alias and domain access if valid aliases exist
   if (packageInfo.aliases && packageInfo.aliases.length > 0) {
-    const primaryAlias = packageInfo.aliases[0]
-    const aliasVarName = primaryAlias.replace(/[^a-z0-9]/gi, '')
-    // Use the same function as the index generation to ensure consistency
-    const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
+    // Find the first valid alias for the example
+    const validAlias = packageInfo.aliases.find((alias) => {
+      return !alias.includes('--') && !alias.includes('$SHELL') && !alias.includes('+') && !alias.includes('(') && !alias.includes(')')
+    })
 
-    lines.push(` * // Access via alias (recommended)`)
-    lines.push(` * const pkg = pantry.${aliasVarName}`)
-    lines.push(` * // Or access via domain`)
-    lines.push(` * const samePkg = pantry.${domainVarName}`)
-    lines.push(` * console.log(pkg === samePkg) // true`)
+    if (validAlias) {
+      const aliasVarName = validAlias.replace(/[^a-z0-9]/gi, '')
+      // Use the same function as the index generation to ensure consistency
+      const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
+
+      lines.push(` * // Access via alias (recommended)`)
+      lines.push(` * const pkg = pantry.${aliasVarName}`)
+      lines.push(` * // Or access via domain`)
+      lines.push(` * const samePkg = pantry.${domainVarName}`)
+      lines.push(` * console.log(pkg === samePkg) // true`)
+    }
+    else {
+      // No valid aliases, use domain only
+      const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
+      lines.push(` * const pkg = pantry.${domainVarName}`)
+    }
   }
   else {
     // Use the same function as the index generation to ensure consistency
