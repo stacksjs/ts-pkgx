@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 868
 - **Categories**: 13
-- **Last Updated**: 2025-06-01T06:10:27.738Z
+- **Last Updated**: 2025-06-01T06:29:42.759Z
 
 ## Table of Contents
 
@@ -182,7 +182,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[curlse](./packages/curlse.md)** (cURL) | A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP... | curl, curl-config | 8.14.0 (+23) | `pkgx cURL` |
+| **[curlse](./packages/curlse.md)** () | Crafters of fine Open Source products | - | latest | `pkgx cURL` |
 | **[htopdev](./packages/htopdev.md)** () | Crafters of fine Open Source products | - | latest | `pkgx htop` |
 
 ## Web Servers & Proxies
