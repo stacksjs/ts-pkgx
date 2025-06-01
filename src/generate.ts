@@ -695,12 +695,12 @@ export async function generateIndex(): Promise<string | null> {
 
       jsdoc += '   */\n'
 
-      // Add the interface property with JSDoc
+      // Add the interface property with JSDoc (always quote property names for consistency)
       interfaceDecl += jsdoc
-      interfaceDecl += `  ${domainVarName}: ${moduleVarName}.${typeName}\n\n`
+      interfaceDecl += `  '${domainVarName}': ${moduleVarName}.${typeName}\n\n`
 
-      // Add to pantry
-      pantry += `  ${domainVarName}: ${moduleVarName}.${packageVarName},\n`
+      // Add to pantry (always quote property names for consistency)
+      pantry += `  '${domainVarName}': ${moduleVarName}.${packageVarName},\n`
     }
 
     // Add alias properties to the interface and pantry object
@@ -737,9 +737,9 @@ export async function generateIndex(): Promise<string | null> {
         // Mark this property name as used
         usedPropertyNames.add(aliasVarName)
 
-        // Check if the alias variable name is a valid JavaScript identifier
+        // Always quote property names for consistency (even valid identifiers)
         const isValidIdentifier = /^[a-z_$][\w$]*$/i.test(aliasVarName)
-        const quotedAliasVarName = isValidIdentifier ? aliasVarName : `"${aliasVarName}"`
+        const quotedAliasVarName = `'${aliasVarName}'`
 
         // Generate JSDoc for alias
         let aliasJsdoc = '  /**\n'
@@ -778,7 +778,7 @@ export async function generateIndex(): Promise<string | null> {
             aliasJsdoc += `   * const pkg1 = pantry.${aliasVarName}  // via alias\n`
           }
           else {
-            aliasJsdoc += `   * const pkg1 = pantry["${aliasVarName}"]  // via alias\n`
+            aliasJsdoc += `   * const pkg1 = pantry['${aliasVarName}']  // via alias\n`
           }
           aliasJsdoc += `   * const pkg2 = pantry.${targetVarName}  // via domain\n`
           aliasJsdoc += `   * console.log(pkg1 === pkg2)  // true\n`
@@ -806,7 +806,7 @@ export async function generateIndex(): Promise<string | null> {
           interfaceDecl += aliasJsdoc
           interfaceDecl += `  ${quotedAliasVarName}: ${targetModuleVarName}.${targetTypeName}\n\n`
 
-          // Add to pantry object (always quote property names in object literals for consistency)
+          // Add to pantry object (property names are already quoted in quotedAliasVarName)
           pantry += `  ${quotedAliasVarName}: ${targetModuleVarName}.${toPackageVarName(targetModuleName)},\n`
         }
       }
