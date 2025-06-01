@@ -1264,7 +1264,7 @@ export interface Pantry {
    *
    * @domain `appium.io`
    * @programs `appium`
-   * @version `2.18.0` (36 versions available)
+   * @version `2.19.0` (37 versions available)
    * @install `sh <(curl https://pkgx.sh) appium`
    * @aliases `appium`
    * @dependencies `npmjs.com`, `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`, `openjdk.org`
@@ -1277,7 +1277,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "appium"
    * console.log(pkg.description) // "Cross-platform automation framework for all kin..."
    * console.log(pkg.programs)    // ["appium"]
-   * console.log(pkg.versions[0]) // "2.18.0"
+   * console.log(pkg.versions[0]) // "2.19.0"
    * ```
    */
   appiumio: appium_io.AppiumPackage

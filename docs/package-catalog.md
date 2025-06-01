@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1566
 - **Categories**: 13
-- **Last Updated**: 2025-06-01T03:02:54.868Z
+- **Last Updated**: 2025-06-01T03:53:38.159Z
 
 ## Table of Contents
 
@@ -431,8 +431,8 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[apktool](./packages/apktool.md)** (apktool) | Tool for reverse engineering 3rd party, closed, binary Android apps | apktool | 2.11.1 (+3) | `pkgx apktool` |
 | **[apktoolorg](./packages/apktoolorg.md)** (apktool) | Tool for reverse engineering 3rd party, closed, binary Android apps | apktool | 2.11.1 (+3) | `pkgx apktool` |
 | **[apollographqlcom](./packages/apollographqlcom.md)** () |  | - | latest | `pkgx apollographql.com` |
-| **[appium](./packages/appium.md)** (appium) | Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver prot... | appium | 2.18.0 (+35) | `pkgx appium` |
-| **[appiumio](./packages/appiumio.md)** (appium) | Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver prot... | appium | 2.18.0 (+35) | `pkgx appium` |
+| **[appium](./packages/appium.md)** (appium) | Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver prot... | appium | 2.19.0 (+36) | `pkgx appium` |
+| **[appiumio](./packages/appiumio.md)** (appium) | Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver prot... | appium | 2.19.0 (+36) | `pkgx appium` |
 | **[applecom](./packages/applecom.md)** () |  | - | latest | `pkgx apple.com` |
 | **[applecomremote_cmds](./packages/applecomremote_cmds.md)** (telnet, remote_cmds) |  | telnet | 306.0.0 (+4) | `pkgx telnet` |
 | **[apptainerorg](./packages/apptainerorg.md)** (+apptainer.org -- $SHELL -i) | Application container and unprivileged sandbox platform for Linux | apptainer, run-singularity, singularity | 1.4.1 (+5) | `pkgx apptainer.org` |
