@@ -570,10 +570,11 @@ export async function generateIndex(): Promise<string | null> {
     let pantry = 'export const pantry: Pantry = {\n'
 
     // Sort package files alphabetically for consistent import order
+    // Use natural sorting to handle numbers properly (e.g., libssh.org before libssh2.org)
     const sortedPackageFiles = packageFiles.sort((a, b) => {
       const moduleA = path.basename(a, '.ts')
       const moduleB = path.basename(b, '.ts')
-      return moduleA.localeCompare(moduleB)
+      return moduleA.localeCompare(moduleB, undefined, { numeric: true, sensitivity: 'base' })
     })
 
     // Process each package file
