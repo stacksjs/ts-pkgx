@@ -1,32 +1,47 @@
+/**
+ * **github.com-Cyfrin-safe-tx-hashes-util** - Go home.
+ *
+ * @domain `github.com-Cyfrin-safe-tx-hashes-util`
+ *
+ * @install `pkgx github.com-Cyfrin-safe-tx-hashes-util`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.githubcomcyfrinsafetxhashesutil
+ * console.log(pkg.name)        // "github.com-Cyfrin-safe-tx-hashes-util"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com-Cyfrin-safe-tx-hashes-util.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const githubcomcyfrinsafetxhashesutilPackage = {
-  name: 'safe_hashes' as const,
-  domain: 'github.com/Cyfrin/safe-tx-hashes-util' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Cyfrin/safe-tx-hashes-util/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) safe_hashes' as const,
-  programs: [
-    'safe_hashes',
-  ] as const,
-  companions: [
-    'getfoundry.sh',
-    'stedolan.github.io/jq',
-    'curl.se',
-  ] as const,
-  dependencies: [
-    'gnu.org/bash>=4',
-    'gnu.org/gcc/libstdcxx@14',
-  ] as const,
-  versions: [
-    '0.1.4',
-    '0.1.3',
-  ] as const,
-  fullPath: 'github.com/Cyfrin/safe-tx-hashes-util' as const,
-  aliases: [
-    'safe_hashes',
-    'Cyfrin/safe-tx-hashes-util',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/github.com-Cyfrin-safe-tx-hashes-util/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com-Cyfrin-safe-tx-hashes-util' as const,
+  fullPath: 'github.com-Cyfrin-safe-tx-hashes-util' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx github.com-Cyfrin-safe-tx-hashes-util' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type GithubcomcyfrinsafetxhashesutilPackage = typeof githubcomcyfrinsafetxhashesutilPackage

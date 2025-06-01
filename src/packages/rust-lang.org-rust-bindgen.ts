@@ -1,28 +1,47 @@
+/**
+ * **rust-lang.org-rust-bindgen** - Go home.
+ *
+ * @domain `rust-lang.org-rust-bindgen`
+ *
+ * @install `pkgx rust-lang.org-rust-bindgen`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.rustlangorgrustbindgen
+ * console.log(pkg.name)        // "rust-lang.org-rust-bindgen"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/rust-lang-org-rust-bindgen.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const rustlangorgrustbindgenPackage = {
-  name: 'bindgen' as const,
-  domain: 'rust-lang.org/rust-bindgen' as const,
-  description: 'Automatically generates Rust FFI bindings to C (and some C++) libraries.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/rust-bindgen/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) bindgen' as const,
-  programs: [
-    'bindgen',
-  ] as const,
-  companions: [
-    'rust-lang.org',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/rust-lang.org-rust-bindgen/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'rust-lang.org-rust-bindgen' as const,
+  fullPath: 'rust-lang.org-rust-bindgen' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx rust-lang.org-rust-bindgen' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '0.71.1',
-    '0.71.0',
-    '0.70.1',
-  ] as const,
-  fullPath: 'rust-lang.org/rust-bindgen' as const,
-  aliases: [
-    'bindgen',
-    'rust-bindgen',
-  ] as const,
+  companions: [] as const,
 }
 
 export type RustlangorgrustbindgenPackage = typeof rustlangorgrustbindgenPackage

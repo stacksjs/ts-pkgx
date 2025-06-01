@@ -1,31 +1,47 @@
+/**
+ * **wayland** - Crafters of fine Open Source products
+ *
+ * @domain `wayland.freedesktop.org`
+ *
+ * @install `pkgx wayland.freedesktop.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.waylandfreedesktoporg
+ * console.log(pkg.name)        // "wayland"
+ * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/wayland-freedesktop-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const waylandfreedesktoporgPackage = {
+  /**
+   * The display name of this package.
+   */
   name: 'wayland' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Crafters of fine Open Source products' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/wayland.freedesktop.org/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
   domain: 'wayland.freedesktop.org' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wayland.freedesktop.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) wayland-scanner' as const,
-  programs: [
-    'wayland-scanner',
-  ] as const,
-  companions: [] as const,
-  dependencies: [
-    'libexpat.github.io',
-    'sourceware.org/libffi',
-    'gnome.org/libxml2',
-  ] as const,
-  versions: [
-    '1.23.91',
-    '1.23.1',
-    '1.23.0',
-    '1.22.93',
-    '1.22.92',
-    '1.22.91',
-    '1.22.0',
-  ] as const,
   fullPath: 'wayland.freedesktop.org' as const,
-  aliases: undefined,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx wayland.freedesktop.org' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type WaylandfreedesktoporgPackage = typeof waylandfreedesktoporgPackage

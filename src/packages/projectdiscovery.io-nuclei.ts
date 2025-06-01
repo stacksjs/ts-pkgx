@@ -1,25 +1,47 @@
+/**
+ * **projectdiscovery.io-nuclei** - Go home.
+ *
+ * @domain `projectdiscovery.io-nuclei`
+ *
+ * @install `pkgx projectdiscovery.io-nuclei`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.projectdiscoveryionuclei
+ * console.log(pkg.name)        // "projectdiscovery.io-nuclei"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/projectdiscovery-io-nuclei.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const projectdiscoveryionucleiPackage = {
-  name: 'nuclei' as const,
-  domain: 'projectdiscovery.io/nuclei' as const,
-  description: 'Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/projectdiscovery.io/nuclei/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) nuclei' as const,
-  programs: [
-    'nuclei',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/projectdiscovery.io-nuclei/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'projectdiscovery.io-nuclei' as const,
+  fullPath: 'projectdiscovery.io-nuclei' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx projectdiscovery.io-nuclei' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '3.4.4',
-    '3.4.3',
-    '3.4.2',
-  ] as const,
-  fullPath: 'projectdiscovery.io/nuclei' as const,
-  aliases: [
-    'nuclei',
-  ] as const,
+  companions: [] as const,
 }
 
 export type ProjectdiscoveryionucleiPackage = typeof projectdiscoveryionucleiPackage

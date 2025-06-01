@@ -1,25 +1,47 @@
+/**
+ * **developer.1password.com-1password-cli** - Go home.
+ *
+ * @domain `developer.1password.com-1password-cli`
+ *
+ * @install `pkgx developer.1password.com-1password-cli`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.developer1passwordcom1passwordcli
+ * console.log(pkg.name)        // "developer.1password.com-1password-cli"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/developer-1password-com-1password-cli.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const developer1passwordcom1passwordcliPackage = {
-  name: '1Password CLI' as const,
-  domain: 'developer.1password.com/1password-cli' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/developer.1password.com/1password-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) op' as const,
-  programs: [
-    'op',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/developer.1password.com-1password-cli/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'developer.1password.com-1password-cli' as const,
+  fullPath: 'developer.1password.com-1password-cli' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx developer.1password.com-1password-cli' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '2.31.0',
-    '2.30.3',
-  ] as const,
-  fullPath: 'developer.1password.com/1password-cli' as const,
-  aliases: [
-    '1password cli',
-    '1password-cli',
-  ] as const,
+  companions: [] as const,
 }
 
 export type Developer1passwordcom1passwordcliPackage = typeof developer1passwordcom1passwordcliPackage

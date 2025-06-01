@@ -1,24 +1,47 @@
+/**
+ * **mvdan.cc-gofumpt** - Go home.
+ *
+ * @domain `mvdan.cc-gofumpt`
+ *
+ * @install `pkgx mvdan.cc-gofumpt`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.mvdanccgofumpt
+ * console.log(pkg.name)        // "mvdan.cc-gofumpt"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/mvdan-cc-gofumpt.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const mvdanccgofumptPackage = {
-  name: 'gofumpt' as const,
-  domain: 'mvdan.cc/gofumpt' as const,
-  description: 'A stricter gofmt' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mvdan.cc/gofumpt/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) gofumpt' as const,
-  programs: [
-    'gofumpt',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/mvdan.cc-gofumpt/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'mvdan.cc-gofumpt' as const,
+  fullPath: 'mvdan.cc-gofumpt' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx mvdan.cc-gofumpt' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '0.8.0',
-    '0.7.0',
-  ] as const,
-  fullPath: 'mvdan.cc/gofumpt' as const,
-  aliases: [
-    'gofumpt',
-  ] as const,
+  companions: [] as const,
 }
 
 export type MvdanccgofumptPackage = typeof mvdanccgofumptPackage

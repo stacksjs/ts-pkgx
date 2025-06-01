@@ -1,33 +1,47 @@
+/**
+ * **ceph.com-cephadm** - Go home.
+ *
+ * @domain `ceph.com-cephadm`
+ *
+ * @install `pkgx ceph.com-cephadm`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.cephcomcephadm
+ * console.log(pkg.name)        // "ceph.com-cephadm"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/ceph-com-cephadm.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const cephcomcephadmPackage = {
-  name: 'cephadm' as const,
-  domain: 'ceph.com/cephadm' as const,
-  description: 'Ceph is a distributed object, block, and file storage platform' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ceph.com/cephadm/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) cephadm' as const,
-  programs: [
-    'cephadm',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/ceph.com-cephadm/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'ceph.com-cephadm' as const,
+  fullPath: 'ceph.com-cephadm' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx ceph.com-cephadm' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  dependencies: [
-    'openssl.org^1.1',
-    'python.org^3',
-  ] as const,
-  versions: [
-    '20.3.0',
-    '20.0.0',
-    '19.3.0',
-    '19.2.2',
-    '19.2.1',
-    '18.2.7',
-    '18.2.6',
-    '18.2.5',
-  ] as const,
-  fullPath: 'ceph.com/cephadm' as const,
-  aliases: [
-    'cephadm',
-  ] as const,
 }
 
 export type CephcomcephadmPackage = typeof cephcomcephadmPackage

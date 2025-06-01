@@ -1,53 +1,47 @@
+/**
+ * **aws.amazon.com-sam** - Go home.
+ *
+ * @domain `aws.amazon.com-sam`
+ *
+ * @install `pkgx aws.amazon.com-sam`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.awsamazoncomsam
+ * console.log(pkg.name)        // "aws.amazon.com-sam"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/aws-amazon-com-sam.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const awsamazoncomsamPackage = {
-  name: 'sam' as const,
-  domain: 'aws.amazon.com/sam' as const,
-  description: 'CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/sam/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) sam' as const,
-  programs: [
-    'sam',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/aws.amazon.com-sam/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'aws.amazon.com-sam' as const,
+  fullPath: 'aws.amazon.com-sam' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx aws.amazon.com-sam' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  dependencies: [
-    'pkgx.sh^1',
-  ] as const,
-  versions: [
-    '1.139.0',
-    '1.138.0',
-    '1.137.1',
-    '1.137.0',
-    '1.136.0',
-    '1.135.0',
-    '1.134.0',
-    '1.133.0',
-    '1.132.0',
-    '1.131.0',
-    '1.130.0',
-    '1.129.0',
-    '1.128.0',
-    '1.127.0',
-    '1.126.0',
-    '1.125.0',
-    '1.124.0',
-    '1.123.0',
-    '1.122.0',
-    '1.121.0',
-    '1.120.0',
-    '1.119.0',
-    '1.118.0',
-    '1.117.0',
-    '1.116.0',
-    '1.115.0',
-    '1.114.0',
-    '1.113.0',
-    '1.112.0',
-  ] as const,
-  fullPath: 'aws.amazon.com/sam' as const,
-  aliases: [
-    'sam',
-  ] as const,
 }
 
 export type AwsamazoncomsamPackage = typeof awsamazoncomsamPackage

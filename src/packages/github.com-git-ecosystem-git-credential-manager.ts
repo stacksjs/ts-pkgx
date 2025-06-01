@@ -1,31 +1,47 @@
+/**
+ * **github.com-git-ecosystem-git-credential-manager** - Go home.
+ *
+ * @domain `github.com-git-ecosystem-git-credential-manager`
+ *
+ * @install `pkgx github.com-git-ecosystem-git-credential-manager`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.githubcomgitecosystemgitcredentialmanager
+ * console.log(pkg.name)        // "github.com-git-ecosystem-git-credential-manager"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com-git-ecosystem-git-credential-manager.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const githubcomgitecosystemgitcredentialmanagerPackage = {
-  name: 'git-credential-manager' as const,
-  domain: 'github.com/git-ecosystem/git-credential-manager' as const,
-  description: 'Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/git-ecosystem/git-credential-manager/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) git-credential-manager' as const,
-  programs: [
-    'git-credential-manager',
-  ] as const,
-  companions: [
-    'git-scm.org',
-  ] as const,
-  dependencies: [
-    'openssl.org^1.1.1',
-    'unicode.org^71',
-    'zlib.net^1.3',
-    'dotnet.microsoft.com^8.0',
-  ] as const,
-  versions: [
-    '2.6.1',
-  ] as const,
-  fullPath: 'github.com/git-ecosystem/git-credential-manager' as const,
-  aliases: [
-    'git-credential-manager',
-    'git-ecosystem/git-credential-manager',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/github.com-git-ecosystem-git-credential-manager/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com-git-ecosystem-git-credential-manager' as const,
+  fullPath: 'github.com-git-ecosystem-git-credential-manager' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx github.com-git-ecosystem-git-credential-manager' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type GithubcomgitecosystemgitcredentialmanagerPackage = typeof githubcomgitecosystemgitcredentialmanagerPackage

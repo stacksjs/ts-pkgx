@@ -1,29 +1,47 @@
+/**
+ * **github.com-igorshubovych-markdownlint-cli** - Go home.
+ *
+ * @domain `github.com-igorshubovych-markdownlint-cli`
+ *
+ * @install `pkgx github.com-igorshubovych-markdownlint-cli`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.githubcomigorshubovychmarkdownlintcli
+ * console.log(pkg.name)        // "github.com-igorshubovych-markdownlint-cli"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com-igorshubovych-markdownlint-cli.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const githubcomigorshubovychmarkdownlintcliPackage = {
-  name: 'markdownlint' as const,
-  domain: 'github.com/igorshubovych/markdownlint-cli' as const,
-  description: 'CLI for Node.js style checker and lint tool for Markdown files' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/igorshubovych/markdownlint-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) markdownlint' as const,
-  programs: [
-    'markdownlint',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/github.com-igorshubovych-markdownlint-cli/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com-igorshubovych-markdownlint-cli' as const,
+  fullPath: 'github.com-igorshubovych-markdownlint-cli' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx github.com-igorshubovych-markdownlint-cli' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  dependencies: [
-    'nodejs.org^18',
-  ] as const,
-  versions: [
-    '0.45.0',
-    '0.44.0',
-    '0.43.0',
-    '0.42.0',
-  ] as const,
-  fullPath: 'github.com/igorshubovych/markdownlint-cli' as const,
-  aliases: [
-    'markdownlint',
-    'igorshubovych/markdownlint-cli',
-  ] as const,
 }
 
 export type GithubcomigorshubovychmarkdownlintcliPackage = typeof githubcomigorshubovychmarkdownlintcliPackage

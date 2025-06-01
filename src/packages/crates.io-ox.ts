@@ -1,24 +1,47 @@
+/**
+ * **crates.io-ox** - Go home.
+ *
+ * @domain `crates.io-ox`
+ *
+ * @install `pkgx crates.io-ox`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.cratesioox
+ * console.log(pkg.name)        // "crates.io-ox"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/crates-io-ox.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const cratesiooxPackage = {
-  name: 'ox' as const,
-  domain: 'crates.io/ox' as const,
-  description: 'Independent Rust text editor that runs in your terminal' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/ox/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) ox' as const,
-  programs: [
-    'ox',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/crates.io-ox/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'crates.io-ox' as const,
+  fullPath: 'crates.io-ox' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx crates.io-ox' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '0.7.7',
-    '0.7.6',
-  ] as const,
-  fullPath: 'crates.io/ox' as const,
-  aliases: [
-    'ox',
-  ] as const,
+  companions: [] as const,
 }
 
 export type CratesiooxPackage = typeof cratesiooxPackage

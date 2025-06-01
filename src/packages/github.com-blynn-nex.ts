@@ -1,24 +1,47 @@
+/**
+ * **github.com-blynn-nex** - Go home.
+ *
+ * @domain `github.com-blynn-nex`
+ *
+ * @install `pkgx github.com-blynn-nex`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.githubcomblynnnex
+ * console.log(pkg.name)        // "github.com-blynn-nex"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com-blynn-nex.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const githubcomblynnnexPackage = {
-  name: 'nex' as const,
-  domain: 'github.com/blynn/nex' as const,
-  description: '44BSD re-implementation of vi' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/blynn/nex/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) nex' as const,
-  programs: [
-    'nex',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/github.com-blynn-nex/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com-blynn-nex' as const,
+  fullPath: 'github.com-blynn-nex' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx github.com-blynn-nex' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '2021.3.30',
-  ] as const,
-  fullPath: 'github.com/blynn/nex' as const,
-  aliases: [
-    'nex',
-    'blynn/nex',
-  ] as const,
+  companions: [] as const,
 }
 
 export type GithubcomblynnnexPackage = typeof githubcomblynnnexPackage

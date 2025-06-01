@@ -1,33 +1,47 @@
+/**
+ * **dystroy.org-bacon** - Go home.
+ *
+ * @domain `dystroy.org-bacon`
+ *
+ * @install `pkgx dystroy.org-bacon`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.dystroyorgbacon
+ * console.log(pkg.name)        // "dystroy.org-bacon"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/dystroy-org-bacon.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const dystroyorgbaconPackage = {
-  name: 'bacon' as const,
-  domain: 'dystroy.org/bacon' as const,
-  description: 'Background rust code check' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dystroy.org/bacon/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) bacon' as const,
-  programs: [
-    'bacon',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/dystroy.org-bacon/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'dystroy.org-bacon' as const,
+  fullPath: 'dystroy.org-bacon' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx dystroy.org-bacon' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  dependencies: [
-    'linuxalsa-project.org/alsa-lib',
-    'alsa-project.org/alsa-lib',
-  ] as const,
-  versions: [
-    '3.14.0',
-    '3.13.0',
-    '3.12.0',
-    '3.11.0',
-    '3.10.0',
-    '3.9.1',
-    '3.9.0',
-    '3.8.0',
-  ] as const,
-  fullPath: 'dystroy.org/bacon' as const,
-  aliases: [
-    'bacon',
-  ] as const,
 }
 
 export type DystroyorgbaconPackage = typeof dystroyorgbaconPackage

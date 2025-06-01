@@ -1,24 +1,47 @@
+/**
+ * **github.com-peak-s5cmd** - Go home.
+ *
+ * @domain `github.com-peak-s5cmd`
+ *
+ * @install `pkgx github.com-peak-s5cmd`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.githubcompeaks5cmd
+ * console.log(pkg.name)        // "github.com-peak-s5cmd"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com-peak-s5cmd.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const githubcompeaks5cmdPackage = {
-  name: 's5cmd' as const,
-  domain: 'github.com/peak/s5cmd' as const,
-  description: 'Parallel S3 and local filesystem execution tool.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peak/s5cmd/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) s5cmd' as const,
-  programs: [
-    's5cmd',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/github.com-peak-s5cmd/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com-peak-s5cmd' as const,
+  fullPath: 'github.com-peak-s5cmd' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx github.com-peak-s5cmd' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '2.3.0',
-  ] as const,
-  fullPath: 'github.com/peak/s5cmd' as const,
-  aliases: [
-    's5cmd',
-    'peak/s5cmd',
-  ] as const,
+  companions: [] as const,
 }
 
 export type Githubcompeaks5cmdPackage = typeof githubcompeaks5cmdPackage

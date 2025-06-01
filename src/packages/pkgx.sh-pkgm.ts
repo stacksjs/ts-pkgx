@@ -1,35 +1,47 @@
+/**
+ * **pkgx.sh-pkgm** - Go home.
+ *
+ * @domain `pkgx.sh-pkgm`
+ *
+ * @install `pkgx pkgx.sh-pkgm`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.pkgxshpkgm
+ * console.log(pkg.name)        // "pkgx.sh-pkgm"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/pkgx-sh-pkgm.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const pkgxshpkgmPackage = {
-  name: 'pkgm' as const,
-  domain: 'pkgx.sh/pkgm' as const,
-  description: 'Install `pkgx` packages to `/usr/local`' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/pkgm/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) pkgm' as const,
-  programs: [
-    'pkgm',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/pkgx.sh-pkgm/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'pkgx.sh-pkgm' as const,
+  fullPath: 'pkgx.sh-pkgm' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx pkgx.sh-pkgm' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  dependencies: [
-    'pkgx.sh^2',
-    'curl.se/ca-certs',
-  ] as const,
-  versions: [
-    '0.11.1',
-    '0.11.0',
-    '0.10.1',
-    '0.10.0',
-    '0.9.2',
-    '0.9.1',
-    '0.9.0',
-    '0.8.0',
-    '0.7.2',
-    '0.7.1',
-  ] as const,
-  fullPath: 'pkgx.sh/pkgm' as const,
-  aliases: [
-    'pkgm',
-  ] as const,
 }
 
 export type PkgxshpkgmPackage = typeof pkgxshpkgmPackage

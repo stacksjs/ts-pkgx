@@ -1,30 +1,47 @@
+/**
+ * **github.com-licensee-licensed** - Go home.
+ *
+ * @domain `github.com-licensee-licensed`
+ *
+ * @install `pkgx github.com-licensee-licensed`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.githubcomlicenseelicensed
+ * console.log(pkg.name)        // "github.com-licensee-licensed"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com-licensee-licensed.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const githubcomlicenseelicensedPackage = {
-  name: 'github.com/licensee/licensed' as const,
-  domain: 'github.com/licensee/licensed' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/licensee/licensed/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/licensee/licensed -- $SHELL -i' as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
   programs: [] as const,
-  companions: [
-    'linux',
-  ] as const,
-  dependencies: [
-    'ruby-lang.org^3.1',
-    'rubygems.org',
-    'linuxgnome.org/libxml2~2.13.8gnome.org/libxslt~1.1.43pcre.org@8',
-    'gnome.org/libxml2~2.13.8',
-    'gnome.org/libxslt~1.1.43',
-    'pcre.org@8',
-  ] as const,
-  versions: [
-    '5.0.4',
-  ] as const,
-  fullPath: 'github.com/licensee/licensed' as const,
-  aliases: [
-    'licensee/licensed',
-  ] as const,
+  homepage: 'https://pkgx.dev/pkgs/github.com-licensee-licensed/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com-licensee-licensed' as const,
+  fullPath: 'github.com-licensee-licensed' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx github.com-licensee-licensed' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
+  companions: [] as const,
 }
 
 export type GithubcomlicenseelicensedPackage = typeof githubcomlicenseelicensedPackage

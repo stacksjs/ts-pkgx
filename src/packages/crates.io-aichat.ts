@@ -1,24 +1,47 @@
+/**
+ * **crates.io-aichat** - Go home.
+ *
+ * @domain `crates.io-aichat`
+ *
+ * @install `pkgx crates.io-aichat`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.cratesioaichat
+ * console.log(pkg.name)        // "crates.io-aichat"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/crates-io-aichat.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const cratesioaichatPackage = {
-  name: 'aichat' as const,
-  domain: 'crates.io/aichat' as const,
-  description: 'All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/aichat/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) aichat' as const,
-  programs: [
-    'aichat',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/crates.io-aichat/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'crates.io-aichat' as const,
+  fullPath: 'crates.io-aichat' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx crates.io-aichat' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '0.29.0',
-    '0.28.0',
-  ] as const,
-  fullPath: 'crates.io/aichat' as const,
-  aliases: [
-    'aichat',
-  ] as const,
+  companions: [] as const,
 }
 
 export type CratesioaichatPackage = typeof cratesioaichatPackage

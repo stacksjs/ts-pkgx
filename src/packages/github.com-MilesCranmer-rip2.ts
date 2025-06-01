@@ -1,28 +1,47 @@
+/**
+ * **github.com-MilesCranmer-rip2** - Go home.
+ *
+ * @domain `github.com-MilesCranmer-rip2`
+ *
+ * @install `pkgx github.com-MilesCranmer-rip2`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.githubcommilescranmerrip2
+ * console.log(pkg.name)        // "github.com-MilesCranmer-rip2"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com-MilesCranmer-rip2.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const githubcommilescranmerrip2Package = {
-  name: 'rip2' as const,
-  domain: 'github.com/MilesCranmer/rip2' as const,
-  description: 'A safe and ergonomic alternative to rm' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/MilesCranmer/rip2/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) rip' as const,
-  programs: [
-    'rip',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/github.com-MilesCranmer-rip2/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com-MilesCranmer-rip2' as const,
+  fullPath: 'github.com-MilesCranmer-rip2' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx github.com-MilesCranmer-rip2' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '0.9.4',
-    '0.9.3',
-    '0.9.2',
-    '0.9.1',
-    '0.9.0',
-  ] as const,
-  fullPath: 'github.com/MilesCranmer/rip2' as const,
-  aliases: [
-    'rip2',
-    'MilesCranmer/rip2',
-  ] as const,
+  companions: [] as const,
 }
 
 export type Githubcommilescranmerrip2Package = typeof githubcommilescranmerrip2Package

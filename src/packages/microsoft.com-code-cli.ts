@@ -1,37 +1,47 @@
+/**
+ * **microsoft.com-code-cli** - Go home.
+ *
+ * @domain `microsoft.com-code-cli`
+ *
+ * @install `pkgx microsoft.com-code-cli`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.microsoftcomcodecli
+ * console.log(pkg.name)        // "microsoft.com-code-cli"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/microsoft-com-code-cli.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const microsoftcomcodecliPackage = {
-  name: 'vscode cli' as const,
-  domain: 'microsoft.com/code-cli' as const,
-  description: 'Command-line interface built-in Visual Studio Code' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/code-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) code' as const,
-  programs: [
-    'code',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/microsoft.com-code-cli/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'microsoft.com-code-cli' as const,
+  fullPath: 'microsoft.com-code-cli' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx microsoft.com-code-cli' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  dependencies: [
-    'openssl.org@1.1',
-    'zlib.net@1',
-  ] as const,
-  versions: [
-    '1.100.2',
-    '1.100.1',
-    '1.100.0',
-    '1.99.3',
-    '1.99.2',
-    '1.99.1',
-    '1.99.0',
-    '1.98.2',
-    '1.98.1',
-    '1.98.0',
-    '1.97.2',
-  ] as const,
-  fullPath: 'microsoft.com/code-cli' as const,
-  aliases: [
-    'vscode cli',
-    'code-cli',
-  ] as const,
 }
 
 export type MicrosoftcomcodecliPackage = typeof microsoftcomcodecliPackage

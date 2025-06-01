@@ -1,24 +1,47 @@
+/**
+ * **crates.io-bake-rs** - Go home.
+ *
+ * @domain `crates.io-bake-rs`
+ *
+ * @install `pkgx crates.io-bake-rs`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.cratesiobakers
+ * console.log(pkg.name)        // "crates.io-bake-rs"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/crates-io-bake-rs.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const cratesiobakersPackage = {
-  name: 'bake' as const,
-  domain: 'crates.io/bake-rs' as const,
-  description: 'Simple and easy to use "script runner" written in Rust.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/bake-rs/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) bake' as const,
-  programs: [
-    'bake',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/crates.io-bake-rs/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'crates.io-bake-rs' as const,
+  fullPath: 'crates.io-bake-rs' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx crates.io-bake-rs' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '1.2.0',
-  ] as const,
-  fullPath: 'crates.io/bake-rs' as const,
-  aliases: [
-    'bake',
-    'bake-rs',
-  ] as const,
+  companions: [] as const,
 }
 
 export type CratesiobakersPackage = typeof cratesiobakersPackage

@@ -5,7 +5,6 @@
  * This will scan the packages directory and automatically create imports and exports
  * for all package files found, as well as generate comprehensive documentation.
  */
-import type { PkgxPackage } from './types'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
@@ -20,19 +19,34 @@ const ALIASES_FILE = path.join(PACKAGES_DIR, 'aliases.ts')
 // Default documentation output directory
 const DEFAULT_DOCS_DIR = path.join(process.cwd(), 'docs')
 
-// Files to exclude from the index
-const EXCLUDED_FILES = ['index.ts', 'aliases.ts']
+// Files to exclude from processing
+const _EXCLUDED_FILES = ['index.ts', 'aliases.ts']
 
 // Special module names that need custom handling
 const SPECIAL_MODULES: Record<string, string> = {
   undefined: 'undefinedpkg', // Rename to avoid conflict with JavaScript undefined
 }
 
-// Import pantry dynamically to avoid circular dependencies
-async function importPantry() {
+interface PkgxPackage {
+  name: string
+  domain: string
+  description: string
+  packageYmlUrl: string
+  homepageUrl: string
+  githubUrl: string
+  installCommand: string
+  programs: readonly string[]
+  companions: readonly string[]
+  dependencies: readonly string[]
+  versions: readonly string[]
+  fullPath: string
+  aliases: readonly string[]
+}
+
+async function importPantry(): Promise<Record<string, PkgxPackage>> {
   try {
     const packages = await import('./packages')
-    return packages.pantry as unknown as Record<string, PkgxPackage>
+    return (packages as any).pantry || {}
   }
   catch (error) {
     console.error('Error importing pantry:', error)
@@ -48,7 +62,7 @@ async function importPantry() {
  */
 function isValidAlias(alias: string, targetDomain: string): boolean {
   // Don't create standalone aliases from generic sub-path words
-  const genericWords = ['cli', 'app', 'tool', 'server', 'client', 'api', 'lib', 'core']
+  const genericWords = ['cli', 'app', 'tool', 'server', 'client', 'api', 'lib', 'core', 'sdk', 'dev', 'bin']
 
   // If the alias is just a generic word, skip it
   if (genericWords.includes(alias.toLowerCase())) {
@@ -62,22 +76,44 @@ function isValidAlias(alias: string, targetDomain: string): boolean {
 
   // Don't create aliases that are just the domain without dots
   const domainWithoutDots = targetDomain.replace(/\./g, '')
-  if (alias.toLowerCase() === domainWithoutDots.toLowerCase()) {
+  if (alias === domainWithoutDots) {
     return false
   }
 
-  // Filter out shell command aliases (contain + or $ or -- or other shell syntax)
-  if (alias.includes('+') || alias.includes('$') || alias.includes('--') || alias.includes(' -')) {
+  // Filter out shell command patterns (install scripts)
+  // These contain shell operators and are not real aliases
+  if (alias.includes('--') || alias.includes('$SHELL') || alias.includes('curl') || alias.includes('sh <(')) {
     return false
   }
 
-  // Filter out aliases that start with special characters
-  if (/^\W/.test(alias)) {
+  // Filter out patterns that look like shell commands or install scripts
+  if (alias.includes(' -- ') || alias.includes(' -i') || (alias.includes('+') && alias.includes(' '))) {
     return false
   }
 
-  // Filter out aliases that are too long (likely to be command descriptions)
-  if (alias.length > 50) {
+  // Don't create aliases for paths that end with generic words
+  // For example, don't create 'cli' alias for 'cedarpolicy.com/cli'
+  if (targetDomain.includes('/')) {
+    const pathParts = targetDomain.split('/')
+    const lastPart = pathParts[pathParts.length - 1]
+    if (genericWords.includes(lastPart.toLowerCase()) && alias === lastPart) {
+      return false
+    }
+  }
+
+  // Don't create aliases that are too short (less than 3 characters) unless they're well-known
+  const wellKnownShortAliases = ['go', 'js', 'py', 'rb', 'sh', 'vi', 'cc', 'gc', 'jq', 'awk', 'sed']
+  if (alias.length < 3 && !wellKnownShortAliases.includes(alias.toLowerCase())) {
+    return false
+  }
+
+  // Don't create aliases that are just numbers or version-like strings
+  if (/^\d+(?:\.\d+)*$/.test(alias)) {
+    return false
+  }
+
+  // Don't create aliases that contain only special characters
+  if (!/[a-z]/i.test(alias)) {
     return false
   }
 
@@ -369,87 +405,25 @@ function toPackageVarName(moduleName: string): string {
  */
 export async function generateIndex(): Promise<string | null> {
   try {
-    // Get all TS files in the packages directory
-    const files = await fs.promises.readdir(PACKAGES_DIR)
-    const packageFiles = files.filter(file =>
-      file.endsWith('.ts')
-      && !EXCLUDED_FILES.includes(file),
-    )
+    console.log('🔧 Generating package index...')
 
-    // Custom sort function that handles paths with hyphens correctly
-    // Ensures base paths like './viaduct.ai' come before extended paths like './viaduct.ai-ksops'
-    packageFiles.sort((a, b) => {
-      const aName = path.basename(a, '.ts')
-      const bName = path.basename(b, '.ts')
-
-      // Handle special cases where we need to override normal alphabetical sorting
-      const specialCases: Record<string, string[]> = {
-        'libssh.org': ['libssh2.org'], // libssh2.org should come before libssh.org
-      }
-
-      // Check special case overrides
-      for (const [before, afters] of Object.entries(specialCases)) {
-        if (aName === before && afters.includes(bName))
-          return 1
-        if (bName === before && afters.includes(aName))
-          return -1
-      }
-
-      // Check if one is a sub-path of the other (has a hyphen extension)
-      if (bName.startsWith(`${aName}-`))
-        return -1
-      if (aName.startsWith(`${bName}-`))
-        return 1
-
-      // Normal alphabetical sorting
-      return aName.localeCompare(bName)
-    })
-
-    // Create the imports section
-    let imports = ''
-
-    // Create the interface declaration with comprehensive JSDoc
-    let interfaceDecl = `/**
- * The Pantry interface provides access to all available pkgx packages.
- * Each property represents a package domain and provides comprehensive package information
- * including metadata, installation commands, available programs, versions, and dependencies.
- *
- * Packages can be accessed by their domain name (e.g., \`pantry.bunsh\`) or by their aliases
- * (e.g., \`pantry.bun\`) for convenience.
- *
- * @example
- * \`\`\`typescript
- * import { pantry } from 'ts-pkgx'
- *
- * // Access Node.js package by domain
- * const node = pantry.nodejsorg
- * console.log(node.description) // "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine"
- * console.log(node.programs)    // ["node", "npm", "npx"]
- * console.log(node.versions[0]) // Latest version
- *
- * // Access Bun package by domain or alias
- * const bun1 = pantry.bunsh  // by domain
- * const bun2 = pantry.bun    // by alias (same object)
- * console.log(bun1 === bun2) // true
- * \`\`\`
- */
-export interface Pantry {
-`
-
-    // Create the pantry object
-    let pantry = 'export const pantry: Pantry = {\n'
-
-    // Import pantry to get package data for documentation
+    // Import existing pantry data (may be empty if this is the first run)
     const pantryData = await importPantry()
 
-    // Extract all aliases to create alias mappings
+    // Get all package files
+    const packageFiles = fs.readdirSync(PACKAGES_DIR)
+      .filter(file => file.endsWith('.ts') && file !== 'index.ts' && file !== 'aliases.ts')
+      .map(file => path.join(PACKAGES_DIR, file))
+    console.log(`Found ${packageFiles.length} package files`)
+
+    // Extract aliases from package files
     const aliases = await extractAllAliases()
 
-    // Create a map from alias to domain variable name for easy lookup
-    const aliasToVarName: Record<string, string> = {}
+    // Build domain to variable name mapping
     const domainToVarName: Record<string, string> = {}
+    const aliasToVarName: Record<string, string> = {}
 
-    // Process each package file to build domain mappings
+    // First pass: build domain mappings
     for (const file of packageFiles) {
       const moduleName = path.basename(file, '.ts')
       const domain = guessOriginalDomain(moduleName)
@@ -479,22 +453,29 @@ export interface Pantry {
       }
     }
 
+    // Generate imports and interface
+    let imports = '// Auto-generated package index\n// Do not edit this file directly\n\n'
+    let interfaceDecl = 'export interface Pantry {\n'
+    let pantry = 'export const pantry: Pantry = {\n'
+
     // Process each package file
     for (const file of packageFiles) {
       const moduleName = path.basename(file, '.ts')
       const moduleVarName = toSafeVarName(moduleName)
       const packageVarName = toPackageVarName(moduleName)
       const typeName = toTypeName(moduleName)
-
-      // Domain is used as the key in the types and pantry objects
       const domain = guessOriginalDomain(moduleName)
       const domainVarName = convertDomainToVarName(domain)
 
       // Add the import
       imports += `import * as ${moduleVarName} from './${moduleName}'\n`
 
-      // Get package data for JSDoc
-      const pkgData = pantryData[domainVarName]
+      // Get package data for JSDoc - try multiple approaches to find the data
+      // Handle the case where pantryData might be undefined or empty
+      let pkgData = null
+      if (pantryData && typeof pantryData === 'object') {
+        pkgData = pantryData[domainVarName] || pantryData[moduleVarName] || pantryData[domain]
+      }
 
       // Generate comprehensive JSDoc for this package
       let jsdoc = '  /**\n'

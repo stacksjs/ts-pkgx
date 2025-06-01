@@ -1,24 +1,47 @@
+/**
+ * **viaduct.ai-ksops** - Go home.
+ *
+ * @domain `viaduct.ai-ksops`
+ *
+ * @install `pkgx viaduct.ai-ksops`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.viaductaiksops
+ * console.log(pkg.name)        // "viaduct.ai-ksops"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/viaduct-ai-ksops.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const viaductaiksopsPackage = {
-  name: 'ksops' as const,
-  domain: 'viaduct.ai/ksops' as const,
-  description: 'KSOPS - A Flexible Kustomize Plugin for SOPS Encrypted Resources' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/viaduct.ai/ksops/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) ksops' as const,
-  programs: [
-    'ksops',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/viaduct.ai-ksops/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'viaduct.ai-ksops' as const,
+  fullPath: 'viaduct.ai-ksops' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx viaduct.ai-ksops' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '4.3.3',
-    '4.3.2',
-  ] as const,
-  fullPath: 'viaduct.ai/ksops' as const,
-  aliases: [
-    'ksops',
-  ] as const,
+  companions: [] as const,
 }
 
 export type ViaductaiksopsPackage = typeof viaductaiksopsPackage

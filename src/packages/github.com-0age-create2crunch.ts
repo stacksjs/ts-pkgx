@@ -1,24 +1,47 @@
+/**
+ * **github.com-0age-create2crunch** - Go home.
+ *
+ * @domain `github.com-0age-create2crunch`
+ *
+ * @install `pkgx github.com-0age-create2crunch`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.githubcom0agecreate2crunch
+ * console.log(pkg.name)        // "github.com-0age-create2crunch"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com-0age-create2crunch.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const githubcom0agecreate2crunchPackage = {
-  name: 'create2crunch' as const,
-  domain: 'github.com/0age/create2crunch' as const,
-  description: 'A Rust program for finding salts that create gas-efficient Ethereum addresses via CREATE2.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/0age/create2crunch/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) create2crunch' as const,
-  programs: [
-    'create2crunch',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/github.com-0age-create2crunch/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com-0age-create2crunch' as const,
+  fullPath: 'github.com-0age-create2crunch' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx github.com-0age-create2crunch' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '2024.12.23',
-  ] as const,
-  fullPath: 'github.com/0age/create2crunch' as const,
-  aliases: [
-    'create2crunch',
-    '0age/create2crunch',
-  ] as const,
+  companions: [] as const,
 }
 
 export type Githubcom0agecreate2crunchPackage = typeof githubcom0agecreate2crunchPackage

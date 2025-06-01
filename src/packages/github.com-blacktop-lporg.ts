@@ -1,24 +1,47 @@
+/**
+ * **github.com-blacktop-lporg** - Go home.
+ *
+ * @domain `github.com-blacktop-lporg`
+ *
+ * @install `pkgx github.com-blacktop-lporg`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.githubcomblacktoplporg
+ * console.log(pkg.name)        // "github.com-blacktop-lporg"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com-blacktop-lporg.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const githubcomblacktoplporgPackage = {
-  name: 'lporg' as const,
-  domain: 'github.com/blacktop/lporg' as const,
-  description: 'Organize Your macOS Launchpad Apps' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/blacktop/lporg/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) lporg' as const,
-  programs: [
-    'lporg',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/github.com-blacktop-lporg/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com-blacktop-lporg' as const,
+  fullPath: 'github.com-blacktop-lporg' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx github.com-blacktop-lporg' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '20.4.32',
-  ] as const,
-  fullPath: 'github.com/blacktop/lporg' as const,
-  aliases: [
-    'lporg',
-    'blacktop/lporg',
-  ] as const,
+  companions: [] as const,
 }
 
 export type GithubcomblacktoplporgPackage = typeof githubcomblacktoplporgPackage

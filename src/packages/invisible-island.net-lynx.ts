@@ -1,26 +1,47 @@
+/**
+ * **invisible-island.net-lynx** - Go home.
+ *
+ * @domain `invisible-island.net-lynx`
+ *
+ * @install `pkgx invisible-island.net-lynx`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.invisibleislandnetlynx
+ * console.log(pkg.name)        // "invisible-island.net-lynx"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/invisible-island-net-lynx.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const invisibleislandnetlynxPackage = {
-  name: 'lynx' as const,
-  domain: 'invisible-island.net/lynx' as const,
-  description: 'Text-based web browser' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/invisible-island.net/lynx/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) lynx' as const,
-  programs: [
-    'lynx',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/invisible-island.net-lynx/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'invisible-island.net-lynx' as const,
+  fullPath: 'invisible-island.net-lynx' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx invisible-island.net-lynx' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  dependencies: [
-    'openssl.org^3',
-    'invisible-island.net/ncurses^6',
-  ] as const,
-  versions: [
-    '2.9.2',
-  ] as const,
-  fullPath: 'invisible-island.net/lynx' as const,
-  aliases: [
-    'lynx',
-  ] as const,
 }
 
 export type InvisibleislandnetlynxPackage = typeof invisibleislandnetlynxPackage

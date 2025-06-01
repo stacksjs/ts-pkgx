@@ -1,32 +1,47 @@
+/**
+ * **github.com-peripheryapp-periphery** - Go home.
+ *
+ * @domain `github.com-peripheryapp-periphery`
+ *
+ * @install `pkgx github.com-peripheryapp-periphery`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.githubcomperipheryappperiphery
+ * console.log(pkg.name)        // "github.com-peripheryapp-periphery"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com-peripheryapp-periphery.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const githubcomperipheryappperipheryPackage = {
-  name: 'periphery' as const,
-  domain: 'github.com/peripheryapp/periphery' as const,
-  description: 'A tool to identify unused code in Swift projects.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peripheryapp/periphery/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) periphery' as const,
-  programs: [
-    'periphery',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/github.com-peripheryapp-periphery/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com-peripheryapp-periphery' as const,
+  fullPath: 'github.com-peripheryapp-periphery' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx github.com-peripheryapp-periphery' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  dependencies: [
-    'curl.se',
-    'gnome.org/libxml2',
-  ] as const,
-  versions: [
-    '3.1.0',
-    '3.0.3',
-    '3.0.2',
-    '3.0.1',
-    '3.0.0',
-    '2.21.2',
-  ] as const,
-  fullPath: 'github.com/peripheryapp/periphery' as const,
-  aliases: [
-    'periphery',
-    'peripheryapp/periphery',
-  ] as const,
 }
 
 export type GithubcomperipheryappperipheryPackage = typeof githubcomperipheryappperipheryPackage

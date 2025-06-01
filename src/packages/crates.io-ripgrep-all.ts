@@ -1,33 +1,47 @@
+/**
+ * **crates.io-ripgrep-all** - Go home.
+ *
+ * @domain `crates.io-ripgrep-all`
+ *
+ * @install `pkgx crates.io-ripgrep-all`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.cratesioripgrepall
+ * console.log(pkg.name)        // "crates.io-ripgrep-all"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/crates-io-ripgrep-all.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const cratesioripgrepallPackage = {
-  name: 'rga' as const,
-  domain: 'crates.io/ripgrep-all' as const,
-  description: 'rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/ripgrep-all/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) +crates.io/ripgrep-all -- $SHELL -i' as const,
-  programs: [
-    'rga',
-    'rga-fzf',
-    'rga-fzf-open',
-    'rga-preproc',
-  ] as const,
-  companions: [
-    'crates.io/ripgrep',
-    'github.com/junegunn/fzf',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/crates.io-ripgrep-all/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'crates.io-ripgrep-all' as const,
+  fullPath: 'crates.io-ripgrep-all' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx crates.io-ripgrep-all' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '0.10.9',
-    '0.10.8',
-    '0.10.7',
-    '0.10.6',
-  ] as const,
-  fullPath: 'crates.io/ripgrep-all' as const,
-  aliases: [
-    'rga',
-    'ripgrep-all',
-  ] as const,
+  companions: [] as const,
 }
 
 export type CratesioripgrepallPackage = typeof cratesioripgrepallPackage

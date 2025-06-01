@@ -1,25 +1,47 @@
+/**
+ * **astral.sh-ty** - Go home.
+ *
+ * @domain `astral.sh-ty`
+ *
+ * @install `pkgx astral.sh-ty`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.astralshty
+ * console.log(pkg.name)        // "astral.sh-ty"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/astral-sh-ty.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const astralshtyPackage = {
-  name: 'ty' as const,
-  domain: 'astral.sh/ty' as const,
-  description: 'An extremely fast Python type checker and language server, written in Rust.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/ty/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) ty' as const,
-  programs: [
-    'ty',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/astral.sh-ty/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'astral.sh-ty' as const,
+  fullPath: 'astral.sh-ty' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx astral.sh-ty' as const,
+  aliases: [] as const,
+  dependencies: [] as const,
   companions: [] as const,
-  dependencies: [
-    'pkgx.sh@1',
-  ] as const,
-  versions: [
-    '0.0.0.8',
-  ] as const,
-  fullPath: 'astral.sh/ty' as const,
-  aliases: [
-    'ty',
-  ] as const,
 }
 
 export type AstralshtyPackage = typeof astralshtyPackage

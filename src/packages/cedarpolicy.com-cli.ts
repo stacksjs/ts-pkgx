@@ -1,56 +1,47 @@
+/**
+ * **cedarpolicy.com-cli** - Go home.
+ *
+ * @domain `cedarpolicy.com-cli`
+ *
+ * @install `pkgx cedarpolicy.com-cli`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.cedarpolicycomcli
+ * console.log(pkg.name)        // "cedarpolicy.com-cli"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/cedarpolicy-com-cli.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const cedarpolicycomcliPackage = {
-  name: 'cedar' as const,
-  domain: 'cedarpolicy.com/cli' as const,
-  description: 'Implementation of the Cedar Policy Language' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cedarpolicy.com/cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) cedar' as const,
-  programs: [
-    'cedar',
-  ] as const,
-  companions: [] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/cedarpolicy.com-cli/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'cedarpolicy.com-cli' as const,
+  fullPath: 'cedarpolicy.com-cli' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx cedarpolicy.com-cli' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '4.4.1',
-    '4.4.0',
-    '4.3.3',
-    '4.3.2',
-    '4.3.1',
-    '4.3.0',
-    '4.2.2',
-    '4.2.1',
-    '4.2.0',
-    '4.1.0',
-    '4.0.0',
-    '3.4.1',
-    '3.4.0',
-    '3.3.0',
-    '3.2.4',
-    '3.2.1',
-    '3.2.0',
-    '3.1.4',
-    '3.1.3',
-    '3.1.2',
-    '3.1.1',
-    '3.1.0',
-    '3.0.1',
-    '3.0.0',
-    '2.5.0',
-    '2.4.7',
-    '2.4.6',
-    '2.4.5',
-    '2.4.4',
-    '2.4.3',
-    '2.4.2',
-    '2.4.1',
-    '2.4.0',
-    '2.3.3',
-  ] as const,
-  fullPath: 'cedarpolicy.com/cli' as const,
-  aliases: [
-    'cli',
-  ] as const,
+  companions: [] as const,
 }
 
 export type CedarpolicycomcliPackage = typeof cedarpolicycomcliPackage

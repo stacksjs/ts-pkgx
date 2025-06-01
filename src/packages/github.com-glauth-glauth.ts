@@ -1,21 +1,47 @@
+/**
+ * **github.com-glauth-glauth** - Go home.
+ *
+ * @domain `github.com-glauth-glauth`
+ *
+ * @install `pkgx github.com-glauth-glauth`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.githubcomglauthglauth
+ * console.log(pkg.name)        // "github.com-glauth-glauth"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com-glauth-glauth.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const githubcomglauthglauthPackage = {
-  name: 'github.com/glauth/glauth' as const,
-  domain: 'github.com/glauth/glauth' as const,
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/glauth/glauth/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/glauth/glauth -- $SHELL -i' as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
   programs: [] as const,
-  companions: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/github.com-glauth-glauth/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com-glauth-glauth' as const,
+  fullPath: 'github.com-glauth-glauth' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx github.com-glauth-glauth' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '2.4.0',
-  ] as const,
-  fullPath: 'github.com/glauth/glauth' as const,
-  aliases: [
-    'glauth/glauth',
-  ] as const,
+  companions: [] as const,
 }
 
 export type GithubcomglauthglauthPackage = typeof githubcomglauthglauthPackage

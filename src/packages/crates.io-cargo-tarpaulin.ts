@@ -1,34 +1,47 @@
+/**
+ * **crates.io-cargo-tarpaulin** - Go home.
+ *
+ * @domain `crates.io-cargo-tarpaulin`
+ *
+ * @install `pkgx crates.io-cargo-tarpaulin`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.cratesiocargotarpaulin
+ * console.log(pkg.name)        // "crates.io-cargo-tarpaulin"
+ * console.log(pkg.description) // "Go home."
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/crates-io-cargo-tarpaulin.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
 export const cratesiocargotarpaulinPackage = {
-  name: 'cargo-tarpaulin' as const,
-  domain: 'crates.io/cargo-tarpaulin' as const,
-  description: 'A code coverage tool for Rust projects' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/cargo-tarpaulin/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
-  installCommand: 'sh <(curl https://pkgx.sh) cargo-tarpaulin' as const,
-  programs: [
-    'cargo-tarpaulin',
-  ] as const,
-  companions: [
-    'rust-lang.org/cargo',
-  ] as const,
+  /**
+   * The display name of this package.
+   */
+  name: '' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Go home.' as const,
+  versions: [] as const,
+  programs: [] as const,
+  homepage: 'https://pkgx.dev/pkgs/crates.io-cargo-tarpaulin/' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'crates.io-cargo-tarpaulin' as const,
+  fullPath: 'crates.io-cargo-tarpaulin' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'pkgx crates.io-cargo-tarpaulin' as const,
+  aliases: [] as const,
   dependencies: [] as const,
-  versions: [
-    '0.32.7',
-    '0.32.6',
-    '0.32.5',
-    '0.32.4',
-    '0.32.3',
-    '0.32.2',
-    '0.32.1',
-    '0.32.0',
-    '0.31.5',
-    '0.31.4',
-  ] as const,
-  fullPath: 'crates.io/cargo-tarpaulin' as const,
-  aliases: [
-    'cargo-tarpaulin',
-  ] as const,
+  companions: [] as const,
 }
 
 export type CratesiocargotarpaulinPackage = typeof cratesiocargotarpaulinPackage
