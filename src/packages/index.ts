@@ -22,7 +22,6 @@ import * as apktool_org from './apktool.org'
 import * as apollographql_com from './apollographql.com'
 import * as appium_io from './appium.io'
 import * as apple_com from './apple.com'
-import * as apple_com_remote_cmds from './apple.com-remote_cmds'
 import * as apptainer_org from './apptainer.org'
 import * as aquasecurity_github_io from './aquasecurity.github.io'
 import * as arduino_github_io from './arduino.github.io'
@@ -66,7 +65,6 @@ import * as brxken128_github_io from './brxken128.github.io'
 import * as budimanjojo_github_io from './budimanjojo.github.io'
 import * as buf_build from './buf.build'
 import * as buildpacks_io from './buildpacks.io'
-import * as bun from './bun'
 import * as bun_sh from './bun.sh'
 import * as bytebase_com from './bytebase.com'
 import * as bytereef_org from './bytereef.org'
@@ -537,7 +535,6 @@ import * as nixos_org from './nixos.org'
 import * as nixpacks_com from './nixpacks.com'
 import * as nlnetlabs_nl from './nlnetlabs.nl'
 import * as nmap_org from './nmap.org'
-import * as node from './node'
 import * as nodejs_org from './nodejs.org'
 import * as nomadproject_io from './nomadproject.io'
 import * as nongnu_org from './nongnu.org'
@@ -803,7 +800,6 @@ import * as turso_tech from './turso.tech'
 import * as typescriptlang_org from './typescriptlang.org'
 import * as typst_app from './typst.app'
 import * as unbound_net from './unbound.net'
-import * as undefinedpkg from './undefined'
 import * as unicode_org from './unicode.org'
 import * as unidata_ucar_edu from './unidata.ucar.edu'
 import * as unixodbc_org from './unixodbc.org'
@@ -1251,19 +1247,6 @@ export interface Pantry {
    * ```
    */
   'applecom': apple_com.ApplecomPackage
-
-  /**
-   * **apple.com/remote_cmds** - pkgx package
-   *
-   * @domain `apple.com/remote_cmds`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   * const pkg = pantry.applecomremote_cmds
-   * ```
-   */
-  'applecomremote_cmds': apple_com_remote_cmds.Applecomremote_cmdsPackage
 
   /**
    * **apptainer.org** - Application container and unprivileged sandbox platform for Linux
@@ -2050,28 +2033,6 @@ export interface Pantry {
    * ```
    */
   'buildpacksio': buildpacks_io.PackPackage
-
-  /**
-   * **bun** - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
-   *
-   * @domain `bun`
-   * @programs `bun`, `bunx`
-   * @version `1.2.15` (119 versions available)
-   * @install `sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i`
-   * @aliases `bun`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * const pkg = pantry.bun
-   * console.log(pkg.name)        // "bun"
-   * console.log(pkg.description) // "Incredibly fast JavaScript runtime, bundler, te..."
-   * console.log(pkg.programs)    // ["bun", "bunx"]
-   * console.log(pkg.versions[0]) // "1.2.15"
-   * ```
-   */
-  'bun': bun.BunPackage
 
   /**
    * **bun** - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
@@ -10687,30 +10648,6 @@ export interface Pantry {
   /**
    * **node** - Platform built on V8 to build network applications
    *
-   * @domain `node`
-   * @programs `node`
-   * @version `24.1.0` (137 versions available)
-   * @install `sh <(curl https://pkgx.sh) node`
-   * @aliases `node`
-   * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+2 more)
-   * @companions `npmjs.com`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * const pkg = pantry.node
-   * console.log(pkg.name)        // "node"
-   * console.log(pkg.description) // "Platform built on V8 to build network applications"
-   * console.log(pkg.programs)    // ["node"]
-   * console.log(pkg.versions[0]) // "24.1.0"
-   * ```
-   */
-  'node': node.NodePackage
-
-  /**
-   * **node** - Platform built on V8 to build network applications
-   *
    * @domain `nodejs.org`
    * @programs `node`
    * @version `24.1.0` (137 versions available)
@@ -15789,19 +15726,6 @@ export interface Pantry {
    * ```
    */
   'unboundnet': unbound_net.UnboundPackage
-
-  /**
-   * **undefined** - pkgx package
-   *
-   * @domain `undefined`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   * const pkg = pantry.undefined
-   * ```
-   */
-  'undefined': undefinedpkg.UndefinedPackage
 
   /**
    * **unicode.org** - The home of the ICU project source code.
@@ -25319,7 +25243,6 @@ export const pantry: Pantry = {
   'apollographqlcom': apollographql_com.apollographqlcomPackage,
   'appiumio': appium_io.appiumPackage,
   'applecom': apple_com.applecomPackage,
-  'applecomremote_cmds': apple_com_remote_cmds.applecomremote_cmdsPackage,
   'apptainerorg': apptainer_org.apptainerorgPackage,
   'aquasecuritygithubio': aquasecurity_github_io.aquasecuritygithubioPackage,
   'arduinogithubio': arduino_github_io.arduinogithubioPackage,
@@ -25363,7 +25286,6 @@ export const pantry: Pantry = {
   'budimanjojogithubio': budimanjojo_github_io.budimanjojogithubioPackage,
   'bufbuild': buf_build.bufPackage,
   'buildpacksio': buildpacks_io.packPackage,
-  'bun': bun.bunPackage,
   'bunsh': bun_sh.bunPackage,
   'bytebasecom': bytebase_com.bytebasePackage,
   'bytereeforg': bytereef_org.bytereeforgPackage,
@@ -25834,7 +25756,6 @@ export const pantry: Pantry = {
   'nixpackscom': nixpacks_com.nixpacksPackage,
   'nlnetlabsnl': nlnetlabs_nl.nlnetlabsnlPackage,
   'nmaporg': nmap_org.nmaporgPackage,
-  'node': node.nodePackage,
   'nodejsorg': nodejs_org.nodePackage,
   'nomadprojectio': nomadproject_io.nomadPackage,
   'nongnuorg': nongnu_org.nongnuorgPackage,
@@ -26100,7 +26021,6 @@ export const pantry: Pantry = {
   'typescriptlangorg': typescriptlang_org.tscPackage,
   'typstapp': typst_app.typstPackage,
   'unboundnet': unbound_net.unboundPackage,
-  'undefined': undefinedpkg.undefinedPackage,
   'unicodeorg': unicode_org.unicodeorgPackage,
   'unidataucaredu': unidata_ucar_edu.unidataucareduPackage,
   'unixodbcorg': unixodbc_org.unixodbcorgPackage,

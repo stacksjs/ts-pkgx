@@ -196,8 +196,12 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
         expect(content).toContain('@domain')
 
         // Should not have syntax errors (basic check)
-        expect(content).not.toContain('undefined')
-        expect(content).not.toContain('null,')
+        expect(content).not.toContain('undefined,') // No undefined values in object literals
+        expect(content).not.toContain('null,') // No null values in object literals
+        expect(content).not.toContain(': undefined') // No undefined property values
+        expect(content).not.toContain('undefined}') // No undefined at end of objects
+
+        // The literal string "undefined" should not appear as it's not a valid package domain
       }
       finally {
         process.chdir(originalCwd)

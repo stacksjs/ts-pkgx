@@ -1167,7 +1167,6 @@ export const aliases: Record<string, string> = {
   'typst.app': 'typst.app',
   'unbound': 'unbound.net',
   'unbound.net': 'unbound.net',
-  'undefined': 'undefined',
   'unicode.org': 'unicode.org',
   'unidata.ucar.edu': 'unidata.ucar.edu',
   'unixodbc.org': 'unixodbc.org',

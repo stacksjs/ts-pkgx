@@ -24,7 +24,7 @@ const _EXCLUDED_FILES = ['index.ts', 'aliases.ts']
 
 // Special module names that need custom handling
 const SPECIAL_MODULES: Record<string, string> = {
-  undefined: 'undefinedpkg', // Rename to avoid conflict with JavaScript undefined
+  // Add any special module mappings here if needed
 }
 
 interface PkgxPackage {
@@ -580,10 +580,17 @@ export async function generateIndex(): Promise<string | null> {
     // Process each package file
     for (const file of sortedPackageFiles) {
       const moduleName = path.basename(file, '.ts')
+      const domain = guessOriginalDomain(moduleName)
+
+      // Skip invalid package domains
+      if (!isValidPackageDomain(domain)) {
+        console.log(`Skipping invalid package domain: ${domain} (from file: ${moduleName}.ts)`)
+        continue
+      }
+
       const moduleVarName = toSafeVarName(moduleName)
       const packageVarName = toPackageVarName(moduleName)
       const typeName = toTypeName(moduleName)
-      const domain = guessOriginalDomain(moduleName)
       const domainVarName = convertDomainToVarName(domain)
 
       // Add the import
@@ -964,9 +971,103 @@ export async function generateAliases(): Promise<string> {
 }
 
 /**
+ * Check if a package domain is valid and not a reserved keyword
+ */
+function isValidPackageDomain(domain: string): boolean {
+  // Reserved JavaScript keywords that should not be used as package domains
+  const reservedKeywords = [
+    'undefined',
+    'null',
+    'true',
+    'false',
+    'var',
+    'let',
+    'const',
+    'function',
+    'class',
+    'if',
+    'else',
+    'for',
+    'while',
+    'do',
+    'switch',
+    'case',
+    'default',
+    'break',
+    'continue',
+    'return',
+    'try',
+    'catch',
+    'finally',
+    'throw',
+    'new',
+    'this',
+    'super',
+    'import',
+    'export',
+    'from',
+    'as',
+    'typeof',
+    'instanceof',
+    'in',
+    'of',
+    'delete',
+    'void',
+    'async',
+    'await',
+    'yield',
+    'static',
+    'extends',
+    'implements',
+    'interface',
+    'type',
+    'enum',
+    'namespace',
+    'module',
+    'declare',
+    'abstract',
+    'public',
+    'private',
+    'protected',
+    'readonly',
+    'get',
+    'set',
+  ]
+
+  // Check if domain is a reserved keyword
+  if (reservedKeywords.includes(domain.toLowerCase())) {
+    return false
+  }
+
+  // Domain should have at least one dot (be a valid domain format)
+  // Exception: some single-word domains like 'go' are valid
+  const validSingleWordDomains = ['go', 'rust', 'zig', 'nim', 'dart', 'julia', 'scala', 'kotlin', 'swift']
+  if (!domain.includes('.') && !validSingleWordDomains.includes(domain.toLowerCase())) {
+    return false
+  }
+
+  // Domain should not be empty or just whitespace
+  if (!domain || domain.trim().length === 0) {
+    return false
+  }
+
+  // Domain should not contain invalid characters for a domain name
+  if (!/^[a-z0-9.\-/]+$/i.test(domain)) {
+    return false
+  }
+
+  return true
+}
+
+/**
  * Check if a package has placeholder/invalid data and should be excluded
  */
 function shouldExcludePackage(pkg: PkgxPackage): boolean {
+  // First check if the domain itself is valid
+  if (!isValidPackageDomain(pkg.domain)) {
+    return true
+  }
+
   if (!pkg.description)
     return true
 
