@@ -7,7 +7,7 @@
 - **Domain**: `svenstaro.github.io`
 - **Name**: `svenstaro.github.io`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](#)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/svenstaro.github.io/package.yml)
 
 ## Installation
 
@@ -37,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](#)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/svenstaro.github.io/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

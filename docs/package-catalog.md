@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 868
 - **Categories**: 13
-- **Last Updated**: 2025-06-01T06:29:42.759Z
+- **Last Updated**: 2025-06-01T06:17:47.421Z
 
 ## Table of Contents
 
@@ -182,7 +182,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[curlse](./packages/curlse.md)** () | Crafters of fine Open Source products | - | latest | `pkgx cURL` |
+| **[curlse](./packages/curlse.md)** (cURL) | A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP... | curl, curl-config | 8.14.0 (+23) | `pkgx cURL` |
 | **[htopdev](./packages/htopdev.md)** () | Crafters of fine Open Source products | - | latest | `pkgx htop` |
 
 ## Web Servers & Proxies
@@ -209,7 +209,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[abseilio](./packages/abseilio.md)** () | Crafters of fine Open Source products | - | latest | `pkgx abseil.io` |
+| **[abseilio](./packages/abseilio.md)** () | Abseil Common Libraries (C++) | - | 20250512.0.0 (+16) | `pkgx abseil.io` |
 | **[acornio](./packages/acornio.md)** () | Go home. | - | latest | `pkgx acorn.io` |
 | **[agptco](./packages/agptco.md)** () | Crafters of fine Open Source products | - | latest | `pkgx Auto-GPT` |
 | **[agwanamegitcrypt](./packages/agwanamegitcrypt.md)** (git-crypt) | Enable transparent encryption/decryption of files in a git repo | git-crypt | 0.7.0 (+0) | `pkgx git-crypt` |

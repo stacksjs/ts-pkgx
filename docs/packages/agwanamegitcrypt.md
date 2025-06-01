@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx git-crypt@0.7.0
+sh <(curl https://pkgx.sh) +agwa.name/git-crypt@0.7.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -7,7 +7,7 @@
 - **Domain**: `f1bonacc1.github.io`
 - **Name**: `f1bonacc1.github.io`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](#)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/f1bonacc1.github.io/package.yml)
 
 ## Installation
 
@@ -37,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](#)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/f1bonacc1.github.io/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

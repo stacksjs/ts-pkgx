@@ -1176,13 +1176,13 @@ async function generatePackagePages(outputDir: string): Promise<string[]> {
 - **Domain**: \`${domain}\`
 - **Name**: \`${pkg.name || domain}\`
 - **Homepage**: ${pkg.homepageUrl || 'Not specified'}
-- **Source**: [View on GitHub](${pkg.packageYmlUrl || pkg.githubUrl || '#'})
+- **Source**: [View on GitHub](${pkg.packageYmlUrl || `https://github.com/pkgxdev/pantry/tree/main/projects/${domain}/package.yml`})
 
 ## Installation
 
 \`\`\`bash
 # Install with pkgx
-${pkg.installCommand || `pkgx ${pkg.name || domain}`}
+${pkg.installCommand || `sh <(curl https://pkgx.sh) +${domain} -- $SHELL -i`}
 \`\`\`
 
 ## Programs
@@ -1240,7 +1240,7 @@ This package can also be accessed using these aliases:
 
 \`\`\`bash
 # Install specific version
-pkgx ${pkg.name || domain}@${pkg.versions[0]}
+sh <(curl https://pkgx.sh) +${domain}@${pkg.versions[0]} -- $SHELL -i
 \`\`\`
 `
       }
@@ -1292,7 +1292,7 @@ console.log(\`Programs: \${pkg.programs.join(', ')}\`)
 
 ## Links
 
-- [Package Source](${pkg.packageYmlUrl || pkg.githubUrl || '#'})
+- [Package Source](${pkg.packageYmlUrl || `https://github.com/pkgxdev/pantry/tree/main/projects/${domain}/package.yml`})
 - [Homepage](${pkg.homepageUrl || '#'})
 - [Back to Package Catalog](../package-catalog.md)
 
@@ -1371,7 +1371,7 @@ ${pkg.description}
   : ''}
 **Programs**: ${pkg.programs && pkg.programs.length > 0 ? pkg.programs.map((p: string) => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ') : 'None specified'}
 
-**Install**: \`${pkg.installCommand || `pkgx ${pkg.name || domain}`}\`
+**Install**: \`${pkg.installCommand || `sh <(curl https://pkgx.sh) +${domain} -- $SHELL -i`}\`
 
 ---
 

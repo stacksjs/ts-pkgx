@@ -7,7 +7,7 @@
 - **Domain**: `csie.ntu.edu.tw`
 - **Name**: `csie.ntu.edu.tw`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](#)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/csie.ntu.edu.tw/package.yml)
 
 ## Installation
 
@@ -37,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](#)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/csie.ntu.edu.tw/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

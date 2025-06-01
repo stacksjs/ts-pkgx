@@ -7,7 +7,7 @@
 - **Domain**: `jugit.fz/juelich.de`
 - **Name**: `jugit.fz/juelich.de`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](#)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jugit.fz/juelich.de/package.yml)
 
 ## Installation
 
@@ -37,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](#)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jugit.fz/juelich.de/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -7,7 +7,7 @@
 - **Domain**: `github.com/0age-create2crunch`
 - **Name**: `github.com/0age-create2crunch`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](#)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/0age-create2crunch/package.yml)
 
 ## Installation
 
@@ -37,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](#)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/0age-create2crunch/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

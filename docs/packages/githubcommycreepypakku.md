@@ -7,7 +7,7 @@
 - **Domain**: `github.com/mycreepy-pakku`
 - **Name**: `github.com/mycreepy-pakku`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](#)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mycreepy-pakku/package.yml)
 
 ## Installation
 
@@ -37,7 +37,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](#)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mycreepy-pakku/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 
