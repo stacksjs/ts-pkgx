@@ -1,5 +1,5 @@
 /**
- * **+wireshark.org -- $SHELL -i** - Network analyzer and capture tool - without graphical user interface
+ * **wireshark.org** - Network analyzer and capture tool - without graphical user interface
  *
  * @domain `wireshark.org`
  * @programs `capinfos`, `captype`, `dumpcap`, `editcap`, `idl2wrs`, ... (+8 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wireshark-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +wireshark.org -- $SHELL -i`
- * @aliases `+wireshark.org -- $SHELL -i`
  * @dependencies `c-ares.org^1.23`, `gnome.org/glib^2.78.3`, `gnutls.org^3.8.2`, ... (+10 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.wiresharkorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.wiresharkorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.wiresharkorg
  * console.log(pkg.name)        // "wireshark.org"
  * console.log(pkg.description) // "Network analyzer and capture tool - without gra..."
  * console.log(pkg.programs)    // ["capinfos", "captype", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wireshark-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wiresharkorgSHELLiPackage = {
+export const wiresharkorgPackage = {
   /**
    * The display name of this package.
    */
@@ -124,14 +119,8 @@ export const wiresharkorgSHELLiPackage = {
     '3.6.21',
     '3.6.20',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+wireshark.org -- $SHELL -i',
-  ] as const,
   fullPath: 'wireshark.org' as const,
+  aliases: [] as const,
 }
 
-export type WiresharkorgSHELLiPackage = typeof wiresharkorgSHELLiPackage
+export type WiresharkorgPackage = typeof wiresharkorgPackage

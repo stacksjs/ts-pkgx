@@ -64,6 +64,7 @@ export const synthPackage = {
   versions: [
     '0.6.9',
   ] as const,
+  fullPath: 'getsynth.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -71,7 +72,6 @@ export const synthPackage = {
   aliases: [
     'synth',
   ] as const,
-  fullPath: 'getsynth.com' as const,
 }
 
 export type SynthPackage = typeof synthPackage

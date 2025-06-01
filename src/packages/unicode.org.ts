@@ -1,5 +1,5 @@
 /**
- * **+unicode.org -- $SHELL -i** - The home of the ICU project source code.
+ * **unicode.org** - The home of the ICU project source code.
  *
  * @domain `unicode.org`
  * @programs `derb`, `genbrk`, `gencfu`, `gencnval`, `gendict`, ... (+7 more)
@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/unicode-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +unicode.org -- $SHELL -i`
- * @aliases `+unicode.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.unicodeorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.unicodeorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.unicodeorg
  * console.log(pkg.name)        // "unicode.org"
  * console.log(pkg.description) // "The home of the ICU project source code."
  * console.log(pkg.programs)    // ["derb", "genbrk", ...]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/unicode-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const unicodeorgSHELLiPackage = {
+export const unicodeorgPackage = {
   /**
    * The display name of this package.
    */
@@ -81,14 +76,8 @@ export const unicodeorgSHELLiPackage = {
     '73.2.0',
     '71.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+unicode.org -- $SHELL -i',
-  ] as const,
   fullPath: 'unicode.org' as const,
+  aliases: [] as const,
 }
 
-export type UnicodeorgSHELLiPackage = typeof unicodeorgSHELLiPackage
+export type UnicodeorgPackage = typeof unicodeorgPackage

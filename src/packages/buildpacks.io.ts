@@ -75,6 +75,7 @@ export const packPackage = {
     '0.34.0',
     '0.33.2',
   ] as const,
+  fullPath: 'buildpacks.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -82,7 +83,6 @@ export const packPackage = {
   aliases: [
     'pack',
   ] as const,
-  fullPath: 'buildpacks.io' as const,
 }
 
 export type PackPackage = typeof packPackage

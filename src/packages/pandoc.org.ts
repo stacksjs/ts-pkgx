@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pandoc-org.md
  *
  * @install `sh <(curl https://pkgx.sh) pandoc`
- * @aliases `pandoc`
  * @dependencies `gnu.org/gmp@6`, `zlib.net@1`, `sourceware.org/libffi@3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pandoc
- * // Or access via domain
- * const samePkg = pantry.pandocorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pandocorg
  * console.log(pkg.name)        // "pandoc"
  * console.log(pkg.description) // "Swiss-army knife of markup format conversion"
  * console.log(pkg.programs)    // ["pandoc"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pandoc-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pandocPackage = {
+export const pandocorgPackage = {
   /**
    * The display name of this package.
    */
@@ -103,14 +98,8 @@ export const pandocPackage = {
     '3.1.10',
     '2.19.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pandoc',
-  ] as const,
   fullPath: 'pandoc.org' as const,
+  aliases: [] as const,
 }
 
-export type PandocPackage = typeof pandocPackage
+export type PandocorgPackage = typeof pandocorgPackage

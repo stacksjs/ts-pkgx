@@ -1,5 +1,5 @@
 /**
- * **+wavpack.com -- $SHELL -i** - WavPack encode/decode library, command-line programs, and several plugins
+ * **wavpack.com** - WavPack encode/decode library, command-line programs, and several plugins
  *
  * @domain `wavpack.com`
  * @programs `wavpack`, `wvunpack`, `wvtag`, `wvgain`
@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wavpack-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +wavpack.com -- $SHELL -i`
- * @aliases `+wavpack.com -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.wavpackcomSHELLi
- * // Or access via domain
- * const samePkg = pantry.wavpackcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.wavpackcom
  * console.log(pkg.name)        // "wavpack.com"
  * console.log(pkg.description) // "WavPack encode/decode library, command-line pro..."
  * console.log(pkg.programs)    // ["wavpack", "wvunpack", ...]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wavpack-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wavpackcomSHELLiPackage = {
+export const wavpackcomPackage = {
   /**
    * The display name of this package.
    */
@@ -69,14 +64,8 @@ export const wavpackcomSHELLiPackage = {
     '5.8.0',
     '5.7.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+wavpack.com -- $SHELL -i',
-  ] as const,
   fullPath: 'wavpack.com' as const,
+  aliases: [] as const,
 }
 
-export type WavpackcomSHELLiPackage = typeof wavpackcomSHELLiPackage
+export type WavpackcomPackage = typeof wavpackcomPackage

@@ -1,22 +1,17 @@
 /**
- * **+fmt.dev -- $SHELL -i** - A modern formatting library
+ * **fmt.dev** - A modern formatting library
  *
  * @domain `fmt.dev`
  * @version `11.2.0` (15 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fmt-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +fmt.dev -- $SHELL -i`
- * @aliases `+fmt.dev -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.fmtdevSHELLi
- * // Or access via domain
- * const samePkg = pantry.fmtdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fmtdev
  * console.log(pkg.name)        // "fmt.dev"
  * console.log(pkg.description) // "A modern formatting library"
  * console.log(pkg.versions[0]) // "11.2.0" (latest)
@@ -25,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fmt-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fmtdevSHELLiPackage = {
+export const fmtdevPackage = {
   /**
    * The display name of this package.
    */
@@ -70,14 +65,8 @@ export const fmtdevSHELLiPackage = {
     '10.0.0',
     '9.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+fmt.dev -- $SHELL -i',
-  ] as const,
   fullPath: 'fmt.dev' as const,
+  aliases: [] as const,
 }
 
-export type FmtdevSHELLiPackage = typeof fmtdevSHELLiPackage
+export type FmtdevPackage = typeof fmtdevPackage

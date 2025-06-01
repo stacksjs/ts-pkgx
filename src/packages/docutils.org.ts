@@ -1,5 +1,5 @@
 /**
- * **+docutils.org -- $SHELL -i** - Text processing system for reStructuredText
+ * **docutils.org** - Text processing system for reStructuredText
  *
  * @domain `docutils.org`
  * @programs `docutils`, `rst2html`, `rst2html4`, `rst2html5`, `rst2latex`, ... (+6 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/docutils-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i`
- * @aliases `+docutils.org -- $SHELL -i`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.docutilsorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.docutilsorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.docutilsorg
  * console.log(pkg.name)        // "docutils.org"
  * console.log(pkg.description) // "Text processing system for reStructuredText"
  * console.log(pkg.programs)    // ["docutils", "rst2html", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/docutils-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const docutilsorgSHELLiPackage = {
+export const docutilsorgPackage = {
   /**
    * The display name of this package.
    */
@@ -86,14 +81,8 @@ export const docutilsorgSHELLiPackage = {
     '0.20.0',
     '0.19.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+docutils.org -- $SHELL -i',
-  ] as const,
   fullPath: 'docutils.org' as const,
+  aliases: [] as const,
 }
 
-export type DocutilsorgSHELLiPackage = typeof docutilsorgSHELLiPackage
+export type DocutilsorgPackage = typeof docutilsorgPackage

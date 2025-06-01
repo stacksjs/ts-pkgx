@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xplr-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) xplr`
- * @aliases `xplr`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xplr
- * // Or access via domain
- * const samePkg = pantry.xplrdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.xplrdev
  * console.log(pkg.name)        // "xplr"
  * console.log(pkg.description) // "A hackable, minimal, fast TUI file explorer"
  * console.log(pkg.programs)    // ["xplr"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/xplr-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xplrPackage = {
+export const xplrdevPackage = {
   /**
    * The display name of this package.
    */
@@ -67,14 +62,8 @@ export const xplrPackage = {
     '0.21.9',
     '0.21.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xplr',
-  ] as const,
   fullPath: 'xplr.dev' as const,
+  aliases: [] as const,
 }
 
-export type XplrPackage = typeof xplrPackage
+export type XplrdevPackage = typeof xplrdevPackage

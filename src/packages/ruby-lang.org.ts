@@ -1,5 +1,5 @@
 /**
- * **+ruby-lang.org -- $SHELL -i** - Powerful, clean, object-oriented scripting language
+ * **ruby** - Powerful, clean, object-oriented scripting language
  *
  * @domain `ruby-lang.org`
  * @programs `erb`, `irb`, `rake`, `rdoc`, `ri`, ... (+1 more)
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ruby-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +ruby-lang.org -- $SHELL -i`
- * @aliases `+ruby-lang.org -- $SHELL -i`, `ruby`
+ * @aliases `ruby`
  * @dependencies `openssl.org^1.1`, `pyyaml.org^0.2`, `zlib.net^1`
  * @companions `rubygems.org`
  *
@@ -16,7 +16,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.rubylangorgSHELLi
+ * const pkg = pantry.ruby
  * // Or access via domain
  * const samePkg = pantry.rubylangorg
  * console.log(pkg === samePkg) // true
@@ -29,7 +29,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ruby-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rubylangorgSHELLiPackage = {
+export const rubyPackage = {
   /**
    * The display name of this package.
    */
@@ -126,15 +126,14 @@ export const rubylangorgSHELLiPackage = {
     '2.6.10',
     '2.5.9',
   ] as const,
+  fullPath: 'ruby-lang.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
-    '+ruby-lang.org -- $SHELL -i',
     'ruby',
   ] as const,
-  fullPath: 'ruby-lang.org' as const,
 }
 
-export type RubylangorgSHELLiPackage = typeof rubylangorgSHELLiPackage
+export type RubyPackage = typeof rubyPackage

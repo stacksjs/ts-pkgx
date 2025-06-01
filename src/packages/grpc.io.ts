@@ -1,5 +1,5 @@
 /**
- * **+grpc.io -- $SHELL -i** - The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
+ * **grpc** - The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
  *
  * @domain `grpc.io`
  * @programs `grpc_csharp_plugin`, `grpc_node_plugin`, `grpc_cpp_plugin`, `grpc_python_plugin`, `grpc_objective_c_plugin`, ... (+3 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/grpc-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +grpc.io -- $SHELL -i`
- * @aliases `+grpc.io -- $SHELL -i`, `grpc`
  * @dependencies `abseil.io^20250127`, `c-ares.org`, `openssl.org^1.1`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.grpcioSHELLi
- * // Or access via domain
- * const samePkg = pantry.grpcio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.grpcio
  * console.log(pkg.name)        // "grpc"
  * console.log(pkg.description) // "The C based gRPC (C++, Python, Ruby, Objective-..."
  * console.log(pkg.programs)    // ["grpc_csharp_plugin", "grpc_node_plugin", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/grpc-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const grpcioSHELLiPackage = {
+export const grpcioPackage = {
   /**
    * The display name of this package.
    */
@@ -127,15 +122,8 @@ export const grpcioSHELLiPackage = {
     '1.56.3',
     '1.55.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+grpc.io -- $SHELL -i',
-    'grpc',
-  ] as const,
   fullPath: 'grpc.io' as const,
+  aliases: [] as const,
 }
 
-export type GrpcioSHELLiPackage = typeof grpcioSHELLiPackage
+export type GrpcioPackage = typeof grpcioPackage

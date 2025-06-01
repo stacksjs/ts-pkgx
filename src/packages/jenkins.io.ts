@@ -1,5 +1,5 @@
 /**
- * **+jenkins.io -- $SHELL -i** - Extendable open source continuous integration server
+ * **jenkins-lts** - Extendable open source continuous integration server
  *
  * @domain `jenkins.io`
  * @programs `jenkins-lts`, `jenkins-lts-cli`
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jenkins-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i`
- * @aliases `+jenkins.io -- $SHELL -i`, `jenkins-lts`
+ * @aliases `jenkins-lts`
  * @dependencies `openjdk.org<20`
  *
  * @example
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.jenkinsioSHELLi
+ * const pkg = pantry.jenkinslts
  * // Or access via domain
  * const samePkg = pantry.jenkinsio
  * console.log(pkg === samePkg) // true
@@ -28,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jenkins-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jenkinsioSHELLiPackage = {
+export const jenkinsltsPackage = {
   /**
    * The display name of this package.
    */
@@ -90,15 +90,14 @@ export const jenkinsioSHELLiPackage = {
     '2.426.3',
     '2.426.2',
   ] as const,
+  fullPath: 'jenkins.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
-    '+jenkins.io -- $SHELL -i',
     'jenkins-lts',
   ] as const,
-  fullPath: 'jenkins.io' as const,
 }
 
-export type JenkinsioSHELLiPackage = typeof jenkinsioSHELLiPackage
+export type JenkinsltsPackage = typeof jenkinsltsPackage

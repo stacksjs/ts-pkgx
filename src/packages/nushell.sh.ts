@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nushell-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) nu`
- * @aliases `nu`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.nu
- * // Or access via domain
- * const samePkg = pantry.nushellsh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nushellsh
  * console.log(pkg.name)        // "nu"
  * console.log(pkg.description) // "Modern shell for the GitHub era"
  * console.log(pkg.programs)    // ["nu"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nushell-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nuPackage = {
+export const nushellshPackage = {
   /**
    * The display name of this package.
    */
@@ -116,14 +111,8 @@ export const nuPackage = {
     '0.73.0',
     '0.72.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'nu',
-  ] as const,
   fullPath: 'nushell.sh' as const,
+  aliases: [] as const,
 }
 
-export type NuPackage = typeof nuPackage
+export type NushellshPackage = typeof nushellshPackage

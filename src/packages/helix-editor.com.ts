@@ -71,6 +71,7 @@ export const hxPackage = {
     '23.3.0',
     '22.12.0',
   ] as const,
+  fullPath: 'helix-editor.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -78,7 +79,6 @@ export const hxPackage = {
   aliases: [
     'hx',
   ] as const,
-  fullPath: 'helix-editor.com' as const,
 }
 
 export type HxPackage = typeof hxPackage

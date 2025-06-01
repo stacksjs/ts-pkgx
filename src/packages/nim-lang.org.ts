@@ -1,5 +1,5 @@
 /**
- * **+nim-lang.org -- $SHELL -i** - Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).
+ * **nim-lang.org** - Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).
  *
  * @domain `nim-lang.org`
  * @programs `nim`, `nim_dbg`, `testament`, `nimsuggest`, `nimgrep`, ... (+4 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nim-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +nim-lang.org -- $SHELL -i`
- * @aliases `+nim-lang.org -- $SHELL -i`
  * @dependencies `gnu.org/gcc`, `pcre.org`, `openssl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.nimlangorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.nimlangorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nimlangorg
  * console.log(pkg.name)        // "nim-lang.org"
  * console.log(pkg.description) // "Nim is a statically typed compiled systems prog..."
  * console.log(pkg.programs)    // ["nim", "nim_dbg", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nim-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nimlangorgSHELLiPackage = {
+export const nimlangorgPackage = {
   /**
    * The display name of this package.
    */
@@ -95,14 +90,8 @@ export const nimlangorgSHELLiPackage = {
     '1.6.16',
     '1.6.14',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+nim-lang.org -- $SHELL -i',
-  ] as const,
   fullPath: 'nim-lang.org' as const,
+  aliases: [] as const,
 }
 
-export type NimlangorgSHELLiPackage = typeof nimlangorgSHELLiPackage
+export type NimlangorgPackage = typeof nimlangorgPackage

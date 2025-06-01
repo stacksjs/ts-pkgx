@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gleam-run.md
  *
  * @install `sh <(curl https://pkgx.sh) gleam`
- * @aliases `gleam`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gleam
- * // Or access via domain
- * const samePkg = pantry.gleamrun
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gleamrun
  * console.log(pkg.name)        // "gleam"
  * console.log(pkg.description) // "⭐️ A friendly language for building type-safe, ..."
  * console.log(pkg.programs)    // ["gleam"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gleam-run.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gleamPackage = {
+export const gleamrunPackage = {
   /**
    * The display name of this package.
    */
@@ -105,14 +100,8 @@ export const gleamPackage = {
     '0.28.0',
     '0.27.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gleam',
-  ] as const,
   fullPath: 'gleam.run' as const,
+  aliases: [] as const,
 }
 
-export type GleamPackage = typeof gleamPackage
+export type GleamrunPackage = typeof gleamrunPackage

@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/atlasgo-io.md
  *
  * @install `sh <(curl https://pkgx.sh) atlas`
- * @aliases `atlas`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.atlas
- * // Or access via domain
- * const samePkg = pantry.atlasgoio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.atlasgoio
  * console.log(pkg.name)        // "atlas"
  * console.log(pkg.description) // "Manage your database schema as code"
  * console.log(pkg.programs)    // ["atlas"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/atlasgo-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const atlasPackage = {
+export const atlasgoioPackage = {
   /**
    * The display name of this package.
    */
@@ -84,14 +79,8 @@ export const atlasPackage = {
     '0.15.0',
     '0.14.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'atlas',
-  ] as const,
   fullPath: 'atlasgo.io' as const,
+  aliases: [] as const,
 }
 
-export type AtlasPackage = typeof atlasPackage
+export type AtlasgoioPackage = typeof atlasgoioPackage

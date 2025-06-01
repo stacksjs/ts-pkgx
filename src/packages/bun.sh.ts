@@ -1,5 +1,5 @@
 /**
- * **+bun.sh -- $SHELL -i** - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+ * **bun** - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
  *
  * @domain `bun.sh`
  * @programs `bun`, `bunx`
@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bun-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i`
- * @aliases `+bun.sh -- $SHELL -i`, `bun`
+ * @aliases `bun`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.bunshSHELLi
+ * const pkg = pantry.bun
  * // Or access via domain
  * const samePkg = pantry.bunsh
  * console.log(pkg === samePkg) // true
@@ -27,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bun-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bunshSHELLiPackage = {
+export const bunPackage = {
   /**
    * The display name of this package.
    */
@@ -183,15 +183,14 @@ export const bunshSHELLiPackage = {
     '0.5.9',
     '0.5.6',
   ] as const,
+  fullPath: 'bun.sh' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
-    '+bun.sh -- $SHELL -i',
     'bun',
   ] as const,
-  fullPath: 'bun.sh' as const,
 }
 
-export type BunshSHELLiPackage = typeof bunshSHELLiPackage
+export type BunPackage = typeof bunPackage

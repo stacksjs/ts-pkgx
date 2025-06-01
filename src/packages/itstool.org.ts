@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/itstool-org.md
  *
  * @install `sh <(curl https://pkgx.sh) itstool`
- * @aliases `itstool`
  * @dependencies `gnome.org/libxml2`, `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.itstool
- * // Or access via domain
- * const samePkg = pantry.itstoolorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.itstoolorg
  * console.log(pkg.name)        // "itstool"
  * console.log(pkg.description) // "Translate XML with PO files using W3C Internati..."
  * console.log(pkg.programs)    // ["itstool"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/itstool-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const itstoolPackage = {
+export const itstoolorgPackage = {
   /**
    * The display name of this package.
    */
@@ -72,14 +67,8 @@ export const itstoolPackage = {
   versions: [
     '2.0.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'itstool',
-  ] as const,
   fullPath: 'itstool.org' as const,
+  aliases: [] as const,
 }
 
-export type ItstoolPackage = typeof itstoolPackage
+export type ItstoolorgPackage = typeof itstoolorgPackage

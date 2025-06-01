@@ -1,5 +1,5 @@
 /**
- * **+encore.dev -- $SHELL -i** - Open Source Development Platform for building robust type-safe distributed systems with declarative infrastructure
+ * **encore.dev** - Open Source Development Platform for building robust type-safe distributed systems with declarative infrastructure
  *
  * @domain `encore.dev`
  * @programs `encore`, `git-remote-encore`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/encore-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +encore.dev -- $SHELL -i`
- * @aliases `+encore.dev -- $SHELL -i`
  * @dependencies `encore.dev/go^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.encoredevSHELLi
- * // Or access via domain
- * const samePkg = pantry.encoredev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.encoredev
  * console.log(pkg.name)        // "encore.dev"
  * console.log(pkg.description) // "Open Source Development Platform for building r..."
  * console.log(pkg.programs)    // ["encore", "git-remote-encore"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/encore-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const encoredevSHELLiPackage = {
+export const encoredevPackage = {
   /**
    * The display name of this package.
    */
@@ -123,14 +118,8 @@ export const encoredevSHELLiPackage = {
     '1.26.0',
     '1.25.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+encore.dev -- $SHELL -i',
-  ] as const,
   fullPath: 'encore.dev' as const,
+  aliases: [] as const,
 }
 
-export type EncoredevSHELLiPackage = typeof encoredevSHELLiPackage
+export type EncoredevPackage = typeof encoredevPackage

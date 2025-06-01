@@ -71,6 +71,7 @@ export const dogPackage = {
   versions: [
     '0.1.0',
   ] as const,
+  fullPath: 'dns.lookup.dog' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -78,7 +79,6 @@ export const dogPackage = {
   aliases: [
     'dog',
   ] as const,
-  fullPath: 'dns.lookup.dog' as const,
 }
 
 export type DogPackage = typeof dogPackage

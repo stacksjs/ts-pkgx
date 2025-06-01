@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/direnv-net.md
  *
  * @install `sh <(curl https://pkgx.sh) direnv`
- * @aliases `direnv`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.direnv
- * // Or access via domain
- * const samePkg = pantry.direnvnet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.direnvnet
  * console.log(pkg.name)        // "direnv"
  * console.log(pkg.description) // "Load/unload environment variables based on $PWD"
  * console.log(pkg.programs)    // ["direnv"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/direnv-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const direnvPackage = {
+export const direnvnetPackage = {
   /**
    * The display name of this package.
    */
@@ -69,14 +64,8 @@ export const direnvPackage = {
     '2.32.3',
     '2.32.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'direnv',
-  ] as const,
   fullPath: 'direnv.net' as const,
+  aliases: [] as const,
 }
 
-export type DirenvPackage = typeof direnvPackage
+export type DirenvnetPackage = typeof direnvnetPackage

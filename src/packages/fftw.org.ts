@@ -1,5 +1,5 @@
 /**
- * **+fftw.org -- $SHELL -i** - C routines to compute the Discrete Fourier Transform
+ * **fftw** - C routines to compute the Discrete Fourier Transform
  *
  * @domain `fftw.org`
  * @programs `fftw-wisdom`, `fftw-wisdom-to-conf`, `fftwf-wisdom`, `fftwl-wisdom`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fftw-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +fftw.org -- $SHELL -i`
- * @aliases `+fftw.org -- $SHELL -i`, `fftw`
  * @dependencies `open-mpi.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.fftworgSHELLi
- * // Or access via domain
- * const samePkg = pantry.fftworg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fftworg
  * console.log(pkg.name)        // "fftw"
  * console.log(pkg.description) // "C routines to compute the Discrete Fourier Tran..."
  * console.log(pkg.programs)    // ["fftw-wisdom", "fftw-wisdom-to-conf", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fftw-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fftworgSHELLiPackage = {
+export const fftworgPackage = {
   /**
    * The display name of this package.
    */
@@ -74,15 +69,8 @@ export const fftworgSHELLiPackage = {
   versions: [
     '3.3.10',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+fftw.org -- $SHELL -i',
-    'fftw',
-  ] as const,
   fullPath: 'fftw.org' as const,
+  aliases: [] as const,
 }
 
-export type FftworgSHELLiPackage = typeof fftworgSHELLiPackage
+export type FftworgPackage = typeof fftworgPackage

@@ -1,5 +1,5 @@
 /**
- * **xray** - Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
+ * **xray-core** - Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
  *
  * @domain `xtls.github.io`
  * @programs `xray`
@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xtls-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) xray`
- * @aliases `xray`, `xray-core`
+ * @aliases `xray-core`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.xray
+ * const pkg = pantry.xraycore
  * // Or access via domain
  * const samePkg = pantry.xtlsgithubio
  * console.log(pkg === samePkg) // true
@@ -27,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/xtls-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xrayPackage = {
+export const xraycorePackage = {
   /**
    * The display name of this package.
    */
@@ -93,15 +93,14 @@ export const xrayPackage = {
     '1.8.7',
     '1.8.6',
   ] as const,
+  fullPath: 'xtls.github.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
-    'xray',
     'xray-core',
   ] as const,
-  fullPath: 'xtls.github.io' as const,
 }
 
-export type XrayPackage = typeof xrayPackage
+export type XraycorePackage = typeof xraycorePackage

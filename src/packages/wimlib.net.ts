@@ -1,5 +1,5 @@
 /**
- * **+wimlib.net -- $SHELL -i** - Library to create, extract, and modify Windows Imaging files
+ * **wimlib.net** - Library to create, extract, and modify Windows Imaging files
  *
  * @domain `wimlib.net`
  * @programs `mkwinpeimg`, `wimappend`, `wimapply`, `wimapply`, `wimdelete`, ... (+13 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wimlib-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +wimlib.net -- $SHELL -i`
- * @aliases `+wimlib.net -- $SHELL -i`
  * @dependencies `openssl.org^3.1.0`, `gnome.org/libxml2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.wimlibnetSHELLi
- * // Or access via domain
- * const samePkg = pantry.wimlibnet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.wimlibnet
  * console.log(pkg.name)        // "wimlib.net"
  * console.log(pkg.description) // "Library to create, extract, and modify Windows ..."
  * console.log(pkg.programs)    // ["mkwinpeimg", "wimappend", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wimlib-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wimlibnetSHELLiPackage = {
+export const wimlibnetPackage = {
   /**
    * The display name of this package.
    */
@@ -91,14 +86,8 @@ export const wimlibnetSHELLiPackage = {
     '1.14.3',
     '1.14.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+wimlib.net -- $SHELL -i',
-  ] as const,
   fullPath: 'wimlib.net' as const,
+  aliases: [] as const,
 }
 
-export type WimlibnetSHELLiPackage = typeof wimlibnetSHELLiPackage
+export type WimlibnetPackage = typeof wimlibnetPackage

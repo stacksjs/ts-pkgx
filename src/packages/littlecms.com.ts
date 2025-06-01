@@ -1,5 +1,5 @@
 /**
- * **+littlecms.com -- $SHELL -i** - A free, open source, CMM engine. It provides fast transforms between ICC profiles.
+ * **littlecms.com** - A free, open source, CMM engine. It provides fast transforms between ICC profiles.
  *
  * @domain `littlecms.com`
  * @programs `jpgicc`, `linkicc`, `psicc`, `tificc`, `transicc`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/littlecms-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +littlecms.com -- $SHELL -i`
- * @aliases `+littlecms.com -- $SHELL -i`
  * @dependencies `simplesystems.org/libtiff^4`, `libjpeg-turbo.org^2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.littlecmscomSHELLi
- * // Or access via domain
- * const samePkg = pantry.littlecmscom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.littlecmscom
  * console.log(pkg.name)        // "littlecms.com"
  * console.log(pkg.description) // "A free, open source, CMM engine. It provides fa..."
  * console.log(pkg.programs)    // ["jpgicc", "linkicc", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/littlecms-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const littlecmscomSHELLiPackage = {
+export const littlecmscomPackage = {
   /**
    * The display name of this package.
    */
@@ -79,14 +74,8 @@ export const littlecmscomSHELLiPackage = {
     '2.15.0',
     '2.12.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+littlecms.com -- $SHELL -i',
-  ] as const,
   fullPath: 'littlecms.com' as const,
+  aliases: [] as const,
 }
 
-export type LittlecmscomSHELLiPackage = typeof littlecmscomSHELLiPackage
+export type LittlecmscomPackage = typeof littlecmscomPackage

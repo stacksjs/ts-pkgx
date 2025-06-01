@@ -1,5 +1,5 @@
 /**
- * **+valkey.io -- $SHELL -i** - A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
+ * **valkey** - A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
  *
  * @domain `valkey.io`
  * @programs `valkey-server`, `valkey-cli`, `valkey-benchmark`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/valkey-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +valkey.io -- $SHELL -i`
- * @aliases `+valkey.io -- $SHELL -i`, `valkey`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.valkeyioSHELLi
- * // Or access via domain
- * const samePkg = pantry.valkeyio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.valkeyio
  * console.log(pkg.name)        // "valkey"
  * console.log(pkg.description) // "A flexible distributed key-value datastore that..."
  * console.log(pkg.programs)    // ["valkey-server", "valkey-cli", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/valkey-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const valkeyioSHELLiPackage = {
+export const valkeyioPackage = {
   /**
    * The display name of this package.
    */
@@ -83,15 +78,8 @@ export const valkeyioSHELLiPackage = {
     '7.2.6',
     '7.2.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+valkey.io -- $SHELL -i',
-    'valkey',
-  ] as const,
   fullPath: 'valkey.io' as const,
+  aliases: [] as const,
 }
 
-export type ValkeyioSHELLiPackage = typeof valkeyioSHELLiPackage
+export type ValkeyioPackage = typeof valkeyioPackage

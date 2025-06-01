@@ -1,5 +1,5 @@
 /**
- * **+kubectx.dev -- $SHELL -i** - Tool that can switch between kubectl contexts easily and create aliases
+ * **kube** - Tool that can switch between kubectl contexts easily and create aliases
  *
  * @domain `kubectx.dev`
  * @programs `kubectx`, `kubens`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubectx-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +kubectx.dev -- $SHELL -i`
- * @aliases `+kubectx.dev -- $SHELL -i`, `kube`
  * @dependencies `github.com/junegunn/fzf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.kubectxdevSHELLi
- * // Or access via domain
- * const samePkg = pantry.kubectxdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kubectxdev
  * console.log(pkg.name)        // "kube"
  * console.log(pkg.description) // "Tool that can switch between kubectl contexts e..."
  * console.log(pkg.programs)    // ["kubectx", "kubens"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kubectx-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubectxdevSHELLiPackage = {
+export const kubectxdevPackage = {
   /**
    * The display name of this package.
    */
@@ -73,15 +68,8 @@ export const kubectxdevSHELLiPackage = {
     '0.9.5',
     '0.9.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+kubectx.dev -- $SHELL -i',
-    'kube',
-  ] as const,
   fullPath: 'kubectx.dev' as const,
+  aliases: [] as const,
 }
 
-export type KubectxdevSHELLiPackage = typeof kubectxdevSHELLiPackage
+export type KubectxdevPackage = typeof kubectxdevPackage

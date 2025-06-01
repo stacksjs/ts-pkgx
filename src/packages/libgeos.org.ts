@@ -78,6 +78,7 @@ export const geosconfigPackage = {
     '3.9.5',
     '3.8.4',
   ] as const,
+  fullPath: 'libgeos.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -85,7 +86,6 @@ export const geosconfigPackage = {
   aliases: [
     'geos-config',
   ] as const,
-  fullPath: 'libgeos.org' as const,
 }
 
 export type GeosconfigPackage = typeof geosconfigPackage

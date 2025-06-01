@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rust-script-org.md
  *
  * @install `sh <(curl https://pkgx.sh) rust-script`
- * @aliases `rust-script`
  * @companions `rust-lang.org`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.rustscript
- * // Or access via domain
- * const samePkg = pantry.rustscriptorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rustscriptorg
  * console.log(pkg.name)        // "rust-script"
  * console.log(pkg.description) // "Run Rust files and expressions as scripts witho..."
  * console.log(pkg.programs)    // ["rust-script"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rust-script-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rustscriptPackage = {
+export const rustscriptorgPackage = {
   /**
    * The display name of this package.
    */
@@ -73,14 +68,8 @@ export const rustscriptPackage = {
     '0.35.0',
     '0.34.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'rust-script',
-  ] as const,
   fullPath: 'rust-script.org' as const,
+  aliases: [] as const,
 }
 
-export type RustscriptPackage = typeof rustscriptPackage
+export type RustscriptorgPackage = typeof rustscriptorgPackage

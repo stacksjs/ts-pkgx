@@ -1,22 +1,17 @@
 /**
- * **+zeromq.org -- $SHELL -i** - ZeroMQ core engine in C++, implements ZMTP/3.1
+ * **zeromq.org** - ZeroMQ core engine in C++, implements ZMTP/3.1
  *
  * @domain `zeromq.org`
  * @version `4.3.5` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zeromq-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +zeromq.org -- $SHELL -i`
- * @aliases `+zeromq.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.zeromqorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.zeromqorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.zeromqorg
  * console.log(pkg.name)        // "zeromq.org"
  * console.log(pkg.description) // "ZeroMQ core engine in C++, implements ZMTP/3.1"
  * console.log(pkg.versions[0]) // "4.3.5" (latest)
@@ -25,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/zeromq-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zeromqorgSHELLiPackage = {
+export const zeromqorgPackage = {
   /**
    * The display name of this package.
    */
@@ -57,14 +52,8 @@ export const zeromqorgSHELLiPackage = {
     '4.3.5',
     '4.3.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+zeromq.org -- $SHELL -i',
-  ] as const,
   fullPath: 'zeromq.org' as const,
+  aliases: [] as const,
 }
 
-export type ZeromqorgSHELLiPackage = typeof zeromqorgSHELLiPackage
+export type ZeromqorgPackage = typeof zeromqorgPackage

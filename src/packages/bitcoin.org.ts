@@ -1,5 +1,5 @@
 /**
- * **+bitcoin.org -- $SHELL -i** - Decentralized, peer to peer payment network
+ * **bitcoin** - Decentralized, peer to peer payment network
  *
  * @domain `bitcoin.org`
  * @programs `bitcoin-cli`, `bitcoin-tx`, `bitcoin-util`, `bitcoin-wallet`, `bitcoind`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bitcoin-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i`
- * @aliases `+bitcoin.org -- $SHELL -i`, `bitcoin`
  * @dependencies `oracle.com/berkeley-db^18`, `boost.org^1`, `libevent.org^2`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.bitcoinorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.bitcoinorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.bitcoinorg
  * console.log(pkg.name)        // "bitcoin"
  * console.log(pkg.description) // "Decentralized, peer to peer payment network"
  * console.log(pkg.programs)    // ["bitcoin-cli", "bitcoin-tx", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bitcoin-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bitcoinorgSHELLiPackage = {
+export const bitcoinorgPackage = {
   /**
    * The display name of this package.
    */
@@ -96,15 +91,8 @@ export const bitcoinorgSHELLiPackage = {
     '24.0.1',
     '23.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+bitcoin.org -- $SHELL -i',
-    'bitcoin',
-  ] as const,
   fullPath: 'bitcoin.org' as const,
+  aliases: [] as const,
 }
 
-export type BitcoinorgSHELLiPackage = typeof bitcoinorgSHELLiPackage
+export type BitcoinorgPackage = typeof bitcoinorgPackage

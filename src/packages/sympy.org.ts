@@ -1,23 +1,18 @@
 /**
- * **+sympy.org -- $SHELL -i** - A computer algebra system written in pure Python
+ * **sympy.org** - A computer algebra system written in pure Python
  *
  * @domain `sympy.org`
  * @version `1.14.0` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sympy-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +sympy.org -- $SHELL -i`
- * @aliases `+sympy.org -- $SHELL -i`
  * @dependencies `python.org>=3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.sympyorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.sympyorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sympyorg
  * console.log(pkg.name)        // "sympy.org"
  * console.log(pkg.description) // "A computer algebra system written in pure Python"
  * console.log(pkg.versions[0]) // "1.14.0" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sympy-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sympyorgSHELLiPackage = {
+export const sympyorgPackage = {
   /**
    * The display name of this package.
    */
@@ -69,14 +64,8 @@ export const sympyorgSHELLiPackage = {
     '1.12.1',
     '1.12.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+sympy.org -- $SHELL -i',
-  ] as const,
   fullPath: 'sympy.org' as const,
+  aliases: [] as const,
 }
 
-export type SympyorgSHELLiPackage = typeof sympyorgSHELLiPackage
+export type SympyorgPackage = typeof sympyorgPackage

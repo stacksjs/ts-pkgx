@@ -1,23 +1,18 @@
 /**
- * **+attrs.org -- $SHELL -i** - Python Classes Without Boilerplate
+ * **attrs.org** - Python Classes Without Boilerplate
  *
  * @domain `attrs.org`
  * @version `25.3.0` (7 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/attrs-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +attrs.org -- $SHELL -i`
- * @aliases `+attrs.org -- $SHELL -i`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.attrsorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.attrsorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.attrsorg
  * console.log(pkg.name)        // "attrs.org"
  * console.log(pkg.description) // "Python Classes Without Boilerplate"
  * console.log(pkg.versions[0]) // "25.3.0" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/attrs-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const attrsorgSHELLiPackage = {
+export const attrsorgPackage = {
   /**
    * The display name of this package.
    */
@@ -69,14 +64,8 @@ export const attrsorgSHELLiPackage = {
     '24.1.0',
     '23.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+attrs.org -- $SHELL -i',
-  ] as const,
   fullPath: 'attrs.org' as const,
+  aliases: [] as const,
 }
 
-export type AttrsorgSHELLiPackage = typeof attrsorgSHELLiPackage
+export type AttrsorgPackage = typeof attrsorgPackage

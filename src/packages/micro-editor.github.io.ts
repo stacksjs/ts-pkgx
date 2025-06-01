@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/micro-editor-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) micro`
- * @aliases `micro`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.micro
- * // Or access via domain
- * const samePkg = pantry.microeditorgithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.microeditorgithubio
  * console.log(pkg.name)        // "micro"
  * console.log(pkg.description) // "A modern and intuitive terminal-based text editor"
  * console.log(pkg.programs)    // ["micro"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/micro-editor-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const microPackage = {
+export const microeditorgithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -67,14 +62,8 @@ export const microPackage = {
     '2.0.12',
     '2.0.11',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'micro',
-  ] as const,
   fullPath: 'micro-editor.github.io' as const,
+  aliases: [] as const,
 }
 
-export type MicroPackage = typeof microPackage
+export type MicroeditorgithubioPackage = typeof microeditorgithubioPackage

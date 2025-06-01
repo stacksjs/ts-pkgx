@@ -82,6 +82,7 @@ export const xkbcliPackage = {
     '1.6.0',
     '1.5.0',
   ] as const,
+  fullPath: 'xkbcommon.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -89,7 +90,6 @@ export const xkbcliPackage = {
   aliases: [
     'xkbcli',
   ] as const,
-  fullPath: 'xkbcommon.org' as const,
 }
 
 export type XkbcliPackage = typeof xkbcliPackage

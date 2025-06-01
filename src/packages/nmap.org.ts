@@ -1,5 +1,5 @@
 /**
- * **+nmap.org -- $SHELL -i** - Port scanning utility for large networks
+ * **nmap.org** - Port scanning utility for large networks
  *
  * @domain `nmap.org`
  * @programs `nmap`, `ncat`, `nping`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nmap-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +nmap.org -- $SHELL -i`
- * @aliases `+nmap.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `pcre.org/v2^10`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.nmaporgSHELLi
- * // Or access via domain
- * const samePkg = pantry.nmaporg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nmaporg
  * console.log(pkg.name)        // "nmap.org"
  * console.log(pkg.description) // "Port scanning utility for large networks"
  * console.log(pkg.programs)    // ["nmap", "ncat", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nmap-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nmaporgSHELLiPackage = {
+export const nmaporgPackage = {
   /**
    * The display name of this package.
    */
@@ -78,14 +73,8 @@ export const nmaporgSHELLiPackage = {
     '7.94.0',
     '7.93.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+nmap.org -- $SHELL -i',
-  ] as const,
   fullPath: 'nmap.org' as const,
+  aliases: [] as const,
 }
 
-export type NmaporgSHELLiPackage = typeof nmaporgSHELLiPackage
+export type NmaporgPackage = typeof nmaporgPackage

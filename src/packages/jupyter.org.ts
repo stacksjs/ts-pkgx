@@ -1,5 +1,5 @@
 /**
- * **+jupyter.org -- $SHELL -i** - JupyterLab computational environment.
+ * **jupyter.org** - JupyterLab computational environment.
  *
  * @domain `jupyter.org`
  * @programs `jlpm`, `jupyter`, `jupyter-bundlerextension`, `jupyter-dejavu`, `jupyter-events`, ... (+19 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jupyter-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +jupyter.org -- $SHELL -i`
- * @aliases `+jupyter.org -- $SHELL -i`
  * @dependencies `python.org>=3.7<3.12`, `gnu.org/which@2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jupyterorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.jupyterorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jupyterorg
  * console.log(pkg.name)        // "jupyter.org"
  * console.log(pkg.description) // "JupyterLab computational environment."
  * console.log(pkg.programs)    // ["jlpm", "jupyter", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jupyter-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jupyterorgSHELLiPackage = {
+export const jupyterorgPackage = {
   /**
    * The display name of this package.
    */
@@ -143,14 +138,8 @@ export const jupyterorgSHELLiPackage = {
     '3.6.4',
     '3.6.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+jupyter.org -- $SHELL -i',
-  ] as const,
   fullPath: 'jupyter.org' as const,
+  aliases: [] as const,
 }
 
-export type JupyterorgSHELLiPackage = typeof jupyterorgSHELLiPackage
+export type JupyterorgPackage = typeof jupyterorgPackage

@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xcfile-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) xc`
- * @aliases `xc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xc
- * // Or access via domain
- * const samePkg = pantry.xcfiledev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.xcfiledev
  * console.log(pkg.name)        // "xc"
  * console.log(pkg.description) // "Markdown defined task runner."
  * console.log(pkg.programs)    // ["xc"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/xcfile-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xcPackage = {
+export const xcfiledevPackage = {
   /**
    * The display name of this package.
    */
@@ -90,14 +85,8 @@ export const xcPackage = {
     '0.0.111',
     '0.0.110',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xc',
-  ] as const,
   fullPath: 'xcfile.dev' as const,
+  aliases: [] as const,
 }
 
-export type XcPackage = typeof xcPackage
+export type XcfiledevPackage = typeof xcfiledevPackage

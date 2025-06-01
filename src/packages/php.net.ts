@@ -1,5 +1,5 @@
 /**
- * **+php.net -- $SHELL -i** - General-purpose scripting language
+ * **php** - General-purpose scripting language
  *
  * @domain `php.net`
  * @programs `pear`, `pecl`, `phar`, `php`, `php-cgi`, ... (+3 more)
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/php-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +php.net -- $SHELL -i`
- * @aliases `+php.net -- $SHELL -i`, `php`
+ * @aliases `php`
  * @dependencies `gnu.org/bison^3`, `re2c.org^3`, `apache.org/apr^1`, ... (+28 more)
  *
  * @example
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.phpnetSHELLi
+ * const pkg = pantry.php
  * // Or access via domain
  * const samePkg = pantry.phpnet
  * console.log(pkg === samePkg) // true
@@ -28,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/php-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const phpnetSHELLiPackage = {
+export const phpPackage = {
   /**
    * The display name of this package.
    */
@@ -178,15 +178,14 @@ export const phpnetSHELLiPackage = {
     '8.0.28',
     '7.4.33',
   ] as const,
+  fullPath: 'php.net' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
-    '+php.net -- $SHELL -i',
     'php',
   ] as const,
-  fullPath: 'php.net' as const,
 }
 
-export type PhpnetSHELLiPackage = typeof phpnetSHELLiPackage
+export type PhpPackage = typeof phpPackage

@@ -67,6 +67,7 @@ export const kubelinterPackage = {
     '0.7.0',
     '0.6.8',
   ] as const,
+  fullPath: 'kubelinter.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -74,7 +75,6 @@ export const kubelinterPackage = {
   aliases: [
     'kube-linter',
   ] as const,
-  fullPath: 'kubelinter.io' as const,
 }
 
 export type KubelinterPackage = typeof kubelinterPackage

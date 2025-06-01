@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/maturin-rs.md
  *
  * @install `sh <(curl https://pkgx.sh) maturin`
- * @aliases `maturin`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.maturin
- * // Or access via domain
- * const samePkg = pantry.maturinrs
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.maturinrs
  * console.log(pkg.name)        // "maturin"
  * console.log(pkg.description) // "Build and publish crates with pyo3, cffi and un..."
  * console.log(pkg.programs)    // ["maturin"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/maturin-rs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const maturinPackage = {
+export const maturinrsPackage = {
   /**
    * The display name of this package.
    */
@@ -82,14 +77,8 @@ export const maturinPackage = {
     '1.5.0',
     '1.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'maturin',
-  ] as const,
   fullPath: 'maturin.rs' as const,
+  aliases: [] as const,
 }
 
-export type MaturinPackage = typeof maturinPackage
+export type MaturinrsPackage = typeof maturinrsPackage

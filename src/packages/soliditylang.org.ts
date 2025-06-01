@@ -1,5 +1,5 @@
 /**
- * **+soliditylang.org -- $SHELL -i** - Solidity, the Smart Contract Programming Language
+ * **soliditylang.org** - Solidity, the Smart Contract Programming Language
  *
  * @domain `soliditylang.org`
  * @programs `solc`, `yul-phaser`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/soliditylang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +soliditylang.org -- $SHELL -i`
- * @aliases `+soliditylang.org -- $SHELL -i`
  * @dependencies `boost.org~1.84`, `linuxgnu.org/gcc/libstdcxx@14`, `gnu.org/gcc/libstdcxx@14`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.soliditylangorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.soliditylangorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.soliditylangorg
  * console.log(pkg.name)        // "soliditylang.org"
  * console.log(pkg.description) // "Solidity, the Smart Contract Programming Language"
  * console.log(pkg.programs)    // ["solc", "yul-phaser"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/soliditylang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const soliditylangorgSHELLiPackage = {
+export const soliditylangorgPackage = {
   /**
    * The display name of this package.
    */
@@ -87,14 +82,8 @@ export const soliditylangorgSHELLiPackage = {
     '0.8.18',
     '0.8.17',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+soliditylang.org -- $SHELL -i',
-  ] as const,
   fullPath: 'soliditylang.org' as const,
+  aliases: [] as const,
 }
 
-export type SoliditylangorgSHELLiPackage = typeof soliditylangorgSHELLiPackage
+export type SoliditylangorgPackage = typeof soliditylangorgPackage

@@ -1,5 +1,5 @@
 /**
- * **+ipython.org -- $SHELL -i** - Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.
+ * **ipython** - Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.
  *
  * @domain `ipython.org`
  * @programs `ipython`, `ipython3`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ipython-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i`
- * @aliases `+ipython.org -- $SHELL -i`, `ipython`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.ipythonorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.ipythonorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ipythonorg
  * console.log(pkg.name)        // "ipython"
  * console.log(pkg.description) // "Official repository for IPython itself. Other r..."
  * console.log(pkg.programs)    // ["ipython", "ipython3"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ipython-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ipythonorgSHELLiPackage = {
+export const ipythonorgPackage = {
   /**
    * The display name of this package.
    */
@@ -115,15 +110,8 @@ export const ipythonorgSHELLiPackage = {
     '8.12.1',
     '8.12.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+ipython.org -- $SHELL -i',
-    'ipython',
-  ] as const,
   fullPath: 'ipython.org' as const,
+  aliases: [] as const,
 }
 
-export type IpythonorgSHELLiPackage = typeof ipythonorgSHELLiPackage
+export type IpythonorgPackage = typeof ipythonorgPackage

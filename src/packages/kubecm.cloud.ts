@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubecm-cloud.md
  *
  * @install `sh <(curl https://pkgx.sh) kubecm`
- * @aliases `kubecm`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.kubecm
- * // Or access via domain
- * const samePkg = pantry.kubecmcloud
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kubecmcloud
  * console.log(pkg.name)        // "kubecm"
  * console.log(pkg.description) // "Manage your kubeconfig more easily."
  * console.log(pkg.programs)    // ["kubecm"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kubecm-cloud.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubecmPackage = {
+export const kubecmcloudPackage = {
   /**
    * The display name of this package.
    */
@@ -73,14 +68,8 @@ export const kubecmPackage = {
     '0.29.0',
     '0.28.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'kubecm',
-  ] as const,
   fullPath: 'kubecm.cloud' as const,
+  aliases: [] as const,
 }
 
-export type KubecmPackage = typeof kubecmPackage
+export type KubecmcloudPackage = typeof kubecmcloudPackage

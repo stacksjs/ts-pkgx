@@ -3,31 +3,26 @@
  *
  * @domain `digger.dev`
  * @programs `digger`
- * @version `0.6.104` (188 versions available)
+ * @version `0.6.103` (187 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/digger-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) digger`
- * @aliases `digger`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.digger
- * // Or access via domain
- * const samePkg = pantry.diggerdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.diggerdev
  * console.log(pkg.name)        // "digger"
  * console.log(pkg.description) // "Digger is an open source IaC orchestration tool..."
  * console.log(pkg.programs)    // ["digger"]
- * console.log(pkg.versions[0]) // "0.6.104" (latest)
+ * console.log(pkg.versions[0]) // "0.6.103" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/digger-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const diggerPackage = {
+export const diggerdevPackage = {
   /**
    * The display name of this package.
    */
@@ -62,7 +57,6 @@ export const diggerPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
-    '0.6.104',
     '0.6.103',
     '0.6.102',
     '0.6.101',
@@ -251,14 +245,8 @@ export const diggerPackage = {
     '0.1.32',
     '0.1.31',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'digger',
-  ] as const,
   fullPath: 'digger.dev' as const,
+  aliases: [] as const,
 }
 
-export type DiggerPackage = typeof diggerPackage
+export type DiggerdevPackage = typeof diggerdevPackage

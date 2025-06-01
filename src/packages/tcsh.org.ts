@@ -1,5 +1,5 @@
 /**
- * **+tcsh.org -- $SHELL -i** - Enhanced, fully compatible version of the Berkeley C shell
+ * **tcsh.org** - Enhanced, fully compatible version of the Berkeley C shell
  *
  * @domain `tcsh.org`
  * @programs `csh`, `tcsh`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tcsh-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +tcsh.org -- $SHELL -i`
- * @aliases `+tcsh.org -- $SHELL -i`
  * @dependencies `github.com/besser82/libxcrypt@4`, `invisible-island.net/ncurses@6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.tcshorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.tcshorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tcshorg
  * console.log(pkg.name)        // "tcsh.org"
  * console.log(pkg.description) // "Enhanced, fully compatible version of the Berke..."
  * console.log(pkg.programs)    // ["csh", "tcsh"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tcsh-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tcshorgSHELLiPackage = {
+export const tcshorgPackage = {
   /**
    * The display name of this package.
    */
@@ -73,14 +68,8 @@ export const tcshorgSHELLiPackage = {
   versions: [
     '6.24.15',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+tcsh.org -- $SHELL -i',
-  ] as const,
   fullPath: 'tcsh.org' as const,
+  aliases: [] as const,
 }
 
-export type TcshorgSHELLiPackage = typeof tcshorgSHELLiPackage
+export type TcshorgPackage = typeof tcshorgPackage

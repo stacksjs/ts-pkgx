@@ -1,5 +1,5 @@
 /**
- * **+yarnpkg.com -- $SHELL -i** - 📦🐈 Active development trunk for Yarn ⚒
+ * **yarn** - 📦🐈 Active development trunk for Yarn ⚒
  *
  * @domain `yarnpkg.com`
  * @programs `yarn`, `yarnpkg`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/yarnpkg-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i`
- * @aliases `+yarnpkg.com -- $SHELL -i`, `yarn`
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.yarnpkgcomSHELLi
- * // Or access via domain
- * const samePkg = pantry.yarnpkgcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.yarnpkgcom
  * console.log(pkg.name)        // "yarn"
  * console.log(pkg.description) // "📦🐈 Active development trunk for Yarn ⚒"
  * console.log(pkg.programs)    // ["yarn", "yarnpkg"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/yarnpkg-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const yarnpkgcomSHELLiPackage = {
+export const yarnpkgcomPackage = {
   /**
    * The display name of this package.
    */
@@ -110,15 +105,8 @@ export const yarnpkgcomSHELLiPackage = {
     '3.5.0',
     '3.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+yarnpkg.com -- $SHELL -i',
-    'yarn',
-  ] as const,
   fullPath: 'yarnpkg.com' as const,
+  aliases: [] as const,
 }
 
-export type YarnpkgcomSHELLiPackage = typeof yarnpkgcomSHELLiPackage
+export type YarnpkgcomPackage = typeof yarnpkgcomPackage

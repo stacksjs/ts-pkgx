@@ -81,6 +81,7 @@ export const vspipePackage = {
     '65.0.0',
     '64.0.0',
   ] as const,
+  fullPath: 'vapoursynth.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -88,7 +89,6 @@ export const vspipePackage = {
   aliases: [
     'vspipe',
   ] as const,
-  fullPath: 'vapoursynth.com' as const,
 }
 
 export type VspipePackage = typeof vspipePackage

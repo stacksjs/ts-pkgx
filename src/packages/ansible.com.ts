@@ -1,5 +1,5 @@
 /**
- * **+ansible.com -- $SHELL -i** - Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
+ * **ansible** - Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
  *
  * @domain `ansible.com`
  * @programs `ansible`, `ansible-config`, `ansible-connection`, `ansible-console`, `ansible-doc`, ... (+6 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ansible-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i`
- * @aliases `+ansible.com -- $SHELL -i`, `ansible`
  * @dependencies `pkgx.sh@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.ansiblecomSHELLi
- * // Or access via domain
- * const samePkg = pantry.ansiblecom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ansiblecom
  * console.log(pkg.name)        // "ansible"
  * console.log(pkg.description) // "Ansible is a radically simple IT automation pla..."
  * console.log(pkg.programs)    // ["ansible", "ansible-config", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ansible-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ansiblecomSHELLiPackage = {
+export const ansiblecomPackage = {
   /**
    * The display name of this package.
    */
@@ -149,15 +144,8 @@ export const ansiblecomSHELLiPackage = {
     '2.13.10',
     '2.13.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+ansible.com -- $SHELL -i',
-    'ansible',
-  ] as const,
   fullPath: 'ansible.com' as const,
+  aliases: [] as const,
 }
 
-export type AnsiblecomSHELLiPackage = typeof ansiblecomSHELLiPackage
+export type AnsiblecomPackage = typeof ansiblecomPackage

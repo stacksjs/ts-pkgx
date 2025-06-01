@@ -64,6 +64,7 @@ export const minioPackage = {
   versions: [
     '2023.10.25.6.33.25',
   ] as const,
+  fullPath: 'min.io' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -71,7 +72,6 @@ export const minioPackage = {
   aliases: [
     'minio',
   ] as const,
-  fullPath: 'min.io' as const,
 }
 
 export type MinioPackage = typeof minioPackage

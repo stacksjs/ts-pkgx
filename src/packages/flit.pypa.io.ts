@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/flit-pypa-io.md
  *
  * @install `sh <(curl https://pkgx.sh) flit`
- * @aliases `flit`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.flit
- * // Or access via domain
- * const samePkg = pantry.flitpypaio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.flitpypaio
  * console.log(pkg.name)        // "flit"
  * console.log(pkg.description) // "Simplified packaging of Python modules"
  * console.log(pkg.programs)    // ["flit"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/flit-pypa-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const flitPackage = {
+export const flitpypaioPackage = {
   /**
    * The display name of this package.
    */
@@ -76,14 +71,8 @@ export const flitPackage = {
     '3.9.0',
     '3.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'flit',
-  ] as const,
   fullPath: 'flit.pypa.io' as const,
+  aliases: [] as const,
 }
 
-export type FlitPackage = typeof flitPackage
+export type FlitpypaioPackage = typeof flitpypaioPackage

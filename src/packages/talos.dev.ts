@@ -90,6 +90,7 @@ export const talosctlPackage = {
     '1.6.7',
     '1.6.6',
   ] as const,
+  fullPath: 'talos.dev' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -97,7 +98,6 @@ export const talosctlPackage = {
   aliases: [
     'talosctl',
   ] as const,
-  fullPath: 'talos.dev' as const,
 }
 
 export type TalosctlPackage = typeof talosctlPackage

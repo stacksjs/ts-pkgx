@@ -1,5 +1,5 @@
 /**
- * **+pcre.org -- $SHELL -i** - Perl compatible regular expressions library
+ * **pcre** - Perl compatible regular expressions library
  *
  * @domain `pcre.org`
  * @programs `pcre-config`, `pcregrep`, `pcretest`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pcre-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +pcre.org -- $SHELL -i`
- * @aliases `+pcre.org -- $SHELL -i`, `pcre`
  * @dependencies `sourceware.org/bzip2@1`, `zlib.net@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pcreorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.pcreorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pcreorg
  * console.log(pkg.name)        // "pcre"
  * console.log(pkg.description) // "Perl compatible regular expressions library"
  * console.log(pkg.programs)    // ["pcre-config", "pcregrep", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pcre-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pcreorgSHELLiPackage = {
+export const pcreorgPackage = {
   /**
    * The display name of this package.
    */
@@ -74,15 +69,8 @@ export const pcreorgSHELLiPackage = {
   versions: [
     '8.45.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+pcre.org -- $SHELL -i',
-    'pcre',
-  ] as const,
   fullPath: 'pcre.org' as const,
+  aliases: [] as const,
 }
 
-export type PcreorgSHELLiPackage = typeof pcreorgSHELLiPackage
+export type PcreorgPackage = typeof pcreorgPackage

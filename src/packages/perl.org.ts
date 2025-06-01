@@ -1,5 +1,5 @@
 /**
- * **+perl.org -- $SHELL -i** - Highly capable, feature-rich programming language
+ * **perl** - Highly capable, feature-rich programming language
  *
  * @domain `perl.org`
  * @programs `corelist`, `cpan`, `enc2xs`, `encguess`, `h2ph`, ... (+25 more)
@@ -7,14 +7,14 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/perl-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +perl.org -- $SHELL -i`
- * @aliases `+perl.org -- $SHELL -i`, `perl`
+ * @aliases `perl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.perlorgSHELLi
+ * const pkg = pantry.perl
  * // Or access via domain
  * const samePkg = pantry.perlorg
  * console.log(pkg === samePkg) // true
@@ -27,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/perl-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const perlorgSHELLiPackage = {
+export const perlPackage = {
   /**
    * The display name of this package.
    */
@@ -106,15 +106,14 @@ export const perlorgSHELLiPackage = {
     '5.34.3',
     '5.34.2',
   ] as const,
+  fullPath: 'perl.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
-    '+perl.org -- $SHELL -i',
     'perl',
   ] as const,
-  fullPath: 'perl.org' as const,
 }
 
-export type PerlorgSHELLiPackage = typeof perlorgSHELLiPackage
+export type PerlPackage = typeof perlPackage

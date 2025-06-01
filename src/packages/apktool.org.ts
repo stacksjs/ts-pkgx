@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/apktool-org.md
  *
  * @install `sh <(curl https://pkgx.sh) apktool`
- * @aliases `apktool`
  * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.apktool
- * // Or access via domain
- * const samePkg = pantry.apktoolorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.apktoolorg
  * console.log(pkg.name)        // "apktool"
  * console.log(pkg.description) // "Tool for reverse engineering 3rd party, closed,..."
  * console.log(pkg.programs)    // ["apktool"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/apktool-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const apktoolPackage = {
+export const apktoolorgPackage = {
   /**
    * The display name of this package.
    */
@@ -74,14 +69,8 @@ export const apktoolPackage = {
     '2.10.0',
     '2.9.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'apktool',
-  ] as const,
   fullPath: 'apktool.org' as const,
+  aliases: [] as const,
 }
 
-export type ApktoolPackage = typeof apktoolPackage
+export type ApktoolorgPackage = typeof apktoolorgPackage

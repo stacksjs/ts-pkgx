@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cask-readthedocs-io.md
  *
  * @install `sh <(curl https://pkgx.sh) cask`
- * @aliases `cask`
  * @dependencies `gnu.org/coreutils`, `gnu.org/emacs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.cask
- * // Or access via domain
- * const samePkg = pantry.caskreadthedocsio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.caskreadthedocsio
  * console.log(pkg.name)        // "cask"
  * console.log(pkg.description) // "Project management tool for Emacs"
  * console.log(pkg.programs)    // ["cask"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cask-readthedocs-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const caskPackage = {
+export const caskreadthedocsioPackage = {
   /**
    * The display name of this package.
    */
@@ -72,14 +67,8 @@ export const caskPackage = {
   versions: [
     '0.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'cask',
-  ] as const,
   fullPath: 'cask.readthedocs.io' as const,
+  aliases: [] as const,
 }
 
-export type CaskPackage = typeof caskPackage
+export type CaskreadthedocsioPackage = typeof caskreadthedocsioPackage

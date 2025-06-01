@@ -95,6 +95,7 @@ export const f2pyPackage = {
     '1.26.3',
     '1.26.2',
   ] as const,
+  fullPath: 'numpy.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -102,7 +103,6 @@ export const f2pyPackage = {
   aliases: [
     'f2py',
   ] as const,
-  fullPath: 'numpy.org' as const,
 }
 
 export type F2pyPackage = typeof f2pyPackage

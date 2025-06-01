@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sqlfluff-com.md
  *
  * @install `sh <(curl https://pkgx.sh) sqlfluff`
- * @aliases `sqlfluff`
  * @dependencies `python.org>=3.7<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.sqlfluff
- * // Or access via domain
- * const samePkg = pantry.sqlfluffcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sqlfluffcom
  * console.log(pkg.name)        // "sqlfluff"
  * console.log(pkg.description) // "A modular SQL linter and auto-formatter with su..."
  * console.log(pkg.programs)    // ["sqlfluff"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sqlfluff-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sqlfluffPackage = {
+export const sqlfluffcomPackage = {
   /**
    * The display name of this package.
    */
@@ -93,14 +88,8 @@ export const sqlfluffPackage = {
     '2.3.3',
     '2.3.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'sqlfluff',
-  ] as const,
   fullPath: 'sqlfluff.com' as const,
+  aliases: [] as const,
 }
 
-export type SqlfluffPackage = typeof sqlfluffPackage
+export type SqlfluffcomPackage = typeof sqlfluffcomPackage

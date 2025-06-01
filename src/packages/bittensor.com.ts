@@ -1,23 +1,18 @@
 /**
- * **+bittensor.com -- $SHELL -i** - Internet-scale Neural Networks
+ * **Bittensor** - Internet-scale Neural Networks
  *
  * @domain `bittensor.com`
  * @version `9.7.0` (63 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bittensor-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i`
- * @aliases `+bittensor.com -- $SHELL -i`, `Bittensor`
  * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.bittensorcomSHELLi
- * // Or access via domain
- * const samePkg = pantry.bittensorcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.bittensorcom
  * console.log(pkg.name)        // "Bittensor"
  * console.log(pkg.description) // "Internet-scale Neural Networks"
  * console.log(pkg.versions[0]) // "9.7.0" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bittensor-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bittensorcomSHELLiPackage = {
+export const bittensorcomPackage = {
   /**
    * The display name of this package.
    */
@@ -126,15 +121,8 @@ export const bittensorcomSHELLiPackage = {
     '6.7.0',
     '6.5.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+bittensor.com -- $SHELL -i',
-    'Bittensor',
-  ] as const,
   fullPath: 'bittensor.com' as const,
+  aliases: [] as const,
 }
 
-export type BittensorcomSHELLiPackage = typeof bittensorcomSHELLiPackage
+export type BittensorcomPackage = typeof bittensorcomPackage

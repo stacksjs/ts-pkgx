@@ -1,5 +1,5 @@
 /**
- * **+mercurial-scm.org -- $SHELL -i** - Scalable distributed version control system
+ * **mercurial-scm.org** - Scalable distributed version control system
  *
  * @domain `mercurial-scm.org`
  * @programs `hg`, `chg`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mercurial-scm-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +mercurial-scm.org -- $SHELL -i`
- * @aliases `+mercurial-scm.org -- $SHELL -i`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mercurialscmorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.mercurialscmorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mercurialscmorg
  * console.log(pkg.name)        // "mercurial-scm.org"
  * console.log(pkg.description) // "Scalable distributed version control system"
  * console.log(pkg.programs)    // ["hg", "chg"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mercurial-scm-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mercurialscmorgSHELLiPackage = {
+export const mercurialscmorgPackage = {
   /**
    * The display name of this package.
    */
@@ -95,14 +90,8 @@ export const mercurialscmorgSHELLiPackage = {
     '6.5.2',
     '6.5.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+mercurial-scm.org -- $SHELL -i',
-  ] as const,
   fullPath: 'mercurial-scm.org' as const,
+  aliases: [] as const,
 }
 
-export type MercurialscmorgSHELLiPackage = typeof mercurialscmorgSHELLiPackage
+export type MercurialscmorgPackage = typeof mercurialscmorgPackage

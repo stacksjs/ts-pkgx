@@ -7,7 +7,6 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bytebase-com.md
  *
  * @install `sh <(curl https://pkgx.sh) bytebase`
- * @aliases `bytebase`
  * @dependencies `nodejs.org>=23.11`
  * @companions `postgresql.org`
  *
@@ -15,11 +14,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.bytebase
- * // Or access via domain
- * const samePkg = pantry.bytebasecom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.bytebasecom
  * console.log(pkg.name)        // "bytebase"
  * console.log(pkg.description) // "World's most advanced database DevSecOps soluti..."
  * console.log(pkg.programs)    // ["bytebase"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bytebase-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bytebasePackage = {
+export const bytebasecomPackage = {
   /**
    * The display name of this package.
    */
@@ -107,14 +102,8 @@ export const bytebasePackage = {
     '2.15.0',
     '2.14.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'bytebase',
-  ] as const,
   fullPath: 'bytebase.com' as const,
+  aliases: [] as const,
 }
 
-export type BytebasePackage = typeof bytebasePackage
+export type BytebasecomPackage = typeof bytebasecomPackage

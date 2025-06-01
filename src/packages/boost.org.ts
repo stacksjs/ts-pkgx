@@ -1,23 +1,18 @@
 /**
- * **+boost.org -- $SHELL -i** - Super-project for modularized Boost
+ * **boost.org** - Super-project for modularized Boost
  *
  * @domain `boost.org`
  * @version `1.88.0` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/boost-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +boost.org -- $SHELL -i`
- * @aliases `+boost.org -- $SHELL -i`
  * @dependencies `facebook.com/zstd^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.boostorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.boostorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.boostorg
  * console.log(pkg.name)        // "boost.org"
  * console.log(pkg.description) // "Super-project for modularized Boost"
  * console.log(pkg.versions[0]) // "1.88.0" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/boost-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const boostorgSHELLiPackage = {
+export const boostorgPackage = {
   /**
    * The display name of this package.
    */
@@ -70,14 +65,8 @@ export const boostorgSHELLiPackage = {
     '1.82.0',
     '1.81.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+boost.org -- $SHELL -i',
-  ] as const,
   fullPath: 'boost.org' as const,
+  aliases: [] as const,
 }
 
-export type BoostorgSHELLiPackage = typeof boostorgSHELLiPackage
+export type BoostorgPackage = typeof boostorgPackage

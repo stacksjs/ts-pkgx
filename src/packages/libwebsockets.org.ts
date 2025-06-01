@@ -1,23 +1,18 @@
 /**
- * **+libwebsockets.org -- $SHELL -i** - canonical libwebsockets.org networking library
+ * **libwebsockets.org** - canonical libwebsockets.org networking library
  *
  * @domain `libwebsockets.org`
  * @version `4.3.5` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libwebsockets-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libwebsockets.org -- $SHELL -i`
- * @aliases `+libwebsockets.org -- $SHELL -i`
  * @dependencies `libuv.org@1`, `libevent.org@2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libwebsocketsorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.libwebsocketsorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.libwebsocketsorg
  * console.log(pkg.name)        // "libwebsockets.org"
  * console.log(pkg.description) // "canonical libwebsockets.org networking library"
  * console.log(pkg.versions[0]) // "4.3.5" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libwebsockets-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libwebsocketsorgSHELLiPackage = {
+export const libwebsocketsorgPackage = {
   /**
    * The display name of this package.
    */
@@ -67,14 +62,8 @@ export const libwebsocketsorgSHELLiPackage = {
     '4.3.3',
     '4.3.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+libwebsockets.org -- $SHELL -i',
-  ] as const,
   fullPath: 'libwebsockets.org' as const,
+  aliases: [] as const,
 }
 
-export type LibwebsocketsorgSHELLiPackage = typeof libwebsocketsorgSHELLiPackage
+export type LibwebsocketsorgPackage = typeof libwebsocketsorgPackage

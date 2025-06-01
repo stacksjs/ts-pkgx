@@ -1,5 +1,5 @@
 /**
- * **+harfbuzz.org -- $SHELL -i** - HarfBuzz text shaping engine
+ * **harfbuzz.org** - HarfBuzz text shaping engine
  *
  * @domain `harfbuzz.org`
  * @programs `hb-ot-shape-closure`, `hb-shape`, `hb-subset`, `hb-view`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/harfbuzz-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +harfbuzz.org -- $SHELL -i`
- * @aliases `+harfbuzz.org -- $SHELL -i`
  * @dependencies `cairographics.org@1`, `freetype.org@2`, `gnome.org/glib@2`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.harfbuzzorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.harfbuzzorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.harfbuzzorg
  * console.log(pkg.name)        // "harfbuzz.org"
  * console.log(pkg.description) // "HarfBuzz text shaping engine"
  * console.log(pkg.programs)    // ["hb-ot-shape-closure", "hb-shape", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/harfbuzz-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const harfbuzzorgSHELLiPackage = {
+export const harfbuzzorgPackage = {
   /**
    * The display name of this package.
    */
@@ -105,14 +100,8 @@ export const harfbuzzorgSHELLiPackage = {
     '7.0.0',
     '5.3.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+harfbuzz.org -- $SHELL -i',
-  ] as const,
   fullPath: 'harfbuzz.org' as const,
+  aliases: [] as const,
 }
 
-export type HarfbuzzorgSHELLiPackage = typeof harfbuzzorgSHELLiPackage
+export type HarfbuzzorgPackage = typeof harfbuzzorgPackage

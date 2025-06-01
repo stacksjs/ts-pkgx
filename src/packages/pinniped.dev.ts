@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pinniped-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) pinniped`
- * @aliases `pinniped`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pinniped
- * // Or access via domain
- * const samePkg = pantry.pinnipeddev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pinnipeddev
  * console.log(pkg.name)        // "pinniped"
  * console.log(pkg.description) // "Pinniped is the easy, secure way to log in to y..."
  * console.log(pkg.programs)    // ["pinniped"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pinniped-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pinnipedPackage = {
+export const pinnipeddevPackage = {
   /**
    * The display name of this package.
    */
@@ -77,14 +72,8 @@ export const pinnipedPackage = {
     '0.27.0',
     '0.26.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pinniped',
-  ] as const,
   fullPath: 'pinniped.dev' as const,
+  aliases: [] as const,
 }
 
-export type PinnipedPackage = typeof pinnipedPackage
+export type PinnipeddevPackage = typeof pinnipeddevPackage

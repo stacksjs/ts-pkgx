@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rclone-org.md
  *
  * @install `sh <(curl https://pkgx.sh) rclone`
- * @aliases `rclone`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.rclone
- * // Or access via domain
- * const samePkg = pantry.rcloneorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rcloneorg
  * console.log(pkg.name)        // "rclone"
  * console.log(pkg.description) // ""rsync for cloud storage" - Google Drive, S3, D..."
  * console.log(pkg.programs)    // ["rclone"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rclone-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rclonePackage = {
+export const rcloneorgPackage = {
   /**
    * The display name of this package.
    */
@@ -79,14 +74,8 @@ export const rclonePackage = {
     '1.64.0',
     '1.63.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'rclone',
-  ] as const,
   fullPath: 'rclone.org' as const,
+  aliases: [] as const,
 }
 
-export type RclonePackage = typeof rclonePackage
+export type RcloneorgPackage = typeof rcloneorgPackage

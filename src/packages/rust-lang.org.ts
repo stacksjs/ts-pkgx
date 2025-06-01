@@ -1,5 +1,5 @@
 /**
- * **+rust-lang.org -- $SHELL -i** - Empowering everyone to build reliable and efficient software.
+ * **rust** - Empowering everyone to build reliable and efficient software.
  *
  * @domain `rust-lang.org`
  * @programs `cargo-clippy`, `cargo-fmt`, `clippy-driver`, `rust-analyzer`, `rust-gdb`, ... (+5 more)
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rust-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +rust-lang.org -- $SHELL -i`
- * @aliases `+rust-lang.org -- $SHELL -i`, `rust`
+ * @aliases `rust`
  * @dependencies `zlib.net@1`
  * @companions `rust-lang.org/cargo`, `linux`
  *
@@ -16,7 +16,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.rustlangorgSHELLi
+ * const pkg = pantry.rust
  * // Or access via domain
  * const samePkg = pantry.rustlangorg
  * console.log(pkg === samePkg) // true
@@ -29,7 +29,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rust-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rustlangorgSHELLiPackage = {
+export const rustPackage = {
   /**
    * The display name of this package.
    */
@@ -121,15 +121,14 @@ export const rustlangorgSHELLiPackage = {
     '1.65.0',
     '1.64.0',
   ] as const,
+  fullPath: 'rust-lang.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
-    '+rust-lang.org -- $SHELL -i',
     'rust',
   ] as const,
-  fullPath: 'rust-lang.org' as const,
 }
 
-export type RustlangorgSHELLiPackage = typeof rustlangorgSHELLiPackage
+export type RustPackage = typeof rustPackage

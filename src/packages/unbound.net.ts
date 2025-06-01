@@ -1,5 +1,5 @@
 /**
- * **+unbound.net -- $SHELL -i** - Unbound is a validating, recursive, and caching DNS resolver.
+ * **unbound** - Unbound is a validating, recursive, and caching DNS resolver.
  *
  * @domain `unbound.net`
  * @programs `unbound`, `unbound-anchor`, `unbound-checkconf`, `unbound-control`, `unbound-control-setup`, ... (+1 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/unbound-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +unbound.net -- $SHELL -i`
- * @aliases `+unbound.net -- $SHELL -i`, `unbound`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.unboundnetSHELLi
- * // Or access via domain
- * const samePkg = pantry.unboundnet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.unboundnet
  * console.log(pkg.name)        // "unbound"
  * console.log(pkg.description) // "Unbound is a validating, recursive, and caching..."
  * console.log(pkg.programs)    // ["unbound", "unbound-anchor", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/unbound-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const unboundnetSHELLiPackage = {
+export const unboundnetPackage = {
   /**
    * The display name of this package.
    */
@@ -86,15 +81,8 @@ export const unboundnetSHELLiPackage = {
     '1.18.0',
     '1.17.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+unbound.net -- $SHELL -i',
-    'unbound',
-  ] as const,
   fullPath: 'unbound.net' as const,
+  aliases: [] as const,
 }
 
-export type UnboundnetSHELLiPackage = typeof unboundnetSHELLiPackage
+export type UnboundnetPackage = typeof unboundnetPackage

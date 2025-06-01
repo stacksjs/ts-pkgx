@@ -84,6 +84,7 @@ export const cairotracePackage = {
     '1.18.0',
     '1.16.0',
   ] as const,
+  fullPath: 'cairographics.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -91,7 +92,6 @@ export const cairotracePackage = {
   aliases: [
     'cairo-trace',
   ] as const,
-  fullPath: 'cairographics.org' as const,
 }
 
 export type CairotracePackage = typeof cairotracePackage

@@ -1,5 +1,5 @@
 /**
- * **+kafka.apache.org -- $SHELL -i** - Mirror of Apache Kafka
+ * **kafka.apache.org** - Mirror of Apache Kafka
  *
  * @domain `kafka.apache.org`
  * @programs `connect-distributed.sh`, `connect-mirror-maker.sh`, `connect-plugin-path.sh`, `connect-standalone.sh`, `kafka-acls.sh`, ... (+36 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kafka-apache-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +kafka.apache.org -- $SHELL -i`
- * @aliases `+kafka.apache.org -- $SHELL -i`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.kafkaapacheorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.kafkaapacheorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kafkaapacheorg
  * console.log(pkg.name)        // "kafka.apache.org"
  * console.log(pkg.description) // "Mirror of Apache Kafka"
  * console.log(pkg.programs)    // ["connect-distributed.sh", "connect-mirror-maker.sh", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kafka-apache-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kafkaapacheorgSHELLiPackage = {
+export const kafkaapacheorgPackage = {
   /**
    * The display name of this package.
    */
@@ -116,14 +111,8 @@ export const kafkaapacheorgSHELLiPackage = {
     '3.8.0',
     '3.7.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+kafka.apache.org -- $SHELL -i',
-  ] as const,
   fullPath: 'kafka.apache.org' as const,
+  aliases: [] as const,
 }
 
-export type KafkaapacheorgSHELLiPackage = typeof kafkaapacheorgSHELLiPackage
+export type KafkaapacheorgPackage = typeof kafkaapacheorgPackage

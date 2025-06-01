@@ -1,5 +1,5 @@
 /**
- * **+glew.sourceforge.io -- $SHELL -i** - The OpenGL Extension Wrangler Library
+ * **glew.sourceforge.io** - The OpenGL Extension Wrangler Library
  *
  * @domain `glew.sourceforge.io`
  * @programs `glewinfo`, `visualinfo`
@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/glew-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +glew.sourceforge.io -- $SHELL -i`
- * @aliases `+glew.sourceforge.io -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.glewsourceforgeioSHELLi
- * // Or access via domain
- * const samePkg = pantry.glewsourceforgeio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.glewsourceforgeio
  * console.log(pkg.name)        // "glew.sourceforge.io"
  * console.log(pkg.description) // "The OpenGL Extension Wrangler Library"
  * console.log(pkg.programs)    // ["glewinfo", "visualinfo"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/glew-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const glewsourceforgeioSHELLiPackage = {
+export const glewsourceforgeioPackage = {
   /**
    * The display name of this package.
    */
@@ -65,14 +60,8 @@ export const glewsourceforgeioSHELLiPackage = {
   versions: [
     '2.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+glew.sourceforge.io -- $SHELL -i',
-  ] as const,
   fullPath: 'glew.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
-export type GlewsourceforgeioSHELLiPackage = typeof glewsourceforgeioSHELLiPackage
+export type GlewsourceforgeioPackage = typeof glewsourceforgeioPackage

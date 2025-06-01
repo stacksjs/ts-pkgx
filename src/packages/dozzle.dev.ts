@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dozzle-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) dozzle`
- * @aliases `dozzle`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.dozzle
- * // Or access via domain
- * const samePkg = pantry.dozzledev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dozzledev
  * console.log(pkg.name)        // "dozzle"
  * console.log(pkg.description) // "Realtime log viewer for docker containers."
  * console.log(pkg.programs)    // ["dozzle"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dozzle-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dozzlePackage = {
+export const dozzledevPackage = {
   /**
    * The display name of this package.
    */
@@ -119,14 +114,8 @@ export const dozzlePackage = {
     '8.5.3',
     '8.5.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'dozzle',
-  ] as const,
   fullPath: 'dozzle.dev' as const,
+  aliases: [] as const,
 }
 
-export type DozzlePackage = typeof dozzlePackage
+export type DozzledevPackage = typeof dozzledevPackage

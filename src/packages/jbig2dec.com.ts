@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jbig2dec-com.md
  *
  * @install `sh <(curl https://pkgx.sh) jbig2dec`
- * @aliases `jbig2dec`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jbig2dec
- * // Or access via domain
- * const samePkg = pantry.jbig2deccom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jbig2deccom
  * console.log(pkg.name)        // "jbig2dec"
  * console.log(pkg.description) // "This is a mirror: the canonical repo is: git.gh..."
  * console.log(pkg.programs)    // ["jbig2dec"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jbig2dec-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jbig2decPackage = {
+export const jbig2deccomPackage = {
   /**
    * The display name of this package.
    */
@@ -64,14 +59,8 @@ export const jbig2decPackage = {
   versions: [
     '0.19.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'jbig2dec',
-  ] as const,
   fullPath: 'jbig2dec.com' as const,
+  aliases: [] as const,
 }
 
-export type Jbig2decPackage = typeof jbig2decPackage
+export type Jbig2deccomPackage = typeof jbig2deccomPackage

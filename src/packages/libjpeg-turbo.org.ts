@@ -1,5 +1,5 @@
 /**
- * **+libjpeg-turbo.org -- $SHELL -i** - Main libjpeg-turbo repository
+ * **libjpeg-turbo.org** - Main libjpeg-turbo repository
  *
  * @domain `libjpeg-turbo.org`
  * @programs `cjpeg`, `djpeg`, `jpegtran`, `rdjpgcom`, `tjbench`, ... (+1 more)
@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libjpeg-turbo-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libjpeg-turbo.org -- $SHELL -i`
- * @aliases `+libjpeg-turbo.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libjpegturboorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.libjpegturboorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.libjpegturboorg
  * console.log(pkg.name)        // "libjpeg-turbo.org"
  * console.log(pkg.description) // "Main libjpeg-turbo repository"
  * console.log(pkg.programs)    // ["cjpeg", "djpeg", ...]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libjpeg-turbo-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libjpegturboorgSHELLiPackage = {
+export const libjpegturboorgPackage = {
   /**
    * The display name of this package.
    */
@@ -75,14 +70,8 @@ export const libjpegturboorgSHELLiPackage = {
     '3.0.0',
     '2.1.5.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+libjpeg-turbo.org -- $SHELL -i',
-  ] as const,
   fullPath: 'libjpeg-turbo.org' as const,
+  aliases: [] as const,
 }
 
-export type LibjpegturboorgSHELLiPackage = typeof libjpegturboorgSHELLiPackage
+export type LibjpegturboorgPackage = typeof libjpegturboorgPackage

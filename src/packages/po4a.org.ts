@@ -1,5 +1,5 @@
 /**
- * **+po4a.org -- $SHELL -i** - Maintain the translations of your documentation with ease  (PO for anything)
+ * **po4a.org** - Maintain the translations of your documentation with ease  (PO for anything)
  *
  * @domain `po4a.org`
  * @programs `msguntypot`, `po4a`, `po4a-display-man`, `po4a-display-pod`, `po4a-gettextize`, ... (+3 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/po4a-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +po4a.org -- $SHELL -i`
- * @aliases `+po4a.org -- $SHELL -i`
  * @dependencies `gnu.org/gettext^0.22`, `perl.org^5.22`, `gnome.org/libxslt^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.po4aorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.po4aorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.po4aorg
  * console.log(pkg.name)        // "po4a.org"
  * console.log(pkg.description) // "Maintain the translations of your documentation..."
  * console.log(pkg.programs)    // ["msguntypot", "po4a", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/po4a-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const po4aorgSHELLiPackage = {
+export const po4aorgPackage = {
   /**
    * The display name of this package.
    */
@@ -84,14 +79,8 @@ export const po4aorgSHELLiPackage = {
     '0.70.0',
     '0.69.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+po4a.org -- $SHELL -i',
-  ] as const,
   fullPath: 'po4a.org' as const,
+  aliases: [] as const,
 }
 
-export type Po4aorgSHELLiPackage = typeof po4aorgSHELLiPackage
+export type Po4aorgPackage = typeof po4aorgPackage

@@ -96,6 +96,7 @@ export const sqlite3Package = {
     '3.40.0',
     '3.39.4',
   ] as const,
+  fullPath: 'sqlite.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -103,7 +104,6 @@ export const sqlite3Package = {
   aliases: [
     'sqlite3',
   ] as const,
-  fullPath: 'sqlite.org' as const,
 }
 
 export type Sqlite3Package = typeof sqlite3Package

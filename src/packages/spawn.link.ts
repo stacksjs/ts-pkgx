@@ -1,5 +1,5 @@
 /**
- * **+spawn.link -- $SHELL -i** - a featureful union filesystem
+ * **spawn.link** - a featureful union filesystem
  *
  * @domain `spawn.link`
  * @programs `mergerfs`, `mergerfs-fusermount`, `mount.mergerfs`
@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/spawn-link.md
  *
  * @install `sh <(curl https://pkgx.sh) +spawn.link -- $SHELL -i`
- * @aliases `+spawn.link -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.spawnlinkSHELLi
- * // Or access via domain
- * const samePkg = pantry.spawnlink
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.spawnlink
  * console.log(pkg.name)        // "spawn.link"
  * console.log(pkg.description) // "a featureful union filesystem"
  * console.log(pkg.programs)    // ["mergerfs", "mergerfs-fusermount", ...]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/spawn-link.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const spawnlinkSHELLiPackage = {
+export const spawnlinkPackage = {
   /**
    * The display name of this package.
    */
@@ -74,14 +69,8 @@ export const spawnlinkSHELLiPackage = {
     '2.36.0',
     '2.35.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+spawn.link -- $SHELL -i',
-  ] as const,
   fullPath: 'spawn.link' as const,
+  aliases: [] as const,
 }
 
-export type SpawnlinkSHELLiPackage = typeof spawnlinkSHELLiPackage
+export type SpawnlinkPackage = typeof spawnlinkPackage

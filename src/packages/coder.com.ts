@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/coder-com.md
  *
  * @install `sh <(curl https://pkgx.sh) coder`
- * @aliases `coder`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.coder
- * // Or access via domain
- * const samePkg = pantry.codercom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.codercom
  * console.log(pkg.name)        // "coder"
  * console.log(pkg.description) // "Tool for provisioning self-hosted development e..."
  * console.log(pkg.programs)    // ["coder"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/coder-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const coderPackage = {
+export const codercomPackage = {
   /**
    * The display name of this package.
    */
@@ -130,14 +125,8 @@ export const coderPackage = {
     '2.7.2',
     '2.6.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'coder',
-  ] as const,
   fullPath: 'coder.com' as const,
+  aliases: [] as const,
 }
 
-export type CoderPackage = typeof coderPackage
+export type CodercomPackage = typeof codercomPackage

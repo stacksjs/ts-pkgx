@@ -7,7 +7,6 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bashly-dannyb-co.md
  *
  * @install `sh <(curl https://pkgx.sh) bashly`
- * @aliases `bashly`
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
  * @companions `gnu.org/bash`
  *
@@ -15,11 +14,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.bashly
- * // Or access via domain
- * const samePkg = pantry.bashlydannybco
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.bashlydannybco
  * console.log(pkg.name)        // "bashly"
  * console.log(pkg.description) // "Bash command line framework and CLI generator"
  * console.log(pkg.programs)    // ["bashly"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bashly-dannyb-co.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bashlyPackage = {
+export const bashlydannybcoPackage = {
   /**
    * The display name of this package.
    */
@@ -92,14 +87,8 @@ export const bashlyPackage = {
     '1.2.0',
     '1.1.10',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'bashly',
-  ] as const,
   fullPath: 'bashly.dannyb.co' as const,
+  aliases: [] as const,
 }
 
-export type BashlyPackage = typeof bashlyPackage
+export type BashlydannybcoPackage = typeof bashlydannybcoPackage

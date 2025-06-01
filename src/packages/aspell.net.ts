@@ -1,5 +1,5 @@
 /**
- * **+aspell.net -- $SHELL -i** - Spell checker with better logic than ispell
+ * **aspell.net** - Spell checker with better logic than ispell
  *
  * @domain `aspell.net`
  * @programs `aspell`, `aspell-import`, `precat`, `preunzip`, `prezip`, ... (+4 more)
@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/aspell-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +aspell.net -- $SHELL -i`
- * @aliases `+aspell.net -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.aspellnetSHELLi
- * // Or access via domain
- * const samePkg = pantry.aspellnet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.aspellnet
  * console.log(pkg.name)        // "aspell.net"
  * console.log(pkg.description) // "Spell checker with better logic than ispell"
  * console.log(pkg.programs)    // ["aspell", "aspell-import", ...]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/aspell-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const aspellnetSHELLiPackage = {
+export const aspellnetPackage = {
   /**
    * The display name of this package.
    */
@@ -73,14 +68,8 @@ export const aspellnetSHELLiPackage = {
     '0.60.8.1',
     '0.60.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+aspell.net -- $SHELL -i',
-  ] as const,
   fullPath: 'aspell.net' as const,
+  aliases: [] as const,
 }
 
-export type AspellnetSHELLiPackage = typeof aspellnetSHELLiPackage
+export type AspellnetPackage = typeof aspellnetPackage

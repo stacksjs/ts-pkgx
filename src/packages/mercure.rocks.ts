@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mercure-rocks.md
  *
  * @install `sh <(curl https://pkgx.sh) mercure`
- * @aliases `mercure`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mercure
- * // Or access via domain
- * const samePkg = pantry.mercurerocks
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mercurerocks
  * console.log(pkg.name)        // "mercure"
  * console.log(pkg.description) // "🪽 An open, easy, fast, reliable and battery-ef..."
  * console.log(pkg.programs)    // ["mercure"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mercure-rocks.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mercurePackage = {
+export const mercurerocksPackage = {
   /**
    * The display name of this package.
    */
@@ -74,14 +69,8 @@ export const mercurePackage = {
     '0.17.0',
     '0.16.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mercure',
-  ] as const,
   fullPath: 'mercure.rocks' as const,
+  aliases: [] as const,
 }
 
-export type MercurePackage = typeof mercurePackage
+export type MercurerocksPackage = typeof mercurerocksPackage

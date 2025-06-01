@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/iroh-computer.md
  *
  * @install `sh <(curl https://pkgx.sh) iroh`
- * @aliases `iroh`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.iroh
- * // Or access via domain
- * const samePkg = pantry.irohcomputer
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.irohcomputer
  * console.log(pkg.name)        // "iroh"
  * console.log(pkg.description) // "peer-2-peer that just works"
  * console.log(pkg.programs)    // ["iroh"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/iroh-computer.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const irohPackage = {
+export const irohcomputerPackage = {
   /**
    * The display name of this package.
    */
@@ -98,14 +93,8 @@ export const irohPackage = {
     '0.6.0',
     '0.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'iroh',
-  ] as const,
   fullPath: 'iroh.computer' as const,
+  aliases: [] as const,
 }
 
-export type IrohPackage = typeof irohPackage
+export type IrohcomputerPackage = typeof irohcomputerPackage

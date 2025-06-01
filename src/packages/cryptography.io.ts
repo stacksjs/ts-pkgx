@@ -1,23 +1,18 @@
 /**
- * **+cryptography.io -- $SHELL -i** - cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.
+ * **cryptography.io** - cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.
  *
  * @domain `cryptography.io`
  * @version `45.0.3` (20 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cryptography-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i`
- * @aliases `+cryptography.io -- $SHELL -i`
  * @dependencies `python.org>=3.11`, `github.com/python-cffi/cffi^1.16`, `openssl.org>=1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.cryptographyioSHELLi
- * // Or access via domain
- * const samePkg = pantry.cryptographyio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cryptographyio
  * console.log(pkg.name)        // "cryptography.io"
  * console.log(pkg.description) // "cryptography is a package designed to expose cr..."
  * console.log(pkg.versions[0]) // "45.0.3" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cryptography-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cryptographyioSHELLiPackage = {
+export const cryptographyioPackage = {
   /**
    * The display name of this package.
    */
@@ -84,14 +79,8 @@ export const cryptographyioSHELLiPackage = {
     '42.0.2',
     '42.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+cryptography.io -- $SHELL -i',
-  ] as const,
   fullPath: 'cryptography.io' as const,
+  aliases: [] as const,
 }
 
-export type CryptographyioSHELLiPackage = typeof cryptographyioSHELLiPackage
+export type CryptographyioPackage = typeof cryptographyioPackage

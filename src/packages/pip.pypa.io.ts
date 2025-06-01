@@ -1,5 +1,5 @@
 /**
- * **+pip.pypa.io -- $SHELL -i** - The Python package installer
+ * **pip** - The Python package installer
  *
  * @domain `pip.pypa.io`
  * @programs `pip`, `pip3.8`, `pip3.9`, `pip3.10`, `pip3.11`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pip-pypa-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i`
- * @aliases `+pip.pypa.io -- $SHELL -i`, `pip`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pippypaioSHELLi
- * // Or access via domain
- * const samePkg = pantry.pippypaio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pippypaio
  * console.log(pkg.name)        // "pip"
  * console.log(pkg.description) // "The Python package installer"
  * console.log(pkg.programs)    // ["pip", "pip3.8", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pip-pypa-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pippypaioSHELLiPackage = {
+export const pippypaioPackage = {
   /**
    * The display name of this package.
    */
@@ -101,15 +96,8 @@ export const pippypaioSHELLiPackage = {
     '19.3.1',
     '18.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+pip.pypa.io -- $SHELL -i',
-    'pip',
-  ] as const,
   fullPath: 'pip.pypa.io' as const,
+  aliases: [] as const,
 }
 
-export type PippypaioSHELLiPackage = typeof pippypaioSHELLiPackage
+export type PippypaioPackage = typeof pippypaioPackage

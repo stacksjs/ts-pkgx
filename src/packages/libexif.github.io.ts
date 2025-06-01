@@ -1,23 +1,18 @@
 /**
- * **+libexif.github.io -- $SHELL -i** - A library for parsing, editing, and saving EXIF data
+ * **libexif.github.io** - A library for parsing, editing, and saving EXIF data
  *
  * @domain `libexif.github.io`
  * @version `0.6.25` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libexif-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +libexif.github.io -- $SHELL -i`
- * @aliases `+libexif.github.io -- $SHELL -i`
  * @dependencies `gnu.org/gettext`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libexifgithubioSHELLi
- * // Or access via domain
- * const samePkg = pantry.libexifgithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.libexifgithubio
  * console.log(pkg.name)        // "libexif.github.io"
  * console.log(pkg.description) // "A library for parsing, editing, and saving EXIF..."
  * console.log(pkg.versions[0]) // "0.6.25" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libexif-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libexifgithubioSHELLiPackage = {
+export const libexifgithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -64,14 +59,8 @@ export const libexifgithubioSHELLiPackage = {
     '0.6.25',
     '0.6.24',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+libexif.github.io -- $SHELL -i',
-  ] as const,
   fullPath: 'libexif.github.io' as const,
+  aliases: [] as const,
 }
 
-export type LibexifgithubioSHELLiPackage = typeof libexifgithubioSHELLiPackage
+export type LibexifgithubioPackage = typeof libexifgithubioPackage

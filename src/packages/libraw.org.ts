@@ -1,5 +1,5 @@
 /**
- * **+libraw.org -- $SHELL -i** - Library for reading RAW files from digital photo cameras
+ * **libraw.org** - Library for reading RAW files from digital photo cameras
  *
  * @domain `libraw.org`
  * @programs `4channels`, `dcraw_emu`, `dcraw_half`, `half_mt`, `mem_image`, ... (+6 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libraw-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libraw.org -- $SHELL -i`
- * @aliases `+libraw.org -- $SHELL -i`
  * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `littlecms.com`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libraworgSHELLi
- * // Or access via domain
- * const samePkg = pantry.libraworg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.libraworg
  * console.log(pkg.name)        // "libraw.org"
  * console.log(pkg.description) // "Library for reading RAW files from digital phot..."
  * console.log(pkg.programs)    // ["4channels", "dcraw_emu", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libraw-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libraworgSHELLiPackage = {
+export const libraworgPackage = {
   /**
    * The display name of this package.
    */
@@ -89,14 +84,8 @@ export const libraworgSHELLiPackage = {
     '0.21.2',
     '0.21.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+libraw.org -- $SHELL -i',
-  ] as const,
   fullPath: 'libraw.org' as const,
+  aliases: [] as const,
 }
 
-export type LibraworgSHELLiPackage = typeof libraworgSHELLiPackage
+export type LibraworgPackage = typeof libraworgPackage

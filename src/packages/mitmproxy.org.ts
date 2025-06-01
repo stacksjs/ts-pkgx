@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mitmproxy-org.md
  *
  * @install `sh <(curl https://pkgx.sh) mitmproxy`
- * @aliases `mitmproxy`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mitmproxy
- * // Or access via domain
- * const samePkg = pantry.mitmproxyorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mitmproxyorg
  * console.log(pkg.name)        // "mitmproxy"
  * console.log(pkg.description) // "An interactive TLS-capable intercepting HTTP pr..."
  * console.log(pkg.programs)    // ["mitmproxy"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mitmproxy-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mitmproxyPackage = {
+export const mitmproxyorgPackage = {
   /**
    * The display name of this package.
    */
@@ -97,14 +92,8 @@ export const mitmproxyPackage = {
     '10.1.1',
     '10.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mitmproxy',
-  ] as const,
   fullPath: 'mitmproxy.org' as const,
+  aliases: [] as const,
 }
 
-export type MitmproxyPackage = typeof mitmproxyPackage
+export type MitmproxyorgPackage = typeof mitmproxyorgPackage

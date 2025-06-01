@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sqlc-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) sqlc`
- * @aliases `sqlc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.sqlc
- * // Or access via domain
- * const samePkg = pantry.sqlcdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sqlcdev
  * console.log(pkg.name)        // "sqlc"
  * console.log(pkg.description) // "Generate type-safe code from SQL"
  * console.log(pkg.programs)    // ["sqlc"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sqlc-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sqlcPackage = {
+export const sqlcdevPackage = {
   /**
    * The display name of this package.
    */
@@ -66,14 +61,8 @@ export const sqlcPackage = {
     '1.28.0',
     '1.27.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'sqlc',
-  ] as const,
   fullPath: 'sqlc.dev' as const,
+  aliases: [] as const,
 }
 
-export type SqlcPackage = typeof sqlcPackage
+export type SqlcdevPackage = typeof sqlcdevPackage

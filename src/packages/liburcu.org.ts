@@ -1,22 +1,17 @@
 /**
- * **+liburcu.org -- $SHELL -i** - liburcu is a LGPLv2.1 userspace RCU (read-copy-update) library. This data synchronization library provides read-side access which scales linearly with the number of cores.
+ * **liburcu** - liburcu is a LGPLv2.1 userspace RCU (read-copy-update) library. This data synchronization library provides read-side access which scales linearly with the number of cores.
  *
  * @domain `liburcu.org`
  * @version `0.15.3` (4 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/liburcu-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +liburcu.org -- $SHELL -i`
- * @aliases `+liburcu.org -- $SHELL -i`, `liburcu`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.liburcuorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.liburcuorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.liburcuorg
  * console.log(pkg.name)        // "liburcu"
  * console.log(pkg.description) // "liburcu is a LGPLv2.1 userspace RCU (read-copy-..."
  * console.log(pkg.versions[0]) // "0.15.3" (latest)
@@ -25,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/liburcu-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const liburcuorgSHELLiPackage = {
+export const liburcuorgPackage = {
   /**
    * The display name of this package.
    */
@@ -59,15 +54,8 @@ export const liburcuorgSHELLiPackage = {
     '0.15.1',
     '0.15.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+liburcu.org -- $SHELL -i',
-    'liburcu',
-  ] as const,
   fullPath: 'liburcu.org' as const,
+  aliases: [] as const,
 }
 
-export type LiburcuorgSHELLiPackage = typeof liburcuorgSHELLiPackage
+export type LiburcuorgPackage = typeof liburcuorgPackage

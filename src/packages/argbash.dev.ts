@@ -1,5 +1,5 @@
 /**
- * **+argbash.dev -- $SHELL -i** - Bash argument parsing code generator
+ * **argbash** - Bash argument parsing code generator
  *
  * @domain `argbash.dev`
  * @programs `argbash`, `argbash-init`, `argbash-1to2`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/argbash-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +argbash.dev -- $SHELL -i`
- * @aliases `+argbash.dev -- $SHELL -i`, `argbash`
  * @dependencies `gnu.org/bash>=3`, `gnu.org/autoconf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.argbashdevSHELLi
- * // Or access via domain
- * const samePkg = pantry.argbashdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.argbashdev
  * console.log(pkg.name)        // "argbash"
  * console.log(pkg.description) // "Bash argument parsing code generator"
  * console.log(pkg.programs)    // ["argbash", "argbash-init", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/argbash-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const argbashdevSHELLiPackage = {
+export const argbashdevPackage = {
   /**
    * The display name of this package.
    */
@@ -75,15 +70,8 @@ export const argbashdevSHELLiPackage = {
     '2.11.0',
     '2.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+argbash.dev -- $SHELL -i',
-    'argbash',
-  ] as const,
   fullPath: 'argbash.dev' as const,
+  aliases: [] as const,
 }
 
-export type ArgbashdevSHELLiPackage = typeof argbashdevSHELLiPackage
+export type ArgbashdevPackage = typeof argbashdevPackage

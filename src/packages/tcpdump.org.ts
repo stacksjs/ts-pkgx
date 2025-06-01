@@ -65,6 +65,7 @@ export const pcapconfigPackage = {
     '1.10.5',
     '1.10.4',
   ] as const,
+  fullPath: 'tcpdump.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -72,7 +73,6 @@ export const pcapconfigPackage = {
   aliases: [
     'pcap-config',
   ] as const,
-  fullPath: 'tcpdump.org' as const,
 }
 
 export type PcapconfigPackage = typeof pcapconfigPackage

@@ -1,5 +1,5 @@
 /**
- * **+giflib.sourceforge.io -- $SHELL -i** - Library and utilities for processing GIFs
+ * **gif** - Library and utilities for processing GIFs
  *
  * @domain `giflib.sourceforge.io`
  * @programs `gif2rgb`, `gifbuild`, `gifclrmp`, `giffix`, `giftext`, ... (+1 more)
@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/giflib-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +giflib.sourceforge.io -- $SHELL -i`
- * @aliases `+giflib.sourceforge.io -- $SHELL -i`, `gif`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.giflibsourceforgeioSHELLi
- * // Or access via domain
- * const samePkg = pantry.giflibsourceforgeio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.giflibsourceforgeio
  * console.log(pkg.name)        // "gif"
  * console.log(pkg.description) // "Library and utilities for processing GIFs"
  * console.log(pkg.programs)    // ["gif2rgb", "gifbuild", ...]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/giflib-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const giflibsourceforgeioSHELLiPackage = {
+export const giflibsourceforgeioPackage = {
   /**
    * The display name of this package.
    */
@@ -70,15 +65,8 @@ export const giflibsourceforgeioSHELLiPackage = {
     '5.2.2',
     '5.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+giflib.sourceforge.io -- $SHELL -i',
-    'gif',
-  ] as const,
   fullPath: 'giflib.sourceforge.io' as const,
+  aliases: [] as const,
 }
 
-export type GiflibsourceforgeioSHELLiPackage = typeof giflibsourceforgeioSHELLiPackage
+export type GiflibsourceforgeioPackage = typeof giflibsourceforgeioPackage

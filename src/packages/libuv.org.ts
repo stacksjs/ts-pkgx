@@ -1,22 +1,17 @@
 /**
- * **+libuv.org -- $SHELL -i** - Cross-platform asynchronous I/O
+ * **libuv.org** - Cross-platform asynchronous I/O
  *
  * @domain `libuv.org`
  * @version `1.51.0` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libuv-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libuv.org -- $SHELL -i`
- * @aliases `+libuv.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libuvorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.libuvorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.libuvorg
  * console.log(pkg.name)        // "libuv.org"
  * console.log(pkg.description) // "Cross-platform asynchronous I/O"
  * console.log(pkg.versions[0]) // "1.51.0" (latest)
@@ -25,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libuv-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libuvorgSHELLiPackage = {
+export const libuvorgPackage = {
   /**
    * The display name of this package.
    */
@@ -65,14 +60,8 @@ export const libuvorgSHELLiPackage = {
     '1.45.0',
     '1.44.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+libuv.org -- $SHELL -i',
-  ] as const,
   fullPath: 'libuv.org' as const,
+  aliases: [] as const,
 }
 
-export type LibuvorgSHELLiPackage = typeof libuvorgSHELLiPackage
+export type LibuvorgPackage = typeof libuvorgPackage

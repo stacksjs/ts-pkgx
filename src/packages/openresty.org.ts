@@ -1,5 +1,5 @@
 /**
- * **+openresty.org -- $SHELL -i** - High Performance Web Platform Based on Nginx and LuaJIT
+ * **openresty.org** - High Performance Web Platform Based on Nginx and LuaJIT
  *
  * @domain `openresty.org`
  * @programs `nginx-xml2pod`, `opm`, `resty`, `restydoc`, `restydoc-index`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openresty-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openresty.org -- $SHELL -i`
- * @aliases `+openresty.org -- $SHELL -i`
  * @dependencies `pcre.org@8`, `openssl.org^1.1`, `zlib.net^1.2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.openrestyorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.openrestyorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.openrestyorg
  * console.log(pkg.name)        // "openresty.org"
  * console.log(pkg.description) // "High Performance Web Platform Based on Nginx an..."
  * console.log(pkg.programs)    // ["nginx-xml2pod", "opm", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openresty-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openrestyorgSHELLiPackage = {
+export const openrestyorgPackage = {
   /**
    * The display name of this package.
    */
@@ -78,14 +73,8 @@ export const openrestyorgSHELLiPackage = {
   versions: [
     '1.25.3.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+openresty.org -- $SHELL -i',
-  ] as const,
   fullPath: 'openresty.org' as const,
+  aliases: [] as const,
 }
 
-export type OpenrestyorgSHELLiPackage = typeof openrestyorgSHELLiPackage
+export type OpenrestyorgPackage = typeof openrestyorgPackage

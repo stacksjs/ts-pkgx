@@ -1,5 +1,5 @@
 /**
- * **+ffmpeg.org -- $SHELL -i** - Play, record, convert, and stream audio and video
+ * **ffmpeg.org** - Play, record, convert, and stream audio and video
  *
  * @domain `ffmpeg.org`
  * @programs `ffmpeg`, `ffplay`, `ffprobe`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ffmpeg-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +ffmpeg.org -- $SHELL -i`
- * @aliases `+ffmpeg.org -- $SHELL -i`
  * @dependencies `lame.sourceforge.io>=3.98.3`, `libsdl.org^2`, `freetype.org^2`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.ffmpegorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.ffmpegorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ffmpegorg
  * console.log(pkg.name)        // "ffmpeg.org"
  * console.log(pkg.description) // "Play, record, convert, and stream audio and video"
  * console.log(pkg.programs)    // ["ffmpeg", "ffplay", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ffmpeg-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ffmpegorgSHELLiPackage = {
+export const ffmpegorgPackage = {
   /**
    * The display name of this package.
    */
@@ -104,14 +99,8 @@ export const ffmpegorgSHELLiPackage = {
     '3.4.14',
     '3.4.13',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+ffmpeg.org -- $SHELL -i',
-  ] as const,
   fullPath: 'ffmpeg.org' as const,
+  aliases: [] as const,
 }
 
-export type FfmpegorgSHELLiPackage = typeof ffmpegorgSHELLiPackage
+export type FfmpegorgPackage = typeof ffmpegorgPackage

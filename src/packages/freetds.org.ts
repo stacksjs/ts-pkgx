@@ -1,5 +1,5 @@
 /**
- * **+freetds.org -- $SHELL -i** - Libraries to talk to Microsoft SQL Server and Sybase databases
+ * **freetds.org** - Libraries to talk to Microsoft SQL Server and Sybase databases
  *
  * @domain `freetds.org`
  * @programs `bsqldb`, `bsqlodbc`, `datacopy`, `defncopy`, `fisql`, ... (+4 more)
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/freetds-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +freetds.org -- $SHELL -i`
- * @aliases `+freetds.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `unixodbc.org`, `kerberos.org`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.freetdsorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.freetdsorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.freetdsorg
  * console.log(pkg.name)        // "freetds.org"
  * console.log(pkg.description) // "Libraries to talk to Microsoft SQL Server and S..."
  * console.log(pkg.programs)    // ["bsqldb", "bsqlodbc", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/freetds-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const freetdsorgSHELLiPackage = {
+export const freetdsorgPackage = {
   /**
    * The display name of this package.
    */
@@ -112,14 +107,8 @@ export const freetdsorgSHELLiPackage = {
     '1.3.19',
     '1.3.18',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+freetds.org -- $SHELL -i',
-  ] as const,
   fullPath: 'freetds.org' as const,
+  aliases: [] as const,
 }
 
-export type FreetdsorgSHELLiPackage = typeof freetdsorgSHELLiPackage
+export type FreetdsorgPackage = typeof freetdsorgPackage

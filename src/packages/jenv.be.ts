@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jenv-be.md
  *
  * @install `sh <(curl https://pkgx.sh) jenv`
- * @aliases `jenv`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jenv
- * // Or access via domain
- * const samePkg = pantry.jenvbe
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jenvbe
  * console.log(pkg.name)        // "jenv"
  * console.log(pkg.description) // "Manage your Java environment"
  * console.log(pkg.programs)    // ["jenv"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jenv-be.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jenvPackage = {
+export const jenvbePackage = {
   /**
    * The display name of this package.
    */
@@ -65,14 +60,8 @@ export const jenvPackage = {
     '0.5.7',
     '0.5.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'jenv',
-  ] as const,
   fullPath: 'jenv.be' as const,
+  aliases: [] as const,
 }
 
-export type JenvPackage = typeof jenvPackage
+export type JenvbePackage = typeof jenvbePackage

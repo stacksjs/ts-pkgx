@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cnquery-io.md
  *
  * @install `sh <(curl https://pkgx.sh) cnquery`
- * @aliases `cnquery`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.cnquery
- * // Or access via domain
- * const samePkg = pantry.cnqueryio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cnqueryio
  * console.log(pkg.name)        // "cnquery"
  * console.log(pkg.description) // "open source, cloud-native, graph-based asset in..."
  * console.log(pkg.programs)    // ["cnquery"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cnquery-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cnqueryPackage = {
+export const cnqueryioPackage = {
   /**
    * The display name of this package.
    */
@@ -206,14 +201,8 @@ export const cnqueryPackage = {
     '9.14.0',
     '9.13.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'cnquery',
-  ] as const,
   fullPath: 'cnquery.io' as const,
+  aliases: [] as const,
 }
 
-export type CnqueryPackage = typeof cnqueryPackage
+export type CnqueryioPackage = typeof cnqueryioPackage

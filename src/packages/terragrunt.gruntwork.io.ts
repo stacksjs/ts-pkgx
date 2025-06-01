@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/terragrunt-gruntwork-io.md
  *
  * @install `sh <(curl https://pkgx.sh) terragrunt`
- * @aliases `terragrunt`
  * @dependencies `terraform.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.terragrunt
- * // Or access via domain
- * const samePkg = pantry.terragruntgruntworkio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.terragruntgruntworkio
  * console.log(pkg.name)        // "terragrunt"
  * console.log(pkg.description) // "Terragrunt is a flexible orchestration tool tha..."
  * console.log(pkg.programs)    // ["terragrunt"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/terragrunt-gruntwork-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const terragruntPackage = {
+export const terragruntgruntworkioPackage = {
   /**
    * The display name of this package.
    */
@@ -414,14 +409,8 @@ export const terragruntPackage = {
     '0.45.1',
     '0.45.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'terragrunt',
-  ] as const,
   fullPath: 'terragrunt.gruntwork.io' as const,
+  aliases: [] as const,
 }
 
-export type TerragruntPackage = typeof terragruntPackage
+export type TerragruntgruntworkioPackage = typeof terragruntgruntworkioPackage

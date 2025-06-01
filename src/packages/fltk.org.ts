@@ -1,5 +1,5 @@
 /**
- * **+fltk.org -- $SHELL -i** - FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development
+ * **fltk.org** - FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development
  *
  * @domain `fltk.org`
  * @programs `fluid`, `fltk-config`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fltk-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +fltk.org -- $SHELL -i`
- * @aliases `+fltk.org -- $SHELL -i`
  * @dependencies `libjpeg-turbo.org^2`, `libpng.org^1`, `linuxx.org/xft^2x.org/xt^1freedesktop.org/mesa-glu^9`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.fltkorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.fltkorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fltkorg
  * console.log(pkg.name)        // "fltk.org"
  * console.log(pkg.description) // "FLTK - Fast Light Tool Kit - https://github.com..."
  * console.log(pkg.programs)    // ["fluid", "fltk-config"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fltk-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fltkorgSHELLiPackage = {
+export const fltkorgPackage = {
   /**
    * The display name of this package.
    */
@@ -82,14 +77,8 @@ export const fltkorgSHELLiPackage = {
     '1.3.10',
     '1.3.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+fltk.org -- $SHELL -i',
-  ] as const,
   fullPath: 'fltk.org' as const,
+  aliases: [] as const,
 }
 
-export type FltkorgSHELLiPackage = typeof fltkorgSHELLiPackage
+export type FltkorgPackage = typeof fltkorgPackage

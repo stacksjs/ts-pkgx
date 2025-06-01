@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/duktape-org.md
  *
  * @install `sh <(curl https://pkgx.sh) duk`
- * @aliases `duk`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.duk
- * // Or access via domain
- * const samePkg = pantry.duktapeorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.duktapeorg
  * console.log(pkg.name)        // "duk"
  * console.log(pkg.description) // "Duktape - embeddable Javascript engine with a f..."
  * console.log(pkg.programs)    // ["duk"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/duktape-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dukPackage = {
+export const duktapeorgPackage = {
   /**
    * The display name of this package.
    */
@@ -64,14 +59,8 @@ export const dukPackage = {
   versions: [
     '2.7.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'duk',
-  ] as const,
   fullPath: 'duktape.org' as const,
+  aliases: [] as const,
 }
 
-export type DukPackage = typeof dukPackage
+export type DuktapeorgPackage = typeof duktapeorgPackage

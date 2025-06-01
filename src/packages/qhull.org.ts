@@ -1,5 +1,5 @@
 /**
- * **+qhull.org -- $SHELL -i** - Qhull development for www.qhull.org -- Qhull 2020.2 (8.1-alpha1) at https://github.com/qhull/qhull/wiki
+ * **qhull.org** - Qhull development for www.qhull.org -- Qhull 2020.2 (8.1-alpha1) at https://github.com/qhull/qhull/wiki
  *
  * @domain `qhull.org`
  * @programs `qconvex`, `qdelaunay`, `qhalf`, `qhull`, `qvoronoi`, ... (+1 more)
@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/qhull-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +qhull.org -- $SHELL -i`
- * @aliases `+qhull.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.qhullorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.qhullorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.qhullorg
  * console.log(pkg.name)        // "qhull.org"
  * console.log(pkg.description) // "Qhull development for www.qhull.org -- Qhull 20..."
  * console.log(pkg.programs)    // ["qconvex", "qdelaunay", ...]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/qhull-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const qhullorgSHELLiPackage = {
+export const qhullorgPackage = {
   /**
    * The display name of this package.
    */
@@ -69,14 +64,8 @@ export const qhullorgSHELLiPackage = {
   versions: [
     '8.0.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+qhull.org -- $SHELL -i',
-  ] as const,
   fullPath: 'qhull.org' as const,
+  aliases: [] as const,
 }
 
-export type QhullorgSHELLiPackage = typeof qhullorgSHELLiPackage
+export type QhullorgPackage = typeof qhullorgPackage

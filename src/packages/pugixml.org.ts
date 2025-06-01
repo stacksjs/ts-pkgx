@@ -1,22 +1,17 @@
 /**
- * **+pugixml.org -- $SHELL -i** - Light-weight, simple and fast XML parser for C++ with XPath support
+ * **pugixml.org** - Light-weight, simple and fast XML parser for C++ with XPath support
  *
  * @domain `pugixml.org`
  * @version `1.15.0` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pugixml-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +pugixml.org -- $SHELL -i`
- * @aliases `+pugixml.org -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pugixmlorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.pugixmlorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pugixmlorg
  * console.log(pkg.name)        // "pugixml.org"
  * console.log(pkg.description) // "Light-weight, simple and fast XML parser for C+..."
  * console.log(pkg.versions[0]) // "1.15.0" (latest)
@@ -25,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pugixml-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pugixmlorgSHELLiPackage = {
+export const pugixmlorgPackage = {
   /**
    * The display name of this package.
    */
@@ -58,14 +53,8 @@ export const pugixmlorgSHELLiPackage = {
     '1.14.0',
     '1.13.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+pugixml.org -- $SHELL -i',
-  ] as const,
   fullPath: 'pugixml.org' as const,
+  aliases: [] as const,
 }
 
-export type PugixmlorgSHELLiPackage = typeof pugixmlorgSHELLiPackage
+export type PugixmlorgPackage = typeof pugixmlorgPackage

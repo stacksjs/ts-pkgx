@@ -1,5 +1,5 @@
 /**
- * **+libvips.org -- $SHELL -i** - A fast image processing library with low memory needs.
+ * **vips** - A fast image processing library with low memory needs.
  *
  * @domain `libvips.org`
  * @programs `vips`, `vipsedit`, `vipsheader`, `vipsprofile`, `vipsthumbnail`
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libvips-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i`
- * @aliases `+libvips.org -- $SHELL -i`, `vips`
+ * @aliases `vips`
  * @dependencies `mozilla.org/mozjpeg`, `cairographics.org`, `heasarc.gsfc.nasa.gov/cfitsio`, ... (+24 more)
  *
  * @example
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.libvipsorgSHELLi
+ * const pkg = pantry.vips
  * // Or access via domain
  * const samePkg = pantry.libvipsorg
  * console.log(pkg === samePkg) // true
@@ -28,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libvips-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libvipsorgSHELLiPackage = {
+export const vipsPackage = {
   /**
    * The display name of this package.
    */
@@ -108,15 +108,14 @@ export const libvipsorgSHELLiPackage = {
     '8.15.0',
     '8.14.5',
   ] as const,
+  fullPath: 'libvips.org' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
-    '+libvips.org -- $SHELL -i',
     'vips',
   ] as const,
-  fullPath: 'libvips.org' as const,
 }
 
-export type LibvipsorgSHELLiPackage = typeof libvipsorgSHELLiPackage
+export type VipsPackage = typeof vipsPackage

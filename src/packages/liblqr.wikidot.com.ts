@@ -1,23 +1,18 @@
 /**
- * **+liblqr.wikidot.com -- $SHELL -i** - Liquid Rescale library
+ * **liblqr.wikidot.com** - Liquid Rescale library
  *
  * @domain `liblqr.wikidot.com`
  * @version `0.4.3` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/liblqr-wikidot-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +liblqr.wikidot.com -- $SHELL -i`
- * @aliases `+liblqr.wikidot.com -- $SHELL -i`
  * @dependencies `gnome.org/glib`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.liblqrwikidotcomSHELLi
- * // Or access via domain
- * const samePkg = pantry.liblqrwikidotcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.liblqrwikidotcom
  * console.log(pkg.name)        // "liblqr.wikidot.com"
  * console.log(pkg.description) // "Liquid Rescale library"
  * console.log(pkg.versions[0]) // "0.4.3" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/liblqr-wikidot-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const liblqrwikidotcomSHELLiPackage = {
+export const liblqrwikidotcomPackage = {
   /**
    * The display name of this package.
    */
@@ -64,14 +59,8 @@ export const liblqrwikidotcomSHELLiPackage = {
     '0.4.3',
     '0.4.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+liblqr.wikidot.com -- $SHELL -i',
-  ] as const,
   fullPath: 'liblqr.wikidot.com' as const,
+  aliases: [] as const,
 }
 
-export type LiblqrwikidotcomSHELLiPackage = typeof liblqrwikidotcomSHELLiPackage
+export type LiblqrwikidotcomPackage = typeof liblqrwikidotcomPackage

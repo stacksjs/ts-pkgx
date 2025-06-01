@@ -1,5 +1,5 @@
 /**
- * **+sphinx-doc.org -- $SHELL -i** - Tool to create intelligent and beautiful documentation
+ * **sphinx** - Tool to create intelligent and beautiful documentation
  *
  * @domain `sphinx-doc.org`
  * @programs `sphinx-apidoc`, `sphinx-autogen`, `sphinx-build`, `sphinx-quickstart`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sphinx-doc-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +sphinx-doc.org -- $SHELL -i`
- * @aliases `+sphinx-doc.org -- $SHELL -i`, `sphinx`
  * @dependencies `python.org>=3.8<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.sphinxdocorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.sphinxdocorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sphinxdocorg
  * console.log(pkg.name)        // "sphinx"
  * console.log(pkg.description) // "Tool to create intelligent and beautiful docume..."
  * console.log(pkg.programs)    // ["sphinx-apidoc", "sphinx-autogen", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sphinx-doc-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sphinxdocorgSHELLiPackage = {
+export const sphinxdocorgPackage = {
   /**
    * The display name of this package.
    */
@@ -115,15 +110,8 @@ export const sphinxdocorgSHELLiPackage = {
     '6.2.0',
     '6.1.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+sphinx-doc.org -- $SHELL -i',
-    'sphinx',
-  ] as const,
   fullPath: 'sphinx-doc.org' as const,
+  aliases: [] as const,
 }
 
-export type SphinxdocorgSHELLiPackage = typeof sphinxdocorgSHELLiPackage
+export type SphinxdocorgPackage = typeof sphinxdocorgPackage

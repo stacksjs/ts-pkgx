@@ -78,6 +78,7 @@ export const cbPackage = {
     '0.9.0.1',
     '0.10.0',
   ] as const,
+  fullPath: 'getclipboard.app' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -85,7 +86,6 @@ export const cbPackage = {
   aliases: [
     'cb',
   ] as const,
-  fullPath: 'getclipboard.app' as const,
 }
 
 export type CbPackage = typeof cbPackage

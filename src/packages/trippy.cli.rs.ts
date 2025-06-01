@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/trippy-cli-rs.md
  *
  * @install `sh <(curl https://pkgx.sh) trip`
- * @aliases `trip`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.trip
- * // Or access via domain
- * const samePkg = pantry.trippyclirs
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.trippyclirs
  * console.log(pkg.name)        // "trip"
  * console.log(pkg.description) // "Network diagnostic tool, inspired by mtr"
  * console.log(pkg.programs)    // ["trip"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/trippy-cli-rs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tripPackage = {
+export const trippyclirsPackage = {
   /**
    * The display name of this package.
    */
@@ -70,14 +65,8 @@ export const tripPackage = {
     '0.10.0',
     '0.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'trip',
-  ] as const,
   fullPath: 'trippy.cli.rs' as const,
+  aliases: [] as const,
 }
 
-export type TripPackage = typeof tripPackage
+export type TrippyclirsPackage = typeof trippyclirsPackage

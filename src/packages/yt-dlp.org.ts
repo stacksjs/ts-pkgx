@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/yt-dlp-org.md
  *
  * @install `sh <(curl https://pkgx.sh) yt-dlp`
- * @aliases `yt-dlp`
  * @dependencies `python.org>=3<3.12`, `ffmpeg.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.ytdlp
- * // Or access via domain
- * const samePkg = pantry.ytdlporg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ytdlporg
  * console.log(pkg.name)        // "yt-dlp"
  * console.log(pkg.description) // "A feature-rich command-line audio/video downloader"
  * console.log(pkg.programs)    // ["yt-dlp"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/yt-dlp-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ytdlpPackage = {
+export const ytdlporgPackage = {
   /**
    * The display name of this package.
    */
@@ -117,14 +112,8 @@ export const ytdlpPackage = {
     '2023.2.17',
     '2023.1.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'yt-dlp',
-  ] as const,
   fullPath: 'yt-dlp.org' as const,
+  aliases: [] as const,
 }
 
-export type YtdlpPackage = typeof ytdlpPackage
+export type YtdlporgPackage = typeof ytdlporgPackage

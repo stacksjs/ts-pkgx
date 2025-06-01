@@ -1,5 +1,5 @@
 /**
- * **+rsync.samba.org -- $SHELL -i** - An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
+ * **rsync** - An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
  *
  * @domain `rsync.samba.org`
  * @programs `rsync`, `rsync-ssl`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rsync-samba-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +rsync.samba.org -- $SHELL -i`
- * @aliases `+rsync.samba.org -- $SHELL -i`, `rsync`
  * @dependencies `zlib.net^1`, `facebook.com/zstd^1`, `lz4.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.rsyncsambaorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.rsyncsambaorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rsyncsambaorg
  * console.log(pkg.name)        // "rsync"
  * console.log(pkg.description) // "An open source utility that provides fast incre..."
  * console.log(pkg.programs)    // ["rsync", "rsync-ssl"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rsync-samba-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rsyncsambaorgSHELLiPackage = {
+export const rsyncsambaorgPackage = {
   /**
    * The display name of this package.
    */
@@ -77,15 +72,8 @@ export const rsyncsambaorgSHELLiPackage = {
     '3.3.0',
     '3.2.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+rsync.samba.org -- $SHELL -i',
-    'rsync',
-  ] as const,
   fullPath: 'rsync.samba.org' as const,
+  aliases: [] as const,
 }
 
-export type RsyncsambaorgSHELLiPackage = typeof rsyncsambaorgSHELLiPackage
+export type RsyncsambaorgPackage = typeof rsyncsambaorgPackage

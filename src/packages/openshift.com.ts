@@ -290,6 +290,7 @@ export const ocPackage = {
     '4.12.53',
     '4.11.59',
   ] as const,
+  fullPath: 'openshift.com' as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
@@ -297,7 +298,6 @@ export const ocPackage = {
   aliases: [
     'oc',
   ] as const,
-  fullPath: 'openshift.com' as const,
 }
 
 export type OcPackage = typeof ocPackage

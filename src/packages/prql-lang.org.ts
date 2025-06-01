@@ -1,5 +1,5 @@
 /**
- * **+prql-lang.org -- $SHELL -i** - PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
+ * **prql** - PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
  *
  * @domain `prql-lang.org`
  * @programs `prql-compiler`, `prqlc`
@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/prql-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +prql-lang.org -- $SHELL -i`
- * @aliases `+prql-lang.org -- $SHELL -i`, `prql`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.prqllangorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.prqllangorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.prqllangorg
  * console.log(pkg.name)        // "prql"
  * console.log(pkg.description) // "PRQL is a modern language for transforming data..."
  * console.log(pkg.programs)    // ["prql-compiler", "prqlc"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/prql-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const prqllangorgSHELLiPackage = {
+export const prqllangorgPackage = {
   /**
    * The display name of this package.
    */
@@ -97,15 +92,8 @@ export const prqllangorgSHELLiPackage = {
     '0.4.0',
     '0.3.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+prql-lang.org -- $SHELL -i',
-    'prql',
-  ] as const,
   fullPath: 'prql-lang.org' as const,
+  aliases: [] as const,
 }
 
-export type PrqllangorgSHELLiPackage = typeof prqllangorgSHELLiPackage
+export type PrqllangorgPackage = typeof prqllangorgPackage

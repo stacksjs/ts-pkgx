@@ -1,23 +1,18 @@
 /**
- * **+libssh2.org -- $SHELL -i** - the SSH library
+ * **libssh2.org** - the SSH library
  *
  * @domain `libssh2.org`
  * @version `1.11.1` (3 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libssh2-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libssh2.org -- $SHELL -i`
- * @aliases `+libssh2.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `zlib.net^1.2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libssh2orgSHELLi
- * // Or access via domain
- * const samePkg = pantry.libssh2org
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.libssh2org
  * console.log(pkg.name)        // "libssh2.org"
  * console.log(pkg.description) // "the SSH library"
  * console.log(pkg.versions[0]) // "1.11.1" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libssh2-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libssh2orgSHELLiPackage = {
+export const libssh2orgPackage = {
   /**
    * The display name of this package.
    */
@@ -66,14 +61,8 @@ export const libssh2orgSHELLiPackage = {
     '1.11.0',
     '1.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+libssh2.org -- $SHELL -i',
-  ] as const,
   fullPath: 'libssh2.org' as const,
+  aliases: [] as const,
 }
 
-export type Libssh2orgSHELLiPackage = typeof libssh2orgSHELLiPackage
+export type Libssh2orgPackage = typeof libssh2orgPackage

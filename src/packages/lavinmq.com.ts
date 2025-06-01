@@ -1,5 +1,5 @@
 /**
- * **+lavinmq.com -- $SHELL -i** - Lightweight and fast AMQP (0-9-1) server
+ * **lavinmq** - Lightweight and fast AMQP (0-9-1) server
  *
  * @domain `lavinmq.com`
  * @programs `lavinmq`, `lavinmqctl`, `lavinmqperf`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lavinmq-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +lavinmq.com -- $SHELL -i`
- * @aliases `+lavinmq.com -- $SHELL -i`, `lavinmq`
  * @dependencies `openssl.org^1.1`, `pcre.org/v2@10`, `libevent.org@2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.lavinmqcomSHELLi
- * // Or access via domain
- * const samePkg = pantry.lavinmqcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.lavinmqcom
  * console.log(pkg.name)        // "lavinmq"
  * console.log(pkg.description) // "Lightweight and fast AMQP (0-9-1) server"
  * console.log(pkg.programs)    // ["lavinmq", "lavinmqctl", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/lavinmq-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const lavinmqcomSHELLiPackage = {
+export const lavinmqcomPackage = {
   /**
    * The display name of this package.
    */
@@ -82,15 +77,8 @@ export const lavinmqcomSHELLiPackage = {
     '2.0.0',
     '1.3.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+lavinmq.com -- $SHELL -i',
-    'lavinmq',
-  ] as const,
   fullPath: 'lavinmq.com' as const,
+  aliases: [] as const,
 }
 
-export type LavinmqcomSHELLiPackage = typeof lavinmqcomSHELLiPackage
+export type LavinmqcomPackage = typeof lavinmqcomPackage

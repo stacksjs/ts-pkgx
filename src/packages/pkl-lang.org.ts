@@ -1,5 +1,5 @@
 /**
- * **+pkl-lang.org -- $SHELL -i** - A configuration as code language with rich validation and tooling.
+ * **pkl-lang.org** - A configuration as code language with rich validation and tooling.
  *
  * @domain `pkl-lang.org`
  * @programs `jpkl`, `pkl`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pkl-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +pkl-lang.org -- $SHELL -i`
- * @aliases `+pkl-lang.org -- $SHELL -i`
  * @companions `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pkllangorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.pkllangorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pkllangorg
  * console.log(pkg.name)        // "pkl-lang.org"
  * console.log(pkg.description) // "A configuration as code language with rich vali..."
  * console.log(pkg.programs)    // ["jpkl", "pkl"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pkl-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pkllangorgSHELLiPackage = {
+export const pkllangorgPackage = {
   /**
    * The display name of this package.
    */
@@ -83,14 +78,8 @@ export const pkllangorgSHELLiPackage = {
     '0.25.3',
     '0.25.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+pkl-lang.org -- $SHELL -i',
-  ] as const,
   fullPath: 'pkl-lang.org' as const,
+  aliases: [] as const,
 }
 
-export type PkllangorgSHELLiPackage = typeof pkllangorgSHELLiPackage
+export type PkllangorgPackage = typeof pkllangorgPackage

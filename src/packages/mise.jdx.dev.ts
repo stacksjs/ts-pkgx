@@ -1,5 +1,5 @@
 /**
- * **+mise.jdx.dev -- $SHELL -i** - dev tools, env vars, task runner
+ * **mise** - dev tools, env vars, task runner
  *
  * @domain `mise.jdx.dev`
  * @programs `rtx`, `mise`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mise-jdx-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i`
- * @aliases `+mise.jdx.dev -- $SHELL -i`, `mise`
  * @dependencies `openssl.org^1.1`, `libgit2.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.misejdxdevSHELLi
- * // Or access via domain
- * const samePkg = pantry.misejdxdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.misejdxdev
  * console.log(pkg.name)        // "mise"
  * console.log(pkg.description) // "dev tools, env vars, task runner"
  * console.log(pkg.programs)    // ["rtx", "mise"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mise-jdx-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const misejdxdevSHELLiPackage = {
+export const misejdxdevPackage = {
   /**
    * The display name of this package.
    */
@@ -354,15 +349,8 @@ export const misejdxdevSHELLiPackage = {
     '2024.1.2',
     '2024.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+mise.jdx.dev -- $SHELL -i',
-    'mise',
-  ] as const,
   fullPath: 'mise.jdx.dev' as const,
+  aliases: [] as const,
 }
 
-export type MisejdxdevSHELLiPackage = typeof misejdxdevSHELLiPackage
+export type MisejdxdevPackage = typeof misejdxdevPackage

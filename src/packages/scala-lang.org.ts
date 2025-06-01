@@ -1,5 +1,5 @@
 /**
- * **+scala-lang.org -- $SHELL -i** - The Scala 3 compiler, also known as Dotty.
+ * **scala-lang.org** - The Scala 3 compiler, also known as Dotty.
  *
  * @domain `scala-lang.org`
  * @programs `scalac`, `scala`, `scala-cli`, `sbtn`, `amm`
@@ -7,18 +7,13 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/scala-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +scala-lang.org -- $SHELL -i`
- * @aliases `+scala-lang.org -- $SHELL -i`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.scalalangorgSHELLi
- * // Or access via domain
- * const samePkg = pantry.scalalangorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.scalalangorg
  * console.log(pkg.name)        // "scala-lang.org"
  * console.log(pkg.description) // "The Scala 3 compiler, also known as Dotty."
  * console.log(pkg.programs)    // ["scalac", "scala", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/scala-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const scalalangorgSHELLiPackage = {
+export const scalalangorgPackage = {
   /**
    * The display name of this package.
    */
@@ -82,14 +77,8 @@ export const scalalangorgSHELLiPackage = {
     '3.3.6',
     '3.3.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+scala-lang.org -- $SHELL -i',
-  ] as const,
   fullPath: 'scala-lang.org' as const,
+  aliases: [] as const,
 }
 
-export type ScalalangorgSHELLiPackage = typeof scalalangorgSHELLiPackage
+export type ScalalangorgPackage = typeof scalalangorgPackage

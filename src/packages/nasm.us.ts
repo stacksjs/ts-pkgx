@@ -1,5 +1,5 @@
 /**
- * **+nasm.us -- $SHELL -i** - A cross-platform x86 assembler with an Intel-like syntax
+ * **nasm.us** - A cross-platform x86 assembler with an Intel-like syntax
  *
  * @domain `nasm.us`
  * @programs `nasm`, `ndisasm`
@@ -7,17 +7,12 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nasm-us.md
  *
  * @install `sh <(curl https://pkgx.sh) +nasm.us -- $SHELL -i`
- * @aliases `+nasm.us -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.nasmusSHELLi
- * // Or access via domain
- * const samePkg = pantry.nasmus
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nasmus
  * console.log(pkg.name)        // "nasm.us"
  * console.log(pkg.description) // "A cross-platform x86 assembler with an Intel-li..."
  * console.log(pkg.programs)    // ["nasm", "ndisasm"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nasm-us.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nasmusSHELLiPackage = {
+export const nasmusPackage = {
   /**
    * The display name of this package.
    */
@@ -67,14 +62,8 @@ export const nasmusSHELLiPackage = {
     '2.16.2',
     '2.15.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '+nasm.us -- $SHELL -i',
-  ] as const,
   fullPath: 'nasm.us' as const,
+  aliases: [] as const,
 }
 
-export type NasmusSHELLiPackage = typeof nasmusSHELLiPackage
+export type NasmusPackage = typeof nasmusPackage
