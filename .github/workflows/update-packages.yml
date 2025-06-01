@@ -66,10 +66,12 @@ jobs:
 
           if [ "$TOTAL_UPDATED" -eq 0 ]; then
             COMMIT_MSG="chore: update packages (no changes detected)"
+            SHOULD_COMMIT="false"
           elif [ "$TOTAL_UPDATED" -le 3 ]; then
             # For small numbers, list all packages
             PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | paste -sd ',' - | sed 's/,/, /g')
             COMMIT_MSG="chore: update $PACKAGE_LIST"
+            SHOULD_COMMIT="true"
           elif [ "$TOTAL_UPDATED" -le 8 ]; then
             # For medium numbers, list first few and count the rest
             FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | head -4 | paste -sd ',' - | sed 's/,/, /g')
@@ -79,19 +81,23 @@ jobs:
             else
               COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
             fi
+            SHOULD_COMMIT="true"
           else
             # For large numbers, list first few and count the rest
             FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | head -3 | paste -sd ',' - | sed 's/,/, /g')
             REMAINING=$((TOTAL_UPDATED - 3))
             COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
+            SHOULD_COMMIT="true"
           fi
 
           echo "commit_message=$COMMIT_MSG" >> $GITHUB_OUTPUT
           echo "total_updated=$TOTAL_UPDATED" >> $GITHUB_OUTPUT
+          echo "should_commit=$SHOULD_COMMIT" >> $GITHUB_OUTPUT
 
           # Debug output
           echo "Generated commit message: $COMMIT_MSG"
           echo "Total packages updated: $TOTAL_UPDATED"
+          echo "Should commit: $SHOULD_COMMIT"
           if [ "$TOTAL_UPDATED" -gt 0 ]; then
             echo "Updated packages: $(echo "$UPDATED_PACKAGES" | tr '\n' ' ')"
           fi
@@ -111,7 +117,7 @@ jobs:
           fi
 
       - name: Commit and push changes
-        if: steps.git-check.outputs.changes == 'true'
+        if: steps.git-check.outputs.changes == 'true' && steps.commit-message.outputs.should_commit == 'true'
         run: |
           git add src/packages/ docs/
           git commit -m "${{ steps.commit-message.outputs.commit_message }}" -m "Automated update via GitHub Actions workflow"
