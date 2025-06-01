@@ -21,6 +21,20 @@ jobs:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
+      - name: Debug workflow trigger
+        run: |
+          echo "=== Workflow Debug Information ==="
+          echo "Event name: ${{ github.event_name }}"
+          echo "Repository: ${{ github.repository }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "SHA: ${{ github.sha }}"
+          echo "Actor: ${{ github.actor }}"
+          echo "Workflow: ${{ github.workflow }}"
+          echo "Job: ${{ github.job }}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Run number: ${{ github.run_number }}"
+          echo "================================="
+
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
@@ -38,9 +52,13 @@ jobs:
           # Get the latest tag
           LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
 
+          echo "Checking for unreleased commits..."
+          echo "Latest tag: $LATEST_TAG"
+
           if [ -z "$LATEST_TAG" ]; then
             echo "No previous tags found, will create initial release"
             COMMIT_COUNT=$(git rev-list --count HEAD)
+            echo "Total commits in repository: $COMMIT_COUNT"
             echo "commits_since_release=$COMMIT_COUNT" >> $GITHUB_OUTPUT
             echo "has_unreleased=true" >> $GITHUB_OUTPUT
             echo "latest_tag=" >> $GITHUB_OUTPUT
@@ -48,6 +66,12 @@ jobs:
             # Count commits since the latest tag
             COMMIT_COUNT=$(git rev-list --count ${LATEST_TAG}..HEAD)
             echo "Found $COMMIT_COUNT commits since $LATEST_TAG"
+
+            # Show the actual commits for debugging
+            if [ "$COMMIT_COUNT" -gt 0 ]; then
+              echo "Recent commits since $LATEST_TAG:"
+              git log --oneline ${LATEST_TAG}..HEAD | head -10
+            fi
 
             if [ "$COMMIT_COUNT" -gt 0 ]; then
               echo "commits_since_release=$COMMIT_COUNT" >> $GITHUB_OUTPUT
@@ -82,12 +106,22 @@ jobs:
         run: |
           RELEASE_TYPE="${{ steps.release-type.outputs.release_type }}"
           COMMIT_COUNT="${{ steps.check-commits.outputs.commits_since_release }}"
+          LATEST_TAG="${{ steps.check-commits.outputs.latest_tag }}"
+
+          echo "=== Release Information ==="
+          echo "Release type: $RELEASE_TYPE"
+          echo "Commits since last release: $COMMIT_COUNT"
+          echo "Latest tag: $LATEST_TAG"
+          echo "Current branch: $(git branch --show-current)"
+          echo "Current commit: $(git rev-parse HEAD)"
+          echo "=========================="
 
           echo "Creating $RELEASE_TYPE release for $COMMIT_COUNT new commit(s)"
 
           # Use bumpp to bump version, commit, tag, and push
           # The --yes flag skips confirmation prompts
-          bunx bumpp package.json $RELEASE_TYPE --yes --commit --tag --push
+          echo "Running: bunx bumpp --$RELEASE_TYPE --yes --commit --tag --push"
+          bunx bumpp --$RELEASE_TYPE --yes --commit --tag --push
 
           echo "Successfully created and pushed release"
 

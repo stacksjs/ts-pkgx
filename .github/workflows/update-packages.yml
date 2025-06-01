@@ -15,6 +15,21 @@ jobs:
       contents: write # Needed to push changes
 
     steps:
+      - name: Debug workflow trigger
+        run: |
+          echo "=== Update Workflow Debug Information ==="
+          echo "Event name: ${{ github.event_name }}"
+          echo "Repository: ${{ github.repository }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "SHA: ${{ github.sha }}"
+          echo "Actor: ${{ github.actor }}"
+          echo "Workflow: ${{ github.workflow }}"
+          echo "Job: ${{ github.job }}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Run number: ${{ github.run_number }}"
+          echo "Current time: $(date)"
+          echo "============================================="
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -29,18 +44,37 @@ jobs:
       - name: Install Playwright browsers
         run: bunx playwright install chromium --with-deps
 
+      - name: Show initial git status
+        run: |
+          echo "=== Initial Git Status ==="
+          git status --porcelain
+          echo "=== End Initial Git Status ==="
+
       - name: Fetch all packages
         id: fetch-packages
         run: |
+          echo "Starting package fetch..."
+
           # Capture the JSON output from the fetch command
           FETCH_RESULT=$(bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000 --output-json 2>/dev/null || echo '{"success":false,"error":"fetch failed"}')
+
+          echo "Fetch command completed. Result:"
+          echo "$FETCH_RESULT"
+
           echo "fetch_result<<EOF" >> $GITHUB_OUTPUT
           echo "$FETCH_RESULT" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
           # Also run without JSON for normal logging (to stderr so it doesn't interfere with JSON)
+          echo "Running fetch command again for detailed logging..."
           bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000 >&2 || true
         timeout-minutes: 45
+
+      - name: Show git status after fetch
+        run: |
+          echo "=== Git Status After Fetch ==="
+          git status --porcelain
+          echo "=== End Git Status After Fetch ==="
 
       - name: Generate index
         run: bun bin/cli.ts generate-index
@@ -54,17 +88,47 @@ jobs:
         run: bun bin/cli.ts generate-docs
         timeout-minutes: 5
 
+      - name: Show git status after all generation
+        run: |
+          echo "=== Git Status After All Generation ==="
+          git status --porcelain
+          echo "=== End Git Status After All Generation ==="
+
       - name: Generate commit message
         id: commit-message
         run: |
           # Parse the fetch results
           FETCH_RESULT='${{ steps.fetch-packages.outputs.fetch_result }}'
 
+          # Debug: Show the raw fetch result
+          echo "Raw fetch result:"
+          echo "$FETCH_RESULT"
+
+          # Check if the fetch was successful
+          FETCH_SUCCESS=$(echo "$FETCH_RESULT" | jq -r '.success // false' 2>/dev/null)
+
+          if [ "$FETCH_SUCCESS" != "true" ]; then
+            echo "Fetch was not successful, skipping commit"
+            echo "commit_message=chore: fetch failed" >> $GITHUB_OUTPUT
+            echo "total_updated=0" >> $GITHUB_OUTPUT
+            echo "should_commit=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
           # Extract updated packages using jq - prefer mixed names (friendly when available, domain otherwise)
           UPDATED_PACKAGES=$(echo "$FETCH_RESULT" | jq -r '.updatedPackagesMixed[]? // .updatedPackages[]? // empty' 2>/dev/null | head -20)
           TOTAL_UPDATED=$(echo "$FETCH_RESULT" | jq -r '.totalUpdated // 0' 2>/dev/null)
+          TOTAL_PROCESSED=$(echo "$FETCH_RESULT" | jq -r '.totalProcessed // 0' 2>/dev/null)
 
+          # Debug output
+          echo "Total packages processed: $TOTAL_PROCESSED"
+          echo "Total packages updated: $TOTAL_UPDATED"
+          echo "Updated packages list:"
+          echo "$UPDATED_PACKAGES"
+
+          # If no packages were actually updated (all from cache), check if we still have git changes
           if [ "$TOTAL_UPDATED" -eq 0 ]; then
+            echo "No packages were updated (all from cache)"
             COMMIT_MSG="chore: update packages (no changes detected)"
             SHOULD_COMMIT="false"
           elif [ "$TOTAL_UPDATED" -le 3 ]; then
@@ -94,9 +158,8 @@ jobs:
           echo "total_updated=$TOTAL_UPDATED" >> $GITHUB_OUTPUT
           echo "should_commit=$SHOULD_COMMIT" >> $GITHUB_OUTPUT
 
-          # Debug output
+          # Final debug output
           echo "Generated commit message: $COMMIT_MSG"
-          echo "Total packages updated: $TOTAL_UPDATED"
           echo "Should commit: $SHOULD_COMMIT"
           if [ "$TOTAL_UPDATED" -gt 0 ]; then
             echo "Updated packages: $(echo "$UPDATED_PACKAGES" | tr '\n' ' ')"
@@ -108,17 +171,38 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
 
-          if [[ -z $(git status --porcelain) ]]; then
-            echo "No changes detected"
+          # Show git status for debugging
+          echo "Git status:"
+          git status --porcelain
+
+          # Check for changes in the specific directories we care about
+          CHANGES=$(git status --porcelain src/packages/ docs/ 2>/dev/null || echo "")
+
+          if [[ -z "$CHANGES" ]]; then
+            echo "No changes detected in src/packages/ or docs/"
             echo "changes=false" >> $GITHUB_OUTPUT
           else
-            echo "Changes detected"
+            echo "Changes detected:"
+            echo "$CHANGES"
             echo "changes=true" >> $GITHUB_OUTPUT
           fi
 
       - name: Commit and push changes
-        if: steps.git-check.outputs.changes == 'true' && steps.commit-message.outputs.should_commit == 'true'
+        if: steps.git-check.outputs.changes == 'true'
         run: |
+          # Only commit if we actually have changes AND either:
+          # 1. We should commit based on package updates, OR
+          # 2. We have actual file changes (in case the logic above missed something)
+
+          SHOULD_COMMIT="${{ steps.commit-message.outputs.should_commit }}"
+
+          echo "Should commit based on package updates: $SHOULD_COMMIT"
+          echo "Git changes detected: ${{ steps.git-check.outputs.changes }}"
+
+          # Always commit if we have git changes, regardless of the package update logic
+          # This ensures we don't miss commits due to logic errors
           git add src/packages/ docs/
           git commit -m "${{ steps.commit-message.outputs.commit_message }}" -m "Automated update via GitHub Actions workflow"
           git push
+
+          echo "Successfully committed and pushed changes"
