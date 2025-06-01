@@ -4,6 +4,11 @@ on:
   push:
     tags:
       - 'v*'
+  schedule:
+    # Check for unreleased commits every 2 hours
+    - cron: '0 */2 * * *'
+  # Allow manual trigger
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -11,7 +16,84 @@ permissions:
   id-token: write
 
 jobs:
+  auto-release:
+    # Only run on schedule or manual trigger, not on tag pushes
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Check for unreleased commits
+        id: check-commits
+        run: |
+          # Get the latest tag
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+
+          if [ -z "$LATEST_TAG" ]; then
+            echo "No previous tags found, will create initial release"
+            COMMIT_COUNT=$(git rev-list --count HEAD)
+            echo "commits_since_release=$COMMIT_COUNT" >> $GITHUB_OUTPUT
+            echo "has_unreleased=true" >> $GITHUB_OUTPUT
+            echo "latest_tag=" >> $GITHUB_OUTPUT
+          else
+            # Count commits since the latest tag
+            COMMIT_COUNT=$(git rev-list --count ${LATEST_TAG}..HEAD)
+            echo "Found $COMMIT_COUNT commits since $LATEST_TAG"
+
+            if [ "$COMMIT_COUNT" -gt 0 ]; then
+              echo "commits_since_release=$COMMIT_COUNT" >> $GITHUB_OUTPUT
+              echo "has_unreleased=true" >> $GITHUB_OUTPUT
+              echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+            else
+              echo "No commits since last release"
+              echo "commits_since_release=0" >> $GITHUB_OUTPUT
+              echo "has_unreleased=false" >> $GITHUB_OUTPUT
+              echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+      - name: Determine release type
+        if: steps.check-commits.outputs.has_unreleased == 'true'
+        id: release-type
+        run: |
+          # Always do patch releases for automated updates
+          RELEASE_TYPE="patch"
+
+          echo "release_type=$RELEASE_TYPE" >> $GITHUB_OUTPUT
+          echo "Release type will be: $RELEASE_TYPE"
+
+      - name: Configure Git
+        if: steps.check-commits.outputs.has_unreleased == 'true'
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+      - name: Run release
+        if: steps.check-commits.outputs.has_unreleased == 'true'
+        run: |
+          RELEASE_TYPE="${{ steps.release-type.outputs.release_type }}"
+          COMMIT_COUNT="${{ steps.check-commits.outputs.commits_since_release }}"
+
+          echo "Creating $RELEASE_TYPE release for $COMMIT_COUNT new commit(s)"
+
+          # Use bumpp to bump version, commit, tag, and push
+          # The --yes flag skips confirmation prompts
+          bunx bumpp package.json $RELEASE_TYPE --yes --commit --tag --push
+
+          echo "Successfully created and pushed release"
+
   npm:
+    # Only run on actual tag pushes (not on schedule)
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     outputs:
       version: ${{ env.VERSION }}
