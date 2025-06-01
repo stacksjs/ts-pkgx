@@ -318,9 +318,15 @@ describe('Fetch Module', () => {
       expect(content).toMatch(/export const \w+Package = \{/)
       expect(content).toMatch(/export type \w+Package = typeof/)
 
-      // Should not contain invalid characters
-      expect(content).not.toContain('agwa.name/git-crypt')
+      // Should not contain invalid characters in variable names or export statements
       expect(content).not.toContain('export const agwa.name')
+      expect(content).not.toContain('export type agwa.name')
+      expect(content).not.toContain('const agwa.name/git-crypt')
+      expect(content).not.toContain('type agwa.name/git-crypt')
+
+      // Should contain the domain string in legitimate places (install command, JSDoc)
+      expect(content).toContain('pkgx agwa.name/git-crypt')
+      expect(content).toContain('fullPath: \'agwa.name/git-crypt\'')
     })
   })
 

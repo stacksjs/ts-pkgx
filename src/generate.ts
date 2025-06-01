@@ -12,10 +12,6 @@ import { convertDomainToVarName, guessOriginalDomain } from './utils'
 
 // The packages directory path
 const PACKAGES_DIR = path.join(process.cwd(), 'src', 'packages')
-// The index file path
-const INDEX_FILE = path.join(PACKAGES_DIR, 'index.ts')
-// The aliases file path
-const ALIASES_FILE = path.join(PACKAGES_DIR, 'aliases.ts')
 // Default documentation output directory
 const DEFAULT_DOCS_DIR = path.join(process.cwd(), 'docs')
 
@@ -43,12 +39,21 @@ interface PkgxPackage {
   aliases: readonly string[]
 }
 
-async function importPantry(): Promise<Record<string, PkgxPackage>> {
+async function importPantry(packagesDir?: string): Promise<Record<string, PkgxPackage>> {
   try {
     const pantryData: Record<string, PkgxPackage> = {}
 
+    // Use provided packages directory or default to current working directory
+    const targetPackagesDir = packagesDir || path.join(process.cwd(), 'src', 'packages')
+
+    // Check if packages directory exists
+    if (!fs.existsSync(targetPackagesDir)) {
+      console.log(`Packages directory does not exist: ${targetPackagesDir}`)
+      return pantryData
+    }
+
     // Get all package files
-    const packageFiles = fs.readdirSync(PACKAGES_DIR)
+    const packageFiles = fs.readdirSync(targetPackagesDir)
       .filter(file => file.endsWith('.ts') && file !== 'index.ts' && file !== 'aliases.ts')
 
     console.log(`Reading package data from ${packageFiles.length} files...`)
@@ -56,7 +61,7 @@ async function importPantry(): Promise<Record<string, PkgxPackage>> {
     // Read each package file and extract the package data
     for (const file of packageFiles) {
       try {
-        const filePath = path.join(PACKAGES_DIR, file)
+        const filePath = path.join(targetPackagesDir, file)
         const content = fs.readFileSync(filePath, 'utf-8')
         const moduleName = path.basename(file, '.ts')
         const domain = guessOriginalDomain(moduleName)
@@ -103,8 +108,19 @@ function extractPackageDataFromFile(content: string, domain: string): PkgxPackag
         return []
 
       const arrayContent = match[1]
-      const items = arrayContent.match(/'([^']*)'/g)
-      return items ? items.map(item => item.replace(/'/g, '')) : []
+      // Try single quotes first, then double quotes
+      let items = arrayContent.match(/'([^']*)'/g)
+      if (items) {
+        return items.map(item => item.replace(/'/g, ''))
+      }
+
+      // Try double quotes
+      items = arrayContent.match(/"([^"]*)"/g)
+      if (items) {
+        return items.map(item => item.replace(/"/g, ''))
+      }
+
+      return []
     }
 
     // Helper function to extract string values
@@ -419,11 +435,13 @@ function normalizeModuleName(moduleName: string): string {
 /**
  * Read a package file and extract the actual export names
  * @param moduleName The module filename without extension
+ * @param packagesDir The packages directory to read from
  * @returns Object with the actual package variable name and type name
  */
-function getActualExportNames(moduleName: string): { packageVarName: string, typeName: string } {
+function getActualExportNames(moduleName: string, packagesDir?: string): { packageVarName: string, typeName: string } {
   try {
-    const filePath = path.join(PACKAGES_DIR, `${moduleName}.ts`)
+    const targetPackagesDir = packagesDir || PACKAGES_DIR
+    const filePath = path.join(targetPackagesDir, `${moduleName}.ts`)
     const content = fs.readFileSync(filePath, 'utf-8')
 
     // Extract the export const name
@@ -493,42 +511,76 @@ function toPackageVarNameFallback(moduleName: string): string {
 /**
  * Convert a filename to the expected type name in the file
  * @param moduleName The module filename without extension
+ * @param packagesDir The packages directory to read from
  * @returns The expected type name
  */
-function toTypeName(moduleName: string): string {
-  const { typeName } = getActualExportNames(moduleName)
+function toTypeName(moduleName: string, packagesDir?: string): string {
+  const { typeName } = getActualExportNames(moduleName, packagesDir)
   return typeName
 }
 
 /**
  * Convert a filename to the expected package variable name in the file
  * @param moduleName The module filename without extension
+ * @param packagesDir The packages directory to read from
  * @returns The expected package variable name
  */
-function toPackageVarName(moduleName: string): string {
-  const { packageVarName } = getActualExportNames(moduleName)
+function toPackageVarName(moduleName: string, packagesDir?: string): string {
+  const { packageVarName } = getActualExportNames(moduleName, packagesDir)
   return packageVarName
 }
 
 /**
  * Generate the index.ts file for the packages directory
+ * @param packagesDir Optional packages directory path (for testing)
  * @returns The path to the generated index file
  */
-export async function generateIndex(): Promise<string | null> {
+export async function generateIndex(packagesDir?: string): Promise<string | null> {
   try {
     console.log('🔧 Generating package index...')
 
+    // Use provided packages directory or default
+    const targetPackagesDir = packagesDir || PACKAGES_DIR
+    const targetIndexFile = path.join(targetPackagesDir, 'index.ts')
+
     // Import existing pantry data (may be empty if this is the first run)
-    const pantryData = await importPantry()
+    const pantryData = await importPantry(targetPackagesDir)
+
+    // Check if packages directory exists
+    if (!fs.existsSync(targetPackagesDir)) {
+      console.log(`Packages directory does not exist: ${targetPackagesDir}`)
+
+      // Ensure the packages directory exists before writing the index file
+      fs.mkdirSync(targetPackagesDir, { recursive: true })
+
+      // Create minimal index file
+      const content = `// Auto-generated package index
+// Do not edit this file directly
+
+export interface Pantry {
+}
+
+export type Packages = Pantry
+
+export const pantry: Pantry = {
+}
+
+export const packages: Packages = pantry
+export * from './aliases'
+`
+      await fs.promises.writeFile(targetIndexFile, content)
+      console.log(`Generated minimal ${targetIndexFile}`)
+      return targetIndexFile
+    }
 
     // Get all package files
-    const packageFiles = fs.readdirSync(PACKAGES_DIR)
+    const packageFiles = fs.readdirSync(targetPackagesDir)
       .filter(file => file.endsWith('.ts') && file !== 'index.ts' && file !== 'aliases.ts')
-      .map(file => path.join(PACKAGES_DIR, file))
+      .map(file => path.join(targetPackagesDir, file))
     console.log(`Found ${packageFiles.length} package files`)
 
     // Extract aliases from package files
-    const aliases = await extractAllAliases()
+    const aliases = await extractAllAliases(targetPackagesDir)
 
     // Build domain to variable name mapping
     const domainToVarName: Record<string, string> = {}
@@ -589,8 +641,8 @@ export async function generateIndex(): Promise<string | null> {
       }
 
       const moduleVarName = toSafeVarName(moduleName)
-      const packageVarName = toPackageVarName(moduleName)
-      const typeName = toTypeName(moduleName)
+      const packageVarName = toPackageVarName(moduleName, targetPackagesDir)
+      const typeName = toTypeName(moduleName, targetPackagesDir)
       const domainVarName = convertDomainToVarName(domain)
 
       // Add the import
@@ -809,13 +861,13 @@ export async function generateIndex(): Promise<string | null> {
         if (targetFile) {
           const targetModuleName = path.basename(targetFile, '.ts')
           const targetModuleVarName = toSafeVarName(targetModuleName)
-          const targetTypeName = toTypeName(targetModuleName)
+          const targetTypeName = toTypeName(targetModuleName, targetPackagesDir)
 
           interfaceDecl += aliasJsdoc
           interfaceDecl += `  ${quotedAliasVarName}: ${targetModuleVarName}.${targetTypeName}\n\n`
 
           // Add to pantry object (property names are already quoted in quotedAliasVarName)
-          pantry += `  ${quotedAliasVarName}: ${targetModuleVarName}.${toPackageVarName(targetModuleName)},\n`
+          pantry += `  ${quotedAliasVarName}: ${targetModuleVarName}.${toPackageVarName(targetModuleName, targetPackagesDir)},\n`
         }
       }
     }
@@ -835,10 +887,10 @@ export async function generateIndex(): Promise<string | null> {
     const content = `${imports}\n${interfaceDecl}${packagesType}${pantry}${packagesConst}${aliasesExport}`
 
     // Write to the index file
-    await fs.promises.writeFile(INDEX_FILE, content)
-    console.log(`Successfully generated ${INDEX_FILE}`)
+    await fs.promises.writeFile(targetIndexFile, content)
+    console.log(`Successfully generated ${targetIndexFile}`)
 
-    return INDEX_FILE
+    return targetIndexFile
   }
   catch (error) {
     console.error('Error generating index file:', error)
@@ -862,13 +914,23 @@ if (require.main === module && process.argv.length === 2) {
 
 /**
  * Extracts aliases from all package files
+ * @param packagesDir Optional packages directory path (for testing)
  * @returns A map of alias to domain name
  */
-async function extractAllAliases(): Promise<Record<string, string>> {
+async function extractAllAliases(packagesDir?: string): Promise<Record<string, string>> {
   const allAliases: Record<string, string> = {}
 
+  // Use provided packages directory or default to current working directory
+  const targetPackagesDir = packagesDir || path.join(process.cwd(), 'src', 'packages')
+
+  // Check if packages directory exists
+  if (!fs.existsSync(targetPackagesDir)) {
+    console.log(`Packages directory does not exist: ${targetPackagesDir}`)
+    return allAliases
+  }
+
   // Get all TypeScript files in the packages directory
-  const files = fs.readdirSync(PACKAGES_DIR)
+  const files = fs.readdirSync(targetPackagesDir)
     .filter(file => file.endsWith('.ts') && file !== 'index.ts' && file !== 'aliases.ts')
 
   console.log(`Found ${files.length} package files`)
@@ -876,7 +938,7 @@ async function extractAllAliases(): Promise<Record<string, string>> {
   // Process each file to extract aliases
   for (const file of files) {
     try {
-      const filePath = path.join(PACKAGES_DIR, file)
+      const filePath = path.join(targetPackagesDir, file)
       const content = fs.readFileSync(filePath, 'utf-8')
 
       const moduleName = path.basename(file, '.ts')
@@ -944,6 +1006,15 @@ export async function generateAliases(): Promise<string> {
     // Extract all aliases
     const aliases = await extractAllAliases()
 
+    // Use current working directory for aliases file path (for testing)
+    const aliasesFile = path.join(process.cwd(), 'src', 'packages', 'aliases.ts')
+
+    // Ensure the directory exists before writing the file
+    const aliasesDir = path.dirname(aliasesFile)
+    if (!fs.existsSync(aliasesDir)) {
+      fs.mkdirSync(aliasesDir, { recursive: true })
+    }
+
     // Generate the file content
     let content = '/**\n * Auto-generated aliases for pkgx packages\n */\n\n'
     content += 'export const aliases: Record<string, string> = {\n'
@@ -959,10 +1030,10 @@ export async function generateAliases(): Promise<string> {
     content += '}\n'
 
     // Write the file
-    fs.writeFileSync(ALIASES_FILE, content)
-    console.log(`Successfully generated ${ALIASES_FILE} with ${sortedAliases.length} aliases`)
+    fs.writeFileSync(aliasesFile, content)
+    console.log(`Successfully generated ${aliasesFile} with ${sortedAliases.length} aliases`)
 
-    return ALIASES_FILE
+    return aliasesFile
   }
   catch (error) {
     console.error('Error generating aliases file:', error)

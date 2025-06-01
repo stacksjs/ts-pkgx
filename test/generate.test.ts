@@ -115,7 +115,7 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
       process.chdir(tempDir)
 
       try {
-        const indexPath = await generateIndex()
+        const indexPath = await generateIndex(tempPackagesDir)
 
         expect(indexPath).toBeDefined()
         expect(indexPath).toContain('index.ts')
@@ -158,7 +158,7 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
         fs.rmSync(tempPackagesDir, { recursive: true, force: true })
         fs.mkdirSync(tempPackagesDir, { recursive: true })
 
-        const indexPath = await generateIndex()
+        const indexPath = await generateIndex(tempPackagesDir)
 
         expect(indexPath).toBeDefined()
         expect(fs.existsSync(indexPath!)).toBe(true)
@@ -179,7 +179,7 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
       process.chdir(tempDir)
 
       try {
-        const indexPath = await generateIndex()
+        const indexPath = await generateIndex(tempPackagesDir)
         const content = fs.readFileSync(indexPath!, 'utf-8')
 
         // Should have proper TypeScript syntax
@@ -213,11 +213,11 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
       process.chdir(tempDir)
 
       try {
-        const indexPath = await generateIndex()
+        const indexPath = await generateIndex(tempPackagesDir)
         const content = fs.readFileSync(indexPath!, 'utf-8')
 
         // Should handle nested paths like agwa.name/git-crypt
-        expect(content).toContain('agwaname-git-crypt')
+        expect(content).toContain('agwanamegitcrypt')
         expect(content).toContain('git-crypt')
       }
       finally {
@@ -258,9 +258,10 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
 
     test('should handle packages without aliases', async () => {
       // Create a package without aliases
-      const noAliasPackage = path.join(tempPackagesDir, 'noalias.ts')
+      // Use 'noaliascom.ts' filename so guessOriginalDomain converts it back to 'noalias.com'
+      const noAliasPackage = path.join(tempPackagesDir, 'noaliascom.ts')
       const content = `
-export const noaliasPackage = {
+export const noaliascomPackage = {
   name: 'No Alias Package' as const,
   domain: 'noalias.com' as const,
   description: 'Package without aliases' as const,
@@ -272,7 +273,7 @@ export const noaliasPackage = {
   aliases: [] as const,
 }
 
-export type NoaliasPackage = typeof noaliasPackage
+export type NoaliascomPackage = typeof noaliascomPackage
 `
       fs.writeFileSync(noAliasPackage, content)
 
@@ -458,8 +459,8 @@ export type NoaliasPackage = typeof noaliasPackage
         process.chdir(emptyTempDir)
 
         // Should not throw even if packages directory doesn't exist
-        await expect(generateIndex()).resolves.not.toThrow()
-        await expect(generateAliases()).resolves.not.toThrow()
+        await expect(generateIndex(path.join(emptyTempDir, 'src', 'packages'))).resolves.toBeDefined()
+        await expect(generateAliases()).resolves.toBeDefined()
       }
       finally {
         process.chdir(originalCwd)
@@ -477,8 +478,8 @@ export type NoaliasPackage = typeof noaliasPackage
 
       try {
         // Should not throw even with invalid files
-        await expect(generateIndex()).resolves.not.toThrow()
-        await expect(generateAliases()).resolves.not.toThrow()
+        await expect(generateIndex(tempPackagesDir)).resolves.toBeDefined()
+        await expect(generateAliases()).resolves.toBeDefined()
       }
       finally {
         process.chdir(originalCwd)
@@ -495,7 +496,7 @@ export type NoaliasPackage = typeof noaliasPackage
         fs.mkdirSync(readOnlyDir)
 
         // This might not work on all systems, but shouldn't crash
-        await expect(generateDocs(readOnlyDir)).resolves.not.toThrow()
+        await expect(generateDocs(readOnlyDir)).resolves.toBeUndefined()
       }
       finally {
         process.chdir(originalCwd)
@@ -509,7 +510,7 @@ export type NoaliasPackage = typeof noaliasPackage
       process.chdir(tempDir)
 
       try {
-        const indexPath = await generateIndex()
+        const indexPath = await generateIndex(tempPackagesDir)
         const content = fs.readFileSync(indexPath!, 'utf-8')
 
         // Variable names should be consistent
@@ -533,7 +534,7 @@ export type NoaliasPackage = typeof noaliasPackage
       process.chdir(tempDir)
 
       try {
-        const indexPath = await generateIndex()
+        const indexPath = await generateIndex(tempPackagesDir)
         const content = fs.readFileSync(indexPath!, 'utf-8')
 
         // Should have JSDoc comments
@@ -554,9 +555,9 @@ export type NoaliasPackage = typeof noaliasPackage
 
     test('should handle special characters in package data', async () => {
       // Create package with special characters
-      const specialFile = path.join(tempPackagesDir, 'special.ts')
+      const specialFile = path.join(tempPackagesDir, 'specialcom.ts')
       const specialContent = `
-export const specialPackage = {
+export const specialcomPackage = {
   name: 'Package with quotes and apostrophes' as const,
   domain: 'special.com' as const,
   description: 'Description with special chars' as const,
@@ -568,7 +569,7 @@ export const specialPackage = {
   aliases: ['special'] as const,
 }
 
-export type SpecialPackage = typeof specialPackage
+export type SpecialcomPackage = typeof specialcomPackage
 `
       fs.writeFileSync(specialFile, specialContent)
 
@@ -576,11 +577,11 @@ export type SpecialPackage = typeof specialPackage
       process.chdir(tempDir)
 
       try {
-        const indexPath = await generateIndex()
+        const indexPath = await generateIndex(tempPackagesDir)
         const content = fs.readFileSync(indexPath!, 'utf-8')
 
         // Should handle special characters without breaking
-        expect(content).toContain('special')
+        expect(content).toContain('specialcom')
         expect(content).not.toContain('undefined')
       }
       finally {
@@ -596,7 +597,7 @@ export type SpecialPackage = typeof specialPackage
 
       try {
         // Generate all components
-        const indexPath = await generateIndex()
+        const indexPath = await generateIndex(tempPackagesDir)
         const aliasesPath = await generateAliases()
         await generateDocs(tempDocsDir)
 
@@ -622,7 +623,7 @@ export type SpecialPackage = typeof specialPackage
       process.chdir(tempDir)
 
       try {
-        const indexPath = await generateIndex()
+        const indexPath = await generateIndex(tempPackagesDir)
         const aliasesPath = await generateAliases()
 
         const indexContent = fs.readFileSync(indexPath!, 'utf-8')

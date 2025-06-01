@@ -114,3 +114,5 @@ export interface PackageFetchOptions {
 export interface FetchPkgxPackageOptions {
   url?: string
 }
+
+export type { Packages, Pantry } from './packages'
