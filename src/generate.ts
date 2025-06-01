@@ -724,7 +724,13 @@ export async function generateIndex(): Promise<string | null> {
 
         // Check if this property name is already used (avoid duplicates)
         if (usedPropertyNames.has(aliasVarName)) {
-          console.log(`Skipping duplicate alias property: ${aliasVarName} for ${originalAlias}`)
+          console.log(`Skipping duplicate alias property: ${aliasVarName} for ${originalAlias} (already used)`)
+          continue
+        }
+
+        // Also check if this alias variable name is the same as the target variable name
+        if (aliasVarName === targetVarName) {
+          console.log(`Skipping redundant alias property: ${aliasVarName} for ${originalAlias} (same as target)`)
           continue
         }
 
