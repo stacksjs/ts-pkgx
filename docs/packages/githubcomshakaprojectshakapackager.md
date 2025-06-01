@@ -1,6 +1,6 @@
 # github.com/shaka-project-shaka-packager
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

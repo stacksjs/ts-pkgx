@@ -1,6 +1,6 @@
 # github.com/lucianosrp-rye-uv
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

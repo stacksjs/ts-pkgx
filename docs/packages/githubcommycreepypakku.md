@@ -1,6 +1,6 @@
 # github.com/mycreepy-pakku
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

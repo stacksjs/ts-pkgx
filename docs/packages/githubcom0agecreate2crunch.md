@@ -1,6 +1,6 @@
 # github.com/0age-create2crunch
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

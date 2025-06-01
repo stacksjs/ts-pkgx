@@ -1,6 +1,6 @@
 # aws.amazon.com/cdk
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

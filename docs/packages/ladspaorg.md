@@ -1,6 +1,6 @@
 # ladspa.org
 
-> Linux Audio Developer\
+> Linux Audio Developer's Simple Plugin
 
 ## Package Information
 

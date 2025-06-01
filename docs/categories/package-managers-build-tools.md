@@ -1,6 +1,6 @@
 # Package Managers & Build Tools
 
-*13 packages in this category*
+*12 packages in this category*
 
 Packages related to package managers & build tools.
 
@@ -13,16 +13,6 @@ Mirror of CMake upstream repository
 **Programs**: cmake, ccmake, cpack, ctest
 
 **Install**: `sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i`
-
----
-
-### [crates.io](../packages/cratesio.md)
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx crates.io`
 
 ---
 

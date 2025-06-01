@@ -1,6 +1,6 @@
 # oberhumer.com/ucl
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

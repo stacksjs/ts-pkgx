@@ -1,6 +1,6 @@
 # vite
 
-> Next generation frontend tooling. It\
+> Next generation frontend tooling. It's fast!
 
 ## Package Information
 

@@ -1,6 +1,6 @@
 # github.com/git-ecosystem-git-credential-manager
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

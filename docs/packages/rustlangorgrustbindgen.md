@@ -1,6 +1,6 @@
 # rust/lang.org-rust-bindgen
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

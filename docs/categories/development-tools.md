@@ -1,6 +1,6 @@
 # Development Tools
 
-*6 packages in this category*
+*4 packages in this category*
 
 Packages related to development tools.
 
@@ -13,26 +13,6 @@ Git Source Code Mirror - This is a publish-only repository but pull requests can
 **Programs**: git, git-cvsserver, git-receive-pack, git-shell, git-upload-archive, git-upload-pack, scalar, git-credential-osxkeychain
 
 **Install**: `sh <(curl https://pkgx.sh) +git-scm.org -- $SHELL -i`
-
----
-
-### [github.com](../packages/githubcom.md)
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx github.com`
-
----
-
-### [gitlab.com](../packages/gitlabcom.md)
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx gitlab.com`
 
 ---
 

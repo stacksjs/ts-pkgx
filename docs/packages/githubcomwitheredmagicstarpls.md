@@ -1,6 +1,6 @@
 # github.com/withered-magic-starpls
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

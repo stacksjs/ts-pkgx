@@ -78,7 +78,7 @@ The Go programming language
 
 ### [haskell.org](../packages/haskellorg.md)
 
-Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC\
+Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
 
 **Programs**: ghc, ghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-&lbrace;&lbrace;version&rbrace;&rbrace;, ghc-pkg, ghc-pkg-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-pkg-&lbrace;&lbrace;version&rbrace;&rbrace;, ghci, ghci-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghci-&lbrace;&lbrace;version&rbrace;&rbrace;, ghcup, haddock, haddock-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, haddock-&lbrace;&lbrace;version&rbrace;&rbrace;, hp2ps, hp2ps-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hp2ps-&lbrace;&lbrace;version&rbrace;&rbrace;, hpc, hpc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hpc-&lbrace;&lbrace;version&rbrace;&rbrace;, hsc2hs, hsc2hs-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hsc2hs-&lbrace;&lbrace;version&rbrace;&rbrace;, runghc, runghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, runghc-&lbrace;&lbrace;version&rbrace;&rbrace;, runhaskell, runhaskell-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, runhaskell-&lbrace;&lbrace;version&rbrace;&rbrace;
 

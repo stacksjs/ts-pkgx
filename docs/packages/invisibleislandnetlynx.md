@@ -1,6 +1,6 @@
 # invisible/island.net-lynx
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

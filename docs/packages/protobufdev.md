@@ -1,6 +1,6 @@
 # Protocol Buffers
 
-> Protocol Buffers - Google\
+> Protocol Buffers - Google's data interchange format
 
 ## Package Information
 

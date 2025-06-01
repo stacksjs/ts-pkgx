@@ -1,6 +1,6 @@
 # gaia/gis.it
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

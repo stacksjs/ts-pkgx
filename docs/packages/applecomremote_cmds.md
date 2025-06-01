@@ -1,6 +1,6 @@
 # apple.com/remote_cmds
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

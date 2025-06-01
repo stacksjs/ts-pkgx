@@ -1,6 +1,6 @@
 # waterlan.home.xs4all.nl
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

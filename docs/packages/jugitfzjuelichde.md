@@ -1,6 +1,6 @@
 # jugit.fz/juelich.de
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

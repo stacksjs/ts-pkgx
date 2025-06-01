@@ -1,6 +1,6 @@
 # DevOps & Infrastructure
 
-*13 packages in this category*
+*8 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
@@ -16,26 +16,6 @@ Ansible is a radically simple IT automation platform that makes your application
 
 ---
 
-### [argoproj.github.io](../packages/argoprojgithubio.md)
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx argoproj.github.io`
-
----
-
-### [cilium.io](../packages/ciliumio.md)
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx cilium.io`
-
----
-
 ### [consul.io](../packages/consulio.md) (consul)
 
 Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.
@@ -43,26 +23,6 @@ Consul is a distributed, highly available, and data center aware solution to con
 **Programs**: consul
 
 **Install**: `sh <(curl https://pkgx.sh) consul`
-
----
-
-### [docker.com](../packages/dockercom.md)
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx docker.com`
-
----
-
-### [fluxcd.io](../packages/fluxcdio.md)
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx fluxcd.io`
 
 ---
 
@@ -83,16 +43,6 @@ Connect, secure, control, and observe services.
 **Programs**: istioctl
 
 **Install**: `sh <(curl https://pkgx.sh) istioctl`
-
----
-
-### [kubernetes.io](../packages/kubernetesio.md)
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx kubernetes.io`
 
 ---
 

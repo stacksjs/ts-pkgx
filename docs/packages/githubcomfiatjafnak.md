@@ -1,6 +1,6 @@
 # github.com/fiatjaf-nak
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

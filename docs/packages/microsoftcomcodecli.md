@@ -1,6 +1,6 @@
 # microsoft.com/code-cli
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

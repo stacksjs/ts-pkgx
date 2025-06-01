@@ -1,6 +1,6 @@
 # harding.motd.ca
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

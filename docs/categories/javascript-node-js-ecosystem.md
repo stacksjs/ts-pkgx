@@ -1,6 +1,6 @@
 # JavaScript & Node.js Ecosystem
 
-*11 packages in this category*
+*10 packages in this category*
 
 Packages related to javascript & node.js ecosystem.
 
@@ -46,16 +46,6 @@ A modern runtime for JavaScript and TypeScript.
 
 ---
 
-### [expo.dev](../packages/expodev.md)
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx expo.dev`
-
----
-
 ### [flutter.dev](../packages/flutterdev.md)
 
 Flutter makes it easy and fast to build beautiful apps for mobile and beyond
@@ -98,7 +88,7 @@ Fast, disk space efficient package manager
 
 ### [vitejs.dev](../packages/vitejsdev.md) (vite)
 
-Next generation frontend tooling. It\
+Next generation frontend tooling. It's fast!
 
 **Programs**: vite
 

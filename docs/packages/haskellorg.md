@@ -1,6 +1,6 @@
 # haskell.org
 
-> Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC\
+> Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
 
 ## Package Information
 

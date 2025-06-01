@@ -1,6 +1,6 @@
 # openssh.com
 
-> Crafters of fine Open Source products
+> Package information available on pkgx.dev
 
 ## Package Information
 

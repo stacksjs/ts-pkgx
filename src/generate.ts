@@ -109,16 +109,23 @@ function extractPackageDataFromFile(content: string, domain: string): PkgxPackag
 
     // Helper function to extract string values
     const extractString = (key: string): string => {
-      // Try with 'as const' first
-      let regex = new RegExp(`${key}:\\s*'([^']*)'\\s*as const`)
+      // Try with 'as const' first - handle escaped quotes properly
+      let regex = new RegExp(`${key}:\\s*'((?:[^'\\\\]|\\\\.)*)'\\s*as const`)
       let match = content.match(regex)
-      if (match)
-        return match[1]
+      if (match) {
+        // Unescape the string - convert \' back to '
+        return match[1].replace(/\\'/g, '\'').replace(/\\\\/g, '\\')
+      }
 
-      // Try without 'as const'
-      regex = new RegExp(`${key}:\\s*'([^']*)'`)
+      // Try without 'as const' - handle escaped quotes properly
+      regex = new RegExp(`${key}:\\s*'((?:[^'\\\\]|\\\\.)*)'`)
       match = content.match(regex)
-      return match ? match[1] : ''
+      if (match) {
+        // Unescape the string - convert \' back to '
+        return match[1].replace(/\\'/g, '\'').replace(/\\\\/g, '\\')
+      }
+
+      return ''
     }
 
     // Extract all the package properties
@@ -584,38 +591,21 @@ export async function generateIndex(): Promise<string | null> {
       // Generate comprehensive JSDoc for this package
       let jsdoc = '  /**\n'
 
-      if (pkgData) {
+      if (pkgData && !shouldExcludePackage(pkgData)) {
         // Package name and description - escape and limit length
         let description = ''
         if (pkgData.description) {
-          // Check for generic/placeholder descriptions that should be ignored
-          const genericDescriptions = [
-            'Crafters of fine Open Source products',
-            'Go home.',
-            'Package information for',
-            'pkgx package',
-            'Loading...',
-            'Please wait...',
-          ]
+          // Escape special characters for JSDoc (but not backslashes)
+          let escapedDesc = pkgData.description
+            .replace(/\*/g, '\\*') // Escape asterisks
+            .replace(/`/g, '\\`') // Escape backticks
 
-          const isGenericDescription = genericDescriptions.some(generic =>
-            pkgData.description.includes(generic),
-          )
-
-          if (!isGenericDescription) {
-            // Escape backslashes and other special characters for JSDoc
-            let escapedDesc = pkgData.description
-              .replace(/\\/g, '\\\\') // Escape backslashes
-              .replace(/\*/g, '\\*') // Escape asterisks
-              .replace(/`/g, '\\`') // Escape backticks
-
-            // Limit description length for readability
-            if (escapedDesc.length > 200) {
-              escapedDesc = `${escapedDesc.substring(0, 197)}...`
-            }
-
-            description = ` - ${escapedDesc}`
+          // Limit description length for readability
+          if (escapedDesc.length > 200) {
+            escapedDesc = `${escapedDesc.substring(0, 197)}...`
           }
+
+          description = ` - ${escapedDesc}`
         }
         jsdoc += `   * **${pkgData.name || domain}**${description}\n`
         jsdoc += '   *\n'
@@ -725,38 +715,21 @@ export async function generateIndex(): Promise<string | null> {
 
         // Generate JSDoc for alias
         let aliasJsdoc = '  /**\n'
-        if (pkgData && targetDomain) {
+        if (pkgData && targetDomain && !shouldExcludePackage(pkgData)) {
           aliasJsdoc += `   * **${originalAlias}** - Alias for \`${targetDomain}\`\n`
           aliasJsdoc += '   *\n'
           if (pkgData.description) {
-            // Check for generic/placeholder descriptions that should be ignored
-            const genericDescriptions = [
-              'Crafters of fine Open Source products',
-              'Go home.',
-              'Package information for',
-              'pkgx package',
-              'Loading...',
-              'Please wait...',
-            ]
+            // Escape and limit description for alias (but not backslashes)
+            let escapedDesc = pkgData.description
+              .replace(/\*/g, '\\*') // Escape asterisks
+              .replace(/`/g, '\\`') // Escape backticks
 
-            const isGenericDescription = genericDescriptions.some(generic =>
-              pkgData.description.includes(generic),
-            )
-
-            if (!isGenericDescription) {
-              // Escape and limit description for alias
-              let escapedDesc = pkgData.description
-                .replace(/\\/g, '\\\\') // Escape backslashes
-                .replace(/\*/g, '\\*') // Escape asterisks
-                .replace(/`/g, '\\`') // Escape backticks
-
-              if (escapedDesc.length > 150) {
-                escapedDesc = `${escapedDesc.substring(0, 147)}...`
-              }
-
-              aliasJsdoc += `   * ${escapedDesc}\n`
-              aliasJsdoc += '   *\n'
+            if (escapedDesc.length > 150) {
+              escapedDesc = `${escapedDesc.substring(0, 147)}...`
             }
+
+            aliasJsdoc += `   * ${escapedDesc}\n`
+            aliasJsdoc += '   *\n'
           }
           aliasJsdoc += `   * @alias_for \`pantry.${targetVarName}\`\n`
           aliasJsdoc += `   * @domain \`${targetDomain}\`\n`
@@ -962,6 +935,28 @@ export async function generateAliases(): Promise<string> {
 }
 
 /**
+ * Check if a package has placeholder/invalid data and should be excluded
+ */
+function shouldExcludePackage(pkg: PkgxPackage): boolean {
+  if (!pkg.description)
+    return true
+
+  const placeholderDescriptions = [
+    'Go home.',
+    'Crafters of fine Open Source products',
+    'Package information for',
+    'pkgx package',
+    'Loading...',
+    'Please wait...',
+    'Package information available on pkgx.dev',
+  ]
+
+  return placeholderDescriptions.some(placeholder =>
+    pkg.description.includes(placeholder),
+  )
+}
+
+/**
  * Generate package catalog with proper categorization
  */
 async function generatePackageCatalog(outputDir: string): Promise<string> {
@@ -969,15 +964,31 @@ async function generatePackageCatalog(outputDir: string): Promise<string> {
   const categories = getCategoryMapping()
   const catalogPath = path.join(outputDir, 'package-catalog.md')
 
+  // Filter out packages with placeholder data
+  const validPantry: Record<string, PkgxPackage> = {}
+  let excludedCount = 0
+
+  for (const [key, pkg] of Object.entries(pantry)) {
+    if (!shouldExcludePackage(pkg)) {
+      validPantry[key] = pkg
+    }
+    else {
+      excludedCount++
+      console.log(`Excluding package ${pkg.domain || key} (placeholder data)`)
+    }
+  }
+
+  console.log(`Filtered out ${excludedCount} packages with placeholder data`)
+
   // Track categorized packages
   const categorizedDomains = new Set<string>()
   Object.values(categories).forEach((domains) => {
     domains.forEach(domain => categorizedDomains.add(domain))
   })
 
-  // Add uncategorized packages to Utilities
+  // Add uncategorized packages to Utilities (only valid packages)
   const uncategorizedPackages: string[] = []
-  Object.keys(pantry).forEach((domain) => {
+  Object.keys(validPantry).forEach((domain) => {
     if (!categorizedDomains.has(domain)) {
       uncategorizedPackages.push(domain)
     }
@@ -989,13 +1000,13 @@ async function generatePackageCatalog(outputDir: string): Promise<string> {
 
   let content = `# Package Catalog
 
-This comprehensive catalog lists all ${Object.keys(pantry).length}+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all ${Object.keys(validPantry).length}+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using \`getPackage(name)\` or directly via \`pantry.domain\`.
 
 ## Quick Stats
 
-- **Total Packages**: ${Object.keys(pantry).length}
+- **Total Packages**: ${Object.keys(validPantry).length}
 - **Categories**: ${Object.keys(categories).length}
 - **Last Updated**: ${new Date().toISOString()}
 
@@ -1006,7 +1017,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
   // Generate table of contents
   Object.keys(categories).forEach((category) => {
     const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-')
-    const count = categories[category].filter(domain => pantry[domain]).length
+    const count = categories[category].filter(domain => validPantry[domain]).length
     content += `- [${category}](#${slug}) (${count} packages)\n`
   })
 
@@ -1014,7 +1025,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
 
   // Generate sections for each category
   for (const [category, domains] of Object.entries(categories)) {
-    const validDomains = domains.filter(domain => pantry[domain]).sort()
+    const validDomains = domains.filter(domain => validPantry[domain]).sort()
 
     if (validDomains.length === 0)
       continue
@@ -1026,7 +1037,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
 
     for (const domain of validDomains) {
       try {
-        const pkg = pantry[domain]
+        const pkg = validPantry[domain]
         if (!pkg)
           continue
 
@@ -1047,8 +1058,10 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
         const latestVersion = pkg.versions?.[0] || 'latest'
         const versionInfo = versionCount > 0 ? `${latestVersion} (+${versionCount - 1})` : 'latest'
 
-        // Escape pipe characters and limit description length
+        // Escape pipe characters for markdown table
         let description = pkg.description.replace(/\|/g, '\\|')
+
+        // Limit description length for table readability
         if (description.length > 100) {
           description = `${description.substring(0, 97)}...`
         }
@@ -1160,16 +1173,22 @@ async function generatePackagePages(outputDir: string): Promise<string[]> {
   const generatedFiles: string[] = []
 
   for (const [domainVarName, pkg] of Object.entries(pantry)) {
+    // Skip packages with placeholder data
+    if (shouldExcludePackage(pkg)) {
+      console.log(`Skipping package page for ${pkg.domain || domainVarName} (placeholder data)`)
+      continue
+    }
     try {
       // Use the domain variable name for the filename to ensure consistency
       const filename = `${domainVarName}.md`
       const filepath = path.join(packagesDir, filename)
 
       const domain = pkg.domain || pkg.fullPath || domainVarName
+      const description = pkg.description || ''
 
       let content = `# ${pkg.name || domain}
 
->${pkg.description ? ` ${pkg.description}` : ''}
+>${description ? ` ${description}` : ''}
 
 ## Package Information
 
@@ -1335,6 +1354,7 @@ async function generateCategoryPages(outputDir: string): Promise<string[]> {
         return pkg ? { domainVarName, pkg } : null
       })
       .filter((item): item is { domainVarName: string, pkg: PkgxPackage } => item !== null)
+      .filter(({ pkg }) => !shouldExcludePackage(pkg)) // Exclude packages with placeholder data
       .sort((a, b) => (a.pkg.domain || a.domainVarName).localeCompare(b.pkg.domain || b.domainVarName))
 
     if (validPackages.length === 0)
@@ -1363,10 +1383,12 @@ ${categoryName === 'Programming Languages'
     validPackages.forEach(({ domainVarName, pkg }) => {
       const domain = pkg.domain || pkg.fullPath || 'unknown'
       const aliases = pkg.aliases && pkg.aliases.length > 0 ? ` (${pkg.aliases.join(', ')})` : ''
+      const description = pkg.description || ''
+
       content += `### [${domain}](../packages/${domainVarName}.md)${aliases}
-${pkg.description
+${description
   ? `
-${pkg.description}
+${description}
 `
   : ''}
 **Programs**: ${pkg.programs && pkg.programs.length > 0 ? pkg.programs.map((p: string) => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ') : 'None specified'}

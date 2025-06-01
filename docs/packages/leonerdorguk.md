@@ -1,6 +1,6 @@
 # leonerd.org.uk
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

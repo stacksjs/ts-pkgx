@@ -1,6 +1,6 @@
 # github.com/Diniboy1123-usque
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

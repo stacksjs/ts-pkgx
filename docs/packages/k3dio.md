@@ -1,6 +1,6 @@
 # k3d
 
-> Little helper to run CNCF\
+> Little helper to run CNCF's k3s in Docker
 
 ## Package Information
 

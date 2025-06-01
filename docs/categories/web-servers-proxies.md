@@ -1,20 +1,10 @@
 # Web Servers & Proxies
 
-*3 packages in this category*
+*2 packages in this category*
 
 Packages related to web servers & proxies.
 
 ## Packages
-
-### [apache.org](../packages/apacheorg.md)
-
-Go home.
-
-**Programs**: None specified
-
-**Install**: `pkgx apache.org`
-
----
 
 ### [nginx.org](../packages/nginxorg.md) (nginx)
 

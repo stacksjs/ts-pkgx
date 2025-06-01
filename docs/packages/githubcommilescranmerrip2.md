@@ -1,6 +1,6 @@
 # github.com/MilesCranmer-rip2
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

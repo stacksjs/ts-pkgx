@@ -1,6 +1,6 @@
 # cocoapods.org/xcodeproj
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

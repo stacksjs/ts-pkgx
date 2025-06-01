@@ -1,6 +1,6 @@
 # github.com/fastfetch-cli-fastfetch
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

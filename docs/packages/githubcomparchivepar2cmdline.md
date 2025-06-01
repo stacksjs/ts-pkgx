@@ -1,6 +1,6 @@
 # github.com/Parchive-par2cmdline
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

@@ -1,6 +1,6 @@
 # github.com/peak-s5cmd
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

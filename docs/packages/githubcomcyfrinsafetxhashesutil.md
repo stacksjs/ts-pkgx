@@ -1,6 +1,6 @@
 # github.com/Cyfrin-safe-tx-hashes-util
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

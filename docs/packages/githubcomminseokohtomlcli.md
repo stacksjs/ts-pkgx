@@ -1,6 +1,6 @@
 # github.com/MinseokOh-toml-cli
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

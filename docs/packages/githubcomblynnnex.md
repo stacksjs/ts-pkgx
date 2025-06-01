@@ -1,6 +1,6 @@
 # github.com/blynn-nex
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

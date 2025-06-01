@@ -1,6 +1,6 @@
 # developer.1password.com/1password-cli
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

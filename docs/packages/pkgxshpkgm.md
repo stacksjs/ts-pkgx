@@ -1,6 +1,6 @@
 # pkgx.sh/pkgm
 
-> Go home.
+> Package information available on pkgx.dev
 
 ## Package Information
 

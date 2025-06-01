@@ -1,6 +1,6 @@
 # scons
 
-> Substitute for classic \
+> Substitute for classic 'make' tool with autoconf/automake functionality
 
 ## Package Information
 

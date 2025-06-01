@@ -1,6 +1,6 @@
 # bytebase
 
-> World\
+> World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps.
 
 ## Package Information
 
@@ -61,7 +61,7 @@ This package depends on:
 
 These packages work well with bytebase:
 
-- [`postgresql.org`](postgresqlorg.md) - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don\
+- [`postgresql.org`](postgresqlorg.md) - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
 
 ## Usage Examples
 

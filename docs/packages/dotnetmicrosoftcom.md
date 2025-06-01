@@ -1,6 +1,6 @@
 # dotnet
 
-> Home of .NET\
+> Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET SDK from source
 
 ## Package Information
 
