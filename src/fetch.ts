@@ -1130,6 +1130,22 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       return []
     }
 
+    // Filter out packages that shouldn't exist as standalone packages
+    allPackageNames = allPackageNames.filter((name) => {
+      // Filter out agwa.name as standalone - only agwa.name/git-crypt is valid
+      if (name === 'agwa.name') {
+        console.log(`Filtering out standalone agwa.name - only agwa.name/git-crypt is valid`)
+        return false
+      }
+
+      // Filter out other invalid standalone packages
+      if (name === 'undefined' || name === 'aliases' || name === 'index') {
+        return false
+      }
+
+      return true
+    })
+
     console.log(`Found ${allPackageNames.length} packages from GitHub API`)
 
     // Apply limit if specified
@@ -1906,11 +1922,7 @@ export async function fetchAndSavePackage(
 ): Promise<{ success: boolean, fullDomainName?: string, aliases?: string[], filePath?: string }> {
   try {
     // Special handling for known problematic packages
-    if (packageName === 'agwa.name') {
-      console.log(`Using specialized handling for agwa.name...`)
-      // Handle agwa.name/git-crypt directly rather than the base domain
-      return await fetchAndSavePackage('agwa.name/git-crypt', outputDir, timeout, saveAsJson, 1, maxRetries, debug, options)
-    }
+    // agwa.name is filtered out - only agwa.name/git-crypt should be processed
 
     // Check cache first if caching is enabled
     const useCache = options.cache !== false
@@ -2086,9 +2098,9 @@ export async function fetchAndSavePackage(
         if (error.toString().includes('404') || error.toString().includes('Not Found')) {
           console.error(`Package ${packageName} returned 404 Not Found. Trying alternative approaches...`)
 
-          // For agwa.name specifically, try a different URL structure
-          if (packageName.startsWith('agwa.name')) {
-            // Try fetching with a direct URL approach for agwa.name
+          // For nested packages, try a different URL structure
+          if (packageName.includes('/')) {
+          // Try fetching with a direct URL approach for nested packages
             let altBrowser = null
             try {
               altBrowser = await chromium.launch({
@@ -2150,7 +2162,7 @@ export async function fetchAndSavePackage(
                   filePath = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
                 }
 
-                console.log(`Successfully saved agwa.name package to ${filePath} using alternative method`)
+                console.log(`Successfully saved nested package to ${filePath} using alternative method`)
                 return {
                   success: true,
                   fullDomainName: packageName,
@@ -2179,7 +2191,7 @@ export async function fetchAndSavePackage(
                   console.error(`Error closing alternative browser for ${packageName}:`, err)
                 }
               }
-              console.error(`Alternative method for agwa.name also failed:`, directError)
+              console.error(`Alternative method for nested package also failed:`, directError)
               // Fall through to the retry logic
             }
           }
