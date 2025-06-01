@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 527
 - **Categories**: 13
-- **Last Updated**: 2025-06-01T13:36:15.099Z
+- **Last Updated**: 2025-06-01T14:33:17.547Z
 
 ## Table of Contents
 
@@ -638,7 +638,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[xcfiledev](./packages/xcfiledev.md)** (xc) | Markdown defined task runner. | xc | 0.8.5 (+26) | `pkgx xc` |
 | **[xkbcommonorg](./packages/xkbcommonorg.md)** (xkbcli) | keymap handling library for toolkits and window systems | xkbcli | 1.10.0 (+8) | `pkgx xkbcli` |
 | **[xplrdev](./packages/xplrdev.md)** (xplr) | A hackable, minimal, fast TUI file explorer | xplr | 1.0.0 (+3) | `pkgx xplr` |
-| **[xpraorg](./packages/xpraorg.md)** (xpra) | Persistent remote applications for X11; screen sharing for X11, MacOS and MSWindows. | xpra | 6.3.0 (+8) | `pkgx xpra` |
+| **[xpraorg](./packages/xpraorg.md)** (xpra) | Persistent remote applications for X11; screen sharing for X11, MacOS and MSWindows. | xpra | 6.3.1 (+9) | `pkgx xpra` |
 | **[xtlsgithubio](./packages/xtlsgithubio.md)** (xray, xray-core) | Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible config... | xray | 25.5.16 (+29) | `pkgx xray-core` |
 | **[yadmio](./packages/yadmio.md)** (yadm) | Yet Another Dotfiles Manager | yadm | 3.5.0 (+3) | `pkgx yadm` |
 | **[yasmtortallnet](./packages/yasmtortallnet.md)** (yasm) | Yasm Assembler mainline development tree | yasm | 1.3.0 (+0) | `pkgx yasm` |

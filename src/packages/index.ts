@@ -16725,7 +16725,7 @@ export interface Pantry {
    *
    * @domain `xpra.org`
    * @programs `xpra`
-   * @version `6.3.0` (9 versions available)
+   * @version `6.3.1` (10 versions available)
    * @install `sh <(curl https://pkgx.sh) xpra`
    * @aliases `xpra`
    * @dependencies `pkgx.sh^1`, `python.org~3.11`, `cython.org`, ... (+26 more)
@@ -16738,7 +16738,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "xpra"
    * console.log(pkg.description) // "Persistent remote applications for X11; screen ..."
    * console.log(pkg.programs)    // ["xpra"]
-   * console.log(pkg.versions[0]) // "6.3.0"
+   * console.log(pkg.versions[0]) // "6.3.1"
    * ```
    */
   xpraorg: xpra_org.XpraPackage

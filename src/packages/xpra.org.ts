@@ -3,7 +3,7 @@
  *
  * @domain `xpra.org`
  * @programs `xpra`
- * @version `6.3.0` (9 versions available)
+ * @version `6.3.1` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/xpra-org.md
  *
  * @install `sh <(curl https://pkgx.sh) xpra`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "xpra"
  * console.log(pkg.description) // "Persistent remote applications for X11; screen ..."
  * console.log(pkg.programs)    // ["xpra"]
- * console.log(pkg.versions[0]) // "6.3.0" (latest)
+ * console.log(pkg.versions[0]) // "6.3.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/xpra-org.md
@@ -97,6 +97,7 @@ export const xpraPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.3.1',
     '6.3.0',
     '6.2.5',
     '6.2.4',
