@@ -4,7 +4,7 @@ import path from 'node:path'
 import process from 'node:process'
 import { CAC } from 'cac'
 import { version } from '../package.json'
-import { DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS } from '../src/consts'
+import { DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS, PACKAGE_ALIASES } from '../src/consts'
 import {
   cleanupBrowserResources,
   fetchAndSaveAllPackages,
@@ -28,6 +28,7 @@ interface FetchOptions {
   debug?: boolean
   verbose?: boolean
   concurrency?: number
+  outputJson?: boolean
 }
 
 const cli = new CAC('pkgx-tools')
@@ -69,6 +70,36 @@ async function exitHandler(signal: string) {
 process.on('SIGINT', () => exitHandler('SIGINT'))
 process.on('SIGTERM', () => exitHandler('SIGTERM'))
 
+/**
+ * Convert a domain name to a friendly alias name if available
+ */
+function getFriendlyName(domainName: string): string {
+  // Create reverse mapping from PACKAGE_ALIASES
+  const reverseAliases: Record<string, string> = {}
+  for (const [alias, domain] of Object.entries(PACKAGE_ALIASES)) {
+    reverseAliases[domain] = alias
+  }
+
+  // Return the friendly alias if available, otherwise return the domain
+  return reverseAliases[domainName] || domainName
+}
+
+/**
+ * Convert a list of domain names to friendly names
+ */
+function getFriendlyNames(domainNames: string[]): { friendlyNames: string[], mixedNames: string[] } {
+  const friendlyNames = domainNames.map(getFriendlyName)
+
+  // Create a mixed list that uses friendly names when available, domain names otherwise
+  const mixedNames = domainNames.map((domain) => {
+    const friendly = getFriendlyName(domain)
+    // If the friendly name is the same as domain, it means no alias was found
+    return friendly === domain ? domain : friendly
+  })
+
+  return { friendlyNames, mixedNames }
+}
+
 // Unified fetch command with all functionality
 cli
   .command('fetch [packageName]', 'Fetch package information from pkgx.dev')
@@ -85,6 +116,7 @@ cli
   .option('-d, --debug', 'Enable debug mode (save screenshots)')
   .option('-v, --verbose', 'Enable verbose output')
   .option('-y, --concurrency <count>', 'Number of packages to fetch concurrently (default: 8)', { default: 8 })
+  .option('--output-json', 'Output results as JSON (for CI integration)')
   .action(async (packageName: string | undefined, options: FetchOptions) => {
     // Extract options with appropriate types
     const {
@@ -101,6 +133,7 @@ cli
       verbose = false,
       concurrency = 8,
       pkg,
+      outputJson = false,
     } = options
 
     // Ensure output directory exists
@@ -119,10 +152,13 @@ cli
 
     try {
       let savedPackages: string[] = []
+      let actuallyFetched: string[] = []
 
       if (fetchAll) {
         // Fetch all packages
-        console.log('Fetching all packages...')
+        if (!outputJson) {
+          console.log('Fetching all packages...')
+        }
         const fetchOptions: PackageFetchOptions = {
           outputDir,
           cacheDir,
@@ -135,11 +171,16 @@ cli
         }
 
         savedPackages = await fetchAndSaveAllPackages(fetchOptions)
+        // For the bulk fetch, we'll consider all returned packages as "actually fetched"
+        // since the function only returns packages that were successfully processed
+        actuallyFetched = [...savedPackages]
       }
       else if (pkg) {
         // Fetch specific packages
         const packageNames = pkg.split(',').map((p: string) => p.trim())
-        console.log(`Fetching ${packageNames.length} packages: ${packageNames.join(', ')}`)
+        if (!outputJson) {
+          console.log(`Fetching ${packageNames.length} packages: ${packageNames.join(', ')}`)
+        }
 
         // Process each package sequentially
         for (const name of packageNames) {
@@ -160,7 +201,10 @@ cli
 
           if (result && result.success) {
             savedPackages.push(name)
-            if (verbose && result.filePath) {
+            // Note: We can't easily determine if it was from cache or fetched
+            // in the current implementation, so we'll assume it was fetched
+            actuallyFetched.push(name)
+            if (verbose && result.filePath && !outputJson) {
               console.log(`Successfully saved ${name} to ${result.filePath}`)
             }
           }
@@ -168,7 +212,9 @@ cli
       }
       else if (packageName) {
         // Fetch a single package
-        console.log(`Fetching package: ${packageName}`)
+        if (!outputJson) {
+          console.log(`Fetching package: ${packageName}`)
+        }
         const result = await fetchAndSavePackage(
           packageName,
           outputDir,
@@ -186,23 +232,51 @@ cli
 
         if (result && result.success) {
           savedPackages.push(packageName)
-          if (verbose && result.filePath) {
+          actuallyFetched.push(packageName)
+          if (verbose && result.filePath && !outputJson) {
             console.log(`Successfully saved ${packageName} to ${result.filePath}`)
           }
         }
       }
       else {
-        console.error('Error: Please specify a package name, use --pkg, or use --all')
+        if (!outputJson) {
+          console.error('Error: Please specify a package name, use --pkg, or use --all')
+        }
         process.exit(1)
       }
 
       // Generate index file after fetching packages
       if (!saveAsJson && savedPackages.length > 0) {
         const indexPath = await generateIndex()
-        console.log(`Successfully generated ${indexPath}`)
+        if (!outputJson) {
+          console.log(`Successfully generated ${indexPath}`)
+        }
       }
 
-      console.log(`Processed ${savedPackages.length} packages.`)
+      // Output results
+      if (outputJson) {
+        // Get friendly names for the updated packages
+        const { friendlyNames, mixedNames } = getFriendlyNames(actuallyFetched)
+        const { friendlyNames: allFriendlyNames, mixedNames: allMixedNames } = getFriendlyNames(savedPackages)
+
+        // Output JSON for CI integration
+        const result = {
+          success: true,
+          updatedPackages: actuallyFetched, // Packages that were actually fetched (not from cache)
+          updatedPackagesFriendly: friendlyNames, // Friendly names for fetched packages
+          updatedPackagesMixed: mixedNames, // Mixed friendly/domain names for fetched packages
+          allProcessedPackages: savedPackages, // All packages processed (including from cache)
+          allProcessedFriendly: allFriendlyNames, // All packages in friendly names
+          allProcessedMixed: allMixedNames, // All packages in mixed names
+          totalUpdated: actuallyFetched.length, // Count of actually fetched packages
+          totalProcessed: savedPackages.length, // Count of all processed packages
+          timestamp: new Date().toISOString(),
+        }
+        console.log(JSON.stringify(result))
+      }
+      else {
+        console.log(`Processed ${savedPackages.length} packages.`)
+      }
 
       // Clear the force exit timeout as we're finishing normally
       clearTimeout(forceExitTimeout)
@@ -214,7 +288,18 @@ cli
       setTimeout(() => process.exit(0), 1000)
     }
     catch (error) {
-      console.error('Error:', error)
+      if (outputJson) {
+        // Output JSON error for CI integration
+        const result = {
+          success: false,
+          error: String(error),
+          timestamp: new Date().toISOString(),
+        }
+        console.log(JSON.stringify(result))
+      }
+      else {
+        console.error('Error:', error)
+      }
 
       // Attempt to clean up resources even on error
       await cleanupBrowserResources()

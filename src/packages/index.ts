@@ -66,6 +66,7 @@ import * as brxken128_github_io from './brxken128.github.io'
 import * as budimanjojo_github_io from './budimanjojo.github.io'
 import * as buf_build from './buf.build'
 import * as buildpacks_io from './buildpacks.io'
+import * as bun from './bun'
 import * as bun_sh from './bun.sh'
 import * as bytebase_com from './bytebase.com'
 import * as bytereef_org from './bytereef.org'
@@ -536,6 +537,7 @@ import * as nixos_org from './nixos.org'
 import * as nixpacks_com from './nixpacks.com'
 import * as nlnetlabs_nl from './nlnetlabs.nl'
 import * as nmap_org from './nmap.org'
+import * as node from './node'
 import * as nodejs_org from './nodejs.org'
 import * as nomadproject_io from './nomadproject.io'
 import * as nongnu_org from './nongnu.org'
@@ -2049,6 +2051,28 @@ export interface Pantry {
    * ```
    */
   buildpacksio: buildpacks_io.PackPackage
+
+  /**
+   * **bun** - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+   *
+   * @domain `bun`
+   * @programs `bun`, `bunx`
+   * @version `1.2.15` (119 versions available)
+   * @install `sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i`
+   * @aliases `bun`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * const pkg = pantry.bun
+   * console.log(pkg.name)        // "bun"
+   * console.log(pkg.description) // "Incredibly fast JavaScript runtime, bundler, te..."
+   * console.log(pkg.programs)    // ["bun", "bunx"]
+   * console.log(pkg.versions[0]) // "1.2.15"
+   * ```
+   */
+  bun: bun.BunPackage
 
   /**
    * **bun** - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
@@ -10664,6 +10688,30 @@ export interface Pantry {
   /**
    * **node** - Platform built on V8 to build network applications
    *
+   * @domain `node`
+   * @programs `node`
+   * @version `24.1.0` (137 versions available)
+   * @install `sh <(curl https://pkgx.sh) node`
+   * @aliases `node`
+   * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+2 more)
+   * @companions `npmjs.com`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * const pkg = pantry.node
+   * console.log(pkg.name)        // "node"
+   * console.log(pkg.description) // "Platform built on V8 to build network applications"
+   * console.log(pkg.programs)    // ["node"]
+   * console.log(pkg.versions[0]) // "24.1.0"
+   * ```
+   */
+  node: node.NodePackage
+
+  /**
+   * **node** - Platform built on V8 to build network applications
+   *
    * @domain `nodejs.org`
    * @programs `node`
    * @version `24.1.0` (137 versions available)
@@ -17579,27 +17627,6 @@ export interface Pantry {
   buf: buf_build.BufPackage
 
   /**
-   * **bun** - Alias for `bun.sh`
-   *
-   * Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
-   *
-   * @alias_for `pantry.bunsh`
-   * @domain `bun.sh`
-   * @programs `bun`, `bunx`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.bun  // via alias
-   * const pkg2 = pantry.bunsh  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
-   */
-  bun: bun_sh.BunPackage
-
-  /**
    * **bytebase** - Alias for `bytebase.com`
    *
    * World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSe...
@@ -21511,27 +21538,6 @@ export interface Pantry {
   nixpacks: nixpacks_com.NixpacksPackage
 
   /**
-   * **node** - Alias for `nodejs.org`
-   *
-   * Platform built on V8 to build network applications
-   *
-   * @alias_for `pantry.nodejsorg`
-   * @domain `nodejs.org`
-   * @programs `node`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * // Both access the same package object
-   * const pkg1 = pantry.node  // via alias
-   * const pkg2 = pantry.nodejsorg  // via domain
-   * console.log(pkg1 === pkg2)  // true
-   * ```
-   */
-  node: nodejs_org.NodePackage
-
-  /**
    * **nomad** - Alias for `nomadproject.io`
    *
    * Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-contai...
@@ -25421,6 +25427,7 @@ export const pantry: Pantry = {
   budimanjojogithubio: budimanjojo_github_io.budimanjojogithubioPackage,
   bufbuild: buf_build.bufPackage,
   buildpacksio: buildpacks_io.packPackage,
+  bun: bun.bunPackage,
   bunsh: bun_sh.bunPackage,
   bytebasecom: bytebase_com.bytebasePackage,
   bytereeforg: bytereef_org.bytereeforgPackage,
@@ -25891,6 +25898,7 @@ export const pantry: Pantry = {
   nixpackscom: nixpacks_com.nixpacksPackage,
   nlnetlabsnl: nlnetlabs_nl.nlnetlabsnlPackage,
   nmaporg: nmap_org.nmaporgPackage,
+  node: node.nodePackage,
   nodejsorg: nodejs_org.nodePackage,
   nomadprojectio: nomadproject_io.nomadPackage,
   nongnuorg: nongnu_org.nongnuorgPackage,
@@ -26252,7 +26260,6 @@ export const pantry: Pantry = {
   bittensor: bittensor_com.BittensorPackage,
   bore: bore_pub.borePackage,
   buf: buf_build.bufPackage,
-  bun: bun_sh.bunPackage,
   bytebase: bytebase_com.bytebasePackage,
   caddy: caddyserver_com.caddyPackage,
   cairotrace: cairographics_org.cairotracePackage,
@@ -26440,7 +26447,6 @@ export const pantry: Pantry = {
   nginx: nginx_org.nginxPackage,
   ninja: ninja_build_org.ninjaPackage,
   nixpacks: nixpacks_com.nixpacksPackage,
-  node: nodejs_org.nodePackage,
   nomad: nomadproject_io.nomadPackage,
   numbat: numbat_dev.numbatPackage,
   nvim: neovim_io.nvimPackage,

@@ -30,7 +30,16 @@ jobs:
         run: bunx playwright install chromium --with-deps
 
       - name: Fetch all packages
-        run: bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000
+        id: fetch-packages
+        run: |
+          # Capture the JSON output from the fetch command
+          FETCH_RESULT=$(bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000 --output-json 2>/dev/null || echo '{"success":false,"error":"fetch failed"}')
+          echo "fetch_result<<EOF" >> $GITHUB_OUTPUT
+          echo "$FETCH_RESULT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          # Also run without JSON for normal logging (to stderr so it doesn't interfere with JSON)
+          bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000 >&2 || true
         timeout-minutes: 45
 
       - name: Generate index
@@ -44,6 +53,48 @@ jobs:
       - name: Generate documentation
         run: bun bin/cli.ts generate-docs
         timeout-minutes: 5
+
+      - name: Generate commit message
+        id: commit-message
+        run: |
+          # Parse the fetch results
+          FETCH_RESULT='${{ steps.fetch-packages.outputs.fetch_result }}'
+
+          # Extract updated packages using jq - prefer mixed names (friendly when available, domain otherwise)
+          UPDATED_PACKAGES=$(echo "$FETCH_RESULT" | jq -r '.updatedPackagesMixed[]? // .updatedPackages[]? // empty' 2>/dev/null | head -20)
+          TOTAL_UPDATED=$(echo "$FETCH_RESULT" | jq -r '.totalUpdated // 0' 2>/dev/null)
+
+          if [ "$TOTAL_UPDATED" -eq 0 ]; then
+            COMMIT_MSG="chore: update packages (no changes detected)"
+          elif [ "$TOTAL_UPDATED" -le 3 ]; then
+            # For small numbers, list all packages
+            PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | paste -sd ',' - | sed 's/,/, /g')
+            COMMIT_MSG="chore: update $PACKAGE_LIST"
+          elif [ "$TOTAL_UPDATED" -le 8 ]; then
+            # For medium numbers, list first few and count the rest
+            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | head -4 | paste -sd ',' - | sed 's/,/, /g')
+            REMAINING=$((TOTAL_UPDATED - 4))
+            if [ "$REMAINING" -eq 1 ]; then
+              COMMIT_MSG="chore: update $FIRST_PACKAGES and 1 other dep"
+            else
+              COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
+            fi
+          else
+            # For large numbers, list first few and count the rest
+            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | head -3 | paste -sd ',' - | sed 's/,/, /g')
+            REMAINING=$((TOTAL_UPDATED - 3))
+            COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
+          fi
+
+          echo "commit_message=$COMMIT_MSG" >> $GITHUB_OUTPUT
+          echo "total_updated=$TOTAL_UPDATED" >> $GITHUB_OUTPUT
+
+          # Debug output
+          echo "Generated commit message: $COMMIT_MSG"
+          echo "Total packages updated: $TOTAL_UPDATED"
+          if [ "$TOTAL_UPDATED" -gt 0 ]; then
+            echo "Updated packages: $(echo "$UPDATED_PACKAGES" | tr '\n' ' ')"
+          fi
 
       - name: Check for changes
         id: git-check
@@ -63,5 +114,5 @@ jobs:
         if: steps.git-check.outputs.changes == 'true'
         run: |
           git add src/packages/ docs/
-          git commit -m "chore: update packages" -m "Automated update via GitHub Actions workflow"
+          git commit -m "${{ steps.commit-message.outputs.commit_message }}" -m "Automated update via GitHub Actions workflow"
           git push
