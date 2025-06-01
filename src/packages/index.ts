@@ -9176,7 +9176,7 @@ export interface Pantry {
    *
    * @domain `logdy.dev`
    * @programs `logdy`
-   * @version `0.16.0` (13 versions available)
+   * @version `0.17.0` (14 versions available)
    * @install `sh <(curl https://pkgx.sh) logdy`
    * @aliases `logdy`
    *
@@ -9188,7 +9188,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "logdy"
    * console.log(pkg.description) // "Web based real-time log viewer. Stream ANY cont..."
    * console.log(pkg.programs)    // ["logdy"]
-   * console.log(pkg.versions[0]) // "0.16.0"
+   * console.log(pkg.versions[0]) // "0.17.0"
    * ```
    */
   logdydev: logdy_dev.LogdyPackage
@@ -12076,7 +12076,7 @@ export interface Pantry {
    *
    * @domain `plantuml.com`
    * @programs `plantuml`
-   * @version `1.2025.2` (16 versions available)
+   * @version `1.2025.3` (17 versions available)
    * @install `sh <(curl https://pkgx.sh) plantuml`
    * @aliases `plantuml`
    * @dependencies `graphviz.org`, `openjdk.org`
@@ -12089,7 +12089,7 @@ export interface Pantry {
    * console.log(pkg.name)        // "plantuml"
    * console.log(pkg.description) // "Generate diagrams from textual description"
    * console.log(pkg.programs)    // ["plantuml"]
-   * console.log(pkg.versions[0]) // "1.2025.2"
+   * console.log(pkg.versions[0]) // "1.2025.3"
    * ```
    */
   plantumlcom: plantuml_com.PlantumlPackage

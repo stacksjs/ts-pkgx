@@ -3,7 +3,7 @@
  *
  * @domain `logdy.dev`
  * @programs `logdy`
- * @version `0.16.0` (13 versions available)
+ * @version `0.17.0` (14 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/logdy-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) logdy`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "logdy"
  * console.log(pkg.description) // "Web based real-time log viewer. Stream ANY cont..."
  * console.log(pkg.programs)    // ["logdy"]
- * console.log(pkg.versions[0]) // "0.16.0" (latest)
+ * console.log(pkg.versions[0]) // "0.17.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/logdy-dev.md
@@ -62,6 +62,7 @@ export const logdyPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.17.0',
     '0.16.0',
     '0.15.0',
     '0.14.1',

@@ -31,21 +31,21 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 13 versions</summary>
+<summary>Show all 14 versions</summary>
 
-- `0.16.0`, `0.15.0`, `0.14.1`, `0.14.0`, `0.13.3`
-- `0.13.2`, `0.13.1`, `0.13.0`, `0.12.2`, `0.12.0`
-- `0.11.0`, `0.10.0`, `0.9.0`
+- `0.17.0`, `0.16.0`, `0.15.0`, `0.14.1`, `0.14.0`
+- `0.13.3`, `0.13.2`, `0.13.1`, `0.13.0`, `0.12.2`
+- `0.12.0`, `0.11.0`, `0.10.0`, `0.9.0`
 
 </details>
 
-**Latest Version**: `0.16.0`
+**Latest Version**: `0.17.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +logdy.dev@0.16.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +logdy.dev@0.17.0 -- $SHELL -i
 ```
 
 ## Usage Examples
