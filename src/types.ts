@@ -109,6 +109,12 @@ export interface PackageFetchOptions {
    * @internal
    */
   browser?: any
+
+  /**
+   * Whether to output only JSON (suppress debug/log messages)
+   * @default false
+   */
+  outputJson?: boolean
 }
 
 export interface FetchPkgxPackageOptions {

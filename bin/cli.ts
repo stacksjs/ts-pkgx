@@ -168,6 +168,7 @@ cli
           debug,
           limit: limit ? Number.parseInt(String(limit), 10) : undefined,
           concurrency: Math.min(Number.parseInt(String(concurrency), 10), 12),
+          outputJson,
         }
 
         savedPackages = await fetchAndSaveAllPackages(fetchOptions)
@@ -196,6 +197,7 @@ cli
               cacheDir,
               cache,
               cacheExpirationMinutes: cacheExpiration,
+              outputJson,
             },
           )
 
@@ -227,6 +229,7 @@ cli
             cacheDir,
             cache,
             cacheExpirationMinutes: cacheExpiration,
+            outputJson,
           },
         )
 

@@ -690,19 +690,25 @@ export async function fetchPkgxPackage(
       if (possibleAlias && packageInfo.domain
         && possibleAlias !== packageInfo.domain
         && !packageInfo.domain.startsWith(possibleAlias)) {
-        console.log(`Detected reverse alias: '${possibleAlias}' for '${packageInfo.domain}'`)
+        if (!options.outputJson) {
+          console.log(`Detected reverse alias: '${possibleAlias}' for '${packageInfo.domain}'`)
+        }
         // Update our full domain name if we found a reverse alias through the website
         fullDomainName = packageInfo.domain
 
         // Add the newly identified alias to our aliases map
         if (possibleAlias && possibleAlias !== originalName && packageInfo.domain) {
-          console.log(`Adding new alias: '${possibleAlias}' -> '${packageInfo.domain}'`)
+          if (!options.outputJson) {
+            console.log(`Adding new alias: '${possibleAlias}' -> '${packageInfo.domain}'`)
+          }
           PACKAGE_ALIASES[possibleAlias] = packageInfo.domain
         }
 
         // Also add the original name as an alias if it's different from both possibleAlias and domain
         if (originalName !== possibleAlias && originalName !== packageInfo.domain) {
-          console.error(`Adding original name as alias: '${originalName}' -> '${packageInfo.domain}'`)
+          if (!options.outputJson) {
+            console.error(`Adding original name as alias: '${originalName}' -> '${packageInfo.domain}'`)
+          }
           PACKAGE_ALIASES[originalName] = packageInfo.domain
         }
       }
@@ -1062,14 +1068,18 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
   const cacheExpirationMinutes = options.cacheExpirationMinutes || DEFAULT_CACHE_EXPIRATION_MINUTES
   const concurrency = Math.min(options.concurrency || 6, 8) // Further reduce concurrency for stability
 
-  console.log(`Starting bulk fetch with concurrency: ${concurrency}, timeout: ${timeout}ms`)
+  if (!options.outputJson) {
+    console.log(`Starting bulk fetch with concurrency: ${concurrency}, timeout: ${timeout}ms`)
+  }
 
   const startTime = Date.now()
   let allPackageNames: string[] = []
 
   try {
     // Get package list from GitHub API first (fastest method)
-    console.log('Fetching package list from GitHub API...')
+    if (!options.outputJson) {
+      console.log('Fetching package list from GitHub API...')
+    }
     try {
       const response = await fetch('https://api.github.com/repos/pkgxdev/pantry/contents/projects', {
         headers: {
@@ -1085,7 +1095,9 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
           .map(item => item.name)
           .sort()
 
-        console.log(`Retrieved ${packageNames.length} projects from GitHub API`)
+        if (!options.outputJson) {
+          console.log(`Retrieved ${packageNames.length} projects from GitHub API`)
+        }
         allPackageNames = packageNames
       }
       else {
@@ -1093,7 +1105,9 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       }
     }
     catch (error) {
-      console.warn('Failed to fetch from GitHub API, falling back to local discovery:', error)
+      if (!options.outputJson) {
+        console.warn('Failed to fetch from GitHub API, falling back to local discovery:', error)
+      }
       // Fallback: scan existing package files
       const existingFiles = fs.readdirSync(outputDir).filter(f => f.endsWith('.ts'))
       allPackageNames = existingFiles.map(f => path.basename(f, '.ts'))
@@ -1160,11 +1174,15 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       batches.push(allPackageNames.slice(i, i + batchSize))
     }
 
-    console.log(`Processing ${allPackageNames.length} packages in ${batches.length} batches...`)
+    if (!options.outputJson) {
+      console.log(`Processing ${allPackageNames.length} packages in ${batches.length} batches...`)
+    }
 
     for (let batchIndex = 0; batchIndex < batches.length; batchIndex++) {
       const batch = batches[batchIndex]
-      console.log(`Processing batch ${batchIndex + 1}/${batches.length} (${batch.length} packages)`)
+      if (!options.outputJson) {
+        console.log(`Processing batch ${batchIndex + 1}/${batches.length} (${batch.length} packages)`)
+      }
 
       // Process batch with controlled concurrency
       const batchPromises = batch.map(async (packageName) => {
@@ -1176,11 +1194,15 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
             const ageMinutes = (Date.now() - stats.mtime.getTime()) / (1000 * 60)
 
             if (ageMinutes < cacheExpirationMinutes) {
-              console.log(`Using cached data for ${packageName} (age: ${Math.round(ageMinutes)} minutes)`)
+              if (!options.outputJson) {
+                console.log(`Using cached data for ${packageName} (age: ${Math.round(ageMinutes)} minutes)`)
+              }
               try {
                 const cachedData = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'))
                 const tsFilePath = savePackageAsTypeScript(outputDir, packageName, cachedData)
-                console.log(`Using cached data for ${packageName} (saved to ${tsFilePath})`)
+                if (!options.outputJson) {
+                  console.log(`Using cached data for ${packageName} (saved to ${tsFilePath})`)
+                }
                 return { success: true, packageName }
               }
               catch {
@@ -1245,7 +1267,9 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       const rate = Math.round(processed / elapsed * 10) / 10
       const eta = Math.round((allPackageNames.length - processed) / rate)
 
-      console.log(`Batch ${batchIndex + 1}/${batches.length} complete. Progress: ${processed}/${allPackageNames.length} (${Math.round(processed / allPackageNames.length * 100)}%) | Success: ${successfulPackages.length} | Failed: ${failedPackages.length} | Rate: ${rate}/s | ETA: ${eta}s`)
+      if (!options.outputJson) {
+        console.log(`Batch ${batchIndex + 1}/${batches.length} complete. Progress: ${processed}/${allPackageNames.length} (${Math.round(processed / allPackageNames.length * 100)}%) | Success: ${successfulPackages.length} | Failed: ${failedPackages.length} | Rate: ${rate}/s | ETA: ${eta}s`)
+      }
 
       // Small delay between batches to prevent overwhelming the system
       if (batchIndex < batches.length - 1) {
@@ -1254,14 +1278,18 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
     }
 
     // Clean up browser
-    console.log('Closing browser...')
+    if (!options.outputJson) {
+      console.log('Closing browser...')
+    }
     await browser.close()
 
     const totalTime = Math.round((Date.now() - startTime) / 1000)
-    console.log(`\nCompleted in ${totalTime}s. Successfully processed: ${successfulPackages.length}, Failed: ${failedPackages.length}`)
+    if (!options.outputJson) {
+      console.log(`\nCompleted in ${totalTime}s. Successfully processed: ${successfulPackages.length}, Failed: ${failedPackages.length}`)
 
-    if (failedPackages.length > 0) {
-      console.log(`Failed packages: ${failedPackages.slice(0, 10).join(', ')}${failedPackages.length > 10 ? ` ... and ${failedPackages.length - 10} more` : ''}`)
+      if (failedPackages.length > 0) {
+        console.log(`Failed packages: ${failedPackages.slice(0, 10).join(', ')}${failedPackages.length > 10 ? ` ... and ${failedPackages.length - 10} more` : ''}`)
+      }
     }
 
     return successfulPackages
