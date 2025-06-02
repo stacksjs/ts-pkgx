@@ -122,15 +122,30 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
         console.error(`DEBUG TEST: typeof indexPath=${typeof indexPath}`)
         console.error(`DEBUG TEST: tempPackagesDir=${tempPackagesDir}`)
         console.error(`DEBUG TEST: process.cwd()=${process.cwd()}`)
+        console.error(`DEBUG TEST: tempDir=${tempDir}`)
         if (indexPath) {
           console.error(`DEBUG TEST: path.isAbsolute(indexPath)=${path.isAbsolute(indexPath)}`)
+          console.error(`DEBUG TEST: path.dirname(indexPath)=${path.dirname(indexPath)}`)
+          console.error(`DEBUG TEST: path.basename(indexPath)=${path.basename(indexPath)}`)
+        }
+
+        // List files in tempPackagesDir to debug
+        if (fs.existsSync(tempPackagesDir)) {
+          const files = fs.readdirSync(tempPackagesDir)
+          console.error(`DEBUG TEST: files in tempPackagesDir: ${files.join(', ')}`)
+        }
+        else {
+          console.error(`DEBUG TEST: tempPackagesDir does not exist`)
         }
 
         expect(indexPath).toBeDefined()
         expect(indexPath).toContain('index.ts')
-        expect(fs.existsSync(indexPath!)).toBe(true)
 
-        const content = fs.readFileSync(indexPath!, 'utf-8')
+        // Handle both absolute and relative paths - resolve relative to tempPackagesDir
+        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+        expect(fs.existsSync(resolvedIndexPath)).toBe(true)
+
+        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
         // Should contain imports
         expect(content).toContain('import * as')
@@ -169,10 +184,23 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
 
         const indexPath = await generateIndex(tempPackagesDir)
 
-        expect(indexPath).toBeDefined()
-        expect(fs.existsSync(indexPath!)).toBe(true)
+        // Debug logging for empty packages test
+        console.error(`DEBUG EMPTY: received indexPath=${indexPath}`)
+        console.error(`DEBUG EMPTY: tempPackagesDir=${tempPackagesDir}`)
+        console.error(`DEBUG EMPTY: process.cwd()=${process.cwd()}`)
+        if (indexPath) {
+          console.error(`DEBUG EMPTY: path.isAbsolute(indexPath)=${path.isAbsolute(indexPath)}`)
+        }
 
-        const content = fs.readFileSync(indexPath!, 'utf-8')
+        expect(indexPath).toBeDefined()
+
+        // Handle both absolute and relative paths
+        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+        console.error(`DEBUG EMPTY: resolvedIndexPath=${resolvedIndexPath}`)
+        console.error(`DEBUG EMPTY: fs.existsSync(resolvedIndexPath)=${fs.existsSync(resolvedIndexPath)}`)
+        expect(fs.existsSync(resolvedIndexPath)).toBe(true)
+
+        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
         // Should still have basic structure
         expect(content).toContain('export interface Pantry')
@@ -189,7 +217,19 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
 
       try {
         const indexPath = await generateIndex(tempPackagesDir)
-        const content = fs.readFileSync(indexPath!, 'utf-8')
+
+        // Debug logging for TypeScript syntax test
+        console.error(`DEBUG SYNTAX: received indexPath=${indexPath}`)
+        console.error(`DEBUG SYNTAX: process.cwd()=${process.cwd()}`)
+        if (indexPath) {
+          console.error(`DEBUG SYNTAX: path.isAbsolute(indexPath)=${path.isAbsolute(indexPath)}`)
+        }
+
+        // Handle both absolute and relative paths
+        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+        console.error(`DEBUG SYNTAX: resolvedIndexPath=${resolvedIndexPath}`)
+        console.error(`DEBUG SYNTAX: fs.existsSync(resolvedIndexPath)=${fs.existsSync(resolvedIndexPath)}`)
+        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
         // Should have proper TypeScript syntax
         expect(content).toContain('export interface')
@@ -223,7 +263,10 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
 
       try {
         const indexPath = await generateIndex(tempPackagesDir)
-        const content = fs.readFileSync(indexPath!, 'utf-8')
+
+        // Handle both absolute and relative paths
+        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
         // Should handle nested paths like agwa.name/git-crypt
         expect(content).toContain('agwanamegitcrypt')
@@ -245,9 +288,12 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
 
         expect(aliasesPath).toBeDefined()
         expect(aliasesPath).toContain('aliases.ts')
-        expect(fs.existsSync(aliasesPath)).toBe(true)
 
-        const content = fs.readFileSync(aliasesPath, 'utf-8')
+        // Handle both absolute and relative paths
+        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+
+        const content = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
         // Should contain aliases export
         expect(content).toContain('export const aliases: Record<string, string>')
@@ -291,7 +337,10 @@ export type NoaliascomPackage = typeof noaliascomPackage
 
       try {
         const aliasesPath = await generateAliases(tempPackagesDir)
-        const aliasContent = fs.readFileSync(aliasesPath, 'utf-8')
+
+        // Handle both absolute and relative paths
+        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+        const aliasContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
         // Should still generate file
         expect(aliasContent).toContain('export const aliases')
@@ -310,7 +359,10 @@ export type NoaliascomPackage = typeof noaliascomPackage
 
       try {
         const aliasesPath = await generateAliases(tempPackagesDir)
-        const content = fs.readFileSync(aliasesPath, 'utf-8')
+
+        // Handle both absolute and relative paths
+        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+        const content = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
         // Extract alias keys
         const aliasMatches = content.match(/'([^']+)':/g)
@@ -520,7 +572,10 @@ export type NoaliascomPackage = typeof noaliascomPackage
 
       try {
         const indexPath = await generateIndex(tempPackagesDir)
-        const content = fs.readFileSync(indexPath!, 'utf-8')
+
+        // Handle both absolute and relative paths
+        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
         // Variable names should be consistent
         const varMatches = content.match(/export const (\w+): Pantry/g)
@@ -544,7 +599,10 @@ export type NoaliascomPackage = typeof noaliascomPackage
 
       try {
         const indexPath = await generateIndex(tempPackagesDir)
-        const content = fs.readFileSync(indexPath!, 'utf-8')
+
+        // Handle both absolute and relative paths
+        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
         // Should have JSDoc comments
         expect(content).toContain('/**')
@@ -587,7 +645,10 @@ export type SpecialcomPackage = typeof specialcomPackage
 
       try {
         const indexPath = await generateIndex(tempPackagesDir)
-        const content = fs.readFileSync(indexPath!, 'utf-8')
+
+        // Handle both absolute and relative paths
+        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
         // Should handle special characters without breaking
         expect(content).toContain('specialcom')
@@ -610,16 +671,26 @@ export type SpecialcomPackage = typeof specialcomPackage
         const aliasesPath = await generateAliases(tempPackagesDir)
         await generateDocs(tempDocsDir, tempPackagesDir)
 
+        // Debug logging for integration test
+        console.error(`DEBUG INTEGRATION: indexPath=${indexPath}`)
+        console.error(`DEBUG INTEGRATION: aliasesPath=${aliasesPath}`)
+        console.error(`DEBUG INTEGRATION: indexPath isAbsolute=${path.isAbsolute(indexPath!)}`)
+        console.error(`DEBUG INTEGRATION: aliasesPath isAbsolute=${path.isAbsolute(aliasesPath)}`)
+
+        // Handle both absolute and relative paths
+        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+
         // All files should exist
-        expect(fs.existsSync(indexPath!)).toBe(true)
-        expect(fs.existsSync(aliasesPath)).toBe(true)
+        expect(fs.existsSync(resolvedIndexPath)).toBe(true)
+        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
         expect(fs.existsSync(path.join(tempDocsDir, 'package-catalog.md'))).toBe(true)
 
         // Files should reference each other correctly
-        const indexContent = fs.readFileSync(indexPath!, 'utf-8')
+        const indexContent = fs.readFileSync(resolvedIndexPath, 'utf-8')
         expect(indexContent).toContain('export * from \'./aliases\'')
 
-        const aliasesContent = fs.readFileSync(aliasesPath, 'utf-8')
+        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
         expect(aliasesContent).toContain('export const aliases')
       }
       finally {
@@ -635,8 +706,16 @@ export type SpecialcomPackage = typeof specialcomPackage
         const indexPath = await generateIndex(tempPackagesDir)
         const aliasesPath = await generateAliases(tempPackagesDir)
 
-        const indexContent = fs.readFileSync(indexPath!, 'utf-8')
-        const aliasesContent = fs.readFileSync(aliasesPath, 'utf-8')
+        // Debug logging for consistency test
+        console.error(`DEBUG CONSISTENCY: indexPath=${indexPath}`)
+        console.error(`DEBUG CONSISTENCY: aliasesPath=${aliasesPath}`)
+
+        // Handle both absolute and relative paths
+        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+
+        const indexContent = fs.readFileSync(resolvedIndexPath, 'utf-8')
+        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
         // Both should reference the same packages
         expect(indexContent).toContain('nodejs')
