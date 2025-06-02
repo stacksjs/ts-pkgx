@@ -541,7 +541,14 @@ export async function generateIndex(packagesDir?: string): Promise<string | null
 
     // Use provided packages directory or default
     const targetPackagesDir = packagesDir || PACKAGES_DIR
-    const targetIndexFile = path.join(targetPackagesDir, 'index.ts')
+    const targetIndexFile = path.resolve(targetPackagesDir, 'index.ts')
+
+    // Debug logging for GitHub Actions
+    console.log(`DEBUG generateIndex: packagesDir=${packagesDir}`)
+    console.log(`DEBUG generateIndex: PACKAGES_DIR=${PACKAGES_DIR}`)
+    console.log(`DEBUG generateIndex: targetPackagesDir=${targetPackagesDir}`)
+    console.log(`DEBUG generateIndex: targetIndexFile=${targetIndexFile}`)
+    console.log(`DEBUG generateIndex: path.isAbsolute(targetIndexFile)=${path.isAbsolute(targetIndexFile)}`)
 
     // Import existing pantry data (may be empty if this is the first run)
     const pantryData = await importPantry(targetPackagesDir)
@@ -568,16 +575,13 @@ export const pantry: Pantry = {
 export const packages: Packages = pantry
 export * from './aliases'
 `
-      // Use synchronous write for better reliability in CI environments
       fs.writeFileSync(targetIndexFile, content)
-
-      // Verify the file was written successfully
-      if (!fs.existsSync(targetIndexFile)) {
-        throw new Error(`Failed to write minimal file: ${targetIndexFile}`)
-      }
-
-      console.log(`DEBUG: Minimal file written, exists: ${fs.existsSync(targetIndexFile)}`)
       console.log(`Generated minimal ${targetIndexFile}`)
+
+      // Debug logging for minimal return value
+      console.log(`DEBUG generateIndex minimal: returning ${targetIndexFile}`)
+      console.log(`DEBUG generateIndex minimal: return value isAbsolute=${path.isAbsolute(targetIndexFile)}`)
+
       return targetIndexFile
     }
 
@@ -916,19 +920,12 @@ export * from './aliases'
     const content = `${imports}\n${interfaceDecl}${packagesType}${pantry}${packagesConst}${aliasesExport}`
 
     // Write to the index file
-    console.log(`DEBUG: About to write to ${targetIndexFile}`)
-    console.log(`DEBUG: Directory exists: ${fs.existsSync(path.dirname(targetIndexFile))}`)
-
-    // Use synchronous write for better reliability in CI environments
     fs.writeFileSync(targetIndexFile, content)
-
-    // Verify the file was written successfully
-    if (!fs.existsSync(targetIndexFile)) {
-      throw new Error(`Failed to write file: ${targetIndexFile}`)
-    }
-
-    console.log(`DEBUG: File written, exists: ${fs.existsSync(targetIndexFile)}`)
     console.log(`Successfully generated ${targetIndexFile}`)
+
+    // Debug logging for return value
+    console.log(`DEBUG generateIndex: returning ${targetIndexFile}`)
+    console.log(`DEBUG generateIndex: return value isAbsolute=${path.isAbsolute(targetIndexFile)}`)
 
     return targetIndexFile
   }
@@ -1048,7 +1045,7 @@ export async function generateAliases(packagesDir?: string): Promise<string> {
 
     // Use provided packages directory or default to current working directory
     const targetPackagesDir = packagesDir || path.join(process.cwd(), 'src', 'packages')
-    const aliasesFile = path.join(targetPackagesDir, 'aliases.ts')
+    const aliasesFile = path.resolve(targetPackagesDir, 'aliases.ts')
 
     // Ensure the directory exists before writing the file
     const aliasesDir = path.dirname(aliasesFile)
@@ -1071,18 +1068,7 @@ export async function generateAliases(packagesDir?: string): Promise<string> {
     content += '}\n'
 
     // Write the file
-    console.log(`DEBUG: About to write aliases to ${aliasesFile}`)
-    console.log(`DEBUG: Directory exists: ${fs.existsSync(path.dirname(aliasesFile))}`)
-
-    // Use synchronous write for better reliability in CI environments
     fs.writeFileSync(aliasesFile, content)
-
-    // Verify the file was written successfully
-    if (!fs.existsSync(aliasesFile)) {
-      throw new Error(`Failed to write file: ${aliasesFile}`)
-    }
-
-    console.log(`DEBUG: Aliases file written, exists: ${fs.existsSync(aliasesFile)}`)
     console.log(`Successfully generated ${aliasesFile} with ${sortedAliases.length} aliases`)
 
     return aliasesFile
@@ -1215,7 +1201,7 @@ function shouldExcludePackage(pkg: PkgxPackage): boolean {
 async function generatePackageCatalog(outputDir: string, packagesDir?: string): Promise<string> {
   const pantry = await importPantry(packagesDir)
   const categories = getCategoryMapping()
-  const catalogPath = path.join(outputDir, 'package-catalog.md')
+  const catalogPath = path.resolve(outputDir, 'package-catalog.md')
 
   // Filter out packages with placeholder data
   const validPantry: Record<string, PkgxPackage> = {}

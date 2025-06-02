@@ -117,14 +117,17 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
       try {
         const indexPath = await generateIndex(tempPackagesDir)
 
-        expect(indexPath).toBeDefined()
-        expect(indexPath).toContain('index.ts')
-
-        // Add a small delay in CI environments to ensure file system consistency
-        if (process.env.CI) {
-          await new Promise(resolve => setTimeout(resolve, 10))
+        // Debug logging for test
+        console.error(`DEBUG TEST: received indexPath=${indexPath}`)
+        console.error(`DEBUG TEST: typeof indexPath=${typeof indexPath}`)
+        console.error(`DEBUG TEST: tempPackagesDir=${tempPackagesDir}`)
+        console.error(`DEBUG TEST: process.cwd()=${process.cwd()}`)
+        if (indexPath) {
+          console.error(`DEBUG TEST: path.isAbsolute(indexPath)=${path.isAbsolute(indexPath)}`)
         }
 
+        expect(indexPath).toBeDefined()
+        expect(indexPath).toContain('index.ts')
         expect(fs.existsSync(indexPath!)).toBe(true)
 
         const content = fs.readFileSync(indexPath!, 'utf-8')
@@ -242,12 +245,6 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
 
         expect(aliasesPath).toBeDefined()
         expect(aliasesPath).toContain('aliases.ts')
-
-        // Add a small delay in CI environments to ensure file system consistency
-        if (process.env.CI) {
-          await new Promise(resolve => setTimeout(resolve, 10))
-        }
-
         expect(fs.existsSync(aliasesPath)).toBe(true)
 
         const content = fs.readFileSync(aliasesPath, 'utf-8')
