@@ -98,8 +98,8 @@ jobs:
       - name: Configure Git
         if: steps.check-commits.outputs.has_unreleased == 'true'
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Run release
         if: steps.check-commits.outputs.has_unreleased == 'true'
@@ -118,12 +118,16 @@ jobs:
 
           echo "Creating $RELEASE_TYPE release for $COMMIT_COUNT new commit(s)"
 
-          # Use bumpp to bump version, commit, tag, and push
-          # The --yes flag skips confirmation prompts
-          echo "Running: bunx bumpp --$RELEASE_TYPE --yes --commit --tag --push"
-          bunx bumpp --$RELEASE_TYPE --yes --commit --tag --push
+          # Use proper bumpp syntax (not @jsdevtools/version-bump-prompt)
+          # This project uses the modern bumpp package
+          echo "Running: bunx bumpp --$RELEASE_TYPE --commit --tag --push --yes"
+          bunx bumpp --$RELEASE_TYPE --commit --tag --push --yes
 
           echo "Successfully created and pushed release"
+        env:
+          CI: true
+          FORCE_COLOR: 0
+          NODE_ENV: production
 
   npm:
     # Only run on actual tag pushes (not on schedule)

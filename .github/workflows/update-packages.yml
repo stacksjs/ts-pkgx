@@ -112,12 +112,14 @@ jobs:
       - name: Generate commit message
         id: commit-message
         run: |
-          # Parse the fetch results
-          FETCH_RESULT='${{ steps.fetch-packages.outputs.fetch_result }}'
+          # Parse the fetch results - handle multiline JSON safely
+          FETCH_RESULT=$(cat << 'EOF'
+          ${{ steps.fetch-packages.outputs.fetch_result }}
+          EOF
+          )
 
-          # Debug: Show the raw fetch result
-          echo "Raw fetch result:"
-          echo "$FETCH_RESULT"
+          # Debug: Show abbreviated fetch result
+          echo "Fetch result status check..."
 
           # Check if the fetch was successful
           FETCH_SUCCESS=$(echo "$FETCH_RESULT" | jq -r '.success // false' 2>/dev/null)
@@ -130,25 +132,26 @@ jobs:
             exit 0
           fi
 
-          # Extract updated packages using jq - prefer mixed names (friendly when available, domain otherwise)
-          UPDATED_PACKAGES=$(echo "$FETCH_RESULT" | jq -r '.updatedPackagesMixed[]? // .updatedPackages[]? // empty' 2>/dev/null | head -20)
+          # Extract package counts and summary info
           TOTAL_UPDATED=$(echo "$FETCH_RESULT" | jq -r '.totalUpdated // 0' 2>/dev/null)
           TOTAL_PROCESSED=$(echo "$FETCH_RESULT" | jq -r '.totalProcessed // 0' 2>/dev/null)
+
+          # Extract first few package names for commit message (sanitize for shell safety)
+          UPDATED_PACKAGES=$(echo "$FETCH_RESULT" | jq -r '.updatedPackagesMixed[]? // .updatedPackages[]? // empty' 2>/dev/null | head -20 | tr -d '\n\r' | tr ' ' '_')
 
           # Debug output
           echo "Total packages processed: $TOTAL_PROCESSED"
           echo "Total packages updated: $TOTAL_UPDATED"
-          echo "Updated packages list:"
-          echo "$UPDATED_PACKAGES"
+          echo "Sample updated packages: $(echo "$UPDATED_PACKAGES" | head -5 | tr '\n' ' ')"
 
-          # If no packages were actually updated (all from cache), check if we still have git changes
+          # Generate commit message based on update count
           if [ "$TOTAL_UPDATED" -eq 0 ]; then
             echo "No packages were updated (all from cache)"
             COMMIT_MSG="chore: update packages (no changes detected)"
             SHOULD_COMMIT="false"
           elif [ "$TOTAL_UPDATED" -le 3 ]; then
             # For small numbers, list all packages
-            PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | paste -sd ',' - | sed 's/,/, /g')
+            PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | head -3 | paste -sd ',' - | sed 's/,/, /g')
             COMMIT_MSG="chore: update $PACKAGE_LIST"
             SHOULD_COMMIT="true"
           elif [ "$TOTAL_UPDATED" -le 8 ]; then
@@ -176,16 +179,10 @@ jobs:
           # Final debug output
           echo "Generated commit message: $COMMIT_MSG"
           echo "Should commit: $SHOULD_COMMIT"
-          if [ "$TOTAL_UPDATED" -gt 0 ]; then
-            echo "Updated packages: $(echo "$UPDATED_PACKAGES" | tr '\n' ' ')"
-          fi
 
       - name: Check for changes
         id: git-check
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-
           # Show git status for debugging
           echo "Git status:"
           git status --porcelain
@@ -203,21 +200,24 @@ jobs:
           fi
 
       - name: Commit and push changes
-        if: steps.git-check.outputs.changes == 'true'
+        if: steps.git-check.outputs.changes == 'true' && steps.commit-message.outputs.should_commit == 'true'
         run: |
-          # Only commit if we actually have changes AND either:
-          # 1. We should commit based on package updates, OR
-          # 2. We have actual file changes (in case the logic above missed something)
-
           SHOULD_COMMIT="${{ steps.commit-message.outputs.should_commit }}"
+          TOTAL_UPDATED="${{ steps.commit-message.outputs.total_updated }}"
 
           echo "Should commit based on package updates: $SHOULD_COMMIT"
+          echo "Total packages updated: $TOTAL_UPDATED"
           echo "Git changes detected: ${{ steps.git-check.outputs.changes }}"
 
-          # Always commit if we have git changes, regardless of the package update logic
-          # This ensures we don't miss commits due to logic errors
+          # Configure git for the action
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Add and commit changes
           git add src/packages/ docs/
           git commit -m "${{ steps.commit-message.outputs.commit_message }}" -m "Automated update via GitHub Actions workflow"
-          git push
+
+          # Push changes
+          git push origin main
 
           echo "Successfully committed and pushed changes"
