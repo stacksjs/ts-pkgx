@@ -1019,15 +1019,17 @@ async function extractAllAliases(packagesDir?: string): Promise<Record<string, s
 
 /**
  * Generates the aliases.ts file
+ * @param packagesDir Optional packages directory path (for testing)
  * @returns Path to the generated file
  */
-export async function generateAliases(): Promise<string> {
+export async function generateAliases(packagesDir?: string): Promise<string> {
   try {
     // Extract all aliases
-    const aliases = await extractAllAliases()
+    const aliases = await extractAllAliases(packagesDir)
 
-    // Use current working directory for aliases file path (for testing)
-    const aliasesFile = path.join(process.cwd(), 'src', 'packages', 'aliases.ts')
+    // Use provided packages directory or default to current working directory
+    const targetPackagesDir = packagesDir || path.join(process.cwd(), 'src', 'packages')
+    const aliasesFile = path.join(targetPackagesDir, 'aliases.ts')
 
     // Ensure the directory exists before writing the file
     const aliasesDir = path.dirname(aliasesFile)
@@ -1180,8 +1182,8 @@ function shouldExcludePackage(pkg: PkgxPackage): boolean {
 /**
  * Generate package catalog with proper categorization
  */
-async function generatePackageCatalog(outputDir: string): Promise<string> {
-  const pantry = await importPantry()
+async function generatePackageCatalog(outputDir: string, packagesDir?: string): Promise<string> {
+  const pantry = await importPantry(packagesDir)
   const categories = getCategoryMapping()
   const catalogPath = path.join(outputDir, 'package-catalog.md')
 
@@ -1389,8 +1391,8 @@ To add or update packages, see the pkgx [contribution guide](https://docs.pkgx.s
 /**
  * Generate individual package documentation pages
  */
-async function generatePackagePages(outputDir: string): Promise<string[]> {
-  const pantry = await importPantry()
+async function generatePackagePages(outputDir: string, sourcePackagesDir?: string): Promise<string[]> {
+  const pantry = await importPantry(sourcePackagesDir)
   const packagesDir = path.join(outputDir, 'packages')
 
   // Ensure packages directory exists
@@ -1585,8 +1587,8 @@ console.log(\`Programs: \${pkg.programs.join(', ')}\`)
 /**
  * Generate category index pages
  */
-async function generateCategoryPages(outputDir: string): Promise<string[]> {
-  const pantry = await importPantry()
+async function generateCategoryPages(outputDir: string, packagesDir?: string): Promise<string[]> {
+  const pantry = await importPantry(packagesDir)
   const categories = getCategoryMapping()
   const categoriesDir = path.join(outputDir, 'categories')
 
@@ -1671,7 +1673,7 @@ ${description}
 /**
  * Main documentation generation function
  */
-export async function generateDocs(outputDir: string = DEFAULT_DOCS_DIR): Promise<void> {
+export async function generateDocs(outputDir: string = DEFAULT_DOCS_DIR, packagesDir?: string): Promise<void> {
   console.error('🚀 Generating comprehensive package documentation...')
 
   try {
@@ -1682,17 +1684,17 @@ export async function generateDocs(outputDir: string = DEFAULT_DOCS_DIR): Promis
 
     // Generate main catalog
     console.error('📚 Generating package catalog...')
-    const catalogPath = await generatePackageCatalog(outputDir)
+    const catalogPath = await generatePackageCatalog(outputDir, packagesDir)
     console.error(`✅ Generated: ${catalogPath}`)
 
     // Generate individual package pages
     console.error('📄 Generating individual package pages...')
-    const packagePages = await generatePackagePages(outputDir)
+    const packagePages = await generatePackagePages(outputDir, packagesDir)
     console.error(`✅ Generated ${packagePages.length} package pages`)
 
     // Generate category pages
     console.error('📂 Generating category pages...')
-    const categoryPages = await generateCategoryPages(outputDir)
+    const categoryPages = await generateCategoryPages(outputDir, packagesDir)
     console.error(`✅ Generated ${categoryPages.length} category pages`)
 
     console.error(`\n🎉 Documentation generation complete!`)

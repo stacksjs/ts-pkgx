@@ -232,7 +232,7 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
       process.chdir(tempDir)
 
       try {
-        const aliasesPath = await generateAliases()
+        const aliasesPath = await generateAliases(tempPackagesDir)
 
         expect(aliasesPath).toBeDefined()
         expect(aliasesPath).toContain('aliases.ts')
@@ -281,7 +281,7 @@ export type NoaliascomPackage = typeof noaliascomPackage
       process.chdir(tempDir)
 
       try {
-        const aliasesPath = await generateAliases()
+        const aliasesPath = await generateAliases(tempPackagesDir)
         const aliasContent = fs.readFileSync(aliasesPath, 'utf-8')
 
         // Should still generate file
@@ -300,7 +300,7 @@ export type NoaliascomPackage = typeof noaliascomPackage
       process.chdir(tempDir)
 
       try {
-        const aliasesPath = await generateAliases()
+        const aliasesPath = await generateAliases(tempPackagesDir)
         const content = fs.readFileSync(aliasesPath, 'utf-8')
 
         // Extract alias keys
@@ -325,7 +325,7 @@ export type NoaliascomPackage = typeof noaliascomPackage
       process.chdir(tempDir)
 
       try {
-        await generateDocs(tempDocsDir)
+        await generateDocs(tempDocsDir, tempPackagesDir)
 
         // Should create main catalog
         const catalogPath = path.join(tempDocsDir, 'package-catalog.md')
@@ -354,7 +354,7 @@ export type NoaliascomPackage = typeof noaliascomPackage
       process.chdir(tempDir)
 
       try {
-        await generateDocs(tempDocsDir)
+        await generateDocs(tempDocsDir, tempPackagesDir)
 
         const packagesDir = path.join(tempDocsDir, 'packages')
         const packageFiles = fs.readdirSync(packagesDir)
@@ -381,7 +381,7 @@ export type NoaliascomPackage = typeof noaliascomPackage
       process.chdir(tempDir)
 
       try {
-        await generateDocs(tempDocsDir)
+        await generateDocs(tempDocsDir, tempPackagesDir)
 
         const categoriesDir = path.join(tempDocsDir, 'categories')
         const categoryFiles = fs.readdirSync(categoriesDir)
@@ -407,7 +407,7 @@ export type NoaliascomPackage = typeof noaliascomPackage
       process.chdir(tempDir)
 
       try {
-        await generateDocs(customDocsDir)
+        await generateDocs(customDocsDir, tempPackagesDir)
 
         expect(fs.existsSync(customDocsDir)).toBe(true)
         expect(fs.existsSync(path.join(customDocsDir, 'package-catalog.md'))).toBe(true)
@@ -424,7 +424,7 @@ export type NoaliascomPackage = typeof noaliascomPackage
       process.chdir(tempDir)
 
       try {
-        await generateDocs(tempDocsDir)
+        await generateDocs(tempDocsDir, tempPackagesDir)
 
         const catalogPath = path.join(tempDocsDir, 'package-catalog.md')
         const catalogContent = fs.readFileSync(catalogPath, 'utf-8')
@@ -460,7 +460,7 @@ export type NoaliascomPackage = typeof noaliascomPackage
 
         // Should not throw even if packages directory doesn't exist
         await expect(generateIndex(path.join(emptyTempDir, 'src', 'packages'))).resolves.toBeDefined()
-        await expect(generateAliases()).resolves.toBeDefined()
+        await expect(generateAliases(path.join(emptyTempDir, 'src', 'packages'))).resolves.toBeDefined()
       }
       finally {
         process.chdir(originalCwd)
@@ -479,7 +479,7 @@ export type NoaliascomPackage = typeof noaliascomPackage
       try {
         // Should not throw even with invalid files
         await expect(generateIndex(tempPackagesDir)).resolves.toBeDefined()
-        await expect(generateAliases()).resolves.toBeDefined()
+        await expect(generateAliases(tempPackagesDir)).resolves.toBeDefined()
       }
       finally {
         process.chdir(originalCwd)
@@ -496,7 +496,7 @@ export type NoaliascomPackage = typeof noaliascomPackage
         fs.mkdirSync(readOnlyDir)
 
         // This might not work on all systems, but shouldn't crash
-        await expect(generateDocs(readOnlyDir)).resolves.toBeUndefined()
+        await expect(generateDocs(readOnlyDir, tempPackagesDir)).resolves.toBeUndefined()
       }
       finally {
         process.chdir(originalCwd)
@@ -598,8 +598,8 @@ export type SpecialcomPackage = typeof specialcomPackage
       try {
         // Generate all components
         const indexPath = await generateIndex(tempPackagesDir)
-        const aliasesPath = await generateAliases()
-        await generateDocs(tempDocsDir)
+        const aliasesPath = await generateAliases(tempPackagesDir)
+        await generateDocs(tempDocsDir, tempPackagesDir)
 
         // All files should exist
         expect(fs.existsSync(indexPath!)).toBe(true)
@@ -624,7 +624,7 @@ export type SpecialcomPackage = typeof specialcomPackage
 
       try {
         const indexPath = await generateIndex(tempPackagesDir)
-        const aliasesPath = await generateAliases()
+        const aliasesPath = await generateAliases(tempPackagesDir)
 
         const indexContent = fs.readFileSync(indexPath!, 'utf-8')
         const aliasesContent = fs.readFileSync(aliasesPath, 'utf-8')
