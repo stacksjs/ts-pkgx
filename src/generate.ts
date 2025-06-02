@@ -998,8 +998,7 @@ async function extractAllAliases(packagesDir?: string): Promise<Record<string, s
         }
       }
 
-      // Also add the domain itself as an alias
-      allAliases[domain] = domain
+      // Don't add the domain itself as an alias - that's not actually an alias
     }
     catch (error) {
       console.error(`Error extracting aliases from ${file}:`, error)

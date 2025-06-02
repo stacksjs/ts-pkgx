@@ -131,11 +131,12 @@ describe('Index Module', () => {
       // Check for some expected aliases
       const aliasKeys = Object.keys(aliases)
 
-      // Should have at least some common aliases
-      const hasNodeAlias = aliasKeys.includes('node') || aliasKeys.includes('nodejs')
-      const hasPythonAlias = aliasKeys.includes('python') || aliasKeys.includes('py')
+      // Should have at least some common aliases (actual aliases, not self-referential ones)
+      const hasPhpAlias = aliasKeys.includes('php')
+      const hasRubyAlias = aliasKeys.includes('ruby')
+      const hasGoAlias = aliasKeys.includes('go')
 
-      expect(hasNodeAlias || hasPythonAlias).toBe(true)
+      expect(hasPhpAlias || hasRubyAlias || hasGoAlias).toBe(true)
     })
 
     test('should map aliases to valid domains', () => {

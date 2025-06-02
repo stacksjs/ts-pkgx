@@ -287,8 +287,8 @@ export type NoaliascomPackage = typeof noaliascomPackage
         // Should still generate file
         expect(aliasContent).toContain('export const aliases')
 
-        // Should contain domain self-reference
-        expect(aliasContent).toContain('noalias.com')
+        // Should NOT contain domain self-reference (not a real alias)
+        expect(aliasContent).not.toContain('noalias.com')
       }
       finally {
         process.chdir(originalCwd)
