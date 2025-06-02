@@ -14,7 +14,7 @@ const config: ESLintConfig = stacks({
     'fixtures/**',
     'docs/advanced.md',
     'docs/api-reference.md',
-    'packages/index.ts', // TODO: this could be removed, but there is a minor sort order a-z "issue"
+    'src/packages/index.ts', // TODO: this could be removed, but there is a minor sort order a-z "issue"
   ],
 })
 
