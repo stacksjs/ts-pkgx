@@ -653,18 +653,17 @@ export * from './aliases'
     // Process each package file
     for (const file of sortedPackageFiles) {
       const moduleName = path.basename(file, '.ts')
-      const domain = guessOriginalDomain(moduleName)
+      const guessedDomain = guessOriginalDomain(moduleName)
 
       // Skip invalid package domains
-      if (!isValidPackageDomain(domain)) {
-        console.log(`Skipping invalid package domain: ${domain} (from file: ${moduleName}.ts)`)
+      if (!isValidPackageDomain(guessedDomain)) {
+        console.log(`Skipping invalid package domain: ${guessedDomain} (from file: ${moduleName}.ts)`)
         continue
       }
 
       const moduleVarName = toSafeVarName(moduleName)
       const packageVarName = toPackageVarName(moduleName, targetPackagesDir)
       const typeName = toTypeName(moduleName, targetPackagesDir)
-      const domainVarName = convertDomainToVarName(domain)
 
       // Add the import
       imports += `import * as ${moduleVarName} from './${moduleName}'\n`
@@ -673,8 +672,13 @@ export * from './aliases'
       // Handle the case where pantryData might be undefined or empty
       let pkgData = null
       if (pantryData && typeof pantryData === 'object') {
-        pkgData = pantryData[domainVarName] || pantryData[moduleVarName] || pantryData[domain]
+        const guessedDomainVarName = convertDomainToVarName(guessedDomain)
+        pkgData = pantryData[guessedDomainVarName] || pantryData[moduleVarName] || pantryData[guessedDomain]
       }
+
+      // Use the actual domain from the package data, not the guessed domain
+      const actualDomain = pkgData?.domain || guessedDomain
+      const domainVarName = convertDomainToVarName(actualDomain)
 
       // Generate comprehensive JSDoc for this package
       let jsdoc = '  /**\n'
@@ -695,11 +699,11 @@ export * from './aliases'
 
           description = ` - ${escapedDesc}`
         }
-        jsdoc += `   * **${pkgData.name || domain}**${description}\n`
+        jsdoc += `   * **${pkgData.name || actualDomain}**${description}\n`
         jsdoc += '   *\n'
 
         // Domain information
-        jsdoc += `   * @domain \`${domain}\`\n`
+        jsdoc += `   * @domain \`${actualDomain}\`\n`
 
         // Programs provided
         if (pkgData.programs && pkgData.programs.length > 0) {
@@ -760,7 +764,7 @@ export * from './aliases'
         jsdoc += `   * import { pantry } from 'ts-pkgx'\n`
         jsdoc += '   *\n'
         jsdoc += `   * const pkg = pantry.${domainVarName}\n`
-        jsdoc += `   * console.log(pkg.name)        // "${pkgData.name || domain}"\n`
+        jsdoc += `   * console.log(pkg.name)        // "${pkgData.name || actualDomain}"\n`
         if (pkgData.description) {
           const shortDesc = pkgData.description.length > 50 ? `${pkgData.description.substring(0, 47)}...` : pkgData.description
           jsdoc += `   * console.log(pkg.description) // "${shortDesc}"\n`
@@ -775,9 +779,9 @@ export * from './aliases'
       }
       else {
         // Fallback for packages without data
-        jsdoc += `   * **${domain}** - pkgx package\n`
+        jsdoc += `   * **${actualDomain}** - pkgx package\n`
         jsdoc += '   *\n'
-        jsdoc += `   * @domain \`${domain}\`\n`
+        jsdoc += `   * @domain \`${actualDomain}\`\n`
         jsdoc += '   *\n'
         jsdoc += '   * @example\n'
         jsdoc += '   * ```typescript\n'
@@ -796,6 +800,105 @@ export * from './aliases'
       pantry += `  '${domainVarName}': ${moduleVarName}.${packageVarName},\n`
     }
 
+    // Add package name-based keys for packages where the name differs from the domain
+    // This allows accessing packages by their friendly name (e.g., 'bun') in addition to domain (e.g., 'bunsh')
+    for (const file of sortedPackageFiles) {
+      const moduleName = path.basename(file, '.ts')
+      const guessedDomain = guessOriginalDomain(moduleName)
+
+      // Skip invalid package domains
+      if (!isValidPackageDomain(guessedDomain)) {
+        continue
+      }
+
+      const moduleVarName = toSafeVarName(moduleName)
+      const packageVarName = toPackageVarName(moduleName, targetPackagesDir)
+      const typeName = toTypeName(moduleName, targetPackagesDir)
+
+      // Get package data to extract the actual package name
+      let pkgData = null
+      if (pantryData && typeof pantryData === 'object') {
+        const guessedDomainVarName = convertDomainToVarName(guessedDomain)
+        pkgData = pantryData[guessedDomainVarName] || pantryData[moduleVarName] || pantryData[guessedDomain]
+      }
+
+      // Use the actual domain from the package data
+      const actualDomain = pkgData?.domain || guessedDomain
+      const domainVarName = convertDomainToVarName(actualDomain)
+
+      if (pkgData && !shouldExcludePackage(pkgData) && pkgData.name) {
+        // Convert package name to a safe variable name
+        const packageNameVarName = convertDomainToVarName(pkgData.name)
+
+        // Only add if the package name key is different from the domain key and not already used
+        if (packageNameVarName !== domainVarName && !Object.values(domainToVarName).includes(packageNameVarName)) {
+          // Check if this package name key is already in use
+          const existingKeyInInterface = interfaceDecl.includes(`'${packageNameVarName}':`)
+          const existingKeyInPantry = pantry.includes(`'${packageNameVarName}':`)
+
+          // IMPORTANT: Only add package name keys that reference existing module files
+          // This prevents creating imports for non-existent files like './bun' when only './bun.sh' exists
+          if (!existingKeyInInterface && !existingKeyInPantry) {
+            // Generate JSDoc for package name key
+            let packageNameJsdoc = '  /**\n'
+            let description = ''
+            if (pkgData.description) {
+              let escapedDesc = pkgData.description
+                .replace(/\*/g, '\\*')
+                .replace(/`/g, '\\`')
+
+              if (escapedDesc.length > 200) {
+                escapedDesc = `${escapedDesc.substring(0, 197)}...`
+              }
+              description = ` - ${escapedDesc}`
+            }
+
+            packageNameJsdoc += `   * **${pkgData.name}**${description}\n`
+            packageNameJsdoc += '   *\n'
+            packageNameJsdoc += `   * @domain \`${actualDomain}\`\n`
+
+            // Add programs, version, install info to match the domain entries
+            if (pkgData.programs && pkgData.programs.length > 0) {
+              const programsList = pkgData.programs.slice(0, 5).join('`, `')
+              const morePrograms = pkgData.programs.length > 5 ? `, ... (+${pkgData.programs.length - 5} more)` : ''
+              packageNameJsdoc += `   * @programs \`${programsList}\`${morePrograms}\n`
+            }
+
+            if (pkgData.versions && pkgData.versions.length > 0) {
+              packageNameJsdoc += `   * @version \`${pkgData.versions[0]}\` (${pkgData.versions.length} versions available)\n`
+            }
+
+            if (pkgData.installCommand) {
+              packageNameJsdoc += `   * @install \`${pkgData.installCommand}\`\n`
+            }
+
+            packageNameJsdoc += `   * @package_name \`${pkgData.name}\`\n`
+            packageNameJsdoc += `   * @alias_for \`pantry.${domainVarName}\`\n`
+            packageNameJsdoc += '   *\n'
+            packageNameJsdoc += '   * @example\n'
+            packageNameJsdoc += '   * ```typescript\n'
+            packageNameJsdoc += `   * import { pantry } from 'ts-pkgx'\n`
+            packageNameJsdoc += '   *\n'
+            packageNameJsdoc += `   * // Both access the same package object\n`
+            packageNameJsdoc += `   * const pkg1 = pantry.${packageNameVarName}  // via package name\n`
+            packageNameJsdoc += `   * const pkg2 = pantry.${domainVarName}  // via domain\n`
+            packageNameJsdoc += `   * console.log(pkg1 === pkg2)  // true\n`
+            packageNameJsdoc += '   * ```\n'
+            packageNameJsdoc += '   */\n'
+
+            // Add to interface - reference the existing domain's module, not a new one
+            interfaceDecl += packageNameJsdoc
+            interfaceDecl += `  '${packageNameVarName}': ${moduleVarName}.${typeName}\n\n`
+
+            // Add to pantry - reference the existing domain's module, not a new one
+            pantry += `  '${packageNameVarName}': ${moduleVarName}.${packageVarName},\n`
+
+            console.log(`Added package name key: ${packageNameVarName} -> ${domainVarName} (${pkgData.name})`)
+          }
+        }
+      }
+    }
+
     // Add alias properties to the interface and pantry object
     const sortedAliases = Object.entries(aliasToVarName).sort((a, b) => a[0].localeCompare(b[0]))
 
@@ -807,6 +910,29 @@ export * from './aliases'
 
       // Add all domain variable names to the used set
       Object.values(domainToVarName).forEach(varName => usedPropertyNames.add(varName))
+
+      // Add all package name variable names to the used set
+      for (const file of sortedPackageFiles) {
+        const moduleName = path.basename(file, '.ts')
+        const guessedDomain = guessOriginalDomain(moduleName)
+        if (!isValidPackageDomain(guessedDomain))
+          continue
+
+        // Get package data using guessed domain first
+        const guessedDomainVarName = convertDomainToVarName(guessedDomain)
+        const pkgData = pantryData[guessedDomainVarName] || pantryData[moduleName] || pantryData[guessedDomain]
+
+        // Use actual domain from package data
+        const actualDomain = pkgData?.domain || guessedDomain
+        const domainVarName = convertDomainToVarName(actualDomain)
+
+        if (pkgData && !shouldExcludePackage(pkgData) && pkgData.name) {
+          const packageNameVarName = convertDomainToVarName(pkgData.name)
+          if (packageNameVarName !== domainVarName) {
+            usedPropertyNames.add(packageNameVarName)
+          }
+        }
+      }
 
       for (const [originalAlias, targetVarName] of sortedAliases) {
         const targetDomain = Object.keys(domainToVarName).find(d => domainToVarName[d] === targetVarName)
@@ -887,8 +1013,12 @@ export * from './aliases'
         // Find the target type
         const targetFile = packageFiles.find((file) => {
           const moduleName = path.basename(file, '.ts')
-          const domain = guessOriginalDomain(moduleName)
-          return convertDomainToVarName(domain) === targetVarName
+          const guessedDomain = guessOriginalDomain(moduleName)
+          // Get package data to find actual domain
+          const guessedDomainVarName = convertDomainToVarName(guessedDomain)
+          const pkgData = pantryData[guessedDomainVarName] || pantryData[moduleName] || pantryData[guessedDomain]
+          const actualDomain = pkgData?.domain || guessedDomain
+          return convertDomainToVarName(actualDomain) === targetVarName
         })
 
         if (targetFile) {
@@ -1150,7 +1280,7 @@ function isValidPackageDomain(domain: string): boolean {
 
   // Domain should have at least one dot (be a valid domain format)
   // Exception: some single-word domains like 'go' are valid
-  const validSingleWordDomains = ['go', 'rust', 'zig', 'nim', 'dart', 'julia', 'scala', 'kotlin', 'swift']
+  const validSingleWordDomains = ['go', 'rust', 'zig', 'nim', 'dart', 'julia', 'scala', 'kotlin', 'swift', 'node', 'bun']
   if (!domain.includes('.') && !validSingleWordDomains.includes(domain.toLowerCase())) {
     return false
   }
@@ -1160,8 +1290,8 @@ function isValidPackageDomain(domain: string): boolean {
     return false
   }
 
-  // Domain should not contain invalid characters for a domain name
-  if (!/^[a-z0-9.\-/]+$/i.test(domain)) {
+  // Domain should not contain invalid characters for a domain name (allow underscores in paths)
+  if (!/^[\w.\-/]+$/.test(domain)) {
     return false
   }
 
