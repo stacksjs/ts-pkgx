@@ -626,7 +626,9 @@ export * from './aliases'
     const sortedPackageFiles = packageFiles.sort((a, b) => {
       const moduleA = path.basename(a, '.ts')
       const moduleB = path.basename(b, '.ts')
-      return moduleA.localeCompare(moduleB, undefined, { numeric: true, sensitivity: 'base' })
+      const domainA = guessOriginalDomain(moduleA)
+      const domainB = guessOriginalDomain(moduleB)
+      return domainA.localeCompare(domainB, undefined, { numeric: true, sensitivity: 'base' })
     })
 
     // Process each package file

@@ -1,4 +1,4 @@
-import { afterEach, beforeEach, describe, expect, mock, test } from 'bun:test'
+import { beforeEach, describe, expect, mock, test } from 'bun:test'
 import { PACKAGE_ALIASES } from '../src/consts'
 
 // Mock the CLI module functions that we want to test
