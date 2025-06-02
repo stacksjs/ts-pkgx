@@ -622,12 +622,13 @@ export * from './aliases'
     let pantry = 'export const pantry: Pantry = {\n'
 
     // Sort package files alphabetically for consistent import order
-    // Use natural sorting to handle numbers properly (e.g., libssh.org before libssh2.org)
+    // Sort by original domain name for proper alphabetical ordering
     const sortedPackageFiles = packageFiles.sort((a, b) => {
       const moduleA = path.basename(a, '.ts')
       const moduleB = path.basename(b, '.ts')
       const domainA = guessOriginalDomain(moduleA)
       const domainB = guessOriginalDomain(moduleB)
+
       return domainA.localeCompare(domainB, undefined, { numeric: true, sensitivity: 'base' })
     })
 

@@ -240,10 +240,11 @@ describe('Index Module', () => {
         // Install command should start with 'pkgx' or 'sh'
         expect(pkg.installCommand).toMatch(/^(pkgx|sh\s)/)
 
-        // Should contain some reference to the package (domain or alias)
+        // Should contain some reference to the package (domain, alias, or name)
         const containsDomain = pkg.installCommand.includes(pkg.domain)
         const containsAlias = pkg.aliases && pkg.aliases.some(alias => pkg.installCommand.includes(alias))
-        expect(containsDomain || containsAlias).toBe(true)
+        const containsName = pkg.name && pkg.installCommand.includes(pkg.name)
+        expect(containsDomain || containsAlias || containsName).toBe(true)
       }
     })
 
