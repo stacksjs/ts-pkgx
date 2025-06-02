@@ -63,6 +63,7 @@
     "pkgx:docs": "bun bin/cli.ts generate-docs"
   },
   "dependencies": {
+    "js-yaml": "^4.1.0",
     "playwright": "^1.52.0"
   },
   "devDependencies": {

@@ -4,6 +4,7 @@
     "": {
       "name": "ts-pkgx",
       "dependencies": {
+        "js-yaml": "^4.1.0",
         "playwright": "^1.52.0",
       },
       "devDependencies": {

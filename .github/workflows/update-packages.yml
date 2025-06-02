@@ -55,15 +55,30 @@ jobs:
         run: |
           echo "Starting package fetch..."
 
-          # Capture the JSON output from the fetch command
-          FETCH_RESULT=$(bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000 --output-json 2>/dev/null || echo '{"success":false,"error":"fetch failed"}')
+          # Create a temporary file to capture the JSON output safely
+          TEMP_JSON_FILE=$(mktemp)
+
+          # Capture the JSON output from the fetch command to a file
+          if bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000 --output-json > "$TEMP_JSON_FILE" 2>/dev/null; then
+            echo "Fetch command completed successfully"
+          else
+            echo "Fetch command failed, creating error JSON"
+            echo '{"success":false,"error":"fetch failed"}' > "$TEMP_JSON_FILE"
+          fi
+
+          # Read the JSON from the file (this handles newlines properly)
+          FETCH_RESULT=$(cat "$TEMP_JSON_FILE")
 
           echo "Fetch command completed. Result:"
           echo "$FETCH_RESULT"
 
+          # Use the file content for GitHub output (safer for multiline content)
           echo "fetch_result<<EOF" >> $GITHUB_OUTPUT
-          echo "$FETCH_RESULT" >> $GITHUB_OUTPUT
+          cat "$TEMP_JSON_FILE" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+
+          # Clean up temp file
+          rm -f "$TEMP_JSON_FILE"
 
           # Also run without JSON for normal logging (to stderr so it doesn't interfere with JSON)
           echo "Running fetch command again for detailed logging..."
