@@ -629,7 +629,13 @@ export * from './aliases'
       const domainA = guessOriginalDomain(moduleA)
       const domainB = guessOriginalDomain(moduleB)
 
-      return domainA.localeCompare(domainB, undefined, { numeric: true, sensitivity: 'base' })
+      // For proper sorting, we want slash domains to come before dot domains
+      // when they have the same prefix (e.g., git/cliff.org before git.osgeo.org)
+      // We'll normalize by replacing dots with a character that sorts after slashes
+      const normalizedA = domainA.replace(/\./g, '~')
+      const normalizedB = domainB.replace(/\./g, '~')
+
+      return normalizedA.localeCompare(normalizedB, undefined, { numeric: true, sensitivity: 'base' })
     })
 
     // Process each package file

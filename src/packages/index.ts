@@ -249,13 +249,13 @@ import * as gflags_github_io from './gflags.github.io'
 import * as ghostgum_com_au from './ghostgum.com.au'
 import * as ghostscript_com from './ghostscript.com'
 import * as giflib_sourceforge_io from './giflib.sourceforge.io'
-import * as git_osgeo_org from './git.osgeo.org'
-import * as git_tozt_net from './git.tozt.net'
 import * as git_cliff_org from './git-cliff.org'
 import * as git_lfs_com from './git-lfs.com'
 import * as git_quick_stats_sh from './git-quick-stats.sh'
 import * as git_scm_org from './git-scm.org'
 import * as git_town_com from './git-town.com'
+import * as git_osgeo_org from './git.osgeo.org'
+import * as git_tozt_net from './git.tozt.net'
 import * as github_com from './github.com'
 import * as github_com_0age_create2crunch from './github.com-0age-create2crunch'
 import * as github_com_blacktop_lporg from './github.com-blacktop-lporg'
@@ -365,8 +365,8 @@ import * as jbig2dec_com from './jbig2dec.com'
 import * as jedisct1_github_io from './jedisct1.github.io'
 import * as jedsoft_org from './jedsoft.org'
 import * as jemalloc_net from './jemalloc.net'
-import * as jenkins_io from './jenkins.io'
 import * as jenkins_x_io from './jenkins-x.io'
+import * as jenkins_io from './jenkins.io'
 import * as jenv_be from './jenv.be'
 import * as jetporch_com from './jetporch.com'
 import * as jfrog_com from './jfrog.com'
@@ -650,9 +650,9 @@ import * as pyinvoke_org from './pyinvoke.org'
 import * as pypa_github_io from './pypa.github.io'
 import * as pypa_io from './pypa.io'
 import * as pytest_org from './pytest.org'
-import * as python_org from './python.org'
 import * as python_pillow_org from './python-pillow.org'
 import * as python_poetry_org from './python-poetry.org'
+import * as python_org from './python.org'
 import * as pyyaml_org from './pyyaml.org'
 import * as qemu_org from './qemu.org'
 import * as qhull_org from './qhull.org'
@@ -764,16 +764,16 @@ import * as talos_dev from './talos.dev'
 import * as taplo_tamasfe_dev from './taplo.tamasfe.dev'
 import * as tart_run from './tart.run'
 import * as taskfile_dev from './taskfile.dev'
-import * as tcl_tk from './tcl.tk'
 import * as tcl_lang_org from './tcl-lang.org'
+import * as tcl_tk from './tcl.tk'
 import * as tcpdump_org from './tcpdump.org'
 import * as tcsh_org from './tcsh.org'
 import * as tea_xyz from './tea.xyz'
 import * as tectonic_typesetting_github_io from './tectonic-typesetting.github.io'
 import * as templ_guide from './templ.guide'
 import * as temporal_io from './temporal.io'
-import * as terraform_io from './terraform.io'
 import * as terraform_docs_io from './terraform-docs.io'
+import * as terraform_io from './terraform.io'
 import * as terragrunt_gruntwork_io from './terragrunt.gruntwork.io'
 import * as terratag_io from './terratag.io'
 import * as tesseract_ocr_github_io from './tesseract-ocr.github.io'
@@ -5268,32 +5268,6 @@ export interface Pantry {
   'giflibsourceforgeio': giflib_sourceforge_io.GifPackage
 
   /**
-   * **git.osgeo.org** - pkgx package
-   *
-   * @domain `git.osgeo.org`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   * const pkg = pantry.gitosgeoorg
-   * ```
-   */
-  'gitosgeoorg': git_osgeo_org.GitosgeoorgPackage
-
-  /**
-   * **git.tozt.net** - pkgx package
-   *
-   * @domain `git.tozt.net`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   * const pkg = pantry.gittoztnet
-   * ```
-   */
-  'gittoztnet': git_tozt_net.GittoztnetPackage
-
-  /**
    * **git-cliff** - A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️
    *
    * @domain `git/cliff.org`
@@ -5402,6 +5376,32 @@ export interface Pantry {
    * ```
    */
   'gittowncom': git_town_com.GittownPackage
+
+  /**
+   * **git.osgeo.org** - pkgx package
+   *
+   * @domain `git.osgeo.org`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   * const pkg = pantry.gitosgeoorg
+   * ```
+   */
+  'gitosgeoorg': git_osgeo_org.GitosgeoorgPackage
+
+  /**
+   * **git.tozt.net** - pkgx package
+   *
+   * @domain `git.tozt.net`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   * const pkg = pantry.gittoztnet
+   * ```
+   */
+  'gittoztnet': git_tozt_net.GittoztnetPackage
 
   /**
    * **github.com** - pkgx package
@@ -7212,28 +7212,6 @@ export interface Pantry {
   'jemallocnet': jemalloc_net.JemallocnetPackage
 
   /**
-   * **jenkins-lts** - Extendable open source continuous integration server
-   *
-   * @domain `jenkins.io`
-   * @programs `jenkins-lts`, `jenkins-lts-cli`
-   * @version `2.504.2` (19 versions available)
-   * @install `sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i`
-   * @dependencies `openjdk.org<20`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * const pkg = pantry.jenkinsio
-   * console.log(pkg.name)        // "jenkins-lts"
-   * console.log(pkg.description) // "Extendable open source continuous integration s..."
-   * console.log(pkg.programs)    // ["jenkins-lts", "jenkins-lts-cli"]
-   * console.log(pkg.versions[0]) // "2.504.2"
-   * ```
-   */
-  'jenkinsio': jenkins_io.JenkinsltsPackage
-
-  /**
    * **Jenkins X** - Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton
    *
    * @domain `jenkins/x.io`
@@ -7254,6 +7232,28 @@ export interface Pantry {
    * ```
    */
   'jenkinsxio': jenkins_x_io.JxPackage
+
+  /**
+   * **jenkins-lts** - Extendable open source continuous integration server
+   *
+   * @domain `jenkins.io`
+   * @programs `jenkins-lts`, `jenkins-lts-cli`
+   * @version `2.504.2` (19 versions available)
+   * @install `sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i`
+   * @dependencies `openjdk.org<20`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * const pkg = pantry.jenkinsio
+   * console.log(pkg.name)        // "jenkins-lts"
+   * console.log(pkg.description) // "Extendable open source continuous integration s..."
+   * console.log(pkg.programs)    // ["jenkins-lts", "jenkins-lts-cli"]
+   * console.log(pkg.versions[0]) // "2.504.2"
+   * ```
+   */
+  'jenkinsio': jenkins_io.JenkinsltsPackage
 
   /**
    * **jenv** - Manage your Java environment
@@ -12525,29 +12525,6 @@ export interface Pantry {
   'pytestorg': pytest_org.PytestPackage
 
   /**
-   * **python** - The Python programming language
-   *
-   * @domain `python.org`
-   * @programs `python`, `python{{ version.major }}`, `python{{ version.marketing }}`
-   * @version `3.13.3` (145 versions available)
-   * @install `sh <(curl https://pkgx.sh) +python.org -- $SHELL -i`
-   * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+8 more)
-   * @companions `pip.pypa.io`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * const pkg = pantry.pythonorg
-   * console.log(pkg.name)        // "python"
-   * console.log(pkg.description) // "The Python programming language"
-   * console.log(pkg.programs)    // ["python", "python{{ version.major }}", ...]
-   * console.log(pkg.versions[0]) // "3.13.3"
-   * ```
-   */
-  'pythonorg': python_org.PythonPackage
-
-  /**
    * **python-pillow.org** - Python Imaging Library (Fork)
    *
    * @domain `python/pillow.org`
@@ -12588,6 +12565,29 @@ export interface Pantry {
    * ```
    */
   'pythonpoetryorg': python_poetry_org.PoetryPackage
+
+  /**
+   * **python** - The Python programming language
+   *
+   * @domain `python.org`
+   * @programs `python`, `python{{ version.major }}`, `python{{ version.marketing }}`
+   * @version `3.13.3` (145 versions available)
+   * @install `sh <(curl https://pkgx.sh) +python.org -- $SHELL -i`
+   * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+8 more)
+   * @companions `pip.pypa.io`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * const pkg = pantry.pythonorg
+   * console.log(pkg.name)        // "python"
+   * console.log(pkg.description) // "The Python programming language"
+   * console.log(pkg.programs)    // ["python", "python{{ version.major }}", ...]
+   * console.log(pkg.versions[0]) // "3.13.3"
+   * ```
+   */
+  'pythonorg': python_org.PythonPackage
 
   /**
    * **pyyaml.org** - Canonical source repository for LibYAML
@@ -14694,19 +14694,6 @@ export interface Pantry {
   'taskfiledev': taskfile_dev.TaskPackage
 
   /**
-   * **tcl.tk** - pkgx package
-   *
-   * @domain `tcl.tk`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   * const pkg = pantry.tcltk
-   * ```
-   */
-  'tcltk': tcl_tk.TcltkPackage
-
-  /**
    * **tcl-lang.org** - Tool Command Language
    *
    * @domain `tcl/lang.org`
@@ -14727,6 +14714,19 @@ export interface Pantry {
    * ```
    */
   'tcllangorg': tcl_lang_org.TcllangorgPackage
+
+  /**
+   * **tcl.tk** - pkgx package
+   *
+   * @domain `tcl.tk`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   * const pkg = pantry.tcltk
+   * ```
+   */
+  'tcltk': tcl_tk.TcltkPackage
 
   /**
    * **pcap-config** - the LIBpcap interface to various kernel packet capture mechanism
@@ -14849,27 +14849,6 @@ export interface Pantry {
   'temporalio': temporal_io.TemporalPackage
 
   /**
-   * **terraform** - Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared ...
-   *
-   * @domain `terraform.io`
-   * @programs `terraform`
-   * @version `1.12.1` (74 versions available)
-   * @install `sh <(curl https://pkgx.sh) terraform`
-   *
-   * @example
-   * ```typescript
-   * import { pantry } from 'ts-pkgx'
-   *
-   * const pkg = pantry.terraformio
-   * console.log(pkg.name)        // "terraform"
-   * console.log(pkg.description) // "Terraform enables you to safely and predictably..."
-   * console.log(pkg.programs)    // ["terraform"]
-   * console.log(pkg.versions[0]) // "1.12.1"
-   * ```
-   */
-  'terraformio': terraform_io.TerraformPackage
-
-  /**
    * **terraform-docs** - Generate documentation from Terraform modules in various output formats
    *
    * @domain `terraform/docs.io`
@@ -14889,6 +14868,27 @@ export interface Pantry {
    * ```
    */
   'terraformdocsio': terraform_docs_io.TerraformdocsPackage
+
+  /**
+   * **terraform** - Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared ...
+   *
+   * @domain `terraform.io`
+   * @programs `terraform`
+   * @version `1.12.1` (74 versions available)
+   * @install `sh <(curl https://pkgx.sh) terraform`
+   *
+   * @example
+   * ```typescript
+   * import { pantry } from 'ts-pkgx'
+   *
+   * const pkg = pantry.terraformio
+   * console.log(pkg.name)        // "terraform"
+   * console.log(pkg.description) // "Terraform enables you to safely and predictably..."
+   * console.log(pkg.programs)    // ["terraform"]
+   * console.log(pkg.versions[0]) // "1.12.1"
+   * ```
+   */
+  'terraformio': terraform_io.TerraformPackage
 
   /**
    * **terragrunt** - Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.
@@ -17363,13 +17363,13 @@ export const pantry: Pantry = {
   'ghostgumcomau': ghostgum_com_au.ghostgumcomauPackage,
   'ghostscriptcom': ghostscript_com.ghostscriptcomPackage,
   'giflibsourceforgeio': giflib_sourceforge_io.gifPackage,
-  'gitosgeoorg': git_osgeo_org.gitosgeoorgPackage,
-  'gittoztnet': git_tozt_net.gittoztnetPackage,
   'gitclifforg': git_cliff_org.gitcliffPackage,
   'gitlfscom': git_lfs_com.gitlfsPackage,
   'gitquickstatssh': git_quick_stats_sh.gitquickstatsPackage,
   'gitscmorg': git_scm_org.gitPackage,
   'gittowncom': git_town_com.gittownPackage,
+  'gitosgeoorg': git_osgeo_org.gitosgeoorgPackage,
+  'gittoztnet': git_tozt_net.gittoztnetPackage,
   'githubcom': github_com.githubcomPackage,
   'githubcom0agecreate2crunch': github_com_0age_create2crunch.githubcom0agecreate2crunchPackage,
   'githubcomblacktoplporg': github_com_blacktop_lporg.githubcomblacktoplporgPackage,
@@ -17479,8 +17479,8 @@ export const pantry: Pantry = {
   'jedisct1githubio': jedisct1_github_io.jedisct1githubioPackage,
   'jedsoftorg': jedsoft_org.jedsoftorgPackage,
   'jemallocnet': jemalloc_net.jemallocnetPackage,
-  'jenkinsio': jenkins_io.jenkinsltsPackage,
   'jenkinsxio': jenkins_x_io.jxPackage,
+  'jenkinsio': jenkins_io.jenkinsltsPackage,
   'jenvbe': jenv_be.jenvPackage,
   'jetporchcom': jetporch_com.jetpPackage,
   'jfrogcom': jfrog_com.jfrogcomPackage,
@@ -17764,9 +17764,9 @@ export const pantry: Pantry = {
   'pypagithubio': pypa_github_io.pypagithubioPackage,
   'pypaio': pypa_io.pypaioPackage,
   'pytestorg': pytest_org.pytestPackage,
-  'pythonorg': python_org.pythonPackage,
   'pythonpilloworg': python_pillow_org.pythonpilloworgPackage,
   'pythonpoetryorg': python_poetry_org.poetryPackage,
+  'pythonorg': python_org.pythonPackage,
   'pyyamlorg': pyyaml_org.pyyamlorgPackage,
   'qemuorg': qemu_org.qemuPackage,
   'qhullorg': qhull_org.qhullorgPackage,
@@ -17878,16 +17878,16 @@ export const pantry: Pantry = {
   'taplotamasfedev': taplo_tamasfe_dev.taploPackage,
   'tartrun': tart_run.tartPackage,
   'taskfiledev': taskfile_dev.taskPackage,
-  'tcltk': tcl_tk.tcltkPackage,
   'tcllangorg': tcl_lang_org.tcllangorgPackage,
+  'tcltk': tcl_tk.tcltkPackage,
   'tcpdumporg': tcpdump_org.pcapconfigPackage,
   'tcshorg': tcsh_org.tcshorgPackage,
   'teaxyz': tea_xyz.teaxyzPackage,
   'tectonictypesettinggithubio': tectonic_typesetting_github_io.tectonicPackage,
   'templguide': templ_guide.templPackage,
   'temporalio': temporal_io.temporalPackage,
-  'terraformio': terraform_io.terraformPackage,
   'terraformdocsio': terraform_docs_io.terraformdocsPackage,
+  'terraformio': terraform_io.terraformPackage,
   'terragruntgruntworkio': terragrunt_gruntwork_io.terragruntPackage,
   'terratagio': terratag_io.terratagPackage,
   'tesseractocrgithubio': tesseract_ocr_github_io.tesseractPackage,
