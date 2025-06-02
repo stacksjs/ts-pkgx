@@ -137,12 +137,16 @@ jobs:
           TOTAL_PROCESSED=$(echo "$FETCH_RESULT" | jq -r '.totalProcessed // 0' 2>/dev/null)
 
           # Extract first few package names for commit message (sanitize for shell safety)
-          UPDATED_PACKAGES=$(echo "$FETCH_RESULT" | jq -r '.updatedPackagesMixed[]? // .updatedPackages[]? // empty' 2>/dev/null | head -20 | tr -d '\n\r' | tr ' ' '_')
+          # Create a temporary file to safely handle package names with special characters
+          TEMP_PACKAGES_FILE=$(mktemp)
+          echo "$FETCH_RESULT" | jq -r '.updatedPackagesMixed[]? // .updatedPackages[]? // empty' 2>/dev/null | head -20 | sed 's/[^a-zA-Z0-9.-]/_/g' > "$TEMP_PACKAGES_FILE"
+          UPDATED_PACKAGES=$(cat "$TEMP_PACKAGES_FILE" | tr '\n' ' ')
+          rm -f "$TEMP_PACKAGES_FILE"
 
           # Debug output
           echo "Total packages processed: $TOTAL_PROCESSED"
           echo "Total packages updated: $TOTAL_UPDATED"
-          echo "Sample updated packages: $(echo "$UPDATED_PACKAGES" | head -5 | tr '\n' ' ')"
+          echo "Sample updated packages: $(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-5)"
 
           # Generate commit message based on update count
           if [ "$TOTAL_UPDATED" -eq 0 ]; then
@@ -151,24 +155,36 @@ jobs:
             SHOULD_COMMIT="false"
           elif [ "$TOTAL_UPDATED" -le 3 ]; then
             # For small numbers, list all packages
-            PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | head -3 | paste -sd ',' - | sed 's/,/, /g')
-            COMMIT_MSG="chore: update $PACKAGE_LIST"
+            PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//')
+            if [ -n "$PACKAGE_LIST" ] && [ "$PACKAGE_LIST" != "" ]; then
+              COMMIT_MSG="chore: update $PACKAGE_LIST"
+            else
+              COMMIT_MSG="chore: update $TOTAL_UPDATED packages"
+            fi
             SHOULD_COMMIT="true"
           elif [ "$TOTAL_UPDATED" -le 8 ]; then
             # For medium numbers, list first few and count the rest
-            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | head -4 | paste -sd ',' - | sed 's/,/, /g')
+            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-4 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//')
             REMAINING=$((TOTAL_UPDATED - 4))
-            if [ "$REMAINING" -eq 1 ]; then
-              COMMIT_MSG="chore: update $FIRST_PACKAGES and 1 other dep"
+            if [ -n "$FIRST_PACKAGES" ] && [ "$FIRST_PACKAGES" != "" ]; then
+              if [ "$REMAINING" -eq 1 ]; then
+                COMMIT_MSG="chore: update $FIRST_PACKAGES and 1 other dep"
+              else
+                COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
+              fi
             else
-              COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
+              COMMIT_MSG="chore: update $TOTAL_UPDATED packages"
             fi
             SHOULD_COMMIT="true"
           else
             # For large numbers, list first few and count the rest
-            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | head -3 | paste -sd ',' - | sed 's/,/, /g')
+            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//')
             REMAINING=$((TOTAL_UPDATED - 3))
-            COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
+            if [ -n "$FIRST_PACKAGES" ] && [ "$FIRST_PACKAGES" != "" ]; then
+              COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
+            else
+              COMMIT_MSG="chore: update $TOTAL_UPDATED packages"
+            fi
             SHOULD_COMMIT="true"
           fi
 
