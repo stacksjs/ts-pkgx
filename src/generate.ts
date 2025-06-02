@@ -568,7 +568,15 @@ export const pantry: Pantry = {
 export const packages: Packages = pantry
 export * from './aliases'
 `
-      await fs.promises.writeFile(targetIndexFile, content)
+      // Use synchronous write for better reliability in CI environments
+      fs.writeFileSync(targetIndexFile, content)
+
+      // Verify the file was written successfully
+      if (!fs.existsSync(targetIndexFile)) {
+        throw new Error(`Failed to write minimal file: ${targetIndexFile}`)
+      }
+
+      console.log(`DEBUG: Minimal file written, exists: ${fs.existsSync(targetIndexFile)}`)
       console.log(`Generated minimal ${targetIndexFile}`)
       return targetIndexFile
     }
@@ -908,7 +916,18 @@ export * from './aliases'
     const content = `${imports}\n${interfaceDecl}${packagesType}${pantry}${packagesConst}${aliasesExport}`
 
     // Write to the index file
-    await fs.promises.writeFile(targetIndexFile, content)
+    console.log(`DEBUG: About to write to ${targetIndexFile}`)
+    console.log(`DEBUG: Directory exists: ${fs.existsSync(path.dirname(targetIndexFile))}`)
+
+    // Use synchronous write for better reliability in CI environments
+    fs.writeFileSync(targetIndexFile, content)
+
+    // Verify the file was written successfully
+    if (!fs.existsSync(targetIndexFile)) {
+      throw new Error(`Failed to write file: ${targetIndexFile}`)
+    }
+
+    console.log(`DEBUG: File written, exists: ${fs.existsSync(targetIndexFile)}`)
     console.log(`Successfully generated ${targetIndexFile}`)
 
     return targetIndexFile
@@ -1052,7 +1071,18 @@ export async function generateAliases(packagesDir?: string): Promise<string> {
     content += '}\n'
 
     // Write the file
+    console.log(`DEBUG: About to write aliases to ${aliasesFile}`)
+    console.log(`DEBUG: Directory exists: ${fs.existsSync(path.dirname(aliasesFile))}`)
+
+    // Use synchronous write for better reliability in CI environments
     fs.writeFileSync(aliasesFile, content)
+
+    // Verify the file was written successfully
+    if (!fs.existsSync(aliasesFile)) {
+      throw new Error(`Failed to write file: ${aliasesFile}`)
+    }
+
+    console.log(`DEBUG: Aliases file written, exists: ${fs.existsSync(aliasesFile)}`)
     console.log(`Successfully generated ${aliasesFile} with ${sortedAliases.length} aliases`)
 
     return aliasesFile
@@ -1384,7 +1414,7 @@ Each package includes:
 To add or update packages, see the pkgx [contribution guide](https://docs.pkgx.sh/appendix/packaging/pantry).
 `
 
-  fs.writeFileSync(catalogPath, content)
+  await fs.promises.writeFile(catalogPath, content)
   return catalogPath
 }
 
@@ -1573,7 +1603,7 @@ console.log(\`Programs: \${pkg.programs.join(', ')}\`)
 *This documentation was auto-generated from package data.*
 `
 
-      fs.writeFileSync(filepath, content)
+      await fs.promises.writeFile(filepath, content)
       generatedFiles.push(filepath)
     }
     catch (error) {
@@ -1663,7 +1693,7 @@ ${description}
     content += `[← Back to Package Catalog](../package-catalog.md)
 `
 
-    fs.writeFileSync(filepath, content)
+    await fs.promises.writeFile(filepath, content)
     generatedFiles.push(filepath)
   }
 

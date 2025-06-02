@@ -119,6 +119,12 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
 
         expect(indexPath).toBeDefined()
         expect(indexPath).toContain('index.ts')
+
+        // Add a small delay in CI environments to ensure file system consistency
+        if (process.env.CI) {
+          await new Promise(resolve => setTimeout(resolve, 10))
+        }
+
         expect(fs.existsSync(indexPath!)).toBe(true)
 
         const content = fs.readFileSync(indexPath!, 'utf-8')
@@ -236,6 +242,12 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
 
         expect(aliasesPath).toBeDefined()
         expect(aliasesPath).toContain('aliases.ts')
+
+        // Add a small delay in CI environments to ensure file system consistency
+        if (process.env.CI) {
+          await new Promise(resolve => setTimeout(resolve, 10))
+        }
+
         expect(fs.existsSync(aliasesPath)).toBe(true)
 
         const content = fs.readFileSync(aliasesPath, 'utf-8')
