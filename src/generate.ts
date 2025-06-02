@@ -1173,8 +1173,8 @@ export async function generateAliases(packagesDir?: string): Promise<string> {
     // Extract all aliases
     const aliases = await extractAllAliases(packagesDir)
 
-    // Use provided packages directory or default to current working directory
-    const targetPackagesDir = packagesDir || path.join(process.cwd(), 'src', 'packages')
+    // Use provided packages directory or default - always resolve to absolute path
+    const targetPackagesDir = packagesDir ? path.resolve(packagesDir) : path.resolve(process.cwd(), 'src', 'packages')
     const aliasesFile = path.resolve(targetPackagesDir, 'aliases.ts')
 
     // Ensure the directory exists before writing the file

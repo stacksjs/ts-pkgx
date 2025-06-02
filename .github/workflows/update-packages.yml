@@ -78,12 +78,35 @@ jobs:
             TOTAL_UPDATED=$(jq -r '.totalUpdated // 0' "$TEMP_JSON_FILE" 2>/dev/null || echo "0")
             TOTAL_PROCESSED=$(jq -r '.totalProcessed // 0' "$TEMP_JSON_FILE" 2>/dev/null || echo "0")
 
-            # Get first 10 updated packages for commit message
-            UPDATED_PACKAGES=$(jq -r '.updatedPackagesMixed[]? // .updatedPackages[]? // empty' "$TEMP_JSON_FILE" 2>/dev/null | head -10 | jq -R . | jq -s . || echo "[]")
+            # Get first 15 updated packages for commit message, handling both possible array names
+            # Create a simple array of package names, avoiding complex jq operations that can cause broken pipes
+            UPDATED_PACKAGES_TEMP=$(mktemp)
+            {
+              jq -r '.updatedPackagesMixed[]? // empty' "$TEMP_JSON_FILE" 2>/dev/null || true
+              jq -r '.updatedPackages[]? // empty' "$TEMP_JSON_FILE" 2>/dev/null || true
+            } | head -15 > "$UPDATED_PACKAGES_TEMP"
 
-            # Create a smaller summary JSON using printf to avoid YAML issues
+            # Create JSON array from the package names
+            UPDATED_PACKAGES_JSON="["
+            FIRST=true
+            while IFS= read -r pkg; do
+              if [ -n "$pkg" ]; then
+                if [ "$FIRST" = true ]; then
+                  FIRST=false
+                else
+                  UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON,"
+                fi
+                # Escape package name for JSON
+                ESC_PKG=$(echo "$pkg" | sed 's/"/\\"/g')
+                UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON\"$ESC_PKG\""
+              fi
+            done < "$UPDATED_PACKAGES_TEMP"
+            UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON]"
+            rm -f "$UPDATED_PACKAGES_TEMP"
+
+            # Create a smaller summary JSON with consistent structure using printf
             printf '{"success":%s,"totalUpdated":%s,"totalProcessed":%s,"updatedPackages":%s,"note":"truncated_for_size"}' \
-              "$SUCCESS" "$TOTAL_UPDATED" "$TOTAL_PROCESSED" "$UPDATED_PACKAGES" > "$TEMP_JSON_FILE"
+              "$SUCCESS" "$TOTAL_UPDATED" "$TOTAL_PROCESSED" "$UPDATED_PACKAGES_JSON" > "$TEMP_JSON_FILE"
             echo "Created summary JSON ($(wc -c < "$TEMP_JSON_FILE") bytes)"
           fi
 
@@ -127,58 +150,46 @@ jobs:
       - name: Generate commit message
         id: commit-message
         run: |
-          # Create a temporary file to safely handle the large JSON from GitHub output
-          TEMP_FETCH_FILE=$(mktemp)
+          # Process the fetch result directly from the GitHub output variable
+          # to avoid broken pipe issues with large JSON content
 
-          # Write the fetch result to a temporary file to avoid heredoc issues with large content
-          cat > "$TEMP_FETCH_FILE" << 'EOF'
-          ${{ steps.fetch-packages.outputs.fetch_result }}
-          EOF
+          echo "Processing fetch result for commit message generation..."
 
-          # Debug: Show file size and first few lines for verification
-          echo "Fetch result file size: $(wc -c < "$TEMP_FETCH_FILE") bytes"
-          echo "First 200 characters:"
-          head -c 200 "$TEMP_FETCH_FILE" || true
-          echo ""
-
-          # Check if the fetch was successful
-          FETCH_SUCCESS=$(jq -r '.success // false' "$TEMP_FETCH_FILE" 2>/dev/null || echo "false")
+          # Extract key values directly from the GitHub output variable using jq with error handling
+          FETCH_SUCCESS=$(echo '${{ steps.fetch-packages.outputs.fetch_result }}' | jq -r '.success // false' 2>/dev/null || echo "false")
 
           if [ "$FETCH_SUCCESS" != "true" ]; then
             echo "Fetch was not successful, skipping commit"
             echo "commit_message=chore: fetch failed" >> $GITHUB_OUTPUT
             echo "total_updated=0" >> $GITHUB_OUTPUT
             echo "should_commit=false" >> $GITHUB_OUTPUT
-            rm -f "$TEMP_FETCH_FILE"
             exit 0
           fi
 
-          # Extract package counts and summary info using the file directly
-          TOTAL_UPDATED=$(jq -r '.totalUpdated // 0' "$TEMP_FETCH_FILE" 2>/dev/null || echo "0")
-          TOTAL_PROCESSED=$(jq -r '.totalProcessed // 0' "$TEMP_FETCH_FILE" 2>/dev/null || echo "0")
+          # Extract package counts safely
+          TOTAL_UPDATED=$(echo '${{ steps.fetch-packages.outputs.fetch_result }}' | jq -r '.totalUpdated // 0' 2>/dev/null || echo "0")
+          TOTAL_PROCESSED=$(echo '${{ steps.fetch-packages.outputs.fetch_result }}' | jq -r '.totalProcessed // 0' 2>/dev/null || echo "0")
 
-          # Extract first few package names for commit message (sanitize for shell safety)
-          # Create a temporary file to safely handle package names with special characters
-          TEMP_PACKAGES_FILE=$(mktemp)
-          jq -r '.updatedPackagesMixed[]? // .updatedPackages[]? // empty' "$TEMP_FETCH_FILE" 2>/dev/null | head -20 | sed 's/[^a-zA-Z0-9.-]/_/g' > "$TEMP_PACKAGES_FILE" || true
-          UPDATED_PACKAGES=$(cat "$TEMP_PACKAGES_FILE" 2>/dev/null | tr '\n' ' ' || echo "")
+          # Extract first few package names for commit message
+          # Use a more robust approach that handles large arrays without broken pipes
+          UPDATED_PACKAGES=$(echo '${{ steps.fetch-packages.outputs.fetch_result }}' | jq -r '
+            if .updatedPackages then .updatedPackages[]
+            elif .updatedPackagesMixed then .updatedPackagesMixed[]
+            else empty
+            end' 2>/dev/null | head -15 | sed 's/[^a-zA-Z0-9.-]/_/g' | tr '\n' ' ' | xargs || echo "")
 
-          # Clean up temporary files
-          rm -f "$TEMP_FETCH_FILE" "$TEMP_PACKAGES_FILE"
-
-          # Debug output
+          # Debug output with safe string operations
           echo "Total packages processed: $TOTAL_PROCESSED"
           echo "Total packages updated: $TOTAL_UPDATED"
-          echo "Sample updated packages: $(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-5)"
+          echo "Sample packages: $(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr -d '\n')"
 
-          # Generate commit message based on update count with better error handling
+          # Generate commit message based on update count
           if [ "$TOTAL_UPDATED" -eq 0 ]; then
-            echo "No packages were updated (all from cache)"
             COMMIT_MSG="chore: update packages (no changes detected)"
             SHOULD_COMMIT="false"
           elif [ "$TOTAL_UPDATED" -le 3 ]; then
             # For small numbers, list all packages
-            PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r' || echo "")
+            PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r')
             if [ -n "$PACKAGE_LIST" ] && [ "$PACKAGE_LIST" != "" ] && [ "$PACKAGE_LIST" != " " ]; then
               COMMIT_MSG="chore: update $PACKAGE_LIST"
             else
@@ -187,7 +198,7 @@ jobs:
             SHOULD_COMMIT="true"
           elif [ "$TOTAL_UPDATED" -le 8 ]; then
             # For medium numbers, list first few and count the rest
-            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-4 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r' || echo "")
+            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-4 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r')
             REMAINING=$((TOTAL_UPDATED - 4))
             if [ -n "$FIRST_PACKAGES" ] && [ "$FIRST_PACKAGES" != "" ] && [ "$FIRST_PACKAGES" != " " ]; then
               if [ "$REMAINING" -eq 1 ]; then
@@ -201,7 +212,7 @@ jobs:
             SHOULD_COMMIT="true"
           else
             # For large numbers, list first few and count the rest
-            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r' || echo "")
+            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r')
             REMAINING=$((TOTAL_UPDATED - 3))
             if [ -n "$FIRST_PACKAGES" ] && [ "$FIRST_PACKAGES" != "" ] && [ "$FIRST_PACKAGES" != " " ]; then
               COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
@@ -211,20 +222,18 @@ jobs:
             SHOULD_COMMIT="true"
           fi
 
-          # Sanitize commit message to prevent shell issues and truncate if too long
+          # Sanitize commit message and ensure it's not too long
           COMMIT_MSG=$(echo "$COMMIT_MSG" | tr -d '\n\r' | cut -c1-100)
 
-          # Write outputs using safer method to avoid broken pipes
-          {
-            echo "commit_message=$COMMIT_MSG"
-            echo "total_updated=$TOTAL_UPDATED"
-            echo "should_commit=$SHOULD_COMMIT"
-          } >> $GITHUB_OUTPUT
+          # Set outputs
+          echo "commit_message=$COMMIT_MSG" >> $GITHUB_OUTPUT
+          echo "total_updated=$TOTAL_UPDATED" >> $GITHUB_OUTPUT
+          echo "should_commit=$SHOULD_COMMIT" >> $GITHUB_OUTPUT
 
-          # Final debug output (shorter to avoid broken pipes)
-          echo "Commit msg: ${COMMIT_MSG:0:80}..."
+          # Final debug output
+          echo "Generated commit message: $COMMIT_MSG"
           echo "Should commit: $SHOULD_COMMIT"
-          echo "Updated: $TOTAL_UPDATED"
+          echo "Total updated: $TOTAL_UPDATED"
 
       - name: Check for changes
         id: git-check
