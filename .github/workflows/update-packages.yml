@@ -66,11 +66,26 @@ jobs:
             echo '{"success":false,"error":"fetch failed"}' > "$TEMP_JSON_FILE"
           fi
 
-          # Read the JSON from the file (this handles newlines properly)
-          FETCH_RESULT=$(cat "$TEMP_JSON_FILE")
+          # Check file size and truncate if necessary to prevent GitHub Actions output limits
+          FILE_SIZE=$(wc -c < "$TEMP_JSON_FILE")
+          echo "JSON output size: $FILE_SIZE bytes"
 
-          echo "Fetch command completed. Result:"
-          echo "$FETCH_RESULT"
+          if [ "$FILE_SIZE" -gt 262144 ]; then  # 256KB limit
+            echo "JSON output too large ($FILE_SIZE bytes), creating summary instead"
+
+            # Extract just the essential info for commit message generation
+            SUCCESS=$(jq -r '.success // false' "$TEMP_JSON_FILE" 2>/dev/null || echo "false")
+            TOTAL_UPDATED=$(jq -r '.totalUpdated // 0' "$TEMP_JSON_FILE" 2>/dev/null || echo "0")
+            TOTAL_PROCESSED=$(jq -r '.totalProcessed // 0' "$TEMP_JSON_FILE" 2>/dev/null || echo "0")
+
+            # Get first 10 updated packages for commit message
+            UPDATED_PACKAGES=$(jq -r '.updatedPackagesMixed[]? // .updatedPackages[]? // empty' "$TEMP_JSON_FILE" 2>/dev/null | head -10 | jq -R . | jq -s . || echo "[]")
+
+            # Create a smaller summary JSON using printf to avoid YAML issues
+            printf '{"success":%s,"totalUpdated":%s,"totalProcessed":%s,"updatedPackages":%s,"note":"truncated_for_size"}' \
+              "$SUCCESS" "$TOTAL_UPDATED" "$TOTAL_PROCESSED" "$UPDATED_PACKAGES" > "$TEMP_JSON_FILE"
+            echo "Created summary JSON ($(wc -c < "$TEMP_JSON_FILE") bytes)"
+          fi
 
           # Use the file content for GitHub output (safer for multiline content)
           echo "fetch_result<<EOF" >> $GITHUB_OUTPUT
@@ -112,51 +127,59 @@ jobs:
       - name: Generate commit message
         id: commit-message
         run: |
-          # Parse the fetch results - handle multiline JSON safely
-          FETCH_RESULT=$(cat << 'EOF'
+          # Create a temporary file to safely handle the large JSON from GitHub output
+          TEMP_FETCH_FILE=$(mktemp)
+
+          # Write the fetch result to a temporary file to avoid heredoc issues with large content
+          cat > "$TEMP_FETCH_FILE" << 'EOF'
           ${{ steps.fetch-packages.outputs.fetch_result }}
           EOF
-          )
 
-          # Debug: Show abbreviated fetch result
-          echo "Fetch result status check..."
+          # Debug: Show file size and first few lines for verification
+          echo "Fetch result file size: $(wc -c < "$TEMP_FETCH_FILE") bytes"
+          echo "First 200 characters:"
+          head -c 200 "$TEMP_FETCH_FILE" || true
+          echo ""
 
           # Check if the fetch was successful
-          FETCH_SUCCESS=$(echo "$FETCH_RESULT" | jq -r '.success // false' 2>/dev/null)
+          FETCH_SUCCESS=$(jq -r '.success // false' "$TEMP_FETCH_FILE" 2>/dev/null || echo "false")
 
           if [ "$FETCH_SUCCESS" != "true" ]; then
             echo "Fetch was not successful, skipping commit"
             echo "commit_message=chore: fetch failed" >> $GITHUB_OUTPUT
             echo "total_updated=0" >> $GITHUB_OUTPUT
             echo "should_commit=false" >> $GITHUB_OUTPUT
+            rm -f "$TEMP_FETCH_FILE"
             exit 0
           fi
 
-          # Extract package counts and summary info
-          TOTAL_UPDATED=$(echo "$FETCH_RESULT" | jq -r '.totalUpdated // 0' 2>/dev/null)
-          TOTAL_PROCESSED=$(echo "$FETCH_RESULT" | jq -r '.totalProcessed // 0' 2>/dev/null)
+          # Extract package counts and summary info using the file directly
+          TOTAL_UPDATED=$(jq -r '.totalUpdated // 0' "$TEMP_FETCH_FILE" 2>/dev/null || echo "0")
+          TOTAL_PROCESSED=$(jq -r '.totalProcessed // 0' "$TEMP_FETCH_FILE" 2>/dev/null || echo "0")
 
           # Extract first few package names for commit message (sanitize for shell safety)
           # Create a temporary file to safely handle package names with special characters
           TEMP_PACKAGES_FILE=$(mktemp)
-          echo "$FETCH_RESULT" | jq -r '.updatedPackagesMixed[]? // .updatedPackages[]? // empty' 2>/dev/null | head -20 | sed 's/[^a-zA-Z0-9.-]/_/g' > "$TEMP_PACKAGES_FILE"
-          UPDATED_PACKAGES=$(cat "$TEMP_PACKAGES_FILE" | tr '\n' ' ')
-          rm -f "$TEMP_PACKAGES_FILE"
+          jq -r '.updatedPackagesMixed[]? // .updatedPackages[]? // empty' "$TEMP_FETCH_FILE" 2>/dev/null | head -20 | sed 's/[^a-zA-Z0-9.-]/_/g' > "$TEMP_PACKAGES_FILE" || true
+          UPDATED_PACKAGES=$(cat "$TEMP_PACKAGES_FILE" 2>/dev/null | tr '\n' ' ' || echo "")
+
+          # Clean up temporary files
+          rm -f "$TEMP_FETCH_FILE" "$TEMP_PACKAGES_FILE"
 
           # Debug output
           echo "Total packages processed: $TOTAL_PROCESSED"
           echo "Total packages updated: $TOTAL_UPDATED"
           echo "Sample updated packages: $(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-5)"
 
-          # Generate commit message based on update count
+          # Generate commit message based on update count with better error handling
           if [ "$TOTAL_UPDATED" -eq 0 ]; then
             echo "No packages were updated (all from cache)"
             COMMIT_MSG="chore: update packages (no changes detected)"
             SHOULD_COMMIT="false"
           elif [ "$TOTAL_UPDATED" -le 3 ]; then
             # For small numbers, list all packages
-            PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//')
-            if [ -n "$PACKAGE_LIST" ] && [ "$PACKAGE_LIST" != "" ]; then
+            PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r' || echo "")
+            if [ -n "$PACKAGE_LIST" ] && [ "$PACKAGE_LIST" != "" ] && [ "$PACKAGE_LIST" != " " ]; then
               COMMIT_MSG="chore: update $PACKAGE_LIST"
             else
               COMMIT_MSG="chore: update $TOTAL_UPDATED packages"
@@ -164,9 +187,9 @@ jobs:
             SHOULD_COMMIT="true"
           elif [ "$TOTAL_UPDATED" -le 8 ]; then
             # For medium numbers, list first few and count the rest
-            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-4 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//')
+            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-4 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r' || echo "")
             REMAINING=$((TOTAL_UPDATED - 4))
-            if [ -n "$FIRST_PACKAGES" ] && [ "$FIRST_PACKAGES" != "" ]; then
+            if [ -n "$FIRST_PACKAGES" ] && [ "$FIRST_PACKAGES" != "" ] && [ "$FIRST_PACKAGES" != " " ]; then
               if [ "$REMAINING" -eq 1 ]; then
                 COMMIT_MSG="chore: update $FIRST_PACKAGES and 1 other dep"
               else
@@ -178,9 +201,9 @@ jobs:
             SHOULD_COMMIT="true"
           else
             # For large numbers, list first few and count the rest
-            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//')
+            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r' || echo "")
             REMAINING=$((TOTAL_UPDATED - 3))
-            if [ -n "$FIRST_PACKAGES" ] && [ "$FIRST_PACKAGES" != "" ]; then
+            if [ -n "$FIRST_PACKAGES" ] && [ "$FIRST_PACKAGES" != "" ] && [ "$FIRST_PACKAGES" != " " ]; then
               COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
             else
               COMMIT_MSG="chore: update $TOTAL_UPDATED packages"
@@ -188,13 +211,20 @@ jobs:
             SHOULD_COMMIT="true"
           fi
 
-          echo "commit_message=$COMMIT_MSG" >> $GITHUB_OUTPUT
-          echo "total_updated=$TOTAL_UPDATED" >> $GITHUB_OUTPUT
-          echo "should_commit=$SHOULD_COMMIT" >> $GITHUB_OUTPUT
+          # Sanitize commit message to prevent shell issues and truncate if too long
+          COMMIT_MSG=$(echo "$COMMIT_MSG" | tr -d '\n\r' | cut -c1-100)
 
-          # Final debug output
-          echo "Generated commit message: $COMMIT_MSG"
+          # Write outputs using safer method to avoid broken pipes
+          {
+            echo "commit_message=$COMMIT_MSG"
+            echo "total_updated=$TOTAL_UPDATED"
+            echo "should_commit=$SHOULD_COMMIT"
+          } >> $GITHUB_OUTPUT
+
+          # Final debug output (shorter to avoid broken pipes)
+          echo "Commit msg: ${COMMIT_MSG:0:80}..."
           echo "Should commit: $SHOULD_COMMIT"
+          echo "Updated: $TOTAL_UPDATED"
 
       - name: Check for changes
         id: git-check
