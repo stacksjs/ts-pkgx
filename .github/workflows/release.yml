@@ -85,16 +85,6 @@ jobs:
             fi
           fi
 
-      - name: Determine release type
-        if: steps.check-commits.outputs.has_unreleased == 'true'
-        id: release-type
-        run: |
-          # Always do patch releases for automated updates
-          RELEASE_TYPE="patch"
-
-          echo "release_type=$RELEASE_TYPE" >> $GITHUB_OUTPUT
-          echo "Release type will be: $RELEASE_TYPE"
-
       - name: Configure Git
         if: steps.check-commits.outputs.has_unreleased == 'true'
         run: |
@@ -104,24 +94,20 @@ jobs:
       - name: Run release
         if: steps.check-commits.outputs.has_unreleased == 'true'
         run: |
-          RELEASE_TYPE="${{ steps.release-type.outputs.release_type }}"
           COMMIT_COUNT="${{ steps.check-commits.outputs.commits_since_release }}"
           LATEST_TAG="${{ steps.check-commits.outputs.latest_tag }}"
 
           echo "=== Release Information ==="
-          echo "Release type: $RELEASE_TYPE"
           echo "Commits since last release: $COMMIT_COUNT"
           echo "Latest tag: $LATEST_TAG"
           echo "Current branch: $(git branch --show-current)"
           echo "Current commit: $(git rev-parse HEAD)"
           echo "=========================="
 
-          echo "Creating $RELEASE_TYPE release for $COMMIT_COUNT new commit(s)"
+          echo "Creating patch release for $COMMIT_COUNT new commit(s)"
 
-          # Use proper bumpp syntax (not @jsdevtools/version-bump-prompt)
-          # This project uses the modern bumpp package
-          echo "Running: bunx bumpp --$RELEASE_TYPE --commit --tag --push --yes"
-          bunx bumpp --$RELEASE_TYPE --commit --tag --push --yes
+          # Use our simple bump script that always does patch releases
+          bun scripts/bump-version.ts
 
           echo "Successfully created and pushed release"
         env:
