@@ -55,27 +55,31 @@ The project follows a clean and maintainable structure:
 
 ## Changelog
 
-Please see our [releases](https://github.com/stacksjs/ts-pkgx/releases) page for more information on what has changed recently.
+Please see our [releases](https://github.com/stackjs/launchpad/releases) page for information on changes.
 
 ## Contributing
 
-Please review the [Contributing Guide](https://github.com/stacksjs/contributing) for details.
+Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 ## Community
 
-For help, discussion about best practices, or any other conversation that would benefit from being searchable:
+For help or discussion:
 
-[Discussions on GitHub](https://github.com/stacksjs/stacks/discussions)
-
-For casual chit-chat with others using this package:
-
-[Join the Stacks Discord Server](https://discord.gg/stacksjs)
+- [Discussions on GitHub](https://github.com/stacksjs/launchpad/discussions)
+- [Join the Stacks Discord Server](https://discord.gg/stacksjs)
 
 ## Postcardware
 
-Two things are true: Stacks OSS will always stay open-source, and we do love to receive postcards from wherever Stacks is used! 🌍 _We also publish them on our website. And thank you, Spatie_
+"Software that is free, but hopes for a postcard." We love receiving postcards from around the world showing where Stacks is being used! We showcase them on our website too.
 
-Our address: Stacks.js, 12665 Village Ln #2306, Playa Vista, CA 90094
+Our address: Stacks.js, 12665 Village Ln #2306, Playa Vista, CA 90094, United States 🌎
+
+## Credits
+
+- [Max Howell](https://github.com/mxcl) - for creating [pkgx](https://github.com/pkgxdev/pkgx) and [Homebrew](https://github.com/Homebrew/brew)
+- [pkgm](https://github.com/pkgxdev/pkgm) & [dev](https://github.com/pkgxdev/dev) - thanks for the inspiration
+- [Chris Breuer](https://github.com/chrisbbreuer)
+- [All Contributors](https://github.com/stacksjs/launchpad/graphs/contributors)
 
 ## Sponsors
 
@@ -84,16 +88,11 @@ We would like to extend our thanks to the following sponsors for funding Stacks 
 - [JetBrains](https://www.jetbrains.com/)
 - [The Solana Foundation](https://solana.com/)
 
-## Credits
-
-- [Chris Breuer](https://github.com/chrisbbreuer)
-- [All Contributors](https://github.com/stacksjs/ts-pkgx/graphs/contributors)
-
 ## License
 
-The MIT License (MIT). Please see [LICENSE](https://github.com/stacksjs/ts-pkgx/tree/main/LICENSE.md) for more information.
+The MIT License (MIT). Please see [LICENSE](LICENSE.md) for more information.
 
-Made with 💙 by the Stacks community.
+Made with 💙
 
 <!-- Badges -->
 

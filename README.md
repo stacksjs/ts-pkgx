@@ -104,7 +104,7 @@ bun test
 
 ## Changelog
 
-Please see our [releases](https://github.com/stackjs/ts-pkgx/releases) page for more information on what has changed recently.
+Please see our [releases](https://github.com/stackjs/launchpad/releases) page for information on changes.
 
 ## Contributing
 
@@ -112,19 +112,23 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 ## Community
 
-For help, discussion about best practices, or any other conversation that would benefit from being searchable:
+For help or discussion:
 
-[Discussions on GitHub](https://github.com/stacksjs/ts-starter/discussions)
-
-For casual chit-chat with others using this package:
-
-[Join the Stacks Discord Server](https://discord.gg/stacksjs)
+- [Discussions on GitHub](https://github.com/stacksjs/launchpad/discussions)
+- [Join the Stacks Discord Server](https://discord.gg/stacksjs)
 
 ## Postcardware
 
 "Software that is free, but hopes for a postcard." We love receiving postcards from around the world showing where Stacks is being used! We showcase them on our website too.
 
 Our address: Stacks.js, 12665 Village Ln #2306, Playa Vista, CA 90094, United States 🌎
+
+## Credits
+
+- [Max Howell](https://github.com/mxcl) - for creating [pkgx](https://github.com/pkgxdev/pkgx) and [Homebrew](https://github.com/Homebrew/brew)
+- [pkgm](https://github.com/pkgxdev/pkgm) & [dev](https://github.com/pkgxdev/dev) - thanks for the inspiration
+- [Chris Breuer](https://github.com/chrisbbreuer)
+- [All Contributors](https://github.com/stacksjs/launchpad/graphs/contributors)
 
 ## Sponsors
 
