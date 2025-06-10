@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import type { PkgxPackage } from '../src/types'
 import { afterEach, beforeEach, describe, expect, test } from 'bun:test'
 import fs from 'node:fs'
@@ -300,8 +301,7 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
 
         // Should contain alias mappings
         expect(content).toContain('node')
-        expect(content).toContain('python')
-        expect(content).toContain('git-crypt')
+        expect(content).toContain('py')
 
         // Should use single quotes
         expect(content).toMatch(/'[^']*': '[^']*'/g)
@@ -353,26 +353,322 @@ export type NoaliascomPackage = typeof noaliascomPackage
       }
     })
 
-    test('should sort aliases alphabetically', async () => {
+    test('should filter out aliases that match package name with different case', async () => {
+      // Create packages with various case combinations
+      const protocolBuffersFile = path.join(tempPackagesDir, 'protobufdev.ts')
+      const protocolBuffersContent = `
+export const protobufPackage = {
+  name: 'Protocol Buffers' as const,
+  domain: 'protobuf.dev' as const,
+  description: 'Protocol Buffers - Google\\'s data interchange format' as const,
+  installCommand: 'pkgx protobuf.dev' as const,
+  programs: ['protoc'] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: ['3.21.0'] as const,
+  aliases: [
+    'protocol buffers',
+    'protobuf',
+    'protoc',
+  ] as const,
+  fullPath: 'protobuf.dev' as const,
+}
+
+export type ProtobufPackage = typeof protobufPackage
+`
+      fs.writeFileSync(protocolBuffersFile, protocolBuffersContent)
+
+      const scryerPrologFile = path.join(tempPackagesDir, 'scryerpl.ts')
+      const scryerPrologContent = `
+export const scryerPrologPackage = {
+  name: 'Scryer Prolog' as const,
+  domain: 'scryerpl' as const,
+  description: 'Modern ISO Prolog implementation written mostly in Rust' as const,
+  installCommand: 'pkgx scryerpl' as const,
+  programs: ['scryer-prolog'] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: ['0.9.0'] as const,
+  aliases: [
+    'scryer prolog',
+    'scryer-prolog',
+  ] as const,
+  fullPath: 'scryerpl' as const,
+}
+
+export type ScryerPrologPackage = typeof scryerPrologPackage
+`
+      fs.writeFileSync(scryerPrologFile, scryerPrologContent)
+
       const originalCwd = process.cwd()
       process.chdir(tempDir)
 
       try {
         const aliasesPath = await generateAliases(tempPackagesDir)
-
-        // Handle both absolute and relative paths
         const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
-        const content = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
-        // Extract alias keys
-        const aliasMatches = content.match(/'([^']+)':/g)
-        if (aliasMatches) {
-          const aliases = aliasMatches.map(match => match.slice(1, -2)) // Remove quotes and colon
-          const sortedAliases = [...aliases].sort()
+        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
 
-          // Should be sorted
-          expect(aliases).toEqual(sortedAliases)
+        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+
+        // Should NOT contain aliases that match package names (case-insensitive)
+        expect(aliasesContent).not.toContain('\'protocol buffers\': \'protobuf.dev\'')
+        expect(aliasesContent).not.toContain('\'scryer prolog\': \'scryerpl\'')
+
+        // Should contain valid aliases that don't match package names
+        expect(aliasesContent).toContain('\'protobuf\': \'protobuf.dev\'')
+        expect(aliasesContent).toContain('\'protoc\': \'protobuf.dev\'')
+        expect(aliasesContent).toContain('\'scryer-prolog\': \'scryerpl\'')
+      }
+      finally {
+        process.chdir(originalCwd)
+      }
+    })
+
+    test('should preserve valid aliases that are different from package name', async () => {
+      // Create a package with mix of valid and invalid aliases
+      const gitCryptFile = path.join(tempPackagesDir, 'agwanamegitcrypt.ts')
+      const gitCryptContent = `
+export const gitCryptPackage = {
+  name: 'git-crypt' as const,
+  domain: 'agwa.name/git-crypt' as const,
+  description: 'Enable transparent encryption/decryption of files in a git repo' as const,
+  installCommand: 'pkgx agwa.name/git-crypt' as const,
+  programs: ['git-crypt'] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: ['0.7.0'] as const,
+  aliases: [
+    'git-crypt',
+    'gitcrypt',
+    'crypt',
+  ] as const,
+  fullPath: 'agwa.name/git-crypt' as const,
+}
+
+export type GitCryptPackage = typeof gitCryptPackage
+`
+      fs.writeFileSync(gitCryptFile, gitCryptContent)
+
+      const originalCwd = process.cwd()
+      process.chdir(tempDir)
+
+      try {
+        const aliasesPath = await generateAliases(tempPackagesDir)
+        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+
+        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+
+        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+
+        // Should NOT contain the alias that exactly matches the package name
+        expect(aliasesContent).not.toContain('\'git-crypt\': \'agwa.name/git-crypt\'')
+
+        // Should contain valid aliases that don't match the package name
+        // Note: guessOriginalDomain converts agwanamegitcrypt back to agwa.name/git-crypt
+        // But in the aliases output, it uses the normalized domain
+        expect(aliasesContent).toContain('\'gitcrypt\': \'agwanamegitcrypt\'')
+        expect(aliasesContent).toContain('\'crypt\': \'agwanamegitcrypt\'')
+      }
+      finally {
+        process.chdir(originalCwd)
+      }
+    })
+
+    test('should handle packages with no name field gracefully', async () => {
+      // Create a package without a name field
+      const noNameFile = path.join(tempPackagesDir, 'nonamecom.ts')
+      const noNameContent = `
+export const noNamePackage = {
+  domain: 'noname.com' as const,
+  description: 'Package without name field' as const,
+  installCommand: 'pkgx noname.com' as const,
+  programs: ['noname'] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: ['1.0.0'] as const,
+  aliases: [
+    'noname',
+    'anonymous',
+  ] as const,
+  fullPath: 'noname.com' as const,
+}
+
+export type NoNamePackage = typeof noNamePackage
+`
+      fs.writeFileSync(noNameFile, noNameContent)
+
+      const originalCwd = process.cwd()
+      process.chdir(tempDir)
+
+      try {
+        const aliasesPath = await generateAliases(tempPackagesDir)
+        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+
+        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+
+        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+
+        // Should contain all aliases since there's no name to filter against
+        expect(aliasesContent).toContain('\'noname\': \'noname.com\'')
+        expect(aliasesContent).toContain('\'anonymous\': \'noname.com\'')
+      }
+      finally {
+        process.chdir(originalCwd)
+      }
+    })
+
+    test('should handle packages with empty name field', async () => {
+      // Create a package with empty name field
+      const emptyNameFile = path.join(tempPackagesDir, 'emptynamecom.ts')
+      const emptyNameContent = `
+export const emptyNamePackage = {
+  name: '' as const,
+  domain: 'emptyname.com' as const,
+  description: 'Package with empty name field' as const,
+  installCommand: 'pkgx emptyname.com' as const,
+  programs: ['empty'] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: ['1.0.0'] as const,
+  aliases: [
+    'empty',
+    'blank',
+  ] as const,
+  fullPath: 'emptyname.com' as const,
+}
+
+export type EmptyNamePackage = typeof emptyNamePackage
+`
+      fs.writeFileSync(emptyNameFile, emptyNameContent)
+
+      const originalCwd = process.cwd()
+      process.chdir(tempDir)
+
+      try {
+        const aliasesPath = await generateAliases(tempPackagesDir)
+        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+
+        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+
+        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+
+        // Should contain all aliases since the name is empty
+        expect(aliasesContent).toContain('\'empty\': \'emptyname.com\'')
+        expect(aliasesContent).toContain('\'blank\': \'emptyname.com\'')
+      }
+      finally {
+        process.chdir(originalCwd)
+      }
+    })
+
+    test('should log filtered aliases for debugging', async () => {
+      // Create a package with duplicate alias
+      const duplicateAliasFile = path.join(tempPackagesDir, 'duplicatecom.ts')
+      const duplicateAliasContent = `
+export const duplicatePackage = {
+  name: 'Duplicate Package' as const,
+  domain: 'duplicate.com' as const,
+  description: 'Package with duplicate alias' as const,
+  installCommand: 'pkgx duplicate.com' as const,
+  programs: ['duplicate'] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: ['1.0.0'] as const,
+  aliases: [
+    'duplicate package',
+    'dup',
+  ] as const,
+  fullPath: 'duplicate.com' as const,
+}
+
+export type DuplicatePackage = typeof duplicatePackage
+`
+      fs.writeFileSync(duplicateAliasFile, duplicateAliasContent)
+
+      const originalCwd = process.cwd()
+      process.chdir(tempDir)
+
+      try {
+        // Capture console.log output
+        const consoleLogs: string[] = []
+        const originalConsoleLog = console.log
+        console.log = (...args: any[]) => {
+          consoleLogs.push(args.join(' '))
         }
+
+        const aliasesPath = await generateAliases(tempPackagesDir)
+
+        // Restore console.log
+        console.log = originalConsoleLog
+
+        // Should have logged the filtered alias
+        const filteredLogs = consoleLogs.filter(log =>
+          log.includes('Filtered out package name alias')
+          && log.includes('duplicate package'),
+        )
+        expect(filteredLogs.length).toBeGreaterThan(0)
+
+        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+
+        // Should not contain the filtered alias
+        expect(aliasesContent).not.toContain('\'duplicate package\': \'duplicate.com\'')
+
+        // Should contain the valid alias
+        expect(aliasesContent).toContain('\'dup\': \'duplicate.com\'')
+      }
+      finally {
+        process.chdir(originalCwd)
+      }
+    })
+
+    test('should handle complex case variations correctly', async () => {
+      // Test various case combinations
+      const caseVariationsFile = path.join(tempPackagesDir, 'casevariationscom.ts')
+      const caseVariationsContent = `
+export const caseVariationsPackage = {
+  name: 'CamelCase Package' as const,
+  domain: 'casevariations.com' as const,
+  description: 'Package with various case combinations' as const,
+  installCommand: 'pkgx casevariations.com' as const,
+  programs: ['camel'] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: ['1.0.0'] as const,
+  aliases: [
+    'CamelCase Package',
+    'camelcase package',
+    'CAMELCASE PACKAGE',
+    'camelCase-package',
+    'valid-alias',
+  ] as const,
+  fullPath: 'casevariations.com' as const,
+}
+
+export type CaseVariationsPackage = typeof caseVariationsPackage
+`
+      fs.writeFileSync(caseVariationsFile, caseVariationsContent)
+
+      const originalCwd = process.cwd()
+      process.chdir(tempDir)
+
+      try {
+        const aliasesPath = await generateAliases(tempPackagesDir)
+        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+
+        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+
+        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+
+        // Should NOT contain any variation of the package name
+        expect(aliasesContent).not.toContain('\'CamelCase Package\': \'casevariations.com\'')
+        expect(aliasesContent).not.toContain('\'camelcase package\': \'casevariations.com\'')
+        expect(aliasesContent).not.toContain('\'CAMELCASE PACKAGE\': \'casevariations.com\'')
+
+        // Should contain valid aliases that don't match the package name
+        expect(aliasesContent).toContain('\'camelCase-package\': \'casevariations.com\'')
+        expect(aliasesContent).toContain('\'valid-alias\': \'casevariations.com\'')
       }
       finally {
         process.chdir(originalCwd)

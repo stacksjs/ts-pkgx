@@ -1111,14 +1111,25 @@ async function extractAllAliases(packagesDir?: string): Promise<Record<string, s
       const moduleName = path.basename(file, '.ts')
       const domain = guessOriginalDomain(moduleName)
 
+      // Extract package name from the file content
+      const nameMatch = content.match(/name:\s*['"]([^'"]*)['"]\s*as const/)
+      const packageName = nameMatch ? nameMatch[1] : ''
+
       // Extract aliases array from the file content
       const aliasesMatch = content.match(/aliases:\s*\[([\s\S]*?)\]/)
       if (aliasesMatch && aliasesMatch[1]) {
         const aliases = aliasesMatch[1].match(/["']([^"']*)["']/g)
         if (aliases) {
-          // Add each alias to the map, but filter out shell commands
+          // Add each alias to the map, but filter out shell commands and package name matches
           for (const alias of aliases) {
             const cleanAlias = alias.replace(/["']/g, '')
+
+            // Skip if alias is the same as package name (case-insensitive)
+            if (cleanAlias && packageName && cleanAlias.toLowerCase() === packageName.toLowerCase()) {
+              console.log(`Filtered out package name alias: ${cleanAlias} for ${domain} (same as package name "${packageName}")`)
+              continue
+            }
+
             if (cleanAlias && isValidAlias(cleanAlias, domain)) {
               allAliases[cleanAlias] = domain
               console.log(`Found alias ${cleanAlias} -> ${domain}`)
