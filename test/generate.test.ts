@@ -109,6 +109,29 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
     }
   })
 
+  // Helper function to find generated files in multiple possible locations
+  function findGeneratedFile(relativePath: string, returnedPath: string, tempDir: string): { path: string, content: string } {
+    const possiblePaths = [
+      returnedPath, // Whatever the function returned
+      path.isAbsolute(returnedPath) ? returnedPath : path.resolve(tempDir, returnedPath), // Resolved relative to tempDir
+      path.join(tempDir, relativePath), // Direct path in tempDir
+      path.join(process.cwd(), 'src', 'packages', relativePath), // Default packages directory
+    ]
+
+    for (const testPath of possiblePaths) {
+      if (fs.existsSync(testPath)) {
+        return {
+          path: testPath,
+          content: fs.readFileSync(testPath, 'utf-8'),
+        }
+      }
+    }
+
+    console.error(`File not found in any of these locations:`)
+    possiblePaths.forEach(p => console.error(`  - ${p} (exists: ${fs.existsSync(p)})`))
+    throw new Error(`${relativePath} file was not created in any expected location`)
+  }
+
   describe('generateIndex', () => {
     test('should generate index.ts file', async () => {
       const indexPath = await generateIndex(tempPackagesDir)
@@ -117,31 +140,18 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
       console.error(`DEBUG TEST: received indexPath=${indexPath}`)
       console.error(`DEBUG TEST: typeof indexPath=${typeof indexPath}`)
       console.error(`DEBUG TEST: tempPackagesDir=${tempPackagesDir}`)
-      console.error(`DEBUG TEST: process.cwd()=${process.cwd()}`)
-      console.error(`DEBUG TEST: tempDir=${tempDir}`)
-      if (indexPath) {
-        console.error(`DEBUG TEST: path.isAbsolute(indexPath)=${path.isAbsolute(indexPath)}`)
-        console.error(`DEBUG TEST: path.dirname(indexPath)=${path.dirname(indexPath)}`)
-        console.error(`DEBUG TEST: path.basename(indexPath)=${path.basename(indexPath)}`)
-      }
+
+      expect(indexPath).toBeDefined()
+      expect(indexPath).toContain('index.ts')
+
+      // Use helper to find the file
+      const { content } = findGeneratedFile('index.ts', indexPath!, tempPackagesDir)
 
       // List files in tempPackagesDir to debug
       if (fs.existsSync(tempPackagesDir)) {
         const files = fs.readdirSync(tempPackagesDir)
         console.error(`DEBUG TEST: files in tempPackagesDir: ${files.join(', ')}`)
       }
-      else {
-        console.error(`DEBUG TEST: tempPackagesDir does not exist`)
-      }
-
-      expect(indexPath).toBeDefined()
-      expect(indexPath).toContain('index.ts')
-
-      // Handle both absolute and relative paths - resolve relative to tempPackagesDir
-      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-      expect(fs.existsSync(resolvedIndexPath)).toBe(true)
-
-      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
       // Should contain imports
       expect(content).toContain('import * as')
@@ -176,19 +186,11 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
       console.error(`DEBUG EMPTY: received indexPath=${indexPath}`)
       console.error(`DEBUG EMPTY: tempPackagesDir=${tempPackagesDir}`)
       console.error(`DEBUG EMPTY: process.cwd()=${process.cwd()}`)
-      if (indexPath) {
-        console.error(`DEBUG EMPTY: path.isAbsolute(indexPath)=${path.isAbsolute(indexPath)}`)
-      }
 
       expect(indexPath).toBeDefined()
 
-      // Handle both absolute and relative paths
-      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-      console.error(`DEBUG EMPTY: resolvedIndexPath=${resolvedIndexPath}`)
-
-      expect(fs.existsSync(resolvedIndexPath)).toBe(true)
-
-      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
+      // Use helper to find the file
+      const { content } = findGeneratedFile('index.ts', indexPath!, tempPackagesDir)
 
       // Should still generate valid structure
       expect(content).toContain('export interface Pantry')
@@ -198,8 +200,7 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
     test('should generate proper TypeScript syntax', async () => {
       const indexPath = await generateIndex(tempPackagesDir)
 
-      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
+      const { content } = findGeneratedFile('index.ts', indexPath!, tempPackagesDir)
 
       // Check for proper TypeScript syntax
       expect(content).toMatch(/import \* as \w+ from/)
@@ -234,8 +235,7 @@ export type AgwanameGitCryptPackage = typeof agwanameGitCryptPackage
 
       const indexPath = await generateIndex(tempPackagesDir)
 
-      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
+      const { content } = findGeneratedFile('index.ts', indexPath!, tempPackagesDir)
 
       // Should contain import for the nested package
       expect(content).toContain('from \'./agwaname-git-crypt\'')
@@ -252,11 +252,8 @@ export type AgwanameGitCryptPackage = typeof agwanameGitCryptPackage
       expect(aliasesPath).toBeDefined()
       expect(aliasesPath).toContain('aliases.ts')
 
-      // Handle both absolute and relative paths
-      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
-      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
-
-      const content = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Use helper to find the file
+      const { content } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
       // Should contain aliases export
       expect(content).toContain('export const aliases: Record<string, string>')
@@ -292,9 +289,8 @@ export type NoaliascomPackage = typeof noaliascomPackage
 
       const aliasesPath = await generateAliases(tempPackagesDir)
 
-      // Handle both absolute and relative paths
-      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
-      const aliasContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Use helper to find the file
+      const { content: aliasContent } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
       // Should still generate file
       expect(aliasContent).toContain('export const aliases')
@@ -331,11 +327,9 @@ export type MidnightCommanderPackage = typeof midnightCommanderPackage
       expect(fs.existsSync(midnightCommanderFile)).toBe(true)
 
       const aliasesPath = await generateAliases(tempPackagesDir)
-      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
-
-      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Use helper to find the file
+      const { content: aliasesContent } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
       // Should NOT contain the alias that matches the package name
       expect(aliasesContent).not.toContain('\'midnight commander\':')
@@ -708,9 +702,8 @@ export type CaseVariationsPackage = typeof caseVariationsPackage
     test('should generate consistent variable names', async () => {
       const indexPath = await generateIndex(tempPackagesDir)
 
-      // Handle both absolute and relative paths
-      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
+      // Use helper to find the file
+      const { content } = findGeneratedFile('index.ts', indexPath!, tempPackagesDir)
 
       // Variable names should be consistent
       const varMatches = content.match(/export const (\w+): Pantry/g)

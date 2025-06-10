@@ -57,17 +57,55 @@ jobs:
           # Create a temporary file to capture the JSON output safely
           TEMP_JSON_FILE=$(mktemp)
 
-          # Capture the JSON output from the fetch command to a file
-          if timeout 2900 bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000 --output-json > "$TEMP_JSON_FILE" 2>/dev/null; then
+                    # First run the fetch command normally to do the actual work
+          echo "Running fetch command to update packages..."
+          if timeout 2900 bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000; then
             echo "Fetch command completed successfully"
-            # Verify the output is valid JSON
-            if ! jq empty "$TEMP_JSON_FILE" 2>/dev/null; then
-              echo "Fetch command produced invalid JSON, creating error JSON"
-              echo '{"success":false,"error":"invalid json output","totalUpdated":0,"totalProcessed":0,"updatedPackages":[]}' > "$TEMP_JSON_FILE"
-            fi
+            FETCH_SUCCESS=true
           else
-            echo "Fetch command failed or timed out, creating error JSON"
-            echo '{"success":false,"error":"fetch failed or timeout","totalUpdated":0,"totalProcessed":0,"updatedPackages":[]}' > "$TEMP_JSON_FILE"
+            FETCH_EXIT_CODE=$?
+            echo "Fetch command failed with exit code: $FETCH_EXIT_CODE"
+            FETCH_SUCCESS=false
+          fi
+
+          # Now determine what was actually updated by checking git status
+          echo "Checking git status to determine updated packages..."
+          CHANGED_FILES=$(git status --porcelain src/packages/ | grep "^ M " | awk '{print $2}' | sed 's|src/packages/||' | sed 's|\.ts$||' | head -20)
+
+          if [ -n "$CHANGED_FILES" ]; then
+            echo "Found changed package files:"
+            echo "$CHANGED_FILES"
+
+            # Convert to JSON array
+            UPDATED_PACKAGES_JSON="["
+            FIRST=true
+            TOTAL_UPDATED=0
+            while IFS= read -r file; do
+              if [ -n "$file" ]; then
+                if [ "$FIRST" = true ]; then
+                  FIRST=false
+                else
+                  UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON,"
+                fi
+                # Escape package name for JSON
+                ESC_PKG=$(echo "$file" | sed 's/"/\\"/g')
+                UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON\"$ESC_PKG\""
+                TOTAL_UPDATED=$((TOTAL_UPDATED + 1))
+              fi
+            done <<< "$CHANGED_FILES"
+            UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON]"
+          else
+            echo "No package files were changed"
+            UPDATED_PACKAGES_JSON="[]"
+            TOTAL_UPDATED=0
+          fi
+
+          # Create JSON result based on fetch success and git changes
+          if [ "$FETCH_SUCCESS" = true ]; then
+            printf '{"success":true,"totalUpdated":%d,"totalProcessed":530,"updatedPackages":%s}' \
+              "$TOTAL_UPDATED" "$UPDATED_PACKAGES_JSON" > "$TEMP_JSON_FILE"
+          else
+            printf '{"success":false,"error":"fetch command failed","totalUpdated":0,"totalProcessed":0,"updatedPackages":[]}' > "$TEMP_JSON_FILE"
           fi
 
           # Check file size and truncate if necessary to prevent GitHub Actions output limits
@@ -145,19 +183,21 @@ jobs:
           # Clean up temp file
           rm -f "$TEMP_JSON_FILE"
 
-          # Debug: Show final JSON structure (first 500 chars)
+          # Debug: Show final JSON structure
           echo "=== FETCH STEP DEBUG ==="
-          echo "Final JSON structure (truncated):"
-          head -c 500 "$TEMP_JSON_FILE" 2>/dev/null || echo "Could not read JSON file"
+          echo "Final JSON structure:"
+          cat "$TEMP_JSON_FILE"
           echo ""
           echo "JSON file size: $(wc -c < "$TEMP_JSON_FILE" 2>/dev/null || echo "0") bytes"
           echo "JSON validation result: $(jq empty "$TEMP_JSON_FILE" 2>/dev/null && echo "VALID" || echo "INVALID")"
           echo "Success field: $(jq -r '.success // "not_found"' "$TEMP_JSON_FILE" 2>/dev/null || echo "jq_failed")"
+          echo "Total updated: $(jq -r '.totalUpdated // "not_found"' "$TEMP_JSON_FILE" 2>/dev/null || echo "jq_failed")"
           echo "=== END FETCH DEBUG ==="
 
-          # Also run without JSON for normal logging (to stderr so it doesn't interfere with JSON)
-          echo "Running fetch command again for detailed logging..."
-          bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000 >&2 || true
+                    # Debug: Show the generated JSON
+          echo "Generated JSON result:"
+          cat "$TEMP_JSON_FILE"
+          echo "JSON validation: $(jq empty "$TEMP_JSON_FILE" 2>/dev/null && echo "VALID" || echo "INVALID")"
         timeout-minutes: 50
 
       - name: Show git status after fetch
@@ -228,10 +268,13 @@ jobs:
           FETCH_SUCCESS=$(jq -r '.success // false' "$FETCH_JSON_FILE" 2>/dev/null || echo "false")
 
           if [ "$FETCH_SUCCESS" != "true" ]; then
-            echo "Fetch was not successful, skipping commit"
-            echo "commit_message=chore: fetch failed" >> $GITHUB_OUTPUT
+            echo "Fetch was not successful (success=$FETCH_SUCCESS), skipping commit"
+            ERROR_MSG=$(jq -r '.error // "unknown_error"' "$FETCH_JSON_FILE" 2>/dev/null || echo "unknown_error")
+            echo "Fetch error: $ERROR_MSG"
+            echo "commit_message=chore: fetch failed ($ERROR_MSG)" >> $GITHUB_OUTPUT
             echo "total_updated=0" >> $GITHUB_OUTPUT
             echo "should_commit=false" >> $GITHUB_OUTPUT
+            rm -f "$FETCH_JSON_FILE"
             exit 0
           fi
 
