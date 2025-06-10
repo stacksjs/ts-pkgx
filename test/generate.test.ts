@@ -126,13 +126,8 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
     }
   })
 
-  // Helper function to find generated files in multiple possible locations
+  // Helper function to find generated files in test directory only
   function findGeneratedFile(relativePath: string, returnedPath: string, tempDir: string): { path: string, content: string } {
-    // Debug logging to understand path resolution
-    console.error(`DEBUG findGeneratedFile: relativePath=${relativePath}`)
-    console.error(`DEBUG findGeneratedFile: returnedPath=${returnedPath}`)
-    console.error(`DEBUG findGeneratedFile: tempDir=${tempDir}`)
-
     // ONLY look in test directory, never fall back to production
     const possiblePaths = [
       // First: if returnedPath is absolute and in test dir, use it
@@ -143,12 +138,8 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
       path.join(tempDir, relativePath),
     ].filter(Boolean) as string[]
 
-    console.error(`DEBUG findGeneratedFile: possiblePaths=${JSON.stringify(possiblePaths)}`)
-
     for (const testPath of possiblePaths) {
-      console.error(`DEBUG findGeneratedFile: checking ${testPath} (exists: ${fs.existsSync(testPath)})`)
       if (fs.existsSync(testPath)) {
-        console.error(`DEBUG findGeneratedFile: using ${testPath}`)
         return {
           path: testPath,
           content: fs.readFileSync(testPath, 'utf-8'),
@@ -351,9 +342,8 @@ export type MidnightCommanderPackage = typeof midnightCommanderPackage
     test('should sort aliases alphabetically', async () => {
       const aliasesPath = await generateAliases(tempPackagesDir)
 
-      // Handle both absolute and relative paths
-      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
-      const content = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Use helper to find the file
+      const { content } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
       // Extract alias keys
       const aliasMatches = content.match(/'([^']+)':/g)
@@ -392,20 +382,16 @@ export type GitCryptPackage = typeof gitCryptPackage
       fs.writeFileSync(gitCryptFile, gitCryptContent)
 
       const aliasesPath = await generateAliases(tempPackagesDir)
-      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
-
-      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Use helper to find the file
+      const { content: aliasesContent } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
       // Should NOT contain the alias that exactly matches the package name
       expect(aliasesContent).not.toContain('\'git-crypt\': \'agwa.name/git-crypt\'')
 
       // Should contain valid aliases that don't match the package name
-      // Note: guessOriginalDomain converts agwanamegitcrypt back to agwa.name/git-crypt
-      // But in the aliases output, it uses the normalized domain
-      expect(aliasesContent).toContain('\'gitcrypt\': \'agwanamegitcrypt\'')
-      expect(aliasesContent).toContain('\'crypt\': \'agwanamegitcrypt\'')
+      expect(aliasesContent).toContain('\'gitcrypt\': \'agwa.name/git-crypt\'')
+      expect(aliasesContent).toContain('\'crypt\': \'agwa.name/git-crypt\'')
     })
 
     test('should handle packages with no name field gracefully', async () => {
@@ -432,11 +418,9 @@ export type NoNamePackage = typeof noNamePackage
       fs.writeFileSync(noNameFile, noNameContent)
 
       const aliasesPath = await generateAliases(tempPackagesDir)
-      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
-
-      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Use helper to find the file
+      const { content: aliasesContent } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
       // Should contain all aliases since there's no name to filter against
       expect(aliasesContent).toContain('\'noname\': \'noname.com\'')
@@ -468,11 +452,9 @@ export type EmptyNamePackage = typeof emptyNamePackage
       fs.writeFileSync(emptyNameFile, emptyNameContent)
 
       const aliasesPath = await generateAliases(tempPackagesDir)
-      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
-
-      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Use helper to find the file
+      const { content: aliasesContent } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
       // Should contain all aliases since the name is empty
       expect(aliasesContent).toContain('\'empty\': \'emptyname.com\'')
@@ -512,9 +494,9 @@ export type DuplicatePackage = typeof duplicatePackage
 
       try {
         const aliasesPath = await generateAliases(tempPackagesDir)
-        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+        // Use helper to find the file
+        const { content: aliasesContent } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
         // Should have logged the filtered alias
         const filteredLogs = consoleLogs.filter(log =>
@@ -565,11 +547,9 @@ export type CaseVariationsPackage = typeof caseVariationsPackage
       fs.writeFileSync(caseVariationsFile, caseVariationsContent)
 
       const aliasesPath = await generateAliases(tempPackagesDir)
-      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
-
-      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Use helper to find the file
+      const { content: aliasesContent } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
       // Should NOT contain any variation of the package name
       expect(aliasesContent).not.toContain('\'CamelCase Package\': \'casevariations.com\'')
