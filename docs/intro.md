@@ -13,7 +13,7 @@ ts-pkgx is a specialized library that provides tools for fetching, storing, and 
 ## Core Features
 
 - **Package Fetching**: Retrieve detailed package information from pkgx.dev
-- **TypeScript Integration**: Fully typed interfaces for all package data
+- **TypeScript Integration**: Fully typed interfaces for all package data (see [TypeScript Types](./typescript-types.md))
 - **Multiple Package Fetching**: Fetch multiple specific packages at once with the `--pkg` option
 - **Optimized Batch Processing**: Efficiently process hundreds of packages with configurable concurrency
 - **CLI Tools**: Comprehensive command line utilities for fetching and managing packages

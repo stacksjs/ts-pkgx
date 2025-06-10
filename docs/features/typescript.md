@@ -143,3 +143,7 @@ export const pantry: Pantry = {
 ```
 
 This provides a convenient, type-safe way to access all packages in your project.
+
+## Related Documentation
+
+For comprehensive information about working with TypeScript types in ts-pkgx, including advanced usage patterns and examples, see the [TypeScript Types](../typescript-types.md) documentation.

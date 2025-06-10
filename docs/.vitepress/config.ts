@@ -87,6 +87,7 @@ const sidebar = [
     items: [
       { text: 'CLI Reference', link: '/cli-reference' },
       { text: 'API Reference', link: '/api-reference' },
+      { text: 'TypeScript Types', link: '/typescript-types' },
       { text: 'Package Catalog', link: '/package-catalog' },
     ],
   },
