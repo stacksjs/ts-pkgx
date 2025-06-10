@@ -59,21 +59,32 @@ jobs:
           TEMP_JSON_FILE=$(mktemp)
 
           # Capture the JSON output from the fetch command to a file
-          if bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000 --output-json > "$TEMP_JSON_FILE" 2>/dev/null; then
+          if timeout 2900 bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000 --output-json > "$TEMP_JSON_FILE" 2>/dev/null; then
             echo "Fetch command completed successfully"
+            # Verify the output is valid JSON
+            if ! jq empty "$TEMP_JSON_FILE" 2>/dev/null; then
+              echo "Fetch command produced invalid JSON, creating error JSON"
+              echo '{"success":false,"error":"invalid json output","totalUpdated":0,"totalProcessed":0,"updatedPackages":[]}' > "$TEMP_JSON_FILE"
+            fi
           else
-            echo "Fetch command failed, creating error JSON"
-            echo '{"success":false,"error":"fetch failed"}' > "$TEMP_JSON_FILE"
+            echo "Fetch command failed or timed out, creating error JSON"
+            echo '{"success":false,"error":"fetch failed or timeout","totalUpdated":0,"totalProcessed":0,"updatedPackages":[]}' > "$TEMP_JSON_FILE"
           fi
 
           # Check file size and truncate if necessary to prevent GitHub Actions output limits
-          FILE_SIZE=$(wc -c < "$TEMP_JSON_FILE")
+          FILE_SIZE=$(wc -c < "$TEMP_JSON_FILE" 2>/dev/null || echo "0")
           echo "JSON output size: $FILE_SIZE bytes"
 
           if [ "$FILE_SIZE" -gt 262144 ]; then  # 256KB limit
             echo "JSON output too large ($FILE_SIZE bytes), creating summary instead"
 
             # Extract just the essential info for commit message generation
+            # First verify the JSON is valid before processing
+            if ! jq empty "$TEMP_JSON_FILE" 2>/dev/null; then
+              echo "JSON is invalid during size check, creating minimal fallback"
+              echo '{"success":false,"error":"invalid_json_during_truncation","totalUpdated":0,"totalProcessed":0,"updatedPackages":[]}' > "$TEMP_JSON_FILE"
+            fi
+
             SUCCESS=$(jq -r '.success // false' "$TEMP_JSON_FILE" 2>/dev/null || echo "false")
             TOTAL_UPDATED=$(jq -r '.totalUpdated // 0' "$TEMP_JSON_FILE" 2>/dev/null || echo "0")
             TOTAL_PROCESSED=$(jq -r '.totalProcessed // 0' "$TEMP_JSON_FILE" 2>/dev/null || echo "0")
@@ -84,44 +95,67 @@ jobs:
             {
               jq -r '.updatedPackagesMixed[]? // empty' "$TEMP_JSON_FILE" 2>/dev/null || true
               jq -r '.updatedPackages[]? // empty' "$TEMP_JSON_FILE" 2>/dev/null || true
-            } | head -15 > "$UPDATED_PACKAGES_TEMP"
+            } 2>/dev/null | head -15 > "$UPDATED_PACKAGES_TEMP" || echo "" > "$UPDATED_PACKAGES_TEMP"
 
             # Create JSON array from the package names
             UPDATED_PACKAGES_JSON="["
             FIRST=true
-            while IFS= read -r pkg; do
-              if [ -n "$pkg" ]; then
-                if [ "$FIRST" = true ]; then
-                  FIRST=false
-                else
-                  UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON,"
+            if [ -f "$UPDATED_PACKAGES_TEMP" ]; then
+              while IFS= read -r pkg; do
+                if [ -n "$pkg" ] && [ "$pkg" != "" ]; then
+                  if [ "$FIRST" = true ]; then
+                    FIRST=false
+                  else
+                    UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON,"
+                  fi
+                  # Escape package name for JSON and sanitize
+                  ESC_PKG=$(echo "$pkg" | sed 's/"/\\"/g' | tr -d '\0\n\r')
+                  UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON\"$ESC_PKG\""
                 fi
-                # Escape package name for JSON
-                ESC_PKG=$(echo "$pkg" | sed 's/"/\\"/g')
-                UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON\"$ESC_PKG\""
-              fi
-            done < "$UPDATED_PACKAGES_TEMP"
+              done < "$UPDATED_PACKAGES_TEMP"
+            fi
             UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON]"
             rm -f "$UPDATED_PACKAGES_TEMP"
 
             # Create a smaller summary JSON with consistent structure using printf
             printf '{"success":%s,"totalUpdated":%s,"totalProcessed":%s,"updatedPackages":%s,"note":"truncated_for_size"}' \
               "$SUCCESS" "$TOTAL_UPDATED" "$TOTAL_PROCESSED" "$UPDATED_PACKAGES_JSON" > "$TEMP_JSON_FILE"
-            echo "Created summary JSON ($(wc -c < "$TEMP_JSON_FILE") bytes)"
+
+            # Validate the created summary JSON
+            if ! jq empty "$TEMP_JSON_FILE" 2>/dev/null; then
+              echo "Created summary JSON is invalid, using minimal fallback"
+              echo '{"success":false,"error":"summary_json_invalid","totalUpdated":0,"totalProcessed":0,"updatedPackages":[],"note":"fallback_due_to_invalid_summary"}' > "$TEMP_JSON_FILE"
+            fi
+
+            echo "Created summary JSON ($(wc -c < "$TEMP_JSON_FILE" 2>/dev/null || echo "0") bytes)"
           fi
 
-          # Use the file content for GitHub output (safer for multiline content)
-          echo "fetch_result<<EOF" >> $GITHUB_OUTPUT
-          cat "$TEMP_JSON_FILE" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          # Validate JSON before outputting
+          if ! jq empty "$TEMP_JSON_FILE" 2>/dev/null; then
+            echo "Invalid JSON detected, creating fallback"
+            echo '{"success":false,"error":"invalid_json","totalUpdated":0,"totalProcessed":0,"updatedPackages":[]}' > "$TEMP_JSON_FILE"
+          fi
+
+          # Use the file content for GitHub output with a unique delimiter
+          DELIMITER="FETCH_RESULT_$(date +%s)_$$"
+          echo "fetch_result<<$DELIMITER" >> $GITHUB_OUTPUT
+          # Ensure the JSON is properly formatted and doesn't contain problematic characters
+          cat "$TEMP_JSON_FILE" | tr -d '\0' >> $GITHUB_OUTPUT
+          echo "$DELIMITER" >> $GITHUB_OUTPUT
 
           # Clean up temp file
           rm -f "$TEMP_JSON_FILE"
 
+          # Debug: Show final JSON structure (first 500 chars)
+          echo "Final JSON structure (truncated):"
+          head -c 500 "$TEMP_JSON_FILE" 2>/dev/null || echo "Could not read JSON file"
+          echo ""
+          echo "JSON file size: $(wc -c < "$TEMP_JSON_FILE" 2>/dev/null || echo "0") bytes"
+
           # Also run without JSON for normal logging (to stderr so it doesn't interfere with JSON)
           echo "Running fetch command again for detailed logging..."
           bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000 >&2 || true
-        timeout-minutes: 45
+        timeout-minutes: 50
 
       - name: Show git status after fetch
         run: |
@@ -155,8 +189,18 @@ jobs:
 
           echo "Processing fetch result for commit message generation..."
 
-          # Extract key values directly from the GitHub output variable using jq with error handling
-          FETCH_SUCCESS=$(echo '${{ steps.fetch-packages.outputs.fetch_result }}' | jq -r '.success // false' 2>/dev/null || echo "false")
+          # Create a temporary file to safely handle the JSON data
+          FETCH_JSON_FILE=$(mktemp)
+          echo '${{ steps.fetch-packages.outputs.fetch_result }}' > "$FETCH_JSON_FILE"
+
+          # Validate the JSON first
+          if ! jq empty "$FETCH_JSON_FILE" 2>/dev/null; then
+            echo "Invalid JSON in fetch result, using fallback values"
+            echo '{"success":false,"error":"invalid_json","totalUpdated":0,"totalProcessed":0,"updatedPackages":[]}' > "$FETCH_JSON_FILE"
+          fi
+
+          # Extract key values directly from the file using jq with error handling
+          FETCH_SUCCESS=$(jq -r '.success // false' "$FETCH_JSON_FILE" 2>/dev/null || echo "false")
 
           if [ "$FETCH_SUCCESS" != "true" ]; then
             echo "Fetch was not successful, skipping commit"
@@ -167,16 +211,16 @@ jobs:
           fi
 
           # Extract package counts safely
-          TOTAL_UPDATED=$(echo '${{ steps.fetch-packages.outputs.fetch_result }}' | jq -r '.totalUpdated // 0' 2>/dev/null || echo "0")
-          TOTAL_PROCESSED=$(echo '${{ steps.fetch-packages.outputs.fetch_result }}' | jq -r '.totalProcessed // 0' 2>/dev/null || echo "0")
+          TOTAL_UPDATED=$(jq -r '.totalUpdated // 0' "$FETCH_JSON_FILE" 2>/dev/null || echo "0")
+          TOTAL_PROCESSED=$(jq -r '.totalProcessed // 0' "$FETCH_JSON_FILE" 2>/dev/null || echo "0")
 
           # Extract first few package names for commit message
           # Use a more robust approach that handles large arrays without broken pipes
-          UPDATED_PACKAGES=$(echo '${{ steps.fetch-packages.outputs.fetch_result }}' | jq -r '
+          UPDATED_PACKAGES=$(jq -r '
             if .updatedPackages then .updatedPackages[]
             elif .updatedPackagesMixed then .updatedPackagesMixed[]
             else empty
-            end' 2>/dev/null | head -15 | sed 's/[^a-zA-Z0-9.-]/_/g' | tr '\n' ' ' | xargs || echo "")
+            end' "$FETCH_JSON_FILE" 2>/dev/null | head -15 | sed 's/[^a-zA-Z0-9.-]/_/g' | tr '\n' ' ' | tr -d '\0' | xargs 2>/dev/null || echo "")
 
           # Debug output with safe string operations
           echo "Total packages processed: $TOTAL_PROCESSED"
@@ -223,7 +267,7 @@ jobs:
           fi
 
           # Sanitize commit message and ensure it's not too long
-          COMMIT_MSG=$(echo "$COMMIT_MSG" | tr -d '\n\r' | cut -c1-100)
+          COMMIT_MSG=$(echo "$COMMIT_MSG" | tr -d '\n\r\0' | sed 's/[[:cntrl:]]//g' | cut -c1-100)
 
           # Set outputs
           echo "commit_message=$COMMIT_MSG" >> $GITHUB_OUTPUT
@@ -234,6 +278,9 @@ jobs:
           echo "Generated commit message: $COMMIT_MSG"
           echo "Should commit: $SHOULD_COMMIT"
           echo "Total updated: $TOTAL_UPDATED"
+
+          # Clean up temp file
+          rm -f "$FETCH_JSON_FILE"
 
       - name: Check for changes
         id: git-check
