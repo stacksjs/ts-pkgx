@@ -55,6 +55,41 @@ const savedPackages = await fetchAndSaveAllPackages({
 console.log(`Saved ${savedPackages.length} packages`)
 ```
 
+### TypeScript Types
+
+ts-pkgx provides comprehensive TypeScript types for all packages in the pkgx.dev ecosystem, enabling you to work in a fully typed environment:
+
+```typescript
+import type { Pantry } from 'ts-pkgx'
+import { pantry } from 'ts-pkgx'
+
+// Aliases are also available with full typing
+import { aliases } from 'ts-pkgx'
+
+// Access packages with full type safety
+const nodePackage = pantry.nodejs_org
+const pythonPackage = pantry.python_org
+const goPackage = pantry.go_dev
+
+// All package properties are fully typed
+console.log(nodePackage.name) // string
+console.log(nodePackage.programs) // readonly string[]
+console.log(nodePackage.versions) // readonly string[]
+
+// Type-safe dynamic access
+function getPackageByDomain(domain: keyof Pantry) {
+  return pantry[domain]
+}
+const nodeDomain = aliases.node // 'nodejs.org'
+const pythonDomain = aliases.python // 'python.org'
+```
+
+The type system includes:
+- **Pantry interface**: Maps all available packages with their domains as keys
+- **Package objects**: Complete metadata for each package (name, description, programs, versions, etc.)
+- **Aliases**: Type-safe mapping of friendly names to package domains
+- **Auto-completion**: Full IntelliSense support in your IDE
+
 ### Running Tests
 
 ```bash
