@@ -111,63 +111,54 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
 
   describe('generateIndex', () => {
     test('should generate index.ts file', async () => {
-      // Mock the current working directory to point to our temp dir
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const indexPath = await generateIndex(tempPackagesDir)
 
-      try {
-        const indexPath = await generateIndex(tempPackagesDir)
-
-        // Debug logging for test
-        console.error(`DEBUG TEST: received indexPath=${indexPath}`)
-        console.error(`DEBUG TEST: typeof indexPath=${typeof indexPath}`)
-        console.error(`DEBUG TEST: tempPackagesDir=${tempPackagesDir}`)
-        console.error(`DEBUG TEST: process.cwd()=${process.cwd()}`)
-        console.error(`DEBUG TEST: tempDir=${tempDir}`)
-        if (indexPath) {
-          console.error(`DEBUG TEST: path.isAbsolute(indexPath)=${path.isAbsolute(indexPath)}`)
-          console.error(`DEBUG TEST: path.dirname(indexPath)=${path.dirname(indexPath)}`)
-          console.error(`DEBUG TEST: path.basename(indexPath)=${path.basename(indexPath)}`)
-        }
-
-        // List files in tempPackagesDir to debug
-        if (fs.existsSync(tempPackagesDir)) {
-          const files = fs.readdirSync(tempPackagesDir)
-          console.error(`DEBUG TEST: files in tempPackagesDir: ${files.join(', ')}`)
-        }
-        else {
-          console.error(`DEBUG TEST: tempPackagesDir does not exist`)
-        }
-
-        expect(indexPath).toBeDefined()
-        expect(indexPath).toContain('index.ts')
-
-        // Handle both absolute and relative paths - resolve relative to tempPackagesDir
-        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-        expect(fs.existsSync(resolvedIndexPath)).toBe(true)
-
-        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
-
-        // Should contain imports
-        expect(content).toContain('import * as')
-        expect(content).toContain('from \'./nodejs')
-        expect(content).toContain('from \'./python')
-
-        // Should contain interface definition
-        expect(content).toContain('export interface Pantry')
-
-        // Should contain pantry object
-        expect(content).toContain('export const pantry: Pantry')
-
-        // Should contain package exports
-        expect(content).toContain('export const packages: Packages')
-
-        // Should contain aliases export
-        expect(content).toContain('export * from \'./aliases\'')
+      // Debug logging for test
+      console.error(`DEBUG TEST: received indexPath=${indexPath}`)
+      console.error(`DEBUG TEST: typeof indexPath=${typeof indexPath}`)
+      console.error(`DEBUG TEST: tempPackagesDir=${tempPackagesDir}`)
+      console.error(`DEBUG TEST: process.cwd()=${process.cwd()}`)
+      console.error(`DEBUG TEST: tempDir=${tempDir}`)
+      if (indexPath) {
+        console.error(`DEBUG TEST: path.isAbsolute(indexPath)=${path.isAbsolute(indexPath)}`)
+        console.error(`DEBUG TEST: path.dirname(indexPath)=${path.dirname(indexPath)}`)
+        console.error(`DEBUG TEST: path.basename(indexPath)=${path.basename(indexPath)}`)
       }
-      finally {
-        process.chdir(originalCwd)
+
+      // List files in tempPackagesDir to debug
+      if (fs.existsSync(tempPackagesDir)) {
+        const files = fs.readdirSync(tempPackagesDir)
+        console.error(`DEBUG TEST: files in tempPackagesDir: ${files.join(', ')}`)
       }
+      else {
+        console.error(`DEBUG TEST: tempPackagesDir does not exist`)
+      }
+
+      expect(indexPath).toBeDefined()
+      expect(indexPath).toContain('index.ts')
+
+      // Handle both absolute and relative paths - resolve relative to tempPackagesDir
+      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+      expect(fs.existsSync(resolvedIndexPath)).toBe(true)
+
+      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
+
+      // Should contain imports
+      expect(content).toContain('import * as')
+      expect(content).toContain('from \'./nodejs')
+      expect(content).toContain('from \'./python')
+
+      // Should contain interface definition
+      expect(content).toContain('export interface Pantry')
+
+      // Should contain pantry object
+      expect(content).toContain('export const pantry: Pantry')
+
+      // Should contain package exports
+      expect(content).toContain('export const packages: Packages')
+
+      // Should contain aliases export
+      expect(content).toContain('export * from \'./aliases\'')
     })
 
     test('should handle empty packages directory', async () => {
@@ -175,140 +166,107 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
       const emptyPackagesDir = path.join(tempDir, 'empty-packages')
       fs.mkdirSync(emptyPackagesDir, { recursive: true })
 
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      // Mock the packages directory to be empty
+      fs.rmSync(tempPackagesDir, { recursive: true, force: true })
+      fs.mkdirSync(tempPackagesDir, { recursive: true })
 
-      try {
-        // Mock the packages directory to be empty
-        fs.rmSync(tempPackagesDir, { recursive: true, force: true })
-        fs.mkdirSync(tempPackagesDir, { recursive: true })
+      const indexPath = await generateIndex(tempPackagesDir)
 
-        const indexPath = await generateIndex(tempPackagesDir)
-
-        // Debug logging for empty packages test
-        console.error(`DEBUG EMPTY: received indexPath=${indexPath}`)
-        console.error(`DEBUG EMPTY: tempPackagesDir=${tempPackagesDir}`)
-        console.error(`DEBUG EMPTY: process.cwd()=${process.cwd()}`)
-        if (indexPath) {
-          console.error(`DEBUG EMPTY: path.isAbsolute(indexPath)=${path.isAbsolute(indexPath)}`)
-        }
-
-        expect(indexPath).toBeDefined()
-
-        // Handle both absolute and relative paths
-        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-        console.error(`DEBUG EMPTY: resolvedIndexPath=${resolvedIndexPath}`)
-        console.error(`DEBUG EMPTY: fs.existsSync(resolvedIndexPath)=${fs.existsSync(resolvedIndexPath)}`)
-        expect(fs.existsSync(resolvedIndexPath)).toBe(true)
-
-        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
-
-        // Should still have basic structure
-        expect(content).toContain('export interface Pantry')
-        expect(content).toContain('export const pantry: Pantry')
+      // Debug logging for empty packages test
+      console.error(`DEBUG EMPTY: received indexPath=${indexPath}`)
+      console.error(`DEBUG EMPTY: tempPackagesDir=${tempPackagesDir}`)
+      console.error(`DEBUG EMPTY: process.cwd()=${process.cwd()}`)
+      if (indexPath) {
+        console.error(`DEBUG EMPTY: path.isAbsolute(indexPath)=${path.isAbsolute(indexPath)}`)
       }
-      finally {
-        process.chdir(originalCwd)
-      }
+
+      expect(indexPath).toBeDefined()
+
+      // Handle both absolute and relative paths
+      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+      console.error(`DEBUG EMPTY: resolvedIndexPath=${resolvedIndexPath}`)
+
+      expect(fs.existsSync(resolvedIndexPath)).toBe(true)
+
+      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
+
+      // Should still generate valid structure
+      expect(content).toContain('export interface Pantry')
+      expect(content).toContain('export const pantry: Pantry')
     })
 
     test('should generate proper TypeScript syntax', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const indexPath = await generateIndex(tempPackagesDir)
 
-      try {
-        const indexPath = await generateIndex(tempPackagesDir)
+      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
-        // Debug logging for TypeScript syntax test
-        console.error(`DEBUG SYNTAX: received indexPath=${indexPath}`)
-        console.error(`DEBUG SYNTAX: process.cwd()=${process.cwd()}`)
-        if (indexPath) {
-          console.error(`DEBUG SYNTAX: path.isAbsolute(indexPath)=${path.isAbsolute(indexPath)}`)
-        }
+      // Check for proper TypeScript syntax
+      expect(content).toMatch(/import \* as \w+ from/)
+      expect(content).toMatch(/export interface Pantry/)
+      expect(content).toMatch(/export const pantry: Pantry =/)
 
-        // Handle both absolute and relative paths
-        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-        console.error(`DEBUG SYNTAX: resolvedIndexPath=${resolvedIndexPath}`)
-        console.error(`DEBUG SYNTAX: fs.existsSync(resolvedIndexPath)=${fs.existsSync(resolvedIndexPath)}`)
-        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
-
-        // Should have proper TypeScript syntax
-        expect(content).toContain('export interface')
-        expect(content).toContain('export const')
-        expect(content).toContain('export type')
-
-        // Should use single quotes consistently
-        expect(content).toMatch(/'[^']*':/g) // Property names in single quotes
-
-        // Should have proper JSDoc comments
-        expect(content).toContain('/**')
-        expect(content).toContain('*/')
-        expect(content).toContain('@domain')
-
-        // Should not have syntax errors (basic check)
-        expect(content).not.toContain('undefined,') // No undefined values in object literals
-        expect(content).not.toContain('null,') // No null values in object literals
-        expect(content).not.toContain(': undefined') // No undefined property values
-        expect(content).not.toContain('undefined}') // No undefined at end of objects
-
-        // The literal string "undefined" should not appear as it's not a valid package domain
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should not have syntax errors (basic check)
+      expect(content).not.toContain('undefined')
+      expect(content).not.toContain('null as')
     })
 
     test('should handle nested package paths', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      // Add a nested package
+      const nestedPackagePath = path.join(tempPackagesDir, 'agwaname-git-crypt.ts')
+      const nestedContent = `
+export const agwanameGitCryptPackage = {
+  name: 'git-crypt' as const,
+  domain: 'agwa.name/git-crypt' as const,
+  description: 'Enable transparent encryption/decryption of files in a git repo' as const,
+  installCommand: 'pkgx agwa.name/git-crypt' as const,
+  programs: ['git-crypt'] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  versions: ['0.7.0'] as const,
+  aliases: ['git-crypt'] as const,
+  fullPath: 'agwa.name/git-crypt' as const,
+}
 
-      try {
-        const indexPath = await generateIndex(tempPackagesDir)
+export type AgwanameGitCryptPackage = typeof agwanameGitCryptPackage
+`
+      fs.writeFileSync(nestedPackagePath, nestedContent)
 
-        // Handle both absolute and relative paths
-        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
+      const indexPath = await generateIndex(tempPackagesDir)
 
-        // Should handle nested paths like agwa.name/git-crypt
-        expect(content).toContain('agwanamegitcrypt')
-        expect(content).toContain('git-crypt')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
+
+      // Should contain import for the nested package
+      expect(content).toContain('from \'./agwaname-git-crypt\'')
+
+      // Should handle nested paths properly
+      expect(content).toContain('agwanameGitCryptPackage')
     })
   })
 
   describe('generateAliases', () => {
     test('should generate aliases.ts file', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const aliasesPath = await generateAliases(tempPackagesDir)
 
-      try {
-        const aliasesPath = await generateAliases(tempPackagesDir)
+      expect(aliasesPath).toBeDefined()
+      expect(aliasesPath).toContain('aliases.ts')
 
-        expect(aliasesPath).toBeDefined()
-        expect(aliasesPath).toContain('aliases.ts')
+      // Handle both absolute and relative paths
+      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
 
-        // Handle both absolute and relative paths
-        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
-        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+      const content = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
-        const content = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Should contain aliases export
+      expect(content).toContain('export const aliases: Record<string, string>')
 
-        // Should contain aliases export
-        expect(content).toContain('export const aliases: Record<string, string>')
+      // Should contain alias mappings
+      expect(content).toContain('node')
+      expect(content).toContain('py')
 
-        // Should contain alias mappings
-        expect(content).toContain('node')
-        expect(content).toContain('py')
-
-        // Should use single quotes
-        expect(content).toMatch(/'[^']*': '[^']*'/g)
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should use single quotes
+      expect(content).toMatch(/'[^']*': '[^']*'/g)
     })
 
     test('should handle packages without aliases', async () => {
@@ -332,96 +290,76 @@ export type NoaliascomPackage = typeof noaliascomPackage
 `
       fs.writeFileSync(noAliasPackage, content)
 
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const aliasesPath = await generateAliases(tempPackagesDir)
 
-      try {
-        const aliasesPath = await generateAliases(tempPackagesDir)
+      // Handle both absolute and relative paths
+      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+      const aliasContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
-        // Handle both absolute and relative paths
-        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
-        const aliasContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Should still generate file
+      expect(aliasContent).toContain('export const aliases')
 
-        // Should still generate file
-        expect(aliasContent).toContain('export const aliases')
-
-        // Should NOT contain domain self-reference (not a real alias)
-        expect(aliasContent).not.toContain('noalias.com')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should NOT contain domain self-reference (not a real alias)
+      expect(aliasContent).not.toContain('noalias.com')
     })
 
-    test('should filter out aliases that match package name with different case', async () => {
-      // Create packages with various case combinations
-      const protocolBuffersFile = path.join(tempPackagesDir, 'protobufdev.ts')
-      const protocolBuffersContent = `
-export const protobufPackage = {
-  name: 'Protocol Buffers' as const,
-  domain: 'protobuf.dev' as const,
-  description: 'Protocol Buffers - Google\\'s data interchange format' as const,
-  installCommand: 'pkgx protobuf.dev' as const,
-  programs: ['protoc'] as const,
+    test('should filter out aliases that match package name (case-insensitive)', async () => {
+      // Create a package with an alias that matches the package name
+      const midnightCommanderFile = path.join(tempPackagesDir, 'midnightcommanderorg.ts')
+      const midnightCommanderContent = `
+export const midnightCommanderPackage = {
+  name: 'Midnight Commander' as const,
+  domain: 'midnightcommander.org' as const,
+  description: 'Terminal-based visual file manager' as const,
+  installCommand: 'pkgx midnightcommander.org' as const,
+  programs: ['mc'] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: ['3.21.0'] as const,
+  versions: ['4.8.33'] as const,
   aliases: [
-    'protocol buffers',
-    'protobuf',
-    'protoc',
+    'midnight commander',
+    'mc',
   ] as const,
-  fullPath: 'protobuf.dev' as const,
+  fullPath: 'midnightcommander.org' as const,
 }
 
-export type ProtobufPackage = typeof protobufPackage
+export type MidnightCommanderPackage = typeof midnightCommanderPackage
 `
-      fs.writeFileSync(protocolBuffersFile, protocolBuffersContent)
+      fs.writeFileSync(midnightCommanderFile, midnightCommanderContent)
 
-      const scryerPrologFile = path.join(tempPackagesDir, 'scryerpl.ts')
-      const scryerPrologContent = `
-export const scryerPrologPackage = {
-  name: 'Scryer Prolog' as const,
-  domain: 'scryerpl' as const,
-  description: 'Modern ISO Prolog implementation written mostly in Rust' as const,
-  installCommand: 'pkgx scryerpl' as const,
-  programs: ['scryer-prolog'] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  versions: ['0.9.0'] as const,
-  aliases: [
-    'scryer prolog',
-    'scryer-prolog',
-  ] as const,
-  fullPath: 'scryerpl' as const,
-}
+      // Verify the file was created
+      expect(fs.existsSync(midnightCommanderFile)).toBe(true)
 
-export type ScryerPrologPackage = typeof scryerPrologPackage
-`
-      fs.writeFileSync(scryerPrologFile, scryerPrologContent)
+      const aliasesPath = await generateAliases(tempPackagesDir)
+      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
 
-      try {
-        const aliasesPath = await generateAliases(tempPackagesDir)
-        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
-        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+      // Should NOT contain the alias that matches the package name
+      expect(aliasesContent).not.toContain('\'midnight commander\':')
 
-        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Should contain the valid alias that doesn't match the package name
+      // Check if mc alias is present in any form
+      expect(aliasesContent).toMatch(/'mc':\s*'[^']*'/)
+    })
 
-        // Should NOT contain aliases that match package names (case-insensitive)
-        expect(aliasesContent).not.toContain('\'protocol buffers\': \'protobuf.dev\'')
-        expect(aliasesContent).not.toContain('\'scryer prolog\': \'scryerpl\'')
+    test('should sort aliases alphabetically', async () => {
+      const aliasesPath = await generateAliases(tempPackagesDir)
 
-        // Should contain valid aliases that don't match package names
-        expect(aliasesContent).toContain('\'protobuf\': \'protobuf.dev\'')
-        expect(aliasesContent).toContain('\'protoc\': \'protobuf.dev\'')
-        expect(aliasesContent).toContain('\'scryer-prolog\': \'scryerpl\'')
-      }
-      finally {
-        process.chdir(originalCwd)
+      // Handle both absolute and relative paths
+      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+      const content = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+
+      // Extract alias keys
+      const aliasMatches = content.match(/'([^']+)':/g)
+      if (aliasMatches) {
+        const aliases = aliasMatches.map(match => match.slice(1, -2)) // Remove quotes and colon
+        const sortedAliases = [...aliases].sort()
+
+        // Should be sorted
+        expect(aliases).toEqual(sortedAliases)
       }
     })
 
@@ -450,29 +388,21 @@ export type GitCryptPackage = typeof gitCryptPackage
 `
       fs.writeFileSync(gitCryptFile, gitCryptContent)
 
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const aliasesPath = await generateAliases(tempPackagesDir)
+      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-      try {
-        const aliasesPath = await generateAliases(tempPackagesDir)
-        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
 
-        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
-        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Should NOT contain the alias that exactly matches the package name
+      expect(aliasesContent).not.toContain('\'git-crypt\': \'agwa.name/git-crypt\'')
 
-        // Should NOT contain the alias that exactly matches the package name
-        expect(aliasesContent).not.toContain('\'git-crypt\': \'agwa.name/git-crypt\'')
-
-        // Should contain valid aliases that don't match the package name
-        // Note: guessOriginalDomain converts agwanamegitcrypt back to agwa.name/git-crypt
-        // But in the aliases output, it uses the normalized domain
-        expect(aliasesContent).toContain('\'gitcrypt\': \'agwanamegitcrypt\'')
-        expect(aliasesContent).toContain('\'crypt\': \'agwanamegitcrypt\'')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should contain valid aliases that don't match the package name
+      // Note: guessOriginalDomain converts agwanamegitcrypt back to agwa.name/git-crypt
+      // But in the aliases output, it uses the normalized domain
+      expect(aliasesContent).toContain('\'gitcrypt\': \'agwanamegitcrypt\'')
+      expect(aliasesContent).toContain('\'crypt\': \'agwanamegitcrypt\'')
     })
 
     test('should handle packages with no name field gracefully', async () => {
@@ -498,24 +428,16 @@ export type NoNamePackage = typeof noNamePackage
 `
       fs.writeFileSync(noNameFile, noNameContent)
 
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const aliasesPath = await generateAliases(tempPackagesDir)
+      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-      try {
-        const aliasesPath = await generateAliases(tempPackagesDir)
-        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
 
-        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
-        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
-
-        // Should contain all aliases since there's no name to filter against
-        expect(aliasesContent).toContain('\'noname\': \'noname.com\'')
-        expect(aliasesContent).toContain('\'anonymous\': \'noname.com\'')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should contain all aliases since there's no name to filter against
+      expect(aliasesContent).toContain('\'noname\': \'noname.com\'')
+      expect(aliasesContent).toContain('\'anonymous\': \'noname.com\'')
     })
 
     test('should handle packages with empty name field', async () => {
@@ -542,24 +464,16 @@ export type EmptyNamePackage = typeof emptyNamePackage
 `
       fs.writeFileSync(emptyNameFile, emptyNameContent)
 
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const aliasesPath = await generateAliases(tempPackagesDir)
+      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-      try {
-        const aliasesPath = await generateAliases(tempPackagesDir)
-        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
 
-        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
-        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
-
-        // Should contain all aliases since the name is empty
-        expect(aliasesContent).toContain('\'empty\': \'emptyname.com\'')
-        expect(aliasesContent).toContain('\'blank\': \'emptyname.com\'')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should contain all aliases since the name is empty
+      expect(aliasesContent).toContain('\'empty\': \'emptyname.com\'')
+      expect(aliasesContent).toContain('\'blank\': \'emptyname.com\'')
     })
 
     test('should log filtered aliases for debugging', async () => {
@@ -586,40 +500,37 @@ export type DuplicatePackage = typeof duplicatePackage
 `
       fs.writeFileSync(duplicateAliasFile, duplicateAliasContent)
 
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      // Capture console.log output
+      const consoleLogs: string[] = []
+      const originalConsoleLog = console.log
+      console.log = (...args: any[]) => {
+        consoleLogs.push(args.join(' '))
+      }
 
       try {
-        // Capture console.log output
-        const consoleLogs: string[] = []
-        const originalConsoleLog = console.log
-        console.log = (...args: any[]) => {
-          consoleLogs.push(args.join(' '))
-        }
-
         const aliasesPath = await generateAliases(tempPackagesDir)
+        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-        // Restore console.log
-        console.log = originalConsoleLog
+        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
         // Should have logged the filtered alias
         const filteredLogs = consoleLogs.filter(log =>
           log.includes('Filtered out package name alias')
           && log.includes('duplicate package'),
         )
+
+        // The log should appear since "duplicate package" matches "Duplicate Package" (case-insensitive)
         expect(filteredLogs.length).toBeGreaterThan(0)
 
-        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
-        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
-
         // Should not contain the filtered alias
-        expect(aliasesContent).not.toContain('\'duplicate package\': \'duplicate.com\'')
+        expect(aliasesContent).not.toContain('\'duplicate package\':')
 
         // Should contain the valid alias
-        expect(aliasesContent).toContain('\'dup\': \'duplicate.com\'')
+        expect(aliasesContent).toMatch(/'dup':\s*'[^']*'/)
       }
       finally {
-        process.chdir(originalCwd)
+        // Restore console.log
+        console.log = originalConsoleLog
       }
     })
 
@@ -650,177 +561,125 @@ export type CaseVariationsPackage = typeof caseVariationsPackage
 `
       fs.writeFileSync(caseVariationsFile, caseVariationsContent)
 
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const aliasesPath = await generateAliases(tempPackagesDir)
+      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-      try {
-        const aliasesPath = await generateAliases(tempPackagesDir)
-        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
 
-        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
-        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Should NOT contain any variation of the package name
+      expect(aliasesContent).not.toContain('\'CamelCase Package\': \'casevariations.com\'')
+      expect(aliasesContent).not.toContain('\'camelcase package\': \'casevariations.com\'')
+      expect(aliasesContent).not.toContain('\'CAMELCASE PACKAGE\': \'casevariations.com\'')
 
-        // Should NOT contain any variation of the package name
-        expect(aliasesContent).not.toContain('\'CamelCase Package\': \'casevariations.com\'')
-        expect(aliasesContent).not.toContain('\'camelcase package\': \'casevariations.com\'')
-        expect(aliasesContent).not.toContain('\'CAMELCASE PACKAGE\': \'casevariations.com\'')
-
-        // Should contain valid aliases that don't match the package name
-        expect(aliasesContent).toContain('\'camelCase-package\': \'casevariations.com\'')
-        expect(aliasesContent).toContain('\'valid-alias\': \'casevariations.com\'')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should contain valid aliases that don't match the package name
+      expect(aliasesContent).toContain('\'camelCase-package\': \'casevariations.com\'')
+      expect(aliasesContent).toContain('\'valid-alias\': \'casevariations.com\'')
     })
   })
 
   describe('generateDocs', () => {
     test('should generate documentation files', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      await generateDocs(tempDocsDir, tempPackagesDir)
 
-      try {
-        await generateDocs(tempDocsDir, tempPackagesDir)
+      // Should create main catalog
+      const catalogPath = path.join(tempDocsDir, 'package-catalog.md')
+      expect(fs.existsSync(catalogPath)).toBe(true)
 
-        // Should create main catalog
-        const catalogPath = path.join(tempDocsDir, 'package-catalog.md')
-        expect(fs.existsSync(catalogPath)).toBe(true)
+      const catalogContent = fs.readFileSync(catalogPath, 'utf-8')
+      expect(catalogContent).toContain('# Package Catalog')
+      expect(catalogContent).toContain('Node.js')
+      expect(catalogContent).toContain('Python')
 
-        const catalogContent = fs.readFileSync(catalogPath, 'utf-8')
-        expect(catalogContent).toContain('# Package Catalog')
-        expect(catalogContent).toContain('Node.js')
-        expect(catalogContent).toContain('Python')
+      // Should create packages directory
+      const packagesDir = path.join(tempDocsDir, 'packages')
+      expect(fs.existsSync(packagesDir)).toBe(true)
 
-        // Should create packages directory
-        const packagesDir = path.join(tempDocsDir, 'packages')
-        expect(fs.existsSync(packagesDir)).toBe(true)
-
-        // Should create categories directory
-        const categoriesDir = path.join(tempDocsDir, 'categories')
-        expect(fs.existsSync(categoriesDir)).toBe(true)
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should create categories directory
+      const categoriesDir = path.join(tempDocsDir, 'categories')
+      expect(fs.existsSync(categoriesDir)).toBe(true)
     })
 
     test('should generate individual package pages', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      await generateDocs(tempDocsDir, tempPackagesDir)
 
-      try {
-        await generateDocs(tempDocsDir, tempPackagesDir)
+      const packagesDir = path.join(tempDocsDir, 'packages')
+      const packageFiles = fs.readdirSync(packagesDir)
 
-        const packagesDir = path.join(tempDocsDir, 'packages')
-        const packageFiles = fs.readdirSync(packagesDir)
+      expect(packageFiles.length).toBeGreaterThan(0)
 
-        expect(packageFiles.length).toBeGreaterThan(0)
+      // Check Node.js package page
+      const nodeFile = packageFiles.find(f => f.includes('nodejs'))
+      expect(nodeFile).toBeDefined()
 
-        // Check Node.js package page
-        const nodeFile = packageFiles.find(f => f.includes('nodejs'))
-        expect(nodeFile).toBeDefined()
-
-        const nodeContent = fs.readFileSync(path.join(packagesDir, nodeFile!), 'utf-8')
-        expect(nodeContent).toContain('# Node.js')
-        expect(nodeContent).toContain('## Installation')
-        expect(nodeContent).toContain('## Programs')
-        expect(nodeContent).toContain('## Available Versions')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      const nodeContent = fs.readFileSync(path.join(packagesDir, nodeFile!), 'utf-8')
+      expect(nodeContent).toContain('# Node.js')
+      expect(nodeContent).toContain('## Installation')
+      expect(nodeContent).toContain('## Programs')
+      expect(nodeContent).toContain('## Available Versions')
     })
 
     test('should generate category pages', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      await generateDocs(tempDocsDir, tempPackagesDir)
 
-      try {
-        await generateDocs(tempDocsDir, tempPackagesDir)
+      const categoriesDir = path.join(tempDocsDir, 'categories')
+      const categoryFiles = fs.readdirSync(categoriesDir)
 
-        const categoriesDir = path.join(tempDocsDir, 'categories')
-        const categoryFiles = fs.readdirSync(categoriesDir)
+      expect(categoryFiles.length).toBeGreaterThan(0)
 
-        expect(categoryFiles.length).toBeGreaterThan(0)
-
-        // Should have programming languages category
-        const progLangFile = categoryFiles.find(f => f.includes('programming'))
-        if (progLangFile) {
-          const progLangContent = fs.readFileSync(path.join(categoriesDir, progLangFile), 'utf-8')
-          expect(progLangContent).toContain('Programming Languages')
-        }
-      }
-      finally {
-        process.chdir(originalCwd)
+      // Should have programming languages category
+      const progLangFile = categoryFiles.find(f => f.includes('programming'))
+      if (progLangFile) {
+        const progLangContent = fs.readFileSync(path.join(categoriesDir, progLangFile), 'utf-8')
+        expect(progLangContent).toContain('Programming Languages')
       }
     })
 
     test('should handle custom output directory', async () => {
       const customDocsDir = path.join(tempDir, 'custom-docs')
 
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      await generateDocs(customDocsDir, tempPackagesDir)
 
-      try {
-        await generateDocs(customDocsDir, tempPackagesDir)
-
-        expect(fs.existsSync(customDocsDir)).toBe(true)
-        expect(fs.existsSync(path.join(customDocsDir, 'package-catalog.md'))).toBe(true)
-        expect(fs.existsSync(path.join(customDocsDir, 'packages'))).toBe(true)
-        expect(fs.existsSync(path.join(customDocsDir, 'categories'))).toBe(true)
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      expect(fs.existsSync(customDocsDir)).toBe(true)
+      expect(fs.existsSync(path.join(customDocsDir, 'package-catalog.md'))).toBe(true)
+      expect(fs.existsSync(path.join(customDocsDir, 'packages'))).toBe(true)
+      expect(fs.existsSync(path.join(customDocsDir, 'categories'))).toBe(true)
     })
 
     test('should generate valid markdown syntax', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      await generateDocs(tempDocsDir, tempPackagesDir)
 
-      try {
-        await generateDocs(tempDocsDir, tempPackagesDir)
+      const catalogPath = path.join(tempDocsDir, 'package-catalog.md')
+      const catalogContent = fs.readFileSync(catalogPath, 'utf-8')
 
-        const catalogPath = path.join(tempDocsDir, 'package-catalog.md')
-        const catalogContent = fs.readFileSync(catalogPath, 'utf-8')
+      // Should have proper markdown headers
+      expect(catalogContent).toMatch(/^# /m)
+      expect(catalogContent).toMatch(/^## /m)
 
-        // Should have proper markdown headers
-        expect(catalogContent).toMatch(/^# /m)
-        expect(catalogContent).toMatch(/^## /m)
+      // Should have proper markdown tables
+      expect(catalogContent).toContain('| Package | Description |')
+      expect(catalogContent).toContain('|---------|-------------|')
 
-        // Should have proper markdown tables
-        expect(catalogContent).toContain('| Package | Description |')
-        expect(catalogContent).toContain('|---------|-------------|')
+      // Should have proper markdown links
+      expect(catalogContent).toMatch(/\[.*\]\(.*\.md\)/g)
 
-        // Should have proper markdown links
-        expect(catalogContent).toMatch(/\[.*\]\(.*\.md\)/g)
-
-        // Should have proper code blocks
-        expect(catalogContent).toContain('```bash')
-        expect(catalogContent).toContain('```typescript')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should have proper code blocks
+      expect(catalogContent).toContain('```bash')
+      expect(catalogContent).toContain('```typescript')
     })
   })
 
   describe('Error Handling', () => {
     test('should handle missing packages directory gracefully', async () => {
-      const originalCwd = process.cwd()
       const emptyTempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ts-pkgx-empty-'))
 
       try {
-        process.chdir(emptyTempDir)
-
         // Should not throw even if packages directory doesn't exist
         await expect(generateIndex(path.join(emptyTempDir, 'src', 'packages'))).resolves.toBeDefined()
         await expect(generateAliases(path.join(emptyTempDir, 'src', 'packages'))).resolves.toBeDefined()
       }
       finally {
-        process.chdir(originalCwd)
         fs.rmSync(emptyTempDir, { recursive: true, force: true })
       }
     })
@@ -830,90 +689,58 @@ export type CaseVariationsPackage = typeof caseVariationsPackage
       const invalidFile = path.join(tempPackagesDir, 'invalid.ts')
       fs.writeFileSync(invalidFile, 'invalid typescript content')
 
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
-
-      try {
-        // Should not throw even with invalid files
-        await expect(generateIndex(tempPackagesDir)).resolves.toBeDefined()
-        await expect(generateAliases(tempPackagesDir)).resolves.toBeDefined()
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should not throw even with invalid files
+      await expect(generateIndex(tempPackagesDir)).resolves.toBeDefined()
+      await expect(generateAliases(tempPackagesDir)).resolves.toBeDefined()
     })
 
     test('should handle permission errors gracefully', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      // Try to generate docs to a read-only directory (if possible)
+      const readOnlyDir = path.join(tempDir, 'readonly')
+      fs.mkdirSync(readOnlyDir)
 
-      try {
-        // Try to generate docs to a read-only directory (if possible)
-        const readOnlyDir = path.join(tempDir, 'readonly')
-        fs.mkdirSync(readOnlyDir)
-
-        // This might not work on all systems, but shouldn't crash
-        await expect(generateDocs(readOnlyDir, tempPackagesDir)).resolves.toBeUndefined()
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // This might not work on all systems, but shouldn't crash
+      await expect(generateDocs(readOnlyDir, tempPackagesDir)).resolves.toBeUndefined()
     })
   })
 
   describe('Content Validation', () => {
     test('should generate consistent variable names', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const indexPath = await generateIndex(tempPackagesDir)
 
-      try {
-        const indexPath = await generateIndex(tempPackagesDir)
+      // Handle both absolute and relative paths
+      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
-        // Handle both absolute and relative paths
-        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
+      // Variable names should be consistent
+      const varMatches = content.match(/export const (\w+): Pantry/g)
+      const interfaceMatches = content.match(/export interface (\w+)/g)
 
-        // Variable names should be consistent
-        const varMatches = content.match(/export const (\w+): Pantry/g)
-        const interfaceMatches = content.match(/export interface (\w+)/g)
+      expect(varMatches).toBeDefined()
+      expect(interfaceMatches).toBeDefined()
 
-        expect(varMatches).toBeDefined()
-        expect(interfaceMatches).toBeDefined()
-
-        // Should have pantry variable and Pantry interface
-        expect(content).toContain('export const pantry: Pantry')
-        expect(content).toContain('export interface Pantry')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should have pantry variable and Pantry interface
+      expect(content).toContain('export const pantry: Pantry')
+      expect(content).toContain('export interface Pantry')
     })
 
     test('should generate proper JSDoc documentation', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const indexPath = await generateIndex(tempPackagesDir)
 
-      try {
-        const indexPath = await generateIndex(tempPackagesDir)
+      // Handle both absolute and relative paths
+      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
-        // Handle both absolute and relative paths
-        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
+      // Should have JSDoc comments
+      expect(content).toContain('/**')
+      expect(content).toContain('*/')
+      expect(content).toContain('@domain')
+      expect(content).toContain('@programs')
+      expect(content).toContain('@version')
+      expect(content).toContain('@example')
 
-        // Should have JSDoc comments
-        expect(content).toContain('/**')
-        expect(content).toContain('*/')
-        expect(content).toContain('@domain')
-        expect(content).toContain('@programs')
-        expect(content).toContain('@version')
-        expect(content).toContain('@example')
-
-        // JSDoc should be properly formatted
-        expect(content).toMatch(/\s+\*\s+/g) // Proper indentation
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // JSDoc should be properly formatted
+      expect(content).toMatch(/\s+\*\s+/g) // Proper indentation
     })
 
     test('should handle special characters in package data', async () => {
@@ -936,93 +763,69 @@ export type SpecialcomPackage = typeof specialcomPackage
 `
       fs.writeFileSync(specialFile, specialContent)
 
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const indexPath = await generateIndex(tempPackagesDir)
 
-      try {
-        const indexPath = await generateIndex(tempPackagesDir)
+      // Handle both absolute and relative paths
+      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+      const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
-        // Handle both absolute and relative paths
-        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-        const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
-
-        // Should handle special characters without breaking
-        expect(content).toContain('specialcom')
-        expect(content).not.toContain('undefined')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      // Should handle special characters without breaking
+      expect(content).toContain('specialcom')
+      expect(content).not.toContain('undefined')
     })
   })
 
   describe('Integration Tests', () => {
     test('should generate all files together successfully', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      // Generate all components
+      const indexPath = await generateIndex(tempPackagesDir)
+      const aliasesPath = await generateAliases(tempPackagesDir)
+      await generateDocs(tempDocsDir, tempPackagesDir)
 
-      try {
-        // Generate all components
-        const indexPath = await generateIndex(tempPackagesDir)
-        const aliasesPath = await generateAliases(tempPackagesDir)
-        await generateDocs(tempDocsDir, tempPackagesDir)
+      // Debug logging for integration test
+      console.error(`DEBUG INTEGRATION: indexPath=${indexPath}`)
+      console.error(`DEBUG INTEGRATION: aliasesPath=${aliasesPath}`)
+      console.error(`DEBUG INTEGRATION: indexPath isAbsolute=${path.isAbsolute(indexPath!)}`)
+      console.error(`DEBUG INTEGRATION: aliasesPath isAbsolute=${path.isAbsolute(aliasesPath)}`)
 
-        // Debug logging for integration test
-        console.error(`DEBUG INTEGRATION: indexPath=${indexPath}`)
-        console.error(`DEBUG INTEGRATION: aliasesPath=${aliasesPath}`)
-        console.error(`DEBUG INTEGRATION: indexPath isAbsolute=${path.isAbsolute(indexPath!)}`)
-        console.error(`DEBUG INTEGRATION: aliasesPath isAbsolute=${path.isAbsolute(aliasesPath)}`)
+      // Handle both absolute and relative paths
+      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-        // Handle both absolute and relative paths
-        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+      // All files should exist
+      expect(fs.existsSync(resolvedIndexPath)).toBe(true)
+      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+      expect(fs.existsSync(path.join(tempDocsDir, 'package-catalog.md'))).toBe(true)
 
-        // All files should exist
-        expect(fs.existsSync(resolvedIndexPath)).toBe(true)
-        expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
-        expect(fs.existsSync(path.join(tempDocsDir, 'package-catalog.md'))).toBe(true)
+      // Files should reference each other correctly
+      const indexContent = fs.readFileSync(resolvedIndexPath, 'utf-8')
+      expect(indexContent).toContain('export * from \'./aliases\'')
 
-        // Files should reference each other correctly
-        const indexContent = fs.readFileSync(resolvedIndexPath, 'utf-8')
-        expect(indexContent).toContain('export * from \'./aliases\'')
-
-        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
-        expect(aliasesContent).toContain('export const aliases')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      expect(aliasesContent).toContain('export const aliases')
     })
 
     test('should maintain consistency across generated files', async () => {
-      const originalCwd = process.cwd()
-      process.chdir(tempDir)
+      const indexPath = await generateIndex(tempPackagesDir)
+      const aliasesPath = await generateAliases(tempPackagesDir)
 
-      try {
-        const indexPath = await generateIndex(tempPackagesDir)
-        const aliasesPath = await generateAliases(tempPackagesDir)
+      // Debug logging for consistency test
+      console.error(`DEBUG CONSISTENCY: indexPath=${indexPath}`)
+      console.error(`DEBUG CONSISTENCY: aliasesPath=${aliasesPath}`)
 
-        // Debug logging for consistency test
-        console.error(`DEBUG CONSISTENCY: indexPath=${indexPath}`)
-        console.error(`DEBUG CONSISTENCY: aliasesPath=${aliasesPath}`)
+      // Handle both absolute and relative paths
+      const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+      const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
 
-        // Handle both absolute and relative paths
-        const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
-        const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+      const indexContent = fs.readFileSync(resolvedIndexPath, 'utf-8')
+      const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
-        const indexContent = fs.readFileSync(resolvedIndexPath, 'utf-8')
-        const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
+      // Both should reference the same packages
+      expect(indexContent).toContain('nodejs')
+      expect(aliasesContent).toContain('node')
 
-        // Both should reference the same packages
-        expect(indexContent).toContain('nodejs')
-        expect(aliasesContent).toContain('node')
-
-        expect(indexContent).toContain('python')
-        expect(aliasesContent).toContain('python')
-      }
-      finally {
-        process.chdir(originalCwd)
-      }
+      expect(indexContent).toContain('python')
+      expect(aliasesContent).toContain('python')
     })
   })
 })

@@ -229,7 +229,7 @@ function isValidAlias(alias: string, targetDomain: string): boolean {
   }
 
   // Don't create aliases that are too short (less than 3 characters) unless they're well-known
-  const wellKnownShortAliases = ['go', 'js', 'py', 'rb', 'sh', 'vi', 'cc', 'gc', 'jq', 'awk', 'sed']
+  const wellKnownShortAliases = ['go', 'js', 'py', 'rb', 'sh', 'vi', 'cc', 'gc', 'jq', 'awk', 'sed', 'mc']
   if (alias.length < 3 && !wellKnownShortAliases.includes(alias.toLowerCase())) {
     return false
   }
