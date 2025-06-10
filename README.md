@@ -61,10 +61,7 @@ ts-pkgx provides comprehensive TypeScript types for all packages in the pkgx.dev
 
 ```typescript
 import type { Pantry } from 'ts-pkgx'
-import { pantry } from 'ts-pkgx'
-
-// Aliases are also available with full typing
-import { aliases } from 'ts-pkgx'
+import { aliases, pantry } from 'ts-pkgx'
 
 // Access packages with full type safety
 const nodePackage = pantry.nodejs_org
