@@ -38,6 +38,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PAT_TOKEN || github.token }}
           fetch-depth: 0
 
       - name: Setup Bun
@@ -88,8 +89,17 @@ jobs:
       - name: Configure Git
         if: steps.check-commits.outputs.has_unreleased == 'true'
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Use PAT if available to trigger subsequent workflows, otherwise use default token
+          if [ -n "${{ secrets.PAT_TOKEN }}" ]; then
+            echo "Using PAT token to trigger subsequent workflows"
+            git config --global user.name "buddy-bot"
+            git config --global user.email "bot@stacksjs.org"
+            git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
+          else
+            echo "Using default GitHub token (subsequent workflows may not trigger)"
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          fi
 
       - name: Run release
         if: steps.check-commits.outputs.has_unreleased == 'true'
@@ -125,6 +135,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PAT_TOKEN || github.token }}
           fetch-depth: 0
 
       - name: Setup Bun
