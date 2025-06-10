@@ -36,7 +36,7 @@ A modern runtime for JavaScript and TypeScript.
 
 ---
 
-### [elixir/lang.org](../packages/elixirlangorg.md)
+### [elixir/lang.org](../packages/elixirlangorg.md) (elixir-lang.org)
 
 Elixir is a dynamic, functional language for building scalable and maintainable applications
 
@@ -106,7 +106,7 @@ Statically typed programming language for the JVM
 
 ---
 
-### [nim/lang.org](../packages/nimlangorg.md)
+### [nim/lang.org](../packages/nimlangorg.md) (nim-lang.org)
 
 Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).
 
@@ -116,7 +116,7 @@ Nim is a statically typed compiled systems programming language. It combines suc
 
 ---
 
-### [nodejs.org](../packages/nodejsorg.md)
+### [nodejs.org](../packages/nodejsorg.md) (node)
 
 Platform built on V8 to build network applications
 
@@ -156,7 +156,7 @@ The Python programming language
 
 ---
 
-### [ruby/lang.org](../packages/rubylangorg.md) (ruby)
+### [ruby/lang.org](../packages/rubylangorg.md) (ruby-lang.org, ruby)
 
 Powerful, clean, object-oriented scripting language
 
@@ -176,7 +176,7 @@ Empowering everyone to build reliable and efficient software.
 
 ---
 
-### [scala/lang.org](../packages/scalalangorg.md)
+### [scala/lang.org](../packages/scalalangorg.md) (scala-lang.org)
 
 The Scala 3 compiler, also known as Dotty.
 
@@ -206,7 +206,7 @@ TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
 
 ---
 
-### [vlang.io](../packages/vlangio.md)
+### [vlang.io](../packages/vlangio.md) (v)
 
 Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
 
