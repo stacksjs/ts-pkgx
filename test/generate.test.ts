@@ -128,22 +128,27 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
 
   // Helper function to find generated files in multiple possible locations
   function findGeneratedFile(relativePath: string, returnedPath: string, tempDir: string): { path: string, content: string } {
-    // Prioritize test directory over real packages directory
+    // Debug logging to understand path resolution
+    console.error(`DEBUG findGeneratedFile: relativePath=${relativePath}`)
+    console.error(`DEBUG findGeneratedFile: returnedPath=${returnedPath}`)
+    console.error(`DEBUG findGeneratedFile: tempDir=${tempDir}`)
+
+    // ONLY look in test directory, never fall back to production
     const possiblePaths = [
-      // First check if the returned path is in the test directory
-      returnedPath && returnedPath.includes(tempDir) ? returnedPath : null,
-      // Then check if resolving relative to tempDir gives us a test file
-      path.isAbsolute(returnedPath) ? null : path.resolve(tempDir, returnedPath),
-      // Direct path in tempDir
+      // First: if returnedPath is absolute and in test dir, use it
+      path.isAbsolute(returnedPath) && returnedPath.includes(tempDir) ? returnedPath : null,
+      // Second: if returnedPath is relative, resolve it relative to tempDir
+      !path.isAbsolute(returnedPath) ? path.resolve(tempDir, returnedPath) : null,
+      // Third: direct path in tempDir
       path.join(tempDir, relativePath),
-      // Only fall back to whatever the function returned if it's not in test dir
-      returnedPath,
-      // Last resort: default packages directory (should only be used in production)
-      path.join(process.cwd(), 'src', 'packages', relativePath),
     ].filter(Boolean) as string[]
 
+    console.error(`DEBUG findGeneratedFile: possiblePaths=${JSON.stringify(possiblePaths)}`)
+
     for (const testPath of possiblePaths) {
+      console.error(`DEBUG findGeneratedFile: checking ${testPath} (exists: ${fs.existsSync(testPath)})`)
       if (fs.existsSync(testPath)) {
+        console.error(`DEBUG findGeneratedFile: using ${testPath}`)
         return {
           path: testPath,
           content: fs.readFileSync(testPath, 'utf-8'),
@@ -151,9 +156,9 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
       }
     }
 
-    console.error(`File not found in any of these locations:`)
+    console.error(`File not found in any of these test locations:`)
     possiblePaths.forEach(p => console.error(`  - ${p} (exists: ${fs.existsSync(p)})`))
-    throw new Error(`${relativePath} file was not created in any expected location`)
+    throw new Error(`${relativePath} file was not created in any test location`)
   }
 
   describe('generateIndex', () => {
@@ -273,8 +278,7 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
 
     test('should handle packages without aliases', async () => {
       // Create a package without aliases
-      // Use 'noaliascom.ts' filename so guessOriginalDomain converts it back to 'noalias.com'
-      const noAliasPackage = path.join(tempPackagesDir, 'noaliascom.ts')
+      const noAliasPackage = path.join(tempPackagesDir, 'noalias.com.ts')
       const content = `
 export const noaliascomPackage = {
   name: 'No Alias Package' as const,
@@ -306,7 +310,7 @@ export type NoaliascomPackage = typeof noaliascomPackage
 
     test('should filter out aliases that match package name (case-insensitive)', async () => {
       // Create a package with an alias that matches the package name
-      const midnightCommanderFile = path.join(tempPackagesDir, 'midnightcommanderorg.ts')
+      const midnightCommanderFile = path.join(tempPackagesDir, 'midnightcommander.org.ts')
       const midnightCommanderContent = `
 export const midnightCommanderPackage = {
   name: 'Midnight Commander' as const,
@@ -364,7 +368,7 @@ export type MidnightCommanderPackage = typeof midnightCommanderPackage
 
     test('should preserve valid aliases that are different from package name', async () => {
       // Create a package with mix of valid and invalid aliases
-      const gitCryptFile = path.join(tempPackagesDir, 'agwanamegitcrypt.ts')
+      const gitCryptFile = path.join(tempPackagesDir, 'agwa.name-git-crypt.ts')
       const gitCryptContent = `
 export const gitCryptPackage = {
   name: 'git-crypt' as const,
@@ -406,7 +410,7 @@ export type GitCryptPackage = typeof gitCryptPackage
 
     test('should handle packages with no name field gracefully', async () => {
       // Create a package without a name field
-      const noNameFile = path.join(tempPackagesDir, 'nonamecom.ts')
+      const noNameFile = path.join(tempPackagesDir, 'noname.com.ts')
       const noNameContent = `
 export const noNamePackage = {
   domain: 'noname.com' as const,
@@ -441,7 +445,7 @@ export type NoNamePackage = typeof noNamePackage
 
     test('should handle packages with empty name field', async () => {
       // Create a package with empty name field
-      const emptyNameFile = path.join(tempPackagesDir, 'emptynamecom.ts')
+      const emptyNameFile = path.join(tempPackagesDir, 'emptyname.com.ts')
       const emptyNameContent = `
 export const emptyNamePackage = {
   name: '' as const,
@@ -477,7 +481,7 @@ export type EmptyNamePackage = typeof emptyNamePackage
 
     test('should log filtered aliases for debugging', async () => {
       // Create a package with duplicate alias
-      const duplicateAliasFile = path.join(tempPackagesDir, 'duplicatecom.ts')
+      const duplicateAliasFile = path.join(tempPackagesDir, 'duplicate.com.ts')
       const duplicateAliasContent = `
 export const duplicatePackage = {
   name: 'Duplicate Package' as const,
@@ -535,7 +539,7 @@ export type DuplicatePackage = typeof duplicatePackage
 
     test('should handle complex case variations correctly', async () => {
       // Test various case combinations
-      const caseVariationsFile = path.join(tempPackagesDir, 'casevariationscom.ts')
+      const caseVariationsFile = path.join(tempPackagesDir, 'casevariations.com.ts')
       const caseVariationsContent = `
 export const caseVariationsPackage = {
   name: 'CamelCase Package' as const,
@@ -745,7 +749,7 @@ export type CaseVariationsPackage = typeof caseVariationsPackage
 
     test('should handle special characters in package data', async () => {
       // Create package with special characters
-      const specialFile = path.join(tempPackagesDir, 'specialcom.ts')
+      const specialFile = path.join(tempPackagesDir, 'special.com.ts')
       const specialContent = `
 export const specialcomPackage = {
   name: 'Package with quotes and apostrophes' as const,
