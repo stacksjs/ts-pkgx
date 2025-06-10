@@ -2,8 +2,8 @@ name: Update Packages
 
 on:
   schedule:
-    # Run hourly at minute 25
-    - cron: '25 * * * *'
+    # Run hourly at the top of each hour
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
