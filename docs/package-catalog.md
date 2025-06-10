@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-10T19:15:20.909Z
+- **Last Updated**: 2025-06-10T21:16:21.966Z
 
 ## Table of Contents
 
@@ -127,7 +127,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.141 (+398) | `pkgx fly` |
+| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.142 (+399) | `pkgx fly` |
 | **[herokucom](./packages/herokucom.md)** () | CLI for Heroku | heroku | 10.10.0 (+31) | `pkgx heroku` |
 | **[railwayapp](./packages/railwayapp.md)** () | Develop and deploy code with zero configuration | railway | 4.5.3 (+50) | `pkgx railway` |
 
@@ -156,7 +156,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.49.0 (+20) | `pkgx git` |
 | **[neovimio](./packages/neovimio.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** () | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
-| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1452 (+2025) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1453 (+2026) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
@@ -294,7 +294,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ffmpegorg](./packages/ffmpegorg.md)** () | Play, record, convert, and stream audio and video | ffmpeg, ffplay, ffprobe | 7.1.1 (+23) | `pkgx ffmpeg.org` |
 | **[fftworg](./packages/fftworg.md)** () | C routines to compute the Discrete Fourier Transform | fftw-wisdom, fftw-wisdom-to-conf, fftwf-wisdom, ... (+1) | 3.3.10 (+0) | `pkgx fftw` |
 | **[fishshellcom](./packages/fishshellcom.md)** () | User-friendly command-line shell for UNIX-like operating systems | fish, fish_indent, fish_key_reader | 4.0.2 (+10) | `pkgx fish` |
-| **[fliptio](./packages/fliptio.md)** () | Enterprise-ready, GitOps enabled, CloudNative feature management solution | flipt | 1.58.4 (+37) | `pkgx flipt` |
+| **[fliptio](./packages/fliptio.md)** () | Enterprise-ready, GitOps enabled, CloudNative feature management solution | flipt | 1.58.5 (+38) | `pkgx flipt` |
 | **[flitpypaio](./packages/flitpypaio.md)** () | Simplified packaging of Python modules | flit | 3.12.0 (+5) | `pkgx flit` |
 | **[fltkorg](./packages/fltkorg.md)** () | FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development | fluid, fltk-config | 1.4.3 (+5) | `pkgx fltk.org` |
 | **[fluentciio](./packages/fluentciio.md)** () | Set up and run your CI locally or in any CI Provider in a consistent way https://backdropbuild.co... | fluentci | 0.16.5 (+67) | `pkgx fluentci` |
@@ -470,7 +470,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[nmaporg](./packages/nmaporg.md)** () | Port scanning utility for large networks | nmap, ncat, nping | 7.97.0 (+4) | `pkgx nmap.org` |
 | **[numbatdev](./packages/numbatdev.md)** () | A statically typed programming language for scientific computations with first class support for ... | numbat | 1.16.0 (+9) | `pkgx numbat` |
 | **[numpyorg](./packages/numpyorg.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.0 (+17) | `pkgx f2py` |
-| **[nushellsh](./packages/nushellsh.md)** () | Modern shell for the GitHub era | nu | 0.105.0 (+46) | `pkgx nu` |
+| **[nushellsh](./packages/nushellsh.md)** () | Modern shell for the GitHub era | nu | 0.105.1 (+47) | `pkgx nu` |
 | **[oauth2proxygithubio](./packages/oauth2proxygithubio.md)** () | A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more ide... | oauth2-proxy | 7.9.0 (+6) | `pkgx oauth2-proxy` |
 | **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.193 (+177) | `pkgx odigos` |
 | **[ohmyposhdev](./packages/ohmyposhdev.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.6.1 (+287) | `pkgx oh-my-posh` |
