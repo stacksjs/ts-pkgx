@@ -146,10 +146,14 @@ jobs:
           rm -f "$TEMP_JSON_FILE"
 
           # Debug: Show final JSON structure (first 500 chars)
+          echo "=== FETCH STEP DEBUG ==="
           echo "Final JSON structure (truncated):"
           head -c 500 "$TEMP_JSON_FILE" 2>/dev/null || echo "Could not read JSON file"
           echo ""
           echo "JSON file size: $(wc -c < "$TEMP_JSON_FILE" 2>/dev/null || echo "0") bytes"
+          echo "JSON validation result: $(jq empty "$TEMP_JSON_FILE" 2>/dev/null && echo "VALID" || echo "INVALID")"
+          echo "Success field: $(jq -r '.success // "not_found"' "$TEMP_JSON_FILE" 2>/dev/null || echo "jq_failed")"
+          echo "=== END FETCH DEBUG ==="
 
           # Also run without JSON for normal logging (to stderr so it doesn't interfere with JSON)
           echo "Running fetch command again for detailed logging..."
@@ -190,13 +194,35 @@ jobs:
 
           # Create a temporary file to safely handle the JSON data
           FETCH_JSON_FILE=$(mktemp)
-          echo '${{ steps.fetch-packages.outputs.fetch_result }}' > "$FETCH_JSON_FILE"
 
-          # Validate the JSON first
-          if ! jq empty "$FETCH_JSON_FILE" 2>/dev/null; then
-            echo "Invalid JSON in fetch result, using fallback values"
-            echo '{"success":false,"error":"invalid_json","totalUpdated":0,"totalProcessed":0,"updatedPackages":[]}' > "$FETCH_JSON_FILE"
+          # Write the fetch result to the temp file, handling potential issues
+          FETCH_RESULT='${{ steps.fetch-packages.outputs.fetch_result }}'
+
+          # Debug: Check if fetch result exists and show its size
+          echo "=== COMMIT MESSAGE DEBUG ==="
+          echo "Fetch result variable length: ${#FETCH_RESULT}"
+          echo "First 200 chars of fetch result: $(echo "$FETCH_RESULT" | head -c 200 2>/dev/null || echo "empty")"
+          echo "Fetch result ends with: $(echo "$FETCH_RESULT" | tail -c 50 2>/dev/null || echo "empty")"
+
+          if [ -z "$FETCH_RESULT" ] || [ "$FETCH_RESULT" = "" ]; then
+            echo "No fetch result found, using fallback values"
+            echo '{"success":false,"error":"no_fetch_result","totalUpdated":0,"totalProcessed":0,"updatedPackages":[]}' > "$FETCH_JSON_FILE"
+          else
+            echo "$FETCH_RESULT" > "$FETCH_JSON_FILE"
+
+            # Validate the JSON first
+            if ! jq empty "$FETCH_JSON_FILE" 2>/dev/null; then
+              echo "Invalid JSON in fetch result, using fallback values"
+              echo '{"success":false,"error":"invalid_json","totalUpdated":0,"totalProcessed":0,"updatedPackages":[]}' > "$FETCH_JSON_FILE"
+            else
+              echo "Successfully loaded fetch result JSON"
+            fi
           fi
+
+          # Debug: Show what we actually wrote to the temp file
+          echo "Temp file size: $(wc -c < "$FETCH_JSON_FILE" 2>/dev/null || echo "0") bytes"
+          echo "Temp file content (first 200 chars): $(head -c 200 "$FETCH_JSON_FILE" 2>/dev/null || echo "empty")"
+          echo "=== END COMMIT MESSAGE DEBUG ==="
 
           # Extract key values directly from the file using jq with error handling
           FETCH_SUCCESS=$(jq -r '.success // false' "$FETCH_JSON_FILE" 2>/dev/null || echo "false")
