@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 531
 - **Categories**: 13
-- **Last Updated**: 2025-06-10T09:18:24.838Z
+- **Last Updated**: 2025-06-10T13:26:33.881Z
 
 ## Table of Contents
 
@@ -513,7 +513,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[portaudiocom](./packages/portaudiocom.md)** () | PortAudio is a cross-platform, open-source C language library for real-time audio input and output. | - | 19.7.0 (+0) | `pkgx PortAudio` |
 | **[postgrestorg](./packages/postgrestorg.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 13.0.2 (+12) | `pkgx postgrest` |
 | **[precommitcom](./packages/precommitcom.md)** () | A framework for managing and maintaining multi-language pre-commit hooks. | pre-commit | 4.2.0 (+21) | `pkgx pre-commit` |
-| **[prefixdev](./packages/prefixdev.md)** () | Package management made easy | pixi | 0.48.0 (+80) | `pkgx pixi` |
+| **[prefixdev](./packages/prefixdev.md)** () | Package management made easy | pixi | 0.48.1 (+81) | `pkgx pixi` |
 | **[projectcopaceticgithubio](./packages/projectcopaceticgithubio.md)** () | Tool to directly patch container images given the vulnerability scanning results | copa | 0.10.0 (+4) | `pkgx copa` |
 | **[projenio](./packages/projenio.md)** () | Rapidly build modern applications with advanced configuration management | projen | 0.92.10 (+36) | `pkgx projen` |
 | **[projorg](./packages/projorg.md)** () | PROJ - Cartographic Projections and Coordinate Transformations Library | proj | 9.6.2 (+10) | `pkgx proj` |
