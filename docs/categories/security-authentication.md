@@ -6,7 +6,7 @@ Packages related to security & authentication.
 
 ## Packages
 
-### [bitwarden.com](../packages/bitwardencom.md)
+### [bitwarden.com](../packages/bitwardencom.md) (bw)
 
 Secure and free password manager for all of your devices
 

@@ -6,7 +6,7 @@ Packages related to monitoring & observability.
 
 ## Packages
 
-### [sentry.io](../packages/sentryio.md)
+### [sentry.io](../packages/sentryio.md) (sentry-cli)
 
 Command-line utility to interact with Sentry
 

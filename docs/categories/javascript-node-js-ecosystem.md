@@ -6,7 +6,7 @@ Packages related to javascript & node.js ecosystem.
 
 ## Packages
 
-### [angular.dev](../packages/angulardev.md)
+### [angular.dev](../packages/angulardev.md) (ng)
 
 CLI tool for Angular
 
@@ -16,7 +16,7 @@ CLI tool for Angular
 
 ---
 
-### [bun.sh](../packages/bunsh.md)
+### [bun.sh](../packages/bunsh.md) (bun)
 
 Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
 
@@ -36,7 +36,7 @@ The 1.x line is frozen - features and bugfixes now happen on https://github.com/
 
 ---
 
-### [deno.land](../packages/denoland.md)
+### [deno.land](../packages/denoland.md) (deno)
 
 A modern runtime for JavaScript and TypeScript.
 
@@ -76,7 +76,7 @@ the package manager for JavaScript
 
 ---
 
-### [pnpm.io](../packages/pnpmio.md)
+### [pnpm.io](../packages/pnpmio.md) (pnp)
 
 Fast, disk space efficient package manager
 
@@ -86,7 +86,7 @@ Fast, disk space efficient package manager
 
 ---
 
-### [vitejs.dev](../packages/vitejsdev.md)
+### [vitejs.dev](../packages/vitejsdev.md) (vite)
 
 Next generation frontend tooling. It's fast!
 
@@ -96,7 +96,7 @@ Next generation frontend tooling. It's fast!
 
 ---
 
-### [yarnpkg.com](../packages/yarnpkgcom.md)
+### [yarnpkg.com](../packages/yarnpkgcom.md) (yarn)
 
 📦🐈 Active development trunk for Yarn ⚒
 

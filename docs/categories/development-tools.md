@@ -6,7 +6,7 @@ Packages related to development tools.
 
 ## Packages
 
-### [git/scm.org](../packages/gitscmorg.md)
+### [git/scm.org](../packages/gitscmorg.md) (git)
 
 Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
 
@@ -16,7 +16,7 @@ Git Source Code Mirror - This is a publish-only repository but pull requests can
 
 ---
 
-### [neovim.io](../packages/neovimio.md)
+### [neovim.io](../packages/neovimio.md) (nvim)
 
 Ambitious Vim-fork focused on extensibility and agility
 
@@ -26,7 +26,7 @@ Ambitious Vim-fork focused on extensibility and agility
 
 ---
 
-### [prettier.io](../packages/prettierio.md)
+### [prettier.io](../packages/prettierio.md) (prettier)
 
 Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 

@@ -6,7 +6,7 @@ Database systems and data storage solutions.
 
 ## Packages
 
-### [duckdb.org](../packages/duckdborg.md)
+### [duckdb.org](../packages/duckdborg.md) (duckdb)
 
 DuckDB is an analytical in-process SQL database management system
 
@@ -46,7 +46,7 @@ Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirr
 
 ---
 
-### [redis.io](../packages/redisio.md)
+### [redis.io](../packages/redisio.md) (redis)
 
 Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps.
 
@@ -56,7 +56,7 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 
 ---
 
-### [sqlite.org](../packages/sqliteorg.md)
+### [sqlite.org](../packages/sqliteorg.md) (sqlite3)
 
 Official Git mirror of the SQLite source tree
 
@@ -66,7 +66,7 @@ Official Git mirror of the SQLite source tree
 
 ---
 
-### [surrealdb.com](../packages/surrealdbcom.md)
+### [surrealdb.com](../packages/surrealdbcom.md) (surreal)
 
 A scalable, distributed, collaborative, document-graph database, for the realtime web
 
@@ -76,7 +76,7 @@ A scalable, distributed, collaborative, document-graph database, for the realtim
 
 ---
 
-### [valkey.io](../packages/valkeyio.md)
+### [valkey.io](../packages/valkeyio.md) (valkey)
 
 A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
 

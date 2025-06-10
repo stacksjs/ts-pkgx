@@ -6,7 +6,7 @@ Popular programming languages and their runtimes available through pkgx.
 
 ## Packages
 
-### [crystal/lang.org](../packages/crystallangorg.md)
+### [crystal/lang.org](../packages/crystallangorg.md) (crystal)
 
 Fast and statically typed, compiled language with Ruby-like syntax
 
@@ -16,7 +16,7 @@ Fast and statically typed, compiled language with Ruby-like syntax
 
 ---
 
-### [dart.dev](../packages/dartdev.md)
+### [dart.dev](../packages/dartdev.md) (dart)
 
 The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
 
@@ -26,7 +26,7 @@ The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries,
 
 ---
 
-### [deno.land](../packages/denoland.md)
+### [deno.land](../packages/denoland.md) (deno)
 
 A modern runtime for JavaScript and TypeScript.
 
@@ -56,7 +56,7 @@ Programming language for highly scalable real-time systems
 
 ---
 
-### [gleam.run](../packages/gleamrun.md)
+### [gleam.run](../packages/gleamrun.md) (gleam)
 
 ⭐️ A friendly language for building type-safe, scalable systems!
 
@@ -86,7 +86,7 @@ Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC'
 
 ---
 
-### [julialang.org](../packages/julialangorg.md)
+### [julialang.org](../packages/julialangorg.md) (julia)
 
 The Julia Programming Language
 
@@ -146,7 +146,7 @@ General-purpose scripting language
 
 ---
 
-### [python.org](../packages/pythonorg.md)
+### [python.org](../packages/pythonorg.md) (python)
 
 The Python programming language
 
@@ -166,7 +166,7 @@ Powerful, clean, object-oriented scripting language
 
 ---
 
-### [rust/lang.org](../packages/rustlangorg.md)
+### [rust/lang.org](../packages/rustlangorg.md) (rust)
 
 Empowering everyone to build reliable and efficient software.
 
@@ -186,7 +186,7 @@ The Scala 3 compiler, also known as Dotty.
 
 ---
 
-### [swift.org](../packages/swiftorg.md)
+### [swift.org](../packages/swiftorg.md) (swift)
 
 The Swift Programming Language
 
@@ -196,7 +196,7 @@ The Swift Programming Language
 
 ---
 
-### [typescriptlang.org](../packages/typescriptlangorg.md)
+### [typescriptlang.org](../packages/typescriptlangorg.md) (tsc)
 
 TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
 
@@ -216,7 +216,7 @@ Simple, fast, safe, compiled language for developing maintainable software. Comp
 
 ---
 
-### [ziglang.org](../packages/ziglangorg.md)
+### [ziglang.org](../packages/ziglangorg.md) (zig)
 
 General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
 
