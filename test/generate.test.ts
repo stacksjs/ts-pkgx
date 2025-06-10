@@ -129,14 +129,20 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
   // Helper function to find generated files in test directory only
   function findGeneratedFile(relativePath: string, returnedPath: string, tempDir: string): { path: string, content: string } {
     // ONLY look in test directory, never fall back to production
-    const possiblePaths = [
-      // First: if returnedPath is absolute and in test dir, use it
-      path.isAbsolute(returnedPath) && returnedPath.includes(tempDir) ? returnedPath : null,
-      // Second: if returnedPath is relative, resolve it relative to tempDir
-      !path.isAbsolute(returnedPath) ? path.resolve(tempDir, returnedPath) : null,
-      // Third: direct path in tempDir
-      path.join(tempDir, relativePath),
-    ].filter(Boolean) as string[]
+    const possiblePaths = []
+
+    // If returnedPath is absolute and in test dir, use it
+    if (path.isAbsolute(returnedPath) && returnedPath.includes(tempDir)) {
+      possiblePaths.push(returnedPath)
+    }
+
+    // If returnedPath is relative, resolve it relative to tempDir
+    if (!path.isAbsolute(returnedPath)) {
+      possiblePaths.push(path.resolve(tempDir, returnedPath))
+    }
+
+    // Always try direct path in tempDir using relativePath as fallback
+    possiblePaths.push(path.join(tempDir, relativePath))
 
     for (const testPath of possiblePaths) {
       if (fs.existsSync(testPath)) {
@@ -145,6 +151,15 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
           content: fs.readFileSync(testPath, 'utf-8'),
         }
       }
+    }
+
+    // List all files in the tempDir for debugging
+    try {
+      const files = fs.readdirSync(tempDir)
+      console.error(`DEBUG: files in tempDir: ${files.join(', ')}`)
+    }
+    catch (err) {
+      console.error(`DEBUG: could not read tempDir: ${err}`)
     }
 
     console.error(`File not found in any of these test locations:`)
@@ -244,6 +259,21 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
       // Should handle nested paths properly in the interface
       expect(content).toContain('agwa_name_git_crypt')
     })
+
+    test('should handle relative path return values (CI scenario)', async () => {
+      // First ensure the file exists by running the actual generation
+      const actualPath = await generateIndex(tempPackagesDir)
+      expect(actualPath).toBeDefined()
+
+      // Simulate CI behavior where relative paths are returned
+      const relativePath = 'index.ts'
+
+      const { path: resolvedIndexPath, content } = findGeneratedFile('index.ts', relativePath, tempPackagesDir)
+
+      expect(fs.existsSync(resolvedIndexPath)).toBe(true)
+      expect(content).toContain('export interface Pantry')
+      expect(content).toContain('export const pantry: Pantry')
+    })
   })
 
   describe('generateAliases', () => {
@@ -265,6 +295,20 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
 
       // Should use single quotes
       expect(content).toMatch(/'[^']*': '[^']*'/g)
+    })
+
+    test('should handle relative path return values for aliases (CI scenario)', async () => {
+      // First ensure the file exists by running the actual generation
+      const actualPath = await generateAliases(tempPackagesDir)
+      expect(actualPath).toBeDefined()
+
+      // Simulate CI behavior where relative paths are returned
+      const relativePath = 'aliases.ts'
+
+      const { path: resolvedAliasesPath, content } = findGeneratedFile('aliases.ts', relativePath, tempPackagesDir)
+
+      expect(fs.existsSync(resolvedAliasesPath)).toBe(true)
+      expect(content).toContain('export const aliases: Record<string, string>')
     })
 
     test('should handle packages without aliases', async () => {
