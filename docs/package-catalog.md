@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 531
 - **Categories**: 13
-- **Last Updated**: 2025-06-10T05:56:47.827Z
+- **Last Updated**: 2025-06-10T07:17:30.394Z
 
 ## Table of Contents
 
@@ -221,7 +221,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[boostorg](./packages/boostorg.md)** () | Super-project for modularized Boost | - | 1.88.0 (+7) | `pkgx boost.org` |
 | **[borepub](./packages/borepub.md)** () | Modern, simple TCP tunnel in Rust that exposes local ports to a remote server | bore | 0.6.0 (+4) | `pkgx bore` |
 | **[borgbackuporg](./packages/borgbackuporg.md)** () | Deduplicating archiver with compression and authenticated encryption. | borg, borgfs | 1.4.1 (+0) | `pkgx borg` |
-| **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.5 (+16) | `pkgx browser-use.com` |
+| **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.6 (+17) | `pkgx browser-use.com` |
 | **[bufbuild](./packages/bufbuild.md)** () | The best way of working with Protocol Buffers. | buf | 1.54.0 (+40) | `pkgx buf` |
 | **[buildpacksio](./packages/buildpacksio.md)** () | CLI for building apps using Cloud Native Buildpacks | pack | 0.37.0 (+11) | `pkgx pack` |
 | **[bytebasecom](./packages/bytebasecom.md)** () | World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engin... | bytebase | 3.7.0 (+30) | `pkgx bytebase` |
@@ -247,7 +247,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cocogittoio](./packages/cocogittoio.md)** () | The Conventional Commits toolbox | cog | 6.3.0 (+6) | `pkgx cog` |
 | **[codercom](./packages/codercom.md)** () | Tool for provisioning self-hosted development environments with Terraform | coder | 2.23.0 (+67) | `pkgx coder` |
 | **[cointopsh](./packages/cointopsh.md)** () | A fast and lightweight interactive terminal based UI application for tracking cryptocurrencies 🚀 | cointop | 1.6.10 (+0) | `pkgx cointop` |
-| **[conftestdev](./packages/conftestdev.md)** () | Write tests against structured configuration data using the Open Policy Agent Rego query language | conftest | 0.61.1 (+17) | `pkgx conftest` |
+| **[conftestdev](./packages/conftestdev.md)** () | Write tests against structured configuration data using the Open Policy Agent Rego query language | conftest | 0.61.2 (+18) | `pkgx conftest` |
 | **[convcogithubio](./packages/convcogithubio.md)** () | Conventional commits, changelog, versioning, validation | convco | 0.6.2 (+8) | `pkgx convco` |
 | **[corednsio](./packages/corednsio.md)** () | CoreDNS is a DNS server that chains plugins | coredns | 1.12.2 (+7) | `pkgx coredns` |
 | **[cpanminus](./packages/cpanminus.md)** () | cpanminus - get, unpack, build and install modules from CPAN | cpanm | 1.7048.0 (+2) | `pkgx cpanm` |

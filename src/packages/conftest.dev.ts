@@ -3,7 +3,7 @@
  *
  * @domain `conftest.dev`
  * @programs `conftest`
- * @version `0.61.1` (18 versions available)
+ * @version `0.61.2` (19 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/conftest-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) conftest`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "conftest"
  * console.log(pkg.description) // "Write tests against structured configuration da..."
  * console.log(pkg.programs)    // ["conftest"]
- * console.log(pkg.versions[0]) // "0.61.1" (latest)
+ * console.log(pkg.versions[0]) // "0.61.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/conftest-dev.md
@@ -62,6 +62,7 @@ export const conftestPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.61.2',
     '0.61.1',
     '0.61.0',
     '0.60.0',
