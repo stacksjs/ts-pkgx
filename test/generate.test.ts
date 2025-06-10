@@ -74,8 +74,25 @@ describe('Generate Module', () => {
 
     // Create mock package files
     Object.entries(mockPackages).forEach(([domain, pkg]) => {
-      const fileName = domain.replace(/\./g, '').replace(/\//g, '-')
+      // Use the actual domain as the filename (like the real repo does)
+      const fileName = domain.replace(/\//g, '-')
       const filePath = path.join(tempPackagesDir, `${fileName}.ts`)
+
+      // Create variable name based on the pattern from real files
+      let varNameBase: string
+      if (domain === 'nodejs.org') {
+        varNameBase = 'node'
+      }
+      else if (domain === 'python.org') {
+        varNameBase = 'python'
+      }
+      else if (domain === 'agwa.name/git-crypt') {
+        varNameBase = 'gitcrypt'
+      }
+      else {
+        // Fallback for other domains
+        varNameBase = domain.replace(/\./g, '').replace(/\//g, '')
+      }
 
       // Create a simple mock TypeScript file
       const content = `
@@ -83,7 +100,7 @@ describe('Generate Module', () => {
  * ${pkg.description}
  */
 
-export const ${fileName.replace(/-/g, '')}Package = {
+export const ${varNameBase}Package = {
   name: '${pkg.name}' as const,
   domain: '${pkg.domain}' as const,
   description: '${pkg.description}' as const,
@@ -96,7 +113,7 @@ export const ${fileName.replace(/-/g, '')}Package = {
   fullPath: '${pkg.fullPath}' as const,
 }
 
-export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.replace(/-/g, '').slice(1)}Package = typeof ${fileName.replace(/-/g, '')}Package
+export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package = typeof ${varNameBase}Package
 `
       fs.writeFileSync(filePath, content)
     })
@@ -155,8 +172,8 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
 
       // Should contain imports (using named imports, not namespace imports)
       expect(content).toContain('import {')
-      expect(content).toContain('from \'./nodejsorg')
-      expect(content).toContain('from \'./pythonorg')
+      expect(content).toContain('from \'./nodejs.org')
+      expect(content).toContain('from \'./python.org')
 
       // Should contain interface definition
       expect(content).toContain('export interface Pantry')
@@ -213,35 +230,16 @@ export type ${fileName.replace(/-/g, '').charAt(0).toUpperCase()}${fileName.repl
     })
 
     test('should handle nested package paths', async () => {
-      // Add a nested package
-      const nestedPackagePath = path.join(tempPackagesDir, 'agwaname-git-crypt.ts')
-      const nestedContent = `
-export const agwanameGitCryptPackage = {
-  name: 'git-crypt' as const,
-  domain: 'agwa.name/git-crypt' as const,
-  description: 'Enable transparent encryption/decryption of files in a git repo' as const,
-  installCommand: 'pkgx agwa.name/git-crypt' as const,
-  programs: ['git-crypt'] as const,
-  companions: [] as const,
-  dependencies: [] as const,
-  versions: ['0.7.0'] as const,
-  aliases: ['git-crypt'] as const,
-  fullPath: 'agwa.name/git-crypt' as const,
-}
-
-export type AgwanameGitCryptPackage = typeof agwanameGitCryptPackage
-`
-      fs.writeFileSync(nestedPackagePath, nestedContent)
-
+      // The agwa.name/git-crypt package is already created by mockPackages setup
       const indexPath = await generateIndex(tempPackagesDir)
 
       const { content } = findGeneratedFile('index.ts', indexPath!, tempPackagesDir)
 
       // Should contain import for the nested package
-      expect(content).toContain('from \'./agwaname-git-crypt\'')
+      expect(content).toContain('from \'./agwa.name-git-crypt\'')
 
-      // Should handle nested paths properly
-      expect(content).toContain('agwaname_git_crypt')
+      // Should handle nested paths properly in the interface
+      expect(content).toContain('agwa_name_git_crypt')
     })
   })
 
@@ -816,10 +814,10 @@ export type SpecialcomPackage = typeof specialcomPackage
       const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
 
       // Both should reference the same packages
-      expect(indexContent).toContain('nodejsorg')
+      expect(indexContent).toContain('nodejs_org')
       expect(aliasesContent).toContain('node')
 
-      expect(indexContent).toContain('pythonorg')
+      expect(indexContent).toContain('python_org')
       expect(aliasesContent).toContain('python')
     })
   })
