@@ -1,7 +1,7 @@
 {
   "name": "ts-pkgx",
   "type": "module",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A library & CLI for managing packages",
   "author": "Chris Breuer <chris@stacksjs.org>",
   "license": "MIT",
@@ -13,7 +13,16 @@
   "bugs": {
     "url": "https://github.com/stacksjs/ts-pkgx/issues"
   },
-  "keywords": ["pkgx", "pantry", "homebrew", "typescript", "bun", "package", "cli", "library"],
+  "keywords": [
+    "pkgx",
+    "pantry",
+    "homebrew",
+    "typescript",
+    "bun",
+    "package",
+    "cli",
+    "library"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -28,7 +37,10 @@
   "bin": {
     "pkgx-tools": "./dist/bin/cli.js"
   },
-  "files": ["README.md", "dist"],
+  "files": [
+    "README.md",
+    "dist"
+  ],
   "scripts": {
     "build": "bun build.ts && bun run compile",
     "compile": "bun build ./bin/cli.ts --compile --minify --outfile bin/pkgx-tools",
