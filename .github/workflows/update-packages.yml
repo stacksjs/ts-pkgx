@@ -293,43 +293,75 @@ jobs:
           if [ "$TOTAL_UPDATED" -eq 0 ]; then
             COMMIT_MSG="chore: update packages (no changes detected)"
             SHOULD_COMMIT="false"
-          elif [ "$TOTAL_UPDATED" -le 3 ]; then
+          elif [ "$TOTAL_UPDATED" -le 4 ]; then
             # For small numbers, list all packages
-            PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r')
+            PACKAGE_LIST=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-$TOTAL_UPDATED | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r')
             if [ -n "$PACKAGE_LIST" ] && [ "$PACKAGE_LIST" != "" ] && [ "$PACKAGE_LIST" != " " ]; then
               COMMIT_MSG="chore: update $PACKAGE_LIST"
             else
               COMMIT_MSG="chore: update $TOTAL_UPDATED packages"
             fi
             SHOULD_COMMIT="true"
-          elif [ "$TOTAL_UPDATED" -le 8 ]; then
-            # For medium numbers, list first few and count the rest
-            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-4 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r')
-            REMAINING=$((TOTAL_UPDATED - 4))
-            if [ -n "$FIRST_PACKAGES" ] && [ "$FIRST_PACKAGES" != "" ] && [ "$FIRST_PACKAGES" != " " ]; then
-              if [ "$REMAINING" -eq 1 ]; then
-                COMMIT_MSG="chore: update $FIRST_PACKAGES and 1 other dep"
-              else
-                COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
-              fi
-            else
-              COMMIT_MSG="chore: update $TOTAL_UPDATED packages"
-            fi
-            SHOULD_COMMIT="true"
           else
-            # For large numbers, list first few and count the rest
-            FIRST_PACKAGES=$(echo "$UPDATED_PACKAGES" | cut -d' ' -f1-3 | tr ' ' ',' | sed 's/,/, /g' | sed 's/, $//' | tr -d '\n\r')
-            REMAINING=$((TOTAL_UPDATED - 3))
-            if [ -n "$FIRST_PACKAGES" ] && [ "$FIRST_PACKAGES" != "" ] && [ "$FIRST_PACKAGES" != " " ]; then
-              COMMIT_MSG="chore: update $FIRST_PACKAGES and $REMAINING other deps"
+            # For larger numbers, calculate how many we can fit in ~72 chars total
+            # "chore: update " = 14 chars, " and X other deps" = ~15 chars, so ~43 chars for package names
+            COMMIT_PREFIX="chore: update "
+            MAX_PACKAGE_CHARS=43
+
+            # Build package list up to the character limit
+            PACKAGE_LIST=""
+            PACKAGE_COUNT=0
+            CURRENT_LENGTH=0
+
+            for pkg in $UPDATED_PACKAGES; do
+              if [ -z "$pkg" ] || [ "$pkg" = "" ]; then
+                continue
+              fi
+
+              # Calculate length if we add this package
+              if [ -z "$PACKAGE_LIST" ]; then
+                NEW_LENGTH=${#pkg}
+              else
+                NEW_LENGTH=$((CURRENT_LENGTH + 2 + ${#pkg}))  # +2 for ", "
+              fi
+
+              # Stop if adding this package would exceed our limit
+              if [ $NEW_LENGTH -gt $MAX_PACKAGE_CHARS ]; then
+                break
+              fi
+
+              # Add the package
+              if [ -z "$PACKAGE_LIST" ]; then
+                PACKAGE_LIST="$pkg"
+              else
+                PACKAGE_LIST="$PACKAGE_LIST, $pkg"
+              fi
+
+              CURRENT_LENGTH=$NEW_LENGTH
+              PACKAGE_COUNT=$((PACKAGE_COUNT + 1))
+            done
+
+            # Calculate remaining packages
+            REMAINING=$((TOTAL_UPDATED - PACKAGE_COUNT))
+
+            if [ -n "$PACKAGE_LIST" ] && [ "$PACKAGE_LIST" != "" ] && [ "$REMAINING" -gt 0 ]; then
+              if [ "$REMAINING" -eq 1 ]; then
+                COMMIT_MSG="chore: update $PACKAGE_LIST and 1 other dep"
+              else
+                COMMIT_MSG="chore: update $PACKAGE_LIST and $REMAINING other deps"
+              fi
+            elif [ -n "$PACKAGE_LIST" ] && [ "$PACKAGE_LIST" != "" ]; then
+              # All packages fit, no "and X other" needed
+              COMMIT_MSG="chore: update $PACKAGE_LIST"
             else
+              # Fallback if package list is empty
               COMMIT_MSG="chore: update $TOTAL_UPDATED packages"
             fi
             SHOULD_COMMIT="true"
           fi
 
-          # Sanitize commit message and ensure it's not too long
-          COMMIT_MSG=$(echo "$COMMIT_MSG" | tr -d '\n\r\0' | sed 's/[[:cntrl:]]//g' | cut -c1-100)
+          # Sanitize commit message and ensure it's not too long (GitHub limit is 72 chars for subject)
+          COMMIT_MSG=$(echo "$COMMIT_MSG" | tr -d '\n\r\0' | sed 's/[[:cntrl:]]//g' | cut -c1-72)
 
           # Set outputs
           echo "commit_message=$COMMIT_MSG" >> $GITHUB_OUTPUT
