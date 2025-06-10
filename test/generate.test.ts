@@ -128,12 +128,19 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
 
   // Helper function to find generated files in multiple possible locations
   function findGeneratedFile(relativePath: string, returnedPath: string, tempDir: string): { path: string, content: string } {
+    // Prioritize test directory over real packages directory
     const possiblePaths = [
-      returnedPath, // Whatever the function returned
-      path.isAbsolute(returnedPath) ? returnedPath : path.resolve(tempDir, returnedPath), // Resolved relative to tempDir
-      path.join(tempDir, relativePath), // Direct path in tempDir
-      path.join(process.cwd(), 'src', 'packages', relativePath), // Default packages directory
-    ]
+      // First check if the returned path is in the test directory
+      returnedPath && returnedPath.includes(tempDir) ? returnedPath : null,
+      // Then check if resolving relative to tempDir gives us a test file
+      path.isAbsolute(returnedPath) ? null : path.resolve(tempDir, returnedPath),
+      // Direct path in tempDir
+      path.join(tempDir, relativePath),
+      // Only fall back to whatever the function returned if it's not in test dir
+      returnedPath,
+      // Last resort: default packages directory (should only be used in production)
+      path.join(process.cwd(), 'src', 'packages', relativePath),
+    ].filter(Boolean) as string[]
 
     for (const testPath of possiblePaths) {
       if (fs.existsSync(testPath)) {
