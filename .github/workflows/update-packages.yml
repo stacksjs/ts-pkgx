@@ -184,12 +184,13 @@ jobs:
           echo "Total updated: $(jq -r '.totalUpdated // "not_found"' "$TEMP_JSON_FILE" 2>/dev/null || echo "jq_failed")"
           echo "=== END FETCH DEBUG ==="
 
-          # Use the file content for GitHub output with a unique delimiter
-          DELIMITER="FETCH_RESULT_$(date +%s)_$$"
-          echo "fetch_result<<$DELIMITER" >> $GITHUB_OUTPUT
-          # Ensure the JSON is properly formatted and doesn't contain problematic characters
-          cat "$TEMP_JSON_FILE" | tr -d '\0' >> $GITHUB_OUTPUT
-          echo "$DELIMITER" >> $GITHUB_OUTPUT
+          # Use the file content for GitHub output with proper delimiter
+          DELIMITER="EOF_FETCH_RESULT"
+          {
+            echo "fetch_result<<$DELIMITER"
+            cat "$TEMP_JSON_FILE"
+            echo "$DELIMITER"
+          } >> $GITHUB_OUTPUT
 
           # Clean up temp file
           rm -f "$TEMP_JSON_FILE"
