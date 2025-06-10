@@ -25,21 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 13 versions</summary>
+<summary>Show all 14 versions</summary>
 
-- `1.10.1`, `1.10.0`, `1.9.7`, `1.9.6`, `1.9.5`
-- `1.9.4`, `1.9.3`, `1.9.2`, `1.9.1`, `1.9.0`
-- `1.8.4`, `1.8.3`, `1.8.2`
+- `1.10.2`, `1.10.1`, `1.10.0`, `1.9.7`, `1.9.6`
+- `1.9.5`, `1.9.4`, `1.9.3`, `1.9.2`, `1.9.1`
+- `1.9.0`, `1.8.4`, `1.8.3`, `1.8.2`
 
 </details>
 
-**Latest Version**: `1.10.1`
+**Latest Version**: `1.10.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +nomadproject.io@1.10.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +nomadproject.io@1.10.2 -- $SHELL -i
 ```
 
 ## Usage Examples

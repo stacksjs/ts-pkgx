@@ -91,6 +91,7 @@ import { charmshPackage } from './charm.sh'
 import { checkovPackage } from './checkov.io'
 import { chezmoiPackage } from './chezmoi.io'
 import { chiarkgreenendorgukPackage } from './chiark.greenend.org.uk'
+import { chompPackage } from './chompbuild.com'
 import { chromedriverchromiumorgPackage } from './chromedriver.chromium.org'
 import { ciliumioPackage } from './cilium.io'
 import { circleciPackage } from './circleci.com'
@@ -960,6 +961,7 @@ export interface Pantry {
   checkov_io: typeof checkovPackage
   chezmoi_io: typeof chezmoiPackage
   chiark_greenend_org_uk: typeof chiarkgreenendorgukPackage
+  chompbuild_com: typeof chompPackage
   chromedriver_chromium_org: typeof chromedriverchromiumorgPackage
   cilium_io: typeof ciliumioPackage
   circleci_com: typeof circleciPackage
@@ -1832,6 +1834,7 @@ export const pantry: Pantry = {
   checkov_io: checkovPackage,
   chezmoi_io: chezmoiPackage,
   chiark_greenend_org_uk: chiarkgreenendorgukPackage,
+  chompbuild_com: chompPackage,
   chromedriver_chromium_org: chromedriverchromiumorgPackage,
   cilium_io: ciliumioPackage,
   circleci_com: circleciPackage,

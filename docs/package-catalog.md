@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 531+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 532+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 531
+- **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-10T17:19:56.757Z
+- **Last Updated**: 2025-06-10T19:15:20.909Z
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [CLI Tools & Utilities](#cli-tools-utilities) (2 packages)
 - [Web Servers & Proxies](#web-servers-proxies) (2 packages)
 - [Testing & Quality Assurance](#testing-quality-assurance) (1 packages)
-- [Other Utilities](#other-utilities) (463 packages)
+- [Other Utilities](#other-utilities) (464 packages)
 
 ## Programming Languages
 
@@ -116,7 +116,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[consulio](./packages/consulio.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.21.1 (+10) | `pkgx consul` |
 | **[helmsh](./packages/helmsh.md)** () | The Kubernetes Package Manager | helm | 3.18.2 (+32) | `pkgx helm` |
 | **[istioio](./packages/istioio.md)** () | Connect, secure, control, and observe services. | istioctl | 1.26.1 (+40) | `pkgx istioctl` |
-| **[nomadprojectio](./packages/nomadprojectio.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.10.1 (+12) | `pkgx nomad` |
+| **[nomadprojectio](./packages/nomadprojectio.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.10.2 (+13) | `pkgx nomad` |
 | **[podmanio](./packages/podmanio.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.1 (+38) | `pkgx podman` |
 | **[terraformio](./packages/terraformio.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.12.1 (+73) | `pkgx terraform` |
 | **[traefikio](./packages/traefikio.md)** () | The Cloud Native Application Proxy | traefik | 3.4.1 (+57) | `pkgx traefik` |
@@ -156,7 +156,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.49.0 (+20) | `pkgx git` |
 | **[neovimio](./packages/neovimio.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** () | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
-| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1446 (+2019) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1452 (+2025) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
@@ -186,7 +186,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Other Utilities
 
-*463 packages in this category*
+*464 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -237,6 +237,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[changiedev](./packages/changiedev.md)** () | Automated changelog tool for preparing releases with lots of customization options | changie | 1.22.0 (+7) | `pkgx changie` |
 | **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.439 (+473) | `pkgx checkov` |
 | **[chezmoiio](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.6 (+75) | `pkgx chezmoi` |
+| **[chompbuildcom](./packages/chompbuildcom.md)** () | 'JS Make' - parallel task runner for the frontend ecosystem with a JS extension system. | chomp | 0.2.23 (+0) | `pkgx chomp` |
 | **[circlecicom](./packages/circlecicom.md)** () | Enables you to reproduce the CircleCI environment locally | circleci | 0.1.32367 (+56) | `pkgx circleci` |
 | **[cligithubcom](./packages/cligithubcom.md)** () | GitHub’s official command line tool | gh | 2.74.1 (+76) | `pkgx gh` |
 | **[clisporg](./packages/clisporg.md)** () | GNU CLISP, a Common Lisp implementation | clisp | 2.49.92 (+0) | `pkgx clisp` |
@@ -469,7 +470,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[nmaporg](./packages/nmaporg.md)** () | Port scanning utility for large networks | nmap, ncat, nping | 7.97.0 (+4) | `pkgx nmap.org` |
 | **[numbatdev](./packages/numbatdev.md)** () | A statically typed programming language for scientific computations with first class support for ... | numbat | 1.16.0 (+9) | `pkgx numbat` |
 | **[numpyorg](./packages/numpyorg.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.0 (+17) | `pkgx f2py` |
-| **[nushellsh](./packages/nushellsh.md)** () | Modern shell for the GitHub era | nu | 0.104.1 (+45) | `pkgx nu` |
+| **[nushellsh](./packages/nushellsh.md)** () | Modern shell for the GitHub era | nu | 0.105.0 (+46) | `pkgx nu` |
 | **[oauth2proxygithubio](./packages/oauth2proxygithubio.md)** () | A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more ide... | oauth2-proxy | 7.9.0 (+6) | `pkgx oauth2-proxy` |
 | **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.193 (+177) | `pkgx odigos` |
 | **[ohmyposhdev](./packages/ohmyposhdev.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.6.1 (+287) | `pkgx oh-my-posh` |
