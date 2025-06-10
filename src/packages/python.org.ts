@@ -3,7 +3,7 @@
  *
  * @domain `python.org`
  * @programs `python`, `python{{ version.major }}`, `python{{ version.marketing }}`
- * @version `3.13.3` (145 versions available)
+ * @version `3.13.4` (150 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/python-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +python.org -- $SHELL -i`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "python"
  * console.log(pkg.description) // "The Python programming language"
  * console.log(pkg.programs)    // ["python", "python{{ version.major }}", ...]
- * console.log(pkg.versions[0]) // "3.13.3" (latest)
+ * console.log(pkg.versions[0]) // "3.13.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/python-org.md
@@ -88,10 +88,12 @@ export const pythonPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.13.4',
     '3.13.3',
     '3.13.2',
     '3.13.1',
     '3.13.0',
+    '3.12.11',
     '3.12.10',
     '3.12.9',
     '3.12.8',
@@ -103,6 +105,7 @@ export const pythonPackage = {
     '3.12.2',
     '3.12.1',
     '3.12.0',
+    '3.11.13',
     '3.11.12',
     '3.11.11',
     '3.11.10',
@@ -116,6 +119,7 @@ export const pythonPackage = {
     '3.11.2',
     '3.11.1',
     '3.11.0',
+    '3.10.18',
     '3.10.17',
     '3.10.16',
     '3.10.15',
@@ -133,6 +137,7 @@ export const pythonPackage = {
     '3.10.2',
     '3.10.1',
     '3.10.0',
+    '3.9.23',
     '3.9.22',
     '3.9.21',
     '3.9.20',

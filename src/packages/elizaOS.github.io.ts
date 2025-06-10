@@ -3,13 +3,13 @@
  *
  * @domain `elizaOS.github.io`
  * @programs `eliza`
- * @version `0.25.19` (6 versions available)
+ * @version `1.0.8` (10 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/elizaOS-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) eliza`
  * @name `elizaOS`
  * @aliases `eliza`, `elizaos`
- * @dependencies `python.org>=2.7`, `nodejs.org~23.3`, `pnpm.io`
+ * @dependencies `python.org>=2.7`, `nodejs.org~23.3`, `pnpm.io`, ... (+1 more)
  * @companions `git-scm.org`, `ffmpeg.org`
  *
  * @example
@@ -24,7 +24,7 @@
  * console.log(pkg.name)        // "elizaOS"
  * console.log(pkg.description) // "Autonomous agents for everyone"
  * console.log(pkg.programs)    // ["eliza"]
- * console.log(pkg.versions[0]) // "0.25.19" (latest)
+ * console.log(pkg.versions[0]) // "1.0.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/elizaOS-github-io.md
@@ -74,12 +74,17 @@ export const elizaPackage = {
     'python.org>=2.7',
     'nodejs.org~23.3',
     'pnpm.io',
+    'bun.sh^1.2',
   ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.0.8',
+    '1.0.7',
+    '1.0.6',
+    '1.0.5',
     '0.25.19',
     '0.25.9',
     '0.25.8',

@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `mvnDebug`
 - `mvnyjp`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mvn`
-
 ## Available Versions
 
 <details>

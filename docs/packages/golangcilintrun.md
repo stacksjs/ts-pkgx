@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `golangci-lint`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `golangci-lint`
-
 ## Available Versions
 
 <details>

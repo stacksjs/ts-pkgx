@@ -3,7 +3,7 @@
  *
  * @domain `vapoursynth.com`
  * @programs `vspipe`
- * @version `71.0.0` (8 versions available)
+ * @version `72.0.0` (9 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vapoursynth-com.md
  *
  * @install `sh <(curl https://pkgx.sh) vspipe`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "vspipe"
  * console.log(pkg.description) // "A video processing framework with simplicity in..."
  * console.log(pkg.programs)    // ["vspipe"]
- * console.log(pkg.versions[0]) // "71.0.0" (latest)
+ * console.log(pkg.versions[0]) // "72.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/vapoursynth-com.md
@@ -72,6 +72,7 @@ export const vspipePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '72.0.0',
     '71.0.0',
     '70.0.0',
     '69.0.0',

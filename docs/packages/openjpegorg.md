@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `opj_decompress`
 - `opj_dump`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `opj`
-
 ## Available Versions
 
 <details>

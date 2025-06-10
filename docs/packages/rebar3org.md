@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `rebar3`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `rebar3`
-
 ## Available Versions
 
 <details>

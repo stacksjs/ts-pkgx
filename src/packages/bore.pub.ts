@@ -3,7 +3,7 @@
  *
  * @domain `bore.pub`
  * @programs `bore`
- * @version `0.5.3` (4 versions available)
+ * @version `0.6.0` (5 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/bore-pub.md
  *
  * @install `sh <(curl https://pkgx.sh) bore`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "bore"
  * console.log(pkg.description) // "Modern, simple TCP tunnel in Rust that exposes ..."
  * console.log(pkg.programs)    // ["bore"]
- * console.log(pkg.versions[0]) // "0.5.3" (latest)
+ * console.log(pkg.versions[0]) // "0.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/bore-pub.md
@@ -62,6 +62,7 @@ export const borePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.6.0',
     '0.5.3',
     '0.5.2',
     '0.5.1',

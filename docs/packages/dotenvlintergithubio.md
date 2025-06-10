@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `dotenv-linter`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `dotenv-linter`
-
 ## Available Versions
 
 <details>

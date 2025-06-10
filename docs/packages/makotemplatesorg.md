@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `mako-render`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mako-render`
-
 ## Available Versions
 
 <details>

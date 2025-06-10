@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `dagger`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `dagger`
-
 ## Available Versions
 
 <details>

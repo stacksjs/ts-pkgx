@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `tofu`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `tofu`
-
 ## Available Versions
 
 <details>

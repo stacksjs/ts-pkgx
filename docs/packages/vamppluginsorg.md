@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `vamp-simple-host`
 - `vamp-rdf-template-generator`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `vamp`
-
 ## Available Versions
 
 <details>

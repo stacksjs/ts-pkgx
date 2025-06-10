@@ -25,12 +25,6 @@ This package provides the following executable programs:
 - `opensearch-plugin`
 - `opensearch-shard`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `opensearch`
-
 ## Available Versions
 
 <details>

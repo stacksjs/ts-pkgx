@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `xmlwf`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `xmlwf`
-
 ## Available Versions
 
 <details>

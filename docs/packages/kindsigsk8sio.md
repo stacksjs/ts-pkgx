@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `kind`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `kind`
-
 ## Available Versions
 
 <details>

@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 3 versions</summary>
+<summary>Show all 4 versions</summary>
 
-- `1.0.28`, `1.0.27`, `1.0.26`
+- `1.0.29`, `1.0.28`, `1.0.27`, `1.0.26`
 
 </details>
 
-**Latest Version**: `1.0.28`
+**Latest Version**: `1.0.29`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libusb.info@1.0.28 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libusb.info@1.0.29 -- $SHELL -i
 ```
 
 ## Usage Examples

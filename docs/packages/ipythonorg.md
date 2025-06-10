@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `ipython`
 - `ipython3`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ipython`
-
 ## Available Versions
 
 <details>

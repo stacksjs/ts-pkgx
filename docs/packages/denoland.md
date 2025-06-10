@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `deno`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `deno`
-
 ## Available Versions
 
 <details>

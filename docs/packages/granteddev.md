@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `granted`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `granted`
-
 ## Available Versions
 
 <details>

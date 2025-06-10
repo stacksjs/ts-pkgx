@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `kube-linter`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `kube-linter`
-
 ## Available Versions
 
 <details>

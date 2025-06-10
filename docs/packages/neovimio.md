@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `nvim`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `nvim`
-
 ## Available Versions
 
 <details>

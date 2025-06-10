@@ -3,7 +3,7 @@
  *
  * @domain `vim.org`
  * @programs `vim`, `vi`
- * @version `9.1.1425` (2000 versions available)
+ * @version `9.1.1446` (2020 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vim-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "vim.org"
  * console.log(pkg.description) // "The official Vim repository"
  * console.log(pkg.programs)    // ["vim", "vi"]
- * console.log(pkg.versions[0]) // "9.1.1425" (latest)
+ * console.log(pkg.versions[0]) // "9.1.1446" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/vim-org.md
@@ -69,6 +69,26 @@ export const vimorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.1.1446',
+    '9.1.1445',
+    '9.1.1444',
+    '9.1.1443',
+    '9.1.1442',
+    '9.1.1441',
+    '9.1.1440',
+    '9.1.1439',
+    '9.1.1438',
+    '9.1.1436',
+    '9.1.1435',
+    '9.1.1434',
+    '9.1.1433',
+    '9.1.1432',
+    '9.1.1431',
+    '9.1.1430',
+    '9.1.1429',
+    '9.1.1428',
+    '9.1.1427',
+    '9.1.1426',
     '9.1.1425',
     '9.1.1424',
     '9.1.1423',

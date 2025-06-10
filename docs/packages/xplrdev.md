@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `xplr`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `xplr`
-
 ## Available Versions
 
 <details>

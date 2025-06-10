@@ -3,7 +3,7 @@
  *
  * @domain `wireshark.org`
  * @programs `capinfos`, `captype`, `dumpcap`, `editcap`, `idl2wrs`, ... (+8 more)
- * @version `4.4.6` (30 versions available)
+ * @version `4.4.7` (32 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wireshark-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +wireshark.org -- $SHELL -i`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "wireshark.org"
  * console.log(pkg.description) // "Network analyzer and capture tool - without gra..."
  * console.log(pkg.programs)    // ["capinfos", "captype", ...]
- * console.log(pkg.versions[0]) // "4.4.6" (latest)
+ * console.log(pkg.versions[0]) // "4.4.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wireshark-org.md
@@ -88,6 +88,7 @@ export const wiresharkorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.4.7',
     '4.4.6',
     '4.4.5',
     '4.4.4',
@@ -97,6 +98,7 @@ export const wiresharkorgPackage = {
     '4.4.0',
     '4.3.1',
     '4.3.0',
+    '4.2.12',
     '4.2.11',
     '4.2.10',
     '4.2.9',

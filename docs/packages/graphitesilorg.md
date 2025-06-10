@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `gr2fonttest`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gr2fonttest`
-
 ## Available Versions
 
 <details>

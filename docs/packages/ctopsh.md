@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `ctop`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ctop`
-
 ## Available Versions
 
 <details>

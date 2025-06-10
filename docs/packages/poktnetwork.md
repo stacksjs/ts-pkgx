@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `pocket`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pocket`
-
 ## Available Versions
 
 <details>

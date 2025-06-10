@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `invoke`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `invoke`
-
 ## Available Versions
 
 <details>

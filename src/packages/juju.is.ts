@@ -3,7 +3,7 @@
  *
  * @domain `juju.is`
  * @programs `juju`
- * @version `3.6.6` (16 versions available)
+ * @version `3.6.7` (17 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/juju-is.md
  *
  * @install `sh <(curl https://pkgx.sh) juju`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "juju"
  * console.log(pkg.description) // "Orchestration engine that enables the deploymen..."
  * console.log(pkg.programs)    // ["juju"]
- * console.log(pkg.versions[0]) // "3.6.6" (latest)
+ * console.log(pkg.versions[0]) // "3.6.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/juju-is.md
@@ -62,6 +62,7 @@ export const jujuPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.6.7',
     '3.6.6',
     '3.6.5',
     '3.6.4',

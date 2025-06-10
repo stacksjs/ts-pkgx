@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `jetp`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `jetp`
-
 ## Available Versions
 
 <details>

@@ -26,12 +26,6 @@ This package provides the following executable programs:
 - `pip3.10`
 - `pip3.11`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pip`
-
 ## Available Versions
 
 <details>

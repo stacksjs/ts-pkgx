@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `tart`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `tart`
-
 ## Available Versions
 
 <details>

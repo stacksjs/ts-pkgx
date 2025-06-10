@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `duckdb`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `duckdb`
-
 ## Available Versions
 
 <details>

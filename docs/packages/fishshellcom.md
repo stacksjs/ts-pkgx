@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `fish_indent`
 - `fish_key_reader`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `fish`
-
 ## Available Versions
 
 <details>

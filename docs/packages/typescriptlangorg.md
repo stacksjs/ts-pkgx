@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `tsc`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `tsc`
-
 ## Available Versions
 
 <details>

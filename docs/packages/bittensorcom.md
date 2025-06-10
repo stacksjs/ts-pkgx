@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `Bittensor`
-
 ## Available Versions
 
 <details>

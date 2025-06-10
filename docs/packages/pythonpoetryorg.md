@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `poetry`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `poetry`
-
 ## Available Versions
 
 <details>

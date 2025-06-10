@@ -3,7 +3,7 @@
  *
  * @domain `kubeshark.co`
  * @programs `kubeshark`
- * @version `72.3.83` (54 versions available)
+ * @version `72.3.83` (56 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kubeshark-co.md
  *
  * @install `sh <(curl https://pkgx.sh) kubeshark`
@@ -63,6 +63,8 @@ export const kubesharkPackage = {
    */
   versions: [
     '72.3.83',
+    '52.7.7',
+    '52.7.3',
     '52.7.0',
     '52.6.0',
     '52.5.0',

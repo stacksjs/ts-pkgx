@@ -3,7 +3,7 @@
  *
  * @domain `ast-grep.github.io`
  * @programs `sg`, `ast-grep`
- * @version `0.38.3` (80 versions available)
+ * @version `0.38.5` (82 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ast-grep-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +ast-grep.github.io -- $SHELL -i`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "ast-grep.github.io"
  * console.log(pkg.description) // "⚡A CLI tool for code structural search, lint an..."
  * console.log(pkg.programs)    // ["sg", "ast-grep"]
- * console.log(pkg.versions[0]) // "0.38.3" (latest)
+ * console.log(pkg.versions[0]) // "0.38.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ast-grep-github-io.md
@@ -58,6 +58,8 @@ export const astgrepgithubioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.38.5',
+    '0.38.4',
     '0.38.3',
     '0.38.2',
     '0.38.1',

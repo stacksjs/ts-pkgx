@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `teller`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `teller`
-
 ## Available Versions
 
 <details>

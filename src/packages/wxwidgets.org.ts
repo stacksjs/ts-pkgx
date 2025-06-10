@@ -3,7 +3,7 @@
  *
  * @domain `wxwidgets.org`
  * @programs `wx-config`, `wxrc`
- * @version `3.2.8.1` (7 versions available)
+ * @version `3.3.0` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wxwidgets-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +wxwidgets.org -- $SHELL -i`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "wxwidgets.org"
  * console.log(pkg.description) // "Cross-Platform C++ GUI Library"
  * console.log(pkg.programs)    // ["wx-config", "wxrc"]
- * console.log(pkg.versions[0]) // "3.2.8.1" (latest)
+ * console.log(pkg.versions[0]) // "3.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wxwidgets-org.md
@@ -74,6 +74,7 @@ export const wxwidgetsorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.3.0',
     '3.2.8.1',
     '3.2.8',
     '3.2.7',

@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `geos-config`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `geos-config`
-
 ## Available Versions
 
 <details>

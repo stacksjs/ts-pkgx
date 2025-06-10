@@ -3,7 +3,7 @@
  *
  * @domain `prefix.dev`
  * @programs `pixi`
- * @version `0.47.0` (80 versions available)
+ * @version `0.48.0` (81 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/prefix-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) pixi`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "pixi"
  * console.log(pkg.description) // "Package management made easy"
  * console.log(pkg.programs)    // ["pixi"]
- * console.log(pkg.versions[0]) // "0.47.0" (latest)
+ * console.log(pkg.versions[0]) // "0.48.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/prefix-dev.md
@@ -70,6 +70,7 @@ export const pixiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.48.0',
     '0.47.0',
     '0.46.0',
     '0.45.0',

@@ -27,12 +27,6 @@ This package provides the following executable programs:
 - `giftext`
 - `giftool`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gif`
-
 ## Available Versions
 
 <details>

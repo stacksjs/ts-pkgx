@@ -3,7 +3,7 @@
  *
  * @domain `flipt.io`
  * @programs `flipt`
- * @version `1.58.3` (37 versions available)
+ * @version `1.58.4` (38 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/flipt-io.md
  *
  * @install `sh <(curl https://pkgx.sh) flipt`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "flipt"
  * console.log(pkg.description) // "Enterprise-ready, GitOps enabled, CloudNative f..."
  * console.log(pkg.programs)    // ["flipt"]
- * console.log(pkg.versions[0]) // "1.58.3" (latest)
+ * console.log(pkg.versions[0]) // "1.58.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/flipt-io.md
@@ -62,6 +62,7 @@ export const fliptPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.58.4',
     '1.58.3',
     '1.58.2',
     '1.58.1',

@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `jags`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `jags`
-
 ## Available Versions
 
 <details>

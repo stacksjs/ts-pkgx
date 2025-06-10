@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `pcap-config`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pcap-config`
-
 ## Available Versions
 
 <details>

@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `hx`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `hx`
-
 ## Available Versions
 
 <details>

@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `dog`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `dog`
-
 ## Available Versions
 
 <details>

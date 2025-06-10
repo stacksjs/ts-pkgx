@@ -22,31 +22,25 @@ This package provides the following executable programs:
 
 - `gradle`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gradle`
-
 ## Available Versions
 
 <details>
-<summary>Show all 16 versions</summary>
+<summary>Show all 18 versions</summary>
 
-- `8.14.1`, `8.14.0`, `8.13.0`, `8.12.1`, `8.12.0`
-- `8.11.1`, `8.11.0`, `8.10.2`, `8.10.1`, `8.10.0`
-- `8.9.0`, `8.8.0`, `8.7.0`, `8.6.0`, `8.5.0`
-- `8.2.1`
+- `8.14.2`, `8.14.1`, `8.14.0`, `8.13.0`, `8.12.1`
+- `8.12.0`, `8.11.1`, `8.11.0`, `8.10.2`, `8.10.1`
+- `8.10.0`, `8.9.0`, `8.8.0`, `8.7.0`, `8.6.0`
+- `8.5.0`, `8.2.1`, `7.6.5`
 
 </details>
 
-**Latest Version**: `8.14.1`
+**Latest Version**: `8.14.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gradle.org@8.14.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gradle.org@8.14.2 -- $SHELL -i
 ```
 
 ## Dependencies

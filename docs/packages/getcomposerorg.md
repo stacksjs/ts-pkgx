@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `composer`
 - `composer.phar`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `composer`
-
 ## Available Versions
 
 <details>

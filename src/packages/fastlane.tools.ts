@@ -3,7 +3,7 @@
  *
  * @domain `fastlane.tools`
  * @programs `fastlane`
- * @version `2.227.2` (22 versions available)
+ * @version `2.228.0` (23 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fastlane-tools.md
  *
  * @install `sh <(curl https://pkgx.sh) fastlane`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "fastlane"
  * console.log(pkg.description) // "🚀 The easiest way to automate building and rel..."
  * console.log(pkg.programs)    // ["fastlane"]
- * console.log(pkg.versions[0]) // "2.227.2" (latest)
+ * console.log(pkg.versions[0]) // "2.228.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fastlane-tools.md
@@ -77,6 +77,7 @@ export const fastlanePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.228.0',
     '2.227.2',
     '2.227.1',
     '2.227.0',

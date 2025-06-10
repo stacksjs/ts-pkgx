@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `keep`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `keep`
-
 ## Available Versions
 
 <details>

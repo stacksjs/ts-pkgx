@@ -3,7 +3,7 @@
  *
  * @domain `curl.se`
  * @programs `curl`, `curl-config`
- * @version `8.14.0` (24 versions available)
+ * @version `8.14.1` (25 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/curl-se.md
  *
  * @install `sh <(curl https://pkgx.sh) +curl.se -- $SHELL -i`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "cURL"
  * console.log(pkg.description) // "A command line tool and library for transferrin..."
  * console.log(pkg.programs)    // ["curl", "curl-config"]
- * console.log(pkg.versions[0]) // "8.14.0" (latest)
+ * console.log(pkg.versions[0]) // "8.14.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/curl-se.md
@@ -72,6 +72,7 @@ export const cURLPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.14.1',
     '8.14.0',
     '8.13.0',
     '8.12.1',

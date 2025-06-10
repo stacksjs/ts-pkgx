@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `raccoin`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `raccoin`
-
 ## Available Versions
 
 <details>

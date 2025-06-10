@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `pixlet`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pixlet`
-
 ## Available Versions
 
 <details>

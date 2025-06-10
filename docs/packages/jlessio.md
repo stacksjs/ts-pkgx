@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `jless`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `jless`
-
 ## Available Versions
 
 <details>

@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `daytona`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `daytona`
-
 ## Available Versions
 
 <details>

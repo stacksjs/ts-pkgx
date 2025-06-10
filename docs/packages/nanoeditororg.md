@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `nano`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `nano`
-
 ## Available Versions
 
 <details>

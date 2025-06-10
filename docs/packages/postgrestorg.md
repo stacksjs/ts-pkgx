@@ -22,30 +22,24 @@ This package provides the following executable programs:
 
 - `postgrest`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `postgrest`
-
 ## Available Versions
 
 <details>
-<summary>Show all 12 versions</summary>
+<summary>Show all 13 versions</summary>
 
-- `13.0.1`, `13.0.0`, `12.2.12`, `12.2.11`, `12.2.10`
-- `12.2.9`, `12.2.8`, `12.2.7`, `12.2.6`, `12.2.5`
-- `12.2.4`, `12.2.3`
+- `13.0.2`, `13.0.1`, `13.0.0`, `12.2.12`, `12.2.11`
+- `12.2.10`, `12.2.9`, `12.2.8`, `12.2.7`, `12.2.6`
+- `12.2.5`, `12.2.4`, `12.2.3`
 
 </details>
 
-**Latest Version**: `13.0.1`
+**Latest Version**: `13.0.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +postgrest.org@13.0.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +postgrest.org@13.0.2 -- $SHELL -i
 ```
 
 ## Dependencies

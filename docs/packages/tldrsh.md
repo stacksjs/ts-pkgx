@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `tldr`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `tldr`
-
 ## Available Versions
 
 <details>

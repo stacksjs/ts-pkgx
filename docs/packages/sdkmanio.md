@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `sdkman-init.sh`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `sdkman-init.sh`
-
 ## Available Versions
 
 <details>

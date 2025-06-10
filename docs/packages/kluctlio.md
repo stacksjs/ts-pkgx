@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `kluctl`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `kluctl`
-
 ## Available Versions
 
 <details>

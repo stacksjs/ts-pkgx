@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `zola`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `zola`
-
 ## Available Versions
 
 <details>

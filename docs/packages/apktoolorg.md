@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `apktool`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `apktool`
-
 ## Available Versions
 
 <details>

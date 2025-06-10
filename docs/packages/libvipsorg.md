@@ -26,29 +26,23 @@ This package provides the following executable programs:
 - `vipsprofile`
 - `vipsthumbnail`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `vips`
-
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `8.16.1`, `8.16.0`, `8.15.5`, `8.15.3`, `8.15.2`
-- `8.15.1`, `8.15.0`, `8.14.5`
+- `8.17.0`, `8.16.1`, `8.16.0`, `8.15.5`, `8.15.3`
+- `8.15.2`, `8.15.1`, `8.15.0`, `8.14.5`
 
 </details>
 
-**Latest Version**: `8.16.1`
+**Latest Version**: `8.17.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libvips.org@8.16.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libvips.org@8.17.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -1,9 +1,12 @@
 /**
- * **cfssl.org** - Crafters of fine Open Source products
+ * **cfssl.org** - CFSSL: Cloudflare's PKI and TLS toolkit
  *
  * @domain `cfssl.org`
+ * @programs `cfssl`, `cfssl-bundle`, `cfssl-certinfo`, `cfssl-newkey`, `cfssl-scan`, ... (+3 more)
+ * @version `1.6.5` (1 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cfssl-org.md
  *
- * @install `pkgx cfssl.org`
+ * @install `sh <(curl https://pkgx.sh) +cfssl.org -- $SHELL -i`
  *
  * @example
  * ```typescript
@@ -11,7 +14,9 @@
  *
  * const pkg = pantry.cfsslorg
  * console.log(pkg.name)        // "cfssl.org"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "CFSSL: Cloudflare's PKI and TLS toolkit"
+ * console.log(pkg.programs)    // ["cfssl", "cfssl-bundle", ...]
+ * console.log(pkg.versions[0]) // "1.6.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cfssl-org.md
@@ -23,25 +28,46 @@ export const cfsslorgPackage = {
    */
   name: 'cfssl.org' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/cfssl.org/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'cfssl.org' as const,
-  fullPath: 'cfssl.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'CFSSL: Cloudflare\'s PKI and TLS toolkit' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cfssl.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx cfssl.org' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +cfssl.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'cfssl',
+    'cfssl-bundle',
+    'cfssl-certinfo',
+    'cfssl-newkey',
+    'cfssl-scan',
+    'cfssljson',
+    'mkbundle',
+    'multirootca',
+  ] as const,
   companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.6.5',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'cfssl.org' as const,
 }
 
 export type CfsslorgPackage = typeof cfsslorgPackage

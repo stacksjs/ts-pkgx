@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `micro`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `micro`
-
 ## Available Versions
 
 <details>

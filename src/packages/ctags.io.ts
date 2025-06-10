@@ -3,7 +3,7 @@
  *
  * @domain `ctags.io`
  * @programs `ctags`
- * @version `6.1.0` (1 versions available)
+ * @version `6.2.0` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ctags-io.md
  *
  * @install `sh <(curl https://pkgx.sh) ctags`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "ctags"
  * console.log(pkg.description) // "A maintained ctags implementation"
  * console.log(pkg.programs)    // ["ctags"]
- * console.log(pkg.versions[0]) // "6.1.0" (latest)
+ * console.log(pkg.versions[0]) // "6.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ctags-io.md
@@ -65,13 +65,14 @@ export const ctagsPackage = {
     'digip.org/jansson^2',
     'pyyaml.org/libyaml^0.2',
     'pcre.org/v2^10',
-    'gnome.org/libxml2^2',
+    'gnome.org/libxml2~2.13',
   ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.2.0',
     '6.1.0',
   ] as const,
   /**

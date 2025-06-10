@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `jsonnet`
 - `jsonnetfmt`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `jsonnet`
-
 ## Available Versions
 
 <details>

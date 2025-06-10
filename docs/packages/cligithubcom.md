@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `gh`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gh`
-
 ## Available Versions
 
 <details>

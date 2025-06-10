@@ -29,12 +29,6 @@ This package provides the following executable programs:
 - `scalar`
 - `git-credential-osxkeychain`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `git`
-
 ## Available Versions
 
 <details>

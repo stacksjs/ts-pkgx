@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `pipenv`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pipenv`
-
 ## Available Versions
 
 <details>

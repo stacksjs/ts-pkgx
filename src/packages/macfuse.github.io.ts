@@ -1,9 +1,11 @@
 /**
- * **macfuse.github.io** - Crafters of fine Open Source products
+ * **macfuse.github.io** - macFUSE umbrella repository
  *
  * @domain `macfuse.github.io`
+ * @version `4.10.2` (1 versions available)
+ * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/macfuse-github-io.md
  *
- * @install `pkgx macfuse.github.io`
+ * @install `sh <(curl https://pkgx.sh) +macfuse.github.io -- $SHELL -i`
  *
  * @example
  * ```typescript
@@ -11,7 +13,8 @@
  *
  * const pkg = pantry.macfusegithubio
  * console.log(pkg.name)        // "macfuse.github.io"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.description) // "macFUSE umbrella repository"
+ * console.log(pkg.versions[0]) // "4.10.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/macfuse-github-io.md
@@ -23,25 +26,33 @@ export const macfusegithubioPackage = {
    */
   name: 'macfuse.github.io' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/macfuse.github.io/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'macfuse.github.io' as const,
-  fullPath: 'macfuse.github.io' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'macFUSE umbrella repository' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/macfuse.github.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx macfuse.github.io' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +macfuse.github.io -- $SHELL -i' as const,
+  programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '4.10.2',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'macfuse.github.io' as const,
 }
 
 export type MacfusegithubioPackage = typeof macfusegithubioPackage

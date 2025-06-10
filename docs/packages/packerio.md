@@ -22,30 +22,24 @@ This package provides the following executable programs:
 
 - `packer`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `packer`
-
 ## Available Versions
 
 <details>
-<summary>Show all 11 versions</summary>
+<summary>Show all 13 versions</summary>
 
-- `1.12.0`, `1.11.2`, `1.11.1`, `1.11.0`, `1.10.3`
-- `1.10.2`, `1.10.1`, `1.9.5`, `1.9.4`, `1.9.3`
-- `1.9.2`
+- `1.13.1`, `1.13.0`, `1.12.0`, `1.11.2`, `1.11.1`
+- `1.11.0`, `1.10.3`, `1.10.2`, `1.10.1`, `1.9.5`
+- `1.9.4`, `1.9.3`, `1.9.2`
 
 </details>
 
-**Latest Version**: `1.12.0`
+**Latest Version**: `1.13.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +packer.io@1.12.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +packer.io@1.13.1 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `zsh`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `zsh`
-
 ## Available Versions
 
 <details>

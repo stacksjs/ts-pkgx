@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `k9s`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `k9s`
-
 ## Available Versions
 
 <details>

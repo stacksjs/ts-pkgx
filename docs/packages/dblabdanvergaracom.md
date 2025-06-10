@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `dblab`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `dblab`
-
 ## Available Versions
 
 <details>

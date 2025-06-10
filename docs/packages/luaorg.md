@@ -23,28 +23,22 @@ This package provides the following executable programs:
 - `lua`
 - `luac`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `lua`
-
 ## Available Versions
 
 <details>
-<summary>Show all 3 versions</summary>
+<summary>Show all 4 versions</summary>
 
-- `5.4.7`, `5.4.6`, `5.4.4`
+- `5.4.8`, `5.4.7`, `5.4.6`, `5.4.4`
 
 </details>
 
-**Latest Version**: `5.4.7`
+**Latest Version**: `5.4.8`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +lua.org@5.4.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) +lua.org@5.4.8 -- $SHELL -i
 ```
 
 ## Dependencies

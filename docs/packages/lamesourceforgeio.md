@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `lame`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `lame`
-
 ## Available Versions
 
 <details>

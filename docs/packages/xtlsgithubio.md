@@ -27,29 +27,29 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `xray`
-- `xray-core`
 
 ## Available Versions
 
 <details>
-<summary>Show all 30 versions</summary>
+<summary>Show all 31 versions</summary>
 
-- `25.5.16`, `25.4.30`, `25.3.6`, `25.2.21`, `25.1.30`
-- `24.12.31`, `24.12.18`, `24.11.30`, `24.11.21`, `24.11.11`
-- `24.11.5`, `24.10.31`, `24.9.30`, `1.8.24`, `1.8.23`
-- `1.8.21`, `1.8.20`, `1.8.19`, `1.8.18`, `1.8.17`
-- `1.8.16`, `1.8.15`, `1.8.13`, `1.8.12`, `1.8.11`
-- `1.8.10`, `1.8.9`, `1.8.8`, `1.8.7`, `1.8.6`
+- `25.6.8`, `25.5.16`, `25.4.30`, `25.3.6`, `25.2.21`
+- `25.1.30`, `24.12.31`, `24.12.18`, `24.11.30`, `24.11.21`
+- `24.11.11`, `24.11.5`, `24.10.31`, `24.9.30`, `1.8.24`
+- `1.8.23`, `1.8.21`, `1.8.20`, `1.8.19`, `1.8.18`
+- `1.8.17`, `1.8.16`, `1.8.15`, `1.8.13`, `1.8.12`
+- `1.8.11`, `1.8.10`, `1.8.9`, `1.8.8`, `1.8.7`
+- `1.8.6`
 
 </details>
 
-**Latest Version**: `25.5.16`
+**Latest Version**: `25.6.8`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +xtls.github.io@25.5.16 -- $SHELL -i
+sh <(curl https://pkgx.sh) +xtls.github.io@25.6.8 -- $SHELL -i
 ```
 
 ## Usage Examples

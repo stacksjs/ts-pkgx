@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `cb`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `cb`
-
 ## Available Versions
 
 <details>

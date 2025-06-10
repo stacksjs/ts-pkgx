@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `ord`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ord`
-
 ## Available Versions
 
 <details>

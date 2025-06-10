@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `sentry-cli`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `sentry-cli`
-
 ## Available Versions
 
 <details>

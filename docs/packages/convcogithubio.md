@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `convco`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `convco`
-
 ## Available Versions
 
 <details>

@@ -1,12 +1,12 @@
 # Programming Languages
 
-*23 packages in this category*
+*22 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
 ## Packages
 
-### [crystal/lang.org](../packages/crystallangorg.md) (crystal)
+### [crystal/lang.org](../packages/crystallangorg.md)
 
 Fast and statically typed, compiled language with Ruby-like syntax
 
@@ -16,7 +16,7 @@ Fast and statically typed, compiled language with Ruby-like syntax
 
 ---
 
-### [dart.dev](../packages/dartdev.md) (dart)
+### [dart.dev](../packages/dartdev.md)
 
 The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
 
@@ -26,7 +26,7 @@ The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries,
 
 ---
 
-### [deno.land](../packages/denoland.md) (deno)
+### [deno.land](../packages/denoland.md)
 
 A modern runtime for JavaScript and TypeScript.
 
@@ -56,7 +56,7 @@ Programming language for highly scalable real-time systems
 
 ---
 
-### [gleam.run](../packages/gleamrun.md) (gleam)
+### [gleam.run](../packages/gleamrun.md)
 
 ⭐️ A friendly language for building type-safe, scalable systems!
 
@@ -86,7 +86,7 @@ Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC'
 
 ---
 
-### [julialang.org](../packages/julialangorg.md) (julia)
+### [julialang.org](../packages/julialangorg.md)
 
 The Julia Programming Language
 
@@ -116,17 +116,7 @@ Nim is a statically typed compiled systems programming language. It combines suc
 
 ---
 
-### [node](../packages/node.md) (node)
-
-Platform built on V8 to build network applications
-
-**Programs**: node
-
-**Install**: `sh <(curl https://pkgx.sh) node`
-
----
-
-### [nodejs.org](../packages/nodejsorg.md) (node)
+### [nodejs.org](../packages/nodejsorg.md)
 
 Platform built on V8 to build network applications
 
@@ -156,7 +146,7 @@ General-purpose scripting language
 
 ---
 
-### [python.org](../packages/pythonorg.md) (python)
+### [python.org](../packages/pythonorg.md)
 
 The Python programming language
 
@@ -176,7 +166,7 @@ Powerful, clean, object-oriented scripting language
 
 ---
 
-### [rust/lang.org](../packages/rustlangorg.md) (rust)
+### [rust/lang.org](../packages/rustlangorg.md)
 
 Empowering everyone to build reliable and efficient software.
 
@@ -196,7 +186,7 @@ The Scala 3 compiler, also known as Dotty.
 
 ---
 
-### [swift.org](../packages/swiftorg.md) (swift)
+### [swift.org](../packages/swiftorg.md)
 
 The Swift Programming Language
 
@@ -206,7 +196,7 @@ The Swift Programming Language
 
 ---
 
-### [typescriptlang.org](../packages/typescriptlangorg.md) (tsc)
+### [typescriptlang.org](../packages/typescriptlangorg.md)
 
 TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
 
@@ -226,7 +216,7 @@ Simple, fast, safe, compiled language for developing maintainable software. Comp
 
 ---
 
-### [ziglang.org](../packages/ziglangorg.md) (zig)
+### [ziglang.org](../packages/ziglangorg.md)
 
 General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
 

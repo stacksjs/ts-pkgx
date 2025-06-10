@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `xkbcli`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `xkbcli`
-
 ## Available Versions
 
 <details>

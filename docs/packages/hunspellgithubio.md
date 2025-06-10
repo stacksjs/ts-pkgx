@@ -28,12 +28,6 @@ This package provides the following executable programs:
 - `munch`
 - `unmunch`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `hunspell`
-
 ## Available Versions
 
 <details>

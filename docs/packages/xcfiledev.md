@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `xc`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `xc`
-
 ## Available Versions
 
 <details>

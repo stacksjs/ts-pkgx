@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `ko`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ko`
-
 ## Available Versions
 
 <details>

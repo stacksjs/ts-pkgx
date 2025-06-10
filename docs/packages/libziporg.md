@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `zipmerge`
 - `ziptool`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `zip`
-
 ## Available Versions
 
 <details>

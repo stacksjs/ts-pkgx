@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `pack`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pack`
-
 ## Available Versions
 
 <details>

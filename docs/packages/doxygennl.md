@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `doxygen`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `doxygen`
-
 ## Available Versions
 
 <details>

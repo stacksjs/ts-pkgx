@@ -3,7 +3,7 @@
  *
  * @domain `scala-lang.org`
  * @programs `scalac`, `scala`, `scala-cli`, `sbtn`, `amm`
- * @version `3.7.0` (8 versions available)
+ * @version `3.7.1` (9 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/scala-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +scala-lang.org -- $SHELL -i`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "scala-lang.org"
  * console.log(pkg.description) // "The Scala 3 compiler, also known as Dotty."
  * console.log(pkg.programs)    // ["scalac", "scala", ...]
- * console.log(pkg.versions[0]) // "3.7.0" (latest)
+ * console.log(pkg.versions[0]) // "3.7.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/scala-lang-org.md
@@ -68,6 +68,7 @@ export const scalalangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.7.1',
     '3.7.0',
     '3.6.4',
     '3.6.3',

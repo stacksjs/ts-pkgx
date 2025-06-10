@@ -3,7 +3,7 @@
  *
  * @domain `gradle.org`
  * @programs `gradle`
- * @version `8.14.1` (16 versions available)
+ * @version `8.14.2` (18 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gradle-org.md
  *
  * @install `sh <(curl https://pkgx.sh) gradle`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "gradle"
  * console.log(pkg.description) // "Open-source build automation tool based on the ..."
  * console.log(pkg.programs)    // ["gradle"]
- * console.log(pkg.versions[0]) // "8.14.1" (latest)
+ * console.log(pkg.versions[0]) // "8.14.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gradle-org.md
@@ -69,6 +69,7 @@ export const gradlePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.14.2',
     '8.14.1',
     '8.14.0',
     '8.13.0',
@@ -85,6 +86,7 @@ export const gradlePackage = {
     '8.6.0',
     '8.5.0',
     '8.2.1',
+    '7.6.5',
   ] as const,
   /**
    * Alternative names for this package.

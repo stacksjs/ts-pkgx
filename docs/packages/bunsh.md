@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `bun`
 - `bunx`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `bun`
-
 ## Available Versions
 
 <details>

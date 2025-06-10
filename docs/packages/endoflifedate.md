@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `eol`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `eol`
-
 ## Available Versions
 
 <details>

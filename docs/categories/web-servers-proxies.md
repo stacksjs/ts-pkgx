@@ -6,7 +6,7 @@ Packages related to web servers & proxies.
 
 ## Packages
 
-### [nginx.org](../packages/nginxorg.md) (nginx)
+### [nginx.org](../packages/nginxorg.md)
 
 HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 
@@ -16,7 +16,7 @@ HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 
 ---
 
-### [traefik.io](../packages/traefikio.md) (traefik)
+### [traefik.io](../packages/traefikio.md)
 
 The Cloud Native Application Proxy
 

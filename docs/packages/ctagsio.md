@@ -22,28 +22,22 @@ This package provides the following executable programs:
 
 - `ctags`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ctags`
-
 ## Available Versions
 
 <details>
-<summary>Show all 1 versions</summary>
+<summary>Show all 2 versions</summary>
 
-- `6.1.0`
+- `6.2.0`, `6.1.0`
 
 </details>
 
-**Latest Version**: `6.1.0`
+**Latest Version**: `6.2.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ctags.io@6.1.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +ctags.io@6.2.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -53,7 +47,7 @@ This package depends on:
 - `digip.org/jansson^2`
 - `pyyaml.org/libyaml^0.2`
 - `pcre.org/v2^10`
-- `gnome.org/libxml2^2`
+- `gnome.org/libxml2~2.13`
 
 ## Usage Examples
 

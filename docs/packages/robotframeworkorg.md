@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `robot`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `robot`
-
 ## Available Versions
 
 <details>

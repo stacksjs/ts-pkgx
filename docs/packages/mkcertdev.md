@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `mkcert`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mkcert`
-
 ## Available Versions
 
 <details>

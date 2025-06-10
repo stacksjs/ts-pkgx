@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `typst`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `typst`
-
 ## Available Versions
 
 <details>

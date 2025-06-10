@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `pcregrep`
 - `pcretest`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pcre`
-
 ## Available Versions
 
 <details>

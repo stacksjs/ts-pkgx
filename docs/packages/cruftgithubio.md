@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `cruft`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `cruft`
-
 ## Available Versions
 
 <details>

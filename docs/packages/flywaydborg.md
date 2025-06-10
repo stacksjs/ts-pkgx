@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `flyway`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `flyway`
-
 ## Available Versions
 
 <details>

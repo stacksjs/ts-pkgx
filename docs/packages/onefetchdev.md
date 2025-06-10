@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `onefetch`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `onefetch`
-
 ## Available Versions
 
 <details>

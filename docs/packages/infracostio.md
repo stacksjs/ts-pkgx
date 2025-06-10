@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `infracost`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `infracost`
-
 ## Available Versions
 
 <details>

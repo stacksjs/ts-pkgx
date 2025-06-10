@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `nginx`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `nginx`
-
 ## Available Versions
 
 <details>

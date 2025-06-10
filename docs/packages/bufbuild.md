@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `buf`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `buf`
-
 ## Available Versions
 
 <details>

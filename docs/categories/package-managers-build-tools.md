@@ -16,7 +16,7 @@ Mirror of CMake upstream repository
 
 ---
 
-### [gradle.org](../packages/gradleorg.md) (gradle)
+### [gradle.org](../packages/gradleorg.md)
 
 Open-source build automation tool based on the Groovy and Kotlin DSL
 
@@ -26,7 +26,7 @@ Open-source build automation tool based on the Groovy and Kotlin DSL
 
 ---
 
-### [maven.apache.org](../packages/mavenapacheorg.md) (mvn)
+### [maven.apache.org](../packages/mavenapacheorg.md)
 
 Java-based project management
 
@@ -36,7 +36,7 @@ Java-based project management
 
 ---
 
-### [mesonbuild.com](../packages/mesonbuildcom.md) (meson)
+### [mesonbuild.com](../packages/mesonbuildcom.md)
 
 Fast and user friendly build system
 
@@ -46,7 +46,7 @@ Fast and user friendly build system
 
 ---
 
-### [ninja/build.org](../packages/ninjabuildorg.md) (ninja)
+### [ninja/build.org](../packages/ninjabuildorg.md)
 
 Small build system for use with gyp or CMake
 
@@ -66,7 +66,7 @@ the package manager for JavaScript
 
 ---
 
-### [pip.pypa.io](../packages/pippypaio.md) (pip)
+### [pip.pypa.io](../packages/pippypaio.md)
 
 The Python package installer
 
@@ -76,7 +76,7 @@ The Python package installer
 
 ---
 
-### [pipenv.pypa.io](../packages/pipenvpypaio.md) (pipenv)
+### [pipenv.pypa.io](../packages/pipenvpypaio.md)
 
 Python Development Workflow for Humans.
 
@@ -86,7 +86,7 @@ Python Development Workflow for Humans.
 
 ---
 
-### [pnpm.io](../packages/pnpmio.md) (pnp)
+### [pnpm.io](../packages/pnpmio.md)
 
 Fast, disk space efficient package manager
 
@@ -96,7 +96,7 @@ Fast, disk space efficient package manager
 
 ---
 
-### [python/poetry.org](../packages/pythonpoetryorg.md) (poetry)
+### [python/poetry.org](../packages/pythonpoetryorg.md)
 
 Python packaging and dependency management made easy
 
@@ -116,7 +116,7 @@ Powerful, clean, object-oriented scripting language
 
 ---
 
-### [yarnpkg.com](../packages/yarnpkgcom.md) (yarn)
+### [yarnpkg.com](../packages/yarnpkgcom.md)
 
 📦🐈 Active development trunk for Yarn ⚒
 

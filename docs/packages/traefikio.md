@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `traefik`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `traefik`
-
 ## Available Versions
 
 <details>

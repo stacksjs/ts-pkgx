@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `gm`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gm`
-
 ## Available Versions
 
 <details>

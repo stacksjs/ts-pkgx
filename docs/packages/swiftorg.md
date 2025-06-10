@@ -47,12 +47,6 @@ This package provides the following executable programs:
 - `swift-test`
 - `swiftc`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `swift`
-
 ## Available Versions
 
 <details>

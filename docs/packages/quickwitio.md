@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `quickwit`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `quickwit`
-
 ## Available Versions
 
 <details>

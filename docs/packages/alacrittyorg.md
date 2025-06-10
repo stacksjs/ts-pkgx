@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `alacritty`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `alacritty`
-
 ## Available Versions
 
 <details>

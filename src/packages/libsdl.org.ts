@@ -2,7 +2,7 @@
  * **libsdl.org** - Simple Directmedia Layer
  *
  * @domain `libsdl.org`
- * @version `3.2.14` (32 versions available)
+ * @version `3.2.16` (34 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libsdl-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libsdl.org -- $SHELL -i`
@@ -15,7 +15,7 @@
  * const pkg = pantry.libsdlorg
  * console.log(pkg.name)        // "libsdl.org"
  * console.log(pkg.description) // "Simple Directmedia Layer"
- * console.log(pkg.versions[0]) // "3.2.14" (latest)
+ * console.log(pkg.versions[0]) // "3.2.16" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libsdl-org.md
@@ -64,6 +64,7 @@ export const libsdlorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.2.16',
     '3.2.14',
     '3.2.12',
     '3.2.10',
@@ -72,6 +73,7 @@ export const libsdlorgPackage = {
     '3.2.4',
     '3.2.2',
     '3.2.0',
+    '2.32.8',
     '2.32.6',
     '2.32.4',
     '2.32.2',

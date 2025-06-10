@@ -22,31 +22,25 @@ This package provides the following executable programs:
 
 - `streamlink`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `streamlink`
-
 ## Available Versions
 
 <details>
-<summary>Show all 19 versions</summary>
+<summary>Show all 20 versions</summary>
 
-- `7.3.0`, `7.2.0`, `7.1.3`, `7.1.2`, `7.1.1`
-- `7.1.0`, `7.0.0`, `6.11.0`, `6.10.0`, `6.9.0`
-- `6.8.3`, `6.8.2`, `6.8.1`, `6.8.0`, `6.7.4`
-- `6.7.3`, `6.7.2`, `6.7.1`, `6.7.0`
+- `7.4.0`, `7.3.0`, `7.2.0`, `7.1.3`, `7.1.2`
+- `7.1.1`, `7.1.0`, `7.0.0`, `6.11.0`, `6.10.0`
+- `6.9.0`, `6.8.3`, `6.8.2`, `6.8.1`, `6.8.0`
+- `6.7.4`, `6.7.3`, `6.7.2`, `6.7.1`, `6.7.0`
 
 </details>
 
-**Latest Version**: `7.3.0`
+**Latest Version**: `7.4.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +streamlink.github.io@7.3.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +streamlink.github.io@7.4.0 -- $SHELL -i
 ```
 
 ## Dependencies

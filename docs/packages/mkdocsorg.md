@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `mkdocs`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mkdocs`
-
 ## Available Versions
 
 <details>

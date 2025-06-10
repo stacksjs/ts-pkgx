@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `wunderctl`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `wunderctl`
-
 ## Available Versions
 
 <details>

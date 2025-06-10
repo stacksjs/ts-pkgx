@@ -3,7 +3,7 @@
  *
  * @domain `depot.dev`
  * @programs `depot`
- * @version `2.85.6` (39 versions available)
+ * @version `2.86.0` (40 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/depot-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) depot`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "depot"
  * console.log(pkg.description) // "🖥️ Depot CLI, build your Docker images in the ..."
  * console.log(pkg.programs)    // ["depot"]
- * console.log(pkg.versions[0]) // "2.85.6" (latest)
+ * console.log(pkg.versions[0]) // "2.86.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/depot-dev.md
@@ -62,6 +62,7 @@ export const depotPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.86.0',
     '2.85.6',
     '2.85.5',
     '2.85.4',

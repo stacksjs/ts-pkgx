@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `replibyte`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `replibyte`
-
 ## Available Versions
 
 <details>

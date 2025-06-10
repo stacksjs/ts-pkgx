@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `gomplate`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gomplate`
-
 ## Available Versions
 
 <details>

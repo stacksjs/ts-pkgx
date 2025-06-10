@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `istioctl`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `istioctl`
-
 ## Available Versions
 
 <details>

@@ -3,7 +3,7 @@
  *
  * @domain `openexr.com`
  * @programs `exr2aces`, `exrenvmap`, `exrheader`, `exrmakepreview`, `exrmaketiled`, ... (+3 more)
- * @version `3.3.3` (19 versions available)
+ * @version `3.3.4` (20 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openexr-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "exr"
  * console.log(pkg.description) // "The OpenEXR project provides the specification ..."
  * console.log(pkg.programs)    // ["exr2aces", "exrenvmap", ...]
- * console.log(pkg.versions[0]) // "3.3.3" (latest)
+ * console.log(pkg.versions[0]) // "3.3.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openexr-com.md
@@ -77,6 +77,7 @@ export const exrPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.3.4',
     '3.3.3',
     '3.3.2',
     '3.3.1',

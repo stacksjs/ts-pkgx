@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `llm`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `llm`
-
 ## Available Versions
 
 <details>

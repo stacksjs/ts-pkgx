@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `cog`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `cog`
-
 ## Available Versions
 
 <details>

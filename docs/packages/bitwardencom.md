@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `bw`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `bw`
-
 ## Available Versions
 
 <details>

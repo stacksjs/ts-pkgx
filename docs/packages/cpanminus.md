@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `cpanm`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `cpanm`
-
 ## Available Versions
 
 <details>

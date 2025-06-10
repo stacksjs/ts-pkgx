@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `pdm`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pdm`
-
 ## Available Versions
 
 <details>

@@ -31,12 +31,6 @@ This package provides the following executable programs:
 - `rustdoc`
 - `rustfmt`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `rust`
-
 ## Available Versions
 
 <details>

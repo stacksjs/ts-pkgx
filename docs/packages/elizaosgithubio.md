@@ -27,26 +27,25 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `eliza`
-- `elizaOS`
 - `elizaos`
 
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `0.25.19`, `0.25.9`, `0.25.8`, `0.1.9`, `0.1.8.1`
-- `0.1.7`
+- `1.0.8`, `1.0.7`, `1.0.6`, `1.0.5`, `0.25.19`
+- `0.25.9`, `0.25.8`, `0.1.9`, `0.1.8.1`, `0.1.7`
 
 </details>
 
-**Latest Version**: `0.25.19`
+**Latest Version**: `1.0.8`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +elizaOS.github.io@0.25.19 -- $SHELL -i
+sh <(curl https://pkgx.sh) +elizaOS.github.io@1.0.8 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -56,6 +55,7 @@ This package depends on:
 - `python.org>=2.7`
 - `nodejs.org~23.3`
 - `pnpm.io`
+- `bun.sh^1.2`
 
 ## Related Packages
 

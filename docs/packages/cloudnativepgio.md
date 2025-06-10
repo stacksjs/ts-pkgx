@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `kubectl-cnpg`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `kubectl-cnpg`
-
 ## Available Versions
 
 <details>

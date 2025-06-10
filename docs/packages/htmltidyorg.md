@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `tidy`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `tidy`
-
 ## Available Versions
 
 <details>

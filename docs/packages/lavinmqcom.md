@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `lavinmqctl`
 - `lavinmqperf`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `lavinmq`
-
 ## Available Versions
 
 <details>

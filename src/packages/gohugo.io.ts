@@ -3,7 +3,7 @@
  *
  * @domain `gohugo.io`
  * @programs `hugo`
- * @version `0.147.7` (122 versions available)
+ * @version `0.147.8` (123 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gohugo-io.md
  *
  * @install `sh <(curl https://pkgx.sh) hugo`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "hugo"
  * console.log(pkg.description) // "The world’s fastest framework for building webs..."
  * console.log(pkg.programs)    // ["hugo"]
- * console.log(pkg.versions[0]) // "0.147.7" (latest)
+ * console.log(pkg.versions[0]) // "0.147.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gohugo-io.md
@@ -62,6 +62,7 @@ export const hugoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.147.8',
     '0.147.7',
     '0.147.6',
     '0.147.5',

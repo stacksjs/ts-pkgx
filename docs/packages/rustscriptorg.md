@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `rust-script`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `rust-script`
-
 ## Available Versions
 
 <details>

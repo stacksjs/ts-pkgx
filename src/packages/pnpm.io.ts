@@ -3,7 +3,7 @@
  *
  * @domain `pnpm.io`
  * @programs `pnpm`, `pnpx`
- * @version `10.11.0` (162 versions available)
+ * @version `10.12.1` (165 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pnpm-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "pnp"
  * console.log(pkg.description) // "Fast, disk space efficient package manager"
  * console.log(pkg.programs)    // ["pnpm", "pnpx"]
- * console.log(pkg.versions[0]) // "10.11.0" (latest)
+ * console.log(pkg.versions[0]) // "10.12.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pnpm-io.md
@@ -70,6 +70,9 @@ export const pnpPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '10.12.1',
+    '10.12.0',
+    '10.11.1',
     '10.11.0',
     '10.10.0',
     '10.9.0',

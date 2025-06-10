@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `lz4`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `lz4`
-
 ## Available Versions
 
 <details>

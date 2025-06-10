@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `bashly`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `bashly`
-
 ## Available Versions
 
 <details>

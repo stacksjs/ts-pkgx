@@ -22,33 +22,27 @@ This package provides the following executable programs:
 
 - `gitleaks`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gitleaks`
-
 ## Available Versions
 
 <details>
-<summary>Show all 27 versions</summary>
+<summary>Show all 29 versions</summary>
 
-- `8.27.0`, `8.26.0`, `8.25.1`, `8.25.0`, `8.24.3`
-- `8.24.2`, `8.24.0`, `8.23.3`, `8.23.2`, `8.23.1`
-- `8.23.0`, `8.22.1`, `8.22.0`, `8.21.4`, `8.21.3`
-- `8.21.2`, `8.21.1`, `8.21.0`, `8.20.1`, `8.20.0`
-- `8.19.3`, `8.19.2`, `8.19.1`, `8.18.4`, `8.18.3`
-- `8.18.2`, `8.18.1`
+- `8.27.2`, `8.27.1`, `8.27.0`, `8.26.0`, `8.25.1`
+- `8.25.0`, `8.24.3`, `8.24.2`, `8.24.0`, `8.23.3`
+- `8.23.2`, `8.23.1`, `8.23.0`, `8.22.1`, `8.22.0`
+- `8.21.4`, `8.21.3`, `8.21.2`, `8.21.1`, `8.21.0`
+- `8.20.1`, `8.20.0`, `8.19.3`, `8.19.2`, `8.19.1`
+- `8.18.4`, `8.18.3`, `8.18.2`, `8.18.1`
 
 </details>
 
-**Latest Version**: `8.27.0`
+**Latest Version**: `8.27.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gitleaks.io@8.27.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gitleaks.io@8.27.2 -- $SHELL -i
 ```
 
 ## Usage Examples

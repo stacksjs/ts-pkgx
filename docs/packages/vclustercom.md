@@ -22,34 +22,28 @@ This package provides the following executable programs:
 
 - `vcluster`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `vcluster`
-
 ## Available Versions
 
 <details>
-<summary>Show all 33 versions</summary>
+<summary>Show all 34 versions</summary>
 
-- `0.25.0`, `0.24.1`, `0.24.0`, `0.23.2`, `0.23.1`
-- `0.23.0`, `0.22.6`, `0.22.5`, `0.22.4`, `0.22.3`
-- `0.22.2`, `0.22.1`, `0.22.0`, `0.21.6`, `0.21.5`
-- `0.21.4`, `0.21.3`, `0.21.2`, `0.21.1`, `0.21.0`
-- `0.20.6`, `0.20.5`, `0.20.4`, `0.20.3`, `0.20.2`
-- `0.20.1`, `0.20.0`, `0.19.9`, `0.19.8`, `0.19.7`
-- `0.19.6`, `0.19.5`, `0.19.4`
+- `0.25.1`, `0.25.0`, `0.24.1`, `0.24.0`, `0.23.2`
+- `0.23.1`, `0.23.0`, `0.22.6`, `0.22.5`, `0.22.4`
+- `0.22.3`, `0.22.2`, `0.22.1`, `0.22.0`, `0.21.6`
+- `0.21.5`, `0.21.4`, `0.21.3`, `0.21.2`, `0.21.1`
+- `0.21.0`, `0.20.6`, `0.20.5`, `0.20.4`, `0.20.3`
+- `0.20.2`, `0.20.1`, `0.20.0`, `0.19.9`, `0.19.8`
+- `0.19.7`, `0.19.6`, `0.19.5`, `0.19.4`
 
 </details>
 
-**Latest Version**: `0.25.0`
+**Latest Version**: `0.25.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +vcluster.com@0.25.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +vcluster.com@0.25.1 -- $SHELL -i
 ```
 
 ## Dependencies

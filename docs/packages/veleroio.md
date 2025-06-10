@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `velero`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `velero`
-
 ## Available Versions
 
 <details>

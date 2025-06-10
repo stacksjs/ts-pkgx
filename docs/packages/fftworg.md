@@ -25,12 +25,6 @@ This package provides the following executable programs:
 - `fftwf-wisdom`
 - `fftwl-wisdom`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `fftw`
-
 ## Available Versions
 
 <details>

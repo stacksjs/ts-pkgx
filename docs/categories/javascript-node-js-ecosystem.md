@@ -1,12 +1,12 @@
 # JavaScript & Node.js Ecosystem
 
-*11 packages in this category*
+*10 packages in this category*
 
 Packages related to javascript & node.js ecosystem.
 
 ## Packages
 
-### [angular.dev](../packages/angulardev.md) (ng)
+### [angular.dev](../packages/angulardev.md)
 
 CLI tool for Angular
 
@@ -16,7 +16,7 @@ CLI tool for Angular
 
 ---
 
-### [bun.sh](../packages/bunsh.md) (bun)
+### [bun.sh](../packages/bunsh.md)
 
 Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
 
@@ -36,7 +36,7 @@ The 1.x line is frozen - features and bugfixes now happen on https://github.com/
 
 ---
 
-### [deno.land](../packages/denoland.md) (deno)
+### [deno.land](../packages/denoland.md)
 
 A modern runtime for JavaScript and TypeScript.
 
@@ -56,17 +56,7 @@ Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 
 ---
 
-### [node](../packages/node.md) (node)
-
-Platform built on V8 to build network applications
-
-**Programs**: node
-
-**Install**: `sh <(curl https://pkgx.sh) node`
-
----
-
-### [nodejs.org](../packages/nodejsorg.md) (node)
+### [nodejs.org](../packages/nodejsorg.md)
 
 Platform built on V8 to build network applications
 
@@ -86,7 +76,7 @@ the package manager for JavaScript
 
 ---
 
-### [pnpm.io](../packages/pnpmio.md) (pnp)
+### [pnpm.io](../packages/pnpmio.md)
 
 Fast, disk space efficient package manager
 
@@ -96,7 +86,7 @@ Fast, disk space efficient package manager
 
 ---
 
-### [vitejs.dev](../packages/vitejsdev.md) (vite)
+### [vitejs.dev](../packages/vitejsdev.md)
 
 Next generation frontend tooling. It's fast!
 
@@ -106,7 +96,7 @@ Next generation frontend tooling. It's fast!
 
 ---
 
-### [yarnpkg.com](../packages/yarnpkgcom.md) (yarn)
+### [yarnpkg.com](../packages/yarnpkgcom.md)
 
 📦🐈 Active development trunk for Yarn ⚒
 

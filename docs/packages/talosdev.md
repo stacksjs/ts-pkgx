@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `talosctl`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `talosctl`
-
 ## Available Versions
 
 <details>

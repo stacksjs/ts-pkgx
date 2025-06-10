@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `aria2c`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `aria2c`
-
 ## Available Versions
 
 <details>

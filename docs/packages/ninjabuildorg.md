@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `ninja`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ninja`
-
 ## Available Versions
 
 <details>

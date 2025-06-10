@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `trip`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `trip`
-
 ## Available Versions
 
 <details>

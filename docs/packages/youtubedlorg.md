@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `youtube-dl`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `youtube-dl`
-
 ## Available Versions
 
 <details>

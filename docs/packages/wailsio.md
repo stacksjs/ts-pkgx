@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `wails`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `wails`
-
 ## Available Versions
 
 <details>

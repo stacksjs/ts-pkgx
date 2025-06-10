@@ -3,7 +3,7 @@
  *
  * @domain `mpg123.de`
  * @programs `mpg123`
- * @version `1.32.10` (12 versions available)
+ * @version `1.33.0` (13 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mpg123-de.md
  *
  * @install `sh <(curl https://pkgx.sh) mpg123`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "mpg123"
  * console.log(pkg.description) // "MP3 player for Linux and UNIX"
  * console.log(pkg.programs)    // ["mpg123"]
- * console.log(pkg.versions[0]) // "1.32.10" (latest)
+ * console.log(pkg.versions[0]) // "1.33.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mpg123-de.md
@@ -62,6 +62,7 @@ export const mpg123Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.33.0',
     '1.32.10',
     '1.32.9',
     '1.32.8',

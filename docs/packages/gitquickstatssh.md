@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `git-quick-stats`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `git-quick-stats`
-
 ## Available Versions
 
 <details>

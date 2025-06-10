@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `doctave`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `doctave`
-
 ## Available Versions
 
 <details>

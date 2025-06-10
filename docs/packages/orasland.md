@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `oras`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `oras`
-
 ## Available Versions
 
 <details>

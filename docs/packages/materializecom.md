@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `mz`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mz`
-
 ## Available Versions
 
 <details>

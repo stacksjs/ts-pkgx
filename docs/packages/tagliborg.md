@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `taglib-config`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `taglib-config`
-
 ## Available Versions
 
 <details>

@@ -32,12 +32,6 @@ This package provides the following executable programs:
 - `ansible-test`
 - `ansible-vault`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ansible`
-
 ## Available Versions
 
 <details>

@@ -1,6 +1,6 @@
 # macfuse.github.io
 
-> Package information available on pkgx.dev
+> macFUSE umbrella repository
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx macfuse.github.io
+sh <(curl https://pkgx.sh) +macfuse.github.io -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx macfuse.github.io
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `4.10.2`
+
+</details>
+
+**Latest Version**: `4.10.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +macfuse.github.io@4.10.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

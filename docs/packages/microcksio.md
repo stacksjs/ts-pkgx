@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `microcks-cli`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `microcks-cli`
-
 ## Available Versions
 
 <details>

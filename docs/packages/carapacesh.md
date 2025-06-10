@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `carapace`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `carapace`
-
 ## Available Versions
 
 <details>

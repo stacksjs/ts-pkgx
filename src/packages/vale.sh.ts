@@ -3,7 +3,7 @@
  *
  * @domain `vale.sh`
  * @programs `vale`
- * @version `3.11.2` (44 versions available)
+ * @version `3.12.0` (45 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vale-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) vale`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "vale"
  * console.log(pkg.description) // ":pencil: A markup-aware linter for prose built ..."
  * console.log(pkg.programs)    // ["vale"]
- * console.log(pkg.versions[0]) // "3.11.2" (latest)
+ * console.log(pkg.versions[0]) // "3.12.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/vale-sh.md
@@ -62,6 +62,7 @@ export const valePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.12.0',
     '3.11.2',
     '3.11.1',
     '3.11.0',

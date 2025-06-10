@@ -25,12 +25,6 @@ This package provides the following executable programs:
 - `srt-live-transmit`
 - `srt-tunnel`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `srt`
-
 ## Available Versions
 
 <details>

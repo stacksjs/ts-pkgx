@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `sfcgal-config`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `sfcgal-config`
-
 ## Available Versions
 
 <details>

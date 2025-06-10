@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `pwgen`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pwgen`
-
 ## Available Versions
 
 <details>

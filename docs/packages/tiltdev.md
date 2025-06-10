@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `tilt`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `tilt`
-
 ## Available Versions
 
 <details>

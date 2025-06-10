@@ -3,7 +3,7 @@
  *
  * @domain `libgit2.org`
  * @programs `git2`
- * @version `1.9.0` (11 versions available)
+ * @version `1.9.1` (12 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libgit2-org.md
  *
  * @install `sh <(curl https://pkgx.sh) git2`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "git2"
  * console.log(pkg.description) // "A cross-platform, linkable library implementati..."
  * console.log(pkg.programs)    // ["git2"]
- * console.log(pkg.versions[0]) // "1.9.0" (latest)
+ * console.log(pkg.versions[0]) // "1.9.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libgit2-org.md
@@ -69,6 +69,7 @@ export const git2Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.9.1',
     '1.9.0',
     '1.8.4',
     '1.8.3',

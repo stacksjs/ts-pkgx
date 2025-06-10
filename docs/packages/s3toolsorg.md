@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `s3cmd`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `s3cmd`
-
 ## Available Versions
 
 <details>

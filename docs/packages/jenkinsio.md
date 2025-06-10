@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `jenkins-lts`
 - `jenkins-lts-cli`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `jenkins-lts`
-
 ## Available Versions
 
 <details>

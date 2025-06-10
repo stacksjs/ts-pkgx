@@ -22,30 +22,24 @@ This package provides the following executable programs:
 
 - `mpg123`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mpg123`
-
 ## Available Versions
 
 <details>
-<summary>Show all 12 versions</summary>
+<summary>Show all 13 versions</summary>
 
-- `1.32.10`, `1.32.9`, `1.32.8`, `1.32.7`, `1.32.6`
-- `1.32.5`, `1.32.4`, `1.32.3`, `1.32.2`, `1.32.1`
-- `1.32.0`, `1.31.2`
+- `1.33.0`, `1.32.10`, `1.32.9`, `1.32.8`, `1.32.7`
+- `1.32.6`, `1.32.5`, `1.32.4`, `1.32.3`, `1.32.2`
+- `1.32.1`, `1.32.0`, `1.31.2`
 
 </details>
 
-**Latest Version**: `1.32.10`
+**Latest Version**: `1.33.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mpg123.de@1.32.10 -- $SHELL -i
+sh <(curl https://pkgx.sh) +mpg123.de@1.33.0 -- $SHELL -i
 ```
 
 ## Usage Examples

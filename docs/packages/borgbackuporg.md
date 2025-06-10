@@ -1,11 +1,11 @@
-# borgbackup.org
+# borg
 
-> Package information available on pkgx.dev
+> Deduplicating archiver with compression and authenticated encryption.
 
 ## Package Information
 
 - **Domain**: `borgbackup.org`
-- **Name**: `borgbackup.org`
+- **Name**: `borg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/borgbackup.org/package.yml)
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with pkgx
-pkgx borgbackup.org
+sh <(curl https://pkgx.sh) +borgbackup.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `borg`
+- `borgfs`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.4.1`
+
+</details>
+
+**Latest Version**: `1.4.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +borgbackup.org@1.4.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `pkgx.sh^1`
+- `github.com/Cyan4973/xxHash^0.8`
 
 ## Usage Examples
 

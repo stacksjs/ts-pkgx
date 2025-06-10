@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `vault`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `vault`
-
 ## Available Versions
 
 <details>

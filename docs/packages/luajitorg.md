@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `luajit`
 - `luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;.`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `luajit`
-
 ## Available Versions
 
 <details>

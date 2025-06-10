@@ -3,7 +3,7 @@
  *
  * @domain `sing-box.app`
  * @programs `sing-box`
- * @version `1.11.11` (49 versions available)
+ * @version `1.11.13` (51 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/sing-box-app.md
  *
  * @install `sh <(curl https://pkgx.sh) sing-box`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "sing-box"
  * console.log(pkg.description) // "The universal proxy platform"
  * console.log(pkg.programs)    // ["sing-box"]
- * console.log(pkg.versions[0]) // "1.11.11" (latest)
+ * console.log(pkg.versions[0]) // "1.11.13" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sing-box-app.md
@@ -62,6 +62,8 @@ export const singboxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.11.13',
+    '1.11.12',
     '1.11.11',
     '1.11.10',
     '1.11.9',

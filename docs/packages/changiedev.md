@@ -22,29 +22,23 @@ This package provides the following executable programs:
 
 - `changie`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `changie`
-
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `1.21.1`, `1.21.0`, `1.20.1`, `1.20.0`, `1.19.1`
-- `1.19.0`, `1.18.0`
+- `1.22.0`, `1.21.1`, `1.21.0`, `1.20.1`, `1.20.0`
+- `1.19.1`, `1.19.0`, `1.18.0`
 
 </details>
 
-**Latest Version**: `1.21.1`
+**Latest Version**: `1.22.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +changie.dev@1.21.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +changie.dev@1.22.0 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -55,12 +55,6 @@ This package provides the following executable programs:
 - `qemu-system-xtensa`
 - `qemu-system-xtensaeb`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `qemu`
-
 ## Available Versions
 
 <details>

@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `cairo-trace`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `cairo-trace`
-
 ## Available Versions
 
 <details>

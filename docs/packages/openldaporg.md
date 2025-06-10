@@ -31,12 +31,6 @@ This package provides the following executable programs:
 - `ldapvc`
 - `ldapwhoami`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ldap`
-
 ## Available Versions
 
 <details>

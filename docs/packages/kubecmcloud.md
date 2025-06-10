@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `kubecm`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `kubecm`
-
 ## Available Versions
 
 <details>

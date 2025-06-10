@@ -22,33 +22,28 @@ This package provides the following executable programs:
 
 - `bytebase`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `bytebase`
-
 ## Available Versions
 
 <details>
-<summary>Show all 30 versions</summary>
+<summary>Show all 31 versions</summary>
 
-- `3.6.2`, `3.6.1`, `3.6.0`, `3.5.2`, `3.5.1`
-- `3.5.0`, `3.4.1`, `3.4.0`, `3.3.1`, `3.3.0`
-- `3.2.0`, `3.1.2`, `3.1.1`, `3.1.0`, `3.0.1`
-- `3.0.0`, `2.23.1`, `2.23.0`, `2.22.3`, `2.22.2`
-- `2.22.1`, `2.22.0`, `2.21.0`, `2.20.0`, `2.19.0`
-- `2.18.0`, `2.17.0`, `2.16.0`, `2.15.0`, `2.14.1`
+- `3.7.0`, `3.6.2`, `3.6.1`, `3.6.0`, `3.5.2`
+- `3.5.1`, `3.5.0`, `3.4.1`, `3.4.0`, `3.3.1`
+- `3.3.0`, `3.2.0`, `3.1.2`, `3.1.1`, `3.1.0`
+- `3.0.1`, `3.0.0`, `2.23.1`, `2.23.0`, `2.22.3`
+- `2.22.2`, `2.22.1`, `2.22.0`, `2.21.0`, `2.20.0`
+- `2.19.0`, `2.18.0`, `2.17.0`, `2.16.0`, `2.15.0`
+- `2.14.1`
 
 </details>
 
-**Latest Version**: `3.6.2`
+**Latest Version**: `3.7.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +bytebase.com@3.6.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +bytebase.com@3.7.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `laravel`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `laravel`
-
 ## Available Versions
 
 <details>

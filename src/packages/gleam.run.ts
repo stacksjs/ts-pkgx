@@ -3,7 +3,7 @@
  *
  * @domain `gleam.run`
  * @programs `gleam`
- * @version `1.10.0` (42 versions available)
+ * @version `1.11.1` (44 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gleam-run.md
  *
  * @install `sh <(curl https://pkgx.sh) gleam`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "gleam"
  * console.log(pkg.description) // "⭐️ A friendly language for building type-safe, ..."
  * console.log(pkg.programs)    // ["gleam"]
- * console.log(pkg.versions[0]) // "1.10.0" (latest)
+ * console.log(pkg.versions[0]) // "1.11.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gleam-run.md
@@ -62,6 +62,8 @@ export const gleamPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.11.1',
+    '1.11.0',
     '1.10.0',
     '1.9.1',
     '1.9.0',
