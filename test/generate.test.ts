@@ -169,6 +169,12 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
 
   describe('generateIndex', () => {
     test('should generate index.ts file', async () => {
+      // List files BEFORE generation
+      if (fs.existsSync(tempPackagesDir)) {
+        const filesBefore = fs.readdirSync(tempPackagesDir)
+        console.error(`DEBUG TEST: files BEFORE generation: ${filesBefore.join(', ')}`)
+      }
+
       const indexPath = await generateIndex(tempPackagesDir)
 
       // Debug logging for test
@@ -176,17 +182,47 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
       console.error(`DEBUG TEST: typeof indexPath=${typeof indexPath}`)
       console.error(`DEBUG TEST: tempPackagesDir=${tempPackagesDir}`)
 
+      // List files AFTER generation
+      if (fs.existsSync(tempPackagesDir)) {
+        const filesAfter = fs.readdirSync(tempPackagesDir)
+        console.error(`DEBUG TEST: files AFTER generation: ${filesAfter.join(', ')}`)
+      }
+
       expect(indexPath).toBeDefined()
       expect(indexPath).toContain('index.ts')
 
+      // Check if the file actually exists before trying to read it
+      const expectedPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+      console.error(`DEBUG TEST: expected file path: ${expectedPath}`)
+      console.error(`DEBUG TEST: file exists: ${fs.existsSync(expectedPath)}`)
+
+      // If file doesn't exist, wait a bit and retry (in case of race condition or slow CI)
+      if (!fs.existsSync(expectedPath)) {
+        console.error(`File not found immediately, waiting 100ms and retrying...`)
+        await new Promise(resolve => setTimeout(resolve, 100))
+
+        if (!fs.existsSync(expectedPath)) {
+          console.error(`CRITICAL: Generation function returned path but file was not created!`)
+          console.error(`  Returned: ${indexPath}`)
+          console.error(`  Expected at: ${expectedPath}`)
+          console.error(`  Working directory: ${process.cwd()}`)
+          console.error(`  Temp packages dir exists: ${fs.existsSync(tempPackagesDir)}`)
+          console.error(`  Temp packages dir contents: ${fs.existsSync(tempPackagesDir) ? fs.readdirSync(tempPackagesDir).join(', ') : 'N/A'}`)
+
+          // Try to call the generation function again to see if it works the second time
+          console.error(`Attempting generation again...`)
+          const retryPath = await generateIndex(tempPackagesDir)
+          console.error(`Retry returned: ${retryPath}`)
+          const retryExpectedPath = retryPath && path.isAbsolute(retryPath) ? retryPath : path.resolve(tempPackagesDir, retryPath || 'index.ts')
+          console.error(`Retry expected path: ${retryExpectedPath}`)
+          console.error(`Retry file exists: ${fs.existsSync(retryExpectedPath)}`)
+
+          throw new Error(`CRITICAL: Generated file does not exist at ${expectedPath}. Function returned: ${indexPath}. Retry also failed. This indicates the generation function failed silently.`)
+        }
+      }
+
       // Use helper to find the file
       const { content } = findGeneratedFile('index.ts', indexPath!, tempPackagesDir)
-
-      // List files in tempPackagesDir to debug
-      if (fs.existsSync(tempPackagesDir)) {
-        const files = fs.readdirSync(tempPackagesDir)
-        console.error(`DEBUG TEST: files in tempPackagesDir: ${files.join(', ')}`)
-      }
 
       // Should contain imports (using named imports, not namespace imports)
       expect(content).toContain('import {')
@@ -282,6 +318,33 @@ export type ${varNameBase.charAt(0).toUpperCase()}${varNameBase.slice(1)}Package
 
       expect(aliasesPath).toBeDefined()
       expect(aliasesPath).toContain('aliases.ts')
+
+      // Check if the file actually exists before trying to read it
+      const expectedPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+      console.error(`DEBUG ALIASES: expected file path: ${expectedPath}`)
+      console.error(`DEBUG ALIASES: file exists: ${fs.existsSync(expectedPath)}`)
+
+      // If file doesn't exist, wait a bit and retry (in case of race condition or slow CI)
+      if (!fs.existsSync(expectedPath)) {
+        console.error(`Aliases file not found immediately, waiting 100ms and retrying...`)
+        await new Promise(resolve => setTimeout(resolve, 100))
+
+        if (!fs.existsSync(expectedPath)) {
+          console.error(`CRITICAL: Aliases generation function returned path but file was not created!`)
+          console.error(`  Returned: ${aliasesPath}`)
+          console.error(`  Expected at: ${expectedPath}`)
+
+          // Try to call the generation function again
+          console.error(`Attempting aliases generation again...`)
+          const retryPath = await generateAliases(tempPackagesDir)
+          console.error(`Aliases retry returned: ${retryPath}`)
+          const retryExpectedPath = retryPath && path.isAbsolute(retryPath) ? retryPath : path.resolve(tempPackagesDir, retryPath || 'aliases.ts')
+          console.error(`Aliases retry expected path: ${retryExpectedPath}`)
+          console.error(`Aliases retry file exists: ${fs.existsSync(retryExpectedPath)}`)
+
+          throw new Error(`CRITICAL: Generated aliases file does not exist at ${expectedPath}. Function returned: ${aliasesPath}. Retry also failed.`)
+        }
+      }
 
       // Use helper to find the file
       const { content } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
@@ -753,8 +816,19 @@ export type CaseVariationsPackage = typeof caseVariationsPackage
     test('should generate proper JSDoc documentation', async () => {
       const indexPath = await generateIndex(tempPackagesDir)
 
-      // Handle both absolute and relative paths
+      // Handle both absolute and relative paths with error checking
       const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+
+      // Ensure file exists before reading
+      if (!fs.existsSync(resolvedIndexPath)) {
+        console.error(`JSDoc test: File not found at ${resolvedIndexPath}, retrying generation...`)
+        const retryPath = await generateIndex(tempPackagesDir)
+        const retryResolvedPath = retryPath && path.isAbsolute(retryPath) ? retryPath : path.resolve(tempPackagesDir, retryPath || 'index.ts')
+        if (!fs.existsSync(retryResolvedPath)) {
+          throw new Error(`JSDoc test: Generated file does not exist after retry at ${retryResolvedPath}`)
+        }
+      }
+
       const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
       // Should have basic documentation comments
@@ -793,8 +867,19 @@ export type SpecialcomPackage = typeof specialcomPackage
 
       const indexPath = await generateIndex(tempPackagesDir)
 
-      // Handle both absolute and relative paths
+      // Handle both absolute and relative paths with error checking
       const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
+
+      // Ensure file exists before reading
+      if (!fs.existsSync(resolvedIndexPath)) {
+        console.error(`Special chars test: File not found at ${resolvedIndexPath}, retrying generation...`)
+        const retryPath = await generateIndex(tempPackagesDir)
+        const retryResolvedPath = retryPath && path.isAbsolute(retryPath) ? retryPath : path.resolve(tempPackagesDir, retryPath || 'index.ts')
+        if (!fs.existsSync(retryResolvedPath)) {
+          throw new Error(`Special chars test: Generated file does not exist after retry at ${retryResolvedPath}`)
+        }
+      }
+
       const content = fs.readFileSync(resolvedIndexPath, 'utf-8')
 
       // Should handle special characters without breaking
@@ -816,9 +901,26 @@ export type SpecialcomPackage = typeof specialcomPackage
       console.error(`DEBUG INTEGRATION: indexPath isAbsolute=${path.isAbsolute(indexPath!)}`)
       console.error(`DEBUG INTEGRATION: aliasesPath isAbsolute=${path.isAbsolute(aliasesPath)}`)
 
-      // Handle both absolute and relative paths
+      // Handle both absolute and relative paths with error checking
       const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
       const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+
+      // Check files exist with retry logic for CI
+      if (!fs.existsSync(resolvedIndexPath)) {
+        console.error(`Integration test: Index file not found at ${resolvedIndexPath}, retrying...`)
+        await new Promise(resolve => setTimeout(resolve, 100))
+        if (!fs.existsSync(resolvedIndexPath)) {
+          throw new Error(`Integration test: Index file not found after retry at ${resolvedIndexPath}`)
+        }
+      }
+
+      if (!fs.existsSync(resolvedAliasesPath)) {
+        console.error(`Integration test: Aliases file not found at ${resolvedAliasesPath}, retrying...`)
+        await new Promise(resolve => setTimeout(resolve, 100))
+        if (!fs.existsSync(resolvedAliasesPath)) {
+          throw new Error(`Integration test: Aliases file not found after retry at ${resolvedAliasesPath}`)
+        }
+      }
 
       // All files should exist
       expect(fs.existsSync(resolvedIndexPath)).toBe(true)
@@ -841,9 +943,21 @@ export type SpecialcomPackage = typeof specialcomPackage
       console.error(`DEBUG CONSISTENCY: indexPath=${indexPath}`)
       console.error(`DEBUG CONSISTENCY: aliasesPath=${aliasesPath}`)
 
-      // Handle both absolute and relative paths
+      // Handle both absolute and relative paths with error checking
       const resolvedIndexPath = path.isAbsolute(indexPath!) ? indexPath! : path.resolve(tempPackagesDir, indexPath!)
       const resolvedAliasesPath = path.isAbsolute(aliasesPath) ? aliasesPath : path.resolve(tempPackagesDir, aliasesPath)
+
+      // Check files exist before reading
+      if (!fs.existsSync(resolvedIndexPath) || !fs.existsSync(resolvedAliasesPath)) {
+        console.error(`Consistency test: Files missing, waiting and retrying...`)
+        await new Promise(resolve => setTimeout(resolve, 100))
+        if (!fs.existsSync(resolvedIndexPath)) {
+          throw new Error(`Consistency test: Index file missing at ${resolvedIndexPath}`)
+        }
+        if (!fs.existsSync(resolvedAliasesPath)) {
+          throw new Error(`Consistency test: Aliases file missing at ${resolvedAliasesPath}`)
+        }
+      }
 
       const indexContent = fs.readFileSync(resolvedIndexPath, 'utf-8')
       const aliasesContent = fs.readFileSync(resolvedAliasesPath, 'utf-8')
