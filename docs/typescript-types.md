@@ -41,12 +41,12 @@ import { nodePackage } from 'ts-pkgx'
 
 // Each package object contains:
 const packageInfo = {
-  name: 'nodejs.org',           // Primary domain name
-  description: '...',           // Package description
-  aliases: ['node', 'npm'],     // Alternative names
-  programs: ['node', 'npm'],    // Exported programs
-  versions: ['18.0.0', ...],    // Available versions
-  latestVersion: '20.10.0',     // Latest stable version
+  name: 'nodejs.org', // Primary domain name
+  description: '...', // Package description
+  aliases: ['node', 'npm'], // Alternative names
+  programs: ['node', 'npm'], // Exported programs
+  versions: ['18.0.0', '...'], // Available versions
+  latestVersion: '20.10.0', // Latest stable version
   // ... additional metadata
 }
 ```
@@ -94,10 +94,10 @@ Domain names are converted to valid TypeScript property names by replacing dots 
 
 ```typescript
 // Domain -> TypeScript Property
-'nodejs.org'           → nodejs_org
-'python.org'           → python_org
-'aws.amazon.com/cli'   → aws_amazon_com_cli
-'agwa.name/git-crypt'  → agwa_name_git_crypt
+'nodejs.org' // → nodejs_org
+'python.org' // → python_org
+'aws.amazon.com/cli' // → aws_amazon_com_cli
+'agwa.name/git-crypt' // → agwa_name_git_crypt
 ```
 
 ## Practical Examples
@@ -271,7 +271,7 @@ const pkg = getPackageSafely(userInput) // Safely typed
 
 ### With React Components
 
-```typescript
+```tsx
 import type { Packages } from 'ts-pkgx'
 import { pantry } from 'ts-pkgx'
 
@@ -287,10 +287,14 @@ function PackageCard({ packageKey }: PackageCardProps) {
       <h3>{pkg.name}</h3>
       <p>{pkg.description}</p>
       <div>
-        <strong>Latest:</strong> {pkg.latestVersion}
+        <strong>Latest:</strong>
+        {' '}
+        {pkg.latestVersion}
       </div>
       <div>
-        <strong>Aliases:</strong> {pkg.aliases.join(', ')}
+        <strong>Aliases:</strong>
+        {' '}
+        {pkg.aliases.join(', ')}
       </div>
     </div>
   )
@@ -346,7 +350,7 @@ Take advantage of TypeScript's autocomplete for package discovery:
 import { pantry } from 'ts-pkgx'
 
 // TypeScript will suggest all available packages
-const pkg = pantry. // Autocomplete shows all options
+// const pkg = pantry. // Autocomplete shows all options
 ```
 
 ### 3. Use Keyof for Dynamic Access
