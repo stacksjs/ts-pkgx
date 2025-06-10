@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 531
 - **Categories**: 13
-- **Last Updated**: 2025-06-10T13:26:33.881Z
+- **Last Updated**: 2025-06-10T17:19:56.757Z
 
 ## Table of Contents
 
@@ -208,7 +208,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[aspellnet](./packages/aspellnet.md)** () | Spell checker with better logic than ispell | aspell, aspell-import, precat, ... (+6) | 0.60.8.1 (+1) | `pkgx aspell.net` |
 | **[assimporg](./packages/assimporg.md)** () | The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified a... | assimp | 6.0.2 (+8) | `pkgx assimp` |
 | **[astgrepgithubio](./packages/astgrepgithubio.md)** () | ⚡A CLI tool for code structural search, lint and rewriting. Written in Rust | sg, ast-grep | 0.38.5 (+81) | `pkgx ast-grep.github.io` |
-| **[atlasgoio](./packages/atlasgoio.md)** () | Manage your database schema as code | atlas | 0.34.0 (+20) | `pkgx atlas` |
+| **[atlasgoio](./packages/atlasgoio.md)** () | Manage your database schema as code | atlas | 0.35.0 (+21) | `pkgx atlas` |
 | **[attrsorg](./packages/attrsorg.md)** () | Python Classes Without Boilerplate | - | 25.3.0 (+6) | `pkgx attrs.org` |
 | **[augeasnet](./packages/augeasnet.md)** () | A configuration editing tool and API | augmatch, augparse, augprint, ... (+2) | 1.14.1 (+1) | `pkgx augeas.net` |
 | **[aux4io](./packages/aux4io.md)** () | elevate your imagination | aux4 | 5.0.14 (+5) | `pkgx aux4` |
@@ -238,14 +238,14 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.439 (+473) | `pkgx checkov` |
 | **[chezmoiio](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.6 (+75) | `pkgx chezmoi` |
 | **[circlecicom](./packages/circlecicom.md)** () | Enables you to reproduce the CircleCI environment locally | circleci | 0.1.32367 (+56) | `pkgx circleci` |
-| **[cligithubcom](./packages/cligithubcom.md)** () | GitHub’s official command line tool | gh | 2.74.0 (+75) | `pkgx gh` |
+| **[cligithubcom](./packages/cligithubcom.md)** () | GitHub’s official command line tool | gh | 2.74.1 (+76) | `pkgx gh` |
 | **[clisporg](./packages/clisporg.md)** () | GNU CLISP, a Common Lisp implementation | clisp | 2.49.92 (+0) | `pkgx clisp` |
 | **[clogtoolgithubio](./packages/clogtoolgithubio.md)** () | Colorized pattern-matching log tail utility | clog | 0.9.3 (+0) | `pkgx clog` |
 | **[cloudnativepgio](./packages/cloudnativepgio.md)** () | CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases with... | kubectl-cnpg | 1.26.0 (+5) | `pkgx kubectl-cnpg` |
 | **[cnqueryio](./packages/cnqueryio.md)** () | open source, cloud-native, graph-based asset inventory | cnquery | 11.58.0 (+146) | `pkgx cnquery` |
 | **[cocoapodsorg](./packages/cocoapodsorg.md)** () | Dependency manager for Cocoa projects | pod | 1.16.2 (+12) | `pkgx pod` |
 | **[cocogittoio](./packages/cocogittoio.md)** () | The Conventional Commits toolbox | cog | 6.3.0 (+6) | `pkgx cog` |
-| **[codercom](./packages/codercom.md)** () | Tool for provisioning self-hosted development environments with Terraform | coder | 2.23.0 (+67) | `pkgx coder` |
+| **[codercom](./packages/codercom.md)** () | Tool for provisioning self-hosted development environments with Terraform | coder | 2.23.1 (+68) | `pkgx coder` |
 | **[cointopsh](./packages/cointopsh.md)** () | A fast and lightweight interactive terminal based UI application for tracking cryptocurrencies 🚀 | cointop | 1.6.10 (+0) | `pkgx cointop` |
 | **[conftestdev](./packages/conftestdev.md)** () | Write tests against structured configuration data using the Open Policy Agent Rego query language | conftest | 0.61.2 (+18) | `pkgx conftest` |
 | **[convcogithubio](./packages/convcogithubio.md)** () | Conventional commits, changelog, versioning, validation | convco | 0.6.2 (+8) | `pkgx convco` |
@@ -256,11 +256,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cscopesourceforgeio](./packages/cscopesourceforgeio.md)** () | Tool for browsing source code | cscope, ocs | 15.9.0 (+0) | `pkgx cscope.sourceforge.io` |
 | **[ctagsio](./packages/ctagsio.md)** () | A maintained ctags implementation | ctags | 6.2.0 (+1) | `pkgx ctags` |
 | **[ctopsh](./packages/ctopsh.md)** () | Top-like interface for container metrics | ctop | 0.7.7 (+0) | `pkgx ctop` |
-| **[cuelangorg](./packages/cuelangorg.md)** () | The home of the CUE language! Validate and define text-based and dynamic configuration | cue | 0.13.0 (+18) | `pkgx cue` |
+| **[cuelangorg](./packages/cuelangorg.md)** () | The home of the CUE language! Validate and define text-based and dynamic configuration | cue | 0.13.1 (+19) | `pkgx cue` |
 | **[curlieio](./packages/curlieio.md)** () | The power of curl, the ease of use of httpie. | curlie | 1.8.2 (+1) | `pkgx curlie` |
 | **[cythonorg](./packages/cythonorg.md)** () | Compiler for writing C extensions for the Python language | cython | 3.1.2 (+19) | `pkgx cython` |
 | **[d2langcom](./packages/d2langcom.md)** () | D2 is a modern diagram scripting language that turns text to diagrams. | d2 | 0.7.0 (+10) | `pkgx d2` |
-| **[daggerio](./packages/daggerio.md)** () | An engine to run your pipelines in containers | dagger | 0.18.9 (+89) | `pkgx dagger` |
+| **[daggerio](./packages/daggerio.md)** () | An engine to run your pipelines in containers | dagger | 0.18.10 (+90) | `pkgx dagger` |
 | **[databrickscom](./packages/databrickscom.md)** () | Databricks CLI | databricks | 0.254.0 (+52) | `pkgx databricks` |
 | **[daytonaio](./packages/daytonaio.md)** () | The Open Source Dev Environment Manager. | daytona | 0.100.0 (+75) | `pkgx daytona` |
 | **[dblabdanvergaracom](./packages/dblabdanvergaracom.md)** () | The database client every command line junkie deserves. | dblab | 0.32.0 (+14) | `pkgx dblab` |
@@ -345,7 +345,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[htmltidyorg](./packages/htmltidyorg.md)** () | The granddaddy of HTML tools, with support for modern standards | tidy | 5.8.0 (+0) | `pkgx tidy` |
 | **[htsliborg](./packages/htsliborg.md)** () | C library for high-throughput sequencing data formats | bgzip, htsfile, tabix | 1.22.0 (+5) | `pkgx htslib.org` |
 | **[httpieio](./packages/httpieio.md)** () | 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, co... | http, httpie, https | 3.2.4 (+3) | `pkgx httpie.io` |
-| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface-cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.32.4 (+52) | `pkgx huggingface/cli` |
+| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface-cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.32.5 (+53) | `pkgx huggingface/cli` |
 | **[hunspellgithubio](./packages/hunspellgithubio.md)** () | Spell checker and morphological analyzer | analyze, chmorph, hunspell, ... (+4) | 1.7.2 (+0) | `pkgx hunspell` |
 | **[hurldev](./packages/hurldev.md)** () | Run and Test HTTP Requests with plain text and curl | hurl, hurlfmt | 6.1.1 (+8) | `pkgx hurl` |
 | **[imagemagickorg](./packages/imagemagickorg.md)** () | ImageMagick is a powerful, open-source software suite for creating, editing, converting, and mani... | animate, compare, composite, ... (+13) | 7.1.1.27 (+2) | `pkgx imagemagick.org` |
@@ -402,7 +402,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[libgeosorg](./packages/libgeosorg.md)** () | Geometry Engine, Open Source | geos-config | 3.13.1 (+14) | `pkgx geos-config` |
 | **[libgit2org](./packages/libgit2org.md)** () | A cross-platform, linkable library implementation of Git that you can use in your application. | git2 | 1.9.1 (+11) | `pkgx git2` |
 | **[libimobiledeviceorg](./packages/libimobiledeviceorg.md)** () | A cross-platform protocol library to communicate with iOS devices | idevicedate | 1.3.0 (+0) | `pkgx idevicedate` |
-| **[libjpegturboorg](./packages/libjpegturboorg.md)** () | Main libjpeg-turbo repository | cjpeg, djpeg, jpegtran, ... (+3) | 3.1.0 (+6) | `pkgx libjpeg-turbo.org` |
+| **[libjpegturboorg](./packages/libjpegturboorg.md)** () | Main libjpeg-turbo repository | cjpeg, djpeg, jpegtran, ... (+3) | 3.1.1 (+7) | `pkgx libjpeg-turbo.org` |
 | **[liblqrwikidotcom](./packages/liblqrwikidotcom.md)** () | Liquid Rescale library | - | 0.4.3 (+1) | `pkgx liblqr.wikidot.com` |
 | **[libpngorg](./packages/libpngorg.md)** () | LIBPNG: Portable Network Graphics support, official libpng repository | libpng-config, libpng16-config, png-fix-itxt, ... (+1) | 1.6.48 (+10) | `pkgx libpng.org` |
 | **[libraworg](./packages/libraworg.md)** () | Library for reading RAW files from digital photo cameras | 4channels, dcraw_emu, dcraw_half, ... (+8) | 0.21.4 (+3) | `pkgx libraw.org` |
@@ -472,7 +472,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[nushellsh](./packages/nushellsh.md)** () | Modern shell for the GitHub era | nu | 0.104.1 (+45) | `pkgx nu` |
 | **[oauth2proxygithubio](./packages/oauth2proxygithubio.md)** () | A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more ide... | oauth2-proxy | 7.9.0 (+6) | `pkgx oauth2-proxy` |
 | **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.193 (+177) | `pkgx odigos` |
-| **[ohmyposhdev](./packages/ohmyposhdev.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.6.0 (+286) | `pkgx oh-my-posh` |
+| **[ohmyposhdev](./packages/ohmyposhdev.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.6.1 (+287) | `pkgx oh-my-posh` |
 | **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.0 (+96) | `pkgx ollama` |
 | **[onefetchdev](./packages/onefetchdev.md)** () | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch` |
 | **[openapigeneratortech](./packages/openapigeneratortech.md)** () | OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, docum... | openapi-generator | 7.13.0 (+11) | `pkgx openapi-generator` |
@@ -600,7 +600,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[templguide](./packages/templguide.md)** () | A language for writing HTML user interfaces in Go. | templ | 0.3.898 (+26) | `pkgx templ` |
 | **[temporalio](./packages/temporalio.md)** () | Command-line interface for running Temporal Server and interacting with Workflows, Activities, Na... | temporal | 1.3.0 (+13) | `pkgx temporal` |
 | **[terraformdocsio](./packages/terraformdocsio.md)** () | Generate documentation from Terraform modules in various output formats | terraform-docs | 0.20.0 (+4) | `pkgx terraform-docs` |
-| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.1 (+345) | `pkgx terragrunt` |
+| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.3 (+347) | `pkgx terragrunt` |
 | **[terratagio](./packages/terratagio.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag` |
 | **[tesseractocrgithubio](./packages/tesseractocrgithubio.md)** () | Tesseract Open Source OCR Engine (main repository) | tesseract | 5.5.1 (+8) | `pkgx tesseract` |
 | **[tidbytcom](./packages/tidbytcom.md)** () | Build apps for pixel-based displays ✨ | pixlet | 0.34.0 (+19) | `pkgx pixlet` |

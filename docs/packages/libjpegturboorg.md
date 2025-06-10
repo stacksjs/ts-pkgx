@@ -30,20 +30,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `3.1.0`, `3.0.4`, `3.0.3`, `3.0.2`, `3.0.1`
-- `3.0.0`, `2.1.5.1`
+- `3.1.1`, `3.1.0`, `3.0.4`, `3.0.3`, `3.0.2`
+- `3.0.1`, `3.0.0`, `2.1.5.1`
 
 </details>
 
-**Latest Version**: `3.1.0`
+**Latest Version**: `3.1.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libjpeg/turbo.org@3.1.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libjpeg/turbo.org@3.1.1 -- $SHELL -i
 ```
 
 ## Usage Examples

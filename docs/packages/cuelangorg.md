@@ -25,22 +25,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 19 versions</summary>
+<summary>Show all 20 versions</summary>
 
-- `0.13.0`, `0.12.1`, `0.12.0`, `0.11.2`, `0.11.1`
-- `0.11.0`, `0.10.1`, `0.10.0`, `0.9.2`, `0.9.1`
-- `0.9.0`, `0.8.2`, `0.8.1`, `0.8.0`, `0.7.1`
-- `0.7.0`, `0.6.0`, `0.5.0`, `0.4.3`
+- `0.13.1`, `0.13.0`, `0.12.1`, `0.12.0`, `0.11.2`
+- `0.11.1`, `0.11.0`, `0.10.1`, `0.10.0`, `0.9.2`
+- `0.9.1`, `0.9.0`, `0.8.2`, `0.8.1`, `0.8.0`
+- `0.7.1`, `0.7.0`, `0.6.0`, `0.5.0`, `0.4.3`
 
 </details>
 
-**Latest Version**: `0.13.0`
+**Latest Version**: `0.13.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cuelang.org@0.13.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +cuelang.org@0.13.1 -- $SHELL -i
 ```
 
 ## Usage Examples

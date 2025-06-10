@@ -3,7 +3,7 @@
  *
  * @domain `atlasgo.io`
  * @programs `atlas`
- * @version `0.34.0` (21 versions available)
+ * @version `0.35.0` (22 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/atlasgo-io.md
  *
  * @install `sh <(curl https://pkgx.sh) atlas`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "atlas"
  * console.log(pkg.description) // "Manage your database schema as code"
  * console.log(pkg.programs)    // ["atlas"]
- * console.log(pkg.versions[0]) // "0.34.0" (latest)
+ * console.log(pkg.versions[0]) // "0.35.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/atlasgo-io.md
@@ -62,6 +62,7 @@ export const atlasPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.35.0',
     '0.34.0',
     '0.33.0',
     '0.32.0',
