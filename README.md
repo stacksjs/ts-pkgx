@@ -143,8 +143,8 @@ Made with 💙
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/ts-pkgx?style=flat-square
 [npm-version-href]: https://npmjs.com/package/ts-pkgx
-[github-actions-src]: https://img.shields.io/github/actions/workflow/status/stacksjs/ts-starter/ci.yml?style=flat-square&branch=main
-[github-actions-href]: https://github.com/stacksjs/ts-starter/actions?query=workflow%3Aci
+[github-actions-src]: https://img.shields.io/github/actions/workflow/status/stacksjs/ts-pkgx/ci.yml?style=flat-square&branch=main
+[github-actions-href]: https://github.com/stacksjs/ts-pkgx/actions?query=workflow%3Aci
 
-<!-- [codecov-src]: https://img.shields.io/codecov/c/gh/stacksjs/ts-starter/main?style=flat-square
-[codecov-href]: https://codecov.io/gh/stacksjs/ts-starter -->
+<!-- [codecov-src]: https://img.shields.io/codecov/c/gh/stacksjsts-pkgx/main?style=flat-square
+[codecov-href]: https://codecov.io/gh/stacksjs/ts-pkgx -->
