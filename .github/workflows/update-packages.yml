@@ -411,8 +411,8 @@ jobs:
           # Configure git for the action - use a PAT if available to trigger subsequent workflows
           if [ -n "${{ secrets.PAT_TOKEN }}" ]; then
             echo "Using PAT token to trigger subsequent workflows"
-            git config --global user.name "buddy-bot"
-            git config --global user.email "bot@stacksjs.org"
+            git config --global user.name "chrisbbreuer"
+            git config --global user.email "chrisbreuer93@gmail.com"
             git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
           else
             echo "Using default GitHub token (subsequent workflows may not trigger)"
