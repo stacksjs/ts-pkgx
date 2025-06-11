@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-11T15:16:01.080Z
+- **Last Updated**: 2025-06-11T19:15:41.446Z
 
 ## Table of Contents
 
@@ -346,7 +346,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[htmltidyorg](./packages/htmltidyorg.md)** () | The granddaddy of HTML tools, with support for modern standards | tidy | 5.8.0 (+0) | `pkgx tidy` |
 | **[htsliborg](./packages/htsliborg.md)** () | C library for high-throughput sequencing data formats | bgzip, htsfile, tabix | 1.22.0 (+5) | `pkgx htslib.org` |
 | **[httpieio](./packages/httpieio.md)** () | 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, co... | http, httpie, https | 3.2.4 (+3) | `pkgx httpie.io` |
-| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface-cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.32.6 (+54) | `pkgx huggingface/cli` |
+| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface-cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.33.0 (+55) | `pkgx huggingface/cli` |
 | **[hunspellgithubio](./packages/hunspellgithubio.md)** () | Spell checker and morphological analyzer | analyze, chmorph, hunspell, ... (+4) | 1.7.2 (+0) | `pkgx hunspell` |
 | **[hurldev](./packages/hurldev.md)** () | Run and Test HTTP Requests with plain text and curl | hurl, hurlfmt | 6.1.1 (+8) | `pkgx hurl` |
 | **[imagemagickorg](./packages/imagemagickorg.md)** () | ImageMagick is a powerful, open-source software suite for creating, editing, converting, and mani... | animate, compare, composite, ... (+13) | 7.1.1.27 (+2) | `pkgx imagemagick.org` |
@@ -390,7 +390,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[lamesourceforgeio](./packages/lamesourceforgeio.md)** () | High quality MPEG Audio Layer III (MP3) encoder | lame | 3.100.0 (+0) | `pkgx lame` |
 | **[langchaincom](./packages/langchaincom.md)** () | 🦜🔗 Build context-aware reasoning applications | f2py, jsondiff, jsonpatch, ... (+4) | 0.1.16 (+28) | `pkgx langchain.com` |
 | **[laravelcom](./packages/laravelcom.md)** () | The Laravel application installer. | laravel | 5.15.0 (+15) | `pkgx laravel` |
-| **[lavinmqcom](./packages/lavinmqcom.md)** () | Lightweight and fast AMQP (0-9-1) server | lavinmq, lavinmqctl, lavinmqperf | 2.3.0 (+6) | `pkgx lavinmq` |
+| **[lavinmqcom](./packages/lavinmqcom.md)** () | Lightweight and fast AMQP (0-9-1) server | lavinmq, lavinmqctl, lavinmqperf | 2.4.0 (+7) | `pkgx lavinmq` |
 | **[leolangorg](./packages/leolangorg.md)** () | 🦁 The Leo Programming Language. A Programming Language for Formally Verified, Zero-Knowledge App... | leo | 2.6.1 (+12) | `pkgx leo` |
 | **[leptonicaorg](./packages/leptonicaorg.md)** () | Leptonica is an open source library containing software that is broadly useful for image processi... | convertfilestopdf, convertfilestops, convertformat, ... (+7) | 1.85.0 (+3) | `pkgx leptonica.org` |
 | **[lftpyarru](./packages/lftpyarru.md)** () | sophisticated command line file transfer program (ftp, http, sftp, fish, torrent) | lftp, lftpget | 4.9.3 (+2) | `pkgx lftp` |
@@ -578,7 +578,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[srtallianceorg](./packages/srtallianceorg.md)** () | Secure, Reliable, Transport | srt-ffplay, srt-file-transmit, srt-live-transmit, ... (+1) | 1.5.4 (+2) | `pkgx srt` |
 | **[sshxio](./packages/sshxio.md)** () | Fast, collaborative live terminal sharing over the web | sshx | 2023.11.14 (+0) | `pkgx sshx` |
 | **[starshiprs](./packages/starshiprs.md)** () | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |
-| **[steampipeio](./packages/steampipeio.md)** () | Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required. | steampipe | 2.0.0 (+34) | `pkgx steampipe` |
+| **[steampipeio](./packages/steampipeio.md)** () | Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required. | steampipe | 2.0.1 (+35) | `pkgx steampipe` |
 | **[straceio](./packages/straceio.md)** () | strace is a diagnostic, debugging and instructional userspace utility for Linux | strace | 6.2.0 (+0) | `pkgx strace` |
 | **[streamlinkgithubio](./packages/streamlinkgithubio.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.4.0 (+19) | `pkgx streamlink` |
 | **[stripecom](./packages/stripecom.md)** () | A command-line tool for Stripe | stripe | 1.27.0 (+50) | `pkgx stripe` |

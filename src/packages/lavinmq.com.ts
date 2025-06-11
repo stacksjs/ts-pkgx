@@ -3,7 +3,7 @@
  *
  * @domain `lavinmq.com`
  * @programs `lavinmq`, `lavinmqctl`, `lavinmqperf`
- * @version `2.3.0` (7 versions available)
+ * @version `2.4.0` (8 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lavinmq-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +lavinmq.com -- $SHELL -i`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "lavinmq"
  * console.log(pkg.description) // "Lightweight and fast AMQP (0-9-1) server"
  * console.log(pkg.programs)    // ["lavinmq", "lavinmqctl", ...]
- * console.log(pkg.versions[0]) // "2.3.0" (latest)
+ * console.log(pkg.versions[0]) // "2.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/lavinmq-com.md
@@ -74,6 +74,7 @@ export const lavinmqPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.4.0',
     '2.3.0',
     '2.2.0',
     '2.1.0',
