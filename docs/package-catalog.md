@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-11T02:45:46.986Z
+- **Last Updated**: 2025-06-11T09:16:15.177Z
 
 ## Table of Contents
 
@@ -285,7 +285,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[elementsprojectorg](./packages/elementsprojectorg.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.0 (+8) | `pkgx elementsproject.org` |
 | **[elizaosgithubio](./packages/elizaosgithubio.md)** (eliza, elizaos) | Autonomous agents for everyone | eliza | 1.0.8 (+9) | `pkgx elizaOS` |
 | **[elvsh](./packages/elvsh.md)** () | Powerful scripting language & versatile interactive shell | elvish | 0.21.0 (+3) | `pkgx elvish` |
-| **[encoredev](./packages/encoredev.md)** () | Open Source Development Platform for building robust type-safe distributed systems with declarati... | encore, git-remote-encore | 1.48.3 (+53) | `pkgx encore.dev` |
+| **[encoredev](./packages/encoredev.md)** () | Open Source Development Platform for building robust type-safe distributed systems with declarati... | encore, git-remote-encore | 1.48.4 (+54) | `pkgx encore.dev` |
 | **[endoflifedate](./packages/endoflifedate.md)** () | CLI to show end-of-life dates for a number of products. | eol | 0.22.0 (+8) | `pkgx eol` |
 | **[epsilonprojectsourceforgeio](./packages/epsilonprojectsourceforgeio.md)** () | Powerful wavelet image compressor | epsilon | 0.9.2 (+0) | `pkgx epsilon` |
 | **[etcdio](./packages/etcdio.md)** () | Distributed reliable key-value store for the most critical data of a distributed system | etcd, etcdctl | 3.6.1 (+11) | `pkgx etcd` |
@@ -346,7 +346,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[htmltidyorg](./packages/htmltidyorg.md)** () | The granddaddy of HTML tools, with support for modern standards | tidy | 5.8.0 (+0) | `pkgx tidy` |
 | **[htsliborg](./packages/htsliborg.md)** () | C library for high-throughput sequencing data formats | bgzip, htsfile, tabix | 1.22.0 (+5) | `pkgx htslib.org` |
 | **[httpieio](./packages/httpieio.md)** () | 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, co... | http, httpie, https | 3.2.4 (+3) | `pkgx httpie.io` |
-| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface-cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.32.5 (+53) | `pkgx huggingface/cli` |
+| **[huggingfaceco](./packages/huggingfaceco.md)** (huggingface-cli) | The official Python client for the Huggingface Hub. | huggingface-cli | 0.32.6 (+54) | `pkgx huggingface/cli` |
 | **[hunspellgithubio](./packages/hunspellgithubio.md)** () | Spell checker and morphological analyzer | analyze, chmorph, hunspell, ... (+4) | 1.7.2 (+0) | `pkgx hunspell` |
 | **[hurldev](./packages/hurldev.md)** () | Run and Test HTTP Requests with plain text and curl | hurl, hurlfmt | 6.1.1 (+8) | `pkgx hurl` |
 | **[imagemagickorg](./packages/imagemagickorg.md)** () | ImageMagick is a powerful, open-source software suite for creating, editing, converting, and mani... | animate, compare, composite, ... (+13) | 7.1.1.27 (+2) | `pkgx imagemagick.org` |
