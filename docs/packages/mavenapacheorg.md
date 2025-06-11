@@ -27,20 +27,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `3.9.9`, `3.9.8`, `3.9.7`, `3.9.6`, `3.9.5`
-- `3.9.4`, `3.9.3`, `3.8.7`, `3.6.3`
+- `3.9.10`, `3.9.9`, `3.9.8`, `3.9.7`, `3.9.6`
+- `3.9.5`, `3.9.4`, `3.9.3`, `3.8.7`, `3.6.3`
 
 </details>
 
-**Latest Version**: `3.9.9`
+**Latest Version**: `3.9.10`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +maven.apache.org@3.9.9 -- $SHELL -i
+sh <(curl https://pkgx.sh) +maven.apache.org@3.9.10 -- $SHELL -i
 ```
 
 ## Dependencies

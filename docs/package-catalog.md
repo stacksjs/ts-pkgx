@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-11T00:16:21.542Z
+- **Last Updated**: 2025-06-11T02:45:46.986Z
 
 ## Table of Contents
 
@@ -80,7 +80,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[cmakeorg](./packages/cmakeorg.md)** () | Mirror of CMake upstream repository | cmake, ccmake, cpack, ... (+1) | 4.0.2 (+58) | `pkgx cmake.org` |
 | **[gradleorg](./packages/gradleorg.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 8.14.2 (+17) | `pkgx gradle` |
-| **[mavenapacheorg](./packages/mavenapacheorg.md)** () | Java-based project management | mvn, mvnDebug, mvnyjp | 3.9.9 (+8) | `pkgx mvn` |
+| **[mavenapacheorg](./packages/mavenapacheorg.md)** () | Java-based project management | mvn, mvnDebug, mvnyjp | 3.9.10 (+9) | `pkgx mvn` |
 | **[mesonbuildcom](./packages/mesonbuildcom.md)** () | Fast and user friendly build system | meson | 1.8.2 (+27) | `pkgx meson` |
 | **[ninjabuildorg](./packages/ninjabuildorg.md)** () | Small build system for use with gyp or CMake | ninja | 1.12.1 (+3) | `pkgx ninja` |
 | **[npmjscom](./packages/npmjscom.md)** () | the package manager for JavaScript | npm, npx | 11.4.1 (+58) | `pkgx npmjs.com` |
