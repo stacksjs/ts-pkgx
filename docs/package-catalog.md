@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-11T09:16:15.177Z
+- **Last Updated**: 2025-06-11T11:17:27.227Z
 
 ## Table of Contents
 
@@ -118,7 +118,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[istioio](./packages/istioio.md)** () | Connect, secure, control, and observe services. | istioctl | 1.26.1 (+40) | `pkgx istioctl` |
 | **[nomadprojectio](./packages/nomadprojectio.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.10.2 (+13) | `pkgx nomad` |
 | **[podmanio](./packages/podmanio.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.1 (+38) | `pkgx podman` |
-| **[terraformio](./packages/terraformio.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.12.1 (+73) | `pkgx terraform` |
+| **[terraformio](./packages/terraformio.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.12.2 (+74) | `pkgx terraform` |
 | **[traefikio](./packages/traefikio.md)** () | The Cloud Native Application Proxy | traefik | 3.4.1 (+57) | `pkgx traefik` |
 
 ## Cloud Platforms & Services
