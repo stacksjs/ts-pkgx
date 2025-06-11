@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-11T11:17:27.227Z
+- **Last Updated**: 2025-06-11T13:25:49.815Z
 
 ## Table of Contents
 
@@ -235,7 +235,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cfsslorg](./packages/cfsslorg.md)** () | CFSSL: Cloudflare's PKI and TLS toolkit | cfssl, cfssl-bundle, cfssl-certinfo, ... (+5) | 1.6.5 (+0) | `pkgx cfssl.org` |
 | **[cgalorg](./packages/cgalorg.md)** () | The public CGAL repository, see the README below | cgal_create_CMakeLists, cgal_create_cmake_script, cgal_make_macosx_app | 6.0.1 (+4) | `pkgx cgal` |
 | **[changiedev](./packages/changiedev.md)** () | Automated changelog tool for preparing releases with lots of customization options | changie | 1.22.0 (+7) | `pkgx changie` |
-| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.439 (+473) | `pkgx checkov` |
+| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.440 (+474) | `pkgx checkov` |
 | **[chezmoiio](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.6 (+75) | `pkgx chezmoi` |
 | **[chompbuildcom](./packages/chompbuildcom.md)** () | 'JS Make' - parallel task runner for the frontend ecosystem with a JS extension system. | chomp | 0.2.23 (+0) | `pkgx chomp` |
 | **[circlecicom](./packages/circlecicom.md)** () | Enables you to reproduce the CircleCI environment locally | circleci | 0.1.32367 (+56) | `pkgx circleci` |
@@ -472,7 +472,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[numpyorg](./packages/numpyorg.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.0 (+17) | `pkgx f2py` |
 | **[nushellsh](./packages/nushellsh.md)** () | Modern shell for the GitHub era | nu | 0.105.1 (+47) | `pkgx nu` |
 | **[oauth2proxygithubio](./packages/oauth2proxygithubio.md)** () | A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more ide... | oauth2-proxy | 7.9.0 (+6) | `pkgx oauth2-proxy` |
-| **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.193 (+177) | `pkgx odigos` |
+| **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.195 (+178) | `pkgx odigos` |
 | **[ohmyposhdev](./packages/ohmyposhdev.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.6.1 (+287) | `pkgx oh-my-posh` |
 | **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.0 (+96) | `pkgx ollama` |
 | **[onefetchdev](./packages/onefetchdev.md)** () | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch` |
@@ -578,7 +578,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[srtallianceorg](./packages/srtallianceorg.md)** () | Secure, Reliable, Transport | srt-ffplay, srt-file-transmit, srt-live-transmit, ... (+1) | 1.5.4 (+2) | `pkgx srt` |
 | **[sshxio](./packages/sshxio.md)** () | Fast, collaborative live terminal sharing over the web | sshx | 2023.11.14 (+0) | `pkgx sshx` |
 | **[starshiprs](./packages/starshiprs.md)** () | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |
-| **[steampipeio](./packages/steampipeio.md)** () | Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required. | steampipe | 1.1.4 (+32) | `pkgx steampipe` |
+| **[steampipeio](./packages/steampipeio.md)** () | Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required. | steampipe | 1.2.0 (+33) | `pkgx steampipe` |
 | **[straceio](./packages/straceio.md)** () | strace is a diagnostic, debugging and instructional userspace utility for Linux | strace | 6.2.0 (+0) | `pkgx strace` |
 | **[streamlinkgithubio](./packages/streamlinkgithubio.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.4.0 (+19) | `pkgx streamlink` |
 | **[stripecom](./packages/stripecom.md)** () | A command-line tool for Stripe | stripe | 1.27.0 (+50) | `pkgx stripe` |
