@@ -3,7 +3,7 @@
  *
  * @domain `angular.dev`
  * @programs `ng`
- * @version `20.0.1` (105 versions available)
+ * @version `20.0.2` (108 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/angular-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) ng`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "ng"
  * console.log(pkg.description) // "CLI tool for Angular"
  * console.log(pkg.programs)    // ["ng"]
- * console.log(pkg.versions[0]) // "20.0.1" (latest)
+ * console.log(pkg.versions[0]) // "20.0.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/angular-dev.md
@@ -69,8 +69,10 @@ export const ngPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '20.0.2',
     '20.0.1',
     '20.0.0',
+    '19.2.15',
     '19.2.14',
     '19.2.13',
     '19.2.12',
@@ -104,6 +106,7 @@ export const ngPackage = {
     '19.0.2',
     '19.0.1',
     '19.0.0',
+    '18.2.20',
     '18.2.19',
     '18.2.18',
     '18.2.17',

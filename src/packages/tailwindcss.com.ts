@@ -3,7 +3,7 @@
  *
  * @domain `tailwindcss.com`
  * @programs `tailwindcss`
- * @version `4.1.8` (42 versions available)
+ * @version `4.1.9` (43 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tailwindcss-com.md
  *
  * @install `sh <(curl https://pkgx.sh) tailwindcss`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "tailwindcss"
  * console.log(pkg.description) // "A utility-first CSS framework for rapid UI deve..."
  * console.log(pkg.programs)    // ["tailwindcss"]
- * console.log(pkg.versions[0]) // "4.1.8" (latest)
+ * console.log(pkg.versions[0]) // "4.1.9" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tailwindcss-com.md
@@ -62,6 +62,7 @@ export const tailwindcssPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.1.9',
     '4.1.8',
     '4.1.7',
     '4.1.6',

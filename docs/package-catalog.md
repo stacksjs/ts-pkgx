@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-11T13:25:49.815Z
+- **Last Updated**: 2025-06-11T15:16:01.080Z
 
 ## Table of Contents
 
@@ -61,7 +61,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[angulardev](./packages/angulardev.md)** () | CLI tool for Angular | ng | 20.0.1 (+104) | `pkgx ng` |
+| **[angulardev](./packages/angulardev.md)** () | CLI tool for Angular | ng | 20.0.2 (+107) | `pkgx ng` |
 | **[bunsh](./packages/bunsh.md)** () | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.15 (+118) | `pkgx bun` |
 | **[classicyarnpkgcom](./packages/classicyarnpkgcom.md)** () | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx classic.yarnpkg.com` |
 | **[denoland](./packages/denoland.md)** () | A modern runtime for JavaScript and TypeScript. | deno | 2.3.5 (+130) | `pkgx deno` |
@@ -262,7 +262,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cythonorg](./packages/cythonorg.md)** () | Compiler for writing C extensions for the Python language | cython | 3.1.2 (+19) | `pkgx cython` |
 | **[d2langcom](./packages/d2langcom.md)** () | D2 is a modern diagram scripting language that turns text to diagrams. | d2 | 0.7.0 (+10) | `pkgx d2` |
 | **[daggerio](./packages/daggerio.md)** () | An engine to run your pipelines in containers | dagger | 0.18.10 (+90) | `pkgx dagger` |
-| **[databrickscom](./packages/databrickscom.md)** () | Databricks CLI | databricks | 0.254.0 (+52) | `pkgx databricks` |
+| **[databrickscom](./packages/databrickscom.md)** () | Databricks CLI | databricks | 0.255.0 (+53) | `pkgx databricks` |
 | **[daytonaio](./packages/daytonaio.md)** () | The Open Source Dev Environment Manager. | daytona | 0.100.0 (+75) | `pkgx daytona` |
 | **[dblabdanvergaracom](./packages/dblabdanvergaracom.md)** () | The database client every command line junkie deserves. | dblab | 0.32.0 (+14) | `pkgx dblab` |
 | **[deepwisdomai](./packages/deepwisdomai.md)** (metagpt) | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx MetaGPT` |
@@ -578,7 +578,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[srtallianceorg](./packages/srtallianceorg.md)** () | Secure, Reliable, Transport | srt-ffplay, srt-file-transmit, srt-live-transmit, ... (+1) | 1.5.4 (+2) | `pkgx srt` |
 | **[sshxio](./packages/sshxio.md)** () | Fast, collaborative live terminal sharing over the web | sshx | 2023.11.14 (+0) | `pkgx sshx` |
 | **[starshiprs](./packages/starshiprs.md)** () | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |
-| **[steampipeio](./packages/steampipeio.md)** () | Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required. | steampipe | 1.2.0 (+33) | `pkgx steampipe` |
+| **[steampipeio](./packages/steampipeio.md)** () | Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required. | steampipe | 2.0.0 (+34) | `pkgx steampipe` |
 | **[straceio](./packages/straceio.md)** () | strace is a diagnostic, debugging and instructional userspace utility for Linux | strace | 6.2.0 (+0) | `pkgx strace` |
 | **[streamlinkgithubio](./packages/streamlinkgithubio.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.4.0 (+19) | `pkgx streamlink` |
 | **[stripecom](./packages/stripecom.md)** () | A command-line tool for Stripe | stripe | 1.27.0 (+50) | `pkgx stripe` |
@@ -589,8 +589,8 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[systemdio](./packages/systemdio.md)** () | The systemd System and Service Manager | busctl, coredumpctl, hostnamectl, ... (+52) | 257.6.0 (+25) | `pkgx systemd.io` |
 | **[tagliborg](./packages/tagliborg.md)** () | TagLib Audio Meta-Data Library | taglib-config | 2.1.0 (+4) | `pkgx taglib-config` |
 | **[tailcallrun](./packages/tailcallrun.md)** () | High Performance GraphQL Runtime | tailcall | 1.6.11 (+622) | `pkgx tailcall` |
-| **[tailwindcsscom](./packages/tailwindcsscom.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.8 (+41) | `pkgx tailwindcss` |
-| **[talosdev](./packages/talosdev.md)** () | CLI for out-of-band management of Kubernetes nodes created by Talos | talosctl | 1.10.3 (+26) | `pkgx talosctl` |
+| **[tailwindcsscom](./packages/tailwindcsscom.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.9 (+42) | `pkgx tailwindcss` |
+| **[talosdev](./packages/talosdev.md)** () | CLI for out-of-band management of Kubernetes nodes created by Talos | talosctl | 1.10.4 (+27) | `pkgx talosctl` |
 | **[taplotamasfedev](./packages/taplotamasfedev.md)** () | A TOML toolkit written in Rust | taplo | 0.10.0 (+4) | `pkgx taplo` |
 | **[tartrun](./packages/tartrun.md)** () | macOS and Linux VMs on Apple Silicon to use in CI and other automations | tart | 2.27.2 (+53) | `pkgx tart` |
 | **[taskfiledev](./packages/taskfiledev.md)** () | A task runner / simpler Make alternative written in Go | task | 3.44.0 (+30) | `pkgx task` |
@@ -601,7 +601,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[templguide](./packages/templguide.md)** () | A language for writing HTML user interfaces in Go. | templ | 0.3.898 (+26) | `pkgx templ` |
 | **[temporalio](./packages/temporalio.md)** () | Command-line interface for running Temporal Server and interacting with Workflows, Activities, Na... | temporal | 1.3.0 (+13) | `pkgx temporal` |
 | **[terraformdocsio](./packages/terraformdocsio.md)** () | Generate documentation from Terraform modules in various output formats | terraform-docs | 0.20.0 (+4) | `pkgx terraform-docs` |
-| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.3 (+347) | `pkgx terragrunt` |
+| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.4 (+348) | `pkgx terragrunt` |
 | **[terratagio](./packages/terratagio.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag` |
 | **[tesseractocrgithubio](./packages/tesseractocrgithubio.md)** () | Tesseract Open Source OCR Engine (main repository) | tesseract | 5.5.1 (+8) | `pkgx tesseract` |
 | **[tidbytcom](./packages/tidbytcom.md)** () | Build apps for pixel-based displays ✨ | pixlet | 0.34.0 (+19) | `pkgx pixlet` |
