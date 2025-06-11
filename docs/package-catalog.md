@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-10T21:16:21.966Z
+- **Last Updated**: 2025-06-11T00:16:21.542Z
 
 ## Table of Contents
 
@@ -231,7 +231,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[carapacesh](./packages/carapacesh.md)** () | Multi-shell multi-command argument completer | carapace | 1.3.2 (+10) | `pkgx carapace` |
 | **[caskreadthedocsio](./packages/caskreadthedocsio.md)** () | Project management tool for Emacs | cask | 0.9.0 (+0) | `pkgx cask` |
 | **[ccachedev](./packages/ccachedev.md)** () | Object-file caching compiler wrapper | ccache | 4.11.3 (+9) | `pkgx ccache` |
-| **[certbotefforg](./packages/certbotefforg.md)** () | Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on yo... | certbot | 4.0.0 (+16) | `pkgx certbot` |
+| **[certbotefforg](./packages/certbotefforg.md)** () | Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on yo... | certbot | 4.1.0 (+17) | `pkgx certbot` |
 | **[cfsslorg](./packages/cfsslorg.md)** () | CFSSL: Cloudflare's PKI and TLS toolkit | cfssl, cfssl-bundle, cfssl-certinfo, ... (+5) | 1.6.5 (+0) | `pkgx cfssl.org` |
 | **[cgalorg](./packages/cgalorg.md)** () | The public CGAL repository, see the README below | cgal_create_CMakeLists, cgal_create_cmake_script, cgal_make_macosx_app | 6.0.1 (+4) | `pkgx cgal` |
 | **[changiedev](./packages/changiedev.md)** () | Automated changelog tool for preparing releases with lots of customization options | changie | 1.22.0 (+7) | `pkgx changie` |
@@ -266,7 +266,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[daytonaio](./packages/daytonaio.md)** () | The Open Source Dev Environment Manager. | daytona | 0.100.0 (+75) | `pkgx daytona` |
 | **[dblabdanvergaracom](./packages/dblabdanvergaracom.md)** () | The database client every command line junkie deserves. | dblab | 0.32.0 (+14) | `pkgx dblab` |
 | **[deepwisdomai](./packages/deepwisdomai.md)** (metagpt) | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx MetaGPT` |
-| **[depotdev](./packages/depotdev.md)** () | 🖥️ Depot CLI, build your Docker images in the cloud | depot | 2.86.0 (+39) | `pkgx depot` |
+| **[depotdev](./packages/depotdev.md)** () | 🖥️ Depot CLI, build your Docker images in the cloud | depot | 2.87.0 (+40) | `pkgx depot` |
 | **[dgraphio](./packages/dgraphio.md)** () | high-performance graph database for real-time use cases | dgraph | 24.1.3 (+10) | `pkgx dgraph` |
 | **[dhalllangorg](./packages/dhalllangorg.md)** () | Interpreter for the Dhall language | dhall | 1.42.2 (+1) | `pkgx dhall` |
 | **[diggerdev](./packages/diggerdev.md)** () | Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI... | digger | 0.6.105 (+188) | `pkgx digger` |
