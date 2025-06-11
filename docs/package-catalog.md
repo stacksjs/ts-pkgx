@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-11T19:15:41.446Z
+- **Last Updated**: 2025-06-11T23:15:31.906Z
 
 ## Table of Contents
 
@@ -46,7 +46,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[nodejsorg](./packages/nodejsorg.md)** () | Platform built on V8 to build network applications | node | 24.2.0 (+137) | `pkgx node` |
 | **[perlorg](./packages/perlorg.md)** (perl) | Highly capable, feature-rich programming language | corelist, cpan, enc2xs, ... (+27) | 5.40.2 (+13) | `pkgx perl.org` |
 | **[phpnet](./packages/phpnet.md)** (php) | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.4.8 (+72) | `pkgx php.net` |
-| **[pythonorg](./packages/pythonorg.md)** () | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.13.4 (+149) | `pkgx python` |
+| **[pythonorg](./packages/pythonorg.md)** () | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.13.5 (+150) | `pkgx python` |
 | **[rubylangorg](./packages/rubylangorg.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.4 (+41) | `pkgx ruby-lang.org` |
 | **[rustlangorg](./packages/rustlangorg.md)** () | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.87.0 (+33) | `pkgx rust` |
 | **[scalalangorg](./packages/scalalangorg.md)** () | The Scala 3 compiler, also known as Dotty. | scalac, scala, scala-cli, ... (+2) | 3.7.1 (+8) | `pkgx scala-lang.org` |
@@ -78,7 +78,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[cmakeorg](./packages/cmakeorg.md)** () | Mirror of CMake upstream repository | cmake, ccmake, cpack, ... (+1) | 4.0.2 (+58) | `pkgx cmake.org` |
+| **[cmakeorg](./packages/cmakeorg.md)** () | Mirror of CMake upstream repository | cmake, ccmake, cpack, ... (+1) | 4.0.2 (+59) | `pkgx cmake.org` |
 | **[gradleorg](./packages/gradleorg.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 8.14.2 (+17) | `pkgx gradle` |
 | **[mavenapacheorg](./packages/mavenapacheorg.md)** () | Java-based project management | mvn, mvnDebug, mvnyjp | 3.9.10 (+9) | `pkgx mvn` |
 | **[mesonbuildcom](./packages/mesonbuildcom.md)** () | Fast and user friendly build system | meson | 1.8.2 (+27) | `pkgx meson` |
@@ -104,7 +104,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[redisio](./packages/redisio.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.2 (+36) | `pkgx redis` |
 | **[sqliteorg](./packages/sqliteorg.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.50.1 (+25) | `pkgx sqlite3` |
 | **[surrealdbcom](./packages/surrealdbcom.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+40) | `pkgx surreal` |
-| **[valkeyio](./packages/valkeyio.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 8.1.1 (+10) | `pkgx valkey` |
+| **[valkeyio](./packages/valkeyio.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 8.1.2 (+11) | `pkgx valkey` |
 
 ## DevOps & Infrastructure
 
@@ -156,7 +156,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.49.0 (+20) | `pkgx git` |
 | **[neovimio](./packages/neovimio.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** () | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
-| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1453 (+2026) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1455 (+2028) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
@@ -589,7 +589,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[systemdio](./packages/systemdio.md)** () | The systemd System and Service Manager | busctl, coredumpctl, hostnamectl, ... (+52) | 257.6.0 (+25) | `pkgx systemd.io` |
 | **[tagliborg](./packages/tagliborg.md)** () | TagLib Audio Meta-Data Library | taglib-config | 2.1.0 (+4) | `pkgx taglib-config` |
 | **[tailcallrun](./packages/tailcallrun.md)** () | High Performance GraphQL Runtime | tailcall | 1.6.11 (+622) | `pkgx tailcall` |
-| **[tailwindcsscom](./packages/tailwindcsscom.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.9 (+42) | `pkgx tailwindcss` |
+| **[tailwindcsscom](./packages/tailwindcsscom.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.10 (+43) | `pkgx tailwindcss` |
 | **[talosdev](./packages/talosdev.md)** () | CLI for out-of-band management of Kubernetes nodes created by Talos | talosctl | 1.10.4 (+27) | `pkgx talosctl` |
 | **[taplotamasfedev](./packages/taplotamasfedev.md)** () | A TOML toolkit written in Rust | taplo | 0.10.0 (+4) | `pkgx taplo` |
 | **[tartrun](./packages/tartrun.md)** () | macOS and Linux VMs on Apple Silicon to use in CI and other automations | tart | 2.27.2 (+53) | `pkgx tart` |
@@ -601,7 +601,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[templguide](./packages/templguide.md)** () | A language for writing HTML user interfaces in Go. | templ | 0.3.898 (+26) | `pkgx templ` |
 | **[temporalio](./packages/temporalio.md)** () | Command-line interface for running Temporal Server and interacting with Workflows, Activities, Na... | temporal | 1.3.0 (+13) | `pkgx temporal` |
 | **[terraformdocsio](./packages/terraformdocsio.md)** () | Generate documentation from Terraform modules in various output formats | terraform-docs | 0.20.0 (+4) | `pkgx terraform-docs` |
-| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.4 (+348) | `pkgx terragrunt` |
+| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.5 (+349) | `pkgx terragrunt` |
 | **[terratagio](./packages/terratagio.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag` |
 | **[tesseractocrgithubio](./packages/tesseractocrgithubio.md)** () | Tesseract Open Source OCR Engine (main repository) | tesseract | 5.5.1 (+8) | `pkgx tesseract` |
 | **[tidbytcom](./packages/tidbytcom.md)** () | Build apps for pixel-based displays ✨ | pixlet | 0.34.0 (+19) | `pkgx pixlet` |
