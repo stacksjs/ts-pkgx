@@ -9,6 +9,473 @@ import { DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS
 // Lazy import of utils functions to avoid module loading issues
 
 /**
+ * Helper function to get domain as TypeScript variable name
+ */
+function getDomainAsTypescriptName(domain: string): string {
+  // First handle the case where there are slashes (nested paths)
+  if (domain.includes('/')) {
+    // Split into parent domain and subpath
+    const [parentDomain, ...subPathParts] = domain.split('/')
+    const subPath = subPathParts.join('/')
+
+    // Clean parent domain part (remove dots)
+    const cleanParent = parentDomain.replace(/\./g, '')
+
+    // For GitHub projects, include the full subpath in the variable name
+    if (parentDomain.includes('github.com')) {
+      // For GitHub repos, we need to keep all parts of the path
+      // and transform them into a valid variable name
+      // Replace all special characters and join everything into a single string
+      const fullPath = subPath.replace(/[/.-]/g, '')
+      return `${cleanParent}${fullPath}`.toLowerCase()
+    }
+
+    // For variable names, we need to remove special characters in the subpath
+    const cleanSubPath = subPath.replace(/[.-]/g, '')
+
+    // Join without a separator to make a valid variable name
+    return `${cleanParent}${cleanSubPath}`.toLowerCase()
+  }
+
+  // For regular domains (no slashes), just remove dots
+  return domain.replace(/\./g, '').toLowerCase()
+}
+
+/**
+ * Generates JSDoc comments for specific object properties
+ */
+function getPropertyJSDoc(key: string, value: any): string | null {
+  switch (key) {
+    case 'versions':
+      if (Array.isArray(value) && value.length > 0) {
+        return `  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */`
+      }
+      break
+
+    case 'programs':
+      if (Array.isArray(value) && value.length > 0) {
+        return `  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */`
+      }
+      break
+
+    case 'dependencies':
+      if (Array.isArray(value) && value.length > 0) {
+        return `  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */`
+      }
+      break
+
+    case 'companions':
+      if (Array.isArray(value) && value.length > 0) {
+        return `  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */`
+      }
+      break
+
+    case 'aliases':
+      if (Array.isArray(value) && value.length > 0) {
+        return `  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */`
+      }
+      break
+
+    case 'installCommand':
+      return `  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */`
+
+    case 'description':
+      return `  /**
+   * Brief description of what this package does.
+   */`
+
+    case 'domain':
+      return `  /**
+   * The canonical domain name for this package.
+   */`
+
+    case 'name':
+      return `  /**
+   * The display name of this package.
+   */`
+
+    default:
+      return null
+  }
+
+  return null
+}
+
+/**
+ * Format an object with 'as const' assertions for TypeScript
+ */
+function formatObjectWithAsConst(obj: Record<string, any>): string {
+  const lines: string[] = []
+
+  lines.push('{')
+
+  // Add each property with appropriate formatting and JSDoc comments
+  for (const [key, value] of Object.entries(obj)) {
+    // Skip fetchedAt property to keep it out of TypeScript files
+    if (key === 'fetchedAt')
+      continue
+
+    // Add JSDoc comments for specific properties
+    const jsdocComment = getPropertyJSDoc(key, value)
+    if (jsdocComment) {
+      lines.push(jsdocComment)
+    }
+
+    if (value === undefined) {
+      lines.push(`  ${key}: undefined,`)
+      continue
+    }
+
+    if (Array.isArray(value)) {
+      if (value.length === 0) {
+        // Empty array
+        lines.push(`  ${key}: [] as const,`)
+      }
+      else if (typeof value[0] === 'string') {
+        // For aliases array, filter out shell command patterns and package name duplicates
+        let filteredArray = value
+        if (key === 'aliases') {
+          const packageName = obj.name
+          filteredArray = value.filter((alias) => {
+            // Filter out shell command patterns
+            if (alias.includes('--') || alias.includes('$SHELL') || alias.includes('+') || alias.includes('(') || alias.includes(')')) {
+              return false
+            }
+            // Filter out aliases that are the same as the package name
+            if (alias === packageName) {
+              return false
+            }
+            return true
+          })
+        }
+
+        // Format string array with line breaks for readability
+        if (filteredArray.length === 0) {
+          lines.push(`  ${key}: [] as const,`)
+        }
+        else {
+          lines.push(`  ${key}: [`)
+          for (const item of filteredArray) {
+            lines.push(`    '${String(item).replace(/'/g, '\\\'')}',`)
+          }
+          lines.push(`  ] as const,`)
+        }
+      }
+      else {
+        // Other array types - convert JSON.stringify output to use single quotes
+        const jsonStr = JSON.stringify(value).replace(/"/g, '\'')
+        lines.push(`  ${key}: ${jsonStr} as const,`)
+      }
+    }
+    else if (typeof value === 'string') {
+      // String with 'as const' using single quotes
+      lines.push(`  ${key}: '${String(value).replace(/'/g, '\\\'')}' as const,`)
+    }
+    else if (typeof value === 'number' || typeof value === 'boolean') {
+      // Numbers and booleans with 'as const'
+      lines.push(`  ${key}: ${value} as const,`)
+    }
+    else if (value === null) {
+      // Null values
+      lines.push(`  ${key}: null,`)
+    }
+    else if (typeof value === 'object') {
+      // Nested objects
+      lines.push(`  ${key}: ${formatObjectWithAsConst(value)},`)
+    }
+    else {
+      // Fallback for other types - convert JSON.stringify output to use single quotes
+      const jsonStr = JSON.stringify(value).replace(/"/g, '\'')
+      lines.push(`  ${key}: ${jsonStr},`)
+    }
+  }
+
+  lines.push('}')
+
+  return lines.join('\n')
+}
+
+/**
+ * Generates comprehensive JSDoc documentation for a package
+ */
+function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, packageDisplayName: string): string {
+  const lines: string[] = []
+
+  lines.push('/**')
+
+  // Package title and description
+  if (packageInfo.description) {
+    lines.push(` * **${packageDisplayName}** - ${packageInfo.description}`)
+  }
+  else {
+    lines.push(` * **${packageDisplayName}** - pkgx package`)
+  }
+
+  lines.push(' *')
+
+  // Domain information
+  lines.push(` * @domain \`${packageInfo.domain || domainName}\``)
+
+  // Programs provided
+  if (packageInfo.programs && packageInfo.programs.length > 0) {
+    const programsList = packageInfo.programs.slice(0, 5).join('`, `')
+    const morePrograms = packageInfo.programs.length > 5 ? `, ... (+${packageInfo.programs.length - 5} more)` : ''
+    lines.push(` * @programs \`${programsList}\`${morePrograms}`)
+  }
+
+  // Latest version information
+  if (packageInfo.versions && packageInfo.versions.length > 0) {
+    lines.push(` * @version \`${packageInfo.versions[0]}\` (${packageInfo.versions.length} versions available)`)
+    lines.push(` * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/${domainName.replace(/\./g, '-')}.md`)
+  }
+
+  // Installation command
+  if (packageInfo.installCommand) {
+    lines.push(` *`)
+    lines.push(` * @install \`${packageInfo.installCommand}\``)
+  }
+
+  // Aliases - filter out invalid shell command patterns and separate package name from true aliases
+  if (packageInfo.aliases && packageInfo.aliases.length > 0) {
+    const validAliases = packageInfo.aliases.filter((alias) => {
+      // Filter out shell command patterns
+      return !alias.includes('--') && !alias.includes('$SHELL') && !alias.includes('+') && !alias.includes('(') && !alias.includes(')')
+    })
+
+    if (validAliases.length > 0) {
+      // Separate the package name from true aliases
+      const packageName = packageInfo.name
+      const trueAliases = validAliases.filter(alias => alias !== packageName)
+      const packageNameAlias = validAliases.find(alias => alias === packageName)
+
+      // Add @name if the package name is in the aliases list
+      if (packageNameAlias) {
+        lines.push(` * @name \`${packageNameAlias}\``)
+      }
+
+      // Add @aliases only for true aliases (not the package name)
+      if (trueAliases.length > 0) {
+        lines.push(` * @aliases ${trueAliases.map(a => `\`${a}\``).join(', ')}`)
+      }
+    }
+  }
+
+  // Homepage URL
+  if (packageInfo.homepageUrl) {
+    lines.push(` * @homepage ${packageInfo.homepageUrl}`)
+  }
+
+  // Dependencies
+  if (packageInfo.dependencies && packageInfo.dependencies.length > 0) {
+    const depsList = packageInfo.dependencies.slice(0, 3).join('`, `')
+    const moreDeps = packageInfo.dependencies.length > 3 ? `, ... (+${packageInfo.dependencies.length - 3} more)` : ''
+    lines.push(` * @dependencies \`${depsList}\`${moreDeps}`)
+  }
+
+  // Companions
+  if (packageInfo.companions && packageInfo.companions.length > 0) {
+    const companionsList = packageInfo.companions.slice(0, 3).join('`, `')
+    const moreCompanions = packageInfo.companions.length > 3 ? `, ... (+${packageInfo.companions.length - 3} more)` : ''
+    lines.push(` * @companions \`${companionsList}\`${moreCompanions}`)
+  }
+
+  lines.push(' *')
+
+  // Usage example
+  lines.push(' * @example')
+  lines.push(' * ```typescript')
+  lines.push(' * import { pantry } from \'ts-pkgx\'')
+  lines.push(' *')
+
+  // Show both alias and domain access if valid aliases exist
+  if (packageInfo.aliases && packageInfo.aliases.length > 0) {
+    // Find the first valid alias for the example
+    const validAlias = packageInfo.aliases.find((alias) => {
+      return !alias.includes('--') && !alias.includes('$SHELL') && !alias.includes('+') && !alias.includes('(') && !alias.includes(')')
+    })
+
+    if (validAlias) {
+      const aliasVarName = validAlias.replace(/[^a-z0-9]/gi, '')
+      // Use the same function as the index generation to ensure consistency
+      const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
+
+      // Check if the alias is the same as the package name
+      const isAliasPackageName = validAlias === packageInfo.name
+
+      if (isAliasPackageName) {
+        lines.push(` * // Access the package`)
+        lines.push(` * const pkg = pantry.${aliasVarName}`)
+        lines.push(` * // Or access via domain`)
+        lines.push(` * const samePkg = pantry.${domainVarName}`)
+        lines.push(` * console.log(pkg === samePkg) // true`)
+      }
+      else {
+        lines.push(` * // Access via alias (recommended)`)
+        lines.push(` * const pkg = pantry.${aliasVarName}`)
+        lines.push(` * // Or access via domain`)
+        lines.push(` * const samePkg = pantry.${domainVarName}`)
+        lines.push(` * console.log(pkg === samePkg) // true`)
+      }
+    }
+    else {
+      // No valid aliases, use domain only
+      const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
+      lines.push(` * const pkg = pantry.${domainVarName}`)
+    }
+  }
+  else {
+    // Use the same function as the index generation to ensure consistency
+    const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
+    lines.push(` * const pkg = pantry.${domainVarName}`)
+  }
+
+  lines.push(` * console.log(pkg.name)        // "${packageInfo.name || packageDisplayName}"`)
+
+  if (packageInfo.description) {
+    const shortDesc = packageInfo.description.length > 50 ? `${packageInfo.description.substring(0, 47)}...` : packageInfo.description
+    lines.push(` * console.log(pkg.description) // "${shortDesc}"`)
+  }
+
+  if (packageInfo.programs && packageInfo.programs.length > 0) {
+    lines.push(` * console.log(pkg.programs)    // [${packageInfo.programs.slice(0, 2).map(p => `"${p}"`).join(', ')}${packageInfo.programs.length > 2 ? ', ...' : ''}]`)
+  }
+
+  if (packageInfo.versions && packageInfo.versions.length > 0) {
+    lines.push(` * console.log(pkg.versions[0]) // "${packageInfo.versions[0]}" (latest)`)
+  }
+
+  lines.push(' * ```')
+  lines.push(' *')
+
+  // Links to documentation
+  lines.push(` * @see https://ts-pkgx.netlify.app/packages/${domainName.replace(/\./g, '-')}.md`)
+  lines.push(` * @see https://ts-pkgx.netlify.app/usage`)
+
+  lines.push(' */')
+
+  return lines.join('\n')
+}
+
+/**
+ * Generates TypeScript content for a package
+ */
+function generateTypeScriptContent(packageInfo: PkgxPackage, domainName: string): string {
+  // Helper function to check if a string is a valid alias for variable naming
+  function isValidAliasForVarName(alias: string): boolean {
+    if (!alias || alias.length < 2)
+      return false
+
+    // Filter out shell command patterns
+    if (alias.includes('--') || alias.includes('$SHELL') || alias.includes('+') || alias.includes('(') || alias.includes(')')) {
+      return false
+    }
+
+    // Filter out generic words that shouldn't be standalone aliases
+    const genericWords = ['cli', 'app', 'tool', 'server', 'client', 'api', 'lib', 'core']
+    if (genericWords.includes(alias.toLowerCase())) {
+      return false
+    }
+
+    // Filter out version strings
+    if (/^\d+(?:\.\d+)*/.test(alias)) {
+      return false
+    }
+
+    return true
+  }
+
+  // Determine the best variable name - use a valid primary alias if available, otherwise use domain
+  let varName: string
+  let packageDisplayName: string
+
+  if (packageInfo.aliases && packageInfo.aliases.length > 0) {
+    // Find the first valid alias for variable naming
+    const validAlias = packageInfo.aliases.find(alias => isValidAliasForVarName(alias))
+
+    if (validAlias) {
+      // Make sure the const variable name starts with lowercase
+      const aliasBase = validAlias.replace(/[^a-z0-9]/gi, '')
+      varName = `${aliasBase.charAt(0).toLowerCase()}${aliasBase.slice(1)}Package`
+      packageDisplayName = validAlias
+    }
+    else {
+      // No valid aliases, fall back to domain-based naming
+      varName = `${getDomainAsTypescriptName(domainName)}Package`
+      packageDisplayName = packageInfo.name || domainName
+    }
+  }
+  else {
+    // Fall back to domain-based naming
+    varName = `${getDomainAsTypescriptName(domainName)}Package`
+    packageDisplayName = packageInfo.name || domainName
+  }
+
+  // Ensure the variable name doesn't contain hyphens (which are invalid in JavaScript)
+  const safeVarName = varName.replace(/-/g, '')
+
+  // Generate comprehensive JSDoc documentation
+  const jsdoc = generatePackageJSDoc(packageInfo, domainName, packageDisplayName)
+
+  // Format the package object with 'as const' assertions
+  const formattedObj = formatObjectWithAsConst(packageInfo)
+
+  // Create the TypeScript content with proper JSDoc, imports and exports
+  return `${jsdoc}
+export const ${safeVarName} = ${formattedObj}
+
+export type ${safeVarName.charAt(0).toUpperCase() + safeVarName.slice(1)} = typeof ${safeVarName}
+`
+}
+
+/**
+ * Saves package data as a TypeScript file
+ */
+export function savePackageAsTypeScript(outputDir: string, domainName: string, packageInfo: PkgxPackage): string {
+  // Ensure output directory exists
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true })
+  }
+
+  // Create a safe version of the domain name for the file name
+  // For paths like 'apple.com/remote_cmds', replace the slash with hyphen
+  // but preserve dots for better readability
+  const safeFilename = domainName.replace(/\//g, '-')
+
+  // Create the TypeScript file path using the same name as JSON files
+  const filePath = path.join(outputDir, `${safeFilename}.ts`)
+
+  // Remove fetchedAt from the package info before generating TypeScript
+  const cleanPackageInfo = { ...packageInfo }
+  delete cleanPackageInfo.fetchedAt
+
+  // Generate TypeScript content
+  const tsContent = generateTypeScriptContent(cleanPackageInfo, domainName)
+
+  // Write the file
+  fs.writeFileSync(filePath, tsContent)
+
+  return filePath
+}
+
+/**
  * Checks if a cached package exists and is still valid
  * @param packageName Name of the package to check
  * @param options Cache options
@@ -1301,678 +1768,6 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
     console.error('Error in fetchAndSaveAllPackages:', error)
     return []
   }
-}
-
-/**
- * Fetch package data using a provided page instance (DEPRECATED - use fetchAndSavePackage instead)
- */
-async function _fetchPackageWithPage(
-  page: Page,
-  packageName: string,
-  outputDir: string,
-  timeout: number,
-  useCache: boolean,
-  cacheDir: string,
-): Promise<{ success: boolean, filePath?: string } | null> {
-  try {
-    // Handle special domain cases
-    if (packageName.includes('/')) {
-      console.log(`Using specialized handling for ${packageName}...`)
-      const parts = packageName.split('/')
-      const domain = parts[0]
-      const subPath = parts.slice(1).join('/')
-      const fullPath = `${domain}/${subPath}`
-
-      // Check cache for the full path version
-      const cacheFile = path.join(cacheDir, `${domain}-${subPath.replace(/\//g, '-')}.json`)
-      if (useCache && fs.existsSync(cacheFile)) {
-        const stats = fs.statSync(cacheFile)
-        const ageMinutes = (Date.now() - stats.mtime.getTime()) / (1000 * 60)
-
-        if (ageMinutes < DEFAULT_CACHE_EXPIRATION_MINUTES) {
-          console.log(`Using cached data for ${fullPath} (age: ${Math.round(ageMinutes)} minutes)`)
-          try {
-            const cachedData = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'))
-            const tsFilePath = savePackageAsTypeScript(outputDir, `${domain}-${subPath.replace(/\//g, '-')}`, cachedData)
-            console.log(`Using cached data for ${fullPath} (saved to ${tsFilePath})`)
-            return { success: true, filePath: tsFilePath }
-          }
-          catch {
-            console.warn(`Cache file corrupted for ${fullPath}, will refetch`)
-          }
-        }
-      }
-    }
-
-    // Navigate to the package page
-    const url = `https://pkgx.dev/pkgs/${packageName}/`
-    console.log(`Navigating to ${url}...`)
-
-    await page.goto(url, {
-      waitUntil: 'domcontentloaded', // Don't wait for all resources
-      timeout,
-    })
-
-    // Extract package information with improved selectors
-    console.log('Extracting package information...')
-
-    const packageInfo = await page.evaluate(() => {
-      // Try multiple strategies to extract package data
-      const strategies = [
-        // Strategy 1: Look for structured data
-        () => {
-          const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
-          for (const script of scripts) {
-            try {
-              const data = JSON.parse(script.textContent || '')
-              if (data.name || data.description) {
-                return data
-              }
-            }
-            catch {
-              // Continue to next script
-            }
-          }
-          return null
-        },
-
-        // Strategy 2: Extract from meta tags and page content
-        () => {
-          const getMetaContent = (name: string) => {
-            const meta = document.querySelector(`meta[name="${name}"], meta[property="${name}"]`)
-            return meta?.getAttribute('content') || ''
-          }
-
-          const title = document.title || ''
-          const description = getMetaContent('description')
-            || getMetaContent('og:description')
-            || document.querySelector('p')?.textContent?.trim() || ''
-
-          // Look for version information
-          const versionElements = Array.from(document.querySelectorAll('*')).filter(el =>
-            el.textContent?.match(/v?\d+\.\d+\.\d+/) && el.textContent.length < 50,
-          )
-
-          const versions = versionElements
-            .map(el => el.textContent?.match(/v?(\d+\.\d+\.\d\S*)/)?.[1])
-            .filter(Boolean)
-            .slice(0, 10) // Limit to first 10 versions found
-
-          // Look for program/command information
-          const codeElements = Array.from(document.querySelectorAll('code, .command, .program'))
-          const programs = codeElements
-            .map(el => el.textContent?.trim())
-            .filter(text => text && text.length < 50 && !text.includes(' ') && /^[\w-]+$/.test(text))
-            .slice(0, 5) // Limit to first 5 programs
-
-          return {
-            name: title.split(' ')[0] || '',
-            description: description.substring(0, 500), // Limit description length
-            versions: Array.from(new Set(versions)), // Remove duplicates
-            programs: Array.from(new Set(programs)), // Remove duplicates
-            homepage: window.location.href,
-          }
-        },
-      ]
-
-      // Try each strategy
-      for (const strategy of strategies) {
-        try {
-          const result = strategy()
-          if (result && (result.name || result.description)) {
-            return result
-          }
-        }
-        catch {
-          // Strategy failed, continue to next
-        }
-      }
-
-      // Fallback: minimal data
-      return {
-        name: '',
-        description: '',
-        versions: [],
-        programs: [],
-        homepage: window.location.href,
-      }
-    })
-
-    // Validate the extracted data
-    if (!packageInfo.name && !packageInfo.description) {
-      console.warn(`⚠️  Package ${packageName} has no meaningful data. Skipping.`)
-      return { success: false }
-    }
-
-    // Check for generic/placeholder descriptions that indicate fetch errors
-    const genericDescriptions = [
-      'loading',
-      'please wait',
-      'not found',
-      'error',
-      'unavailable',
-      'coming soon',
-      'under construction',
-    ]
-
-    if (packageInfo.description && genericDescriptions.some(generic =>
-      packageInfo.description.toLowerCase().includes(generic),
-    )) {
-      console.warn(`⚠️  Package ${packageName} has generic description. Might be a fetch error.`)
-      return { success: false }
-    }
-
-    // Enhance the package info
-    const enhancedPackageInfo = {
-      ...packageInfo,
-      domain: packageName,
-      fullPath: packageName,
-      fetchedAt: new Date().toISOString(),
-      installCommand: `pkgx ${packageName}`,
-      aliases: [], // Will be populated later if needed
-      dependencies: [],
-      companions: [],
-    }
-
-    // Save to cache
-    if (useCache) {
-      const cacheFile = path.join(cacheDir, `${packageName.replace(/\//g, '-')}.json`)
-      fs.writeFileSync(cacheFile, JSON.stringify(enhancedPackageInfo, null, 2))
-    }
-
-    // Save as TypeScript
-    const tsFilePath = savePackageAsTypeScript(outputDir, packageName.replace(/\//g, '-'), enhancedPackageInfo)
-
-    return { success: true, filePath: tsFilePath }
-  }
-  catch (error) {
-    console.error(`Error fetching ${packageName}:`, error)
-    return { success: false }
-  }
-}
-
-/**
- * Generates a TypeScript file name from a domain name
- * Converts domain names to camelCase format suitable for TypeScript files
- */
-function getDomainAsTypescriptName(domain: string): string {
-  // First handle the case where there are slashes (nested paths)
-  if (domain.includes('/')) {
-    // Split into parent domain and subpath
-    const [parentDomain, ...subPathParts] = domain.split('/')
-    const subPath = subPathParts.join('/')
-
-    // Clean parent domain part (remove dots)
-    const cleanParent = parentDomain.replace(/\./g, '')
-
-    // For GitHub projects, include the full subpath in the variable name
-    if (parentDomain.includes('github.com')) {
-      // For GitHub repos, we need to keep all parts of the path
-      // and transform them into a valid variable name
-      // Replace all special characters and join everything into a single string
-      const fullPath = subPath.replace(/[/.-]/g, '')
-      return `${cleanParent}${fullPath}`.toLowerCase()
-    }
-
-    // For variable names, we need to remove special characters in the subpath
-    const cleanSubPath = subPath.replace(/[.-]/g, '')
-
-    // Join without a separator to make a valid variable name
-    return `${cleanParent}${cleanSubPath}`.toLowerCase()
-  }
-
-  // For regular domains (no slashes), just remove dots
-  return domain.replace(/\./g, '').toLowerCase()
-}
-
-/**
- * Generates TypeScript content for a package
- * @param packageInfo The package information object
- * @param domainName The domain name (used for the variable name)
- * @returns TypeScript file content as string
- */
-function generateTypeScriptContent(packageInfo: PkgxPackage, domainName: string): string {
-  // Helper function to check if a string is a valid alias for variable naming
-  function isValidAliasForVarName(alias: string): boolean {
-    if (!alias || alias.length < 2)
-      return false
-
-    // Filter out shell command patterns
-    if (alias.includes('--') || alias.includes('$SHELL') || alias.includes('+') || alias.includes('(') || alias.includes(')')) {
-      return false
-    }
-
-    // Filter out generic words that shouldn't be standalone aliases
-    const genericWords = ['cli', 'app', 'tool', 'server', 'client', 'api', 'lib', 'core']
-    if (genericWords.includes(alias.toLowerCase())) {
-      return false
-    }
-
-    // Filter out version strings
-    if (/^\d+(?:\.\d+)*/.test(alias)) {
-      return false
-    }
-
-    return true
-  }
-
-  // Determine the best variable name - use a valid primary alias if available, otherwise use domain
-  let varName: string
-  let packageDisplayName: string
-
-  if (packageInfo.aliases && packageInfo.aliases.length > 0) {
-    // Find the first valid alias for variable naming
-    const validAlias = packageInfo.aliases.find(alias => isValidAliasForVarName(alias))
-
-    if (validAlias) {
-      // Make sure the const variable name starts with lowercase
-      const aliasBase = validAlias.replace(/[^a-z0-9]/gi, '')
-      varName = `${aliasBase.charAt(0).toLowerCase()}${aliasBase.slice(1)}Package`
-      packageDisplayName = validAlias
-    }
-    else {
-      // No valid aliases, fall back to domain-based naming
-      varName = `${getDomainAsTypescriptName(domainName)}Package`
-      packageDisplayName = packageInfo.name || domainName
-    }
-  }
-  else {
-    // Fall back to domain-based naming
-    varName = `${getDomainAsTypescriptName(domainName)}Package`
-    packageDisplayName = packageInfo.name || domainName
-  }
-
-  // Ensure the variable name doesn't contain hyphens (which are invalid in JavaScript)
-  const safeVarName = varName.replace(/-/g, '')
-
-  // Generate comprehensive JSDoc documentation
-  const jsdoc = generatePackageJSDoc(packageInfo, domainName, packageDisplayName)
-
-  // Format the package object with 'as const' assertions
-  const formattedObj = formatObjectWithAsConst(packageInfo)
-
-  // Create the TypeScript content with proper JSDoc, imports and exports
-  return `${jsdoc}
-export const ${safeVarName} = ${formattedObj}
-
-export type ${safeVarName.charAt(0).toUpperCase() + safeVarName.slice(1)} = typeof ${safeVarName}
-`
-}
-
-/**
- * Generates comprehensive JSDoc documentation for a package
- * @param packageInfo The package information object
- * @param domainName The domain name
- * @param packageDisplayName The display name for the package
- * @returns JSDoc comment string
- */
-function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, packageDisplayName: string): string {
-  const lines: string[] = []
-
-  lines.push('/**')
-
-  // Package title and description
-  if (packageInfo.description) {
-    lines.push(` * **${packageDisplayName}** - ${packageInfo.description}`)
-  }
-  else {
-    lines.push(` * **${packageDisplayName}** - pkgx package`)
-  }
-
-  lines.push(' *')
-
-  // Domain information
-  lines.push(` * @domain \`${packageInfo.domain || domainName}\``)
-
-  // Programs provided
-  if (packageInfo.programs && packageInfo.programs.length > 0) {
-    const programsList = packageInfo.programs.slice(0, 5).join('`, `')
-    const morePrograms = packageInfo.programs.length > 5 ? `, ... (+${packageInfo.programs.length - 5} more)` : ''
-    lines.push(` * @programs \`${programsList}\`${morePrograms}`)
-  }
-
-  // Latest version information
-  if (packageInfo.versions && packageInfo.versions.length > 0) {
-    lines.push(` * @version \`${packageInfo.versions[0]}\` (${packageInfo.versions.length} versions available)`)
-    lines.push(` * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/${domainName.replace(/\./g, '-')}.md`)
-  }
-
-  // Installation command
-  if (packageInfo.installCommand) {
-    lines.push(` *`)
-    lines.push(` * @install \`${packageInfo.installCommand}\``)
-  }
-
-  // Aliases - filter out invalid shell command patterns and separate package name from true aliases
-  if (packageInfo.aliases && packageInfo.aliases.length > 0) {
-    const validAliases = packageInfo.aliases.filter((alias) => {
-      // Filter out shell command patterns
-      return !alias.includes('--') && !alias.includes('$SHELL') && !alias.includes('+') && !alias.includes('(') && !alias.includes(')')
-    })
-
-    if (validAliases.length > 0) {
-      // Separate the package name from true aliases
-      const packageName = packageInfo.name
-      const trueAliases = validAliases.filter(alias => alias !== packageName)
-      const packageNameAlias = validAliases.find(alias => alias === packageName)
-
-      // Add @name if the package name is in the aliases list
-      if (packageNameAlias) {
-        lines.push(` * @name \`${packageNameAlias}\``)
-      }
-
-      // Add @aliases only for true aliases (not the package name)
-      if (trueAliases.length > 0) {
-        lines.push(` * @aliases ${trueAliases.map(a => `\`${a}\``).join(', ')}`)
-      }
-    }
-  }
-
-  // Homepage URL
-  if (packageInfo.homepageUrl) {
-    lines.push(` * @homepage ${packageInfo.homepageUrl}`)
-  }
-
-  // Dependencies
-  if (packageInfo.dependencies && packageInfo.dependencies.length > 0) {
-    const depsList = packageInfo.dependencies.slice(0, 3).join('`, `')
-    const moreDeps = packageInfo.dependencies.length > 3 ? `, ... (+${packageInfo.dependencies.length - 3} more)` : ''
-    lines.push(` * @dependencies \`${depsList}\`${moreDeps}`)
-  }
-
-  // Companions
-  if (packageInfo.companions && packageInfo.companions.length > 0) {
-    const companionsList = packageInfo.companions.slice(0, 3).join('`, `')
-    const moreCompanions = packageInfo.companions.length > 3 ? `, ... (+${packageInfo.companions.length - 3} more)` : ''
-    lines.push(` * @companions \`${companionsList}\`${moreCompanions}`)
-  }
-
-  lines.push(' *')
-
-  // Usage example
-  lines.push(' * @example')
-  lines.push(' * ```typescript')
-  lines.push(' * import { pantry } from \'ts-pkgx\'')
-  lines.push(' *')
-
-  // Show both alias and domain access if valid aliases exist
-  if (packageInfo.aliases && packageInfo.aliases.length > 0) {
-    // Find the first valid alias for the example
-    const validAlias = packageInfo.aliases.find((alias) => {
-      return !alias.includes('--') && !alias.includes('$SHELL') && !alias.includes('+') && !alias.includes('(') && !alias.includes(')')
-    })
-
-    if (validAlias) {
-      const aliasVarName = validAlias.replace(/[^a-z0-9]/gi, '')
-      // Use the same function as the index generation to ensure consistency
-      const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
-
-      // Check if the alias is the same as the package name
-      const isAliasPackageName = validAlias === packageInfo.name
-
-      if (isAliasPackageName) {
-        lines.push(` * // Access the package`)
-        lines.push(` * const pkg = pantry.${aliasVarName}`)
-        lines.push(` * // Or access via domain`)
-        lines.push(` * const samePkg = pantry.${domainVarName}`)
-        lines.push(` * console.log(pkg === samePkg) // true`)
-      }
-      else {
-        lines.push(` * // Access via alias (recommended)`)
-        lines.push(` * const pkg = pantry.${aliasVarName}`)
-        lines.push(` * // Or access via domain`)
-        lines.push(` * const samePkg = pantry.${domainVarName}`)
-        lines.push(` * console.log(pkg === samePkg) // true`)
-      }
-    }
-    else {
-      // No valid aliases, use domain only
-      const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
-      lines.push(` * const pkg = pantry.${domainVarName}`)
-    }
-  }
-  else {
-    // Use the same function as the index generation to ensure consistency
-    const domainVarName = domainName.replace(/[.-]/g, '').replace(/\//g, '').toLowerCase()
-    lines.push(` * const pkg = pantry.${domainVarName}`)
-  }
-
-  lines.push(` * console.log(pkg.name)        // "${packageInfo.name || packageDisplayName}"`)
-
-  if (packageInfo.description) {
-    const shortDesc = packageInfo.description.length > 50 ? `${packageInfo.description.substring(0, 47)}...` : packageInfo.description
-    lines.push(` * console.log(pkg.description) // "${shortDesc}"`)
-  }
-
-  if (packageInfo.programs && packageInfo.programs.length > 0) {
-    lines.push(` * console.log(pkg.programs)    // [${packageInfo.programs.slice(0, 2).map(p => `"${p}"`).join(', ')}${packageInfo.programs.length > 2 ? ', ...' : ''}]`)
-  }
-
-  if (packageInfo.versions && packageInfo.versions.length > 0) {
-    lines.push(` * console.log(pkg.versions[0]) // "${packageInfo.versions[0]}" (latest)`)
-  }
-
-  lines.push(' * ```')
-  lines.push(' *')
-
-  // Links to documentation
-  lines.push(` * @see https://ts-pkgx.netlify.app/packages/${domainName.replace(/\./g, '-')}.md`)
-  lines.push(` * @see https://ts-pkgx.netlify.app/usage`)
-
-  lines.push(' */')
-
-  return lines.join('\n')
-}
-
-/**
- * Format an object with 'as const' assertions for TypeScript
- * @param obj The object to format
- * @returns A string representation of the object with 'as const' assertions
- */
-function formatObjectWithAsConst(obj: Record<string, any>): string {
-  const lines: string[] = []
-
-  lines.push('{')
-
-  // Add each property with appropriate formatting and JSDoc comments
-  for (const [key, value] of Object.entries(obj)) {
-    // Skip fetchedAt property to keep it out of TypeScript files
-    if (key === 'fetchedAt')
-      continue
-
-    // Add JSDoc comments for specific properties
-    const jsdocComment = getPropertyJSDoc(key, value)
-    if (jsdocComment) {
-      lines.push(jsdocComment)
-    }
-
-    if (value === undefined) {
-      lines.push(`  ${key}: undefined,`)
-      continue
-    }
-
-    if (Array.isArray(value)) {
-      if (value.length === 0) {
-        // Empty array
-        lines.push(`  ${key}: [] as const,`)
-      }
-      else if (typeof value[0] === 'string') {
-        // For aliases array, filter out shell command patterns and package name duplicates
-        let filteredArray = value
-        if (key === 'aliases') {
-          const packageName = obj.name
-          filteredArray = value.filter((alias) => {
-            // Filter out shell command patterns
-            if (alias.includes('--') || alias.includes('$SHELL') || alias.includes('+') || alias.includes('(') || alias.includes(')')) {
-              return false
-            }
-            // Filter out aliases that are the same as the package name
-            if (alias === packageName) {
-              return false
-            }
-            return true
-          })
-        }
-
-        // Format string array with line breaks for readability
-        if (filteredArray.length === 0) {
-          lines.push(`  ${key}: [] as const,`)
-        }
-        else {
-          lines.push(`  ${key}: [`)
-          for (const item of filteredArray) {
-            lines.push(`    '${String(item).replace(/'/g, '\\\'')}',`)
-          }
-          lines.push(`  ] as const,`)
-        }
-      }
-      else {
-        // Other array types - convert JSON.stringify output to use single quotes
-        const jsonStr = JSON.stringify(value).replace(/"/g, '\'')
-        lines.push(`  ${key}: ${jsonStr} as const,`)
-      }
-    }
-    else if (typeof value === 'string') {
-      // String with 'as const' using single quotes
-      lines.push(`  ${key}: '${String(value).replace(/'/g, '\\\'')}' as const,`)
-    }
-    else if (typeof value === 'number' || typeof value === 'boolean') {
-      // Numbers and booleans with 'as const'
-      lines.push(`  ${key}: ${value} as const,`)
-    }
-    else if (value === null) {
-      // Null values
-      lines.push(`  ${key}: null,`)
-    }
-    else if (typeof value === 'object') {
-      // Nested objects
-      lines.push(`  ${key}: ${formatObjectWithAsConst(value)},`)
-    }
-    else {
-      // Fallback for other types - convert JSON.stringify output to use single quotes
-      const jsonStr = JSON.stringify(value).replace(/"/g, '\'')
-      lines.push(`  ${key}: ${jsonStr},`)
-    }
-  }
-
-  lines.push('}')
-
-  return lines.join('\n')
-}
-
-/**
- * Generates JSDoc comments for specific object properties
- * @param key The property key
- * @param value The property value
- * @returns JSDoc comment string or null if no comment needed
- */
-function getPropertyJSDoc(key: string, value: any): string | null {
-  switch (key) {
-    case 'versions':
-      if (Array.isArray(value) && value.length > 0) {
-        return `  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */`
-      }
-      break
-
-    case 'programs':
-      if (Array.isArray(value) && value.length > 0) {
-        return `  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */`
-      }
-      break
-
-    case 'dependencies':
-      if (Array.isArray(value) && value.length > 0) {
-        return `  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */`
-      }
-      break
-
-    case 'companions':
-      if (Array.isArray(value) && value.length > 0) {
-        return `  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */`
-      }
-      break
-
-    case 'aliases':
-      if (Array.isArray(value) && value.length > 0) {
-        return `  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */`
-      }
-      break
-
-    case 'installCommand':
-      return `  /**
-   * Command to install this package using pkgx.
-   * @example sh <(curl https://pkgx.sh) +package-name
-   */`
-
-    case 'description':
-      return `  /**
-   * Brief description of what this package does.
-   */`
-
-    case 'domain':
-      return `  /**
-   * The canonical domain name for this package.
-   */`
-
-    case 'name':
-      return `  /**
-   * The display name of this package.
-   */`
-
-    default:
-      return null
-  }
-
-  return null
-}
-
-/**
- * Saves package data as a TypeScript file
- * @param outputDir Directory to save the file
- * @param domainName Domain name of the package
- * @param packageInfo Package information object
- * @returns Path to the saved file
- */
-export function savePackageAsTypeScript(outputDir: string, domainName: string, packageInfo: PkgxPackage): string {
-  // Ensure output directory exists
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true })
-  }
-
-  // Create a safe version of the domain name for the file name
-  // For paths like 'apple.com/remote_cmds', replace the slash with hyphen
-  // but preserve dots for better readability
-  const safeFilename = domainName.replace(/\//g, '-')
-
-  // Create the TypeScript file path using the same name as JSON files
-  const filePath = path.join(outputDir, `${safeFilename}.ts`)
-
-  // Remove fetchedAt from the package info before generating TypeScript
-  const cleanPackageInfo = { ...packageInfo }
-  delete cleanPackageInfo.fetchedAt
-
-  // Generate TypeScript content
-  const tsContent = generateTypeScriptContent(cleanPackageInfo, domainName)
-
-  // Write the file
-  fs.writeFileSync(filePath, tsContent)
-
-  return filePath
 }
 
 /**
