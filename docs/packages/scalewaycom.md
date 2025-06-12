@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `2.39.0`, `2.38.0`, `2.37.0`, `2.36.0`, `2.35.0`
-- `2.34.0`, `2.33.0`, `2.32.1`
+- `2.40.0`, `2.39.0`, `2.38.0`, `2.37.0`, `2.36.0`
+- `2.35.0`, `2.34.0`, `2.33.0`, `2.32.1`
 
 </details>
 
-**Latest Version**: `2.39.0`
+**Latest Version**: `2.40.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +scaleway.com@2.39.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +scaleway.com@2.40.0 -- $SHELL -i
 ```
 
 ## Usage Examples

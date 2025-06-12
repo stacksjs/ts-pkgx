@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-12T12:19:13.772Z
+- **Last Updated**: 2025-06-12T15:17:42.531Z
 
 ## Table of Contents
 
@@ -34,7 +34,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[crystallangorg](./packages/crystallangorg.md)** () | Fast and statically typed, compiled language with Ruby-like syntax | crystal | 1.16.3 (+18) | `pkgx crystal` |
 | **[dartdev](./packages/dartdev.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.8.1 (+35) | `pkgx dart` |
-| **[denoland](./packages/denoland.md)** () | A modern runtime for JavaScript and TypeScript. | deno | 2.3.5 (+130) | `pkgx deno` |
+| **[denoland](./packages/denoland.md)** () | A modern runtime for JavaScript and TypeScript. | deno | 2.3.6 (+131) | `pkgx deno` |
 | **[elixirlangorg](./packages/elixirlangorg.md)** () | Elixir is a dynamic, functional language for building scalable and maintainable applications | elixir, elixirc, iex, ... (+1) | 1.18.4 (+23) | `pkgx elixir-lang.org` |
 | **[erlangorg](./packages/erlangorg.md)** () | Programming language for highly scalable real-time systems | ct_run, dialyzer, epmd, ... (+6) | 28.0.0 (+71) | `pkgx erlang.org` |
 | **[gleamrun](./packages/gleamrun.md)** () | ⭐️ A friendly language for building type-safe, scalable systems! | gleam | 1.11.1 (+43) | `pkgx gleam` |
@@ -64,7 +64,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[angulardev](./packages/angulardev.md)** () | CLI tool for Angular | ng | 20.0.2 (+107) | `pkgx ng` |
 | **[bunsh](./packages/bunsh.md)** () | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.16 (+119) | `pkgx bun` |
 | **[classicyarnpkgcom](./packages/classicyarnpkgcom.md)** () | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx classic.yarnpkg.com` |
-| **[denoland](./packages/denoland.md)** () | A modern runtime for JavaScript and TypeScript. | deno | 2.3.5 (+130) | `pkgx deno` |
+| **[denoland](./packages/denoland.md)** () | A modern runtime for JavaScript and TypeScript. | deno | 2.3.6 (+131) | `pkgx deno` |
 | **[flutterdev](./packages/flutterdev.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.3 (+46) | `pkgx flutter.dev` |
 | **[nodejsorg](./packages/nodejsorg.md)** () | Platform built on V8 to build network applications | node | 24.2.0 (+137) | `pkgx node` |
 | **[npmjscom](./packages/npmjscom.md)** () | the package manager for JavaScript | npm, npx | 11.4.1 (+58) | `pkgx npmjs.com` |
@@ -78,7 +78,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[cmakeorg](./packages/cmakeorg.md)** () | Mirror of CMake upstream repository | cmake, ccmake, cpack, ... (+1) | 4.0.2 (+59) | `pkgx cmake.org` |
+| **[cmakeorg](./packages/cmakeorg.md)** () | Mirror of CMake upstream repository | cmake, ccmake, cpack, ... (+1) | 4.0.2 (+60) | `pkgx cmake.org` |
 | **[gradleorg](./packages/gradleorg.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 8.14.2 (+17) | `pkgx gradle` |
 | **[mavenapacheorg](./packages/mavenapacheorg.md)** () | Java-based project management | mvn, mvnDebug, mvnyjp | 3.9.10 (+9) | `pkgx mvn` |
 | **[mesonbuildcom](./packages/mesonbuildcom.md)** () | Fast and user friendly build system | meson | 1.8.2 (+27) | `pkgx meson` |
@@ -552,7 +552,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ryeastralsh](./packages/ryeastralsh.md)** () | Experimental Package Management Solution for Python | rye | 0.44.0 (+8) | `pkgx rye` |
 | **[s3toolsorg](./packages/s3toolsorg.md)** () | Official s3cmd repo -- Command line tool for managing S3 compatible storage services (including A... | s3cmd | 2.4.0 (+1) | `pkgx s3cmd` |
 | **[scalasbtorg](./packages/scalasbtorg.md)** () | sbt, the interactive build tool | sbt | 1.11.2 (+20) | `pkgx sbt` |
-| **[scalewaycom](./packages/scalewaycom.md)** () | Command Line Interface for Scaleway | scw | 2.39.0 (+7) | `pkgx scw` |
+| **[scalewaycom](./packages/scalewaycom.md)** () | Command Line Interface for Scaleway | scw | 2.40.0 (+8) | `pkgx scw` |
 | **[sconsorg](./packages/sconsorg.md)** () | Substitute for classic 'make' tool with autoconf/automake functionality | scons | 4.9.1 (+6) | `pkgx scons` |
 | **[scryerpl](./packages/scryerpl.md)** (scryer-prolog, scryer prolog) | Modern ISO Prolog implementation written mostly in Rust | scryer-prolog | 0.9.4 (+0) | `pkgx Scryer Prolog` |
 | **[sdkmanio](./packages/sdkmanio.md)** () | The SDKMAN! Command Line Interface | sdkman-init.sh | 5.19.0 (+1) | `pkgx sdkman-init.sh` |

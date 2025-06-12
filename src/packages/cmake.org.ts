@@ -3,7 +3,7 @@
  *
  * @domain `cmake.org`
  * @programs `cmake`, `ccmake`, `cpack`, `ctest`
- * @version `4.0.2` (60 versions available)
+ * @version `4.0.2` (61 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cmake-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i`
@@ -72,6 +72,7 @@ export const cmakeorgPackage = {
     '4.0.2',
     '4.0.1',
     '4.0.0',
+    '3.31.8',
     '3.31.7',
     '3.31.6',
     '3.31.5',

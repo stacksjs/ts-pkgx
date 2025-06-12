@@ -3,7 +3,7 @@
  *
  * @domain `deno.land`
  * @programs `deno`
- * @version `2.3.5` (131 versions available)
+ * @version `2.3.6` (132 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/deno-land.md
  *
  * @install `sh <(curl https://pkgx.sh) deno`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "deno"
  * console.log(pkg.description) // "A modern runtime for JavaScript and TypeScript."
  * console.log(pkg.programs)    // ["deno"]
- * console.log(pkg.versions[0]) // "2.3.5" (latest)
+ * console.log(pkg.versions[0]) // "2.3.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/deno-land.md
@@ -69,6 +69,7 @@ export const denoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.3.6',
     '2.3.5',
     '2.3.4',
     '2.3.3',
