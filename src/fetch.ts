@@ -6,7 +6,7 @@ import path from 'node:path'
 import process from 'node:process'
 import { chromium } from 'playwright'
 import { DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS, PACKAGE_ALIASES } from './consts'
-import { saveRateLimitInfo, shouldProceedWithGitHubRequest } from './utils'
+// Lazy import of utils functions to avoid module loading issues
 
 /**
  * Checks if a cached package exists and is still valid
@@ -903,6 +903,9 @@ export async function fetchPkgxPackage(
  */
 async function fetchVersionsFromGitHub(packageName: string): Promise<string[]> {
   try {
+    // Lazy import to avoid module loading issues
+    const { shouldProceedWithGitHubRequest, saveRateLimitInfo } = await import('./utils')
+
     // Check if we're rate limited before making the request
     if (!shouldProceedWithGitHubRequest()) {
       console.warn(`Skipping GitHub API request for versions due to rate limiting`)
