@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-12T17:16:33.018Z
+- **Last Updated**: 2025-06-12T21:16:20.675Z
 
 ## Table of Contents
 
@@ -78,7 +78,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[cmakeorg](./packages/cmakeorg.md)** () | Mirror of CMake upstream repository | cmake, ccmake, cpack, ... (+1) | 4.0.2 (+60) | `pkgx cmake.org` |
+| **[cmakeorg](./packages/cmakeorg.md)** () | Mirror of CMake upstream repository | cmake, ccmake, cpack, ... (+1) | 4.0.3 (+61) | `pkgx cmake.org` |
 | **[gradleorg](./packages/gradleorg.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 8.14.2 (+17) | `pkgx gradle` |
 | **[mavenapacheorg](./packages/mavenapacheorg.md)** () | Java-based project management | mvn, mvnDebug, mvnyjp | 3.9.10 (+9) | `pkgx mvn` |
 | **[mesonbuildcom](./packages/mesonbuildcom.md)** () | Fast and user friendly build system | meson | 1.8.2 (+27) | `pkgx meson` |
@@ -156,7 +156,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.49.0 (+20) | `pkgx git` |
 | **[neovimio](./packages/neovimio.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** () | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
-| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1455 (+2028) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1457 (+2030) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
@@ -231,11 +231,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[carapacesh](./packages/carapacesh.md)** () | Multi-shell multi-command argument completer | carapace | 1.3.2 (+10) | `pkgx carapace` |
 | **[caskreadthedocsio](./packages/caskreadthedocsio.md)** () | Project management tool for Emacs | cask | 0.9.0 (+0) | `pkgx cask` |
 | **[ccachedev](./packages/ccachedev.md)** () | Object-file caching compiler wrapper | ccache | 4.11.3 (+9) | `pkgx ccache` |
-| **[certbotefforg](./packages/certbotefforg.md)** () | Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on yo... | certbot | 4.1.0 (+17) | `pkgx certbot` |
+| **[certbotefforg](./packages/certbotefforg.md)** () | Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on yo... | certbot | 4.1.1 (+18) | `pkgx certbot` |
 | **[cfsslorg](./packages/cfsslorg.md)** () | CFSSL: Cloudflare's PKI and TLS toolkit | cfssl, cfssl-bundle, cfssl-certinfo, ... (+5) | 1.6.5 (+0) | `pkgx cfssl.org` |
 | **[cgalorg](./packages/cgalorg.md)** () | The public CGAL repository, see the README below | cgal_create_CMakeLists, cgal_create_cmake_script, cgal_make_macosx_app | 6.0.1 (+4) | `pkgx cgal` |
 | **[changiedev](./packages/changiedev.md)** () | Automated changelog tool for preparing releases with lots of customization options | changie | 1.22.0 (+7) | `pkgx changie` |
-| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.440 (+474) | `pkgx checkov` |
+| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.441 (+475) | `pkgx checkov` |
 | **[chezmoiio](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.6 (+75) | `pkgx chezmoi` |
 | **[chompbuildcom](./packages/chompbuildcom.md)** () | 'JS Make' - parallel task runner for the frontend ecosystem with a JS extension system. | chomp | 0.2.23 (+0) | `pkgx chomp` |
 | **[circlecicom](./packages/circlecicom.md)** () | Enables you to reproduce the CircleCI environment locally | circleci | 0.1.32367 (+56) | `pkgx circleci` |
