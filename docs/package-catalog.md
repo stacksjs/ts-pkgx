@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-12T15:17:42.531Z
+- **Last Updated**: 2025-06-12T17:16:33.018Z
 
 ## Table of Contents
 
@@ -67,7 +67,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[denoland](./packages/denoland.md)** () | A modern runtime for JavaScript and TypeScript. | deno | 2.3.6 (+131) | `pkgx deno` |
 | **[flutterdev](./packages/flutterdev.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.3 (+46) | `pkgx flutter.dev` |
 | **[nodejsorg](./packages/nodejsorg.md)** () | Platform built on V8 to build network applications | node | 24.2.0 (+137) | `pkgx node` |
-| **[npmjscom](./packages/npmjscom.md)** () | the package manager for JavaScript | npm, npx | 11.4.1 (+58) | `pkgx npmjs.com` |
+| **[npmjscom](./packages/npmjscom.md)** () | the package manager for JavaScript | npm, npx | 11.4.2 (+59) | `pkgx npmjs.com` |
 | **[pnpmio](./packages/pnpmio.md)** () | Fast, disk space efficient package manager | pnpm, pnpx | 10.12.1 (+164) | `pkgx pnp` |
 | **[vitejsdev](./packages/vitejsdev.md)** () | Next generation frontend tooling. It's fast! | vite | 6.3.5 (+99) | `pkgx vite` |
 | **[yarnpkgcom](./packages/yarnpkgcom.md)** () | 📦🐈 Active development trunk for Yarn ⚒ | yarn, yarnpkg | 4.9.2 (+39) | `pkgx yarn` |
@@ -83,7 +83,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mavenapacheorg](./packages/mavenapacheorg.md)** () | Java-based project management | mvn, mvnDebug, mvnyjp | 3.9.10 (+9) | `pkgx mvn` |
 | **[mesonbuildcom](./packages/mesonbuildcom.md)** () | Fast and user friendly build system | meson | 1.8.2 (+27) | `pkgx meson` |
 | **[ninjabuildorg](./packages/ninjabuildorg.md)** () | Small build system for use with gyp or CMake | ninja | 1.12.1 (+3) | `pkgx ninja` |
-| **[npmjscom](./packages/npmjscom.md)** () | the package manager for JavaScript | npm, npx | 11.4.1 (+58) | `pkgx npmjs.com` |
+| **[npmjscom](./packages/npmjscom.md)** () | the package manager for JavaScript | npm, npx | 11.4.2 (+59) | `pkgx npmjs.com` |
 | **[pipenvpypaio](./packages/pipenvpypaio.md)** () | Python Development Workflow for Humans. | pipenv | 3000.0.0 (+47) | `pkgx pipenv` |
 | **[pippypaio](./packages/pippypaio.md)** () | The Python package installer | pip, pip3.8, pip3.9, ... (+2) | 25.1.1 (+26) | `pkgx pip` |
 | **[pnpmio](./packages/pnpmio.md)** () | Fast, disk space efficient package manager | pnpm, pnpx | 10.12.1 (+164) | `pkgx pnp` |
@@ -472,7 +472,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[numpyorg](./packages/numpyorg.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.0 (+17) | `pkgx f2py` |
 | **[nushellsh](./packages/nushellsh.md)** () | Modern shell for the GitHub era | nu | 0.105.1 (+47) | `pkgx nu` |
 | **[oauth2proxygithubio](./packages/oauth2proxygithubio.md)** () | A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more ide... | oauth2-proxy | 7.9.0 (+6) | `pkgx oauth2-proxy` |
-| **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.195 (+178) | `pkgx odigos` |
+| **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.196 (+179) | `pkgx odigos` |
 | **[ohmyposhdev](./packages/ohmyposhdev.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.6.1 (+287) | `pkgx oh-my-posh` |
 | **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.0 (+96) | `pkgx ollama` |
 | **[onefetchdev](./packages/onefetchdev.md)** () | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch` |
