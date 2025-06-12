@@ -3,7 +3,7 @@ import { afterEach, beforeEach, describe, expect, test } from 'bun:test'
 import fs from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
-import { cleanupBrowserResources, getValidCachedPackage, savePackageAsTypeScript, saveToCacheAndOutput } from '../src/fetch'
+import { cleanupBrowserResources, getValidCachedPackage, savePackageAsTypeScript, saveToCacheAndOutput } from 'ts-pkgx'
 
 // Mock package data for testing
 const mockPackageInfo: PkgxPackage = {
