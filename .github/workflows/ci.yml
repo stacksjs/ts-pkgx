@@ -83,6 +83,9 @@ jobs:
       - name: Clear build artifacts
         run: rm -rf dist/
 
+      - name: Typecheck and compile
+        run: bun run typecheck
+
       - name: Unit Test
         run: bun test
 
