@@ -7,7 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cmake-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i`
- * @dependencies `curl.se>=5`, `zlib.net@1`, `sourceware.org/bzip2@1`
+ * @dependencies `curl.se>=5<8.13`, `zlib.net@1`, `sourceware.org/bzip2@1`
  *
  * @example
  * ```typescript
@@ -60,7 +60,7 @@ export const cmakeorgPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'curl.se>=5',
+    'curl.se>=5<8.13',
     'zlib.net@1',
     'sourceware.org/bzip2@1',
   ] as const,

@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-11T23:15:31.906Z
+- **Last Updated**: 2025-06-12T01:43:27.057Z
 
 ## Table of Contents
 
@@ -65,7 +65,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[bunsh](./packages/bunsh.md)** () | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.15 (+118) | `pkgx bun` |
 | **[classicyarnpkgcom](./packages/classicyarnpkgcom.md)** () | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx classic.yarnpkg.com` |
 | **[denoland](./packages/denoland.md)** () | A modern runtime for JavaScript and TypeScript. | deno | 2.3.5 (+130) | `pkgx deno` |
-| **[flutterdev](./packages/flutterdev.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.2 (+45) | `pkgx flutter.dev` |
+| **[flutterdev](./packages/flutterdev.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.3 (+46) | `pkgx flutter.dev` |
 | **[nodejsorg](./packages/nodejsorg.md)** () | Platform built on V8 to build network applications | node | 24.2.0 (+137) | `pkgx node` |
 | **[npmjscom](./packages/npmjscom.md)** () | the package manager for JavaScript | npm, npx | 11.4.1 (+58) | `pkgx npmjs.com` |
 | **[pnpmio](./packages/pnpmio.md)** () | Fast, disk space efficient package manager | pnpm, pnpx | 10.12.1 (+164) | `pkgx pnp` |
@@ -592,7 +592,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[tailwindcsscom](./packages/tailwindcsscom.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.10 (+43) | `pkgx tailwindcss` |
 | **[talosdev](./packages/talosdev.md)** () | CLI for out-of-band management of Kubernetes nodes created by Talos | talosctl | 1.10.4 (+27) | `pkgx talosctl` |
 | **[taplotamasfedev](./packages/taplotamasfedev.md)** () | A TOML toolkit written in Rust | taplo | 0.10.0 (+4) | `pkgx taplo` |
-| **[tartrun](./packages/tartrun.md)** () | macOS and Linux VMs on Apple Silicon to use in CI and other automations | tart | 2.27.2 (+53) | `pkgx tart` |
+| **[tartrun](./packages/tartrun.md)** () | macOS and Linux VMs on Apple Silicon to use in CI and other automations | tart | 2.27.3 (+54) | `pkgx tart` |
 | **[taskfiledev](./packages/taskfiledev.md)** () | A task runner / simpler Make alternative written in Go | task | 3.44.0 (+30) | `pkgx task` |
 | **[tcllangorg](./packages/tcllangorg.md)** () | Tool Command Language | tclsh, wish, critcl | 9.0.1 (+5) | `pkgx tcl-lang.org` |
 | **[tcpdumporg](./packages/tcpdumporg.md)** () | the LIBpcap interface to various kernel packet capture mechanism | pcap-config | 1.10.5 (+1) | `pkgx pcap-config` |

@@ -58,7 +58,7 @@ sh <(curl https://pkgx.sh) +cmake.org@4.0.2 -- $SHELL -i
 
 This package depends on:
 
-- `curl.se>=5`
+- `curl.se>=5<8.13`
 - `zlib.net@1`
 - `sourceware.org/bzip2@1`
 
