@@ -3,12 +3,20 @@ import { afterEach, beforeEach, describe, expect, test } from 'bun:test'
 import fs from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
-import {
-  cleanupBrowserResources,
-  getValidCachedPackage,
-  savePackageAsTypeScript,
-  saveToCacheAndOutput,
-} from '../src/fetch'
+// Use dynamic imports to avoid module loading issues in CI
+let cleanupBrowserResources: any
+let getValidCachedPackage: any
+let savePackageAsTypeScript: any
+let saveToCacheAndOutput: any
+
+// Load the functions dynamically before tests
+async function loadFetchModule() {
+  const fetchModule = await import('../src/fetch')
+  cleanupBrowserResources = fetchModule.cleanupBrowserResources
+  getValidCachedPackage = fetchModule.getValidCachedPackage
+  savePackageAsTypeScript = fetchModule.savePackageAsTypeScript
+  saveToCacheAndOutput = fetchModule.saveToCacheAndOutput
+}
 
 // Mock package data for testing
 const mockPackageInfo: PkgxPackage = {
@@ -50,7 +58,10 @@ describe('Fetch Module', () => {
   let tempCacheDir: string
   let tempOutputDir: string
 
-  beforeEach(() => {
+  beforeEach(async () => {
+    // Load fetch module functions dynamically
+    await loadFetchModule()
+
     // Create temporary directories for testing
     tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ts-pkgx-test-'))
     tempCacheDir = path.join(tempDir, 'cache')
