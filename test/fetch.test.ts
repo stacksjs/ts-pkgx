@@ -1,5 +1,5 @@
 import type { PackageFetchOptions, PkgxPackage } from '../src/types'
-import { afterEach, beforeEach, describe, expect, test } from 'bun:test'
+import { afterEach, beforeAll, beforeEach, describe, expect, test } from 'bun:test'
 import fs from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
@@ -9,7 +9,7 @@ let getValidCachedPackage: any
 let savePackageAsTypeScript: any
 let saveToCacheAndOutput: any
 
-// Load the functions dynamically at module level
+// Load the functions dynamically
 async function loadFetchModule() {
   const fetchModule = await import('../src/fetch')
   cleanupBrowserResources = fetchModule.cleanupBrowserResources
@@ -17,9 +17,6 @@ async function loadFetchModule() {
   savePackageAsTypeScript = fetchModule.savePackageAsTypeScript
   saveToCacheAndOutput = fetchModule.saveToCacheAndOutput
 }
-
-// Load modules immediately when this test file is imported
-await loadFetchModule()
 
 // Mock package data for testing
 const mockPackageInfo: PkgxPackage = {
@@ -60,6 +57,11 @@ describe('Fetch Module', () => {
   let tempDir: string
   let tempCacheDir: string
   let tempOutputDir: string
+
+  // Load the fetch module before all tests
+  beforeAll(async () => {
+    await loadFetchModule()
+  })
 
   beforeEach(() => {
     // Create temporary directories for testing
