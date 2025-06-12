@@ -9,7 +9,7 @@ let getValidCachedPackage: any
 let savePackageAsTypeScript: any
 let saveToCacheAndOutput: any
 
-// Load the functions dynamically before tests
+// Load the functions dynamically at module level
 async function loadFetchModule() {
   const fetchModule = await import('../src/fetch')
   cleanupBrowserResources = fetchModule.cleanupBrowserResources
@@ -17,6 +17,9 @@ async function loadFetchModule() {
   savePackageAsTypeScript = fetchModule.savePackageAsTypeScript
   saveToCacheAndOutput = fetchModule.saveToCacheAndOutput
 }
+
+// Load modules immediately when this test file is imported
+await loadFetchModule()
 
 // Mock package data for testing
 const mockPackageInfo: PkgxPackage = {
@@ -58,10 +61,7 @@ describe('Fetch Module', () => {
   let tempCacheDir: string
   let tempOutputDir: string
 
-  beforeEach(async () => {
-    // Load fetch module functions dynamically
-    await loadFetchModule()
-
+  beforeEach(() => {
     // Create temporary directories for testing
     tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ts-pkgx-test-'))
     tempCacheDir = path.join(tempDir, 'cache')
