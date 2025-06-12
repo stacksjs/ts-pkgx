@@ -614,7 +614,7 @@ const browserPool: { browser: Browser, inUse: boolean, createdAt: number }[] = [
 const MAX_BROWSER_POOL_SIZE = 10 // Default limit, can be adjusted based on concurrency setting
 
 // Function to check system resources and adjust behavior
-function getSystemResourceStatus() {
+function _getSystemResourceStatus() {
   const memUsage = process.memoryUsage()
   const heapUsedMB = Math.round(memUsage.heapUsed / 1024 / 1024)
   const heapTotalMB = Math.round(memUsage.heapTotal / 1024 / 1024)
@@ -649,159 +649,6 @@ function logNavigation(url: string) {
 export function cleanupBrowserResources(): Promise<void> {
   // Return a promise that always resolves and never rejects
   return Promise.resolve()
-}
-
-/**
- * Get a browser from the pool or create a new one if needed
- */
-async function _acquireBrowser(timeout: number): Promise<Browser | null> {
-  // Check system resources before proceeding
-  const resourceStatus = getSystemResourceStatus()
-  if (resourceStatus.isUnderStress) {
-    console.log(`System under stress (Heap: ${resourceStatus.heapUsedMB}MB, RSS: ${resourceStatus.rssUsedMB}MB, Browsers: ${resourceStatus.browserCount}), forcing cleanup...`)
-    await cleanupBrowserResources()
-    await new Promise(resolve => setTimeout(resolve, 2000)) // Wait 2 seconds after cleanup
-  }
-
-  // First, check for and remove any dead browsers from the pool
-  for (let i = browserPool.length - 1; i >= 0; i--) {
-    try {
-      // Try a simple operation to check if browser is still responsive
-      try {
-        await browserPool[i].browser.contexts()
-      }
-      catch {
-        // If this fails, the browser is dead and should be removed
-        console.log(`Removing dead browser from pool (index: ${i})`)
-        browserPool.splice(i, 1)
-      }
-    }
-    catch {
-      // Remove from pool if any error occurs
-      console.log(`Removing errored browser from pool (index: ${i})`)
-      browserPool.splice(i, 1)
-    }
-  }
-
-  // Try to reuse an available browser from the pool
-  const availableEntry = browserPool.find(entry => !entry.inUse)
-  if (availableEntry) {
-    availableEntry.inUse = true
-    return availableEntry.browser
-  }
-
-  // If pool is at max capacity, wait for an available browser instead of creating new ones
-  if (browserPool.length >= MAX_BROWSER_POOL_SIZE) {
-    console.log(`Browser pool at max capacity (${MAX_BROWSER_POOL_SIZE}), waiting for available browser...`)
-
-    // Wait for a browser to become available (with timeout)
-    const maxWaitTime = 30000 // 30 seconds
-    const startWait = Date.now()
-
-    while (Date.now() - startWait < maxWaitTime) {
-      const availableEntry = browserPool.find(entry => !entry.inUse)
-      if (availableEntry) {
-        availableEntry.inUse = true
-        return availableEntry.browser
-      }
-      // Wait a bit before checking again
-      await new Promise(resolve => setTimeout(resolve, 100))
-    }
-
-    // If we still can't get a browser, force close the oldest one
-    console.log('Timeout waiting for available browser, forcing cleanup...')
-    browserPool.sort((a, b) => a.createdAt - b.createdAt)
-    const oldestEntry = browserPool.shift()
-    if (oldestEntry) {
-      try {
-        await Promise.race([
-          oldestEntry.browser.close().catch(e => console.error('Error closing oldest browser:', e)),
-          new Promise(resolve => setTimeout(resolve, 3000)),
-        ])
-      }
-      catch (error) {
-        console.error('Error closing oldest browser:', error)
-      }
-    }
-  }
-
-  // If not found, create a new browser instance with retry logic
-  let browser: Browser | null = null
-  let retryCount = 0
-  const maxRetries = 3
-
-  // Add a longer delay to prevent overwhelming the system with concurrent launches
-  await new Promise(resolve => setTimeout(resolve, Math.random() * 2000 + 1000)) // 1-3 second delay
-
-  while (!browser && retryCount < maxRetries) {
-    try {
-      browser = await chromium.launch({
-        headless: true,
-        timeout: Math.min(timeout, 8000), // Increase browser launch timeout to 8 seconds
-        args: [
-          '--no-sandbox',
-          '--disable-dev-shm-usage',
-          '--disable-gpu',
-          '--disable-web-security',
-          '--disable-features=VizDisplayCompositor',
-          '--memory-pressure-off',
-          '--max_old_space_size=256', // Reduce memory allocation per browser
-          '--disable-background-timer-throttling',
-          '--disable-backgrounding-occluded-windows',
-          '--disable-renderer-backgrounding',
-        ],
-      })
-    }
-    catch (error) {
-      retryCount++
-      console.error(`Browser launch attempt ${retryCount} failed:`, error)
-
-      // If we get ENOENT, connection errors, or timeout errors, the system is likely overwhelmed
-      const errorString = String(error)
-      if (errorString.includes('ENOENT') || errorString.includes('Failed to connect')
-        || errorString.includes('Timeout') || errorString.includes('No target found')
-        || errorString.includes('spawn') || errorString.includes('targetId')
-        || errorString.includes('Target page, context or browser has been closed')) {
-        console.error('System appears overwhelmed, forcing aggressive cleanup and waiting longer...')
-        // Force cleanup of all browsers
-        await cleanupBrowserResources()
-        // Wait much longer before retrying when system is overwhelmed
-        await new Promise(resolve => setTimeout(resolve, 20000 * retryCount)) // Increased wait time
-      }
-
-      if (retryCount >= maxRetries) {
-        console.error(`Failed to launch browser after ${maxRetries} attempts, skipping this operation`)
-        return null // Return null instead of throwing to allow graceful degradation
-      }
-      // Wait before retrying with exponential backoff
-      await new Promise(resolve => setTimeout(resolve, 5000 * retryCount)) // Increased retry delay
-    }
-  }
-
-  if (!browser) {
-    throw new Error('Failed to create browser instance')
-  }
-
-  // Add to pool with current timestamp
-  browserPool.push({
-    browser,
-    inUse: true,
-    createdAt: Date.now(),
-  })
-  console.log(`Created new browser instance (pool size: ${browserPool.length}/${MAX_BROWSER_POOL_SIZE})`)
-
-  return browser
-}
-
-/**
- * Release a browser back to the pool
- */
-function _releaseBrowser(browser: Browser): void {
-  const entry = browserPool.find(entry => entry.browser === browser)
-  if (entry) {
-    entry.inUse = false
-    console.log(`Released browser back to pool (available: ${browserPool.filter(e => !e.inUse).length}/${browserPool.length})`)
-  }
 }
 
 /**
@@ -1417,17 +1264,6 @@ async function fetchVersionsFromGitHub(packageName: string): Promise<string[]> {
     console.error('Error fetching versions from GitHub:', error)
     return []
   }
-}
-
-function _generateProgressBar(completed: number, total: number, width = 30): string {
-  const percentage = Math.min(100, Math.round((completed / total) * 100))
-  const filledWidth = Math.round((width * completed) / total)
-  const emptyWidth = width - filledWidth
-
-  const filledBar = '='.repeat(filledWidth)
-  const emptyBar = ' '.repeat(emptyWidth)
-
-  return `[${filledBar}${emptyBar}] ${percentage}%`
 }
 
 // Add periodic cleanup function for browser resources

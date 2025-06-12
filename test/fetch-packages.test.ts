@@ -1,5 +1,5 @@
 import type { PkgxPackage } from '../src/types'
-import { describe, expect, mock, test } from 'bun:test'
+import { describe, expect, test } from 'bun:test'
 import { PACKAGE_ALIASES } from '../src/consts'
 import { convertDomainToFileName } from '../src/utils'
 
@@ -35,13 +35,13 @@ const mockNodePackage: PkgxPackage = {
 describe('Package Fetching', () => {
   test('should fetch a single package (mocked)', async () => {
     // Using the mocked version
-    const mockFetchPkg = mock(() => {
+    const mockFetchPkg = () => {
       return Promise.resolve({
         packageInfo: mockNodePackage,
         originalName: 'node',
         fullDomainName: 'nodejs.org',
       })
-    })
+    }
 
     const result = await mockFetchPkg()
 
@@ -55,9 +55,9 @@ describe('Package Fetching', () => {
 
   test('should fetch and save all packages (mocked)', async () => {
     // Mock the fetch and save function
-    const mockSavePackages = mock(() => {
+    const mockSavePackages = () => {
       return Promise.resolve(['nodejs.org', 'python.org'])
-    })
+    }
 
     const savedPackages = await mockSavePackages()
 
@@ -80,13 +80,13 @@ describe('Package Fetching', () => {
     // We use a mocked implementation here for testing
     test('should mock fetch package info', async () => {
       // This is a mock test just to verify mock functionality
-      const mockFetchPackage = mock(() => {
+      const mockFetchPackage = () => {
         return Promise.resolve({
           packageInfo: mockPackageInfo,
           originalName: 'mock',
           fullDomainName: 'mock.org',
         })
-      })
+      }
 
       const result = await mockFetchPackage()
       expect(result).toBeDefined()

@@ -1,36 +1,30 @@
-import { beforeEach, describe, expect, mock, test } from 'bun:test'
+import { beforeEach, describe, expect, test } from 'bun:test'
 import { PACKAGE_ALIASES } from '../src/consts'
 
-// Mock the CLI module functions that we want to test
-const mockFetchAndSaveAllPackages = mock(() => Promise.resolve(['nodejs.org', 'python.org']))
-const mockFetchAndSavePackage = mock(() => Promise.resolve({ success: true, filePath: 'test.ts' }))
-const mockGenerateIndex = mock(() => Promise.resolve('index.ts'))
-const mockGenerateAliases = mock(() => Promise.resolve('aliases.ts'))
-const mockGenerateDocs = mock(() => Promise.resolve())
-const mockCleanupBrowserResources = mock(() => Promise.resolve())
+// Remove all uses of mock()
+const mockFetchAndSaveAllPackages = () => Promise.resolve(['nodejs.org', 'python.org'])
+const mockFetchAndSavePackage = () => Promise.resolve({ success: true, filePath: 'test.ts' })
+const mockGenerateIndex = () => Promise.resolve('index.ts')
+const mockGenerateAliases = () => Promise.resolve('aliases.ts')
+const mockGenerateDocs = () => Promise.resolve()
+const mockCleanupBrowserResources = () => Promise.resolve()
 
-// Mock the modules
-mock.module('../src/fetch', () => ({
-  fetchAndSaveAllPackages: mockFetchAndSaveAllPackages,
-  fetchAndSavePackage: mockFetchAndSavePackage,
-  cleanupBrowserResources: mockCleanupBrowserResources,
-}))
-
-mock.module('../src/generate', () => ({
-  generateIndex: mockGenerateIndex,
-  generateAliases: mockGenerateAliases,
-  generateDocs: mockGenerateDocs,
-}))
+// REMOVE the fetch module mock
+// mock.module('../src/fetch', () => ({
+//   fetchAndSaveAllPackages: mockFetchAndSaveAllPackages,
+//   fetchAndSavePackage: mockFetchAndSavePackage,
+//   cleanupBrowserResources: mockCleanupBrowserResources,
+// }))
 
 describe('CLI Module', () => {
   beforeEach(() => {
     // Reset all mocks before each test
-    mockFetchAndSaveAllPackages.mockClear()
-    mockFetchAndSavePackage.mockClear()
-    mockGenerateIndex.mockClear()
-    mockGenerateAliases.mockClear()
-    mockGenerateDocs.mockClear()
-    mockCleanupBrowserResources.mockClear()
+    // mockFetchAndSaveAllPackages.mockClear()
+    // mockFetchAndSavePackage.mockClear()
+    // mockGenerateIndex.mockClear()
+    // mockGenerateAliases.mockClear()
+    // mockGenerateDocs.mockClear()
+    // mockCleanupBrowserResources.mockClear()
   })
 
   describe('PACKAGE_ALIASES Integration', () => {
@@ -290,7 +284,7 @@ describe('CLI Module', () => {
   describe('Error Handling', () => {
     test('should handle fetch errors gracefully', async () => {
       // Mock a failed fetch operation
-      const mockFailedFetch = mock(() => Promise.reject(new Error('Network error')))
+      const mockFailedFetch = () => Promise.reject(new Error('Network error'))
 
       try {
         await mockFailedFetch()
@@ -303,7 +297,7 @@ describe('CLI Module', () => {
 
     test('should handle generation errors gracefully', async () => {
       // Mock a failed generation operation
-      const mockFailedGenerate = mock(() => Promise.reject(new Error('File system error')))
+      const mockFailedGenerate = () => Promise.reject(new Error('File system error'))
 
       try {
         await mockFailedGenerate()
