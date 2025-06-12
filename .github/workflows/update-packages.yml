@@ -41,7 +41,7 @@ jobs:
           bun-version: latest
 
       - name: Install dependencies
-        run: bun install
+        run: bun --bun install
 
       - name: Install Playwright browsers
         run: bunx playwright install chromium --with-deps
@@ -62,7 +62,7 @@ jobs:
 
                     # First run the fetch command normally to do the actual work
           echo "Running fetch command to update packages..."
-          if timeout 2900 bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000; then
+          if timeout 2900 bun --bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000; then
             echo "Fetch command completed successfully"
             FETCH_SUCCESS=true
           else
@@ -204,11 +204,11 @@ jobs:
           echo "=== End Git Status After Fetch ==="
 
       - name: Generate index
-        run: bun bin/cli.ts generate-index
+        run: bun --bun bin/cli.ts generate-index
         timeout-minutes: 5
 
       - name: Generate aliases
-        run: bun bin/cli.ts generate-aliases
+        run: bun --bun bin/cli.ts generate-aliases
         timeout-minutes: 5
 
       - name: Generate documentation

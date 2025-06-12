@@ -45,7 +45,7 @@ jobs:
         uses: oven-sh/setup-bun@v2
 
       - name: Install dependencies
-        run: bun install
+        run: bun --bun install
 
       - name: Check for unreleased commits
         id: check-commits
@@ -150,14 +150,14 @@ jobs:
             node-modules-
 
       - name: Install Dependencies
-        run: bun install
+        run: bun --bun install
 
       - name: Extract tag version
         id: get_version
         run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
 
       - name: Publish to npm
-        run: bun publish --access public
+        run: bun --bun publish --access public
         env:
           BUN_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 

@@ -32,10 +32,10 @@ jobs:
             node-modules-
 
       - name: Install Dependencies
-        run: bun install
+        run: bun --bun install
 
       - name: Lint
-        run: bun run lint
+        run: bun --bun run lint
 
   typecheck:
     runs-on: ubuntu-latest
@@ -55,7 +55,7 @@ jobs:
             node-modules-
 
       - name: Install Dependencies
-        run: bun install
+        run: bun --bun install
 
       - name: Typecheck
         run: bun --bun run typecheck
@@ -78,16 +78,16 @@ jobs:
             node-modules-
 
       - name: Install Dependencies
-        run: bun install
+        run: bun --bun install
 
       - name: Clear build artifacts
         run: rm -rf dist/
 
       - name: Typecheck and compile
-        run: bun run typecheck
+        run: bun --bun run typecheck
 
       - name: Unit Test
-        run: bun test
+        run: bun --bun test
 
   publish-commit:
     runs-on: ubuntu-latest
@@ -107,10 +107,10 @@ jobs:
             node-modules-
 
       - name: Install Dependencies
-        run: bun install
+        run: bun --bun install
 
       - name: Build
-        run: bun run build
+        run: bun --bun run build
 
       - name: Publish Commit
         run: bunx pkg-pr-new publish
