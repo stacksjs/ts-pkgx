@@ -25,23 +25,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 21 versions</summary>
+<summary>Show all 22 versions</summary>
 
-- `0.126.2`, `0.126.1`, `0.126.0`, `0.125.1`, `0.125.0`
-- `0.124.0`, `0.123.0`, `0.122.0`, `0.121.0`, `0.120.4`
-- `0.119.0`, `0.118.0`, `0.117.1`, `0.117.0`, `0.116.0`
-- `0.115.0`, `0.114.0`, `0.113.0`, `0.112.4`, `0.111.0`
-- `0.110.1`
+- `0.126.3`, `0.126.2`, `0.126.1`, `0.126.0`, `0.125.1`
+- `0.125.0`, `0.124.0`, `0.123.0`, `0.122.0`, `0.121.0`
+- `0.120.4`, `0.119.0`, `0.118.0`, `0.117.1`, `0.117.0`
+- `0.116.0`, `0.115.0`, `0.114.0`, `0.113.0`, `0.112.4`
+- `0.111.0`, `0.110.1`
 
 </details>
 
-**Latest Version**: `0.126.2`
+**Latest Version**: `0.126.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +jbang.dev@0.126.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +jbang.dev@0.126.3 -- $SHELL -i
 ```
 
 ## Dependencies

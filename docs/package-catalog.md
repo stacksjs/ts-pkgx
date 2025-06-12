@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-12T21:16:20.675Z
+- **Last Updated**: 2025-06-12T23:15:45.993Z
 
 ## Table of Contents
 
@@ -277,7 +277,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dotenvlintergithubio](./packages/dotenvlintergithubio.md)** () | ⚡️Lightning-fast linter for .env files. Written in Rust 🦀 | dotenv-linter | 3.3.0 (+0) | `pkgx dotenv-linter` |
 | **[dotnetmicrosoftcom](./packages/dotnetmicrosoftcom.md)** () | Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET... | dotnet | 9.0.202 (+31) | `pkgx dotnet` |
 | **[doxygennl](./packages/doxygennl.md)** () | Generate documentation for several programming languages | doxygen | 1.14.0 (+9) | `pkgx doxygen` |
-| **[dozzledev](./packages/dozzledev.md)** () | Realtime log viewer for docker containers. | dozzle | 8.12.21 (+57) | `pkgx dozzle` |
+| **[dozzledev](./packages/dozzledev.md)** () | Realtime log viewer for docker containers. | dozzle | 8.13.0 (+58) | `pkgx dozzle` |
 | **[dprintdev](./packages/dprintdev.md)** () | Pluggable and configurable code formatting platform written in Rust. | dprint | 0.50.0 (+26) | `pkgx dprint` |
 | **[duktapeorg](./packages/duktapeorg.md)** () | Duktape - embeddable Javascript engine with a focus on portability and compact footprint | duk | 2.7.0 (+0) | `pkgx duk` |
 | **[edgedbcom](./packages/edgedbcom.md)** () | The EdgeDB CLI | edgedb | 7.6.0 (+36) | `pkgx edgedb` |
@@ -355,7 +355,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ipythonorg](./packages/ipythonorg.md)** () | Official repository for IPython itself. Other repos in the IPython organization contain things li... | ipython, ipython3 | 9.3.0 (+43) | `pkgx ipython` |
 | **[irohcomputer](./packages/irohcomputer.md)** () | peer-2-peer that just works | iroh | 0.35.0 (+34) | `pkgx iroh` |
 | **[itstoolorg](./packages/itstoolorg.md)** () | Translate XML with PO files using W3C Internationalization Tag Set rules | itstool | 2.0.7 (+0) | `pkgx itstool` |
-| **[jbangdev](./packages/jbangdev.md)** () | Unleash the power of Java - JBang Lets Students, Educators and Professional Developers create, ed... | jbang | 0.126.2 (+20) | `pkgx jbang` |
+| **[jbangdev](./packages/jbangdev.md)** () | Unleash the power of Java - JBang Lets Students, Educators and Professional Developers create, ed... | jbang | 0.126.3 (+21) | `pkgx jbang` |
 | **[jbig2deccom](./packages/jbig2deccom.md)** () | This is a mirror: the canonical repo is: git.ghostscript.com/jbig2dec.git. This repo does not hos... | jbig2dec | 0.19.0 (+0) | `pkgx jbig2dec` |
 | **[jenkinsio](./packages/jenkinsio.md)** () | Extendable open source continuous integration server | jenkins-lts, jenkins-lts-cli | 2.504.2 (+18) | `pkgx jenkins-lts` |
 | **[jenkinsxio](./packages/jenkinsxio.md)** (jx, jenkins x) | Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests usin... | jx | 3.11.92 (+57) | `pkgx Jenkins X` |
