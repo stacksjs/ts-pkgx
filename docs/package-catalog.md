@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-12T05:15:50.772Z
+- **Last Updated**: 2025-06-12T12:19:13.772Z
 
 ## Table of Contents
 
@@ -521,7 +521,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[protobufdev](./packages/protobufdev.md)** (protoc, protocol buffers) | Protocol Buffers - Google's data interchange format | protoc | 31.1.0 (+42) | `pkgx Protocol Buffers` |
 | **[prqllangorg](./packages/prqllangorg.md)** () | PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement | prql-compiler, prqlc | 0.13.4 (+32) | `pkgx prql` |
 | **[pugixmlorg](./packages/pugixmlorg.md)** () | Light-weight, simple and fast XML parser for C++ with XPath support | - | 1.15.0 (+2) | `pkgx pugixml.org` |
-| **[pulumiio](./packages/pulumiio.md)** () | Pulumi - Infrastructure as Code in any programming language 🚀 | pulumi, pulumi-analyzer-policy, pulumi-analyzer-policy-python, ... (+10) | 3.175.0 (+137) | `pkgx pulumi` |
+| **[pulumiio](./packages/pulumiio.md)** () | Pulumi - Infrastructure as Code in any programming language 🚀 | pulumi, pulumi-analyzer-policy, pulumi-analyzer-policy-python, ... (+10) | 3.176.0 (+138) | `pkgx pulumi` |
 | **[pwgensourceforgeio](./packages/pwgensourceforgeio.md)** () | Password generator | pwgen | 2.8.0 (+0) | `pkgx pwgen` |
 | **[pygmentsorg](./packages/pygmentsorg.md)** () | Pygments is a generic syntax highlighter written in Python | pygmentize | 2.19.1 (+7) | `pkgx pygmentize` |
 | **[pyinvokeorg](./packages/pyinvokeorg.md)** () | Pythonic task management & command execution. | invoke | 2.2.0 (+0) | `pkgx invoke` |
