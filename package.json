@@ -65,7 +65,7 @@
     "prepublishOnly": "bun --bun run build && bun run compile:all && bun run zip",
     "release": "bun scripts/bump-version.ts",
     "release:dry-run": "bun scripts/bump-version.ts --dry-run",
-    "test": "bun test",
+    "test": "rm -rf dist/ && bun test",
     "dev:docs": "bun --bun vitepress dev docs",
     "build:docs": "bun --bun vitepress build docs",
     "preview:docs": "bun --bun vitepress preview docs",

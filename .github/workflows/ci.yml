@@ -80,6 +80,9 @@ jobs:
       - name: Install Dependencies
         run: bun install
 
+      - name: Clear build artifacts
+        run: rm -rf dist/
+
       - name: Unit Test
         run: bun test
 
