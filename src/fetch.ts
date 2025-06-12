@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import type { Browser, Page } from 'playwright'
+import type { Browser } from 'playwright'
 import type { FetchProjectsOptions, GitHubContent, PackageFetchOptions, PkgxPackage, ProjectFolder } from './types'
 import fs from 'node:fs'
 import path from 'node:path'
