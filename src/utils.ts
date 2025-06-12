@@ -2,7 +2,6 @@ import type { ProjectFolder } from './types'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-import { fetchPkgxProjects } from './fetch'
 
 const GITHUB_RATE_LIMIT_FILE = path.join(process.cwd(), 'github-rate-limit.json')
 const GITHUB_CACHE_FILE = path.join(process.cwd(), 'github-cache.json')
@@ -339,6 +338,9 @@ export async function fetchPackageListFromGitHub(limit: number = 0, singlePackag
  */
 export async function logPkgxProjects(): Promise<ProjectFolder[]> {
   try {
+    // Lazy import to avoid circular dependencies and module loading issues
+    const { fetchPkgxProjects } = await import('./fetch')
+
     // Fetch all projects using the API
     const projects = await fetchPkgxProjects()
 
