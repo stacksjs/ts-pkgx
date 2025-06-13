@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-13T02:45:38.005Z
+- **Last Updated**: 2025-06-13T05:15:41.111Z
 
 ## Table of Contents
 
@@ -264,7 +264,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[daggerio](./packages/daggerio.md)** () | An engine to run your pipelines in containers | dagger | 0.18.10 (+90) | `pkgx dagger` |
 | **[databrickscom](./packages/databrickscom.md)** () | Databricks CLI | databricks | 0.255.0 (+53) | `pkgx databricks` |
 | **[daytonaio](./packages/daytonaio.md)** () | The Open Source Dev Environment Manager. | daytona | 0.100.0 (+75) | `pkgx daytona` |
-| **[dblabdanvergaracom](./packages/dblabdanvergaracom.md)** () | The database client every command line junkie deserves. | dblab | 0.32.0 (+14) | `pkgx dblab` |
+| **[dblabdanvergaracom](./packages/dblabdanvergaracom.md)** () | The database client every command line junkie deserves. | dblab | 0.33.0 (+15) | `pkgx dblab` |
 | **[deepwisdomai](./packages/deepwisdomai.md)** (metagpt) | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx MetaGPT` |
 | **[depotdev](./packages/depotdev.md)** () | 🖥️ Depot CLI, build your Docker images in the cloud | depot | 2.87.0 (+40) | `pkgx depot` |
 | **[dgraphio](./packages/dgraphio.md)** () | high-performance graph database for real-time use cases | dgraph | 24.1.3 (+10) | `pkgx dgraph` |
@@ -501,7 +501,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[packerio](./packages/packerio.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.13.1 (+12) | `pkgx packer` |
 | **[pandocorg](./packages/pandocorg.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.7.0.2 (+30) | `pkgx pandoc` |
 | **[pcreorg](./packages/pcreorg.md)** () | Perl compatible regular expressions library | pcre-config, pcregrep, pcretest | 8.45.0 (+0) | `pkgx pcre` |
-| **[pdmfmingdev](./packages/pdmfmingdev.md)** () | A modern Python package and dependency manager supporting the latest PEP standards | pdm | 2.24.2 (+64) | `pkgx pdm` |
+| **[pdmfmingdev](./packages/pdmfmingdev.md)** () | A modern Python package and dependency manager supporting the latest PEP standards | pdm | 2.25.0 (+65) | `pkgx pdm` |
 | **[pinnipeddev](./packages/pinnipeddev.md)** () | Pinniped is the easy, secure way to log in to your Kubernetes clusters. | pinniped | 0.39.0 (+13) | `pkgx pinniped` |
 | **[pkgxsh](./packages/pkgxsh.md)** () | Standalone binary that can run anything | pkgx | 2.7.0 (+34) | `pkgx pkgx` |
 | **[pkllangorg](./packages/pkllangorg.md)** () | A configuration as code language with rich validation and tooling. | jpkl, pkl | 0.28.2 (+11) | `pkgx pkl-lang.org` |

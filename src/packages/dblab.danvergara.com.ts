@@ -3,7 +3,7 @@
  *
  * @domain `dblab.danvergara.com`
  * @programs `dblab`
- * @version `0.32.0` (15 versions available)
+ * @version `0.33.0` (16 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/dblab-danvergara-com.md
  *
  * @install `sh <(curl https://pkgx.sh) dblab`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "dblab"
  * console.log(pkg.description) // "The database client every command line junkie d..."
  * console.log(pkg.programs)    // ["dblab"]
- * console.log(pkg.versions[0]) // "0.32.0" (latest)
+ * console.log(pkg.versions[0]) // "0.33.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dblab-danvergara-com.md
@@ -62,6 +62,7 @@ export const dblabPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.33.0',
     '0.32.0',
     '0.31.0',
     '0.30.1',
