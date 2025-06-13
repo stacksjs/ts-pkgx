@@ -4,7 +4,7 @@ import { dts } from 'bun-plugin-dtsx'
 const result = await Bun.build({
   entrypoints: ['src/index.ts', 'bin/cli.ts'],
   outdir: './dist',
-  splitting: true,
+  splitting: false,
   target: 'node',
   // minify: true,
   external: ['playwright-core'],
