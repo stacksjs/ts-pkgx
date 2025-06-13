@@ -12,7 +12,9 @@ const config: ESLintConfig = stacks({
   yaml: true,
   ignores: [
     'fixtures/**',
+    'examples/**',
     'docs/advanced.md',
+    'docs/advanced/type-safety.md',
     'docs/api-reference.md',
     'src/packages/index.ts', // TODO: this could be removed, but there is a minor sort order a-z "issue"
   ],

@@ -2,7 +2,8 @@
  * CLI utilities for ts-pkgx package management
  */
 
-import type { PackageInfo, PackageName, PackageSpec, SupportedArchitecture, SupportedPlatform } from './package-types'
+import type { PackageInfo, PackageName, SupportedArchitecture, SupportedPlatform } from './package-types'
+import process from 'node:process'
 import { detectPlatform, getAllPackageAliases } from './package-types'
 import {
   getActivePackages,

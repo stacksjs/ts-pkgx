@@ -54,7 +54,7 @@ import {
   isVersionAvailable,
 
   // Package categories
-  PACKAGE_CATEGORIES,
+  // PACKAGE_CATEGORIES,
   // Traditional exports
   pantry,
 
@@ -65,7 +65,7 @@ import {
 
   // CLI utilities
   showPackageInfo,
-  validatePackage,
+  // validatePackage,
 } from '../src/index'
 
 // =============================================================================
