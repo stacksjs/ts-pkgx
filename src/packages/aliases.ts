@@ -16,7 +16,6 @@ export const aliases: Record<string, string> = {
   'perl': 'perl.org',
   'php': 'php.net',
   'protoc': 'protobuf.dev',
-  'ruby': 'ruby/lang.org',
   'scryer-prolog': 'scryer.pl',
   'weed': 'seaweedfs.com',
   'xray': 'xtls.github.io',

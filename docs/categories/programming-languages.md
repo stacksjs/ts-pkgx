@@ -156,7 +156,7 @@ The Python programming language
 
 ---
 
-### [ruby/lang.org](../packages/rubylangorg.md) (ruby-lang.org, ruby)
+### [ruby/lang.org](../packages/rubylangorg.md) (ruby-lang.org)
 
 Powerful, clean, object-oriented scripting language
 

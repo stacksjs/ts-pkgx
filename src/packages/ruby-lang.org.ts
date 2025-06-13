@@ -1,5 +1,5 @@
 /**
- * **ruby** - Powerful, clean, object-oriented scripting language
+ * **ruby-lang.org** - Powerful, clean, object-oriented scripting language
  *
  * @domain `ruby-lang.org`
  * @programs `erb`, `irb`, `rake`, `rdoc`, `ri`, ... (+1 more)
@@ -7,7 +7,6 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ruby-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +ruby-lang.org -- $SHELL -i`
- * @aliases `ruby`
  * @dependencies `openssl.org^1.1`, `pyyaml.org^0.2`, `zlib.net^1`
  * @companions `rubygems.org`
  *
@@ -15,11 +14,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.ruby
- * // Or access via domain
- * const samePkg = pantry.rubylangorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rubylangorg
  * console.log(pkg.name)        // "ruby-lang.org"
  * console.log(pkg.description) // "Powerful, clean, object-oriented scripting lang..."
  * console.log(pkg.programs)    // ["erb", "irb", ...]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ruby-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rubyPackage = {
+export const rubylangorgPackage = {
   /**
    * The display name of this package.
    */
@@ -126,14 +121,8 @@ export const rubyPackage = {
     '2.6.10',
     '2.5.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'ruby',
-  ] as const,
+  aliases: [] as const,
   fullPath: 'ruby-lang.org' as const,
 }
 
-export type RubyPackage = typeof rubyPackage
+export type RubylangorgPackage = typeof rubylangorgPackage

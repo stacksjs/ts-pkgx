@@ -690,7 +690,7 @@ import { rsyncPackage } from './rsync.samba.org'
 import { rtmpdumpPackage } from './rtmpdump.mplayerhq.hu'
 import { rtomaykogithubioPackage } from './rtomayko.github.io'
 import { rubocopPackage } from './rubocop.org'
-import { rubyPackage } from './ruby-lang.org'
+import { rubylangorgPackage } from './ruby-lang.org'
 import { rubygemsorgPackage } from './rubygems.org'
 import { ruciocernchPackage } from './rucio.cern.ch'
 import { atlantisPackage } from './runatlantis.io'
@@ -1560,7 +1560,7 @@ export interface Pantry {
   rtmpdump_mplayerhq_hu: typeof rtmpdumpPackage
   rtomayko_github_io: typeof rtomaykogithubioPackage
   rubocop_org: typeof rubocopPackage
-  ruby_lang_org: typeof rubyPackage
+  ruby_lang_org: typeof rubylangorgPackage
   rubygems_org: typeof rubygemsorgPackage
   rucio_cern_ch: typeof ruciocernchPackage
   runatlantis_io: typeof atlantisPackage
@@ -2433,7 +2433,7 @@ export const pantry: Pantry = {
   rtmpdump_mplayerhq_hu: rtmpdumpPackage,
   rtomayko_github_io: rtomaykogithubioPackage,
   rubocop_org: rubocopPackage,
-  ruby_lang_org: rubyPackage,
+  ruby_lang_org: rubylangorgPackage,
   rubygems_org: rubygemsorgPackage,
   rucio_cern_ch: ruciocernchPackage,
   runatlantis_io: atlantisPackage,
