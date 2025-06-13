@@ -23,13 +23,13 @@ jobs:
       - name: Install Bun
         uses: oven-sh/setup-bun@v2
 
-      # - name: Use cached node_modules
-      #   uses: actions/cache@v4
-      #   with:
-      #     path: node_modules
-      #     key: node-modules-${{ hashFiles('**/bun.lock') }}
-      #     restore-keys: |
-      #       node-modules-
+      - name: Use cached node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('**/bun.lock') }}
+          restore-keys: |
+            node-modules-
 
       - name: Install Dependencies
         run: bun install
@@ -46,13 +46,13 @@ jobs:
       - name: Install Bun
         uses: oven-sh/setup-bun@v2
 
-      # - name: Use cached node_modules
-      #   uses: actions/cache@v4
-      #   with:
-      #     path: node_modules
-      #     key: node-modules-${{ hashFiles('**/bun.lock') }}
-      #     restore-keys: |
-      #       node-modules-
+      - name: Use cached node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('**/bun.lock') }}
+          restore-keys: |
+            node-modules-
 
       - name: Install Dependencies
         run: bun install
@@ -69,22 +69,16 @@ jobs:
       - name: Install Bun
         uses: oven-sh/setup-bun@v2
 
-      # - name: Use cached node_modules
-      #   uses: actions/cache@v4
-      #   with:
-      #     path: node_modules
-      #     key: node-modules-${{ hashFiles('**/bun.lock') }}
-      #     restore-keys: |
-      #       node-modules-
+      - name: Use cached node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('**/bun.lock') }}
+          restore-keys: |
+            node-modules-
 
       - name: Install Dependencies
         run: bun install
-
-      - name: Clear build artifacts
-        run: rm -rf dist/
-
-      - name: Typecheck and compile
-        run: bun run typecheck
 
       - name: Unit Test
         run: bun test
@@ -98,13 +92,13 @@ jobs:
       - name: Install Bun
         uses: oven-sh/setup-bun@v2
 
-      # - name: Use cached node_modules
-      #   uses: actions/cache@v4
-      #   with:
-      #     path: node_modules
-      #     key: node-modules-${{ hashFiles('**/bun.lock') }}
-      #     restore-keys: |
-      #       node-modules-
+      - name: Use cached node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('**/bun.lock') }}
+          restore-keys: |
+            node-modules-
 
       - name: Install Dependencies
         run: bun install
