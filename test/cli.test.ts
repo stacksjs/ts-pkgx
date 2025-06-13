@@ -226,102 +226,62 @@ describe('CLI Module', () => {
 
     test('should execute fetch specific packages command', async () => {
       // Test fetching a specific package (using a reliable one)
-      try {
-        const result = await fetchAndSavePackage(
-          'nodejs.org',
-          tempPackagesDir,
-          30000, // 30 second timeout
-          false, // saveAsJson
-          1, // retryNumber
-          2, // maxRetries (reduced for testing)
-          false, // debug
-          {
-            cacheDir: tempCacheDir,
-            cache: true,
-            cacheExpirationMinutes: 1440,
-            outputJson: false,
-          },
-        )
+      const result = await fetchAndSavePackage(
+        'nodejs.org',
+        tempPackagesDir,
+        30000, // 30 second timeout
+        false, // saveAsJson
+        1, // retryNumber
+        2, // maxRetries (reduced for testing)
+        false, // debug
+        {
+          cacheDir: tempCacheDir,
+          cache: true,
+          cacheExpirationMinutes: 1440,
+          outputJson: false,
+        },
+      )
 
-        expect(result).toBeDefined()
+      expect(result).toBeDefined()
+      expect(result.success).toBe(true)
+      expect(result.fullDomainName).toBe('nodejs.org')
+      expect(result.filePath).toBeDefined()
 
-        // If browsers are not available, the test should still pass but with success=false
-        if (result.success) {
-          expect(result.fullDomainName).toBe('nodejs.org')
-          expect(result.filePath).toBeDefined()
+      // Check that the file was actually created
+      if (result.filePath) {
+        expect(fs.existsSync(result.filePath)).toBe(true)
 
-          // Check that the file was actually created
-          if (result.filePath) {
-            expect(fs.existsSync(result.filePath)).toBe(true)
-
-            // Check file content
-            const content = fs.readFileSync(result.filePath, 'utf-8')
-            expect(content).toContain('export const')
-            expect(content).toContain('nodejs.org')
-            expect(content).toContain('Node.js')
-          }
-        }
-        else {
-          // If browsers are not available, just verify the function returns properly
-          console.warn('Fetch failed (likely due to missing Playwright browsers), but test passes')
-          expect(result.success).toBe(false)
-        }
-      }
-      catch (error) {
-        // If there's a browser-related error, skip the test
-        if (error instanceof Error && error.message.includes('browser')) {
-          console.warn('Skipping test due to browser unavailability:', error.message)
-          expect(true).toBe(true) // Pass the test
-        }
-        else {
-          throw error
-        }
+        // Check file content
+        const content = fs.readFileSync(result.filePath, 'utf-8')
+        expect(content).toContain('export const')
+        expect(content).toContain('nodejs.org')
+        expect(content).toContain('node') // The package name, not display name
       }
     }, 60000) // 60 second timeout for this test
 
     test('should execute fetch all packages command with limit', async () => {
       // Test fetching multiple packages with a small limit
-      try {
-        const savedPackages = await fetchAndSaveAllPackages({
-          outputDir: tempPackagesDir,
-          cacheDir: tempCacheDir,
-          cache: true,
-          cacheExpirationMinutes: 1440,
-          timeout: 30000,
-          concurrency: 2,
-          limit: 3, // Only fetch 3 packages for testing
-          outputJson: false,
-        })
+      const savedPackages = await fetchAndSaveAllPackages({
+        outputDir: tempPackagesDir,
+        cacheDir: tempCacheDir,
+        cache: true,
+        cacheExpirationMinutes: 1440,
+        timeout: 30000,
+        concurrency: 2,
+        limit: 3, // Only fetch 3 packages for testing
+        outputJson: false,
+      })
 
-        expect(savedPackages).toBeDefined()
-        expect(Array.isArray(savedPackages)).toBe(true)
+      expect(savedPackages).toBeDefined()
+      expect(Array.isArray(savedPackages)).toBe(true)
+      expect(savedPackages.length).toBeGreaterThan(0)
+      expect(savedPackages.length).toBeLessThanOrEqual(3)
 
-        // If browsers are available, we should get some packages
-        if (savedPackages.length > 0) {
-          expect(savedPackages.length).toBeLessThanOrEqual(3)
-
-          // Check that files were created
-          for (const packageName of savedPackages) {
-            const safeFilename = packageName.replace(/\//g, '-')
-            const filePath = path.join(tempPackagesDir, `${safeFilename}.ts`)
-            expect(fs.existsSync(filePath)).toBe(true)
-          }
-        }
-        else {
-          // If no packages were fetched (likely due to browser issues), that's okay
-          console.warn('No packages fetched (likely due to missing Playwright browsers), but test passes')
-          expect(savedPackages.length).toBe(0)
-        }
-      }
-      catch (error) {
-        // If there's a browser-related error, skip the test
-        if (error instanceof Error && error.message.includes('browser')) {
-          console.warn('Skipping bulk fetch test due to browser unavailability:', error.message)
-          expect(true).toBe(true) // Pass the test
-        }
-        else {
-          throw error
-        }
+      // Check that files were created
+      for (const packageName of savedPackages) {
+        const safeFilename = packageName.replace(/\//g, '-')
+        const filePath = path.join(tempPackagesDir, `${safeFilename}.ts`)
+        expect(fs.existsSync(filePath)).toBe(true)
       }
     }, 120000) // 2 minute timeout for this test
 
@@ -435,66 +395,48 @@ describe('CLI Module', () => {
       // Test that caching works properly
       const packageName = 'python.org'
 
-      try {
-        // First fetch - should create cache
-        const result1 = await fetchAndSavePackage(
-          packageName,
-          tempPackagesDir,
-          30000,
-          false,
-          1,
-          2,
-          false,
-          {
-            cacheDir: tempCacheDir,
-            cache: true,
-            cacheExpirationMinutes: 1440,
-            outputJson: false,
-          },
-        )
+      // First fetch - should create cache
+      const result1 = await fetchAndSavePackage(
+        packageName,
+        tempPackagesDir,
+        30000,
+        false,
+        1,
+        2,
+        false,
+        {
+          cacheDir: tempCacheDir,
+          cache: true,
+          cacheExpirationMinutes: 1440,
+          outputJson: false,
+        },
+      )
 
-        // If browsers are available and fetch succeeds
-        if (result1.success) {
-          // Check cache file was created
-          const cacheFile = path.join(tempCacheDir, `${packageName}.json`)
-          expect(fs.existsSync(cacheFile)).toBe(true)
+      expect(result1.success).toBe(true)
 
-          // Second fetch - should use cache
-          const result2 = await fetchAndSavePackage(
-            packageName,
-            tempPackagesDir,
-            30000,
-            false,
-            1,
-            2,
-            false,
-            {
-              cacheDir: tempCacheDir,
-              cache: true,
-              cacheExpirationMinutes: 1440,
-              outputJson: false,
-            },
-          )
+      // Check cache file was created
+      const cacheFile = path.join(tempCacheDir, `${packageName}.json`)
+      expect(fs.existsSync(cacheFile)).toBe(true)
 
-          expect(result2.success).toBe(true)
-          expect(result2.fullDomainName).toBe(packageName)
-        }
-        else {
-          // If browsers are not available, just verify the function returns properly
-          console.warn('Caching test skipped due to fetch failure (likely missing Playwright browsers)')
-          expect(result1.success).toBe(false)
-        }
-      }
-      catch (error) {
-        // If there's a browser-related error, skip the test
-        if (error instanceof Error && error.message.includes('browser')) {
-          console.warn('Skipping caching test due to browser unavailability:', error.message)
-          expect(true).toBe(true) // Pass the test
-        }
-        else {
-          throw error
-        }
-      }
+      // Second fetch - should use cache
+      const result2 = await fetchAndSavePackage(
+        packageName,
+        tempPackagesDir,
+        30000,
+        false,
+        1,
+        2,
+        false,
+        {
+          cacheDir: tempCacheDir,
+          cache: true,
+          cacheExpirationMinutes: 1440,
+          outputJson: false,
+        },
+      )
+
+      expect(result2.success).toBe(true)
+      expect(result2.fullDomainName).toBe(packageName)
     }, 60000)
 
     test('should handle fetch errors gracefully', async () => {

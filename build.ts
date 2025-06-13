@@ -6,7 +6,7 @@ const result = await Bun.build({
   outdir: './dist',
   splitting: true,
   target: 'node',
-  minify: true,
+  // minify: true,
   external: ['playwright-core'],
   plugins: [dts()],
 })

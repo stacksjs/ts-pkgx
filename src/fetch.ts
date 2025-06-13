@@ -5,7 +5,8 @@ import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import { chromium } from 'playwright'
-import { DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS, PACKAGE_ALIASES } from './consts'
+import { DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS } from './consts'
+import { aliases } from './packages/aliases'
 // Lazy import of utils functions to avoid module loading issues
 
 /**
@@ -496,7 +497,7 @@ export function getValidCachedPackage(
     }
 
     // Handle aliases - need to check the canonical name
-    const resolvedName = PACKAGE_ALIASES[packageName] || packageName
+    const resolvedName = aliases[packageName] || packageName
 
     // Create a safe filename for the cache file - preserve dots, only replace slashes
     const safeFilename = resolvedName.replace(/\//g, '-')
@@ -723,10 +724,10 @@ export async function fetchPkgxPackage(
   }
 
   // Handle common package aliases
-  if (PACKAGE_ALIASES[packageName]) {
-    console.error(`'${packageName}' is an alias for '${PACKAGE_ALIASES[packageName]}', redirecting...`)
-    fullDomainName = PACKAGE_ALIASES[packageName]
-    packageName = PACKAGE_ALIASES[packageName]
+  if (aliases[packageName]) {
+    console.log(`'${packageName}' is an alias for '${aliases[packageName]}', redirecting...`)
+    fullDomainName = aliases[packageName]
+    packageName = aliases[packageName]
   }
 
   try {
@@ -1015,15 +1016,15 @@ export async function fetchPkgxPackage(
           if (!options.outputJson) {
             console.log(`Adding new alias: '${possibleAlias}' -> '${packageInfo.domain}'`)
           }
-          PACKAGE_ALIASES[possibleAlias] = packageInfo.domain
+          aliases[possibleAlias] = packageInfo.domain
         }
 
         // Also add the original name as an alias if it's different from both possibleAlias and domain
         if (originalName !== possibleAlias && originalName !== packageInfo.domain) {
           if (!options.outputJson) {
-            console.error(`Adding original name as alias: '${originalName}' -> '${packageInfo.domain}'`)
+            console.log(`Adding original name as alias: '${originalName}' -> '${packageInfo.domain}'`)
           }
-          PACKAGE_ALIASES[originalName] = packageInfo.domain
+          aliases[originalName] = packageInfo.domain
         }
       }
 
@@ -1778,7 +1779,7 @@ export async function fetchAndSavePackage(
         }
 
         // Check if this is the target of an alias in PACKAGE_ALIASES
-        for (const [alias, target] of Object.entries(PACKAGE_ALIASES)) {
+        for (const [alias, target] of Object.entries(aliases)) {
           if (target === fullDomainName && !knownAliases.includes(alias)) {
             knownAliases.push(alias)
           }
@@ -2031,7 +2032,7 @@ export async function fetchAndSavePackage(
         }
 
         // Check if this is the target of an alias in PACKAGE_ALIASES
-        for (const [alias, target] of Object.entries(PACKAGE_ALIASES)) {
+        for (const [alias, target] of Object.entries(aliases)) {
           if (target === fullDomainName && !knownAliases.includes(alias)) {
             knownAliases.push(alias)
           }

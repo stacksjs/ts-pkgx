@@ -2,6 +2,7 @@ import type { ProjectFolder } from './types'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
+import { aliases } from './packages/aliases'
 
 const GITHUB_RATE_LIMIT_FILE = path.join(process.cwd(), 'github-rate-limit.json')
 const GITHUB_CACHE_FILE = path.join(process.cwd(), 'github-cache.json')
@@ -524,4 +525,54 @@ export function guessOriginalDomain(fileName: string): string {
     domain = domain.replace(/land$/, '.land')
 
   return domain
+}
+
+/**
+ * Resolves a package name to its full domain name using the PACKAGE_ALIASES mapping
+ * @param packageName The package name to resolve (e.g., 'node', 'python', 'nodejs.org')
+ * @returns The resolved domain name (e.g., 'nodejs.org', 'python.org')
+ */
+export function resolvePackageDomain(packageName: string): string {
+  // Handle version specifications by extracting just the package name
+  const [name] = packageName.split('@')
+
+  // Check if it's a known alias
+  if (aliases[name]) {
+    return aliases[name]
+  }
+
+  // If it already looks like a domain (contains a dot), return as-is
+  if (name.includes('.')) {
+    return name
+  }
+
+  // Fallback: assume it's a .org domain
+  return `${name}.org`
+}
+
+/**
+ * Gets all available package aliases
+ * @returns Record of alias to domain mappings
+ */
+export function getPackageAliases(): Record<string, string> {
+  return { ...aliases }
+}
+
+/**
+ * Checks if a package name is a known alias
+ * @param packageName The package name to check
+ * @returns True if the package name is a known alias
+ */
+export function isKnownAlias(packageName: string): boolean {
+  const [name] = packageName.split('@')
+  return name in aliases
+}
+
+/**
+ * Gets the canonical domain name for a package, whether it's an alias or already a domain
+ * @param packageName The package name or domain to canonicalize
+ * @returns The canonical domain name
+ */
+export function getCanonicalDomain(packageName: string): string {
+  return resolvePackageDomain(packageName)
 }
