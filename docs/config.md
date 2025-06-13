@@ -192,6 +192,50 @@ bun run pkgx:fetch --all
 
 This increases your GitHub API rate limit from 60 requests/hour to 5,000 requests/hour.
 
+## Type Safety Configuration
+
+ts-pkgx provides comprehensive TypeScript type safety features that work automatically with your configuration:
+
+```typescript
+import type {
+  PackageFetchOptions,
+  PackageName,
+  PackageSpec,
+  SupportedPlatform
+} from 'ts-pkgx'
+import {
+  detectPlatform,
+  fetchAndSavePackage,
+  isValidPackageName
+} from 'ts-pkgx'
+
+// Type-safe configuration
+const options: PackageFetchOptions = {
+  timeout: 30000,
+  outputDir: 'packages',
+  debug: false,
+  cache: true,
+  concurrency: 10
+}
+
+// Type-safe package operations
+async function safeFetchPackage(packageName: string, version?: string) {
+  if (!isValidPackageName(packageName)) {
+    throw new Error(`Invalid package name: ${packageName}`)
+  }
+
+  const packageSpec: PackageSpec = version
+    ? `${packageName}@${version}`
+    : packageName
+
+  return await fetchAndSavePackage(packageSpec, options.outputDir!, options.timeout)
+}
+
+// Platform-aware configuration
+const platform = detectPlatform()
+console.log(`Running on ${platform.platform} ${platform.architecture}`)
+```
+
 ## Advanced Configuration
 
-For more advanced configuration options and examples, see the [Advanced](./advanced.md) section.
+For more advanced configuration options and examples, see the [Advanced](./advanced.md) section and [Type Safety](./advanced/type-safety.md) documentation.

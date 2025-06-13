@@ -73,6 +73,7 @@ const sidebar = [
   {
     text: 'Advanced',
     items: [
+      { text: 'Type Safety', link: '/advanced/type-safety' },
       { text: 'Custom Transformations', link: '/advanced/transformations' },
       { text: 'Custom Output Formats', link: '/advanced/output-formats' },
       { text: 'Extending Aliases', link: '/advanced/aliases' },

@@ -57,34 +57,63 @@ console.log(`Saved ${savedPackages.length} packages`)
 
 ### TypeScript Types
 
-ts-pkgx provides comprehensive TypeScript types for all packages in the pkgx.dev ecosystem, enabling you to work in a fully typed environment:
+ts-pkgx provides comprehensive TypeScript types for all packages in the pkgx.dev ecosystem, enabling you to work in a fully typed environment with extensive type safety features:
 
 ```typescript
-import type { Pantry } from 'ts-pkgx'
-import { aliases, pantry } from 'ts-pkgx'
+import type {
+  InstallationPlan, // Installation planning interface
+  PackageAlias, // All available package aliases (e.g., 'node', 'python')
+  PackageDomain, // All available package domains (e.g., 'nodejs.org')
+  PackageInfo, // Comprehensive package information
+  PackageName, // Union of all valid package identifiers
+  PackageSpec, // Package specifications with versions (e.g., 'node@20.1.0')
+  Pantry,
+  SupportedArchitecture, // 'x86_64' | 'aarch64' | 'armv7l' | 'i686'
+  SupportedPlatform // 'darwin' | 'linux' | 'windows'
+} from 'ts-pkgx'
+import {
+  aliases,
+  createInstallPlan,
+  getLatestVersion,
+  getPackageInfo,
+  isValidPackageName,
+  pantry,
+  resolvePackageName
+} from 'ts-pkgx'
 
 // Access packages with full type safety
 const nodePackage = pantry.nodejs_org
 const pythonPackage = pantry.python_org
 const goPackage = pantry.go_dev
 
+// Type-safe package operations
+function installPackage(packageName: PackageName, version?: string) {
+  // TypeScript ensures only valid package names are accepted
+  const info = getPackageInfo(packageName)
+  const latest = getLatestVersion(packageName)
+  const plan = createInstallPlan(version ? `${packageName}@${version}` : packageName)
+
+  return { info, latest, plan }
+}
+
+// Type guards for runtime validation
+if (isValidPackageName('node')) {
+  const resolution = resolvePackageName('node') // Type-safe resolution
+}
+
 // All package properties are fully typed
 console.log(nodePackage.name) // string
 console.log(nodePackage.programs) // readonly string[]
 console.log(nodePackage.versions) // readonly string[]
-
-// Type-safe dynamic access
-function getPackageByDomain(domain: keyof Pantry) {
-  return pantry[domain]
-}
-const nodeDomain = aliases.node // 'nodejs.org'
-const pythonDomain = aliases.python // 'python.org'
 ```
 
 The type system includes:
-- **Pantry interface**: Maps all available packages with their domains as keys
-- **Package objects**: Complete metadata for each package (name, description, programs, versions, etc.)
-- **Aliases**: Type-safe mapping of friendly names to package domains
+- **Comprehensive type safety**: All package names, versions, and operations are type-checked
+- **Package name types**: Union types for aliases, domains, and specifications
+- **Platform types**: Support for different operating systems and architectures
+- **Version resolution**: Type-safe version specification and resolution
+- **CLI utilities**: Type-safe command operations with error handling
+- **Installation planning**: Type-safe installation plan generation
 - **Auto-completion**: Full IntelliSense support in your IDE
 
 ### Running Tests

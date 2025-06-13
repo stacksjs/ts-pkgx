@@ -27,6 +27,28 @@ This will retrieve information about all packages listed on pkgx.dev and save th
 
 ## TypeScript Integration
 
+### Comprehensive Type Safety
+
+ts-pkgx now provides extensive TypeScript type safety features that enable compile-time validation, IntelliSense support, and type-safe package management operations:
+
+```typescript
+import type {
+  InstallationPlan, // Installation planning interface
+  PackageAlias, // All available package aliases (e.g., 'node', 'python')
+  PackageDomain, // All available package domains (e.g., 'nodejs.org')
+  PackageInfo, // Comprehensive package information
+  PackageName, // Union of all valid package identifiers
+  PackageSpec, // Package specifications with versions (e.g., 'node@20.1.0')
+  SupportedArchitecture, // 'x86_64' | 'aarch64' | 'armv7l' | 'i686'
+  SupportedPlatform // 'darwin' | 'linux' | 'windows'
+} from 'ts-pkgx'
+
+// Type-safe package operations
+function installPackage(packageName: PackageName, version?: string) {
+  // TypeScript ensures only valid package names are accepted
+}
+```
+
 ### Fully Typed Interfaces
 
 All package data is available through fully typed TypeScript interfaces, providing excellent IDE support and type safety:
@@ -210,6 +232,61 @@ bun run pkgx:fetch-all --github-cache-duration 7200000
 ### Parallel Processing
 
 When fetching multiple packages, ts-pkgx processes them in parallel to speed up the operation.
+
+## Type-Safe Utilities
+
+ts-pkgx provides numerous utility functions that work with the type system:
+
+### Package Resolution
+
+```typescript
+import {
+  getAllPackageAliases,
+  isPackageAlias,
+  isValidPackageName,
+  resolvePackageName
+} from 'ts-pkgx'
+
+// Type-safe package resolution
+const resolution = resolvePackageName('node') // Returns PackageResolution
+const isAlias = isPackageAlias('node') // Type guard
+const isValid = isValidPackageName('node') // Type guard
+const aliases = getAllPackageAliases() // PackageAlias[]
+```
+
+### Version Resolution
+
+```typescript
+import {
+  getAvailableVersions,
+  getLatestVersion,
+  getPackageInfo,
+  resolveVersion
+} from 'ts-pkgx'
+
+// Type-safe version operations
+const latest = getLatestVersion('node') // string | null
+const versions = getAvailableVersions('node') // string[]
+const resolved = resolveVersion('node', '^20') // string | null
+const info = getPackageInfo('node') // PackageInfo | null
+```
+
+### CLI Utilities
+
+```typescript
+import {
+  createInstallPlan,
+  searchPackagesCommand,
+  showPackageInfo,
+  validatePackage
+} from 'ts-pkgx'
+
+// Type-safe CLI operations with error handling
+const infoResult = showPackageInfo('node') // CLIResult<PackageInfo>
+const searchResult = searchPackagesCommand('js') // CLIResult<PackageInfo[]>
+const planResult = createInstallPlan('node@20.1.0') // CLIResult<InstallationPlan>
+const validation = validatePackage('node@latest') // CLIResult<{...}>
+```
 
 ## Integration Options
 

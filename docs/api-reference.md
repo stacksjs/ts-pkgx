@@ -4,6 +4,56 @@ This page documents the API of ts-pkgx, including all the functions, interfaces,
 
 ## Core Types
 
+### Type Safety Features
+
+ts-pkgx now provides comprehensive TypeScript type safety with the following new types:
+
+```typescript
+// Package name types
+type PackageName = PackageAlias | PackageDomain
+type PackageAlias = keyof typeof aliases  // e.g., 'node', 'python', 'go'
+type PackageDomain = keyof Packages       // e.g., 'nodejs.org', 'python.org'
+type PackageSpec = `${PackageName}` | `${PackageName}@${string}`
+
+// Platform types
+type SupportedPlatform = 'darwin' | 'linux' | 'windows'
+type SupportedArchitecture = 'x86_64' | 'aarch64' | 'armv7l' | 'i686'
+type SupportedFormat = 'tar.xz' | 'tar.gz' | 'zip' | 'dmg' | 'pkg' | 'msi' | 'deb' | 'rpm'
+
+// Version types
+type VersionSpec = 'latest' | `^${string}` | `~${string}` | `>=${string}` | string
+
+// Information interfaces
+interface PackageInfo {
+  name: string
+  domain: string
+  description: string
+  latestVersion: string
+  totalVersions: number
+  programs: string[]
+  dependencies: string[]
+  companions: string[]
+  versions: string[]
+}
+
+interface PackageResolution {
+  originalName: string
+  resolvedDomain: string
+  isAlias: boolean
+  version?: string
+}
+
+interface InstallationPlan {
+  packageName: PackageName
+  resolvedVersion: string
+  platform: SupportedPlatform
+  architecture: SupportedArchitecture
+  dependencies: string[]
+  companions: string[]
+  installCommand: string
+}
+```
+
 ### PkgxPackage
 
 The main interface that represents a pkgx package.
@@ -499,6 +549,104 @@ const PACKAGE_ALIASES: Record<string, string> = {
   bun: 'bun.sh',
   // ... and more
 }
+```
+
+## Type-Safe Utility Functions
+
+### Package Resolution Functions
+
+```typescript
+// Resolve package names to domains
+function resolvePackageName(name: string): PackageResolution
+
+// Type guards for package validation
+function isPackageAlias(name: string): name is PackageAlias
+function isPackageDomain(name: string): name is PackageDomain
+function isValidPackageName(name: string): name is PackageName
+
+// Get all available aliases and domains
+function getAllPackageAliases(): PackageAlias[]
+function getAllPackageDomains(): PackageDomain[]
+```
+
+### Version Resolution Functions
+
+```typescript
+// Get version information
+function getLatestVersion(packageName: PackageName): string | null
+function getAvailableVersions(packageName: PackageName): string[]
+function isVersionAvailable(packageName: PackageName, version: string): boolean
+
+// Resolve version specifications
+function resolveVersion(packageName: PackageName, versionSpec: VersionSpec): string | null
+
+// Get comprehensive package information
+function getPackageInfo(packageName: PackageName): PackageInfo | null
+```
+
+### CLI Utility Functions
+
+```typescript
+// CLI command results with error handling
+interface CLIResult<T = any> {
+  success: boolean
+  data?: T
+  error?: string
+  warnings?: string[]
+}
+
+// Package information commands
+function showPackageInfo(packageName: string): CLIResult<PackageInfo>
+function searchPackagesCommand(searchTerm: string): CLIResult<PackageInfo[]>
+function listPopularPackages(limit?: number): CLIResult<PackageInfo[]>
+function listActivePackages(limit?: number): CLIResult<PackageInfo[]>
+
+// Installation planning
+function createInstallPlan(packageSpec: string): CLIResult<InstallationPlan>
+function validatePackage(packageSpec: string): CLIResult<{...}>
+
+// Version information
+function getVersionInfo(packageName: string): CLIResult<{
+  latest: string
+  total: number
+  versions: string[]
+}>
+```
+
+### Platform Detection Functions
+
+```typescript
+// Platform information
+interface PlatformInfo {
+  platform: SupportedPlatform
+  architecture: SupportedArchitecture
+  isSupported: boolean
+}
+
+// Platform detection and context creation
+function detectPlatform(): PlatformInfo
+function createInstallationContext(
+  packageName: PackageName,
+  version?: string,
+  platformInfo?: PlatformInfo
+): InstallationContext
+```
+
+### Package Categories
+
+```typescript
+// Predefined package categories
+const PACKAGE_CATEGORIES = {
+  RUNTIME: ['nodejs.org', 'python.org', 'go.dev', 'rust-lang.org'],
+  BUILD_TOOLS: ['cmake.org', 'ninja-build.org', 'gradle.org', 'maven.apache.org'],
+  DATABASES: ['postgresql.org', 'mysql.com', 'redis.io', 'mongodb.com'],
+  EDITORS: ['neovim.io', 'vim.org', 'code.visualstudio.com'],
+  CLI_TOOLS: ['cli.github.com', 'curl.se', 'wget.gnu.org', 'jq.dev'],
+}
+
+// Category utility functions
+function getPackagesByCategory(category: keyof typeof PACKAGE_CATEGORIES): readonly string[]
+function isPackageInCategory(packageName: string, category: keyof typeof PACKAGE_CATEGORIES): boolean
 ```
 
 ## CLI Commands

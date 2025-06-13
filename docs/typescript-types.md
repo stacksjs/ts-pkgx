@@ -2,6 +2,45 @@
 
 ts-pkgx provides comprehensive TypeScript types that enable you to work in a fully typed environment with all packages from the pkgx.dev pantry. This page documents the available types and how to use them effectively.
 
+## New Type Safety Features
+
+ts-pkgx now includes extensive type safety features that provide compile-time validation, IntelliSense support, and type-safe package management operations:
+
+### Package Name Types
+
+```typescript
+import type {
+  PackageAlias, // All available package aliases (e.g., 'node', 'python')
+  PackageDomain, // All available package domains (e.g., 'nodejs.org')
+  PackageName, // Union of all valid package identifiers
+  PackageSpec // Package specifications with versions (e.g., 'node@20.1.0')
+} from 'ts-pkgx'
+
+// Type-safe package names
+const validPackages: PackageName[] = ['node', 'python', 'nodejs.org', 'python.org']
+const packageSpecs: PackageSpec[] = ['node@20.1.0', 'python@latest']
+```
+
+### Platform & Architecture Types
+
+```typescript
+import type {
+  SupportedArchitecture, // 'x86_64' | 'aarch64' | 'armv7l' | 'i686'
+  SupportedFormat, // 'tar.xz' | 'tar.gz' | 'zip' | etc.
+  SupportedPlatform // 'darwin' | 'linux' | 'windows'
+} from 'ts-pkgx'
+```
+
+### Version Resolution Types
+
+```typescript
+import type {
+  PackageInfo, // Comprehensive package information
+  PackageResolution, // Package name resolution results
+  VersionSpec // Version specifications like '^20', '~3.11', 'latest'
+} from 'ts-pkgx'
+```
+
 ## Core Types
 
 ### Pantry Interface
@@ -383,6 +422,74 @@ function createPackageInfo<K extends keyof Packages>(
     package: pantry[key]
   }
 }
+```
+
+## Type-Safe Utilities
+
+ts-pkgx provides numerous utility functions that work with the type system:
+
+### Package Resolution
+
+```typescript
+import {
+  getAllPackageAliases,
+  isPackageAlias,
+  isValidPackageName,
+  resolvePackageName
+} from 'ts-pkgx'
+
+// Type-safe package resolution
+const resolution = resolvePackageName('node') // Returns PackageResolution
+const isAlias = isPackageAlias('node') // Type guard
+const isValid = isValidPackageName('node') // Type guard
+const aliases = getAllPackageAliases() // PackageAlias[]
+```
+
+### Version Resolution
+
+```typescript
+import {
+  getAvailableVersions,
+  getLatestVersion,
+  getPackageInfo,
+  resolveVersion
+} from 'ts-pkgx'
+
+// Type-safe version operations
+const latest = getLatestVersion('node') // string | null
+const versions = getAvailableVersions('node') // string[]
+const resolved = resolveVersion('node', '^20') // string | null
+const info = getPackageInfo('node') // PackageInfo | null
+```
+
+### CLI Utilities
+
+```typescript
+import {
+  createInstallPlan,
+  searchPackagesCommand,
+  showPackageInfo,
+  validatePackage
+} from 'ts-pkgx'
+
+// Type-safe CLI operations
+const infoResult = showPackageInfo('node') // CLIResult<PackageInfo>
+const searchResult = searchPackagesCommand('js') // CLIResult<PackageInfo[]>
+const planResult = createInstallPlan('node@20.1.0') // CLIResult<InstallationPlan>
+const validation = validatePackage('node@latest') // CLIResult<{...}>
+```
+
+### Platform Detection
+
+```typescript
+import {
+  createInstallationContext,
+  detectPlatform
+} from 'ts-pkgx'
+
+// Type-safe platform operations
+const platform = detectPlatform() // PlatformInfo
+const context = createInstallationContext('node') // InstallationContext
 ```
 
 ## Related Documentation

@@ -1,3 +1,4 @@
+export * from './cli-utils'
 export { ALL_KNOWN_PACKAGES, DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS, PACKAGE_ALIASES } from './consts'
 export {
   cleanupBrowserResources,
@@ -19,6 +20,7 @@ export {
   toSafeVarName,
   toTypeName,
 } from './generate'
+export * from './package-types'
 export * from './packages'
 export * from './types'
 export {
@@ -37,3 +39,4 @@ export {
   saveRateLimitInfo,
   shouldProceedWithGitHubRequest,
 } from './utils'
+export * from './version-utils'

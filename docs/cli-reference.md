@@ -217,6 +217,35 @@ ln -s $(pwd)/bin/pkgx-tools /usr/local/bin/pkgx-tools
 pkgx-tools fetch node
 ```
 
+## Type Safety Features
+
+The CLI commands work seamlessly with ts-pkgx's comprehensive type safety features:
+
+```bash
+# Type-safe package names are validated at runtime
+bun run pkgx:fetch node          # ✅ Valid alias
+bun run pkgx:fetch nodejs.org    # ✅ Valid domain
+bun run pkgx:fetch invalid-pkg   # ❌ Will show error for invalid package
+
+# Version specifications are also validated
+bun run pkgx:fetch --pkg "node@20.1.0,python@latest,go@^1.21"
+```
+
+When using the CLI programmatically, you get full TypeScript support:
+
+```typescript
+import type { CLIResult, PackageName } from 'ts-pkgx'
+import { createInstallPlan, showPackageInfo } from 'ts-pkgx'
+
+// Type-safe CLI operations
+function runCLICommand(packageName: PackageName) {
+  const infoResult: CLIResult<PackageInfo> = showPackageInfo(packageName)
+  const planResult: CLIResult<InstallationPlan> = createInstallPlan(packageName)
+
+  return { infoResult, planResult }
+}
+```
+
 ## Environment Variables
 
 ts-pkgx respects the following environment variables:

@@ -1,6 +1,6 @@
 # TypeScript Integration
 
-ts-pkgx provides seamless TypeScript integration, making it easy to work with package data in a type-safe manner.
+ts-pkgx provides seamless TypeScript integration, making it easy to work with package data in a type-safe manner. The library now includes extensive type safety features that provide compile-time validation, IntelliSense support, and type-safe package management operations.
 
 ## Fully Typed Interfaces
 
@@ -143,6 +143,69 @@ export const pantry: Pantry = {
 ```
 
 This provides a convenient, type-safe way to access all packages in your project.
+
+## New Type Safety Features
+
+ts-pkgx now includes comprehensive type safety features:
+
+### Package Name Types
+
+```typescript
+import type {
+  PackageAlias, // All available package aliases (e.g., 'node', 'python')
+  PackageDomain, // All available package domains (e.g., 'nodejs.org')
+  PackageName, // Union of all valid package identifiers
+  PackageSpec // Package specifications with versions (e.g., 'node@20.1.0')
+} from 'ts-pkgx'
+
+// Type-safe package operations
+function installPackage(packageName: PackageName, version?: string) {
+  // TypeScript ensures only valid package names are accepted
+}
+```
+
+### Version Resolution
+
+```typescript
+import {
+  getAvailableVersions,
+  getLatestVersion,
+  getPackageInfo,
+  resolveVersion
+} from 'ts-pkgx'
+
+// Type-safe version operations
+const latest = getLatestVersion('node') // string | null
+const versions = getAvailableVersions('node') // string[]
+const resolved = resolveVersion('node', '^20') // string | null
+const info = getPackageInfo('node') // PackageInfo | null
+```
+
+### CLI Utilities
+
+```typescript
+import {
+  createInstallPlan,
+  searchPackagesCommand,
+  showPackageInfo
+} from 'ts-pkgx'
+
+// Type-safe CLI operations with error handling
+const result = showPackageInfo('node')
+if (result.success && result.data) {
+  console.log(result.data.description)
+}
+```
+
+### Platform Detection
+
+```typescript
+import { createInstallationContext, detectPlatform } from 'ts-pkgx'
+
+// Type-safe platform operations
+const platform = detectPlatform() // PlatformInfo
+const context = createInstallationContext('node') // InstallationContext
+```
 
 ## Related Documentation
 

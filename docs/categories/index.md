@@ -97,20 +97,35 @@ pkgx docker kubernetes terraform
 
 ### Access in Code
 ```typescript
-import { pantry } from 'ts-pkgx'
+import type { PackageName } from 'ts-pkgx'
+import {
+  getPackageInfo,
+  getPackagesByCategory,
+  isPackageInCategory,
+  PACKAGE_CATEGORIES,
+  pantry
+} from 'ts-pkgx'
 
-// Get packages by category
+// Type-safe category operations
+const runtimePackages = getPackagesByCategory('RUNTIME') // PackageName[]
+const buildTools = getPackagesByCategory('BUILD_TOOLS') // PackageName[]
+const databases = getPackagesByCategory('DATABASES') // PackageName[]
+
+// Check if a package belongs to a category
+const isNodeRuntime = isPackageInCategory('node', 'RUNTIME') // true
+const isPythonDatabase = isPackageInCategory('python', 'DATABASES') // false
+
+// Get packages by category (traditional approach)
 const languages = [
   pantry.nodejsorg,
   pantry.pythonorg,
   pantry.rustlangorg
 ]
 
-const databases = [
-  pantry.postgresqlorg,
-  pantry.mysqlcom,
-  pantry.redisio
-]
+// Get detailed information for packages in a category
+const runtimeInfo = runtimePackages
+  .map(name => getPackageInfo(name))
+  .filter(info => info !== null)
 ```
 
 ## 🔗 Navigation
