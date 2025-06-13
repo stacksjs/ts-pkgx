@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-13T13:23:50.599Z
+- **Last Updated**: 2025-06-13T15:15:38.115Z
 
 ## Table of Contents
 
@@ -384,7 +384,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kubebuilderio](./packages/kubebuilderio.md)** () | Kubebuilder - SDK for building Kubernetes APIs using CRDs | kubebuilder | 4.6.0 (+17) | `pkgx kubebuilder` |
 | **[kubecmcloud](./packages/kubecmcloud.md)** () | Manage your kubeconfig more easily. | kubecm | 0.33.0 (+9) | `pkgx kubecm` |
 | **[kubectxdev](./packages/kubectxdev.md)** () | Tool that can switch between kubectl contexts easily and create aliases | kubectx, kubens | 0.9.5 (+1) | `pkgx kube` |
-| **[kubelinterio](./packages/kubelinterio.md)** () | KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure ... | kube-linter | 0.7.2 (+3) | `pkgx kube-linter` |
+| **[kubelinterio](./packages/kubelinterio.md)** () | KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure ... | kube-linter | 0.7.3 (+4) | `pkgx kube-linter` |
 | **[kubesharkco](./packages/kubesharkco.md)** () | The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, captur... | kubeshark | 72.3.83 (+55) | `pkgx kubeshark` |
 | **[ladspaorg](./packages/ladspaorg.md)** () | Linux Audio Developer's Simple Plugin | analyseplugin, applyplugin, listplugins | 1.17.0 (+0) | `pkgx ladspa.org` |
 | **[lamesourceforgeio](./packages/lamesourceforgeio.md)** () | High quality MPEG Audio Layer III (MP3) encoder | lame | 3.100.0 (+0) | `pkgx lame` |
@@ -451,7 +451,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mitmproxyorg](./packages/mitmproxyorg.md)** () | An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers. | mitmproxy | 12.1.1 (+26) | `pkgx mitmproxy` |
 | **[mkcertdev](./packages/mkcertdev.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you'd l... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
 | **[mkdocsorg](./packages/mkdocsorg.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
-| **[modalcom](./packages/modalcom.md)** () | Python client library for Modal | - | 1.0.3 (+790) | `pkgx modal.com` |
+| **[modalcom](./packages/modalcom.md)** () | Python client library for Modal | - | 1.0.4 (+791) | `pkgx modal.com` |
 | **[moshorg](./packages/moshorg.md)** () | Remote terminal application | mosh-client, mosh-server | 1.4.0 (+0) | `pkgx mosh` |
 | **[mpg123de](./packages/mpg123de.md)** () | MP3 player for Linux and UNIX | mpg123 | 1.33.0 (+12) | `pkgx mpg123` |
 | **[mpvio](./packages/mpvio.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
@@ -605,7 +605,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[terratagio](./packages/terratagio.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag` |
 | **[tesseractocrgithubio](./packages/tesseractocrgithubio.md)** () | Tesseract Open Source OCR Engine (main repository) | tesseract | 5.5.1 (+8) | `pkgx tesseract` |
 | **[tidbytcom](./packages/tidbytcom.md)** () | Build apps for pixel-based displays ✨ | pixlet | 0.34.0 (+19) | `pkgx pixlet` |
-| **[tiltdev](./packages/tiltdev.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.34.5 (+22) | `pkgx tilt` |
+| **[tiltdev](./packages/tiltdev.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.35.0 (+23) | `pkgx tilt` |
 | **[tinygoorg](./packages/tinygoorg.md)** () | Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. ... | tinygo | 0.37.0 (+6) | `pkgx tinygo` |
 | **[tldrsh](./packages/tldrsh.md)** () | C command-line client for tldr pages 📚 | tldr | 1.6.1 (+2) | `pkgx tldr` |
 | **[tlrdev](./packages/tlrdev.md)** () | Cloud native secrets management for developers - never leave your command line for secrets. | teller | 2.0.7 (+4) | `pkgx teller` |

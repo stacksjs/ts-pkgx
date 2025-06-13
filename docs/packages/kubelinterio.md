@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `0.7.2`, `0.7.1`, `0.7.0`, `0.6.8`
+- `0.7.3`, `0.7.2`, `0.7.1`, `0.7.0`, `0.6.8`
 
 </details>
 
-**Latest Version**: `0.7.2`
+**Latest Version**: `0.7.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kubelinter.io@0.7.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +kubelinter.io@0.7.3 -- $SHELL -i
 ```
 
 ## Usage Examples
