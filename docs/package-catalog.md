@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-13T12:20:08.622Z
+- **Last Updated**: 2025-06-13T13:23:50.599Z
 
 ## Table of Contents
 
@@ -649,7 +649,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[yasmtortallnet](./packages/yasmtortallnet.md)** () | Yasm Assembler mainline development tree | yasm | 1.3.0 (+0) | `pkgx yasm` |
 | **[youtubedlorg](./packages/youtubedlorg.md)** () | Command-line program to download videos from YouTube.com and other video sites | youtube-dl | 2023.8.4 (+1) | `pkgx youtube-dl` |
 | **[ytdlporg](./packages/ytdlporg.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.6.9 (+46) | `pkgx yt-dlp` |
-| **[zarfdev](./packages/zarfdev.md)** () | DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/ | zarf | 0.55.6 (+44) | `pkgx zarf` |
+| **[zarfdev](./packages/zarfdev.md)** () | DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/ | zarf | 0.56.0 (+45) | `pkgx zarf` |
 | **[zeromqorg](./packages/zeromqorg.md)** () | ZeroMQ core engine in C++, implements ZMTP/3.1 | - | 4.3.5 (+1) | `pkgx zeromq.org` |
 | **[zlibnet](./packages/zlibnet.md)** () | A massively spiffy yet delicately unobtrusive compression library. | - | 1.3.1 (+3) | `pkgx zlib.net` |
 | **[zrokio](./packages/zrokio.md)** () | Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti. | zrok, copyto, pastefrom | 1.0.5 (+36) | `pkgx zrok` |

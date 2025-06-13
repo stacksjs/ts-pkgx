@@ -3,7 +3,7 @@
  *
  * @domain `zarf.dev`
  * @programs `zarf`
- * @version `0.55.6` (45 versions available)
+ * @version `0.56.0` (46 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zarf-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) zarf`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "zarf"
  * console.log(pkg.description) // "DevSecOps for Air Gap & Limited-Connection Syst..."
  * console.log(pkg.programs)    // ["zarf"]
- * console.log(pkg.versions[0]) // "0.55.6" (latest)
+ * console.log(pkg.versions[0]) // "0.56.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/zarf-dev.md
@@ -62,6 +62,7 @@ export const zarfPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.56.0',
     '0.55.6',
     '0.55.5',
     '0.55.4',
