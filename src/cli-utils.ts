@@ -2,19 +2,18 @@
  * CLI utilities for ts-pkgx package management
  */
 
-import type { PackageName, PackageInfo, PackageSpec, SupportedPlatform, SupportedArchitecture } from './package-types'
+import type { PackageInfo, PackageName, PackageSpec, SupportedArchitecture, SupportedPlatform } from './package-types'
+import { detectPlatform, getAllPackageAliases } from './package-types'
 import {
-  getPackageInfo,
-  searchPackages,
-  getPopularPackages,
   getActivePackages,
-  validatePackageSpec,
-  resolveVersion,
-  getLatestVersion,
   getAvailableVersions,
+  getLatestVersion,
+  getPackageInfo,
+  getPopularPackages,
+  resolveVersion,
+  searchPackages,
+  validatePackageSpec,
 } from './version-utils'
-import { detectPlatform } from './package-types'
-import { getAllPackageAliases } from './package-types'
 
 /**
  * CLI command result interface
@@ -57,7 +56,8 @@ export function showPackageInfo(packageName: string): CLIResult<PackageInfo> {
       success: true,
       data: info,
     }
-  } catch (error) {
+  }
+  catch (error) {
     return {
       success: false,
       error: `Failed to get package info: ${error}`,
@@ -83,7 +83,8 @@ export function searchPackagesCommand(searchTerm: string): CLIResult<PackageInfo
       success: true,
       data: results,
     }
-  } catch (error) {
+  }
+  catch (error) {
     return {
       success: false,
       error: `Search failed: ${error}`,
@@ -102,7 +103,8 @@ export function listPopularPackages(limit: number = 20): CLIResult<PackageInfo[]
       success: true,
       data: packages,
     }
-  } catch (error) {
+  }
+  catch (error) {
     return {
       success: false,
       error: `Failed to list popular packages: ${error}`,
@@ -121,7 +123,8 @@ export function listActivePackages(limit: number = 20): CLIResult<PackageInfo[]>
       success: true,
       data: packages,
     }
-  } catch (error) {
+  }
+  catch (error) {
     return {
       success: false,
       error: `Failed to list active packages: ${error}`,
@@ -140,7 +143,8 @@ export function listAliases(): CLIResult<string[]> {
       success: true,
       data: aliases,
     }
-  } catch (error) {
+  }
+  catch (error) {
     return {
       success: false,
       error: `Failed to list aliases: ${error}`,
@@ -174,7 +178,8 @@ export function validatePackage(packageSpec: string): CLIResult<{
         isValid: true,
       },
     }
-  } catch (error) {
+  }
+  catch (error) {
     return {
       success: false,
       error: `Validation failed: ${error}`,
@@ -242,7 +247,8 @@ export function createInstallPlan(packageSpec: string): CLIResult<InstallationPl
       data: plan,
       warnings: warnings.length > 0 ? warnings : undefined,
     }
-  } catch (error) {
+  }
+  catch (error) {
     return {
       success: false,
       error: `Failed to create install plan: ${error}`,
@@ -277,7 +283,8 @@ export function getVersionInfo(packageName: string): CLIResult<{
         versions,
       },
     }
-  } catch (error) {
+  }
+  catch (error) {
     return {
       success: false,
       error: `Failed to get version info: ${error}`,
@@ -374,7 +381,8 @@ export function getSystemInfo(): CLIResult<{
         nodeVersion: process.version,
       },
     }
-  } catch (error) {
+  }
+  catch (error) {
     return {
       success: false,
       error: `Failed to get system info: ${error}`,

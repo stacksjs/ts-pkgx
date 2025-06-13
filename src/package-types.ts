@@ -2,7 +2,7 @@
  * Comprehensive TypeScript types and utilities for ts-pkgx
  */
 
-import type { Packages, Pantry } from './packages'
+import type { Packages } from './packages'
 import process from 'node:process'
 import { aliases } from './packages/aliases'
 
