@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-13T15:15:38.115Z
+- **Last Updated**: 2025-06-13T18:16:27.900Z
 
 ## Table of Contents
 
@@ -65,7 +65,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[bunsh](./packages/bunsh.md)** () | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.16 (+119) | `pkgx bun` |
 | **[classicyarnpkgcom](./packages/classicyarnpkgcom.md)** () | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx classic.yarnpkg.com` |
 | **[denoland](./packages/denoland.md)** () | A modern runtime for JavaScript and TypeScript. | deno | 2.3.6 (+131) | `pkgx deno` |
-| **[flutterdev](./packages/flutterdev.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.3 (+46) | `pkgx flutter.dev` |
+| **[flutterdev](./packages/flutterdev.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.4 (+47) | `pkgx flutter.dev` |
 | **[nodejsorg](./packages/nodejsorg.md)** () | Platform built on V8 to build network applications | node | 24.2.0 (+137) | `pkgx node` |
 | **[npmjscom](./packages/npmjscom.md)** () | the package manager for JavaScript | npm, npx | 11.4.2 (+59) | `pkgx npmjs.com` |
 | **[pnpmio](./packages/pnpmio.md)** () | Fast, disk space efficient package manager | pnpm, pnpx | 10.12.1 (+164) | `pkgx pnp` |
@@ -266,7 +266,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[daytonaio](./packages/daytonaio.md)** () | The Open Source Dev Environment Manager. | daytona | 0.100.0 (+75) | `pkgx daytona` |
 | **[dblabdanvergaracom](./packages/dblabdanvergaracom.md)** () | The database client every command line junkie deserves. | dblab | 0.33.0 (+15) | `pkgx dblab` |
 | **[deepwisdomai](./packages/deepwisdomai.md)** (metagpt) | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx MetaGPT` |
-| **[depotdev](./packages/depotdev.md)** () | 🖥️ Depot CLI, build your Docker images in the cloud | depot | 2.87.0 (+40) | `pkgx depot` |
+| **[depotdev](./packages/depotdev.md)** () | 🖥️ Depot CLI, build your Docker images in the cloud | depot | 2.88.0 (+41) | `pkgx depot` |
 | **[dgraphio](./packages/dgraphio.md)** () | high-performance graph database for real-time use cases | dgraph | 24.1.3 (+10) | `pkgx dgraph` |
 | **[dhalllangorg](./packages/dhalllangorg.md)** () | Interpreter for the Dhall language | dhall | 1.42.2 (+1) | `pkgx dhall` |
 | **[diggerdev](./packages/diggerdev.md)** () | Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI... | digger | 0.6.105 (+188) | `pkgx digger` |
@@ -490,7 +490,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[openpolicyagentorg](./packages/openpolicyagentorg.md)** () | Open Policy Agent (OPA) is an open source, general-purpose policy engine. | opa | 1.5.1 (+25) | `pkgx opa` |
 | **[openrestyorg](./packages/openrestyorg.md)** () | High Performance Web Platform Based on Nginx and LuaJIT | nginx-xml2pod, opm, resty, ... (+2) | 1.25.3.2 (+0) | `pkgx openresty.org` |
 | **[opensearchorg](./packages/opensearchorg.md)** () | 🔎 Open source distributed and RESTful search engine. | opensearch, opensearch-keystore, opensearch-plugin, ... (+1) | 3.0.0 (+10) | `pkgx opensearch` |
-| **[openshiftcom](./packages/openshiftcom.md)** () | The OpenShift Command Line, part of OKD | oc | 4.18.17 (+222) | `pkgx oc` |
+| **[openshiftcom](./packages/openshiftcom.md)** () | The OpenShift Command Line, part of OKD | oc | 4.19.0 (+223) | `pkgx oc` |
 | **[openslideorg](./packages/openslideorg.md)** () | C library to read whole-slide images (a.k.a. virtual slides) | openslide-quickhash1sum, openslide-show-properties, openslide-write-png | 4.0.0 (+1) | `pkgx openslide` |
 | **[opensslorg](./packages/opensslorg.md)** () | TLS/SSL and crypto library with QUIC APIs | openssl, c_rehash | 3.5.0 (+29) | `pkgx OpenSSL` |
 | **[opentofuorg](./packages/opentofuorg.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.9.1 (+18) | `pkgx tofu` |
@@ -652,7 +652,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[zarfdev](./packages/zarfdev.md)** () | DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/ | zarf | 0.56.0 (+45) | `pkgx zarf` |
 | **[zeromqorg](./packages/zeromqorg.md)** () | ZeroMQ core engine in C++, implements ZMTP/3.1 | - | 4.3.5 (+1) | `pkgx zeromq.org` |
 | **[zlibnet](./packages/zlibnet.md)** () | A massively spiffy yet delicately unobtrusive compression library. | - | 1.3.1 (+3) | `pkgx zlib.net` |
-| **[zrokio](./packages/zrokio.md)** () | Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti. | zrok, copyto, pastefrom | 1.0.5 (+36) | `pkgx zrok` |
+| **[zrokio](./packages/zrokio.md)** () | Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti. | zrok, copyto, pastefrom | 1.0.6 (+37) | `pkgx zrok` |
 | **[zshsourceforgeio](./packages/zshsourceforgeio.md)** () | UNIX shell (command interpreter) | zsh | 5.9.0 (+0) | `pkgx zsh` |
 
 ## Usage Examples
