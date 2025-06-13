@@ -590,7 +590,6 @@ export const pantry: Pantry = {
 }
 
 export const packages: Packages = pantry
-export * from './aliases'
 `
 
     // If we have package files, generate the proper complete index
@@ -631,9 +630,8 @@ export * from './aliases'
 
       const packagesType = 'export type Packages = Pantry\n\n'
       const packagesConst = 'export const packages: Packages = pantry\n\n'
-      const aliasesExport = 'export * from \'./aliases\'\n'
 
-      content = `${imports}\n${interfaceDecl}${packagesType}${pantryDecl}${packagesConst}${aliasesExport}`
+      content = `${imports}\n${interfaceDecl}${packagesType}${pantryDecl}${packagesConst}export * from './aliases'\n`
     }
 
     // Write to the index file
