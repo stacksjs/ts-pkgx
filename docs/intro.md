@@ -59,7 +59,7 @@ Please see our [releases](https://github.com/stackjs/launchpad/releases) page fo
 
 ## Contributing
 
-Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/stacksjs/contributing) for details.
 
 ## Community
 
@@ -90,7 +90,7 @@ We would like to extend our thanks to the following sponsors for funding Stacks 
 
 ## License
 
-The MIT License (MIT). Please see [LICENSE](LICENSE.md) for more information.
+The MIT License (MIT). Please see [LICENSE](https://github.com/stacksjs/ts-pkgx/blob/main/LICENSE.md) for more information.
 
 Made with 💙
 
