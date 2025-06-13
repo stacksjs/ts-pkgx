@@ -1,7 +1,5 @@
 import type { Packages, Pantry } from '../src/index'
-
 import { describe, expect, test } from 'bun:test'
-// Import all the main exports from the index
 import { aliases, packages, pantry } from '../src/index'
 
 describe('Index Module', () => {

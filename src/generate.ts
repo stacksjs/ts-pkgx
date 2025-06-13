@@ -1438,7 +1438,7 @@ ${description}
  * Main documentation generation function
  */
 export async function generateDocs(outputDir: string = DEFAULT_DOCS_DIR, packagesDir?: string): Promise<void> {
-  console.error('🚀 Generating comprehensive package documentation...')
+  console.log('🚀 Generating comprehensive package documentation...')
 
   try {
     // Ensure output directory exists
@@ -1447,27 +1447,27 @@ export async function generateDocs(outputDir: string = DEFAULT_DOCS_DIR, package
     }
 
     // Generate main catalog
-    console.error('📚 Generating package catalog...')
+    console.log('📚 Generating package catalog...')
     const catalogPath = await generatePackageCatalog(outputDir, packagesDir)
-    console.error(`✅ Generated: ${catalogPath}`)
+    console.log(`✅ Generated: ${catalogPath}`)
 
     // Generate individual package pages
-    console.error('📄 Generating individual package pages...')
+    console.log('📄 Generating individual package pages...')
     const packagePages = await generatePackagePages(outputDir, packagesDir)
-    console.error(`✅ Generated ${packagePages.length} package pages`)
+    console.log(`✅ Generated ${packagePages.length} package pages`)
 
     // Generate category pages
-    console.error('📂 Generating category pages...')
+    console.log('📂 Generating category pages...')
     const categoryPages = await generateCategoryPages(outputDir, packagesDir)
-    console.error(`✅ Generated ${categoryPages.length} category pages`)
+    console.log(`✅ Generated ${categoryPages.length} category pages`)
 
-    console.error(`\n🎉 Documentation generation complete!`)
-    console.error(`📍 Output directory: ${outputDir}`)
-    console.error(`📊 Total files generated: ${1 + packagePages.length + categoryPages.length}`)
-    console.error(`\nFiles generated:`)
-    console.error(`- Package catalog: ${catalogPath}`)
-    console.error(`- Package pages: ${packagePages.length} files in docs/packages/`)
-    console.error(`- Category pages: ${categoryPages.length} files in docs/categories/`)
+    console.log(`\n🎉 Documentation generation complete!`)
+    console.log(`📍 Output directory: ${outputDir}`)
+    console.log(`📊 Total files generated: ${1 + packagePages.length + categoryPages.length}`)
+    console.log(`\nFiles generated:`)
+    console.log(`- Package catalog: ${catalogPath}`)
+    console.log(`- Package pages: ${packagePages.length} files in docs/packages/`)
+    console.log(`- Category pages: ${categoryPages.length} files in docs/categories/`)
   }
   catch (error) {
     console.error('❌ Error generating documentation:', error)
