@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-14T17:14:35.985Z
+- **Last Updated**: 2025-06-14T19:14:26.921Z
 
 ## Table of Contents
 
@@ -318,7 +318,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitclifforg](./packages/gitclifforg.md)** () | A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️ | git-cliff | 2.9.1 (+22) | `pkgx git-cliff` |
 | **[gitleaksio](./packages/gitleaksio.md)** () | Find secrets with Gitleaks 🔑 | gitleaks | 8.27.2 (+28) | `pkgx gitleaks` |
 | **[gitlfscom](./packages/gitlfscom.md)** () | Git extension for versioning large files | git-lfs | 3.6.1 (+5) | `pkgx git-lfs` |
-| **[gitquickstatssh](./packages/gitquickstatssh.md)** () | ▁▅▆▃▅ Git quick statistics is a simple and efficient way to access various statistics in git repo... | git-quick-stats | 2.5.8 (+9) | `pkgx git-quick-stats` |
+| **[gitquickstatssh](./packages/gitquickstatssh.md)** () | ▁▅▆▃▅ Git quick statistics is a simple and efficient way to access various statistics in git repo... | git-quick-stats | 2.6.0 (+10) | `pkgx git-quick-stats` |
 | **[gittowncom](./packages/gittowncom.md)** () | High-level command-line interface for Git | git-town | 21.1.0 (+54) | `pkgx git-town` |
 | **[glewsourceforgeio](./packages/glewsourceforgeio.md)** () | The OpenGL Extension Wrangler Library | glewinfo, visualinfo | 2.2.0 (+0) | `pkgx glew.sourceforge.io` |
 | **[glfworg](./packages/glfworg.md)** () | A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input | - | 3.4.0 (+2) | `pkgx glfw.org` |
