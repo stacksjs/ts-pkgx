@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-14T12:18:08.647Z
+- **Last Updated**: 2025-06-14T15:14:47.697Z
 
 ## Table of Contents
 
@@ -501,7 +501,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[packerio](./packages/packerio.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.13.1 (+12) | `pkgx packer` |
 | **[pandocorg](./packages/pandocorg.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.7.0.2 (+30) | `pkgx pandoc` |
 | **[pcreorg](./packages/pcreorg.md)** () | Perl compatible regular expressions library | pcre-config, pcregrep, pcretest | 8.45.0 (+0) | `pkgx pcre` |
-| **[pdmfmingdev](./packages/pdmfmingdev.md)** () | A modern Python package and dependency manager supporting the latest PEP standards | pdm | 2.25.0 (+65) | `pkgx pdm` |
+| **[pdmfmingdev](./packages/pdmfmingdev.md)** () | A modern Python package and dependency manager supporting the latest PEP standards | pdm | 2.25.1 (+66) | `pkgx pdm` |
 | **[pinnipeddev](./packages/pinnipeddev.md)** () | Pinniped is the easy, secure way to log in to your Kubernetes clusters. | pinniped | 0.39.0 (+13) | `pkgx pinniped` |
 | **[pkgxsh](./packages/pkgxsh.md)** () | Standalone binary that can run anything | pkgx | 2.7.0 (+34) | `pkgx pkgx` |
 | **[pkllangorg](./packages/pkllangorg.md)** () | A configuration as code language with rich validation and tooling. | jpkl, pkl | 0.28.2 (+11) | `pkgx pkl-lang.org` |
