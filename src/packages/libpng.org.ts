@@ -3,7 +3,7 @@
  *
  * @domain `libpng.org`
  * @programs `libpng-config`, `libpng16-config`, `png-fix-itxt`, `pngfix`
- * @version `1.6.48` (11 versions available)
+ * @version `1.6.49` (12 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libpng-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "libpng.org"
  * console.log(pkg.description) // "LIBPNG: Portable Network Graphics support, offi..."
  * console.log(pkg.programs)    // ["libpng-config", "libpng16-config", ...]
- * console.log(pkg.versions[0]) // "1.6.48" (latest)
+ * console.log(pkg.versions[0]) // "1.6.49" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libpng-org.md
@@ -67,6 +67,7 @@ export const libpngorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.6.49',
     '1.6.48',
     '1.6.47',
     '1.6.46',

@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-13T23:16:20.877Z
+- **Last Updated**: 2025-06-14T01:44:52.985Z
 
 ## Table of Contents
 
@@ -223,7 +223,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[borgbackuporg](./packages/borgbackuporg.md)** () | Deduplicating archiver with compression and authenticated encryption. | borg, borgfs | 1.4.1 (+0) | `pkgx borg` |
 | **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.6 (+17) | `pkgx browser-use.com` |
 | **[bufbuild](./packages/bufbuild.md)** () | The best way of working with Protocol Buffers. | buf | 1.54.0 (+40) | `pkgx buf` |
-| **[buildpacksio](./packages/buildpacksio.md)** () | CLI for building apps using Cloud Native Buildpacks | pack | 0.37.0 (+11) | `pkgx pack` |
+| **[buildpacksio](./packages/buildpacksio.md)** () | CLI for building apps using Cloud Native Buildpacks | pack | 0.38.0 (+12) | `pkgx pack` |
 | **[bytebasecom](./packages/bytebasecom.md)** () | World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engin... | bytebase | 3.7.0 (+30) | `pkgx bytebase` |
 | **[caddyservercom](./packages/caddyservercom.md)** () | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | caddy | 2.10.0 (+9) | `pkgx caddy` |
 | **[cairographicsorg](./packages/cairographicsorg.md)** () | Vector graphics library with cross-device output support | cairo-trace | 1.18.4 (+3) | `pkgx cairo-trace` |
@@ -283,7 +283,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[edgedbcom](./packages/edgedbcom.md)** () | The EdgeDB CLI | edgedb | 7.6.0 (+36) | `pkgx edgedb` |
 | **[eksctlio](./packages/eksctlio.md)** () | Simple command-line tool for creating clusters on Amazon EKS | eksctl | 0.210.0 (+56) | `pkgx eksctl` |
 | **[elementsprojectorg](./packages/elementsprojectorg.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.0 (+8) | `pkgx elementsproject.org` |
-| **[elizaosgithubio](./packages/elizaosgithubio.md)** (eliza, elizaos) | Autonomous agents for everyone | eliza | 1.0.8 (+9) | `pkgx elizaOS` |
+| **[elizaosgithubio](./packages/elizaosgithubio.md)** (eliza, elizaos) | Autonomous agents for everyone | eliza | 1.0.9 (+10) | `pkgx elizaOS` |
 | **[elvsh](./packages/elvsh.md)** () | Powerful scripting language & versatile interactive shell | elvish | 0.21.0 (+3) | `pkgx elvish` |
 | **[encoredev](./packages/encoredev.md)** () | Open Source Development Platform for building robust type-safe distributed systems with declarati... | encore, git-remote-encore | 1.48.4 (+54) | `pkgx encore.dev` |
 | **[endoflifedate](./packages/endoflifedate.md)** () | CLI to show end-of-life dates for a number of products. | eol | 0.22.0 (+8) | `pkgx eol` |
@@ -405,7 +405,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[libimobiledeviceorg](./packages/libimobiledeviceorg.md)** () | A cross-platform protocol library to communicate with iOS devices | idevicedate | 1.3.0 (+0) | `pkgx idevicedate` |
 | **[libjpegturboorg](./packages/libjpegturboorg.md)** () | Main libjpeg-turbo repository | cjpeg, djpeg, jpegtran, ... (+3) | 3.1.1 (+7) | `pkgx libjpeg-turbo.org` |
 | **[liblqrwikidotcom](./packages/liblqrwikidotcom.md)** () | Liquid Rescale library | - | 0.4.3 (+1) | `pkgx liblqr.wikidot.com` |
-| **[libpngorg](./packages/libpngorg.md)** () | LIBPNG: Portable Network Graphics support, official libpng repository | libpng-config, libpng16-config, png-fix-itxt, ... (+1) | 1.6.48 (+10) | `pkgx libpng.org` |
+| **[libpngorg](./packages/libpngorg.md)** () | LIBPNG: Portable Network Graphics support, official libpng repository | libpng-config, libpng16-config, png-fix-itxt, ... (+1) | 1.6.49 (+11) | `pkgx libpng.org` |
 | **[libraworg](./packages/libraworg.md)** () | Library for reading RAW files from digital photo cameras | 4channels, dcraw_emu, dcraw_half, ... (+8) | 0.21.4 (+3) | `pkgx libraw.org` |
 | **[libsdlorg](./packages/libsdlorg.md)** () | Simple Directmedia Layer | - | 3.2.16 (+33) | `pkgx libsdl.org` |
 | **[libspngorg](./packages/libspngorg.md)** () | Simple, modern libpng alternative | - | 0.5.0 (+0) | `pkgx libspng.org` |

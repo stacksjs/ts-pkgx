@@ -3,7 +3,7 @@
  *
  * @domain `elizaOS.github.io`
  * @programs `eliza`
- * @version `1.0.8` (10 versions available)
+ * @version `1.0.9` (11 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/elizaOS-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) eliza`
@@ -24,7 +24,7 @@
  * console.log(pkg.name)        // "elizaOS"
  * console.log(pkg.description) // "Autonomous agents for everyone"
  * console.log(pkg.programs)    // ["eliza"]
- * console.log(pkg.versions[0]) // "1.0.8" (latest)
+ * console.log(pkg.versions[0]) // "1.0.9" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/elizaOS-github-io.md
@@ -81,6 +81,7 @@ export const elizaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.0.9',
     '1.0.8',
     '1.0.7',
     '1.0.6',
