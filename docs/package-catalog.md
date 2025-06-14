@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-14T07:15:24.694Z
+- **Last Updated**: 2025-06-14T09:15:56.102Z
 
 ## Table of Contents
 
@@ -221,7 +221,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[boostorg](./packages/boostorg.md)** () | Super-project for modularized Boost | - | 1.88.0 (+7) | `pkgx boost.org` |
 | **[borepub](./packages/borepub.md)** () | Modern, simple TCP tunnel in Rust that exposes local ports to a remote server | bore | 0.6.0 (+4) | `pkgx bore` |
 | **[borgbackuporg](./packages/borgbackuporg.md)** () | Deduplicating archiver with compression and authenticated encryption. | borg, borgfs | 1.4.1 (+0) | `pkgx borg` |
-| **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.6 (+17) | `pkgx browser-use.com` |
+| **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.7 (+18) | `pkgx browser-use.com` |
 | **[bufbuild](./packages/bufbuild.md)** () | The best way of working with Protocol Buffers. | buf | 1.54.0 (+40) | `pkgx buf` |
 | **[buildpacksio](./packages/buildpacksio.md)** () | CLI for building apps using Cloud Native Buildpacks | pack | 0.38.0 (+12) | `pkgx pack` |
 | **[bytebasecom](./packages/bytebasecom.md)** () | World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engin... | bytebase | 3.7.0 (+30) | `pkgx bytebase` |
