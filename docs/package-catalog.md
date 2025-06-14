@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-14T04:16:56.043Z
+- **Last Updated**: 2025-06-14T07:15:24.694Z
 
 ## Table of Contents
 
@@ -433,7 +433,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[lz4org](./packages/lz4org.md)** () | Extremely Fast Compression algorithm | lz4 | 1.10.0 (+1) | `pkgx lz4` |
 | **[macfusegithubio](./packages/macfusegithubio.md)** () | macFUSE umbrella repository | - | 4.10.2 (+0) | `pkgx macfuse.github.io` |
 | **[macvimorg](./packages/macvimorg.md)** () | Vim - the text editor - for macOS | gview, gvim, gvimdiff, ... (+9) | 181.0.0 (+4) | `pkgx macvim.org` |
-| **[mailpitaxllentorg](./packages/mailpitaxllentorg.md)** () | An email and SMTP testing tool with API for developers | mailpit | 1.26.0 (+65) | `pkgx mailpit` |
+| **[mailpitaxllentorg](./packages/mailpitaxllentorg.md)** () | An email and SMTP testing tool with API for developers | mailpit | 1.26.1 (+66) | `pkgx mailpit` |
 | **[makotemplatesorg](./packages/makotemplatesorg.md)** () | Mako Templates for Python | mako-render | 1.3.10 (+11) | `pkgx mako-render` |
 | **[mandocbsdlv](./packages/mandocbsdlv.md)** () | UNIX manpage compiler toolset | bsdapropos, bsdman, bsdsoelim, ... (+3) | 1.14.6 (+0) | `pkgx mandoc.bsd.lv` |
 | **[markupsafepalletsprojectscom](./packages/markupsafepalletsprojectscom.md)** () | Safely add untrusted strings to HTML/XML markup. | - | 3.0.2 (+5) | `pkgx markupsafe.palletsprojects.com` |
