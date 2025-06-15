@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-15T19:14:38.722Z
+- **Last Updated**: 2025-06-15T21:16:29.040Z
 
 ## Table of Contents
 
@@ -334,7 +334,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[granteddev](./packages/granteddev.md)** () | The easiest way to access your cloud. | granted | 0.38.0 (+37) | `pkgx granted` |
 | **[graphicsmagickorg](./packages/graphicsmagickorg.md)** () | Image processing tools collection | gm | 1.3.45 (+4) | `pkgx gm` |
 | **[graphitesilorg](./packages/graphitesilorg.md)** () | Graphite is a "smart font" system developed specifically to handle the complexities of lesser-kno... | gr2fonttest | 1.3.14 (+0) | `pkgx gr2fonttest` |
-| **[graphvizorg](./packages/graphvizorg.md)** () | Graph visualization software from AT&T and Bell Labs | acyclic, bcomps, ccomps, ... (+32) | 13.0.0 (+11) | `pkgx graphviz.org` |
+| **[graphvizorg](./packages/graphvizorg.md)** () | Graph visualization software from AT&T and Bell Labs | acyclic, bcomps, ccomps, ... (+32) | 13.0.1 (+12) | `pkgx graphviz.org` |
 | **[groongaorg](./packages/groongaorg.md)** () | An embeddable fulltext search engine. Groonga is the successor project to Senna. | groonga, groonga-suggest-create-dataset | 15.1.1 (+26) | `pkgx groonga` |
 | **[grpcio](./packages/grpcio.md)** () | The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#) | grpc_csharp_plugin, grpc_node_plugin, grpc_cpp_plugin, ... (+5) | 1.73.0 (+44) | `pkgx grpc` |
 | **[gtssourceforgenet](./packages/gtssourceforgenet.md)** () | GNU triangulated surface library | delaunay, gts2dxf, gts2oogl, ... (+6) | 0.7.6 (+0) | `pkgx gts.sourceforge.net` |
