@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-15T15:15:30.452Z
+- **Last Updated**: 2025-06-15T19:14:38.722Z
 
 ## Table of Contents
 
@@ -235,7 +235,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cfsslorg](./packages/cfsslorg.md)** () | CFSSL: Cloudflare's PKI and TLS toolkit | cfssl, cfssl-bundle, cfssl-certinfo, ... (+5) | 1.6.5 (+0) | `pkgx cfssl.org` |
 | **[cgalorg](./packages/cgalorg.md)** () | The public CGAL repository, see the README below | cgal_create_CMakeLists, cgal_create_cmake_script, cgal_make_macosx_app | 6.0.1 (+4) | `pkgx cgal` |
 | **[changiedev](./packages/changiedev.md)** () | Automated changelog tool for preparing releases with lots of customization options | changie | 1.22.0 (+7) | `pkgx changie` |
-| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.441 (+475) | `pkgx checkov` |
+| **[checkovio](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.442 (+476) | `pkgx checkov` |
 | **[chezmoiio](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.6 (+75) | `pkgx chezmoi` |
 | **[chompbuildcom](./packages/chompbuildcom.md)** () | 'JS Make' - parallel task runner for the frontend ecosystem with a JS extension system. | chomp | 0.2.23 (+0) | `pkgx chomp` |
 | **[circlecicom](./packages/circlecicom.md)** () | Enables you to reproduce the CircleCI environment locally | circleci | 0.1.32367 (+56) | `pkgx circleci` |
