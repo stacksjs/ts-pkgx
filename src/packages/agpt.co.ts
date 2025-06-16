@@ -7,6 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/agpt-co.md
  *
  * @install `sh <(curl https://pkgx.sh) auto-gpt`
+ * @name `Auto-GPT`
  * @aliases `auto-gpt`
  * @dependencies `python.org>=3.10<3.12`, `redis.io^7`, `tea.xyz^0`
  *

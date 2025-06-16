@@ -7,6 +7,7 @@
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/scryer-pl.md
  *
  * @install `sh <(curl https://pkgx.sh) scryer-prolog`
+ * @name `Scryer Prolog`
  * @aliases `scryer-prolog`, `scryer prolog`
  * @dependencies `openssl.org^1.1`
  *
