@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-16T13:26:49.414Z
+- **Last Updated**: 2025-06-16T15:16:26.613Z
 
 ## Table of Contents
 
@@ -36,7 +36,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dartdev](./packages/dartdev.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.8.1 (+35) | `pkgx dart` |
 | **[denoland](./packages/denoland.md)** () | A modern runtime for JavaScript and TypeScript. | deno | 2.3.6 (+131) | `pkgx deno` |
 | **[elixirlangorg](./packages/elixirlangorg.md)** () | Elixir is a dynamic, functional language for building scalable and maintainable applications | elixir, elixirc, iex, ... (+1) | 1.18.4 (+23) | `pkgx elixir-lang.org` |
-| **[erlangorg](./packages/erlangorg.md)** () | Programming language for highly scalable real-time systems | ct_run, dialyzer, epmd, ... (+6) | 28.0.0 (+71) | `pkgx erlang.org` |
+| **[erlangorg](./packages/erlangorg.md)** () | Programming language for highly scalable real-time systems | ct_run, dialyzer, epmd, ... (+6) | 28.0.1 (+74) | `pkgx erlang.org` |
 | **[gleamrun](./packages/gleamrun.md)** () | ⭐️ A friendly language for building type-safe, scalable systems! | gleam | 1.11.1 (+43) | `pkgx gleam` |
 | **[godev](./packages/godev.md)** (go) | The Go programming language | go, gofmt | 1.24.4 (+67) | `pkgx go.dev` |
 | **[haskellorg](./packages/haskellorg.md)** () | Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance... | ghc, ghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-&lbrace;&lbrace;version&rbrace;&rbrace;, ... (+25) | 9.12.2 (+18) | `pkgx haskell.org` |
@@ -97,7 +97,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[duckdborg](./packages/duckdborg.md)** () | DuckDB is an analytical in-process SQL database management system | duckdb | 1.3.0 (+18) | `pkgx duckdb` |
+| **[duckdborg](./packages/duckdborg.md)** () | DuckDB is an analytical in-process SQL database management system | duckdb | 1.3.1 (+19) | `pkgx duckdb` |
 | **[mongodbcom](./packages/mongodbcom.md)** () | The MongoDB Database | install_compass, mongod, mongos | 8.1.1 (+30) | `pkgx mongodb.com` |
 | **[mysqlcom](./packages/mysqlcom.md)** () | MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open... | mysql_client_test, my_print_defaults, myisam_ftdump, ... (+28) | 9.3.0 (+23) | `pkgx mysql.com` |
 | **[postgresqlorg](./packages/postgresqlorg.md)** () | Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't wo... | clusterdb, createdb, dropdb, ... (+25) | 17.2.0 (+11) | `pkgx postgresql.org` |
@@ -330,7 +330,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gomplateca](./packages/gomplateca.md)** () | A flexible commandline tool for template rendering. Supports lots of local and remote datasources. | gomplate | 4.3.2 (+10) | `pkgx gomplate` |
 | **[goreleasercom](./packages/goreleasercom.md)** () | Deliver Go binaries as fast and easily as possible | goreleaser | 2.10.2 (+40) | `pkgx goreleaser` |
 | **[gourceio](./packages/gourceio.md)** () | software version control visualization | gource | 0.55.0 (+1) | `pkgx gource` |
-| **[gqlgencom](./packages/gqlgencom.md)** () | go generate based graphql server library | gqlgen | 0.17.74 (+37) | `pkgx gqlgen` |
+| **[gqlgencom](./packages/gqlgencom.md)** () | go generate based graphql server library | gqlgen | 0.17.75 (+38) | `pkgx gqlgen` |
 | **[granteddev](./packages/granteddev.md)** () | The easiest way to access your cloud. | granted | 0.38.0 (+37) | `pkgx granted` |
 | **[graphicsmagickorg](./packages/graphicsmagickorg.md)** () | Image processing tools collection | gm | 1.3.45 (+4) | `pkgx gm` |
 | **[graphitesilorg](./packages/graphitesilorg.md)** () | Graphite is a "smart font" system developed specifically to handle the complexities of lesser-kno... | gr2fonttest | 1.3.14 (+0) | `pkgx gr2fonttest` |
@@ -515,9 +515,9 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[portaudiocom](./packages/portaudiocom.md)** () | PortAudio is a cross-platform, open-source C language library for real-time audio input and output. | - | 19.7.0 (+0) | `pkgx PortAudio` |
 | **[postgrestorg](./packages/postgrestorg.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 13.0.2 (+12) | `pkgx postgrest` |
 | **[precommitcom](./packages/precommitcom.md)** () | A framework for managing and maintaining multi-language pre-commit hooks. | pre-commit | 4.2.0 (+21) | `pkgx pre-commit` |
-| **[prefixdev](./packages/prefixdev.md)** () | Package management made easy | pixi | 0.48.1 (+81) | `pkgx pixi` |
+| **[prefixdev](./packages/prefixdev.md)** () | Package management made easy | pixi | 0.48.2 (+82) | `pkgx pixi` |
 | **[projectcopaceticgithubio](./packages/projectcopaceticgithubio.md)** () | Tool to directly patch container images given the vulnerability scanning results | copa | 0.10.0 (+4) | `pkgx copa` |
-| **[projenio](./packages/projenio.md)** () | Rapidly build modern applications with advanced configuration management | projen | 0.92.10 (+36) | `pkgx projen` |
+| **[projenio](./packages/projenio.md)** () | Rapidly build modern applications with advanced configuration management | projen | 0.92.11 (+37) | `pkgx projen` |
 | **[projorg](./packages/projorg.md)** () | PROJ - Cartographic Projections and Coordinate Transformations Library | proj | 9.6.2 (+10) | `pkgx proj` |
 | **[protobufdev](./packages/protobufdev.md)** (protoc, protocol buffers) | Protocol Buffers - Google's data interchange format | protoc | 31.1.0 (+42) | `pkgx Protocol Buffers` |
 | **[prqllangorg](./packages/prqllangorg.md)** () | PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement | prql-compiler, prqlc | 0.13.4 (+32) | `pkgx prql` |

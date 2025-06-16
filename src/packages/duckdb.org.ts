@@ -3,7 +3,7 @@
  *
  * @domain `duckdb.org`
  * @programs `duckdb`
- * @version `1.3.0` (19 versions available)
+ * @version `1.3.1` (20 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/duckdb-org.md
  *
  * @install `sh <(curl https://pkgx.sh) duckdb`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "duckdb"
  * console.log(pkg.description) // "DuckDB is an analytical in-process SQL database..."
  * console.log(pkg.programs)    // ["duckdb"]
- * console.log(pkg.versions[0]) // "1.3.0" (latest)
+ * console.log(pkg.versions[0]) // "1.3.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/duckdb-org.md
@@ -62,6 +62,7 @@ export const duckdbPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.3.1',
     '1.3.0',
     '1.2.2',
     '1.2.1',
