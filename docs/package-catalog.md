@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-16T01:44:39.196Z
+- **Last Updated**: 2025-06-16T03:40:32.310Z
 
 ## Table of Contents
 
@@ -501,7 +501,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[packerio](./packages/packerio.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.13.1 (+12) | `pkgx packer` |
 | **[pandocorg](./packages/pandocorg.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.7.0.2 (+30) | `pkgx pandoc` |
 | **[pcreorg](./packages/pcreorg.md)** () | Perl compatible regular expressions library | pcre-config, pcregrep, pcretest | 8.45.0 (+0) | `pkgx pcre` |
-| **[pdmfmingdev](./packages/pdmfmingdev.md)** () | A modern Python package and dependency manager supporting the latest PEP standards | pdm | 2.25.1 (+66) | `pkgx pdm` |
+| **[pdmfmingdev](./packages/pdmfmingdev.md)** () | A modern Python package and dependency manager supporting the latest PEP standards | pdm | 2.25.2 (+67) | `pkgx pdm` |
 | **[pinnipeddev](./packages/pinnipeddev.md)** () | Pinniped is the easy, secure way to log in to your Kubernetes clusters. | pinniped | 0.39.0 (+13) | `pkgx pinniped` |
 | **[pkgxsh](./packages/pkgxsh.md)** () | Standalone binary that can run anything | pkgx | 2.7.0 (+34) | `pkgx pkgx` |
 | **[pkllangorg](./packages/pkllangorg.md)** () | A configuration as code language with rich validation and tooling. | jpkl, pkl | 0.28.2 (+11) | `pkgx pkl-lang.org` |
@@ -574,7 +574,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[sphinxdocorg](./packages/sphinxdocorg.md)** () | Tool to create intelligent and beautiful documentation | sphinx-apidoc, sphinx-autogen, sphinx-build, ... (+1) | 8.2.3 (+41) | `pkgx sphinx` |
 | **[sqlcdev](./packages/sqlcdev.md)** () | Generate type-safe code from SQL | sqlc | 1.29.0 (+2) | `pkgx sqlc` |
 | **[sqlfluffcom](./packages/sqlfluffcom.md)** () | A modular SQL linter and auto-formatter with support for multiple dialects and templated code. | sqlfluff | 3.4.1 (+23) | `pkgx sqlfluff` |
-| **[squawkhqcom](./packages/squawkhqcom.md)** () | 🐘 linter for PostgreSQL, focused on migrations | squawk | 2.12.0 (+34) | `pkgx squawk` |
+| **[squawkhqcom](./packages/squawkhqcom.md)** () | 🐘 linter for PostgreSQL, focused on migrations | squawk | 2.13.0 (+35) | `pkgx squawk` |
 | **[srtallianceorg](./packages/srtallianceorg.md)** () | Secure, Reliable, Transport | srt-ffplay, srt-file-transmit, srt-live-transmit, ... (+1) | 1.5.4 (+2) | `pkgx srt` |
 | **[sshxio](./packages/sshxio.md)** () | Fast, collaborative live terminal sharing over the web | sshx | 2023.11.14 (+0) | `pkgx sshx` |
 | **[starshiprs](./packages/starshiprs.md)** () | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |
