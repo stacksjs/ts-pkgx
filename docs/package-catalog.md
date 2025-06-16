@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-16T15:16:26.613Z
+- **Last Updated**: 2025-06-16T17:16:21.789Z
 
 ## Table of Contents
 
@@ -229,7 +229,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cairographicsorg](./packages/cairographicsorg.md)** () | Vector graphics library with cross-device output support | cairo-trace | 1.18.4 (+3) | `pkgx cairo-trace` |
 | **[capstoneengineorg](./packages/capstoneengineorg.md)** () | Capstone disassembly/disassembler framework for ARM, ARM64 (ARMv8), Alpha, BPF, Ethereum VM, HPPA... | cstool | 5.0.6 (+6) | `pkgx cstool` |
 | **[carapacesh](./packages/carapacesh.md)** () | Multi-shell multi-command argument completer | carapace | 1.3.2 (+10) | `pkgx carapace` |
-| **[caskreadthedocsio](./packages/caskreadthedocsio.md)** () | Project management tool for Emacs | cask | 0.9.0 (+0) | `pkgx cask` |
+| **[caskreadthedocsio](./packages/caskreadthedocsio.md)** () | Project management tool for Emacs | cask | 0.9.1 (+1) | `pkgx cask` |
 | **[ccachedev](./packages/ccachedev.md)** () | Object-file caching compiler wrapper | ccache | 4.11.3 (+9) | `pkgx ccache` |
 | **[certbotefforg](./packages/certbotefforg.md)** () | Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on yo... | certbot | 4.1.1 (+18) | `pkgx certbot` |
 | **[cfsslorg](./packages/cfsslorg.md)** () | CFSSL: Cloudflare's PKI and TLS toolkit | cfssl, cfssl-bundle, cfssl-certinfo, ... (+5) | 1.6.5 (+0) | `pkgx cfssl.org` |
@@ -277,7 +277,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[dotenvlintergithubio](./packages/dotenvlintergithubio.md)** () | ⚡️Lightning-fast linter for .env files. Written in Rust 🦀 | dotenv-linter | 3.3.0 (+0) | `pkgx dotenv-linter` |
 | **[dotnetmicrosoftcom](./packages/dotnetmicrosoftcom.md)** () | Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET... | dotnet | 9.0.202 (+31) | `pkgx dotnet` |
 | **[doxygennl](./packages/doxygennl.md)** () | Generate documentation for several programming languages | doxygen | 1.14.0 (+9) | `pkgx doxygen` |
-| **[dozzledev](./packages/dozzledev.md)** () | Realtime log viewer for docker containers. | dozzle | 8.13.0 (+58) | `pkgx dozzle` |
+| **[dozzledev](./packages/dozzledev.md)** () | Realtime log viewer for docker containers. | dozzle | 8.13.1 (+59) | `pkgx dozzle` |
 | **[dprintdev](./packages/dprintdev.md)** () | Pluggable and configurable code formatting platform written in Rust. | dprint | 0.50.0 (+26) | `pkgx dprint` |
 | **[duktapeorg](./packages/duktapeorg.md)** () | Duktape - embeddable Javascript engine with a focus on portability and compact footprint | duk | 2.7.0 (+0) | `pkgx duk` |
 | **[edgedbcom](./packages/edgedbcom.md)** () | The EdgeDB CLI | edgedb | 7.6.0 (+36) | `pkgx edgedb` |
@@ -473,7 +473,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[numpyorg](./packages/numpyorg.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.0 (+17) | `pkgx f2py` |
 | **[nushellsh](./packages/nushellsh.md)** () | Modern shell for the GitHub era | nu | 0.105.1 (+47) | `pkgx nu` |
 | **[oauth2proxygithubio](./packages/oauth2proxygithubio.md)** () | A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more ide... | oauth2-proxy | 7.9.0 (+6) | `pkgx oauth2-proxy` |
-| **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.196 (+179) | `pkgx odigos` |
+| **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.198 (+180) | `pkgx odigos` |
 | **[ohmyposhdev](./packages/ohmyposhdev.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.8.0 (+289) | `pkgx oh-my-posh` |
 | **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.0 (+96) | `pkgx ollama` |
 | **[onefetchdev](./packages/onefetchdev.md)** () | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch` |
@@ -543,7 +543,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[replibytecom](./packages/replibytecom.md)** () | Seed your development database with real data ⚡️ | replibyte | 0.10.0 (+0) | `pkgx replibyte` |
 | **[rhashsourceforgenet](./packages/rhashsourceforgenet.md)** () | Utility for computing and verifying hash sums of files | whirlpool-hash, tiger-hash, tth-hash, ... (+9) | 1.4.6 (+3) | `pkgx rhash.sourceforge.net` |
 | **[riotermcom](./packages/riotermcom.md)** () | A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers. | rio | 0.2.18 (+2) | `pkgx rio` |
-| **[robotframeworkorg](./packages/robotframeworkorg.md)** () | Generic automation framework for acceptance testing and RPA | robot | 7.3.0 (+1) | `pkgx robot` |
+| **[robotframeworkorg](./packages/robotframeworkorg.md)** () | Generic automation framework for acceptance testing and RPA | robot | 7.3.1 (+2) | `pkgx robot` |
 | **[rometools](./packages/rometools.md)** () | Unified developer tools for JavaScript, TypeScript, and the web | rome | 0.4.2 (+0) | `pkgx rome` |
 | **[rsyncsambaorg](./packages/rsyncsambaorg.md)** () | An open source utility that provides fast incremental file transfer. It also has useful features ... | rsync, rsync-ssl | 3.4.1 (+3) | `pkgx rsync` |
 | **[rtmpdumpmplayerhqhu](./packages/rtmpdumpmplayerhqhu.md)** () | Tool for downloading RTMP streaming media | rtmpdump, rtmpgw, rtmpsrv, ... (+1) | 2.3.0 (+1) | `pkgx rtmpdump` |

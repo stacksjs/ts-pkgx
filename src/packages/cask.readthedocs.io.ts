@@ -3,7 +3,7 @@
  *
  * @domain `cask.readthedocs.io`
  * @programs `cask`
- * @version `0.9.0` (1 versions available)
+ * @version `0.9.1` (2 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cask-readthedocs-io.md
  *
  * @install `sh <(curl https://pkgx.sh) cask`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "cask"
  * console.log(pkg.description) // "Project management tool for Emacs"
  * console.log(pkg.programs)    // ["cask"]
- * console.log(pkg.versions[0]) // "0.9.0" (latest)
+ * console.log(pkg.versions[0]) // "0.9.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cask-readthedocs-io.md
@@ -70,6 +70,7 @@ export const caskPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.1',
     '0.9.0',
   ] as const,
   /**
