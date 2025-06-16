@@ -554,11 +554,11 @@ export type NoaliascomPackage = typeof noaliascomPackage
       // Should still generate file
       expect(aliasContent).toContain('export const aliases')
 
-      // Should NOT contain domain self-reference (not a real alias)
-      expect(aliasContent).not.toContain('noalias.com')
+      // Should contain auto-generated alias since package name differs from domain
+      expect(aliasContent).toContain('\'No Alias Package\': \'noalias.com\'')
     })
 
-    test('should filter out aliases that match package name (case-insensitive)', async () => {
+    test('should auto-generate aliases for package names that differ from domains', async () => {
       // Create a package with an alias that matches the package name
       const midnightCommanderFile = path.join(tempPackagesDir, 'midnightcommander.org.ts')
       const midnightCommanderContent = `
@@ -595,8 +595,9 @@ export type MidnightCommanderPackage = typeof midnightCommanderPackage
       // Use helper to find the file
       const { content: aliasesContent } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
-      // Should NOT contain the alias that matches the package name
-      expect(aliasesContent).not.toContain('\'midnight commander\':')
+      // Should contain both explicit aliases and auto-generated package name alias
+      expect(aliasesContent).toContain('\'midnight commander\': \'midnightcommander.org\'')
+      expect(aliasesContent).toContain('\'Midnight Commander\': \'midnightcommander.org\'')
 
       // Should contain the valid alias that doesn't match the package name
       // Check if mc alias is present in any form
@@ -618,9 +619,9 @@ export type MidnightCommanderPackage = typeof midnightCommanderPackage
       const aliasMatches = content.match(/'([^']+)':/g)
       if (aliasMatches) {
         const aliases = aliasMatches.map(match => match.slice(1, -2)) // Remove quotes and colon
-        const sortedAliases = [...aliases].sort()
+        const sortedAliases = [...aliases].sort((a, b) => a.localeCompare(b))
 
-        // Should be sorted
+        // Should be sorted using localeCompare (same as the actual implementation)
         expect(aliases).toEqual(sortedAliases)
       }
     })
@@ -660,8 +661,8 @@ export type GitCryptPackage = typeof gitCryptPackage
       // Use helper to find the file
       const { content: aliasesContent } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
-      // Should NOT contain the alias that exactly matches the package name
-      expect(aliasesContent).not.toContain('\'git-crypt\': \'agwa.name/git-crypt\'')
+      // Should contain all aliases including the one that matches the package name
+      expect(aliasesContent).toContain('\'git-crypt\': \'agwa.name/git-crypt\'')
 
       // Should contain valid aliases that don't match the package name
       expect(aliasesContent).toContain('\'gitcrypt\': \'agwa.name/git-crypt\'')
@@ -735,7 +736,7 @@ export type EmptyNamePackage = typeof emptyNamePackage
       expect(aliasesContent).toContain('\'blank\': \'emptyname.com\'')
     })
 
-    test('should log filtered aliases for debugging', async () => {
+    test('should not log filtered aliases since filtering is removed', async () => {
       // Create a package with duplicate alias
       const duplicateAliasFile = path.join(tempPackagesDir, 'duplicate.com.ts')
       const duplicateAliasContent = `
@@ -772,17 +773,18 @@ export type DuplicatePackage = typeof duplicatePackage
         // Use helper to find the file
         const { content: aliasesContent } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
-        // Should have logged the filtered alias
+        // Should NOT have logged filtered aliases since we no longer filter them
         const filteredLogs = consoleLogs.filter(log =>
           log.includes('Filtered out package name alias')
           && log.includes('duplicate package'),
         )
 
-        // The log should appear since "duplicate package" matches "Duplicate Package" (case-insensitive)
-        expect(filteredLogs.length).toBeGreaterThan(0)
+        // No filtering logs should appear since we removed the filtering logic
+        expect(filteredLogs.length).toBe(0)
 
-        // Should not contain the filtered alias
-        expect(aliasesContent).not.toContain('\'duplicate package\':')
+        // Should contain all aliases including the one that matches the package name
+        expect(aliasesContent).toContain('\'duplicate package\': \'duplicate.com\'')
+        expect(aliasesContent).toContain('\'Duplicate Package\': \'duplicate.com\'')
 
         // Should contain the valid alias
         expect(aliasesContent).toMatch(/'dup':\s*'[^']*'/)
@@ -825,10 +827,10 @@ export type CaseVariationsPackage = typeof caseVariationsPackage
       // Use helper to find the file
       const { content: aliasesContent } = findGeneratedFile('aliases.ts', aliasesPath, tempPackagesDir)
 
-      // Should NOT contain any variation of the package name
-      expect(aliasesContent).not.toContain('\'CamelCase Package\': \'casevariations.com\'')
-      expect(aliasesContent).not.toContain('\'camelcase package\': \'casevariations.com\'')
-      expect(aliasesContent).not.toContain('\'CAMELCASE PACKAGE\': \'casevariations.com\'')
+      // Should contain all variations of the package name since we no longer filter them
+      expect(aliasesContent).toContain('\'CamelCase Package\': \'casevariations.com\'')
+      expect(aliasesContent).toContain('\'camelcase package\': \'casevariations.com\'')
+      expect(aliasesContent).toContain('\'CAMELCASE PACKAGE\': \'casevariations.com\'')
 
       // Should contain valid aliases that don't match the package name
       expect(aliasesContent).toContain('\'camelCase-package\': \'casevariations.com\'')
