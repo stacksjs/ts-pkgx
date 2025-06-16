@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-16T21:15:58.591Z
+- **Last Updated**: 2025-06-16T23:16:31.124Z
 
 ## Table of Contents
 
@@ -385,7 +385,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kubecmcloud](./packages/kubecmcloud.md)** () | Manage your kubeconfig more easily. | kubecm | 0.33.0 (+9) | `pkgx kubecm` |
 | **[kubectxdev](./packages/kubectxdev.md)** () | Tool that can switch between kubectl contexts easily and create aliases | kubectx, kubens | 0.9.5 (+1) | `pkgx kube` |
 | **[kubelinterio](./packages/kubelinterio.md)** () | KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure ... | kube-linter | 0.7.3 (+4) | `pkgx kube-linter` |
-| **[kubesharkco](./packages/kubesharkco.md)** () | The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, captur... | kubeshark | 72.3.83 (+55) | `pkgx kubeshark` |
+| **[kubesharkco](./packages/kubesharkco.md)** () | The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, captur... | kubeshark | 72.3.83 (+56) | `pkgx kubeshark` |
 | **[ladspaorg](./packages/ladspaorg.md)** () | Linux Audio Developer's Simple Plugin | analyseplugin, applyplugin, listplugins | 1.17.0 (+0) | `pkgx ladspa.org` |
 | **[lamesourceforgeio](./packages/lamesourceforgeio.md)** () | High quality MPEG Audio Layer III (MP3) encoder | lame | 3.100.0 (+0) | `pkgx lame` |
 | **[langchaincom](./packages/langchaincom.md)** () | 🦜🔗 Build context-aware reasoning applications | f2py, jsondiff, jsonpatch, ... (+4) | 0.1.16 (+28) | `pkgx langchain.com` |
