@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-16T03:40:32.310Z
+- **Last Updated**: 2025-06-16T05:17:00.993Z
 
 ## Table of Contents
 
@@ -556,7 +556,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[sconsorg](./packages/sconsorg.md)** () | Substitute for classic 'make' tool with autoconf/automake functionality | scons | 4.9.1 (+6) | `pkgx scons` |
 | **[scryerpl](./packages/scryerpl.md)** (scryer-prolog, scryer prolog) | Modern ISO Prolog implementation written mostly in Rust | scryer-prolog | 0.9.4 (+0) | `pkgx Scryer Prolog` |
 | **[sdkmanio](./packages/sdkmanio.md)** () | The SDKMAN! Command Line Interface | sdkman-init.sh | 5.19.0 (+1) | `pkgx sdkman-init.sh` |
-| **[seaweedfscom](./packages/seaweedfscom.md)** (weed) | SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for bill... | weed | 3.90.0 (+11) | `pkgx SeaweedFS` |
+| **[seaweedfscom](./packages/seaweedfscom.md)** (weed) | SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for bill... | weed | 3.91.0 (+12) | `pkgx SeaweedFS` |
 | **[sfcgalorg](./packages/sfcgalorg.md)** () | C++ wrapper library around CGAL | sfcgal-config | 2.1.0 (+5) | `pkgx sfcgal-config` |
 | **[sftpgocom](./packages/sftpgocom.md)** () | Full-featured and highly configurable SFTP, HTTP/S, FTP/S and WebDAV server - S3, Google Cloud St... | sftpgo | 2.6.6 (+7) | `pkgx sftpgo` |
 | **[shellchecknet](./packages/shellchecknet.md)** () | ShellCheck, a static analysis tool for shell scripts | shellcheck | 0.10.0 (+2) | `pkgx shellcheck` |

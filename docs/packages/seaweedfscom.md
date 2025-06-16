@@ -31,21 +31,21 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 12 versions</summary>
+<summary>Show all 13 versions</summary>
 
-- `3.90.0`, `3.89.0`, `3.88.0`, `3.87.0`, `3.86.0`
-- `3.85.0`, `3.84.0`, `3.83.0`, `3.82.0`, `3.81.0`
-- `3.80.0`, `3.79.0`
+- `3.91.0`, `3.90.0`, `3.89.0`, `3.88.0`, `3.87.0`
+- `3.86.0`, `3.85.0`, `3.84.0`, `3.83.0`, `3.82.0`
+- `3.81.0`, `3.80.0`, `3.79.0`
 
 </details>
 
-**Latest Version**: `3.90.0`
+**Latest Version**: `3.91.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +seaweedfs.com@3.90.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +seaweedfs.com@3.91.0 -- $SHELL -i
 ```
 
 ## Usage Examples
