@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-16T09:17:35.156Z
+- **Last Updated**: 2025-06-16T11:15:51.343Z
 
 ## Table of Contents
 
@@ -583,7 +583,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[streamlinkgithubio](./packages/streamlinkgithubio.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.4.0 (+19) | `pkgx streamlink` |
 | **[stripecom](./packages/stripecom.md)** () | A command-line tool for Stripe | stripe | 1.27.0 (+50) | `pkgx stripe` |
 | **[swigorg](./packages/swigorg.md)** () | SWIG is a software development tool that connects programs written in C and C++ with a variety of... | swig, ccache-swig | 4.3.1 (+4) | `pkgx swig.org` |
-| **[symfonycom](./packages/symfonycom.md)** () | The Symfony CLI tool | symfony | 5.11.0 (+48) | `pkgx symfony` |
+| **[symfonycom](./packages/symfonycom.md)** () | The Symfony CLI tool | symfony | 5.12.0 (+49) | `pkgx symfony` |
 | **[sympyorg](./packages/sympyorg.md)** () | A computer algebra system written in pure Python | - | 1.14.0 (+6) | `pkgx sympy.org` |
 | **[syncthingnet](./packages/syncthingnet.md)** () | Open source continuous file synchronization application | syncthing | 1.29.7 (+18) | `pkgx syncthing` |
 | **[systemdio](./packages/systemdio.md)** () | The systemd System and Service Manager | busctl, coredumpctl, hostnamectl, ... (+52) | 257.6.0 (+25) | `pkgx systemd.io` |
