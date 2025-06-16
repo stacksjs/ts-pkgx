@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-16T17:16:21.789Z
+- **Last Updated**: 2025-06-16T19:14:40.767Z
 
 ## Table of Contents
 
@@ -103,7 +103,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[postgresqlorg](./packages/postgresqlorg.md)** () | Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't wo... | clusterdb, createdb, dropdb, ... (+25) | 17.2.0 (+11) | `pkgx postgresql.org` |
 | **[redisio](./packages/redisio.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.2 (+36) | `pkgx redis` |
 | **[sqliteorg](./packages/sqliteorg.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.50.1 (+25) | `pkgx sqlite3` |
-| **[surrealdbcom](./packages/surrealdbcom.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+40) | `pkgx surreal` |
+| **[surrealdbcom](./packages/surrealdbcom.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+41) | `pkgx surreal` |
 | **[valkeyio](./packages/valkeyio.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 8.1.2 (+11) | `pkgx valkey` |
 
 ## DevOps & Infrastructure
@@ -153,10 +153,10 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.49.0 (+20) | `pkgx git` |
+| **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.50.0 (+21) | `pkgx git` |
 | **[neovimio](./packages/neovimio.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** () | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
-| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1460 (+2033) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1465 (+2037) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
@@ -194,7 +194,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[agptco](./packages/agptco.md)** (auto-gpt) | AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to pr... | auto-gpt | 0.4.7 (+8) | `pkgx Auto-GPT` |
 | **[agwanamegitcrypt](./packages/agwanamegitcrypt.md)** (git-crypt) | Enable transparent encryption/decryption of files in a git repo | git-crypt | 0.7.0 (+0) | `pkgx git-crypt` |
 | **[alacrittyorg](./packages/alacrittyorg.md)** () | A cross-platform, OpenGL terminal emulator. | alacritty | 0.15.1 (+3) | `pkgx alacritty` |
-| **[alembicsqlalchemyorg](./packages/alembicsqlalchemyorg.md)** () | A database migrations tool for SQLAlchemy. | alembic | 1.16.1 (+7) | `pkgx alembic` |
+| **[alembicsqlalchemyorg](./packages/alembicsqlalchemyorg.md)** () | A database migrations tool for SQLAlchemy. | alembic | 1.16.2 (+8) | `pkgx alembic` |
 | **[amberlangcom](./packages/amberlangcom.md)** () | Crystal web framework. Bare metal performance, productivity and happiness | amber | 0.4.0 (+5) | `pkgx amber` |
 | **[amprs](./packages/amprs.md)** () | A complete text editor for your terminal. | amp | 0.7.1 (+0) | `pkgx amp` |
 | **[apktoolorg](./packages/apktoolorg.md)** () | Tool for reverse engineering 3rd party, closed, binary Android apps | apktool | 2.11.1 (+3) | `pkgx apktool` |
@@ -223,7 +223,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[borgbackuporg](./packages/borgbackuporg.md)** () | Deduplicating archiver with compression and authenticated encryption. | borg, borgfs | 1.4.1 (+0) | `pkgx borg` |
 | **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.7 (+18) | `pkgx browser-use.com` |
 | **[bufbuild](./packages/bufbuild.md)** () | The best way of working with Protocol Buffers. | buf | 1.54.0 (+40) | `pkgx buf` |
-| **[buildpacksio](./packages/buildpacksio.md)** () | CLI for building apps using Cloud Native Buildpacks | pack | 0.38.0 (+12) | `pkgx pack` |
+| **[buildpacksio](./packages/buildpacksio.md)** () | CLI for building apps using Cloud Native Buildpacks | pack | 0.38.1 (+13) | `pkgx pack` |
 | **[bytebasecom](./packages/bytebasecom.md)** () | World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engin... | bytebase | 3.7.0 (+30) | `pkgx bytebase` |
 | **[caddyservercom](./packages/caddyservercom.md)** () | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | caddy | 2.10.0 (+9) | `pkgx caddy` |
 | **[cairographicsorg](./packages/cairographicsorg.md)** () | Vector graphics library with cross-device output support | cairo-trace | 1.18.4 (+3) | `pkgx cairo-trace` |
@@ -602,7 +602,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[templguide](./packages/templguide.md)** () | A language for writing HTML user interfaces in Go. | templ | 0.3.898 (+26) | `pkgx templ` |
 | **[temporalio](./packages/temporalio.md)** () | Command-line interface for running Temporal Server and interacting with Workflows, Activities, Na... | temporal | 1.3.0 (+13) | `pkgx temporal` |
 | **[terraformdocsio](./packages/terraformdocsio.md)** () | Generate documentation from Terraform modules in various output formats | terraform-docs | 0.20.0 (+4) | `pkgx terraform-docs` |
-| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.6 (+350) | `pkgx terragrunt` |
+| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.7 (+351) | `pkgx terragrunt` |
 | **[terratagio](./packages/terratagio.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag` |
 | **[tesseractocrgithubio](./packages/tesseractocrgithubio.md)** () | Tesseract Open Source OCR Engine (main repository) | tesseract | 5.5.1 (+8) | `pkgx tesseract` |
 | **[tidbytcom](./packages/tidbytcom.md)** () | Build apps for pixel-based displays ✨ | pixlet | 0.34.0 (+19) | `pkgx pixlet` |

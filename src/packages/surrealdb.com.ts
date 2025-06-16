@@ -3,7 +3,7 @@
  *
  * @domain `surrealdb.com`
  * @programs `surreal`
- * @version `2023.9.1` (41 versions available)
+ * @version `2023.9.1` (42 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/surrealdb-com.md
  *
  * @install `sh <(curl https://pkgx.sh) surreal`
@@ -70,6 +70,7 @@ export const surrealPackage = {
    */
   versions: [
     '2023.9.1',
+    '2.3.4',
     '2.3.3',
     '2.3.2',
     '2.3.1',
