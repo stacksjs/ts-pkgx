@@ -3,7 +3,7 @@
  *
  * @domain `ollama.ai`
  * @programs `ollama`
- * @version `0.9.0` (97 versions available)
+ * @version `0.9.1` (98 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ollama-ai.md
  *
  * @install `sh <(curl https://pkgx.sh) ollama`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "ollama"
  * console.log(pkg.description) // "Get up and running with Llama 3.3, DeepSeek-R1,..."
  * console.log(pkg.programs)    // ["ollama"]
- * console.log(pkg.versions[0]) // "0.9.0" (latest)
+ * console.log(pkg.versions[0]) // "0.9.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ollama-ai.md
@@ -69,6 +69,7 @@ export const ollamaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.1',
     '0.9.0',
     '0.8.0',
     '0.7.1',

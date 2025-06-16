@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-16T19:14:40.767Z
+- **Last Updated**: 2025-06-16T21:15:58.591Z
 
 ## Table of Contents
 
@@ -114,7 +114,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[ansiblecom](./packages/ansiblecom.md)** () | Ansible is a radically simple IT automation platform that makes your applications and systems eas... | ansible, ansible-config, ansible-connection, ... (+8) | 2.18.6 (+68) | `pkgx ansible` |
 | **[consulio](./packages/consulio.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.21.1 (+10) | `pkgx consul` |
-| **[helmsh](./packages/helmsh.md)** () | The Kubernetes Package Manager | helm | 3.18.2 (+32) | `pkgx helm` |
+| **[helmsh](./packages/helmsh.md)** () | The Kubernetes Package Manager | helm | 3.18.3 (+33) | `pkgx helm` |
 | **[istioio](./packages/istioio.md)** () | Connect, secure, control, and observe services. | istioctl | 1.26.1 (+40) | `pkgx istioctl` |
 | **[nomadprojectio](./packages/nomadprojectio.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.10.2 (+13) | `pkgx nomad` |
 | **[podmanio](./packages/podmanio.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.1 (+38) | `pkgx podman` |
@@ -127,7 +127,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.142 (+399) | `pkgx fly` |
+| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.143 (+400) | `pkgx fly` |
 | **[herokucom](./packages/herokucom.md)** () | CLI for Heroku | heroku | 10.10.0 (+31) | `pkgx heroku` |
 | **[railwayapp](./packages/railwayapp.md)** () | Develop and deploy code with zero configuration | railway | 4.5.3 (+50) | `pkgx railway` |
 
@@ -475,7 +475,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[oauth2proxygithubio](./packages/oauth2proxygithubio.md)** () | A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more ide... | oauth2-proxy | 7.9.0 (+6) | `pkgx oauth2-proxy` |
 | **[odigosio](./packages/odigosio.md)** () | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.198 (+180) | `pkgx odigos` |
 | **[ohmyposhdev](./packages/ohmyposhdev.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.8.0 (+289) | `pkgx oh-my-posh` |
-| **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.0 (+96) | `pkgx ollama` |
+| **[ollamaai](./packages/ollamaai.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.1 (+97) | `pkgx ollama` |
 | **[onefetchdev](./packages/onefetchdev.md)** () | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch` |
 | **[openapigeneratortech](./packages/openapigeneratortech.md)** () | OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, docum... | openapi-generator | 7.13.0 (+11) | `pkgx openapi-generator` |
 | **[openblasnet](./packages/openblasnet.md)** () | OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version. | - | 0.3.29 (+6) | `pkgx openblas.net` |

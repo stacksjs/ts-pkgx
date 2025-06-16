@@ -3,7 +3,7 @@
  *
  * @domain `helm.sh`
  * @programs `helm`
- * @version `3.18.2` (33 versions available)
+ * @version `3.18.3` (34 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/helm-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) helm`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "helm"
  * console.log(pkg.description) // "The Kubernetes Package Manager"
  * console.log(pkg.programs)    // ["helm"]
- * console.log(pkg.versions[0]) // "3.18.2" (latest)
+ * console.log(pkg.versions[0]) // "3.18.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/helm-sh.md
@@ -62,6 +62,7 @@ export const helmPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.18.3',
     '3.18.2',
     '3.18.1',
     '3.18.0',
