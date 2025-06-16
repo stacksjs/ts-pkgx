@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 532
 - **Categories**: 13
-- **Last Updated**: 2025-06-16T05:17:00.993Z
+- **Last Updated**: 2025-06-16T09:17:35.156Z
 
 ## Table of Contents
 
@@ -606,7 +606,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[tesseractocrgithubio](./packages/tesseractocrgithubio.md)** () | Tesseract Open Source OCR Engine (main repository) | tesseract | 5.5.1 (+8) | `pkgx tesseract` |
 | **[tidbytcom](./packages/tidbytcom.md)** () | Build apps for pixel-based displays ✨ | pixlet | 0.34.0 (+19) | `pkgx pixlet` |
 | **[tiltdev](./packages/tiltdev.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.35.0 (+23) | `pkgx tilt` |
-| **[tinygoorg](./packages/tinygoorg.md)** () | Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. ... | tinygo | 0.37.0 (+6) | `pkgx tinygo` |
+| **[tinygoorg](./packages/tinygoorg.md)** () | Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. ... | tinygo | 0.38.0 (+7) | `pkgx tinygo` |
 | **[tldrsh](./packages/tldrsh.md)** () | C command-line client for tldr pages 📚 | tldr | 1.6.1 (+2) | `pkgx tldr` |
 | **[tlrdev](./packages/tlrdev.md)** () | Cloud native secrets management for developers - never leave your command line for secrets. | teller | 2.0.7 (+4) | `pkgx teller` |
 | **[tmateio](./packages/tmateio.md)** () | Instant Terminal Sharing | tmate | 2.4.0 (+0) | `pkgx tmate` |
