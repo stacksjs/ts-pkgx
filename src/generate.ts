@@ -671,6 +671,11 @@ export const packages: Packages = pantry
 async function extractAllAliases(packagesDir?: string): Promise<Record<string, string>> {
   const allAliases: Record<string, string> = {}
 
+  // First, include all the predefined aliases from PACKAGE_ALIASES
+  const { PACKAGE_ALIASES } = await import('./consts')
+  Object.assign(allAliases, PACKAGE_ALIASES)
+  console.log(`Added ${Object.keys(PACKAGE_ALIASES).length} predefined aliases from PACKAGE_ALIASES`)
+
   // Use provided packages directory or default to current working directory
   const targetPackagesDir = packagesDir || path.join(process.cwd(), 'src', 'packages')
 
@@ -699,24 +704,35 @@ async function extractAllAliases(packagesDir?: string): Promise<Record<string, s
       const nameMatch = content.match(/name:\s*['"]([^'"]*)['"]\s*as const/)
       const packageName = nameMatch ? nameMatch[1] : ''
 
+      // If package name differs from domain and is a valid alias, add it automatically
+      if (packageName && packageName !== domain && isValidAlias(packageName, domain)) {
+        if (!allAliases[packageName]) {
+          allAliases[packageName] = domain
+          console.log(`Auto-generated alias: ${packageName} -> ${domain}`)
+        }
+        else {
+          console.log(`Skipped auto-generated alias ${packageName} -> ${domain} (already exists as ${allAliases[packageName]})`)
+        }
+      }
+
       // Extract aliases array from the file content
       const aliasesMatch = content.match(/aliases:\s*\[([\s\S]*?)\]/)
       if (aliasesMatch && aliasesMatch[1]) {
         const aliases = aliasesMatch[1].match(/["']([^"']*)["']/g)
         if (aliases) {
-          // Add each alias to the map, but filter out shell commands and package name matches
+          // Add each alias to the map, but filter out shell commands
           for (const alias of aliases) {
             const cleanAlias = alias.replace(/["']/g, '')
 
-            // Skip if alias is the same as package name (case-insensitive)
-            if (cleanAlias && packageName && cleanAlias.toLowerCase() === packageName.toLowerCase()) {
-              console.log(`Filtered out package name alias: ${cleanAlias} for ${domain} (same as package name "${packageName}")`)
-              continue
-            }
-
             if (cleanAlias && isValidAlias(cleanAlias, domain)) {
-              allAliases[cleanAlias] = domain
-              console.log(`Found alias ${cleanAlias} -> ${domain}`)
+              // Don't override predefined aliases from PACKAGE_ALIASES
+              if (!allAliases[cleanAlias]) {
+                allAliases[cleanAlias] = domain
+                console.log(`Found explicit alias ${cleanAlias} -> ${domain}`)
+              }
+              else {
+                console.log(`Skipped explicit alias ${cleanAlias} -> ${domain} (already exists as ${allAliases[cleanAlias]})`)
+              }
             }
             else {
               console.log(`Filtered out invalid alias: ${cleanAlias} for ${domain}`)
