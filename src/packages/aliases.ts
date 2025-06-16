@@ -224,6 +224,7 @@ export const aliases: Record<string, string> = {
   'maturin': 'maturin.rs',
   'mercure': 'mercure.rocks',
   'mercurial-scm.org': 'mercurial/scm.org',
+  'mergiraf': 'mergiraf.org',
   'meson': 'mesonbuild.com',
   'metagpt': 'deepwisdom.ai',
   'MetaGPT': 'deepwisdom.ai',

@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 532+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 533+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 532
+- **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-16T11:15:51.343Z
+- **Last Updated**: 2025-06-16T13:26:49.414Z
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [CLI Tools & Utilities](#cli-tools-utilities) (2 packages)
 - [Web Servers & Proxies](#web-servers-proxies) (2 packages)
 - [Testing & Quality Assurance](#testing-quality-assurance) (1 packages)
-- [Other Utilities](#other-utilities) (464 packages)
+- [Other Utilities](#other-utilities) (465 packages)
 
 ## Programming Languages
 
@@ -186,7 +186,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Other Utilities
 
-*464 packages in this category*
+*465 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -443,6 +443,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mcmcjagssourceforgeio](./packages/mcmcjagssourceforgeio.md)** () | Just Another Gibbs Sampler for Bayesian MCMC simulation | jags | 4.3.2 (+0) | `pkgx jags` |
 | **[mercurerocks](./packages/mercurerocks.md)** () | 🪽 An open, easy, fast, reliable and battery-efficient solution for real-time communications | mercure | 0.19.2 (+10) | `pkgx mercure` |
 | **[mercurialscmorg](./packages/mercurialscmorg.md)** () | Scalable distributed version control system | hg, chg | 7.0.2 (+23) | `pkgx mercurial-scm.org` |
+| **[mergiraforg](./packages/mergiraforg.md)** () | Syntax-aware git merge driver | mergiraf | 0.10.0 (+0) | `pkgx mergiraf` |
 | **[microcksio](./packages/microcksio.md)** () | Simple CLI for interacting with Microcks test APIs | microcks-cli | 0.9.0 (+5) | `pkgx microcks-cli` |
 | **[microeditorgithubio](./packages/microeditorgithubio.md)** () | A modern and intuitive terminal-based text editor | micro | 2.0.14 (+3) | `pkgx micro` |
 | **[midnightcommanderorg](./packages/midnightcommanderorg.md)** (midnight commander) | Terminal-based visual file manager | mc, mcdiff, mcedit, ... (+1) | 4.8.33 (+5) | `pkgx Midnight Commander` |
@@ -564,7 +565,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[skaffolddev](./packages/skaffolddev.md)** () | Easy and Repeatable Kubernetes Development | skaffold | 2.16.0 (+13) | `pkgx skaffold` |
 | **[smartmontoolsorg](./packages/smartmontoolsorg.md)** () | SMART hard drive monitoring | smartctl, smartd | 7.5.0 (+2) | `pkgx smartmontools.org` |
 | **[sniffnetnet](./packages/sniffnetnet.md)** () | Cross-platform application to monitor your network traffic | sniffnet | 1.3.2 (+1) | `pkgx sniffnet` |
-| **[snykio](./packages/snykio.md)** () | Scans and monitors projects for security vulnerabilities | snyk | 1.1297.1 (+40) | `pkgx snyk` |
+| **[snykio](./packages/snykio.md)** () | Scans and monitors projects for security vulnerabilities | snyk | 1.1297.2 (+41) | `pkgx snyk` |
 | **[solanacom](./packages/solanacom.md)** () | Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces. | solana, solana-keygen, solana-bench-streamer, ... (+7) | 1.18.26 (+82) | `pkgx solana` |
 | **[soldeerxyz](./packages/soldeerxyz.md)** () | Solidity Package Manager written in rust and integrated into Foundry (forge soldeer ...) | soldeer | 0.5.4 (+2) | `pkgx soldeer` |
 | **[soliditylangorg](./packages/soliditylangorg.md)** () | Solidity, the Smart Contract Programming Language | solc, yul-phaser | 0.8.30 (+13) | `pkgx soliditylang.org` |

@@ -486,6 +486,7 @@ import { jagsPackage } from './mcmc-jags.sourceforge.io'
 import { mercurePackage } from './mercure.rocks'
 import { mercurialscmorgPackage } from './mercurial-scm.org'
 import { mergestatcomPackage } from './mergestat.com'
+import { mergirafPackage } from './mergiraf.org'
 import { mesa3dorgPackage } from './mesa3d.org'
 import { mesonPackage } from './mesonbuild.com'
 import { microPackage } from './micro-editor.github.io'
@@ -1356,6 +1357,7 @@ export interface Pantry {
   mercure_rocks: typeof mercurePackage
   mercurial_scm_org: typeof mercurialscmorgPackage
   mergestat_com: typeof mergestatcomPackage
+  mergiraf_org: typeof mergirafPackage
   mesa3d_org: typeof mesa3dorgPackage
   mesonbuild_com: typeof mesonPackage
   micro_editor_github_io: typeof microPackage
@@ -2229,6 +2231,7 @@ export const pantry: Pantry = {
   mercure_rocks: mercurePackage,
   mercurial_scm_org: mercurialscmorgPackage,
   mergestat_com: mergestatcomPackage,
+  mergiraf_org: mergirafPackage,
   mesa3d_org: mesa3dorgPackage,
   mesonbuild_com: mesonPackage,
   micro_editor_github_io: microPackage,
