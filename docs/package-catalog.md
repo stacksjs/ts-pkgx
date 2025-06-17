@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-17T08:17:48.900Z
+- **Last Updated**: 2025-06-17T09:16:31.069Z
 
 ## Table of Contents
 
@@ -243,7 +243,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[clisporg](./packages/clisporg.md)** () | GNU CLISP, a Common Lisp implementation | clisp | 2.49.92 (+0) | `pkgx clisp` |
 | **[clogtoolgithubio](./packages/clogtoolgithubio.md)** () | Colorized pattern-matching log tail utility | clog | 0.9.3 (+0) | `pkgx clog` |
 | **[cloudnativepgio](./packages/cloudnativepgio.md)** () | CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases with... | kubectl-cnpg | 1.26.0 (+5) | `pkgx kubectl-cnpg` |
-| **[cnqueryio](./packages/cnqueryio.md)** () | open source, cloud-native, graph-based asset inventory | cnquery | 11.58.0 (+146) | `pkgx cnquery` |
+| **[cnqueryio](./packages/cnqueryio.md)** () | open source, cloud-native, graph-based asset inventory | cnquery | 11.59.0 (+147) | `pkgx cnquery` |
 | **[cocoapodsorg](./packages/cocoapodsorg.md)** () | Dependency manager for Cocoa projects | pod | 1.16.2 (+12) | `pkgx pod` |
 | **[cocogittoio](./packages/cocogittoio.md)** () | The Conventional Commits toolbox | cog | 6.3.0 (+6) | `pkgx cog` |
 | **[codercom](./packages/codercom.md)** () | Tool for provisioning self-hosted development environments with Terraform | coder | 2.23.1 (+68) | `pkgx coder` |
