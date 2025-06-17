@@ -2,7 +2,7 @@
  * **nghttp2.org** - nghttp2 - HTTP/2 C Library and tools
  *
  * @domain `nghttp2.org`
- * @version `1.65.0` (17 versions available)
+ * @version `1.66.0` (18 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nghttp2-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i`
@@ -14,7 +14,7 @@
  * const pkg = pantry.nghttp2org
  * console.log(pkg.name)        // "nghttp2.org"
  * console.log(pkg.description) // "nghttp2 - HTTP/2 C Library and tools"
- * console.log(pkg.versions[0]) // "1.65.0" (latest)
+ * console.log(pkg.versions[0]) // "1.66.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nghttp2-org.md
@@ -49,6 +49,7 @@ export const nghttp2orgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.66.0',
     '1.65.0',
     '1.64.0',
     '1.63.0',

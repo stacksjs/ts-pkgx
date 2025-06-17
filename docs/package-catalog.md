@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-17T09:16:31.069Z
+- **Last Updated**: 2025-06-17T11:14:54.026Z
 
 ## Table of Contents
 
@@ -466,7 +466,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[nasmus](./packages/nasmus.md)** () | A cross-platform x86 assembler with an Intel-like syntax | nasm, ndisasm | 2.16.3 (+2) | `pkgx nasm.us` |
 | **[netpbmsourceforgenet](./packages/netpbmsourceforgenet.md)** () | Image manipulation | 411toppm, asciitopgm, atktopbm, ... (+312) | 10.86.46 (+9) | `pkgx netpbm.sourceforge.net` |
 | **[networkxorg](./packages/networkxorg.md)** () | Network Analysis in Python | - | 3.5.0 (+5) | `pkgx networkx.org` |
-| **[nghttp2org](./packages/nghttp2org.md)** () | nghttp2 - HTTP/2 C Library and tools | - | 1.65.0 (+16) | `pkgx nghttp2.org` |
+| **[nghttp2org](./packages/nghttp2org.md)** () | nghttp2 - HTTP/2 C Library and tools | - | 1.66.0 (+17) | `pkgx nghttp2.org` |
 | **[nixpackscom](./packages/nixpackscom.md)** () | App source + Nix packages + Docker = Image | nixpacks | 1.39.0 (+32) | `pkgx nixpacks` |
 | **[nmaporg](./packages/nmaporg.md)** () | Port scanning utility for large networks | nmap, ncat, nping | 7.97.0 (+4) | `pkgx nmap.org` |
 | **[numbatdev](./packages/numbatdev.md)** () | A statically typed programming language for scientific computations with first class support for ... | numbat | 1.16.0 (+9) | `pkgx numbat` |
@@ -547,7 +547,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[rometools](./packages/rometools.md)** () | Unified developer tools for JavaScript, TypeScript, and the web | rome | 0.4.2 (+0) | `pkgx rome` |
 | **[rsyncsambaorg](./packages/rsyncsambaorg.md)** () | An open source utility that provides fast incremental file transfer. It also has useful features ... | rsync, rsync-ssl | 3.4.1 (+3) | `pkgx rsync` |
 | **[rtmpdumpmplayerhqhu](./packages/rtmpdumpmplayerhqhu.md)** () | Tool for downloading RTMP streaming media | rtmpdump, rtmpgw, rtmpsrv, ... (+1) | 2.3.0 (+1) | `pkgx rtmpdump` |
-| **[rubocoporg](./packages/rubocoporg.md)** () | A Ruby static code analyzer and formatter, based on the community Ruby style guide. | rubocop | 1.76.1 (+25) | `pkgx rubocop` |
+| **[rubocoporg](./packages/rubocoporg.md)** () | A Ruby static code analyzer and formatter, based on the community Ruby style guide. | rubocop | 1.76.2 (+26) | `pkgx rubocop` |
 | **[runatlantisio](./packages/runatlantisio.md)** () | Terraform Pull Request Automation tool | atlantis | 0.34.0 (+17) | `pkgx atlantis` |
 | **[rustscriptorg](./packages/rustscriptorg.md)** () | Run Rust files and expressions as scripts without any setup or compilation step. | rust-script | 0.35.0 (+1) | `pkgx rust-script` |
 | **[ryeastralsh](./packages/ryeastralsh.md)** () | Experimental Package Management Solution for Python | rye | 0.44.0 (+8) | `pkgx rye` |

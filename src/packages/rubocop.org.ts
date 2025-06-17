@@ -3,7 +3,7 @@
  *
  * @domain `rubocop.org`
  * @programs `rubocop`
- * @version `1.76.1` (26 versions available)
+ * @version `1.76.2` (27 versions available)
  * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rubocop-org.md
  *
  * @install `sh <(curl https://pkgx.sh) rubocop`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "rubocop"
  * console.log(pkg.description) // "A Ruby static code analyzer and formatter, base..."
  * console.log(pkg.programs)    // ["rubocop"]
- * console.log(pkg.versions[0]) // "1.76.1" (latest)
+ * console.log(pkg.versions[0]) // "1.76.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rubocop-org.md
@@ -70,6 +70,7 @@ export const rubocopPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.76.2',
     '1.76.1',
     '1.76.0',
     '1.75.8',
