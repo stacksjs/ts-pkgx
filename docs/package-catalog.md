@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-17T11:14:54.026Z
+- **Last Updated**: 2025-06-17T15:18:31.909Z
 
 ## Table of Contents
 
@@ -517,7 +517,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[precommitcom](./packages/precommitcom.md)** () | A framework for managing and maintaining multi-language pre-commit hooks. | pre-commit | 4.2.0 (+21) | `pkgx pre-commit` |
 | **[prefixdev](./packages/prefixdev.md)** () | Package management made easy | pixi | 0.48.2 (+82) | `pkgx pixi` |
 | **[projectcopaceticgithubio](./packages/projectcopaceticgithubio.md)** () | Tool to directly patch container images given the vulnerability scanning results | copa | 0.10.0 (+4) | `pkgx copa` |
-| **[projenio](./packages/projenio.md)** () | Rapidly build modern applications with advanced configuration management | projen | 0.92.11 (+37) | `pkgx projen` |
+| **[projenio](./packages/projenio.md)** () | Rapidly build modern applications with advanced configuration management | projen | 0.92.12 (+38) | `pkgx projen` |
 | **[projorg](./packages/projorg.md)** () | PROJ - Cartographic Projections and Coordinate Transformations Library | proj | 9.6.2 (+10) | `pkgx proj` |
 | **[protobufdev](./packages/protobufdev.md)** (protoc, protocol buffers) | Protocol Buffers - Google's data interchange format | protoc | 31.1.0 (+42) | `pkgx Protocol Buffers` |
 | **[prqllangorg](./packages/prqllangorg.md)** () | PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement | prql-compiler, prqlc | 0.13.4 (+32) | `pkgx prql` |
