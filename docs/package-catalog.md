@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-17T17:16:02.965Z
+- **Last Updated**: 2025-06-17T19:15:45.259Z
 
 ## Table of Contents
 
@@ -156,7 +156,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitscmorg](./packages/gitscmorg.md)** () | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into p... | git, git-cvsserver, git-receive-pack, ... (+5) | 2.50.0 (+21) | `pkgx git` |
 | **[neovimio](./packages/neovimio.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
 | **[prettierio](./packages/prettierio.md)** () | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier` |
-| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1465 (+2037) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** () | The official Vim repository | vim, vi | 9.1.1466 (+2038) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
@@ -318,7 +318,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gitclifforg](./packages/gitclifforg.md)** () | A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️ | git-cliff | 2.9.1 (+22) | `pkgx git-cliff` |
 | **[gitleaksio](./packages/gitleaksio.md)** () | Find secrets with Gitleaks 🔑 | gitleaks | 8.27.2 (+28) | `pkgx gitleaks` |
 | **[gitlfscom](./packages/gitlfscom.md)** () | Git extension for versioning large files | git-lfs | 3.6.1 (+5) | `pkgx git-lfs` |
-| **[gitquickstatssh](./packages/gitquickstatssh.md)** () | ▁▅▆▃▅ Git quick statistics is a simple and efficient way to access various statistics in git repo... | git-quick-stats | 2.6.1 (+11) | `pkgx git-quick-stats` |
+| **[gitquickstatssh](./packages/gitquickstatssh.md)** () | ▁▅▆▃▅ Git quick statistics is a simple and efficient way to access various statistics in git repo... | git-quick-stats | 2.6.2 (+12) | `pkgx git-quick-stats` |
 | **[gittowncom](./packages/gittowncom.md)** () | High-level command-line interface for Git | git-town | 21.1.0 (+54) | `pkgx git-town` |
 | **[glewsourceforgeio](./packages/glewsourceforgeio.md)** () | The OpenGL Extension Wrangler Library | glewinfo, visualinfo | 2.2.0 (+0) | `pkgx glew.sourceforge.io` |
 | **[glfworg](./packages/glfworg.md)** () | A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input | - | 3.4.0 (+2) | `pkgx glfw.org` |
@@ -389,9 +389,9 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ladspaorg](./packages/ladspaorg.md)** () | Linux Audio Developer's Simple Plugin | analyseplugin, applyplugin, listplugins | 1.17.0 (+0) | `pkgx ladspa.org` |
 | **[lamesourceforgeio](./packages/lamesourceforgeio.md)** () | High quality MPEG Audio Layer III (MP3) encoder | lame | 3.100.0 (+0) | `pkgx lame` |
 | **[langchaincom](./packages/langchaincom.md)** () | 🦜🔗 Build context-aware reasoning applications | f2py, jsondiff, jsonpatch, ... (+4) | 0.1.16 (+28) | `pkgx langchain.com` |
-| **[laravelcom](./packages/laravelcom.md)** () | The Laravel application installer. | laravel | 5.15.0 (+15) | `pkgx laravel` |
+| **[laravelcom](./packages/laravelcom.md)** () | The Laravel application installer. | laravel | 5.16.0 (+16) | `pkgx laravel` |
 | **[lavinmqcom](./packages/lavinmqcom.md)** () | Lightweight and fast AMQP (0-9-1) server | lavinmq, lavinmqctl, lavinmqperf | 2.4.0 (+7) | `pkgx lavinmq` |
-| **[leolangorg](./packages/leolangorg.md)** () | 🦁 The Leo Programming Language. A Programming Language for Formally Verified, Zero-Knowledge App... | leo | 2.6.1 (+12) | `pkgx leo` |
+| **[leolangorg](./packages/leolangorg.md)** () | 🦁 The Leo Programming Language. A Programming Language for Formally Verified, Zero-Knowledge App... | leo | 2.7.0 (+13) | `pkgx leo` |
 | **[leptonicaorg](./packages/leptonicaorg.md)** () | Leptonica is an open source library containing software that is broadly useful for image processi... | convertfilestopdf, convertfilestops, convertformat, ... (+7) | 1.85.0 (+3) | `pkgx leptonica.org` |
 | **[lftpyarru](./packages/lftpyarru.md)** () | sophisticated command line file transfer program (ftp, http, sftp, fish, torrent) | lftp, lftpget | 4.9.3 (+2) | `pkgx lftp` |
 | **[libarchiveorg](./packages/libarchiveorg.md)** () | Multi-format archive and compression library | bsdcat, bsdcpio, bsdtar | 3.8.1 (+12) | `pkgx libarchive.org` |
