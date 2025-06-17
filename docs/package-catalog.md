@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-17T15:18:31.909Z
+- **Last Updated**: 2025-06-17T17:16:02.965Z
 
 ## Table of Contents
 
@@ -190,7 +190,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[abseilio](./packages/abseilio.md)** () | Abseil Common Libraries (C++) | - | 20250512.0.0 (+16) | `pkgx abseil.io` |
+| **[abseilio](./packages/abseilio.md)** () | Abseil Common Libraries (C++) | - | 20250512.1.0 (+17) | `pkgx abseil.io` |
 | **[agptco](./packages/agptco.md)** (auto-gpt) | AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to pr... | auto-gpt | 0.4.7 (+8) | `pkgx Auto-GPT` |
 | **[agwanamegitcrypt](./packages/agwanamegitcrypt.md)** (git-crypt) | Enable transparent encryption/decryption of files in a git repo | git-crypt | 0.7.0 (+0) | `pkgx git-crypt` |
 | **[alacrittyorg](./packages/alacrittyorg.md)** () | A cross-platform, OpenGL terminal emulator. | alacritty | 0.15.1 (+3) | `pkgx alacritty` |
@@ -222,7 +222,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[borepub](./packages/borepub.md)** () | Modern, simple TCP tunnel in Rust that exposes local ports to a remote server | bore | 0.6.0 (+4) | `pkgx bore` |
 | **[borgbackuporg](./packages/borgbackuporg.md)** () | Deduplicating archiver with compression and authenticated encryption. | borg, borgfs | 1.4.1 (+0) | `pkgx borg` |
 | **[browserusecom](./packages/browserusecom.md)** () | Make websites accessible for AI agents | - | 0.2.7 (+18) | `pkgx browser-use.com` |
-| **[bufbuild](./packages/bufbuild.md)** () | The best way of working with Protocol Buffers. | buf | 1.54.0 (+40) | `pkgx buf` |
+| **[bufbuild](./packages/bufbuild.md)** () | The best way of working with Protocol Buffers. | buf | 1.55.0 (+41) | `pkgx buf` |
 | **[buildpacksio](./packages/buildpacksio.md)** () | CLI for building apps using Cloud Native Buildpacks | pack | 0.38.1 (+13) | `pkgx pack` |
 | **[bytebasecom](./packages/bytebasecom.md)** () | World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engin... | bytebase | 3.7.0 (+30) | `pkgx bytebase` |
 | **[caddyservercom](./packages/caddyservercom.md)** () | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | caddy | 2.10.0 (+9) | `pkgx caddy` |
@@ -513,11 +513,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[pocketbaseio](./packages/pocketbaseio.md)** () | Open source backend for your next project in 1 file | pocketbase | 0.28.3 (+80) | `pkgx pocketbase` |
 | **[poktnetwork](./packages/poktnetwork.md)** () | Official implementation of the Pocket Network Protocol | pocket | 0.12.0 (+7) | `pkgx pocket` |
 | **[portaudiocom](./packages/portaudiocom.md)** () | PortAudio is a cross-platform, open-source C language library for real-time audio input and output. | - | 19.7.0 (+0) | `pkgx PortAudio` |
-| **[postgrestorg](./packages/postgrestorg.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 13.0.2 (+12) | `pkgx postgrest` |
+| **[postgrestorg](./packages/postgrestorg.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 13.0.3 (+13) | `pkgx postgrest` |
 | **[precommitcom](./packages/precommitcom.md)** () | A framework for managing and maintaining multi-language pre-commit hooks. | pre-commit | 4.2.0 (+21) | `pkgx pre-commit` |
 | **[prefixdev](./packages/prefixdev.md)** () | Package management made easy | pixi | 0.48.2 (+82) | `pkgx pixi` |
 | **[projectcopaceticgithubio](./packages/projectcopaceticgithubio.md)** () | Tool to directly patch container images given the vulnerability scanning results | copa | 0.10.0 (+4) | `pkgx copa` |
-| **[projenio](./packages/projenio.md)** () | Rapidly build modern applications with advanced configuration management | projen | 0.92.12 (+38) | `pkgx projen` |
+| **[projenio](./packages/projenio.md)** () | Rapidly build modern applications with advanced configuration management | projen | 0.93.0 (+39) | `pkgx projen` |
 | **[projorg](./packages/projorg.md)** () | PROJ - Cartographic Projections and Coordinate Transformations Library | proj | 9.6.2 (+10) | `pkgx proj` |
 | **[protobufdev](./packages/protobufdev.md)** (protoc, protocol buffers) | Protocol Buffers - Google's data interchange format | protoc | 31.1.0 (+42) | `pkgx Protocol Buffers` |
 | **[prqllangorg](./packages/prqllangorg.md)** () | PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement | prql-compiler, prqlc | 0.13.4 (+32) | `pkgx prql` |
@@ -611,7 +611,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[tldrsh](./packages/tldrsh.md)** () | C command-line client for tldr pages 📚 | tldr | 1.6.1 (+2) | `pkgx tldr` |
 | **[tlrdev](./packages/tlrdev.md)** () | Cloud native secrets management for developers - never leave your command line for secrets. | teller | 2.0.7 (+4) | `pkgx teller` |
 | **[tmateio](./packages/tmateio.md)** () | Instant Terminal Sharing | tmate | 2.4.0 (+0) | `pkgx tmate` |
-| **[toxwiki](./packages/toxwiki.md)** () | Command line driven CI frontend and development task automation tool. | tox | 4.26.0 (+14) | `pkgx tox` |
+| **[toxwiki](./packages/toxwiki.md)** () | Command line driven CI frontend and development task automation tool. | tox | 4.27.0 (+15) | `pkgx tox` |
 | **[treesittergithubio](./packages/treesittergithubio.md)** () | Parser generator tool and incremental parsing library | tree-sitter | 0.25.6 (+27) | `pkgx tree-sitter` |
 | **[trippyclirs](./packages/trippyclirs.md)** () | Network diagnostic tool, inspired by mtr | trip | 0.13.0 (+6) | `pkgx trip` |
 | **[tursotech](./packages/tursotech.md)** () | Command line interface to Turso. | turso | 1.0.11 (+89) | `pkgx turso` |
