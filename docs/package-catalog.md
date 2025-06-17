@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 533
 - **Categories**: 13
-- **Last Updated**: 2025-06-17T19:15:45.259Z
+- **Last Updated**: 2025-06-17T21:15:36.502Z
 
 ## Table of Contents
 
@@ -103,7 +103,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[postgresqlorg](./packages/postgresqlorg.md)** () | Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't wo... | clusterdb, createdb, dropdb, ... (+25) | 17.2.0 (+11) | `pkgx postgresql.org` |
 | **[redisio](./packages/redisio.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.2 (+36) | `pkgx redis` |
 | **[sqliteorg](./packages/sqliteorg.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.50.1 (+25) | `pkgx sqlite3` |
-| **[surrealdbcom](./packages/surrealdbcom.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+41) | `pkgx surreal` |
+| **[surrealdbcom](./packages/surrealdbcom.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+42) | `pkgx surreal` |
 | **[valkeyio](./packages/valkeyio.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 8.1.2 (+11) | `pkgx valkey` |
 
 ## DevOps & Infrastructure
@@ -127,7 +127,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.143 (+400) | `pkgx fly` |
+| **[flyio](./packages/flyio.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.144 (+401) | `pkgx fly` |
 | **[herokucom](./packages/herokucom.md)** () | CLI for Heroku | heroku | 10.10.0 (+31) | `pkgx heroku` |
 | **[railwayapp](./packages/railwayapp.md)** () | Develop and deploy code with zero configuration | railway | 4.5.3 (+50) | `pkgx railway` |
 
