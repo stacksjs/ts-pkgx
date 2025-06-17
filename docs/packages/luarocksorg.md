@@ -26,19 +26,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 5 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `3.12.0`, `3.11.1`, `3.11.0`, `3.10.0`, `3.9.2`
+- `3.12.1`, `3.12.0`, `3.11.1`, `3.11.0`, `3.10.0`
+- `3.9.2`
 
 </details>
 
-**Latest Version**: `3.12.0`
+**Latest Version**: `3.12.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +luarocks.org@3.12.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +luarocks.org@3.12.1 -- $SHELL -i
 ```
 
 ## Dependencies
