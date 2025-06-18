@@ -1,34 +1,24 @@
 /**
- * **stargazers** - Analyze GitHub stars
+ * **stargazers** - Package from pantry: github.com/spencerkimball/stargazers
  *
  * @domain `github.com/spencerkimball/stargazers`
- * @programs `stargazers`
- * @version `0.0.0` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) stargazers`
- * @name `stargazers`
- * @aliases `spencerkimball/stargazers`
+ * @install `launchpad install github.com/spencerkimball/stargazers`
+ * @dependencies `go.dev^1.16.15`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.stargazers
- * // Or access via domain
- * const samePkg = pantry.githubcomspencerkimballstargazers
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomspencerkimballstargazers
  * console.log(pkg.name)        // "stargazers"
- * console.log(pkg.description) // "Analyze GitHub stars"
- * console.log(pkg.programs)    // ["stargazers"]
- * console.log(pkg.versions[0]) // "0.0.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/spencerkimball/..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/spencerkimball/stargazers.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const stargazersPackage = {
+export const githubcomspencerkimballstargazersPackage = {
   /**
    * The display name of this package.
    */
@@ -40,39 +30,25 @@ export const stargazersPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Analyze GitHub stars' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/spencerkimball/stargazers/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/spencerkimball/stargazers' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) stargazers' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'stargazers',
-  ] as const,
+  installCommand: 'launchpad install github.com/spencerkimball/stargazers' as const,
+  programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
   /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   * Required dependencies for this package.
+   * These will be automatically installed.
    */
-  versions: [
-    '0.0.0',
+  dependencies: [
+    'go.dev^1.16.15',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'spencerkimball/stargazers',
-  ] as const,
-  fullPath: 'github.com/spencerkimball/stargazers' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/spencerkimball/stargazers/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type StargazersPackage = typeof stargazersPackage
+export type GithubcomspencerkimballstargazersPackage = typeof githubcomspencerkimballstargazersPackage

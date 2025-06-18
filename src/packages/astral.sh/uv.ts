@@ -6,21 +6,16 @@
  * @version `0.7.13` (181 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +astral.sh/uv -- $SHELL -i`
- * @aliases `uv`
- * @dependencies `libgit2.org~1.7`
+ * @install `launchpad install +astral.sh/uv -- $SHELL -i`
+ * @dependencies `libgit2.org`
  * @companions `python.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.uv
- * // Or access via domain
- * const samePkg = pantry.astralshuv
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "astral.sh/uv"
+ * const pkg = pantry.astralshuv
+ * console.log(pkg.name)        // "uv"
  * console.log(pkg.description) // "An extremely fast Python package and project ma..."
  * console.log(pkg.programs)    // ["uv", "uvx"]
  * console.log(pkg.versions[0]) // "0.7.13" (latest)
@@ -29,11 +24,11 @@
  * @see https://ts-pkgx.netlify.app/packages/astral-sh/uv.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const uvPackage = {
+export const astralshuvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'astral.sh/uv' as const,
+  name: 'uv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +44,7 @@ export const uvPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +astral.sh/uv -- $SHELL -i' as const,
+  installCommand: 'launchpad install +astral.sh/uv -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,7 +65,7 @@ export const uvPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'libgit2.org~1.7',
+    'libgit2.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -259,14 +254,7 @@ export const uvPackage = {
     '0.1.5',
     '0.1.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'uv',
-  ] as const,
-  fullPath: 'astral.sh/uv' as const,
+  aliases: [] as const,
 }
 
-export type UvPackage = typeof uvPackage
+export type AstralshuvPackage = typeof astralshuvPackage

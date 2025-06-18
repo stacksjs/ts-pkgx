@@ -6,9 +6,9 @@
  * @version `20.3.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) cephadm`
+ * @install `launchpad install cephadm`
  * @name `cephadm`
- * @dependencies `openssl.org^1.1`, `python.org^3`
+ * @dependencies `openssl.org^1.1`, `python.org^3`, `python.org^3`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const cephadmPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) cephadm' as const,
+  installCommand: 'launchpad install cephadm' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,8 @@ export const cephadmPackage = {
   dependencies: [
     'openssl.org^1.1',
     'python.org^3',
+    'python.org^3',
+    'gnu.org/coreutils',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -84,7 +86,6 @@ export const cephadmPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ceph.com/cephadm' as const,
 }
 
 export type CephadmPackage = typeof cephadmPackage

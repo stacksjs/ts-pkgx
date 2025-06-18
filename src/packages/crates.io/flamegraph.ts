@@ -6,19 +6,15 @@
  * @version `0.6.8` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +crates.io/flamegraph -- $SHELL -i`
- * @aliases `flamegraph`
+ * @install `launchpad install +crates.io/flamegraph -- $SHELL -i`
+ * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.flamegraph
- * // Or access via domain
- * const samePkg = pantry.cratesioflamegraph
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "crates.io/flamegraph"
+ * const pkg = pantry.cratesioflamegraph
+ * console.log(pkg.name)        // "flamegraph"
  * console.log(pkg.description) // "Easy flamegraphs for Rust projects and everythi..."
  * console.log(pkg.programs)    // ["flamegraph", "cargo-flamegraph"]
  * console.log(pkg.versions[0]) // "0.6.8" (latest)
@@ -27,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/flamegraph.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const flamegraphPackage = {
+export const cratesioflamegraphPackage = {
   /**
    * The display name of this package.
    */
-  name: 'crates.io/flamegraph' as const,
+  name: 'flamegraph' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +43,7 @@ export const flamegraphPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +crates.io/flamegraph -- $SHELL -i' as const,
+  installCommand: 'launchpad install +crates.io/flamegraph -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +53,14 @@ export const flamegraphPackage = {
     'cargo-flamegraph',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -66,14 +69,7 @@ export const flamegraphPackage = {
     '0.6.8',
     '0.6.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'flamegraph',
-  ] as const,
-  fullPath: 'crates.io/flamegraph' as const,
+  aliases: [] as const,
 }
 
-export type FlamegraphPackage = typeof flamegraphPackage
+export type CratesioflamegraphPackage = typeof cratesioflamegraphPackage

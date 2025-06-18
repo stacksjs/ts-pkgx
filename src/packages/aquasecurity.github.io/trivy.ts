@@ -6,9 +6,9 @@
  * @version `0.63.0` (36 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) trivy`
+ * @install `launchpad install trivy`
  * @name `trivy`
- * @dependencies `curl.se/ca-certs`
+ * @dependencies `curl.se/ca-certs`, `go.dev>=1.21`, `gnu.org/gcc`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const trivyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) trivy' as const,
+  installCommand: 'launchpad install trivy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const trivyPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
+    'go.dev>=1.21',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -111,7 +113,6 @@ export const trivyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'aquasecurity.github.io/trivy' as const,
 }
 
 export type TrivyPackage = typeof trivyPackage

@@ -6,7 +6,7 @@
  * @version `1.27.1` (41 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) syft`
+ * @install `launchpad install syft`
  * @name `syft`
  *
  * @example
@@ -47,7 +47,7 @@ export const syftPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) syft' as const,
+  installCommand: 'launchpad install syft' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -109,7 +109,6 @@ export const syftPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'anchore.com/syft' as const,
 }
 
 export type SyftPackage = typeof syftPackage

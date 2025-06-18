@@ -3,7 +3,7 @@
  *
  * @domain `wix.com/applesimutils`
  * @programs `applesimutils`
- * @version `0.9.12` (2 versions available)
+ * @version `0.9.10` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) applesimutils`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "applesimutils"
  * console.log(pkg.description) // "A collection of command-line utils for Apple si..."
  * console.log(pkg.programs)    // ["applesimutils"]
- * console.log(pkg.versions[0]) // "0.9.12" (latest)
+ * console.log(pkg.versions[0]) // "0.9.10" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wix-com/applesimutils.md
@@ -62,7 +62,6 @@ export const applesimutilsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
-    '0.9.12',
     '0.9.10',
   ] as const,
   /**

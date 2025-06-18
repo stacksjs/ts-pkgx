@@ -2534,9 +2534,11 @@ export async function readPantryPackageInfo(packageName: string, pantryDir = 'sr
           const version = depMatch[2].trim()
 
           if (version && version !== '*') {
-            // Include version constraint - add ^ if no operator specified
-            const hasVersionOperator = /^[~^>=<]/.test(version)
-            dependencies.push(`${pkg}${hasVersionOperator ? '' : '^'}${version}`)
+            // Include version constraint - add @ for specific versions, ^ for ranges
+            const hasVersionOperator = /^[~^>=<@]/.test(version)
+            const isSpecificVersion = /^\d+(?:\.\d+)*$/.test(version)
+            const operator = hasVersionOperator ? '' : (isSpecificVersion ? '@' : '^')
+            dependencies.push(`${pkg}${operator}${version}`)
           }
           else {
             dependencies.push(pkg)
@@ -2582,9 +2584,11 @@ export async function readPantryPackageInfo(packageName: string, pantryDir = 'sr
           }
 
           if (version && version !== '*') {
-            // Include version constraint - add ^ if no operator specified
-            const hasVersionOperator = /^[~^>=<]/.test(version)
-            companions.push(`${pkg}${hasVersionOperator ? '' : '^'}${version}`)
+            // Include version constraint - add @ for specific versions, ^ for ranges
+            const hasVersionOperator = /^[~^>=<@]/.test(version)
+            const isSpecificVersion = /^\d+(?:\.\d+)*$/.test(version)
+            const operator = hasVersionOperator ? '' : (isSpecificVersion ? '@' : '^')
+            companions.push(`${pkg}${operator}${version}`)
           }
           else {
             companions.push(pkg)

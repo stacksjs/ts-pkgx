@@ -6,20 +6,20 @@
  * @version `1.2.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) bake`
- * @name `bake`
- * @aliases `bake-rs`
+ * @install `launchpad install bake`
+ * @aliases `bake`
+ * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.bake
  * // Or access via domain
  * const samePkg = pantry.cratesiobakers
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bake"
+ * console.log(pkg.name)        // "bake-rs"
  * console.log(pkg.description) // "Simple and easy to use "script runner" written ..."
  * console.log(pkg.programs)    // ["bake"]
  * console.log(pkg.versions[0]) // "1.2.0" (latest)
@@ -32,7 +32,7 @@ export const bakePackage = {
   /**
    * The display name of this package.
    */
-  name: 'bake' as const,
+  name: 'bake-rs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const bakePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) bake' as const,
+  installCommand: 'launchpad install bake' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const bakePackage = {
     'bake',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,9 +77,8 @@ export const bakePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'bake-rs',
+    'bake',
   ] as const,
-  fullPath: 'crates.io/bake-rs' as const,
 }
 
 export type BakePackage = typeof bakePackage

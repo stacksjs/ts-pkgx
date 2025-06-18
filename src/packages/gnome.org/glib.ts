@@ -1,5 +1,5 @@
 /**
- * **glib** - Core application library for C
+ * **gnome.org/glib** - Core application library for C
  *
  * @domain `gnome.org/glib`
  * @programs `gdbus`, `gdbus-codegen`, `gio`, `gio-querymodules`, `glib-compile-resources`, ... (+9 more)
@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) +gnome.org/glib -- $SHELL -i`
- * @aliases `glib`
  * @dependencies `gnu.org/gettext^0.21`, `sourceware.org/libffi@3`, `pcre.org@8`, ... (+2 more)
  * @companions `gnome.org/gsettings-desktop-schemas`
  *
@@ -15,11 +14,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.glib
- * // Or access via domain
- * const samePkg = pantry.gnomeorgglib
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnomeorgglib
  * console.log(pkg.name)        // "gnome.org/glib"
  * console.log(pkg.description) // "Core application library for C"
  * console.log(pkg.programs)    // ["gdbus", "gdbus-codegen", ...]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/glib.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const glibPackage = {
+export const gnomeorgglibPackage = {
   /**
    * The display name of this package.
    */
@@ -139,14 +134,8 @@ export const glibPackage = {
     '2.76.2',
     '2.72.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'glib',
-  ] as const,
-  fullPath: 'gnome.org/glib' as const,
+  aliases: [] as const,
+  fullPath: 'gnome.org-glib' as const,
 }
 
-export type GlibPackage = typeof glibPackage
+export type GnomeorgglibPackage = typeof gnomeorgglibPackage

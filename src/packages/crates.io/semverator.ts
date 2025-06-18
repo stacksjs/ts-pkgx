@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/semverator`
  * @programs `semverator`
- * @version `0.10.1` (19 versions available)
+ * @version `0.10.0` (18 versions available)
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) semverator`
@@ -20,7 +20,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "semverator"
  * console.log(pkg.programs)    // ["semverator"]
- * console.log(pkg.versions[0]) // "0.10.1" (latest)
+ * console.log(pkg.versions[0]) // "0.10.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/semverator.md
@@ -61,7 +61,6 @@ export const semveratorPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
-    '0.10.1',
     '0.10.0',
     '0.9.0',
     '0.8.0',

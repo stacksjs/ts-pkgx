@@ -8,6 +8,7 @@
  *
  * @install `sh <(curl https://pkgx.sh) tiny`
  * @name `tiny`
+ * @aliases `crates.io-tiny`
  * @dependencies `openssl.org^1.1`
  *
  * @example
@@ -77,8 +78,10 @@ export const tinyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
-  fullPath: 'crates.io/tiny' as const,
+  aliases: [
+    'crates.io-tiny',
+  ] as const,
+  fullPath: 'crates.io-tiny' as const,
 }
 
 export type TinyPackage = typeof tinyPackage

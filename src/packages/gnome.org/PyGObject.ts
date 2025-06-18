@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) +gnome.org/PyGObject -- $SHELL -i`
- * @aliases `gnome.org/pygobject`, `PyGObject`
+ * @aliases `gnome.org/pygobject`, `gnome.org-PyGObject`
  * @dependencies `gnome.org/gobject-introspection`, `cairographics.org/pycairo`
  *
  * @example
@@ -76,9 +76,9 @@ export const gnomeorgpygobjectPackage = {
    */
   aliases: [
     'gnome.org/pygobject',
-    'PyGObject',
+    'gnome.org-PyGObject',
   ] as const,
-  fullPath: 'gnome.org/PyGObject' as const,
+  fullPath: 'gnome.org-PyGObject' as const,
 }
 
 export type GnomeorgpygobjectPackage = typeof gnomeorgpygobjectPackage

@@ -1,0 +1,55 @@
+/**
+ * **soxr.sourceforge.net** - Package from pantry: soxr.sourceforge.net
+ *
+ * @domain `soxr.sourceforge.net`
+ *
+ * @install `launchpad install soxr.sourceforge.net`
+ * @dependencies `cmake.org`, `freedesktop.org/pkg-config`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.soxrsourceforgenet
+ * console.log(pkg.name)        // "soxr.sourceforge.net"
+ * console.log(pkg.description) // "Package from pantry: soxr.sourceforge.net"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/soxr-sourceforge-net.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const soxrsourceforgenetPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'soxr.sourceforge.net' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'soxr.sourceforge.net' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Package from pantry: soxr.sourceforge.net' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'launchpad install soxr.sourceforge.net' as const,
+  programs: [] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'freedesktop.org/pkg-config',
+  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/soxr.sourceforge.net/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
+}
+
+export type SoxrsourceforgenetPackage = typeof soxrsourceforgenetPackage

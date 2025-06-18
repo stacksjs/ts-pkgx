@@ -1,0 +1,54 @@
+/**
+ * **kotlinlang.org** - Package from pantry: kotlinlang.org
+ *
+ * @domain `kotlinlang.org`
+ *
+ * @install `launchpad install kotlinlang.org`
+ * @dependencies `openjdk.org`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.kotlinlangorg
+ * console.log(pkg.name)        // "kotlinlang.org"
+ * console.log(pkg.description) // "Package from pantry: kotlinlang.org"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/kotlinlang-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const kotlinlangorgPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'kotlinlang.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'kotlinlang.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Package from pantry: kotlinlang.org' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'launchpad install kotlinlang.org' as const,
+  programs: [] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'openjdk.org',
+  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kotlinlang.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
+}
+
+export type KotlinlangorgPackage = typeof kotlinlangorgPackage

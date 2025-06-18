@@ -6,20 +6,20 @@
  * @version `0.10.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) acorn`
- * @name `acorn`
- * @aliases `acorn-cli`
+ * @install `launchpad install acorn`
+ * @aliases `acorn`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.acorn
  * // Or access via domain
  * const samePkg = pantry.acornioacorncli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "acorn"
+ * console.log(pkg.name)        // "acorn-cli"
  * console.log(pkg.description) // "A simple application deployment framework built..."
  * console.log(pkg.programs)    // ["acorn"]
  * console.log(pkg.versions[0]) // "0.10.1" (latest)
@@ -32,7 +32,7 @@ export const acornPackage = {
   /**
    * The display name of this package.
    */
-  name: 'acorn' as const,
+  name: 'acorn-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const acornPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) acorn' as const,
+  installCommand: 'launchpad install acorn' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const acornPackage = {
     'acorn',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,9 +78,8 @@ export const acornPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'acorn-cli',
+    'acorn',
   ] as const,
-  fullPath: 'acorn.io/acorn-cli' as const,
 }
 
 export type AcornPackage = typeof acornPackage

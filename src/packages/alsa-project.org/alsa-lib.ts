@@ -6,20 +6,19 @@
  * @version `1.2.14` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) aserver`
- * @name `aserver`
- * @aliases `alsa-lib`
+ * @install `launchpad install aserver`
+ * @aliases `aserver`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.aserver
  * // Or access via domain
  * const samePkg = pantry.alsaprojectorgalsalib
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aserver"
+ * console.log(pkg.name)        // "alsa-lib"
  * console.log(pkg.description) // "Provides audio and MIDI functionality to the Li..."
  * console.log(pkg.programs)    // ["aserver"]
  * console.log(pkg.versions[0]) // "1.2.14" (latest)
@@ -32,7 +31,7 @@ export const aserverPackage = {
   /**
    * The display name of this package.
    */
-  name: 'aserver' as const,
+  name: 'alsa-lib' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +47,7 @@ export const aserverPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) aserver' as const,
+  installCommand: 'launchpad install aserver' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,9 +74,8 @@ export const aserverPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'alsa-lib',
+    'aserver',
   ] as const,
-  fullPath: 'alsa-project.org/alsa-lib' as const,
 }
 
 export type AserverPackage = typeof aserverPackage

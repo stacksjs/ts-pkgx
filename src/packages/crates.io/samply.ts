@@ -6,8 +6,9 @@
  * @version `0.13.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) samply`
+ * @install `launchpad install samply`
  * @name `samply`
+ * @dependencies `rust-lang.org>=1.74`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const samplyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) samply' as const,
+  installCommand: 'launchpad install samply' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,14 @@ export const samplyPackage = {
     'samply',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.74',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,7 +79,6 @@ export const samplyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/samply' as const,
 }
 
 export type SamplyPackage = typeof samplyPackage

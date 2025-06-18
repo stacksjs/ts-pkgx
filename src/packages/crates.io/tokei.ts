@@ -8,6 +8,7 @@
  *
  * @install `sh <(curl https://pkgx.sh) tokei`
  * @name `tokei`
+ * @aliases `crates.io-tokei`
  *
  * @example
  * ```typescript
@@ -68,8 +69,10 @@ export const tokeiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
-  fullPath: 'crates.io/tokei' as const,
+  aliases: [
+    'crates.io-tokei',
+  ] as const,
+  fullPath: 'crates.io-tokei' as const,
 }
 
 export type TokeiPackage = typeof tokeiPackage

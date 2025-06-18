@@ -8,6 +8,7 @@
  *
  * @install `sh <(curl https://pkgx.sh) toast`
  * @name `toast`
+ * @aliases `crates.io-toast`
  *
  * @example
  * ```typescript
@@ -70,8 +71,10 @@ export const toastPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
-  fullPath: 'crates.io/toast' as const,
+  aliases: [
+    'crates.io-toast',
+  ] as const,
+  fullPath: 'crates.io-toast' as const,
 }
 
 export type ToastPackage = typeof toastPackage

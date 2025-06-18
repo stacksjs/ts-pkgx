@@ -1,0 +1,58 @@
+/**
+ * **pandoc.org** - Package from pantry: pandoc.org
+ *
+ * @domain `pandoc.org`
+ *
+ * @install `launchpad install pandoc.org`
+ * @dependencies `gnu.org/gmp^6`, `zlib.net^1`, `sourceware.org/libffi^3`, ... (+2 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.pandocorg
+ * console.log(pkg.name)        // "pandoc.org"
+ * console.log(pkg.description) // "Package from pantry: pandoc.org"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/pandoc-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const pandocorgPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'pandoc.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'pandoc.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Package from pantry: pandoc.org' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'launchpad install pandoc.org' as const,
+  programs: [] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gmp^6',
+    'zlib.net^1',
+    'sourceware.org/libffi^3',
+    'haskell.org~9.4',
+    'haskell.org/cabal~3.10 # 3.12 complains when using --installdir about relative library paths',
+  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
+}
+
+export type PandocorgPackage = typeof pandocorgPackage

@@ -1,0 +1,56 @@
+/**
+ * **pkgx.sh** - Package from pantry: pkgx.sh
+ *
+ * @domain `pkgx.sh`
+ *
+ * @install `launchpad install pkgx.sh`
+ * @dependencies `deno.land~2 # since 1.3.0`, `rust-lang.org^1.56 # since 2.0`, `perl.org^5 # since 2.0`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.pkgxsh
+ * console.log(pkg.name)        // "pkgx.sh"
+ * console.log(pkg.description) // "Package from pantry: pkgx.sh"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/pkgx-sh.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const pkgxshPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'pkgx.sh' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'pkgx.sh' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Package from pantry: pkgx.sh' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'launchpad install pkgx.sh' as const,
+  programs: [] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'deno.land~2 # since 1.3.0',
+    'rust-lang.org^1.56 # since 2.0',
+    'perl.org^5 # since 2.0',
+  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
+}
+
+export type PkgxshPackage = typeof pkgxshPackage

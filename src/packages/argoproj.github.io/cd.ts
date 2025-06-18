@@ -6,9 +6,8 @@
  * @version `3.0.6` (123 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) argocd`
- * @name `argo-cd`
- * @aliases `argocd`, `cd`
+ * @install `launchpad install argocd`
+ * @aliases `argocd`, `argo-cd`
  *
  * @example
  * ```typescript
@@ -19,7 +18,7 @@
  * // Or access via domain
  * const samePkg = pantry.argoprojgithubiocd
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "argo-cd"
+ * console.log(pkg.name)        // "cd"
  * console.log(pkg.description) // "GitOps Continuous Delivery for Kubernetes"
  * console.log(pkg.programs)    // ["argocd"]
  * console.log(pkg.versions[0]) // "3.0.6" (latest)
@@ -32,7 +31,7 @@ export const argocdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'argo-cd' as const,
+  name: 'cd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +47,7 @@ export const argocdPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) argocd' as const,
+  installCommand: 'launchpad install argocd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -193,9 +192,8 @@ export const argocdPackage = {
    */
   aliases: [
     'argocd',
-    'cd',
+    'argo-cd',
   ] as const,
-  fullPath: 'argoproj.github.io/cd' as const,
 }
 
 export type ArgocdPackage = typeof argocdPackage

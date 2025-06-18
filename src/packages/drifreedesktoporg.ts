@@ -1,0 +1,89 @@
+/**
+ * **libdrm** - pkgx package
+ *
+ * @domain `dri.freedesktop.org`
+ * @version `2.4.125` (11 versions available)
+ * @versions From newest version to oldest.
+ *
+ * @install `launchpad install +dri.freedesktop.org -- $SHELL -i`
+ * @aliases `libdrm`
+ * @dependencies `x.org/pciaccess`, `mesonbuild.com`, `ninja-build.org`, ... (+3 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.libdrm
+ * // Or access via domain
+ * const samePkg = pantry.drifreedesktoporg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "dri.freedesktop.org"
+ * console.log(pkg.versions[0]) // "2.4.125" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/dri-freedesktop-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const libdrmPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'dri.freedesktop.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'dri.freedesktop.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dri.freedesktop.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'launchpad install +dri.freedesktop.org -- $SHELL -i' as const,
+  programs: [] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'x.org/pciaccess',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'python.org~3.11',
+    'freedesktop.org/pkg-config',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.4.125',
+    '2.4.124',
+    '2.4.123',
+    '2.4.122',
+    '2.4.121',
+    '2.4.120',
+    '2.4.119',
+    '2.4.118',
+    '2.4.117',
+    '2.4.116',
+    '2.4.100',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'libdrm',
+  ] as const,
+}
+
+export type LibdrmPackage = typeof libdrmPackage

@@ -1,0 +1,54 @@
+/**
+ * **networkx.org** - Package from pantry: networkx.org
+ *
+ * @domain `networkx.org`
+ *
+ * @install `launchpad install networkx.org`
+ * @dependencies `python.org>=3.11`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.networkxorg
+ * console.log(pkg.name)        // "networkx.org"
+ * console.log(pkg.description) // "Package from pantry: networkx.org"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/networkx-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const networkxorgPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'networkx.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'networkx.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Package from pantry: networkx.org' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'launchpad install networkx.org' as const,
+  programs: [] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'python.org>=3.11',
+  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/networkx.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
+}
+
+export type NetworkxorgPackage = typeof networkxorgPackage

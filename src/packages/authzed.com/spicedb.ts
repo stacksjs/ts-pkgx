@@ -6,7 +6,7 @@
  * @version `1.44.4` (25 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) spicedb`
+ * @install `launchpad install spicedb`
  * @name `spicedb`
  *
  * @example
@@ -47,7 +47,7 @@ export const spicedbPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) spicedb' as const,
+  installCommand: 'launchpad install spicedb' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -93,7 +93,6 @@ export const spicedbPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'authzed.com/spicedb' as const,
 }
 
 export type SpicedbPackage = typeof spicedbPackage

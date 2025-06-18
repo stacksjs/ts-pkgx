@@ -8,7 +8,7 @@
  *
  * @install `sh <(curl https://pkgx.sh) neofetch`
  * @name `neofetch`
- * @aliases `dylanaraps/neofetch`
+ * @aliases `github.com-dylanaraps`
  * @dependencies `darwingithub.com/jhford/screenresolution`, `github.com/jhford/screenresolution`
  *
  * @example
@@ -78,9 +78,9 @@ export const neofetchPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'dylanaraps/neofetch',
+    'github.com-dylanaraps',
   ] as const,
-  fullPath: 'github.com/dylanaraps/neofetch' as const,
+  fullPath: 'github.com-dylanaraps' as const,
 }
 
 export type NeofetchPackage = typeof neofetchPackage

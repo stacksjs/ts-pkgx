@@ -1,34 +1,23 @@
 /**
- * **mas** - :package: Mac App Store command line interface
+ * **mas** - Package from pantry: github.com/mas-cli/mas
  *
  * @domain `github.com/mas-cli/mas`
- * @programs `mas`
- * @version `2.2.2` (8 versions available)
- * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) mas`
- * @name `mas`
- * @aliases `mas-cli/mas`
+ * @install `launchpad install github.com/mas-cli/mas`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mas
- * // Or access via domain
- * const samePkg = pantry.githubcommasclimas
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcommasclimas
  * console.log(pkg.name)        // "mas"
- * console.log(pkg.description) // ":package: Mac App Store command line interface"
- * console.log(pkg.programs)    // ["mas"]
- * console.log(pkg.versions[0]) // "2.2.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/mas-cli/mas"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/mas-cli/mas.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const masPackage = {
+export const githubcommasclimasPackage = {
   /**
    * The display name of this package.
    */
@@ -40,46 +29,19 @@ export const masPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: ':package: Mac App Store command line interface' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mas-cli/mas/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/mas-cli/mas' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) mas' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'mas',
-  ] as const,
+  installCommand: 'launchpad install github.com/mas-cli/mas' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.2.2',
-    '2.2.1',
-    '2.2.0',
-    '2.1.0',
-    '2.0.0',
-    '1.9.0',
-    '1.8.8',
-    '1.8.7',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mas-cli/mas',
-  ] as const,
-  fullPath: 'github.com/mas-cli/mas' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mas-cli/mas/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type MasPackage = typeof masPackage
+export type GithubcommasclimasPackage = typeof githubcommasclimasPackage

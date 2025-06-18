@@ -6,21 +6,21 @@
  * @version `0.10.9` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +crates.io/ripgrep-all -- $SHELL -i`
- * @name `rga`
- * @aliases `ripgrep-all`
+ * @install `launchpad install +crates.io/ripgrep-all -- $SHELL -i`
+ * @aliases `rga`
+ * @dependencies `rust-lang.org>=1.75`, `rust-lang.org/cargo`
  * @companions `crates.io/ripgrep`, `github.com/junegunn/fzf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.rga
  * // Or access via domain
  * const samePkg = pantry.cratesioripgrepall
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rga"
+ * console.log(pkg.name)        // "ripgrep-all"
  * console.log(pkg.description) // "rga: ripgrep, but also search in PDFs, E-Books,..."
  * console.log(pkg.programs)    // ["rga", "rga-fzf", ...]
  * console.log(pkg.versions[0]) // "0.10.9" (latest)
@@ -33,7 +33,7 @@ export const rgaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rga' as const,
+  name: 'ripgrep-all' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +49,7 @@ export const rgaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +crates.io/ripgrep-all -- $SHELL -i' as const,
+  installCommand: 'launchpad install +crates.io/ripgrep-all -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,7 +68,14 @@ export const rgaPackage = {
     'crates.io/ripgrep',
     'github.com/junegunn/fzf',
   ] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.75',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -84,9 +91,8 @@ export const rgaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'ripgrep-all',
+    'rga',
   ] as const,
-  fullPath: 'crates.io/ripgrep-all' as const,
 }
 
 export type RgaPackage = typeof rgaPackage

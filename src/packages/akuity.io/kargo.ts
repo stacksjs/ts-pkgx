@@ -6,7 +6,7 @@
  * @version `1.5.3` (40 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) kargo`
+ * @install `launchpad install kargo`
  * @name `kargo`
  *
  * @example
@@ -47,7 +47,7 @@ export const kargoPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) kargo' as const,
+  installCommand: 'launchpad install kargo' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -108,7 +108,6 @@ export const kargoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'akuity.io/kargo' as const,
 }
 
 export type KargoPackage = typeof kargoPackage

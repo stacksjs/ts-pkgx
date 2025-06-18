@@ -6,8 +6,9 @@
  * @version `2.31.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) op`
- * @aliases `op`, `1password cli`, `1password-cli`
+ * @install `launchpad install op`
+ * @aliases `op`
+ * @dependencies `info-zip.org/unzip^6`, `gnupg.org^2`, `curl.se`
  *
  * @example
  * ```typescript
@@ -18,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.developer1passwordcom1passwordcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "1Password CLI"
+ * console.log(pkg.name)        // "1password-cli"
  * console.log(pkg.programs)    // ["op"]
  * console.log(pkg.versions[0]) // "2.31.1" (latest)
  * ```
@@ -30,7 +31,7 @@ export const opPackage = {
   /**
    * The display name of this package.
    */
-  name: '1Password CLI' as const,
+  name: '1password-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +47,7 @@ export const opPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) op' as const,
+  installCommand: 'launchpad install op' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -55,7 +56,15 @@ export const opPackage = {
     'op',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'info-zip.org/unzip^6',
+    'gnupg.org^2',
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,10 +80,7 @@ export const opPackage = {
    */
   aliases: [
     'op',
-    '1password cli',
-    '1password-cli',
   ] as const,
-  fullPath: 'developer.1password.com/1password-cli' as const,
 }
 
 export type OpPackage = typeof opPackage

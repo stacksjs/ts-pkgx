@@ -1,35 +1,24 @@
 /**
- * **rye-uv** - Simple CLI tool to migrate from Rye to Uv
+ * **rye-uv** - Package from pantry: github.com/lucianosrp/rye-uv
  *
  * @domain `github.com/lucianosrp/rye-uv`
- * @programs `rye-uv`
- * @version `0.1.3` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rye-uv`
- * @name `rye-uv`
- * @aliases `lucianosrp/rye-uv`
- * @companions `astral.sh/uv`
+ * @install `launchpad install github.com/lucianosrp/rye-uv`
+ * @dependencies `rust-lang.org>=1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ryeuv
- * // Or access via domain
- * const samePkg = pantry.githubcomlucianosrpryeuv
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomlucianosrpryeuv
  * console.log(pkg.name)        // "rye-uv"
- * console.log(pkg.description) // "Simple CLI tool to migrate from Rye to Uv"
- * console.log(pkg.programs)    // ["rye-uv"]
- * console.log(pkg.versions[0]) // "0.1.3" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/lucianosrp/rye-uv"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/lucianosrp/rye-uv.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ryeuvPackage = {
+export const githubcomlucianosrpryeuvPackage = {
   /**
    * The display name of this package.
    */
@@ -41,45 +30,26 @@ export const ryeuvPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Simple CLI tool to migrate from Rye to Uv' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/lucianosrp/rye-uv/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/lucianosrp/rye-uv' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rye-uv' as const,
+  installCommand: 'launchpad install github.com/lucianosrp/rye-uv' as const,
+  programs: [] as const,
+  companions: [] as const,
   /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
+   * Required dependencies for this package.
+   * These will be automatically installed.
    */
-  programs: [
-    'rye-uv',
+  dependencies: [
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'astral.sh/uv',
-  ] as const,
-  dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.1.3',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'lucianosrp/rye-uv',
-  ] as const,
-  fullPath: 'github.com/lucianosrp/rye-uv' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/lucianosrp/rye-uv/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type RyeuvPackage = typeof ryeuvPackage
+export type GithubcomlucianosrpryeuvPackage = typeof githubcomlucianosrpryeuvPackage

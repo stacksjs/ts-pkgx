@@ -6,10 +6,9 @@
  * @version `2.27.38` (925 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) aws`
- * @name `aws/cli`
- * @aliases `aws`
- * @dependencies `sourceware.org/libffi^3`, `pkgx.sh^1`
+ * @install `launchpad install aws`
+ * @aliases `aws`, `aws/cli`
+ * @dependencies `sourceware.org/libffi^3`, `pkgx.sh^1`, `rust-lang.org>=1.48.0`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -20,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.awsamazoncomcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aws/cli"
+ * console.log(pkg.name)        // "cli"
  * console.log(pkg.description) // "Universal Command Line Interface for Amazon Web..."
  * console.log(pkg.programs)    // ["aws"]
  * console.log(pkg.versions[0]) // "2.27.38" (latest)
@@ -33,7 +32,7 @@ export const awsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'aws/cli' as const,
+  name: 'cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const awsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) aws' as const,
+  installCommand: 'launchpad install aws' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,9 @@ export const awsPackage = {
   dependencies: [
     'sourceware.org/libffi^3',
     'pkgx.sh^1',
+    'rust-lang.org>=1.48.0',
+    'rust-lang.org/cargo',
+    'python.org>=3.7<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -1003,8 +1005,8 @@ export const awsPackage = {
    */
   aliases: [
     'aws',
+    'aws/cli',
   ] as const,
-  fullPath: 'aws.amazon.com/cli' as const,
 }
 
 export type AwsPackage = typeof awsPackage

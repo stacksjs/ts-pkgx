@@ -3,12 +3,12 @@
  *
  * @domain `github.com/ggerganov/llama.cpp`
  * @programs `llama-cli`, `llama.cpp`, `convert.py`
- * @version `5699.0.0` (2716 versions available)
+ * @version `5689.0.0` (2710 versions available)
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) +github.com/ggerganov/llama.cpp -- $SHELL -i`
  * @name `LLaMA.cpp`
- * @aliases `llama.cpp`, `ggerganov/llama.cpp`
+ * @aliases `llama.cpp`, `github.com-ggerganov`
  * @dependencies `pkgx.sh^1`, `curl.se@8`, `linuxgnu.org/gcc/libstdcxx`, ... (+1 more)
  *
  * @example
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "LLaMA.cpp"
  * console.log(pkg.description) // "LLM inference in C/C++"
  * console.log(pkg.programs)    // ["llama-cli", "llama.cpp", ...]
- * console.log(pkg.versions[0]) // "5699.0.0" (latest)
+ * console.log(pkg.versions[0]) // "5689.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/ggerganov/llama-cpp.md
@@ -75,12 +75,6 @@ export const lLaMAcppPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
-    '5699.0.0',
-    '5698.0.0',
-    '5697.0.0',
-    '5696.0.0',
-    '5695.0.0',
-    '5693.0.0',
     '5689.0.0',
     '5688.0.0',
     '5687.0.0',
@@ -2798,9 +2792,9 @@ export const lLaMAcppPackage = {
    */
   aliases: [
     'llama.cpp',
-    'ggerganov/llama.cpp',
+    'github.com-ggerganov',
   ] as const,
-  fullPath: 'github.com/ggerganov/llama.cpp' as const,
+  fullPath: 'github.com-ggerganov' as const,
 }
 
 export type LLaMAcppPackage = typeof lLaMAcppPackage

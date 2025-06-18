@@ -6,7 +6,7 @@
  * @version `0.12.0` (86 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ruff`
+ * @install `launchpad install ruff`
  * @name `ruff`
  *
  * @example
@@ -47,7 +47,7 @@ export const ruffPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ruff' as const,
+  installCommand: 'launchpad install ruff' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -154,7 +154,6 @@ export const ruffPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'astral.sh/ruff' as const,
 }
 
 export type RuffPackage = typeof ruffPackage

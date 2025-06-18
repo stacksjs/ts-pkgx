@@ -8,6 +8,7 @@
  *
  * @install `sh <(curl https://pkgx.sh) +glaros.dtc.umn.edu/metis -- $SHELL -i`
  * @name `metis`
+ * @aliases `glaros.dtc.umn.edu-metis`
  *
  * @example
  * ```typescript
@@ -75,8 +76,10 @@ export const metisPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
-  fullPath: 'glaros.dtc.umn.edu/metis' as const,
+  aliases: [
+    'glaros.dtc.umn.edu-metis',
+  ] as const,
+  fullPath: 'glaros.dtc.umn.edu-metis' as const,
 }
 
 export type MetisPackage = typeof metisPackage

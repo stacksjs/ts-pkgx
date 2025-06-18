@@ -1,0 +1,55 @@
+/**
+ * **kubectx.dev** - Package from pantry: kubectx.dev
+ *
+ * @domain `kubectx.dev`
+ *
+ * @install `launchpad install kubectx.dev`
+ * @dependencies `github.com/junegunn/fzf`, `go.dev^1.20`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.kubectxdev
+ * console.log(pkg.name)        // "kubectx.dev"
+ * console.log(pkg.description) // "Package from pantry: kubectx.dev"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/kubectx-dev.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const kubectxdevPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'kubectx.dev' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'kubectx.dev' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Package from pantry: kubectx.dev' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'launchpad install kubectx.dev' as const,
+  programs: [] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'github.com/junegunn/fzf',
+    'go.dev^1.20',
+  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kubectx.dev/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
+}
+
+export type KubectxdevPackage = typeof kubectxdevPackage

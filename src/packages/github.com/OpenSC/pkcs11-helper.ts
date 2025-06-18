@@ -1,0 +1,78 @@
+/**
+ * **github.com/opensc/pkcs11-helper** - Library that simplifies the interaction with PKCS#11 providers for end-user applications using a simple API and optional OpenSSL engine
+ *
+ * @domain `github.com/OpenSC/pkcs11-helper`
+ * @version `1.30.0` (2 versions available)
+ * @versions From newest version to oldest.
+ *
+ * @install `sh <(curl https://pkgx.sh) +github.com/OpenSC/pkcs11-helper -- $SHELL -i`
+ * @aliases `github.com/opensc/pkcs11-helper`, `OpenSC/pkcs11-helper`
+ * @dependencies `openssl.org^3.1.0`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.githubcomopenscpkcs11helper
+ * // Or access via domain
+ * const samePkg = pantry.githubcomopenscpkcs11helper
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "github.com/OpenSC/pkcs11-helper"
+ * console.log(pkg.description) // "Library that simplifies the interaction with PK..."
+ * console.log(pkg.versions[0]) // "1.30.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com/OpenSC/pkcs11-helper.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const githubcomopenscpkcs11helperPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'github.com/OpenSC/pkcs11-helper' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com/OpenSC/pkcs11-helper' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Library that simplifies the interaction with PKCS#11 providers for end-user applications using a simple API and optional OpenSSL engine' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/OpenSC/pkcs11-helper/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'sh <(curl https://pkgx.sh) +github.com/OpenSC/pkcs11-helper -- $SHELL -i' as const,
+  programs: [] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'openssl.org^3.1.0',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.30.0',
+    '1.29.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'github.com/opensc/pkcs11-helper',
+    'OpenSC/pkcs11-helper',
+  ] as const,
+  fullPath: 'github.com/OpenSC/pkcs11-helper' as const,
+}
+
+export type Githubcomopenscpkcs11helperPackage = typeof githubcomopenscpkcs11helperPackage

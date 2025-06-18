@@ -1,34 +1,24 @@
 /**
- * **glauth** - A lightweight LDAP server for development, home use, or CI
+ * **glauth** - Package from pantry: github.com/glauth/glauth
  *
  * @domain `github.com/glauth/glauth`
- * @programs `glauth`, `glauth-setup`
- * @version `2.4.0` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/glauth/glauth -- $SHELL -i`
- * @name `glauth`
- * @aliases `glauth/glauth`
+ * @install `launchpad install github.com/glauth/glauth`
+ * @dependencies `git-scm.org`, `go.dev^1.23`, `gnu.org/gcc`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.glauth
- * // Or access via domain
- * const samePkg = pantry.githubcomglauthglauth
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomglauthglauth
  * console.log(pkg.name)        // "glauth"
- * console.log(pkg.description) // "A lightweight LDAP server for development, home..."
- * console.log(pkg.programs)    // ["glauth", "glauth-setup"]
- * console.log(pkg.versions[0]) // "2.4.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/glauth/glauth"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/glauth/glauth.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const glauthPackage = {
+export const githubcomglauthglauthPackage = {
   /**
    * The display name of this package.
    */
@@ -40,40 +30,30 @@ export const glauthPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A lightweight LDAP server for development, home use, or CI' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/glauth/glauth/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/glauth/glauth' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/glauth/glauth -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'glauth',
-    'glauth-setup',
-  ] as const,
+  installCommand: 'launchpad install github.com/glauth/glauth' as const,
+  programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
   /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   * Required dependencies for this package.
+   * These will be automatically installed.
    */
-  versions: [
-    '2.4.0',
+  dependencies: [
+    'git-scm.org',
+    'go.dev^1.23',
+    'gnu.org/gcc',
+    'gnu.org/coreutils',
+    'stedolan.github.io/jq^1.7',
+    'linux-pam.org^1.5.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'glauth/glauth',
-  ] as const,
-  fullPath: 'github.com/glauth/glauth' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/glauth/glauth/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type GlauthPackage = typeof glauthPackage
+export type GithubcomglauthglauthPackage = typeof githubcomglauthglauthPackage

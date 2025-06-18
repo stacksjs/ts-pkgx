@@ -5,30 +5,25 @@
  * @version `4.0.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +bytereef.org/mpdecimal -- $SHELL -i`
- * @aliases `mpdecimal`
+ * @install `launchpad install +bytereef.org/mpdecimal -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mpdecimal
- * // Or access via domain
- * const samePkg = pantry.bytereeforgmpdecimal
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bytereef.org/mpdecimal"
+ * const pkg = pantry.bytereeforgmpdecimal
+ * console.log(pkg.name)        // "mpdecimal"
  * console.log(pkg.versions[0]) // "4.0.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/bytereef-org/mpdecimal.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mpdecimalPackage = {
+export const bytereeforgmpdecimalPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bytereef.org/mpdecimal' as const,
+  name: 'mpdecimal' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,7 +39,7 @@ export const mpdecimalPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +bytereef.org/mpdecimal -- $SHELL -i' as const,
+  installCommand: 'launchpad install +bytereef.org/mpdecimal -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -59,14 +54,7 @@ export const mpdecimalPackage = {
     '2.5.0',
     '2.4.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mpdecimal',
-  ] as const,
-  fullPath: 'bytereef.org/mpdecimal' as const,
+  aliases: [] as const,
 }
 
-export type MpdecimalPackage = typeof mpdecimalPackage
+export type BytereeforgmpdecimalPackage = typeof bytereeforgmpdecimalPackage

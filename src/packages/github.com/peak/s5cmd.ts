@@ -1,34 +1,24 @@
 /**
- * **s5cmd** - Parallel S3 and local filesystem execution tool.
+ * **s5cmd** - Package from pantry: github.com/peak/s5cmd
  *
  * @domain `github.com/peak/s5cmd`
- * @programs `s5cmd`
- * @version `2.3.0` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) s5cmd`
- * @name `s5cmd`
- * @aliases `peak/s5cmd`
+ * @install `launchpad install github.com/peak/s5cmd`
+ * @dependencies `git-scm.org`, `go.dev~1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.s5cmd
- * // Or access via domain
- * const samePkg = pantry.githubcompeaks5cmd
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcompeaks5cmd
  * console.log(pkg.name)        // "s5cmd"
- * console.log(pkg.description) // "Parallel S3 and local filesystem execution tool."
- * console.log(pkg.programs)    // ["s5cmd"]
- * console.log(pkg.versions[0]) // "2.3.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/peak/s5cmd"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/peak/s5cmd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const s5cmdPackage = {
+export const githubcompeaks5cmdPackage = {
   /**
    * The display name of this package.
    */
@@ -40,39 +30,26 @@ export const s5cmdPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Parallel S3 and local filesystem execution tool.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peak/s5cmd/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/peak/s5cmd' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) s5cmd' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    's5cmd',
-  ] as const,
+  installCommand: 'launchpad install github.com/peak/s5cmd' as const,
+  programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
   /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   * Required dependencies for this package.
+   * These will be automatically installed.
    */
-  versions: [
-    '2.3.0',
+  dependencies: [
+    'git-scm.org',
+    'go.dev~1.20',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'peak/s5cmd',
-  ] as const,
-  fullPath: 'github.com/peak/s5cmd' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peak/s5cmd/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type S5cmdPackage = typeof s5cmdPackage
+export type Githubcompeaks5cmdPackage = typeof githubcompeaks5cmdPackage

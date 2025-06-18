@@ -1,0 +1,60 @@
+/**
+ * **ceres-solver.org** - Package from pantry: ceres-solver.org
+ *
+ * @domain `ceres-solver.org`
+ *
+ * @install `launchpad install ceres-solver.org`
+ * @dependencies `eigen.tuxfamily.org`, `gflags.github.io`, `google.com/glog`, ... (+4 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.ceressolverorg
+ * console.log(pkg.name)        // "ceres-solver.org"
+ * console.log(pkg.description) // "Package from pantry: ceres-solver.org"
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/ceres-solver-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const ceressolverorgPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'ceres-solver.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'ceres-solver.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Package from pantry: ceres-solver.org' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'launchpad install ceres-solver.org' as const,
+  programs: [] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'eigen.tuxfamily.org',
+    'gflags.github.io',
+    'google.com/glog',
+    'glaros.dtc.umn.edu/metis',
+    'netlib.org/lapack',
+    'people.engr.tamu.edu/davis/suitesparse',
+    'github.com/oneapi-src/oneTBB',
+  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ceres-solver.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
+}
+
+export type CeressolverorgPackage = typeof ceressolverorgPackage

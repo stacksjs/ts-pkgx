@@ -1,34 +1,24 @@
 /**
- * **starpls** - An LSP implementation for Starlark, the configuration language used by Bazel and Buck2.
+ * **starpls** - Package from pantry: github.com/withered-magic/starpls
  *
  * @domain `github.com/withered-magic/starpls`
- * @programs `starpls`
- * @version `0.1.21` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) starpls`
- * @name `starpls`
- * @aliases `withered-magic/starpls`
+ * @install `launchpad install github.com/withered-magic/starpls`
+ * @dependencies `github.com/bazelbuild/bazelisk`, `github.com/bazelbuild/bazelisk`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.starpls
- * // Or access via domain
- * const samePkg = pantry.githubcomwitheredmagicstarpls
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomwitheredmagicstarpls
  * console.log(pkg.name)        // "starpls"
- * console.log(pkg.description) // "An LSP implementation for Starlark, the configu..."
- * console.log(pkg.programs)    // ["starpls"]
- * console.log(pkg.versions[0]) // "0.1.21" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/withered-magic/..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/withered-magic/starpls.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const starplsPackage = {
+export const githubcomwitheredmagicstarplsPackage = {
   /**
    * The display name of this package.
    */
@@ -40,39 +30,26 @@ export const starplsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'An LSP implementation for Starlark, the configuration language used by Bazel and Buck2.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/withered-magic/starpls/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/withered-magic/starpls' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) starpls' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'starpls',
-  ] as const,
+  installCommand: 'launchpad install github.com/withered-magic/starpls' as const,
+  programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
   /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   * Required dependencies for this package.
+   * These will be automatically installed.
    */
-  versions: [
-    '0.1.21',
+  dependencies: [
+    'github.com/bazelbuild/bazelisk',
+    'github.com/bazelbuild/bazelisk',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'withered-magic/starpls',
-  ] as const,
-  fullPath: 'github.com/withered-magic/starpls' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/withered-magic/starpls/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type StarplsPackage = typeof starplsPackage
+export type GithubcomwitheredmagicstarplsPackage = typeof githubcomwitheredmagicstarplsPackage

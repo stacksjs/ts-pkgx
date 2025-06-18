@@ -6,9 +6,8 @@
  * @version `3.6.10` (35 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) argo`
- * @name `argo-workflows`
- * @aliases `argo`, `workflows`
+ * @install `launchpad install argo`
+ * @aliases `argo`, `argo-workflows`
  *
  * @example
  * ```typescript
@@ -19,7 +18,7 @@
  * // Or access via domain
  * const samePkg = pantry.argoprojgithubioworkflows
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "argo-workflows"
+ * console.log(pkg.name)        // "workflows"
  * console.log(pkg.description) // "Get stuff done with container-native workflows ..."
  * console.log(pkg.programs)    // ["argo"]
  * console.log(pkg.versions[0]) // "3.6.10" (latest)
@@ -32,7 +31,7 @@ export const argoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'argo-workflows' as const,
+  name: 'workflows' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +47,7 @@ export const argoPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) argo' as const,
+  installCommand: 'launchpad install argo' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -105,9 +104,8 @@ export const argoPackage = {
    */
   aliases: [
     'argo',
-    'workflows',
+    'argo-workflows',
   ] as const,
-  fullPath: 'argoproj.github.io/workflows' as const,
 }
 
 export type ArgoPackage = typeof argoPackage
