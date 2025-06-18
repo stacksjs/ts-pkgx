@@ -1,0 +1,79 @@
+distributable:
+  url: https://github.com/HDFGroup/hdf5/releases/download/{{version.tag}}/hdf5-{{version}}.tar.gz
+  strip-components: 2
+
+versions:
+  github: HDFGroup/hdf5
+  strip: /^hdf5_/
+
+dependencies:
+  dkrz.de/libaec: 1
+  linux:
+    zlib.net: 1
+
+companions:
+  gnu.org/gcc: '*'
+
+build:
+  dependencies:
+    gnu.org/autoconf: '*'
+    gnu.org/automake: '*'
+    gnu.org/libtool: '*'
+    gnu.org/gcc: '*' # gfortran
+
+  script:
+    - autoreconf --force --install --verbose
+    - ./configure $ARGS
+    - make --jobs {{hw.concurrency}} install
+
+    # relocate h5cc, h5c++, h5fc
+    - run: sed -i -f $PROP h5cc h5c++ h5fc
+      working-directory: ${{prefix}}/bin
+      prop: |
+        s|{{deps.dkrz.de/libaec.prefix}}|{{pkgx.prefix}}/dkrz.de/libaec/v{{deps.dkrz.de/libaec.version.major}}|g
+        s|{{prefix}}|\\$(cd \\$(dirname \\$0)/.. \&\& pwd)|g
+        s|{{pkgx.prefix}}|\\$(cd \\$(dirname \\$0)/../../../.. \&\& pwd)|g
+        s|\+brewing||g
+
+  env:
+    HDF5_ROOT: '{{prefix}}'
+    ARGS:
+      - --prefix="$HDF5_ROOT"
+      - --disable-dependency-tracking
+      - --disable-silent-rules
+      - --enable-build-mode=production
+      - --enable-fortran
+      - --enable-cxx
+      - --with-szlib={{deps.dkrz.de/libaec.prefix}}
+    linux:
+      ARGS:
+        - --with-zlib={{deps.zlib.net.prefix}}
+
+provides:
+  - bin/h5c++
+  - bin/h5cc
+  - bin/h5clear
+  - bin/h5copy
+  - bin/h5debug
+  - bin/h5delete
+  - bin/h5diff
+  - bin/h5dump
+  - bin/h5fc
+  - bin/h5format_convert
+  - bin/h5import
+  - bin/h5jam
+  - bin/h5ls
+  - bin/h5mkgrp
+  - bin/h5perf_serial
+  - bin/h5redeploy
+  - bin/h5repack
+  - bin/h5repart
+  - bin/h5stat
+  - bin/h5unjam
+  - bin/h5watch
+
+test:
+  - h5cc test.c
+  - ./a.out | grep {{version}}
+  - h5fc test.f90
+  - ./a.out | grep {{version}}

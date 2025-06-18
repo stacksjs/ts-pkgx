@@ -1,0 +1,31 @@
+distributable:
+  url: https://github.com/krzysztofzablocki/Sourcery/releases/download/{{version}}/Sourcery-{{version}}.zip
+
+versions:
+  github: krzysztofzablocki/Sourcery
+
+platforms:
+  - darwin
+
+provides:
+  - bin/sourcery
+
+warnings:
+  - vendored
+
+build:
+  working-directory: ${{prefix}}/bin
+  script:
+    - run: install "$SRCROOT"/bin/sourcery .
+      if: <2.1.4 || >=2.1.7
+    - run: install "$SRCROOT"/sourcery-{{version}}/bin/sourcery .
+      if: '>=2.1.4<2.1.7'
+
+test:
+  - run: test "$(sourcery --version)" = "{{version}}"
+    if: <2.1.4
+  # 2.1.4 has the wrong version
+  - run: sourcery --version
+    if: 2.1.4
+
+display-name: Sourcery

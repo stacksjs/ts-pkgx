@@ -1,0 +1,83 @@
+distributable:
+  url: https://github.com/facebookincubator/fizz/archive/refs/tags/v{{version.raw}}.tar.gz
+  strip-components: 1
+
+versions:
+  github: facebookincubator/fizz/releases/tags
+  strip: /^v/
+
+dependencies:
+  boost.org: '*'
+  google.com/double-conversion: ^3
+  fmt.dev: ^10
+  facebook.com/folly: '*'
+  gflags.github.io: '*'
+  google.com/glog: '<0.7' # glog 0.7.0 cannot be simply included
+  libevent.org: '*'
+  libsodium.org: '*'
+  lz4.org: 1
+  openssl.org: ^1.1
+  google.github.io/snappy: '*'
+  facebook.com/zstd: 1
+  sourceware.org/bzip2: 1
+  zlib.net: ^1
+  linux:
+    gnu.org/gcc/libstdcxx: 13
+
+provides:
+  - bin/fizz
+
+build:
+  dependencies:
+    cmake.org: ^3
+    ninja-build.org: ^1
+    linux:
+      gnu.org/gcc: 13
+  script:
+    # compilation errors in 2023.12.18.0 and beyond
+    - run: |
+        sed -i -e '/#include <fizz\/crypto\/aead\/AESGCM128.h>/a\
+        #include <fizz/crypto/exchange/X25519.h>\
+        #include <fizz/protocol/OpenSSLFactory.h>' FizzServerCommand.cpp
+      if: '>=2023.12.18.0'
+      working-directory: fizz/tool
+
+    - cmake -S fizz -B build $ARGS
+    - cmake --build build
+    - cmake --install build
+
+    - run: |
+        sed -E -i.bak \
+          -e "s:{{pkgx.prefix}}:\$\{_IMPORT_PREFIX\}/../../../..:g" \
+          -e '/^  INTERFACE_INCLUDE_DIRECTORIES/ s|/v([0-9]+)(\.[0-9]+)*[a-z]?/include|/v\1/include|g' \
+          -e '/^  INTERFACE_LINK_LIBRARIES/ s|/v([0-9]+)(\.[0-9]+)*[a-z]?/lib|/v\1/lib|g' \
+        fizz-targets.cmake
+        rm "{{prefix}}"/lib/cmake/fizz/fizz-targets.cmake.bak
+      working-directory: '{{prefix}}/lib/cmake/fizz'
+  env:
+    ARGS:
+      - -GNinja
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DCMAKE_INSTALL_PREFIX="{{prefix}}"
+      - -DBUILD_TESTS=OFF
+      - -DBUILD_SHARED_LIBS=ON
+      - -DCMAKE_INSTALL_RPATH="{{prefix}}"
+    linux/aarch64:
+      ARGS:
+        - -DCMAKE_C_FLAGS=-fPIC
+        - -DCMAKE_CXX_FLAGS=-fPIC
+        - -DCMAKE_EXE_LINKER_FLAGS=-pie
+
+test:
+  fixture: |
+    #include <fizz/client/AsyncFizzClient.h>
+    #include <iostream>
+
+    int main() {
+      auto context = fizz::client::FizzClientContext();
+      std::cout << toString(context.getSupportedVersions()[0]) << std::endl;
+    }
+  script: |
+    mv $FIXTURE test.cpp
+    c++ -std=c++17 test.cpp -lfizz -lfolly -lgflags -lglog -levent -lsodium -lcrypto -lssl -o fixture
+    ./fixture | grep TLS

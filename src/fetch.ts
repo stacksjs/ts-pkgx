@@ -5,6 +5,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import { chromium } from 'playwright'
+import { getAliasOverrides, shouldReplaceAliases } from './alias-overrides'
 import { DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS } from './consts'
 import { aliases } from './packages/aliases'
 // Lazy import of utils functions to avoid module loading issues
@@ -18,7 +19,13 @@ import { aliases } from './packages/aliases'
  * Handles special cases like GitHub repositories with multiple path segments
  */
 function convertPackageNameToUrl(packageName: string): string {
+  // If the package name already contains a slash, it's already in URL format
+  if (packageName.includes('/')) {
+    return packageName
+  }
+
   // Handle regular nested packages: "domain-name" -> "domain/name"
+  // But only for hyphenated names that look like they need conversion
   return packageName.replace(/^([^-]+)-(.+)$/, (match, domain, name) => {
     // Check if this looks like a nested package (domain contains a dot)
     if (domain.includes('.')) {
@@ -513,20 +520,9 @@ export function savePackageAsTypeScript(outputDir: string, domainName: string, p
     filePath = path.join(packageDir, `${filename}.ts`)
   }
   else {
-    // For simple domains, determine the best filename to use
-    let filename: string
-
-    if (packageInfo.name
-      && packageInfo.name !== domainName
-      && packageInfo.name !== domainName.split('.')[0] // Don't use just the first part of domain
-      && packageInfo.name.length > 1) {
-      // Use the package name for simple domains when it makes sense
-      filename = sanitizeFilename(packageInfo.name)
-    }
-    else {
-      // Fall back to the domain-based naming
-      filename = domainName.replace(/\./g, '-')
-    }
+    // For root domains, use consistent domain-based naming
+    // Strip dots entirely from root domains (e.g., alacritty.org -> alacrittyorg)
+    const filename = domainName.replace(/\./g, '')
 
     // Create the TypeScript file path in the base directory
     filePath = path.join(outputDir, `${filename}.ts`)
@@ -1261,11 +1257,27 @@ export async function fetchPkgxPackage(
       // Ensure we have values for required fields
       packageInfo.name = packageInfo.name || originalName
       packageInfo.domain = packageInfo.domain || fullDomainName
-      packageInfo.installCommand = packageInfo.installCommand || `pkgx ${originalName}`
+      packageInfo.installCommand = packageInfo.installCommand || `launchpad install ${originalName}`
       packageInfo.programs = packageInfo.programs || []
       packageInfo.companions = packageInfo.companions || []
       packageInfo.dependencies = packageInfo.dependencies || []
       packageInfo.versions = packageInfo.versions || []
+
+      // Transform install commands from pkgx format to launchpad format
+      if (packageInfo.installCommand) {
+        if (packageInfo.installCommand.startsWith('pkgx ')) {
+          const packageNameFromCommand = packageInfo.installCommand.replace('pkgx ', '')
+          packageInfo.installCommand = `launchpad install ${packageNameFromCommand}`
+        }
+        else if (packageInfo.installCommand.includes('sh <(curl https://pkgx.sh)')) {
+          // Handle the older sh <(curl) format: "sh <(curl https://pkgx.sh) packagename"
+          const match = packageInfo.installCommand.match(/sh\s*<\(curl[^)]+\)\s+(\S.*)$/)
+          if (match && match[1]) {
+            const packageNameFromCommand = match[1].trim()
+            packageInfo.installCommand = `launchpad install ${packageNameFromCommand}`
+          }
+        }
+      }
 
       // Validate data quality to prevent writing incomplete packages
       const hasAnyContent = packageInfo.versions.length > 0 || packageInfo.programs.length > 0 || packageInfo.dependencies.length > 0
@@ -1491,7 +1503,7 @@ export function startPeriodicCleanup(): void {
 }
 
 /**
- * Fetches and saves all packages with proper concurrency support
+ * Fetches and saves all packages using the local pantry as source of truth
  */
 export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {}): Promise<string[]> {
   const timeout = options.timeout || DEFAULT_TIMEOUT_MS
@@ -1500,6 +1512,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
   const useCache = options.cache !== false
   const cacheExpirationMinutes = options.cacheExpirationMinutes || DEFAULT_CACHE_EXPIRATION_MINUTES
   const concurrency = Math.min(options.concurrency || 6, 8) // Further reduce concurrency for stability
+  const pantryDir = options.pantryDir || 'src/pantry'
 
   if (!options.outputJson) {
     console.log(`Starting bulk fetch with concurrency: ${concurrency}, timeout: ${timeout}ms`)
@@ -1509,53 +1522,75 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
   let allPackageNames: string[] = []
 
   try {
-    // Use the comprehensive known packages list first (most complete)
-    const { ALL_KNOWN_PACKAGES } = await import('./consts')
-    allPackageNames = [...ALL_KNOWN_PACKAGES].filter(name =>
-      name && name !== 'undefined' && name !== 'aliases' && name !== 'index',
-    )
-
+    // Use the local pantry as the source of truth
     if (!options.outputJson) {
-      console.log(`Using comprehensive package list: ${allPackageNames.length} packages`)
+      console.log('Scanning local pantry for packages...')
     }
 
-    // If that fails or is empty, fall back to GitHub API
-    if (allPackageNames.length === 0) {
+    try {
+      allPackageNames = await scanPantryPackages(pantryDir)
+
       if (!options.outputJson) {
-        console.log('Falling back to GitHub API for package discovery...')
+        console.log(`Found ${allPackageNames.length} packages in local pantry`)
       }
+    }
+    catch (error) {
+      if (!options.outputJson) {
+        console.warn('Failed to scan local pantry, falling back to consts:', error)
+      }
+
+      // Fallback to the comprehensive known packages list
       try {
-        const response = await fetch('https://api.github.com/repos/pkgxdev/pantry/contents/projects', {
-          headers: {
-            'User-Agent': 'ts-pkgx-fetcher',
-            'Accept': 'application/vnd.github.v3+json',
-          },
-        })
+        const { ALL_KNOWN_PACKAGES } = await import('./consts')
+        allPackageNames = [...ALL_KNOWN_PACKAGES].filter(name =>
+          name && name !== 'undefined' && name !== 'aliases' && name !== 'index',
+        )
 
-        if (response.ok) {
-          const projects = await response.json() as Array<{ name: string, type: string }>
-          const packageNames = projects
-            .filter(item => item.type === 'dir')
-            .map(item => item.name)
-            .sort()
-
-          if (!options.outputJson) {
-            console.log(`Retrieved ${packageNames.length} projects from GitHub API`)
-          }
-          allPackageNames = packageNames
-        }
-        else {
-          throw new Error(`GitHub API returned ${response.status}`)
+        if (!options.outputJson) {
+          console.log(`Using comprehensive package list: ${allPackageNames.length} packages`)
         }
       }
-      catch (error) {
+      catch (constError) {
         if (!options.outputJson) {
-          console.warn('Failed to fetch from GitHub API, falling back to local discovery:', error)
+          console.warn('Failed to load consts, falling back to GitHub API:', constError)
         }
-        // Final fallback: scan existing package files
-        const existingFiles = fs.readdirSync(outputDir).filter(f => f.endsWith('.ts'))
-        allPackageNames = existingFiles.map(f => path.basename(f, '.ts'))
-        console.log(`Found ${allPackageNames.length} existing packages`)
+
+        // Final fallback: GitHub API
+        try {
+          const response = await fetch('https://api.github.com/repos/pkgxdev/pantry/contents/projects', {
+            headers: {
+              'User-Agent': 'ts-pkgx-fetcher',
+              'Accept': 'application/vnd.github.v3+json',
+            },
+          })
+
+          if (response.ok) {
+            const projects = await response.json() as Array<{ name: string, type: string }>
+            const packageNames = projects
+              .filter(item => item.type === 'dir')
+              .map(item => item.name)
+              .sort()
+
+            if (!options.outputJson) {
+              console.log(`Retrieved ${packageNames.length} projects from GitHub API`)
+            }
+            allPackageNames = packageNames
+          }
+          else {
+            throw new Error(`GitHub API returned ${response.status}`)
+          }
+        }
+        catch (githubError) {
+          if (!options.outputJson) {
+            console.warn('Failed to fetch from GitHub API, falling back to local discovery:', githubError)
+          }
+          // Final fallback: scan existing package files
+          if (fs.existsSync(outputDir)) {
+            const existingFiles = fs.readdirSync(outputDir).filter(f => f.endsWith('.ts'))
+            allPackageNames = existingFiles.map(f => path.basename(f, '.ts'))
+            console.log(`Found ${allPackageNames.length} existing packages`)
+          }
+        }
       }
     }
 
@@ -1586,10 +1621,31 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       'github.com', // Only has nested packages
     ]
 
+    // For GitHub packages, filter out parent paths that only exist as containers for nested packages
+    const githubParentsToFilter = new Set<string>()
+
+    // Find all github.com packages
+    const githubPackages = allPackageNames.filter(name => name.startsWith('github.com/'))
+
+    // For each github package with multiple path segments, mark the parent as potentially filterable
+    for (const pkg of githubPackages) {
+      const pathParts = pkg.split('/')
+      if (pathParts.length > 2) { // github.com/user/repo or deeper
+        const parentPath = pathParts.slice(0, 2).join('/') // github.com/user
+        githubParentsToFilter.add(parentPath)
+      }
+    }
+
     allPackageNames = allPackageNames.filter((name) => {
       // Filter out .pkgroot entries - these are just markers, not actual packages
       if (name.endsWith('/.pkgroot')) {
         console.log(`Filtering out .pkgroot marker: ${name}`)
+        return false
+      }
+
+      // Filter out README.rst files - these are documentation, not packages
+      if (name.endsWith('/README.rst')) {
+        console.log(`Filtering out README.rst documentation: ${name}`)
         return false
       }
 
@@ -1602,6 +1658,12 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       // Filter out known parent domains that don't have standalone packages
       if (PARENT_DOMAINS_ONLY.includes(name)) {
         console.log(`Filtering out parent domain ${name} - only has nested packages`)
+        return false
+      }
+
+      // Filter out GitHub parent paths that only exist as containers for nested packages
+      if (githubParentsToFilter.has(name)) {
+        console.log(`Filtering out GitHub parent path ${name} - only has nested packages`)
         return false
       }
 
@@ -1662,11 +1724,11 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
         console.log(`Processing batch ${batchIndex + 1}/${batches.length} (${batch.length} packages)`)
       }
 
-      // Process batch with controlled concurrency
+      // Process batch with controlled concurrency using pantry-based approach
       const batchPromises = batch.map(async (packageName) => {
         try {
           // Check cache first
-          const cacheFile = path.join(cacheDir, `${packageName}.json`)
+          const cacheFile = path.join(cacheDir, `${packageName.replace(/\//g, '-')}.json`)
           if (useCache && fs.existsSync(cacheFile)) {
             const stats = fs.statSync(cacheFile)
             const ageMinutes = (Date.now() - stats.mtime.getTime()) / (1000 * 60)
@@ -1677,6 +1739,8 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
               }
               try {
                 const cachedData = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'))
+                // Remove fetchedAt before generating TypeScript
+                delete cachedData.fetchedAt
                 const tsFilePath = savePackageAsTypeScript(outputDir, packageName, cachedData)
                 if (!options.outputJson) {
                   console.log(`Using cached data for ${packageName} (saved to ${tsFilePath})`)
@@ -1689,24 +1753,28 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
             }
           }
 
-          // Use the comprehensive fetch function instead of the simplified one
-          const result = await fetchAndSavePackage(
-            packageName,
-            outputDir,
+          // Use the new pantry-based fetch approach
+          const result = await fetchPantryPackageWithMetadata(packageName, {
+            ...options,
+            pantryDir,
+            browser, // Pass the shared browser
             timeout,
-            false, // saveAsJson
-            1, // retryNumber
-            3, // maxRetries
-            false, // debug
-            {
-              cacheDir,
-              cache: useCache,
-              cacheExpirationMinutes,
-              browser, // Pass the shared browser
-            },
-          )
+            cache: useCache,
+            cacheDir,
+            cacheExpirationMinutes,
+          })
 
-          if (result?.success) {
+          if (result) {
+            // Save to cache and output
+            const { outputPath } = saveToCacheAndOutput(packageName, result.packageInfo, {
+              cacheDir,
+              outputDir,
+              cache: useCache,
+            })
+
+            if (!options.outputJson) {
+              console.log(`Successfully processed ${packageName} (saved to ${outputPath})`)
+            }
             return { success: true, packageName }
           }
           else {
@@ -1799,7 +1867,7 @@ function createMinimalPackageInfo(
     packageYmlUrl: '',
     homepageUrl: '',
     githubUrl: '',
-    installCommand: `sh <(curl https://pkgx.sh) ${packageName}`,
+    installCommand: `launchpad install ${packageName}`,
     programs: [],
     companions: [],
     dependencies: [],
@@ -2367,3 +2435,299 @@ export async function fetchAndSavePackage(
 /**
  * Check if a package has meaningful data and should be saved
  */
+
+/**
+ * Scans the local pantry directory and extracts all available packages
+ * @param pantryDir Path to the pantry directory (default: 'src/pantry')
+ * @returns Array of package names found in the pantry
+ */
+export async function scanPantryPackages(pantryDir = 'src/pantry'): Promise<string[]> {
+  if (!fs.existsSync(pantryDir)) {
+    throw new Error(`Pantry directory not found: ${pantryDir}. Please run 'bun ./bin/cli.ts update-pantry' first.`)
+  }
+
+  const packages: string[] = []
+
+  function scanDirectory(dir: string, basePath = ''): void {
+    const entries = fs.readdirSync(dir, { withFileTypes: true })
+
+    for (const entry of entries) {
+      if (entry.isDirectory() && !entry.name.startsWith('.')) {
+        const currentPath = basePath ? `${basePath}/${entry.name}` : entry.name
+        const fullPath = path.join(dir, entry.name)
+
+        // Check if this directory contains package.yml
+        const packageYmlPath = path.join(fullPath, 'package.yml')
+        if (fs.existsSync(packageYmlPath)) {
+          packages.push(currentPath)
+        }
+        else {
+          // Recursively scan subdirectories
+          scanDirectory(fullPath, currentPath)
+        }
+      }
+    }
+  }
+
+  scanDirectory(pantryDir)
+
+  console.log(`Found ${packages.length} packages in pantry`)
+  return packages.sort()
+}
+
+/**
+ * Reads package.yml file and extracts basic package information
+ * @param packageName The package name (e.g., 'github.com/user/repo')
+ * @param pantryDir Path to the pantry directory
+ * @returns Basic package information from package.yml
+ */
+export async function readPantryPackageInfo(packageName: string, pantryDir = 'src/pantry'): Promise<Partial<PkgxPackage> | null> {
+  const packageYmlPath = path.join(pantryDir, packageName, 'package.yml')
+
+  if (!fs.existsSync(packageYmlPath)) {
+    console.warn(`Package.yml not found for ${packageName}`)
+    return null
+  }
+
+  try {
+    const yamlContent = fs.readFileSync(packageYmlPath, 'utf-8')
+
+    // Parse YAML content - for now we'll extract what we can with simple regex
+    // In a full implementation, you'd want to use a proper YAML parser
+
+    // Extract dependencies with version constraints (both top-level and build dependencies)
+    const dependencies: string[] = []
+    const depsLines = yamlContent.split('\n')
+    let inDepsSection = false
+    let inBuildDepsSection = false
+
+    for (const line of depsLines) {
+      // Check for top-level dependencies
+      if (line.match(/^dependencies:\s*$/)) {
+        inDepsSection = true
+        inBuildDepsSection = false
+        continue
+      }
+
+      // Check for build.dependencies (2-space indented)
+      if (line.match(/^\s{2}dependencies:\s*$/)) {
+        inBuildDepsSection = true
+        inDepsSection = false
+        continue
+      }
+
+      if (inDepsSection || inBuildDepsSection) {
+        // Exit conditions: empty line or non-indented line (for top-level deps)
+        // or less than 4-space indented line (for build deps)
+        if (line.match(/^\s*$/)
+          || (inDepsSection && line.match(/^\S/))
+          || (inBuildDepsSection && !line.match(/^\s{4,}/))) {
+          inDepsSection = false
+          inBuildDepsSection = false
+          continue
+        }
+
+        // Parse lines like "nodejs.org: '>=5'" or "curl.se: '*'"
+        const depMatch = line.match(/^\s+([^\s:]+):\s*['"]?([^'"]+)['"]?/)
+        if (depMatch) {
+          const pkg = depMatch[1]
+          const version = depMatch[2].trim()
+
+          if (version && version !== '*') {
+            // Include version constraint - add ^ if no operator specified
+            const hasVersionOperator = /^[~^>=<]/.test(version)
+            dependencies.push(`${pkg}${hasVersionOperator ? '' : '^'}${version}`)
+          }
+          else {
+            dependencies.push(pkg)
+          }
+        }
+      }
+    }
+
+    // Extract companions/runtime dependencies with version constraints
+    const companions: string[] = []
+    let inRuntimeSection = false
+
+    for (const line of depsLines) {
+      if (line.match(/^runtime:\s*$/)) {
+        inRuntimeSection = true
+        continue
+      }
+      if (inRuntimeSection) {
+        if (line.match(/^\s*$/) || line.match(/^\S/)) {
+          inRuntimeSection = false
+          continue
+        }
+
+        // Skip environment variable definitions (env: section)
+        if (line.match(/^\s+env:\s*$/)) {
+          continue
+        }
+
+        // Skip lines that are environment variable assignments
+        if (line.match(/^\s+[A-Z_]+:\s*\$\{\{/)) {
+          continue
+        }
+
+        // Parse lines like "nodejs.org: '>=5'" or "curl.se: '*'" (actual package dependencies)
+        const runtimeMatch = line.match(/^\s+([^\s:]+):\s*['"]?([^'"]+)['"]?/)
+        if (runtimeMatch) {
+          const pkg = runtimeMatch[1]
+          const version = runtimeMatch[2].trim()
+
+          // Skip if this looks like an environment variable (all caps with underscores)
+          if (/^[A-Z_]+$/.test(pkg)) {
+            continue
+          }
+
+          if (version && version !== '*') {
+            // Include version constraint - add ^ if no operator specified
+            const hasVersionOperator = /^[~^>=<]/.test(version)
+            companions.push(`${pkg}${hasVersionOperator ? '' : '^'}${version}`)
+          }
+          else {
+            companions.push(pkg)
+          }
+        }
+      }
+    }
+
+    // Extract homepage and GitHub URLs from distributable.url
+    let homepageUrl = ''
+    let githubUrl = ''
+
+    const distributableMatch = yamlContent.match(/distributable:[\t\v\f\r \xA0\u1680\u2000-\u200A\u2028\u2029\u202F\u205F\u3000\uFEFF]*\n\s*url:\s*(.+)/)
+    if (distributableMatch) {
+      const url = distributableMatch[1].trim()
+      if (url.includes('github.com')) {
+        // Extract GitHub URL from git+https://github.com/owner/repo.git format
+        const githubMatch = url.match(/git\+https:\/\/github\.com\/([^/]+\/[^.]+)/)
+        if (githubMatch) {
+          githubUrl = `https://github.com/${githubMatch[1]}`
+
+          // For well-known projects, try to determine homepage URL
+          const repoPath = githubMatch[1]
+          if (repoPath === 'python-attrs/attrs') {
+            homepageUrl = 'https://www.attrs.org/'
+          }
+          // Add more mappings as needed
+        }
+      }
+    }
+
+    const packageInfo: Partial<PkgxPackage> = {
+      name: packageName.split('/').pop() || packageName,
+      domain: packageName,
+      dependencies,
+      companions,
+      homepageUrl,
+      githubUrl,
+      // We'll get the rest from pkgx.dev
+    }
+
+    return packageInfo
+  }
+  catch (error) {
+    console.warn(`Error reading package.yml for ${packageName}:`, error)
+    return null
+  }
+}
+
+/**
+ * Combines pantry package data with additional metadata from pkgx.dev
+ * @param packageName The package name (e.g., 'github.com/user/repo')
+ * @param options Fetch options including pantry directory
+ * @returns Complete package information
+ */
+export async function fetchPantryPackageWithMetadata(
+  packageName: string,
+  options: PackageFetchOptions = {},
+): Promise<{ packageInfo: PkgxPackage, originalName: string, fullDomainName: string } | null> {
+  const pantryDir = options.pantryDir || 'src/pantry'
+
+  try {
+    // First, get basic package info from pantry files
+    const pantryInfo = await readPantryPackageInfo(packageName, pantryDir)
+
+    if (!pantryInfo) {
+      console.warn(`No pantry information found for ${packageName}`)
+      return null
+    }
+
+    // Then fetch additional metadata from pkgx.dev
+    try {
+      const webData = await fetchPkgxPackage(packageName, options)
+
+      // Get alias overrides for this domain
+      const domain = pantryInfo.domain || webData.packageInfo.domain
+      const aliasOverrides = getAliasOverrides(domain)
+
+      // Determine final aliases
+      let finalAliases = webData.packageInfo.aliases || []
+      if (aliasOverrides.length > 0) {
+        if (shouldReplaceAliases(domain)) {
+          // Replace existing aliases completely
+          finalAliases = aliasOverrides
+        }
+        else {
+          // Add to existing aliases, avoiding duplicates
+          finalAliases = [...new Set([...finalAliases, ...aliasOverrides])]
+        }
+      }
+
+      // Combine pantry data with web data, giving priority to pantry for dependencies/companions
+      const combinedPackageInfo: PkgxPackage = {
+        ...webData.packageInfo,
+        // Override with pantry data where available
+        dependencies: pantryInfo.dependencies && pantryInfo.dependencies.length > 0
+          ? pantryInfo.dependencies
+          : webData.packageInfo.dependencies,
+        companions: pantryInfo.companions && pantryInfo.companions.length > 0
+          ? pantryInfo.companions
+          : webData.packageInfo.companions,
+        domain: pantryInfo.domain || webData.packageInfo.domain,
+        name: pantryInfo.name || webData.packageInfo.name,
+        // Use pantry URLs if available, otherwise fallback to web data
+        homepageUrl: pantryInfo.homepageUrl || webData.packageInfo.homepageUrl,
+        githubUrl: pantryInfo.githubUrl || webData.packageInfo.githubUrl,
+        // Apply alias overrides
+        aliases: finalAliases,
+      }
+
+      return {
+        packageInfo: combinedPackageInfo,
+        originalName: webData.originalName,
+        fullDomainName: webData.fullDomainName,
+      }
+    }
+    catch (webError) {
+      console.warn(`Failed to fetch web metadata for ${packageName}, using pantry data only:`, webError)
+
+      // Create a minimal package from pantry data only
+      const packageInfo: PkgxPackage = {
+        name: pantryInfo.name || packageName.split('/').pop() || packageName,
+        domain: pantryInfo.domain || packageName,
+        description: `Package from pantry: ${packageName}`,
+        installCommand: `launchpad install ${packageName}`,
+        programs: [],
+        companions: pantryInfo.companions || [],
+        dependencies: pantryInfo.dependencies || [],
+        versions: [],
+        packageYmlUrl: `https://github.com/pkgxdev/pantry/tree/main/projects/${packageName}/package.yml`,
+        homepageUrl: '',
+        githubUrl: '',
+      }
+
+      return {
+        packageInfo,
+        originalName: packageName,
+        fullDomainName: packageName,
+      }
+    }
+  }
+  catch (error) {
+    console.error(`Error processing pantry package ${packageName}:`, error)
+    return null
+  }
+}

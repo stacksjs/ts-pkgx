@@ -99,7 +99,7 @@ describe('Fetch Module', () => {
       const result = saveToCacheAndOutput('agwa.name/git-crypt', mockNestedPackageInfo, options)
 
       expect(result.cachePath).toContain('agwa.name-git-crypt.json')
-      expect(result.outputPath).toContain('agwa.name-git-crypt.ts')
+      expect(result.outputPath).toContain('agwa.name/git-crypt.ts')
       expect(fs.existsSync(result.cachePath)).toBe(true)
       expect(fs.existsSync(result.outputPath)).toBe(true)
     })

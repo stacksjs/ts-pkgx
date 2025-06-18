@@ -1,0 +1,69 @@
+distributable:
+  url: https://github.com/astral-sh/uv/releases/download/{{version}}/source.tar.gz
+  strip-components: 1
+
+versions:
+  github: astral-sh/uv
+
+provides:
+  - bin/uv
+  - bin/uvx
+
+companions:
+  python.org: '*'
+
+dependencies:
+  libgit2.org: ~1.7 # links to libgit2.so.1.7
+
+build:
+  dependencies:
+    linux:
+      nixos.org/patchelf: ^0.18
+      sqlite.org: '*' # as of v0.5.22, to build libz-ng-sys
+    cmake.org: ^3.28
+    rust-lang.org/cargo: ^0
+    maturin.rs: ^1.4.0
+    info-zip.org/unzip: ^6
+  script:
+    - maturin build --locked --release --out ./out
+    - run:
+        - unzip ./uv-{{version}}-*.whl
+        - install -D ./uv-{{version}}.data/scripts/uv {{prefix}}/bin/uv
+        - install -D ./uv-{{version}}.data/scripts/uvx {{prefix}}/bin/uvx
+      working-directory: out
+
+test:
+  dependencies:
+    curl.se: '*'
+    pkgx.sh: 1
+  env:
+    PORT: $(pkgx get-port | tail -n1)
+  script:
+    - uv --version | grep {{version}}
+    - fixture:
+        contents: |
+          from flask import Flask
+          app = Flask(__name__)
+          @app.route("/")
+          def hello_world():
+            return "<p>Hello, World!</p>"
+        extname: .py
+      run:
+        - |
+          if command -v flask; then
+            false
+          fi
+        - |
+          uv venv
+          source .venv/bin/activate
+          uv pip install flask
+        - |
+          mv $FIXTURE app.py
+          set -m
+          flask run --port $PORT &
+          PID=$!
+        # otherwise the server may not be ready
+        - sleep 10
+        - test "$(curl 127.0.0.1:$PORT)" = "<p>Hello, World!</p>"
+        # TODO need to install a signal handler or our build servers could be left with a running flask process
+        - kill $PID

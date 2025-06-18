@@ -1,0 +1,32 @@
+distributable:
+  url: https://cytranet.dl.sourceforge.net/project/libpng/libpng{{ version.major }}{{ version.minor }}/{{ version }}/libpng-{{ version }}.tar.xz
+  #FIXME our linux docker image TLS doesn’t like this URL
+  # url: https://downloads.sourceforge.net/project/libpng/libpng{{ version.major }}{{ version.minor }}/{{ version }}/libpng-{{ version }}.tar.xz
+  strip-components: 1
+
+versions:
+  github: glennrp/libpng/tags
+  strip: /^v/
+
+dependencies:
+  zlib.net: 1
+
+build:
+  - ./configure
+    --disable-dependency-tracking
+    --disable-silent-rules
+    --prefix {{ prefix }}
+  - make --jobs {{ hw.concurrency }}
+  - make install
+  - run: find . -name '*.la' -exec rm -f {} \;
+    working-directory: ${{ prefix }}/lib
+
+test:
+  - cc test.c -lpng
+  - ./a.out
+
+provides:
+  - bin/libpng-config
+  - bin/libpng16-config
+  - bin/png-fix-itxt
+  - bin/pngfix

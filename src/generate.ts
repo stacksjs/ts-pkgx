@@ -8,6 +8,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
+import { getAllAliasOverrides } from './alias-overrides'
 import { convertDomainToVarName, guessOriginalDomain } from './utils'
 
 // The packages directory path
@@ -830,6 +831,18 @@ async function extractAllAliases(packagesDir?: string): Promise<Record<string, s
     }
     catch (error) {
       console.error(`Error extracting aliases from ${file}:`, error)
+    }
+  }
+
+  // Add alias overrides from the configuration
+  const aliasOverrides = getAllAliasOverrides()
+  for (const [alias, domain] of Object.entries(aliasOverrides)) {
+    if (!allAliases[alias]) {
+      allAliases[alias] = domain
+      console.log(`Added alias override: ${alias} -> ${domain}`)
+    }
+    else {
+      console.log(`Skipped alias override ${alias} -> ${domain} (already exists as ${allAliases[alias]})`)
     }
   }
 

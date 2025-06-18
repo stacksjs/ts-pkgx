@@ -95,8 +95,8 @@ describe('Constants Module', () => {
       expect(DEFAULT_TIMEOUT_MS).toBeGreaterThan(0)
     })
 
-    test('should be 12 seconds (12000 ms)', () => {
-      expect(DEFAULT_TIMEOUT_MS).toBe(12000)
+    test('should be 20 seconds (20000 ms)', () => {
+      expect(DEFAULT_TIMEOUT_MS).toBe(20000)
     })
 
     test('should be reasonable for network operations', () => {
@@ -117,8 +117,8 @@ describe('Constants Module', () => {
       ALL_KNOWN_PACKAGES.forEach((packageName) => {
         expect(typeof packageName).toBe('string')
         expect(packageName.length).toBeGreaterThan(0)
-        // Should be valid domain or domain-path format (slashes replaced with hyphens, may contain underscores)
-        expect(packageName).toMatch(/^[\w.-]+$/)
+        // Should be valid domain or domain-path format (may contain slashes for nested packages, underscores, hyphens, dots)
+        expect(packageName).toMatch(/^[\w./-]+$/)
       })
     })
 
@@ -165,13 +165,13 @@ describe('Constants Module', () => {
     })
 
     test('should handle nested package paths', () => {
-      // In ALL_KNOWN_PACKAGES, nested paths use hyphens instead of slashes
-      const nestedPackages = ALL_KNOWN_PACKAGES.filter(pkg => pkg.includes('-') && pkg.split('-').length > 2)
+      // In ALL_KNOWN_PACKAGES, nested paths now use slashes (from pantry)
+      const nestedPackages = ALL_KNOWN_PACKAGES.filter(pkg => pkg.includes('/'))
       expect(nestedPackages.length).toBeGreaterThan(0)
 
-      // Check some specific nested packages (with transformed names)
-      expect(ALL_KNOWN_PACKAGES).toContain('aws.amazon.com-cli')
-      expect(ALL_KNOWN_PACKAGES).toContain('agwa.name-git-crypt')
+      // Check some specific nested packages (with original format)
+      expect(ALL_KNOWN_PACKAGES).toContain('aws.amazon.com/cli')
+      expect(ALL_KNOWN_PACKAGES).toContain('agwa.name/git-crypt')
     })
 
     test('should have reasonable package count', () => {

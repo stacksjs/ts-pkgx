@@ -235,8 +235,8 @@ describe('Index Module', () => {
       for (const key of pantryKeys.slice(0, 5)) { // Test first 5 packages
         const pkg = pantry[key as keyof typeof pantry]
 
-        // Install command should start with 'pkgx' or 'sh'
-        expect(pkg.installCommand).toMatch(/^(pkgx|sh\s)/)
+        // Install command should start with 'launchpad install' (new format)
+        expect(pkg.installCommand).toMatch(/^launchpad install/)
 
         // Should contain some reference to the package (domain, alias, or name)
         const containsDomain = pkg.installCommand.includes(pkg.domain)

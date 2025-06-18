@@ -1,0 +1,30 @@
+distributable:
+  url: https://www.nasm.us/pub/nasm/releasebuilds/{{version.raw}}/nasm-{{version.raw}}.tar.xz
+  strip-components: 1
+
+versions:
+  url: https://www.nasm.us/pub/nasm/releasebuilds/
+  match: /"\d+\.\d+(\.\d+)?\/"/
+  strip:
+    - /^"/
+    - /\/"$/
+
+build:
+  script:
+    - ./configure --prefix="{{prefix}}"
+    - run: |
+        make --jobs {{hw.concurrency}} rdf
+        make install install_rdf
+      if: <2.16
+    # rdoff tools removed as unfixable
+    # https://github.com/netwide-assembler/nasm/commit/93548c2de2a3c218b3d0ab4061b26d9781cb6b37
+    - run: |
+        make --jobs {{hw.concurrency}}
+        make install
+      if: '>=2.16'
+
+test: nasm --version
+
+provides:
+  - bin/nasm
+  - bin/ndisasm

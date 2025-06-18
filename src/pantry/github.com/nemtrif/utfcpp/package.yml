@@ -1,0 +1,56 @@
+distributable:
+  url: https://github.com/nemtrif/utfcpp/archive/v{{version}}.tar.gz
+  strip-components: 1
+
+display-name: utf8cpp
+
+versions:
+  github: nemtrif/utfcpp
+
+build:
+  dependencies:
+    cmake.org: '*'
+    darwin:
+      gnu.org/gcc: 13
+  working-directory: build
+  script:
+    - cmake .. $ARGS
+    - make --jobs {{ hw.concurrency }} install
+    # currently, their builds are just broken :(
+    - run: |
+        if test -d include/utf8cpp; then
+          mv include/utf8cpp/* include/
+          rmdir include/utf8cpp
+        fi
+        ln -s . include/utf8cpp
+        mkdir -p lib/cmake
+        ln -s ../../share/utf8cpp/cmake lib/cmake/utf8cpp
+      working-directory: ${{prefix}}
+      if: '>=4'
+  env:
+    ARGS:
+      - -DUTF8_INSTALL:BOOL=ON
+      - -DUTF8_SAMPLES:BOOL=OFF
+      - -DUTF8_TESTS:BOOL=OFF
+      - -DCMAKE_INSTALL_PREFIX={{prefix}}
+      - -DCMAKE_INSTALL_LIBDIR=lib
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DCMAKE_FIND_FRAMEWORK=LAST
+      - -DCMAKE_VERBOSE_MAKEFILE=ON
+      - -Wno-dev
+      - -DBUILD_TESTING=OFF
+
+test:
+  dependencies:
+    cmake.org: '*'
+    gnu.org/sed: '*'
+    linux:
+      gnu.org/gcc: 13
+      gnu.org/make: '*'
+  script:
+    # currently, their builds are just broken :(
+    - run: sed -i 's/PRIVATE utf8cpp/PRIVATE utf8cpp::utf8cpp/g' CMakeLists.txt
+      if: '>=4'
+    - cmake . -DCMAKE_PREFIX_PATH:STRING="test" -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
+    - make
+    - ./utf8_append

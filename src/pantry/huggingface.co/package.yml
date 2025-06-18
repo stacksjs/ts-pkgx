@@ -1,0 +1,25 @@
+distributable:
+  url: https://github.com/huggingface/huggingface_hub/archive/refs/tags/v{{version}}.tar.gz
+  strip-components: 1
+
+display-name: huggingface/cli
+
+versions:
+  github: huggingface/huggingface_hub
+
+dependencies:
+  pkgx.sh: ^1
+
+build:
+  dependencies:
+    python.org: ~3.11
+  script:
+    - bkpyvenv stage {{prefix}} {{version}}
+    - ${{prefix}}/venv/bin/pip install .
+    - bkpyvenv seal {{prefix}} huggingface-cli
+
+provides:
+  - bin/huggingface-cli
+
+test:
+  huggingface-cli --help

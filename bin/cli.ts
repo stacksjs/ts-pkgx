@@ -11,12 +11,245 @@ import {
   DEFAULT_TIMEOUT_MS,
   fetchAndSaveAllPackages,
   fetchAndSavePackage,
+  fetchPantryPackageWithMetadata,
   generateAliases,
   generateDocs,
   generateIndex,
   savePackageAsTypeScript,
+  saveToCacheAndOutput,
 } from '../src/index'
 import { aliases as PACKAGE_ALIASES } from '../src/packages/aliases'
+
+// Helper functions for consts generation
+
+/**
+ * Scan pantry directory for packages (for consts generation)
+ */
+async function scanPantryPackagesForConsts(pantryDir = 'src/pantry'): Promise<string[]> {
+  if (!fs.existsSync(pantryDir)) {
+    throw new Error(`Pantry directory not found: ${pantryDir}. Please run 'bun ./bin/cli.ts update-pantry' first.`)
+  }
+
+  const packages: string[] = []
+
+  function scanDirectory(dir: string, basePath = ''): void {
+    const entries = fs.readdirSync(dir, { withFileTypes: true })
+
+    // First, check if the current directory has a package.yml file
+    const packageYmlPath = path.join(dir, 'package.yml')
+    if (basePath && fs.existsSync(packageYmlPath)) {
+      packages.push(basePath)
+    }
+
+    // Then recursively scan subdirectories
+    for (const entry of entries) {
+      if (entry.isDirectory() && !entry.name.startsWith('.')) {
+        const currentPath = basePath ? `${basePath}/${entry.name}` : entry.name
+        const subDir = path.join(dir, entry.name)
+        scanDirectory(subDir, currentPath)
+      }
+    }
+  }
+
+  scanDirectory(pantryDir)
+  console.log(`📦 Found ${packages.length} packages in local pantry`)
+  return packages.sort()
+}
+
+/**
+ * Scrape packages from S3 registry (for consts generation)
+ */
+async function scrapeRegistryPackages(_validate = false): Promise<string[]> {
+  interface S3ListResult {
+    IsTruncated: boolean
+    NextContinuationToken?: string
+    Contents: Array<{
+      Key: string
+    }>
+  }
+
+  async function fetchS3Listing(continuationToken?: string): Promise<S3ListResult> {
+    const url = new URL('https://s3.amazonaws.com/dist.tea.xyz/')
+    url.searchParams.set('list-type', '2')
+    url.searchParams.set('prefix', '')
+    url.searchParams.set('max-keys', '1000')
+
+    if (continuationToken) {
+      url.searchParams.set('continuation-token', continuationToken)
+    }
+
+    const response = await fetch(url.toString())
+    if (!response.ok) {
+      throw new Error(`Failed to fetch S3 listing: ${response.status}`)
+    }
+
+    const xml = await response.text()
+    const contents: Array<{ Key: string }> = []
+    const keyMatches = xml.match(/<Key>([^<]+)<\/Key>/g)
+
+    if (keyMatches) {
+      for (const match of keyMatches) {
+        const key = match.replace(/<Key>([^<]+)<\/Key>/, '$1')
+        contents.push({ Key: key })
+      }
+    }
+
+    const isTruncated = xml.includes('<IsTruncated>true</IsTruncated>')
+    const nextTokenMatch = xml.match(/<NextContinuationToken>([^<]+)<\/NextContinuationToken>/)
+    const nextToken = nextTokenMatch ? nextTokenMatch[1] : undefined
+
+    return {
+      IsTruncated: isTruncated,
+      NextContinuationToken: nextToken,
+      Contents: contents,
+    }
+  }
+
+  console.log('Scraping packages from S3 registry...')
+  const packages = new Set<string>()
+  let continuationToken: string | undefined
+
+  do {
+    const listing = await fetchS3Listing(continuationToken)
+
+    for (const item of listing.Contents) {
+      const key = item.Key
+      const parts = key.split('/')
+      if (parts.length === 0)
+        continue
+
+      // Skip obvious non-package files
+      if (parts[0].startsWith('.') || parts[0].includes(' ') || key.match(/\.(md|txt|yml|yaml|json)$/i)) {
+        continue
+      }
+
+      const platformDirs = ['darwin', 'linux', 'windows']
+      let platformIndex = -1
+      for (let i = 1; i < parts.length; i++) {
+        if (platformDirs.includes(parts[i])) {
+          platformIndex = i
+          break
+        }
+      }
+
+      if (platformIndex > 0) {
+        const packagePath = parts.slice(0, platformIndex).join('/')
+        if (packagePath.includes('.')) {
+          packages.add(packagePath)
+        }
+      }
+      else if (parts.length >= 2 && parts[0].includes('.') && !parts[1].startsWith('v') && !parts[1].match(/^\d/)) {
+        const packagePath = `${parts[0]}/${parts[1]}`
+        packages.add(packagePath)
+      }
+      else if (parts.length >= 1 && parts[0].includes('.')) {
+        packages.add(parts[0])
+      }
+    }
+
+    continuationToken = listing.NextContinuationToken
+    console.log(`Found ${packages.size} packages so far...`)
+  } while (continuationToken)
+
+  // Filter packages
+  const packageArray = Array.from(packages).sort()
+  const validPackages: string[] = []
+
+  // Filter out problematic patterns
+  for (const pkg of packageArray) {
+    // Basic filtering
+    if (!pkg.includes('.') || pkg.match(/^[a-z0-9.-]+\.[a-z]{2,}(\/[\w.-]+)*$/i) === null) {
+      continue
+    }
+
+    // Filter out README and documentation files
+    if (pkg.endsWith('/README.rst') || pkg.endsWith('/README') || pkg.includes('/docs/')) {
+      continue
+    }
+
+    // Filter out .pkgroot entries - these are just markers, not actual packages
+    if (pkg.endsWith('/.pkgroot')) {
+      continue
+    }
+
+    // Filter out known invalid packages
+    const knownInvalidPackages = [
+      'amazon.com/aws',
+      'charm.sh',
+      'code.videolan.org',
+      'crates.io',
+    ]
+    if (knownInvalidPackages.includes(pkg)) {
+      continue
+    }
+
+    validPackages.push(pkg)
+  }
+
+  console.log(`📦 Found ${validPackages.length} valid packages in registry`)
+  return validPackages
+}
+
+/**
+ * Update the consts.ts file with the given packages
+ */
+async function updateConstsFile(packages: string[], source: string): Promise<void> {
+  const constsPath = 'src/consts.ts'
+
+  const constantsContent = `/**
+ * Constants used throughout the ts-pkgx package
+ * This file is auto-generated from ${source}. Do not edit manually.
+ * Generated on ${new Date().toISOString()}
+ */
+
+/**
+ * Default cache directory for storing package data
+ */
+export const DEFAULT_CACHE_DIR = '.cache/packages'
+
+/**
+ * Default cache expiration time in minutes (24 hours)
+ */
+export const DEFAULT_CACHE_EXPIRATION_MINUTES = 1440
+
+/**
+ * Default timeout for network requests in milliseconds (20 seconds)
+ */
+export const DEFAULT_TIMEOUT_MS = 20000
+
+/**
+ * Package aliases mapping friendly names to domain names
+ */
+export const PACKAGE_ALIASES: Record<string, string> = {
+  node: 'nodejs.org',
+  python: 'python.org',
+  go: 'go.dev',
+  rust: 'rust-lang.org',
+  ruby: 'ruby-lang.org',
+  php: 'php.net',
+  perl: 'perl.org',
+  deno: 'deno.land',
+  bun: 'bun.sh',
+  git: 'git-scm.com',
+  docker: 'docker.com',
+  kubectl: 'kubernetes.io',
+  terraform: 'terraform.io',
+  ansible: 'ansible.com',
+  nvim: 'neovim.io',
+  vim: 'vim.org',
+  curl: 'curl.se',
+} as const
+
+/**
+ * List of all known packages (${packages.length} total)
+ */
+export const ALL_KNOWN_PACKAGES: readonly string[] = [
+${packages.map(pkg => `  '${pkg}',`).join('\n')}
+] as const
+`
+
+  fs.writeFileSync(constsPath, constantsContent, 'utf-8')
+}
 
 // Define interface for CLI options
 interface FetchOptions {
@@ -134,7 +367,6 @@ cli
       cacheExpiration = DEFAULT_CACHE_EXPIRATION_MINUTES,
       limit,
       timeout = DEFAULT_TIMEOUT_MS,
-      maxRetries = 3,
       json: saveAsJson = false,
       debug = false,
       verbose = false,
@@ -190,62 +422,136 @@ cli
           console.log(`Fetching ${packageNames.length} packages: ${packageNames.join(', ')}`)
         }
 
-        // Process each package sequentially
+        // Process each package sequentially using the new pantry-based approach
         for (const name of packageNames) {
-          const result = await fetchAndSavePackage(
-            name,
-            outputDir,
-            Number.parseInt(String(timeout), 10),
-            saveAsJson,
-            1, // retryNumber
-            Number.parseInt(String(maxRetries), 10),
-            debug,
-            {
-              cacheDir,
-              cache,
-              cacheExpirationMinutes: cacheExpiration,
-              outputJson,
-            },
-          )
+          try {
+            // Check cache first
+            const cacheFile = path.join(cacheDir, `${name.replace(/\//g, '-')}.json`)
+            let usedCache = false
 
-          if (result && result.success) {
-            savedPackages.push(name)
-            // Note: We can't easily determine if it was from cache or fetched
-            // in the current implementation, so we'll assume it was fetched
-            actuallyFetched.push(name)
-            if (verbose && result.filePath && !outputJson) {
-              console.log(`Successfully saved ${name} to ${result.filePath}`)
+            if (cache && fs.existsSync(cacheFile)) {
+              const stats = fs.statSync(cacheFile)
+              const ageMinutes = (Date.now() - stats.mtime.getTime()) / (1000 * 60)
+
+              if (ageMinutes < cacheExpiration) {
+                if (!outputJson) {
+                  console.log(`Using cached data for ${name} (age: ${Math.round(ageMinutes)} minutes)`)
+                }
+                try {
+                  const cachedData = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'))
+                  // Remove fetchedAt before generating TypeScript
+                  delete cachedData.fetchedAt
+                  const tsFilePath = savePackageAsTypeScript(outputDir, name, cachedData)
+                  if (verbose && !outputJson) {
+                    console.log(`Using cached data for ${name} (saved to ${tsFilePath})`)
+                  }
+                  savedPackages.push(name)
+                  usedCache = true
+                  continue
+                }
+                catch {
+                  console.warn(`Cache file corrupted for ${name}, will refetch`)
+                }
+              }
             }
+
+            if (!usedCache) {
+              // Use the new pantry-based fetch approach
+              const result = await fetchPantryPackageWithMetadata(name, {
+                timeout: Number.parseInt(String(timeout), 10),
+                debug,
+                outputJson,
+                cacheDir,
+                cache,
+                cacheExpirationMinutes: cacheExpiration,
+              })
+
+              if (result) {
+                // Save to cache and output
+                const { outputPath } = saveToCacheAndOutput(name, result.packageInfo, {
+                  cacheDir,
+                  outputDir,
+                  cache,
+                })
+
+                savedPackages.push(name)
+                actuallyFetched.push(name)
+                if (verbose && !outputJson) {
+                  console.log(`Successfully saved ${name} to ${outputPath}`)
+                }
+              }
+            }
+          }
+          catch (error) {
+            console.error(`Error processing ${name}:`, error)
           }
         }
       }
       else if (packageName) {
-        // Fetch a single package
+        // Fetch a single package using the new pantry-based approach
         if (!outputJson) {
           console.log(`Fetching package: ${packageName}`)
         }
-        const result = await fetchAndSavePackage(
-          packageName,
-          outputDir,
-          Number.parseInt(String(timeout), 10),
-          saveAsJson,
-          1, // retryNumber
-          Number.parseInt(String(maxRetries), 10),
-          debug,
-          {
-            cacheDir,
-            cache,
-            cacheExpirationMinutes: cacheExpiration,
-            outputJson,
-          },
-        )
 
-        if (result && result.success) {
-          savedPackages.push(packageName)
-          actuallyFetched.push(packageName)
-          if (verbose && result.filePath && !outputJson) {
-            console.log(`Successfully saved ${packageName} to ${result.filePath}`)
+        try {
+          // Check cache first
+          const cacheFile = path.join(cacheDirPath, `${packageName.replace(/\//g, '-')}.json`)
+          let usedCache = false
+
+          if (cache && fs.existsSync(cacheFile)) {
+            const stats = fs.statSync(cacheFile)
+            const ageMinutes = (Date.now() - stats.mtime.getTime()) / (1000 * 60)
+
+            if (ageMinutes < cacheExpiration) {
+              if (!outputJson) {
+                console.log(`Using cached data for ${packageName} (age: ${Math.round(ageMinutes)} minutes)`)
+              }
+              try {
+                const cachedData = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'))
+                // Remove fetchedAt before generating TypeScript
+                delete cachedData.fetchedAt
+                const tsFilePath = savePackageAsTypeScript(outputDirPath, packageName, cachedData)
+                if (verbose && !outputJson) {
+                  console.log(`Using cached data for ${packageName} (saved to ${tsFilePath})`)
+                }
+                savedPackages.push(packageName)
+                usedCache = true
+              }
+              catch {
+                console.warn(`Cache file corrupted for ${packageName}, will refetch`)
+              }
+            }
           }
+
+          if (!usedCache) {
+            // Use the new pantry-based fetch approach
+            const result = await fetchPantryPackageWithMetadata(packageName, {
+              timeout: Number.parseInt(String(timeout), 10),
+              debug,
+              outputJson,
+              cacheDir,
+              cache,
+              cacheExpirationMinutes: cacheExpiration,
+            })
+
+            if (result) {
+              // Save to cache and output
+              const { outputPath } = saveToCacheAndOutput(packageName, result.packageInfo, {
+                cacheDir,
+                outputDir,
+                cache,
+              })
+
+              savedPackages.push(packageName)
+              actuallyFetched.push(packageName)
+              if (verbose && !outputJson) {
+                console.log(`Successfully saved ${packageName} to ${outputPath}`)
+              }
+            }
+          }
+        }
+        catch (error) {
+          console.error(`Error processing ${packageName}:`, error)
         }
       }
       else {
@@ -436,6 +742,158 @@ cli
     }
     catch (error) {
       console.error('Error generating documentation:', error)
+      process.exit(1)
+    }
+  })
+
+// Add a new command to download and extract pantry
+cli
+  .command('update-pantry', 'Download and extract the latest pantry.tgz file')
+  .option('-d, --pantry-dir <dir>', 'Directory to extract pantry files', { default: 'src/pantry' })
+  .action(async (options) => {
+    try {
+      const { pantryDir = 'src/pantry' } = options
+      const pantryDirPath = path.resolve(process.cwd(), pantryDir)
+
+      console.log('Downloading pantry.tgz...')
+
+      // Download pantry.tgz
+      const response = await fetch('https://s3.amazonaws.com/dist.tea.xyz/pantry.tgz')
+      if (!response.ok) {
+        throw new Error(`Failed to download pantry.tgz: ${response.statusText}`)
+      }
+
+      const buffer = await response.arrayBuffer()
+      const tempPath = path.join(process.cwd(), 'pantry.tgz')
+
+      // Write to temporary file
+      fs.writeFileSync(tempPath, new Uint8Array(buffer))
+      console.log(`Downloaded ${buffer.byteLength} bytes`)
+
+      // Remove existing pantry directory if it exists
+      if (fs.existsSync(pantryDirPath)) {
+        fs.rmSync(pantryDirPath, { recursive: true, force: true })
+        console.log(`Removed existing ${pantryDirPath}`)
+      }
+
+      // Create pantry directory
+      fs.mkdirSync(pantryDirPath, { recursive: true })
+
+      // Extract pantry.tgz using tar command (first to temp directory)
+      const tempExtractDir = path.join(process.cwd(), 'temp-pantry')
+      const { spawn } = await import('node:child_process')
+
+      // Create temp directory for extraction
+      if (fs.existsSync(tempExtractDir)) {
+        fs.rmSync(tempExtractDir, { recursive: true, force: true })
+      }
+      fs.mkdirSync(tempExtractDir, { recursive: true })
+
+      const tar = spawn('tar', ['-xzf', tempPath, '-C', tempExtractDir, '--strip-components=1'], {
+        stdio: 'inherit',
+      })
+
+      await new Promise((resolve, reject) => {
+        tar.on('close', (code) => {
+          if (code === 0) {
+            resolve(code)
+          }
+          else {
+            reject(new Error(`tar extraction failed with code ${code}`))
+          }
+        })
+        tar.on('error', reject)
+      })
+
+      // Move the contents of the projects folder to the pantry directory
+      const tempProjectsDir = path.join(tempExtractDir, 'projects')
+      if (fs.existsSync(tempProjectsDir)) {
+        const projects = fs.readdirSync(tempProjectsDir)
+        console.log(`Moving ${projects.length} projects from temp directory...`)
+
+        for (const project of projects) {
+          const sourcePath = path.join(tempProjectsDir, project)
+          const destPath = path.join(pantryDirPath, project)
+
+          // Remove destination if it exists
+          if (fs.existsSync(destPath)) {
+            fs.rmSync(destPath, { recursive: true, force: true })
+          }
+
+          // Move the project directory
+          fs.renameSync(sourcePath, destPath)
+        }
+
+        console.log(`Successfully moved ${projects.length} projects to ${pantryDirPath}`)
+      }
+      else {
+        console.log('Warning: No projects directory found in extracted pantry')
+      }
+
+      // Clean up temporary directories and files
+      fs.unlinkSync(tempPath)
+      if (fs.existsSync(tempExtractDir)) {
+        fs.rmSync(tempExtractDir, { recursive: true, force: true })
+      }
+      console.log('Cleaned up temporary files')
+
+      // Count final projects
+      if (fs.existsSync(pantryDirPath)) {
+        const projects = fs.readdirSync(pantryDirPath).filter((item) => {
+          const itemPath = path.join(pantryDirPath, item)
+          return fs.statSync(itemPath).isDirectory() && !item.startsWith('.')
+        })
+        console.log(`Final result: ${projects.length} projects in ${pantryDirPath}`)
+      }
+
+      process.exit(0)
+    }
+    catch (error) {
+      console.error('Error updating pantry:', error)
+      process.exit(1)
+    }
+  })
+
+// Generate consts file command
+cli
+  .command('generate-consts', 'Generate or update the consts.ts file with all known packages')
+  .option('-s, --source <source>', 'Source for packages: "pantry" (default) or "registry"', { default: 'pantry' })
+  .option('--pantry-dir <dir>', 'Directory containing pantry files', { default: 'src/pantry' })
+  .option('--validate', 'Validate a sample of packages (slower but more accurate)')
+  .action(async (options) => {
+    try {
+      const { source = 'pantry', pantryDir = 'src/pantry', validate = false } = options
+
+      console.log(`🚀 Generating consts.ts file using ${source} as source...`)
+
+      let packages: string[] = []
+
+      if (source === 'pantry') {
+        packages = await scanPantryPackagesForConsts(pantryDir)
+      }
+      else if (source === 'registry') {
+        packages = await scrapeRegistryPackages(validate)
+      }
+      else {
+        console.error('Invalid source. Use "pantry" or "registry"')
+        process.exit(1)
+      }
+
+      await updateConstsFile(packages, source)
+
+      console.log('✅ Successfully updated consts.ts')
+      console.log(`📊 Total packages: ${packages.length}`)
+
+      // Write a summary file for reference
+      const timestamp = new Date().toISOString()
+      const summaryContent = `Generated from ${source} at ${timestamp}\nTotal packages: ${packages.length}\n\n${packages.join('\n')}`
+      fs.writeFileSync(`${source}-packages-summary.txt`, summaryContent)
+      console.log(`📄 Created ${source}-packages-summary.txt for reference`)
+
+      process.exit(0)
+    }
+    catch (error) {
+      console.error('Error generating consts file:', error)
       process.exit(1)
     }
   })

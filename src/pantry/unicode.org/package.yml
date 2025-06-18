@@ -1,0 +1,57 @@
+distributable:
+  url: https://github.com/unicode-org/icu/releases/download/release-{{version.major}}-{{version.minor}}/icu4c-{{version.major}}_{{version.minor}}-src.tgz
+  strip-components: 1
+
+versions:
+  github: unicode-org/icu/releases
+  strip: /^ICU /
+
+build:
+  working-directory: source
+  dependencies:
+    curl.se: '*'
+  script:
+    # v74.1 replaced LICENSE with a broken symlink
+    - run: |
+        rm ../LICENSE
+        curl -L https://raw.githubusercontent.com/unicode-org/icu/main/LICENSE -o ../LICENSE
+      if: '>=74.1'
+    - ./configure $ARGS
+    - make --jobs {{ hw.concurrency }}
+    - make install
+  env:
+    ARGS:
+      - --prefix={{prefix}}
+      - --disable-samples
+      - --disable-tests
+      - --enable-static
+      - --with-library-bits=64
+    darwin:
+      LDFLAGS:
+        # changing install names or rpaths can't be redone for
+        - -headerpad_max_install_names
+
+test:
+  script: |
+    if test -f /usr/share/dict/words; then
+      gendict --uchars /usr/share/dict/words dict
+    else
+      gendict --uchars $FIXTURE dict
+    fi
+  fixture: |
+    hello
+    world
+
+provides:
+  - bin/derb
+  - bin/genbrk
+  - bin/gencfu
+  - bin/gencnval
+  - bin/gendict
+  - bin/genrb
+  - bin/icu-config
+  - bin/icuexportdata
+  - bin/icuinfo
+  - bin/makeconv
+  - bin/pkgdata
+  - bin/uconv

@@ -3,19 +3,30 @@
  */
 
 import type { PackageAlias, PackageDomain, PackageInfo, PackageName, VersionSpec } from './package-types'
-import type { Packages } from './packages'
-import { packages } from './packages'
 import { aliases } from './packages/aliases'
+
+// Create a dynamic packages loader function instead of importing the static packages object
+async function loadPackages(): Promise<Record<string, any>> {
+  try {
+    const { pantry } = await import('./packages')
+    return pantry as Record<string, any>
+  }
+  catch {
+    // Return empty object if packages aren't generated yet
+    return {}
+  }
+}
 
 /**
  * Get the latest version of a package (versions[0] is always the latest)
  */
-export function getLatestVersion(packageName: PackageName): string | null {
+export async function getLatestVersion(packageName: PackageName): Promise<string | null> {
   const domain = resolvePackageDomain(packageName)
   if (!domain)
     return null
 
-  const pkg = packages[domain as keyof Packages]
+  const packages = await loadPackages()
+  const pkg = packages[domain]
   if (!pkg || !pkg.versions || pkg.versions.length === 0)
     return null
 
@@ -25,12 +36,13 @@ export function getLatestVersion(packageName: PackageName): string | null {
 /**
  * Get all available versions for a package
  */
-export function getAvailableVersions(packageName: PackageName): string[] {
+export async function getAvailableVersions(packageName: PackageName): Promise<string[]> {
   const domain = resolvePackageDomain(packageName)
   if (!domain)
     return []
 
-  const pkg = packages[domain as keyof Packages]
+  const packages = await loadPackages()
+  const pkg = packages[domain]
   if (!pkg || !pkg.versions)
     return []
 
@@ -40,20 +52,20 @@ export function getAvailableVersions(packageName: PackageName): string[] {
 /**
  * Check if a specific version is available for a package
  */
-export function isVersionAvailable(packageName: PackageName, version: string): boolean {
-  const versions = getAvailableVersions(packageName)
+export async function isVersionAvailable(packageName: PackageName, version: string): Promise<boolean> {
+  const versions = await getAvailableVersions(packageName)
   return versions.includes(version)
 }
 
 /**
  * Resolve a version specification to an actual version
  */
-export function resolveVersion(packageName: PackageName, versionSpec: VersionSpec = 'latest'): string | null {
+export async function resolveVersion(packageName: PackageName, versionSpec: VersionSpec = 'latest'): Promise<string | null> {
   if (versionSpec === 'latest') {
-    return getLatestVersion(packageName)
+    return await getLatestVersion(packageName)
   }
 
-  const versions = getAvailableVersions(packageName)
+  const versions = await getAvailableVersions(packageName)
   if (versions.length === 0)
     return null
 
@@ -87,27 +99,28 @@ export function resolveVersion(packageName: PackageName, versionSpec: VersionSpe
   }
 
   // For other patterns, return the latest version as fallback
-  return getLatestVersion(packageName)
+  return await getLatestVersion(packageName)
 }
 
 /**
  * Get comprehensive package information
  */
-export function getPackageInfo(packageName: PackageName): PackageInfo | null {
+export async function getPackageInfo(packageName: PackageName): Promise<PackageInfo | null> {
   const domain = resolvePackageDomain(packageName)
   if (!domain)
     return null
 
-  const pkg = packages[domain as keyof Packages]
+  const packages = await loadPackages()
+  const pkg = packages[domain]
   if (!pkg)
     return null
 
-  const latestVersion = getLatestVersion(packageName)
+  const latestVersion = await getLatestVersion(packageName)
   if (!latestVersion)
     return null
 
   return {
-    name: packageName,
+    name: String(packageName),
     domain,
     description: pkg.description || '',
     latestVersion,
@@ -123,40 +136,41 @@ export function getPackageInfo(packageName: PackageName): PackageInfo | null {
  * Resolve package name to domain (handles aliases)
  */
 export function resolvePackageDomain(packageName: PackageName): string | null {
+  // Convert packageName to string to handle type compatibility
+  const nameStr = String(packageName)
+
   // Check if it's an alias first
-  if (packageName in aliases) {
-    return aliases[packageName as PackageAlias]
+  if (nameStr in aliases) {
+    return aliases[nameStr as PackageAlias]
   }
 
-  // Check if it's a direct domain
-  if (packageName in packages) {
-    return packageName
-  }
-
-  return null
+  // For now, assume packageName is a domain if it's not an alias
+  // This will need to be updated once packages are generated
+  return nameStr
 }
 
 /**
  * Get all packages that match a search term
  */
-export function searchPackages(searchTerm: string): PackageInfo[] {
+export async function searchPackages(searchTerm: string): Promise<PackageInfo[]> {
   const results: PackageInfo[] = []
   const lowerSearchTerm = searchTerm.toLowerCase()
 
   // Search through aliases
   for (const [alias, _domain] of Object.entries(aliases)) {
     if (alias.toLowerCase().includes(lowerSearchTerm)) {
-      const info = getPackageInfo(alias as PackageAlias)
+      const info = await getPackageInfo(alias as PackageAlias)
       if (info)
         results.push(info)
     }
   }
 
   // Search through package domains and descriptions
+  const packages = await loadPackages()
   for (const [domain, pkg] of Object.entries(packages)) {
     if (domain.toLowerCase().includes(lowerSearchTerm)
       || pkg.description?.toLowerCase().includes(lowerSearchTerm)) {
-      const info = getPackageInfo(domain as PackageDomain)
+      const info = await getPackageInfo(domain as PackageDomain)
       if (info && !results.some(r => r.domain === domain)) {
         results.push(info)
       }
@@ -169,12 +183,13 @@ export function searchPackages(searchTerm: string): PackageInfo[] {
 /**
  * Get packages by category based on domain patterns
  */
-export function getPackagesByPattern(pattern: RegExp): PackageInfo[] {
+export async function getPackagesByPattern(pattern: RegExp): Promise<PackageInfo[]> {
   const results: PackageInfo[] = []
+  const packages = await loadPackages()
 
   for (const domain of Object.keys(packages)) {
     if (pattern.test(domain)) {
-      const info = getPackageInfo(domain as PackageDomain)
+      const info = await getPackageInfo(domain as PackageDomain)
       if (info)
         results.push(info)
     }
@@ -186,11 +201,12 @@ export function getPackagesByPattern(pattern: RegExp): PackageInfo[] {
 /**
  * Get popular packages (those with many versions, indicating active development)
  */
-export function getPopularPackages(minVersions: number = 10): PackageInfo[] {
+export async function getPopularPackages(minVersions: number = 10): Promise<PackageInfo[]> {
   const results: PackageInfo[] = []
+  const packages = await loadPackages()
 
   for (const domain of Object.keys(packages)) {
-    const info = getPackageInfo(domain as PackageDomain)
+    const info = await getPackageInfo(domain as PackageDomain)
     if (info && info.totalVersions >= minVersions) {
       results.push(info)
     }
@@ -203,19 +219,20 @@ export function getPopularPackages(minVersions: number = 10): PackageInfo[] {
 /**
  * Get recently updated packages (those with many versions, assuming frequent updates)
  */
-export function getActivePackages(limit: number = 50): PackageInfo[] {
-  return getPopularPackages(5).slice(0, limit)
+export async function getActivePackages(limit: number = 50): Promise<PackageInfo[]> {
+  const popularPackages = await getPopularPackages(5)
+  return popularPackages.slice(0, limit)
 }
 
 /**
  * Validate a package specification
  */
-export function validatePackageSpec(packageSpec: string): {
+export async function validatePackageSpec(packageSpec: string): Promise<{
   isValid: boolean
   packageName?: PackageName
   version?: string
   error?: string
-} {
+}> {
   try {
     const atIndex = packageSpec.lastIndexOf('@')
 
@@ -256,7 +273,8 @@ export function validatePackageSpec(packageSpec: string): {
       }
     }
 
-    if (!isVersionAvailable(packageName as PackageName, version)) {
+    const versionAvailable = await isVersionAvailable(packageName as PackageName, version)
+    if (!versionAvailable) {
       return {
         isValid: false,
         packageName: packageName as PackageName,

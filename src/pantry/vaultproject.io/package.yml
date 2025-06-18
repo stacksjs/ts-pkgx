@@ -1,0 +1,31 @@
+distributable:
+  url: git+https://github.com/hashicorp/vault
+  ref: v{{version}}
+
+versions:
+  github: hashicorp/vault
+
+build:
+  dependencies:
+    go.dev: =1.24.3
+    nodejs.org: ^18
+    # python 3.11 removes 'rU' mode which breaks node-gyp
+    python.org: ~3.10
+    npmjs.com: '*'
+    classic.yarnpkg.com: '*'
+    git-scm.org: '*'
+    # TODO: gox
+  script:
+    - go mod tidy
+    # required tooling; no releases to package
+    - run: |
+        go install github.com/loggerhead/enumer@latest
+        export PATH=$HOME/go/bin:$PATH
+      if: '>=1.16.2'
+    - make bootstrap static-dist dev-ui
+    - install -D bin/vault {{prefix}}/bin/vault
+
+provides:
+  - bin/vault
+
+test: vault --version

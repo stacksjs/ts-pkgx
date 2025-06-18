@@ -115,6 +115,12 @@ export interface PackageFetchOptions {
    * @default false
    */
   outputJson?: boolean
+
+  /**
+   * Directory containing the local pantry files
+   * @default 'src/pantry'
+   */
+  pantryDir?: string
 }
 
 export interface FetchPkgxPackageOptions {
