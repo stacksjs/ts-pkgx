@@ -5,8 +5,6 @@
  * This replaces the static ALL_KNOWN_PACKAGES list with a dynamic scraper
  */
 
-import { chromium } from 'playwright'
-
 interface S3ListResult {
   IsTruncated: boolean
   NextContinuationToken?: string

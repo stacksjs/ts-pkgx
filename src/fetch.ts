@@ -450,10 +450,12 @@ export type ${safeVarName.charAt(0).toUpperCase() + safeVarName.slice(1)} = type
 /**
  * Saves package data as a TypeScript file
  */
-function sanitizeFilename(packageName: string): string { let sanitized = packageName.replace(/\{\{[^}]*\}\}/g, "").replace(/-{2,}/g, "-").replace(/^-+|-+$/g, "");
-   if (!sanitized || sanitized.length === 0) { return "package";
-   } return sanitized.replace(/[^\w.-]/g, "-");
-   }
+function sanitizeFilename(packageName: string): string {
+  const sanitized = packageName.replace(/\{\{[^}]*\}\}/g, '').replace(/-{2,}/g, '-').replace(/^-+|-+$/g, '')
+  if (!sanitized || sanitized.length === 0)
+    return 'package'
+  return sanitized.replace(/[^\w.-]/g, '-')
+}
 
 export function savePackageAsTypeScript(outputDir: string, domainName: string, packageInfo: PkgxPackage): string {
   // Ensure output directory exists
