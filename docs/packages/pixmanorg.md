@@ -1,6 +1,6 @@
 # pixman.org
 
-> Package information available on pkgx.dev
+> A package from pixman.org
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx pixman.org
+sh <(curl https://pkgx.sh) +pixman.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx pixman.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.40.0`
+
+</details>
+
+**Latest Version**: `0.40.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +pixman.org@0.40.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

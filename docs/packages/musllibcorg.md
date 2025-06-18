@@ -1,6 +1,6 @@
 # musl.libc.org
 
-> Package information available on pkgx.dev
+> A package from musl.libc.org
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with pkgx
-pkgx musl.libc.org
+sh <(curl https://pkgx.sh) +musl.libc.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ld.musl-clang`
+- `musl-clang`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.2.3`
+
+</details>
+
+**Latest Version**: `1.2.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +musl.libc.org@1.2.3 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `llvm.org`
 
 ## Usage Examples
 

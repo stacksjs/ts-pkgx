@@ -55,7 +55,7 @@ This package depends on:
 
 These packages work well with fastlane:
 
-- [`cocoapods.org/xcodeproj`](cocoapodsorgxcodeproj.md) - Go home.
+- `cocoapods.org/xcodeproj`
 
 ## Usage Examples
 

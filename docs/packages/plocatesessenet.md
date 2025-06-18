@@ -1,6 +1,6 @@
 # plocate.sesse.net
 
-> Package information available on pkgx.dev
+> A package from plocate.sesse.net
 
 ## Package Information
 
@@ -13,14 +13,41 @@
 
 ```bash
 # Install with pkgx
-pkgx plocate.sesse.net
+sh <(curl https://pkgx.sh) +plocate.sesse.net -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `plocate`
+- `plocate-build`
+- `updatedb`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.1.23`, `1.1.22`
+
+</details>
+
+**Latest Version**: `1.1.23`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +plocate.sesse.net@1.1.23 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `facebook.com/zstd@1`
+- `gnu.org/gcc/libstdcxx@14`
 
 ## Usage Examples
 

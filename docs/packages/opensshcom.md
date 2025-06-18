@@ -1,6 +1,6 @@
 # openssh.com
 
-> Package information available on pkgx.dev
+> A package from openssh.com
 
 ## Package Information
 
@@ -13,14 +13,55 @@
 
 ```bash
 # Install with pkgx
-pkgx openssh.com
+sh <(curl https://pkgx.sh) +openssh.com -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `scp`
+- `sftp`
+- `slogin`
+- `ssh`
+- `ssh-add`
+- `ssh-agent`
+- `ssh-keygen`
+- `ssh-keyscan`
+- `sshd`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `10.0.0`, `9.9.0`, `9.8.0`, `9.7.0`, `9.6.0`
+- `9.5.0`
+
+</details>
+
+**Latest Version**: `10.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +openssh.com@10.0.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `nlnetlabs.nl/ldns`
+- `developers.yubico.com/libfido2`
+- `openssl.org`
+- `kerberos.org`
+- `thrysoee.dk/editline`
+- `github.com/besser82/libxcrypt`
+- `zlib.net`
+- `linuxlinux-pam.org`
+- `linux-pam.org`
 
 ## Usage Examples
 

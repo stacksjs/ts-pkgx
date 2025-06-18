@@ -64,8 +64,8 @@ This package depends on:
 
 These packages work well with open-mpi.org:
 
-- `gnu.org/gcc`
-- `gnu.org/inetutils`
+- [`gnu.org/gcc`](gnuorggcc.md) - A package from gnu.org/gcc
+- [`gnu.org/inetutils`](gnuorginetutils.md) - A package from gnu.org/inetutils
 
 ## Usage Examples
 

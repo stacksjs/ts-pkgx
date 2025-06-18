@@ -57,9 +57,9 @@ This package depends on:
 
 These packages work well with projen:
 
-- [`git-scm.org`](gitscmorg.md) - Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
+- `git-scm.org`
 - [`classic.yarnpkg.com`](classicyarnpkgcom.md) - The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
-- [`maven.apache.org`](mavenapacheorg.md) - Java-based project management
+- `maven.apache.org`
 - [`python.org`](pythonorg.md) - The Python programming language
 - [`go.dev`](godev.md) - The Go programming language
 

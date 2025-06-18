@@ -1,10 +1,10 @@
 # telnet
 
->
+> A package from apple.com/remote_cmds
 
 ## Package Information
 
-- **Domain**: `telnet`
+- **Domain**: `tel.net`
 - **Name**: `telnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apple.com/remote_cmds/package.yml)
@@ -26,7 +26,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `telnet`
 - `remote_cmds`
 
 ## Available Versions
@@ -44,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx telnet@306.0.0
+sh <(curl https://pkgx.sh) +tel.net@306.0.0 -- $SHELL -i
 ```
 
 ## Usage Examples

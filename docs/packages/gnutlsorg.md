@@ -1,6 +1,6 @@
 # gnutls.org
 
-> Package information available on pkgx.dev
+> A package from gnutls.org
 
 ## Package Information
 
@@ -13,14 +13,54 @@
 
 ```bash
 # Install with pkgx
-pkgx gnutls.org
+sh <(curl https://pkgx.sh) +gnutls.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `certtool`
+- `danetool`
+- `gnutls-cli`
+- `gnutls-cli-debug`
+- `gnutls-serv`
+- `ocsptool`
+- `p11tool`
+- `psktool`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `3.8.9`, `3.8.7`, `3.8.6`, `3.8.5`, `3.8.4`
+- `3.8.3`, `3.8.2`, `3.8.1`, `3.7.10`, `3.6.16`
+
+</details>
+
+**Latest Version**: `3.8.9`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gnutls.org@3.8.9 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `freedesktop.org/p11-kit`
+- `gnu.org/libidn2`
+- `gnu.org/libunistring^1`
+- `gnu.org/libtasn1^4`
+- `gnu.org/nettle`
+- `gnu.org/gettext`
+- `gnu.org/gmp`
+- `unbound.net^1`
+- `curl.se/ca-certs`
 
 ## Usage Examples
 

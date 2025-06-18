@@ -1,6 +1,6 @@
 # eigen.tuxfamily.org
 
-> Package information available on pkgx.dev
+> A package from eigen.tuxfamily.org
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx eigen.tuxfamily.org
+sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,31 @@ pkgx eigen.tuxfamily.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `3.4.0`
+
+</details>
+
+**Latest Version**: `3.4.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +eigen.tuxfamily.org@3.4.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `linuxgnu.org/gcc/libstdcxx@14`
+- `gnu.org/gcc/libstdcxx@14`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # xvid.com
 
-> Package information available on pkgx.dev
+> A package from xvid.com
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx xvid.com
+sh <(curl https://pkgx.sh) +xvid.com -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx xvid.com
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.3.7`
+
+</details>
+
+**Latest Version**: `1.3.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +xvid.com@1.3.7 -- $SHELL -i
+```
 
 ## Usage Examples
 

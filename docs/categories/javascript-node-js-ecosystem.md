@@ -1,20 +1,10 @@
 # JavaScript & Node.js Ecosystem
 
-*10 packages in this category*
+*6 packages in this category*
 
 Packages related to javascript & node.js ecosystem.
 
 ## Packages
-
-### [angular.dev](../packages/angulardev.md) (ng)
-
-CLI tool for Angular
-
-**Programs**: ng
-
-**Install**: `sh <(curl https://pkgx.sh) ng`
-
----
 
 ### [bun.sh](../packages/bunsh.md) (bun)
 
@@ -56,7 +46,7 @@ Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 
 ---
 
-### [nodejs.org](../packages/nodejsorg.md) (node)
+### [node](../packages/node.md)
 
 Platform built on V8 to build network applications
 
@@ -73,36 +63,6 @@ the package manager for JavaScript
 **Programs**: npm, npx
 
 **Install**: `sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i`
-
----
-
-### [pnpm.io](../packages/pnpmio.md) (pnp)
-
-Fast, disk space efficient package manager
-
-**Programs**: pnpm, pnpx
-
-**Install**: `sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i`
-
----
-
-### [vitejs.dev](../packages/vitejsdev.md) (vite)
-
-Next generation frontend tooling. It's fast!
-
-**Programs**: vite
-
-**Install**: `sh <(curl https://pkgx.sh) vite`
-
----
-
-### [yarnpkg.com](../packages/yarnpkgcom.md) (yarn)
-
-📦🐈 Active development trunk for Yarn ⚒
-
-**Programs**: yarn, yarnpkg
-
-**Install**: `sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i`
 
 ---
 

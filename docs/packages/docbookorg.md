@@ -1,6 +1,6 @@
 # docbook.org
 
-> Package information available on pkgx.dev
+> A package from docbook.org
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx docbook.org
+sh <(curl https://pkgx.sh) +docbook.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx docbook.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `5.1.0`
+
+</details>
+
+**Latest Version**: `5.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +docbook.org@5.1.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

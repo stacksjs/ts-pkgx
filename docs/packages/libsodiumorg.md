@@ -1,6 +1,6 @@
 # libsodium.org
 
-> Package information available on pkgx.dev
+> A package from libsodium.org
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx libsodium.org
+sh <(curl https://pkgx.sh) +libsodium.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx libsodium.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.0.20`, `1.0.19`, `1.0.18`, `1.0.17`
+
+</details>
+
+**Latest Version**: `1.0.20`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libsodium.org@1.0.20 -- $SHELL -i
+```
 
 ## Usage Examples
 

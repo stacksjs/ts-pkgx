@@ -44,7 +44,7 @@ sh <(curl https://pkgx.sh) +rust/script.org@0.35.0 -- $SHELL -i
 
 These packages work well with rust-script:
 
-- [`rust-lang.org`](rustlangorg.md) - Empowering everyone to build reliable and efficient software.
+- `rust-lang.org`
 - `rust-lang.org/cargo`
 
 ## Usage Examples

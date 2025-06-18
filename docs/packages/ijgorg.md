@@ -1,6 +1,6 @@
 # ijg.org
 
-> Package information available on pkgx.dev
+> A package from ijg.org
 
 ## Package Information
 
@@ -13,14 +13,36 @@
 
 ```bash
 # Install with pkgx
-pkgx ijg.org
+sh <(curl https://pkgx.sh) +ijg.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cjpeg`
+- `djpeg`
+- `jpegtran`
+- `rdjpgcom`
+- `wrjpgcom`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `9f`, `9e`, `9.5.0`
+
+</details>
+
+**Latest Version**: `9f`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ijg.org@9f -- $SHELL -i
+```
 
 ## Usage Examples
 

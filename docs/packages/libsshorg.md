@@ -1,6 +1,6 @@
 # libssh.org
 
-> Package information available on pkgx.dev
+> A package from libssh.org
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx libssh.org
+sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,32 @@ pkgx libssh.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `0.11.1`, `0.11.0`, `0.10.6`, `0.10.5`, `0.10.4`
+- `0.9.8`, `0.9.7`
+
+</details>
+
+**Latest Version**: `0.11.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libssh.org@0.11.1 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1.1`
+- `zlib.net^1`
 
 ## Usage Examples
 

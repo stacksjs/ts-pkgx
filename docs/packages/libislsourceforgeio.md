@@ -1,6 +1,6 @@
 # libisl.sourceforge.io
 
-> Package information available on pkgx.dev
+> A package from libisl.sourceforge.io
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx libisl.sourceforge.io
+sh <(curl https://pkgx.sh) +libisl.sourceforge.io -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,30 @@ pkgx libisl.sourceforge.io
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.27.0`, `0.26.0`
+
+</details>
+
+**Latest Version**: `0.27.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libisl.sourceforge.io@0.27.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/gmp^6`
 
 ## Usage Examples
 

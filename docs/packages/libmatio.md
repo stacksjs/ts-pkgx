@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libmatio`
+- **Domain**: `libmat.io`
 - **Name**: `libmatio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/matio.sourceforge.io/package.yml)
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `matdump`
-- `libmatio`
 
 ## Available Versions
 
@@ -45,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx libmatio@1.5.28
+sh <(curl https://pkgx.sh) +libmat.io@1.5.28 -- $SHELL -i
 ```
 
 ## Dependencies

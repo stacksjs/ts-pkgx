@@ -1,0 +1,70 @@
+# apache.org/apr
+
+> Mirror of Apache Portable Runtime
+
+## Package Information
+
+- **Domain**: `apache.org/apr`
+- **Name**: `apache.org/apr`
+- **Homepage**: Not specified
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/apr/package.yml)
+
+## Installation
+
+```bash
+# Install with pkgx
+sh <(curl https://pkgx.sh) +apache.org/apr -- $SHELL -i
+```
+
+## Programs
+
+This package provides the following executable programs:
+
+*No programs specified*
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `apr`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `1.7.6`, `1.7.5`, `1.7.4`, `1.7.3`, `1.7.2`
+
+</details>
+
+**Latest Version**: `1.7.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +apache.org/apr@1.7.6 -- $SHELL -i
+```
+
+## Usage Examples
+
+```typescript
+import { pantry } from 'ts-pkgx'
+
+// Access this package
+const pkg = pantry.apacheorgapr
+
+console.log(`Package: ${pkg.name}`)
+console.log(`Description: ${pkg.description}`)
+console.log(`Programs: ${pkg.programs.join(', ')}`)
+```
+
+## Links
+
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/apr/package.yml)
+- [Homepage](#)
+- [Back to Package Catalog](../package-catalog.md)
+
+---
+
+*This documentation was auto-generated from package data.*

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `portaudio`
+- **Domain**: `PortAud.io`
 - **Name**: `PortAudio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/portaudio.com/package.yml)
@@ -22,13 +22,6 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+portaudio.com -- $SHELL -i`
-- `PortAudio`
-
 ## Available Versions
 
 <details>
@@ -44,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx PortAudio@19.7.0
+sh <(curl https://pkgx.sh) +PortAud.io@19.7.0 -- $SHELL -i
 ```
 
 ## Usage Examples

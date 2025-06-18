@@ -31,13 +31,6 @@ This package provides the following executable programs:
 - `rustdoc`
 - `rustfmt`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+rust-lang.org -- $SHELL -i`
-- `rust`
-
 ## Available Versions
 
 <details>
@@ -59,7 +52,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx rust@1.87.0
+sh <(curl https://pkgx.sh) +rust@1.87.0 -- $SHELL -i
 ```
 
 ## Dependencies

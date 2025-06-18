@@ -27,6 +27,12 @@ This package provides the following executable programs:
 - `ri`
 - `ruby`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ruby`
+
 ## Available Versions
 
 <details>

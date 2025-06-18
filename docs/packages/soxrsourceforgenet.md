@@ -1,6 +1,6 @@
 # soxr.sourceforge.net
 
-> Package information available on pkgx.dev
+> A package from soxr.sourceforge.net
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx soxr.sourceforge.net
+sh <(curl https://pkgx.sh) +soxr.sourceforge.net -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx soxr.sourceforge.net
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.1.3`
+
+</details>
+
+**Latest Version**: `0.1.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +soxr.sourceforge.net@0.1.3 -- $SHELL -i
+```
 
 ## Usage Examples
 

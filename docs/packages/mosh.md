@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mosh`
+- **Domain**: `mo.sh`
 - **Name**: `mosh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mosh.org/package.yml)
@@ -23,13 +23,6 @@ This package provides the following executable programs:
 - `mosh-client`
 - `mosh-server`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+mosh.org -- $SHELL -i`
-- `mosh`
-
 ## Available Versions
 
 <details>
@@ -45,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx mosh@1.4.0
+sh <(curl https://pkgx.sh) +mo.sh@1.4.0 -- $SHELL -i
 ```
 
 ## Dependencies

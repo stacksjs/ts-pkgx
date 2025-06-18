@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `elvish`
+- **Domain**: `elvi.sh`
 - **Name**: `elvish`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/elv.sh/package.yml)
@@ -19,12 +19,6 @@ sh <(curl https://pkgx.sh) elvish
 ## Programs
 
 This package provides the following executable programs:
-
-- `elvish`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `elvish`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx elvish@0.21.0
+sh <(curl https://pkgx.sh) +elvi.sh@0.21.0 -- $SHELL -i
 ```
 
 ## Usage Examples

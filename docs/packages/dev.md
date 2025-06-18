@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dev`
+- **Domain**: `.dev`
 - **Name**: `dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/dev/package.yml)
@@ -19,12 +19,6 @@ sh <(curl https://pkgx.sh) dev
 ## Programs
 
 This package provides the following executable programs:
-
-- `dev`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `dev`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx dev@1.8.1
+sh <(curl https://pkgx.sh) +.dev@1.8.1 -- $SHELL -i
 ```
 
 ## Dependencies

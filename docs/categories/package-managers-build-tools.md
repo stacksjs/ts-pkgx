@@ -1,6 +1,6 @@
 # Package Managers & Build Tools
 
-*12 packages in this category*
+*6 packages in this category*
 
 Packages related to package managers & build tools.
 
@@ -23,36 +23,6 @@ Open-source build automation tool based on the Groovy and Kotlin DSL
 **Programs**: gradle
 
 **Install**: `sh <(curl https://pkgx.sh) gradle`
-
----
-
-### [maven.apache.org](../packages/mavenapacheorg.md) (mvn)
-
-Java-based project management
-
-**Programs**: mvn, mvnDebug, mvnyjp
-
-**Install**: `sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i`
-
----
-
-### [mesonbuild.com](../packages/mesonbuildcom.md) (meson)
-
-Fast and user friendly build system
-
-**Programs**: meson
-
-**Install**: `sh <(curl https://pkgx.sh) meson`
-
----
-
-### [ninja/build.org](../packages/ninjabuildorg.md) (ninja)
-
-Small build system for use with gyp or CMake
-
-**Programs**: ninja
-
-**Install**: `sh <(curl https://pkgx.sh) ninja`
 
 ---
 
@@ -86,26 +56,6 @@ Python Development Workflow for Humans.
 
 ---
 
-### [pnpm.io](../packages/pnpmio.md) (pnp)
-
-Fast, disk space efficient package manager
-
-**Programs**: pnpm, pnpx
-
-**Install**: `sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i`
-
----
-
-### [python/poetry.org](../packages/pythonpoetryorg.md) (poetry)
-
-Python packaging and dependency management made easy
-
-**Programs**: poetry
-
-**Install**: `sh <(curl https://pkgx.sh) poetry`
-
----
-
 ### [rubygems.org](../packages/rubygemsorg.md)
 
 Powerful, clean, object-oriented scripting language
@@ -113,16 +63,6 @@ Powerful, clean, object-oriented scripting language
 **Programs**: bundle, bundler, gem
 
 **Install**: `sh <(curl https://pkgx.sh) +rubygems.org -- $SHELL -i`
-
----
-
-### [yarnpkg.com](../packages/yarnpkgcom.md) (yarn)
-
-📦🐈 Active development trunk for Yarn ⚒
-
-**Programs**: yarn, yarnpkg
-
-**Install**: `sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i`
 
 ---
 

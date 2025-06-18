@@ -1,6 +1,6 @@
 # cmocka.org
 
-> Package information available on pkgx.dev
+> A package from cmocka.org
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx cmocka.org
+sh <(curl https://pkgx.sh) +cmocka.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx cmocka.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.1.7`
+
+</details>
+
+**Latest Version**: `1.1.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +cmocka.org@1.1.7 -- $SHELL -i
+```
 
 ## Usage Examples
 

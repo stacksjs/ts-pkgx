@@ -1,6 +1,6 @@
 # libsoup.org
 
-> Package information available on pkgx.dev
+> A package from libsoup.org
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx libsoup.org
+sh <(curl https://pkgx.sh) +libsoup.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,41 @@ pkgx libsoup.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `3.6.5`, `3.6.4`, `3.6.3`, `3.6.1`, `3.6.0`
+- `3.5.2`, `3.5.1`, `3.4.5`, `3.4.4`, `3.2.3`
+
+</details>
+
+**Latest Version**: `3.6.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libsoup.org@3.6.5 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnome.org/glib-networking`
+- `gnutls.org`
+- `rockdaboot.github.io/libpsl`
+- `kerberos.org`
+- `gnome.org/libxml2`
+- `sqlite.org`
+- `nghttp2.org`
+- `linuxgnu.org/gettextgnome.org/glibgithub.com/google/brotli`
+- `gnu.org/gettext`
+- `gnome.org/glib`
+- `github.com/google/brotli`
 
 ## Usage Examples
 

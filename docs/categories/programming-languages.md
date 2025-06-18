@@ -1,20 +1,10 @@
 # Programming Languages
 
-*22 packages in this category*
+*17 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
 ## Packages
-
-### [crystal/lang.org](../packages/crystallangorg.md) (crystal)
-
-Fast and statically typed, compiled language with Ruby-like syntax
-
-**Programs**: crystal
-
-**Install**: `sh <(curl https://pkgx.sh) crystal`
-
----
 
 ### [dart.dev](../packages/dartdev.md) (dart)
 
@@ -86,16 +76,6 @@ Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC'
 
 ---
 
-### [julialang.org](../packages/julialangorg.md) (julia)
-
-The Julia Programming Language
-
-**Programs**: julia
-
-**Install**: `sh <(curl https://pkgx.sh) julia`
-
----
-
 ### [kotlinlang.org](../packages/kotlinlangorg.md)
 
 Statically typed programming language for the JVM
@@ -116,7 +96,7 @@ Nim is a statically typed compiled systems programming language. It combines suc
 
 ---
 
-### [nodejs.org](../packages/nodejsorg.md) (node)
+### [node](../packages/node.md)
 
 Platform built on V8 to build network applications
 
@@ -156,23 +136,13 @@ The Python programming language
 
 ---
 
-### [ruby/lang.org](../packages/rubylangorg.md) (ruby-lang.org)
+### [ruby/lang.org](../packages/rubylangorg.md) (ruby-lang.org, ruby)
 
 Powerful, clean, object-oriented scripting language
 
 **Programs**: erb, irb, rake, rdoc, ri, ruby
 
 **Install**: `sh <(curl https://pkgx.sh) +ruby-lang.org -- $SHELL -i`
-
----
-
-### [rust/lang.org](../packages/rustlangorg.md) (rust)
-
-Empowering everyone to build reliable and efficient software.
-
-**Programs**: cargo-clippy, cargo-fmt, clippy-driver, rust-analyzer, rust-gdb, rust-gdbgui, rust-lldb, rustc, rustdoc, rustfmt
-
-**Install**: `sh <(curl https://pkgx.sh) +rust-lang.org -- $SHELL -i`
 
 ---
 
@@ -196,16 +166,6 @@ The Swift Programming Language
 
 ---
 
-### [typescriptlang.org](../packages/typescriptlangorg.md) (tsc)
-
-TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
-
-**Programs**: tsc
-
-**Install**: `sh <(curl https://pkgx.sh) tsc`
-
----
-
 ### [vlang.io](../packages/vlangio.md) (v)
 
 Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
@@ -213,16 +173,6 @@ Simple, fast, safe, compiled language for developing maintainable software. Comp
 **Programs**: v
 
 **Install**: `sh <(curl https://pkgx.sh) v`
-
----
-
-### [ziglang.org](../packages/ziglangorg.md) (zig)
-
-General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
-
-**Programs**: zig
-
-**Install**: `sh <(curl https://pkgx.sh) zig`
 
 ---
 

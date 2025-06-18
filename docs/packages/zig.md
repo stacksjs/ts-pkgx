@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `zig`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `zig`
-
 ## Available Versions
 
 <details>
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx zig@0.14.1
+sh <(curl https://pkgx.sh) +zig@0.14.1 -- $SHELL -i
 ```
 
 ## Usage Examples

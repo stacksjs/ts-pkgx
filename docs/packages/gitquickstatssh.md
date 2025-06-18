@@ -55,7 +55,7 @@ This package depends on:
 
 These packages work well with git-quick-stats:
 
-- `gnu.org/coreutils`
+- [`gnu.org/coreutils`](gnuorgcoreutils.md) - A package from gnu.org/coreutils
 
 ## Usage Examples
 

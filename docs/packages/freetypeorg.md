@@ -1,6 +1,6 @@
 # freetype.org
 
-> Package information available on pkgx.dev
+> A package from freetype.org
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx freetype.org
+sh <(curl https://pkgx.sh) +freetype.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,32 @@ pkgx freetype.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `2.13.3`, `2.13.2`, `2.13.1`, `2.12.1`
+
+</details>
+
+**Latest Version**: `2.13.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +freetype.org@2.13.3 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `libpng.org@1`
+- `zlib.net@1`
+- `sourceware.org/bzip2@1`
 
 ## Usage Examples
 

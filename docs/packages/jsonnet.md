@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `jsonnet`
+- **Domain**: `json.net`
 - **Name**: `jsonnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jsonnet.org/package.yml)
@@ -23,13 +23,6 @@ This package provides the following executable programs:
 - `jsonnet`
 - `jsonnetfmt`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+jsonnet.org -- $SHELL -i`
-- `jsonnet`
-
 ## Available Versions
 
 <details>
@@ -45,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx jsonnet@0.21.0
+sh <(curl https://pkgx.sh) +json.net@0.21.0 -- $SHELL -i
 ```
 
 ## Usage Examples

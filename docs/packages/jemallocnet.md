@@ -1,6 +1,6 @@
 # jemalloc.net
 
-> Package information available on pkgx.dev
+> A package from jemalloc.net
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx jemalloc.net
+sh <(curl https://pkgx.sh) +jemalloc.net -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ pkgx jemalloc.net
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `5.3.0`
+
+</details>
+
+**Latest Version**: `5.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +jemalloc.net@5.3.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

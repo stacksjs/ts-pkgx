@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sdkmaninitsh`
+- **Domain**: `sdkman/init.sh`
 - **Name**: `sdkman-init.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sdkman.io/package.yml)
@@ -19,12 +19,6 @@ sh <(curl https://pkgx.sh) sdkman-init.sh
 ## Programs
 
 This package provides the following executable programs:
-
-- `sdkman-init.sh`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `sdkman-init.sh`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx sdkman-init.sh@5.19.0
+sh <(curl https://pkgx.sh) +sdkman/init.sh@5.19.0 -- $SHELL -i
 ```
 
 ## Usage Examples

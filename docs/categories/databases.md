@@ -1,6 +1,6 @@
 # Databases
 
-*8 packages in this category*
+*6 packages in this category*
 
 Database systems and data storage solutions.
 
@@ -53,26 +53,6 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 **Programs**: redis-server, redis-cli, redis-benchmark
 
 **Install**: `sh <(curl https://pkgx.sh) +redis.io -- $SHELL -i`
-
----
-
-### [sqlite.org](../packages/sqliteorg.md) (sqlite3)
-
-Official Git mirror of the SQLite source tree
-
-**Programs**: sqlite3
-
-**Install**: `sh <(curl https://pkgx.sh) sqlite3`
-
----
-
-### [surrealdb.com](../packages/surrealdbcom.md) (surreal)
-
-A scalable, distributed, collaborative, document-graph database, for the realtime web
-
-**Programs**: surreal
-
-**Install**: `sh <(curl https://pkgx.sh) surreal`
 
 ---
 

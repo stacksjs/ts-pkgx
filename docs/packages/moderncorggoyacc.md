@@ -1,6 +1,6 @@
 # modernc.org/goyacc
 
-> Package information available on pkgx.dev
+> Parser Generator for Go
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with pkgx
-pkgx modernc.org-goyacc
+sh <(curl https://pkgx.sh) goyacc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `goyacc`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `goyacc`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.0.3`
+
+</details>
+
+**Latest Version**: `1.0.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +modernc.org/goyacc@1.0.3 -- $SHELL -i
+```
 
 ## Usage Examples
 

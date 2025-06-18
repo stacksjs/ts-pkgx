@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `dotnet`
+- **Domain**: `dot.net`
 - **Name**: `dotnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dotnet.microsoft.com/package.yml)
@@ -19,12 +19,6 @@ sh <(curl https://pkgx.sh) dotnet
 ## Programs
 
 This package provides the following executable programs:
-
-- `dotnet`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `dotnet`
 
@@ -49,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx dotnet@9.0.202
+sh <(curl https://pkgx.sh) +dot.net@9.0.202 -- $SHELL -i
 ```
 
 ## Dependencies

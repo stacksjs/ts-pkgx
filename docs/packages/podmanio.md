@@ -62,7 +62,7 @@ This package depends on:
 
 These packages work well with podman:
 
-- [`openssh.com`](opensshcom.md) - Crafters of fine Open Source products
+- [`openssh.com`](opensshcom.md) - A package from openssh.com
 
 ## Usage Examples
 

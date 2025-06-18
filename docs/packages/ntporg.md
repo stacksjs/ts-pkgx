@@ -1,6 +1,6 @@
 # ntp.org
 
-> Package information available on pkgx.dev
+> A package from ntp.org
 
 ## Package Information
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx ntp.org
+sh <(curl https://pkgx.sh) +ntp.org -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ntpq`
+- `sntp`
+- `ntp-keygen`
+- `ntp-wait`
+- `ntpd`
+- `ntpdate`
+- `ntpdc`
+- `ntptime`
+- `ntptrace`
+- `update-leap`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `4.2.8.17`
+
+</details>
+
+**Latest Version**: `4.2.8.17`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ntp.org@4.2.8.17 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^3`
 
 ## Usage Examples
 

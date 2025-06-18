@@ -1,0 +1,81 @@
+# microsoft.com/dxc
+
+> This repo hosts the source for the DirectX Shader Compiler which is based on LLVM/Clang.
+
+## Package Information
+
+- **Domain**: `microsoft.com/dxc`
+- **Name**: `microsoft.com/dxc`
+- **Homepage**: Not specified
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/dxc/package.yml)
+
+## Installation
+
+```bash
+# Install with pkgx
+sh <(curl https://pkgx.sh) +microsoft.com/dxc -- $SHELL -i
+```
+
+## Programs
+
+This package provides the following executable programs:
+
+- `dxc`
+- `dxv`
+- `dxa`
+- `dxr`
+- `dxl`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `dxc`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `1.8.2505`, `1.8.2502`, `1.8.2407`, `1.8.2405`, `1.8.2403.2`
+- `1.8.2403.1`, `1.8.2403`, `1.7.2308`
+
+</details>
+
+**Latest Version**: `1.8.2505`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +microsoft.com/dxc@1.8.2505 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `zlib.net^1`
+
+## Usage Examples
+
+```typescript
+import { pantry } from 'ts-pkgx'
+
+// Access this package
+const pkg = pantry.microsoftcomdxc
+
+console.log(`Package: ${pkg.name}`)
+console.log(`Description: ${pkg.description}`)
+console.log(`Programs: ${pkg.programs.join(', ')}`)
+```
+
+## Links
+
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/dxc/package.yml)
+- [Homepage](#)
+- [Back to Package Catalog](../package-catalog.md)
+
+---
+
+*This documentation was auto-generated from package data.*

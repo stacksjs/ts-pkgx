@@ -1,19 +1,19 @@
-# thrysoee.dk
+# thrysoee.dk/
 
-> Package information available on pkgx.dev
+> A package from thrysoee.dk
 
 ## Package Information
 
-- **Domain**: `thrysoee.dk`
-- **Name**: `thrysoee.dk`
+- **Domain**: `thrysoee.dk/`
+- **Name**: `thrysoee.dk/`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/thrysoee.dk/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/thrysoee.dk//package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-pkgx thrysoee.dk
+pkgx thrysoee.dk/
 ```
 
 ## Programs
@@ -21,6 +21,12 @@ pkgx thrysoee.dk
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- ``
 
 ## Usage Examples
 
@@ -37,7 +43,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/thrysoee.dk/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/thrysoee.dk//package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

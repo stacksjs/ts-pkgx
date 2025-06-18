@@ -1,6 +1,6 @@
 # x.org/xscrnsaver
 
-> Package information available on pkgx.dev
+> A package from x.org/xscrnsaver
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx x.org-xscrnsaver
+sh <(curl https://pkgx.sh) +x.org/xscrnsaver -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,38 @@ pkgx x.org-xscrnsaver
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `xscrnsaver`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.2.4`
+
+</details>
+
+**Latest Version**: `1.2.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +x.org/xscrnsaver@1.2.4 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `x.org/x11^1`
+- `x.org/protocol`
+- `x.org/exts`
 
 ## Usage Examples
 

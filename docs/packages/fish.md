@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `fish`
+- **Domain**: `fi.sh`
 - **Name**: `fish`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fishshell.com/package.yml)
@@ -24,13 +24,6 @@ This package provides the following executable programs:
 - `fish_indent`
 - `fish_key_reader`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+fishshell.com -- $SHELL -i`
-- `fish`
-
 ## Available Versions
 
 <details>
@@ -48,7 +41,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx fish@4.0.2
+sh <(curl https://pkgx.sh) +fi.sh@4.0.2 -- $SHELL -i
 ```
 
 ## Dependencies

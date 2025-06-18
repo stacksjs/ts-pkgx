@@ -23,13 +23,6 @@ This package provides the following executable programs:
 - `dart`
 - `dartaotruntime`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+dart.dev -- $SHELL -i`
-- `dart`
-
 ## Available Versions
 
 <details>
@@ -52,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx dart@3.8.1
+sh <(curl https://pkgx.sh) +dart@3.8.1 -- $SHELL -i
 ```
 
 ## Usage Examples

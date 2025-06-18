@@ -1,6 +1,6 @@
 # DevOps & Infrastructure
 
-*8 packages in this category*
+*6 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
@@ -33,26 +33,6 @@ The Kubernetes Package Manager
 **Programs**: helm
 
 **Install**: `sh <(curl https://pkgx.sh) helm`
-
----
-
-### [istio.io](../packages/istioio.md) (istioctl)
-
-Connect, secure, control, and observe services.
-
-**Programs**: istioctl
-
-**Install**: `sh <(curl https://pkgx.sh) istioctl`
-
----
-
-### [nomadproject.io](../packages/nomadprojectio.md) (nomad)
-
-Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
-
-**Programs**: nomad
-
-**Install**: `sh <(curl https://pkgx.sh) nomad`
 
 ---
 

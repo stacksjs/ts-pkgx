@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `pkgx`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pkgx.sh/`
+
 ## Available Versions
 
 <details>

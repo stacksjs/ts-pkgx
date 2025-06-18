@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sniffnet`
+- **Domain**: `sniff.net`
 - **Name**: `sniffnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sniffnet.net/package.yml)
@@ -19,12 +19,6 @@ sh <(curl https://pkgx.sh) sniffnet
 ## Programs
 
 This package provides the following executable programs:
-
-- `sniffnet`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `sniffnet`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx sniffnet@1.3.2
+sh <(curl https://pkgx.sh) +sniff.net@1.3.2 -- $SHELL -i
 ```
 
 ## Dependencies

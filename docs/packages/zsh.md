@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `zsh`
+- **Domain**: `z.sh`
 - **Name**: `zsh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zsh.sourceforge.io/package.yml)
@@ -19,12 +19,6 @@ sh <(curl https://pkgx.sh) zsh
 ## Programs
 
 This package provides the following executable programs:
-
-- `zsh`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `zsh`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx zsh@5.9.0
+sh <(curl https://pkgx.sh) +z.sh@5.9.0 -- $SHELL -i
 ```
 
 ## Dependencies

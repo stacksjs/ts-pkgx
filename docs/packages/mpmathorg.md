@@ -1,6 +1,6 @@
 # mpmath.org
 
-> Package information available on pkgx.dev
+> A package from mpmath.org
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx mpmath.org
+sh <(curl https://pkgx.sh) +mpmath.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,30 @@ pkgx mpmath.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.3.0`
+
+</details>
+
+**Latest Version**: `1.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mpmath.org@1.3.0 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org~3.11`
 
 ## Usage Examples
 

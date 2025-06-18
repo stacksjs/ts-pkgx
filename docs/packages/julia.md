@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `julia`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `julia`
-
 ## Available Versions
 
 <details>
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx julia@1.11.5
+sh <(curl https://pkgx.sh) +julia@1.11.5 -- $SHELL -i
 ```
 
 ## Usage Examples

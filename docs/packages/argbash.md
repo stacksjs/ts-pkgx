@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `argbash`
+- **Domain**: `argba.sh`
 - **Name**: `argbash`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/argbash.dev/package.yml)
@@ -24,13 +24,6 @@ This package provides the following executable programs:
 - `argbash-init`
 - `argbash-1to2`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+argbash.dev -- $SHELL -i`
-- `argbash`
-
 ## Available Versions
 
 <details>
@@ -46,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx argbash@2.11.0
+sh <(curl https://pkgx.sh) +argba.sh@2.11.0 -- $SHELL -i
 ```
 
 ## Dependencies
