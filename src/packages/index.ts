@@ -141,7 +141,7 @@ import { avroPackage } from './avro'
 import { cdkPackage } from './aws-cdk'
 import { awsPackage } from './aws-cli'
 import { awscloudformationPackage } from './aws-cloudformation'
-import { awsPackage } from './aws'
+
 import { awslabsPackage } from './awslabs'
 import { awslocalPackage } from './awslocal'
 import { axllentPackage } from './axllent'
@@ -1496,7 +1496,7 @@ import { utilmacrosPackage } from './x.org-util-macros'
 import { x11Package } from './x.org-x11'
 import { xauPackage } from './x.org-xau'
 import { xawPackage } from './x.org-xaw'
-import { xcbutilPackage } from './x.org-xcb-util'
+import { xorgXcbutilPackage } from './x.org-xcb-util'
 import { xcbPackage } from './x.org-xcb'
 import { xcompositePackage } from './x.org-xcomposite'
 import { xcursorPackage } from './x.org-xcursor'
@@ -1570,7 +1570,7 @@ import { zxPackage } from './zx'
 import { zyedidiaPackage } from './zyedidia'
 
 export interface Pantry {
-  1Password_CLI: typeof opPackage
+  '1Password_CLI': typeof opPackage
   AOMediaCodec: typeof aOMediaCodecPackage
   AUTOMATIC1111: typeof aUTOMATIC1111Package
   AgentD: typeof agentDPackage
@@ -1710,7 +1710,6 @@ export interface Pantry {
   aws_cdk: typeof cdkPackage
   aws_cli: typeof awsPackage
   aws_cloudformation: typeof awscloudformationPackage
-  aws: typeof awsPackage
   awslabs: typeof awslabsPackage
   awslocal: typeof awslocalPackage
   axllent: typeof axllentPackage
@@ -3065,7 +3064,7 @@ export interface Pantry {
   x_org_x11: typeof x11Package
   x_org_xau: typeof xauPackage
   x_org_xaw: typeof xawPackage
-  x_org_xcb_util: typeof xcbutilPackage
+  x_org_xcb_util: typeof xorgXcbutilPackage
   x_org_xcb: typeof xcbPackage
   x_org_xcomposite: typeof xcompositePackage
   x_org_xcursor: typeof xcursorPackage
@@ -3142,7 +3141,7 @@ export interface Pantry {
 export type Packages = Pantry
 
 export const pantry: Pantry = {
-  1Password_CLI: opPackage,
+  '1Password_CLI': opPackage,
   AOMediaCodec: aOMediaCodecPackage,
   AUTOMATIC1111: aUTOMATIC1111Package,
   AgentD: agentDPackage,
@@ -3282,7 +3281,7 @@ export const pantry: Pantry = {
   aws_cdk: cdkPackage,
   aws_cli: awsPackage,
   aws_cloudformation: awscloudformationPackage,
-  aws: awsPackage,
+
   awslabs: awslabsPackage,
   awslocal: awslocalPackage,
   axllent: axllentPackage,
@@ -4637,7 +4636,7 @@ export const pantry: Pantry = {
   x_org_x11: x11Package,
   x_org_xau: xauPackage,
   x_org_xaw: xawPackage,
-  x_org_xcb_util: xcbutilPackage,
+  x_org_xcb_util: xorgXcbutilPackage,
   x_org_xcb: xcbPackage,
   x_org_xcomposite: xcompositePackage,
   x_org_xcursor: xcursorPackage,

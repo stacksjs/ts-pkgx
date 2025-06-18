@@ -504,7 +504,7 @@ export const ALL_KNOWN_PACKAGES: string[] = [
   'github.com/asciidoc-py',
   'github.com/astanin',
   'github.com/aswinkarthik',
-  'github.com/aws',
+
   'github.com/aws-cloudformation',
   'github.com/awslabs',
   'github.com/axllent',

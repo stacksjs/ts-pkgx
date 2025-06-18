@@ -26,7 +26,7 @@
  * @see https://ts-pkgx.netlify.app/packages/x-org/xcb-util.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xcbutilPackage = {
+export const xorgXcbutilPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const xcbutilPackage = {
   fullPath: 'x.org/xcb-util' as const,
 }
 
-export type XcbutilPackage = typeof xcbutilPackage
+export type XorgXcbutilPackage = typeof xorgXcbutilPackage
