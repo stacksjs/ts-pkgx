@@ -5,7 +5,6 @@
  * @programs `node`
  * @version `24.2.0` (138 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/nodejs-org.md
  *
  * @install `sh <(curl https://pkgx.sh) node`
  * @name `node`
@@ -225,7 +224,7 @@ export const nodePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'nodejs.org' as const,
+  fullPath: 'node' as const,
 }
 
 export type NodePackage = typeof nodePackage

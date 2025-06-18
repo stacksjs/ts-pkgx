@@ -5,7 +5,6 @@
  * @programs `kubectx`, `kubens`
  * @version `0.9.5` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/kubectx-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +kubectx.dev -- $SHELL -i`
  * @name `kube`
@@ -79,7 +78,7 @@ export const kubePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kubectx.dev' as const,
+  fullPath: 'kube' as const,
 }
 
 export type KubePackage = typeof kubePackage

@@ -5,7 +5,6 @@
  * @programs `vspipe`
  * @version `72.0.0` (9 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/vapoursynth-com.md
  *
  * @install `sh <(curl https://pkgx.sh) vspipe`
  * @name `vspipe`

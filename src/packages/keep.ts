@@ -5,7 +5,6 @@
  * @programs `keep`
  * @version `0.0.0` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/keephq-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) keep`
  * @name `keep`
@@ -77,7 +76,7 @@ export const keepPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'keephq.dev' as const,
+  fullPath: 'keep' as const,
 }
 
 export type KeepPackage = typeof keepPackage

@@ -5,7 +5,6 @@
  * @programs `huggingface-cli`
  * @version `0.33.0` (56 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/huggingface-co.md
  *
  * @install `sh <(curl https://pkgx.sh) huggingface-cli`
  * @name `huggingface/cli`
@@ -135,7 +134,7 @@ export const huggingfacecliPackage = {
   aliases: [
     'huggingface-cli',
   ] as const,
-  fullPath: 'huggingface.co' as const,
+  fullPath: 'huggingface-cli' as const,
 }
 
 export type HuggingfacecliPackage = typeof huggingfacecliPackage

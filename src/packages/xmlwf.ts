@@ -5,7 +5,6 @@
  * @programs `xmlwf`
  * @version `2.7.1` (9 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/libexpat-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) xmlwf`
  * @name `xmlwf`
@@ -78,7 +77,7 @@ export const xmlwfPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'libexpat.github.io' as const,
+  fullPath: 'xmlwf' as const,
 }
 
 export type XmlwfPackage = typeof xmlwfPackage

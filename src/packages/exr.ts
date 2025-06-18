@@ -5,7 +5,6 @@
  * @programs `exr2aces`, `exrenvmap`, `exrheader`, `exrmakepreview`, `exrmaketiled`, ... (+3 more)
  * @version `3.3.4` (20 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/openexr-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i`
  * @name `exr`

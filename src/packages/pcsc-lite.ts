@@ -5,7 +5,6 @@
  * @programs `pcscd`
  * @version `2.3.3` (13 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/pcsclite-apdu-fr.md
  *
  * @install `sh <(curl https://pkgx.sh) pcscd`
  * @name `pcsc-lite`
@@ -41,7 +40,7 @@ export const pcscdPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A package from pcsclite.apdu.fr' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pcsclite.apdu.fr/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

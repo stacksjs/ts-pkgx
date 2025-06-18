@@ -5,7 +5,6 @@
  * @programs `invoke`
  * @version `2.2.0` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/pyinvoke-org.md
  *
  * @install `sh <(curl https://pkgx.sh) invoke`
  * @name `invoke`

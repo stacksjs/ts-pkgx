@@ -5,7 +5,6 @@
  * @programs `teller`
  * @version `2.0.7` (5 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/tlr-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) teller`
  * @name `teller`

@@ -5,7 +5,6 @@
  * @programs `copa`
  * @version `0.10.0` (5 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/project-copacetic-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) copa`
  * @name `copa`

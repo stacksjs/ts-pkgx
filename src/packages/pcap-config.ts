@@ -5,7 +5,6 @@
  * @programs `pcap-config`
  * @version `1.10.5` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/tcpdump-org.md
  *
  * @install `sh <(curl https://pkgx.sh) pcap-config`
  * @name `pcap-config`

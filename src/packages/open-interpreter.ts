@@ -5,7 +5,6 @@
  * @programs `interpreter`
  * @version `0.4.0` (22 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/openinterpreter-com.md
  *
  * @install `sh <(curl https://pkgx.sh) interpreter`
  * @name `open-interpreter`

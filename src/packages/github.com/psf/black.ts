@@ -1,0 +1,105 @@
+/**
+ * **black** - The uncompromising Python code formatter
+ *
+ * @domain `github.com/psf/black`
+ * @programs `black`, `blackd`
+ * @version `25.1.0` (19 versions available)
+ * @versions From newest version to oldest.
+ *
+ * @install `sh <(curl https://pkgx.sh) +github.com/psf/black -- $SHELL -i`
+ * @name `black`
+ * @aliases `psf/black`
+ * @dependencies `python.org>=3.7<3.12`, `gnu.org/which`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access the package
+ * const pkg = pantry.black
+ * // Or access via domain
+ * const samePkg = pantry.githubcompsfblack
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "black"
+ * console.log(pkg.description) // "The uncompromising Python code formatter"
+ * console.log(pkg.programs)    // ["black", "blackd"]
+ * console.log(pkg.versions[0]) // "25.1.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com/psf/black.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const blackPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'black' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com/psf/black' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'The uncompromising Python code formatter' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/psf/black/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'sh <(curl https://pkgx.sh) +github.com/psf/black -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'black',
+    'blackd',
+  ] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'python.org>=3.7<3.12',
+    'gnu.org/which',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '25.1.0',
+    '24.10.0',
+    '24.8.0',
+    '24.4.2',
+    '24.4.1',
+    '24.4.0',
+    '24.3.0',
+    '24.2.0',
+    '24.1.1',
+    '24.1.0',
+    '23.12.1',
+    '23.12.0',
+    '23.11.0',
+    '23.10.1',
+    '23.10.0',
+    '23.9.1',
+    '23.9.0',
+    '23.7.0',
+    '23.3.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'psf/black',
+  ] as const,
+  fullPath: 'github.com/psf/black' as const,
+}
+
+export type BlackPackage = typeof blackPackage

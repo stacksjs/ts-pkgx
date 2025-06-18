@@ -5,7 +5,6 @@
  * @programs `aria2c`
  * @version `1.37.0` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/aria2-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) aria2c`
  * @name `aria2c`
@@ -81,7 +80,7 @@ export const aria2cPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'aria2.github.io' as const,
+  fullPath: 'aria2c' as const,
 }
 
 export type Aria2cPackage = typeof aria2cPackage

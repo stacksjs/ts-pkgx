@@ -5,7 +5,6 @@
  * @programs `amber`
  * @version `0.4.0` (6 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/amber-lang-com.md
  *
  * @install `sh <(curl https://pkgx.sh) amber`
  * @name `amber`
@@ -86,7 +85,7 @@ export const amberPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'amber-lang.com' as const,
+  fullPath: 'amber' as const,
 }
 
 export type AmberPackage = typeof amberPackage

@@ -5,7 +5,6 @@
  * @programs `uriparse`
  * @version `0.9.8` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/uriparser-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) uriparse`
  * @name `uriparse`

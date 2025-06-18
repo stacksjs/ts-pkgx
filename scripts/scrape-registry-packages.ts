@@ -64,27 +64,50 @@ async function getAllPackages(): Promise<Set<string>> {
     for (const item of listing.Contents) {
       const key = item.Key
 
-      // Extract the domain/package name (first part before any slash or file)
+      // Extract the package path from the S3 key
       const parts = key.split('/')
-      if (parts.length > 0) {
-        const packageName = parts[0]
+      if (parts.length === 0)
+        continue
 
-        // Skip files in root (like .pkgroot, README.md)
-        if (packageName && (!packageName.includes('.') || packageName.match(/^[a-z0-9.-]+\.[a-z]{2,}$/i))) {
-          packages.add(packageName)
+      // Skip obvious non-package files in root
+      if (parts[0].startsWith('.') || parts[0].includes(' ') || key.match(/\.(md|txt|yml|yaml|json)$/i)) {
+        continue
+      }
 
-          // Check for nested packages (e.g., astral.sh/ruff)
-          if (parts.length >= 2 && parts[1] && !['darwin', 'linux', 'windows'].includes(parts[1])) {
-            const nestedPackage = `${parts[0]}/${parts[1]}`
-            packages.add(nestedPackage)
+      // Pattern matching for different package structures:
+      // 1. domain.com/darwin/x86-64/... -> domain.com
+      // 2. domain.com/subpackage/darwin/x86-64/... -> domain.com/subpackage
+      // 3. github.com/user/repo/darwin/x86-64/... -> github.com/user/repo
 
-            // Check for deeper nesting (e.g., astral.sh/sub/package)
-            if (parts.length >= 3 && parts[2] && !['darwin', 'linux', 'windows'].includes(parts[2])) {
-              const deepNestedPackage = `${parts[0]}/${parts[1]}/${parts[2]}`
-              packages.add(deepNestedPackage)
-            }
-          }
+      const platformDirs = ['darwin', 'linux', 'windows']
+
+      // Find where the platform directory appears in the path
+      let platformIndex = -1
+      for (let i = 1; i < parts.length; i++) { // Start from index 1, not 0
+        if (platformDirs.includes(parts[i])) {
+          platformIndex = i
+          break
         }
+      }
+
+      // If we found a platform directory, extract the package path before it
+      if (platformIndex > 0) {
+        const packagePath = parts.slice(0, platformIndex).join('/')
+
+        // Only add valid packages that contain a domain
+        if (packagePath.includes('.')) {
+          packages.add(packagePath)
+        }
+      }
+      // Also handle cases where there's no platform directory but it's clearly a package
+      else if (parts.length >= 2 && parts[0].includes('.') && !parts[1].startsWith('v') && !parts[1].match(/^\d/)) {
+        // This handles cases like domain.com/subpackage/some-file
+        const packagePath = `${parts[0]}/${parts[1]}`
+        packages.add(packagePath)
+      }
+      // Handle simple domain packages
+      else if (parts.length >= 1 && parts[0].includes('.')) {
+        packages.add(parts[0])
       }
     }
 
@@ -126,6 +149,18 @@ async function main() {
       continue
     }
 
+    // Filter out .pkgroot entries - these are just markers, not actual packages
+    if (pkg.endsWith('/.pkgroot')) {
+      console.log(`Filtering out .pkgroot marker: ${pkg}`)
+      continue
+    }
+
+    // Filter out README and documentation files
+    if (pkg.endsWith('/README') || pkg.endsWith('/readme') || pkg.includes('/README/') || pkg.includes('/docs/')) {
+      console.log(`Filtering out documentation: ${pkg}`)
+      continue
+    }
+
     // For now, include all that pass basic validation
     // In production, you might want to validate all packages
     validPackages.push(pkg)
@@ -133,8 +168,41 @@ async function main() {
 
   console.log(`Final package count: ${validPackages.length}`)
 
-  // Generate the new constants file content
-  const constantsContent = `export const ALL_KNOWN_PACKAGES: string[] = [
+  // Generate the new constants file content with all required constants
+  const constantsContent = `/**
+ * Default cache directory for storing package data
+ */
+export const DEFAULT_CACHE_DIR = '.cache/packages'
+
+/**
+ * Default cache expiration time in minutes (24 hours)
+ */
+export const DEFAULT_CACHE_EXPIRATION_MINUTES = 1440
+
+/**
+ * Default timeout for network requests in milliseconds (12 seconds)
+ */
+export const DEFAULT_TIMEOUT_MS = 12000
+
+/**
+ * Package aliases mapping friendly names to domain names
+ */
+export const PACKAGE_ALIASES: Record<string, string> = {
+  node: 'nodejs.org',
+  python: 'python.org',
+  go: 'go.dev',
+  rust: 'rust-lang.org',
+  ruby: 'ruby-lang.org',
+  php: 'php.net',
+  perl: 'perl.org',
+  deno: 'deno.land',
+  bun: 'bun.sh',
+}
+
+/**
+ * List of all known packages
+ */
+export const ALL_KNOWN_PACKAGES: string[] = [
 ${validPackages.map(pkg => `  '${pkg}',`).join('\n')}
 ] as const
 

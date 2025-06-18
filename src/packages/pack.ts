@@ -5,7 +5,6 @@
  * @programs `pack`
  * @version `0.38.1` (14 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/buildpacks-io.md
  *
  * @install `sh <(curl https://pkgx.sh) pack`
  * @name `pack`
@@ -83,7 +82,7 @@ export const packPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'buildpacks.io' as const,
+  fullPath: 'pack' as const,
 }
 
 export type PackPackage = typeof packPackage

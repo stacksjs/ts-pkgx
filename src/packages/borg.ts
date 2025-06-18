@@ -5,7 +5,6 @@
  * @programs `borg`, `borgfs`
  * @version `1.4.1` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/borgbackup-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +borgbackup.org -- $SHELL -i`
  * @name `borg`
@@ -79,7 +78,7 @@ export const borgPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'borgbackup.org' as const,
+  fullPath: 'borg' as const,
 }
 
 export type BorgPackage = typeof borgPackage

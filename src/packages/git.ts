@@ -5,7 +5,6 @@
  * @programs `git`, `git-cvsserver`, `git-receive-pack`, `git-shell`, `git-upload-archive`, ... (+3 more)
  * @version `2.50.0` (22 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/git-scm-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +git-scm.org -- $SHELL -i`
  * @name `git`
@@ -110,7 +109,7 @@ export const gitPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'git-scm.org' as const,
+  fullPath: 'git' as const,
 }
 
 export type GitPackage = typeof gitPackage

@@ -5,7 +5,6 @@
  * @programs `sentry-cli`
  * @version `2.46.0` (45 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/sentry-io.md
  *
  * @install `sh <(curl https://pkgx.sh) sentry-cli`
  * @name `sentry-cli`

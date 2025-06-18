@@ -5,7 +5,6 @@
  * @programs `matdump`
  * @version `1.5.28` (6 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/matio-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) matdump`
  * @name `libmatio`
@@ -86,7 +85,7 @@ export const matdumpPackage = {
   aliases: [
     'matdump',
   ] as const,
-  fullPath: 'matio.sourceforge.io' as const,
+  fullPath: 'libmatio' as const,
 }
 
 export type MatdumpPackage = typeof matdumpPackage

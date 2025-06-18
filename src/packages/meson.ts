@@ -5,7 +5,6 @@
  * @programs `meson`
  * @version `1.8.2` (28 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/mesonbuild-com.md
  *
  * @install `sh <(curl https://pkgx.sh) meson`
  * @name `meson`
@@ -104,7 +103,7 @@ export const mesonPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mesonbuild.com' as const,
+  fullPath: 'meson' as const,
 }
 
 export type MesonPackage = typeof mesonPackage

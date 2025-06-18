@@ -5,7 +5,6 @@
  * @programs `k9s`
  * @version `0.50.6` (52 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/k9scli-io.md
  *
  * @install `sh <(curl https://pkgx.sh) k9s`
  * @name `k9s`
@@ -121,7 +120,7 @@ export const k9sPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'k9scli.io' as const,
+  fullPath: 'k9s' as const,
 }
 
 export type K9sPackage = typeof k9sPackage

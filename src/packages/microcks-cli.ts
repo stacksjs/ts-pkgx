@@ -5,7 +5,6 @@
  * @programs `microcks-cli`
  * @version `0.9.0` (6 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/microcks-io.md
  *
  * @install `sh <(curl https://pkgx.sh) microcks-cli`
  * @name `microcks-cli`
@@ -82,7 +81,7 @@ export const microckscliPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'microcks.io' as const,
+  fullPath: 'microcks-cli' as const,
 }
 
 export type MicrockscliPackage = typeof microckscliPackage

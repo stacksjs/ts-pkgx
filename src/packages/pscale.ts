@@ -5,7 +5,6 @@
  * @programs `pscale`
  * @version `0.245.0` (69 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/planetscale-com.md
  *
  * @install `sh <(curl https://pkgx.sh) pscale`
  * @name `pscale`

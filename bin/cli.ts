@@ -14,9 +14,9 @@ import {
   generateAliases,
   generateDocs,
   generateIndex,
-  aliases as PACKAGE_ALIASES,
   savePackageAsTypeScript,
 } from '../src/index'
+import { aliases as PACKAGE_ALIASES } from '../src/packages/aliases'
 
 // Define interface for CLI options
 interface FetchOptions {
@@ -82,7 +82,9 @@ function getFriendlyName(domainName: string): string {
   // Create reverse mapping from PACKAGE_ALIASES
   const reverseAliases: Record<string, string> = {}
   for (const [alias, domain] of Object.entries(PACKAGE_ALIASES)) {
-    reverseAliases[domain] = alias
+    if (typeof domain === 'string') {
+      reverseAliases[domain] = alias
+    }
   }
 
   // Return the friendly alias if available, otherwise return the domain

@@ -5,7 +5,6 @@
  * @programs `scw`
  * @version `2.40.0` (9 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/scaleway-com.md
  *
  * @install `sh <(curl https://pkgx.sh) scw`
  * @name `scw`

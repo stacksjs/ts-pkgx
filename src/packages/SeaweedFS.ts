@@ -5,7 +5,6 @@
  * @programs `weed`
  * @version `3.91.0` (13 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/seaweedfs-com.md
  *
  * @install `sh <(curl https://pkgx.sh) weed`
  * @name `SeaweedFS`

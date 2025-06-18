@@ -5,7 +5,6 @@
  * @programs `sdkman-init.sh`
  * @version `5.19.0` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/sdkman-io.md
  *
  * @install `sh <(curl https://pkgx.sh) sdkman-init.sh`
  * @name `sdkman-init.sh`

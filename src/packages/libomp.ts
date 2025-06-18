@@ -4,7 +4,6 @@
  * @domain `openmp.llvm.org`
  * @version `20.1.7` (33 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/openmp-llvm-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openmp.llvm.org -- $SHELL -i`
  * @name `libomp`

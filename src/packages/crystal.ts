@@ -5,7 +5,6 @@
  * @programs `crystal`
  * @version `1.16.3` (19 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/crystal-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) crystal`
  * @name `crystal`
@@ -111,7 +110,7 @@ export const crystalPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crystal-lang.org' as const,
+  fullPath: 'crystal' as const,
 }
 
 export type CrystalPackage = typeof crystalPackage

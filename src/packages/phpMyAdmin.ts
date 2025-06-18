@@ -4,7 +4,6 @@
  * @domain `phpmyadmin.net`
  * @version `5.2.2` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/phpmyadmin-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +phpmyadmin.net -- $SHELL -i`
  * @name `phpMyAdmin`
@@ -38,7 +37,7 @@ export const phpMyAdminPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A package from phpmyadmin.net' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/phpmyadmin.net/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

@@ -5,7 +5,6 @@
  * @programs `talosctl`
  * @version `1.10.4` (28 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/talos-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) talosctl`
  * @name `talosctl`

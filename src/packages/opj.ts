@@ -5,7 +5,6 @@
  * @programs `opj_compress`, `opj_decompress`, `opj_dump`
  * @version `2.5.3` (4 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/openjpeg-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openjpeg.org -- $SHELL -i`
  * @name `opj`

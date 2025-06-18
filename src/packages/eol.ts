@@ -5,7 +5,6 @@
  * @programs `eol`
  * @version `0.22.0` (9 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/endoflife-date.md
  *
  * @install `sh <(curl https://pkgx.sh) eol`
  * @name `eol`
@@ -85,7 +84,7 @@ export const eolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'endoflife.date' as const,
+  fullPath: 'eol' as const,
 }
 
 export type EolPackage = typeof eolPackage

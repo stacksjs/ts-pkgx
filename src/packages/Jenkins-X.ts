@@ -5,7 +5,6 @@
  * @programs `jx`
  * @version `3.11.92` (58 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/jenkins-x-io.md
  *
  * @install `sh <(curl https://pkgx.sh) jx`
  * @name `Jenkins X`

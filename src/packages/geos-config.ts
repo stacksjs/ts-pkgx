@@ -5,7 +5,6 @@
  * @programs `geos-config`
  * @version `3.13.1` (15 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/libgeos-org.md
  *
  * @install `sh <(curl https://pkgx.sh) geos-config`
  * @name `geos-config`
@@ -84,7 +83,7 @@ export const geosconfigPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'libgeos.org' as const,
+  fullPath: 'geos-config' as const,
 }
 
 export type GeosconfigPackage = typeof geosconfigPackage

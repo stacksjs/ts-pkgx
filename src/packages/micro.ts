@@ -5,7 +5,6 @@
  * @programs `micro`
  * @version `2.0.14` (4 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/micro-editor-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) micro`
  * @name `micro`
@@ -73,7 +72,7 @@ export const microPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'micro-editor.github.io' as const,
+  fullPath: 'micro' as const,
 }
 
 export type MicroPackage = typeof microPackage

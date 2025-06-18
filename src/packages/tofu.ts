@@ -5,7 +5,6 @@
  * @programs `tofu`
  * @version `1.9.1` (19 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/opentofu-org.md
  *
  * @install `sh <(curl https://pkgx.sh) tofu`
  * @name `tofu`

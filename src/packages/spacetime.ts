@@ -5,7 +5,6 @@
  * @programs `spacetime`
  * @version `2023.12.8` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/spacetimedb-com.md
  *
  * @install `sh <(curl https://pkgx.sh) spacetime`
  * @name `spacetime`

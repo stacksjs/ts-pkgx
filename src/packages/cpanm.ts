@@ -5,7 +5,6 @@
  * @programs `cpanm`
  * @version `1.7048.0` (3 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/cpanmin-us.md
  *
  * @install `sh <(curl https://pkgx.sh) cpanm`
  * @name `cpanm`
@@ -79,7 +78,7 @@ export const cpanmPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cpanmin.us' as const,
+  fullPath: 'cpanm' as const,
 }
 
 export type CpanmPackage = typeof cpanmPackage

@@ -5,7 +5,6 @@
  * @programs `ldapcompare`, `ldapdelete`, `ldapexop`, `ldapmodify`, `ldapmodrdn`, ... (+5 more)
  * @version `2.6.10` (13 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/openldap-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openldap.org -- $SHELL -i`
  * @name `ldap`

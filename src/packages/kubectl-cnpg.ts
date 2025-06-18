@@ -5,7 +5,6 @@
  * @programs `kubectl-cnpg`
  * @version `1.26.0` (6 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/cloudnative-pg-io.md
  *
  * @install `sh <(curl https://pkgx.sh) kubectl-cnpg`
  * @name `kubectl-cnpg`
@@ -75,7 +74,7 @@ export const kubectlcnpgPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cloudnative-pg.io' as const,
+  fullPath: 'kubectl-cnpg' as const,
 }
 
 export type KubectlcnpgPackage = typeof kubectlcnpgPackage

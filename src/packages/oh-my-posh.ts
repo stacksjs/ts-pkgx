@@ -5,7 +5,6 @@
  * @programs `oh-my-posh`
  * @version `26.9.0` (291 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/ohmyposh-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) oh-my-posh`
  * @name `oh-my-posh`

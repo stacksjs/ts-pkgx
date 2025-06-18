@@ -5,7 +5,6 @@
  * @programs `cstool`
  * @version `5.0.6` (7 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/capstone-engine-org.md
  *
  * @install `sh <(curl https://pkgx.sh) cstool`
  * @name `cstool`
@@ -76,7 +75,7 @@ export const cstoolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'capstone-engine.org' as const,
+  fullPath: 'cstool' as const,
 }
 
 export type CstoolPackage = typeof cstoolPackage

@@ -5,7 +5,6 @@
  * @programs `flyway`
  * @version `11.8.2` (41 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/flywaydb-org.md
  *
  * @install `sh <(curl https://pkgx.sh) flyway`
  * @name `flyway`
@@ -117,7 +116,7 @@ export const flywayPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'flywaydb.org' as const,
+  fullPath: 'flyway' as const,
 }
 
 export type FlywayPackage = typeof flywayPackage

@@ -5,7 +5,6 @@
  * @programs `poetry`
  * @version `2.1.3` (21 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/python-poetry-org.md
  *
  * @install `sh <(curl https://pkgx.sh) poetry`
  * @name `poetry`

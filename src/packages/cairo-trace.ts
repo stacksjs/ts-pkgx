@@ -5,7 +5,6 @@
  * @programs `cairo-trace`
  * @version `1.18.4` (4 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/cairographics-org.md
  *
  * @install `sh <(curl https://pkgx.sh) cairo-trace`
  * @name `cairo-trace`
@@ -90,7 +89,7 @@ export const cairotracePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cairographics.org' as const,
+  fullPath: 'cairo-trace' as const,
 }
 
 export type CairotracePackage = typeof cairotracePackage

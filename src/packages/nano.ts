@@ -5,7 +5,6 @@
  * @programs `nano`
  * @version `8.0.0` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/nano-editor-org.md
  *
  * @install `sh <(curl https://pkgx.sh) nano`
  * @name `nano`
@@ -79,7 +78,7 @@ export const nanoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'nano-editor.org' as const,
+  fullPath: 'nano' as const,
 }
 
 export type NanoPackage = typeof nanoPackage

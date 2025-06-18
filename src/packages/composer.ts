@@ -5,7 +5,6 @@
  * @programs `composer`, `composer.phar`
  * @version `2.8.9` (30 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/getcomposer-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +getcomposer.org -- $SHELL -i`
  * @name `composer`
@@ -107,7 +106,7 @@ export const composerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'getcomposer.org' as const,
+  fullPath: 'composer' as const,
 }
 
 export type ComposerPackage = typeof composerPackage

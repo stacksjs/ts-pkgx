@@ -5,7 +5,6 @@
  * @programs `hugo`
  * @version `0.147.8` (123 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/gohugo-io.md
  *
  * @install `sh <(curl https://pkgx.sh) hugo`
  * @name `hugo`
@@ -192,7 +191,7 @@ export const hugoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gohugo.io' as const,
+  fullPath: 'hugo' as const,
 }
 
 export type HugoPackage = typeof hugoPackage

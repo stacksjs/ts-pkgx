@@ -5,7 +5,6 @@
  * @programs `oc`
  * @version `4.19.0` (224 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/openshift-com.md
  *
  * @install `sh <(curl https://pkgx.sh) oc`
  * @name `oc`

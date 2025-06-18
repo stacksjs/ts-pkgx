@@ -5,7 +5,6 @@
  * @programs `duk`
  * @version `2.7.0` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/duktape-org.md
  *
  * @install `sh <(curl https://pkgx.sh) duk`
  * @name `duk`
@@ -70,7 +69,7 @@ export const dukPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'duktape.org' as const,
+  fullPath: 'duk' as const,
 }
 
 export type DukPackage = typeof dukPackage

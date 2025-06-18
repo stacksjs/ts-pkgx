@@ -1,0 +1,80 @@
+/**
+ * **giampaolo/psutil** - Cross-platform lib for process and system monitoring in Python
+ *
+ * @domain `github.com/giampaolo/psutil`
+ * @version `7.0.0` (5 versions available)
+ * @versions From newest version to oldest.
+ *
+ * @install `sh <(curl https://pkgx.sh) +github.com/giampaolo/psutil -- $SHELL -i`
+ * @aliases `giampaolo/psutil`
+ * @dependencies `python.org~3.11`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.giampaolopsutil
+ * // Or access via domain
+ * const samePkg = pantry.githubcomgiampaolopsutil
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "github.com/giampaolo/psutil"
+ * console.log(pkg.description) // "Cross-platform lib for process and system monit..."
+ * console.log(pkg.versions[0]) // "7.0.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com/giampaolo/psutil.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const giampaolopsutilPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'github.com/giampaolo/psutil' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com/giampaolo/psutil' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Cross-platform lib for process and system monitoring in Python' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/giampaolo/psutil/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'sh <(curl https://pkgx.sh) +github.com/giampaolo/psutil -- $SHELL -i' as const,
+  programs: [] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'python.org~3.11',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '7.0.0',
+    '6.1.1',
+    '6.1.0',
+    '6.0.0',
+    '5.9.8',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'giampaolo/psutil',
+  ] as const,
+  fullPath: 'github.com/giampaolo/psutil' as const,
+}
+
+export type GiampaolopsutilPackage = typeof giampaolopsutilPackage

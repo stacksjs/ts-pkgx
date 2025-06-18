@@ -5,7 +5,6 @@
  * @programs `tb`
  * @version `5.20.0` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/tinybird-co.md
  *
  * @install `sh <(curl https://pkgx.sh) tb`
  * @name `tb`
@@ -40,7 +39,7 @@ export const tbPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A package from tinybird.co' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tinybird.co/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

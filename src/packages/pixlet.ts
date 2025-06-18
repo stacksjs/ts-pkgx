@@ -5,7 +5,6 @@
  * @programs `pixlet`
  * @version `0.34.0` (20 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/tidbyt-com.md
  *
  * @install `sh <(curl https://pkgx.sh) pixlet`
  * @name `pixlet`

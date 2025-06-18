@@ -5,7 +5,6 @@
  * @programs `jenkins-lts`, `jenkins-lts-cli`
  * @version `2.504.2` (19 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/jenkins-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i`
  * @name `jenkins-lts`
@@ -96,7 +95,7 @@ export const jenkinsltsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jenkins.io' as const,
+  fullPath: 'jenkins-lts' as const,
 }
 
 export type JenkinsltsPackage = typeof jenkinsltsPackage

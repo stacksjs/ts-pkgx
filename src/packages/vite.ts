@@ -5,7 +5,6 @@
  * @programs `vite`
  * @version `6.3.5` (100 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/vitejs-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) vite`
  * @name `vite`

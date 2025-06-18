@@ -5,7 +5,6 @@
  * @programs `ack`
  * @version `3.9.0` (6 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/beyondgrep-com.md
  *
  * @install `sh <(curl https://pkgx.sh) ack`
  * @name `ack`
@@ -82,7 +81,7 @@ export const ackPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'beyondgrep.com' as const,
+  fullPath: 'ack' as const,
 }
 
 export type AckPackage = typeof ackPackage

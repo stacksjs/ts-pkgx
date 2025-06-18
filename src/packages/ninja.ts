@@ -5,7 +5,6 @@
  * @programs `ninja`
  * @version `1.12.1` (4 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/ninja-build-org.md
  *
  * @install `sh <(curl https://pkgx.sh) ninja`
  * @name `ninja`
@@ -73,7 +72,7 @@ export const ninjaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ninja-build.org' as const,
+  fullPath: 'ninja' as const,
 }
 
 export type NinjaPackage = typeof ninjaPackage

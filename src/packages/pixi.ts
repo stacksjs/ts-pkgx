@@ -5,7 +5,6 @@
  * @programs `pixi`
  * @version `0.48.2` (83 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/prefix-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) pixi`
  * @name `pixi`

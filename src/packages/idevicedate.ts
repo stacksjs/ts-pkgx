@@ -5,7 +5,6 @@
  * @programs `idevicedate`
  * @version `1.3.0` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/libimobiledevice-org.md
  *
  * @install `sh <(curl https://pkgx.sh) idevicedate`
  * @name `idevicedate`
@@ -80,7 +79,7 @@ export const idevicedatePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'libimobiledevice.org' as const,
+  fullPath: 'idevicedate' as const,
 }
 
 export type IdevicedatePackage = typeof idevicedatePackage

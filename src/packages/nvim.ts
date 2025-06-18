@@ -5,7 +5,6 @@
  * @programs `nvim`
  * @version `0.11.2` (15 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/neovim-io.md
  *
  * @install `sh <(curl https://pkgx.sh) nvim`
  * @name `nvim`
@@ -91,7 +90,7 @@ export const nvimPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'neovim.io' as const,
+  fullPath: 'nvim' as const,
 }
 
 export type NvimPackage = typeof nvimPackage

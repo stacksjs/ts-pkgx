@@ -4,7 +4,6 @@
  * @domain `dri.freedesktop.org`
  * @version `2.4.125` (11 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/dri-freedesktop-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +dri.freedesktop.org -- $SHELL -i`
  * @name `libdrm`
@@ -38,7 +37,7 @@ export const libdrmPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A package from dri.freedesktop.org' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dri.freedesktop.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

@@ -5,7 +5,6 @@
  * @programs `gh`
  * @version `2.74.1` (77 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/cli-github-com.md
  *
  * @install `sh <(curl https://pkgx.sh) gh`
  * @name `gh`

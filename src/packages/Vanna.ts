@@ -4,7 +4,6 @@
  * @domain `vanna.ai`
  * @version `0.7.9` (42 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/vanna-ai.md
  *
  * @install `sh <(curl https://pkgx.sh) +vanna.ai -- $SHELL -i`
  * @name `Vanna`

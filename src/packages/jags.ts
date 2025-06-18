@@ -5,7 +5,6 @@
  * @programs `jags`
  * @version `4.3.2` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/mcmc-jags-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) jags`
  * @name `jags`
@@ -79,7 +78,7 @@ export const jagsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mcmc-jags.sourceforge.io' as const,
+  fullPath: 'jags' as const,
 }
 
 export type JagsPackage = typeof jagsPackage

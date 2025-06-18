@@ -5,7 +5,6 @@
  * @programs `chomp`
  * @version `0.2.23` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/chompbuild-com.md
  *
  * @install `sh <(curl https://pkgx.sh) chomp`
  * @name `chomp`
@@ -77,7 +76,7 @@ export const chompPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'chompbuild.com' as const,
+  fullPath: 'chomp' as const,
 }
 
 export type ChompPackage = typeof chompPackage

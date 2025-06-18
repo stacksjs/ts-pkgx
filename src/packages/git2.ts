@@ -5,7 +5,6 @@
  * @programs `git2`
  * @version `1.9.1` (12 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/libgit2-org.md
  *
  * @install `sh <(curl https://pkgx.sh) git2`
  * @name `git2`
@@ -88,7 +87,7 @@ export const git2Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'libgit2.org' as const,
+  fullPath: 'git2' as const,
 }
 
 export type Git2Package = typeof git2Package

@@ -5,7 +5,6 @@
  * @programs `caddy`
  * @version `2.10.0` (10 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/caddyserver-com.md
  *
  * @install `sh <(curl https://pkgx.sh) caddy`
  * @name `caddy`
@@ -79,7 +78,7 @@ export const caddyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'caddyserver.com' as const,
+  fullPath: 'caddy' as const,
 }
 
 export type CaddyPackage = typeof caddyPackage

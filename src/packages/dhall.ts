@@ -5,7 +5,6 @@
  * @programs `dhall`
  * @version `1.42.2` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/dhall-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) dhall`
  * @name `dhall`
@@ -79,7 +78,7 @@ export const dhallPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dhall-lang.org' as const,
+  fullPath: 'dhall' as const,
 }
 
 export type DhallPackage = typeof dhallPackage

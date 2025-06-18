@@ -1,0 +1,85 @@
+/**
+ * **psf/requests** - A simple, yet elegant, HTTP library.
+ *
+ * @domain `github.com/psf/requests`
+ * @version `2.32.4` (6 versions available)
+ * @versions From newest version to oldest.
+ *
+ * @install `sh <(curl https://pkgx.sh) +github.com/psf/requests -- $SHELL -i`
+ * @aliases `psf/requests`
+ * @dependencies `python.org~3.11`, `github.com/Ousret/charset_normalizer^3`, `github.com/kjd/idna^3`, ... (+2 more)
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.psfrequests
+ * // Or access via domain
+ * const samePkg = pantry.githubcompsfrequests
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "github.com/psf/requests"
+ * console.log(pkg.description) // "A simple, yet elegant, HTTP library."
+ * console.log(pkg.versions[0]) // "2.32.4" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com/psf/requests.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const psfrequestsPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'github.com/psf/requests' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com/psf/requests' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'A simple, yet elegant, HTTP library.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/psf/requests/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'sh <(curl https://pkgx.sh) +github.com/psf/requests -- $SHELL -i' as const,
+  programs: [] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'python.org~3.11',
+    'github.com/Ousret/charset_normalizer^3',
+    'github.com/kjd/idna^3',
+    'github.com/urllib3/urllib3^2',
+    'certifi.io/python-certifi^2024',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.32.4',
+    '2.32.3',
+    '2.32.2',
+    '2.32.1',
+    '2.32.0',
+    '2.31.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'psf/requests',
+  ] as const,
+  fullPath: 'github.com/psf/requests' as const,
+}
+
+export type PsfrequestsPackage = typeof psfrequestsPackage

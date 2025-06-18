@@ -5,7 +5,6 @@
  * @programs `unrar`
  * @version `7.1.7` (20 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/rarlab-com.md
  *
  * @install `sh <(curl https://pkgx.sh) unrar`
  * @name `unrar`
@@ -39,7 +38,7 @@ export const unrarPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A package from rarlab.com' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rarlab.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

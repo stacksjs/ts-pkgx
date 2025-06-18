@@ -5,7 +5,6 @@
  * @programs `metagpt`
  * @version `0.8.2` (16 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/deepwisdom-ai.md
  *
  * @install `sh <(curl https://pkgx.sh) metagpt`
  * @name `MetaGPT`
@@ -96,7 +95,7 @@ export const metagptPackage = {
   aliases: [
     'metagpt',
   ] as const,
-  fullPath: 'deepwisdom.ai' as const,
+  fullPath: 'MetaGPT' as const,
 }
 
 export type MetagptPackage = typeof metagptPackage

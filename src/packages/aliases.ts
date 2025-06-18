@@ -1,6 +1,7 @@
 /**
  * Auto-generated aliases for pkgx packages
  */
+ 
 
 export const aliases: Record<string, string> = {
   '0age/create2crunch': 'github.com/0age/create2crunch',

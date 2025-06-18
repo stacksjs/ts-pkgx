@@ -5,7 +5,6 @@
  * @programs `kube-linter`
  * @version `0.7.3` (5 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/kubelinter-io.md
  *
  * @install `sh <(curl https://pkgx.sh) kube-linter`
  * @name `kube-linter`
@@ -74,7 +73,7 @@ export const kubelinterPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kubelinter.io' as const,
+  fullPath: 'kube-linter' as const,
 }
 
 export type KubelinterPackage = typeof kubelinterPackage

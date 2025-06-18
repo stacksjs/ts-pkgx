@@ -5,7 +5,6 @@
  * @programs `cog`
  * @version `6.3.0` (7 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/cocogitto-io.md
  *
  * @install `sh <(curl https://pkgx.sh) cog`
  * @name `cog`
@@ -83,7 +82,7 @@ export const cogPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cocogitto.io' as const,
+  fullPath: 'cog' as const,
 }
 
 export type CogPackage = typeof cogPackage

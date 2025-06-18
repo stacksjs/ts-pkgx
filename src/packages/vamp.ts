@@ -5,7 +5,6 @@
  * @programs `vamp-simple-host`, `vamp-rdf-template-generator`
  * @version `2.10.0` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/vamp-plugins-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +vamp-plugins.org -- $SHELL -i`
  * @name `vamp`

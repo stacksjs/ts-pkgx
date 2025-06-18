@@ -5,7 +5,6 @@
  * @programs `openssl`, `c_rehash`
  * @version `3.5.0` (30 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/openssl-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openssl.org -- $SHELL -i`
  * @name `OpenSSL`

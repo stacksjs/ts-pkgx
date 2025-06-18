@@ -5,7 +5,6 @@
  * @programs `kubectl-krew`
  * @version `0.4.5` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/krew-sigs-k8s-io.md
  *
  * @install `sh <(curl https://pkgx.sh) kubectl-krew`
  * @name `kubectl-krew`
@@ -78,7 +77,7 @@ export const kubectlkrewPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'krew.sigs.k8s.io' as const,
+  fullPath: 'kubectl-krew' as const,
 }
 
 export type KubectlkrewPackage = typeof kubectlkrewPackage

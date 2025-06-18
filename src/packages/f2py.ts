@@ -5,7 +5,6 @@
  * @programs `f2py`
  * @version `2.3.0` (18 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/numpy-org.md
  *
  * @install `sh <(curl https://pkgx.sh) f2py`
  * @name `f2py`

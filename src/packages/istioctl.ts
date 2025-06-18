@@ -5,7 +5,6 @@
  * @programs `istioctl`
  * @version `1.26.1` (41 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/istio-io.md
  *
  * @install `sh <(curl https://pkgx.sh) istioctl`
  * @name `istioctl`
@@ -110,7 +109,7 @@ export const istioctlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'istio.io' as const,
+  fullPath: 'istioctl' as const,
 }
 
 export type IstioctlPackage = typeof istioctlPackage

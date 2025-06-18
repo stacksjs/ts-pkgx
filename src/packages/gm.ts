@@ -5,7 +5,6 @@
  * @programs `gm`
  * @version `1.3.45` (5 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/graphicsmagick-org.md
  *
  * @install `sh <(curl https://pkgx.sh) gm`
  * @name `gm`

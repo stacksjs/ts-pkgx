@@ -5,7 +5,6 @@
  * @programs `cb`
  * @version `0.9.1` (3 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/getclipboard-app.md
  *
  * @install `sh <(curl https://pkgx.sh) cb`
  * @name `cb`

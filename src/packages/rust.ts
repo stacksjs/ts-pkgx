@@ -5,7 +5,6 @@
  * @programs `cargo-clippy`, `cargo-fmt`, `clippy-driver`, `rust-analyzer`, `rust-gdb`, ... (+5 more)
  * @version `1.87.0` (34 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/rust-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +rust-lang.org -- $SHELL -i`
  * @name `rust`

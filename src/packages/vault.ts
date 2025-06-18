@@ -5,7 +5,6 @@
  * @programs `vault`
  * @version `1.19.5` (56 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/vaultproject-io.md
  *
  * @install `sh <(curl https://pkgx.sh) vault`
  * @name `vault`

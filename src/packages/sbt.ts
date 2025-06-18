@@ -5,7 +5,6 @@
  * @programs `sbt`
  * @version `1.11.2` (21 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/scala-sbt-org.md
  *
  * @install `sh <(curl https://pkgx.sh) sbt`
  * @name `sbt`

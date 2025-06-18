@@ -1,0 +1,99 @@
+/**
+ * **regbot** - Docker and OCI Registry Client in Go and tooling using those libraries.
+ *
+ * @domain `github.com/regclient/regclient/regbot`
+ * @programs `regbot`
+ * @version `0.8.3` (15 versions available)
+ * @versions From newest version to oldest.
+ *
+ * @install `sh <(curl https://pkgx.sh) regbot`
+ * @name `regbot`
+ * @aliases `regclient/regclient/regbot`
+ * @dependencies `curl.se/ca-certs`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access the package
+ * const pkg = pantry.regbot
+ * // Or access via domain
+ * const samePkg = pantry.githubcomregclientregclientregbot
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "regbot"
+ * console.log(pkg.description) // "Docker and OCI Registry Client in Go and toolin..."
+ * console.log(pkg.programs)    // ["regbot"]
+ * console.log(pkg.versions[0]) // "0.8.3" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/github-com/regclient/regclient/regbot.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const regbotPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'regbot' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'github.com/regclient/regclient/regbot' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Docker and OCI Registry Client in Go and tooling using those libraries.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/regclient/regclient/regbot/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'sh <(curl https://pkgx.sh) regbot' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'regbot',
+  ] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'curl.se/ca-certs',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.8.3',
+    '0.8.2',
+    '0.8.1',
+    '0.8.0',
+    '0.7.2',
+    '0.7.1',
+    '0.7.0',
+    '0.6.1',
+    '0.6.0',
+    '0.5.7',
+    '0.5.6',
+    '0.5.5',
+    '0.5.4',
+    '0.5.3',
+    '0.5.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'regclient/regclient/regbot',
+  ] as const,
+  fullPath: 'github.com/regclient/regclient/regbot' as const,
+}
+
+export type RegbotPackage = typeof regbotPackage

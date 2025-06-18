@@ -5,7 +5,6 @@
  * @programs `mun`
  * @version `0.5.0` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/mun-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) mun`
  * @name `mun`
@@ -86,7 +85,7 @@ export const munPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mun-lang.org' as const,
+  fullPath: 'mun' as const,
 }
 
 export type MunPackage = typeof munPackage

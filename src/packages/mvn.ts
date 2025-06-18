@@ -5,7 +5,6 @@
  * @programs `mvn`, `mvnDebug`, `mvnyjp`
  * @version `3.9.10` (10 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/maven-apache-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i`
  * @name `mvn`
@@ -88,7 +87,7 @@ export const mvnPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'maven.apache.org' as const,
+  fullPath: 'mvn' as const,
 }
 
 export type MvnPackage = typeof mvnPackage

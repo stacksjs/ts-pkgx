@@ -5,7 +5,6 @@
  * @programs `ord`
  * @version `0.6.1` (4 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/ordinals-com.md
  *
  * @install `sh <(curl https://pkgx.sh) ord`
  * @name `ord`

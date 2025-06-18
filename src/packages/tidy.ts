@@ -5,7 +5,6 @@
  * @programs `tidy`
  * @version `5.8.0` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/html-tidy-org.md
  *
  * @install `sh <(curl https://pkgx.sh) tidy`
  * @name `tidy`
@@ -70,7 +69,7 @@ export const tidyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'html-tidy.org' as const,
+  fullPath: 'tidy' as const,
 }
 
 export type TidyPackage = typeof tidyPackage

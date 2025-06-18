@@ -5,7 +5,6 @@
  * @programs `rio`
  * @version `0.2.19` (4 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/rioterm-com.md
  *
  * @install `sh <(curl https://pkgx.sh) rio`
  * @name `rio`

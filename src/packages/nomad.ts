@@ -5,7 +5,6 @@
  * @programs `nomad`
  * @version `1.10.2` (14 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/nomadproject-io.md
  *
  * @install `sh <(curl https://pkgx.sh) nomad`
  * @name `nomad`
@@ -83,7 +82,7 @@ export const nomadPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'nomadproject.io' as const,
+  fullPath: 'nomad' as const,
 }
 
 export type NomadPackage = typeof nomadPackage

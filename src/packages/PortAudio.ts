@@ -4,7 +4,6 @@
  * @domain `portaudio.com`
  * @version `19.7.0` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/portaudio-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +portaudio.com -- $SHELL -i`
  * @name `PortAudio`

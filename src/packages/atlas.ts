@@ -5,7 +5,6 @@
  * @programs `atlas`
  * @version `0.35.0` (22 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/atlasgo-io.md
  *
  * @install `sh <(curl https://pkgx.sh) atlas`
  * @name `atlas`
@@ -91,7 +90,7 @@ export const atlasPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'atlasgo.io' as const,
+  fullPath: 'atlas' as const,
 }
 
 export type AtlasPackage = typeof atlasPackage

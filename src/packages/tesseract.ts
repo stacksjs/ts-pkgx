@@ -5,7 +5,6 @@
  * @programs `tesseract`
  * @version `5.5.1` (9 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/tesseract-ocr-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) tesseract`
  * @name `tesseract`

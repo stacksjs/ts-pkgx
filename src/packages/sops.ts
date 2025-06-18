@@ -5,7 +5,6 @@
  * @programs `sops`
  * @version `3.10.2` (9 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/getsops-io.md
  *
  * @install `sh <(curl https://pkgx.sh) sops`
  * @name `sops`
@@ -78,7 +77,7 @@ export const sopsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'getsops.io' as const,
+  fullPath: 'sops' as const,
 }
 
 export type SopsPackage = typeof sopsPackage

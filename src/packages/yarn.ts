@@ -5,7 +5,6 @@
  * @programs `yarn`, `yarnpkg`
  * @version `4.9.2` (40 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/yarnpkg-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i`
  * @name `yarn`

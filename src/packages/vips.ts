@@ -5,7 +5,6 @@
  * @programs `vips`, `vipsedit`, `vipsheader`, `vipsprofile`, `vipsthumbnail`
  * @version `8.17.0` (9 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/libvips-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i`
  * @name `vips`
@@ -115,7 +114,7 @@ export const vipsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'libvips.org' as const,
+  fullPath: 'vips' as const,
 }
 
 export type VipsPackage = typeof vipsPackage

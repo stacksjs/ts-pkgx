@@ -5,7 +5,6 @@
  * @programs `curl`, `curl-config`
  * @version `8.14.1` (25 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/curl-se.md
  *
  * @install `sh <(curl https://pkgx.sh) +curl.se -- $SHELL -i`
  * @name `cURL`
@@ -104,7 +103,7 @@ export const cURLPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'curl.se' as const,
+  fullPath: 'cURL' as const,
 }
 
 export type CURLPackage = typeof cURLPackage

@@ -5,7 +5,6 @@
  * @programs `mc`, `mcdiff`, `mcedit`, `mcview`
  * @version `4.8.33` (6 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/midnight-commander-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +midnight-commander.org -- $SHELL -i`
  * @name `Midnight Commander`

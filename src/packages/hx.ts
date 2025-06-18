@@ -5,7 +5,6 @@
  * @programs `hx`
  * @version `25.1.1` (8 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/helix-editor-com.md
  *
  * @install `sh <(curl https://pkgx.sh) hx`
  * @name `hx`

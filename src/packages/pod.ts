@@ -5,7 +5,6 @@
  * @programs `pod`
  * @version `1.16.2` (13 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/cocoapods-org.md
  *
  * @install `sh <(curl https://pkgx.sh) pod`
  * @name `pod`
@@ -92,7 +91,7 @@ export const podPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cocoapods.org' as const,
+  fullPath: 'pod' as const,
 }
 
 export type PodPackage = typeof podPackage

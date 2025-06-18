@@ -5,7 +5,6 @@
  * @programs `gr2fonttest`
  * @version `1.3.14` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/graphite-sil-org.md
  *
  * @install `sh <(curl https://pkgx.sh) gr2fonttest`
  * @name `gr2fonttest`
@@ -70,7 +69,7 @@ export const gr2fonttestPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'graphite.sil.org' as const,
+  fullPath: 'gr2fonttest' as const,
 }
 
 export type Gr2fonttestPackage = typeof gr2fonttestPackage

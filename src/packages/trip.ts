@@ -5,7 +5,6 @@
  * @programs `trip`
  * @version `0.13.0` (7 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/trippy-cli-rs.md
  *
  * @install `sh <(curl https://pkgx.sh) trip`
  * @name `trip`

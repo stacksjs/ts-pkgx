@@ -5,7 +5,6 @@
  * @programs `cue`
  * @version `0.13.1` (20 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/cuelang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) cue`
  * @name `cue`
@@ -89,7 +88,7 @@ export const cuePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cuelang.org' as const,
+  fullPath: 'cue' as const,
 }
 
 export type CuePackage = typeof cuePackage

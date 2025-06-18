@@ -5,7 +5,6 @@
  * @programs `srt-ffplay`, `srt-file-transmit`, `srt-live-transmit`, `srt-tunnel`
  * @version `1.5.4` (3 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/srtalliance-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +srtalliance.org -- $SHELL -i`
  * @name `srt`

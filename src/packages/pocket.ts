@@ -5,7 +5,6 @@
  * @programs `pocket`
  * @version `0.12.0` (8 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/pokt-network.md
  *
  * @install `sh <(curl https://pkgx.sh) pocket`
  * @name `pocket`

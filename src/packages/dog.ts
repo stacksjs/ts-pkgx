@@ -5,7 +5,6 @@
  * @programs `dog`
  * @version `0.1.0` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/dns-lookup-dog.md
  *
  * @install `sh <(curl https://pkgx.sh) dog`
  * @name `dog`
@@ -77,7 +76,7 @@ export const dogPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dns.lookup.dog' as const,
+  fullPath: 'dog' as const,
 }
 
 export type DogPackage = typeof dogPackage

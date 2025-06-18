@@ -5,7 +5,6 @@
  * @programs `arkade`
  * @version `0.11.39` (37 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/arkade-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) arkade`
  * @name `Arkade`
@@ -109,7 +108,7 @@ export const arkadePackage = {
   aliases: [
     'arkade',
   ] as const,
-  fullPath: 'arkade.dev' as const,
+  fullPath: 'Arkade' as const,
 }
 
 export type ArkadePackage = typeof arkadePackage

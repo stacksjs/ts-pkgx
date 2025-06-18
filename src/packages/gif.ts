@@ -5,7 +5,6 @@
  * @programs `gif2rgb`, `gifbuild`, `gifclrmp`, `giffix`, `giftext`, ... (+1 more)
  * @version `5.2.2` (2 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/giflib-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +giflib.sourceforge.io -- $SHELL -i`
  * @name `gif`
@@ -76,7 +75,7 @@ export const gifPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'giflib.sourceforge.io' as const,
+  fullPath: 'gif' as const,
 }
 
 export type GifPackage = typeof gifPackage

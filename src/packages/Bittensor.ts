@@ -4,7 +4,6 @@
  * @domain `bittensor.com`
  * @version `9.7.0` (63 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/bittensor-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i`
  * @name `Bittensor`
@@ -132,7 +131,7 @@ export const bittensorPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'bittensor.com' as const,
+  fullPath: 'Bittensor' as const,
 }
 
 export type BittensorPackage = typeof bittensorPackage

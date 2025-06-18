@@ -1,0 +1,131 @@
+/**
+ * **rubygems.org** - Powerful, clean, object-oriented scripting language
+ *
+ * @domain `rubygems.org`
+ * @programs `bundle`, `bundler`, `gem`
+ * @version `3.6.9` (57 versions available)
+ * @versions From newest version to oldest.
+ *
+ * @install `sh <(curl https://pkgx.sh) +rubygems.org -- $SHELL -i`
+ * @dependencies `ruby-lang.org>=2.3`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * const pkg = pantry.rubygemsorg
+ * console.log(pkg.name)        // "rubygems.org"
+ * console.log(pkg.description) // "Powerful, clean, object-oriented scripting lang..."
+ * console.log(pkg.programs)    // ["bundle", "bundler", ...]
+ * console.log(pkg.versions[0]) // "3.6.9" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/rubygems-org.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const rubygemsorgPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'rubygems.org' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'rubygems.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'Powerful, clean, object-oriented scripting language' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rubygems.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'sh <(curl https://pkgx.sh) +rubygems.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'bundle',
+    'bundler',
+    'gem',
+  ] as const,
+  companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'ruby-lang.org>=2.3',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.6.9',
+    '3.6.8',
+    '3.6.7',
+    '3.6.6',
+    '3.6.5',
+    '3.6.4',
+    '3.6.3',
+    '3.6.2',
+    '3.6.1',
+    '3.6.0',
+    '3.5.23',
+    '3.5.22',
+    '3.5.21',
+    '3.5.20',
+    '3.5.19',
+    '3.5.18',
+    '3.5.17',
+    '3.5.16',
+    '3.5.15',
+    '3.5.14',
+    '3.5.13',
+    '3.5.12',
+    '3.5.11',
+    '3.5.10',
+    '3.5.9',
+    '3.5.8',
+    '3.5.7',
+    '3.5.6',
+    '3.5.5',
+    '3.5.4',
+    '3.5.3',
+    '3.5.2',
+    '3.5.1',
+    '3.5.0',
+    '3.4.22',
+    '3.4.21',
+    '3.4.20',
+    '3.4.19',
+    '3.4.18',
+    '3.4.17',
+    '3.4.16',
+    '3.4.15',
+    '3.4.14',
+    '3.4.13',
+    '3.4.10',
+    '3.4.9',
+    '3.4.7',
+    '3.4.6',
+    '3.4.5',
+    '3.4.3',
+    '3.4.2',
+    '3.4.1',
+    '3.4.0',
+    '3.3.27',
+    '3.3.26',
+    '3.3.25',
+    '3.2.34',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'rubygems.org' as const,
+}
+
+export type RubygemsorgPackage = typeof rubygemsorgPackage

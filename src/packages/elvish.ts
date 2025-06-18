@@ -5,7 +5,6 @@
  * @programs `elvish`
  * @version `0.21.0` (4 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/elv-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) elvish`
  * @name `elvish`
@@ -73,7 +72,7 @@ export const elvishPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'elv.sh' as const,
+  fullPath: 'elvish' as const,
 }
 
 export type ElvishPackage = typeof elvishPackage

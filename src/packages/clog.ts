@@ -5,7 +5,6 @@
  * @programs `clog`
  * @version `0.9.3` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/clog-tool-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) clog`
  * @name `clog`
@@ -70,7 +69,7 @@ export const clogPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'clog-tool.github.io' as const,
+  fullPath: 'clog' as const,
 }
 
 export type ClogPackage = typeof clogPackage

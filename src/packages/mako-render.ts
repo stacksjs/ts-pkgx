@@ -5,7 +5,6 @@
  * @programs `mako-render`
  * @version `1.3.10` (12 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/makotemplates-org.md
  *
  * @install `sh <(curl https://pkgx.sh) mako-render`
  * @name `mako-render`
@@ -88,7 +87,7 @@ export const makorenderPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'makotemplates.org' as const,
+  fullPath: 'mako-render' as const,
 }
 
 export type MakorenderPackage = typeof makorenderPackage

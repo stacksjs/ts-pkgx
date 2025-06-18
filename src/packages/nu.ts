@@ -5,7 +5,6 @@
  * @programs `nu`
  * @version `0.105.1` (48 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/nushell-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) nu`
  * @name `nu`

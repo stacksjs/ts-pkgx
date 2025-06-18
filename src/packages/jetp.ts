@@ -5,7 +5,6 @@
  * @programs `jetp`
  * @version `0.0.1` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/jetporch-com.md
  *
  * @install `sh <(curl https://pkgx.sh) jetp`
  * @name `jetp`
@@ -70,7 +69,7 @@ export const jetpPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jetporch.com' as const,
+  fullPath: 'jetp' as const,
 }
 
 export type JetpPackage = typeof jetpPackage

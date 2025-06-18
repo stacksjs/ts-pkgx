@@ -5,7 +5,6 @@
  * @programs `local-ai`
  * @version `2.26.0` (37 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/localai-io.md
  *
  * @install `sh <(curl https://pkgx.sh) local-ai`
  * @name `LocalAI`
@@ -124,7 +123,7 @@ export const localaiPackage = {
   aliases: [
     'local-ai',
   ] as const,
-  fullPath: 'localai.io' as const,
+  fullPath: 'LocalAI' as const,
 }
 
 export type LocalaiPackage = typeof localaiPackage

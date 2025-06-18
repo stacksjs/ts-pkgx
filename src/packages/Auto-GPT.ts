@@ -5,7 +5,6 @@
  * @programs `auto-gpt`
  * @version `0.4.7` (9 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/agpt-co.md
  *
  * @install `sh <(curl https://pkgx.sh) auto-gpt`
  * @name `Auto-GPT`
@@ -90,7 +89,7 @@ export const autogptPackage = {
   aliases: [
     'auto-gpt',
   ] as const,
-  fullPath: 'agpt.co' as const,
+  fullPath: 'Auto-GPT' as const,
 }
 
 export type AutogptPackage = typeof autogptPackage

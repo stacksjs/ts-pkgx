@@ -5,7 +5,6 @@
  * @programs `speexdec`
  * @version `1.2.1` (1 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/speex-org.md
  *
  * @install `sh <(curl https://pkgx.sh) speexdec`
  * @name `speexdec`

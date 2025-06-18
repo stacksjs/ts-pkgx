@@ -5,7 +5,6 @@
  * @programs `mz`
  * @version `0.112.2` (45 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/materialize-com.md
  *
  * @install `sh <(curl https://pkgx.sh) mz`
  * @name `mz`

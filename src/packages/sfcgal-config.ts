@@ -5,7 +5,6 @@
  * @programs `sfcgal-config`
  * @version `2.1.0` (6 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/sfcgal-org.md
  *
  * @install `sh <(curl https://pkgx.sh) sfcgal-config`
  * @name `sfcgal-config`

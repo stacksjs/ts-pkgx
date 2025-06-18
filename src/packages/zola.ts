@@ -5,7 +5,6 @@
  * @programs `zola`
  * @version `0.20.0` (6 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/getzola-org.md
  *
  * @install `sh <(curl https://pkgx.sh) zola`
  * @name `zola`
@@ -75,7 +74,7 @@ export const zolaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'getzola.org' as const,
+  fullPath: 'zola' as const,
 }
 
 export type ZolaPackage = typeof zolaPackage

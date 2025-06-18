@@ -5,7 +5,6 @@
  * @programs `biome`
  * @version `1.9.4` (28 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/biomejs-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) biome`
  * @name `biome`
@@ -97,7 +96,7 @@ export const biomePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'biomejs.dev' as const,
+  fullPath: 'biome' as const,
 }
 
 export type BiomePackage = typeof biomePackage

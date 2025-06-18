@@ -10,6 +10,26 @@ import { aliases } from './packages/aliases'
 // Lazy import of utils functions to avoid module loading issues
 
 /**
+ * GitHub repository mapping for packages that don't have complete repository paths
+ */
+
+/**
+ * Converts package name from filename format to URL format for nested packages
+ * Handles special cases like GitHub repositories with multiple path segments
+ */
+function convertPackageNameToUrl(packageName: string): string {
+  // Handle regular nested packages: "domain-name" -> "domain/name"
+  return packageName.replace(/^([^-]+)-(.+)$/, (match, domain, name) => {
+    // Check if this looks like a nested package (domain contains a dot)
+    if (domain.includes('.')) {
+      return `${domain}/${name}`
+    }
+    // Otherwise, keep the original name
+    return packageName
+  })
+}
+
+/**
  * Helper function to get domain as TypeScript variable name
  */
 function getDomainAsTypescriptName(domain: string): string {
@@ -246,7 +266,6 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
   if (packageInfo.versions && packageInfo.versions.length > 0) {
     lines.push(` * @version \`${packageInfo.versions[0]}\` (${packageInfo.versions.length} versions available)`)
     lines.push(` * @versions From newest version to oldest.`)
-    lines.push(` * @see https://ts-pkgx.netlify.app/packages/${domainName.replace(/\./g, '-')}.md`)
   }
 
   // Installation command
@@ -469,34 +488,49 @@ function sanitizeFilename(packageName: string): string {
 }
 
 export function savePackageAsTypeScript(outputDir: string, domainName: string, packageInfo: PkgxPackage): string {
-  // Ensure output directory exists
+  // Ensure base output directory exists
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true })
   }
 
-  // Determine the best filename to use
-  let filename: string
+  let filePath: string
 
-  // For nested domains (containing "/"), always use domain-based naming to avoid conflicts
-  // For simple domains, use package name if it's meaningful and different from domain
+  // For nested domains (containing "/"), create proper directory structure
   if (domainName.includes('/')) {
-    // Always use domain-based naming for nested packages like github.com/user/repo
-    filename = domainName.replace(/\//g, '-')
-  }
-  else if (packageInfo.name
-    && packageInfo.name !== domainName
-    && packageInfo.name !== domainName.split('.')[0] // Don't use just the first part of domain
-    && packageInfo.name.length > 1) {
-    // Use the package name for simple domains when it makes sense
-    filename = sanitizeFilename(packageInfo.name)
+    // Split the domain into parts: github.com/user/repo -> [github.com, user, repo]
+    const parts = domainName.split('/')
+    const baseDomain = parts[0] // github.com
+    const subParts = parts.slice(1) // [user, repo]
+
+    // Create directory structure: outputDir/github.com/user/
+    const packageDir = path.join(outputDir, baseDomain, ...subParts.slice(0, -1))
+    if (!fs.existsSync(packageDir)) {
+      fs.mkdirSync(packageDir, { recursive: true })
+    }
+
+    // Use the last part as filename: repo.ts
+    const filename = sanitizeFilename(subParts[subParts.length - 1])
+    filePath = path.join(packageDir, `${filename}.ts`)
   }
   else {
-    // Fall back to the domain-based naming
-    filename = domainName.replace(/\//g, '-')
-  }
+    // For simple domains, determine the best filename to use
+    let filename: string
 
-  // Create the TypeScript file path
-  const filePath = path.join(outputDir, `${filename}.ts`)
+    if (packageInfo.name
+      && packageInfo.name !== domainName
+      && packageInfo.name !== domainName.split('.')[0] // Don't use just the first part of domain
+      && packageInfo.name.length > 1) {
+      // Use the package name for simple domains when it makes sense
+      filename = sanitizeFilename(packageInfo.name)
+    }
+    else {
+      // Fall back to the domain-based naming
+      filename = domainName.replace(/\./g, '-')
+    }
+
+    // Create the TypeScript file path in the base directory
+    filePath = path.join(outputDir, `${filename}.ts`)
+  }
 
   // Remove fetchedAt from the package info before generating TypeScript
   const cleanPackageInfo = { ...packageInfo }
@@ -822,7 +856,9 @@ export async function fetchPkgxPackage(
       // Reset navigation logged state at the beginning of each fetch
       navigationLogged = false
 
-      const pkgUrl = `https://pkgx.dev/pkgs/${packageName}/`
+      // Convert package name from filename format to URL format for nested packages
+      const urlPackageName = convertPackageNameToUrl(packageName)
+      const pkgUrl = `https://pkgx.dev/pkgs/${urlPackageName}/`
       logNavigation(pkgUrl)
 
       // Navigate to the package page
@@ -1083,21 +1119,48 @@ export async function fetchPkgxPackage(
         // Try a simpler extraction approach
         const content = await page.content()
 
-        // For nested paths, use the last part as the name
+        // For nested paths, use the last part as the name and preserve the full domain
         if (originalName.includes('/')) {
           const parts = originalName.split('/')
           packageInfo.name = parts[parts.length - 1]
-          packageInfo.domain = parts[0]
+          packageInfo.domain = originalName // Keep the full path as domain
+          fullDomainName = originalName
         }
         else {
           packageInfo.name = originalName
           packageInfo.domain = fullDomainName
         }
 
-        // Try direct selector approach
+        // Try multiple approaches to extract description
         packageInfo.description = await page.evaluate(() => {
-          const descEl = document.querySelector('h5.MuiTypography-root')
-          return descEl ? descEl.textContent?.trim() || '' : ''
+          // Try various selectors for description
+          const selectors = [
+            'h5.MuiTypography-root',
+            '[data-testid="description"]',
+            '.description',
+            'p.description',
+            'meta[name="description"]',
+          ]
+
+          for (const selector of selectors) {
+            const element = document.querySelector(selector)
+            if (element) {
+              const text = selector.includes('meta')
+                ? (element as HTMLMetaElement).content
+                : element.textContent?.trim()
+              if (text && text.length > 0) {
+                return text
+              }
+            }
+          }
+
+          // Fallback: try to extract from page title or first paragraph
+          const title = document.title
+          if (title && !title.toLowerCase().includes('pkgx')) {
+            return title
+          }
+
+          return ''
         })
 
         // Extract from HTML content for versions
@@ -1133,18 +1196,45 @@ export async function fetchPkgxPackage(
         packageInfo.githubUrl = gitUrl
       }
 
-      // Try to get versions from GitHub API if still empty
+      // Try to get versions from GitHub API if still empty, but only for certain domains
       if (!packageInfo.versions || packageInfo.versions.length === 0) {
-        console.warn('Attempting to fetch versions from GitHub API...')
-        try {
-          // Get the correct GitHub path - use domain if available
-          const githubPath = packageInfo.domain || packageName
-          const versions = await fetchVersionsFromGitHub(githubPath)
-          packageInfo.versions = versions
+        const domain = packageInfo.domain || packageName
+        // Only try GitHub API for packages that are likely to be in the pkgx pantry
+        // Skip known external domains that don't use the pantry structure
+        const skipGitHubAPI = [
+          'apache.org',
+          'breakfastquay.com',
+          'catb.org',
+          'bloomreach.com',
+          'cairographics.org',
+          'certifi.io',
+          'charm.sh',
+          'aws.amazon.com',
+          'google.com',
+          'microsoft.com',
+          'mozilla.org',
+          'freedesktop.org',
+          'gnome.org',
+          'kde.org',
+          'sourceforge.net',
+          'sf.net',
+        ].some(skipDomain => domain.startsWith(skipDomain))
+
+        if (!skipGitHubAPI) {
+          console.warn('Attempting to fetch versions from GitHub API...')
+          try {
+            // Get the correct GitHub path - use domain if available
+            const githubPath = packageInfo.domain || packageName
+            const versions = await fetchVersionsFromGitHub(githubPath)
+            packageInfo.versions = versions
+          }
+          catch (error) {
+            console.warn(`Failed to fetch versions for ${packageName} from GitHub API:`, error)
+            packageInfo.versions = []
+          }
         }
-        catch (error) {
-          console.warn(`Failed to fetch versions for ${packageName} from GitHub API:`, error)
-          packageInfo.versions = []
+        else {
+          console.log(`Skipping GitHub API lookup for external domain: ${domain}`)
         }
       }
 
@@ -1497,6 +1587,12 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
     ]
 
     allPackageNames = allPackageNames.filter((name) => {
+      // Filter out .pkgroot entries - these are just markers, not actual packages
+      if (name.endsWith('/.pkgroot')) {
+        console.log(`Filtering out .pkgroot marker: ${name}`)
+        return false
+      }
+
       // Filter out agwa.name as standalone - only agwa.name/git-crypt is valid
       if (name === 'agwa.name') {
         console.log(`Filtering out standalone agwa.name - only agwa.name/git-crypt is valid`)
@@ -1925,7 +2021,9 @@ export async function fetchAndSavePackage(
 
               try {
                 // Use the exact URL we know works
-                const directUrl = `https://pkgx.dev/pkgs/${packageName}/`
+                // Convert package name from filename format to URL format for nested packages
+                const urlPackageName = convertPackageNameToUrl(packageName)
+                const directUrl = `https://pkgx.dev/pkgs/${urlPackageName}/`
                 console.error(`Trying direct URL: ${directUrl}`)
 
                 await page.goto(directUrl, {
@@ -2040,6 +2138,8 @@ export async function fetchAndSavePackage(
         const hasVersions = packageInfo.versions && packageInfo.versions.length > 0
         const hasPrograms = packageInfo.programs && packageInfo.programs.length > 0
         const hasPackageYml = packageInfo.packageYmlUrl && packageInfo.packageYmlUrl.length > 0
+        const hasDependencies = packageInfo.dependencies && packageInfo.dependencies.length > 0
+        const hasCompanions = packageInfo.companions && packageInfo.companions.length > 0
 
         // Only skip if clearly problematic descriptions
         const hasClearlyBadDescription = hasDescription && (
@@ -2050,7 +2150,15 @@ export async function fetchAndSavePackage(
           || packageInfo.description.toLowerCase().trim() === 'error'
         )
 
-        const hasValidData = (hasDescription && !hasClearlyBadDescription) || hasVersions || hasPrograms || hasPackageYml
+        // Be more permissive - consider a package valid if it has:
+        // 1. A non-problematic description (even if generic), OR
+        // 2. Any structural data (versions, programs, dependencies, companions, packageYml), OR
+        // 3. A valid domain name (for external packages that may have minimal pkgx data)
+        const hasValidDescription = hasDescription && !hasClearlyBadDescription
+        const hasStructuralData = hasVersions || hasPrograms || hasPackageYml || hasDependencies || hasCompanions
+        const hasValidDomain = packageInfo.domain && packageInfo.domain.includes('.')
+
+        const hasValidData = hasValidDescription || hasStructuralData || hasValidDomain
 
         if (!hasValidData) {
           console.error(`Package ${packageName} appears to have no meaningful data. Skipping to avoid creating empty files.`)

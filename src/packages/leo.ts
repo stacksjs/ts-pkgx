@@ -5,7 +5,6 @@
  * @programs `leo`
  * @version `2.7.0` (14 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/leo-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) leo`
  * @name `leo`
@@ -91,7 +90,7 @@ export const leoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'leo-lang.org' as const,
+  fullPath: 'leo' as const,
 }
 
 export type LeoPackage = typeof leoPackage

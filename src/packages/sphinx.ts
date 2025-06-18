@@ -5,7 +5,6 @@
  * @programs `sphinx-apidoc`, `sphinx-autogen`, `sphinx-build`, `sphinx-quickstart`
  * @version `8.2.3` (42 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/sphinx-doc-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +sphinx-doc.org -- $SHELL -i`
  * @name `sphinx`

@@ -5,7 +5,6 @@
  * @programs `uplift`
  * @version `2.25.0` (5 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/upliftci-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) uplift`
  * @name `uplift`

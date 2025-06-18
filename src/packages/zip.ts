@@ -5,7 +5,6 @@
  * @programs `zipcmp`, `zipmerge`, `ziptool`
  * @version `1.11.4` (7 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/libzip-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libzip.org -- $SHELL -i`
  * @name `zip`
@@ -91,7 +90,7 @@ export const zipPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'libzip.org' as const,
+  fullPath: 'zip' as const,
 }
 
 export type ZipPackage = typeof zipPackage

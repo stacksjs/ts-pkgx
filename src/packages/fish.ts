@@ -5,7 +5,6 @@
  * @programs `fish`, `fish_indent`, `fish_key_reader`
  * @version `4.0.2` (11 versions available)
  * @versions From newest version to oldest.
- * @see https://ts-pkgx.netlify.app/packages/fishshell-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +fishshell.com -- $SHELL -i`
  * @name `fish`
@@ -90,7 +89,7 @@ export const fishPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'fishshell.com' as const,
+  fullPath: 'fish' as const,
 }
 
 export type FishPackage = typeof fishPackage
