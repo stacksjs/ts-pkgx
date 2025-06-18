@@ -6,9 +6,9 @@
  * @version `0.2.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) get-blessed`
+ * @install `launchpad install get-blessed`
  * @name `get-blessed`
- * @dependencies `linuxopenssl.org`, `openssl.org`
+ * @dependencies `openssl.org`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const getblessedPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) get-blessed' as const,
+  installCommand: 'launchpad install get-blessed' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,8 +62,9 @@ export const getblessedPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxopenssl.org',
     'openssl.org',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,7 +80,6 @@ export const getblessedPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/get-blessed' as const,
 }
 
 export type GetblessedPackage = typeof getblessedPackage

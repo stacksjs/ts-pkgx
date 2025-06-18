@@ -6,29 +6,25 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +kernel.org/linux-headers -- $SHELL -i`
- * @aliases `linux-headers`
+ * @dependencies `gnu.org/sed`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.linuxheaders
- * // Or access via domain
- * const samePkg = pantry.kernelorglinuxheaders
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kernel.org/linux-headers"
+ * const pkg = pantry.kernelorglinuxheaders
+ * console.log(pkg.name)        // "linux-headers"
  * console.log(pkg.versions[0]) // "5.19.17" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kernel-org/linux-headers.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const linuxheadersPackage = {
+export const kernelorglinuxheadersPackage = {
   /**
    * The display name of this package.
    */
-  name: 'kernel.org/linux-headers' as const,
+  name: 'linux-headers' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +43,13 @@ export const linuxheadersPackage = {
   installCommand: 'launchpad install +kernel.org/linux-headers -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/sed',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -237,14 +239,7 @@ export const linuxheadersPackage = {
     '5.4.244',
     '5.4.243',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'linux-headers',
-  ] as const,
-  fullPath: 'kernel.org/linux-headers' as const,
+  aliases: [] as const,
 }
 
-export type LinuxheadersPackage = typeof linuxheadersPackage
+export type KernelorglinuxheadersPackage = typeof kernelorglinuxheadersPackage

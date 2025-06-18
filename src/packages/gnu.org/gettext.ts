@@ -6,20 +6,15 @@
  * @version `0.22.5` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/gettext -- $SHELL -i`
- * @aliases `gettext`
- * @dependencies `gnome.org/libxml2~2.13`, `tukaani.org/xz@5`
+ * @install `launchpad install +gnu.org/gettext -- $SHELL -i`
+ * @dependencies `gnome.org/libxml2~2.13 # 2.14 changes the API`, `tukaani.org/xz^5 # autopoint needs this to unpack archives`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gettext
- * // Or access via domain
- * const samePkg = pantry.gnuorggettext
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/gettext"
+ * const pkg = pantry.gnuorggettext
+ * console.log(pkg.name)        // "gettext"
  * console.log(pkg.description) // "GNU internationalization (i18n) and localizatio..."
  * console.log(pkg.programs)    // ["autopoint", "envsubst", ...]
  * console.log(pkg.versions[0]) // "0.22.5" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/gettext.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gettextPackage = {
+export const gnuorggettextPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/gettext' as const,
+  name: 'gettext' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const gettextPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gettext -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/gettext -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,8 +78,8 @@ export const gettextPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'gnome.org/libxml2~2.13',
-    'tukaani.org/xz@5',
+    'gnome.org/libxml2~2.13 # 2.14 changes the API',
+    'tukaani.org/xz^5 # autopoint needs this to unpack archives',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -99,14 +94,7 @@ export const gettextPackage = {
     '0.22.0',
     '0.21.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gettext',
-  ] as const,
-  fullPath: 'gnu.org/gettext' as const,
+  aliases: [] as const,
 }
 
-export type GettextPackage = typeof gettextPackage
+export type GnuorggettextPackage = typeof gnuorggettextPackage

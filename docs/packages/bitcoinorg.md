@@ -1,11 +1,11 @@
-# bitcoin
+# bitcoin.org
 
 > Decentralized, peer to peer payment network
 
 ## Package Information
 
 - **Domain**: `bitcoin.org`
-- **Name**: `bitcoin`
+- **Name**: `bitcoin.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bitcoin.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i
+launchpad install +bitcoin.org -- $SHELL -i
 ```
 
 ## Programs
@@ -25,6 +25,12 @@ This package provides the following executable programs:
 - `bitcoin-util`
 - `bitcoin-wallet`
 - `bitcoind`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `bitcoin`
 
 ## Available Versions
 
@@ -56,8 +62,14 @@ This package depends on:
 - `libevent.org^2`
 - `zeromq.org^4`
 - `sqlite.org^3`
-- `linuxgnu.org/gcc/libstdcxx`
 - `gnu.org/gcc/libstdcxx`
+- `gnu.org/autoconf^2`
+- `gnu.org/automake^1`
+- `freedesktop.org/pkg-config^0.29`
+- `gnu.org/libtool^2`
+- `cmake.org^3.22`
+- `ninja-build.org`
+- `gnu.org/gcc`
 
 ## Usage Examples
 

@@ -6,20 +6,15 @@
  * @version `1.23.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/groff -- $SHELL -i`
- * @aliases `groff`
- * @dependencies `ghostscript.com`, `netpbm.sourceforge.net`, `github.com/rrthomas/psutils`, ... (+4 more)
+ * @install `launchpad install +gnu.org/groff -- $SHELL -i`
+ * @dependencies `ghostscript.com`, `netpbm.sourceforge.net`, `github.com/rrthomas/psutils`, ... (+8 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.groff
- * // Or access via domain
- * const samePkg = pantry.gnuorggroff
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/groff"
+ * const pkg = pantry.gnuorggroff
+ * console.log(pkg.name)        // "groff"
  * console.log(pkg.description) // "GNU troff text-formatting system"
  * console.log(pkg.programs)    // ["addftinfo", "afmtodit", ...]
  * console.log(pkg.versions[0]) // "1.23.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/groff.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const groffPackage = {
+export const gnuorggroffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/groff' as const,
+  name: 'groff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const groffPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/groff -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/groff -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -105,8 +100,12 @@ export const groffPackage = {
     'github.com/rrthomas/psutils',
     'freedesktop.org/uchardet',
     'perl.org',
-    'linuxgnome.org/glib',
     'gnome.org/glib',
+    'gnu.org/gcc',
+    'gnu.org/make',
+    'freedesktop.org/pkg-config',
+    'gnu.org/bison',
+    'gnu.org/texinfo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -115,14 +114,7 @@ export const groffPackage = {
   versions: [
     '1.23.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'groff',
-  ] as const,
-  fullPath: 'gnu.org/groff' as const,
+  aliases: [] as const,
 }
 
-export type GroffPackage = typeof groffPackage
+export type GnuorggroffPackage = typeof gnuorggroffPackage

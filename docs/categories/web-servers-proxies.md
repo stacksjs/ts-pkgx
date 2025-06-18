@@ -12,7 +12,7 @@ HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 
 **Programs**: nginx
 
-**Install**: `sh <(curl https://pkgx.sh) nginx`
+**Install**: `launchpad install nginx`
 
 ---
 
@@ -22,7 +22,7 @@ The Cloud Native Application Proxy
 
 **Programs**: traefik
 
-**Install**: `sh <(curl https://pkgx.sh) traefik`
+**Install**: `launchpad install traefik`
 
 ---
 

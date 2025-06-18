@@ -6,10 +6,9 @@
  * @version `0.6.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) factotum`
+ * @install `launchpad install factotum`
  * @name `factotum`
- * @aliases `snowplow/factotum`
- * @dependencies `openssl.org^1.1`
+ * @dependencies `openssl.org^1.1`, `rust-lang.org~1.78`, `rust-lang.org/cargo~0.80`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const factotumPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) factotum' as const,
+  installCommand: 'launchpad install factotum' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const factotumPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
+    'rust-lang.org~1.78',
+    'rust-lang.org/cargo~0.80',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,10 +78,7 @@ export const factotumPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'snowplow/factotum',
-  ] as const,
-  fullPath: 'github.com/snowplow/factotum' as const,
+  aliases: [] as const,
 }
 
 export type FactotumPackage = typeof factotumPackage

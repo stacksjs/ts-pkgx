@@ -5,31 +5,26 @@
  * @version `1.2.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xmu -- $SHELL -i`
- * @aliases `xmu`
- * @dependencies `x.org/exts`, `x.org/xt`
+ * @install `launchpad install +x.org/xmu -- $SHELL -i`
+ * @dependencies `x.org/exts`, `x.org/xt`, `freedesktop.org/pkg-config~0.29`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xmu
- * // Or access via domain
- * const samePkg = pantry.xorgxmu
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xmu"
+ * const pkg = pantry.xorgxmu
+ * console.log(pkg.name)        // "xmu"
  * console.log(pkg.versions[0]) // "1.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xmu.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xmuPackage = {
+export const xorgxmuPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xmu' as const,
+  name: 'xmu' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xmuPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xmu -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xmu -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,7 @@ export const xmuPackage = {
   dependencies: [
     'x.org/exts',
     'x.org/xt',
+    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +61,7 @@ export const xmuPackage = {
     '1.2.0',
     '1.1.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xmu',
-  ] as const,
-  fullPath: 'x.org/xmu' as const,
+  aliases: [] as const,
 }
 
-export type XmuPackage = typeof xmuPackage
+export type XorgxmuPackage = typeof xorgxmuPackage

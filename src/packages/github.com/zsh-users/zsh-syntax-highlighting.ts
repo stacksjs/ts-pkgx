@@ -1,23 +1,18 @@
 /**
- * **zsh-users/zsh-syntax-highlighting** - Fish shell like syntax highlighting for Zsh.
+ * **zsh-syntax-highlighting** - Fish shell like syntax highlighting for Zsh.
  *
  * @domain `github.com/zsh-users/zsh-syntax-highlighting`
  * @version `0.8.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/zsh-users/zsh-syntax-highlighting -- $SHELL -i`
- * @aliases `zsh-users/zsh-syntax-highlighting`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.zshuserszshsyntaxhighlighting
- * // Or access via domain
- * const samePkg = pantry.githubcomzshuserszshsyntaxhighlighting
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/zsh-users/zsh-syntax-highlighting"
+ * const pkg = pantry.githubcomzshuserszshsyntaxhighlighting
+ * console.log(pkg.name)        // "zsh-syntax-highlighting"
  * console.log(pkg.description) // "Fish shell like syntax highlighting for Zsh."
  * console.log(pkg.versions[0]) // "0.8.0" (latest)
  * ```
@@ -25,11 +20,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/zsh-users/zsh-syntax-highlighting.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zshuserszshsyntaxhighlightingPackage = {
+export const githubcomzshuserszshsyntaxhighlightingPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/zsh-users/zsh-syntax-highlighting' as const,
+  name: 'zsh-syntax-highlighting' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -57,14 +52,7 @@ export const zshuserszshsyntaxhighlightingPackage = {
     '0.8.0',
     '0.7.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'zsh-users/zsh-syntax-highlighting',
-  ] as const,
-  fullPath: 'github.com/zsh-users/zsh-syntax-highlighting' as const,
+  aliases: [] as const,
 }
 
-export type ZshuserszshsyntaxhighlightingPackage = typeof zshuserszshsyntaxhighlightingPackage
+export type GithubcomzshuserszshsyntaxhighlightingPackage = typeof githubcomzshuserszshsyntaxhighlightingPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +pixman.org -- $SHELL -i
+launchpad install +pixman.org -- $SHELL -i
 ```
 
 ## Programs
@@ -39,6 +39,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +pixman.org@0.40.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

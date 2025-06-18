@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +xvid.com -- $SHELL -i
+launchpad install +xvid.com -- $SHELL -i
 ```
 
 ## Programs

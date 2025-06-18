@@ -1,24 +1,34 @@
 /**
- * **cairographics.org** - Package from pantry: cairographics.org
+ * **cairo-trace** - Vector graphics library with cross-device output support
  *
  * @domain `cairographics.org`
+ * @programs `cairo-trace`
+ * @version `1.18.4` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install cairographics.org`
- * @dependencies `libpng.org`, `pixman.org`, `freetype.org`, ... (+8 more)
+ * @install `launchpad install cairo-trace`
+ * @aliases `cairo-trace`
+ * @dependencies `libpng.org@1`, `pixman.org^0.40.0`, `freetype.org@2`, ... (+14 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cairographicsorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.cairotrace
+ * // Or access via domain
+ * const samePkg = pantry.cairographicsorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "cairographics.org"
- * console.log(pkg.description) // "Package from pantry: cairographics.org"
+ * console.log(pkg.description) // "Vector graphics library with cross-device outpu..."
+ * console.log(pkg.programs)    // ["cairo-trace"]
+ * console.log(pkg.versions[0]) // "1.18.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cairographics-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cairographicsorgPackage = {
+export const cairotracePackage = {
   /**
    * The display name of this package.
    */
@@ -30,35 +40,63 @@ export const cairographicsorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: cairographics.org' as const,
+  description: 'Vector graphics library with cross-device output support' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install cairographics.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install cairo-trace' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'cairo-trace',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
    */
   dependencies: [
-    'libpng.org',
-    'pixman.org',
-    'freetype.org',
-    'gnome.org/glib',
-    'freedesktop.org/fontconfig',
-    'sourceware.org/bzip2',
+    'libpng.org@1',
+    'pixman.org^0.40.0',
+    'freetype.org@2',
+    'gnome.org/glib@2',
+    'freedesktop.org/fontconfig@2',
+    'sourceware.org/bzip2@1',
     'x.org/x11',
     'x.org/xcb',
     'x.org/exts',
     'x.org/xrender',
     'oberhumer.com/lzo',
+    'freedesktop.org/pkg-config^0.29',
+    'libexpat.github.io=2.4.9',
+    'gnome.org/gobject-introspection@1',
+    'gnu.org/libtool^2',
+    'mesonbuild.com^1',
+    'ninja-build.org^1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.18.4',
+    '1.18.2',
+    '1.18.0',
+    '1.16.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'cairo-trace',
+  ] as const,
 }
 
-export type CairographicsorgPackage = typeof cairographicsorgPackage
+export type CairotracePackage = typeof cairotracePackage

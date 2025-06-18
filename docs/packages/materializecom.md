@@ -1,11 +1,11 @@
-# mz
+# materialize.com
 
 > Real-time Data Integration and Transformation: use SQL to transform, deliver, and act on fast-changing data.
 
 ## Package Information
 
 - **Domain**: `materialize.com`
-- **Name**: `mz`
+- **Name**: `materialize.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/materialize.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) mz
+launchpad install mz
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `mz`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `mz`
 
@@ -53,6 +59,16 @@ sh <(curl https://pkgx.sh) +materialize.com@0.112.2 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
+- `rust-lang.org>=1.56`
+- `rust-lang.org/cargo`
+- `cmake.org^3`
+- `perl.org`
+- `gnu.org/automake`
+- `gnu.org/autoconf`
+- `protobuf.dev@26.1`
+- `gnu.org/make`
+- `git-scm.org^2`
+- `llvm.org<17`
 
 ## Usage Examples
 

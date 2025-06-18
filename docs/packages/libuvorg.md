@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libuv.org -- $SHELL -i
+launchpad install +libuv.org -- $SHELL -i
 ```
 
 ## Programs
@@ -40,6 +40,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +libuv.org@1.51.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
 
 ## Usage Examples
 

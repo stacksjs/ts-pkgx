@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libwebsockets.org -- $SHELL -i
+launchpad install +libwebsockets.org -- $SHELL -i
 ```
 
 ## Programs
@@ -46,6 +46,7 @@ This package depends on:
 
 - `libuv.org@1`
 - `libevent.org@2`
+- `cmake.org@3`
 
 ## Usage Examples
 

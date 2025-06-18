@@ -5,20 +5,15 @@
  * @version `2.7.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +cisco.com/libsrtp -- $SHELL -i`
- * @aliases `libsrtp`
- * @dependencies `openssl.org~1`
+ * @install `launchpad install +cisco.com/libsrtp -- $SHELL -i`
+ * @dependencies `openssl.org~1`, `freedesktop.org/pkg-config`, `gnu.org/gcc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libsrtp
- * // Or access via domain
- * const samePkg = pantry.ciscocomlibsrtp
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cisco.com/libsrtp"
+ * const pkg = pantry.ciscocomlibsrtp
+ * console.log(pkg.name)        // "libsrtp"
  * console.log(pkg.description) // "Library for SRTP (Secure Realtime Transport Pro..."
  * console.log(pkg.versions[0]) // "2.7.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/cisco-com/libsrtp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libsrtpPackage = {
+export const ciscocomlibsrtpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cisco.com/libsrtp' as const,
+  name: 'libsrtp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const libsrtpPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +cisco.com/libsrtp -- $SHELL -i' as const,
+  installCommand: 'launchpad install +cisco.com/libsrtp -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,8 @@ export const libsrtpPackage = {
    */
   dependencies: [
     'openssl.org~1',
+    'freedesktop.org/pkg-config',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +62,7 @@ export const libsrtpPackage = {
     '2.6.0',
     '2.5.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libsrtp',
-  ] as const,
-  fullPath: 'cisco.com/libsrtp' as const,
+  aliases: [] as const,
 }
 
-export type LibsrtpPackage = typeof libsrtpPackage
+export type CiscocomlibsrtpPackage = typeof ciscocomlibsrtpPackage

@@ -6,21 +6,20 @@
  * @version `2.4.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) update-mime-database`
- * @name `update-mime-database`
- * @aliases `shared-mime-info`
- * @dependencies `gnome.org/glib@2`, `gnu.org/gettext^0.21`
+ * @install `launchpad install update-mime-database`
+ * @aliases `update-mime-database`
+ * @dependencies `gnome.org/glib@2`, `gnu.org/gettext^0.21`, `freedesktop.org/pkg-config^0.29`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.updatemimedatabase
  * // Or access via domain
  * const samePkg = pantry.freedesktoporgsharedmimeinfo
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "update-mime-database"
+ * console.log(pkg.name)        // "shared-mime-info"
  * console.log(pkg.description) // "Database of common MIME types"
  * console.log(pkg.programs)    // ["update-mime-database"]
  * console.log(pkg.versions[0]) // "2.4.0" (latest)
@@ -33,7 +32,7 @@ export const updatemimedatabasePackage = {
   /**
    * The display name of this package.
    */
-  name: 'update-mime-database' as const,
+  name: 'shared-mime-info' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const updatemimedatabasePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) update-mime-database' as const,
+  installCommand: 'launchpad install update-mime-database' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,10 @@ export const updatemimedatabasePackage = {
   dependencies: [
     'gnome.org/glib@2',
     'gnu.org/gettext^0.21',
+    'freedesktop.org/pkg-config^0.29',
+    'mesonbuild.com^0.63',
+    'ninja-build.org@1',
+    'gnome.org/libxml2@2',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -80,9 +83,8 @@ export const updatemimedatabasePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'shared-mime-info',
+    'update-mime-database',
   ] as const,
-  fullPath: 'freedesktop.org/shared-mime-info' as const,
 }
 
 export type UpdatemimedatabasePackage = typeof updatemimedatabasePackage

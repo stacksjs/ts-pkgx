@@ -6,7 +6,7 @@
  * @version `7.9.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) optipng`
+ * @install `launchpad install optipng`
  * @name `optipng`
  * @dependencies `libpng.org^1`, `zlib.net^1`
  *
@@ -48,7 +48,7 @@ export const optipngPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) optipng' as const,
+  installCommand: 'launchpad install optipng' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,7 +79,6 @@ export const optipngPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'sf.net/optipng' as const,
 }
 
 export type OptipngPackage = typeof optipngPackage

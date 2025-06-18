@@ -7,20 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install oci`
- * @name `oci`
- * @aliases `oci-cli`
- * @dependencies `certifi.io/python-certifi^2024`, `pyyaml.org/libyaml^0.2`, `cryptography.io^42`, ... (+1 more)
+ * @aliases `oci`
+ * @dependencies `certifi.io/python-certifi^2024`, `pyyaml.org/libyaml^0.2`, `cryptography.io^42`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.oci
  * // Or access via domain
  * const samePkg = pantry.oraclecomocicli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "oci"
+ * console.log(pkg.name)        // "oci-cli"
  * console.log(pkg.description) // "Command Line Interface for Oracle Cloud Infrast..."
  * console.log(pkg.programs)    // ["oci"]
  * console.log(pkg.versions[0]) // "3.59.0" (latest)
@@ -33,7 +32,7 @@ export const ociPackage = {
   /**
    * The display name of this package.
    */
-  name: 'oci' as const,
+  name: 'oci-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -67,6 +66,8 @@ export const ociPackage = {
     'pyyaml.org/libyaml^0.2',
     'cryptography.io^42',
     'python.org^3.11',
+    'cmake.org',
+    'rust-lang.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -145,9 +146,8 @@ export const ociPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'oci-cli',
+    'oci',
   ] as const,
-  fullPath: 'oracle.com/oci-cli' as const,
 }
 
 export type OciPackage = typeof ociPackage

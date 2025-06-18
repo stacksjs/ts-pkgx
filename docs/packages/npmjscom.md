@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i
+launchpad install +npmjs.com -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `npm`
 - `npx`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `npm`
 
 ## Available Versions
 
@@ -57,6 +63,7 @@ sh <(curl https://pkgx.sh) +npmjs.com@11.4.2 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org`
+- `nodejs.org<20.3`
 
 ## Usage Examples
 

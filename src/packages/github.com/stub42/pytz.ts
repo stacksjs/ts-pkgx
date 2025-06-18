@@ -1,24 +1,19 @@
 /**
- * **stub42/pytz** - pytz Python historical timezone library and database
+ * **pytz** - pytz Python historical timezone library and database
  *
  * @domain `github.com/stub42/pytz`
  * @version `2025.2.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/stub42/pytz -- $SHELL -i`
- * @aliases `stub42/pytz`
- * @dependencies `python.org~3.12`
+ * @install `launchpad install +github.com/stub42/pytz -- $SHELL -i`
+ * @dependencies `python.org~3.12`, `gnu.org/gawk`, `rsync.samba.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.stub42pytz
- * // Or access via domain
- * const samePkg = pantry.githubcomstub42pytz
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/stub42/pytz"
+ * const pkg = pantry.githubcomstub42pytz
+ * console.log(pkg.name)        // "pytz"
  * console.log(pkg.description) // "pytz Python historical timezone library and dat..."
  * console.log(pkg.versions[0]) // "2025.2.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/stub42/pytz.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const stub42pytzPackage = {
+export const githubcomstub42pytzPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/stub42/pytz' as const,
+  name: 'pytz' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const stub42pytzPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/stub42/pytz -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/stub42/pytz -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,8 @@ export const stub42pytzPackage = {
    */
   dependencies: [
     'python.org~3.12',
+    'gnu.org/gawk',
+    'rsync.samba.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -66,14 +63,7 @@ export const stub42pytzPackage = {
     '2024.2.0',
     '2024.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'stub42/pytz',
-  ] as const,
-  fullPath: 'github.com/stub42/pytz' as const,
+  aliases: [] as const,
 }
 
-export type Stub42pytzPackage = typeof stub42pytzPackage
+export type Githubcomstub42pytzPackage = typeof githubcomstub42pytzPackage

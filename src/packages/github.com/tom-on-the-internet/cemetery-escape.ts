@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cemetery-escape`
  * @name `cemetery-escape`
- * @aliases `tom-on-the-internet/cemetery-escape`
+ * @dependencies `go.dev^1.21`
  *
  * @example
  * ```typescript
@@ -57,7 +57,13 @@ export const cemeteryescapePackage = {
     'cemetery-escape',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +75,7 @@ export const cemeteryescapePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tom-on-the-internet/cemetery-escape',
-  ] as const,
-  fullPath: 'github.com/tom-on-the-internet/cemetery-escape' as const,
+  aliases: [] as const,
 }
 
 export type CemeteryescapePackage = typeof cemeteryescapePackage

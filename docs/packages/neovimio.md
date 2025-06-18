@@ -1,11 +1,11 @@
-# nvim
+# neovim.io
 
 > Ambitious Vim-fork focused on extensibility and agility
 
 ## Package Information
 
 - **Domain**: `neovim.io`
-- **Name**: `nvim`
+- **Name**: `neovim.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/neovim.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) nvim
+launchpad install nvim
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `nvim`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `nvim`
 
@@ -47,6 +53,11 @@ sh <(curl https://pkgx.sh) +neovim.io@0.11.2 -- $SHELL -i
 This package depends on:
 
 - `gnu.org/gettext^0`
+- `cmake.org`
+- `freedesktop.org/pkg-config^0.29`
+- `gnu.org/libtool^2`
+- `git-scm.org^2`
+- `info-zip.org/unzip`
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# mise
+# mise.jdx.dev
 
 > dev tools, env vars, task runner
 
 ## Package Information
 
-- **Domain**: `mise.jdx.dev`
-- **Name**: `mise`
+- **Domain**: `misejdx.dev`
+- **Name**: `mise.jdx.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mise.jdx.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i
+launchpad install +mise.jdx.dev -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,12 @@ sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i
 This package provides the following executable programs:
 
 - `rtx`
+- `mise`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
 - `mise`
 
 ## Available Versions
@@ -95,15 +101,18 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mise.jdx.dev@2025.6.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) +misejdx.dev@2025.6.5 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `openssl.org^1.1`
-- `libgit2.org^1`
+- `openssl.org^1.1 # newer mise after 1.35.2 versions require openssl`
+- `libgit2.org^1 # newer mise after 2024.5.12 versions require libgit2`
+- `rust-lang.org^1.78 # stdsimd changes`
+- `rust-lang.org/cargo`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

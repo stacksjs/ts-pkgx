@@ -1,11 +1,11 @@
-# circleci
+# circleci.com
 
 > Enables you to reproduce the CircleCI environment locally
 
 ## Package Information
 
 - **Domain**: `circleci.com`
-- **Name**: `circleci`
+- **Name**: `circleci.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/circleci.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) circleci
+launchpad install circleci
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `circleci`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `circleci`
 
@@ -50,6 +56,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +circleci.com@0.1.32367 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 

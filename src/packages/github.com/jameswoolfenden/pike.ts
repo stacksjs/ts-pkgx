@@ -3,12 +3,12 @@
  *
  * @domain `github.com/jameswoolfenden/pike`
  * @programs `pike`
- * @version `0.3.57` (41 versions available)
+ * @version `0.3.58` (42 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) pike`
+ * @install `launchpad install pike`
  * @name `pike`
- * @aliases `jameswoolfenden/pike`
+ * @dependencies `go.dev^1.22`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "pike"
  * console.log(pkg.description) // "Pike is a tool for determining the permissions ..."
  * console.log(pkg.programs)    // ["pike"]
- * console.log(pkg.versions[0]) // "0.3.57" (latest)
+ * console.log(pkg.versions[0]) // "0.3.58" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/jameswoolfenden/pike.md
@@ -43,12 +43,12 @@ export const pikePackage = {
   description: 'Pike is a tool for determining the permissions or policy required for IAC code' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jameswoolfenden/pike/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/JamesWoolfenden/pike' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) pike' as const,
+  installCommand: 'launchpad install pike' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,12 +57,20 @@ export const pikePackage = {
     'pike',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.22',
+    'git-scm.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.3.58',
     '0.3.57',
     '0.3.56',
     '0.3.55',
@@ -109,10 +117,7 @@ export const pikePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jameswoolfenden/pike',
-  ] as const,
-  fullPath: 'github.com/jameswoolfenden/pike' as const,
+  aliases: [] as const,
 }
 
 export type PikePackage = typeof pikePackage

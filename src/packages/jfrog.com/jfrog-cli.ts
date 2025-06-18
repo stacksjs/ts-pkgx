@@ -7,18 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +jfrog.com/jfrog-cli -- $SHELL -i`
- * @aliases `jfrog-cli`
+ * @dependencies `go.dev^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jfrogcli
- * // Or access via domain
- * const samePkg = pantry.jfrogcomjfrogcli
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jfrog.com/jfrog-cli"
+ * const pkg = pantry.jfrogcomjfrogcli
+ * console.log(pkg.name)        // "jfrog-cli"
  * console.log(pkg.description) // "JFrog CLI is a client that provides a simple in..."
  * console.log(pkg.programs)    // ["jf", "jfrog"]
  * console.log(pkg.versions[0]) // "2.77.0" (latest)
@@ -27,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/jfrog-com/jfrog-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jfrogcliPackage = {
+export const jfrogcomjfrogcliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jfrog.com/jfrog-cli' as const,
+  name: 'jfrog-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -57,7 +53,13 @@ export const jfrogcliPackage = {
     'jfrog',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -152,14 +154,7 @@ export const jfrogcliPackage = {
     '2.41.0',
     '2.40.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'jfrog-cli',
-  ] as const,
-  fullPath: 'jfrog.com/jfrog-cli' as const,
+  aliases: [] as const,
 }
 
-export type JfrogcliPackage = typeof jfrogcliPackage
+export type JfrogcomjfrogcliPackage = typeof jfrogcomjfrogcliPackage

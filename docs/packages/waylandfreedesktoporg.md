@@ -1,11 +1,11 @@
-# wayland
+# wayland.freedesktop.org
 
-> Package information available on pkgx.dev
+> A package from waylandfreedesktop.org
 
 ## Package Information
 
-- **Domain**: `wayland.freedesktop.org`
-- **Name**: `wayland`
+- **Domain**: `waylandfreedesktop.org`
+- **Name**: `wayland.freedesktop.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wayland.freedesktop.org/package.yml)
 
@@ -13,14 +13,55 @@
 
 ```bash
 # Install with pkgx
-pkgx wayland.freedesktop.org
+launchpad install wayland-scanner
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `wayland-scanner`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `wayland-scanner`
+- `wayland`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `1.23.92`, `1.23.91`, `1.23.1`, `1.23.0`, `1.22.93`
+- `1.22.92`, `1.22.91`, `1.22.0`
+
+</details>
+
+**Latest Version**: `1.23.92`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +waylandfreedesktop.org@1.23.92 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `libexpat.github.io`
+- `sourceware.org/libffi`
+- `gnome.org/libxml2`
+- `mesonbuild.com`
+- `ninja-build.org`
+- `gnu.org/make`
+- `cmake.org`
+- `freedesktop.org/pkg-config`
+- `curl.se`
+- `tukaani.org/xz`
 
 ## Usage Examples
 

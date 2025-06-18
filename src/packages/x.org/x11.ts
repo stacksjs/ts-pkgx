@@ -5,31 +5,26 @@
  * @version `1.8.12` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/x11 -- $SHELL -i`
- * @aliases `x11`
- * @dependencies `x.org/xcb^1`, `x.org/protocol`
+ * @install `launchpad install +x.org/x11 -- $SHELL -i`
+ * @dependencies `x.org/xcb^1`, `x.org/protocol`, `freedesktop.org/pkg-config~0.29`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.x11
- * // Or access via domain
- * const samePkg = pantry.xorgx11
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/x11"
+ * const pkg = pantry.xorgx11
+ * console.log(pkg.name)        // "x11"
  * console.log(pkg.versions[0]) // "1.8.12" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/x11.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const x11Package = {
+export const xorgx11Package = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/x11' as const,
+  name: 'x11' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const x11Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/x11 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/x11 -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,10 @@ export const x11Package = {
   dependencies: [
     'x.org/xcb^1',
     'x.org/protocol',
+    'freedesktop.org/pkg-config~0.29',
+    'x.org/util-macros',
+    'x.org/xtrans^1',
+    'gnu.org/sed',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -71,14 +70,7 @@ export const x11Package = {
     '1.8.5',
     '1.8.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'x11',
-  ] as const,
-  fullPath: 'x.org/x11' as const,
+  aliases: [] as const,
 }
 
-export type X11Package = typeof x11Package
+export type Xorgx11Package = typeof xorgx11Package

@@ -6,9 +6,9 @@
  * @version `4.19.1` (45 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gtk.org/gtk4 -- $SHELL -i`
+ * @install `launchpad install +gtk.org/gtk4 -- $SHELL -i`
  * @name `gtk4`
- * @dependencies `gnome.org/gdk-pixbuf^2.42`, `gnome.org/glib^2.78`, `ebassi.github.io/graphene^1.10`, ... (+16 more)
+ * @dependencies `gnome.org/gdk-pixbuf^2.42`, `gnome.org/glib^2.78`, `ebassi.github.io/graphene^1.10`, ... (+28 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gtk4Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gtk.org/gtk4 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gtk.org/gtk4 -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,7 +82,6 @@ export const gtk4Package = {
     'simplesystems.org/libtiff^4.6',
     'gnome.org/pango^1.50',
     'openprinting.github.io/cups^2.4',
-    'linuxx.org/xi^1.8x.org/xinerama^1.1x.org/xcursor^1.2xkbcommon.org^1.6github.com/KhronosGroup/Vulkan-Loader^1github.com/google/shaderc^2023cairographics.org^1.18wayland.freedesktop.org/protocols^1.43',
     'x.org/xi^1.8',
     'x.org/xinerama^1.1',
     'x.org/xcursor^1.2',
@@ -90,7 +89,20 @@ export const gtk4Package = {
     'github.com/KhronosGroup/Vulkan-Loader^1',
     'github.com/google/shaderc^2023',
     'cairographics.org^1.18',
-    'wayland.freedesktop.org/protocols^1.43',
+    'wayland.freedesktop.org/protocols^1.43 # since 4.19.1',
+    'docbook.org',
+    'docbook.org/xsl',
+    'gnu.org/gettext',
+    'gnome.org/gobject-introspection',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'sass-lang.com/sassc',
+    'gnome.org/libxslt',
+    'gnome.org/libxml2~2.13',
+    'cmake.org',
+    'gnu.org/binutils',
+    'kernel.org/linux-headers',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -148,7 +160,6 @@ export const gtk4Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gtk.org/gtk4' as const,
 }
 
 export type Gtk4Package = typeof gtk4Package

@@ -6,10 +6,9 @@
  * @version `1.99.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) hyfetch`
+ * @install `launchpad install hyfetch`
  * @name `hyfetch`
- * @aliases `hykilpikonna/hyfetch`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh^1`, `python.org~3.12`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const hyfetchPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) hyfetch' as const,
+  installCommand: 'launchpad install hyfetch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const hyfetchPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org~3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,10 +77,7 @@ export const hyfetchPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hykilpikonna/hyfetch',
-  ] as const,
-  fullPath: 'github.com/hykilpikonna/hyfetch' as const,
+  aliases: [] as const,
 }
 
 export type HyfetchPackage = typeof hyfetchPackage

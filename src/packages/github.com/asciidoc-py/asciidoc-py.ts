@@ -6,21 +6,20 @@
  * @version `10.2.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) asciidoc`
- * @name `asciidoc`
- * @aliases `asciidoc-py/asciidoc-py`
+ * @install `launchpad install asciidoc`
+ * @aliases `asciidoc`
  * @dependencies `docbook.org`, `python.org~3.11`, `gnu.org/source-highlight`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.asciidoc
  * // Or access via domain
  * const samePkg = pantry.githubcomasciidocpyasciidocpy
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "asciidoc"
+ * console.log(pkg.name)        // "asciidoc-py"
  * console.log(pkg.description) // "Formatter/translator for text files to numerous..."
  * console.log(pkg.programs)    // ["asciidoc"]
  * console.log(pkg.versions[0]) // "10.2.1" (latest)
@@ -33,7 +32,7 @@ export const asciidocPackage = {
   /**
    * The display name of this package.
    */
-  name: 'asciidoc' as const,
+  name: 'asciidoc-py' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const asciidocPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) asciidoc' as const,
+  installCommand: 'launchpad install asciidoc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,9 +79,8 @@ export const asciidocPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'asciidoc-py/asciidoc-py',
+    'asciidoc',
   ] as const,
-  fullPath: 'github.com/asciidoc-py/asciidoc-py' as const,
 }
 
 export type AsciidocPackage = typeof asciidocPackage

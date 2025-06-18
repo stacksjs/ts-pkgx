@@ -6,8 +6,9 @@
  * @version `2019.10.22` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) stego`
+ * @install `launchpad install stego`
  * @name `stego`
+ * @dependencies `rust-lang.org>=1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const stegoPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) stego' as const,
+  installCommand: 'launchpad install stego' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,14 @@ export const stegoPackage = {
     'stego',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,7 +77,6 @@ export const stegoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/stego' as const,
 }
 
 export type StegoPackage = typeof stegoPackage

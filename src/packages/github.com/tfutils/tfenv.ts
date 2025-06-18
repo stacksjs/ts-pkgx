@@ -6,9 +6,8 @@
  * @version `3.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) tfenv`
+ * @install `launchpad install tfenv`
  * @name `tfenv`
- * @aliases `tfutils/tfenv`
  * @dependencies `gnu.org/grep`
  *
  * @example
@@ -49,7 +48,7 @@ export const tfenvPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) tfenv' as const,
+  installCommand: 'launchpad install tfenv' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,10 +75,7 @@ export const tfenvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tfutils/tfenv',
-  ] as const,
-  fullPath: 'github.com/tfutils/tfenv' as const,
+  aliases: [] as const,
 }
 
 export type TfenvPackage = typeof tfenvPackage

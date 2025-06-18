@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +networkx.org -- $SHELL -i
+launchpad install +networkx.org -- $SHELL -i
 ```
 
 ## Programs

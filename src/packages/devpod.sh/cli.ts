@@ -6,19 +6,20 @@
  * @version `0.6.15` (32 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) devpod`
- * @name `devpod`
+ * @install `launchpad install devpod`
+ * @aliases `devpod`
+ * @dependencies `go.dev^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.devpod
  * // Or access via domain
  * const samePkg = pantry.devpodshcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "devpod"
+ * console.log(pkg.name)        // "cli"
  * console.log(pkg.description) // "Codespaces but open-source, client-only and uno..."
  * console.log(pkg.programs)    // ["devpod"]
  * console.log(pkg.versions[0]) // "0.6.15" (latest)
@@ -31,7 +32,7 @@ export const devpodPackage = {
   /**
    * The display name of this package.
    */
-  name: 'devpod' as const,
+  name: 'cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +48,7 @@ export const devpodPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) devpod' as const,
+  installCommand: 'launchpad install devpod' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,13 @@ export const devpodPackage = {
     'devpod',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -99,8 +106,9 @@ export const devpodPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
-  fullPath: 'devpod.sh/cli' as const,
+  aliases: [
+    'devpod',
+  ] as const,
 }
 
 export type DevpodPackage = typeof devpodPackage

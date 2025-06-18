@@ -6,9 +6,8 @@
  * @version `0.4.4` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) xcaddy`
+ * @install `launchpad install xcaddy`
  * @name `xcaddy`
- * @aliases `caddyserver/xcaddy`
  * @dependencies `go.dev^1.21`
  *
  * @example
@@ -49,7 +48,7 @@ export const xcaddyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) xcaddy' as const,
+  installCommand: 'launchpad install xcaddy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,10 +79,7 @@ export const xcaddyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'caddyserver/xcaddy',
-  ] as const,
-  fullPath: 'github.com/caddyserver/xcaddy' as const,
+  aliases: [] as const,
 }
 
 export type XcaddyPackage = typeof xcaddyPackage

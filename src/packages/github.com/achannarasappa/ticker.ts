@@ -6,9 +6,9 @@
  * @version `5.0.5` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ticker`
+ * @install `launchpad install ticker`
  * @name `ticker`
- * @aliases `achannarasappa/ticker`
+ * @dependencies `go.dev~1.22.0`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const tickerPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ticker' as const,
+  installCommand: 'launchpad install ticker' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const tickerPackage = {
     'ticker',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev~1.22.0',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -79,10 +85,7 @@ export const tickerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'achannarasappa/ticker',
-  ] as const,
-  fullPath: 'github.com/achannarasappa/ticker' as const,
+  aliases: [] as const,
 }
 
 export type TickerPackage = typeof tickerPackage

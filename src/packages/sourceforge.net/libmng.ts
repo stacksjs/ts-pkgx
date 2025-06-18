@@ -5,21 +5,20 @@
  * @version `2.0.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +sourceforge.net/libmng -- $SHELL -i`
- * @name `sf.net/libmng`
- * @aliases `libmng`
- * @dependencies `libjpeg-turbo.org`, `littlecms.com>=2.0.0`, `zlib.net`
+ * @install `launchpad install +sourceforge.net/libmng -- $SHELL -i`
+ * @aliases `sf.net/libmng`
+ * @dependencies `libjpeg-turbo.org`, `littlecms.com>=2.0.0`, `zlib.net`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sfnetlibmng
  * // Or access via domain
  * const samePkg = pantry.sourceforgenetlibmng
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sf.net/libmng"
+ * console.log(pkg.name)        // "libmng"
  * console.log(pkg.versions[0]) // "2.0.3" (latest)
  * ```
  *
@@ -30,7 +29,7 @@ export const sfnetlibmngPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sf.net/libmng' as const,
+  name: 'libmng' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +45,7 @@ export const sfnetlibmngPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/libmng -- $SHELL -i' as const,
+  installCommand: 'launchpad install +sourceforge.net/libmng -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -57,6 +56,7 @@ export const sfnetlibmngPackage = {
     'libjpeg-turbo.org',
     'littlecms.com>=2.0.0',
     'zlib.net',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -70,9 +70,8 @@ export const sfnetlibmngPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'libmng',
+    'sf.net/libmng',
   ] as const,
-  fullPath: 'sourceforge.net/libmng' as const,
 }
 
 export type SfnetlibmngPackage = typeof sfnetlibmngPackage

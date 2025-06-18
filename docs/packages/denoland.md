@@ -1,11 +1,11 @@
-# deno
+# deno.land
 
 > A modern runtime for JavaScript and TypeScript.
 
 ## Package Information
 
 - **Domain**: `deno.land`
-- **Name**: `deno`
+- **Name**: `deno.land`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/deno.land/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) deno
+launchpad install deno
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `deno`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `deno`
 
@@ -66,9 +72,24 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +deno.land@2.3.6 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `llvm.org`
+- `rust-lang.org/rustup`
+- `git-scm.org^2 # to build tinycc`
+- `curl.se`
+- `cmake.org^3 # deno.land>=1.36.1 requires cmake`
+- `protobuf.dev`
+- `github.com/mikefarah/yq^4`
+- `crates.io/semverator^0`
+- `sourceware.org/libffi>=3.2.1`
+- `gnu.org/coreutils`
+
 ## Related Packages
 
-These packages work well with deno:
+These packages work well with deno.land:
 
 - `info-zip.org/unzip`
 

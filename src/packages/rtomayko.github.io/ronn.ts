@@ -6,9 +6,9 @@
  * @version `0.7.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ronn`
+ * @install `launchpad install ronn`
  * @name `ronn`
- * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
+ * @dependencies `ruby-lang.org^3.1`, `rubygems.org`, `rubygems.org`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const ronnPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ronn' as const,
+  installCommand: 'launchpad install ronn' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,7 @@ export const ronnPackage = {
   dependencies: [
     'ruby-lang.org^3.1',
     'rubygems.org',
+    'rubygems.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,7 +78,6 @@ export const ronnPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'rtomayko.github.io/ronn' as const,
 }
 
 export type RonnPackage = typeof ronnPackage

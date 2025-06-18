@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i
+launchpad install +libpng.org -- $SHELL -i
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +rubygems.org -- $SHELL -i
+launchpad install +rubygems.org -- $SHELL -i
 ```
 
 ## Programs

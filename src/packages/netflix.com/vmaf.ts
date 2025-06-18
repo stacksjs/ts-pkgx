@@ -6,8 +6,9 @@
  * @version `3.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) vmaf`
+ * @install `launchpad install vmaf`
  * @name `vmaf`
+ * @dependencies `mesonbuild.com`, `ninja-build.org`, `nasm.us`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const vmafPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) vmaf' as const,
+  installCommand: 'launchpad install vmaf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,15 @@ export const vmafPackage = {
     'vmaf',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'mesonbuild.com',
+    'ninja-build.org',
+    'nasm.us',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,7 +79,6 @@ export const vmafPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'netflix.com/vmaf' as const,
 }
 
 export type VmafPackage = typeof vmafPackage

@@ -5,31 +5,26 @@
  * @version `2.0.7` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/libxfont2 -- $SHELL -i`
- * @aliases `libxfont2`
- * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`, ... (+4 more)
+ * @install `launchpad install +x.org/libxfont2 -- $SHELL -i`
+ * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libxfont2
- * // Or access via domain
- * const samePkg = pantry.xorglibxfont2
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/libxfont2"
+ * const pkg = pantry.xorglibxfont2
+ * console.log(pkg.name)        // "libxfont2"
  * console.log(pkg.versions[0]) // "2.0.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/libxfont2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libxfont2Package = {
+export const xorglibxfont2Package = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/libxfont2' as const,
+  name: 'libxfont2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const libxfont2Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/libxfont2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/libxfont2 -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +55,7 @@ export const libxfont2Package = {
     'x.org/xtrans',
     'zlib.net',
     'x.org/libfontenc',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -68,14 +64,7 @@ export const libxfont2Package = {
   versions: [
     '2.0.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libxfont2',
-  ] as const,
-  fullPath: 'x.org/libxfont2' as const,
+  aliases: [] as const,
 }
 
-export type Libxfont2Package = typeof libxfont2Package
+export type Xorglibxfont2Package = typeof xorglibxfont2Package

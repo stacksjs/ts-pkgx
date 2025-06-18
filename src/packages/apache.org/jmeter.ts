@@ -6,20 +6,15 @@
  * @version `5.6.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +apache.org/jmeter -- $SHELL -i`
- * @aliases `jmeter`
- * @dependencies `openjdk.org`
+ * @install `launchpad install +apache.org/jmeter -- $SHELL -i`
+ * @dependencies `openjdk.org`, `gnu.org/wget`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jmeter
- * // Or access via domain
- * const samePkg = pantry.apacheorgjmeter
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "apache.org/jmeter"
+ * const pkg = pantry.apacheorgjmeter
+ * console.log(pkg.name)        // "jmeter"
  * console.log(pkg.programs)    // ["jmeter", "jmeter-server", ...]
  * console.log(pkg.versions[0]) // "5.6.3" (latest)
  * ```
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/apache-org/jmeter.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jmeterPackage = {
+export const apacheorgjmeterPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/jmeter' as const,
+  name: 'jmeter' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const jmeterPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +apache.org/jmeter -- $SHELL -i' as const,
+  installCommand: 'launchpad install +apache.org/jmeter -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +59,7 @@ export const jmeterPackage = {
    */
   dependencies: [
     'openjdk.org',
+    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -74,14 +70,7 @@ export const jmeterPackage = {
     '5.6.2',
     '5.6.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'jmeter',
-  ] as const,
-  fullPath: 'apache.org/jmeter' as const,
+  aliases: [] as const,
 }
 
-export type JmeterPackage = typeof jmeterPackage
+export type ApacheorgjmeterPackage = typeof apacheorgjmeterPackage

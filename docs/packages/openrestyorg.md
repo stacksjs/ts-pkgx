@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openresty.org -- $SHELL -i
+launchpad install +openresty.org -- $SHELL -i
 ```
 
 ## Programs
@@ -52,6 +52,10 @@ This package depends on:
 - `openssl.org^1.1`
 - `zlib.net^1.2`
 - `perl.org`
+- `waterlan.home.xs4all.nl/dos2unix`
+- `mercurial-scm.org`
+- `git-scm.org`
+- `gnu.org/wget`
 
 ## Usage Examples
 

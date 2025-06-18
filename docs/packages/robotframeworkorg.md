@@ -1,11 +1,11 @@
-# robot
+# robotframework.org
 
 > Generic automation framework for acceptance testing and RPA
 
 ## Package Information
 
 - **Domain**: `robotframework.org`
-- **Name**: `robot`
+- **Name**: `robotframework.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/robotframework.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) robot
+launchpad install robot
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `robot`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `robot`
 
@@ -45,6 +51,11 @@ sh <(curl https://pkgx.sh) +robotframework.org@7.3.1 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
+- `python.org^3`
+- `rust-lang.org^1.56`
+- `certifi.io/python-certifi`
+- `cryptography.io`
+- `libsodium.org`
 
 ## Usage Examples
 

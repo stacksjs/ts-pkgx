@@ -6,20 +6,20 @@
  * @version `6.2.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) jwt`
- * @name `jwt`
- * @aliases `jwt-cli`
+ * @install `launchpad install jwt`
+ * @aliases `jwt`
+ * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`, `cmake.org^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.jwt
  * // Or access via domain
  * const samePkg = pantry.cratesiojwtcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jwt"
+ * console.log(pkg.name)        // "jwt-cli"
  * console.log(pkg.description) // "A super fast CLI tool to decode and encode JWTs..."
  * console.log(pkg.programs)    // ["jwt"]
  * console.log(pkg.versions[0]) // "6.2.0" (latest)
@@ -32,7 +32,7 @@ export const jwtPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jwt' as const,
+  name: 'jwt-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const jwtPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) jwt' as const,
+  installCommand: 'launchpad install jwt' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,15 @@ export const jwtPackage = {
     'jwt',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+    'cmake.org^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -73,9 +81,8 @@ export const jwtPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'jwt-cli',
+    'jwt',
   ] as const,
-  fullPath: 'crates.io/jwt-cli' as const,
 }
 
 export type JwtPackage = typeof jwtPackage

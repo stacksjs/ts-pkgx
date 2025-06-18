@@ -6,30 +6,25 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/gsettings-desktop-schemas -- $SHELL -i`
- * @aliases `gsettings-desktop-schemas`
- * @dependencies `gnome.org/glib`, `libexpat.github.io`
+ * @dependencies `gnome.org/glib`, `libexpat.github.io`, `gnome.org/gobject-introspection`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gsettingsdesktopschemas
- * // Or access via domain
- * const samePkg = pantry.gnomeorggsettingsdesktopschemas
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnome.org/gsettings-desktop-schemas"
+ * const pkg = pantry.gnomeorggsettingsdesktopschemas
+ * console.log(pkg.name)        // "gsettings-desktop-schemas"
  * console.log(pkg.versions[0]) // "48.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/gsettings-desktop-schemas.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gsettingsdesktopschemasPackage = {
+export const gnomeorggsettingsdesktopschemasPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/gsettings-desktop-schemas' as const,
+  name: 'gsettings-desktop-schemas' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -55,6 +50,12 @@ export const gsettingsdesktopschemasPackage = {
   dependencies: [
     'gnome.org/glib',
     'libexpat.github.io',
+    'gnome.org/gobject-introspection',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'python.org~3.11',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -68,14 +69,7 @@ export const gsettingsdesktopschemasPackage = {
     '45.0.0',
     '44.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gsettings-desktop-schemas',
-  ] as const,
-  fullPath: 'gnome.org/gsettings-desktop-schemas' as const,
+  aliases: [] as const,
 }
 
-export type GsettingsdesktopschemasPackage = typeof gsettingsdesktopschemasPackage
+export type GnomeorggsettingsdesktopschemasPackage = typeof gnomeorggsettingsdesktopschemasPackage

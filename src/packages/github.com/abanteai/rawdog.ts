@@ -6,10 +6,9 @@
  * @version `0.1.6` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rawdog`
+ * @install `launchpad install rawdog`
  * @name `rawdog`
- * @aliases `abanteai/rawdog`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh^1`, `python.org~3.11`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const rawdogPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rawdog' as const,
+  installCommand: 'launchpad install rawdog' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const rawdogPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +76,7 @@ export const rawdogPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'abanteai/rawdog',
-  ] as const,
-  fullPath: 'github.com/abanteai/rawdog' as const,
+  aliases: [] as const,
 }
 
 export type RawdogPackage = typeof rawdogPackage

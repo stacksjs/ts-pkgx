@@ -1,11 +1,11 @@
-# pipenv
+# pipenv.pypa.io
 
 > Python Development Workflow for Humans.
 
 ## Package Information
 
-- **Domain**: `pipenv.pypa.io`
-- **Name**: `pipenv`
+- **Domain**: `pipenvpypa.io`
+- **Name**: `pipenv.pypa.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pipenv.pypa.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) pipenv
+launchpad install pipenv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `pipenv`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `pipenv`
 
@@ -46,7 +52,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pipenv.pypa.io@3000.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +pipenvpypa.io@3000.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -54,10 +60,12 @@ sh <(curl https://pkgx.sh) +pipenv.pypa.io@3000.0.0 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
+- `python.org~3.11 # approx. 3 older versions won’t work with python 3.12`
+- `crates.io/semverator`
 
 ## Related Packages
 
-These packages work well with pipenv:
+These packages work well with pipenv.pypa.io:
 
 - [`pip.pypa.io`](pippypaio.md) - The Python package installer
 

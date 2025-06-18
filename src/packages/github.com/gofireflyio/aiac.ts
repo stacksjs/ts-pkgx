@@ -6,9 +6,9 @@
  * @version `5.3.0` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) aiac`
+ * @install `launchpad install aiac`
  * @name `aiac`
- * @aliases `gofireflyio/aiac`
+ * @dependencies `go.dev^1.18`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const aiacPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) aiac' as const,
+  installCommand: 'launchpad install aiac' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const aiacPackage = {
     'aiac',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -86,10 +92,7 @@ export const aiacPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gofireflyio/aiac',
-  ] as const,
-  fullPath: 'github.com/gofireflyio/aiac' as const,
+  aliases: [] as const,
 }
 
 export type AiacPackage = typeof aiacPackage

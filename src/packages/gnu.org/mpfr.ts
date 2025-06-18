@@ -5,30 +5,26 @@
  * @version `4.2.2` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/mpfr -- $SHELL -i`
- * @aliases `mpfr`
+ * @install `launchpad install +gnu.org/mpfr -- $SHELL -i`
+ * @dependencies `gnu.org/gmp>=4.2`, `gnu.org/gmp>=4.2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mpfr
- * // Or access via domain
- * const samePkg = pantry.gnuorgmpfr
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/mpfr"
+ * const pkg = pantry.gnuorgmpfr
+ * console.log(pkg.name)        // "mpfr"
  * console.log(pkg.versions[0]) // "4.2.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/mpfr.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mpfrPackage = {
+export const gnuorgmpfrPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/mpfr' as const,
+  name: 'mpfr' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,10 +40,17 @@ export const mpfrPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/mpfr -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/mpfr -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gmp>=4.2',
+    'gnu.org/gmp>=4.2',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -57,14 +60,7 @@ export const mpfrPackage = {
     '4.2.1',
     '4.1.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mpfr',
-  ] as const,
-  fullPath: 'gnu.org/mpfr' as const,
+  aliases: [] as const,
 }
 
-export type MpfrPackage = typeof mpfrPackage
+export type GnuorgmpfrPackage = typeof gnuorgmpfrPackage

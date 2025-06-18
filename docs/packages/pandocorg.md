@@ -1,11 +1,11 @@
-# pandoc
+# pandoc.org
 
 > Swiss-army knife of markup format conversion
 
 ## Package Information
 
 - **Domain**: `pandoc.org`
-- **Name**: `pandoc`
+- **Name**: `pandoc.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) pandoc
+launchpad install pandoc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `pandoc`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `pandoc`
 
@@ -53,6 +59,8 @@ This package depends on:
 - `gnu.org/gmp@6`
 - `zlib.net@1`
 - `sourceware.org/libffi@3`
+- `haskell.org~9.4`
+- `haskell.org/cabal~3.10 # 3.12 complains when using --installdir about relative library paths`
 
 ## Usage Examples
 

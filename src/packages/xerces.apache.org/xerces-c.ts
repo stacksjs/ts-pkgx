@@ -7,19 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +xerces.apache.org/xerces-c -- $SHELL -i`
- * @aliases `xerces-c`
- * @dependencies `curl.se`
+ * @dependencies `curl.se`, `cmake.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xercesc
- * // Or access via domain
- * const samePkg = pantry.xercesapacheorgxercesc
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xerces.apache.org/xerces-c"
+ * const pkg = pantry.xercesapacheorgxercesc
+ * console.log(pkg.name)        // "xerces-c"
  * console.log(pkg.description) // "Validating XML parser"
  * console.log(pkg.programs)    // ["CreateDOMDocument", "DOMCount", ...]
  * console.log(pkg.versions[0]) // "3.3.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/xerces-apache-org/xerces-c.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xercescPackage = {
+export const xercesapacheorgxercescPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xerces.apache.org/xerces-c' as const,
+  name: 'xerces-c' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,6 +72,7 @@ export const xercescPackage = {
    */
   dependencies: [
     'curl.se',
+    'cmake.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -87,14 +83,7 @@ export const xercescPackage = {
     '3.2.5',
     '3.2.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xerces-c',
-  ] as const,
-  fullPath: 'xerces.apache.org/xerces-c' as const,
+  aliases: [] as const,
 }
 
-export type XercescPackage = typeof xercescPackage
+export type XercesapacheorgxercescPackage = typeof xercesapacheorgxercescPackage

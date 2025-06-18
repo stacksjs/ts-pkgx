@@ -1,11 +1,11 @@
-# xc
+# xcfile.dev
 
 > Markdown defined task runner.
 
 ## Package Information
 
 - **Domain**: `xcfile.dev`
-- **Name**: `xc`
+- **Name**: `xcfile.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xcfile.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) xc
+launchpad install xc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `xc`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `xc`
 
@@ -44,6 +50,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +xcfile.dev@0.8.5 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 

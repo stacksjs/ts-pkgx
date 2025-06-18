@@ -8,7 +8,7 @@
  *
  * @install `launchpad install kube-score`
  * @name `kube-score`
- * @aliases `zegl/kube-score`
+ * @dependencies `go.dev^1.18`
  *
  * @example
  * ```typescript
@@ -57,7 +57,13 @@ export const kubescorePackage = {
     'kube-score',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -74,10 +80,7 @@ export const kubescorePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'zegl/kube-score',
-  ] as const,
-  fullPath: 'github.com/zegl/kube-score' as const,
+  aliases: [] as const,
 }
 
 export type KubescorePackage = typeof kubescorePackage

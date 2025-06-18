@@ -6,10 +6,9 @@
  * @version `25.6.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) keyring`
+ * @install `launchpad install keyring`
  * @name `keyring`
- * @aliases `jaraco/keyring`
- * @dependencies `pkgx.sh^1`, `github.com/python-cffi/cffi^1.16`, `github.com/eliben/pycparser^2.21`, ... (+1 more)
+ * @dependencies `pkgx.sh^1`, `github.com/python-cffi/cffi^1.16`, `github.com/eliben/pycparser^2.21`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -44,12 +43,12 @@ export const keyringPackage = {
   description: 'Easy way to access the system keyring service from python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jaraco/keyring/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/jaraco/keyring' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) keyring' as const,
+  installCommand: 'launchpad install keyring' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,6 +66,7 @@ export const keyringPackage = {
     'github.com/python-cffi/cffi^1.16',
     'github.com/eliben/pycparser^2.21',
     'cryptography.io^42',
+    'python.org>=3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -90,10 +90,7 @@ export const keyringPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jaraco/keyring',
-  ] as const,
-  fullPath: 'github.com/jaraco/keyring' as const,
+  aliases: [] as const,
 }
 
 export type KeyringPackage = typeof keyringPackage

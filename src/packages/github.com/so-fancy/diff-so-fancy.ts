@@ -8,7 +8,6 @@
  *
  * @install `launchpad install diff-so-fancy`
  * @name `diff-so-fancy`
- * @aliases `so-fancy/diff-so-fancy`
  *
  * @example
  * ```typescript
@@ -69,10 +68,7 @@ export const diffsofancyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'so-fancy/diff-so-fancy',
-  ] as const,
-  fullPath: 'github.com/so-fancy/diff-so-fancy' as const,
+  aliases: [] as const,
 }
 
 export type DiffsofancyPackage = typeof diffsofancyPackage

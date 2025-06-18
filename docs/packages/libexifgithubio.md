@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libexif.github.io`
+- **Domain**: `libexifgithub.io`
 - **Name**: `libexif.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libexif.github.io/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libexif.github.io -- $SHELL -i
+launchpad install +libexif.github.io -- $SHELL -i
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libexif.github.io@0.6.25 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libexifgithub.io@0.6.25 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -45,6 +45,7 @@ sh <(curl https://pkgx.sh) +libexif.github.io@0.6.25 -- $SHELL -i
 This package depends on:
 
 - `gnu.org/gettext`
+- `gnu.org/wget`
 
 ## Usage Examples
 

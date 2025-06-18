@@ -1,11 +1,11 @@
-# hunspell
+# hunspell.github.io
 
 > Spell checker and morphological analyzer
 
 ## Package Information
 
-- **Domain**: `hunspell.github.io`
-- **Name**: `hunspell`
+- **Domain**: `hunspellgithub.io`
+- **Name**: `hunspell.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hunspell.github.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +hunspell.github.io -- $SHELL -i
+launchpad install +hunspell.github.io -- $SHELL -i
 ```
 
 ## Programs
@@ -27,6 +27,12 @@ This package provides the following executable programs:
 - `hzip`
 - `munch`
 - `unmunch`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `hunspell`
 
 ## Available Versions
 
@@ -43,7 +49,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +hunspell.github.io@1.7.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +hunspellgithub.io@1.7.2 -- $SHELL -i
 ```
 
 ## Dependencies

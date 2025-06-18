@@ -6,9 +6,9 @@
  * @version `0.5.11` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) zathura`
+ * @install `launchpad install zathura`
  * @name `zathura`
- * @dependencies `gnome.org/glib^2.72`, `gnome.org/adwaita-icon-theme`, `gnu.org/gettext`, ... (+9 more)
+ * @dependencies `gnome.org/glib^2.72`, `gnome.org/adwaita-icon-theme`, `gnu.org/gettext`, ... (+10 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const zathuraPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) zathura' as const,
+  installCommand: 'launchpad install zathura' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,8 +72,9 @@ export const zathuraPackage = {
     'darwinsys.com/file',
     'gtk.org/gtk3^3.22',
     'sqlite.org@3',
-    'darwingnome.org/gtk-mac-integration-gtk3',
     'gnome.org/gtk-mac-integration-gtk3',
+    'mesonbuild.com>=0.61',
+    'ninja-build.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -92,7 +93,6 @@ export const zathuraPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'pwmt.org/zathura' as const,
 }
 
 export type ZathuraPackage = typeof zathuraPackage

@@ -1,11 +1,11 @@
-# sqlfluff
+# sqlfluff.com
 
 > A modular SQL linter and auto-formatter with support for multiple dialects and templated code.
 
 ## Package Information
 
 - **Domain**: `sqlfluff.com`
-- **Name**: `sqlfluff`
+- **Name**: `sqlfluff.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sqlfluff.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) sqlfluff
+launchpad install sqlfluff
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `sqlfluff`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `sqlfluff`
 

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i
+launchpad install +cmake.org -- $SHELL -i
 ```
 
 ## Programs

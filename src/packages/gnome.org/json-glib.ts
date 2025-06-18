@@ -6,30 +6,25 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/json-glib -- $SHELL -i`
- * @aliases `json-glib`
- * @dependencies `gnome.org/glib^2.78`
+ * @dependencies `gnome.org/glib^2.78`, `gnu.org/gettext`, `gnome.org/gobject-introspection`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jsonglib
- * // Or access via domain
- * const samePkg = pantry.gnomeorgjsonglib
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnome.org/json-glib"
+ * const pkg = pantry.gnomeorgjsonglib
+ * console.log(pkg.name)        // "json-glib"
  * console.log(pkg.versions[0]) // "1.10.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/json-glib.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jsonglibPackage = {
+export const gnomeorgjsonglibPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/json-glib' as const,
+  name: 'json-glib' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -54,6 +49,10 @@ export const jsonglibPackage = {
    */
   dependencies: [
     'gnome.org/glib^2.78',
+    'gnu.org/gettext',
+    'gnome.org/gobject-introspection',
+    'mesonbuild.com',
+    'ninja-build.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +64,7 @@ export const jsonglibPackage = {
     '1.9.2',
     '1.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'json-glib',
-  ] as const,
-  fullPath: 'gnome.org/json-glib' as const,
+  aliases: [] as const,
 }
 
-export type JsonglibPackage = typeof jsonglibPackage
+export type GnomeorgjsonglibPackage = typeof gnomeorgjsonglibPackage

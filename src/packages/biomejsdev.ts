@@ -8,6 +8,7 @@
  *
  * @install `launchpad install biome`
  * @aliases `biome`
+ * @dependencies `rust-lang.org>=1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -56,7 +57,14 @@ export const biomePackage = {
     'biome',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

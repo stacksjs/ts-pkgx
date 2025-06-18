@@ -5,31 +5,26 @@
  * @version `1.0.16` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xaw -- $SHELL -i`
- * @aliases `xaw`
- * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xmu`, ... (+2 more)
+ * @install `launchpad install +x.org/xaw -- $SHELL -i`
+ * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xmu`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xaw
- * // Or access via domain
- * const samePkg = pantry.xorgxaw
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xaw"
+ * const pkg = pantry.xorgxaw
+ * console.log(pkg.name)        // "xaw"
  * console.log(pkg.versions[0]) // "1.0.16" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xaw.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xawPackage = {
+export const xorgxawPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xaw' as const,
+  name: 'xaw' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xawPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xaw -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xaw -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -58,6 +53,7 @@ export const xawPackage = {
     'x.org/xmu',
     'x.org/xt',
     'x.org/xpm',
+    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -67,14 +63,7 @@ export const xawPackage = {
     '1.0.16',
     '1.0.15',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xaw',
-  ] as const,
-  fullPath: 'x.org/xaw' as const,
+  aliases: [] as const,
 }
 
-export type XawPackage = typeof xawPackage
+export type XorgxawPackage = typeof xorgxawPackage

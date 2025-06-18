@@ -6,7 +6,7 @@
  * @version `2.28.0` (49 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) xcbeautify`
+ * @install `launchpad install xcbeautify`
  * @name `xcbeautify`
  *
  * @example
@@ -47,7 +47,7 @@ export const xcbeautifyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) xcbeautify' as const,
+  installCommand: 'launchpad install xcbeautify' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -117,7 +117,6 @@ export const xcbeautifyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'tuist.io/xcbeautify' as const,
 }
 
 export type XcbeautifyPackage = typeof xcbeautifyPackage

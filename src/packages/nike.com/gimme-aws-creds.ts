@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gimme-aws-creds`
  * @name `gimme-aws-creds`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh^1`, `python.org^3.11`
  *
  * @example
  * ```typescript
@@ -63,6 +63,7 @@ export const gimmeawscredsPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org^3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,7 +80,6 @@ export const gimmeawscredsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'nike.com/gimme-aws-creds' as const,
 }
 
 export type GimmeawscredsPackage = typeof gimmeawscredsPackage

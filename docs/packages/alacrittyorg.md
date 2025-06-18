@@ -1,11 +1,11 @@
-# alacritty
+# alacritty.org
 
 > A cross-platform, OpenGL terminal emulator.
 
 ## Package Information
 
 - **Domain**: `alacritty.org`
-- **Name**: `alacritty`
+- **Name**: `alacritty.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/alacritty.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) alacritty
+launchpad install alacritty
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `alacritty`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `alacritty`
 
@@ -44,9 +50,10 @@ sh <(curl https://pkgx.sh) +alacritty.org@0.15.1 -- $SHELL -i
 
 This package depends on:
 
-- `linuxfreetype.orgfreedesktop.org/fontconfig`
 - `freetype.org`
 - `freedesktop.org/fontconfig`
+- `rust-lang.org>=1.75`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

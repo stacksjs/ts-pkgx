@@ -5,21 +5,20 @@
  * @version `1.3.6` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +sourceforge.net/libtirpc -- $SHELL -i`
- * @name `sf.net/libtirpc`
- * @aliases `libtirpc`
- * @dependencies `kerberos.org`
+ * @install `launchpad install +sourceforge.net/libtirpc -- $SHELL -i`
+ * @aliases `sf.net/libtirpc`
+ * @dependencies `kerberos.org`, `llvm.org^16`, `gnu.org/make`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sfnetlibtirpc
  * // Or access via domain
  * const samePkg = pantry.sourceforgenetlibtirpc
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sf.net/libtirpc"
+ * console.log(pkg.name)        // "libtirpc"
  * console.log(pkg.versions[0]) // "1.3.6" (latest)
  * ```
  *
@@ -30,7 +29,7 @@ export const sfnetlibtirpcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sf.net/libtirpc' as const,
+  name: 'libtirpc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +45,7 @@ export const sfnetlibtirpcPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/libtirpc -- $SHELL -i' as const,
+  installCommand: 'launchpad install +sourceforge.net/libtirpc -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +54,8 @@ export const sfnetlibtirpcPackage = {
    */
   dependencies: [
     'kerberos.org',
+    'llvm.org^16',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -71,9 +72,8 @@ export const sfnetlibtirpcPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'libtirpc',
+    'sf.net/libtirpc',
   ] as const,
-  fullPath: 'sourceforge.net/libtirpc' as const,
 }
 
 export type SfnetlibtirpcPackage = typeof sfnetlibtirpcPackage

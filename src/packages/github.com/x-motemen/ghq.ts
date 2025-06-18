@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ghq`
  * @name `ghq`
- * @aliases `x-motemen/ghq`
+ * @dependencies `go.dev^1.21`, `gnu.org/grep`
  *
  * @example
  * ```typescript
@@ -43,7 +43,7 @@ export const ghqPackage = {
   description: 'Remote repository management made easy' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/x-motemen/ghq/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/x-motemen/ghq' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
@@ -57,7 +57,14 @@ export const ghqPackage = {
     'ghq',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+    'gnu.org/grep',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -77,10 +84,7 @@ export const ghqPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'x-motemen/ghq',
-  ] as const,
-  fullPath: 'github.com/x-motemen/ghq' as const,
+  aliases: [] as const,
 }
 
 export type GhqPackage = typeof ghqPackage

@@ -6,9 +6,9 @@
  * @version `1.27.0` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +pypa.io/hatch -- $SHELL -i`
+ * @install `launchpad install +pypa.io/hatch -- $SHELL -i`
  * @name `hatch`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh^1`, `python.org~3.12`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const hatchPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +pypa.io/hatch -- $SHELL -i' as const,
+  installCommand: 'launchpad install +pypa.io/hatch -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,7 @@ export const hatchPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org~3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -93,7 +94,6 @@ export const hatchPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'pypa.io/hatch' as const,
 }
 
 export type HatchPackage = typeof hatchPackage

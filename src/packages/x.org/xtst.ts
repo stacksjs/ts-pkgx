@@ -5,31 +5,26 @@
  * @version `1.2.5` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xtst -- $SHELL -i`
- * @aliases `xtst`
- * @dependencies `x.org/xi`, `x.org/protocol`
+ * @install `launchpad install +x.org/xtst -- $SHELL -i`
+ * @dependencies `x.org/xi`, `x.org/protocol`, `gnu.org/make`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xtst
- * // Or access via domain
- * const samePkg = pantry.xorgxtst
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xtst"
+ * const pkg = pantry.xorgxtst
+ * console.log(pkg.name)        // "xtst"
  * console.log(pkg.versions[0]) // "1.2.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xtst.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xtstPackage = {
+export const xorgxtstPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xtst' as const,
+  name: 'xtst' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xtstPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xtst -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xtst -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,10 @@ export const xtstPackage = {
   dependencies: [
     'x.org/xi',
     'x.org/protocol',
+    'gnu.org/make',
+    'freedesktop.org/pkg-config',
+    'x.org/util-macros',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +63,7 @@ export const xtstPackage = {
     '1.2.5',
     '1.2.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xtst',
-  ] as const,
-  fullPath: 'x.org/xtst' as const,
+  aliases: [] as const,
 }
 
-export type XtstPackage = typeof xtstPackage
+export type XorgxtstPackage = typeof xorgxtstPackage

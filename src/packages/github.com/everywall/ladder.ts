@@ -6,9 +6,9 @@
  * @version `0.0.21` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ladder`
+ * @install `launchpad install ladder`
  * @name `ladder`
- * @aliases `everywall/ladder`
+ * @dependencies `go.dev^1.21.1`, `curl.se`, `gitlab.com/procps-ng/procps`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const ladderPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ladder' as const,
+  installCommand: 'launchpad install ladder' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,15 @@ export const ladderPackage = {
     'ladder',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21.1',
+    'curl.se',
+    'gitlab.com/procps-ng/procps',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,10 +78,7 @@ export const ladderPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'everywall/ladder',
-  ] as const,
-  fullPath: 'github.com/everywall/ladder' as const,
+  aliases: [] as const,
 }
 
 export type LadderPackage = typeof ladderPackage

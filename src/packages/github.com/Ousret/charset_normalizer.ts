@@ -6,21 +6,20 @@
  * @version `3.4.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) normalizer`
- * @name `normalizer`
- * @aliases `Ousret/charset_normalizer`
+ * @install `launchpad install normalizer`
+ * @aliases `normalizer`
  * @dependencies `python.org>=3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.normalizer
  * // Or access via domain
  * const samePkg = pantry.githubcomousretcharset_normalizer
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "normalizer"
+ * console.log(pkg.name)        // "charset_normalizer"
  * console.log(pkg.description) // "Truly universal encoding detector in pure Python"
  * console.log(pkg.programs)    // ["normalizer"]
  * console.log(pkg.versions[0]) // "3.4.2" (latest)
@@ -33,7 +32,7 @@ export const normalizerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'normalizer' as const,
+  name: 'charset_normalizer' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,12 +43,12 @@ export const normalizerPackage = {
   description: 'Truly universal encoding detector in pure Python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Ousret/charset_normalizer/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/Ousret/charset_normalizer' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) normalizer' as const,
+  installCommand: 'launchpad install normalizer' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,9 +79,8 @@ export const normalizerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'Ousret/charset_normalizer',
+    'normalizer',
   ] as const,
-  fullPath: 'github.com/Ousret/charset_normalizer' as const,
 }
 
 export type NormalizerPackage = typeof normalizerPackage

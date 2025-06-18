@@ -6,9 +6,9 @@
  * @version `2.36.19` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) saml2aws`
+ * @install `launchpad install saml2aws`
  * @name `saml2aws`
- * @aliases `Versent/saml2aws`
+ * @dependencies `go.dev^1.21`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const saml2awsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) saml2aws' as const,
+  installCommand: 'launchpad install saml2aws' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const saml2awsPackage = {
     'saml2aws',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,10 +81,7 @@ export const saml2awsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'Versent/saml2aws',
-  ] as const,
-  fullPath: 'github.com/Versent/saml2aws' as const,
+  aliases: [] as const,
 }
 
 export type Saml2awsPackage = typeof saml2awsPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libspng.org -- $SHELL -i
+launchpad install +libspng.org -- $SHELL -i
 ```
 
 ## Programs
@@ -44,8 +44,10 @@ sh <(curl https://pkgx.sh) +libspng.org@0.5.0 -- $SHELL -i
 
 This package depends on:
 
-- `darwinzlib.net`
 - `zlib.net`
+- `ninja-build.org@1`
+- `freedesktop.org/pkg-config`
+- `mesonbuild.com`
 
 ## Usage Examples
 

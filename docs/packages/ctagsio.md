@@ -1,11 +1,11 @@
-# ctags
+# ctags.io
 
 > A maintained ctags implementation
 
 ## Package Information
 
 - **Domain**: `ctags.io`
-- **Name**: `ctags`
+- **Name**: `ctags.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ctags.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) ctags
+launchpad install ctags
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `ctags`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `ctags`
 
@@ -47,7 +53,11 @@ This package depends on:
 - `digip.org/jansson^2`
 - `pyyaml.org/libyaml^0.2`
 - `pcre.org/v2^10`
-- `gnome.org/libxml2~2.13`
+- `gnome.org/libxml2~2.13 # 2.14 changes the API`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `docutils.org~0.20`
+- `python.org>=3.11`
 
 ## Usage Examples
 

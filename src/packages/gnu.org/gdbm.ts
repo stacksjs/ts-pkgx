@@ -6,7 +6,7 @@
  * @version `1.25.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/gdbm -- $SHELL -i`
+ * @install `launchpad install +gnu.org/gdbm -- $SHELL -i`
  * @name `gdbm`
  *
  * @example
@@ -47,7 +47,7 @@ export const gdbmPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gdbm -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/gdbm -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,7 +73,6 @@ export const gdbmPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/gdbm' as const,
 }
 
 export type GdbmPackage = typeof gdbmPackage

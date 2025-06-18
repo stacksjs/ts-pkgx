@@ -8,7 +8,7 @@
  *
  * @install `launchpad install alembic`
  * @aliases `alembic`
- * @dependencies `pkgx.sh`
+ * @dependencies `pkgx.sh^1`, `python.org~3.11`
  *
  * @example
  * ```typescript
@@ -62,7 +62,8 @@ export const alembicPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'pkgx.sh',
+    'pkgx.sh^1',
+    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -5,31 +5,26 @@
  * @version `2.38.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +freedesktop.org/at-spi2-atk -- $SHELL -i`
- * @aliases `at-spi2-atk`
- * @dependencies `gnome.org/atk`, `gnome.org/libxml2`, `freedesktop.org/dbus`, ... (+1 more)
+ * @install `launchpad install +freedesktop.org/at-spi2-atk -- $SHELL -i`
+ * @dependencies `gnome.org/atk`, `gnome.org/libxml2`, `freedesktop.org/dbus`, ... (+9 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.atspi2atk
- * // Or access via domain
- * const samePkg = pantry.freedesktoporgatspi2atk
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "freedesktop.org/at-spi2-atk"
+ * const pkg = pantry.freedesktoporgatspi2atk
+ * console.log(pkg.name)        // "at-spi2-atk"
  * console.log(pkg.versions[0]) // "2.38.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/at-spi2-atk.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const atspi2atkPackage = {
+export const freedesktoporgatspi2atkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/at-spi2-atk' as const,
+  name: 'at-spi2-atk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const atspi2atkPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/at-spi2-atk -- $SHELL -i' as const,
+  installCommand: 'launchpad install +freedesktop.org/at-spi2-atk -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -57,6 +52,14 @@ export const atspi2atkPackage = {
     'gnome.org/libxml2',
     'freedesktop.org/dbus',
     'x.org/xtst',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'python.org~3.11',
+    'git-scm.org',
+    'llvm.org',
+    'freedesktop.org/pkg-config',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +68,7 @@ export const atspi2atkPackage = {
   versions: [
     '2.38.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'at-spi2-atk',
-  ] as const,
-  fullPath: 'freedesktop.org/at-spi2-atk' as const,
+  aliases: [] as const,
 }
 
-export type Atspi2atkPackage = typeof atspi2atkPackage
+export type Freedesktoporgatspi2atkPackage = typeof freedesktoporgatspi2atkPackage

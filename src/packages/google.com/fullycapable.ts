@@ -6,19 +6,14 @@
  * @version `2.66.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +google.com/fullycapable -- $SHELL -i`
- * @aliases `fullycapable`
+ * @install `launchpad install +google.com/fullycapable -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.fullycapable
- * // Or access via domain
- * const samePkg = pantry.googlecomfullycapable
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "google.com/fullycapable"
+ * const pkg = pantry.googlecomfullycapable
+ * console.log(pkg.name)        // "fullycapable"
  * console.log(pkg.programs)    // ["capsh", "getcap", ...]
  * console.log(pkg.versions[0]) // "2.66.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/google-com/fullycapable.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fullycapablePackage = {
+export const googlecomfullycapablePackage = {
   /**
    * The display name of this package.
    */
-  name: 'google.com/fullycapable' as const,
+  name: 'fullycapable' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const fullycapablePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +google.com/fullycapable -- $SHELL -i' as const,
+  installCommand: 'launchpad install +google.com/fullycapable -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,14 +61,7 @@ export const fullycapablePackage = {
   versions: [
     '2.66.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'fullycapable',
-  ] as const,
-  fullPath: 'google.com/fullycapable' as const,
+  aliases: [] as const,
 }
 
-export type FullycapablePackage = typeof fullycapablePackage
+export type GooglecomfullycapablePackage = typeof googlecomfullycapablePackage

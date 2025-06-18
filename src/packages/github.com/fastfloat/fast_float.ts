@@ -5,9 +5,9 @@
  * @version `8.0.2` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/fastfloat/fast_float -- $SHELL -i`
+ * @install `launchpad install +github.com/fastfloat/fast_float -- $SHELL -i`
  * @name `fast_float`
- * @aliases `fastfloat/fast_float`
+ * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
@@ -46,10 +46,16 @@ export const fastfloatPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/fastfloat/fast_float -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/fastfloat/fast_float -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,10 +73,7 @@ export const fastfloatPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'fastfloat/fast_float',
-  ] as const,
-  fullPath: 'github.com/fastfloat/fast_float' as const,
+  aliases: [] as const,
 }
 
 export type FastfloatPackage = typeof fastfloatPackage

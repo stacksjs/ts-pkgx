@@ -8,7 +8,7 @@
  *
  * @install `launchpad install xeol`
  * @name `xeol`
- * @aliases `xeol-io/xeol`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -57,7 +57,13 @@ export const xeolPackage = {
     'xeol',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -89,10 +95,7 @@ export const xeolPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xeol-io/xeol',
-  ] as const,
-  fullPath: 'github.com/xeol-io/xeol' as const,
+  aliases: [] as const,
 }
 
 export type XeolPackage = typeof xeolPackage

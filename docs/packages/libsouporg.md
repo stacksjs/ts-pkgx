@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libsoup.org -- $SHELL -i
+launchpad install +libsoup.org -- $SHELL -i
 ```
 
 ## Programs
@@ -52,10 +52,16 @@ This package depends on:
 - `gnome.org/libxml2`
 - `sqlite.org`
 - `nghttp2.org`
-- `linuxgnu.org/gettextgnome.org/glibgithub.com/google/brotli`
 - `gnu.org/gettext`
 - `gnome.org/glib`
 - `github.com/google/brotli`
+- `gnome.org/gobject-introspection`
+- `mesonbuild.com`
+- `ninja-build.org`
+- `freedesktop.org/pkg-config`
+- `python.org~3.11`
+- `gnome.org/vala`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

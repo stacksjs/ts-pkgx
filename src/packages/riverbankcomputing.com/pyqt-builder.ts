@@ -7,20 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pyqt-bundle`
- * @name `pyqt-bundle`
- * @aliases `pyqt-builder`
- * @dependencies `python.org~3.11`, `riverbankcomputing.com/sip`
+ * @aliases `pyqt-bundle`
+ * @dependencies `python.org~3.11`, `riverbankcomputing.com/sip`, `llvm.org<17`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.pyqtbundle
  * // Or access via domain
  * const samePkg = pantry.riverbankcomputingcompyqtbuilder
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pyqt-bundle"
+ * console.log(pkg.name)        // "pyqt-builder"
  * console.log(pkg.description) // "The PyQt build system"
  * console.log(pkg.programs)    // ["pyqt-bundle"]
  * console.log(pkg.versions[0]) // "1.15.4" (latest)
@@ -33,7 +32,7 @@ export const pyqtbundlePackage = {
   /**
    * The display name of this package.
    */
-  name: 'pyqt-bundle' as const,
+  name: 'pyqt-builder' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -65,6 +64,8 @@ export const pyqtbundlePackage = {
   dependencies: [
     'python.org~3.11',
     'riverbankcomputing.com/sip',
+    'llvm.org<17',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -80,9 +81,8 @@ export const pyqtbundlePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'pyqt-builder',
+    'pyqt-bundle',
   ] as const,
-  fullPath: 'riverbankcomputing.com/pyqt-builder' as const,
 }
 
 export type PyqtbundlePackage = typeof pyqtbundlePackage

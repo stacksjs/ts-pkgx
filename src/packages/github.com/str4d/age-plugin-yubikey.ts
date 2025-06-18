@@ -8,8 +8,7 @@
  *
  * @install `launchpad install age-plugin-yubikey`
  * @name `age-plugin-yubikey`
- * @aliases `str4d/age-plugin-yubikey`
- * @dependencies `linuxpcsclite.apdu.fr^2`, `pcsclite.apdu.fr^2`
+ * @dependencies `pcsclite.apdu.fr^2`, `rust-lang.org>=1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -63,8 +62,9 @@ export const agepluginyubikeyPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxpcsclite.apdu.fr^2',
     'pcsclite.apdu.fr^2',
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,10 +78,7 @@ export const agepluginyubikeyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'str4d/age-plugin-yubikey',
-  ] as const,
-  fullPath: 'github.com/str4d/age-plugin-yubikey' as const,
+  aliases: [] as const,
 }
 
 export type AgepluginyubikeyPackage = typeof agepluginyubikeyPackage

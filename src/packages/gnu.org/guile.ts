@@ -6,21 +6,20 @@
  * @version `3.0.10` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/guile -- $SHELL -i`
- * @name `guil`
- * @aliases `guile`
+ * @install `launchpad install +gnu.org/guile -- $SHELL -i`
+ * @aliases `guil`
  * @dependencies `hboehm.info/gc^8`, `gnu.org/gmp^6`, `gnu.org/libtool^2`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.guil
  * // Or access via domain
  * const samePkg = pantry.gnuorgguile
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "guil"
+ * console.log(pkg.name)        // "guile"
  * console.log(pkg.description) // "GNU Ubiquitous Intelligent Language for Extensions"
  * console.log(pkg.programs)    // ["guild", "guile", ...]
  * console.log(pkg.versions[0]) // "3.0.10" (latest)
@@ -33,7 +32,7 @@ export const guilPackage = {
   /**
    * The display name of this package.
    */
-  name: 'guil' as const,
+  name: 'guile' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const guilPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/guile -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/guile -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,7 +70,7 @@ export const guilPackage = {
     'gnu.org/gmp^6',
     'gnu.org/libtool^2',
     'gnu.org/libunistring^1',
-    'freedesktop.org/pkg-config^0.29',
+    'freedesktop.org/pkg-config^0.29 # guile-config is a wrapper around pkg-config.',
     'gnu.org/readline^8',
     'gnu.org/gperf^3',
     'sourceware.org/libffi^3',
@@ -90,9 +89,8 @@ export const guilPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'guile',
+    'guil',
   ] as const,
-  fullPath: 'gnu.org/guile' as const,
 }
 
 export type GuilPackage = typeof guilPackage

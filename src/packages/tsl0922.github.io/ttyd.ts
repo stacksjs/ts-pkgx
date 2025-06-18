@@ -6,9 +6,9 @@
  * @version `1.7.7` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ttyd`
+ * @install `launchpad install ttyd`
  * @name `ttyd`
- * @dependencies `libuv.org@1`, `github.com/json-c/json-c^0.16`, `libwebsockets.org@4`, ... (+1 more)
+ * @dependencies `libuv.org@1`, `github.com/json-c/json-c^0.16`, `libwebsockets.org@4`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const ttydPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ttyd' as const,
+  installCommand: 'launchpad install ttyd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,6 +66,7 @@ export const ttydPackage = {
     'github.com/json-c/json-c^0.16',
     'libwebsockets.org@4',
     'zlib.net@1',
+    'cmake.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -83,7 +84,6 @@ export const ttydPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'tsl0922.github.io/ttyd' as const,
 }
 
 export type TtydPackage = typeof ttydPackage

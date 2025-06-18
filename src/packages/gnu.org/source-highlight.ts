@@ -7,19 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/source-highlight -- $SHELL -i`
- * @aliases `source-highlight`
  * @dependencies `boost.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.sourcehighlight
- * // Or access via domain
- * const samePkg = pantry.gnuorgsourcehighlight
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/source-highlight"
+ * const pkg = pantry.gnuorgsourcehighlight
+ * console.log(pkg.name)        // "source-highlight"
  * console.log(pkg.description) // "Source-code syntax highlighter"
  * console.log(pkg.programs)    // ["check-regexp", "source-highlight", ...]
  * console.log(pkg.versions[0]) // "3.1.9" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/source-highlight.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sourcehighlightPackage = {
+export const gnuorgsourcehighlightPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/source-highlight' as const,
+  name: 'source-highlight' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,14 +68,7 @@ export const sourcehighlightPackage = {
   versions: [
     '3.1.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'source-highlight',
-  ] as const,
-  fullPath: 'gnu.org/source-highlight' as const,
+  aliases: [] as const,
 }
 
-export type SourcehighlightPackage = typeof sourcehighlightPackage
+export type GnuorgsourcehighlightPackage = typeof gnuorgsourcehighlightPackage

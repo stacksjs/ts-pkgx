@@ -5,31 +5,26 @@
  * @version `3.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +thrysoee.dk/editline -- $SHELL -i`
- * @aliases `editline`
+ * @install `launchpad install +thrysoee.dk/editline -- $SHELL -i`
  * @dependencies `invisible-island.net/ncurses`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.editline
- * // Or access via domain
- * const samePkg = pantry.thrysoeedkeditline
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "thrysoee.dk/editline"
+ * const pkg = pantry.thrysoeedkeditline
+ * console.log(pkg.name)        // "editline"
  * console.log(pkg.versions[0]) // "3.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/thrysoee-dk/editline.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const editlinePackage = {
+export const thrysoeedkeditlinePackage = {
   /**
    * The display name of this package.
    */
-  name: 'thrysoee.dk/editline' as const,
+  name: 'editline' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const editlinePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +thrysoee.dk/editline -- $SHELL -i' as const,
+  installCommand: 'launchpad install +thrysoee.dk/editline -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,14 +57,7 @@ export const editlinePackage = {
   versions: [
     '3.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'editline',
-  ] as const,
-  fullPath: 'thrysoee.dk/editline' as const,
+  aliases: [] as const,
 }
 
-export type EditlinePackage = typeof editlinePackage
+export type ThrysoeedkeditlinePackage = typeof thrysoeedkeditlinePackage

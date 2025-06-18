@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kafka.apache.org`
+- **Domain**: `kafkaapache.org`
 - **Name**: `kafka.apache.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kafka.apache.org/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +kafka.apache.org -- $SHELL -i
+launchpad install +kafka.apache.org -- $SHELL -i
 ```
 
 ## Programs
@@ -78,7 +78,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kafka.apache.org@4.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +kafkaapache.org@4.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -86,6 +86,7 @@ sh <(curl https://pkgx.sh) +kafka.apache.org@4.0.0 -- $SHELL -i
 This package depends on:
 
 - `openjdk.org`
+- `rsync.samba.org`
 
 ## Usage Examples
 

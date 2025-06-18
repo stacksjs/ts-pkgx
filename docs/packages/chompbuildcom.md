@@ -1,11 +1,11 @@
-# chomp
+# chompbuild.com
 
 > 'JS Make' - parallel task runner for the frontend ecosystem with a JS extension system.
 
 ## Package Information
 
 - **Domain**: `chompbuild.com`
-- **Name**: `chomp`
+- **Name**: `chompbuild.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/chompbuild.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) chomp
+launchpad install chomp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `chomp`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `chomp`
 
@@ -45,6 +51,8 @@ sh <(curl https://pkgx.sh) +chompbuild.com@0.2.23 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
+- `rust-lang.org^1.56`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

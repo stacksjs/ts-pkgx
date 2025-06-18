@@ -5,31 +5,26 @@
  * @version `1.4.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xtrans -- $SHELL -i`
- * @aliases `xtrans`
- * @dependencies `x.org/protocol`
+ * @install `launchpad install +x.org/xtrans -- $SHELL -i`
+ * @dependencies `x.org/protocol`, `x.org/util-macros`, `freedesktop.org/pkg-config~0.29`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xtrans
- * // Or access via domain
- * const samePkg = pantry.xorgxtrans
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xtrans"
+ * const pkg = pantry.xorgxtrans
+ * console.log(pkg.name)        // "xtrans"
  * console.log(pkg.versions[0]) // "1.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xtrans.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xtransPackage = {
+export const xorgxtransPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xtrans' as const,
+  name: 'xtrans' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xtransPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xtrans -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xtrans -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,6 +49,8 @@ export const xtransPackage = {
    */
   dependencies: [
     'x.org/protocol',
+    'x.org/util-macros',
+    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -62,14 +59,7 @@ export const xtransPackage = {
   versions: [
     '1.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xtrans',
-  ] as const,
-  fullPath: 'x.org/xtrans' as const,
+  aliases: [] as const,
 }
 
-export type XtransPackage = typeof xtransPackage
+export type XorgxtransPackage = typeof xorgxtransPackage

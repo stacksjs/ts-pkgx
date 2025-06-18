@@ -6,7 +6,7 @@
  * @version `5.2.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) gdown`
+ * @install `launchpad install gdown`
  * @name `gdown`
  * @dependencies `python.org~3.11`
  *
@@ -43,12 +43,12 @@ export const gdownPackage = {
   description: 'Google Drive Public File Downloader when Curl/Wget Fails' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wkentaro.github.io/gdown/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/wkentaro/gdown' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) gdown' as const,
+  installCommand: 'launchpad install gdown' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,7 +82,6 @@ export const gdownPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'wkentaro.github.io/gdown' as const,
 }
 
 export type GdownPackage = typeof gdownPackage

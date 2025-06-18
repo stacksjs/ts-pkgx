@@ -6,10 +6,9 @@
  * @version `2025.6.9.0` (103 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) fizz`
+ * @install `launchpad install fizz`
  * @name `fizz`
- * @aliases `facebookincubator/fizz`
- * @dependencies `boost.org`, `google.com/double-conversion^3`, `fmt.dev^10`, ... (+13 more)
+ * @dependencies `boost.org`, `google.com/double-conversion^3`, `fmt.dev^10`, ... (+15 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const fizzPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) fizz' as const,
+  installCommand: 'launchpad install fizz' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,8 +76,10 @@ export const fizzPackage = {
     'facebook.com/zstd@1',
     'sourceware.org/bzip2@1',
     'zlib.net^1',
-    'linuxgnu.org/gcc/libstdcxx@13',
     'gnu.org/gcc/libstdcxx@13',
+    'cmake.org^3',
+    'ninja-build.org^1',
+    'gnu.org/gcc@13',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -193,10 +194,7 @@ export const fizzPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'facebookincubator/fizz',
-  ] as const,
-  fullPath: 'github.com/facebookincubator/fizz' as const,
+  aliases: [] as const,
 }
 
 export type FizzPackage = typeof fizzPackage

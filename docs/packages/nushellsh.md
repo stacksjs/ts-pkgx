@@ -1,11 +1,11 @@
-# nu
+# nushell.sh
 
 > Modern shell for the GitHub era
 
 ## Package Information
 
 - **Domain**: `nushell.sh`
-- **Name**: `nu`
+- **Name**: `nushell.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nushell.sh/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) nu
+launchpad install nu
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `nu`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `nu`
 
@@ -54,6 +60,9 @@ sh <(curl https://pkgx.sh) +nushell.sh@0.105.1 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1`
+- `rust-lang.org^1.60.0`
+- `rust-lang.org/cargo^0.87`
+- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

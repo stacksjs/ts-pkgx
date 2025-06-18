@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +wxwidgets.org -- $SHELL -i
+launchpad install +wxwidgets.org -- $SHELL -i
 ```
 
 ## Programs
@@ -52,10 +52,12 @@ This package depends on:
 - `pcre.org/v2`
 - `libexpat.github.io`
 - `zlib.net`
-- `linuxx.org/smfreedesktop.org/mesa-glugtk.org/gtk3`
 - `x.org/sm`
 - `freedesktop.org/mesa-glu`
 - `gtk.org/gtk3`
+- `freedesktop.org/pkg-config`
+- `llvm.org<17 # still gets unassigned label errors`
+- `gnu.org/make`
 
 ## Usage Examples
 

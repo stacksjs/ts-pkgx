@@ -6,9 +6,9 @@
  * @version `0.22.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) thrift`
+ * @install `launchpad install thrift`
  * @name `thrift`
- * @dependencies `openssl.org@1.1`, `zlib.net`
+ * @dependencies `openssl.org@1.1`, `zlib.net`, `gnu.org/automake`, ... (+5 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const thriftPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) thrift' as const,
+  installCommand: 'launchpad install thrift' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,12 @@ export const thriftPackage = {
   dependencies: [
     'openssl.org@1.1',
     'zlib.net',
+    'gnu.org/automake',
+    'gnu.org/autoconf',
+    'gnu.org/libtool',
+    'freedesktop.org/pkg-config',
+    'gnu.org/bison',
+    'boost.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -81,7 +87,6 @@ export const thriftPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'apache.org/thrift' as const,
 }
 
 export type ThriftPackage = typeof thriftPackage

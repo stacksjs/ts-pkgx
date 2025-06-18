@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +ijg.org -- $SHELL -i
+launchpad install +ijg.org -- $SHELL -i
 ```
 
 ## Programs
@@ -43,6 +43,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +ijg.org@9f -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
 
 ## Usage Examples
 

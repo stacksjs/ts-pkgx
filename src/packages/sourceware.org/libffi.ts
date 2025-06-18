@@ -5,19 +5,15 @@
  * @version `3.5.1` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +sourceware.org/libffi -- $SHELL -i`
- * @aliases `libffi`
+ * @install `launchpad install +sourceware.org/libffi -- $SHELL -i`
+ * @dependencies `freedesktop.org/pkg-config^0.29`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libffi
- * // Or access via domain
- * const samePkg = pantry.sourcewareorglibffi
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sourceware.org/libffi"
+ * const pkg = pantry.sourcewareorglibffi
+ * console.log(pkg.name)        // "libffi"
  * console.log(pkg.description) // "A portable foreign-function interface library."
  * console.log(pkg.versions[0]) // "3.5.1" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/sourceware-org/libffi.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libffiPackage = {
+export const sourcewareorglibffiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sourceware.org/libffi' as const,
+  name: 'libffi' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,16 @@ export const libffiPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +sourceware.org/libffi -- $SHELL -i' as const,
+  installCommand: 'launchpad install +sourceware.org/libffi -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'freedesktop.org/pkg-config^0.29',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -63,14 +65,7 @@ export const libffiPackage = {
     '3.4.4',
     '3.4.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libffi',
-  ] as const,
-  fullPath: 'sourceware.org/libffi' as const,
+  aliases: [] as const,
 }
 
-export type LibffiPackage = typeof libffiPackage
+export type SourcewareorglibffiPackage = typeof sourcewareorglibffiPackage

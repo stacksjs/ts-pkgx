@@ -43,7 +43,7 @@ export const cephadmPackage = {
   description: 'Ceph is a distributed object, block, and file storage platform' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ceph.com/cephadm/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/ceph/ceph' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name

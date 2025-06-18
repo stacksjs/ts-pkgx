@@ -1,11 +1,11 @@
-# koyeb
+# koyeb.com
 
 > Koyeb cli
 
 ## Package Information
 
 - **Domain**: `koyeb.com`
-- **Name**: `koyeb`
+- **Name**: `koyeb.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/koyeb.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) koyeb
+launchpad install koyeb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `koyeb`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `koyeb`
 
@@ -46,6 +52,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +koyeb.com@5.5.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.18`
 
 ## Usage Examples
 

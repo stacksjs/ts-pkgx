@@ -1,11 +1,11 @@
-# Arkade
+# arkade.dev
 
 > Open Source Marketplace For Developer Tools
 
 ## Package Information
 
 - **Domain**: `arkade.dev`
-- **Name**: `Arkade`
+- **Name**: `arkade.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/arkade.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) arkade
+launchpad install arkade
 ```
 
 ## Programs
@@ -27,6 +27,7 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `arkade`
+- `Arkade`
 
 ## Available Versions
 
@@ -52,6 +53,13 @@ This package can also be accessed using these aliases:
 # Install specific version
 sh <(curl https://pkgx.sh) +arkade.dev@0.11.39 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.21`
+- `git-scm.org^2`
 
 ## Usage Examples
 

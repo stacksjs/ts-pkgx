@@ -1,11 +1,11 @@
-# digger
+# digger.dev
 
 > Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI pipeline ⚡️
 
 ## Package Information
 
 - **Domain**: `digger.dev`
-- **Name**: `digger`
+- **Name**: `digger.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/digger.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) digger
+launchpad install digger
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `digger`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `digger`
 
@@ -76,6 +82,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +digger.dev@0.6.106 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.21`
 
 ## Usage Examples
 

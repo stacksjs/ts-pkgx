@@ -6,20 +6,20 @@
  * @version `2.14.10` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) linkerd`
- * @name `linkerd`
- * @aliases `linkerd2`
+ * @install `launchpad install linkerd`
+ * @aliases `linkerd`
+ * @dependencies `go.dev^1.21`, `git-scm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.linkerd
  * // Or access via domain
  * const samePkg = pantry.linkerdiolinkerd2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "linkerd"
+ * console.log(pkg.name)        // "linkerd2"
  * console.log(pkg.description) // "Ultralight, security-first service mesh for Kub..."
  * console.log(pkg.programs)    // ["linkerd"]
  * console.log(pkg.versions[0]) // "2.14.10" (latest)
@@ -32,7 +32,7 @@ export const linkerdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'linkerd' as const,
+  name: 'linkerd2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,12 +43,12 @@ export const linkerdPackage = {
   description: 'Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/linkerd.io/linkerd2/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/linkerd/linkerd2' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) linkerd' as const,
+  installCommand: 'launchpad install linkerd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const linkerdPackage = {
     'linkerd',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+    'git-scm.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -78,9 +85,8 @@ export const linkerdPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'linkerd2',
+    'linkerd',
   ] as const,
-  fullPath: 'linkerd.io/linkerd2' as const,
 }
 
 export type LinkerdPackage = typeof linkerdPackage

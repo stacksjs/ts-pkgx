@@ -6,20 +6,20 @@
  * @version `8.2.1` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) buildifier`
- * @name `buildifier`
- * @aliases `bazelbuild/buildtools`
+ * @install `launchpad install buildifier`
+ * @aliases `buildifier`
+ * @dependencies `go.dev^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.buildifier
  * // Or access via domain
  * const samePkg = pantry.githubcombazelbuildbuildtools
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "buildifier"
+ * console.log(pkg.name)        // "buildtools"
  * console.log(pkg.description) // "Format bazel BUILD files with a standard conven..."
  * console.log(pkg.programs)    // ["buildifier"]
  * console.log(pkg.versions[0]) // "8.2.1" (latest)
@@ -32,7 +32,7 @@ export const buildifierPackage = {
   /**
    * The display name of this package.
    */
-  name: 'buildifier' as const,
+  name: 'buildtools' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const buildifierPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) buildifier' as const,
+  installCommand: 'launchpad install buildifier' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const buildifierPackage = {
     'buildifier',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -80,9 +86,8 @@ export const buildifierPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'bazelbuild/buildtools',
+    'buildifier',
   ] as const,
-  fullPath: 'github.com/bazelbuild/buildtools' as const,
 }
 
 export type BuildifierPackage = typeof buildifierPackage

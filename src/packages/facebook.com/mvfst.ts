@@ -5,20 +5,15 @@
  * @version `2025.6.9.0` (82 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +facebook.com/mvfst -- $SHELL -i`
- * @aliases `mvfst`
- * @dependencies `boost.org`, `github.com/facebookincubator/fizz`, `fmt.dev^10`, ... (+7 more)
+ * @install `launchpad install +facebook.com/mvfst -- $SHELL -i`
+ * @dependencies `boost.org`, `github.com/facebookincubator/fizz`, `fmt.dev^10`, ... (+19 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mvfst
- * // Or access via domain
- * const samePkg = pantry.facebookcommvfst
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "facebook.com/mvfst"
+ * const pkg = pantry.facebookcommvfst
+ * console.log(pkg.name)        // "mvfst"
  * console.log(pkg.description) // "An implementation of the QUIC transport protocol."
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/facebook-com/mvfst.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mvfstPackage = {
+export const facebookcommvfstPackage = {
   /**
    * The display name of this package.
    */
-  name: 'facebook.com/mvfst' as const,
+  name: 'mvfst' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const mvfstPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +facebook.com/mvfst -- $SHELL -i' as const,
+  installCommand: 'launchpad install +facebook.com/mvfst -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,9 +56,21 @@ export const mvfstPackage = {
     'gflags.github.io',
     'google.com/glog',
     'openssl.org',
-    'linuxlibsodium.org^1.0.19gnu.org/gcc/libstdcxx@13',
     'libsodium.org^1.0.19',
     'gnu.org/gcc/libstdcxx@13',
+    'cmake.org',
+    'gnu.org/gcc@13',
+    'gnu.org/binutils',
+    'gnu.org/make',
+    'kernel.org/linux-headers',
+    'google.com/googletest',
+    'cmake.org',
+    'gnu.org/gawk',
+    'pkgx.sh^1',
+    'curl.se',
+    'gnu.org/gcc',
+    'gnu.org/binutils',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -153,14 +160,7 @@ export const mvfstPackage = {
     '2023.10.30.0',
     '2023.10.23.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mvfst',
-  ] as const,
-  fullPath: 'facebook.com/mvfst' as const,
+  aliases: [] as const,
 }
 
-export type MvfstPackage = typeof mvfstPackage
+export type FacebookcommvfstPackage = typeof facebookcommvfstPackage

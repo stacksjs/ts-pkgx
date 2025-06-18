@@ -6,20 +6,21 @@
  * @version `1.22.2` (31 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) pebble`
- * @name `canonical/pebble`
- * @aliases `pebble`
+ * @install `launchpad install pebble`
+ * @name `pebble`
+ * @aliases `canonical/pebble`
+ * @dependencies `go.dev`, `git-scm.org`, `gnu.org/sed`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pebble
  * // Or access via domain
  * const samePkg = pantry.githubcomcanonicalpebble
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "canonical/pebble"
+ * console.log(pkg.name)        // "pebble"
  * console.log(pkg.description) // "Pebble is a lightweight Linux service manager w..."
  * console.log(pkg.programs)    // ["pebble"]
  * console.log(pkg.versions[0]) // "1.22.2" (latest)
@@ -32,7 +33,7 @@ export const pebblePackage = {
   /**
    * The display name of this package.
    */
-  name: 'canonical/pebble' as const,
+  name: 'pebble' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,12 +44,12 @@ export const pebblePackage = {
   description: 'Pebble is a lightweight Linux service manager with layered configuration and an HTTP API.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/canonical/pebble/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/canonical/pebble' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) pebble' as const,
+  installCommand: 'launchpad install pebble' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +58,16 @@ export const pebblePackage = {
     'pebble',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+    'git-scm.org',
+    'gnu.org/sed',
+    'cmake.org^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -100,9 +110,8 @@ export const pebblePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'pebble',
+    'canonical/pebble',
   ] as const,
-  fullPath: 'github.com/canonical/pebble' as const,
 }
 
 export type PebblePackage = typeof pebblePackage

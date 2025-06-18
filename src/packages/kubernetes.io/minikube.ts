@@ -6,9 +6,9 @@
  * @version `1.36.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) minikube`
+ * @install `launchpad install minikube`
  * @name `minikube`
- * @dependencies `kubernetes.io/kubectl`
+ * @dependencies `kubernetes.io/kubectl`, `go.dev^1.19`, `github.com/kevinburke/go-bindata`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const minikubePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) minikube' as const,
+  installCommand: 'launchpad install minikube' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const minikubePackage = {
    */
   dependencies: [
     'kubernetes.io/kubectl',
+    'go.dev^1.19',
+    'github.com/kevinburke/go-bindata',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -87,7 +89,6 @@ export const minikubePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kubernetes.io/minikube' as const,
 }
 
 export type MinikubePackage = typeof minikubePackage

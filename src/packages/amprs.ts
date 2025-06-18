@@ -8,7 +8,7 @@
  *
  * @install `launchpad install amp`
  * @aliases `amp`
- * @dependencies `zlib.net`, `libgit2.org`, `linux`, ... (+1 more)
+ * @dependencies `zlib.net@1`, `libgit2.org@1`, `openssl.org@1.1`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -62,10 +62,11 @@ export const ampPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'zlib.net',
-    'libgit2.org',
-    'linux',
-    'openssl.org',
+    'zlib.net@1',
+    'libgit2.org@1',
+    'openssl.org@1.1',
+    'rust-lang.org^1.56',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

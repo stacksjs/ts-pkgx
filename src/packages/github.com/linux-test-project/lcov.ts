@@ -1,25 +1,21 @@
 /**
- * **linux-test-project/lcov** - Graphical front-end for GCC's coverage testing tool (gcov)
+ * **lcov** - Graphical front-end for GCC's coverage testing tool (gcov)
  *
  * @domain `github.com/linux-test-project/lcov`
  * @programs `lcov`, `geninfo`, `genhtml`, `gendesc`, `genpng`
  * @version `2.3.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/linux-test-project/lcov -- $SHELL -i`
- * @aliases `linux-test-project/lcov`
- * @dependencies `perl.org>=5`, `python.org@3`
+ * @install `launchpad install +github.com/linux-test-project/lcov -- $SHELL -i`
+ * @dependencies `perl.org>=5`, `python.org@3`, `cpanmin.us^1`, ... (+1 more)
+ * @companions `PERL5LIB^${{prefix}}/lib/perl5`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.linuxtestprojectlcov
- * // Or access via domain
- * const samePkg = pantry.githubcomlinuxtestprojectlcov
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/linux-test-project/lcov"
+ * const pkg = pantry.githubcomlinuxtestprojectlcov
+ * console.log(pkg.name)        // "lcov"
  * console.log(pkg.description) // "Graphical front-end for GCC's coverage testing ..."
  * console.log(pkg.programs)    // ["lcov", "geninfo", ...]
  * console.log(pkg.versions[0]) // "2.3.1" (latest)
@@ -28,11 +24,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/linux-test-project/lcov.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const linuxtestprojectlcovPackage = {
+export const githubcomlinuxtestprojectlcovPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/linux-test-project/lcov' as const,
+  name: 'lcov' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +44,7 @@ export const linuxtestprojectlcovPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/linux-test-project/lcov -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/linux-test-project/lcov -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -60,7 +56,13 @@ export const linuxtestprojectlcovPackage = {
     'gendesc',
     'genpng',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'PERL5LIB^${{prefix}}/lib/perl5',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -68,6 +70,8 @@ export const linuxtestprojectlcovPackage = {
   dependencies: [
     'perl.org>=5',
     'python.org@3',
+    'cpanmin.us^1',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,14 +83,7 @@ export const linuxtestprojectlcovPackage = {
     '2.2.0',
     '1.16.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'linux-test-project/lcov',
-  ] as const,
-  fullPath: 'github.com/linux-test-project/lcov' as const,
+  aliases: [] as const,
 }
 
-export type LinuxtestprojectlcovPackage = typeof linuxtestprojectlcovPackage
+export type GithubcomlinuxtestprojectlcovPackage = typeof githubcomlinuxtestprojectlcovPackage

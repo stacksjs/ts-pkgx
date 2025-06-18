@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +fltk.org -- $SHELL -i
+launchpad install +fltk.org -- $SHELL -i
 ```
 
 ## Programs
@@ -48,7 +48,6 @@ This package depends on:
 
 - `libjpeg-turbo.org^2`
 - `libpng.org^1`
-- `linuxx.org/xft^2x.org/xt^1freedesktop.org/mesa-glu^9`
 - `x.org/xft^2`
 - `x.org/xt^1`
 - `freedesktop.org/mesa-glu^9`

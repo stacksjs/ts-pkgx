@@ -1,5 +1,5 @@
 /**
- * **classic.yarnpkg.com** - The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
+ * **yarn** - The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
  *
  * @domain `classic.yarnpkg.com`
  * @programs `yarn`, `yarnpkg`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +classic.yarnpkg.com -- $SHELL -i`
- * @dependencies `nodejs.org>=5`
+ * @aliases `yarn`
+ * @dependencies `nodejs.org>=5`, `npmjs.com`, `gnu.org/patch`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.classicyarnpkgcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.yarn
+ * // Or access via domain
+ * const samePkg = pantry.classicyarnpkgcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "classic.yarnpkg.com"
  * console.log(pkg.description) // "The 1.x line is frozen - features and bugfixes ..."
  * console.log(pkg.programs)    // ["yarn", "yarnpkg"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/classic-yarnpkg-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const classicyarnpkgcomPackage = {
+export const yarnPackage = {
   /**
    * The display name of this package.
    */
@@ -59,6 +64,8 @@ export const classicyarnpkgcomPackage = {
    */
   dependencies: [
     'nodejs.org>=5',
+    'npmjs.com',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -70,7 +77,13 @@ export const classicyarnpkgcomPackage = {
     '1.22.20',
     '1.22.19',
   ] as const,
-  aliases: [] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'yarn',
+  ] as const,
 }
 
-export type ClassicyarnpkgcomPackage = typeof classicyarnpkgcomPackage
+export type YarnPackage = typeof yarnPackage

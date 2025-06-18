@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install spirv-cross`
- * @name `spirv-cross`
- * @aliases `SPIRV-Cross`
+ * @aliases `spirv-cross`
+ * @dependencies `cmake.org`, `khronos.org/glslang`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.spirvcross
  * // Or access via domain
  * const samePkg = pantry.khronosorgspirvcross
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "spirv-cross"
+ * console.log(pkg.name)        // "SPIRV-Cross"
  * console.log(pkg.description) // "SPIRV-Cross is a practical tool and library for..."
  * console.log(pkg.programs)    // ["spirv-cross"]
  * console.log(pkg.versions[0]) // "2021.1.15" (latest)
@@ -32,7 +32,7 @@ export const spirvcrossPackage = {
   /**
    * The display name of this package.
    */
-  name: 'spirv-cross' as const,
+  name: 'SPIRV-Cross' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -57,7 +57,14 @@ export const spirvcrossPackage = {
     'spirv-cross',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'khronos.org/glslang',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,9 +77,8 @@ export const spirvcrossPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'SPIRV-Cross',
+    'spirv-cross',
   ] as const,
-  fullPath: 'khronos.org/SPIRV-Cross' as const,
 }
 
 export type SpirvcrossPackage = typeof spirvcrossPackage

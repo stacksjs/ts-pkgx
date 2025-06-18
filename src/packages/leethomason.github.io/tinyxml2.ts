@@ -5,19 +5,15 @@
  * @version `11.0.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +leethomason.github.io/tinyxml2 -- $SHELL -i`
- * @aliases `tinyxml2`
+ * @install `launchpad install +leethomason.github.io/tinyxml2 -- $SHELL -i`
+ * @dependencies `cmake.org`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.tinyxml2
- * // Or access via domain
- * const samePkg = pantry.leethomasongithubiotinyxml2
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "leethomason.github.io/tinyxml2"
+ * const pkg = pantry.leethomasongithubiotinyxml2
+ * console.log(pkg.name)        // "tinyxml2"
  * console.log(pkg.description) // "TinyXML2 is a simple, small, efficient, C++ XML..."
  * console.log(pkg.versions[0]) // "11.0.0" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/leethomason-github-io/tinyxml2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tinyxml2Package = {
+export const leethomasongithubiotinyxml2Package = {
   /**
    * The display name of this package.
    */
-  name: 'leethomason.github.io/tinyxml2' as const,
+  name: 'tinyxml2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,17 @@ export const tinyxml2Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +leethomason.github.io/tinyxml2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +leethomason.github.io/tinyxml2 -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -58,14 +61,7 @@ export const tinyxml2Package = {
     '10.1.0',
     '10.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'tinyxml2',
-  ] as const,
-  fullPath: 'leethomason.github.io/tinyxml2' as const,
+  aliases: [] as const,
 }
 
-export type Tinyxml2Package = typeof tinyxml2Package
+export type Leethomasongithubiotinyxml2Package = typeof leethomasongithubiotinyxml2Package

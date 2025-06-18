@@ -1,11 +1,11 @@
-# gqlgen
+# gqlgen.com
 
 > go generate based graphql server library
 
 ## Package Information
 
 - **Domain**: `gqlgen.com`
-- **Name**: `gqlgen`
+- **Name**: `gqlgen.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gqlgen.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) gqlgen
+launchpad install gqlgen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `gqlgen`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `gqlgen`
 
@@ -46,6 +52,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +gqlgen.com@0.17.75 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.18`
 
 ## Usage Examples
 

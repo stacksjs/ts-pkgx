@@ -6,19 +6,20 @@
  * @version `2.26.9` (176 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) supabase`
- * @name `supabase`
+ * @install `launchpad install supabase`
+ * @aliases `supabase`
+ * @dependencies `go.dev^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.supabase
  * // Or access via domain
  * const samePkg = pantry.supabasecomcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "supabase"
+ * console.log(pkg.name)        // "cli"
  * console.log(pkg.description) // "Supabase CLI. Manage postgres migrations, run S..."
  * console.log(pkg.programs)    // ["supabase"]
  * console.log(pkg.versions[0]) // "2.26.9" (latest)
@@ -31,7 +32,7 @@ export const supabasePackage = {
   /**
    * The display name of this package.
    */
-  name: 'supabase' as const,
+  name: 'cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +48,7 @@ export const supabasePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) supabase' as const,
+  installCommand: 'launchpad install supabase' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,13 @@ export const supabasePackage = {
     'supabase',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -243,8 +250,9 @@ export const supabasePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
-  fullPath: 'supabase.com/cli' as const,
+  aliases: [
+    'supabase',
+  ] as const,
 }
 
 export type SupabasePackage = typeof supabasePackage

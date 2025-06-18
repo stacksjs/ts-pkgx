@@ -5,19 +5,15 @@
  * @version `1.2.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +google.com/highway -- $SHELL -i`
- * @aliases `highway`
+ * @install `launchpad install +google.com/highway -- $SHELL -i`
+ * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.highway
- * // Or access via domain
- * const samePkg = pantry.googlecomhighway
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "google.com/highway"
+ * const pkg = pantry.googlecomhighway
+ * console.log(pkg.name)        // "highway"
  * console.log(pkg.description) // "Performance-portable, length-agnostic SIMD with..."
  * console.log(pkg.versions[0]) // "1.2.0" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/google-com/highway.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const highwayPackage = {
+export const googlecomhighwayPackage = {
   /**
    * The display name of this package.
    */
-  name: 'google.com/highway' as const,
+  name: 'highway' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,16 @@ export const highwayPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +google.com/highway -- $SHELL -i' as const,
+  installCommand: 'launchpad install +google.com/highway -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -61,14 +63,7 @@ export const highwayPackage = {
     '1.0.5',
     '1.0.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'highway',
-  ] as const,
-  fullPath: 'google.com/highway' as const,
+  aliases: [] as const,
 }
 
-export type HighwayPackage = typeof highwayPackage
+export type GooglecomhighwayPackage = typeof googlecomhighwayPackage

@@ -1,24 +1,19 @@
 /**
- * **zsh-users/zsh-completions** - Additional completion definitions for Zsh.
+ * **zsh-completions** - Additional completion definitions for Zsh.
  *
  * @domain `github.com/zsh-users/zsh-completions`
  * @version `0.35.0` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/zsh-users/zsh-completions -- $SHELL -i`
- * @aliases `zsh-users/zsh-completions`
  * @dependencies `zsh.sourceforge.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.zshuserszshcompletions
- * // Or access via domain
- * const samePkg = pantry.githubcomzshuserszshcompletions
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/zsh-users/zsh-completions"
+ * const pkg = pantry.githubcomzshuserszshcompletions
+ * console.log(pkg.name)        // "zsh-completions"
  * console.log(pkg.description) // "Additional completion definitions for Zsh."
  * console.log(pkg.versions[0]) // "0.35.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/zsh-users/zsh-completions.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zshuserszshcompletionsPackage = {
+export const githubcomzshuserszshcompletionsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/zsh-users/zsh-completions' as const,
+  name: 'zsh-completions' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -63,14 +58,7 @@ export const zshuserszshcompletionsPackage = {
   versions: [
     '0.35.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'zsh-users/zsh-completions',
-  ] as const,
-  fullPath: 'github.com/zsh-users/zsh-completions' as const,
+  aliases: [] as const,
 }
 
-export type ZshuserszshcompletionsPackage = typeof zshuserszshcompletionsPackage
+export type GithubcomzshuserszshcompletionsPackage = typeof githubcomzshuserszshcompletionsPackage

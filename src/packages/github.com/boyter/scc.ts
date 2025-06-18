@@ -6,9 +6,9 @@
  * @version `3.5.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) scc`
+ * @install `launchpad install scc`
  * @name `scc`
- * @aliases `boyter/scc`
+ * @dependencies `go.dev^1.14`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const sccPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) scc' as const,
+  installCommand: 'launchpad install scc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const sccPackage = {
     'scc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.14',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -78,10 +84,7 @@ export const sccPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'boyter/scc',
-  ] as const,
-  fullPath: 'github.com/boyter/scc' as const,
+  aliases: [] as const,
 }
 
 export type SccPackage = typeof sccPackage

@@ -1,11 +1,11 @@
-# doctave
+# doctave.com
 
 > A batteries-included developer documentation site generator
 
 ## Package Information
 
 - **Domain**: `doctave.com`
-- **Name**: `doctave`
+- **Name**: `doctave.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/doctave.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) doctave
+launchpad install doctave
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `doctave`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `doctave`
 
@@ -39,6 +45,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +doctave.com@0.4.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rust-lang.org>=1.65`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

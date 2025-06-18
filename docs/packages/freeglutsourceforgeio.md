@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `freeglut.sourceforge.io`
+- **Domain**: `freeglutsourceforge.io`
 - **Name**: `freeglut.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freeglut.sourceforge.io/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +freeglut.sourceforge.io -- $SHELL -i
+launchpad install +freeglut.sourceforge.io -- $SHELL -i
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +freeglut.sourceforge.io@3.6.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +freeglutsourceforge.io@3.6.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -49,9 +49,10 @@ This package depends on:
 - `x.org/xrandr`
 - `x.org/xxf86vm`
 - `mesa3d.org`
-- `linuxfreedesktop.org/mesa-glux.org/xinput`
 - `freedesktop.org/mesa-glu`
 - `x.org/xinput`
+- `cmake.org`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

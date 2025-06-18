@@ -6,20 +6,21 @@
  * @version `0.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) garm-provider-openstack`
- * @name `cloudbase/garm-provider-openstack`
- * @aliases `garm-provider-openstack`
+ * @install `launchpad install garm-provider-openstack`
+ * @name `garm-provider-openstack`
+ * @aliases `cloudbase/garm-provider-openstack`
+ * @dependencies `go.dev^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.garmprovideropenstack
  * // Or access via domain
  * const samePkg = pantry.githubcomcloudbasegarmprovideropenstack
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cloudbase/garm-provider-openstack"
+ * console.log(pkg.name)        // "garm-provider-openstack"
  * console.log(pkg.description) // "Garm external provider for OpenStack"
  * console.log(pkg.programs)    // ["garm-provider-openstack"]
  * console.log(pkg.versions[0]) // "0.1.0" (latest)
@@ -32,7 +33,7 @@ export const garmprovideropenstackPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cloudbase/garm-provider-openstack' as const,
+  name: 'garm-provider-openstack' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +49,7 @@ export const garmprovideropenstackPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) garm-provider-openstack' as const,
+  installCommand: 'launchpad install garm-provider-openstack' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +58,13 @@ export const garmprovideropenstackPackage = {
     'garm-provider-openstack',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,9 +77,8 @@ export const garmprovideropenstackPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'garm-provider-openstack',
+    'cloudbase/garm-provider-openstack',
   ] as const,
-  fullPath: 'github.com/cloudbase/garm-provider-openstack' as const,
 }
 
 export type GarmprovideropenstackPackage = typeof garmprovideropenstackPackage

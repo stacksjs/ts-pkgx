@@ -5,20 +5,15 @@
  * @version `80.9.0` (64 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +pypa.io/setuptools -- $SHELL -i`
- * @aliases `setuptools`
+ * @install `launchpad install +pypa.io/setuptools -- $SHELL -i`
  * @dependencies `python.org~3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.setuptools
- * // Or access via domain
- * const samePkg = pantry.pypaiosetuptools
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pypa.io/setuptools"
+ * const pkg = pantry.pypaiosetuptools
+ * console.log(pkg.name)        // "setuptools"
  * console.log(pkg.description) // "Official project repository for the Setuptools ..."
  * console.log(pkg.versions[0]) // "80.9.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/pypa-io/setuptools.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const setuptoolsPackage = {
+export const pypaiosetuptoolsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pypa.io/setuptools' as const,
+  name: 'setuptools' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const setuptoolsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +pypa.io/setuptools -- $SHELL -i' as const,
+  installCommand: 'launchpad install +pypa.io/setuptools -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -126,14 +121,7 @@ export const setuptoolsPackage = {
     '69.2.0',
     '69.1.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'setuptools',
-  ] as const,
-  fullPath: 'pypa.io/setuptools' as const,
+  aliases: [] as const,
 }
 
-export type SetuptoolsPackage = typeof setuptoolsPackage
+export type PypaiosetuptoolsPackage = typeof pypaiosetuptoolsPackage

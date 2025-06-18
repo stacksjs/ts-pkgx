@@ -6,7 +6,7 @@
  * @version `2.8.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) patch`
+ * @install `launchpad install patch`
  * @name `patch`
  *
  * @example
@@ -46,7 +46,7 @@ export const patchPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) patch' as const,
+  installCommand: 'launchpad install patch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,7 +69,6 @@ export const patchPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/patch' as const,
 }
 
 export type PatchPackage = typeof patchPackage

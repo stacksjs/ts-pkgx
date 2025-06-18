@@ -5,21 +5,20 @@
  * @version `8.2.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +palletsprojects.com/click -- $SHELL -i`
- * @name `python-click`
- * @aliases `click`
+ * @install `launchpad install +palletsprojects.com/click -- $SHELL -i`
+ * @aliases `python-click`
  * @dependencies `python.org>=3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.pythonclick
  * // Or access via domain
  * const samePkg = pantry.palletsprojectscomclick
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "python-click"
+ * console.log(pkg.name)        // "click"
  * console.log(pkg.description) // "Python composable command line interface toolkit"
  * console.log(pkg.versions[0]) // "8.2.1" (latest)
  * ```
@@ -31,7 +30,7 @@ export const pythonclickPackage = {
   /**
    * The display name of this package.
    */
-  name: 'python-click' as const,
+  name: 'click' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,12 +41,12 @@ export const pythonclickPackage = {
   description: 'Python composable command line interface toolkit' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/click/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/pallets/click' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +palletsprojects.com/click -- $SHELL -i' as const,
+  installCommand: 'launchpad install +palletsprojects.com/click -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -72,9 +71,8 @@ export const pythonclickPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'click',
+    'python-click',
   ] as const,
-  fullPath: 'palletsprojects.com/click' as const,
 }
 
 export type PythonclickPackage = typeof pythonclickPackage

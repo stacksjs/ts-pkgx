@@ -1,23 +1,18 @@
 /**
- * **github.com/juliastrings/utf8proc** - a clean C library for processing UTF-8 Unicode data
+ * **utf8proc** - a clean C library for processing UTF-8 Unicode data
  *
  * @domain `github.com/JuliaStrings/utf8proc`
  * @version `2.10.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/JuliaStrings/utf8proc -- $SHELL -i`
- * @aliases `github.com/juliastrings/utf8proc`, `JuliaStrings/utf8proc`
+ * @install `launchpad install +github.com/JuliaStrings/utf8proc -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
  * const pkg = pantry.githubcomjuliastringsutf8proc
- * // Or access via domain
- * const samePkg = pantry.githubcomjuliastringsutf8proc
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/JuliaStrings/utf8proc"
+ * console.log(pkg.name)        // "utf8proc"
  * console.log(pkg.description) // "a clean C library for processing UTF-8 Unicode ..."
  * console.log(pkg.versions[0]) // "2.10.0" (latest)
  * ```
@@ -29,7 +24,7 @@ export const githubcomjuliastringsutf8procPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/JuliaStrings/utf8proc' as const,
+  name: 'utf8proc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const githubcomjuliastringsutf8procPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/JuliaStrings/utf8proc -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/JuliaStrings/utf8proc -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -58,15 +53,7 @@ export const githubcomjuliastringsutf8procPackage = {
     '2.9.0',
     '2.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'github.com/juliastrings/utf8proc',
-    'JuliaStrings/utf8proc',
-  ] as const,
-  fullPath: 'github.com/JuliaStrings/utf8proc' as const,
+  aliases: [] as const,
 }
 
 export type Githubcomjuliastringsutf8procPackage = typeof githubcomjuliastringsutf8procPackage

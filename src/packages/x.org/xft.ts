@@ -5,31 +5,26 @@
  * @version `2.3.9` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xft -- $SHELL -i`
- * @aliases `xft`
- * @dependencies `freedesktop.org/fontconfig^2.14`, `x.org/xrender^0.9`, `sourceware.org/bzip2^1`, ... (+1 more)
+ * @install `launchpad install +x.org/xft -- $SHELL -i`
+ * @dependencies `freedesktop.org/fontconfig^2.14`, `x.org/xrender^0.9`, `sourceware.org/bzip2^1`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xft
- * // Or access via domain
- * const samePkg = pantry.xorgxft
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xft"
+ * const pkg = pantry.xorgxft
+ * console.log(pkg.name)        // "xft"
  * console.log(pkg.versions[0]) // "2.3.9" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xft.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xftPackage = {
+export const xorgxftPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xft' as const,
+  name: 'xft' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xftPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xft -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xft -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -57,6 +52,7 @@ export const xftPackage = {
     'x.org/xrender^0.9',
     'sourceware.org/bzip2^1',
     'zlib.net^1',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -66,14 +62,7 @@ export const xftPackage = {
     '2.3.9',
     '2.3.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xft',
-  ] as const,
-  fullPath: 'x.org/xft' as const,
+  aliases: [] as const,
 }
 
-export type XftPackage = typeof xftPackage
+export type XorgxftPackage = typeof xorgxftPackage

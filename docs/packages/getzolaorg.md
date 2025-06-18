@@ -1,11 +1,11 @@
-# zola
+# getzola.org
 
 > A fast static site generator in a single binary with everything built-in. https://www.getzola.org
 
 ## Package Information
 
 - **Domain**: `getzola.org`
-- **Name**: `zola`
+- **Name**: `getzola.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getzola.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) zola
+launchpad install zola
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `zola`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `zola`
 
@@ -40,6 +46,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +getzola.org@0.20.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rust-lang.org>=1.65`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

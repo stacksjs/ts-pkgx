@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i
+launchpad install +vim.org -- $SHELL -i
 ```
 
 ## Programs
@@ -23,11 +23,19 @@ This package provides the following executable programs:
 - `vim`
 - `vi`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `vim`
+- `vi`
+
 ## Available Versions
 
 <details>
-<summary>Show all 2039 versions</summary>
+<summary>Show all 2044 versions</summary>
 
+- `9.1.1471`, `9.1.1470`, `9.1.1469`, `9.1.1468`, `9.1.1467`
 - `9.1.1466`, `9.1.1465`, `9.1.1464`, `9.1.1463`, `9.1.1462`
 - `9.1.1460`, `9.1.1459`, `9.1.1458`, `9.1.1457`, `9.1.1456`
 - `9.1.1455`, `9.1.1454`, `9.1.1453`, `9.1.1452`, `9.1.1451`
@@ -439,13 +447,13 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `9.1.1466`
+**Latest Version**: `9.1.1471`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +vim.org@9.1.1466 -- $SHELL -i
+sh <(curl https://pkgx.sh) +vim.org@9.1.1471 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -457,6 +465,7 @@ This package depends on:
 - `invisible-island.net/ncurses>=6.3`
 - `perl.org>=5.36`
 - `ruby-lang.org>=3.2`
+- `gnu.org/make^4.3`
 
 ## Usage Examples
 

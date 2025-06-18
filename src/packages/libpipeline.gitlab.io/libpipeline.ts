@@ -5,8 +5,9 @@
  * @version `1.5.8` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +libpipeline.gitlab.io/libpipeline -- $SHELL -i`
+ * @install `launchpad install +libpipeline.gitlab.io/libpipeline -- $SHELL -i`
  * @name `libpipeline`
+ * @dependencies `gnu.org/make`
  *
  * @example
  * ```typescript
@@ -44,10 +45,16 @@ export const libpipelinePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +libpipeline.gitlab.io/libpipeline -- $SHELL -i' as const,
+  installCommand: 'launchpad install +libpipeline.gitlab.io/libpipeline -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/make',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -61,7 +68,6 @@ export const libpipelinePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'libpipeline.gitlab.io/libpipeline' as const,
 }
 
 export type LibpipelinePackage = typeof libpipelinePackage

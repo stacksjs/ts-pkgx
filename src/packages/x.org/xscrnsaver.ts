@@ -5,31 +5,26 @@
  * @version `1.2.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xscrnsaver -- $SHELL -i`
- * @aliases `xscrnsaver`
+ * @install `launchpad install +x.org/xscrnsaver -- $SHELL -i`
  * @dependencies `x.org/x11^1`, `x.org/protocol`, `x.org/exts`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xscrnsaver
- * // Or access via domain
- * const samePkg = pantry.xorgxscrnsaver
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xscrnsaver"
+ * const pkg = pantry.xorgxscrnsaver
+ * console.log(pkg.name)        // "xscrnsaver"
  * console.log(pkg.versions[0]) // "1.2.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xscrnsaver.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xscrnsaverPackage = {
+export const xorgxscrnsaverPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xscrnsaver' as const,
+  name: 'xscrnsaver' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xscrnsaverPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xscrnsaver -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xscrnsaver -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -64,14 +59,7 @@ export const xscrnsaverPackage = {
   versions: [
     '1.2.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xscrnsaver',
-  ] as const,
-  fullPath: 'x.org/xscrnsaver' as const,
+  aliases: [] as const,
 }
 
-export type XscrnsaverPackage = typeof xscrnsaverPackage
+export type XorgxscrnsaverPackage = typeof xorgxscrnsaverPackage

@@ -1,11 +1,11 @@
-# kpt
+# kpt.dev
 
 > Automate Kubernetes Configuration Editing
 
 ## Package Information
 
 - **Domain**: `kpt.dev`
-- **Name**: `kpt`
+- **Name**: `kpt.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kpt.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) kpt
+launchpad install kpt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `kpt`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `kpt`
 
@@ -45,6 +51,7 @@ sh <(curl https://pkgx.sh) +kpt.dev@0.39.3 -- $SHELL -i
 This package depends on:
 
 - `git-scm.org`
+- `go.dev^1.14`
 
 ## Usage Examples
 

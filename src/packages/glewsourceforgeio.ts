@@ -1,9 +1,12 @@
 /**
- * **glew.sourceforge.io** - Package from pantry: glew.sourceforge.io
+ * **glew.sourceforge.io** - The OpenGL Extension Wrangler Library
  *
  * @domain `glew.sourceforge.io`
+ * @programs `glewinfo`, `visualinfo`
+ * @version `2.2.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install glew.sourceforge.io`
+ * @install `launchpad install +glew.sourceforge.io -- $SHELL -i`
  * @dependencies `cmake.org^3`
  *
  * @example
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.glewsourceforgeio
  * console.log(pkg.name)        // "glew.sourceforge.io"
- * console.log(pkg.description) // "Package from pantry: glew.sourceforge.io"
+ * console.log(pkg.description) // "The OpenGL Extension Wrangler Library"
+ * console.log(pkg.programs)    // ["glewinfo", "visualinfo"]
+ * console.log(pkg.versions[0]) // "2.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/glew-sourceforge-io.md
@@ -30,13 +35,23 @@ export const glewsourceforgeioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: glew.sourceforge.io' as const,
+  description: 'The OpenGL Extension Wrangler Library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/glew.sourceforge.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install glew.sourceforge.io' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +glew.sourceforge.io -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'glewinfo',
+    'visualinfo',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +60,14 @@ export const glewsourceforgeioPackage = {
   dependencies: [
     'cmake.org^3',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/glew.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.2.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type GlewsourceforgeioPackage = typeof glewsourceforgeioPackage

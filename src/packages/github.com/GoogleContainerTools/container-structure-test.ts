@@ -6,9 +6,9 @@
  * @version `1.19.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) container-structure-test`
+ * @install `launchpad install container-structure-test`
  * @name `container-structure-test`
- * @aliases `GoogleContainerTools/container-structure-test`
+ * @dependencies `go.dev^1.22`, `goreleaser.com`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -43,12 +43,12 @@ export const containerstructuretestPackage = {
   description: 'validate the structure of your container images' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/GoogleContainerTools/container-structure-test/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/GoogleContainerTools/container-structure-test' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) container-structure-test' as const,
+  installCommand: 'launchpad install container-structure-test' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,15 @@ export const containerstructuretestPackage = {
     'container-structure-test',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.22',
+    'goreleaser.com',
+    'git-scm.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,10 +79,7 @@ export const containerstructuretestPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'GoogleContainerTools/container-structure-test',
-  ] as const,
-  fullPath: 'github.com/GoogleContainerTools/container-structure-test' as const,
+  aliases: [] as const,
 }
 
 export type ContainerstructuretestPackage = typeof containerstructuretestPackage

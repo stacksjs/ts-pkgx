@@ -6,7 +6,7 @@
  * @version `2.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) s4cmd`
+ * @install `launchpad install s4cmd`
  * @name `s4cmd`
  * @dependencies `python.org>=3<3.12`
  *
@@ -48,7 +48,7 @@ export const s4cmdPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) s4cmd' as const,
+  installCommand: 'launchpad install s4cmd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,7 +76,6 @@ export const s4cmdPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'bloomreach.com/s4cmd' as const,
 }
 
 export type S4cmdPackage = typeof s4cmdPackage

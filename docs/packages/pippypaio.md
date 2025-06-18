@@ -1,11 +1,11 @@
-# pip
+# pip.pypa.io
 
 > The Python package installer
 
 ## Package Information
 
-- **Domain**: `pip.pypa.io`
-- **Name**: `pip`
+- **Domain**: `pippypa.io`
+- **Name**: `pip.pypa.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pip.pypa.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i
+launchpad install +pip.pypa.io -- $SHELL -i
 ```
 
 ## Programs
@@ -25,6 +25,12 @@ This package provides the following executable programs:
 - `pip3.9`
 - `pip3.10`
 - `pip3.11`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pip`
 
 ## Available Versions
 
@@ -46,7 +52,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pip.pypa.io@25.1.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +pippypa.io@25.1.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -54,6 +60,8 @@ sh <(curl https://pkgx.sh) +pip.pypa.io@25.1.1 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
+- `python.org~3.11`
+- `crates.io/semverator^0.4.3`
 
 ## Usage Examples
 

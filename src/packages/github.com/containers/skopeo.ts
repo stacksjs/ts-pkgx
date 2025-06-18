@@ -6,10 +6,9 @@
  * @version `1.19.0` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) skopeo`
+ * @install `launchpad install skopeo`
  * @name `skopeo`
- * @aliases `containers/skopeo`
- * @dependencies `curl.se/ca-certs`
+ * @dependencies `curl.se/ca-certs`, `go.dev^1.18`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const skopeoPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) skopeo' as const,
+  installCommand: 'launchpad install skopeo' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const skopeoPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
+    'go.dev^1.18',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -90,10 +90,7 @@ export const skopeoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'containers/skopeo',
-  ] as const,
-  fullPath: 'github.com/containers/skopeo' as const,
+  aliases: [] as const,
 }
 
 export type SkopeoPackage = typeof skopeoPackage

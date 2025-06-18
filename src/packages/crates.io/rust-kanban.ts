@@ -6,9 +6,9 @@
  * @version `0.10.5` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rust-kanban`
+ * @install `launchpad install rust-kanban`
  * @name `rust-kanban`
- * @dependencies `openssl.org^1.1`
+ * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const rustkanbanPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rust-kanban' as const,
+  installCommand: 'launchpad install rust-kanban' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const rustkanbanPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -83,7 +85,6 @@ export const rustkanbanPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/rust-kanban' as const,
 }
 
 export type RustkanbanPackage = typeof rustkanbanPackage

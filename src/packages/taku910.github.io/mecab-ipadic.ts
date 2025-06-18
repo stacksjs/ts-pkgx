@@ -6,30 +6,25 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +taku910.github.io/mecab-ipadic -- $SHELL -i`
- * @aliases `mecab-ipadic`
  * @dependencies `taku910.github.io/mecab`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mecabipadic
- * // Or access via domain
- * const samePkg = pantry.taku910githubiomecabipadic
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "taku910.github.io/mecab-ipadic"
+ * const pkg = pantry.taku910githubiomecabipadic
+ * console.log(pkg.name)        // "mecab-ipadic"
  * console.log(pkg.versions[0]) // "2.7.0.20070801" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/taku910-github-io/mecab-ipadic.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mecabipadicPackage = {
+export const taku910githubiomecabipadicPackage = {
   /**
    * The display name of this package.
    */
-  name: 'taku910.github.io/mecab-ipadic' as const,
+  name: 'mecab-ipadic' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -62,14 +57,7 @@ export const mecabipadicPackage = {
   versions: [
     '2.7.0.20070801',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mecab-ipadic',
-  ] as const,
-  fullPath: 'taku910.github.io/mecab-ipadic' as const,
+  aliases: [] as const,
 }
 
-export type MecabipadicPackage = typeof mecabipadicPackage
+export type Taku910githubiomecabipadicPackage = typeof taku910githubiomecabipadicPackage

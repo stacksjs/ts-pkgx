@@ -1,11 +1,11 @@
-# symfony
+# symfony.com
 
 > The Symfony CLI tool
 
 ## Package Information
 
 - **Domain**: `symfony.com`
-- **Name**: `symfony`
+- **Name**: `symfony.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) symfony
+launchpad install symfony
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `symfony`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `symfony`
 
@@ -54,6 +60,7 @@ sh <(curl https://pkgx.sh) +symfony.com@5.12.0 -- $SHELL -i
 This package depends on:
 
 - `php.net`
+- `gnu.org/wget`
 
 ## Usage Examples
 

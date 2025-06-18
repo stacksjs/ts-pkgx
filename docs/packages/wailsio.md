@@ -1,11 +1,11 @@
-# wails
+# wails.io
 
 > Create beautiful applications using Go
 
 ## Package Information
 
 - **Domain**: `wails.io`
-- **Name**: `wails`
+- **Name**: `wails.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wails.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) wails
+launchpad install wails
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `wails`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `wails`
 
@@ -47,7 +53,6 @@ This package depends on:
 
 - `go.dev^1.18`
 - `npmjs.com`
-- `linuxgnu.org/gccgtk.org/gtk3freedesktop.org/pkg-config`
 - `gnu.org/gcc`
 - `gtk.org/gtk3`
 - `freedesktop.org/pkg-config`

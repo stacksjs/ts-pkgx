@@ -6,9 +6,9 @@
  * @version `5.6.0` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) kustomize`
+ * @install `launchpad install kustomize`
  * @name `kustomize`
- * @dependencies `kubernetes.io/kubectl`
+ * @dependencies `kubernetes.io/kubectl`, `go.dev^1.18`, `gnu.org/gcc`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const kustomizePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) kustomize' as const,
+  installCommand: 'launchpad install kustomize' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const kustomizePackage = {
    */
   dependencies: [
     'kubernetes.io/kubectl',
+    'go.dev^1.18',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -89,7 +91,6 @@ export const kustomizePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kubernetes.io/kustomize' as const,
 }
 
 export type KustomizePackage = typeof kustomizePackage

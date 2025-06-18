@@ -6,20 +6,20 @@
  * @version `2025.2.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) glslc`
- * @name `glslc`
- * @aliases `google/shaderc`
+ * @install `launchpad install glslc`
+ * @aliases `glslc`
+ * @dependencies `cmake.org`, `python.org~3.12`, `git-scm.org^2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.glslc
  * // Or access via domain
  * const samePkg = pantry.githubcomgoogleshaderc
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "glslc"
+ * console.log(pkg.name)        // "shaderc"
  * console.log(pkg.description) // "A collection of tools, libraries, and tests for..."
  * console.log(pkg.programs)    // ["glslc"]
  * console.log(pkg.versions[0]) // "2025.2.0" (latest)
@@ -32,7 +32,7 @@ export const glslcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'glslc' as const,
+  name: 'shaderc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const glslcPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) glslc' as const,
+  installCommand: 'launchpad install glslc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,16 @@ export const glslcPackage = {
     'glslc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'python.org~3.12',
+    'git-scm.org^2',
+    'freedesktop.org/pkg-config^0.29',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -77,9 +86,8 @@ export const glslcPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'google/shaderc',
+    'glslc',
   ] as const,
-  fullPath: 'github.com/google/shaderc' as const,
 }
 
 export type GlslcPackage = typeof glslcPackage

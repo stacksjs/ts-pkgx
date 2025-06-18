@@ -6,9 +6,9 @@
  * @version `0.8.12` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) fselect`
+ * @install `launchpad install fselect`
  * @name `fselect`
- * @dependencies `openssl.org^1.1`
+ * @dependencies `openssl.org^1.1`, `rust-lang.org^1.65`, `rust-lang.org/cargo`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const fselectPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) fselect' as const,
+  installCommand: 'launchpad install fselect' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,9 @@ export const fselectPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
+    'rust-lang.org^1.65',
+    'rust-lang.org/cargo',
+    'cmake.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -83,7 +86,6 @@ export const fselectPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/fselect' as const,
 }
 
 export type FselectPackage = typeof fselectPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +go.dev -- $SHELL -i
+launchpad install +go.dev -- $SHELL -i
 ```
 
 ## Programs
@@ -64,7 +64,10 @@ sh <(curl https://pkgx.sh) +go.dev@1.24.4 -- $SHELL -i
 
 This package depends on:
 
-- `openssl.org@1`
+- `openssl.org^1  # for ca-certificates`
+- `gnu.org/m4@1`
+- `go.dev`
+- `curl.se`
 
 ## Usage Examples
 

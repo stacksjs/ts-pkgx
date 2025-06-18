@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +freetds.org -- $SHELL -i
+launchpad install +freetds.org -- $SHELL -i
 ```
 
 ## Programs
@@ -62,6 +62,11 @@ This package depends on:
 - `unixodbc.org`
 - `kerberos.org`
 - `gnu.org/readline`
+- `gnu.org/autoconf`
+- `gnu.org/gettext`
+- `gnu.org/libtool`
+- `freedesktop.org/pkg-config`
+- `gnu.org/automake`
 
 ## Usage Examples
 

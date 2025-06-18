@@ -1,11 +1,11 @@
-# eksctl
+# eksctl.io
 
 > Simple command-line tool for creating clusters on Amazon EKS
 
 ## Package Information
 
 - **Domain**: `eksctl.io`
-- **Name**: `eksctl`
+- **Name**: `eksctl.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/eksctl.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) eksctl
+launchpad install eksctl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `eksctl`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `eksctl`
 
@@ -56,6 +62,11 @@ sh <(curl https://pkgx.sh) +eksctl.io@0.210.0 -- $SHELL -i
 This package depends on:
 
 - `github.com/kubernetes-sigs/aws-iam-authenticator`
+- `github.com/maxbrunsfeld/counterfeiter`
+- `go.dev~1.24`
+- `github.com/kevinburke/go-bindata`
+- `github.com/vburenin/ifacemaker`
+- `vektra.github.io/mockery^2 # v3 doesn`
 
 ## Usage Examples
 

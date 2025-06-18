@@ -5,20 +5,15 @@
  * @version `2025.6.9.0` (108 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +facebook.com/folly -- $SHELL -i`
- * @aliases `folly`
- * @dependencies `boost.org`, `gflags.github.io`, `google.com/glog<0.7`, ... (+19 more)
+ * @install `launchpad install +facebook.com/folly -- $SHELL -i`
+ * @dependencies `boost.org`, `gflags.github.io`, `google.com/glog<0.7`, ... (+22 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.folly
- * // Or access via domain
- * const samePkg = pantry.facebookcomfolly
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "facebook.com/folly"
+ * const pkg = pantry.facebookcomfolly
+ * console.log(pkg.name)        // "folly"
  * console.log(pkg.description) // "An open-source C++ library developed and used a..."
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/facebook-com/folly.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const follyPackage = {
+export const facebookcomfollyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'facebook.com/folly' as const,
+  name: 'folly' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const follyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +facebook.com/folly -- $SHELL -i' as const,
+  installCommand: 'launchpad install +facebook.com/folly -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -69,13 +64,16 @@ export const follyPackage = {
     'fmt.dev^10',
     'zlib.net^1',
     'github.com/fastfloat/fast_float@7',
-    'darwinsourceware.org/bzip2',
     'sourceware.org/bzip2',
-    'linuxlibcxx.llvm.org^18jemalloc.net^5elfutils.org^0gnu.org/gcc/libstdcxx@13',
-    'libcxx.llvm.org^18',
-    'jemalloc.net^5',
-    'elfutils.org^0',
+    'libcxx.llvm.org^18 # libunwind, since 2024.5.13.0',
+    'jemalloc.net^5 # since 2024.5.13.0',
+    'elfutils.org^0 # for dwarf.h, since 2024.5.13.0',
     'gnu.org/gcc/libstdcxx@13',
+    'cmake.org^3.0.2',
+    'gnu.org/gcc@13',
+    'curl.se',
+    'gnu.org/patch',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -191,14 +189,7 @@ export const follyPackage = {
     '2023.10.2.0',
     '2023.10.16.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'folly',
-  ] as const,
-  fullPath: 'facebook.com/folly' as const,
+  aliases: [] as const,
 }
 
-export type FollyPackage = typeof follyPackage
+export type FacebookcomfollyPackage = typeof facebookcomfollyPackage

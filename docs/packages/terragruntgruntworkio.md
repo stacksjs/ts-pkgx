@@ -1,11 +1,11 @@
-# terragrunt
+# terragrunt.gruntwork.io
 
 > Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.
 
 ## Package Information
 
-- **Domain**: `terragrunt.gruntwork.io`
-- **Name**: `terragrunt`
+- **Domain**: `terragruntgruntwork.io`
+- **Name**: `terragrunt.gruntwork.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/terragrunt.gruntwork.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) terragrunt
+launchpad install terragrunt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `terragrunt`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `terragrunt`
 
@@ -107,7 +113,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +terragrunt.gruntwork.io@0.81.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) +terragruntgruntwork.io@0.81.7 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -115,6 +121,7 @@ sh <(curl https://pkgx.sh) +terragrunt.gruntwork.io@0.81.7 -- $SHELL -i
 This package depends on:
 
 - `terraform.io`
+- `go.dev^1.18`
 
 ## Usage Examples
 

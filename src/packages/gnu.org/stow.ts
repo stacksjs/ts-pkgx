@@ -6,9 +6,10 @@
  * @version `2.4.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) stow`
+ * @install `launchpad install stow`
  * @name `stow`
- * @dependencies `perl.org^5.6.1`
+ * @dependencies `perl.org^5.6.1`, `cpanmin.us^1`
+ * @companions `PERL5LIB^${{prefix}}/lib/perl5`
  *
  * @example
  * ```typescript
@@ -48,7 +49,7 @@ export const stowPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) stow' as const,
+  installCommand: 'launchpad install stow' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,13 +57,20 @@ export const stowPackage = {
   programs: [
     'stow',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'PERL5LIB^${{prefix}}/lib/perl5',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
    */
   dependencies: [
     'perl.org^5.6.1',
+    'cpanmin.us^1',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,7 +86,6 @@ export const stowPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/stow' as const,
 }
 
 export type StowPackage = typeof stowPackage

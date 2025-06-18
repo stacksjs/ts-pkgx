@@ -6,10 +6,9 @@
  * @version `1.0.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) gox`
+ * @install `launchpad install gox`
  * @name `gox`
- * @aliases `mitchellh/gox`
- * @dependencies `go.dev`
+ * @dependencies `go.dev`, `gnu.org/wget`, `go.dev`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const goxPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) gox' as const,
+  installCommand: 'launchpad install gox' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const goxPackage = {
    */
   dependencies: [
     'go.dev',
+    'gnu.org/wget',
+    'go.dev',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +77,7 @@ export const goxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mitchellh/gox',
-  ] as const,
-  fullPath: 'github.com/mitchellh/gox' as const,
+  aliases: [] as const,
 }
 
 export type GoxPackage = typeof goxPackage

@@ -1,11 +1,11 @@
-# cask
+# cask.readthedocs.io
 
 > Project management tool for Emacs
 
 ## Package Information
 
-- **Domain**: `cask.readthedocs.io`
-- **Name**: `cask`
+- **Domain**: `caskreadthedocs.io`
+- **Name**: `cask.readthedocs.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cask.readthedocs.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) cask
+launchpad install cask
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `cask`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `cask`
 
@@ -37,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cask.readthedocs.io@0.9.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +caskreadthedocs.io@0.9.1 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,21 +6,20 @@
  * @version `1.26.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/bazelbuild/bazelisk -- $SHELL -i`
- * @name `bazel`
- * @aliases `bazelbuild/bazelisk`
- * @dependencies `curl.se/ca-certs`
+ * @install `launchpad install +github.com/bazelbuild/bazelisk -- $SHELL -i`
+ * @aliases `bazel`
+ * @dependencies `curl.se/ca-certs`, `go.dev^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.bazel
  * // Or access via domain
  * const samePkg = pantry.githubcombazelbuildbazelisk
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bazel"
+ * console.log(pkg.name)        // "bazelisk"
  * console.log(pkg.description) // "A user-friendly launcher for Bazel."
  * console.log(pkg.programs)    // ["bazel", "bazelisk"]
  * console.log(pkg.versions[0]) // "1.26.0" (latest)
@@ -33,7 +32,7 @@ export const bazelPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bazel' as const,
+  name: 'bazelisk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const bazelPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/bazelbuild/bazelisk -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/bazelbuild/bazelisk -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,7 @@ export const bazelPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
+    'go.dev^1.20',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -87,9 +87,8 @@ export const bazelPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'bazelbuild/bazelisk',
+    'bazel',
   ] as const,
-  fullPath: 'github.com/bazelbuild/bazelisk' as const,
 }
 
 export type BazelPackage = typeof bazelPackage

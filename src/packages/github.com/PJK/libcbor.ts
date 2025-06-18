@@ -1,23 +1,19 @@
 /**
- * **github.com/pjk/libcbor** - CBOR protocol implementation for C
+ * **libcbor** - CBOR protocol implementation for C
  *
  * @domain `github.com/PJK/libcbor`
  * @version `0.12.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/PJK/libcbor -- $SHELL -i`
- * @aliases `github.com/pjk/libcbor`, `PJK/libcbor`
+ * @install `launchpad install +github.com/PJK/libcbor -- $SHELL -i`
+ * @dependencies `cmake.org@3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
  * const pkg = pantry.githubcompjklibcbor
- * // Or access via domain
- * const samePkg = pantry.githubcompjklibcbor
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/PJK/libcbor"
+ * console.log(pkg.name)        // "libcbor"
  * console.log(pkg.description) // "CBOR protocol implementation for C"
  * console.log(pkg.versions[0]) // "0.12.0" (latest)
  * ```
@@ -29,7 +25,7 @@ export const githubcompjklibcborPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/PJK/libcbor' as const,
+  name: 'libcbor' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,16 @@ export const githubcompjklibcborPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/PJK/libcbor -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/PJK/libcbor -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org@3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -58,15 +60,7 @@ export const githubcompjklibcborPackage = {
     '0.11.0',
     '0.10.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'github.com/pjk/libcbor',
-    'PJK/libcbor',
-  ] as const,
-  fullPath: 'github.com/PJK/libcbor' as const,
+  aliases: [] as const,
 }
 
 export type GithubcompjklibcborPackage = typeof githubcompjklibcborPackage

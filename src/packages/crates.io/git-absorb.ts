@@ -6,9 +6,9 @@
  * @version `0.8.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) git-absorb`
+ * @install `launchpad install git-absorb`
  * @name `git-absorb`
- * @dependencies `libgit2.org~1.7`
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `rust-lang.org>=1.65`, `rust-lang.org/cargo`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gitabsorbPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) git-absorb' as const,
+  installCommand: 'launchpad install git-absorb' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,7 +62,10 @@ export const gitabsorbPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'libgit2.org~1.7',
+    'libgit2.org~1.7 # links to libgit2.so.1.7',
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -84,7 +87,6 @@ export const gitabsorbPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/git-absorb' as const,
 }
 
 export type GitabsorbPackage = typeof gitabsorbPackage

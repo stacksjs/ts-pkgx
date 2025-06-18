@@ -1,24 +1,19 @@
 /**
- * **platformdirs/platformdirs** - A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
+ * **platformdirs** - A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
  *
  * @domain `github.com/platformdirs/platformdirs`
  * @version `4.3.8` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/platformdirs/platformdirs -- $SHELL -i`
- * @aliases `platformdirs/platformdirs`
+ * @install `launchpad install +github.com/platformdirs/platformdirs -- $SHELL -i`
  * @dependencies `python.org>=3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.platformdirsplatformdirs
- * // Or access via domain
- * const samePkg = pantry.githubcomplatformdirsplatformdirs
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/platformdirs/platformdirs"
+ * const pkg = pantry.githubcomplatformdirsplatformdirs
+ * console.log(pkg.name)        // "platformdirs"
  * console.log(pkg.description) // "A small Python module for determining appropria..."
  * console.log(pkg.versions[0]) // "4.3.8" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/platformdirs/platformdirs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const platformdirsplatformdirsPackage = {
+export const githubcomplatformdirsplatformdirsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/platformdirs/platformdirs' as const,
+  name: 'platformdirs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,12 +36,12 @@ export const platformdirsplatformdirsPackage = {
   description: 'A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/platformdirs/platformdirs/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/platformdirs/platformdirs' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/platformdirs/platformdirs -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/platformdirs/platformdirs -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -75,14 +70,7 @@ export const platformdirsplatformdirsPackage = {
     '4.2.0',
     '4.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'platformdirs/platformdirs',
-  ] as const,
-  fullPath: 'github.com/platformdirs/platformdirs' as const,
+  aliases: [] as const,
 }
 
-export type PlatformdirsplatformdirsPackage = typeof platformdirsplatformdirsPackage
+export type GithubcomplatformdirsplatformdirsPackage = typeof githubcomplatformdirsplatformdirsPackage

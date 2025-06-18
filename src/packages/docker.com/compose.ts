@@ -6,20 +6,20 @@
  * @version `2.37.1` (52 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) docker-compose`
- * @name `docker-compose`
- * @aliases `compose`
+ * @install `launchpad install docker-compose`
+ * @aliases `docker-compose`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.dockercompose
  * // Or access via domain
  * const samePkg = pantry.dockercomcompose
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "docker-compose"
+ * console.log(pkg.name)        // "compose"
  * console.log(pkg.description) // "Define and run multi-container applications wit..."
  * console.log(pkg.programs)    // ["docker-compose"]
  * console.log(pkg.versions[0]) // "2.37.1" (latest)
@@ -32,7 +32,7 @@ export const dockercomposePackage = {
   /**
    * The display name of this package.
    */
-  name: 'docker-compose' as const,
+  name: 'compose' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const dockercomposePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) docker-compose' as const,
+  installCommand: 'launchpad install docker-compose' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const dockercomposePackage = {
     'docker-compose',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -121,9 +127,8 @@ export const dockercomposePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'compose',
+    'docker-compose',
   ] as const,
-  fullPath: 'docker.com/compose' as const,
 }
 
 export type DockercomposePackage = typeof dockercomposePackage

@@ -1,23 +1,19 @@
 /**
- * **jbeder/yaml-cpp** - A YAML parser and emitter in C++
+ * **yaml-cpp** - A YAML parser and emitter in C++
  *
  * @domain `github.com/jbeder/yaml-cpp`
  * @version `0.8.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/jbeder/yaml-cpp -- $SHELL -i`
- * @aliases `jbeder/yaml-cpp`
+ * @install `launchpad install +github.com/jbeder/yaml-cpp -- $SHELL -i`
+ * @dependencies `cmake.org^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jbederyamlcpp
- * // Or access via domain
- * const samePkg = pantry.githubcomjbederyamlcpp
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/jbeder/yaml-cpp"
+ * const pkg = pantry.githubcomjbederyamlcpp
+ * console.log(pkg.name)        // "yaml-cpp"
  * console.log(pkg.description) // "A YAML parser and emitter in C++"
  * console.log(pkg.versions[0]) // "0.8.0" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jbeder/yaml-cpp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jbederyamlcppPackage = {
+export const githubcomjbederyamlcppPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/jbeder/yaml-cpp' as const,
+  name: 'yaml-cpp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,16 @@ export const jbederyamlcppPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/jbeder/yaml-cpp -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/jbeder/yaml-cpp -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -57,14 +59,7 @@ export const jbederyamlcppPackage = {
     '0.8.0',
     '0.7.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'jbeder/yaml-cpp',
-  ] as const,
-  fullPath: 'github.com/jbeder/yaml-cpp' as const,
+  aliases: [] as const,
 }
 
-export type JbederyamlcppPackage = typeof jbederyamlcppPackage
+export type GithubcomjbederyamlcppPackage = typeof githubcomjbederyamlcppPackage

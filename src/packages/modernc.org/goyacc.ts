@@ -6,19 +6,20 @@
  * @version `1.0.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) goyacc`
- * @aliases `goyacc`
+ * @install `launchpad install goyacc`
+ * @name `goyacc`
+ * @dependencies `go.dev~1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.goyacc
  * // Or access via domain
  * const samePkg = pantry.moderncorggoyacc
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "modernc.org/goyacc"
+ * console.log(pkg.name)        // "goyacc"
  * console.log(pkg.description) // "Parser Generator for Go"
  * console.log(pkg.programs)    // ["goyacc"]
  * console.log(pkg.versions[0]) // "1.0.3" (latest)
@@ -31,7 +32,7 @@ export const goyaccPackage = {
   /**
    * The display name of this package.
    */
-  name: 'modernc.org/goyacc' as const,
+  name: 'goyacc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +48,7 @@ export const goyaccPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) goyacc' as const,
+  installCommand: 'launchpad install goyacc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,13 @@ export const goyaccPackage = {
     'goyacc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev~1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -68,10 +75,7 @@ export const goyaccPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'goyacc',
-  ] as const,
-  fullPath: 'modernc.org/goyacc' as const,
+  aliases: [] as const,
 }
 
 export type GoyaccPackage = typeof goyaccPackage

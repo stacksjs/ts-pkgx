@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +eigen.tuxfamily.org -- $SHELL -i`
- * @dependencies `gnu.org/gcc/libstdcxx^14`, `cmake.org^3`, `freedesktop.org/pkg-config^0.29`
+ * @dependencies `gnu.org/gcc/libstdcxx@14`, `cmake.org^3`, `freedesktop.org/pkg-config^0.29`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const eigentuxfamilyorgPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'gnu.org/gcc/libstdcxx^14',
+    'gnu.org/gcc/libstdcxx@14',
     'cmake.org^3',
     'freedesktop.org/pkg-config^0.29',
   ] as const,

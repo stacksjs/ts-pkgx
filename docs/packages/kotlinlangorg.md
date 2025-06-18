@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +kotlinlang.org -- $SHELL -i
+launchpad install +kotlinlang.org -- $SHELL -i
 ```
 
 ## Programs

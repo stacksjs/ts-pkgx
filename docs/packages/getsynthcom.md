@@ -1,11 +1,11 @@
-# synth
+# getsynth.com
 
 > The Declarative Data Generator
 
 ## Package Information
 
 - **Domain**: `getsynth.com`
-- **Name**: `synth`
+- **Name**: `getsynth.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getsynth.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) synth
+launchpad install synth
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `synth`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `synth`
 
@@ -39,6 +45,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +getsynth.com@0.6.9 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rust-lang.org^1.65`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

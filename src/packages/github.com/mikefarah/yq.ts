@@ -6,9 +6,9 @@
  * @version `4.45.4` (33 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) yq`
+ * @install `launchpad install yq`
  * @name `yq`
- * @aliases `mikefarah/yq`
+ * @dependencies `go.dev^1.18`, `pandoc.org`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const yqPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) yq' as const,
+  installCommand: 'launchpad install yq' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const yqPackage = {
     'yq',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.18',
+    'pandoc.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -101,10 +108,7 @@ export const yqPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mikefarah/yq',
-  ] as const,
-  fullPath: 'github.com/mikefarah/yq' as const,
+  aliases: [] as const,
 }
 
 export type YqPackage = typeof yqPackage

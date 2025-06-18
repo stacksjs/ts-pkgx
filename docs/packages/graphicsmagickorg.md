@@ -1,11 +1,11 @@
-# gm
+# graphicsmagick.org
 
 > Image processing tools collection
 
 ## Package Information
 
 - **Domain**: `graphicsmagick.org`
-- **Name**: `gm`
+- **Name**: `graphicsmagick.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/graphicsmagick.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) gm
+launchpad install gm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `gm`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `gm`
 
@@ -56,6 +62,7 @@ This package depends on:
 - `sourceware.org/bzip2`
 - `gnome.org/libxml2`
 - `zlib.net`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

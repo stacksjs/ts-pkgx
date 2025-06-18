@@ -5,31 +5,26 @@
  * @version `1.5.4` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xrandr -- $SHELL -i`
- * @aliases `xrandr`
- * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`, ... (+1 more)
+ * @install `launchpad install +x.org/xrandr -- $SHELL -i`
+ * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xrandr
- * // Or access via domain
- * const samePkg = pantry.xorgxrandr
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xrandr"
+ * const pkg = pantry.xorgxrandr
+ * console.log(pkg.name)        // "xrandr"
  * console.log(pkg.versions[0]) // "1.5.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xrandr.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xrandrPackage = {
+export const xorgxrandrPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xrandr' as const,
+  name: 'xrandr' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xrandrPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xrandr -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xrandr -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -57,6 +52,8 @@ export const xrandrPackage = {
     'x.org/protocol',
     'x.org/exts',
     'x.org/xrender',
+    'freedesktop.org/pkg-config',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -66,14 +63,7 @@ export const xrandrPackage = {
     '1.5.4',
     '1.5.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xrandr',
-  ] as const,
-  fullPath: 'x.org/xrandr' as const,
+  aliases: [] as const,
 }
 
-export type XrandrPackage = typeof xrandrPackage
+export type XorgxrandrPackage = typeof xorgxrandrPackage

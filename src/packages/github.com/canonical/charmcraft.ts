@@ -6,10 +6,9 @@
  * @version `3.5.1` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) charmcraft`
+ * @install `launchpad install charmcraft`
  * @name `charmcraft`
- * @aliases `canonical/charmcraft`
- * @dependencies `pkgx.sh^1`, `libgit2.org~1.7`
+ * @dependencies `pkgx.sh^1`, `libgit2.org~1.7`, `python.org^3`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const charmcraftPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) charmcraft' as const,
+  installCommand: 'launchpad install charmcraft' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,7 @@ export const charmcraftPackage = {
   dependencies: [
     'pkgx.sh^1',
     'libgit2.org~1.7',
+    'python.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -85,10 +85,7 @@ export const charmcraftPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'canonical/charmcraft',
-  ] as const,
-  fullPath: 'github.com/canonical/charmcraft' as const,
+  aliases: [] as const,
 }
 
 export type CharmcraftPackage = typeof charmcraftPackage

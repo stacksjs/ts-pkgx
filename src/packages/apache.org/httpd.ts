@@ -6,20 +6,15 @@
  * @version `2.4.63` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +apache.org/httpd -- $SHELL -i`
- * @aliases `httpd`
- * @dependencies `apache.org/apr>=1.3.0`, `apache.org/apr-util>=1.3.0`, `github.com/google/brotli`, ... (+6 more)
+ * @install `launchpad install +apache.org/httpd -- $SHELL -i`
+ * @dependencies `apache.org/apr>=1.3.0`, `apache.org/apr-util>=1.3.0`, `github.com/google/brotli`, ... (+8 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.httpd
- * // Or access via domain
- * const samePkg = pantry.apacheorghttpd
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "apache.org/httpd"
+ * const pkg = pantry.apacheorghttpd
+ * console.log(pkg.name)        // "httpd"
  * console.log(pkg.description) // "Apache HTTP server"
  * console.log(pkg.programs)    // ["ab", "apachectl", ...]
  * console.log(pkg.versions[0]) // "2.4.63" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/apache-org/httpd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const httpdPackage = {
+export const apacheorghttpdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/httpd' as const,
+  name: 'httpd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const httpdPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +apache.org/httpd -- $SHELL -i' as const,
+  installCommand: 'launchpad install +apache.org/httpd -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,6 +78,8 @@ export const httpdPackage = {
     'gnome.org/libxml2',
     'zlib.net',
     'libexpat.github.io',
+    'gnu.org/libtool',
+    'gnu.org/autoconf',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -97,14 +94,7 @@ export const httpdPackage = {
     '2.4.58',
     '2.4.57',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'httpd',
-  ] as const,
-  fullPath: 'apache.org/httpd' as const,
+  aliases: [] as const,
 }
 
-export type HttpdPackage = typeof httpdPackage
+export type ApacheorghttpdPackage = typeof apacheorghttpdPackage

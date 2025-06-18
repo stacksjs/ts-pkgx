@@ -6,21 +6,20 @@
  * @version `2.3.8` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) idn2`
- * @name `idn2`
- * @aliases `libidn2`
- * @dependencies `gnu.org/gettext`
+ * @install `launchpad install idn2`
+ * @aliases `idn2`
+ * @dependencies `gnu.org/gettext`, `gnu.org/texinfo`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.idn2
  * // Or access via domain
  * const samePkg = pantry.gnuorglibidn2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "idn2"
+ * console.log(pkg.name)        // "libidn2"
  * console.log(pkg.description) // "International domain name library (IDNA2008, Pu..."
  * console.log(pkg.programs)    // ["idn2"]
  * console.log(pkg.versions[0]) // "2.3.8" (latest)
@@ -33,7 +32,7 @@ export const idn2Package = {
   /**
    * The display name of this package.
    */
-  name: 'idn2' as const,
+  name: 'libidn2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const idn2Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) idn2' as const,
+  installCommand: 'launchpad install idn2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const idn2Package = {
    */
   dependencies: [
     'gnu.org/gettext',
+    'gnu.org/texinfo',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -81,9 +82,8 @@ export const idn2Package = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'libidn2',
+    'idn2',
   ] as const,
-  fullPath: 'gnu.org/libidn2' as const,
 }
 
 export type Idn2Package = typeof idn2Package

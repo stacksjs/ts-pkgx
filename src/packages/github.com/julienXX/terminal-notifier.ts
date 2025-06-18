@@ -6,9 +6,8 @@
  * @version `2.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) terminal-notifier`
+ * @install `launchpad install terminal-notifier`
  * @name `terminal-notifier`
- * @aliases `julienXX/terminal-notifier`
  *
  * @example
  * ```typescript
@@ -48,7 +47,7 @@ export const terminalnotifierPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) terminal-notifier' as const,
+  installCommand: 'launchpad install terminal-notifier' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,10 +68,7 @@ export const terminalnotifierPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'julienXX/terminal-notifier',
-  ] as const,
-  fullPath: 'github.com/julienXX/terminal-notifier' as const,
+  aliases: [] as const,
 }
 
 export type TerminalnotifierPackage = typeof terminalnotifierPackage

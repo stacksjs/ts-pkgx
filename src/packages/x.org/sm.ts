@@ -5,31 +5,26 @@
  * @version `1.2.6` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/sm -- $SHELL -i`
- * @aliases `sm`
- * @dependencies `x.org/ice`
+ * @install `launchpad install +x.org/sm -- $SHELL -i`
+ * @dependencies `x.org/ice`, `freedesktop.org/pkg-config~0.29`, `x.org/xtrans`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.sm
- * // Or access via domain
- * const samePkg = pantry.xorgsm
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/sm"
+ * const pkg = pantry.xorgsm
+ * console.log(pkg.name)        // "sm"
  * console.log(pkg.versions[0]) // "1.2.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/sm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const smPackage = {
+export const xorgsmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/sm' as const,
+  name: 'sm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const smPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/sm -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/sm -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,6 +49,8 @@ export const smPackage = {
    */
   dependencies: [
     'x.org/ice',
+    'freedesktop.org/pkg-config~0.29',
+    'x.org/xtrans',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +61,7 @@ export const smPackage = {
     '1.2.5',
     '1.2.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'sm',
-  ] as const,
-  fullPath: 'x.org/sm' as const,
+  aliases: [] as const,
 }
 
-export type SmPackage = typeof smPackage
+export type XorgsmPackage = typeof xorgsmPackage

@@ -1,11 +1,11 @@
-# rubocop
+# rubocop.org
 
 > A Ruby static code analyzer and formatter, based on the community Ruby style guide.
 
 ## Package Information
 
 - **Domain**: `rubocop.org`
-- **Name**: `rubocop`
+- **Name**: `rubocop.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rubocop.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) rubocop
+launchpad install rubocop
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `rubocop`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `rubocop`
 

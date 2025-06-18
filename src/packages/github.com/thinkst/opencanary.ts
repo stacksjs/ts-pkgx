@@ -6,21 +6,20 @@
  * @version `0.9.6` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) opencanaryd`
- * @name `opencanaryd`
- * @aliases `thinkst/opencanary`
- * @dependencies `python.org>=3.10<3.12`, `tcpdump.org`, `openssl.org`
+ * @install `launchpad install opencanaryd`
+ * @aliases `opencanaryd`
+ * @dependencies `python.org>=3.10<3.12`, `tcpdump.org`, `openssl.org`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.opencanaryd
  * // Or access via domain
  * const samePkg = pantry.githubcomthinkstopencanary
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "opencanaryd"
+ * console.log(pkg.name)        // "opencanary"
  * console.log(pkg.description) // "Modular and decentralised honeypot"
  * console.log(pkg.programs)    // ["opencanaryd"]
  * console.log(pkg.versions[0]) // "0.9.6" (latest)
@@ -33,7 +32,7 @@ export const opencanarydPackage = {
   /**
    * The display name of this package.
    */
-  name: 'opencanaryd' as const,
+  name: 'opencanary' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const opencanarydPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) opencanaryd' as const,
+  installCommand: 'launchpad install opencanaryd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,6 +65,7 @@ export const opencanarydPackage = {
     'python.org>=3.10<3.12',
     'tcpdump.org',
     'openssl.org',
+    'pip.pypa.io',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -83,9 +83,8 @@ export const opencanarydPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'thinkst/opencanary',
+    'opencanaryd',
   ] as const,
-  fullPath: 'github.com/thinkst/opencanary' as const,
 }
 
 export type OpencanarydPackage = typeof opencanarydPackage

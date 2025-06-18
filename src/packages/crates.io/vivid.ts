@@ -6,9 +6,9 @@
  * @version `0.10.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) vivid`
+ * @install `launchpad install vivid`
  * @name `vivid`
- * @dependencies `zlib.net^1`
+ * @dependencies `zlib.net^1`, `rust-lang.org>=1.60`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const vividPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) vivid' as const,
+  installCommand: 'launchpad install vivid' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const vividPackage = {
    */
   dependencies: [
     'zlib.net^1',
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,7 +80,6 @@ export const vividPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/vivid' as const,
 }
 
 export type VividPackage = typeof vividPackage

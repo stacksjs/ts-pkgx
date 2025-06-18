@@ -1,11 +1,11 @@
-# rsync
+# rsync.samba.org
 
 > An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
 
 ## Package Information
 
-- **Domain**: `rsync.samba.org`
-- **Name**: `rsync`
+- **Domain**: `rsyncsamba.org`
+- **Name**: `rsync.samba.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rsync.samba.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +rsync.samba.org -- $SHELL -i
+launchpad install +rsync.samba.org -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `rsync`
 - `rsync-ssl`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `rsync`
 
 ## Available Versions
 
@@ -38,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +rsync.samba.org@3.4.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +rsyncsamba.org@3.4.1 -- $SHELL -i
 ```
 
 ## Dependencies

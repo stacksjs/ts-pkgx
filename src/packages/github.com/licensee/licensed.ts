@@ -6,10 +6,9 @@
  * @version `5.0.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) licensed`
+ * @install `launchpad install licensed`
  * @name `licensed`
- * @aliases `licensee/licensed`
- * @dependencies `ruby-lang.org^3.1`, `rubygems.org`, `linuxgnome.org/libxml2~2.13.8gnome.org/libxslt~1.1.43pcre.org@8`, ... (+3 more)
+ * @dependencies `ruby-lang.org^3.1`, `rubygems.org`, `gnome.org/libxml2~2.13.8 # for nokogiri`, ... (+3 more)
  * @companions `linux`
  *
  * @example
@@ -45,12 +44,12 @@ export const licensedPackage = {
   description: 'A Ruby gem to cache and verify the licenses of dependencies' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/licensee/licensed/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/licensee/licensed' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) licensed' as const,
+  installCommand: 'launchpad install licensed' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,10 +71,10 @@ export const licensedPackage = {
   dependencies: [
     'ruby-lang.org^3.1',
     'rubygems.org',
-    'linuxgnome.org/libxml2~2.13.8gnome.org/libxslt~1.1.43pcre.org@8',
-    'gnome.org/libxml2~2.13.8',
-    'gnome.org/libxslt~1.1.43',
-    'pcre.org@8',
+    'gnome.org/libxml2~2.13.8 # for nokogiri',
+    'gnome.org/libxslt~1.1.43 # for nokogiri',
+    'pcre.org^8 # for nokogiri',
+    'cmake.org^4 # for Rugged',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -88,10 +87,7 @@ export const licensedPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'licensee/licensed',
-  ] as const,
-  fullPath: 'github.com/licensee/licensed' as const,
+  aliases: [] as const,
 }
 
 export type LicensedPackage = typeof licensedPackage

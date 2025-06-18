@@ -6,20 +6,15 @@
  * @version `0.9.15` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +practical-scheme.net/gauche -- $SHELL -i`
- * @aliases `gauche`
+ * @install `launchpad install +practical-scheme.net/gauche -- $SHELL -i`
  * @dependencies `curl.se/ca-certs>=2023`, `github.com/Mbed-TLS/mbedtls^3.5`, `github.com/besser82/libxcrypt^4.4`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gauche
- * // Or access via domain
- * const samePkg = pantry.practicalschemenetgauche
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "practical-scheme.net/gauche"
+ * const pkg = pantry.practicalschemenetgauche
+ * console.log(pkg.name)        // "gauche"
  * console.log(pkg.description) // "R7RS Scheme implementation, developed to be a h..."
  * console.log(pkg.programs)    // ["gauche-cesconv", "gauche-config", ...]
  * console.log(pkg.versions[0]) // "0.9.15" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/practical-scheme-net/gauche.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gauchePackage = {
+export const practicalschemenetgauchePackage = {
   /**
    * The display name of this package.
    */
-  name: 'practical-scheme.net/gauche' as const,
+  name: 'gauche' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const gauchePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +practical-scheme.net/gauche -- $SHELL -i' as const,
+  installCommand: 'launchpad install +practical-scheme.net/gauche -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,14 +74,7 @@ export const gauchePackage = {
     '0.9.15',
     '0.9.14',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gauche',
-  ] as const,
-  fullPath: 'practical-scheme.net/gauche' as const,
+  aliases: [] as const,
 }
 
-export type GauchePackage = typeof gauchePackage
+export type PracticalschemenetgauchePackage = typeof practicalschemenetgauchePackage

@@ -7,20 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/protobuf-c/protobuf-c -- $SHELL -i`
- * @name `protoc`
- * @aliases `protobuf-c/protobuf-c`
+ * @aliases `protoc`
  * @dependencies `protobuf.dev^25.1`, `abseil.io^20250127`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.protoc
  * // Or access via domain
  * const samePkg = pantry.githubcomprotobufcprotobufc
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "protoc"
+ * console.log(pkg.name)        // "protobuf-c"
  * console.log(pkg.description) // "Protocol Buffers implementation in C"
  * console.log(pkg.programs)    // ["protoc-c", "protoc-gen-c"]
  * console.log(pkg.versions[0]) // "1.5.2" (latest)
@@ -33,7 +32,7 @@ export const protocPackage = {
   /**
    * The display name of this package.
    */
-  name: 'protoc' as const,
+  name: 'protobuf-c' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -81,9 +80,8 @@ export const protocPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'protobuf-c/protobuf-c',
+    'protoc',
   ] as const,
-  fullPath: 'github.com/protobuf-c/protobuf-c' as const,
 }
 
 export type ProtocPackage = typeof protocPackage

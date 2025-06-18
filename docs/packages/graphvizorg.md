@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +graphviz.org -- $SHELL -i
+launchpad install +graphviz.org -- $SHELL -i
 ```
 
 ## Programs

@@ -7,8 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +android.com/cmdline-tools -- $SHELL -i`
- * @dependencies `openjdk.org`
- * @companions `env`, `ANDROID_HOME`, `PATH`
+ * @dependencies `openjdk.org>=17`, `info-zip.org/unzip`, `curl.se`
  *
  * @example
  * ```typescript
@@ -58,21 +57,15 @@ export const androidcomcmdlinetoolsPackage = {
     'screenshot2',
     'sdkmanager',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'env',
-    'ANDROID_HOME',
-    'PATH',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
    */
   dependencies: [
-    'openjdk.org',
+    'openjdk.org>=17',
+    'info-zip.org/unzip',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

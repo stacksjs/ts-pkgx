@@ -1,23 +1,19 @@
 /**
- * **neovim/unibilium** - https://github.com/neovim/neovim/blob/master/MAINTAIN.md#third-party-dependencies
+ * **unibilium** - https://github.com/neovim/neovim/blob/master/MAINTAIN.md#third-party-dependencies
  *
  * @domain `github.com/neovim/unibilium`
  * @version `2.1.2` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/neovim/unibilium -- $SHELL -i`
- * @aliases `neovim/unibilium`
+ * @install `launchpad install +github.com/neovim/unibilium -- $SHELL -i`
+ * @dependencies `cmake.org^3`, `gnu.org/libtool`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.neovimunibilium
- * // Or access via domain
- * const samePkg = pantry.githubcomneovimunibilium
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/neovim/unibilium"
+ * const pkg = pantry.githubcomneovimunibilium
+ * console.log(pkg.name)        // "unibilium"
  * console.log(pkg.description) // "https://github.com/neovim/neovim/blob/master/MA..."
  * console.log(pkg.versions[0]) // "2.1.2" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/neovim/unibilium.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const neovimunibiliumPackage = {
+export const githubcomneovimunibiliumPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/neovim/unibilium' as const,
+  name: 'unibilium' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,18 @@ export const neovimunibiliumPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/neovim/unibilium -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/neovim/unibilium -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+    'gnu.org/libtool',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -57,14 +61,7 @@ export const neovimunibiliumPackage = {
     '2.1.2',
     '2.1.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'neovim/unibilium',
-  ] as const,
-  fullPath: 'github.com/neovim/unibilium' as const,
+  aliases: [] as const,
 }
 
-export type NeovimunibiliumPackage = typeof neovimunibiliumPackage
+export type GithubcomneovimunibiliumPackage = typeof githubcomneovimunibiliumPackage

@@ -6,20 +6,20 @@
  * @version `8.14.1` (30 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) cf`
- * @name `cf`
- * @aliases `cf-cli`
+ * @install `launchpad install cf`
+ * @aliases `cf`
+ * @dependencies `cmake.org^3`, `go.dev=1.23.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.cf
  * // Or access via domain
  * const samePkg = pantry.cloudfoundryorgcfcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cf"
+ * console.log(pkg.name)        // "cf-cli"
  * console.log(pkg.description) // "Filter to replace numeric timestamps with a for..."
  * console.log(pkg.programs)    // ["cf"]
  * console.log(pkg.versions[0]) // "8.14.1" (latest)
@@ -32,7 +32,7 @@ export const cfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cf' as const,
+  name: 'cf-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const cfPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) cf' as const,
+  installCommand: 'launchpad install cf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const cfPackage = {
     'cf',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+    'go.dev=1.23.1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -99,9 +106,8 @@ export const cfPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'cf-cli',
+    'cf',
   ] as const,
-  fullPath: 'cloudfoundry.org/cf-cli' as const,
 }
 
 export type CfPackage = typeof cfPackage

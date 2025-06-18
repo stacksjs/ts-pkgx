@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tflint`
  * @name `tflint`
- * @aliases `terraform-linters/tflint`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -57,7 +57,13 @@ export const tflintPackage = {
     'tflint',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -87,10 +93,7 @@ export const tflintPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'terraform-linters/tflint',
-  ] as const,
-  fullPath: 'github.com/terraform-linters/tflint' as const,
+  aliases: [] as const,
 }
 
 export type TflintPackage = typeof tflintPackage

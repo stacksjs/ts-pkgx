@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +fmt.dev -- $SHELL -i
+launchpad install +fmt.dev -- $SHELL -i
 ```
 
 ## Programs
@@ -41,6 +41,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +fmt.dev@11.2.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org^3`
 
 ## Usage Examples
 

@@ -1,25 +1,20 @@
 /**
- * **github.com/everduin94/better-commits** - pkgx package
+ * **better-commits** - pkgx package
  *
  * @domain `github.com/Everduin94/better-commits`
  * @programs `bcommits`, `better-branch`, `better-commits`, `better-commits-init`, `git-bc`
  * @version `1.17.0` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/Everduin94/better-commits -- $SHELL -i`
- * @aliases `github.com/everduin94/better-commits`, `Everduin94/better-commits`
- * @dependencies `nodejs.org^20`
+ * @install `launchpad install +github.com/Everduin94/better-commits -- $SHELL -i`
+ * @dependencies `nodejs.org^20`, `npmjs.com^10`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
  * const pkg = pantry.githubcomeverduin94bettercommits
- * // Or access via domain
- * const samePkg = pantry.githubcomeverduin94bettercommits
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/Everduin94/better-commits"
+ * console.log(pkg.name)        // "better-commits"
  * console.log(pkg.programs)    // ["bcommits", "better-branch", ...]
  * console.log(pkg.versions[0]) // "1.17.0" (latest)
  * ```
@@ -31,7 +26,7 @@ export const githubcomeverduin94bettercommitsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/Everduin94/better-commits' as const,
+  name: 'better-commits' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const githubcomeverduin94bettercommitsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/Everduin94/better-commits -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/Everduin94/better-commits -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,6 +61,7 @@ export const githubcomeverduin94bettercommitsPackage = {
    */
   dependencies: [
     'nodejs.org^20',
+    'npmjs.com^10',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -86,15 +82,7 @@ export const githubcomeverduin94bettercommitsPackage = {
     '1.12.0',
     '1.11.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'github.com/everduin94/better-commits',
-    'Everduin94/better-commits',
-  ] as const,
-  fullPath: 'github.com/Everduin94/better-commits' as const,
+  aliases: [] as const,
 }
 
 export type Githubcomeverduin94bettercommitsPackage = typeof githubcomeverduin94bettercommitsPackage

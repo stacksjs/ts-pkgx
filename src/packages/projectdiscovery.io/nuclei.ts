@@ -6,8 +6,9 @@
  * @version `3.4.5` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) nuclei`
+ * @install `launchpad install nuclei`
  * @name `nuclei`
+ * @dependencies `go.dev~1.22.2`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const nucleiPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) nuclei' as const,
+  installCommand: 'launchpad install nuclei' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,13 @@ export const nucleiPackage = {
     'nuclei',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev~1.22.2',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,7 +79,6 @@ export const nucleiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'projectdiscovery.io/nuclei' as const,
 }
 
 export type NucleiPackage = typeof nucleiPackage

@@ -6,20 +6,15 @@
  * @version `0.56.18` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/vala -- $SHELL -i`
- * @aliases `vala`
- * @dependencies `gnome.org/glib`, `graphviz.org`, `freedesktop.org/pkg-config`, ... (+1 more)
+ * @install `launchpad install +gnome.org/vala -- $SHELL -i`
+ * @dependencies `gnome.org/glib`, `graphviz.org`, `freedesktop.org/pkg-config`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.vala
- * // Or access via domain
- * const samePkg = pantry.gnomeorgvala
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnome.org/vala"
+ * const pkg = pantry.gnomeorgvala
+ * console.log(pkg.name)        // "vala"
  * console.log(pkg.description) // "Compiler for the GObject type system"
  * console.log(pkg.programs)    // ["vala", "valac", ...]
  * console.log(pkg.versions[0]) // "0.56.18" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/vala.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const valaPackage = {
+export const gnomeorgvalaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/vala' as const,
+  name: 'vala' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const valaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/vala -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/vala -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,6 +65,11 @@ export const valaPackage = {
     'graphviz.org',
     'freedesktop.org/pkg-config',
     'gnu.org/gettext',
+    'gnu.org/bison',
+    'github.com/westes/flex',
+    'gnome.org/libxslt',
+    'gnome.org/gobject-introspection',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -83,14 +83,7 @@ export const valaPackage = {
     '0.56.14',
     '0.56.13',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'vala',
-  ] as const,
-  fullPath: 'gnome.org/vala' as const,
+  aliases: [] as const,
 }
 
-export type ValaPackage = typeof valaPackage
+export type GnomeorgvalaPackage = typeof gnomeorgvalaPackage

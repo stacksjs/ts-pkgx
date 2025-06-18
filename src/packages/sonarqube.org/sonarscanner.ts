@@ -6,21 +6,20 @@
  * @version `7.1.0.4889` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +sonarqube.org/sonarscanner -- $SHELL -i`
- * @name `sonar-scanner`
- * @aliases `sonarscanner`
+ * @install `launchpad install +sonarqube.org/sonarscanner -- $SHELL -i`
+ * @aliases `sonar-scanner`
  * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sonarscanner
  * // Or access via domain
  * const samePkg = pantry.sonarqubeorgsonarscanner
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sonar-scanner"
+ * console.log(pkg.name)        // "sonarscanner"
  * console.log(pkg.description) // "Scanner CLI for SonarQube (Server, Cloud)"
  * console.log(pkg.programs)    // ["sonar-scanner", "sonar-scanner-debug"]
  * console.log(pkg.versions[0]) // "7.1.0.4889" (latest)
@@ -33,7 +32,7 @@ export const sonarscannerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sonar-scanner' as const,
+  name: 'sonarscanner' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const sonarscannerPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +sonarqube.org/sonarscanner -- $SHELL -i' as const,
+  installCommand: 'launchpad install +sonarqube.org/sonarscanner -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,9 +86,8 @@ export const sonarscannerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'sonarscanner',
+    'sonar-scanner',
   ] as const,
-  fullPath: 'sonarqube.org/sonarscanner' as const,
 }
 
 export type SonarscannerPackage = typeof sonarscannerPackage

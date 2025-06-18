@@ -5,19 +5,15 @@
  * @version `2.14.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +digip.org/jansson -- $SHELL -i`
- * @aliases `jansson`
+ * @install `launchpad install +digip.org/jansson -- $SHELL -i`
+ * @dependencies `gnu.org/gcc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jansson
- * // Or access via domain
- * const samePkg = pantry.digiporgjansson
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "digip.org/jansson"
+ * const pkg = pantry.digiporgjansson
+ * console.log(pkg.name)        // "jansson"
  * console.log(pkg.description) // "C library for encoding, decoding and manipulati..."
  * console.log(pkg.versions[0]) // "2.14.1" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/digip-org/jansson.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const janssonPackage = {
+export const digiporgjanssonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'digip.org/jansson' as const,
+  name: 'jansson' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,16 @@ export const janssonPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +digip.org/jansson -- $SHELL -i' as const,
+  installCommand: 'launchpad install +digip.org/jansson -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gcc',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -57,14 +59,7 @@ export const janssonPackage = {
     '2.14.1',
     '2.14.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'jansson',
-  ] as const,
-  fullPath: 'digip.org/jansson' as const,
+  aliases: [] as const,
 }
 
-export type JanssonPackage = typeof janssonPackage
+export type DigiporgjanssonPackage = typeof digiporgjanssonPackage

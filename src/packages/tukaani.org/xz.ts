@@ -6,19 +6,14 @@
  * @version `5.8.1` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +tukaani.org/xz -- $SHELL -i`
- * @aliases `xz`
+ * @install `launchpad install +tukaani.org/xz -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xz
- * // Or access via domain
- * const samePkg = pantry.tukaaniorgxz
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tukaani.org/xz"
+ * const pkg = pantry.tukaaniorgxz
+ * console.log(pkg.name)        // "xz"
  * console.log(pkg.description) // "General-purpose data compression with high comp..."
  * console.log(pkg.programs)    // ["lzcat", "lzcmp", ...]
  * console.log(pkg.versions[0]) // "5.8.1" (latest)
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/tukaani-org/xz.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xzPackage = {
+export const tukaaniorgxzPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tukaani.org/xz' as const,
+  name: 'xz' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const xzPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +tukaani.org/xz -- $SHELL -i' as const,
+  installCommand: 'launchpad install +tukaani.org/xz -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -103,14 +98,7 @@ export const xzPackage = {
     '5.2.10',
     '5.2.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xz',
-  ] as const,
-  fullPath: 'tukaani.org/xz' as const,
+  aliases: [] as const,
 }
 
-export type XzPackage = typeof xzPackage
+export type TukaaniorgxzPackage = typeof tukaaniorgxzPackage

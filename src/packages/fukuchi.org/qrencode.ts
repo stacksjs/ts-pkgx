@@ -6,9 +6,9 @@
  * @version `4.1.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) qrencode`
+ * @install `launchpad install qrencode`
  * @name `qrencode`
- * @dependencies `libpng.org`
+ * @dependencies `libpng.org`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const qrencodePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) qrencode' as const,
+  installCommand: 'launchpad install qrencode' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,12 @@ export const qrencodePackage = {
    */
   dependencies: [
     'libpng.org',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/coreutils',
+    'gnu.org/libtool',
+    'freedesktop.org/pkg-config',
+    'imagemagick.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,7 +82,6 @@ export const qrencodePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'fukuchi.org/qrencode' as const,
 }
 
 export type QrencodePackage = typeof qrencodePackage

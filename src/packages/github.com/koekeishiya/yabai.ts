@@ -6,9 +6,8 @@
  * @version `7.1.15` (30 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) yabai`
+ * @install `launchpad install yabai`
  * @name `yabai`
- * @aliases `koekeishiya/yabai`
  *
  * @example
  * ```typescript
@@ -48,7 +47,7 @@ export const yabaiPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) yabai' as const,
+  installCommand: 'launchpad install yabai' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -98,10 +97,7 @@ export const yabaiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'koekeishiya/yabai',
-  ] as const,
-  fullPath: 'github.com/koekeishiya/yabai' as const,
+  aliases: [] as const,
 }
 
 export type YabaiPackage = typeof yabaiPackage

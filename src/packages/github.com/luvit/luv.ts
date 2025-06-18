@@ -1,24 +1,19 @@
 /**
- * **luvit/luv** - Bare libuv bindings for lua
+ * **luv** - Bare libuv bindings for lua
  *
  * @domain `github.com/luvit/luv`
  * @version `1.45.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/luvit/luv -- $SHELL -i`
- * @aliases `luvit/luv`
- * @dependencies `libuv.org`
+ * @install `launchpad install +github.com/luvit/luv -- $SHELL -i`
+ * @dependencies `libuv.org`, `cmake.org`, `lua.org`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.luvitluv
- * // Or access via domain
- * const samePkg = pantry.githubcomluvitluv
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/luvit/luv"
+ * const pkg = pantry.githubcomluvitluv
+ * console.log(pkg.name)        // "luv"
  * console.log(pkg.description) // "Bare libuv bindings for lua"
  * console.log(pkg.versions[0]) // "1.45.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/luvit/luv.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const luvitluvPackage = {
+export const githubcomluvitluvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/luvit/luv' as const,
+  name: 'luv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const luvitluvPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/luvit/luv -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/luvit/luv -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,12 @@ export const luvitluvPackage = {
    */
   dependencies: [
     'libuv.org',
+    'cmake.org',
+    'lua.org',
+    'luajit.org',
+    'curl.se',
+    'lua.org',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -63,14 +64,7 @@ export const luvitluvPackage = {
   versions: [
     '1.45.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'luvit/luv',
-  ] as const,
-  fullPath: 'github.com/luvit/luv' as const,
+  aliases: [] as const,
 }
 
-export type LuvitluvPackage = typeof luvitluvPackage
+export type GithubcomluvitluvPackage = typeof githubcomluvitluvPackage

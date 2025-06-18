@@ -6,9 +6,9 @@
  * @version `0.10.0` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) vhs`
+ * @install `launchpad install vhs`
  * @name `vhs`
- * @dependencies `ffmpeg.org>=5`, `tsl0922.github.io/ttyd^1.7.2`
+ * @dependencies `ffmpeg.org>=5`, `tsl0922.github.io/ttyd^1.7.2`, `go.dev^1.18`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const vhsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) vhs' as const,
+  installCommand: 'launchpad install vhs' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,7 @@ export const vhsPackage = {
   dependencies: [
     'ffmpeg.org>=5',
     'tsl0922.github.io/ttyd^1.7.2',
+    'go.dev^1.18',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -90,7 +91,6 @@ export const vhsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'charm.sh/vhs' as const,
 }
 
 export type VhsPackage = typeof vhsPackage

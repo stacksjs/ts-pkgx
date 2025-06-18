@@ -1,24 +1,34 @@
 /**
- * **mesonbuild.com** - Package from pantry: mesonbuild.com
+ * **meson** - Fast and user friendly build system
  *
  * @domain `mesonbuild.com`
+ * @programs `meson`
+ * @version `1.8.2` (28 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install mesonbuild.com`
+ * @install `launchpad install meson`
+ * @aliases `meson`
  * @dependencies `pkgx.sh^1`, `python.org~3.11`, `ninja-build.org^1`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mesonbuildcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.meson
+ * // Or access via domain
+ * const samePkg = pantry.mesonbuildcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mesonbuild.com"
- * console.log(pkg.description) // "Package from pantry: mesonbuild.com"
+ * console.log(pkg.description) // "Fast and user friendly build system"
+ * console.log(pkg.programs)    // ["meson"]
+ * console.log(pkg.versions[0]) // "1.8.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mesonbuild-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mesonbuildcomPackage = {
+export const mesonPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const mesonbuildcomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: mesonbuild.com' as const,
+  description: 'Fast and user friendly build system' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mesonbuild.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install mesonbuild.com' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install meson' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'meson',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +67,47 @@ export const mesonbuildcomPackage = {
     'ninja-build.org^1',
     'llvm.org<17',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mesonbuild.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.8.2',
+    '1.8.1',
+    '1.8.0',
+    '1.7.2',
+    '1.7.1',
+    '1.7.0',
+    '1.6.1',
+    '1.6.0',
+    '1.5.2',
+    '1.5.1',
+    '1.5.0',
+    '1.4.2',
+    '1.4.1',
+    '1.4.0',
+    '1.3.2',
+    '1.3.1',
+    '1.3.0',
+    '1.2.3',
+    '1.2.2',
+    '1.2.0',
+    '1.1.1',
+    '1.1.0',
+    '1.0.2',
+    '1.0.1',
+    '1.0.0',
+    '0.64.1',
+    '0.64.0',
+    '0.63.3',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'meson',
+  ] as const,
 }
 
-export type MesonbuildcomPackage = typeof mesonbuildcomPackage
+export type MesonPackage = typeof mesonPackage

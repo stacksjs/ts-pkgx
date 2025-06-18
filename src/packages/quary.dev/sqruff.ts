@@ -6,20 +6,15 @@
  * @version `0.26.6` (84 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +quary.dev/sqruff -- $SHELL -i`
- * @aliases `sqruff`
- * @dependencies `linuxjemalloc.net@5`, `jemalloc.net@5`
+ * @install `launchpad install +quary.dev/sqruff -- $SHELL -i`
+ * @dependencies `jemalloc.net@5`, `rust-lang.org/rustup`, `llvm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.sqruff
- * // Or access via domain
- * const samePkg = pantry.quarydevsqruff
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "quary.dev/sqruff"
+ * const pkg = pantry.quarydevsqruff
+ * console.log(pkg.name)        // "sqruff"
  * console.log(pkg.description) // "Fast SQL formatter/linter"
  * console.log(pkg.programs)    // ["bench", "sqruff"]
  * console.log(pkg.versions[0]) // "0.26.6" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/quary-dev/sqruff.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sqruffPackage = {
+export const quarydevsqruffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'quary.dev/sqruff' as const,
+  name: 'sqruff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const sqruffPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +quary.dev/sqruff -- $SHELL -i' as const,
+  installCommand: 'launchpad install +quary.dev/sqruff -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,8 +58,9 @@ export const sqruffPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxjemalloc.net@5',
     'jemalloc.net@5',
+    'rust-lang.org/rustup',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -156,14 +152,7 @@ export const sqruffPackage = {
     '0.8.0',
     '0.7.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'sqruff',
-  ] as const,
-  fullPath: 'quary.dev/sqruff' as const,
+  aliases: [] as const,
 }
 
-export type SqruffPackage = typeof sqruffPackage
+export type QuarydevsqruffPackage = typeof quarydevsqruffPackage

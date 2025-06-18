@@ -1,11 +1,11 @@
-# rio
+# rioterm.com
 
 > A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers.
 
 ## Package Information
 
 - **Domain**: `rioterm.com`
-- **Name**: `rio`
+- **Name**: `rioterm.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rioterm.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) rio
+launchpad install rio
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `rio`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `rio`
 
@@ -39,6 +45,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +rioterm.com@0.2.19 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rust-lang.org>=1.85`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

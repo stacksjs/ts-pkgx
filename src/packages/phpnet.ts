@@ -1,5 +1,5 @@
 /**
- * **php.net** - General-purpose scripting language
+ * **php** - General-purpose scripting language
  *
  * @domain `php.net`
  * @programs `pear`, `pecl`, `phar`, `php`, `php-cgi`, ... (+3 more)
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +php.net -- $SHELL -i`
+ * @aliases `php`
  * @dependencies `gnu.org/bison^3`, `re2c.org^3`, `apache.org/apr^1`, ... (+30 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.phpnet
+ * // Access via alias (recommended)
+ * const pkg = pantry.php
+ * // Or access via domain
+ * const samePkg = pantry.phpnet
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "php.net"
  * console.log(pkg.description) // "General-purpose scripting language"
  * console.log(pkg.programs)    // ["pear", "pecl", ...]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/php-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const phpnetPackage = {
+export const phpPackage = {
   /**
    * The display name of this package.
    */
@@ -91,7 +96,7 @@ export const phpnetPackage = {
     'ijg.org^9',
     'gnu.org/sed^4 # phpize requires this',
     'openldap.org^2 # since 8.1.31, 8.2.26, 8.3.14, 8.4.0',
-    'gnu.org/gcc/libstdcxx^14',
+    'gnu.org/gcc/libstdcxx@14',
     'sourceware.org/bzip2^1',
     'zlib.net^1',
     'freetype.org',
@@ -177,7 +182,13 @@ export const phpnetPackage = {
     '8.0.28',
     '7.4.33',
   ] as const,
-  aliases: [] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'php',
+  ] as const,
 }
 
-export type PhpnetPackage = typeof phpnetPackage
+export type PhpPackage = typeof phpPackage

@@ -6,9 +6,9 @@
  * @version `0.3.5` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) gitweb`
+ * @install `launchpad install gitweb`
  * @name `gitweb`
- * @dependencies `openssl.org^1.1`, `zlib.net^1`
+ * @dependencies `openssl.org^1.1`, `zlib.net^1`, `rust-lang.org>=1.65`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gitwebPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) gitweb' as const,
+  installCommand: 'launchpad install gitweb' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,9 @@ export const gitwebPackage = {
   dependencies: [
     'openssl.org^1.1',
     'zlib.net^1',
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,7 +80,6 @@ export const gitwebPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/gitweb' as const,
 }
 
 export type GitwebPackage = typeof gitwebPackage

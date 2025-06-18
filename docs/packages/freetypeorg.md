@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +freetype.org -- $SHELL -i
+launchpad install +freetype.org -- $SHELL -i
 ```
 
 ## Programs
@@ -47,6 +47,9 @@ This package depends on:
 - `libpng.org@1`
 - `zlib.net@1`
 - `sourceware.org/bzip2@1`
+- `freedesktop.org/pkg-config^0.29`
+- `cmake.org`
+- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

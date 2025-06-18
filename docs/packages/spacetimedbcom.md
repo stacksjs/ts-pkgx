@@ -1,11 +1,11 @@
-# spacetime
+# spacetimedb.com
 
 > Multiplayer at the speed of light
 
 ## Package Information
 
 - **Domain**: `spacetimedb.com`
-- **Name**: `spacetime`
+- **Name**: `spacetimedb.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/spacetimedb.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) spacetime
+launchpad install spacetime
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `spacetime`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `spacetime`
 
@@ -45,6 +51,11 @@ sh <(curl https://pkgx.sh) +spacetimedb.com@2023.12.8 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1`
+- `rust-lang.org>=1.56`
+- `rust-lang.org/cargo`
+- `cmake.org^3`
+- `perl.org`
+- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

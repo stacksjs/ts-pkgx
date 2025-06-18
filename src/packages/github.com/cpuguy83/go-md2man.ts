@@ -6,9 +6,9 @@
  * @version `2.0.7` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) go-md2man`
+ * @install `launchpad install go-md2man`
  * @name `go-md2man`
- * @aliases `cpuguy83/go-md2man`
+ * @dependencies `go.dev^1.19`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gomd2manPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) go-md2man' as const,
+  installCommand: 'launchpad install go-md2man' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const gomd2manPackage = {
     'go-md2man',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -74,10 +80,7 @@ export const gomd2manPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cpuguy83/go-md2man',
-  ] as const,
-  fullPath: 'github.com/cpuguy83/go-md2man' as const,
+  aliases: [] as const,
 }
 
 export type Gomd2manPackage = typeof gomd2manPackage

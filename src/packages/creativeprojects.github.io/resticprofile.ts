@@ -6,8 +6,9 @@
  * @version `0.31.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) resticprofile`
+ * @install `launchpad install resticprofile`
  * @name `resticprofile`
+ * @dependencies `go.dev~1.22`
  * @companions `restic.net/restic`
  *
  * @example
@@ -48,7 +49,7 @@ export const resticprofilePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) resticprofile' as const,
+  installCommand: 'launchpad install resticprofile' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,7 +64,13 @@ export const resticprofilePackage = {
   companions: [
     'restic.net/restic',
   ] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev~1.22',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -83,7 +90,6 @@ export const resticprofilePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'creativeprojects.github.io/resticprofile' as const,
 }
 
 export type ResticprofilePackage = typeof resticprofilePackage

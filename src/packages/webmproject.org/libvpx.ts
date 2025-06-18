@@ -5,19 +5,15 @@
  * @version `1.15.2` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +webmproject.org/libvpx -- $SHELL -i`
- * @aliases `libvpx`
+ * @install `launchpad install +webmproject.org/libvpx -- $SHELL -i`
+ * @dependencies `yasm.tortall.net`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libvpx
- * // Or access via domain
- * const samePkg = pantry.webmprojectorglibvpx
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "webmproject.org/libvpx"
+ * const pkg = pantry.webmprojectorglibvpx
+ * console.log(pkg.name)        // "libvpx"
  * console.log(pkg.description) // "Mirror only. Please do not send pull requests."
  * console.log(pkg.versions[0]) // "1.15.2" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/webmproject-org/libvpx.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libvpxPackage = {
+export const webmprojectorglibvpxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'webmproject.org/libvpx' as const,
+  name: 'libvpx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,17 @@ export const libvpxPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +webmproject.org/libvpx -- $SHELL -i' as const,
+  installCommand: 'launchpad install +webmproject.org/libvpx -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'yasm.tortall.net',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -62,14 +65,7 @@ export const libvpxPackage = {
     '1.13.1',
     '1.13.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libvpx',
-  ] as const,
-  fullPath: 'webmproject.org/libvpx' as const,
+  aliases: [] as const,
 }
 
-export type LibvpxPackage = typeof libvpxPackage
+export type WebmprojectorglibvpxPackage = typeof webmprojectorglibvpxPackage

@@ -5,31 +5,26 @@
  * @version `1.1.5` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xinerama -- $SHELL -i`
- * @aliases `xinerama`
- * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`
+ * @install `launchpad install +x.org/xinerama -- $SHELL -i`
+ * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xinerama
- * // Or access via domain
- * const samePkg = pantry.xorgxinerama
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xinerama"
+ * const pkg = pantry.xorgxinerama
+ * console.log(pkg.name)        // "xinerama"
  * console.log(pkg.versions[0]) // "1.1.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xinerama.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xineramaPackage = {
+export const xorgxineramaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xinerama' as const,
+  name: 'xinerama' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xineramaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xinerama -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xinerama -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,6 +51,8 @@ export const xineramaPackage = {
     'x.org/x11',
     'x.org/protocol',
     'x.org/exts',
+    'freedesktop.org/pkg-config',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +61,7 @@ export const xineramaPackage = {
   versions: [
     '1.1.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xinerama',
-  ] as const,
-  fullPath: 'x.org/xinerama' as const,
+  aliases: [] as const,
 }
 
-export type XineramaPackage = typeof xineramaPackage
+export type XorgxineramaPackage = typeof xorgxineramaPackage

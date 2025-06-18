@@ -6,20 +6,15 @@
  * @version `1.18.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/automake -- $SHELL -i`
- * @aliases `automake`
- * @dependencies `gnu.org/autoconf^2.65.0`, `perl.org`
+ * @install `launchpad install +gnu.org/automake -- $SHELL -i`
+ * @dependencies `gnu.org/autoconf^2.65.0`, `perl.org`, `gnu.org/patch`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.automake
- * // Or access via domain
- * const samePkg = pantry.gnuorgautomake
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/automake"
+ * const pkg = pantry.gnuorgautomake
+ * console.log(pkg.name)        // "automake"
  * console.log(pkg.description) // "Tool for generating GNU Standards-compliant Mak..."
  * console.log(pkg.programs)    // ["aclocal", "automake"]
  * console.log(pkg.versions[0]) // "1.18.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/automake.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const automakePackage = {
+export const gnuorgautomakePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/automake' as const,
+  name: 'automake' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const automakePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/automake -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/automake -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +60,9 @@ export const automakePackage = {
   dependencies: [
     'gnu.org/autoconf^2.65.0',
     'perl.org',
+    'gnu.org/patch',
+    'gnu.org/make',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -75,14 +73,7 @@ export const automakePackage = {
     '1.17.0',
     '1.16.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'automake',
-  ] as const,
-  fullPath: 'gnu.org/automake' as const,
+  aliases: [] as const,
 }
 
-export type AutomakePackage = typeof automakePackage
+export type GnuorgautomakePackage = typeof gnuorgautomakePackage

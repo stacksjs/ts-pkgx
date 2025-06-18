@@ -1,9 +1,12 @@
 /**
- * **ladspa.org** - Package from pantry: ladspa.org
+ * **ladspa.org** - Linux Audio Developer's Simple Plugin
  *
  * @domain `ladspa.org`
+ * @programs `analyseplugin`, `applyplugin`, `listplugins`
+ * @version `1.17.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install ladspa.org`
+ * @install `launchpad install +ladspa.org -- $SHELL -i`
  * @dependencies `github.com/libsndfile/libsndfile^1.2`
  *
  * @example
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.ladspaorg
  * console.log(pkg.name)        // "ladspa.org"
- * console.log(pkg.description) // "Package from pantry: ladspa.org"
+ * console.log(pkg.description) // "Linux Audio Developer's Simple Plugin"
+ * console.log(pkg.programs)    // ["analyseplugin", "applyplugin", ...]
+ * console.log(pkg.versions[0]) // "1.17.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ladspa-org.md
@@ -30,13 +35,24 @@ export const ladspaorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: ladspa.org' as const,
+  description: 'Linux Audio Developer\'s Simple Plugin' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ladspa.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install ladspa.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +ladspa.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'analyseplugin',
+    'applyplugin',
+    'listplugins',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +61,14 @@ export const ladspaorgPackage = {
   dependencies: [
     'github.com/libsndfile/libsndfile^1.2',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ladspa.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.17.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type LadspaorgPackage = typeof ladspaorgPackage

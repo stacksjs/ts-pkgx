@@ -6,9 +6,9 @@
  * @version `0.4.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) git-trim`
+ * @install `launchpad install git-trim`
  * @name `git-trim`
- * @dependencies `openssl.org^1.1`, `zlib.net^1`
+ * @dependencies `openssl.org^1.1`, `zlib.net^1`, `rust-lang.org>=1.65`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gittrimPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) git-trim' as const,
+  installCommand: 'launchpad install git-trim' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,9 @@ export const gittrimPackage = {
   dependencies: [
     'openssl.org^1.1',
     'zlib.net^1',
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,7 +80,6 @@ export const gittrimPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/git-trim' as const,
 }
 
 export type GittrimPackage = typeof gittrimPackage

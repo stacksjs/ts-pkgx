@@ -6,9 +6,8 @@
  * @version `1.6.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) screenresolution`
+ * @install `launchpad install screenresolution`
  * @name `screenresolution`
- * @aliases `jhford/screenresolution`
  *
  * @example
  * ```typescript
@@ -48,7 +47,7 @@ export const screenresolutionPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) screenresolution' as const,
+  installCommand: 'launchpad install screenresolution' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,10 +68,7 @@ export const screenresolutionPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jhford/screenresolution',
-  ] as const,
-  fullPath: 'github.com/jhford/screenresolution' as const,
+  aliases: [] as const,
 }
 
 export type ScreenresolutionPackage = typeof screenresolutionPackage

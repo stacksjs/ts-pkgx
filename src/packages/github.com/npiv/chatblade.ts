@@ -6,9 +6,8 @@
  * @version `0.7.0` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) chatblade`
+ * @install `launchpad install chatblade`
  * @name `chatblade`
- * @aliases `npiv/chatblade`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
@@ -49,7 +48,7 @@ export const chatbladePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) chatblade' as const,
+  installCommand: 'launchpad install chatblade' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -90,10 +89,7 @@ export const chatbladePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'npiv/chatblade',
-  ] as const,
-  fullPath: 'github.com/npiv/chatblade' as const,
+  aliases: [] as const,
 }
 
 export type ChatbladePackage = typeof chatbladePackage

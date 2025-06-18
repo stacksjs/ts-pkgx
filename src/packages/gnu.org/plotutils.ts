@@ -6,20 +6,15 @@
  * @version `2.6.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/plotutils -- $SHELL -i`
- * @aliases `plotutils`
+ * @install `launchpad install +gnu.org/plotutils -- $SHELL -i`
  * @dependencies `libpng.org^1.6`, `libraw.org^0.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.plotutils
- * // Or access via domain
- * const samePkg = pantry.gnuorgplotutils
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/plotutils"
+ * const pkg = pantry.gnuorgplotutils
+ * console.log(pkg.name)        // "plotutils"
  * console.log(pkg.description) // "C/C++ function library for exporting 2-D vector..."
  * console.log(pkg.programs)    // ["double", "graph", ...]
  * console.log(pkg.versions[0]) // "2.6.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/plotutils.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const plotutilsPackage = {
+export const gnuorgplotutilsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/plotutils' as const,
+  name: 'plotutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const plotutilsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/plotutils -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/plotutils -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,14 +74,7 @@ export const plotutilsPackage = {
   versions: [
     '2.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'plotutils',
-  ] as const,
-  fullPath: 'gnu.org/plotutils' as const,
+  aliases: [] as const,
 }
 
-export type PlotutilsPackage = typeof plotutilsPackage
+export type GnuorgplotutilsPackage = typeof gnuorgplotutilsPackage

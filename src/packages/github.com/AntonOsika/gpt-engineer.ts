@@ -6,21 +6,20 @@
  * @version `0.3.1` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/AntonOsika/gpt-engineer -- $SHELL -i`
- * @name `GPT Engineer`
- * @aliases `gpt engineer`, `AntonOsika/gpt-engineer`
- * @dependencies `pkgx.sh^1`
+ * @install `launchpad install +github.com/AntonOsika/gpt-engineer -- $SHELL -i`
+ * @aliases `GPT Engineer`
+ * @dependencies `pkgx.sh^1`, `python.org~3.11`, `python-poetry.org^1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.GPTEngineer
  * // Or access via domain
  * const samePkg = pantry.githubcomantonosikagptengineer
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "GPT Engineer"
+ * console.log(pkg.name)        // "gpt-engineer"
  * console.log(pkg.description) // "Platform to experiment with the AI Software Eng..."
  * console.log(pkg.programs)    // ["gpte", "gpt-engineer"]
  * console.log(pkg.versions[0]) // "0.3.1" (latest)
@@ -33,7 +32,7 @@ export const gPTEngineerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'GPT Engineer' as const,
+  name: 'gpt-engineer' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const gPTEngineerPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/AntonOsika/gpt-engineer -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/AntonOsika/gpt-engineer -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,8 @@ export const gPTEngineerPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org~3.11',
+    'python-poetry.org^1.7',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -92,10 +93,8 @@ export const gPTEngineerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'gpt engineer',
-    'AntonOsika/gpt-engineer',
+    'GPT Engineer',
   ] as const,
-  fullPath: 'github.com/AntonOsika/gpt-engineer' as const,
 }
 
 export type GPTEngineerPackage = typeof gPTEngineerPackage

@@ -1,11 +1,11 @@
-# proj
+# proj.org
 
 > PROJ - Cartographic Projections and Coordinate Transformations Library
 
 ## Package Information
 
 - **Domain**: `proj.org`
-- **Name**: `proj`
+- **Name**: `proj.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/proj.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) proj
+launchpad install proj
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `proj`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `proj`
 
@@ -49,6 +55,12 @@ This package depends on:
 - `simplesystems.org/libtiff`
 - `sqlite.org`
 - `curl.se`
+- `cmake.org`
+- `freedesktop.org/pkg-config`
+- `gnu.org/libtool`
+- `gnu.org/wget`
+- `gnu.org/coreutils`
+- `sqlite.org`
 
 ## Usage Examples
 

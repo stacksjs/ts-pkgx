@@ -1,11 +1,11 @@
-# Bittensor
+# bittensor.com
 
 > Internet-scale Neural Networks
 
 ## Package Information
 
 - **Domain**: `bittensor.com`
-- **Name**: `Bittensor`
+- **Name**: `bittensor.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bittensor.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i
+launchpad install +bittensor.com -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,12 @@ sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `Bittensor`
 
 ## Available Versions
 
@@ -58,6 +64,11 @@ This package depends on:
 
 - `pkgx.sh^1`
 - `openssl.org^1.1`
+- `python.org~3.11`
+- `cmake.org@3`
+- `rust-lang.org>=1.56`
+- `rust-lang.org/cargo`
+- `python.org~3.11`
 
 ## Usage Examples
 

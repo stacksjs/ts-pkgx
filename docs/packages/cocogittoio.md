@@ -1,11 +1,11 @@
-# cog
+# cocogitto.io
 
 > The Conventional Commits toolbox
 
 ## Package Information
 
 - **Domain**: `cocogitto.io`
-- **Name**: `cog`
+- **Name**: `cocogitto.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cocogitto.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) cog
+launchpad install cog
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `cog`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `cog`
 
@@ -45,7 +51,9 @@ sh <(curl https://pkgx.sh) +cocogitto.io@6.3.0 -- $SHELL -i
 
 This package depends on:
 
-- `libgit2.org~1.7`
+- `libgit2.org~1.7 # links to libgit2.so.1.7`
+- `rust-lang.org>=1.65`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

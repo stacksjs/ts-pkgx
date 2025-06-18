@@ -5,9 +5,9 @@
  * @version `1.3.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/redis/hiredis -- $SHELL -i`
+ * @install `launchpad install +github.com/redis/hiredis -- $SHELL -i`
  * @name `hiredis`
- * @aliases `redis/hiredis`
+ * @dependencies `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
@@ -46,10 +46,16 @@ export const hiredisPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/redis/hiredis -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/redis/hiredis -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -63,10 +69,7 @@ export const hiredisPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'redis/hiredis',
-  ] as const,
-  fullPath: 'github.com/redis/hiredis' as const,
+  aliases: [] as const,
 }
 
 export type HiredisPackage = typeof hiredisPackage

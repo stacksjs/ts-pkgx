@@ -6,21 +6,20 @@
  * @version `16.10.2` (36 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ocrmypdf`
- * @name `ocrmypdf`
- * @aliases `ocrmypdf/OCRmyPDF`
- * @dependencies `pkgx.sh^1`, `qpdf.sourceforge.io^12`, `darwinsimplesystems.org/libtiff^4openjpeg.org^2libjpeg-turbo.org^2zlib.net^1x.org/xcb^1gnome.org/libxml2~2.13gnome.org/libxslt^1littlecms.com^2github.com/strukturag/libheif~1.18`, ... (+9 more)
+ * @install `launchpad install ocrmypdf`
+ * @aliases `ocrmypdf`
+ * @dependencies `pkgx.sh^1`, `qpdf.sourceforge.io^12 # as of 16.10.1`, `darwin^# a consequence of rebuilding for 11.0`, ... (+10 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.ocrmypdf
  * // Or access via domain
  * const samePkg = pantry.githubcomocrmypdfocrmypdf
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ocrmypdf"
+ * console.log(pkg.name)        // "OCRmyPDF"
  * console.log(pkg.description) // "OCRmyPDF adds an OCR text layer to scanned PDF ..."
  * console.log(pkg.programs)    // ["ocrmypdf"]
  * console.log(pkg.versions[0]) // "16.10.2" (latest)
@@ -33,7 +32,7 @@ export const ocrmypdfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ocrmypdf' as const,
+  name: 'OCRmyPDF' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const ocrmypdfPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ocrmypdf' as const,
+  installCommand: 'launchpad install ocrmypdf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,17 +63,18 @@ export const ocrmypdfPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'qpdf.sourceforge.io^12',
-    'darwinsimplesystems.org/libtiff^4openjpeg.org^2libjpeg-turbo.org^2zlib.net^1x.org/xcb^1gnome.org/libxml2~2.13gnome.org/libxslt^1littlecms.com^2github.com/strukturag/libheif~1.18',
+    'qpdf.sourceforge.io^12 # as of 16.10.1',
+    'darwin^# a consequence of rebuilding for 11.0',
     'simplesystems.org/libtiff^4',
     'openjpeg.org^2',
     'libjpeg-turbo.org^2',
     'zlib.net^1',
     'x.org/xcb^1',
-    'gnome.org/libxml2~2.13',
+    'gnome.org/libxml2~2.13 # deps need 2.13',
     'gnome.org/libxslt^1',
     'littlecms.com^2',
     'github.com/strukturag/libheif~1.18',
+    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -123,9 +123,8 @@ export const ocrmypdfPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'ocrmypdf/OCRmyPDF',
+    'ocrmypdf',
   ] as const,
-  fullPath: 'github.com/ocrmypdf/OCRmyPDF' as const,
 }
 
 export type OcrmypdfPackage = typeof ocrmypdfPackage

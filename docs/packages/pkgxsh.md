@@ -1,11 +1,11 @@
-# pkgx
+# pkgx.sh
 
 > Standalone binary that can run anything
 
 ## Package Information
 
 - **Domain**: `pkgx.sh`
-- **Name**: `pkgx`
+- **Name**: `pkgx.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) pkgx
+launchpad install pkgx
 ```
 
 ## Programs
@@ -26,7 +26,7 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `pkgx.sh/`
+- `pkgx`
 
 ## Available Versions
 
@@ -51,6 +51,14 @@ This package can also be accessed using these aliases:
 # Install specific version
 sh <(curl https://pkgx.sh) +pkgx.sh@2.7.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `deno.land~2 # since 1.3.0`
+- `rust-lang.org^1.56 # since 2.0`
+- `perl.org^5 # since 2.0`
 
 ## Usage Examples
 

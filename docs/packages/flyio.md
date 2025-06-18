@@ -1,11 +1,11 @@
-# fly
+# fly.io
 
 > Command line tools for fly.io services
 
 ## Package Information
 
 - **Domain**: `fly.io`
-- **Name**: `fly`
+- **Name**: `fly.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fly.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +fly.io -- $SHELL -i
+launchpad install +fly.io -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `fly`
 - `flyctl`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `fly`
 
 ## Available Versions
 
@@ -120,6 +126,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +fly.io@0.3.144 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.21`
 
 ## Usage Examples
 

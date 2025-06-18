@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +cfssl.org -- $SHELL -i
+launchpad install +cfssl.org -- $SHELL -i
 ```
 
 ## Programs
@@ -46,6 +46,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +cfssl.org@1.6.5 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.20`
 
 ## Usage Examples
 

@@ -1,24 +1,34 @@
 /**
- * **replibyte.com** - Package from pantry: replibyte.com
+ * **replibyte** - Seed your development database with real data ⚡️
  *
  * @domain `replibyte.com`
+ * @programs `replibyte`
+ * @version `0.10.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install replibyte.com`
+ * @install `launchpad install replibyte`
+ * @aliases `replibyte`
  * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.65`, `rust-lang.org/cargo`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.replibytecom
+ * // Access via alias (recommended)
+ * const pkg = pantry.replibyte
+ * // Or access via domain
+ * const samePkg = pantry.replibytecom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "replibyte.com"
- * console.log(pkg.description) // "Package from pantry: replibyte.com"
+ * console.log(pkg.description) // "Seed your development database with real data ⚡️"
+ * console.log(pkg.programs)    // ["replibyte"]
+ * console.log(pkg.versions[0]) // "0.10.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/replibyte-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const replibytecomPackage = {
+export const replibytePackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const replibytecomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: replibyte.com' as const,
+  description: 'Seed your development database with real data ⚡️' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/replibyte.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install replibyte.com' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install replibyte' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'replibyte',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +67,20 @@ export const replibytecomPackage = {
     'rust-lang.org/cargo',
     'freedesktop.org/pkg-config^0.29',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/replibyte.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.10.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'replibyte',
+  ] as const,
 }
 
-export type ReplibytecomPackage = typeof replibytecomPackage
+export type ReplibytePackage = typeof replibytePackage

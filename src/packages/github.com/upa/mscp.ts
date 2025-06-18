@@ -6,10 +6,9 @@
  * @version `0.2.2` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) mscp`
+ * @install `launchpad install mscp`
  * @name `mscp`
- * @aliases `upa/mscp`
- * @dependencies `zlib.net^1.2.11`, `openssl.org^1.1.1`
+ * @dependencies `zlib.net^1.2.11`, `openssl.org^1.1.1`, `gnu.org/bash`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -44,12 +43,12 @@ export const mscpPackage = {
   description: 'mscp: transfer files over multiple SSH (SFTP) connections' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/upa/mscp/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/upa/mscp' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) mscp' as const,
+  installCommand: 'launchpad install mscp' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,11 @@ export const mscpPackage = {
   dependencies: [
     'zlib.net^1.2.11',
     'openssl.org^1.1.1',
+    'gnu.org/bash',
+    'llvm.org',
+    'cmake.org',
+    'git-scm.org',
+    '#python.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,10 +82,7 @@ export const mscpPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'upa/mscp',
-  ] as const,
-  fullPath: 'github.com/upa/mscp' as const,
+  aliases: [] as const,
 }
 
 export type MscpPackage = typeof mscpPackage

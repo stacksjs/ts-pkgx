@@ -6,9 +6,9 @@
  * @version `1.7.1` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) pipx`
+ * @install `launchpad install pipx`
  * @name `pipx`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh^1`, `python.org>=3<3.12`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const pipxPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) pipx' as const,
+  installCommand: 'launchpad install pipx' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,7 @@ export const pipxPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -90,7 +91,6 @@ export const pipxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'pypa.github.io/pipx' as const,
 }
 
 export type PipxPackage = typeof pipxPackage

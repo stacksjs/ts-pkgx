@@ -1,11 +1,11 @@
-# mpv
+# mpv.io
 
 > Media player based on MPlayer and mplayer2
 
 ## Package Information
 
 - **Domain**: `mpv.io`
-- **Name**: `mpv`
+- **Name**: `mpv.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mpv.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) mpv
+launchpad install mpv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `mpv`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `mpv`
 
@@ -55,9 +61,13 @@ This package depends on:
 - `freedesktop.org/uchardet@0`
 - `vapoursynth.com@66`
 - `yt-dlp.org`
-- `linuxalsa-project.org/alsa-lib@1github.com/adah1972/libunibreak@6`
 - `alsa-project.org/alsa-lib@1`
 - `github.com/adah1972/libunibreak@6`
+- `mesonbuild.com@1`
+- `ninja-build.org@1`
+- `git-scm.org@2`
+- `invisible-island.net/ncurses@6`
+- `nixos.org/patchelf@0`
 
 ## Usage Examples
 

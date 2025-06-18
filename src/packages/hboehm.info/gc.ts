@@ -5,19 +5,15 @@
  * @version `8.2.8` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +hboehm.info/gc -- $SHELL -i`
- * @aliases `gc`
+ * @install `launchpad install +hboehm.info/gc -- $SHELL -i`
+ * @dependencies `freedesktop.org/pkg-config`, `github.com/ivmai/libatomic_ops`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gc
- * // Or access via domain
- * const samePkg = pantry.hboehminfogc
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "hboehm.info/gc"
+ * const pkg = pantry.hboehminfogc
+ * console.log(pkg.name)        // "gc"
  * console.log(pkg.description) // "The Boehm-Demers-Weiser conservative C/C++ Garb..."
  * console.log(pkg.versions[0]) // "8.2.8" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/hboehm-info/gc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gcPackage = {
+export const hboehminfogcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'hboehm.info/gc' as const,
+  name: 'gc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,18 @@ export const gcPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +hboehm.info/gc -- $SHELL -i' as const,
+  installCommand: 'launchpad install +hboehm.info/gc -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'freedesktop.org/pkg-config',
+    'github.com/ivmai/libatomic_ops',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -62,14 +66,7 @@ export const gcPackage = {
     '7.6.22',
     '7.6.20',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gc',
-  ] as const,
-  fullPath: 'hboehm.info/gc' as const,
+  aliases: [] as const,
 }
 
-export type GcPackage = typeof gcPackage
+export type HboehminfogcPackage = typeof hboehminfogcPackage

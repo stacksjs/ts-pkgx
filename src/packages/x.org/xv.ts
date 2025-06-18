@@ -5,31 +5,26 @@
  * @version `1.0.13` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xv -- $SHELL -i`
- * @aliases `xv`
- * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`
+ * @install `launchpad install +x.org/xv -- $SHELL -i`
+ * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xv
- * // Or access via domain
- * const samePkg = pantry.xorgxv
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xv"
+ * const pkg = pantry.xorgxv
+ * console.log(pkg.name)        // "xv"
  * console.log(pkg.versions[0]) // "1.0.13" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xv.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xvPackage = {
+export const xorgxvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xv' as const,
+  name: 'xv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xvPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xv -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xv -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,6 +51,9 @@ export const xvPackage = {
     'x.org/x11',
     'x.org/protocol',
     'x.org/exts',
+    'freedesktop.org/pkg-config',
+    'x.org/util-macros',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +63,7 @@ export const xvPackage = {
     '1.0.13',
     '1.0.12',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xv',
-  ] as const,
-  fullPath: 'x.org/xv' as const,
+  aliases: [] as const,
 }
 
-export type XvPackage = typeof xvPackage
+export type XorgxvPackage = typeof xorgxvPackage

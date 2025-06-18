@@ -1,23 +1,19 @@
 /**
- * **numactl/numactl** - NUMA support for Linux
+ * **numactl** - NUMA support for Linux
  *
  * @domain `github.com/numactl/numactl`
  * @version `2.0.16` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/numactl/numactl -- $SHELL -i`
- * @aliases `numactl/numactl`
+ * @install `launchpad install +github.com/numactl/numactl -- $SHELL -i`
+ * @dependencies `gnu.org/autoconf@2`, `gnu.org/automake@1`, `gnu.org/libtool@2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.numactlnumactl
- * // Or access via domain
- * const samePkg = pantry.githubcomnumactlnumactl
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/numactl/numactl"
+ * const pkg = pantry.githubcomnumactlnumactl
+ * console.log(pkg.name)        // "numactl"
  * console.log(pkg.description) // "NUMA support for Linux"
  * console.log(pkg.versions[0]) // "2.0.16" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/numactl/numactl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const numactlnumactlPackage = {
+export const githubcomnumactlnumactlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/numactl/numactl' as const,
+  name: 'numactl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,19 @@ export const numactlnumactlPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/numactl/numactl -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/numactl/numactl -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf@2',
+    'gnu.org/automake@1',
+    'gnu.org/libtool@2',
+    'gnu.org/m4@1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -56,14 +61,7 @@ export const numactlnumactlPackage = {
   versions: [
     '2.0.16',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'numactl/numactl',
-  ] as const,
-  fullPath: 'github.com/numactl/numactl' as const,
+  aliases: [] as const,
 }
 
-export type NumactlnumactlPackage = typeof numactlnumactlPackage
+export type GithubcomnumactlnumactlPackage = typeof githubcomnumactlnumactlPackage

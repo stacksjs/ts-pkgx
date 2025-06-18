@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libarchive.org -- $SHELL -i
+launchpad install +libarchive.org -- $SHELL -i
 ```
 
 ## Programs

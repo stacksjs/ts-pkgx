@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +qhull.org -- $SHELL -i
+launchpad install +qhull.org -- $SHELL -i
 ```
 
 ## Programs
@@ -44,6 +44,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +qhull.org@8.0.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 

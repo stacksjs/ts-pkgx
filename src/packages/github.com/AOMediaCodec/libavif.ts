@@ -6,21 +6,20 @@
  * @version `1.3.0` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/AOMediaCodec/libavif -- $SHELL -i`
- * @name `avif`
- * @aliases `AOMediaCodec/libavif`
- * @dependencies `aomedia.googlesource.com/aom^3`, `libpng.org^1`, `libjpeg-turbo.org^2`
+ * @install `launchpad install +github.com/AOMediaCodec/libavif -- $SHELL -i`
+ * @aliases `avif`
+ * @dependencies `aomedia.googlesource.com/aom^3`, `libpng.org^1`, `libjpeg-turbo.org^2`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.avif
  * // Or access via domain
  * const samePkg = pantry.githubcomaomediacodeclibavif
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "avif"
+ * console.log(pkg.name)        // "libavif"
  * console.log(pkg.description) // "libavif - Library for encoding and decoding .av..."
  * console.log(pkg.programs)    // ["avifenc", "avifdec"]
  * console.log(pkg.versions[0]) // "1.3.0" (latest)
@@ -33,7 +32,7 @@ export const avifPackage = {
   /**
    * The display name of this package.
    */
-  name: 'avif' as const,
+  name: 'libavif' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const avifPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/AOMediaCodec/libavif -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/AOMediaCodec/libavif -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,6 +66,8 @@ export const avifPackage = {
     'aomedia.googlesource.com/aom^3',
     'libpng.org^1',
     'libjpeg-turbo.org^2',
+    'cmake.org^3',
+    'nasm.us',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -90,9 +91,8 @@ export const avifPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'AOMediaCodec/libavif',
+    'avif',
   ] as const,
-  fullPath: 'github.com/AOMediaCodec/libavif' as const,
 }
 
 export type AvifPackage = typeof avifPackage

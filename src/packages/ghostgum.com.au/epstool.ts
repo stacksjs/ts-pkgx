@@ -6,7 +6,7 @@
  * @version `3.9.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) epstool`
+ * @install `launchpad install epstool`
  * @name `epstool`
  * @dependencies `ghostscript.com`
  *
@@ -48,7 +48,7 @@ export const epstoolPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) epstool' as const,
+  installCommand: 'launchpad install epstool' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,7 +76,6 @@ export const epstoolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ghostgum.com.au/epstool' as const,
 }
 
 export type EpstoolPackage = typeof epstoolPackage

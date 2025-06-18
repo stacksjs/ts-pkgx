@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +po4a.org -- $SHELL -i
+launchpad install +po4a.org -- $SHELL -i
 ```
 
 ## Programs
@@ -54,6 +54,15 @@ This package depends on:
 - `gnu.org/gettext^0.22`
 - `perl.org^5.22`
 - `gnome.org/libxslt^1.1`
+- `cpanmin.us`
+- `docbook.org/xsl`
+- `curl.se`
+
+## Related Packages
+
+These packages work well with po4a.org:
+
+- `PERL5LIB^${{prefix}}/libexec/lib/perl5:$PERL5LIB`
 
 ## Usage Examples
 

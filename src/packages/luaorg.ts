@@ -1,24 +1,35 @@
 /**
- * **lua.org** - Package from pantry: lua.org
+ * **lua** - Powerful, lightweight programming language
  *
  * @domain `lua.org`
+ * @programs `lua`, `luac`
+ * @version `5.4.8` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install lua.org`
+ * @install `launchpad install +lua.org -- $SHELL -i`
+ * @aliases `lua`
  * @dependencies `gnu.org/readline`, `freedesktop.org/pkg-config`
+ * @companions `luarocks.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.luaorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.lua
+ * // Or access via domain
+ * const samePkg = pantry.luaorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "lua.org"
- * console.log(pkg.description) // "Package from pantry: lua.org"
+ * console.log(pkg.description) // "Powerful, lightweight programming language"
+ * console.log(pkg.programs)    // ["lua", "luac"]
+ * console.log(pkg.versions[0]) // "5.4.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/lua-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const luaorgPackage = {
+export const luaPackage = {
   /**
    * The display name of this package.
    */
@@ -30,14 +41,30 @@ export const luaorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: lua.org' as const,
+  description: 'Powerful, lightweight programming language' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lua.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install lua.org' as const,
-  programs: [] as const,
-  companions: [] as const,
+  installCommand: 'launchpad install +lua.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'lua',
+    'luac',
+  ] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'luarocks.org',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -46,10 +73,23 @@ export const luaorgPackage = {
     'gnu.org/readline',
     'freedesktop.org/pkg-config',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lua.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.4.8',
+    '5.4.7',
+    '5.4.6',
+    '5.4.4',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'lua',
+  ] as const,
 }
 
-export type LuaorgPackage = typeof luaorgPackage
+export type LuaPackage = typeof luaPackage

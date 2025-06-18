@@ -6,21 +6,20 @@
  * @version `2.14.4` (35 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/libxml2 -- $SHELL -i`
- * @name `xml`
- * @aliases `libxml2`
- * @dependencies `zlib.net^1`
+ * @install `launchpad install +gnome.org/libxml2 -- $SHELL -i`
+ * @aliases `xml`
+ * @dependencies `zlib.net^1`, `python.org>=3<3.12`, `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.xml
  * // Or access via domain
  * const samePkg = pantry.gnomeorglibxml2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xml"
+ * console.log(pkg.name)        // "libxml2"
  * console.log(pkg.description) // "Read-only mirror of https://gitlab.gnome.org/GN..."
  * console.log(pkg.programs)    // ["xml2-config", "xmlcatalog", ...]
  * console.log(pkg.versions[0]) // "2.14.4" (latest)
@@ -33,7 +32,7 @@ export const xmlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xml' as const,
+  name: 'libxml2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const xmlPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/libxml2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/libxml2 -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,6 +65,8 @@ export const xmlPackage = {
    */
   dependencies: [
     'zlib.net^1',
+    'python.org>=3<3.12',
+    'python.org>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -113,9 +114,8 @@ export const xmlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'libxml2',
+    'xml',
   ] as const,
-  fullPath: 'gnome.org/libxml2' as const,
 }
 
 export type XmlPackage = typeof xmlPackage

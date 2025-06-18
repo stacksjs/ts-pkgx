@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gts.sourceforge.net`
+- **Domain**: `gtssourceforge.net`
 - **Name**: `gts.sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gts.sourceforge.net/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +gts.sourceforge.net -- $SHELL -i
+launchpad install +gts.sourceforge.net -- $SHELL -i
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gts.sourceforge.net@0.7.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gtssourceforge.net@0.7.6 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -53,6 +53,11 @@ sh <(curl https://pkgx.sh) +gts.sourceforge.net@0.7.6 -- $SHELL -i
 This package depends on:
 
 - `gnome.org/glib>=2.4.0`
+- `gnu.org/automake`
+- `gnu.org/autoconf`
+- `gnu.org/libtool`
+- `freedesktop.org/pkg-config`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

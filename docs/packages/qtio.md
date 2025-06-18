@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +qt.io -- $SHELL -i
+launchpad install +qt.io -- $SHELL -i
 ```
 
 ## Programs
@@ -98,7 +98,6 @@ This package depends on:
 - `gnome.org/libxslt`
 - `sqlite.org`
 - `unicode.org^71`
-- `linuxalsa-project.org/alsa-libfreedesktop.org/fontconfigharfbuzz.orgunicode.org~71dri.freedesktop.orglibevent.orgx.org/icex.org/smwebmproject.org/libvpxx.org/xcompositexkbcommon.org~1.5x.org/xkbfilex.org/xrandrx.org/xtstmesa3d.orgzlib.net/minizipmozilla.org/nssopus-codec.orglibsdl.orggoogle.github.io/snappysystemd.iowayland.freedesktop.orgfreedesktop.org/xcb-utilfreedesktop.org/xcb-util-imagefreedesktop.org/xcb-util-keysymsfreedesktop.org/xcb-util-renderutilfreedesktop.org/xcb-util-wmfacebook.com/zstd`
 - `alsa-project.org/alsa-lib`
 - `freedesktop.org/fontconfig`
 - `harfbuzz.org`
@@ -127,6 +126,16 @@ This package depends on:
 - `freedesktop.org/xcb-util-renderutil`
 - `freedesktop.org/xcb-util-wm`
 - `facebook.com/zstd`
+- `nodejs.org`
+- `freedesktop.org/pkg-config`
+- `python.org>=2.7`
+- `gnu.org/gperf`
+- `perl.org>=5.12`
+- `ruby-lang.org>=1.9.3`
+- `llvm.org<16`
+- `gnu.org/make`
+- `llvm.org`
+- `gnu.org/make`
 
 ## Usage Examples
 

@@ -6,9 +6,9 @@
  * @version `1.0.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +google.com/woff2 -- $SHELL -i`
+ * @install `launchpad install +google.com/woff2 -- $SHELL -i`
  * @name `woff2`
- * @dependencies `github.com/google/brotli`, `linuxgnu.org/gcc`, `gnu.org/gcc`
+ * @dependencies `github.com/google/brotli`, `gnu.org/gcc`, `cmake.org`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const woff2Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +google.com/woff2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +google.com/woff2 -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,8 +65,10 @@ export const woff2Package = {
    */
   dependencies: [
     'github.com/google/brotli',
-    'linuxgnu.org/gcc',
     'gnu.org/gcc',
+    'cmake.org',
+    'gnu.org/wget',
+    'darwinsys.com/file',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -80,7 +82,6 @@ export const woff2Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'google.com/woff2' as const,
 }
 
 export type Woff2Package = typeof woff2Package

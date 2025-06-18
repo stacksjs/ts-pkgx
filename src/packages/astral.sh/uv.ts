@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +astral.sh/uv -- $SHELL -i`
- * @dependencies `libgit2.org`
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `nixos.org/patchelf^0.18`, `sqlite.org`, ... (+6 more)
  * @companions `python.org`
  *
  * @example
@@ -65,7 +65,15 @@ export const astralshuvPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'libgit2.org',
+    'libgit2.org~1.7 # links to libgit2.so.1.7',
+    'nixos.org/patchelf^0.18',
+    'sqlite.org',
+    'cmake.org^3.28',
+    'rust-lang.org/cargo^0',
+    'maturin.rs^1.4.0',
+    'info-zip.org/unzip^6',
+    'curl.se',
+    'pkgx.sh@1',
   ] as const,
   /**
    * Available versions from newest to oldest.

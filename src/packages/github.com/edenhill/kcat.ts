@@ -6,10 +6,9 @@
  * @version `1.7.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) kcat`
+ * @install `launchpad install kcat`
  * @name `kcat`
- * @aliases `edenhill/kcat`
- * @dependencies `apache.org/avro`, `github.com/confluentinc/librdkafka`, `github.com/confluentinc/libserdes`, ... (+1 more)
+ * @dependencies `apache.org/avro`, `github.com/confluentinc/librdkafka`, `github.com/confluentinc/libserdes`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const kcatPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) kcat' as const,
+  installCommand: 'launchpad install kcat' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,6 +66,8 @@ export const kcatPackage = {
     'github.com/confluentinc/librdkafka',
     'github.com/confluentinc/libserdes',
     'lloyd.github.io/yajl',
+    'gnu.org/gcc',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,10 +80,7 @@ export const kcatPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'edenhill/kcat',
-  ] as const,
-  fullPath: 'github.com/edenhill/kcat' as const,
+  aliases: [] as const,
 }
 
 export type KcatPackage = typeof kcatPackage

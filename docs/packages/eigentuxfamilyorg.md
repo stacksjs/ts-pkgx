@@ -1,10 +1,10 @@
 # eigen.tuxfamily.org
 
-> A package from eigen.tuxfamily.org
+> A package from eigentuxfamily.org
 
 ## Package Information
 
-- **Domain**: `eigen.tuxfamily.org`
+- **Domain**: `eigentuxfamily.org`
 - **Name**: `eigen.tuxfamily.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/eigen.tuxfamily.org/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i
+launchpad install +eigen.tuxfamily.org -- $SHELL -i
 ```
 
 ## Programs
@@ -37,15 +37,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +eigen.tuxfamily.org@3.4.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +eigentuxfamily.org@3.4.0 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `linuxgnu.org/gcc/libstdcxx@14`
 - `gnu.org/gcc/libstdcxx@14`
+- `cmake.org^3`
+- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

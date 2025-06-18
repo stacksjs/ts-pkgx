@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +postgresql.org -- $SHELL -i
+launchpad install +postgresql.org -- $SHELL -i
 ```
 
 ## Programs
@@ -80,6 +80,9 @@ This package depends on:
 - `gnome.org/libxml2`
 - `gnome.org/libxslt`
 - `unicode.org^73`
+- `gnu.org/bison`
+- `github.com/westes/flex^2.5.31`
+- `perl.org`
 
 ## Usage Examples
 

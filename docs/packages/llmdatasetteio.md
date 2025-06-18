@@ -1,11 +1,11 @@
-# llm
+# llm.datasette.io
 
 > Access large language models from the command-line
 
 ## Package Information
 
-- **Domain**: `llm.datasette.io`
-- **Name**: `llm`
+- **Domain**: `llmdatasette.io`
+- **Name**: `llm.datasette.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/llm.datasette.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) llm
+launchpad install llm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `llm`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `llm`
 
@@ -42,7 +48,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +llm.datasette.io@0.26.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +llmdatasette.io@0.26.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,10 +6,9 @@
  * @version `0.1.6` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) tea-package-builder`
+ * @install `launchpad install tea-package-builder`
  * @name `tea-package-builder`
- * @aliases `ArionThinker/tea-package-builder`
- * @dependencies `linuxffmpeg.orggnome.org/gobject-introspectiongnome.org/glib^2`, `ffmpeg.org`, `gnome.org/gobject-introspection`, ... (+1 more)
+ * @dependencies `ffmpeg.org`, `gnome.org/gobject-introspection`, `gnome.org/glib^2`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const teapackagebuilderPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) tea-package-builder' as const,
+  installCommand: 'launchpad install tea-package-builder' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,10 +62,12 @@ export const teapackagebuilderPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxffmpeg.orggnome.org/gobject-introspectiongnome.org/glib^2',
     'ffmpeg.org',
     'gnome.org/gobject-introspection',
     'gnome.org/glib^2',
+    'nodejs.org>=14',
+    'npmjs.com',
+    'git-scm.org^2',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -84,10 +85,7 @@ export const teapackagebuilderPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ArionThinker/tea-package-builder',
-  ] as const,
-  fullPath: 'github.com/ArionThinker/tea-package-builder' as const,
+  aliases: [] as const,
 }
 
 export type TeapackagebuilderPackage = typeof teapackagebuilderPackage

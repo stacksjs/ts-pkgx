@@ -8,8 +8,7 @@
  *
  * @install `launchpad install watch`
  * @name `watch`
- * @aliases `procps-ng/watch`
- * @dependencies `invisible-island.net/ncurses>=6.0`
+ * @dependencies `invisible-island.net/ncurses>=6.0`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -63,6 +62,11 @@ export const watchPackage = {
    */
   dependencies: [
     'invisible-island.net/ncurses>=6.0',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/gettext',
+    'gnu.org/libtool',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +80,7 @@ export const watchPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'procps-ng/watch',
-  ] as const,
-  fullPath: 'gitlab.com/procps-ng/watch' as const,
+  aliases: [] as const,
 }
 
 export type WatchPackage = typeof watchPackage

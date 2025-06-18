@@ -6,9 +6,9 @@
  * @version `1.62.0` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) air`
+ * @install `launchpad install air`
  * @name `air`
- * @aliases `cosmtrek/air`
+ * @dependencies `git-scm.org`, `go.dev^1.22`, `golangci-lint.run`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const airPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) air' as const,
+  installCommand: 'launchpad install air' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,15 @@ export const airPackage = {
     'air',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'git-scm.org',
+    'go.dev^1.22',
+    'golangci-lint.run',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -84,10 +92,7 @@ export const airPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cosmtrek/air',
-  ] as const,
-  fullPath: 'github.com/cosmtrek/air' as const,
+  aliases: [] as const,
 }
 
 export type AirPackage = typeof airPackage

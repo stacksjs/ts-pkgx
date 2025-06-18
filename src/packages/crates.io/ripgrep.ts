@@ -6,20 +6,20 @@
  * @version `14.1.1` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rg`
- * @name `rg`
- * @aliases `crates.io-ripgrep`
+ * @install `launchpad install rg`
+ * @aliases `rg`
+ * @dependencies `rust-lang.org>=1.34`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.rg
  * // Or access via domain
  * const samePkg = pantry.cratesioripgrep
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rg"
+ * console.log(pkg.name)        // "ripgrep"
  * console.log(pkg.description) // "ripgrep recursively searches directories for a ..."
  * console.log(pkg.programs)    // ["rg"]
  * console.log(pkg.versions[0]) // "14.1.1" (latest)
@@ -32,7 +32,7 @@ export const rgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rg' as const,
+  name: 'ripgrep' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const rgPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rg' as const,
+  installCommand: 'launchpad install rg' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const rgPackage = {
     'rg',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.34',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -76,9 +83,8 @@ export const rgPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'crates.io-ripgrep',
+    'rg',
   ] as const,
-  fullPath: 'crates.io-ripgrep' as const,
 }
 
 export type RgPackage = typeof rgPackage

@@ -6,21 +6,20 @@
  * @version `1.18.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) iconv`
- * @name `iconv`
- * @aliases `libiconv`
- * @dependencies `linuxgnu.org/gcc/libstdcxx@14`, `gnu.org/gcc/libstdcxx@14`
+ * @install `launchpad install iconv`
+ * @aliases `iconv`
+ * @dependencies `gnu.org/gcc/libstdcxx@14`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.iconv
  * // Or access via domain
  * const samePkg = pantry.gnuorglibiconv
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "iconv"
+ * console.log(pkg.name)        // "libiconv"
  * console.log(pkg.programs)    // ["iconv"]
  * console.log(pkg.versions[0]) // "1.18.0" (latest)
  * ```
@@ -32,7 +31,7 @@ export const iconvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'iconv' as const,
+  name: 'libiconv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +47,7 @@ export const iconvPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) iconv' as const,
+  installCommand: 'launchpad install iconv' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,7 +61,6 @@ export const iconvPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxgnu.org/gcc/libstdcxx@14',
     'gnu.org/gcc/libstdcxx@14',
   ] as const,
   /**
@@ -78,9 +76,8 @@ export const iconvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'libiconv',
+    'iconv',
   ] as const,
-  fullPath: 'gnu.org/libiconv' as const,
 }
 
 export type IconvPackage = typeof iconvPackage

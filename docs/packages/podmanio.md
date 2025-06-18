@@ -1,11 +1,11 @@
-# podman
+# podman.io
 
 > Podman: A tool for managing OCI containers and pods.
 
 ## Package Information
 
 - **Domain**: `podman.io`
-- **Name**: `podman`
+- **Name**: `podman.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/podman.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +podman.io -- $SHELL -i
+launchpad install +podman.io -- $SHELL -i
 ```
 
 ## Programs
@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `podman`
 - `podman-remote`
 - `podman-mac-helper`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `podman`
 
 ## Available Versions
 
@@ -55,14 +61,15 @@ This package depends on:
 
 - `qemu.org`
 - `github.com/containers/gvisor-tap-vsock`
-- `darwingithub.com/crc-org/vfkit`
 - `github.com/crc-org/vfkit`
+- `go.dev=1.23.3`
+- `gnu.org/coreutils`
 
 ## Related Packages
 
-These packages work well with podman:
+These packages work well with podman.io:
 
-- [`openssh.com`](opensshcom.md) - A package from opens.sh/com
+- [`openssh.com`](opensshcom.md) - A package from openssh.com
 
 ## Usage Examples
 

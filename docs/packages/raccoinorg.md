@@ -1,11 +1,11 @@
-# raccoin
+# raccoin.org
 
 > Crypto Portfolio and Tax Reporting Tool
 
 ## Package Information
 
 - **Domain**: `raccoin.org`
-- **Name**: `raccoin`
+- **Name**: `raccoin.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/raccoin.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) raccoin
+launchpad install raccoin
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `raccoin`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `raccoin`
 
@@ -46,6 +52,8 @@ This package depends on:
 
 - `gnu.org/libiconv^1`
 - `openssl.org^1.1`
+- `rust-lang.org>=1.56`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

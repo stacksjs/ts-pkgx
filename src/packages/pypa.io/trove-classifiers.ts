@@ -6,19 +6,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +pypa.io/trove-classifiers -- $SHELL -i`
- * @aliases `trove-classifiers`
- * @dependencies `python.org~3.12`
+ * @dependencies `python.org~3.12`, `pypa.io/setuptools`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.troveclassifiers
- * // Or access via domain
- * const samePkg = pantry.pypaiotroveclassifiers
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pypa.io/trove-classifiers"
+ * const pkg = pantry.pypaiotroveclassifiers
+ * console.log(pkg.name)        // "trove-classifiers"
  * console.log(pkg.description) // "Canonical source for classifiers on PyPI."
  * console.log(pkg.versions[0]) // "2025.5.9.12" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/pypa-io/trove-classifiers.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const troveclassifiersPackage = {
+export const pypaiotroveclassifiersPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pypa.io/trove-classifiers' as const,
+  name: 'trove-classifiers' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -55,6 +50,7 @@ export const troveclassifiersPackage = {
    */
   dependencies: [
     'python.org~3.12',
+    'pypa.io/setuptools',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -90,14 +86,7 @@ export const troveclassifiersPackage = {
     '2024.10.12',
     '2024.10.11',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'trove-classifiers',
-  ] as const,
-  fullPath: 'pypa.io/trove-classifiers' as const,
+  aliases: [] as const,
 }
 
-export type TroveclassifiersPackage = typeof troveclassifiersPackage
+export type PypaiotroveclassifiersPackage = typeof pypaiotroveclassifiersPackage

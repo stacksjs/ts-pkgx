@@ -6,10 +6,9 @@
  * @version `0.4.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) tre`
+ * @install `launchpad install tre`
  * @name `tre`
- * @aliases `dduan/tre`
- * @dependencies `zlib.net^1`
+ * @dependencies `zlib.net^1`, `rust-lang.org>=1.60`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const trePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) tre' as const,
+  installCommand: 'launchpad install tre' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const trePackage = {
    */
   dependencies: [
     'zlib.net^1',
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +77,7 @@ export const trePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dduan/tre',
-  ] as const,
-  fullPath: 'github.com/dduan/tre' as const,
+  aliases: [] as const,
 }
 
 export type TrePackage = typeof trePackage

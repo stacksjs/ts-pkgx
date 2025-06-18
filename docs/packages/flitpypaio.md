@@ -1,11 +1,11 @@
-# flit
+# flit.pypa.io
 
 > Simplified packaging of Python modules
 
 ## Package Information
 
-- **Domain**: `flit.pypa.io`
-- **Name**: `flit`
+- **Domain**: `flitpypa.io`
+- **Name**: `flit.pypa.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/flit.pypa.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) flit
+launchpad install flit
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `flit`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `flit`
 
@@ -38,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +flit.pypa.io@3.12.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +flitpypa.io@3.12.0 -- $SHELL -i
 ```
 
 ## Dependencies

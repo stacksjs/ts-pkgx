@@ -1,11 +1,11 @@
-# exr
+# openexr.com
 
 > The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.
 
 ## Package Information
 
 - **Domain**: `openexr.com`
-- **Name**: `exr`
+- **Name**: `openexr.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i
+launchpad install +openexr.com -- $SHELL -i
 ```
 
 ## Programs
@@ -28,6 +28,12 @@ This package provides the following executable programs:
 - `exrmultipart`
 - `exrmultiview`
 - `exrstdattr`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `exr`
 
 ## Available Versions
 
@@ -56,6 +62,10 @@ This package depends on:
 
 - `zlib.net^1`
 - `openexr.com/imath`
+- `cmake.org`
+- `freedesktop.org/pkg-config`
+- `git-scm.org`
+- `gnu.org/wget`
 
 ## Usage Examples
 

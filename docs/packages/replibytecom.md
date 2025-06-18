@@ -1,11 +1,11 @@
-# replibyte
+# replibyte.com
 
 > Seed your development database with real data ⚡️
 
 ## Package Information
 
 - **Domain**: `replibyte.com`
-- **Name**: `replibyte`
+- **Name**: `replibyte.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/replibyte.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) replibyte
+launchpad install replibyte
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `replibyte`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `replibyte`
 
@@ -45,6 +51,9 @@ sh <(curl https://pkgx.sh) +replibyte.com@0.10.0 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
+- `rust-lang.org>=1.65`
+- `rust-lang.org/cargo`
+- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

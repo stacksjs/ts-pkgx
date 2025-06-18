@@ -1,23 +1,19 @@
 /**
- * **dloebl/cgif** - GIF encoder written in C
+ * **cgif** - GIF encoder written in C
  *
  * @domain `github.com/dloebl/cgif`
  * @version `0.5.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/dloebl/cgif -- $SHELL -i`
- * @aliases `dloebl/cgif`
+ * @install `launchpad install +github.com/dloebl/cgif -- $SHELL -i`
+ * @dependencies `mesonbuild.com`, `ninja-build.org`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.dloeblcgif
- * // Or access via domain
- * const samePkg = pantry.githubcomdloeblcgif
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/dloebl/cgif"
+ * const pkg = pantry.githubcomdloeblcgif
+ * console.log(pkg.name)        // "cgif"
  * console.log(pkg.description) // "GIF encoder written in C"
  * console.log(pkg.versions[0]) // "0.5.0" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/dloebl/cgif.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dloeblcgifPackage = {
+export const githubcomdloeblcgifPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/dloebl/cgif' as const,
+  name: 'cgif' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,18 @@ export const dloeblcgifPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/dloebl/cgif -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/dloebl/cgif -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -60,14 +64,7 @@ export const dloeblcgifPackage = {
     '0.3.2',
     '0.3.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'dloebl/cgif',
-  ] as const,
-  fullPath: 'github.com/dloebl/cgif' as const,
+  aliases: [] as const,
 }
 
-export type DloeblcgifPackage = typeof dloeblcgifPackage
+export type GithubcomdloeblcgifPackage = typeof githubcomdloeblcgifPackage

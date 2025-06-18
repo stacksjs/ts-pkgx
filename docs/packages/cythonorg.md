@@ -1,11 +1,11 @@
-# cython
+# cython.org
 
 > Compiler for writing C extensions for the Python language
 
 ## Package Information
 
 - **Domain**: `cython.org`
-- **Name**: `cython`
+- **Name**: `cython.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) cython
+launchpad install cython
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `cython`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `cython`
 
@@ -48,6 +54,8 @@ sh <(curl https://pkgx.sh) +cython.org@3.1.2 -- $SHELL -i
 This package depends on:
 
 - `python.org<3.12`
+- `pip.pypa.io`
+- `llvm.org`
 
 ## Usage Examples
 

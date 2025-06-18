@@ -6,7 +6,7 @@
  * @version `1.1.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) prettyping`
+ * @install `launchpad install prettyping`
  * @name `prettyping`
  *
  * @example
@@ -47,7 +47,7 @@ export const prettypingPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) prettyping' as const,
+  installCommand: 'launchpad install prettyping' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,7 +70,6 @@ export const prettypingPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'denilson.sa.nom.br/prettyping' as const,
 }
 
 export type PrettypingPackage = typeof prettypingPackage

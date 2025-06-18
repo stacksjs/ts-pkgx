@@ -6,8 +6,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +attrs.org -- $SHELL -i`
- * @dependencies `python.org`
- * @companions `env`, `PYTHONPATH`
+ * @homepage https://www.attrs.org/
+ * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
@@ -36,28 +36,21 @@ export const attrsorgPackage = {
    */
   description: 'Python Classes Without Boilerplate' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/attrs.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.attrs.org/' as const,
+  githubUrl: 'https://github.com/python-attrs/attrs' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
   installCommand: 'launchpad install +attrs.org -- $SHELL -i' as const,
   programs: [] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'env',
-    'PYTHONPATH',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
    */
   dependencies: [
-    'python.org',
+    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

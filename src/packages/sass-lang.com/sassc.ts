@@ -6,9 +6,9 @@
  * @version `3.6.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sassc`
+ * @install `launchpad install sassc`
  * @name `sassc`
- * @dependencies `sass-lang.com/libsass^3.6.5`
+ * @dependencies `sass-lang.com/libsass^3.6.5`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const sasscPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sassc' as const,
+  installCommand: 'launchpad install sassc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,9 @@ export const sasscPackage = {
    */
   dependencies: [
     'sass-lang.com/libsass^3.6.5',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,7 +79,6 @@ export const sasscPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'sass-lang.com/sassc' as const,
 }
 
 export type SasscPackage = typeof sasscPackage

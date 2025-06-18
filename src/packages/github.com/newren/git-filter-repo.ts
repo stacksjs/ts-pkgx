@@ -8,8 +8,7 @@
  *
  * @install `launchpad install git-filter-repo`
  * @name `git-filter-repo`
- * @aliases `newren/git-filter-repo`
- * @dependencies `python.org>=3.6`
+ * @dependencies `python.org>=3.6`, `git-scm.org`
  * @companions `git-scm.org`
  *
  * @example
@@ -71,6 +70,7 @@ export const gitfilterrepoPackage = {
    */
   dependencies: [
     'python.org>=3.6',
+    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -84,10 +84,7 @@ export const gitfilterrepoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'newren/git-filter-repo',
-  ] as const,
-  fullPath: 'github.com/newren/git-filter-repo' as const,
+  aliases: [] as const,
 }
 
 export type GitfilterrepoPackage = typeof gitfilterrepoPackage

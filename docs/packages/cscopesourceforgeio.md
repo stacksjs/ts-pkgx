@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cscope.sourceforge.io`
+- **Domain**: `cscopesourceforge.io`
 - **Name**: `cscope.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cscope.sourceforge.io/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +cscope.sourceforge.io -- $SHELL -i
+launchpad install +cscope.sourceforge.io -- $SHELL -i
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cscope.sourceforge.io@15.9.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +cscopesourceforge.io@15.9.0 -- $SHELL -i
 ```
 
 ## Dependencies

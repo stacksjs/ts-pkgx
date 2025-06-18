@@ -1,11 +1,11 @@
-# jenkins-lts
+# jenkins.io
 
 > Extendable open source continuous integration server
 
 ## Package Information
 
 - **Domain**: `jenkins.io`
-- **Name**: `jenkins-lts`
+- **Name**: `jenkins.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jenkins.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i
+launchpad install +jenkins.io -- $SHELL -i
 ```
 
 ## Programs
@@ -49,6 +49,8 @@ sh <(curl https://pkgx.sh) +jenkins.io@2.504.2 -- $SHELL -i
 This package depends on:
 
 - `openjdk.org<20`
+- `curl.se`
+- `pkgx.sh^1`
 
 ## Usage Examples
 

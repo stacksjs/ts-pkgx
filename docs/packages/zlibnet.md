@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +zlib.net -- $SHELL -i
+launchpad install +zlib.net -- $SHELL -i
 ```
 
 ## Programs

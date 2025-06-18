@@ -1,11 +1,11 @@
-# projen
+# projen.io
 
 > Rapidly build modern applications with advanced configuration management
 
 ## Package Information
 
 - **Domain**: `projen.io`
-- **Name**: `projen`
+- **Name**: `projen.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/projen.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) projen
+launchpad install projen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `projen`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `projen`
 
@@ -52,14 +58,18 @@ sh <(curl https://pkgx.sh) +projen.io@0.93.0 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^22 || ^20 || ^18`
+- `classic.yarnpkg.com^1`
+- `maven.apache.org>=3.0.0`
+- `python.org~3.11`
+- `go.dev>=1.21`
 
 ## Related Packages
 
-These packages work well with projen:
+These packages work well with projen.io:
 
-- `git-scm.org`
+- [`git-scm.org`](gitscmorg.md) - Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
 - [`classic.yarnpkg.com`](classicyarnpkgcom.md) - The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
-- `maven.apache.org`
+- [`maven.apache.org`](mavenapacheorg.md) - Java-based project management
 - [`python.org`](pythonorg.md) - The Python programming language
 - [`go.dev`](godev.md) - The Go programming language
 

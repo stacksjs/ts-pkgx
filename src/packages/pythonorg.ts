@@ -7,8 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +python.org -- $SHELL -i`
- * @aliases `python`
- * @dependencies `zlib.net^1`, `sourceware.org/bzip2^1`, `openssl.org^1.1`, ... (+12 more)
+ * @aliases `python`, `py`
+ * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+12 more)
  * @companions `pip.pypa.io`
  *
  * @example
@@ -71,17 +71,17 @@ export const pythonPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'zlib.net^1',
-    'sourceware.org/bzip2^1',
+    'zlib.net@1',
+    'sourceware.org/bzip2@1',
     'openssl.org^1.1',
-    'sourceware.org/libffi^3',
-    'libexpat.github.io^2',
-    'bytereef.org/mpdecimal^2',
-    'tukaani.org/xz^5',
-    'sqlite.org^3',
-    'gnu.org/readline^8',
-    'invisible-island.net/ncurses^6',
-    'tcl-lang.org^8',
+    'sourceware.org/libffi@3',
+    'libexpat.github.io@2',
+    'bytereef.org/mpdecimal@2',
+    'tukaani.org/xz@5',
+    'sqlite.org@3',
+    'gnu.org/readline@8',
+    'invisible-island.net/ncurses@6',
+    'tcl-lang.org@8',
     'freedesktop.org/pkg-config^0.29',
     'gnu.org/patch',
     'curl.se',
@@ -250,6 +250,7 @@ export const pythonPackage = {
    */
   aliases: [
     'python',
+    'py',
   ] as const,
 }
 

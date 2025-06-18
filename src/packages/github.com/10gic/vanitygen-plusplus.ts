@@ -1,25 +1,20 @@
 /**
- * **github.com/10gic/vanitygen-plusplus** - A vanity address generator for BTC, ETH, LTC, TRX and 100+ more crypto currencies.
+ * **vanitygen-plusplus** - A vanity address generator for BTC, ETH, LTC, TRX and 100+ more crypto currencies.
  *
  * @domain `github.com/10gic/vanitygen-plusplus`
  * @programs `vanitygen++`, `keyconv`, `oclvanitygen++`, `oclvanityminer`
  * @version `0.2.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/10gic/vanitygen-plusplus -- $SHELL -i`
- * @aliases `10gic/vanitygen-plusplus`
+ * @install `launchpad install +github.com/10gic/vanitygen-plusplus -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `curl.se^8`, `pcre.org^8`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.10gicvanitygenplusplus
- * // Or access via domain
- * const samePkg = pantry.githubcom10gicvanitygenplusplus
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/10gic/vanitygen-plusplus"
+ * const pkg = pantry.githubcom10gicvanitygenplusplus
+ * console.log(pkg.name)        // "vanitygen-plusplus"
  * console.log(pkg.description) // "A vanity address generator for BTC, ETH, LTC, T..."
  * console.log(pkg.programs)    // ["vanitygen++", "keyconv", ...]
  * console.log(pkg.versions[0]) // "0.2.0" (latest)
@@ -32,7 +27,7 @@ export const githubcom10gicvanitygenplusplusPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/10gic/vanitygen-plusplus' as const,
+  name: 'vanitygen-plusplus' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const githubcom10gicvanitygenplusplusPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/10gic/vanitygen-plusplus -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/10gic/vanitygen-plusplus -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,14 +71,7 @@ export const githubcom10gicvanitygenplusplusPackage = {
   versions: [
     '0.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    '10gic/vanitygen-plusplus',
-  ] as const,
-  fullPath: 'github.com/10gic/vanitygen-plusplus' as const,
+  aliases: [] as const,
 }
 
 export type Githubcom10gicvanitygenplusplusPackage = typeof githubcom10gicvanitygenplusplusPackage

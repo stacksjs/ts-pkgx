@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gflags.github.io`
+- **Domain**: `gflagsgithub.io`
 - **Name**: `gflags.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gflags.github.io/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +gflags.github.io -- $SHELL -i
+launchpad install +gflags.github.io -- $SHELL -i
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gflags.github.io@2.2.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gflagsgithub.io@2.2.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 

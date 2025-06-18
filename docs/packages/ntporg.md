@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +ntp.org -- $SHELL -i
+launchpad install +ntp.org -- $SHELL -i
 ```
 
 ## Programs
@@ -54,6 +54,7 @@ sh <(curl https://pkgx.sh) +ntp.org@4.2.8.17 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^3`
+- `perl.org^5`
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# atlantis
+# runatlantis.io
 
 > Terraform Pull Request Automation tool
 
 ## Package Information
 
 - **Domain**: `runatlantis.io`
-- **Name**: `atlantis`
+- **Name**: `runatlantis.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/runatlantis.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) atlantis
+launchpad install atlantis
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `atlantis`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `atlantis`
 
@@ -42,6 +48,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +runatlantis.io@0.34.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.21`
 
 ## Usage Examples
 

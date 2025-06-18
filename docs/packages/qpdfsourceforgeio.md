@@ -1,11 +1,11 @@
-# qpdf
+# qpdf.sourceforge.io
 
 > qpdf: A content-preserving PDF document transformer
 
 ## Package Information
 
-- **Domain**: `qpdf.sourceforge.io`
-- **Name**: `qpdf`
+- **Domain**: `qpdfsourceforge.io`
+- **Name**: `qpdf.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/qpdf.sourceforge.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) qpdf
+launchpad install qpdf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `qpdf`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `qpdf`
 
@@ -38,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +qpdf.sourceforge.io@12.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +qpdfsourceforge.io@12.2.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -49,6 +55,10 @@ This package depends on:
 - `libjpeg-turbo.org^2`
 - `openssl.org^1.1`
 - `gnutls.org^3`
+- `cmake.org^3`
+- `pyyaml.org/libyaml`
+- `python.org^3`
+- `pip.pypa.io`
 
 ## Usage Examples
 

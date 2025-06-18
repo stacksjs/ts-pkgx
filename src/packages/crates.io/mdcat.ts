@@ -6,9 +6,9 @@
  * @version `2.7.1` (19 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) mdcat`
+ * @install `launchpad install mdcat`
  * @name `mdcat`
- * @dependencies `openssl.org^1.1`, `curl.se@8`
+ * @dependencies `openssl.org^1.1`, `curl.se^8 # since 2.7.0`, `rust-lang.org>=1.56`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const mdcatPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) mdcat' as const,
+  installCommand: 'launchpad install mdcat' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,7 +63,9 @@ export const mdcatPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'curl.se@8',
+    'curl.se^8 # since 2.7.0',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -95,7 +97,6 @@ export const mdcatPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/mdcat' as const,
 }
 
 export type MdcatPackage = typeof mdcatPackage

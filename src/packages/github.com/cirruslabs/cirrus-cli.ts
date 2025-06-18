@@ -6,20 +6,20 @@
  * @version `0.144.3` (72 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) cirrus`
- * @name `cirrus`
- * @aliases `cirruslabs/cirrus-cli`
+ * @install `launchpad install cirrus`
+ * @aliases `cirrus`
+ * @dependencies `go.dev^1.22`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.cirrus
  * // Or access via domain
  * const samePkg = pantry.githubcomcirruslabscirruscli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cirrus"
+ * console.log(pkg.name)        // "cirrus-cli"
  * console.log(pkg.description) // "CLI for executing Cirrus tasks locally and in a..."
  * console.log(pkg.programs)    // ["cirrus"]
  * console.log(pkg.versions[0]) // "0.144.3" (latest)
@@ -32,7 +32,7 @@ export const cirrusPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cirrus' as const,
+  name: 'cirrus-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const cirrusPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) cirrus' as const,
+  installCommand: 'launchpad install cirrus' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const cirrusPackage = {
     'cirrus',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.22',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -141,9 +147,8 @@ export const cirrusPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'cirruslabs/cirrus-cli',
+    'cirrus',
   ] as const,
-  fullPath: 'github.com/cirruslabs/cirrus-cli' as const,
 }
 
 export type CirrusPackage = typeof cirrusPackage

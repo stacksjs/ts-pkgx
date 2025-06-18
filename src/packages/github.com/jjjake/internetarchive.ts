@@ -6,21 +6,20 @@
  * @version `5.4.0` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ia`
- * @name `ia`
- * @aliases `jjjake/internetarchive`
- * @dependencies `python.org~3.11`, `gnu.org/which^2`
+ * @install `launchpad install ia`
+ * @aliases `ia`
+ * @dependencies `python.org~3.11`, `gnu.org/which^2 # our stubs use which`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.ia
  * // Or access via domain
  * const samePkg = pantry.githubcomjjjakeinternetarchive
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ia"
+ * console.log(pkg.name)        // "internetarchive"
  * console.log(pkg.description) // "Python wrapper for the various Internet Archive..."
  * console.log(pkg.programs)    // ["ia"]
  * console.log(pkg.versions[0]) // "5.4.0" (latest)
@@ -33,7 +32,7 @@ export const iaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ia' as const,
+  name: 'internetarchive' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const iaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ia' as const,
+  installCommand: 'launchpad install ia' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,7 +63,7 @@ export const iaPackage = {
    */
   dependencies: [
     'python.org~3.11',
-    'gnu.org/which^2',
+    'gnu.org/which^2 # our stubs use which',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -88,9 +87,8 @@ export const iaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'jjjake/internetarchive',
+    'ia',
   ] as const,
-  fullPath: 'github.com/jjjake/internetarchive' as const,
 }
 
 export type IaPackage = typeof iaPackage

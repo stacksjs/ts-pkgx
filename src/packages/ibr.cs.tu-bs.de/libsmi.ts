@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +ibr.cs.tu-bs.de/libsmi -- $SHELL -i`
- * @name `smi`
- * @aliases `libsmi`
+ * @aliases `smi`
+ * @dependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.smi
  * // Or access via domain
  * const samePkg = pantry.ibrcstubsdelibsmi
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "smi"
+ * console.log(pkg.name)        // "libsmi"
  * console.log(pkg.description) // "Library to Access SMI MIB Information"
  * console.log(pkg.programs)    // ["smidiff", "smidump", ...]
  * console.log(pkg.versions[0]) // "0.4.8" (latest)
@@ -32,7 +32,7 @@ export const smiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'smi' as const,
+  name: 'libsmi' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -61,7 +61,15 @@ export const smiPackage = {
     'smixlate',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -74,9 +82,8 @@ export const smiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'libsmi',
+    'smi',
   ] as const,
-  fullPath: 'ibr.cs.tu-bs.de/libsmi' as const,
 }
 
 export type SmiPackage = typeof smiPackage

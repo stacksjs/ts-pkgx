@@ -6,9 +6,9 @@
  * @version `28.2.2` (53 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) docker`
- * @name `docker/cli`
- * @aliases `docker`
+ * @install `launchpad install docker`
+ * @aliases `docker`, `docker/cli`
+ * @dependencies `go.dev`, `github.com/cpuguy83/go-md2man`
  *
  * @example
  * ```typescript
@@ -19,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.dockercomcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "docker/cli"
+ * console.log(pkg.name)        // "cli"
  * console.log(pkg.description) // "Pack, ship and run any application as a lightwe..."
  * console.log(pkg.programs)    // ["docker"]
  * console.log(pkg.versions[0]) // "28.2.2" (latest)
@@ -32,7 +32,7 @@ export const dockerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'docker/cli' as const,
+  name: 'cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const dockerPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) docker' as const,
+  installCommand: 'launchpad install docker' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const dockerPackage = {
     'docker',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+    'github.com/cpuguy83/go-md2man',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -123,8 +130,8 @@ export const dockerPackage = {
    */
   aliases: [
     'docker',
+    'docker/cli',
   ] as const,
-  fullPath: 'docker.com/cli' as const,
 }
 
 export type DockerPackage = typeof dockerPackage

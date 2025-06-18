@@ -6,10 +6,9 @@
  * @version `0.8.3` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) regsync`
+ * @install `launchpad install regsync`
  * @name `regsync`
- * @aliases `regclient/regclient/regsync`
- * @dependencies `curl.se/ca-certs`
+ * @dependencies `curl.se/ca-certs`, `go.dev^1.21`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -44,12 +43,12 @@ export const regsyncPackage = {
   description: 'Docker and OCI Registry Client in Go and tooling using those libraries.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/regclient/regclient/regsync/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/regclient/regclient' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) regsync' as const,
+  installCommand: 'launchpad install regsync' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const regsyncPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
+    'go.dev^1.21',
+    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -90,10 +91,7 @@ export const regsyncPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'regclient/regclient/regsync',
-  ] as const,
-  fullPath: 'github.com/regclient/regclient/regsync' as const,
+  aliases: [] as const,
 }
 
 export type RegsyncPackage = typeof regsyncPackage

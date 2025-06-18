@@ -1,11 +1,11 @@
-# oras
+# oras.land
 
 > OCI registry client - managing content like artifacts, images, packages
 
 ## Package Information
 
 - **Domain**: `oras.land`
-- **Name**: `oras`
+- **Name**: `oras.land`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/oras.land/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) oras
+launchpad install oras
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `oras`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `oras`
 
@@ -39,6 +45,14 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +oras.land@1.2.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.19`
+- `goreleaser.com`
+- `git-scm.org`
 
 ## Usage Examples
 

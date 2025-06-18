@@ -6,21 +6,20 @@
  * @version `2.3.0` (25 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) micromamba`
- * @name `micromamba`
- * @aliases `mamba-org/micro`
- * @dependencies `curl.se/ca-certs`
+ * @install `launchpad install micromamba`
+ * @aliases `micromamba`
+ * @dependencies `curl.se/ca-certs`, `curl.se`, `sourceware.org/bzip2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.micromamba
  * // Or access via domain
  * const samePkg = pantry.githubcommambaorgmicro
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "micromamba"
+ * console.log(pkg.name)        // "micro"
  * console.log(pkg.description) // "The Fast Cross-Platform Package Manager"
  * console.log(pkg.programs)    // ["micromamba"]
  * console.log(pkg.versions[0]) // "2.3.0" (latest)
@@ -33,7 +32,7 @@ export const micromambaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'micromamba' as const,
+  name: 'micro' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const micromambaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) micromamba' as const,
+  installCommand: 'launchpad install micromamba' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const micromambaPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
+    'curl.se',
+    'sourceware.org/bzip2',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -101,9 +102,8 @@ export const micromambaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'mamba-org/micro',
+    'micromamba',
   ] as const,
-  fullPath: 'github.com/mamba-org/micro' as const,
 }
 
 export type MicromambaPackage = typeof micromambaPackage

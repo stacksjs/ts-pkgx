@@ -1,10 +1,10 @@
 # openssh.com
 
-> A package from opens.sh/com
+> A package from openssh.com
 
 ## Package Information
 
-- **Domain**: `opens.sh/com`
+- **Domain**: `openssh.com`
 - **Name**: `openssh.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openssh.com/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openssh.com -- $SHELL -i
+launchpad install +openssh.com -- $SHELL -i
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +opens.sh/com@10.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +openssh.com@10.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -60,8 +60,12 @@ This package depends on:
 - `thrysoee.dk/editline`
 - `github.com/besser82/libxcrypt`
 - `zlib.net`
-- `linuxlinux-pam.org`
 - `linux-pam.org`
+- `freedesktop.org/pkg-config`
+- `curl.se`
+- `gnu.org/patch`
+- `gnu.org/gcc`
+- `gnu.org/make`
 
 ## Usage Examples
 

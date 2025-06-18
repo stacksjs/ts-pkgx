@@ -5,31 +5,26 @@
  * @version `1.2.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xcursor -- $SHELL -i`
- * @aliases `xcursor`
- * @dependencies `x.org/x11`, `x.org/xfixes`, `x.org/xrender`
+ * @install `launchpad install +x.org/xcursor -- $SHELL -i`
+ * @dependencies `x.org/x11`, `x.org/xfixes`, `x.org/xrender`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xcursor
- * // Or access via domain
- * const samePkg = pantry.xorgxcursor
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xcursor"
+ * const pkg = pantry.xorgxcursor
+ * console.log(pkg.name)        // "xcursor"
  * console.log(pkg.versions[0]) // "1.2.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xcursor.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xcursorPackage = {
+export const xorgxcursorPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xcursor' as const,
+  name: 'xcursor' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xcursorPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xcursor -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xcursor -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,6 +51,9 @@ export const xcursorPackage = {
     'x.org/x11',
     'x.org/xfixes',
     'x.org/xrender',
+    'freedesktop.org/pkg-config',
+    'x.org/util-macros',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -66,14 +64,7 @@ export const xcursorPackage = {
     '1.2.2',
     '1.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xcursor',
-  ] as const,
-  fullPath: 'x.org/xcursor' as const,
+  aliases: [] as const,
 }
 
-export type XcursorPackage = typeof xcursorPackage
+export type XorgxcursorPackage = typeof xorgxcursorPackage

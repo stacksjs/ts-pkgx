@@ -6,9 +6,9 @@
  * @version `0.8.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) drill`
+ * @install `launchpad install drill`
  * @name `drill`
- * @dependencies `openssl.org^1.1`
+ * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const drillPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) drill' as const,
+  installCommand: 'launchpad install drill' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const drillPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,7 +78,6 @@ export const drillPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/drill' as const,
 }
 
 export type DrillPackage = typeof drillPackage

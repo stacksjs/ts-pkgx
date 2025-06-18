@@ -6,9 +6,9 @@
  * @version `7.2.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) aws-vault`
+ * @install `launchpad install aws-vault`
  * @name `aws-vault`
- * @aliases `99designs/aws-vault`
+ * @dependencies `go.dev^1.20`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const awsvaultPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) aws-vault' as const,
+  installCommand: 'launchpad install aws-vault' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const awsvaultPackage = {
     'aws-vault',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +75,7 @@ export const awsvaultPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    '99designs/aws-vault',
-  ] as const,
-  fullPath: 'github.com/99designs/aws-vault' as const,
+  aliases: [] as const,
 }
 
 export type AwsvaultPackage = typeof awsvaultPackage

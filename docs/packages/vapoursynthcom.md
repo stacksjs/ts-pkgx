@@ -1,11 +1,11 @@
-# vspipe
+# vapoursynth.com
 
 > A video processing framework with simplicity in mind
 
 ## Package Information
 
 - **Domain**: `vapoursynth.com`
-- **Name**: `vspipe`
+- **Name**: `vapoursynth.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vapoursynth.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) vspipe
+launchpad install vspipe
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `vspipe`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `vspipe`
 
@@ -47,8 +53,15 @@ This package depends on:
 
 - `python.org~3.11`
 - `github.com/sekrit-twc/zimg`
-- `linuxgnu.org/gcc/libstdcxx`
 - `gnu.org/gcc/libstdcxx`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `cython.org`
+- `gnu.org/libtool`
+- `nasm.us`
+- `freedesktop.org/pkg-config`
+- `gnu.org/gcc`
+- `crates.io/semverator`
 
 ## Usage Examples
 

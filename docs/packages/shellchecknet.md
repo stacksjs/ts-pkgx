@@ -1,11 +1,11 @@
-# shellcheck
+# shellcheck.net
 
 > ShellCheck, a static analysis tool for shell scripts
 
 ## Package Information
 
 - **Domain**: `shellcheck.net`
-- **Name**: `shellcheck`
+- **Name**: `shellcheck.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/shellcheck.net/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) shellcheck
+launchpad install shellcheck
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `shellcheck`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `shellcheck`
 
@@ -45,6 +51,8 @@ sh <(curl https://pkgx.sh) +shellcheck.net@0.10.0 -- $SHELL -i
 This package depends on:
 
 - `sourceware.org/libffi@3`
+- `haskell.org^9`
+- `haskell.org/cabal^3`
 
 ## Usage Examples
 

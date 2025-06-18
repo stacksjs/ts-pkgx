@@ -1,11 +1,11 @@
-# consul
+# consul.io
 
 > Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.
 
 ## Package Information
 
 - **Domain**: `consul.io`
-- **Name**: `consul`
+- **Name**: `consul.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/consul.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) consul
+launchpad install consul
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `consul`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `consul`
 
@@ -41,6 +47,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +consul.io@1.21.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.20`
 
 ## Usage Examples
 

@@ -6,7 +6,7 @@
  * @version `0.18.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) patchelf`
+ * @install `launchpad install patchelf`
  * @name `patchelf`
  *
  * @example
@@ -47,7 +47,7 @@ export const patchelfPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) patchelf' as const,
+  installCommand: 'launchpad install patchelf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,7 +72,6 @@ export const patchelfPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'nixos.org/patchelf' as const,
 }
 
 export type PatchelfPackage = typeof patchelfPackage

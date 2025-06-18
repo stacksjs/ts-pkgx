@@ -1,9 +1,12 @@
 /**
- * **httpie.io** - Package from pantry: httpie.io
+ * **httpie.io** - 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.
  *
  * @domain `httpie.io`
+ * @programs `http`, `httpie`, `https`
+ * @version `3.2.4` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install httpie.io`
+ * @install `launchpad install +httpie.io -- $SHELL -i`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.httpieio
  * console.log(pkg.name)        // "httpie.io"
- * console.log(pkg.description) // "Package from pantry: httpie.io"
+ * console.log(pkg.description) // "🥧 HTTPie CLI  — modern, user-friendly command-..."
+ * console.log(pkg.programs)    // ["http", "httpie", ...]
+ * console.log(pkg.versions[0]) // "3.2.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/httpie-io.md
@@ -30,13 +35,24 @@ export const httpieioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: httpie.io' as const,
+  description: '🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/httpie.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install httpie.io' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +httpie.io -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'http',
+    'httpie',
+    'https',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +61,17 @@ export const httpieioPackage = {
   dependencies: [
     'python.org>=3<3.12',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/httpie.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.2.4',
+    '3.2.3',
+    '3.2.2',
+    '3.2.1',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type HttpieioPackage = typeof httpieioPackage

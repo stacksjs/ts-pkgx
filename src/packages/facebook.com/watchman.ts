@@ -6,9 +6,9 @@
  * @version `2025.4.7.0` (64 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +facebook.com/watchman -- $SHELL -i`
+ * @install `launchpad install +facebook.com/watchman -- $SHELL -i`
  * @name `watchman`
- * @dependencies `facebook.com/edencommon`, `facebook.com/fb303`, `facebook.com/folly`, ... (+11 more)
+ * @dependencies `facebook.com/edencommon`, `facebook.com/fb303`, `facebook.com/folly`, ... (+17 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const watchmanPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +facebook.com/watchman -- $SHELL -i' as const,
+  installCommand: 'launchpad install +facebook.com/watchman -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,9 +78,15 @@ export const watchmanPackage = {
     'openssl.org^1.1',
     'pcre.org/v2^10',
     'python.org~3.11',
-    'linuxlibcxx.llvm.org@18gnu.org/gcc/libstdcxx@13',
-    'libcxx.llvm.org@18',
+    'libcxx.llvm.org^18 # libunwind',
     'gnu.org/gcc/libstdcxx@13',
+    'cmake.org',
+    'github.com/skystrife/cpptoml',
+    'facebook.com/fbthrift',
+    'facebook.com/mvfst',
+    'google.com/googletest',
+    'rust-lang.org',
+    'gnu.org/gcc@13',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -157,7 +163,6 @@ export const watchmanPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'facebook.com/watchman' as const,
 }
 
 export type WatchmanPackage = typeof watchmanPackage

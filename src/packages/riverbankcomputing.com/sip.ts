@@ -6,9 +6,9 @@
  * @version `6.8.3` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +riverbankcomputing.com/sip -- $SHELL -i`
+ * @install `launchpad install +riverbankcomputing.com/sip -- $SHELL -i`
  * @name `sip`
- * @dependencies `python.org~3.11`, `llvm.org<17`
+ * @dependencies `python.org~3.11`, `llvm.org<17 # needs gcc to sip-install`, `gnu.org/make`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const sipPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +riverbankcomputing.com/sip -- $SHELL -i' as const,
+  installCommand: 'launchpad install +riverbankcomputing.com/sip -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,7 +68,8 @@ export const sipPackage = {
    */
   dependencies: [
     'python.org~3.11',
-    'llvm.org<17',
+    'llvm.org<17 # needs gcc to sip-install',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -87,7 +88,6 @@ export const sipPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'riverbankcomputing.com/sip' as const,
 }
 
 export type SipPackage = typeof sipPackage

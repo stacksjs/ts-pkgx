@@ -1,11 +1,11 @@
-# vite
+# vitejs.dev
 
 > Next generation frontend tooling. It's fast!
 
 ## Package Information
 
 - **Domain**: `vitejs.dev`
-- **Name**: `vite`
+- **Name**: `vitejs.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vitejs.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) vite
+launchpad install vite
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `vite`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `vite`
 
@@ -64,6 +70,8 @@ sh <(curl https://pkgx.sh) +vitejs.dev@6.3.5 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^16 || ^18 || ^20`
+- `darwinsys.com/file`
+- `strace.io`
 
 ## Usage Examples
 

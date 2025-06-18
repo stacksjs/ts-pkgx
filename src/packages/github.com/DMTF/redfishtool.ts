@@ -6,10 +6,9 @@
  * @version `1.1.8` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) redfishtool`
+ * @install `launchpad install redfishtool`
  * @name `redfishtool`
- * @aliases `DMTF/redfishtool`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh^1`, `python.org>=3<3.12`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const redfishtoolPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) redfishtool' as const,
+  installCommand: 'launchpad install redfishtool' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const redfishtoolPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +76,7 @@ export const redfishtoolPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'DMTF/redfishtool',
-  ] as const,
-  fullPath: 'github.com/DMTF/redfishtool' as const,
+  aliases: [] as const,
 }
 
 export type RedfishtoolPackage = typeof redfishtoolPackage

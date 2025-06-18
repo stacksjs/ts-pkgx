@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +swig.org -- $SHELL -i
+launchpad install +swig.org -- $SHELL -i
 ```
 
 ## Programs
@@ -46,6 +46,7 @@ sh <(curl https://pkgx.sh) +swig.org@4.3.1 -- $SHELL -i
 This package depends on:
 
 - `pcre.org/v2`
+- `ruby-lang.org^3`
 
 ## Usage Examples
 

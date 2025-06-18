@@ -6,20 +6,20 @@
  * @version `0.5.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) md2html`
- * @name `md2html`
- * @aliases `mity/md4c`
+ * @install `launchpad install md2html`
+ * @aliases `md2html`
+ * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.md2html
  * // Or access via domain
  * const samePkg = pantry.githubcommitymd4c
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "md2html"
+ * console.log(pkg.name)        // "md4c"
  * console.log(pkg.description) // "C Markdown parser. Fast. SAX-like interface. Co..."
  * console.log(pkg.programs)    // ["md2html"]
  * console.log(pkg.versions[0]) // "0.5.2" (latest)
@@ -32,7 +32,7 @@ export const md2htmlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'md2html' as const,
+  name: 'md4c' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const md2htmlPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) md2html' as const,
+  installCommand: 'launchpad install md2html' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const md2htmlPackage = {
     'md2html',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -73,9 +79,8 @@ export const md2htmlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'mity/md4c',
+    'md2html',
   ] as const,
-  fullPath: 'github.com/mity/md4c' as const,
 }
 
 export type Md2htmlPackage = typeof md2htmlPackage

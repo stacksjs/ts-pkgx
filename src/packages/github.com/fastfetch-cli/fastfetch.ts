@@ -1,24 +1,20 @@
 /**
- * **fastfetch-cli/fastfetch** - A maintained, feature-rich and performance oriented, neofetch like system information tool.
+ * **fastfetch** - A maintained, feature-rich and performance oriented, neofetch like system information tool.
  *
  * @domain `github.com/fastfetch-cli/fastfetch`
  * @programs `fastfetch`, `flashfetch`
  * @version `2.45.0` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/fastfetch-cli/fastfetch -- $SHELL -i`
- * @aliases `fastfetch-cli/fastfetch`
+ * @install `launchpad install +github.com/fastfetch-cli/fastfetch -- $SHELL -i`
+ * @dependencies `cmake.org^3`, `gnome.org/glib^2`, `imagemagick.org^7`, ... (+13 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.fastfetchclifastfetch
- * // Or access via domain
- * const samePkg = pantry.githubcomfastfetchclifastfetch
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/fastfetch-cli/fastfetch"
+ * const pkg = pantry.githubcomfastfetchclifastfetch
+ * console.log(pkg.name)        // "fastfetch"
  * console.log(pkg.description) // "A maintained, feature-rich and performance orie..."
  * console.log(pkg.programs)    // ["fastfetch", "flashfetch"]
  * console.log(pkg.versions[0]) // "2.45.0" (latest)
@@ -27,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/fastfetch-cli/fastfetch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fastfetchclifastfetchPackage = {
+export const githubcomfastfetchclifastfetchPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/fastfetch-cli/fastfetch' as const,
+  name: 'fastfetch' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +43,7 @@ export const fastfetchclifastfetchPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/fastfetch-cli/fastfetch -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/fastfetch-cli/fastfetch -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +53,28 @@ export const fastfetchclifastfetchPackage = {
     'flashfetch',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+    'gnome.org/glib^2',
+    'imagemagick.org^7',
+    'python.org~3.12',
+    'github.com/KhronosGroup/Vulkan-Loader^1',
+    'sqlite.org^3',
+    'zlib.net^1',
+    'freedesktop.org/dbus^1',
+    'elfutils.org^0',
+    'x.org/x11^1',
+    'x.org/xcb^1',
+    'x.org/xrandr^1',
+    'kernel.org/linux-headers^5',
+    'mesa3d.org^24',
+    'khronos.org/opencl-headers^2024',
+    'wayland.freedesktop.org^1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -84,14 +101,7 @@ export const fastfetchclifastfetchPackage = {
     '2.34.0',
     '2.33.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'fastfetch-cli/fastfetch',
-  ] as const,
-  fullPath: 'github.com/fastfetch-cli/fastfetch' as const,
+  aliases: [] as const,
 }
 
-export type FastfetchclifastfetchPackage = typeof fastfetchclifastfetchPackage
+export type GithubcomfastfetchclifastfetchPackage = typeof githubcomfastfetchclifastfetchPackage

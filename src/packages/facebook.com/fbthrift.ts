@@ -6,21 +6,20 @@
  * @version `2025.6.9.0` (77 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) thrift1`
- * @name `thrift1`
- * @aliases `fbthrift`
- * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/folly`, `facebook.com/wangle`, ... (+11 more)
+ * @install `launchpad install thrift1`
+ * @aliases `thrift1`
+ * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/folly`, `facebook.com/wangle`, ... (+17 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.thrift1
  * // Or access via domain
  * const samePkg = pantry.facebookcomfbthrift
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "thrift1"
+ * console.log(pkg.name)        // "fbthrift"
  * console.log(pkg.description) // "Facebook's branch of Apache Thrift, including a..."
  * console.log(pkg.programs)    // ["thrift1"]
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
@@ -33,7 +32,7 @@ export const thrift1Package = {
   /**
    * The display name of this package.
    */
-  name: 'thrift1' as const,
+  name: 'fbthrift' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const thrift1Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) thrift1' as const,
+  installCommand: 'launchpad install thrift1' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,8 +74,14 @@ export const thrift1Package = {
     'zlib.net^1.3',
     'libsodium.org^1.0.19',
     'github.com/Cyan4973/xxHash^0.8',
-    'linuxgnu.org/gcc/libstdcxx@13',
     'gnu.org/gcc/libstdcxx@13',
+    'cmake.org',
+    'facebook.com/mvfst',
+    'gnu.org/bison',
+    'github.com/westes/flex',
+    'python.org^3.10',
+    'gnu.org/gcc@13',
+    'gnu.org/binutils',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -166,9 +171,8 @@ export const thrift1Package = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'fbthrift',
+    'thrift1',
   ] as const,
-  fullPath: 'facebook.com/fbthrift' as const,
 }
 
 export type Thrift1Package = typeof thrift1Package

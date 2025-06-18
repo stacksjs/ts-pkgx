@@ -1,24 +1,34 @@
 /**
- * **maven.apache.org** - Package from pantry: maven.apache.org
+ * **mvn** - Java-based project management
  *
  * @domain `maven.apache.org`
+ * @programs `mvn`, `mvnDebug`, `mvnyjp`
+ * @version `3.9.10` (10 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install maven.apache.org`
+ * @install `launchpad install +maven.apache.org -- $SHELL -i`
+ * @aliases `mvn`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mavenapacheorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.mvn
+ * // Or access via domain
+ * const samePkg = pantry.mavenapacheorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "maven.apache.org"
- * console.log(pkg.description) // "Package from pantry: maven.apache.org"
+ * console.log(pkg.description) // "Java-based project management"
+ * console.log(pkg.programs)    // ["mvn", "mvnDebug", ...]
+ * console.log(pkg.versions[0]) // "3.9.10" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/maven-apache-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mavenapacheorgPackage = {
+export const mvnPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,24 @@ export const mavenapacheorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: maven.apache.org' as const,
+  description: 'Java-based project management' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/maven.apache.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install maven.apache.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +maven.apache.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'mvn',
+    'mvnDebug',
+    'mvnyjp',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +66,29 @@ export const mavenapacheorgPackage = {
   dependencies: [
     'openjdk.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/maven.apache.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.9.10',
+    '3.9.9',
+    '3.9.8',
+    '3.9.7',
+    '3.9.6',
+    '3.9.5',
+    '3.9.4',
+    '3.9.3',
+    '3.8.7',
+    '3.6.3',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'mvn',
+  ] as const,
 }
 
-export type MavenapacheorgPackage = typeof mavenapacheorgPackage
+export type MvnPackage = typeof mvnPackage

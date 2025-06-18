@@ -1,11 +1,11 @@
-# elvish
+# elv.sh
 
 > Powerful scripting language & versatile interactive shell
 
 ## Package Information
 
 - **Domain**: `elv.sh`
-- **Name**: `elvish`
+- **Name**: `elv.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/elv.sh/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) elvish
+launchpad install elvish
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `elvish`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `elvish`
 
@@ -39,6 +45,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +elv.sh@0.21.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.19`
+- `gnu.org/gcc`
 
 ## Usage Examples
 

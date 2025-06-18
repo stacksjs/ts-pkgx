@@ -6,21 +6,20 @@
  * @version `0.18.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +freedesktop.org/xdg-user-dirs -- $SHELL -i`
- * @name `xdg-user-dir`
- * @aliases `xdg-user-dirs`
+ * @install `launchpad install +freedesktop.org/xdg-user-dirs -- $SHELL -i`
+ * @aliases `xdg-user-dir`
  * @dependencies `gnu.org/gettext^0.21`, `gnu.org/libiconv^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.xdguserdir
  * // Or access via domain
  * const samePkg = pantry.freedesktoporgxdguserdirs
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xdg-user-dir"
+ * console.log(pkg.name)        // "xdg-user-dirs"
  * console.log(pkg.programs)    // ["xdg-user-dir", "xdg-user-dirs-update"]
  * console.log(pkg.versions[0]) // "0.18.0" (latest)
  * ```
@@ -32,7 +31,7 @@ export const xdguserdirPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xdg-user-dir' as const,
+  name: 'xdg-user-dirs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +47,7 @@ export const xdguserdirPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/xdg-user-dirs -- $SHELL -i' as const,
+  installCommand: 'launchpad install +freedesktop.org/xdg-user-dirs -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,9 +77,8 @@ export const xdguserdirPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'xdg-user-dirs',
+    'xdg-user-dir',
   ] as const,
-  fullPath: 'freedesktop.org/xdg-user-dirs' as const,
 }
 
 export type XdguserdirPackage = typeof xdguserdirPackage

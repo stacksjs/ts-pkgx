@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +apptainer.org -- $SHELL -i`
- * @dependencies `github.com/seccomp/libseccomp`, `curl.se/ca-certs`
+ * @dependencies `github.com/seccomp/libseccomp@2`, `curl.se/ca-certs`, `go.dev~1.21`, ... (+1 more)
  * @companions `github.com/plougher/squashfs-tools`
  *
  * @example
@@ -66,8 +66,10 @@ export const apptainerorgPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'github.com/seccomp/libseccomp',
+    'github.com/seccomp/libseccomp@2',
     'curl.se/ca-certs',
+    'go.dev~1.21',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

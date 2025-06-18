@@ -5,20 +5,15 @@
  * @version `1.10.8` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +ebassi.github.io/graphene -- $SHELL -i`
- * @aliases `graphene`
- * @dependencies `gnome.org/glib`
+ * @install `launchpad install +ebassi.github.io/graphene -- $SHELL -i`
+ * @dependencies `gnome.org/glib`, `gnome.org/gobject-introspection`, `mesonbuild.com`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.graphene
- * // Or access via domain
- * const samePkg = pantry.ebassigithubiographene
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ebassi.github.io/graphene"
+ * const pkg = pantry.ebassigithubiographene
+ * console.log(pkg.name)        // "graphene"
  * console.log(pkg.description) // "A thin layer of graphic data types"
  * console.log(pkg.versions[0]) // "1.10.8" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/ebassi-github-io/graphene.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const graphenePackage = {
+export const ebassigithubiographenePackage = {
   /**
    * The display name of this package.
    */
-  name: 'ebassi.github.io/graphene' as const,
+  name: 'graphene' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const graphenePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +ebassi.github.io/graphene -- $SHELL -i' as const,
+  installCommand: 'launchpad install +ebassi.github.io/graphene -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,11 @@ export const graphenePackage = {
    */
   dependencies: [
     'gnome.org/glib',
+    'gnome.org/gobject-introspection',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -63,14 +63,7 @@ export const graphenePackage = {
   versions: [
     '1.10.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'graphene',
-  ] as const,
-  fullPath: 'ebassi.github.io/graphene' as const,
+  aliases: [] as const,
 }
 
-export type GraphenePackage = typeof graphenePackage
+export type EbassigithubiographenePackage = typeof ebassigithubiographenePackage

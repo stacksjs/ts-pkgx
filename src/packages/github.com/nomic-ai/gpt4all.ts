@@ -8,7 +8,6 @@
  *
  * @install `launchpad install gpt4all`
  * @name `gpt4all`
- * @aliases `nomic-ai/gpt4all`
  *
  * @example
  * ```typescript
@@ -69,10 +68,7 @@ export const gpt4allPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nomic-ai/gpt4all',
-  ] as const,
-  fullPath: 'github.com/nomic-ai/gpt4all' as const,
+  aliases: [] as const,
 }
 
 export type Gpt4allPackage = typeof gpt4allPackage

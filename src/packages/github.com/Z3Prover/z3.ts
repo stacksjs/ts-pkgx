@@ -6,10 +6,9 @@
  * @version `4.15.1` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) z3`
+ * @install `launchpad install z3`
  * @name `z3`
- * @aliases `Z3Prover/z3`
- * @dependencies `linuxgnu.org/gcc/libstdcxx@14`, `gnu.org/gcc/libstdcxx@14`
+ * @dependencies `gnu.org/gcc/libstdcxx@14`, `cmake.org^3`, `python.org>=3<3.12`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const z3Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) z3' as const,
+  installCommand: 'launchpad install z3' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,8 +62,12 @@ export const z3Package = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxgnu.org/gcc/libstdcxx@14',
     'gnu.org/gcc/libstdcxx@14',
+    'cmake.org^3',
+    'python.org>=3<3.12',
+    'gnu.org/gcc@14',
+    'gnu.org/wget',
+    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -90,10 +93,7 @@ export const z3Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'Z3Prover/z3',
-  ] as const,
-  fullPath: 'github.com/Z3Prover/z3' as const,
+  aliases: [] as const,
 }
 
 export type Z3Package = typeof z3Package

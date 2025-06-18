@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +sympy.org -- $SHELL -i
+launchpad install +sympy.org -- $SHELL -i
 ```
 
 ## Programs

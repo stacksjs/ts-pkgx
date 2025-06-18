@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i
+launchpad install +glfw.org -- $SHELL -i
 ```
 
 ## Programs
@@ -44,11 +44,11 @@ sh <(curl https://pkgx.sh) +glfw.org@3.4.0 -- $SHELL -i
 
 This package depends on:
 
-- `linuxfreeglut.sourceforge.io^3.4x.org/xcursor^1.2xkbcommon.org^1.0mesa3d.org^23.3`
 - `freeglut.sourceforge.io^3.4`
 - `x.org/xcursor^1.2`
 - `xkbcommon.org^1.0`
 - `mesa3d.org^23.3`
+- `cmake.org`
 
 ## Usage Examples
 

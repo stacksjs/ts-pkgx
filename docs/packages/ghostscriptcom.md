@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +ghostscript.com -- $SHELL -i
+launchpad install +ghostscript.com -- $SHELL -i
 ```
 
 ## Programs
@@ -88,6 +88,7 @@ This package depends on:
 - `libexpat.github.io^2.5`
 - `openjpeg.org^2.5`
 - `freetype.org^2.13`
+- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

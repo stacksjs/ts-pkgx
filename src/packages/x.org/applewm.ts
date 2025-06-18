@@ -5,31 +5,26 @@
  * @version `1.4.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/applewm -- $SHELL -i`
- * @aliases `applewm`
- * @dependencies `x.org/x11`, `x.org/exts`
+ * @install `launchpad install +x.org/applewm -- $SHELL -i`
+ * @dependencies `x.org/x11`, `x.org/exts`, `freedesktop.org/pkg-config`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.applewm
- * // Or access via domain
- * const samePkg = pantry.xorgapplewm
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/applewm"
+ * const pkg = pantry.xorgapplewm
+ * console.log(pkg.name)        // "applewm"
  * console.log(pkg.versions[0]) // "1.4.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/applewm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const applewmPackage = {
+export const xorgapplewmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/applewm' as const,
+  name: 'applewm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const applewmPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/applewm -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/applewm -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,8 @@ export const applewmPackage = {
   dependencies: [
     'x.org/x11',
     'x.org/exts',
+    'freedesktop.org/pkg-config',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -63,14 +60,7 @@ export const applewmPackage = {
   versions: [
     '1.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'applewm',
-  ] as const,
-  fullPath: 'x.org/applewm' as const,
+  aliases: [] as const,
 }
 
-export type ApplewmPackage = typeof applewmPackage
+export type XorgapplewmPackage = typeof xorgapplewmPackage

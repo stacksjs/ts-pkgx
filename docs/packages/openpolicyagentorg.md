@@ -1,11 +1,11 @@
-# opa
+# openpolicyagent.org
 
 > Open Policy Agent (OPA) is an open source, general-purpose policy engine.
 
 ## Package Information
 
 - **Domain**: `openpolicyagent.org`
-- **Name**: `opa`
+- **Name**: `openpolicyagent.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openpolicyagent.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) opa
+launchpad install opa
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `opa`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `opa`
 
@@ -44,6 +50,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +openpolicyagent.org@1.5.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.21`
+- `gnu.org/grep`
 
 ## Usage Examples
 

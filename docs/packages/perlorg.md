@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +perl.org -- $SHELL -i
+launchpad install +perl.org -- $SHELL -i
 ```
 
 ## Programs
@@ -51,12 +51,6 @@ This package provides the following executable programs:
 - `xsubpp`
 - `zipdetails`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `perl`
-
 ## Available Versions
 
 <details>
@@ -76,6 +70,13 @@ This package can also be accessed using these aliases:
 # Install specific version
 sh <(curl https://pkgx.sh) +perl.org@5.40.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `llvm.org<17`
+- `gnu.org/make`
 
 ## Usage Examples
 

@@ -6,9 +6,9 @@
  * @version `30.1.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) emacs`
+ * @install `launchpad install emacs`
  * @name `emacs`
- * @dependencies `gnome.org/libxml2^2.10.3`, `invisible-island.net/ncurses^6.3.0`, `libjpeg-turbo.org^2.1.5.1`, ... (+5 more)
+ * @dependencies `gnome.org/libxml2^2.10.3`, `invisible-island.net/ncurses^6.3.0`, `libjpeg-turbo.org^2.1.5.1`, ... (+6 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const emacsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) emacs' as const,
+  installCommand: 'launchpad install emacs' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,6 +70,7 @@ export const emacsPackage = {
     'gnu.org/libidn2^2.3',
     'gnutls.org^3.6',
     'zlib.net^1.2',
+    'freedesktop.org/pkg-config^0.29.2',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -88,7 +89,6 @@ export const emacsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/emacs' as const,
 }
 
 export type EmacsPackage = typeof emacsPackage

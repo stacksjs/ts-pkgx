@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i
+launchpad install +abseil.io -- $SHELL -i
 ```
 
 ## Programs
@@ -42,6 +42,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +abseil.io@20250512.1.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org^3`
+- `freedesktop.org/pkg-config^0`
 
 ## Usage Examples
 

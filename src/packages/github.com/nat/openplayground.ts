@@ -6,10 +6,9 @@
  * @version `2023.6.5` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) openplayground`
+ * @install `launchpad install openplayground`
  * @name `openplayground`
- * @aliases `nat/openplayground`
- * @dependencies `python.org~3.11`, `gnu.org/bash`, `tea.xyz^0`
+ * @dependencies `python.org~3.11`, `gnu.org/bash`, `tea.xyz^0`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const openplaygroundPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) openplayground' as const,
+  installCommand: 'launchpad install openplayground' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,6 +65,9 @@ export const openplaygroundPackage = {
     'python.org~3.11',
     'gnu.org/bash',
     'tea.xyz^0',
+    'npmjs.com',
+    'python-poetry.org~1.4.1',
+    'pip.pypa.io',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,10 +80,7 @@ export const openplaygroundPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nat/openplayground',
-  ] as const,
-  fullPath: 'github.com/nat/openplayground' as const,
+  aliases: [] as const,
 }
 
 export type OpenplaygroundPackage = typeof openplaygroundPackage

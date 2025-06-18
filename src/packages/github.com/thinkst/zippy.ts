@@ -6,9 +6,8 @@
  * @version `0.1.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) zippy`
+ * @install `launchpad install zippy`
  * @name `zippy`
- * @aliases `thinkst/zippy`
  * @dependencies `python.org~3.10`
  *
  * @example
@@ -49,7 +48,7 @@ export const zippyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) zippy' as const,
+  installCommand: 'launchpad install zippy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,10 +77,7 @@ export const zippyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'thinkst/zippy',
-  ] as const,
-  fullPath: 'github.com/thinkst/zippy' as const,
+  aliases: [] as const,
 }
 
 export type ZippyPackage = typeof zippyPackage

@@ -6,7 +6,7 @@
  * @version `5.2.37` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/bash -- $SHELL -i`
+ * @install `launchpad install +gnu.org/bash -- $SHELL -i`
  * @name `bash`
  *
  * @example
@@ -47,7 +47,7 @@ export const bashPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/bash -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/bash -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,7 +74,6 @@ export const bashPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/bash' as const,
 }
 
 export type BashPackage = typeof bashPackage

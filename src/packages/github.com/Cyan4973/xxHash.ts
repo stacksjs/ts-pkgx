@@ -6,20 +6,20 @@
  * @version `0.8.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/Cyan4973/xxHash -- $SHELL -i`
- * @name `xxh`
- * @aliases `Cyan4973/xxHash`
+ * @install `launchpad install +github.com/Cyan4973/xxHash -- $SHELL -i`
+ * @aliases `xxh`
+ * @dependencies `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.xxh
  * // Or access via domain
  * const samePkg = pantry.githubcomcyan4973xxhash
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xxh"
+ * console.log(pkg.name)        // "xxHash"
  * console.log(pkg.description) // "Extremely fast non-cryptographic hash algorithm"
  * console.log(pkg.programs)    // ["xxhsum", "xxh32sum", ...]
  * console.log(pkg.versions[0]) // "0.8.3" (latest)
@@ -32,7 +32,7 @@ export const xxhPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xxh' as const,
+  name: 'xxHash' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const xxhPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/Cyan4973/xxHash -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/Cyan4973/xxHash -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -60,7 +60,13 @@ export const xxhPackage = {
     'xxh128sum',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,9 +81,8 @@ export const xxhPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'Cyan4973/xxHash',
+    'xxh',
   ] as const,
-  fullPath: 'github.com/Cyan4973/xxHash' as const,
 }
 
 export type XxhPackage = typeof xxhPackage

@@ -1,11 +1,11 @@
-# kubectl-krew
+# krew.sigs.k8s.io
 
 > 📦 Find and install kubectl plugins
 
 ## Package Information
 
-- **Domain**: `krew.sigs.k8s.io`
-- **Name**: `kubectl-krew`
+- **Domain**: `krewsigsk8s.io`
+- **Name**: `krew.sigs.k8s.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/krew.sigs.k8s.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) kubectl-krew
+launchpad install kubectl-krew
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `kubectl-krew`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `kubectl-krew`
 
@@ -37,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +krew.sigs.k8s.io@0.4.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) +krewsigsk8s.io@0.4.5 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -45,6 +51,9 @@ sh <(curl https://pkgx.sh) +krew.sigs.k8s.io@0.4.5 -- $SHELL -i
 This package depends on:
 
 - `git-scm.org`
+- `go.dev^1.21`
+- `gnu.org/grep`
+- `kubernetes.io/kubectl`
 
 ## Usage Examples
 

@@ -6,9 +6,9 @@
  * @version `25.6.0` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +freedesktop.org/poppler-qt5 -- $SHELL -i`
+ * @install `launchpad install +freedesktop.org/poppler-qt5 -- $SHELL -i`
  * @name `poppler-qt5`
- * @dependencies `gnupg.org/libassuan^2`, `cairographics.org^1`, `freedesktop.org/fontconfig^2`, ... (+18 more)
+ * @dependencies `gnupg.org/libassuan^2`, `cairographics.org^1`, `freedesktop.org/fontconfig^2`, ... (+19 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const popplerqt5Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/poppler-qt5 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +freedesktop.org/poppler-qt5 -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,7 +79,7 @@ export const popplerqt5Package = {
     'freedesktop.org/fontconfig^2',
     'freetype.org^2',
     'gnu.org/gettext^0',
-    'gnome.org/libxml2~2.13',
+    'gnome.org/libxml2~2.13 # since 25.4.0, 2.14 changed the API version',
     'gnome.org/glib^2',
     'gnupg.org/gpgme^1',
     'gnupg.org/libgpg-error^1',
@@ -91,10 +91,11 @@ export const popplerqt5Package = {
     'openjpeg.org^2',
     'qt.io~5',
     'curl.se^8',
-    'darwingnupg.org/libassuan^2',
     'gnupg.org/libassuan^2',
-    'linuxgnu.org/gcc',
     'gnu.org/gcc',
+    'cmake.org',
+    'gnome.org/gobject-introspection',
+    'gnu.org/binutils^2',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -128,7 +129,6 @@ export const popplerqt5Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'freedesktop.org/poppler-qt5' as const,
 }
 
 export type Popplerqt5Package = typeof popplerqt5Package

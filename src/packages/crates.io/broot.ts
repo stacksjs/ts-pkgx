@@ -6,9 +6,9 @@
  * @version `1.46.5` (60 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) broot`
+ * @install `launchpad install broot`
  * @name `broot`
- * @dependencies `zlib.net^1`
+ * @dependencies `zlib.net^1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const brootPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) broot' as const,
+  installCommand: 'launchpad install broot' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const brootPackage = {
    */
   dependencies: [
     'zlib.net^1',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -135,7 +137,6 @@ export const brootPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/broot' as const,
 }
 
 export type BrootPackage = typeof brootPackage

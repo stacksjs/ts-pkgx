@@ -6,21 +6,20 @@
  * @version `1.2.2` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) pyproject-build`
- * @name `pyproject-build`
- * @aliases `pypa/build`
- * @dependencies `pkgx.sh^1`
+ * @install `launchpad install pyproject-build`
+ * @aliases `pyproject-build`
+ * @dependencies `pkgx.sh^1`, `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.pyprojectbuild
  * // Or access via domain
  * const samePkg = pantry.githubcompypabuild
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pyproject-build"
+ * console.log(pkg.name)        // "build"
  * console.log(pkg.description) // "A simple, correct Python build frontend"
  * console.log(pkg.programs)    // ["pyproject-build"]
  * console.log(pkg.versions[0]) // "1.2.2" (latest)
@@ -33,7 +32,7 @@ export const pyprojectbuildPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pyproject-build' as const,
+  name: 'build' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const pyprojectbuildPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) pyproject-build' as const,
+  installCommand: 'launchpad install pyproject-build' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const pyprojectbuildPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -85,9 +85,8 @@ export const pyprojectbuildPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'pypa/build',
+    'pyproject-build',
   ] as const,
-  fullPath: 'github.com/pypa/build' as const,
 }
 
 export type PyprojectbuildPackage = typeof pyprojectbuildPackage

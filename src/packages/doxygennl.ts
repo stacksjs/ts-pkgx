@@ -8,7 +8,7 @@
  *
  * @install `launchpad install doxygen`
  * @aliases `doxygen`
- * @dependencies `gnu.org/bison^3`, `cmake.org^3`, `github.com/westes/flex^2`, ... (+1 more)
+ * @dependencies `gnu.org/bison^3`, `cmake.org^3`, `github.com/westes/flex@2`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -64,7 +64,7 @@ export const doxygenPackage = {
   dependencies: [
     'gnu.org/bison^3',
     'cmake.org^3',
-    'github.com/westes/flex^2',
+    'github.com/westes/flex@2',
     'python.org>=3<3.12',
   ] as const,
   /**

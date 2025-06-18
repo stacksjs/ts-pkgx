@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +elementsproject.org -- $SHELL -i
+launchpad install +elementsproject.org -- $SHELL -i
 ```
 
 ## Programs
@@ -54,6 +54,11 @@ This package depends on:
 - `boost.org^1.64`
 - `libevent.org`
 - `oracle.com/berkeley-db`
+- `gnu.org/automake`
+- `gnu.org/autoconf`
+- `gnu.org/libtool`
+- `freedesktop.org/pkg-config`
+- `github.com/util-linux/util-linux`
 
 ## Usage Examples
 

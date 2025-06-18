@@ -1,9 +1,11 @@
 /**
- * **liblqr.wikidot.com** - Package from pantry: liblqr.wikidot.com
+ * **liblqr.wikidot.com** - Liquid Rescale library
  *
  * @domain `liblqr.wikidot.com`
+ * @version `0.4.3` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install liblqr.wikidot.com`
+ * @install `launchpad install +liblqr.wikidot.com -- $SHELL -i`
  * @dependencies `gnome.org/glib`, `freedesktop.org/pkg-config`, `freedesktop.org/pkg-config`
  *
  * @example
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.liblqrwikidotcom
  * console.log(pkg.name)        // "liblqr.wikidot.com"
- * console.log(pkg.description) // "Package from pantry: liblqr.wikidot.com"
+ * console.log(pkg.description) // "Liquid Rescale library"
+ * console.log(pkg.versions[0]) // "0.4.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/liblqr-wikidot-com.md
@@ -30,12 +33,15 @@ export const liblqrwikidotcomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: liblqr.wikidot.com' as const,
+  description: 'Liquid Rescale library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/liblqr.wikidot.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install liblqr.wikidot.com' as const,
+  installCommand: 'launchpad install +liblqr.wikidot.com -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -47,10 +53,15 @@ export const liblqrwikidotcomPackage = {
     'freedesktop.org/pkg-config',
     'freedesktop.org/pkg-config',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/liblqr.wikidot.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.4.3',
+    '0.4.2',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type LiblqrwikidotcomPackage = typeof liblqrwikidotcomPackage

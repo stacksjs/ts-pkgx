@@ -6,20 +6,15 @@
  * @version `4.9.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +unidata.ucar.edu/netcdf -- $SHELL -i`
- * @aliases `netcdf`
- * @dependencies `hdfgroup.org/HDF5`, `sourceware.org/bzip2`, `curl.se`, ... (+2 more)
+ * @install `launchpad install +unidata.ucar.edu/netcdf -- $SHELL -i`
+ * @dependencies `hdfgroup.org/HDF5`, `sourceware.org/bzip2`, `curl.se`, ... (+7 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.netcdf
- * // Or access via domain
- * const samePkg = pantry.unidataucaredunetcdf
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "unidata.ucar.edu/netcdf"
+ * const pkg = pantry.unidataucaredunetcdf
+ * console.log(pkg.name)        // "netcdf"
  * console.log(pkg.description) // "Official GitHub repository for netCDF-C librari..."
  * console.log(pkg.programs)    // ["nc-config", "nccopy", ...]
  * console.log(pkg.versions[0]) // "4.9.3" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/unidata-ucar-edu/netcdf.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const netcdfPackage = {
+export const unidataucaredunetcdfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'unidata.ucar.edu/netcdf' as const,
+  name: 'netcdf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const netcdfPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +unidata.ucar.edu/netcdf -- $SHELL -i' as const,
+  installCommand: 'launchpad install +unidata.ucar.edu/netcdf -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +66,11 @@ export const netcdfPackage = {
     'curl.se',
     'gnome.org/libxml2',
     'zlib.net',
+    'gnu.org/make',
+    'cmake.org',
+    'gnu.org/m4',
+    'gnu.org/gcc',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -80,14 +80,7 @@ export const netcdfPackage = {
     '4.9.3',
     '4.9.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'netcdf',
-  ] as const,
-  fullPath: 'unidata.ucar.edu/netcdf' as const,
+  aliases: [] as const,
 }
 
-export type NetcdfPackage = typeof netcdfPackage
+export type UnidataucaredunetcdfPackage = typeof unidataucaredunetcdfPackage

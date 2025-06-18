@@ -1,10 +1,10 @@
 # frei0r.dyne.org
 
-> A package from frei0r.dyne.org
+> A package from frei0rdyne.org
 
 ## Package Information
 
-- **Domain**: `frei0r.dyne.org`
+- **Domain**: `frei0rdyne.org`
 - **Name**: `frei0r.dyne.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/frei0r.dyne.org/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +frei0r.dyne.org -- $SHELL -i
+launchpad install +frei0r.dyne.org -- $SHELL -i
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +frei0r.dyne.org@1.8.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +frei0rdyne.org@1.8.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 

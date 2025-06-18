@@ -3,24 +3,24 @@
  *
  * @domain `aws.amazon.com/cdk`
  * @programs `cdk`
- * @version `3.0.0` (160 versions available)
+ * @version `3.0.0` (161 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) cdk`
- * @name `aws/cdk`
- * @aliases `cdk`
- * @dependencies `nodejs.org`
+ * @install `launchpad install cdk`
+ * @name `cdk`
+ * @aliases `aws/cdk`
+ * @dependencies `nodejs.org`, `npmjs.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cdk
  * // Or access via domain
  * const samePkg = pantry.awsamazoncomcdk
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aws/cdk"
+ * console.log(pkg.name)        // "cdk"
  * console.log(pkg.description) // "The AWS Cloud Development Kit is a framework fo..."
  * console.log(pkg.programs)    // ["cdk"]
  * console.log(pkg.versions[0]) // "3.0.0" (latest)
@@ -33,7 +33,7 @@ export const cdkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'aws/cdk' as const,
+  name: 'cdk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +49,7 @@ export const cdkPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) cdk' as const,
+  installCommand: 'launchpad install cdk' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,7 @@ export const cdkPackage = {
    */
   dependencies: [
     'nodejs.org',
+    'npmjs.com',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -71,6 +72,7 @@ export const cdkPackage = {
    */
   versions: [
     '3.0.0',
+    '2.1019.0',
     '2.1018.1',
     '2.1018.0',
     '2.1017.1',
@@ -236,9 +238,8 @@ export const cdkPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'cdk',
+    'aws/cdk',
   ] as const,
-  fullPath: 'aws.amazon.com/cdk' as const,
 }
 
 export type CdkPackage = typeof cdkPackage

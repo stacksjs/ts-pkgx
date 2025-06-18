@@ -5,30 +5,26 @@
  * @version `0.17.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/pciaccess -- $SHELL -i`
- * @aliases `pciaccess`
+ * @install `launchpad install +x.org/pciaccess -- $SHELL -i`
+ * @dependencies `freedesktop.org/pkg-config`, `x.org/util-macros`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pciaccess
- * // Or access via domain
- * const samePkg = pantry.xorgpciaccess
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/pciaccess"
+ * const pkg = pantry.xorgpciaccess
+ * console.log(pkg.name)        // "pciaccess"
  * console.log(pkg.versions[0]) // "0.17.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/pciaccess.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pciaccessPackage = {
+export const xorgpciaccessPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/pciaccess' as const,
+  name: 'pciaccess' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,10 +40,18 @@ export const pciaccessPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/pciaccess -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/pciaccess -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'freedesktop.org/pkg-config',
+    'x.org/util-macros',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -55,14 +59,7 @@ export const pciaccessPackage = {
   versions: [
     '0.17.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pciaccess',
-  ] as const,
-  fullPath: 'x.org/pciaccess' as const,
+  aliases: [] as const,
 }
 
-export type PciaccessPackage = typeof pciaccessPackage
+export type XorgpciaccessPackage = typeof xorgpciaccessPackage

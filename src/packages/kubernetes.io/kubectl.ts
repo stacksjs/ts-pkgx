@@ -3,11 +3,12 @@
  *
  * @domain `kubernetes.io/kubectl`
  * @programs `kubectl`
- * @version `1.33.1` (105 versions available)
+ * @version `1.33.2` (109 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) kubectl`
+ * @install `launchpad install kubectl`
  * @name `kubectl`
+ * @dependencies `go.dev^1.19`, `gnu.org/coreutils^9.1.0`, `gnu.org/bash^5.1`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -21,7 +22,7 @@
  * console.log(pkg.name)        // "kubectl"
  * console.log(pkg.description) // "Production-Grade Container Scheduling and Manag..."
  * console.log(pkg.programs)    // ["kubectl"]
- * console.log(pkg.versions[0]) // "1.33.1" (latest)
+ * console.log(pkg.versions[0]) // "1.33.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kubernetes-io/kubectl.md
@@ -47,7 +48,7 @@ export const kubectlPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) kubectl' as const,
+  installCommand: 'launchpad install kubectl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,20 +57,33 @@ export const kubectlPackage = {
     'kubectl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.19',
+    'gnu.org/coreutils^9.1.0',
+    'gnu.org/bash^5.1',
+    'rsync.samba.org',
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.33.2',
     '1.33.1',
     '1.33.0',
+    '1.32.6',
     '1.32.5',
     '1.32.4',
     '1.32.3',
     '1.32.2',
     '1.32.1',
     '1.32.0',
+    '1.31.10',
     '1.31.9',
     '1.31.8',
     '1.31.7',
@@ -80,6 +94,7 @@ export const kubectlPackage = {
     '1.31.2',
     '1.31.1',
     '1.31.0',
+    '1.30.14',
     '1.30.13',
     '1.30.12',
     '1.30.11',
@@ -173,7 +188,6 @@ export const kubectlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kubernetes.io/kubectl' as const,
 }
 
 export type KubectlPackage = typeof kubectlPackage

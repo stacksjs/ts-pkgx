@@ -1,11 +1,11 @@
-# k6
+# k6.io
 
 > A modern load testing tool, using Go and JavaScript - https://k6.io
 
 ## Package Information
 
 - **Domain**: `k6.io`
-- **Name**: `k6`
+- **Name**: `k6.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/k6.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) k6
+launchpad install k6
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `k6`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `k6`
 
@@ -43,6 +49,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +k6.io@1.0.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.18`
 
 ## Usage Examples
 

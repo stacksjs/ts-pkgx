@@ -1,10 +1,10 @@
 # libisl.sourceforge.io
 
-> A package from libisl.sourceforge.io
+> A package from libislsourceforge.io
 
 ## Package Information
 
-- **Domain**: `libisl.sourceforge.io`
+- **Domain**: `libislsourceforge.io`
 - **Name**: `libisl.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libisl.sourceforge.io/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libisl.sourceforge.io -- $SHELL -i
+launchpad install +libisl.sourceforge.io -- $SHELL -i
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libisl.sourceforge.io@0.27.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libislsourceforge.io@0.27.0 -- $SHELL -i
 ```
 
 ## Dependencies

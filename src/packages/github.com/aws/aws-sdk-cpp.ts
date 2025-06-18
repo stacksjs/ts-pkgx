@@ -1,36 +1,31 @@
 /**
- * **aws/aws-sdk-cpp** - AWS SDK for C++
+ * **aws-sdk-cpp** - AWS SDK for C++
  *
  * @domain `github.com/aws/aws-sdk-cpp`
- * @version `1.11.590` (506 versions available)
+ * @version `1.11.591` (507 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/aws/aws-sdk-cpp -- $SHELL -i`
- * @aliases `aws/aws-sdk-cpp`
- * @dependencies `curl.se`, `zlib.net@1`, `openssl.org@1.1`
+ * @install `launchpad install +github.com/aws/aws-sdk-cpp -- $SHELL -i`
+ * @dependencies `curl.se`, `zlib.net@1`, `openssl.org@1.1`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.awsawssdkcpp
- * // Or access via domain
- * const samePkg = pantry.githubcomawsawssdkcpp
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/aws/aws-sdk-cpp"
+ * const pkg = pantry.githubcomawsawssdkcpp
+ * console.log(pkg.name)        // "aws-sdk-cpp"
  * console.log(pkg.description) // "AWS SDK for C++"
- * console.log(pkg.versions[0]) // "1.11.590" (latest)
+ * console.log(pkg.versions[0]) // "1.11.591" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/aws/aws-sdk-cpp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const awsawssdkcppPackage = {
+export const githubcomawsawssdkcppPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/aws/aws-sdk-cpp' as const,
+  name: 'aws-sdk-cpp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,12 +36,12 @@ export const awsawssdkcppPackage = {
   description: 'AWS SDK for C++' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/aws/aws-sdk-cpp/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/aws/aws-sdk-cpp' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/aws/aws-sdk-cpp -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/aws/aws-sdk-cpp -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -57,12 +52,16 @@ export const awsawssdkcppPackage = {
     'curl.se',
     'zlib.net@1',
     'openssl.org@1.1',
+    'cmake.org',
+    'git-scm.org^2',
+    'kernel.org/linux-headers^5',
   ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.11.591',
     '1.11.590',
     '1.11.589',
     '1.11.588',
@@ -570,14 +569,7 @@ export const awsawssdkcppPackage = {
     '1.11.84',
     '1.11.83',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'aws/aws-sdk-cpp',
-  ] as const,
-  fullPath: 'github.com/aws/aws-sdk-cpp' as const,
+  aliases: [] as const,
 }
 
-export type AwsawssdkcppPackage = typeof awsawssdkcppPackage
+export type GithubcomawsawssdkcppPackage = typeof githubcomawsawssdkcppPackage

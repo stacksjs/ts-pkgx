@@ -8,6 +8,7 @@
  *
  * @install `launchpad install amber`
  * @aliases `amber`
+ * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`, `pkgx.sh^1`
  * @companions `gnu.org/bc`, `gnu.org/sed`, `gnu.org/coreutils`, ... (+2 more)
  *
  * @example
@@ -67,7 +68,15 @@ export const amberPackage = {
     'gnu.org/gawk',
     'gnu.org/bash',
   ] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+    'pkgx.sh^1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

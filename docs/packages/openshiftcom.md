@@ -1,11 +1,11 @@
-# oc
+# openshift.com
 
 > The OpenShift Command Line, part of OKD
 
 ## Package Information
 
 - **Domain**: `openshift.com`
-- **Name**: `oc`
+- **Name**: `openshift.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openshift.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) oc
+launchpad install oc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `oc`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `oc`
 
@@ -89,6 +95,8 @@ sh <(curl https://pkgx.sh) +openshift.com@4.19.0 -- $SHELL -i
 This package depends on:
 
 - `kerberos.org^1.21`
+- `go.dev^1.21`
+- `gnu.org/gcc`
 
 ## Usage Examples
 

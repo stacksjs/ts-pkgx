@@ -1,28 +1,34 @@
 /**
- * **sourceforge.net/opencore-amr** - pkgx package
+ * **aac-enc** - Standalone library of the Fraunhofer FDK AAC code from Android
  *
- * @domain `sourceforge.net/opencore/amr`
+ * @domain `sourceforge.net/opencore-amr`
+ * @programs `aac-enc`
+ * @version `2.0.3` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `pkgx sourceforge.net/opencore-amr`
- * @name `opencore-amr`
- * @aliases `sourceforge.net/opencore-amr`
+ * @install `launchpad install aac-enc`
+ * @aliases `aac-enc`
+ * @dependencies `gnu.org/gcc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * // Access via alias (recommended)
- * const pkg = pantry.sourceforgenetopencoreamr
+ * const pkg = pantry.aacenc
  * // Or access via domain
  * const samePkg = pantry.sourceforgenetopencoreamr
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "opencore-amr"
+ * console.log(pkg.description) // "Standalone library of the Fraunhofer FDK AAC co..."
+ * console.log(pkg.programs)    // ["aac-enc"]
+ * console.log(pkg.versions[0]) // "2.0.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sourceforge-net/opencore-amr.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sourceforgenetopencoreamrPackage = {
+export const aacencPackage = {
   /**
    * The display name of this package.
    */
@@ -30,31 +36,49 @@ export const sourceforgenetopencoreamrPackage = {
   /**
    * The canonical domain name for this package.
    */
-  domain: 'sourceforge.net/opencore/amr' as const,
+  domain: 'sourceforge.net/opencore-amr' as const,
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
+  description: 'Standalone library of the Fraunhofer FDK AAC code from Android' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/opencore-amr/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx sourceforge.net/opencore-amr' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install aac-enc' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'aac-enc',
+  ] as const,
   companions: [] as const,
-  dependencies: [] as const,
-  versions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gcc',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.0.3',
+    '2.0.2',
+  ] as const,
   /**
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
   aliases: [
-    'sourceforge.net/opencore-amr',
+    'aac-enc',
   ] as const,
-  fullPath: 'sourceforge.net/opencore-amr' as const,
 }
 
-export type SourceforgenetopencoreamrPackage = typeof sourceforgenetopencoreamrPackage
+export type AacencPackage = typeof aacencPackage

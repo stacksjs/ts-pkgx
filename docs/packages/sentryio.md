@@ -1,11 +1,11 @@
-# sentry-cli
+# sentry.io
 
 > Command-line utility to interact with Sentry
 
 ## Package Information
 
 - **Domain**: `sentry.io`
-- **Name**: `sentry-cli`
+- **Name**: `sentry.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sentry.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) sentry-cli
+launchpad install sentry-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `sentry-cli`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `sentry-cli`
 
@@ -52,7 +58,9 @@ sh <(curl https://pkgx.sh) +sentry.io@2.46.0 -- $SHELL -i
 
 This package depends on:
 
-- `libgit2.org~1.7`
+- `libgit2.org~1.7 # links to libgit2.so.1.7`
+- `rust-lang.org>=1.80`
+- `rust-lang.org/cargo<0.83`
 
 ## Usage Examples
 

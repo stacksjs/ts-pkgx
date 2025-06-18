@@ -6,9 +6,9 @@
  * @version `0.33.0` (42 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) gitu`
+ * @install `launchpad install gitu`
  * @name `gitu`
- * @dependencies `zlib.net~1.3`, `libgit2.org~1.7`
+ * @dependencies `zlib.net~1.3`, `libgit2.org~1.7`, `rust-lang.org>=1.56`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gituPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) gitu' as const,
+  installCommand: 'launchpad install gitu' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,8 @@ export const gituPackage = {
   dependencies: [
     'zlib.net~1.3',
     'libgit2.org~1.7',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -118,7 +120,6 @@ export const gituPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/gitu' as const,
 }
 
 export type GituPackage = typeof gituPackage

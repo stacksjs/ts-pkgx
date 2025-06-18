@@ -6,20 +6,20 @@
  * @version `0.10.2` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) btm`
- * @name `btm`
- * @aliases `bottom`
+ * @install `launchpad install btm`
+ * @aliases `btm`
+ * @dependencies `rust-lang.org>=1.56<1.78`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.btm
  * // Or access via domain
  * const samePkg = pantry.cratesiobottom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "btm"
+ * console.log(pkg.name)        // "bottom"
  * console.log(pkg.description) // "Yet another cross-platform graphical process/sy..."
  * console.log(pkg.programs)    // ["btm"]
  * console.log(pkg.versions[0]) // "0.10.2" (latest)
@@ -32,7 +32,7 @@ export const btmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'btm' as const,
+  name: 'bottom' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const btmPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) btm' as const,
+  installCommand: 'launchpad install btm' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const btmPackage = {
     'btm',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56<1.78',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -81,9 +88,8 @@ export const btmPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'bottom',
+    'btm',
   ] as const,
-  fullPath: 'crates.io/bottom' as const,
 }
 
 export type BtmPackage = typeof btmPackage

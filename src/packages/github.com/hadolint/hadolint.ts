@@ -6,9 +6,9 @@
  * @version `2.12.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) hadolint`
+ * @install `launchpad install hadolint`
  * @name `hadolint`
- * @aliases `hadolint/hadolint`
+ * @dependencies `haskell.org~9.2`, `haskell.org/cabal^3`, `git-scm.org^2 # cabal needs it for this one`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const hadolintPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) hadolint' as const,
+  installCommand: 'launchpad install hadolint' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,15 @@ export const hadolintPackage = {
     'hadolint',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'haskell.org~9.2',
+    'haskell.org/cabal^3',
+    'git-scm.org^2 # cabal needs it for this one',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +77,7 @@ export const hadolintPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hadolint/hadolint',
-  ] as const,
-  fullPath: 'github.com/hadolint/hadolint' as const,
+  aliases: [] as const,
 }
 
 export type HadolintPackage = typeof hadolintPackage

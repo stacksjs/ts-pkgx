@@ -1,11 +1,11 @@
-# pulumi
+# pulumi.io
 
 > Pulumi - Infrastructure as Code in any programming language 🚀
 
 ## Package Information
 
 - **Domain**: `pulumi.io`
-- **Name**: `pulumi`
+- **Name**: `pulumi.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pulumi.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i
+launchpad install +pulumi.io -- $SHELL -i
 ```
 
 ## Programs
@@ -33,6 +33,12 @@ This package provides the following executable programs:
 - `pulumi-resource-pulumi-nodejs`
 - `pulumi-resource-pulumi-python`
 - `pulumi-watch`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pulumi`
 
 ## Available Versions
 
@@ -84,6 +90,9 @@ sh <(curl https://pkgx.sh) +pulumi.io@3.177.0 -- $SHELL -i
 This package depends on:
 
 - `curl.se/ca-certs`
+- `go.dev^1.20`
+- `classic.yarnpkg.com`
+- `nodejs.org`
 
 ## Usage Examples
 

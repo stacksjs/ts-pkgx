@@ -6,9 +6,9 @@
  * @version `0.13.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) xsv`
+ * @install `launchpad install xsv`
  * @name `xsv`
- * @aliases `burntsushi/xsv`
+ * @dependencies `rust-lang.org>=1.60`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const xsvPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) xsv' as const,
+  installCommand: 'launchpad install xsv' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const xsvPackage = {
     'xsv',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +76,7 @@ export const xsvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'burntsushi/xsv',
-  ] as const,
-  fullPath: 'github.com/burntsushi/xsv' as const,
+  aliases: [] as const,
 }
 
 export type XsvPackage = typeof xsvPackage

@@ -1,11 +1,11 @@
-# sqlite3
+# sqlite.org
 
 > Official Git mirror of the SQLite source tree
 
 ## Package Information
 
 - **Domain**: `sqlite.org`
-- **Name**: `sqlite3`
+- **Name**: `sqlite.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sqlite.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) sqlite3
+launchpad install sqlite3
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `sqlite3`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `sqlite3`
 

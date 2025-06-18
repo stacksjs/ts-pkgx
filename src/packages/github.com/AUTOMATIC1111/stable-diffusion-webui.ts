@@ -6,21 +6,21 @@
  * @version `1.10.1` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) stable-diffusion-webui`
- * @name `Stable Diffusion web UI`
- * @aliases `stable-diffusion-webui`, `stable diffusion web ui`, `AUTOMATIC1111/stable-diffusion-webui`
- * @dependencies `python.org~3.10`, `tea.xyz^0`, `git-scm.org^2`, ... (+2 more)
+ * @install `launchpad install stable-diffusion-webui`
+ * @name `stable-diffusion-webui`
+ * @aliases `Stable Diffusion web UI`
+ * @dependencies `python.org~3.10`, `tea.xyz^0  # our scripts use tea/cli`, `git-scm.org^2`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.stablediffusionwebui
  * // Or access via domain
  * const samePkg = pantry.githubcomautomatic1111stablediffusionwebui
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "Stable Diffusion web UI"
+ * console.log(pkg.name)        // "stable-diffusion-webui"
  * console.log(pkg.description) // "Stable Diffusion web UI"
  * console.log(pkg.programs)    // ["stable-diffusion-webui"]
  * console.log(pkg.versions[0]) // "1.10.1" (latest)
@@ -33,7 +33,7 @@ export const stablediffusionwebuiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'Stable Diffusion web UI' as const,
+  name: 'stable-diffusion-webui' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +49,7 @@ export const stablediffusionwebuiPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) stable-diffusion-webui' as const,
+  installCommand: 'launchpad install stable-diffusion-webui' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,10 +64,13 @@ export const stablediffusionwebuiPackage = {
    */
   dependencies: [
     'python.org~3.10',
-    'tea.xyz^0',
+    'tea.xyz^0  # our scripts use tea/cli',
     'git-scm.org^2',
-    'darwin/x86-64google.com/webp',
     'google.com/webp',
+    'pip.pypa.io',
+    'gnu.org/wget',
+    'protobuf.dev>=21',
+    'rust-lang.org^1  # docs say this is needed but I’m not convinced…',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -100,11 +103,8 @@ export const stablediffusionwebuiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'stable-diffusion-webui',
-    'stable diffusion web ui',
-    'AUTOMATIC1111/stable-diffusion-webui',
+    'Stable Diffusion web UI',
   ] as const,
-  fullPath: 'github.com/AUTOMATIC1111/stable-diffusion-webui' as const,
 }
 
 export type StablediffusionwebuiPackage = typeof stablediffusionwebuiPackage

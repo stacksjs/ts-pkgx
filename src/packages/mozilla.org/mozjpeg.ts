@@ -6,20 +6,15 @@
  * @version `4.0.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +mozilla.org/mozjpeg -- $SHELL -i`
- * @aliases `mozjpeg`
- * @dependencies `libpng.org^1`
+ * @install `launchpad install +mozilla.org/mozjpeg -- $SHELL -i`
+ * @dependencies `libpng.org^1`, `cmake.org^3`, `nasm.us^2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mozjpeg
- * // Or access via domain
- * const samePkg = pantry.mozillaorgmozjpeg
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mozilla.org/mozjpeg"
+ * const pkg = pantry.mozillaorgmozjpeg
+ * console.log(pkg.name)        // "mozjpeg"
  * console.log(pkg.description) // "Improved JPEG encoder."
  * console.log(pkg.programs)    // ["cjpeg", "djpeg", ...]
  * console.log(pkg.versions[0]) // "4.0.3" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/mozilla-org/mozjpeg.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mozjpegPackage = {
+export const mozillaorgmozjpegPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mozilla.org/mozjpeg' as const,
+  name: 'mozjpeg' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const mozjpegPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +mozilla.org/mozjpeg -- $SHELL -i' as const,
+  installCommand: 'launchpad install +mozilla.org/mozjpeg -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,6 +63,9 @@ export const mozjpegPackage = {
    */
   dependencies: [
     'libpng.org^1',
+    'cmake.org^3',
+    'nasm.us^2',
+    'libpng.org^1',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,14 +74,7 @@ export const mozjpegPackage = {
   versions: [
     '4.0.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mozjpeg',
-  ] as const,
-  fullPath: 'mozilla.org/mozjpeg' as const,
+  aliases: [] as const,
 }
 
-export type MozjpegPackage = typeof mozjpegPackage
+export type MozillaorgmozjpegPackage = typeof mozillaorgmozjpegPackage

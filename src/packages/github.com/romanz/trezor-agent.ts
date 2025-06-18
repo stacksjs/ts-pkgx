@@ -1,5 +1,5 @@
 /**
- * **romanz/trezor-agent** - Hardware-based SSH/GPG/age agent
+ * **trezor-agent** - Hardware-based SSH/GPG/age agent
  *
  * @domain `github.com/romanz/trezor-agent`
  * @programs `jade-agent`, `jade-gpg`, `jade-gpg-agent`, `keepkey-agent`, `keepkeyctl`, ... (+12 more)
@@ -7,19 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/romanz/trezor-agent -- $SHELL -i`
- * @aliases `romanz/trezor-agent`
- * @dependencies `python.org~3.12`, `libusb.info^1`, `darwinlibpng.org~1.6`, ... (+1 more)
+ * @dependencies `python.org~3.12`, `libusb.info^1`, `libpng.org~1.6`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.romanztrezoragent
- * // Or access via domain
- * const samePkg = pantry.githubcomromanztrezoragent
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/romanz/trezor-agent"
+ * const pkg = pantry.githubcomromanztrezoragent
+ * console.log(pkg.name)        // "trezor-agent"
  * console.log(pkg.description) // "Hardware-based SSH/GPG/age agent"
  * console.log(pkg.programs)    // ["jade-agent", "jade-gpg", ...]
  * console.log(pkg.versions[0]) // "0.15.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/romanz/trezor-agent.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const romanztrezoragentPackage = {
+export const githubcomromanztrezoragentPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/romanz/trezor-agent' as const,
+  name: 'trezor-agent' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,8 +75,8 @@ export const romanztrezoragentPackage = {
   dependencies: [
     'python.org~3.12',
     'libusb.info^1',
-    'darwinlibpng.org~1.6',
     'libpng.org~1.6',
+    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -91,14 +86,7 @@ export const romanztrezoragentPackage = {
     '0.15.0',
     '0.14.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'romanz/trezor-agent',
-  ] as const,
-  fullPath: 'github.com/romanz/trezor-agent' as const,
+  aliases: [] as const,
 }
 
-export type RomanztrezoragentPackage = typeof romanztrezoragentPackage
+export type GithubcomromanztrezoragentPackage = typeof githubcomromanztrezoragentPackage

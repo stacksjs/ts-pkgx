@@ -1,10 +1,12 @@
 /**
- * **libwebsockets.org** - Package from pantry: libwebsockets.org
+ * **libwebsockets.org** - canonical libwebsockets.org networking library
  *
  * @domain `libwebsockets.org`
+ * @version `4.3.5` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install libwebsockets.org`
- * @dependencies `libuv.org^1`, `libevent.org^2`, `cmake.org^3`
+ * @install `launchpad install +libwebsockets.org -- $SHELL -i`
+ * @dependencies `libuv.org@1`, `libevent.org@2`, `cmake.org@3`
  *
  * @example
  * ```typescript
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.libwebsocketsorg
  * console.log(pkg.name)        // "libwebsockets.org"
- * console.log(pkg.description) // "Package from pantry: libwebsockets.org"
+ * console.log(pkg.description) // "canonical libwebsockets.org networking library"
+ * console.log(pkg.versions[0]) // "4.3.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libwebsockets-org.md
@@ -30,12 +33,15 @@ export const libwebsocketsorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: libwebsockets.org' as const,
+  description: 'canonical libwebsockets.org networking library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libwebsockets.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install libwebsockets.org' as const,
+  installCommand: 'launchpad install +libwebsockets.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -43,14 +49,21 @@ export const libwebsocketsorgPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'libuv.org^1',
-    'libevent.org^2',
-    'cmake.org^3',
+    'libuv.org@1',
+    'libevent.org@2',
+    'cmake.org@3',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libwebsockets.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '4.3.5',
+    '4.3.4',
+    '4.3.3',
+    '4.3.2',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type LibwebsocketsorgPackage = typeof libwebsocketsorgPackage

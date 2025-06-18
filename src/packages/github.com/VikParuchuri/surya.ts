@@ -6,10 +6,9 @@
  * @version `0.14.6` (64 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) surya_detect`
- * @name `Surya`
- * @aliases `surya_detect`, `surya`, `VikParuchuri/surya`
- * @dependencies `pkgx.sh^1`, `linuxmesa3d.org^23.3gnome.org/glib^2mupdf.com`, `mesa3d.org^23.3`, ... (+2 more)
+ * @install `launchpad install surya_detect`
+ * @aliases `surya_detect`, `Surya`
+ * @dependencies `pkgx.sh^1`, `mesa3d.org^23.3`, `gnome.org/glib^2`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -20,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.githubcomvikparuchurisurya
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "Surya"
+ * console.log(pkg.name)        // "surya"
  * console.log(pkg.description) // "OCR, layout analysis, reading order, table reco..."
  * console.log(pkg.programs)    // ["surya_detect"]
  * console.log(pkg.versions[0]) // "0.14.6" (latest)
@@ -33,7 +32,7 @@ export const suryadetectPackage = {
   /**
    * The display name of this package.
    */
-  name: 'Surya' as const,
+  name: 'surya' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,12 +43,12 @@ export const suryadetectPackage = {
   description: 'OCR, layout analysis, reading order, table recognition in 90+ languages' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/VikParuchuri/surya/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/VikParuchuri/surya' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) surya_detect' as const,
+  installCommand: 'launchpad install surya_detect' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,10 +63,12 @@ export const suryadetectPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'linuxmesa3d.org^23.3gnome.org/glib^2mupdf.com',
     'mesa3d.org^23.3',
     'gnome.org/glib^2',
     'mupdf.com',
+    'python.org~3.11',
+    'python-poetry.org^1.7',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -145,10 +146,8 @@ export const suryadetectPackage = {
    */
   aliases: [
     'surya_detect',
-    'surya',
-    'VikParuchuri/surya',
+    'Surya',
   ] as const,
-  fullPath: 'github.com/VikParuchuri/surya' as const,
 }
 
 export type SuryadetectPackage = typeof suryadetectPackage

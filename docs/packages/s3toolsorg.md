@@ -1,11 +1,11 @@
-# s3cmd
+# s3tools.org
 
 > Official s3cmd repo -- Command line tool for managing S3 compatible storage services (including Amazon S3 and CloudFront).
 
 ## Package Information
 
 - **Domain**: `s3tools.org`
-- **Name**: `s3cmd`
+- **Name**: `s3tools.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) s3cmd
+launchpad install s3cmd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `s3cmd`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `s3cmd`
 

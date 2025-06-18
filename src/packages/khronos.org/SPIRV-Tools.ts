@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +khronos.org/SPIRV-Tools -- $SHELL -i`
- * @name `spirv`
- * @aliases `SPIRV-Tools`
+ * @aliases `spirv`
+ * @dependencies `cmake.org`, `python.org~3.11`, `git-scm.org@2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.spirv
  * // Or access via domain
  * const samePkg = pantry.khronosorgspirvtools
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "spirv"
+ * console.log(pkg.name)        // "SPIRV-Tools"
  * console.log(pkg.description) // "API and commands for processing SPIR-V modules"
  * console.log(pkg.programs)    // ["spirv-as", "spirv-cfg", ...]
  * console.log(pkg.versions[0]) // "2025.1.0" (latest)
@@ -32,7 +32,7 @@ export const spirvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'spirv' as const,
+  name: 'SPIRV-Tools' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -66,7 +66,15 @@ export const spirvPackage = {
     'spirv-val',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'python.org~3.11',
+    'git-scm.org@2',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -82,9 +90,8 @@ export const spirvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'SPIRV-Tools',
+    'spirv',
   ] as const,
-  fullPath: 'khronos.org/SPIRV-Tools' as const,
 }
 
 export type SpirvPackage = typeof spirvPackage

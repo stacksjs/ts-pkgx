@@ -6,9 +6,8 @@
  * @version `1.4.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) swiftenv`
+ * @install `launchpad install swiftenv`
  * @name `swiftenv`
- * @aliases `kylef/swiftenv`
  *
  * @example
  * ```typescript
@@ -48,7 +47,7 @@ export const swiftenvPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) swiftenv' as const,
+  installCommand: 'launchpad install swiftenv' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,10 +68,7 @@ export const swiftenvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kylef/swiftenv',
-  ] as const,
-  fullPath: 'github.com/kylef/swiftenv' as const,
+  aliases: [] as const,
 }
 
 export type SwiftenvPackage = typeof swiftenvPackage

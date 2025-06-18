@@ -6,9 +6,9 @@
  * @version `0.25.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) bat`
+ * @install `launchpad install bat`
  * @name `bat`
- * @dependencies `zlib.net^1`, `libgit2.org~1.7`
+ * @dependencies `zlib.net^1`, `libgit2.org~1.7 # links to libgit2.so.1.7`, `rust-lang.org>=1.60`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const batPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) bat' as const,
+  installCommand: 'launchpad install bat' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,7 +63,9 @@ export const batPackage = {
    */
   dependencies: [
     'zlib.net^1',
-    'libgit2.org~1.7',
+    'libgit2.org~1.7 # links to libgit2.so.1.7',
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -80,7 +82,6 @@ export const batPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/bat' as const,
 }
 
 export type BatPackage = typeof batPackage

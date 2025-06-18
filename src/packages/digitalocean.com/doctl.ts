@@ -3,11 +3,12 @@
  *
  * @domain `digitalocean.com/doctl`
  * @programs `doctl`
- * @version `1.130.0` (33 versions available)
+ * @version `1.131.0` (34 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) doctl`
+ * @install `launchpad install doctl`
  * @name `doctl`
+ * @dependencies `go.dev^1.21`
  *
  * @example
  * ```typescript
@@ -21,7 +22,7 @@
  * console.log(pkg.name)        // "doctl"
  * console.log(pkg.description) // "The official command line interface for the Dig..."
  * console.log(pkg.programs)    // ["doctl"]
- * console.log(pkg.versions[0]) // "1.130.0" (latest)
+ * console.log(pkg.versions[0]) // "1.131.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/digitalocean-com/doctl.md
@@ -47,7 +48,7 @@ export const doctlPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) doctl' as const,
+  installCommand: 'launchpad install doctl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,12 +57,19 @@ export const doctlPackage = {
     'doctl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.131.0',
     '1.130.0',
     '1.129.0',
     '1.128.0',
@@ -101,7 +109,6 @@ export const doctlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'digitalocean.com/doctl' as const,
 }
 
 export type DoctlPackage = typeof doctlPackage

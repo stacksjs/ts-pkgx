@@ -1,11 +1,11 @@
-# yadm
+# yadm.io
 
 > Yet Another Dotfiles Manager
 
 ## Package Information
 
 - **Domain**: `yadm.io`
-- **Name**: `yadm`
+- **Name**: `yadm.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/yadm.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) yadm
+launchpad install yadm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `yadm`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `yadm`
 

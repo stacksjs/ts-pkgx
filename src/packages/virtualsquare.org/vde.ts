@@ -5,30 +5,26 @@
  * @version `2.3.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +virtualsquare.org/vde -- $SHELL -i`
- * @aliases `vde`
+ * @install `launchpad install +virtualsquare.org/vde -- $SHELL -i`
+ * @dependencies `gnu.org/autoconf^2`, `gnu.org/automake^1`, `gnu.org/libtool^2.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.vde
- * // Or access via domain
- * const samePkg = pantry.virtualsquareorgvde
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "virtualsquare.org/vde"
+ * const pkg = pantry.virtualsquareorgvde
+ * console.log(pkg.name)        // "vde"
  * console.log(pkg.versions[0]) // "2.3.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/virtualsquare-org/vde.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vdePackage = {
+export const virtualsquareorgvdePackage = {
   /**
    * The display name of this package.
    */
-  name: 'virtualsquare.org/vde' as const,
+  name: 'vde' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,10 +40,18 @@ export const vdePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +virtualsquare.org/vde -- $SHELL -i' as const,
+  installCommand: 'launchpad install +virtualsquare.org/vde -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf^2',
+    'gnu.org/automake^1',
+    'gnu.org/libtool^2.4',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -55,14 +59,7 @@ export const vdePackage = {
   versions: [
     '2.3.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'vde',
-  ] as const,
-  fullPath: 'virtualsquare.org/vde' as const,
+  aliases: [] as const,
 }
 
-export type VdePackage = typeof vdePackage
+export type VirtualsquareorgvdePackage = typeof virtualsquareorgvdePackage

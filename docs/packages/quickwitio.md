@@ -1,11 +1,11 @@
-# quickwit
+# quickwit.io
 
 > Cloud-native search engine for observability. An open-source alternative to Datadog, Elasticsearch, Loki, and Tempo.
 
 ## Package Information
 
 - **Domain**: `quickwit.io`
-- **Name**: `quickwit`
+- **Name**: `quickwit.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/quickwit.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) quickwit
+launchpad install quickwit
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `quickwit`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `quickwit`
 
@@ -46,6 +52,8 @@ sh <(curl https://pkgx.sh) +quickwit.io@0.8.2 -- $SHELL -i
 This package depends on:
 
 - `protobuf.dev^25`
+- `rust-lang.org^1.79`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

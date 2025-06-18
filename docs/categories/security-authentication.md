@@ -12,7 +12,7 @@ Secure and free password manager for all of your devices
 
 **Programs**: bw
 
-**Install**: `sh <(curl https://pkgx.sh) bw`
+**Install**: `launchpad install bw`
 
 ---
 

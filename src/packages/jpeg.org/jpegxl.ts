@@ -6,20 +6,15 @@
  * @version `0.11.1` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +jpeg.org/jpegxl -- $SHELL -i`
- * @aliases `jpegxl`
- * @dependencies `github.com/google/brotli^1`, `littlecms.com^2.13`, `google.com/highway^1`, ... (+4 more)
+ * @install `launchpad install +jpeg.org/jpegxl -- $SHELL -i`
+ * @dependencies `github.com/google/brotli^1`, `littlecms.com^2.13`, `google.com/highway^1`, ... (+8 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jpegxl
- * // Or access via domain
- * const samePkg = pantry.jpegorgjpegxl
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jpeg.org/jpegxl"
+ * const pkg = pantry.jpegorgjpegxl
+ * console.log(pkg.name)        // "jpegxl"
  * console.log(pkg.description) // "JPEG XL image format reference implementation"
  * console.log(pkg.programs)    // ["cjxl", "djxl", ...]
  * console.log(pkg.versions[0]) // "0.11.1" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/jpeg-org/jpegxl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jpegxlPackage = {
+export const jpegorgjpegxlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jpeg.org/jpegxl' as const,
+  name: 'jpegxl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,12 +38,12 @@ export const jpegxlPackage = {
   description: 'JPEG XL image format reference implementation' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jpeg.org/jpegxl/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/libjxl/libjxl' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +jpeg.org/jpegxl -- $SHELL -i' as const,
+  installCommand: 'launchpad install +jpeg.org/jpegxl -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +66,10 @@ export const jpegxlPackage = {
     'giflib.sourceforge.io^5',
     'openexr.com^3',
     'libpng.org^1',
+    'freedesktop.org/pkg-config^0.29',
+    'cmake.org^3',
+    'gnu.org/coreutils',
+    'git-scm.org^2',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -96,14 +95,7 @@ export const jpegxlPackage = {
     '0.7.2',
     '0.7.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'jpegxl',
-  ] as const,
-  fullPath: 'jpeg.org/jpegxl' as const,
+  aliases: [] as const,
 }
 
-export type JpegxlPackage = typeof jpegxlPackage
+export type JpegorgjpegxlPackage = typeof jpegorgjpegxlPackage

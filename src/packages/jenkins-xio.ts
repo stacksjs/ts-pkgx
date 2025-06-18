@@ -1,24 +1,34 @@
 /**
- * **jenkins-x.io** - Package from pantry: jenkins-x.io
+ * **jx** - Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton
  *
  * @domain `jenkins-x.io`
+ * @programs `jx`
+ * @version `3.11.92` (58 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install jenkins-x.io`
+ * @install `launchpad install jx`
+ * @aliases `jx`, `Jenkins X`
  * @dependencies `go.dev~1.23`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.jenkinsxio
+ * // Access via alias (recommended)
+ * const pkg = pantry.jx
+ * // Or access via domain
+ * const samePkg = pantry.jenkinsxio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "jenkins-x.io"
- * console.log(pkg.description) // "Package from pantry: jenkins-x.io"
+ * console.log(pkg.description) // "Jenkins X provides automated CI+CD for Kubernet..."
+ * console.log(pkg.programs)    // ["jx"]
+ * console.log(pkg.versions[0]) // "3.11.92" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jenkins-x-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jenkinsxioPackage = {
+export const jxPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const jenkinsxioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: jenkins-x.io' as const,
+  description: 'Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jenkins-x.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install jenkins-x.io' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install jx' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'jx',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +64,78 @@ export const jenkinsxioPackage = {
   dependencies: [
     'go.dev~1.23',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jenkins-x.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.11.92',
+    '3.11.90',
+    '3.11.87',
+    '3.11.81',
+    '3.11.78',
+    '3.11.77',
+    '3.11.76',
+    '3.11.75',
+    '3.11.74',
+    '3.11.71',
+    '3.11.70',
+    '3.11.69',
+    '3.11.66',
+    '3.11.65',
+    '3.11.63',
+    '3.11.56',
+    '3.11.52',
+    '3.11.49',
+    '3.11.48',
+    '3.11.45',
+    '3.11.44',
+    '3.11.41',
+    '3.11.39',
+    '3.11.38',
+    '3.11.27',
+    '3.11.26',
+    '3.11.25',
+    '3.11.24',
+    '3.11.21',
+    '3.11.17',
+    '3.11.14',
+    '3.11.11',
+    '3.11.10',
+    '3.11.8',
+    '3.11.7',
+    '3.11.5',
+    '3.11.4',
+    '3.11.2',
+    '3.11.1',
+    '3.11.0',
+    '3.10.182',
+    '3.10.181',
+    '3.10.180',
+    '3.10.178',
+    '3.10.177',
+    '3.10.176',
+    '3.10.172',
+    '3.10.170',
+    '3.10.169',
+    '3.10.167',
+    '3.10.166',
+    '3.10.161',
+    '3.10.160',
+    '3.10.158',
+    '3.10.157',
+    '3.10.156',
+    '3.10.155',
+    '3.10.154',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'jx',
+    'Jenkins X',
+  ] as const,
 }
 
-export type JenkinsxioPackage = typeof jenkinsxioPackage
+export type JxPackage = typeof jxPackage

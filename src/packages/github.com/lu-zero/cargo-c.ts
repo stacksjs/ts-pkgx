@@ -6,10 +6,9 @@
  * @version `0.10.13` (25 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/lu-zero/cargo-c -- $SHELL -i`
+ * @install `launchpad install +github.com/lu-zero/cargo-c -- $SHELL -i`
  * @name `cargo-c`
- * @aliases `lu-zero/cargo-c`
- * @dependencies `libgit2.org~1.7`, `libssh2.org`, `openssl.org^1.1`, ... (+1 more)
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `libssh2.org`, `openssl.org^1.1`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const cargocPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/lu-zero/cargo-c -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/lu-zero/cargo-c -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,10 +65,13 @@ export const cargocPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'libgit2.org~1.7',
+    'libgit2.org~1.7 # links to libgit2.so.1.7',
     'libssh2.org',
     'openssl.org^1.1',
     'zlib.net',
+    'rust-lang.org^1.70',
+    'rust-lang.org/cargo',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -106,10 +108,7 @@ export const cargocPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'lu-zero/cargo-c',
-  ] as const,
-  fullPath: 'github.com/lu-zero/cargo-c' as const,
+  aliases: [] as const,
 }
 
 export type CargocPackage = typeof cargocPackage

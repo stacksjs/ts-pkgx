@@ -1,23 +1,19 @@
 /**
- * **sekrit-twc/zimg** - Scaling, colorspace conversion, and dithering library
+ * **zimg** - Scaling, colorspace conversion, and dithering library
  *
  * @domain `github.com/sekrit-twc/zimg`
  * @version `3.0.5` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/sekrit-twc/zimg -- $SHELL -i`
- * @aliases `sekrit-twc/zimg`
+ * @dependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.sekrittwczimg
- * // Or access via domain
- * const samePkg = pantry.githubcomsekrittwczimg
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/sekrit-twc/zimg"
+ * const pkg = pantry.githubcomsekrittwczimg
+ * console.log(pkg.name)        // "zimg"
  * console.log(pkg.description) // "Scaling, colorspace conversion, and dithering l..."
  * console.log(pkg.versions[0]) // "3.0.5" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/sekrit-twc/zimg.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sekrittwczimgPackage = {
+export const githubcomsekrittwczimgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/sekrit-twc/zimg' as const,
+  name: 'zimg' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +44,15 @@ export const sekrittwczimgPackage = {
   installCommand: 'launchpad install +github.com/sekrit-twc/zimg -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -57,14 +61,7 @@ export const sekrittwczimgPackage = {
     '3.0.5',
     '3.0.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'sekrit-twc/zimg',
-  ] as const,
-  fullPath: 'github.com/sekrit-twc/zimg' as const,
+  aliases: [] as const,
 }
 
-export type SekrittwczimgPackage = typeof sekrittwczimgPackage
+export type GithubcomsekrittwczimgPackage = typeof githubcomsekrittwczimgPackage

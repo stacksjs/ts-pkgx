@@ -6,30 +6,25 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/gtk-mac-integration-gtk3 -- $SHELL -i`
- * @aliases `gtk-mac-integration-gtk3`
- * @dependencies `gnu.org/gettext`, `gtk.org/gtk3`
+ * @dependencies `gnu.org/gettext`, `gtk.org/gtk3`, `gnome.org/gobject-introspection`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gtkmacintegrationgtk3
- * // Or access via domain
- * const samePkg = pantry.gnomeorggtkmacintegrationgtk3
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnome.org/gtk-mac-integration-gtk3"
+ * const pkg = pantry.gnomeorggtkmacintegrationgtk3
+ * console.log(pkg.name)        // "gtk-mac-integration-gtk3"
  * console.log(pkg.versions[0]) // "3.0.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/gtk-mac-integration-gtk3.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gtkmacintegrationgtk3Package = {
+export const gnomeorggtkmacintegrationgtk3Package = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/gtk-mac-integration-gtk3' as const,
+  name: 'gtk-mac-integration-gtk3' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -55,6 +50,10 @@ export const gtkmacintegrationgtk3Package = {
   dependencies: [
     'gnu.org/gettext',
     'gtk.org/gtk3',
+    'gnome.org/gobject-introspection',
+    'freedesktop.org/intltool',
+    'mesonbuild.com',
+    'ninja-build.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +63,7 @@ export const gtkmacintegrationgtk3Package = {
     '3.0.2',
     '3.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gtk-mac-integration-gtk3',
-  ] as const,
-  fullPath: 'gnome.org/gtk-mac-integration-gtk3' as const,
+  aliases: [] as const,
 }
 
-export type Gtkmacintegrationgtk3Package = typeof gtkmacintegrationgtk3Package
+export type Gnomeorggtkmacintegrationgtk3Package = typeof gnomeorggtkmacintegrationgtk3Package

@@ -1,11 +1,11 @@
-# flyway
+# flywaydb.org
 
 > Database version control to control migrations
 
 ## Package Information
 
 - **Domain**: `flywaydb.org`
-- **Name**: `flyway`
+- **Name**: `flywaydb.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/flywaydb.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) flyway
+launchpad install flyway
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `flyway`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `flyway`
 
@@ -53,6 +59,7 @@ sh <(curl https://pkgx.sh) +flywaydb.org@11.8.2 -- $SHELL -i
 This package depends on:
 
 - `openjdk.org^21`
+- `curl.se`
 
 ## Usage Examples
 

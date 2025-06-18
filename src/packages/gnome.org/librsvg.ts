@@ -6,21 +6,20 @@
  * @version `2.60.0` (30 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rsvg-convert`
- * @name `rsvg-convert`
- * @aliases `librsvg`
- * @dependencies `cairographics.org^1.18`, `gnome.org/pango@1`, `gnome.org/gdk-pixbuf@2`, ... (+2 more)
+ * @install `launchpad install rsvg-convert`
+ * @aliases `rsvg-convert`
+ * @dependencies `cairographics.org^1.18`, `gnome.org/pango@1`, `gnome.org/gdk-pixbuf@2`, ... (+11 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.rsvgconvert
  * // Or access via domain
  * const samePkg = pantry.gnomeorglibrsvg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rsvg-convert"
+ * console.log(pkg.name)        // "librsvg"
  * console.log(pkg.description) // "Read-only mirror of https://gitlab.gnome.org/GN..."
  * console.log(pkg.programs)    // ["rsvg-convert"]
  * console.log(pkg.versions[0]) // "2.60.0" (latest)
@@ -33,7 +32,7 @@ export const rsvgconvertPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rsvg-convert' as const,
+  name: 'librsvg' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const rsvgconvertPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rsvg-convert' as const,
+  installCommand: 'launchpad install rsvg-convert' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,6 +67,15 @@ export const rsvgconvertPackage = {
     'gnome.org/gdk-pixbuf@2',
     'gnome.org/glib@2',
     'gnu.org/gettext^0.21',
+    'rust-lang.org/cargo@0',
+    'rust-lang.org^1.63',
+    'freedesktop.org/pkg-config^0.29',
+    'gnome.org/gobject-introspection@1',
+    'python.org>=3<3.12',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'github.com/lu-zero/cargo-c',
+    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -110,9 +118,8 @@ export const rsvgconvertPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'librsvg',
+    'rsvg-convert',
   ] as const,
-  fullPath: 'gnome.org/librsvg' as const,
 }
 
 export type RsvgconvertPackage = typeof rsvgconvertPackage

@@ -6,20 +6,20 @@
  * @version `4.5.0` (22 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) localstack`
- * @name `localstack`
- * @dependencies `pkgx.sh^1`
+ * @install `launchpad install localstack`
+ * @aliases `localstack`
+ * @dependencies `pkgx.sh^1`, `python.org^3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.localstack
  * // Or access via domain
  * const samePkg = pantry.localstackcloudcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "localstack"
+ * console.log(pkg.name)        // "cli"
  * console.log(pkg.description) // "The LocalStack CLI packaged using pyinstaller"
  * console.log(pkg.programs)    // ["localstack"]
  * console.log(pkg.versions[0]) // "4.5.0" (latest)
@@ -32,7 +32,7 @@ export const localstackPackage = {
   /**
    * The display name of this package.
    */
-  name: 'localstack' as const,
+  name: 'cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const localstackPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) localstack' as const,
+  installCommand: 'launchpad install localstack' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,7 @@ export const localstackPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org^3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -96,8 +97,9 @@ export const localstackPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
-  fullPath: 'localstack.cloud/cli' as const,
+  aliases: [
+    'localstack',
+  ] as const,
 }
 
 export type LocalstackPackage = typeof localstackPackage

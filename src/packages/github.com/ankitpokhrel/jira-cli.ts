@@ -6,20 +6,20 @@
  * @version `1.6.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) jira`
- * @name `jira`
- * @aliases `ankitpokhrel/jira-cli`
+ * @install `launchpad install jira`
+ * @aliases `jira`
+ * @dependencies `go.dev^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.jira
  * // Or access via domain
  * const samePkg = pantry.githubcomankitpokhreljiracli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jira"
+ * console.log(pkg.name)        // "jira-cli"
  * console.log(pkg.description) // "simple jira command line client in Go"
  * console.log(pkg.programs)    // ["jira"]
  * console.log(pkg.versions[0]) // "1.6.0" (latest)
@@ -32,7 +32,7 @@ export const jiraPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jira' as const,
+  name: 'jira-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const jiraPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) jira' as const,
+  installCommand: 'launchpad install jira' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const jiraPackage = {
     'jira',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,9 +78,8 @@ export const jiraPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'ankitpokhrel/jira-cli',
+    'jira',
   ] as const,
-  fullPath: 'github.com/ankitpokhrel/jira-cli' as const,
 }
 
 export type JiraPackage = typeof jiraPackage

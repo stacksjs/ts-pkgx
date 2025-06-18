@@ -5,20 +5,16 @@
  * @version `0.15.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +crates.io/rustls-ffi -- $SHELL -i`
- * @aliases `rustls-ffi`
+ * @install `launchpad install +crates.io/rustls-ffi -- $SHELL -i`
+ * @dependencies `rust-lang.org^1.65`, `rust-lang.org/cargo`, `mozilla.org/cbindgen`, ... (+2 more)
  * @companions `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.rustlsffi
- * // Or access via domain
- * const samePkg = pantry.cratesiorustlsffi
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "crates.io/rustls-ffi"
+ * const pkg = pantry.cratesiorustlsffi
+ * console.log(pkg.name)        // "rustls-ffi"
  * console.log(pkg.description) // "Use Rustls from any language"
  * console.log(pkg.versions[0]) // "0.15.0" (latest)
  * ```
@@ -26,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/rustls-ffi.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rustlsffiPackage = {
+export const cratesiorustlsffiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'crates.io/rustls-ffi' as const,
+  name: 'rustls-ffi' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +42,7 @@ export const rustlsffiPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +crates.io/rustls-ffi -- $SHELL -i' as const,
+  installCommand: 'launchpad install +crates.io/rustls-ffi -- $SHELL -i' as const,
   programs: [] as const,
   /**
    * Related packages that work well with this package.
@@ -55,7 +51,17 @@ export const rustlsffiPackage = {
   companions: [
     'curl.se/ca-certs',
   ] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org^1.65',
+    'rust-lang.org/cargo',
+    'mozilla.org/cbindgen',
+    'github.com/lu-zero/cargo-c',
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,14 +78,7 @@ export const rustlsffiPackage = {
     '0.10.0',
     '0.9.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'rustls-ffi',
-  ] as const,
-  fullPath: 'crates.io/rustls-ffi' as const,
+  aliases: [] as const,
 }
 
-export type RustlsffiPackage = typeof rustlsffiPackage
+export type CratesiorustlsffiPackage = typeof cratesiorustlsffiPackage

@@ -70,7 +70,7 @@ export const erlangorgPackage = {
     'gnu.org/gcc/libstdcxx',
     'perl.org>=5',
     'gnu.org/gcc',
-    'pkgx.sh^1',
+    'pkgx.sh@1',
   ] as const,
   /**
    * Available versions from newest to oldest.

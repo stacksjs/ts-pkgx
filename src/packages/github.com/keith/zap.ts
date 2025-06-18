@@ -6,9 +6,8 @@
  * @version `1.2.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) zap`
+ * @install `launchpad install zap`
  * @name `zap`
- * @aliases `keith/zap`
  *
  * @example
  * ```typescript
@@ -48,7 +47,7 @@ export const zapPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) zap' as const,
+  installCommand: 'launchpad install zap' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,10 +69,7 @@ export const zapPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'keith/zap',
-  ] as const,
-  fullPath: 'github.com/keith/zap' as const,
+  aliases: [] as const,
 }
 
 export type ZapPackage = typeof zapPackage

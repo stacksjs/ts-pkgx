@@ -6,9 +6,9 @@
  * @version `1.6.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) hexedit`
+ * @install `launchpad install hexedit`
  * @name `hexedit`
- * @dependencies `invisible-island.net/ncurses@6`
+ * @dependencies `invisible-island.net/ncurses@6`, `gnu.org/autoconf`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const hexeditPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) hexedit' as const,
+  installCommand: 'launchpad install hexedit' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,7 @@ export const hexeditPackage = {
    */
   dependencies: [
     'invisible-island.net/ncurses@6',
+    'gnu.org/autoconf',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,7 +77,6 @@ export const hexeditPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'rigaux.org/hexedit' as const,
 }
 
 export type HexeditPackage = typeof hexeditPackage

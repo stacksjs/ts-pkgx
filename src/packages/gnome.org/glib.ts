@@ -1,13 +1,13 @@
 /**
- * **gnome.org/glib** - Core application library for C
+ * **glib** - Core application library for C
  *
  * @domain `gnome.org/glib`
  * @programs `gdbus`, `gdbus-codegen`, `gio`, `gio-querymodules`, `glib-compile-resources`, ... (+9 more)
  * @version `2.85.1` (45 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/glib -- $SHELL -i`
- * @dependencies `gnu.org/gettext^0.21`, `sourceware.org/libffi@3`, `pcre.org@8`, ... (+2 more)
+ * @install `launchpad install +gnome.org/glib -- $SHELL -i`
+ * @dependencies `gnu.org/gettext^0.21`, `sourceware.org/libffi@3`, `pcre.org@8`, ... (+9 more)
  * @companions `gnome.org/gsettings-desktop-schemas`
  *
  * @example
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorgglib
- * console.log(pkg.name)        // "gnome.org/glib"
+ * console.log(pkg.name)        // "glib"
  * console.log(pkg.description) // "Core application library for C"
  * console.log(pkg.programs)    // ["gdbus", "gdbus-codegen", ...]
  * console.log(pkg.versions[0]) // "2.85.1" (latest)
@@ -28,7 +28,7 @@ export const gnomeorgglibPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/glib' as const,
+  name: 'glib' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,7 +44,7 @@ export const gnomeorgglibPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/glib -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/glib -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,7 +81,14 @@ export const gnomeorgglibPackage = {
     'sourceware.org/libffi@3',
     'pcre.org@8',
     'pcre.org/v2@10',
-    'python.org@3',
+    'python.org^3 # several of the bins are scripts',
+    'mesonbuild.com^1.2',
+    'ninja-build.org@1',
+    'freedesktop.org/pkg-config^0.29',
+    'python.org>=3.5<3.12',
+    'gnome.org/gobject-introspection',
+    'gnome.org/libxml2~2.13 # since 2.84.1, 2.14 changed the API version',
+    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -135,7 +142,6 @@ export const gnomeorgglibPackage = {
     '2.72.4',
   ] as const,
   aliases: [] as const,
-  fullPath: 'gnome.org-glib' as const,
 }
 
 export type GnomeorgglibPackage = typeof gnomeorgglibPackage

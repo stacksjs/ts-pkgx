@@ -6,10 +6,9 @@
  * @version `1.1.5` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) lsd`
+ * @install `launchpad install lsd`
  * @name `lsd`
- * @aliases `peltoche/lsd`
- * @dependencies `libgit2.org~1.7`
+ * @dependencies `libgit2.org~1.7`, `rust-lang.org>=1.60`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const lsdPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) lsd' as const,
+  installCommand: 'launchpad install lsd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const lsdPackage = {
    */
   dependencies: [
     'libgit2.org~1.7',
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -82,10 +83,7 @@ export const lsdPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'peltoche/lsd',
-  ] as const,
-  fullPath: 'github.com/peltoche/lsd' as const,
+  aliases: [] as const,
 }
 
 export type LsdPackage = typeof lsdPackage

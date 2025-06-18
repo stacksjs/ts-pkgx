@@ -6,9 +6,9 @@
  * @version `2.2.7` (19 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sourcery`
+ * @install `launchpad install sourcery`
  * @name `Sourcery`
- * @aliases `sourcery`, `krzysztofzablocki/Sourcery`
+ * @aliases `sourcery`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const sourceryPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sourcery' as const,
+  installCommand: 'launchpad install sourcery' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -89,9 +89,7 @@ export const sourceryPackage = {
    */
   aliases: [
     'sourcery',
-    'krzysztofzablocki/Sourcery',
   ] as const,
-  fullPath: 'github.com/krzysztofzablocki/Sourcery' as const,
 }
 
 export type SourceryPackage = typeof sourceryPackage

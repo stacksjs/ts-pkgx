@@ -6,20 +6,15 @@
  * @version `2.6.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/inetutils -- $SHELL -i`
- * @aliases `inetutils`
- * @dependencies `gnu.org/libidn2`, `invisible-island.net/ncurses`
+ * @install `launchpad install +gnu.org/inetutils -- $SHELL -i`
+ * @dependencies `gnu.org/libidn2`, `invisible-island.net/ncurses`, `gnu.org/help2man@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.inetutils
- * // Or access via domain
- * const samePkg = pantry.gnuorginetutils
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/inetutils"
+ * const pkg = pantry.gnuorginetutils
+ * console.log(pkg.name)        // "inetutils"
  * console.log(pkg.programs)    // ["dnsdomainname", "ftp", ...]
  * console.log(pkg.versions[0]) // "2.6.0" (latest)
  * ```
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/inetutils.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const inetutilsPackage = {
+export const gnuorginetutilsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/inetutils' as const,
+  name: 'inetutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const inetutilsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/inetutils -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/inetutils -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,6 +83,7 @@ export const inetutilsPackage = {
   dependencies: [
     'gnu.org/libidn2',
     'invisible-island.net/ncurses',
+    'gnu.org/help2man@1',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -98,14 +94,7 @@ export const inetutilsPackage = {
     '2.5.0',
     '2.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'inetutils',
-  ] as const,
-  fullPath: 'gnu.org/inetutils' as const,
+  aliases: [] as const,
 }
 
-export type InetutilsPackage = typeof inetutilsPackage
+export type GnuorginetutilsPackage = typeof gnuorginetutilsPackage

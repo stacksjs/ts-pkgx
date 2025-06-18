@@ -1,11 +1,11 @@
-# sfcgal-config
+# sfcgal.org
 
 > C++ wrapper library around CGAL
 
 ## Package Information
 
 - **Domain**: `sfcgal.org`
-- **Name**: `sfcgal-config`
+- **Name**: `sfcgal.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sfcgal.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) sfcgal-config
+launchpad install sfcgal-config
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `sfcgal-config`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `sfcgal-config`
 
@@ -49,6 +55,9 @@ This package depends on:
 - `cgal.org`
 - `gnu.org/gmp`
 - `gnu.org/mpfr`
+- `cmake.org`
+- `gnu.org/gcc`
+- `gnu.org/make`
 
 ## Usage Examples
 

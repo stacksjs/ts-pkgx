@@ -1,11 +1,11 @@
-# chezmoi
+# chezmoi.io
 
 > Manage your dotfiles across multiple diverse machines, securely.
 
 ## Package Information
 
 - **Domain**: `chezmoi.io`
-- **Name**: `chezmoi`
+- **Name**: `chezmoi.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/chezmoi.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) chezmoi
+launchpad install chezmoi
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `chezmoi`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `chezmoi`
 
@@ -54,6 +60,14 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +chezmoi.io@2.62.6 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.18`
+- `gnu.org/gcc`
+- `gnu.org/binutils`
 
 ## Usage Examples
 

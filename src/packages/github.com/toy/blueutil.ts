@@ -6,9 +6,8 @@
  * @version `2.12.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) blueutil`
+ * @install `launchpad install blueutil`
  * @name `blueutil`
- * @aliases `toy/blueutil`
  *
  * @example
  * ```typescript
@@ -43,12 +42,12 @@ export const blueutilPackage = {
   description: 'CLI for bluetooth on OSX: power, discoverable state, list, inquire devices, connect, info, …' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/toy/blueutil/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/toy/blueutil' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) blueutil' as const,
+  installCommand: 'launchpad install blueutil' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,10 +71,7 @@ export const blueutilPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'toy/blueutil',
-  ] as const,
-  fullPath: 'github.com/toy/blueutil' as const,
+  aliases: [] as const,
 }
 
 export type BlueutilPackage = typeof blueutilPackage

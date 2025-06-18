@@ -6,10 +6,9 @@
  * @version `1.4.3` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) btop`
+ * @install `launchpad install btop`
  * @name `btop`
- * @aliases `aristocratos/btop`
- * @dependencies `linuxgnu.org/gcc/libstdcxx@14`, `gnu.org/gcc/libstdcxx@14`
+ * @dependencies `gnu.org/gcc/libstdcxx@14`, `gnu.org/gcc@14`, `llvm.org`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const btopPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) btop' as const,
+  installCommand: 'launchpad install btop' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,8 +62,9 @@ export const btopPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxgnu.org/gcc/libstdcxx@14',
     'gnu.org/gcc/libstdcxx@14',
+    'gnu.org/gcc@14',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -83,10 +83,7 @@ export const btopPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'aristocratos/btop',
-  ] as const,
-  fullPath: 'github.com/aristocratos/btop' as const,
+  aliases: [] as const,
 }
 
 export type BtopPackage = typeof btopPackage

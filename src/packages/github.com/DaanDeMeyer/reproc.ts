@@ -1,23 +1,19 @@
 /**
- * **github.com/daandemeyer/reproc** - A cross-platform (C99/C++11) process library
+ * **reproc** - A cross-platform (C99/C++11) process library
  *
  * @domain `github.com/DaanDeMeyer/reproc`
  * @version `14.2.5` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/DaanDeMeyer/reproc -- $SHELL -i`
- * @aliases `github.com/daandemeyer/reproc`, `DaanDeMeyer/reproc`
+ * @install `launchpad install +github.com/DaanDeMeyer/reproc -- $SHELL -i`
+ * @dependencies `cmake.org^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
  * const pkg = pantry.githubcomdaandemeyerreproc
- * // Or access via domain
- * const samePkg = pantry.githubcomdaandemeyerreproc
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/DaanDeMeyer/reproc"
+ * console.log(pkg.name)        // "reproc"
  * console.log(pkg.description) // "A cross-platform (C99/C++11) process library"
  * console.log(pkg.versions[0]) // "14.2.5" (latest)
  * ```
@@ -29,7 +25,7 @@ export const githubcomdaandemeyerreprocPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/DaanDeMeyer/reproc' as const,
+  name: 'reproc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,16 @@ export const githubcomdaandemeyerreprocPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/DaanDeMeyer/reproc -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/DaanDeMeyer/reproc -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -57,15 +59,7 @@ export const githubcomdaandemeyerreprocPackage = {
     '14.2.5',
     '14.2.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'github.com/daandemeyer/reproc',
-    'DaanDeMeyer/reproc',
-  ] as const,
-  fullPath: 'github.com/DaanDeMeyer/reproc' as const,
+  aliases: [] as const,
 }
 
 export type GithubcomdaandemeyerreprocPackage = typeof githubcomdaandemeyerreprocPackage

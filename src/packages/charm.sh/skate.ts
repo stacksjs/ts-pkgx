@@ -6,9 +6,9 @@
  * @version `1.0.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) skate`
+ * @install `launchpad install skate`
  * @name `skate`
- * @dependencies `curl.se/ca-certs`
+ * @dependencies `curl.se/ca-certs`, `go.dev^1.21`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const skatePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) skate' as const,
+  installCommand: 'launchpad install skate' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,7 @@ export const skatePackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
+    'go.dev^1.21',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,7 +79,6 @@ export const skatePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'charm.sh/skate' as const,
 }
 
 export type SkatePackage = typeof skatePackage

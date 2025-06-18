@@ -5,31 +5,26 @@
  * @version `3.5.17` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xpm -- $SHELL -i`
- * @aliases `xpm`
- * @dependencies `x.org/x11`, `zlib.net^1.2`
+ * @install `launchpad install +x.org/xpm -- $SHELL -i`
+ * @dependencies `x.org/x11`, `zlib.net^1.2`, `freedesktop.org/pkg-config~0.29`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xpm
- * // Or access via domain
- * const samePkg = pantry.xorgxpm
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xpm"
+ * const pkg = pantry.xorgxpm
+ * console.log(pkg.name)        // "xpm"
  * console.log(pkg.versions[0]) // "3.5.17" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xpm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xpmPackage = {
+export const xorgxpmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xpm' as const,
+  name: 'xpm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xpmPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xpm -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xpm -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,8 @@ export const xpmPackage = {
   dependencies: [
     'x.org/x11',
     'zlib.net^1.2',
+    'freedesktop.org/pkg-config~0.29',
+    'gnu.org/gettext@0.21',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +61,7 @@ export const xpmPackage = {
     '3.5.17',
     '3.5.15',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xpm',
-  ] as const,
-  fullPath: 'x.org/xpm' as const,
+  aliases: [] as const,
 }
 
-export type XpmPackage = typeof xpmPackage
+export type XorgxpmPackage = typeof xorgxpmPackage

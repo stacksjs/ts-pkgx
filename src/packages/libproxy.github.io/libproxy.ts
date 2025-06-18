@@ -6,10 +6,10 @@
  * @version `0.5.9` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) proxy`
+ * @install `launchpad install proxy`
  * @name `libproxy`
  * @aliases `proxy`
- * @dependencies `duktape.org`, `gnome.org/glib`, `curl.se`, ... (+3 more)
+ * @dependencies `duktape.org`, `gnome.org/glib`, `curl.se`, ... (+8 more)
  *
  * @example
  * ```typescript
@@ -49,7 +49,7 @@ export const proxyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) proxy' as const,
+  installCommand: 'launchpad install proxy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,9 +66,14 @@ export const proxyPackage = {
     'duktape.org',
     'gnome.org/glib',
     'curl.se',
-    'linuxfreedesktop.org/dbusllvm.org',
     'freedesktop.org/dbus',
     'llvm.org',
+    'gnome.org/gobject-introspection',
+    'gnome.org/gsettings-desktop-schemas',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'gnome.org/vala',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -90,7 +95,6 @@ export const proxyPackage = {
   aliases: [
     'proxy',
   ] as const,
-  fullPath: 'libproxy.github.io/libproxy' as const,
 }
 
 export type ProxyPackage = typeof proxyPackage

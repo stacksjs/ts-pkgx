@@ -1,11 +1,11 @@
-# solana
+# solana.com
 
 > Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.
 
 ## Package Information
 
 - **Domain**: `solana.com`
-- **Name**: `solana`
+- **Name**: `solana.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/solana.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +solana.com -- $SHELL -i
+launchpad install +solana.com -- $SHELL -i
 ```
 
 ## Programs
@@ -30,6 +30,12 @@ This package provides the following executable programs:
 - `solana-stake-accounts`
 - `solana-tokens`
 - `solana-watchtower`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `solana`
 
 ## Available Versions
 
@@ -72,6 +78,10 @@ This package depends on:
 - `protobuf.dev^21`
 - `zlib.net^1.2`
 - `openssl.org^1.1`
+- `rust-lang.org>=1.75<1.78`
+- `rust-lang.org/cargo<0.83`
+- `freedesktop.org/pkg-config^0.29`
+- `systemd.io`
 
 ## Usage Examples
 

@@ -6,20 +6,15 @@
  * @version `0.9.5` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +microbrew.org/md5sha1sum -- $SHELL -i`
- * @aliases `md5sha1sum`
+ * @install `launchpad install +microbrew.org/md5sha1sum -- $SHELL -i`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.md5sha1sum
- * // Or access via domain
- * const samePkg = pantry.microbreworgmd5sha1sum
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "microbrew.org/md5sha1sum"
+ * const pkg = pantry.microbreworgmd5sha1sum
+ * console.log(pkg.name)        // "md5sha1sum"
  * console.log(pkg.description) // "Hash utilities"
  * console.log(pkg.programs)    // ["md5sum", "sha1sum", ...]
  * console.log(pkg.versions[0]) // "0.9.5" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/microbrew-org/md5sha1sum.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const md5sha1sumPackage = {
+export const microbreworgmd5sha1sumPackage = {
   /**
    * The display name of this package.
    */
-  name: 'microbrew.org/md5sha1sum' as const,
+  name: 'md5sha1sum' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const md5sha1sumPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +microbrew.org/md5sha1sum -- $SHELL -i' as const,
+  installCommand: 'launchpad install +microbrew.org/md5sha1sum -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,14 +68,7 @@ export const md5sha1sumPackage = {
   versions: [
     '0.9.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'md5sha1sum',
-  ] as const,
-  fullPath: 'microbrew.org/md5sha1sum' as const,
+  aliases: [] as const,
 }
 
-export type Md5sha1sumPackage = typeof md5sha1sumPackage
+export type Microbreworgmd5sha1sumPackage = typeof microbreworgmd5sha1sumPackage

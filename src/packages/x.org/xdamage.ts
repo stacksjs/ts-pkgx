@@ -5,31 +5,26 @@
  * @version `1.1.6` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xdamage -- $SHELL -i`
- * @aliases `xdamage`
- * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/xfixes`
+ * @install `launchpad install +x.org/xdamage -- $SHELL -i`
+ * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/xfixes`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xdamage
- * // Or access via domain
- * const samePkg = pantry.xorgxdamage
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xdamage"
+ * const pkg = pantry.xorgxdamage
+ * console.log(pkg.name)        // "xdamage"
  * console.log(pkg.versions[0]) // "1.1.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xdamage.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xdamagePackage = {
+export const xorgxdamagePackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xdamage' as const,
+  name: 'xdamage' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xdamagePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xdamage -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xdamage -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,6 +51,8 @@ export const xdamagePackage = {
     'x.org/x11',
     'x.org/protocol',
     'x.org/xfixes',
+    'freedesktop.org/pkg-config',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +61,7 @@ export const xdamagePackage = {
   versions: [
     '1.1.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xdamage',
-  ] as const,
-  fullPath: 'x.org/xdamage' as const,
+  aliases: [] as const,
 }
 
-export type XdamagePackage = typeof xdamagePackage
+export type XorgxdamagePackage = typeof xorgxdamagePackage

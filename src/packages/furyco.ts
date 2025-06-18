@@ -1,24 +1,34 @@
 /**
- * **fury.co** - Package from pantry: fury.co
+ * **fury** - Gemfury CLI
  *
  * @domain `fury.co`
+ * @programs `fury`
+ * @version `0.23.0` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install fury.co`
+ * @install `launchpad install fury`
+ * @aliases `fury`
  * @dependencies `go.dev^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.furyco
+ * // Access via alias (recommended)
+ * const pkg = pantry.fury
+ * // Or access via domain
+ * const samePkg = pantry.furyco
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "fury.co"
- * console.log(pkg.description) // "Package from pantry: fury.co"
+ * console.log(pkg.description) // "Gemfury CLI"
+ * console.log(pkg.programs)    // ["fury"]
+ * console.log(pkg.versions[0]) // "0.23.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fury-co.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const furycoPackage = {
+export const furyPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const furycoPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: fury.co' as const,
+  description: 'Gemfury CLI' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fury.co/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/gemfury/cli' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install fury.co' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install fury' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'fury',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +64,22 @@ export const furycoPackage = {
   dependencies: [
     'go.dev^1.21',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fury.co/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.23.0',
+    '0.22.0',
+    '0.21.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'fury',
+  ] as const,
 }
 
-export type FurycoPackage = typeof furycoPackage
+export type FuryPackage = typeof furyPackage

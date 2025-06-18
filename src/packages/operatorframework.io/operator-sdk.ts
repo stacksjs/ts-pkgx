@@ -8,7 +8,7 @@
  *
  * @install `launchpad install operator-sdk`
  * @name `operator-sdk`
- * @dependencies `go.dev^1.19`
+ * @dependencies `go.dev^1.19`, `cmake.org`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -43,7 +43,7 @@ export const operatorsdkPackage = {
   description: 'SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/operatorframework.io/operator-sdk/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/operator-framework/operator-sdk' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
@@ -63,6 +63,8 @@ export const operatorsdkPackage = {
    */
   dependencies: [
     'go.dev^1.19',
+    'cmake.org',
+    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -89,7 +91,6 @@ export const operatorsdkPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'operatorframework.io/operator-sdk' as const,
 }
 
 export type OperatorsdkPackage = typeof operatorsdkPackage

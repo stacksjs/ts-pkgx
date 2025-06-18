@@ -1,11 +1,11 @@
-# cruft
+# cruft.github.io
 
 > Allows you to maintain all the necessary cruft for packaging and building projects separate from the code you intentionally write. Built on-top of, and fully compatible with, CookieCutter.
 
 ## Package Information
 
-- **Domain**: `cruft.github.io`
-- **Name**: `cruft`
+- **Domain**: `cruftgithub.io`
+- **Name**: `cruft.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cruft.github.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) cruft
+launchpad install cruft
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `cruft`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `cruft`
 
@@ -37,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cruft.github.io@2.16.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +cruftgithub.io@2.16.0 -- $SHELL -i
 ```
 
 ## Dependencies

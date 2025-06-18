@@ -1,11 +1,12 @@
 /**
- * **browser-use.com** - Package from pantry: browser-use.com
+ * **browser-use.com** - Make websites accessible for AI agents
  *
  * @domain `browser-use.com`
+ * @version `0.2.7` (19 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install browser-use.com`
- * @dependencies `python.org`
- * @companions `env`, `PYTHONPATH`
+ * @install `launchpad install +browser-use.com -- $SHELL -i`
+ * @dependencies `python.org~3.12 # no torch<2.3.0 for 3.13`
  *
  * @example
  * ```typescript
@@ -13,7 +14,8 @@
  *
  * const pkg = pantry.browserusecom
  * console.log(pkg.name)        // "browser-use.com"
- * console.log(pkg.description) // "Package from pantry: browser-use.com"
+ * console.log(pkg.description) // "Make websites accessible for AI agents"
+ * console.log(pkg.versions[0]) // "0.2.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/browser-use-com.md
@@ -31,32 +33,50 @@ export const browserusecomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: browser-use.com' as const,
+  description: 'Make websites accessible for AI agents' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/browser-use.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install browser-use.com' as const,
+  installCommand: 'launchpad install +browser-use.com -- $SHELL -i' as const,
   programs: [] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'env',
-    'PYTHONPATH',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
    */
   dependencies: [
-    'python.org',
+    'python.org~3.12 # no torch<2.3.0 for 3.13',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/browser-use.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.2.7',
+    '0.2.6',
+    '0.2.5',
+    '0.2.4',
+    '0.2.3',
+    '0.2.2',
+    '0.2.1',
+    '0.1.48',
+    '0.1.47',
+    '0.1.46',
+    '0.1.45',
+    '0.1.44',
+    '0.1.43',
+    '0.1.42',
+    '0.1.41',
+    '0.1.40',
+    '0.1.39',
+    '0.1.38',
+    '0.1.37',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type BrowserusecomPackage = typeof browserusecomPackage

@@ -1,11 +1,11 @@
-# biome
+# biomejs.dev
 
 > A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers formatter and linter, usable via CLI and LSP.
 
 ## Package Information
 
 - **Domain**: `biomejs.dev`
-- **Name**: `biome`
+- **Name**: `biomejs.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/biomejs.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) biome
+launchpad install biome
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `biome`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `biome`
 
@@ -44,6 +50,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +biomejs.dev@1.9.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rust-lang.org>=1.65`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

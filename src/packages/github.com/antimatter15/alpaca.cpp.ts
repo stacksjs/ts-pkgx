@@ -6,9 +6,9 @@
  * @version `2023.3.21` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) alpaca.cpp`
+ * @install `launchpad install alpaca.cpp`
  * @name `alpaca.cpp`
- * @aliases `antimatter15/alpaca.cpp`
+ * @dependencies `freedesktop.org/pkg-config~0.29`, `gnu.org/wget`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const alpacacppPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) alpaca.cpp' as const,
+  installCommand: 'launchpad install alpaca.cpp' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const alpacacppPackage = {
     'alpaca.cpp',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'freedesktop.org/pkg-config~0.29',
+    'gnu.org/wget',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +76,7 @@ export const alpacacppPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'antimatter15/alpaca.cpp',
-  ] as const,
-  fullPath: 'github.com/antimatter15/alpaca.cpp' as const,
+  aliases: [] as const,
 }
 
 export type AlpacacppPackage = typeof alpacacppPackage

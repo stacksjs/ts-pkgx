@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libsdl.org -- $SHELL -i
+launchpad install +libsdl.org -- $SHELL -i
 ```
 
 ## Programs
@@ -50,7 +50,6 @@ sh <(curl https://pkgx.sh) +libsdl.org@3.2.16 -- $SHELL -i
 
 This package depends on:
 
-- `linuxx.org/x11x.org/xcursorx.org/xix.org/xrandrx.org/xfixesx.org/xrenderx.org/xscrnsaverx.org/exts`
 - `x.org/x11`
 - `x.org/xcursor`
 - `x.org/xi`
@@ -59,6 +58,10 @@ This package depends on:
 - `x.org/xrender`
 - `x.org/xscrnsaver`
 - `x.org/exts`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `gnu.org/libtool@2`
+- `cmake.org^3`
 
 ## Usage Examples
 

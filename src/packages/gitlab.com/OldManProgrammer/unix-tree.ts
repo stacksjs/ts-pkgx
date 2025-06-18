@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tree`
- * @name `tree`
- * @aliases `OldManProgrammer/unix-tree`
+ * @aliases `tree`
+ * @dependencies `gnu.org/gcc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.tree
  * // Or access via domain
  * const samePkg = pantry.gitlabcomoldmanprogrammerunixtree
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tree"
+ * console.log(pkg.name)        // "unix-tree"
  * console.log(pkg.description) // "Display directories as trees (with optional col..."
  * console.log(pkg.programs)    // ["tree"]
  * console.log(pkg.versions[0]) // "2.2.1" (latest)
@@ -32,7 +32,7 @@ export const treePackage = {
   /**
    * The display name of this package.
    */
-  name: 'tree' as const,
+  name: 'unix-tree' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -57,7 +57,13 @@ export const treePackage = {
     'tree',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gcc',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,9 +81,8 @@ export const treePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'OldManProgrammer/unix-tree',
+    'tree',
   ] as const,
-  fullPath: 'gitlab.com/OldManProgrammer/unix-tree' as const,
 }
 
 export type TreePackage = typeof treePackage

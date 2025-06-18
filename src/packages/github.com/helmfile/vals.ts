@@ -6,9 +6,9 @@
  * @version `0.41.2` (32 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) vals`
+ * @install `launchpad install vals`
  * @name `vals`
- * @aliases `helmfile/vals`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const valsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) vals' as const,
+  installCommand: 'launchpad install vals' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const valsPackage = {
     'vals',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -100,10 +106,7 @@ export const valsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'helmfile/vals',
-  ] as const,
-  fullPath: 'github.com/helmfile/vals' as const,
+  aliases: [] as const,
 }
 
 export type ValsPackage = typeof valsPackage

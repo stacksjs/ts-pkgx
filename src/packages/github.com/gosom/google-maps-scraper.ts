@@ -6,10 +6,9 @@
  * @version `1.8.1` (39 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) google-maps-scraper`
+ * @install `launchpad install google-maps-scraper`
  * @name `google-maps-scraper`
- * @aliases `gosom/google-maps-scraper`
- * @dependencies `curl.se/ca-certs`
+ * @dependencies `curl.se/ca-certs`, `go.dev^1.21.1`, `gnu.org/gcc`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const googlemapsscraperPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) google-maps-scraper' as const,
+  installCommand: 'launchpad install google-maps-scraper' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,10 @@ export const googlemapsscraperPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
+    'go.dev^1.21.1',
+    'gnu.org/gcc',
+    'gnu.org/binutils',
+    'stedolan.github.io/jq',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -114,10 +117,7 @@ export const googlemapsscraperPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gosom/google-maps-scraper',
-  ] as const,
-  fullPath: 'github.com/gosom/google-maps-scraper' as const,
+  aliases: [] as const,
 }
 
 export type GooglemapsscraperPackage = typeof googlemapsscraperPackage

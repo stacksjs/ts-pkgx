@@ -6,10 +6,9 @@
  * @version `0.15.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) awslogs`
+ * @install `launchpad install awslogs`
  * @name `awslogs`
- * @aliases `jorgebastida/awslogs`
- * @dependencies `python.org^3.11`, `github.com/benjaminp/six`, `zlib.net`
+ * @dependencies `python.org^3.11`, `github.com/benjaminp/six`, `zlib.net`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const awslogsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) awslogs' as const,
+  installCommand: 'launchpad install awslogs' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,6 +65,7 @@ export const awslogsPackage = {
     'python.org^3.11',
     'github.com/benjaminp/six',
     'zlib.net',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,10 +79,7 @@ export const awslogsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jorgebastida/awslogs',
-  ] as const,
-  fullPath: 'github.com/jorgebastida/awslogs' as const,
+  aliases: [] as const,
 }
 
 export type AwslogsPackage = typeof awslogsPackage

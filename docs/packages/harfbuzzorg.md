@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +harfbuzz.org -- $SHELL -i
+launchpad install +harfbuzz.org -- $SHELL -i
 ```
 
 ## Programs
@@ -57,6 +57,13 @@ This package depends on:
 - `gnome.org/glib@2`
 - `graphite.sil.org`
 - `unicode.org^71`
+- `mesonbuild.com>=0.63`
+- `ninja-build.org@1`
+- `freedesktop.org/pkg-config^0.29`
+- `gnome.org/gobject-introspection@1`
+- `python.org>=3<3.12`
+- `curl.se`
+- `gnu.org/binutils`
 
 ## Usage Examples
 

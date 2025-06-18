@@ -7,9 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install code`
- * @name `vscode cli`
- * @aliases `code`, `code-cli`
- * @dependencies `openssl.org@1.1`, `zlib.net@1`
+ * @aliases `code`, `vscode cli`
+ * @dependencies `openssl.org@1.1`, `zlib.net@1`, `rust-lang.org^1.81`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -20,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.microsoftcomcodecli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "vscode cli"
+ * console.log(pkg.name)        // "code-cli"
  * console.log(pkg.description) // "Command-line interface built-in Visual Studio Code"
  * console.log(pkg.programs)    // ["code"]
  * console.log(pkg.versions[0]) // "1.101.0" (latest)
@@ -33,7 +32,7 @@ export const codePackage = {
   /**
    * The display name of this package.
    */
-  name: 'vscode cli' as const,
+  name: 'code-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -65,6 +64,8 @@ export const codePackage = {
   dependencies: [
     'openssl.org@1.1',
     'zlib.net@1',
+    'rust-lang.org^1.81',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -91,9 +92,8 @@ export const codePackage = {
    */
   aliases: [
     'code',
-    'code-cli',
+    'vscode cli',
   ] as const,
-  fullPath: 'microsoft.com/code-cli' as const,
 }
 
 export type CodePackage = typeof codePackage

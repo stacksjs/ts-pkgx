@@ -1,24 +1,34 @@
 /**
- * **pcre.org** - Package from pantry: pcre.org
+ * **pcre** - Perl compatible regular expressions library
  *
  * @domain `pcre.org`
+ * @programs `pcre-config`, `pcregrep`, `pcretest`
+ * @version `8.45.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install pcre.org`
- * @dependencies `sourceware.org/bzip2^1`, `zlib.net^1`
+ * @install `launchpad install +pcre.org -- $SHELL -i`
+ * @aliases `pcre`
+ * @dependencies `sourceware.org/bzip2@1`, `zlib.net@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pcreorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.pcre
+ * // Or access via domain
+ * const samePkg = pantry.pcreorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pcre.org"
- * console.log(pkg.description) // "Package from pantry: pcre.org"
+ * console.log(pkg.description) // "Perl compatible regular expressions library"
+ * console.log(pkg.programs)    // ["pcre-config", "pcregrep", ...]
+ * console.log(pkg.versions[0]) // "8.45.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pcre-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pcreorgPackage = {
+export const pcrePackage = {
   /**
    * The display name of this package.
    */
@@ -30,26 +40,47 @@ export const pcreorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: pcre.org' as const,
+  description: 'Perl compatible regular expressions library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install pcre.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +pcre.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'pcre-config',
+    'pcregrep',
+    'pcretest',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
    */
   dependencies: [
-    'sourceware.org/bzip2^1',
-    'zlib.net^1',
+    'sourceware.org/bzip2@1',
+    'zlib.net@1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '8.45.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'pcre',
+  ] as const,
 }
 
-export type PcreorgPackage = typeof pcreorgPackage
+export type PcrePackage = typeof pcrePackage

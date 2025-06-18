@@ -1,11 +1,11 @@
-# mkcert
+# mkcert.dev
 
 > A simple zero-config tool to make locally trusted development certificates with any names you'd like.
 
 ## Package Information
 
 - **Domain**: `mkcert.dev`
-- **Name**: `mkcert`
+- **Name**: `mkcert.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mkcert.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) mkcert
+launchpad install mkcert
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `mkcert`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `mkcert`
 
@@ -39,6 +45,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +mkcert.dev@1.4.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.18`
 
 ## Usage Examples
 

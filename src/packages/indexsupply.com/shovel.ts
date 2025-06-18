@@ -6,8 +6,9 @@
  * @version `1.6.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) shovel`
+ * @install `launchpad install shovel`
  * @name `shovel`
+ * @dependencies `go.dev^1.21`
  * @companions `postgresql.org`
  *
  * @example
@@ -48,7 +49,7 @@ export const shovelPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) shovel' as const,
+  installCommand: 'launchpad install shovel' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,7 +64,13 @@ export const shovelPackage = {
   companions: [
     'postgresql.org',
   ] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -82,7 +89,6 @@ export const shovelPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'indexsupply.com/shovel' as const,
 }
 
 export type ShovelPackage = typeof shovelPackage

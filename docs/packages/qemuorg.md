@@ -1,11 +1,11 @@
-# qemu
+# qemu.org
 
 > Generic machine emulator and virtualizer
 
 ## Package Information
 
 - **Domain**: `qemu.org`
-- **Name**: `qemu`
+- **Name**: `qemu.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/qemu.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +qemu.org -- $SHELL -i
+launchpad install +qemu.org -- $SHELL -i
 ```
 
 ## Programs
@@ -54,6 +54,12 @@ This package provides the following executable programs:
 - `qemu-system-x86_64`
 - `qemu-system-xtensa`
 - `qemu-system-xtensaeb`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `qemu`
 
 ## Available Versions
 
@@ -97,6 +103,13 @@ This package depends on:
 - `invisible-island.net/ncurses^6`
 - `libssh.org^0`
 - `libpng.org^1`
+- `gnu.org/bison`
+- `github.com/westes/flex`
+- `python.org~3.11`
+- `ninja-build.org`
+- `mesonbuild.com`
+- `curl.se`
+- `info-zip.org/unzip`
 
 ## Usage Examples
 

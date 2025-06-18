@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gitql`
  * @aliases `gitql`
- * @dependencies `libgit2.org`
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `rust-lang.org^1.65`, `rust-lang.org/cargo`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -62,7 +62,12 @@ export const gitqlPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'libgit2.org',
+    'libgit2.org~1.7 # links to libgit2.so.1.7',
+    'rust-lang.org^1.65',
+    'rust-lang.org/cargo',
+    'cmake.org^3',
+    'git-scm.org^2',
+    'gnu.org/sed',
   ] as const,
   /**
    * Available versions from newest to oldest.

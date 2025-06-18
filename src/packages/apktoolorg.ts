@@ -8,7 +8,7 @@
  *
  * @install `launchpad install apktool`
  * @aliases `apktool`
- * @dependencies `openjdk.org`
+ * @dependencies `openjdk.org^21`, `curl.se`
  *
  * @example
  * ```typescript
@@ -62,7 +62,8 @@ export const apktoolPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'openjdk.org',
+    'openjdk.org^21',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

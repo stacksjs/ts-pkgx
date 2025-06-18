@@ -6,20 +6,15 @@
  * @version `3.9.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +apache.org/zookeeper -- $SHELL -i`
- * @aliases `zookeeper`
- * @dependencies `openjdk.org`, `openssl.org`
+ * @install `launchpad install +apache.org/zookeeper -- $SHELL -i`
+ * @dependencies `openjdk.org`, `openssl.org`, `gnu.org/autoconf`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.zookeeper
- * // Or access via domain
- * const samePkg = pantry.apacheorgzookeeper
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "apache.org/zookeeper"
+ * const pkg = pantry.apacheorgzookeeper
+ * console.log(pkg.name)        // "zookeeper"
  * console.log(pkg.programs)    // ["zkCleanup", "zkCli", ...]
  * console.log(pkg.versions[0]) // "3.9.3" (latest)
  * ```
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/apache-org/zookeeper.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zookeeperPackage = {
+export const apacheorgzookeeperPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/zookeeper' as const,
+  name: 'zookeeper' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const zookeeperPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +apache.org/zookeeper -- $SHELL -i' as const,
+  installCommand: 'launchpad install +apache.org/zookeeper -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +66,13 @@ export const zookeeperPackage = {
   dependencies: [
     'openjdk.org',
     'openssl.org',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'freedesktop.org/cppunit',
+    'gnu.org/libtool',
+    'maven.apache.org',
+    'freedesktop.org/pkg-config',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -81,14 +83,7 @@ export const zookeeperPackage = {
     '3.9.2',
     '3.9.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'zookeeper',
-  ] as const,
-  fullPath: 'apache.org/zookeeper' as const,
+  aliases: [] as const,
 }
 
-export type ZookeeperPackage = typeof zookeeperPackage
+export type ApacheorgzookeeperPackage = typeof apacheorgzookeeperPackage

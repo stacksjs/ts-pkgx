@@ -6,8 +6,9 @@
  * @version `3.89.2` (143 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) trufflehog`
+ * @install `launchpad install trufflehog`
  * @name `trufflehog`
+ * @dependencies `go.dev^1.21`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const trufflehogPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) trufflehog' as const,
+  installCommand: 'launchpad install trufflehog' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,13 @@ export const trufflehogPackage = {
     'trufflehog',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -211,7 +218,6 @@ export const trufflehogPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'trufflesecurity.com/trufflehog' as const,
 }
 
 export type TrufflehogPackage = typeof trufflehogPackage

@@ -1,23 +1,18 @@
 /**
- * **zsh-users/zsh-autosuggestions** - Fish-like autosuggestions for zsh
+ * **zsh-autosuggestions** - Fish-like autosuggestions for zsh
  *
  * @domain `github.com/zsh-users/zsh-autosuggestions`
  * @version `0.7.1` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/zsh-users/zsh-autosuggestions -- $SHELL -i`
- * @aliases `zsh-users/zsh-autosuggestions`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.zshuserszshautosuggestions
- * // Or access via domain
- * const samePkg = pantry.githubcomzshuserszshautosuggestions
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/zsh-users/zsh-autosuggestions"
+ * const pkg = pantry.githubcomzshuserszshautosuggestions
+ * console.log(pkg.name)        // "zsh-autosuggestions"
  * console.log(pkg.description) // "Fish-like autosuggestions for zsh"
  * console.log(pkg.versions[0]) // "0.7.1" (latest)
  * ```
@@ -25,11 +20,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/zsh-users/zsh-autosuggestions.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zshuserszshautosuggestionsPackage = {
+export const githubcomzshuserszshautosuggestionsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/zsh-users/zsh-autosuggestions' as const,
+  name: 'zsh-autosuggestions' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -57,14 +52,7 @@ export const zshuserszshautosuggestionsPackage = {
     '0.7.1',
     '0.7.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'zsh-users/zsh-autosuggestions',
-  ] as const,
-  fullPath: 'github.com/zsh-users/zsh-autosuggestions' as const,
+  aliases: [] as const,
 }
 
-export type ZshuserszshautosuggestionsPackage = typeof zshuserszshautosuggestionsPackage
+export type GithubcomzshuserszshautosuggestionsPackage = typeof githubcomzshuserszshautosuggestionsPackage

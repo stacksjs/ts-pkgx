@@ -1,11 +1,11 @@
-# open-interpreter
+# openinterpreter.com
 
 > A natural language interface for computers
 
 ## Package Information
 
 - **Domain**: `openinterpreter.com`
-- **Name**: `open-interpreter`
+- **Name**: `openinterpreter.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openinterpreter.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) interpreter
+launchpad install interpreter
 ```
 
 ## Programs
@@ -27,6 +27,7 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `interpreter`
+- `open-interpreter`
 
 ## Available Versions
 

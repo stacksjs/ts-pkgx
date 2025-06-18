@@ -5,31 +5,26 @@
  * @version `9.0.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +freedesktop.org/mesa-glu -- $SHELL -i`
- * @aliases `mesa-glu`
- * @dependencies `mesa3d.org`
+ * @install `launchpad install +freedesktop.org/mesa-glu -- $SHELL -i`
+ * @dependencies `mesa3d.org`, `gnu.org/make`, `freedesktop.org/pkg-config`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mesaglu
- * // Or access via domain
- * const samePkg = pantry.freedesktoporgmesaglu
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "freedesktop.org/mesa-glu"
+ * const pkg = pantry.freedesktoporgmesaglu
+ * console.log(pkg.name)        // "mesa-glu"
  * console.log(pkg.versions[0]) // "9.0.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/mesa-glu.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mesagluPackage = {
+export const freedesktoporgmesagluPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/mesa-glu' as const,
+  name: 'mesa-glu' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const mesagluPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/mesa-glu -- $SHELL -i' as const,
+  installCommand: 'launchpad install +freedesktop.org/mesa-glu -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,6 +49,11 @@ export const mesagluPackage = {
    */
   dependencies: [
     'mesa3d.org',
+    'gnu.org/make',
+    'freedesktop.org/pkg-config',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -62,14 +62,7 @@ export const mesagluPackage = {
   versions: [
     '9.0.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mesa-glu',
-  ] as const,
-  fullPath: 'freedesktop.org/mesa-glu' as const,
+  aliases: [] as const,
 }
 
-export type MesagluPackage = typeof mesagluPackage
+export type FreedesktoporgmesagluPackage = typeof freedesktoporgmesagluPackage

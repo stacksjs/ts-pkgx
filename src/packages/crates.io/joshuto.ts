@@ -6,9 +6,9 @@
  * @version `0.9.9` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) joshuto`
+ * @install `launchpad install joshuto`
  * @name `joshuto`
- * @dependencies `libgit2.org@1`
+ * @dependencies `libgit2.org@1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  * @companions `github.com/junegunn/fzf`, `crates.io/zoxide`
  *
  * @example
@@ -49,7 +49,7 @@ export const joshutoPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) joshuto' as const,
+  installCommand: 'launchpad install joshuto' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +71,8 @@ export const joshutoPackage = {
    */
   dependencies: [
     'libgit2.org@1',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -85,7 +87,6 @@ export const joshutoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/joshuto' as const,
 }
 
 export type JoshutoPackage = typeof joshutoPackage

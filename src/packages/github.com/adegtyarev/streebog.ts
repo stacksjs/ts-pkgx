@@ -6,20 +6,20 @@
  * @version `0.13.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) gost3411-2012`
- * @name `gost3411-2012`
- * @aliases `adegtyarev/streebog`
+ * @install `launchpad install gost3411-2012`
+ * @aliases `gost3411-2012`
+ * @dependencies `gnu.org/patch`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.gost34112012
  * // Or access via domain
  * const samePkg = pantry.githubcomadegtyarevstreebog
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gost3411-2012"
+ * console.log(pkg.name)        // "streebog"
  * console.log(pkg.description) // "GOST R 34.11-2012: RFC-6986 cryptographic hash ..."
  * console.log(pkg.programs)    // ["gost3411-2012"]
  * console.log(pkg.versions[0]) // "0.13.0" (latest)
@@ -32,7 +32,7 @@ export const gost34112012Package = {
   /**
    * The display name of this package.
    */
-  name: 'gost3411-2012' as const,
+  name: 'streebog' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const gost34112012Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) gost3411-2012' as const,
+  installCommand: 'launchpad install gost3411-2012' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const gost34112012Package = {
     'gost3411-2012',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/patch',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,9 +76,8 @@ export const gost34112012Package = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'adegtyarev/streebog',
+    'gost3411-2012',
   ] as const,
-  fullPath: 'github.com/adegtyarev/streebog' as const,
 }
 
 export type Gost34112012Package = typeof gost34112012Package

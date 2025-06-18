@@ -1,23 +1,19 @@
 /**
- * **charliermarsh/ruff** - An extremely fast Python linter and code formatter, written in Rust.
+ * **ruff** - An extremely fast Python linter and code formatter, written in Rust.
  *
  * @domain `github.com/charliermarsh/ruff`
  * @version `0.12.0` (151 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/charliermarsh/ruff -- $SHELL -i`
- * @aliases `charliermarsh/ruff`
+ * @install `launchpad install +github.com/charliermarsh/ruff -- $SHELL -i`
+ * @dependencies `rust-lang.org>=1.60`, `rust-lang.org/cargo`, `crates.io/semverator`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.charliermarshruff
- * // Or access via domain
- * const samePkg = pantry.githubcomcharliermarshruff
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/charliermarsh/ruff"
+ * const pkg = pantry.githubcomcharliermarshruff
+ * console.log(pkg.name)        // "ruff"
  * console.log(pkg.description) // "An extremely fast Python linter and code format..."
  * console.log(pkg.versions[0]) // "0.12.0" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/charliermarsh/ruff.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const charliermarshruffPackage = {
+export const githubcomcharliermarshruffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/charliermarsh/ruff' as const,
+  name: 'ruff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,18 @@ export const charliermarshruffPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/charliermarsh/ruff -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/charliermarsh/ruff -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
+    'crates.io/semverator',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -206,14 +210,7 @@ export const charliermarshruffPackage = {
     '0.0.238',
     '0.0.237',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'charliermarsh/ruff',
-  ] as const,
-  fullPath: 'github.com/charliermarsh/ruff' as const,
+  aliases: [] as const,
 }
 
-export type CharliermarshruffPackage = typeof charliermarshruffPackage
+export type GithubcomcharliermarshruffPackage = typeof githubcomcharliermarshruffPackage

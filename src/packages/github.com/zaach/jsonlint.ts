@@ -6,10 +6,9 @@
  * @version `1.6.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) jsonlint`
+ * @install `launchpad install jsonlint`
  * @name `jsonlint`
- * @aliases `zaach/jsonlint`
- * @dependencies `nodejs.org^20`
+ * @dependencies `nodejs.org^20`, `npmjs.com^10`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const jsonlintPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) jsonlint' as const,
+  installCommand: 'launchpad install jsonlint' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const jsonlintPackage = {
    */
   dependencies: [
     'nodejs.org^20',
+    'npmjs.com^10',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +76,7 @@ export const jsonlintPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'zaach/jsonlint',
-  ] as const,
-  fullPath: 'github.com/zaach/jsonlint' as const,
+  aliases: [] as const,
 }
 
 export type JsonlintPackage = typeof jsonlintPackage

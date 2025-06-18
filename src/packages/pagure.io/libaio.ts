@@ -5,30 +5,25 @@
  * @version `0.3.113` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +pagure.io/libaio -- $SHELL -i`
- * @aliases `libaio`
+ * @install `launchpad install +pagure.io/libaio -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libaio
- * // Or access via domain
- * const samePkg = pantry.pagureiolibaio
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pagure.io/libaio"
+ * const pkg = pantry.pagureiolibaio
+ * console.log(pkg.name)        // "libaio"
  * console.log(pkg.versions[0]) // "0.3.113" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pagure-io/libaio.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libaioPackage = {
+export const pagureiolibaioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pagure.io/libaio' as const,
+  name: 'libaio' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,7 +39,7 @@ export const libaioPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +pagure.io/libaio -- $SHELL -i' as const,
+  installCommand: 'launchpad install +pagure.io/libaio -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -55,14 +50,7 @@ export const libaioPackage = {
   versions: [
     '0.3.113',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libaio',
-  ] as const,
-  fullPath: 'pagure.io/libaio' as const,
+  aliases: [] as const,
 }
 
-export type LibaioPackage = typeof libaioPackage
+export type PagureiolibaioPackage = typeof pagureiolibaioPackage

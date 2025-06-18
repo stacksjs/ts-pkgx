@@ -1,11 +1,11 @@
-# pack
+# buildpacks.io
 
 > CLI for building apps using Cloud Native Buildpacks
 
 ## Package Information
 
 - **Domain**: `buildpacks.io`
-- **Name**: `pack`
+- **Name**: `buildpacks.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/buildpacks.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) pack
+launchpad install pack
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `pack`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `pack`
 
@@ -41,6 +47,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +buildpacks.io@0.38.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev~1.24`
 
 ## Usage Examples
 

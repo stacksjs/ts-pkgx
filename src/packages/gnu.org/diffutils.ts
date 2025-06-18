@@ -6,19 +6,14 @@
  * @version `3.12.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/diffutils -- $SHELL -i`
- * @aliases `diffutils`
+ * @install `launchpad install +gnu.org/diffutils -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.diffutils
- * // Or access via domain
- * const samePkg = pantry.gnuorgdiffutils
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/diffutils"
+ * const pkg = pantry.gnuorgdiffutils
+ * console.log(pkg.name)        // "diffutils"
  * console.log(pkg.description) // "File comparison utilities"
  * console.log(pkg.programs)    // ["cmp", "diff", ...]
  * console.log(pkg.versions[0]) // "3.12.0" (latest)
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/diffutils.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const diffutilsPackage = {
+export const gnuorgdiffutilsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/diffutils' as const,
+  name: 'diffutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const diffutilsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/diffutils -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/diffutils -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,14 +64,7 @@ export const diffutilsPackage = {
     '3.11.0',
     '3.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'diffutils',
-  ] as const,
-  fullPath: 'gnu.org/diffutils' as const,
+  aliases: [] as const,
 }
 
-export type DiffutilsPackage = typeof diffutilsPackage
+export type GnuorgdiffutilsPackage = typeof gnuorgdiffutilsPackage

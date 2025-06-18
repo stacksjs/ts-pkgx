@@ -9,7 +9,6 @@
  * @install `launchpad install conda`
  * @aliases `conda`
  * @dependencies `pkgx.sh^1`, `openssl.org^1.1`, `python.org=3.11.5`, ... (+2 more)
- * @companions `CRYPTOGRAPHY_OPENSSL_NO_LEGACY^1`
  *
  * @example
  * ```typescript
@@ -56,13 +55,7 @@ export const condaPackage = {
   programs: [
     'conda',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'CRYPTOGRAPHY_OPENSSL_NO_LEGACY^1',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

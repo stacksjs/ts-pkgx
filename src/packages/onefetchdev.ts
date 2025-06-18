@@ -1,24 +1,34 @@
 /**
- * **onefetch.dev** - Package from pantry: onefetch.dev
+ * **onefetch** - Command-line Git information tool
  *
  * @domain `onefetch.dev`
+ * @programs `onefetch`
+ * @version `2.24.0` (8 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install onefetch.dev`
+ * @install `launchpad install onefetch`
+ * @aliases `onefetch`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `cmake.org^3`, `rust-lang.org>=1.56`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.onefetchdev
+ * // Access via alias (recommended)
+ * const pkg = pantry.onefetch
+ * // Or access via domain
+ * const samePkg = pantry.onefetchdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "onefetch.dev"
- * console.log(pkg.description) // "Package from pantry: onefetch.dev"
+ * console.log(pkg.description) // "Command-line Git information tool"
+ * console.log(pkg.programs)    // ["onefetch"]
+ * console.log(pkg.versions[0]) // "2.24.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/onefetch-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const onefetchdevPackage = {
+export const onefetchPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const onefetchdevPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: onefetch.dev' as const,
+  description: 'Command-line Git information tool' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/onefetch.dev/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install onefetch.dev' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install onefetch' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'onefetch',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +67,27 @@ export const onefetchdevPackage = {
     'rust-lang.org>=1.56',
     'rust-lang.org/cargo',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/onefetch.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.24.0',
+    '2.23.1',
+    '2.23.0',
+    '2.22.0',
+    '2.21.0',
+    '2.20.0',
+    '2.19.0',
+    '2.18.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'onefetch',
+  ] as const,
 }
 
-export type OnefetchdevPackage = typeof onefetchdevPackage
+export type OnefetchPackage = typeof onefetchPackage

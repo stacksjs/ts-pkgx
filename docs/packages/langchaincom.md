@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +langchain.com -- $SHELL -i
+launchpad install +langchain.com -- $SHELL -i
 ```
 
 ## Programs

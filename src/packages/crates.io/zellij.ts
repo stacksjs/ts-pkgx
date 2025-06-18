@@ -6,9 +6,9 @@
  * @version `0.42.2` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) zellij`
+ * @install `launchpad install zellij`
  * @name `zellij`
- * @dependencies `zlib.net^1`, `curl.se@8`
+ * @dependencies `zlib.net^1`, `curl.se@8`, `rust-lang.org>=1.60`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const zellijPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) zellij' as const,
+  installCommand: 'launchpad install zellij' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,10 @@ export const zellijPackage = {
   dependencies: [
     'zlib.net^1',
     'curl.se@8',
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
+    'openssl.org^1.1',
+    'perl.org^5',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -94,7 +98,6 @@ export const zellijPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/zellij' as const,
 }
 
 export type ZellijPackage = typeof zellijPackage

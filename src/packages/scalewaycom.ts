@@ -1,24 +1,34 @@
 /**
- * **scaleway.com** - Package from pantry: scaleway.com
+ * **scw** - Command Line Interface for Scaleway
  *
  * @domain `scaleway.com`
+ * @programs `scw`
+ * @version `2.40.0` (9 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install scaleway.com`
- * @dependencies `go.dev^1.22`
+ * @install `launchpad install scw`
+ * @aliases `scw`
+ * @dependencies `go.dev@1.22`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.scalewaycom
+ * // Access via alias (recommended)
+ * const pkg = pantry.scw
+ * // Or access via domain
+ * const samePkg = pantry.scalewaycom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "scaleway.com"
- * console.log(pkg.description) // "Package from pantry: scaleway.com"
+ * console.log(pkg.description) // "Command Line Interface for Scaleway"
+ * console.log(pkg.programs)    // ["scw"]
+ * console.log(pkg.versions[0]) // "2.40.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/scaleway-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const scalewaycomPackage = {
+export const scwPackage = {
   /**
    * The display name of this package.
    */
@@ -30,25 +40,52 @@ export const scalewaycomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: scaleway.com' as const,
+  description: 'Command Line Interface for Scaleway' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/scaleway.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install scaleway.com' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install scw' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'scw',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
    */
   dependencies: [
-    'go.dev^1.22',
+    'go.dev@1.22',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/scaleway.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.40.0',
+    '2.39.0',
+    '2.38.0',
+    '2.37.0',
+    '2.36.0',
+    '2.35.0',
+    '2.34.0',
+    '2.33.0',
+    '2.32.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'scw',
+  ] as const,
 }
 
-export type ScalewaycomPackage = typeof scalewaycomPackage
+export type ScwPackage = typeof scwPackage

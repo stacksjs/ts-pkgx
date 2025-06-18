@@ -6,9 +6,9 @@
  * @version `0.4.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) complexity`
+ * @install `launchpad install complexity`
  * @name `complexity`
- * @aliases `thoughtbot/complexity`
+ * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const complexityPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) complexity' as const,
+  installCommand: 'launchpad install complexity' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const complexityPackage = {
     'complexity',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +76,7 @@ export const complexityPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'thoughtbot/complexity',
-  ] as const,
-  fullPath: 'github.com/thoughtbot/complexity' as const,
+  aliases: [] as const,
 }
 
 export type ComplexityPackage = typeof complexityPackage

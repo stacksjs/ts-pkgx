@@ -5,31 +5,26 @@
  * @version `1.0.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +code.videolan.org/aribb24 -- $SHELL -i`
- * @aliases `aribb24`
- * @dependencies `libpng.org`
+ * @install `launchpad install +code.videolan.org/aribb24 -- $SHELL -i`
+ * @dependencies `libpng.org`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.aribb24
- * // Or access via domain
- * const samePkg = pantry.codevideolanorgaribb24
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "code.videolan.org/aribb24"
+ * const pkg = pantry.codevideolanorgaribb24
+ * console.log(pkg.name)        // "aribb24"
  * console.log(pkg.versions[0]) // "1.0.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/code-videolan-org/aribb24.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const aribb24Package = {
+export const codevideolanorgaribb24Package = {
   /**
    * The display name of this package.
    */
-  name: 'code.videolan.org/aribb24' as const,
+  name: 'aribb24' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const aribb24Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +code.videolan.org/aribb24 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +code.videolan.org/aribb24 -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,6 +49,10 @@ export const aribb24Package = {
    */
   dependencies: [
     'libpng.org',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -62,14 +61,7 @@ export const aribb24Package = {
   versions: [
     '1.0.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'aribb24',
-  ] as const,
-  fullPath: 'code.videolan.org/aribb24' as const,
+  aliases: [] as const,
 }
 
-export type Aribb24Package = typeof aribb24Package
+export type Codevideolanorgaribb24Package = typeof codevideolanorgaribb24Package

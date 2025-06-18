@@ -6,21 +6,20 @@
  * @version `2023.6.23` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) heif-converter`
- * @name `heif-converter`
- * @aliases `MaestroError/heif-converter-image`
- * @dependencies `github.com/strukturag/libheif`
+ * @install `launchpad install heif-converter`
+ * @aliases `heif-converter`
+ * @dependencies `github.com/strukturag/libheif`, `go.dev^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.heifconverter
  * // Or access via domain
  * const samePkg = pantry.githubcommaestroerrorheifconverterimage
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "heif-converter"
+ * console.log(pkg.name)        // "heif-converter-image"
  * console.log(pkg.description) // "heif-converter is a versatile command-line appl..."
  * console.log(pkg.programs)    // ["heif-converter"]
  * console.log(pkg.versions[0]) // "2023.6.23" (latest)
@@ -33,7 +32,7 @@ export const heifconverterPackage = {
   /**
    * The display name of this package.
    */
-  name: 'heif-converter' as const,
+  name: 'heif-converter-image' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const heifconverterPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) heif-converter' as const,
+  installCommand: 'launchpad install heif-converter' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const heifconverterPackage = {
    */
   dependencies: [
     'github.com/strukturag/libheif',
+    'go.dev^1.19',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,9 +77,8 @@ export const heifconverterPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'MaestroError/heif-converter-image',
+    'heif-converter',
   ] as const,
-  fullPath: 'github.com/MaestroError/heif-converter-image' as const,
 }
 
 export type HeifconverterPackage = typeof heifconverterPackage

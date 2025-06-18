@@ -6,9 +6,8 @@
  * @version `3.1.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) unxip`
+ * @install `launchpad install unxip`
  * @name `unxip`
- * @aliases `saagarjha/unxip`
  *
  * @example
  * ```typescript
@@ -48,7 +47,7 @@ export const unxipPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) unxip' as const,
+  installCommand: 'launchpad install unxip' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,10 +71,7 @@ export const unxipPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'saagarjha/unxip',
-  ] as const,
-  fullPath: 'github.com/saagarjha/unxip' as const,
+  aliases: [] as const,
 }
 
 export type UnxipPackage = typeof unxipPackage

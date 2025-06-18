@@ -1,23 +1,19 @@
 /**
- * **github.com/davegamble/cjson** - Ultralightweight JSON parser in ANSI C
+ * **cJSON** - Ultralightweight JSON parser in ANSI C
  *
  * @domain `github.com/DaveGamble/cJSON`
  * @version `1.7.18` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/DaveGamble/cJSON -- $SHELL -i`
- * @aliases `github.com/davegamble/cjson`, `DaveGamble/cJSON`
+ * @install `launchpad install +github.com/DaveGamble/cJSON -- $SHELL -i`
+ * @dependencies `cmake.org^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
  * const pkg = pantry.githubcomdavegamblecjson
- * // Or access via domain
- * const samePkg = pantry.githubcomdavegamblecjson
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/DaveGamble/cJSON"
+ * console.log(pkg.name)        // "cJSON"
  * console.log(pkg.description) // "Ultralightweight JSON parser in ANSI C"
  * console.log(pkg.versions[0]) // "1.7.18" (latest)
  * ```
@@ -29,7 +25,7 @@ export const githubcomdavegamblecjsonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/DaveGamble/cJSON' as const,
+  name: 'cJSON' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,16 @@ export const githubcomdavegamblecjsonPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/DaveGamble/cJSON -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/DaveGamble/cJSON -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -59,15 +61,7 @@ export const githubcomdavegamblecjsonPackage = {
     '1.7.16',
     '1.7.15',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'github.com/davegamble/cjson',
-    'DaveGamble/cJSON',
-  ] as const,
-  fullPath: 'github.com/DaveGamble/cJSON' as const,
+  aliases: [] as const,
 }
 
 export type GithubcomdavegamblecjsonPackage = typeof githubcomdavegamblecjsonPackage

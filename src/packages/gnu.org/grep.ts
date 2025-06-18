@@ -6,9 +6,9 @@
  * @version `3.12.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) grep`
+ * @install `launchpad install grep`
  * @name `grep`
- * @dependencies `pcre.org/v2`
+ * @dependencies `pcre.org/v2`, `freedesktop.org/pkg-config^0.29`
  *
  * @example
  * ```typescript
@@ -47,7 +47,7 @@ export const grepPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) grep' as const,
+  installCommand: 'launchpad install grep' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,6 +62,7 @@ export const grepPackage = {
    */
   dependencies: [
     'pcre.org/v2',
+    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,7 +78,6 @@ export const grepPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/grep' as const,
 }
 
 export type GrepPackage = typeof grepPackage

@@ -6,9 +6,8 @@
  * @version `0.19.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) stress-ng`
+ * @install `launchpad install stress-ng`
  * @name `stress-ng`
- * @aliases `ColinIanKing/stress-ng`
  * @dependencies `github.com/besser82/libxcrypt`, `zlib.net`
  *
  * @example
@@ -49,7 +48,7 @@ export const stressngPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) stress-ng' as const,
+  installCommand: 'launchpad install stress-ng' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,10 +76,7 @@ export const stressngPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ColinIanKing/stress-ng',
-  ] as const,
-  fullPath: 'github.com/ColinIanKing/stress-ng' as const,
+  aliases: [] as const,
 }
 
 export type StressngPackage = typeof stressngPackage

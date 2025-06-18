@@ -6,9 +6,9 @@
  * @version `0.5.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sup`
+ * @install `launchpad install sup`
  * @name `sup`
- * @aliases `pressly/sup`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const supPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sup' as const,
+  installCommand: 'launchpad install sup' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const supPackage = {
     'sup',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +75,7 @@ export const supPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pressly/sup',
-  ] as const,
-  fullPath: 'github.com/pressly/sup' as const,
+  aliases: [] as const,
 }
 
 export type SupPackage = typeof supPackage

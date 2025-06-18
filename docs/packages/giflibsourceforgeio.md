@@ -1,11 +1,11 @@
-# gif
+# giflib.sourceforge.io
 
 > Library and utilities for processing GIFs
 
 ## Package Information
 
-- **Domain**: `giflib.sourceforge.io`
-- **Name**: `gif`
+- **Domain**: `giflibsourceforge.io`
+- **Name**: `giflib.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/giflib.sourceforge.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +giflib.sourceforge.io -- $SHELL -i
+launchpad install +giflib.sourceforge.io -- $SHELL -i
 ```
 
 ## Programs
@@ -26,6 +26,12 @@ This package provides the following executable programs:
 - `giffix`
 - `giftext`
 - `giftool`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `gif`
 
 ## Available Versions
 
@@ -42,8 +48,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +giflib.sourceforge.io@5.2.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +giflibsourceforge.io@5.2.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/patch`
+- `imagemagick.org`
 
 ## Usage Examples
 

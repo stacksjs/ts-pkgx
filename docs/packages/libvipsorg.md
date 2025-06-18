@@ -1,11 +1,11 @@
-# vips
+# libvips.org
 
 > A fast image processing library with low memory needs.
 
 ## Package Information
 
 - **Domain**: `libvips.org`
-- **Name**: `vips`
+- **Name**: `libvips.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libvips.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i
+launchpad install +libvips.org -- $SHELL -i
 ```
 
 ## Programs
@@ -25,6 +25,12 @@ This package provides the following executable programs:
 - `vipsheader`
 - `vipsprofile`
 - `vipsthumbnail`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `vips`
 
 ## Available Versions
 
@@ -76,6 +82,9 @@ This package depends on:
 - `google.com/webp`
 - `libexpat.github.io`
 - `zlib.net`
+- `gnome.org/gobject-introspection`
+- `mesonbuild.com`
+- `ninja-build.org`
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# htop
+# htop.dev
 
 > Improved top (interactive process viewer)
 
 ## Package Information
 
 - **Domain**: `htop.dev`
-- **Name**: `htop`
+- **Name**: `htop.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/htop.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) htop
+launchpad install htop
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `htop`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `htop`
 
@@ -45,6 +51,8 @@ sh <(curl https://pkgx.sh) +htop.dev@3.4.1 -- $SHELL -i
 This package depends on:
 
 - `invisible-island.net/ncurses@6`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
 
 ## Usage Examples
 

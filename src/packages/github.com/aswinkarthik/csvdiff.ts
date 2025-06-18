@@ -6,9 +6,9 @@
  * @version `1.4.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) csvdiff`
+ * @install `launchpad install csvdiff`
  * @name `csvdiff`
- * @aliases `aswinkarthik/csvdiff`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const csvdiffPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) csvdiff' as const,
+  installCommand: 'launchpad install csvdiff' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const csvdiffPackage = {
     'csvdiff',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +75,7 @@ export const csvdiffPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'aswinkarthik/csvdiff',
-  ] as const,
-  fullPath: 'github.com/aswinkarthik/csvdiff' as const,
+  aliases: [] as const,
 }
 
 export type CsvdiffPackage = typeof csvdiffPackage

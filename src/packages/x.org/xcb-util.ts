@@ -6,30 +6,25 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xcb-util -- $SHELL -i`
- * @aliases `xcb-util`
- * @dependencies `x.org/xcb^1`
+ * @dependencies `x.org/xcb^1`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xcbutil
- * // Or access via domain
- * const samePkg = pantry.xorgxcbutil
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xcb-util"
+ * const pkg = pantry.xorgxcbutil
+ * console.log(pkg.name)        // "xcb-util"
  * console.log(pkg.versions[0]) // "0.4.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xcb-util.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xcbutilPackage = {
+export const xorgxcbutilPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xcb-util' as const,
+  name: 'xcb-util' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -54,6 +49,7 @@ export const xcbutilPackage = {
    */
   dependencies: [
     'x.org/xcb^1',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -62,14 +58,7 @@ export const xcbutilPackage = {
   versions: [
     '0.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xcb-util',
-  ] as const,
-  fullPath: 'x.org/xcb-util' as const,
+  aliases: [] as const,
 }
 
-export type XcbutilPackage = typeof xcbutilPackage
+export type XorgxcbutilPackage = typeof xorgxcbutilPackage

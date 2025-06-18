@@ -6,20 +6,15 @@
  * @version `2.4.12` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +openprinting.github.io/cups -- $SHELL -i`
- * @aliases `cups`
- * @dependencies `kerberos.org`, `zlib.net`, `linuxopenssl.org^1.1`, ... (+1 more)
+ * @install `launchpad install +openprinting.github.io/cups -- $SHELL -i`
+ * @dependencies `kerberos.org`, `zlib.net`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.cups
- * // Or access via domain
- * const samePkg = pantry.openprintinggithubiocups
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openprinting.github.io/cups"
+ * const pkg = pantry.openprintinggithubiocups
+ * console.log(pkg.name)        // "cups"
  * console.log(pkg.description) // "Common UNIX Printing System"
  * console.log(pkg.programs)    // ["cups-config", "ippeveprinter", ...]
  * console.log(pkg.versions[0]) // "2.4.12" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/openprinting-github-io/cups.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cupsPackage = {
+export const openprintinggithubiocupsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openprinting.github.io/cups' as const,
+  name: 'cups' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const cupsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +openprinting.github.io/cups -- $SHELL -i' as const,
+  installCommand: 'launchpad install +openprinting.github.io/cups -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,7 +61,6 @@ export const cupsPackage = {
   dependencies: [
     'kerberos.org',
     'zlib.net',
-    'linuxopenssl.org^1.1',
     'openssl.org^1.1',
   ] as const,
   /**
@@ -82,14 +76,7 @@ export const cupsPackage = {
     '2.4.7',
     '2.4.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'cups',
-  ] as const,
-  fullPath: 'openprinting.github.io/cups' as const,
+  aliases: [] as const,
 }
 
-export type CupsPackage = typeof cupsPackage
+export type OpenprintinggithubiocupsPackage = typeof openprintinggithubiocupsPackage

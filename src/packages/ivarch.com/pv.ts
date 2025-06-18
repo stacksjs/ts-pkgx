@@ -6,7 +6,7 @@
  * @version `1.9.31` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) pv`
+ * @install `launchpad install pv`
  * @name `pv`
  *
  * @example
@@ -47,7 +47,7 @@ export const pvPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) pv' as const,
+  installCommand: 'launchpad install pv' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,7 +81,6 @@ export const pvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ivarch.com/pv' as const,
 }
 
 export type PvPackage = typeof pvPackage

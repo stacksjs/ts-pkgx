@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +leptonica.org -- $SHELL -i
+launchpad install +leptonica.org -- $SHELL -i
 ```
 
 ## Programs
@@ -59,6 +59,7 @@ This package depends on:
 - `simplesystems.org/libtiff@4`
 - `openjpeg.org`
 - `google.com/webp`
+- `gnu.org/wget`
 
 ## Usage Examples
 

@@ -1,9 +1,11 @@
 /**
- * **pixman.org** - Package from pantry: pixman.org
+ * **pixman.org** - pkgx package
  *
  * @domain `pixman.org`
+ * @version `0.40.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install pixman.org`
+ * @install `launchpad install +pixman.org -- $SHELL -i`
  * @dependencies `freedesktop.org/pkg-config^0.29`
  *
  * @example
@@ -12,7 +14,7 @@
  *
  * const pkg = pantry.pixmanorg
  * console.log(pkg.name)        // "pixman.org"
- * console.log(pkg.description) // "Package from pantry: pixman.org"
+ * console.log(pkg.versions[0]) // "0.40.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pixman-org.md
@@ -30,12 +32,15 @@ export const pixmanorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: pixman.org' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pixman.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install pixman.org' as const,
+  installCommand: 'launchpad install +pixman.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -45,10 +50,14 @@ export const pixmanorgPackage = {
   dependencies: [
     'freedesktop.org/pkg-config^0.29',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pixman.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.40.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type PixmanorgPackage = typeof pixmanorgPackage

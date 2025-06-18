@@ -6,9 +6,9 @@
  * @version `0.2.78` (36 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) act`
+ * @install `launchpad install act`
  * @name `act`
- * @aliases `nektos/act`
+ * @dependencies `go.dev`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const actPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) act' as const,
+  installCommand: 'launchpad install act' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const actPackage = {
     'act',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+    'git-scm.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -104,10 +111,7 @@ export const actPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nektos/act',
-  ] as const,
-  fullPath: 'github.com/nektos/act' as const,
+  aliases: [] as const,
 }
 
 export type ActPackage = typeof actPackage

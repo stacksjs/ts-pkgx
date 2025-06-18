@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +boost.org -- $SHELL -i`
- * @dependencies `facebook.com/zstd`
+ * @dependencies `facebook.com/zstd^1`
  *
  * @example
  * ```typescript
@@ -49,7 +49,7 @@ export const boostorgPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'facebook.com/zstd',
+    'facebook.com/zstd^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

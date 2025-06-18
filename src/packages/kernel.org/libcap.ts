@@ -6,7 +6,7 @@
  * @version `1.2.76` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +kernel.org/libcap -- $SHELL -i`
+ * @install `launchpad install +kernel.org/libcap -- $SHELL -i`
  * @name `libcap`
  *
  * @example
@@ -46,7 +46,7 @@ export const libcapPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +kernel.org/libcap -- $SHELL -i' as const,
+  installCommand: 'launchpad install +kernel.org/libcap -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,7 +74,6 @@ export const libcapPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kernel.org/libcap' as const,
 }
 
 export type LibcapPackage = typeof libcapPackage

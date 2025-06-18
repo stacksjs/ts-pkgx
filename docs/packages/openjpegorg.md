@@ -1,11 +1,11 @@
-# opj
+# openjpeg.org
 
 > Official repository of the OpenJPEG project
 
 ## Package Information
 
 - **Domain**: `openjpeg.org`
-- **Name**: `opj`
+- **Name**: `openjpeg.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openjpeg.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openjpeg.org -- $SHELL -i
+launchpad install +openjpeg.org -- $SHELL -i
 ```
 
 ## Programs
@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `opj_compress`
 - `opj_decompress`
 - `opj_dump`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `opj`
 
 ## Available Versions
 
@@ -48,6 +54,7 @@ This package depends on:
 
 - `libpng.org^1`
 - `simplesystems.org/libtiff^4`
+- `cmake.org^3`
 
 ## Usage Examples
 

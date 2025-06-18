@@ -6,9 +6,9 @@
  * @version `1.24.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/ebiggers/libdeflate -- $SHELL -i`
+ * @install `launchpad install +github.com/ebiggers/libdeflate -- $SHELL -i`
  * @name `libdeflate`
- * @aliases `ebiggers/libdeflate`
+ * @dependencies `cmake.org^3`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const libdeflatePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/ebiggers/libdeflate -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/ebiggers/libdeflate -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -58,7 +58,13 @@ export const libdeflatePackage = {
     'libdeflate-gunzip',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,10 +81,7 @@ export const libdeflatePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ebiggers/libdeflate',
-  ] as const,
-  fullPath: 'github.com/ebiggers/libdeflate' as const,
+  aliases: [] as const,
 }
 
 export type LibdeflatePackage = typeof libdeflatePackage

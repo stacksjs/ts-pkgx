@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +boost.org -- $SHELL -i
+launchpad install +boost.org -- $SHELL -i
 ```
 
 ## Programs

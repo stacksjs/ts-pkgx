@@ -5,31 +5,26 @@
  * @version `1.4.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +geuz.org/gl2ps -- $SHELL -i`
- * @aliases `gl2ps`
- * @dependencies `libpng.org`, `linuxfreeglut.sourceforge.io`, `freeglut.sourceforge.io`
+ * @install `launchpad install +geuz.org/gl2ps -- $SHELL -i`
+ * @dependencies `libpng.org`, `freeglut.sourceforge.io`, `cmake.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gl2ps
- * // Or access via domain
- * const samePkg = pantry.geuzorggl2ps
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "geuz.org/gl2ps"
+ * const pkg = pantry.geuzorggl2ps
+ * console.log(pkg.name)        // "gl2ps"
  * console.log(pkg.versions[0]) // "1.4.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/geuz-org/gl2ps.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gl2psPackage = {
+export const geuzorggl2psPackage = {
   /**
    * The display name of this package.
    */
-  name: 'geuz.org/gl2ps' as const,
+  name: 'gl2ps' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const gl2psPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +geuz.org/gl2ps -- $SHELL -i' as const,
+  installCommand: 'launchpad install +geuz.org/gl2ps -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,8 +49,8 @@ export const gl2psPackage = {
    */
   dependencies: [
     'libpng.org',
-    'linuxfreeglut.sourceforge.io',
     'freeglut.sourceforge.io',
+    'cmake.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +59,7 @@ export const gl2psPackage = {
   versions: [
     '1.4.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gl2ps',
-  ] as const,
-  fullPath: 'geuz.org/gl2ps' as const,
+  aliases: [] as const,
 }
 
-export type Gl2psPackage = typeof gl2psPackage
+export type Geuzorggl2psPackage = typeof geuzorggl2psPackage

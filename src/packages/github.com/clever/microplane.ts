@@ -6,21 +6,20 @@
  * @version `0.0.36` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) mp`
- * @name `mp`
- * @aliases `clever/microplane`
- * @dependencies `git-scm.org^2`
+ * @install `launchpad install mp`
+ * @aliases `mp`
+ * @dependencies `git-scm.org^2`, `go.dev^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.mp
  * // Or access via domain
  * const samePkg = pantry.githubcomclevermicroplane
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mp"
+ * console.log(pkg.name)        // "microplane"
  * console.log(pkg.description) // "A CLI tool to make git changes across many repo..."
  * console.log(pkg.programs)    // ["mp"]
  * console.log(pkg.versions[0]) // "0.0.36" (latest)
@@ -33,7 +32,7 @@ export const mpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mp' as const,
+  name: 'microplane' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const mpPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) mp' as const,
+  installCommand: 'launchpad install mp' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const mpPackage = {
    */
   dependencies: [
     'git-scm.org^2',
+    'go.dev^1.18',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,9 +79,8 @@ export const mpPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'clever/microplane',
+    'mp',
   ] as const,
-  fullPath: 'github.com/clever/microplane' as const,
 }
 
 export type MpPackage = typeof mpPackage

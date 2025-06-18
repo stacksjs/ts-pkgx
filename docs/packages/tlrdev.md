@@ -1,11 +1,11 @@
-# teller
+# tlr.dev
 
 > Cloud native secrets management for developers - never leave your command line for secrets.
 
 ## Package Information
 
 - **Domain**: `tlr.dev`
-- **Name**: `teller`
+- **Name**: `tlr.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tlr.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) teller
+launchpad install teller
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `teller`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `teller`
 
@@ -45,6 +51,9 @@ sh <(curl https://pkgx.sh) +tlr.dev@2.0.7 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
+- `go.dev^1.21`
+- `rust-lang.org^1.78`
+- `protobuf.dev`
 
 ## Usage Examples
 

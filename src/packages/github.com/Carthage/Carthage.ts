@@ -6,20 +6,19 @@
  * @version `0.40.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) carthage`
- * @name `carthage`
- * @aliases `Carthage/Carthage`
+ * @install `launchpad install carthage`
+ * @aliases `carthage`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.carthage
  * // Or access via domain
  * const samePkg = pantry.githubcomcarthagecarthage
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "carthage"
+ * console.log(pkg.name)        // "Carthage"
  * console.log(pkg.description) // "A simple, decentralized dependency manager for ..."
  * console.log(pkg.programs)    // ["carthage"]
  * console.log(pkg.versions[0]) // "0.40.0" (latest)
@@ -32,7 +31,7 @@ export const carthagePackage = {
   /**
    * The display name of this package.
    */
-  name: 'carthage' as const,
+  name: 'Carthage' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +47,7 @@ export const carthagePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) carthage' as const,
+  installCommand: 'launchpad install carthage' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,9 +71,8 @@ export const carthagePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'Carthage/Carthage',
+    'carthage',
   ] as const,
-  fullPath: 'github.com/Carthage/Carthage' as const,
 }
 
 export type CarthagePackage = typeof carthagePackage

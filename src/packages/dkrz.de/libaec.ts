@@ -5,19 +5,14 @@
  * @version `1.1.4` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +dkrz.de/libaec -- $SHELL -i`
- * @aliases `libaec`
+ * @install `launchpad install +dkrz.de/libaec -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libaec
- * // Or access via domain
- * const samePkg = pantry.dkrzdelibaec
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dkrz.de/libaec"
+ * const pkg = pantry.dkrzdelibaec
+ * console.log(pkg.name)        // "libaec"
  * console.log(pkg.description) // "libaec - Adaptive Entropy Coding library"
  * console.log(pkg.versions[0]) // "1.1.4" (latest)
  * ```
@@ -25,11 +20,11 @@
  * @see https://ts-pkgx.netlify.app/packages/dkrz-de/libaec.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libaecPackage = {
+export const dkrzdelibaecPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dkrz.de/libaec' as const,
+  name: 'libaec' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const libaecPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +dkrz.de/libaec -- $SHELL -i' as const,
+  installCommand: 'launchpad install +dkrz.de/libaec -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -60,14 +55,7 @@ export const libaecPackage = {
     '1.1.1',
     '1.0.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libaec',
-  ] as const,
-  fullPath: 'dkrz.de/libaec' as const,
+  aliases: [] as const,
 }
 
-export type LibaecPackage = typeof libaecPackage
+export type DkrzdelibaecPackage = typeof dkrzdelibaecPackage

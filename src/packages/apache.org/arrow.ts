@@ -6,20 +6,15 @@
  * @version `20.0.0` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +apache.org/arrow -- $SHELL -i`
- * @aliases `arrow`
- * @dependencies `github.com/aws/aws-sdk-cpp`, `github.com/google/brotli`, `sourceware.org/bzip2`, ... (+15 more)
+ * @install `launchpad install +apache.org/arrow -- $SHELL -i`
+ * @dependencies `github.com/aws/aws-sdk-cpp`, `github.com/google/brotli`, `sourceware.org/bzip2`, ... (+19 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.arrow
- * // Or access via domain
- * const samePkg = pantry.apacheorgarrow
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "apache.org/arrow"
+ * const pkg = pantry.apacheorgarrow
+ * console.log(pkg.name)        // "arrow"
  * console.log(pkg.description) // "Apache Arrow is the universal columnar format a..."
  * console.log(pkg.programs)    // ["parquet-dump-schema", "parquet-reader", ...]
  * console.log(pkg.versions[0]) // "20.0.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/apache-org/arrow.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const arrowPackage = {
+export const apacheorgarrowPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/arrow' as const,
+  name: 'arrow' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const arrowPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +apache.org/arrow -- $SHELL -i' as const,
+  installCommand: 'launchpad install +apache.org/arrow -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,11 +72,15 @@ export const arrowPackage = {
     'apache.org/thrift',
     'github.com/JuliaStrings/utf8proc',
     'facebook.com/zstd',
-    'darwinc-ares.org@1libcxx.llvm.org~17',
     'c-ares.org@1',
-    'libcxx.llvm.org~17',
-    'linuxprotobuf.dev@26.1.0',
-    'protobuf.dev@26.1.0',
+    'libcxx.llvm.org~17 # since 18.1.0',
+    'protobuf.dev^26.1.0 # match grpc.io, so gdal.org can build, we bundle on darwin',
+    'boost.org',
+    'cmake.org',
+    'ninja-build.org',
+    'python.org<3.12',
+    'llvm.org~17',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -103,14 +102,7 @@ export const arrowPackage = {
     '14.0.0',
     '13.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'arrow',
-  ] as const,
-  fullPath: 'apache.org/arrow' as const,
+  aliases: [] as const,
 }
 
-export type ArrowPackage = typeof arrowPackage
+export type ApacheorgarrowPackage = typeof apacheorgarrowPackage

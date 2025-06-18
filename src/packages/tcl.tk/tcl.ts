@@ -6,19 +6,14 @@
  * @version `9.0.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +tcl.tk/tcl -- $SHELL -i`
- * @aliases `tcl`
+ * @install `launchpad install +tcl.tk/tcl -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.tcl
- * // Or access via domain
- * const samePkg = pantry.tcltktcl
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tcl.tk/tcl"
+ * const pkg = pantry.tcltktcl
+ * console.log(pkg.name)        // "tcl"
  * console.log(pkg.programs)    // ["sqlite3_analyzer", "tclsh{{version.major}}.{{version.minor}}", ...]
  * console.log(pkg.versions[0]) // "9.0.1" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/tcl-tk/tcl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tclPackage = {
+export const tcltktclPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tcl.tk/tcl' as const,
+  name: 'tcl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const tclPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +tcl.tk/tcl -- $SHELL -i' as const,
+  installCommand: 'launchpad install +tcl.tk/tcl -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,14 +63,7 @@ export const tclPackage = {
     '8.6.14',
     '8.6.13',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'tcl',
-  ] as const,
-  fullPath: 'tcl.tk/tcl' as const,
+  aliases: [] as const,
 }
 
-export type TclPackage = typeof tclPackage
+export type TcltktclPackage = typeof tcltktclPackage

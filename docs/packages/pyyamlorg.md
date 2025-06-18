@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +pyyaml.org -- $SHELL -i
+launchpad install +pyyaml.org -- $SHELL -i
 ```
 
 ## Programs

@@ -1,19 +1,19 @@
 /**
- * **gnome.org/gi-docgen** - pkgx package
+ * **gi-docgen** - pkgx package
  *
  * @domain `gnome.org/gi-docgen`
  * @version `2025.3.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/gi-docgen -- $SHELL -i`
- * @dependencies `pkgx.sh^1`
+ * @install `launchpad install +gnome.org/gi-docgen -- $SHELL -i`
+ * @dependencies `pkgx.sh^1`, `python.org~3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorggidocgen
- * console.log(pkg.name)        // "gnome.org/gi-docgen"
+ * console.log(pkg.name)        // "gi-docgen"
  * console.log(pkg.versions[0]) // "2025.3.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnomeorggidocgenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/gi-docgen' as const,
+  name: 'gi-docgen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const gnomeorggidocgenPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/gi-docgen -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/gi-docgen -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -49,6 +49,7 @@ export const gnomeorggidocgenPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org~3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -59,7 +60,6 @@ export const gnomeorggidocgenPackage = {
     '2024.1.0',
   ] as const,
   aliases: [] as const,
-  fullPath: 'gnome.org-gi-docgen' as const,
 }
 
 export type GnomeorggidocgenPackage = typeof gnomeorggidocgenPackage

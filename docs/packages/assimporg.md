@@ -1,11 +1,11 @@
-# assimp
+# assimp.org
 
 > The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure.
 
 ## Package Information
 
 - **Domain**: `assimp.org`
-- **Name**: `assimp`
+- **Name**: `assimp.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/assimp.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) assimp
+launchpad install assimp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `assimp`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `assimp`
 
@@ -46,6 +52,11 @@ sh <(curl https://pkgx.sh) +assimp.org@6.0.2 -- $SHELL -i
 This package depends on:
 
 - `zlib.net`
+- `gnu.org/make`
+- `cmake.org`
+- `ninja-build.org`
+- `curl.se`
+- `gnu.org/patch`
 
 ## Usage Examples
 

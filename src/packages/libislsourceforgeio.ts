@@ -1,9 +1,11 @@
 /**
- * **libisl.sourceforge.io** - Package from pantry: libisl.sourceforge.io
+ * **libisl.sourceforge.io** - pkgx package
  *
  * @domain `libisl.sourceforge.io`
+ * @version `0.27.0` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install libisl.sourceforge.io`
+ * @install `launchpad install +libisl.sourceforge.io -- $SHELL -i`
  * @dependencies `gnu.org/gmp^6`
  *
  * @example
@@ -12,7 +14,7 @@
  *
  * const pkg = pantry.libislsourceforgeio
  * console.log(pkg.name)        // "libisl.sourceforge.io"
- * console.log(pkg.description) // "Package from pantry: libisl.sourceforge.io"
+ * console.log(pkg.versions[0]) // "0.27.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libisl-sourceforge-io.md
@@ -30,12 +32,15 @@ export const libislsourceforgeioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: libisl.sourceforge.io' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libisl.sourceforge.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install libisl.sourceforge.io' as const,
+  installCommand: 'launchpad install +libisl.sourceforge.io -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -45,10 +50,15 @@ export const libislsourceforgeioPackage = {
   dependencies: [
     'gnu.org/gmp^6',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libisl.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.27.0',
+    '0.26.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type LibislsourceforgeioPackage = typeof libislsourceforgeioPackage

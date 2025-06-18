@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gpg-tui`
  * @name `gpg-tui`
- * @dependencies `gnupg.org`, `gnupg.org/gpgme^1.12`, `gnupg.org/libgpg-error`, ... (+1 more)
+ * @dependencies `gnupg.org`, `gnupg.org/gpgme^1.12`, `gnupg.org/libgpg-error`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -66,6 +66,9 @@ export const gpgtuiPackage = {
     'gnupg.org/gpgme^1.12',
     'gnupg.org/libgpg-error',
     'x.org/xcb',
+    'rust-lang.org^1.70',
+    'rust-lang.org/cargo',
+    'freedesktop.org/pkg-config^0',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -81,7 +84,6 @@ export const gpgtuiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'orhun.dev/gpg-tui' as const,
 }
 
 export type GpgtuiPackage = typeof gpgtuiPackage

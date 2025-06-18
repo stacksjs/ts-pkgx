@@ -6,19 +6,15 @@
  * @version `2.44.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/binutils -- $SHELL -i`
- * @aliases `binutils`
+ * @install `launchpad install +gnu.org/binutils -- $SHELL -i`
+ * @dependencies `gnu.org/bison`, `gnu.org/texinfo`, `gnu.org/gcc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.binutils
- * // Or access via domain
- * const samePkg = pantry.gnuorgbinutils
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/binutils"
+ * const pkg = pantry.gnuorgbinutils
+ * console.log(pkg.name)        // "binutils"
  * console.log(pkg.description) // "GNU binary tools for native development"
  * console.log(pkg.programs)    // ["addr2line", "ar", ...]
  * console.log(pkg.versions[0]) // "2.44.0" (latest)
@@ -27,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/binutils.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const binutilsPackage = {
+export const gnuorgbinutilsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/binutils' as const,
+  name: 'binutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +43,7 @@ export const binutilsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/binutils -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/binutils -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,7 +63,15 @@ export const binutilsPackage = {
     'strip',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/bison',
+    'gnu.org/texinfo',
+    'gnu.org/gcc',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -81,14 +85,7 @@ export const binutilsPackage = {
     '2.40.0',
     '2.39.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'binutils',
-  ] as const,
-  fullPath: 'gnu.org/binutils' as const,
+  aliases: [] as const,
 }
 
-export type BinutilsPackage = typeof binutilsPackage
+export type GnuorgbinutilsPackage = typeof gnuorgbinutilsPackage

@@ -6,8 +6,9 @@
  * @version `3.24.3` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) goose`
+ * @install `launchpad install goose`
  * @name `goose`
+ * @dependencies `go.dev^1.20`, `sqlite.org@3`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const goosePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) goose' as const,
+  installCommand: 'launchpad install goose' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,14 @@ export const goosePackage = {
     'goose',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.20',
+    'sqlite.org@3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -79,7 +87,6 @@ export const goosePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'pressly.github.io/goose' as const,
 }
 
 export type GoosePackage = typeof goosePackage

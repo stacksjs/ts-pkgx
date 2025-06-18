@@ -43,7 +43,7 @@ export const coderPackage = {
   description: 'Tool for provisioning self-hosted development environments with Terraform' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/coder/coder' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name

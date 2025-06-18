@@ -1,11 +1,11 @@
-# mako-render
+# makotemplates.org
 
 > Mako Templates for Python
 
 ## Package Information
 
 - **Domain**: `makotemplates.org`
-- **Name**: `mako-render`
+- **Name**: `makotemplates.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/makotemplates.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) mako-render
+launchpad install mako-render
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `mako-render`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `mako-render`
 

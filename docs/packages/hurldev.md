@@ -1,11 +1,11 @@
-# hurl
+# hurl.dev
 
 > Run and Test HTTP Requests with plain text and curl
 
 ## Package Information
 
 - **Domain**: `hurl.dev`
-- **Name**: `hurl`
+- **Name**: `hurl.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hurl.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +hurl.dev -- $SHELL -i
+launchpad install +hurl.dev -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `hurl`
 - `hurlfmt`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `hurl`
 
 ## Available Versions
 
@@ -48,6 +54,9 @@ This package depends on:
 
 - `gnome.org/libxml2`
 - `curl.se`
+- `rust-lang.org>=1.65`
+- `rust-lang.org/cargo`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

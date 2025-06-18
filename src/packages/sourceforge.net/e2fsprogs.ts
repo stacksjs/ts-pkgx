@@ -6,21 +6,20 @@
  * @version `1.47.2` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +sourceforge.net/e2fsprogs -- $SHELL -i`
- * @name `sf.net/e2fsprogs`
- * @aliases `e2fsprogs`
- * @dependencies `darwingnu.org/gettext^0.22`, `gnu.org/gettext^0.22`, `linuxgithub.com/util-linux/util-linux^2.39`, ... (+1 more)
+ * @install `launchpad install +sourceforge.net/e2fsprogs -- $SHELL -i`
+ * @aliases `sf.net/e2fsprogs`
+ * @dependencies `gnu.org/gettext^0.22`, `github.com/util-linux/util-linux^2.39`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sfnete2fsprogs
  * // Or access via domain
  * const samePkg = pantry.sourceforgenete2fsprogs
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sf.net/e2fsprogs"
+ * console.log(pkg.name)        // "e2fsprogs"
  * console.log(pkg.description) // "Utilities for the ext2, ext3, and ext4 file sys..."
  * console.log(pkg.programs)    // ["chattr", "compile_et", ...]
  * console.log(pkg.versions[0]) // "1.47.2" (latest)
@@ -33,7 +32,7 @@ export const sfnete2fsprogsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sf.net/e2fsprogs' as const,
+  name: 'e2fsprogs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const sfnete2fsprogsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/e2fsprogs -- $SHELL -i' as const,
+  installCommand: 'launchpad install +sourceforge.net/e2fsprogs -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,9 +66,7 @@ export const sfnete2fsprogsPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'darwingnu.org/gettext^0.22',
     'gnu.org/gettext^0.22',
-    'linuxgithub.com/util-linux/util-linux^2.39',
     'github.com/util-linux/util-linux^2.39',
   ] as const,
   /**
@@ -86,9 +83,8 @@ export const sfnete2fsprogsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'e2fsprogs',
+    'sf.net/e2fsprogs',
   ] as const,
-  fullPath: 'sourceforge.net/e2fsprogs' as const,
 }
 
 export type Sfnete2fsprogsPackage = typeof sfnete2fsprogsPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i
+launchpad install +musepack.net -- $SHELL -i
 ```
 
 ## Programs
@@ -52,6 +52,8 @@ This package depends on:
 
 - `musepack.net/libreplaygain`
 - `musepack.net/libcuefile`
+- `cmake.org`
+- `curl.se`
 
 ## Usage Examples
 

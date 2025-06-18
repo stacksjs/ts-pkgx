@@ -5,20 +5,15 @@
  * @version `2.22.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +intel.com/libva -- $SHELL -i`
- * @aliases `libva`
- * @dependencies `dri.freedesktop.org`, `x.org/x11`, `x.org/exts`, ... (+2 more)
+ * @install `launchpad install +intel.com/libva -- $SHELL -i`
+ * @dependencies `dri.freedesktop.org`, `x.org/x11`, `x.org/exts`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libva
- * // Or access via domain
- * const samePkg = pantry.intelcomlibva
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "intel.com/libva"
+ * const pkg = pantry.intelcomlibva
+ * console.log(pkg.name)        // "libva"
  * console.log(pkg.description) // "Libva is an implementation for VA-API (Video Ac..."
  * console.log(pkg.versions[0]) // "2.22.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/intel-com/libva.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libvaPackage = {
+export const intelcomlibvaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'intel.com/libva' as const,
+  name: 'libva' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const libvaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +intel.com/libva -- $SHELL -i' as const,
+  installCommand: 'launchpad install +intel.com/libva -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,6 +54,9 @@ export const libvaPackage = {
     'x.org/exts',
     'x.org/xfixes',
     'wayland.freedesktop.org',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -70,14 +68,7 @@ export const libvaPackage = {
     '2.20.0',
     '2.19.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libva',
-  ] as const,
-  fullPath: 'intel.com/libva' as const,
+  aliases: [] as const,
 }
 
-export type LibvaPackage = typeof libvaPackage
+export type IntelcomlibvaPackage = typeof intelcomlibvaPackage

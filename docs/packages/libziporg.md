@@ -1,11 +1,11 @@
-# zip
+# libzip.org
 
 > A C library for reading, creating, and modifying zip archives.
 
 ## Package Information
 
 - **Domain**: `libzip.org`
-- **Name**: `zip`
+- **Name**: `libzip.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libzip.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libzip.org -- $SHELL -i
+launchpad install +libzip.org -- $SHELL -i
 ```
 
 ## Programs
@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `zipcmp`
 - `zipmerge`
 - `ziptool`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `zip`
 
 ## Available Versions
 
@@ -48,12 +54,11 @@ sh <(curl https://pkgx.sh) +libzip.org@1.11.4 -- $SHELL -i
 This package depends on:
 
 - `facebook.com/zstd>=1.5.0`
-- `darwinsourceware.org/bzip2>=1.0.8tukaani.org/xz>=5.2.7zlib.net>=1.2.13`
 - `sourceware.org/bzip2>=1.0.8`
 - `tukaani.org/xz>=5.2.7`
 - `zlib.net>=1.2.13`
-- `linuxopenssl.org^1.1`
 - `openssl.org^1.1`
+- `cmake.org>=3.24`
 
 ## Usage Examples
 

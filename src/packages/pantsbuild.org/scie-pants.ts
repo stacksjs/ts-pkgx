@@ -9,7 +9,7 @@
  * @install `launchpad install pants`
  * @name `scie-pants`
  * @aliases `pants`
- * @dependencies `curl.se/ca-certs`
+ * @dependencies `curl.se/ca-certs`, `curl.se`
  *
  * @example
  * ```typescript
@@ -64,6 +64,7 @@ export const pantsPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -82,7 +83,6 @@ export const pantsPackage = {
   aliases: [
     'pants',
   ] as const,
-  fullPath: 'pantsbuild.org/scie-pants' as const,
 }
 
 export type PantsPackage = typeof pantsPackage

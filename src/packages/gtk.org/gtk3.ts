@@ -6,9 +6,9 @@
  * @version `3.24.38` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gtk.org/gtk3 -- $SHELL -i`
+ * @install `launchpad install +gtk.org/gtk3 -- $SHELL -i`
  * @name `gtk3`
- * @dependencies `gnome.org/atk`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+19 more)
+ * @dependencies `gnome.org/atk`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+27 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gtk3Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gtk.org/gtk3 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gtk.org/gtk3 -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,11 +88,19 @@ export const gtk3Package = {
     'xkbcommon.org',
     'debian.org/iso-codes',
     'freedesktop.org/at-spi2-atk',
-    'linuxcairographics.orgwayland.freedesktop.org/protocolsx.org/protocolopenprinting.github.io/cups',
     'cairographics.org',
     'wayland.freedesktop.org/protocols',
     'x.org/protocol',
     'openprinting.github.io/cups',
+    'docbook.org',
+    'docbook.org/xsl',
+    'gnu.org/gettext',
+    'gnome.org/gobject-introspection',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'cmake.org',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -106,7 +114,6 @@ export const gtk3Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gtk.org/gtk3' as const,
 }
 
 export type Gtk3Package = typeof gtk3Package

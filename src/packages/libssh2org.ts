@@ -1,9 +1,11 @@
 /**
- * **libssh2.org** - Package from pantry: libssh2.org
+ * **libssh2.org** - the SSH library
  *
  * @domain `libssh2.org`
+ * @version `1.11.1` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install libssh2.org`
+ * @install `launchpad install +libssh2.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `zlib.net^1.2`
  *
  * @example
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.libssh2org
  * console.log(pkg.name)        // "libssh2.org"
- * console.log(pkg.description) // "Package from pantry: libssh2.org"
+ * console.log(pkg.description) // "the SSH library"
+ * console.log(pkg.versions[0]) // "1.11.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libssh2-org.md
@@ -30,12 +33,15 @@ export const libssh2orgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: libssh2.org' as const,
+  description: 'the SSH library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libssh2.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install libssh2.org' as const,
+  installCommand: 'launchpad install +libssh2.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -46,10 +52,16 @@ export const libssh2orgPackage = {
     'openssl.org^1.1',
     'zlib.net^1.2',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libssh2.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.11.1',
+    '1.11.0',
+    '1.10.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type Libssh2orgPackage = typeof libssh2orgPackage

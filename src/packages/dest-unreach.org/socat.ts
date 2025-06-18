@@ -6,7 +6,7 @@
  * @version `1.8.0.3` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) socat`
+ * @install `launchpad install socat`
  * @name `socat`
  * @dependencies `openssl.org^1.1`, `gnu.org/readline^8.2`
  *
@@ -48,7 +48,7 @@ export const socatPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) socat' as const,
+  installCommand: 'launchpad install socat' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,7 +80,6 @@ export const socatPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dest-unreach.org/socat' as const,
 }
 
 export type SocatPackage = typeof socatPackage

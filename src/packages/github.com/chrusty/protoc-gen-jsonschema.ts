@@ -6,10 +6,9 @@
  * @version `1.4.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) protoc-gen-jsonschema`
+ * @install `launchpad install protoc-gen-jsonschema`
  * @name `protoc-gen-jsonschema`
- * @aliases `chrusty/protoc-gen-jsonschema`
- * @dependencies `protobuf.dev`
+ * @dependencies `protobuf.dev`, `go.dev^1.11`, `perl.org^5`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const protocgenjsonschemaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) protoc-gen-jsonschema' as const,
+  installCommand: 'launchpad install protoc-gen-jsonschema' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const protocgenjsonschemaPackage = {
    */
   dependencies: [
     'protobuf.dev',
+    'go.dev^1.11',
+    'perl.org^5',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +77,7 @@ export const protocgenjsonschemaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'chrusty/protoc-gen-jsonschema',
-  ] as const,
-  fullPath: 'github.com/chrusty/protoc-gen-jsonschema' as const,
+  aliases: [] as const,
 }
 
 export type ProtocgenjsonschemaPackage = typeof protocgenjsonschemaPackage

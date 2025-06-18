@@ -1,10 +1,12 @@
 /**
- * **libspng.org** - Package from pantry: libspng.org
+ * **libspng.org** - Simple, modern libpng alternative
  *
  * @domain `libspng.org`
+ * @version `0.5.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install libspng.org`
- * @dependencies `zlib.net`, `ninja-build.org^1`, `freedesktop.org/pkg-config`, ... (+1 more)
+ * @install `launchpad install +libspng.org -- $SHELL -i`
+ * @dependencies `zlib.net`, `ninja-build.org@1`, `freedesktop.org/pkg-config`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.libspngorg
  * console.log(pkg.name)        // "libspng.org"
- * console.log(pkg.description) // "Package from pantry: libspng.org"
+ * console.log(pkg.description) // "Simple, modern libpng alternative"
+ * console.log(pkg.versions[0]) // "0.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libspng-org.md
@@ -30,12 +33,15 @@ export const libspngorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: libspng.org' as const,
+  description: 'Simple, modern libpng alternative' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libspng.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install libspng.org' as const,
+  installCommand: 'launchpad install +libspng.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -44,14 +50,18 @@ export const libspngorgPackage = {
    */
   dependencies: [
     'zlib.net',
-    'ninja-build.org^1',
+    'ninja-build.org@1',
     'freedesktop.org/pkg-config',
     'mesonbuild.com',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libspng.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.5.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type LibspngorgPackage = typeof libspngorgPackage

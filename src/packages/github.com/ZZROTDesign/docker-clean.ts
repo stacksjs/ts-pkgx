@@ -6,9 +6,8 @@
  * @version `2.0.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) docker-clean`
+ * @install `launchpad install docker-clean`
  * @name `docker-clean`
- * @aliases `ZZROTDesign/docker-clean`
  * @dependencies `gnu.org/bash`, `docker.com/cli`
  *
  * @example
@@ -49,7 +48,7 @@ export const dockercleanPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) docker-clean' as const,
+  installCommand: 'launchpad install docker-clean' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,10 +76,7 @@ export const dockercleanPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ZZROTDesign/docker-clean',
-  ] as const,
-  fullPath: 'github.com/ZZROTDesign/docker-clean' as const,
+  aliases: [] as const,
 }
 
 export type DockercleanPackage = typeof dockercleanPackage

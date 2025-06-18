@@ -1,11 +1,11 @@
-# dagger
+# dagger.io
 
 > An engine to run your pipelines in containers
 
 ## Package Information
 
 - **Domain**: `dagger.io`
-- **Name**: `dagger`
+- **Name**: `dagger.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dagger.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) dagger
+launchpad install dagger
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `dagger`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `dagger`
 
@@ -57,6 +63,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +dagger.io@0.18.10 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.18`
 
 ## Usage Examples
 

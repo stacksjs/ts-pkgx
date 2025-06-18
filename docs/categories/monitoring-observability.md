@@ -12,7 +12,7 @@ Command-line utility to interact with Sentry
 
 **Programs**: sentry-cli
 
-**Install**: `sh <(curl https://pkgx.sh) sentry-cli`
+**Install**: `launchpad install sentry-cli`
 
 ---
 

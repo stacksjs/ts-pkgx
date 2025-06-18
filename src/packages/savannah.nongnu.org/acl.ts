@@ -6,8 +6,9 @@
  * @version `2.3.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +savannah.nongnu.org/acl -- $SHELL -i`
+ * @install `launchpad install +savannah.nongnu.org/acl -- $SHELL -i`
  * @name `acl`
+ * @dependencies `gnu.org/gcc`, `gnu.org/libtool`, `savannah.nongnu.org/attr`
  *
  * @example
  * ```typescript
@@ -46,7 +47,7 @@ export const aclPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +savannah.nongnu.org/acl -- $SHELL -i' as const,
+  installCommand: 'launchpad install +savannah.nongnu.org/acl -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +58,15 @@ export const aclPackage = {
     'setfacl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gcc',
+    'gnu.org/libtool',
+    'savannah.nongnu.org/attr',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,7 +79,6 @@ export const aclPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'savannah.nongnu.org/acl' as const,
 }
 
 export type AclPackage = typeof aclPackage

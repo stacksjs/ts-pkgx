@@ -1,23 +1,19 @@
 /**
- * **open-source-parsers/jsoncpp** - A C++ library for interacting with JSON.
+ * **jsoncpp** - A C++ library for interacting with JSON.
  *
  * @domain `github.com/open-source-parsers/jsoncpp`
  * @version `1.9.6` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/open-source-parsers/jsoncpp -- $SHELL -i`
- * @aliases `open-source-parsers/jsoncpp`
+ * @dependencies `mesonbuild.com`, `ninja-build.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.opensourceparsersjsoncpp
- * // Or access via domain
- * const samePkg = pantry.githubcomopensourceparsersjsoncpp
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/open-source-parsers/jsoncpp"
+ * const pkg = pantry.githubcomopensourceparsersjsoncpp
+ * console.log(pkg.name)        // "jsoncpp"
  * console.log(pkg.description) // "A C++ library for interacting with JSON."
  * console.log(pkg.versions[0]) // "1.9.6" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/open-source-parsers/jsoncpp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const opensourceparsersjsoncppPackage = {
+export const githubcomopensourceparsersjsoncppPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/open-source-parsers/jsoncpp' as const,
+  name: 'jsoncpp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +44,14 @@ export const opensourceparsersjsoncppPackage = {
   installCommand: 'launchpad install +github.com/open-source-parsers/jsoncpp -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'mesonbuild.com',
+    'ninja-build.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -57,14 +60,7 @@ export const opensourceparsersjsoncppPackage = {
     '1.9.6',
     '1.9.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'open-source-parsers/jsoncpp',
-  ] as const,
-  fullPath: 'github.com/open-source-parsers/jsoncpp' as const,
+  aliases: [] as const,
 }
 
-export type OpensourceparsersjsoncppPackage = typeof opensourceparsersjsoncppPackage
+export type GithubcomopensourceparsersjsoncppPackage = typeof githubcomopensourceparsersjsoncppPackage

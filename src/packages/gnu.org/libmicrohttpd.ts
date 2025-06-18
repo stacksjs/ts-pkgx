@@ -5,31 +5,26 @@
  * @version `1.0.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/libmicrohttpd -- $SHELL -i`
- * @aliases `libmicrohttpd`
- * @dependencies `gnu.org/libunistring^1`
+ * @install `launchpad install +gnu.org/libmicrohttpd -- $SHELL -i`
+ * @dependencies `gnu.org/libunistring^1`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libmicrohttpd
- * // Or access via domain
- * const samePkg = pantry.gnuorglibmicrohttpd
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/libmicrohttpd"
+ * const pkg = pantry.gnuorglibmicrohttpd
+ * console.log(pkg.name)        // "libmicrohttpd"
  * console.log(pkg.versions[0]) // "1.0.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/libmicrohttpd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libmicrohttpdPackage = {
+export const gnuorglibmicrohttpdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/libmicrohttpd' as const,
+  name: 'libmicrohttpd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const libmicrohttpdPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/libmicrohttpd -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/libmicrohttpd -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,6 +49,7 @@ export const libmicrohttpdPackage = {
    */
   dependencies: [
     'gnu.org/libunistring^1',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -62,14 +58,7 @@ export const libmicrohttpdPackage = {
   versions: [
     '1.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libmicrohttpd',
-  ] as const,
-  fullPath: 'gnu.org/libmicrohttpd' as const,
+  aliases: [] as const,
 }
 
-export type LibmicrohttpdPackage = typeof libmicrohttpdPackage
+export type GnuorglibmicrohttpdPackage = typeof gnuorglibmicrohttpdPackage

@@ -6,21 +6,20 @@
  * @version `2.4.6` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) shout`
- * @name `shout`
- * @aliases `libshout`
- * @dependencies `xiph.org/ogg`, `xiph.org/vorbis`, `openssl.org~1`, ... (+2 more)
+ * @install `launchpad install shout`
+ * @aliases `shout`
+ * @dependencies `xiph.org/ogg`, `xiph.org/vorbis`, `openssl.org~1`, ... (+8 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.shout
  * // Or access via domain
  * const samePkg = pantry.xiphorglibshout
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "shout"
+ * console.log(pkg.name)        // "libshout"
  * console.log(pkg.description) // "Data and connectivity library for the icecast s..."
  * console.log(pkg.programs)    // ["shout"]
  * console.log(pkg.versions[0]) // "2.4.6" (latest)
@@ -33,7 +32,7 @@ export const shoutPackage = {
   /**
    * The display name of this package.
    */
-  name: 'shout' as const,
+  name: 'libshout' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const shoutPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) shout' as const,
+  installCommand: 'launchpad install shout' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,6 +67,12 @@ export const shoutPackage = {
     'openssl.org~1',
     'speex.org',
     'theora.org',
+    'freedesktop.org/pkg-config',
+    'curl.se',
+    'gnu.org/patch',
+    'gnu.org/gcc',
+    'freedesktop.org/pkg-config',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -81,9 +86,8 @@ export const shoutPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'libshout',
+    'shout',
   ] as const,
-  fullPath: 'xiph.org/libshout' as const,
 }
 
 export type ShoutPackage = typeof shoutPackage

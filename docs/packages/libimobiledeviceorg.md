@@ -1,11 +1,11 @@
-# idevicedate
+# libimobiledevice.org
 
 > A cross-platform protocol library to communicate with iOS devices
 
 ## Package Information
 
 - **Domain**: `libimobiledevice.org`
-- **Name**: `idevicedate`
+- **Name**: `libimobiledevice.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) idevicedate
+launchpad install idevicedate
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `idevicedate`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `idevicedate`
 

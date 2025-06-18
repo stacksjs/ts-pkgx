@@ -7,20 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/gobject-introspection -- $SHELL -i`
- * @name `g-ir`
- * @aliases `gobject-introspection`
- * @dependencies `gnome.org/glib@2`, `sourceware.org/libffi@3`, `gnu.org/bison@3`, ... (+2 more)
+ * @aliases `g-ir`
+ * @dependencies `gnome.org/glib@2`, `sourceware.org/libffi@3`, `gnu.org/bison^3 #NOTE macOS provides v2`, ... (+11 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.gir
  * // Or access via domain
  * const samePkg = pantry.gnomeorggobjectintrospection
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "g-ir"
+ * console.log(pkg.name)        // "gobject-introspection"
  * console.log(pkg.description) // "Generate introspection data for GObject libraries"
  * console.log(pkg.programs)    // ["g-ir-annotation-tool", "g-ir-compiler", ...]
  * console.log(pkg.versions[0]) // "1.84.0" (latest)
@@ -33,7 +32,7 @@ export const girPackage = {
   /**
    * The display name of this package.
    */
-  name: 'g-ir' as const,
+  name: 'gobject-introspection' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +68,18 @@ export const girPackage = {
   dependencies: [
     'gnome.org/glib@2',
     'sourceware.org/libffi@3',
-    'gnu.org/bison@3',
+    'gnu.org/bison^3 #NOTE macOS provides v2',
     'python.org>=3<3.12',
     'github.com/westes/flex@2',
+    'mesonbuild.com^1.2',
+    'ninja-build.org@1',
+    'gnome.org/glib@2',
+    'pcre.org^8 #NOTE possibly should be automatic',
+    'git-scm.org@2',
+    'gnu.org/sed',
+    'freedesktop.org/pkg-config^0.29',
+    'gnu.org/make',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -89,9 +97,8 @@ export const girPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'gobject-introspection',
+    'g-ir',
   ] as const,
-  fullPath: 'gnome.org/gobject-introspection' as const,
 }
 
 export type GirPackage = typeof girPackage

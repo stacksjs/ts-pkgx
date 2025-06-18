@@ -1,25 +1,20 @@
 /**
- * **github.com/osgeo/libgeotiff** - Official repository of the libgeotiff project
+ * **libgeotiff** - Official repository of the libgeotiff project
  *
  * @domain `github.com/OSGeo/libgeotiff`
  * @programs `applygeo`, `geotifcp`, `listgeo`
  * @version `1.7.4` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/OSGeo/libgeotiff -- $SHELL -i`
- * @aliases `github.com/osgeo/libgeotiff`, `OSGeo/libgeotiff`
+ * @install `launchpad install +github.com/OSGeo/libgeotiff -- $SHELL -i`
  * @dependencies `libjpeg-turbo.org`, `simplesystems.org/libtiff`, `proj.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
  * const pkg = pantry.githubcomosgeolibgeotiff
- * // Or access via domain
- * const samePkg = pantry.githubcomosgeolibgeotiff
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/OSGeo/libgeotiff"
+ * console.log(pkg.name)        // "libgeotiff"
  * console.log(pkg.description) // "Official repository of the libgeotiff project"
  * console.log(pkg.programs)    // ["applygeo", "geotifcp", ...]
  * console.log(pkg.versions[0]) // "1.7.4" (latest)
@@ -32,7 +27,7 @@ export const githubcomosgeolibgeotiffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/OSGeo/libgeotiff' as const,
+  name: 'libgeotiff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const githubcomosgeolibgeotiffPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/OSGeo/libgeotiff -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/OSGeo/libgeotiff -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,15 +73,7 @@ export const githubcomosgeolibgeotiffPackage = {
     '1.7.2',
     '1.7.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'github.com/osgeo/libgeotiff',
-    'OSGeo/libgeotiff',
-  ] as const,
-  fullPath: 'github.com/OSGeo/libgeotiff' as const,
+  aliases: [] as const,
 }
 
 export type GithubcomosgeolibgeotiffPackage = typeof githubcomosgeolibgeotiffPackage

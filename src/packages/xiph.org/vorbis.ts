@@ -5,20 +5,15 @@
  * @version `1.3.7` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +xiph.org/vorbis -- $SHELL -i`
- * @aliases `vorbis`
+ * @install `launchpad install +xiph.org/vorbis -- $SHELL -i`
  * @dependencies `xiph.org/ogg^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.vorbis
- * // Or access via domain
- * const samePkg = pantry.xiphorgvorbis
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xiph.org/vorbis"
+ * const pkg = pantry.xiphorgvorbis
+ * console.log(pkg.name)        // "vorbis"
  * console.log(pkg.description) // "Reference implementation of the Ogg Vorbis audi..."
  * console.log(pkg.versions[0]) // "1.3.7" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/xiph-org/vorbis.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vorbisPackage = {
+export const xiphorgvorbisPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xiph.org/vorbis' as const,
+  name: 'vorbis' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const vorbisPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +xiph.org/vorbis -- $SHELL -i' as const,
+  installCommand: 'launchpad install +xiph.org/vorbis -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -63,14 +58,7 @@ export const vorbisPackage = {
   versions: [
     '1.3.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'vorbis',
-  ] as const,
-  fullPath: 'xiph.org/vorbis' as const,
+  aliases: [] as const,
 }
 
-export type VorbisPackage = typeof vorbisPackage
+export type XiphorgvorbisPackage = typeof xiphorgvorbisPackage

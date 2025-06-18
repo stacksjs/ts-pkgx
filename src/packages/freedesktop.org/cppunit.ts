@@ -6,19 +6,14 @@
  * @version `1.13.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +freedesktop.org/cppunit -- $SHELL -i`
- * @aliases `cppunit`
+ * @install `launchpad install +freedesktop.org/cppunit -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.cppunit
- * // Or access via domain
- * const samePkg = pantry.freedesktoporgcppunit
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "freedesktop.org/cppunit"
+ * const pkg = pantry.freedesktoporgcppunit
+ * console.log(pkg.name)        // "cppunit"
  * console.log(pkg.description) // "Unit testing framework for C++"
  * console.log(pkg.programs)    // ["cppunit-config", "DllPlugInTester"]
  * console.log(pkg.versions[0]) // "1.13.2" (latest)
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/cppunit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cppunitPackage = {
+export const freedesktoporgcppunitPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/cppunit' as const,
+  name: 'cppunit' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const cppunitPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/cppunit -- $SHELL -i' as const,
+  installCommand: 'launchpad install +freedesktop.org/cppunit -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,14 +60,7 @@ export const cppunitPackage = {
   versions: [
     '1.13.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'cppunit',
-  ] as const,
-  fullPath: 'freedesktop.org/cppunit' as const,
+  aliases: [] as const,
 }
 
-export type CppunitPackage = typeof cppunitPackage
+export type FreedesktoporgcppunitPackage = typeof freedesktoporgcppunitPackage

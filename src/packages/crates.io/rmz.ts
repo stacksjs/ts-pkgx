@@ -6,8 +6,9 @@
  * @version `3.1.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rmz`
+ * @install `launchpad install rmz`
  * @name `rmz`
+ * @dependencies `rust-lang.org>=1.85`, `rust-lang.org/cargo^0.86 # edition2024`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const rmzPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rmz' as const,
+  installCommand: 'launchpad install rmz' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,14 @@ export const rmzPackage = {
     'rmz',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.85',
+    'rust-lang.org/cargo^0.86 # edition2024',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -73,7 +81,6 @@ export const rmzPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/rmz' as const,
 }
 
 export type RmzPackage = typeof rmzPackage

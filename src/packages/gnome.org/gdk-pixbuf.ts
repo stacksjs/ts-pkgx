@@ -6,10 +6,9 @@
  * @version `2.43.2` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/gdk-pixbuf -- $SHELL -i`
+ * @install `launchpad install +gnome.org/gdk-pixbuf -- $SHELL -i`
  * @name `gdk-pixbuf`
- * @aliases `gnome.org-gdk-pixbuf`
- * @dependencies `ijg.org@9.6`, `gnome.org/glib@2`, `libpng.org@1`, ... (+1 more)
+ * @dependencies `ijg.org^9.6 # needs fixed major; sadly this includes the character > v9f`, `gnome.org/glib@2`, `libpng.org@1`, ... (+7 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const gdkpixbufPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/gdk-pixbuf -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/gdk-pixbuf -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,10 +65,16 @@ export const gdkpixbufPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'ijg.org@9.6',
+    'ijg.org^9.6 # needs fixed major; sadly this includes the character > v9f',
     'gnome.org/glib@2',
     'libpng.org@1',
-    'freedesktop.org/shared-mime-info@2',
+    'freedesktop.org/shared-mime-info^2 #FIXME only on Linux',
+    'mesonbuild.com^1 # since 2.43.2',
+    'ninja-build.org@1',
+    'freedesktop.org/pkg-config^0.29',
+    'gnome.org/gobject-introspection@1',
+    'python.org>=3<3.12',
+    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -84,10 +89,7 @@ export const gdkpixbufPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gnome.org-gdk-pixbuf',
-  ] as const,
-  fullPath: 'gnome.org-gdk-pixbuf' as const,
+  aliases: [] as const,
 }
 
 export type GdkpixbufPackage = typeof gdkpixbufPackage

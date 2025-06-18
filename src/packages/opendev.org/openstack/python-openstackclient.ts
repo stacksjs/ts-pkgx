@@ -7,20 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +opendev.org/openstack/python-openstackclient -- $SHELL -i`
- * @name `openstack`
- * @aliases `openstack/python-openstackclient`
- * @dependencies `pkgx.sh^1`
+ * @aliases `openstack`
+ * @dependencies `pkgx.sh^1`, `python.org^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.openstack
  * // Or access via domain
  * const samePkg = pantry.opendevorgopenstackpythonopenstackclient
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openstack"
+ * console.log(pkg.name)        // "python-openstackclient"
  * console.log(pkg.programs)    // ["openstack", "openstack-inventory"]
  * console.log(pkg.versions[0]) // "8.1.0" (latest)
  * ```
@@ -32,7 +31,7 @@ export const openstackPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openstack' as const,
+  name: 'python-openstackclient' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -64,6 +63,7 @@ export const openstackPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -96,9 +96,8 @@ export const openstackPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'openstack/python-openstackclient',
+    'openstack',
   ] as const,
-  fullPath: 'opendev.org/openstack/python-openstackclient' as const,
 }
 
 export type OpenstackPackage = typeof openstackPackage

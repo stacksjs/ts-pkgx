@@ -6,9 +6,9 @@
  * @version `1.4f` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) autossh`
+ * @install `launchpad install autossh`
  * @name `autossh`
- * @dependencies `openssh.com`
+ * @dependencies `openssh.com`, `gnu.org/make`, `gnu.org/gcc`
  *
  * @example
  * ```typescript
@@ -43,12 +43,12 @@ export const autosshPackage = {
   description: 'Automatically restart SSH sessions and tunnels' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/harding.motd.ca/autossh/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/Autossh/autossh' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) autossh' as const,
+  installCommand: 'launchpad install autossh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const autosshPackage = {
    */
   dependencies: [
     'openssh.com',
+    'gnu.org/make',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,7 +78,6 @@ export const autosshPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'harding.motd.ca/autossh' as const,
 }
 
 export type AutosshPackage = typeof autosshPackage

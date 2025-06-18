@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +htslib.org -- $SHELL -i
+launchpad install +htslib.org -- $SHELL -i
 ```
 
 ## Programs
@@ -51,6 +51,9 @@ This package depends on:
 - `tukaani.org/xz`
 - `zlib.net^1`
 - `curl.se>=5`
+- `gnu.org/make`
+- `gnu.org/autoconf`
+- `gnu.org/automake^1`
 
 ## Usage Examples
 

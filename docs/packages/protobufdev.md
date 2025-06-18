@@ -1,11 +1,11 @@
-# Protocol Buffers
+# protobuf.dev
 
 > Protocol Buffers - Google's data interchange format
 
 ## Package Information
 
 - **Domain**: `protobuf.dev`
-- **Name**: `Protocol Buffers`
+- **Name**: `protobuf.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/protobuf.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) protoc
+launchpad install protoc
 ```
 
 ## Programs
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `protoc`
-- `protocol buffers`
 
 ## Available Versions
 
@@ -61,6 +60,8 @@ This package depends on:
 
 - `zlib.net^1`
 - `abseil.io`
+- `cmake.org^3`
+- `abseil.io^20250127 # FIXME: how? it links to e.g. libabsl_bad_any_cast_impl.so.2308.0.0`
 
 ## Usage Examples
 

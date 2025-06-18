@@ -6,9 +6,9 @@
  * @version `0.47.7` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) toast`
+ * @install `launchpad install toast`
  * @name `toast`
- * @aliases `crates.io-toast`
+ * @dependencies `rust-lang.org>=1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const toastPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) toast' as const,
+  installCommand: 'launchpad install toast' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const toastPackage = {
     'toast',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,10 +78,7 @@ export const toastPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'crates.io-toast',
-  ] as const,
-  fullPath: 'crates.io-toast' as const,
+  aliases: [] as const,
 }
 
 export type ToastPackage = typeof toastPackage

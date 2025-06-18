@@ -1,11 +1,11 @@
-# libdrm
+# dri.freedesktop.org
 
-> Package information available on pkgx.dev
+> A package from drifreedesktop.org
 
 ## Package Information
 
-- **Domain**: `dri.freedesktop.org`
-- **Name**: `libdrm`
+- **Domain**: `drifreedesktop.org`
+- **Name**: `dri.freedesktop.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dri.freedesktop.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx dri.freedesktop.org
+launchpad install +dri.freedesktop.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,43 @@ pkgx dri.freedesktop.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `libdrm`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `2.4.125`, `2.4.124`, `2.4.123`, `2.4.122`, `2.4.121`
+- `2.4.120`, `2.4.119`, `2.4.118`, `2.4.117`, `2.4.116`
+- `2.4.100`
+
+</details>
+
+**Latest Version**: `2.4.125`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +drifreedesktop.org@2.4.125 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `x.org/pciaccess`
+- `mesonbuild.com`
+- `ninja-build.org`
+- `freedesktop.org/pkg-config`
+- `python.org~3.11`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

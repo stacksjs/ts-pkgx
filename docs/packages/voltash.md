@@ -1,11 +1,11 @@
-# volta
+# volta.sh
 
 > JavaScript toolchain manager for reproducible environments
 
 ## Package Information
 
 - **Domain**: `volta.sh`
-- **Name**: `volta`
+- **Name**: `volta.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/volta.sh/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) volta
+launchpad install volta
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `volta`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `volta`
 
@@ -44,8 +50,9 @@ sh <(curl https://pkgx.sh) +volta.sh@2.0.2 -- $SHELL -i
 
 This package depends on:
 
-- `linuxcurl.se/ca-certs`
 - `curl.se/ca-certs`
+- `rust-lang.org^1.75`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

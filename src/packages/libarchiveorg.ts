@@ -1,10 +1,13 @@
 /**
- * **libarchive.org** - Package from pantry: libarchive.org
+ * **libarchive.org** - Multi-format archive and compression library
  *
  * @domain `libarchive.org`
+ * @programs `bsdcat`, `bsdcpio`, `bsdtar`
+ * @version `3.8.1` (13 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install libarchive.org`
- * @dependencies `gnu.org/coreutils`, `lz4.org^1`, `tukaani.org/xz^5`, ... (+4 more)
+ * @install `launchpad install +libarchive.org -- $SHELL -i`
+ * @dependencies `gnu.org/coreutils`, `lz4.org@1`, `tukaani.org/xz@5`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.libarchiveorg
  * console.log(pkg.name)        // "libarchive.org"
- * console.log(pkg.description) // "Package from pantry: libarchive.org"
+ * console.log(pkg.description) // "Multi-format archive and compression library"
+ * console.log(pkg.programs)    // ["bsdcat", "bsdcpio", ...]
+ * console.log(pkg.versions[0]) // "3.8.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libarchive-org.md
@@ -30,13 +35,24 @@ export const libarchiveorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: libarchive.org' as const,
+  description: 'Multi-format archive and compression library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libarchive.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install libarchive.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +libarchive.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'bsdcat',
+    'bsdcpio',
+    'bsdtar',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -44,17 +60,33 @@ export const libarchiveorgPackage = {
    */
   dependencies: [
     'gnu.org/coreutils',
-    'lz4.org^1',
-    'tukaani.org/xz^5',
-    'facebook.com/zstd^1',
-    'sourceware.org/bzip2^1',
-    'libexpat.github.io^2',
-    'zlib.net^1',
+    'lz4.org@1',
+    'tukaani.org/xz@5',
+    'facebook.com/zstd@1',
+    'sourceware.org/bzip2@1',
+    'libexpat.github.io@2',
+    'zlib.net@1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libarchive.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.8.1',
+    '3.8.0',
+    '3.7.9',
+    '3.7.8',
+    '3.7.7',
+    '3.7.6',
+    '3.7.5',
+    '3.7.4',
+    '3.7.3',
+    '3.7.2',
+    '3.7.1',
+    '3.7.0',
+    '3.6.2',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type LibarchiveorgPackage = typeof libarchiveorgPackage

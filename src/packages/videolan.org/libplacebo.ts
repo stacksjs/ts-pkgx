@@ -5,31 +5,26 @@
  * @version `7.351.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +videolan.org/libplacebo -- $SHELL -i`
- * @aliases `libplacebo`
- * @dependencies `littlecms.com^2`, `github.com/KhronosGroup/Vulkan-Loader^1.3.272`
+ * @install `launchpad install +videolan.org/libplacebo -- $SHELL -i`
+ * @dependencies `littlecms.com^2`, `github.com/KhronosGroup/Vulkan-Loader^1.3.272`, `mesonbuild.com`, ... (+7 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libplacebo
- * // Or access via domain
- * const samePkg = pantry.videolanorglibplacebo
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "videolan.org/libplacebo"
+ * const pkg = pantry.videolanorglibplacebo
+ * console.log(pkg.name)        // "libplacebo"
  * console.log(pkg.versions[0]) // "7.351.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/videolan-org/libplacebo.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libplaceboPackage = {
+export const videolanorglibplaceboPackage = {
   /**
    * The display name of this package.
    */
-  name: 'videolan.org/libplacebo' as const,
+  name: 'libplacebo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const libplaceboPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +videolan.org/libplacebo -- $SHELL -i' as const,
+  installCommand: 'launchpad install +videolan.org/libplacebo -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,14 @@ export const libplaceboPackage = {
   dependencies: [
     'littlecms.com^2',
     'github.com/KhronosGroup/Vulkan-Loader^1.3.272',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'python.org^3.11',
+    'github.com/KhronosGroup/Vulkan-Headers',
+    'curl.se',
+    'gnu.org/gcc',
+    'freedesktop.org/pkg-config',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -66,14 +69,7 @@ export const libplaceboPackage = {
     '6.338.2',
     '6.338.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libplacebo',
-  ] as const,
-  fullPath: 'videolan.org/libplacebo' as const,
+  aliases: [] as const,
 }
 
-export type LibplaceboPackage = typeof libplaceboPackage
+export type VideolanorglibplaceboPackage = typeof videolanorglibplaceboPackage

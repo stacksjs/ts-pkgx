@@ -1,11 +1,11 @@
-# surreal
+# surrealdb.com
 
 > A scalable, distributed, collaborative, document-graph database, for the realtime web
 
 ## Package Information
 
 - **Domain**: `surrealdb.com`
-- **Name**: `surreal`
+- **Name**: `surrealdb.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/surrealdb.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) surreal
+launchpad install surreal
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `surreal`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `surreal`
 
@@ -53,6 +59,10 @@ sh <(curl https://pkgx.sh) +surrealdb.com@2023.9.1 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1`
+- `rust-lang.org>=1.60`
+- `rust-lang.org/cargo`
+- `freedesktop.org/pkg-config^0.29`
+- `gnu.org/patch`
 
 ## Usage Examples
 

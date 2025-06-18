@@ -6,9 +6,9 @@
  * @version `1.4.2` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) daff`
+ * @install `launchpad install daff`
  * @name `daff`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh^1`, `python.org>=3.7<3.12`, `pip.pypa.io`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const daffPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) daff' as const,
+  installCommand: 'launchpad install daff' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const daffPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org>=3.7<3.12',
+    'pip.pypa.io',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,7 +79,6 @@ export const daffPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'paulfitz.github.io/daff' as const,
 }
 
 export type DaffPackage = typeof daffPackage

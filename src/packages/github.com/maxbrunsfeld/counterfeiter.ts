@@ -6,10 +6,9 @@
  * @version `6.11.2` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) counterfeiter`
+ * @install `launchpad install counterfeiter`
  * @name `counterfeiter`
- * @aliases `maxbrunsfeld/counterfeiter`
- * @dependencies `go.dev`
+ * @dependencies `go.dev`, `go.dev`, `go.dev`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const counterfeiterPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) counterfeiter' as const,
+  installCommand: 'launchpad install counterfeiter' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +62,8 @@ export const counterfeiterPackage = {
    * These will be automatically installed.
    */
   dependencies: [
+    'go.dev',
+    'go.dev',
     'go.dev',
   ] as const,
   /**
@@ -85,10 +86,7 @@ export const counterfeiterPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'maxbrunsfeld/counterfeiter',
-  ] as const,
-  fullPath: 'github.com/maxbrunsfeld/counterfeiter' as const,
+  aliases: [] as const,
 }
 
 export type CounterfeiterPackage = typeof counterfeiterPackage

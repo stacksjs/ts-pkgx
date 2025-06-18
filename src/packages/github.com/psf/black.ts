@@ -6,9 +6,8 @@
  * @version `25.1.0` (19 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/psf/black -- $SHELL -i`
+ * @install `launchpad install +github.com/psf/black -- $SHELL -i`
  * @name `black`
- * @aliases `psf/black`
  * @dependencies `python.org>=3.7<3.12`, `gnu.org/which`
  *
  * @example
@@ -49,7 +48,7 @@ export const blackPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/psf/black -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/psf/black -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -96,10 +95,7 @@ export const blackPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'psf/black',
-  ] as const,
-  fullPath: 'github.com/psf/black' as const,
+  aliases: [] as const,
 }
 
 export type BlackPackage = typeof blackPackage

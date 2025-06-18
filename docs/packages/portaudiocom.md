@@ -1,11 +1,11 @@
-# PortAudio
+# portaudio.com
 
 > PortAudio is a cross-platform, open-source C language library for real-time audio input and output.
 
 ## Package Information
 
 - **Domain**: `portaudio.com`
-- **Name**: `PortAudio`
+- **Name**: `portaudio.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/portaudio.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +portaudio.com -- $SHELL -i
+launchpad install +portaudio.com -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,12 @@ sh <(curl https://pkgx.sh) +portaudio.com -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `PortAudio`
 
 ## Available Versions
 
@@ -39,6 +45,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +portaudio.com@19.7.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

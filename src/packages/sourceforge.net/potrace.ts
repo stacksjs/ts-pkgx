@@ -6,21 +6,20 @@
  * @version `1.16.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +sourceforge.net/potrace -- $SHELL -i`
- * @name `sf.net/potrace`
- * @aliases `potrace`
- * @dependencies `zlib.net^1`
+ * @install `launchpad install +sourceforge.net/potrace -- $SHELL -i`
+ * @aliases `sf.net/potrace`
+ * @dependencies `zlib.net^1`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sfnetpotrace
  * // Or access via domain
  * const samePkg = pantry.sourceforgenetpotrace
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sf.net/potrace"
+ * console.log(pkg.name)        // "potrace"
  * console.log(pkg.description) // "Convert bitmaps to vector graphics"
  * console.log(pkg.programs)    // ["potrace", "mkbitmap"]
  * console.log(pkg.versions[0]) // "1.16.0" (latest)
@@ -33,7 +32,7 @@ export const sfnetpotracePackage = {
   /**
    * The display name of this package.
    */
-  name: 'sf.net/potrace' as const,
+  name: 'potrace' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const sfnetpotracePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/potrace -- $SHELL -i' as const,
+  installCommand: 'launchpad install +sourceforge.net/potrace -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,7 @@ export const sfnetpotracePackage = {
    */
   dependencies: [
     'zlib.net^1',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,9 +78,8 @@ export const sfnetpotracePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'potrace',
+    'sf.net/potrace',
   ] as const,
-  fullPath: 'sourceforge.net/potrace' as const,
 }
 
 export type SfnetpotracePackage = typeof sfnetpotracePackage

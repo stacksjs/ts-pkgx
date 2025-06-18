@@ -1,11 +1,11 @@
-# unbound
+# unbound.net
 
 > Unbound is a validating, recursive, and caching DNS resolver.
 
 ## Package Information
 
 - **Domain**: `unbound.net`
-- **Name**: `unbound`
+- **Name**: `unbound.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/unbound.net/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +unbound.net -- $SHELL -i
+launchpad install +unbound.net -- $SHELL -i
 ```
 
 ## Programs
@@ -26,6 +26,12 @@ This package provides the following executable programs:
 - `unbound-control`
 - `unbound-control-setup`
 - `unbound-host`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `unbound`
 
 ## Available Versions
 
@@ -52,6 +58,9 @@ sh <(curl https://pkgx.sh) +unbound.net@1.23.0 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1`
+- `libexpat.github.io`
+- `github.com/westes/flex`
+- `gnu.org/bison^3`
 
 ## Usage Examples
 

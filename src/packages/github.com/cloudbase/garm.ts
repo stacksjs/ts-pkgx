@@ -6,19 +6,20 @@
  * @version `0.1.5` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/cloudbase/garm -- $SHELL -i`
- * @name `cloudbase/garm`
+ * @install `launchpad install +github.com/cloudbase/garm -- $SHELL -i`
+ * @aliases `cloudbase/garm`
+ * @dependencies `go.dev^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.cloudbasegarm
  * // Or access via domain
  * const samePkg = pantry.githubcomcloudbasegarm
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cloudbase/garm"
+ * console.log(pkg.name)        // "garm"
  * console.log(pkg.description) // "GitHub Actions Runner Manager"
  * console.log(pkg.programs)    // ["garm", "garm-cli"]
  * console.log(pkg.versions[0]) // "0.1.5" (latest)
@@ -31,7 +32,7 @@ export const cloudbasegarmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cloudbase/garm' as const,
+  name: 'garm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +48,7 @@ export const cloudbasegarmPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/cloudbase/garm -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/cloudbase/garm -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +58,13 @@ export const cloudbasegarmPackage = {
     'garm-cli',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,8 +77,9 @@ export const cloudbasegarmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
-  fullPath: 'github.com/cloudbase/garm' as const,
+  aliases: [
+    'cloudbase/garm',
+  ] as const,
 }
 
 export type CloudbasegarmPackage = typeof cloudbasegarmPackage

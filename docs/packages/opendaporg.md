@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +opendap.org -- $SHELL -i
+launchpad install +opendap.org -- $SHELL -i
 ```
 
 ## Programs
@@ -50,9 +50,15 @@ This package depends on:
 - `gnome.org/libxml2`
 - `openssl.org`
 - `curl.se`
-- `linuxsourceforge.net/libtirpcgithub.com/util-linux/util-linux`
 - `sourceforge.net/libtirpc`
 - `github.com/util-linux/util-linux`
+- `gnu.org/bison`
+- `freedesktop.org/pkg-config`
+- `github.com/westes/flex`
+- `gnu.org/patch`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `gnu.org/libtool`
 
 ## Usage Examples
 

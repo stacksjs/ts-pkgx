@@ -1,24 +1,34 @@
 /**
- * **mitmproxy.org** - Package from pantry: mitmproxy.org
+ * **mitmproxy** - An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.
  *
  * @domain `mitmproxy.org`
+ * @programs `mitmproxy`
+ * @version `12.1.1` (27 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install mitmproxy.org`
+ * @install `launchpad install mitmproxy`
+ * @aliases `mitmproxy`
  * @dependencies `pkgx.sh^1`, `python.org~3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.mitmproxyorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.mitmproxy
+ * // Or access via domain
+ * const samePkg = pantry.mitmproxyorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "mitmproxy.org"
- * console.log(pkg.description) // "Package from pantry: mitmproxy.org"
+ * console.log(pkg.description) // "An interactive TLS-capable intercepting HTTP pr..."
+ * console.log(pkg.programs)    // ["mitmproxy"]
+ * console.log(pkg.versions[0]) // "12.1.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mitmproxy-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mitmproxyorgPackage = {
+export const mitmproxyPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const mitmproxyorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: mitmproxy.org' as const,
+  description: 'An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mitmproxy.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install mitmproxy.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install mitmproxy' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'mitmproxy',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -46,10 +65,46 @@ export const mitmproxyorgPackage = {
     'pkgx.sh^1',
     'python.org~3.12',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mitmproxy.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '12.1.1',
+    '12.1.0',
+    '12.0.1',
+    '12.0.0',
+    '11.1.3',
+    '11.1.2',
+    '11.1.1',
+    '11.1.0',
+    '11.0.2',
+    '11.0.1',
+    '11.0.0',
+    '10.4.2',
+    '10.4.1',
+    '10.4.0',
+    '10.3.0',
+    '10.2.4',
+    '10.2.3',
+    '10.2.2',
+    '10.2.1',
+    '10.2.0',
+    '10.1.6',
+    '10.1.5',
+    '10.1.4',
+    '10.1.3',
+    '10.1.2',
+    '10.1.1',
+    '10.1.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'mitmproxy',
+  ] as const,
 }
 
-export type MitmproxyorgPackage = typeof mitmproxyorgPackage
+export type MitmproxyPackage = typeof mitmproxyPackage

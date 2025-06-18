@@ -6,9 +6,9 @@
  * @version `1.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) gomarkdoc`
+ * @install `launchpad install gomarkdoc`
  * @name `gomarkdoc`
- * @aliases `princjef/gomarkdoc`
+ * @dependencies `go.dev^1.18`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gomarkdocPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) gomarkdoc' as const,
+  installCommand: 'launchpad install gomarkdoc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const gomarkdocPackage = {
     'gomarkdoc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +75,7 @@ export const gomarkdocPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'princjef/gomarkdoc',
-  ] as const,
-  fullPath: 'github.com/princjef/gomarkdoc' as const,
+  aliases: [] as const,
 }
 
 export type GomarkdocPackage = typeof gomarkdocPackage

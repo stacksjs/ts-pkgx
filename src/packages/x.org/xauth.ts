@@ -6,9 +6,9 @@
  * @version `1.1.4` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) xauth`
+ * @install `launchpad install xauth`
  * @name `xauth`
- * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xau`, ... (+4 more)
+ * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xau`, ... (+7 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const xauthPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) xauth' as const,
+  installCommand: 'launchpad install xauth' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,9 +66,12 @@ export const xauthPackage = {
     'x.org/exts',
     'x.org/xau',
     'x.org/xmu',
-    'linuxx.org/xcbx.org/xdmcp',
     'x.org/xcb',
     'x.org/xdmcp',
+    'freedesktop.org/pkg-config',
+    'x.org/util-macros',
+    'gnu.org/gcc',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -84,7 +87,6 @@ export const xauthPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'x.org/xauth' as const,
 }
 
 export type XauthPackage = typeof xauthPackage

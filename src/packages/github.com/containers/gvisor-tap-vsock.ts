@@ -1,24 +1,20 @@
 /**
- * **containers/gvisor-tap-vsock** - A new network stack based on gVisor
+ * **gvisor-tap-vsock** - A new network stack based on gVisor
  *
  * @domain `github.com/containers/gvisor-tap-vsock`
  * @programs `gvproxy`, `qemu-wrapper`
  * @version `0.8.6` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/containers/gvisor-tap-vsock -- $SHELL -i`
- * @aliases `containers/gvisor-tap-vsock`
+ * @install `launchpad install +github.com/containers/gvisor-tap-vsock -- $SHELL -i`
+ * @dependencies `go.dev^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.containersgvisortapvsock
- * // Or access via domain
- * const samePkg = pantry.githubcomcontainersgvisortapvsock
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/containers/gvisor-tap-vsock"
+ * const pkg = pantry.githubcomcontainersgvisortapvsock
+ * console.log(pkg.name)        // "gvisor-tap-vsock"
  * console.log(pkg.description) // "A new network stack based on gVisor"
  * console.log(pkg.programs)    // ["gvproxy", "qemu-wrapper"]
  * console.log(pkg.versions[0]) // "0.8.6" (latest)
@@ -27,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/containers/gvisor-tap-vsock.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const containersgvisortapvsockPackage = {
+export const githubcomcontainersgvisortapvsockPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/containers/gvisor-tap-vsock' as const,
+  name: 'gvisor-tap-vsock' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +43,7 @@ export const containersgvisortapvsockPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/containers/gvisor-tap-vsock -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/containers/gvisor-tap-vsock -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +53,13 @@ export const containersgvisortapvsockPackage = {
     'qemu-wrapper',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -79,14 +81,7 @@ export const containersgvisortapvsockPackage = {
     '0.6.2',
     '0.6.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'containers/gvisor-tap-vsock',
-  ] as const,
-  fullPath: 'github.com/containers/gvisor-tap-vsock' as const,
+  aliases: [] as const,
 }
 
-export type ContainersgvisortapvsockPackage = typeof containersgvisortapvsockPackage
+export type GithubcomcontainersgvisortapvsockPackage = typeof githubcomcontainersgvisortapvsockPackage

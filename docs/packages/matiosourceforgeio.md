@@ -1,11 +1,11 @@
-# libmatio
+# matio.sourceforge.io
 
 > C library for reading and writing MATLAB MAT files
 
 ## Package Information
 
-- **Domain**: `matio.sourceforge.io`
-- **Name**: `libmatio`
+- **Domain**: `matiosourceforge.io`
+- **Name**: `matio.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/matio.sourceforge.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) matdump
+launchpad install matdump
 ```
 
 ## Programs
@@ -27,6 +27,7 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `matdump`
+- `libmatio`
 
 ## Available Versions
 
@@ -44,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +matio.sourceforge.io@1.5.28 -- $SHELL -i
+sh <(curl https://pkgx.sh) +matiosourceforge.io@1.5.28 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +wireshark.org -- $SHELL -i
+launchpad install +wireshark.org -- $SHELL -i
 ```
 
 ## Programs
@@ -75,6 +75,11 @@ This package depends on:
 - `github.com/xiph/speexdsp^1.2.1`
 - `tcpdump.org^1.10.4`
 - `gnome.org/libxml2^2.12.3`
+- `cmake.org`
+- `gnu.org/bison`
+- `github.com/westes/flex`
+- `python.org^3.11`
+- `perl.org@5`
 
 ## Usage Examples
 

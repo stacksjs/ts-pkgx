@@ -1,11 +1,11 @@
-# dozzle
+# dozzle.dev
 
 > Realtime log viewer for docker containers.
 
 ## Package Information
 
 - **Domain**: `dozzle.dev`
-- **Name**: `dozzle`
+- **Name**: `dozzle.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dozzle.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) dozzle
+launchpad install dozzle
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `dozzle`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `dozzle`
 
@@ -50,6 +56,14 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +dozzle.dev@8.13.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.21`
+- `pnpm.io`
+- `openssl.org`
 
 ## Usage Examples
 

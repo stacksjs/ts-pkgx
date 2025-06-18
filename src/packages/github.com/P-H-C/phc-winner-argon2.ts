@@ -6,20 +6,19 @@
  * @version `20190702.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) argon2`
- * @name `argon2`
- * @aliases `P-H-C/phc-winner-argon2`
+ * @install `launchpad install argon2`
+ * @aliases `argon2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.argon2
  * // Or access via domain
  * const samePkg = pantry.githubcomphcphcwinnerargon2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "argon2"
+ * console.log(pkg.name)        // "phc-winner-argon2"
  * console.log(pkg.description) // "The password hash Argon2, winner of PHC"
  * console.log(pkg.programs)    // ["argon2"]
  * console.log(pkg.versions[0]) // "20190702.0.0" (latest)
@@ -32,7 +31,7 @@ export const argon2Package = {
   /**
    * The display name of this package.
    */
-  name: 'argon2' as const,
+  name: 'phc-winner-argon2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +47,7 @@ export const argon2Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) argon2' as const,
+  installCommand: 'launchpad install argon2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,9 +69,8 @@ export const argon2Package = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'P-H-C/phc-winner-argon2',
+    'argon2',
   ] as const,
-  fullPath: 'github.com/P-H-C/phc-winner-argon2' as const,
 }
 
 export type Argon2Package = typeof argon2Package

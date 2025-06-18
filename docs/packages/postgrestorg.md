@@ -1,11 +1,11 @@
-# postgrest
+# postgrest.org
 
 > Serves a fully RESTful API from any existing PostgreSQL database
 
 ## Package Information
 
 - **Domain**: `postgrest.org`
-- **Name**: `postgrest`
+- **Name**: `postgrest.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/postgrest.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) postgrest
+launchpad install postgrest
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `postgrest`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `postgrest`
 
@@ -49,6 +55,11 @@ This package depends on:
 - `postgresql.org/libpq@17`
 - `zlib.net~1.3`
 - `gnu.org/gcc/libstdcxx@14`
+- `gnome.org/libxml2~2.13 # 2.14 changes library api version`
+- `haskell.org~9.8`
+- `haskell.org/cabal^3`
+- `gnu.org/gcc`
+- `gnu.org/binutils`
 
 ## Usage Examples
 

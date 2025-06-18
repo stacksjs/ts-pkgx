@@ -1,11 +1,11 @@
-# k9s
+# k9scli.io
 
 > 🐶 Kubernetes CLI To Manage Your Clusters In Style!
 
 ## Package Information
 
 - **Domain**: `k9scli.io`
-- **Name**: `k9s`
+- **Name**: `k9scli.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/k9scli.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) k9s
+launchpad install k9s
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `k9s`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `k9s`
 
@@ -49,6 +55,14 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +k9scli.io@0.50.6 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.18`
+- `gnu.org/make`
+- `git-scm.org`
 
 ## Usage Examples
 

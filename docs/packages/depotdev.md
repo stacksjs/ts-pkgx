@@ -1,11 +1,11 @@
-# depot
+# depot.dev
 
 > 🖥️ Depot CLI, build your Docker images in the cloud
 
 ## Package Information
 
 - **Domain**: `depot.dev`
-- **Name**: `depot`
+- **Name**: `depot.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/depot.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) depot
+launchpad install depot
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `depot`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `depot`
 
@@ -47,6 +53,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +depot.dev@2.88.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev~1.21`
+- `gnu.org/coreutils`
 
 ## Usage Examples
 

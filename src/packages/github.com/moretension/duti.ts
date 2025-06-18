@@ -6,9 +6,9 @@
  * @version `1.5.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) duti`
+ * @install `launchpad install duti`
  * @name `duti`
- * @aliases `moretension/duti`
+ * @dependencies `gnu.org/autoconf`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const dutiPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) duti' as const,
+  installCommand: 'launchpad install duti' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const dutiPackage = {
     'duti',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +75,7 @@ export const dutiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'moretension/duti',
-  ] as const,
-  fullPath: 'github.com/moretension/duti' as const,
+  aliases: [] as const,
 }
 
 export type DutiPackage = typeof dutiPackage

@@ -1,11 +1,11 @@
-# cnquery
+# cnquery.io
 
 > open source, cloud-native, graph-based asset inventory
 
 ## Package Information
 
 - **Domain**: `cnquery.io`
-- **Name**: `cnquery`
+- **Name**: `cnquery.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cnquery.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) cnquery
+launchpad install cnquery
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `cnquery`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `cnquery`
 
@@ -68,6 +74,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +cnquery.io@11.59.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev~1.21`
+- `curl.se`
 
 ## Usage Examples
 

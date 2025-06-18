@@ -1,11 +1,11 @@
-# etcd
+# etcd.io
 
 > Distributed reliable key-value store for the most critical data of a distributed system
 
 ## Package Information
 
 - **Domain**: `etcd.io`
-- **Name**: `etcd`
+- **Name**: `etcd.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/etcd.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +etcd.io -- $SHELL -i
+launchpad install +etcd.io -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `etcd`
 - `etcdctl`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `etcd`
 
 ## Available Versions
 
@@ -42,6 +48,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +etcd.io@3.6.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.22`
+- `crates.io/killport`
 
 ## Usage Examples
 

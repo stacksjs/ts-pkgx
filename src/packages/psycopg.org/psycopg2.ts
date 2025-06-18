@@ -5,20 +5,15 @@
  * @version `2.9.10` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +psycopg.org/psycopg2 -- $SHELL -i`
- * @aliases `psycopg2`
+ * @install `launchpad install +psycopg.org/psycopg2 -- $SHELL -i`
  * @dependencies `python.org~3.11`, `postgresql.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.psycopg2
- * // Or access via domain
- * const samePkg = pantry.psycopgorgpsycopg2
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "psycopg.org/psycopg2"
+ * const pkg = pantry.psycopgorgpsycopg2
+ * console.log(pkg.name)        // "psycopg2"
  * console.log(pkg.description) // "PostgreSQL database adapter for the Python prog..."
  * console.log(pkg.versions[0]) // "2.9.10" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/psycopg-org/psycopg2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const psycopg2Package = {
+export const psycopgorgpsycopg2Package = {
   /**
    * The display name of this package.
    */
-  name: 'psycopg.org/psycopg2' as const,
+  name: 'psycopg2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,12 +36,12 @@ export const psycopg2Package = {
   description: 'PostgreSQL database adapter for the Python programming language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/psycopg.org/psycopg2/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/psycopg/psycopg2' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +psycopg.org/psycopg2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +psycopg.org/psycopg2 -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,14 +60,7 @@ export const psycopg2Package = {
     '2.9.10',
     '2.9.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'psycopg2',
-  ] as const,
-  fullPath: 'psycopg.org/psycopg2' as const,
+  aliases: [] as const,
 }
 
-export type Psycopg2Package = typeof psycopg2Package
+export type Psycopgorgpsycopg2Package = typeof psycopgorgpsycopg2Package

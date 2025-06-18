@@ -6,20 +6,20 @@
  * @version `12.0.1` (26 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +mariadb.com/server -- $SHELL -i`
- * @name `MariaDB`
- * @dependencies `sourceware.org/bzip2^1`, `github.com/besser82/libxcrypt^4`, `gnome.org/libxml2`, ... (+5 more)
+ * @install `launchpad install +mariadb.com/server -- $SHELL -i`
+ * @aliases `MariaDB`
+ * @dependencies `sourceware.org/bzip2^1`, `github.com/besser82/libxcrypt^4`, `gnome.org/libxml2`, ... (+12 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.MariaDB
  * // Or access via domain
  * const samePkg = pantry.mariadbcomserver
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "MariaDB"
+ * console.log(pkg.name)        // "server"
  * console.log(pkg.description) // "MariaDB server is a community developed fork of..."
  * console.log(pkg.programs)    // ["aria_chk", "aria_dump_log", ...]
  * console.log(pkg.versions[0]) // "12.0.1" (latest)
@@ -32,7 +32,7 @@ export const mariaDBPackage = {
   /**
    * The display name of this package.
    */
-  name: 'MariaDB' as const,
+  name: 'server' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,12 +43,12 @@ export const mariaDBPackage = {
   description: 'MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mariadb.com/server/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/MariaDB/server' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +mariadb.com/server -- $SHELL -i' as const,
+  installCommand: 'launchpad install +mariadb.com/server -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -153,6 +153,13 @@ export const mariaDBPackage = {
     'openssl.org^1.1',
     'pcre.org/v2^10',
     'facebook.com/zstd^1',
+    'cmake.org',
+    'freedesktop.org/pkg-config',
+    'gnu.org/bison',
+    'gnu.org/coreutils',
+    'git-scm.org',
+    'groonga.org',
+    'fmt.dev^9',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -190,8 +197,9 @@ export const mariaDBPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
-  fullPath: 'mariadb.com/server' as const,
+  aliases: [
+    'MariaDB',
+  ] as const,
 }
 
 export type MariaDBPackage = typeof mariaDBPackage

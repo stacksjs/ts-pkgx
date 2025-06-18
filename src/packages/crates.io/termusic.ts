@@ -6,9 +6,9 @@
  * @version `0.10.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +crates.io/termusic -- $SHELL -i`
+ * @install `launchpad install +crates.io/termusic -- $SHELL -i`
  * @name `termusic`
- * @dependencies `linuxalsa-project.org/alsa-libfreedesktop.org/dbus`, `alsa-project.org/alsa-lib`, `freedesktop.org/dbus`
+ * @dependencies `alsa-project.org/alsa-lib`, `freedesktop.org/dbus`, `rust-lang.org>=1.75`, ... (+2 more)
  * @companions `yt-dlp.org`
  *
  * @example
@@ -49,7 +49,7 @@ export const termusicPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +crates.io/termusic -- $SHELL -i' as const,
+  installCommand: 'launchpad install +crates.io/termusic -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,9 +70,11 @@ export const termusicPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxalsa-project.org/alsa-libfreedesktop.org/dbus',
     'alsa-project.org/alsa-lib',
     'freedesktop.org/dbus',
+    'rust-lang.org>=1.75',
+    'rust-lang.org/cargo',
+    'protobuf.dev',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -88,7 +90,6 @@ export const termusicPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/termusic' as const,
 }
 
 export type TermusicPackage = typeof termusicPackage

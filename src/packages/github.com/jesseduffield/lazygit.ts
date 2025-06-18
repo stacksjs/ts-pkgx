@@ -6,10 +6,9 @@
  * @version `0.52.0` (27 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) lazygit`
+ * @install `launchpad install lazygit`
  * @name `lazygit`
- * @aliases `jesseduffield/lazygit`
- * @dependencies `git-scm.org^2`
+ * @dependencies `git-scm.org^2`, `go.dev^1.18`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const lazygitPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) lazygit' as const,
+  installCommand: 'launchpad install lazygit' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const lazygitPackage = {
    */
   dependencies: [
     'git-scm.org^2',
+    'go.dev^1.18',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -102,10 +102,7 @@ export const lazygitPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jesseduffield/lazygit',
-  ] as const,
-  fullPath: 'github.com/jesseduffield/lazygit' as const,
+  aliases: [] as const,
 }
 
 export type LazygitPackage = typeof lazygitPackage

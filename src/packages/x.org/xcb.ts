@@ -5,31 +5,26 @@
  * @version `1.17.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xcb -- $SHELL -i`
- * @aliases `xcb`
- * @dependencies `x.org/xau^1`, `x.org/xdmcp^1`
+ * @install `launchpad install +x.org/xcb -- $SHELL -i`
+ * @dependencies `x.org/xau^1`, `x.org/xdmcp^1`, `freedesktop.org/pkg-config^0.29`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xcb
- * // Or access via domain
- * const samePkg = pantry.xorgxcb
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xcb"
+ * const pkg = pantry.xorgxcb
+ * console.log(pkg.name)        // "xcb"
  * console.log(pkg.versions[0]) // "1.17.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xcb.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xcbPackage = {
+export const xorgxcbPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xcb' as const,
+  name: 'xcb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xcbPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xcb -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xcb -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,10 @@ export const xcbPackage = {
   dependencies: [
     'x.org/xau^1',
     'x.org/xdmcp^1',
+    'freedesktop.org/pkg-config^0.29',
+    'python.org~3.11',
+    'x.org/protocol/xcb^1',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -66,14 +65,7 @@ export const xcbPackage = {
     '1.16.0',
     '1.15.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xcb',
-  ] as const,
-  fullPath: 'x.org/xcb' as const,
+  aliases: [] as const,
 }
 
-export type XcbPackage = typeof xcbPackage
+export type XorgxcbPackage = typeof xorgxcbPackage

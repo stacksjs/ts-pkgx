@@ -1,11 +1,11 @@
-# pygmentize
+# pygments.org
 
 > Pygments is a generic syntax highlighter written in Python
 
 ## Package Information
 
 - **Domain**: `pygments.org`
-- **Name**: `pygmentize`
+- **Name**: `pygments.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pygments.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) pygmentize
+launchpad install pygmentize
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `pygmentize`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `pygmentize`
 

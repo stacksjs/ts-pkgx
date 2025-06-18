@@ -5,20 +5,15 @@
  * @version `1.16.2` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +wpewebkit.org/libwpe -- $SHELL -i`
- * @aliases `libwpe`
- * @dependencies `xkbcommon.org`, `mesa3d.org`
+ * @install `launchpad install +wpewebkit.org/libwpe -- $SHELL -i`
+ * @dependencies `xkbcommon.org`, `mesa3d.org`, `gnu.org/gcc`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libwpe
- * // Or access via domain
- * const samePkg = pantry.wpewebkitorglibwpe
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "wpewebkit.org/libwpe"
+ * const pkg = pantry.wpewebkitorglibwpe
+ * console.log(pkg.name)        // "libwpe"
  * console.log(pkg.description) // "General-purpose library specifically developed ..."
  * console.log(pkg.versions[0]) // "1.16.2" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/wpewebkit-org/libwpe.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libwpePackage = {
+export const wpewebkitorglibwpePackage = {
   /**
    * The display name of this package.
    */
-  name: 'wpewebkit.org/libwpe' as const,
+  name: 'libwpe' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const libwpePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +wpewebkit.org/libwpe -- $SHELL -i' as const,
+  installCommand: 'launchpad install +wpewebkit.org/libwpe -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,6 +51,10 @@ export const libwpePackage = {
   dependencies: [
     'xkbcommon.org',
     'mesa3d.org',
+    'gnu.org/gcc',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -68,14 +67,7 @@ export const libwpePackage = {
     '1.15.2',
     '1.15.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libwpe',
-  ] as const,
-  fullPath: 'wpewebkit.org/libwpe' as const,
+  aliases: [] as const,
 }
 
-export type LibwpePackage = typeof libwpePackage
+export type WpewebkitorglibwpePackage = typeof wpewebkitorglibwpePackage

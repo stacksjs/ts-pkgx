@@ -1,10 +1,10 @@
 # musl.libc.org
 
-> A package from musl.libc.org
+> A package from musllibc.org
 
 ## Package Information
 
-- **Domain**: `musl.libc.org`
+- **Domain**: `musllibc.org`
 - **Name**: `musl.libc.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/musl.libc.org/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +musl.libc.org -- $SHELL -i
+launchpad install +musl.libc.org -- $SHELL -i
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +musl.libc.org@1.2.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +musllibc.org@1.2.3 -- $SHELL -i
 ```
 
 ## Dependencies

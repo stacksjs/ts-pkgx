@@ -1,11 +1,11 @@
-# chromedriver
+# chromedriver.chromium.org
 
-> Package information available on pkgx.dev
+> A package from chromedriverchromium.org
 
 ## Package Information
 
-- **Domain**: `chromedriver.chromium.org`
-- **Name**: `chromedriver`
+- **Domain**: `chromedriverchromium.org`
+- **Name**: `chromedriver.chromium.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/chromedriver.chromium.org/package.yml)
 
@@ -13,14 +13,48 @@
 
 ```bash
 # Install with pkgx
-pkgx chromedriver.chromium.org
+launchpad install chromedriver
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `chromedriver`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `chromedriver`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `114.0.5735.90`
+
+</details>
+
+**Latest Version**: `114.0.5735.90`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +chromedriverchromium.org@114.0.5735.90 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnome.org/glib^2`
+- `mozilla.org/nss`
+- `x.org/xcb`
+- `gnu.org/wget`
+- `info-zip.org/unzip`
 
 ## Usage Examples
 

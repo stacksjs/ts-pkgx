@@ -8,7 +8,6 @@
  *
  * @install `launchpad install ruby-install`
  * @name `ruby-install`
- * @aliases `postmodern/ruby-install`
  * @dependencies `tukaani.org/xz`
  *
  * @example
@@ -81,10 +80,7 @@ export const rubyinstallPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'postmodern/ruby-install',
-  ] as const,
-  fullPath: 'github.com/postmodern/ruby-install' as const,
+  aliases: [] as const,
 }
 
 export type RubyinstallPackage = typeof rubyinstallPackage

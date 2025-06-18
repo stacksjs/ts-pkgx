@@ -1,23 +1,19 @@
 /**
- * **besser82/libxcrypt** - Extended crypt library for descrypt, md5crypt, bcrypt, and others
+ * **libxcrypt** - Extended crypt library for descrypt, md5crypt, bcrypt, and others
  *
  * @domain `github.com/besser82/libxcrypt`
  * @version `4.4.38` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/besser82/libxcrypt -- $SHELL -i`
- * @aliases `besser82/libxcrypt`
+ * @install `launchpad install +github.com/besser82/libxcrypt -- $SHELL -i`
+ * @dependencies `freedesktop.org/pkg-config~0.29`, `perl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.besser82libxcrypt
- * // Or access via domain
- * const samePkg = pantry.githubcombesser82libxcrypt
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/besser82/libxcrypt"
+ * const pkg = pantry.githubcombesser82libxcrypt
+ * console.log(pkg.name)        // "libxcrypt"
  * console.log(pkg.description) // "Extended crypt library for descrypt, md5crypt, ..."
  * console.log(pkg.versions[0]) // "4.4.38" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/besser82/libxcrypt.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const besser82libxcryptPackage = {
+export const githubcombesser82libxcryptPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/besser82/libxcrypt' as const,
+  name: 'libxcrypt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,17 @@ export const besser82libxcryptPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/besser82/libxcrypt -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/besser82/libxcrypt -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'freedesktop.org/pkg-config~0.29',
+    'perl.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -61,14 +64,7 @@ export const besser82libxcryptPackage = {
     '4.4.34',
     '4.4.33',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'besser82/libxcrypt',
-  ] as const,
-  fullPath: 'github.com/besser82/libxcrypt' as const,
+  aliases: [] as const,
 }
 
-export type Besser82libxcryptPackage = typeof besser82libxcryptPackage
+export type Githubcombesser82libxcryptPackage = typeof githubcombesser82libxcryptPackage

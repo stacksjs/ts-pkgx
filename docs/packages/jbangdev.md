@@ -1,11 +1,11 @@
-# jbang
+# jbang.dev
 
 > Unleash the power of Java - JBang Lets Students, Educators and Professional Developers create, edit and run self-contained source-only Java programs with unprecedented ease.
 
 ## Package Information
 
 - **Domain**: `jbang.dev`
-- **Name**: `jbang`
+- **Name**: `jbang.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jbang.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) jbang
+launchpad install jbang
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `jbang`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `jbang`
 

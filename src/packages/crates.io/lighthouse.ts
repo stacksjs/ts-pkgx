@@ -6,9 +6,9 @@
  * @version `7.0.1` (19 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) lighthouse`
+ * @install `launchpad install lighthouse`
  * @name `lighthouse`
- * @dependencies `zlib.net^1`
+ * @dependencies `zlib.net^1`, `rust-lang.org^1.78 # stdsimd changes`, `rust-lang.org/cargo`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const lighthousePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) lighthouse' as const,
+  installCommand: 'launchpad install lighthouse' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,10 @@ export const lighthousePackage = {
    */
   dependencies: [
     'zlib.net^1',
+    'rust-lang.org^1.78 # stdsimd changes',
+    'rust-lang.org/cargo',
+    'cmake.org^3.12',
+    'protobuf.dev',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -94,7 +98,6 @@ export const lighthousePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/lighthouse' as const,
 }
 
 export type LighthousePackage = typeof lighthousePackage

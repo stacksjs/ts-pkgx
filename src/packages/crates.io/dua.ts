@@ -6,9 +6,9 @@
  * @version `2.30.1` (26 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) dua`
+ * @install `launchpad install dua`
  * @name `dua`
- * @dependencies `zlib.net^1`
+ * @dependencies `zlib.net^1`, `rust-lang.org>=1.60`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const duaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) dua' as const,
+  installCommand: 'launchpad install dua' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const duaPackage = {
    */
   dependencies: [
     'zlib.net^1',
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -101,7 +103,6 @@ export const duaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/dua' as const,
 }
 
 export type DuaPackage = typeof duaPackage

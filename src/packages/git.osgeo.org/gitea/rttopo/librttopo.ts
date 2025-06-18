@@ -1,35 +1,30 @@
 /**
- * **gitea/rttopo/librttopo** - pkgx package
+ * **librttopo** - pkgx package
  *
  * @domain `git.osgeo.org/gitea/rttopo/librttopo`
  * @version `1.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +git.osgeo.org/gitea/rttopo/librttopo -- $SHELL -i`
- * @aliases `gitea/rttopo/librttopo`
- * @dependencies `libgeos.org`
+ * @install `launchpad install +git.osgeo.org/gitea/rttopo/librttopo -- $SHELL -i`
+ * @dependencies `libgeos.org`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gitearttopolibrttopo
- * // Or access via domain
- * const samePkg = pantry.gitosgeoorggitearttopolibrttopo
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "git.osgeo.org/gitea/rttopo/librttopo"
+ * const pkg = pantry.gitosgeoorggitearttopolibrttopo
+ * console.log(pkg.name)        // "librttopo"
  * console.log(pkg.versions[0]) // "1.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/git-osgeo-org/gitea/rttopo/librttopo.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitearttopolibrttopoPackage = {
+export const gitosgeoorggitea/rttopo/librttopoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'git.osgeo.org/gitea/rttopo/librttopo' as const,
+  name: 'librttopo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const gitearttopolibrttopoPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +git.osgeo.org/gitea/rttopo/librttopo -- $SHELL -i' as const,
+  installCommand: 'launchpad install +git.osgeo.org/gitea/rttopo/librttopo -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,6 +49,10 @@ export const gitearttopolibrttopoPackage = {
    */
   dependencies: [
     'libgeos.org',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -62,14 +61,7 @@ export const gitearttopolibrttopoPackage = {
   versions: [
     '1.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gitea/rttopo/librttopo',
-  ] as const,
-  fullPath: 'git.osgeo.org/gitea/rttopo/librttopo' as const,
+  aliases: [] as const,
 }
 
-export type GitearttopolibrttopoPackage = typeof gitearttopolibrttopoPackage
+export type Gitosgeoorggitea/rttopo/librttopoPackage = typeof gitosgeoorggitea/rttopo/librttopoPackage

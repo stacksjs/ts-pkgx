@@ -1,11 +1,11 @@
-# kind
+# kind.sigs.k8s.io
 
 > Kubernetes IN Docker - local clusters for testing Kubernetes
 
 ## Package Information
 
-- **Domain**: `kind.sigs.k8s.io`
-- **Name**: `kind`
+- **Domain**: `kindsigsk8s.io`
+- **Name**: `kind.sigs.k8s.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kind.sigs.k8s.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) kind
+launchpad install kind
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `kind`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `kind`
 
@@ -39,8 +45,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kind.sigs.k8s.io@0.29.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +kindsigsk8s.io@0.29.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.18`
 
 ## Usage Examples
 

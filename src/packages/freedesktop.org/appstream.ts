@@ -6,21 +6,20 @@
  * @version `1.0.5` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) appstreamcli`
- * @name `appstreamcli`
- * @aliases `appstream`
- * @dependencies `gnome.org/glib@2`, `github.com/hughsie/libxmlb@0`, `pyyaml.org/libyaml@0`, ... (+6 more)
+ * @install `launchpad install appstreamcli`
+ * @aliases `appstreamcli`
+ * @dependencies `gnome.org/glib@2`, `github.com/hughsie/libxmlb@0`, `pyyaml.org/libyaml@0`, ... (+13 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.appstreamcli
  * // Or access via domain
  * const samePkg = pantry.freedesktoporgappstream
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "appstreamcli"
+ * console.log(pkg.name)        // "appstream"
  * console.log(pkg.description) // "Tools and libraries to work with AppStream meta..."
  * console.log(pkg.programs)    // ["appstreamcli"]
  * console.log(pkg.versions[0]) // "1.0.5" (latest)
@@ -33,7 +32,7 @@ export const appstreamcliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'appstreamcli' as const,
+  name: 'appstream' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const appstreamcliPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) appstreamcli' as const,
+  installCommand: 'launchpad install appstreamcli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,10 +67,17 @@ export const appstreamcliPackage = {
     'pyyaml.org/libyaml@0',
     'curl.se@8',
     'gnome.org/libxml2@2',
-    'darwinopenldap.org@2',
-    'openldap.org@2',
-    'linuxsystemd.io',
+    'openldap.org^2 # 1.0.4 needs it with curl',
     'systemd.io',
+    'cmake.org@3',
+    'mesonbuild.com>=0.61',
+    'ninja-build.org',
+    'gnome.org/gobject-introspection',
+    'itstool.org',
+    'gnome.org/vala',
+    'gnome.org/libxslt',
+    'docbook.org/xsl',
+    'gnu.org/gperf',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -87,9 +93,8 @@ export const appstreamcliPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'appstream',
+    'appstreamcli',
   ] as const,
-  fullPath: 'freedesktop.org/appstream' as const,
 }
 
 export type AppstreamcliPackage = typeof appstreamcliPackage

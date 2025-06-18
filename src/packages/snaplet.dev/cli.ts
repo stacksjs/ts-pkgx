@@ -6,20 +6,20 @@
  * @version `0.92.1` (67 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) snaplet`
- * @name `snaplet`
- * @dependencies `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`
+ * @install `launchpad install snaplet`
+ * @aliases `snaplet`
+ * @dependencies `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`, `npmjs.com`, `python.org^3 # node-gyp needs python to build`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.snaplet
  * // Or access via domain
  * const samePkg = pantry.snapletdevcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "snaplet"
+ * console.log(pkg.name)        // "cli"
  * console.log(pkg.programs)    // ["snaplet"]
  * console.log(pkg.versions[0]) // "0.92.1" (latest)
  * ```
@@ -31,7 +31,7 @@ export const snapletPackage = {
   /**
    * The display name of this package.
    */
-  name: 'snaplet' as const,
+  name: 'cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const snapletPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) snaplet' as const,
+  installCommand: 'launchpad install snaplet' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,6 +62,8 @@ export const snapletPackage = {
    */
   dependencies: [
     'nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20',
+    'npmjs.com',
+    'python.org^3 # node-gyp needs python to build',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -140,8 +142,9 @@ export const snapletPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
-  fullPath: 'snaplet.dev/cli' as const,
+  aliases: [
+    'snaplet',
+  ] as const,
 }
 
 export type SnapletPackage = typeof snapletPackage

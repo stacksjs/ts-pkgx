@@ -6,9 +6,8 @@
  * @version `6.1.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) twine`
+ * @install `launchpad install twine`
  * @name `twine`
- * @aliases `pypa/twine`
  * @dependencies `python.org>=3.7<3.12`
  *
  * @example
@@ -49,7 +48,7 @@ export const twinePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) twine' as const,
+  installCommand: 'launchpad install twine' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,10 +81,7 @@ export const twinePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pypa/twine',
-  ] as const,
-  fullPath: 'github.com/pypa/twine' as const,
+  aliases: [] as const,
 }
 
 export type TwinePackage = typeof twinePackage

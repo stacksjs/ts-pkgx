@@ -1,11 +1,11 @@
-# tmate
+# tmate.io
 
 > Instant Terminal Sharing
 
 ## Package Information
 
 - **Domain**: `tmate.io`
-- **Name**: `tmate`
+- **Name**: `tmate.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tmate.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) tmate
+launchpad install tmate
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `tmate`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `tmate`
 
@@ -48,6 +54,10 @@ This package depends on:
 - `invisible-island.net/ncurses@6`
 - `msgpack.org@6`
 - `libssh.org@0`
+- `gnu.org/bison`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

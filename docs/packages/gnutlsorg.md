@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +gnutls.org -- $SHELL -i
+launchpad install +gnutls.org -- $SHELL -i
 ```
 
 ## Programs
@@ -61,6 +61,8 @@ This package depends on:
 - `gnu.org/gmp`
 - `unbound.net^1`
 - `curl.se/ca-certs`
+- `gnu.org/gcc`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

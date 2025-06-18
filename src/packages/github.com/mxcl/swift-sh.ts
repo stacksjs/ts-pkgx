@@ -8,7 +8,6 @@
  *
  * @install `launchpad install swift-sh`
  * @name `swift-sh`
- * @aliases `mxcl/swift-sh`
  *
  * @example
  * ```typescript
@@ -70,10 +69,7 @@ export const swiftshPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mxcl/swift-sh',
-  ] as const,
-  fullPath: 'github.com/mxcl/swift-sh' as const,
+  aliases: [] as const,
 }
 
 export type SwiftshPackage = typeof swiftshPackage

@@ -1,11 +1,11 @@
-# atlas
+# atlasgo.io
 
 > Manage your database schema as code
 
 ## Package Information
 
 - **Domain**: `atlasgo.io`
-- **Name**: `atlas`
+- **Name**: `atlasgo.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/atlasgo.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) atlas
+launchpad install atlas
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `atlas`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `atlas`
 
@@ -43,6 +49,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +atlasgo.io@0.35.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.20`
 
 ## Usage Examples
 

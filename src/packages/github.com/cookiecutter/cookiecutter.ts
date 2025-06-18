@@ -6,10 +6,9 @@
  * @version `2.6.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) cookiecutter`
+ * @install `launchpad install cookiecutter`
  * @name `cookiecutter`
- * @aliases `cookiecutter/cookiecutter`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh^1`, `python.org~3.12`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const cookiecutterPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) cookiecutter' as const,
+  installCommand: 'launchpad install cookiecutter' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const cookiecutterPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org~3.12',
+    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +77,7 @@ export const cookiecutterPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cookiecutter/cookiecutter',
-  ] as const,
-  fullPath: 'github.com/cookiecutter/cookiecutter' as const,
+  aliases: [] as const,
 }
 
 export type CookiecutterPackage = typeof cookiecutterPackage

@@ -1,11 +1,11 @@
-# hjson
+# hjson.github.io
 
 > Hjson for Rust
 
 ## Package Information
 
-- **Domain**: `hjson.github.io`
-- **Name**: `hjson`
+- **Domain**: `hjsongithub.io`
+- **Name**: `hjson.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hjson.github.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) hjson
+launchpad install hjson
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `hjson`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `hjson`
 
@@ -37,8 +43,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +hjson.github.io@1.1.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +hjsongithub.io@1.1.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rust-lang.org>=1.56`
+- `rust-lang.org/cargo`
+- `gnu.org/diffutils`
 
 ## Usage Examples
 

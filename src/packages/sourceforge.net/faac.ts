@@ -1,24 +1,34 @@
 /**
- * **faac** - Package from pantry: sourceforge.net/faac
+ * **faac** - Freeware Advanced Audio Coder faac mirror
  *
  * @domain `sourceforge.net/faac`
+ * @programs `faac`
+ * @version `1.30.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install sourceforge.net/faac`
+ * @install `launchpad install faac`
+ * @name `faac`
  * @dependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.sourceforgenetfaac
+ * // Access the package
+ * const pkg = pantry.faac
+ * // Or access via domain
+ * const samePkg = pantry.sourceforgenetfaac
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "faac"
- * console.log(pkg.description) // "Package from pantry: sourceforge.net/faac"
+ * console.log(pkg.description) // "Freeware Advanced Audio Coder faac mirror"
+ * console.log(pkg.programs)    // ["faac"]
+ * console.log(pkg.versions[0]) // "1.30.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sourceforge-net/faac.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sourceforgenetfaacPackage = {
+export const faacPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const sourceforgenetfaacPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: sourceforge.net/faac' as const,
+  description: 'Freeware Advanced Audio Coder faac mirror' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/faac/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install sourceforge.net/faac' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install faac' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'faac',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +67,18 @@ export const sourceforgenetfaacPackage = {
     'gnu.org/libtool',
     'gnu.org/gcc',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/faac/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.30.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
 }
 
-export type SourceforgenetfaacPackage = typeof sourceforgenetfaacPackage
+export type FaacPackage = typeof faacPackage

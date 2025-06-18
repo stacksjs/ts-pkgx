@@ -6,9 +6,9 @@
  * @version `0.10.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) git-branchless`
+ * @install `launchpad install git-branchless`
  * @name `git-branchless`
- * @dependencies `libgit2.org@1`
+ * @dependencies `libgit2.org@1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gitbranchlessPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) git-branchless' as const,
+  installCommand: 'launchpad install git-branchless' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,9 @@ export const gitbranchlessPackage = {
    */
   dependencies: [
     'libgit2.org@1',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,7 +82,6 @@ export const gitbranchlessPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/git-branchless' as const,
 }
 
 export type GitbranchlessPackage = typeof gitbranchlessPackage

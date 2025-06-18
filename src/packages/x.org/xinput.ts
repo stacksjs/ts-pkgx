@@ -6,9 +6,9 @@
  * @version `1.6.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) xinput`
+ * @install `launchpad install xinput`
  * @name `xinput`
- * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xi`, ... (+2 more)
+ * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xi`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const xinputPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) xinput' as const,
+  installCommand: 'launchpad install xinput' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,6 +67,8 @@ export const xinputPackage = {
     'x.org/xi',
     'x.org/xinerama',
     'x.org/xrandr',
+    'freedesktop.org/pkg-config',
+    'x.org/protocol',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -80,7 +82,6 @@ export const xinputPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'x.org/xinput' as const,
 }
 
 export type XinputPackage = typeof xinputPackage

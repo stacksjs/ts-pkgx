@@ -6,7 +6,7 @@
  * @version `1.22.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ncdu`
+ * @install `launchpad install ncdu`
  * @name `ncdu`
  * @dependencies `invisible-island.net/ncurses`
  *
@@ -48,7 +48,7 @@ export const ncduPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ncdu' as const,
+  installCommand: 'launchpad install ncdu' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,7 +80,6 @@ export const ncduPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dev.yorhel.nl/ncdu' as const,
 }
 
 export type NcduPackage = typeof ncduPackage

@@ -1,11 +1,11 @@
-# LocalAI
+# localai.io
 
 > :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI,  running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference
 
 ## Package Information
 
 - **Domain**: `localai.io`
-- **Name**: `LocalAI`
+- **Name**: `localai.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/localai.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) local-ai
+launchpad install local-ai
 ```
 
 ## Programs
@@ -27,6 +27,7 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `local-ai`
+- `LocalAI`
 
 ## Available Versions
 
@@ -57,12 +58,22 @@ sh <(curl https://pkgx.sh) +localai.io@2.26.0 -- $SHELL -i
 
 This package depends on:
 
-- `darwinopenmp.llvm.org@18`
 - `openmp.llvm.org@18`
+- `go.dev^1.21`
+- `cmake.org^3`
+- `grpc.io=1.68.2`
+- `gnu.org/wget^1`
+- `gnu.org/coreutils^9`
+- `git-scm.org^2`
+- `google.com/protobuf-go^1`
+- `grpc.io/grpc-go^1`
+- `gnu.org/gcc^14 # linux needs omp.h`
+- `protobuf.dev~28.1.0`
+- `llvm.org^18 # apple doens`
 
 ## Related Packages
 
-These packages work well with LocalAI:
+These packages work well with localai.io:
 
 - `linux`
 

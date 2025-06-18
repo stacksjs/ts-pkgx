@@ -6,10 +6,9 @@
  * @version `3.12.2` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/cesnet/libyang -- $SHELL -i`
+ * @install `launchpad install +github.com/cesnet/libyang -- $SHELL -i`
  * @name `libyang`
- * @aliases `cesnet/libyang`
- * @dependencies `pcre.org/v2>=10.21`
+ * @dependencies `pcre.org/v2>=10.21`, `graphviz.org`, `doxygen.nl`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const libyangPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/cesnet/libyang -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/cesnet/libyang -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,9 @@ export const libyangPackage = {
    */
   dependencies: [
     'pcre.org/v2>=10.21',
+    'graphviz.org',
+    'doxygen.nl',
+    'cmake.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -81,10 +83,7 @@ export const libyangPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cesnet/libyang',
-  ] as const,
-  fullPath: 'github.com/cesnet/libyang' as const,
+  aliases: [] as const,
 }
 
 export type LibyangPackage = typeof libyangPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i
+launchpad install +flutter.dev -- $SHELL -i
 ```
 
 ## Programs
@@ -57,7 +57,6 @@ This package depends on:
 - `git-scm.org`
 - `tukaani.org/xz`
 - `gnu.org/which`
-- `linuxcurl.seinfo-zip.org/zipinfo-zip.org/unzip`
 - `curl.se`
 - `info-zip.org/zip`
 - `info-zip.org/unzip`

@@ -5,31 +5,26 @@
  * @version `1.3.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xt -- $SHELL -i`
- * @aliases `xt`
- * @dependencies `x.org/ice`, `x.org/sm`, `x.org/x11`
+ * @install `launchpad install +x.org/xt -- $SHELL -i`
+ * @dependencies `x.org/ice`, `x.org/sm`, `x.org/x11`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xt
- * // Or access via domain
- * const samePkg = pantry.xorgxt
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xt"
+ * const pkg = pantry.xorgxt
+ * console.log(pkg.name)        // "xt"
  * console.log(pkg.versions[0]) // "1.3.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xt.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xtPackage = {
+export const xorgxtPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xt' as const,
+  name: 'xt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xtPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xt -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xt -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,6 +51,7 @@ export const xtPackage = {
     'x.org/ice',
     'x.org/sm',
     'x.org/x11',
+    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +61,7 @@ export const xtPackage = {
     '1.3.1',
     '1.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xt',
-  ] as const,
-  fullPath: 'x.org/xt' as const,
+  aliases: [] as const,
 }
 
-export type XtPackage = typeof xtPackage
+export type XorgxtPackage = typeof xorgxtPackage

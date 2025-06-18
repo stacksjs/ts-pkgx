@@ -6,8 +6,9 @@
  * @version `0.12.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) minisign`
+ * @install `launchpad install minisign`
  * @name `minisign`
+ * @dependencies `cmake.org`, `libsodium.org`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const minisignPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) minisign' as const,
+  installCommand: 'launchpad install minisign' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,14 @@ export const minisignPackage = {
     'minisign',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'libsodium.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,7 +78,6 @@ export const minisignPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jedisct1.github.io/minisign' as const,
 }
 
 export type MinisignPackage = typeof minisignPackage

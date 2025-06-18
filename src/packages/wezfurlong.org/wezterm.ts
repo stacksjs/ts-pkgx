@@ -6,9 +6,9 @@
  * @version `2024.2.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) wezterm`
+ * @install `launchpad install wezterm`
  * @name `wezterm`
- * @dependencies `zlib.net^1.3`, `linuxfreetype.orgfreedesktop.org/fontconfigopenssl.org^1.1`, `freetype.org`, ... (+2 more)
+ * @dependencies `zlib.net^1.3`, `freetype.org`, `freedesktop.org/fontconfig`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const weztermPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) wezterm' as const,
+  installCommand: 'launchpad install wezterm' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,10 +63,11 @@ export const weztermPackage = {
    */
   dependencies: [
     'zlib.net^1.3',
-    'linuxfreetype.orgfreedesktop.org/fontconfigopenssl.org^1.1',
     'freetype.org',
     'freedesktop.org/fontconfig',
     'openssl.org^1.1',
+    'rust-lang.org>=1.71<1.78',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -80,7 +81,6 @@ export const weztermPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'wezfurlong.org/wezterm' as const,
 }
 
 export type WeztermPackage = typeof weztermPackage

@@ -1,10 +1,13 @@
 /**
- * **soliditylang.org** - Package from pantry: soliditylang.org
+ * **soliditylang.org** - Solidity, the Smart Contract Programming Language
  *
  * @domain `soliditylang.org`
+ * @programs `solc`, `yul-phaser`
+ * @version `0.8.30` (14 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install soliditylang.org`
- * @dependencies `boost.org~1.84`, `gnu.org/gcc/libstdcxx^14`, `gnu.org/gcc^14`, ... (+2 more)
+ * @install `launchpad install +soliditylang.org -- $SHELL -i`
+ * @dependencies `boost.org~1.84`, `gnu.org/gcc/libstdcxx@14`, `gnu.org/gcc@14`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.soliditylangorg
  * console.log(pkg.name)        // "soliditylang.org"
- * console.log(pkg.description) // "Package from pantry: soliditylang.org"
+ * console.log(pkg.description) // "Solidity, the Smart Contract Programming Language"
+ * console.log(pkg.programs)    // ["solc", "yul-phaser"]
+ * console.log(pkg.versions[0]) // "0.8.30" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/soliditylang-org.md
@@ -30,13 +35,23 @@ export const soliditylangorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: soliditylang.org' as const,
+  description: 'Solidity, the Smart Contract Programming Language' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/soliditylang.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install soliditylang.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +soliditylang.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'solc',
+    'yul-phaser',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -44,15 +59,32 @@ export const soliditylangorgPackage = {
    */
   dependencies: [
     'boost.org~1.84',
-    'gnu.org/gcc/libstdcxx^14',
-    'gnu.org/gcc^14',
-    'cmake.org^3',
+    'gnu.org/gcc/libstdcxx@14',
+    'gnu.org/gcc@14',
+    'cmake.org@3',
     'gnu.org/patch',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/soliditylang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.8.30',
+    '0.8.29',
+    '0.8.28',
+    '0.8.27',
+    '0.8.26',
+    '0.8.25',
+    '0.8.24',
+    '0.8.23',
+    '0.8.22',
+    '0.8.21',
+    '0.8.20',
+    '0.8.19',
+    '0.8.18',
+    '0.8.17',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type SoliditylangorgPackage = typeof soliditylangorgPackage

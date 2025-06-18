@@ -1,11 +1,11 @@
-# openslide
+# openslide.org
 
 > C library to read whole-slide images (a.k.a. virtual slides)
 
 ## Package Information
 
 - **Domain**: `openslide.org`
-- **Name**: `openslide`
+- **Name**: `openslide.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openslide.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openslide.org -- $SHELL -i
+launchpad install +openslide.org -- $SHELL -i
 ```
 
 ## Programs
@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `openslide-quickhash1sum`
 - `openslide-show-properties`
 - `openslide-write-png`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `openslide`
 
 ## Available Versions
 
@@ -55,6 +61,8 @@ This package depends on:
 - `gnome.org/libxml2`
 - `openjpeg.org`
 - `sqlite.org`
+- `freedesktop.org/pkg-config`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

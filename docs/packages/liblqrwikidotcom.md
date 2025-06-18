@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `liblqr.wikidot.com`
+- **Domain**: `liblqrwikidot.com`
 - **Name**: `liblqr.wikidot.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/liblqr.wikidot.com/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +liblqr.wikidot.com -- $SHELL -i
+launchpad install +liblqr.wikidot.com -- $SHELL -i
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +liblqr.wikidot.com@0.4.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +liblqrwikidot.com@0.4.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -45,6 +45,8 @@ sh <(curl https://pkgx.sh) +liblqr.wikidot.com@0.4.3 -- $SHELL -i
 This package depends on:
 
 - `gnome.org/glib`
+- `freedesktop.org/pkg-config`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

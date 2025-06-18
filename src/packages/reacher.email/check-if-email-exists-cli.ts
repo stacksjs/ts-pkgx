@@ -7,20 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install check_if_email_exists`
- * @name `check_if_email_exists`
- * @aliases `check-if-email-exists-cli`
- * @dependencies `openssl.org^1.1`
+ * @aliases `check_if_email_exists`
+ * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.65`, `rust-lang.org/cargo`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.checkifemailexists
  * // Or access via domain
  * const samePkg = pantry.reacheremailcheckifemailexistscli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "check_if_email_exists"
+ * console.log(pkg.name)        // "check-if-email-exists-cli"
  * console.log(pkg.description) // "Check if an email address exists without sendin..."
  * console.log(pkg.programs)    // ["check_if_email_exists"]
  * console.log(pkg.versions[0]) // "0.11.5" (latest)
@@ -33,7 +32,7 @@ export const checkifemailexistsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'check_if_email_exists' as const,
+  name: 'check-if-email-exists-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -64,6 +63,9 @@ export const checkifemailexistsPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+    'perl.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -86,9 +88,8 @@ export const checkifemailexistsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'check-if-email-exists-cli',
+    'check_if_email_exists',
   ] as const,
-  fullPath: 'reacher.email/check-if-email-exists-cli' as const,
 }
 
 export type CheckifemailexistsPackage = typeof checkifemailexistsPackage

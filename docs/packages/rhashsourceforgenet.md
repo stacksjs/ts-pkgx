@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `rha.sh/sourceforge-net`
+- **Domain**: `rhashsourceforge.net`
 - **Name**: `rhash.sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rhash.sourceforge.net/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +rhash.sourceforge.net -- $SHELL -i
+launchpad install +rhash.sourceforge.net -- $SHELL -i
 ```
 
 ## Programs
@@ -48,7 +48,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +rha.sh/sourceforge-net@1.4.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) +rhashsourceforge.net@1.4.6 -- $SHELL -i
 ```
 
 ## Usage Examples

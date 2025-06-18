@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install SvtAv1EncApp`
- * @name `SvtAv1EncApp`
- * @aliases `svtav1encapp`, `AOMediaCodec/SVT-AV1`
+ * @aliases `SvtAv1EncApp`
+ * @dependencies `cmake.org`, `yasm.tortall.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.SvtAv1EncApp
  * // Or access via domain
  * const samePkg = pantry.gitlabcomaomediacodecsvtav1
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "SvtAv1EncApp"
+ * console.log(pkg.name)        // "SVT-AV1"
  * console.log(pkg.description) // "AV1 encoder"
  * console.log(pkg.programs)    // ["SvtAv1EncApp"]
  * console.log(pkg.versions[0]) // "3.0.2" (latest)
@@ -32,7 +32,7 @@ export const svtAv1EncAppPackage = {
   /**
    * The display name of this package.
    */
-  name: 'SvtAv1EncApp' as const,
+  name: 'SVT-AV1' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -57,7 +57,14 @@ export const svtAv1EncAppPackage = {
     'SvtAv1EncApp',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'yasm.tortall.net',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -82,10 +89,8 @@ export const svtAv1EncAppPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'svtav1encapp',
-    'AOMediaCodec/SVT-AV1',
+    'SvtAv1EncApp',
   ] as const,
-  fullPath: 'gitlab.com/AOMediaCodec/SVT-AV1' as const,
 }
 
 export type SvtAv1EncAppPackage = typeof svtAv1EncAppPackage

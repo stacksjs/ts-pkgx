@@ -6,7 +6,7 @@
  * @version `2.5.12` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) tig`
+ * @install `launchpad install tig`
  * @name `tig`
  * @dependencies `gnu.org/libiconv^1`, `invisible-island.net/ncurses^6`
  *
@@ -48,7 +48,7 @@ export const tigPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) tig' as const,
+  installCommand: 'launchpad install tig' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,7 +81,6 @@ export const tigPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jonas.github.io/tig' as const,
 }
 
 export type TigPackage = typeof tigPackage

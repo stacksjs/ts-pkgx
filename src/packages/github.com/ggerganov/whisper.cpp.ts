@@ -6,22 +6,21 @@
  * @version `1.7.5` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/ggerganov/whisper.cpp -- $SHELL -i`
- * @name `whisper`
- * @aliases `ggerganov/whisper.cpp`
- * @dependencies `libsdl.org`, `linuxopenmp.llvm.org@18gnu.org/gcc/libstdcxx@14`, `openmp.llvm.org@18`, ... (+1 more)
+ * @install `launchpad install +github.com/ggerganov/whisper.cpp -- $SHELL -i`
+ * @aliases `whisper`
+ * @dependencies `libsdl.org`, `openmp.llvm.org^18 # as of 1.7.0`, `gnu.org/gcc/libstdcxx@14`, ... (+4 more)
  * @companions `huggingface.co`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.whisper
  * // Or access via domain
  * const samePkg = pantry.githubcomggerganovwhispercpp
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "whisper"
+ * console.log(pkg.name)        // "whisper.cpp"
  * console.log(pkg.description) // "Port of OpenAI's Whisper model in C/C++"
  * console.log(pkg.programs)    // ["whisper.cpp", "whisper-cli"]
  * console.log(pkg.versions[0]) // "1.7.5" (latest)
@@ -34,7 +33,7 @@ export const whisperPackage = {
   /**
    * The display name of this package.
    */
-  name: 'whisper' as const,
+  name: 'whisper.cpp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -50,7 +49,7 @@ export const whisperPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/ggerganov/whisper.cpp -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/ggerganov/whisper.cpp -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,9 +71,12 @@ export const whisperPackage = {
    */
   dependencies: [
     'libsdl.org',
-    'linuxopenmp.llvm.org@18gnu.org/gcc/libstdcxx@14',
-    'openmp.llvm.org@18',
+    'openmp.llvm.org^18 # as of 1.7.0',
     'gnu.org/gcc/libstdcxx@14',
+    'freedesktop.org/pkg-config~0.29',
+    'gnu.org/patch',
+    'gnu.org/coreutils',
+    'cmake.org^3 # as of 1.7.3',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -104,9 +106,8 @@ export const whisperPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'ggerganov/whisper.cpp',
+    'whisper',
   ] as const,
-  fullPath: 'github.com/ggerganov/whisper.cpp' as const,
 }
 
 export type WhisperPackage = typeof whisperPackage

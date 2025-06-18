@@ -7,20 +7,20 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install protoc-gen-go`
- * @name `protoc-gen-go`
- * @aliases `protobuf-go`
+ * @aliases `protoc-gen-go`
+ * @dependencies `go.dev^1.17`, `go.dev`
  * @companions `protobuf.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.protocgengo
  * // Or access via domain
  * const samePkg = pantry.googlecomprotobufgo
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "protoc-gen-go"
+ * console.log(pkg.name)        // "protobuf-go"
  * console.log(pkg.description) // "Go support for Google's protocol buffers"
  * console.log(pkg.programs)    // ["protoc-gen-go"]
  * console.log(pkg.versions[0]) // "1.36.6" (latest)
@@ -33,7 +33,7 @@ export const protocgengoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'protoc-gen-go' as const,
+  name: 'protobuf-go' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -64,7 +64,14 @@ export const protocgengoPackage = {
   companions: [
     'protobuf.dev',
   ] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.17',
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -89,9 +96,8 @@ export const protocgengoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'protobuf-go',
+    'protoc-gen-go',
   ] as const,
-  fullPath: 'google.com/protobuf-go' as const,
 }
 
 export type ProtocgengoPackage = typeof protocgengoPackage

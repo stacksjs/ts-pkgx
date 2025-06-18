@@ -6,20 +6,15 @@
  * @version `1.8.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/bc -- $SHELL -i`
- * @aliases `bc`
- * @dependencies `github.com/westes/flex^2.6`
+ * @install `launchpad install +gnu.org/bc -- $SHELL -i`
+ * @dependencies `github.com/westes/flex^2.6`, `gnu.org/bison`, `gnu.org/ed`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.bc
- * // Or access via domain
- * const samePkg = pantry.gnuorgbc
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/bc"
+ * const pkg = pantry.gnuorgbc
+ * console.log(pkg.name)        // "bc"
  * console.log(pkg.programs)    // ["bc", "dc"]
  * console.log(pkg.versions[0]) // "1.8.2" (latest)
  * ```
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/bc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bcPackage = {
+export const gnuorgbcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/bc' as const,
+  name: 'bc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const bcPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/bc -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/bc -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +58,9 @@ export const bcPackage = {
    */
   dependencies: [
     'github.com/westes/flex^2.6',
+    'gnu.org/bison',
+    'gnu.org/ed',
+    'gnu.org/texinfo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -74,14 +72,7 @@ export const bcPackage = {
     '1.8.0',
     '1.7.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'bc',
-  ] as const,
-  fullPath: 'gnu.org/bc' as const,
+  aliases: [] as const,
 }
 
-export type BcPackage = typeof bcPackage
+export type GnuorgbcPackage = typeof gnuorgbcPackage

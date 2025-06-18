@@ -6,20 +6,20 @@
  * @version `3.6.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sensors`
- * @name `sensors`
- * @aliases `lm-sensors/lm-sensors`
+ * @install `launchpad install sensors`
+ * @aliases `sensors`
+ * @dependencies `gnu.org/bison`, `github.com/westes/flex`, `gnu.org/make`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sensors
  * // Or access via domain
  * const samePkg = pantry.githubcomlmsensorslmsensors
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sensors"
+ * console.log(pkg.name)        // "lm-sensors"
  * console.log(pkg.description) // "Tools for monitoring the temperatures, voltages..."
  * console.log(pkg.programs)    // ["sensors"]
  * console.log(pkg.versions[0]) // "3.6.0" (latest)
@@ -32,7 +32,7 @@ export const sensorsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sensors' as const,
+  name: 'lm-sensors' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const sensorsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sensors' as const,
+  installCommand: 'launchpad install sensors' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,15 @@ export const sensorsPackage = {
     'sensors',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/bison',
+    'github.com/westes/flex',
+    'gnu.org/make',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,9 +78,8 @@ export const sensorsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'lm-sensors/lm-sensors',
+    'sensors',
   ] as const,
-  fullPath: 'github.com/lm-sensors/lm-sensors' as const,
 }
 
 export type SensorsPackage = typeof sensorsPackage

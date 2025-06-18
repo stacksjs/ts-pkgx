@@ -6,8 +6,9 @@
  * @version `1.16.2` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +freedesktop.org/dbus -- $SHELL -i`
+ * @install `launchpad install +freedesktop.org/dbus -- $SHELL -i`
  * @name `dbus`
+ * @dependencies `freedesktop.org/pkg-config`, `pagure.io/xmlto`, `libexpat.github.io`, ... (+5 more)
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const dbusPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/dbus -- $SHELL -i' as const,
+  installCommand: 'launchpad install +freedesktop.org/dbus -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,7 +65,20 @@ export const dbusPackage = {
     'dbus-uuidgen',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'freedesktop.org/pkg-config',
+    'pagure.io/xmlto',
+    'libexpat.github.io',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'gnu.org/patch',
+    'python.org~3.11',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -83,7 +97,6 @@ export const dbusPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'freedesktop.org/dbus' as const,
 }
 
 export type DbusPackage = typeof dbusPackage

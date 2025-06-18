@@ -1,11 +1,11 @@
-# bw
+# bitwarden.com
 
 > Secure and free password manager for all of your devices
 
 ## Package Information
 
 - **Domain**: `bitwarden.com`
-- **Name**: `bw`
+- **Name**: `bitwarden.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bitwarden.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) bw
+launchpad install bw
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `bw`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `bw`
 
@@ -49,6 +55,9 @@ sh <(curl https://pkgx.sh) +bitwarden.com@2025.4.0 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^20`
+- `npmjs.com`
+- `github.com/fastfloat/fast_float^8 # needed to work with Xcode >=16.2`
+- `python.org^3 # needed to build some native modules`
 
 ## Usage Examples
 

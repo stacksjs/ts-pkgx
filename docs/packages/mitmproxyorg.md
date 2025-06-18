@@ -1,11 +1,11 @@
-# mitmproxy
+# mitmproxy.org
 
 > An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.
 
 ## Package Information
 
 - **Domain**: `mitmproxy.org`
-- **Name**: `mitmproxy`
+- **Name**: `mitmproxy.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mitmproxy.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) mitmproxy
+launchpad install mitmproxy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `mitmproxy`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `mitmproxy`
 
@@ -50,6 +56,7 @@ sh <(curl https://pkgx.sh) +mitmproxy.org@12.1.1 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
+- `python.org~3.12`
 
 ## Usage Examples
 

@@ -6,21 +6,20 @@
  * @version `2.22.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sketchybar`
- * @name `sketchybar`
- * @aliases `SketchyBar`
+ * @install `launchpad install sketchybar`
+ * @aliases `sketchybar`
  * @dependencies `github.com/koekeishiya/yabai`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sketchybar
  * // Or access via domain
  * const samePkg = pantry.felixkratzgithubiosketchybar
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sketchybar"
+ * console.log(pkg.name)        // "SketchyBar"
  * console.log(pkg.description) // "A highly customizable macOS status bar replacement"
  * console.log(pkg.programs)    // ["sketchybar"]
  * console.log(pkg.versions[0]) // "2.22.1" (latest)
@@ -33,7 +32,7 @@ export const sketchybarPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sketchybar' as const,
+  name: 'SketchyBar' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const sketchybarPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sketchybar' as const,
+  installCommand: 'launchpad install sketchybar' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,9 +80,8 @@ export const sketchybarPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'SketchyBar',
+    'sketchybar',
   ] as const,
-  fullPath: 'felixkratz.github.io/SketchyBar' as const,
 }
 
 export type SketchybarPackage = typeof sketchybarPackage

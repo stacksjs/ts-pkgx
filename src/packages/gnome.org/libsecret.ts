@@ -5,31 +5,26 @@
  * @version `0.21.7` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/libsecret -- $SHELL -i`
- * @aliases `libsecret`
- * @dependencies `gnome.org/glib`, `gnupg.org/libgcrypt`, `gnupg.org/libgpg-error`
+ * @install `launchpad install +gnome.org/libsecret -- $SHELL -i`
+ * @dependencies `gnome.org/glib`, `gnupg.org/libgcrypt`, `gnupg.org/libgpg-error`, ... (+12 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libsecret
- * // Or access via domain
- * const samePkg = pantry.gnomeorglibsecret
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnome.org/libsecret"
+ * const pkg = pantry.gnomeorglibsecret
+ * console.log(pkg.name)        // "libsecret"
  * console.log(pkg.versions[0]) // "0.21.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/libsecret.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libsecretPackage = {
+export const gnomeorglibsecretPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/libsecret' as const,
+  name: 'libsecret' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const libsecretPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/libsecret -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/libsecret -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,6 +51,18 @@ export const libsecretPackage = {
     'gnome.org/glib',
     'gnupg.org/libgcrypt',
     'gnupg.org/libgpg-error',
+    'docbook.org/xsl',
+    'gnu.org/gettext',
+    'gnome.org/gobject-introspection',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'gnome.org/vala',
+    'gnome.org/libxslt',
+    'freedesktop.org/dbus',
+    'llvm.org',
+    'freedesktop.org/pkg-config',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -70,14 +77,7 @@ export const libsecretPackage = {
     '0.21.2',
     '0.21.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libsecret',
-  ] as const,
-  fullPath: 'gnome.org/libsecret' as const,
+  aliases: [] as const,
 }
 
-export type LibsecretPackage = typeof libsecretPackage
+export type GnomeorglibsecretPackage = typeof gnomeorglibsecretPackage

@@ -1,11 +1,11 @@
-# OpenSSL
+# openssl.org
 
 > TLS/SSL and crypto library with QUIC APIs
 
 ## Package Information
 
 - **Domain**: `openssl.org`
-- **Name**: `OpenSSL`
+- **Name**: `openssl.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openssl.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openssl.org -- $SHELL -i
+launchpad install +openssl.org -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `openssl`
 - `c_rehash`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `OpenSSL`
 
 ## Available Versions
 
@@ -51,6 +57,8 @@ sh <(curl https://pkgx.sh) +openssl.org@3.5.0 -- $SHELL -i
 This package depends on:
 
 - `curl.se/ca-certs`
+- `perl.org@5`
+- `pkgx.sh^1`
 
 ## Usage Examples
 

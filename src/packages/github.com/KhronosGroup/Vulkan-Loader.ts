@@ -1,24 +1,19 @@
 /**
- * **github.com/khronosgroup/vulkan-loader** - Vulkan Loader
+ * **Vulkan-Loader** - Vulkan Loader
  *
  * @domain `github.com/KhronosGroup/Vulkan-Loader`
  * @version `1.4.318` (56 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/KhronosGroup/Vulkan-Loader -- $SHELL -i`
- * @aliases `github.com/khronosgroup/vulkan-loader`, `KhronosGroup/Vulkan-Loader`
- * @dependencies `github.com/KhronosGroup/Vulkan-Headers`, `linuxx.org/x11x.org/xcbwayland.freedesktop.org`, `x.org/x11`, ... (+2 more)
+ * @install `launchpad install +github.com/KhronosGroup/Vulkan-Loader -- $SHELL -i`
+ * @dependencies `github.com/KhronosGroup/Vulkan-Headers`, `x.org/x11`, `x.org/xcb`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
  * const pkg = pantry.githubcomkhronosgroupvulkanloader
- * // Or access via domain
- * const samePkg = pantry.githubcomkhronosgroupvulkanloader
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/KhronosGroup/Vulkan-Loader"
+ * console.log(pkg.name)        // "Vulkan-Loader"
  * console.log(pkg.description) // "Vulkan Loader"
  * console.log(pkg.versions[0]) // "1.4.318" (latest)
  * ```
@@ -30,7 +25,7 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/KhronosGroup/Vulkan-Loader' as const,
+  name: 'Vulkan-Loader' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/KhronosGroup/Vulkan-Loader -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/KhronosGroup/Vulkan-Loader -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,10 +50,14 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
    */
   dependencies: [
     'github.com/KhronosGroup/Vulkan-Headers',
-    'linuxx.org/x11x.org/xcbwayland.freedesktop.org',
     'x.org/x11',
     'x.org/xcb',
     'wayland.freedesktop.org',
+    'gnu.org/make',
+    'cmake.org',
+    'freedesktop.org/pkg-config',
+    'python.org~3.11',
+    'x.org/xrandr',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -122,15 +121,7 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
     '1.3.262',
     '1.3.261',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'github.com/khronosgroup/vulkan-loader',
-    'KhronosGroup/Vulkan-Loader',
-  ] as const,
-  fullPath: 'github.com/KhronosGroup/Vulkan-Loader' as const,
+  aliases: [] as const,
 }
 
 export type GithubcomkhronosgroupvulkanloaderPackage = typeof githubcomkhronosgroupvulkanloaderPackage

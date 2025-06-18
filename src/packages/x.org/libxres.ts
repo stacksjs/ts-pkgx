@@ -5,31 +5,26 @@
  * @version `1.2.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/libxres -- $SHELL -i`
- * @aliases `libxres`
+ * @install `launchpad install +x.org/libxres -- $SHELL -i`
  * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libxres
- * // Or access via domain
- * const samePkg = pantry.xorglibxres
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/libxres"
+ * const pkg = pantry.xorglibxres
+ * console.log(pkg.name)        // "libxres"
  * console.log(pkg.versions[0]) // "1.2.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/libxres.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libxresPackage = {
+export const xorglibxresPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/libxres' as const,
+  name: 'libxres' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const libxresPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/libxres -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/libxres -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -64,14 +59,7 @@ export const libxresPackage = {
   versions: [
     '1.2.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libxres',
-  ] as const,
-  fullPath: 'x.org/libxres' as const,
+  aliases: [] as const,
 }
 
-export type LibxresPackage = typeof libxresPackage
+export type XorglibxresPackage = typeof xorglibxresPackage

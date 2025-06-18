@@ -6,8 +6,9 @@
  * @version `2.0.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) git-tidy`
+ * @install `launchpad install git-tidy`
  * @name `git-tidy`
+ * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const gittidyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) git-tidy' as const,
+  installCommand: 'launchpad install git-tidy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,15 @@ export const gittidyPackage = {
     'git-tidy',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+    'git-scm.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,7 +78,6 @@ export const gittidyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/git-tidy' as const,
 }
 
 export type GittidyPackage = typeof gittidyPackage

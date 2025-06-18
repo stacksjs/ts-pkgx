@@ -1,11 +1,11 @@
-# nixpacks
+# nixpacks.com
 
 > App source + Nix packages + Docker = Image
 
 ## Package Information
 
 - **Domain**: `nixpacks.com`
-- **Name**: `nixpacks`
+- **Name**: `nixpacks.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nixpacks.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) nixpacks
+launchpad install nixpacks
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `nixpacks`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `nixpacks`
 
@@ -45,6 +51,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +nixpacks.com@1.39.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rust-lang.org^1.65`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

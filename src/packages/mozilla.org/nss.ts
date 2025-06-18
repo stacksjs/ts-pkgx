@@ -6,20 +6,15 @@
  * @version `3.92.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +mozilla.org/nss -- $SHELL -i`
- * @aliases `nss`
- * @dependencies `mozilla.org/nspr`, `sqlite.org`, `zlib.net`
+ * @install `launchpad install +mozilla.org/nss -- $SHELL -i`
+ * @dependencies `mozilla.org/nspr`, `sqlite.org`, `zlib.net`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.nss
- * // Or access via domain
- * const samePkg = pantry.mozillaorgnss
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mozilla.org/nss"
+ * const pkg = pantry.mozillaorgnss
+ * console.log(pkg.name)        // "nss"
  * console.log(pkg.description) // "Libraries for security-enabled client and serve..."
  * console.log(pkg.programs)    // ["addbuiltin", "certutil", ...]
  * console.log(pkg.versions[0]) // "3.92.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/mozilla-org/nss.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nssPackage = {
+export const mozillaorgnssPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mozilla.org/nss' as const,
+  name: 'nss' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const nssPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +mozilla.org/nss -- $SHELL -i' as const,
+  installCommand: 'launchpad install +mozilla.org/nss -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -125,6 +120,10 @@ export const nssPackage = {
     'mozilla.org/nspr',
     'sqlite.org',
     'zlib.net',
+    'gnu.org/gcc',
+    'gnu.org/make',
+    'llvm.org',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -133,14 +132,7 @@ export const nssPackage = {
   versions: [
     '3.92.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'nss',
-  ] as const,
-  fullPath: 'mozilla.org/nss' as const,
+  aliases: [] as const,
 }
 
-export type NssPackage = typeof nssPackage
+export type MozillaorgnssPackage = typeof mozillaorgnssPackage

@@ -6,21 +6,21 @@
  * @version `5.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +eyrie.org/eagle/podlators -- $SHELL -i`
- * @name `pod2man`
- * @aliases `eagle/podlators`
- * @dependencies `perl.org^5`
+ * @install `launchpad install +eyrie.org/eagle/podlators -- $SHELL -i`
+ * @aliases `pod2man`
+ * @dependencies `perl.org^5`, `gnu.org/make`, `gnu.org/wget`, ... (+1 more)
+ * @companions `PERL5LIB^{{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.pod2man
  * // Or access via domain
  * const samePkg = pantry.eyrieorgeaglepodlators
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pod2man"
+ * console.log(pkg.name)        // "podlators"
  * console.log(pkg.programs)    // ["pod2man", "pod2text"]
  * console.log(pkg.versions[0]) // "5.1.0" (latest)
  * ```
@@ -32,7 +32,7 @@ export const pod2manPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pod2man' as const,
+  name: 'podlators' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const pod2manPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +eyrie.org/eagle/podlators -- $SHELL -i' as const,
+  installCommand: 'launchpad install +eyrie.org/eagle/podlators -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,13 +57,22 @@ export const pod2manPackage = {
     'pod2man',
     'pod2text',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'PERL5LIB^{{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
    */
   dependencies: [
     'perl.org^5',
+    'gnu.org/make',
+    'gnu.org/wget',
+    'cpanmin.us^1',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,9 +86,8 @@ export const pod2manPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'eagle/podlators',
+    'pod2man',
   ] as const,
-  fullPath: 'eyrie.org/eagle/podlators' as const,
 }
 
 export type Pod2manPackage = typeof pod2manPackage

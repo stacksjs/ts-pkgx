@@ -6,21 +6,20 @@
  * @version `0.68.7` (75 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) forc`
- * @name `forc`
- * @aliases `sway`
- * @dependencies `zlib.net^1`, `openssl.org^1.1`
+ * @install `launchpad install forc`
+ * @aliases `forc`
+ * @dependencies `zlib.net^1`, `openssl.org^1.1`, `rust-lang.org^1.78 # stdsimd changes`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.forc
  * // Or access via domain
  * const samePkg = pantry.fuellabsgithubiosway
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "forc"
+ * console.log(pkg.name)        // "sway"
  * console.log(pkg.description) // "🌴 Empowering everyone to build reliable and ef..."
  * console.log(pkg.programs)    // ["forc"]
  * console.log(pkg.versions[0]) // "0.68.7" (latest)
@@ -33,7 +32,7 @@ export const forcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'forc' as const,
+  name: 'sway' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const forcPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) forc' as const,
+  installCommand: 'launchpad install forc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,10 @@ export const forcPackage = {
   dependencies: [
     'zlib.net^1',
     'openssl.org^1.1',
+    'rust-lang.org^1.78 # stdsimd changes',
+    'rust-lang.org/cargo^0',
+    'perl.org',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -152,9 +155,8 @@ export const forcPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'sway',
+    'forc',
   ] as const,
-  fullPath: 'fuellabs.github.io/sway' as const,
 }
 
 export type ForcPackage = typeof forcPackage

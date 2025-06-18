@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) nx
+launchpad install nx
 ```
 
 ## Programs
@@ -81,6 +81,8 @@ sh <(curl https://pkgx.sh) +nx.dev@21.2.0 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org`
+- `nodejs.org@18`
+- `npmjs.com^10`
 
 ## Usage Examples
 

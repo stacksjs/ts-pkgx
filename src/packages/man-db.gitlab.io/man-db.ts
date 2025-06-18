@@ -6,9 +6,9 @@
  * @version `2.13.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +man-db.gitlab.io/man-db -- $SHELL -i`
+ * @install `launchpad install +man-db.gitlab.io/man-db -- $SHELL -i`
  * @name `man-db`
- * @dependencies `libpipeline.gitlab.io/libpipeline`, `gnu.org/groff`, `linuxgnu.org/gdbm`, ... (+1 more)
+ * @dependencies `libpipeline.gitlab.io/libpipeline`, `gnu.org/groff`, `gnu.org/gdbm`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -47,7 +47,7 @@ export const mandbPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +man-db.gitlab.io/man-db -- $SHELL -i' as const,
+  installCommand: 'launchpad install +man-db.gitlab.io/man-db -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,8 +70,9 @@ export const mandbPackage = {
   dependencies: [
     'libpipeline.gitlab.io/libpipeline',
     'gnu.org/groff',
-    'linuxgnu.org/gdbm',
     'gnu.org/gdbm',
+    'gnu.org/make',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -89,7 +90,6 @@ export const mandbPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'man-db.gitlab.io/man-db' as const,
 }
 
 export type MandbPackage = typeof mandbPackage

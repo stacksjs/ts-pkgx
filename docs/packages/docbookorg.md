@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +docbook.org -- $SHELL -i
+launchpad install +docbook.org -- $SHELL -i
 ```
 
 ## Programs
@@ -39,6 +39,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +docbook.org@5.1.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
+- `info-zip.org/unzip`
 
 ## Usage Examples
 

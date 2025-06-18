@@ -6,9 +6,9 @@
  * @version `0.8.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) versio`
+ * @install `launchpad install versio`
  * @name `versio`
- * @dependencies `openssl.org^1.1`, `gnupg.org/libgpg-error@1`, `gnupg.org/gpgme^1.13`, ... (+2 more)
+ * @dependencies `openssl.org^1.1`, `gnupg.org/libgpg-error@1`, `gnupg.org/gpgme^1.13`, ... (+5 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const versioPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) versio' as const,
+  installCommand: 'launchpad install versio' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,6 +67,9 @@ export const versioPackage = {
     'gnupg.org/gpgme^1.13',
     'gnupg.org/libassuan',
     'zlib.net^1',
+    'rust-lang.org^1.78 # stdsimd changes',
+    'rust-lang.org/cargo',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -81,7 +84,6 @@ export const versioPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/versio' as const,
 }
 
 export type VersioPackage = typeof versioPackage

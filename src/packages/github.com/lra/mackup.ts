@@ -6,9 +6,8 @@
  * @version `0.8.43` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) mackup`
+ * @install `launchpad install mackup`
  * @name `mackup`
- * @aliases `lra/mackup`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
@@ -49,7 +48,7 @@ export const mackupPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) mackup' as const,
+  installCommand: 'launchpad install mackup' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,10 +82,7 @@ export const mackupPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'lra/mackup',
-  ] as const,
-  fullPath: 'github.com/lra/mackup' as const,
+  aliases: [] as const,
 }
 
 export type MackupPackage = typeof mackupPackage

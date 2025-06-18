@@ -6,10 +6,9 @@
  * @version `0.8.1` (22 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) colima`
+ * @install `launchpad install colima`
  * @name `colima`
- * @aliases `abiosoft/colima`
- * @dependencies `lima-vm.io`
+ * @dependencies `lima-vm.io`, `go.dev`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const colimaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) colima' as const,
+  installCommand: 'launchpad install colima' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const colimaPackage = {
    */
   dependencies: [
     'lima-vm.io',
+    'go.dev',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -97,10 +97,7 @@ export const colimaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'abiosoft/colima',
-  ] as const,
-  fullPath: 'github.com/abiosoft/colima' as const,
+  aliases: [] as const,
 }
 
 export type ColimaPackage = typeof colimaPackage

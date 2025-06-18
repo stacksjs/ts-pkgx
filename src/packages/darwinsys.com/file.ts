@@ -6,9 +6,9 @@
  * @version `5.46.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) file`
+ * @install `launchpad install file`
  * @name `file`
- * @dependencies `zlib.net@1`
+ * @dependencies `zlib.net^1 #FIXME this is actually an optional dep`, `gnu.org/patch`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const filePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) file' as const,
+  installCommand: 'launchpad install file' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,7 +62,8 @@ export const filePackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'zlib.net@1',
+    'zlib.net^1 #FIXME this is actually an optional dep',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,7 +79,6 @@ export const filePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'darwinsys.com/file' as const,
 }
 
 export type FilePackage = typeof filePackage

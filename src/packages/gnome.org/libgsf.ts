@@ -6,21 +6,20 @@
  * @version `1.14.53` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/libgsf -- $SHELL -i`
- * @name `gsf`
- * @aliases `libgsf`
- * @dependencies `gnome.org/glib`
+ * @install `launchpad install +gnome.org/libgsf -- $SHELL -i`
+ * @aliases `gsf`
+ * @dependencies `gnome.org/glib`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.gsf
  * // Or access via domain
  * const samePkg = pantry.gnomeorglibgsf
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gsf"
+ * console.log(pkg.name)        // "libgsf"
  * console.log(pkg.description) // "I/O abstraction library for dealing with struct..."
  * console.log(pkg.programs)    // ["gsf", "gsf-office-thumbnailer", ...]
  * console.log(pkg.versions[0]) // "1.14.53" (latest)
@@ -33,7 +32,7 @@ export const gsfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gsf' as const,
+  name: 'libgsf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const gsfPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/libgsf -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/libgsf -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,6 +65,7 @@ export const gsfPackage = {
    */
   dependencies: [
     'gnome.org/glib',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -82,9 +82,8 @@ export const gsfPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'libgsf',
+    'gsf',
   ] as const,
-  fullPath: 'gnome.org/libgsf' as const,
 }
 
 export type GsfPackage = typeof gsfPackage

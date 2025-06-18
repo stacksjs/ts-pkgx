@@ -6,9 +6,9 @@
  * @version `0.5.1` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) llrt`
+ * @install `launchpad install llrt`
  * @name `llrt`
- * @aliases `awslabs/llrt`
+ * @dependencies `rust-lang.org/rustup`, `facebook.com/zstd`, `ziglang.org~0.11`, ... (+6 more)
  *
  * @example
  * ```typescript
@@ -43,12 +43,12 @@ export const llrtPackage = {
   description: 'LLRT (Low Latency Runtime) is an experimental, lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/awslabs/llrt/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/awslabs/llrt' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) llrt' as const,
+  installCommand: 'launchpad install llrt' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,21 @@ export const llrtPackage = {
     'llrt',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org/rustup',
+    'facebook.com/zstd',
+    'ziglang.org~0.11',
+    'nodejs.org',
+    'yarnpkg.com',
+    'cmake.org',
+    'git-scm.org',
+    'info-zip.org/zip',
+    'llvm.org^17',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -79,10 +93,7 @@ export const llrtPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'awslabs/llrt',
-  ] as const,
-  fullPath: 'github.com/awslabs/llrt' as const,
+  aliases: [] as const,
 }
 
 export type LlrtPackage = typeof llrtPackage

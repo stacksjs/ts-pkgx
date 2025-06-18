@@ -6,20 +6,20 @@
  * @version `0.2.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +google.com/sentencepiece -- $SHELL -i`
- * @name `spm`
- * @aliases `sentencepiece`
+ * @install `launchpad install +google.com/sentencepiece -- $SHELL -i`
+ * @aliases `spm`
+ * @dependencies `cmake.org^3`, `python.org~3.11`, `pip.pypa.io`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.spm
  * // Or access via domain
  * const samePkg = pantry.googlecomsentencepiece
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "spm"
+ * console.log(pkg.name)        // "sentencepiece"
  * console.log(pkg.description) // "Unsupervised text tokenizer for Neural Network-..."
  * console.log(pkg.programs)    // ["spm_decode", "spm_encode", ...]
  * console.log(pkg.versions[0]) // "0.2.0" (latest)
@@ -32,7 +32,7 @@ export const spmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'spm' as const,
+  name: 'sentencepiece' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const spmPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +google.com/sentencepiece -- $SHELL -i' as const,
+  installCommand: 'launchpad install +google.com/sentencepiece -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -61,7 +61,19 @@ export const spmPackage = {
     'spm_train',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+    'python.org~3.11',
+    'pip.pypa.io',
+    'freedesktop.org/pkg-config~0.29',
+    'protobuf.dev@25',
+    'gnu.org/wget',
+    'python.org~3.11',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -77,9 +89,8 @@ export const spmPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'sentencepiece',
+    'spm',
   ] as const,
-  fullPath: 'google.com/sentencepiece' as const,
 }
 
 export type SpmPackage = typeof spmPackage

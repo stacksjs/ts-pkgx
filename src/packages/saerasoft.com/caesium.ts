@@ -6,20 +6,20 @@
  * @version `0.21.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) caesiumclt`
- * @name `caesiumclt`
- * @aliases `caesium`
+ * @install `launchpad install caesiumclt`
+ * @aliases `caesiumclt`
+ * @dependencies `rust-lang.org>=1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.caesiumclt
  * // Or access via domain
  * const samePkg = pantry.saerasoftcomcaesium
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "caesiumclt"
+ * console.log(pkg.name)        // "caesium"
  * console.log(pkg.description) // "Caesium Command Line Tools - Lossy/lossless ima..."
  * console.log(pkg.programs)    // ["caesiumclt"]
  * console.log(pkg.versions[0]) // "0.21.0" (latest)
@@ -32,7 +32,7 @@ export const caesiumcltPackage = {
   /**
    * The display name of this package.
    */
-  name: 'caesiumclt' as const,
+  name: 'caesium' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const caesiumcltPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) caesiumclt' as const,
+  installCommand: 'launchpad install caesiumclt' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const caesiumcltPackage = {
     'caesiumclt',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -74,9 +81,8 @@ export const caesiumcltPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'caesium',
+    'caesiumclt',
   ] as const,
-  fullPath: 'saerasoft.com/caesium' as const,
 }
 
 export type CaesiumcltPackage = typeof caesiumcltPackage

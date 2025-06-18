@@ -6,21 +6,20 @@
  * @version `1.2.2` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/libsndfile/libsndfile -- $SHELL -i`
- * @name `sndfile`
- * @aliases `libsndfile/libsndfile`
- * @dependencies `xiph.org/flac`, `lame.sourceforge.io`, `xiph.org/ogg`, ... (+3 more)
+ * @install `launchpad install +github.com/libsndfile/libsndfile -- $SHELL -i`
+ * @aliases `sndfile`
+ * @dependencies `xiph.org/flac`, `lame.sourceforge.io`, `xiph.org/ogg`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sndfile
  * // Or access via domain
  * const samePkg = pantry.githubcomlibsndfilelibsndfile
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sndfile"
+ * console.log(pkg.name)        // "libsndfile"
  * console.log(pkg.description) // "A C library for reading and writing sound files..."
  * console.log(pkg.programs)    // ["sndfile-info", "sndfile-convert", ...]
  * console.log(pkg.versions[0]) // "1.2.2" (latest)
@@ -33,7 +32,7 @@ export const sndfilePackage = {
   /**
    * The display name of this package.
    */
-  name: 'sndfile' as const,
+  name: 'libsndfile' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const sndfilePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/libsndfile/libsndfile -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/libsndfile/libsndfile -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +70,8 @@ export const sndfilePackage = {
     'xiph.org/vorbis',
     'mpg123.de',
     'opus-codec.org',
+    'cmake.org',
+    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -86,9 +87,8 @@ export const sndfilePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'libsndfile/libsndfile',
+    'sndfile',
   ] as const,
-  fullPath: 'github.com/libsndfile/libsndfile' as const,
 }
 
 export type SndfilePackage = typeof sndfilePackage

@@ -5,9 +5,9 @@
  * @version `3.11.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/thom311/libnl -- $SHELL -i`
+ * @install `launchpad install +github.com/thom311/libnl -- $SHELL -i`
  * @name `libnl`
- * @aliases `thom311/libnl`
+ * @dependencies `gnu.org/bison`, `github.com/westes/flex`
  *
  * @example
  * ```typescript
@@ -46,10 +46,17 @@ export const libnlPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/thom311/libnl -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/thom311/libnl -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/bison',
+    'github.com/westes/flex',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -65,10 +72,7 @@ export const libnlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'thom311/libnl',
-  ] as const,
-  fullPath: 'github.com/thom311/libnl' as const,
+  aliases: [] as const,
 }
 
 export type LibnlPackage = typeof libnlPackage

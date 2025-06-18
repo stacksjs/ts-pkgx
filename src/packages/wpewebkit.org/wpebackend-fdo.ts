@@ -6,30 +6,25 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +wpewebkit.org/wpebackend-fdo -- $SHELL -i`
- * @aliases `wpebackend-fdo`
- * @dependencies `gnome.org/glib`, `github.com/anholt/libepoxy`, `wpewebkit.org/libwpe`, ... (+2 more)
+ * @dependencies `gnome.org/glib`, `github.com/anholt/libepoxy`, `wpewebkit.org/libwpe`, ... (+8 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.wpebackendfdo
- * // Or access via domain
- * const samePkg = pantry.wpewebkitorgwpebackendfdo
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "wpewebkit.org/wpebackend-fdo"
+ * const pkg = pantry.wpewebkitorgwpebackendfdo
+ * console.log(pkg.name)        // "wpebackend-fdo"
  * console.log(pkg.versions[0]) // "1.16.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wpewebkit-org/wpebackend-fdo.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wpebackendfdoPackage = {
+export const wpewebkitorgwpebackendfdoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'wpewebkit.org/wpebackend-fdo' as const,
+  name: 'wpebackend-fdo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -58,6 +53,12 @@ export const wpebackendfdoPackage = {
     'wpewebkit.org/libwpe',
     'mesa3d.org',
     'wayland.freedesktop.org',
+    'gnu.org/gcc',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'gnu.org/gcc',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -69,14 +70,7 @@ export const wpebackendfdoPackage = {
     '1.14.3',
     '1.14.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'wpebackend-fdo',
-  ] as const,
-  fullPath: 'wpewebkit.org/wpebackend-fdo' as const,
+  aliases: [] as const,
 }
 
-export type WpebackendfdoPackage = typeof wpebackendfdoPackage
+export type WpewebkitorgwpebackendfdoPackage = typeof wpewebkitorgwpebackendfdoPackage

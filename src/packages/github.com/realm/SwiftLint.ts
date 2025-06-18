@@ -6,21 +6,20 @@
  * @version `0.59.1` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) swiftlint`
- * @name `swiftlint`
- * @aliases `realm/SwiftLint`
- * @dependencies `linuxcurl.se@8gnome.org/libxml2@2`, `curl.se@8`, `gnome.org/libxml2@2`
+ * @install `launchpad install swiftlint`
+ * @aliases `swiftlint`
+ * @dependencies `curl.se@8`, `gnome.org/libxml2@2`, `curl.se`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.swiftlint
  * // Or access via domain
  * const samePkg = pantry.githubcomrealmswiftlint
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "swiftlint"
+ * console.log(pkg.name)        // "SwiftLint"
  * console.log(pkg.description) // "A tool to enforce Swift style and conventions."
  * console.log(pkg.programs)    // ["swiftlint"]
  * console.log(pkg.versions[0]) // "0.59.1" (latest)
@@ -33,7 +32,7 @@ export const swiftlintPackage = {
   /**
    * The display name of this package.
    */
-  name: 'swiftlint' as const,
+  name: 'SwiftLint' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const swiftlintPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) swiftlint' as const,
+  installCommand: 'launchpad install swiftlint' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,9 +62,10 @@ export const swiftlintPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxcurl.se@8gnome.org/libxml2@2',
     'curl.se@8',
     'gnome.org/libxml2@2',
+    'curl.se',
+    'info-zip.org/unzip',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -95,9 +95,8 @@ export const swiftlintPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'realm/SwiftLint',
+    'swiftlint',
   ] as const,
-  fullPath: 'github.com/realm/SwiftLint' as const,
 }
 
 export type SwiftlintPackage = typeof swiftlintPackage

@@ -3,10 +3,10 @@
  *
  * @domain `wix.com/applesimutils`
  * @programs `applesimutils`
- * @version `0.9.10` (1 versions available)
+ * @version `0.9.12` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) applesimutils`
+ * @install `launchpad install applesimutils`
  * @name `applesimutils`
  *
  * @example
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "applesimutils"
  * console.log(pkg.description) // "A collection of command-line utils for Apple si..."
  * console.log(pkg.programs)    // ["applesimutils"]
- * console.log(pkg.versions[0]) // "0.9.10" (latest)
+ * console.log(pkg.versions[0]) // "0.9.12" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wix-com/applesimutils.md
@@ -42,12 +42,12 @@ export const applesimutilsPackage = {
   description: 'A collection of command-line utils for Apple simulators.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wix.com/applesimutils/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/wix/AppleSimulatorUtils' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) applesimutils' as const,
+  installCommand: 'launchpad install applesimutils' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,6 +62,7 @@ export const applesimutilsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.12',
     '0.9.10',
   ] as const,
   /**
@@ -69,7 +70,6 @@ export const applesimutilsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'wix.com/applesimutils' as const,
 }
 
 export type ApplesimutilsPackage = typeof applesimutilsPackage

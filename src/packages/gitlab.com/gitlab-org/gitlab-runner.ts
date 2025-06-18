@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gitlab-runner`
  * @name `gitlab-runner`
- * @aliases `gitlab-org/gitlab-runner`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -57,7 +57,13 @@ export const gitlabrunnerPackage = {
     'gitlab-runner',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -143,10 +149,7 @@ export const gitlabrunnerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gitlab-org/gitlab-runner',
-  ] as const,
-  fullPath: 'gitlab.com/gitlab-org/gitlab-runner' as const,
+  aliases: [] as const,
 }
 
 export type GitlabrunnerPackage = typeof gitlabrunnerPackage

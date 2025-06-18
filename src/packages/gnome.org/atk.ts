@@ -1,19 +1,19 @@
 /**
- * **gnome.org/atk** - pkgx package
+ * **atk** - pkgx package
  *
  * @domain `gnome.org/atk`
  * @version `2.38.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/atk -- $SHELL -i`
- * @dependencies `gnome.org/glib@2`
+ * @install `launchpad install +gnome.org/atk -- $SHELL -i`
+ * @dependencies `gnome.org/glib@2`, `mesonbuild.com^0.63`, `ninja-build.org@1`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorgatk
- * console.log(pkg.name)        // "gnome.org/atk"
+ * console.log(pkg.name)        // "atk"
  * console.log(pkg.versions[0]) // "2.38.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnomeorgatkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/atk' as const,
+  name: 'atk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const gnomeorgatkPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/atk -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/atk -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -49,6 +49,12 @@ export const gnomeorgatkPackage = {
    */
   dependencies: [
     'gnome.org/glib@2',
+    'mesonbuild.com^0.63',
+    'ninja-build.org@1',
+    'freedesktop.org/pkg-config^0.29',
+    'gnu.org/gettext^0.21',
+    'gnome.org/gobject-introspection@1',
+    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -58,7 +64,6 @@ export const gnomeorgatkPackage = {
     '2.38.0',
   ] as const,
   aliases: [] as const,
-  fullPath: 'gnome.org-atk' as const,
 }
 
 export type GnomeorgatkPackage = typeof gnomeorgatkPackage

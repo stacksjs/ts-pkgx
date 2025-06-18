@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i
+launchpad install +mysql.com -- $SHELL -i
 ```
 
 ## Programs
@@ -88,8 +88,12 @@ This package depends on:
 - `curl.se>=6.0`
 - `thrysoee.dk/editline^3`
 - `developers.yubico.com/libfido2^1`
-- `linuxgnu.org/gcc/libstdcxx@14`
 - `gnu.org/gcc/libstdcxx@14`
+- `cmake.org^3`
+- `gnu.org/bison>=3.0.4`
+- `gnu.org/gcc`
+- `gnu.org/coreutils^9`
+- `pkgx.sh^1`
 
 ## Usage Examples
 

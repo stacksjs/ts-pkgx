@@ -6,8 +6,9 @@
  * @version `0.6.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) melt`
+ * @install `launchpad install melt`
  * @name `melt`
+ * @dependencies `go.dev^1.18`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const meltPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) melt' as const,
+  installCommand: 'launchpad install melt' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,13 @@ export const meltPackage = {
     'melt',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,7 +79,6 @@ export const meltPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'charm.sh/melt' as const,
 }
 
 export type MeltPackage = typeof meltPackage

@@ -1,11 +1,11 @@
-# ots
+# ots.sniptt.com
 
 > 🔐 Share end-to-end encrypted secrets with others via a one-time URL
 
 ## Package Information
 
-- **Domain**: `ots.sniptt.com`
-- **Name**: `ots`
+- **Domain**: `otssniptt.com`
+- **Name**: `ots.sniptt.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ots.sniptt.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) ots
+launchpad install ots
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `ots`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `ots`
 
@@ -37,8 +43,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ots.sniptt.com@0.3.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +otssniptt.com@0.3.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.19`
 
 ## Usage Examples
 

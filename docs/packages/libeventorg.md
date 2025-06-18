@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libevent.org -- $SHELL -i
+launchpad install +libevent.org -- $SHELL -i
 ```
 
 ## Programs
@@ -45,6 +45,10 @@ sh <(curl https://pkgx.sh) +libevent.org@2.1.12 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
+- `gnu.org/libtool@2`
+- `gnu.org/automake@1`
+- `gnu.org/autoconf@2`
+- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

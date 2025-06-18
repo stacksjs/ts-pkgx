@@ -1,11 +1,11 @@
-# srt
+# srtalliance.org
 
 > Secure, Reliable, Transport
 
 ## Package Information
 
 - **Domain**: `srtalliance.org`
-- **Name**: `srt`
+- **Name**: `srtalliance.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/srtalliance.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +srtalliance.org -- $SHELL -i
+launchpad install +srtalliance.org -- $SHELL -i
 ```
 
 ## Programs
@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `srt-file-transmit`
 - `srt-live-transmit`
 - `srt-tunnel`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `srt`
 
 ## Available Versions
 
@@ -48,6 +54,9 @@ sh <(curl https://pkgx.sh) +srtalliance.org@1.5.4 -- $SHELL -i
 This package depends on:
 
 - `openssl.org`
+- `cmake.org`
+- `freedesktop.org/pkg-config`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

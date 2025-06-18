@@ -8,6 +8,7 @@
  *
  * @install `launchpad install cedar-agent`
  * @name `cedar-agent`
+ * @dependencies `rust-lang.org>=1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -56,7 +57,14 @@ export const cedaragentPackage = {
     'cedar-agent',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,7 +79,6 @@ export const cedaragentPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'permit.io/cedar-agent' as const,
 }
 
 export type CedaragentPackage = typeof cedaragentPackage

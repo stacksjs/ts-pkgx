@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +haskell.org -- $SHELL -i
+launchpad install +haskell.org -- $SHELL -i
 ```
 
 ## Programs
@@ -77,9 +77,10 @@ This package depends on:
 - `gnu.org/gmp@6`
 - `invisible-island.net/ncurses@6`
 - `sourceware.org/libffi@3`
-- `linuxgithub.com/numactl/numactl^2gnu.org/gcc`
 - `github.com/numactl/numactl^2`
 - `gnu.org/gcc`
+- `curl.se`
+- `gnu.org/make`
 
 ## Usage Examples
 

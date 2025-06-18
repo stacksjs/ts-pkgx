@@ -5,30 +5,26 @@
  * @version `2.11.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +debian.org/bash-completion -- $SHELL -i`
- * @aliases `bash-completion`
+ * @install `launchpad install +debian.org/bash-completion -- $SHELL -i`
+ * @dependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.bashcompletion
- * // Or access via domain
- * const samePkg = pantry.debianorgbashcompletion
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "debian.org/bash-completion"
+ * const pkg = pantry.debianorgbashcompletion
+ * console.log(pkg.name)        // "bash-completion"
  * console.log(pkg.versions[0]) // "2.11.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/debian-org/bash-completion.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bashcompletionPackage = {
+export const debianorgbashcompletionPackage = {
   /**
    * The display name of this package.
    */
-  name: 'debian.org/bash-completion' as const,
+  name: 'bash-completion' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,10 +40,18 @@ export const bashcompletionPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +debian.org/bash-completion -- $SHELL -i' as const,
+  installCommand: 'launchpad install +debian.org/bash-completion -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -55,14 +59,7 @@ export const bashcompletionPackage = {
   versions: [
     '2.11.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'bash-completion',
-  ] as const,
-  fullPath: 'debian.org/bash-completion' as const,
+  aliases: [] as const,
 }
 
-export type BashcompletionPackage = typeof bashcompletionPackage
+export type DebianorgbashcompletionPackage = typeof debianorgbashcompletionPackage

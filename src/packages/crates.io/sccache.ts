@@ -6,9 +6,9 @@
  * @version `0.10.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sccache`
+ * @install `launchpad install sccache`
  * @name `sccache`
- * @dependencies `openssl.org^1.1`, `curl.se/ca-certs`
+ * @dependencies `openssl.org^1.1`, `curl.se/ca-certs`, `rust-lang.org>=1.70`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const sccachePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sccache' as const,
+  installCommand: 'launchpad install sccache' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,6 +62,10 @@ export const sccachePackage = {
    * These will be automatically installed.
    */
   dependencies: [
+    'openssl.org^1.1',
+    'curl.se/ca-certs',
+    'rust-lang.org>=1.70',
+    'rust-lang.org/cargo',
     'openssl.org^1.1',
     'curl.se/ca-certs',
   ] as const,
@@ -81,7 +85,6 @@ export const sccachePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/sccache' as const,
 }
 
 export type SccachePackage = typeof sccachePackage

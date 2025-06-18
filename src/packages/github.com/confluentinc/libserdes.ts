@@ -1,24 +1,19 @@
 /**
- * **confluentinc/libserdes** - Avro Serialization/Deserialization C/C++ library with Confluent schema-registry support
+ * **libserdes** - Avro Serialization/Deserialization C/C++ library with Confluent schema-registry support
  *
  * @domain `github.com/confluentinc/libserdes`
  * @version `7.5.2.231027084844` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/confluentinc/libserdes -- $SHELL -i`
- * @aliases `confluentinc/libserdes`
- * @dependencies `apache.org/avro`, `digip.org/jansson`, `curl.se`
+ * @install `launchpad install +github.com/confluentinc/libserdes -- $SHELL -i`
+ * @dependencies `apache.org/avro`, `digip.org/jansson`, `curl.se`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.confluentinclibserdes
- * // Or access via domain
- * const samePkg = pantry.githubcomconfluentinclibserdes
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/confluentinc/libserdes"
+ * const pkg = pantry.githubcomconfluentinclibserdes
+ * console.log(pkg.name)        // "libserdes"
  * console.log(pkg.description) // "Avro Serialization/Deserialization C/C++ librar..."
  * console.log(pkg.versions[0]) // "7.5.2.231027084844" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/confluentinc/libserdes.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const confluentinclibserdesPackage = {
+export const githubcomconfluentinclibserdesPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/confluentinc/libserdes' as const,
+  name: 'libserdes' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const confluentinclibserdesPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/confluentinc/libserdes -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/confluentinc/libserdes -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -57,6 +52,9 @@ export const confluentinclibserdesPackage = {
     'apache.org/avro',
     'digip.org/jansson',
     'curl.se',
+    'gnu.org/gcc',
+    'gnu.org/make',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +63,7 @@ export const confluentinclibserdesPackage = {
   versions: [
     '7.5.2.231027084844',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'confluentinc/libserdes',
-  ] as const,
-  fullPath: 'github.com/confluentinc/libserdes' as const,
+  aliases: [] as const,
 }
 
-export type ConfluentinclibserdesPackage = typeof confluentinclibserdesPackage
+export type GithubcomconfluentinclibserdesPackage = typeof githubcomconfluentinclibserdesPackage

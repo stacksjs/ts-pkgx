@@ -6,21 +6,20 @@
  * @version `1.1.43` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/libxslt -- $SHELL -i`
- * @name `xslt`
- * @aliases `libxslt`
- * @dependencies `gnome.org/libxml2`
+ * @install `launchpad install +gnome.org/libxslt -- $SHELL -i`
+ * @aliases `xslt`
+ * @dependencies `gnome.org/libxml2`, `gnu.org/patch`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.xslt
  * // Or access via domain
  * const samePkg = pantry.gnomeorglibxslt
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xslt"
+ * console.log(pkg.name)        // "libxslt"
  * console.log(pkg.description) // "Read-only mirror of https://gitlab.gnome.org/GN..."
  * console.log(pkg.programs)    // ["xslt-config", "xsltproc"]
  * console.log(pkg.versions[0]) // "1.1.43" (latest)
@@ -33,7 +32,7 @@ export const xsltPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xslt' as const,
+  name: 'libxslt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const xsltPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/libxslt -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/libxslt -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,7 @@ export const xsltPackage = {
    */
   dependencies: [
     'gnome.org/libxml2',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -84,9 +84,8 @@ export const xsltPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'libxslt',
+    'xslt',
   ] as const,
-  fullPath: 'gnome.org/libxslt' as const,
 }
 
 export type XsltPackage = typeof xsltPackage

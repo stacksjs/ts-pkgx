@@ -1,11 +1,11 @@
-# phpMyAdmin
+# phpmyadmin.net
 
-> Package information available on pkgx.dev
+> A package from phpmyadmin.net
 
 ## Package Information
 
 - **Domain**: `phpmyadmin.net`
-- **Name**: `phpMyAdmin`
+- **Name**: `phpmyadmin.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/phpmyadmin.net/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-pkgx phpmyadmin.net
+launchpad install +phpmyadmin.net -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,37 @@ pkgx phpmyadmin.net
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `phpMyAdmin`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `5.2.2`, `5.2.1`
+
+</details>
+
+**Latest Version**: `5.2.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +phpmyadmin.net@5.2.2 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `php.net`
+- `php.net`
 
 ## Usage Examples
 

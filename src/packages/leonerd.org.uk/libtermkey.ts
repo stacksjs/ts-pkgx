@@ -5,31 +5,26 @@
  * @version `0.21.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +leonerd.org.uk/libtermkey -- $SHELL -i`
- * @aliases `libtermkey`
- * @dependencies `github.com/neovim/unibilium`, `invisible-island.net/ncurses`
+ * @install `launchpad install +leonerd.org.uk/libtermkey -- $SHELL -i`
+ * @dependencies `github.com/neovim/unibilium`, `invisible-island.net/ncurses`, `gnu.org/libtool`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libtermkey
- * // Or access via domain
- * const samePkg = pantry.leonerdorguklibtermkey
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "leonerd.org.uk/libtermkey"
+ * const pkg = pantry.leonerdorguklibtermkey
+ * console.log(pkg.name)        // "libtermkey"
  * console.log(pkg.versions[0]) // "0.21.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/leonerd-org-uk/libtermkey.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libtermkeyPackage = {
+export const leonerdorguklibtermkeyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'leonerd.org.uk/libtermkey' as const,
+  name: 'libtermkey' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const libtermkeyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +leonerd.org.uk/libtermkey -- $SHELL -i' as const,
+  installCommand: 'launchpad install +leonerd.org.uk/libtermkey -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,10 @@ export const libtermkeyPackage = {
   dependencies: [
     'github.com/neovim/unibilium',
     'invisible-island.net/ncurses',
+    'gnu.org/libtool',
+    'freedesktop.org/pkg-config',
+    'gnome.org/glib',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -63,14 +62,7 @@ export const libtermkeyPackage = {
   versions: [
     '0.21.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libtermkey',
-  ] as const,
-  fullPath: 'leonerd.org.uk/libtermkey' as const,
+  aliases: [] as const,
 }
 
-export type LibtermkeyPackage = typeof libtermkeyPackage
+export type LeonerdorguklibtermkeyPackage = typeof leonerdorguklibtermkeyPackage

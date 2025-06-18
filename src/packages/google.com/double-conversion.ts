@@ -6,18 +6,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +google.com/double-conversion -- $SHELL -i`
- * @aliases `double-conversion`
+ * @dependencies `cmake.org^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.doubleconversion
- * // Or access via domain
- * const samePkg = pantry.googlecomdoubleconversion
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "google.com/double-conversion"
+ * const pkg = pantry.googlecomdoubleconversion
+ * console.log(pkg.name)        // "double-conversion"
  * console.log(pkg.description) // "Efficient binary-decimal and decimal-binary con..."
  * console.log(pkg.versions[0]) // "3.3.1" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/google-com/double-conversion.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const doubleconversionPackage = {
+export const googlecomdoubleconversionPackage = {
   /**
    * The display name of this package.
    */
-  name: 'google.com/double-conversion' as const,
+  name: 'double-conversion' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +44,13 @@ export const doubleconversionPackage = {
   installCommand: 'launchpad install +google.com/double-conversion -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -58,14 +60,7 @@ export const doubleconversionPackage = {
     '3.3.0',
     '3.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'double-conversion',
-  ] as const,
-  fullPath: 'google.com/double-conversion' as const,
+  aliases: [] as const,
 }
 
-export type DoubleconversionPackage = typeof doubleconversionPackage
+export type GooglecomdoubleconversionPackage = typeof googlecomdoubleconversionPackage

@@ -5,31 +5,26 @@
  * @version `1.3.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xshmfence -- $SHELL -i`
- * @aliases `xshmfence`
- * @dependencies `x.org/protocol`
+ * @install `launchpad install +x.org/xshmfence -- $SHELL -i`
+ * @dependencies `x.org/protocol`, `freedesktop.org/pkg-config`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xshmfence
- * // Or access via domain
- * const samePkg = pantry.xorgxshmfence
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xshmfence"
+ * const pkg = pantry.xorgxshmfence
+ * console.log(pkg.name)        // "xshmfence"
  * console.log(pkg.versions[0]) // "1.3.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xshmfence.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xshmfencePackage = {
+export const xorgxshmfencePackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xshmfence' as const,
+  name: 'xshmfence' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xshmfencePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xshmfence -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xshmfence -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,6 +49,8 @@ export const xshmfencePackage = {
    */
   dependencies: [
     'x.org/protocol',
+    'freedesktop.org/pkg-config',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -63,14 +60,7 @@ export const xshmfencePackage = {
     '1.3.3',
     '1.3.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xshmfence',
-  ] as const,
-  fullPath: 'x.org/xshmfence' as const,
+  aliases: [] as const,
 }
 
-export type XshmfencePackage = typeof xshmfencePackage
+export type XorgxshmfencePackage = typeof xorgxshmfencePackage

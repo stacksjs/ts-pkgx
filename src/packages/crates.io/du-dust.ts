@@ -6,20 +6,20 @@
  * @version `1.2.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) dust`
- * @name `dust`
- * @aliases `du-dust`
+ * @install `launchpad install dust`
+ * @aliases `dust`
+ * @dependencies `rust-lang.org>=1.60`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.dust
  * // Or access via domain
  * const samePkg = pantry.cratesiodudust
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dust"
+ * console.log(pkg.name)        // "du-dust"
  * console.log(pkg.description) // "A more intuitive version of du in rust"
  * console.log(pkg.programs)    // ["dust"]
  * console.log(pkg.versions[0]) // "1.2.1" (latest)
@@ -32,7 +32,7 @@ export const dustPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dust' as const,
+  name: 'du-dust' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const dustPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) dust' as const,
+  installCommand: 'launchpad install dust' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const dustPackage = {
     'dust',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,9 +82,8 @@ export const dustPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'du-dust',
+    'dust',
   ] as const,
-  fullPath: 'crates.io/du-dust' as const,
 }
 
 export type DustPackage = typeof dustPackage

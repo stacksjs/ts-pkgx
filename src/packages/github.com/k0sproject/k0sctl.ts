@@ -6,9 +6,9 @@
  * @version `0.25.1` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) k0sctl`
+ * @install `launchpad install k0sctl`
  * @name `k0sctl`
- * @aliases `k0sproject/k0sctl`
+ * @dependencies `go.dev^1.21`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const k0sctlPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) k0sctl' as const,
+  installCommand: 'launchpad install k0sctl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const k0sctlPackage = {
     'k0sctl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -88,10 +94,7 @@ export const k0sctlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'k0sproject/k0sctl',
-  ] as const,
-  fullPath: 'github.com/k0sproject/k0sctl' as const,
+  aliases: [] as const,
 }
 
 export type K0sctlPackage = typeof k0sctlPackage

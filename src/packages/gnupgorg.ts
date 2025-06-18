@@ -1,9 +1,12 @@
 /**
- * **gnupg.org** - Package from pantry: gnupg.org
+ * **gnupg.org** - GNU Pretty Good Privacy (PGP) package
  *
  * @domain `gnupg.org`
+ * @programs `gpg`, `gpg-agent`, `gpg-connect-agent`, `gpg-wks-server`, `gpgconf`, ... (+8 more)
+ * @version `2.4.8` (12 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install gnupg.org`
+ * @install `launchpad install +gnupg.org -- $SHELL -i`
  * @dependencies `zlib.net^1.1`, `sourceware.org/bzip2`, `gnupg.org/npth`, ... (+11 more)
  *
  * @example
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.gnupgorg
  * console.log(pkg.name)        // "gnupg.org"
- * console.log(pkg.description) // "Package from pantry: gnupg.org"
+ * console.log(pkg.description) // "GNU Pretty Good Privacy (PGP) package"
+ * console.log(pkg.programs)    // ["gpg", "gpg-agent", ...]
+ * console.log(pkg.versions[0]) // "2.4.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnupg-org.md
@@ -30,13 +35,34 @@ export const gnupgorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: gnupg.org' as const,
+  description: 'GNU Pretty Good Privacy (PGP) package' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install gnupg.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +gnupg.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gpg',
+    'gpg-agent',
+    'gpg-connect-agent',
+    'gpg-wks-server',
+    'gpgconf',
+    'gpgparsemail',
+    'gpgscm',
+    'gpgsm',
+    'gpgsplit',
+    'gpgtar',
+    'gpgv',
+    'kbxutil',
+    'watchgnupg',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,7 +74,7 @@ export const gnupgorgPackage = {
     'gnupg.org/npth',
     'gnupg.org/libgpg-error',
     'gnupg.org/libksba',
-    'gnupg.org/libassuan^2',
+    'gnupg.org/libassuan@2',
     'gnupg.org/libgcrypt',
     'gnupg.org/pinentry',
     'gnutls.org^3',
@@ -58,10 +84,25 @@ export const gnupgorgPackage = {
     'darwin^# nobody added a comment to say why this is Darwin only',
     'gnu.org/gettext^0.21',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.4.8',
+    '2.4.7',
+    '2.4.6',
+    '2.4.5',
+    '2.4.4',
+    '2.4.3',
+    '2.4.2',
+    '2.3.7',
+    '2.2.45',
+    '2.2.44',
+    '2.2.43',
+    '2.2.42',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type GnupgorgPackage = typeof gnupgorgPackage

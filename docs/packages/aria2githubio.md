@@ -1,11 +1,11 @@
-# aria2c
+# aria2.github.io
 
 > aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.
 
 ## Package Information
 
-- **Domain**: `aria2.github.io`
-- **Name**: `aria2c`
+- **Domain**: `aria2github.io`
+- **Name**: `aria2.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aria2.github.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) aria2c
+launchpad install aria2c
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `aria2c`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `aria2c`
 
@@ -37,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +aria2.github.io@1.37.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +aria2github.io@1.37.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -48,6 +54,9 @@ This package depends on:
 - `openssl.org^1`
 - `libexpat.github.io`
 - `sqlite.org^3`
+- `gnupg.org/libgcrypt^1`
+- `gnupg.org/libgpg-error^1`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

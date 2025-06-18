@@ -1,9 +1,11 @@
 /**
- * **opencore-amr.sourceforge.io** - Package from pantry: opencore-amr.sourceforge.io
+ * **opencore-amr.sourceforge.io** - pkgx package
  *
  * @domain `opencore-amr.sourceforge.io`
+ * @version `0.1.6` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install opencore-amr.sourceforge.io`
+ * @install `launchpad install +opencore-amr.sourceforge.io -- $SHELL -i`
  * @dependencies `freedesktop.org/pkg-config`
  *
  * @example
@@ -12,7 +14,7 @@
  *
  * const pkg = pantry.opencoreamrsourceforgeio
  * console.log(pkg.name)        // "opencore-amr.sourceforge.io"
- * console.log(pkg.description) // "Package from pantry: opencore-amr.sourceforge.io"
+ * console.log(pkg.versions[0]) // "0.1.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/opencore-amr-sourceforge-io.md
@@ -30,12 +32,15 @@ export const opencoreamrsourceforgeioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: opencore-amr.sourceforge.io' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opencore-amr.sourceforge.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install opencore-amr.sourceforge.io' as const,
+  installCommand: 'launchpad install +opencore-amr.sourceforge.io -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -45,10 +50,14 @@ export const opencoreamrsourceforgeioPackage = {
   dependencies: [
     'freedesktop.org/pkg-config',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opencore-amr.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.1.6',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type OpencoreamrsourceforgeioPackage = typeof opencoreamrsourceforgeioPackage

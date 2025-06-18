@@ -6,21 +6,20 @@
  * @version `0.3.22` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) xb-tool`
- * @name `xb-tool`
- * @aliases `hughsie/libxmlb`
- * @dependencies `gnome.org/glib@2`, `tukaani.org/xz@5`, `facebook.com/zstd@1`
+ * @install `launchpad install xb-tool`
+ * @aliases `xb-tool`
+ * @dependencies `gnome.org/glib@2`, `tukaani.org/xz@5`, `facebook.com/zstd@1`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.xbtool
  * // Or access via domain
  * const samePkg = pantry.githubcomhughsielibxmlb
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xb-tool"
+ * console.log(pkg.name)        // "libxmlb"
  * console.log(pkg.description) // "A library to help create and query binary XML b..."
  * console.log(pkg.programs)    // ["xb-tool"]
  * console.log(pkg.versions[0]) // "0.3.22" (latest)
@@ -33,7 +32,7 @@ export const xbtoolPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xb-tool' as const,
+  name: 'libxmlb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const xbtoolPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) xb-tool' as const,
+  installCommand: 'launchpad install xb-tool' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,6 +65,11 @@ export const xbtoolPackage = {
     'gnome.org/glib@2',
     'tukaani.org/xz@5',
     'facebook.com/zstd@1',
+    'gnome.org/gobject-introspection',
+    'mesonbuild.com>=0.61',
+    'ninja-build.org',
+    'python.org@3',
+    'gnome.org/vala',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -82,9 +86,8 @@ export const xbtoolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'hughsie/libxmlb',
+    'xb-tool',
   ] as const,
-  fullPath: 'github.com/hughsie/libxmlb' as const,
 }
 
 export type XbtoolPackage = typeof xbtoolPackage

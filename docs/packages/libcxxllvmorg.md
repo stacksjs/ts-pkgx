@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libcxx.llvm.org`
+- **Domain**: `libcxxllvm.org`
 - **Name**: `libcxx.llvm.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libcxx.llvm.org/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libcxx.llvm.org -- $SHELL -i
+launchpad install +libcxx.llvm.org -- $SHELL -i
 ```
 
 ## Programs
@@ -45,8 +45,18 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libcxx.llvm.org@20.1.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libcxxllvm.org@20.1.7 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org>=3<3.29`
+- `ninja-build.org@1`
+- `python.org>=3<3.12`
+- `llvm.org`
+- `llvm.org`
 
 ## Usage Examples
 

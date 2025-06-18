@@ -1,9 +1,11 @@
 /**
- * **msgpack.org** - Package from pantry: msgpack.org
+ * **msgpack.org** - MessagePack implementation for C and C++ / msgpack.org[C/C++]
  *
  * @domain `msgpack.org`
+ * @version `6.0.2` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install msgpack.org`
+ * @install `launchpad install +msgpack.org -- $SHELL -i`
  * @dependencies `cmake.org`, `google.com/googletest`, `freedesktop.org/pkg-config`
  *
  * @example
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.msgpackorg
  * console.log(pkg.name)        // "msgpack.org"
- * console.log(pkg.description) // "Package from pantry: msgpack.org"
+ * console.log(pkg.description) // "MessagePack implementation for C and C++ / msgp..."
+ * console.log(pkg.versions[0]) // "6.0.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/msgpack-org.md
@@ -30,12 +33,15 @@ export const msgpackorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: msgpack.org' as const,
+  description: 'MessagePack implementation for C and C++ / msgpack.org[C/C++]' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/msgpack.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install msgpack.org' as const,
+  installCommand: 'launchpad install +msgpack.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -47,10 +53,16 @@ export const msgpackorgPackage = {
     'google.com/googletest',
     'freedesktop.org/pkg-config',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/msgpack.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '6.0.2',
+    '6.0.1',
+    '6.0.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type MsgpackorgPackage = typeof msgpackorgPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +modal.com -- $SHELL -i
+launchpad install +modal.com -- $SHELL -i
 ```
 
 ## Programs
@@ -203,6 +203,9 @@ sh <(curl https://pkgx.sh) +modal.com@1.0.4 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh@1`
+- `python.org>=3.9<3.13`
+- `protobuf.dev`
+- `cython.org`
 
 ## Usage Examples
 

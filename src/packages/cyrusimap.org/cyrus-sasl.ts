@@ -5,8 +5,9 @@
  * @version `2.1.28` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +cyrusimap.org/cyrus-sasl -- $SHELL -i`
+ * @install `launchpad install +cyrusimap.org/cyrus-sasl -- $SHELL -i`
  * @name `cyrus-sasl`
+ * @dependencies `kerberos.org`, `openssl.org^1.1.1`
  *
  * @example
  * ```typescript
@@ -44,10 +45,17 @@ export const cyrussaslPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +cyrusimap.org/cyrus-sasl -- $SHELL -i' as const,
+  installCommand: 'launchpad install +cyrusimap.org/cyrus-sasl -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'kerberos.org',
+    'openssl.org^1.1.1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -60,7 +68,6 @@ export const cyrussaslPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cyrusimap.org/cyrus-sasl' as const,
 }
 
 export type CyrussaslPackage = typeof cyrussaslPackage

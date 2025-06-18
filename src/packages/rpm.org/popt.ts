@@ -5,19 +5,14 @@
  * @version `1.19.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +rpm.org/popt -- $SHELL -i`
- * @aliases `popt`
+ * @install `launchpad install +rpm.org/popt -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.popt
- * // Or access via domain
- * const samePkg = pantry.rpmorgpopt
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rpm.org/popt"
+ * const pkg = pantry.rpmorgpopt
+ * console.log(pkg.name)        // "popt"
  * console.log(pkg.description) // "C library for parsing command line parameters"
  * console.log(pkg.versions[0]) // "1.19.0" (latest)
  * ```
@@ -25,11 +20,11 @@
  * @see https://ts-pkgx.netlify.app/packages/rpm-org/popt.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const poptPackage = {
+export const rpmorgpoptPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rpm.org/popt' as const,
+  name: 'popt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const poptPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +rpm.org/popt -- $SHELL -i' as const,
+  installCommand: 'launchpad install +rpm.org/popt -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -56,14 +51,7 @@ export const poptPackage = {
   versions: [
     '1.19.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'popt',
-  ] as const,
-  fullPath: 'rpm.org/popt' as const,
+  aliases: [] as const,
 }
 
-export type PoptPackage = typeof poptPackage
+export type RpmorgpoptPackage = typeof rpmorgpoptPackage

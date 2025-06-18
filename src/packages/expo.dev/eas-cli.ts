@@ -6,21 +6,20 @@
  * @version `16.11.0` (135 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) eas`
- * @name `eas`
- * @aliases `eas-cli`
- * @dependencies `nodejs.org^18.18 || >=20`
+ * @install `launchpad install eas`
+ * @aliases `eas`
+ * @dependencies `nodejs.org^18.18 || >=20`, `python.org~3.10`, `classic.yarnpkg.com`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.eas
  * // Or access via domain
  * const samePkg = pantry.expodeveascli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "eas"
+ * console.log(pkg.name)        // "eas-cli"
  * console.log(pkg.description) // "Fastest way to build, submit, and update iOS an..."
  * console.log(pkg.programs)    // ["eas"]
  * console.log(pkg.versions[0]) // "16.11.0" (latest)
@@ -33,7 +32,7 @@ export const easPackage = {
   /**
    * The display name of this package.
    */
-  name: 'eas' as const,
+  name: 'eas-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const easPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) eas' as const,
+  installCommand: 'launchpad install eas' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,9 @@ export const easPackage = {
    */
   dependencies: [
     'nodejs.org^18.18 || >=20',
+    'python.org~3.10',
+    'classic.yarnpkg.com',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -211,9 +213,8 @@ export const easPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'eas-cli',
+    'eas',
   ] as const,
-  fullPath: 'expo.dev/eas-cli' as const,
 }
 
 export type EasPackage = typeof easPackage

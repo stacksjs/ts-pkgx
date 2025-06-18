@@ -1,25 +1,20 @@
 /**
- * **kdave/btrfs-progs** - Userspace utilities to manage btrfs filesystems
+ * **btrfs-progs** - Userspace utilities to manage btrfs filesystems
  *
  * @domain `github.com/kdave/btrfs-progs`
  * @programs `btrfs`, `btrfsck`, `btrfs-convert`, `btrfs-find-root`, `btrfs-image`, ... (+5 more)
  * @version `6.14.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/kdave/btrfs-progs -- $SHELL -i`
- * @aliases `kdave/btrfs-progs`
- * @dependencies `python.org~3.11`, `sourceforge.net/e2fsprogs^1.47`, `oberhumer.com/lzo^2.10`, ... (+4 more)
+ * @install `launchpad install +github.com/kdave/btrfs-progs -- $SHELL -i`
+ * @dependencies `python.org~3.11`, `sourceforge.net/e2fsprogs^1.47`, `oberhumer.com/lzo^2.10`, ... (+8 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.kdavebtrfsprogs
- * // Or access via domain
- * const samePkg = pantry.githubcomkdavebtrfsprogs
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/kdave/btrfs-progs"
+ * const pkg = pantry.githubcomkdavebtrfsprogs
+ * console.log(pkg.name)        // "btrfs-progs"
  * console.log(pkg.description) // "Userspace utilities to manage btrfs filesystems"
  * console.log(pkg.programs)    // ["btrfs", "btrfsck", ...]
  * console.log(pkg.versions[0]) // "6.14.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kdave/btrfs-progs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kdavebtrfsprogsPackage = {
+export const githubcomkdavebtrfsprogsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/kdave/btrfs-progs' as const,
+  name: 'btrfs-progs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const kdavebtrfsprogsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/kdave/btrfs-progs -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/kdave/btrfs-progs -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,10 +69,14 @@ export const kdavebtrfsprogsPackage = {
     'python.org~3.11',
     'sourceforge.net/e2fsprogs^1.47',
     'oberhumer.com/lzo^2.10',
-    'systemd.io^255',
+    'systemd.io^255 # for libudev',
     'github.com/util-linux/util-linux^2.39',
     'zlib.net^1.3',
     'facebook.com/zstd^1.5',
+    'sphinx-doc.org',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -97,14 +96,7 @@ export const kdavebtrfsprogsPackage = {
     '6.8.0',
     '6.7.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'kdave/btrfs-progs',
-  ] as const,
-  fullPath: 'github.com/kdave/btrfs-progs' as const,
+  aliases: [] as const,
 }
 
-export type KdavebtrfsprogsPackage = typeof kdavebtrfsprogsPackage
+export type GithubcomkdavebtrfsprogsPackage = typeof githubcomkdavebtrfsprogsPackage

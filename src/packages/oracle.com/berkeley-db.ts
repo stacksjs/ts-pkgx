@@ -7,19 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +oracle.com/berkeley-db -- $SHELL -i`
- * @aliases `berkeley-db`
  * @dependencies `openssl.org^1.1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.berkeleydb
- * // Or access via domain
- * const samePkg = pantry.oraclecomberkeleydb
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "oracle.com/berkeley-db"
+ * const pkg = pantry.oraclecomberkeleydb
+ * console.log(pkg.name)        // "berkeley-db"
  * console.log(pkg.description) // "High performance key/value database"
  * console.log(pkg.programs)    // ["db_verify", "db_upgrade", ...]
  * console.log(pkg.versions[0]) // "18.1.40" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/oracle-com/berkeley-db.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const berkeleydbPackage = {
+export const oraclecomberkeleydbPackage = {
   /**
    * The display name of this package.
    */
-  name: 'oracle.com/berkeley-db' as const,
+  name: 'berkeley-db' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -85,14 +80,7 @@ export const berkeleydbPackage = {
   versions: [
     '18.1.40',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'berkeley-db',
-  ] as const,
-  fullPath: 'oracle.com/berkeley-db' as const,
+  aliases: [] as const,
 }
 
-export type BerkeleydbPackage = typeof berkeleydbPackage
+export type OraclecomberkeleydbPackage = typeof oraclecomberkeleydbPackage

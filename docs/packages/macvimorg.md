@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +macvim.org -- $SHELL -i
+launchpad install +macvim.org -- $SHELL -i
 ```
 
 ## Programs
@@ -62,6 +62,7 @@ This package depends on:
 - `ruby-lang.org`
 - `libsodium.org`
 - `gnu.org/gettext`
+- `gnu.org/make`
 
 ## Usage Examples
 

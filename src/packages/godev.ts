@@ -1,5 +1,5 @@
 /**
- * **go.dev** - The Go programming language
+ * **go** - The Go programming language
  *
  * @domain `go.dev`
  * @programs `go`, `gofmt`
@@ -7,13 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +go.dev -- $SHELL -i`
- * @dependencies `openssl.org^1  # for ca-certificates`, `gnu.org/m4^1`, `go.dev`, ... (+1 more)
+ * @aliases `go`
+ * @dependencies `openssl.org^1  # for ca-certificates`, `gnu.org/m4@1`, `go.dev`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.godev
+ * // Access via alias (recommended)
+ * const pkg = pantry.go
+ * // Or access via domain
+ * const samePkg = pantry.godev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "go.dev"
  * console.log(pkg.description) // "The Go programming language"
  * console.log(pkg.programs)    // ["go", "gofmt"]
@@ -23,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/go-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const godevPackage = {
+export const goPackage = {
   /**
    * The display name of this package.
    */
@@ -59,7 +64,7 @@ export const godevPackage = {
    */
   dependencies: [
     'openssl.org^1  # for ca-certificates',
-    'gnu.org/m4^1',
+    'gnu.org/m4@1',
     'go.dev',
     'curl.se',
   ] as const,
@@ -137,7 +142,13 @@ export const godevPackage = {
     '1.17.13',
     '1.16.15',
   ] as const,
-  aliases: [] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'go',
+  ] as const,
 }
 
-export type GodevPackage = typeof godevPackage
+export type GoPackage = typeof goPackage

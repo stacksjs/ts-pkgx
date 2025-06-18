@@ -6,7 +6,7 @@
  * @version `3.3.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) gperf`
+ * @install `launchpad install gperf`
  * @name `gperf`
  *
  * @example
@@ -47,7 +47,7 @@ export const gperfPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) gperf' as const,
+  installCommand: 'launchpad install gperf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,7 +72,6 @@ export const gperfPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/gperf' as const,
 }
 
 export type GperfPackage = typeof gperfPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +rapidjson.org -- $SHELL -i
+launchpad install +rapidjson.org -- $SHELL -i
 ```
 
 ## Programs
@@ -39,6 +39,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +rapidjson.org@1.1.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `doxygen.nl@1`
 
 ## Usage Examples
 

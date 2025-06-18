@@ -6,20 +6,20 @@
  * @version `0.18.0` (24 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sk`
- * @name `sk`
- * @aliases `skim`
+ * @install `launchpad install sk`
+ * @aliases `sk`
+ * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sk
  * // Or access via domain
  * const samePkg = pantry.cratesioskim
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sk"
+ * console.log(pkg.name)        // "skim"
  * console.log(pkg.description) // "Fuzzy Finder in rust!"
  * console.log(pkg.programs)    // ["sk"]
  * console.log(pkg.versions[0]) // "0.18.0" (latest)
@@ -32,7 +32,7 @@ export const skPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sk' as const,
+  name: 'skim' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const skPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sk' as const,
+  installCommand: 'launchpad install sk' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const skPackage = {
     'sk',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -93,9 +100,8 @@ export const skPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'skim',
+    'sk',
   ] as const,
-  fullPath: 'crates.io/skim' as const,
 }
 
 export type SkPackage = typeof skPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +soliditylang.org -- $SHELL -i
+launchpad install +soliditylang.org -- $SHELL -i
 ```
 
 ## Programs
@@ -48,8 +48,10 @@ sh <(curl https://pkgx.sh) +soliditylang.org@0.8.30 -- $SHELL -i
 This package depends on:
 
 - `boost.org~1.84`
-- `linuxgnu.org/gcc/libstdcxx@14`
 - `gnu.org/gcc/libstdcxx@14`
+- `gnu.org/gcc@14`
+- `cmake.org@3`
+- `gnu.org/patch`
 
 ## Usage Examples
 

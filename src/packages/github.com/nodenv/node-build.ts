@@ -8,8 +8,7 @@
  *
  * @install `launchpad install node-build`
  * @name `node-build`
- * @aliases `nodenv/node-build`
- * @dependencies `openssl.org>=3.0.0`
+ * @dependencies `openssl.org>=3.0.0`, `gnu.org/autoconf`
  *
  * @example
  * ```typescript
@@ -64,6 +63,7 @@ export const nodebuildPackage = {
    */
   dependencies: [
     'openssl.org>=3.0.0',
+    'gnu.org/autoconf',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -164,10 +164,7 @@ export const nodebuildPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nodenv/node-build',
-  ] as const,
-  fullPath: 'github.com/nodenv/node-build' as const,
+  aliases: [] as const,
 }
 
 export type NodebuildPackage = typeof nodebuildPackage

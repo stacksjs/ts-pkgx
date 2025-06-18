@@ -6,20 +6,20 @@
  * @version `0.4.51` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) mdbook`
- * @name `mdbook`
- * @aliases `mdBook`
+ * @install `launchpad install mdbook`
+ * @aliases `mdbook`
+ * @dependencies `rust-lang.org>=1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.mdbook
  * // Or access via domain
  * const samePkg = pantry.rustlanggithubiomdbook
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mdbook"
+ * console.log(pkg.name)        // "mdBook"
  * console.log(pkg.description) // "Create book from markdown files. Like Gitbook b..."
  * console.log(pkg.programs)    // ["mdbook"]
  * console.log(pkg.versions[0]) // "0.4.51" (latest)
@@ -32,7 +32,7 @@ export const mdbookPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mdbook' as const,
+  name: 'mdBook' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const mdbookPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) mdbook' as const,
+  installCommand: 'launchpad install mdbook' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const mdbookPackage = {
     'mdbook',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -87,9 +94,8 @@ export const mdbookPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'mdBook',
+    'mdbook',
   ] as const,
-  fullPath: 'rust-lang.github.io/mdBook' as const,
 }
 
 export type MdbookPackage = typeof mdbookPackage

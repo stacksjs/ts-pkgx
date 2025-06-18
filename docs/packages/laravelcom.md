@@ -1,11 +1,11 @@
-# laravel
+# laravel.com
 
 > The Laravel application installer.
 
 ## Package Information
 
 - **Domain**: `laravel.com`
-- **Name**: `laravel`
+- **Name**: `laravel.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/laravel.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) laravel
+launchpad install laravel
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `laravel`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `laravel`
 
@@ -49,8 +55,9 @@ This package depends on:
 
 - `php.net^8.2`
 - `getcomposer.org^2.7`
-- `linuxinfo-zip.org/unzip^6`
 - `info-zip.org/unzip^6`
+- `curl.se`
+- `pkgx.sh^1`
 
 ## Usage Examples
 

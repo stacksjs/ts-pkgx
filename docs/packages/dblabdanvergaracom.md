@@ -1,11 +1,11 @@
-# dblab
+# dblab.danvergara.com
 
 > The database client every command line junkie deserves.
 
 ## Package Information
 
-- **Domain**: `dblab.danvergara.com`
-- **Name**: `dblab`
+- **Domain**: `dblabdanvergara.com`
+- **Name**: `dblab.danvergara.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dblab.danvergara.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) dblab
+launchpad install dblab
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `dblab`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `dblab`
 
@@ -40,8 +46,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +dblab.danvergara.com@0.33.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +dblabdanvergara.com@0.33.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.21`
 
 ## Usage Examples
 

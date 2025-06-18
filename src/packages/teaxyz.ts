@@ -3,7 +3,8 @@
  *
  * @domain `tea.xyz`
  *
- * @install `pkgx tea.xyz`
+ * @install `launchpad install tea.xyz`
+ * @dependencies `deno.land>=1.23 <1.25 || ^1.25.3`
  *
  * @example
  * ```typescript
@@ -36,13 +37,18 @@ export const teaxyzPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx tea.xyz' as const,
+  installCommand: 'launchpad install tea.xyz' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'deno.land>=1.23 <1.25 || ^1.25.3',
+  ] as const,
   versions: [] as const,
   aliases: [] as const,
-  fullPath: 'tea.xyz' as const,
 }
 
 export type TeaxyzPackage = typeof teaxyzPackage

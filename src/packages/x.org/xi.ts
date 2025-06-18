@@ -5,31 +5,26 @@
  * @version `1.8.2` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xi -- $SHELL -i`
- * @aliases `xi`
- * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/xfixes`, ... (+1 more)
+ * @install `launchpad install +x.org/xi -- $SHELL -i`
+ * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/xfixes`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xi
- * // Or access via domain
- * const samePkg = pantry.xorgxi
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xi"
+ * const pkg = pantry.xorgxi
+ * console.log(pkg.name)        // "xi"
  * console.log(pkg.versions[0]) // "1.8.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xi.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xiPackage = {
+export const xorgxiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xi' as const,
+  name: 'xi' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xiPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xi -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xi -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -57,6 +52,7 @@ export const xiPackage = {
     'x.org/protocol',
     'x.org/xfixes',
     'x.org/exts',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -66,14 +62,7 @@ export const xiPackage = {
     '1.8.2',
     '1.8.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xi',
-  ] as const,
-  fullPath: 'x.org/xi' as const,
+  aliases: [] as const,
 }
 
-export type XiPackage = typeof xiPackage
+export type XorgxiPackage = typeof xorgxiPackage

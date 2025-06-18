@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +augeas.net -- $SHELL -i
+launchpad install +augeas.net -- $SHELL -i
 ```
 
 ## Programs
@@ -50,6 +50,14 @@ This package depends on:
 
 - `gnu.org/readline`
 - `gnome.org/libxml2`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `gnu.org/bison`
+- `gnu.org/libtool`
+- `freedesktop.org/pkg-config`
+- `curl.se`
+- `gnu.org/patch`
+- `gnu.org/gcc`
 
 ## Usage Examples
 

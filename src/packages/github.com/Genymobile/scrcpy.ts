@@ -6,10 +6,9 @@
  * @version `3.3.0` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) scrcpy`
+ * @install `launchpad install scrcpy`
  * @name `scrcpy`
- * @aliases `Genymobile/scrcpy`
- * @dependencies `ffmpeg.org`, `libusb.info`, `libsdl.org`, ... (+5 more)
+ * @dependencies `ffmpeg.org`, `libusb.info`, `libsdl.org`, ... (+8 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const scrcpyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) scrcpy' as const,
+  installCommand: 'launchpad install scrcpy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,11 +65,14 @@ export const scrcpyPackage = {
     'ffmpeg.org',
     'libusb.info',
     'libsdl.org',
-    'linuxwebmproject.org/libvpx<1.15.1',
-    'webmproject.org/libvpx<1.15.1',
-    'darwinsourceware.org/bzip2zlib.net',
+    'webmproject.org/libvpx<1.15.1 # since 3.3, .9 lib api',
     'sourceware.org/bzip2',
     'zlib.net',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'gnu.org/wget',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -97,10 +99,7 @@ export const scrcpyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'Genymobile/scrcpy',
-  ] as const,
-  fullPath: 'github.com/Genymobile/scrcpy' as const,
+  aliases: [] as const,
 }
 
 export type ScrcpyPackage = typeof scrcpyPackage

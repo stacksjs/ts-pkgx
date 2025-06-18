@@ -8,7 +8,7 @@
  *
  * @install `launchpad install alacritty`
  * @aliases `alacritty`
- * @dependencies `linux`, `freetype.org`, `freedesktop.org/fontconfig`
+ * @dependencies `freetype.org`, `freedesktop.org/fontconfig`, `rust-lang.org>=1.75`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -62,9 +62,10 @@ export const alacrittyPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linux',
     'freetype.org',
     'freedesktop.org/fontconfig',
+    'rust-lang.org>=1.75',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

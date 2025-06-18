@@ -6,21 +6,21 @@
  * @version `1.3.4` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) eget`
- * @name `Eget`
- * @aliases `eget`, `zyedidia/eget`
- * @dependencies `curl.se/ca-certs`
+ * @install `launchpad install eget`
+ * @name `eget`
+ * @aliases `Eget`
+ * @dependencies `curl.se/ca-certs`, `go.dev`, `pandoc.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.eget
  * // Or access via domain
  * const samePkg = pantry.githubcomzyedidiaeget
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "Eget"
+ * console.log(pkg.name)        // "eget"
  * console.log(pkg.description) // "Easily install prebuilt binaries from GitHub."
  * console.log(pkg.programs)    // ["eget"]
  * console.log(pkg.versions[0]) // "1.3.4" (latest)
@@ -33,7 +33,7 @@ export const egetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'Eget' as const,
+  name: 'eget' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,12 +44,12 @@ export const egetPackage = {
   description: 'Easily install prebuilt binaries from GitHub.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zyedidia/eget/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/zyedidia/eget' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) eget' as const,
+  installCommand: 'launchpad install eget' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,8 @@ export const egetPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
+    'go.dev',
+    'pandoc.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,10 +80,8 @@ export const egetPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'eget',
-    'zyedidia/eget',
+    'Eget',
   ] as const,
-  fullPath: 'github.com/zyedidia/eget' as const,
 }
 
 export type EgetPackage = typeof egetPackage

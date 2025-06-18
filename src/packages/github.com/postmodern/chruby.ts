@@ -6,20 +6,19 @@
  * @version `0.3.9` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) chruby-exec`
- * @name `chruby-exec`
- * @aliases `postmodern/chruby`
+ * @install `launchpad install chruby-exec`
+ * @aliases `chruby-exec`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.chrubyexec
  * // Or access via domain
  * const samePkg = pantry.githubcompostmodernchruby
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "chruby-exec"
+ * console.log(pkg.name)        // "chruby"
  * console.log(pkg.description) // "Changes the current Ruby"
  * console.log(pkg.programs)    // ["chruby-exec"]
  * console.log(pkg.versions[0]) // "0.3.9" (latest)
@@ -32,7 +31,7 @@ export const chrubyexecPackage = {
   /**
    * The display name of this package.
    */
-  name: 'chruby-exec' as const,
+  name: 'chruby' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +47,7 @@ export const chrubyexecPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) chruby-exec' as const,
+  installCommand: 'launchpad install chruby-exec' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,9 +69,8 @@ export const chrubyexecPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'postmodern/chruby',
+    'chruby-exec',
   ] as const,
-  fullPath: 'github.com/postmodern/chruby' as const,
 }
 
 export type ChrubyexecPackage = typeof chrubyexecPackage

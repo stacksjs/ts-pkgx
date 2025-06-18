@@ -1,11 +1,11 @@
-# pdm
+# pdm.fming.dev
 
 > A modern Python package and dependency manager supporting the latest PEP standards
 
 ## Package Information
 
-- **Domain**: `pdm.fming.dev`
-- **Name**: `pdm`
+- **Domain**: `pdmfming.dev`
+- **Name**: `pdm.fming.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pdm.fming.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) pdm
+launchpad install pdm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `pdm`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `pdm`
 
@@ -50,7 +56,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pdm.fming.dev@2.25.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +pdmfming.dev@2.25.2 -- $SHELL -i
 ```
 
 ## Dependencies

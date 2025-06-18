@@ -7,20 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/plougher/squashfs-tools -- $SHELL -i`
- * @name `SquashFS-Tools`
- * @aliases `squashfs-tools`, `plougher/squashfs-tools`
- * @dependencies `lz4.org@1`, `oberhumer.com/lzo@2`, `tukaani.org/xz@5`, ... (+2 more)
+ * @aliases `SquashFS-Tools`
+ * @dependencies `lz4.org@1`, `oberhumer.com/lzo@2`, `tukaani.org/xz@5`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.SquashFSTools
  * // Or access via domain
  * const samePkg = pantry.githubcomploughersquashfstools
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "SquashFS-Tools"
+ * console.log(pkg.name)        // "squashfs-tools"
  * console.log(pkg.description) // "tools to create and extract Squashfs filesystems"
  * console.log(pkg.programs)    // ["mksquashfs", "unsquashfs", ...]
  * console.log(pkg.versions[0]) // "4.7.0" (latest)
@@ -33,7 +32,7 @@ export const squashFSToolsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'SquashFS-Tools' as const,
+  name: 'squashfs-tools' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,6 +70,9 @@ export const squashFSToolsPackage = {
     'tukaani.org/xz@5',
     'facebook.com/zstd@1',
     'zlib.net@1',
+    'curl.se',
+    'gnu.org/patch',
+    'gnu.org/diffutils',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -85,10 +87,8 @@ export const squashFSToolsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'squashfs-tools',
-    'plougher/squashfs-tools',
+    'SquashFS-Tools',
   ] as const,
-  fullPath: 'github.com/plougher/squashfs-tools' as const,
 }
 
 export type SquashFSToolsPackage = typeof squashFSToolsPackage

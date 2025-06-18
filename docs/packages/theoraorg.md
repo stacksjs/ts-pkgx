@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +theora.org -- $SHELL -i
+launchpad install +theora.org -- $SHELL -i
 ```
 
 ## Programs
@@ -46,6 +46,12 @@ This package depends on:
 
 - `xiph.org/ogg`
 - `xiph.org/vorbis`
+- `gnu.org/libtool`
+- `gnu.org/automake`
+- `gnu.org/autoconf>=2.71`
+- `freedesktop.org/pkg-config`
+- `gnu.org/wget`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

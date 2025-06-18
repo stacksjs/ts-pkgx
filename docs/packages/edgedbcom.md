@@ -1,11 +1,11 @@
-# edgedb
+# edgedb.com
 
 > The EdgeDB CLI
 
 ## Package Information
 
 - **Domain**: `edgedb.com`
-- **Name**: `edgedb`
+- **Name**: `edgedb.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/edgedb.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) edgedb
+launchpad install edgedb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `edgedb`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `edgedb`
 
@@ -46,6 +52,14 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +edgedb.com@7.6.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rust-lang.org^1.61`
+- `rust-lang.org/cargo^0`
+- `perl.org^5`
 
 ## Usage Examples
 

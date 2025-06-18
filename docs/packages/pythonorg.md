@@ -1,11 +1,11 @@
-# python
+# python.org
 
 > The Python programming language
 
 ## Package Information
 
 - **Domain**: `python.org`
-- **Name**: `python`
+- **Name**: `python.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/python.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +python.org -- $SHELL -i
+launchpad install +python.org -- $SHELL -i
 ```
 
 ## Programs
@@ -23,6 +23,13 @@ This package provides the following executable programs:
 - `python`
 - `python&lbrace;&lbrace; version.major &rbrace;&rbrace;`
 - `python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `python`
+- `py`
 
 ## Available Versions
 
@@ -87,10 +94,14 @@ This package depends on:
 - `gnu.org/readline@8`
 - `invisible-island.net/ncurses@6`
 - `tcl-lang.org@8`
+- `freedesktop.org/pkg-config^0.29`
+- `gnu.org/patch`
+- `curl.se`
+- `crates.io/semverator`
 
 ## Related Packages
 
-These packages work well with python:
+These packages work well with python.org:
 
 - [`pip.pypa.io`](pippypaio.md) - The Python package installer
 

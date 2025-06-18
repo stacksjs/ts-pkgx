@@ -6,9 +6,9 @@
  * @version `1.2.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) dav1d`
+ * @install `launchpad install dav1d`
  * @name `dav1d`
- * @aliases `videolan/dav1d`
+ * @dependencies `nasm.us@2.14`, `mesonbuild.com>=0.49`, `ninja-build.org@1`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const dav1dPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) dav1d' as const,
+  installCommand: 'launchpad install dav1d' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,15 @@ export const dav1dPackage = {
     'dav1d',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'nasm.us@2.14',
+    'mesonbuild.com>=0.49',
+    'ninja-build.org@1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,10 +78,7 @@ export const dav1dPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'videolan/dav1d',
-  ] as const,
-  fullPath: 'code.videolan.org/videolan/dav1d' as const,
+  aliases: [] as const,
 }
 
 export type Dav1dPackage = typeof dav1dPackage

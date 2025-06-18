@@ -6,10 +6,9 @@
  * @version `25.5.31` (22 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) yazi`
+ * @install `launchpad install yazi`
  * @name `yazi`
- * @aliases `sxyazi/yazi`
- * @dependencies `stedolan.github.io/jq`, `poppler.freedesktop.org`, `crates.io/fd-find`, ... (+3 more)
+ * @dependencies `stedolan.github.io/jq`, `poppler.freedesktop.org`, `crates.io/fd-find`, ... (+7 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const yaziPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) yazi' as const,
+  installCommand: 'launchpad install yazi' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,6 +68,10 @@ export const yaziPackage = {
     'crates.io/ripgrep',
     'github.com/junegunn/fzf',
     'crates.io/zoxide',
+    'rust-lang.org^1.70',
+    'rust-lang.org/cargo',
+    'llvm.org<17',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -102,10 +105,7 @@ export const yaziPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sxyazi/yazi',
-  ] as const,
-  fullPath: 'github.com/sxyazi/yazi' as const,
+  aliases: [] as const,
 }
 
 export type YaziPackage = typeof yaziPackage

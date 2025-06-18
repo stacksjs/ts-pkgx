@@ -6,20 +6,15 @@
  * @version `2.72.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/autoconf -- $SHELL -i`
- * @aliases `autoconf`
- * @dependencies `gnu.org/m4@1`, `perl.org`
+ * @install `launchpad install +gnu.org/autoconf -- $SHELL -i`
+ * @dependencies `gnu.org/m4@1`, `perl.org`, `llvm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.autoconf
- * // Or access via domain
- * const samePkg = pantry.gnuorgautoconf
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/autoconf"
+ * const pkg = pantry.gnuorgautoconf
+ * console.log(pkg.name)        // "autoconf"
  * console.log(pkg.description) // "Automatic configure script builder"
  * console.log(pkg.programs)    // ["autoconf", "autoheader", ...]
  * console.log(pkg.versions[0]) // "2.72.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/autoconf.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const autoconfPackage = {
+export const gnuorgautoconfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/autoconf' as const,
+  name: 'autoconf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const autoconfPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/autoconf -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/autoconf -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,6 +65,7 @@ export const autoconfPackage = {
   dependencies: [
     'gnu.org/m4@1',
     'perl.org',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,14 +75,7 @@ export const autoconfPackage = {
     '2.72.0',
     '2.71.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'autoconf',
-  ] as const,
-  fullPath: 'gnu.org/autoconf' as const,
+  aliases: [] as const,
 }
 
-export type AutoconfPackage = typeof autoconfPackage
+export type GnuorgautoconfPackage = typeof gnuorgautoconfPackage

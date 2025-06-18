@@ -1,11 +1,11 @@
-# convco
+# convco.github.io
 
 > Conventional commits, changelog, versioning, validation
 
 ## Package Information
 
-- **Domain**: `convco.github.io`
-- **Name**: `convco`
+- **Domain**: `convcogithub.io`
+- **Name**: `convco.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/convco.github.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) convco
+launchpad install convco
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `convco`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `convco`
 
@@ -38,8 +44,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +convco.github.io@0.6.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +convcogithub.io@0.6.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rust-lang.org>=1.56`
+- `rust-lang.org/cargo`
+- `cmake.org^3`
 
 ## Usage Examples
 

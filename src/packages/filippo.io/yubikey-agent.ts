@@ -6,9 +6,9 @@
  * @version `0.1.6` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) yubikey-agent`
+ * @install `launchpad install yubikey-agent`
  * @name `yubikey-agent`
- * @dependencies `pcsclite.apdu.fr^2`, `linuxgnupg.org/pinentry`, `gnupg.org/pinentry`
+ * @dependencies `pcsclite.apdu.fr^2`, `gnupg.org/pinentry`, `go.dev^1.20`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const yubikeyagentPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) yubikey-agent' as const,
+  installCommand: 'launchpad install yubikey-agent' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,8 +63,9 @@ export const yubikeyagentPackage = {
    */
   dependencies: [
     'pcsclite.apdu.fr^2',
-    'linuxgnupg.org/pinentry',
     'gnupg.org/pinentry',
+    'go.dev^1.20',
+    'gitlab.com/procps-ng/procps',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,7 +79,6 @@ export const yubikeyagentPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'filippo.io/yubikey-agent' as const,
 }
 
 export type YubikeyagentPackage = typeof yubikeyagentPackage

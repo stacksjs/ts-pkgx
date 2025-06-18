@@ -5,31 +5,26 @@
  * @version `1.1.5` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xdmcp -- $SHELL -i`
- * @aliases `xdmcp`
- * @dependencies `x.org/protocol`
+ * @install `launchpad install +x.org/xdmcp -- $SHELL -i`
+ * @dependencies `x.org/protocol`, `freedesktop.org/pkg-config~0.29`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xdmcp
- * // Or access via domain
- * const samePkg = pantry.xorgxdmcp
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xdmcp"
+ * const pkg = pantry.xorgxdmcp
+ * console.log(pkg.name)        // "xdmcp"
  * console.log(pkg.versions[0]) // "1.1.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xdmcp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xdmcpPackage = {
+export const xorgxdmcpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xdmcp' as const,
+  name: 'xdmcp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xdmcpPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xdmcp -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xdmcp -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,6 +49,7 @@ export const xdmcpPackage = {
    */
   dependencies: [
     'x.org/protocol',
+    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -63,14 +59,7 @@ export const xdmcpPackage = {
     '1.1.5',
     '1.1.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xdmcp',
-  ] as const,
-  fullPath: 'x.org/xdmcp' as const,
+  aliases: [] as const,
 }
 
-export type XdmcpPackage = typeof xdmcpPackage
+export type XorgxdmcpPackage = typeof xorgxdmcpPackage

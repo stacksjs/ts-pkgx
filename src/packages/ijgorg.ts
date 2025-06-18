@@ -1,9 +1,12 @@
 /**
- * **ijg.org** - Package from pantry: ijg.org
+ * **ijg.org** - pkgx package
  *
  * @domain `ijg.org`
+ * @programs `cjpeg`, `djpeg`, `jpegtran`, `rdjpgcom`, `wrjpgcom`
+ * @version `9f` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install ijg.org`
+ * @install `launchpad install +ijg.org -- $SHELL -i`
  * @dependencies `curl.se`
  *
  * @example
@@ -12,7 +15,8 @@
  *
  * const pkg = pantry.ijgorg
  * console.log(pkg.name)        // "ijg.org"
- * console.log(pkg.description) // "Package from pantry: ijg.org"
+ * console.log(pkg.programs)    // ["cjpeg", "djpeg", ...]
+ * console.log(pkg.versions[0]) // "9f" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ijg-org.md
@@ -30,13 +34,26 @@ export const ijgorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: ijg.org' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ijg.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install ijg.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +ijg.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'cjpeg',
+    'djpeg',
+    'jpegtran',
+    'rdjpgcom',
+    'wrjpgcom',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +62,16 @@ export const ijgorgPackage = {
   dependencies: [
     'curl.se',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ijg.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '9f',
+    '9e',
+    '9.5.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type IjgorgPackage = typeof ijgorgPackage

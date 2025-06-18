@@ -6,20 +6,20 @@
  * @version `2.2.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ag`
- * @aliases `ag`, `the silver searcher`
- * @dependencies `pcre.org^8`, `tukaani.org/xz^5.4.5`
+ * @install `launchpad install ag`
+ * @name `ag`
+ * @dependencies `pcre.org^8`, `tukaani.org/xz^5.4.5`, `gnu.org/autoconf`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ag
  * // Or access via domain
  * const samePkg = pantry.geoffgreerfmag
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "The Silver Searcher"
+ * console.log(pkg.name)        // "ag"
  * console.log(pkg.description) // "A code-searching tool similar to ack, but faster."
  * console.log(pkg.programs)    // ["ag"]
  * console.log(pkg.versions[0]) // "2.2.0" (latest)
@@ -32,7 +32,7 @@ export const agPackage = {
   /**
    * The display name of this package.
    */
-  name: 'The Silver Searcher' as const,
+  name: 'ag' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const agPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ag' as const,
+  installCommand: 'launchpad install ag' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,9 @@ export const agPackage = {
   dependencies: [
     'pcre.org^8',
     'tukaani.org/xz^5.4.5',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,11 +79,7 @@ export const agPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ag',
-    'the silver searcher',
-  ] as const,
-  fullPath: 'geoff.greer.fm/ag' as const,
+  aliases: [] as const,
 }
 
 export type AgPackage = typeof agPackage

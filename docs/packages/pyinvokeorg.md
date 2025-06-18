@@ -1,11 +1,11 @@
-# invoke
+# pyinvoke.org
 
 > Pythonic task management & command execution.
 
 ## Package Information
 
 - **Domain**: `pyinvoke.org`
-- **Name**: `invoke`
+- **Name**: `pyinvoke.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pyinvoke.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) invoke
+launchpad install invoke
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `invoke`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `invoke`
 
@@ -45,6 +51,7 @@ sh <(curl https://pkgx.sh) +pyinvoke.org@2.2.0 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
+- `python.org^3.13.3`
 
 ## Usage Examples
 

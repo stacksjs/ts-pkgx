@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i
+launchpad install +nghttp2.org -- $SHELL -i
 ```
 
 ## Programs

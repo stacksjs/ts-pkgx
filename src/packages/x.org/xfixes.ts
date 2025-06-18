@@ -5,31 +5,26 @@
  * @version `6.0.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xfixes -- $SHELL -i`
- * @aliases `xfixes`
- * @dependencies `x.org/x11`, `x.org/protocol`
+ * @install `launchpad install +x.org/xfixes -- $SHELL -i`
+ * @dependencies `x.org/x11`, `x.org/protocol`, `freedesktop.org/pkg-config`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xfixes
- * // Or access via domain
- * const samePkg = pantry.xorgxfixes
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xfixes"
+ * const pkg = pantry.xorgxfixes
+ * console.log(pkg.name)        // "xfixes"
  * console.log(pkg.versions[0]) // "6.0.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xfixes.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xfixesPackage = {
+export const xorgxfixesPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xfixes' as const,
+  name: 'xfixes' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xfixesPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xfixes -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xfixes -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,8 @@ export const xfixesPackage = {
   dependencies: [
     'x.org/x11',
     'x.org/protocol',
+    'freedesktop.org/pkg-config',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -63,14 +60,7 @@ export const xfixesPackage = {
   versions: [
     '6.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xfixes',
-  ] as const,
-  fullPath: 'x.org/xfixes' as const,
+  aliases: [] as const,
 }
 
-export type XfixesPackage = typeof xfixesPackage
+export type XorgxfixesPackage = typeof xorgxfixesPackage

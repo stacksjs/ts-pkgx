@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `classic.yarnpkg.com`
+- **Domain**: `classicyarnpkg.com`
 - **Name**: `classic.yarnpkg.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/classic.yarnpkg.com/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i
+launchpad install +classic.yarnpkg.com -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `yarn`
 - `yarnpkg`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `yarn`
 
 ## Available Versions
 
@@ -38,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +classic.yarnpkg.com@1.22.22 -- $SHELL -i
+sh <(curl https://pkgx.sh) +classicyarnpkg.com@1.22.22 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -46,6 +52,8 @@ sh <(curl https://pkgx.sh) +classic.yarnpkg.com@1.22.22 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org>=5`
+- `npmjs.com`
+- `gnu.org/patch`
 
 ## Usage Examples
 

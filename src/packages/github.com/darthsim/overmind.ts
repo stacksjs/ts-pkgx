@@ -6,10 +6,9 @@
  * @version `2.5.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) overmind`
+ * @install `launchpad install overmind`
  * @name `overmind`
- * @aliases `darthsim/overmind`
- * @dependencies `github.com/tmux/tmux`
+ * @dependencies `github.com/tmux/tmux`, `go.dev>=1.21`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const overmindPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) overmind' as const,
+  installCommand: 'launchpad install overmind' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const overmindPackage = {
    */
   dependencies: [
     'github.com/tmux/tmux',
+    'go.dev>=1.21',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,10 +78,7 @@ export const overmindPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'darthsim/overmind',
-  ] as const,
-  fullPath: 'github.com/darthsim/overmind' as const,
+  aliases: [] as const,
 }
 
 export type OvermindPackage = typeof overmindPackage

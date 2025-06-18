@@ -6,20 +6,19 @@
  * @version `2.43.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) xcodegen`
- * @name `xcodegen`
- * @aliases `yonaskolb/XcodeGen`
+ * @install `launchpad install xcodegen`
+ * @aliases `xcodegen`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.xcodegen
  * // Or access via domain
  * const samePkg = pantry.githubcomyonaskolbxcodegen
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xcodegen"
+ * console.log(pkg.name)        // "XcodeGen"
  * console.log(pkg.description) // "Generate your Xcode project from a spec file an..."
  * console.log(pkg.programs)    // ["xcodegen"]
  * console.log(pkg.versions[0]) // "2.43.0" (latest)
@@ -32,7 +31,7 @@ export const xcodegenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xcodegen' as const,
+  name: 'XcodeGen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +47,7 @@ export const xcodegenPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) xcodegen' as const,
+  installCommand: 'launchpad install xcodegen' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,9 +80,8 @@ export const xcodegenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'yonaskolb/XcodeGen',
+    'xcodegen',
   ] as const,
-  fullPath: 'github.com/yonaskolb/XcodeGen' as const,
 }
 
 export type XcodegenPackage = typeof xcodegenPackage

@@ -1,24 +1,34 @@
 /**
- * **libzip.org** - Package from pantry: libzip.org
+ * **zip** - A C library for reading, creating, and modifying zip archives.
  *
  * @domain `libzip.org`
+ * @programs `zipcmp`, `zipmerge`, `ziptool`
+ * @version `1.11.4` (7 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install libzip.org`
+ * @install `launchpad install +libzip.org -- $SHELL -i`
+ * @aliases `zip`
  * @dependencies `facebook.com/zstd>=1.5.0`, `sourceware.org/bzip2>=1.0.8`, `tukaani.org/xz>=5.2.7`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.libziporg
+ * // Access via alias (recommended)
+ * const pkg = pantry.zip
+ * // Or access via domain
+ * const samePkg = pantry.libziporg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libzip.org"
- * console.log(pkg.description) // "Package from pantry: libzip.org"
+ * console.log(pkg.description) // "A C library for reading, creating, and modifyin..."
+ * console.log(pkg.programs)    // ["zipcmp", "zipmerge", ...]
+ * console.log(pkg.versions[0]) // "1.11.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libzip-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libziporgPackage = {
+export const zipPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,24 @@ export const libziporgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: libzip.org' as const,
+  description: 'A C library for reading, creating, and modifying zip archives.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libzip.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install libzip.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +libzip.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'zipcmp',
+    'zipmerge',
+    'ziptool',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -50,10 +71,26 @@ export const libziporgPackage = {
     'openssl.org^1.1',
     'cmake.org>=3.24',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libzip.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.11.4',
+    '1.11.3',
+    '1.11.2',
+    '1.11.1',
+    '1.10.1',
+    '1.10.0',
+    '1.9.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'zip',
+  ] as const,
 }
 
-export type LibziporgPackage = typeof libziporgPackage
+export type ZipPackage = typeof zipPackage

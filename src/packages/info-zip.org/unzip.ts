@@ -6,19 +6,14 @@
  * @version `6.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +info-zip.org/unzip -- $SHELL -i`
- * @aliases `unzip`
+ * @install `launchpad install +info-zip.org/unzip -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.unzip
- * // Or access via domain
- * const samePkg = pantry.infoziporgunzip
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "info-zip.org/unzip"
+ * const pkg = pantry.infoziporgunzip
+ * console.log(pkg.name)        // "unzip"
  * console.log(pkg.description) // "Extraction utility for .zip compressed archives"
  * console.log(pkg.programs)    // ["funzip", "unzip", ...]
  * console.log(pkg.versions[0]) // "6.0.0" (latest)
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/info-zip-org/unzip.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const unzipPackage = {
+export const infoziporgunzipPackage = {
   /**
    * The display name of this package.
    */
-  name: 'info-zip.org/unzip' as const,
+  name: 'unzip' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const unzipPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +info-zip.org/unzip -- $SHELL -i' as const,
+  installCommand: 'launchpad install +info-zip.org/unzip -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,14 +63,7 @@ export const unzipPackage = {
   versions: [
     '6.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'unzip',
-  ] as const,
-  fullPath: 'info-zip.org/unzip' as const,
+  aliases: [] as const,
 }
 
-export type UnzipPackage = typeof unzipPackage
+export type InfoziporgunzipPackage = typeof infoziporgunzipPackage

@@ -1,11 +1,11 @@
-# checkov
+# checkov.io
 
 > Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages with Checkov by Bridgecrew.
 
 ## Package Information
 
 - **Domain**: `checkov.io`
-- **Name**: `checkov`
+- **Name**: `checkov.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/checkov.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) checkov
+launchpad install checkov
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `checkov`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `checkov`
 
@@ -140,6 +146,8 @@ sh <(curl https://pkgx.sh) +checkov.io@3.2.442 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
+- `python.org^3.12`
+- `stedolan.github.io/jq`
 
 ## Usage Examples
 

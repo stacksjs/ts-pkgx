@@ -6,7 +6,7 @@
  * @version `1.601.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rename`
+ * @install `launchpad install rename`
  * @name `rename`
  * @dependencies `perl.org>=5`
  *
@@ -48,7 +48,7 @@ export const renamePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rename' as const,
+  installCommand: 'launchpad install rename' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,7 +76,6 @@ export const renamePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'plasmasturm.org/rename' as const,
 }
 
 export type RenamePackage = typeof renamePackage

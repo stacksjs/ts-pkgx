@@ -6,29 +6,25 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/util-macros -- $SHELL -i`
- * @aliases `util-macros`
+ * @dependencies `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.utilmacros
- * // Or access via domain
- * const samePkg = pantry.xorgutilmacros
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/util-macros"
+ * const pkg = pantry.xorgutilmacros
+ * console.log(pkg.name)        // "util-macros"
  * console.log(pkg.versions[0]) // "1.20.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/util-macros.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const utilmacrosPackage = {
+export const xorgutilmacrosPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/util-macros' as const,
+  name: 'util-macros' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +43,13 @@ export const utilmacrosPackage = {
   installCommand: 'launchpad install +x.org/util-macros -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -57,14 +59,7 @@ export const utilmacrosPackage = {
     '1.20.1',
     '1.20.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'util-macros',
-  ] as const,
-  fullPath: 'x.org/util-macros' as const,
+  aliases: [] as const,
 }
 
-export type UtilmacrosPackage = typeof utilmacrosPackage
+export type XorgutilmacrosPackage = typeof xorgutilmacrosPackage

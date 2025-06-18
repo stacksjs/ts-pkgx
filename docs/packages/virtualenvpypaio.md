@@ -1,11 +1,11 @@
-# virtualenv
+# virtualenv.pypa.io
 
 > Tool for creating isolated virtual python environments
 
 ## Package Information
 
-- **Domain**: `virtualenv.pypa.io`
-- **Name**: `virtualenv`
+- **Domain**: `virtualenvpypa.io`
+- **Name**: `virtualenv.pypa.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/virtualenv.pypa.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) virtualenv
+launchpad install virtualenv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `virtualenv`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `virtualenv`
 
@@ -44,7 +50,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +virtualenv.pypa.io@20.31.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +virtualenvpypa.io@20.31.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -54,6 +60,7 @@ This package depends on:
 - `pkgx.sh^1`
 - `libexpat.github.io^2`
 - `openssl.org^1.1`
+- `python.org>=3.7<3.12`
 
 ## Usage Examples
 

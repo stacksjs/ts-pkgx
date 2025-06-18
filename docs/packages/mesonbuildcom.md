@@ -1,11 +1,11 @@
-# meson
+# mesonbuild.com
 
 > Fast and user friendly build system
 
 ## Package Information
 
 - **Domain**: `mesonbuild.com`
-- **Name**: `meson`
+- **Name**: `mesonbuild.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mesonbuild.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) meson
+launchpad install meson
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `meson`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `meson`
 
@@ -50,6 +56,9 @@ sh <(curl https://pkgx.sh) +mesonbuild.com@1.8.2 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
+- `python.org~3.11`
+- `ninja-build.org^1`
+- `llvm.org<17`
 
 ## Usage Examples
 

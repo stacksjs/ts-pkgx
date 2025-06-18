@@ -6,10 +6,9 @@
  * @version `3.5a` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) tmux`
+ * @install `launchpad install tmux`
  * @name `tmux`
- * @aliases `tmux/tmux`
- * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses`
+ * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses`, `gnu.org/bison`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const tmuxPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) tmux' as const,
+  installCommand: 'launchpad install tmux' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,8 @@ export const tmuxPackage = {
   dependencies: [
     'libevent.org^2.0',
     'invisible-island.net/ncurses',
+    'gnu.org/bison',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -81,10 +82,7 @@ export const tmuxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tmux/tmux',
-  ] as const,
-  fullPath: 'github.com/tmux/tmux' as const,
+  aliases: [] as const,
 }
 
 export type TmuxPackage = typeof tmuxPackage

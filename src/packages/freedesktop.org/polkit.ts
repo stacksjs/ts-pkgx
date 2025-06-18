@@ -6,20 +6,15 @@
  * @version `121.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +freedesktop.org/polkit -- $SHELL -i`
- * @aliases `polkit`
- * @dependencies `gnome.org/glib^2.78`, `duktape.org^2.7`, `gnome.org/gobject-introspection^1.72`, ... (+2 more)
+ * @install `launchpad install +freedesktop.org/polkit -- $SHELL -i`
+ * @dependencies `gnome.org/glib^2.78`, `duktape.org^2.7`, `gnome.org/gobject-introspection^1.72`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.polkit
- * // Or access via domain
- * const samePkg = pantry.freedesktoporgpolkit
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "freedesktop.org/polkit"
+ * const pkg = pantry.freedesktoporgpolkit
+ * console.log(pkg.name)        // "polkit"
  * console.log(pkg.description) // "polkit (formerly PolicyKit) is a toolkit for de..."
  * console.log(pkg.programs)    // ["pkaction", "pkcheck", ...]
  * console.log(pkg.versions[0]) // "121.0.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/polkit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const polkitPackage = {
+export const freedesktoporgpolkitPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/polkit' as const,
+  name: 'polkit' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const polkitPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/polkit -- $SHELL -i' as const,
+  installCommand: 'launchpad install +freedesktop.org/polkit -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,6 +65,10 @@ export const polkitPackage = {
     'gnome.org/gobject-introspection^1.72',
     'freedesktop.org/dbus^1.12',
     'linux-pam.org^1.4',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'gnu.org/gettext',
+    'gnome.org/libxslt',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,14 +77,7 @@ export const polkitPackage = {
   versions: [
     '121.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'polkit',
-  ] as const,
-  fullPath: 'freedesktop.org/polkit' as const,
+  aliases: [] as const,
 }
 
-export type PolkitPackage = typeof polkitPackage
+export type FreedesktoporgpolkitPackage = typeof freedesktoporgpolkitPackage

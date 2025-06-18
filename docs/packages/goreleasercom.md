@@ -1,11 +1,11 @@
-# goreleaser
+# goreleaser.com
 
 > Deliver Go binaries as fast and easily as possible
 
 ## Package Information
 
 - **Domain**: `goreleaser.com`
-- **Name**: `goreleaser`
+- **Name**: `goreleaser.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/goreleaser.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) goreleaser
+launchpad install goreleaser
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `goreleaser`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `goreleaser`
 
@@ -47,6 +53,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +goreleaser.com@2.10.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.21`
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# sshx
+# sshx.io
 
 > Fast, collaborative live terminal sharing over the web
 
 ## Package Information
 
 - **Domain**: `sshx.io`
-- **Name**: `sshx`
+- **Name**: `sshx.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sshx.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) sshx
+launchpad install sshx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `sshx`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `sshx`
 
@@ -45,6 +51,8 @@ sh <(curl https://pkgx.sh) +sshx.io@2023.11.14 -- $SHELL -i
 This package depends on:
 
 - `protobuf.dev`
+- `rust-lang.org>=1.65`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

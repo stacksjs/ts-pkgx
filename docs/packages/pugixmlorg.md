@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +pugixml.org -- $SHELL -i
+launchpad install +pugixml.org -- $SHELL -i
 ```
 
 ## Programs
@@ -39,6 +39,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +pugixml.org@1.15.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i
+launchpad install +docutils.org -- $SHELL -i
 ```
 
 ## Programs
@@ -56,6 +56,7 @@ sh <(curl https://pkgx.sh) +docutils.org@0.21.2 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
+- `python.org~3.11`
 
 ## Usage Examples
 

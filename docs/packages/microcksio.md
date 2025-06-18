@@ -1,11 +1,11 @@
-# microcks-cli
+# microcks.io
 
 > Simple CLI for interacting with Microcks test APIs
 
 ## Package Information
 
 - **Domain**: `microcks.io`
-- **Name**: `microcks-cli`
+- **Name**: `microcks.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microcks.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) microcks-cli
+launchpad install microcks-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `microcks-cli`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `microcks-cli`
 
@@ -46,6 +52,7 @@ sh <(curl https://pkgx.sh) +microcks.io@0.9.0 -- $SHELL -i
 This package depends on:
 
 - `curl.se/ca-certs`
+- `go.dev=1.23.0`
 
 ## Usage Examples
 

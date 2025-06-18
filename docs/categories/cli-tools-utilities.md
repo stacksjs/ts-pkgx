@@ -12,7 +12,7 @@ Improved top (interactive process viewer)
 
 **Programs**: htop
 
-**Install**: `sh <(curl https://pkgx.sh) htop`
+**Install**: `launchpad install htop`
 
 ---
 

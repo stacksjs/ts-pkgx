@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +erlang.org -- $SHELL -i
+launchpad install +erlang.org -- $SHELL -i
 ```
 
 ## Programs
@@ -68,8 +68,10 @@ This package depends on:
 
 - `openssl.org^1.1`
 - `invisible-island.net/ncurses`
-- `linux/x86-64gnu.org/gcc/libstdcxx`
 - `gnu.org/gcc/libstdcxx`
+- `perl.org>=5`
+- `gnu.org/gcc`
+- `pkgx.sh@1`
 
 ## Usage Examples
 

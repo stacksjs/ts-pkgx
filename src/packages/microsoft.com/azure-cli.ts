@@ -7,20 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install az`
- * @name `az`
- * @aliases `azure-cli`
- * @dependencies `openssl.org@1.1`, `python.org>=3.10<3.12`, `sourceware.org/libffi`
+ * @aliases `az`
+ * @dependencies `openssl.org@1.1`, `python.org>=3.10<3.12`, `sourceware.org/libffi`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.az
  * // Or access via domain
  * const samePkg = pantry.microsoftcomazurecli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "az"
+ * console.log(pkg.name)        // "azure-cli"
  * console.log(pkg.description) // "Azure Command-Line Interface"
  * console.log(pkg.programs)    // ["az"]
  * console.log(pkg.versions[0]) // "2.74.0" (latest)
@@ -33,7 +32,7 @@ export const azPackage = {
   /**
    * The display name of this package.
    */
-  name: 'az' as const,
+  name: 'azure-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -66,6 +65,8 @@ export const azPackage = {
     'openssl.org@1.1',
     'python.org>=3.10<3.12',
     'sourceware.org/libffi',
+    'rust-lang.org',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -110,9 +111,8 @@ export const azPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'azure-cli',
+    'az',
   ] as const,
-  fullPath: 'microsoft.com/azure-cli' as const,
 }
 
 export type AzPackage = typeof azPackage

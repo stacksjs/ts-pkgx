@@ -1,23 +1,19 @@
 /**
- * **github.com/tartanllama/expected** - C++11/14/17 std::expected with functional-style extensions
+ * **expected** - C++11/14/17 std::expected with functional-style extensions
  *
  * @domain `github.com/TartanLlama/expected`
  * @version `1.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/TartanLlama/expected -- $SHELL -i`
- * @aliases `github.com/tartanllama/expected`, `TartanLlama/expected`
+ * @install `launchpad install +github.com/TartanLlama/expected -- $SHELL -i`
+ * @dependencies `cmake.org^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
  * const pkg = pantry.githubcomtartanllamaexpected
- * // Or access via domain
- * const samePkg = pantry.githubcomtartanllamaexpected
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/TartanLlama/expected"
+ * console.log(pkg.name)        // "expected"
  * console.log(pkg.description) // "C++11/14/17 std::expected with functional-style..."
  * console.log(pkg.versions[0]) // "1.1.0" (latest)
  * ```
@@ -29,7 +25,7 @@ export const githubcomtartanllamaexpectedPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/TartanLlama/expected' as const,
+  name: 'expected' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,16 @@ export const githubcomtartanllamaexpectedPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/TartanLlama/expected -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/TartanLlama/expected -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -56,15 +58,7 @@ export const githubcomtartanllamaexpectedPackage = {
   versions: [
     '1.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'github.com/tartanllama/expected',
-    'TartanLlama/expected',
-  ] as const,
-  fullPath: 'github.com/TartanLlama/expected' as const,
+  aliases: [] as const,
 }
 
 export type GithubcomtartanllamaexpectedPackage = typeof githubcomtartanllamaexpectedPackage

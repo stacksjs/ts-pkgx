@@ -1,11 +1,11 @@
-# cgal
+# cgal.org
 
 > The public CGAL repository, see the README below
 
 ## Package Information
 
 - **Domain**: `cgal.org`
-- **Name**: `cgal`
+- **Name**: `cgal.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cgal.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +cgal.org -- $SHELL -i
+launchpad install +cgal.org -- $SHELL -i
 ```
 
 ## Programs
@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `cgal_create_CMakeLists`
 - `cgal_create_cmake_script`
 - `cgal_make_macosx_app`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `cgal`
 
 ## Available Versions
 
@@ -51,6 +57,13 @@ This package depends on:
 - `gnu.org/gmp`
 - `gnu.org/mpfr`
 - `openssl.org`
+- `cmake.org`
+- `qt.io~5`
+- `gnu.org/gcc`
+- `cmake.org`
+- `qt.io~5`
+- `gnu.org/gcc`
+- `gnu.org/make`
 
 ## Usage Examples
 

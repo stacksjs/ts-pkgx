@@ -1,11 +1,11 @@
-# caddy
+# caddyserver.com
 
 > Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 
 ## Package Information
 
 - **Domain**: `caddyserver.com`
-- **Name**: `caddy`
+- **Name**: `caddyserver.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/caddyserver.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) caddy
+launchpad install caddy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `caddy`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `caddy`
 
@@ -40,6 +46,15 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +caddyserver.com@2.10.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
+- `curl.se`
+- `curl.se`
+- `pkgx.sh@1`
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# watchexec
+# watchexec.github.io
 
 > Executes commands in response to file modifications
 
 ## Package Information
 
-- **Domain**: `watchexec.github.io`
-- **Name**: `watchexec`
+- **Domain**: `watchexecgithub.io`
+- **Name**: `watchexec.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/watchexec.github.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) watchexec
+launchpad install watchexec
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `watchexec`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `watchexec`
 
@@ -38,8 +44,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +watchexec.github.io@2.3.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +watchexecgithub.io@2.3.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rust-lang.org>=1.56`
+- `rust-lang.org/cargo`
+- `gnu.org/gcc`
 
 ## Usage Examples
 

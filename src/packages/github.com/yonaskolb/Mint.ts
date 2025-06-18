@@ -6,20 +6,19 @@
  * @version `0.18.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) mint`
- * @name `mint`
- * @aliases `yonaskolb/Mint`
+ * @install `launchpad install mint`
+ * @aliases `mint`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.mint
  * // Or access via domain
  * const samePkg = pantry.githubcomyonaskolbmint
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mint"
+ * console.log(pkg.name)        // "Mint"
  * console.log(pkg.description) // "Dependency manager that installs and runs Swift..."
  * console.log(pkg.programs)    // ["mint"]
  * console.log(pkg.versions[0]) // "0.18.0" (latest)
@@ -32,7 +31,7 @@ export const mintPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mint' as const,
+  name: 'Mint' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,12 +42,12 @@ export const mintPackage = {
   description: 'Dependency manager that installs and runs Swift command-line tool packages' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/yonaskolb/Mint/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/yonaskolb/Mint' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) mint' as const,
+  installCommand: 'launchpad install mint' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,9 +70,8 @@ export const mintPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'yonaskolb/Mint',
+    'mint',
   ] as const,
-  fullPath: 'github.com/yonaskolb/Mint' as const,
 }
 
 export type MintPackage = typeof mintPackage

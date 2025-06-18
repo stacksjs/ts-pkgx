@@ -6,19 +6,14 @@
  * @version `1.10.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +catb.org/wumpus -- $SHELL -i`
- * @aliases `wumpus`
+ * @install `launchpad install +catb.org/wumpus -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.wumpus
- * // Or access via domain
- * const samePkg = pantry.catborgwumpus
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "catb.org/wumpus"
+ * const pkg = pantry.catborgwumpus
+ * console.log(pkg.name)        // "wumpus"
  * console.log(pkg.description) // "Exact clone of the ancient BASIC Hunt the Wumpu..."
  * console.log(pkg.programs)    // ["wumpus", "superhack"]
  * console.log(pkg.versions[0]) // "1.10.0" (latest)
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/catb-org/wumpus.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wumpusPackage = {
+export const catborgwumpusPackage = {
   /**
    * The display name of this package.
    */
-  name: 'catb.org/wumpus' as const,
+  name: 'wumpus' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const wumpusPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +catb.org/wumpus -- $SHELL -i' as const,
+  installCommand: 'launchpad install +catb.org/wumpus -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,14 +65,7 @@ export const wumpusPackage = {
     '1.5.0',
     '1.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'wumpus',
-  ] as const,
-  fullPath: 'catb.org/wumpus' as const,
+  aliases: [] as const,
 }
 
-export type WumpusPackage = typeof wumpusPackage
+export type CatborgwumpusPackage = typeof catborgwumpusPackage

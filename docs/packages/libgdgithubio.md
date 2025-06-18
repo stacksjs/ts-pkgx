@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libgd.github.io`
+- **Domain**: `libgdgithub.io`
 - **Name**: `libgd.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libgd.github.io/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libgd.github.io -- $SHELL -i
+launchpad install +libgd.github.io -- $SHELL -i
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libgd.github.io@2.3.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libgdgithub.io@2.3.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -56,6 +56,9 @@ This package depends on:
 - `simplesystems.org/libtiff`
 - `google.com/webp`
 - `zlib.net`
+- `gnu.org/autoconf`
+- `gnu.org/libtool`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

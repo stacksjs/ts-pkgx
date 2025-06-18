@@ -8,7 +8,7 @@
  *
  * @install `launchpad install appium`
  * @aliases `appium`
- * @dependencies `npmjs.com`, `nodejs.org`, `openjdk.org`
+ * @dependencies `npmjs.com`, `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`, `openjdk.org`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -63,8 +63,9 @@ export const appiumPackage = {
    */
   dependencies: [
     'npmjs.com',
-    'nodejs.org',
+    'nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20',
     'openjdk.org',
+    'python.org^3 # node-gyp needs python to build',
   ] as const,
   /**
    * Available versions from newest to oldest.

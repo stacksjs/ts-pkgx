@@ -6,7 +6,7 @@
  * @version `2.9.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) lynx`
+ * @install `launchpad install lynx`
  * @name `lynx`
  * @dependencies `openssl.org^3`, `invisible-island.net/ncurses^6`
  *
@@ -48,7 +48,7 @@ export const lynxPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) lynx' as const,
+  installCommand: 'launchpad install lynx' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,7 +77,6 @@ export const lynxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'invisible-island.net/lynx' as const,
 }
 
 export type LynxPackage = typeof lynxPackage

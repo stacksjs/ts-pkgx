@@ -7,20 +7,20 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install text-generation-webui`
- * @name `text generation web UI`
- * @aliases `text-generation-webui`, `text generation web ui`, `oobabooga/text-generation-webui`
- * @dependencies `python.org~3.10`, `pkgx.sh^1`
+ * @name `text-generation-webui`
+ * @aliases `text generation web UI`
+ * @dependencies `python.org~3.10`, `pkgx.sh^1`, `gnu.org/coreutils`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.textgenerationwebui
  * // Or access via domain
  * const samePkg = pantry.githubcomoobaboogatextgenerationwebui
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "text generation web UI"
+ * console.log(pkg.name)        // "text-generation-webui"
  * console.log(pkg.description) // "A Gradio web UI for Large Language Models with ..."
  * console.log(pkg.programs)    // ["text-generation-webui"]
  * console.log(pkg.versions[0]) // "3.5.0" (latest)
@@ -33,7 +33,7 @@ export const textgenerationwebuiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'text generation web UI' as const,
+  name: 'text-generation-webui' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -65,6 +65,7 @@ export const textgenerationwebuiPackage = {
   dependencies: [
     'python.org~3.10',
     'pkgx.sh^1',
+    'gnu.org/coreutils',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -111,11 +112,8 @@ export const textgenerationwebuiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'text-generation-webui',
-    'text generation web ui',
-    'oobabooga/text-generation-webui',
+    'text generation web UI',
   ] as const,
-  fullPath: 'github.com/oobabooga/text-generation-webui' as const,
 }
 
 export type TextgenerationwebuiPackage = typeof textgenerationwebuiPackage

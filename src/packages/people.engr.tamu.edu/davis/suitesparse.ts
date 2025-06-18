@@ -6,21 +6,20 @@
  * @version `7.10.3` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +people.engr.tamu.edu/davis/suitesparse -- $SHELL -i`
- * @name `suite-sparse`
- * @aliases `davis/suitesparse`
- * @dependencies `glaros.dtc.umn.edu/metis`, `gnu.org/m4`, `netlib.org/lapack`, ... (+4 more)
+ * @install `launchpad install +people.engr.tamu.edu/davis/suitesparse -- $SHELL -i`
+ * @aliases `suite-sparse`
+ * @dependencies `glaros.dtc.umn.edu/metis`, `gnu.org/m4`, `netlib.org/lapack`, ... (+9 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.suitesparse
  * // Or access via domain
  * const samePkg = pantry.peopleengrtamuedudavissuitesparse
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "suite-sparse"
+ * console.log(pkg.name)        // "suitesparse"
  * console.log(pkg.description) // "The official SuiteSparse library: a suite of sp..."
  * console.log(pkg.programs)    // ["mongoose", "suitesparse_mongoose"]
  * console.log(pkg.versions[0]) // "7.10.3" (latest)
@@ -33,7 +32,7 @@ export const suitesparsePackage = {
   /**
    * The display name of this package.
    */
-  name: 'suite-sparse' as const,
+  name: 'suitesparse' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const suitesparsePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +people.engr.tamu.edu/davis/suitesparse -- $SHELL -i' as const,
+  installCommand: 'launchpad install +people.engr.tamu.edu/davis/suitesparse -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +70,11 @@ export const suitesparsePackage = {
     'openmp.llvm.org',
     'gnu.org/mpfr',
     'gnu.org/gcc',
+    'cmake.org',
+    'freedesktop.org/pkg-config',
+    'gnu.org/make',
+    'freedesktop.org/pkg-config',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -103,9 +107,8 @@ export const suitesparsePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'davis/suitesparse',
+    'suite-sparse',
   ] as const,
-  fullPath: 'people.engr.tamu.edu/davis/suitesparse' as const,
 }
 
 export type SuitesparsePackage = typeof suitesparsePackage

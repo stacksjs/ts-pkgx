@@ -6,10 +6,9 @@
  * @version `7.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) neofetch`
+ * @install `launchpad install neofetch`
  * @name `neofetch`
- * @aliases `github.com-dylanaraps`
- * @dependencies `darwingithub.com/jhford/screenresolution`, `github.com/jhford/screenresolution`
+ * @dependencies `github.com/jhford/screenresolution`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const neofetchPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) neofetch' as const,
+  installCommand: 'launchpad install neofetch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,7 +62,6 @@ export const neofetchPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'darwingithub.com/jhford/screenresolution',
     'github.com/jhford/screenresolution',
   ] as const,
   /**
@@ -77,10 +75,7 @@ export const neofetchPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'github.com-dylanaraps',
-  ] as const,
-  fullPath: 'github.com-dylanaraps' as const,
+  aliases: [] as const,
 }
 
 export type NeofetchPackage = typeof neofetchPackage

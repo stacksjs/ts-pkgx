@@ -6,20 +6,20 @@
  * @version `0.64.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) difft`
- * @name `difft`
- * @aliases `difftastic`
+ * @install `launchpad install difft`
+ * @aliases `difft`
+ * @dependencies `rust-lang.org^1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.difft
  * // Or access via domain
  * const samePkg = pantry.wilfredmeukdifftastic
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "difft"
+ * console.log(pkg.name)        // "difftastic"
  * console.log(pkg.description) // "a structural diff that understands syntax 🟥🟩"
  * console.log(pkg.programs)    // ["difft"]
  * console.log(pkg.versions[0]) // "0.64.0" (latest)
@@ -32,7 +32,7 @@ export const difftPackage = {
   /**
    * The display name of this package.
    */
-  name: 'difft' as const,
+  name: 'difftastic' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const difftPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) difft' as const,
+  installCommand: 'launchpad install difft' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const difftPackage = {
     'difft',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org^1.65',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -78,9 +85,8 @@ export const difftPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'difftastic',
+    'difft',
   ] as const,
-  fullPath: 'wilfred.me.uk/difftastic' as const,
 }
 
 export type DifftPackage = typeof difftPackage

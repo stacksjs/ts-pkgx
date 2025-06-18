@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +mpmath.org -- $SHELL -i
+launchpad install +mpmath.org -- $SHELL -i
 ```
 
 ## Programs

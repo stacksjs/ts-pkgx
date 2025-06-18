@@ -1,11 +1,11 @@
-# itstool
+# itstool.org
 
 > Translate XML with PO files using W3C Internationalization Tag Set rules
 
 ## Package Information
 
 - **Domain**: `itstool.org`
-- **Name**: `itstool`
+- **Name**: `itstool.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/itstool.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) itstool
+launchpad install itstool
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `itstool`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `itstool`
 

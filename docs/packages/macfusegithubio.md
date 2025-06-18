@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `macfuse.github.io`
+- **Domain**: `macfusegithub.io`
 - **Name**: `macfuse.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/macfuse.github.io/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +macfuse.github.io -- $SHELL -i
+launchpad install +macfuse.github.io -- $SHELL -i
 ```
 
 ## Programs
@@ -37,8 +37,17 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +macfuse.github.io@4.10.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +macfusegithub.io@4.10.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `mesonbuild.com`
+- `ninja-build.org`
+- `git-scm.org^2`
+- `llvm.org`
 
 ## Usage Examples
 

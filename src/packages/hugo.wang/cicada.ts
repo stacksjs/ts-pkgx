@@ -6,8 +6,9 @@
  * @version `1.1.2` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) cicada`
+ * @install `launchpad install cicada`
  * @name `cicada`
+ * @dependencies `rust-lang.org^1.65`, `rust-lang.org/cargo`, `gnu.org/which`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const cicadaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) cicada' as const,
+  installCommand: 'launchpad install cicada' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,15 @@ export const cicadaPackage = {
     'cicada',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org^1.65',
+    'rust-lang.org/cargo',
+    'gnu.org/which',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -78,7 +87,6 @@ export const cicadaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'hugo.wang/cicada' as const,
 }
 
 export type CicadaPackage = typeof cicadaPackage

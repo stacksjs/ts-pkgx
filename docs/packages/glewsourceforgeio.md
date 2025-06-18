@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `glew.sourceforge.io`
+- **Domain**: `glewsourceforge.io`
 - **Name**: `glew.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/glew.sourceforge.io/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +glew.sourceforge.io -- $SHELL -i
+launchpad install +glew.sourceforge.io -- $SHELL -i
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +glew.sourceforge.io@2.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +glewsourceforge.io@2.2.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org^3`
 
 ## Usage Examples
 

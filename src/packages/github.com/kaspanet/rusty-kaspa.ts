@@ -6,21 +6,20 @@
  * @version `1.0.0` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/kaspanet/rusty-kaspa -- $SHELL -i`
- * @name `kaspa`
- * @aliases `kaspanet/rusty-kaspa`
- * @dependencies `linuxopenssl.org^1.1`, `openssl.org^1.1`
+ * @install `launchpad install +github.com/kaspanet/rusty-kaspa -- $SHELL -i`
+ * @aliases `kaspa`
+ * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.kaspa
  * // Or access via domain
  * const samePkg = pantry.githubcomkaspanetrustykaspa
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kaspa"
+ * console.log(pkg.name)        // "rusty-kaspa"
  * console.log(pkg.description) // "Kaspa full-node reference implementation and re..."
  * console.log(pkg.programs)    // ["kaspad", "kaspa-cli"]
  * console.log(pkg.versions[0]) // "1.0.0" (latest)
@@ -33,7 +32,7 @@ export const kaspaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'kaspa' as const,
+  name: 'rusty-kaspa' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const kaspaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/kaspanet/rusty-kaspa -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/kaspanet/rusty-kaspa -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,8 +63,11 @@ export const kaspaPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxopenssl.org^1.1',
     'openssl.org^1.1',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+    'protobuf.dev',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -93,9 +95,8 @@ export const kaspaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'kaspanet/rusty-kaspa',
+    'kaspa',
   ] as const,
-  fullPath: 'github.com/kaspanet/rusty-kaspa' as const,
 }
 
 export type KaspaPackage = typeof kaspaPackage

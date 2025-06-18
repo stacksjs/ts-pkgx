@@ -6,9 +6,8 @@
  * @version `0.9.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) swift-outdated`
+ * @install `launchpad install swift-outdated`
  * @name `swift-outdated`
- * @aliases `kiliankoe/swift-outdated`
  *
  * @example
  * ```typescript
@@ -48,7 +47,7 @@ export const swiftoutdatedPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) swift-outdated' as const,
+  installCommand: 'launchpad install swift-outdated' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,10 +73,7 @@ export const swiftoutdatedPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kiliankoe/swift-outdated',
-  ] as const,
-  fullPath: 'github.com/kiliankoe/swift-outdated' as const,
+  aliases: [] as const,
 }
 
 export type SwiftoutdatedPackage = typeof swiftoutdatedPackage

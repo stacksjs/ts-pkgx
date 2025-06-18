@@ -1,9 +1,11 @@
 /**
- * **lxml.de** - Package from pantry: lxml.de
+ * **lxml.de** - The lxml XML toolkit for Python
  *
  * @domain `lxml.de`
+ * @version `5.4.0` (14 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install lxml.de`
+ * @install `launchpad install +lxml.de -- $SHELL -i`
  * @dependencies `python.org^3.10`, `gnome.org/libxml2~2.12`, `gnome.org/libxslt^1`
  *
  * @example
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.lxmlde
  * console.log(pkg.name)        // "lxml.de"
- * console.log(pkg.description) // "Package from pantry: lxml.de"
+ * console.log(pkg.description) // "The lxml XML toolkit for Python"
+ * console.log(pkg.versions[0]) // "5.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/lxml-de.md
@@ -30,12 +33,15 @@ export const lxmldePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: lxml.de' as const,
+  description: 'The lxml XML toolkit for Python' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lxml.de/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install lxml.de' as const,
+  installCommand: 'launchpad install +lxml.de -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -47,10 +53,27 @@ export const lxmldePackage = {
     'gnome.org/libxml2~2.12',
     'gnome.org/libxslt^1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lxml.de/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.4.0',
+    '5.3.2',
+    '5.3.1',
+    '5.3.0',
+    '5.2.2',
+    '5.2.1',
+    '5.2.0',
+    '5.1.1',
+    '5.1.0',
+    '5.0.2',
+    '5.0.1',
+    '5.0.0',
+    '4.9.4',
+    '4.9.3',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type LxmldePackage = typeof lxmldePackage

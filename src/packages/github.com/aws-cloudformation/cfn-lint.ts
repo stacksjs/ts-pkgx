@@ -6,10 +6,9 @@
  * @version `1.36.0` (147 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) cfn-lint`
+ * @install `launchpad install cfn-lint`
  * @name `cfn-lint`
- * @aliases `aws-cloudformation/cfn-lint`
- * @dependencies `pkgx.sh@1`, `pyyaml.org`, `github.com/benjaminp/six`
+ * @dependencies `pkgx.sh@1`, `pyyaml.org`, `github.com/benjaminp/six`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const cfnlintPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) cfn-lint' as const,
+  installCommand: 'launchpad install cfn-lint' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,6 +65,8 @@ export const cfnlintPackage = {
     'pkgx.sh@1',
     'pyyaml.org',
     'github.com/benjaminp/six',
+    'rust-lang.org',
+    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -224,10 +225,7 @@ export const cfnlintPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'aws-cloudformation/cfn-lint',
-  ] as const,
-  fullPath: 'github.com/aws-cloudformation/cfn-lint' as const,
+  aliases: [] as const,
 }
 
 export type CfnlintPackage = typeof cfnlintPackage

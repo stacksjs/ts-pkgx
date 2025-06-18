@@ -6,20 +6,20 @@
  * @version `0.16.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) docker-machine`
- * @name `docker-machine`
- * @aliases `machine`
+ * @install `launchpad install docker-machine`
+ * @aliases `docker-machine`
+ * @dependencies `gnu.org/automake`, `go.dev`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.dockermachine
  * // Or access via domain
  * const samePkg = pantry.dockercommachine
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "docker-machine"
+ * console.log(pkg.name)        // "machine"
  * console.log(pkg.description) // "Create Docker hosts locally and on cloud providers"
  * console.log(pkg.programs)    // ["docker-machine"]
  * console.log(pkg.versions[0]) // "0.16.2" (latest)
@@ -32,7 +32,7 @@ export const dockermachinePackage = {
   /**
    * The display name of this package.
    */
-  name: 'docker-machine' as const,
+  name: 'machine' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const dockermachinePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) docker-machine' as const,
+  installCommand: 'launchpad install docker-machine' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,15 @@ export const dockermachinePackage = {
     'docker-machine',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/automake',
+    'go.dev',
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,9 +78,8 @@ export const dockermachinePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'machine',
+    'docker-machine',
   ] as const,
-  fullPath: 'docker.com/machine' as const,
 }
 
 export type DockermachinePackage = typeof dockermachinePackage

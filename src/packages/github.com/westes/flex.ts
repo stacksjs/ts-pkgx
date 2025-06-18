@@ -6,9 +6,8 @@
  * @version `2.6.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/westes/flex -- $SHELL -i`
+ * @install `launchpad install +github.com/westes/flex -- $SHELL -i`
  * @name `flex`
- * @aliases `westes/flex`
  * @dependencies `gnu.org/gettext^0`, `gnu.org/m4^1`
  *
  * @example
@@ -49,7 +48,7 @@ export const flexPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/westes/flex -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/westes/flex -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,10 +77,7 @@ export const flexPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'westes/flex',
-  ] as const,
-  fullPath: 'github.com/westes/flex' as const,
+  aliases: [] as const,
 }
 
 export type FlexPackage = typeof flexPackage

@@ -6,19 +6,14 @@
  * @version `9.7.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/coreutils -- $SHELL -i`
- * @aliases `coreutils`
+ * @install `launchpad install +gnu.org/coreutils -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.coreutils
- * // Or access via domain
- * const samePkg = pantry.gnuorgcoreutils
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/coreutils"
+ * const pkg = pantry.gnuorgcoreutils
+ * console.log(pkg.name)        // "coreutils"
  * console.log(pkg.programs)    // ["[", "b2sum", ...]
  * console.log(pkg.versions[0]) // "9.7.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/coreutils.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const coreutilsPackage = {
+export const gnuorgcoreutilsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/coreutils' as const,
+  name: 'coreutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const coreutilsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/coreutils -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/coreutils -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -171,14 +166,7 @@ export const coreutilsPackage = {
     '9.4.0',
     '9.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'coreutils',
-  ] as const,
-  fullPath: 'gnu.org/coreutils' as const,
+  aliases: [] as const,
 }
 
-export type CoreutilsPackage = typeof coreutilsPackage
+export type GnuorgcoreutilsPackage = typeof gnuorgcoreutilsPackage

@@ -6,10 +6,9 @@
  * @version `0.8.3` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) regbot`
+ * @install `launchpad install regbot`
  * @name `regbot`
- * @aliases `regclient/regclient/regbot`
- * @dependencies `curl.se/ca-certs`
+ * @dependencies `curl.se/ca-certs`, `go.dev^1.21`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -44,12 +43,12 @@ export const regbotPackage = {
   description: 'Docker and OCI Registry Client in Go and tooling using those libraries.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/regclient/regclient/regbot/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/regclient/regclient' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) regbot' as const,
+  installCommand: 'launchpad install regbot' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const regbotPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
+    'go.dev^1.21',
+    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -90,10 +91,7 @@ export const regbotPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'regclient/regclient/regbot',
-  ] as const,
-  fullPath: 'github.com/regclient/regclient/regbot' as const,
+  aliases: [] as const,
 }
 
 export type RegbotPackage = typeof regbotPackage

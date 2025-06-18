@@ -5,30 +5,26 @@
  * @version `1.3.6` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +xiph.org/ogg -- $SHELL -i`
- * @aliases `ogg`
+ * @install `launchpad install +xiph.org/ogg -- $SHELL -i`
+ * @dependencies `gnu.org/wget`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.ogg
- * // Or access via domain
- * const samePkg = pantry.xiphorgogg
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xiph.org/ogg"
+ * const pkg = pantry.xiphorgogg
+ * console.log(pkg.name)        // "ogg"
  * console.log(pkg.versions[0]) // "1.3.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/xiph-org/ogg.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const oggPackage = {
+export const xiphorgoggPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xiph.org/ogg' as const,
+  name: 'ogg' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,10 +40,16 @@ export const oggPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +xiph.org/ogg -- $SHELL -i' as const,
+  installCommand: 'launchpad install +xiph.org/ogg -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/wget',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -56,14 +58,7 @@ export const oggPackage = {
     '1.3.6',
     '1.3.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'ogg',
-  ] as const,
-  fullPath: 'xiph.org/ogg' as const,
+  aliases: [] as const,
 }
 
-export type OggPackage = typeof oggPackage
+export type XiphorgoggPackage = typeof xiphorgoggPackage

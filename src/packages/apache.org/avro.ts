@@ -6,9 +6,9 @@
  * @version `1.12.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +apache.org/avro -- $SHELL -i`
+ * @install `launchpad install +apache.org/avro -- $SHELL -i`
  * @name `avro`
- * @dependencies `digip.org/jansson`, `google.github.io/snappy`, `tukaani.org/xz`, ... (+1 more)
+ * @dependencies `digip.org/jansson`, `google.github.io/snappy`, `tukaani.org/xz`, ... (+9 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const avroPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +apache.org/avro -- $SHELL -i' as const,
+  installCommand: 'launchpad install +apache.org/avro -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,6 +69,14 @@ export const avroPackage = {
     'google.github.io/snappy',
     'tukaani.org/xz',
     'zlib.net',
+    'gnu.org/tar',
+    'curl.se',
+    'cmake.org',
+    'freedesktop.org/pkg-config',
+    'gnu.org/gcc',
+    'gnu.org/make',
+    'freedesktop.org/pkg-config',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -83,7 +91,6 @@ export const avroPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'apache.org/avro' as const,
 }
 
 export type AvroPackage = typeof avroPackage

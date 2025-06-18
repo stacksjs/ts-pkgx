@@ -1,11 +1,11 @@
-# gradle
+# gradle.org
 
 > Open-source build automation tool based on the Groovy and Kotlin DSL
 
 ## Package Information
 
 - **Domain**: `gradle.org`
-- **Name**: `gradle`
+- **Name**: `gradle.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gradle.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) gradle
+launchpad install gradle
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `gradle`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `gradle`
 
@@ -48,6 +54,7 @@ sh <(curl https://pkgx.sh) +gradle.org@8.14.2 -- $SHELL -i
 This package depends on:
 
 - `openjdk.org`
+- `openjdk.org@17`
 
 ## Usage Examples
 

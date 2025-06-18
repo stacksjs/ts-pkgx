@@ -1,11 +1,11 @@
-# wasmer
+# wasmer.io
 
 > 🚀 Fast, secure, lightweight containers based on WebAssembly
 
 ## Package Information
 
 - **Domain**: `wasmer.io`
-- **Name**: `wasmer`
+- **Name**: `wasmer.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wasmer.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) wasmer
+launchpad install wasmer
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `wasmer`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `wasmer`
 
@@ -43,6 +49,15 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +wasmer.io@6.0.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rust-lang.org^1.65`
+- `rust-lang.org/cargo^0`
+- `nodejs.org^18`
+- `gnu.org/make^4`
 
 ## Usage Examples
 

@@ -6,10 +6,9 @@
  * @version `4.2.5` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) jasper`
+ * @install `launchpad install jasper`
  * @name `jasper`
- * @aliases `jasper-software/jasper`
- * @dependencies `libjpeg-turbo.org^2`
+ * @dependencies `libjpeg-turbo.org^2`, `cmake.org^3`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const jasperPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) jasper' as const,
+  installCommand: 'launchpad install jasper' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const jasperPackage = {
    */
   dependencies: [
     'libjpeg-turbo.org^2',
+    'cmake.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -86,10 +86,7 @@ export const jasperPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jasper-software/jasper',
-  ] as const,
-  fullPath: 'github.com/jasper-software/jasper' as const,
+  aliases: [] as const,
 }
 
 export type JasperPackage = typeof jasperPackage

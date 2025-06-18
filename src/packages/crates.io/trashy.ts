@@ -6,20 +6,20 @@
  * @version `2.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) trash`
- * @name `trash`
- * @aliases `trashy`
+ * @install `launchpad install trash`
+ * @aliases `trash`
+ * @dependencies `rust-lang.org^1.62`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.trash
  * // Or access via domain
  * const samePkg = pantry.cratesiotrashy
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "trash"
+ * console.log(pkg.name)        // "trashy"
  * console.log(pkg.description) // "a cli system trash manager, alternative to rm a..."
  * console.log(pkg.programs)    // ["trash"]
  * console.log(pkg.versions[0]) // "2.0.0" (latest)
@@ -32,7 +32,7 @@ export const trashPackage = {
   /**
    * The display name of this package.
    */
-  name: 'trash' as const,
+  name: 'trashy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const trashPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) trash' as const,
+  installCommand: 'launchpad install trash' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const trashPackage = {
     'trash',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org^1.62',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,9 +78,8 @@ export const trashPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'trashy',
+    'trash',
   ] as const,
-  fullPath: 'crates.io/trashy' as const,
 }
 
 export type TrashPackage = typeof trashPackage

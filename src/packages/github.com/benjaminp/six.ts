@@ -1,24 +1,19 @@
 /**
- * **benjaminp/six** - Python 2 and 3 compatibility library
+ * **six** - Python 2 and 3 compatibility library
  *
  * @domain `github.com/benjaminp/six`
  * @version `1.17.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/benjaminp/six -- $SHELL -i`
- * @aliases `benjaminp/six`
+ * @install `launchpad install +github.com/benjaminp/six -- $SHELL -i`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.benjaminpsix
- * // Or access via domain
- * const samePkg = pantry.githubcombenjaminpsix
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/benjaminp/six"
+ * const pkg = pantry.githubcombenjaminpsix
+ * console.log(pkg.name)        // "six"
  * console.log(pkg.description) // "Python 2 and 3 compatibility library"
  * console.log(pkg.versions[0]) // "1.17.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/benjaminp/six.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const benjaminpsixPackage = {
+export const githubcombenjaminpsixPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/benjaminp/six' as const,
+  name: 'six' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const benjaminpsixPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/benjaminp/six -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/benjaminp/six -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -64,14 +59,7 @@ export const benjaminpsixPackage = {
     '1.17.0',
     '1.16.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'benjaminp/six',
-  ] as const,
-  fullPath: 'github.com/benjaminp/six' as const,
+  aliases: [] as const,
 }
 
-export type BenjaminpsixPackage = typeof benjaminpsixPackage
+export type GithubcombenjaminpsixPackage = typeof githubcombenjaminpsixPackage

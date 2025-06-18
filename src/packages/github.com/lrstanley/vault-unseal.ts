@@ -6,9 +6,9 @@
  * @version `0.7.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) vault-unseal`
+ * @install `launchpad install vault-unseal`
  * @name `vault-unseal`
- * @aliases `lrstanley/vault-unseal`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const vaultunsealPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) vault-unseal' as const,
+  installCommand: 'launchpad install vault-unseal' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const vaultunsealPackage = {
     'vault-unseal',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,10 +76,7 @@ export const vaultunsealPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'lrstanley/vault-unseal',
-  ] as const,
-  fullPath: 'github.com/lrstanley/vault-unseal' as const,
+  aliases: [] as const,
 }
 
 export type VaultunsealPackage = typeof vaultunsealPackage

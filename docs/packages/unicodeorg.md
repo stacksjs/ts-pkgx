@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +unicode.org -- $SHELL -i
+launchpad install +unicode.org -- $SHELL -i
 ```
 
 ## Programs
@@ -51,6 +51,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +unicode.org@77.1.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
 
 ## Usage Examples
 

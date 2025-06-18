@@ -8,7 +8,7 @@
  *
  * @install `launchpad install auto-gpt`
  * @aliases `auto-gpt`
- * @dependencies `python.org`, `redis.io`, `tea.xyz`
+ * @dependencies `python.org>=3.10<3.12`, `redis.io^7`, `tea.xyz^0`
  *
  * @example
  * ```typescript
@@ -62,9 +62,9 @@ export const autogptPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'python.org',
-    'redis.io',
-    'tea.xyz',
+    'python.org>=3.10<3.12',
+    'redis.io^7',
+    'tea.xyz^0',
   ] as const,
   /**
    * Available versions from newest to oldest.

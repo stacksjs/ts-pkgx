@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +littlecms.com -- $SHELL -i
+launchpad install +littlecms.com -- $SHELL -i
 ```
 
 ## Programs
@@ -50,6 +50,7 @@ This package depends on:
 
 - `simplesystems.org/libtiff^4`
 - `libjpeg-turbo.org^2`
+- `gnu.org/wget`
 
 ## Usage Examples
 

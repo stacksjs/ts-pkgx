@@ -1,11 +1,11 @@
-# uriparse
+# uriparser.github.io
 
 > :hocho: Strictly RFC 3986 compliant URI parsing and handling library written in C89; moved from SourceForge to GitHub
 
 ## Package Information
 
-- **Domain**: `uriparser.github.io`
-- **Name**: `uriparse`
+- **Domain**: `uriparsergithub.io`
+- **Name**: `uriparser.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/uriparser.github.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) uriparse
+launchpad install uriparse
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `uriparse`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `uriparse`
 
@@ -37,8 +43,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +uriparser.github.io@0.9.8 -- $SHELL -i
+sh <(curl https://pkgx.sh) +uriparsergithub.io@0.9.8 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 

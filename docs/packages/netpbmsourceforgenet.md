@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `netpbm.sourceforge.net`
+- **Domain**: `netpbmsourceforge.net`
 - **Name**: `netpbm.sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/netpbm.sourceforge.net/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +netpbm.sourceforge.net -- $SHELL -i
+launchpad install +netpbm.sourceforge.net -- $SHELL -i
 ```
 
 ## Programs
@@ -352,7 +352,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +netpbm.sourceforge.net@10.86.46 -- $SHELL -i
+sh <(curl https://pkgx.sh) +netpbmsourceforge.net@10.86.46 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -365,6 +365,10 @@ This package depends on:
 - `simplesystems.org/libtiff`
 - `gnome.org/libxml2`
 - `zlib.net`
+- `gnu.org/make`
+- `github.com/westes/flex`
+- `perl.org`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

@@ -6,9 +6,9 @@
  * @version `1.56.3` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/pango -- $SHELL -i`
+ * @install `launchpad install +gnome.org/pango -- $SHELL -i`
  * @name `pango`
- * @dependencies `cairographics.org^1.18`, `freetype.org@2`, `gnome.org/glib@2`, ... (+4 more)
+ * @dependencies `cairographics.org^1.18`, `freetype.org@2`, `gnome.org/glib@2`, ... (+9 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const pangoPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/pango -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/pango -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +71,11 @@ export const pangoPackage = {
     'freedesktop.org/fontconfig@2',
     'sourceware.org/libffi@3',
     'gnu.org/fribidi@1',
+    'mesonbuild.com',
+    'ninja-build.org@1',
+    'freedesktop.org/pkg-config^0.29',
+    'gnome.org/gobject-introspection@1',
+    'python.org>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -96,7 +101,6 @@ export const pangoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnome.org/pango' as const,
 }
 
 export type PangoPackage = typeof pangoPackage

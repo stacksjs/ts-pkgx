@@ -1,23 +1,19 @@
 /**
- * **freedesktop.org/xkeyboardconfig** - pkgx package
+ * **XKeyboardConfig** - pkgx package
  *
  * @domain `freedesktop.org/XKeyboardConfig`
  * @version `2.45.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +freedesktop.org/XKeyboardConfig -- $SHELL -i`
- * @aliases `freedesktop.org/xkeyboardconfig`, `XKeyboardConfig`
+ * @install `launchpad install +freedesktop.org/XKeyboardConfig -- $SHELL -i`
+ * @dependencies `gnu.org/gettext`, `mesonbuild.com`, `ninja-build.org`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
  * const pkg = pantry.freedesktoporgxkeyboardconfig
- * // Or access via domain
- * const samePkg = pantry.freedesktoporgxkeyboardconfig
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "freedesktop.org/XKeyboardConfig"
+ * console.log(pkg.name)        // "XKeyboardConfig"
  * console.log(pkg.versions[0]) // "2.45.0" (latest)
  * ```
  *
@@ -28,7 +24,7 @@ export const freedesktoporgxkeyboardconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/XKeyboardConfig' as const,
+  name: 'XKeyboardConfig' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,10 +40,22 @@ export const freedesktoporgxkeyboardconfigPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/XKeyboardConfig -- $SHELL -i' as const,
+  installCommand: 'launchpad install +freedesktop.org/XKeyboardConfig -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gettext',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'python.org~3.11',
+    'gnome.org/libxslt',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -61,15 +69,7 @@ export const freedesktoporgxkeyboardconfigPackage = {
     '2.40.0',
     '2.39.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'freedesktop.org/xkeyboardconfig',
-    'XKeyboardConfig',
-  ] as const,
-  fullPath: 'freedesktop.org/XKeyboardConfig' as const,
+  aliases: [] as const,
 }
 
 export type FreedesktoporgxkeyboardconfigPackage = typeof freedesktoporgxkeyboardconfigPackage

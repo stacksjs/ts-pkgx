@@ -6,9 +6,9 @@
  * @version `1.12.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) org-stats`
+ * @install `launchpad install org-stats`
  * @name `org-stats`
- * @aliases `caarlos0/org-stats`
+ * @dependencies `go.dev^1.18`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const orgstatsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) org-stats' as const,
+  installCommand: 'launchpad install org-stats' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const orgstatsPackage = {
     'org-stats',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,10 +78,7 @@ export const orgstatsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'caarlos0/org-stats',
-  ] as const,
-  fullPath: 'github.com/caarlos0/org-stats' as const,
+  aliases: [] as const,
 }
 
 export type OrgstatsPackage = typeof orgstatsPackage

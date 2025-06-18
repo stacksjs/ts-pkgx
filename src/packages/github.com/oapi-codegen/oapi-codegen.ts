@@ -8,7 +8,7 @@
  *
  * @install `launchpad install oapi-codegen`
  * @name `oapi-codegen`
- * @aliases `oapi-codegen/oapi-codegen`
+ * @dependencies `go.dev^1.21`
  *
  * @example
  * ```typescript
@@ -57,7 +57,13 @@ export const oapicodegenPackage = {
     'oapi-codegen',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,10 +77,7 @@ export const oapicodegenPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'oapi-codegen/oapi-codegen',
-  ] as const,
-  fullPath: 'github.com/oapi-codegen/oapi-codegen' as const,
+  aliases: [] as const,
 }
 
 export type OapicodegenPackage = typeof oapicodegenPackage

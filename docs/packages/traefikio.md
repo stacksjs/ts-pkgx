@@ -1,11 +1,11 @@
-# traefik
+# traefik.io
 
 > The Cloud Native Application Proxy
 
 ## Package Information
 
 - **Domain**: `traefik.io`
-- **Name**: `traefik`
+- **Name**: `traefik.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/traefik.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) traefik
+launchpad install traefik
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `traefik`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `traefik`
 
@@ -50,6 +56,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +traefik.io@3.4.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
+- `curl.se`
 
 ## Usage Examples
 

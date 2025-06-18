@@ -6,8 +6,9 @@
  * @version `3.3.1` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) spin`
+ * @install `launchpad install spin`
  * @name `spin`
+ * @dependencies `rust-lang.org/rustup`, `llvm.org`, `rust-lang.org/rustup`
  * @companions `rust-lang.org`, `rust-lang.org/cargo`, `git-scm.org`
  *
  * @example
@@ -48,7 +49,7 @@ export const spinPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) spin' as const,
+  installCommand: 'launchpad install spin' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,7 +66,15 @@ export const spinPackage = {
     'rust-lang.org/cargo',
     'git-scm.org',
   ] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org/rustup',
+    'llvm.org',
+    'rust-lang.org/rustup',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -85,7 +94,6 @@ export const spinPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'fermyon.com/spin' as const,
 }
 
 export type SpinPackage = typeof spinPackage

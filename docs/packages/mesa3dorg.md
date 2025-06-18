@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +mesa3d.org -- $SHELL -i
+launchpad install +mesa3d.org -- $SHELL -i
 ```
 
 ## Programs
@@ -25,29 +25,29 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 54 versions</summary>
+<summary>Show all 55 versions</summary>
 
-- `25.1.3`, `25.1.2`, `25.1.1`, `25.1.0`, `25.0.7`
-- `25.0.6`, `25.0.5`, `25.0.4`, `25.0.3`, `25.0.2`
-- `25.0.1`, `25.0.0`, `24.3.4`, `24.3.3`, `24.3.2`
-- `24.3.1`, `24.3.0`, `24.2.8`, `24.2.7`, `24.2.6`
-- `24.2.5`, `24.2.4`, `24.2.3`, `24.2.2`, `24.2.1`
-- `24.2.0`, `24.1.7`, `24.1.6`, `24.1.5`, `24.1.4`
-- `24.1.3`, `24.1.2`, `24.1.1`, `24.1.0`, `24.0.9`
-- `24.0.8`, `24.0.7`, `24.0.6`, `24.0.5`, `24.0.4`
-- `24.0.3`, `24.0.2`, `24.0.1`, `24.0.0`, `23.3.6`
-- `23.3.5`, `23.3.4`, `23.3.3`, `23.3.2`, `23.3.1`
-- `23.3.0`, `23.2.1`, `23.1.8`, `23.1.7`
+- `25.1.4`, `25.1.3`, `25.1.2`, `25.1.1`, `25.1.0`
+- `25.0.7`, `25.0.6`, `25.0.5`, `25.0.4`, `25.0.3`
+- `25.0.2`, `25.0.1`, `25.0.0`, `24.3.4`, `24.3.3`
+- `24.3.2`, `24.3.1`, `24.3.0`, `24.2.8`, `24.2.7`
+- `24.2.6`, `24.2.5`, `24.2.4`, `24.2.3`, `24.2.2`
+- `24.2.1`, `24.2.0`, `24.1.7`, `24.1.6`, `24.1.5`
+- `24.1.4`, `24.1.3`, `24.1.2`, `24.1.1`, `24.1.0`
+- `24.0.9`, `24.0.8`, `24.0.7`, `24.0.6`, `24.0.5`
+- `24.0.4`, `24.0.3`, `24.0.2`, `24.0.1`, `24.0.0`
+- `23.3.6`, `23.3.5`, `23.3.4`, `23.3.3`, `23.3.2`
+- `23.3.1`, `23.3.0`, `23.2.1`, `23.1.8`, `23.1.7`
 
 </details>
 
-**Latest Version**: `25.1.3`
+**Latest Version**: `25.1.4`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mesa3d.org@25.1.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +mesa3d.org@25.1.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,10 +62,8 @@ This package depends on:
 - `invisible-island.net/ncurses`
 - `zlib.net`
 - `x.org/xrandr`
-- `darwingnu.org/gettext`
 - `gnu.org/gettext`
-- `linuxgnome.org/libxml2~2.13elfutils.orgkhronos.org/glslanginfo-zip.org/zipdri.freedesktop.org^2.4.110intel.com/libvafreedesktop.org/vdpaux.org/xfixesx.org/xshmfencex.org/xvx.org/xxf86vmllvm.orggithub.com/lm-sensors/lm-sensorswayland.freedesktop.orgwayland.freedesktop.org/protocols`
-- `gnome.org/libxml2~2.13`
+- `gnome.org/libxml2~2.13 # since 25.0.3, 2.14 changed the API version`
 - `elfutils.org`
 - `khronos.org/glslang`
 - `info-zip.org/zip`
@@ -80,6 +78,21 @@ This package depends on:
 - `github.com/lm-sensors/lm-sensors`
 - `wayland.freedesktop.org`
 - `wayland.freedesktop.org/protocols`
+- `gnu.org/bison`
+- `mesonbuild.com`
+- `ninja-build.org`
+- `freedesktop.org/pkg-config`
+- `pygments.org`
+- `python.org~3.11`
+- `x.org/protocol`
+- `github.com/westes/flex`
+- `llvm.org`
+- `curl.se`
+- `cmake.org^3 # since 24.3`
+- `rust-lang.org`
+- `rust-lang.org/rust-bindgen`
+- `freedesktop.org/pkg-config`
+- `gnu.org/gcc/libstdcxx`
 
 ## Usage Examples
 

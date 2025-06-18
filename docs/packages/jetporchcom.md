@@ -1,11 +1,11 @@
-# jetp
+# jetporch.com
 
 > Read-only mirror: see https://www.jetporch.com/community/sourcehut
 
 ## Package Information
 
 - **Domain**: `jetporch.com`
-- **Name**: `jetp`
+- **Name**: `jetporch.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jetporch.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) jetp
+launchpad install jetp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `jetp`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `jetp`
 
@@ -39,6 +45,16 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +jetporch.com@0.0.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `freedesktop.org/pkg-config`
+- `openssl.org`
+- `zlib.net`
+- `rust-lang.org>=1.70`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

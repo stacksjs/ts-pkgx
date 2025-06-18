@@ -6,9 +6,9 @@
  * @version `0.0.1.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) markitdown`
+ * @install `launchpad install markitdown`
  * @name `markitdown`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh^1`, `python.org~3.13`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const markitdownPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) markitdown' as const,
+  installCommand: 'launchpad install markitdown' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,7 @@ export const markitdownPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org~3.13',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,7 +77,6 @@ export const markitdownPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'microsoft.com/markitdown' as const,
 }
 
 export type MarkitdownPackage = typeof markitdownPackage

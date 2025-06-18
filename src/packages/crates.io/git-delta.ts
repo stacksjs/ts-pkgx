@@ -6,21 +6,20 @@
  * @version `0.18.2` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) delta`
- * @name `delta`
- * @aliases `git-delta`
- * @dependencies `libgit2.org~1.7`, `darwinzlib.net^1`, `zlib.net^1`
+ * @install `launchpad install delta`
+ * @aliases `delta`
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `zlib.net^1`, `rust-lang.org>=1.60`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.delta
  * // Or access via domain
  * const samePkg = pantry.cratesiogitdelta
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "delta"
+ * console.log(pkg.name)        // "git-delta"
  * console.log(pkg.description) // "A syntax-highlighting pager for git, diff, grep..."
  * console.log(pkg.programs)    // ["delta"]
  * console.log(pkg.versions[0]) // "0.18.2" (latest)
@@ -33,7 +32,7 @@ export const deltaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'delta' as const,
+  name: 'git-delta' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const deltaPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) delta' as const,
+  installCommand: 'launchpad install delta' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,9 +62,10 @@ export const deltaPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'libgit2.org~1.7',
-    'darwinzlib.net^1',
+    'libgit2.org~1.7 # links to libgit2.so.1.7',
     'zlib.net^1',
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -89,9 +89,8 @@ export const deltaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'git-delta',
+    'delta',
   ] as const,
-  fullPath: 'crates.io/git-delta' as const,
 }
 
 export type DeltaPackage = typeof deltaPackage

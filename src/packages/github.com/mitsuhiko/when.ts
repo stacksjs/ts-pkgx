@@ -6,9 +6,9 @@
  * @version `0.4.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) when`
+ * @install `launchpad install when`
  * @name `when`
- * @aliases `mitsuhiko/when`
+ * @dependencies `rust-lang.org>=1.65`, `rust-lang.org/cargo`, `freedesktop.org/pkg-config`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -43,12 +43,12 @@ export const whenPackage = {
   description: 'Timezones from the command line' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mitsuhiko/when/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/mitsuhiko/when' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) when' as const,
+  installCommand: 'launchpad install when' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,16 @@ export const whenPackage = {
     'when',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+    'freedesktop.org/pkg-config',
+    'git-scm.org^2',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +78,7 @@ export const whenPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mitsuhiko/when',
-  ] as const,
-  fullPath: 'github.com/mitsuhiko/when' as const,
+  aliases: [] as const,
 }
 
 export type WhenPackage = typeof whenPackage

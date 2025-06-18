@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +ladspa.org -- $SHELL -i
+launchpad install +ladspa.org -- $SHELL -i
 ```
 
 ## Programs

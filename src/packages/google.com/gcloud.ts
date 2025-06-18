@@ -6,20 +6,15 @@
  * @version `527.0.0` (76 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +google.com/gcloud -- $SHELL -i`
- * @aliases `gcloud`
- * @dependencies `python.org^3.11`
+ * @install `launchpad install +google.com/gcloud -- $SHELL -i`
+ * @dependencies `python.org^3.11`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gcloud
- * // Or access via domain
- * const samePkg = pantry.googlecomgcloud
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "google.com/gcloud"
+ * const pkg = pantry.googlecomgcloud
+ * console.log(pkg.name)        // "gcloud"
  * console.log(pkg.programs)    // ["gcloud", "gsutil", ...]
  * console.log(pkg.versions[0]) // "527.0.0" (latest)
  * ```
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/google-com/gcloud.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gcloudPackage = {
+export const googlecomgcloudPackage = {
   /**
    * The display name of this package.
    */
-  name: 'google.com/gcloud' as const,
+  name: 'gcloud' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const gcloudPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +google.com/gcloud -- $SHELL -i' as const,
+  installCommand: 'launchpad install +google.com/gcloud -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +59,7 @@ export const gcloudPackage = {
    */
   dependencies: [
     'python.org^3.11',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -147,14 +143,7 @@ export const gcloudPackage = {
     '458.0.0',
     '457.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gcloud',
-  ] as const,
-  fullPath: 'google.com/gcloud' as const,
+  aliases: [] as const,
 }
 
-export type GcloudPackage = typeof gcloudPackage
+export type GooglecomgcloudPackage = typeof googlecomgcloudPackage

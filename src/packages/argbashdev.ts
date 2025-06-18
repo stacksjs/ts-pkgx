@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +argbash.dev -- $SHELL -i`
  * @aliases `argbash`
- * @dependencies `gnu.org/bash`, `gnu.org/autoconf`
+ * @dependencies `gnu.org/bash>=3`, `gnu.org/autoconf`
  *
  * @example
  * ```typescript
@@ -64,7 +64,7 @@ export const argbashPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'gnu.org/bash',
+    'gnu.org/bash>=3',
     'gnu.org/autoconf',
   ] as const,
   /**

@@ -6,9 +6,10 @@
  * @version `1.49.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) help2man`
+ * @install `launchpad install help2man`
  * @name `help2man`
- * @dependencies `gnu.org/gettext`, `perl.org@5.38`
+ * @dependencies `gnu.org/gettext`, `perl.org^5.38 # perl modules require matching minors`, `cpanmin.us`
+ * @companions `PERL5LIB^{{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`
  *
  * @example
  * ```typescript
@@ -48,7 +49,7 @@ export const help2manPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) help2man' as const,
+  installCommand: 'launchpad install help2man' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,14 +57,21 @@ export const help2manPackage = {
   programs: [
     'help2man',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'PERL5LIB^{{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
    */
   dependencies: [
     'gnu.org/gettext',
-    'perl.org@5.38',
+    'perl.org^5.38 # perl modules require matching minors',
+    'cpanmin.us',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,7 +85,6 @@ export const help2manPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/help2man' as const,
 }
 
 export type Help2manPackage = typeof help2manPackage

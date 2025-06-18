@@ -1,11 +1,11 @@
-# hasura
+# hasura.io
 
 > Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events.
 
 ## Package Information
 
 - **Domain**: `hasura.io`
-- **Name**: `hasura`
+- **Name**: `hasura.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hasura.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) hasura
+launchpad install hasura
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `hasura`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `hasura`
 
@@ -49,6 +55,15 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +hasura.io@2.48.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.16`
+- `npmjs.com^8.19.4`
+- `gnu.org/coreutils`
+- `nodejs.org^18  # fails with ^20`
 
 ## Usage Examples
 

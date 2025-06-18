@@ -6,9 +6,9 @@
  * @version `4.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rubberband`
+ * @install `launchpad install rubberband`
  * @name `rubberband`
- * @dependencies `github.com/libsndfile/libsamplerate^0.2`, `github.com/libsndfile/libsndfile^1.2`, `linuxfftw.org^3.3ladspa.org^1.17vamp-plugins.org^2.9`, ... (+3 more)
+ * @dependencies `github.com/libsndfile/libsamplerate^0.2`, `github.com/libsndfile/libsndfile^1.2`, `fftw.org^3.3`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const rubberbandPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rubberband' as const,
+  installCommand: 'launchpad install rubberband' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,10 +64,11 @@ export const rubberbandPackage = {
   dependencies: [
     'github.com/libsndfile/libsamplerate^0.2',
     'github.com/libsndfile/libsndfile^1.2',
-    'linuxfftw.org^3.3ladspa.org^1.17vamp-plugins.org^2.9',
     'fftw.org^3.3',
     'ladspa.org^1.17',
     'vamp-plugins.org^2.9',
+    'mesonbuild.com^1.3.2',
+    'ninja-build.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -82,7 +83,6 @@ export const rubberbandPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'breakfastquay.com/rubberband' as const,
 }
 
 export type RubberbandPackage = typeof rubberbandPackage

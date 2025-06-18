@@ -1,25 +1,20 @@
 /**
- * **antfu/ni** - 💡 Use the right package manager
+ * **ni** - 💡 Use the right package manager
  *
  * @domain `github.com/antfu/ni`
  * @programs `na`, `nci`, `ni`, `nlx`, `nr`, ... (+2 more)
  * @version `25.0.0` (24 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/antfu/ni -- $SHELL -i`
- * @aliases `antfu/ni`
- * @dependencies `nodejs.org>=14`, `npmjs.com`
+ * @install `launchpad install +github.com/antfu/ni -- $SHELL -i`
+ * @dependencies `nodejs.org>=14`, `npmjs.com`, `pnpm.io^10.6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.antfuni
- * // Or access via domain
- * const samePkg = pantry.githubcomantfuni
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/antfu/ni"
+ * const pkg = pantry.githubcomantfuni
+ * console.log(pkg.name)        // "ni"
  * console.log(pkg.description) // "💡 Use the right package manager"
  * console.log(pkg.programs)    // ["na", "nci", ...]
  * console.log(pkg.versions[0]) // "25.0.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/antfu/ni.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const antfuniPackage = {
+export const githubcomantfuniPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/antfu/ni' as const,
+  name: 'ni' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const antfuniPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/antfu/ni -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/antfu/ni -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,6 +65,7 @@ export const antfuniPackage = {
   dependencies: [
     'nodejs.org>=14',
     'npmjs.com',
+    'pnpm.io^10.6',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -101,14 +97,7 @@ export const antfuniPackage = {
     '0.21.5',
     '0.21.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'antfu/ni',
-  ] as const,
-  fullPath: 'github.com/antfu/ni' as const,
+  aliases: [] as const,
 }
 
-export type AntfuniPackage = typeof antfuniPackage
+export type GithubcomantfuniPackage = typeof githubcomantfuniPackage

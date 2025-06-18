@@ -1,10 +1,10 @@
 # plocate.sesse.net
 
-> A package from plocate.sesse.net
+> A package from plocatesesse.net
 
 ## Package Information
 
-- **Domain**: `plocate.sesse.net`
+- **Domain**: `plocatesesse.net`
 - **Name**: `plocate.sesse.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/plocate.sesse.net/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +plocate.sesse.net -- $SHELL -i
+launchpad install +plocate.sesse.net -- $SHELL -i
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +plocate.sesse.net@1.1.23 -- $SHELL -i
+sh <(curl https://pkgx.sh) +plocatesesse.net@1.1.23 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -48,6 +48,10 @@ This package depends on:
 
 - `facebook.com/zstd@1`
 - `gnu.org/gcc/libstdcxx@14`
+- `mesonbuild.com^1`
+- `cmake.org^3`
+- `ninja-build.org^1`
+- `gnu.org/gcc`
 
 ## Usage Examples
 

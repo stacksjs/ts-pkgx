@@ -6,9 +6,9 @@
  * @version `0.5.1` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) kubecolor`
+ * @install `launchpad install kubecolor`
  * @name `kubecolor`
- * @aliases `kubecolor/kubecolor`
+ * @dependencies `go.dev^1.21`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const kubecolorPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) kubecolor' as const,
+  installCommand: 'launchpad install kubecolor' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const kubecolorPackage = {
     'kubecolor',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -76,10 +82,7 @@ export const kubecolorPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kubecolor/kubecolor',
-  ] as const,
-  fullPath: 'github.com/kubecolor/kubecolor' as const,
+  aliases: [] as const,
 }
 
 export type KubecolorPackage = typeof kubecolorPackage

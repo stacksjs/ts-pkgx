@@ -6,9 +6,10 @@
  * @version `1.0.6` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) go-redfish-api-idrac-client`
+ * @install `launchpad install go-redfish-api-idrac-client`
  * @name `go-redfish-api-idrac`
- * @aliases `go-redfish-api-idrac-client`, `greenpau/go-redfish-api-idrac`
+ * @aliases `go-redfish-api-idrac-client`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -48,7 +49,7 @@ export const goredfishapiidracclientPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) go-redfish-api-idrac-client' as const,
+  installCommand: 'launchpad install go-redfish-api-idrac-client' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +58,13 @@ export const goredfishapiidracclientPackage = {
     'go-redfish-api-idrac-client',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,9 +78,7 @@ export const goredfishapiidracclientPackage = {
    */
   aliases: [
     'go-redfish-api-idrac-client',
-    'greenpau/go-redfish-api-idrac',
   ] as const,
-  fullPath: 'github.com/greenpau/go-redfish-api-idrac' as const,
 }
 
 export type GoredfishapiidracclientPackage = typeof goredfishapiidracclientPackage

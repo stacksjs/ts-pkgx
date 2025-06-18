@@ -6,21 +6,20 @@
  * @version `1.1.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) dym`
- * @name `dym`
- * @aliases `didyoumean`
- * @dependencies `openssl.org^1.1`, `linuxx.org/xcb`, `x.org/xcb`
+ * @install `launchpad install dym`
+ * @aliases `dym`
+ * @dependencies `openssl.org^1.1`, `x.org/xcb`, `rust-lang.org>=1.56`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.dym
  * // Or access via domain
  * const samePkg = pantry.cratesiodidyoumean
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dym"
+ * console.log(pkg.name)        // "didyoumean"
  * console.log(pkg.description) // "A CLI spelling corrector for when you're unsure"
  * console.log(pkg.programs)    // ["dym"]
  * console.log(pkg.versions[0]) // "1.1.4" (latest)
@@ -33,7 +32,7 @@ export const dymPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dym' as const,
+  name: 'didyoumean' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const dymPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) dym' as const,
+  installCommand: 'launchpad install dym' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,8 +63,9 @@ export const dymPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'linuxx.org/xcb',
     'x.org/xcb',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,9 +79,8 @@ export const dymPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'didyoumean',
+    'dym',
   ] as const,
-  fullPath: 'crates.io/didyoumean' as const,
 }
 
 export type DymPackage = typeof dymPackage

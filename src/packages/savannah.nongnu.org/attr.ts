@@ -6,8 +6,9 @@
  * @version `2.5.2` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +savannah.nongnu.org/attr -- $SHELL -i`
+ * @install `launchpad install +savannah.nongnu.org/attr -- $SHELL -i`
  * @name `attr`
+ * @dependencies `gnu.org/gettext`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const attrPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +savannah.nongnu.org/attr -- $SHELL -i' as const,
+  installCommand: 'launchpad install +savannah.nongnu.org/attr -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -58,7 +59,13 @@ export const attrPackage = {
     'setfattr',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gettext',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,7 +79,6 @@ export const attrPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'savannah.nongnu.org/attr' as const,
 }
 
 export type AttrPackage = typeof attrPackage

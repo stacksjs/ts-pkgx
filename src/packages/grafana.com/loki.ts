@@ -6,8 +6,9 @@
  * @version `3.5.1` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) loki`
+ * @install `launchpad install loki`
  * @name `loki`
+ * @dependencies `go.dev=1.21.8`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -42,12 +43,12 @@ export const lokiPackage = {
   description: 'Horizontally-scalable, highly-available log aggregation system' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/grafana.com/loki/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/grafana/loki' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) loki' as const,
+  installCommand: 'launchpad install loki' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,14 @@ export const lokiPackage = {
     'loki',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev=1.21.8',
+    'git-scm.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -88,7 +96,6 @@ export const lokiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'grafana.com/loki' as const,
 }
 
 export type LokiPackage = typeof lokiPackage

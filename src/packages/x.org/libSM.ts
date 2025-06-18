@@ -1,24 +1,19 @@
 /**
- * **x.org/libsm** - pkgx package
+ * **libSM** - pkgx package
  *
  * @domain `x.org/libSM`
  * @version `1.2.6` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/libSM -- $SHELL -i`
- * @aliases `x.org/libsm`, `libSM`
- * @dependencies `x.org/ice`
+ * @install `launchpad install +x.org/libSM -- $SHELL -i`
+ * @dependencies `x.org/ice`, `freedesktop.org/pkg-config`, `x.org/xtrans`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
  * const pkg = pantry.xorglibsm
- * // Or access via domain
- * const samePkg = pantry.xorglibsm
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/libSM"
+ * console.log(pkg.name)        // "libSM"
  * console.log(pkg.versions[0]) // "1.2.6" (latest)
  * ```
  *
@@ -29,7 +24,7 @@ export const xorglibsmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/libSM' as const,
+  name: 'libSM' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xorglibsmPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/libSM -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/libSM -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,6 +49,9 @@ export const xorglibsmPackage = {
    */
   dependencies: [
     'x.org/ice',
+    'freedesktop.org/pkg-config',
+    'x.org/xtrans',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,15 +62,7 @@ export const xorglibsmPackage = {
     '1.2.5',
     '1.2.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'x.org/libsm',
-    'libSM',
-  ] as const,
-  fullPath: 'x.org/libSM' as const,
+  aliases: [] as const,
 }
 
 export type XorglibsmPackage = typeof xorglibsmPackage

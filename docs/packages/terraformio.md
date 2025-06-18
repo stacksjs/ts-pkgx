@@ -1,11 +1,11 @@
-# terraform
+# terraform.io
 
 > Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
 
 ## Package Information
 
 - **Domain**: `terraform.io`
-- **Name**: `terraform`
+- **Name**: `terraform.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/terraform.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) terraform
+launchpad install terraform
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `terraform`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `terraform`
 
@@ -53,6 +59,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +terraform.io@1.12.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev~1.24.1`
 
 ## Usage Examples
 

@@ -6,20 +6,15 @@
  * @version `0.8.6` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +crates.io/sqlx-cli -- $SHELL -i`
- * @aliases `sqlx-cli`
- * @dependencies `openssl.org^1.1`
+ * @install `launchpad install +crates.io/sqlx-cli -- $SHELL -i`
+ * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.sqlxcli
- * // Or access via domain
- * const samePkg = pantry.cratesiosqlxcli
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "crates.io/sqlx-cli"
+ * const pkg = pantry.cratesiosqlxcli
+ * console.log(pkg.name)        // "sqlx-cli"
  * console.log(pkg.description) // "🧰 The Rust SQL Toolkit. An async, pure Rust SQ..."
  * console.log(pkg.programs)    // ["cargo-sqlx", "sqlx"]
  * console.log(pkg.versions[0]) // "0.8.6" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/sqlx-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sqlxcliPackage = {
+export const cratesiosqlxcliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'crates.io/sqlx-cli' as const,
+  name: 'sqlx-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const sqlxcliPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +crates.io/sqlx-cli -- $SHELL -i' as const,
+  installCommand: 'launchpad install +crates.io/sqlx-cli -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +59,8 @@ export const sqlxcliPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,14 +75,7 @@ export const sqlxcliPackage = {
     '0.8.0',
     '0.7.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'sqlx-cli',
-  ] as const,
-  fullPath: 'crates.io/sqlx-cli' as const,
+  aliases: [] as const,
 }
 
-export type SqlxcliPackage = typeof sqlxcliPackage
+export type CratesiosqlxcliPackage = typeof cratesiosqlxcliPackage

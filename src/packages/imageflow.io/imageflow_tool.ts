@@ -6,9 +6,9 @@
  * @version `2023.9.25` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) imageflow_tool`
+ * @install `launchpad install imageflow_tool`
  * @name `imageflow_tool`
- * @dependencies `openssl.org@1.1`
+ * @dependencies `openssl.org@1.1`, `rust-lang.org>=1.65<1.78`, `rust-lang.org/cargo`, ... (+5 more)
  * @companions `info-zip.org/zip`, `kornel.ski/dssim`
  *
  * @example
@@ -44,12 +44,12 @@ export const imageflowtoolPackage = {
   description: 'High-performance image manipulation for web servers. Includes imageflow_server, imageflow_tool, and libimageflow' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/imageflow.io/imageflow_tool/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/imazen/imageflow' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) imageflow_tool' as const,
+  installCommand: 'launchpad install imageflow_tool' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +71,13 @@ export const imageflowtoolPackage = {
    */
   dependencies: [
     'openssl.org@1.1',
+    'rust-lang.org>=1.65<1.78',
+    'rust-lang.org/cargo',
+    'nasm.us',
+    'info-zip.org/zip',
+    'kornel.ski/dssim',
+    'gnome.org/pango',
+    'darwinsys.com/file',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -84,7 +91,6 @@ export const imageflowtoolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'imageflow.io/imageflow_tool' as const,
 }
 
 export type ImageflowtoolPackage = typeof imageflowtoolPackage

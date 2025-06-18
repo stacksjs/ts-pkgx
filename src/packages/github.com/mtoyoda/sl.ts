@@ -6,10 +6,9 @@
  * @version `5.2.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sl`
+ * @install `launchpad install sl`
  * @name `sl`
- * @aliases `mtoyoda/sl`
- * @dependencies `invisible-island.net/ncurses@6`
+ * @dependencies `invisible-island.net/ncurses@6`, `gnu.org/patch`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const slPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sl' as const,
+  installCommand: 'launchpad install sl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const slPackage = {
    */
   dependencies: [
     'invisible-island.net/ncurses@6',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +76,7 @@ export const slPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mtoyoda/sl',
-  ] as const,
-  fullPath: 'github.com/mtoyoda/sl' as const,
+  aliases: [] as const,
 }
 
 export type SlPackage = typeof slPackage

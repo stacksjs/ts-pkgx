@@ -5,20 +5,15 @@
  * @version `0.7.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +google.com/glog -- $SHELL -i`
- * @aliases `glog`
- * @dependencies `gflags.github.io`
+ * @install `launchpad install +google.com/glog -- $SHELL -i`
+ * @dependencies `gflags.github.io`, `cmake.org`, `cmake.org`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.glog
- * // Or access via domain
- * const samePkg = pantry.googlecomglog
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "google.com/glog"
+ * const pkg = pantry.googlecomglog
+ * console.log(pkg.name)        // "glog"
  * console.log(pkg.description) // "C++ implementation of the Google logging module"
  * console.log(pkg.versions[0]) // "0.7.1" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/google-com/glog.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const glogPackage = {
+export const googlecomglogPackage = {
   /**
    * The display name of this package.
    */
-  name: 'google.com/glog' as const,
+  name: 'glog' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const glogPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +google.com/glog -- $SHELL -i' as const,
+  installCommand: 'launchpad install +google.com/glog -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,10 @@ export const glogPackage = {
    */
   dependencies: [
     'gflags.github.io',
+    'cmake.org',
+    'cmake.org',
+    'gnu.org/make',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +64,7 @@ export const glogPackage = {
     '0.7.0',
     '0.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'glog',
-  ] as const,
-  fullPath: 'google.com/glog' as const,
+  aliases: [] as const,
 }
 
-export type GlogPackage = typeof glogPackage
+export type GooglecomglogPackage = typeof googlecomglogPackage

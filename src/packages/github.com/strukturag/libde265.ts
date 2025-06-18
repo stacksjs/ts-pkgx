@@ -1,24 +1,20 @@
 /**
- * **strukturag/libde265** - Open h.265 video codec implementation.
+ * **libde265** - Open h.265 video codec implementation.
  *
  * @domain `github.com/strukturag/libde265`
  * @programs `acceleration_speed`, `bjoentegaard`, `block-rate-estim`, `gen-enc-table`, `rd-curves`, ... (+2 more)
  * @version `1.0.16` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/strukturag/libde265 -- $SHELL -i`
- * @aliases `strukturag/libde265`
+ * @install `launchpad install +github.com/strukturag/libde265 -- $SHELL -i`
+ * @dependencies `gnu.org/autoconf`, `gnu.org/automake`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.strukturaglibde265
- * // Or access via domain
- * const samePkg = pantry.githubcomstrukturaglibde265
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/strukturag/libde265"
+ * const pkg = pantry.githubcomstrukturaglibde265
+ * console.log(pkg.name)        // "libde265"
  * console.log(pkg.description) // "Open h.265 video codec implementation."
  * console.log(pkg.programs)    // ["acceleration_speed", "bjoentegaard", ...]
  * console.log(pkg.versions[0]) // "1.0.16" (latest)
@@ -27,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/strukturag/libde265.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const strukturaglibde265Package = {
+export const githubcomstrukturaglibde265Package = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/strukturag/libde265' as const,
+  name: 'libde265' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +43,7 @@ export const strukturaglibde265Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/strukturag/libde265 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/strukturag/libde265 -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,7 +58,15 @@ export const strukturaglibde265Package = {
     'yuv-distortion',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,14 +79,7 @@ export const strukturaglibde265Package = {
     '1.0.12',
     '1.0.11',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'strukturag/libde265',
-  ] as const,
-  fullPath: 'github.com/strukturag/libde265' as const,
+  aliases: [] as const,
 }
 
-export type Strukturaglibde265Package = typeof strukturaglibde265Package
+export type Githubcomstrukturaglibde265Package = typeof githubcomstrukturaglibde265Package

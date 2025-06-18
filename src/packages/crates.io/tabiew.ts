@@ -6,21 +6,20 @@
  * @version `0.9.4` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) tw`
- * @name `tw`
- * @aliases `tabiew`
- * @dependencies `linuxopenssl.org`, `openssl.org`
+ * @install `launchpad install tw`
+ * @aliases `tw`
+ * @dependencies `openssl.org`, `rust-lang.org^1.78`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.tw
  * // Or access via domain
  * const samePkg = pantry.cratesiotabiew
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tw"
+ * console.log(pkg.name)        // "tabiew"
  * console.log(pkg.description) // "A lightweight TUI application to view and query..."
  * console.log(pkg.programs)    // ["tw"]
  * console.log(pkg.versions[0]) // "0.9.4" (latest)
@@ -33,7 +32,7 @@ export const twPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tw' as const,
+  name: 'tabiew' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const twPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) tw' as const,
+  installCommand: 'launchpad install tw' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,8 +62,9 @@ export const twPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxopenssl.org',
     'openssl.org',
+    'rust-lang.org^1.78',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -98,9 +98,8 @@ export const twPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'tabiew',
+    'tw',
   ] as const,
-  fullPath: 'crates.io/tabiew' as const,
 }
 
 export type TwPackage = typeof twPackage

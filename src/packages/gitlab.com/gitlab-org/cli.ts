@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install glab`
- * @name `glab`
- * @aliases `gitlab-org/cli`
+ * @aliases `glab`
+ * @dependencies `go.dev^1.18`, `git-scm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.glab
  * // Or access via domain
  * const samePkg = pantry.gitlabcomgitlaborgcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "glab"
+ * console.log(pkg.name)        // "cli"
  * console.log(pkg.description) // "Open-source GitLab command-line tool"
  * console.log(pkg.programs)    // ["glab"]
  * console.log(pkg.versions[0]) // "1.60.1" (latest)
@@ -32,7 +32,7 @@ export const glabPackage = {
   /**
    * The display name of this package.
    */
-  name: 'glab' as const,
+  name: 'cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -57,7 +57,14 @@ export const glabPackage = {
     'glab',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.18',
+    'git-scm.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -113,9 +120,8 @@ export const glabPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'gitlab-org/cli',
+    'glab',
   ] as const,
-  fullPath: 'gitlab.com/gitlab-org/cli' as const,
 }
 
 export type GlabPackage = typeof glabPackage

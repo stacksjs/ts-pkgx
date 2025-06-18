@@ -5,31 +5,26 @@
  * @version `1.3.6` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/exts -- $SHELL -i`
- * @aliases `exts`
- * @dependencies `x.org/x11^1`, `x.org/protocol`
+ * @install `launchpad install +x.org/exts -- $SHELL -i`
+ * @dependencies `x.org/x11^1`, `x.org/protocol`, `freedesktop.org/pkg-config~0.29`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.exts
- * // Or access via domain
- * const samePkg = pantry.xorgexts
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/exts"
+ * const pkg = pantry.xorgexts
+ * console.log(pkg.name)        // "exts"
  * console.log(pkg.versions[0]) // "1.3.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/exts.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const extsPackage = {
+export const xorgextsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/exts' as const,
+  name: 'exts' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const extsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/exts -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/exts -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,7 @@ export const extsPackage = {
   dependencies: [
     'x.org/x11^1',
     'x.org/protocol',
+    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +60,7 @@ export const extsPackage = {
     '1.3.6',
     '1.3.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'exts',
-  ] as const,
-  fullPath: 'x.org/exts' as const,
+  aliases: [] as const,
 }
 
-export type ExtsPackage = typeof extsPackage
+export type XorgextsPackage = typeof xorgextsPackage

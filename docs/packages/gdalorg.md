@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +gdal.org -- $SHELL -i
+launchpad install +gdal.org -- $SHELL -i
 ```
 
 ## Programs
@@ -116,10 +116,14 @@ This package depends on:
 - `zlib.net`
 - `dkrz.de/libaec`
 - `github.com/ebiggers/libdeflate`
-- `linuxcurl.segithub.com/util-linux/util-linuxapache.org/thrift=0.21.0`
 - `curl.se`
 - `github.com/util-linux/util-linux`
-- `apache.org/thrift=0.21.0`
+- `apache.org/thrift=0.21.0 # since 3.10.0`
+- `boost.org`
+- `cmake.org`
+- `swig.org`
+- `doxygen.nl`
+- `llvm.org`
 
 ## Usage Examples
 

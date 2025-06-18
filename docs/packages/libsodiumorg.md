@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libsodium.org -- $SHELL -i
+launchpad install +libsodium.org -- $SHELL -i
 ```
 
 ## Programs

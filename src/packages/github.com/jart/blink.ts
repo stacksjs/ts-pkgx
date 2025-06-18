@@ -6,9 +6,9 @@
  * @version `0.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/jart/blink -- $SHELL -i`
+ * @install `launchpad install +github.com/jart/blink -- $SHELL -i`
  * @name `blink`
- * @aliases `jart/blink`
+ * @dependencies `gnu.org/make`, `curl.se`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const blinkPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/jart/blink -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/jart/blink -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -58,7 +58,14 @@ export const blinkPackage = {
     'blinkenlights',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/make',
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,10 +77,7 @@ export const blinkPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jart/blink',
-  ] as const,
-  fullPath: 'github.com/jart/blink' as const,
+  aliases: [] as const,
 }
 
 export type BlinkPackage = typeof blinkPackage

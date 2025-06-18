@@ -6,9 +6,8 @@
  * @version `1.3.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rbenv`
+ * @install `launchpad install rbenv`
  * @name `rbenv`
- * @aliases `rbenv/rbenv`
  * @dependencies `ruby-lang.org`
  *
  * @example
@@ -49,7 +48,7 @@ export const rbenvPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rbenv' as const,
+  installCommand: 'launchpad install rbenv' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,10 +78,7 @@ export const rbenvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rbenv/rbenv',
-  ] as const,
-  fullPath: 'github.com/rbenv/rbenv' as const,
+  aliases: [] as const,
 }
 
 export type RbenvPackage = typeof rbenvPackage

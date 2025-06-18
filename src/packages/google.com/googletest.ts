@@ -5,19 +5,15 @@
  * @version `1.17.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +google.com/googletest -- $SHELL -i`
- * @aliases `googletest`
+ * @install `launchpad install +google.com/googletest -- $SHELL -i`
+ * @dependencies `cmake.org^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.googletest
- * // Or access via domain
- * const samePkg = pantry.googlecomgoogletest
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "google.com/googletest"
+ * const pkg = pantry.googlecomgoogletest
+ * console.log(pkg.name)        // "googletest"
  * console.log(pkg.description) // "GoogleTest - Google Testing and Mocking Framework"
  * console.log(pkg.versions[0]) // "1.17.0" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/google-com/googletest.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const googletestPackage = {
+export const googlecomgoogletestPackage = {
   /**
    * The display name of this package.
    */
-  name: 'google.com/googletest' as const,
+  name: 'googletest' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,16 @@ export const googletestPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +google.com/googletest -- $SHELL -i' as const,
+  installCommand: 'launchpad install +google.com/googletest -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -61,14 +63,7 @@ export const googletestPackage = {
     '1.14.0',
     '1.13.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'googletest',
-  ] as const,
-  fullPath: 'google.com/googletest' as const,
+  aliases: [] as const,
 }
 
-export type GoogletestPackage = typeof googletestPackage
+export type GooglecomgoogletestPackage = typeof googlecomgoogletestPackage

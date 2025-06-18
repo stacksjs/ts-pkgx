@@ -6,9 +6,9 @@
  * @version `0.5.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) silicon`
+ * @install `launchpad install silicon`
  * @name `silicon`
- * @dependencies `harfbuzz.org^5`, `linuxfreedesktop.org/fontconfigfreetype.orgx.org/xcb`, `freedesktop.org/fontconfig`, ... (+2 more)
+ * @dependencies `harfbuzz.org^5`, `freedesktop.org/fontconfig`, `freetype.org`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const siliconPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) silicon' as const,
+  installCommand: 'launchpad install silicon' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,10 +63,12 @@ export const siliconPackage = {
    */
   dependencies: [
     'harfbuzz.org^5',
-    'linuxfreedesktop.org/fontconfigfreetype.orgx.org/xcb',
     'freedesktop.org/fontconfig',
     'freetype.org',
     'x.org/xcb',
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+    'cmake.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -82,7 +84,6 @@ export const siliconPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/silicon' as const,
 }
 
 export type SiliconPackage = typeof siliconPackage

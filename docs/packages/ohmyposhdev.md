@@ -1,11 +1,11 @@
-# oh-my-posh
+# ohmyposh.dev
 
 > The most customisable and low-latency cross platform/shell prompt renderer
 
 ## Package Information
 
 - **Domain**: `ohmyposh.dev`
-- **Name**: `oh-my-posh`
+- **Name**: `ohmyposh.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ohmyposh.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) oh-my-posh
+launchpad install oh-my-posh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `oh-my-posh`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `oh-my-posh`
 
@@ -97,6 +103,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +ohmyposh.dev@26.9.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev>=1.21`
 
 ## Usage Examples
 

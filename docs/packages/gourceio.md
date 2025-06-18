@@ -1,11 +1,11 @@
-# gource
+# gource.io
 
 > software version control visualization
 
 ## Package Information
 
 - **Domain**: `gource.io`
-- **Name**: `gource`
+- **Name**: `gource.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gource.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) gource
+launchpad install gource
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `gource`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `gource`
 
@@ -51,6 +57,8 @@ This package depends on:
 - `libsdl.org^2`
 - `glew.sourceforge.io^2`
 - `libsdl.org/SDL_image^2`
+- `freedesktop.org/pkg-config^0.29`
+- `glm.g-truc.net^0`
 
 ## Usage Examples
 

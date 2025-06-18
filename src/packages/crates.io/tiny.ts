@@ -6,10 +6,9 @@
  * @version `0.13.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) tiny`
+ * @install `launchpad install tiny`
  * @name `tiny`
- * @aliases `crates.io-tiny`
- * @dependencies `openssl.org^1.1`
+ * @dependencies `openssl.org^1.1`, `rust-lang.org^1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const tinyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) tiny' as const,
+  installCommand: 'launchpad install tiny' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const tinyPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
+    'rust-lang.org^1.65',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,10 +79,7 @@ export const tinyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'crates.io-tiny',
-  ] as const,
-  fullPath: 'crates.io-tiny' as const,
+  aliases: [] as const,
 }
 
 export type TinyPackage = typeof tinyPackage

@@ -6,19 +6,15 @@
  * @version `6.4.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +invisible-island.net/ncurses -- $SHELL -i`
- * @aliases `ncurses`
+ * @install `launchpad install +invisible-island.net/ncurses -- $SHELL -i`
+ * @dependencies `freedesktop.org/pkg-config^0.29`, `github.com/tmux/tmux^3`, `freedesktop.org/pkg-config^0.29`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.ncurses
- * // Or access via domain
- * const samePkg = pantry.invisibleislandnetncurses
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "invisible-island.net/ncurses"
+ * const pkg = pantry.invisibleislandnetncurses
+ * console.log(pkg.name)        // "ncurses"
  * console.log(pkg.description) // "Text-based UI library"
  * console.log(pkg.programs)    // ["captoinfo", "clear", ...]
  * console.log(pkg.versions[0]) // "6.4.0" (latest)
@@ -27,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/invisible-island-net/ncurses.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ncursesPackage = {
+export const invisibleislandnetncursesPackage = {
   /**
    * The display name of this package.
    */
-  name: 'invisible-island.net/ncurses' as const,
+  name: 'ncurses' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +43,7 @@ export const ncursesPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +invisible-island.net/ncurses -- $SHELL -i' as const,
+  installCommand: 'launchpad install +invisible-island.net/ncurses -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,7 +62,15 @@ export const ncursesPackage = {
     'tset',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'freedesktop.org/pkg-config^0.29',
+    'github.com/tmux/tmux^3',
+    'freedesktop.org/pkg-config^0.29',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,14 +79,7 @@ export const ncursesPackage = {
     '6.4.0',
     '6.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'ncurses',
-  ] as const,
-  fullPath: 'invisible-island.net/ncurses' as const,
+  aliases: [] as const,
 }
 
-export type NcursesPackage = typeof ncursesPackage
+export type InvisibleislandnetncursesPackage = typeof invisibleislandnetncursesPackage

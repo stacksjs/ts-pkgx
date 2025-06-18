@@ -1,11 +1,11 @@
-# dart
+# dart.dev
 
 > The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
 
 ## Package Information
 
 - **Domain**: `dart.dev`
-- **Name**: `dart`
+- **Name**: `dart.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dart.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +dart.dev -- $SHELL -i
+launchpad install +dart.dev -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `dart`
 - `dartaotruntime`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `dart`
 
 ## Available Versions
 
@@ -47,6 +53,17 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +dart.dev@3.8.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `ninja-build.org`
+- `rust-lang.org`
+- `curl.se`
+- `python.org>=3<3.12`
+- `tukaani.org/xz`
+- `git-scm.org`
 
 ## Usage Examples
 

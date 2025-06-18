@@ -6,7 +6,7 @@
  * @version `1.3.20230209` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +invisible-island.net/dialog -- $SHELL -i`
+ * @install `launchpad install +invisible-island.net/dialog -- $SHELL -i`
  * @name `dialog`
  * @dependencies `invisible-island.net/ncurses`
  *
@@ -48,7 +48,7 @@ export const dialogPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +invisible-island.net/dialog -- $SHELL -i' as const,
+  installCommand: 'launchpad install +invisible-island.net/dialog -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,7 +77,6 @@ export const dialogPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'invisible-island.net/dialog' as const,
 }
 
 export type DialogPackage = typeof dialogPackage

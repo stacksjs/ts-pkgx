@@ -6,7 +6,7 @@
  * @version `2.4.8` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) yuicompressor`
+ * @install `launchpad install yuicompressor`
  * @name `yuicompressor`
  * @dependencies `openjdk.org`
  *
@@ -48,7 +48,7 @@ export const yuicompressorPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) yuicompressor' as const,
+  installCommand: 'launchpad install yuicompressor' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,7 +76,6 @@ export const yuicompressorPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'yui.github.io/yuicompressor' as const,
 }
 
 export type YuicompressorPackage = typeof yuicompressorPackage

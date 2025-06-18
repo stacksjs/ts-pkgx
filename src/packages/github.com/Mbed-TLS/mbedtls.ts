@@ -6,20 +6,20 @@
  * @version `3.6.3.1` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) generic_sum`
- * @name `generic_sum`
- * @aliases `Mbed-TLS/mbedtls`
+ * @install `launchpad install generic_sum`
+ * @aliases `generic_sum`
+ * @dependencies `cmake.org`, `llvm.org<16 # otherwise we get an error from the arm_neon.h include`, `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.genericsum
  * // Or access via domain
  * const samePkg = pantry.githubcommbedtlsmbedtls
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "generic_sum"
+ * console.log(pkg.name)        // "mbedtls"
  * console.log(pkg.description) // "An open source, portable, easy to use, readable..."
  * console.log(pkg.programs)    // ["generic_sum"]
  * console.log(pkg.versions[0]) // "3.6.3.1" (latest)
@@ -32,7 +32,7 @@ export const genericsumPackage = {
   /**
    * The display name of this package.
    */
-  name: 'generic_sum' as const,
+  name: 'mbedtls' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const genericsumPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) generic_sum' as const,
+  installCommand: 'launchpad install generic_sum' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,15 @@ export const genericsumPackage = {
     'generic_sum',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'llvm.org<16 # otherwise we get an error from the arm_neon.h include',
+    'python.org~3.11',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -79,9 +87,8 @@ export const genericsumPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'Mbed-TLS/mbedtls',
+    'generic_sum',
   ] as const,
-  fullPath: 'github.com/Mbed-TLS/mbedtls' as const,
 }
 
 export type GenericsumPackage = typeof genericsumPackage

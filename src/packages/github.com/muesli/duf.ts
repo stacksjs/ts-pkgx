@@ -6,9 +6,9 @@
  * @version `0.8.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) duf`
+ * @install `launchpad install duf`
  * @name `duf`
- * @aliases `muesli/duf`
+ * @dependencies `go.dev^1.18`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const dufPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) duf' as const,
+  installCommand: 'launchpad install duf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const dufPackage = {
     'duf',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +75,7 @@ export const dufPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'muesli/duf',
-  ] as const,
-  fullPath: 'github.com/muesli/duf' as const,
+  aliases: [] as const,
 }
 
 export type DufPackage = typeof dufPackage

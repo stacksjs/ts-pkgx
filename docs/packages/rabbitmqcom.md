@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +rabbitmq.com -- $SHELL -i
+launchpad install +rabbitmq.com -- $SHELL -i
 ```
 
 ## Programs

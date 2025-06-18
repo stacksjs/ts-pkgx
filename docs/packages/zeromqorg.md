@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +zeromq.org -- $SHELL -i
+launchpad install +zeromq.org -- $SHELL -i
 ```
 
 ## Programs
@@ -39,6 +39,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +zeromq.org@4.3.5 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

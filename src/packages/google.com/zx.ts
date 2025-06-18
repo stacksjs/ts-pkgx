@@ -6,9 +6,9 @@
  * @version `8.5.5` (29 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) zx`
+ * @install `launchpad install zx`
  * @name `zx`
- * @dependencies `nodejs.org`
+ * @dependencies `nodejs.org`, `npmjs.com`, `curl.se`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const zxPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) zx' as const,
+  installCommand: 'launchpad install zx' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const zxPackage = {
    */
   dependencies: [
     'nodejs.org',
+    'npmjs.com',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -104,7 +106,6 @@ export const zxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'google.com/zx' as const,
 }
 
 export type ZxPackage = typeof zxPackage

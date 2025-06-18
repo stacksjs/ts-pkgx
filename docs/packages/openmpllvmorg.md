@@ -1,11 +1,11 @@
-# libomp
+# openmp.llvm.org
 
 > The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Package Information
 
-- **Domain**: `openmp.llvm.org`
-- **Name**: `libomp`
+- **Domain**: `openmpllvm.org`
+- **Name**: `openmp.llvm.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openmp.llvm.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openmp.llvm.org -- $SHELL -i
+launchpad install +openmp.llvm.org -- $SHELL -i
 ```
 
 ## Programs
@@ -21,6 +21,12 @@ sh <(curl https://pkgx.sh) +openmp.llvm.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `libomp`
 
 ## Available Versions
 
@@ -43,8 +49,19 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +openmp.llvm.org@20.1.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) +openmpllvm.org@20.1.7 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `llvm.org`
+- `gnu.org/wget`
+- `python.org~3.11`
+- `perl.org`
+- `llvm.org`
 
 ## Usage Examples
 

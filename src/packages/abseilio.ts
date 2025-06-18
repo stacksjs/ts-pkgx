@@ -6,6 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +abseil.io -- $SHELL -i`
+ * @dependencies `cmake.org^3`, `freedesktop.org/pkg-config^0`
  *
  * @example
  * ```typescript
@@ -43,7 +44,14 @@ export const abseilioPackage = {
   installCommand: 'launchpad install +abseil.io -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org^3',
+    'freedesktop.org/pkg-config^0',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

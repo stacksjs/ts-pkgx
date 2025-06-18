@@ -6,8 +6,9 @@
  * @version `4.3.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ksops`
+ * @install `launchpad install ksops`
  * @name `ksops`
+ * @dependencies `go.dev~1.22`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const ksopsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ksops' as const,
+  installCommand: 'launchpad install ksops' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,13 @@ export const ksopsPackage = {
     'ksops',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev~1.22',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,7 +77,6 @@ export const ksopsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'viaduct.ai/ksops' as const,
 }
 
 export type KsopsPackage = typeof ksopsPackage

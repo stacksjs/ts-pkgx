@@ -1,11 +1,11 @@
-# opensearch
+# opensearch.org
 
 > 🔎 Open source distributed and RESTful search engine.
 
 ## Package Information
 
 - **Domain**: `opensearch.org`
-- **Name**: `opensearch`
+- **Name**: `opensearch.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/opensearch.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +opensearch.org -- $SHELL -i
+launchpad install +opensearch.org -- $SHELL -i
 ```
 
 ## Programs
@@ -24,6 +24,12 @@ This package provides the following executable programs:
 - `opensearch-keystore`
 - `opensearch-plugin`
 - `opensearch-shard`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `opensearch`
 
 ## Available Versions
 
@@ -49,8 +55,16 @@ sh <(curl https://pkgx.sh) +opensearch.org@3.0.0 -- $SHELL -i
 
 This package depends on:
 
-- `openjdk.org^21`
+- `openjdk.org^21 # since v3`
 - `openmp.llvm.org^17`
+- `cmake.org@3`
+- `git-scm.org`
+- `gnu.org/wget`
+- `gnu.org/gcc^12 # for gfortran`
+- `openblas.net`
+- `gnu.org/coreutils^9`
+- `stedolan.github.io/jq`
+- `curl.se`
 
 ## Usage Examples
 

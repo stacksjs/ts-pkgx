@@ -5,31 +5,26 @@
  * @version `4.6.2` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +heasarc.gsfc.nasa.gov/cfitsio -- $SHELL -i`
- * @aliases `cfitsio`
- * @dependencies `darwinzlib.net`, `zlib.net`
+ * @install `launchpad install +heasarc.gsfc.nasa.gov/cfitsio -- $SHELL -i`
+ * @dependencies `zlib.net`, `gnu.org/diffutils`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.cfitsio
- * // Or access via domain
- * const samePkg = pantry.heasarcgsfcnasagovcfitsio
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "heasarc.gsfc.nasa.gov/cfitsio"
+ * const pkg = pantry.heasarcgsfcnasagovcfitsio
+ * console.log(pkg.name)        // "cfitsio"
  * console.log(pkg.versions[0]) // "4.6.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/heasarc-gsfc-nasa-gov/cfitsio.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cfitsioPackage = {
+export const heasarcgsfcnasagovcfitsioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'heasarc.gsfc.nasa.gov/cfitsio' as const,
+  name: 'cfitsio' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const cfitsioPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +heasarc.gsfc.nasa.gov/cfitsio -- $SHELL -i' as const,
+  installCommand: 'launchpad install +heasarc.gsfc.nasa.gov/cfitsio -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -53,8 +48,8 @@ export const cfitsioPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'darwinzlib.net',
     'zlib.net',
+    'gnu.org/diffutils',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -70,14 +65,7 @@ export const cfitsioPackage = {
     '4.3.0',
     '4.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'cfitsio',
-  ] as const,
-  fullPath: 'heasarc.gsfc.nasa.gov/cfitsio' as const,
+  aliases: [] as const,
 }
 
-export type CfitsioPackage = typeof cfitsioPackage
+export type HeasarcgsfcnasagovcfitsioPackage = typeof heasarcgsfcnasagovcfitsioPackage

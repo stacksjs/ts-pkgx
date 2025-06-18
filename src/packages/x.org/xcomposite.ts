@@ -5,31 +5,26 @@
  * @version `0.4.6` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xcomposite -- $SHELL -i`
- * @aliases `xcomposite`
- * @dependencies `x.org/x11`, `x.org/xfixes`, `x.org/protocol`
+ * @install `launchpad install +x.org/xcomposite -- $SHELL -i`
+ * @dependencies `x.org/x11`, `x.org/xfixes`, `x.org/protocol`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xcomposite
- * // Or access via domain
- * const samePkg = pantry.xorgxcomposite
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xcomposite"
+ * const pkg = pantry.xorgxcomposite
+ * console.log(pkg.name)        // "xcomposite"
  * console.log(pkg.versions[0]) // "0.4.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xcomposite.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xcompositePackage = {
+export const xorgxcompositePackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xcomposite' as const,
+  name: 'xcomposite' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xcompositePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xcomposite -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xcomposite -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,6 +51,8 @@ export const xcompositePackage = {
     'x.org/x11',
     'x.org/xfixes',
     'x.org/protocol',
+    'freedesktop.org/pkg-config',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +61,7 @@ export const xcompositePackage = {
   versions: [
     '0.4.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xcomposite',
-  ] as const,
-  fullPath: 'x.org/xcomposite' as const,
+  aliases: [] as const,
 }
 
-export type XcompositePackage = typeof xcompositePackage
+export type XorgxcompositePackage = typeof xorgxcompositePackage

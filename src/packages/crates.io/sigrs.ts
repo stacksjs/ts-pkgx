@@ -6,20 +6,20 @@
  * @version `0.1.4` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sig`
- * @name `sig`
- * @aliases `sigrs`
+ * @install `launchpad install sig`
+ * @aliases `sig`
+ * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sig
  * // Or access via domain
  * const samePkg = pantry.cratesiosigrs
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sig"
+ * console.log(pkg.name)        // "sigrs"
  * console.log(pkg.description) // "Interactive grep (for streaming)"
  * console.log(pkg.programs)    // ["sig"]
  * console.log(pkg.versions[0]) // "0.1.4" (latest)
@@ -32,7 +32,7 @@ export const sigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sig' as const,
+  name: 'sigrs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const sigPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sig' as const,
+  installCommand: 'launchpad install sig' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const sigPackage = {
     'sig',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -74,9 +81,8 @@ export const sigPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'sigrs',
+    'sig',
   ] as const,
-  fullPath: 'crates.io/sigrs' as const,
 }
 
 export type SigPackage = typeof sigPackage

@@ -1,24 +1,19 @@
 /**
- * **tox-dev/filelock** - A platform-independent file lock for Python.
+ * **filelock** - A platform-independent file lock for Python.
  *
  * @domain `github.com/tox-dev/filelock`
  * @version `3.18.0` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/tox-dev/filelock -- $SHELL -i`
- * @aliases `tox-dev/filelock`
  * @dependencies `python.org>=3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.toxdevfilelock
- * // Or access via domain
- * const samePkg = pantry.githubcomtoxdevfilelock
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/tox-dev/filelock"
+ * const pkg = pantry.githubcomtoxdevfilelock
+ * console.log(pkg.name)        // "filelock"
  * console.log(pkg.description) // "A platform-independent file lock for Python."
  * console.log(pkg.versions[0]) // "3.18.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/tox-dev/filelock.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const toxdevfilelockPackage = {
+export const githubcomtoxdevfilelockPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/tox-dev/filelock' as const,
+  name: 'filelock' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +36,7 @@ export const toxdevfilelockPackage = {
   description: 'A platform-independent file lock for Python.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tox-dev/filelock/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/tox-dev/filelock' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
@@ -76,14 +71,7 @@ export const toxdevfilelockPackage = {
     '3.13.2',
     '3.13.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'tox-dev/filelock',
-  ] as const,
-  fullPath: 'github.com/tox-dev/filelock' as const,
+  aliases: [] as const,
 }
 
-export type ToxdevfilelockPackage = typeof toxdevfilelockPackage
+export type GithubcomtoxdevfilelockPackage = typeof githubcomtoxdevfilelockPackage

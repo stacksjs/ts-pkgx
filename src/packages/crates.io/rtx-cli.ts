@@ -5,20 +5,15 @@
  * @version `2025.6.5` (380 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +crates.io/rtx-cli -- $SHELL -i`
- * @aliases `rtx-cli`
- * @dependencies `openssl.org^1.1`, `libgit2.org^1`
+ * @install `launchpad install +crates.io/rtx-cli -- $SHELL -i`
+ * @dependencies `openssl.org^1.1 # newer RTX after 1.35.2 versions require openssl`, `libgit2.org^1 # newer mise after 2024.5.12 versions require libgit2`, `rust-lang.org^1.78 # stdsimd changes`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.rtxcli
- * // Or access via domain
- * const samePkg = pantry.cratesiortxcli
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "crates.io/rtx-cli"
+ * const pkg = pantry.cratesiortxcli
+ * console.log(pkg.name)        // "rtx-cli"
  * console.log(pkg.description) // "dev tools, env vars, task runner"
  * console.log(pkg.versions[0]) // "2025.6.5" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/rtx-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rtxcliPackage = {
+export const cratesiortxcliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'crates.io/rtx-cli' as const,
+  name: 'rtx-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const rtxcliPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +crates.io/rtx-cli -- $SHELL -i' as const,
+  installCommand: 'launchpad install +crates.io/rtx-cli -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,8 +49,11 @@ export const rtxcliPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'openssl.org^1.1',
-    'libgit2.org^1',
+    'openssl.org^1.1 # newer RTX after 1.35.2 versions require openssl',
+    'libgit2.org^1 # newer mise after 2024.5.12 versions require libgit2',
+    'rust-lang.org^1.78 # stdsimd changes',
+    'rust-lang.org/cargo',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -443,14 +441,7 @@ export const rtxcliPackage = {
     '1.28.6',
     '1.28.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'rtx-cli',
-  ] as const,
-  fullPath: 'crates.io/rtx-cli' as const,
+  aliases: [] as const,
 }
 
-export type RtxcliPackage = typeof rtxcliPackage
+export type CratesiortxcliPackage = typeof cratesiortxcliPackage

@@ -6,9 +6,9 @@
  * @version `0.27.0` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) gitui`
+ * @install `launchpad install gitui`
  * @name `gitui`
- * @dependencies `perl.org`, `openssl.org^1.1`, `zlib.net^1`, ... (+1 more)
+ * @dependencies `perl.org`, `openssl.org^1.1`, `zlib.net^1`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gituiPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) gitui' as const,
+  installCommand: 'launchpad install gitui' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,7 +65,10 @@ export const gituiPackage = {
     'perl.org',
     'openssl.org^1.1',
     'zlib.net^1',
-    'libgit2.org~1.7',
+    'libgit2.org~1.7 # links to libgit2.so.1.7',
+    'rust-lang.org^1.78 # stdsimd changes',
+    'rust-lang.org/cargo',
+    'cmake.org^3 # as over 0.27.0',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -92,7 +95,6 @@ export const gituiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/gitui' as const,
 }
 
 export type GituiPackage = typeof gituiPackage

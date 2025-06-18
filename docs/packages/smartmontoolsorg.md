@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +smartmontools.org -- $SHELL -i
+launchpad install +smartmontools.org -- $SHELL -i
 ```
 
 ## Programs

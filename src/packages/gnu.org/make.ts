@@ -6,8 +6,9 @@
  * @version `4.3.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) make`
+ * @install `launchpad install make`
  * @name `make`
+ * @dependencies `gnu.org/m4@1`
  *
  * @example
  * ```typescript
@@ -46,7 +47,7 @@ export const makePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) make' as const,
+  installCommand: 'launchpad install make' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -55,7 +56,13 @@ export const makePackage = {
     'make',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/m4@1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -68,7 +75,6 @@ export const makePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/make' as const,
 }
 
 export type MakePackage = typeof makePackage

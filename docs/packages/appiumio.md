@@ -1,11 +1,11 @@
-# appium
+# appium.io
 
 > Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol
 
 ## Package Information
 
 - **Domain**: `appium.io`
-- **Name**: `appium`
+- **Name**: `appium.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/appium.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) appium
+launchpad install appium
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `appium`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `appium`
 
@@ -54,6 +60,7 @@ This package depends on:
 - `npmjs.com`
 - `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`
 - `openjdk.org`
+- `python.org^3 # node-gyp needs python to build`
 
 ## Usage Examples
 

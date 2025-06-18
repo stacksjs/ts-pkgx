@@ -6,19 +6,14 @@
  * @version `5.3.2` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/gawk -- $SHELL -i`
- * @aliases `gawk`
+ * @install `launchpad install +gnu.org/gawk -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gawk
- * // Or access via domain
- * const samePkg = pantry.gnuorggawk
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/gawk"
+ * const pkg = pantry.gnuorggawk
+ * console.log(pkg.name)        // "gawk"
  * console.log(pkg.programs)    // ["awk", "gawk", ...]
  * console.log(pkg.versions[0]) // "5.3.2" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/gawk.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gawkPackage = {
+export const gnuorggawkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/gawk' as const,
+  name: 'gawk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const gawkPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gawk -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/gawk -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,14 +65,7 @@ export const gawkPackage = {
     '5.2.2',
     '5.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gawk',
-  ] as const,
-  fullPath: 'gnu.org/gawk' as const,
+  aliases: [] as const,
 }
 
-export type GawkPackage = typeof gawkPackage
+export type GnuorggawkPackage = typeof gnuorggawkPackage

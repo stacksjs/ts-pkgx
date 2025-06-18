@@ -5,9 +5,9 @@
  * @version `1.5.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +freedesktop.org/vdpau -- $SHELL -i`
+ * @install `launchpad install +freedesktop.org/vdpau -- $SHELL -i`
  * @name `vdpau`
- * @dependencies `x.org/x11`, `x.org/exts`, `x.org/protocol`
+ * @dependencies `x.org/x11`, `x.org/exts`, `x.org/protocol`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -45,7 +45,7 @@ export const vdpauPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/vdpau -- $SHELL -i' as const,
+  installCommand: 'launchpad install +freedesktop.org/vdpau -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,6 +56,10 @@ export const vdpauPackage = {
     'x.org/x11',
     'x.org/exts',
     'x.org/protocol',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -69,7 +73,6 @@ export const vdpauPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'freedesktop.org/vdpau' as const,
 }
 
 export type VdpauPackage = typeof vdpauPackage

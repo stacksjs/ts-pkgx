@@ -1,10 +1,10 @@
 # libssh.org
 
-> A package from libs.sh/org
+> A package from libssh.org
 
 ## Package Information
 
-- **Domain**: `libs.sh/org`
+- **Domain**: `libssh.org`
 - **Name**: `libssh.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libssh.org/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i
+launchpad install +libssh.org -- $SHELL -i
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libs.sh/org@0.11.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libssh.org@0.11.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -47,6 +47,7 @@ This package depends on:
 
 - `openssl.org^1.1`
 - `zlib.net^1`
+- `cmake.org^3`
 
 ## Usage Examples
 

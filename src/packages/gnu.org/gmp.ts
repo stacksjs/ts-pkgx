@@ -5,30 +5,26 @@
  * @version `6.3.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/gmp -- $SHELL -i`
- * @aliases `gmp`
+ * @install `launchpad install +gnu.org/gmp -- $SHELL -i`
+ * @dependencies `gnu.org/m4@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gmp
- * // Or access via domain
- * const samePkg = pantry.gnuorggmp
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/gmp"
+ * const pkg = pantry.gnuorggmp
+ * console.log(pkg.name)        // "gmp"
  * console.log(pkg.versions[0]) // "6.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/gmp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gmpPackage = {
+export const gnuorggmpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/gmp' as const,
+  name: 'gmp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,10 +40,16 @@ export const gmpPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gmp -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/gmp -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/m4@1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -56,14 +58,7 @@ export const gmpPackage = {
     '6.3.0',
     '6.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gmp',
-  ] as const,
-  fullPath: 'gnu.org/gmp' as const,
+  aliases: [] as const,
 }
 
-export type GmpPackage = typeof gmpPackage
+export type GnuorggmpPackage = typeof gnuorggmpPackage

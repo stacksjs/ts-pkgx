@@ -5,20 +5,15 @@
  * @version `2025.6.9.0` (93 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +facebook.com/edencommon -- $SHELL -i`
- * @aliases `edencommon`
- * @dependencies `facebook.com/folly`, `gflags.github.io`, `google.com/glog`, ... (+7 more)
+ * @install `launchpad install +facebook.com/edencommon -- $SHELL -i`
+ * @dependencies `facebook.com/folly`, `gflags.github.io`, `google.com/glog`, ... (+10 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.edencommon
- * // Or access via domain
- * const samePkg = pantry.facebookcomedencommon
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "facebook.com/edencommon"
+ * const pkg = pantry.facebookcomedencommon
+ * console.log(pkg.name)        // "edencommon"
  * console.log(pkg.description) // "Shared library for Watchman and Eden projects."
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/facebook-com/edencommon.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const edencommonPackage = {
+export const facebookcomedencommonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'facebook.com/edencommon' as const,
+  name: 'edencommon' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const edencommonPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +facebook.com/edencommon -- $SHELL -i' as const,
+  installCommand: 'launchpad install +facebook.com/edencommon -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,8 +57,11 @@ export const edencommonPackage = {
     'openssl.org^1.1',
     'sourceware.org/bzip2^1',
     'boost.org~1.88',
-    'linuxgnu.org/gcc/libstdcxx@13',
     'gnu.org/gcc/libstdcxx@13',
+    'cmake.org',
+    'google.com/googletest',
+    'gnu.org/gcc@13',
+    'gnu.org/gcc@13',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -164,14 +162,7 @@ export const edencommonPackage = {
     '2023.10.2.0',
     '2023.10.16.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'edencommon',
-  ] as const,
-  fullPath: 'facebook.com/edencommon' as const,
+  aliases: [] as const,
 }
 
-export type EdencommonPackage = typeof edencommonPackage
+export type FacebookcomedencommonPackage = typeof facebookcomedencommonPackage

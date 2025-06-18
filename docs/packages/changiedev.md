@@ -1,11 +1,11 @@
-# changie
+# changie.dev
 
 > Automated changelog tool for preparing releases with lots of customization options
 
 ## Package Information
 
 - **Domain**: `changie.dev`
-- **Name**: `changie`
+- **Name**: `changie.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/changie.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) changie
+launchpad install changie
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `changie`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `changie`
 
@@ -40,6 +46,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +changie.dev@1.22.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev>=1.21`
 
 ## Usage Examples
 

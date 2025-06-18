@@ -1,9 +1,11 @@
 /**
- * **pugixml.org** - Package from pantry: pugixml.org
+ * **pugixml.org** - Light-weight, simple and fast XML parser for C++ with XPath support
  *
  * @domain `pugixml.org`
+ * @version `1.15.0` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install pugixml.org`
+ * @install `launchpad install +pugixml.org -- $SHELL -i`
  * @dependencies `cmake.org`, `freedesktop.org/pkg-config`
  *
  * @example
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.pugixmlorg
  * console.log(pkg.name)        // "pugixml.org"
- * console.log(pkg.description) // "Package from pantry: pugixml.org"
+ * console.log(pkg.description) // "Light-weight, simple and fast XML parser for C+..."
+ * console.log(pkg.versions[0]) // "1.15.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pugixml-org.md
@@ -30,12 +33,15 @@ export const pugixmlorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: pugixml.org' as const,
+  description: 'Light-weight, simple and fast XML parser for C++ with XPath support' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pugixml.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install pugixml.org' as const,
+  installCommand: 'launchpad install +pugixml.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -46,10 +52,16 @@ export const pugixmlorgPackage = {
     'cmake.org',
     'freedesktop.org/pkg-config',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pugixml.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.15.0',
+    '1.14.0',
+    '1.13.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type PugixmlorgPackage = typeof pugixmlorgPackage

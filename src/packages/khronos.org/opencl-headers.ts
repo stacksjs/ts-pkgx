@@ -6,18 +6,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +khronos.org/opencl-headers -- $SHELL -i`
- * @aliases `opencl-headers`
+ * @dependencies `gnu.org/make`, `cmake.org`, `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.openclheaders
- * // Or access via domain
- * const samePkg = pantry.khronosorgopenclheaders
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "khronos.org/opencl-headers"
+ * const pkg = pantry.khronosorgopenclheaders
+ * console.log(pkg.name)        // "opencl-headers"
  * console.log(pkg.description) // "Khronos OpenCL-Headers"
  * console.log(pkg.versions[0]) // "2024.10.24" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/khronos-org/opencl-headers.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openclheadersPackage = {
+export const khronosorgopenclheadersPackage = {
   /**
    * The display name of this package.
    */
-  name: 'khronos.org/opencl-headers' as const,
+  name: 'opencl-headers' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +44,15 @@ export const openclheadersPackage = {
   installCommand: 'launchpad install +khronos.org/opencl-headers -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/make',
+    'cmake.org',
+    'python.org~3.11',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -59,14 +63,7 @@ export const openclheadersPackage = {
     '2023.12.14',
     '2023.4.17',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'opencl-headers',
-  ] as const,
-  fullPath: 'khronos.org/opencl-headers' as const,
+  aliases: [] as const,
 }
 
-export type OpenclheadersPackage = typeof openclheadersPackage
+export type KhronosorgopenclheadersPackage = typeof khronosorgopenclheadersPackage

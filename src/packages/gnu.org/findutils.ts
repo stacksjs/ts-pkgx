@@ -6,19 +6,14 @@
  * @version `4.10.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/findutils -- $SHELL -i`
- * @aliases `findutils`
+ * @install `launchpad install +gnu.org/findutils -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.findutils
- * // Or access via domain
- * const samePkg = pantry.gnuorgfindutils
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/findutils"
+ * const pkg = pantry.gnuorgfindutils
+ * console.log(pkg.name)        // "findutils"
  * console.log(pkg.programs)    // ["find", "locate", ...]
  * console.log(pkg.versions[0]) // "4.10.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/findutils.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const findutilsPackage = {
+export const gnuorgfindutilsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/findutils' as const,
+  name: 'findutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const findutilsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/findutils -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/findutils -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,14 +62,7 @@ export const findutilsPackage = {
     '4.10.0',
     '4.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'findutils',
-  ] as const,
-  fullPath: 'gnu.org/findutils' as const,
+  aliases: [] as const,
 }
 
-export type FindutilsPackage = typeof findutilsPackage
+export type GnuorgfindutilsPackage = typeof gnuorgfindutilsPackage

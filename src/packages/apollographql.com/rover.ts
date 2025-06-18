@@ -8,7 +8,7 @@
  *
  * @install `launchpad install rover`
  * @name `rover`
- * @dependencies `openssl.org`, `zlib.net`, `libgit2.org`
+ * @dependencies `openssl.org^1.1`, `zlib.net^1`, `libgit2.org~1.7 # links to libgit2.so.1.7`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -62,9 +62,12 @@ export const roverPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'openssl.org',
-    'zlib.net',
-    'libgit2.org',
+    'openssl.org^1.1',
+    'zlib.net^1',
+    'libgit2.org~1.7 # links to libgit2.so.1.7',
+    'rust-lang.org>=1.65',
+    'rust-lang.org/cargo',
+    'perl.org^5 # openssl mod',
   ] as const,
   /**
    * Available versions from newest to oldest.

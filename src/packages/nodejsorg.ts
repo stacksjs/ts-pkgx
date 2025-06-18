@@ -8,7 +8,7 @@
  *
  * @install `launchpad install node`
  * @aliases `node`
- * @dependencies `unicode.org^71`, `openssl.org^1.1`, `zlib.net^1`, ... (+3 more)
+ * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+3 more)
  * @companions `npmjs.com`
  *
  * @example
@@ -70,8 +70,8 @@ export const nodePackage = {
    */
   dependencies: [
     'unicode.org^71',
-    'openssl.org^1.1',
-    'zlib.net^1',
+    'openssl.org@1.1',
+    'zlib.net@1',
     'gnu.org/gcc/libstdcxx',
     'python.org~3.9',
     'gnu.org/gcc',

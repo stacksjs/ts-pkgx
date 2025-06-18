@@ -6,9 +6,9 @@
  * @version `0.20.5` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) spotify_player`
+ * @install `launchpad install spotify_player`
  * @name `spotify_player`
- * @dependencies `openssl.org^1.1`, `github.com/libsixel/libsixel^1`, `linuxalsa-project.org/alsa-lib^1freedesktop.org/dbus^1`, ... (+2 more)
+ * @dependencies `openssl.org^1.1`, `github.com/libsixel/libsixel^1`, `alsa-project.org/alsa-lib^1`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const spotifyplayerPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) spotify_player' as const,
+  installCommand: 'launchpad install spotify_player' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,9 +64,10 @@ export const spotifyplayerPackage = {
   dependencies: [
     'openssl.org^1.1',
     'github.com/libsixel/libsixel^1',
-    'linuxalsa-project.org/alsa-lib^1freedesktop.org/dbus^1',
     'alsa-project.org/alsa-lib^1',
     'freedesktop.org/dbus^1',
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -93,7 +94,6 @@ export const spotifyplayerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/spotify_player' as const,
 }
 
 export type SpotifyplayerPackage = typeof spotifyplayerPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws-sso`
- * @name `aws-sso`
- * @aliases `synfinatic/aws-sso-cli`
+ * @aliases `aws-sso`
+ * @dependencies `go.dev^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.awssso
  * // Or access via domain
  * const samePkg = pantry.githubcomsynfinaticawsssocli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aws-sso"
+ * console.log(pkg.name)        // "aws-sso-cli"
  * console.log(pkg.description) // "A powerful tool for using AWS Identity Center f..."
  * console.log(pkg.programs)    // ["aws-sso"]
  * console.log(pkg.versions[0]) // "2.0.3" (latest)
@@ -32,7 +32,7 @@ export const awsssoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'aws-sso' as const,
+  name: 'aws-sso-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -57,7 +57,13 @@ export const awsssoPackage = {
     'aws-sso',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -84,9 +90,8 @@ export const awsssoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'synfinatic/aws-sso-cli',
+    'aws-sso',
   ] as const,
-  fullPath: 'github.com/synfinatic/aws-sso-cli' as const,
 }
 
 export type AwsssoPackage = typeof awsssoPackage

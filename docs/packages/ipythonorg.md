@@ -1,11 +1,11 @@
-# ipython
+# ipython.org
 
 > Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.
 
 ## Package Information
 
 - **Domain**: `ipython.org`
-- **Name**: `ipython`
+- **Name**: `ipython.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ipython.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i
+launchpad install +ipython.org -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `ipython`
 - `ipython3`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ipython`
 
 ## Available Versions
 
@@ -54,6 +60,7 @@ sh <(curl https://pkgx.sh) +ipython.org@9.3.0 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
+- `python.org>=3.7<3.12`
 
 ## Usage Examples
 

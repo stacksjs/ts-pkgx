@@ -3,27 +3,26 @@
  *
  * @domain `github.com/ggerganov/llama.cpp`
  * @programs `llama-cli`, `llama.cpp`, `convert.py`
- * @version `5689.0.0` (2710 versions available)
+ * @version `5699.0.0` (2716 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/ggerganov/llama.cpp -- $SHELL -i`
- * @name `LLaMA.cpp`
- * @aliases `llama.cpp`, `github.com-ggerganov`
- * @dependencies `pkgx.sh^1`, `curl.se@8`, `linuxgnu.org/gcc/libstdcxx`, ... (+1 more)
+ * @install `launchpad install +github.com/ggerganov/llama.cpp -- $SHELL -i`
+ * @aliases `LLaMA.cpp`
+ * @dependencies `pkgx.sh^1`, `curl.se^8 # libcurl, since b5064`, `gnu.org/gcc/libstdcxx`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.LLaMAcpp
  * // Or access via domain
  * const samePkg = pantry.githubcomggerganovllamacpp
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "LLaMA.cpp"
+ * console.log(pkg.name)        // "llama.cpp"
  * console.log(pkg.description) // "LLM inference in C/C++"
  * console.log(pkg.programs)    // ["llama-cli", "llama.cpp", ...]
- * console.log(pkg.versions[0]) // "5689.0.0" (latest)
+ * console.log(pkg.versions[0]) // "5699.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/ggerganov/llama-cpp.md
@@ -33,7 +32,7 @@ export const lLaMAcppPackage = {
   /**
    * The display name of this package.
    */
-  name: 'LLaMA.cpp' as const,
+  name: 'llama.cpp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const lLaMAcppPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/ggerganov/llama.cpp -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/ggerganov/llama.cpp -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,15 +65,26 @@ export const lLaMAcppPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'curl.se@8',
-    'linuxgnu.org/gcc/libstdcxx',
+    'curl.se^8 # libcurl, since b5064',
     'gnu.org/gcc/libstdcxx',
+    'gnu.org/coreutils',
+    'git-scm.org',
+    'python.org~3.11',
+    'cmake.org@3',
+    'gnu.org/gcc',
+    'kernel.org/linux-headers',
   ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5699.0.0',
+    '5698.0.0',
+    '5697.0.0',
+    '5696.0.0',
+    '5695.0.0',
+    '5693.0.0',
     '5689.0.0',
     '5688.0.0',
     '5687.0.0',
@@ -2791,10 +2801,8 @@ export const lLaMAcppPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'llama.cpp',
-    'github.com-ggerganov',
+    'LLaMA.cpp',
   ] as const,
-  fullPath: 'github.com-ggerganov' as const,
 }
 
 export type LLaMAcppPackage = typeof lLaMAcppPackage

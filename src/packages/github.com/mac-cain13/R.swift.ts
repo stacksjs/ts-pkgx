@@ -6,20 +6,19 @@
  * @version `7.8.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rswift`
- * @name `rswift`
- * @aliases `mac-cain13/R.swift`
+ * @install `launchpad install rswift`
+ * @aliases `rswift`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.rswift
  * // Or access via domain
  * const samePkg = pantry.githubcommaccain13rswift
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rswift"
+ * console.log(pkg.name)        // "R.swift"
  * console.log(pkg.description) // "Strong typed, autocompleted resources like imag..."
  * console.log(pkg.programs)    // ["rswift"]
  * console.log(pkg.versions[0]) // "7.8.0" (latest)
@@ -32,7 +31,7 @@ export const rswiftPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rswift' as const,
+  name: 'R.swift' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +47,7 @@ export const rswiftPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rswift' as const,
+  installCommand: 'launchpad install rswift' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,9 +75,8 @@ export const rswiftPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'mac-cain13/R.swift',
+    'rswift',
   ] as const,
-  fullPath: 'github.com/mac-cain13/R.swift' as const,
 }
 
 export type RswiftPackage = typeof rswiftPackage

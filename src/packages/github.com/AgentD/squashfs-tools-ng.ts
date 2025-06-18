@@ -6,10 +6,9 @@
  * @version `1.3.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/AgentD/squashfs-tools-ng -- $SHELL -i`
+ * @install `launchpad install +github.com/AgentD/squashfs-tools-ng -- $SHELL -i`
  * @name `squashfs-tools-ng`
- * @aliases `AgentD/squashfs-tools-ng`
- * @dependencies `zlib.net^1`, `tukaani.org/xz^5`, `lz4.org^1`, ... (+2 more)
+ * @dependencies `zlib.net^1`, `tukaani.org/xz^5`, `lz4.org^1`, ... (+7 more)
  *
  * @example
  * ```typescript
@@ -48,7 +47,7 @@ export const squashfstoolsngPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/AgentD/squashfs-tools-ng -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/AgentD/squashfs-tools-ng -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +70,11 @@ export const squashfstoolsngPackage = {
     'lz4.org^1',
     'facebook.com/zstd^1',
     'oberhumer.com/lzo^2',
+    'gnu.org/coreutils',
+    'gnu.org/libtool',
+    'gnu.org/gawk',
+    'gnu.org/gcc',
+    'cmake.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -86,10 +90,7 @@ export const squashfstoolsngPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'AgentD/squashfs-tools-ng',
-  ] as const,
-  fullPath: 'github.com/AgentD/squashfs-tools-ng' as const,
+  aliases: [] as const,
 }
 
 export type SquashfstoolsngPackage = typeof squashfstoolsngPackage

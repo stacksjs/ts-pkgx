@@ -5,31 +5,26 @@
  * @version `8.2.13` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/readline -- $SHELL -i`
- * @aliases `readline`
+ * @install `launchpad install +gnu.org/readline -- $SHELL -i`
  * @dependencies `invisible-island.net/ncurses^6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.readline
- * // Or access via domain
- * const samePkg = pantry.gnuorgreadline
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/readline"
+ * const pkg = pantry.gnuorgreadline
+ * console.log(pkg.name)        // "readline"
  * console.log(pkg.versions[0]) // "8.2.13" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/readline.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const readlinePackage = {
+export const gnuorgreadlinePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/readline' as const,
+  name: 'readline' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const readlinePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/readline -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/readline -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -64,14 +59,7 @@ export const readlinePackage = {
     '8.2.0',
     '8.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'readline',
-  ] as const,
-  fullPath: 'gnu.org/readline' as const,
+  aliases: [] as const,
 }
 
-export type ReadlinePackage = typeof readlinePackage
+export type GnuorgreadlinePackage = typeof gnuorgreadlinePackage

@@ -6,7 +6,7 @@
  * @version `1.4.19` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) m4`
+ * @install `launchpad install m4`
  * @name `m4`
  *
  * @example
@@ -47,7 +47,7 @@ export const m4Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) m4' as const,
+  installCommand: 'launchpad install m4' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,7 +69,6 @@ export const m4Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/m4' as const,
 }
 
 export type M4Package = typeof m4Package

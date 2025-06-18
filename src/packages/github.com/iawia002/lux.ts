@@ -6,10 +6,9 @@
  * @version `0.24.1` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) lux`
+ * @install `launchpad install lux`
  * @name `lux`
- * @aliases `iawia002/lux`
- * @dependencies `ffmpeg.org`
+ * @dependencies `ffmpeg.org`, `go.dev^1.21`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const luxPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) lux' as const,
+  installCommand: 'launchpad install lux' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const luxPackage = {
    */
   dependencies: [
     'ffmpeg.org',
+    'go.dev^1.21',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -82,10 +82,7 @@ export const luxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'iawia002/lux',
-  ] as const,
-  fullPath: 'github.com/iawia002/lux' as const,
+  aliases: [] as const,
 }
 
 export type LuxPackage = typeof luxPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install azcopy`
- * @name `azcopy`
- * @aliases `azure-storage-azcopy`
+ * @aliases `azcopy`
+ * @dependencies `go.dev>=1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.azcopy
  * // Or access via domain
  * const samePkg = pantry.microsoftcomazurestorageazcopy
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "azcopy"
+ * console.log(pkg.name)        // "azure-storage-azcopy"
  * console.log(pkg.description) // "The new Azure Storage data transfer utility - A..."
  * console.log(pkg.programs)    // ["azcopy"]
  * console.log(pkg.versions[0]) // "10.29.1" (latest)
@@ -32,7 +32,7 @@ export const azcopyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'azcopy' as const,
+  name: 'azure-storage-azcopy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const azcopyPackage = {
   description: 'The new Azure Storage data transfer utility - AzCopy v10' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/azure-storage-azcopy/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/Azure/azure-storage-azcopy' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
@@ -57,7 +57,13 @@ export const azcopyPackage = {
     'azcopy',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev>=1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -81,9 +87,8 @@ export const azcopyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'azure-storage-azcopy',
+    'azcopy',
   ] as const,
-  fullPath: 'microsoft.com/azure-storage-azcopy' as const,
 }
 
 export type AzcopyPackage = typeof azcopyPackage

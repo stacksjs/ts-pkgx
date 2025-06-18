@@ -1,11 +1,11 @@
-# yarn
+# yarnpkg.com
 
 > 📦🐈 Active development trunk for Yarn ⚒
 
 ## Package Information
 
 - **Domain**: `yarnpkg.com`
-- **Name**: `yarn`
+- **Name**: `yarnpkg.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i
+launchpad install +yarnpkg.com -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `yarn`
 - `yarnpkg`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `yarn`
 
 ## Available Versions
 
@@ -53,6 +59,8 @@ sh <(curl https://pkgx.sh) +yarnpkg.com@4.9.2 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org`
+- `classic.yarnpkg.com^1 # works and prevents bootstrapping issues`
+- `nodejs.org>=18.3<23`
 
 ## Usage Examples
 

@@ -8,6 +8,7 @@
  *
  * @install `launchpad install arkade`
  * @aliases `arkade`, `Arkade`
+ * @dependencies `go.dev^1.21`, `git-scm.org^2`
  *
  * @example
  * ```typescript
@@ -42,7 +43,7 @@ export const arkadePackage = {
   description: 'Open Source Marketplace For Developer Tools' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/arkade.dev/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/alexellis/arkade' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
@@ -56,7 +57,14 @@ export const arkadePackage = {
     'arkade',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.21',
+    'git-scm.org^2',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -6,8 +6,9 @@
  * @version `1.4.2` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) genact`
+ * @install `launchpad install genact`
  * @name `genact`
+ * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const genactPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) genact' as const,
+  installCommand: 'launchpad install genact' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,14 @@ export const genactPackage = {
     'genact',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -73,7 +81,6 @@ export const genactPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'svenstaro.github.io/genact' as const,
 }
 
 export type GenactPackage = typeof genactPackage

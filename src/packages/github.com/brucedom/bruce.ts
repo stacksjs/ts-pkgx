@@ -6,9 +6,9 @@
  * @version `1.4.8` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) bruce`
+ * @install `launchpad install bruce`
  * @name `bruce`
- * @aliases `brucedom/bruce`
+ * @dependencies `go.dev`
  * @companions `linux`
  *
  * @example
@@ -49,7 +49,7 @@ export const brucePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) bruce' as const,
+  installCommand: 'launchpad install bruce' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,7 +64,13 @@ export const brucePackage = {
   companions: [
     'linux',
   ] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -77,10 +83,7 @@ export const brucePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'brucedom/bruce',
-  ] as const,
-  fullPath: 'github.com/brucedom/bruce' as const,
+  aliases: [] as const,
 }
 
 export type BrucePackage = typeof brucePackage

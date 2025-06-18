@@ -6,9 +6,8 @@
  * @version `1.5.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) lolcat`
+ * @install `launchpad install lolcat`
  * @name `lolcat`
- * @aliases `jaseg/lolcat`
  *
  * @example
  * ```typescript
@@ -48,7 +47,7 @@ export const lolcatPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) lolcat' as const,
+  installCommand: 'launchpad install lolcat' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,10 +69,7 @@ export const lolcatPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jaseg/lolcat',
-  ] as const,
-  fullPath: 'github.com/jaseg/lolcat' as const,
+  aliases: [] as const,
 }
 
 export type LolcatPackage = typeof lolcatPackage

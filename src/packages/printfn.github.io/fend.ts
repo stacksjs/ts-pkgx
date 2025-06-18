@@ -6,9 +6,9 @@
  * @version `1.5.6` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) fend`
+ * @install `launchpad install fend`
  * @name `fend`
- * @dependencies `openssl.org^1.1`
+ * @dependencies `openssl.org^1.1`, `rust-lang.org^1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const fendPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) fend' as const,
+  installCommand: 'launchpad install fend' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,8 @@ export const fendPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
+    'rust-lang.org^1.65',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -93,7 +95,6 @@ export const fendPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'printfn.github.io/fend' as const,
 }
 
 export type FendPackage = typeof fendPackage

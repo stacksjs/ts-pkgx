@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +wavpack.com -- $SHELL -i
+launchpad install +wavpack.com -- $SHELL -i
 ```
 
 ## Programs
@@ -42,6 +42,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +wavpack.com@5.8.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/patch`
+- `gnu.org/diffutils`
 
 ## Usage Examples
 

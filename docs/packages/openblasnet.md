@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openblas.net -- $SHELL -i
+launchpad install +openblas.net -- $SHELL -i
 ```
 
 ## Programs
@@ -40,6 +40,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +openblas.net@0.3.29 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `gnu.org/gcc`
 
 ## Usage Examples
 

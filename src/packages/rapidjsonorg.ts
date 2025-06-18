@@ -1,10 +1,12 @@
 /**
- * **rapidjson.org** - Package from pantry: rapidjson.org
+ * **rapidjson.org** - A fast JSON parser/generator for C++ with both SAX/DOM style API
  *
  * @domain `rapidjson.org`
+ * @version `1.1.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install rapidjson.org`
- * @dependencies `cmake.org`, `doxygen.nl^1`
+ * @install `launchpad install +rapidjson.org -- $SHELL -i`
+ * @dependencies `cmake.org`, `doxygen.nl@1`
  *
  * @example
  * ```typescript
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.rapidjsonorg
  * console.log(pkg.name)        // "rapidjson.org"
- * console.log(pkg.description) // "Package from pantry: rapidjson.org"
+ * console.log(pkg.description) // "A fast JSON parser/generator for C++ with both ..."
+ * console.log(pkg.versions[0]) // "1.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rapidjson-org.md
@@ -30,12 +33,15 @@ export const rapidjsonorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: rapidjson.org' as const,
+  description: 'A fast JSON parser/generator for C++ with both SAX/DOM style API' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rapidjson.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install rapidjson.org' as const,
+  installCommand: 'launchpad install +rapidjson.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -44,12 +50,16 @@ export const rapidjsonorgPackage = {
    */
   dependencies: [
     'cmake.org',
-    'doxygen.nl^1',
+    'doxygen.nl@1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rapidjson.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.1.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type RapidjsonorgPackage = typeof rapidjsonorgPackage

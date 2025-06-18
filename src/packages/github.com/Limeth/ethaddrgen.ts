@@ -6,10 +6,9 @@
  * @version `1.0.7` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ethaddrgen`
+ * @install `launchpad install ethaddrgen`
  * @name `ethaddrgen`
- * @aliases `Limeth/ethaddrgen`
- * @dependencies `openssl.org^1.1`
+ * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const ethaddrgenPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ethaddrgen' as const,
+  installCommand: 'launchpad install ethaddrgen' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const ethaddrgenPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +77,7 @@ export const ethaddrgenPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'Limeth/ethaddrgen',
-  ] as const,
-  fullPath: 'github.com/Limeth/ethaddrgen' as const,
+  aliases: [] as const,
 }
 
 export type EthaddrgenPackage = typeof ethaddrgenPackage

@@ -5,31 +5,26 @@
  * @version `0.4.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +freedesktop.org/xcb-util-wm -- $SHELL -i`
- * @aliases `xcb-util-wm`
- * @dependencies `x.org/xcb`, `gnu.org/m4`
+ * @install `launchpad install +freedesktop.org/xcb-util-wm -- $SHELL -i`
+ * @dependencies `x.org/xcb`, `gnu.org/m4`, `freedesktop.org/pkg-config`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xcbutilwm
- * // Or access via domain
- * const samePkg = pantry.freedesktoporgxcbutilwm
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "freedesktop.org/xcb-util-wm"
+ * const pkg = pantry.freedesktoporgxcbutilwm
+ * console.log(pkg.name)        // "xcb-util-wm"
  * console.log(pkg.versions[0]) // "0.4.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/xcb-util-wm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xcbutilwmPackage = {
+export const freedesktoporgxcbutilwmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/xcb-util-wm' as const,
+  name: 'xcb-util-wm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xcbutilwmPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/xcb-util-wm -- $SHELL -i' as const,
+  installCommand: 'launchpad install +freedesktop.org/xcb-util-wm -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,8 @@ export const xcbutilwmPackage = {
   dependencies: [
     'x.org/xcb',
     'gnu.org/m4',
+    'freedesktop.org/pkg-config',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -63,14 +60,7 @@ export const xcbutilwmPackage = {
   versions: [
     '0.4.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xcb-util-wm',
-  ] as const,
-  fullPath: 'freedesktop.org/xcb-util-wm' as const,
+  aliases: [] as const,
 }
 
-export type XcbutilwmPackage = typeof xcbutilwmPackage
+export type FreedesktoporgxcbutilwmPackage = typeof freedesktoporgxcbutilwmPackage

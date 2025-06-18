@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +mupdf.com -- $SHELL -i
+launchpad install +mupdf.com -- $SHELL -i
 ```
 
 ## Programs
@@ -60,9 +60,7 @@ This package depends on:
 - `mujs.com^1`
 - `openjpeg.org^2`
 - `jbig2dec.com^0`
-- `darwinlibarchive.org^3`
 - `libarchive.org^3`
-- `linuxmesa3d.org^23freeglut.sourceforge.io^3freedesktop.org/mesa-glu^9x.org/protocol>=2022x.org/x11^1x.org/xcursor^1x.org/xinerama^1x.org/xrandr^1gnome.org/glib^2x.org/xtrans^1`
 - `mesa3d.org^23`
 - `freeglut.sourceforge.io^3`
 - `freedesktop.org/mesa-glu^9`
@@ -73,6 +71,7 @@ This package depends on:
 - `x.org/xrandr^1`
 - `gnome.org/glib^2`
 - `x.org/xtrans^1`
+- `git-scm.org`
 
 ## Usage Examples
 

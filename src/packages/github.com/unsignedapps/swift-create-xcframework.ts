@@ -8,7 +8,6 @@
  *
  * @install `launchpad install swift-create-xcframework`
  * @name `swift-create-xcframework`
- * @aliases `unsignedapps/swift-create-xcframework`
  *
  * @example
  * ```typescript
@@ -69,10 +68,7 @@ export const swiftcreatexcframeworkPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'unsignedapps/swift-create-xcframework',
-  ] as const,
-  fullPath: 'github.com/unsignedapps/swift-create-xcframework' as const,
+  aliases: [] as const,
 }
 
 export type SwiftcreatexcframeworkPackage = typeof swiftcreatexcframeworkPackage

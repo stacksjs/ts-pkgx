@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openjdk.org -- $SHELL -i
+launchpad install +openjdk.org -- $SHELL -i
 ```
 
 ## Programs
@@ -80,7 +80,6 @@ This package depends on:
 - `info-zip.org/unzip`
 - `zlib.net`
 - `libzip.org`
-- `linuxalsa-project.org/alsa-libfreedesktop.org/fontconfigfreetype.orgx.org/x11x.org/extsx.org/xrandrx.org/xrenderx.org/xtx.org/xtstinfo-zip.org/zipdarwinsys.com/file`
 - `alsa-project.org/alsa-lib`
 - `freedesktop.org/fontconfig`
 - `freetype.org`
@@ -92,6 +91,11 @@ This package depends on:
 - `x.org/xtst`
 - `info-zip.org/zip`
 - `darwinsys.com/file`
+- `llvm.org^16`
+- `gnu.org/make`
+- `gnu.org/autoconf`
+- `freedesktop.org/pkg-config`
+- `gnu.org/wget`
 
 ## Usage Examples
 

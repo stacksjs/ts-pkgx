@@ -1,5 +1,5 @@
 /**
- * **util-linux/util-linux** - pkgx package
+ * **util-linux** - pkgx package
  *
  * @domain `github.com/util-linux/util-linux`
  * @programs `cal`, `colcrt`, `colrm`, `column`, `flock`, ... (+16 more)
@@ -7,19 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/util-linux/util-linux -- $SHELL -i`
- * @aliases `util-linux/util-linux`
- * @dependencies `gnu.org/gettext^0`, `sqlite.org^3`
+ * @dependencies `gnu.org/gettext^0`, `sqlite.org^3`, `gnu.org/bison`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.utillinuxutillinux
- * // Or access via domain
- * const samePkg = pantry.githubcomutillinuxutillinux
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/util-linux/util-linux"
+ * const pkg = pantry.githubcomutillinuxutillinux
+ * console.log(pkg.name)        // "util-linux"
  * console.log(pkg.programs)    // ["cal", "colcrt", ...]
  * console.log(pkg.versions[0]) // "2.41.0" (latest)
  * ```
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/util-linux/util-linux.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const utillinuxutillinuxPackage = {
+export const githubcomutillinuxutillinuxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/util-linux/util-linux' as const,
+  name: 'util-linux' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -83,6 +78,11 @@ export const utillinuxutillinuxPackage = {
   dependencies: [
     'gnu.org/gettext^0',
     'sqlite.org^3',
+    'gnu.org/bison',
+    'gnu.org/patch',
+    'llvm.org',
+    'linux-pam.org',
+    'stedolan.github.io/jq',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -102,14 +102,7 @@ export const utillinuxutillinuxPackage = {
     '2.39.0',
     '2.38.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'util-linux/util-linux',
-  ] as const,
-  fullPath: 'github.com/util-linux/util-linux' as const,
+  aliases: [] as const,
 }
 
-export type UtillinuxutillinuxPackage = typeof utillinuxutillinuxPackage
+export type GithubcomutillinuxutillinuxPackage = typeof githubcomutillinuxutillinuxPackage

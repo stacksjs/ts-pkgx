@@ -1,11 +1,11 @@
-# plantuml
+# plantuml.com
 
 > Generate diagrams from textual description
 
 ## Package Information
 
 - **Domain**: `plantuml.com`
-- **Name**: `plantuml`
+- **Name**: `plantuml.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/plantuml.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) plantuml
+launchpad install plantuml
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `plantuml`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `plantuml`
 
@@ -49,6 +55,7 @@ This package depends on:
 
 - `graphviz.org`
 - `openjdk.org`
+- `gnu.org/wget`
 
 ## Usage Examples
 

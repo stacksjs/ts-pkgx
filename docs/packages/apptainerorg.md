@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +apptainer.org -- $SHELL -i
+launchpad install +apptainer.org -- $SHELL -i
 ```
 
 ## Programs
@@ -49,6 +49,8 @@ This package depends on:
 
 - `github.com/seccomp/libseccomp@2`
 - `curl.se/ca-certs`
+- `go.dev~1.21`
+- `gnu.org/gcc`
 
 ## Related Packages
 

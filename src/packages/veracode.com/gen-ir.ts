@@ -72,7 +72,6 @@ export const genirPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'veracode.com/gen-ir' as const,
 }
 
 export type GenirPackage = typeof genirPackage

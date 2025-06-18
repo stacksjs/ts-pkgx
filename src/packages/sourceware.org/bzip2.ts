@@ -6,19 +6,14 @@
  * @version `1.0.8` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +sourceware.org/bzip2 -- $SHELL -i`
- * @aliases `bzip2`
+ * @install `launchpad install +sourceware.org/bzip2 -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.bzip2
- * // Or access via domain
- * const samePkg = pantry.sourcewareorgbzip2
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sourceware.org/bzip2"
+ * const pkg = pantry.sourcewareorgbzip2
+ * console.log(pkg.name)        // "bzip2"
  * console.log(pkg.description) // "Clone of https://gitlab.com/federicomenaquinter..."
  * console.log(pkg.programs)    // ["bunzip2", "bzcat", ...]
  * console.log(pkg.versions[0]) // "1.0.8" (latest)
@@ -27,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/sourceware-org/bzip2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bzip2Package = {
+export const sourcewareorgbzip2Package = {
   /**
    * The display name of this package.
    */
-  name: 'sourceware.org/bzip2' as const,
+  name: 'bzip2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +42,7 @@ export const bzip2Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +sourceware.org/bzip2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +sourceware.org/bzip2 -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,14 +69,7 @@ export const bzip2Package = {
   versions: [
     '1.0.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'bzip2',
-  ] as const,
-  fullPath: 'sourceware.org/bzip2' as const,
+  aliases: [] as const,
 }
 
-export type Bzip2Package = typeof bzip2Package
+export type Sourcewareorgbzip2Package = typeof sourcewareorgbzip2Package

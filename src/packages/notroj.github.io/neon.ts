@@ -6,21 +6,20 @@
  * @version `0.34.2` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) neon-config`
- * @name `neon-config`
- * @aliases `neon`
- * @dependencies `openssl.org`
+ * @install `launchpad install neon-config`
+ * @aliases `neon-config`
+ * @dependencies `openssl.org`, `gnu.org/make`, `freedesktop.org/pkg-config`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.neonconfig
  * // Or access via domain
  * const samePkg = pantry.notrojgithubioneon
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "neon-config"
+ * console.log(pkg.name)        // "neon"
  * console.log(pkg.description) // "neon - an HTTP/1.1 and WebDAV client library wi..."
  * console.log(pkg.programs)    // ["neon-config"]
  * console.log(pkg.versions[0]) // "0.34.2" (latest)
@@ -33,7 +32,7 @@ export const neonconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'neon-config' as const,
+  name: 'neon' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const neonconfigPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) neon-config' as const,
+  installCommand: 'launchpad install neon-config' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,9 @@ export const neonconfigPackage = {
    */
   dependencies: [
     'openssl.org',
+    'gnu.org/make',
+    'freedesktop.org/pkg-config',
+    'pagure.io/xmlto',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -81,9 +83,8 @@ export const neonconfigPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'neon',
+    'neon-config',
   ] as const,
-  fullPath: 'notroj.github.io/neon' as const,
 }
 
 export type NeonconfigPackage = typeof neonconfigPackage

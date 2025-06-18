@@ -7,7 +7,7 @@
  *
  * @install `launchpad install +jugit.fz-juelich.de/mlz/libcerf -- $SHELL -i`
  * @name `libcerf`
- * @aliases `mlz/libcerf`
+ * @dependencies `cmake.org`, `perl.org^5 # pod2man/pod2html`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
@@ -48,7 +48,15 @@ export const libcerfPackage = {
   installCommand: 'launchpad install +jugit.fz-juelich.de/mlz/libcerf -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'perl.org^5 # pod2man/pod2html',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -61,10 +69,7 @@ export const libcerfPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mlz/libcerf',
-  ] as const,
-  fullPath: 'jugit.fz-juelich.de/mlz/libcerf' as const,
+  aliases: [] as const,
 }
 
 export type LibcerfPackage = typeof libcerfPackage

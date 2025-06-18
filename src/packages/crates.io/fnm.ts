@@ -6,9 +6,9 @@
  * @version `1.38.1` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) fnm`
+ * @install `launchpad install fnm`
  * @name `fnm`
- * @dependencies `darwinzlib.net^1`, `zlib.net^1`
+ * @dependencies `zlib.net^1`, `rust-lang.org>=1.60`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const fnmPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) fnm' as const,
+  installCommand: 'launchpad install fnm' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,8 +62,9 @@ export const fnmPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'darwinzlib.net^1',
     'zlib.net^1',
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -84,7 +85,6 @@ export const fnmPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/fnm' as const,
 }
 
 export type FnmPackage = typeof fnmPackage

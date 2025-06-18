@@ -1,11 +1,11 @@
-# grpc
+# grpc.io
 
 > The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
 
 ## Package Information
 
 - **Domain**: `grpc.io`
-- **Name**: `grpc`
+- **Name**: `grpc.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +grpc.io -- $SHELL -i
+launchpad install +grpc.io -- $SHELL -i
 ```
 
 ## Programs
@@ -28,6 +28,12 @@ This package provides the following executable programs:
 - `grpc_ruby_plugin`
 - `grpc_php_plugin`
 - `grpc_cli`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `grpc`
 
 ## Available Versions
 
@@ -64,9 +70,16 @@ This package depends on:
 - `openssl.org^1.1`
 - `github.com/google/re2`
 - `zlib.net`
-- `linuxgnu.org/gcc/libstdcxxprotobuf.dev@30.0.0`
 - `gnu.org/gcc/libstdcxx`
-- `protobuf.dev@30.0.0`
+- `protobuf.dev^30.0.0 # as of 1.72.0`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `gnu.org/libtool`
+- `gnu.org/patch`
+- `cmake.org^3`
+- `freedesktop.org/pkg-config^0`
+- `git-scm.org^2`
+- `freedesktop.org/pkg-config^0`
 
 ## Usage Examples
 

@@ -6,9 +6,9 @@
  * @version `0.13.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +sigstore.dev/gitsign -- $SHELL -i`
+ * @install `launchpad install +sigstore.dev/gitsign -- $SHELL -i`
  * @name `gitsign`
- * @dependencies `git-scm.org`
+ * @dependencies `git-scm.org`, `go.dev~1.23.4`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gitsignPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +sigstore.dev/gitsign -- $SHELL -i' as const,
+  installCommand: 'launchpad install +sigstore.dev/gitsign -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,7 @@ export const gitsignPackage = {
    */
   dependencies: [
     'git-scm.org',
+    'go.dev~1.23.4',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -86,7 +87,6 @@ export const gitsignPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'sigstore.dev/gitsign' as const,
 }
 
 export type GitsignPackage = typeof gitsignPackage

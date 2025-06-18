@@ -6,8 +6,9 @@
  * @version `10.4.0` (35 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) croc`
+ * @install `launchpad install croc`
  * @name `croc`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const crocPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) croc' as const,
+  installCommand: 'launchpad install croc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,13 @@ export const crocPackage = {
     'croc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -103,7 +110,6 @@ export const crocPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'schollz.com/croc' as const,
 }
 
 export type CrocPackage = typeof crocPackage

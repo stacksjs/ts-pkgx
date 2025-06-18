@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ty`
  * @name `ty`
- * @dependencies `pkgx.sh`
+ * @dependencies `pkgx.sh@1`, `rust-lang.org>=1.60`, `rust-lang.org/cargo`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -43,7 +43,7 @@ export const tyPackage = {
   description: 'An extremely fast Python type checker and language server, written in Rust.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/ty/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/astral-sh/ty' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
@@ -62,7 +62,12 @@ export const tyPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'pkgx.sh',
+    'pkgx.sh@1',
+    'rust-lang.org>=1.60',
+    'rust-lang.org/cargo',
+    'python.org~3.13',
+    'maturin.rs',
+    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

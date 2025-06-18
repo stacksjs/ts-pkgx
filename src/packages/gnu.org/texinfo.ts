@@ -6,20 +6,15 @@
  * @version `7.2.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/texinfo -- $SHELL -i`
- * @aliases `texinfo`
- * @dependencies `perl.org`
+ * @install `launchpad install +gnu.org/texinfo -- $SHELL -i`
+ * @dependencies `perl.org`, `gnu.org/gettext`, `invisible-island.net/ncurses`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.texinfo
- * // Or access via domain
- * const samePkg = pantry.gnuorgtexinfo
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/texinfo"
+ * const pkg = pantry.gnuorgtexinfo
+ * console.log(pkg.name)        // "texinfo"
  * console.log(pkg.description) // "Official documentation format of the GNU project"
  * console.log(pkg.programs)    // ["info", "install-info", ...]
  * console.log(pkg.versions[0]) // "7.2.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/texinfo.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const texinfoPackage = {
+export const gnuorgtexinfoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/texinfo' as const,
+  name: 'texinfo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const texinfoPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/texinfo -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/texinfo -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +66,8 @@ export const texinfoPackage = {
    */
   dependencies: [
     'perl.org',
+    'gnu.org/gettext',
+    'invisible-island.net/ncurses',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -83,14 +80,7 @@ export const texinfoPackage = {
     '7.0.3',
     '7.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'texinfo',
-  ] as const,
-  fullPath: 'gnu.org/texinfo' as const,
+  aliases: [] as const,
 }
 
-export type TexinfoPackage = typeof texinfoPackage
+export type GnuorgtexinfoPackage = typeof gnuorgtexinfoPackage

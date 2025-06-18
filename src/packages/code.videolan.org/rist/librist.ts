@@ -6,20 +6,20 @@
  * @version `0.2.11` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +code.videolan.org/rist/librist -- $SHELL -i`
- * @name `rist`
- * @aliases `rist/librist`
+ * @install `launchpad install +code.videolan.org/rist/librist -- $SHELL -i`
+ * @aliases `rist`
+ * @dependencies `mesonbuild.com>=0.47<1`, `ninja-build.org@1`, `sourceware.org/libffi^3 # since 0.2.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.rist
  * // Or access via domain
  * const samePkg = pantry.codevideolanorgristlibrist
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rist"
+ * console.log(pkg.name)        // "librist"
  * console.log(pkg.description) // "Reliable Internet Stream Transport (RIST)"
  * console.log(pkg.programs)    // ["rist2rist", "ristreceiver", ...]
  * console.log(pkg.versions[0]) // "0.2.11" (latest)
@@ -32,7 +32,7 @@ export const ristPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rist' as const,
+  name: 'librist' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const ristPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +code.videolan.org/rist/librist -- $SHELL -i' as const,
+  installCommand: 'launchpad install +code.videolan.org/rist/librist -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -60,7 +60,15 @@ export const ristPackage = {
     'ristsrppasswd',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'mesonbuild.com>=0.47<1',
+    'ninja-build.org@1',
+    'sourceware.org/libffi^3 # since 0.2.11',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,9 +83,8 @@ export const ristPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'rist/librist',
+    'rist',
   ] as const,
-  fullPath: 'code.videolan.org/rist/librist' as const,
 }
 
 export type RistPackage = typeof ristPackage

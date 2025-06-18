@@ -1,11 +1,11 @@
-# syncthing
+# syncthing.net
 
 > Open source continuous file synchronization application
 
 ## Package Information
 
 - **Domain**: `syncthing.net`
-- **Name**: `syncthing`
+- **Name**: `syncthing.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/syncthing.net/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) syncthing
+launchpad install syncthing
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `syncthing`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `syncthing`
 
@@ -42,6 +48,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +syncthing.net@1.29.7 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.21`
 
 ## Usage Examples
 

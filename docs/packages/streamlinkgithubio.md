@@ -1,11 +1,11 @@
-# streamlink
+# streamlink.github.io
 
 > Streamlink is a CLI utility which pipes video streams from various services into a video player
 
 ## Package Information
 
-- **Domain**: `streamlink.github.io`
-- **Name**: `streamlink`
+- **Domain**: `streamlinkgithub.io`
+- **Name**: `streamlink.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/streamlink.github.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) streamlink
+launchpad install streamlink
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `streamlink`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `streamlink`
 
@@ -40,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +streamlink.github.io@7.4.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +streamlinkgithub.io@7.4.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -48,10 +54,12 @@ sh <(curl https://pkgx.sh) +streamlink.github.io@7.4.0 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
+- `python.org~3.12`
+- `gnu.org/coreutils`
 
 ## Related Packages
 
-These packages work well with streamlink:
+These packages work well with streamlink.github.io:
 
 - [`ffmpeg.org`](ffmpegorg.md) - Play, record, convert, and stream audio and video
 

@@ -1,11 +1,11 @@
-# task
+# taskfile.dev
 
 > A task runner / simpler Make alternative written in Go
 
 ## Package Information
 
 - **Domain**: `taskfile.dev`
-- **Name**: `task`
+- **Name**: `taskfile.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/taskfile.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) task
+launchpad install task
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `task`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `task`
 
@@ -45,6 +51,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +taskfile.dev@3.44.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev~1.23`
 
 ## Usage Examples
 

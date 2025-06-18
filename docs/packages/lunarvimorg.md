@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +lunarvim.org -- $SHELL -i
+launchpad install +lunarvim.org -- $SHELL -i
 ```
 
 ## Programs
@@ -52,6 +52,8 @@ This package depends on:
 - `nodejs.org`
 - `rust-lang.org/cargo`
 - `neovim.io`
+- `cmake.org`
+- `gnu.org/bash`
 
 ## Usage Examples
 

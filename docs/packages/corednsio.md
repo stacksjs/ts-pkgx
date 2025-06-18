@@ -1,11 +1,11 @@
-# coredns
+# coredns.io
 
 > CoreDNS is a DNS server that chains plugins
 
 ## Package Information
 
 - **Domain**: `coredns.io`
-- **Name**: `coredns`
+- **Name**: `coredns.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/coredns.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) coredns
+launchpad install coredns
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `coredns`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `coredns`
 
@@ -40,6 +46,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +coredns.io@1.12.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.18`
 
 ## Usage Examples
 

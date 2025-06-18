@@ -7,20 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install adr`
- * @name `adr`
- * @aliases `npryce/adr-tools`
+ * @aliases `adr`
  * @dependencies `gnu.org/bash`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.adr
  * // Or access via domain
  * const samePkg = pantry.githubcomnpryceadrtools
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "adr"
+ * console.log(pkg.name)        // "adr-tools"
  * console.log(pkg.description) // "Command-line tools for working with Architectur..."
  * console.log(pkg.programs)    // ["adr"]
  * console.log(pkg.versions[0]) // "3.0.0" (latest)
@@ -33,7 +32,7 @@ export const adrPackage = {
   /**
    * The display name of this package.
    */
-  name: 'adr' as const,
+  name: 'adr-tools' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +76,8 @@ export const adrPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'npryce/adr-tools',
+    'adr',
   ] as const,
-  fullPath: 'github.com/npryce/adr-tools' as const,
 }
 
 export type AdrPackage = typeof adrPackage

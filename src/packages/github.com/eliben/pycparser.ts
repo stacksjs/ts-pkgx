@@ -1,24 +1,19 @@
 /**
- * **eliben/pycparser** - :snake: Complete C99 parser in pure Python
+ * **pycparser** - :snake: Complete C99 parser in pure Python
  *
  * @domain `github.com/eliben/pycparser`
  * @version `2.22.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/eliben/pycparser -- $SHELL -i`
- * @aliases `eliben/pycparser`
- * @dependencies `python.org~3.11`
+ * @install `launchpad install +github.com/eliben/pycparser -- $SHELL -i`
+ * @dependencies `python.org~3.11`, `llvm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.elibenpycparser
- * // Or access via domain
- * const samePkg = pantry.githubcomelibenpycparser
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/eliben/pycparser"
+ * const pkg = pantry.githubcomelibenpycparser
+ * console.log(pkg.name)        // "pycparser"
  * console.log(pkg.description) // ":snake: Complete C99 parser in pure Python"
  * console.log(pkg.versions[0]) // "2.22.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/eliben/pycparser.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const elibenpycparserPackage = {
+export const githubcomelibenpycparserPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/eliben/pycparser' as const,
+  name: 'pycparser' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const elibenpycparserPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/eliben/pycparser -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/eliben/pycparser -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,7 @@ export const elibenpycparserPackage = {
    */
   dependencies: [
     'python.org~3.11',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +60,7 @@ export const elibenpycparserPackage = {
     '2.22.0',
     '2.21.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'eliben/pycparser',
-  ] as const,
-  fullPath: 'github.com/eliben/pycparser' as const,
+  aliases: [] as const,
 }
 
-export type ElibenpycparserPackage = typeof elibenpycparserPackage
+export type GithubcomelibenpycparserPackage = typeof githubcomelibenpycparserPackage

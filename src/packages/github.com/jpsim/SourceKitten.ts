@@ -6,20 +6,19 @@
  * @version `0.37.2` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sourcekitten`
- * @name `sourcekitten`
- * @aliases `jpsim/SourceKitten`
+ * @install `launchpad install sourcekitten`
+ * @aliases `sourcekitten`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sourcekitten
  * // Or access via domain
  * const samePkg = pantry.githubcomjpsimsourcekitten
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sourcekitten"
+ * console.log(pkg.name)        // "SourceKitten"
  * console.log(pkg.description) // "An adorable little framework and command line t..."
  * console.log(pkg.programs)    // ["sourcekitten"]
  * console.log(pkg.versions[0]) // "0.37.2" (latest)
@@ -32,7 +31,7 @@ export const sourcekittenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sourcekitten' as const,
+  name: 'SourceKitten' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,12 +42,12 @@ export const sourcekittenPackage = {
   description: 'An adorable little framework and command line tool for interacting with SourceKit.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jpsim/SourceKitten/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/jpsim/SourceKitten' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sourcekitten' as const,
+  installCommand: 'launchpad install sourcekitten' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,9 +74,8 @@ export const sourcekittenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'jpsim/SourceKitten',
+    'sourcekitten',
   ] as const,
-  fullPath: 'github.com/jpsim/SourceKitten' as const,
 }
 
 export type SourcekittenPackage = typeof sourcekittenPackage

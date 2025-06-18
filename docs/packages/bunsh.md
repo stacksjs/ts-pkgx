@@ -1,11 +1,11 @@
-# bun
+# bun.sh
 
 > Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
 
 ## Package Information
 
 - **Domain**: `bun.sh`
-- **Name**: `bun`
+- **Name**: `bun.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bun.sh/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i
+launchpad install +bun.sh -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `bun`
 - `bunx`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `bun`
 
 ## Available Versions
 
@@ -63,6 +69,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +bun.sh@1.2.16 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
+- `info-zip.org/unzip`
 
 ## Usage Examples
 

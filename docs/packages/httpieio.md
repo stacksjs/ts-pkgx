@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +httpie.io -- $SHELL -i
+launchpad install +httpie.io -- $SHELL -i
 ```
 
 ## Programs

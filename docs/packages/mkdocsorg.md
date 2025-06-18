@@ -1,11 +1,11 @@
-# mkdocs
+# mkdocs.org
 
 > Project documentation with Markdown.
 
 ## Package Information
 
 - **Domain**: `mkdocs.org`
-- **Name**: `mkdocs`
+- **Name**: `mkdocs.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mkdocs.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) mkdocs
+launchpad install mkdocs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `mkdocs`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `mkdocs`
 

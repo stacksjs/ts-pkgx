@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `tc.sh/org`
+- **Domain**: `tcsh.org`
 - **Name**: `tcsh.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tcsh.org/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +tcsh.org -- $SHELL -i
+launchpad install +tcsh.org -- $SHELL -i
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tc.sh/org@6.24.15 -- $SHELL -i
+sh <(curl https://pkgx.sh) +tcsh.org@6.24.15 -- $SHELL -i
 ```
 
 ## Dependencies

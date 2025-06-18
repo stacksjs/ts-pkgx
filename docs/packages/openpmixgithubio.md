@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openpmix.github.io`
+- **Domain**: `openpmixgithub.io`
 - **Name**: `openpmix.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openpmix.github.io/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +openpmix.github.io -- $SHELL -i
+launchpad install +openpmix.github.io -- $SHELL -i
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +openpmix.github.io@6.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +openpmixgithub.io@6.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -56,6 +56,7 @@ This package depends on:
 - `open-mpi.org/hwloc^2.10`
 - `libevent.org^2.1`
 - `zlib.net^1.3`
+- `python.org^3.11`
 
 ## Usage Examples
 

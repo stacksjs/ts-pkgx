@@ -1,11 +1,11 @@
-# groonga
+# groonga.org
 
 > An embeddable fulltext search engine. Groonga is the successor project to Senna.
 
 ## Package Information
 
 - **Domain**: `groonga.org`
-- **Name**: `groonga`
+- **Name**: `groonga.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/groonga.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +groonga.org -- $SHELL -i
+launchpad install +groonga.org -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `groonga`
 - `groonga-suggest-create-dataset`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `groonga`
 
 ## Available Versions
 
@@ -50,18 +56,17 @@ sh <(curl https://pkgx.sh) +groonga.org@15.1.1 -- $SHELL -i
 
 This package depends on:
 
-- `darwintaku910.github.io/mecabtaku910.github.io/mecab-ipadic`
 - `taku910.github.io/mecab`
 - `taku910.github.io/mecab-ipadic`
-- `linux/x86-64taku910.github.io/mecabtaku910.github.io/mecab-ipadic`
 - `taku910.github.io/mecab`
 - `taku910.github.io/mecab-ipadic`
 - `msgpack.org`
 - `openssl.org`
 - `pcre.org/v2`
 - `github.com/besser82/libxcrypt`
-- `linuxgnome.org/glib`
 - `gnome.org/glib`
+- `freedesktop.org/pkg-config`
+- `curl.se`
 
 ## Usage Examples
 

@@ -6,9 +6,8 @@
  * @version `1.37.1` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) yamllint`
+ * @install `launchpad install yamllint`
  * @name `yamllint`
- * @aliases `adrienverge/yamllint`
  * @dependencies `python.org~3.11`, `pyyaml.org`
  *
  * @example
@@ -49,7 +48,7 @@ export const yamllintPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) yamllint' as const,
+  installCommand: 'launchpad install yamllint' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -86,10 +85,7 @@ export const yamllintPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'adrienverge/yamllint',
-  ] as const,
-  fullPath: 'github.com/adrienverge/yamllint' as const,
+  aliases: [] as const,
 }
 
 export type YamllintPackage = typeof yamllintPackage

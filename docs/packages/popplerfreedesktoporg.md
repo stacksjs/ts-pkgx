@@ -1,10 +1,10 @@
 # poppler.freedesktop.org
 
-> A package from poppler.freedesktop.org
+> A package from popplerfreedesktop.org
 
 ## Package Information
 
-- **Domain**: `poppler.freedesktop.org`
+- **Domain**: `popplerfreedesktop.org`
 - **Name**: `poppler.freedesktop.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/poppler.freedesktop.org/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +poppler.freedesktop.org -- $SHELL -i
+launchpad install +poppler.freedesktop.org -- $SHELL -i
 ```
 
 ## Programs
@@ -51,7 +51,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +poppler.freedesktop.org@25.6.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +popplerfreedesktop.org@25.6.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ This package depends on:
 - `freedesktop.org/fontconfig>=2.13`
 - `freetype.org>=2.10`
 - `gnome.org/glib>=2.64`
-- `gnome.org/libxml2~2.13`
+- `gnome.org/libxml2~2.13 # since 25.4.0, 2.14 changed the API version`
 - `libjpeg-turbo.org`
 - `libpng.org`
 - `openjpeg.org`
@@ -76,8 +76,10 @@ This package depends on:
 - `gnupg.org/libgpg-error@1`
 - `gnupg.org/libassuan@2`
 - `littlecms.com^2.9`
-- `linuxgnu.org/gcc/libstdcxx@14`
-- `gnu.org/gcc/libstdcxx@14`
+- `gnu.org/gcc/libstdcxx^14 # apparently, clang c++20 std isn`
+- `cmake.org>=3.16.0`
+- `gnome.org/gobject-introspection>=1.64.0`
+- `gnu.org/gcc@14`
 
 ## Usage Examples
 

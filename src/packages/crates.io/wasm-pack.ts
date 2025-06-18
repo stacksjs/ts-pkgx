@@ -6,9 +6,9 @@
  * @version `0.13.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) wasm-pack`
+ * @install `launchpad install wasm-pack`
  * @name `wasm-pack`
- * @dependencies `rust-lang.org`, `rust-lang.org/cargo`
+ * @dependencies `rust-lang.org`, `rust-lang.org/cargo`, `cmake.org@3`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const wasmpackPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) wasm-pack' as const,
+  installCommand: 'launchpad install wasm-pack' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,7 @@ export const wasmpackPackage = {
   dependencies: [
     'rust-lang.org',
     'rust-lang.org/cargo',
+    'cmake.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,7 +80,6 @@ export const wasmpackPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/wasm-pack' as const,
 }
 
 export type WasmpackPackage = typeof wasmpackPackage

@@ -6,8 +6,9 @@
  * @version `0.4.41` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gstreamer.freedesktop.org/orc -- $SHELL -i`
+ * @install `launchpad install +gstreamer.freedesktop.org/orc -- $SHELL -i`
  * @name `orc`
+ * @dependencies `mesonbuild.com`, `ninja-build.org`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const orcPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gstreamer.freedesktop.org/orc -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gstreamer.freedesktop.org/orc -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +58,15 @@ export const orcPackage = {
     'orc-bugreport',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -77,7 +86,6 @@ export const orcPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gstreamer.freedesktop.org/orc' as const,
 }
 
 export type OrcPackage = typeof orcPackage

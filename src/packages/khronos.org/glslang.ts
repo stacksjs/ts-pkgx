@@ -6,19 +6,15 @@
  * @version `15.3.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +khronos.org/glslang -- $SHELL -i`
- * @aliases `glslang`
+ * @install `launchpad install +khronos.org/glslang -- $SHELL -i`
+ * @dependencies `cmake.org`, `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.glslang
- * // Or access via domain
- * const samePkg = pantry.khronosorgglslang
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "khronos.org/glslang"
+ * const pkg = pantry.khronosorgglslang
+ * console.log(pkg.name)        // "glslang"
  * console.log(pkg.description) // "Khronos-reference front end for GLSL/ESSL, part..."
  * console.log(pkg.programs)    // ["glslang", "glslangValidator", ...]
  * console.log(pkg.versions[0]) // "15.3.0" (latest)
@@ -27,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/khronos-org/glslang.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const glslangPackage = {
+export const khronosorgglslangPackage = {
   /**
    * The display name of this package.
    */
-  name: 'khronos.org/glslang' as const,
+  name: 'glslang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +43,7 @@ export const glslangPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +khronos.org/glslang -- $SHELL -i' as const,
+  installCommand: 'launchpad install +khronos.org/glslang -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -58,7 +54,14 @@ export const glslangPackage = {
     'spirv-remap',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'python.org~3.11',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -77,14 +80,7 @@ export const glslangPackage = {
     '13.0.0',
     '12.3.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'glslang',
-  ] as const,
-  fullPath: 'khronos.org/glslang' as const,
+  aliases: [] as const,
 }
 
-export type GlslangPackage = typeof glslangPackage
+export type KhronosorgglslangPackage = typeof khronosorgglslangPackage

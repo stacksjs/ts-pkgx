@@ -1,18 +1,19 @@
 /**
- * **gnome.org/adwaita-icon-theme** - pkgx package
+ * **adwaita-icon-theme** - pkgx package
  *
  * @domain `gnome.org/adwaita-icon-theme`
  * @version `48.1.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/adwaita-icon-theme -- $SHELL -i`
+ * @install `launchpad install +gnome.org/adwaita-icon-theme -- $SHELL -i`
+ * @dependencies `gnu.org/gettext`, `gtk.org/gtk4`, `freedesktop.org/intltool`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorgadwaitaicontheme
- * console.log(pkg.name)        // "gnome.org/adwaita-icon-theme"
+ * console.log(pkg.name)        // "adwaita-icon-theme"
  * console.log(pkg.versions[0]) // "48.1.0" (latest)
  * ```
  *
@@ -23,7 +24,7 @@ export const gnomeorgadwaitaiconthemePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/adwaita-icon-theme' as const,
+  name: 'adwaita-icon-theme' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,10 +40,21 @@ export const gnomeorgadwaitaiconthemePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/adwaita-icon-theme -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/adwaita-icon-theme -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gettext',
+    'gtk.org/gtk4',
+    'freedesktop.org/intltool',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -56,7 +68,6 @@ export const gnomeorgadwaitaiconthemePackage = {
     '45.0.0',
   ] as const,
   aliases: [] as const,
-  fullPath: 'gnome.org-adwaita-icon-theme' as const,
 }
 
 export type GnomeorgadwaitaiconthemePackage = typeof gnomeorgadwaitaiconthemePackage

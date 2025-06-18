@@ -6,21 +6,20 @@
  * @version `1.14.5` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +apache.org/subversion -- $SHELL -i`
- * @name `svn`
- * @aliases `subversion`
- * @dependencies `gnu.org/gettext^0.21`, `lz4.org^1`, `openssl.org^1.1`, ... (+7 more)
+ * @install `launchpad install +apache.org/subversion -- $SHELL -i`
+ * @aliases `svn`
+ * @dependencies `gnu.org/gettext^0.21`, `lz4.org^1`, `openssl.org^1.1`, ... (+10 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.svn
  * // Or access via domain
  * const samePkg = pantry.apacheorgsubversion
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "svn"
+ * console.log(pkg.name)        // "subversion"
  * console.log(pkg.description) // "Version control system designed to be a better CVS"
  * console.log(pkg.programs)    // ["svn", "svnadmin", ...]
  * console.log(pkg.versions[0]) // "1.14.5" (latest)
@@ -33,7 +32,7 @@ export const svnPackage = {
   /**
    * The display name of this package.
    */
-  name: 'svn' as const,
+  name: 'subversion' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const svnPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +apache.org/subversion -- $SHELL -i' as const,
+  installCommand: 'launchpad install +apache.org/subversion -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,6 +82,9 @@ export const svnPackage = {
     'zlib.net^1.2',
     'apache.org/apr^1',
     'apache.org/apr-util^1',
+    'freedesktop.org/pkg-config^0.29',
+    'swig.org^4',
+    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -99,9 +101,8 @@ export const svnPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'subversion',
+    'svn',
   ] as const,
-  fullPath: 'apache.org/subversion' as const,
 }
 
 export type SvnPackage = typeof svnPackage

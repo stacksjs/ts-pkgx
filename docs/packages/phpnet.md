@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +php.net -- $SHELL -i
+launchpad install +php.net -- $SHELL -i
 ```
 
 ## Programs
@@ -96,12 +96,14 @@ This package depends on:
 - `libpng.org^1`
 - `google.com/webp^1`
 - `ijg.org^9`
-- `gnu.org/sed^4`
-- `openldap.org^2`
+- `gnu.org/sed^4 # phpize requires this`
+- `openldap.org^2 # since 8.1.31, 8.2.26, 8.3.14, 8.4.0`
 - `gnu.org/gcc/libstdcxx@14`
-- `darwinsourceware.org/bzip2^1zlib.net^1`
 - `sourceware.org/bzip2^1`
 - `zlib.net^1`
+- `freetype.org`
+- `tukaani.org/xz`
+- `gnu.org/libtool`
 
 ## Usage Examples
 

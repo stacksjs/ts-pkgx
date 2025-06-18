@@ -6,9 +6,9 @@
  * @version `1.5.14` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) gitopolis`
+ * @install `launchpad install gitopolis`
  * @name `gitopolis`
- * @dependencies `openssl.org^1.1`, `zlib.net^1`, `git-scm.org^2`, ... (+1 more)
+ * @dependencies `openssl.org^1.1`, `zlib.net^1`, `git-scm.org^2`, ... (+5 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const gitopolisPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) gitopolis' as const,
+  installCommand: 'launchpad install gitopolis' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,7 +65,11 @@ export const gitopolisPackage = {
     'openssl.org^1.1',
     'zlib.net^1',
     'git-scm.org^2',
-    'libgit2.org~1.7',
+    'libgit2.org~1.7 # links to libgit2.so.1.7',
+    'rust-lang.org^1.70',
+    'rust-lang.org/cargo',
+    'freedesktop.org/pkg-config^0',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -95,7 +99,6 @@ export const gitopolisPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crates.io/gitopolis' as const,
 }
 
 export type GitopolisPackage = typeof gitopolisPackage

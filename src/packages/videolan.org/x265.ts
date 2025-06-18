@@ -6,8 +6,9 @@
  * @version `4.1.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) x265`
+ * @install `launchpad install x265`
  * @name `x265`
+ * @dependencies `cmake.org`, `nasm.us`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const x265Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) x265' as const,
+  installCommand: 'launchpad install x265' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,15 @@ export const x265Package = {
     'x265',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'nasm.us',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,7 +79,6 @@ export const x265Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'videolan.org/x265' as const,
 }
 
 export type X265Package = typeof x265Package

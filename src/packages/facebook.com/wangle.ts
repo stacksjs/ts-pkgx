@@ -5,20 +5,15 @@
  * @version `2025.6.9.0` (93 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +facebook.com/wangle -- $SHELL -i`
- * @aliases `wangle`
- * @dependencies `boost.org`, `google.com/double-conversion^3`, `github.com/facebookincubator/fizz`, ... (+15 more)
+ * @install `launchpad install +facebook.com/wangle -- $SHELL -i`
+ * @dependencies `boost.org`, `google.com/double-conversion^3`, `github.com/facebookincubator/fizz`, ... (+17 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.wangle
- * // Or access via domain
- * const samePkg = pantry.facebookcomwangle
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "facebook.com/wangle"
+ * const pkg = pantry.facebookcomwangle
+ * console.log(pkg.name)        // "wangle"
  * console.log(pkg.description) // "Wangle is a framework providing a set of common..."
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/facebook-com/wangle.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wanglePackage = {
+export const facebookcomwanglePackage = {
   /**
    * The display name of this package.
    */
-  name: 'facebook.com/wangle' as const,
+  name: 'wangle' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const wanglePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +facebook.com/wangle -- $SHELL -i' as const,
+  installCommand: 'launchpad install +facebook.com/wangle -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,11 +62,13 @@ export const wanglePackage = {
     'openssl.org^1.1',
     'google.github.io/snappy',
     'facebook.com/zstd^1',
-    'darwinsourceware.org/bzip2zlib.net',
     'sourceware.org/bzip2',
     'zlib.net',
-    'linuxgnu.org/gcc/libstdcxx@13',
     'gnu.org/gcc/libstdcxx@13',
+    'cmake.org^3',
+    'gnu.org/gcc@13',
+    'curl.se',
+    'gnu.org/gcc@13',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -172,14 +169,7 @@ export const wanglePackage = {
     '2023.10.2.0',
     '2023.10.16.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'wangle',
-  ] as const,
-  fullPath: 'facebook.com/wangle' as const,
+  aliases: [] as const,
 }
 
-export type WanglePackage = typeof wanglePackage
+export type FacebookcomwanglePackage = typeof facebookcomwanglePackage

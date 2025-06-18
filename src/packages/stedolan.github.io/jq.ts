@@ -6,9 +6,9 @@
  * @version `1.8.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) jq`
+ * @install `launchpad install jq`
  * @name `jq`
- * @dependencies `github.com/kkos/oniguruma@6`
+ * @dependencies `github.com/kkos/oniguruma@6`, `git-scm.org@2`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const jqPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) jq' as const,
+  installCommand: 'launchpad install jq' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,7 @@ export const jqPackage = {
    */
   dependencies: [
     'github.com/kkos/oniguruma@6',
+    'git-scm.org@2',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,7 +80,6 @@ export const jqPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'stedolan.github.io/jq' as const,
 }
 
 export type JqPackage = typeof jqPackage

@@ -7,20 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install awslocal`
- * @name `awslocal`
- * @aliases `awscli-local`
- * @dependencies `pkgx.sh^1`, `aws.amazon.com/cli^2`
+ * @aliases `awslocal`
+ * @dependencies `pkgx.sh^1`, `aws.amazon.com/cli^2`, `python.org^3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.awslocal
  * // Or access via domain
  * const samePkg = pantry.localstackcloudawsclilocal
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "awslocal"
+ * console.log(pkg.name)        // "awscli-local"
  * console.log(pkg.description) // "💲  "awslocal" - Thin wrapper around the "aws" ..."
  * console.log(pkg.programs)    // ["awslocal"]
  * console.log(pkg.versions[0]) // "2023.12.28" (latest)
@@ -33,7 +32,7 @@ export const awslocalPackage = {
   /**
    * The display name of this package.
    */
-  name: 'awslocal' as const,
+  name: 'awscli-local' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -65,6 +64,7 @@ export const awslocalPackage = {
   dependencies: [
     'pkgx.sh^1',
     'aws.amazon.com/cli^2',
+    'python.org^3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,9 +78,8 @@ export const awslocalPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'awscli-local',
+    'awslocal',
   ] as const,
-  fullPath: 'localstack.cloud/awscli-local' as const,
 }
 
 export type AwslocalPackage = typeof awslocalPackage

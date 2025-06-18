@@ -7,19 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install term-size`
- * @name `term-size`
- * @aliases `sindresorhus/macos-term-size`
+ * @aliases `term-size`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.termsize
  * // Or access via domain
  * const samePkg = pantry.githubcomsindresorhusmacostermsize
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "term-size"
+ * console.log(pkg.name)        // "macos-term-size"
  * console.log(pkg.description) // "Get the terminal window size on macOS"
  * console.log(pkg.programs)    // ["term-size"]
  * console.log(pkg.versions[0]) // "1.0.0" (latest)
@@ -32,7 +31,7 @@ export const termsizePackage = {
   /**
    * The display name of this package.
    */
-  name: 'term-size' as const,
+  name: 'macos-term-size' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -70,9 +69,8 @@ export const termsizePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'sindresorhus/macos-term-size',
+    'term-size',
   ] as const,
-  fullPath: 'github.com/sindresorhus/macos-term-size' as const,
 }
 
 export type TermsizePackage = typeof termsizePackage

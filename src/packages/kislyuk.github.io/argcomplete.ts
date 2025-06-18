@@ -6,20 +6,15 @@
  * @version `3.6.2` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +kislyuk.github.io/argcomplete -- $SHELL -i`
- * @aliases `argcomplete`
- * @dependencies `pkgx.sh^1`
+ * @install `launchpad install +kislyuk.github.io/argcomplete -- $SHELL -i`
+ * @dependencies `pkgx.sh^1`, `python.org~3.12`, `python.org^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.argcomplete
- * // Or access via domain
- * const samePkg = pantry.kislyukgithubioargcomplete
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kislyuk.github.io/argcomplete"
+ * const pkg = pantry.kislyukgithubioargcomplete
+ * console.log(pkg.name)        // "argcomplete"
  * console.log(pkg.description) // "Python and tab completion, better together."
  * console.log(pkg.programs)    // ["activate-global-python-argcomplete", "register-python-argcomplete", ...]
  * console.log(pkg.versions[0]) // "3.6.2" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/kislyuk-github-io/argcomplete.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const argcompletePackage = {
+export const kislyukgithubioargcompletePackage = {
   /**
    * The display name of this package.
    */
-  name: 'kislyuk.github.io/argcomplete' as const,
+  name: 'argcomplete' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const argcompletePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +kislyuk.github.io/argcomplete -- $SHELL -i' as const,
+  installCommand: 'launchpad install +kislyuk.github.io/argcomplete -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +60,8 @@ export const argcompletePackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org~3.12',
+    'python.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -82,14 +79,7 @@ export const argcompletePackage = {
     '3.3.0',
     '3.2.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'argcomplete',
-  ] as const,
-  fullPath: 'kislyuk.github.io/argcomplete' as const,
+  aliases: [] as const,
 }
 
-export type ArgcompletePackage = typeof argcompletePackage
+export type KislyukgithubioargcompletePackage = typeof kislyukgithubioargcompletePackage

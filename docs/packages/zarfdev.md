@@ -1,11 +1,11 @@
-# zarf
+# zarf.dev
 
 > DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/
 
 ## Package Information
 
 - **Domain**: `zarf.dev`
-- **Name**: `zarf`
+- **Name**: `zarf.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zarf.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) zarf
+launchpad install zarf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `zarf`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `zarf`
 
@@ -48,6 +54,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +zarf.dev@0.56.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 

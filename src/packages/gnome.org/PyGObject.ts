@@ -1,24 +1,19 @@
 /**
- * **gnome.org/pygobject** - pkgx package
+ * **PyGObject** - pkgx package
  *
  * @domain `gnome.org/PyGObject`
  * @version `3.51.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/PyGObject -- $SHELL -i`
- * @aliases `gnome.org/pygobject`, `gnome.org-PyGObject`
- * @dependencies `gnome.org/gobject-introspection`, `cairographics.org/pycairo`
+ * @install `launchpad install +gnome.org/PyGObject -- $SHELL -i`
+ * @dependencies `gnome.org/gobject-introspection`, `cairographics.org/pycairo`, `mesonbuild.com`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
  * const pkg = pantry.gnomeorgpygobject
- * // Or access via domain
- * const samePkg = pantry.gnomeorgpygobject
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnome.org/PyGObject"
+ * console.log(pkg.name)        // "PyGObject"
  * console.log(pkg.versions[0]) // "3.51.0" (latest)
  * ```
  *
@@ -29,7 +24,7 @@ export const gnomeorgpygobjectPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/PyGObject' as const,
+  name: 'PyGObject' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const gnomeorgpygobjectPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/PyGObject -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/PyGObject -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,11 @@ export const gnomeorgpygobjectPackage = {
   dependencies: [
     'gnome.org/gobject-introspection',
     'cairographics.org/pycairo',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'python.org~3.11',
+    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -70,15 +70,7 @@ export const gnomeorgpygobjectPackage = {
     '3.47.0',
     '3.46.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gnome.org/pygobject',
-    'gnome.org-PyGObject',
-  ] as const,
-  fullPath: 'gnome.org-PyGObject' as const,
+  aliases: [] as const,
 }
 
 export type GnomeorgpygobjectPackage = typeof gnomeorgpygobjectPackage

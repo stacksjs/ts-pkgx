@@ -7,20 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/sivel/speedtest-cli -- $SHELL -i`
- * @name `speedtest`
- * @aliases `sivel/speedtest-cli`
+ * @aliases `speedtest`
  * @dependencies `python.org>=3.7<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.speedtest
  * // Or access via domain
  * const samePkg = pantry.githubcomsivelspeedtestcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "speedtest"
+ * console.log(pkg.name)        // "speedtest-cli"
  * console.log(pkg.description) // "Command line interface for testing internet ban..."
  * console.log(pkg.programs)    // ["speedtest-cli", "speedtest"]
  * console.log(pkg.versions[0]) // "2.1.3" (latest)
@@ -33,7 +32,7 @@ export const speedtestPackage = {
   /**
    * The display name of this package.
    */
-  name: 'speedtest' as const,
+  name: 'speedtest-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +77,8 @@ export const speedtestPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'sivel/speedtest-cli',
+    'speedtest',
   ] as const,
-  fullPath: 'github.com/sivel/speedtest-cli' as const,
 }
 
 export type SpeedtestPackage = typeof speedtestPackage

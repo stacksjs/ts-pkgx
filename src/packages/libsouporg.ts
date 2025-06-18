@@ -1,9 +1,11 @@
 /**
- * **libsoup.org** - Package from pantry: libsoup.org
+ * **libsoup.org** - pkgx package
  *
  * @domain `libsoup.org`
+ * @version `3.6.5` (10 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install libsoup.org`
+ * @install `launchpad install +libsoup.org -- $SHELL -i`
  * @dependencies `gnome.org/glib-networking`, `gnutls.org`, `rockdaboot.github.io/libpsl`, ... (+14 more)
  *
  * @example
@@ -12,7 +14,7 @@
  *
  * const pkg = pantry.libsouporg
  * console.log(pkg.name)        // "libsoup.org"
- * console.log(pkg.description) // "Package from pantry: libsoup.org"
+ * console.log(pkg.versions[0]) // "3.6.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libsoup-org.md
@@ -30,12 +32,15 @@ export const libsouporgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: libsoup.org' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libsoup.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install libsoup.org' as const,
+  installCommand: 'launchpad install +libsoup.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,10 +66,23 @@ export const libsouporgPackage = {
     'gnome.org/vala',
     'freedesktop.org/pkg-config',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libsoup.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.6.5',
+    '3.6.4',
+    '3.6.3',
+    '3.6.1',
+    '3.6.0',
+    '3.5.2',
+    '3.5.1',
+    '3.4.5',
+    '3.4.4',
+    '3.2.3',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type LibsouporgPackage = typeof libsouporgPackage

@@ -6,10 +6,9 @@
  * @version `0.3.28` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) gops`
+ * @install `launchpad install gops`
  * @name `gops`
- * @aliases `google/gops`
- * @dependencies `go.dev`
+ * @dependencies `go.dev`, `go.dev`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const gopsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) gops' as const,
+  installCommand: 'launchpad install gops' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const gopsPackage = {
    */
   dependencies: [
     'go.dev',
+    'go.dev',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,10 +77,7 @@ export const gopsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'google/gops',
-  ] as const,
-  fullPath: 'github.com/google/gops' as const,
+  aliases: [] as const,
 }
 
 export type GopsPackage = typeof gopsPackage

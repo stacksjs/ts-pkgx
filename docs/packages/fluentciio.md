@@ -1,11 +1,11 @@
-# fluentci
+# fluentci.io
 
 > Set up and run your CI locally or in any CI Provider in a consistent way https://backdropbuild.com/builds/v4/fluentci
 
 ## Package Information
 
 - **Domain**: `fluentci.io`
-- **Name**: `fluentci`
+- **Name**: `fluentci.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fluentci.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) fluentci
+launchpad install fluentci
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `fluentci`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `fluentci`
 

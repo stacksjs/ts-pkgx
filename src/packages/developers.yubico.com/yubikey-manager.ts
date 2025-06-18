@@ -6,10 +6,10 @@
  * @version `5.7.2` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ykman`
+ * @install `launchpad install ykman`
  * @name `yubikey-manager`
  * @aliases `ykman`
- * @dependencies `python.org~3.11`, `linuxpcsclite.apdu.fr^2`, `pcsclite.apdu.fr^2`
+ * @dependencies `python.org~3.11`, `pcsclite.apdu.fr^2`, `pip.pypa.io`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -49,7 +49,7 @@ export const ykmanPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ykman' as const,
+  installCommand: 'launchpad install ykman' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,8 +64,9 @@ export const ykmanPackage = {
    */
   dependencies: [
     'python.org~3.11',
-    'linuxpcsclite.apdu.fr^2',
     'pcsclite.apdu.fr^2',
+    'pip.pypa.io',
+    'swig.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -90,7 +91,6 @@ export const ykmanPackage = {
   aliases: [
     'ykman',
   ] as const,
-  fullPath: 'developers.yubico.com/yubikey-manager' as const,
 }
 
 export type YkmanPackage = typeof ykmanPackage

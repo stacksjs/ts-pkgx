@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +unixodbc.org -- $SHELL -i
+launchpad install +unixodbc.org -- $SHELL -i
 ```
 
 ## Programs

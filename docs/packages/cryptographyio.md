@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i
+launchpad install +cryptography.io -- $SHELL -i
 ```
 
 ## Programs
@@ -51,6 +51,8 @@ This package depends on:
 - `python.org>=3.11`
 - `github.com/python-cffi/cffi^1.16`
 - `openssl.org>=1.1`
+- `python.org/typing_extensions`
+- `rust-lang.org>=1.65`
 
 ## Usage Examples
 

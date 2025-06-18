@@ -6,10 +6,9 @@
  * @version `0.8.1` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rav1e`
+ * @install `launchpad install rav1e`
  * @name `rav1e`
- * @aliases `xiph/rav1e`
- * @dependencies `nasm.us^2.14.02`
+ * @dependencies `nasm.us^2.14.02`, `rust-lang.org^1.70`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const rav1ePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rav1e' as const,
+  installCommand: 'launchpad install rav1e' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const rav1ePackage = {
    */
   dependencies: [
     'nasm.us^2.14.02',
+    'rust-lang.org^1.70',
+    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -83,10 +84,7 @@ export const rav1ePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xiph/rav1e',
-  ] as const,
-  fullPath: 'github.com/xiph/rav1e' as const,
+  aliases: [] as const,
 }
 
 export type Rav1ePackage = typeof rav1ePackage

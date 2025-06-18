@@ -6,7 +6,7 @@
  * @version `0.996.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +taku910.github.io/mecab -- $SHELL -i`
+ * @install `launchpad install +taku910.github.io/mecab -- $SHELL -i`
  * @name `mecab`
  *
  * @example
@@ -46,7 +46,7 @@ export const mecabPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +taku910.github.io/mecab -- $SHELL -i' as const,
+  installCommand: 'launchpad install +taku910.github.io/mecab -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,7 +69,6 @@ export const mecabPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'taku910.github.io/mecab' as const,
 }
 
 export type MecabPackage = typeof mecabPackage

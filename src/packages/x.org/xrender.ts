@@ -5,31 +5,26 @@
  * @version `0.9.12` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/xrender -- $SHELL -i`
- * @aliases `xrender`
- * @dependencies `x.org/x11^1`, `x.org/protocol`
+ * @install `launchpad install +x.org/xrender -- $SHELL -i`
+ * @dependencies `x.org/x11^1`, `x.org/protocol`, `freedesktop.org/pkg-config~0.29`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xrender
- * // Or access via domain
- * const samePkg = pantry.xorgxrender
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/xrender"
+ * const pkg = pantry.xorgxrender
+ * console.log(pkg.name)        // "xrender"
  * console.log(pkg.versions[0]) // "0.9.12" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xrender.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xrenderPackage = {
+export const xorgxrenderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xrender' as const,
+  name: 'xrender' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const xrenderPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/xrender -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/xrender -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,7 @@ export const xrenderPackage = {
   dependencies: [
     'x.org/x11^1',
     'x.org/protocol',
+    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +60,7 @@ export const xrenderPackage = {
     '0.9.12',
     '0.9.11',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xrender',
-  ] as const,
-  fullPath: 'x.org/xrender' as const,
+  aliases: [] as const,
 }
 
-export type XrenderPackage = typeof xrenderPackage
+export type XorgxrenderPackage = typeof xorgxrenderPackage

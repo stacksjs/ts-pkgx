@@ -5,31 +5,26 @@
  * @version `4.9.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +freedesktop.org/slirp -- $SHELL -i`
- * @aliases `slirp`
- * @dependencies `gnome.org/glib^2`
+ * @install `launchpad install +freedesktop.org/slirp -- $SHELL -i`
+ * @dependencies `gnome.org/glib^2`, `mesonbuild.com`, `ninja-build.org@1`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.slirp
- * // Or access via domain
- * const samePkg = pantry.freedesktoporgslirp
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "freedesktop.org/slirp"
+ * const pkg = pantry.freedesktoporgslirp
+ * console.log(pkg.name)        // "slirp"
  * console.log(pkg.versions[0]) // "4.9.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/slirp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const slirpPackage = {
+export const freedesktoporgslirpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/slirp' as const,
+  name: 'slirp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const slirpPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/slirp -- $SHELL -i' as const,
+  installCommand: 'launchpad install +freedesktop.org/slirp -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,6 +49,9 @@ export const slirpPackage = {
    */
   dependencies: [
     'gnome.org/glib^2',
+    'mesonbuild.com',
+    'ninja-build.org@1',
+    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +63,7 @@ export const slirpPackage = {
     '4.8.0',
     '4.7.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'slirp',
-  ] as const,
-  fullPath: 'freedesktop.org/slirp' as const,
+  aliases: [] as const,
 }
 
-export type SlirpPackage = typeof slirpPackage
+export type FreedesktoporgslirpPackage = typeof freedesktoporgslirpPackage

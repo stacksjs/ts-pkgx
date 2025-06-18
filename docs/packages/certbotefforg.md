@@ -1,11 +1,11 @@
-# certbot
+# certbot.eff.org
 
 > Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol.
 
 ## Package Information
 
-- **Domain**: `certbot.eff.org`
-- **Name**: `certbot`
+- **Domain**: `certboteff.org`
+- **Name**: `certbot.eff.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/certbot.eff.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) certbot
+launchpad install certbot
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `certbot`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `certbot`
 
@@ -40,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +certbot.eff.org@4.1.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +certboteff.org@4.1.1 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,7 +6,7 @@
  * @version `4.9.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sed`
+ * @install `launchpad install sed`
  * @name `sed`
  *
  * @example
@@ -46,7 +46,7 @@ export const sedPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sed' as const,
+  installCommand: 'launchpad install sed' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,7 +68,6 @@ export const sedPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/sed' as const,
 }
 
 export type SedPackage = typeof sedPackage

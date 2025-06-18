@@ -6,14 +6,14 @@
 
 - **Domain**: `attrs.org`
 - **Name**: `attrs.org`
-- **Homepage**: Not specified
+- **Homepage**: https://www.attrs.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/attrs.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +attrs.org -- $SHELL -i
+launchpad install +attrs.org -- $SHELL -i
 ```
 
 ## Programs
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/attrs.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.attrs.org/)
 - [Back to Package Catalog](../package-catalog.md)
 
 ---

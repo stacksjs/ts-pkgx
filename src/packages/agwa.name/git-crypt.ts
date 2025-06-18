@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git-crypt`
  * @name `git-crypt`
- * @dependencies `openssl.org`
+ * @dependencies `openssl.org^1.1`, `docbook.org`, `docbook.org/xsl`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -62,7 +62,10 @@ export const gitcryptPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'openssl.org',
+    'openssl.org^1.1',
+    'docbook.org',
+    'docbook.org/xsl',
+    'gnome.org/libxslt',
   ] as const,
   /**
    * Available versions from newest to oldest.

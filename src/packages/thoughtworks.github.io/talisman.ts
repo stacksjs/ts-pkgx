@@ -6,8 +6,9 @@
  * @version `1.37.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) talisman`
+ * @install `launchpad install talisman`
  * @name `talisman`
+ * @dependencies `go.dev~1.24.2`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const talismanPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) talisman' as const,
+  installCommand: 'launchpad install talisman' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,14 @@ export const talismanPackage = {
     'talisman',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev~1.24.2',
+    'git-scm.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -80,7 +88,6 @@ export const talismanPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'thoughtworks.github.io/talisman' as const,
 }
 
 export type TalismanPackage = typeof talismanPackage

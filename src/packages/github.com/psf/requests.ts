@@ -1,24 +1,19 @@
 /**
- * **psf/requests** - A simple, yet elegant, HTTP library.
+ * **requests** - A simple, yet elegant, HTTP library.
  *
  * @domain `github.com/psf/requests`
  * @version `2.32.4` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/psf/requests -- $SHELL -i`
- * @aliases `psf/requests`
+ * @install `launchpad install +github.com/psf/requests -- $SHELL -i`
  * @dependencies `python.org~3.11`, `github.com/Ousret/charset_normalizer^3`, `github.com/kjd/idna^3`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.psfrequests
- * // Or access via domain
- * const samePkg = pantry.githubcompsfrequests
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/psf/requests"
+ * const pkg = pantry.githubcompsfrequests
+ * console.log(pkg.name)        // "requests"
  * console.log(pkg.description) // "A simple, yet elegant, HTTP library."
  * console.log(pkg.versions[0]) // "2.32.4" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/psf/requests.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const psfrequestsPackage = {
+export const githubcompsfrequestsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/psf/requests' as const,
+  name: 'requests' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const psfrequestsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/psf/requests -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/psf/requests -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -72,14 +67,7 @@ export const psfrequestsPackage = {
     '2.32.0',
     '2.31.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'psf/requests',
-  ] as const,
-  fullPath: 'github.com/psf/requests' as const,
+  aliases: [] as const,
 }
 
-export type PsfrequestsPackage = typeof psfrequestsPackage
+export type GithubcompsfrequestsPackage = typeof githubcompsfrequestsPackage

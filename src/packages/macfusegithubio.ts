@@ -1,9 +1,11 @@
 /**
- * **macfuse.github.io** - Package from pantry: macfuse.github.io
+ * **macfuse.github.io** - macFUSE umbrella repository
  *
  * @domain `macfuse.github.io`
+ * @version `4.10.2` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install macfuse.github.io`
+ * @install `launchpad install +macfuse.github.io -- $SHELL -i`
  * @dependencies `mesonbuild.com`, `ninja-build.org`, `git-scm.org^2`, ... (+1 more)
  *
  * @example
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.macfusegithubio
  * console.log(pkg.name)        // "macfuse.github.io"
- * console.log(pkg.description) // "Package from pantry: macfuse.github.io"
+ * console.log(pkg.description) // "macFUSE umbrella repository"
+ * console.log(pkg.versions[0]) // "4.10.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/macfuse-github-io.md
@@ -30,12 +33,15 @@ export const macfusegithubioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: macfuse.github.io' as const,
+  description: 'macFUSE umbrella repository' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/macfuse.github.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/macfuse/macfuse' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install macfuse.github.io' as const,
+  installCommand: 'launchpad install +macfuse.github.io -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -48,10 +54,14 @@ export const macfusegithubioPackage = {
     'git-scm.org^2',
     'llvm.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/macfuse.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '4.10.2',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type MacfusegithubioPackage = typeof macfusegithubioPackage

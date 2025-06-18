@@ -5,19 +5,14 @@
  * @version `1.7.6` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +apache.org/apr -- $SHELL -i`
- * @aliases `apr`
+ * @install `launchpad install +apache.org/apr -- $SHELL -i`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.apr
- * // Or access via domain
- * const samePkg = pantry.apacheorgapr
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "apache.org/apr"
+ * const pkg = pantry.apacheorgapr
+ * console.log(pkg.name)        // "apr"
  * console.log(pkg.description) // "Mirror of Apache Portable Runtime"
  * console.log(pkg.versions[0]) // "1.7.6" (latest)
  * ```
@@ -25,11 +20,11 @@
  * @see https://ts-pkgx.netlify.app/packages/apache-org/apr.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const aprPackage = {
+export const apacheorgaprPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/apr' as const,
+  name: 'apr' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const aprPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +apache.org/apr -- $SHELL -i' as const,
+  installCommand: 'launchpad install +apache.org/apr -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -60,14 +55,7 @@ export const aprPackage = {
     '1.7.3',
     '1.7.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'apr',
-  ] as const,
-  fullPath: 'apache.org/apr' as const,
+  aliases: [] as const,
 }
 
-export type AprPackage = typeof aprPackage
+export type ApacheorgaprPackage = typeof apacheorgaprPackage

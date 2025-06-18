@@ -6,9 +6,10 @@
  * @version `0.11.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) duck`
+ * @install `launchpad install duck`
  * @name `duckscript`
  * @aliases `duck`
+ * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`, `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -48,7 +49,7 @@ export const duckPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) duck' as const,
+  installCommand: 'launchpad install duck' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +58,15 @@ export const duckPackage = {
     'duck',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+    'pkgx.sh^1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -76,7 +85,6 @@ export const duckPackage = {
   aliases: [
     'duck',
   ] as const,
-  fullPath: 'sagiegurari.github.io/duckscript' as const,
 }
 
 export type DuckPackage = typeof duckPackage

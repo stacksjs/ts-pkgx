@@ -5,31 +5,26 @@
  * @version `5.1.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gaia-gis.it/libspatialite -- $SHELL -i`
- * @aliases `libspatialite`
- * @dependencies `gaia-gis.it/fossil/freexl`, `libgeos.org`, `git.osgeo.org/gitea/rttopo/librttopo`, ... (+4 more)
+ * @install `launchpad install +gaia-gis.it/libspatialite -- $SHELL -i`
+ * @dependencies `gaia-gis.it/fossil/freexl`, `libgeos.org`, `git.osgeo.org/gitea/rttopo/librttopo`, ... (+9 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libspatialite
- * // Or access via domain
- * const samePkg = pantry.gaiagisitlibspatialite
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gaia-gis.it/libspatialite"
+ * const pkg = pantry.gaiagisitlibspatialite
+ * console.log(pkg.name)        // "libspatialite"
  * console.log(pkg.versions[0]) // "5.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gaia-gis-it/libspatialite.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libspatialitePackage = {
+export const gaiagisitlibspatialitePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gaia-gis.it/libspatialite' as const,
+  name: 'libspatialite' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const libspatialitePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gaia-gis.it/libspatialite -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gaia-gis.it/libspatialite -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +55,11 @@ export const libspatialitePackage = {
     'zlib.net/minizip',
     'proj.org',
     'sqlite.org',
+    'gnu.org/make',
+    'freedesktop.org/pkg-config',
+    'gnu.org/patch',
+    'curl.se',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -69,14 +69,7 @@ export const libspatialitePackage = {
     '5.1.0',
     '5.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libspatialite',
-  ] as const,
-  fullPath: 'gaia-gis.it/libspatialite' as const,
+  aliases: [] as const,
 }
 
-export type LibspatialitePackage = typeof libspatialitePackage
+export type GaiagisitlibspatialitePackage = typeof gaiagisitlibspatialitePackage

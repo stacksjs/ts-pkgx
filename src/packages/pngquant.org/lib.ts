@@ -5,19 +5,20 @@
  * @version `4.3.4` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +pngquant.org/lib -- $SHELL -i`
- * @name `libimagequant`
+ * @install `launchpad install +pngquant.org/lib -- $SHELL -i`
+ * @aliases `libimagequant`
+ * @dependencies `github.com/lu-zero/cargo-c`, `rust-lang.org/cargo`, `rust-lang.org^1.65`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.libimagequant
  * // Or access via domain
  * const samePkg = pantry.pngquantorglib
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libimagequant"
+ * console.log(pkg.name)        // "lib"
  * console.log(pkg.description) // "Palette quantization library that powers pngqua..."
  * console.log(pkg.versions[0]) // "4.3.4" (latest)
  * ```
@@ -29,7 +30,7 @@ export const libimagequantPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libimagequant' as const,
+  name: 'lib' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +46,18 @@ export const libimagequantPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +pngquant.org/lib -- $SHELL -i' as const,
+  installCommand: 'launchpad install +pngquant.org/lib -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'github.com/lu-zero/cargo-c',
+    'rust-lang.org/cargo',
+    'rust-lang.org^1.65',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,8 +76,9 @@ export const libimagequantPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
-  fullPath: 'pngquant.org/lib' as const,
+  aliases: [
+    'libimagequant',
+  ] as const,
 }
 
 export type LibimagequantPackage = typeof libimagequantPackage

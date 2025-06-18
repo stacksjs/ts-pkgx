@@ -6,9 +6,8 @@
  * @version `1.12.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ios-deploy`
+ * @install `launchpad install ios-deploy`
  * @name `ios-deploy`
- * @aliases `ios-control/ios-deploy`
  *
  * @example
  * ```typescript
@@ -43,12 +42,12 @@ export const iosdeployPackage = {
   description: 'Install and debug iPhone apps from the command line, without using Xcode' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ios-control/ios-deploy/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/ios-control/ios-deploy' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ios-deploy' as const,
+  installCommand: 'launchpad install ios-deploy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,10 +68,7 @@ export const iosdeployPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ios-control/ios-deploy',
-  ] as const,
-  fullPath: 'github.com/ios-control/ios-deploy' as const,
+  aliases: [] as const,
 }
 
 export type IosdeployPackage = typeof iosdeployPackage

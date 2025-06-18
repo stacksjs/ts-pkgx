@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +bitcoin.org -- $SHELL -i`
  * @aliases `bitcoin`
- * @dependencies `oracle.com/berkeley-db`, `boost.org`, `libevent.org`, ... (+4 more)
+ * @dependencies `oracle.com/berkeley-db^18`, `boost.org^1`, `libevent.org^2`, ... (+10 more)
  *
  * @example
  * ```typescript
@@ -66,13 +66,19 @@ export const bitcoinPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'oracle.com/berkeley-db',
-    'boost.org',
-    'libevent.org',
-    'zeromq.org',
-    'sqlite.org',
-    'linux',
+    'oracle.com/berkeley-db^18',
+    'boost.org^1',
+    'libevent.org^2',
+    'zeromq.org^4',
+    'sqlite.org^3',
     'gnu.org/gcc/libstdcxx',
+    'gnu.org/autoconf^2',
+    'gnu.org/automake^1',
+    'freedesktop.org/pkg-config^0.29',
+    'gnu.org/libtool^2',
+    'cmake.org^3.22',
+    'ninja-build.org',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

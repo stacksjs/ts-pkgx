@@ -8,7 +8,7 @@
  *
  * @install `launchpad install swagger-codegen`
  * @name `swagger-codegen`
- * @dependencies `openjdk.org^11`
+ * @dependencies `openjdk.org^11`, `maven.apache.org`
  *
  * @example
  * ```typescript
@@ -63,6 +63,7 @@ export const swaggercodegenPackage = {
    */
   dependencies: [
     'openjdk.org^11',
+    'maven.apache.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -95,7 +96,6 @@ export const swaggercodegenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'swagger.io/swagger-codegen' as const,
 }
 
 export type SwaggercodegenPackage = typeof swaggercodegenPackage

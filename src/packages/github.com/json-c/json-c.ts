@@ -1,23 +1,19 @@
 /**
- * **json-c/json-c** - https://github.com/json-c/json-c is the official code repository for json-c.  See the wiki for release tarballs for download.  API docs at http://json-c.github.io/json-c/
+ * **json-c** - https://github.com/json-c/json-c is the official code repository for json-c.  See the wiki for release tarballs for download.  API docs at http://json-c.github.io/json-c/
  *
  * @domain `github.com/json-c/json-c`
  * @version `0.18.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/json-c/json-c -- $SHELL -i`
- * @aliases `json-c/json-c`
+ * @install `launchpad install +github.com/json-c/json-c -- $SHELL -i`
+ * @dependencies `cmake.org@3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jsoncjsonc
- * // Or access via domain
- * const samePkg = pantry.githubcomjsoncjsonc
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/json-c/json-c"
+ * const pkg = pantry.githubcomjsoncjsonc
+ * console.log(pkg.name)        // "json-c"
  * console.log(pkg.description) // "https://github.com/json-c/json-c is the officia..."
  * console.log(pkg.versions[0]) // "0.18.0" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/json-c/json-c.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jsoncjsoncPackage = {
+export const githubcomjsoncjsoncPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/json-c/json-c' as const,
+  name: 'json-c' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,16 @@ export const jsoncjsoncPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/json-c/json-c -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/json-c/json-c -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org@3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -58,14 +60,7 @@ export const jsoncjsoncPackage = {
     '0.17.0',
     '0.16.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'json-c/json-c',
-  ] as const,
-  fullPath: 'github.com/json-c/json-c' as const,
+  aliases: [] as const,
 }
 
-export type JsoncjsoncPackage = typeof jsoncjsoncPackage
+export type GithubcomjsoncjsoncPackage = typeof githubcomjsoncjsoncPackage

@@ -1,10 +1,10 @@
 # soxr.sourceforge.net
 
-> A package from soxr.sourceforge.net
+> A package from soxrsourceforge.net
 
 ## Package Information
 
-- **Domain**: `soxr.sourceforge.net`
+- **Domain**: `soxrsourceforge.net`
 - **Name**: `soxr.sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/soxr.sourceforge.net/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +soxr.sourceforge.net -- $SHELL -i
+launchpad install +soxr.sourceforge.net -- $SHELL -i
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +soxr.sourceforge.net@0.1.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +soxrsourceforge.net@0.1.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

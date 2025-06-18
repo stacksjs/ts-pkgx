@@ -6,20 +6,20 @@
  * @version `3.27.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) license-plist`
- * @name `license-plist`
- * @aliases `mono0926/LicensePlist`
+ * @install `launchpad install license-plist`
+ * @aliases `license-plist`
+ * @dependencies `swift.org^6 # as of 3.26.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.licenseplist
  * // Or access via domain
  * const samePkg = pantry.githubcommono0926licenseplist
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "license-plist"
+ * console.log(pkg.name)        // "LicensePlist"
  * console.log(pkg.description) // "A license list generator of all your dependenci..."
  * console.log(pkg.programs)    // ["license-plist"]
  * console.log(pkg.versions[0]) // "3.27.1" (latest)
@@ -32,7 +32,7 @@ export const licenseplistPackage = {
   /**
    * The display name of this package.
    */
-  name: 'license-plist' as const,
+  name: 'LicensePlist' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const licenseplistPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) license-plist' as const,
+  installCommand: 'launchpad install license-plist' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const licenseplistPackage = {
     'license-plist',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'swift.org^6 # as of 3.26.0',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -73,9 +79,8 @@ export const licenseplistPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'mono0926/LicensePlist',
+    'license-plist',
   ] as const,
-  fullPath: 'github.com/mono0926/LicensePlist' as const,
 }
 
 export type LicenseplistPackage = typeof licenseplistPackage

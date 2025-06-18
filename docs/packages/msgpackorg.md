@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +msgpack.org -- $SHELL -i
+launchpad install +msgpack.org -- $SHELL -i
 ```
 
 ## Programs
@@ -39,6 +39,14 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +msgpack.org@6.0.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `google.com/googletest`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

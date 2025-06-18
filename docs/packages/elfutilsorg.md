@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +elfutils.org -- $SHELL -i
+launchpad install +elfutils.org -- $SHELL -i
 ```
 
 ## Programs
@@ -63,8 +63,8 @@ This package depends on:
 - `tukaani.org/xz`
 - `zlib.net`
 - `facebook.com/zstd`
-- `linuxkernel.org/linux-headers`
 - `kernel.org/linux-headers`
+- `gnu.org/m4`
 
 ## Usage Examples
 

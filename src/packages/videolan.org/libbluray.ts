@@ -5,31 +5,26 @@
  * @version `1.3.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +videolan.org/libbluray -- $SHELL -i`
- * @aliases `libbluray`
- * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `darwingnome.org/libxml2`, ... (+1 more)
+ * @install `launchpad install +videolan.org/libbluray -- $SHELL -i`
+ * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `gnome.org/libxml2`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libbluray
- * // Or access via domain
- * const samePkg = pantry.videolanorglibbluray
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "videolan.org/libbluray"
+ * const pkg = pantry.videolanorglibbluray
+ * console.log(pkg.name)        // "libbluray"
  * console.log(pkg.versions[0]) // "1.3.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/videolan-org/libbluray.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libblurayPackage = {
+export const videolanorglibblurayPackage = {
   /**
    * The display name of this package.
    */
-  name: 'videolan.org/libbluray' as const,
+  name: 'libbluray' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const libblurayPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +videolan.org/libbluray -- $SHELL -i' as const,
+  installCommand: 'launchpad install +videolan.org/libbluray -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,8 +50,11 @@ export const libblurayPackage = {
   dependencies: [
     'freedesktop.org/fontconfig',
     'freetype.org',
-    'darwingnome.org/libxml2',
     'gnome.org/libxml2',
+    'gnu.org/automake',
+    'gnu.org/autoconf',
+    'gnu.org/libtool',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +63,7 @@ export const libblurayPackage = {
   versions: [
     '1.3.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libbluray',
-  ] as const,
-  fullPath: 'videolan.org/libbluray' as const,
+  aliases: [] as const,
 }
 
-export type LibblurayPackage = typeof libblurayPackage
+export type VideolanorglibblurayPackage = typeof videolanorglibblurayPackage

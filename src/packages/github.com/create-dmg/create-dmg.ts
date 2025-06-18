@@ -6,9 +6,8 @@
  * @version `1.2.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) create-dmg`
+ * @install `launchpad install create-dmg`
  * @name `create-dmg`
- * @aliases `create-dmg/create-dmg`
  *
  * @example
  * ```typescript
@@ -48,7 +47,7 @@ export const createdmgPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) create-dmg' as const,
+  installCommand: 'launchpad install create-dmg' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,10 +71,7 @@ export const createdmgPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'create-dmg/create-dmg',
-  ] as const,
-  fullPath: 'github.com/create-dmg/create-dmg' as const,
+  aliases: [] as const,
 }
 
 export type CreatedmgPackage = typeof createdmgPackage

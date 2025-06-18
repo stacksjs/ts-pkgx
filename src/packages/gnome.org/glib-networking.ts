@@ -1,19 +1,19 @@
 /**
- * **gnome.org/glib-networking** - pkgx package
+ * **glib-networking** - pkgx package
  *
  * @domain `gnome.org/glib-networking`
  * @version `2.80.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnome.org/glib-networking -- $SHELL -i`
- * @dependencies `gnome.org/glib`, `gnutls.org`, `gnome.org/gsettings-desktop-schemas`
+ * @install `launchpad install +gnome.org/glib-networking -- $SHELL -i`
+ * @dependencies `gnome.org/glib`, `gnutls.org`, `gnome.org/gsettings-desktop-schemas`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorgglibnetworking
- * console.log(pkg.name)        // "gnome.org/glib-networking"
+ * console.log(pkg.name)        // "glib-networking"
  * console.log(pkg.versions[0]) // "2.80.1" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnomeorgglibnetworkingPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/glib-networking' as const,
+  name: 'glib-networking' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const gnomeorgglibnetworkingPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnome.org/glib-networking -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnome.org/glib-networking -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,6 +51,11 @@ export const gnomeorgglibnetworkingPackage = {
     'gnome.org/glib',
     'gnutls.org',
     'gnome.org/gsettings-desktop-schemas',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'llvm.org',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -63,7 +68,6 @@ export const gnomeorgglibnetworkingPackage = {
     '2.78.0',
   ] as const,
   aliases: [] as const,
-  fullPath: 'gnome.org-glib-networking' as const,
 }
 
 export type GnomeorgglibnetworkingPackage = typeof gnomeorgglibnetworkingPackage

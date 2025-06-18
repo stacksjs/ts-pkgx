@@ -5,20 +5,15 @@
  * @version `0.21.5` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +rockdaboot.github.io/libpsl -- $SHELL -i`
- * @aliases `libpsl`
- * @dependencies `unicode.org^71`
+ * @install `launchpad install +rockdaboot.github.io/libpsl -- $SHELL -i`
+ * @dependencies `unicode.org^71`, `mesonbuild.com`, `ninja-build.org`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libpsl
- * // Or access via domain
- * const samePkg = pantry.rockdabootgithubiolibpsl
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rockdaboot.github.io/libpsl"
+ * const pkg = pantry.rockdabootgithubiolibpsl
+ * console.log(pkg.name)        // "libpsl"
  * console.log(pkg.description) // "C library for the Public Suffix List"
  * console.log(pkg.versions[0]) // "0.21.5" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/rockdaboot-github-io/libpsl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libpslPackage = {
+export const rockdabootgithubiolibpslPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rockdaboot.github.io/libpsl' as const,
+  name: 'libpsl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const libpslPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +rockdaboot.github.io/libpsl -- $SHELL -i' as const,
+  installCommand: 'launchpad install +rockdaboot.github.io/libpsl -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,12 @@ export const libpslPackage = {
    */
   dependencies: [
     'unicode.org^71',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'python.org~3.11',
+    'gnu.org/gcc',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +65,7 @@ export const libpslPackage = {
     '0.21.5',
     '0.21.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libpsl',
-  ] as const,
-  fullPath: 'rockdaboot.github.io/libpsl' as const,
+  aliases: [] as const,
 }
 
-export type LibpslPackage = typeof libpslPackage
+export type RockdabootgithubiolibpslPackage = typeof rockdabootgithubiolibpslPackage

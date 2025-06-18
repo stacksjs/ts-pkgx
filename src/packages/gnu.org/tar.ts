@@ -6,8 +6,9 @@
  * @version `1.35.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) tar`
+ * @install `launchpad install tar`
  * @name `tar`
+ * @dependencies `gnu.org/patch`, `gnu.org/autoconf`, `gnu.org/automake`
  *
  * @example
  * ```typescript
@@ -47,7 +48,7 @@ export const tarPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) tar' as const,
+  installCommand: 'launchpad install tar' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +57,15 @@ export const tarPackage = {
     'tar',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/patch',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,7 +79,6 @@ export const tarPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/tar' as const,
 }
 
 export type TarPackage = typeof tarPackage

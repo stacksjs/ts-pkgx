@@ -1,24 +1,34 @@
 /**
- * **kubectx.dev** - Package from pantry: kubectx.dev
+ * **kube** - Tool that can switch between kubectl contexts easily and create aliases
  *
  * @domain `kubectx.dev`
+ * @programs `kubectx`, `kubens`
+ * @version `0.9.5` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install kubectx.dev`
+ * @install `launchpad install +kubectx.dev -- $SHELL -i`
+ * @aliases `kube`
  * @dependencies `github.com/junegunn/fzf`, `go.dev^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.kubectxdev
+ * // Access via alias (recommended)
+ * const pkg = pantry.kube
+ * // Or access via domain
+ * const samePkg = pantry.kubectxdev
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "kubectx.dev"
- * console.log(pkg.description) // "Package from pantry: kubectx.dev"
+ * console.log(pkg.description) // "Tool that can switch between kubectl contexts e..."
+ * console.log(pkg.programs)    // ["kubectx", "kubens"]
+ * console.log(pkg.versions[0]) // "0.9.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kubectx-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubectxdevPackage = {
+export const kubePackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,23 @@ export const kubectxdevPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: kubectx.dev' as const,
+  description: 'Tool that can switch between kubectl contexts easily and create aliases' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kubectx.dev/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/ahmetb/kubectx' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install kubectx.dev' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +kubectx.dev -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'kubectx',
+    'kubens',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -46,10 +66,21 @@ export const kubectxdevPackage = {
     'github.com/junegunn/fzf',
     'go.dev^1.20',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kubectx.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.9.5',
+    '0.9.4',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'kube',
+  ] as const,
 }
 
-export type KubectxdevPackage = typeof kubectxdevPackage
+export type KubePackage = typeof kubePackage

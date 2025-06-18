@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +gnupg.org -- $SHELL -i
+launchpad install +gnupg.org -- $SHELL -i
 ```
 
 ## Programs
@@ -70,7 +70,7 @@ This package depends on:
 - `openldap.org^2`
 - `gnu.org/readline^8`
 - `sqlite.org^3`
-- `darwingnu.org/gettext^0.21`
+- `darwin^# nobody added a comment to say why this is Darwin only`
 - `gnu.org/gettext^0.21`
 
 ## Usage Examples

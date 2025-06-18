@@ -1,11 +1,11 @@
-# bytebase
+# bytebase.com
 
 > World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps.
 
 ## Package Information
 
 - **Domain**: `bytebase.com`
-- **Name**: `bytebase`
+- **Name**: `bytebase.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bytebase.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) bytebase
+launchpad install bytebase
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `bytebase`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `bytebase`
 
@@ -51,10 +57,18 @@ sh <(curl https://pkgx.sh) +bytebase.com@3.7.0 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org>=23.11`
+- `go.dev~1.24.2`
+- `pnpm.io`
+- `git-scm.org^2 # since 3.5.1`
+- `kerberos.org^1 # added in 2.16.0`
+- `gnu.org/gcc`
+- `python.org~3.10`
+- `curl.se`
+- `pkgx.sh^1`
 
 ## Related Packages
 
-These packages work well with bytebase:
+These packages work well with bytebase.com:
 
 - [`postgresql.org`](postgresqlorg.md) - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
 

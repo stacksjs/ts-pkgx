@@ -8,7 +8,7 @@
  *
  * @install `launchpad install mop`
  * @name `mop`
- * @aliases `mop-tracker/mop`
+ * @dependencies `go.dev`, `gnu.org/patch`
  *
  * @example
  * ```typescript
@@ -57,7 +57,14 @@ export const mopPackage = {
     'mop',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+    'gnu.org/patch',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +76,7 @@ export const mopPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mop-tracker/mop',
-  ] as const,
-  fullPath: 'github.com/mop-tracker/mop' as const,
+  aliases: [] as const,
 }
 
 export type MopPackage = typeof mopPackage

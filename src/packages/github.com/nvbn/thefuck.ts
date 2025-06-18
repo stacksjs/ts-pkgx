@@ -6,10 +6,9 @@
  * @version `3.32.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) thefuck`
+ * @install `launchpad install thefuck`
  * @name `thefuck`
- * @aliases `nvbn/thefuck`
- * @dependencies `python.org~3.11`
+ * @dependencies `python.org~3.11`, `python.org>=3<3.12`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const thefuckPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) thefuck' as const,
+  installCommand: 'launchpad install thefuck' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const thefuckPackage = {
    */
   dependencies: [
     'python.org~3.11',
+    'python.org>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +76,7 @@ export const thefuckPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nvbn/thefuck',
-  ] as const,
-  fullPath: 'github.com/nvbn/thefuck' as const,
+  aliases: [] as const,
 }
 
 export type ThefuckPackage = typeof thefuckPackage

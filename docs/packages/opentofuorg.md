@@ -1,11 +1,11 @@
-# tofu
+# opentofu.org
 
 > OpenTofu lets you declaratively manage your cloud infrastructure.
 
 ## Package Information
 
 - **Domain**: `opentofu.org`
-- **Name**: `tofu`
+- **Name**: `opentofu.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/opentofu.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) tofu
+launchpad install tofu
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `tofu`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `tofu`
 
@@ -47,9 +53,9 @@ sh <(curl https://pkgx.sh) +opentofu.org@1.9.1 -- $SHELL -i
 
 This package depends on:
 
-- `linuxgnu.org/gcc/libstdcxx`
 - `gnu.org/gcc/libstdcxx`
 - `curl.se/ca-certs`
+- `go.dev~1.21`
 
 ## Usage Examples
 

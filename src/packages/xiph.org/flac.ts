@@ -6,9 +6,9 @@
  * @version `1.5.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) flac`
+ * @install `launchpad install flac`
  * @name `flac`
- * @dependencies `xiph.org/ogg^1.3.5`
+ * @dependencies `xiph.org/ogg^1.3.5`, `freedesktop.org/pkg-config^0.29`, `gnu.org/libtool^2.4`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const flacPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) flac' as const,
+  installCommand: 'launchpad install flac' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,6 +63,10 @@ export const flacPackage = {
    */
   dependencies: [
     'xiph.org/ogg^1.3.5',
+    'freedesktop.org/pkg-config^0.29',
+    'gnu.org/libtool^2.4',
+    'gnu.org/automake^1.16',
+    'gnu.org/autoconf^2.71',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,7 +82,6 @@ export const flacPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'xiph.org/flac' as const,
 }
 
 export type FlacPackage = typeof flacPackage

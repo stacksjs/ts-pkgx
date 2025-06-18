@@ -1,11 +1,11 @@
-# unrar
+# rarlab.com
 
-> Package information available on pkgx.dev
+> A package from rarlab.com
 
 ## Package Information
 
 - **Domain**: `rarlab.com`
-- **Name**: `unrar`
+- **Name**: `rarlab.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rarlab.com/package.yml)
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with pkgx
-pkgx rarlab.com
+launchpad install unrar
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `unrar`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `unrar`
+
+## Available Versions
+
+<details>
+<summary>Show all 20 versions</summary>
+
+- `7.1.7`, `7.1.6`, `7.1.5`, `7.1.4`, `7.1.2`
+- `7.1.1`, `7.0.9`, `7.0.8`, `7.0.7`, `7.0.6`
+- `7.0.5`, `7.0.4`, `7.0.3`, `7.0.2`, `7.0.1`
+- `6.2.12`, `6.2.11`, `6.2.10`, `6.2.9`, `6.2.8`
+
+</details>
+
+**Latest Version**: `7.1.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +rarlab.com@7.1.7 -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/coreutils^9`
 
 ## Usage Examples
 

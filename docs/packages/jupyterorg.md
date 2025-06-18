@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +jupyter.org -- $SHELL -i
+launchpad install +jupyter.org -- $SHELL -i
 ```
 
 ## Programs

@@ -5,31 +5,26 @@
  * @version `2024.1.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/protocol -- $SHELL -i`
- * @aliases `protocol`
- * @dependencies `x.org/util-macros`
+ * @install `launchpad install +x.org/protocol -- $SHELL -i`
+ * @dependencies `x.org/util-macros`, `freedesktop.org/pkg-config~0.29`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.protocol
- * // Or access via domain
- * const samePkg = pantry.xorgprotocol
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/protocol"
+ * const pkg = pantry.xorgprotocol
+ * console.log(pkg.name)        // "protocol"
  * console.log(pkg.versions[0]) // "2024.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/protocol.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const protocolPackage = {
+export const xorgprotocolPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/protocol' as const,
+  name: 'protocol' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const protocolPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/protocol -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/protocol -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,6 +49,7 @@ export const protocolPackage = {
    */
   dependencies: [
     'x.org/util-macros',
+    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +61,7 @@ export const protocolPackage = {
     '2023.1.0',
     '2022.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'protocol',
-  ] as const,
-  fullPath: 'x.org/protocol' as const,
+  aliases: [] as const,
 }
 
-export type ProtocolPackage = typeof protocolPackage
+export type XorgprotocolPackage = typeof xorgprotocolPackage

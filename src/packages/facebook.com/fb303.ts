@@ -5,20 +5,15 @@
  * @version `2025.6.9.0` (77 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +facebook.com/fb303 -- $SHELL -i`
- * @aliases `fb303`
- * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/wangle`, `facebook.com/folly`, ... (+10 more)
+ * @install `launchpad install +facebook.com/fb303 -- $SHELL -i`
+ * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/wangle`, `facebook.com/folly`, ... (+15 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.fb303
- * // Or access via domain
- * const samePkg = pantry.facebookcomfb303
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "facebook.com/fb303"
+ * const pkg = pantry.facebookcomfb303
+ * console.log(pkg.name)        // "fb303"
  * console.log(pkg.description) // "fb303 is a core set of thrift functions that pr..."
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/facebook-com/fb303.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fb303Package = {
+export const facebookcomfb303Package = {
   /**
    * The display name of this package.
    */
-  name: 'facebook.com/fb303' as const,
+  name: 'fb303' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const fb303Package = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +facebook.com/fb303 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +facebook.com/fb303 -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -63,10 +58,15 @@ export const fb303Package = {
     'google.com/glog^0.6',
     'libsodium.org^1.0.19',
     'openssl.org^1.1',
-    'github.com/Cyan4973/xxHash^0.8',
-    'linuxzlib.net^1gnu.org/gcc/libstdcxx@13',
+    'github.com/Cyan4973/xxHash^0.8 # since 2024.10.14.0',
     'zlib.net^1',
     'gnu.org/gcc/libstdcxx@13',
+    'cmake.org',
+    'facebook.com/mvfst',
+    'boost.org^1.84',
+    'gnu.org/gcc@13',
+    'boost.org^1.84',
+    'gnu.org/gcc@13',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -151,14 +151,7 @@ export const fb303Package = {
     '2023.12.25.0',
     '2023.12.18.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'fb303',
-  ] as const,
-  fullPath: 'facebook.com/fb303' as const,
+  aliases: [] as const,
 }
 
-export type Fb303Package = typeof fb303Package
+export type Facebookcomfb303Package = typeof facebookcomfb303Package

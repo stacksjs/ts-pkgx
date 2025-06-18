@@ -6,20 +6,20 @@
  * @version `2.37.104` (308 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) spider`
- * @name `spider`
- * @aliases `spider_cli`
+ * @install `launchpad install spider`
+ * @aliases `spider`
+ * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.spider
  * // Or access via domain
  * const samePkg = pantry.cratesiospider_cli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "spider"
+ * console.log(pkg.name)        // "spider_cli"
  * console.log(pkg.description) // "A web crawler and scraper for Rust"
  * console.log(pkg.programs)    // ["spider"]
  * console.log(pkg.versions[0]) // "2.37.104" (latest)
@@ -32,7 +32,7 @@ export const spiderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'spider' as const,
+  name: 'spider_cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const spiderPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) spider' as const,
+  installCommand: 'launchpad install spider' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,14 @@ export const spiderPackage = {
     'spider',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'rust-lang.org>=1.56',
+    'rust-lang.org/cargo',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -377,9 +384,8 @@ export const spiderPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'spider_cli',
+    'spider',
   ] as const,
-  fullPath: 'crates.io/spider_cli' as const,
 }
 
 export type SpiderPackage = typeof spiderPackage

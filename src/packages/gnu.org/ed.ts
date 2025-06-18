@@ -6,8 +6,9 @@
  * @version `1.21.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) ed`
+ * @install `launchpad install ed`
  * @name `ed`
+ * @dependencies `curl.se`, `nongnu.org/lzip`
  *
  * @example
  * ```typescript
@@ -46,7 +47,7 @@ export const edPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) ed' as const,
+  installCommand: 'launchpad install ed' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -55,7 +56,14 @@ export const edPackage = {
     'ed',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'curl.se',
+    'nongnu.org/lzip',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,7 +79,6 @@ export const edPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/ed' as const,
 }
 
 export type EdPackage = typeof edPackage

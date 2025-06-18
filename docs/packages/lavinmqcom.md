@@ -1,11 +1,11 @@
-# lavinmq
+# lavinmq.com
 
 > Lightweight and fast AMQP (0-9-1) server
 
 ## Package Information
 
 - **Domain**: `lavinmq.com`
-- **Name**: `lavinmq`
+- **Name**: `lavinmq.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lavinmq.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +lavinmq.com -- $SHELL -i
+launchpad install +lavinmq.com -- $SHELL -i
 ```
 
 ## Programs
@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `lavinmq`
 - `lavinmqctl`
 - `lavinmqperf`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `lavinmq`
 
 ## Available Versions
 
@@ -51,6 +57,11 @@ This package depends on:
 - `pcre.org/v2@10`
 - `libevent.org@2`
 - `hboehm.info/gc@8`
+- `crystal-lang.org~1.16 # since 2.4.0`
+- `crystal-lang.org/shards`
+- `lz4.org^1`
+- `gnu.org/help2man`
+- `etcd.io`
 
 ## Usage Examples
 

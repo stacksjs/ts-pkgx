@@ -6,9 +6,9 @@
  * @version `0.3.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) horcrux`
+ * @install `launchpad install horcrux`
  * @name `horcrux`
- * @aliases `jesseduffield/horcrux`
+ * @dependencies `go.dev^1.14`
  *
  * @example
  * ```typescript
@@ -48,7 +48,7 @@ export const horcruxPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) horcrux' as const,
+  installCommand: 'launchpad install horcrux' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const horcruxPackage = {
     'horcrux',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.14',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,10 +75,7 @@ export const horcruxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jesseduffield/horcrux',
-  ] as const,
-  fullPath: 'github.com/jesseduffield/horcrux' as const,
+  aliases: [] as const,
 }
 
 export type HorcruxPackage = typeof horcruxPackage

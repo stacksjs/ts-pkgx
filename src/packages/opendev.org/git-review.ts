@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git-review`
  * @name `git-review`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh^1`, `python.org^3`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -62,6 +62,8 @@ export const gitreviewPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org^3',
+    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,7 +79,6 @@ export const gitreviewPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'opendev.org/git-review' as const,
 }
 
 export type GitreviewPackage = typeof gitreviewPackage

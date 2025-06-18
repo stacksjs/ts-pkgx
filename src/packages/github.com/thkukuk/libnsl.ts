@@ -1,24 +1,19 @@
 /**
- * **thkukuk/libnsl** - This library contains the public client interface for NIS(YP) and NIS+ in a IPv6 ready version
+ * **libnsl** - This library contains the public client interface for NIS(YP) and NIS+ in a IPv6 ready version
  *
  * @domain `github.com/thkukuk/libnsl`
  * @version `2.0.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/thkukuk/libnsl -- $SHELL -i`
- * @aliases `thkukuk/libnsl`
- * @dependencies `sourceforge.net/libtirpc`
+ * @install `launchpad install +github.com/thkukuk/libnsl -- $SHELL -i`
+ * @dependencies `sourceforge.net/libtirpc`, `freedesktop.org/pkg-config`, `gnu.org/gcc`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.thkukuklibnsl
- * // Or access via domain
- * const samePkg = pantry.githubcomthkukuklibnsl
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/thkukuk/libnsl"
+ * const pkg = pantry.githubcomthkukuklibnsl
+ * console.log(pkg.name)        // "libnsl"
  * console.log(pkg.description) // "This library contains the public client interfa..."
  * console.log(pkg.versions[0]) // "2.0.1" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/thkukuk/libnsl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const thkukuklibnslPackage = {
+export const githubcomthkukuklibnslPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/thkukuk/libnsl' as const,
+  name: 'libnsl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const thkukuklibnslPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/thkukuk/libnsl -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/thkukuk/libnsl -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,10 @@ export const thkukuklibnslPackage = {
    */
   dependencies: [
     'sourceforge.net/libtirpc',
+    'freedesktop.org/pkg-config',
+    'gnu.org/gcc',
+    'gnu.org/make',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -64,14 +63,7 @@ export const thkukuklibnslPackage = {
     '2.0.1',
     '2.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'thkukuk/libnsl',
-  ] as const,
-  fullPath: 'github.com/thkukuk/libnsl' as const,
+  aliases: [] as const,
 }
 
-export type ThkukuklibnslPackage = typeof thkukuklibnslPackage
+export type GithubcomthkukuklibnslPackage = typeof githubcomthkukuklibnslPackage

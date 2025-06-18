@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ruby-build`
  * @name `ruby-build`
- * @dependencies `openssl.org>=1.1`, `curl.se`, `gnu.org/autoconf^2.72`, ... (+3 more)
+ * @dependencies `openssl.org>=1.1`, `curl.se`, `gnu.org/autoconf^2.72`, ... (+4 more)
  * @companions `linux`
  *
  * @example
@@ -44,7 +44,7 @@ export const rubybuildPackage = {
   description: 'A tool to download, compile, and install Ruby on Unix-like systems.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rbenv.org/ruby-build/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/rbenv/ruby-build' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
@@ -75,6 +75,7 @@ export const rubybuildPackage = {
     'freedesktop.org/pkg-config',
     'gnu.org/readline^8.2',
     'pyyaml.org/libyaml^0.2',
+    'gnu.org/gcc<15',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -131,7 +132,6 @@ export const rubybuildPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'rbenv.org/ruby-build' as const,
 }
 
 export type RubybuildPackage = typeof rubybuildPackage

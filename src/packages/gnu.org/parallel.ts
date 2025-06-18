@@ -6,20 +6,15 @@
  * @version `20250522.0.0` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/parallel -- $SHELL -i`
- * @aliases `parallel`
+ * @install `launchpad install +gnu.org/parallel -- $SHELL -i`
  * @dependencies `perl.org@5`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.parallel
- * // Or access via domain
- * const samePkg = pantry.gnuorgparallel
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/parallel"
+ * const pkg = pantry.gnuorgparallel
+ * console.log(pkg.name)        // "parallel"
  * console.log(pkg.description) // "Shell command parallelization utility"
  * console.log(pkg.programs)    // ["env_parallel", "niceload", ...]
  * console.log(pkg.versions[0]) // "20250522.0.0" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/parallel.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const parallelPackage = {
+export const gnuorgparallelPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/parallel' as const,
+  name: 'parallel' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const parallelPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/parallel -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/parallel -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -94,14 +89,7 @@ export const parallelPackage = {
     '20240222.0.0',
     '20240122.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'parallel',
-  ] as const,
-  fullPath: 'gnu.org/parallel' as const,
+  aliases: [] as const,
 }
 
-export type ParallelPackage = typeof parallelPackage
+export type GnuorgparallelPackage = typeof gnuorgparallelPackage

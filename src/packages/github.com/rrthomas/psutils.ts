@@ -1,25 +1,20 @@
 /**
- * **rrthomas/psutils** - Utilities for manipulating PostScript documents
+ * **psutils** - Utilities for manipulating PostScript documents
  *
  * @domain `github.com/rrthomas/psutils`
  * @programs `psbook`, `psjoin`, `psnup`, `psresize`, `psselect`, ... (+1 more)
  * @version `3.3.10` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/rrthomas/psutils -- $SHELL -i`
- * @aliases `rrthomas/psutils`
- * @dependencies `pkgx.sh^1`, `github.com/rrthomas/libpaper`
+ * @install `launchpad install +github.com/rrthomas/psutils -- $SHELL -i`
+ * @dependencies `pkgx.sh^1`, `github.com/rrthomas/libpaper`, `python.org~3.11`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.rrthomaspsutils
- * // Or access via domain
- * const samePkg = pantry.githubcomrrthomaspsutils
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/rrthomas/psutils"
+ * const pkg = pantry.githubcomrrthomaspsutils
+ * console.log(pkg.name)        // "psutils"
  * console.log(pkg.description) // "Utilities for manipulating PostScript documents"
  * console.log(pkg.programs)    // ["psbook", "psjoin", ...]
  * console.log(pkg.versions[0]) // "3.3.10" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/rrthomas/psutils.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rrthomaspsutilsPackage = {
+export const githubcomrrthomaspsutilsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/rrthomas/psutils' as const,
+  name: 'psutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const rrthomaspsutilsPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/rrthomas/psutils -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/rrthomas/psutils -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,6 +64,8 @@ export const rrthomaspsutilsPackage = {
   dependencies: [
     'pkgx.sh^1',
     'github.com/rrthomas/libpaper',
+    'python.org~3.11',
+    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -92,14 +89,7 @@ export const rrthomaspsutilsPackage = {
     '3.1.0',
     '3.0.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'rrthomas/psutils',
-  ] as const,
-  fullPath: 'github.com/rrthomas/psutils' as const,
+  aliases: [] as const,
 }
 
-export type RrthomaspsutilsPackage = typeof rrthomaspsutilsPackage
+export type GithubcomrrthomaspsutilsPackage = typeof githubcomrrthomaspsutilsPackage

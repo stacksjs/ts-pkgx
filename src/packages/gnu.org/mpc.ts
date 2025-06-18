@@ -5,30 +5,26 @@
  * @version `1.3.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/mpc -- $SHELL -i`
- * @aliases `mpc`
+ * @install `launchpad install +gnu.org/mpc -- $SHELL -i`
+ * @dependencies `gnu.org/gmp>=4.2`, `gnu.org/mpfr^4`, `gnu.org/gmp>=4.2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mpc
- * // Or access via domain
- * const samePkg = pantry.gnuorgmpc
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/mpc"
+ * const pkg = pantry.gnuorgmpc
+ * console.log(pkg.name)        // "mpc"
  * console.log(pkg.versions[0]) // "1.3.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/mpc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mpcPackage = {
+export const gnuorgmpcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/mpc' as const,
+  name: 'mpc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,10 +40,19 @@ export const mpcPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/mpc -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/mpc -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gmp>=4.2',
+    'gnu.org/mpfr^4',
+    'gnu.org/gmp>=4.2',
+    'gnu.org/mpfr^4.0',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -55,14 +60,7 @@ export const mpcPackage = {
   versions: [
     '1.3.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mpc',
-  ] as const,
-  fullPath: 'gnu.org/mpc' as const,
+  aliases: [] as const,
 }
 
-export type MpcPackage = typeof mpcPackage
+export type GnuorgmpcPackage = typeof gnuorgmpcPackage

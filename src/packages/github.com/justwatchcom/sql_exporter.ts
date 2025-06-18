@@ -6,20 +6,21 @@
  * @version `0.5.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) sql_exporter`
- * @name `justwatchcom/sql_exporter`
- * @aliases `sql_exporter`
+ * @install `launchpad install sql_exporter`
+ * @name `sql_exporter`
+ * @aliases `justwatchcom/sql_exporter`
+ * @dependencies `git-scm.org`, `go.dev^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sqlexporter
  * // Or access via domain
  * const samePkg = pantry.githubcomjustwatchcomsql_exporter
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "justwatchcom/sql_exporter"
+ * console.log(pkg.name)        // "sql_exporter"
  * console.log(pkg.description) // "Database agnostic SQL exporter for Prometheus"
  * console.log(pkg.programs)    // ["sql_exporter"]
  * console.log(pkg.versions[0]) // "0.5.0" (latest)
@@ -32,7 +33,7 @@ export const sqlexporterPackage = {
   /**
    * The display name of this package.
    */
-  name: 'justwatchcom/sql_exporter' as const,
+  name: 'sql_exporter' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +49,7 @@ export const sqlexporterPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) sql_exporter' as const,
+  installCommand: 'launchpad install sql_exporter' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +58,14 @@ export const sqlexporterPackage = {
     'sql_exporter',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'git-scm.org',
+    'go.dev^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,9 +78,8 @@ export const sqlexporterPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'sql_exporter',
+    'justwatchcom/sql_exporter',
   ] as const,
-  fullPath: 'github.com/justwatchcom/sql_exporter' as const,
 }
 
 export type SqlexporterPackage = typeof sqlexporterPackage

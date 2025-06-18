@@ -1,11 +1,11 @@
-# pixi
+# prefix.dev
 
 > Package management made easy
 
 ## Package Information
 
 - **Domain**: `prefix.dev`
-- **Name**: `pixi`
+- **Name**: `prefix.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/prefix.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) pixi
+launchpad install pixi
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `pixi`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `pixi`
 
@@ -61,7 +67,10 @@ sh <(curl https://pkgx.sh) +prefix.dev@0.48.2 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
-- `libgit2.org~1.7`
+- `libgit2.org~1.7 # links to libgit2.so.1.7`
+- `rust-lang.org>=1.60`
+- `rust-lang.org/cargo`
+- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

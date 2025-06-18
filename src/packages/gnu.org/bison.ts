@@ -6,20 +6,15 @@
  * @version `3.8.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/bison -- $SHELL -i`
- * @aliases `bison`
+ * @install `launchpad install +gnu.org/bison -- $SHELL -i`
  * @dependencies `gnu.org/m4@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.bison
- * // Or access via domain
- * const samePkg = pantry.gnuorgbison
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/bison"
+ * const pkg = pantry.gnuorgbison
+ * console.log(pkg.name)        // "bison"
  * console.log(pkg.description) // "Parser generator"
  * console.log(pkg.programs)    // ["bison", "yacc"]
  * console.log(pkg.versions[0]) // "3.8.2" (latest)
@@ -28,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/bison.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bisonPackage = {
+export const gnuorgbisonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/bison' as const,
+  name: 'bison' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +43,7 @@ export const bisonPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/bison -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/bison -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,14 +67,7 @@ export const bisonPackage = {
   versions: [
     '3.8.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'bison',
-  ] as const,
-  fullPath: 'gnu.org/bison' as const,
+  aliases: [] as const,
 }
 
-export type BisonPackage = typeof bisonPackage
+export type GnuorgbisonPackage = typeof gnuorgbisonPackage

@@ -3,12 +3,12 @@
  *
  * @domain `github.com/kubernetes-sigs/aws-iam-authenticator`
  * @programs `aws-iam-authenticator`
- * @version `0.7.2` (20 versions available)
+ * @version `0.7.3` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) aws-iam-authenticator`
+ * @install `launchpad install aws-iam-authenticator`
  * @name `aws-iam-authenticator`
- * @aliases `kubernetes-sigs/aws-iam-authenticator`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "aws-iam-authenticator"
  * console.log(pkg.description) // "A tool to use AWS IAM credentials to authentica..."
  * console.log(pkg.programs)    // ["aws-iam-authenticator"]
- * console.log(pkg.versions[0]) // "0.7.2" (latest)
+ * console.log(pkg.versions[0]) // "0.7.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/kubernetes-sigs/aws-iam-authenticator.md
@@ -48,7 +48,7 @@ export const awsiamauthenticatorPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) aws-iam-authenticator' as const,
+  installCommand: 'launchpad install aws-iam-authenticator' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,12 +57,19 @@ export const awsiamauthenticatorPackage = {
     'aws-iam-authenticator',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.7.3',
     '0.7.2',
     '0.7.1',
     '0.6.31',
@@ -88,10 +95,7 @@ export const awsiamauthenticatorPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kubernetes-sigs/aws-iam-authenticator',
-  ] as const,
-  fullPath: 'github.com/kubernetes-sigs/aws-iam-authenticator' as const,
+  aliases: [] as const,
 }
 
 export type AwsiamauthenticatorPackage = typeof awsiamauthenticatorPackage

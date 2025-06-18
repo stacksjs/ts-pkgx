@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +people.redhat.com/sgrubb/libcap-ng -- $SHELL -i`
  * @name `libcap-ng`
- * @aliases `sgrubb/libcap-ng`
  *
  * @example
  * ```typescript
@@ -74,10 +73,7 @@ export const libcapngPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sgrubb/libcap-ng',
-  ] as const,
-  fullPath: 'people.redhat.com/sgrubb/libcap-ng' as const,
+  aliases: [] as const,
 }
 
 export type LibcapngPackage = typeof libcapngPackage

@@ -6,20 +6,20 @@
  * @version `2.6.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) aws-whoami`
- * @name `aws-whoami`
- * @aliases `benkehoe/aws-whoami-golang`
+ * @install `launchpad install aws-whoami`
+ * @aliases `aws-whoami`
+ * @dependencies `go.dev^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.awswhoami
  * // Or access via domain
  * const samePkg = pantry.githubcombenkehoeawswhoamigolang
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aws-whoami"
+ * console.log(pkg.name)        // "aws-whoami-golang"
  * console.log(pkg.description) // "A tool to show what AWS account and identity yo..."
  * console.log(pkg.programs)    // ["aws-whoami"]
  * console.log(pkg.versions[0]) // "2.6.0" (latest)
@@ -32,7 +32,7 @@ export const awswhoamiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'aws-whoami' as const,
+  name: 'aws-whoami-golang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const awswhoamiPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) aws-whoami' as const,
+  installCommand: 'launchpad install aws-whoami' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +57,13 @@ export const awswhoamiPackage = {
     'aws-whoami',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,9 +76,8 @@ export const awswhoamiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'benkehoe/aws-whoami-golang',
+    'aws-whoami',
   ] as const,
-  fullPath: 'github.com/benkehoe/aws-whoami-golang' as const,
 }
 
 export type AwswhoamiPackage = typeof awswhoamiPackage

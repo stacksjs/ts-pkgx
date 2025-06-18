@@ -6,10 +6,9 @@
  * @version `0.7.7` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) fastgron`
+ * @install `launchpad install fastgron`
  * @name `fastgron`
- * @aliases `adamritter/fastgron`
- * @dependencies `curl.se`, `linuxgnu.org/gcc`, `gnu.org/gcc`
+ * @dependencies `curl.se`, `gnu.org/gcc`, `gnu.org/bash^5`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const fastgronPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) fastgron' as const,
+  installCommand: 'launchpad install fastgron' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,8 +63,11 @@ export const fastgronPackage = {
    */
   dependencies: [
     'curl.se',
-    'linuxgnu.org/gcc',
     'gnu.org/gcc',
+    'gnu.org/bash^5',
+    'gnu.org/make',
+    'cmake.org^3',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -78,10 +80,7 @@ export const fastgronPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'adamritter/fastgron',
-  ] as const,
-  fullPath: 'github.com/adamritter/fastgron' as const,
+  aliases: [] as const,
 }
 
 export type FastgronPackage = typeof fastgronPackage

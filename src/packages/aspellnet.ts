@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +aspell.net -- $SHELL -i`
- * @companions `env`, `ASPELL_CONF`
+ * @dependencies `curl.se`, `gnu.org/patch`, `gnu.org/sed`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -59,15 +59,17 @@ export const aspellnetPackage = {
     'run-with-aspell',
     'word-list-compress',
   ] as const,
+  companions: [] as const,
   /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
+   * Required dependencies for this package.
+   * These will be automatically installed.
    */
-  companions: [
-    'env',
-    'ASPELL_CONF',
+  dependencies: [
+    'curl.se',
+    'gnu.org/patch',
+    'gnu.org/sed',
+    'sourceware.org/bzip2',
   ] as const,
-  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

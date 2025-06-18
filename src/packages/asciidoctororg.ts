@@ -8,7 +8,7 @@
  *
  * @install `launchpad install asciidoctor`
  * @aliases `asciidoctor`
- * @dependencies `ruby-lang.org`, `rubygems.org`
+ * @dependencies `ruby-lang.org^3.1`, `rubygems.org`, `rubygems.org`
  *
  * @example
  * ```typescript
@@ -62,7 +62,8 @@ export const asciidoctorPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'ruby-lang.org',
+    'ruby-lang.org^3.1',
+    'rubygems.org',
     'rubygems.org',
   ] as const,
   /**

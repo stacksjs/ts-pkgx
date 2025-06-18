@@ -1,11 +1,11 @@
-# talosctl
+# talos.dev
 
 > CLI for out-of-band management of Kubernetes nodes created by Talos
 
 ## Package Information
 
 - **Domain**: `talos.dev`
-- **Name**: `talosctl`
+- **Name**: `talos.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/talos.dev/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) talosctl
+launchpad install talosctl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `talosctl`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `talosctl`
 
@@ -44,6 +50,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +talos.dev@1.10.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.21`
+- `gnu.org/gcc`
 
 ## Usage Examples
 

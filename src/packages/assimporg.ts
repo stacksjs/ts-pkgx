@@ -8,7 +8,7 @@
  *
  * @install `launchpad install assimp`
  * @aliases `assimp`
- * @dependencies `zlib.net`
+ * @dependencies `zlib.net`, `gnu.org/make`, `cmake.org`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -63,6 +63,11 @@ export const assimpPackage = {
    */
   dependencies: [
     'zlib.net',
+    'gnu.org/make',
+    'cmake.org',
+    'ninja-build.org',
+    'curl.se',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,20 +6,20 @@
  * @version `2.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +lloyd.github.io/yajl -- $SHELL -i`
- * @name `json`
- * @aliases `yajl`
+ * @install `launchpad install +lloyd.github.io/yajl -- $SHELL -i`
+ * @aliases `json`
+ * @dependencies `cmake.org`, `gnu.org/gcc`, `gnu.org/make`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.json
  * // Or access via domain
  * const samePkg = pantry.lloydgithubioyajl
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "json"
+ * console.log(pkg.name)        // "yajl"
  * console.log(pkg.description) // "A fast streaming JSON parsing library in C."
  * console.log(pkg.programs)    // ["json_reformat", "json_verify"]
  * console.log(pkg.versions[0]) // "2.1.0" (latest)
@@ -32,7 +32,7 @@ export const jsonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'json' as const,
+  name: 'yajl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const jsonPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +lloyd.github.io/yajl -- $SHELL -i' as const,
+  installCommand: 'launchpad install +lloyd.github.io/yajl -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -58,7 +58,16 @@ export const jsonPackage = {
     'json_verify',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'gnu.org/gcc',
+    'gnu.org/make',
+    'freedesktop.org/pkg-config',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,9 +80,8 @@ export const jsonPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'yajl',
+    'json',
   ] as const,
-  fullPath: 'lloyd.github.io/yajl' as const,
 }
 
 export type JsonPackage = typeof jsonPackage

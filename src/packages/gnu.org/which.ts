@@ -6,7 +6,7 @@
  * @version `2.23.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) which`
+ * @install `launchpad install which`
  * @name `which`
  *
  * @example
@@ -46,7 +46,7 @@ export const whichPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) which' as const,
+  installCommand: 'launchpad install which' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,7 +70,6 @@ export const whichPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/which' as const,
 }
 
 export type WhichPackage = typeof whichPackage

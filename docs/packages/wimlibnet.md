@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +wimlib.net -- $SHELL -i
+launchpad install +wimlib.net -- $SHELL -i
 ```
 
 ## Programs
@@ -63,6 +63,7 @@ This package depends on:
 
 - `openssl.org^3.1.0`
 - `gnome.org/libxml2`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

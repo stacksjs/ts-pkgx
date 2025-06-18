@@ -6,19 +6,15 @@
  * @version `3.8.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +gnu.org/nettle -- $SHELL -i`
- * @aliases `nettle`
+ * @install `launchpad install +gnu.org/nettle -- $SHELL -i`
+ * @dependencies `gnu.org/gmp`, `gnu.org/m4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.nettle
- * // Or access via domain
- * const samePkg = pantry.gnuorgnettle
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnu.org/nettle"
+ * const pkg = pantry.gnuorgnettle
+ * console.log(pkg.name)        // "nettle"
  * console.log(pkg.description) // "A mirror of the nettle repository"
  * console.log(pkg.programs)    // ["nettle-hash", "nettle-lfib-stream", ...]
  * console.log(pkg.versions[0]) // "3.8.1" (latest)
@@ -27,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/nettle.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nettlePackage = {
+export const gnuorgnettlePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/nettle' as const,
+  name: 'nettle' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +43,7 @@ export const nettlePackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +gnu.org/nettle -- $SHELL -i' as const,
+  installCommand: 'launchpad install +gnu.org/nettle -- $SHELL -i' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -60,7 +56,14 @@ export const nettlePackage = {
     'sexp-conv',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gmp',
+    'gnu.org/m4',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -68,14 +71,7 @@ export const nettlePackage = {
   versions: [
     '3.8.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'nettle',
-  ] as const,
-  fullPath: 'gnu.org/nettle' as const,
+  aliases: [] as const,
 }
 
-export type NettlePackage = typeof nettlePackage
+export type GnuorgnettlePackage = typeof gnuorgnettlePackage

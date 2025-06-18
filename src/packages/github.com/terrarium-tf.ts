@@ -6,21 +6,20 @@
  * @version `1.3.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) terrarium`
- * @name `terrarium`
- * @aliases `github.com-terrarium-tf`
- * @dependencies `terraform.io`
+ * @install `launchpad install terrarium`
+ * @aliases `terrarium`
+ * @dependencies `terraform.io`, `go.dev^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.terrarium
  * // Or access via domain
  * const samePkg = pantry.githubcomterrariumtf
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "terrarium"
+ * console.log(pkg.name)        // "terrarium-tf"
  * console.log(pkg.description) // "terraform wrapper which transparent loads env f..."
  * console.log(pkg.programs)    // ["terrarium"]
  * console.log(pkg.versions[0]) // "1.3.2" (latest)
@@ -33,7 +32,7 @@ export const terrariumPackage = {
   /**
    * The display name of this package.
    */
-  name: 'terrarium' as const,
+  name: 'terrarium-tf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const terrariumPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) terrarium' as const,
+  installCommand: 'launchpad install terrarium' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const terrariumPackage = {
    */
   dependencies: [
     'terraform.io',
+    'go.dev^1.18',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -77,9 +77,8 @@ export const terrariumPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'github.com-terrarium-tf',
+    'terrarium',
   ] as const,
-  fullPath: 'github.com-terrarium-tf' as const,
 }
 
 export type TerrariumPackage = typeof terrariumPackage

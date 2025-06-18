@@ -6,7 +6,7 @@
  * @version `1.0.16` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) fribidi`
+ * @install `launchpad install fribidi`
  * @name `fribidi`
  *
  * @example
@@ -47,7 +47,7 @@ export const fribidiPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) fribidi' as const,
+  installCommand: 'launchpad install fribidi' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,7 +73,6 @@ export const fribidiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnu.org/fribidi' as const,
 }
 
 export type FribidiPackage = typeof fribidiPackage

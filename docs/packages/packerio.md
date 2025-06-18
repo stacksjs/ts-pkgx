@@ -1,11 +1,11 @@
-# packer
+# packer.io
 
 > Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.
 
 ## Package Information
 
 - **Domain**: `packer.io`
-- **Name**: `packer`
+- **Name**: `packer.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/packer.io/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) packer
+launchpad install packer
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `packer`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `packer`
 
@@ -41,6 +47,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +packer.io@1.13.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev^1.18`
 
 ## Usage Examples
 

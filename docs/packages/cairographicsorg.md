@@ -1,11 +1,11 @@
-# cairo-trace
+# cairographics.org
 
 > Vector graphics library with cross-device output support
 
 ## Package Information
 
 - **Domain**: `cairographics.org`
-- **Name**: `cairo-trace`
+- **Name**: `cairographics.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) cairo-trace
+launchpad install cairo-trace
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `cairo-trace`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `cairo-trace`
 
@@ -55,6 +61,12 @@ This package depends on:
 - `x.org/exts`
 - `x.org/xrender`
 - `oberhumer.com/lzo`
+- `freedesktop.org/pkg-config^0.29`
+- `libexpat.github.io=2.4.9`
+- `gnome.org/gobject-introspection@1`
+- `gnu.org/libtool^2`
+- `mesonbuild.com^1`
+- `ninja-build.org^1`
 
 ## Usage Examples
 

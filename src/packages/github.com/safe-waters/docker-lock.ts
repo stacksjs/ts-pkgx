@@ -8,8 +8,7 @@
  *
  * @install `launchpad install docker-lock`
  * @name `docker-lock`
- * @aliases `safe-waters/docker-lock`
- * @dependencies `docker.com/cli`, `curl.se/ca-certs`
+ * @dependencies `docker.com/cli`, `curl.se/ca-certs`, `go.dev^1.19`
  *
  * @example
  * ```typescript
@@ -64,6 +63,7 @@ export const dockerlockPackage = {
   dependencies: [
     'docker.com/cli',
     'curl.se/ca-certs',
+    'go.dev^1.19',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -76,10 +76,7 @@ export const dockerlockPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'safe-waters/docker-lock',
-  ] as const,
-  fullPath: 'github.com/safe-waters/docker-lock' as const,
+  aliases: [] as const,
 }
 
 export type DockerlockPackage = typeof dockerlockPackage

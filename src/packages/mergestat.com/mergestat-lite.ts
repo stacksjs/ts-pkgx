@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mergestat`
- * @name `mergestat`
- * @aliases `mergestat-lite`
+ * @aliases `mergestat`
+ * @dependencies `go.dev^1.19`, `cmake.org`, `git-scm.org`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.mergestat
  * // Or access via domain
  * const samePkg = pantry.mergestatcommergestatlite
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mergestat"
+ * console.log(pkg.name)        // "mergestat-lite"
  * console.log(pkg.description) // "Query git repositories with SQL. Generate repor..."
  * console.log(pkg.programs)    // ["mergestat"]
  * console.log(pkg.versions[0]) // "0.6.2" (latest)
@@ -32,7 +32,7 @@ export const mergestatPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mergestat' as const,
+  name: 'mergestat-lite' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const mergestatPackage = {
   description: 'Query git repositories with SQL. Generate reports, perform status checks, analyze codebases. 🔍 📊' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mergestat.com/mergestat-lite/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/mergestat/mergestat-lite' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
@@ -57,7 +57,20 @@ export const mergestatPackage = {
     'mergestat',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev^1.19',
+    'cmake.org',
+    'git-scm.org',
+    'libgit2.org~1.7 # links to libgit2.so.1.7',
+    'openssl.org',
+    'freedesktop.org/pkg-config',
+    'python.org^3',
+    'git-scm.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,9 +84,8 @@ export const mergestatPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'mergestat-lite',
+    'mergestat',
   ] as const,
-  fullPath: 'mergestat.com/mergestat-lite' as const,
 }
 
 export type MergestatPackage = typeof mergestatPackage

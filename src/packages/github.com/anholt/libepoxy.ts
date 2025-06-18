@@ -1,24 +1,19 @@
 /**
- * **anholt/libepoxy** - Epoxy is a library for handling OpenGL function pointer management for you
+ * **libepoxy** - Epoxy is a library for handling OpenGL function pointer management for you
  *
  * @domain `github.com/anholt/libepoxy`
  * @version `1.5.10` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/anholt/libepoxy -- $SHELL -i`
- * @aliases `anholt/libepoxy`
- * @dependencies `linuxx.org/x11mesa3d.org`, `x.org/x11`, `mesa3d.org`
+ * @install `launchpad install +github.com/anholt/libepoxy -- $SHELL -i`
+ * @dependencies `x.org/x11`, `mesa3d.org`, `mesonbuild.com`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.anholtlibepoxy
- * // Or access via domain
- * const samePkg = pantry.githubcomanholtlibepoxy
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/anholt/libepoxy"
+ * const pkg = pantry.githubcomanholtlibepoxy
+ * console.log(pkg.name)        // "libepoxy"
  * console.log(pkg.description) // "Epoxy is a library for handling OpenGL function..."
  * console.log(pkg.versions[0]) // "1.5.10" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/anholt/libepoxy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const anholtlibepoxyPackage = {
+export const githubcomanholtlibepoxyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/anholt/libepoxy' as const,
+  name: 'libepoxy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const anholtlibepoxyPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/anholt/libepoxy -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/anholt/libepoxy -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,9 +49,14 @@ export const anholtlibepoxyPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'linuxx.org/x11mesa3d.org',
     'x.org/x11',
     'mesa3d.org',
+    'mesonbuild.com',
+    'ninja-build.org',
+    'freedesktop.org/pkg-config',
+    'python.org>=3.1<3.12',
+    'freeglut.sourceforge.io',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +65,7 @@ export const anholtlibepoxyPackage = {
   versions: [
     '1.5.10',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'anholt/libepoxy',
-  ] as const,
-  fullPath: 'github.com/anholt/libepoxy' as const,
+  aliases: [] as const,
 }
 
-export type AnholtlibepoxyPackage = typeof anholtlibepoxyPackage
+export type GithubcomanholtlibepoxyPackage = typeof githubcomanholtlibepoxyPackage

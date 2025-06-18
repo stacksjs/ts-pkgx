@@ -1,24 +1,19 @@
 /**
- * **gabime/spdlog** - Fast C++ logging library.
+ * **spdlog** - Fast C++ logging library.
  *
  * @domain `github.com/gabime/spdlog`
  * @version `1.15.3` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +github.com/gabime/spdlog -- $SHELL -i`
- * @aliases `gabime/spdlog`
- * @dependencies `fmt.dev^11`
+ * @install `launchpad install +github.com/gabime/spdlog -- $SHELL -i`
+ * @dependencies `fmt.dev^11`, `cmake.org^3`, `llvm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gabimespdlog
- * // Or access via domain
- * const samePkg = pantry.githubcomgabimespdlog
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "github.com/gabime/spdlog"
+ * const pkg = pantry.githubcomgabimespdlog
+ * console.log(pkg.name)        // "spdlog"
  * console.log(pkg.description) // "Fast C++ logging library."
  * console.log(pkg.versions[0]) // "1.15.3" (latest)
  * ```
@@ -26,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/gabime/spdlog.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gabimespdlogPackage = {
+export const githubcomgabimespdlogPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/gabime/spdlog' as const,
+  name: 'spdlog' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +41,7 @@ export const gabimespdlogPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +github.com/gabime/spdlog -- $SHELL -i' as const,
+  installCommand: 'launchpad install +github.com/gabime/spdlog -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,6 +50,8 @@ export const gabimespdlogPackage = {
    */
   dependencies: [
     'fmt.dev^11',
+    'cmake.org^3',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -70,14 +67,7 @@ export const gabimespdlogPackage = {
     '1.13.0',
     '1.12.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'gabime/spdlog',
-  ] as const,
-  fullPath: 'github.com/gabime/spdlog' as const,
+  aliases: [] as const,
 }
 
-export type GabimespdlogPackage = typeof gabimespdlogPackage
+export type GithubcomgabimespdlogPackage = typeof githubcomgabimespdlogPackage

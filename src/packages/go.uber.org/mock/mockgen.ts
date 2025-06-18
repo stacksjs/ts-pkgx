@@ -6,10 +6,9 @@
  * @version `0.5.2` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) mockgen`
+ * @install `launchpad install mockgen`
  * @name `mockgen`
- * @aliases `mock/mockgen`
- * @dependencies `go.dev^1.20`
+ * @dependencies `go.dev^1.20`, `goreleaser.com`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -44,12 +43,12 @@ export const mockgenPackage = {
   description: 'GoMock is a mocking framework for the Go programming language.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/go.uber.org/mock/mockgen/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/uber-go/mock' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) mockgen' as const,
+  installCommand: 'launchpad install mockgen' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,8 @@ export const mockgenPackage = {
    */
   dependencies: [
     'go.dev^1.20',
+    'goreleaser.com',
+    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -80,10 +81,7 @@ export const mockgenPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mock/mockgen',
-  ] as const,
-  fullPath: 'go.uber.org/mock/mockgen' as const,
+  aliases: [] as const,
 }
 
 export type MockgenPackage = typeof mockgenPackage

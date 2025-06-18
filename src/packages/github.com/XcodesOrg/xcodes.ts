@@ -6,9 +6,8 @@
  * @version `1.6.2` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) xcodes`
+ * @install `launchpad install xcodes`
  * @name `xcodes`
- * @aliases `XcodesOrg/xcodes`
  * @companions `aria2.github.io`
  *
  * @example
@@ -49,7 +48,7 @@ export const xcodesPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) xcodes' as const,
+  installCommand: 'launchpad install xcodes' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,10 +79,7 @@ export const xcodesPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'XcodesOrg/xcodes',
-  ] as const,
-  fullPath: 'github.com/XcodesOrg/xcodes' as const,
+  aliases: [] as const,
 }
 
 export type XcodesPackage = typeof xcodesPackage

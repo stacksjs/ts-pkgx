@@ -1,11 +1,11 @@
-# litecli
+# litecli.com
 
 > CLI for SQLite Databases with auto-completion and syntax highlighting
 
 ## Package Information
 
 - **Domain**: `litecli.com`
-- **Name**: `litecli`
+- **Name**: `litecli.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/litecli.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) litecli
+launchpad install litecli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `litecli`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `litecli`
 
@@ -48,6 +54,7 @@ This package depends on:
 
 - `pkgx.sh^1`
 - `sqlite.org^3.45`
+- `python.org~3.12`
 
 ## Usage Examples
 

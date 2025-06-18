@@ -1,11 +1,11 @@
-# kaggle
+# kaggle.com
 
 > Official Kaggle API
 
 ## Package Information
 
 - **Domain**: `kaggle.com`
-- **Name**: `kaggle`
+- **Name**: `kaggle.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kaggle.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) kaggle
+launchpad install kaggle
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `kaggle`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `kaggle`
 
@@ -45,6 +51,8 @@ sh <(curl https://pkgx.sh) +kaggle.com@1.7.4.5 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
+- `python.org^3.12`
+- `llvm.org`
 
 ## Usage Examples
 

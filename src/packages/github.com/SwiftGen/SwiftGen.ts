@@ -6,20 +6,19 @@
  * @version `6.6.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) swiftgen`
- * @name `swiftgen`
- * @aliases `SwiftGen/SwiftGen`
+ * @install `launchpad install swiftgen`
+ * @aliases `swiftgen`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.swiftgen
  * // Or access via domain
  * const samePkg = pantry.githubcomswiftgenswiftgen
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "swiftgen"
+ * console.log(pkg.name)        // "SwiftGen"
  * console.log(pkg.description) // "The Swift code generator for your assets, story..."
  * console.log(pkg.programs)    // ["swiftgen"]
  * console.log(pkg.versions[0]) // "6.6.3" (latest)
@@ -32,7 +31,7 @@ export const swiftgenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'swiftgen' as const,
+  name: 'SwiftGen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +47,7 @@ export const swiftgenPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) swiftgen' as const,
+  installCommand: 'launchpad install swiftgen' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,9 +70,8 @@ export const swiftgenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'SwiftGen/SwiftGen',
+    'swiftgen',
   ] as const,
-  fullPath: 'github.com/SwiftGen/SwiftGen' as const,
 }
 
 export type SwiftgenPackage = typeof swiftgenPackage

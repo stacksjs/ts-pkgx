@@ -6,21 +6,20 @@
  * @version `7.5.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) pwsh`
- * @name `pwsh`
- * @aliases `PowerShell`
- * @dependencies `openssl.org^1.1`, `linuxunicode.org^71`, `unicode.org^71`
+ * @install `launchpad install pwsh`
+ * @aliases `pwsh`
+ * @dependencies `openssl.org^1.1`, `unicode.org^71`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.pwsh
  * // Or access via domain
  * const samePkg = pantry.microsoftcompowershell
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pwsh"
+ * console.log(pkg.name)        // "PowerShell"
  * console.log(pkg.description) // "PowerShell for every system!"
  * console.log(pkg.programs)    // ["pwsh"]
  * console.log(pkg.versions[0]) // "7.5.1" (latest)
@@ -33,7 +32,7 @@ export const pwshPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pwsh' as const,
+  name: 'PowerShell' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +48,7 @@ export const pwshPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) pwsh' as const,
+  installCommand: 'launchpad install pwsh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,8 +63,8 @@ export const pwshPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'linuxunicode.org^71',
     'unicode.org^71',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -84,9 +83,8 @@ export const pwshPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'PowerShell',
+    'pwsh',
   ] as const,
-  fullPath: 'microsoft.com/PowerShell' as const,
 }
 
 export type PwshPackage = typeof pwshPackage

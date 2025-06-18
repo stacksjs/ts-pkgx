@@ -5,19 +5,15 @@
  * @version `1.1.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +hadrons.org/libmd -- $SHELL -i`
- * @aliases `libmd`
+ * @install `launchpad install +hadrons.org/libmd -- $SHELL -i`
+ * @dependencies `gnu.org/patch`, `crates.io/semverator`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libmd
- * // Or access via domain
- * const samePkg = pantry.hadronsorglibmd
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "hadrons.org/libmd"
+ * const pkg = pantry.hadronsorglibmd
+ * console.log(pkg.name)        // "libmd"
  * console.log(pkg.description) // "BSD Mesage Digest library (mirror)"
  * console.log(pkg.versions[0]) // "1.1.0" (latest)
  * ```
@@ -25,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/hadrons-org/libmd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libmdPackage = {
+export const hadronsorglibmdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'hadrons.org/libmd' as const,
+  name: 'libmd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,10 +41,17 @@ export const libmdPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +hadrons.org/libmd -- $SHELL -i' as const,
+  installCommand: 'launchpad install +hadrons.org/libmd -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/patch',
+    'crates.io/semverator',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -57,14 +60,7 @@ export const libmdPackage = {
     '1.1.0',
     '1.0.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libmd',
-  ] as const,
-  fullPath: 'hadrons.org/libmd' as const,
+  aliases: [] as const,
 }
 
-export type LibmdPackage = typeof libmdPackage
+export type HadronsorglibmdPackage = typeof hadronsorglibmdPackage

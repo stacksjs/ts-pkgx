@@ -5,31 +5,26 @@
  * @version `1.1.8` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) +x.org/libfontenc -- $SHELL -i`
- * @aliases `libfontenc`
- * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`, ... (+1 more)
+ * @install `launchpad install +x.org/libfontenc -- $SHELL -i`
+ * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.libfontenc
- * // Or access via domain
- * const samePkg = pantry.xorglibfontenc
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "x.org/libfontenc"
+ * const pkg = pantry.xorglibfontenc
+ * console.log(pkg.name)        // "libfontenc"
  * console.log(pkg.versions[0]) // "1.1.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/libfontenc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libfontencPackage = {
+export const xorglibfontencPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/libfontenc' as const,
+  name: 'libfontenc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +40,7 @@ export const libfontencPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) +x.org/libfontenc -- $SHELL -i' as const,
+  installCommand: 'launchpad install +x.org/libfontenc -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -57,6 +52,7 @@ export const libfontencPackage = {
     'x.org/exts',
     'x.org/protocol',
     'zlib.net',
+    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -65,14 +61,7 @@ export const libfontencPackage = {
   versions: [
     '1.1.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'libfontenc',
-  ] as const,
-  fullPath: 'x.org/libfontenc' as const,
+  aliases: [] as const,
 }
 
-export type LibfontencPackage = typeof libfontencPackage
+export type XorglibfontencPackage = typeof xorglibfontencPackage

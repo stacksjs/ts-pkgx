@@ -6,10 +6,9 @@
  * @version `1.2.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) rexi`
+ * @install `launchpad install rexi`
  * @name `rexi`
- * @aliases `royreznik/rexi`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh^1`, `python.org>=3.8`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const rexiPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) rexi' as const,
+  installCommand: 'launchpad install rexi' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +63,7 @@ export const rexiPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
+    'python.org>=3.8',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -79,10 +79,7 @@ export const rexiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'royreznik/rexi',
-  ] as const,
-  fullPath: 'github.com/royreznik/rexi' as const,
+  aliases: [] as const,
 }
 
 export type RexiPackage = typeof rexiPackage

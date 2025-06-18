@@ -1,9 +1,12 @@
 /**
- * **gdal.org** - Package from pantry: gdal.org
+ * **gdal.org** - GDAL is an open source MIT licensed translator library for raster and vector geospatial data formats.
  *
  * @domain `gdal.org`
+ * @programs `gdaladdo`, `gdalbuildvrt`, `gdal-config`, `gdal_contour`, `gdal_create`, ... (+23 more)
+ * @version `3.11.0` (17 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install gdal.org`
+ * @install `launchpad install +gdal.org -- $SHELL -i`
  * @dependencies `apache.org/arrow`, `heasarc.gsfc.nasa.gov/cfitsio`, `epsilon-project.sourceforge.io`, ... (+47 more)
  *
  * @example
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.gdalorg
  * console.log(pkg.name)        // "gdal.org"
- * console.log(pkg.description) // "Package from pantry: gdal.org"
+ * console.log(pkg.description) // "GDAL is an open source MIT licensed translator ..."
+ * console.log(pkg.programs)    // ["gdaladdo", "gdalbuildvrt", ...]
+ * console.log(pkg.versions[0]) // "3.11.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gdal-org.md
@@ -30,13 +35,49 @@ export const gdalorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: gdal.org' as const,
+  description: 'GDAL is an open source MIT licensed translator library for raster and vector geospatial data formats.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gdal.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'launchpad install gdal.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +gdal.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gdaladdo',
+    'gdalbuildvrt',
+    'gdal-config',
+    'gdal_contour',
+    'gdal_create',
+    'gdaldem',
+    'gdalenhance',
+    'gdal_grid',
+    'gdalinfo',
+    'gdallocationinfo',
+    'gdalmanage',
+    'gdalmdiminfo',
+    'gdalmdimtranslate',
+    'gdal_rasterize',
+    'gdalsrsinfo',
+    'gdaltindex',
+    'gdaltransform',
+    'gdal_translate',
+    'gdal_viewshed',
+    'gdalwarp',
+    'gnmanalyse',
+    'gnmmanage',
+    'nearblack',
+    'ogr2ogr',
+    'ogrinfo',
+    'ogrlineref',
+    'ogrtindex',
+    'sozip',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -94,10 +135,30 @@ export const gdalorgPackage = {
     'doxygen.nl',
     'llvm.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gdal.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.11.0',
+    '3.10.3',
+    '3.10.2',
+    '3.10.1',
+    '3.10.0',
+    '3.9.3',
+    '3.9.2',
+    '3.9.1',
+    '3.9.0',
+    '3.8.5',
+    '3.8.4',
+    '3.8.3',
+    '3.8.2',
+    '3.8.1',
+    '3.8.0',
+    '3.7.3',
+    '3.7.2',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type GdalorgPackage = typeof gdalorgPackage

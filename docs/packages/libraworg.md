@@ -13,7 +13,7 @@
 
 ```bash
 # Install with pkgx
-sh <(curl https://pkgx.sh) +libraw.org -- $SHELL -i
+launchpad install +libraw.org -- $SHELL -i
 ```
 
 ## Programs
@@ -58,8 +58,16 @@ This package depends on:
 - `libjpeg-turbo.org`
 - `littlecms.com`
 - `zlib.net`
-- `darwinopenmp.llvm.org`
 - `openmp.llvm.org`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `gnu.org/libtool`
+- `freedesktop.org/pkg-config`
+- `llvm.org`
+- `gnu.org/gcc`
+- `gnu.org/gcc`
+- `gnu.org/wget`
+- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

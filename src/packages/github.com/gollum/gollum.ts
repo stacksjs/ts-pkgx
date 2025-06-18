@@ -6,10 +6,9 @@
  * @version `6.1.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `sh <(curl https://pkgx.sh) gollum`
+ * @install `launchpad install gollum`
  * @name `gollum`
- * @aliases `gollum/gollum`
- * @dependencies `ruby-lang.org^3.1`, `rubygems.org~3.3`
+ * @dependencies `ruby-lang.org^3.1`, `rubygems.org~3.3`, `cmake.org^3 # needed by the rugged gem`
  *
  * @example
  * ```typescript
@@ -49,7 +48,7 @@ export const gollumPackage = {
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'sh <(curl https://pkgx.sh) gollum' as const,
+  installCommand: 'launchpad install gollum' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,6 +64,7 @@ export const gollumPackage = {
   dependencies: [
     'ruby-lang.org^3.1',
     'rubygems.org~3.3',
+    'cmake.org^3 # needed by the rugged gem',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -80,10 +80,7 @@ export const gollumPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gollum/gollum',
-  ] as const,
-  fullPath: 'github.com/gollum/gollum' as const,
+  aliases: [] as const,
 }
 
 export type GollumPackage = typeof gollumPackage
