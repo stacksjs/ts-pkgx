@@ -33,7 +33,7 @@ export const evilmartiansPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from github.com/evilmartians' as const,
   packageYmlUrl: '' as const,
   homepageUrl: '' as const,
   githubUrl: '' as const,

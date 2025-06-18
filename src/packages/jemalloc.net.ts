@@ -32,7 +32,7 @@ export const jemallocnetPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from jemalloc.net' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jemalloc.net/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

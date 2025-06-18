@@ -35,7 +35,7 @@ export const gnutlsorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from gnutls.org' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnutls.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

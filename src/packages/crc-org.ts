@@ -33,7 +33,7 @@ export const crcorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from github.com/crc-org' as const,
   packageYmlUrl: '' as const,
   homepageUrl: '' as const,
   githubUrl: '' as const,

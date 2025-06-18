@@ -38,7 +38,7 @@ export const aribb24Package = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from code.videolan.org/aribb24' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/aribb24/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

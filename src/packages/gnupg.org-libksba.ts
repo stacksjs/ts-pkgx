@@ -37,7 +37,7 @@ export const libksbaPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from gnupg.org/libksba' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libksba/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

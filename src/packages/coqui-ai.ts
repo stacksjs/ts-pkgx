@@ -33,7 +33,7 @@ export const coquiaiPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from github.com/coqui-ai' as const,
   packageYmlUrl: '' as const,
   homepageUrl: '' as const,
   githubUrl: '' as const,

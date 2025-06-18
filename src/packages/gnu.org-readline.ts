@@ -38,7 +38,7 @@ export const readlinePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from gnu.org/readline' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/readline/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

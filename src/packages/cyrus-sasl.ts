@@ -37,7 +37,7 @@ export const cyrussaslPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from cyrusimap.org/cyrus-sasl' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cyrusimap.org/cyrus-sasl/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

@@ -33,7 +33,7 @@ export const helmfilePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from github.com/helmfile' as const,
   packageYmlUrl: '' as const,
   homepageUrl: '' as const,
   githubUrl: '' as const,

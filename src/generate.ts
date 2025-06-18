@@ -146,7 +146,7 @@ function extractPackageDataFromFile(content: string, domain: string): PkgxPackag
 
     // Extract all the package properties
     const name = extractString('name') || domain
-    const description = extractString('description') || ''
+    const description = extractString('description') || `A package from ${domain}`
     const packageYmlUrl = extractString('packageYmlUrl') || ''
     const homepageUrl = extractString('homepageUrl') || ''
     const githubUrl = extractString('githubUrl') || ''
@@ -762,11 +762,31 @@ async function extractAllAliases(packagesDir?: string): Promise<Record<string, s
       if (aliasesMatch && aliasesMatch[1]) {
         const aliases = aliasesMatch[1].match(/["']([^"']*)["']/g)
         if (aliases) {
-          // Add each alias to the map, but filter out shell commands
+          // Add each alias to the map - for explicit aliases, be more permissive
           for (const alias of aliases) {
             const cleanAlias = alias.replace(/["']/g, '')
 
-            if (cleanAlias && isValidAlias(cleanAlias, domain)) {
+            // For explicit aliases, only filter out shell commands and obvious invalid cases
+            const isExplicitlyInvalid = (
+              !cleanAlias
+              // Filter out shell command patterns (install scripts)
+              || cleanAlias.includes('--')
+              || cleanAlias.includes('$SHELL')
+              || cleanAlias.includes('curl')
+              || cleanAlias.includes('sh <(')
+              || cleanAlias.includes(' -- ')
+              || cleanAlias.includes(' -i')
+              || (cleanAlias.includes('+') && cleanAlias.includes(' '))
+              // Filter out template variables
+              || cleanAlias.includes('{{')
+              || cleanAlias.includes('}}')
+              || cleanAlias.includes('version.major')
+              || cleanAlias.includes('version.minor')
+              // Filter out if it's just the domain
+              || cleanAlias === domain
+            )
+
+            if (!isExplicitlyInvalid) {
               // Don't override predefined aliases from PACKAGE_ALIASES
               if (!allAliases[cleanAlias]) {
                 allAliases[cleanAlias] = domain
@@ -843,12 +863,15 @@ export async function generateAliases(packagesDir?: string): Promise<string> {
       fs.mkdirSync(aliasesDir, { recursive: true })
     }
 
+    // Include all aliases in the generated file (no duplicate removal here - that happens in constants file)
+    const filteredAliases: Record<string, string> = aliases
+
     // Generate the file content
     let content = '/**\n * Auto-generated aliases for pkgx packages\n */\n\n'
     content += 'export const aliases: Record<string, string> = {\n'
 
     // Sort aliases alphabetically
-    const sortedAliases = Object.entries(aliases).sort((a, b) => a[0].localeCompare(b[0]))
+    const sortedAliases = Object.entries(filteredAliases).sort((a, b) => a[0].localeCompare(b[0]))
 
     // Add each alias entry
     for (const [alias, domain] of sortedAliases) {

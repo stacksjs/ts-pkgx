@@ -37,7 +37,7 @@ export const autoconfarchivePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from gnu.org/autoconf-archive' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/autoconf-archive/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

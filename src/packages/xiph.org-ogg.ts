@@ -37,7 +37,7 @@ export const oggPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from xiph.org/ogg' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/xiph.org/ogg/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

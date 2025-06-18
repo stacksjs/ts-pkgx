@@ -38,7 +38,7 @@ export const xcompositePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from x.org/xcomposite' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xcomposite/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

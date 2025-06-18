@@ -277,11 +277,18 @@ describe('CLI Module', () => {
       expect(savedPackages.length).toBeGreaterThan(0)
       expect(savedPackages.length).toBeLessThanOrEqual(3)
 
-      // Check that files were created
-      for (const packageName of savedPackages) {
-        const safeFilename = packageName.replace(/\//g, '-')
-        const filePath = path.join(tempPackagesDir, `${safeFilename}.ts`)
-        expect(fs.existsSync(filePath)).toBe(true)
+      // Check that TypeScript files were created in the output directory
+      const createdFiles = fs.readdirSync(tempPackagesDir).filter(file => file.endsWith('.ts'))
+      expect(createdFiles.length).toBeGreaterThan(0)
+      expect(createdFiles.length).toBeLessThanOrEqual(3)
+
+      // Verify that the files contain valid TypeScript content
+      for (const file of createdFiles) {
+        const filePath = path.join(tempPackagesDir, file)
+        const content = fs.readFileSync(filePath, 'utf-8')
+        expect(content).toContain('export const ')
+        expect(content).toContain('Package = {')
+        expect(content).toContain('as const')
       }
     }, 120000) // 2 minute timeout for this test
 

@@ -33,7 +33,7 @@ export const videolanPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from code.videolan.org/videolan' as const,
   packageYmlUrl: '' as const,
   homepageUrl: '' as const,
   githubUrl: '' as const,

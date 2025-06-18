@@ -454,7 +454,18 @@ function sanitizeFilename(packageName: string): string {
   const sanitized = packageName.replace(/\{\{[^}]*\}\}/g, '').replace(/-{2,}/g, '-').replace(/^-+|-+$/g, '')
   if (!sanitized || sanitized.length === 0)
     return 'package'
-  return sanitized.replace(/[^\w.-]/g, '-')
+
+  let cleanName = sanitized.replace(/[^\w.-]/g, '-')
+
+  // Handle extremely long filenames to avoid ENAMETOOLONG errors
+  // Most filesystems support filenames up to 255 characters, but we'll be conservative
+  // and limit to 200 characters, leaving room for ".ts" extension
+  if (cleanName.length > 200) {
+    // Keep the first 150 characters and last 45 characters, separated by "..."
+    cleanName = `${cleanName.substring(0, 150)}...${cleanName.substring(cleanName.length - 45)}`
+  }
+
+  return cleanName
 }
 
 export function savePackageAsTypeScript(outputDir: string, domainName: string, packageInfo: PkgxPackage): string {
@@ -466,18 +477,21 @@ export function savePackageAsTypeScript(outputDir: string, domainName: string, p
   // Determine the best filename to use
   let filename: string
 
-  // If package has a valid name that's different from the domain, use the package name
-  // This handles cases like videolan.org/x264 where package name is "x264"
-  // and aws.amazon.com/cdk where package name is "aws/cdk" -> "aws-cdk"
-  if (packageInfo.name
+  // For nested domains (containing "/"), always use domain-based naming to avoid conflicts
+  // For simple domains, use package name if it's meaningful and different from domain
+  if (domainName.includes('/')) {
+    // Always use domain-based naming for nested packages like github.com/user/repo
+    filename = domainName.replace(/\//g, '-')
+  }
+  else if (packageInfo.name
     && packageInfo.name !== domainName
-    && packageInfo.name !== domainName.split('/')[0] // Don't use domain-only names
+    && packageInfo.name !== domainName.split('.')[0] // Don't use just the first part of domain
     && packageInfo.name.length > 1) {
-    // Use the package name for the filename, converting slashes to dashes
+    // Use the package name for simple domains when it makes sense
     filename = sanitizeFilename(packageInfo.name)
   }
   else {
-    // Fall back to the domain-based naming for cases where package name isn't suitable
+    // Fall back to the domain-based naming
     filename = domainName.replace(/\//g, '-')
   }
 

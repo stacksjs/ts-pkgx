@@ -32,7 +32,7 @@ export const cmockaorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from cmocka.org' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cmocka.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

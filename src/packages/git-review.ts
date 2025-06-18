@@ -40,7 +40,7 @@ export const gitreviewPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from opendev.org/git-review' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opendev.org/git-review/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

@@ -40,7 +40,7 @@ export const mandbPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from man-db.gitlab.io/man-db' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/man-db.gitlab.io/man-db/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

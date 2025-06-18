@@ -38,7 +38,7 @@ export const libxfont2Package = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from x.org/libxfont2' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/libxfont2/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

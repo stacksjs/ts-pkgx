@@ -85,7 +85,7 @@ export const encoregoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'go',
+    'encore-go',
   ] as const,
   fullPath: 'encore.dev/go' as const,
 }

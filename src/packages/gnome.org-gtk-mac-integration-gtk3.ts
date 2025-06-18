@@ -38,7 +38,7 @@ export const gtkmacintegrationgtk3Package = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from gnome.org/gtk-mac-integration-gtk3' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gtk-mac-integration-gtk3/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

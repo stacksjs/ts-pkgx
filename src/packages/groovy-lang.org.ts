@@ -35,7 +35,7 @@ export const groovylangorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from groovy-lang.org' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/groovy-lang.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

@@ -98,7 +98,6 @@ import { anholtPackage } from './anholt'
 import { ankitpokhrelPackage } from './ankitpokhrel'
 import { ansiblelintPackage } from './ansible-lint'
 import { ansiblePackage } from './ansible'
-import { antfuPackage } from './antfu'
 import { antimatter15Package } from './antimatter15'
 import { aomPackage } from './aom'
 import { aprPackage } from './apache.org-apr'
@@ -506,6 +505,7 @@ import { gittrimPackage } from './git-trim'
 import { gitPackage } from './git'
 import { git2Package } from './git2'
 import { giteaPackage } from './gitea'
+import { niPackage } from './github.com-antfu-ni'
 import { shakaprojectshakapackagerPackage } from './github.com-shaka-project-shaka-packager'
 import { githubPackage } from './github'
 import { gitlaborgPackage } from './gitlab-org'
@@ -1761,8 +1761,6 @@ export interface Pantry {
   ansible_com_ansible_lint: typeof ansiblelintPackage
   ansible: typeof ansiblePackage
   ansible_com: typeof ansiblePackage
-  antfu: typeof antfuPackage
-  github_com_antfu: typeof antfuPackage
   antimatter15: typeof antimatter15Package
   github_com_antimatter15: typeof antimatter15Package
   aom: typeof aomPackage
@@ -2489,6 +2487,7 @@ export interface Pantry {
   libgit2_org: typeof git2Package
   gitea: typeof giteaPackage
   git_osgeo_org_gitea: typeof giteaPackage
+  github_com_antfu_ni: typeof niPackage
   github_com_shaka_project_shaka_packager: typeof shakaprojectshakapackagerPackage
   github: typeof githubPackage
   github_com_github: typeof githubPackage
@@ -4523,8 +4522,6 @@ export const pantry: Pantry = {
   ansible_com_ansible_lint: ansiblelintPackage,
   ansible: ansiblePackage,
   ansible_com: ansiblePackage,
-  antfu: antfuPackage,
-  github_com_antfu: antfuPackage,
   antimatter15: antimatter15Package,
   github_com_antimatter15: antimatter15Package,
   aom: aomPackage,
@@ -5251,6 +5248,7 @@ export const pantry: Pantry = {
   libgit2_org: git2Package,
   gitea: giteaPackage,
   git_osgeo_org_gitea: giteaPackage,
+  github_com_antfu_ni: niPackage,
   github_com_shaka_project_shaka_packager: shakaprojectshakapackagerPackage,
   github: githubPackage,
   github_com_github: githubPackage,

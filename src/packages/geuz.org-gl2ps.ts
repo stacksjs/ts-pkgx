@@ -38,7 +38,7 @@ export const gl2psPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from geuz.org/gl2ps' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/geuz.org/gl2ps/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

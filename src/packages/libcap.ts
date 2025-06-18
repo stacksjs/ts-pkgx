@@ -39,7 +39,7 @@ export const libcapPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A package from kernel.org/libcap' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kernel.org/libcap/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
