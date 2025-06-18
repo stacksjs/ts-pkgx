@@ -71,7 +71,6 @@ export const apuPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'apu-{{',
     'apr-util',
   ] as const,
   fullPath: 'apache.org/apr-util' as const,

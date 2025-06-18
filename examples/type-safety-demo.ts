@@ -312,8 +312,8 @@ console.log('Platform info:', packageManager.getPlatformInfo())
 console.log('\n=== Traditional API Access ===')
 
 // Traditional pantry access still works
-const nodePackage = pantry.nodejs_org
-const pythonPackage = pantry.python_org
+const nodePackage = pantry.node
+const pythonPackage = pantry.python
 
 console.log('Node package (traditional):', nodePackage.name)
 console.log('Python package (traditional):', pythonPackage.name)
