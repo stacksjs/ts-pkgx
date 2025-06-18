@@ -245,7 +245,8 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
   // Latest version information
   if (packageInfo.versions && packageInfo.versions.length > 0) {
     lines.push(` * @version \`${packageInfo.versions[0]}\` (${packageInfo.versions.length} versions available)`)
-    lines.push(` * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/${domainName.replace(/\./g, '-')}.md`)
+    lines.push(` * @versions From newest version to oldest.`)
+    lines.push(` * @see https://ts-pkgx.netlify.app/packages/${domainName.replace(/\./g, '-')}.md`)
   }
 
   // Installation command
@@ -449,19 +450,37 @@ export type ${safeVarName.charAt(0).toUpperCase() + safeVarName.slice(1)} = type
 /**
  * Saves package data as a TypeScript file
  */
+function sanitizeFilename(packageName: string): string { let sanitized = packageName.replace(/\{\{[^}]*\}\}/g, "").replace(/-{2,}/g, "-").replace(/^-+|-+$/g, "");
+   if (!sanitized || sanitized.length === 0) { return "package";
+   } return sanitized.replace(/[^\w.-]/g, "-");
+   }
+
 export function savePackageAsTypeScript(outputDir: string, domainName: string, packageInfo: PkgxPackage): string {
   // Ensure output directory exists
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true })
   }
 
-  // Create a safe version of the domain name for the file name
-  // For paths like 'apple.com/remote_cmds', replace the slash with hyphen
-  // but preserve dots for better readability
-  const safeFilename = domainName.replace(/\//g, '-')
+  // Determine the best filename to use
+  let filename: string
 
-  // Create the TypeScript file path using the same name as JSON files
-  const filePath = path.join(outputDir, `${safeFilename}.ts`)
+  // If package has a valid name that's different from the domain, use the package name
+  // This handles cases like videolan.org/x264 where package name is "x264"
+  // and aws.amazon.com/cdk where package name is "aws/cdk" -> "aws-cdk"
+  if (packageInfo.name
+    && packageInfo.name !== domainName
+    && packageInfo.name !== domainName.split('/')[0] // Don't use domain-only names
+    && packageInfo.name.length > 1) {
+    // Use the package name for the filename, converting slashes to dashes
+    filename = sanitizeFilename(packageInfo.name)
+  }
+  else {
+    // Fall back to the domain-based naming for cases where package name isn't suitable
+    filename = domainName.replace(/\//g, '-')
+  }
+
+  // Create the TypeScript file path
+  const filePath = path.join(outputDir, `${filename}.ts`)
 
   // Remove fetchedAt from the package info before generating TypeScript
   const cleanPackageInfo = { ...packageInfo }
@@ -499,7 +518,8 @@ export function getValidCachedPackage(
     // Handle aliases - need to check the canonical name
     const resolvedName = aliases[packageName] || packageName
 
-    // Create a safe filename for the cache file - preserve dots, only replace slashes
+    // Create a safe filename for the cache file - always use domain-based naming for cache
+    // to ensure consistency regardless of package name extraction
     const safeFilename = resolvedName.replace(/\//g, '-')
     const cacheFilePath = path.join(cacheDir, `${safeFilename}.json`)
 
@@ -587,7 +607,7 @@ export function saveToCacheAndOutput(
     fs.mkdirSync(cacheDir, { recursive: true })
   }
 
-  // Create a safe filename for the cache file - preserve dots, only replace slashes
+  // Create a safe filename for the cache file - always use domain-based naming for cache
   const safeFilename = packageName.replace(/\//g, '-')
   const cacheFilePath = path.join(cacheDir, `${safeFilename}.json`)
 
@@ -601,7 +621,8 @@ export function saveToCacheAndOutput(
   }
 
   // Create TypeScript file in the output directory
-  const outputFilePath = savePackageAsTypeScript(outputDir, safeFilename, packageInfo)
+  // Pass the original packageName (domain) to savePackageAsTypeScript so it can decide the best filename
+  const outputFilePath = savePackageAsTypeScript(outputDir, packageName, packageInfo)
 
   return { cachePath: cacheFilePath, outputPath: outputFilePath }
 }
@@ -1145,20 +1166,18 @@ export async function fetchPkgxPackage(
 
       // Check if this looks like a package that should have dependencies
       // Most real packages have either programs, versions, or dependencies
-      const looksLikeRealPackage = packageInfo.programs.length > 0 || packageInfo.versions.length > 0
 
       // Additional validation: if description is generic, it might be a failed fetch
       const hasGenericDescription = packageInfo.description.includes('Package information for')
         || packageInfo.description.trim() === ''
         || packageInfo.description === `${packageName} package`
 
-      // If it looks like a real package but has suspicious data quality, log a warning
-      if (looksLikeRealPackage && packageInfo.dependencies.length === 0 && !hasAnyContent) {
-        console.warn(`⚠️  Package ${packageName} appears to have incomplete data (no dependencies, versions, or programs). This might be a fetch error.`)
+      // Be more lenient - don't warn about missing data unless it's clearly an error
+      if (packageInfo.description && packageInfo.description.toLowerCase().includes('go home')) {
+        console.warn(`⚠️  Package ${packageName} has error page description. This might be a fetch error.`)
       }
-
-      if (hasGenericDescription && !hasAnyContent) {
-        console.warn(`⚠️  Package ${packageName} has generic description and no substantial data. This might be a fetch error.`)
+      else if (hasGenericDescription && !hasAnyContent) {
+        console.warn(`⚠️  Package ${packageName} might have incomplete data, but proceeding anyway.`)
       }
 
       return { packageInfo, originalName, fullDomainName }
@@ -1310,6 +1329,7 @@ setupCleanupHandlers()
 
 // Add global error handlers to prevent crashes
 process.on('uncaughtException', (error) => {
+  const errorString = String(error)
   console.error('Uncaught exception caught:', error.message)
   if (error.message.includes('No target found for targetId')
     || error.message.includes('Assertion error')
@@ -1317,7 +1337,7 @@ process.on('uncaughtException', (error) => {
     || error.message.includes('Failed to connect')
     || error.message.includes('Connection closed')
     || error.message.includes('Protocol error')
-    || error.message.includes('WebSocket connection closed')
+    || errorString.includes('WebSocket connection closed')
     || error.message.includes('Browser has been closed')) {
     console.error('Browser/network connection error detected, continuing execution...')
     // Don't exit the process for browser/network errors
@@ -1383,42 +1403,54 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
   let allPackageNames: string[] = []
 
   try {
-    // Get package list from GitHub API first (fastest method)
+    // Use the comprehensive known packages list first (most complete)
+    const { ALL_KNOWN_PACKAGES } = await import('./consts')
+    allPackageNames = [...ALL_KNOWN_PACKAGES].filter(name =>
+      name && name !== 'undefined' && name !== 'aliases' && name !== 'index',
+    )
+
     if (!options.outputJson) {
-      console.log('Fetching package list from GitHub API...')
+      console.log(`Using comprehensive package list: ${allPackageNames.length} packages`)
     }
-    try {
-      const response = await fetch('https://api.github.com/repos/pkgxdev/pantry/contents/projects', {
-        headers: {
-          'User-Agent': 'ts-pkgx-fetcher',
-          'Accept': 'application/vnd.github.v3+json',
-        },
-      })
 
-      if (response.ok) {
-        const projects = await response.json() as Array<{ name: string, type: string }>
-        const packageNames = projects
-          .filter(item => item.type === 'dir')
-          .map(item => item.name)
-          .sort()
-
-        if (!options.outputJson) {
-          console.log(`Retrieved ${packageNames.length} projects from GitHub API`)
-        }
-        allPackageNames = packageNames
-      }
-      else {
-        throw new Error(`GitHub API returned ${response.status}`)
-      }
-    }
-    catch (error) {
+    // If that fails or is empty, fall back to GitHub API
+    if (allPackageNames.length === 0) {
       if (!options.outputJson) {
-        console.warn('Failed to fetch from GitHub API, falling back to local discovery:', error)
+        console.log('Falling back to GitHub API for package discovery...')
       }
-      // Fallback: scan existing package files
-      const existingFiles = fs.readdirSync(outputDir).filter(f => f.endsWith('.ts'))
-      allPackageNames = existingFiles.map(f => path.basename(f, '.ts'))
-      console.log(`Found ${allPackageNames.length} existing packages`)
+      try {
+        const response = await fetch('https://api.github.com/repos/pkgxdev/pantry/contents/projects', {
+          headers: {
+            'User-Agent': 'ts-pkgx-fetcher',
+            'Accept': 'application/vnd.github.v3+json',
+          },
+        })
+
+        if (response.ok) {
+          const projects = await response.json() as Array<{ name: string, type: string }>
+          const packageNames = projects
+            .filter(item => item.type === 'dir')
+            .map(item => item.name)
+            .sort()
+
+          if (!options.outputJson) {
+            console.log(`Retrieved ${packageNames.length} projects from GitHub API`)
+          }
+          allPackageNames = packageNames
+        }
+        else {
+          throw new Error(`GitHub API returned ${response.status}`)
+        }
+      }
+      catch (error) {
+        if (!options.outputJson) {
+          console.warn('Failed to fetch from GitHub API, falling back to local discovery:', error)
+        }
+        // Final fallback: scan existing package files
+        const existingFiles = fs.readdirSync(outputDir).filter(f => f.endsWith('.ts'))
+        allPackageNames = existingFiles.map(f => path.basename(f, '.ts'))
+        console.log(`Found ${allPackageNames.length} existing packages`)
+      }
     }
 
     if (allPackageNames.length === 0) {
@@ -1427,10 +1459,37 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
     }
 
     // Filter out packages that shouldn't exist as standalone packages
+    const PARENT_DOMAINS_ONLY = [
+      'android.com',
+      'apache.org',
+      'akuity.io',
+      'alsa-project.org',
+      'anchore.com',
+      'aomedia.googlesource.com',
+      'apollographql.com',
+      'facebook.com',
+      'google.com',
+      'microsoft.com',
+      'mozilla.org',
+      'sourceforge.net',
+      'x.org',
+      'xiph.org',
+      'yui.github.io',
+      'crates.io', // Only has nested packages like crates.io/ripgrep
+      'gitlab.com', // Only has nested packages
+      'github.com', // Only has nested packages
+    ]
+
     allPackageNames = allPackageNames.filter((name) => {
       // Filter out agwa.name as standalone - only agwa.name/git-crypt is valid
       if (name === 'agwa.name') {
         console.log(`Filtering out standalone agwa.name - only agwa.name/git-crypt is valid`)
+        return false
+      }
+
+      // Filter out known parent domains that don't have standalone packages
+      if (PARENT_DOMAINS_ONLY.includes(name)) {
+        console.log(`Filtering out parent domain ${name} - only has nested packages`)
         return false
       }
 
@@ -1442,7 +1501,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       return true
     })
 
-    console.log(`Found ${allPackageNames.length} packages from GitHub API`)
+    console.log(`Found ${allPackageNames.length} packages to process`)
 
     // Apply limit if specified
     if (options.limit && options.limit > 0) {
@@ -1686,15 +1745,13 @@ export async function fetchAndSavePackage(
         // We found valid cached data
         const { packageInfo } = cachedPackage
 
-        // Create a safe version of the fullDomainName for filenames
-        const safeFilename = packageName.replace(/\//g, '-')
         const fullDomainName = packageInfo.domain || packageName
 
         // Get aliases from the cached package
         const knownAliases = packageInfo.aliases || []
 
         // Save the package data to the output directory
-        const filePath: string = savePackageAsTypeScript(outputDir, safeFilename, packageInfo)
+        const filePath: string = savePackageAsTypeScript(outputDir, packageName, packageInfo)
 
         console.log(`Using cached data for ${packageName} (saved to ${filePath})`)
         return {
@@ -1824,7 +1881,7 @@ export async function fetchAndSavePackage(
         }
 
         // Always save the TypeScript file to the output directory
-        const filePath: string = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
+        const filePath: string = savePackageAsTypeScript(outputDir, fullDomainName, enhancedPackageInfo)
 
         console.log(`Successfully saved nested package ${packageName} to ${filePath} with aliases: ${knownAliases.join(', ') || 'none'}`)
         return {
@@ -1899,7 +1956,7 @@ export async function fetchAndSavePackage(
                   fs.writeFileSync(filePath, JSON.stringify(enhancedPackageInfo, null, 2))
                 }
                 else {
-                  filePath = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
+                  filePath = savePackageAsTypeScript(outputDir, packageName, enhancedPackageInfo)
                 }
 
                 console.log(`Successfully saved nested package to ${filePath} using alternative method`)
@@ -1962,10 +2019,22 @@ export async function fetchAndSavePackage(
         // Unwrap the proper result
         const { packageInfo, originalName, fullDomainName } = fetchResult as any
 
-        // Validate that we have meaningful package data before proceeding
-        const hasValidData = packageInfo.description && packageInfo.description.trim() !== ''
-          && packageInfo.description !== `Package information for ${packageName}`
-          && (packageInfo.versions.length > 0 || packageInfo.programs.length > 0 || packageInfo.packageYmlUrl)
+        // Validate that we have meaningful package data before proceeding - be more lenient
+        const hasDescription = packageInfo.description && packageInfo.description.trim() !== ''
+        const hasVersions = packageInfo.versions && packageInfo.versions.length > 0
+        const hasPrograms = packageInfo.programs && packageInfo.programs.length > 0
+        const hasPackageYml = packageInfo.packageYmlUrl && packageInfo.packageYmlUrl.length > 0
+
+        // Only skip if clearly problematic descriptions
+        const hasClearlyBadDescription = hasDescription && (
+          packageInfo.description.toLowerCase().trim() === 'go home.'
+          || packageInfo.description.toLowerCase().trim() === 'page not found'
+          || packageInfo.description.toLowerCase().trim() === 'not found'
+          || packageInfo.description.toLowerCase().trim() === '404'
+          || packageInfo.description.toLowerCase().trim() === 'error'
+        )
+
+        const hasValidData = (hasDescription && !hasClearlyBadDescription) || hasVersions || hasPrograms || hasPackageYml
 
         if (!hasValidData) {
           console.error(`Package ${packageName} appears to have no meaningful data. Skipping to avoid creating empty files.`)
@@ -1973,8 +2042,19 @@ export async function fetchAndSavePackage(
         }
 
         // Additional validation: Check if we're about to overwrite a file with better data
-        const checkSafeFilename = fullDomainName.replace(/\//g, '-')
-        const existingFilePath = path.join(outputDir, `${checkSafeFilename}.ts`)
+        // We need to check both possible filenames: package name and domain-based
+        const packageBasedFilename = packageInfo.name
+          && packageInfo.name !== fullDomainName
+          && packageInfo.name !== fullDomainName.split('/')[0]
+          && packageInfo.name.length > 1
+          && !packageInfo.name.includes('/')
+          ? sanitizeFilename(packageInfo.name)
+          : null
+        const domainBasedFilename = fullDomainName.replace(/\//g, '-')
+
+        const existingFilePath = packageBasedFilename
+          ? path.join(outputDir, `${packageBasedFilename}.ts`)
+          : path.join(outputDir, `${domainBasedFilename}.ts`)
 
         if (fs.existsSync(existingFilePath)) {
           const existingContent = fs.readFileSync(existingFilePath, 'utf-8')
@@ -2070,7 +2150,7 @@ export async function fetchAndSavePackage(
         }
 
         // Always save the TypeScript file to the output directory
-        const filePath: string = savePackageAsTypeScript(outputDir, safeFilename, enhancedPackageInfo)
+        const filePath: string = savePackageAsTypeScript(outputDir, fullDomainName, enhancedPackageInfo)
 
         console.log(`Successfully saved ${packageName} to ${filePath} with aliases: ${knownAliases.join(', ') || 'none'}`)
         return {
@@ -2148,3 +2228,7 @@ export async function fetchAndSavePackage(
     return fetchAndSavePackage(packageName, outputDir, timeout, saveAsJson, retryNumber + 1, maxRetries, debug, options)
   }
 }
+
+/**
+ * Check if a package has meaningful data and should be saved
+ */

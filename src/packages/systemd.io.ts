@@ -4,7 +4,8 @@
  * @domain `systemd.io`
  * @programs `busctl`, `coredumpctl`, `hostnamectl`, `journalctl`, `kernel-install`, ... (+50 more)
  * @version `257.6.0` (26 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/systemd-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/systemd-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +systemd.io -- $SHELL -i`
  * @dependencies `libexpat.github.io`, `google.com/fullycapable`, `lz4.org`, ... (+10 more)

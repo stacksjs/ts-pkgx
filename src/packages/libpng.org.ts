@@ -4,7 +4,8 @@
  * @domain `libpng.org`
  * @programs `libpng-config`, `libpng16-config`, `png-fix-itxt`, `pngfix`
  * @version `1.6.49` (12 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libpng-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libpng-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i`
  * @dependencies `zlib.net@1`

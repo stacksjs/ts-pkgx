@@ -4,7 +4,8 @@
  * @domain `cfssl.org`
  * @programs `cfssl`, `cfssl-bundle`, `cfssl-certinfo`, `cfssl-newkey`, `cfssl-scan`, ... (+3 more)
  * @version `1.6.5` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cfssl-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/cfssl-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +cfssl.org -- $SHELL -i`
  *

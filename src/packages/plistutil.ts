@@ -1,0 +1,83 @@
+/**
+ * **plistutil** - A library to handle Apple Property List format in binary or XML
+ *
+ * @domain `libimobiledevice.org/libplist`
+ * @programs `plistutil`
+ * @version `2.7.0` (5 versions available)
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libimobiledevice-org/libplist.md
+ *
+ * @install `sh <(curl https://pkgx.sh) plistutil`
+ * @name `plistutil`
+ * @aliases `libplist`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access the package
+ * const pkg = pantry.plistutil
+ * // Or access via domain
+ * const samePkg = pantry.libimobiledeviceorglibplist
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "plistutil"
+ * console.log(pkg.description) // "A library to handle Apple Property List format ..."
+ * console.log(pkg.programs)    // ["plistutil"]
+ * console.log(pkg.versions[0]) // "2.7.0" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/libimobiledevice-org/libplist.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const plistutilPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'plistutil' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'libimobiledevice.org/libplist' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: 'A library to handle Apple Property List format in binary or XML' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/libplist/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'sh <(curl https://pkgx.sh) plistutil' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'plistutil',
+  ] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.7.0',
+    '2.6.0',
+    '2.5.0',
+    '2.4.0',
+    '2.3.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'libplist',
+  ] as const,
+  fullPath: 'libimobiledevice.org/libplist' as const,
+}
+
+export type PlistutilPackage = typeof plistutilPackage

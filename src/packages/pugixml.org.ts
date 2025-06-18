@@ -3,7 +3,8 @@
  *
  * @domain `pugixml.org`
  * @version `1.15.0` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pugixml-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/pugixml-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +pugixml.org -- $SHELL -i`
  *

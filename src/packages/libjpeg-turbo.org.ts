@@ -4,7 +4,8 @@
  * @domain `libjpeg-turbo.org`
  * @programs `cjpeg`, `djpeg`, `jpegtran`, `rdjpgcom`, `tjbench`, ... (+1 more)
  * @version `3.1.1` (8 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libjpeg-turbo-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libjpeg-turbo-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libjpeg-turbo.org -- $SHELL -i`
  *

@@ -1,9 +1,12 @@
 /**
- * **libsodium.org** - Crafters of fine Open Source products
+ * **libsodium.org** - pkgx package
  *
  * @domain `libsodium.org`
+ * @version `1.0.20` (4 versions available)
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libsodium-org.md
  *
- * @install `pkgx libsodium.org`
+ * @install `sh <(curl https://pkgx.sh) +libsodium.org -- $SHELL -i`
  *
  * @example
  * ```typescript
@@ -11,7 +14,7 @@
  *
  * const pkg = pantry.libsodiumorg
  * console.log(pkg.name)        // "libsodium.org"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.versions[0]) // "1.0.20" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libsodium-org.md
@@ -23,25 +26,36 @@ export const libsodiumorgPackage = {
    */
   name: 'libsodium.org' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/libsodium.org/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'libsodium.org' as const,
-  fullPath: 'libsodium.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libsodium.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx libsodium.org' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +libsodium.org -- $SHELL -i' as const,
+  programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.0.20',
+    '1.0.19',
+    '1.0.18',
+    '1.0.17',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'libsodium.org' as const,
 }
 
 export type LibsodiumorgPackage = typeof libsodiumorgPackage

@@ -4,7 +4,8 @@
  * @domain `php.net`
  * @programs `pear`, `pecl`, `phar`, `php`, `php-cgi`, ... (+3 more)
  * @version `8.4.8` (73 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/php-net.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/php-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +php.net -- $SHELL -i`
  * @aliases `php`

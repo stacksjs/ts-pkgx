@@ -3,7 +3,8 @@
  *
  * @domain `python-pillow.org`
  * @version `11.2.1` (6 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/python-pillow-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/python-pillow-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +python-pillow.org -- $SHELL -i`
  * @dependencies `libjpeg-turbo.org^2`, `pngquant.org/lib^4`, `simplesystems.org/libtiff^4`, ... (+7 more)

@@ -4,7 +4,8 @@
  * @domain `glew.sourceforge.io`
  * @programs `glewinfo`, `visualinfo`
  * @version `2.2.0` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/glew-sourceforge-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/glew-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +glew.sourceforge.io -- $SHELL -i`
  *

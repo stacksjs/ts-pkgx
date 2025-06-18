@@ -4,7 +4,8 @@
  * @domain `erlang.org`
  * @programs `ct_run`, `dialyzer`, `epmd`, `erl`, `erlc`, ... (+4 more)
  * @version `28.0.1` (75 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/erlang-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/erlang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +erlang.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `invisible-island.net/ncurses`, `linux/x86-64gnu.org/gcc/libstdcxx`, ... (+1 more)

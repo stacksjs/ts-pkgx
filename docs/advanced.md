@@ -162,7 +162,7 @@ ${pkg.dependencies.length ? pkg.dependencies.map(d => `- ${d}`).join('\n') : 'No
 You can extend the built-in package aliases system:
 
 ```typescript
-import { PACKAGE_ALIASES } from 'ts-pkgx'
+import { aliases as PACKAGE_ALIASES } from 'ts-pkgx'
 
 // Add custom aliases
 function extendAliases(customAliases: Record<string, string>): void {

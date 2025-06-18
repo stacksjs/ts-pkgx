@@ -3,7 +3,8 @@
  *
  * @domain `libuv.org`
  * @version `1.51.0` (10 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libuv-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libuv-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libuv.org -- $SHELL -i`
  *

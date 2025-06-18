@@ -4,7 +4,8 @@
  * @domain `kotlinlang.org`
  * @programs `kapt`, `kotlin`, `kotlinc`, `kotlinc-js`, `kotlinc-jvm`
  * @version `2.1.21` (16 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kotlinlang-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/kotlinlang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +kotlinlang.org -- $SHELL -i`
  * @dependencies `openjdk.org`

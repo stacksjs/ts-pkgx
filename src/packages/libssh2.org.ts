@@ -3,7 +3,8 @@
  *
  * @domain `libssh2.org`
  * @version `1.11.1` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libssh2-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libssh2-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libssh2.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `zlib.net^1.2`

@@ -4,7 +4,8 @@
  * @domain `nasm.us`
  * @programs `nasm`, `ndisasm`
  * @version `2.16.3` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nasm-us.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/nasm-us.md
  *
  * @install `sh <(curl https://pkgx.sh) +nasm.us -- $SHELL -i`
  *

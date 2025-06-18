@@ -3,7 +3,8 @@
  *
  * @domain `browser-use.com`
  * @version `0.2.7` (19 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/browser-use-com.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/browser-use-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +browser-use.com -- $SHELL -i`
  * @dependencies `python.org~3.12`

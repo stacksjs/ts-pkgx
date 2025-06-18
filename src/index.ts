@@ -1,5 +1,5 @@
 export * from './cli-utils'
-export { ALL_KNOWN_PACKAGES, DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS, PACKAGE_ALIASES } from './consts'
+export * from './consts'
 export {
   cleanupBrowserResources,
   fetchAndSaveAllPackages,

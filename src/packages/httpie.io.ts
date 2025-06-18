@@ -4,7 +4,8 @@
  * @domain `httpie.io`
  * @programs `http`, `httpie`, `https`
  * @version `3.2.4` (4 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/httpie-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/httpie-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +httpie.io -- $SHELL -i`
  * @dependencies `python.org>=3<3.12`

@@ -4,7 +4,8 @@
  * @domain `htslib.org`
  * @programs `bgzip`, `htsfile`, `tabix`
  * @version `1.22.0` (6 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/htslib-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/htslib-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +htslib.org -- $SHELL -i`
  * @dependencies `sourceware.org/bzip2`, `tukaani.org/xz`, `zlib.net^1`, ... (+1 more)

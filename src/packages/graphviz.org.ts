@@ -4,7 +4,8 @@
  * @domain `graphviz.org`
  * @programs `acyclic`, `bcomps`, `ccomps`, `circo`, `cluster`, ... (+30 more)
  * @version `13.0.1` (13 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/graphviz-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/graphviz-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +graphviz.org -- $SHELL -i`
  * @dependencies `cairographics.org^1.1.10`, `freedesktop.org/fontconfig^2.3.95`, `freetype.org^2.1.0`, ... (+7 more)

@@ -4,7 +4,8 @@
  * @domain `qhull.org`
  * @programs `qconvex`, `qdelaunay`, `qhalf`, `qhull`, `qvoronoi`, ... (+1 more)
  * @version `8.0.2` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/qhull-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/qhull-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +qhull.org -- $SHELL -i`
  *

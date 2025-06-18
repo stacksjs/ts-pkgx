@@ -4,7 +4,8 @@
  * @domain `flutter.dev`
  * @programs `flutter`, `dart`
  * @version `3.32.4` (48 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/flutter-dev.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/flutter-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i`
  * @dependencies `git-scm.org`, `tukaani.org/xz`, `gnu.org/which`, ... (+4 more)

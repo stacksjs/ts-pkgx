@@ -4,7 +4,8 @@
  * @domain `nmap.org`
  * @programs `nmap`, `ncat`, `nping`
  * @version `7.97.0` (5 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nmap-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/nmap-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +nmap.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `pcre.org/v2^10`

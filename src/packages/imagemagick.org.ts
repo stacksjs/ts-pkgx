@@ -4,7 +4,8 @@
  * @domain `imagemagick.org`
  * @programs `animate`, `compare`, `composite`, `conjure`, `convert`, ... (+11 more)
  * @version `7.1.1.27` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/imagemagick-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/imagemagick-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +imagemagick.org -- $SHELL -i`
  * @dependencies `libpng.org`, `ijg.org`, `freetype.org`, ... (+22 more)

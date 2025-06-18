@@ -4,7 +4,8 @@
  * @domain `freetds.org`
  * @programs `bsqldb`, `bsqlodbc`, `datacopy`, `defncopy`, `fisql`, ... (+4 more)
  * @version `1.5.2` (31 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/freetds-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/freetds-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +freetds.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `unixodbc.org`, `kerberos.org`, ... (+1 more)

@@ -14,7 +14,7 @@ import {
   generateAliases,
   generateDocs,
   generateIndex,
-  PACKAGE_ALIASES,
+  aliases as PACKAGE_ALIASES,
   savePackageAsTypeScript,
 } from '../src/index'
 

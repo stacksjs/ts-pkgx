@@ -4,7 +4,8 @@
  * @domain `vlang.io`
  * @programs `v`
  * @version `0.4.10` (14 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vlang-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/vlang-io.md
  *
  * @install `sh <(curl https://pkgx.sh) v`
  *

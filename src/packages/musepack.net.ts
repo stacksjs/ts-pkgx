@@ -4,7 +4,8 @@
  * @domain `musepack.net`
  * @programs `mpc2sv8`, `mpcchap`, `mpccut`, `mpcdec`, `mpcenc`, ... (+2 more)
  * @version `475.0.0` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/musepack-net.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/musepack-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i`
  * @dependencies `musepack.net/libreplaygain`, `musepack.net/libcuefile`

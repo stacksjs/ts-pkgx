@@ -1,9 +1,12 @@
 /**
- * **docbook.org** - Crafters of fine Open Source products
+ * **docbook.org** - pkgx package
  *
  * @domain `docbook.org`
+ * @version `5.1.0` (1 versions available)
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/docbook-org.md
  *
- * @install `pkgx docbook.org`
+ * @install `sh <(curl https://pkgx.sh) +docbook.org -- $SHELL -i`
  *
  * @example
  * ```typescript
@@ -11,7 +14,7 @@
  *
  * const pkg = pantry.docbookorg
  * console.log(pkg.name)        // "docbook.org"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.versions[0]) // "5.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/docbook-org.md
@@ -23,25 +26,33 @@ export const docbookorgPackage = {
    */
   name: 'docbook.org' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/docbook.org/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'docbook.org' as const,
-  fullPath: 'docbook.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docbook.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx docbook.org' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +docbook.org -- $SHELL -i' as const,
+  programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.1.0',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'docbook.org' as const,
 }
 
 export type DocbookorgPackage = typeof docbookorgPackage

@@ -4,7 +4,8 @@
  * @domain `ghostscript.com`
  * @programs `dvipdf`, `eps2eps`, `gpcl6`, `gpcl6c`, `gpdlc`, ... (+28 more)
  * @version `10.5.1` (7 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ghostscript-com.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/ghostscript-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +ghostscript.com -- $SHELL -i`
  * @dependencies `zlib.net^1.2`, `libpng.org^1.6`, `libjpeg-turbo.org^2`, ... (+8 more)

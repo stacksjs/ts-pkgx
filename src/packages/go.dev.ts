@@ -4,7 +4,8 @@
  * @domain `go.dev`
  * @programs `go`, `gofmt`
  * @version `1.24.4` (68 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/go-dev.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/go-dev.md
  *
  * @install `sh <(curl https://pkgx.sh) +go.dev -- $SHELL -i`
  * @aliases `go`

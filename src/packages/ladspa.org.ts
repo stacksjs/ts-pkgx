@@ -4,7 +4,8 @@
  * @domain `ladspa.org`
  * @programs `analyseplugin`, `applyplugin`, `listplugins`
  * @version `1.17.0` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ladspa-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/ladspa-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +ladspa.org -- $SHELL -i`
  * @dependencies `github.com/libsndfile/libsndfile^1.2`

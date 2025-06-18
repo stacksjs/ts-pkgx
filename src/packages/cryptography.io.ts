@@ -3,7 +3,8 @@
  *
  * @domain `cryptography.io`
  * @version `45.0.4` (21 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cryptography-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/cryptography-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i`
  * @dependencies `python.org>=3.11`, `github.com/python-cffi/cffi^1.16`, `openssl.org>=1.1`

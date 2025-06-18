@@ -4,7 +4,8 @@
  * @domain `netpbm.sourceforge.net`
  * @programs `411toppm`, `asciitopgm`, `atktopbm`, `avstopam`, `bioradtopgm`, ... (+310 more)
  * @version `10.86.46` (10 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/netpbm-sourceforge-net.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/netpbm-sourceforge-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +netpbm.sourceforge.net -- $SHELL -i`
  * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `libpng.org`, ... (+3 more)

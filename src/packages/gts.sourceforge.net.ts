@@ -4,7 +4,8 @@
  * @domain `gts.sourceforge.net`
  * @programs `delaunay`, `gts2dxf`, `gts2oogl`, `gts2stl`, `gtscheck`, ... (+4 more)
  * @version `0.7.6` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gts-sourceforge-net.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/gts-sourceforge-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +gts.sourceforge.net -- $SHELL -i`
  * @dependencies `gnome.org/glib>=2.4.0`

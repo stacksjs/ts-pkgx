@@ -4,7 +4,8 @@
  * @domain `harfbuzz.org`
  * @programs `hb-ot-shape-closure`, `hb-shape`, `hb-subset`, `hb-view`
  * @version `11.2.1` (28 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/harfbuzz-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/harfbuzz-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +harfbuzz.org -- $SHELL -i`
  * @dependencies `cairographics.org@1`, `freetype.org@2`, `gnome.org/glib@2`, ... (+2 more)

@@ -4,7 +4,8 @@
  * @domain `open-mpi.org`
  * @programs `mpic++`, `mpiCC`, `mpicc`, `mpicxx`, `mpiexec`, ... (+6 more)
  * @version `5.0.8` (11 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/open-mpi-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/open-mpi-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +open-mpi.org -- $SHELL -i`
  * @dependencies `open-mpi.org/hwloc`, `openpmix.github.io@5`, `libevent.org`

@@ -4,7 +4,8 @@
  * @domain `classic.yarnpkg.com`
  * @programs `yarn`, `yarnpkg`
  * @version `1.22.22` (4 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/classic-yarnpkg-com.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/classic-yarnpkg-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i`
  * @dependencies `nodejs.org>=5`

@@ -3,7 +3,8 @@
  *
  * @domain `rapidjson.org`
  * @version `1.1.0` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rapidjson-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/rapidjson-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +rapidjson.org -- $SHELL -i`
  *

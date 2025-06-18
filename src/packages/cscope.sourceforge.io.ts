@@ -4,7 +4,8 @@
  * @domain `cscope.sourceforge.io`
  * @programs `cscope`, `ocs`
  * @version `15.9.0` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/cscope-sourceforge-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/cscope-sourceforge-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +cscope.sourceforge.io -- $SHELL -i`
  * @dependencies `invisible-island.net/ncurses`

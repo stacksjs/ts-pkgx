@@ -4,7 +4,8 @@
  * @domain `openresty.org`
  * @programs `nginx-xml2pod`, `opm`, `resty`, `restydoc`, `restydoc-index`
  * @version `1.25.3.2` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openresty-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/openresty-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openresty.org -- $SHELL -i`
  * @dependencies `pcre.org@8`, `openssl.org^1.1`, `zlib.net^1.2`, ... (+1 more)

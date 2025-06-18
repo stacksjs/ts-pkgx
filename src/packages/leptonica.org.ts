@@ -4,7 +4,8 @@
  * @domain `leptonica.org`
  * @programs `convertfilestopdf`, `convertfilestops`, `convertformat`, `convertsegfilestopdf`, `convertsegfilestops`, ... (+5 more)
  * @version `1.85.0` (4 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/leptonica-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/leptonica-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +leptonica.org -- $SHELL -i`
  * @dependencies `giflib.sourceforge.io@5`, `libjpeg-turbo.org@2`, `libpng.org@1`, ... (+3 more)

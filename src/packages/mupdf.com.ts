@@ -4,7 +4,8 @@
  * @domain `mupdf.com`
  * @programs `mupdf-gl`, `muraster`, `mutool`
  * @version `1.26.2` (28 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mupdf-com.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/mupdf-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +mupdf.com -- $SHELL -i`
  * @dependencies `zlib.net^1`, `openssl.org^1.1`, `info-zip.org/unzip^6`, ... (+19 more)

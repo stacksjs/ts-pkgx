@@ -4,7 +4,8 @@
  * @domain `pkl-lang.org`
  * @programs `jpkl`, `pkl`
  * @version `0.28.2` (12 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/pkl-lang-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/pkl-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +pkl-lang.org -- $SHELL -i`
  * @companions `openjdk.org`

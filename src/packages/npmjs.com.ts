@@ -4,7 +4,8 @@
  * @domain `npmjs.com`
  * @programs `npm`, `npx`
  * @version `11.4.2` (60 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/npmjs-com.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/npmjs-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i`
  * @dependencies `nodejs.org`

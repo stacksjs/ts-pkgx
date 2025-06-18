@@ -3,7 +3,8 @@
  *
  * @domain `fna-xna.github.io`
  * @version `25.6.0` (18 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/fna-xna-github-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/fna-xna-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +fna-xna.github.io -- $SHELL -i`
  * @dependencies `libsdl.org^2.28`

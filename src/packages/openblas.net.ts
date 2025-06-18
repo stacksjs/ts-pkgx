@@ -3,7 +3,8 @@
  *
  * @domain `openblas.net`
  * @version `0.3.29` (7 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openblas-net.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/openblas-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +openblas.net -- $SHELL -i`
  *

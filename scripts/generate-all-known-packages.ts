@@ -1,67 +1,38 @@
 #!/usr/bin/env bun
 
-import fs from 'node:fs'
-import path from 'node:path'
+/**
+ * This script generates the ALL_KNOWN_PACKAGES array by scraping
+ * the pkgx S3 registry instead of relying on existing files.
+ *
+ * This is a wrapper around the scrape-registry-packages.ts script.
+ */
+
+import { spawn } from 'bun'
 import process from 'node:process'
 
-/**
- * This script scans all package files in src/packages/ and generates
- * the ALL_KNOWN_PACKAGES array for src/fetch.ts
- */
+async function main() {
+  console.log('🚀 Generating ALL_KNOWN_PACKAGES from pkgx S3 registry...')
+  console.log('This will scrape all packages from https://dist.pkgx.dev and validate them.')
+  console.log()
 
-const PACKAGES_DIR = path.join(process.cwd(), 'src', 'packages')
-const FETCH_FILE = path.join(process.cwd(), 'src', 'fetch.ts')
+  // Run the scraper script
+  const proc = spawn(['bun', 'scripts/scrape-registry-packages.ts'], {
+    stdio: ['inherit', 'inherit', 'inherit'],
+  })
 
-// Get all package files
-const packageFiles = fs.readdirSync(PACKAGES_DIR)
-  .filter(file =>
-    file.endsWith('.ts')
-    && file !== 'index.ts'
-    && file !== 'aliases.ts',
-  )
+  const exitCode = await proc.exited
 
-// Extract domain names from filenames
-const domainNames = packageFiles.map((file) => {
-  // Convert from filename back to domain name
-  return path.basename(file, '.ts')
-})
-
-// Sort domains alphabetically
-domainNames.sort()
-
-// Read the fetch.ts file
-const fetchContent = fs.readFileSync(FETCH_FILE, 'utf-8')
-
-// Find the start and end of the ALL_KNOWN_PACKAGES array
-const arrayStart = fetchContent.indexOf('const ALL_KNOWN_PACKAGES = [')
-if (arrayStart === -1) {
-  console.error('Could not find ALL_KNOWN_PACKAGES array in fetch.ts')
-  process.exit(1)
+  if (exitCode === 0) {
+    console.log()
+    console.log('✅ Successfully generated ALL_KNOWN_PACKAGES in src/consts.ts')
+    console.log('📝 Check scraped-packages-valid.txt and scraped-packages-invalid.txt for details')
+  }
+  else {
+    console.error('❌ Failed to generate packages list')
+    process.exit(1)
+  }
 }
 
-const contentAfterStart = fetchContent.substring(arrayStart)
-let arrayEnd = contentAfterStart.indexOf(']')
-arrayEnd = arrayStart + arrayEnd + 1 // Adjust to full content position
-
-// Format the new array content
-const formattedArray = formatPackageArray(domainNames)
-
-// Replace the array in the file
-const newContent
-  = `${fetchContent.substring(0, arrayStart)
-  }const ALL_KNOWN_PACKAGES = [\n${formattedArray}\n]${
-    fetchContent.substring(arrayEnd)}`
-
-// Write back to fetch.ts
-fs.writeFileSync(FETCH_FILE, newContent)
-
-console.log(`Updated ALL_KNOWN_PACKAGES array with ${domainNames.length} packages.`)
-
-/**
- * Formats the package array with proper indentation and quotes
- */
-function formatPackageArray(packages: string[]): string {
-  return packages
-    .map(pkg => `  '${pkg.replace(/'/g, '\\\'')}'`)
-    .join(',\n')
+if (import.meta.main) {
+  main().catch(console.error)
 }

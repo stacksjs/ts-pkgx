@@ -4,7 +4,8 @@
  * @domain `vim.org`
  * @programs `vim`, `vi`
  * @version `9.1.1466` (2039 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/vim-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/vim-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i`
  * @dependencies `python.org~3.11`, `lua.org>=5.4`, `invisible-island.net/ncurses>=6.3`, ... (+2 more)

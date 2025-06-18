@@ -4,7 +4,8 @@
  * @domain `macvim.org`
  * @programs `gview`, `gvim`, `gvimdiff`, `gvimtutor`, `mview`, ... (+7 more)
  * @version `181.0.0` (5 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/macvim-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/macvim-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +macvim.org -- $SHELL -i`
  * @dependencies `cscope.sourceforge.io`, `invisible-island.net/ncurses`, `lua.org`, ... (+4 more)

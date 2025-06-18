@@ -4,7 +4,8 @@
  * @domain `elementsproject.org`
  * @programs `bench_bitcoin`, `elements-cli`, `elements-tx`, `elements-util`, `elements-wallet`, ... (+2 more)
  * @version `23.3.0` (9 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/elementsproject-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/elementsproject-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +elementsproject.org -- $SHELL -i`
  * @dependencies `boost.org^1.64`, `libevent.org`, `oracle.com/berkeley-db`

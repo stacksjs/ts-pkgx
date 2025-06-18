@@ -3,7 +3,8 @@
  *
  * @domain `glfw.org`
  * @version `3.4.0` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/glfw-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/glfw-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i`
  * @dependencies `linuxfreeglut.sourceforge.io^3.4x.org/xcursor^1.2xkbcommon.org^1.0mesa3d.org^23.3`, `freeglut.sourceforge.io^3.4`, `x.org/xcursor^1.2`, ... (+2 more)

@@ -4,7 +4,8 @@
  * @domain `tcsh.org`
  * @programs `csh`, `tcsh`
  * @version `6.24.15` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tcsh-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/tcsh-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +tcsh.org -- $SHELL -i`
  * @dependencies `github.com/besser82/libxcrypt@4`, `invisible-island.net/ncurses@6`

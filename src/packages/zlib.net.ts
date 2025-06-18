@@ -3,7 +3,8 @@
  *
  * @domain `zlib.net`
  * @version `1.3.1` (4 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zlib-net.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/zlib-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +zlib.net -- $SHELL -i`
  *

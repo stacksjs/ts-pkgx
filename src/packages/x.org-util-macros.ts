@@ -1,0 +1,71 @@
+/**
+ * **util-macros** - pkgx package
+ *
+ * @domain `x.org/util-macros`
+ * @version `1.20.2` (3 versions available)
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/x-org/util-macros.md
+ *
+ * @install `sh <(curl https://pkgx.sh) +x.org/util-macros -- $SHELL -i`
+ * @aliases `util-macros`
+ *
+ * @example
+ * ```typescript
+ * import { pantry } from 'ts-pkgx'
+ *
+ * // Access via alias (recommended)
+ * const pkg = pantry.utilmacros
+ * // Or access via domain
+ * const samePkg = pantry.xorgutilmacros
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "x.org/util-macros"
+ * console.log(pkg.versions[0]) // "1.20.2" (latest)
+ * ```
+ *
+ * @see https://ts-pkgx.netlify.app/packages/x-org/util-macros.md
+ * @see https://ts-pkgx.netlify.app/usage
+ */
+export const utilmacrosPackage = {
+  /**
+   * The display name of this package.
+   */
+  name: 'x.org/util-macros' as const,
+  /**
+   * The canonical domain name for this package.
+   */
+  domain: 'x.org/util-macros' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/util-macros/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  /**
+   * Command to install this package using pkgx.
+   * @example sh <(curl https://pkgx.sh) +package-name
+   */
+  installCommand: 'sh <(curl https://pkgx.sh) +x.org/util-macros -- $SHELL -i' as const,
+  programs: [] as const,
+  companions: [] as const,
+  dependencies: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.20.2',
+    '1.20.1',
+    '1.20.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'util-macros',
+  ] as const,
+  fullPath: 'x.org/util-macros' as const,
+}
+
+export type UtilmacrosPackage = typeof utilmacrosPackage

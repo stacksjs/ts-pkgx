@@ -3,7 +3,8 @@
  *
  * @domain `lxml.de`
  * @version `5.4.0` (14 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lxml-de.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/lxml-de.md
  *
  * @install `sh <(curl https://pkgx.sh) +lxml.de -- $SHELL -i`
  * @dependencies `python.org^3.10`, `gnome.org/libxml2~2.12`, `gnome.org/libxslt^1`

@@ -4,7 +4,8 @@
  * @domain `radicle.org`
  * @programs `rad`, `git-remote-rad`, `rad-account`, `rad-auth`, `rad-checkout`, ... (+21 more)
  * @version `0.6.1` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/radicle-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/radicle-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +radicle.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1.1`

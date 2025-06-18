@@ -4,7 +4,8 @@
  * @domain `mercurial-scm.org`
  * @programs `hg`, `chg`
  * @version `7.0.2` (24 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mercurial-scm-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/mercurial-scm-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +mercurial-scm.org -- $SHELL -i`
  * @dependencies `python.org~3.11`

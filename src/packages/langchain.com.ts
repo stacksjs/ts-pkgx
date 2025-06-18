@@ -4,7 +4,8 @@
  * @domain `langchain.com`
  * @programs `f2py`, `jsondiff`, `jsonpatch`, `jsonpointer`, `langchain-server`, ... (+2 more)
  * @version `0.1.16` (29 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/langchain-com.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/langchain-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +langchain.com -- $SHELL -i`
  * @dependencies `python.org^3.12`, `docker.com/compose^2.23`

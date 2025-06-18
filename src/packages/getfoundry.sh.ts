@@ -4,7 +4,8 @@
  * @domain `getfoundry.sh`
  * @programs `forge`, `anvil`, `cast`, `chisel`
  * @version `2024.4.12` (10 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/getfoundry-sh.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/getfoundry-sh.md
  *
  * @install `sh <(curl https://pkgx.sh) +getfoundry.sh -- $SHELL -i`
  * @dependencies `git-scm.org^2`

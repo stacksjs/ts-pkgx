@@ -4,7 +4,8 @@
  * @domain `ffmpeg.org`
  * @programs `ffmpeg`, `ffplay`, `ffprobe`
  * @version `7.1.1` (24 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ffmpeg-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/ffmpeg-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +ffmpeg.org -- $SHELL -i`
  * @dependencies `lame.sourceforge.io>=3.98.3`, `libsdl.org^2`, `freetype.org^2`, ... (+6 more)

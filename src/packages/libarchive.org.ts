@@ -4,7 +4,8 @@
  * @domain `libarchive.org`
  * @programs `bsdcat`, `bsdcpio`, `bsdtar`
  * @version `3.8.1` (13 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libarchive-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libarchive-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libarchive.org -- $SHELL -i`
  * @dependencies `gnu.org/coreutils`, `lz4.org@1`, `tukaani.org/xz@5`, ... (+4 more)

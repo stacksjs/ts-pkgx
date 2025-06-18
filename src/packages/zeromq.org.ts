@@ -3,7 +3,8 @@
  *
  * @domain `zeromq.org`
  * @version `4.3.5` (2 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/zeromq-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/zeromq-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +zeromq.org -- $SHELL -i`
  *

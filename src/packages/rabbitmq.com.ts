@@ -4,7 +4,8 @@
  * @domain `rabbitmq.com`
  * @programs `rabbitmqctl`, `rabbitmq-defaults`, `rabbitmq-diagnostics`, `rabbitmq-env`, `rabbitmq-plugins`, ... (+5 more)
  * @version `4.1.1` (33 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rabbitmq-com.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/rabbitmq-com.md
  *
  * @install `sh <(curl https://pkgx.sh) +rabbitmq.com -- $SHELL -i`
  * @dependencies `erlang.org`

@@ -4,7 +4,8 @@
  * @domain `elixir-lang.org`
  * @programs `elixir`, `elixirc`, `iex`, `mix`
  * @version `1.18.4` (24 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/elixir-lang-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/elixir-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +elixir-lang.org -- $SHELL -i`
  * @dependencies `erlang.org`

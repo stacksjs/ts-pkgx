@@ -4,7 +4,8 @@
  * @domain `openjdk.org`
  * @programs `jar`, `jarsigner`, `java`, `javac`, `javadoc`, ... (+22 more)
  * @version `21.0.7.4` (6 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openjdk-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/openjdk-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +openjdk.org -- $SHELL -i`
  * @dependencies `giflib.sourceforge.io`, `harfbuzz.org^8`, `libjpeg-turbo.org`, ... (+18 more)

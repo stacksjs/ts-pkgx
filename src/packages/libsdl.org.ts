@@ -3,7 +3,8 @@
  *
  * @domain `libsdl.org`
  * @version `3.2.16` (34 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libsdl-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libsdl-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libsdl.org -- $SHELL -i`
  * @dependencies `linuxx.org/x11x.org/xcursorx.org/xix.org/xrandrx.org/xfixesx.org/xrenderx.org/xscrnsaverx.org/exts`, `x.org/x11`, `x.org/xcursor`, ... (+6 more)

@@ -3,7 +3,8 @@
  *
  * @domain `nghttp2.org`
  * @version `1.66.0` (18 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/nghttp2-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/nghttp2-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i`
  *

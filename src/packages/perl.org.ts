@@ -4,7 +4,8 @@
  * @domain `perl.org`
  * @programs `corelist`, `cpan`, `enc2xs`, `encguess`, `h2ph`, ... (+25 more)
  * @version `5.40.2` (14 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/perl-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/perl-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +perl.org -- $SHELL -i`
  * @aliases `perl`

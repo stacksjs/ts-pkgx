@@ -4,7 +4,8 @@
  * @domain `lunarvim.org`
  * @programs `lvim`, `nvim`
  * @version `1.4.0` (2 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lunarvim-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/lunarvim-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +lunarvim.org -- $SHELL -i`
  * @dependencies `gnu.org/bash`, `crates.io/fd-find`, `pip.pypa.io`, ... (+4 more)

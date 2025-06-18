@@ -4,7 +4,8 @@
  * @domain `tcl-lang.org`
  * @programs `tclsh`, `wish`, `critcl`
  * @version `9.0.1` (6 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/tcl-lang-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/tcl-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +tcl-lang.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`, `zlib.net^1.3`, `freetype.org^2`, ... (+3 more)

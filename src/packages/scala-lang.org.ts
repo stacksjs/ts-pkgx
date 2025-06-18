@@ -4,7 +4,8 @@
  * @domain `scala-lang.org`
  * @programs `scalac`, `scala`, `scala-cli`, `sbtn`, `amm`
  * @version `3.7.1` (9 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/scala-lang-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/scala-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +scala-lang.org -- $SHELL -i`
  * @dependencies `openjdk.org`

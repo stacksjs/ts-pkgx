@@ -3,7 +3,8 @@
  *
  * @domain `glm.g-truc.net`
  * @version `1.0.1` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/glm-g-truc-net.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/glm-g-truc-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +glm.g-truc.net -- $SHELL -i`
  *

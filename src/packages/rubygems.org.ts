@@ -4,7 +4,8 @@
  * @domain `rubygems.org`
  * @programs `bundle`, `bundler`, `gem`
  * @version `3.6.9` (57 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rubygems-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/rubygems-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +rubygems.org -- $SHELL -i`
  * @dependencies `ruby-lang.org>=2.3`

@@ -4,7 +4,8 @@
  * @domain `ast-grep.github.io`
  * @programs `sg`, `ast-grep`
  * @version `0.38.5` (82 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/ast-grep-github-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/ast-grep-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +ast-grep.github.io -- $SHELL -i`
  *

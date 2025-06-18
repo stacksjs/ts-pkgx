@@ -3,8 +3,9 @@
  *
  * @domain `linux-pam.org`
  * @programs `faillock`, `mkhomedir_helper`, `pam_namespace_helper`, `pam_timestamp_check`, `unix_chkpwd`
- * @version `1.7.0` (4 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/linux-pam-org.md
+ * @version `1.7.1` (5 versions available)
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/linux-pam-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +linux-pam.org -- $SHELL -i`
  * @dependencies `github.com/thkukuk/libnsl`, `sourceforge.net/libtirpc`, `github.com/besser82/libxcrypt`
@@ -17,7 +18,7 @@
  * console.log(pkg.name)        // "linux-pam.org"
  * console.log(pkg.description) // "Linux PAM (Pluggable Authentication Modules for..."
  * console.log(pkg.programs)    // ["faillock", "mkhomedir_helper", ...]
- * console.log(pkg.versions[0]) // "1.7.0" (latest)
+ * console.log(pkg.versions[0]) // "1.7.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/linux-pam-org.md
@@ -70,6 +71,7 @@ export const linuxpamorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.7.1',
     '1.7.0',
     '1.6.1',
     '1.6.0',

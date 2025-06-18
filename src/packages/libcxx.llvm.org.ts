@@ -3,7 +3,8 @@
  *
  * @domain `libcxx.llvm.org`
  * @version `20.1.7` (41 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libcxx-llvm-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libcxx-llvm-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libcxx.llvm.org -- $SHELL -i`
  *

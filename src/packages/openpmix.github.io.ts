@@ -4,7 +4,8 @@
  * @domain `openpmix.github.io`
  * @programs `palloc`, `pattrs`, `pctrl`, `pevent`, `plookup`, ... (+4 more)
  * @version `6.0.0` (9 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/openpmix-github-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/openpmix-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +openpmix.github.io -- $SHELL -i`
  * @dependencies `open-mpi.org/hwloc^2.10`, `libevent.org^2.1`, `zlib.net^1.3`

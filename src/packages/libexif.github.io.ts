@@ -3,7 +3,8 @@
  *
  * @domain `libexif.github.io`
  * @version `0.6.25` (2 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libexif-github-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libexif-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +libexif.github.io -- $SHELL -i`
  * @dependencies `gnu.org/gettext`

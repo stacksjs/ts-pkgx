@@ -698,7 +698,9 @@ async function extractAllAliases(packagesDir?: string): Promise<Record<string, s
       const content = fs.readFileSync(filePath, 'utf-8')
 
       const moduleName = path.basename(file, '.ts')
-      const domain = guessOriginalDomain(moduleName)
+      // Extract actual domain from the file content instead of guessing from filename
+      const domainMatch = content.match(/domain:\s*['"]([^'"]*)['"]\s*as const/)
+      const domain = domainMatch ? domainMatch[1] : guessOriginalDomain(moduleName)
 
       // Extract package name from the file content
       const nameMatch = content.match(/name:\s*['"]([^'"]*)['"]\s*as const/)

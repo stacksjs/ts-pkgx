@@ -4,7 +4,8 @@
  * @domain `kerberos.org`
  * @programs `compile_et`, `gss-client`, `k5srvutil`, `kadmin`, `kdestroy`, ... (+22 more)
  * @version `1.21.3` (6 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kerberos-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/kerberos-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +kerberos.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`

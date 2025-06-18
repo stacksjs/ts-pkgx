@@ -3,7 +3,8 @@
  *
  * @domain `libwebsockets.org`
  * @version `4.3.5` (4 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libwebsockets-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libwebsockets-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libwebsockets.org -- $SHELL -i`
  * @dependencies `libuv.org@1`, `libevent.org@2`

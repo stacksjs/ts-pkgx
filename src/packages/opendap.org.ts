@@ -4,7 +4,8 @@
  * @domain `opendap.org`
  * @programs `dap-config`, `dap-config-pkgconfig`, `getdap`, `getdap4`
  * @version `3.21.1` (2 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/opendap-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/opendap-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +opendap.org -- $SHELL -i`
  * @dependencies `gnome.org/libxml2`, `openssl.org`, `curl.se`, ... (+3 more)

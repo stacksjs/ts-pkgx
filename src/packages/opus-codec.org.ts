@@ -3,7 +3,8 @@
  *
  * @domain `opus-codec.org`
  * @version `1.5.2` (5 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/opus-codec-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/opus-codec-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +opus-codec.org -- $SHELL -i`
  *

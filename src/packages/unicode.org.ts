@@ -4,7 +4,8 @@
  * @domain `unicode.org`
  * @programs `derb`, `genbrk`, `gencfu`, `gencnval`, `gendict`, ... (+7 more)
  * @version `77.1.0` (7 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/unicode-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/unicode-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +unicode.org -- $SHELL -i`
  *

@@ -4,7 +4,8 @@
  * @domain `jupyter.org`
  * @programs `jlpm`, `jupyter`, `jupyter-bundlerextension`, `jupyter-dejavu`, `jupyter-events`, ... (+19 more)
  * @version `4.4.3` (49 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/jupyter-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/jupyter-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +jupyter.org -- $SHELL -i`
  * @dependencies `python.org>=3.7<3.12`, `gnu.org/which@2`

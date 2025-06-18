@@ -4,7 +4,8 @@
  * @domain `kafka.apache.org`
  * @programs `connect-distributed.sh`, `connect-mirror-maker.sh`, `connect-plugin-path.sh`, `connect-standalone.sh`, `kafka-acls.sh`, ... (+36 more)
  * @version `4.0.0` (6 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/kafka-apache-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/kafka-apache-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +kafka.apache.org -- $SHELL -i`
  * @dependencies `openjdk.org`

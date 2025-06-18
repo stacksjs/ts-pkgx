@@ -4,7 +4,8 @@
  * @domain `smartmontools.org`
  * @programs `smartctl`, `smartd`
  * @version `7.5.0` (3 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/smartmontools-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/smartmontools-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +smartmontools.org -- $SHELL -i`
  *

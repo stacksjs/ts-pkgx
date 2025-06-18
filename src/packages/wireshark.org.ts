@@ -4,7 +4,8 @@
  * @domain `wireshark.org`
  * @programs `capinfos`, `captype`, `dumpcap`, `editcap`, `idl2wrs`, ... (+8 more)
  * @version `4.4.7` (32 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/wireshark-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/wireshark-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +wireshark.org -- $SHELL -i`
  * @dependencies `c-ares.org^1.23`, `gnome.org/glib^2.78.3`, `gnutls.org^3.8.2`, ... (+10 more)

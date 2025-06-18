@@ -1,9 +1,13 @@
 /**
- * **libssh.org** - Crafters of fine Open Source products
+ * **libssh.org** - pkgx package
  *
  * @domain `libssh.org`
+ * @version `0.11.1` (7 versions available)
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libssh-org.md
  *
- * @install `pkgx libssh.org`
+ * @install `sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i`
+ * @dependencies `openssl.org^1.1`, `zlib.net^1`
  *
  * @example
  * ```typescript
@@ -11,7 +15,7 @@
  *
  * const pkg = pantry.libsshorg
  * console.log(pkg.name)        // "libssh.org"
- * console.log(pkg.description) // "Crafters of fine Open Source products"
+ * console.log(pkg.versions[0]) // "0.11.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libssh-org.md
@@ -23,25 +27,46 @@ export const libsshorgPackage = {
    */
   name: 'libssh.org' as const,
   /**
-   * Brief description of what this package does.
-   */
-  description: 'Crafters of fine Open Source products' as const,
-  versions: [] as const,
-  programs: [] as const,
-  homepage: 'https://pkgx.dev/pkgs/libssh.org/' as const,
-  /**
    * The canonical domain name for this package.
    */
   domain: 'libssh.org' as const,
-  fullPath: 'libssh.org' as const,
+  /**
+   * Brief description of what this package does.
+   */
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libssh.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using pkgx.
    * @example sh <(curl https://pkgx.sh) +package-name
    */
-  installCommand: 'pkgx libssh.org' as const,
-  aliases: [] as const,
-  dependencies: [] as const,
+  installCommand: 'sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i' as const,
+  programs: [] as const,
   companions: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'openssl.org^1.1',
+    'zlib.net^1',
+  ] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.11.1',
+    '0.11.0',
+    '0.10.6',
+    '0.10.5',
+    '0.10.4',
+    '0.9.8',
+    '0.9.7',
+  ] as const,
+  aliases: [] as const,
+  fullPath: 'libssh.org' as const,
 }
 
 export type LibsshorgPackage = typeof libsshorgPackage

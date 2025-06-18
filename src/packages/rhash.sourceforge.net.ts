@@ -4,7 +4,8 @@
  * @domain `rhash.sourceforge.net`
  * @programs `whirlpool-hash`, `tiger-hash`, `tth-hash`, `rhash`, `sfv-hash`, ... (+7 more)
  * @version `1.4.6` (4 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/rhash-sourceforge-net.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/rhash-sourceforge-net.md
  *
  * @install `sh <(curl https://pkgx.sh) +rhash.sourceforge.net -- $SHELL -i`
  *

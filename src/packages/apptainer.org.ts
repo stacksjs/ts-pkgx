@@ -4,7 +4,8 @@
  * @domain `apptainer.org`
  * @programs `apptainer`, `run-singularity`, `singularity`
  * @version `1.4.1` (6 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/apptainer-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/apptainer-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +apptainer.org -- $SHELL -i`
  * @dependencies `github.com/seccomp/libseccomp@2`, `curl.se/ca-certs`

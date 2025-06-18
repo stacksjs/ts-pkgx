@@ -3,7 +3,8 @@
  *
  * @domain `libevent.org`
  * @version `2.1.12` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/libevent-org.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/libevent-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +libevent.org -- $SHELL -i`
  * @dependencies `openssl.org^1.1`

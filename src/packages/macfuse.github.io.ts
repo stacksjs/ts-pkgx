@@ -3,7 +3,8 @@
  *
  * @domain `macfuse.github.io`
  * @version `4.10.2` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/macfuse-github-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/macfuse-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +macfuse.github.io -- $SHELL -i`
  *

@@ -4,7 +4,8 @@
  * @domain `lima-vm.io`
  * @programs `apptainer.lima`, `docker.lima`, `kubectl.lima`, `lima`, `limactl`, ... (+2 more)
  * @version `1.1.1` (25 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/lima-vm-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/lima-vm-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +lima-vm.io -- $SHELL -i`
  * @dependencies `qemu.org`

@@ -3,8 +3,9 @@
  *
  * @domain `mypy-lang.org`
  * @programs `mypy`, `mypyc`, `dmypy`
- * @version `1.16.0` (24 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/mypy-lang-org.md
+ * @version `1.16.1` (25 versions available)
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/mypy-lang-org.md
  *
  * @install `sh <(curl https://pkgx.sh) +mypy-lang.org -- $SHELL -i`
  * @dependencies `pkgx.sh^1`
@@ -17,7 +18,7 @@
  * console.log(pkg.name)        // "mypy-lang.org"
  * console.log(pkg.description) // "Experimental optional static type checker for P..."
  * console.log(pkg.programs)    // ["mypy", "mypyc", ...]
- * console.log(pkg.versions[0]) // "1.16.0" (latest)
+ * console.log(pkg.versions[0]) // "1.16.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mypy-lang-org.md
@@ -66,6 +67,7 @@ export const mypylangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.16.1',
     '1.16.0',
     '1.15.0',
     '1.14.1',

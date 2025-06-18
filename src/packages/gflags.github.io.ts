@@ -3,7 +3,8 @@
  *
  * @domain `gflags.github.io`
  * @version `2.2.2` (1 versions available)
- * @versions From newest version to oldest. @see https://ts-pkgx.netlify.app/packages/gflags-github-io.md
+ * @versions From newest version to oldest.
+ * @see https://ts-pkgx.netlify.app/packages/gflags-github-io.md
  *
  * @install `sh <(curl https://pkgx.sh) +gflags.github.io -- $SHELL -i`
  *
