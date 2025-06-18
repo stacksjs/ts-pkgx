@@ -3,7 +3,7 @@
  *
  * @domain `digitalocean.com/doctl`
  * @programs `doctl`
- * @version `1.130.0` (33 versions available)
+ * @version `1.131.0` (34 versions available)
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) doctl`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "doctl"
  * console.log(pkg.description) // "The official command line interface for the Dig..."
  * console.log(pkg.programs)    // ["doctl"]
- * console.log(pkg.versions[0]) // "1.130.0" (latest)
+ * console.log(pkg.versions[0]) // "1.131.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/digitalocean-com/doctl.md
@@ -62,6 +62,7 @@ export const doctlPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.131.0',
     '1.130.0',
     '1.129.0',
     '1.128.0',
