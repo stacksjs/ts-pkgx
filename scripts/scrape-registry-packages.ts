@@ -156,8 +156,16 @@ async function main() {
     }
 
     // Filter out README and documentation files
-    if (pkg.endsWith('/README') || pkg.endsWith('/readme') || pkg.includes('/README/') || pkg.includes('/docs/')) {
+    if (pkg.endsWith('/README') || pkg.endsWith('/readme') || pkg.includes('/README/') || pkg.includes('/docs/')
+      || pkg.endsWith('/LICENSE') || pkg.endsWith('/CHANGELOG') || pkg.endsWith('/CONTRIBUTING')) {
       console.log(`Filtering out documentation: ${pkg}`)
+      continue
+    }
+
+    // Filter out common non-package patterns
+    if (pkg.includes('/test/') || pkg.includes('/tests/') || pkg.includes('/examples/')
+      || pkg.includes('/.github/') || pkg.includes('/.git/') || pkg.includes('/node_modules/')) {
+      console.log(`Filtering out non-package path: ${pkg}`)
       continue
     }
 
@@ -180,9 +188,9 @@ export const DEFAULT_CACHE_DIR = '.cache/packages'
 export const DEFAULT_CACHE_EXPIRATION_MINUTES = 1440
 
 /**
- * Default timeout for network requests in milliseconds (12 seconds)
+ * Default timeout for network requests in milliseconds (20 seconds)
  */
-export const DEFAULT_TIMEOUT_MS = 12000
+export const DEFAULT_TIMEOUT_MS = 20000
 
 /**
  * Package aliases mapping friendly names to domain names

@@ -9,9 +9,9 @@ export const DEFAULT_CACHE_DIR = '.cache/packages'
 export const DEFAULT_CACHE_EXPIRATION_MINUTES = 1440
 
 /**
- * Default timeout for network requests in milliseconds (12 seconds)
+ * Default timeout for network requests in milliseconds (20 seconds)
  */
-export const DEFAULT_TIMEOUT_MS = 12000
+export const DEFAULT_TIMEOUT_MS = 20000
 
 /**
  * Package aliases mapping friendly names to domain names
@@ -1835,5 +1835,5 @@ export const ALL_KNOWN_PACKAGES: string[] = [
   'zsh.sourceforge.io',
 ] as const
 
-// Generated on 2025-06-18T06:19:55.899Z
+// Generated on 2025-06-18T14:26:26.512Z
 // Total packages: 1801

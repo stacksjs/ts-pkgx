@@ -1875,18 +1875,19 @@ export async function fetchAndSavePackage(
       }
     }
 
-    // Use flat timeout for all packages - no special handling
-    const actualTimeout = timeout
+    // Use progressive timeout based on retry attempt - longer timeouts for retries
+    const baseTimeout = timeout
+    const actualTimeout = baseTimeout + (retryNumber - 1) * 10000 // Add 10s per retry
 
     console.log(`Using timeout for ${packageName} (attempt ${retryNumber}): ${actualTimeout}ms`)
 
     // Set an overall operation timeout to prevent hanging the entire process
     // This is different from the browser navigation timeout
     const operationTimeout = actualTimeout // Use the same timeout
-    const operationTimeoutPromise = new Promise<{ success: boolean }>((resolve) => {
+    const operationTimeoutPromise = new Promise<never>((_, reject) => {
       setTimeout(() => {
         console.error(`Operation timeout for ${packageName} after ${operationTimeout}ms`)
-        resolve({ success: false })
+        reject(new Error(`Operation timeout after ${operationTimeout}ms`))
       }, operationTimeout)
     })
 
@@ -1908,13 +1909,8 @@ export async function fetchAndSavePackage(
 
         const fetchResult = await Promise.race([fetchPromise, operationTimeoutPromise])
 
-        // If timeout occurred, throw a specialized error
-        if ('success' in fetchResult && !fetchResult.success) {
-          throw new Error(`Operation timed out after ${operationTimeout}ms`)
-        }
-
-        // Unwrap the proper result
-        const { packageInfo, originalName, fullDomainName } = fetchResult as any
+        // The timeout promise will reject if it times out, so we can directly use the result
+        const { packageInfo, originalName, fullDomainName } = fetchResult
 
         // Sort versions using semver if they exist
         if (packageInfo.versions && packageInfo.versions.length > 0) {
@@ -2125,13 +2121,8 @@ export async function fetchAndSavePackage(
 
         const fetchResult = await Promise.race([fetchPromise, operationTimeoutPromise])
 
-        // If timeout occurred, throw a specialized error
-        if ('success' in fetchResult && !fetchResult.success) {
-          throw new Error(`Operation timed out after ${operationTimeout}ms`)
-        }
-
-        // Unwrap the proper result
-        const { packageInfo, originalName, fullDomainName } = fetchResult as any
+        // The timeout promise will reject if it times out, so we can directly use the result
+        const { packageInfo, originalName, fullDomainName } = fetchResult
 
         // Validate that we have meaningful package data before proceeding - be more lenient
         const hasDescription = packageInfo.description && packageInfo.description.trim() !== ''
@@ -2296,6 +2287,13 @@ export async function fetchAndSavePackage(
   catch (error: any) {
     const errorString = String(error)
 
+    // Check for timeout errors that should be retried
+    const isTimeoutError = errorString.includes('Operation timed out after')
+      || errorString.includes('Operation timeout after')
+      || errorString.includes('timeout')
+      || errorString.includes('Timeout')
+      || errorString.includes('Navigation timeout')
+
     // Check for Playwright connection errors that indicate browser issues
     const isBrowserError = errorString.includes('No target found')
       || errorString.includes('targetId')
@@ -2308,7 +2306,13 @@ export async function fetchAndSavePackage(
       || errorString.includes('Session closed')
       || errorString.includes('WebSocket connection closed')
 
-    if (isBrowserError) {
+    if (isTimeoutError) {
+      console.error(`Timeout error for ${packageName}:`, errorString.substring(0, 200))
+
+      // Wait a bit before retrying timeout errors
+      await new Promise(resolve => setTimeout(resolve, 1000 * retryNumber))
+    }
+    else if (isBrowserError) {
       console.error(`Browser connection error for ${packageName}:`, errorString.substring(0, 200))
 
       // Force cleanup and wait longer for browser errors
@@ -2344,8 +2348,15 @@ export async function fetchAndSavePackage(
 
     console.error(`Attempt ${retryNumber} failed for ${packageName}, retrying...`, error)
 
-    // Longer pause for browser errors, shorter for other errors
-    const waitTime = isBrowserError ? 2000 * retryNumber : 500 * retryNumber
+    // Different wait times based on error type
+    let waitTime = 500 * retryNumber // default
+    if (isBrowserError) {
+      waitTime = 2000 * retryNumber // longer for browser errors
+    }
+    else if (isTimeoutError) {
+      waitTime = 1000 * retryNumber // medium for timeout errors
+    }
+
     await new Promise(resolve => setTimeout(resolve, waitTime))
 
     // Retry with same base timeout (actual timeout will still increase due to retry counter)
