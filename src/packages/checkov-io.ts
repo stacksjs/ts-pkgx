@@ -552,7 +552,7 @@ export const checkovPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'checkov' as const,
+  fullPath: 'checkov.io' as const,
 }
 
 export type CheckovPackage = typeof checkovPackage

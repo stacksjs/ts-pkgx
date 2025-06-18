@@ -82,7 +82,7 @@ export const packPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'pack' as const,
+  fullPath: 'buildpacks.io' as const,
 }
 
 export type PackPackage = typeof packPackage

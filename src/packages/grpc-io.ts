@@ -134,7 +134,7 @@ export const grpcPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'grpc' as const,
+  fullPath: 'grpc.io' as const,
 }
 
 export type GrpcPackage = typeof grpcPackage

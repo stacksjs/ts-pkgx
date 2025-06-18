@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) protoc`
+ * @name `Protocol Buffers`
  * @aliases `protoc`, `protocol buffers`
  * @dependencies `zlib.net^1`, `abseil.io`
  *

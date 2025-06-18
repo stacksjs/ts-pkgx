@@ -114,7 +114,7 @@ export const vipsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'vips' as const,
+  fullPath: 'libvips.org' as const,
 }
 
 export type VipsPackage = typeof vipsPackage

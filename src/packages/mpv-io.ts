@@ -91,7 +91,7 @@ export const mpvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mpv' as const,
+  fullPath: 'mpv.io' as const,
 }
 
 export type MpvPackage = typeof mpvPackage

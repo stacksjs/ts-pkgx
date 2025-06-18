@@ -189,7 +189,7 @@ export const bunPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'bun' as const,
+  fullPath: 'bun.sh' as const,
 }
 
 export type BunPackage = typeof bunPackage

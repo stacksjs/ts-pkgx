@@ -70,7 +70,7 @@ export const lz4Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'lz4' as const,
+  fullPath: 'lz4.org' as const,
 }
 
 export type Lz4Package = typeof lz4Package

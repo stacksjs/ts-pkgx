@@ -98,7 +98,7 @@ export const gitcliffPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'git-cliff' as const,
+  fullPath: 'git-cliff.org' as const,
 }
 
 export type GitcliffPackage = typeof gitcliffPackage

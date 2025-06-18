@@ -114,7 +114,7 @@ export const groongaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'groonga' as const,
+  fullPath: 'groonga.org' as const,
 }
 
 export type GroongaPackage = typeof groongaPackage

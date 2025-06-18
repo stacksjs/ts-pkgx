@@ -108,7 +108,7 @@ export const justPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'just' as const,
+  fullPath: 'just.systems' as const,
 }
 
 export type JustPackage = typeof justPackage

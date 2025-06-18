@@ -76,7 +76,7 @@ export const cointopPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cointop' as const,
+  fullPath: 'cointop.sh' as const,
 }
 
 export type CointopPackage = typeof cointopPackage

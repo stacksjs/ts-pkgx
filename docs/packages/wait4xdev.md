@@ -45,7 +45,7 @@ sh <(curl https://pkgx.sh) +wait4x.dev@3.3.1 -- $SHELL -i
 
 These packages work well with wait4x:
 
-- [`curl.se/ca-certs`](curlsecacerts.md) - A package from curl.se/ca-certs
+- `curl.se/ca-certs`
 
 ## Usage Examples
 

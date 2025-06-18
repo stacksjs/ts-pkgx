@@ -79,7 +79,7 @@ export const fftwPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'fftw' as const,
+  fullPath: 'fftw.org' as const,
 }
 
 export type FftwPackage = typeof fftwPackage

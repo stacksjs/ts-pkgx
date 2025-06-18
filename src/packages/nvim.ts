@@ -90,7 +90,7 @@ export const nvimPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'nvim' as const,
+  fullPath: 'neovim.io' as const,
 }
 
 export type NvimPackage = typeof nvimPackage

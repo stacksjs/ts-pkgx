@@ -82,7 +82,7 @@ export const mujsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mujs' as const,
+  fullPath: 'mujs.com' as const,
 }
 
 export type MujsPackage = typeof mujsPackage

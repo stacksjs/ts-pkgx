@@ -76,7 +76,7 @@ export const kptPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kpt' as const,
+  fullPath: 'kpt.dev' as const,
 }
 
 export type KptPackage = typeof kptPackage

@@ -81,7 +81,7 @@ export const flitPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'flit' as const,
+  fullPath: 'flit.pypa.io' as const,
 }
 
 export type FlitPackage = typeof flitPackage

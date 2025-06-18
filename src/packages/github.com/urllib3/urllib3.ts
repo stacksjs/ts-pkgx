@@ -2,7 +2,7 @@
  * **urllib3/urllib3** - urllib3 is a user-friendly HTTP client library for Python
  *
  * @domain `github.com/urllib3/urllib3`
- * @version `2.4.0` (8 versions available)
+ * @version `2.5.0` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) +github.com/urllib3/urllib3 -- $SHELL -i`
@@ -20,7 +20,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "github.com/urllib3/urllib3"
  * console.log(pkg.description) // "urllib3 is a user-friendly HTTP client library ..."
- * console.log(pkg.versions[0]) // "2.4.0" (latest)
+ * console.log(pkg.versions[0]) // "2.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/urllib3/urllib3.md
@@ -61,6 +61,7 @@ export const urllib3urllib3Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.5.0',
     '2.4.0',
     '2.3.0',
     '2.2.3',

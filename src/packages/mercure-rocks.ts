@@ -79,7 +79,7 @@ export const mercurePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mercure' as const,
+  fullPath: 'mercure.rocks' as const,
 }
 
 export type MercurePackage = typeof mercurePackage

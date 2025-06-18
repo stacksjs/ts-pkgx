@@ -78,7 +78,7 @@ export const mkdocsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mkdocs' as const,
+  fullPath: 'mkdocs.org' as const,
 }
 
 export type MkdocsPackage = typeof mkdocsPackage

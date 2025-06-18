@@ -74,7 +74,7 @@ export const zolaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'zola' as const,
+  fullPath: 'getzola.org' as const,
 }
 
 export type ZolaPackage = typeof zolaPackage

@@ -120,7 +120,7 @@ export const golangcilintPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'golangci-lint' as const,
+  fullPath: 'golangci-lint.run' as const,
 }
 
 export type GolangcilintPackage = typeof golangcilintPackage

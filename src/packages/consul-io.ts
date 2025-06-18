@@ -79,7 +79,7 @@ export const consulPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'consul' as const,
+  fullPath: 'consul.io' as const,
 }
 
 export type ConsulPackage = typeof consulPackage

@@ -78,7 +78,7 @@ export const jagsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jags' as const,
+  fullPath: 'mcmc-jags.sourceforge.io' as const,
 }
 
 export type JagsPackage = typeof jagsPackage

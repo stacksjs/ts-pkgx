@@ -76,7 +76,7 @@ export const chompPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'chomp' as const,
+  fullPath: 'chompbuild.com' as const,
 }
 
 export type ChompPackage = typeof chompPackage

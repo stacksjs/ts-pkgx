@@ -87,7 +87,7 @@ export const makorenderPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mako-render' as const,
+  fullPath: 'makotemplates.org' as const,
 }
 
 export type MakorenderPackage = typeof makorenderPackage

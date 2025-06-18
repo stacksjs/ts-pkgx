@@ -90,7 +90,7 @@ export const zipPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'zip' as const,
+  fullPath: 'libzip.org' as const,
 }
 
 export type ZipPackage = typeof zipPackage

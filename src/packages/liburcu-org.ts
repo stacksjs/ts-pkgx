@@ -64,7 +64,7 @@ export const liburcuPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'liburcu' as const,
+  fullPath: 'liburcu.org' as const,
 }
 
 export type LiburcuPackage = typeof liburcuPackage

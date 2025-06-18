@@ -76,7 +76,7 @@ export const epsilonPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'epsilon' as const,
+  fullPath: 'epsilon-project.sourceforge.io' as const,
 }
 
 export type EpsilonPackage = typeof epsilonPackage

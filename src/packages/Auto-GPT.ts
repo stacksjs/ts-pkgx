@@ -89,7 +89,7 @@ export const autogptPackage = {
   aliases: [
     'auto-gpt',
   ] as const,
-  fullPath: 'Auto-GPT' as const,
+  fullPath: 'agpt.co' as const,
 }
 
 export type AutogptPackage = typeof autogptPackage

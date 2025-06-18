@@ -98,7 +98,7 @@ export const gitquickstatsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'git-quick-stats' as const,
+  fullPath: 'git-quick-stats.sh' as const,
 }
 
 export type GitquickstatsPackage = typeof gitquickstatsPackage

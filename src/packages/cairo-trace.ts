@@ -89,7 +89,7 @@ export const cairotracePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cairo-trace' as const,
+  fullPath: 'cairographics.org' as const,
 }
 
 export type CairotracePackage = typeof cairotracePackage

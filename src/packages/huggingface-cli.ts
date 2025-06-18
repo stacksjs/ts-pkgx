@@ -134,7 +134,7 @@ export const huggingfacecliPackage = {
   aliases: [
     'huggingface-cli',
   ] as const,
-  fullPath: 'huggingface-cli' as const,
+  fullPath: 'huggingface.co' as const,
 }
 
 export type HuggingfacecliPackage = typeof huggingfacecliPackage

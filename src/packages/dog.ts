@@ -76,7 +76,7 @@ export const dogPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dog' as const,
+  fullPath: 'dns.lookup.dog' as const,
 }
 
 export type DogPackage = typeof dogPackage

@@ -69,7 +69,7 @@ export const dotenvlinterPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dotenv-linter' as const,
+  fullPath: 'dotenv-linter.github.io' as const,
 }
 
 export type DotenvlinterPackage = typeof dotenvlinterPackage

@@ -88,7 +88,7 @@ export const lavinmqPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'lavinmq' as const,
+  fullPath: 'lavinmq.com' as const,
 }
 
 export type LavinmqPackage = typeof lavinmqPackage

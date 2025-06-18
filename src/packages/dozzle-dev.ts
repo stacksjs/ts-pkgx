@@ -128,7 +128,7 @@ export const dozzlePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dozzle' as const,
+  fullPath: 'dozzle.dev' as const,
 }
 
 export type DozzlePackage = typeof dozzlePackage

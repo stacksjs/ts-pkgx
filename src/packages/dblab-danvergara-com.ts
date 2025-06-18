@@ -84,7 +84,7 @@ export const dblabPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dblab' as const,
+  fullPath: 'dblab.danvergara.com' as const,
 }
 
 export type DblabPackage = typeof dblabPackage

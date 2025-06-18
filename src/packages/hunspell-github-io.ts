@@ -84,7 +84,7 @@ export const hunspellPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'hunspell' as const,
+  fullPath: 'hunspell.github.io' as const,
 }
 
 export type HunspellPackage = typeof hunspellPackage

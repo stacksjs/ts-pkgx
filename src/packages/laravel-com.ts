@@ -95,7 +95,7 @@ export const laravelPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'laravel' as const,
+  fullPath: 'laravel.com' as const,
 }
 
 export type LaravelPackage = typeof laravelPackage

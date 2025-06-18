@@ -69,7 +69,7 @@ export const mkcertPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mkcert' as const,
+  fullPath: 'mkcert.dev' as const,
 }
 
 export type MkcertPackage = typeof mkcertPackage

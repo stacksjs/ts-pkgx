@@ -69,7 +69,7 @@ export const dukPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'duk' as const,
+  fullPath: 'duktape.org' as const,
 }
 
 export type DukPackage = typeof dukPackage

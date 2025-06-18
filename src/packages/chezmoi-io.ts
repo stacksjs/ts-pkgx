@@ -144,7 +144,7 @@ export const chezmoiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'chezmoi' as const,
+  fullPath: 'chezmoi.io' as const,
 }
 
 export type ChezmoiPackage = typeof chezmoiPackage

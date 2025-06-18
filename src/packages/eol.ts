@@ -84,7 +84,7 @@ export const eolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'eol' as const,
+  fullPath: 'endoflife.date' as const,
 }
 
 export type EolPackage = typeof eolPackage

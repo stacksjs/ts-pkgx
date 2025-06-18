@@ -154,7 +154,7 @@ export const ansiblePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ansible' as const,
+  fullPath: 'ansible.com' as const,
 }
 
 export type AnsiblePackage = typeof ansiblePackage

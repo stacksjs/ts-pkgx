@@ -93,7 +93,7 @@ export const gradlePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gradle' as const,
+  fullPath: 'gradle.org' as const,
 }
 
 export type GradlePackage = typeof gradlePackage

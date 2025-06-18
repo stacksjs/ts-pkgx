@@ -191,7 +191,7 @@ export const hugoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'hugo' as const,
+  fullPath: 'gohugo.io' as const,
 }
 
 export type HugoPackage = typeof hugoPackage

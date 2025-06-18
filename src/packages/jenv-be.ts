@@ -70,7 +70,7 @@ export const jenvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jenv' as const,
+  fullPath: 'jenv.be' as const,
 }
 
 export type JenvPackage = typeof jenvPackage

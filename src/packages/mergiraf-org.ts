@@ -69,7 +69,7 @@ export const mergirafPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mergiraf' as const,
+  fullPath: 'mergiraf.org' as const,
 }
 
 export type MergirafPackage = typeof mergirafPackage

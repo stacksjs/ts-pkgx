@@ -103,7 +103,7 @@ export const mesonPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'meson' as const,
+  fullPath: 'mesonbuild.com' as const,
 }
 
 export type MesonPackage = typeof mesonPackage

@@ -86,7 +86,7 @@ export const hurlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'hurl' as const,
+  fullPath: 'hurl.dev' as const,
 }
 
 export type HurlPackage = typeof hurlPackage

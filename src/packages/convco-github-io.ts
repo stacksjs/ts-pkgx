@@ -77,7 +77,7 @@ export const convcoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'convco' as const,
+  fullPath: 'convco.github.io' as const,
 }
 
 export type ConvcoPackage = typeof convcoPackage

@@ -78,7 +78,7 @@ export const cruftPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cruft' as const,
+  fullPath: 'cruft.github.io' as const,
 }
 
 export type CruftPackage = typeof cruftPackage

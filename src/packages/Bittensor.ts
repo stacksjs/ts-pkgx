@@ -131,7 +131,7 @@ export const bittensorPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'Bittensor' as const,
+  fullPath: 'bittensor.com' as const,
 }
 
 export type BittensorPackage = typeof bittensorPackage

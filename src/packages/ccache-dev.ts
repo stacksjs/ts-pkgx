@@ -86,7 +86,7 @@ export const ccachePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ccache' as const,
+  fullPath: 'ccache.dev' as const,
 }
 
 export type CcachePackage = typeof ccachePackage

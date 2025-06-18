@@ -81,7 +81,7 @@ export const etcdPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'etcd' as const,
+  fullPath: 'etcd.io' as const,
 }
 
 export type EtcdPackage = typeof etcdPackage

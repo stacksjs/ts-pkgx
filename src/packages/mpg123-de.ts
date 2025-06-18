@@ -81,7 +81,7 @@ export const mpg123Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mpg123' as const,
+  fullPath: 'mpg123.de' as const,
 }
 
 export type Mpg123Package = typeof mpg123Package

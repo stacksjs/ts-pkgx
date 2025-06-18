@@ -69,7 +69,7 @@ export const gr2fonttestPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gr2fonttest' as const,
+  fullPath: 'graphite.sil.org' as const,
 }
 
 export type Gr2fonttestPackage = typeof gr2fonttestPackage

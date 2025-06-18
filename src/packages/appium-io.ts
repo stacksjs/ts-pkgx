@@ -114,7 +114,7 @@ export const appiumPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'appium' as const,
+  fullPath: 'appium.io' as const,
 }
 
 export type AppiumPackage = typeof appiumPackage

@@ -88,7 +88,7 @@ export const duckdbPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'duckdb' as const,
+  fullPath: 'duckdb.org' as const,
 }
 
 export type DuckdbPackage = typeof duckdbPackage

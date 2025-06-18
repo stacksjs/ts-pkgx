@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) scryer-prolog`
+ * @name `Scryer Prolog`
  * @aliases `scryer-prolog`, `scryer prolog`
  * @dependencies `openssl.org^1.1`
  *

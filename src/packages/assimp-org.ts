@@ -84,7 +84,7 @@ export const assimpPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'assimp' as const,
+  fullPath: 'assimp.org' as const,
 }
 
 export type AssimpPackage = typeof assimpPackage

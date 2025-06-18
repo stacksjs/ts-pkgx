@@ -74,7 +74,7 @@ export const aux4Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'aux4' as const,
+  fullPath: 'aux4.io' as const,
 }
 
 export type Aux4Package = typeof aux4Package

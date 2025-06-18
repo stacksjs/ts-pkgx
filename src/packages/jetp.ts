@@ -69,7 +69,7 @@ export const jetpPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jetp' as const,
+  fullPath: 'jetporch.com' as const,
 }
 
 export type JetpPackage = typeof jetpPackage

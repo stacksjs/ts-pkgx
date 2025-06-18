@@ -76,7 +76,7 @@ export const bcryptPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'bcrypt' as const,
+  fullPath: 'bcrypt.sourceforge.net' as const,
 }
 
 export type BcryptPackage = typeof bcryptPackage

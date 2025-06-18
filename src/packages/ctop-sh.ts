@@ -69,7 +69,7 @@ export const ctopPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ctop' as const,
+  fullPath: 'ctop.sh' as const,
 }
 
 export type CtopPackage = typeof ctopPackage

@@ -74,7 +74,7 @@ export const kubectlcnpgPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kubectl-cnpg' as const,
+  fullPath: 'cloudnative-pg.io' as const,
 }
 
 export type KubectlcnpgPackage = typeof kubectlcnpgPackage

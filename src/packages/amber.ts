@@ -85,7 +85,7 @@ export const amberPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'amber' as const,
+  fullPath: 'amber-lang.com' as const,
 }
 
 export type AmberPackage = typeof amberPackage

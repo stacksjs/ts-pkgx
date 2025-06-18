@@ -72,7 +72,7 @@ export const microPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'micro' as const,
+  fullPath: 'micro-editor.github.io' as const,
 }
 
 export type MicroPackage = typeof microPackage

@@ -86,7 +86,7 @@ export const juliaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'julia' as const,
+  fullPath: 'julialang.org' as const,
 }
 
 export type JuliaPackage = typeof juliaPackage

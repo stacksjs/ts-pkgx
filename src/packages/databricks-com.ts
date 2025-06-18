@@ -3,7 +3,7 @@
  *
  * @domain `databricks.com`
  * @programs `databricks`
- * @version `0.255.0` (54 versions available)
+ * @version `0.256.0` (55 versions available)
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) databricks`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "databricks"
  * console.log(pkg.description) // "Databricks CLI"
  * console.log(pkg.programs)    // ["databricks"]
- * console.log(pkg.versions[0]) // "0.255.0" (latest)
+ * console.log(pkg.versions[0]) // "0.256.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/databricks-com.md
@@ -62,6 +62,7 @@ export const databricksPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.256.0',
     '0.255.0',
     '0.254.0',
     '0.253.0',
@@ -122,7 +123,7 @@ export const databricksPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'databricks' as const,
+  fullPath: 'databricks.com' as const,
 }
 
 export type DatabricksPackage = typeof databricksPackage

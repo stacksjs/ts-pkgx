@@ -108,7 +108,7 @@ export const arkadePackage = {
   aliases: [
     'arkade',
   ] as const,
-  fullPath: 'Arkade' as const,
+  fullPath: 'arkade.dev' as const,
 }
 
 export type ArkadePackage = typeof arkadePackage

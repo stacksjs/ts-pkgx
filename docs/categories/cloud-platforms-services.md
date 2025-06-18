@@ -1,20 +1,10 @@
 # Cloud Platforms & Services
 
-*3 packages in this category*
+*2 packages in this category*
 
 Packages related to cloud platforms & services.
 
 ## Packages
-
-### [fly.io](../packages/flyio.md) (fly)
-
-Command line tools for fly.io services
-
-**Programs**: fly, flyctl
-
-**Install**: `sh <(curl https://pkgx.sh) +fly.io -- $SHELL -i`
-
----
 
 ### [heroku.com](../packages/herokucom.md) (heroku)
 

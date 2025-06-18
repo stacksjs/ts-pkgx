@@ -120,7 +120,7 @@ export const ipythonPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ipython' as const,
+  fullPath: 'ipython.org' as const,
 }
 
 export type IpythonPackage = typeof ipythonPackage

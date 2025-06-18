@@ -90,7 +90,7 @@ export const atlasPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'atlas' as const,
+  fullPath: 'atlasgo.io' as const,
 }
 
 export type AtlasPackage = typeof atlasPackage

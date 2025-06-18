@@ -72,7 +72,7 @@ export const elvishPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'elvish' as const,
+  fullPath: 'elv.sh' as const,
 }
 
 export type ElvishPackage = typeof elvishPackage

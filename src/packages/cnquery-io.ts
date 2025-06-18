@@ -216,7 +216,7 @@ export const cnqueryPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cnquery' as const,
+  fullPath: 'cnquery.io' as const,
 }
 
 export type CnqueryPackage = typeof cnqueryPackage

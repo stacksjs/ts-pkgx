@@ -77,7 +77,7 @@ export const xmlwfPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'xmlwf' as const,
+  fullPath: 'libexpat.github.io' as const,
 }
 
 export type XmlwfPackage = typeof xmlwfPackage

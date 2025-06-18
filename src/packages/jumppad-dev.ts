@@ -88,7 +88,7 @@ export const jumppadPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jumppad' as const,
+  fullPath: 'jumppad.dev' as const,
 }
 
 export type JumppadPackage = typeof jumppadPackage

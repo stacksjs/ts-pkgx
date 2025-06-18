@@ -103,7 +103,7 @@ export const cURLPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cURL' as const,
+  fullPath: 'curl.se' as const,
 }
 
 export type CURLPackage = typeof cURLPackage

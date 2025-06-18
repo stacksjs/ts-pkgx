@@ -70,7 +70,7 @@ export const luajitPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'luajit' as const,
+  fullPath: 'luajit.org' as const,
 }
 
 export type LuajitPackage = typeof luajitPackage

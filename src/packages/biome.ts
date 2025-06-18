@@ -96,7 +96,7 @@ export const biomePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'biome' as const,
+  fullPath: 'biomejs.dev' as const,
 }
 
 export type BiomePackage = typeof biomePackage

@@ -69,7 +69,7 @@ export const tidyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'tidy' as const,
+  fullPath: 'html-tidy.org' as const,
 }
 
 export type TidyPackage = typeof tidyPackage

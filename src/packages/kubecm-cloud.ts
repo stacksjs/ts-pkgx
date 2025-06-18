@@ -78,7 +78,7 @@ export const kubecmPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kubecm' as const,
+  fullPath: 'kubecm.cloud' as const,
 }
 
 export type KubecmPackage = typeof kubecmPackage

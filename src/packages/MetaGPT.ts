@@ -95,7 +95,7 @@ export const metagptPackage = {
   aliases: [
     'metagpt',
   ] as const,
-  fullPath: 'MetaGPT' as const,
+  fullPath: 'deepwisdom.ai' as const,
 }
 
 export type MetagptPackage = typeof metagptPackage

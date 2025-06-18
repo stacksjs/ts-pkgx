@@ -70,7 +70,7 @@ export const hjsonPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'hjson' as const,
+  fullPath: 'hjson.github.io' as const,
 }
 
 export type HjsonPackage = typeof hjsonPackage

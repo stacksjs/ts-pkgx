@@ -91,7 +91,7 @@ export const litecliPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'litecli' as const,
+  fullPath: 'litecli.com' as const,
 }
 
 export type LitecliPackage = typeof litecliPackage

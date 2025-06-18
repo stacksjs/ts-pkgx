@@ -78,7 +78,7 @@ export const borgPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'borg' as const,
+  fullPath: 'borgbackup.org' as const,
 }
 
 export type BorgPackage = typeof borgPackage

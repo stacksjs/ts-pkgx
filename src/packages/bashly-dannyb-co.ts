@@ -97,7 +97,7 @@ export const bashlyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'bashly' as const,
+  fullPath: 'bashly.dannyb.co' as const,
 }
 
 export type BashlyPackage = typeof bashlyPackage

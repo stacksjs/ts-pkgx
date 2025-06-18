@@ -106,7 +106,7 @@ export const grantedPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'granted' as const,
+  fullPath: 'granted.dev' as const,
 }
 
 export type GrantedPackage = typeof grantedPackage

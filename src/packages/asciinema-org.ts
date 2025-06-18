@@ -76,7 +76,7 @@ export const asciinemaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'asciinema' as const,
+  fullPath: 'asciinema.org' as const,
 }
 
 export type AsciinemaPackage = typeof asciinemaPackage

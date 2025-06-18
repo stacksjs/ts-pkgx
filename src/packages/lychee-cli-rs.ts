@@ -80,7 +80,7 @@ export const lycheePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'lychee' as const,
+  fullPath: 'lychee.cli.rs' as const,
 }
 
 export type LycheePackage = typeof lycheePackage

@@ -106,7 +106,7 @@ export const fastlanePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'fastlane' as const,
+  fullPath: 'fastlane.tools' as const,
 }
 
 export type FastlanePackage = typeof fastlanePackage

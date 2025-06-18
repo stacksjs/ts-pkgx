@@ -123,7 +123,7 @@ export const localaiPackage = {
   aliases: [
     'local-ai',
   ] as const,
-  fullPath: 'LocalAI' as const,
+  fullPath: 'localai.io' as const,
 }
 
 export type LocalaiPackage = typeof localaiPackage

@@ -80,7 +80,7 @@ export const htopPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'htop' as const,
+  fullPath: 'htop.dev' as const,
 }
 
 export type HtopPackage = typeof htopPackage

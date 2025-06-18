@@ -80,7 +80,7 @@ export const ctagsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ctags' as const,
+  fullPath: 'ctags.io' as const,
 }
 
 export type CtagsPackage = typeof ctagsPackage

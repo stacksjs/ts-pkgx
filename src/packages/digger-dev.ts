@@ -258,7 +258,7 @@ export const diggerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'digger' as const,
+  fullPath: 'digger.dev' as const,
 }
 
 export type DiggerPackage = typeof diggerPackage

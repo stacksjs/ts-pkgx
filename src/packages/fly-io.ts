@@ -471,7 +471,7 @@ export const flyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'fly' as const,
+  fullPath: 'fly.io' as const,
 }
 
 export type FlyPackage = typeof flyPackage

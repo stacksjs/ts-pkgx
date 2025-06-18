@@ -69,7 +69,7 @@ export const jbig2decPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jbig2dec' as const,
+  fullPath: 'jbig2dec.com' as const,
 }
 
 export type Jbig2decPackage = typeof jbig2decPackage

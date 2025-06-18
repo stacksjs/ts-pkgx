@@ -76,7 +76,7 @@ export const corednsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'coredns' as const,
+  fullPath: 'coredns.io' as const,
 }
 
 export type CorednsPackage = typeof corednsPackage

@@ -224,7 +224,7 @@ export const nodePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'node' as const,
+  fullPath: 'nodejs.org' as const,
 }
 
 export type NodePackage = typeof nodePackage

@@ -78,7 +78,7 @@ export const cpanmPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cpanm' as const,
+  fullPath: 'cpanmin.us' as const,
 }
 
 export type CpanmPackage = typeof cpanmPackage

@@ -85,7 +85,7 @@ export const ktlintPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ktlint' as const,
+  fullPath: 'ktlint.github.io' as const,
 }
 
 export type KtlintPackage = typeof ktlintPackage

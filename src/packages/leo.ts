@@ -90,7 +90,7 @@ export const leoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'leo' as const,
+  fullPath: 'leo-lang.org' as const,
 }
 
 export type LeoPackage = typeof leoPackage

@@ -71,7 +71,7 @@ export const furyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'fury' as const,
+  fullPath: 'fury.co' as const,
 }
 
 export type FuryPackage = typeof furyPackage

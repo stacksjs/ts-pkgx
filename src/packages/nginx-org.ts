@@ -95,7 +95,7 @@ export const nginxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'nginx' as const,
+  fullPath: 'nginx.org' as const,
 }
 
 export type NginxPackage = typeof nginxPackage

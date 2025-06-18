@@ -89,7 +89,7 @@ export const fishPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'fish' as const,
+  fullPath: 'fishshell.com' as const,
 }
 
 export type FishPackage = typeof fishPackage

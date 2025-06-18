@@ -89,7 +89,7 @@ export const gnuplotPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gnuplot' as const,
+  fullPath: 'gnuplot.info' as const,
 }
 
 export type GnuplotPackage = typeof gnuplotPackage

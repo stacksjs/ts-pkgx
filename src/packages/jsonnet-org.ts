@@ -71,7 +71,7 @@ export const jsonnetPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jsonnet' as const,
+  fullPath: 'jsonnet.org' as const,
 }
 
 export type JsonnetPackage = typeof jsonnetPackage

@@ -87,7 +87,7 @@ export const luaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'lua' as const,
+  fullPath: 'lua.org' as const,
 }
 
 export type LuaPackage = typeof luaPackage

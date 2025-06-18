@@ -74,7 +74,7 @@ export const direnvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'direnv' as const,
+  fullPath: 'direnv.net' as const,
 }
 
 export type DirenvPackage = typeof direnvPackage

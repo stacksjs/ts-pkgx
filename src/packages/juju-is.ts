@@ -85,7 +85,7 @@ export const jujuPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'juju' as const,
+  fullPath: 'juju.is' as const,
 }
 
 export type JujuPackage = typeof jujuPackage

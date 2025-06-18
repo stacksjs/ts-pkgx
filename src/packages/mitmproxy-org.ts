@@ -102,7 +102,7 @@ export const mitmproxyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mitmproxy' as const,
+  fullPath: 'mitmproxy.org' as const,
 }
 
 export type MitmproxyPackage = typeof mitmproxyPackage

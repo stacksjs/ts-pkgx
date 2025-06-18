@@ -95,7 +95,7 @@ export const jenkinsltsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jenkins-lts' as const,
+  fullPath: 'jenkins.io' as const,
 }
 
 export type JenkinsltsPackage = typeof jenkinsltsPackage

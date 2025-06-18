@@ -3,7 +3,7 @@
  *
  * @domain `ninja-build.org`
  * @programs `ninja`
- * @version `1.12.1` (4 versions available)
+ * @version `1.13.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) ninja`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "ninja"
  * console.log(pkg.description) // "Small build system for use with gyp or CMake"
  * console.log(pkg.programs)    // ["ninja"]
- * console.log(pkg.versions[0]) // "1.12.1" (latest)
+ * console.log(pkg.versions[0]) // "1.13.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ninja-build-org.md
@@ -62,6 +62,7 @@ export const ninjaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.13.0',
     '1.12.1',
     '1.12.0',
     '1.11.1',
@@ -72,7 +73,7 @@ export const ninjaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ninja' as const,
+  fullPath: 'ninja-build.org' as const,
 }
 
 export type NinjaPackage = typeof ninjaPackage

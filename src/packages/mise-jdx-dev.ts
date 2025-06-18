@@ -365,7 +365,7 @@ export const misePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mise' as const,
+  fullPath: 'mise.jdx.dev' as const,
 }
 
 export type MisePackage = typeof misePackage

@@ -125,7 +125,7 @@ export const circleciPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'circleci' as const,
+  fullPath: 'circleci.com' as const,
 }
 
 export type CircleciPackage = typeof circleciPackage

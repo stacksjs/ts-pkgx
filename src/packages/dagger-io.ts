@@ -159,7 +159,7 @@ export const daggerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dagger' as const,
+  fullPath: 'dagger.io' as const,
 }
 
 export type DaggerPackage = typeof daggerPackage

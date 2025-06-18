@@ -96,7 +96,7 @@ export const ipfsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ipfs' as const,
+  fullPath: 'ipfs.tech' as const,
 }
 
 export type IpfsPackage = typeof ipfsPackage

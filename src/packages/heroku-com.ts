@@ -107,7 +107,7 @@ export const herokuPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'heroku' as const,
+  fullPath: 'heroku.com' as const,
 }
 
 export type HerokuPackage = typeof herokuPackage

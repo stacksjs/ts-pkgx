@@ -80,7 +80,7 @@ export const kagglePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kaggle' as const,
+  fullPath: 'kaggle.com' as const,
 }
 
 export type KagglePackage = typeof kagglePackage

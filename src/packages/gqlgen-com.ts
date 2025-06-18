@@ -107,7 +107,7 @@ export const gqlgenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gqlgen' as const,
+  fullPath: 'gqlgen.com' as const,
 }
 
 export type GqlgenPackage = typeof gqlgenPackage

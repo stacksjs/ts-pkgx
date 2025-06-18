@@ -83,7 +83,7 @@ export const exiftoolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'exiftool' as const,
+  fullPath: 'exiftool.org' as const,
 }
 
 export type ExiftoolPackage = typeof exiftoolPackage

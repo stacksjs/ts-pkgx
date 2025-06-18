@@ -79,7 +79,7 @@ export const gomplatePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gomplate' as const,
+  fullPath: 'gomplate.ca' as const,
 }
 
 export type GomplatePackage = typeof gomplatePackage

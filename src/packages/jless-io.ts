@@ -77,7 +77,7 @@ export const jlessPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jless' as const,
+  fullPath: 'jless.io' as const,
 }
 
 export type JlessPackage = typeof jlessPackage

@@ -75,7 +75,7 @@ export const gifPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gif' as const,
+  fullPath: 'giflib.sourceforge.io' as const,
 }
 
 export type GifPackage = typeof gifPackage

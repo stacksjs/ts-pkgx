@@ -82,7 +82,7 @@ export const nomadPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'nomad' as const,
+  fullPath: 'nomadproject.io' as const,
 }
 
 export type NomadPackage = typeof nomadPackage

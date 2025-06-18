@@ -85,7 +85,7 @@ export const matdumpPackage = {
   aliases: [
     'matdump',
   ] as const,
-  fullPath: 'libmatio' as const,
+  fullPath: 'matio.sourceforge.io' as const,
 }
 
 export type MatdumpPackage = typeof matdumpPackage

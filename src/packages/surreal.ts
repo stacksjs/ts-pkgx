@@ -3,7 +3,7 @@
  *
  * @domain `surrealdb.com`
  * @programs `surreal`
- * @version `2023.9.1` (42 versions available)
+ * @version `2023.9.1` (44 versions available)
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) surreal`
@@ -75,10 +75,12 @@ export const surrealPackage = {
     '2.3.2',
     '2.3.1',
     '2.3.0',
+    '2.2.4',
     '2.2.3',
     '2.2.2',
     '2.2.1',
     '2.2.0',
+    '2.1.6',
     '2.1.5',
     '2.1.4',
     '2.1.3',

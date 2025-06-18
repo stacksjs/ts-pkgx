@@ -78,7 +78,7 @@ export const doxygenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'doxygen' as const,
+  fullPath: 'doxygen.nl' as const,
 }
 
 export type DoxygenPackage = typeof doxygenPackage

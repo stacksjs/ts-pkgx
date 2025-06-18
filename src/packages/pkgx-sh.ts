@@ -8,6 +8,7 @@
  *
  * @install `sh <(curl https://pkgx.sh) pkgx`
  * @name `pkgx`
+ * @aliases `pkgx.sh/`
  *
  * @example
  * ```typescript
@@ -102,7 +103,9 @@ export const pkgxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'pkgx.sh/',
+  ] as const,
   fullPath: 'pkgx.sh' as const,
 }
 

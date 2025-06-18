@@ -91,7 +91,7 @@ export const podPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'pod' as const,
+  fullPath: 'cocoapods.org' as const,
 }
 
 export type PodPackage = typeof podPackage

@@ -81,7 +81,7 @@ export const microckscliPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'microcks-cli' as const,
+  fullPath: 'microcks.io' as const,
 }
 
 export type MicrockscliPackage = typeof microckscliPackage

@@ -93,7 +93,7 @@ export const hatchPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'hatch' as const,
+  fullPath: 'hatch.pypa.io' as const,
 }
 
 export type HatchPackage = typeof hatchPackage

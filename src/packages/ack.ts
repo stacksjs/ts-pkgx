@@ -81,7 +81,7 @@ export const ackPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'ack' as const,
+  fullPath: 'beyondgrep.com' as const,
 }
 
 export type AckPackage = typeof ackPackage

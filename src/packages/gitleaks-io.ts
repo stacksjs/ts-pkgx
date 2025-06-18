@@ -97,7 +97,7 @@ export const gitleaksPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gitleaks' as const,
+  fullPath: 'gitleaks.io' as const,
 }
 
 export type GitleaksPackage = typeof gitleaksPackage

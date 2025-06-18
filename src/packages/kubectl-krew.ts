@@ -77,7 +77,7 @@ export const kubectlkrewPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kubectl-krew' as const,
+  fullPath: 'krew.sigs.k8s.io' as const,
 }
 
 export type KubectlkrewPackage = typeof kubectlkrewPackage

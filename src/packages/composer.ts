@@ -106,7 +106,7 @@ export const composerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'composer' as const,
+  fullPath: 'getcomposer.org' as const,
 }
 
 export type ComposerPackage = typeof composerPackage

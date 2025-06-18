@@ -78,7 +78,7 @@ export const infracostPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'infracost' as const,
+  fullPath: 'infracost.io' as const,
 }
 
 export type InfracostPackage = typeof infracostPackage

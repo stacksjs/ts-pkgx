@@ -107,7 +107,7 @@ export const fliptPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'flipt' as const,
+  fullPath: 'flipt.io' as const,
 }
 
 export type FliptPackage = typeof fliptPackage

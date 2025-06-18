@@ -144,7 +144,7 @@ export const daytonaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'daytona' as const,
+  fullPath: 'daytona.io' as const,
 }
 
 export type DaytonaPackage = typeof daytonaPackage

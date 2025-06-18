@@ -94,7 +94,7 @@ export const certbotPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'certbot' as const,
+  fullPath: 'certbot.eff.org' as const,
 }
 
 export type CertbotPackage = typeof certbotPackage

@@ -101,7 +101,7 @@ export const nixpacksPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'nixpacks' as const,
+  fullPath: 'nixpacks.com' as const,
 }
 
 export type NixpacksPackage = typeof nixpacksPackage

@@ -123,7 +123,7 @@ export const gittownPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'git-town' as const,
+  fullPath: 'git-town.com' as const,
 }
 
 export type GittownPackage = typeof gittownPackage

@@ -84,7 +84,7 @@ export const alembicPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'alembic' as const,
+  fullPath: 'alembic.sqlalchemy.org' as const,
 }
 
 export type AlembicPackage = typeof alembicPackage

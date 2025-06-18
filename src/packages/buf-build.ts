@@ -3,7 +3,7 @@
  *
  * @domain `buf.build`
  * @programs `buf`
- * @version `1.55.0` (42 versions available)
+ * @version `1.55.1` (43 versions available)
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) buf`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "buf"
  * console.log(pkg.description) // "The best way of working with Protocol Buffers."
  * console.log(pkg.programs)    // ["buf"]
- * console.log(pkg.versions[0]) // "1.55.0" (latest)
+ * console.log(pkg.versions[0]) // "1.55.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/buf-build.md
@@ -62,6 +62,7 @@ export const bufPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.55.1',
     '1.55.0',
     '1.54.0',
     '1.53.0',
@@ -110,7 +111,7 @@ export const bufPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'buf' as const,
+  fullPath: 'buf.build' as const,
 }
 
 export type BufPackage = typeof bufPackage

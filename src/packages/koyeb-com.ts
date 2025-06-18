@@ -104,7 +104,7 @@ export const koyebPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'koyeb' as const,
+  fullPath: 'koyeb.com' as const,
 }
 
 export type KoyebPackage = typeof koyebPackage

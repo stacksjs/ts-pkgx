@@ -109,7 +109,7 @@ export const goreleaserPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'goreleaser' as const,
+  fullPath: 'goreleaser.com' as const,
 }
 
 export type GoreleaserPackage = typeof goreleaserPackage

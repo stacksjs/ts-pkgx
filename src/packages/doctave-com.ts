@@ -69,7 +69,7 @@ export const doctavePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'doctave' as const,
+  fullPath: 'doctave.com' as const,
 }
 
 export type DoctavePackage = typeof doctavePackage

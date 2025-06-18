@@ -78,7 +78,7 @@ export const caskPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cask' as const,
+  fullPath: 'cask.readthedocs.io' as const,
 }
 
 export type CaskPackage = typeof caskPackage

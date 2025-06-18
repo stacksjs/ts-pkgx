@@ -105,7 +105,7 @@ export const dartPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dart' as const,
+  fullPath: 'dart.dev' as const,
 }
 
 export type DartPackage = typeof dartPackage

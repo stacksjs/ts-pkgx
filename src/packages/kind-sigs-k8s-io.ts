@@ -79,7 +79,7 @@ export const kindPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kind' as const,
+  fullPath: 'kind.sigs.k8s.io' as const,
 }
 
 export type KindPackage = typeof kindPackage

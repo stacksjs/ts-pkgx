@@ -81,7 +81,7 @@ export const gitlfsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'git-lfs' as const,
+  fullPath: 'git-lfs.com' as const,
 }
 
 export type GitlfsPackage = typeof gitlfsPackage

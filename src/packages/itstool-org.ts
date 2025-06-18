@@ -77,7 +77,7 @@ export const itstoolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'itstool' as const,
+  fullPath: 'itstool.org' as const,
 }
 
 export type ItstoolPackage = typeof itstoolPackage

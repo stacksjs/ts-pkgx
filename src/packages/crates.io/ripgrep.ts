@@ -8,7 +8,7 @@
  *
  * @install `sh <(curl https://pkgx.sh) rg`
  * @name `rg`
- * @aliases `crates.io-ripgrep`
+ * @aliases `ripgrep`
  *
  * @example
  * ```typescript
@@ -76,9 +76,9 @@ export const rgPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'crates.io-ripgrep',
+    'ripgrep',
   ] as const,
-  fullPath: 'crates.io-ripgrep' as const,
+  fullPath: 'crates.io/ripgrep' as const,
 }
 
 export type RgPackage = typeof rgPackage

@@ -110,7 +110,7 @@ export const depotPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'depot' as const,
+  fullPath: 'depot.dev' as const,
 }
 
 export type DepotPackage = typeof depotPackage

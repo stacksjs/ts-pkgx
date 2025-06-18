@@ -113,7 +113,7 @@ export const bytebasePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'bytebase' as const,
+  fullPath: 'bytebase.com' as const,
 }
 
 export type BytebasePackage = typeof bytebasePackage

@@ -80,7 +80,7 @@ export const aria2cPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'aria2c' as const,
+  fullPath: 'aria2.github.io' as const,
 }
 
 export type Aria2cPackage = typeof aria2cPackage

@@ -101,7 +101,7 @@ export const elizaPackage = {
     'eliza',
     'elizaos',
   ] as const,
-  fullPath: 'elizaOS' as const,
+  fullPath: 'elizaOS.github.io' as const,
 }
 
 export type ElizaPackage = typeof elizaPackage

@@ -109,7 +109,7 @@ export const dotnetPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dotnet' as const,
+  fullPath: 'dotnet.microsoft.com' as const,
 }
 
 export type DotnetPackage = typeof dotnetPackage

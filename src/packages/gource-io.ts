@@ -83,7 +83,7 @@ export const gourcePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gource' as const,
+  fullPath: 'gource.io' as const,
 }
 
 export type GourcePackage = typeof gourcePackage

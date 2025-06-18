@@ -1,10 +1,10 @@
 # openssh.com
 
-> A package from openssh.com
+> A package from opens.sh/com
 
 ## Package Information
 
-- **Domain**: `openssh.com`
+- **Domain**: `opens.sh/com`
 - **Name**: `openssh.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openssh.com/package.yml)
@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +openssh.com@10.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +opens.sh/com@10.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

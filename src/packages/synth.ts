@@ -69,7 +69,7 @@ export const synthPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'synth' as const,
+  fullPath: 'getsynth.com' as const,
 }
 
 export type SynthPackage = typeof synthPackage

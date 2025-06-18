@@ -97,7 +97,7 @@ export const jbangPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'jbang' as const,
+  fullPath: 'jbang.dev' as const,
 }
 
 export type JbangPackage = typeof jbangPackage

@@ -88,7 +88,7 @@ export const cuePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cue' as const,
+  fullPath: 'cuelang.org' as const,
 }
 
 export type CuePackage = typeof cuePackage

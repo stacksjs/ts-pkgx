@@ -85,7 +85,7 @@ export const munPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mun' as const,
+  fullPath: 'mun-lang.org' as const,
 }
 
 export type MunPackage = typeof munPackage

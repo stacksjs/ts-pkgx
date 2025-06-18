@@ -80,7 +80,7 @@ export const argbashPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'argbash' as const,
+  fullPath: 'argbash.dev' as const,
 }
 
 export type ArgbashPackage = typeof argbashPackage

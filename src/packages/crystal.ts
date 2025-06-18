@@ -110,7 +110,7 @@ export const crystalPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'crystal' as const,
+  fullPath: 'crystal-lang.org' as const,
 }
 
 export type CrystalPackage = typeof crystalPackage

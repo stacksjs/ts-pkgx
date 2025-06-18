@@ -132,7 +132,7 @@ export const eksctlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'eksctl' as const,
+  fullPath: 'eksctl.io' as const,
 }
 
 export type EksctlPackage = typeof eksctlPackage

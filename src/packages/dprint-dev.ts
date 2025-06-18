@@ -95,7 +95,7 @@ export const dprintPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dprint' as const,
+  fullPath: 'dprint.dev' as const,
 }
 
 export type DprintPackage = typeof dprintPackage

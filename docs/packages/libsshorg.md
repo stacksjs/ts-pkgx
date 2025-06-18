@@ -1,10 +1,10 @@
 # libssh.org
 
-> A package from libssh.org
+> A package from libs.sh/org
 
 ## Package Information
 
-- **Domain**: `libssh.org`
+- **Domain**: `libs.sh/org`
 - **Name**: `libssh.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libssh.org/package.yml)
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libssh.org@0.11.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libs.sh/org@0.11.1 -- $SHELL -i
 ```
 
 ## Dependencies

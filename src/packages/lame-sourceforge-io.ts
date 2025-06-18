@@ -69,7 +69,7 @@ export const lamePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'lame' as const,
+  fullPath: 'lame.sourceforge.io' as const,
 }
 
 export type LamePackage = typeof lamePackage

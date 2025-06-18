@@ -207,7 +207,7 @@ export const denoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'deno' as const,
+  fullPath: 'deno.land' as const,
 }
 
 export type DenoPackage = typeof denoPackage

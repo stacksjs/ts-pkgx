@@ -79,7 +79,7 @@ export const carapacePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'carapace' as const,
+  fullPath: 'carapace.sh' as const,
 }
 
 export type CarapacePackage = typeof carapacePackage

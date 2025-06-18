@@ -137,7 +137,7 @@ export const coderPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'coder' as const,
+  fullPath: 'coder.com' as const,
 }
 
 export type CoderPackage = typeof coderPackage

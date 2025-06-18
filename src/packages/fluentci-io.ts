@@ -145,7 +145,7 @@ export const fluentciPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'fluentci' as const,
+  fullPath: 'fluentci.io' as const,
 }
 
 export type FluentciPackage = typeof fluentciPackage

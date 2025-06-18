@@ -116,7 +116,7 @@ export const flywayPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'flyway' as const,
+  fullPath: 'flywaydb.org' as const,
 }
 
 export type FlywayPackage = typeof flywayPackage

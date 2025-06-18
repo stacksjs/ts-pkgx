@@ -75,7 +75,7 @@ export const cstoolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cstool' as const,
+  fullPath: 'capstone-engine.org' as const,
 }
 
 export type CstoolPackage = typeof cstoolPackage

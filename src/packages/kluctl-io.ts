@@ -82,7 +82,7 @@ export const kluctlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kluctl' as const,
+  fullPath: 'kluctl.io' as const,
 }
 
 export type KluctlPackage = typeof kluctlPackage

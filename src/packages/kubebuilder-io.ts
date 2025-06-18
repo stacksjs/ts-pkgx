@@ -86,7 +86,7 @@ export const kubebuilderPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'kubebuilder' as const,
+  fullPath: 'kubebuilder.io' as const,
 }
 
 export type KubebuilderPackage = typeof kubebuilderPackage

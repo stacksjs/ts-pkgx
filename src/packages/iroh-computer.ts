@@ -103,7 +103,7 @@ export const irohPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'iroh' as const,
+  fullPath: 'iroh.computer' as const,
 }
 
 export type IrohPackage = typeof irohPackage

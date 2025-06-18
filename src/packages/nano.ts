@@ -78,7 +78,7 @@ export const nanoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'nano' as const,
+  fullPath: 'nano-editor.org' as const,
 }
 
 export type NanoPackage = typeof nanoPackage

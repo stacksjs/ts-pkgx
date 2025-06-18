@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `zsh.sourceforge.io`
+- **Domain**: `z.sh/sourceforge-io`
 - **Name**: `zsh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zsh.sourceforge.io/package.yml)
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +zsh.sourceforge.io@5.9.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +z.sh/sourceforge-io@5.9.0 -- $SHELL -i
 ```
 
 ## Dependencies

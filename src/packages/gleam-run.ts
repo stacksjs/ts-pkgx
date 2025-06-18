@@ -112,7 +112,7 @@ export const gleamPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'gleam' as const,
+  fullPath: 'gleam.run' as const,
 }
 
 export type GleamPackage = typeof gleamPackage

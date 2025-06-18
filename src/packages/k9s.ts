@@ -120,7 +120,7 @@ export const k9sPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'k9s' as const,
+  fullPath: 'k9scli.io' as const,
 }
 
 export type K9sPackage = typeof k9sPackage

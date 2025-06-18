@@ -88,7 +88,7 @@ export const maturinPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'maturin' as const,
+  fullPath: 'maturin.rs' as const,
 }
 
 export type MaturinPackage = typeof maturinPackage

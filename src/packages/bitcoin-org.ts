@@ -101,7 +101,7 @@ export const bitcoinPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'bitcoin' as const,
+  fullPath: 'bitcoin.org' as const,
 }
 
 export type BitcoinPackage = typeof bitcoinPackage

@@ -135,7 +135,7 @@ export const mailpitPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'mailpit' as const,
+  fullPath: 'mailpit.axllent.org' as const,
 }
 
 export type MailpitPackage = typeof mailpitPackage

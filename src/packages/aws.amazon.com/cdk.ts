@@ -3,7 +3,7 @@
  *
  * @domain `aws.amazon.com/cdk`
  * @programs `cdk`
- * @version `3.0.0` (160 versions available)
+ * @version `3.0.0` (161 versions available)
  * @versions From newest version to oldest.
  *
  * @install `sh <(curl https://pkgx.sh) cdk`
@@ -71,6 +71,7 @@ export const cdkPackage = {
    */
   versions: [
     '3.0.0',
+    '2.1019.0',
     '2.1018.1',
     '2.1018.0',
     '2.1017.1',

@@ -78,7 +78,7 @@ export const dhallPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'dhall' as const,
+  fullPath: 'dhall-lang.org' as const,
 }
 
 export type DhallPackage = typeof dhallPackage

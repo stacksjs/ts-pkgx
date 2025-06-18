@@ -73,7 +73,7 @@ export const borePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'bore' as const,
+  fullPath: 'bore.pub' as const,
 }
 
 export type BorePackage = typeof borePackage

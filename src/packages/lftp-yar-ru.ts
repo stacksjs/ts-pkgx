@@ -87,7 +87,7 @@ export const lftpPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'lftp' as const,
+  fullPath: 'lftp.yar.ru' as const,
 }
 
 export type LftpPackage = typeof lftpPackage

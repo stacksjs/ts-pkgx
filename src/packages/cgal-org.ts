@@ -86,7 +86,7 @@ export const cgalPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'cgal' as const,
+  fullPath: 'cgal.org' as const,
 }
 
 export type CgalPackage = typeof cgalPackage

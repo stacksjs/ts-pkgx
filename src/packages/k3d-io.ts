@@ -85,7 +85,7 @@ export const k3dPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  fullPath: 'k3d' as const,
+  fullPath: 'k3d.io' as const,
 }
 
 export type K3dPackage = typeof k3dPackage
