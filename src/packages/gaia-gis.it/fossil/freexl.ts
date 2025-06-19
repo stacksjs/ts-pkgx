@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gaia-gis.it/fossil/freexl -- $SHELL -i`
- * @dependencies `zlib.net/minizip^1`, `libexpat.github.io^2`, `doxygen.nl@1`
+ * @dependencies `zlib.net/minizip^1`, `libexpat.github.io^2`
  *
  * @example
  * ```typescript
@@ -50,7 +50,6 @@ export const gaiagisitfossil/freexlPackage = {
   dependencies: [
     'zlib.net/minizip^1',
     'libexpat.github.io^2',
-    'doxygen.nl@1',
   ] as const,
   /**
    * Available versions from newest to oldest.

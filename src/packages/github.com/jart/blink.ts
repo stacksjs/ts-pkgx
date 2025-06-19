@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +github.com/jart/blink -- $SHELL -i`
  * @name `blink`
- * @dependencies `gnu.org/make`, `curl.se`
  *
  * @example
  * ```typescript
@@ -58,14 +57,7 @@ export const blinkPackage = {
     'blinkenlights',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/make',
-    'curl.se',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -8,7 +8,6 @@
  *
  * @install `launchpad install pcap-config`
  * @aliases `pcap-config`
- * @dependencies `gnu.org/make`, `gnu.org/bison`, `github.com/westes/flex`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const pcapconfigPackage = {
     'pcap-config',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/make',
-    'gnu.org/bison',
-    'github.com/westes/flex',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

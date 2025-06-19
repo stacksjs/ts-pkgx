@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +giflib.sourceforge.io -- $SHELL -i`
  * @aliases `gif`
- * @dependencies `gnu.org/patch`, `imagemagick.org`
  *
  * @example
  * ```typescript
@@ -62,14 +61,7 @@ export const gifPackage = {
     'giftool',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/patch',
-    'imagemagick.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

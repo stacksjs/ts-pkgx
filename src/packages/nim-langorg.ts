@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +nim-lang.org -- $SHELL -i`
- * @dependencies `gnu.org/gcc`, `pcre.org`, `openssl.org`, ... (+1 more)
+ * @dependencies `gnu.org/gcc`, `pcre.org`, `openssl.org`
  *
  * @example
  * ```typescript
@@ -68,7 +68,6 @@ export const nimlangorgPackage = {
     'gnu.org/gcc',
     'pcre.org',
     'openssl.org',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

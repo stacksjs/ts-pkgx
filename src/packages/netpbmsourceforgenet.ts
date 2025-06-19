@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +netpbm.sourceforge.net -- $SHELL -i`
- * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `libpng.org`, ... (+7 more)
+ * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `libpng.org`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -377,10 +377,6 @@ export const netpbmsourceforgenetPackage = {
     'simplesystems.org/libtiff',
     'gnome.org/libxml2',
     'zlib.net',
-    'gnu.org/make',
-    'github.com/westes/flex',
-    'perl.org',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

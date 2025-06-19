@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/essembeh/gnome-extensions-cli -- $SHELL -i`
- * @dependencies `pkgx.sh^1`, `python.org~3.11`, `python-poetry.org^1`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -59,8 +59,6 @@ export const githubcomessembehgnomeextensionscliPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.11',
-    'python-poetry.org^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

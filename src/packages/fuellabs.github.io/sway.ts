@@ -8,7 +8,7 @@
  *
  * @install `launchpad install forc`
  * @aliases `forc`
- * @dependencies `zlib.net^1`, `openssl.org^1.1`, `rust-lang.org^1.78 # stdsimd changes`, ... (+3 more)
+ * @dependencies `zlib.net^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -64,10 +64,6 @@ export const forcPackage = {
   dependencies: [
     'zlib.net^1',
     'openssl.org^1.1',
-    'rust-lang.org^1.78 # stdsimd changes',
-    'rust-lang.org/cargo^0',
-    'perl.org',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

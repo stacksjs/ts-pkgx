@@ -7,7 +7,7 @@
  *
  * @install `launchpad install +phpmyadmin.net -- $SHELL -i`
  * @aliases `phpMyAdmin`
- * @dependencies `php.net`, `php.net`
+ * @dependencies `php.net`
  *
  * @example
  * ```typescript
@@ -53,7 +53,6 @@ export const phpMyAdminPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'php.net',
     'php.net',
   ] as const,
   /**

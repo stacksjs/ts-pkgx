@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +grpc.io -- $SHELL -i`
  * @aliases `grpc`
- * @dependencies `abseil.io^20250127`, `c-ares.org`, `openssl.org^1.1`, ... (+12 more)
+ * @dependencies `abseil.io^20250127`, `c-ares.org`, `openssl.org^1.1`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -67,6 +67,7 @@ export const grpcPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'abseil.io^20250127',
@@ -74,16 +75,8 @@ export const grpcPackage = {
     'openssl.org^1.1',
     'github.com/google/re2',
     'zlib.net',
-    'gnu.org/gcc/libstdcxx',
-    'protobuf.dev^30.0.0 # as of 1.72.0',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
-    'gnu.org/patch',
-    'cmake.org^3',
-    'freedesktop.org/pkg-config^0',
-    'git-scm.org^2',
-    'freedesktop.org/pkg-config^0',
+    'linux:gnu.org/gcc/libstdcxx',
+    'linux:protobuf.dev^30.0.0 # as of 1.72.0',
   ] as const,
   /**
    * Available versions from newest to oldest.

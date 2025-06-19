@@ -8,7 +8,6 @@
  *
  * @install `launchpad install SvtAv1EncApp`
  * @aliases `SvtAv1EncApp`
- * @dependencies `cmake.org`, `yasm.tortall.net`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const svtAv1EncAppPackage = {
     'SvtAv1EncApp',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'yasm.tortall.net',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

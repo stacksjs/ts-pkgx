@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/plougher/squashfs-tools -- $SHELL -i`
  * @aliases `SquashFS-Tools`
- * @dependencies `lz4.org@1`, `oberhumer.com/lzo@2`, `tukaani.org/xz@5`, ... (+5 more)
+ * @dependencies `lz4.org@1`, `oberhumer.com/lzo@2`, `tukaani.org/xz@5`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -70,9 +70,6 @@ export const squashFSToolsPackage = {
     'tukaani.org/xz@5',
     'facebook.com/zstd@1',
     'zlib.net@1',
-    'curl.se',
-    'gnu.org/patch',
-    'gnu.org/diffutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

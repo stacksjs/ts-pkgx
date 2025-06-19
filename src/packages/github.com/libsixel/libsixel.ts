@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/libsixel/libsixel -- $SHELL -i`
- * @dependencies `libjpeg-turbo.org`, `libpng.org`, `mesonbuild.com`, ... (+1 more)
+ * @dependencies `libjpeg-turbo.org`, `libpng.org`
  *
  * @example
  * ```typescript
@@ -61,8 +61,6 @@ export const githubcomlibsixellibsixelPackage = {
   dependencies: [
     'libjpeg-turbo.org',
     'libpng.org',
-    'mesonbuild.com',
-    'ninja-build.org@1',
   ] as const,
   /**
    * Available versions from newest to oldest.

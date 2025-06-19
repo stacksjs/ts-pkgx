@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xau -- $SHELL -i`
- * @dependencies `x.org/util-macros`, `x.org/protocol`, `freedesktop.org/pkg-config~0.29`
+ * @dependencies `x.org/util-macros`, `x.org/protocol`
  *
  * @example
  * ```typescript
@@ -50,7 +50,6 @@ export const xorgxauPackage = {
   dependencies: [
     'x.org/util-macros',
     'x.org/protocol',
-    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

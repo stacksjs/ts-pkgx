@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cfn-lint`
  * @name `cfn-lint`
- * @dependencies `pkgx.sh@1`, `pyyaml.org`, `github.com/benjaminp/six`, ... (+2 more)
+ * @dependencies `pkgx.sh@1`, `pyyaml.org`, `github.com/benjaminp/six`
  *
  * @example
  * ```typescript
@@ -65,8 +65,6 @@ export const cfnlintPackage = {
     'pkgx.sh@1',
     'pyyaml.org',
     'github.com/benjaminp/six',
-    'rust-lang.org',
-    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

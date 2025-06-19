@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +savannah.nongnu.org/attr -- $SHELL -i`
  * @name `attr`
- * @dependencies `gnu.org/gettext`
  *
  * @example
  * ```typescript
@@ -59,13 +58,7 @@ export const attrPackage = {
     'setfattr',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/gettext',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

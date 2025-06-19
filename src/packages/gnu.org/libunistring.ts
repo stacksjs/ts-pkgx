@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/libunistring -- $SHELL -i`
- * @dependencies `gnu.org/gmp`, `gnu.org/m4`
  *
  * @example
  * ```typescript
@@ -43,14 +42,7 @@ export const gnuorglibunistringPackage = {
   installCommand: 'launchpad install +gnu.org/libunistring -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/gmp',
-    'gnu.org/m4',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

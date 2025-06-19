@@ -8,7 +8,6 @@
  *
  * @install `launchpad install gleam`
  * @aliases `gleam`
- * @dependencies `rust-lang.org>=1.85`, `rust-lang.org/cargo>=0.86`, `erlang.org`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const gleamPackage = {
     'gleam',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org>=1.85',
-    'rust-lang.org/cargo>=0.86',
-    'erlang.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

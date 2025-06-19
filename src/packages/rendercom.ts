@@ -8,7 +8,6 @@
  *
  * @install `launchpad install render`
  * @aliases `render`
- * @dependencies `deno.land^1.30`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const renderPackage = {
     'render',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'deno.land^1.30',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

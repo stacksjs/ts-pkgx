@@ -8,7 +8,7 @@
  *
  * @install `launchpad install werf`
  * @aliases `werf`
- * @dependencies `github.com/kdave/btrfs-progs^6.7`, `sourceware.org/dm^2.3`, `go.dev^1.21`, ... (+3 more)
+ * @dependencies `linux:github.com/kdave/btrfs-progs^6.7`, `linux:sourceware.org/dm^2.3` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,14 +60,11 @@ export const werfPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'github.com/kdave/btrfs-progs^6.7',
-    'sourceware.org/dm^2.3',
-    'go.dev^1.21',
-    'gnu.org/gcc',
-    'gnu.org/binutils',
-    'git-scm.org',
+    'linux:github.com/kdave/btrfs-progs^6.7',
+    'linux:sourceware.org/dm^2.3',
   ] as const,
   /**
    * Available versions from newest to oldest.

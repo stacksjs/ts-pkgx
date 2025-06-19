@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +facebook.com/folly -- $SHELL -i`
- * @dependencies `boost.org`, `gflags.github.io`, `google.com/glog<0.7`, ... (+22 more)
+ * @dependencies `boost.org`, `gflags.github.io`, `google.com/glog<0.7`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,6 +47,7 @@ export const facebookcomfollyPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'boost.org',
@@ -64,16 +65,11 @@ export const facebookcomfollyPackage = {
     'fmt.dev^10',
     'zlib.net^1',
     'github.com/fastfloat/fast_float@7',
-    'sourceware.org/bzip2',
-    'libcxx.llvm.org^18 # libunwind, since 2024.5.13.0',
-    'jemalloc.net^5 # since 2024.5.13.0',
-    'elfutils.org^0 # for dwarf.h, since 2024.5.13.0',
-    'gnu.org/gcc/libstdcxx@13',
-    'cmake.org^3.0.2',
-    'gnu.org/gcc@13',
-    'curl.se',
-    'gnu.org/patch',
-    'gnu.org/gcc',
+    'darwin:sourceware.org/bzip2',
+    'linux:libcxx.llvm.org^18 # libunwind, since 2024.5.13.0',
+    'linux:jemalloc.net^5 # since 2024.5.13.0',
+    'linux:elfutils.org^0 # for dwarf.h, since 2024.5.13.0',
+    'linux:gnu.org/gcc/libstdcxx@13',
   ] as const,
   /**
    * Available versions from newest to oldest.

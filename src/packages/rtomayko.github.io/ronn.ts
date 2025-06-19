@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ronn`
  * @name `ronn`
- * @dependencies `ruby-lang.org^3.1`, `rubygems.org`, `rubygems.org`
+ * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const ronnPackage = {
    */
   dependencies: [
     'ruby-lang.org^3.1',
-    'rubygems.org',
     'rubygems.org',
   ] as const,
   /**

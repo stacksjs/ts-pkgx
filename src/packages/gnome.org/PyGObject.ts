@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/PyGObject -- $SHELL -i`
- * @dependencies `gnome.org/gobject-introspection`, `cairographics.org/pycairo`, `mesonbuild.com`, ... (+4 more)
+ * @dependencies `gnome.org/gobject-introspection`, `cairographics.org/pycairo`
  *
  * @example
  * ```typescript
@@ -50,11 +50,6 @@ export const gnomeorgpygobjectPackage = {
   dependencies: [
     'gnome.org/gobject-introspection',
     'cairographics.org/pycairo',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'python.org~3.11',
-    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

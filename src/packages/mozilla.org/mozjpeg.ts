@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +mozilla.org/mozjpeg -- $SHELL -i`
- * @dependencies `libpng.org^1`, `cmake.org^3`, `nasm.us^2`, ... (+1 more)
+ * @dependencies `libpng.org^1`
  *
  * @example
  * ```typescript
@@ -62,9 +62,6 @@ export const mozillaorgmozjpegPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'libpng.org^1',
-    'cmake.org^3',
-    'nasm.us^2',
     'libpng.org^1',
   ] as const,
   /**

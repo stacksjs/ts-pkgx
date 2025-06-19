@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +glaros.dtc.umn.edu/metis -- $SHELL -i`
  * @name `metis`
- * @dependencies `gnu.org/make`, `cmake.org`, `git-scm.org`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -62,16 +61,7 @@ export const metisPackage = {
     'ndmetis',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/make',
-    'cmake.org',
-    'git-scm.org',
-    'curl.se',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

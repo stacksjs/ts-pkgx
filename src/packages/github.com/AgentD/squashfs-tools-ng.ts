@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/AgentD/squashfs-tools-ng -- $SHELL -i`
  * @name `squashfs-tools-ng`
- * @dependencies `zlib.net^1`, `tukaani.org/xz^5`, `lz4.org^1`, ... (+7 more)
+ * @dependencies `zlib.net^1`, `tukaani.org/xz^5`, `lz4.org^1`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -70,11 +70,6 @@ export const squashfstoolsngPackage = {
     'lz4.org^1',
     'facebook.com/zstd^1',
     'oberhumer.com/lzo^2',
-    'gnu.org/coreutils',
-    'gnu.org/libtool',
-    'gnu.org/gawk',
-    'gnu.org/gcc',
-    'cmake.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cython`
  * @aliases `cython`
- * @dependencies `python.org<3.12`, `pip.pypa.io`, `llvm.org`
+ * @dependencies `python.org<3.12`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const cythonPackage = {
    */
   dependencies: [
     'python.org<3.12',
-    'pip.pypa.io',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

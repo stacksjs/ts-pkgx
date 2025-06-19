@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xft -- $SHELL -i`
- * @dependencies `freedesktop.org/fontconfig^2.14`, `x.org/xrender^0.9`, `sourceware.org/bzip2^1`, ... (+2 more)
+ * @dependencies `freedesktop.org/fontconfig^2.14`, `x.org/xrender^0.9`, `sourceware.org/bzip2^1`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -52,7 +52,6 @@ export const xorgxftPackage = {
     'x.org/xrender^0.9',
     'sourceware.org/bzip2^1',
     'zlib.net^1',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

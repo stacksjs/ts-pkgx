@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +people.engr.tamu.edu/davis/suitesparse -- $SHELL -i`
  * @aliases `suite-sparse`
- * @dependencies `glaros.dtc.umn.edu/metis`, `gnu.org/m4`, `netlib.org/lapack`, ... (+9 more)
+ * @dependencies `glaros.dtc.umn.edu/metis`, `gnu.org/m4`, `netlib.org/lapack`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -70,11 +70,6 @@ export const suitesparsePackage = {
     'openmp.llvm.org',
     'gnu.org/mpfr',
     'gnu.org/gcc',
-    'cmake.org',
-    'freedesktop.org/pkg-config',
-    'gnu.org/make',
-    'freedesktop.org/pkg-config',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

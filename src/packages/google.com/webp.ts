@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +google.com/webp -- $SHELL -i`
- * @dependencies `giflib.sourceforge.io^5`, `libjpeg-turbo.org^2`, `libpng.org^1`, ... (+2 more)
+ * @dependencies `giflib.sourceforge.io^5`, `libjpeg-turbo.org^2`, `libpng.org^1`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -67,7 +67,6 @@ export const googlecomwebpPackage = {
     'libjpeg-turbo.org^2',
     'libpng.org^1',
     'simplesystems.org/libtiff^4',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

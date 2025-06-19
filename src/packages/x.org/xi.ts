@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xi -- $SHELL -i`
- * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/xfixes`, ... (+2 more)
+ * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/xfixes`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -52,7 +52,6 @@ export const xorgxiPackage = {
     'x.org/protocol',
     'x.org/xfixes',
     'x.org/exts',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

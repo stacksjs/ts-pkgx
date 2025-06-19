@@ -8,7 +8,6 @@
  *
  * @install `launchpad install minisign`
  * @name `minisign`
- * @dependencies `cmake.org`, `libsodium.org`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const minisignPackage = {
     'minisign',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'libsodium.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/inetutils -- $SHELL -i`
- * @dependencies `gnu.org/libidn2`, `invisible-island.net/ncurses`, `gnu.org/help2man@1`
+ * @dependencies `gnu.org/libidn2`, `invisible-island.net/ncurses`
  *
  * @example
  * ```typescript
@@ -83,7 +83,6 @@ export const gnuorginetutilsPackage = {
   dependencies: [
     'gnu.org/libidn2',
     'invisible-island.net/ncurses',
-    'gnu.org/help2man@1',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/antfu/ni -- $SHELL -i`
- * @dependencies `nodejs.org>=14`, `npmjs.com`, `pnpm.io^10.6`
+ * @dependencies `nodejs.org>=14`, `npmjs.com`
  *
  * @example
  * ```typescript
@@ -65,7 +65,6 @@ export const githubcomantfuniPackage = {
   dependencies: [
     'nodejs.org>=14',
     'npmjs.com',
-    'pnpm.io^10.6',
   ] as const,
   /**
    * Available versions from newest to oldest.

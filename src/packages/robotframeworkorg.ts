@@ -8,7 +8,7 @@
  *
  * @install `launchpad install robot`
  * @aliases `robot`
- * @dependencies `pkgx.sh^1`, `python.org^3`, `rust-lang.org^1.56`, ... (+3 more)
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,11 +63,6 @@ export const robotPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org^3',
-    'rust-lang.org^1.56',
-    'certifi.io/python-certifi',
-    'cryptography.io',
-    'libsodium.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install slsh`
  * @aliases `slsh`, `s-lang`
- * @dependencies `libpng.org`, `pcre.org`
+ * @dependencies `libpng.org`, `linux:pcre.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,10 +60,11 @@ export const slshPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'libpng.org',
-    'pcre.org',
+    'linux:pcre.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

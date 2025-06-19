@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +fishshell.com -- $SHELL -i`
  * @aliases `fish`
- * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`, `cmake.org>=3.5`, ... (+5 more)
+ * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
  *
  * @example
  * ```typescript
@@ -66,12 +66,6 @@ export const fishPackage = {
   dependencies: [
     'gnu.org/gettext',
     'invisible-island.net/ncurses>=6.0',
-    'cmake.org>=3.5',
-    'freedesktop.org/pkg-config',
-    'gnu.org/patch',
-    'git-scm.org^2 # needed for fish',
-    'rust-lang.org^1.56 # v4',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

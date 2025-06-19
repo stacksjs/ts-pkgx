@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +modal.com -- $SHELL -i`
- * @dependencies `pkgx.sh@1`, `python.org>=3.9<3.13`, `protobuf.dev`, ... (+1 more)
+ * @dependencies `pkgx.sh@1`
  *
  * @example
  * ```typescript
@@ -50,9 +50,6 @@ export const modalcomPackage = {
    */
   dependencies: [
     'pkgx.sh@1',
-    'python.org>=3.9<3.13',
-    'protobuf.dev',
-    'cython.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

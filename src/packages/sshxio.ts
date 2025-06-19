@@ -8,7 +8,7 @@
  *
  * @install `launchpad install sshx`
  * @aliases `sshx`
- * @dependencies `protobuf.dev`, `rust-lang.org>=1.65`, `rust-lang.org/cargo`
+ * @dependencies `protobuf.dev`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const sshxPackage = {
    */
   dependencies: [
     'protobuf.dev',
-    'rust-lang.org>=1.65',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

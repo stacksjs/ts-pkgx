@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/fontconfig -- $SHELL -i`
- * @dependencies `sourceware.org/bzip2@1`, `freetype.org@2`, `zlib.net@1`, ... (+4 more)
+ * @dependencies `sourceware.org/bzip2@1`, `freetype.org@2`, `zlib.net@1`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -70,8 +70,6 @@ export const freedesktoporgfontconfigPackage = {
     'zlib.net@1',
     'gnome.org/libxml2@2',
     'libexpat.github.io@2',
-    'gnu.org/gperf@3',
-    'python.org>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

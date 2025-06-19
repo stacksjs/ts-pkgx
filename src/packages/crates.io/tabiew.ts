@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tw`
  * @aliases `tw`
- * @dependencies `openssl.org`, `rust-lang.org^1.78`, `rust-lang.org/cargo`
+ * @dependencies `linux:openssl.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,11 +60,10 @@ export const twPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'openssl.org',
-    'rust-lang.org^1.78',
-    'rust-lang.org/cargo',
+    'linux:openssl.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

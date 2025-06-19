@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +qemu.org -- $SHELL -i`
  * @aliases `qemu`
- * @dependencies `gnome.org/glib@2`, `capstone-engine.org^4`, `pixman.org^0`, ... (+14 more)
+ * @dependencies `gnome.org/glib@2`, `capstone-engine.org^4`, `pixman.org^0`, ... (+7 more)
  *
  * @example
  * ```typescript
@@ -105,13 +105,6 @@ export const qemuPackage = {
     'invisible-island.net/ncurses^6',
     'libssh.org^0',
     'libpng.org^1',
-    'gnu.org/bison',
-    'github.com/westes/flex',
-    'python.org~3.11',
-    'ninja-build.org',
-    'mesonbuild.com',
-    'curl.se',
-    'info-zip.org/unzip',
   ] as const,
   /**
    * Available versions from newest to oldest.

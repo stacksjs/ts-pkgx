@@ -8,7 +8,7 @@
  *
  * @install `launchpad install mpv`
  * @aliases `mpv`
- * @dependencies `ffmpeg.org`, `libjpeg-turbo.org@2`, `libarchive.org@3`, ... (+15 more)
+ * @dependencies `ffmpeg.org`, `libjpeg-turbo.org@2`, `libarchive.org@3`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,6 +60,7 @@ export const mpvPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'ffmpeg.org',
@@ -73,13 +74,8 @@ export const mpvPackage = {
     'freedesktop.org/uchardet@0',
     'vapoursynth.com@66',
     'yt-dlp.org',
-    'alsa-project.org/alsa-lib@1',
-    'github.com/adah1972/libunibreak@6',
-    'mesonbuild.com@1',
-    'ninja-build.org@1',
-    'git-scm.org@2',
-    'invisible-island.net/ncurses@6',
-    'nixos.org/patchelf@0',
+    'linux:alsa-project.org/alsa-lib@1',
+    'linux:github.com/adah1972/libunibreak@6',
   ] as const,
   /**
    * Available versions from newest to oldest.

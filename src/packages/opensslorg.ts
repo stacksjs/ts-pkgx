@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +openssl.org -- $SHELL -i`
  * @aliases `OpenSSL`
- * @dependencies `curl.se/ca-certs`, `perl.org@5`, `pkgx.sh^1`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const openSSLPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'perl.org@5',
-    'pkgx.sh^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

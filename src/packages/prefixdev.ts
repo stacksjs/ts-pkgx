@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pixi`
  * @aliases `pixi`
- * @dependencies `openssl.org^1.1`, `libgit2.org~1.7 # links to libgit2.so.1.7`, `rust-lang.org>=1.60`, ... (+2 more)
+ * @dependencies `openssl.org^1.1`, `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
@@ -64,9 +64,6 @@ export const pixiPackage = {
   dependencies: [
     'openssl.org^1.1',
     'libgit2.org~1.7 # links to libgit2.so.1.7',
-    'rust-lang.org>=1.60',
-    'rust-lang.org/cargo',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

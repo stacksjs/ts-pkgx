@@ -8,7 +8,6 @@
  *
  * @install `launchpad install alpaca.cpp`
  * @name `alpaca.cpp`
- * @dependencies `freedesktop.org/pkg-config~0.29`, `gnu.org/wget`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const alpacacppPackage = {
     'alpaca.cpp',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'freedesktop.org/pkg-config~0.29',
-    'gnu.org/wget',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

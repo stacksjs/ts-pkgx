@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +csie.ntu.edu.tw/cjlin/liblinear -- $SHELL -i`
  * @name `liblinear`
- * @dependencies `gnu.org/make`, `curl.se`, `gnu.org/patch`
  *
  * @example
  * ```typescript
@@ -58,15 +57,7 @@ export const liblinearPackage = {
     'train',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/make',
-    'curl.se',
-    'gnu.org/patch',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

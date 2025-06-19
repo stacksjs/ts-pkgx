@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +npmjs.com -- $SHELL -i`
  * @aliases `npm`
- * @dependencies `nodejs.org`, `nodejs.org<20.3`
+ * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const npmPackage = {
    */
   dependencies: [
     'nodejs.org',
-    'nodejs.org<20.3',
   ] as const,
   /**
    * Available versions from newest to oldest.

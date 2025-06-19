@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +rust-lang.org -- $SHELL -i`
  * @aliases `rust`
- * @dependencies `zlib.net@1`, `cmake.org^3.20`, `ninja-build.org^1.10`, ... (+4 more)
+ * @dependencies `zlib.net@1`
  * @companions `rust-lang.org/cargo`, `linux`
  *
  * @example
@@ -80,12 +80,6 @@ export const rustPackage = {
    */
   dependencies: [
     'zlib.net@1',
-    'cmake.org^3.20',
-    'ninja-build.org^1.10',
-    'python.org>=3<3.12',
-    'openssl.org',
-    'crates.io/semverator@0',
-    'llvm.org^20 # as of 1.87.0',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/gabime/spdlog -- $SHELL -i`
- * @dependencies `fmt.dev^11`, `cmake.org^3`, `llvm.org`
+ * @dependencies `fmt.dev^11`
  *
  * @example
  * ```typescript
@@ -50,8 +50,6 @@ export const githubcomgabimespdlogPackage = {
    */
   dependencies: [
     'fmt.dev^11',
-    'cmake.org^3',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install awslocal`
  * @aliases `awslocal`
- * @dependencies `pkgx.sh^1`, `aws.amazon.com/cli^2`, `python.org^3.11`
+ * @dependencies `pkgx.sh^1`, `aws.amazon.com/cli^2`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const awslocalPackage = {
   dependencies: [
     'pkgx.sh^1',
     'aws.amazon.com/cli^2',
-    'python.org^3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

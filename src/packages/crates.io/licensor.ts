@@ -8,7 +8,7 @@
  *
  * @install `launchpad install licensor`
  * @name `licensor`
- * @dependencies `zlib.net^1`, `rust-lang.org>=1.31`, `rust-lang.org/cargo`
+ * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const licensorPackage = {
    */
   dependencies: [
     'zlib.net^1',
-    'rust-lang.org>=1.31',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

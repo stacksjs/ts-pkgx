@@ -8,7 +8,7 @@
  *
  * @install `launchpad install autossh`
  * @name `autossh`
- * @dependencies `openssh.com`, `gnu.org/make`, `gnu.org/gcc`
+ * @dependencies `openssh.com`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const autosshPackage = {
    */
   dependencies: [
     'openssh.com',
-    'gnu.org/make',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

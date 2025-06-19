@@ -8,7 +8,7 @@
  *
  * @install `launchpad install kubectl-krew`
  * @aliases `kubectl-krew`
- * @dependencies `git-scm.org`, `go.dev^1.21`, `gnu.org/grep`, ... (+1 more)
+ * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const kubectlkrewPackage = {
    */
   dependencies: [
     'git-scm.org',
-    'go.dev^1.21',
-    'gnu.org/grep',
-    'kubernetes.io/kubectl',
   ] as const,
   /**
    * Available versions from newest to oldest.

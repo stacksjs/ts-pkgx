@@ -8,7 +8,7 @@
  *
  * @install `launchpad install sccache`
  * @name `sccache`
- * @dependencies `openssl.org^1.1`, `curl.se/ca-certs`, `rust-lang.org>=1.70`, ... (+3 more)
+ * @dependencies `openssl.org^1.1`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -62,10 +62,6 @@ export const sccachePackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'openssl.org^1.1',
-    'curl.se/ca-certs',
-    'rust-lang.org>=1.70',
-    'rust-lang.org/cargo',
     'openssl.org^1.1',
     'curl.se/ca-certs',
   ] as const,

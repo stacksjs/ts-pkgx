@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tea-package-builder`
  * @name `tea-package-builder`
- * @dependencies `ffmpeg.org`, `gnome.org/gobject-introspection`, `gnome.org/glib^2`, ... (+3 more)
+ * @dependencies `linux:ffmpeg.org`, `linux:gnome.org/gobject-introspection`, `linux:gnome.org/glib^2` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,14 +60,12 @@ export const teapackagebuilderPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'ffmpeg.org',
-    'gnome.org/gobject-introspection',
-    'gnome.org/glib^2',
-    'nodejs.org>=14',
-    'npmjs.com',
-    'git-scm.org^2',
+    'linux:ffmpeg.org',
+    'linux:gnome.org/gobject-introspection',
+    'linux:gnome.org/glib^2',
   ] as const,
   /**
    * Available versions from newest to oldest.

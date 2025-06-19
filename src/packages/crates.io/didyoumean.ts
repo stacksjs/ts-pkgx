@@ -8,7 +8,7 @@
  *
  * @install `launchpad install dym`
  * @aliases `dym`
- * @dependencies `openssl.org^1.1`, `x.org/xcb`, `rust-lang.org>=1.56`, ... (+1 more)
+ * @dependencies `openssl.org^1.1`, `linux:x.org/xcb` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,12 +60,11 @@ export const dymPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'openssl.org^1.1',
-    'x.org/xcb',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
+    'linux:x.org/xcb',
   ] as const,
   /**
    * Available versions from newest to oldest.

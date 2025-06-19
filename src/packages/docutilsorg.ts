@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +docutils.org -- $SHELL -i`
- * @dependencies `pkgx.sh^1`, `python.org~3.11`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -68,7 +68,6 @@ export const docutilsorgPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

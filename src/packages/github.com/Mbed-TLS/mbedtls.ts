@@ -8,7 +8,6 @@
  *
  * @install `launchpad install generic_sum`
  * @aliases `generic_sum`
- * @dependencies `cmake.org`, `llvm.org<16 # otherwise we get an error from the arm_neon.h include`, `python.org~3.11`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const genericsumPackage = {
     'generic_sum',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'llvm.org<16 # otherwise we get an error from the arm_neon.h include',
-    'python.org~3.11',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

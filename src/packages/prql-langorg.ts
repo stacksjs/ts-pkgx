@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +prql-lang.org -- $SHELL -i`
  * @aliases `prql`
- * @dependencies `rust-lang.org^1.65`, `rust-lang.org/cargo`, `llvm.org^18 # 19 has template issues with duckdb build`
  *
  * @example
  * ```typescript
@@ -58,15 +57,7 @@ export const prqlPackage = {
     'prqlc',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org^1.65',
-    'rust-lang.org/cargo',
-    'llvm.org^18 # 19 has template issues with duckdb build',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

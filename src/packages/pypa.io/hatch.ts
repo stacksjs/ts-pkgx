@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +pypa.io/hatch -- $SHELL -i`
  * @name `hatch`
- * @dependencies `pkgx.sh^1`, `python.org~3.12`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const hatchPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

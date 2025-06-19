@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +libevent.org -- $SHELL -i`
- * @dependencies `openssl.org^1.1`, `gnu.org/libtool@2`, `gnu.org/automake@1`, ... (+2 more)
+ * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -50,10 +50,6 @@ export const libeventorgPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'gnu.org/libtool@2',
-    'gnu.org/automake@1',
-    'gnu.org/autoconf@2',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

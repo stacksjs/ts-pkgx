@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pwsh`
  * @aliases `pwsh`
- * @dependencies `openssl.org^1.1`, `unicode.org^71`, `curl.se`
+ * @dependencies `openssl.org^1.1`, `linux:unicode.org^71` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,11 +60,11 @@ export const pwshPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'openssl.org^1.1',
-    'unicode.org^71',
-    'curl.se',
+    'linux:unicode.org^71',
   ] as const,
   /**
    * Available versions from newest to oldest.

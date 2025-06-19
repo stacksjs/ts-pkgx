@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +hurl.dev -- $SHELL -i`
  * @aliases `hurl`
- * @dependencies `gnome.org/libxml2`, `curl.se`, `rust-lang.org>=1.65`, ... (+2 more)
+ * @dependencies `gnome.org/libxml2`, `curl.se`
  *
  * @example
  * ```typescript
@@ -65,9 +65,6 @@ export const hurlPackage = {
   dependencies: [
     'gnome.org/libxml2',
     'curl.se',
-    'rust-lang.org>=1.65',
-    'rust-lang.org/cargo',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

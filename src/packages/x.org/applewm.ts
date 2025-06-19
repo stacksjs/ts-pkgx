@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/applewm -- $SHELL -i`
- * @dependencies `x.org/x11`, `x.org/exts`, `freedesktop.org/pkg-config`, ... (+1 more)
+ * @dependencies `x.org/x11`, `x.org/exts`
  *
  * @example
  * ```typescript
@@ -50,8 +50,6 @@ export const xorgapplewmPackage = {
   dependencies: [
     'x.org/x11',
     'x.org/exts',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

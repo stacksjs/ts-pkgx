@@ -8,7 +8,6 @@
  *
  * @install `launchpad install goose`
  * @name `goose`
- * @dependencies `go.dev^1.20`, `sqlite.org@3`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const goosePackage = {
     'goose',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev^1.20',
-    'sqlite.org@3',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

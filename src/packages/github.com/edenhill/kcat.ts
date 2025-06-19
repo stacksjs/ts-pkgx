@@ -8,7 +8,7 @@
  *
  * @install `launchpad install kcat`
  * @name `kcat`
- * @dependencies `apache.org/avro`, `github.com/confluentinc/librdkafka`, `github.com/confluentinc/libserdes`, ... (+3 more)
+ * @dependencies `apache.org/avro`, `github.com/confluentinc/librdkafka`, `github.com/confluentinc/libserdes`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,8 +66,6 @@ export const kcatPackage = {
     'github.com/confluentinc/librdkafka',
     'github.com/confluentinc/libserdes',
     'lloyd.github.io/yajl',
-    'gnu.org/gcc',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

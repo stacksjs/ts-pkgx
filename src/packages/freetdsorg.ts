@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freetds.org -- $SHELL -i`
- * @dependencies `openssl.org^1.1`, `unixodbc.org`, `kerberos.org`, ... (+6 more)
+ * @dependencies `openssl.org^1.1`, `unixodbc.org`, `kerberos.org`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -69,11 +69,6 @@ export const freetdsorgPackage = {
     'unixodbc.org',
     'kerberos.org',
     'gnu.org/readline',
-    'gnu.org/autoconf',
-    'gnu.org/gettext',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
-    'gnu.org/automake',
   ] as const,
   /**
    * Available versions from newest to oldest.

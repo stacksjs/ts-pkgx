@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +unidata.ucar.edu/netcdf -- $SHELL -i`
- * @dependencies `hdfgroup.org/HDF5`, `sourceware.org/bzip2`, `curl.se`, ... (+7 more)
+ * @dependencies `hdfgroup.org/HDF5`, `sourceware.org/bzip2`, `curl.se`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -66,11 +66,6 @@ export const unidataucaredunetcdfPackage = {
     'curl.se',
     'gnome.org/libxml2',
     'zlib.net',
-    'gnu.org/make',
-    'cmake.org',
-    'gnu.org/m4',
-    'gnu.org/gcc',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

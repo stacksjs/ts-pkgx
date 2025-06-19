@@ -8,7 +8,6 @@
  *
  * @install `launchpad install spin`
  * @name `spin`
- * @dependencies `rust-lang.org/rustup`, `llvm.org`, `rust-lang.org/rustup`
  * @companions `rust-lang.org`, `rust-lang.org/cargo`, `git-scm.org`
  *
  * @example
@@ -66,15 +65,7 @@ export const spinPackage = {
     'rust-lang.org/cargo',
     'git-scm.org',
   ] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org/rustup',
-    'llvm.org',
-    'rust-lang.org/rustup',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

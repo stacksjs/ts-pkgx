@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +spawn.link -- $SHELL -i`
- * @dependencies `git-scm.org`, `python.org>=3<3.12`
  *
  * @example
  * ```typescript
@@ -54,14 +53,7 @@ export const spawnlinkPackage = {
     'mount.mergerfs',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'git-scm.org',
-    'python.org>=3<3.12',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

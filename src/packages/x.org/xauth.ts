@@ -8,7 +8,7 @@
  *
  * @install `launchpad install xauth`
  * @name `xauth`
- * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xau`, ... (+7 more)
+ * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xau`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,18 +60,15 @@ export const xauthPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'x.org/x11',
     'x.org/exts',
     'x.org/xau',
     'x.org/xmu',
-    'x.org/xcb',
-    'x.org/xdmcp',
-    'freedesktop.org/pkg-config',
-    'x.org/util-macros',
-    'gnu.org/gcc',
-    'gnu.org/make',
+    'linux:x.org/xcb',
+    'linux:x.org/xdmcp',
   ] as const,
   /**
    * Available versions from newest to oldest.

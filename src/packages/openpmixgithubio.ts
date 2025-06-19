@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +openpmix.github.io -- $SHELL -i`
- * @dependencies `open-mpi.org/hwloc^2.10`, `libevent.org^2.1`, `zlib.net^1.3`, ... (+1 more)
+ * @dependencies `open-mpi.org/hwloc^2.10`, `libevent.org^2.1`, `zlib.net^1.3`
  *
  * @example
  * ```typescript
@@ -68,7 +68,6 @@ export const openpmixgithubioPackage = {
     'open-mpi.org/hwloc^2.10',
     'libevent.org^2.1',
     'zlib.net^1.3',
-    'python.org^3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

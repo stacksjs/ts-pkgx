@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xtst -- $SHELL -i`
- * @dependencies `x.org/xi`, `x.org/protocol`, `gnu.org/make`, ... (+3 more)
+ * @dependencies `x.org/xi`, `x.org/protocol`
  *
  * @example
  * ```typescript
@@ -50,10 +50,6 @@ export const xorgxtstPackage = {
   dependencies: [
     'x.org/xi',
     'x.org/protocol',
-    'gnu.org/make',
-    'freedesktop.org/pkg-config',
-    'x.org/util-macros',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

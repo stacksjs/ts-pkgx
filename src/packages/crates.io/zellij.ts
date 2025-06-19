@@ -8,7 +8,7 @@
  *
  * @install `launchpad install zellij`
  * @name `zellij`
- * @dependencies `zlib.net^1`, `curl.se@8`, `rust-lang.org>=1.60`, ... (+3 more)
+ * @dependencies `zlib.net^1`, `curl.se@8`
  *
  * @example
  * ```typescript
@@ -64,10 +64,6 @@ export const zellijPackage = {
   dependencies: [
     'zlib.net^1',
     'curl.se@8',
-    'rust-lang.org>=1.60',
-    'rust-lang.org/cargo',
-    'openssl.org^1.1',
-    'perl.org^5',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +gnome.org/libgsf -- $SHELL -i`
  * @aliases `gsf`
- * @dependencies `gnome.org/glib`, `freedesktop.org/pkg-config`
+ * @dependencies `gnome.org/glib`
  *
  * @example
  * ```typescript
@@ -65,7 +65,6 @@ export const gsfPackage = {
    */
   dependencies: [
     'gnome.org/glib',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

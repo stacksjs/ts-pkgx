@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cvt`
  * @aliases `cvt`
- * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`, ... (+2 more)
+ * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`
  *
  * @example
  * ```typescript
@@ -65,8 +65,6 @@ export const cvtPackage = {
     'x.org/x11^1',
     'x.org/exts',
     'x.org/protocol',
-    'mesonbuild.com',
-    'ninja-build.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

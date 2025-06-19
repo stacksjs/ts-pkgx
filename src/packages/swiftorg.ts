@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +swift.org -- $SHELL -i`
  * @aliases `swift`
- * @dependencies `gnu.org/gcc`, `gnu.org/binutils`, `gnupg.org^2`, ... (+5 more)
+ * @dependencies `linux:gnu.org/gcc`, `linux:gnu.org/binutils`, `linux:gnupg.org^2`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -85,16 +85,16 @@ export const swiftPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnu.org/gcc',
-    'gnu.org/binutils',
-    'gnupg.org^2',
-    'gnome.org/libxml2',
-    'libgit2.org~1.7 # links to libgit2.so.1.7',
-    'curl.se',
-    'sqlite.org^3',
-    'curl.se',
+    'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils',
+    'linux:gnupg.org^2',
+    'linux:gnome.org/libxml2',
+    'linux:libgit2.org~1.7 # links to libgit2.so.1.7',
+    'linux:curl.se',
+    'linux:sqlite.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

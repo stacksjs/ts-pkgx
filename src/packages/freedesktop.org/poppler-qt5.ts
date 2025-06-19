@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +freedesktop.org/poppler-qt5 -- $SHELL -i`
  * @name `poppler-qt5`
- * @dependencies `gnupg.org/libassuan^2`, `cairographics.org^1`, `freedesktop.org/fontconfig^2`, ... (+19 more)
+ * @dependencies `gnupg.org/libassuan^2`, `cairographics.org^1`, `freedesktop.org/fontconfig^2`, ... (+16 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -72,6 +72,7 @@ export const popplerqt5Package = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnupg.org/libassuan^2',
@@ -91,11 +92,8 @@ export const popplerqt5Package = {
     'openjpeg.org^2',
     'qt.io~5',
     'curl.se^8',
-    'gnupg.org/libassuan^2',
-    'gnu.org/gcc',
-    'cmake.org',
-    'gnome.org/gobject-introspection',
-    'gnu.org/binutils^2',
+    'darwin:gnupg.org/libassuan^2',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

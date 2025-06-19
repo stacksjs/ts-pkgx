@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +harfbuzz.org -- $SHELL -i`
- * @dependencies `cairographics.org@1`, `freetype.org@2`, `gnome.org/glib@2`, ... (+9 more)
+ * @dependencies `cairographics.org@1`, `freetype.org@2`, `gnome.org/glib@2`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -65,13 +65,6 @@ export const harfbuzzorgPackage = {
     'gnome.org/glib@2',
     'graphite.sil.org',
     'unicode.org^71',
-    'mesonbuild.com>=0.63',
-    'ninja-build.org@1',
-    'freedesktop.org/pkg-config^0.29',
-    'gnome.org/gobject-introspection@1',
-    'python.org>=3<3.12',
-    'curl.se',
-    'gnu.org/binutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

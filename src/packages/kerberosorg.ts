@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +kerberos.org -- $SHELL -i`
- * @dependencies `openssl.org^1.1`, `gnu.org/bison@3`
+ * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -84,7 +84,6 @@ export const kerberosorgPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'gnu.org/bison@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

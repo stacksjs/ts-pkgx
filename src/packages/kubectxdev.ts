@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +kubectx.dev -- $SHELL -i`
  * @aliases `kube`
- * @dependencies `github.com/junegunn/fzf`, `go.dev^1.20`
+ * @dependencies `github.com/junegunn/fzf`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const kubePackage = {
    */
   dependencies: [
     'github.com/junegunn/fzf',
-    'go.dev^1.20',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +openssh.com -- $SHELL -i`
- * @dependencies `nlnetlabs.nl/ldns`, `developers.yubico.com/libfido2`, `openssl.org`, ... (+10 more)
+ * @dependencies `nlnetlabs.nl/ldns`, `developers.yubico.com/libfido2`, `openssl.org`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -62,6 +62,7 @@ export const opensshcomPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'nlnetlabs.nl/ldns',
@@ -71,12 +72,7 @@ export const opensshcomPackage = {
     'thrysoee.dk/editline',
     'github.com/besser82/libxcrypt',
     'zlib.net',
-    'linux-pam.org',
-    'freedesktop.org/pkg-config',
-    'curl.se',
-    'gnu.org/patch',
-    'gnu.org/gcc',
-    'gnu.org/make',
+    'linux:linux-pam.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

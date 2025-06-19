@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +libexif.github.io -- $SHELL -i`
- * @dependencies `gnu.org/gettext`, `gnu.org/wget`
+ * @dependencies `gnu.org/gettext`
  *
  * @example
  * ```typescript
@@ -50,7 +50,6 @@ export const libexifgithubioPackage = {
    */
   dependencies: [
     'gnu.org/gettext',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

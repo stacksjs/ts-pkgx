@@ -8,7 +8,7 @@
  *
  * @install `launchpad install virtualenv`
  * @aliases `virtualenv`
- * @dependencies `pkgx.sh^1`, `libexpat.github.io^2`, `openssl.org^1.1`, ... (+1 more)
+ * @dependencies `pkgx.sh^1`, `libexpat.github.io^2`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -65,7 +65,6 @@ export const virtualenvPackage = {
     'pkgx.sh^1',
     'libexpat.github.io^2',
     'openssl.org^1.1',
-    'python.org>=3.7<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

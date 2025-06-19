@@ -8,7 +8,6 @@
  *
  * @install `launchpad install llrt`
  * @name `llrt`
- * @dependencies `rust-lang.org/rustup`, `facebook.com/zstd`, `ziglang.org~0.11`, ... (+6 more)
  *
  * @example
  * ```typescript
@@ -57,21 +56,7 @@ export const llrtPackage = {
     'llrt',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org/rustup',
-    'facebook.com/zstd',
-    'ziglang.org~0.11',
-    'nodejs.org',
-    'yarnpkg.com',
-    'cmake.org',
-    'git-scm.org',
-    'info-zip.org/zip',
-    'llvm.org^17',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install wezterm`
  * @name `wezterm`
- * @dependencies `zlib.net^1.3`, `freetype.org`, `freedesktop.org/fontconfig`, ... (+3 more)
+ * @dependencies `zlib.net^1.3`, `linux:freetype.org`, `linux:freedesktop.org/fontconfig`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,14 +60,13 @@ export const weztermPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'zlib.net^1.3',
-    'freetype.org',
-    'freedesktop.org/fontconfig',
-    'openssl.org^1.1',
-    'rust-lang.org>=1.71<1.78',
-    'rust-lang.org/cargo',
+    'linux:freetype.org',
+    'linux:freedesktop.org/fontconfig',
+    'linux:openssl.org^1.1',
   ] as const,
   /**
    * Available versions from newest to oldest.

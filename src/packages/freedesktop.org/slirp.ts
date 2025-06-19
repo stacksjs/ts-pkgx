@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/slirp -- $SHELL -i`
- * @dependencies `gnome.org/glib^2`, `mesonbuild.com`, `ninja-build.org@1`, ... (+1 more)
+ * @dependencies `gnome.org/glib^2`
  *
  * @example
  * ```typescript
@@ -49,9 +49,6 @@ export const freedesktoporgslirpPackage = {
    */
   dependencies: [
     'gnome.org/glib^2',
-    'mesonbuild.com',
-    'ninja-build.org@1',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

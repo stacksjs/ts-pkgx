@@ -8,7 +8,7 @@
  *
  * @install `launchpad install terratag`
  * @aliases `terratag`
- * @dependencies `terraform.io>=0.12`, `curl.se/ca-certs`, `go.dev^1.21`
+ * @dependencies `terraform.io>=0.12`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const terratagPackage = {
   dependencies: [
     'terraform.io>=0.12',
     'curl.se/ca-certs',
-    'go.dev^1.21',
   ] as const,
   /**
    * Available versions from newest to oldest.

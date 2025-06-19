@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +fltk.org -- $SHELL -i`
- * @dependencies `libjpeg-turbo.org^2`, `libpng.org^1`, `x.org/xft^2`, ... (+2 more)
+ * @dependencies `libjpeg-turbo.org^2`, `libpng.org^1`, `linux:x.org/xft^2`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -56,13 +56,14 @@ export const fltkorgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'libjpeg-turbo.org^2',
     'libpng.org^1',
-    'x.org/xft^2',
-    'x.org/xt^1',
-    'freedesktop.org/mesa-glu^9',
+    'linux:x.org/xft^2',
+    'linux:x.org/xt^1',
+    'linux:freedesktop.org/mesa-glu^9',
   ] as const,
   /**
    * Available versions from newest to oldest.

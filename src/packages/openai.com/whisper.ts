@@ -8,7 +8,7 @@
  *
  * @install `launchpad install whisper`
  * @name `whisper`
- * @dependencies `python.org~3.11`, `ffmpeg.org^6.1`, `huggingface.co^0.19`, ... (+3 more)
+ * @dependencies `python.org~3.11`, `ffmpeg.org^6.1`, `huggingface.co^0.19`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,8 +66,6 @@ export const whisperPackage = {
     'ffmpeg.org^6.1',
     'huggingface.co^0.19',
     'pyyaml.org^0.2',
-    'rust-lang.org^1.65',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

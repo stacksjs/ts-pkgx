@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +kislyuk.github.io/argcomplete -- $SHELL -i`
- * @dependencies `pkgx.sh^1`, `python.org~3.12`, `python.org^3`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -60,8 +60,6 @@ export const kislyukgithubioargcompletePackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.12',
-    'python.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

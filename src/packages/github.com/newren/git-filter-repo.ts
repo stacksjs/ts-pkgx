@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git-filter-repo`
  * @name `git-filter-repo`
- * @dependencies `python.org>=3.6`, `git-scm.org`
+ * @dependencies `python.org>=3.6`
  * @companions `git-scm.org`
  *
  * @example
@@ -70,7 +70,6 @@ export const gitfilterrepoPackage = {
    */
   dependencies: [
     'python.org>=3.6',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

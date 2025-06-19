@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/mpc -- $SHELL -i`
- * @dependencies `gnu.org/gmp>=4.2`, `gnu.org/mpfr^4`, `gnu.org/gmp>=4.2`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -43,16 +42,7 @@ export const gnuorgmpcPackage = {
   installCommand: 'launchpad install +gnu.org/mpc -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/gmp>=4.2',
-    'gnu.org/mpfr^4',
-    'gnu.org/gmp>=4.2',
-    'gnu.org/mpfr^4.0',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

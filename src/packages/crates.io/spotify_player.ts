@@ -8,7 +8,7 @@
  *
  * @install `launchpad install spotify_player`
  * @name `spotify_player`
- * @dependencies `openssl.org^1.1`, `github.com/libsixel/libsixel^1`, `alsa-project.org/alsa-lib^1`, ... (+3 more)
+ * @dependencies `openssl.org^1.1`, `github.com/libsixel/libsixel^1`, `linux:alsa-project.org/alsa-lib^1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,14 +60,13 @@ export const spotifyplayerPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'openssl.org^1.1',
     'github.com/libsixel/libsixel^1',
-    'alsa-project.org/alsa-lib^1',
-    'freedesktop.org/dbus^1',
-    'rust-lang.org>=1.60',
-    'rust-lang.org/cargo',
+    'linux:alsa-project.org/alsa-lib^1',
+    'linux:freedesktop.org/dbus^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

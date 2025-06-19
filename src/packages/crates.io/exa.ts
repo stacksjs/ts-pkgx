@@ -8,7 +8,7 @@
  *
  * @install `launchpad install exa`
  * @name `exa`
- * @dependencies `zlib.net^1`, `rust-lang.org>=1.60`, `rust-lang.org/cargo`
+ * @dependencies `darwin:zlib.net^1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,11 +60,10 @@ export const exaPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'zlib.net^1',
-    'rust-lang.org>=1.60',
-    'rust-lang.org/cargo',
+    'darwin:zlib.net^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

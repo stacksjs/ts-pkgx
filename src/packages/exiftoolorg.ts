@@ -8,7 +8,7 @@
  *
  * @install `launchpad install exiftool`
  * @aliases `exiftool`
- * @dependencies `perl.org`, `perl.org`
+ * @dependencies `perl.org`
  *
  * @example
  * ```typescript
@@ -62,7 +62,6 @@ export const exiftoolPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'perl.org',
     'perl.org',
   ] as const,
   /**

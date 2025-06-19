@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +gnome.org/gobject-introspection -- $SHELL -i`
  * @aliases `g-ir`
- * @dependencies `gnome.org/glib@2`, `sourceware.org/libffi@3`, `gnu.org/bison^3 #NOTE macOS provides v2`, ... (+11 more)
+ * @dependencies `gnome.org/glib@2`, `sourceware.org/libffi@3`, `gnu.org/bison^3 #NOTE macOS provides v2`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -71,15 +71,6 @@ export const girPackage = {
     'gnu.org/bison^3 #NOTE macOS provides v2',
     'python.org>=3<3.12',
     'github.com/westes/flex@2',
-    'mesonbuild.com^1.2',
-    'ninja-build.org@1',
-    'gnome.org/glib@2',
-    'pcre.org^8 #NOTE possibly should be automatic',
-    'git-scm.org@2',
-    'gnu.org/sed',
-    'freedesktop.org/pkg-config^0.29',
-    'gnu.org/make',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

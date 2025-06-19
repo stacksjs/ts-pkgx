@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ruby-build`
  * @name `ruby-build`
- * @dependencies `openssl.org>=1.1`, `curl.se`, `gnu.org/autoconf^2.72`, ... (+4 more)
+ * @dependencies `openssl.org>=1.1`, `curl.se`, `gnu.org/autoconf^2.72`, ... (+3 more)
  * @companions `linux`
  *
  * @example
@@ -75,7 +75,6 @@ export const rubybuildPackage = {
     'freedesktop.org/pkg-config',
     'gnu.org/readline^8.2',
     'pyyaml.org/libyaml^0.2',
-    'gnu.org/gcc<15',
   ] as const,
   /**
    * Available versions from newest to oldest.

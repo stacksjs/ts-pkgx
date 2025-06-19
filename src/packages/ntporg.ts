@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +ntp.org -- $SHELL -i`
- * @dependencies `openssl.org^3`, `perl.org^5`
+ * @dependencies `openssl.org^3`
  *
  * @example
  * ```typescript
@@ -66,7 +66,6 @@ export const ntporgPackage = {
    */
   dependencies: [
     'openssl.org^3',
-    'perl.org^5',
   ] as const,
   /**
    * Available versions from newest to oldest.

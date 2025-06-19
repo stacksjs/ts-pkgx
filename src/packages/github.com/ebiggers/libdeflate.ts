@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +github.com/ebiggers/libdeflate -- $SHELL -i`
  * @name `libdeflate`
- * @dependencies `cmake.org^3`
  *
  * @example
  * ```typescript
@@ -58,13 +57,7 @@ export const libdeflatePackage = {
     'libdeflate-gunzip',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org^3',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

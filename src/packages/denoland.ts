@@ -8,7 +8,6 @@
  *
  * @install `launchpad install deno`
  * @aliases `deno`
- * @dependencies `llvm.org`, `rust-lang.org/rustup`, `git-scm.org^2 # to build tinycc`, ... (+7 more)
  * @companions `info-zip.org/unzip`
  *
  * @example
@@ -64,22 +63,7 @@ export const denoPackage = {
   companions: [
     'info-zip.org/unzip',
   ] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'llvm.org',
-    'rust-lang.org/rustup',
-    'git-scm.org^2 # to build tinycc',
-    'curl.se',
-    'cmake.org^3 # deno.land>=1.36.1 requires cmake',
-    'protobuf.dev',
-    'github.com/mikefarah/yq^4',
-    'crates.io/semverator^0',
-    'sourceware.org/libffi>=3.2.1',
-    'gnu.org/coreutils',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

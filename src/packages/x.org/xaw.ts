@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xaw -- $SHELL -i`
- * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xmu`, ... (+3 more)
+ * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xmu`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -53,7 +53,6 @@ export const xorgxawPackage = {
     'x.org/xmu',
     'x.org/xt',
     'x.org/xpm',
-    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

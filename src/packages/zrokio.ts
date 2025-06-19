@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +zrok.io -- $SHELL -i`
  * @aliases `zrok`
- * @dependencies `go.dev~1.23.0`, `nodejs.org^21`, `npmjs.com^10`
  *
  * @example
  * ```typescript
@@ -59,15 +58,7 @@ export const zrokPackage = {
     'pastefrom',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev~1.23.0',
-    'nodejs.org^21',
-    'npmjs.com^10',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

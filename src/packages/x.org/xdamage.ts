@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xdamage -- $SHELL -i`
- * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/xfixes`, ... (+2 more)
+ * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/xfixes`
  *
  * @example
  * ```typescript
@@ -51,8 +51,6 @@ export const xorgxdamagePackage = {
     'x.org/x11',
     'x.org/protocol',
     'x.org/xfixes',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

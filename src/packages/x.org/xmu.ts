@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xmu -- $SHELL -i`
- * @dependencies `x.org/exts`, `x.org/xt`, `freedesktop.org/pkg-config~0.29`
+ * @dependencies `x.org/exts`, `x.org/xt`
  *
  * @example
  * ```typescript
@@ -50,7 +50,6 @@ export const xorgxmuPackage = {
   dependencies: [
     'x.org/exts',
     'x.org/xt',
-    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

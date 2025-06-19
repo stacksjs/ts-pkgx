@@ -8,7 +8,6 @@
  *
  * @install `launchpad install hx`
  * @aliases `hx`
- * @dependencies `rust-lang.org>=1.60`, `rust-lang.org/cargo`, `git-scm.org^2`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const hxPackage = {
     'hx',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org>=1.60',
-    'rust-lang.org/cargo',
-    'git-scm.org^2',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

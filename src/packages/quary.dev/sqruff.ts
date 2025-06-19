@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +quary.dev/sqruff -- $SHELL -i`
- * @dependencies `jemalloc.net@5`, `rust-lang.org/rustup`, `llvm.org`
+ * @dependencies `linux:jemalloc.net@5` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -56,11 +56,10 @@ export const quarydevsqruffPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'jemalloc.net@5',
-    'rust-lang.org/rustup',
-    'llvm.org',
+    'linux:jemalloc.net@5',
   ] as const,
   /**
    * Available versions from newest to oldest.

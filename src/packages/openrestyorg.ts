@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +openresty.org -- $SHELL -i`
- * @dependencies `pcre.org@8`, `openssl.org^1.1`, `zlib.net^1.2`, ... (+5 more)
+ * @dependencies `pcre.org@8`, `openssl.org^1.1`, `zlib.net^1.2`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -65,10 +65,6 @@ export const openrestyorgPackage = {
     'openssl.org^1.1',
     'zlib.net^1.2',
     'perl.org',
-    'waterlan.home.xs4all.nl/dos2unix',
-    'mercurial-scm.org',
-    'git-scm.org',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

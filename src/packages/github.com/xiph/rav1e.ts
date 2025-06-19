@@ -8,7 +8,7 @@
  *
  * @install `launchpad install rav1e`
  * @name `rav1e`
- * @dependencies `nasm.us^2.14.02`, `rust-lang.org^1.70`, `rust-lang.org/cargo`
+ * @dependencies `nasm.us^2.14.02`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const rav1ePackage = {
    */
   dependencies: [
     'nasm.us^2.14.02',
-    'rust-lang.org^1.70',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

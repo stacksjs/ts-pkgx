@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/coqui-ai/TTS -- $SHELL -i`
- * @dependencies `python.org>=3.7<3.11`, `taku910.github.io/mecab`, `pip.pypa.io`, ... (+1 more)
+ * @dependencies `python.org>=3.7<3.11`, `taku910.github.io/mecab`
  *
  * @example
  * ```typescript
@@ -61,8 +61,6 @@ export const githubcomcoquiaittsPackage = {
   dependencies: [
     'python.org>=3.7<3.11',
     'taku910.github.io/mecab',
-    'pip.pypa.io',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

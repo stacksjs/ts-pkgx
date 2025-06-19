@@ -9,7 +9,7 @@
  * @install `launchpad install cdk`
  * @name `cdk`
  * @aliases `aws/cdk`
- * @dependencies `nodejs.org`, `npmjs.com`
+ * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const cdkPackage = {
    */
   dependencies: [
     'nodejs.org',
-    'npmjs.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

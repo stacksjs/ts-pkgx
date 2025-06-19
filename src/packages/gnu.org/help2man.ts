@@ -8,7 +8,7 @@
  *
  * @install `launchpad install help2man`
  * @name `help2man`
- * @dependencies `gnu.org/gettext`, `perl.org^5.38 # perl modules require matching minors`, `cpanmin.us`
+ * @dependencies `gnu.org/gettext`, `perl.org^5.38 # perl modules require matching minors`
  * @companions `PERL5LIB^{{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`
  *
  * @example
@@ -71,7 +71,6 @@ export const help2manPackage = {
   dependencies: [
     'gnu.org/gettext',
     'perl.org^5.38 # perl modules require matching minors',
-    'cpanmin.us',
   ] as const,
   /**
    * Available versions from newest to oldest.

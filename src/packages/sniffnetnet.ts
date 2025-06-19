@@ -8,7 +8,7 @@
  *
  * @install `launchpad install sniffnet`
  * @aliases `sniffnet`
- * @dependencies `openssl.org@1`, `tcpdump.org@1`, `alsa-project.org/alsa-lib@1`, ... (+3 more)
+ * @dependencies `openssl.org@1`, `tcpdump.org@1`, `linux:alsa-project.org/alsa-lib@1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,14 +60,13 @@ export const sniffnetPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'openssl.org@1',
     'tcpdump.org@1',
-    'alsa-project.org/alsa-lib@1',
-    'freedesktop.org/fontconfig@2',
-    'rust-lang.org^1.78',
-    'rust-lang.org/cargo',
+    'linux:alsa-project.org/alsa-lib@1',
+    'linux:freedesktop.org/fontconfig@2',
   ] as const,
   /**
    * Available versions from newest to oldest.

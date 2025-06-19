@@ -9,7 +9,7 @@
  * @install `launchpad install ykman`
  * @name `yubikey-manager`
  * @aliases `ykman`
- * @dependencies `python.org~3.11`, `pcsclite.apdu.fr^2`, `pip.pypa.io`, ... (+1 more)
+ * @dependencies `python.org~3.11`, `linux:pcsclite.apdu.fr^2` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -61,12 +61,11 @@ export const ykmanPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'python.org~3.11',
-    'pcsclite.apdu.fr^2',
-    'pip.pypa.io',
-    'swig.org',
+    'linux:pcsclite.apdu.fr^2',
   ] as const,
   /**
    * Available versions from newest to oldest.

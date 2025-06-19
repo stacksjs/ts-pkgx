@@ -8,7 +8,7 @@
  *
  * @install `launchpad install shellcheck`
  * @aliases `shellcheck`
- * @dependencies `sourceware.org/libffi@3`, `haskell.org^9`, `haskell.org/cabal^3`
+ * @dependencies `sourceware.org/libffi@3`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const shellcheckPackage = {
    */
   dependencies: [
     'sourceware.org/libffi@3',
-    'haskell.org^9',
-    'haskell.org/cabal^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

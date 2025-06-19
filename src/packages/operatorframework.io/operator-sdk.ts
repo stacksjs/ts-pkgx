@@ -8,7 +8,7 @@
  *
  * @install `launchpad install operator-sdk`
  * @name `operator-sdk`
- * @dependencies `go.dev^1.19`, `cmake.org`, `git-scm.org`
+ * @dependencies `go.dev^1.19`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const operatorsdkPackage = {
    */
   dependencies: [
     'go.dev^1.19',
-    'cmake.org',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

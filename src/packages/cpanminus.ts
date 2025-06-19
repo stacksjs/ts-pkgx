@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cpanm`
  * @aliases `cpanm`
- * @dependencies `perl.org`, `gnu.org/make`
+ * @dependencies `perl.org`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const cpanmPackage = {
    */
   dependencies: [
     'perl.org',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

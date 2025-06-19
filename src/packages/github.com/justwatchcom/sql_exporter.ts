@@ -9,7 +9,6 @@
  * @install `launchpad install sql_exporter`
  * @name `sql_exporter`
  * @aliases `justwatchcom/sql_exporter`
- * @dependencies `git-scm.org`, `go.dev^1.21`
  *
  * @example
  * ```typescript
@@ -58,14 +57,7 @@ export const sqlexporterPackage = {
     'sql_exporter',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'git-scm.org',
-    'go.dev^1.21',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

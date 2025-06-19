@@ -8,7 +8,7 @@
  *
  * @install `launchpad install nx`
  * @aliases `nx`
- * @dependencies `nodejs.org`, `nodejs.org@18`, `npmjs.com^10`
+ * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
@@ -62,8 +62,6 @@ export const nxPackage = {
    */
   dependencies: [
     'nodejs.org',
-    'nodejs.org@18',
-    'npmjs.com^10',
   ] as const,
   /**
    * Available versions from newest to oldest.

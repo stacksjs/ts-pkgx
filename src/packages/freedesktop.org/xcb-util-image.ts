@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/xcb-util-image -- $SHELL -i`
- * @dependencies `x.org/xcb`, `freedesktop.org/xcb-util`, `freedesktop.org/pkg-config`, ... (+1 more)
+ * @dependencies `x.org/xcb`, `freedesktop.org/xcb-util`
  *
  * @example
  * ```typescript
@@ -50,8 +50,6 @@ export const freedesktoporgxcbutilimagePackage = {
   dependencies: [
     'x.org/xcb',
     'freedesktop.org/xcb-util',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

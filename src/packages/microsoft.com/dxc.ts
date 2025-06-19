@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +microsoft.com/dxc -- $SHELL -i`
- * @dependencies `zlib.net^1`, `cmake.org`, `git-scm.org^2`, ... (+2 more)
+ * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
@@ -62,10 +62,6 @@ export const microsoftcomdxcPackage = {
    */
   dependencies: [
     'zlib.net^1',
-    'cmake.org',
-    'git-scm.org^2',
-    'ninja-build.org^1',
-    'python.org>=3.7<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

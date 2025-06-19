@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +heasarc.gsfc.nasa.gov/cfitsio -- $SHELL -i`
- * @dependencies `zlib.net`, `gnu.org/diffutils`
+ * @dependencies `darwin:zlib.net` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -46,10 +46,10 @@ export const heasarcgsfcnasagovcfitsioPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'zlib.net',
-    'gnu.org/diffutils',
+    'darwin:zlib.net',
   ] as const,
   /**
    * Available versions from newest to oldest.

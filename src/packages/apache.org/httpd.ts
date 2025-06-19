@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +apache.org/httpd -- $SHELL -i`
- * @dependencies `apache.org/apr>=1.3.0`, `apache.org/apr-util>=1.3.0`, `github.com/google/brotli`, ... (+8 more)
+ * @dependencies `apache.org/apr>=1.3.0`, `apache.org/apr-util>=1.3.0`, `github.com/google/brotli`, ... (+6 more)
  *
  * @example
  * ```typescript
@@ -78,8 +78,6 @@ export const apacheorghttpdPackage = {
     'gnome.org/libxml2',
     'zlib.net',
     'libexpat.github.io',
-    'gnu.org/libtool',
-    'gnu.org/autoconf',
   ] as const,
   /**
    * Available versions from newest to oldest.

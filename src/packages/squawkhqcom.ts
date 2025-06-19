@@ -8,7 +8,6 @@
  *
  * @install `launchpad install squawk`
  * @aliases `squawk`
- * @dependencies `rust-lang.org>=1.65`, `rust-lang.org/cargo`, `openssl.org`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -57,16 +56,7 @@ export const squawkPackage = {
     'squawk',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org>=1.65',
-    'rust-lang.org/cargo',
-    'openssl.org',
-    'perl.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

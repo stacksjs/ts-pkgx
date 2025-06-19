@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ccache`
  * @aliases `ccache`
- * @dependencies `github.com/redis/hiredis`, `facebook.com/zstd`, `asciidoctor.org`, ... (+2 more)
+ * @dependencies `github.com/redis/hiredis`, `facebook.com/zstd`
  *
  * @example
  * ```typescript
@@ -64,9 +64,6 @@ export const ccachePackage = {
   dependencies: [
     'github.com/redis/hiredis',
     'facebook.com/zstd',
-    'asciidoctor.org',
-    'cmake.org',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

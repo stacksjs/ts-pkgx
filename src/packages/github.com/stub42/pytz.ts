@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/stub42/pytz -- $SHELL -i`
- * @dependencies `python.org~3.12`, `gnu.org/gawk`, `rsync.samba.org`
+ * @dependencies `python.org~3.12`
  *
  * @example
  * ```typescript
@@ -50,8 +50,6 @@ export const githubcomstub42pytzPackage = {
    */
   dependencies: [
     'python.org~3.12',
-    'gnu.org/gawk',
-    'rsync.samba.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

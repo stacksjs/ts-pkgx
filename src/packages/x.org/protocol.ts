@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/protocol -- $SHELL -i`
- * @dependencies `x.org/util-macros`, `freedesktop.org/pkg-config~0.29`
+ * @dependencies `x.org/util-macros`
  *
  * @example
  * ```typescript
@@ -49,7 +49,6 @@ export const xorgprotocolPackage = {
    */
   dependencies: [
     'x.org/util-macros',
-    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

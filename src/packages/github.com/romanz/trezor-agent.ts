@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/romanz/trezor-agent -- $SHELL -i`
- * @dependencies `python.org~3.12`, `libusb.info^1`, `libpng.org~1.6`, ... (+1 more)
+ * @dependencies `python.org~3.12`, `libusb.info^1`, `darwin:libpng.org~1.6` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -71,12 +71,12 @@ export const githubcomromanztrezoragentPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'python.org~3.12',
     'libusb.info^1',
-    'libpng.org~1.6',
-    'git-scm.org',
+    'darwin:libpng.org~1.6',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +crates.io/termusic -- $SHELL -i`
  * @name `termusic`
- * @dependencies `alsa-project.org/alsa-lib`, `freedesktop.org/dbus`, `rust-lang.org>=1.75`, ... (+2 more)
+ * @dependencies `linux:alsa-project.org/alsa-lib`, `linux:freedesktop.org/dbus` (includes OS-specific dependencies with `os:package` format)
  * @companions `yt-dlp.org`
  *
  * @example
@@ -68,13 +68,11 @@ export const termusicPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'alsa-project.org/alsa-lib',
-    'freedesktop.org/dbus',
-    'rust-lang.org>=1.75',
-    'rust-lang.org/cargo',
-    'protobuf.dev',
+    'linux:alsa-project.org/alsa-lib',
+    'linux:freedesktop.org/dbus',
   ] as const,
   /**
    * Available versions from newest to oldest.

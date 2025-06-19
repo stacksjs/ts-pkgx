@@ -8,7 +8,7 @@
  *
  * @install `launchpad install shout`
  * @aliases `shout`
- * @dependencies `xiph.org/ogg`, `xiph.org/vorbis`, `openssl.org~1`, ... (+8 more)
+ * @dependencies `xiph.org/ogg`, `xiph.org/vorbis`, `openssl.org~1`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -67,12 +67,6 @@ export const shoutPackage = {
     'openssl.org~1',
     'speex.org',
     'theora.org',
-    'freedesktop.org/pkg-config',
-    'curl.se',
-    'gnu.org/patch',
-    'gnu.org/gcc',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

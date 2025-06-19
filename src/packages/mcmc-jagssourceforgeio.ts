@@ -8,7 +8,7 @@
  *
  * @install `launchpad install jags`
  * @aliases `jags`
- * @dependencies `gnu.org/gcc`, `netlib.org/lapack^3`
+ * @dependencies `gnu.org/gcc`, `linux:netlib.org/lapack^3` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,10 +60,11 @@ export const jagsPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnu.org/gcc',
-    'netlib.org/lapack^3',
+    'linux:netlib.org/lapack^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

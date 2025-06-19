@@ -8,7 +8,6 @@
  *
  * @install `launchpad install julia`
  * @aliases `julia`
- * @dependencies `curl.se`, `gnu.org/tar`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const juliaPackage = {
     'julia',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'curl.se',
-    'gnu.org/tar',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

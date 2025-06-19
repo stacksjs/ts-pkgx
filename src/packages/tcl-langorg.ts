@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +tcl-lang.org -- $SHELL -i`
- * @dependencies `openssl.org^1.1`, `zlib.net^1.3`, `freetype.org^2`, ... (+7 more)
+ * @dependencies `openssl.org^1.1`, `zlib.net^1.3`, `freetype.org^2`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -65,10 +65,6 @@ export const tcllangorgPackage = {
     'freedesktop.org/pkg-config^0.29',
     'x.org/x11=1.8.11',
     'x.org/exts^1',
-    'gnu.org/patch',
-    'info-zip.org/zip',
-    'curl.se',
-    'tukaani.org/xz',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install hexedit`
  * @name `hexedit`
- * @dependencies `invisible-island.net/ncurses@6`, `gnu.org/autoconf`
+ * @dependencies `invisible-island.net/ncurses@6`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const hexeditPackage = {
    */
   dependencies: [
     'invisible-island.net/ncurses@6',
-    'gnu.org/autoconf',
   ] as const,
   /**
    * Available versions from newest to oldest.

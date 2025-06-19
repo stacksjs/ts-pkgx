@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xcomposite -- $SHELL -i`
- * @dependencies `x.org/x11`, `x.org/xfixes`, `x.org/protocol`, ... (+2 more)
+ * @dependencies `x.org/x11`, `x.org/xfixes`, `x.org/protocol`
  *
  * @example
  * ```typescript
@@ -51,8 +51,6 @@ export const xorgxcompositePackage = {
     'x.org/x11',
     'x.org/xfixes',
     'x.org/protocol',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

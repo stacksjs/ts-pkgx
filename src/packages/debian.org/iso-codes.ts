@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +debian.org/iso-codes -- $SHELL -i`
- * @dependencies `gnu.org/gettext`, `python.org<3.12`, `freedesktop.org/pkg-config`
+ * @dependencies `gnu.org/gettext`
  *
  * @example
  * ```typescript
@@ -49,8 +49,6 @@ export const debianorgisocodesPackage = {
    */
   dependencies: [
     'gnu.org/gettext',
-    'python.org<3.12',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

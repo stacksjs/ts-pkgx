@@ -8,7 +8,7 @@
  *
  * @install `launchpad install sfcgal-config`
  * @aliases `sfcgal-config`
- * @dependencies `boost.org`, `cgal.org`, `gnu.org/gmp`, ... (+4 more)
+ * @dependencies `boost.org`, `cgal.org`, `gnu.org/gmp`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,9 +66,6 @@ export const sfcgalconfigPackage = {
     'cgal.org',
     'gnu.org/gmp',
     'gnu.org/mpfr',
-    'cmake.org',
-    'gnu.org/gcc',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

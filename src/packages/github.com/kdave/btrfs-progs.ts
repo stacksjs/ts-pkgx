@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/kdave/btrfs-progs -- $SHELL -i`
- * @dependencies `python.org~3.11`, `sourceforge.net/e2fsprogs^1.47`, `oberhumer.com/lzo^2.10`, ... (+8 more)
+ * @dependencies `python.org~3.11`, `sourceforge.net/e2fsprogs^1.47`, `oberhumer.com/lzo^2.10`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -73,10 +73,6 @@ export const githubcomkdavebtrfsprogsPackage = {
     'github.com/util-linux/util-linux^2.39',
     'zlib.net^1.3',
     'facebook.com/zstd^1.5',
-    'sphinx-doc.org',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
   ] as const,
   /**
    * Available versions from newest to oldest.

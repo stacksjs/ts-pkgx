@@ -8,7 +8,7 @@
  *
  * @install `launchpad install heif-converter`
  * @aliases `heif-converter`
- * @dependencies `github.com/strukturag/libheif`, `go.dev^1.19`
+ * @dependencies `github.com/strukturag/libheif`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const heifconverterPackage = {
    */
   dependencies: [
     'github.com/strukturag/libheif',
-    'go.dev^1.19',
   ] as const,
   /**
    * Available versions from newest to oldest.

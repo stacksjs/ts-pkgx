@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +luarocks.org -- $SHELL -i`
  * @aliases `luarocks`
- * @dependencies `lua.org`, `info-zip.org/unzip`, `gnu.org/make^4`, ... (+3 more)
+ * @dependencies `lua.org`, `info-zip.org/unzip`
  *
  * @example
  * ```typescript
@@ -65,10 +65,6 @@ export const luarocksPackage = {
   dependencies: [
     'lua.org',
     'info-zip.org/unzip',
-    'gnu.org/make^4',
-    'gnu.org/sed^4',
-    'gnu.org/gcc',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

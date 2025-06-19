@@ -8,7 +8,6 @@
  *
  * @install `launchpad install cf`
  * @aliases `cf`
- * @dependencies `cmake.org^3`, `go.dev=1.23.1`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const cfPackage = {
     'cf',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org^3',
-    'go.dev=1.23.1',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

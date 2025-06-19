@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ttyd`
  * @name `ttyd`
- * @dependencies `libuv.org@1`, `github.com/json-c/json-c^0.16`, `libwebsockets.org@4`, ... (+2 more)
+ * @dependencies `libuv.org@1`, `github.com/json-c/json-c^0.16`, `libwebsockets.org@4`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,7 +66,6 @@ export const ttydPackage = {
     'github.com/json-c/json-c^0.16',
     'libwebsockets.org@4',
     'zlib.net@1',
-    'cmake.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

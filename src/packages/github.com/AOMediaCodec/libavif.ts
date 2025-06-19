@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/AOMediaCodec/libavif -- $SHELL -i`
  * @aliases `avif`
- * @dependencies `aomedia.googlesource.com/aom^3`, `libpng.org^1`, `libjpeg-turbo.org^2`, ... (+2 more)
+ * @dependencies `aomedia.googlesource.com/aom^3`, `libpng.org^1`, `libjpeg-turbo.org^2`
  *
  * @example
  * ```typescript
@@ -66,8 +66,6 @@ export const avifPackage = {
     'aomedia.googlesource.com/aom^3',
     'libpng.org^1',
     'libjpeg-turbo.org^2',
-    'cmake.org^3',
-    'nasm.us',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/x11 -- $SHELL -i`
- * @dependencies `x.org/xcb^1`, `x.org/protocol`, `freedesktop.org/pkg-config~0.29`, ... (+3 more)
+ * @dependencies `x.org/xcb^1`, `x.org/protocol`
  *
  * @example
  * ```typescript
@@ -50,10 +50,6 @@ export const xorgx11Package = {
   dependencies: [
     'x.org/xcb^1',
     'x.org/protocol',
-    'freedesktop.org/pkg-config~0.29',
-    'x.org/util-macros',
-    'x.org/xtrans^1',
-    'gnu.org/sed',
   ] as const,
   /**
    * Available versions from newest to oldest.

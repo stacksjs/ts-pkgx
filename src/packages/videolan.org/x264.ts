@@ -8,7 +8,6 @@
  *
  * @install `launchpad install x264`
  * @name `x264`
- * @dependencies `gnu.org/gcc`, `nasm.us`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const x264Package = {
     'x264',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/gcc',
-    'nasm.us',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

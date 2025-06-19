@@ -8,7 +8,6 @@
  *
  * @install `launchpad install aac-enc`
  * @aliases `aac-enc`
- * @dependencies `gnu.org/gcc`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const aacencPackage = {
     'aac-enc',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/gcc',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

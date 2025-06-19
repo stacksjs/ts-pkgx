@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/kjd/idna -- $SHELL -i`
- * @dependencies `python.org~3.11`, `flit.pypa.io`
+ * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
@@ -50,7 +50,6 @@ export const githubcomkjdidnaPackage = {
    */
   dependencies: [
     'python.org~3.11',
-    'flit.pypa.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install fastgron`
  * @name `fastgron`
- * @dependencies `curl.se`, `gnu.org/gcc`, `gnu.org/bash^5`, ... (+3 more)
+ * @dependencies `curl.se`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,14 +60,11 @@ export const fastgronPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'curl.se',
-    'gnu.org/gcc',
-    'gnu.org/bash^5',
-    'gnu.org/make',
-    'cmake.org^3',
-    'curl.se',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

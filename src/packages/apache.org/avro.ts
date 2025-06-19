@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +apache.org/avro -- $SHELL -i`
  * @name `avro`
- * @dependencies `digip.org/jansson`, `google.github.io/snappy`, `tukaani.org/xz`, ... (+9 more)
+ * @dependencies `digip.org/jansson`, `google.github.io/snappy`, `tukaani.org/xz`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -69,14 +69,6 @@ export const avroPackage = {
     'google.github.io/snappy',
     'tukaani.org/xz',
     'zlib.net',
-    'gnu.org/tar',
-    'curl.se',
-    'cmake.org',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
-    'gnu.org/make',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

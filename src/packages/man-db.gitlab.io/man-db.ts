@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +man-db.gitlab.io/man-db -- $SHELL -i`
  * @name `man-db`
- * @dependencies `libpipeline.gitlab.io/libpipeline`, `gnu.org/groff`, `gnu.org/gdbm`, ... (+2 more)
+ * @dependencies `libpipeline.gitlab.io/libpipeline`, `gnu.org/groff`, `linux:gnu.org/gdbm` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -66,13 +66,12 @@ export const mandbPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'libpipeline.gitlab.io/libpipeline',
     'gnu.org/groff',
-    'gnu.org/gdbm',
-    'gnu.org/make',
-    'freedesktop.org/pkg-config',
+    'linux:gnu.org/gdbm',
   ] as const,
   /**
    * Available versions from newest to oldest.

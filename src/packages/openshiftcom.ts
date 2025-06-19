@@ -8,7 +8,7 @@
  *
  * @install `launchpad install oc`
  * @aliases `oc`
- * @dependencies `kerberos.org^1.21`, `go.dev^1.21`, `gnu.org/gcc`
+ * @dependencies `kerberos.org^1.21`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const ocPackage = {
    */
   dependencies: [
     'kerberos.org^1.21',
-    'go.dev^1.21',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

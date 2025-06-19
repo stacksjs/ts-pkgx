@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +nmap.org -- $SHELL -i`
- * @dependencies `openssl.org^1.1`, `pcre.org/v2^10`, `gnu.org/patch`, ... (+1 more)
+ * @dependencies `openssl.org^1.1`, `pcre.org/v2^10`
  *
  * @example
  * ```typescript
@@ -61,8 +61,6 @@ export const nmaporgPackage = {
   dependencies: [
     'openssl.org^1.1',
     'pcre.org/v2^10',
-    'gnu.org/patch',
-    'python.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

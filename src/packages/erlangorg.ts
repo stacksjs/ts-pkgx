@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +erlang.org -- $SHELL -i`
- * @dependencies `openssl.org^1.1`, `invisible-island.net/ncurses`, `gnu.org/gcc/libstdcxx`, ... (+3 more)
+ * @dependencies `openssl.org^1.1`, `invisible-island.net/ncurses`
  *
  * @example
  * ```typescript
@@ -67,10 +67,6 @@ export const erlangorgPackage = {
   dependencies: [
     'openssl.org^1.1',
     'invisible-island.net/ncurses',
-    'gnu.org/gcc/libstdcxx',
-    'perl.org>=5',
-    'gnu.org/gcc',
-    'pkgx.sh@1',
   ] as const,
   /**
    * Available versions from newest to oldest.

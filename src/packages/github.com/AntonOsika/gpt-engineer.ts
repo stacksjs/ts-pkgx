@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/AntonOsika/gpt-engineer -- $SHELL -i`
  * @aliases `GPT Engineer`
- * @dependencies `pkgx.sh^1`, `python.org~3.11`, `python-poetry.org^1.7`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const gPTEngineerPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.11',
-    'python-poetry.org^1.7',
   ] as const,
   /**
    * Available versions from newest to oldest.

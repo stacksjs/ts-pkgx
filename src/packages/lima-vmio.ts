@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +lima-vm.io -- $SHELL -i`
- * @dependencies `qemu.org`, `go.dev`, `gnu.org/gcc`
+ * @dependencies `qemu.org`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const limavmioPackage = {
    */
   dependencies: [
     'qemu.org',
-    'go.dev',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

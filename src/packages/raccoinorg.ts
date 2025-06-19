@@ -8,7 +8,7 @@
  *
  * @install `launchpad install raccoin`
  * @aliases `raccoin`
- * @dependencies `gnu.org/libiconv^1`, `openssl.org^1.1`, `rust-lang.org>=1.56`, ... (+1 more)
+ * @dependencies `gnu.org/libiconv^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const raccoinPackage = {
   dependencies: [
     'gnu.org/libiconv^1',
     'openssl.org^1.1',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

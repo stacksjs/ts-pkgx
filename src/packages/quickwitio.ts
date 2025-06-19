@@ -8,7 +8,7 @@
  *
  * @install `launchpad install quickwit`
  * @aliases `quickwit`
- * @dependencies `protobuf.dev^25`, `rust-lang.org^1.79`, `rust-lang.org/cargo`
+ * @dependencies `protobuf.dev^25`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const quickwitPackage = {
    */
   dependencies: [
     'protobuf.dev^25',
-    'rust-lang.org^1.79',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

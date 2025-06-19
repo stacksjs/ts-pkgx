@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +apache.org/jmeter -- $SHELL -i`
- * @dependencies `openjdk.org`, `gnu.org/wget`
+ * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
@@ -59,7 +59,6 @@ export const apacheorgjmeterPackage = {
    */
   dependencies: [
     'openjdk.org',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install swiftlint`
  * @aliases `swiftlint`
- * @dependencies `curl.se@8`, `gnome.org/libxml2@2`, `curl.se`, ... (+1 more)
+ * @dependencies `linux:curl.se@8`, `linux:gnome.org/libxml2@2` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,12 +60,11 @@ export const swiftlintPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'curl.se@8',
-    'gnome.org/libxml2@2',
-    'curl.se',
-    'info-zip.org/unzip',
+    'linux:curl.se@8',
+    'linux:gnome.org/libxml2@2',
   ] as const,
   /**
    * Available versions from newest to oldest.

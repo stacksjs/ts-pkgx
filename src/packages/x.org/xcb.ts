@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xcb -- $SHELL -i`
- * @dependencies `x.org/xau^1`, `x.org/xdmcp^1`, `freedesktop.org/pkg-config^0.29`, ... (+3 more)
+ * @dependencies `x.org/xau^1`, `x.org/xdmcp^1`
  *
  * @example
  * ```typescript
@@ -50,10 +50,6 @@ export const xorgxcbPackage = {
   dependencies: [
     'x.org/xau^1',
     'x.org/xdmcp^1',
-    'freedesktop.org/pkg-config^0.29',
-    'python.org~3.11',
-    'x.org/protocol/xcb^1',
-    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

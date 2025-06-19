@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +liblqr.wikidot.com -- $SHELL -i`
- * @dependencies `gnome.org/glib`, `freedesktop.org/pkg-config`, `freedesktop.org/pkg-config`
+ * @dependencies `gnome.org/glib`
  *
  * @example
  * ```typescript
@@ -50,8 +50,6 @@ export const liblqrwikidotcomPackage = {
    */
   dependencies: [
     'gnome.org/glib',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

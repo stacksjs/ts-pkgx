@@ -8,7 +8,6 @@
  *
  * @install `launchpad install geos-config`
  * @aliases `geos-config`
- * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const geosconfigPackage = {
     'geos-config',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

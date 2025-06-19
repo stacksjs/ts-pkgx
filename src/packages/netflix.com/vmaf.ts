@@ -8,7 +8,6 @@
  *
  * @install `launchpad install vmaf`
  * @name `vmaf`
- * @dependencies `mesonbuild.com`, `ninja-build.org`, `nasm.us`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const vmafPackage = {
     'vmaf',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'mesonbuild.com',
-    'ninja-build.org',
-    'nasm.us',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -8,7 +8,6 @@
  *
  * @install `launchpad install ord`
  * @aliases `ord`
- * @dependencies `rust-lang.org^1.67.0`, `rust-lang.org/cargo^0.65`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const ordPackage = {
     'ord',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org^1.67.0',
-    'rust-lang.org/cargo^0.65',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

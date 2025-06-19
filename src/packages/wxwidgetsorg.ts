@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +wxwidgets.org -- $SHELL -i`
- * @dependencies `libjpeg-turbo.org`, `libpng.org`, `simplesystems.org/libtiff`, ... (+9 more)
+ * @dependencies `libjpeg-turbo.org`, `libpng.org`, `simplesystems.org/libtiff`, ... (+6 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -56,6 +56,7 @@ export const wxwidgetsorgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'libjpeg-turbo.org',
@@ -64,12 +65,9 @@ export const wxwidgetsorgPackage = {
     'pcre.org/v2',
     'libexpat.github.io',
     'zlib.net',
-    'x.org/sm',
-    'freedesktop.org/mesa-glu',
-    'gtk.org/gtk3',
-    'freedesktop.org/pkg-config',
-    'llvm.org<17 # still gets unassigned label errors',
-    'gnu.org/make',
+    'linux:x.org/sm',
+    'linux:freedesktop.org/mesa-glu',
+    'linux:gtk.org/gtk3',
   ] as const,
   /**
    * Available versions from newest to oldest.

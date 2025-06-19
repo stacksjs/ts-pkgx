@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git-absorb`
  * @name `git-absorb`
- * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `rust-lang.org>=1.65`, `rust-lang.org/cargo`, ... (+1 more)
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const gitabsorbPackage = {
    */
   dependencies: [
     'libgit2.org~1.7 # links to libgit2.so.1.7',
-    'rust-lang.org>=1.65',
-    'rust-lang.org/cargo',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

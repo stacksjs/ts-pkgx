@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/charliermarsh/ruff -- $SHELL -i`
- * @dependencies `rust-lang.org>=1.60`, `rust-lang.org/cargo`, `crates.io/semverator`
  *
  * @example
  * ```typescript
@@ -44,15 +43,7 @@ export const githubcomcharliermarshruffPackage = {
   installCommand: 'launchpad install +github.com/charliermarsh/ruff -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org>=1.60',
-    'rust-lang.org/cargo',
-    'crates.io/semverator',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

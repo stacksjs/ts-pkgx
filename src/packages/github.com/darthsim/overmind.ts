@@ -8,7 +8,7 @@
  *
  * @install `launchpad install overmind`
  * @name `overmind`
- * @dependencies `github.com/tmux/tmux`, `go.dev>=1.21`
+ * @dependencies `github.com/tmux/tmux`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const overmindPackage = {
    */
   dependencies: [
     'github.com/tmux/tmux',
-    'go.dev>=1.21',
   ] as const,
   /**
    * Available versions from newest to oldest.

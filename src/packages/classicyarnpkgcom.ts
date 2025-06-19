@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +classic.yarnpkg.com -- $SHELL -i`
  * @aliases `yarn`
- * @dependencies `nodejs.org>=5`, `npmjs.com`, `gnu.org/patch`
+ * @dependencies `nodejs.org>=5`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const yarnPackage = {
    */
   dependencies: [
     'nodejs.org>=5',
-    'npmjs.com',
-    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

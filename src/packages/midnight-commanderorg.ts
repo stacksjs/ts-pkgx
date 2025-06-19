@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +midnight-commander.org -- $SHELL -i`
  * @aliases `Midnight Commander`
- * @dependencies `invisible-island.net/ncurses`, `gnome.org/glib>=2.30`, `gnu.org/gettext>=0.18.2`, ... (+4 more)
+ * @dependencies `invisible-island.net/ncurses`, `gnome.org/glib>=2.30`, `gnu.org/gettext>=0.18.2`
  *
  * @example
  * ```typescript
@@ -68,10 +68,6 @@ export const midnightCommanderPackage = {
     'invisible-island.net/ncurses',
     'gnome.org/glib>=2.30',
     'gnu.org/gettext>=0.18.2',
-    'gnu.org/autoconf>=2.64',
-    'gnu.org/automake>=1.12',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

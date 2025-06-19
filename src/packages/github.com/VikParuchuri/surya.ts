@@ -8,7 +8,7 @@
  *
  * @install `launchpad install surya_detect`
  * @aliases `surya_detect`, `Surya`
- * @dependencies `pkgx.sh^1`, `mesa3d.org^23.3`, `gnome.org/glib^2`, ... (+4 more)
+ * @dependencies `pkgx.sh^1`, `linux:mesa3d.org^23.3`, `linux:gnome.org/glib^2`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,15 +60,13 @@ export const suryadetectPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'pkgx.sh^1',
-    'mesa3d.org^23.3',
-    'gnome.org/glib^2',
-    'mupdf.com',
-    'python.org~3.11',
-    'python-poetry.org^1.7',
-    'curl.se',
+    'linux:mesa3d.org^23.3',
+    'linux:gnome.org/glib^2',
+    'linux:mupdf.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

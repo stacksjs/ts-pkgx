@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tofu`
  * @aliases `tofu`
- * @dependencies `gnu.org/gcc/libstdcxx`, `curl.se/ca-certs`, `go.dev~1.21`
+ * @dependencies `linux:gnu.org/gcc/libstdcxx` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,11 +60,10 @@ export const tofuPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnu.org/gcc/libstdcxx',
-    'curl.se/ca-certs',
-    'go.dev~1.21',
+    'linux:gnu.org/gcc/libstdcxx',
   ] as const,
   /**
    * Available versions from newest to oldest.

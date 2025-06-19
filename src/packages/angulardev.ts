@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ng`
  * @aliases `ng`
- * @dependencies `nodejs.org^20`, `npmjs.com^10`
+ * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const ngPackage = {
    */
   dependencies: [
     'nodejs.org^20',
-    'npmjs.com^10',
   ] as const,
   /**
    * Available versions from newest to oldest.

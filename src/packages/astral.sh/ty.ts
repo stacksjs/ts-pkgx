@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ty`
  * @name `ty`
- * @dependencies `pkgx.sh@1`, `rust-lang.org>=1.60`, `rust-lang.org/cargo`, ... (+3 more)
+ * @dependencies `pkgx.sh@1`
  *
  * @example
  * ```typescript
@@ -63,11 +63,6 @@ export const tyPackage = {
    */
   dependencies: [
     'pkgx.sh@1',
-    'rust-lang.org>=1.60',
-    'rust-lang.org/cargo',
-    'python.org~3.13',
-    'maturin.rs',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

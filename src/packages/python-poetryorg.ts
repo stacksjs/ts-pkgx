@@ -8,7 +8,7 @@
  *
  * @install `launchpad install poetry`
  * @aliases `poetry`
- * @dependencies `pkgx.sh^1`, `python.org~3.11`, `cmake.org^3`, ... (+1 more)
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const poetryPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.11',
-    'cmake.org^3',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

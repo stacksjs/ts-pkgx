@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +wimlib.net -- $SHELL -i`
- * @dependencies `openssl.org^3.1.0`, `gnome.org/libxml2`, `freedesktop.org/pkg-config`
+ * @dependencies `openssl.org^3.1.0`, `gnome.org/libxml2`
  *
  * @example
  * ```typescript
@@ -76,7 +76,6 @@ export const wimlibnetPackage = {
   dependencies: [
     'openssl.org^3.1.0',
     'gnome.org/libxml2',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

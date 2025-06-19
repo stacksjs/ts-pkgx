@@ -8,7 +8,7 @@
  *
  * @install `launchpad install eas`
  * @aliases `eas`
- * @dependencies `nodejs.org^18.18 || >=20`, `python.org~3.10`, `classic.yarnpkg.com`, ... (+1 more)
+ * @dependencies `nodejs.org^18.18 || >=20`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const easPackage = {
    */
   dependencies: [
     'nodejs.org^18.18 || >=20',
-    'python.org~3.10',
-    'classic.yarnpkg.com',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

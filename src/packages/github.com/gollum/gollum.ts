@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gollum`
  * @name `gollum`
- * @dependencies `ruby-lang.org^3.1`, `rubygems.org~3.3`, `cmake.org^3 # needed by the rugged gem`
+ * @dependencies `ruby-lang.org^3.1`, `rubygems.org~3.3`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const gollumPackage = {
   dependencies: [
     'ruby-lang.org^3.1',
     'rubygems.org~3.3',
-    'cmake.org^3 # needed by the rugged gem',
   ] as const,
   /**
    * Available versions from newest to oldest.

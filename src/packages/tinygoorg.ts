@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tinygo`
  * @aliases `tinygo`
- * @dependencies `go.dev`, `go.dev^1.18`, `git-scm.org@2`, ... (+4 more)
+ * @dependencies `go.dev`
  * @companions `llvm.org`
  *
  * @example
@@ -70,12 +70,6 @@ export const tinygoPackage = {
    */
   dependencies: [
     'go.dev',
-    'go.dev^1.18',
-    'git-scm.org@2',
-    'cmake.org@3',
-    'ninja-build.org@1',
-    'nodejs.org',
-    'python.org>=3.6',
   ] as const,
   /**
    * Available versions from newest to oldest.

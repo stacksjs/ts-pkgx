@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +sourceforge.net/potrace -- $SHELL -i`
  * @aliases `sf.net/potrace`
- * @dependencies `zlib.net^1`, `curl.se`
+ * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const sfnetpotracePackage = {
    */
   dependencies: [
     'zlib.net^1',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

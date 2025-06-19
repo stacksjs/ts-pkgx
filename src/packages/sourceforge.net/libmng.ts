@@ -7,7 +7,7 @@
  *
  * @install `launchpad install +sourceforge.net/libmng -- $SHELL -i`
  * @aliases `sf.net/libmng`
- * @dependencies `libjpeg-turbo.org`, `littlecms.com>=2.0.0`, `zlib.net`, ... (+1 more)
+ * @dependencies `libjpeg-turbo.org`, `littlecms.com>=2.0.0`, `zlib.net`
  *
  * @example
  * ```typescript
@@ -56,7 +56,6 @@ export const sfnetlibmngPackage = {
     'libjpeg-turbo.org',
     'littlecms.com>=2.0.0',
     'zlib.net',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

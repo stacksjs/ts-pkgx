@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gnuplot`
  * @aliases `gnuplot`
- * @dependencies `libgd.github.io`, `lua.org`, `gnome.org/pango`, ... (+5 more)
+ * @dependencies `libgd.github.io`, `lua.org`, `gnome.org/pango`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,16 +60,14 @@ export const gnuplotPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'libgd.github.io',
     'lua.org',
     'gnome.org/pango',
     'gnu.org/readline',
-    'github.com/AOMediaCodec/libavif^0.11',
-    'gnu.org/autoconf',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
+    'linux:github.com/AOMediaCodec/libavif^0.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

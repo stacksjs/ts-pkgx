@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/python-cffi/cffi -- $SHELL -i`
- * @dependencies `python.org>=3.11`, `github.com/eliben/pycparser^2.21`, `sourceware.org/libffi^3.4`, ... (+1 more)
+ * @dependencies `python.org>=3.11`, `github.com/eliben/pycparser^2.21`, `sourceware.org/libffi^3.4`
  *
  * @example
  * ```typescript
@@ -52,7 +52,6 @@ export const githubcompythoncfficffiPackage = {
     'python.org>=3.11',
     'github.com/eliben/pycparser^2.21',
     'sourceware.org/libffi^3.4',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

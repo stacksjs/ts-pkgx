@@ -8,7 +8,7 @@
  *
  * @install `launchpad install sam`
  * @name `sam`
- * @dependencies `pkgx.sh^1`, `python.org^3.11`, `rust-lang.org`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const samPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org^3.11',
-    'rust-lang.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

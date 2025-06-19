@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +plocate.sesse.net -- $SHELL -i`
- * @dependencies `facebook.com/zstd@1`, `gnu.org/gcc/libstdcxx@14`, `mesonbuild.com^1`, ... (+3 more)
+ * @dependencies `facebook.com/zstd@1`, `gnu.org/gcc/libstdcxx@14`
  *
  * @example
  * ```typescript
@@ -60,10 +60,6 @@ export const plocatesessenetPackage = {
   dependencies: [
     'facebook.com/zstd@1',
     'gnu.org/gcc/libstdcxx@14',
-    'mesonbuild.com^1',
-    'cmake.org^3',
-    'ninja-build.org^1',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

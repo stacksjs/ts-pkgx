@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/groff -- $SHELL -i`
- * @dependencies `ghostscript.com`, `netpbm.sourceforge.net`, `github.com/rrthomas/psutils`, ... (+8 more)
+ * @dependencies `ghostscript.com`, `netpbm.sourceforge.net`, `github.com/rrthomas/psutils`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -93,6 +93,7 @@ export const gnuorggroffPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'ghostscript.com',
@@ -100,12 +101,7 @@ export const gnuorggroffPackage = {
     'github.com/rrthomas/psutils',
     'freedesktop.org/uchardet',
     'perl.org',
-    'gnome.org/glib',
-    'gnu.org/gcc',
-    'gnu.org/make',
-    'freedesktop.org/pkg-config',
-    'gnu.org/bison',
-    'gnu.org/texinfo',
+    'linux:gnome.org/glib',
   ] as const,
   /**
    * Available versions from newest to oldest.

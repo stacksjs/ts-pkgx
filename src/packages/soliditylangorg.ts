@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +soliditylang.org -- $SHELL -i`
- * @dependencies `boost.org~1.84`, `gnu.org/gcc/libstdcxx@14`, `gnu.org/gcc@14`, ... (+2 more)
+ * @dependencies `boost.org~1.84`, `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -56,13 +56,11 @@ export const soliditylangorgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'boost.org~1.84',
-    'gnu.org/gcc/libstdcxx@14',
-    'gnu.org/gcc@14',
-    'cmake.org@3',
-    'gnu.org/patch',
+    'linux:gnu.org/gcc/libstdcxx@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

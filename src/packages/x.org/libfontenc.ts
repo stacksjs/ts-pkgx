@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/libfontenc -- $SHELL -i`
- * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`, ... (+2 more)
+ * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -52,7 +52,6 @@ export const xorglibfontencPackage = {
     'x.org/exts',
     'x.org/protocol',
     'zlib.net',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

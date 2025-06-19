@@ -8,7 +8,6 @@
  *
  * @install `launchpad install tart`
  * @aliases `tart`
- * @dependencies `curl.se`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const tartPackage = {
     'tart',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'curl.se',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

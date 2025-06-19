@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +hboehm.info/gc -- $SHELL -i`
- * @dependencies `freedesktop.org/pkg-config`, `github.com/ivmai/libatomic_ops`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
@@ -44,15 +43,7 @@ export const hboehminfogcPackage = {
   installCommand: 'launchpad install +hboehm.info/gc -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'freedesktop.org/pkg-config',
-    'github.com/ivmai/libatomic_ops',
-    'freedesktop.org/pkg-config',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

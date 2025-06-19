@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +flutter.dev -- $SHELL -i`
- * @dependencies `git-scm.org`, `tukaani.org/xz`, `gnu.org/which`, ... (+3 more)
+ * @dependencies `git-scm.org`, `tukaani.org/xz`, `gnu.org/which`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -56,14 +56,15 @@ export const flutterdevPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'git-scm.org',
     'tukaani.org/xz',
     'gnu.org/which',
-    'curl.se',
-    'info-zip.org/zip',
-    'info-zip.org/unzip',
+    'linux:curl.se',
+    'linux:info-zip.org/zip',
+    'linux:info-zip.org/unzip',
   ] as const,
   /**
    * Available versions from newest to oldest.

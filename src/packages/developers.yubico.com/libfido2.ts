@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +developers.yubico.com/libfido2 -- $SHELL -i`
  * @aliases `fido2`
- * @dependencies `github.com/PJK/libcbor@0`, `openssl.org@1`, `zlib.net@1`, ... (+3 more)
+ * @dependencies `github.com/PJK/libcbor@0`, `openssl.org@1`, `zlib.net@1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -62,14 +62,13 @@ export const fido2Package = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'github.com/PJK/libcbor@0',
     'openssl.org@1',
     'zlib.net@1',
-    'systemd.io',
-    'cmake.org@3',
-    'freedesktop.org/pkg-config^0.29',
+    'linux:systemd.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

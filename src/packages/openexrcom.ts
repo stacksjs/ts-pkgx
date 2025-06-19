@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +openexr.com -- $SHELL -i`
  * @aliases `exr`
- * @dependencies `zlib.net^1`, `openexr.com/imath`, `cmake.org`, ... (+3 more)
+ * @dependencies `zlib.net^1`, `openexr.com/imath`
  *
  * @example
  * ```typescript
@@ -71,10 +71,6 @@ export const exrPackage = {
   dependencies: [
     'zlib.net^1',
     'openexr.com/imath',
-    'cmake.org',
-    'freedesktop.org/pkg-config',
-    'git-scm.org',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

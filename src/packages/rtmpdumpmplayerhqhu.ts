@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +rtmpdump.mplayerhq.hu -- $SHELL -i`
  * @aliases `rtmpdump`
- * @dependencies `openssl.org^1.1`, `zlib.net`, `gnu.org/patch`, ... (+1 more)
+ * @dependencies `openssl.org^1.1`, `zlib.net`
  *
  * @example
  * ```typescript
@@ -67,8 +67,6 @@ export const rtmpdumpPackage = {
   dependencies: [
     'openssl.org^1.1',
     'zlib.net',
-    'gnu.org/patch',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

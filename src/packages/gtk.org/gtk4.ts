@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +gtk.org/gtk4 -- $SHELL -i`
  * @name `gtk4`
- * @dependencies `gnome.org/gdk-pixbuf^2.42`, `gnome.org/glib^2.78`, `ebassi.github.io/graphene^1.10`, ... (+28 more)
+ * @dependencies `gnome.org/gdk-pixbuf^2.42`, `gnome.org/glib^2.78`, `ebassi.github.io/graphene^1.10`, ... (+15 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -70,6 +70,7 @@ export const gtk4Package = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnome.org/gdk-pixbuf^2.42',
@@ -82,27 +83,14 @@ export const gtk4Package = {
     'simplesystems.org/libtiff^4.6',
     'gnome.org/pango^1.50',
     'openprinting.github.io/cups^2.4',
-    'x.org/xi^1.8',
-    'x.org/xinerama^1.1',
-    'x.org/xcursor^1.2',
-    'xkbcommon.org^1.6',
-    'github.com/KhronosGroup/Vulkan-Loader^1',
-    'github.com/google/shaderc^2023',
-    'cairographics.org^1.18',
-    'wayland.freedesktop.org/protocols^1.43 # since 4.19.1',
-    'docbook.org',
-    'docbook.org/xsl',
-    'gnu.org/gettext',
-    'gnome.org/gobject-introspection',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'sass-lang.com/sassc',
-    'gnome.org/libxslt',
-    'gnome.org/libxml2~2.13',
-    'cmake.org',
-    'gnu.org/binutils',
-    'kernel.org/linux-headers',
-    'freedesktop.org/pkg-config',
+    'linux:x.org/xi^1.8',
+    'linux:x.org/xinerama^1.1',
+    'linux:x.org/xcursor^1.2',
+    'linux:xkbcommon.org^1.6',
+    'linux:github.com/KhronosGroup/Vulkan-Loader^1',
+    'linux:github.com/google/shaderc^2023',
+    'linux:cairographics.org^1.18',
+    'linux:wayland.freedesktop.org/protocols^1.43 # since 4.19.1',
   ] as const,
   /**
    * Available versions from newest to oldest.

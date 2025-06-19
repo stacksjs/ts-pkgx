@@ -8,7 +8,7 @@
  *
  * @install `launchpad install awslogs`
  * @name `awslogs`
- * @dependencies `python.org^3.11`, `github.com/benjaminp/six`, `zlib.net`, ... (+1 more)
+ * @dependencies `python.org^3.11`, `github.com/benjaminp/six`, `zlib.net`
  *
  * @example
  * ```typescript
@@ -65,7 +65,6 @@ export const awslogsPackage = {
     'python.org^3.11',
     'github.com/benjaminp/six',
     'zlib.net',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

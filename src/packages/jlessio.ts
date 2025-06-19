@@ -8,7 +8,7 @@
  *
  * @install `launchpad install jless`
  * @aliases `jless`
- * @dependencies `x.org/xcb@1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`, ... (+1 more)
+ * @dependencies `linux:x.org/xcb@1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,12 +60,10 @@ export const jlessPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'x.org/xcb@1',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
-    'python.org@3',
+    'linux:x.org/xcb@1',
   ] as const,
   /**
    * Available versions from newest to oldest.

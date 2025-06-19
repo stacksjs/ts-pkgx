@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gops`
  * @name `gops`
- * @dependencies `go.dev`, `go.dev`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -62,7 +62,6 @@ export const gopsPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'go.dev',
     'go.dev',
   ] as const,
   /**

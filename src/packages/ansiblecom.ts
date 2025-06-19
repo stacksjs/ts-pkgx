@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +ansible.com -- $SHELL -i`
  * @aliases `ansible`
- * @dependencies `pkgx.sh@1`, `python.org>=3.7<3.12`
+ * @dependencies `pkgx.sh@1`
  *
  * @example
  * ```typescript
@@ -73,7 +73,6 @@ export const ansiblePackage = {
    */
   dependencies: [
     'pkgx.sh@1',
-    'python.org>=3.7<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

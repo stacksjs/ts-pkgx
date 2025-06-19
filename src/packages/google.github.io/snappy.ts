@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +google.github.io/snappy -- $SHELL -i`
- * @dependencies `freedesktop.org/pkg-config`, `cmake.org`, `gnu.org/patch`
  *
  * @example
  * ```typescript
@@ -44,15 +43,7 @@ export const googlegithubiosnappyPackage = {
   installCommand: 'launchpad install +google.github.io/snappy -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'freedesktop.org/pkg-config',
-    'cmake.org',
-    'gnu.org/patch',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install minikube`
  * @name `minikube`
- * @dependencies `kubernetes.io/kubectl`, `go.dev^1.19`, `github.com/kevinburke/go-bindata`
+ * @dependencies `kubernetes.io/kubectl`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const minikubePackage = {
    */
   dependencies: [
     'kubernetes.io/kubectl',
-    'go.dev^1.19',
-    'github.com/kevinburke/go-bindata',
   ] as const,
   /**
    * Available versions from newest to oldest.

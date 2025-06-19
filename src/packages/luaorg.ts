@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +lua.org -- $SHELL -i`
  * @aliases `lua`
- * @dependencies `gnu.org/readline`, `freedesktop.org/pkg-config`
+ * @dependencies `gnu.org/readline`
  * @companions `luarocks.org`
  *
  * @example
@@ -71,7 +71,6 @@ export const luaPackage = {
    */
   dependencies: [
     'gnu.org/readline',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

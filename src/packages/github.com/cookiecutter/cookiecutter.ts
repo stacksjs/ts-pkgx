@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cookiecutter`
  * @name `cookiecutter`
- * @dependencies `pkgx.sh^1`, `python.org~3.12`, `git-scm.org`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const cookiecutterPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.12',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

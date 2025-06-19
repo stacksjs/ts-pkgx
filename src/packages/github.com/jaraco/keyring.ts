@@ -8,7 +8,7 @@
  *
  * @install `launchpad install keyring`
  * @name `keyring`
- * @dependencies `pkgx.sh^1`, `github.com/python-cffi/cffi^1.16`, `github.com/eliben/pycparser^2.21`, ... (+2 more)
+ * @dependencies `pkgx.sh^1`, `github.com/python-cffi/cffi^1.16`, `github.com/eliben/pycparser^2.21`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,7 +66,6 @@ export const keyringPackage = {
     'github.com/python-cffi/cffi^1.16',
     'github.com/eliben/pycparser^2.21',
     'cryptography.io^42',
-    'python.org>=3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

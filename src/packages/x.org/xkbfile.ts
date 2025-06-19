@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xkbfile -- $SHELL -i`
- * @dependencies `x.org/x11`, `freedesktop.org/pkg-config`, `freedesktop.org/pkg-config`
+ * @dependencies `x.org/x11`
  *
  * @example
  * ```typescript
@@ -49,8 +49,6 @@ export const xorgxkbfilePackage = {
    */
   dependencies: [
     'x.org/x11',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

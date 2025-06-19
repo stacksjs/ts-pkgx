@@ -8,7 +8,7 @@
  *
  * @install `launchpad install mdcat`
  * @name `mdcat`
- * @dependencies `openssl.org^1.1`, `curl.se^8 # since 2.7.0`, `rust-lang.org>=1.56`, ... (+1 more)
+ * @dependencies `openssl.org^1.1`, `curl.se^8 # since 2.7.0`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const mdcatPackage = {
   dependencies: [
     'openssl.org^1.1',
     'curl.se^8 # since 2.7.0',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install btop`
  * @name `btop`
- * @dependencies `gnu.org/gcc/libstdcxx@14`, `gnu.org/gcc@14`, `llvm.org`
+ * @dependencies `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,11 +60,10 @@ export const btopPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnu.org/gcc/libstdcxx@14',
-    'gnu.org/gcc@14',
-    'llvm.org',
+    'linux:gnu.org/gcc/libstdcxx@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

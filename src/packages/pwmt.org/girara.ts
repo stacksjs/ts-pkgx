@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +pwmt.org/girara -- $SHELL -i`
- * @dependencies `gtk.org/gtk3@3`, `gnome.org/glib^2.72`, `gnome.org/json-glib^1`, ... (+3 more)
+ * @dependencies `gtk.org/gtk3@3`, `gnome.org/glib^2.72`, `gnome.org/json-glib^1`
  *
  * @example
  * ```typescript
@@ -52,9 +52,6 @@ export const pwmtorggiraraPackage = {
     'gtk.org/gtk3@3',
     'gnome.org/glib^2.72',
     'gnome.org/json-glib^1',
-    'mesonbuild.com>=0.61',
-    'ninja-build.org',
-    'gnu.org/gettext',
   ] as const,
   /**
    * Available versions from newest to oldest.

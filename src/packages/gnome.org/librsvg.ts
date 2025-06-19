@@ -8,7 +8,7 @@
  *
  * @install `launchpad install rsvg-convert`
  * @aliases `rsvg-convert`
- * @dependencies `cairographics.org^1.18`, `gnome.org/pango@1`, `gnome.org/gdk-pixbuf@2`, ... (+11 more)
+ * @dependencies `cairographics.org^1.18`, `gnome.org/pango@1`, `gnome.org/gdk-pixbuf@2`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -67,15 +67,6 @@ export const rsvgconvertPackage = {
     'gnome.org/gdk-pixbuf@2',
     'gnome.org/glib@2',
     'gnu.org/gettext^0.21',
-    'rust-lang.org/cargo@0',
-    'rust-lang.org^1.63',
-    'freedesktop.org/pkg-config^0.29',
-    'gnome.org/gobject-introspection@1',
-    'python.org>=3<3.12',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'github.com/lu-zero/cargo-c',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

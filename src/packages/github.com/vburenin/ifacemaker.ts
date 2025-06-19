@@ -8,7 +8,6 @@
  *
  * @install `launchpad install ifacemaker`
  * @name `ifacemaker`
- * @dependencies `go.dev`
  * @companions `go.dev`
  *
  * @example
@@ -64,13 +63,7 @@ export const ifacemakerPackage = {
   companions: [
     'go.dev',
   ] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

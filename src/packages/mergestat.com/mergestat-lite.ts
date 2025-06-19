@@ -8,7 +8,6 @@
  *
  * @install `launchpad install mergestat`
  * @aliases `mergestat`
- * @dependencies `go.dev^1.19`, `cmake.org`, `git-scm.org`, ... (+5 more)
  *
  * @example
  * ```typescript
@@ -57,20 +56,7 @@ export const mergestatPackage = {
     'mergestat',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev^1.19',
-    'cmake.org',
-    'git-scm.org',
-    'libgit2.org~1.7 # links to libgit2.so.1.7',
-    'openssl.org',
-    'freedesktop.org/pkg-config',
-    'python.org^3',
-    'git-scm.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

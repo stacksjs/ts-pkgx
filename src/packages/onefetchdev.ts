@@ -8,7 +8,7 @@
  *
  * @install `launchpad install onefetch`
  * @aliases `onefetch`
- * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `cmake.org^3`, `rust-lang.org>=1.56`, ... (+1 more)
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const onefetchPackage = {
    */
   dependencies: [
     'libgit2.org~1.7 # links to libgit2.so.1.7',
-    'cmake.org^3',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

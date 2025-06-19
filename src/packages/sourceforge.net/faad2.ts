@@ -8,7 +8,6 @@
  *
  * @install `launchpad install faad`
  * @aliases `faad`
- * @dependencies `cmake.org`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -57,17 +56,7 @@ export const faadPackage = {
     'faad',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
-    'gnu.org/gcc',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

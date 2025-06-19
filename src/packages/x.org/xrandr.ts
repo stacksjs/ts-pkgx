@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xrandr -- $SHELL -i`
- * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`, ... (+3 more)
+ * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -52,8 +52,6 @@ export const xorgxrandrPackage = {
     'x.org/protocol',
     'x.org/exts',
     'x.org/xrender',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

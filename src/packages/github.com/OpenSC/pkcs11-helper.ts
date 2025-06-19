@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/OpenSC/pkcs11-helper -- $SHELL -i`
- * @dependencies `openssl.org^3.1.0`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+3 more)
+ * @dependencies `openssl.org^3.1.0`
  *
  * @example
  * ```typescript
@@ -50,11 +50,6 @@ export const githubcomopenscpkcs11helperPackage = {
    */
   dependencies: [
     'openssl.org^3.1.0',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

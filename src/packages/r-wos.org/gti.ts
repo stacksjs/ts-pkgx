@@ -8,7 +8,6 @@
  *
  * @install `launchpad install gti`
  * @name `gti`
- * @dependencies `git-scm.org^2`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const gtiPackage = {
     'gti',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'git-scm.org^2',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

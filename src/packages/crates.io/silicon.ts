@@ -8,7 +8,7 @@
  *
  * @install `launchpad install silicon`
  * @name `silicon`
- * @dependencies `harfbuzz.org^5`, `freedesktop.org/fontconfig`, `freetype.org`, ... (+4 more)
+ * @dependencies `harfbuzz.org^5`, `linux:freedesktop.org/fontconfig`, `linux:freetype.org`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,15 +60,13 @@ export const siliconPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'harfbuzz.org^5',
-    'freedesktop.org/fontconfig',
-    'freetype.org',
-    'x.org/xcb',
-    'rust-lang.org>=1.65',
-    'rust-lang.org/cargo',
-    'cmake.org^3',
+    'linux:freedesktop.org/fontconfig',
+    'linux:freetype.org',
+    'linux:x.org/xcb',
   ] as const,
   /**
    * Available versions from newest to oldest.

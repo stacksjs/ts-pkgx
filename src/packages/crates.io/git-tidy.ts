@@ -8,7 +8,6 @@
  *
  * @install `launchpad install git-tidy`
  * @name `git-tidy`
- * @dependencies `rust-lang.org>=1.56`, `rust-lang.org/cargo`, `git-scm.org`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const gittidyPackage = {
     'git-tidy',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
-    'git-scm.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

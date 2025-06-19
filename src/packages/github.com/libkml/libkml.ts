@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/libkml/libkml -- $SHELL -i`
- * @dependencies `zlib.net/minizip^1.3`, `uriparser.github.io^0.9`, `curl.se^8`, ... (+5 more)
+ * @dependencies `zlib.net/minizip^1.3`, `uriparser.github.io^0.9`, `curl.se^8`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -54,9 +54,6 @@ export const githubcomlibkmllibkmlPackage = {
     'curl.se^8',
     'libexpat.github.io^2.5',
     'boost.org>=1.81',
-    'cmake.org',
-    'google.com/googletest',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

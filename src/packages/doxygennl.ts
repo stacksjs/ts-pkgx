@@ -8,7 +8,6 @@
  *
  * @install `launchpad install doxygen`
  * @aliases `doxygen`
- * @dependencies `gnu.org/bison^3`, `cmake.org^3`, `github.com/westes/flex@2`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -57,16 +56,7 @@ export const doxygenPackage = {
     'doxygen',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/bison^3',
-    'cmake.org^3',
-    'github.com/westes/flex@2',
-    'python.org>=3<3.12',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

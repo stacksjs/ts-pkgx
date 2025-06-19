@@ -8,7 +8,6 @@
  *
  * @install `launchpad install mamba`
  * @name `mamba`
- * @dependencies `aria2.github.io@1.36`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const mambaPackage = {
     'mamba',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'aria2.github.io@1.36',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

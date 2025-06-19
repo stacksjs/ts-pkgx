@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +unbound.net -- $SHELL -i`
  * @aliases `unbound`
- * @dependencies `openssl.org^1`, `libexpat.github.io`, `github.com/westes/flex`, ... (+1 more)
+ * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
@@ -68,9 +68,6 @@ export const unboundPackage = {
    */
   dependencies: [
     'openssl.org^1',
-    'libexpat.github.io',
-    'github.com/westes/flex',
-    'gnu.org/bison^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install qsv`
  * @name `qsv`
- * @dependencies `wayland.freedesktop.org`, `rust-lang.org>=1.85`, `rust-lang.org/cargo^0.86 # edition2024`, ... (+2 more)
+ * @dependencies `linux:wayland.freedesktop.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,13 +60,10 @@ export const qsvPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'wayland.freedesktop.org',
-    'rust-lang.org>=1.85',
-    'rust-lang.org/cargo^0.86 # edition2024',
-    'cmake.org^3',
-    'python.org>=3.8',
+    'linux:wayland.freedesktop.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

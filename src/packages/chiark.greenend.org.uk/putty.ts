@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +chiark.greenend.org.uk/putty -- $SHELL -i`
- * @dependencies `cmake.org`, `chiark.greenend.org.uk/halibut`, `freedesktop.org/pkg-config`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -57,16 +56,7 @@ export const chiarkgreenendorgukputtyPackage = {
     'puttygen',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'chiark.greenend.org.uk/halibut',
-    'freedesktop.org/pkg-config',
-    'perl.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

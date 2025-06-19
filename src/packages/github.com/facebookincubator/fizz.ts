@@ -8,7 +8,7 @@
  *
  * @install `launchpad install fizz`
  * @name `fizz`
- * @dependencies `boost.org`, `google.com/double-conversion^3`, `fmt.dev^10`, ... (+15 more)
+ * @dependencies `boost.org`, `google.com/double-conversion^3`, `fmt.dev^10`, ... (+12 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,6 +60,7 @@ export const fizzPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'boost.org',
@@ -76,10 +77,7 @@ export const fizzPackage = {
     'facebook.com/zstd@1',
     'sourceware.org/bzip2@1',
     'zlib.net^1',
-    'gnu.org/gcc/libstdcxx@13',
-    'cmake.org^3',
-    'ninja-build.org^1',
-    'gnu.org/gcc@13',
+    'linux:gnu.org/gcc/libstdcxx@13',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install snaplet`
  * @aliases `snaplet`
- * @dependencies `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`, `npmjs.com`, `python.org^3 # node-gyp needs python to build`
+ * @dependencies `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`
  *
  * @example
  * ```typescript
@@ -62,8 +62,6 @@ export const snapletPackage = {
    */
   dependencies: [
     'nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20',
-    'npmjs.com',
-    'python.org^3 # node-gyp needs python to build',
   ] as const,
   /**
    * Available versions from newest to oldest.

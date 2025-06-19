@@ -8,7 +8,7 @@
  *
  * @install `launchpad install wails`
  * @aliases `wails`
- * @dependencies `go.dev^1.18`, `npmjs.com`, `gnu.org/gcc`, ... (+2 more)
+ * @dependencies `go.dev^1.18`, `npmjs.com`, `linux:gnu.org/gcc`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,13 +60,14 @@ export const wailsPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'go.dev^1.18',
     'npmjs.com',
-    'gnu.org/gcc',
-    'gtk.org/gtk3',
-    'freedesktop.org/pkg-config',
+    'linux:gnu.org/gcc',
+    'linux:gtk.org/gtk3',
+    'linux:freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

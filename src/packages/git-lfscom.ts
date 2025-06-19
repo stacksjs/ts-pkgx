@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git-lfs`
  * @aliases `git-lfs`
- * @dependencies `git-scm.org`, `gnu.org/wget`
+ * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const gitlfsPackage = {
    */
   dependencies: [
     'git-scm.org',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

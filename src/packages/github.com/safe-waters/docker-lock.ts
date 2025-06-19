@@ -8,7 +8,7 @@
  *
  * @install `launchpad install docker-lock`
  * @name `docker-lock`
- * @dependencies `docker.com/cli`, `curl.se/ca-certs`, `go.dev^1.19`
+ * @dependencies `docker.com/cli`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const dockerlockPackage = {
   dependencies: [
     'docker.com/cli',
     'curl.se/ca-certs',
-    'go.dev^1.19',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +libraw.org -- $SHELL -i`
- * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `littlecms.com`, ... (+11 more)
+ * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `littlecms.com`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -65,22 +65,14 @@ export const libraworgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'github.com/jasper-software/jasper',
     'libjpeg-turbo.org',
     'littlecms.com',
     'zlib.net',
-    'openmp.llvm.org',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
-    'llvm.org',
-    'gnu.org/gcc',
-    'gnu.org/gcc',
-    'gnu.org/wget',
-    'freedesktop.org/pkg-config',
+    'darwin:openmp.llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

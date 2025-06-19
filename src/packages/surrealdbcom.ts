@@ -8,7 +8,7 @@
  *
  * @install `launchpad install surreal`
  * @aliases `surreal`
- * @dependencies `openssl.org^1`, `rust-lang.org>=1.60`, `rust-lang.org/cargo`, ... (+2 more)
+ * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
@@ -63,10 +63,6 @@ export const surrealPackage = {
    */
   dependencies: [
     'openssl.org^1',
-    'rust-lang.org>=1.60',
-    'rust-lang.org/cargo',
-    'freedesktop.org/pkg-config^0.29',
-    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

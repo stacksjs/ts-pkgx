@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gflags.github.io -- $SHELL -i`
- * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
@@ -44,13 +43,7 @@ export const gflagsgithubioPackage = {
   installCommand: 'launchpad install +gflags.github.io -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

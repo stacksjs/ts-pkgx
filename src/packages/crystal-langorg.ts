@@ -8,7 +8,7 @@
  *
  * @install `launchpad install crystal`
  * @aliases `crystal`
- * @dependencies `hboehm.info/gc^8`, `gnu.org/gmp^6`, `libevent.org^2`, ... (+9 more)
+ * @dependencies `hboehm.info/gc^8`, `gnu.org/gmp^6`, `libevent.org^2`, ... (+7 more)
  * @companions `crystal-lang.org/shards`
  *
  * @example
@@ -79,8 +79,6 @@ export const crystalPackage = {
     'freedesktop.org/pkg-config^0',
     'sourceware.org/libffi^3',
     'invisible-island.net/ncurses^6',
-    'curl.se',
-    'gnu.org/binutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

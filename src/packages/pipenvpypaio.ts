@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pipenv`
  * @aliases `pipenv`
- * @dependencies `pkgx.sh^1`, `python.org~3.11 # approx. 3 older versions won’t work with python 3.12`, `crates.io/semverator`
+ * @dependencies `pkgx.sh^1`
  * @companions `pip.pypa.io`
  *
  * @example
@@ -70,8 +70,6 @@ export const pipenvPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.11 # approx. 3 older versions won’t work with python 3.12',
-    'crates.io/semverator',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +libvips.org -- $SHELL -i`
  * @aliases `vips`
- * @dependencies `mozilla.org/mozjpeg`, `cairographics.org`, `heasarc.gsfc.nasa.gov/cfitsio`, ... (+27 more)
+ * @dependencies `mozilla.org/mozjpeg`, `cairographics.org`, `heasarc.gsfc.nasa.gov/cfitsio`, ... (+24 more)
  *
  * @example
  * ```typescript
@@ -93,9 +93,6 @@ export const vipsPackage = {
     'google.com/webp',
     'libexpat.github.io',
     'zlib.net',
-    'gnome.org/gobject-introspection',
-    'mesonbuild.com',
-    'ninja-build.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

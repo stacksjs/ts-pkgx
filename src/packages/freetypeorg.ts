@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freetype.org -- $SHELL -i`
- * @dependencies `libpng.org@1`, `zlib.net@1`, `sourceware.org/bzip2@1`, ... (+3 more)
+ * @dependencies `libpng.org@1`, `zlib.net@1`, `sourceware.org/bzip2@1`
  *
  * @example
  * ```typescript
@@ -51,9 +51,6 @@ export const freetypeorgPackage = {
     'libpng.org@1',
     'zlib.net@1',
     'sourceware.org/bzip2@1',
-    'freedesktop.org/pkg-config^0.29',
-    'cmake.org',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

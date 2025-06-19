@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/atk -- $SHELL -i`
- * @dependencies `gnome.org/glib@2`, `mesonbuild.com^0.63`, `ninja-build.org@1`, ... (+4 more)
+ * @dependencies `gnome.org/glib@2`
  *
  * @example
  * ```typescript
@@ -49,12 +49,6 @@ export const gnomeorgatkPackage = {
    */
   dependencies: [
     'gnome.org/glib@2',
-    'mesonbuild.com^0.63',
-    'ninja-build.org@1',
-    'freedesktop.org/pkg-config^0.29',
-    'gnu.org/gettext^0.21',
-    'gnome.org/gobject-introspection@1',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

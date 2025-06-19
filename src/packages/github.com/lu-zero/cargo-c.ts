@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/lu-zero/cargo-c -- $SHELL -i`
  * @name `cargo-c`
- * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `libssh2.org`, `openssl.org^1.1`, ... (+4 more)
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `libssh2.org`, `openssl.org^1.1`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -69,9 +69,6 @@ export const cargocPackage = {
     'libssh2.org',
     'openssl.org^1.1',
     'zlib.net',
-    'rust-lang.org^1.70',
-    'rust-lang.org/cargo',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

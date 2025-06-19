@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +qt.io -- $SHELL -i`
- * @dependencies `freetype.org`, `gnome.org/glib`, `libjpeg-turbo.org`, ... (+47 more)
+ * @dependencies `freetype.org`, `gnome.org/glib`, `libjpeg-turbo.org`, ... (+37 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -96,6 +96,7 @@ export const qtioPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'freetype.org',
@@ -110,44 +111,34 @@ export const qtioPackage = {
     'gnome.org/libxslt',
     'sqlite.org',
     'unicode.org^71',
-    'alsa-project.org/alsa-lib',
-    'freedesktop.org/fontconfig',
-    'harfbuzz.org',
-    'unicode.org~71',
-    'dri.freedesktop.org',
-    'libevent.org',
-    'x.org/ice',
-    'x.org/sm',
-    'webmproject.org/libvpx',
-    'x.org/xcomposite',
-    'xkbcommon.org~1.5',
-    'x.org/xkbfile',
-    'x.org/xrandr',
-    'x.org/xtst',
-    'mesa3d.org',
-    'zlib.net/minizip',
-    'mozilla.org/nss',
-    'opus-codec.org',
-    'libsdl.org',
-    'google.github.io/snappy',
-    'systemd.io',
-    'wayland.freedesktop.org',
-    'freedesktop.org/xcb-util',
-    'freedesktop.org/xcb-util-image',
-    'freedesktop.org/xcb-util-keysyms',
-    'freedesktop.org/xcb-util-renderutil',
-    'freedesktop.org/xcb-util-wm',
-    'facebook.com/zstd',
-    'nodejs.org',
-    'freedesktop.org/pkg-config',
-    'python.org>=2.7',
-    'gnu.org/gperf',
-    'perl.org>=5.12',
-    'ruby-lang.org>=1.9.3',
-    'llvm.org<16',
-    'gnu.org/make',
-    'llvm.org',
-    'gnu.org/make',
+    'linux:alsa-project.org/alsa-lib',
+    'linux:freedesktop.org/fontconfig',
+    'linux:harfbuzz.org',
+    'linux:unicode.org~71',
+    'linux:dri.freedesktop.org',
+    'linux:libevent.org',
+    'linux:x.org/ice',
+    'linux:x.org/sm',
+    'linux:webmproject.org/libvpx',
+    'linux:x.org/xcomposite',
+    'linux:xkbcommon.org~1.5',
+    'linux:x.org/xkbfile',
+    'linux:x.org/xrandr',
+    'linux:x.org/xtst',
+    'linux:mesa3d.org',
+    'linux:zlib.net/minizip',
+    'linux:mozilla.org/nss',
+    'linux:opus-codec.org',
+    'linux:libsdl.org',
+    'linux:google.github.io/snappy',
+    'linux:systemd.io',
+    'linux:wayland.freedesktop.org',
+    'linux:freedesktop.org/xcb-util',
+    'linux:freedesktop.org/xcb-util-image',
+    'linux:freedesktop.org/xcb-util-keysyms',
+    'linux:freedesktop.org/xcb-util-renderutil',
+    'linux:freedesktop.org/xcb-util-wm',
+    'linux:facebook.com/zstd',
   ] as const,
   /**
    * Available versions from newest to oldest.

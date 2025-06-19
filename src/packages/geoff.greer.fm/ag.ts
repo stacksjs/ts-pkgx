@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ag`
  * @name `ag`
- * @dependencies `pcre.org^8`, `tukaani.org/xz^5.4.5`, `gnu.org/autoconf`, ... (+2 more)
+ * @dependencies `pcre.org^8`, `tukaani.org/xz^5.4.5`
  *
  * @example
  * ```typescript
@@ -64,9 +64,6 @@ export const agPackage = {
   dependencies: [
     'pcre.org^8',
     'tukaani.org/xz^5.4.5',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

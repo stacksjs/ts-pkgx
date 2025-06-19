@@ -8,7 +8,7 @@
  *
  * @install `launchpad install protoc-gen-jsonschema`
  * @name `protoc-gen-jsonschema`
- * @dependencies `protobuf.dev`, `go.dev^1.11`, `perl.org^5`
+ * @dependencies `protobuf.dev`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const protocgenjsonschemaPackage = {
    */
   dependencies: [
     'protobuf.dev',
-    'go.dev^1.11',
-    'perl.org^5',
   ] as const,
   /**
    * Available versions from newest to oldest.

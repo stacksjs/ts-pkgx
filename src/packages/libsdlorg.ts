@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +libsdl.org -- $SHELL -i`
- * @dependencies `x.org/x11`, `x.org/xcursor`, `x.org/xi`, ... (+9 more)
+ * @dependencies `linux:x.org/x11`, `linux:x.org/xcursor`, `linux:x.org/xi`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,20 +47,17 @@ export const libsdlorgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'x.org/x11',
-    'x.org/xcursor',
-    'x.org/xi',
-    'x.org/xrandr',
-    'x.org/xfixes',
-    'x.org/xrender',
-    'x.org/xscrnsaver',
-    'x.org/exts',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool@2',
-    'cmake.org^3',
+    'linux:x.org/x11',
+    'linux:x.org/xcursor',
+    'linux:x.org/xi',
+    'linux:x.org/xrandr',
+    'linux:x.org/xfixes',
+    'linux:x.org/xrender',
+    'linux:x.org/xscrnsaver',
+    'linux:x.org/exts',
   ] as const,
   /**
    * Available versions from newest to oldest.

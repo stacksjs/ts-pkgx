@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +lavinmq.com -- $SHELL -i`
  * @aliases `lavinmq`
- * @dependencies `openssl.org^1.1`, `pcre.org/v2@10`, `libevent.org@2`, ... (+6 more)
+ * @dependencies `openssl.org^1.1`, `pcre.org/v2@10`, `libevent.org@2`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -68,11 +68,6 @@ export const lavinmqPackage = {
     'pcre.org/v2@10',
     'libevent.org@2',
     'hboehm.info/gc@8',
-    'crystal-lang.org~1.16 # since 2.4.0',
-    'crystal-lang.org/shards',
-    'lz4.org^1',
-    'gnu.org/help2man',
-    'etcd.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

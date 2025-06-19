@@ -8,7 +8,7 @@
  *
  * @install `launchpad install lux`
  * @name `lux`
- * @dependencies `ffmpeg.org`, `go.dev^1.21`
+ * @dependencies `ffmpeg.org`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const luxPackage = {
    */
   dependencies: [
     'ffmpeg.org',
-    'go.dev^1.21',
   ] as const,
   /**
    * Available versions from newest to oldest.

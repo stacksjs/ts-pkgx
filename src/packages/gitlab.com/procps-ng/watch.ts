@@ -8,7 +8,7 @@
  *
  * @install `launchpad install watch`
  * @name `watch`
- * @dependencies `invisible-island.net/ncurses>=6.0`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+3 more)
+ * @dependencies `invisible-island.net/ncurses>=6.0`
  *
  * @example
  * ```typescript
@@ -62,11 +62,6 @@ export const watchPackage = {
    */
   dependencies: [
     'invisible-island.net/ncurses>=6.0',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/gettext',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

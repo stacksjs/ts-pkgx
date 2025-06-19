@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/fastfetch-cli/fastfetch -- $SHELL -i`
- * @dependencies `cmake.org^3`, `gnome.org/glib^2`, `imagemagick.org^7`, ... (+13 more)
  *
  * @example
  * ```typescript
@@ -53,28 +52,7 @@ export const githubcomfastfetchclifastfetchPackage = {
     'flashfetch',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org^3',
-    'gnome.org/glib^2',
-    'imagemagick.org^7',
-    'python.org~3.12',
-    'github.com/KhronosGroup/Vulkan-Loader^1',
-    'sqlite.org^3',
-    'zlib.net^1',
-    'freedesktop.org/dbus^1',
-    'elfutils.org^0',
-    'x.org/x11^1',
-    'x.org/xcb^1',
-    'x.org/xrandr^1',
-    'kernel.org/linux-headers^5',
-    'mesa3d.org^24',
-    'khronos.org/opencl-headers^2024',
-    'wayland.freedesktop.org^1',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +gnome.org/libxml2 -- $SHELL -i`
  * @aliases `xml`
- * @dependencies `zlib.net^1`, `python.org>=3<3.12`, `python.org>=3<3.12`
+ * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
@@ -65,8 +65,6 @@ export const xmlPackage = {
    */
   dependencies: [
     'zlib.net^1',
-    'python.org>=3<3.12',
-    'python.org>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

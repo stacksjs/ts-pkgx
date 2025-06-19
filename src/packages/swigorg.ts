@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +swig.org -- $SHELL -i`
- * @dependencies `pcre.org/v2`, `ruby-lang.org^3`
+ * @dependencies `pcre.org/v2`
  *
  * @example
  * ```typescript
@@ -59,7 +59,6 @@ export const swigorgPackage = {
    */
   dependencies: [
     'pcre.org/v2',
-    'ruby-lang.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

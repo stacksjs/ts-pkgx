@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +haskell.org -- $SHELL -i`
- * @dependencies `gnu.org/gmp@6`, `invisible-island.net/ncurses@6`, `sourceware.org/libffi@3`, ... (+4 more)
+ * @dependencies `gnu.org/gmp@6`, `invisible-island.net/ncurses@6`, `sourceware.org/libffi@3`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -82,15 +82,14 @@ export const haskellorgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnu.org/gmp@6',
     'invisible-island.net/ncurses@6',
     'sourceware.org/libffi@3',
-    'github.com/numactl/numactl^2',
-    'gnu.org/gcc',
-    'curl.se',
-    'gnu.org/make',
+    'linux:github.com/numactl/numactl^2',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

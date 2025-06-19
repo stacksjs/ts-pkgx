@@ -8,7 +8,6 @@
  *
  * @install `launchpad install apu-{{ version.major }}-config`
  * @aliases `apu-{{`
- * @dependencies `apache.org/apr`, `openssl.org`, `libexpat.github.io`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -57,16 +56,7 @@ export const apuPackage = {
     'apu-{{ version.major }}-config',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'apache.org/apr',
-    'openssl.org',
-    'libexpat.github.io',
-    'sqlite.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

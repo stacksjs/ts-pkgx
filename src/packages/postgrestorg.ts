@@ -8,7 +8,7 @@
  *
  * @install `launchpad install postgrest`
  * @aliases `postgrest`
- * @dependencies `postgresql.org/libpq@17`, `zlib.net~1.3`, `gnu.org/gcc/libstdcxx@14`, ... (+5 more)
+ * @dependencies `postgresql.org/libpq@17`, `zlib.net~1.3`, `gnu.org/gcc/libstdcxx@14`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,10 +66,6 @@ export const postgrestPackage = {
     'zlib.net~1.3',
     'gnu.org/gcc/libstdcxx@14',
     'gnome.org/libxml2~2.13 # 2.14 changes library api version',
-    'haskell.org~9.8',
-    'haskell.org/cabal^3',
-    'gnu.org/gcc',
-    'gnu.org/binutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

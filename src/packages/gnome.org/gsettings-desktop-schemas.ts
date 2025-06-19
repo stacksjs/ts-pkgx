@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/gsettings-desktop-schemas -- $SHELL -i`
- * @dependencies `gnome.org/glib`, `libexpat.github.io`, `gnome.org/gobject-introspection`, ... (+5 more)
+ * @dependencies `gnome.org/glib`, `libexpat.github.io`
  *
  * @example
  * ```typescript
@@ -50,12 +50,6 @@ export const gnomeorggsettingsdesktopschemasPackage = {
   dependencies: [
     'gnome.org/glib',
     'libexpat.github.io',
-    'gnome.org/gobject-introspection',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'python.org~3.11',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +gnome.org/gdk-pixbuf -- $SHELL -i`
  * @name `gdk-pixbuf`
- * @dependencies `ijg.org^9.6 # needs fixed major; sadly this includes the character > v9f`, `gnome.org/glib@2`, `libpng.org@1`, ... (+7 more)
+ * @dependencies `ijg.org^9.6 # needs fixed major; sadly this includes the character > v9f`, `gnome.org/glib@2`, `libpng.org@1`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -69,12 +69,6 @@ export const gdkpixbufPackage = {
     'gnome.org/glib@2',
     'libpng.org@1',
     'freedesktop.org/shared-mime-info^2 #FIXME only on Linux',
-    'mesonbuild.com^1 # since 2.43.2',
-    'ninja-build.org@1',
-    'freedesktop.org/pkg-config^0.29',
-    'gnome.org/gobject-introspection@1',
-    'python.org>=3<3.12',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

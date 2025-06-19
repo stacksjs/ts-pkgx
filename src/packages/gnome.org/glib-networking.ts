@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/glib-networking -- $SHELL -i`
- * @dependencies `gnome.org/glib`, `gnutls.org`, `gnome.org/gsettings-desktop-schemas`, ... (+5 more)
+ * @dependencies `gnome.org/glib`, `gnutls.org`, `gnome.org/gsettings-desktop-schemas`
  *
  * @example
  * ```typescript
@@ -51,11 +51,6 @@ export const gnomeorgglibnetworkingPackage = {
     'gnome.org/glib',
     'gnutls.org',
     'gnome.org/gsettings-desktop-schemas',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'llvm.org',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

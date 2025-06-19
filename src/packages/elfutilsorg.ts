@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +elfutils.org -- $SHELL -i`
- * @dependencies `sourceware.org/bzip2`, `tukaani.org/xz`, `zlib.net`, ... (+3 more)
+ * @dependencies `sourceware.org/bzip2`, `tukaani.org/xz`, `zlib.net`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -69,14 +69,14 @@ export const elfutilsorgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'sourceware.org/bzip2',
     'tukaani.org/xz',
     'zlib.net',
     'facebook.com/zstd',
-    'kernel.org/linux-headers',
-    'gnu.org/m4',
+    'linux:kernel.org/linux-headers',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/libmicrohttpd -- $SHELL -i`
- * @dependencies `gnu.org/libunistring^1`, `curl.se`
+ * @dependencies `gnu.org/libunistring^1`
  *
  * @example
  * ```typescript
@@ -49,7 +49,6 @@ export const gnuorglibmicrohttpdPackage = {
    */
   dependencies: [
     'gnu.org/libunistring^1',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

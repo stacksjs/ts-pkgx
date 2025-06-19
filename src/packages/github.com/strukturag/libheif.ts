@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/strukturag/libheif -- $SHELL -i`
  * @aliases `heif`
- * @dependencies `aomedia.googlesource.com/aom`, `libjpeg-turbo.org`, `github.com/strukturag/libde265`, ... (+7 more)
+ * @dependencies `aomedia.googlesource.com/aom`, `libjpeg-turbo.org`, `github.com/strukturag/libde265`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -62,6 +62,7 @@ export const heifPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'aomedia.googlesource.com/aom',
@@ -70,10 +71,7 @@ export const heifPackage = {
     'libpng.org',
     'freedesktop.org/shared-mime-info',
     'videolan.org/x265@3.2',
-    'gnu.org/gcc/libstdcxx@14',
-    'cmake.org',
-    'gnu.org/gcc@14',
-    'freedesktop.org/pkg-config',
+    'linux:gnu.org/gcc/libstdcxx@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

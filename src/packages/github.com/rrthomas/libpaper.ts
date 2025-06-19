@@ -8,7 +8,6 @@
  *
  * @install `launchpad install paper`
  * @aliases `paper`
- * @dependencies `gnu.org/make`, `gnu.org/help2man`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const paperPackage = {
     'paper',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/make',
-    'gnu.org/help2man',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

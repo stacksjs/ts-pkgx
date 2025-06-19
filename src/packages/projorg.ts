@@ -8,7 +8,7 @@
  *
  * @install `launchpad install proj`
  * @aliases `proj`
- * @dependencies `simplesystems.org/libtiff`, `sqlite.org`, `curl.se`, ... (+6 more)
+ * @dependencies `simplesystems.org/libtiff`, `sqlite.org`, `curl.se`
  *
  * @example
  * ```typescript
@@ -65,12 +65,6 @@ export const projPackage = {
     'simplesystems.org/libtiff',
     'sqlite.org',
     'curl.se',
-    'cmake.org',
-    'freedesktop.org/pkg-config',
-    'gnu.org/libtool',
-    'gnu.org/wget',
-    'gnu.org/coreutils',
-    'sqlite.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

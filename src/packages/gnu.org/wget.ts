@@ -8,7 +8,7 @@
  *
  * @install `launchpad install wget`
  * @name `wget`
- * @dependencies `openssl.org^1.1`, `freedesktop.org/pkg-config^0.29`
+ * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const wgetPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

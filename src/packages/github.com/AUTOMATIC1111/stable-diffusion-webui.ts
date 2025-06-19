@@ -9,7 +9,7 @@
  * @install `launchpad install stable-diffusion-webui`
  * @name `stable-diffusion-webui`
  * @aliases `Stable Diffusion web UI`
- * @dependencies `python.org~3.10`, `tea.xyz^0  # our scripts use tea/cli`, `git-scm.org^2`, ... (+5 more)
+ * @dependencies `python.org~3.10`, `tea.xyz^0  # our scripts use tea/cli`, `git-scm.org^2`
  *
  * @example
  * ```typescript
@@ -66,11 +66,6 @@ export const stablediffusionwebuiPackage = {
     'python.org~3.10',
     'tea.xyz^0  # our scripts use tea/cli',
     'git-scm.org^2',
-    'google.com/webp',
-    'pip.pypa.io',
-    'gnu.org/wget',
-    'protobuf.dev>=21',
-    'rust-lang.org^1  # docs say this is needed but I’m not convinced…',
   ] as const,
   /**
    * Available versions from newest to oldest.

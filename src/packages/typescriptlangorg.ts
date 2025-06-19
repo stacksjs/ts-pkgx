@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tsc`
  * @aliases `tsc`
- * @dependencies `nodejs.org^20`, `npmjs.com`
+ * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const tscPackage = {
    */
   dependencies: [
     'nodejs.org^20',
-    'npmjs.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install litecli`
  * @aliases `litecli`
- * @dependencies `pkgx.sh^1`, `sqlite.org^3.45`, `python.org~3.12`
+ * @dependencies `pkgx.sh^1`, `sqlite.org^3.45`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const litecliPackage = {
   dependencies: [
     'pkgx.sh^1',
     'sqlite.org^3.45',
-    'python.org~3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

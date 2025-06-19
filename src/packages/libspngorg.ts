@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +libspng.org -- $SHELL -i`
- * @dependencies `zlib.net`, `ninja-build.org@1`, `freedesktop.org/pkg-config`, ... (+1 more)
+ * @dependencies `darwin:zlib.net` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,12 +47,10 @@ export const libspngorgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'zlib.net',
-    'ninja-build.org@1',
-    'freedesktop.org/pkg-config',
-    'mesonbuild.com',
+    'darwin:zlib.net',
   ] as const,
   /**
    * Available versions from newest to oldest.

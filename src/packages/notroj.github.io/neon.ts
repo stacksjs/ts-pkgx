@@ -8,7 +8,7 @@
  *
  * @install `launchpad install neon-config`
  * @aliases `neon-config`
- * @dependencies `openssl.org`, `gnu.org/make`, `freedesktop.org/pkg-config`, ... (+1 more)
+ * @dependencies `openssl.org`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const neonconfigPackage = {
    */
   dependencies: [
     'openssl.org',
-    'gnu.org/make',
-    'freedesktop.org/pkg-config',
-    'pagure.io/xmlto',
   ] as const,
   /**
    * Available versions from newest to oldest.

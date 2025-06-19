@@ -8,7 +8,7 @@
  *
  * @install `launchpad install symfony`
  * @aliases `symfony`
- * @dependencies `php.net`, `gnu.org/wget`
+ * @dependencies `php.net`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const symfonyPackage = {
    */
   dependencies: [
     'php.net',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

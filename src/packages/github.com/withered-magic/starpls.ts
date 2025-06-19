@@ -8,7 +8,6 @@
  *
  * @install `launchpad install starpls`
  * @name `starpls`
- * @dependencies `github.com/bazelbuild/bazelisk`, `github.com/bazelbuild/bazelisk`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const starplsPackage = {
     'starpls',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'github.com/bazelbuild/bazelisk',
-    'github.com/bazelbuild/bazelisk',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

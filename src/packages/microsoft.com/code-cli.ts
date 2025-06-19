@@ -8,7 +8,7 @@
  *
  * @install `launchpad install code`
  * @aliases `code`, `vscode cli`
- * @dependencies `openssl.org@1.1`, `zlib.net@1`, `rust-lang.org^1.81`, ... (+1 more)
+ * @dependencies `openssl.org@1.1`, `zlib.net@1`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const codePackage = {
   dependencies: [
     'openssl.org@1.1',
     'zlib.net@1',
-    'rust-lang.org^1.81',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

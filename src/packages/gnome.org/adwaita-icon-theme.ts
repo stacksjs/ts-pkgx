@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/adwaita-icon-theme -- $SHELL -i`
- * @dependencies `gnu.org/gettext`, `gtk.org/gtk4`, `freedesktop.org/intltool`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -43,18 +42,7 @@ export const gnomeorgadwaitaiconthemePackage = {
   installCommand: 'launchpad install +gnome.org/adwaita-icon-theme -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/gettext',
-    'gtk.org/gtk4',
-    'freedesktop.org/intltool',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

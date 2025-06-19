@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tldr`
  * @aliases `tldr`
- * @dependencies `sourceware.org/bzip2^1`, `libzip.org^1.9.2`, `curl.se`
+ * @dependencies `linux:sourceware.org/bzip2^1`, `curl.se` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,10 +60,10 @@ export const tldrPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'sourceware.org/bzip2^1',
-    'libzip.org^1.9.2',
+    'linux:sourceware.org/bzip2^1',
     'curl.se',
   ] as const,
   /**

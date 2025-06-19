@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +srtalliance.org -- $SHELL -i`
  * @aliases `srt`
- * @dependencies `openssl.org`, `cmake.org`, `freedesktop.org/pkg-config`, ... (+1 more)
+ * @dependencies `openssl.org`
  *
  * @example
  * ```typescript
@@ -66,9 +66,6 @@ export const srtPackage = {
    */
   dependencies: [
     'openssl.org',
-    'cmake.org',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

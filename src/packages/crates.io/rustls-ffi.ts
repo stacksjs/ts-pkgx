@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +crates.io/rustls-ffi -- $SHELL -i`
- * @dependencies `rust-lang.org^1.65`, `rust-lang.org/cargo`, `mozilla.org/cbindgen`, ... (+2 more)
  * @companions `curl.se/ca-certs`
  *
  * @example
@@ -51,17 +50,7 @@ export const cratesiorustlsffiPackage = {
   companions: [
     'curl.se/ca-certs',
   ] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org^1.65',
-    'rust-lang.org/cargo',
-    'mozilla.org/cbindgen',
-    'github.com/lu-zero/cargo-c',
-    'curl.se',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

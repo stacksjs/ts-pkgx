@@ -8,7 +8,6 @@
  *
  * @install `launchpad install hasura`
  * @aliases `hasura`
- * @dependencies `go.dev^1.16`, `npmjs.com^8.19.4`, `gnu.org/coreutils`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -57,16 +56,7 @@ export const hasuraPackage = {
     'hasura',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev^1.16',
-    'npmjs.com^8.19.4',
-    'gnu.org/coreutils',
-    'nodejs.org^18  # fails with ^20',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

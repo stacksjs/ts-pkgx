@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +opus-codec.org -- $SHELL -i`
- * @dependencies `gnu.org/autoconf@2`, `gnu.org/automake@1.16`, `gnu.org/libtool@2.4`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -44,16 +43,7 @@ export const opuscodecorgPackage = {
   installCommand: 'launchpad install +opus-codec.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/autoconf@2',
-    'gnu.org/automake@1.16',
-    'gnu.org/libtool@2.4',
-    'gnu.org/wget',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

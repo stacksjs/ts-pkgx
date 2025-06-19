@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xv -- $SHELL -i`
- * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`, ... (+3 more)
+ * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`
  *
  * @example
  * ```typescript
@@ -51,9 +51,6 @@ export const xorgxvPackage = {
     'x.org/x11',
     'x.org/protocol',
     'x.org/exts',
-    'freedesktop.org/pkg-config',
-    'x.org/util-macros',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

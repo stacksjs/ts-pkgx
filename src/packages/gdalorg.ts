@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gdal.org -- $SHELL -i`
- * @dependencies `apache.org/arrow`, `heasarc.gsfc.nasa.gov/cfitsio`, `epsilon-project.sourceforge.io`, ... (+47 more)
+ * @dependencies `apache.org/arrow`, `heasarc.gsfc.nasa.gov/cfitsio`, `epsilon-project.sourceforge.io`, ... (+42 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -82,6 +82,7 @@ export const gdalorgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'apache.org/arrow',
@@ -126,14 +127,9 @@ export const gdalorgPackage = {
     'zlib.net',
     'dkrz.de/libaec',
     'github.com/ebiggers/libdeflate',
-    'curl.se',
-    'github.com/util-linux/util-linux',
-    'apache.org/thrift=0.21.0 # since 3.10.0',
-    'boost.org',
-    'cmake.org',
-    'swig.org',
-    'doxygen.nl',
-    'llvm.org',
+    'linux:curl.se',
+    'linux:github.com/util-linux/util-linux',
+    'linux:apache.org/thrift=0.21.0 # since 3.10.0',
   ] as const,
   /**
    * Available versions from newest to oldest.

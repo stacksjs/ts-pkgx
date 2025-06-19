@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +getfoundry.sh -- $SHELL -i`
- * @dependencies `git-scm.org^2`, `rust-lang.org^1.74 # edition: 2021`, `rust-lang.org/cargo`
+ * @dependencies `git-scm.org^2`
  *
  * @example
  * ```typescript
@@ -61,8 +61,6 @@ export const getfoundryshPackage = {
    */
   dependencies: [
     'git-scm.org^2',
-    'rust-lang.org^1.74 # edition: 2021',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

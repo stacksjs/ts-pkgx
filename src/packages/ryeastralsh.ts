@@ -8,7 +8,7 @@
  *
  * @install `launchpad install rye`
  * @aliases `rye`
- * @dependencies `curl.se/ca-certs`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const ryePackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

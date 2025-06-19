@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/ggerganov/llama.cpp -- $SHELL -i`
  * @aliases `LLaMA.cpp`
- * @dependencies `pkgx.sh^1`, `curl.se^8 # libcurl, since b5064`, `gnu.org/gcc/libstdcxx`, ... (+6 more)
+ * @dependencies `pkgx.sh^1`, `curl.se^8 # libcurl, since b5064`, `linux:gnu.org/gcc/libstdcxx` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -62,17 +62,12 @@ export const lLaMAcppPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'pkgx.sh^1',
     'curl.se^8 # libcurl, since b5064',
-    'gnu.org/gcc/libstdcxx',
-    'gnu.org/coreutils',
-    'git-scm.org',
-    'python.org~3.11',
-    'cmake.org@3',
-    'gnu.org/gcc',
-    'kernel.org/linux-headers',
+    'linux:gnu.org/gcc/libstdcxx',
   ] as const,
   /**
    * Available versions from newest to oldest.

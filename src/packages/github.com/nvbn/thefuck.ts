@@ -8,7 +8,7 @@
  *
  * @install `launchpad install thefuck`
  * @name `thefuck`
- * @dependencies `python.org~3.11`, `python.org>=3<3.12`
+ * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const thefuckPackage = {
    */
   dependencies: [
     'python.org~3.11',
-    'python.org>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

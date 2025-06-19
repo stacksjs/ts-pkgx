@@ -8,7 +8,7 @@
  *
  * @install `launchpad install versio`
  * @name `versio`
- * @dependencies `openssl.org^1.1`, `gnupg.org/libgpg-error@1`, `gnupg.org/gpgme^1.13`, ... (+5 more)
+ * @dependencies `openssl.org^1.1`, `gnupg.org/libgpg-error@1`, `gnupg.org/gpgme^1.13`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -67,9 +67,6 @@ export const versioPackage = {
     'gnupg.org/gpgme^1.13',
     'gnupg.org/libassuan',
     'zlib.net^1',
-    'rust-lang.org^1.78 # stdsimd changes',
-    'rust-lang.org/cargo',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +littlecms.com -- $SHELL -i`
- * @dependencies `simplesystems.org/libtiff^4`, `libjpeg-turbo.org^2`, `gnu.org/wget`
+ * @dependencies `simplesystems.org/libtiff^4`, `libjpeg-turbo.org^2`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const littlecmscomPackage = {
   dependencies: [
     'simplesystems.org/libtiff^4',
     'libjpeg-turbo.org^2',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

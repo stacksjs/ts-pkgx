@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +openslide.org -- $SHELL -i`
  * @aliases `openslide`
- * @dependencies `cairographics.org`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+8 more)
+ * @dependencies `cairographics.org`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+6 more)
  *
  * @example
  * ```typescript
@@ -73,8 +73,6 @@ export const openslidePackage = {
     'gnome.org/libxml2',
     'openjpeg.org',
     'sqlite.org',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

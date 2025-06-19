@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +macfuse.github.io -- $SHELL -i`
- * @dependencies `mesonbuild.com`, `ninja-build.org`, `git-scm.org^2`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -44,16 +43,7 @@ export const macfusegithubioPackage = {
   installCommand: 'launchpad install +macfuse.github.io -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'mesonbuild.com',
-    'ninja-build.org',
-    'git-scm.org^2',
-    'llvm.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

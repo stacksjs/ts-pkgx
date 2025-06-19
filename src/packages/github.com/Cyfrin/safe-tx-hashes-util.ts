@@ -8,7 +8,7 @@
  *
  * @install `launchpad install safe_hashes`
  * @aliases `safe_hashes`
- * @dependencies `gnu.org/bash>=4`, `gnu.org/gcc/libstdcxx^14 # solc wants GLIBCXX_3.4.26`, `gnu.org/sed`
+ * @dependencies `gnu.org/bash>=4`, `gnu.org/gcc/libstdcxx^14 # solc wants GLIBCXX_3.4.26`
  * @companions `getfoundry.sh`, `stedolan.github.io/jq`, `curl.se`
  *
  * @example
@@ -72,7 +72,6 @@ export const safehashesPackage = {
   dependencies: [
     'gnu.org/bash>=4',
     'gnu.org/gcc/libstdcxx^14 # solc wants GLIBCXX_3.4.26',
-    'gnu.org/sed',
   ] as const,
   /**
    * Available versions from newest to oldest.

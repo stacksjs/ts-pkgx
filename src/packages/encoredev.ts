@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +encore.dev -- $SHELL -i`
- * @dependencies `encore.dev/go^1.21`, `go.dev~1.23.3`
+ * @dependencies `encore.dev/go^1.21`
  *
  * @example
  * ```typescript
@@ -59,7 +59,6 @@ export const encoredevPackage = {
    */
   dependencies: [
     'encore.dev/go^1.21',
-    'go.dev~1.23.3',
   ] as const,
   /**
    * Available versions from newest to oldest.

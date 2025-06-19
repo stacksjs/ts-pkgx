@@ -7,7 +7,7 @@
  *
  * @install `launchpad install +dri.freedesktop.org -- $SHELL -i`
  * @aliases `libdrm`
- * @dependencies `x.org/pciaccess`, `mesonbuild.com`, `ninja-build.org`, ... (+3 more)
+ * @dependencies `x.org/pciaccess`
  *
  * @example
  * ```typescript
@@ -54,11 +54,6 @@ export const libdrmPackage = {
    */
   dependencies: [
     'x.org/pciaccess',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'python.org~3.11',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gts.sourceforge.net -- $SHELL -i`
- * @dependencies `gnome.org/glib>=2.4.0`, `gnu.org/automake`, `gnu.org/autoconf`, ... (+3 more)
+ * @dependencies `gnome.org/glib>=2.4.0`
  *
  * @example
  * ```typescript
@@ -66,11 +66,6 @@ export const gtssourceforgenetPackage = {
    */
   dependencies: [
     'gnome.org/glib>=2.4.0',
-    'gnu.org/automake',
-    'gnu.org/autoconf',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

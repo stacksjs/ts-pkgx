@@ -8,7 +8,7 @@
  *
  * @install `launchpad install opencanaryd`
  * @aliases `opencanaryd`
- * @dependencies `python.org>=3.10<3.12`, `tcpdump.org`, `openssl.org`, ... (+1 more)
+ * @dependencies `python.org>=3.10<3.12`, `tcpdump.org`, `openssl.org`
  *
  * @example
  * ```typescript
@@ -65,7 +65,6 @@ export const opencanarydPackage = {
     'python.org>=3.10<3.12',
     'tcpdump.org',
     'openssl.org',
-    'pip.pypa.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

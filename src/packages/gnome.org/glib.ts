@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/glib -- $SHELL -i`
- * @dependencies `gnu.org/gettext^0.21`, `sourceware.org/libffi@3`, `pcre.org@8`, ... (+9 more)
+ * @dependencies `gnu.org/gettext^0.21`, `sourceware.org/libffi@3`, `pcre.org@8`, ... (+2 more)
  * @companions `gnome.org/gsettings-desktop-schemas`
  *
  * @example
@@ -82,13 +82,6 @@ export const gnomeorgglibPackage = {
     'pcre.org@8',
     'pcre.org/v2@10',
     'python.org^3 # several of the bins are scripts',
-    'mesonbuild.com^1.2',
-    'ninja-build.org@1',
-    'freedesktop.org/pkg-config^0.29',
-    'python.org>=3.5<3.12',
-    'gnome.org/gobject-introspection',
-    'gnome.org/libxml2~2.13 # since 2.84.1, 2.14 changed the API version',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

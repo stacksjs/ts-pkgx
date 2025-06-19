@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ollama`
  * @aliases `ollama`
- * @dependencies `curl.se/ca-certs`, `go.dev^1.21`, `cmake.org^3`, ... (+3 more)
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,11 +63,6 @@ export const ollamaPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev^1.21',
-    'cmake.org^3',
-    'git-scm.org^2',
-    'gnu.org/binutils',
-    'gitlab.com/procps-ng/procps',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +linux-pam.org -- $SHELL -i`
- * @dependencies `github.com/thkukuk/libnsl`, `sourceforge.net/libtirpc`, `github.com/besser82/libxcrypt`, ... (+7 more)
+ * @dependencies `github.com/thkukuk/libnsl`, `sourceforge.net/libtirpc`, `github.com/besser82/libxcrypt`
  *
  * @example
  * ```typescript
@@ -64,13 +64,6 @@ export const linuxpamorgPackage = {
     'github.com/thkukuk/libnsl',
     'sourceforge.net/libtirpc',
     'github.com/besser82/libxcrypt',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
-    'gnu.org/make',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

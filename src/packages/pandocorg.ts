@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pandoc`
  * @aliases `pandoc`
- * @dependencies `gnu.org/gmp@6`, `zlib.net@1`, `sourceware.org/libffi@3`, ... (+2 more)
+ * @dependencies `gnu.org/gmp@6`, `zlib.net@1`, `sourceware.org/libffi@3`
  *
  * @example
  * ```typescript
@@ -65,8 +65,6 @@ export const pandocPackage = {
     'gnu.org/gmp@6',
     'zlib.net@1',
     'sourceware.org/libffi@3',
-    'haskell.org~9.4',
-    'haskell.org/cabal~3.10 # 3.12 complains when using --installdir about relative library paths',
   ] as const,
   /**
    * Available versions from newest to oldest.

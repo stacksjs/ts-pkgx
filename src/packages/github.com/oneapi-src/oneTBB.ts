@@ -7,7 +7,7 @@
  *
  * @install `launchpad install +github.com/oneapi-src/oneTBB -- $SHELL -i`
  * @aliases `tbb`
- * @dependencies `python.org~3.11`, `cmake.org`, `swig.org`, ... (+2 more)
+ * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
@@ -55,10 +55,6 @@ export const tbbPackage = {
    */
   dependencies: [
     'python.org~3.11',
-    'cmake.org',
-    'swig.org',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

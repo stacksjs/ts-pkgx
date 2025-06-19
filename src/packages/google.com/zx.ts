@@ -8,7 +8,7 @@
  *
  * @install `launchpad install zx`
  * @name `zx`
- * @dependencies `nodejs.org`, `npmjs.com`, `curl.se`
+ * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const zxPackage = {
    */
   dependencies: [
     'nodejs.org',
-    'npmjs.com',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

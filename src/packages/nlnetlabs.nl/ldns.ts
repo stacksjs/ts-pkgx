@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +nlnetlabs.nl/ldns -- $SHELL -i`
- * @dependencies `openssl.org^1`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+1 more)
+ * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
@@ -59,9 +59,6 @@ export const nlnetlabsnlldnsPackage = {
    */
   dependencies: [
     'openssl.org^1',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'swig.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

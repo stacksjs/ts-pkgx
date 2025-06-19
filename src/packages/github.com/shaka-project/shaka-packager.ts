@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/shaka-project/shaka-packager -- $SHELL -i`
- * @dependencies `gnu.org/gcc/libstdcxx`, `ninja-build.org`, `cmake.org^3`, ... (+2 more)
+ * @dependencies `linux:gnu.org/gcc/libstdcxx` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -56,13 +56,10 @@ export const githubcomshakaprojectshakapackagerPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnu.org/gcc/libstdcxx',
-    'ninja-build.org',
-    'cmake.org^3',
-    'python.org^3.10',
-    'gnu.org/gcc',
+    'linux:gnu.org/gcc/libstdcxx',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,6 @@
  *
  * @install `launchpad install chezmoi`
  * @aliases `chezmoi`
- * @dependencies `go.dev^1.18`, `gnu.org/gcc`, `gnu.org/binutils`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const chezmoiPackage = {
     'chezmoi',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev^1.18',
-    'gnu.org/gcc',
-    'gnu.org/binutils',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install bw`
  * @aliases `bw`
- * @dependencies `nodejs.org^20`, `npmjs.com`, `github.com/fastfloat/fast_float^8 # needed to work with Xcode >=16.2`, ... (+1 more)
+ * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const bwPackage = {
    */
   dependencies: [
     'nodejs.org^20',
-    'npmjs.com',
-    'github.com/fastfloat/fast_float^8 # needed to work with Xcode >=16.2',
-    'python.org^3 # needed to build some native modules',
   ] as const,
   /**
    * Available versions from newest to oldest.

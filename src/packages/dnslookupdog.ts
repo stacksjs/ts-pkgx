@@ -8,7 +8,7 @@
  *
  * @install `launchpad install dog`
  * @aliases `dog`
- * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`, ... (+1 more)
+ * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const dogPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

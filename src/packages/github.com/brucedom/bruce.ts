@@ -8,7 +8,6 @@
  *
  * @install `launchpad install bruce`
  * @name `bruce`
- * @dependencies `go.dev`
  * @companions `linux`
  *
  * @example
@@ -64,13 +63,7 @@ export const brucePackage = {
   companions: [
     'linux',
   ] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

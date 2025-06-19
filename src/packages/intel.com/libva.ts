@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +intel.com/libva -- $SHELL -i`
- * @dependencies `dri.freedesktop.org`, `x.org/x11`, `x.org/exts`, ... (+5 more)
+ * @dependencies `dri.freedesktop.org`, `x.org/x11`, `x.org/exts`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -54,9 +54,6 @@ export const intelcomlibvaPackage = {
     'x.org/exts',
     'x.org/xfixes',
     'wayland.freedesktop.org',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

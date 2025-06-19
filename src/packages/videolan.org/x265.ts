@@ -8,7 +8,6 @@
  *
  * @install `launchpad install x265`
  * @name `x265`
- * @dependencies `cmake.org`, `nasm.us`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const x265Package = {
     'x265',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'nasm.us',
-    'freedesktop.org/pkg-config',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

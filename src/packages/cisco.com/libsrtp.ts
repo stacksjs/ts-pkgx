@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +cisco.com/libsrtp -- $SHELL -i`
- * @dependencies `openssl.org~1`, `freedesktop.org/pkg-config`, `gnu.org/gcc`
+ * @dependencies `openssl.org~1`
  *
  * @example
  * ```typescript
@@ -50,8 +50,6 @@ export const ciscocomlibsrtpPackage = {
    */
   dependencies: [
     'openssl.org~1',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

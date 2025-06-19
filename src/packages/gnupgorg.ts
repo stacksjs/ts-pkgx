@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnupg.org -- $SHELL -i`
- * @dependencies `zlib.net^1.1`, `sourceware.org/bzip2`, `gnupg.org/npth`, ... (+11 more)
+ * @dependencies `zlib.net^1.1`, `sourceware.org/bzip2`, `gnupg.org/npth`, ... (+9 more)
  *
  * @example
  * ```typescript
@@ -81,8 +81,6 @@ export const gnupgorgPackage = {
     'openldap.org^2',
     'gnu.org/readline^8',
     'sqlite.org^3',
-    'darwin^# nobody added a comment to say why this is Darwin only',
-    'gnu.org/gettext^0.21',
   ] as const,
   /**
    * Available versions from newest to oldest.

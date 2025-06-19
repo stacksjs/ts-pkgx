@@ -8,7 +8,7 @@
  *
  * @install `launchpad install volta`
  * @aliases `volta`
- * @dependencies `curl.se/ca-certs`, `rust-lang.org^1.75`, `rust-lang.org/cargo`
+ * @dependencies `linux:curl.se/ca-certs` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,11 +60,10 @@ export const voltaPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'curl.se/ca-certs',
-    'rust-lang.org^1.75',
-    'rust-lang.org/cargo',
+    'linux:curl.se/ca-certs',
   ] as const,
   /**
    * Available versions from newest to oldest.

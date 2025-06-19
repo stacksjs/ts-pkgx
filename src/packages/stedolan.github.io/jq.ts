@@ -8,7 +8,7 @@
  *
  * @install `launchpad install jq`
  * @name `jq`
- * @dependencies `github.com/kkos/oniguruma@6`, `git-scm.org@2`
+ * @dependencies `github.com/kkos/oniguruma@6`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const jqPackage = {
    */
   dependencies: [
     'github.com/kkos/oniguruma@6',
-    'git-scm.org@2',
   ] as const,
   /**
    * Available versions from newest to oldest.

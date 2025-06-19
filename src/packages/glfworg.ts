@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +glfw.org -- $SHELL -i`
- * @dependencies `freeglut.sourceforge.io^3.4`, `x.org/xcursor^1.2`, `xkbcommon.org^1.0`, ... (+2 more)
+ * @dependencies `linux:freeglut.sourceforge.io^3.4`, `linux:x.org/xcursor^1.2`, `linux:xkbcommon.org^1.0`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,13 +47,13 @@ export const glfworgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'freeglut.sourceforge.io^3.4',
-    'x.org/xcursor^1.2',
-    'xkbcommon.org^1.0',
-    'mesa3d.org^23.3',
-    'cmake.org',
+    'linux:freeglut.sourceforge.io^3.4',
+    'linux:x.org/xcursor^1.2',
+    'linux:xkbcommon.org^1.0',
+    'linux:mesa3d.org^23.3',
   ] as const,
   /**
    * Available versions from newest to oldest.

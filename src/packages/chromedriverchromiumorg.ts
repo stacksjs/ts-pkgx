@@ -8,7 +8,7 @@
  *
  * @install `launchpad install chromedriver`
  * @aliases `chromedriver`
- * @dependencies `gnome.org/glib^2`, `mozilla.org/nss`, `x.org/xcb`, ... (+2 more)
+ * @dependencies `linux:gnome.org/glib^2`, `linux:mozilla.org/nss`, `linux:x.org/xcb` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -59,13 +59,12 @@ export const chromedriverPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnome.org/glib^2',
-    'mozilla.org/nss',
-    'x.org/xcb',
-    'gnu.org/wget',
-    'info-zip.org/unzip',
+    'linux:gnome.org/glib^2',
+    'linux:mozilla.org/nss',
+    'linux:x.org/xcb',
   ] as const,
   /**
    * Available versions from newest to oldest.

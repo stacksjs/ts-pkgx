@@ -8,7 +8,6 @@
  *
  * @install `launchpad install kubectl`
  * @name `kubectl`
- * @dependencies `go.dev^1.19`, `gnu.org/coreutils^9.1.0`, `gnu.org/bash^5.1`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -57,17 +56,7 @@ export const kubectlPackage = {
     'kubectl',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev^1.19',
-    'gnu.org/coreutils^9.1.0',
-    'gnu.org/bash^5.1',
-    'rsync.samba.org',
-    'curl.se',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

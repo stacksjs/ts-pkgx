@@ -8,7 +8,7 @@
  *
  * @install `launchpad install counterfeiter`
  * @name `counterfeiter`
- * @dependencies `go.dev`, `go.dev`, `go.dev`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -62,8 +62,6 @@ export const counterfeiterPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'go.dev',
-    'go.dev',
     'go.dev',
   ] as const,
   /**

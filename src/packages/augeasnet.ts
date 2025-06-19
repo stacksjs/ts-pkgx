@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +augeas.net -- $SHELL -i`
- * @dependencies `gnu.org/readline`, `gnome.org/libxml2`, `gnu.org/autoconf`, ... (+7 more)
+ * @dependencies `gnu.org/readline`, `gnome.org/libxml2`
  *
  * @example
  * ```typescript
@@ -63,14 +63,6 @@ export const augeasnetPackage = {
   dependencies: [
     'gnu.org/readline',
     'gnome.org/libxml2',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/bison',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
-    'curl.se',
-    'gnu.org/patch',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

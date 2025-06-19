@@ -8,7 +8,7 @@
  *
  * @install `launchpad install zathura`
  * @name `zathura`
- * @dependencies `gnome.org/glib^2.72`, `gnome.org/adwaita-icon-theme`, `gnu.org/gettext`, ... (+10 more)
+ * @dependencies `gnome.org/glib^2.72`, `gnome.org/adwaita-icon-theme`, `gnu.org/gettext`, ... (+8 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,6 +60,7 @@ export const zathuraPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnome.org/glib^2.72',
@@ -72,9 +73,7 @@ export const zathuraPackage = {
     'darwinsys.com/file',
     'gtk.org/gtk3^3.22',
     'sqlite.org@3',
-    'gnome.org/gtk-mac-integration-gtk3',
-    'mesonbuild.com>=0.61',
-    'ninja-build.org',
+    'darwin:gnome.org/gtk-mac-integration-gtk3',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +imagemagick.org -- $SHELL -i`
- * @dependencies `libpng.org`, `ijg.org`, `freetype.org`, ... (+19 more)
+ * @dependencies `libpng.org`, `ijg.org`, `freetype.org`, ... (+22 more)
  *
  * @example
  * ```typescript
@@ -90,9 +90,12 @@ export const imagemagickorgPackage = {
     'jpeg.org/jpegxl',
     'perl.org',
     'libzip.org',
+    'darwinopenmp.llvm.orggithub.com/strukturag/libheif',
     'openmp.llvm.org',
     'github.com/strukturag/libheif',
+    'linux/x86-64github.com/strukturag/libheif',
     'github.com/strukturag/libheif',
+    'linuxx.org/x11',
     'x.org/x11',
   ] as const,
   /**

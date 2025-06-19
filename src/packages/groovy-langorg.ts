@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +groovy-lang.org -- $SHELL -i`
- * @dependencies `openjdk.org@17`, `waterlan.home.xs4all.nl/dos2unix`
+ * @dependencies `openjdk.org@17`
  *
  * @example
  * ```typescript
@@ -70,7 +70,6 @@ export const groovylangorgPackage = {
    */
   dependencies: [
     'openjdk.org@17',
-    'waterlan.home.xs4all.nl/dos2unix',
   ] as const,
   /**
    * Available versions from newest to oldest.

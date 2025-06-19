@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +apache.org/zookeeper -- $SHELL -i`
- * @dependencies `openjdk.org`, `openssl.org`, `gnu.org/autoconf`, ... (+6 more)
+ * @dependencies `openjdk.org`, `openssl.org`
  *
  * @example
  * ```typescript
@@ -66,13 +66,6 @@ export const apacheorgzookeeperPackage = {
   dependencies: [
     'openjdk.org',
     'openssl.org',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'freedesktop.org/cppunit',
-    'gnu.org/libtool',
-    'maven.apache.org',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

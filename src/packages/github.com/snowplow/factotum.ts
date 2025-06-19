@@ -8,7 +8,7 @@
  *
  * @install `launchpad install factotum`
  * @name `factotum`
- * @dependencies `openssl.org^1.1`, `rust-lang.org~1.78`, `rust-lang.org/cargo~0.80`
+ * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const factotumPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'rust-lang.org~1.78',
-    'rust-lang.org/cargo~0.80',
   ] as const,
   /**
    * Available versions from newest to oldest.

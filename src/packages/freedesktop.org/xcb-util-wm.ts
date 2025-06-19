@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/xcb-util-wm -- $SHELL -i`
- * @dependencies `x.org/xcb`, `gnu.org/m4`, `freedesktop.org/pkg-config`, ... (+1 more)
+ * @dependencies `x.org/xcb`, `gnu.org/m4`
  *
  * @example
  * ```typescript
@@ -50,8 +50,6 @@ export const freedesktoporgxcbutilwmPackage = {
   dependencies: [
     'x.org/xcb',
     'gnu.org/m4',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

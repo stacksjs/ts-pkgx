@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +rockdaboot.github.io/libpsl -- $SHELL -i`
- * @dependencies `unicode.org^71`, `mesonbuild.com`, `ninja-build.org`, ... (+4 more)
+ * @dependencies `unicode.org^71`
  *
  * @example
  * ```typescript
@@ -50,12 +50,6 @@ export const rockdabootgithubiolibpslPackage = {
    */
   dependencies: [
     'unicode.org^71',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'python.org~3.11',
-    'gnu.org/gcc',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

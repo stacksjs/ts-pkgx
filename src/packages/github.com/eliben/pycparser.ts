@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/eliben/pycparser -- $SHELL -i`
- * @dependencies `python.org~3.11`, `llvm.org`
+ * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
@@ -50,7 +50,6 @@ export const githubcomelibenpycparserPackage = {
    */
   dependencies: [
     'python.org~3.11',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

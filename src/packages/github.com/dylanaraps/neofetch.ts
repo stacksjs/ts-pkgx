@@ -8,7 +8,7 @@
  *
  * @install `launchpad install neofetch`
  * @name `neofetch`
- * @dependencies `github.com/jhford/screenresolution`
+ * @dependencies `darwin:github.com/jhford/screenresolution` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,9 +60,10 @@ export const neofetchPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'github.com/jhford/screenresolution',
+    'darwin:github.com/jhford/screenresolution',
   ] as const,
   /**
    * Available versions from newest to oldest.

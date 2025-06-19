@@ -7,7 +7,7 @@
  *
  * @install `launchpad install +bittensor.com -- $SHELL -i`
  * @aliases `Bittensor`
- * @dependencies `pkgx.sh^1`, `openssl.org^1.1`, `python.org~3.11`, ... (+4 more)
+ * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -56,11 +56,6 @@ export const bittensorPackage = {
   dependencies: [
     'pkgx.sh^1',
     'openssl.org^1.1',
-    'python.org~3.11',
-    'cmake.org@3',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
-    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

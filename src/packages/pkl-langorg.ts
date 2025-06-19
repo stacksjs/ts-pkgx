@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +pkl-lang.org -- $SHELL -i`
- * @dependencies `openjdk.org^21 # as of v0.28`, `zlib.net@1`, `llvm.org`, ... (+1 more)
  * @companions `openjdk.org`
  *
  * @example
@@ -60,16 +59,7 @@ export const pkllangorgPackage = {
   companions: [
     'openjdk.org',
   ] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'openjdk.org^21 # as of v0.28',
-    'zlib.net@1',
-    'llvm.org',
-    'curl.se',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

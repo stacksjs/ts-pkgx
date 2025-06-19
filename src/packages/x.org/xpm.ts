@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xpm -- $SHELL -i`
- * @dependencies `x.org/x11`, `zlib.net^1.2`, `freedesktop.org/pkg-config~0.29`, ... (+1 more)
+ * @dependencies `x.org/x11`, `zlib.net^1.2`
  *
  * @example
  * ```typescript
@@ -50,8 +50,6 @@ export const xorgxpmPackage = {
   dependencies: [
     'x.org/x11',
     'zlib.net^1.2',
-    'freedesktop.org/pkg-config~0.29',
-    'gnu.org/gettext@0.21',
   ] as const,
   /**
    * Available versions from newest to oldest.

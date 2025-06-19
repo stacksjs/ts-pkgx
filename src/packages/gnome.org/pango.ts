@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +gnome.org/pango -- $SHELL -i`
  * @name `pango`
- * @dependencies `cairographics.org^1.18`, `freetype.org@2`, `gnome.org/glib@2`, ... (+9 more)
+ * @dependencies `cairographics.org^1.18`, `freetype.org@2`, `gnome.org/glib@2`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -71,11 +71,6 @@ export const pangoPackage = {
     'freedesktop.org/fontconfig@2',
     'sourceware.org/libffi@3',
     'gnu.org/fribidi@1',
-    'mesonbuild.com',
-    'ninja-build.org@1',
-    'freedesktop.org/pkg-config^0.29',
-    'gnome.org/gobject-introspection@1',
-    'python.org>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

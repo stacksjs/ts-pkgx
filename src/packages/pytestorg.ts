@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pytest`
  * @aliases `pytest`
- * @dependencies `pkgx.sh^1`, `python.org>=3.7<3.12`, `git-scm.org^2`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const pytestPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org>=3.7<3.12',
-    'git-scm.org^2',
   ] as const,
   /**
    * Available versions from newest to oldest.

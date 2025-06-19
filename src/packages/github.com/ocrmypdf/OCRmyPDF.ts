@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ocrmypdf`
  * @aliases `ocrmypdf`
- * @dependencies `pkgx.sh^1`, `qpdf.sourceforge.io^12 # as of 16.10.1`, `darwin^# a consequence of rebuilding for 11.0`, ... (+10 more)
+ * @dependencies `pkgx.sh^1`, `qpdf.sourceforge.io^12 # as of 16.10.1`
  *
  * @example
  * ```typescript
@@ -64,17 +64,6 @@ export const ocrmypdfPackage = {
   dependencies: [
     'pkgx.sh^1',
     'qpdf.sourceforge.io^12 # as of 16.10.1',
-    'darwin^# a consequence of rebuilding for 11.0',
-    'simplesystems.org/libtiff^4',
-    'openjpeg.org^2',
-    'libjpeg-turbo.org^2',
-    'zlib.net^1',
-    'x.org/xcb^1',
-    'gnome.org/libxml2~2.13 # deps need 2.13',
-    'gnome.org/libxslt^1',
-    'littlecms.com^2',
-    'github.com/strukturag/libheif~1.18',
-    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

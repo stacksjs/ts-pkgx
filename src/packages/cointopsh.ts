@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cointop`
  * @aliases `cointop`
- * @dependencies `curl.se/ca-certs`, `go.dev^1.17`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const cointopPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev^1.17',
   ] as const,
   /**
    * Available versions from newest to oldest.

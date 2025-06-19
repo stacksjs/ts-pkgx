@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/jbeder/yaml-cpp -- $SHELL -i`
- * @dependencies `cmake.org^3`
  *
  * @example
  * ```typescript
@@ -44,13 +43,7 @@ export const githubcomjbederyamlcppPackage = {
   installCommand: 'launchpad install +github.com/jbeder/yaml-cpp -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org^3',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install eureka`
  * @name `eureka`
- * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `rust-lang.org^1.65`, `rust-lang.org/cargo`, ... (+1 more)
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const eurekaPackage = {
    */
   dependencies: [
     'libgit2.org~1.7 # links to libgit2.so.1.7',
-    'rust-lang.org^1.65',
-    'rust-lang.org/cargo',
-    'git-scm.org^2',
   ] as const,
   /**
    * Available versions from newest to oldest.

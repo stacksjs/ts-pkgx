@@ -8,7 +8,6 @@
  *
  * @install `launchpad install jbig2dec`
  * @aliases `jbig2dec`
- * @dependencies `gnu.org/automake`, `gnu.org/libtool`, `curl.se`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const jbig2decPackage = {
     'jbig2dec',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/automake',
-    'gnu.org/libtool',
-    'curl.se',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +khronos.org/SPIRV-Tools -- $SHELL -i`
  * @aliases `spirv`
- * @dependencies `cmake.org`, `python.org~3.11`, `git-scm.org@2`
  *
  * @example
  * ```typescript
@@ -66,15 +65,7 @@ export const spirvPackage = {
     'spirv-val',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'python.org~3.11',
-    'git-scm.org@2',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

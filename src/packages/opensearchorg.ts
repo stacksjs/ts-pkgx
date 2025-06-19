@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +opensearch.org -- $SHELL -i`
  * @aliases `opensearch`
- * @dependencies `openjdk.org^21 # since v3`, `openmp.llvm.org^17`, `cmake.org@3`, ... (+7 more)
+ * @dependencies `openjdk.org^21 # since v3`, `openmp.llvm.org^17`
  *
  * @example
  * ```typescript
@@ -67,14 +67,6 @@ export const opensearchPackage = {
   dependencies: [
     'openjdk.org^21 # since v3',
     'openmp.llvm.org^17',
-    'cmake.org@3',
-    'git-scm.org',
-    'gnu.org/wget',
-    'gnu.org/gcc^12 # for gfortran',
-    'openblas.net',
-    'gnu.org/coreutils^9',
-    'stedolan.github.io/jq',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

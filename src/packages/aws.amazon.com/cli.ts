@@ -3,12 +3,12 @@
  *
  * @domain `aws.amazon.com/cli`
  * @programs `aws`
- * @version `2.27.38` (925 versions available)
+ * @version `2.27.38` (926 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws`
  * @aliases `aws`, `aws/cli`
- * @dependencies `sourceware.org/libffi^3`, `pkgx.sh^1`, `rust-lang.org>=1.48.0`, ... (+2 more)
+ * @dependencies `sourceware.org/libffi^3`, `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -64,9 +64,6 @@ export const awsPackage = {
   dependencies: [
     'sourceware.org/libffi^3',
     'pkgx.sh^1',
-    'rust-lang.org>=1.48.0',
-    'rust-lang.org/cargo',
-    'python.org>=3.7<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -463,6 +460,7 @@ export const awsPackage = {
     '2.11.7',
     '2.10.4',
     '2.10.3',
+    '1.40.38',
     '1.40.37',
     '1.40.36',
     '1.40.35',

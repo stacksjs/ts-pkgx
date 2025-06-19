@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +htslib.org -- $SHELL -i`
- * @dependencies `sourceware.org/bzip2`, `tukaani.org/xz`, `zlib.net^1`, ... (+4 more)
+ * @dependencies `sourceware.org/bzip2`, `tukaani.org/xz`, `zlib.net^1`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const htsliborgPackage = {
     'tukaani.org/xz',
     'zlib.net^1',
     'curl.se>=5',
-    'gnu.org/make',
-    'gnu.org/autoconf',
-    'gnu.org/automake^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

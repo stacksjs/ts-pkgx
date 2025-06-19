@@ -8,7 +8,6 @@
  *
  * @install `launchpad install ko`
  * @aliases `ko`
- * @dependencies `go.dev^1.22`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const koPackage = {
     'ko',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev^1.22',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

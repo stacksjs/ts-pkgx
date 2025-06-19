@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/libSM -- $SHELL -i`
- * @dependencies `x.org/ice`, `freedesktop.org/pkg-config`, `x.org/xtrans`, ... (+1 more)
+ * @dependencies `x.org/ice`
  *
  * @example
  * ```typescript
@@ -49,9 +49,6 @@ export const xorglibsmPackage = {
    */
   dependencies: [
     'x.org/ice',
-    'freedesktop.org/pkg-config',
-    'x.org/xtrans',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

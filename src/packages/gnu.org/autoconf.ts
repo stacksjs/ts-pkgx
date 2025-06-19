@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/autoconf -- $SHELL -i`
- * @dependencies `gnu.org/m4@1`, `perl.org`, `llvm.org`
+ * @dependencies `gnu.org/m4@1`, `perl.org`
  *
  * @example
  * ```typescript
@@ -65,7 +65,6 @@ export const gnuorgautoconfPackage = {
   dependencies: [
     'gnu.org/m4@1',
     'perl.org',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

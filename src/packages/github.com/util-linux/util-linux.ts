@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/util-linux/util-linux -- $SHELL -i`
- * @dependencies `gnu.org/gettext^0`, `sqlite.org^3`, `gnu.org/bison`, ... (+4 more)
+ * @dependencies `gnu.org/gettext^0`, `sqlite.org^3`
  *
  * @example
  * ```typescript
@@ -78,11 +78,6 @@ export const githubcomutillinuxutillinuxPackage = {
   dependencies: [
     'gnu.org/gettext^0',
     'sqlite.org^3',
-    'gnu.org/bison',
-    'gnu.org/patch',
-    'llvm.org',
-    'linux-pam.org',
-    'stedolan.github.io/jq',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install openplayground`
  * @name `openplayground`
- * @dependencies `python.org~3.11`, `gnu.org/bash`, `tea.xyz^0`, ... (+3 more)
+ * @dependencies `python.org~3.11`, `gnu.org/bash`, `tea.xyz^0`
  *
  * @example
  * ```typescript
@@ -65,9 +65,6 @@ export const openplaygroundPackage = {
     'python.org~3.11',
     'gnu.org/bash',
     'tea.xyz^0',
-    'npmjs.com',
-    'python-poetry.org~1.4.1',
-    'pip.pypa.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +python-pillow.org -- $SHELL -i`
- * @dependencies `libjpeg-turbo.org^2`, `pngquant.org/lib^4`, `simplesystems.org/libtiff^4`, ... (+9 more)
+ * @dependencies `libjpeg-turbo.org^2`, `pngquant.org/lib^4`, `simplesystems.org/libtiff^4`, ... (+7 more)
  *
  * @example
  * ```typescript
@@ -59,8 +59,6 @@ export const pythonpilloworgPackage = {
     'google.com/webp^1',
     'zlib.net^1',
     'python.org~3.12',
-    'pypa.io/setuptools',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

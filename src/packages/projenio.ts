@@ -8,7 +8,7 @@
  *
  * @install `launchpad install projen`
  * @aliases `projen`
- * @dependencies `nodejs.org^22 || ^20 || ^18`, `classic.yarnpkg.com^1`, `maven.apache.org>=3.0.0`, ... (+2 more)
+ * @dependencies `nodejs.org^22 || ^20 || ^18`
  * @companions `git-scm.org`, `classic.yarnpkg.com`, `maven.apache.org`, ... (+2 more)
  *
  * @example
@@ -74,10 +74,6 @@ export const projenPackage = {
    */
   dependencies: [
     'nodejs.org^22 || ^20 || ^18',
-    'classic.yarnpkg.com^1',
-    'maven.apache.org>=3.0.0',
-    'python.org~3.11',
-    'go.dev>=1.21',
   ] as const,
   /**
    * Available versions from newest to oldest.

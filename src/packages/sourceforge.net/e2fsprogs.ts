@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +sourceforge.net/e2fsprogs -- $SHELL -i`
  * @aliases `sf.net/e2fsprogs`
- * @dependencies `gnu.org/gettext^0.22`, `github.com/util-linux/util-linux^2.39`
+ * @dependencies `darwin:gnu.org/gettext^0.22`, `linux:github.com/util-linux/util-linux^2.39` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -64,10 +64,11 @@ export const sfnete2fsprogsPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnu.org/gettext^0.22',
-    'github.com/util-linux/util-linux^2.39',
+    'darwin:gnu.org/gettext^0.22',
+    'linux:github.com/util-linux/util-linux^2.39',
   ] as const,
   /**
    * Available versions from newest to oldest.

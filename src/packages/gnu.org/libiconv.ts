@@ -8,7 +8,7 @@
  *
  * @install `launchpad install iconv`
  * @aliases `iconv`
- * @dependencies `gnu.org/gcc/libstdcxx@14`
+ * @dependencies `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -59,9 +59,10 @@ export const iconvPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnu.org/gcc/libstdcxx@14',
+    'linux:gnu.org/gcc/libstdcxx@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

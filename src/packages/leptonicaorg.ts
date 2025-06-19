@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +leptonica.org -- $SHELL -i`
- * @dependencies `giflib.sourceforge.io@5`, `libjpeg-turbo.org@2`, `libpng.org@1`, ... (+4 more)
+ * @dependencies `giflib.sourceforge.io@5`, `libjpeg-turbo.org@2`, `libpng.org@1`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -72,7 +72,6 @@ export const leptonicaorgPackage = {
     'simplesystems.org/libtiff@4',
     'openjpeg.org',
     'google.com/webp',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

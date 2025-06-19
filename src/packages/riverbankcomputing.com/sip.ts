@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +riverbankcomputing.com/sip -- $SHELL -i`
  * @name `sip`
- * @dependencies `python.org~3.11`, `llvm.org<17 # needs gcc to sip-install`, `gnu.org/make`
+ * @dependencies `python.org~3.11`, `llvm.org<17 # needs gcc to sip-install`
  *
  * @example
  * ```typescript
@@ -69,7 +69,6 @@ export const sipPackage = {
   dependencies: [
     'python.org~3.11',
     'llvm.org<17 # needs gcc to sip-install',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

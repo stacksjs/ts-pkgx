@@ -8,7 +8,7 @@
  *
  * @install `launchpad install node-build`
  * @name `node-build`
- * @dependencies `openssl.org>=3.0.0`, `gnu.org/autoconf`
+ * @dependencies `openssl.org>=3.0.0`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const nodebuildPackage = {
    */
   dependencies: [
     'openssl.org>=3.0.0',
-    'gnu.org/autoconf',
   ] as const,
   /**
    * Available versions from newest to oldest.

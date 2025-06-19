@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +mandoc.bsd.lv -- $SHELL -i`
- * @dependencies `zlib.net`, `gnu.org/make`
+ * @dependencies `zlib.net`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const mandocbsdlvPackage = {
    */
   dependencies: [
     'zlib.net',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

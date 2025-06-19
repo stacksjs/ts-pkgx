@@ -8,7 +8,7 @@
  *
  * @install `launchpad install grep`
  * @name `grep`
- * @dependencies `pcre.org/v2`, `freedesktop.org/pkg-config^0.29`
+ * @dependencies `pcre.org/v2`
  *
  * @example
  * ```typescript
@@ -62,7 +62,6 @@ export const grepPackage = {
    */
   dependencies: [
     'pcre.org/v2',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

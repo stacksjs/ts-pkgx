@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +libsoup.org -- $SHELL -i`
- * @dependencies `gnome.org/glib-networking`, `gnutls.org`, `rockdaboot.github.io/libpsl`, ... (+14 more)
+ * @dependencies `gnome.org/glib-networking`, `gnutls.org`, `rockdaboot.github.io/libpsl`, ... (+7 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -46,6 +46,7 @@ export const libsouporgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnome.org/glib-networking',
@@ -55,16 +56,9 @@ export const libsouporgPackage = {
     'gnome.org/libxml2',
     'sqlite.org',
     'nghttp2.org',
-    'gnu.org/gettext',
-    'gnome.org/glib',
-    'github.com/google/brotli',
-    'gnome.org/gobject-introspection',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'python.org~3.11',
-    'gnome.org/vala',
-    'freedesktop.org/pkg-config',
+    'linux:gnu.org/gettext',
+    'linux:gnome.org/glib',
+    'linux:github.com/google/brotli',
   ] as const,
   /**
    * Available versions from newest to oldest.

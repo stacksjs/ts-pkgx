@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +ruby-lang.org -- $SHELL -i`
  * @aliases `ruby`
- * @dependencies `openssl.org^1.1`, `pyyaml.org^0.2`, `zlib.net^1`, ... (+8 more)
+ * @dependencies `openssl.org^1.1`, `pyyaml.org^0.2`, `zlib.net^1`
  * @companions `rubygems.org`
  *
  * @example
@@ -77,14 +77,6 @@ export const rubyPackage = {
     'openssl.org^1.1',
     'pyyaml.org^0.2',
     'zlib.net^1',
-    'freedesktop.org/pkg-config^0.29',
-    'gnu.org/gettext^0.21',
-    'gnu.org/patch',
-    'gnu.org/bison^3',
-    'gnu.org/autoconf',
-    'rust-lang.org^1 # required to build YJIT',
-    'ruby-lang.org^3 # ruby requires ruby to build',
-    'rubygems.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

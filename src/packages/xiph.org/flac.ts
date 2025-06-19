@@ -8,7 +8,7 @@
  *
  * @install `launchpad install flac`
  * @name `flac`
- * @dependencies `xiph.org/ogg^1.3.5`, `freedesktop.org/pkg-config^0.29`, `gnu.org/libtool^2.4`, ... (+2 more)
+ * @dependencies `xiph.org/ogg^1.3.5`
  *
  * @example
  * ```typescript
@@ -63,10 +63,6 @@ export const flacPackage = {
    */
   dependencies: [
     'xiph.org/ogg^1.3.5',
-    'freedesktop.org/pkg-config^0.29',
-    'gnu.org/libtool^2.4',
-    'gnu.org/automake^1.16',
-    'gnu.org/autoconf^2.71',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,6 @@
  *
  * @install `launchpad install op`
  * @aliases `op`
- * @dependencies `info-zip.org/unzip^6`, `gnupg.org^2`, `curl.se`
  *
  * @example
  * ```typescript
@@ -56,15 +55,7 @@ export const opPackage = {
     'op',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'info-zip.org/unzip^6',
-    'gnupg.org^2',
-    'curl.se',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

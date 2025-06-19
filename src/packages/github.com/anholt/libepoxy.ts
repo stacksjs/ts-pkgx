@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/anholt/libepoxy -- $SHELL -i`
- * @dependencies `x.org/x11`, `mesa3d.org`, `mesonbuild.com`, ... (+5 more)
+ * @dependencies `linux:x.org/x11`, `linux:mesa3d.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,16 +47,11 @@ export const githubcomanholtlibepoxyPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'x.org/x11',
-    'mesa3d.org',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'python.org>=3.1<3.12',
-    'freeglut.sourceforge.io',
-    'freedesktop.org/pkg-config',
+    'linux:x.org/x11',
+    'linux:mesa3d.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/confluentinc/libserdes -- $SHELL -i`
- * @dependencies `apache.org/avro`, `digip.org/jansson`, `curl.se`, ... (+3 more)
+ * @dependencies `apache.org/avro`, `digip.org/jansson`, `curl.se`
  *
  * @example
  * ```typescript
@@ -52,9 +52,6 @@ export const githubcomconfluentinclibserdesPackage = {
     'apache.org/avro',
     'digip.org/jansson',
     'curl.se',
-    'gnu.org/gcc',
-    'gnu.org/make',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

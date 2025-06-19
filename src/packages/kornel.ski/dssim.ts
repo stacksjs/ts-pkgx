@@ -8,7 +8,6 @@
  *
  * @install `launchpad install dssim`
  * @name `dssim`
- * @dependencies `rust-lang.org/rustup`, `llvm.org`, `gnome.org/pango`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const dssimPackage = {
     'dssim',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org/rustup',
-    'llvm.org',
-    'gnome.org/pango',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

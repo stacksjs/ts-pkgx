@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tectonic`
  * @aliases `tectonic`
- * @dependencies `freetype.org`, `graphite.sil.org`, `harfbuzz.org`, ... (+6 more)
+ * @dependencies `freetype.org`, `graphite.sil.org`, `harfbuzz.org`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -68,9 +68,6 @@ export const tectonicPackage = {
     'libpng.org',
     'openssl.org^1.1',
     'unicode.org^71',
-    'freedesktop.org/pkg-config^0.29',
-    'rust-lang.org>=1.48.0',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

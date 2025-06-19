@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gitui`
  * @name `gitui`
- * @dependencies `perl.org`, `openssl.org^1.1`, `zlib.net^1`, ... (+4 more)
+ * @dependencies `perl.org`, `openssl.org^1.1`, `zlib.net^1`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,9 +66,6 @@ export const gituiPackage = {
     'openssl.org^1.1',
     'zlib.net^1',
     'libgit2.org~1.7 # links to libgit2.so.1.7',
-    'rust-lang.org^1.78 # stdsimd changes',
-    'rust-lang.org/cargo',
-    'cmake.org^3 # as over 0.27.0',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +openjdk.org -- $SHELL -i`
- * @dependencies `giflib.sourceforge.io`, `harfbuzz.org^8`, `libjpeg-turbo.org`, ... (+22 more)
+ * @dependencies `giflib.sourceforge.io`, `harfbuzz.org^8`, `libjpeg-turbo.org`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -81,6 +81,7 @@ export const openjdkorgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'giflib.sourceforge.io',
@@ -92,22 +93,17 @@ export const openjdkorgPackage = {
     'info-zip.org/unzip',
     'zlib.net',
     'libzip.org',
-    'alsa-project.org/alsa-lib',
-    'freedesktop.org/fontconfig',
-    'freetype.org',
-    'x.org/x11',
-    'x.org/exts',
-    'x.org/xrandr',
-    'x.org/xrender',
-    'x.org/xt',
-    'x.org/xtst',
-    'info-zip.org/zip',
-    'darwinsys.com/file',
-    'llvm.org^16',
-    'gnu.org/make',
-    'gnu.org/autoconf',
-    'freedesktop.org/pkg-config',
-    'gnu.org/wget',
+    'linux:alsa-project.org/alsa-lib',
+    'linux:freedesktop.org/fontconfig',
+    'linux:freetype.org',
+    'linux:x.org/x11',
+    'linux:x.org/exts',
+    'linux:x.org/xrandr',
+    'linux:x.org/xrender',
+    'linux:x.org/xt',
+    'linux:x.org/xtst',
+    'linux:info-zip.org/zip',
+    'linux:darwinsys.com/file',
   ] as const,
   /**
    * Available versions from newest to oldest.

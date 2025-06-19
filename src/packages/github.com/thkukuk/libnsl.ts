@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/thkukuk/libnsl -- $SHELL -i`
- * @dependencies `sourceforge.net/libtirpc`, `freedesktop.org/pkg-config`, `gnu.org/gcc`, ... (+2 more)
+ * @dependencies `sourceforge.net/libtirpc`
  *
  * @example
  * ```typescript
@@ -50,10 +50,6 @@ export const githubcomthkukuklibnslPackage = {
    */
   dependencies: [
     'sourceforge.net/libtirpc',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
-    'gnu.org/make',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

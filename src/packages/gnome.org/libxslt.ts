@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +gnome.org/libxslt -- $SHELL -i`
  * @aliases `xslt`
- * @dependencies `gnome.org/libxml2`, `gnu.org/patch`
+ * @dependencies `gnome.org/libxml2`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const xsltPackage = {
    */
   dependencies: [
     'gnome.org/libxml2',
-    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

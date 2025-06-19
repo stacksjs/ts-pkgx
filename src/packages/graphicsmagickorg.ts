@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gm`
  * @aliases `gm`
- * @dependencies `freetype.org`, `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, ... (+10 more)
+ * @dependencies `freetype.org`, `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, ... (+9 more)
  *
  * @example
  * ```typescript
@@ -74,7 +74,6 @@ export const gmPackage = {
     'sourceware.org/bzip2',
     'gnome.org/libxml2',
     'zlib.net',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

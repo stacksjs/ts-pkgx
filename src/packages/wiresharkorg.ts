@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +wireshark.org -- $SHELL -i`
- * @dependencies `c-ares.org^1.23`, `gnome.org/glib^2.78.3`, `gnutls.org^3.8.2`, ... (+15 more)
+ * @dependencies `c-ares.org^1.23`, `gnome.org/glib^2.78.3`, `gnutls.org^3.8.2`, ... (+10 more)
  *
  * @example
  * ```typescript
@@ -82,11 +82,6 @@ export const wiresharkorgPackage = {
     'github.com/xiph/speexdsp^1.2.1',
     'tcpdump.org^1.10.4',
     'gnome.org/libxml2^2.12.3',
-    'cmake.org',
-    'gnu.org/bison',
-    'github.com/westes/flex',
-    'python.org^3.11',
-    'perl.org@5',
   ] as const,
   /**
    * Available versions from newest to oldest.

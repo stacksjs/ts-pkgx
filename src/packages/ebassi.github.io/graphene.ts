@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +ebassi.github.io/graphene -- $SHELL -i`
- * @dependencies `gnome.org/glib`, `gnome.org/gobject-introspection`, `mesonbuild.com`, ... (+3 more)
+ * @dependencies `gnome.org/glib`
  *
  * @example
  * ```typescript
@@ -50,11 +50,6 @@ export const ebassigithubiographenePackage = {
    */
   dependencies: [
     'gnome.org/glib',
-    'gnome.org/gobject-introspection',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

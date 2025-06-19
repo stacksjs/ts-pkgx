@@ -8,7 +8,7 @@
  *
  * @install `launchpad install az`
  * @aliases `az`
- * @dependencies `openssl.org@1.1`, `python.org>=3.10<3.12`, `sourceware.org/libffi`, ... (+2 more)
+ * @dependencies `openssl.org@1.1`, `python.org>=3.10<3.12`, `sourceware.org/libffi`
  *
  * @example
  * ```typescript
@@ -65,8 +65,6 @@ export const azPackage = {
     'openssl.org@1.1',
     'python.org>=3.10<3.12',
     'sourceware.org/libffi',
-    'rust-lang.org',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

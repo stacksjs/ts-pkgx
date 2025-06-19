@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gitlab.com/procps-ng/procps -- $SHELL -i`
- * @dependencies `invisible-island.net/ncurses>=6.0`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+3 more)
+ * @dependencies `invisible-island.net/ncurses>=6.0`
  *
  * @example
  * ```typescript
@@ -69,11 +69,6 @@ export const gitlabcomprocpsng/procpsPackage = {
    */
   dependencies: [
     'invisible-island.net/ncurses>=6.0',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/gettext',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

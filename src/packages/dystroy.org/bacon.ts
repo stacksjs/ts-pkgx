@@ -8,7 +8,7 @@
  *
  * @install `launchpad install bacon`
  * @name `bacon`
- * @dependencies `alsa-project.org/alsa-lib`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`
+ * @dependencies `linux:alsa-project.org/alsa-lib` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,11 +60,10 @@ export const baconPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'alsa-project.org/alsa-lib',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
+    'linux:alsa-project.org/alsa-lib',
   ] as const,
   /**
    * Available versions from newest to oldest.

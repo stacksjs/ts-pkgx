@@ -8,7 +8,7 @@
  *
  * @install `launchpad install xb-tool`
  * @aliases `xb-tool`
- * @dependencies `gnome.org/glib@2`, `tukaani.org/xz@5`, `facebook.com/zstd@1`, ... (+5 more)
+ * @dependencies `gnome.org/glib@2`, `tukaani.org/xz@5`, `facebook.com/zstd@1`
  *
  * @example
  * ```typescript
@@ -65,11 +65,6 @@ export const xbtoolPackage = {
     'gnome.org/glib@2',
     'tukaani.org/xz@5',
     'facebook.com/zstd@1',
-    'gnome.org/gobject-introspection',
-    'mesonbuild.com>=0.61',
-    'ninja-build.org',
-    'python.org@3',
-    'gnome.org/vala',
   ] as const,
   /**
    * Available versions from newest to oldest.

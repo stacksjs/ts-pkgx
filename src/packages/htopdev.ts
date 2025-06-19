@@ -8,7 +8,7 @@
  *
  * @install `launchpad install htop`
  * @aliases `htop`
- * @dependencies `invisible-island.net/ncurses@6`, `gnu.org/autoconf`, `gnu.org/automake`
+ * @dependencies `invisible-island.net/ncurses@6`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const htopPackage = {
    */
   dependencies: [
     'invisible-island.net/ncurses@6',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
   ] as const,
   /**
    * Available versions from newest to oldest.

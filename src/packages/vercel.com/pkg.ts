@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pkg`
  * @name `pkg`
- * @dependencies `nodejs.org`, `npmjs.com`, `nodejs.org`, ... (+1 more)
+ * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const pkgPackage = {
    */
   dependencies: [
     'nodejs.org',
-    'npmjs.com',
-    'nodejs.org',
-    'vercel.com/pkg',
   ] as const,
   /**
    * Available versions from newest to oldest.

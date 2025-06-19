@@ -8,7 +8,7 @@
  *
  * @install `launchpad install eksctl`
  * @aliases `eksctl`
- * @dependencies `github.com/kubernetes-sigs/aws-iam-authenticator`, `github.com/maxbrunsfeld/counterfeiter`, `go.dev~1.24`, ... (+3 more)
+ * @dependencies `github.com/kubernetes-sigs/aws-iam-authenticator`
  *
  * @example
  * ```typescript
@@ -63,11 +63,6 @@ export const eksctlPackage = {
    */
   dependencies: [
     'github.com/kubernetes-sigs/aws-iam-authenticator',
-    'github.com/maxbrunsfeld/counterfeiter',
-    'go.dev~1.24',
-    'github.com/kevinburke/go-bindata',
-    'github.com/vburenin/ifacemaker',
-    'vektra.github.io/mockery^2 # v3 doesn',
   ] as const,
   /**
    * Available versions from newest to oldest.

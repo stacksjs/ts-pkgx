@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cb`
  * @aliases `cb`
- * @dependencies `openssl.org^1.1`, `alsa-project.org/alsa-lib@1`, `x.org/x11@1`, ... (+6 more)
+ * @dependencies `openssl.org^1.1`, `linux:alsa-project.org/alsa-lib@1`, `linux:x.org/x11@1`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,17 +60,14 @@ export const cbPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'openssl.org^1.1',
-    'alsa-project.org/alsa-lib@1',
-    'x.org/x11@1',
-    'wayland.freedesktop.org@1',
-    'gnu.org/gcc/libstdcxx@14',
-    'cmake.org^3',
-    'wayland.freedesktop.org/protocols',
-    'gnu.org/gcc@14',
-    'gnu.org/diffutils',
+    'linux:alsa-project.org/alsa-lib@1',
+    'linux:x.org/x11@1',
+    'linux:wayland.freedesktop.org@1',
+    'linux:gnu.org/gcc/libstdcxx@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

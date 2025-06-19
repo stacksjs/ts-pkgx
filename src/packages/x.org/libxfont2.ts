@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/libxfont2 -- $SHELL -i`
- * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`, ... (+5 more)
+ * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -55,7 +55,6 @@ export const xorglibxfont2Package = {
     'x.org/xtrans',
     'zlib.net',
     'x.org/libfontenc',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

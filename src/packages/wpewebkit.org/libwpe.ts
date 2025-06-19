@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +wpewebkit.org/libwpe -- $SHELL -i`
- * @dependencies `xkbcommon.org`, `mesa3d.org`, `gnu.org/gcc`, ... (+3 more)
+ * @dependencies `xkbcommon.org`, `mesa3d.org`
  *
  * @example
  * ```typescript
@@ -51,10 +51,6 @@ export const wpewebkitorglibwpePackage = {
   dependencies: [
     'xkbcommon.org',
     'mesa3d.org',
-    'gnu.org/gcc',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

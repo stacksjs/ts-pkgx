@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +gphoto.org/libgphoto2 -- $SHELL -i`
  * @aliases `gphoto2`
- * @dependencies `libgd.github.io^2.3`, `libjpeg-turbo.org^2`, `libexif.github.io^0.6`, ... (+6 more)
+ * @dependencies `libgd.github.io^2.3`, `libjpeg-turbo.org^2`, `libexif.github.io^0.6`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -70,8 +70,6 @@ export const gphoto2Package = {
     'libusb.info/compat^0.1',
     'curl.se^8',
     'gnome.org/libxml2^2.12',
-    'gnu.org/gcc',
-    'systemd.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

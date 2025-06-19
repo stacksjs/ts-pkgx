@@ -8,7 +8,7 @@
  *
  * @install `launchpad install conda`
  * @aliases `conda`
- * @dependencies `pkgx.sh^1`, `openssl.org^1.1`, `python.org=3.11.5`, ... (+2 more)
+ * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const condaPackage = {
   dependencies: [
     'pkgx.sh^1',
     'openssl.org^1.1',
-    'python.org=3.11.5',
-    'gnu.org/patch',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

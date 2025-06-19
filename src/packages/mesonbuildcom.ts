@@ -8,7 +8,7 @@
  *
  * @install `launchpad install meson`
  * @aliases `meson`
- * @dependencies `pkgx.sh^1`, `python.org~3.11`, `ninja-build.org^1`, ... (+1 more)
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const mesonPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.11',
-    'ninja-build.org^1',
-    'llvm.org<17',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install nvm-exec`
  * @aliases `nvm-exec`
- * @dependencies `curl.se`
+ * @dependencies `linux:curl.se` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,9 +60,10 @@ export const nvmexecPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'curl.se',
+    'linux:curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

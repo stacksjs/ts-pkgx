@@ -8,7 +8,7 @@
  *
  * @install `launchpad install local-ai`
  * @aliases `local-ai`, `LocalAI`
- * @dependencies `openmp.llvm.org@18`, `go.dev^1.21`, `cmake.org^3`, ... (+9 more)
+ * @dependencies `darwin:openmp.llvm.org@18` (includes OS-specific dependencies with `os:package` format)
  * @companions `linux`
  *
  * @example
@@ -67,20 +67,10 @@ export const localaiPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'openmp.llvm.org@18',
-    'go.dev^1.21',
-    'cmake.org^3',
-    'grpc.io=1.68.2',
-    'gnu.org/wget^1',
-    'gnu.org/coreutils^9',
-    'git-scm.org^2',
-    'google.com/protobuf-go^1',
-    'grpc.io/grpc-go^1',
-    'gnu.org/gcc^14 # linux needs omp.h',
-    'protobuf.dev~28.1.0',
-    'llvm.org^18 # apple doens',
+    'darwin:openmp.llvm.org@18',
   ] as const,
   /**
    * Available versions from newest to oldest.

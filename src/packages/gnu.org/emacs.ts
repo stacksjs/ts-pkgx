@@ -8,7 +8,7 @@
  *
  * @install `launchpad install emacs`
  * @name `emacs`
- * @dependencies `gnome.org/libxml2^2.10.3`, `invisible-island.net/ncurses^6.3.0`, `libjpeg-turbo.org^2.1.5.1`, ... (+6 more)
+ * @dependencies `gnome.org/libxml2^2.10.3`, `invisible-island.net/ncurses^6.3.0`, `libjpeg-turbo.org^2.1.5.1`, ... (+5 more)
  *
  * @example
  * ```typescript
@@ -70,7 +70,6 @@ export const emacsPackage = {
     'gnu.org/libidn2^2.3',
     'gnutls.org^3.6',
     'zlib.net^1.2',
-    'freedesktop.org/pkg-config^0.29.2',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +kernel.org/linux-headers -- $SHELL -i`
- * @dependencies `gnu.org/sed`
  *
  * @example
  * ```typescript
@@ -43,13 +42,7 @@ export const kernelorglinuxheadersPackage = {
   installCommand: 'launchpad install +kernel.org/linux-headers -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/sed',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

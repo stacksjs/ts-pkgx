@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/gtk-mac-integration-gtk3 -- $SHELL -i`
- * @dependencies `gnu.org/gettext`, `gtk.org/gtk3`, `gnome.org/gobject-introspection`, ... (+3 more)
+ * @dependencies `gnu.org/gettext`, `gtk.org/gtk3`
  *
  * @example
  * ```typescript
@@ -50,10 +50,6 @@ export const gnomeorggtkmacintegrationgtk3Package = {
   dependencies: [
     'gnu.org/gettext',
     'gtk.org/gtk3',
-    'gnome.org/gobject-introspection',
-    'freedesktop.org/intltool',
-    'mesonbuild.com',
-    'ninja-build.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

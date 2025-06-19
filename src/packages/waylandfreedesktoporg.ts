@@ -8,7 +8,7 @@
  *
  * @install `launchpad install wayland-scanner`
  * @aliases `wayland-scanner`, `wayland`
- * @dependencies `libexpat.github.io`, `sourceware.org/libffi`, `gnome.org/libxml2`, ... (+7 more)
+ * @dependencies `libexpat.github.io`, `sourceware.org/libffi`, `gnome.org/libxml2`
  *
  * @example
  * ```typescript
@@ -64,13 +64,6 @@ export const waylandscannerPackage = {
     'libexpat.github.io',
     'sourceware.org/libffi',
     'gnome.org/libxml2',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'gnu.org/make',
-    'cmake.org',
-    'freedesktop.org/pkg-config',
-    'curl.se',
-    'tukaani.org/xz',
   ] as const,
   /**
    * Available versions from newest to oldest.

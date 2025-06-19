@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/gi-docgen -- $SHELL -i`
- * @dependencies `pkgx.sh^1`, `python.org~3.12`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -49,7 +49,6 @@ export const gnomeorggidocgenPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +python.org -- $SHELL -i`
  * @aliases `python`, `py`
- * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+12 more)
+ * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+8 more)
  * @companions `pip.pypa.io`
  *
  * @example
@@ -82,10 +82,6 @@ export const pythonPackage = {
     'gnu.org/readline@8',
     'invisible-island.net/ncurses@6',
     'tcl-lang.org@8',
-    'freedesktop.org/pkg-config^0.29',
-    'gnu.org/patch',
-    'curl.se',
-    'crates.io/semverator',
   ] as const,
   /**
    * Available versions from newest to oldest.

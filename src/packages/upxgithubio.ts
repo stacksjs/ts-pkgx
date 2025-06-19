@@ -8,7 +8,7 @@
  *
  * @install `launchpad install upx`
  * @aliases `upx`
- * @dependencies `zlib.net`, `cmake.org`, `oberhumer.com/ucl`
+ * @dependencies `zlib.net`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const upxPackage = {
    */
   dependencies: [
     'zlib.net',
-    'cmake.org',
-    'oberhumer.com/ucl',
   ] as const,
   /**
    * Available versions from newest to oldest.

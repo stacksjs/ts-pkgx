@@ -7,7 +7,6 @@
  *
  * @install `launchpad install +github.com/nemtrif/utfcpp -- $SHELL -i`
  * @aliases `utf8cpp`
- * @dependencies `cmake.org`, `gnu.org/gcc@13`, `cmake.org`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -49,18 +48,7 @@ export const utf8cppPackage = {
   installCommand: 'launchpad install +github.com/nemtrif/utfcpp -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'gnu.org/gcc@13',
-    'cmake.org',
-    'gnu.org/sed',
-    'gnu.org/gcc@13',
-    'gnu.org/make',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cbindgen`
  * @name `cbindgen`
- * @dependencies `llvm.org`, `rust-lang.org>=1.70`, `rust-lang.org/cargo`, ... (+1 more)
+ * @dependencies `linux:llvm.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,12 +60,10 @@ export const cbindgenPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'llvm.org',
-    'rust-lang.org>=1.70',
-    'rust-lang.org/cargo',
-    'rust-lang.org/rust-bindgen',
+    'linux:llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

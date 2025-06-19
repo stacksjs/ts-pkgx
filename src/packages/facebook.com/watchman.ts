@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +facebook.com/watchman -- $SHELL -i`
  * @name `watchman`
- * @dependencies `facebook.com/edencommon`, `facebook.com/fb303`, `facebook.com/folly`, ... (+17 more)
+ * @dependencies `facebook.com/edencommon`, `facebook.com/fb303`, `facebook.com/folly`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -65,6 +65,7 @@ export const watchmanPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'facebook.com/edencommon',
@@ -78,15 +79,8 @@ export const watchmanPackage = {
     'openssl.org^1.1',
     'pcre.org/v2^10',
     'python.org~3.11',
-    'libcxx.llvm.org^18 # libunwind',
-    'gnu.org/gcc/libstdcxx@13',
-    'cmake.org',
-    'github.com/skystrife/cpptoml',
-    'facebook.com/fbthrift',
-    'facebook.com/mvfst',
-    'google.com/googletest',
-    'rust-lang.org',
-    'gnu.org/gcc@13',
+    'linux:libcxx.llvm.org^18 # libunwind',
+    'linux:gnu.org/gcc/libstdcxx@13',
   ] as const,
   /**
    * Available versions from newest to oldest.

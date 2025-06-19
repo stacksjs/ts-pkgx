@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +jpeg.org/jpegxl -- $SHELL -i`
- * @dependencies `github.com/google/brotli^1`, `littlecms.com^2.13`, `google.com/highway^1`, ... (+8 more)
+ * @dependencies `github.com/google/brotli^1`, `littlecms.com^2.13`, `google.com/highway^1`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -66,10 +66,6 @@ export const jpegorgjpegxlPackage = {
     'giflib.sourceforge.io^5',
     'openexr.com^3',
     'libpng.org^1',
-    'freedesktop.org/pkg-config^0.29',
-    'cmake.org^3',
-    'gnu.org/coreutils',
-    'git-scm.org^2',
   ] as const,
   /**
    * Available versions from newest to oldest.

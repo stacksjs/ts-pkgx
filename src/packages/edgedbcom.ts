@@ -8,7 +8,6 @@
  *
  * @install `launchpad install edgedb`
  * @aliases `edgedb`
- * @dependencies `rust-lang.org^1.61`, `rust-lang.org/cargo^0`, `perl.org^5`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const edgedbPackage = {
     'edgedb',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org^1.61',
-    'rust-lang.org/cargo^0',
-    'perl.org^5',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

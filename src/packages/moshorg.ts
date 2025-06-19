@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +mosh.org -- $SHELL -i`
  * @aliases `mosh`
- * @dependencies `protobuf.dev@26.1.0`, `invisible-island.net/ncurses@6`, `zlib.net@1.3`, ... (+1 more)
+ * @dependencies `protobuf.dev@26.1.0`, `invisible-island.net/ncurses@6`, `zlib.net@1.3`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -61,12 +61,13 @@ export const moshPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'protobuf.dev@26.1.0',
     'invisible-island.net/ncurses@6',
     'zlib.net@1.3',
-    'openssl.org@3',
+    'linux:openssl.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

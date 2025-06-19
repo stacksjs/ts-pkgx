@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +libzip.org -- $SHELL -i`
  * @aliases `zip`
- * @dependencies `facebook.com/zstd>=1.5.0`, `sourceware.org/bzip2>=1.0.8`, `tukaani.org/xz>=5.2.7`, ... (+3 more)
+ * @dependencies `facebook.com/zstd>=1.5.0`, `darwin:sourceware.org/bzip2>=1.0.8`, `darwin:tukaani.org/xz>=5.2.7`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -62,14 +62,14 @@ export const zipPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'facebook.com/zstd>=1.5.0',
-    'sourceware.org/bzip2>=1.0.8',
-    'tukaani.org/xz>=5.2.7',
-    'zlib.net>=1.2.13',
-    'openssl.org^1.1',
-    'cmake.org>=3.24',
+    'darwin:sourceware.org/bzip2>=1.0.8',
+    'darwin:tukaani.org/xz>=5.2.7',
+    'darwin:zlib.net>=1.2.13',
+    'linux:openssl.org^1.1',
   ] as const,
   /**
    * Available versions from newest to oldest.

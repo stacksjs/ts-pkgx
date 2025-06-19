@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +poppler.freedesktop.org -- $SHELL -i`
- * @dependencies `boost.org>=1.58.0`, `cairographics.org>=1.16.0`, `curl.se`, ... (+19 more)
+ * @dependencies `boost.org>=1.58.0`, `cairographics.org>=1.16.0`, `curl.se`, ... (+16 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -65,6 +65,7 @@ export const popplerfreedesktoporgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'boost.org>=1.58.0',
@@ -85,10 +86,7 @@ export const popplerfreedesktoporgPackage = {
     'gnupg.org/libgpg-error@1',
     'gnupg.org/libassuan@2',
     'littlecms.com^2.9',
-    'gnu.org/gcc/libstdcxx^14 # apparently, clang c++20 std isn',
-    'cmake.org>=3.16.0',
-    'gnome.org/gobject-introspection>=1.64.0',
-    'gnu.org/gcc@14',
+    'linux:gnu.org/gcc/libstdcxx^14 # apparently, clang c++20 std isn',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +videolan.org/libplacebo -- $SHELL -i`
- * @dependencies `littlecms.com^2`, `github.com/KhronosGroup/Vulkan-Loader^1.3.272`, `mesonbuild.com`, ... (+7 more)
+ * @dependencies `littlecms.com^2`, `github.com/KhronosGroup/Vulkan-Loader^1.3.272`
  *
  * @example
  * ```typescript
@@ -50,14 +50,6 @@ export const videolanorglibplaceboPackage = {
   dependencies: [
     'littlecms.com^2',
     'github.com/KhronosGroup/Vulkan-Loader^1.3.272',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'python.org^3.11',
-    'github.com/KhronosGroup/Vulkan-Headers',
-    'curl.se',
-    'gnu.org/gcc',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

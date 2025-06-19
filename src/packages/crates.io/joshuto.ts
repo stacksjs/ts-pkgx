@@ -8,7 +8,7 @@
  *
  * @install `launchpad install joshuto`
  * @name `joshuto`
- * @dependencies `libgit2.org@1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`
+ * @dependencies `libgit2.org@1`
  * @companions `github.com/junegunn/fzf`, `crates.io/zoxide`
  *
  * @example
@@ -71,8 +71,6 @@ export const joshutoPackage = {
    */
   dependencies: [
     'libgit2.org@1',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

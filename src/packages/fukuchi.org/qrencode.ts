@@ -8,7 +8,7 @@
  *
  * @install `launchpad install qrencode`
  * @name `qrencode`
- * @dependencies `libpng.org`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+4 more)
+ * @dependencies `libpng.org`
  *
  * @example
  * ```typescript
@@ -63,12 +63,6 @@ export const qrencodePackage = {
    */
   dependencies: [
     'libpng.org',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/coreutils',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
-    'imagemagick.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

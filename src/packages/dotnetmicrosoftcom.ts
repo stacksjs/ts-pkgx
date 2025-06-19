@@ -8,7 +8,7 @@
  *
  * @install `launchpad install dotnet`
  * @aliases `dotnet`
- * @dependencies `unicode.org^71`, `openssl.org`, `curl.se`
+ * @dependencies `linux:unicode.org^71`, `linux:openssl.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,11 +60,11 @@ export const dotnetPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'unicode.org^71',
-    'openssl.org',
-    'curl.se',
+    'linux:unicode.org^71',
+    'linux:openssl.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

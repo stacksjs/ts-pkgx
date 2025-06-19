@@ -8,7 +8,7 @@
  *
  * @install `launchpad install huggingface-cli`
  * @aliases `huggingface-cli`
- * @dependencies `pkgx.sh^1`, `python.org~3.11`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const huggingfacecliPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

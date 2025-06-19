@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +mujs.com -- $SHELL -i`
  * @aliases `mujs`
- * @dependencies `gnu.org/readline~8.1`, `invisible-island.net/ncurses`, `gnu.org/gcc`, ... (+2 more)
+ * @dependencies `linux:gnu.org/readline~8.1`, `linux:invisible-island.net/ncurses` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -61,13 +61,11 @@ export const mujsPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnu.org/readline~8.1',
-    'invisible-island.net/ncurses',
-    'gnu.org/gcc',
-    'gnu.org/make',
-    'freedesktop.org/pkg-config',
+    'linux:gnu.org/readline~8.1',
+    'linux:invisible-island.net/ncurses',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install vhs`
  * @name `vhs`
- * @dependencies `ffmpeg.org>=5`, `tsl0922.github.io/ttyd^1.7.2`, `go.dev^1.18`
+ * @dependencies `ffmpeg.org>=5`, `tsl0922.github.io/ttyd^1.7.2`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const vhsPackage = {
   dependencies: [
     'ffmpeg.org>=5',
     'tsl0922.github.io/ttyd^1.7.2',
-    'go.dev^1.18',
   ] as const,
   /**
    * Available versions from newest to oldest.

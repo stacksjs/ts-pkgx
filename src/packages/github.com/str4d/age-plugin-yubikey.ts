@@ -8,7 +8,7 @@
  *
  * @install `launchpad install age-plugin-yubikey`
  * @name `age-plugin-yubikey`
- * @dependencies `pcsclite.apdu.fr^2`, `rust-lang.org>=1.65`, `rust-lang.org/cargo`
+ * @dependencies `linux:pcsclite.apdu.fr^2` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,11 +60,10 @@ export const agepluginyubikeyPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'pcsclite.apdu.fr^2',
-    'rust-lang.org>=1.65',
-    'rust-lang.org/cargo',
+    'linux:pcsclite.apdu.fr^2',
   ] as const,
   /**
    * Available versions from newest to oldest.

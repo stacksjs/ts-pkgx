@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +groonga.org -- $SHELL -i`
  * @aliases `groonga`
- * @dependencies `taku910.github.io/mecab`, `taku910.github.io/mecab-ipadic`, `taku910.github.io/mecab`, ... (+8 more)
+ * @dependencies `darwin:taku910.github.io/mecab`, `darwin:taku910.github.io/mecab-ipadic`, `msgpack.org`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -61,19 +61,16 @@ export const groongaPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'taku910.github.io/mecab',
-    'taku910.github.io/mecab-ipadic',
-    'taku910.github.io/mecab',
-    'taku910.github.io/mecab-ipadic',
+    'darwin:taku910.github.io/mecab',
+    'darwin:taku910.github.io/mecab-ipadic',
     'msgpack.org',
     'openssl.org',
     'pcre.org/v2',
     'github.com/besser82/libxcrypt',
-    'gnome.org/glib',
-    'freedesktop.org/pkg-config',
-    'curl.se',
+    'linux:gnome.org/glib',
   ] as const,
   /**
    * Available versions from newest to oldest.

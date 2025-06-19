@@ -8,7 +8,7 @@
  *
  * @install `launchpad install colima`
  * @name `colima`
- * @dependencies `lima-vm.io`, `go.dev`
+ * @dependencies `lima-vm.io`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const colimaPackage = {
    */
   dependencies: [
     'lima-vm.io',
-    'go.dev',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +open-mpi.org -- $SHELL -i`
- * @dependencies `open-mpi.org/hwloc`, `openpmix.github.io@5`, `libevent.org`, ... (+5 more)
+ * @dependencies `open-mpi.org/hwloc`, `openpmix.github.io@5`, `libevent.org`
  * @companions `OMPI_F77FLAGS^$FCFLAGS -I{{prefix}}/include`, `OMPI_F90FLAGS^$FCFLAGS -I{{prefix}}/include`
  *
  * @example
@@ -78,11 +78,6 @@ export const openmpiorgPackage = {
     'open-mpi.org/hwloc',
     'openpmix.github.io@5',
     'libevent.org',
-    'zlib.net^1',
-    'python.org^3',
-    'gnu.org/binutils',
-    'gnu.org/gcc',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

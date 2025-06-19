@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +lunarvim.org -- $SHELL -i`
- * @dependencies `gnu.org/bash`, `crates.io/fd-find`, `pip.pypa.io`, ... (+6 more)
+ * @dependencies `gnu.org/bash`, `crates.io/fd-find`, `pip.pypa.io`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -65,8 +65,6 @@ export const lunarvimorgPackage = {
     'nodejs.org',
     'rust-lang.org/cargo',
     'neovim.io',
-    'cmake.org',
-    'gnu.org/bash',
   ] as const,
   /**
    * Available versions from newest to oldest.

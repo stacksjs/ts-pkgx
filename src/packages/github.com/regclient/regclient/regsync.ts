@@ -8,7 +8,7 @@
  *
  * @install `launchpad install regsync`
  * @name `regsync`
- * @dependencies `curl.se/ca-certs`, `go.dev^1.21`, `git-scm.org`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const regsyncPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev^1.21',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

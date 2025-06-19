@@ -8,7 +8,7 @@
  *
  * @install `launchpad install vcluster`
  * @aliases `vcluster`
- * @dependencies `kubernetes.io/kubectl^1`, `curl.se/ca-certs`, `go.dev^1.21`, ... (+1 more)
+ * @dependencies `kubernetes.io/kubectl^1`, `linux:curl.se/ca-certs` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,12 +60,11 @@ export const vclusterPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'kubernetes.io/kubectl^1',
-    'curl.se/ca-certs',
-    'go.dev^1.21',
-    'gnu.org/gcc',
+    'linux:curl.se/ca-certs',
   ] as const,
   /**
    * Available versions from newest to oldest.

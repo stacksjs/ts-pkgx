@@ -8,7 +8,6 @@
  *
  * @install `launchpad install gpp`
  * @name `gpp`
- * @dependencies `gnu.org/autoconf`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const gppPackage = {
     'gpp',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/autoconf',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

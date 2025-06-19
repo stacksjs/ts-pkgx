@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git-review`
  * @name `git-review`
- * @dependencies `pkgx.sh^1`, `python.org^3`, `git-scm.org`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -62,8 +62,6 @@ export const gitreviewPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org^3',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

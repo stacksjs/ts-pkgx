@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +ceres-solver.org -- $SHELL -i`
- * @dependencies `eigen.tuxfamily.org`, `gflags.github.io`, `google.com/glog`, ... (+10 more)
+ * @dependencies `eigen.tuxfamily.org`, `gflags.github.io`, `google.com/glog`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -55,12 +55,6 @@ export const ceressolverorgPackage = {
     'netlib.org/lapack',
     'people.engr.tamu.edu/davis/suitesparse',
     'github.com/oneapi-src/oneTBB',
-    'cmake.org',
-    'gnu.org/gcc',
-    'gnu.org/make',
-    'cmake.org',
-    'gnu.org/gcc',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

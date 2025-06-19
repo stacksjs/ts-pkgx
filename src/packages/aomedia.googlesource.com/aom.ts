@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +aomedia.googlesource.com/aom -- $SHELL -i`
  * @name `aom`
- * @dependencies `nasm.us@2`, `cmake.org^3`
  *
  * @example
  * ```typescript
@@ -58,14 +57,7 @@ export const aomPackage = {
     'aomdec',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'nasm.us@2',
-    'cmake.org^3',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

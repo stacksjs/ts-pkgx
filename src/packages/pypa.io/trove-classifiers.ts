@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +pypa.io/trove-classifiers -- $SHELL -i`
- * @dependencies `python.org~3.12`, `pypa.io/setuptools`
+ * @dependencies `python.org~3.12`
  *
  * @example
  * ```typescript
@@ -50,7 +50,6 @@ export const pypaiotroveclassifiersPackage = {
    */
   dependencies: [
     'python.org~3.12',
-    'pypa.io/setuptools',
   ] as const,
   /**
    * Available versions from newest to oldest.

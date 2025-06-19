@@ -8,7 +8,7 @@
  *
  * @install `launchpad install micromamba`
  * @aliases `micromamba`
- * @dependencies `curl.se/ca-certs`, `curl.se`, `sourceware.org/bzip2`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const micromambaPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'curl.se',
-    'sourceware.org/bzip2',
   ] as const,
   /**
    * Available versions from newest to oldest.

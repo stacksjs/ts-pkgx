@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freeglut.sourceforge.io -- $SHELL -i`
- * @dependencies `x.org/x11`, `x.org/xi`, `x.org/xrandr`, ... (+6 more)
+ * @dependencies `x.org/x11`, `x.org/xi`, `x.org/xrandr`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,6 +47,7 @@ export const freeglutsourceforgeioPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'x.org/x11',
@@ -54,10 +55,8 @@ export const freeglutsourceforgeioPackage = {
     'x.org/xrandr',
     'x.org/xxf86vm',
     'mesa3d.org',
-    'freedesktop.org/mesa-glu',
-    'x.org/xinput',
-    'cmake.org',
-    'freedesktop.org/pkg-config',
+    'linux:freedesktop.org/mesa-glu',
+    'linux:x.org/xinput',
   ] as const,
   /**
    * Available versions from newest to oldest.

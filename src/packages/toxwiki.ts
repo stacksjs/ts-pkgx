@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tox`
  * @aliases `tox`
- * @dependencies `pkgx.sh^1`, `python.org^3.7`, `gnu.org/coreutils`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const toxPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org^3.7',
-    'gnu.org/coreutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

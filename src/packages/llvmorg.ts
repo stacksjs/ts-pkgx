@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +llvm.org -- $SHELL -i`
- * @dependencies `zlib.net@1`, `cmake.org>=3<3.29`, `ninja-build.org@1`, ... (+3 more)
+ * @dependencies `zlib.net@1`
  *
  * @example
  * ```typescript
@@ -71,11 +71,6 @@ export const llvmorgPackage = {
    */
   dependencies: [
     'zlib.net@1',
-    'cmake.org>=3<3.29',
-    'ninja-build.org@1',
-    'python.org>=3<3.12',
-    'crates.io/semverator',
-    'crates.io/semverator',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/vala -- $SHELL -i`
- * @dependencies `gnome.org/glib`, `graphviz.org`, `freedesktop.org/pkg-config`, ... (+6 more)
+ * @dependencies `gnome.org/glib`, `graphviz.org`, `freedesktop.org/pkg-config`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -65,11 +65,6 @@ export const gnomeorgvalaPackage = {
     'graphviz.org',
     'freedesktop.org/pkg-config',
     'gnu.org/gettext',
-    'gnu.org/bison',
-    'github.com/westes/flex',
-    'gnome.org/libxslt',
-    'gnome.org/gobject-introspection',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

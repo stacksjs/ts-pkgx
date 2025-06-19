@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +mupdf.com -- $SHELL -i`
- * @dependencies `zlib.net^1`, `openssl.org^1.1`, `info-zip.org/unzip^6`, ... (+18 more)
+ * @dependencies `zlib.net^1`, `openssl.org^1.1`, `info-zip.org/unzip^6`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -57,6 +57,7 @@ export const mupdfcomPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'zlib.net^1',
@@ -68,18 +69,17 @@ export const mupdfcomPackage = {
     'mujs.com^1',
     'openjpeg.org^2',
     'jbig2dec.com^0',
-    'libarchive.org^3',
-    'mesa3d.org^23',
-    'freeglut.sourceforge.io^3',
-    'freedesktop.org/mesa-glu^9',
-    'x.org/protocol>=2022',
-    'x.org/x11^1',
-    'x.org/xcursor^1',
-    'x.org/xinerama^1',
-    'x.org/xrandr^1',
-    'gnome.org/glib^2',
-    'x.org/xtrans^1',
-    'git-scm.org',
+    'darwin:libarchive.org^3',
+    'linux:mesa3d.org^23',
+    'linux:freeglut.sourceforge.io^3',
+    'linux:freedesktop.org/mesa-glu^9',
+    'linux:x.org/protocol>=2022',
+    'linux:x.org/x11^1',
+    'linux:x.org/xcursor^1',
+    'linux:x.org/xinerama^1',
+    'linux:x.org/xrandr^1',
+    'linux:gnome.org/glib^2',
+    'linux:x.org/xtrans^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

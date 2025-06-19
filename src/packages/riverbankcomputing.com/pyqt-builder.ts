@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pyqt-bundle`
  * @aliases `pyqt-bundle`
- * @dependencies `python.org~3.11`, `riverbankcomputing.com/sip`, `llvm.org<17`, ... (+1 more)
+ * @dependencies `python.org~3.11`, `riverbankcomputing.com/sip`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const pyqtbundlePackage = {
   dependencies: [
     'python.org~3.11',
     'riverbankcomputing.com/sip',
-    'llvm.org<17',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/AlDanial/cloc -- $SHELL -i`
- * @dependencies `perl.org^5`, `cpanmin.us`, `gnu.org/gcc`, ... (+1 more)
+ * @dependencies `perl.org^5`
  * @companions `PERL5LIB^$PERL5LIB:{{prefix}}/lib/perl5`
  *
  * @example
@@ -66,9 +66,6 @@ export const githubcomaldanialclocPackage = {
    */
   dependencies: [
     'perl.org^5',
-    'cpanmin.us',
-    'gnu.org/gcc',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

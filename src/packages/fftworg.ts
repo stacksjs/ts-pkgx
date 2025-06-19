@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +fftw.org -- $SHELL -i`
  * @aliases `fftw`
- * @dependencies `open-mpi.org`, `freedesktop.org/pkg-config`
+ * @dependencies `open-mpi.org`
  *
  * @example
  * ```typescript
@@ -66,7 +66,6 @@ export const fftwPackage = {
    */
   dependencies: [
     'open-mpi.org',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

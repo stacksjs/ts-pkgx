@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/nettle -- $SHELL -i`
- * @dependencies `gnu.org/gmp`, `gnu.org/m4`
  *
  * @example
  * ```typescript
@@ -56,14 +55,7 @@ export const gnuorgnettlePackage = {
     'sexp-conv',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/gmp',
-    'gnu.org/m4',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

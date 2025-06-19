@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git-credential-manager`
  * @name `git-credential-manager`
- * @dependencies `openssl.org^1.1.1`, `unicode.org^71`, `zlib.net^1.3`, ... (+4 more)
+ * @dependencies `openssl.org^1.1.1`, `unicode.org^71`, `zlib.net^1.3`, ... (+1 more)
  * @companions `git-scm.org`
  *
  * @example
@@ -73,9 +73,6 @@ export const gitcredentialmanagerPackage = {
     'unicode.org^71',
     'zlib.net^1.3',
     'dotnet.microsoft.com^8.0',
-    'git-scm.org^2.27.0',
-    'kerberos.org^1.21.3',
-    'gnu.org/gcc>=12',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +jenkins.io -- $SHELL -i`
- * @dependencies `openjdk.org<20`, `curl.se`, `pkgx.sh^1`
+ * @dependencies `openjdk.org<20`
  *
  * @example
  * ```typescript
@@ -59,8 +59,6 @@ export const jenkinsioPackage = {
    */
   dependencies: [
     'openjdk.org<20',
-    'curl.se',
-    'pkgx.sh^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

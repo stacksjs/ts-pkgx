@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +po4a.org -- $SHELL -i`
- * @dependencies `gnu.org/gettext^0.22`, `perl.org^5.22`, `gnome.org/libxslt^1.1`, ... (+3 more)
+ * @dependencies `gnu.org/gettext^0.22`, `perl.org^5.22`, `gnome.org/libxslt^1.1`
  * @companions `PERL5LIB^${{prefix}}/libexec/lib/perl5:$PERL5LIB`
  *
  * @example
@@ -74,9 +74,6 @@ export const po4aorgPackage = {
     'gnu.org/gettext^0.22',
     'perl.org^5.22',
     'gnome.org/libxslt^1.1',
-    'cpanmin.us',
-    'docbook.org/xsl',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

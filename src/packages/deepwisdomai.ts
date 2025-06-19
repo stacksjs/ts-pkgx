@@ -8,7 +8,7 @@
  *
  * @install `launchpad install metagpt`
  * @aliases `metagpt`, `MetaGPT`
- * @dependencies `pkgx.sh^1`, `git-scm.org^2 # v0.7.0 requires it`, `python.org>=3.9<3.12`, ... (+1 more)
+ * @dependencies `pkgx.sh^1`, `git-scm.org^2 # v0.7.0 requires it`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const metagptPackage = {
   dependencies: [
     'pkgx.sh^1',
     'git-scm.org^2 # v0.7.0 requires it',
-    'python.org>=3.9<3.12',
-    'gnu.org/coreutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/binutils -- $SHELL -i`
- * @dependencies `gnu.org/bison`, `gnu.org/texinfo`, `gnu.org/gcc`
  *
  * @example
  * ```typescript
@@ -63,15 +62,7 @@ export const gnuorgbinutilsPackage = {
     'strip',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/bison',
-    'gnu.org/texinfo',
-    'gnu.org/gcc',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

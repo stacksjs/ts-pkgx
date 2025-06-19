@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +ffmpeg.org -- $SHELL -i`
- * @dependencies `lame.sourceforge.io>=3.98.3`, `libsdl.org^2`, `freetype.org^2`, ... (+9 more)
+ * @dependencies `lame.sourceforge.io>=3.98.3`, `libsdl.org^2`, `freetype.org^2`, ... (+6 more)
  *
  * @example
  * ```typescript
@@ -68,9 +68,6 @@ export const ffmpegorgPackage = {
     'webmproject.org/libvpx^1',
     'opus-codec.org^1',
     'google.com/webp^1',
-    'nasm.us@2',
-    'gnu.org/wget',
-    'info-zip.org/unzip',
   ] as const,
   /**
    * Available versions from newest to oldest.

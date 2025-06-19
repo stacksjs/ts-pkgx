@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/automake -- $SHELL -i`
- * @dependencies `gnu.org/autoconf^2.65.0`, `perl.org`, `gnu.org/patch`, ... (+2 more)
+ * @dependencies `gnu.org/autoconf^2.65.0`, `perl.org`
  *
  * @example
  * ```typescript
@@ -60,9 +60,6 @@ export const gnuorgautomakePackage = {
   dependencies: [
     'gnu.org/autoconf^2.65.0',
     'perl.org',
-    'gnu.org/patch',
-    'gnu.org/make',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

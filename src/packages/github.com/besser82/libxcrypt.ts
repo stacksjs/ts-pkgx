@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/besser82/libxcrypt -- $SHELL -i`
- * @dependencies `freedesktop.org/pkg-config~0.29`, `perl.org`
  *
  * @example
  * ```typescript
@@ -44,14 +43,7 @@ export const githubcombesser82libxcryptPackage = {
   installCommand: 'launchpad install +github.com/besser82/libxcrypt -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'freedesktop.org/pkg-config~0.29',
-    'perl.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

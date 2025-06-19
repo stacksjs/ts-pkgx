@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +vim.org -- $SHELL -i`
  * @aliases `vim`, `vi`
- * @dependencies `python.org~3.11`, `lua.org>=5.4`, `invisible-island.net/ncurses>=6.3`, ... (+3 more)
+ * @dependencies `python.org~3.11`, `lua.org>=5.4`, `invisible-island.net/ncurses>=6.3`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -68,7 +68,6 @@ export const vimPackage = {
     'invisible-island.net/ncurses>=6.3',
     'perl.org>=5.36',
     'ruby-lang.org>=3.2',
-    'gnu.org/make^4.3',
   ] as const,
   /**
    * Available versions from newest to oldest.

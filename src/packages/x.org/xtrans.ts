@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xtrans -- $SHELL -i`
- * @dependencies `x.org/protocol`, `x.org/util-macros`, `freedesktop.org/pkg-config~0.29`
+ * @dependencies `x.org/protocol`
  *
  * @example
  * ```typescript
@@ -49,8 +49,6 @@ export const xorgxtransPackage = {
    */
   dependencies: [
     'x.org/protocol',
-    'x.org/util-macros',
-    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

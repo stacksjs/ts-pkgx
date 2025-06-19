@@ -8,7 +8,7 @@
  *
  * @install `launchpad install openapi-generator`
  * @aliases `openapi-generator`
- * @dependencies `openjdk.org^21`, `maven.apache.org`
+ * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const openapigeneratorPackage = {
    */
   dependencies: [
     'openjdk.org^21',
-    'maven.apache.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

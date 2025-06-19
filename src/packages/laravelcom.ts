@@ -8,7 +8,7 @@
  *
  * @install `launchpad install laravel`
  * @aliases `laravel`
- * @dependencies `php.net^8.2`, `getcomposer.org^2.7`, `info-zip.org/unzip^6`, ... (+2 more)
+ * @dependencies `php.net^8.2`, `getcomposer.org^2.7`, `linux:info-zip.org/unzip^6` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,13 +60,12 @@ export const laravelPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'php.net^8.2',
     'getcomposer.org^2.7',
-    'info-zip.org/unzip^6',
-    'curl.se',
-    'pkgx.sh^1',
+    'linux:info-zip.org/unzip^6',
   ] as const,
   /**
    * Available versions from newest to oldest.

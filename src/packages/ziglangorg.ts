@@ -8,7 +8,6 @@
  *
  * @install `launchpad install zig`
  * @aliases `zig`
- * @dependencies `curl.se`, `gnu.org/tar`, `tukaani.org/xz`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const zigPackage = {
     'zig',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'curl.se',
-    'gnu.org/tar',
-    'tukaani.org/xz',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

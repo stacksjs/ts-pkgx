@@ -8,7 +8,7 @@
  *
  * @install `launchpad install bytebase`
  * @aliases `bytebase`
- * @dependencies `nodejs.org>=23.11`, `go.dev~1.24.2`, `pnpm.io`, ... (+6 more)
+ * @dependencies `nodejs.org>=23.11`
  * @companions `postgresql.org`
  *
  * @example
@@ -70,14 +70,6 @@ export const bytebasePackage = {
    */
   dependencies: [
     'nodejs.org>=23.11',
-    'go.dev~1.24.2',
-    'pnpm.io',
-    'git-scm.org^2 # since 3.5.1',
-    'kerberos.org^1 # added in 2.16.0',
-    'gnu.org/gcc',
-    'python.org~3.10',
-    'curl.se',
-    'pkgx.sh^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

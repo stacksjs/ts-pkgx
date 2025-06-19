@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git2`
  * @aliases `git2`
- * @dependencies `libssh2.org^1`, `cmake.org^3`, `freedesktop.org/pkg-config^0.29`
+ * @dependencies `libssh2.org^1`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const git2Package = {
    */
   dependencies: [
     'libssh2.org^1',
-    'cmake.org^3',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

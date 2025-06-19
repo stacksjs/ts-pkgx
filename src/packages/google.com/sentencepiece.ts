@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +google.com/sentencepiece -- $SHELL -i`
  * @aliases `spm`
- * @dependencies `cmake.org^3`, `python.org~3.11`, `pip.pypa.io`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -61,19 +60,7 @@ export const spmPackage = {
     'spm_train',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org^3',
-    'python.org~3.11',
-    'pip.pypa.io',
-    'freedesktop.org/pkg-config~0.29',
-    'protobuf.dev@25',
-    'gnu.org/wget',
-    'python.org~3.11',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/desktop-file-utils -- $SHELL -i`
- * @dependencies `gnome.org/glib@2`, `mesonbuild.com>=0.61`, `ninja-build.org`
+ * @dependencies `gnome.org/glib@2`
  *
  * @example
  * ```typescript
@@ -61,8 +61,6 @@ export const freedesktoporgdesktopfileutilsPackage = {
    */
   dependencies: [
     'gnome.org/glib@2',
-    'mesonbuild.com>=0.61',
-    'ninja-build.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

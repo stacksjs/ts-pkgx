@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gource`
  * @aliases `gource`
- * @dependencies `boost.org^1.82`, `freetype.org^2`, `libpng.org^1.6`, ... (+6 more)
+ * @dependencies `boost.org^1.82`, `freetype.org^2`, `libpng.org^1.6`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -69,8 +69,6 @@ export const gourcePackage = {
     'libsdl.org^2',
     'glew.sourceforge.io^2',
     'libsdl.org/SDL_image^2',
-    'freedesktop.org/pkg-config^0.29',
-    'glm.g-truc.net^0',
   ] as const,
   /**
    * Available versions from newest to oldest.

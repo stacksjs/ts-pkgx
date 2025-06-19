@@ -8,7 +8,7 @@
  *
  * @install `launchpad install node`
  * @aliases `node`
- * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+3 more)
+ * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  * @companions `npmjs.com`
  *
  * @example
@@ -67,14 +67,13 @@ export const nodePackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'unicode.org^71',
     'openssl.org@1.1',
     'zlib.net@1',
-    'gnu.org/gcc/libstdcxx',
-    'python.org~3.9',
-    'gnu.org/gcc',
+    'linux:gnu.org/gcc/libstdcxx',
   ] as const,
   /**
    * Available versions from newest to oldest.

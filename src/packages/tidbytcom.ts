@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pixlet`
  * @aliases `pixlet`
- * @dependencies `google.com/webp^1`, `go.dev^1.22`, `npmjs.com`, ... (+1 more)
+ * @dependencies `google.com/webp^1`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const pixletPackage = {
    */
   dependencies: [
     'google.com/webp^1',
-    'go.dev^1.22',
-    'npmjs.com',
-    'nodejs.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

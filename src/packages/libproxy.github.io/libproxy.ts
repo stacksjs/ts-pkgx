@@ -9,7 +9,7 @@
  * @install `launchpad install proxy`
  * @name `libproxy`
  * @aliases `proxy`
- * @dependencies `duktape.org`, `gnome.org/glib`, `curl.se`, ... (+8 more)
+ * @dependencies `duktape.org`, `gnome.org/glib`, `curl.se`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -61,19 +61,14 @@ export const proxyPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'duktape.org',
     'gnome.org/glib',
     'curl.se',
-    'freedesktop.org/dbus',
-    'llvm.org',
-    'gnome.org/gobject-introspection',
-    'gnome.org/gsettings-desktop-schemas',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'gnome.org/vala',
+    'linux:freedesktop.org/dbus',
+    'linux:llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

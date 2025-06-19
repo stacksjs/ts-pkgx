@@ -8,7 +8,6 @@
  *
  * @install `launchpad install duckdb`
  * @aliases `duckdb`
- * @dependencies `cmake.org^3`, `git-scm.org`, `python.org^3`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const duckdbPackage = {
     'duckdb',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org^3',
-    'git-scm.org',
-    'python.org^3',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

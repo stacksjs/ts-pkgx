@@ -8,7 +8,7 @@
  *
  * @install `launchpad install firebase`
  * @aliases `firebase`
- * @dependencies `nodejs.org`, `npmjs.com`
+ * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const firebasePackage = {
    */
   dependencies: [
     'nodejs.org',
-    'npmjs.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

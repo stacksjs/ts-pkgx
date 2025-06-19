@@ -8,7 +8,6 @@
  *
  * @install `launchpad install faac`
  * @name `faac`
- * @dependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -57,16 +56,7 @@ export const faacPackage = {
     'faac',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
-    'gnu.org/gcc',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

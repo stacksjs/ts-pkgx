@@ -8,7 +8,7 @@
  *
  * @install `launchpad install stow`
  * @name `stow`
- * @dependencies `perl.org^5.6.1`, `cpanmin.us^1`
+ * @dependencies `perl.org^5.6.1`
  * @companions `PERL5LIB^${{prefix}}/lib/perl5`
  *
  * @example
@@ -70,7 +70,6 @@ export const stowPackage = {
    */
   dependencies: [
     'perl.org^5.6.1',
-    'cpanmin.us^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

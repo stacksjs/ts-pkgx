@@ -8,7 +8,7 @@
  *
  * @install `launchpad install z3`
  * @name `z3`
- * @dependencies `gnu.org/gcc/libstdcxx@14`, `cmake.org^3`, `python.org>=3<3.12`, ... (+3 more)
+ * @dependencies `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,14 +60,10 @@ export const z3Package = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnu.org/gcc/libstdcxx@14',
-    'cmake.org^3',
-    'python.org>=3<3.12',
-    'gnu.org/gcc@14',
-    'gnu.org/wget',
-    'python.org~3.11',
+    'linux:gnu.org/gcc/libstdcxx@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

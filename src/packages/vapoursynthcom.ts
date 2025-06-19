@@ -8,7 +8,7 @@
  *
  * @install `launchpad install vspipe`
  * @aliases `vspipe`
- * @dependencies `python.org~3.11`, `github.com/sekrit-twc/zimg`, `gnu.org/gcc/libstdcxx`, ... (+8 more)
+ * @dependencies `python.org~3.11`, `github.com/sekrit-twc/zimg`, `linux:gnu.org/gcc/libstdcxx` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,19 +60,12 @@ export const vspipePackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'python.org~3.11',
     'github.com/sekrit-twc/zimg',
-    'gnu.org/gcc/libstdcxx',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'cython.org',
-    'gnu.org/libtool',
-    'nasm.us',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
-    'crates.io/semverator',
+    'linux:gnu.org/gcc/libstdcxx',
   ] as const,
   /**
    * Available versions from newest to oldest.

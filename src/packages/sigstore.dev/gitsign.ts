@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +sigstore.dev/gitsign -- $SHELL -i`
  * @name `gitsign`
- * @dependencies `git-scm.org`, `go.dev~1.23.4`
+ * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const gitsignPackage = {
    */
   dependencies: [
     'git-scm.org',
-    'go.dev~1.23.4',
   ] as const,
   /**
    * Available versions from newest to oldest.

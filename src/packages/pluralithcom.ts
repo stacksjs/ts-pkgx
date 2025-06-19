@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pluralith`
  * @aliases `pluralith`
- * @dependencies `curl.se/ca-certs`, `go.dev^1.21`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const pluralithPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev^1.21',
   ] as const,
   /**
    * Available versions from newest to oldest.

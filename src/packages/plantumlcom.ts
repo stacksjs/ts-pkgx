@@ -8,7 +8,7 @@
  *
  * @install `launchpad install plantuml`
  * @aliases `plantuml`
- * @dependencies `graphviz.org`, `openjdk.org`, `gnu.org/wget`
+ * @dependencies `graphviz.org`, `openjdk.org`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const plantumlPackage = {
   dependencies: [
     'graphviz.org',
     'openjdk.org',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

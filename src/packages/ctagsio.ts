@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ctags`
  * @aliases `ctags`
- * @dependencies `digip.org/jansson^2`, `pyyaml.org/libyaml^0.2`, `pcre.org/v2^10`, ... (+5 more)
+ * @dependencies `digip.org/jansson^2`, `pyyaml.org/libyaml^0.2`, `pcre.org/v2^10`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,10 +66,6 @@ export const ctagsPackage = {
     'pyyaml.org/libyaml^0.2',
     'pcre.org/v2^10',
     'gnome.org/libxml2~2.13 # 2.14 changes the API',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'docutils.org~0.20',
-    'python.org>=3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

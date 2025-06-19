@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +macvim.org -- $SHELL -i`
- * @dependencies `cscope.sourceforge.io`, `invisible-island.net/ncurses`, `lua.org`, ... (+5 more)
+ * @dependencies `cscope.sourceforge.io`, `invisible-island.net/ncurses`, `lua.org`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -75,7 +75,6 @@ export const macvimorgPackage = {
     'ruby-lang.org',
     'libsodium.org',
     'gnu.org/gettext',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

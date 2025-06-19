@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +openjpeg.org -- $SHELL -i`
  * @aliases `opj`
- * @dependencies `libpng.org^1`, `simplesystems.org/libtiff^4`, `cmake.org^3`
+ * @dependencies `libpng.org^1`, `simplesystems.org/libtiff^4`
  *
  * @example
  * ```typescript
@@ -66,7 +66,6 @@ export const opjPackage = {
   dependencies: [
     'libpng.org^1',
     'simplesystems.org/libtiff^4',
-    'cmake.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

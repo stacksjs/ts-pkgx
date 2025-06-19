@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cowsay`
  * @name `cowsay`
- * @dependencies `perl.org^5`, `cpanmin.us`
+ * @dependencies `perl.org^5`
  * @companions `PERL5LIB^{{prefix}}/lib/perl5:$PERL5LIB`
  *
  * @example
@@ -70,7 +70,6 @@ export const cowsayPackage = {
    */
   dependencies: [
     'perl.org^5',
-    'cpanmin.us',
   ] as const,
   /**
    * Available versions from newest to oldest.

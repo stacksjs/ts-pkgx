@@ -8,7 +8,7 @@
  *
  * @install `launchpad install mockgen`
  * @name `mockgen`
- * @dependencies `go.dev^1.20`, `goreleaser.com`, `git-scm.org`
+ * @dependencies `go.dev^1.20`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const mockgenPackage = {
    */
   dependencies: [
     'go.dev^1.20',
-    'goreleaser.com',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

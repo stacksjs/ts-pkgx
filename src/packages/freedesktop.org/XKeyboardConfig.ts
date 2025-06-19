@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/XKeyboardConfig -- $SHELL -i`
- * @dependencies `gnu.org/gettext`, `mesonbuild.com`, `ninja-build.org`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -43,19 +42,7 @@ export const freedesktoporgxkeyboardconfigPackage = {
   installCommand: 'launchpad install +freedesktop.org/XKeyboardConfig -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/gettext',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'python.org~3.11',
-    'gnome.org/libxslt',
-    'freedesktop.org/pkg-config',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

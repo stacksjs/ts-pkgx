@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +opendap.org -- $SHELL -i`
- * @dependencies `gnome.org/libxml2`, `openssl.org`, `curl.se`, ... (+9 more)
+ * @dependencies `gnome.org/libxml2`, `openssl.org`, `curl.se`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -58,20 +58,14 @@ export const opendaporgPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnome.org/libxml2',
     'openssl.org',
     'curl.se',
-    'sourceforge.net/libtirpc',
-    'github.com/util-linux/util-linux',
-    'gnu.org/bison',
-    'freedesktop.org/pkg-config',
-    'github.com/westes/flex',
-    'gnu.org/patch',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
+    'linux:sourceforge.net/libtirpc',
+    'linux:github.com/util-linux/util-linux',
   ] as const,
   /**
    * Available versions from newest to oldest.

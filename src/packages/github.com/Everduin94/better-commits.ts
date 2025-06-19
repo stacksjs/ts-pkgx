@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/Everduin94/better-commits -- $SHELL -i`
- * @dependencies `nodejs.org^20`, `npmjs.com^10`
+ * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
@@ -61,7 +61,6 @@ export const githubcomeverduin94bettercommitsPackage = {
    */
   dependencies: [
     'nodejs.org^20',
-    'npmjs.com^10',
   ] as const,
   /**
    * Available versions from newest to oldest.

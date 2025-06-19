@@ -8,7 +8,7 @@
  *
  * @install `launchpad install bashly`
  * @aliases `bashly`
- * @dependencies `ruby-lang.org^3.1`, `rubygems.org`, `rubygems.org`
+ * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
  * @companions `gnu.org/bash`
  *
  * @example
@@ -70,7 +70,6 @@ export const bashlyPackage = {
    */
   dependencies: [
     'ruby-lang.org^3.1',
-    'rubygems.org',
     'rubygems.org',
   ] as const,
   /**

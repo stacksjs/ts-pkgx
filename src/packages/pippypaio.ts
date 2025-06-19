@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +pip.pypa.io -- $SHELL -i`
  * @aliases `pip`
- * @dependencies `pkgx.sh^1`, `python.org~3.11`, `crates.io/semverator^0.4.3`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -67,8 +67,6 @@ export const pipPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.11',
-    'crates.io/semverator^0.4.3',
   ] as const,
   /**
    * Available versions from newest to oldest.

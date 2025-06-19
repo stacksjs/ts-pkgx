@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/texinfo -- $SHELL -i`
- * @dependencies `perl.org`, `gnu.org/gettext`, `invisible-island.net/ncurses`
+ * @dependencies `perl.org`
  *
  * @example
  * ```typescript
@@ -66,8 +66,6 @@ export const gnuorgtexinfoPackage = {
    */
   dependencies: [
     'perl.org',
-    'gnu.org/gettext',
-    'invisible-island.net/ncurses',
   ] as const,
   /**
    * Available versions from newest to oldest.

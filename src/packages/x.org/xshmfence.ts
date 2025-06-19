@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xshmfence -- $SHELL -i`
- * @dependencies `x.org/protocol`, `freedesktop.org/pkg-config`, `freedesktop.org/pkg-config`
+ * @dependencies `x.org/protocol`
  *
  * @example
  * ```typescript
@@ -49,8 +49,6 @@ export const xorgxshmfencePackage = {
    */
   dependencies: [
     'x.org/protocol',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

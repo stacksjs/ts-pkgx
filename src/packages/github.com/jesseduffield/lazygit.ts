@@ -8,7 +8,7 @@
  *
  * @install `launchpad install lazygit`
  * @name `lazygit`
- * @dependencies `git-scm.org^2`, `go.dev^1.18`
+ * @dependencies `git-scm.org^2`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const lazygitPackage = {
    */
   dependencies: [
     'git-scm.org^2',
-    'go.dev^1.18',
   ] as const,
   /**
    * Available versions from newest to oldest.

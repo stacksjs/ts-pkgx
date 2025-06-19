@@ -8,7 +8,7 @@
  *
  * @install `launchpad install eliza`
  * @aliases `eliza`, `elizaOS`
- * @dependencies `python.org>=2.7`, `nodejs.org~23.3`, `pnpm.io`, ... (+7 more)
+ * @dependencies `python.org>=2.7`, `nodejs.org~23.3`, `pnpm.io`, ... (+1 more)
  * @companions `git-scm.org`, `ffmpeg.org`
  *
  * @example
@@ -74,12 +74,6 @@ export const elizaPackage = {
     'nodejs.org~23.3',
     'pnpm.io',
     'bun.sh^1.2 # since 1.0.5',
-    'python.org~3.10 # node-gyp doesn',
-    'pnpm.io=9.15.7',
-    'curl.se',
-    'gnu.org/patch',
-    'gnu.org/sed',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

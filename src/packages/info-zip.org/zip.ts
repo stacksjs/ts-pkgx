@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +info-zip.org/zip -- $SHELL -i`
  * @name `zip`
- * @dependencies `sourceware.org/bzip2`, `gnu.org/gcc`, `gnu.org/wget`, ... (+1 more)
+ * @dependencies `sourceware.org/bzip2`
  *
  * @example
  * ```typescript
@@ -66,9 +66,6 @@ export const zipPackage = {
    */
   dependencies: [
     'sourceware.org/bzip2',
-    'gnu.org/gcc',
-    'gnu.org/wget',
-    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

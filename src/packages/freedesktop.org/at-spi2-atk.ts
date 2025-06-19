@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/at-spi2-atk -- $SHELL -i`
- * @dependencies `gnome.org/atk`, `gnome.org/libxml2`, `freedesktop.org/dbus`, ... (+9 more)
+ * @dependencies `gnome.org/atk`, `gnome.org/libxml2`, `freedesktop.org/dbus`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -52,14 +52,6 @@ export const freedesktoporgatspi2atkPackage = {
     'gnome.org/libxml2',
     'freedesktop.org/dbus',
     'x.org/xtst',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'python.org~3.11',
-    'git-scm.org',
-    'llvm.org',
-    'freedesktop.org/pkg-config',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

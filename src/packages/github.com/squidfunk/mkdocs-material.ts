@@ -8,7 +8,7 @@
  *
  * @install `launchpad install mkdocs`
  * @aliases `mkdocs`, `squidfunk/mkdocs-material`
- * @dependencies `pkgx.sh^1`, `sass-lang.com/libsass^3.6`, `python.org>=3<3.12`, ... (+1 more)
+ * @dependencies `pkgx.sh^1`, `sass-lang.com/libsass^3.6`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const mkdocsPackage = {
   dependencies: [
     'pkgx.sh^1',
     'sass-lang.com/libsass^3.6',
-    'python.org>=3<3.12',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

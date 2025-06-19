@@ -8,7 +8,7 @@
  *
  * @install `launchpad install scrcpy`
  * @name `scrcpy`
- * @dependencies `ffmpeg.org`, `libusb.info`, `libsdl.org`, ... (+8 more)
+ * @dependencies `ffmpeg.org`, `libusb.info`, `libsdl.org`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,19 +60,15 @@ export const scrcpyPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'ffmpeg.org',
     'libusb.info',
     'libsdl.org',
-    'webmproject.org/libvpx<1.15.1 # since 3.3, .9 lib api',
-    'sourceware.org/bzip2',
-    'zlib.net',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'gnu.org/wget',
-    'gnu.org/patch',
+    'linux:webmproject.org/libvpx<1.15.1 # since 3.3, .9 lib api',
+    'darwin:sourceware.org/bzip2',
+    'darwin:zlib.net',
   ] as const,
   /**
    * Available versions from newest to oldest.

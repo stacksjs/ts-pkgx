@@ -8,7 +8,7 @@
  *
  * @install `launchpad install jasper`
  * @name `jasper`
- * @dependencies `libjpeg-turbo.org^2`, `cmake.org^3`
+ * @dependencies `libjpeg-turbo.org^2`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const jasperPackage = {
    */
   dependencies: [
     'libjpeg-turbo.org^2',
-    'cmake.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

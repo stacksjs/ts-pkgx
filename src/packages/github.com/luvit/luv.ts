@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/luvit/luv -- $SHELL -i`
- * @dependencies `libuv.org`, `cmake.org`, `lua.org`, ... (+4 more)
+ * @dependencies `libuv.org`
  *
  * @example
  * ```typescript
@@ -50,12 +50,6 @@ export const githubcomluvitluvPackage = {
    */
   dependencies: [
     'libuv.org',
-    'cmake.org',
-    'lua.org',
-    'luajit.org',
-    'curl.se',
-    'lua.org',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

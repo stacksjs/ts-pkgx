@@ -8,7 +8,7 @@
  *
  * @install `launchpad install kustomize`
  * @name `kustomize`
- * @dependencies `kubernetes.io/kubectl`, `go.dev^1.18`, `gnu.org/gcc`
+ * @dependencies `kubernetes.io/kubectl`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const kustomizePackage = {
    */
   dependencies: [
     'kubernetes.io/kubectl',
-    'go.dev^1.18',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/ice -- $SHELL -i`
- * @dependencies `x.org/protocol`, `freedesktop.org/pkg-config~0.29`, `x.org/xtrans`, ... (+1 more)
+ * @dependencies `x.org/protocol`
  *
  * @example
  * ```typescript
@@ -49,9 +49,6 @@ export const xorgicePackage = {
    */
   dependencies: [
     'x.org/protocol',
-    'freedesktop.org/pkg-config~0.29',
-    'x.org/xtrans',
-    'x.org/x11',
   ] as const,
   /**
    * Available versions from newest to oldest.

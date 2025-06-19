@@ -8,7 +8,7 @@
  *
  * @install `launchpad install leo`
  * @aliases `leo`
- * @dependencies `openssl.org^1.1`, `curl.se^8.4`, `rust-lang.org^1.65`, ... (+3 more)
+ * @dependencies `openssl.org^1.1`, `curl.se^8.4`
  *
  * @example
  * ```typescript
@@ -64,10 +64,6 @@ export const leoPackage = {
   dependencies: [
     'openssl.org^1.1',
     'curl.se^8.4',
-    'rust-lang.org^1.65',
-    'rust-lang.org/cargo',
-    'cmake.org^3 # as of 1.12.0 for libz-ng-sys crate',
-    'git-scm.org^2 # as of 2.3.1 for the _required_ examples subrepo',
   ] as const,
   /**
    * Available versions from newest to oldest.

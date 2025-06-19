@@ -8,7 +8,7 @@
  *
  * @install `launchpad install dy`
  * @aliases `dy`
- * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.65`, `rust-lang.org/cargo`, ... (+3 more)
+ * @dependencies `linux:openssl.org^1.1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,14 +60,10 @@ export const dyPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'openssl.org^1.1',
-    'rust-lang.org>=1.65',
-    'rust-lang.org/cargo',
-    'cmake.org@3',
-    'openssl.org',
-    'freedesktop.org/pkg-config',
+    'linux:openssl.org^1.1',
   ] as const,
   /**
    * Available versions from newest to oldest.

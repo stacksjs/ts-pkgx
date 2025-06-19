@@ -8,7 +8,6 @@
  *
  * @install `launchpad install mailpit`
  * @name `mailpit`
- * @dependencies `nodejs.org<21`, `npmjs.com`, `go.dev`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const mailpitPackage = {
     'mailpit',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'nodejs.org<21',
-    'npmjs.com',
-    'go.dev',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

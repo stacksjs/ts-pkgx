@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gox`
  * @name `gox`
- * @dependencies `go.dev`, `gnu.org/wget`, `go.dev`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -62,8 +62,6 @@ export const goxPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'go.dev',
-    'gnu.org/wget',
     'go.dev',
   ] as const,
   /**

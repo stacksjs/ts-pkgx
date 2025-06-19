@@ -8,7 +8,7 @@
  *
  * @install `launchpad install check_if_email_exists`
  * @aliases `check_if_email_exists`
- * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.65`, `rust-lang.org/cargo`, ... (+1 more)
+ * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const checkifemailexistsPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'rust-lang.org>=1.65',
-    'rust-lang.org/cargo',
-    'perl.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

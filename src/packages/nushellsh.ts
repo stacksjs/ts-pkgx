@@ -8,7 +8,7 @@
  *
  * @install `launchpad install nu`
  * @aliases `nu`
- * @dependencies `openssl.org^1`, `rust-lang.org^1.60.0`, `rust-lang.org/cargo^0.87`, ... (+1 more)
+ * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const nuPackage = {
    */
   dependencies: [
     'openssl.org^1',
-    'rust-lang.org^1.60.0',
-    'rust-lang.org/cargo^0.87',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

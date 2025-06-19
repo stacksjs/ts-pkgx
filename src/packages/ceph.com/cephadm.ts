@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cephadm`
  * @name `cephadm`
- * @dependencies `openssl.org^1.1`, `python.org^3`, `python.org^3`, ... (+1 more)
+ * @dependencies `openssl.org^1.1`, `python.org^3`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const cephadmPackage = {
   dependencies: [
     'openssl.org^1.1',
     'python.org^3',
-    'python.org^3',
-    'gnu.org/coreutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

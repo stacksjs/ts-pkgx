@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/mesa-glu -- $SHELL -i`
- * @dependencies `mesa3d.org`, `gnu.org/make`, `freedesktop.org/pkg-config`, ... (+3 more)
+ * @dependencies `mesa3d.org`
  *
  * @example
  * ```typescript
@@ -49,11 +49,6 @@ export const freedesktoporgmesagluPackage = {
    */
   dependencies: [
     'mesa3d.org',
-    'gnu.org/make',
-    'freedesktop.org/pkg-config',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

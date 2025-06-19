@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +git-scm.org -- $SHELL -i`
  * @aliases `git`
- * @dependencies `zlib.net@1`, `gnu.org/gettext^0.21`, `curl.se>=5`, ... (+4 more)
+ * @dependencies `zlib.net@1`, `gnu.org/gettext^0.21`, `curl.se>=5`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -75,7 +75,6 @@ export const gitPackage = {
     'curl.se/ca-certs',
     'perl.org',
     'libexpat.github.io~2',
-    'pkgx.sh^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

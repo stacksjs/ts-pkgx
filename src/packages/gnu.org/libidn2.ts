@@ -8,7 +8,7 @@
  *
  * @install `launchpad install idn2`
  * @aliases `idn2`
- * @dependencies `gnu.org/gettext`, `gnu.org/texinfo`, `freedesktop.org/pkg-config`
+ * @dependencies `gnu.org/gettext`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const idn2Package = {
    */
   dependencies: [
     'gnu.org/gettext',
-    'gnu.org/texinfo',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

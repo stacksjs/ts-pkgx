@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +docbook.org -- $SHELL -i`
- * @dependencies `curl.se`, `info-zip.org/unzip`
  *
  * @example
  * ```typescript
@@ -43,14 +42,7 @@ export const docbookorgPackage = {
   installCommand: 'launchpad install +docbook.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'curl.se',
-    'info-zip.org/unzip',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

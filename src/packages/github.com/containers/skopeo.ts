@@ -8,7 +8,7 @@
  *
  * @install `launchpad install skopeo`
  * @name `skopeo`
- * @dependencies `curl.se/ca-certs`, `go.dev^1.18`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const skopeoPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev^1.18',
   ] as const,
   /**
    * Available versions from newest to oldest.

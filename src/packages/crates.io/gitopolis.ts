@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gitopolis`
  * @name `gitopolis`
- * @dependencies `openssl.org^1.1`, `zlib.net^1`, `git-scm.org^2`, ... (+5 more)
+ * @dependencies `openssl.org^1.1`, `zlib.net^1`, `git-scm.org^2`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,10 +66,6 @@ export const gitopolisPackage = {
     'zlib.net^1',
     'git-scm.org^2',
     'libgit2.org~1.7 # links to libgit2.so.1.7',
-    'rust-lang.org^1.70',
-    'rust-lang.org/cargo',
-    'freedesktop.org/pkg-config^0',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

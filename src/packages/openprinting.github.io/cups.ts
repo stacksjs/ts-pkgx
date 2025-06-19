@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +openprinting.github.io/cups -- $SHELL -i`
- * @dependencies `kerberos.org`, `zlib.net`, `openssl.org^1.1`
+ * @dependencies `kerberos.org`, `zlib.net`, `linux:openssl.org^1.1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -57,11 +57,12 @@ export const openprintinggithubiocupsPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'kerberos.org',
     'zlib.net',
-    'openssl.org^1.1',
+    'linux:openssl.org^1.1',
   ] as const,
   /**
    * Available versions from newest to oldest.

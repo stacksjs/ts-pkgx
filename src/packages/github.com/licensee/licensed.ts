@@ -8,7 +8,7 @@
  *
  * @install `launchpad install licensed`
  * @name `licensed`
- * @dependencies `ruby-lang.org^3.1`, `rubygems.org`, `gnome.org/libxml2~2.13.8 # for nokogiri`, ... (+3 more)
+ * @dependencies `ruby-lang.org^3.1`, `rubygems.org`, `linux:gnome.org/libxml2~2.13.8 # for nokogiri`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  * @companions `linux`
  *
  * @example
@@ -67,14 +67,14 @@ export const licensedPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'ruby-lang.org^3.1',
     'rubygems.org',
-    'gnome.org/libxml2~2.13.8 # for nokogiri',
-    'gnome.org/libxslt~1.1.43 # for nokogiri',
-    'pcre.org^8 # for nokogiri',
-    'cmake.org^4 # for Rugged',
+    'linux:gnome.org/libxml2~2.13.8 # for nokogiri',
+    'linux:gnome.org/libxslt~1.1.43 # for nokogiri',
+    'linux:pcre.org^8 # for nokogiri',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +code.videolan.org/rist/librist -- $SHELL -i`
  * @aliases `rist`
- * @dependencies `mesonbuild.com>=0.47<1`, `ninja-build.org@1`, `sourceware.org/libffi^3 # since 0.2.11`
  *
  * @example
  * ```typescript
@@ -60,15 +59,7 @@ export const ristPackage = {
     'ristsrppasswd',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'mesonbuild.com>=0.47<1',
-    'ninja-build.org@1',
-    'sourceware.org/libffi^3 # since 0.2.11',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

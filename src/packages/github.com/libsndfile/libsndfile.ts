@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/libsndfile/libsndfile -- $SHELL -i`
  * @aliases `sndfile`
- * @dependencies `xiph.org/flac`, `lame.sourceforge.io`, `xiph.org/ogg`, ... (+5 more)
+ * @dependencies `xiph.org/flac`, `lame.sourceforge.io`, `xiph.org/ogg`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -70,8 +70,6 @@ export const sndfilePackage = {
     'xiph.org/vorbis',
     'mpg123.de',
     'opus-codec.org',
-    'cmake.org',
-    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

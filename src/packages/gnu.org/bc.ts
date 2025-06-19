@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/bc -- $SHELL -i`
- * @dependencies `github.com/westes/flex^2.6`, `gnu.org/bison`, `gnu.org/ed`, ... (+1 more)
+ * @dependencies `github.com/westes/flex^2.6`
  *
  * @example
  * ```typescript
@@ -58,9 +58,6 @@ export const gnuorgbcPackage = {
    */
   dependencies: [
     'github.com/westes/flex^2.6',
-    'gnu.org/bison',
-    'gnu.org/ed',
-    'gnu.org/texinfo',
   ] as const,
   /**
    * Available versions from newest to oldest.

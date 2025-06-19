@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +unicode.org -- $SHELL -i`
- * @dependencies `curl.se`
  *
  * @example
  * ```typescript
@@ -63,13 +62,7 @@ export const unicodeorgPackage = {
     'uconv',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'curl.se',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

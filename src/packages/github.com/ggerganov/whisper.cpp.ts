@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/ggerganov/whisper.cpp -- $SHELL -i`
  * @aliases `whisper`
- * @dependencies `libsdl.org`, `openmp.llvm.org^18 # as of 1.7.0`, `gnu.org/gcc/libstdcxx@14`, ... (+4 more)
+ * @dependencies `libsdl.org`, `linux:openmp.llvm.org^18 # as of 1.7.0`, `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
  * @companions `huggingface.co`
  *
  * @example
@@ -68,15 +68,12 @@ export const whisperPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'libsdl.org',
-    'openmp.llvm.org^18 # as of 1.7.0',
-    'gnu.org/gcc/libstdcxx@14',
-    'freedesktop.org/pkg-config~0.29',
-    'gnu.org/patch',
-    'gnu.org/coreutils',
-    'cmake.org^3 # as of 1.7.3',
+    'linux:openmp.llvm.org^18 # as of 1.7.0',
+    'linux:gnu.org/gcc/libstdcxx@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

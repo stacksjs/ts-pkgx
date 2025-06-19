@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xinerama -- $SHELL -i`
- * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`, ... (+2 more)
+ * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`
  *
  * @example
  * ```typescript
@@ -51,8 +51,6 @@ export const xorgxineramaPackage = {
     'x.org/x11',
     'x.org/protocol',
     'x.org/exts',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

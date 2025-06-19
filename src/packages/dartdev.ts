@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +dart.dev -- $SHELL -i`
  * @aliases `dart`
- * @dependencies `ninja-build.org`, `rust-lang.org`, `curl.se`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -58,18 +57,7 @@ export const dartPackage = {
     'dartaotruntime',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'ninja-build.org',
-    'rust-lang.org',
-    'curl.se',
-    'python.org>=3<3.12',
-    'tukaani.org/xz',
-    'git-scm.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

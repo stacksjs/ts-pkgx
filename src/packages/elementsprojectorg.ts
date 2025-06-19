@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +elementsproject.org -- $SHELL -i`
- * @dependencies `boost.org^1.64`, `libevent.org`, `oracle.com/berkeley-db`, ... (+5 more)
+ * @dependencies `boost.org^1.64`, `libevent.org`, `oracle.com/berkeley-db`
  *
  * @example
  * ```typescript
@@ -66,11 +66,6 @@ export const elementsprojectorgPackage = {
     'boost.org^1.64',
     'libevent.org',
     'oracle.com/berkeley-db',
-    'gnu.org/automake',
-    'gnu.org/autoconf',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
-    'github.com/util-linux/util-linux',
   ] as const,
   /**
    * Available versions from newest to oldest.

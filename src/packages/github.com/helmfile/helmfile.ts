@@ -8,7 +8,7 @@
  *
  * @install `launchpad install helmfile`
  * @name `helmfile`
- * @dependencies `curl.se/ca-certs`, `go.dev^1.21`, `git-scm.org`, ... (+1 more)
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const helmfilePackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev^1.21',
-    'git-scm.org',
-    'helm.sh',
   ] as const,
   /**
    * Available versions from newest to oldest.

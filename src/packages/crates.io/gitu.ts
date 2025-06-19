@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gitu`
  * @name `gitu`
- * @dependencies `zlib.net~1.3`, `libgit2.org~1.7`, `rust-lang.org>=1.56`, ... (+1 more)
+ * @dependencies `zlib.net~1.3`, `libgit2.org~1.7`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const gituPackage = {
   dependencies: [
     'zlib.net~1.3',
     'libgit2.org~1.7',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

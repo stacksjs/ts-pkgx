@@ -8,7 +8,6 @@
  *
  * @install `launchpad install pkgx`
  * @aliases `pkgx`
- * @dependencies `deno.land~2 # since 1.3.0`, `rust-lang.org^1.56 # since 2.0`, `perl.org^5 # since 2.0`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const pkgxPackage = {
     'pkgx',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'deno.land~2 # since 1.3.0',
-    'rust-lang.org^1.56 # since 2.0',
-    'perl.org^5 # since 2.0',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

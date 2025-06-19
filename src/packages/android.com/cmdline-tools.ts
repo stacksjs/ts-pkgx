@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +android.com/cmdline-tools -- $SHELL -i`
- * @dependencies `openjdk.org>=17`, `info-zip.org/unzip`, `curl.se`
+ * @dependencies `openjdk.org>=17`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const androidcomcmdlinetoolsPackage = {
    */
   dependencies: [
     'openjdk.org>=17',
-    'info-zip.org/unzip',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

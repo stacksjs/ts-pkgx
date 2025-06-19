@@ -7,7 +7,6 @@
  *
  * @install `launchpad install +cyrusimap.org/cyrus-sasl -- $SHELL -i`
  * @name `cyrus-sasl`
- * @dependencies `kerberos.org`, `openssl.org^1.1.1`
  *
  * @example
  * ```typescript
@@ -48,14 +47,7 @@ export const cyrussaslPackage = {
   installCommand: 'launchpad install +cyrusimap.org/cyrus-sasl -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'kerberos.org',
-    'openssl.org^1.1.1',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

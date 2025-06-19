@@ -7,7 +7,7 @@
  *
  * @install `launchpad install +sourceforge.net/libtirpc -- $SHELL -i`
  * @aliases `sf.net/libtirpc`
- * @dependencies `kerberos.org`, `llvm.org^16`, `gnu.org/make`
+ * @dependencies `kerberos.org`
  *
  * @example
  * ```typescript
@@ -54,8 +54,6 @@ export const sfnetlibtirpcPackage = {
    */
   dependencies: [
     'kerberos.org',
-    'llvm.org^16',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

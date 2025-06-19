@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +apache.org/arrow -- $SHELL -i`
- * @dependencies `github.com/aws/aws-sdk-cpp`, `github.com/google/brotli`, `sourceware.org/bzip2`, ... (+19 more)
+ * @dependencies `github.com/aws/aws-sdk-cpp`, `github.com/google/brotli`, `sourceware.org/bzip2`, ... (+13 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -57,6 +57,7 @@ export const apacheorgarrowPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'github.com/aws/aws-sdk-cpp',
@@ -72,15 +73,9 @@ export const apacheorgarrowPackage = {
     'apache.org/thrift',
     'github.com/JuliaStrings/utf8proc',
     'facebook.com/zstd',
-    'c-ares.org@1',
-    'libcxx.llvm.org~17 # since 18.1.0',
-    'protobuf.dev^26.1.0 # match grpc.io, so gdal.org can build, we bundle on darwin',
-    'boost.org',
-    'cmake.org',
-    'ninja-build.org',
-    'python.org<3.12',
-    'llvm.org~17',
-    'freedesktop.org/pkg-config',
+    'darwin:c-ares.org@1',
+    'darwin:libcxx.llvm.org~17 # since 18.1.0',
+    'linux:protobuf.dev^26.1.0 # match grpc.io, so gdal.org can build, we bundle on darwin',
   ] as const,
   /**
    * Available versions from newest to oldest.

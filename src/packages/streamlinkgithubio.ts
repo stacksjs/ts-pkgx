@@ -8,7 +8,7 @@
  *
  * @install `launchpad install streamlink`
  * @aliases `streamlink`
- * @dependencies `pkgx.sh^1`, `python.org~3.12`, `gnu.org/coreutils`
+ * @dependencies `pkgx.sh^1`
  * @companions `ffmpeg.org`
  *
  * @example
@@ -70,8 +70,6 @@ export const streamlinkPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.12',
-    'gnu.org/coreutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +cgal.org -- $SHELL -i`
  * @aliases `cgal`
- * @dependencies `boost.org`, `eigen.tuxfamily.org`, `gnu.org/gmp`, ... (+9 more)
+ * @dependencies `boost.org`, `eigen.tuxfamily.org`, `gnu.org/gmp`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -69,13 +69,6 @@ export const cgalPackage = {
     'gnu.org/gmp',
     'gnu.org/mpfr',
     'openssl.org',
-    'cmake.org',
-    'qt.io~5',
-    'gnu.org/gcc',
-    'cmake.org',
-    'qt.io~5',
-    'gnu.org/gcc',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

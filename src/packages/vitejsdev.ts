@@ -8,7 +8,7 @@
  *
  * @install `launchpad install vite`
  * @aliases `vite`
- * @dependencies `nodejs.org^16 || ^18 || ^20`, `darwinsys.com/file`, `strace.io`
+ * @dependencies `nodejs.org^16 || ^18 || ^20`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const vitePackage = {
    */
   dependencies: [
     'nodejs.org^16 || ^18 || ^20',
-    'darwinsys.com/file',
-    'strace.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

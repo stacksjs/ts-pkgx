@@ -8,7 +8,7 @@
  *
  * @install `launchpad install yubikey-agent`
  * @name `yubikey-agent`
- * @dependencies `pcsclite.apdu.fr^2`, `gnupg.org/pinentry`, `go.dev^1.20`, ... (+1 more)
+ * @dependencies `pcsclite.apdu.fr^2`, `linux:gnupg.org/pinentry` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,12 +60,11 @@ export const yubikeyagentPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'pcsclite.apdu.fr^2',
-    'gnupg.org/pinentry',
-    'go.dev^1.20',
-    'gitlab.com/procps-ng/procps',
+    'linux:gnupg.org/pinentry',
   ] as const,
   /**
    * Available versions from newest to oldest.

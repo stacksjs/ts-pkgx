@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +go.dev -- $SHELL -i`
  * @aliases `go`
- * @dependencies `openssl.org^1  # for ca-certificates`, `gnu.org/m4@1`, `go.dev`, ... (+1 more)
+ * @dependencies `openssl.org^1  # for ca-certificates`
  *
  * @example
  * ```typescript
@@ -64,9 +64,6 @@ export const goPackage = {
    */
   dependencies: [
     'openssl.org^1  # for ca-certificates',
-    'gnu.org/m4@1',
-    'go.dev',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

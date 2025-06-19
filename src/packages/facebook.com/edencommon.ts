@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +facebook.com/edencommon -- $SHELL -i`
- * @dependencies `facebook.com/folly`, `gflags.github.io`, `google.com/glog`, ... (+10 more)
+ * @dependencies `facebook.com/folly`, `gflags.github.io`, `google.com/glog`, ... (+6 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,6 +47,7 @@ export const facebookcomedencommonPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'facebook.com/folly',
@@ -57,11 +58,7 @@ export const facebookcomedencommonPackage = {
     'openssl.org^1.1',
     'sourceware.org/bzip2^1',
     'boost.org~1.88',
-    'gnu.org/gcc/libstdcxx@13',
-    'cmake.org',
-    'google.com/googletest',
-    'gnu.org/gcc@13',
-    'gnu.org/gcc@13',
+    'linux:gnu.org/gcc/libstdcxx@13',
   ] as const,
   /**
    * Available versions from newest to oldest.

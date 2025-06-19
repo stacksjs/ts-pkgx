@@ -8,7 +8,7 @@
  *
  * @install `launchpad install terragrunt`
  * @aliases `terragrunt`
- * @dependencies `terraform.io`, `go.dev^1.18`
+ * @dependencies `terraform.io`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const terragruntPackage = {
    */
   dependencies: [
     'terraform.io',
-    'go.dev^1.18',
   ] as const,
   /**
    * Available versions from newest to oldest.

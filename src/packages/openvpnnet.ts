@@ -8,7 +8,7 @@
  *
  * @install `launchpad install openvpn`
  * @aliases `openvpn`
- * @dependencies `lz4.org^1.9`, `oberhumer.com/lzo^2.10`, `openssl.org^1.1`, ... (+3 more)
+ * @dependencies `lz4.org^1.9`, `oberhumer.com/lzo^2.10`, `openssl.org^1.1`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -59,14 +59,14 @@ export const openvpnPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'lz4.org^1.9',
     'oberhumer.com/lzo^2.10',
     'openssl.org^1.1',
-    'sourceforge.net/net-tools',
-    'github.com/thom311/libnl',
-    'freedesktop.org/pkg-config^0.29',
+    'linux:sourceforge.net/net-tools',
+    'linux:github.com/thom311/libnl',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xcb-util -- $SHELL -i`
- * @dependencies `x.org/xcb^1`, `freedesktop.org/pkg-config`
+ * @dependencies `x.org/xcb^1`
  *
  * @example
  * ```typescript
@@ -49,7 +49,6 @@ export const xorgxcbutilPackage = {
    */
   dependencies: [
     'x.org/xcb^1',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +perl.org -- $SHELL -i`
- * @dependencies `llvm.org<17`, `gnu.org/make`
  *
  * @example
  * ```typescript
@@ -81,14 +80,7 @@ export const perlorgPackage = {
     'zipdetails',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'llvm.org<17',
-    'gnu.org/make',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

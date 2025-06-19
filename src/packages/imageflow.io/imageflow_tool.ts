@@ -8,7 +8,7 @@
  *
  * @install `launchpad install imageflow_tool`
  * @name `imageflow_tool`
- * @dependencies `openssl.org@1.1`, `rust-lang.org>=1.65<1.78`, `rust-lang.org/cargo`, ... (+5 more)
+ * @dependencies `openssl.org@1.1`
  * @companions `info-zip.org/zip`, `kornel.ski/dssim`
  *
  * @example
@@ -71,13 +71,6 @@ export const imageflowtoolPackage = {
    */
   dependencies: [
     'openssl.org@1.1',
-    'rust-lang.org>=1.65<1.78',
-    'rust-lang.org/cargo',
-    'nasm.us',
-    'info-zip.org/zip',
-    'kornel.ski/dssim',
-    'gnome.org/pango',
-    'darwinsys.com/file',
   ] as const,
   /**
    * Available versions from newest to oldest.

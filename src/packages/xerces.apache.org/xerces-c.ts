@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +xerces.apache.org/xerces-c -- $SHELL -i`
- * @dependencies `curl.se`, `cmake.org`
+ * @dependencies `curl.se`
  *
  * @example
  * ```typescript
@@ -72,7 +72,6 @@ export const xercesapacheorgxercescPackage = {
    */
   dependencies: [
     'curl.se',
-    'cmake.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

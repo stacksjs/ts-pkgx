@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +podman.io -- $SHELL -i`
  * @aliases `podman`
- * @dependencies `qemu.org`, `github.com/containers/gvisor-tap-vsock`, `github.com/crc-org/vfkit`, ... (+2 more)
+ * @dependencies `qemu.org`, `github.com/containers/gvisor-tap-vsock`, `darwin:github.com/crc-org/vfkit` (includes OS-specific dependencies with `os:package` format)
  * @companions `openssh.com`
  *
  * @example
@@ -69,13 +69,12 @@ export const podmanPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'qemu.org',
     'github.com/containers/gvisor-tap-vsock',
-    'github.com/crc-org/vfkit',
-    'go.dev=1.23.3',
-    'gnu.org/coreutils',
+    'darwin:github.com/crc-org/vfkit',
   ] as const,
   /**
    * Available versions from newest to oldest.

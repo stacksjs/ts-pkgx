@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +pulumi.io -- $SHELL -i`
  * @aliases `pulumi`
- * @dependencies `curl.se/ca-certs`, `go.dev^1.20`, `classic.yarnpkg.com`, ... (+1 more)
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -75,9 +75,6 @@ export const pulumiPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev^1.20',
-    'classic.yarnpkg.com',
-    'nodejs.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

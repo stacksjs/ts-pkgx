@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +getcomposer.org -- $SHELL -i`
  * @aliases `composer`
- * @dependencies `php.net`, `curl.se`
+ * @dependencies `php.net`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const composerPackage = {
    */
   dependencies: [
     'php.net',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

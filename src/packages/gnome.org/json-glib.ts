@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/json-glib -- $SHELL -i`
- * @dependencies `gnome.org/glib^2.78`, `gnu.org/gettext`, `gnome.org/gobject-introspection`, ... (+2 more)
+ * @dependencies `gnome.org/glib^2.78`
  *
  * @example
  * ```typescript
@@ -49,10 +49,6 @@ export const gnomeorgjsonglibPackage = {
    */
   dependencies: [
     'gnome.org/glib^2.78',
-    'gnu.org/gettext',
-    'gnome.org/gobject-introspection',
-    'mesonbuild.com',
-    'ninja-build.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

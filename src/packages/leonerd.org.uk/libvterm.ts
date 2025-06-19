@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +leonerd.org.uk/libvterm -- $SHELL -i`
- * @dependencies `gnu.org/libtool`, `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
@@ -54,14 +53,7 @@ export const leonerdorguklibvtermPackage = {
     'vterm-dump',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

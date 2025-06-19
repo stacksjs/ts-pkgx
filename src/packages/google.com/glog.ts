@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +google.com/glog -- $SHELL -i`
- * @dependencies `gflags.github.io`, `cmake.org`, `cmake.org`, ... (+2 more)
+ * @dependencies `gflags.github.io`
  *
  * @example
  * ```typescript
@@ -50,10 +50,6 @@ export const googlecomglogPackage = {
    */
   dependencies: [
     'gflags.github.io',
-    'cmake.org',
-    'cmake.org',
-    'gnu.org/make',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

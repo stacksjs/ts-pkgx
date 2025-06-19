@@ -8,7 +8,7 @@
  *
  * @install `launchpad install google-maps-scraper`
  * @name `google-maps-scraper`
- * @dependencies `curl.se/ca-certs`, `go.dev^1.21.1`, `gnu.org/gcc`, ... (+2 more)
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,10 +63,6 @@ export const googlemapsscraperPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev^1.21.1',
-    'gnu.org/gcc',
-    'gnu.org/binutils',
-    'stedolan.github.io/jq',
   ] as const,
   /**
    * Available versions from newest to oldest.

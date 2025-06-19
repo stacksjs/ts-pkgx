@@ -8,7 +8,7 @@
  *
  * @install `launchpad install charmcraft`
  * @name `charmcraft`
- * @dependencies `pkgx.sh^1`, `libgit2.org~1.7`, `python.org^3`
+ * @dependencies `pkgx.sh^1`, `libgit2.org~1.7`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const charmcraftPackage = {
   dependencies: [
     'pkgx.sh^1',
     'libgit2.org~1.7',
-    'python.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnutls.org -- $SHELL -i`
- * @dependencies `freedesktop.org/p11-kit`, `gnu.org/libidn2`, `gnu.org/libunistring^1`, ... (+8 more)
+ * @dependencies `freedesktop.org/p11-kit`, `gnu.org/libidn2`, `gnu.org/libunistring^1`, ... (+6 more)
  *
  * @example
  * ```typescript
@@ -72,8 +72,6 @@ export const gnutlsorgPackage = {
     'gnu.org/gmp',
     'unbound.net^1',
     'curl.se/ca-certs',
-    'gnu.org/gcc',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,6 @@
  *
  * @install `launchpad install docker-credential-ecr-login`
  * @aliases `docker-credential-ecr-login`
- * @dependencies `gnu.org/bash`, `gnu.org/make`, `git-scm.org`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -57,17 +56,7 @@ export const dockercredentialecrloginPackage = {
     'docker-credential-ecr-login',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/bash',
-    'gnu.org/make',
-    'git-scm.org',
-    'go.dev^1.21',
-    'gnu.org/grep',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

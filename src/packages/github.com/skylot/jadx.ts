@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/skylot/jadx -- $SHELL -i`
  * @name `jadx`
- * @dependencies `openjdk.org^21`, `gradle.org`, `curl.se`
+ * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const jadxPackage = {
    */
   dependencies: [
     'openjdk.org^21',
-    'gradle.org',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

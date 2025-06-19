@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/polkit -- $SHELL -i`
- * @dependencies `gnome.org/glib^2.78`, `duktape.org^2.7`, `gnome.org/gobject-introspection^1.72`, ... (+6 more)
+ * @dependencies `gnome.org/glib^2.78`, `duktape.org^2.7`, `gnome.org/gobject-introspection^1.72`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -65,10 +65,6 @@ export const freedesktoporgpolkitPackage = {
     'gnome.org/gobject-introspection^1.72',
     'freedesktop.org/dbus^1.12',
     'linux-pam.org^1.4',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'gnu.org/gettext',
-    'gnome.org/libxslt',
   ] as const,
   /**
    * Available versions from newest to oldest.

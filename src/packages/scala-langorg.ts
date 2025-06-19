@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +scala-lang.org -- $SHELL -i`
- * @dependencies `openjdk.org`, `curl.se`
+ * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
@@ -62,7 +62,6 @@ export const scalalangorgPackage = {
    */
   dependencies: [
     'openjdk.org',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

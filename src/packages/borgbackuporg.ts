@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +borgbackup.org -- $SHELL -i`
  * @aliases `borg`
- * @dependencies `pkgx.sh^1`, `github.com/Cyan4973/xxHash^0.8`, `python.org^3.10`, ... (+4 more)
+ * @dependencies `pkgx.sh^1`, `github.com/Cyan4973/xxHash^0.8`
  *
  * @example
  * ```typescript
@@ -65,11 +65,6 @@ export const borgPackage = {
   dependencies: [
     'pkgx.sh^1',
     'github.com/Cyan4973/xxHash^0.8',
-    'python.org^3.10',
-    'openssl.org^1.1',
-    'facebook.com/zstd',
-    'lz4.org',
-    'savannah.nongnu.org/acl^2.3.1',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +postgresql.org -- $SHELL -i`
- * @dependencies `openssl.org^1.0.1`, `gnu.org/readline`, `zlib.net`, ... (+7 more)
+ * @dependencies `openssl.org^1.0.1`, `gnu.org/readline`, `zlib.net`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -91,9 +91,6 @@ export const postgresqlorgPackage = {
     'gnome.org/libxml2',
     'gnome.org/libxslt',
     'unicode.org^73',
-    'gnu.org/bison',
-    'github.com/westes/flex^2.5.31',
-    'perl.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

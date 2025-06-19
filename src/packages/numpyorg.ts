@@ -8,7 +8,7 @@
  *
  * @install `launchpad install f2py`
  * @aliases `f2py`
- * @dependencies `openblas.net^0.3`, `python.org^3.11`, `cython.org/libcython`, ... (+2 more)
+ * @dependencies `openblas.net^0.3`, `python.org^3.11`
  * @companions `gnu.org/gcc`
  *
  * @example
@@ -71,9 +71,6 @@ export const f2pyPackage = {
   dependencies: [
     'openblas.net^0.3',
     'python.org^3.11',
-    'cython.org/libcython',
-    'llvm.org',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

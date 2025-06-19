@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +hdfgroup.org/HDF5 -- $SHELL -i`
- * @dependencies `dkrz.de/libaec@1`, `zlib.net@1`, `gnu.org/autoconf`, ... (+3 more)
+ * @dependencies `dkrz.de/libaec@1`, `linux:zlib.net@1` (includes OS-specific dependencies with `os:package` format)
  * @companions `gnu.org/gcc`
  *
  * @example
@@ -81,14 +81,11 @@ export const hdfgrouporghdf5Package = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'dkrz.de/libaec@1',
-    'zlib.net@1',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
-    'gnu.org/gcc',
+    'linux:zlib.net@1',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install teller`
  * @aliases `teller`
- * @dependencies `openssl.org^1.1`, `go.dev^1.21`, `rust-lang.org^1.78`, ... (+1 more)
+ * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const tellerPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'go.dev^1.21',
-    'rust-lang.org^1.78',
-    'protobuf.dev',
   ] as const,
   /**
    * Available versions from newest to oldest.

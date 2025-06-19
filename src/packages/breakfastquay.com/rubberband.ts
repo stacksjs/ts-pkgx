@@ -8,7 +8,7 @@
  *
  * @install `launchpad install rubberband`
  * @name `rubberband`
- * @dependencies `github.com/libsndfile/libsamplerate^0.2`, `github.com/libsndfile/libsndfile^1.2`, `fftw.org^3.3`, ... (+4 more)
+ * @dependencies `github.com/libsndfile/libsamplerate^0.2`, `github.com/libsndfile/libsndfile^1.2`, `linux:fftw.org^3.3`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,15 +60,14 @@ export const rubberbandPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'github.com/libsndfile/libsamplerate^0.2',
     'github.com/libsndfile/libsndfile^1.2',
-    'fftw.org^3.3',
-    'ladspa.org^1.17',
-    'vamp-plugins.org^2.9',
-    'mesonbuild.com^1.3.2',
-    'ninja-build.org',
+    'linux:fftw.org^3.3',
+    'linux:ladspa.org^1.17',
+    'linux:vamp-plugins.org^2.9',
   ] as const,
   /**
    * Available versions from newest to oldest.

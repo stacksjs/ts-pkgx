@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/libbsd -- $SHELL -i`
- * @dependencies `hadrons.org/libmd`, `gnu.org/binutils`
  *
  * @example
  * ```typescript
@@ -44,14 +43,7 @@ export const freedesktoporglibbsdPackage = {
   installCommand: 'launchpad install +freedesktop.org/libbsd -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'hadrons.org/libmd',
-    'gnu.org/binutils',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

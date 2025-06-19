@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +fna-xna.github.io -- $SHELL -i`
- * @dependencies `libsdl.org^2.28`, `cmake.org`
+ * @dependencies `libsdl.org^2.28`
  *
  * @example
  * ```typescript
@@ -50,7 +50,6 @@ export const fnaxnagithubioPackage = {
    */
   dependencies: [
     'libsdl.org^2.28',
-    'cmake.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

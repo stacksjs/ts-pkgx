@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +mariadb.com/server -- $SHELL -i`
  * @aliases `MariaDB`
- * @dependencies `sourceware.org/bzip2^1`, `github.com/besser82/libxcrypt^4`, `gnome.org/libxml2`, ... (+12 more)
+ * @dependencies `sourceware.org/bzip2^1`, `github.com/besser82/libxcrypt^4`, `gnome.org/libxml2`, ... (+5 more)
  *
  * @example
  * ```typescript
@@ -153,13 +153,6 @@ export const mariaDBPackage = {
     'openssl.org^1.1',
     'pcre.org/v2^10',
     'facebook.com/zstd^1',
-    'cmake.org',
-    'freedesktop.org/pkg-config',
-    'gnu.org/bison',
-    'gnu.org/coreutils',
-    'git-scm.org',
-    'groonga.org',
-    'fmt.dev^9',
   ] as const,
   /**
    * Available versions from newest to oldest.

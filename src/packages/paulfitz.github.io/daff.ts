@@ -8,7 +8,7 @@
  *
  * @install `launchpad install daff`
  * @name `daff`
- * @dependencies `pkgx.sh^1`, `python.org>=3.7<3.12`, `pip.pypa.io`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const daffPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org>=3.7<3.12',
-    'pip.pypa.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

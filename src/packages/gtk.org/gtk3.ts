@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +gtk.org/gtk3 -- $SHELL -i`
  * @name `gtk3`
- * @dependencies `gnome.org/atk`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+27 more)
+ * @dependencies `gnome.org/atk`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+18 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -69,6 +69,7 @@ export const gtk3Package = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnome.org/atk',
@@ -88,19 +89,10 @@ export const gtk3Package = {
     'xkbcommon.org',
     'debian.org/iso-codes',
     'freedesktop.org/at-spi2-atk',
-    'cairographics.org',
-    'wayland.freedesktop.org/protocols',
-    'x.org/protocol',
-    'openprinting.github.io/cups',
-    'docbook.org',
-    'docbook.org/xsl',
-    'gnu.org/gettext',
-    'gnome.org/gobject-introspection',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'cmake.org',
-    'freedesktop.org/pkg-config',
+    'linux:cairographics.org',
+    'linux:wayland.freedesktop.org/protocols',
+    'linux:x.org/protocol',
+    'linux:openprinting.github.io/cups',
   ] as const,
   /**
    * Available versions from newest to oldest.

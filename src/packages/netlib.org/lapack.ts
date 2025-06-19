@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +netlib.org/lapack -- $SHELL -i`
- * @dependencies `gnu.org/gcc^11 # libgfortran`, `gnu.org/binutils`, `cmake.org~3.24`, ... (+1 more)
+ * @dependencies `gnu.org/gcc^11 # libgfortran`
  *
  * @example
  * ```typescript
@@ -50,9 +50,6 @@ export const netliborglapackPackage = {
    */
   dependencies: [
     'gnu.org/gcc^11 # libgfortran',
-    'gnu.org/binutils',
-    'cmake.org~3.24',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

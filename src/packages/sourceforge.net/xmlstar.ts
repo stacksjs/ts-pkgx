@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +sourceforge.net/xmlstar -- $SHELL -i`
  * @aliases `XMLStarlet`
- * @dependencies `gnome.org/libxslt^1`, `gnu.org/gcc`
+ * @dependencies `gnome.org/libxslt^1`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const xMLStarletPackage = {
    */
   dependencies: [
     'gnome.org/libxslt^1',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

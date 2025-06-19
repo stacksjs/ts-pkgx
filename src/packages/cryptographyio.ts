@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +cryptography.io -- $SHELL -i`
- * @dependencies `python.org>=3.11`, `github.com/python-cffi/cffi^1.16`, `openssl.org>=1.1`, ... (+2 more)
+ * @dependencies `python.org>=3.11`, `github.com/python-cffi/cffi^1.16`, `openssl.org>=1.1`
  *
  * @example
  * ```typescript
@@ -52,8 +52,6 @@ export const cryptographyioPackage = {
     'python.org>=3.11',
     'github.com/python-cffi/cffi^1.16',
     'openssl.org>=1.1',
-    'python.org/typing_extensions',
-    'rust-lang.org>=1.65',
   ] as const,
   /**
    * Available versions from newest to oldest.

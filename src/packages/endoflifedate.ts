@@ -8,7 +8,7 @@
  *
  * @install `launchpad install eol`
  * @aliases `eol`
- * @dependencies `python.org^3.12`, `llvm.org`
+ * @dependencies `python.org^3.12`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const eolPackage = {
    */
   dependencies: [
     'python.org^3.12',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

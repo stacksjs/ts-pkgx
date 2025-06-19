@@ -8,7 +8,7 @@
  *
  * @install `launchpad install nvim`
  * @aliases `nvim`
- * @dependencies `gnu.org/gettext^0`, `cmake.org`, `freedesktop.org/pkg-config^0.29`, ... (+3 more)
+ * @dependencies `gnu.org/gettext^0`
  *
  * @example
  * ```typescript
@@ -63,11 +63,6 @@ export const nvimPackage = {
    */
   dependencies: [
     'gnu.org/gettext^0',
-    'cmake.org',
-    'freedesktop.org/pkg-config^0.29',
-    'gnu.org/libtool^2',
-    'git-scm.org^2',
-    'info-zip.org/unzip',
   ] as const,
   /**
    * Available versions from newest to oldest.

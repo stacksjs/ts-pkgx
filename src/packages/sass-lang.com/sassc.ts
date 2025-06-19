@@ -8,7 +8,7 @@
  *
  * @install `launchpad install sassc`
  * @name `sassc`
- * @dependencies `sass-lang.com/libsass^3.6.5`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+1 more)
+ * @dependencies `sass-lang.com/libsass^3.6.5`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const sasscPackage = {
    */
   dependencies: [
     'sass-lang.com/libsass^3.6.5',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +pagure.io/xmlto -- $SHELL -i`
  * @aliases `xml`
- * @dependencies `docbook.org`, `github.com/util-linux/util-linux`, `gnome.org/libxslt`, ... (+2 more)
+ * @dependencies `docbook.org`, `github.com/util-linux/util-linux`, `darwin:gnome.org/libxslt` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -61,13 +61,12 @@ export const xmlPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'docbook.org',
     'github.com/util-linux/util-linux',
-    'gnome.org/libxslt',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
+    'darwin:gnome.org/libxslt',
   ] as const,
   /**
    * Available versions from newest to oldest.

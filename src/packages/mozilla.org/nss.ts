@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +mozilla.org/nss -- $SHELL -i`
- * @dependencies `mozilla.org/nspr`, `sqlite.org`, `zlib.net`, ... (+4 more)
+ * @dependencies `mozilla.org/nspr`, `sqlite.org`, `zlib.net`
  *
  * @example
  * ```typescript
@@ -120,10 +120,6 @@ export const mozillaorgnssPackage = {
     'mozilla.org/nspr',
     'sqlite.org',
     'zlib.net',
-    'gnu.org/gcc',
-    'gnu.org/make',
-    'llvm.org',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

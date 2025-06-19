@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/rrthomas/psutils -- $SHELL -i`
- * @dependencies `pkgx.sh^1`, `github.com/rrthomas/libpaper`, `python.org~3.11`, ... (+1 more)
+ * @dependencies `pkgx.sh^1`, `github.com/rrthomas/libpaper`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const githubcomrrthomaspsutilsPackage = {
   dependencies: [
     'pkgx.sh^1',
     'github.com/rrthomas/libpaper',
-    'python.org~3.11',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

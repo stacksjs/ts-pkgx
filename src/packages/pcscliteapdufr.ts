@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pcscd`
  * @aliases `pcscd`, `pcsc-lite`
- * @dependencies `libusb.info^1`, `systemd.io^254 # libudev`, `cmake.org^3`, ... (+4 more)
+ * @dependencies `libusb.info^1`, `linux:systemd.io^254 # libudev` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -59,15 +59,11 @@ export const pcscdPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'libusb.info^1',
-    'systemd.io^254 # libudev',
-    'cmake.org^3',
-    'mesonbuild.com^1',
-    'ninja-build.org^1',
-    'github.com/westes/flex',
-    'perl.org^5 # pod2man',
+    'linux:systemd.io^254 # libudev',
   ] as const,
   /**
    * Available versions from newest to oldest.

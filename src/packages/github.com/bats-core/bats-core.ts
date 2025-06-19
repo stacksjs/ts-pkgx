@@ -8,7 +8,7 @@
  *
  * @install `launchpad install bats`
  * @aliases `bats`
- * @dependencies `gnu.org/coreutils^9.4`, `gnu.org/bc^1`
+ * @dependencies `gnu.org/coreutils^9.4`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const batsPackage = {
    */
   dependencies: [
     'gnu.org/coreutils^9.4',
-    'gnu.org/bc^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

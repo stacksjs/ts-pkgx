@@ -9,7 +9,7 @@
  * @install `launchpad install text-generation-webui`
  * @name `text-generation-webui`
  * @aliases `text generation web UI`
- * @dependencies `python.org~3.10`, `pkgx.sh^1`, `gnu.org/coreutils`
+ * @dependencies `python.org~3.10`, `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -65,7 +65,6 @@ export const textgenerationwebuiPackage = {
   dependencies: [
     'python.org~3.10',
     'pkgx.sh^1',
-    'gnu.org/coreutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

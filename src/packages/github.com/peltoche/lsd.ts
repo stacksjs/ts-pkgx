@@ -8,7 +8,7 @@
  *
  * @install `launchpad install lsd`
  * @name `lsd`
- * @dependencies `libgit2.org~1.7`, `rust-lang.org>=1.60`, `rust-lang.org/cargo`
+ * @dependencies `libgit2.org~1.7`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const lsdPackage = {
    */
   dependencies: [
     'libgit2.org~1.7',
-    'rust-lang.org>=1.60',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

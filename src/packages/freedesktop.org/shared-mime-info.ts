@@ -8,7 +8,7 @@
  *
  * @install `launchpad install update-mime-database`
  * @aliases `update-mime-database`
- * @dependencies `gnome.org/glib@2`, `gnu.org/gettext^0.21`, `freedesktop.org/pkg-config^0.29`, ... (+3 more)
+ * @dependencies `gnome.org/glib@2`, `gnu.org/gettext^0.21`
  *
  * @example
  * ```typescript
@@ -64,10 +64,6 @@ export const updatemimedatabasePackage = {
   dependencies: [
     'gnome.org/glib@2',
     'gnu.org/gettext^0.21',
-    'freedesktop.org/pkg-config^0.29',
-    'mesonbuild.com^0.63',
-    'ninja-build.org@1',
-    'gnome.org/libxml2@2',
   ] as const,
   /**
    * Available versions from newest to oldest.

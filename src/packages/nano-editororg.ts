@@ -8,7 +8,7 @@
  *
  * @install `launchpad install nano`
  * @aliases `nano`
- * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`, `freedesktop.org/pkg-config^0.29`, ... (+2 more)
+ * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
  *
  * @example
  * ```typescript
@@ -64,9 +64,6 @@ export const nanoPackage = {
   dependencies: [
     'gnu.org/gettext',
     'invisible-island.net/ncurses>=6.0',
-    'freedesktop.org/pkg-config^0.29',
-    'gnu.org/automake^1.16',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

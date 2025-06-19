@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/KhronosGroup/Vulkan-Loader -- $SHELL -i`
- * @dependencies `github.com/KhronosGroup/Vulkan-Headers`, `x.org/x11`, `x.org/xcb`, ... (+6 more)
+ * @dependencies `github.com/KhronosGroup/Vulkan-Headers`, `linux:x.org/x11`, `linux:x.org/xcb`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,17 +47,13 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'github.com/KhronosGroup/Vulkan-Headers',
-    'x.org/x11',
-    'x.org/xcb',
-    'wayland.freedesktop.org',
-    'gnu.org/make',
-    'cmake.org',
-    'freedesktop.org/pkg-config',
-    'python.org~3.11',
-    'x.org/xrandr',
+    'linux:x.org/x11',
+    'linux:x.org/xcb',
+    'linux:wayland.freedesktop.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

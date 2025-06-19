@@ -7,7 +7,7 @@
  *
  * @install `launchpad install +freedesktop.org/vdpau -- $SHELL -i`
  * @name `vdpau`
- * @dependencies `x.org/x11`, `x.org/exts`, `x.org/protocol`, ... (+4 more)
+ * @dependencies `x.org/x11`, `x.org/exts`, `x.org/protocol`
  *
  * @example
  * ```typescript
@@ -56,10 +56,6 @@ export const vdpauPackage = {
     'x.org/x11',
     'x.org/exts',
     'x.org/protocol',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

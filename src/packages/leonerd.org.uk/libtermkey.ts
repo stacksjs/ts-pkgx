@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +leonerd.org.uk/libtermkey -- $SHELL -i`
- * @dependencies `github.com/neovim/unibilium`, `invisible-island.net/ncurses`, `gnu.org/libtool`, ... (+3 more)
+ * @dependencies `github.com/neovim/unibilium`, `invisible-island.net/ncurses`
  *
  * @example
  * ```typescript
@@ -50,10 +50,6 @@ export const leonerdorguklibtermkeyPackage = {
   dependencies: [
     'github.com/neovim/unibilium',
     'invisible-island.net/ncurses',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
-    'gnome.org/glib',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xcursor -- $SHELL -i`
- * @dependencies `x.org/x11`, `x.org/xfixes`, `x.org/xrender`, ... (+3 more)
+ * @dependencies `x.org/x11`, `x.org/xfixes`, `x.org/xrender`
  *
  * @example
  * ```typescript
@@ -51,9 +51,6 @@ export const xorgxcursorPackage = {
     'x.org/x11',
     'x.org/xfixes',
     'x.org/xrender',
-    'freedesktop.org/pkg-config',
-    'x.org/util-macros',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +crates.io/rtx-cli -- $SHELL -i`
- * @dependencies `openssl.org^1.1 # newer RTX after 1.35.2 versions require openssl`, `libgit2.org^1 # newer mise after 2024.5.12 versions require libgit2`, `rust-lang.org^1.78 # stdsimd changes`, ... (+2 more)
+ * @dependencies `openssl.org^1.1 # newer RTX after 1.35.2 versions require openssl`, `libgit2.org^1 # newer mise after 2024.5.12 versions require libgit2`
  *
  * @example
  * ```typescript
@@ -51,9 +51,6 @@ export const cratesiortxcliPackage = {
   dependencies: [
     'openssl.org^1.1 # newer RTX after 1.35.2 versions require openssl',
     'libgit2.org^1 # newer mise after 2024.5.12 versions require libgit2',
-    'rust-lang.org^1.78 # stdsimd changes',
-    'rust-lang.org/cargo',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

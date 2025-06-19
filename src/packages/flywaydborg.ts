@@ -8,7 +8,7 @@
  *
  * @install `launchpad install flyway`
  * @aliases `flyway`
- * @dependencies `openjdk.org^21`, `curl.se`
+ * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const flywayPackage = {
    */
   dependencies: [
     'openjdk.org^21',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

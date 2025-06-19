@@ -8,7 +8,6 @@
  *
  * @install `launchpad install argocd`
  * @aliases `argocd`, `argo-cd`
- * @dependencies `go.dev`, `nodejs.org<23`, `yarnpkg.com`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -57,16 +56,7 @@ export const argocdPackage = {
     'argocd',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev',
-    'nodejs.org<23',
-    'yarnpkg.com',
-    'git-scm.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

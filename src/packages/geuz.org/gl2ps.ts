@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +geuz.org/gl2ps -- $SHELL -i`
- * @dependencies `libpng.org`, `freeglut.sourceforge.io`, `cmake.org`
+ * @dependencies `libpng.org`, `linux:freeglut.sourceforge.io` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -46,11 +46,11 @@ export const geuzorggl2psPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'libpng.org',
-    'freeglut.sourceforge.io',
-    'cmake.org',
+    'linux:freeglut.sourceforge.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

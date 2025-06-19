@@ -8,7 +8,7 @@
  *
  * @install `launchpad install epsilon`
  * @aliases `epsilon`
- * @dependencies `rpm.org/popt`, `gnu.org/make`, `gnu.org/autoconf`, ... (+2 more)
+ * @dependencies `rpm.org/popt`
  *
  * @example
  * ```typescript
@@ -63,10 +63,6 @@ export const epsilonPackage = {
    */
   dependencies: [
     'rpm.org/popt',
-    'gnu.org/make',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  *
  * @install `launchpad install +vanna.ai -- $SHELL -i`
  * @aliases `Vanna`
- * @dependencies `python.org~3.12`, `openmp.llvm.org^17 # needed by chromadb`, `rust-lang.org^1.80`, ... (+2 more)
+ * @dependencies `python.org~3.12`, `linux:openmp.llvm.org^17 # needed by chromadb` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -52,13 +52,11 @@ export const vannaPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'python.org~3.12',
-    'openmp.llvm.org^17 # needed by chromadb',
-    'rust-lang.org^1.80',
-    'rust-lang.org/cargo<0.83',
-    'curl.se',
+    'linux:openmp.llvm.org^17 # needed by chromadb',
   ] as const,
   /**
    * Available versions from newest to oldest.

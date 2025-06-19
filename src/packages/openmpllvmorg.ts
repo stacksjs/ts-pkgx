@@ -7,7 +7,6 @@
  *
  * @install `launchpad install +openmp.llvm.org -- $SHELL -i`
  * @aliases `libomp`
- * @dependencies `cmake.org`, `llvm.org`, `gnu.org/wget`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -49,18 +48,7 @@ export const libompPackage = {
   installCommand: 'launchpad install +openmp.llvm.org -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'llvm.org',
-    'gnu.org/wget',
-    'python.org~3.11',
-    'perl.org',
-    'llvm.org',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

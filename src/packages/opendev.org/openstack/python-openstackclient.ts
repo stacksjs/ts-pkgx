@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +opendev.org/openstack/python-openstackclient -- $SHELL -i`
  * @aliases `openstack`
- * @dependencies `pkgx.sh^1`, `python.org^3`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const openstackPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

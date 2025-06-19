@@ -9,7 +9,7 @@
  * @install `launchpad install eget`
  * @name `eget`
  * @aliases `Eget`
- * @dependencies `curl.se/ca-certs`, `go.dev`, `pandoc.org`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const egetPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev',
-    'pandoc.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

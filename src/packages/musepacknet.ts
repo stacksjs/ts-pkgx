@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +musepack.net -- $SHELL -i`
- * @dependencies `musepack.net/libreplaygain`, `musepack.net/libcuefile`, `cmake.org`, ... (+1 more)
+ * @dependencies `musepack.net/libreplaygain`, `musepack.net/libcuefile`
  *
  * @example
  * ```typescript
@@ -65,8 +65,6 @@ export const musepacknetPackage = {
   dependencies: [
     'musepack.net/libreplaygain',
     'musepack.net/libcuefile',
-    'cmake.org',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

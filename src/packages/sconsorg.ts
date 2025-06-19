@@ -8,7 +8,7 @@
  *
  * @install `launchpad install scons`
  * @aliases `scons`
- * @dependencies `python.org~3.11`, `gnu.org/gcc>=10`
+ * @dependencies `python.org~3.11`, `linux:gnu.org/gcc>=10` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,10 +60,11 @@ export const sconsPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'python.org~3.11',
-    'gnu.org/gcc>=10',
+    'linux:gnu.org/gcc>=10',
   ] as const,
   /**
    * Available versions from newest to oldest.

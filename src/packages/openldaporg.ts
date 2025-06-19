@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +openldap.org -- $SHELL -i`
  * @aliases `ldap`
- * @dependencies `openssl.org^1.1`, `github.com/util-linux/util-linux`, `gnu.org/sed`
+ * @dependencies `openssl.org^1.1`, `linux:github.com/util-linux/util-linux` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -69,11 +69,11 @@ export const ldapPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'openssl.org^1.1',
-    'github.com/util-linux/util-linux',
-    'gnu.org/sed',
+    'linux:github.com/util-linux/util-linux',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gaia-gis.it/libspatialite -- $SHELL -i`
- * @dependencies `gaia-gis.it/fossil/freexl`, `libgeos.org`, `git.osgeo.org/gitea/rttopo/librttopo`, ... (+9 more)
+ * @dependencies `gaia-gis.it/fossil/freexl`, `libgeos.org`, `git.osgeo.org/gitea/rttopo/librttopo`, ... (+4 more)
  *
  * @example
  * ```typescript
@@ -55,11 +55,6 @@ export const gaiagisitlibspatialitePackage = {
     'zlib.net/minizip',
     'proj.org',
     'sqlite.org',
-    'gnu.org/make',
-    'freedesktop.org/pkg-config',
-    'gnu.org/patch',
-    'curl.se',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

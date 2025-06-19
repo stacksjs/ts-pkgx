@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git-trim`
  * @name `git-trim`
- * @dependencies `openssl.org^1.1`, `zlib.net^1`, `rust-lang.org>=1.65`, ... (+2 more)
+ * @dependencies `openssl.org^1.1`, `zlib.net^1`
  *
  * @example
  * ```typescript
@@ -64,9 +64,6 @@ export const gittrimPackage = {
   dependencies: [
     'openssl.org^1.1',
     'zlib.net^1',
-    'rust-lang.org>=1.65',
-    'rust-lang.org/cargo',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

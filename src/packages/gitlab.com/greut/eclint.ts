@@ -8,7 +8,6 @@
  *
  * @install `launchpad install eclint`
  * @name `eclint`
- * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -56,13 +55,7 @@ export const eclintPackage = {
     'eclint',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

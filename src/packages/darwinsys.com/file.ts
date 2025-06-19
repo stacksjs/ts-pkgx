@@ -8,7 +8,7 @@
  *
  * @install `launchpad install file`
  * @name `file`
- * @dependencies `zlib.net^1 #FIXME this is actually an optional dep`, `gnu.org/patch`
+ * @dependencies `zlib.net^1 #FIXME this is actually an optional dep`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const filePackage = {
    */
   dependencies: [
     'zlib.net^1 #FIXME this is actually an optional dep',
-    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

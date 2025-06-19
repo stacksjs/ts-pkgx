@@ -8,7 +8,7 @@
  *
  * @install `launchpad install kpt`
  * @aliases `kpt`
- * @dependencies `git-scm.org`, `go.dev^1.14`
+ * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const kptPackage = {
    */
   dependencies: [
     'git-scm.org',
-    'go.dev^1.14',
   ] as const,
   /**
    * Available versions from newest to oldest.

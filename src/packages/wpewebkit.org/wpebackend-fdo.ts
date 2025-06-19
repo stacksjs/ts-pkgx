@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +wpewebkit.org/wpebackend-fdo -- $SHELL -i`
- * @dependencies `gnome.org/glib`, `github.com/anholt/libepoxy`, `wpewebkit.org/libwpe`, ... (+8 more)
+ * @dependencies `gnome.org/glib`, `github.com/anholt/libepoxy`, `wpewebkit.org/libwpe`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -53,12 +53,6 @@ export const wpewebkitorgwpebackendfdoPackage = {
     'wpewebkit.org/libwpe',
     'mesa3d.org',
     'wayland.freedesktop.org',
-    'gnu.org/gcc',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

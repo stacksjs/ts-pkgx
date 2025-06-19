@@ -8,7 +8,7 @@
  *
  * @install `launchpad install markdownlint`
  * @aliases `markdownlint`
- * @dependencies `nodejs.org^18`, `npmjs.com^10`
+ * @dependencies `nodejs.org^18`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const markdownlintPackage = {
    */
   dependencies: [
     'nodejs.org^18',
-    'npmjs.com^10',
   ] as const,
   /**
    * Available versions from newest to oldest.

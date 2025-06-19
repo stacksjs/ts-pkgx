@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/opencollab/arpack-ng -- $SHELL -i`
- * @dependencies `eigen.tuxfamily.org@3`, `gnu.org/gcc`, `open-mpi.org@5`, ... (+6 more)
+ * @dependencies `eigen.tuxfamily.org@3`, `gnu.org/gcc`, `open-mpi.org@5`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -53,11 +53,6 @@ export const githubcomopencollabarpackngPackage = {
     'gnu.org/gcc',
     'open-mpi.org@5',
     'netlib.org/lapack@3',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

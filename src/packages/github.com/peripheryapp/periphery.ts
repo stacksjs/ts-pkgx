@@ -8,7 +8,7 @@
  *
  * @install `launchpad install periphery`
  * @name `periphery`
- * @dependencies `curl.se`, `gnome.org/libxml2`, `gnu.org/sed`, ... (+1 more)
+ * @dependencies `curl.se`, `gnome.org/libxml2`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const peripheryPackage = {
   dependencies: [
     'curl.se',
     'gnome.org/libxml2',
-    'gnu.org/sed',
-    'crates.io/semverator',
   ] as const,
   /**
    * Available versions from newest to oldest.

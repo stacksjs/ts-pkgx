@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/cesnet/libyang -- $SHELL -i`
  * @name `libyang`
- * @dependencies `pcre.org/v2>=10.21`, `graphviz.org`, `doxygen.nl`, ... (+1 more)
+ * @dependencies `pcre.org/v2>=10.21`
  *
  * @example
  * ```typescript
@@ -64,9 +64,6 @@ export const libyangPackage = {
    */
   dependencies: [
     'pcre.org/v2>=10.21',
-    'graphviz.org',
-    'doxygen.nl',
-    'cmake.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

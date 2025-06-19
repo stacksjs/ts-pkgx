@@ -8,7 +8,7 @@
  *
  * @install `launchpad install replibyte`
  * @aliases `replibyte`
- * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.65`, `rust-lang.org/cargo`, ... (+1 more)
+ * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const replibytePackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'rust-lang.org>=1.65',
-    'rust-lang.org/cargo',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/libass/libass -- $SHELL -i`
- * @dependencies `freetype.org@2`, `gnu.org/fribidi@1`, `harfbuzz.org`, ... (+7 more)
+ * @dependencies `freetype.org@2`, `gnu.org/fribidi@1`, `harfbuzz.org`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,18 +47,14 @@ export const githubcomlibasslibassPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'freetype.org@2',
     'gnu.org/fribidi@1',
     'harfbuzz.org',
     'github.com/adah1972/libunibreak',
-    'freedesktop.org/fontconfig@2',
-    'nasm.us@2',
-    'gnu.org/autoconf@2',
-    'gnu.org/automake@1',
-    'gnu.org/libtool@2',
-    'freedesktop.org/pkg-config',
+    'linux:freedesktop.org/fontconfig@2',
   ] as const,
   /**
    * Available versions from newest to oldest.

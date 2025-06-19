@@ -9,7 +9,6 @@
  * @install `launchpad install go-redfish-api-idrac-client`
  * @name `go-redfish-api-idrac`
  * @aliases `go-redfish-api-idrac-client`
- * @dependencies `go.dev`
  *
  * @example
  * ```typescript
@@ -58,13 +57,7 @@ export const goredfishapiidracclientPackage = {
     'go-redfish-api-idrac-client',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

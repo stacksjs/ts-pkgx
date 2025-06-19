@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +hadrons.org/libmd -- $SHELL -i`
- * @dependencies `gnu.org/patch`, `crates.io/semverator`
  *
  * @example
  * ```typescript
@@ -44,14 +43,7 @@ export const hadronsorglibmdPackage = {
   installCommand: 'launchpad install +hadrons.org/libmd -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/patch',
-    'crates.io/semverator',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

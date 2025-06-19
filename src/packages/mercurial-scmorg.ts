@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +mercurial-scm.org -- $SHELL -i`
- * @dependencies `python.org~3.11`, `gnu.org/make`
+ * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
@@ -59,7 +59,6 @@ export const mercurialscmorgPackage = {
    */
   dependencies: [
     'python.org~3.11',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

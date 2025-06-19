@@ -8,7 +8,7 @@
  *
  * @install `launchpad install regctl`
  * @name `regctl`
- * @dependencies `curl.se/ca-certs`, `go.dev^1.21`, `git-scm.org`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const regctlPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev^1.21',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

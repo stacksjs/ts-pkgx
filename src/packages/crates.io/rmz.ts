@@ -8,7 +8,6 @@
  *
  * @install `launchpad install rmz`
  * @name `rmz`
- * @dependencies `rust-lang.org>=1.85`, `rust-lang.org/cargo^0.86 # edition2024`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const rmzPackage = {
     'rmz',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org>=1.85',
-    'rust-lang.org/cargo^0.86 # edition2024',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

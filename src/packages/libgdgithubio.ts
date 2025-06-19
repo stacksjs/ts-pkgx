@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +libgd.github.io -- $SHELL -i`
- * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `libjpeg-turbo.org`, ... (+8 more)
+ * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `libjpeg-turbo.org`, ... (+5 more)
  *
  * @example
  * ```typescript
@@ -69,9 +69,6 @@ export const libgdgithubioPackage = {
     'simplesystems.org/libtiff',
     'google.com/webp',
     'zlib.net',
-    'gnu.org/autoconf',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

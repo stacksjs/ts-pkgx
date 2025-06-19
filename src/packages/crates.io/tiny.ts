@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tiny`
  * @name `tiny`
- * @dependencies `openssl.org^1.1`, `rust-lang.org^1.65`, `rust-lang.org/cargo`
+ * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const tinyPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'rust-lang.org^1.65',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

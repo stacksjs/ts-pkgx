@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +google.com/gcloud -- $SHELL -i`
- * @dependencies `python.org^3.11`, `curl.se`
+ * @dependencies `python.org^3.11`
  *
  * @example
  * ```typescript
@@ -59,7 +59,6 @@ export const googlecomgcloudPackage = {
    */
   dependencies: [
     'python.org^3.11',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

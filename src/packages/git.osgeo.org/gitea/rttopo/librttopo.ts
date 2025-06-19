@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +git.osgeo.org/gitea/rttopo/librttopo -- $SHELL -i`
- * @dependencies `libgeos.org`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+2 more)
+ * @dependencies `libgeos.org`
  *
  * @example
  * ```typescript
@@ -49,10 +49,6 @@ export const gitosgeoorggitea/rttopo/librttopoPackage = {
    */
   dependencies: [
     'libgeos.org',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

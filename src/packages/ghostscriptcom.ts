@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +ghostscript.com -- $SHELL -i`
- * @dependencies `zlib.net^1.2`, `libpng.org^1.6`, `libjpeg-turbo.org^2`, ... (+9 more)
+ * @dependencies `zlib.net^1.2`, `libpng.org^1.6`, `libjpeg-turbo.org^2`, ... (+8 more)
  *
  * @example
  * ```typescript
@@ -100,7 +100,6 @@ export const ghostscriptcomPackage = {
     'libexpat.github.io^2.5',
     'openjpeg.org^2.5',
     'freetype.org^2.13',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

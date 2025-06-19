@@ -8,7 +8,7 @@
  *
  * @install `launchpad install thrift1`
  * @aliases `thrift1`
- * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/folly`, `facebook.com/wangle`, ... (+17 more)
+ * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/folly`, `facebook.com/wangle`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,6 +60,7 @@ export const thrift1Package = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'github.com/facebookincubator/fizz',
@@ -74,14 +75,7 @@ export const thrift1Package = {
     'zlib.net^1.3',
     'libsodium.org^1.0.19',
     'github.com/Cyan4973/xxHash^0.8',
-    'gnu.org/gcc/libstdcxx@13',
-    'cmake.org',
-    'facebook.com/mvfst',
-    'gnu.org/bison',
-    'github.com/westes/flex',
-    'python.org^3.10',
-    'gnu.org/gcc@13',
-    'gnu.org/binutils',
+    'linux:gnu.org/gcc/libstdcxx@13',
   ] as const,
   /**
    * Available versions from newest to oldest.

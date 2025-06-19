@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/kaspanet/rusty-kaspa -- $SHELL -i`
  * @aliases `kaspa`
- * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`, ... (+2 more)
+ * @dependencies `linux:openssl.org^1.1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -61,13 +61,10 @@ export const kaspaPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'openssl.org^1.1',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
-    'protobuf.dev',
-    'curl.se',
+    'linux:openssl.org^1.1',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/google/re2 -- $SHELL -i`
- * @dependencies `abseil.io^20250127`, `cmake.org`, `gnu.org/gcc`
+ * @dependencies `abseil.io^20250127`
  *
  * @example
  * ```typescript
@@ -50,8 +50,6 @@ export const githubcomgooglere2Package = {
    */
   dependencies: [
     'abseil.io^20250127',
-    'cmake.org',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

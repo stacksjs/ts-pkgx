@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cairo-trace`
  * @aliases `cairo-trace`
- * @dependencies `libpng.org@1`, `pixman.org^0.40.0`, `freetype.org@2`, ... (+14 more)
+ * @dependencies `libpng.org@1`, `pixman.org^0.40.0`, `freetype.org@2`, ... (+8 more)
  *
  * @example
  * ```typescript
@@ -73,12 +73,6 @@ export const cairotracePackage = {
     'x.org/exts',
     'x.org/xrender',
     'oberhumer.com/lzo',
-    'freedesktop.org/pkg-config^0.29',
-    'libexpat.github.io=2.4.9',
-    'gnome.org/gobject-introspection@1',
-    'gnu.org/libtool^2',
-    'mesonbuild.com^1',
-    'ninja-build.org^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

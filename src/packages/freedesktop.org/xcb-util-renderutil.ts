@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/xcb-util-renderutil -- $SHELL -i`
- * @dependencies `x.org/xcb`, `freedesktop.org/pkg-config`, `freedesktop.org/pkg-config`
+ * @dependencies `x.org/xcb`
  *
  * @example
  * ```typescript
@@ -49,8 +49,6 @@ export const freedesktoporgxcbutilrenderutilPackage = {
    */
   dependencies: [
     'x.org/xcb',
-    'freedesktop.org/pkg-config',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

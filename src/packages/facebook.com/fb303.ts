@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +facebook.com/fb303 -- $SHELL -i`
- * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/wangle`, `facebook.com/folly`, ... (+15 more)
+ * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/wangle`, `facebook.com/folly`, ... (+9 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,6 +47,7 @@ export const facebookcomfb303Package = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'github.com/facebookincubator/fizz',
@@ -59,14 +60,8 @@ export const facebookcomfb303Package = {
     'libsodium.org^1.0.19',
     'openssl.org^1.1',
     'github.com/Cyan4973/xxHash^0.8 # since 2024.10.14.0',
-    'zlib.net^1',
-    'gnu.org/gcc/libstdcxx@13',
-    'cmake.org',
-    'facebook.com/mvfst',
-    'boost.org^1.84',
-    'gnu.org/gcc@13',
-    'boost.org^1.84',
-    'gnu.org/gcc@13',
+    'linux:zlib.net^1',
+    'linux:gnu.org/gcc/libstdcxx@13',
   ] as const,
   /**
    * Available versions from newest to oldest.

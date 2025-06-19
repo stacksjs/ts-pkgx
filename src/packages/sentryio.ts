@@ -8,7 +8,7 @@
  *
  * @install `launchpad install sentry-cli`
  * @aliases `sentry-cli`
- * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `rust-lang.org>=1.80`, `rust-lang.org/cargo<0.83`
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const sentrycliPackage = {
    */
   dependencies: [
     'libgit2.org~1.7 # links to libgit2.so.1.7',
-    'rust-lang.org>=1.80',
-    'rust-lang.org/cargo<0.83',
   ] as const,
   /**
    * Available versions from newest to oldest.

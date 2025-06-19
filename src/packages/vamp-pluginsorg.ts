@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +vamp-plugins.org -- $SHELL -i`
  * @aliases `vamp`
- * @dependencies `xiph.org/flac^1.4`, `xiph.org/ogg^1.3`, `github.com/libsndfile/libsndfile^1.2`, ... (+2 more)
+ * @dependencies `xiph.org/flac^1.4`, `xiph.org/ogg^1.3`, `github.com/libsndfile/libsndfile^1.2`
  *
  * @example
  * ```typescript
@@ -66,8 +66,6 @@ export const vampPackage = {
     'xiph.org/flac^1.4',
     'xiph.org/ogg^1.3',
     'github.com/libsndfile/libsndfile^1.2',
-    'gnu.org/automake',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

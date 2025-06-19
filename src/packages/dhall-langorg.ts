@@ -8,7 +8,7 @@
  *
  * @install `launchpad install dhall`
  * @aliases `dhall`
- * @dependencies `invisible-island.net/ncurses^6.4`, `zlib.net^1.3`, `haskell.org~9.8`, ... (+1 more)
+ * @dependencies `invisible-island.net/ncurses^6.4`, `zlib.net^1.3`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const dhallPackage = {
   dependencies: [
     'invisible-island.net/ncurses^6.4',
     'zlib.net^1.3',
-    'haskell.org~9.8',
-    'haskell.org/cabal',
   ] as const,
   /**
    * Available versions from newest to oldest.

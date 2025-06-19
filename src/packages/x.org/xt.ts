@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +x.org/xt -- $SHELL -i`
- * @dependencies `x.org/ice`, `x.org/sm`, `x.org/x11`, ... (+1 more)
+ * @dependencies `x.org/ice`, `x.org/sm`, `x.org/x11`
  *
  * @example
  * ```typescript
@@ -51,7 +51,6 @@ export const xorgxtPackage = {
     'x.org/ice',
     'x.org/sm',
     'x.org/x11',
-    'freedesktop.org/pkg-config~0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install taglib-config`
  * @aliases `taglib-config`
- * @dependencies `zlib.net^1`, `github.com/nemtrif/utfcpp^4`, `cmake.org`, ... (+1 more)
+ * @dependencies `zlib.net^1`, `github.com/nemtrif/utfcpp^4`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const taglibconfigPackage = {
   dependencies: [
     'zlib.net^1',
     'github.com/nemtrif/utfcpp^4',
-    'cmake.org',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

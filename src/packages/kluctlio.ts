@@ -8,7 +8,6 @@
  *
  * @install `launchpad install kluctl`
  * @aliases `kluctl`
- * @dependencies `go.dev^1.21`, `nodejs.org^18`, `npmjs.com`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -57,16 +56,7 @@ export const kluctlPackage = {
     'kluctl',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev^1.21',
-    'nodejs.org^18',
-    'npmjs.com',
-    'gnu.org/make',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

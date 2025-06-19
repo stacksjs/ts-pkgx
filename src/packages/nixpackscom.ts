@@ -8,7 +8,6 @@
  *
  * @install `launchpad install nixpacks`
  * @aliases `nixpacks`
- * @dependencies `rust-lang.org^1.65`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const nixpacksPackage = {
     'nixpacks',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org^1.65',
-    'rust-lang.org/cargo',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

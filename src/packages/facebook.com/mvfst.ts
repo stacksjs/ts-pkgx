@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +facebook.com/mvfst -- $SHELL -i`
- * @dependencies `boost.org`, `github.com/facebookincubator/fizz`, `fmt.dev^10`, ... (+19 more)
+ * @dependencies `boost.org`, `github.com/facebookincubator/fizz`, `fmt.dev^10`, ... (+6 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,6 +47,7 @@ export const facebookcommvfstPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'boost.org',
@@ -56,21 +57,8 @@ export const facebookcommvfstPackage = {
     'gflags.github.io',
     'google.com/glog',
     'openssl.org',
-    'libsodium.org^1.0.19',
-    'gnu.org/gcc/libstdcxx@13',
-    'cmake.org',
-    'gnu.org/gcc@13',
-    'gnu.org/binutils',
-    'gnu.org/make',
-    'kernel.org/linux-headers',
-    'google.com/googletest',
-    'cmake.org',
-    'gnu.org/gawk',
-    'pkgx.sh^1',
-    'curl.se',
-    'gnu.org/gcc',
-    'gnu.org/binutils',
-    'gnu.org/make',
+    'linux:libsodium.org^1.0.19',
+    'linux:gnu.org/gcc/libstdcxx@13',
   ] as const,
   /**
    * Available versions from newest to oldest.

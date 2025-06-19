@@ -8,7 +8,7 @@
  *
  * @install `launchpad install oci`
  * @aliases `oci`
- * @dependencies `certifi.io/python-certifi^2024`, `pyyaml.org/libyaml^0.2`, `cryptography.io^42`, ... (+3 more)
+ * @dependencies `certifi.io/python-certifi^2024`, `pyyaml.org/libyaml^0.2`, `cryptography.io^42`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,8 +66,6 @@ export const ociPackage = {
     'pyyaml.org/libyaml^0.2',
     'cryptography.io^42',
     'python.org^3.11',
-    'cmake.org',
-    'rust-lang.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

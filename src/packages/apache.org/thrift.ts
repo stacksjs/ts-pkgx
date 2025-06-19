@@ -8,7 +8,7 @@
  *
  * @install `launchpad install thrift`
  * @name `thrift`
- * @dependencies `openssl.org@1.1`, `zlib.net`, `gnu.org/automake`, ... (+5 more)
+ * @dependencies `openssl.org@1.1`, `zlib.net`
  *
  * @example
  * ```typescript
@@ -64,12 +64,6 @@ export const thriftPackage = {
   dependencies: [
     'openssl.org@1.1',
     'zlib.net',
-    'gnu.org/automake',
-    'gnu.org/autoconf',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
-    'gnu.org/bison',
-    'boost.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

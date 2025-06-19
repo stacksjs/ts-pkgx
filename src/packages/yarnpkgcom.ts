@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +yarnpkg.com -- $SHELL -i`
  * @aliases `yarn`
- * @dependencies `nodejs.org`, `classic.yarnpkg.com^1 # works and prevents bootstrapping issues`, `nodejs.org>=18.3<23`
+ * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const yarnPackage = {
    */
   dependencies: [
     'nodejs.org',
-    'classic.yarnpkg.com^1 # works and prevents bootstrapping issues',
-    'nodejs.org>=18.3<23',
   ] as const,
   /**
    * Available versions from newest to oldest.

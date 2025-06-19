@@ -8,7 +8,7 @@
  *
  * @install `launchpad install qpdf`
  * @aliases `qpdf`
- * @dependencies `zlib.net^1`, `libjpeg-turbo.org^2`, `openssl.org^1.1`, ... (+5 more)
+ * @dependencies `zlib.net^1`, `libjpeg-turbo.org^2`, `openssl.org^1.1`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,10 +66,6 @@ export const qpdfPackage = {
     'libjpeg-turbo.org^2',
     'openssl.org^1.1',
     'gnutls.org^3',
-    'cmake.org^3',
-    'pyyaml.org/libyaml',
-    'python.org^3',
-    'pip.pypa.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

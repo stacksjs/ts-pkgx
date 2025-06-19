@@ -8,7 +8,7 @@
  *
  * @install `launchpad install xkbcli`
  * @aliases `xkbcli`
- * @dependencies `x.org/x11`, `x.org/xcb`, `freedesktop.org/XKeyboardConfig`, ... (+4 more)
+ * @dependencies `x.org/x11`, `x.org/xcb`, `freedesktop.org/XKeyboardConfig`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,9 +66,6 @@ export const xkbcliPackage = {
     'x.org/xcb',
     'freedesktop.org/XKeyboardConfig',
     'gnome.org/libxml2',
-    'gnu.org/bison',
-    'mesonbuild.com',
-    'ninja-build.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

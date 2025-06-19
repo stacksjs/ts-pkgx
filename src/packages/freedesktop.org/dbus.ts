@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +freedesktop.org/dbus -- $SHELL -i`
  * @name `dbus`
- * @dependencies `freedesktop.org/pkg-config`, `pagure.io/xmlto`, `libexpat.github.io`, ... (+5 more)
  *
  * @example
  * ```typescript
@@ -65,20 +64,7 @@ export const dbusPackage = {
     'dbus-uuidgen',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'freedesktop.org/pkg-config',
-    'pagure.io/xmlto',
-    'libexpat.github.io',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'gnu.org/patch',
-    'python.org~3.11',
-    'freedesktop.org/pkg-config',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

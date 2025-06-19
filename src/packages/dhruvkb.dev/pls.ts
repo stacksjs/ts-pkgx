@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pls`
  * @name `pls`
- * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `rust-lang.org>=1.65`, `rust-lang.org/cargo`
+ * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const plsPackage = {
    */
   dependencies: [
     'libgit2.org~1.7 # links to libgit2.so.1.7',
-    'rust-lang.org>=1.65',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

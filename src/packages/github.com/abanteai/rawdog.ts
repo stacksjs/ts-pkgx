@@ -8,7 +8,7 @@
  *
  * @install `launchpad install rawdog`
  * @name `rawdog`
- * @dependencies `pkgx.sh^1`, `python.org~3.11`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const rawdogPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

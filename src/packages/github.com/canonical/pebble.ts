@@ -9,7 +9,6 @@
  * @install `launchpad install pebble`
  * @name `pebble`
  * @aliases `canonical/pebble`
- * @dependencies `go.dev`, `git-scm.org`, `gnu.org/sed`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -58,16 +57,7 @@ export const pebblePackage = {
     'pebble',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev',
-    'git-scm.org',
-    'gnu.org/sed',
-    'cmake.org^3',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

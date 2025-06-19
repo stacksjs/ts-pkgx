@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +radicle.org -- $SHELL -i`
- * @dependencies `openssl.org^1.1.1`, `rust-lang.org/cargo^0`, `cmake.org^3`, ... (+1 more)
+ * @dependencies `openssl.org^1.1.1`
  *
  * @example
  * ```typescript
@@ -83,9 +83,6 @@ export const radicleorgPackage = {
    */
   dependencies: [
     'openssl.org^1.1.1',
-    'rust-lang.org/cargo^0',
-    'cmake.org^3',
-    'freedesktop.org/pkg-config^0.29',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git-quick-stats`
  * @aliases `git-quick-stats`
- * @dependencies `git-scm.org`, `gnu.org/bash`, `github.com/util-linux/util-linux`
+ * @dependencies `git-scm.org`, `gnu.org/bash`, `linux:github.com/util-linux/util-linux` (includes OS-specific dependencies with `os:package` format)
  * @companions `gnu.org/coreutils`
  *
  * @example
@@ -67,11 +67,12 @@ export const gitquickstatsPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'git-scm.org',
     'gnu.org/bash',
-    'github.com/util-linux/util-linux',
+    'linux:github.com/util-linux/util-linux',
   ] as const,
   /**
    * Available versions from newest to oldest.

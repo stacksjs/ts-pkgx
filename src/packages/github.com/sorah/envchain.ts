@@ -8,7 +8,7 @@
  *
  * @install `launchpad install envchain`
  * @name `envchain`
- * @dependencies `gnu.org/readline`, `gnome.org/libsecret`, `freedesktop.org/pkg-config`, ... (+2 more)
+ * @dependencies `linux:gnu.org/readline`, `linux:gnome.org/libsecret` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,13 +60,11 @@ export const envchainPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnu.org/readline',
-    'gnome.org/libsecret',
-    'freedesktop.org/pkg-config',
-    'llvm.org',
-    'cmake.org^3',
+    'linux:gnu.org/readline',
+    'linux:gnome.org/libsecret',
   ] as const,
   /**
    * Available versions from newest to oldest.

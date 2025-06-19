@@ -8,7 +8,6 @@
  *
  * @install `launchpad install horcrux`
  * @name `horcrux`
- * @dependencies `go.dev^1.14`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const horcruxPackage = {
     'horcrux',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'go.dev^1.14',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnome.org/libsecret -- $SHELL -i`
- * @dependencies `gnome.org/glib`, `gnupg.org/libgcrypt`, `gnupg.org/libgpg-error`, ... (+12 more)
+ * @dependencies `gnome.org/glib`, `gnupg.org/libgcrypt`, `gnupg.org/libgpg-error`
  *
  * @example
  * ```typescript
@@ -51,18 +51,6 @@ export const gnomeorglibsecretPackage = {
     'gnome.org/glib',
     'gnupg.org/libgcrypt',
     'gnupg.org/libgpg-error',
-    'docbook.org/xsl',
-    'gnu.org/gettext',
-    'gnome.org/gobject-introspection',
-    'mesonbuild.com',
-    'ninja-build.org',
-    'freedesktop.org/pkg-config',
-    'gnome.org/vala',
-    'gnome.org/libxslt',
-    'freedesktop.org/dbus',
-    'llvm.org',
-    'freedesktop.org/pkg-config',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

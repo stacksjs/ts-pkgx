@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +gnu.org/gcc -- $SHELL -i`
- * @dependencies `gnu.org/binutils`, `gnu.org/gmp>=4.2`, `gnu.org/mpfr>=2.4.0`, ... (+10 more)
+ * @dependencies `gnu.org/binutils`, `gnu.org/gmp>=4.2`, `gnu.org/mpfr>=2.4.0`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -77,14 +77,6 @@ export const gnuorggccPackage = {
     'gnu.org/mpfr>=2.4.0',
     'gnu.org/mpc>=0.8.0',
     'zlib.net^1.3',
-    'gnu.org/gcc',
-    'gnu.org/make',
-    'perl.org^5.6.1',
-    'gnu.org/patch',
-    'curl.se',
-    'github.com/westes/flex',
-    'darwin/x86-64^# since 15.1.0',
-    'libisl.sourceforge.io^0',
   ] as const,
   /**
    * Available versions from newest to oldest.

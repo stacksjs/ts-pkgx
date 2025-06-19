@@ -8,7 +8,6 @@
  *
  * @install `launchpad install idn`
  * @aliases `idn`
- * @dependencies `freedesktop.org/pkg-config^0.29`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const idnPackage = {
     'idn',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'freedesktop.org/pkg-config^0.29',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

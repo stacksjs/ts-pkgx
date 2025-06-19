@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +isc.org/bind9 -- $SHELL -i`
  * @name `bind9`
- * @dependencies `gnome.org/libxml2@2.13`, `nghttp2.org@1.57`, `libuv.org@1.49`, ... (+8 more)
+ * @dependencies `gnome.org/libxml2@2.13`, `nghttp2.org@1.57`, `libuv.org@1.49`, ... (+8 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -87,6 +87,7 @@ export const bind9Package = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnome.org/libxml2@2.13',
@@ -99,7 +100,7 @@ export const bind9Package = {
     'github.com/json-c/json-c@0.18',
     'gnu.org/libidn2@2.3',
     'jemalloc.net@5',
-    'kernel.org/libcap',
+    'linux:kernel.org/libcap',
   ] as const,
   /**
    * Available versions from newest to oldest.

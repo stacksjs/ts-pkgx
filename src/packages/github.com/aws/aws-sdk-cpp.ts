@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/aws/aws-sdk-cpp -- $SHELL -i`
- * @dependencies `curl.se`, `zlib.net@1`, `openssl.org@1.1`, ... (+3 more)
+ * @dependencies `curl.se`, `zlib.net@1`, `openssl.org@1.1`
  *
  * @example
  * ```typescript
@@ -52,9 +52,6 @@ export const githubcomawsawssdkcppPackage = {
     'curl.se',
     'zlib.net@1',
     'openssl.org@1.1',
-    'cmake.org',
-    'git-scm.org^2',
-    'kernel.org/linux-headers^5',
   ] as const,
   /**
    * Available versions from newest to oldest.

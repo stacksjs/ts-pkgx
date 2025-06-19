@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +apache.org/subversion -- $SHELL -i`
  * @aliases `svn`
- * @dependencies `gnu.org/gettext^0.21`, `lz4.org^1`, `openssl.org^1.1`, ... (+10 more)
+ * @dependencies `gnu.org/gettext^0.21`, `lz4.org^1`, `openssl.org^1.1`, ... (+7 more)
  *
  * @example
  * ```typescript
@@ -82,9 +82,6 @@ export const svnPackage = {
     'zlib.net^1.2',
     'apache.org/apr^1',
     'apache.org/apr-util^1',
-    'freedesktop.org/pkg-config^0.29',
-    'swig.org^4',
-    'python.org~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

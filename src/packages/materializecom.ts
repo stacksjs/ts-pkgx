@@ -8,7 +8,7 @@
  *
  * @install `launchpad install mz`
  * @aliases `mz`
- * @dependencies `openssl.org^1.1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`, ... (+8 more)
+ * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -63,16 +63,6 @@ export const mzPackage = {
    */
   dependencies: [
     'openssl.org^1.1',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
-    'cmake.org^3',
-    'perl.org',
-    'gnu.org/automake',
-    'gnu.org/autoconf',
-    'protobuf.dev@26.1',
-    'gnu.org/make',
-    'git-scm.org^2',
-    'llvm.org<17',
   ] as const,
   /**
    * Available versions from newest to oldest.

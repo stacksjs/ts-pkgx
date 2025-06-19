@@ -8,7 +8,7 @@
  *
  * @install `launchpad install sl`
  * @name `sl`
- * @dependencies `invisible-island.net/ncurses@6`, `gnu.org/patch`
+ * @dependencies `invisible-island.net/ncurses@6`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const slPackage = {
    */
   dependencies: [
     'invisible-island.net/ncurses@6',
-    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

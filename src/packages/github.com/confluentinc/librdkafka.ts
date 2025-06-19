@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/confluentinc/librdkafka -- $SHELL -i`
- * @dependencies `lz4.org`, `zlib.net`, `openssl.org^1.1`, ... (+5 more)
+ * @dependencies `lz4.org`, `zlib.net`, `openssl.org^1.1`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -54,9 +54,6 @@ export const githubcomconfluentinclibrdkafkaPackage = {
     'openssl.org^1.1',
     'facebook.com/zstd',
     'curl.se',
-    'python.org~3.11',
-    'llvm.org',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

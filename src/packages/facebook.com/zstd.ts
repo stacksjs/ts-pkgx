@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +facebook.com/zstd -- $SHELL -i`
- * @dependencies `lz4.org^1`, `tukaani.org/xz^5`, `zlib.net^1`, ... (+2 more)
+ * @dependencies `lz4.org^1`, `tukaani.org/xz^5`, `zlib.net^1`
  *
  * @example
  * ```typescript
@@ -66,8 +66,6 @@ export const facebookcomzstdPackage = {
     'lz4.org^1',
     'tukaani.org/xz^5',
     'zlib.net^1',
-    'cmake.org^3',
-    'ninja-build.org^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

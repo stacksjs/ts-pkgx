@@ -4,7 +4,6 @@
  * @domain `tea.xyz`
  *
  * @install `launchpad install tea.xyz`
- * @dependencies `deno.land>=1.23 <1.25 || ^1.25.3`
  *
  * @example
  * ```typescript
@@ -40,13 +39,7 @@ export const teaxyzPackage = {
   installCommand: 'launchpad install tea.xyz' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'deno.land>=1.23 <1.25 || ^1.25.3',
-  ] as const,
+  dependencies: [] as const,
   versions: [] as const,
   aliases: [] as const,
 }

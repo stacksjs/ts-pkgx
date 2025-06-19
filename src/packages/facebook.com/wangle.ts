@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +facebook.com/wangle -- $SHELL -i`
- * @dependencies `boost.org`, `google.com/double-conversion^3`, `github.com/facebookincubator/fizz`, ... (+17 more)
+ * @dependencies `boost.org`, `google.com/double-conversion^3`, `github.com/facebookincubator/fizz`, ... (+13 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -47,6 +47,7 @@ export const facebookcomwanglePackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'boost.org',
@@ -62,13 +63,9 @@ export const facebookcomwanglePackage = {
     'openssl.org^1.1',
     'google.github.io/snappy',
     'facebook.com/zstd^1',
-    'sourceware.org/bzip2',
-    'zlib.net',
-    'gnu.org/gcc/libstdcxx@13',
-    'cmake.org^3',
-    'gnu.org/gcc@13',
-    'curl.se',
-    'gnu.org/gcc@13',
+    'darwin:sourceware.org/bzip2',
+    'darwin:zlib.net',
+    'linux:gnu.org/gcc/libstdcxx@13',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +rucio.cern.ch/rucio-client -- $SHELL -i`
  * @name `rucio-client`
- * @dependencies `pkgx.sh^1`, `gnu.org/bash^5`, `python.org>=3.9`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const rucioclientPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'gnu.org/bash^5',
-    'python.org>=3.9',
   ] as const,
   /**
    * Available versions from newest to oldest.

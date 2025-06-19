@@ -8,7 +8,7 @@
  *
  * @install `launchpad install speexdec`
  * @aliases `speexdec`
- * @dependencies `xiph.org/ogg`, `freedesktop.org/pkg-config`
+ * @dependencies `xiph.org/ogg`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const speexdecPackage = {
    */
   dependencies: [
     'xiph.org/ogg',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

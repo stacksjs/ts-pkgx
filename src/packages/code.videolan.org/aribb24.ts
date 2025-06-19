@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +code.videolan.org/aribb24 -- $SHELL -i`
- * @dependencies `libpng.org`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+2 more)
+ * @dependencies `libpng.org`
  *
  * @example
  * ```typescript
@@ -49,10 +49,6 @@ export const codevideolanorgaribb24Package = {
    */
   dependencies: [
     'libpng.org',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,6 @@
  *
  * @install `launchpad install ed`
  * @name `ed`
- * @dependencies `curl.se`, `nongnu.org/lzip`
  *
  * @example
  * ```typescript
@@ -56,14 +55,7 @@ export const edPackage = {
     'ed',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'curl.se',
-    'nongnu.org/lzip',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +kafka.apache.org -- $SHELL -i`
- * @dependencies `openjdk.org`, `rsync.samba.org`
+ * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
@@ -98,7 +98,6 @@ export const kafkaapacheorgPackage = {
    */
   dependencies: [
     'openjdk.org',
-    'rsync.samba.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

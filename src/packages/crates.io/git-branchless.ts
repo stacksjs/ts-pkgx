@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git-branchless`
  * @name `git-branchless`
- * @dependencies `libgit2.org@1`, `rust-lang.org>=1.56`, `rust-lang.org/cargo`, ... (+1 more)
+ * @dependencies `libgit2.org@1`
  *
  * @example
  * ```typescript
@@ -63,9 +63,6 @@ export const gitbranchlessPackage = {
    */
   dependencies: [
     'libgit2.org@1',
-    'rust-lang.org>=1.56',
-    'rust-lang.org/cargo',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

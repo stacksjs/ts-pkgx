@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +theora.org -- $SHELL -i`
- * @dependencies `xiph.org/ogg`, `xiph.org/vorbis`, `gnu.org/libtool`, ... (+5 more)
+ * @dependencies `xiph.org/ogg`, `xiph.org/vorbis`
  *
  * @example
  * ```typescript
@@ -50,12 +50,6 @@ export const theoraorgPackage = {
   dependencies: [
     'xiph.org/ogg',
     'xiph.org/vorbis',
-    'gnu.org/libtool',
-    'gnu.org/automake',
-    'gnu.org/autoconf>=2.71',
-    'freedesktop.org/pkg-config',
-    'gnu.org/wget',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

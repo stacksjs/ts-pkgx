@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +github.com/linux-test-project/lcov -- $SHELL -i`
- * @dependencies `perl.org>=5`, `python.org@3`, `cpanmin.us^1`, ... (+1 more)
+ * @dependencies `perl.org>=5`, `python.org@3`
  * @companions `PERL5LIB^${{prefix}}/lib/perl5`
  *
  * @example
@@ -70,8 +70,6 @@ export const githubcomlinuxtestprojectlcovPackage = {
   dependencies: [
     'perl.org>=5',
     'python.org@3',
-    'cpanmin.us^1',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

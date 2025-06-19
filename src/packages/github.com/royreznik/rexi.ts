@@ -8,7 +8,7 @@
  *
  * @install `launchpad install rexi`
  * @name `rexi`
- * @dependencies `pkgx.sh^1`, `python.org>=3.8`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const rexiPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org>=3.8',
   ] as const,
   /**
    * Available versions from newest to oldest.

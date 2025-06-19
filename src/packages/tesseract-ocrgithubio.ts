@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tesseract`
  * @aliases `tesseract`
- * @dependencies `cairographics.org@1`, `unicode.org@71`, `leptonica.org`, ... (+7 more)
+ * @dependencies `cairographics.org@1`, `unicode.org@71`, `leptonica.org`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -67,11 +67,6 @@ export const tesseractPackage = {
     'leptonica.org',
     'libarchive.org',
     'gnome.org/pango@1',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'gnu.org/libtool',
-    'gnu.org/wget',
-    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

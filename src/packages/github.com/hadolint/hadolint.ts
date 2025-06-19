@@ -8,7 +8,6 @@
  *
  * @install `launchpad install hadolint`
  * @name `hadolint`
- * @dependencies `haskell.org~9.2`, `haskell.org/cabal^3`, `git-scm.org^2 # cabal needs it for this one`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const hadolintPackage = {
     'hadolint',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'haskell.org~9.2',
-    'haskell.org/cabal^3',
-    'git-scm.org^2 # cabal needs it for this one',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

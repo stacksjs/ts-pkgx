@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +mysql.com -- $SHELL -i`
- * @dependencies `unicode.org^71`, `libevent.org^2`, `lz4.org^1`, ... (+13 more)
+ * @dependencies `unicode.org^71`, `libevent.org^2`, `lz4.org^1`, ... (+8 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -85,6 +85,7 @@ export const mysqlcomPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'unicode.org^71',
@@ -97,12 +98,7 @@ export const mysqlcomPackage = {
     'curl.se>=6.0',
     'thrysoee.dk/editline^3',
     'developers.yubico.com/libfido2^1',
-    'gnu.org/gcc/libstdcxx@14',
-    'cmake.org^3',
-    'gnu.org/bison>=3.0.4',
-    'gnu.org/gcc',
-    'gnu.org/coreutils^9',
-    'pkgx.sh^1',
+    'linux:gnu.org/gcc/libstdcxx@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

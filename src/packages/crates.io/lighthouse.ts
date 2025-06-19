@@ -8,7 +8,7 @@
  *
  * @install `launchpad install lighthouse`
  * @name `lighthouse`
- * @dependencies `zlib.net^1`, `rust-lang.org^1.78 # stdsimd changes`, `rust-lang.org/cargo`, ... (+2 more)
+ * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
@@ -63,10 +63,6 @@ export const lighthousePackage = {
    */
   dependencies: [
     'zlib.net^1',
-    'rust-lang.org^1.78 # stdsimd changes',
-    'rust-lang.org/cargo',
-    'cmake.org^3.12',
-    'protobuf.dev',
   ] as const,
   /**
    * Available versions from newest to oldest.

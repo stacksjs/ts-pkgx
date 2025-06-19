@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +libssh.org -- $SHELL -i`
- * @dependencies `openssl.org^1.1`, `zlib.net^1`, `cmake.org^3`
+ * @dependencies `openssl.org^1.1`, `zlib.net^1`
  *
  * @example
  * ```typescript
@@ -50,7 +50,6 @@ export const libsshorgPackage = {
   dependencies: [
     'openssl.org^1.1',
     'zlib.net^1',
-    'cmake.org^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

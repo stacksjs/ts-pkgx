@@ -9,7 +9,7 @@
  * @install `launchpad install pants`
  * @name `scie-pants`
  * @aliases `pants`
- * @dependencies `curl.se/ca-certs`, `curl.se`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const pantsPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

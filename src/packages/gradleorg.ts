@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gradle`
  * @aliases `gradle`
- * @dependencies `openjdk.org`, `openjdk.org@17`
+ * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const gradlePackage = {
    */
   dependencies: [
     'openjdk.org',
-    'openjdk.org@17',
   ] as const,
   /**
    * Available versions from newest to oldest.

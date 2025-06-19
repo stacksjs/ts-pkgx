@@ -8,7 +8,6 @@
  *
  * @install `launchpad install unrar`
  * @aliases `unrar`
- * @dependencies `gnu.org/coreutils^9`
  *
  * @example
  * ```typescript
@@ -56,13 +55,7 @@ export const unrarPackage = {
     'unrar',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/coreutils^9',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

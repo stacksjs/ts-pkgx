@@ -8,7 +8,7 @@
  *
  * @install `launchpad install aria2c`
  * @aliases `aria2c`
- * @dependencies `zlib.net^1`, `openssl.org^1`, `libexpat.github.io`, ... (+4 more)
+ * @dependencies `zlib.net^1`, `openssl.org^1`, `libexpat.github.io`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,9 +66,6 @@ export const aria2cPackage = {
     'openssl.org^1',
     'libexpat.github.io',
     'sqlite.org^3',
-    'gnupg.org/libgcrypt^1',
-    'gnupg.org/libgpg-error^1',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

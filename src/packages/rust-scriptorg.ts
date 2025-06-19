@@ -8,7 +8,6 @@
  *
  * @install `launchpad install rust-script`
  * @aliases `rust-script`
- * @dependencies `rust-lang.org>=1.64`, `rust-lang.org/cargo`, `pkgx.sh^1`, ... (+1 more)
  * @companions `rust-lang.org`, `rust-lang.org/cargo`
  *
  * @example
@@ -65,16 +64,7 @@ export const rustscriptPackage = {
     'rust-lang.org',
     'rust-lang.org/cargo',
   ] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'rust-lang.org>=1.64',
-    'rust-lang.org/cargo',
-    'pkgx.sh^1',
-    'gnu.org/sed',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

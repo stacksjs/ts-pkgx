@@ -8,7 +8,6 @@
  *
  * @install `launchpad install +lloyd.github.io/yajl -- $SHELL -i`
  * @aliases `json`
- * @dependencies `cmake.org`, `gnu.org/gcc`, `gnu.org/make`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -58,16 +57,7 @@ export const jsonPackage = {
     'json_verify',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'gnu.org/gcc',
-    'gnu.org/make',
-    'freedesktop.org/pkg-config',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

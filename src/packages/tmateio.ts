@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tmate`
  * @aliases `tmate`
- * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses@6`, `msgpack.org@6`, ... (+5 more)
+ * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses@6`, `msgpack.org@6`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -66,10 +66,6 @@ export const tmatePackage = {
     'invisible-island.net/ncurses@6',
     'msgpack.org@6',
     'libssh.org@0',
-    'gnu.org/bison',
-    'gnu.org/autoconf',
-    'gnu.org/automake',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

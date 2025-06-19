@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +virtualsquare.org/vde -- $SHELL -i`
- * @dependencies `gnu.org/autoconf^2`, `gnu.org/automake^1`, `gnu.org/libtool^2.4`
  *
  * @example
  * ```typescript
@@ -43,15 +42,7 @@ export const virtualsquareorgvdePackage = {
   installCommand: 'launchpad install +virtualsquare.org/vde -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'gnu.org/autoconf^2',
-    'gnu.org/automake^1',
-    'gnu.org/libtool^2.4',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

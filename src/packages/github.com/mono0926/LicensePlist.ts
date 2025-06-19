@@ -8,7 +8,6 @@
  *
  * @install `launchpad install license-plist`
  * @aliases `license-plist`
- * @dependencies `swift.org^6 # as of 3.26.0`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const licenseplistPackage = {
     'license-plist',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'swift.org^6 # as of 3.26.0',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

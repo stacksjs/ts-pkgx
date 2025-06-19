@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +github.com/bazelbuild/bazelisk -- $SHELL -i`
  * @aliases `bazel`
- * @dependencies `curl.se/ca-certs`, `go.dev^1.20`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const bazelPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev^1.20',
   ] as const,
   /**
    * Available versions from newest to oldest.

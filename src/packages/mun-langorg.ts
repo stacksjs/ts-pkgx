@@ -8,7 +8,7 @@
  *
  * @install `launchpad install mun`
  * @aliases `mun`
- * @dependencies `invisible-island.net/ncurses@6`, `sourceware.org/libffi@3`, `gnome.org/libxml2@2`, ... (+2 more)
+ * @dependencies `invisible-island.net/ncurses@6`, `sourceware.org/libffi@3`, `gnome.org/libxml2@2`
  * @companions `llvm.org`
  *
  * @example
@@ -72,8 +72,6 @@ export const munPackage = {
     'invisible-island.net/ncurses@6',
     'sourceware.org/libffi@3',
     'gnome.org/libxml2@2',
-    'rust-lang.org^1.74.1',
-    'llvm.org^14 # requires this specifically',
   ] as const,
   /**
    * Available versions from newest to oldest.

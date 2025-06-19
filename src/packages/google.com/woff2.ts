@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +google.com/woff2 -- $SHELL -i`
  * @name `woff2`
- * @dependencies `github.com/google/brotli`, `gnu.org/gcc`, `cmake.org`, ... (+2 more)
+ * @dependencies `github.com/google/brotli`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -62,13 +62,11 @@ export const woff2Package = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'github.com/google/brotli',
-    'gnu.org/gcc',
-    'cmake.org',
-    'gnu.org/wget',
-    'darwinsys.com/file',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

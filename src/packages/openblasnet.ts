@@ -6,7 +6,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +openblas.net -- $SHELL -i`
- * @dependencies `cmake.org`, `gnu.org/gcc`
  *
  * @example
  * ```typescript
@@ -44,14 +43,7 @@ export const openblasnetPackage = {
   installCommand: 'launchpad install +openblas.net -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'gnu.org/gcc',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

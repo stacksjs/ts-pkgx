@@ -8,7 +8,6 @@
  *
  * @install `launchpad install dav1d`
  * @name `dav1d`
- * @dependencies `nasm.us@2.14`, `mesonbuild.com>=0.49`, `ninja-build.org@1`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const dav1dPackage = {
     'dav1d',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'nasm.us@2.14',
-    'mesonbuild.com>=0.49',
-    'ninja-build.org@1',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

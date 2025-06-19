@@ -8,7 +8,7 @@
  *
  * @install `launchpad install yazi`
  * @name `yazi`
- * @dependencies `stedolan.github.io/jq`, `poppler.freedesktop.org`, `crates.io/fd-find`, ... (+7 more)
+ * @dependencies `stedolan.github.io/jq`, `poppler.freedesktop.org`, `crates.io/fd-find`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -68,10 +68,6 @@ export const yaziPackage = {
     'crates.io/ripgrep',
     'github.com/junegunn/fzf',
     'crates.io/zoxide',
-    'rust-lang.org^1.70',
-    'rust-lang.org/cargo',
-    'llvm.org<17',
-    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

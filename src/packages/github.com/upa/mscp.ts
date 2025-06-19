@@ -8,7 +8,7 @@
  *
  * @install `launchpad install mscp`
  * @name `mscp`
- * @dependencies `zlib.net^1.2.11`, `openssl.org^1.1.1`, `gnu.org/bash`, ... (+4 more)
+ * @dependencies `zlib.net^1.2.11`, `openssl.org^1.1.1`
  *
  * @example
  * ```typescript
@@ -64,11 +64,6 @@ export const mscpPackage = {
   dependencies: [
     'zlib.net^1.2.11',
     'openssl.org^1.1.1',
-    'gnu.org/bash',
-    'llvm.org',
-    'cmake.org',
-    'git-scm.org',
-    '#python.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

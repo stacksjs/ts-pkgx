@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +libwebsockets.org -- $SHELL -i`
- * @dependencies `libuv.org@1`, `libevent.org@2`, `cmake.org@3`
+ * @dependencies `libuv.org@1`, `libevent.org@2`
  *
  * @example
  * ```typescript
@@ -51,7 +51,6 @@ export const libwebsocketsorgPackage = {
   dependencies: [
     'libuv.org@1',
     'libevent.org@2',
-    'cmake.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

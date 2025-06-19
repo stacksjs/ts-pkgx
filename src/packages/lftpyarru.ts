@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +lftp.yar.ru -- $SHELL -i`
  * @aliases `lftp`
- * @dependencies `gnu.org/libidn2`, `gnu.org/gettext`, `gnu.org/readline`, ... (+6 more)
+ * @dependencies `gnu.org/libidn2`, `gnu.org/gettext`, `gnu.org/readline`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -61,6 +61,7 @@ export const lftpPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnu.org/libidn2',
@@ -70,8 +71,7 @@ export const lftpPackage = {
     'zlib.net',
     'invisible-island.net/ncurses',
     'libexpat.github.io',
-    'gnu.org/gcc/libstdcxx@14',
-    'gnu.org/gcc@14',
+    'linux:gnu.org/gcc/libstdcxx@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

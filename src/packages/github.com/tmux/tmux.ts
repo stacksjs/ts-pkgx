@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tmux`
  * @name `tmux`
- * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses`, `gnu.org/bison`, ... (+1 more)
+ * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const tmuxPackage = {
   dependencies: [
     'libevent.org^2.0',
     'invisible-island.net/ncurses',
-    'gnu.org/bison',
-    'freedesktop.org/pkg-config',
   ] as const,
   /**
    * Available versions from newest to oldest.

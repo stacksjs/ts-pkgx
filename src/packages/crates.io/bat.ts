@@ -8,7 +8,7 @@
  *
  * @install `launchpad install bat`
  * @name `bat`
- * @dependencies `zlib.net^1`, `libgit2.org~1.7 # links to libgit2.so.1.7`, `rust-lang.org>=1.60`, ... (+1 more)
+ * @dependencies `zlib.net^1`, `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
@@ -64,8 +64,6 @@ export const batPackage = {
   dependencies: [
     'zlib.net^1',
     'libgit2.org~1.7 # links to libgit2.so.1.7',
-    'rust-lang.org>=1.60',
-    'rust-lang.org/cargo',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install checkov`
  * @aliases `checkov`
- * @dependencies `pkgx.sh^1`, `python.org^3.12`, `stedolan.github.io/jq`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const checkovPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org^3.12',
-    'stedolan.github.io/jq',
   ] as const,
   /**
    * Available versions from newest to oldest.

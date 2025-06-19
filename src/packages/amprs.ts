@@ -8,7 +8,7 @@
  *
  * @install `launchpad install amp`
  * @aliases `amp`
- * @dependencies `zlib.net@1`, `libgit2.org@1`, `openssl.org@1.1`, ... (+2 more)
+ * @dependencies `zlib.net@1`, `libgit2.org@1`, `linux:openssl.org@1.1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -60,13 +60,12 @@ export const ampPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'zlib.net@1',
     'libgit2.org@1',
-    'openssl.org@1.1',
-    'rust-lang.org^1.56',
-    'rust-lang.org/cargo',
+    'linux:openssl.org@1.1',
   ] as const,
   /**
    * Available versions from newest to oldest.

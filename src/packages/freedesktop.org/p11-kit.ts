@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +freedesktop.org/p11-kit -- $SHELL -i`
- * @dependencies `sourceware.org/libffi^3`, `curl.se/ca-certs`, `gnu.org/libtasn1^4`, ... (+3 more)
+ * @dependencies `sourceware.org/libffi^3`, `curl.se/ca-certs`, `gnu.org/libtasn1^4`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -62,8 +62,6 @@ export const freedesktoporgp11kitPackage = {
     'curl.se/ca-certs',
     'gnu.org/libtasn1^4',
     'gnu.org/gettext',
-    'freedesktop.org/pkg-config',
-    'python.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

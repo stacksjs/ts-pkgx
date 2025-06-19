@@ -8,7 +8,7 @@
  *
  * @install `launchpad install +php.net -- $SHELL -i`
  * @aliases `php`
- * @dependencies `gnu.org/bison^3`, `re2c.org^3`, `apache.org/apr^1`, ... (+30 more)
+ * @dependencies `gnu.org/bison^3`, `re2c.org^3`, `apache.org/apr^1`, ... (+27 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -67,6 +67,7 @@ export const phpPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnu.org/bison^3',
@@ -97,11 +98,8 @@ export const phpPackage = {
     'gnu.org/sed^4 # phpize requires this',
     'openldap.org^2 # since 8.1.31, 8.2.26, 8.3.14, 8.4.0',
     'gnu.org/gcc/libstdcxx@14',
-    'sourceware.org/bzip2^1',
-    'zlib.net^1',
-    'freetype.org',
-    'tukaani.org/xz',
-    'gnu.org/libtool',
+    'darwin:sourceware.org/bzip2^1',
+    'darwin:zlib.net^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

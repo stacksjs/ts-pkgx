@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pre-commit`
  * @aliases `pre-commit`
- * @dependencies `python.org>=3.8<3.12`, `git-scm.org`
+ * @dependencies `python.org>=3.8<3.12`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const precommitPackage = {
    */
   dependencies: [
     'python.org>=3.8<3.12',
-    'git-scm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

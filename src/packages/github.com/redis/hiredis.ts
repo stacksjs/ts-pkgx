@@ -7,7 +7,6 @@
  *
  * @install `launchpad install +github.com/redis/hiredis -- $SHELL -i`
  * @name `hiredis`
- * @dependencies `freedesktop.org/pkg-config`
  *
  * @example
  * ```typescript
@@ -49,13 +48,7 @@ export const hiredisPackage = {
   installCommand: 'launchpad install +github.com/redis/hiredis -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'freedesktop.org/pkg-config',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

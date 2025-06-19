@@ -8,7 +8,6 @@
  *
  * @install `launchpad install glslc`
  * @aliases `glslc`
- * @dependencies `cmake.org`, `python.org~3.12`, `git-scm.org^2`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -57,16 +56,7 @@ export const glslcPackage = {
     'glslc',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'cmake.org',
-    'python.org~3.12',
-    'git-scm.org^2',
-    'freedesktop.org/pkg-config^0.29',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

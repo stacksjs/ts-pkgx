@@ -8,7 +8,7 @@
  *
  * @install `launchpad install markitdown`
  * @name `markitdown`
- * @dependencies `pkgx.sh^1`, `python.org~3.13`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const markitdownPackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org~3.13',
   ] as const,
   /**
    * Available versions from newest to oldest.

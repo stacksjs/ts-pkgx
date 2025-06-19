@@ -8,7 +8,7 @@
  *
  * @install `launchpad install trivy`
  * @name `trivy`
- * @dependencies `curl.se/ca-certs`, `go.dev>=1.21`, `gnu.org/gcc`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const trivyPackage = {
    */
   dependencies: [
     'curl.se/ca-certs',
-    'go.dev>=1.21',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

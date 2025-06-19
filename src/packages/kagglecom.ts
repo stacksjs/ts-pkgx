@@ -8,7 +8,7 @@
  *
  * @install `launchpad install kaggle`
  * @aliases `kaggle`
- * @dependencies `pkgx.sh^1`, `python.org^3.12`, `llvm.org`
+ * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
@@ -63,8 +63,6 @@ export const kagglePackage = {
    */
   dependencies: [
     'pkgx.sh^1',
-    'python.org^3.12',
-    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install wasm-pack`
  * @name `wasm-pack`
- * @dependencies `rust-lang.org`, `rust-lang.org/cargo`, `cmake.org@3`
+ * @dependencies `rust-lang.org`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const wasmpackPackage = {
   dependencies: [
     'rust-lang.org',
     'rust-lang.org/cargo',
-    'cmake.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +mongodb.com -- $SHELL -i`
- * @dependencies `curl.se@8`, `openssl.org@1.1`, `mongodb.com/shell`, ... (+2 more)
+ * @dependencies `curl.se@8`, `openssl.org@1.1`
  *
  * @example
  * ```typescript
@@ -61,9 +61,6 @@ export const mongodbcomPackage = {
   dependencies: [
     'curl.se@8',
     'openssl.org@1.1',
-    'mongodb.com/shell',
-    'pkgx.sh@1',
-    'crates.io/semverator',
   ] as const,
   /**
    * Available versions from newest to oldest.
