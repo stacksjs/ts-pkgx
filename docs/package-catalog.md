@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-19T13:35:54.380Z
+- **Last Updated**: 2025-06-19T15:27:04.978Z
 
 ## Table of Contents
 
@@ -416,7 +416,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[numbatdev](./packages/numbatdev.md)** (numbat) | A statically typed programming language for scientific computations with first class support for ... | numbat | 1.16.0 (+9) | `pkgx numbat.dev` |
 | **[numpyorg](./packages/numpyorg.md)** (f2py) | The fundamental package for scientific computing with Python. | f2py | 2.3.0 (+17) | `pkgx numpy.org` |
 | **[nushellsh](./packages/nushellsh.md)** (nu) | Modern shell for the GitHub era | nu | 0.105.1 (+47) | `pkgx nushell.sh` |
-| **[nxdev](./packages/nxdev.md)** (nx) | A package from nx.dev | nx | 21.2.0 (+151) | `pkgx nx.dev` |
+| **[nxdev](./packages/nxdev.md)** (nx) | A package from nx.dev | nx | 21.2.1 (+152) | `pkgx nx.dev` |
 | **[odigosio](./packages/odigosio.md)** (odigos) | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.199 (+181) | `pkgx odigos.io` |
 | **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.9.0 (+290) | `pkgx ohmyposh.dev` |
 | **[onefetchdev](./packages/onefetchdev.md)** (onefetch) | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch.dev` |
@@ -478,7 +478,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[radicleorg](./packages/radicleorg.md)** () | Radicle CLI | rad, git-remote-rad, rad-account, ... (+23) | 0.6.1 (+0) | `pkgx radicle.org` |
 | **[rapidjsonorg](./packages/rapidjsonorg.md)** () | A fast JSON parser/generator for C++ with both SAX/DOM style API | - | 1.1.0 (+0) | `pkgx rapidjson.org` |
 | **[rarlabcom](./packages/rarlabcom.md)** (unrar) | A package from rarlab.com | unrar | 7.1.7 (+19) | `pkgx rarlab.com` |
-| **[rcloneorg](./packages/rcloneorg.md)** (rclone) | "rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Was... | rclone | 1.70.0 (+16) | `pkgx rclone.org` |
+| **[rcloneorg](./packages/rcloneorg.md)** (rclone) | "rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Was... | rclone | 1.70.1 (+17) | `pkgx rclone.org` |
 | **[re2corg](./packages/re2corg.md)** (re2c) | Lexer generator for C, C++, D, Go, Haskell, Java, JS, OCaml, Python, Rust, V and Zig. | re2c | 4.2.0 (+6) | `pkgx re2c.org` |
 | **[rebar3org](./packages/rebar3org.md)** (rebar3) | Erlang build tool that makes it easy to compile and test Erlang applications and releases. | rebar3 | 3.25.0 (+2) | `pkgx rebar3.org` |
 | **[rendercom](./packages/rendercom.md)** (render) | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render.com` |

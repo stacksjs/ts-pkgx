@@ -3,7 +3,7 @@
  *
  * @domain `nx.dev`
  * @programs `nx`
- * @version `21.2.0` (152 versions available)
+ * @version `21.2.1` (153 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nx`
@@ -21,7 +21,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "nx.dev"
  * console.log(pkg.programs)    // ["nx"]
- * console.log(pkg.versions[0]) // "21.2.0" (latest)
+ * console.log(pkg.versions[0]) // "21.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nx-dev.md
@@ -68,6 +68,7 @@ export const nxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '21.2.1',
     '21.2.0',
     '21.1.3',
     '21.1.2',
