@@ -94,9 +94,13 @@ function getPropertyJSDoc(key: string, value: any): string | null {
 
     case 'dependencies':
       if (Array.isArray(value) && value.length > 0) {
+        // Check if any dependencies are OS-specific
+        const hasOsDeps = value.some(dep => typeof dep === 'string' && dep.includes(':'))
+        const osNote = hasOsDeps ? '\n   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).' : ''
+
         return `  /**
    * Required dependencies for this package.
-   * These will be automatically installed.
+   * These will be automatically installed.${osNote}
    */`
       }
       break
@@ -315,7 +319,12 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
   if (packageInfo.dependencies && packageInfo.dependencies.length > 0) {
     const depsList = packageInfo.dependencies.slice(0, 3).join('`, `')
     const moreDeps = packageInfo.dependencies.length > 3 ? `, ... (+${packageInfo.dependencies.length - 3} more)` : ''
-    lines.push(` * @dependencies \`${depsList}\`${moreDeps}`)
+
+    // Check if any dependencies are OS-specific
+    const hasOsDeps = packageInfo.dependencies.some(dep => dep.includes(':'))
+    const osNote = hasOsDeps ? ' (includes OS-specific dependencies with `os:package` format)' : ''
+
+    lines.push(` * @dependencies \`${depsList}\`${moreDeps}${osNote}`)
   }
 
   // Companions
@@ -2501,11 +2510,15 @@ export async function readPantryPackageInfo(packageName: string, pantryDir = 'sr
     let inDepsSection = false
     let inBuildDepsSection = false
 
+    let inOsSection = false
+    let currentOs = ''
+
     for (const line of depsLines) {
       // Check for top-level dependencies
       if (line.match(/^dependencies:\s*$/)) {
         inDepsSection = true
         inBuildDepsSection = false
+        inOsSection = false
         continue
       }
 
@@ -2513,6 +2526,7 @@ export async function readPantryPackageInfo(packageName: string, pantryDir = 'sr
       if (line.match(/^\s{2}dependencies:\s*$/)) {
         inBuildDepsSection = true
         inDepsSection = false
+        inOsSection = false
         continue
       }
 
@@ -2524,24 +2538,68 @@ export async function readPantryPackageInfo(packageName: string, pantryDir = 'sr
           || (inBuildDepsSection && !line.match(/^\s{4,}/))) {
           inDepsSection = false
           inBuildDepsSection = false
+          inOsSection = false
           continue
         }
 
-        // Parse lines like "nodejs.org: '>=5'" or "curl.se: '*'"
-        const depMatch = line.match(/^\s+([^\s:]+):\s*['"]?([^'"]+)['"]?/)
-        if (depMatch) {
-          const pkg = depMatch[1]
-          const version = depMatch[2].trim()
+        // Check for OS-specific sections like "linux:", "darwin:", etc.
+        const osMatch = line.match(/^\s{2}(linux|darwin|windows):\s*$/)
+        if (osMatch) {
+          inOsSection = true
+          currentOs = osMatch[1]
+          continue
+        }
 
-          if (version && version !== '*') {
-            // Include version constraint - add @ for specific versions, ^ for ranges
-            const hasVersionOperator = /^[~^>=<@]/.test(version)
-            const isSpecificVersion = /^\d+(?:\.\d+)*$/.test(version)
-            const operator = hasVersionOperator ? '' : (isSpecificVersion ? '@' : '^')
-            dependencies.push(`${pkg}${operator}${version}`)
+        // If we're in an OS section, look for packages with more indentation
+        if (inOsSection) {
+          // Parse lines like "    freetype.org: '*'" (4+ spaces)
+          const osDepMatch = line.match(/^\s{4,}([^\s:]+):\s*['"]?([^'"]+)['"]?/)
+          if (osDepMatch) {
+            const pkg = osDepMatch[1]
+            const version = osDepMatch[2].trim()
+
+            // Add OS prefix to indicate conditional dependency
+            const osPrefix = `${currentOs}:`
+
+            if (version && version !== '*') {
+              // Include version constraint - add @ for specific versions, ^ for ranges
+              const hasVersionOperator = /^[~^>=<@]/.test(version)
+              const isSpecificVersion = /^\d+(?:\.\d+)*$/.test(version)
+              const operator = hasVersionOperator ? '' : (isSpecificVersion ? '@' : '^')
+              dependencies.push(`${osPrefix}${pkg}${operator}${version}`)
+            }
+            else {
+              dependencies.push(`${osPrefix}${pkg}`)
+            }
           }
-          else {
-            dependencies.push(pkg)
+          // If we hit a line with less than 4 spaces, we're out of this OS section
+          else if (!line.match(/^\s{4,}/) && !line.match(/^\s*$/)) {
+            inOsSection = false
+            currentOs = ''
+          }
+        }
+        else {
+          // Parse regular dependencies (direct under dependencies:)
+          const depMatch = line.match(/^\s{2,3}([^\s:]+):\s*['"]?([^'"]+)['"]?/)
+          if (depMatch) {
+            const pkg = depMatch[1]
+            const version = depMatch[2].trim()
+
+            // Skip OS sections that we already handled
+            if (['linux', 'darwin', 'windows'].includes(pkg)) {
+              continue
+            }
+
+            if (version && version !== '*') {
+              // Include version constraint - add @ for specific versions, ^ for ranges
+              const hasVersionOperator = /^[~^>=<@]/.test(version)
+              const isSpecificVersion = /^\d+(?:\.\d+)*$/.test(version)
+              const operator = hasVersionOperator ? '' : (isSpecificVersion ? '@' : '^')
+              dependencies.push(`${pkg}${operator}${version}`)
+            }
+            else {
+              dependencies.push(pkg)
+            }
           }
         }
       }

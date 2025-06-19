@@ -60,9 +60,9 @@ jobs:
           # Create a temporary file to capture the JSON output safely
           TEMP_JSON_FILE=$(mktemp)
 
-                    # First run the fetch command normally to do the actual work
+          # First run the fetch command normally to do the actual work
           echo "Running fetch command to update packages..."
-          if timeout 2900 bun bin/cli.ts fetch --all --verbose --concurrency 10 --timeout 10000; then
+          if timeout 3600 bun bin/cli.ts fetch --all --verbose --concurrency 8 --timeout 15000; then
             echo "Fetch command completed successfully"
             FETCH_SUCCESS=true
           else
@@ -195,7 +195,7 @@ jobs:
           # Clean up temp file
           rm -f "$TEMP_JSON_FILE"
 
-        timeout-minutes: 50
+        timeout-minutes: 65
 
       - name: Show git status after fetch
         run: |
