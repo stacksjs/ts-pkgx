@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-19T19:27:28.345Z
+- **Last Updated**: 2025-06-19T21:26:21.099Z
 
 ## Table of Contents
 
@@ -206,7 +206,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[bytebasecom](./packages/bytebasecom.md)** (bytebase) | World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engin... | bytebase | 3.7.1 (+31) | `pkgx bytebase.com` |
 | **[caddyservercom](./packages/caddyservercom.md)** (caddy) | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | caddy | 2.10.0 (+9) | `pkgx caddyserver.com` |
 | **[cairographicsorg](./packages/cairographicsorg.md)** (cairo-trace) | Vector graphics library with cross-device output support | cairo-trace | 1.18.4 (+3) | `pkgx cairographics.org` |
-| **[carapacesh](./packages/carapacesh.md)** (carapace) | Multi-shell multi-command argument completer | carapace | 1.3.2 (+10) | `pkgx carapace.sh` |
+| **[carapacesh](./packages/carapacesh.md)** (carapace) | Multi-shell multi-command argument completer | carapace | 1.3.3 (+11) | `pkgx carapace.sh` |
 | **[caskreadthedocsio](./packages/caskreadthedocsio.md)** (cask) | Project management tool for Emacs | cask | 0.9.1 (+1) | `pkgx cask.readthedocs.io` |
 | **[ccachedev](./packages/ccachedev.md)** (ccache) | Object-file caching compiler wrapper | ccache | 4.11.3 (+9) | `pkgx ccache.dev` |
 | **[certbotefforg](./packages/certbotefforg.md)** (certbot) | Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on yo... | certbot | 4.1.1 (+18) | `pkgx certbot.eff.org` |
