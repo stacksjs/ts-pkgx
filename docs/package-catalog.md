@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-19T15:27:04.978Z
+- **Last Updated**: 2025-06-19T17:26:26.577Z
 
 ## Table of Contents
 
@@ -94,7 +94,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[postgresqlorg](./packages/postgresqlorg.md)** () | Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't wo... | clusterdb, createdb, dropdb, ... (+25) | 17.2.0 (+11) | `pkgx postgresql.org` |
 | **[redisio](./packages/redisio.md)** (redis) | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.2 (+36) | `pkgx redis.io` |
 | **[sqliteorg](./packages/sqliteorg.md)** (sqlite3) | Official Git mirror of the SQLite source tree | sqlite3 | 3.50.1 (+25) | `pkgx sqlite.org` |
-| **[surrealdbcom](./packages/surrealdbcom.md)** (surreal) | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+43) | `pkgx surrealdb.com` |
+| **[surrealdbcom](./packages/surrealdbcom.md)** (surreal) | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+44) | `pkgx surrealdb.com` |
 | **[valkeyio](./packages/valkeyio.md)** (valkey) | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 8.1.2 (+11) | `pkgx valkey.io` |
 
 ## DevOps & Infrastructure
@@ -529,7 +529,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[tcpdumporg](./packages/tcpdumporg.md)** (pcap-config) | the LIBpcap interface to various kernel packet capture mechanism | pcap-config | 1.10.5 (+1) | `pkgx tcpdump.org` |
 | **[tcshorg](./packages/tcshorg.md)** () | Enhanced, fully compatible version of the Berkeley C shell | csh, tcsh | 6.24.15 (+0) | `pkgx tcsh.org` |
 | **[temporalio](./packages/temporalio.md)** (temporal) | Command-line interface for running Temporal Server and interacting with Workflows, Activities, Na... | temporal | 1.3.0 (+13) | `pkgx temporal.io` |
-| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** (terragrunt) | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.7 (+351) | `pkgx terragrunt.gruntwork.io` |
+| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** (terragrunt) | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.8 (+352) | `pkgx terragrunt.gruntwork.io` |
 | **[terratagio](./packages/terratagio.md)** (terratag) | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag.io` |
 | **[theoraorg](./packages/theoraorg.md)** () | A package from theora.org | - | 1.2.0 (+1) | `pkgx theora.org` |
 | **[tidbytcom](./packages/tidbytcom.md)** (pixlet) | Build apps for pixel-based displays ✨ | pixlet | 0.34.0 (+19) | `pkgx tidbyt.com` |

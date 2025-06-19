@@ -3,7 +3,7 @@
  *
  * @domain `tart.run`
  * @programs `tart`
- * @version `2.27.3` (55 versions available)
+ * @version `2.28.0` (56 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tart`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "tart.run"
  * console.log(pkg.description) // "macOS and Linux VMs on Apple Silicon to use in ..."
  * console.log(pkg.programs)    // ["tart"]
- * console.log(pkg.versions[0]) // "2.27.3" (latest)
+ * console.log(pkg.versions[0]) // "2.28.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tart-run.md
@@ -62,6 +62,7 @@ export const tartPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.28.0',
     '2.27.3',
     '2.27.2',
     '2.27.1',
