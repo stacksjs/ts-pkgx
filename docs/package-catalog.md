@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-19T21:26:21.099Z
+- **Last Updated**: 2025-06-19T23:27:13.953Z
 
 ## Table of Contents
 
@@ -432,7 +432,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[openpolicyagentorg](./packages/openpolicyagentorg.md)** (opa) | Open Policy Agent (OPA) is an open source, general-purpose policy engine. | opa | 1.5.1 (+25) | `pkgx openpolicyagent.org` |
 | **[openrestyorg](./packages/openrestyorg.md)** () | High Performance Web Platform Based on Nginx and LuaJIT | nginx-xml2pod, opm, resty, ... (+2) | 1.25.3.2 (+0) | `pkgx openresty.org` |
 | **[opensearchorg](./packages/opensearchorg.md)** (opensearch) | 🔎 Open source distributed and RESTful search engine. | opensearch, opensearch-keystore, opensearch-plugin, ... (+1) | 3.0.0 (+10) | `pkgx opensearch.org` |
-| **[openshiftcom](./packages/openshiftcom.md)** (oc) | The OpenShift Command Line, part of OKD | oc | 4.19.0 (+223) | `pkgx openshift.com` |
+| **[openshiftcom](./packages/openshiftcom.md)** (oc) | The OpenShift Command Line, part of OKD | oc | 4.19.0 (+224) | `pkgx openshift.com` |
 | **[openslideorg](./packages/openslideorg.md)** (openslide) | C library to read whole-slide images (a.k.a. virtual slides) | openslide-quickhash1sum, openslide-show-properties, openslide-write-png | 4.0.0 (+1) | `pkgx openslide.org` |
 | **[opensshcom](./packages/opensshcom.md)** () | A package from openssh.com | scp, sftp, slogin, ... (+6) | 10.0.0 (+5) | `pkgx openssh.com` |
 | **[opensslorg](./packages/opensslorg.md)** (OpenSSL) | TLS/SSL and crypto library with QUIC APIs | openssl, c_rehash | 3.5.0 (+29) | `pkgx openssl.org` |
