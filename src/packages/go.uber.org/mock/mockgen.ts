@@ -45,8 +45,8 @@ export const mockgenPackage = {
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/uber-go/mock' as const,
   /**
-   * Command to install this package using pkgx.
-   * @example sh <(curl https://pkgx.sh) +package-name
+   * Command to install this package using launchpad.
+   * @example launchpad install package-name
    */
   installCommand: 'launchpad install mockgen' as const,
   /**

@@ -38,8 +38,8 @@ export const githubcomgiampaolopsutilPackage = {
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/giampaolo/psutil' as const,
   /**
-   * Command to install this package using pkgx.
-   * @example sh <(curl https://pkgx.sh) +package-name
+   * Command to install this package using launchpad.
+   * @example launchpad install package-name
    */
   installCommand: 'launchpad install +github.com/giampaolo/psutil -- $SHELL -i' as const,
   programs: [] as const,

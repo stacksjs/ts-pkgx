@@ -38,8 +38,8 @@ export const cryptographyioPackage = {
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pyca/cryptography' as const,
   /**
-   * Command to install this package using pkgx.
-   * @example sh <(curl https://pkgx.sh) +package-name
+   * Command to install this package using launchpad.
+   * @example launchpad install package-name
    */
   installCommand: 'launchpad install +cryptography.io -- $SHELL -i' as const,
   programs: [] as const,

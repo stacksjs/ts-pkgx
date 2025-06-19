@@ -39,8 +39,8 @@ export const attrsorgPackage = {
   homepageUrl: 'https://www.attrs.org/' as const,
   githubUrl: 'https://github.com/python-attrs/attrs' as const,
   /**
-   * Command to install this package using pkgx.
-   * @example sh <(curl https://pkgx.sh) +package-name
+   * Command to install this package using launchpad.
+   * @example launchpad install package-name
    */
   installCommand: 'launchpad install +attrs.org -- $SHELL -i' as const,
   programs: [] as const,
