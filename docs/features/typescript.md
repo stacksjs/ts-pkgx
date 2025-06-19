@@ -1,6 +1,6 @@
 # TypeScript Integration
 
-ts-pkgx provides seamless TypeScript integration, making it easy to work with package data in a type-safe manner. The library now includes extensive type safety features that provide compile-time validation, IntelliSense support, and type-safe package management operations.
+ts-pkgx provides seamless TypeScript integration with a pantry-based approach, making it easy to work with package data in a type-safe manner. The library includes extensive type safety features that provide compile-time validation, comprehensive JSDoc documentation, IntelliSense support, and type-safe package management operations.
 
 ## Fully Typed Interfaces
 
@@ -26,136 +26,135 @@ interface PkgxPackage {
 
 These interfaces ensure that you always know what properties are available and what their types are, helping to prevent runtime errors.
 
-## TypeScript Code Generation
+## Enhanced TypeScript Code Generation
 
-ts-pkgx automatically generates TypeScript files for each package, making it easy to import and use package data in your projects:
+ts-pkgx automatically generates TypeScript files for each package with comprehensive JSDoc documentation and intelligent naming conventions:
 
 ```typescript
 // Generated file: bunsh.ts
 import type { PkgxPackage } from '../types'
 
-export const bunshPackage: PkgxPackage = {
+/**
+ * Bun - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+ *
+ * **Programs:** bun
+ *
+ * **Install:** `pkgx bun.sh`
+ *
+ * **Homepage:** https://bun.sh
+ *
+ * **GitHub:** https://github.com/oven-sh/bun
+ *
+ * @see https://ts-pkgx.netlify.app/packages/bunsh
+ */
+export const bunPackage: PkgxPackage = {
   name: 'Bun',
   domain: 'bun.sh',
-  description: 'JavaScript runtime, bundler, test runner, and package manager',
-  // ...other properties
-}
+  description: 'Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one',
+  /**
+   * List of executable programs provided by this package
+   * @see https://ts-pkgx.netlify.app/usage
+   */
+  programs: ['bun'] as const,
+  /**
+   * List of available versions of this package
+   * From newest version to oldest.
+   * @see https://ts-pkgx.netlify.app/usage
+   */
+  versions: ['1.2.15', '1.2.14',] as const,
+  // ... other properties with comprehensive JSDoc
+} as const
 
-// Explicit type definition is also included
-export interface BunshPackage {
-  name: 'Bun'
-  domain: 'bun.sh'
-  description: 'JavaScript runtime, bundler, test runner, and package manager'
-  // ...other properties with explicit types
-}
+export type BunPackage = typeof bunPackage
 ```
 
-These generated files provide both the data and the types, allowing for a great developer experience.
+### Alias-Based Variable Naming
 
-## Type-Safe Access
-
-When using ts-pkgx in your TypeScript projects, you get full type safety and IntelliSense support:
+ts-pkgx uses intelligent naming conventions:
 
 ```typescript
-import { bunshPackage, pantry } from 'ts-pkgx'
+// Packages with aliases use the primary alias for naming
+export const bunPackage = { ... }      // For bun.sh (alias: 'bun')
+export const nodePackage = { ... }     // For nodejs.org (alias: 'node')
+export const pythonPackage = { ... }   // For python.org (alias: 'python')
 
-// Full IntelliSense support
-console.log(bunshPackage.description)
-
-// Autocomplete for all properties
-const programs = bunshPackage.programs
-
-// Type checking prevents errors
-bunshPackage.versions.forEach((version) => {
-  console.log(`Version: ${version}`)
-})
+// Packages without aliases use domain-based naming
+export const examplecomPackage = { ... } // For example.com (no alias)
 ```
 
-## Types for API Functions
+## Type-Safe Access with Enhanced IntelliSense
 
-All API functions in ts-pkgx come with proper TypeScript type definitions:
+When using ts-pkgx in your TypeScript projects, you get excellent IntelliSense with JSDoc hints:
+
+```typescript
+import { getPackage, pantry } from 'ts-pkgx'
+
+// Hovering over 'bun' shows:
+// "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one"
+// "Programs: bun"
+// "Install: pkgx bun.sh"
+const bunPackage = pantry.bun
+
+// Hovering over 'versions' shows:
+// "From newest version to oldest."
+// Link to usage documentation
+const versions = bunPackage.versions
+
+// Both approaches work (alias and domain)
+const nodeViaAlias = pantry.node // Alias access
+const nodeViaDomain = pantry.nodejsorg // Domain access
+console.log(nodeViaAlias === nodeViaDomain) // true
+```
+
+## Enhanced API Type Definitions
+
+All API functions come with proper TypeScript types and comprehensive JSDoc:
 
 ```typescript
 /**
- * Fetches package information from pkgx.dev
+ * Fetches package information using the pantry-based approach
  */
-async function fetchPkgxPackage(
+async function fetchPantryPackageWithMetadata(
   packageName: string,
-  options?: PackageFetchOptions,
-): Promise<{
-  packageInfo: PkgxPackage
-  originalName: string
-  fullDomainName: string
-}>
+  options?: {
+    timeout?: number
+    debug?: boolean
+    outputJson?: boolean
+    cacheDir?: string
+    cache?: boolean
+    cacheExpirationMinutes?: number
+  }
+): Promise<{ packageInfo: PkgxPackage } | null>
 
-interface PackageFetchOptions {
-  timeout?: number
-  outputDir?: string
-  debug?: boolean
-}
+/**
+ * Saves package information to both cache and output directories
+ */
+function saveToCacheAndOutput(
+  packageName: string,
+  packageInfo: PkgxPackage,
+  options: {
+    cacheDir?: string
+    outputDir?: string
+    cache?: boolean
+  }
+): { outputPath: string }
 ```
 
-This makes it easy to understand what parameters are expected and what will be returned from each function call.
+## Advanced Type Safety Features
 
-## Type-Safe Domain Utilities
-
-ts-pkgx provides type-safe utility functions for working with domains:
-
-```typescript
-import { convertDomainToFileName, convertDomainToVarName } from 'ts-pkgx/tools/domainUtils'
-
-// Type-safe conversion functions
-const varName: string = convertDomainToVarName('bun.sh') // "bunsh"
-const fileName: string = convertDomainToFileName('agwa.name/git-crypt') // "agwaname-gitcrypt"
-```
-
-## Automatic Index Generation
-
-ts-pkgx can automatically generate a fully typed index file that exports all packages and provides utility functions:
-
-```typescript
-// Generated index.ts
-import type { PkgxPackage } from '../types'
-
-// Imports from all package files
-import * as bunsh from './bunsh'
-import * as nodejsorg from './nodejsorg'
-// ... more imports
-
-// Export all packages
-export * from './bunsh'
-export * from './nodejsorg'
-// ... more exports
-
-// Type-safe pantry interface
-export interface Pantry {
-  bunsh: PkgxPackage
-  nodejsorg: PkgxPackage
-  // ... more properties
-}
-
-// Export the pantry object with proper typing
-export const pantry: Pantry = {
-  bunsh: bunsh.bunshPackage,
-  nodejsorg: nodejsorg.nodejsorgPackage,
-  // ... more mappings
-}
-```
-
-This provides a convenient, type-safe way to access all packages in your project.
-
-## New Type Safety Features
-
-ts-pkgx now includes comprehensive type safety features:
+ts-pkgx includes comprehensive type safety for all package operations:
 
 ### Package Name Types
 
 ```typescript
 import type {
+  InstallationPlan, // Complete installation planning interface
   PackageAlias, // All available package aliases (e.g., 'node', 'python')
   PackageDomain, // All available package domains (e.g., 'nodejs.org')
   PackageName, // Union of all valid package identifiers
-  PackageSpec // Package specifications with versions (e.g., 'node@20.1.0')
+  PackageSpec, // Package specifications with versions (e.g., 'node@20.1.0')
+  SupportedArchitecture, // 'x86_64' | 'aarch64' | 'armv7l' | 'i686'
+  SupportedPlatform // 'darwin' | 'linux' | 'windows'
 } from 'ts-pkgx'
 
 // Type-safe package operations
@@ -164,7 +163,24 @@ function installPackage(packageName: PackageName, version?: string) {
 }
 ```
 
-### Version Resolution
+### Type-Safe Utility Functions
+
+```typescript
+import {
+  getAllPackageAliases,
+  isPackageAlias,
+  isValidPackageName,
+  resolvePackageName
+} from 'ts-pkgx'
+
+// Type guards and resolution
+const isAlias = isPackageAlias('node') // Type guard: name is PackageAlias
+const isValid = isValidPackageName('node') // Type guard: name is PackageName
+const resolution = resolvePackageName('node') // Returns PackageResolution
+const aliases = getAllPackageAliases() // PackageAlias[]
+```
+
+### Version Resolution with Types
 
 ```typescript
 import {
@@ -181,20 +197,27 @@ const resolved = resolveVersion('node', '^20') // string | null
 const info = getPackageInfo('node') // PackageInfo | null
 ```
 
-### CLI Utilities
+### CLI Utilities with Error Handling
 
 ```typescript
 import {
   createInstallPlan,
   searchPackagesCommand,
-  showPackageInfo
+  showPackageInfo,
+  validatePackage
 } from 'ts-pkgx'
 
-// Type-safe CLI operations with error handling
-const result = showPackageInfo('node')
-if (result.success && result.data) {
-  console.log(result.data.description)
+// Type-safe CLI operations with structured error handling
+const infoResult = showPackageInfo('node') // CLIResult<PackageInfo>
+if (infoResult.success && infoResult.data) {
+  console.log(infoResult.data.description)
 }
+else {
+  console.error(infoResult.error)
+}
+
+const searchResult = searchPackagesCommand('js') // CLIResult<PackageInfo[]>
+const planResult = createInstallPlan('node@20.1.0') // CLIResult<InstallationPlan>
 ```
 
 ### Platform Detection
@@ -205,6 +228,131 @@ import { createInstallationContext, detectPlatform } from 'ts-pkgx'
 // Type-safe platform operations
 const platform = detectPlatform() // PlatformInfo
 const context = createInstallationContext('node') // InstallationContext
+```
+
+## Automatic Index Generation with JSDoc
+
+ts-pkgx generates a comprehensive index file with rich JSDoc documentation:
+
+```typescript
+// Generated index.ts
+import type { PkgxPackage } from '../types'
+
+/**
+ * Access all packages with comprehensive JSDoc documentation and alias support.
+ *
+ * This pantry object provides both domain-based and alias-based access to packages.
+ * Alias properties point to the same objects as their domain counterparts.
+ */
+export interface Pantry {
+  // Domain-based properties
+  bunsh: PkgxPackage
+  nodejsorg: PkgxPackage
+
+  // Alias properties (same objects as domains)
+  /**
+   * Bun - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+   *
+   * **Programs:** bun
+   * **Install:** `pkgx bun.sh`
+   * @see https://ts-pkgx.netlify.app/packages/bunsh
+   */
+  bun: PkgxPackage // Same as bunsh
+
+  /**
+   * Node.js - JavaScript runtime built on Chrome's V8 JavaScript engine
+   *
+   * **Programs:** node, npm, npx
+   * **Install:** `pkgx nodejs.org`
+   * @see https://ts-pkgx.netlify.app/packages/nodejsorg
+   */
+  node: PkgxPackage // Same as nodejsorg
+}
+```
+
+## TypeScript Intellisense Features
+
+The generated packages provide excellent TypeScript intellisense:
+
+1. **Hovering over `pantry.bun`** shows:
+   - Complete package description
+   - Programs provided
+   - Installation command
+   - Links to documentation
+
+2. **Hovering over `pantry.bun.versions`** shows:
+   - "From newest version to oldest."
+   - Link to usage documentation
+
+3. **Hovering over `pantry.bun.programs`** shows:
+   - "List of executable programs provided by this package"
+   - Link to usage documentation
+
+## Domain Utilities with Type Safety
+
+```typescript
+import { convertDomainToFileName, convertDomainToVarName } from 'ts-pkgx/tools/domainUtils'
+
+// Type-safe conversion functions with proper handling of nested paths
+const varName: string = convertDomainToVarName('bun.sh') // "bunsh"
+const fileName: string = convertDomainToFileName('agwa.name/git-crypt') // "agwaname-gitcrypt"
+const nestedVar: string = convertDomainToVarName('aws.amazon.com/cli') // "awsamazoncomcli"
+```
+
+## Error Handling Types
+
+ts-pkgx provides structured error handling with TypeScript:
+
+```typescript
+interface CLIResult<T = any> {
+  success: boolean
+  data?: T
+  error?: string
+  warnings?: string[]
+}
+
+// Usage with type safety
+async function handlePackageOperation(packageName: string) {
+  const result = showPackageInfo(packageName)
+
+  if (result.success) {
+    // TypeScript knows result.data is PackageInfo
+    console.log(result.data.description)
+  }
+  else {
+    // TypeScript knows result.error is string
+    console.error(`Error: ${result.error}`)
+  }
+}
+```
+
+## Integration Best Practices
+
+For optimal TypeScript integration:
+
+```typescript
+import type { PackageName, PkgxPackage } from 'ts-pkgx'
+import { getPackage, pantry } from 'ts-pkgx'
+
+// Type-safe package lookup function
+function getPackageByName(name: PackageName): PkgxPackage | undefined {
+  return getPackage(name)
+}
+
+// Type-safe package validation
+function isPackageInstalled(packageName: PackageName): boolean {
+  const pkg = getPackage(packageName)
+  return pkg !== undefined
+}
+
+// Working with package collections
+function getJavaScriptRuntimes(): PkgxPackage[] {
+  return [
+    pantry.node, // nodejs.org
+    pantry.bun, // bun.sh
+    pantry.deno, // deno.land
+  ]
+}
 ```
 
 ## Related Documentation

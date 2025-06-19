@@ -23,6 +23,7 @@ const config: ESLintConfig = stacks({
     'src/packages/github.com/linux-test-project/lcov.ts',
     'src/packages/gnu.org/stow.ts',
     'src/packages/po4aorg.ts',
+    'docs/features/typescript.md',
   ],
 })
 

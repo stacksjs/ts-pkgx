@@ -4,14 +4,14 @@ ts-pkgx provides a comprehensive set of features for working with pkgx.dev packa
 
 ## Package Discovery
 
-### Package Fetching
+### Pantry-Based Package Fetching
 
-ts-pkgx can fetch detailed information about packages from pkgx.dev, including:
+ts-pkgx uses a pantry-based approach to fetch detailed information about packages, including:
 
 - Basic metadata (name, domain, description)
 - Available versions
 - Programs provided by the package
-- Dependencies and companion packages
+- Dependencies and companion packages (including OS-specific dependencies)
 - Installation commands
 - Links to documentation, source code, and related resources
 
@@ -20,16 +20,31 @@ ts-pkgx can fetch detailed information about packages from pkgx.dev, including:
 You can fetch information about all available packages at once using the `fetchAndSaveAllPackages` function or the CLI command:
 
 ```bash
-bun run pkgx:fetch-all
+pkgx-tools fetch --all
 ```
 
-This will retrieve information about all packages listed on pkgx.dev and save them to your specified output directory.
+This will retrieve information about all packages listed in the local pantry and save them to your specified output directory.
+
+### Pantry Management
+
+ts-pkgx includes comprehensive pantry management capabilities:
+
+```bash
+# Download and extract the latest pantry from pkgx distribution
+pkgx-tools update-pantry
+
+# Generate constants file from local pantry
+pkgx-tools generate-consts --source pantry
+
+# Generate constants file from S3 registry (alternative approach)
+pkgx-tools generate-consts --source registry
+```
 
 ## TypeScript Integration
 
 ### Comprehensive Type Safety
 
-ts-pkgx now provides extensive TypeScript type safety features that enable compile-time validation, IntelliSense support, and type-safe package management operations:
+ts-pkgx provides extensive TypeScript type safety features that enable compile-time validation, IntelliSense support, and type-safe package management operations:
 
 ```typescript
 import type {
@@ -73,17 +88,30 @@ interface PkgxPackage {
 
 ### TypeScript Code Generation
 
-ts-pkgx can automatically generate TypeScript files for each package, making it easy to import and use package data in your projects:
+ts-pkgx automatically generates TypeScript files for each package with comprehensive JSDoc documentation, making it easy to import and use package data in your projects:
 
 ```typescript
 // Generated file: bunsh.ts
 import type { PkgxPackage } from '../types'
 
-export const bunshPackage: PkgxPackage = {
+/**
+ * Bun - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+ *
+ * **Programs:** bun
+ *
+ * **Install:** `pkgx bun.sh`
+ *
+ * **Homepage:** https://bun.sh
+ *
+ * **GitHub:** https://github.com/oven-sh/bun
+ *
+ * @see https://ts-pkgx.netlify.app/packages/bunsh
+ */
+export const bunPackage: PkgxPackage = {
   name: 'Bun',
   domain: 'bun.sh',
   description: 'JavaScript runtime, bundler, test runner, and package manager',
-  // ...other properties
+  // ...other properties with rich JSDoc
 }
 ```
 
@@ -91,7 +119,7 @@ export const bunshPackage: PkgxPackage = {
 
 ### Package Index Generation
 
-ts-pkgx can automatically generate an index file that exports all packages and provides utility functions for working with them:
+ts-pkgx automatically generates an index file that exports all packages and provides utility functions for working with them:
 
 ```typescript
 import { getPackage, pantry } from 'ts-pkgx'
@@ -121,7 +149,7 @@ ts-pkgx properly handles packages with nested paths, such as `agwa.name/git-cryp
 
 ```typescript
 // Fetch a nested package
-const gitCrypt = await fetchPkgxPackage('agwa.name/git-crypt')
+const result = await fetchPantryPackageWithMetadata('agwa.name/git-crypt')
 
 // Access a nested package
 const gitCryptPackage = getPackage('agwa.name/git-crypt')
@@ -151,19 +179,19 @@ const fileName = convertDomainToFileName('agwa.name/git-crypt')
 Fetch information about a single package using the CLI:
 
 ```bash
-bun run pkgx:fetch node
+pkgx-tools fetch node
 ```
 
 ### Multiple Package Fetching
 
-Fetch information about multiple packages at once using the new `--pkg` option:
+Fetch information about multiple packages at once using the `--pkg` option:
 
 ```bash
 # Fetch multiple packages in one command
-bun run pkgx:fetch --pkg node,bun,python
+pkgx-tools fetch --pkg node,bun,python
 
 # With custom options
-bun run pkgx:fetch --pkg "go.dev,python.org,rust-lang.org" --json --timeout 60000
+pkgx-tools fetch --pkg "go.dev,python.org,rust-lang.org" --json --timeout 60000
 ```
 
 This allows you to fetch multiple specific packages without having to fetch the entire pantry.
@@ -173,7 +201,26 @@ This allows you to fetch multiple specific packages without having to fetch the 
 Fetch information about all packages at once:
 
 ```bash
-bun run pkgx:fetch-all
+pkgx-tools fetch --all
+```
+
+### Advanced CLI Features
+
+ts-pkgx includes several advanced CLI features:
+
+```bash
+# Pantry management
+pkgx-tools update-pantry --pantry-dir ./my-pantry
+pkgx-tools generate-consts --source pantry
+
+# Documentation generation
+pkgx-tools generate-docs --output-dir ./custom-docs
+
+# TypeScript generation from cache
+pkgx-tools generate-ts --cache-dir ./cache --output-dir ./output
+
+# Aliases file generation
+pkgx-tools generate-aliases
 ```
 
 ### Batch Processing
@@ -182,26 +229,20 @@ ts-pkgx implements smart batch processing to optimize fetching multiple packages
 
 ```bash
 # Fetch all packages with optimized batch processing
-bun run pkgx:fetch-all
+pkgx-tools fetch --all
 
-# Limit the number of packages for testing
-bun run pkgx:fetch-all --limit 50
+# Control concurrency for performance tuning
+pkgx-tools fetch --all --concurrency 12
+
+# Limit packages for testing
+pkgx-tools fetch --all --limit 50
 ```
 
 The batch processing system:
-- Processes packages in smaller batches (default 20 packages per batch)
+- Processes packages in configurable batches (default: 8 concurrent packages)
 - Prevents memory issues when handling hundreds of packages
 - Skips unchanged packages to minimize unnecessary updates
 - Provides progress feedback during the update process
-
-### Package Documentation Generation
-
-Generate comprehensive documentation of all packages:
-
-```bash
-# Generate package catalog
-bun run pkgx:generate-docs
-```
 
 ### Customization Options
 
@@ -209,29 +250,60 @@ Customize the behavior of the CLI with various options:
 
 ```bash
 # Custom output directory
-bun run pkgx:fetch node --output ./data/packages
+pkgx-tools fetch node --output-dir ./data/packages
 
-# Custom timeout
-bun run pkgx:fetch-all --timeout 180000
+# Custom cache settings
+pkgx-tools fetch --all --cache-dir ./my-cache --cache-expiration 60
 
-# Debug mode
-bun run pkgx:fetch node --debug
+# Custom timeout for slow networks
+pkgx-tools fetch --all --timeout 120000
+
+# Debug mode for troubleshooting
+pkgx-tools fetch node --debug --verbose
+
+# CI integration with JSON output
+pkgx-tools fetch --pkg "node,bun,python" --output-json
 ```
 
 ## Performance Optimizations
 
-### Caching
+### Intelligent Caching
 
-ts-pkgx implements caching for GitHub API requests to avoid hitting rate limits and improve performance:
+ts-pkgx implements comprehensive caching for optimal performance:
 
 ```bash
-# Custom cache duration (in milliseconds)
-bun run pkgx:fetch-all --github-cache-duration 7200000
+# Control cache behavior
+pkgx-tools fetch --all --cache-expiration 30  # 30 minutes
+pkgx-tools fetch --all --no-cache             # Disable cache
+pkgx-tools fetch --all --cache-dir ./my-cache # Custom cache location
 ```
 
 ### Parallel Processing
 
-When fetching multiple packages, ts-pkgx processes them in parallel to speed up the operation.
+When fetching multiple packages, ts-pkgx processes them in parallel to speed up the operation:
+
+```bash
+# Increase concurrency for faster processing
+pkgx-tools fetch --all --concurrency 12
+
+# Conservative settings for slower systems
+pkgx-tools fetch --all --concurrency 4 --timeout 120000
+```
+
+### Resource Management
+
+ts-pkgx includes automatic browser resource cleanup to prevent hanging processes:
+
+```typescript
+import { cleanupBrowserResources } from 'ts-pkgx'
+
+try {
+  // Your package operations
+}
+finally {
+  await cleanupBrowserResources()
+}
+```
 
 ## Type-Safe Utilities
 
@@ -296,10 +368,10 @@ You can choose to output package information as JSON instead of TypeScript files
 
 ```bash
 # CLI option
-bun run pkgx:fetch node --json
+pkgx-tools fetch node --json
 
 # API option
-const result = await fetchAndSavePackage('node', outputDir, timeout, true) // true = save as JSON
+const result = await fetchPantryPackageWithMetadata('node', { outputJson: true })
 ```
 
 ### Custom Output Directory
@@ -308,8 +380,80 @@ Specify where you want to save package information:
 
 ```bash
 # CLI option
-bun run pkgx:fetch node --output ./my-packages
+pkgx-tools fetch node --output-dir ./my-packages
 
 # API option
-const result = await fetchAndSavePackage('node', './my-packages', timeout)
+const packages = await fetchAndSaveAllPackages({ outputDir: './my-packages' })
+```
+
+### CI/CD Integration
+
+Use structured JSON output for automation:
+
+```bash
+# Get structured output for CI systems
+pkgx-tools fetch --pkg "node,bun,python" --output-json
+```
+
+This outputs structured JSON with:
+- List of successfully processed packages
+- Friendly names and mixed name formats
+- Success status and error information
+- Timestamp information
+
+### Environment Variables
+
+ts-pkgx respects environment variables for configuration:
+
+- `DEBUG`: Enable debug mode
+- `NODE_ENV`: Affects logging behavior
+
+## Library Usage Examples
+
+### Basic Package Fetching
+
+```typescript
+import { fetchPantryPackageWithMetadata } from 'ts-pkgx'
+
+// Fetch a single package
+const result = await fetchPantryPackageWithMetadata('nodejs.org', {
+  timeout: 60000,
+  cache: true,
+  cacheExpirationMinutes: 60,
+})
+
+if (result) {
+  console.log(`Fetched ${result.packageInfo.name}`)
+}
+```
+
+### Bulk Operations
+
+```typescript
+import { fetchAndSaveAllPackages } from 'ts-pkgx'
+
+// Fetch all packages with custom settings
+const packages = await fetchAndSaveAllPackages({
+  outputDir: './packages',
+  cacheDir: '.cache/packages',
+  concurrency: 12,
+  timeout: 60000,
+  limit: 100,
+})
+
+console.log(`Processed ${packages.length} packages`)
+```
+
+### Package Access
+
+```typescript
+import { getPackage, pantry } from 'ts-pkgx'
+
+// Access packages with excellent TypeScript support
+const nodePackage = pantry.node // Alias access
+const bunPackage = pantry.bunsh // Domain access
+const gitCrypt = getPackage('git-crypt') // Utility function
+
+// Both alias and domain reference the same object
+console.log(pantry.node === pantry.nodejsorg) // true
 ```

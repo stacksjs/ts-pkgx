@@ -8,38 +8,44 @@ After installing the package, you can use the CLI tools to fetch and manage pack
 
 ```bash
 # Fetch a single package
-bun run pkgx:fetch nodejs.org
+pkgx-tools fetch nodejs.org
 
 # Fetch multiple packages at once
-bun run pkgx:fetch --pkg nodejs.org,bun.sh,deno.land
+pkgx-tools fetch --pkg nodejs.org,bun.sh,deno.land
 
 # Fetch all available packages
-bun run pkgx:fetch --all
+pkgx-tools fetch --all
 
 # Generate index file
-bun run pkgx:generate-index
+pkgx-tools generate-index
 
 # Generate TypeScript from cached JSON
-bun run pkgx:generate-ts
+pkgx-tools generate-ts
 
 # Generate aliases file
-bun run pkgx:generate-aliases
+pkgx-tools generate-aliases
 
 # Generate documentation
-bun run pkgx:generate-docs
+pkgx-tools generate-docs
+
+# Update local pantry
+pkgx-tools update-pantry
+
+# Generate constants file
+pkgx-tools generate-consts
 
 # Show version information
-bun run pkgx:version
+pkgx-tools version
 ```
 
-You can also use the CLI directly:
+You can also use the Bun scripts:
 
 ```bash
 # Fetch a single package
-bun bin/cli.ts fetch nodejs.org
+bun run pkgx:fetch nodejs.org
 
 # Fetch all packages
-bun bin/cli.ts fetch --all
+bun run pkgx:fetch-all
 
 # Fetch multiple specific packages
 bun bin/cli.ts fetch --pkg="nodejs.org,bun.sh,deno.land"
@@ -54,47 +60,90 @@ bun bin/cli.ts generate-ts
 bun bin/cli.ts generate-aliases
 
 # Generate documentation
-bun bin/cli.ts generate-docs
+bun run pkgx:docs
+
+# Update pantry
+bun bin/cli.ts update-pantry
+
+# Generate constants
+bun bin/cli.ts generate-consts
 
 # Display version information
 bun bin/cli.ts version
 ```
 
-### Options
+### Fetch Command Options
 
 The fetch command supports several options:
 
 - `--all`: Fetch all available packages
 - `--pkg="pkg1,pkg2"`: Fetch multiple specific packages
-- `--output-dir=<dir>`: Set custom output directory
-- `--cache-dir=<dir>`: Set custom cache directory
+- `--output-dir=<dir>`: Set custom output directory (default: `src/packages`)
+- `--cache-dir=<dir>`: Set custom cache directory (default: `.cache/packages`)
 - `--no-cache`: Disable caching
-- `--cache-expiration=<minutes>`: Set cache expiration time
-- `--timeout=<ms>`: Set timeout in milliseconds
-- `--max-retries=<n>`: Number of retries for failed fetches
+- `--cache-expiration=<minutes>`: Set cache expiration time (default: `1440` minutes)
+- `--timeout=<ms>`: Set timeout in milliseconds (default: `20000`)
+- `--max-retries=<n>`: Number of retries for failed fetches (default: `3`)
 - `--limit=<n>`: Limit the number of packages to fetch
-- `--concurrency=<n>`: Number of packages to fetch concurrently
+- `--concurrency=<n>`: Number of packages to fetch concurrently (default: `8`)
 - `--json`: Output as JSON instead of TypeScript
 - `--verbose`: Enable verbose logging
-- `--debug`: Enable debug mode
+- `--debug`: Enable debug mode (saves screenshots)
+- `--output-json`: Output results as JSON for CI integration
+
+### Examples
+
+```bash
+# Fetch with custom settings
+pkgx-tools fetch --all --concurrency 12 --timeout 60000 --cache-expiration 60
+
+# Fetch specific packages with verbose output
+pkgx-tools fetch --pkg "node,bun,python,go" --verbose
+
+# Disable caching and save as JSON
+pkgx-tools fetch --pkg "rust-lang.org,deno.land" --no-cache --json
+
+# Fetch for CI integration
+pkgx-tools fetch --pkg "nodejs.org,bun.sh" --output-json
+
+# Debug mode for troubleshooting
+pkgx-tools fetch agwa.name/git-crypt --debug --verbose
+```
 
 ## Library Usage
 
 You can also use ts-pkgx as a library in your TypeScript/JavaScript projects:
 
 ```typescript
-import { fetchAndSaveAllPackages, fetchPkgxPackage } from 'ts-pkgx'
+import { fetchAndSaveAllPackages, fetchPantryPackageWithMetadata } from 'ts-pkgx'
 
-// Fetch a single package
-const { packageInfo } = await fetchPkgxPackage('nodejs.org')
-console.log(packageInfo)
+// Fetch a single package using the pantry-based approach
+const result = await fetchPantryPackageWithMetadata('nodejs.org', {
+  timeout: 60000,
+  debug: false,
+  outputJson: false,
+  cacheDir: '.cache/packages',
+  cache: true,
+  cacheExpirationMinutes: 1440,
+})
+
+if (result) {
+  console.log(result.packageInfo)
+}
 
 // Fetch all packages
 const savedPackages = await fetchAndSaveAllPackages({
   outputDir: './packages',
-  timeout: 60000,
-  concurrency: 15,
+  cacheDir: '.cache/packages',
+  cache: true,
+  cacheExpirationMinutes: 1440,
+  timeout: 20000,
+  concurrency: 8,
+  debug: false,
+  outputJson: false,
 })
+
+console.log(`Saved ${savedPackages.length} packages`)
 ```
 
 ### Accessing Package Information
@@ -185,10 +234,14 @@ console.log(nodeViaAlias === nodeViaDomain) // true
 You can customize how packages are fetched using the options object:
 
 ```typescript
-// Fetch with custom options
-const result = await fetchPkgxPackage('nodejs.org', {
+// Fetch with custom options using the pantry-based approach
+const result = await fetchPantryPackageWithMetadata('nodejs.org', {
   timeout: 60000,
   debug: true,
+  outputJson: false,
+  cacheDir: '.cache/packages',
+  cache: true,
+  cacheExpirationMinutes: 60,
 })
 
 // Fetch all packages with custom options
@@ -201,12 +254,80 @@ const packages = await fetchAndSaveAllPackages({
   limit: 50,
   concurrency: 15,
   debug: false,
+  outputJson: false,
 })
+```
+
+## Advanced CLI Usage
+
+### Pantry Management
+
+ts-pkgx now includes powerful pantry management features:
+
+```bash
+# Update local pantry from pkgx distribution
+pkgx-tools update-pantry
+
+# Generate constants file from local pantry
+pkgx-tools generate-consts --source pantry
+
+# Generate constants file from S3 registry
+pkgx-tools generate-consts --source registry --validate
+
+# Use custom pantry directory
+pkgx-tools update-pantry --pantry-dir ./my-pantry
+pkgx-tools generate-consts --pantry-dir ./my-pantry
+```
+
+### Cache Management
+
+Control caching behavior for optimal performance:
+
+```bash
+# Use fresh data (disable cache)
+pkgx-tools fetch --all --no-cache
+
+# Custom cache expiration (30 minutes)
+pkgx-tools fetch --all --cache-expiration 30
+
+# Custom cache directory
+pkgx-tools fetch --all --cache-dir ./my-cache
+
+# Generate TypeScript from cached JSON files
+pkgx-tools generate-ts --cache-dir ./my-cache --output-dir ./output
+```
+
+### Performance Optimization
+
+Optimize for different scenarios:
+
+```bash
+# High-performance bulk fetching
+pkgx-tools fetch --all --concurrency 12 --timeout 60000
+
+# Conservative fetching for slow networks
+pkgx-tools fetch --all --concurrency 4 --timeout 120000
+
+# Quick testing with limited packages
+pkgx-tools fetch --all --limit 10 --verbose
+```
+
+### CI/CD Integration
+
+Use output-json for automation:
+
+```bash
+# Get structured JSON output for CI systems
+result=$(pkgx-tools fetch --pkg "node,bun,python" --output-json)
+echo "$result" | jq '.updatedPackages[]'
+
+# Batch process specific packages
+pkgx-tools fetch --pkg "$(cat package-list.txt | tr '\n' ',')" --output-json
 ```
 
 ## Advanced Usage
 
-For advanced usage scenarios, see:
+For more advanced usage scenarios, see:
 
 - [Package Management](./features/management.md)
 - [TypeScript Integration](./features/typescript.md)

@@ -14,31 +14,35 @@ bun install ts-pkgx
 
 | Command | Description |
 |---------|-------------|
-| `pkgx-tools fetch` | Fetch a single package or multiple packages |
-| `pkgx-tools fetch --all` | Fetch all packages from pkgx.dev |
+| `pkgx-tools fetch [packageName]` | Fetch a single package, multiple packages, or all packages |
 | `pkgx-tools generate-index` | Generate TypeScript index file for packages |
 | `pkgx-tools generate-ts` | Generate TypeScript files from cached JSON |
 | `pkgx-tools generate-aliases` | Generate TypeScript aliases file for packages |
-| `pkgx-tools generate-docs` | Generate package documentation for API reference |
+| `pkgx-tools generate-docs` | Generate comprehensive VitePress documentation for all packages |
+| `pkgx-tools update-pantry` | Download and extract the latest pantry.tgz file |
+| `pkgx-tools generate-consts` | Generate or update the consts.ts file with all known packages |
 | `pkgx-tools version` | Display version information |
 
 ## fetch Command
 
-The `fetch` command retrieves package information from pkgx.dev for one or more packages.
+The `fetch` command retrieves package information from pkgx.dev for one or more packages using the pantry-based approach.
 
 ### Usage
 
 ```bash
-bun run pkgx:fetch [packageName] [options]
-# OR
-bun run pkgx:fetch --pkg <packageNames> [options]
-# OR
-bun run pkgx:fetch --all [options]
+# Fetch a single package
+pkgx-tools fetch [packageName] [options]
+
+# Fetch multiple specific packages
+pkgx-tools fetch --pkg <packageNames> [options]
+
+# Fetch all packages
+pkgx-tools fetch --all [options]
 ```
 
 ### Arguments
 
-- `packageName`: Optional name of a single package to fetch
+- `packageName`: Optional name of a single package to fetch (e.g., 'node', 'bun.sh', 'agwa.name/git-crypt')
 
 ### Options
 
@@ -51,46 +55,53 @@ bun run pkgx:fetch --all [options]
 | `-n, --no-cache` | Disable caching | `false` |
 | `-e, --cache-expiration <minutes>` | Cache expiration time in minutes | `1440` (24 hours) |
 | `-l, --limit <count>` | Limit the number of packages to fetch (use with --all) | - |
-| `-t, --timeout <ms>` | Timeout for network requests in milliseconds | `30000` |
+| `-t, --timeout <ms>` | Timeout for network requests in milliseconds | `20000` |
 | `-r, --max-retries <count>` | Maximum retry attempts for failed requests | `3` |
 | `-j, --json` | Save as JSON instead of TypeScript | `false` |
 | `-d, --debug` | Enable debug mode (save screenshots) | `false` |
 | `-v, --verbose` | Enable verbose output | `false` |
-| `-y, --concurrency <count>` | Number of packages to fetch concurrently | `10` |
+| `-y, --concurrency <count>` | Number of packages to fetch concurrently | `8` |
+| `--output-json` | Output results as JSON (for CI integration) | `false` |
 
 ### Examples
 
 ```bash
 # Fetch a single package
-bun run pkgx:fetch node
+pkgx-tools fetch node
 
 # Fetch a package with specific path
-bun run pkgx:fetch agwa.name/git-crypt
+pkgx-tools fetch agwa.name/git-crypt
 
 # Fetch multiple packages
-bun run pkgx:fetch --pkg node,bun,python
+pkgx-tools fetch --pkg node,bun,python
 
 # Fetch packages with custom output directory and timeout
-bun run pkgx:fetch --pkg "nodejs.org,python.org" --output-dir ./custom-packages --timeout 60000
+pkgx-tools fetch --pkg "nodejs.org,python.org" --output-dir ./custom-packages --timeout 60000
 
 # Save as JSON instead of TypeScript
-bun run pkgx:fetch --pkg "go.dev,rust-lang.org" --json
+pkgx-tools fetch --pkg "go.dev,rust-lang.org" --json
 
 # Fetch all packages with a limit
-bun run pkgx:fetch --all --limit 50
+pkgx-tools fetch --all --limit 50
 
-# Fetch with increased concurrency
-bun run pkgx:fetch --all --concurrency 20
+# Fetch with increased concurrency and verbose output
+pkgx-tools fetch --all --concurrency 12 --verbose
+
+# Fetch with custom cache settings
+pkgx-tools fetch --all --cache-expiration 120 --no-cache
+
+# Output JSON for CI integration
+pkgx-tools fetch --pkg "node,bun,python" --output-json
 ```
 
 ## generate-index Command
 
-Generate a TypeScript index file for packages.
+Generate a TypeScript index file for packages with comprehensive JSDoc documentation and alias support.
 
 ### Usage
 
 ```bash
-bun run pkgx:generate-index [options]
+pkgx-tools generate-index [options]
 ```
 
 ### Options
@@ -103,10 +114,10 @@ bun run pkgx:generate-index [options]
 
 ```bash
 # Generate index with default settings
-bun run pkgx:generate-index
+pkgx-tools generate-index
 
 # With custom output directory
-bun run pkgx:generate-index --output-dir ./custom/packages
+pkgx-tools generate-index --output-dir ./custom/packages
 ```
 
 ## generate-ts Command
@@ -116,7 +127,7 @@ Generate TypeScript files from cached JSON files.
 ### Usage
 
 ```bash
-bun run pkgx:generate-ts [options]
+pkgx-tools generate-ts [options]
 ```
 
 ### Options
@@ -130,10 +141,10 @@ bun run pkgx:generate-ts [options]
 
 ```bash
 # Generate TypeScript from cached JSON
-bun run pkgx:generate-ts
+pkgx-tools generate-ts
 
 # With custom directories
-bun run pkgx:generate-ts --cache-dir ./custom-cache --output-dir ./custom-output
+pkgx-tools generate-ts --cache-dir ./custom-cache --output-dir ./custom-output
 ```
 
 ## generate-aliases Command
@@ -143,65 +154,113 @@ Generate a TypeScript aliases file for packages.
 ### Usage
 
 ```bash
-bun run pkgx:generate-aliases
+pkgx-tools generate-aliases
 ```
 
 ### Examples
 
 ```bash
 # Generate aliases file
-bun run pkgx:generate-aliases
+pkgx-tools generate-aliases
 ```
 
 ## generate-docs Command
 
-Generate comprehensive documentation for all packages.
+Generate comprehensive VitePress documentation for all packages.
 
 ### Usage
 
 ```bash
-bun run pkgx:generate-docs [options]
+pkgx-tools generate-docs [options]
 ```
 
 ### Options
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `-o, --output <path>` | Output path for the documentation | `docs/package-catalog.md` |
+| `-o, --output-dir <dir>` | Output directory for documentation | `docs` |
 
 ### Examples
 
 ```bash
 # Generate documentation with default settings
-bun run pkgx:generate-docs
+pkgx-tools generate-docs
 
-# Generate documentation with custom output path
-bun run pkgx:generate-docs --output ./docs/custom-package-list.md
+# Generate documentation with custom output directory
+pkgx-tools generate-docs --output-dir ./custom-docs
 ```
 
-## version Command
+## update-pantry Command
 
-Displays the current version of pkgx-tools.
+Download and extract the latest pantry.tgz file from the pkgx distribution.
 
 ### Usage
 
 ```bash
-bun run pkgx:version
+pkgx-tools update-pantry [options]
 ```
 
-## Using as Shell Scripts
+### Options
 
-You can also make scripts executable and use them directly:
+| Option | Description | Default |
+|--------|-------------|---------|
+| `-d, --pantry-dir <dir>` | Directory to extract pantry files | `src/pantry` |
+
+### Examples
 
 ```bash
-# Make the script executable
-chmod +x ./pkgx-tools
+# Update pantry with default settings
+pkgx-tools update-pantry
 
-# Run commands directly
-./pkgx-tools fetch node
-./pkgx-tools fetch --all --limit 10
-./pkgx-tools generate-index
-./pkgx-tools generate-aliases
+# Update pantry to custom directory
+pkgx-tools update-pantry --pantry-dir ./my-pantry
+```
+
+## generate-consts Command
+
+Generate or update the consts.ts file with all known packages from either the local pantry or S3 registry.
+
+### Usage
+
+```bash
+pkgx-tools generate-consts [options]
+```
+
+### Options
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `-s, --source <source>` | Source for packages: "pantry" or "registry" | `pantry` |
+| `--pantry-dir <dir>` | Directory containing pantry files | `src/pantry` |
+| `--validate` | Validate a sample of packages (slower but more accurate) | `false` |
+
+### Examples
+
+```bash
+# Generate consts from local pantry
+pkgx-tools generate-consts
+
+# Generate consts from S3 registry
+pkgx-tools generate-consts --source registry
+
+# Generate with validation
+pkgx-tools generate-consts --source registry --validate
+
+# Use custom pantry directory
+pkgx-tools generate-consts --pantry-dir ./my-pantry
+```
+
+## Using with Bun Scripts
+
+You can also use the pre-configured Bun scripts:
+
+```bash
+# Fetch commands
+bun run pkgx:fetch node
+bun run pkgx:fetch-all
+
+# Generate documentation
+bun run pkgx:docs
 ```
 
 ## Using Compiled Binaries
@@ -223,32 +282,75 @@ The CLI commands work seamlessly with ts-pkgx's comprehensive type safety featur
 
 ```bash
 # Type-safe package names are validated at runtime
-bun run pkgx:fetch node          # ✅ Valid alias
-bun run pkgx:fetch nodejs.org    # ✅ Valid domain
-bun run pkgx:fetch invalid-pkg   # ❌ Will show error for invalid package
+pkgx-tools fetch node          # ✅ Valid alias
+pkgx-tools fetch nodejs.org    # ✅ Valid domain
+pkgx-tools fetch invalid-pkg   # ❌ Will show error for invalid package
 
-# Version specifications are also validated
-bun run pkgx:fetch --pkg "node@20.1.0,python@latest,go@^1.21"
+# Nested package paths are supported
+pkgx-tools fetch agwa.name/git-crypt  # ✅ Valid nested package
 ```
 
-When using the CLI programmatically, you get full TypeScript support:
+## CI Integration
 
-```typescript
-import type { CLIResult, PackageName } from 'ts-pkgx'
-import { createInstallPlan, showPackageInfo } from 'ts-pkgx'
+Use the `--output-json` flag for CI integration:
 
-// Type-safe CLI operations
-function runCLICommand(packageName: PackageName) {
-  const infoResult: CLIResult<PackageInfo> = showPackageInfo(packageName)
-  const planResult: CLIResult<InstallationPlan> = createInstallPlan(packageName)
-
-  return { infoResult, planResult }
-}
+```bash
+# Output structured JSON for CI systems
+pkgx-tools fetch --pkg "node,bun,python" --output-json
 ```
+
+This outputs structured JSON with information about processed packages, friendly names, and success status.
 
 ## Environment Variables
 
 ts-pkgx respects the following environment variables:
 
 - `DEBUG`: Set to `true` to enable debug mode
-- `GITHUB_TOKEN`: GitHub token for API requests (increases rate limits)
+- `NODE_ENV`: Affects logging behavior
+
+## Advanced Usage
+
+### Cache Management
+
+Control caching behavior for better performance:
+
+```bash
+# Use fresh data (disable cache)
+pkgx-tools fetch --all --no-cache
+
+# Custom cache expiration (in minutes)
+pkgx-tools fetch --all --cache-expiration 60
+
+# Custom cache directory
+pkgx-tools fetch --all --cache-dir ./my-cache
+```
+
+### Performance Tuning
+
+Optimize performance for large operations:
+
+```bash
+# Increase concurrency for faster fetching
+pkgx-tools fetch --all --concurrency 20
+
+# Set longer timeout for slow networks
+pkgx-tools fetch --all --timeout 60000
+
+# Limit packages for testing
+pkgx-tools fetch --all --limit 10
+```
+
+### Development and Debugging
+
+Enable debugging and verbose output:
+
+```bash
+# Enable debug mode (saves screenshots)
+pkgx-tools fetch node --debug
+
+# Verbose output for detailed logging
+pkgx-tools fetch --pkg "node,bun" --verbose
+
+# Both debug and verbose
+pkgx-tools fetch --all --debug --verbose --limit 5
+```

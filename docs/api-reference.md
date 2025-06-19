@@ -6,7 +6,7 @@ This page documents the API of ts-pkgx, including all the functions, interfaces,
 
 ### Type Safety Features
 
-ts-pkgx now provides comprehensive TypeScript type safety with the following new types:
+ts-pkgx provides comprehensive TypeScript type safety with the following types:
 
 ```typescript
 // Package name types
@@ -169,21 +169,56 @@ Options for package fetching operations.
 interface PackageFetchOptions {
   /**
    * Timeout in milliseconds for fetching operations
-   * @default 30000
+   * @default 20000
    */
   timeout?: number
 
   /**
    * Directory to save package data
-   * @default 'packages'
+   * @default 'src/packages'
    */
   outputDir?: string
+
+  /**
+   * Directory to cache package data
+   * @default '.cache/packages'
+   */
+  cacheDir?: string
+
+  /**
+   * Enable or disable caching
+   * @default true
+   */
+  cache?: boolean
+
+  /**
+   * Cache expiration time in minutes
+   * @default 1440
+   */
+  cacheExpirationMinutes?: number
 
   /**
    * Enable debug mode to save screenshots and additional info
    * @default false
    */
   debug?: boolean
+
+  /**
+   * Limit the number of packages to fetch
+   */
+  limit?: number
+
+  /**
+   * Number of packages to fetch concurrently
+   * @default 8
+   */
+  concurrency?: number
+
+  /**
+   * Output JSON for CI integration
+   * @default false
+   */
+  outputJson?: boolean
 }
 ```
 
@@ -282,80 +317,89 @@ The generated packages provide excellent TypeScript intellisense:
 
 ## Core Functions
 
-### fetchPkgxPackage
+### fetchPantryPackageWithMetadata
 
-Fetches package information from pkgx.dev.
+Fetches package information using the pantry-based approach with enhanced metadata.
 
 ```typescript
-async function fetchPkgxPackage(
+async function fetchPantryPackageWithMetadata(
   packageName: string,
-  options: PackageFetchOptions = {},
-): Promise<{ packageInfo: PkgxPackage, originalName: string, fullDomainName: string }>
+  options: {
+    timeout?: number
+    debug?: boolean
+    outputJson?: boolean
+    cacheDir?: string
+    cache?: boolean
+    cacheExpirationMinutes?: number
+  } = {},
+): Promise<{ packageInfo: PkgxPackage } | null>
 ```
 
 #### Parameters
 
 - `packageName`: The name of the package to fetch (e.g., 'node', 'bun', 'agwa.name/git-crypt')
-- `options`: Optional configuration
+- `options`: Optional configuration object
 
 #### Returns
 
-- `packageInfo`: The fetched package information
-- `originalName`: The original name used to fetch the package
-- `fullDomainName`: The full domain name of the package
+- Object with `packageInfo` property containing the fetched package information, or `null` if not found
 
 #### Example
 
 ```typescript
-const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage('node')
-console.log(`Fetched ${packageInfo.name} (${fullDomainName})`)
+const result = await fetchPantryPackageWithMetadata('node', {
+  timeout: 60000,
+  debug: true,
+  cache: true,
+  cacheExpirationMinutes: 60,
+})
+
+if (result) {
+  console.log(`Fetched ${result.packageInfo.name}`)
+}
 ```
 
-### fetchAndSavePackage
+### saveToCacheAndOutput
 
-Fetches and saves a package to the specified output directory with enhanced JSDoc generation.
+Saves package information to both cache and output directories.
 
 ```typescript
-async function fetchAndSavePackage(
+function saveToCacheAndOutput(
   packageName: string,
-  outputDir: string,
-  timeout: number = 30000,
-  saveAsJson: boolean = false,
-  retryNumber: number = 1,
-  maxRetries: number = 3,
-  debug: boolean = false,
-): Promise<{ success: boolean, fullDomainName?: string, aliases?: string[], filePath?: string }>
+  packageInfo: PkgxPackage,
+  options: {
+    cacheDir?: string
+    outputDir?: string
+    cache?: boolean
+  },
+): { outputPath: string }
 ```
 
 #### Parameters
 
-- `packageName`: The name of the package to fetch
-- `outputDir`: Directory to save the package data
-- `timeout`: Timeout in milliseconds
-- `saveAsJson`: Whether to save as JSON (true) or TypeScript (false)
-- `retryNumber`: Current retry attempt number (for internal use)
-- `maxRetries`: Maximum number of retry attempts
-- `debug`: Enable debug mode
+- `packageName`: The name of the package
+- `packageInfo`: The package information to save
+- `options`: Configuration for cache and output directories
 
 #### Returns
 
-- `success`: Whether the operation was successful
-- `fullDomainName`: The full domain name of the package
-- `aliases`: List of aliases for the package
-- `filePath`: Path to the saved file
+- Object with `outputPath` property containing the path to the saved TypeScript file
 
 #### Example
 
 ```typescript
-const result = await fetchAndSavePackage('bun', './packages', 60000)
-if (result.success) {
-  console.log(`Saved package to ${result.filePath}`)
-}
+const { outputPath } = saveToCacheAndOutput('node', packageInfo, {
+  cacheDir: '.cache/packages',
+  outputDir: 'src/packages',
+  cache: true,
+})
+
+console.log(`Saved to ${outputPath}`)
 ```
 
 ### fetchAndSaveAllPackages
 
-Fetches and saves all packages from pkgx.dev with enhanced documentation generation.
+Fetches and saves all packages from the local pantry with enhanced documentation generation.
 
 ```typescript
 async function fetchAndSaveAllPackages(
@@ -375,10 +419,46 @@ async function fetchAndSaveAllPackages(
 
 ```typescript
 const savedPackages = await fetchAndSaveAllPackages({
-  timeout: 120000,
+  timeout: 60000,
   outputDir: './packages',
+  concurrency: 12,
+  limit: 100,
+  debug: false,
 })
 console.log(`Saved ${savedPackages.length} packages`)
+```
+
+### savePackageAsTypeScript
+
+Saves a package as a TypeScript file with enhanced JSDoc documentation.
+
+```typescript
+function savePackageAsTypeScript(
+  outputDir: string,
+  packageName: string,
+  packageInfo: PkgxPackage,
+): string
+```
+
+#### Parameters
+
+- `outputDir`: Directory to save the TypeScript file
+- `packageName`: Name of the package
+- `packageInfo`: Package information
+
+#### Returns
+
+- Path to the saved TypeScript file
+
+#### Example
+
+```typescript
+const filePath = savePackageAsTypeScript(
+  'src/packages',
+  'nodejs.org',
+  packageInfo,
+)
+console.log(`Saved TypeScript file: ${filePath}`)
 ```
 
 ## Domain Utilities
@@ -459,7 +539,7 @@ const nestedDomain = guessOriginalDomain('agwaname-gitcrypt') // "agwa.name/gitc
 Generates an index.ts file for all packages in the packages directory with comprehensive JSDoc documentation and alias support.
 
 ```typescript
-async function generateIndex(): Promise<void>
+async function generateIndex(): Promise<string>
 ```
 
 The generated index includes:
@@ -468,10 +548,53 @@ The generated index includes:
 - Type-safe property names (quoted when necessary)
 - Links to package documentation pages
 
+#### Returns
+
+- Path to the generated index file
+
 #### Example
 
 ```typescript
-await generateIndex()
+const indexPath = await generateIndex()
+console.log(`Generated index: ${indexPath}`)
+```
+
+### generateAliases
+
+Generates a TypeScript aliases file for all packages.
+
+```typescript
+async function generateAliases(): Promise<string>
+```
+
+#### Returns
+
+- Path to the generated aliases file
+
+#### Example
+
+```typescript
+const aliasesPath = await generateAliases()
+console.log(`Generated aliases: ${aliasesPath}`)
+```
+
+### generateDocs
+
+Generates comprehensive VitePress documentation for all packages.
+
+```typescript
+async function generateDocs(outputDir: string = 'docs'): Promise<void>
+```
+
+#### Parameters
+
+- `outputDir`: Directory to save documentation files
+
+#### Example
+
+```typescript
+await generateDocs('./documentation')
+console.log('Documentation generated successfully')
 ```
 
 ### getPackage
@@ -549,6 +672,30 @@ const PACKAGE_ALIASES: Record<string, string> = {
   bun: 'bun.sh',
   // ... and more
 }
+```
+
+### DEFAULT_CACHE_DIR
+
+Default directory for caching package data.
+
+```typescript
+const DEFAULT_CACHE_DIR = '.cache/packages'
+```
+
+### DEFAULT_CACHE_EXPIRATION_MINUTES
+
+Default cache expiration time in minutes (24 hours).
+
+```typescript
+const DEFAULT_CACHE_EXPIRATION_MINUTES = 1440
+```
+
+### DEFAULT_TIMEOUT_MS
+
+Default timeout for network requests in milliseconds (20 seconds).
+
+```typescript
+const DEFAULT_TIMEOUT_MS = 20000
 ```
 
 ## Type-Safe Utility Functions
@@ -649,56 +796,26 @@ function getPackagesByCategory(category: keyof typeof PACKAGE_CATEGORIES): reado
 function isPackageInCategory(packageName: string, category: keyof typeof PACKAGE_CATEGORIES): boolean
 ```
 
-## CLI Commands
+## Browser Resource Management
 
-### pkgx:fetch
+### cleanupBrowserResources
 
-Fetches a single package or a list of packages from pkgx.dev with enhanced JSDoc generation.
+Cleans up Playwright browser resources to prevent hanging processes.
 
-```bash
-bun run pkgx:fetch <packageName> [options]
-# OR
-bun run pkgx:fetch --pkg <packageList> [options]
+```typescript
+async function cleanupBrowserResources(): Promise<void>
 ```
 
-#### Options
+This function is automatically called by the CLI but can be used manually when using the library programmatically.
 
-- `--pkg <packageNames>`: Comma-separated list of package names to fetch
-- `--output <directory>`: Directory to save the package data
-- `--timeout <milliseconds>`: Timeout in milliseconds
-- `--debug`: Enable debug mode
-- `--json`: Save as JSON instead of TypeScript
+#### Example
 
-#### Examples
-
-```bash
-# Fetch a single package with enhanced documentation
-bun run pkgx:fetch node
-
-# Fetch multiple packages
-bun run pkgx:fetch --pkg node,bun,python
-
-# Fetch packages with JSON output
-bun run pkgx:fetch --pkg "go.dev,python.org" --json
-
-# Fetch with custom timeout and output directory
-bun run pkgx:fetch --pkg node,bun --timeout 60000 --output ./custom-packages
+```typescript
+try {
+  // Your package fetching operations
+  await fetchPantryPackageWithMetadata('node')
+} finally {
+  // Ensure cleanup
+  await cleanupBrowserResources()
+}
 ```
-
-### pkgx:fetch-all
-
-Fetches all packages from pkgx.dev with enhanced documentation generation.
-
-```bash
-bun run pkgx:fetch-all [options]
-```
-
-#### Options
-
-- `--output <directory>`: Directory to save the package data
-- `--timeout <milliseconds>`: Timeout in milliseconds
-- `--debug`: Enable debug mode
-- `--json`: Save as JSON instead of TypeScript
-- `--github-cache-duration <milliseconds>`: Duration to cache GitHub API responses
-- `--mode <mode>`: Fetch mode: "basic" (legacy), "complete" (improved), or "scrape" (web scraping)
-- `--limit <number>`: Limit the number of packages to fetch

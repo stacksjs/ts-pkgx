@@ -2,33 +2,54 @@
 
 This section covers advanced usage scenarios and customization options for ts-pkgx.
 
-## Web Scraping Customization
+## Pantry-Based Package Fetching
 
-ts-pkgx uses Playwright for fetching package information from pkgx.dev. You can customize the web scraping behavior:
+ts-pkgx uses a pantry-based approach for fetching package information. This provides more reliable and comprehensive metadata than traditional web scraping.
+
+### Pantry Management
+
+```bash
+# Download and extract the latest pantry
+pkgx-tools update-pantry --pantry-dir ./custom-pantry
+
+# Generate constants from local pantry
+pkgx-tools generate-consts --source pantry --pantry-dir ./custom-pantry
+
+# Generate constants from S3 registry (alternative)
+pkgx-tools generate-consts --source registry --validate
+```
+
+### Advanced Fetching Options
 
 ```typescript
-import { fetchPkgxPackage } from 'ts-pkgx'
+import { fetchPantryPackageWithMetadata } from 'ts-pkgx'
 
-// Custom timeout for complex packages
-const result = await fetchPkgxPackage('rust-lang.org', {
+// Custom configuration for complex packages
+const result = await fetchPantryPackageWithMetadata('rust-lang.org', {
   timeout: 120000, // 2 minutes
   debug: true, // Save screenshots for debugging
+  cache: true,
+  cacheExpirationMinutes: 30, // 30 minutes cache
 })
+
+if (result) {
+  console.log(result.packageInfo)
+}
 ```
 
 ### Debug Mode
 
-When enabled, debug mode saves screenshots of the pkgx.dev pages being scraped, which can be helpful for diagnosing issues:
+When enabled, debug mode saves screenshots and additional debugging information:
 
 ```bash
 # CLI debug mode
-bun run pkgx:fetch rust-lang.org --debug
+pkgx-tools fetch rust-lang.org --debug --verbose
 
 # API debug mode
-const result = await fetchPkgxPackage('rust-lang.org', { debug: true })
+const result = await fetchPantryPackageWithMetadata('rust-lang.org', { debug: true })
 ```
 
-Screenshots are saved in the `debug` directory.
+Screenshots and debug information are saved in the `debug` directory.
 
 ## Enhanced Package Generation
 
@@ -83,17 +104,19 @@ You can implement custom transformation logic when processing packages:
 
 ```typescript
 import type { PkgxPackage } from 'ts-pkgx'
-import { fetchPkgxPackage } from 'ts-pkgx'
+import { fetchPantryPackageWithMetadata } from 'ts-pkgx'
 
-async function fetchAndTransform(packageName: string): Promise<PkgxPackage> {
-  const { packageInfo } = await fetchPkgxPackage(packageName)
+async function fetchAndTransform(packageName: string): Promise<PkgxPackage | null> {
+  const result = await fetchPantryPackageWithMetadata(packageName)
+
+  if (!result) return null
 
   // Add custom metadata
   const enhancedPackage: PkgxPackage = {
-    ...packageInfo,
-    description: `${packageInfo.description} [Enhanced]`,
+    ...result.packageInfo,
+    description: `${result.packageInfo.description} [Enhanced]`,
     // Add custom fields or modify existing ones
-    customCategory: determineCategory(packageInfo),
+    customCategory: determineCategory(result.packageInfo),
   }
 
   return enhancedPackage
@@ -116,13 +139,17 @@ ts-pkgx generates TypeScript or JSON files by default, but you can customize the
 import type { PkgxPackage } from 'ts-pkgx'
 import fs from 'node:fs'
 import path from 'node:path'
-import { fetchPkgxPackage } from 'ts-pkgx'
+import { fetchPantryPackageWithMetadata } from 'ts-pkgx'
 
 async function saveAsMarkdown(packageName: string, outputDir: string): Promise<void> {
-  const { packageInfo } = await fetchPkgxPackage(packageName)
-  const mdContent = generateMarkdown(packageInfo)
+  const result = await fetchPantryPackageWithMetadata(packageName)
 
-  const fileName = `${packageInfo.domain.replace(/\./g, '-')}.md`
+  if (!result) {
+    throw new Error(`Package ${packageName} not found`)
+  }
+
+  const mdContent = generateMarkdown(result.packageInfo)
+  const fileName = `${result.packageInfo.domain.replace(/\./g, '-')}.md`
   const filePath = path.join(outputDir, fileName)
 
   fs.writeFileSync(filePath, mdContent)
@@ -188,7 +215,7 @@ extendAliases({
 Implement custom error handling for package fetching:
 
 ```typescript
-import { fetchPkgxPackage } from 'ts-pkgx'
+import { fetchPantryPackageWithMetadata } from 'ts-pkgx'
 
 async function fetchWithRetry(packageName: string, maxRetries = 3): Promise<any> {
   let lastError
@@ -196,7 +223,7 @@ async function fetchWithRetry(packageName: string, maxRetries = 3): Promise<any>
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
       console.log(`Attempt ${attempt} of ${maxRetries} for ${packageName}`)
-      return await fetchPkgxPackage(packageName, {
+      return await fetchPantryPackageWithMetadata(packageName, {
         timeout: 30000 * attempt, // Increase timeout with each retry
       })
     }
@@ -205,7 +232,7 @@ async function fetchWithRetry(packageName: string, maxRetries = 3): Promise<any>
       console.error(`Attempt ${attempt} failed for ${packageName}:`, error.message)
 
       // Don't retry for certain errors
-      if (error.message.includes('404') || error.message.includes('Not Found')) {
+      if (error.message.includes('not found') || error.message.includes('Not Found')) {
         throw new Error(`Package ${packageName} not found`)
       }
 
@@ -289,154 +316,246 @@ export function getPackage(name: string): PkgxPackage | undefined {
 }
 ```
 
-## Working with GitHub API Rate Limits
+## Advanced Caching Strategies
 
-ts-pkgx uses the GitHub API to fetch additional information. You can customize this behavior to handle rate limits:
+ts-pkgx provides sophisticated caching capabilities for optimal performance:
 
 ```typescript
 import fs from 'node:fs'
 import path from 'node:path'
 
-interface GitHubCache {
+interface CacheEntry {
   timestamp: number
   expiresAt: number
   data: any
 }
 
-// Save GitHub API response to cache
-function saveGitHubCache(data: any, cacheDuration: number, cacheFile: string): void {
-  try {
-    const cacheData: GitHubCache = {
+// Custom cache implementation
+class AdvancedCache {
+  constructor(private cacheDir: string, private defaultTTL: number = 3600000) {
+    if (!fs.existsSync(cacheDir)) {
+      fs.mkdirSync(cacheDir, { recursive: true })
+    }
+  }
+
+  save(key: string, data: any, ttl?: number): void {
+    const cacheDuration = ttl || this.defaultTTL
+    const cacheEntry: CacheEntry = {
       timestamp: Date.now(),
       expiresAt: Date.now() + cacheDuration,
       data,
     }
-    fs.writeFileSync(cacheFile, JSON.stringify(cacheData, null, 2))
-    console.log(`GitHub API cache saved to ${cacheFile}, expires at ${new Date(cacheData.expiresAt).toLocaleString()}`)
-  }
-  catch (error) {
-    console.error('Failed to save GitHub cache:', error)
-  }
-}
 
-// Load GitHub API response from cache if valid
-function loadGitHubCache(cacheDuration: number, cacheFile: string): any | null {
-  try {
+    const cacheFile = path.join(this.cacheDir, `${key}.json`)
+    fs.writeFileSync(cacheFile, JSON.stringify(cacheEntry, null, 2))
+  }
+
+  load(key: string): any | null {
+    const cacheFile = path.join(this.cacheDir, `${key}.json`)
+
     if (!fs.existsSync(cacheFile)) {
       return null
     }
 
-    const cacheData: GitHubCache = JSON.parse(fs.readFileSync(cacheFile, 'utf8'))
-    const now = Date.now()
+    try {
+      const cacheEntry: CacheEntry = JSON.parse(fs.readFileSync(cacheFile, 'utf8'))
 
-    // Check if cache is still valid
-    if (now - cacheData.timestamp <= cacheDuration) {
-      console.log(`Using GitHub API cache from ${new Date(cacheData.timestamp).toLocaleString()}, expires at ${new Date(cacheData.expiresAt).toLocaleString()}`)
-      return cacheData.data
-    }
-    else {
-      console.log(`GitHub API cache expired (from ${new Date(cacheData.timestamp).toLocaleString()})`)
+      if (Date.now() > cacheEntry.expiresAt) {
+        // Cache expired, remove file
+        fs.unlinkSync(cacheFile)
+        return null
+      }
+
+      return cacheEntry.data
+    } catch (error) {
+      // Corrupted cache file, remove it
+      fs.unlinkSync(cacheFile)
       return null
     }
   }
-  catch (error) {
-    console.error('Error loading GitHub cache:', error)
-    return null
+
+  clear(): void {
+    const files = fs.readdirSync(this.cacheDir)
+    files.forEach(file => {
+      if (file.endsWith('.json')) {
+        fs.unlinkSync(path.join(this.cacheDir, file))
+      }
+    })
   }
+}
+
+// Usage
+const cache = new AdvancedCache('.cache/advanced', 7200000) // 2 hours TTL
+
+async function fetchWithAdvancedCache(packageName: string) {
+  // Try cache first
+  const cached = cache.load(packageName)
+  if (cached) {
+    console.log(`Cache hit for ${packageName}`)
+    return cached
+  }
+
+  // Fetch fresh data
+  const result = await fetchPantryPackageWithMetadata(packageName)
+  if (result) {
+    cache.save(packageName, result.packageInfo)
+  }
+
+  return result?.packageInfo
 }
 ```
 
 ## Optimized Batch Processing
 
-ts-pkgx implements optimized batch processing to efficiently handle large numbers of packages. This is particularly useful when updating the entire pantry, which contains around 1,000 packages.
+ts-pkgx implements optimized batch processing to efficiently handle large numbers of packages:
 
 ```typescript
-import { updatePackage } from 'ts-pkgx/tools/updatePackages'
-import { fetchPackageListFromGitHub } from 'ts-pkgx/utils'
+import { fetchAndSaveAllPackages } from 'ts-pkgx'
 
-async function updatePackagesInBatches() {
-  // Get the list of all packages from GitHub
-  const packages = await fetchPackageListFromGitHub()
-  console.log(`Found ${packages.length} packages to update`)
+async function optimizedBatchProcessing() {
+  // Process packages with fine-tuned settings
+  const packages = await fetchAndSaveAllPackages({
+    concurrency: 12,        // Higher concurrency for faster processing
+    timeout: 60000,         // Longer timeout for complex packages
+    cacheExpirationMinutes: 30, // Shorter cache for fresher data
+    limit: 100,             // Process first 100 packages for testing
+    debug: false,           // Disable debug for performance
+    outputJson: false,      // Generate TypeScript files
+  })
 
-  // Process packages in batches of 20 to prevent memory issues
-  const BATCH_SIZE = 20
-  let updatedCount = 0
-  const batches = Math.ceil(packages.length / BATCH_SIZE)
-
-  for (let i = 0; i < batches; i++) {
-    const start = i * BATCH_SIZE
-    const end = Math.min(start + BATCH_SIZE, packages.length)
-    const batch = packages.slice(start, end)
-
-    console.log(`Processing batch ${i + 1}/${batches} (packages ${start + 1}-${end})`)
-
-    // Update packages in the current batch in parallel
-    const results = await Promise.all(batch.map(pkg => updatePackage(pkg)))
-
-    // Count updated packages
-    updatedCount += results.filter(Boolean).length
-  }
-
-  console.log(`Updated ${updatedCount} out of ${packages.length} packages`)
+  console.log(`Successfully processed ${packages.length} packages`)
+  return packages
 }
 ```
 
 ### Batch Size Considerations
 
-The optimal batch size depends on several factors:
+The optimal settings depend on several factors:
 
-- **Memory Usage**: Smaller batches reduce memory consumption but may increase total processing time.
-- **API Rate Limits**: If using external APIs, batch size affects how quickly you approach rate limits.
-- **Fetching Method**: Different batch sizes are optimal for different fetch methods:
-  - GitHub API: 30-40 packages per batch is usually efficient
-  - Web scraping: 10-20 packages per batch avoids IP blocks and timeouts
+```bash
+# High-performance setup (good network, powerful machine)
+pkgx-tools fetch --all --concurrency 15 --timeout 30000
 
-### Skip Unchanged Packages
+# Conservative setup (slower network or machine)
+pkgx-tools fetch --all --concurrency 4 --timeout 120000
 
-For better performance, ts-pkgx can check if a package file has changed before writing to disk:
+# Testing setup (quick validation)
+pkgx-tools fetch --all --limit 20 --concurrency 8 --verbose
+```
+
+### Resource Management
+
+Control memory usage and prevent resource leaks:
 
 ```typescript
-async function updatePackageEfficiently(packageName: string): Promise<boolean> {
-  // Fetch the latest package information
-  const { packageInfo } = await fetchPkgxPackage(packageName)
+import { cleanupBrowserResources } from 'ts-pkgx'
 
-  // Determine file path
-  const filePath = path.join(PACKAGES_DIR, `${convertDomainToFileName(packageInfo.domain)}.ts`)
+async function processPackagesWithCleanup() {
+  try {
+    // Your package processing operations
+    const result = await fetchAndSaveAllPackages({
+      concurrency: 8,
+      timeout: 60000,
+    })
 
-  // Check if file exists
-  if (fs.existsSync(filePath)) {
-    // Read existing file
-    const existingContent = fs.readFileSync(filePath, 'utf-8')
-
-    // Generate new content
-    const newContent = generatePackageTypescript(packageInfo)
-
-    // Only write if content has changed
-    if (newContent !== existingContent) {
-      fs.writeFileSync(filePath, newContent)
-      return true // Package was updated
-    }
-    return false // No changes needed
+    return result
+  } finally {
+    // Always cleanup browser resources
+    await cleanupBrowserResources()
   }
-
-  // File doesn't exist, create it
-  fs.writeFileSync(filePath, generatePackageTypescript(packageInfo))
-  return true // New package was created
 }
 ```
 
-### Command Line Usage
+## Custom CLI Integration
 
-You can leverage batch processing via the CLI with options to control batch size and limits:
+Create custom CLI tools that integrate with ts-pkgx:
 
-```bash
-# Process all packages with default batch size (20)
-bun run pkgx:fetch-all
+```typescript
+#!/usr/bin/env node
+import { CAC } from 'cac'
+import { fetchPantryPackageWithMetadata, generateDocs } from 'ts-pkgx'
 
-# Limit to first 50 packages (useful for testing)
-bun run pkgx:fetch-all --limit 50
+const cli = new CAC('my-custom-tool')
 
-# Increase timeout for complex packages
-bun run pkgx:fetch-all --timeout 60000
+cli
+  .command('sync <packages...>', 'Sync specific packages')
+  .option('--output <dir>', 'Output directory', { default: './synced-packages' })
+  .action(async (packages: string[], options) => {
+    console.log(`Syncing ${packages.length} packages to ${options.output}`)
+
+    for (const pkg of packages) {
+      try {
+        const result = await fetchPantryPackageWithMetadata(pkg, {
+          timeout: 60000,
+          cache: true,
+          cacheExpirationMinutes: 60,
+        })
+
+        if (result) {
+          console.log(`✅ Synced ${pkg}`)
+        } else {
+          console.log(`❌ Failed to sync ${pkg}`)
+        }
+      } catch (error) {
+        console.error(`Error syncing ${pkg}:`, error.message)
+      }
+    }
+  })
+
+cli
+  .command('docs', 'Generate documentation')
+  .option('--output <dir>', 'Output directory', { default: './docs' })
+  .action(async (options) => {
+    await generateDocs(options.output)
+    console.log(`Documentation generated in ${options.output}`)
+  })
+
+cli.parse()
+```
+
+## Environment-Specific Configuration
+
+Configure ts-pkgx for different environments:
+
+```typescript
+interface EnvironmentConfig {
+  timeout: number
+  concurrency: number
+  cacheExpiration: number
+  debug: boolean
+}
+
+const configs: Record<string, EnvironmentConfig> = {
+  development: {
+    timeout: 120000,
+    concurrency: 4,
+    cacheExpiration: 30, // 30 minutes
+    debug: true,
+  },
+  production: {
+    timeout: 60000,
+    concurrency: 12,
+    cacheExpiration: 1440, // 24 hours
+    debug: false,
+  },
+  ci: {
+    timeout: 180000,
+    concurrency: 8,
+    cacheExpiration: 0, // No cache in CI
+    debug: false,
+  },
+}
+
+function getConfig(): EnvironmentConfig {
+  const env = process.env.NODE_ENV || 'development'
+  return configs[env] || configs.development
+}
+
+// Usage
+const config = getConfig()
+const result = await fetchPantryPackageWithMetadata('node', {
+  timeout: config.timeout,
+  debug: config.debug,
+  cacheExpirationMinutes: config.cacheExpiration,
+})
 ```
