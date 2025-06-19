@@ -21,20 +21,41 @@ bun install ts-pkgx
 
 ### CLI Tool
 
-The library includes a CLI tool to fetch packages from pkgx.dev:
+The library includes a comprehensive CLI tool to manage packages from pkgx.dev:
 
 ```bash
 # Fetch a single package
 bun run pkgx:fetch node
 
+# Fetch multiple packages
+bun run pkgx:fetch --pkg "node,python,go"
+
 # With custom output directory
-bun run pkgx:fetch node --output ./data/packages
+bun run pkgx:fetch node --output-dir ./data/packages
 
 # Fetch all packages
 bun run pkgx:fetch-all
 
-# Set a custom timeout (milliseconds)
-bun run pkgx:fetch-all --timeout 180000 --output ./data/pkgx-packages
+# Set options for fetching
+bun run pkgx:fetch-all --timeout 180000 --output-dir ./data/packages --limit 100
+
+# Generate documentation
+bun run pkgx:docs
+
+# Update local pantry cache
+bun ./bin/cli.ts update-pantry
+
+# Generate TypeScript files from cache
+bun ./bin/cli.ts generate-ts
+
+# Generate package index
+bun ./bin/cli.ts generate-index
+
+# Generate package aliases
+bun ./bin/cli.ts generate-aliases
+
+# Generate constants file
+bun ./bin/cli.ts generate-consts
 ```
 
 ### Programmatic Usage
@@ -42,17 +63,37 @@ bun run pkgx:fetch-all --timeout 180000 --output ./data/pkgx-packages
 You can also use the library programmatically in your code:
 
 ```typescript
-import { fetchAndSaveAllPackages, fetchPkgxPackage } from 'ts-pkgx'
+import {
+  fetchAndSaveAllPackages,
+  fetchPantryPackageWithMetadata,
+  fetchPkgxPackage,
+  savePackageAsTypeScript,
+  saveToCacheAndOutput
+} from 'ts-pkgx'
 
-// Fetch a single package
+// Fetch a single package using pkgx.dev
 const nodePackage = await fetchPkgxPackage('node')
 console.log(nodePackage)
 
+// Fetch package with metadata from pantry
+const packageWithMeta = await fetchPantryPackageWithMetadata('node', {
+  timeout: 30000,
+  debug: false
+})
+
 // Fetch and save all packages
 const savedPackages = await fetchAndSaveAllPackages({
-  timeout: 120000
+  timeout: 120000,
+  outputDir: 'src/packages',
+  concurrency: 8
 })
 console.log(`Saved ${savedPackages.length} packages`)
+
+// Save package as TypeScript file
+if (packageWithMeta) {
+  const filePath = savePackageAsTypeScript('src/packages', 'node', packageWithMeta.packageInfo)
+  console.log(`Saved to ${filePath}`)
+}
 ```
 
 ### TypeScript Types
@@ -61,60 +102,58 @@ ts-pkgx provides comprehensive TypeScript types for all packages in the pkgx.dev
 
 ```typescript
 import type {
-  InstallationPlan, // Installation planning interface
-  PackageAlias, // All available package aliases (e.g., 'node', 'python')
-  PackageDomain, // All available package domains (e.g., 'nodejs.org')
-  PackageInfo, // Comprehensive package information
-  PackageName, // Union of all valid package identifiers
-  PackageSpec, // Package specifications with versions (e.g., 'node@20.1.0')
-  Pantry,
-  SupportedArchitecture, // 'x86_64' | 'aarch64' | 'armv7l' | 'i686'
-  SupportedPlatform // 'darwin' | 'linux' | 'windows'
+  PackageFetchOptions, // Options for fetching packages
+  Packages, // Type alias for Pantry
+  Pantry, // Complete pantry type with all packages
+  PkgxPackage // Package information interface
 } from 'ts-pkgx'
 import {
-  aliases,
-  createInstallPlan,
-  getLatestVersion,
-  getPackageInfo,
-  isValidPackageName,
-  pantry,
-  resolvePackageName
+  aliases, // Package aliases mapping
+  pantry // Access to all packages with full type safety
 } from 'ts-pkgx'
 
-// Access packages with full type safety
+// Access packages with full type safety using domain-based properties
 const nodePackage = pantry.nodejs_org
 const pythonPackage = pantry.python_org
 const goPackage = pantry.go_dev
+const bunPackage = pantry.bun_sh
 
-// Type-safe package operations
-function installPackage(packageName: PackageName, version?: string) {
-  // TypeScript ensures only valid package names are accepted
-  const info = getPackageInfo(packageName)
-  const latest = getLatestVersion(packageName)
-  const plan = createInstallPlan(version ? `${packageName}@${version}` : packageName)
-
-  return { info, latest, plan }
-}
-
-// Type guards for runtime validation
-if (isValidPackageName('node')) {
-  const resolution = resolvePackageName('node') // Type-safe resolution
-}
+// Alternative access using underscored domain names
+const curlPackage = pantry.curl_se
+const gitPackage = pantry.git_scm_org
 
 // All package properties are fully typed
-console.log(nodePackage.name) // string
-console.log(nodePackage.programs) // readonly string[]
-console.log(nodePackage.versions) // readonly string[]
+console.log(nodePackage.name) // string: 'nodejs.org'
+console.log(nodePackage.domain) // string: 'nodejs.org'
+console.log(nodePackage.description) // string: package description
+console.log(nodePackage.programs) // readonly string[]: ['node', 'npm', 'npx']
+console.log(nodePackage.versions) // readonly string[]: available versions
+console.log(nodePackage.installCommand) // string: 'launchpad install nodejs.org'
+console.log(nodePackage.companions) // readonly string[]: companion packages
+console.log(nodePackage.dependencies) // readonly string[]: dependencies
+
+// Type-safe access with aliases
+const alias = aliases.node // 'nodejs.org'
+const packageByAlias = pantry[aliases.node as keyof Pantry]
+
+// Package fetching with typed options
+const fetchOptions: PackageFetchOptions = {
+  timeout: 30000,
+  outputDir: 'src/packages',
+  cacheDir: '.cache',
+  debug: false,
+  concurrency: 8
+}
 ```
 
 The type system includes:
-- **Comprehensive type safety**: All package names, versions, and operations are type-checked
-- **Package name types**: Union types for aliases, domains, and specifications
-- **Platform types**: Support for different operating systems and architectures
-- **Version resolution**: Type-safe version specification and resolution
-- **CLI utilities**: Type-safe command operations with error handling
-- **Installation planning**: Type-safe installation plan generation
-- **Auto-completion**: Full IntelliSense support in your IDE
+- **Comprehensive type safety**: All package properties and operations are type-checked
+- **Pantry types**: Full type definitions for all packages in the pkgx ecosystem
+- **Package interfaces**: Detailed typed interfaces for package metadata
+- **Fetch options**: Type-safe configuration for package fetching operations
+- **Domain mapping**: Both domain names and underscored variants for flexible access
+- **Alias support**: Type-safe alias resolution for common package names
+- **Auto-completion**: Full IntelliSense support in your IDE for all 1600+ packages
 
 ### Running Tests
 
@@ -122,10 +161,31 @@ The type system includes:
 bun test
 ```
 
-## Testing
+## Development
+
+### Running Tests
 
 ```bash
 bun test
+```
+
+### Building the Package
+
+```bash
+bun run build
+```
+
+### Updating Packages
+
+```bash
+# Update the local pantry cache
+bun ./bin/cli.ts update-pantry
+
+# Regenerate all package TypeScript files
+bun ./bin/cli.ts fetch --all
+
+# Generate documentation
+bun ./bin/cli.ts generate-docs
 ```
 
 ## Changelog
