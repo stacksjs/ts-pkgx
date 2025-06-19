@@ -54,8 +54,6 @@ sh <(curl https://pkgx.sh) +cython.org@3.1.2 -- $SHELL -i
 This package depends on:
 
 - `python.org<3.12`
-- `pip.pypa.io`
-- `llvm.org`
 
 ## Usage Examples
 

@@ -41,13 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +openblas.net@0.3.29 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

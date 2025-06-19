@@ -60,7 +60,6 @@ sh <(curl https://pkgx.sh) +ipython.org@9.3.0 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org>=3.7<3.12`
 
 ## Usage Examples
 

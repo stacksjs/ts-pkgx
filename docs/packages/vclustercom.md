@@ -57,9 +57,7 @@ sh <(curl https://pkgx.sh) +vcluster.com@0.25.1 -- $SHELL -i
 This package depends on:
 
 - `kubernetes.io/kubectl^1`
-- `curl.se/ca-certs`
-- `go.dev^1.21`
-- `gnu.org/gcc`
+- `linux:curl.se/ca-certs`
 
 ## Usage Examples
 

@@ -53,9 +53,9 @@ This package depends on:
 
 - `go.dev^1.18`
 - `npmjs.com`
-- `gnu.org/gcc`
-- `gtk.org/gtk3`
-- `freedesktop.org/pkg-config`
+- `linux:gnu.org/gcc`
+- `linux:gtk.org/gtk3`
+- `linux:freedesktop.org/pkg-config`
 
 ## Usage Examples
 

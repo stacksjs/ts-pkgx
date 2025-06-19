@@ -55,9 +55,7 @@ This package depends on:
 
 - `php.net^8.2`
 - `getcomposer.org^2.7`
-- `info-zip.org/unzip^6`
-- `curl.se`
-- `pkgx.sh^1`
+- `linux:info-zip.org/unzip^6`
 
 ## Usage Examples
 

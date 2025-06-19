@@ -61,9 +61,7 @@ This package depends on:
 
 - `qemu.org`
 - `github.com/containers/gvisor-tap-vsock`
-- `github.com/crc-org/vfkit`
-- `go.dev=1.23.3`
-- `gnu.org/coreutils`
+- `darwin:github.com/crc-org/vfkit`
 
 ## Related Packages
 

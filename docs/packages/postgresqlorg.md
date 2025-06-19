@@ -80,9 +80,6 @@ This package depends on:
 - `gnome.org/libxml2`
 - `gnome.org/libxslt`
 - `unicode.org^73`
-- `gnu.org/bison`
-- `github.com/westes/flex^2.5.31`
-- `perl.org`
 
 ## Usage Examples
 

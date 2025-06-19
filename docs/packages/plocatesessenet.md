@@ -48,10 +48,6 @@ This package depends on:
 
 - `facebook.com/zstd@1`
 - `gnu.org/gcc/libstdcxx@14`
-- `mesonbuild.com^1`
-- `cmake.org^3`
-- `ninja-build.org^1`
-- `gnu.org/gcc`
 
 ## Usage Examples
 

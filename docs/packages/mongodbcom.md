@@ -54,9 +54,6 @@ This package depends on:
 
 - `curl.se@8`
 - `openssl.org@1.1`
-- `mongodb.com/shell`
-- `pkgx.sh@1`
-- `crates.io/semverator`
 
 ## Usage Examples
 

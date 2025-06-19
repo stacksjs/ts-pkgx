@@ -60,7 +60,6 @@ sh <(curl https://pkgx.sh) +symfony.com@5.12.0 -- $SHELL -i
 This package depends on:
 
 - `php.net`
-- `gnu.org/wget`
 
 ## Usage Examples
 

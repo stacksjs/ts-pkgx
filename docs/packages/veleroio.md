@@ -46,12 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +velero.io@1.16.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev~1.23.8`
-
 ## Usage Examples
 
 ```typescript

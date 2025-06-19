@@ -56,9 +56,8 @@ sh <(curl https://pkgx.sh) +dotnetmicrosoft.com@9.0.202 -- $SHELL -i
 
 This package depends on:
 
-- `unicode.org^71`
-- `openssl.org`
-- `curl.se`
+- `linux:unicode.org^71`
+- `linux:openssl.org`
 
 ## Usage Examples
 

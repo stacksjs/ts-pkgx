@@ -46,7 +46,6 @@ sh <(curl https://pkgx.sh) +swig.org@4.3.1 -- $SHELL -i
 This package depends on:
 
 - `pcre.org/v2`
-- `ruby-lang.org^3`
 
 ## Usage Examples
 

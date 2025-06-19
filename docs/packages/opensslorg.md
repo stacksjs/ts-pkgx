@@ -57,8 +57,6 @@ sh <(curl https://pkgx.sh) +openssl.org@3.5.0 -- $SHELL -i
 This package depends on:
 
 - `curl.se/ca-certs`
-- `perl.org@5`
-- `pkgx.sh^1`
 
 ## Usage Examples
 

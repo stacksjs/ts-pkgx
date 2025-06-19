@@ -47,13 +47,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +sftpgo.com@2.6.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev=1.22.2`
-- `gnu.org/coreutils`
-
 ## Usage Examples
 
 ```typescript

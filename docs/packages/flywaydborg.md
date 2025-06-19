@@ -59,7 +59,6 @@ sh <(curl https://pkgx.sh) +flywaydb.org@11.8.2 -- $SHELL -i
 This package depends on:
 
 - `openjdk.org^21`
-- `curl.se`
 
 ## Usage Examples
 

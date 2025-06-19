@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +docbook.org@5.1.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-- `info-zip.org/unzip`
-
 ## Usage Examples
 
 ```typescript

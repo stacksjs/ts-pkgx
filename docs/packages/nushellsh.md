@@ -60,9 +60,6 @@ sh <(curl https://pkgx.sh) +nushell.sh@0.105.1 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1`
-- `rust-lang.org^1.60.0`
-- `rust-lang.org/cargo^0.87`
-- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

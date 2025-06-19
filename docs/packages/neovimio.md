@@ -53,11 +53,6 @@ sh <(curl https://pkgx.sh) +neovim.io@0.11.2 -- $SHELL -i
 This package depends on:
 
 - `gnu.org/gettext^0`
-- `cmake.org`
-- `freedesktop.org/pkg-config^0.29`
-- `gnu.org/libtool^2`
-- `git-scm.org^2`
-- `info-zip.org/unzip`
 
 ## Usage Examples
 

@@ -46,13 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +ordinals.com@0.6.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `rust-lang.org^1.67.0`
-- `rust-lang.org/cargo^0.65`
-
 ## Usage Examples
 
 ```typescript

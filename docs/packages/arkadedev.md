@@ -54,13 +54,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +arkade.dev@0.11.39 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.21`
-- `git-scm.org^2`
-
 ## Usage Examples
 
 ```typescript

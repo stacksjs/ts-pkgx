@@ -51,13 +51,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +dprint.dev@0.50.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `rust-lang.org~1.81`
-- `rust-lang.org/cargo<0.83`
-
 ## Usage Examples
 
 ```typescript

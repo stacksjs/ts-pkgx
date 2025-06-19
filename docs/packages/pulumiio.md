@@ -90,9 +90,6 @@ sh <(curl https://pkgx.sh) +pulumi.io@3.177.0 -- $SHELL -i
 This package depends on:
 
 - `curl.se/ca-certs`
-- `go.dev^1.20`
-- `classic.yarnpkg.com`
-- `nodejs.org`
 
 ## Usage Examples
 

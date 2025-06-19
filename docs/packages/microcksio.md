@@ -52,7 +52,6 @@ sh <(curl https://pkgx.sh) +microcks.io@0.9.0 -- $SHELL -i
 This package depends on:
 
 - `curl.se/ca-certs`
-- `go.dev=1.23.0`
 
 ## Usage Examples
 

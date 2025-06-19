@@ -55,9 +55,6 @@ This package depends on:
 - `x.org/xcb`
 - `freedesktop.org/XKeyboardConfig`
 - `gnome.org/libxml2`
-- `gnu.org/bison`
-- `mesonbuild.com`
-- `ninja-build.org`
 
 ## Usage Examples
 

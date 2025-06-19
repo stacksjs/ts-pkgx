@@ -49,8 +49,6 @@ sh <(curl https://pkgx.sh) +getfoundry.sh@2024.4.12 -- $SHELL -i
 This package depends on:
 
 - `git-scm.org^2`
-- `rust-lang.org^1.74 # edition: 2021`
-- `rust-lang.org/cargo`
 
 ## Usage Examples
 

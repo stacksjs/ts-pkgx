@@ -54,7 +54,6 @@ This package depends on:
 
 - `pkgx.sh^1`
 - `sqlite.org^3.45`
-- `python.org~3.12`
 
 ## Usage Examples
 

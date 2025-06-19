@@ -57,13 +57,6 @@ This package depends on:
 - `gnu.org/gmp`
 - `gnu.org/mpfr`
 - `openssl.org`
-- `cmake.org`
-- `qt.io~5`
-- `gnu.org/gcc`
-- `cmake.org`
-- `qt.io~5`
-- `gnu.org/gcc`
-- `gnu.org/make`
 
 ## Usage Examples
 

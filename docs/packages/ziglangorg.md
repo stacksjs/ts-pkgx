@@ -47,14 +47,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +ziglang.org@0.14.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-- `gnu.org/tar`
-- `tukaani.org/xz`
-
 ## Usage Examples
 
 ```typescript

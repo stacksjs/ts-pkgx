@@ -46,12 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +mergiraf.org@0.10.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `rust-lang.org/cargo`
-
 ## Usage Examples
 
 ```typescript

@@ -77,10 +77,8 @@ This package depends on:
 - `gnu.org/gmp@6`
 - `invisible-island.net/ncurses@6`
 - `sourceware.org/libffi@3`
-- `github.com/numactl/numactl^2`
-- `gnu.org/gcc`
-- `curl.se`
-- `gnu.org/make`
+- `linux:github.com/numactl/numactl^2`
+- `linux:gnu.org/gcc`
 
 ## Usage Examples
 

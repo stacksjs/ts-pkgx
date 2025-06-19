@@ -70,16 +70,8 @@ This package depends on:
 - `openssl.org^1.1`
 - `github.com/google/re2`
 - `zlib.net`
-- `gnu.org/gcc/libstdcxx`
-- `protobuf.dev^30.0.0 # as of 1.72.0`
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `gnu.org/libtool`
-- `gnu.org/patch`
-- `cmake.org^3`
-- `freedesktop.org/pkg-config^0`
-- `git-scm.org^2`
-- `freedesktop.org/pkg-config^0`
+- `linux:gnu.org/gcc/libstdcxx`
+- `linux:protobuf.dev^30.0.0 # as of 1.72.0`
 
 ## Usage Examples
 

@@ -49,14 +49,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +duckdb.org@1.3.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org^3`
-- `git-scm.org`
-- `python.org^3`
-
 ## Usage Examples
 
 ```typescript

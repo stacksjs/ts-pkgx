@@ -63,8 +63,7 @@ This package depends on:
 - `tukaani.org/xz`
 - `zlib.net`
 - `facebook.com/zstd`
-- `kernel.org/linux-headers`
-- `gnu.org/m4`
+- `linux:kernel.org/linux-headers`
 
 ## Usage Examples
 

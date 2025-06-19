@@ -52,17 +52,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +openmpllvm.org@20.1.7 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `llvm.org`
-- `gnu.org/wget`
-- `python.org~3.11`
-- `perl.org`
-- `llvm.org`
-
 ## Usage Examples
 
 ```typescript

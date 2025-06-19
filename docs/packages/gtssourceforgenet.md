@@ -53,11 +53,6 @@ sh <(curl https://pkgx.sh) +gtssourceforge.net@0.7.6 -- $SHELL -i
 This package depends on:
 
 - `gnome.org/glib>=2.4.0`
-- `gnu.org/automake`
-- `gnu.org/autoconf`
-- `gnu.org/libtool`
-- `freedesktop.org/pkg-config`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

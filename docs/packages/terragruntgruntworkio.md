@@ -121,7 +121,6 @@ sh <(curl https://pkgx.sh) +terragruntgruntwork.io@0.81.7 -- $SHELL -i
 This package depends on:
 
 - `terraform.io`
-- `go.dev^1.18`
 
 ## Usage Examples
 

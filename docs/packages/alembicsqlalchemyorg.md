@@ -52,7 +52,6 @@ sh <(curl https://pkgx.sh) +alembicsqlalchemy.org@1.16.2 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org~3.11`
 
 ## Usage Examples
 

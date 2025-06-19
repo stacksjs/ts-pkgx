@@ -50,10 +50,7 @@ sh <(curl https://pkgx.sh) +jless.io@0.9.0 -- $SHELL -i
 
 This package depends on:
 
-- `x.org/xcb@1`
-- `rust-lang.org>=1.56`
-- `rust-lang.org/cargo`
-- `python.org@3`
+- `linux:x.org/xcb@1`
 
 ## Usage Examples
 

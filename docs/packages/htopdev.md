@@ -51,8 +51,6 @@ sh <(curl https://pkgx.sh) +htop.dev@3.4.1 -- $SHELL -i
 This package depends on:
 
 - `invisible-island.net/ncurses@6`
-- `gnu.org/autoconf`
-- `gnu.org/automake`
 
 ## Usage Examples
 

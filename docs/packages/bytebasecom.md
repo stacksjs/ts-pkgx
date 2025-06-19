@@ -57,14 +57,6 @@ sh <(curl https://pkgx.sh) +bytebase.com@3.7.0 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org>=23.11`
-- `go.dev~1.24.2`
-- `pnpm.io`
-- `git-scm.org^2 # since 3.5.1`
-- `kerberos.org^1 # added in 2.16.0`
-- `gnu.org/gcc`
-- `python.org~3.10`
-- `curl.se`
-- `pkgx.sh^1`
 
 ## Related Packages
 

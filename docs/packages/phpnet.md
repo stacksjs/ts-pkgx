@@ -99,11 +99,8 @@ This package depends on:
 - `gnu.org/sed^4 # phpize requires this`
 - `openldap.org^2 # since 8.1.31, 8.2.26, 8.3.14, 8.4.0`
 - `gnu.org/gcc/libstdcxx@14`
-- `sourceware.org/bzip2^1`
-- `zlib.net^1`
-- `freetype.org`
-- `tukaani.org/xz`
-- `gnu.org/libtool`
+- `darwin:sourceware.org/bzip2^1`
+- `darwin:zlib.net^1`
 
 ## Usage Examples
 

@@ -53,7 +53,6 @@ This package depends on:
 
 - `ruby-lang.org^3.1`
 - `rubygems.org`
-- `rubygems.org`
 
 ## Usage Examples
 

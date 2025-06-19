@@ -52,7 +52,7 @@ sh <(curl https://pkgx.sh) +scons.org@4.9.1 -- $SHELL -i
 This package depends on:
 
 - `python.org~3.11`
-- `gnu.org/gcc>=10`
+- `linux:gnu.org/gcc>=10`
 
 ## Usage Examples
 

@@ -61,14 +61,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +chezmoi.io@2.62.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.18`
-- `gnu.org/gcc`
-- `gnu.org/binutils`
-
 ## Usage Examples
 
 ```typescript

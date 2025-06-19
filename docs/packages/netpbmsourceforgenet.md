@@ -365,10 +365,6 @@ This package depends on:
 - `simplesystems.org/libtiff`
 - `gnome.org/libxml2`
 - `zlib.net`
-- `gnu.org/make`
-- `github.com/westes/flex`
-- `perl.org`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

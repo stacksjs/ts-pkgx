@@ -56,7 +56,6 @@ sh <(curl https://pkgx.sh) +mitmproxy.org@12.1.1 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org~3.12`
 
 ## Usage Examples
 

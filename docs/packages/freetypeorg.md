@@ -47,9 +47,6 @@ This package depends on:
 - `libpng.org@1`
 - `zlib.net@1`
 - `sourceware.org/bzip2@1`
-- `freedesktop.org/pkg-config^0.29`
-- `cmake.org`
-- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

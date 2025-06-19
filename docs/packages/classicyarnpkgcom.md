@@ -52,8 +52,6 @@ sh <(curl https://pkgx.sh) +classicyarnpkg.com@1.22.22 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org>=5`
-- `npmjs.com`
-- `gnu.org/patch`
 
 ## Usage Examples
 

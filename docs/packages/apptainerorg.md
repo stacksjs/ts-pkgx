@@ -49,8 +49,6 @@ This package depends on:
 
 - `github.com/seccomp/libseccomp@2`
 - `curl.se/ca-certs`
-- `go.dev~1.21`
-- `gnu.org/gcc`
 
 ## Related Packages
 

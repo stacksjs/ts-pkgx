@@ -50,9 +50,7 @@ sh <(curl https://pkgx.sh) +volta.sh@2.0.2 -- $SHELL -i
 
 This package depends on:
 
-- `curl.se/ca-certs`
-- `rust-lang.org^1.75`
-- `rust-lang.org/cargo`
+- `linux:curl.se/ca-certs`
 
 ## Usage Examples
 

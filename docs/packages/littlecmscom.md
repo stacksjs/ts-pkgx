@@ -50,7 +50,6 @@ This package depends on:
 
 - `simplesystems.org/libtiff^4`
 - `libjpeg-turbo.org^2`
-- `gnu.org/wget`
 
 ## Usage Examples
 

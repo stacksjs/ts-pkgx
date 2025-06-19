@@ -52,8 +52,6 @@ sh <(curl https://pkgx.sh) +quickwit.io@0.8.2 -- $SHELL -i
 This package depends on:
 
 - `protobuf.dev^25`
-- `rust-lang.org^1.79`
-- `rust-lang.org/cargo`
 
 ## Usage Examples
 

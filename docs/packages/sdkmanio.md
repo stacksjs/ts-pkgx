@@ -46,12 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +sdkman.io@5.19.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

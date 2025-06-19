@@ -59,7 +59,6 @@ sh <(curl https://pkgx.sh) +snyk.io@1.1297.2 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^20`
-- `npmjs.com^10`
 
 ## Usage Examples
 

@@ -53,7 +53,6 @@ sh <(curl https://pkgx.sh) +prettier.io@3.5.3 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^20`
-- `npmjs.com^10`
 
 ## Usage Examples
 

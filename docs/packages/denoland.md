@@ -72,21 +72,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +deno.land@2.3.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `llvm.org`
-- `rust-lang.org/rustup`
-- `git-scm.org^2 # to build tinycc`
-- `curl.se`
-- `cmake.org^3 # deno.land>=1.36.1 requires cmake`
-- `protobuf.dev`
-- `github.com/mikefarah/yq^4`
-- `crates.io/semverator^0`
-- `sourceware.org/libffi>=3.2.1`
-- `gnu.org/coreutils`
-
 ## Related Packages
 
 These packages work well with deno.land:

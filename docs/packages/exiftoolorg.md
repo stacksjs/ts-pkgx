@@ -52,7 +52,6 @@ sh <(curl https://pkgx.sh) +exiftool.org@13.30.0 -- $SHELL -i
 This package depends on:
 
 - `perl.org`
-- `perl.org`
 
 ## Usage Examples
 

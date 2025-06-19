@@ -51,8 +51,6 @@ sh <(curl https://pkgx.sh) +shellcheck.net@0.10.0 -- $SHELL -i
 This package depends on:
 
 - `sourceware.org/libffi@3`
-- `haskell.org^9`
-- `haskell.org/cabal^3`
 
 ## Usage Examples
 

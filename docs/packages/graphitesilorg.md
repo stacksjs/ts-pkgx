@@ -46,14 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +graphitesil.org@1.3.14 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org^3`
-- `freetype.org`
-- `gnu.org/wget`
-
 ## Usage Examples
 
 ```typescript

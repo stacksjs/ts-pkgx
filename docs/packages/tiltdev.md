@@ -50,15 +50,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +tilt.dev@0.35.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev~1.21 # per go.mod`
-- `nodejs.org^20`
-- `classic.yarnpkg.com`
-- `gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

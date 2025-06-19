@@ -51,11 +51,8 @@ sh <(curl https://pkgx.sh) +mujs.com@1.3.6 -- $SHELL -i
 
 This package depends on:
 
-- `gnu.org/readline~8.1`
-- `invisible-island.net/ncurses`
-- `gnu.org/gcc`
-- `gnu.org/make`
-- `freedesktop.org/pkg-config`
+- `linux:gnu.org/readline~8.1`
+- `linux:invisible-island.net/ncurses`
 
 ## Usage Examples
 

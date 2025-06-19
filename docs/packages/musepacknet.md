@@ -52,8 +52,6 @@ This package depends on:
 
 - `musepack.net/libreplaygain`
 - `musepack.net/libcuefile`
-- `cmake.org`
-- `curl.se`
 
 ## Usage Examples
 

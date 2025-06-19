@@ -54,10 +54,6 @@ This package depends on:
 
 - `lua.org`
 - `info-zip.org/unzip`
-- `gnu.org/make^4`
-- `gnu.org/sed^4`
-- `gnu.org/gcc`
-- `curl.se`
 
 ## Usage Examples
 

@@ -78,12 +78,8 @@ sh <(curl https://pkgx.sh) +werf.io@2.37.1 -- $SHELL -i
 
 This package depends on:
 
-- `github.com/kdave/btrfs-progs^6.7`
-- `sourceware.org/dm^2.3`
-- `go.dev^1.21`
-- `gnu.org/gcc`
-- `gnu.org/binutils`
-- `git-scm.org`
+- `linux:github.com/kdave/btrfs-progs^6.7`
+- `linux:sourceware.org/dm^2.3`
 
 ## Usage Examples
 

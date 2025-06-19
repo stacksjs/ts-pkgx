@@ -95,8 +95,6 @@ sh <(curl https://pkgx.sh) +openshift.com@4.19.0 -- $SHELL -i
 This package depends on:
 
 - `kerberos.org^1.21`
-- `go.dev^1.21`
-- `gnu.org/gcc`
 
 ## Usage Examples
 

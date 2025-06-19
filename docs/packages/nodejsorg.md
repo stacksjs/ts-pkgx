@@ -80,9 +80,7 @@ This package depends on:
 - `unicode.org^71`
 - `openssl.org@1.1`
 - `zlib.net@1`
-- `gnu.org/gcc/libstdcxx`
-- `python.org~3.9`
-- `gnu.org/gcc`
+- `linux:gnu.org/gcc/libstdcxx`
 
 ## Related Packages
 

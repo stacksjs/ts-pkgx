@@ -60,8 +60,6 @@ sh <(curl https://pkgx.sh) +pippypa.io@25.1.1 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org~3.11`
-- `crates.io/semverator^0.4.3`
 
 ## Usage Examples
 

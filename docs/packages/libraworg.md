@@ -58,16 +58,7 @@ This package depends on:
 - `libjpeg-turbo.org`
 - `littlecms.com`
 - `zlib.net`
-- `openmp.llvm.org`
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `gnu.org/libtool`
-- `freedesktop.org/pkg-config`
-- `llvm.org`
-- `gnu.org/gcc`
-- `gnu.org/gcc`
-- `gnu.org/wget`
-- `freedesktop.org/pkg-config`
+- `darwin:openmp.llvm.org`
 
 ## Usage Examples
 

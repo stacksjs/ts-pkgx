@@ -62,13 +62,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +pocketbase.io@0.28.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev>=1.16`
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

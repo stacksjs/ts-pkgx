@@ -59,10 +59,6 @@ sh <(curl https://pkgx.sh) +surrealdb.com@2023.9.1 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1`
-- `rust-lang.org>=1.60`
-- `rust-lang.org/cargo`
-- `freedesktop.org/pkg-config^0.29`
-- `gnu.org/patch`
 
 ## Usage Examples
 

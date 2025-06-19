@@ -43,13 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +abseil.io@20250512.1.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org^3`
-- `freedesktop.org/pkg-config^0`
-
 ## Usage Examples
 
 ```typescript

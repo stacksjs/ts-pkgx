@@ -53,8 +53,6 @@ sh <(curl https://pkgx.sh) +libgit2.org@1.9.1 -- $SHELL -i
 This package depends on:
 
 - `libssh2.org^1`
-- `cmake.org^3`
-- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

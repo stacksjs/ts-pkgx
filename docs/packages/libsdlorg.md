@@ -50,18 +50,14 @@ sh <(curl https://pkgx.sh) +libsdl.org@3.2.16 -- $SHELL -i
 
 This package depends on:
 
-- `x.org/x11`
-- `x.org/xcursor`
-- `x.org/xi`
-- `x.org/xrandr`
-- `x.org/xfixes`
-- `x.org/xrender`
-- `x.org/xscrnsaver`
-- `x.org/exts`
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `gnu.org/libtool@2`
-- `cmake.org^3`
+- `linux:x.org/x11`
+- `linux:x.org/xcursor`
+- `linux:x.org/xi`
+- `linux:x.org/xrandr`
+- `linux:x.org/xfixes`
+- `linux:x.org/xrender`
+- `linux:x.org/xscrnsaver`
+- `linux:x.org/exts`
 
 ## Usage Examples
 

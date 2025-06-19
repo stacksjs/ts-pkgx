@@ -94,10 +94,6 @@ This package depends on:
 - `gnu.org/readline@8`
 - `invisible-island.net/ncurses@6`
 - `tcl-lang.org@8`
-- `freedesktop.org/pkg-config^0.29`
-- `gnu.org/patch`
-- `curl.se`
-- `crates.io/semverator`
 
 ## Related Packages
 

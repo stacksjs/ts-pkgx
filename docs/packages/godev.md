@@ -65,9 +65,6 @@ sh <(curl https://pkgx.sh) +go.dev@1.24.4 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1  # for ca-certificates`
-- `gnu.org/m4@1`
-- `go.dev`
-- `curl.se`
 
 ## Usage Examples
 

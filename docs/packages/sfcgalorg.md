@@ -55,9 +55,6 @@ This package depends on:
 - `cgal.org`
 - `gnu.org/gmp`
 - `gnu.org/mpfr`
-- `cmake.org`
-- `gnu.org/gcc`
-- `gnu.org/make`
 
 ## Usage Examples
 

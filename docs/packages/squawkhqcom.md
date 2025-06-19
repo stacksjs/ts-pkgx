@@ -53,15 +53,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +squawkhq.com@2.14.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `rust-lang.org>=1.65`
-- `rust-lang.org/cargo`
-- `openssl.org`
-- `perl.org`
-
 ## Usage Examples
 
 ```typescript

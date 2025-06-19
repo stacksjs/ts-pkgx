@@ -55,9 +55,6 @@ sh <(curl https://pkgx.sh) +bitwarden.com@2025.4.0 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^20`
-- `npmjs.com`
-- `github.com/fastfloat/fast_float^8 # needed to work with Xcode >=16.2`
-- `python.org^3 # needed to build some native modules`
 
 ## Usage Examples
 

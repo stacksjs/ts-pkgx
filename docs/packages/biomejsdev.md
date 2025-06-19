@@ -51,13 +51,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +biomejs.dev@1.9.4 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `rust-lang.org>=1.65`
-- `rust-lang.org/cargo`
-
 ## Usage Examples
 
 ```typescript

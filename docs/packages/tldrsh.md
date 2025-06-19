@@ -50,8 +50,7 @@ sh <(curl https://pkgx.sh) +tldr.sh@1.6.1 -- $SHELL -i
 
 This package depends on:
 
-- `sourceware.org/bzip2^1`
-- `libzip.org^1.9.2`
+- `linux:sourceware.org/bzip2^1`
 - `curl.se`
 
 ## Usage Examples

@@ -64,12 +64,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +dagger.io@0.18.10 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.18`
-
 ## Usage Examples
 
 ```typescript

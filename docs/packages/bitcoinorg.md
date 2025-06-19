@@ -62,14 +62,7 @@ This package depends on:
 - `libevent.org^2`
 - `zeromq.org^4`
 - `sqlite.org^3`
-- `gnu.org/gcc/libstdcxx`
-- `gnu.org/autoconf^2`
-- `gnu.org/automake^1`
-- `freedesktop.org/pkg-config^0.29`
-- `gnu.org/libtool^2`
-- `cmake.org^3.22`
-- `ninja-build.org`
-- `gnu.org/gcc`
+- `linux:gnu.org/gcc/libstdcxx`
 
 ## Usage Examples
 

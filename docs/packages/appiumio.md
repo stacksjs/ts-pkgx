@@ -60,7 +60,6 @@ This package depends on:
 - `npmjs.com`
 - `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`
 - `openjdk.org`
-- `python.org^3 # node-gyp needs python to build`
 
 ## Usage Examples
 

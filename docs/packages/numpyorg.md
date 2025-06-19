@@ -55,9 +55,6 @@ This package depends on:
 
 - `openblas.net^0.3`
 - `python.org^3.11`
-- `cython.org/libcython`
-- `llvm.org`
-- `llvm.org`
 
 ## Related Packages
 

@@ -54,9 +54,6 @@ This package depends on:
 
 - `gnome.org/libxml2`
 - `curl.se`
-- `rust-lang.org>=1.65`
-- `rust-lang.org/cargo`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

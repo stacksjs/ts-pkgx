@@ -59,12 +59,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +planetscale.com@0.245.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev~1.22.4`
-
 ## Usage Examples
 
 ```typescript

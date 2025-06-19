@@ -59,8 +59,6 @@ sh <(curl https://pkgx.sh) +sentry.io@2.46.0 -- $SHELL -i
 This package depends on:
 
 - `libgit2.org~1.7 # links to libgit2.so.1.7`
-- `rust-lang.org>=1.80`
-- `rust-lang.org/cargo<0.83`
 
 ## Usage Examples
 

@@ -46,13 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +rioterm.com@0.2.19 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `rust-lang.org>=1.85`
-- `rust-lang.org/cargo`
-
 ## Usage Examples
 
 ```typescript

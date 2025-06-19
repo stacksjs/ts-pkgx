@@ -57,9 +57,9 @@ This package depends on:
 - `git-scm.org`
 - `tukaani.org/xz`
 - `gnu.org/which`
-- `curl.se`
-- `info-zip.org/zip`
-- `info-zip.org/unzip`
+- `linux:curl.se`
+- `linux:info-zip.org/zip`
+- `linux:info-zip.org/unzip`
 
 ## Usage Examples
 

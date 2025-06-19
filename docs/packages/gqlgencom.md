@@ -53,12 +53,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +gqlgen.com@0.17.75 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.18`
-
 ## Usage Examples
 
 ```typescript

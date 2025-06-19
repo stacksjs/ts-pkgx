@@ -49,8 +49,6 @@ sh <(curl https://pkgx.sh) +jenkins.io@2.504.2 -- $SHELL -i
 This package depends on:
 
 - `openjdk.org<20`
-- `curl.se`
-- `pkgx.sh^1`
 
 ## Usage Examples
 

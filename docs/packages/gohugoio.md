@@ -70,12 +70,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +gohugo.io@0.147.8 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev~1.22.6`
-
 ## Usage Examples
 
 ```typescript

@@ -54,12 +54,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +goreleaser.com@2.10.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.21`
-
 ## Usage Examples
 
 ```typescript

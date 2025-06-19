@@ -60,7 +60,6 @@ sh <(curl https://pkgx.sh) +redis.io@8.0.2 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1`
-- `freedesktop.org/pkg-config>=0.29`
 
 ## Usage Examples
 

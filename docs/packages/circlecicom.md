@@ -57,12 +57,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +circleci.com@0.1.32367 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

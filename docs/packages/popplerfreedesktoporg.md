@@ -76,10 +76,7 @@ This package depends on:
 - `gnupg.org/libgpg-error@1`
 - `gnupg.org/libassuan@2`
 - `littlecms.com^2.9`
-- `gnu.org/gcc/libstdcxx^14 # apparently, clang c++20 std isn`
-- `cmake.org>=3.16.0`
-- `gnome.org/gobject-introspection>=1.64.0`
-- `gnu.org/gcc@14`
+- `linux:gnu.org/gcc/libstdcxx^14 # apparently, clang c++20 std isn`
 
 ## Usage Examples
 

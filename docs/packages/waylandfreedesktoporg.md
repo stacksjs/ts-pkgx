@@ -55,13 +55,6 @@ This package depends on:
 - `libexpat.github.io`
 - `sourceware.org/libffi`
 - `gnome.org/libxml2`
-- `mesonbuild.com`
-- `ninja-build.org`
-- `gnu.org/make`
-- `cmake.org`
-- `freedesktop.org/pkg-config`
-- `curl.se`
-- `tukaani.org/xz`
 
 ## Usage Examples
 

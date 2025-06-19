@@ -54,7 +54,6 @@ sh <(curl https://pkgx.sh) +ntp.org@4.2.8.17 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^3`
-- `perl.org^5`
 
 ## Usage Examples
 

@@ -54,7 +54,6 @@ This package depends on:
 
 - `libpng.org^1`
 - `simplesystems.org/libtiff^4`
-- `cmake.org^3`
 
 ## Usage Examples
 

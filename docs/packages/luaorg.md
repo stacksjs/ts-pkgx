@@ -52,7 +52,6 @@ sh <(curl https://pkgx.sh) +lua.org@5.4.8 -- $SHELL -i
 This package depends on:
 
 - `gnu.org/readline`
-- `freedesktop.org/pkg-config`
 
 ## Related Packages
 

@@ -50,15 +50,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +wasmer.io@6.0.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `rust-lang.org^1.65`
-- `rust-lang.org/cargo^0`
-- `nodejs.org^18`
-- `gnu.org/make^4`
-
 ## Usage Examples
 
 ```typescript

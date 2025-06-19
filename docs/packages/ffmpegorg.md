@@ -59,9 +59,6 @@ This package depends on:
 - `webmproject.org/libvpx^1`
 - `opus-codec.org^1`
 - `google.com/webp^1`
-- `nasm.us@2`
-- `gnu.org/wget`
-- `info-zip.org/unzip`
 
 ## Usage Examples
 

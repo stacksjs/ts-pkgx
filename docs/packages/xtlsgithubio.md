@@ -53,14 +53,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +xtlsgithub.io@25.6.8 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.21.4`
-- `curl.se`
-- `gitlab.com/procps-ng/procps`
-
 ## Usage Examples
 
 ```typescript

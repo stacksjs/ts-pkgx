@@ -59,15 +59,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +mailpitaxllent.org@1.26.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.20`
-- `nodejs.org^18`
-- `npmjs.com`
-- `gnu.org/grep`
-
 ## Usage Examples
 
 ```typescript

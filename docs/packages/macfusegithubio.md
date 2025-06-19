@@ -40,15 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +macfusegithub.io@4.10.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `mesonbuild.com`
-- `ninja-build.org`
-- `git-scm.org^2`
-- `llvm.org`
-
 ## Usage Examples
 
 ```typescript

@@ -110,9 +110,6 @@ This package depends on:
 
 - `openssl.org^1.1 # newer mise after 1.35.2 versions require openssl`
 - `libgit2.org^1 # newer mise after 2024.5.12 versions require libgit2`
-- `rust-lang.org^1.78 # stdsimd changes`
-- `rust-lang.org/cargo`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

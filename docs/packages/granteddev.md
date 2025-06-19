@@ -53,12 +53,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +granted.dev@0.38.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.19`
-
 ## Usage Examples
 
 ```typescript

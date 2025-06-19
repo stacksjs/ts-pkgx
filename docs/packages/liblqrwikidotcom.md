@@ -45,8 +45,6 @@ sh <(curl https://pkgx.sh) +liblqrwikidot.com@0.4.3 -- $SHELL -i
 This package depends on:
 
 - `gnome.org/glib`
-- `freedesktop.org/pkg-config`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

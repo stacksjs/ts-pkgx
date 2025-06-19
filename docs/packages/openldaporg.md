@@ -62,8 +62,7 @@ sh <(curl https://pkgx.sh) +openldap.org@2.6.10 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
-- `github.com/util-linux/util-linux`
-- `gnu.org/sed`
+- `linux:github.com/util-linux/util-linux`
 
 ## Usage Examples
 

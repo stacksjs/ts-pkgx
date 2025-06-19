@@ -70,8 +70,6 @@ sh <(curl https://pkgx.sh) +vitejs.dev@6.3.5 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^16 || ^18 || ^20`
-- `darwinsys.com/file`
-- `strace.io`
 
 ## Usage Examples
 

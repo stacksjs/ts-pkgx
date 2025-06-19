@@ -52,8 +52,6 @@ This package depends on:
 
 - `gnu.org/libiconv^1`
 - `openssl.org^1.1`
-- `rust-lang.org>=1.56`
-- `rust-lang.org/cargo`
 
 ## Usage Examples
 

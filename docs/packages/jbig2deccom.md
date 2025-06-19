@@ -46,14 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +jbig2dec.com@0.19.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/automake`
-- `gnu.org/libtool`
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

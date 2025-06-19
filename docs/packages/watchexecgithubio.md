@@ -47,14 +47,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +watchexecgithub.io@2.3.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `rust-lang.org>=1.56`
-- `rust-lang.org/cargo`
-- `gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

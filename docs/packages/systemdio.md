@@ -116,22 +116,6 @@ This package depends on:
 - `gnutls.org`
 - `sourceware.org/bzip2`
 - `pcre.org/v2`
-- `gnu.org/coreutils`
-- `docbook.org`
-- `gnu.org/gettext`
-- `gnu.org/gperf`
-- `github.com/mattrobenolt/jinja2-cli`
-- `gnupg.org/libgpg-error`
-- `gnu.org/libtool`
-- `gnome.org/libxslt`
-- `gnome.org/libxml2~2.13 # since 257.5, 2.14 changed the API version`
-- `gnu.org/m4`
-- `mesonbuild.com`
-- `ninja-build.org`
-- `freedesktop.org/pkg-config`
-- `python.org>=3<3.12`
-- `rsync.samba.org`
-- `kernel.org/linux-headers>=5.2`
 
 ## Usage Examples
 

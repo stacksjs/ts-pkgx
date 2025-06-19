@@ -48,12 +48,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +logdy.dev@0.17.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.21.4`
-
 ## Usage Examples
 
 ```typescript

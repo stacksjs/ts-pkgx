@@ -49,12 +49,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +dblabdanvergara.com@0.33.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.21`
-
 ## Usage Examples
 
 ```typescript

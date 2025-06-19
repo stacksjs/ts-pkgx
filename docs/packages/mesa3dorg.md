@@ -62,37 +62,22 @@ This package depends on:
 - `invisible-island.net/ncurses`
 - `zlib.net`
 - `x.org/xrandr`
-- `gnu.org/gettext`
-- `gnome.org/libxml2~2.13 # since 25.0.3, 2.14 changed the API version`
-- `elfutils.org`
-- `khronos.org/glslang`
-- `info-zip.org/zip`
-- `dri.freedesktop.org^2.4.110`
-- `intel.com/libva`
-- `freedesktop.org/vdpau`
-- `x.org/xfixes`
-- `x.org/xshmfence`
-- `x.org/xv`
-- `x.org/xxf86vm`
-- `llvm.org`
-- `github.com/lm-sensors/lm-sensors`
-- `wayland.freedesktop.org`
-- `wayland.freedesktop.org/protocols`
-- `gnu.org/bison`
-- `mesonbuild.com`
-- `ninja-build.org`
-- `freedesktop.org/pkg-config`
-- `pygments.org`
-- `python.org~3.11`
-- `x.org/protocol`
-- `github.com/westes/flex`
-- `llvm.org`
-- `curl.se`
-- `cmake.org^3 # since 24.3`
-- `rust-lang.org`
-- `rust-lang.org/rust-bindgen`
-- `freedesktop.org/pkg-config`
-- `gnu.org/gcc/libstdcxx`
+- `darwin:gnu.org/gettext`
+- `linux:gnome.org/libxml2~2.13 # since 25.0.3, 2.14 changed the API version`
+- `linux:elfutils.org`
+- `linux:khronos.org/glslang`
+- `linux:info-zip.org/zip`
+- `linux:dri.freedesktop.org^2.4.110`
+- `linux:intel.com/libva`
+- `linux:freedesktop.org/vdpau`
+- `linux:x.org/xfixes`
+- `linux:x.org/xshmfence`
+- `linux:x.org/xv`
+- `linux:x.org/xxf86vm`
+- `linux:llvm.org`
+- `linux:github.com/lm-sensors/lm-sensors`
+- `linux:wayland.freedesktop.org`
+- `linux:wayland.freedesktop.org/protocols`
 
 ## Usage Examples
 

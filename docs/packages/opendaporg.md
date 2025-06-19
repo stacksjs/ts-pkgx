@@ -50,15 +50,8 @@ This package depends on:
 - `gnome.org/libxml2`
 - `openssl.org`
 - `curl.se`
-- `sourceforge.net/libtirpc`
-- `github.com/util-linux/util-linux`
-- `gnu.org/bison`
-- `freedesktop.org/pkg-config`
-- `github.com/westes/flex`
-- `gnu.org/patch`
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `gnu.org/libtool`
+- `linux:sourceforge.net/libtirpc`
+- `linux:github.com/util-linux/util-linux`
 
 ## Usage Examples
 

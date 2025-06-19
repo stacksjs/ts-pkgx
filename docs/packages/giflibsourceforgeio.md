@@ -51,13 +51,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +giflibsourceforge.io@5.2.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/patch`
-- `imagemagick.org`
-
 ## Usage Examples
 
 ```typescript

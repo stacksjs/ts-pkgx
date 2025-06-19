@@ -82,9 +82,6 @@ This package depends on:
 - `google.com/webp`
 - `libexpat.github.io`
 - `zlib.net`
-- `gnome.org/gobject-introspection`
-- `mesonbuild.com`
-- `ninja-build.org`
 
 ## Usage Examples
 

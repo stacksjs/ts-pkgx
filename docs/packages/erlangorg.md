@@ -68,10 +68,6 @@ This package depends on:
 
 - `openssl.org^1.1`
 - `invisible-island.net/ncurses`
-- `gnu.org/gcc/libstdcxx`
-- `perl.org>=5`
-- `gnu.org/gcc`
-- `pkgx.sh@1`
 
 ## Usage Examples
 

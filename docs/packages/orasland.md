@@ -46,14 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +oras.land@1.2.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.19`
-- `goreleaser.com`
-- `git-scm.org`
-
 ## Usage Examples
 
 ```typescript

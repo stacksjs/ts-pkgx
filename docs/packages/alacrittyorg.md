@@ -50,10 +50,8 @@ sh <(curl https://pkgx.sh) +alacritty.org@0.15.1 -- $SHELL -i
 
 This package depends on:
 
-- `freetype.org`
-- `freedesktop.org/fontconfig`
-- `rust-lang.org>=1.75`
-- `rust-lang.org/cargo`
+- `linux:freetype.org`
+- `linux:freedesktop.org/fontconfig`
 
 ## Usage Examples
 

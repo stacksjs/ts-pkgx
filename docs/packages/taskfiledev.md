@@ -52,12 +52,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +taskfile.dev@3.44.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev~1.23`
-
 ## Usage Examples
 
 ```typescript

@@ -52,12 +52,6 @@ sh <(curl https://pkgx.sh) +tinygo.org@0.38.0 -- $SHELL -i
 This package depends on:
 
 - `go.dev`
-- `go.dev^1.18`
-- `git-scm.org@2`
-- `cmake.org@3`
-- `ninja-build.org@1`
-- `nodejs.org`
-- `python.org>=3.6`
 
 ## Related Packages
 

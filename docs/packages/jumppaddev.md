@@ -49,13 +49,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +jumppad.dev@0.20.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev=1.21.5`
-- `gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

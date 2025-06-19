@@ -47,12 +47,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +wait4x.dev@3.3.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev~1.22`
-
 ## Related Packages
 
 These packages work well with wait4x.dev:

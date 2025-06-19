@@ -46,12 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +otssniptt.com@0.3.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.19`
-
 ## Usage Examples
 
 ```typescript

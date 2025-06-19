@@ -52,8 +52,6 @@ This package depends on:
 
 - `zlib.net^1`
 - `github.com/nemtrif/utfcpp^4`
-- `cmake.org`
-- `gnu.org/gcc`
 
 ## Usage Examples
 

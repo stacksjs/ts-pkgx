@@ -59,8 +59,6 @@ sh <(curl https://pkgx.sh) +yarnpkg.com@4.9.2 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org`
-- `classic.yarnpkg.com^1 # works and prevents bootstrapping issues`
-- `nodejs.org>=18.3<23`
 
 ## Usage Examples
 

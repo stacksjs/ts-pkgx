@@ -68,9 +68,6 @@ This package depends on:
 
 - `openssl.org^1.1`
 - `libgit2.org~1.7 # links to libgit2.so.1.7`
-- `rust-lang.org>=1.60`
-- `rust-lang.org/cargo`
-- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

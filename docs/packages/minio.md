@@ -46,12 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +min.io@2023.10.25.6.33.25 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

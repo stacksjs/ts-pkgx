@@ -57,14 +57,6 @@ This package depends on:
 
 - `openjdk.org^21 # since v3`
 - `openmp.llvm.org^17`
-- `cmake.org@3`
-- `git-scm.org`
-- `gnu.org/wget`
-- `gnu.org/gcc^12 # for gfortran`
-- `openblas.net`
-- `gnu.org/coreutils^9`
-- `stedolan.github.io/jq`
-- `curl.se`
 
 ## Usage Examples
 

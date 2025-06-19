@@ -72,7 +72,6 @@ sh <(curl https://pkgx.sh) +kerberos.org@1.21.3 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
-- `gnu.org/bison@3`
 
 ## Usage Examples
 

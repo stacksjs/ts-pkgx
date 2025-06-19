@@ -54,9 +54,6 @@ This package depends on:
 
 - `pkgx.sh^1`
 - `openssl.org^1.1`
-- `python.org=3.11.5`
-- `gnu.org/patch`
-- `curl.se`
 
 ## Usage Examples
 

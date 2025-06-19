@@ -48,12 +48,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +skaffold.dev@2.16.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

@@ -50,11 +50,9 @@ sh <(curl https://pkgx.sh) +chromedriverchromium.org@114.0.5735.90 -- $SHELL -i
 
 This package depends on:
 
-- `gnome.org/glib^2`
-- `mozilla.org/nss`
-- `x.org/xcb`
-- `gnu.org/wget`
-- `info-zip.org/unzip`
+- `linux:gnome.org/glib^2`
+- `linux:mozilla.org/nss`
+- `linux:x.org/xcb`
 
 ## Usage Examples
 

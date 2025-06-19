@@ -52,9 +52,6 @@ sh <(curl https://pkgx.sh) +onefetch.dev@2.24.0 -- $SHELL -i
 This package depends on:
 
 - `libgit2.org~1.7 # links to libgit2.so.1.7`
-- `cmake.org^3`
-- `rust-lang.org>=1.56`
-- `rust-lang.org/cargo`
 
 ## Usage Examples
 

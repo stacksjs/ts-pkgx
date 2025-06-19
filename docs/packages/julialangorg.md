@@ -49,13 +49,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +julialang.org@1.11.5 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-- `gnu.org/tar`
-
 ## Usage Examples
 
 ```typescript

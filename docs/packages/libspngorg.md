@@ -44,10 +44,7 @@ sh <(curl https://pkgx.sh) +libspng.org@0.5.0 -- $SHELL -i
 
 This package depends on:
 
-- `zlib.net`
-- `ninja-build.org@1`
-- `freedesktop.org/pkg-config`
-- `mesonbuild.com`
+- `darwin:zlib.net`
 
 ## Usage Examples
 

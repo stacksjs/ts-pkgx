@@ -47,13 +47,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +getsops.io@3.10.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.19`
-- `gnupg.org`
-
 ## Usage Examples
 
 ```typescript

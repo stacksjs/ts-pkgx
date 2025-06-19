@@ -49,13 +49,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +etcd.io@3.6.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.22`
-- `crates.io/killport`
-
 ## Usage Examples
 
 ```typescript

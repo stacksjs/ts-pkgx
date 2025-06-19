@@ -52,16 +52,9 @@ This package depends on:
 - `gnome.org/libxml2`
 - `sqlite.org`
 - `nghttp2.org`
-- `gnu.org/gettext`
-- `gnome.org/glib`
-- `github.com/google/brotli`
-- `gnome.org/gobject-introspection`
-- `mesonbuild.com`
-- `ninja-build.org`
-- `freedesktop.org/pkg-config`
-- `python.org~3.11`
-- `gnome.org/vala`
-- `freedesktop.org/pkg-config`
+- `linux:gnu.org/gettext`
+- `linux:gnome.org/glib`
+- `linux:github.com/google/brotli`
 
 ## Usage Examples
 

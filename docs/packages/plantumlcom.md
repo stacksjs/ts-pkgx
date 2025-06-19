@@ -55,7 +55,6 @@ This package depends on:
 
 - `graphviz.org`
 - `openjdk.org`
-- `gnu.org/wget`
 
 ## Usage Examples
 

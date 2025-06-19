@@ -49,12 +49,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +cuelang.org@0.13.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.18`
-
 ## Usage Examples
 
 ```typescript

@@ -52,14 +52,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +pkgx.sh@2.7.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `deno.land~2 # since 1.3.0`
-- `rust-lang.org^1.56 # since 2.0`
-- `perl.org^5 # since 2.0`
-
 ## Usage Examples
 
 ```typescript

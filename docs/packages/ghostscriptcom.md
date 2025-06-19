@@ -88,7 +88,6 @@ This package depends on:
 - `libexpat.github.io^2.5`
 - `openjpeg.org^2.5`
 - `freetype.org^2.13`
-- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

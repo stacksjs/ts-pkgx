@@ -66,11 +66,6 @@ sh <(curl https://pkgx.sh) +llvm.org@20.1.7 -- $SHELL -i
 This package depends on:
 
 - `zlib.net@1`
-- `cmake.org>=3<3.29`
-- `ninja-build.org@1`
-- `python.org>=3<3.12`
-- `crates.io/semverator`
-- `crates.io/semverator`
 
 ## Usage Examples
 

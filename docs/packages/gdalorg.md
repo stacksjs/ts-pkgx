@@ -116,14 +116,9 @@ This package depends on:
 - `zlib.net`
 - `dkrz.de/libaec`
 - `github.com/ebiggers/libdeflate`
-- `curl.se`
-- `github.com/util-linux/util-linux`
-- `apache.org/thrift=0.21.0 # since 3.10.0`
-- `boost.org`
-- `cmake.org`
-- `swig.org`
-- `doxygen.nl`
-- `llvm.org`
+- `linux:curl.se`
+- `linux:github.com/util-linux/util-linux`
+- `linux:apache.org/thrift=0.21.0 # since 3.10.0`
 
 ## Usage Examples
 

@@ -58,10 +58,6 @@ sh <(curl https://pkgx.sh) +projen.io@0.93.0 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^22 || ^20 || ^18`
-- `classic.yarnpkg.com^1`
-- `maven.apache.org>=3.0.0`
-- `python.org~3.11`
-- `go.dev>=1.21`
 
 ## Related Packages
 

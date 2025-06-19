@@ -54,9 +54,6 @@ sh <(curl https://pkgx.sh) +srtalliance.org@1.5.4 -- $SHELL -i
 This package depends on:
 
 - `openssl.org`
-- `cmake.org`
-- `freedesktop.org/pkg-config`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

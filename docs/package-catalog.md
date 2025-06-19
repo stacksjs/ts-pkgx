@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-18T23:27:01.877Z
+- **Last Updated**: 2025-06-19T02:20:03.783Z
 
 ## Table of Contents
 
@@ -45,7 +45,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[pythonorg](./packages/pythonorg.md)** (python, py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.13.5 (+150) | `pkgx python.org` |
 | **[swiftorg](./packages/swiftorg.md)** (swift) | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.1.2 (+9) | `pkgx swift.org` |
 | **[typescriptlangorg](./packages/typescriptlangorg.md)** (tsc) | TypeScript is a superset of JavaScript that compiles to clean JavaScript output. | tsc | 5.8.3 (+12) | `pkgx typescriptlang.org` |
-| **[vlangio](./packages/vlangio.md)** () | Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1... | v | 0.4.10 (+13) | `pkgx vlang.io` |
+| **[vlangio](./packages/vlangio.md)** () | Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1... | v | 0.4.11 (+14) | `pkgx vlang.io` |
 | **[ziglangorg](./packages/ziglangorg.md)** (zig) | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable ... | zig | 0.14.1 (+6) | `pkgx ziglang.org` |
 
 ## JavaScript & Node.js Ecosystem

@@ -53,11 +53,6 @@ sh <(curl https://pkgx.sh) +drifreedesktop.org@2.4.125 -- $SHELL -i
 This package depends on:
 
 - `x.org/pciaccess`
-- `mesonbuild.com`
-- `ninja-build.org`
-- `freedesktop.org/pkg-config`
-- `python.org~3.11`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

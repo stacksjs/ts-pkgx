@@ -53,12 +53,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +steampipe.io@2.0.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.21`
-
 ## Usage Examples
 
 ```typescript

@@ -55,14 +55,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +zrok.io@1.0.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev~1.23.0`
-- `nodejs.org^21`
-- `npmjs.com^10`
-
 ## Usage Examples
 
 ```typescript

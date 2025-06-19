@@ -59,12 +59,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +coder.com@2.23.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev~1.21`
-
 ## Usage Examples
 
 ```typescript

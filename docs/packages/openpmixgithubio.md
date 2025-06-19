@@ -56,7 +56,6 @@ This package depends on:
 - `open-mpi.org/hwloc^2.10`
 - `libevent.org^2.1`
 - `zlib.net^1.3`
-- `python.org^3.11`
 
 ## Usage Examples
 

@@ -56,12 +56,6 @@ This package depends on:
 
 - `gnu.org/gettext`
 - `invisible-island.net/ncurses>=6.0`
-- `cmake.org>=3.5`
-- `freedesktop.org/pkg-config`
-- `gnu.org/patch`
-- `git-scm.org^2 # needed for fish`
-- `rust-lang.org^1.56 # v4`
-- `rust-lang.org/cargo`
 
 ## Usage Examples
 

@@ -51,9 +51,6 @@ This package depends on:
 - `tukaani.org/xz`
 - `zlib.net^1`
 - `curl.se>=5`
-- `gnu.org/make`
-- `gnu.org/autoconf`
-- `gnu.org/automake^1`
 
 ## Usage Examples
 

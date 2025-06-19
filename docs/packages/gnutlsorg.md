@@ -61,8 +61,6 @@ This package depends on:
 - `gnu.org/gmp`
 - `unbound.net^1`
 - `curl.se/ca-certs`
-- `gnu.org/gcc`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

@@ -54,7 +54,6 @@ sh <(curl https://pkgx.sh) +fftw.org@3.3.10 -- $SHELL -i
 This package depends on:
 
 - `open-mpi.org`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

@@ -55,9 +55,8 @@ This package depends on:
 - `lz4.org^1.9`
 - `oberhumer.com/lzo^2.10`
 - `openssl.org^1.1`
-- `sourceforge.net/net-tools`
-- `github.com/thom311/libnl`
-- `freedesktop.org/pkg-config^0.29`
+- `linux:sourceforge.net/net-tools`
+- `linux:github.com/thom311/libnl`
 
 ## Usage Examples
 

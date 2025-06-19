@@ -54,9 +54,6 @@ This package depends on:
 - `gnu.org/gettext^0.22`
 - `perl.org^5.22`
 - `gnome.org/libxslt^1.1`
-- `cpanmin.us`
-- `docbook.org/xsl`
-- `curl.se`
 
 ## Related Packages
 

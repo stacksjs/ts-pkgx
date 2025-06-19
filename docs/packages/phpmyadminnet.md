@@ -51,7 +51,6 @@ sh <(curl https://pkgx.sh) +phpmyadmin.net@5.2.2 -- $SHELL -i
 This package depends on:
 
 - `php.net`
-- `php.net`
 
 ## Usage Examples
 

@@ -465,7 +465,6 @@ This package depends on:
 - `invisible-island.net/ncurses>=6.3`
 - `perl.org>=5.36`
 - `ruby-lang.org>=3.2`
-- `gnu.org/make^4.3`
 
 ## Usage Examples
 

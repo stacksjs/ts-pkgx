@@ -61,13 +61,8 @@ This package depends on:
 - `freedesktop.org/uchardet@0`
 - `vapoursynth.com@66`
 - `yt-dlp.org`
-- `alsa-project.org/alsa-lib@1`
-- `github.com/adah1972/libunibreak@6`
-- `mesonbuild.com@1`
-- `ninja-build.org@1`
-- `git-scm.org@2`
-- `invisible-island.net/ncurses@6`
-- `nixos.org/patchelf@0`
+- `linux:alsa-project.org/alsa-lib@1`
+- `linux:github.com/adah1972/libunibreak@6`
 
 ## Usage Examples
 

@@ -56,9 +56,6 @@ This package depends on:
 - `simplesystems.org/libtiff`
 - `google.com/webp`
 - `zlib.net`
-- `gnu.org/autoconf`
-- `gnu.org/libtool`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

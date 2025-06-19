@@ -51,7 +51,6 @@ sh <(curl https://pkgx.sh) +pyinvoke.org@2.2.0 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org^3.13.3`
 
 ## Usage Examples
 

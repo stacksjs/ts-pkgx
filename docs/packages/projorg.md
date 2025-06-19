@@ -55,12 +55,6 @@ This package depends on:
 - `simplesystems.org/libtiff`
 - `sqlite.org`
 - `curl.se`
-- `cmake.org`
-- `freedesktop.org/pkg-config`
-- `gnu.org/libtool`
-- `gnu.org/wget`
-- `gnu.org/coreutils`
-- `sqlite.org`
 
 ## Usage Examples
 

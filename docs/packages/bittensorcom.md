@@ -64,11 +64,6 @@ This package depends on:
 
 - `pkgx.sh^1`
 - `openssl.org^1.1`
-- `python.org~3.11`
-- `cmake.org@3`
-- `rust-lang.org>=1.56`
-- `rust-lang.org/cargo`
-- `python.org~3.11`
 
 ## Usage Examples
 

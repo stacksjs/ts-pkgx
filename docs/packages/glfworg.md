@@ -44,11 +44,10 @@ sh <(curl https://pkgx.sh) +glfw.org@3.4.0 -- $SHELL -i
 
 This package depends on:
 
-- `freeglut.sourceforge.io^3.4`
-- `x.org/xcursor^1.2`
-- `xkbcommon.org^1.0`
-- `mesa3d.org^23.3`
-- `cmake.org`
+- `linux:freeglut.sourceforge.io^3.4`
+- `linux:x.org/xcursor^1.2`
+- `linux:xkbcommon.org^1.0`
+- `linux:mesa3d.org^23.3`
 
 ## Usage Examples
 

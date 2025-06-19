@@ -57,17 +57,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +vaultproject.io@1.19.5 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev=1.24.3`
-- `nodejs.org^18`
-- `python.org~3.10`
-- `npmjs.com`
-- `classic.yarnpkg.com`
-- `git-scm.org`
-
 ## Usage Examples
 
 ```typescript

@@ -48,12 +48,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +dgraph.io@24.1.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev~1.22.12`
-
 ## Usage Examples
 
 ```typescript

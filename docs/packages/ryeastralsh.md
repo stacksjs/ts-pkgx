@@ -52,8 +52,6 @@ sh <(curl https://pkgx.sh) +ryeastral.sh@0.44.0 -- $SHELL -i
 This package depends on:
 
 - `curl.se/ca-certs`
-- `rust-lang.org>=1.56`
-- `rust-lang.org/cargo`
 
 ## Usage Examples
 

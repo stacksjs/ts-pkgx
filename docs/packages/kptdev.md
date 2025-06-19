@@ -51,7 +51,6 @@ sh <(curl https://pkgx.sh) +kpt.dev@0.39.3 -- $SHELL -i
 This package depends on:
 
 - `git-scm.org`
-- `go.dev^1.14`
 
 ## Usage Examples
 

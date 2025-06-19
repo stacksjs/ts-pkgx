@@ -61,12 +61,6 @@ This package depends on:
 - `x.org/exts`
 - `x.org/xrender`
 - `oberhumer.com/lzo`
-- `freedesktop.org/pkg-config^0.29`
-- `libexpat.github.io=2.4.9`
-- `gnome.org/gobject-introspection@1`
-- `gnu.org/libtool^2`
-- `mesonbuild.com^1`
-- `ninja-build.org^1`
 
 ## Usage Examples
 

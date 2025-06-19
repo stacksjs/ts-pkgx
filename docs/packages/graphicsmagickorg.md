@@ -62,7 +62,6 @@ This package depends on:
 - `sourceware.org/bzip2`
 - `gnome.org/libxml2`
 - `zlib.net`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

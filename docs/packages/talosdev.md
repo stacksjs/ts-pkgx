@@ -51,13 +51,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +talos.dev@1.10.4 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.21`
-- `gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

@@ -56,14 +56,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +k9scli.io@0.50.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.18`
-- `gnu.org/make`
-- `git-scm.org`
-
 ## Usage Examples
 
 ```typescript

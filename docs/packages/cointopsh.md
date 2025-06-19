@@ -51,7 +51,6 @@ sh <(curl https://pkgx.sh) +cointop.sh@1.6.10 -- $SHELL -i
 This package depends on:
 
 - `curl.se/ca-certs`
-- `go.dev^1.17`
 
 ## Usage Examples
 

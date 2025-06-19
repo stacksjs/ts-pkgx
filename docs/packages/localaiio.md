@@ -58,18 +58,7 @@ sh <(curl https://pkgx.sh) +localai.io@2.26.0 -- $SHELL -i
 
 This package depends on:
 
-- `openmp.llvm.org@18`
-- `go.dev^1.21`
-- `cmake.org^3`
-- `grpc.io=1.68.2`
-- `gnu.org/wget^1`
-- `gnu.org/coreutils^9`
-- `git-scm.org^2`
-- `google.com/protobuf-go^1`
-- `grpc.io/grpc-go^1`
-- `gnu.org/gcc^14 # linux needs omp.h`
-- `protobuf.dev~28.1.0`
-- `llvm.org^18 # apple doens`
+- `darwin:openmp.llvm.org@18`
 
 ## Related Packages
 

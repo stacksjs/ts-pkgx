@@ -54,17 +54,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +dart.dev@3.8.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `ninja-build.org`
-- `rust-lang.org`
-- `curl.se`
-- `python.org>=3<3.12`
-- `tukaani.org/xz`
-- `git-scm.org`
-
 ## Usage Examples
 
 ```typescript

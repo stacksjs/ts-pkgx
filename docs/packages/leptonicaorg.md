@@ -59,7 +59,6 @@ This package depends on:
 - `simplesystems.org/libtiff@4`
 - `openjpeg.org`
 - `google.com/webp`
-- `gnu.org/wget`
 
 ## Usage Examples
 

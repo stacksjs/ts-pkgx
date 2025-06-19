@@ -51,8 +51,6 @@ sh <(curl https://pkgx.sh) +upxgithub.io@5.0.1 -- $SHELL -i
 This package depends on:
 
 - `zlib.net`
-- `cmake.org`
-- `oberhumer.com/ucl`
 
 ## Usage Examples
 

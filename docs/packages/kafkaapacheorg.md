@@ -86,7 +86,6 @@ sh <(curl https://pkgx.sh) +kafkaapache.org@4.0.0 -- $SHELL -i
 This package depends on:
 
 - `openjdk.org`
-- `rsync.samba.org`
 
 ## Usage Examples
 

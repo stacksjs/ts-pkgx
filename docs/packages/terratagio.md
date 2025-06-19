@@ -55,7 +55,6 @@ This package depends on:
 
 - `terraform.io>=0.12`
 - `curl.se/ca-certs`
-- `go.dev^1.21`
 
 ## Usage Examples
 

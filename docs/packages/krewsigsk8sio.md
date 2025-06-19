@@ -51,9 +51,6 @@ sh <(curl https://pkgx.sh) +krewsigsk8s.io@0.4.5 -- $SHELL -i
 This package depends on:
 
 - `git-scm.org`
-- `go.dev^1.21`
-- `gnu.org/grep`
-- `kubernetes.io/kubectl`
 
 ## Usage Examples
 

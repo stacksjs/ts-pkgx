@@ -54,10 +54,6 @@ This package depends on:
 - `pyyaml.org/libyaml^0.2`
 - `pcre.org/v2^10`
 - `gnome.org/libxml2~2.13 # 2.14 changes the API`
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `docutils.org~0.20`
-- `python.org>=3.11`
 
 ## Usage Examples
 

@@ -54,12 +54,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +tailwindcss.com@4.1.10 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

@@ -72,7 +72,6 @@ sh <(curl https://pkgx.sh) +angular.dev@20.0.3 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^20`
-- `npmjs.com^10`
 
 ## Usage Examples
 

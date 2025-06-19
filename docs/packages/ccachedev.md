@@ -53,9 +53,6 @@ This package depends on:
 
 - `github.com/redis/hiredis`
 - `facebook.com/zstd`
-- `asciidoctor.org`
-- `cmake.org`
-- `llvm.org`
 
 ## Usage Examples
 

@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +cmocka.org@1.1.7 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `freedesktop.org/pkg-config`
-
 ## Usage Examples
 
 ```typescript

@@ -70,9 +70,6 @@ sh <(curl https://pkgx.sh) +radicle.org@0.6.1 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1.1`
-- `rust-lang.org/cargo^0`
-- `cmake.org^3`
-- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

@@ -48,12 +48,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +pinniped.dev@0.39.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

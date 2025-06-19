@@ -56,10 +56,6 @@ This package depends on:
 - `zlib.net~1.3`
 - `gnu.org/gcc/libstdcxx@14`
 - `gnome.org/libxml2~2.13 # 2.14 changes library api version`
-- `haskell.org~9.8`
-- `haskell.org/cabal^3`
-- `gnu.org/gcc`
-- `gnu.org/binutils`
 
 ## Usage Examples
 

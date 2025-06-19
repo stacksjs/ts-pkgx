@@ -51,7 +51,6 @@ sh <(curl https://pkgx.sh) +pluralith.com@0.2.2 -- $SHELL -i
 This package depends on:
 
 - `curl.se/ca-certs`
-- `go.dev^1.21`
 
 ## Usage Examples
 

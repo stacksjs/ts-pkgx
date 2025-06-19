@@ -56,9 +56,6 @@ sh <(curl https://pkgx.sh) +mesonbuild.com@1.8.2 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org~3.11`
-- `ninja-build.org^1`
-- `llvm.org<17`
 
 ## Usage Examples
 

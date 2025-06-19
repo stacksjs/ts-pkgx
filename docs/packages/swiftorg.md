@@ -76,14 +76,13 @@ sh <(curl https://pkgx.sh) +swift.org@6.1.2 -- $SHELL -i
 
 This package depends on:
 
-- `gnu.org/gcc`
-- `gnu.org/binutils`
-- `gnupg.org^2`
-- `gnome.org/libxml2`
-- `libgit2.org~1.7 # links to libgit2.so.1.7`
-- `curl.se`
-- `sqlite.org^3`
-- `curl.se`
+- `linux:gnu.org/gcc`
+- `linux:gnu.org/binutils`
+- `linux:gnupg.org^2`
+- `linux:gnome.org/libxml2`
+- `linux:libgit2.org~1.7 # links to libgit2.so.1.7`
+- `linux:curl.se`
+- `linux:sqlite.org^3`
 
 ## Usage Examples
 

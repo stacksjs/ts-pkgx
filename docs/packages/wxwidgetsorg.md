@@ -52,12 +52,9 @@ This package depends on:
 - `pcre.org/v2`
 - `libexpat.github.io`
 - `zlib.net`
-- `x.org/sm`
-- `freedesktop.org/mesa-glu`
-- `gtk.org/gtk3`
-- `freedesktop.org/pkg-config`
-- `llvm.org<17 # still gets unassigned label errors`
-- `gnu.org/make`
+- `linux:x.org/sm`
+- `linux:freedesktop.org/mesa-glu`
+- `linux:gtk.org/gtk3`
 
 ## Usage Examples
 

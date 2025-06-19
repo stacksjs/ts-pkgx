@@ -46,13 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +xplr.dev@1.0.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `rust-lang.org>=1.56`
-- `rust-lang.org/cargo`
-
 ## Usage Examples
 
 ```typescript

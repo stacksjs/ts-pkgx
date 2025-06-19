@@ -58,9 +58,6 @@ sh <(curl https://pkgx.sh) +unbound.net@1.23.0 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1`
-- `libexpat.github.io`
-- `github.com/westes/flex`
-- `gnu.org/bison^3`
 
 ## Usage Examples
 

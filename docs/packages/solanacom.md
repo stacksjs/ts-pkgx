@@ -78,10 +78,6 @@ This package depends on:
 - `protobuf.dev^21`
 - `zlib.net^1.2`
 - `openssl.org^1.1`
-- `rust-lang.org>=1.75<1.78`
-- `rust-lang.org/cargo<0.83`
-- `freedesktop.org/pkg-config^0.29`
-- `systemd.io`
 
 ## Usage Examples
 

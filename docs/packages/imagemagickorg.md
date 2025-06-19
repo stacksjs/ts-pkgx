@@ -77,9 +77,12 @@ This package depends on:
 - `jpeg.org/jpegxl`
 - `perl.org`
 - `libzip.org`
+- `darwinopenmp.llvm.orggithub.com/strukturag/libheif`
 - `openmp.llvm.org`
 - `github.com/strukturag/libheif`
+- `linux/x86-64github.com/strukturag/libheif`
 - `github.com/strukturag/libheif`
+- `linuxx.org/x11`
 - `x.org/x11`
 
 ## Usage Examples

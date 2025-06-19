@@ -48,9 +48,9 @@ This package depends on:
 
 - `libjpeg-turbo.org^2`
 - `libpng.org^1`
-- `x.org/xft^2`
-- `x.org/xt^1`
-- `freedesktop.org/mesa-glu^9`
+- `linux:x.org/xft^2`
+- `linux:x.org/xt^1`
+- `linux:freedesktop.org/mesa-glu^9`
 
 ## Usage Examples
 

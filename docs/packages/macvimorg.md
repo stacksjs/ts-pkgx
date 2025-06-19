@@ -62,7 +62,6 @@ This package depends on:
 - `ruby-lang.org`
 - `libsodium.org`
 - `gnu.org/gettext`
-- `gnu.org/make`
 
 ## Usage Examples
 

@@ -55,10 +55,6 @@ This package depends on:
 - `libjpeg-turbo.org^2`
 - `openssl.org^1.1`
 - `gnutls.org^3`
-- `cmake.org^3`
-- `pyyaml.org/libyaml`
-- `python.org^3`
-- `pip.pypa.io`
 
 ## Usage Examples
 

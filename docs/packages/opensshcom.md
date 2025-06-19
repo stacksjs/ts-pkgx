@@ -60,12 +60,7 @@ This package depends on:
 - `thrysoee.dk/editline`
 - `github.com/besser82/libxcrypt`
 - `zlib.net`
-- `linux-pam.org`
-- `freedesktop.org/pkg-config`
-- `curl.se`
-- `gnu.org/patch`
-- `gnu.org/gcc`
-- `gnu.org/make`
+- `linux:linux-pam.org`
 
 ## Usage Examples
 

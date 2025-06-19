@@ -59,16 +59,6 @@ sh <(curl https://pkgx.sh) +materialize.com@0.112.2 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
-- `rust-lang.org>=1.56`
-- `rust-lang.org/cargo`
-- `cmake.org^3`
-- `perl.org`
-- `gnu.org/automake`
-- `gnu.org/autoconf`
-- `protobuf.dev@26.1`
-- `gnu.org/make`
-- `git-scm.org^2`
-- `llvm.org<17`
 
 ## Usage Examples
 

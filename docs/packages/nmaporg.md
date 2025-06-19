@@ -48,8 +48,6 @@ This package depends on:
 
 - `openssl.org^1.1`
 - `pcre.org/v2^10`
-- `gnu.org/patch`
-- `python.org@3`
 
 ## Usage Examples
 

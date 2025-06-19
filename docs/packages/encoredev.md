@@ -56,7 +56,6 @@ sh <(curl https://pkgx.sh) +encore.dev@1.48.4 -- $SHELL -i
 This package depends on:
 
 - `encore.dev/go^1.21`
-- `go.dev~1.23.3`
 
 ## Usage Examples
 

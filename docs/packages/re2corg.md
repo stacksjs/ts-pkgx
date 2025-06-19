@@ -47,12 +47,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +re2c.org@4.2.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `python.org^3.10`
-
 ## Usage Examples
 
 ```typescript

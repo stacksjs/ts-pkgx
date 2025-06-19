@@ -52,7 +52,6 @@ sh <(curl https://pkgx.sh) +kubectx.dev@0.9.5 -- $SHELL -i
 This package depends on:
 
 - `github.com/junegunn/fzf`
-- `go.dev^1.20`
 
 ## Usage Examples
 

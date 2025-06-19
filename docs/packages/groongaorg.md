@@ -56,17 +56,13 @@ sh <(curl https://pkgx.sh) +groonga.org@15.1.1 -- $SHELL -i
 
 This package depends on:
 
-- `taku910.github.io/mecab`
-- `taku910.github.io/mecab-ipadic`
-- `taku910.github.io/mecab`
-- `taku910.github.io/mecab-ipadic`
+- `darwin:taku910.github.io/mecab`
+- `darwin:taku910.github.io/mecab-ipadic`
 - `msgpack.org`
 - `openssl.org`
 - `pcre.org/v2`
 - `github.com/besser82/libxcrypt`
-- `gnome.org/glib`
-- `freedesktop.org/pkg-config`
-- `curl.se`
+- `linux:gnome.org/glib`
 
 ## Usage Examples
 

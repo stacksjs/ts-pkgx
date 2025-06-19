@@ -48,12 +48,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +consul.io@1.21.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.20`
-
 ## Usage Examples
 
 ```typescript

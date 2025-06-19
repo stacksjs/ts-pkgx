@@ -56,8 +56,6 @@ sh <(curl https://pkgx.sh) +pytest.org@8.4.1 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org>=3.7<3.12`
-- `git-scm.org^2`
 
 ## Usage Examples
 

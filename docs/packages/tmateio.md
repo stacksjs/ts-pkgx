@@ -54,10 +54,6 @@ This package depends on:
 - `invisible-island.net/ncurses@6`
 - `msgpack.org@6`
 - `libssh.org@0`
-- `gnu.org/bison`
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

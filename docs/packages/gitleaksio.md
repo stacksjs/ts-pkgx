@@ -51,13 +51,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +gitleaks.io@8.27.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-- `git-scm.org`
-
 ## Usage Examples
 
 ```typescript

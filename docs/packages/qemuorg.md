@@ -103,13 +103,6 @@ This package depends on:
 - `invisible-island.net/ncurses^6`
 - `libssh.org^0`
 - `libpng.org^1`
-- `gnu.org/bison`
-- `github.com/westes/flex`
-- `python.org~3.11`
-- `ninja-build.org`
-- `mesonbuild.com`
-- `curl.se`
-- `info-zip.org/unzip`
 
 ## Usage Examples
 

@@ -51,11 +51,6 @@ sh <(curl https://pkgx.sh) +robotframework.org@7.3.1 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org^3`
-- `rust-lang.org^1.56`
-- `certifi.io/python-certifi`
-- `cryptography.io`
-- `libsodium.org`
 
 ## Usage Examples
 

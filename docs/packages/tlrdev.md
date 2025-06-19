@@ -51,9 +51,6 @@ sh <(curl https://pkgx.sh) +tlr.dev@2.0.7 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
-- `go.dev^1.21`
-- `rust-lang.org^1.78`
-- `protobuf.dev`
 
 ## Usage Examples
 

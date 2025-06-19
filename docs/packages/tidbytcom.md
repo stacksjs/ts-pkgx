@@ -54,9 +54,6 @@ sh <(curl https://pkgx.sh) +tidbyt.com@0.34.0 -- $SHELL -i
 This package depends on:
 
 - `google.com/webp^1`
-- `go.dev^1.22`
-- `npmjs.com`
-- `nodejs.org`
 
 ## Usage Examples
 

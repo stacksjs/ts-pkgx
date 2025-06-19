@@ -63,7 +63,6 @@ This package depends on:
 
 - `openssl.org^3.1.0`
 - `gnome.org/libxml2`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

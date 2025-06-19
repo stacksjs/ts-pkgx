@@ -53,7 +53,6 @@ sh <(curl https://pkgx.sh) +typescriptlang.org@5.8.3 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^20`
-- `npmjs.com`
 
 ## Usage Examples
 

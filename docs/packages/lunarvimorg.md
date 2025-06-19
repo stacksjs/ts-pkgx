@@ -52,8 +52,6 @@ This package depends on:
 - `nodejs.org`
 - `rust-lang.org/cargo`
 - `neovim.io`
-- `cmake.org`
-- `gnu.org/bash`
 
 ## Usage Examples
 

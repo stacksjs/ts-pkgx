@@ -51,9 +51,6 @@ sh <(curl https://pkgx.sh) +replibyte.com@0.10.0 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
-- `rust-lang.org>=1.65`
-- `rust-lang.org/cargo`
-- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

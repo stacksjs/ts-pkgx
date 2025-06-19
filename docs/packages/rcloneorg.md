@@ -49,14 +49,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +rclone.org@1.70.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-- `curl.se`
-- `gnu.org/patch`
-
 ## Usage Examples
 
 ```typescript

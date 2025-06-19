@@ -57,8 +57,6 @@ This package depends on:
 - `libsdl.org^2`
 - `glew.sourceforge.io^2`
 - `libsdl.org/SDL_image^2`
-- `freedesktop.org/pkg-config^0.29`
-- `glm.g-truc.net^0`
 
 ## Usage Examples
 

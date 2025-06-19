@@ -54,11 +54,10 @@ sh <(curl https://pkgx.sh) +libzip.org@1.11.4 -- $SHELL -i
 This package depends on:
 
 - `facebook.com/zstd>=1.5.0`
-- `sourceware.org/bzip2>=1.0.8`
-- `tukaani.org/xz>=5.2.7`
-- `zlib.net>=1.2.13`
-- `openssl.org^1.1`
-- `cmake.org>=3.24`
+- `darwin:sourceware.org/bzip2>=1.0.8`
+- `darwin:tukaani.org/xz>=5.2.7`
+- `darwin:zlib.net>=1.2.13`
+- `linux:openssl.org^1.1`
 
 ## Usage Examples
 

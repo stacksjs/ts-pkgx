@@ -51,11 +51,6 @@ sh <(curl https://pkgx.sh) +spacetimedb.com@2023.12.8 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1`
-- `rust-lang.org>=1.56`
-- `rust-lang.org/cargo`
-- `cmake.org^3`
-- `perl.org`
-- `freedesktop.org/pkg-config^0.29`
 
 ## Usage Examples
 

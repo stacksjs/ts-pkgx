@@ -53,15 +53,7 @@ This package depends on:
 
 - `python.org~3.11`
 - `github.com/sekrit-twc/zimg`
-- `gnu.org/gcc/libstdcxx`
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `cython.org`
-- `gnu.org/libtool`
-- `nasm.us`
-- `freedesktop.org/pkg-config`
-- `gnu.org/gcc`
-- `crates.io/semverator`
+- `linux:gnu.org/gcc/libstdcxx`
 
 ## Usage Examples
 

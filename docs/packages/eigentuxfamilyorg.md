@@ -44,9 +44,7 @@ sh <(curl https://pkgx.sh) +eigentuxfamily.org@3.4.0 -- $SHELL -i
 
 This package depends on:
 
-- `gnu.org/gcc/libstdcxx@14`
-- `cmake.org^3`
-- `freedesktop.org/pkg-config^0.29`
+- `linux:gnu.org/gcc/libstdcxx@14`
 
 ## Usage Examples
 

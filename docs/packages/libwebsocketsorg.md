@@ -46,7 +46,6 @@ This package depends on:
 
 - `libuv.org@1`
 - `libevent.org@2`
-- `cmake.org@3`
 
 ## Usage Examples
 

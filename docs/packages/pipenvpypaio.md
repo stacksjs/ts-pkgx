@@ -60,8 +60,6 @@ sh <(curl https://pkgx.sh) +pipenvpypa.io@3000.0.0 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org~3.11 # approx. 3 older versions won’t work with python 3.12`
-- `crates.io/semverator`
 
 ## Related Packages
 

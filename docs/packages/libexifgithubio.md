@@ -45,7 +45,6 @@ sh <(curl https://pkgx.sh) +libexifgithub.io@0.6.25 -- $SHELL -i
 This package depends on:
 
 - `gnu.org/gettext`
-- `gnu.org/wget`
 
 ## Usage Examples
 

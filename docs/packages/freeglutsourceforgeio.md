@@ -49,10 +49,8 @@ This package depends on:
 - `x.org/xrandr`
 - `x.org/xxf86vm`
 - `mesa3d.org`
-- `freedesktop.org/mesa-glu`
-- `x.org/xinput`
-- `cmake.org`
-- `freedesktop.org/pkg-config`
+- `linux:freedesktop.org/mesa-glu`
+- `linux:x.org/xinput`
 
 ## Usage Examples
 

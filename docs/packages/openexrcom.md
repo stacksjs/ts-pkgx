@@ -62,10 +62,6 @@ This package depends on:
 
 - `zlib.net^1`
 - `openexr.com/imath`
-- `cmake.org`
-- `freedesktop.org/pkg-config`
-- `git-scm.org`
-- `gnu.org/wget`
 
 ## Usage Examples
 

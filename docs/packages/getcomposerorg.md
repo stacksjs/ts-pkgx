@@ -57,7 +57,6 @@ sh <(curl https://pkgx.sh) +getcomposer.org@2.8.9 -- $SHELL -i
 This package depends on:
 
 - `php.net`
-- `curl.se`
 
 ## Usage Examples
 

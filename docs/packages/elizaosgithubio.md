@@ -57,12 +57,6 @@ This package depends on:
 - `nodejs.org~23.3`
 - `pnpm.io`
 - `bun.sh^1.2 # since 1.0.5`
-- `python.org~3.10 # node-gyp doesn`
-- `pnpm.io=9.15.7`
-- `curl.se`
-- `gnu.org/patch`
-- `gnu.org/sed`
-- `git-scm.org`
 
 ## Related Packages
 

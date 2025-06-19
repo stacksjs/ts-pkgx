@@ -46,13 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +elv.sh@0.21.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.19`
-- `gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

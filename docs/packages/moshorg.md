@@ -54,7 +54,7 @@ This package depends on:
 - `protobuf.dev@26.1.0`
 - `invisible-island.net/ncurses@6`
 - `zlib.net@1.3`
-- `openssl.org@3`
+- `linux:openssl.org@3`
 
 ## Usage Examples
 

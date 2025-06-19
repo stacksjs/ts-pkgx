@@ -46,14 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +curlie.io@1.8.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev~1.24`
-- `goreleaser.com`
-- `git-scm.org`
-
 ## Usage Examples
 
 ```typescript

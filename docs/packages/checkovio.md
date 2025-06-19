@@ -146,8 +146,6 @@ sh <(curl https://pkgx.sh) +checkov.io@3.2.442 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org^3.12`
-- `stedolan.github.io/jq`
 
 ## Usage Examples
 

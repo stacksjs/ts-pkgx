@@ -47,7 +47,6 @@ This package depends on:
 
 - `openssl.org^1.1`
 - `zlib.net^1`
-- `cmake.org^3`
 
 ## Usage Examples
 

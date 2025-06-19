@@ -54,7 +54,6 @@ sh <(curl https://pkgx.sh) +gradle.org@8.14.2 -- $SHELL -i
 This package depends on:
 
 - `openjdk.org`
-- `openjdk.org@17`
 
 ## Usage Examples
 

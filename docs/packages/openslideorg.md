@@ -61,8 +61,6 @@ This package depends on:
 - `gnome.org/libxml2`
 - `openjpeg.org`
 - `sqlite.org`
-- `freedesktop.org/pkg-config`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

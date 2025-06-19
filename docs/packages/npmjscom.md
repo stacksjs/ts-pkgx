@@ -63,7 +63,6 @@ sh <(curl https://pkgx.sh) +npmjs.com@11.4.2 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org`
-- `nodejs.org<20.3`
 
 ## Usage Examples
 

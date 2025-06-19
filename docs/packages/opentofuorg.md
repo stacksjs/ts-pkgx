@@ -53,9 +53,7 @@ sh <(curl https://pkgx.sh) +opentofu.org@1.9.1 -- $SHELL -i
 
 This package depends on:
 
-- `gnu.org/gcc/libstdcxx`
-- `curl.se/ca-certs`
-- `go.dev~1.21`
+- `linux:gnu.org/gcc/libstdcxx`
 
 ## Usage Examples
 

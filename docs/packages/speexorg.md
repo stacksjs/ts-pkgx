@@ -51,7 +51,6 @@ sh <(curl https://pkgx.sh) +speex.org@1.2.1 -- $SHELL -i
 This package depends on:
 
 - `xiph.org/ogg`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

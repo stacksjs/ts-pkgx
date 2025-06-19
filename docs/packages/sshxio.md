@@ -51,8 +51,6 @@ sh <(curl https://pkgx.sh) +sshx.io@2023.11.14 -- $SHELL -i
 This package depends on:
 
 - `protobuf.dev`
-- `rust-lang.org>=1.65`
-- `rust-lang.org/cargo`
 
 ## Usage Examples
 

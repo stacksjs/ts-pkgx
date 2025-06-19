@@ -57,7 +57,6 @@ sh <(curl https://pkgx.sh) +heroku.com@10.10.1 -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^20`
-- `npmjs.com`
 
 ## Usage Examples
 

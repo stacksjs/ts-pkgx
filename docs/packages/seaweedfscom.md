@@ -49,12 +49,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +seaweedfs.com@3.91.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev=1.22.0`
-
 ## Usage Examples
 
 ```typescript

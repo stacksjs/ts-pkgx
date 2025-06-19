@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +pixman.org@0.40.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `freedesktop.org/pkg-config^0.29`
-
 ## Usage Examples
 
 ```typescript

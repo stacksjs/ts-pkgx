@@ -70,8 +70,6 @@ This package depends on:
 - `openldap.org^2`
 - `gnu.org/readline^8`
 - `sqlite.org^3`
-- `darwin^# nobody added a comment to say why this is Darwin only`
-- `gnu.org/gettext^0.21`
 
 ## Usage Examples
 

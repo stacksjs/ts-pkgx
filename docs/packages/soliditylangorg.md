@@ -48,10 +48,7 @@ sh <(curl https://pkgx.sh) +soliditylang.org@0.8.30 -- $SHELL -i
 This package depends on:
 
 - `boost.org~1.84`
-- `gnu.org/gcc/libstdcxx@14`
-- `gnu.org/gcc@14`
-- `cmake.org@3`
-- `gnu.org/patch`
+- `linux:gnu.org/gcc/libstdcxx@14`
 
 ## Usage Examples
 

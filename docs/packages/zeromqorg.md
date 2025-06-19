@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +zeromq.org@4.3.5 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `freedesktop.org/pkg-config`
-
 ## Usage Examples
 
 ```typescript

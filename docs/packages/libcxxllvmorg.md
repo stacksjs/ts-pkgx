@@ -48,16 +48,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +libcxxllvm.org@20.1.7 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org>=3<3.29`
-- `ninja-build.org@1`
-- `python.org>=3<3.12`
-- `llvm.org`
-- `llvm.org`
-
 ## Usage Examples
 
 ```typescript

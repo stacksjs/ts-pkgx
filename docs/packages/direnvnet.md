@@ -47,12 +47,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +direnv.net@2.36.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.18`
-
 ## Usage Examples
 
 ```typescript

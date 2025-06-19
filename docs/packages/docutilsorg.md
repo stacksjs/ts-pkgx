@@ -56,7 +56,6 @@ sh <(curl https://pkgx.sh) +docutils.org@0.21.2 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org~3.11`
 
 ## Usage Examples
 

@@ -56,12 +56,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +stripe.com@1.27.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.19`
-
 ## Usage Examples
 
 ```typescript

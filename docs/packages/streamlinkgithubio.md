@@ -54,8 +54,6 @@ sh <(curl https://pkgx.sh) +streamlinkgithub.io@7.4.0 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `python.org~3.12`
-- `gnu.org/coreutils`
 
 ## Related Packages
 

@@ -52,11 +52,6 @@ sh <(curl https://pkgx.sh) +assimp.org@6.0.2 -- $SHELL -i
 This package depends on:
 
 - `zlib.net`
-- `gnu.org/make`
-- `cmake.org`
-- `ninja-build.org`
-- `curl.se`
-- `gnu.org/patch`
 
 ## Usage Examples
 

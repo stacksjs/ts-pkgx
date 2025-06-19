@@ -52,10 +52,8 @@ This package depends on:
 
 - `openssl.org@1`
 - `tcpdump.org@1`
-- `alsa-project.org/alsa-lib@1`
-- `freedesktop.org/fontconfig@2`
-- `rust-lang.org^1.78`
-- `rust-lang.org/cargo`
+- `linux:alsa-project.org/alsa-lib@1`
+- `linux:freedesktop.org/fontconfig@2`
 
 ## Usage Examples
 

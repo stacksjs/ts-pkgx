@@ -49,15 +49,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +kubebuilder.io@4.6.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev~1.23`
-- `gnu.org/coreutils`
-- `gnu.org/grep`
-- `go.dev^1.21`
-
 ## Usage Examples
 
 ```typescript

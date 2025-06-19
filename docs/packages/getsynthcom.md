@@ -46,13 +46,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +getsynth.com@0.6.9 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `rust-lang.org^1.65`
-- `rust-lang.org/cargo`
-
 ## Usage Examples
 
 ```typescript

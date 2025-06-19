@@ -54,9 +54,6 @@ This package depends on:
 - `openssl.org^1`
 - `libexpat.github.io`
 - `sqlite.org^3`
-- `gnupg.org/libgcrypt^1`
-- `gnupg.org/libgpg-error^1`
-- `freedesktop.org/pkg-config`
 
 ## Usage Examples
 

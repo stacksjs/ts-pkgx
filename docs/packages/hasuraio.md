@@ -56,15 +56,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +hasura.io@2.48.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.16`
-- `npmjs.com^8.19.4`
-- `gnu.org/coreutils`
-- `nodejs.org^18  # fails with ^20`
-
 ## Usage Examples
 
 ```typescript

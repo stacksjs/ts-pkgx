@@ -60,8 +60,6 @@ This package depends on:
 
 - `zlib.net^1`
 - `abseil.io`
-- `cmake.org^3`
-- `abseil.io^20250127 # FIXME: how? it links to e.g. libabsl_bad_any_cast_impl.so.2308.0.0`
 
 ## Usage Examples
 

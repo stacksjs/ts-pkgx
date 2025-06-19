@@ -70,13 +70,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +bun.sh@1.2.16 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-- `info-zip.org/unzip`
-
 ## Usage Examples
 
 ```typescript

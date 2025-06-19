@@ -53,11 +53,6 @@ This package depends on:
 
 - `pkgx.sh^1`
 - `github.com/Cyan4973/xxHash^0.8`
-- `python.org^3.10`
-- `openssl.org^1.1`
-- `facebook.com/zstd`
-- `lz4.org`
-- `savannah.nongnu.org/acl^2.3.1`
 
 ## Usage Examples
 

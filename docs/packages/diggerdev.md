@@ -83,12 +83,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +digger.dev@0.6.106 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev^1.21`
-
 ## Usage Examples
 
 ```typescript

@@ -51,7 +51,6 @@ sh <(curl https://pkgx.sh) +apktool.org@2.11.1 -- $SHELL -i
 This package depends on:
 
 - `openjdk.org^21`
-- `curl.se`
 
 ## Usage Examples
 

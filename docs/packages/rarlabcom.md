@@ -49,12 +49,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +rarlab.com@7.1.7 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/coreutils^9`
-
 ## Usage Examples
 
 ```typescript

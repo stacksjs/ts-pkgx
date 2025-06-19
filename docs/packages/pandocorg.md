@@ -59,8 +59,6 @@ This package depends on:
 - `gnu.org/gmp@6`
 - `zlib.net@1`
 - `sourceware.org/libffi@3`
-- `haskell.org~9.4`
-- `haskell.org/cabal~3.10 # 3.12 complains when using --installdir about relative library paths`
 
 ## Usage Examples
 
