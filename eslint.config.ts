@@ -19,6 +19,10 @@ const config: ESLintConfig = stacks({
     'docs/advanced/type-safety.md',
     'docs/api-reference.md',
     'src/packages/index.ts', // TODO: this could be removed, but there is a minor sort order a-z "issue"
+    'src/packages/freedesktop.org/intltool.ts',
+    'src/packages/github.com/linux-test-project/lcov.ts',
+    'src/packages/gnu.org/stow.ts',
+    'src/packages/po4aorg.ts',
   ],
 })
 

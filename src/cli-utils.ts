@@ -42,9 +42,9 @@ export interface InstallationPlan {
 /**
  * Show detailed information about a package
  */
-export function showPackageInfo(packageName: string): CLIResult<PackageInfo> {
+export async function showPackageInfo(packageName: string): Promise<CLIResult<PackageInfo>> {
   try {
-    const info = getPackageInfo(packageName as PackageName)
+    const info = await getPackageInfo(packageName as PackageName)
 
     if (!info) {
       return {
@@ -69,7 +69,7 @@ export function showPackageInfo(packageName: string): CLIResult<PackageInfo> {
 /**
  * Search for packages by name or description
  */
-export function searchPackagesCommand(searchTerm: string): CLIResult<PackageInfo[]> {
+export async function searchPackagesCommand(searchTerm: string): Promise<CLIResult<PackageInfo[]>> {
   try {
     if (!searchTerm || searchTerm.trim().length === 0) {
       return {
@@ -78,7 +78,7 @@ export function searchPackagesCommand(searchTerm: string): CLIResult<PackageInfo
       }
     }
 
-    const results = searchPackages(searchTerm.trim())
+    const results = await searchPackages(searchTerm.trim())
 
     return {
       success: true,
@@ -96,13 +96,14 @@ export function searchPackagesCommand(searchTerm: string): CLIResult<PackageInfo
 /**
  * List popular packages
  */
-export function listPopularPackages(limit: number = 20): CLIResult<PackageInfo[]> {
+export async function listPopularPackages(limit: number = 20): Promise<CLIResult<PackageInfo[]>> {
   try {
-    const packages = getPopularPackages(5).slice(0, limit)
+    const packages = await getPopularPackages(5)
+    const limitedPackages = packages.slice(0, limit)
 
     return {
       success: true,
-      data: packages,
+      data: limitedPackages,
     }
   }
   catch (error) {
@@ -116,9 +117,9 @@ export function listPopularPackages(limit: number = 20): CLIResult<PackageInfo[]
 /**
  * List recently active packages
  */
-export function listActivePackages(limit: number = 20): CLIResult<PackageInfo[]> {
+export async function listActivePackages(limit: number = 20): Promise<CLIResult<PackageInfo[]>> {
   try {
-    const packages = getActivePackages(limit)
+    const packages = await getActivePackages(limit)
 
     return {
       success: true,
@@ -156,13 +157,13 @@ export function listAliases(): CLIResult<string[]> {
 /**
  * Validate a package specification
  */
-export function validatePackage(packageSpec: string): CLIResult<{
+export async function validatePackage(packageSpec: string): Promise<CLIResult<{
   packageName: PackageName
   version?: string
   isValid: boolean
-}> {
+}>> {
   try {
-    const validation = validatePackageSpec(packageSpec)
+    const validation = await validatePackageSpec(packageSpec)
 
     if (!validation.isValid) {
       return {
@@ -191,9 +192,9 @@ export function validatePackage(packageSpec: string): CLIResult<{
 /**
  * Create an installation plan for a package
  */
-export function createInstallPlan(packageSpec: string): CLIResult<InstallationPlan> {
+export async function createInstallPlan(packageSpec: string): Promise<CLIResult<InstallationPlan>> {
   try {
-    const validation = validatePackageSpec(packageSpec)
+    const validation = await validatePackageSpec(packageSpec)
 
     if (!validation.isValid) {
       return {
@@ -205,7 +206,7 @@ export function createInstallPlan(packageSpec: string): CLIResult<InstallationPl
     const packageName = validation.packageName!
     const requestedVersion = validation.version || 'latest'
 
-    const resolvedVersion = resolveVersion(packageName, requestedVersion)
+    const resolvedVersion = await resolveVersion(packageName, requestedVersion)
     if (!resolvedVersion) {
       return {
         success: false,
@@ -213,7 +214,7 @@ export function createInstallPlan(packageSpec: string): CLIResult<InstallationPl
       }
     }
 
-    const packageInfo = getPackageInfo(packageName)
+    const packageInfo = await getPackageInfo(packageName)
     if (!packageInfo) {
       return {
         success: false,
@@ -260,13 +261,13 @@ export function createInstallPlan(packageSpec: string): CLIResult<InstallationPl
 /**
  * Get version information for a package
  */
-export function getVersionInfo(packageName: string): CLIResult<{
+export async function getVersionInfo(packageName: string): Promise<CLIResult<{
   latest: string
   total: number
   versions: string[]
-}> {
+}>> {
   try {
-    const latest = getLatestVersion(packageName as PackageName)
+    const latest = await getLatestVersion(packageName as PackageName)
     if (!latest) {
       return {
         success: false,
@@ -274,7 +275,7 @@ export function getVersionInfo(packageName: string): CLIResult<{
       }
     }
 
-    const versions = getAvailableVersions(packageName as PackageName)
+    const versions = await getAvailableVersions(packageName as PackageName)
 
     return {
       success: true,
