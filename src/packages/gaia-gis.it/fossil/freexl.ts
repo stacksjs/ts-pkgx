@@ -20,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gaia-gis-it/fossil/freexl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gaiagisitfossil/freexlPackage = {
+export const gaiagisitfossilfreexlPackage = {
   /**
    * The display name of this package.
    */
@@ -62,4 +62,4 @@ export const gaiagisitfossil/freexlPackage = {
   aliases: [] as const,
 }
 
-export type Gaiagisitfossil/freexlPackage = typeof gaiagisitfossil/freexlPackage
+export type GaiagisitfossilfreexlPackage = typeof gaiagisitfossilfreexlPackage

@@ -53,13 +53,13 @@ function getDomainAsTypescriptName(domain: string): string {
     if (parentDomain.includes('github.com')) {
       // For GitHub repos, we need to keep all parts of the path
       // and transform them into a valid variable name
-      // Replace all special characters and join everything into a single string
+      // Replace all special characters including slashes and join everything into a single string
       const fullPath = subPath.replace(/[/.-]/g, '')
       return `${cleanParent}${fullPath}`.toLowerCase()
     }
 
-    // For variable names, we need to remove special characters in the subpath
-    const cleanSubPath = subPath.replace(/[.-]/g, '')
+    // For variable names, we need to remove ALL special characters including slashes in the subpath
+    const cleanSubPath = subPath.replace(/[/.-]/g, '')
 
     // Join without a separator to make a valid variable name
     return `${cleanParent}${cleanSubPath}`.toLowerCase()
@@ -465,8 +465,8 @@ function generateTypeScriptContent(packageInfo: PkgxPackage, domainName: string)
     packageDisplayName = packageInfo.name || domainName
   }
 
-  // Ensure the variable name doesn't contain hyphens (which are invalid in JavaScript)
-  const safeVarName = varName.replace(/-/g, '')
+  // Ensure the variable name doesn't contain any invalid JavaScript identifier characters
+  const safeVarName = varName.replace(/[^\w$]/g, '')
 
   // Generate comprehensive JSDoc documentation
   const jsdoc = generatePackageJSDoc(packageInfo, domainName, packageDisplayName)

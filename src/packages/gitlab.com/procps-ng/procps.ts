@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gitlab-com/procps-ng/procps.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitlabcomprocpsng/procpsPackage = {
+export const gitlabcomprocpsngprocpsPackage = {
   /**
    * The display name of this package.
    */
@@ -81,4 +81,4 @@ export const gitlabcomprocpsng/procpsPackage = {
   aliases: [] as const,
 }
 
-export type Gitlabcomprocpsng/procpsPackage = typeof gitlabcomprocpsng/procpsPackage
+export type GitlabcomprocpsngprocpsPackage = typeof gitlabcomprocpsngprocpsPackage

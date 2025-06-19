@@ -20,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/git-osgeo-org/gitea/rttopo/librttopo.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitosgeoorggitea/rttopo/librttopoPackage = {
+export const gitosgeoorggitearttopolibrttopoPackage = {
   /**
    * The display name of this package.
    */
@@ -60,4 +60,4 @@ export const gitosgeoorggitea/rttopo/librttopoPackage = {
   aliases: [] as const,
 }
 
-export type Gitosgeoorggitea/rttopo/librttopoPackage = typeof gitosgeoorggitea/rttopo/librttopoPackage
+export type GitosgeoorggitearttopolibrttopoPackage = typeof gitosgeoorggitearttopolibrttopoPackage
