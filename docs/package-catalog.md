@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-19T17:26:26.577Z
+- **Last Updated**: 2025-06-19T19:27:28.345Z
 
 ## Table of Contents
 
@@ -94,7 +94,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[postgresqlorg](./packages/postgresqlorg.md)** () | Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't wo... | clusterdb, createdb, dropdb, ... (+25) | 17.2.0 (+11) | `pkgx postgresql.org` |
 | **[redisio](./packages/redisio.md)** (redis) | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.2 (+36) | `pkgx redis.io` |
 | **[sqliteorg](./packages/sqliteorg.md)** (sqlite3) | Official Git mirror of the SQLite source tree | sqlite3 | 3.50.1 (+25) | `pkgx sqlite.org` |
-| **[surrealdbcom](./packages/surrealdbcom.md)** (surreal) | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+44) | `pkgx surrealdb.com` |
+| **[surrealdbcom](./packages/surrealdbcom.md)** (surreal) | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+46) | `pkgx surrealdb.com` |
 | **[valkeyio](./packages/valkeyio.md)** (valkey) | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 8.1.2 (+11) | `pkgx valkey.io` |
 
 ## DevOps & Infrastructure
@@ -145,7 +145,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[neovimio](./packages/neovimio.md)** (nvim) | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx neovim.io` |
 | **[prettierio](./packages/prettierio.md)** (prettier) | Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML | prettier | 3.5.3 (+11) | `pkgx prettier.io` |
-| **[vimorg](./packages/vimorg.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1471 (+2043) | `pkgx vim.org` |
+| **[vimorg](./packages/vimorg.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1472 (+2044) | `pkgx vim.org` |
 
 ## CLI Tools & Utilities
 
