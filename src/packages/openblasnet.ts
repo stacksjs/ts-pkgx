@@ -2,7 +2,7 @@
  * **openblas.net** - OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
  *
  * @domain `openblas.net`
- * @version `0.3.29` (7 versions available)
+ * @version `0.3.30` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install +openblas.net -- $SHELL -i`
@@ -14,7 +14,7 @@
  * const pkg = pantry.openblasnet
  * console.log(pkg.name)        // "openblas.net"
  * console.log(pkg.description) // "OpenBLAS is an optimized BLAS library based on ..."
- * console.log(pkg.versions[0]) // "0.3.29" (latest)
+ * console.log(pkg.versions[0]) // "0.3.30" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openblas-net.md
@@ -49,6 +49,7 @@ export const openblasnetPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.3.30',
     '0.3.29',
     '0.3.28',
     '0.3.27',

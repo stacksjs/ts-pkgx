@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-19T09:28:30.441Z
+- **Last Updated**: 2025-06-19T11:27:29.387Z
 
 ## Table of Contents
 
@@ -213,7 +213,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cfsslorg](./packages/cfsslorg.md)** () | CFSSL: Cloudflare's PKI and TLS toolkit | cfssl, cfssl-bundle, cfssl-certinfo, ... (+5) | 1.6.5 (+0) | `pkgx cfssl.org` |
 | **[cgalorg](./packages/cgalorg.md)** (cgal) | The public CGAL repository, see the README below | cgal_create_CMakeLists, cgal_create_cmake_script, cgal_make_macosx_app | 6.0.1 (+4) | `pkgx cgal.org` |
 | **[changiedev](./packages/changiedev.md)** (changie) | Automated changelog tool for preparing releases with lots of customization options | changie | 1.22.0 (+7) | `pkgx changie.dev` |
-| **[checkovio](./packages/checkovio.md)** (checkov) | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.442 (+476) | `pkgx checkov.io` |
+| **[checkovio](./packages/checkovio.md)** (checkov) | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.443 (+477) | `pkgx checkov.io` |
 | **[chezmoiio](./packages/chezmoiio.md)** (chezmoi) | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.6 (+75) | `pkgx chezmoi.io` |
 | **[chompbuildcom](./packages/chompbuildcom.md)** (chomp) | 'JS Make' - parallel task runner for the frontend ecosystem with a JS extension system. | chomp | 0.2.23 (+0) | `pkgx chompbuild.com` |
 | **[chromedriverchromiumorg](./packages/chromedriverchromiumorg.md)** (chromedriver) | A package from chromedriverchromium.org | chromedriver | 114.0.5735.90 (+0) | `pkgx chromedriver.chromium.org` |
@@ -276,7 +276,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[flywaydborg](./packages/flywaydborg.md)** (flyway) | Database version control to control migrations | flyway | 11.8.2 (+40) | `pkgx flywaydb.org` |
 | **[fmtdev](./packages/fmtdev.md)** () | A modern formatting library | - | 11.2.0 (+14) | `pkgx fmt.dev` |
 | **[freeglutsourceforgeio](./packages/freeglutsourceforgeio.md)** () | Free implementation of the OpenGL Utility Toolkit (GLUT) | - | 3.6.0 (+1) | `pkgx freeglut.sourceforge.io` |
-| **[freetdsorg](./packages/freetdsorg.md)** () | Libraries to talk to Microsoft SQL Server and Sybase databases | bsqldb, bsqlodbc, datacopy, ... (+6) | 1.5.2 (+30) | `pkgx freetds.org` |
+| **[freetdsorg](./packages/freetdsorg.md)** () | Libraries to talk to Microsoft SQL Server and Sybase databases | bsqldb, bsqlodbc, datacopy, ... (+6) | 1.5.3 (+31) | `pkgx freetds.org` |
 | **[freetypeorg](./packages/freetypeorg.md)** () | A package from freetype.org | - | 2.13.3 (+3) | `pkgx freetype.org` |
 | **[frei0rdyneorg](./packages/frei0rdyneorg.md)** () | A package from frei0rdyne.org | - | 1.8.0 (+0) | `pkgx frei0r.dyne.org` |
 | **[gdalorg](./packages/gdalorg.md)** () | GDAL is an open source MIT licensed translator library for raster and vector geospatial data form... | gdaladdo, gdalbuildvrt, gdal-config, ... (+25) | 3.11.0 (+16) | `pkgx gdal.org` |
@@ -420,7 +420,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[odigosio](./packages/odigosio.md)** (odigos) | Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetr... | odigos | 1.0.199 (+181) | `pkgx odigos.io` |
 | **[ohmyposhdev](./packages/ohmyposhdev.md)** (oh-my-posh) | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.9.0 (+290) | `pkgx ohmyposh.dev` |
 | **[onefetchdev](./packages/onefetchdev.md)** (onefetch) | Command-line Git information tool | onefetch | 2.24.0 (+7) | `pkgx onefetch.dev` |
-| **[openblasnet](./packages/openblasnet.md)** () | OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version. | - | 0.3.29 (+6) | `pkgx openblas.net` |
+| **[openblasnet](./packages/openblasnet.md)** () | OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version. | - | 0.3.30 (+7) | `pkgx openblas.net` |
 | **[opendaporg](./packages/opendaporg.md)** () | A new version of libdap that contains both DAP2 and DAP4 support | dap-config, dap-config-pkgconfig, getdap, ... (+1) | 3.21.1 (+1) | `pkgx opendap.org` |
 | **[openexrcom](./packages/openexrcom.md)** (exr) | The OpenEXR project provides the specification and reference implementation of the EXR file forma... | exr2aces, exrenvmap, exrheader, ... (+5) | 3.3.4 (+19) | `pkgx openexr.com` |
 | **[openinterpretercom](./packages/openinterpretercom.md)** (interpreter, open-interpreter) | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx openinterpreter.com` |
@@ -557,7 +557,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[watchexecgithubio](./packages/watchexecgithubio.md)** (watchexec) | Executes commands in response to file modifications | watchexec | 2.3.2 (+5) | `pkgx watchexec.github.io` |
 | **[wavpackcom](./packages/wavpackcom.md)** () | WavPack encode/decode library, command-line programs, and several plugins | wavpack, wvunpack, wvtag, ... (+1) | 5.8.1 (+2) | `pkgx wavpack.com` |
 | **[waylandfreedesktoporg](./packages/waylandfreedesktoporg.md)** (wayland-scanner, wayland) | A package from waylandfreedesktop.org | wayland-scanner | 1.23.92 (+7) | `pkgx wayland.freedesktop.org` |
-| **[werfio](./packages/werfio.md)** (werf) | A solution for implementing efficient and consistent software delivery to Kubernetes facilitating... | werf | 2.37.1 (+143) | `pkgx werf.io` |
+| **[werfio](./packages/werfio.md)** (werf) | A solution for implementing efficient and consistent software delivery to Kubernetes facilitating... | werf | 2.38.0 (+144) | `pkgx werf.io` |
 | **[wimlibnet](./packages/wimlibnet.md)** () | Library to create, extract, and modify Windows Imaging files | mkwinpeimg, wimappend, wimapply, ... (+15) | 1.14.4 (+2) | `pkgx wimlib.net` |
 | **[wiresharkorg](./packages/wiresharkorg.md)** () | Network analyzer and capture tool - without graphical user interface | capinfos, captype, dumpcap, ... (+10) | 4.4.7 (+31) | `pkgx wireshark.org` |
 | **[wundergraphcom](./packages/wundergraphcom.md)** (wunderctl) | WunderGraph is a Backend for Frontend Framework to optimize frontend, fullstack and backend devel... | wunderctl | 0.181.0 (+19) | `pkgx wundergraph.com` |
