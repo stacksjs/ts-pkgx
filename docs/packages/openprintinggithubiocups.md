@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 sh <(curl https://pkgx.sh) +openprinting.github.io/cups -- $SHELL -i
 ```
 

@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 pkgx brxken128.github.io
 ```
 

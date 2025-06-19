@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 sh <(curl https://pkgx.sh) +oracle.com/berkeley-db -- $SHELL -i
 ```
 

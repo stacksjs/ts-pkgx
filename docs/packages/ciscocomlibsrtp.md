@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 sh <(curl https://pkgx.sh) +cisco.com/libsrtp -- $SHELL -i
 ```
 

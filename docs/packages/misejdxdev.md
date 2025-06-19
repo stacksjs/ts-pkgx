@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 launchpad install +mise.jdx.dev -- $SHELL -i
 ```
 

@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 launchpad install +libuv.org -- $SHELL -i
 ```
 

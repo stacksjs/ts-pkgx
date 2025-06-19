@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 launchpad install +frei0r.dyne.org -- $SHELL -i
 ```
 

@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 pkgx github.com-git-ecosystem-git-credential-manager
 ```
 

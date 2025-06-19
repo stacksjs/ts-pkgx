@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 launchpad install +classic.yarnpkg.com -- $SHELL -i
 ```
 

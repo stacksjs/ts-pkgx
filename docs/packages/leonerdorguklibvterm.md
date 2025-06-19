@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 sh <(curl https://pkgx.sh) +leonerd.org.uk/libvterm -- $SHELL -i
 ```
 

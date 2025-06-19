@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 sh <(curl https://pkgx.sh) +rockdaboot.github.io/libpsl -- $SHELL -i
 ```
 

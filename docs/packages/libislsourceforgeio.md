@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 launchpad install +libisl.sourceforge.io -- $SHELL -i
 ```
 

@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 sh <(curl https://pkgx.sh) +hdfgroup.org/HDF5 -- $SHELL -i
 ```
 

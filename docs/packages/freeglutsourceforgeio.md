@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 launchpad install +freeglut.sourceforge.io -- $SHELL -i
 ```
 

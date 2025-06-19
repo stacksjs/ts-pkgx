@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 sh <(curl https://pkgx.sh) +taku910.github.io/mecab-ipadic -- $SHELL -i
 ```
 

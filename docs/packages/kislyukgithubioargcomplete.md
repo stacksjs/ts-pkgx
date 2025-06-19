@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 sh <(curl https://pkgx.sh) +kislyuk.github.io/argcomplete -- $SHELL -i
 ```
 

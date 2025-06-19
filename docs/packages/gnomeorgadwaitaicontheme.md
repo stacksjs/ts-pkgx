@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-# Install with pkgx
+# Install with launchpad
 sh <(curl https://pkgx.sh) +gnome.org/adwaita-icon-theme -- $SHELL -i
 ```
 

@@ -1292,7 +1292,7 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
 ## Installation
 
 \`\`\`bash
-# Install with pkgx
+# Install with launchpad
 ${pkg.installCommand || `sh <(curl https://pkgx.sh) +${domain} -- $SHELL -i`}
 \`\`\`
 
