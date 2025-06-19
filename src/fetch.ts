@@ -443,7 +443,16 @@ function generateTypeScriptContent(packageInfo: PkgxPackage, domainName: string)
   let varName: string
   let packageDisplayName: string
 
-  if (packageInfo.aliases && packageInfo.aliases.length > 0) {
+  // Special case for yarn packages to avoid naming conflicts
+  if (domainName === 'classic.yarnpkg.com') {
+    varName = 'classicYarnPackage'
+    packageDisplayName = 'yarn'
+  }
+  else if (domainName === 'yarnpkg.com') {
+    varName = 'yarnPackage'
+    packageDisplayName = 'yarn'
+  }
+  else if (packageInfo.aliases && packageInfo.aliases.length > 0) {
     // Find the first valid alias for variable naming
     const validAlias = packageInfo.aliases.find(alias => isValidAliasForVarName(alias))
 

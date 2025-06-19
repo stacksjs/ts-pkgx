@@ -28,7 +28,7 @@
  * @see https://ts-pkgx.netlify.app/packages/classic-yarnpkg-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const yarnPackage = {
+export const classicYarnPackage = {
   /**
    * The display name of this package.
    */
@@ -84,4 +84,4 @@ export const yarnPackage = {
   ] as const,
 }
 
-export type YarnPackage = typeof yarnPackage
+export type ClassicYarnPackage = typeof classicYarnPackage
