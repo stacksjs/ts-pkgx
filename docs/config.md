@@ -98,7 +98,7 @@ bun run pkgx:fetch --all --verbose
 
 ## Package Fetch Options
 
-The `fetchPkgxPackage` and `fetchAndSaveAllPackages` functions accept an options object with the following properties:
+The `fetchPantryPackage` and `fetchAndSaveAllPackages` functions accept an options object with the following properties:
 
 ```typescript
 interface PackageFetchOptions {

@@ -65,14 +65,14 @@ You can also use the library programmatically in your code:
 ```typescript
 import {
   fetchAndSaveAllPackages,
+  fetchPantryPackage,
   fetchPantryPackageWithMetadata,
-  fetchPkgxPackage,
   savePackageAsTypeScript,
   saveToCacheAndOutput
 } from 'ts-pkgx'
 
 // Fetch a single package using pkgx.dev
-const nodePackage = await fetchPkgxPackage('node')
+const nodePackage = await fetchPantryPackage('node')
 console.log(nodePackage)
 
 // Fetch package with metadata from pantry

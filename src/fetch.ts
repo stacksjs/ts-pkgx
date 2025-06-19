@@ -789,7 +789,7 @@ export async function fetchPkgxProjects(options: FetchProjectsOptions = {}): Pro
  * @param options Optional configuration
  * @returns Promise resolving to package information with original name and full domain name
  */
-export async function fetchPkgxPackage(
+export async function fetchPantryPackage(
   packageName: string,
   options: PackageFetchOptions = {},
 ): Promise<{ packageInfo: PkgxPackage, originalName: string, fullDomainName: string }> {
@@ -1331,7 +1331,7 @@ export async function fetchPkgxPackage(
     }
   }
   catch (error) {
-    console.error(`Error in fetchPkgxPackage for ${packageName}:`, error)
+    console.error(`Error in fetchPantryPackage for ${packageName}:`, error)
 
     // Make sure to close the browser if the outer try block fails
     if (browser) {
@@ -1988,7 +1988,7 @@ export async function fetchAndSavePackage(
       try {
         // Use a try/catch here to handle 404 errors
         // Race the fetch operation against the timeout
-        const fetchPromise = fetchPkgxPackage(`${domain}/${subPath}`, {
+        const fetchPromise = fetchPantryPackage(`${domain}/${subPath}`, {
           timeout: actualTimeout,
           browser: options.browser,
         })
@@ -2200,7 +2200,7 @@ export async function fetchAndSavePackage(
       // Handle standard (non-nested) packages
       try {
         // Race the fetch operation against the timeout
-        const fetchPromise = fetchPkgxPackage(packageName, {
+        const fetchPromise = fetchPantryPackage(packageName, {
           timeout: actualTimeout,
           browser: options.browser,
         })
@@ -2728,7 +2728,7 @@ export async function fetchPantryPackageWithMetadata(
 
     // Then fetch additional metadata from pkgx.dev
     try {
-      const webData = await fetchPkgxPackage(packageName, options)
+      const webData = await fetchPantryPackage(packageName, options)
 
       // Get alias overrides for this domain
       const domain = pantryInfo.domain || webData.packageInfo.domain

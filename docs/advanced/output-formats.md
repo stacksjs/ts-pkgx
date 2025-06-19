@@ -10,10 +10,10 @@ You can generate markdown documentation for packages:
 import type { PkgxPackage } from 'ts-pkgx'
 import fs from 'node:fs'
 import path from 'node:path'
-import { fetchPkgxPackage } from 'ts-pkgx'
+import { fetchPantryPackage } from 'ts-pkgx'
 
 async function saveAsMarkdown(packageName: string, outputDir: string): Promise<void> {
-  const { packageInfo } = await fetchPkgxPackage(packageName)
+  const { packageInfo } = await fetchPantryPackage(packageName)
   const mdContent = generateMarkdown(packageInfo)
 
   const fileName = `${packageInfo.domain.replace(/\./g, '-')}.md`
@@ -103,7 +103,7 @@ function generateHtml(pkg: PkgxPackage): string {
 }
 
 async function saveAsHtml(packageName: string, outputDir: string): Promise<void> {
-  const { packageInfo } = await fetchPkgxPackage(packageName)
+  const { packageInfo } = await fetchPantryPackage(packageName)
   const htmlContent = generateHtml(packageInfo)
 
   const fileName = `${packageInfo.domain.replace(/\./g, '-')}.html`
@@ -185,7 +185,7 @@ function generateYaml(pkg: PkgxPackage): string {
 }
 
 async function saveAsYaml(packageName: string, outputDir: string): Promise<void> {
-  const { packageInfo } = await fetchPkgxPackage(packageName)
+  const { packageInfo } = await fetchPantryPackage(packageName)
   const yamlContent = generateYaml(packageInfo)
 
   const fileName = `${packageInfo.domain.replace(/\./g, '-')}.yaml`

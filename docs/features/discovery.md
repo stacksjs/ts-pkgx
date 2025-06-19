@@ -14,21 +14,21 @@ ts-pkgx can fetch detailed information about packages from pkgx.dev, including:
 - Links to documentation, source code, and related resources
 
 ```typescript
-import { fetchPkgxPackage } from 'ts-pkgx'
+import { fetchPantryPackage } from 'ts-pkgx'
 
 // Fetch a single package
-const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage('node')
+const { packageInfo, originalName, fullDomainName } = await fetchPantryPackage('node')
 console.log(packageInfo)
 ```
 
 ## Single Package Fetching
 
-You can fetch information about a specific package using the `fetchPkgxPackage` function or the CLI command:
+You can fetch information about a specific package using the `fetchPantryPackage` function or the CLI command:
 
 ```bash
 # API approach
-import { fetchPkgxPackage } from 'ts-pkgx'
-const result = await fetchPkgxPackage('nodejs.org')
+import { fetchPantryPackage } from 'ts-pkgx'
+const result = await fetchPantryPackage('nodejs.org')
 
 # CLI approach
 bun run pkgx:fetch node

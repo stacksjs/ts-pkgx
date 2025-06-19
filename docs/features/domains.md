@@ -8,7 +8,7 @@ ts-pkgx properly handles packages with nested paths, such as `agwa.name/git-cryp
 
 ```typescript
 // Fetch a nested package
-const gitCrypt = await fetchPkgxPackage('agwa.name/git-crypt')
+const gitCrypt = await fetchPantryPackage('agwa.name/git-crypt')
 
 // Access a nested package
 const gitCryptPackage = getPackage('agwa.name/git-crypt')
@@ -47,9 +47,9 @@ ts-pkgx automatically resolves package names to their full domain names:
 
 ```typescript
 // These all resolve to 'nodejs.org'
-await fetchPkgxPackage('node')
-await fetchPkgxPackage('nodejs')
-await fetchPkgxPackage('nodejs.org')
+await fetchPantryPackage('node')
+await fetchPantryPackage('nodejs')
+await fetchPantryPackage('nodejs.org')
 ```
 
 This allows users to refer to packages in different ways, while still getting the correct results.
@@ -70,12 +70,12 @@ ts-pkgx validates domain names to ensure they are properly formatted:
 
 ```typescript
 // Valid domains
-fetchPkgxPackage('nodejs.org')
-fetchPkgxPackage('bun.sh')
-fetchPkgxPackage('agwa.name/git-crypt')
+fetchPantryPackage('nodejs.org')
+fetchPantryPackage('bun.sh')
+fetchPantryPackage('agwa.name/git-crypt')
 
 // Handled automatically
-fetchPkgxPackage('node') // Resolves to nodejs.org
+fetchPantryPackage('node') // Resolves to nodejs.org
 ```
 
 ## Domain Aliases
@@ -118,7 +118,7 @@ This makes it easier to work with packages that have complex paths.
 For nested paths, ts-pkgx automatically extracts the relevant parts:
 
 ```typescript
-const { packageInfo, originalName, fullDomainName } = await fetchPkgxPackage('agwa.name/git-crypt')
+const { packageInfo, originalName, fullDomainName } = await fetchPantryPackage('agwa.name/git-crypt')
 
 console.log(originalName) // 'agwa.name/git-crypt'
 console.log(fullDomainName) // 'agwa.name/git-crypt'

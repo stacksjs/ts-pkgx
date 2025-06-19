@@ -5,7 +5,7 @@ export {
   fetchAndSaveAllPackages,
   fetchAndSavePackage,
   fetchPantryPackageWithMetadata,
-  fetchPkgxPackage,
+  fetchPantryPackage,
   fetchPkgxProjects,
   getValidCachedPackage,
   readPantryPackageInfo,

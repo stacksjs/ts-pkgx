@@ -8,10 +8,10 @@ You can implement custom transformation logic when processing packages:
 
 ```typescript
 import type { PkgxPackage } from 'ts-pkgx'
-import { fetchPkgxPackage } from 'ts-pkgx'
+import { fetchPantryPackage } from 'ts-pkgx'
 
 async function fetchAndTransform(packageName: string): Promise<PkgxPackage> {
-  const { packageInfo } = await fetchPkgxPackage(packageName)
+  const { packageInfo } = await fetchPantryPackage(packageName)
 
   // Add custom metadata
   const enhancedPackage: PkgxPackage = {
@@ -40,7 +40,7 @@ This approach allows you to extend the basic package information with your own c
 You can apply transformations to multiple packages at once:
 
 ```typescript
-import { fetchPkgxPackage } from 'ts-pkgx'
+import { fetchPantryPackage } from 'ts-pkgx'
 import { fetchPackageListFromGitHub } from 'ts-pkgx/utils'
 
 async function transformPackageBatch(category: string): Promise<PkgxPackage[]> {
@@ -56,7 +56,7 @@ async function transformPackageBatch(category: string): Promise<PkgxPackage[]> {
   const results = await Promise.all(
     filteredPackages.map(async (pkg) => {
       try {
-        const { packageInfo } = await fetchPkgxPackage(pkg)
+        const { packageInfo } = await fetchPantryPackage(pkg)
         return {
           ...packageInfo,
           category,
@@ -182,7 +182,7 @@ async function fetchTransformAndSavePackage(
 ): Promise<{ success: boolean, filePath?: string }> {
   try {
     // Fetch the package
-    const { packageInfo } = await fetchPkgxPackage(packageName)
+    const { packageInfo } = await fetchPantryPackage(packageName)
 
     // Apply the transformation
     const transformedPackage = transformer(packageInfo)

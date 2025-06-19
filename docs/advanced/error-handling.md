@@ -7,7 +7,7 @@ ts-pkgx provides several ways to handle errors when fetching and processing pack
 Implement custom retry logic for package fetching:
 
 ```typescript
-import { fetchPkgxPackage } from 'ts-pkgx'
+import { fetchPantryPackage } from 'ts-pkgx'
 
 async function fetchWithRetry(packageName: string, maxRetries = 3): Promise<any> {
   let lastError
@@ -15,7 +15,7 @@ async function fetchWithRetry(packageName: string, maxRetries = 3): Promise<any>
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
       console.log(`Attempt ${attempt} of ${maxRetries} for ${packageName}`)
-      return await fetchPkgxPackage(packageName, {
+      return await fetchPantryPackage(packageName, {
         timeout: 30000 * attempt, // Increase timeout with each retry
       })
     }
@@ -240,7 +240,7 @@ const errorLogger = new PackageErrorLogger()
 
 try {
   // Some operation that might fail
-  await fetchPkgxPackage('example.com')
+  await fetchPantryPackage('example.com')
 }
 catch (error) {
   errorLogger.log('example.com', error, {
@@ -379,7 +379,7 @@ const errorTracker = new ErrorTracker()
 
 // When an error occurs
 try {
-  await fetchPkgxPackage('example.com')
+  await fetchPantryPackage('example.com')
 }
 catch (error) {
   const errorType = classifyError(error, 'example.com').type
