@@ -13,6 +13,8 @@ const config: ESLintConfig = stacks({
   ignores: [
     'fixtures/**',
     'examples/**',
+    'examples/**',
+    'src/pantry/**',
     'docs/advanced.md',
     'docs/advanced/type-safety.md',
     'docs/api-reference.md',

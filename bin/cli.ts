@@ -10,7 +10,6 @@ import {
   DEFAULT_CACHE_EXPIRATION_MINUTES,
   DEFAULT_TIMEOUT_MS,
   fetchAndSaveAllPackages,
-  fetchAndSavePackage,
   fetchPantryPackageWithMetadata,
   generateAliases,
   generateDocs,
