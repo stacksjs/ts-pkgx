@@ -56,7 +56,7 @@ import { chezmoiPackage } from './chezmoiio'
 import { chompPackage } from './chompbuildcom'
 import { chromedriverPackage } from './chromedriverchromiumorg'
 import { circleciPackage } from './circlecicom'
-import { yarnPackage } from './classicyarnpkgcom'
+import { yarnPackage as classicYarnPackage } from './classicyarnpkgcom'
 import { ghPackage } from './cligithubcom'
 import { clispPackage } from './clisporg'
 import { clogPackage } from './clog-toolgithubio'
@@ -686,8 +686,8 @@ export interface Pantry {
   chromedriver_chromium_org: typeof chromedriverPackage
   circlecicom: typeof circleciPackage
   circleci_com: typeof circleciPackage
-  classicyarnpkgcom: typeof yarnPackage
-  classic_yarnpkg_com: typeof yarnPackage
+  classicyarnpkgcom: typeof classicYarnPackage
+  classic_yarnpkg_com: typeof classicYarnPackage
   cligithubcom: typeof ghPackage
   cli_github_com: typeof ghPackage
   clisporg: typeof clispPackage
@@ -1837,8 +1837,8 @@ export const pantry: Pantry = {
   chromedriver_chromium_org: chromedriverPackage,
   circlecicom: circleciPackage,
   circleci_com: circleciPackage,
-  classicyarnpkgcom: yarnPackage,
-  classic_yarnpkg_com: yarnPackage,
+  classicyarnpkgcom: classicYarnPackage,
+  classic_yarnpkg_com: classicYarnPackage,
   cligithubcom: ghPackage,
   cli_github_com: ghPackage,
   clisporg: clispPackage,
