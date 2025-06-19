@@ -3,7 +3,7 @@
  *
  * @domain `bytebase.com`
  * @programs `bytebase`
- * @version `3.7.0` (31 versions available)
+ * @version `3.7.1` (32 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bytebase`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "bytebase.com"
  * console.log(pkg.description) // "World's most advanced database DevSecOps soluti..."
  * console.log(pkg.programs)    // ["bytebase"]
- * console.log(pkg.versions[0]) // "3.7.0" (latest)
+ * console.log(pkg.versions[0]) // "3.7.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/bytebase-com.md
@@ -76,6 +76,7 @@ export const bytebasePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.7.1',
     '3.7.0',
     '3.6.2',
     '3.6.1',

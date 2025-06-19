@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/versio`
  * @programs `versio`
- * @version `0.8.3` (2 versions available)
+ * @version `0.8.5` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install versio`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "versio"
  * console.log(pkg.description) // "A version number manager"
  * console.log(pkg.programs)    // ["versio"]
- * console.log(pkg.versions[0]) // "0.8.3" (latest)
+ * console.log(pkg.versions[0]) // "0.8.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/versio.md
@@ -73,6 +73,7 @@ export const versioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.8.5',
     '0.8.3',
     '0.7.6',
   ] as const,

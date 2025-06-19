@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-19T07:29:02.431Z
+- **Last Updated**: 2025-06-19T09:28:30.441Z
 
 ## Table of Contents
 
@@ -203,7 +203,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[boostorg](./packages/boostorg.md)** () | Super-project for modularized Boost | - | 1.88.0 (+7) | `pkgx boost.org` |
 | **[borgbackuporg](./packages/borgbackuporg.md)** (borg) | Deduplicating archiver with compression and authenticated encryption. | borg, borgfs | 1.4.1 (+0) | `pkgx borgbackup.org` |
 | **[buildpacksio](./packages/buildpacksio.md)** (pack) | CLI for building apps using Cloud Native Buildpacks | pack | 0.38.1 (+13) | `pkgx buildpacks.io` |
-| **[bytebasecom](./packages/bytebasecom.md)** (bytebase) | World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engin... | bytebase | 3.7.0 (+30) | `pkgx bytebase.com` |
+| **[bytebasecom](./packages/bytebasecom.md)** (bytebase) | World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engin... | bytebase | 3.7.1 (+31) | `pkgx bytebase.com` |
 | **[caddyservercom](./packages/caddyservercom.md)** (caddy) | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | caddy | 2.10.0 (+9) | `pkgx caddyserver.com` |
 | **[cairographicsorg](./packages/cairographicsorg.md)** (cairo-trace) | Vector graphics library with cross-device output support | cairo-trace | 1.18.4 (+3) | `pkgx cairographics.org` |
 | **[carapacesh](./packages/carapacesh.md)** (carapace) | Multi-shell multi-command argument completer | carapace | 1.3.2 (+10) | `pkgx carapace.sh` |
