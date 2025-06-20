@@ -3,7 +3,7 @@
  *
  * @domain `dotenvx.com`
  * @programs `dotenvx`
- * @version `1.44.2` (168 versions available)
+ * @version `1.45.1` (170 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dotenvx`
@@ -21,7 +21,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "dotenvx.com"
  * console.log(pkg.programs)    // ["dotenvx"]
- * console.log(pkg.versions[0]) // "1.44.2" (latest)
+ * console.log(pkg.versions[0]) // "1.45.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dotenvx-com.md
@@ -68,6 +68,8 @@ export const dotenvxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.45.1',
+    '1.45.0',
     '1.44.2',
     '1.44.1',
     '1.44.0',
