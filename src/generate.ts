@@ -53,9 +53,34 @@ async function importPantry(packagesDir?: string): Promise<Record<string, PkgxPa
       return pantryData
     }
 
-    // Get all package files
-    const packageFiles = fs.readdirSync(targetPackagesDir)
-      .filter(file => file.endsWith('.ts') && file !== 'index.ts' && file !== 'aliases.ts')
+    // Get all package files recursively
+    let packageFiles: string[] = []
+    try {
+      function scanForPackageFiles(dir: string, basePath = ''): string[] {
+        const files: string[] = []
+        const entries = fs.readdirSync(dir, { withFileTypes: true })
+
+        for (const entry of entries) {
+          if (entry.isFile() && entry.name.endsWith('.ts') && entry.name !== 'index.ts' && entry.name !== 'aliases.ts') {
+            files.push(path.join(dir, entry.name))
+          }
+          else if (entry.isDirectory() && !entry.name.startsWith('.')) {
+            const subDirPath = path.join(dir, entry.name)
+            const subBasePath = basePath ? `${basePath}/${entry.name}` : entry.name
+            files.push(...scanForPackageFiles(subDirPath, subBasePath))
+          }
+        }
+
+        return files
+      }
+
+      packageFiles = scanForPackageFiles(targetPackagesDir)
+      console.log(`Found ${packageFiles.length} package files`)
+    }
+    catch (error) {
+      console.error(`Error reading packages directory ${targetPackagesDir}:`, error)
+      packageFiles = []
+    }
 
     console.log(`Reading package data from ${packageFiles.length} files...`)
 
@@ -449,10 +474,11 @@ function normalizeModuleName(moduleName: string): string {
  * @param packagesDir The packages directory to read from
  * @returns Object with the actual package variable name and type name
  */
-function getActualExportNames(moduleName: string, packagesDir?: string): { packageVarName: string, typeName: string } {
+function getActualExportNames(moduleName: string, packagesDir?: string, fullFilePath?: string): { packageVarName: string, typeName: string } {
   try {
     const targetPackagesDir = packagesDir || PACKAGES_DIR
-    const filePath = path.join(targetPackagesDir, `${moduleName}.ts`)
+    // Use the full file path if provided (for nested files), otherwise construct the path
+    const filePath = fullFilePath || path.join(targetPackagesDir, `${moduleName}.ts`)
     const content = fs.readFileSync(filePath, 'utf-8')
 
     // Extract the export const name
@@ -467,7 +493,7 @@ function getActualExportNames(moduleName: string, packagesDir?: string): { packa
   }
   catch (error) {
     // Fallback to the old logic if file reading fails
-    console.warn(`Could not read package file ${moduleName}.ts, using fallback naming:`, error)
+    console.warn(`Could not read package file ${fullFilePath || `${moduleName}.ts`}, using fallback naming:`, error)
     const fallbackVarName = toPackageVarNameFallback(moduleName)
     const fallbackTypeName = toTypeNameFallback(moduleName)
     return { packageVarName: fallbackVarName, typeName: fallbackTypeName }
@@ -575,12 +601,28 @@ export async function generateIndex(packagesDir?: string): Promise<string | null
       return null
     }
 
-    // Get all package files
+    // Get all package files recursively
     let packageFiles: string[] = []
     try {
-      packageFiles = fs.readdirSync(targetPackagesDir)
-        .filter(file => file.endsWith('.ts') && file !== 'index.ts' && file !== 'aliases.ts')
-        .map(file => path.join(targetPackagesDir, file))
+      function scanForPackageFiles(dir: string, basePath = ''): string[] {
+        const files: string[] = []
+        const entries = fs.readdirSync(dir, { withFileTypes: true })
+
+        for (const entry of entries) {
+          if (entry.isFile() && entry.name.endsWith('.ts') && entry.name !== 'index.ts' && entry.name !== 'aliases.ts') {
+            files.push(path.join(dir, entry.name))
+          }
+          else if (entry.isDirectory() && !entry.name.startsWith('.')) {
+            const subDirPath = path.join(dir, entry.name)
+            const subBasePath = basePath ? `${basePath}/${entry.name}` : entry.name
+            files.push(...scanForPackageFiles(subDirPath, subBasePath))
+          }
+        }
+
+        return files
+      }
+
+      packageFiles = scanForPackageFiles(targetPackagesDir)
       console.log(`Found ${packageFiles.length} package files`)
     }
     catch (error) {
@@ -615,6 +657,7 @@ export const packages: Packages = pantry
       let interfaceDecl = 'export interface Pantry {\n'
       let pantryDecl = 'export const pantry: Pantry = {\n'
       const usedPropertyNames = new Set<string>()
+      const usedImportNames = new Set<string>()
 
       // Sort package files for consistent output
       const sortedFiles = packageFiles.sort()
@@ -624,41 +667,76 @@ export const packages: Packages = pantry
           const moduleName = path.basename(file, '.ts')
           const safeVarName = toSafeVarName(moduleName)
 
-          // Get the actual export names from the package file
-          const { packageVarName } = getActualExportNames(moduleName, targetPackagesDir)
+          // Get the relative path from packages directory for import
+          const relativeFilePath = path.relative(targetPackagesDir, file).replace(/\.ts$/, '')
+          const importPath = relativeFilePath.replace(/\\/g, '/') // Normalize for cross-platform
 
-          // Import the specific package export, not the whole module
-          imports += `import { ${packageVarName} } from './${moduleName}'\n`
+          // Get the actual export names from the package file
+          const { packageVarName } = getActualExportNames(moduleName, targetPackagesDir, file)
+
+          // Create a unique import alias to avoid naming collisions
+          let importAlias = packageVarName
+          let counter = 1
+          while (usedImportNames.has(importAlias)) {
+            importAlias = `${packageVarName}${counter}`
+            counter++
+          }
+          usedImportNames.add(importAlias)
+
+          // Import the specific package export with unique alias if needed
+          if (importAlias === packageVarName) {
+            imports += `import { ${packageVarName} } from './${importPath}'\n`
+          }
+          else {
+            imports += `import { ${packageVarName} as ${importAlias} } from './${importPath}'\n`
+          }
+
+          // Use the unique import alias in the interface and object declarations
+
+          // Create unique property names to avoid collisions
+          let propertyName = safeVarName
+          let propCounter = 1
+          while (usedPropertyNames.has(propertyName)) {
+            propertyName = `${safeVarName}${propCounter}`
+            propCounter++
+          }
+          usedPropertyNames.add(propertyName)
 
           // Quote property names that start with numbers or contain special chars
-          const quotedSafeVarName = /^\d/.test(safeVarName) || !/^[a-z_$][\w$]*$/i.test(safeVarName)
-            ? `'${safeVarName}'`
-            : safeVarName
+          const quotedPropertyName = /^\d/.test(propertyName) || !/^[a-z_$][\w$]*$/i.test(propertyName)
+            ? `'${propertyName}'`
+            : propertyName
 
-          interfaceDecl += `  ${quotedSafeVarName}: typeof ${packageVarName}\n`
-          pantryDecl += `  ${quotedSafeVarName}: ${packageVarName},\n`
-          usedPropertyNames.add(safeVarName)
+          interfaceDecl += `  ${quotedPropertyName}: typeof ${importAlias}\n`
+          pantryDecl += `  ${quotedPropertyName}: ${importAlias},\n`
 
           // Add domain-based property names for specific packages
           // Read the file to extract the actual domain
-          const filePath = path.join(targetPackagesDir, `${moduleName}.ts`)
-          const content = fs.readFileSync(filePath, 'utf-8')
+          const content = fs.readFileSync(file, 'utf-8')
           const domainMatch = content.match(/domain:\s*['"]([^'"]*)['"]\s*as const/)
           const domain = domainMatch ? domainMatch[1] : ''
 
           // Add domain-based property for ALL packages (convert domain to valid property name)
           if (domain) {
-            const domainPropertyName = domain.replace(/[^a-z0-9]/gi, '_')
-            // Only add if it's different from the existing property name AND not already used
-            if (domainPropertyName !== safeVarName && !usedPropertyNames.has(domainPropertyName)) {
+            const baseDomainPropertyName = domain.replace(/[^a-z0-9]/gi, '_')
+            // Only add if it's different from the existing property name
+            if (baseDomainPropertyName !== propertyName) {
+              // Create unique domain property name to avoid collisions
+              let domainPropertyName = baseDomainPropertyName
+              let domainCounter = 1
+              while (usedPropertyNames.has(domainPropertyName)) {
+                domainPropertyName = `${baseDomainPropertyName}${domainCounter}`
+                domainCounter++
+              }
+              usedPropertyNames.add(domainPropertyName)
+
               // Quote domain property names that start with numbers or contain special chars
               const quotedDomainPropertyName = /^\d/.test(domainPropertyName) || !/^[a-z_$][\w$]*$/i.test(domainPropertyName)
                 ? `'${domainPropertyName}'`
                 : domainPropertyName
 
-              interfaceDecl += `  ${quotedDomainPropertyName}: typeof ${packageVarName}\n`
-              pantryDecl += `  ${quotedDomainPropertyName}: ${packageVarName},\n`
-              usedPropertyNames.add(domainPropertyName)
+              interfaceDecl += `  ${quotedDomainPropertyName}: typeof ${importAlias}\n`
+              pantryDecl += `  ${quotedDomainPropertyName}: ${importAlias},\n`
             }
           }
         }
@@ -726,16 +804,33 @@ async function extractAllAliases(packagesDir?: string): Promise<Record<string, s
     return allAliases
   }
 
-  // Get all TypeScript files in the packages directory
-  const files = fs.readdirSync(targetPackagesDir)
-    .filter(file => file.endsWith('.ts') && file !== 'index.ts' && file !== 'aliases.ts')
+  // Get all TypeScript files in the packages directory recursively
+  function scanForPackageFiles(dir: string, basePath = ''): string[] {
+    const files: string[] = []
+    const entries = fs.readdirSync(dir, { withFileTypes: true })
+
+    for (const entry of entries) {
+      if (entry.isFile() && entry.name.endsWith('.ts') && entry.name !== 'index.ts' && entry.name !== 'aliases.ts') {
+        files.push(path.join(dir, entry.name))
+      }
+      else if (entry.isDirectory() && !entry.name.startsWith('.')) {
+        const subDirPath = path.join(dir, entry.name)
+        const subBasePath = basePath ? `${basePath}/${entry.name}` : entry.name
+        files.push(...scanForPackageFiles(subDirPath, subBasePath))
+      }
+    }
+
+    return files
+  }
+
+  const files = scanForPackageFiles(targetPackagesDir)
 
   console.log(`Found ${files.length} package files`)
 
   // Process each file to extract aliases
   for (const file of files) {
     try {
-      const filePath = path.join(targetPackagesDir, file)
+      const filePath = file // file is already the full path
       const content = fs.readFileSync(filePath, 'utf-8')
 
       const moduleName = path.basename(file, '.ts')

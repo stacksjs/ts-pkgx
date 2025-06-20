@@ -2469,20 +2469,18 @@ export async function scanPantryPackages(pantryDir = 'src/pantry'): Promise<stri
   function scanDirectory(dir: string, basePath = ''): void {
     const entries = fs.readdirSync(dir, { withFileTypes: true })
 
+    // First, check if the current directory has a package.yml file
+    const packageYmlPath = path.join(dir, 'package.yml')
+    if (basePath && fs.existsSync(packageYmlPath)) {
+      packages.push(basePath)
+    }
+
+    // Then recursively scan subdirectories (always continue regardless of package.yml presence)
     for (const entry of entries) {
       if (entry.isDirectory() && !entry.name.startsWith('.')) {
         const currentPath = basePath ? `${basePath}/${entry.name}` : entry.name
-        const fullPath = path.join(dir, entry.name)
-
-        // Check if this directory contains package.yml
-        const packageYmlPath = path.join(fullPath, 'package.yml')
-        if (fs.existsSync(packageYmlPath)) {
-          packages.push(currentPath)
-        }
-        else {
-          // Recursively scan subdirectories
-          scanDirectory(fullPath, currentPath)
-        }
+        const subDir = path.join(dir, entry.name)
+        scanDirectory(subDir, currentPath)
       }
     }
   }
