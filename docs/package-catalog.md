@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-20T05:27:35.964Z
+- **Last Updated**: 2025-06-20T07:27:08.789Z
 
 ## Table of Contents
 
@@ -432,7 +432,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[openpolicyagentorg](./packages/openpolicyagentorg.md)** (opa) | Open Policy Agent (OPA) is an open source, general-purpose policy engine. | opa | 1.5.1 (+25) | `pkgx openpolicyagent.org` |
 | **[openrestyorg](./packages/openrestyorg.md)** () | High Performance Web Platform Based on Nginx and LuaJIT | nginx-xml2pod, opm, resty, ... (+2) | 1.25.3.2 (+0) | `pkgx openresty.org` |
 | **[opensearchorg](./packages/opensearchorg.md)** (opensearch) | 🔎 Open source distributed and RESTful search engine. | opensearch, opensearch-keystore, opensearch-plugin, ... (+1) | 3.0.0 (+10) | `pkgx opensearch.org` |
-| **[openshiftcom](./packages/openshiftcom.md)** (oc) | The OpenShift Command Line, part of OKD | oc | 4.19.0 (+225) | `pkgx openshift.com` |
+| **[openshiftcom](./packages/openshiftcom.md)** (oc) | The OpenShift Command Line, part of OKD | oc | 4.19.1 (+227) | `pkgx openshift.com` |
 | **[openslideorg](./packages/openslideorg.md)** (openslide) | C library to read whole-slide images (a.k.a. virtual slides) | openslide-quickhash1sum, openslide-show-properties, openslide-write-png | 4.0.0 (+1) | `pkgx openslide.org` |
 | **[opensshcom](./packages/opensshcom.md)** () | A package from openssh.com | scp, sftp, slogin, ... (+6) | 10.0.0 (+5) | `pkgx openssh.com` |
 | **[opensslorg](./packages/opensslorg.md)** (OpenSSL) | TLS/SSL and crypto library with QUIC APIs | openssl, c_rehash | 3.5.0 (+29) | `pkgx openssl.org` |
@@ -487,7 +487,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[riotermcom](./packages/riotermcom.md)** (rio) | A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers. | rio | 0.2.19 (+3) | `pkgx rioterm.com` |
 | **[robotframeworkorg](./packages/robotframeworkorg.md)** (robot) | Generic automation framework for acceptance testing and RPA | robot | 7.3.1 (+2) | `pkgx robotframework.org` |
 | **[rsyncsambaorg](./packages/rsyncsambaorg.md)** (rsync) | An open source utility that provides fast incremental file transfer. It also has useful features ... | rsync, rsync-ssl | 3.4.1 (+3) | `pkgx rsync.samba.org` |
-| **[rubocoporg](./packages/rubocoporg.md)** (rubocop) | A Ruby static code analyzer and formatter, based on the community Ruby style guide. | rubocop | 1.76.2 (+26) | `pkgx rubocop.org` |
+| **[rubocoporg](./packages/rubocoporg.md)** (rubocop) | A Ruby static code analyzer and formatter, based on the community Ruby style guide. | rubocop | 1.77.0 (+27) | `pkgx rubocop.org` |
 | **[runatlantisio](./packages/runatlantisio.md)** (atlantis) | Terraform Pull Request Automation tool | atlantis | 0.34.0 (+17) | `pkgx runatlantis.io` |
 | **[ryeastralsh](./packages/ryeastralsh.md)** (rye) | Experimental Package Management Solution for Python | rye | 0.44.0 (+8) | `pkgx rye.astral.sh` |
 | **[s3toolsorg](./packages/s3toolsorg.md)** (s3cmd) | Official s3cmd repo -- Command line tool for managing S3 compatible storage services (including A... | s3cmd | 2.4.0 (+1) | `pkgx s3tools.org` |

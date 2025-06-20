@@ -3,7 +3,7 @@
  *
  * @domain `openshift.com`
  * @programs `oc`
- * @version `4.19.0` (226 versions available)
+ * @version `4.19.1` (228 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install oc`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "openshift.com"
  * console.log(pkg.description) // "The OpenShift Command Line, part of OKD"
  * console.log(pkg.programs)    // ["oc"]
- * console.log(pkg.versions[0]) // "4.19.0" (latest)
+ * console.log(pkg.versions[0]) // "4.19.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openshift-com.md
@@ -69,6 +69,7 @@ export const ocPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.19.1',
     '4.19.0',
     '4.18.18',
     '4.18.17',
@@ -163,6 +164,7 @@ export const ocPackage = {
     '4.16.3',
     '4.16.2',
     '4.16.1',
+    '4.15.53',
     '4.15.52',
     '4.15.51',
     '4.15.50',

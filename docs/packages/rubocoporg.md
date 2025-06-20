@@ -31,24 +31,24 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 27 versions</summary>
+<summary>Show all 28 versions</summary>
 
-- `1.76.2`, `1.76.1`, `1.76.0`, `1.75.8`, `1.75.7`
-- `1.75.6`, `1.75.5`, `1.75.4`, `1.75.3`, `1.75.2`
-- `1.75.1`, `1.75.0`, `1.74.0`, `1.73.2`, `1.73.1`
-- `1.73.0`, `1.72.2`, `1.72.1`, `1.72.0`, `1.71.2`
-- `1.71.1`, `1.71.0`, `1.70.0`, `1.69.2`, `1.69.1`
-- `1.69.0`, `1.68.0`
+- `1.77.0`, `1.76.2`, `1.76.1`, `1.76.0`, `1.75.8`
+- `1.75.7`, `1.75.6`, `1.75.5`, `1.75.4`, `1.75.3`
+- `1.75.2`, `1.75.1`, `1.75.0`, `1.74.0`, `1.73.2`
+- `1.73.1`, `1.73.0`, `1.72.2`, `1.72.1`, `1.72.0`
+- `1.71.2`, `1.71.1`, `1.71.0`, `1.70.0`, `1.69.2`
+- `1.69.1`, `1.69.0`, `1.68.0`
 
 </details>
 
-**Latest Version**: `1.76.2`
+**Latest Version**: `1.77.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +rubocop.org@1.76.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +rubocop.org@1.77.0 -- $SHELL -i
 ```
 
 ## Dependencies
