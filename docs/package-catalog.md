@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-20T11:26:43.324Z
+- **Last Updated**: 2025-06-20T13:35:41.212Z
 
 ## Table of Contents
 
@@ -557,7 +557,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[watchexecgithubio](./packages/watchexecgithubio.md)** (watchexec) | Executes commands in response to file modifications | watchexec | 2.3.2 (+5) | `pkgx watchexec.github.io` |
 | **[wavpackcom](./packages/wavpackcom.md)** () | WavPack encode/decode library, command-line programs, and several plugins | wavpack, wvunpack, wvtag, ... (+1) | 5.8.1 (+2) | `pkgx wavpack.com` |
 | **[waylandfreedesktoporg](./packages/waylandfreedesktoporg.md)** (wayland-scanner, wayland) | A package from waylandfreedesktop.org | wayland-scanner | 1.23.92 (+7) | `pkgx wayland.freedesktop.org` |
-| **[werfio](./packages/werfio.md)** (werf) | A solution for implementing efficient and consistent software delivery to Kubernetes facilitating... | werf | 2.38.0 (+144) | `pkgx werf.io` |
+| **[werfio](./packages/werfio.md)** (werf) | A solution for implementing efficient and consistent software delivery to Kubernetes facilitating... | werf | 2.38.1 (+145) | `pkgx werf.io` |
 | **[wimlibnet](./packages/wimlibnet.md)** () | Library to create, extract, and modify Windows Imaging files | mkwinpeimg, wimappend, wimapply, ... (+15) | 1.14.4 (+2) | `pkgx wimlib.net` |
 | **[wiresharkorg](./packages/wiresharkorg.md)** () | Network analyzer and capture tool - without graphical user interface | capinfos, captype, dumpcap, ... (+10) | 4.4.7 (+31) | `pkgx wireshark.org` |
 | **[wundergraphcom](./packages/wundergraphcom.md)** (wunderctl) | WunderGraph is a Backend for Frontend Framework to optimize frontend, fullstack and backend devel... | wunderctl | 0.181.0 (+19) | `pkgx wundergraph.com` |
