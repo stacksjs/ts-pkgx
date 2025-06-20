@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-20T14:28:30.947Z
+- **Last Updated**: 2025-06-20T15:27:33.049Z
 
 ## Table of Contents
 
@@ -529,7 +529,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[tcpdumporg](./packages/tcpdumporg.md)** (pcap-config) | the LIBpcap interface to various kernel packet capture mechanism | pcap-config | 1.10.5 (+1) | `pkgx tcpdump.org` |
 | **[tcshorg](./packages/tcshorg.md)** () | Enhanced, fully compatible version of the Berkeley C shell | csh, tcsh | 6.24.15 (+0) | `pkgx tcsh.org` |
 | **[temporalio](./packages/temporalio.md)** (temporal) | Command-line interface for running Temporal Server and interacting with Workflows, Activities, Na... | temporal | 1.3.0 (+13) | `pkgx temporal.io` |
-| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** (terragrunt) | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.8 (+352) | `pkgx terragrunt.gruntwork.io` |
+| **[terragruntgruntworkio](./packages/terragruntgruntworkio.md)** (terragrunt) | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.81.9 (+353) | `pkgx terragrunt.gruntwork.io` |
 | **[terratagio](./packages/terratagio.md)** (terratag) | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag.io` |
 | **[theoraorg](./packages/theoraorg.md)** () | A package from theora.org | - | 1.2.0 (+1) | `pkgx theora.org` |
 | **[tidbytcom](./packages/tidbytcom.md)** (pixlet) | Build apps for pixel-based displays ✨ | pixlet | 0.34.0 (+19) | `pkgx tidbyt.com` |
