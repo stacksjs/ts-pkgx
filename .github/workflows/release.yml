@@ -6,7 +6,7 @@ on:
       - 'v*'
   schedule:
     # Check for unreleased commits every 2 hours
-    - cron: '0 */2 * * *'
+    - cron: '0 */6 * * *'
   # Allow manual trigger
   workflow_dispatch:
 
