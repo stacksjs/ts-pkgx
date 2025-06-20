@@ -3,7 +3,7 @@
  *
  * @domain `rioterm.com`
  * @programs `rio`
- * @version `0.2.19` (4 versions available)
+ * @version `0.2.20` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rio`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "rioterm.com"
  * console.log(pkg.description) // "A hardware-accelerated GPU terminal emulator fo..."
  * console.log(pkg.programs)    // ["rio"]
- * console.log(pkg.versions[0]) // "0.2.19" (latest)
+ * console.log(pkg.versions[0]) // "0.2.20" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rioterm-com.md
@@ -62,6 +62,7 @@ export const rioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.2.20',
     '0.2.19',
     '0.2.18',
     '0.2.17',
