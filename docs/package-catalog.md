@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 453
 - **Categories**: 13
-- **Last Updated**: 2025-06-20T08:34:55.095Z
+- **Last Updated**: 2025-06-20T09:27:33.894Z
 
 ## Table of Contents
 
@@ -261,7 +261,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[eksctlio](./packages/eksctlio.md)** (eksctl) | Simple command-line tool for creating clusters on Amazon EKS | eksctl | 0.210.0 (+56) | `pkgx eksctl.io` |
 | **[elementsprojectorg](./packages/elementsprojectorg.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.0 (+8) | `pkgx elementsproject.org` |
 | **[elfutilsorg](./packages/elfutilsorg.md)** () | A package from elfutils.org | eu-addr2line, eu-ar, eu-elfclassify, ... (+13) | 0.193.0 (+4) | `pkgx elfutils.org` |
-| **[elizaosgithubio](./packages/elizaosgithubio.md)** (eliza, elizaOS) | Autonomous agents for everyone | eliza | 1.0.10 (+11) | `pkgx elizaOS.github.io` |
+| **[elizaosgithubio](./packages/elizaosgithubio.md)** (eliza, elizaOS) | Autonomous agents for everyone | eliza | 1.0.11 (+12) | `pkgx elizaOS.github.io` |
 | **[elvsh](./packages/elvsh.md)** (elvish) | Powerful scripting language & versatile interactive shell | elvish | 0.21.0 (+3) | `pkgx elv.sh` |
 | **[encoredev](./packages/encoredev.md)** () | Open Source Development Platform for building robust type-safe distributed systems with declarati... | encore, git-remote-encore | 1.48.4 (+54) | `pkgx encore.dev` |
 | **[etcdio](./packages/etcdio.md)** (etcd) | Distributed reliable key-value store for the most critical data of a distributed system | etcd, etcdctl | 3.6.1 (+11) | `pkgx etcd.io` |
