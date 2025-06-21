@@ -3,7 +3,7 @@
  *
  * @domain `coder.com/code-server`
  * @programs `code-server`
- * @version `4.100.3` (36 versions available)
+ * @version `4.101.0` (37 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install code-server`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "code-server"
  * console.log(pkg.description) // "Access VS Code through the browser"
  * console.log(pkg.programs)    // ["code-server"]
- * console.log(pkg.versions[0]) // "4.100.3" (latest)
+ * console.log(pkg.versions[0]) // "4.101.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/coder-com/code-server.md
@@ -74,6 +74,7 @@ export const codeserverPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.101.0',
     '4.100.3',
     '4.100.2',
     '4.100.1',
