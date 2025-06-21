@@ -3,7 +3,7 @@
  *
  * @domain `pygments.org`
  * @programs `pygmentize`
- * @version `2.19.1` (8 versions available)
+ * @version `2.19.2` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pygmentize`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "pygments.org"
  * console.log(pkg.description) // "Pygments is a generic syntax highlighter writte..."
  * console.log(pkg.programs)    // ["pygmentize"]
- * console.log(pkg.versions[0]) // "2.19.1" (latest)
+ * console.log(pkg.versions[0]) // "2.19.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pygments-org.md
@@ -69,6 +69,7 @@ export const pygmentizePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.19.2',
     '2.19.1',
     '2.19.0',
     '2.18.0',
