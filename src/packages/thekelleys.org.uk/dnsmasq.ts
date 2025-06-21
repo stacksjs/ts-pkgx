@@ -1,23 +1,32 @@
 /**
- * **dnsmasq** - Package from pantry: thekelleys.org.uk/dnsmasq
+ * **dnsmasq** - pkgx package
  *
  * @domain `thekelleys.org.uk/dnsmasq`
+ * @programs `dnsmasq`
+ * @version `2.91.0` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install thekelleys.org.uk/dnsmasq`
+ * @install `launchpad install dnsmasq`
+ * @name `dnsmasq`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.thekelleysorgukdnsmasq
+ * // Access the package
+ * const pkg = pantry.dnsmasq
+ * // Or access via domain
+ * const samePkg = pantry.thekelleysorgukdnsmasq
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "dnsmasq"
- * console.log(pkg.description) // "Package from pantry: thekelleys.org.uk/dnsmasq"
+ * console.log(pkg.programs)    // ["dnsmasq"]
+ * console.log(pkg.versions[0]) // "2.91.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/thekelleys-org-uk/dnsmasq.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const thekelleysorgukdnsmasqPackage = {
+export const dnsmasqPackage = {
   /**
    * The display name of this package.
    */
@@ -29,19 +38,38 @@ export const thekelleysorgukdnsmasqPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: thekelleys.org.uk/dnsmasq' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/thekelleys.org.uk/dnsmasq/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install thekelleys.org.uk/dnsmasq' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install dnsmasq' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'dnsmasq',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/thekelleys.org.uk/dnsmasq/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.91.0',
+    '2.90.0',
+    '2.89.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
 }
 
-export type ThekelleysorgukdnsmasqPackage = typeof thekelleysorgukdnsmasqPackage
+export type DnsmasqPackage = typeof dnsmasqPackage

@@ -1,24 +1,34 @@
 /**
- * **zsh.sourceforge.io** - Package from pantry: zsh.sourceforge.io
+ * **zsh** - UNIX shell (command interpreter)
  *
  * @domain `zsh.sourceforge.io`
+ * @programs `zsh`
+ * @version `5.9.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install zsh.sourceforge.io`
+ * @install `launchpad install zsh`
+ * @aliases `zsh`
  * @dependencies `invisible-island.net/ncurses`, `pcre.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.zshsourceforgeio
+ * // Access via alias (recommended)
+ * const pkg = pantry.zsh
+ * // Or access via domain
+ * const samePkg = pantry.zshsourceforgeio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "zsh.sourceforge.io"
- * console.log(pkg.description) // "Package from pantry: zsh.sourceforge.io"
+ * console.log(pkg.description) // "UNIX shell (command interpreter)"
+ * console.log(pkg.programs)    // ["zsh"]
+ * console.log(pkg.versions[0]) // "5.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/zsh-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zshsourceforgeioPackage = {
+export const zshPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const zshsourceforgeioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: zsh.sourceforge.io' as const,
+  description: 'UNIX shell (command interpreter)' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/zsh.sourceforge.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install zsh.sourceforge.io' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install zsh' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'zsh',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -46,10 +65,20 @@ export const zshsourceforgeioPackage = {
     'invisible-island.net/ncurses',
     'pcre.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/zsh.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.9.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'zsh',
+  ] as const,
 }
 
-export type ZshsourceforgeioPackage = typeof zshsourceforgeioPackage
+export type ZshPackage = typeof zshPackage

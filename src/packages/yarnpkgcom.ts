@@ -1,18 +1,28 @@
 /**
- * **yarn** - Package from pantry: yarnpkg.com
+ * **yarn** - 📦🐈 Active development trunk for Yarn ⚒
  *
  * @domain `yarnpkg.com`
+ * @programs `yarn`, `yarnpkg`
+ * @version `4.9.2` (40 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install yarnpkg.com`
+ * @install `launchpad install +yarnpkg.com -- $SHELL -i`
+ * @aliases `yarn`
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.yarnpkgcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.yarn
+ * // Or access via domain
+ * const samePkg = pantry.yarnpkgcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "yarnpkg.com"
- * console.log(pkg.description) // "Package from pantry: yarnpkg.com"
+ * console.log(pkg.description) // "📦🐈 Active development trunk for Yarn ⚒"
+ * console.log(pkg.programs)    // ["yarn", "yarnpkg"]
+ * console.log(pkg.versions[0]) // "4.9.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/yarnpkg-com.md
@@ -30,13 +40,23 @@ export const yarnPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: yarnpkg.com' as const,
+  description: '📦🐈 Active development trunk for Yarn ⚒' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install yarnpkg.com' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +yarnpkg.com -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'yarn',
+    'yarnpkg',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +65,59 @@ export const yarnPackage = {
   dependencies: [
     'nodejs.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '4.9.2',
+    '4.9.1',
+    '4.9.0',
+    '4.8.1',
+    '4.8.0',
+    '4.7.0',
+    '4.6.0',
+    '4.5.3',
+    '4.5.2',
+    '4.5.1',
+    '4.5.0',
+    '4.4.1',
+    '4.4.0',
+    '4.3.1',
+    '4.3.0',
+    '4.2.2',
+    '4.2.1',
+    '4.2.0',
+    '4.1.1',
+    '4.1.0',
+    '4.0.2',
+    '4.0.1',
+    '4.0.0',
+    '3.8.7',
+    '3.8.6',
+    '3.8.5',
+    '3.8.4',
+    '3.8.3',
+    '3.8.2',
+    '3.8.1',
+    '3.8.0',
+    '3.7.0',
+    '3.6.4',
+    '3.6.3',
+    '3.6.2',
+    '3.6.1',
+    '3.6.0',
+    '3.5.1',
+    '3.5.0',
+    '3.4.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'yarn',
+  ] as const,
 }
 
 export type YarnPackage = typeof yarnPackage

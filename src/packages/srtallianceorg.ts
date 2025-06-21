@@ -1,24 +1,34 @@
 /**
- * **srtalliance.org** - Package from pantry: srtalliance.org
+ * **srt** - Secure, Reliable, Transport
  *
  * @domain `srtalliance.org`
+ * @programs `srt-ffplay`, `srt-file-transmit`, `srt-live-transmit`, `srt-tunnel`
+ * @version `1.5.4` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install srtalliance.org`
+ * @install `launchpad install +srtalliance.org -- $SHELL -i`
+ * @aliases `srt`
  * @dependencies `openssl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.srtallianceorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.srt
+ * // Or access via domain
+ * const samePkg = pantry.srtallianceorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "srtalliance.org"
- * console.log(pkg.description) // "Package from pantry: srtalliance.org"
+ * console.log(pkg.description) // "Secure, Reliable, Transport"
+ * console.log(pkg.programs)    // ["srt-ffplay", "srt-file-transmit", ...]
+ * console.log(pkg.versions[0]) // "1.5.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/srtalliance-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const srtallianceorgPackage = {
+export const srtPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,25 @@ export const srtallianceorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: srtalliance.org' as const,
+  description: 'Secure, Reliable, Transport' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/srtalliance.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install srtalliance.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +srtalliance.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'srt-ffplay',
+    'srt-file-transmit',
+    'srt-live-transmit',
+    'srt-tunnel',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +67,22 @@ export const srtallianceorgPackage = {
   dependencies: [
     'openssl.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/srtalliance.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.5.4',
+    '1.5.3',
+    '1.5.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'srt',
+  ] as const,
 }
 
-export type SrtallianceorgPackage = typeof srtallianceorgPackage
+export type SrtPackage = typeof srtPackage

@@ -1,9 +1,11 @@
 /**
- * **xt** - Package from pantry: x.org/xt
+ * **xt** - pkgx package
  *
  * @domain `x.org/xt`
+ * @version `1.3.1` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install x.org/xt`
+ * @install `launchpad install +x.org/xt -- $SHELL -i`
  * @dependencies `x.org/ice`, `x.org/sm`, `x.org/x11`
  *
  * @example
@@ -12,7 +14,7 @@
  *
  * const pkg = pantry.xorgxt
  * console.log(pkg.name)        // "xt"
- * console.log(pkg.description) // "Package from pantry: x.org/xt"
+ * console.log(pkg.versions[0]) // "1.3.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xt.md
@@ -30,12 +32,15 @@ export const xorgxtPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: x.org/xt' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xt/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install x.org/xt' as const,
+  installCommand: 'launchpad install +x.org/xt -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -47,10 +52,15 @@ export const xorgxtPackage = {
     'x.org/sm',
     'x.org/x11',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xt/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.3.1',
+    '1.3.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type XorgxtPackage = typeof xorgxtPackage

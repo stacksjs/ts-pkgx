@@ -1,9 +1,11 @@
 /**
- * **pciaccess** - Package from pantry: x.org/pciaccess
+ * **pciaccess** - pkgx package
  *
  * @domain `x.org/pciaccess`
+ * @version `0.17.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install x.org/pciaccess`
+ * @install `launchpad install +x.org/pciaccess -- $SHELL -i`
  *
  * @example
  * ```typescript
@@ -11,7 +13,7 @@
  *
  * const pkg = pantry.xorgpciaccess
  * console.log(pkg.name)        // "pciaccess"
- * console.log(pkg.description) // "Package from pantry: x.org/pciaccess"
+ * console.log(pkg.versions[0]) // "0.17.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/pciaccess.md
@@ -29,19 +31,26 @@ export const xorgpciaccessPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: x.org/pciaccess' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/pciaccess/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install x.org/pciaccess' as const,
+  installCommand: 'launchpad install +x.org/pciaccess -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/pciaccess/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.17.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type XorgpciaccessPackage = typeof xorgpciaccessPackage

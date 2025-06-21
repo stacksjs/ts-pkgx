@@ -1,9 +1,11 @@
 /**
- * **xinerama** - Package from pantry: x.org/xinerama
+ * **xinerama** - pkgx package
  *
  * @domain `x.org/xinerama`
+ * @version `1.1.5` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install x.org/xinerama`
+ * @install `launchpad install +x.org/xinerama -- $SHELL -i`
  * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`
  *
  * @example
@@ -12,7 +14,7 @@
  *
  * const pkg = pantry.xorgxinerama
  * console.log(pkg.name)        // "xinerama"
- * console.log(pkg.description) // "Package from pantry: x.org/xinerama"
+ * console.log(pkg.versions[0]) // "1.1.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xinerama.md
@@ -30,12 +32,15 @@ export const xorgxineramaPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: x.org/xinerama' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xinerama/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install x.org/xinerama' as const,
+  installCommand: 'launchpad install +x.org/xinerama -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -47,10 +52,14 @@ export const xorgxineramaPackage = {
     'x.org/protocol',
     'x.org/exts',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xinerama/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.1.5',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type XorgxineramaPackage = typeof xorgxineramaPackage

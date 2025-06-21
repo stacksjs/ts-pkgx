@@ -1,9 +1,11 @@
 /**
- * **libaio** - Package from pantry: pagure.io/libaio
+ * **libaio** - pkgx package
  *
  * @domain `pagure.io/libaio`
+ * @version `0.3.113` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install pagure.io/libaio`
+ * @install `launchpad install +pagure.io/libaio -- $SHELL -i`
  *
  * @example
  * ```typescript
@@ -11,7 +13,7 @@
  *
  * const pkg = pantry.pagureiolibaio
  * console.log(pkg.name)        // "libaio"
- * console.log(pkg.description) // "Package from pantry: pagure.io/libaio"
+ * console.log(pkg.versions[0]) // "0.3.113" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pagure-io/libaio.md
@@ -29,19 +31,26 @@ export const pagureiolibaioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: pagure.io/libaio' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pagure.io/libaio/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pagure.io/libaio' as const,
+  installCommand: 'launchpad install +pagure.io/libaio -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pagure.io/libaio/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.3.113',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type PagureiolibaioPackage = typeof pagureiolibaioPackage

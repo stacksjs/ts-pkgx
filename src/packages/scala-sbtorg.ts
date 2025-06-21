@@ -1,24 +1,34 @@
 /**
- * **scala-sbt.org** - Package from pantry: scala-sbt.org
+ * **sbt** - sbt, the interactive build tool
  *
  * @domain `scala-sbt.org`
+ * @programs `sbt`
+ * @version `1.11.2` (21 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install scala-sbt.org`
+ * @install `launchpad install sbt`
+ * @aliases `sbt`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.scalasbtorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.sbt
+ * // Or access via domain
+ * const samePkg = pantry.scalasbtorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "scala-sbt.org"
- * console.log(pkg.description) // "Package from pantry: scala-sbt.org"
+ * console.log(pkg.description) // "sbt, the interactive build tool"
+ * console.log(pkg.programs)    // ["sbt"]
+ * console.log(pkg.versions[0]) // "1.11.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/scala-sbt-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const scalasbtorgPackage = {
+export const sbtPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const scalasbtorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: scala-sbt.org' as const,
+  description: 'sbt, the interactive build tool' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/scala-sbt.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install scala-sbt.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install sbt' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'sbt',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +64,40 @@ export const scalasbtorgPackage = {
   dependencies: [
     'openjdk.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/scala-sbt.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.11.2',
+    '1.11.1',
+    '1.11.0',
+    '1.10.11',
+    '1.10.10',
+    '1.10.9',
+    '1.10.7',
+    '1.10.6',
+    '1.10.5',
+    '1.10.4',
+    '1.10.3',
+    '1.10.2',
+    '1.10.1',
+    '1.10.0',
+    '1.9.9',
+    '1.9.8',
+    '1.9.7',
+    '1.9.6',
+    '1.9.5',
+    '1.9.4',
+    '1.9.3',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'sbt',
+  ] as const,
 }
 
-export type ScalasbtorgPackage = typeof scalasbtorgPackage
+export type SbtPackage = typeof sbtPackage

@@ -1,9 +1,11 @@
 /**
- * **packaging** - Package from pantry: pypa.io/packaging
+ * **packaging** - Core utilities for Python packages
  *
  * @domain `pypa.io/packaging`
+ * @version `25.0.0` (5 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install pypa.io/packaging`
+ * @install `launchpad install +pypa.io/packaging -- $SHELL -i`
  * @dependencies `python.org>=3.11`
  *
  * @example
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.pypaiopackaging
  * console.log(pkg.name)        // "packaging"
- * console.log(pkg.description) // "Package from pantry: pypa.io/packaging"
+ * console.log(pkg.description) // "Core utilities for Python packages"
+ * console.log(pkg.versions[0]) // "25.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pypa-io/packaging.md
@@ -30,12 +33,15 @@ export const pypaiopackagingPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: pypa.io/packaging' as const,
+  description: 'Core utilities for Python packages' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/packaging/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pypa/packaging' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pypa.io/packaging' as const,
+  installCommand: 'launchpad install +pypa.io/packaging -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -45,10 +51,18 @@ export const pypaiopackagingPackage = {
   dependencies: [
     'python.org>=3.11',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/packaging/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '25.0.0',
+    '24.2.0',
+    '24.1.0',
+    '24.0.0',
+    '23.2.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type PypaiopackagingPackage = typeof pypaiopackagingPackage

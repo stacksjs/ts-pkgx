@@ -1,24 +1,34 @@
 /**
- * **pkg** - Package from pantry: vercel.com/pkg
+ * **pkg** - Package your Node.js project into an executable
  *
  * @domain `vercel.com/pkg`
+ * @programs `pkg`
+ * @version `5.8.1` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install vercel.com/pkg`
+ * @install `launchpad install pkg`
+ * @name `pkg`
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.vercelcompkg
+ * // Access the package
+ * const pkg = pantry.pkg
+ * // Or access via domain
+ * const samePkg = pantry.vercelcompkg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pkg"
- * console.log(pkg.description) // "Package from pantry: vercel.com/pkg"
+ * console.log(pkg.description) // "Package your Node.js project into an executable"
+ * console.log(pkg.programs)    // ["pkg"]
+ * console.log(pkg.versions[0]) // "5.8.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/vercel-com/pkg.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vercelcompkgPackage = {
+export const pkgPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const vercelcompkgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: vercel.com/pkg' as const,
+  description: 'Package your Node.js project into an executable' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vercel.com/pkg/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install vercel.com/pkg' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install pkg' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'pkg',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +64,18 @@ export const vercelcompkgPackage = {
   dependencies: [
     'nodejs.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vercel.com/pkg/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.8.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
 }
 
-export type VercelcompkgPackage = typeof vercelcompkgPackage
+export type PkgPackage = typeof pkgPackage

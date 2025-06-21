@@ -1,9 +1,12 @@
 /**
- * **perl.org** - Package from pantry: perl.org
+ * **perl.org** - Highly capable, feature-rich programming language
  *
  * @domain `perl.org`
+ * @programs `corelist`, `cpan`, `enc2xs`, `encguess`, `h2ph`, ... (+25 more)
+ * @version `5.40.2` (14 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install perl.org`
+ * @install `launchpad install +perl.org -- $SHELL -i`
  *
  * @example
  * ```typescript
@@ -11,7 +14,9 @@
  *
  * const pkg = pantry.perlorg
  * console.log(pkg.name)        // "perl.org"
- * console.log(pkg.description) // "Package from pantry: perl.org"
+ * console.log(pkg.description) // "Highly capable, feature-rich programming language"
+ * console.log(pkg.programs)    // ["corelist", "cpan", ...]
+ * console.log(pkg.versions[0]) // "5.40.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/perl-org.md
@@ -29,19 +34,74 @@ export const perlorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: perl.org' as const,
+  description: 'Highly capable, feature-rich programming language' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/perl.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install perl.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +perl.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'corelist',
+    'cpan',
+    'enc2xs',
+    'encguess',
+    'h2ph',
+    'h2xs',
+    'instmodsh',
+    'json_pp',
+    'libnetcfg',
+    'perl',
+    'perlbug',
+    'perldoc',
+    'perlivp',
+    'perlthanks',
+    'piconv',
+    'pl2pm',
+    'pod2html',
+    'pod2man',
+    'pod2text',
+    'pod2usage',
+    'podchecker',
+    'prove',
+    'ptar',
+    'ptardiff',
+    'ptargrep',
+    'shasum',
+    'splain',
+    'streamzip',
+    'xsubpp',
+    'zipdetails',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/perl.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.40.2',
+    '5.40.1',
+    '5.40.0',
+    '5.38.4',
+    '5.38.3',
+    '5.38.2',
+    '5.38.1',
+    '5.38.0',
+    '5.36.3',
+    '5.36.2',
+    '5.36.1',
+    '5.36.0',
+    '5.34.3',
+    '5.34.2',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type PerlorgPackage = typeof perlorgPackage

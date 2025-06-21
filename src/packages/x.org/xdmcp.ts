@@ -1,9 +1,11 @@
 /**
- * **xdmcp** - Package from pantry: x.org/xdmcp
+ * **xdmcp** - pkgx package
  *
  * @domain `x.org/xdmcp`
+ * @version `1.1.5` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install x.org/xdmcp`
+ * @install `launchpad install +x.org/xdmcp -- $SHELL -i`
  * @dependencies `x.org/protocol`
  *
  * @example
@@ -12,7 +14,7 @@
  *
  * const pkg = pantry.xorgxdmcp
  * console.log(pkg.name)        // "xdmcp"
- * console.log(pkg.description) // "Package from pantry: x.org/xdmcp"
+ * console.log(pkg.versions[0]) // "1.1.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xdmcp.md
@@ -30,12 +32,15 @@ export const xorgxdmcpPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: x.org/xdmcp' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xdmcp/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install x.org/xdmcp' as const,
+  installCommand: 'launchpad install +x.org/xdmcp -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -45,10 +50,15 @@ export const xorgxdmcpPackage = {
   dependencies: [
     'x.org/protocol',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xdmcp/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.1.5',
+    '1.1.4',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type XorgxdmcpPackage = typeof xorgxdmcpPackage

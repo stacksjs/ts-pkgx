@@ -1,9 +1,12 @@
 /**
- * **postgresql.org** - Package from pantry: postgresql.org
+ * **postgresql.org** - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
  *
  * @domain `postgresql.org`
+ * @programs `clusterdb`, `createdb`, `dropdb`, `dropuser`, `ecpg`, ... (+23 more)
+ * @version `17.2.0` (12 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install postgresql.org`
+ * @install `launchpad install +postgresql.org -- $SHELL -i`
  * @dependencies `openssl.org^1.0.1`, `gnu.org/readline`, `zlib.net`, ... (+4 more)
  *
  * @example
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.postgresqlorg
  * console.log(pkg.name)        // "postgresql.org"
- * console.log(pkg.description) // "Package from pantry: postgresql.org"
+ * console.log(pkg.description) // "Mirror of the official PostgreSQL GIT repositor..."
+ * console.log(pkg.programs)    // ["clusterdb", "createdb", ...]
+ * console.log(pkg.versions[0]) // "17.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/postgresql-org.md
@@ -30,13 +35,49 @@ export const postgresqlorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: postgresql.org' as const,
+  description: 'Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don\'t work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/postgresql.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install postgresql.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +postgresql.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'clusterdb',
+    'createdb',
+    'dropdb',
+    'dropuser',
+    'ecpg',
+    'initdb',
+    'pg_archivecleanup',
+    'pg_basebackup',
+    'pg_config',
+    'pg_controldata',
+    'pg_ctl',
+    'pg_dump',
+    'pg_dumpall',
+    'pg_isready',
+    'pg_receivewal',
+    'pg_recvlogical',
+    'pg_resetwal',
+    'pg_restore',
+    'pg_rewind',
+    'pg_test_fsync',
+    'pg_test_timing',
+    'pg_upgrade',
+    'pg_waldump',
+    'pgbench',
+    'postgres',
+    'psql',
+    'reindexdb',
+    'vacuumdb',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -51,10 +92,25 @@ export const postgresqlorgPackage = {
     'gnome.org/libxslt',
     'unicode.org^73',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/postgresql.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '17.2.0',
+    '17.0.0',
+    '16.1.0',
+    '16.0.0',
+    '15.2.0',
+    '14.7.0',
+    '13.12.0',
+    '13.11.0',
+    '13.9.0',
+    '13.1.0',
+    '12.14.0',
+    '11.19.0',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type PostgresqlorgPackage = typeof postgresqlorgPackage

@@ -1,24 +1,34 @@
 /**
- * **gitsign** - Package from pantry: sigstore.dev/gitsign
+ * **gitsign** - Keyless Git signing using Sigstore
  *
  * @domain `sigstore.dev/gitsign`
+ * @programs `gitsign`, `gitsign-credential-cache`
+ * @version `0.13.0` (10 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install sigstore.dev/gitsign`
+ * @install `launchpad install +sigstore.dev/gitsign -- $SHELL -i`
+ * @name `gitsign`
  * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.sigstoredevgitsign
+ * // Access the package
+ * const pkg = pantry.gitsign
+ * // Or access via domain
+ * const samePkg = pantry.sigstoredevgitsign
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gitsign"
- * console.log(pkg.description) // "Package from pantry: sigstore.dev/gitsign"
+ * console.log(pkg.description) // "Keyless Git signing using Sigstore"
+ * console.log(pkg.programs)    // ["gitsign", "gitsign-credential-cache"]
+ * console.log(pkg.versions[0]) // "0.13.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sigstore-dev/gitsign.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sigstoredevgitsignPackage = {
+export const gitsignPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,23 @@ export const sigstoredevgitsignPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: sigstore.dev/gitsign' as const,
+  description: 'Keyless Git signing using Sigstore' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sigstore.dev/gitsign/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sigstore.dev/gitsign' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +sigstore.dev/gitsign -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gitsign',
+    'gitsign-credential-cache',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +65,27 @@ export const sigstoredevgitsignPackage = {
   dependencies: [
     'git-scm.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sigstore.dev/gitsign/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.13.0',
+    '0.12.0',
+    '0.11.0',
+    '0.10.2',
+    '0.10.1',
+    '0.10.0',
+    '0.9.0',
+    '0.8.1',
+    '0.8.0',
+    '0.7.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
 }
 
-export type SigstoredevgitsignPackage = typeof sigstoredevgitsignPackage
+export type GitsignPackage = typeof gitsignPackage

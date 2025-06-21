@@ -1,24 +1,34 @@
 /**
- * **sshx.io** - Package from pantry: sshx.io
+ * **sshx** - Fast, collaborative live terminal sharing over the web
  *
  * @domain `sshx.io`
+ * @programs `sshx`
+ * @version `2023.11.14` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install sshx.io`
+ * @install `launchpad install sshx`
+ * @aliases `sshx`
  * @dependencies `protobuf.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.sshxio
+ * // Access via alias (recommended)
+ * const pkg = pantry.sshx
+ * // Or access via domain
+ * const samePkg = pantry.sshxio
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "sshx.io"
- * console.log(pkg.description) // "Package from pantry: sshx.io"
+ * console.log(pkg.description) // "Fast, collaborative live terminal sharing over ..."
+ * console.log(pkg.programs)    // ["sshx"]
+ * console.log(pkg.versions[0]) // "2023.11.14" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sshx-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sshxioPackage = {
+export const sshxPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const sshxioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: sshx.io' as const,
+  description: 'Fast, collaborative live terminal sharing over the web' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sshx.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sshx.io' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install sshx' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'sshx',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +64,20 @@ export const sshxioPackage = {
   dependencies: [
     'protobuf.dev',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sshx.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2023.11.14',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'sshx',
+  ] as const,
 }
 
-export type SshxioPackage = typeof sshxioPackage
+export type SshxPackage = typeof sshxPackage

@@ -1,24 +1,35 @@
 /**
- * **scie-pants** - Package from pantry: pantsbuild.org/scie-pants
+ * **pants** - Protects your Pants from the elements.
  *
  * @domain `pantsbuild.org/scie-pants`
+ * @programs `pants`
+ * @version `0.12.3` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install pantsbuild.org/scie-pants`
+ * @install `launchpad install pants`
+ * @name `scie-pants`
+ * @aliases `pants`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pantsbuildorgsciepants
+ * // Access via alias (recommended)
+ * const pkg = pantry.pants
+ * // Or access via domain
+ * const samePkg = pantry.pantsbuildorgsciepants
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "scie-pants"
- * console.log(pkg.description) // "Package from pantry: pantsbuild.org/scie-pants"
+ * console.log(pkg.description) // "Protects your Pants from the elements."
+ * console.log(pkg.programs)    // ["pants"]
+ * console.log(pkg.versions[0]) // "0.12.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pantsbuild-org/scie-pants.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pantsbuildorgsciepantsPackage = {
+export const pantsPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +41,22 @@ export const pantsbuildorgsciepantsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: pantsbuild.org/scie-pants' as const,
+  description: 'Protects your Pants from the elements.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pantsbuild.org/scie-pants/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pantsbuild.org/scie-pants' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install pants' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'pants',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +65,23 @@ export const pantsbuildorgsciepantsPackage = {
   dependencies: [
     'curl.se/ca-certs',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pantsbuild.org/scie-pants/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.12.3',
+    '0.12.2',
+    '0.12.1',
+    '0.12.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'pants',
+  ] as const,
 }
 
-export type PantsbuildorgsciepantsPackage = typeof pantsbuildorgsciepantsPackage
+export type PantsPackage = typeof pantsPackage

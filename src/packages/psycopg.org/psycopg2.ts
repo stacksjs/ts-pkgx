@@ -1,9 +1,11 @@
 /**
- * **psycopg2** - Package from pantry: psycopg.org/psycopg2
+ * **psycopg2** - PostgreSQL database adapter for the Python programming language
  *
  * @domain `psycopg.org/psycopg2`
+ * @version `2.9.10` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install psycopg.org/psycopg2`
+ * @install `launchpad install +psycopg.org/psycopg2 -- $SHELL -i`
  * @dependencies `python.org~3.11`, `postgresql.org`
  *
  * @example
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.psycopgorgpsycopg2
  * console.log(pkg.name)        // "psycopg2"
- * console.log(pkg.description) // "Package from pantry: psycopg.org/psycopg2"
+ * console.log(pkg.description) // "PostgreSQL database adapter for the Python prog..."
+ * console.log(pkg.versions[0]) // "2.9.10" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/psycopg-org/psycopg2.md
@@ -30,12 +33,15 @@ export const psycopgorgpsycopg2Package = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: psycopg.org/psycopg2' as const,
+  description: 'PostgreSQL database adapter for the Python programming language' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/psycopg.org/psycopg2/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/psycopg/psycopg2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install psycopg.org/psycopg2' as const,
+  installCommand: 'launchpad install +psycopg.org/psycopg2 -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -46,10 +52,15 @@ export const psycopgorgpsycopg2Package = {
     'python.org~3.11',
     'postgresql.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/psycopg.org/psycopg2/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.9.10',
+    '2.9.9',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type Psycopgorgpsycopg2Package = typeof psycopgorgpsycopg2Package

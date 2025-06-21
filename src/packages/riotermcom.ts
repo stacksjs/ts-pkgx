@@ -1,23 +1,33 @@
 /**
- * **rioterm.com** - Package from pantry: rioterm.com
+ * **rio** - A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers.
  *
  * @domain `rioterm.com`
+ * @programs `rio`
+ * @version `0.2.20` (5 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install rioterm.com`
+ * @install `launchpad install rio`
+ * @aliases `rio`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.riotermcom
+ * // Access via alias (recommended)
+ * const pkg = pantry.rio
+ * // Or access via domain
+ * const samePkg = pantry.riotermcom
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "rioterm.com"
- * console.log(pkg.description) // "Package from pantry: rioterm.com"
+ * console.log(pkg.description) // "A hardware-accelerated GPU terminal emulator fo..."
+ * console.log(pkg.programs)    // ["rio"]
+ * console.log(pkg.versions[0]) // "0.2.20" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rioterm-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const riotermcomPackage = {
+export const rioPackage = {
   /**
    * The display name of this package.
    */
@@ -29,19 +39,42 @@ export const riotermcomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: rioterm.com' as const,
+  description: 'A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rioterm.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rioterm.com' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install rio' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'rio',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rioterm.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.2.20',
+    '0.2.19',
+    '0.2.18',
+    '0.2.17',
+    '0.2.16',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'rio',
+  ] as const,
 }
 
-export type RiotermcomPackage = typeof riotermcomPackage
+export type RioPackage = typeof rioPackage

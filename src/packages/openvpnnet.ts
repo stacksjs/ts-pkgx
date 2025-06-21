@@ -1,24 +1,33 @@
 /**
- * **openvpn.net** - Package from pantry: openvpn.net
+ * **openvpn** - pkgx package
  *
  * @domain `openvpn.net`
+ * @programs `openvpn`
+ * @version `2.6.14` (12 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install openvpn.net`
+ * @install `launchpad install openvpn`
+ * @aliases `openvpn`
  * @dependencies `lz4.org^1.9`, `oberhumer.com/lzo^2.10`, `openssl.org^1.1`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.openvpnnet
+ * // Access via alias (recommended)
+ * const pkg = pantry.openvpn
+ * // Or access via domain
+ * const samePkg = pantry.openvpnnet
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "openvpn.net"
- * console.log(pkg.description) // "Package from pantry: openvpn.net"
+ * console.log(pkg.programs)    // ["openvpn"]
+ * console.log(pkg.versions[0]) // "2.6.14" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openvpn-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openvpnnetPackage = {
+export const openvpnPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +39,22 @@ export const openvpnnetPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: openvpn.net' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openvpn.net/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install openvpn.net' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install openvpn' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'openvpn',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -50,10 +68,31 @@ export const openvpnnetPackage = {
     'linux:sourceforge.net/net-tools',
     'linux:github.com/thom311/libnl',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openvpn.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.6.14',
+    '2.6.13',
+    '2.6.12',
+    '2.6.11',
+    '2.6.10',
+    '2.6.9',
+    '2.6.8',
+    '2.6.7',
+    '2.6.6',
+    '2.6.5',
+    '2.6.4',
+    '2.5.10',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'openvpn',
+  ] as const,
 }
 
-export type OpenvpnnetPackage = typeof openvpnnetPackage
+export type OpenvpnPackage = typeof openvpnPackage

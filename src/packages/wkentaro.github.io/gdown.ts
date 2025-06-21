@@ -1,24 +1,34 @@
 /**
- * **gdown** - Package from pantry: wkentaro.github.io/gdown
+ * **gdown** - Google Drive Public File Downloader when Curl/Wget Fails
  *
  * @domain `wkentaro.github.io/gdown`
+ * @programs `gdown`
+ * @version `5.2.0` (7 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install wkentaro.github.io/gdown`
+ * @install `launchpad install gdown`
+ * @name `gdown`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.wkentarogithubiogdown
+ * // Access the package
+ * const pkg = pantry.gdown
+ * // Or access via domain
+ * const samePkg = pantry.wkentarogithubiogdown
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gdown"
- * console.log(pkg.description) // "Package from pantry: wkentaro.github.io/gdown"
+ * console.log(pkg.description) // "Google Drive Public File Downloader when Curl/W..."
+ * console.log(pkg.programs)    // ["gdown"]
+ * console.log(pkg.versions[0]) // "5.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wkentaro-github-io/gdown.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wkentarogithubiogdownPackage = {
+export const gdownPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const wkentarogithubiogdownPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: wkentaro.github.io/gdown' as const,
+  description: 'Google Drive Public File Downloader when Curl/Wget Fails' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wkentaro.github.io/gdown/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/wkentaro/gdown' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install wkentaro.github.io/gdown' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install gdown' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gdown',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +64,24 @@ export const wkentarogithubiogdownPackage = {
   dependencies: [
     'python.org~3.11',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wkentaro.github.io/gdown/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.2.0',
+    '5.1.0',
+    '5.0.1',
+    '5.0.0',
+    '4.7.3',
+    '4.7.2',
+    '4.7.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
 }
 
-export type WkentarogithubiogdownPackage = typeof wkentarogithubiogdownPackage
+export type GdownPackage = typeof gdownPackage

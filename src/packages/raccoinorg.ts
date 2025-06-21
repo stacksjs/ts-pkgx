@@ -1,24 +1,34 @@
 /**
- * **raccoin.org** - Package from pantry: raccoin.org
+ * **raccoin** - Crypto Portfolio and Tax Reporting Tool
  *
  * @domain `raccoin.org`
+ * @programs `raccoin`
+ * @version `0.2.0` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install raccoin.org`
+ * @install `launchpad install raccoin`
+ * @aliases `raccoin`
  * @dependencies `gnu.org/libiconv^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.raccoinorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.raccoin
+ * // Or access via domain
+ * const samePkg = pantry.raccoinorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "raccoin.org"
- * console.log(pkg.description) // "Package from pantry: raccoin.org"
+ * console.log(pkg.description) // "Crypto Portfolio and Tax Reporting Tool"
+ * console.log(pkg.programs)    // ["raccoin"]
+ * console.log(pkg.versions[0]) // "0.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/raccoin-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const raccoinorgPackage = {
+export const raccoinPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,22 @@ export const raccoinorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: raccoin.org' as const,
+  description: 'Crypto Portfolio and Tax Reporting Tool' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/raccoin.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install raccoin.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install raccoin' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'raccoin',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -46,10 +65,21 @@ export const raccoinorgPackage = {
     'gnu.org/libiconv^1',
     'openssl.org^1.1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/raccoin.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.2.0',
+    '0.1.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'raccoin',
+  ] as const,
 }
 
-export type RaccoinorgPackage = typeof raccoinorgPackage
+export type RaccoinPackage = typeof raccoinPackage

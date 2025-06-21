@@ -1,23 +1,33 @@
 /**
- * **libcap-ng** - Package from pantry: people.redhat.com/sgrubb/libcap-ng
+ * **libcap-ng** - Libcap-ng is a library for Linux that makes using posix capabilities easy.
  *
  * @domain `people.redhat.com/sgrubb/libcap-ng`
+ * @programs `captest`, `filecap`, `netcap`, `pscap`
+ * @version `0.8.5` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install people.redhat.com/sgrubb/libcap-ng`
+ * @install `launchpad install +people.redhat.com/sgrubb/libcap-ng -- $SHELL -i`
+ * @name `libcap-ng`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.peopleredhatcomsgrubblibcapng
+ * // Access the package
+ * const pkg = pantry.libcapng
+ * // Or access via domain
+ * const samePkg = pantry.peopleredhatcomsgrubblibcapng
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libcap-ng"
- * console.log(pkg.description) // "Package from pantry: people.redhat.com/sgrubb/l..."
+ * console.log(pkg.description) // "Libcap-ng is a library for Linux that makes usi..."
+ * console.log(pkg.programs)    // ["captest", "filecap", ...]
+ * console.log(pkg.versions[0]) // "0.8.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/people-redhat-com/sgrubb/libcap-ng.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const peopleredhatcomsgrubblibcapngPackage = {
+export const libcapngPackage = {
   /**
    * The display name of this package.
    */
@@ -29,19 +39,41 @@ export const peopleredhatcomsgrubblibcapngPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: people.redhat.com/sgrubb/libcap-ng' as const,
+  description: 'Libcap-ng is a library for Linux that makes using posix capabilities easy.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/people.redhat.com/sgrubb/libcap-ng/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install people.redhat.com/sgrubb/libcap-ng' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +people.redhat.com/sgrubb/libcap-ng -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'captest',
+    'filecap',
+    'netcap',
+    'pscap',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/people.redhat.com/sgrubb/libcap-ng/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.8.5',
+    '0.8.4',
+    '0.8.3',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
 }
 
-export type PeopleredhatcomsgrubblibcapngPackage = typeof peopleredhatcomsgrubblibcapngPackage
+export type LibcapngPackage = typeof libcapngPackage

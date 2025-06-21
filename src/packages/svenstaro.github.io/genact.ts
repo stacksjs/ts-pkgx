@@ -1,23 +1,33 @@
 /**
- * **genact** - Package from pantry: svenstaro.github.io/genact
+ * **genact** - 🌀 A nonsense activity generator
  *
  * @domain `svenstaro.github.io/genact`
+ * @programs `genact`
+ * @version `1.4.2` (5 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install svenstaro.github.io/genact`
+ * @install `launchpad install genact`
+ * @name `genact`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.svenstarogithubiogenact
+ * // Access the package
+ * const pkg = pantry.genact
+ * // Or access via domain
+ * const samePkg = pantry.svenstarogithubiogenact
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "genact"
- * console.log(pkg.description) // "Package from pantry: svenstaro.github.io/genact"
+ * console.log(pkg.description) // "🌀 A nonsense activity generator"
+ * console.log(pkg.programs)    // ["genact"]
+ * console.log(pkg.versions[0]) // "1.4.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/svenstaro-github-io/genact.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const svenstarogithubiogenactPackage = {
+export const genactPackage = {
   /**
    * The display name of this package.
    */
@@ -29,19 +39,40 @@ export const svenstarogithubiogenactPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: svenstaro.github.io/genact' as const,
+  description: '🌀 A nonsense activity generator' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/svenstaro.github.io/genact/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install svenstaro.github.io/genact' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install genact' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'genact',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/svenstaro.github.io/genact/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.4.2',
+    '1.4.1',
+    '1.4.0',
+    '1.3.0',
+    '1.2.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
 }
 
-export type SvenstarogithubiogenactPackage = typeof svenstarogithubiogenactPackage
+export type GenactPackage = typeof genactPackage

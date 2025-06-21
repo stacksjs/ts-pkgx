@@ -1,9 +1,12 @@
 /**
- * **swig.org** - Package from pantry: swig.org
+ * **swig.org** - SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.
  *
  * @domain `swig.org`
+ * @programs `swig`, `ccache-swig`
+ * @version `4.3.1` (5 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install swig.org`
+ * @install `launchpad install +swig.org -- $SHELL -i`
  * @dependencies `pcre.org/v2`
  *
  * @example
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.swigorg
  * console.log(pkg.name)        // "swig.org"
- * console.log(pkg.description) // "Package from pantry: swig.org"
+ * console.log(pkg.description) // "SWIG is a software development tool that connec..."
+ * console.log(pkg.programs)    // ["swig", "ccache-swig"]
+ * console.log(pkg.versions[0]) // "4.3.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/swig-org.md
@@ -30,13 +35,23 @@ export const swigorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: swig.org' as const,
+  description: 'SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/swig.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install swig.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +swig.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'swig',
+    'ccache-swig',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -45,10 +60,18 @@ export const swigorgPackage = {
   dependencies: [
     'pcre.org/v2',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/swig.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '4.3.1',
+    '4.3.0',
+    '4.2.1',
+    '4.2.0',
+    '4.1.1',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type SwigorgPackage = typeof swigorgPackage

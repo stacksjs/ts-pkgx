@@ -1,24 +1,34 @@
 /**
- * **rsync.samba.org** - Package from pantry: rsync.samba.org
+ * **rsync** - An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
  *
  * @domain `rsync.samba.org`
+ * @programs `rsync`, `rsync-ssl`
+ * @version `3.4.1` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install rsync.samba.org`
+ * @install `launchpad install +rsync.samba.org -- $SHELL -i`
+ * @aliases `rsync`
  * @dependencies `zlib.net^1`, `facebook.com/zstd^1`, `lz4.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.rsyncsambaorg
+ * // Access via alias (recommended)
+ * const pkg = pantry.rsync
+ * // Or access via domain
+ * const samePkg = pantry.rsyncsambaorg
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "rsync.samba.org"
- * console.log(pkg.description) // "Package from pantry: rsync.samba.org"
+ * console.log(pkg.description) // "An open source utility that provides fast incre..."
+ * console.log(pkg.programs)    // ["rsync", "rsync-ssl"]
+ * console.log(pkg.versions[0]) // "3.4.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rsync-samba-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rsyncsambaorgPackage = {
+export const rsyncPackage = {
   /**
    * The display name of this package.
    */
@@ -30,13 +40,23 @@ export const rsyncsambaorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: rsync.samba.org' as const,
+  description: 'An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rsync.samba.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rsync.samba.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install +rsync.samba.org -- $SHELL -i' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'rsync',
+    'rsync-ssl',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +67,23 @@ export const rsyncsambaorgPackage = {
     'facebook.com/zstd^1',
     'lz4.org^1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rsync.samba.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.4.1',
+    '3.4.0',
+    '3.3.0',
+    '3.2.7',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'rsync',
+  ] as const,
 }
 
-export type RsyncsambaorgPackage = typeof rsyncsambaorgPackage
+export type RsyncPackage = typeof rsyncPackage

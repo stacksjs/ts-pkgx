@@ -1,9 +1,11 @@
 /**
- * **vid.stab** - Package from pantry: public.hronopik.de/vid.stab
+ * **vid.stab** - Video stabilization library
  *
  * @domain `public.hronopik.de/vid.stab`
+ * @version `1.1.1` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install public.hronopik.de/vid.stab`
+ * @install `launchpad install +public.hronopik.de/vid.stab -- $SHELL -i`
  *
  * @example
  * ```typescript
@@ -11,7 +13,8 @@
  *
  * const pkg = pantry.publichronopikdevidstab
  * console.log(pkg.name)        // "vid.stab"
- * console.log(pkg.description) // "Package from pantry: public.hronopik.de/vid.stab"
+ * console.log(pkg.description) // "Video stabilization library"
+ * console.log(pkg.versions[0]) // "1.1.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/public-hronopik-de/vid-stab.md
@@ -29,19 +32,26 @@ export const publichronopikdevidstabPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: public.hronopik.de/vid.stab' as const,
+  description: 'Video stabilization library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/public.hronopik.de/vid.stab/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install public.hronopik.de/vid.stab' as const,
+  installCommand: 'launchpad install +public.hronopik.de/vid.stab -- $SHELL -i' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/public.hronopik.de/vid.stab/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.1.1',
+  ] as const,
+  aliases: [] as const,
 }
 
 export type PublichronopikdevidstabPackage = typeof publichronopikdevidstabPackage
