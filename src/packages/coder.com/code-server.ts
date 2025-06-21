@@ -3,12 +3,12 @@
  *
  * @domain `coder.com/code-server`
  * @programs `code-server`
- * @version `4.101.0` (37 versions available)
+ * @version `4.101.1` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install code-server`
  * @name `code-server`
- * @dependencies `nodejs.org^20 # requires ^20, before .6 there were napi issues, and .14 also manifests`, `linux:gnome.org/libsecret^0.21`, `linux:x.org/x11^1.8`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `nodejs.org^22 # since 4.101.0`, `linux:gnome.org/libsecret^0.21`, `linux:x.org/x11^1.8`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "code-server"
  * console.log(pkg.description) // "Access VS Code through the browser"
  * console.log(pkg.programs)    // ["code-server"]
- * console.log(pkg.versions[0]) // "4.101.0" (latest)
+ * console.log(pkg.versions[0]) // "4.101.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/coder-com/code-server.md
@@ -63,7 +63,7 @@ export const codeserverPackage = {
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'nodejs.org^20 # requires ^20, before .6 there were napi issues, and .14 also manifests',
+    'nodejs.org^22 # since 4.101.0',
     'linux:gnome.org/libsecret^0.21',
     'linux:x.org/x11^1.8',
     'linux:x.org/xkbfile^1.1',
@@ -74,6 +74,7 @@ export const codeserverPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.101.1',
     '4.101.0',
     '4.100.3',
     '4.100.2',
